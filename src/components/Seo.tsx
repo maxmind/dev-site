@@ -5,10 +5,10 @@
  * See: https://www.gatsbyjs.org/docs/use-static-query/
  */
 
-import React from "react"
-import PropTypes from "prop-types"
-import Helmet from "react-helmet"
-import { useStaticQuery, graphql } from "gatsby"
+import { graphql,useStaticQuery } from 'gatsby';
+import PropTypes from 'prop-types';
+import React from 'react';
+import Helmet from 'react-helmet';
 
 interface IMetaItem {
   content: string;
@@ -36,67 +36,67 @@ const SEO: React.FC<ISEO> = ({ description, lang, meta = [], title }) => {
         }
       }
     `
-  )
+  );
 
-  const metaDescription = description || site.siteMetadata.description
+  const metaDescription = description || site.siteMetadata.description;
 
   return (
     <Helmet
       htmlAttributes={{
         lang,
       }}
-      title={title}
-      titleTemplate={`%s | ${site.siteMetadata.title}`}
       meta={[
         {
-          name: `description`,
           content: metaDescription,
+          name: 'description',
         },
         {
-          property: `og:title`,
           content: title,
+          property: 'og:title',
         },
         {
-          property: `og:description`,
           content: metaDescription,
+          property: 'og:description',
         },
         {
-          property: `og:type`,
-          content: `website`,
+          content: 'website',
+          property: 'og:type',
         },
         {
-          name: `twitter:card`,
-          content: `summary`,
+          content: 'summary',
+          name: 'twitter:card',
         },
         {
-          name: `twitter:creator`,
           content: site.siteMetadata.author,
+          name: 'twitter:creator',
         },
         {
-          name: `twitter:title`,
           content: title,
+          name: 'twitter:title',
         },
         {
-          name: `twitter:description`,
           content: metaDescription,
+          name: 'twitter:description',
         },
         ...meta,
       ]}
+      title={title}
+      titleTemplate={`%s | ${site.siteMetadata.title}`}
     />
-  )
-}
+  );
+};
 
 SEO.defaultProps = {
-  lang: `en`,
+  description: '',
+  lang: 'en',
   meta: [],
-  description: ``,
-}
+};
 
 SEO.propTypes = {
   description: PropTypes.string,
   lang: PropTypes.string,
   meta: PropTypes.arrayOf(PropTypes.any),
   title: PropTypes.string.isRequired,
-}
+};
 
-export default SEO
+export default SEO;
