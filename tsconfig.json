@@ -1,13 +1,14 @@
 {
   "compilerOptions": {
-    "emitDecoratorMetadata": true,
     "esModuleInterop": true,
-    "experimentalDecorators": true,
-    "jsx": "react",
+    "isolatedModules": true,
+    "jsx": "preserve",
     "lib": ["dom", "esnext"],
     "module": "commonjs",
-    "skipLibCheck": true,
+    "noEmit": true,
+    "noUnusedLocals": false,
     "strict": true,
-    "target": "es5"
-  }
+    "target": "esnext"
+  },
+  "exclude": ["node_modules", "public", ".cache"]
 }
