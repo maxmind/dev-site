@@ -5,7 +5,7 @@
  * See: https://www.gatsbyjs.org/docs/use-static-query/
  */
 
-
+import 'normalize.css';
 
 import { graphql,useStaticQuery } from 'gatsby';
 import PropTypes from 'prop-types';
