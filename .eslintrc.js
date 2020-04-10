@@ -8,6 +8,7 @@ module.exports = {
     'eslint:recommended',
     'plugin:@typescript-eslint/eslint-recommended',
     'plugin:@typescript-eslint/recommended',
+    'plugin:css-modules/recommended',
     'plugin:import/errors',
     'plugin:import/typescript',
     'plugin:import/warnings',
@@ -39,6 +40,7 @@ module.exports = {
   parser: '@typescript-eslint/parser',
   plugins: [
     '@typescript-eslint',
+    'css-modules',
     'filenames',
     'jsx-a11y',
     'react',
@@ -68,6 +70,18 @@ module.exports = {
     'comma-dangle': [
       'error',
       'always-multiline',
+    ],
+    'css-modules/no-undef-class': [
+      2,
+      {
+        camelCase: true,
+      },
+    ],
+    'css-modules/no-unused-class': [
+      2,
+      {
+        camelCase: true,
+      },
     ],
     'eol-last': [
       'error',

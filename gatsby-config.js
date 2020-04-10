@@ -1,5 +1,14 @@
 module.exports = {
   plugins: [
+    {
+      options: {
+        cssLoaderOptions: {
+          camelCase: true,
+        },
+        includePaths: ['src/styles'],
+      },
+      resolve: 'gatsby-plugin-sass',
+    },
     'gatsby-plugin-react-helmet',
     {
       options: {

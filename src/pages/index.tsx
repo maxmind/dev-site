@@ -4,6 +4,7 @@ import React from 'react';
 import Image from '../components/Image';
 import Layout from '../components/Layout';
 import SEO from '../components/Seo';
+import styles from './index.module.scss';
 
 const IndexPage: React.FC = () => (
   <Layout>
@@ -14,10 +15,7 @@ const IndexPage: React.FC = () => (
     <p>Welcome to your new Gatsby site.</p>
     <p>Now go build something great.</p>
     <div
-      style={{
-        marginBottom: '1.45rem',
-        maxWidth: '300px',
-      }}
+      className={styles.container}
     >
       <Image />
     </div>

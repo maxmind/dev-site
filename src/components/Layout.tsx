@@ -5,13 +5,14 @@
  * See: https://www.gatsbyjs.org/docs/use-static-query/
  */
 
-import './Layout.css';
+
 
 import { graphql,useStaticQuery } from 'gatsby';
 import PropTypes from 'prop-types';
 import React from 'react';
 
 import Header from './Header';
+import styles from './Layout.module.scss';
 
 interface ILayout {
   children: React.ReactNode;
@@ -34,11 +35,7 @@ const Layout: React.FC<ILayout> = ({ children }) => {
         siteTitle={data.site.siteMetadata.title}
       />
       <div
-        style={{
-          margin: '0 auto',
-          maxWidth: 960,
-          padding: '0 1.0875rem 1.45rem',
-        }}
+        className={styles.container}
       >
         <main>{children}</main>
         <footer>

@@ -2,28 +2,21 @@ import { Link } from 'gatsby';
 import PropTypes from 'prop-types';
 import React from 'react';
 
+import styles from './Header.module.scss';
+
 interface IHeader {
   siteTitle: string;
 }
 
 const Header: React.FC<IHeader> = ({ siteTitle }) => (
   <header
-    style={{
-      background: 'rebeccapurple',
-      marginBottom: '1.45rem',
-    }}
+    className={styles.wrapper}
   >
     <div
-      style={{
-        margin: '0 auto',
-        maxWidth: 960,
-        padding: '1.45rem 1.0875rem',
-      }}
+      className={styles.container}
     >
       <h1
-        style={{
-          margin: 0,
-        }}
+        className={styles.heading}
       >
         <Link
           style={{
