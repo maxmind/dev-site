@@ -6,8 +6,6 @@ module.exports = {
   },
   extends: [
     'eslint:recommended',
-    'plugin:@typescript-eslint/eslint-recommended',
-    'plugin:@typescript-eslint/recommended',
     'plugin:css-modules/recommended',
     'plugin:import/errors',
     'plugin:import/typescript',
@@ -29,7 +27,12 @@ module.exports = {
   ],
   overrides: [
     {
+      extends: [
+        'plugin:@typescript-eslint/eslint-recommended',
+        'plugin:@typescript-eslint/recommended',
+      ],
       files: ['**/*.json'],
+      parser: '@typescript-eslint/parser',
       rules: {
         'comma-dangle': [
           'error',
@@ -48,6 +51,34 @@ module.exports = {
           'never',
         ],
       },
+      settings: {
+        'import/parsers': {
+          '@typescript-eslint/parser': [
+            '.ts',
+            '.tsx',
+          ],
+        },
+      },
+    },
+    {
+      extends: [
+        'plugin:@typescript-eslint/eslint-recommended',
+        'plugin:@typescript-eslint/recommended',
+      ],
+      files: ['**/*.{ts,tsx}'],
+      parser: '@typescript-eslint/parser',
+      rules: {
+        'typescript-sort-keys/interface': 2,
+        'typescript-sort-keys/string-enum': 2,
+      },
+      settings: {
+        'import/parsers': {
+          '@typescript-eslint/parser': [
+            '.ts',
+            '.tsx',
+          ],
+        },
+      },
     },
     {
       files: ['src/pages/**'],
@@ -60,7 +91,7 @@ module.exports = {
       },
     },
   ],
-  parser: '@typescript-eslint/parser',
+  parser: 'babel-eslint',
   plugins: [
     '@typescript-eslint',
     'css-modules',
@@ -222,16 +253,8 @@ module.exports = {
     'simple-import-sort/sort': 'error',
     'sort-keys': ['error'],
     'sort-keys-fix/sort-keys-fix': 'warn',
-    'typescript-sort-keys/interface': 2,
-    'typescript-sort-keys/string-enum': 2,
   },
   settings: {
-    'import/parsers': {
-      '@typescript-eslint/parser': [
-        '.ts',
-        '.tsx',
-      ],
-    },
     react: {
       version: 'detect',
     },
