@@ -9,6 +9,31 @@ module.exports = {
       },
       resolve: 'gatsby-plugin-sass',
     },
+    {
+      options: {
+        name: 'content',
+        path: `${__dirname}/content/`,
+      },
+      resolve: 'gatsby-source-filesystem',
+    },
+    {
+      options: {
+        defaultLayouts: {
+          content: require.resolve('./src/templates/Page.tsx'),
+        },
+        extensions: [
+          '.mdx',
+          '.md',
+        ],
+        remarkPlugins: [{
+          resolve: 'remark-lint',
+          // options: {
+          //   maxWidth: 590,
+          // },
+        }],
+      },
+      resolve: 'gatsby-plugin-mdx',
+    },
     'gatsby-plugin-react-helmet',
     {
       options: {
