@@ -19,10 +19,7 @@ const Header: React.FC<IHeader> = ({ siteTitle }) => (
         className={styles.heading}
       >
         <Link
-          style={{
-            color: 'white',
-            textDecoration: 'none',
-          }}
+          className={styles.link}
           to="/"
         >
           {siteTitle}

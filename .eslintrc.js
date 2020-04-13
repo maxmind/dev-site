@@ -189,6 +189,12 @@ module.exports = {
         rule: '^(is|has)[A-Z]([A-Za-z0-9]?)+',
       },
     ],
+    'react/forbid-component-props': [
+      2,
+      {
+        forbid: ['style'],
+      },
+    ],
     'react/forbid-dom-props': [
       2,
       {
