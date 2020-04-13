@@ -35,6 +35,7 @@ module.exports = {
       },
       resolve: 'gatsby-plugin-manifest',
     },
+    'gatsby-plugin-sri',
     // This (optional) plugin enables Progressive Web App + Offline
     // functionality. To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
