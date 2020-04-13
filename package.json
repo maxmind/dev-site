@@ -1,8 +1,7 @@
 {
-  "name": "dev-site",
-  "private": true,
-  "description": "Developer website for MaxMind",
-  "version": "0.1.0",
+  "bugs": {
+    "url": "https://github.com/maxmind/dev-site/issues"
+  },
   "dependencies": {
     "@types/react": "^16.9.33",
     "@types/react-helmet": "^5.0.15",
@@ -25,6 +24,7 @@
     "react-helmet": "^5.1.3",
     "typescript": "^3.8.3"
   },
+  "description": "Developer website for MaxMind",
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^2.27.0",
     "@typescript-eslint/parser": "^2.27.0",
@@ -47,21 +47,21 @@
     "stylelint-order": "^4.0.0"
   },
   "license": "MIT",
-  "scripts": {
-    "build": "gatsby build",
-    "develop": "gatsby develop",
-    "lint:scripts": "eslint . --ext js,ts,tsx",
-    "lint:styles": "stylelint ./src/**/*.[s]css",
-    "start": "yarn run develop",
-    "serve": "gatsby serve",
-    "clean": "gatsby clean",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
-  },
+  "name": "dev-site",
+  "private": true,
   "repository": {
     "type": "git",
     "url": "https://github.com/maxmind/dev-site.git"
   },
-  "bugs": {
-    "url": "https://github.com/maxmind/dev-site/issues"
-  }
+  "scripts": {
+    "build": "gatsby build",
+    "clean": "gatsby clean",
+    "develop": "gatsby develop",
+    "lint:scripts": "eslint . --ext js,json,ts,tsx",
+    "lint:styles": "stylelint ./src/**/*.[s]css",
+    "serve": "gatsby serve",
+    "start": "yarn run develop",
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+  },
+  "version": "0.1.0"
 }

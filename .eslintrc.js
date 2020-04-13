@@ -27,16 +27,39 @@ module.exports = {
     'node_modules',
     'public',
   ],
-  overrides: [{
-    files: ['src/pages/**'],
-    rules: {
-      'filenames/match-exported': [0],
-      'filenames/match-regex': [
-        2,
-        '^[a-z0-9-]+$',
-      ],
+  overrides: [
+    {
+      files: ['**/*.json'],
+      rules: {
+        'comma-dangle': [
+          'error',
+          'never',
+        ],
+        quotes: [
+          'error',
+          'double',
+        ],
+        'quote-props': [
+          'error',
+          'always',
+        ],
+        'semi': [
+          'error',
+          'never',
+        ],
+      },
     },
-  }],
+    {
+      files: ['src/pages/**'],
+      rules: {
+        'filenames/match-exported': [0],
+        'filenames/match-regex': [
+          2,
+          '^[a-z0-9-]+$',
+        ],
+      },
+    },
+  ],
   parser: '@typescript-eslint/parser',
   plugins: [
     '@typescript-eslint',
