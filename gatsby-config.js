@@ -1,3 +1,5 @@
+const stylelint = require('stylelint');
+
 module.exports = {
   plugins: [
     {
@@ -5,7 +7,12 @@ module.exports = {
         cssLoaderOptions: {
           camelCase: true,
         },
-        includePaths: ['src/styles'],
+        includePaths: [
+          'src/styles',
+        ],
+        postCssPlugins: [
+          stylelint(),
+        ],
       },
       resolve: 'gatsby-plugin-sass',
     },
@@ -25,12 +32,6 @@ module.exports = {
           '.mdx',
           '.md',
         ],
-        remarkPlugins: [{
-          resolve: 'remark-lint',
-          // options: {
-          //   maxWidth: 590,
-          // },
-        }],
       },
       resolve: 'gatsby-plugin-mdx',
     },

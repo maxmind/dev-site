@@ -6,7 +6,10 @@ module.exports = {
     'stylelint-config-recommended',
     'stylelint-config-sass-guidelines',
   ],
-  plugins: ['stylelint-order'],
+  plugins: [
+    'stylelint-no-unsupported-browser-features',
+    'stylelint-order',
+  ],
   rules: {
     indentation: 2,
     'order/order': [
@@ -14,5 +17,17 @@ module.exports = {
       'declarations',
     ],
     'order/properties-alphabetical-order': true,
+    'plugin/no-unsupported-browser-features': [
+      true,
+      {
+        browsers: [
+          '> 1%',
+          'Last 2 versions',
+        ],
+        ignore: [
+          'rem',
+        ],
+      },
+    ],
   },
 };

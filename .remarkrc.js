@@ -1,19 +1,26 @@
 module.exports = {
   plugins: [
-    'remark-preset-lint-recommended',
+    'preset-lint-recommended',
     'preset-lint-markdown-style-guide',
-    'remark-preset-github',
     'remark-frontmatter',
     'remark-lint-heading-increment',
     'remark-lint-no-empty-url',
-    ['remark-lint-ordered-list-marker-value', 'one'],
-    ['remark-lint-unordered-list-marker-style', '*'],
+    [
+      'remark-lint-ordered-list-marker-value',
+      'one',
+    ],
+    [
+      'remark-lint-unordered-list-marker-style',
+      '*',
+    ],
     [
       'remark-lint-write-good',
       [
         'warn',
         {
-          whitelist: [ 'read-only' ],
+          whitelist: [
+            'read-only',
+          ],
         },
       ],
     ],

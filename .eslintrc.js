@@ -28,26 +28,39 @@ module.exports = {
   overrides: [
     {
       extends: [
+        'plugin:mdx/recommended',
+      ],
+      files: [
+        '**/*.mdx',
+      ],
+      rules: {
+        semi: [0],
+      }
+    },
+    {
+      extends: [
         'plugin:@typescript-eslint/eslint-recommended',
         'plugin:@typescript-eslint/recommended',
       ],
-      files: ['**/*.json'],
+      files: [
+        '**/*.json',
+      ],
       parser: '@typescript-eslint/parser',
       rules: {
         'comma-dangle': [
-          'error',
+          'warn',
           'never',
         ],
-        quotes: [
-          'error',
-          'double',
-        ],
         'quote-props': [
-          'error',
+          'warn',
           'always',
         ],
-        'semi': [
-          'error',
+        quotes: [
+          'warn',
+          'double',
+        ],
+        semi: [
+          'warn',
           'never',
         ],
       },
@@ -65,11 +78,13 @@ module.exports = {
         'plugin:@typescript-eslint/eslint-recommended',
         'plugin:@typescript-eslint/recommended',
       ],
-      files: ['**/*.{ts,tsx}'],
+      files: [
+        '**/*.{ts,tsx}',
+      ],
       parser: '@typescript-eslint/parser',
       rules: {
-        'typescript-sort-keys/interface': 2,
-        'typescript-sort-keys/string-enum': 2,
+        'typescript-sort-keys/interface': 1,
+        'typescript-sort-keys/string-enum': 1,
       },
       settings: {
         'import/parsers': {
@@ -81,11 +96,15 @@ module.exports = {
       },
     },
     {
-      files: ['src/pages/**'],
+      files: [
+        'src/pages/**',
+      ],
       rules: {
-        'filenames/match-exported': [0],
+        'filenames/match-exported': [
+          0,
+        ],
         'filenames/match-regex': [
-          2,
+          1,
           '^[a-z0-9-]+$',
         ],
       },
@@ -105,59 +124,59 @@ module.exports = {
   ],
   rules: {
     '@typescript-eslint/interface-name-prefix': [
-      2,
+      1,
       {
         allowUnderscorePrefix: true,
         prefixWithI: 'always',
       },
     ],
     'array-bracket-newline': [
-      'error',
+      'warn',
       {
-        minItems: 2,
+        minItems: 1,
       },
     ],
     'array-element-newline': [
-      'error',
+      'warn',
       'always',
     ],
     'comma-dangle': [
-      'error',
+      'warn',
       'always-multiline',
     ],
     'css-modules/no-undef-class': [
-      2,
+      1,
       {
         camelCase: true,
       },
     ],
     'css-modules/no-unused-class': [
-      2,
+      1,
       {
         camelCase: true,
       },
     ],
     'eol-last': [
-      'error',
+      'warn',
       'always',
     ],
     'filenames/match-exported': [
-      2,
+      1,
       'pascal',
     ],
     indent: [
-      'error',
+      'warn',
       2,
     ],
     'max-len': [
-      'error',
+      'warn',
       {
         code: 80,
       },
     ],
-    'no-trailing-spaces': 'error',
+    'no-trailing-spaces': 'warn',
     'object-curly-newline': [
-      'error',
+      'warn',
       {
         ExportDeclaration: 'never',
         ImportDeclaration: 'never',
@@ -168,80 +187,86 @@ module.exports = {
       },
     ],
     'object-curly-spacing': [
-      'error',
+      'warn',
       'always',
       {
         objectsInObjects: false,
       },
     ],
-    'object-property-newline': 'error',
+    'object-property-newline': 'warn',
     'quote-props': [
-      'error',
+      'warn',
       'as-needed',
     ],
     quotes: [
-      'error',
+      'warn',
       'single',
     ],
     'react/boolean-prop-naming': [
-      'error',
+      'warn',
       {
         rule: '^(is|has)[A-Z]([A-Za-z0-9]?)+',
       },
     ],
     'react/forbid-component-props': [
-      2,
+      1,
       {
-        forbid: ['style'],
+        forbid: [
+          'style',
+        ],
       },
     ],
     'react/forbid-dom-props': [
-      2,
+      1,
       {
-        forbid: ['style'],
+        forbid: [
+          'style',
+        ],
       },
     ],
     'react/jsx-closing-bracket-location': [
-      2,
+      1,
       'tag-aligned',
     ],
     'react/jsx-closing-tag-location': [
-      2,
+      1,
       {
         nonEmpty: 'after-props',
         selfClosing: 'tag-aligned',
       },
     ],
     'react/jsx-first-prop-new-line': [
-      2,
+      1,
       'always',
     ],
     'react/jsx-indent': [
-      2,
+      1,
       2,
       {
         checkAttributes: true,
       },
     ],
     'react/jsx-indent-props': [
-      2,
+      1,
       2,
     ],
     'react/jsx-max-props-per-line': [
-      2,
+      1,
       {
         when: 'always',
       },
     ],
     'react/jsx-one-expression-per-line': [
-      2,
+      1,
       {
         allow: 'single-child',
       },
     ],
-    'react/jsx-sort-props': [2],
+    'react/jsx-sort-props': [
+      1,
+    ],
     'react/jsx-wrap-multilines': [
-      2,
+      1,
       {
         arrow: 'parens-new-line',
         assignment: 'parens-new-line',
@@ -253,11 +278,13 @@ module.exports = {
       },
     ],
     semi: [
-      2,
+      1,
       'always',
     ],
-    'simple-import-sort/sort': 'error',
-    'sort-keys': ['error'],
+    'simple-import-sort/sort': 'warn',
+    'sort-keys': [
+      'warn',
+    ],
     'sort-keys-fix/sort-keys-fix': 'warn',
   },
   settings: {

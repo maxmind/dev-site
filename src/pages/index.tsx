@@ -20,7 +20,7 @@ const IndexPage: React.FC = () => (
       <Image />
     </div>
     <Link
-      to="/page-2/"
+      to="/page-2s/"
     >
       Go to page 2
     </Link>
