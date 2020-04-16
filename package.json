@@ -1,40 +1,106 @@
 {
-  "name": "dev-site",
-  "private": true,
-  "description": "Developer website for MaxMind",
-  "version": "0.1.0",
+  "author": "MaxMind",
+  "bugs": {
+    "url": "https://github.com/maxmind/dev-site/issues"
+  },
   "dependencies": {
-    "gatsby": "^2.20.12",
-    "gatsby-image": "^2.3.1",
+    "@mdx-js/mdx": "^1.5.8",
+    "@mdx-js/react": "^1.5.8",
+    "@types/react": "^16.9.33",
+    "@types/react-helmet": "^5.0.15",
+    "cheerio": "^1.0.0-rc.3",
+    "gatsby": "^2.20.15",
+    "gatsby-image": "^2.3.2",
+    "gatsby-plugin-csp": "^1.1.3",
     "gatsby-plugin-manifest": "^2.3.3",
+    "gatsby-plugin-mdx": "^1.1.7",
     "gatsby-plugin-offline": "^3.1.2",
     "gatsby-plugin-react-helmet": "^3.2.1",
-    "gatsby-plugin-sharp": "^2.5.3",
+    "gatsby-plugin-sass": "^2.2.1",
+    "gatsby-plugin-sharp": "^2.5.4",
+    "gatsby-plugin-sri": "^1.1.0",
+    "gatsby-plugin-typescript": "^2.3.1",
+    "gatsby-plugin-typescript-checker": "^1.1.1",
     "gatsby-source-filesystem": "^2.2.2",
-    "gatsby-transformer-sharp": "^2.4.3",
+    "gatsby-transformer-sharp": "^2.4.4",
+    "node-sass": "^4.13.1",
+    "normalize.css": "^8.0.1",
     "prop-types": "^15.7.2",
-    "react": "^16.12.0",
-    "react-dom": "^16.12.0",
-    "react-helmet": "^5.2.1"
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-helmet": "^5.1.3",
+    "typescript": "^3.8.3"
   },
+  "description": "Developer website for MaxMind",
   "devDependencies": {
-    "prettier": "^1.19.1"
+    "@babel/register": "^7.9.0",
+    "@typescript-eslint/eslint-plugin": "^2.27.0",
+    "@typescript-eslint/parser": "^2.27.0",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^6.8.0",
+    "eslint-loader": "^4.0.0",
+    "eslint-plugin-babel": "^5.3.0",
+    "eslint-plugin-css-modules": "^2.11.0",
+    "eslint-plugin-filenames": "^1.3.2",
+    "eslint-plugin-import": "^2.20.2",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-mdx": "^1.6.9",
+    "eslint-plugin-react": "^7.19.0",
+    "eslint-plugin-react-hooks": "^3.0.0",
+    "eslint-plugin-security": "^1.4.0",
+    "eslint-plugin-simple-import-sort": "^5.0.2",
+    "eslint-plugin-sort-keys-fix": "^1.1.0",
+    "eslint-plugin-typescript-sort-keys": "^0.8.0",
+    "husky": "^4.2.5",
+    "lint-staged": "^10.1.3",
+    "npm-run-all": "^4.1.5",
+    "remark-cli": "^8.0.0",
+    "remark-frontmatter": "^2.0.0",
+    "remark-lint-no-empty-url": "^2.0.0",
+    "remark-lint-write-good": "^1.2.0",
+    "remark-preset-github": "^1.0.0",
+    "remark-preset-lint-markdown-style-guide": "^3.0.0",
+    "remark-preset-lint-recommended": "^4.0.0",
+    "stylelint": "^13.3.1",
+    "stylelint-config-recommended": "^3.0.0",
+    "stylelint-config-sass-guidelines": "^7.0.0",
+    "stylelint-no-unsupported-browser-features": "^4.0.0",
+    "stylelint-order": "^4.0.0"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
   },
   "license": "MIT",
-  "scripts": {
-    "build": "gatsby build",
-    "develop": "gatsby develop",
-    "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
-    "start": "yarn run develop",
-    "serve": "gatsby serve",
-    "clean": "gatsby clean",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+  "lint-staged": {
+    "**/*.{css,scss}": [
+      "stylelint --syntax scss --fix"
+    ],
+    "**/*.{js,json,ts,tsx}": [
+      "eslint . --fix"
+    ],
+    "**/*.{mdx}": [
+      "remark . --ext mdx -o"
+    ]
   },
+  "name": "dev-site",
+  "private": true,
   "repository": {
     "type": "git",
     "url": "https://github.com/maxmind/dev-site.git"
   },
-  "bugs": {
-    "url": "https://github.com/maxmind/dev-site/issues"
-  }
+  "scripts": {
+    "build": "gatsby build",
+    "clean": "gatsby clean",
+    "develop": "gatsby develop",
+    "lint": "run-p lint:*",
+    "lint1:content": "remark . --ext mdx",
+    "lint:scripts": "eslint . --ext js,json,mdx,ts,tsx",
+    "lint:styles": "stylelint ./src/**/*.[s]css",
+    "serve": "gatsby serve",
+    "start": "yarn run develop",
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+  },
+  "version": "0.1.0"
 }
