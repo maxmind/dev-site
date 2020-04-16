@@ -10,25 +10,21 @@ import fs from 'fs';
 import React from 'react';
 import { renderToString } from 'react-dom/server';
 
-const elements = [
-  '#gatsby-announcer',
-  '#gatsby-focus-wrapper',
-];
-
-const cssFileNameBase = 'gatsby-inline';
-
-export const replaceRenderer = ({
-  bodyComponent,
-  replaceBodyHTMLString,
-  setHeadComponents,
-}) => {
-  const $ = cheerio.load(renderToString(bodyComponent));
+export const replaceRenderer = (props) => {
+  const $ = cheerio.load(renderToString(props.bodyComponent));
   const cssRules = [];
 
-  elements.forEach(element => {
+  const $elements = $('[style]');
+
+  $elements.map((_, element) => {
     const $element = $(element);
-    const styleRules = $element.attr('style');
-    cssRules.push(`${element} { ${styleRules} }`);
+    const styles = $element.attr('style');
+    const className = `inlined__${crypto
+      .randomBytes(4)
+      .toString('hex')
+    }`;
+    $element.addClass(className);
+    cssRules.push(`.${className} { ${styles}; }`);
     $element.removeAttr('style');
   });
 
@@ -36,11 +32,16 @@ export const replaceRenderer = ({
   const css = cssRules.join("\n");
 
   const filenameHash = crypto
-    .createHash('sha256')
-    .digest('hex')
-    .slice(0, 20);
+    .randomBytes(10)
+    .toString('hex');
 
-  const cssFileName = `${cssFileNameBase}.${filenameHash}.css`;
+  const cssFileNameBase = props.pathname
+    .replace(/^\/|\/$/g, '')
+    .replace('/', '--')
+    .replace('.html', '');
+
+  const cssFileName =
+    `inline---${cssFileNameBase || 'index'}.${filenameHash}.css`;
 
   const integrityHash = crypto
     .createHash('sha512')
@@ -50,14 +51,14 @@ export const replaceRenderer = ({
   // eslint-disable-next-line security/detect-non-literal-fs-filename
   fs.writeFileSync(`public/${cssFileName}`, css, 'utf-8');
 
-  setHeadComponents(
+  props.setHeadComponents(
     <link
       href={`/${cssFileName}`}
-      integrity={integrityHash}
+      integrity={`sha512-${integrityHash}`}
       rel="stylesheet"
       type="text/css"
     />
   );
 
-  replaceBodyHTMLString($('body').html());
+  props.replaceBodyHTMLString($('body').html());
 };

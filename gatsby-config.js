@@ -1,5 +1,14 @@
 const stylelint = require('stylelint');
 
+/**
+ * The plugins below must come last in the ordering of the plugins because they
+ * are dependent on transforming output of the previously listed plugins.
+ */
+const THESE_PLUGINS_MUST_COME_LAST = [
+  'gatsby-plugin-sri',
+  'gatsby-plugin-csp',
+];
+
 module.exports = {
   plugins: [
     {
@@ -61,10 +70,7 @@ module.exports = {
       },
       resolve: 'gatsby-plugin-manifest',
     },
-    'gatsby-plugin-sri',
-    // This (optional) plugin enables Progressive Web App + Offline
-    // functionality. To learn more, visit: https://gatsby.dev/offline
-    // `gatsby-plugin-offline`,
+    ...THESE_PLUGINS_MUST_COME_LAST,
   ],
   siteMetadata: {
     author: '@gatsbyjs',
