@@ -67,6 +67,10 @@
     "stylelint-no-unsupported-browser-features": "^4.0.0",
     "stylelint-order": "^4.0.0"
   },
+  "engines": {
+    "node": ">=10.13.0",
+    "yarn": "^1.17.3"
+  },
   "husky": {
     "hooks": {
       "pre-commit": "lint-staged"
@@ -98,7 +102,7 @@
     "lint1:content": "remark . --ext mdx",
     "lint:scripts": "eslint . --ext js,json,mdx,ts,tsx",
     "lint:styles": "stylelint ./src/**/*.[s]css",
-    "serve": "gatsby serve",
+    "serve": "yarn build && gatsby serve",
     "start": "yarn run develop",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
   },
