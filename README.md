@@ -20,6 +20,7 @@
 * __Linting__: [ESLint](https://eslint.org/) +
 [StyleLint](https://stylelint.io/) + 
 [RemarkLint](https://github.com/remarkjs/remark-lint)
+* __Hosting__: [Firebase](https://firebase.google.com/docs/hosting)
 
 
 ## Usage
@@ -30,7 +31,7 @@
   * [Development Server](#development-server)
   * [Static Server](#static-server)
 * [Testing](#testing)
-* [Deployment](#deployment)
+* [Deployments](#deployments)
 
 ### Minimum Requirements
 * Node 10.13.0
@@ -53,7 +54,7 @@ yarn develop
 ```
 
 #### Static Server
-Build the static site and then serve them by running the following command. This is useful for testing features that might only be relevant to the production build, such as CSP Policies and SRI hashes.
+The static server is useful for testing features that might only be relevant to the production build, such as CSP Policies, SRI hashes, and Firebase routing rules, such as 301/302 redirects or url rewrites.
 
 ```sh
 yarn serve
@@ -63,6 +64,17 @@ yarn serve
 
 (todo)
 
-### Deployment
+### Deployments
+This project can be deployed to a staging environment or a production environment.
 
-(todo)
+#### Staging Environment
+
+Users authenticated with the Firebase CLI can deploy to the staging site by running the following from the root of the project.
+
+```sh
+yarn deploy
+```
+
+### Production Environment
+
+Deployment to production is only meant to be done from via GitHub actions as part of our CI/CD pipeline. 

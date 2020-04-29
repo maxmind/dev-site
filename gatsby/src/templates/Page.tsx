@@ -4,8 +4,7 @@ import React from 'react';
 import Layout from '../components/Layout';
 import SEO from '../components/Seo';
 
-interface IPage {
-  children: React.ReactNode;
+interface IPage {children: React.ReactNode;
   pageContext: {
     readonly frontmatter: {
       readonly seo: {
