@@ -6,13 +6,9 @@ module.exports = {
   },
   extends: [
     'eslint:recommended',
-    'plugin:css-modules/recommended',
-    'plugin:import/errors',
-    'plugin:import/typescript',
-    'plugin:import/warnings',
-    'plugin:jsx-a11y/recommended',
     'plugin:react/recommended',
-    'plugin:react-hooks/recommended',
+    'plugin:import/errors',
+    'plugin:import/warnings',
     'plugin:security/recommended',
   ],
   globals: {
@@ -34,18 +30,18 @@ module.exports = {
         '**/*.mdx',
       ],
       rules: {
-        semi: [0],
-      }
+        semi: [
+          0,
+        ],
+      },
     },
     {
       extends: [
-        'plugin:@typescript-eslint/eslint-recommended',
-        'plugin:@typescript-eslint/recommended',
+        'plugin:json/recommended',
       ],
       files: [
         '**/*.json',
       ],
-      parser: '@typescript-eslint/parser',
       rules: {
         'comma-dangle': [
           'warn',
@@ -64,40 +60,10 @@ module.exports = {
           'never',
         ],
       },
-      settings: {
-        'import/parsers': {
-          '@typescript-eslint/parser': [
-            '.ts',
-            '.tsx',
-          ],
-        },
-      },
-    },
-    {
-      extends: [
-        'plugin:@typescript-eslint/eslint-recommended',
-        'plugin:@typescript-eslint/recommended',
-      ],
-      files: [
-        '**/*.{ts,tsx}',
-      ],
-      parser: '@typescript-eslint/parser',
-      rules: {
-        'typescript-sort-keys/interface': 1,
-        'typescript-sort-keys/string-enum': 1,
-      },
-      settings: {
-        'import/parsers': {
-          '@typescript-eslint/parser': [
-            '.ts',
-            '.tsx',
-          ],
-        },
-      },
     },
     {
       files: [
-        'src/pages/**',
+        'content/**',
       ],
       rules: {
         'filenames/match-exported': [
@@ -112,24 +78,15 @@ module.exports = {
   ],
   parser: 'babel-eslint',
   plugins: [
-    '@typescript-eslint',
-    'css-modules',
     'filenames',
-    'jsx-a11y',
+    'json',
     'react',
     'security',
     'simple-import-sort',
     'sort-keys-fix',
-    'typescript-sort-keys',
   ],
+  root: true,
   rules: {
-    '@typescript-eslint/interface-name-prefix': [
-      1,
-      {
-        allowUnderscorePrefix: true,
-        prefixWithI: 'always',
-      },
-    ],
     'array-bracket-newline': [
       'warn',
       {
@@ -144,25 +101,9 @@ module.exports = {
       'warn',
       'always-multiline',
     ],
-    'css-modules/no-undef-class': [
-      1,
-      {
-        camelCase: true,
-      },
-    ],
-    'css-modules/no-unused-class': [
-      1,
-      {
-        camelCase: true,
-      },
-    ],
     'eol-last': [
       'warn',
       'always',
-    ],
-    'filenames/match-exported': [
-      1,
-      'pascal',
     ],
     indent: [
       'warn',
@@ -201,81 +142,6 @@ module.exports = {
     quotes: [
       'warn',
       'single',
-    ],
-    'react/boolean-prop-naming': [
-      'warn',
-      {
-        rule: '^(is|has)[A-Z]([A-Za-z0-9]?)+',
-      },
-    ],
-    'react/forbid-component-props': [
-      1,
-      {
-        forbid: [
-          'style',
-        ],
-      },
-    ],
-    'react/forbid-dom-props': [
-      1,
-      {
-        forbid: [
-          'style',
-        ],
-      },
-    ],
-    'react/jsx-closing-bracket-location': [
-      1,
-      'tag-aligned',
-    ],
-    'react/jsx-closing-tag-location': [
-      1,
-      {
-        nonEmpty: 'after-props',
-        selfClosing: 'tag-aligned',
-      },
-    ],
-    'react/jsx-first-prop-new-line': [
-      1,
-      'always',
-    ],
-    'react/jsx-indent': [
-      1,
-      2,
-      {
-        checkAttributes: true,
-      },
-    ],
-    'react/jsx-indent-props': [
-      1,
-      2,
-    ],
-    'react/jsx-max-props-per-line': [
-      1,
-      {
-        when: 'always',
-      },
-    ],
-    'react/jsx-one-expression-per-line': [
-      1,
-      {
-        allow: 'single-child',
-      },
-    ],
-    'react/jsx-sort-props': [
-      1,
-    ],
-    'react/jsx-wrap-multilines': [
-      1,
-      {
-        arrow: 'parens-new-line',
-        assignment: 'parens-new-line',
-        condition: 'ignore',
-        declaration: 'parens-new-line',
-        logical: 'ignore',
-        prop: 'ignore',
-        return: 'parens-new-line',
-      },
     ],
     semi: [
       1,
