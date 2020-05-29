@@ -73,12 +73,8 @@ module.exports = {
     ...THESE_PLUGINS_MUST_COME_LAST,
   ],
   siteMetadata: {
-    author: '@gatsbyjs',
-    description: `
-      Kick off your next, great Gatsby project with this default starter. This 
-      barebones starter ships with the main Gatsby configuration files you might
-      need.
-    `.trim(),
-    title: 'Gatsby Default Starter',
+    author: '@maxmind',
+    description: 'Developer website for MaxMind.',
+    title: 'MaxMind Developer Site',
   },
 };
