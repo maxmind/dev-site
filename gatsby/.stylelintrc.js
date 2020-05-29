@@ -21,8 +21,14 @@ module.exports = {
       true,
       {
         browsers: [
-          '> 1%',
-          'Last 2 versions',
+          ...([
+            'Chrome',
+            'Edge',
+            'Firefox',
+            'Safari',
+          ].map(browser => `last 2 ${browser} versions`)),
+          'Firefox ESR',
+          'IE 11',
         ],
         ignore: [
           'rem',
