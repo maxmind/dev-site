@@ -1,11 +1,16 @@
-
 /**
  * Implement Gatsby's Node APIs in this file.
  *
  * See: https://www.gatsbyjs.org/docs/node-apis/
  */
 
+import path from 'path';
+
 export const onCreateWebpackConfig = ({ actions, stage }) => {
+  /**
+   * In the development environment, we want eslint to parse files on change and
+   * output any issues to console.
+   */
   if (stage === 'develop') {
     actions.setWebpackConfig({
       module: {
@@ -23,6 +28,24 @@ export const onCreateWebpackConfig = ({ actions, stage }) => {
       },
     });
   }
+
+  /**
+   * Ensure that correct packages are resolved when running Gatsby. This happens
+   * because this project uses Yarn workspaces. Some packages that have
+   * dependencies on others try to resolve them in the wrong places. The module
+   * resolution below makes the dependency paths explicit rather than implicit.
+   */
+  actions.setWebpackConfig({
+    resolve: {
+      alias: {
+        '@mdx-js/react': path.resolve(
+          __dirname,
+          './node_modules/@mdx-js/react'
+        ),
+        react: path.resolve(__dirname, './node_modules/react'),
+      },
+    },
+  });
 };
 
 export const createPages = async ({ graphql, actions, reporter }) => {
