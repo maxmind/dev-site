@@ -66,10 +66,11 @@
   },
   "scripts": {
     "clean:node_modules": "find . -name \"node_modules\" -exec rm -rf '{}' +",
+    "clear:cache": "yarn --cwd gatsby gatsby clean", 
     "build": "yarn workspace gatsby clean && yarn workspace gatsby build && rm -rf firebase/static-site && mv gatsby/public firebase/static-site",
     "deploy": "yarn workspace firebase deploy",
     "deploy:ci": "yarn workspace firebase deploy:ci",
-    "develop": "yarn workspace gatsby develop",
+    "develop": "yarn clear:cache && yarn workspace gatsby develop",
     "lint": "run-p lint:*",
     "lint:configs": "eslint .*rc.js --no-ignore",
     "lint:content": "remark . --ext mdx",
