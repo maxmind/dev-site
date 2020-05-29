@@ -5,7 +5,7 @@
  * See: https://www.gatsbyjs.org/docs/use-static-query/
  */
 
-import { graphql,useStaticQuery } from 'gatsby';
+import { graphql, useStaticQuery } from 'gatsby';
 import PropTypes from 'prop-types';
 import React from 'react';
 import Helmet from 'react-helmet';
@@ -16,7 +16,7 @@ interface IMetaItem {
   property?: string;
 }
 
-interface ISEO {
+export interface ISEO {
   description?: string;
   lang?: string;
   meta?: IMetaItem[];

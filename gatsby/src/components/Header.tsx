@@ -1,33 +1,54 @@
-import { Link } from 'gatsby';
+import { graphql, Link, useStaticQuery } from 'gatsby';
 import PropTypes from 'prop-types';
 import React from 'react';
 
 import styles from './Header.module.scss';
 
-interface IHeader {
-  siteTitle: string;
-}
+const Header: React.FC = () => {
+  const data = useStaticQuery(
+    graphql`
+      query {
+        site {
+          siteMetadata {
+            title
+          }
+        }
+      }
+    `
+  );
 
-const Header: React.FC<IHeader> = ({ siteTitle }) => (
-  <header
-    className={styles.wrapper}
-  >
-    <div
-      className={styles.container}
+  return (
+    <header
+      className={styles.wrapper}
     >
-      <h1
-        className={styles.heading}
+      <div
+        className={styles.container}
       >
-        <Link
-          className={styles.link}
-          to="/"
+        <h1
+          className={styles.heading}
         >
-          {siteTitle}
-        </Link>
-      </h1>
-    </div>
-  </header>
-);
+          <Link
+            className={styles.headingLink}
+            to="/"
+          >
+            {data.site.siteMetadata.title}
+          </Link>
+        </h1>
+
+        <nav
+          className={styles.nav}
+        >
+          <Link
+            className={styles.link}
+            to="/pages/hello-world"
+          >
+            Hello World
+          </Link>
+        </nav>
+      </div>
+    </header>
+  );
+};
 
 Header.propTypes = {
   siteTitle: PropTypes.string.isRequired,

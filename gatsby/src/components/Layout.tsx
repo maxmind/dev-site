@@ -7,56 +7,60 @@
 
 import 'normalize.css';
 
-import { graphql,useStaticQuery } from 'gatsby';
 import PropTypes from 'prop-types';
 import React from 'react';
 
+import SEO from '../components/Seo';
 import Header from './Header';
 import styles from './Layout.module.scss';
 
 interface ILayout {
   children: React.ReactNode;
+  description?: string;
+  keywords?: string[];
+  title: string;
 }
 
-const Layout: React.FC<ILayout> = ({ children }) => {
-  const data = useStaticQuery(graphql`
-    query SiteTitleQuery {
-      site {
-        siteMetadata {
-          title
-        }
-      }
-    }
-  `);
+const Layout: React.FC<ILayout> = (props) => (
+  <>
+    <SEO
+      description={props.description}
+      meta={[
+        ...(props.keywords ? [
+          {
+            content: props.keywords.join(', '),
+            name: 'keywords',
+          },
+        ] : []),
+      ]}
+      title={props.title}
+    />
 
-  return (
-    <>
-      <Header
-        siteTitle={data.site.siteMetadata.title}
-      />
-      <div
-        className={styles.container}
-      >
-        <main>{children}</main>
-        <footer>
-          ©
-          {' '}
-          {new Date().getFullYear()}
-          , Built with
-          {' '}
-          <a
-            href="https://www.gatsbyjs.org"
-          >
-            Gatsby
-          </a>
-        </footer>
-      </div>
-    </>
-  );
-};
+    <Header />
+
+    <main
+      className={styles.main}
+    >
+      <h1>{props.title}</h1>
+      {props.children}
+    </main>
+
+    <footer
+      className={styles.footer}
+    >
+      &copy; 2012-
+      {new Date().getFullYear()}
+      {' '}
+      MaxMind, Inc. All Rights Reserved.
+    </footer>
+  </>
+);
 
 Layout.propTypes = {
   children: PropTypes.node.isRequired,
+  description: PropTypes.string,
+  keywords: PropTypes.array,
+  title: PropTypes.string.isRequired,
 };
 
 export default Layout;

@@ -58,10 +58,8 @@ export const createPages = async ({ graphql, actions, reporter }) => {
             fileAbsolutePath
             frontmatter {
               title
-              seo {
-                description
-                keywords
-              }
+              description
+              keywords
             }
             id
             tableOfContents

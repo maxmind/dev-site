@@ -2,14 +2,13 @@ import PropTypes from 'prop-types';
 import React from 'react';
 
 import Layout from '../components/Layout';
-import SEO from '../components/Seo';
 
-interface IPage {children: React.ReactNode;
+interface IPage {
+  children: React.ReactNode;
   pageContext: {
     readonly frontmatter: {
-      readonly seo: {
-        readonly description: string;
-      };
+      readonly description: string;
+      readonly keywords: string[];
       readonly title: string;
     };
     readonly itemTotal: number;
@@ -20,14 +19,14 @@ interface IPage {children: React.ReactNode;
 }
 
 const Page: React.FC<IPage> = (props) => {
-  const { seo, title } = props.pageContext.frontmatter;
+  const { description, keywords, title } = props.pageContext.frontmatter;
 
   return (
-    <Layout>
-      <SEO
-        description={seo?.description}
-        title={title}
-      />
+    <Layout
+      description={description}
+      keywords={keywords}
+      title={title}
+    >
       {props.children}
     </Layout>
   );

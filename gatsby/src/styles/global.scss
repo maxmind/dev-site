@@ -1,0 +1,30 @@
+html,
+body {
+  background: #eee;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: #555;
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+  line-height: 1.5em;
+  position: relative;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol {
+  margin-top: 0;
+}
