@@ -17,24 +17,12 @@ module.exports = {
     graphql: true,
   },
   ignorePatterns: [
+    '**/*.mdx',
     '.cache',
     'node_modules',
     'public',
   ],
   overrides: [
-    {
-      extends: [
-        'plugin:mdx/recommended',
-      ],
-      files: [
-        '**/*.mdx',
-      ],
-      rules: {
-        semi: [
-          0,
-        ],
-      },
-    },
     {
       extends: [
         'plugin:json/recommended',
