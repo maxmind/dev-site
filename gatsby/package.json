@@ -33,6 +33,7 @@
     "typescript": "^3.8.3"
   },
   "devDependencies": {
+    "@types/prismjs": "^1.16.1",
     "@typescript-eslint/eslint-plugin": "^2.27.0",
     "@typescript-eslint/parser": "^2.27.0",
     "eslint-plugin-css-modules": "^2.11.0",
@@ -40,6 +41,7 @@
     "eslint-plugin-react": "^7.19.0",
     "eslint-plugin-react-hooks": "^3.0.0",
     "eslint-plugin-typescript-sort-keys": "^0.8.0",
+    "prismjs": "^1.20.0",
     "stylelint": "^13.3.1",
     "stylelint-config-recommended": "^3.0.0",
     "stylelint-config-sass-guidelines": "^7.0.0",
