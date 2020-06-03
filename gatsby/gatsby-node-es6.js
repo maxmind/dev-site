@@ -52,7 +52,15 @@ export const createPages = async ({ graphql, actions, reporter }) => {
   const { createPage } = actions;
   const result = await graphql(`
     query {
-      allMdx {
+      allMdx(
+          filter: {
+            frontmatter: { 
+              draft: {
+                eq: ${process.env.gatsby_executing_command === 'develop'} 
+              }
+            }
+          }
+        ) {
         edges {
           node {
             fileAbsolutePath
