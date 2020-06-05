@@ -60,6 +60,7 @@ const CodeSet: React.FC = (props) => {
         return state.selectedLanguage;
       }
 
+      // default to the first child
       return languages[0];
     }
 

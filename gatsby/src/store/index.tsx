@@ -14,12 +14,14 @@ interface IProvider {
 }
 
 const initialState = {
-  selectedLanguage: '',
+  // value is prefixed with 'language-'
+  selectedLanguage: window.localStorage.getItem('mm-selected-language') || '',
 };
 
 const reducer = (state: IState, action: IAction): IState => {
   switch (action.type) {
   case 'change_language':
+    window.localStorage.setItem('mm-selected-language', action.payload);
     return {
       ...state,
       selectedLanguage: action.payload,
