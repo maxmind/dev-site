@@ -49,25 +49,36 @@ const getHumanReadable = (className: string): string  => {
 };
 
 const CodeSet: React.FC = (props) => {
-  const { dispatch, state } = React.useContext(Store);
+  const { dispatch, context } = React.useContext(Store);
+  const [
+    activeLanguage,
+    saveActiveLanguage,
+  ] = React.useState(context.selectedLanguage);
+
   const languages = React.Children.map(props.children, child => {
     if (React.isValidElement(child)) {
       return child.props.children.props.className;
     }
   });
 
-  const activeLanguage = (): string => {
+  // If the codeset contains the context language, display it.
+  // Otherwise, don't change what is being displayed.
+  // Default to displaying the first language in the codeset.
+  React.useEffect(() => {
     if (languages) {
-      if (languages.includes(state.selectedLanguage)) {
-        return state.selectedLanguage;
+      if (languages.includes(context.selectedLanguage) &&
+        context.selectedLanguage !== activeLanguage) {
+        saveActiveLanguage(context.selectedLanguage);
+      }
+
+      if (languages.includes(activeLanguage)) {
+        return;
       }
 
       // default to the first child
-      return languages[0];
+      saveActiveLanguage(languages[0]);
     }
-
-    return '';
-  };
+  });
 
   return (
     <div>
@@ -78,7 +89,10 @@ const CodeSet: React.FC = (props) => {
               const className = child.props.children.props.className;
               return (
                 <button
-                  className={`${styles.button} ${className === activeLanguage() ? styles.active : ''}`}
+                  className={`
+                    ${styles.button}
+                    ${className === activeLanguage ? styles.active : ''}
+                    `}
                   onClick={(): void => {
                     dispatch({
                       payload: className,
@@ -97,7 +111,7 @@ const CodeSet: React.FC = (props) => {
         React.Children.map(props.children, child => {
           if (React.isValidElement(child)) {
             if (child.props.children.props.className ===
-              activeLanguage()) {
+              activeLanguage) {
               return child;
             }
           }

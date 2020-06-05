@@ -1,6 +1,6 @@
 import React from 'react';
 
-interface IState {
+interface IContext {
   selectedLanguage: string;
 }
 
@@ -13,42 +13,46 @@ interface IProvider {
   children?: React.ReactNode;
 }
 
-const initialState = {
+const initialContext = {
   // value is prefixed with 'language-'
   selectedLanguage: window.localStorage.getItem('mm-selected-language') || '',
 };
 
-const reducer = (state: IState, action: IAction): IState => {
+const reducer = (context: IContext, action: IAction): IContext => {
   switch (action.type) {
   case 'change_language':
     window.localStorage.setItem('mm-selected-language', action.payload);
     return {
-      ...state,
+      ...context,
       selectedLanguage: action.payload,
     };
   default:
-    return state;
+    return context;
   }
 };
 
 
 export const Store =
-  React.createContext<{ dispatch: React.Dispatch<IAction>; state: IState }>({
+  React.createContext<
+  {
+    context: IContext;
+    dispatch: React.Dispatch<IAction>;
+  }>({
+    context: initialContext,
     dispatch: () => null,
-    state: initialState,
   });
 
 export const StoreProvider: React.FC = (props: IProvider) => {
   const [
-    state,
+    context,
     dispatch,
-  ] = React.useReducer(reducer, initialState);
+  ] = React.useReducer(reducer, initialContext);
 
   return (
     <Store.Provider
       value={{
+        context,
         dispatch,
-        state,
       }}
     >
       {props.children}
