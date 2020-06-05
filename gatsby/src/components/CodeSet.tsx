@@ -3,6 +3,8 @@ import React from 'react';
 
 import { Store } from '../store';
 
+import styles from './CodeSet.module.scss';
+
 const getHumanReadable = (className: string): string  => {
   const humanReadable = new Map([
     [
@@ -76,6 +78,7 @@ const CodeSet: React.FC = (props) => {
               const className = child.props.children.props.className;
               return (
                 <button
+                  className={`${styles.button} ${className === activeLanguage() ? styles.active : ''}`}
                   onClick={(): void => {
                     dispatch({
                       payload: className,

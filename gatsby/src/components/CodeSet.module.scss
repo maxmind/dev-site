@@ -1,0 +1,11 @@
+.button {
+  background: #fff;
+  color: #639;
+  cursor: pointer;
+}
+
+.button.active {
+  background: #639;
+  color: #fff;
+}
+
