@@ -10,15 +10,15 @@ import PropTypes from 'prop-types';
 import React from 'react';
 
 import * as components from './src/components';
-import { Store } from './src/store';
+import { StoreProvider } from './src/store';
 
 export const wrapRootElement = (props) => (
   <MDXProvider
     components={components}
   >
-    <Store.Provider>
+    <StoreProvider>
       {props.element}
-    </Store.Provider>
+    </StoreProvider>
   </MDXProvider>
 );
 
