@@ -14,7 +14,7 @@ interface IProvider {
 }
 
 const initialState = {
-  selectedLanguage: 'foo',
+  selectedLanguage: '',
 };
 
 const reducer = (state: IState, action: IAction): IState => {

@@ -3,8 +3,69 @@ import React from 'react';
 
 import { Store } from '../store';
 
+const getHumanReadable = (className: string): string  => {
+  const humanReadable = new Map([
+    [
+      'language-c',
+      'C',
+    ],
+    [
+      'language-java',
+      'Java',
+    ],
+    [
+      'language-javascript',
+      'JS',
+    ],
+    [
+      'language-json',
+      'JSON',
+    ],
+    [
+      'language-php',
+      'PHP',
+    ],
+    [
+      'language-python',
+      'Python',
+    ],
+    [
+      'language-ruby',
+      'Ruby',
+    ],
+    [
+      'language-sharp',
+      '.NET',
+    ],
+    [
+      'language-typescript',
+      'TypeScript',
+    ],
+  ]);
+
+  return humanReadable.get(className) || className.replace('language-', '');
+};
+
 const CodeSet: React.FC = (props) => {
   const { dispatch, state } = React.useContext(Store);
+  const languages = React.Children.map(props.children, child => {
+    if (React.isValidElement(child)) {
+      return child.props.children.props.className;
+    }
+  });
+
+  const activeLanguage = (): string => {
+    if (languages) {
+      if (languages.includes(state.selectedLanguage)) {
+        return state.selectedLanguage;
+      }
+
+      return languages[0];
+    }
+
+    return '';
+  };
+
   return (
     <div>
       <nav>
@@ -21,7 +82,7 @@ const CodeSet: React.FC = (props) => {
                     });
                   }}
                 >
-                  {className}
+                  {getHumanReadable(className)}
                 </button>
               );
             }
@@ -32,7 +93,7 @@ const CodeSet: React.FC = (props) => {
         React.Children.map(props.children, child => {
           if (React.isValidElement(child)) {
             if (child.props.children.props.className ===
-              state.selectedLanguage) {
+              activeLanguage()) {
               return child;
             }
           }
