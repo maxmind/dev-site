@@ -1,3 +1,4 @@
+/* eslint-disable import/namespace, import/named */
 /**
  * Implement Gatsby's Browser APIs in this file.
  *
@@ -9,12 +10,15 @@ import PropTypes from 'prop-types';
 import React from 'react';
 
 import * as components from './src/components';
+import { StoreProvider } from './src/store';
 
 export const wrapRootElement = (props) => (
   <MDXProvider
     components={components}
   >
-    {props.element}
+    <StoreProvider>
+      {props.element}
+    </StoreProvider>
   </MDXProvider>
 );
 
