@@ -1,4 +1,9 @@
-const stylelint = require('stylelint');
+// TODO: Enable stylelint + postcss integration for feedback
+// using `gatsby develop`
+
+// const reporter = require('postcss-reporter');
+const remarkSlug = require('remark-slug');
+// const stylelint = require('stylelint');
 
 /**
  * The plugins below must come last in the ordering of the plugins because they
@@ -19,9 +24,14 @@ module.exports = {
         includePaths: [
           'src/styles',
         ],
+        /* eslint-disable array-bracket-newline */
         postCssPlugins: [
-          stylelint(),
+          // stylelint(),
+          // reporter({
+          //   clearReportedMessages: true,
+          // }),
         ],
+        /* eslint-enable array-bracket-newline */
       },
       resolve: 'gatsby-plugin-sass',
     },
@@ -40,6 +50,9 @@ module.exports = {
         extensions: [
           '.mdx',
           '.md',
+        ],
+        remarkPlugins: [
+          remarkSlug,
         ],
       },
       resolve: 'gatsby-plugin-mdx',
@@ -73,12 +86,8 @@ module.exports = {
     ...THESE_PLUGINS_MUST_COME_LAST,
   ],
   siteMetadata: {
-    author: '@gatsbyjs',
-    description: `
-      Kick off your next, great Gatsby project with this default starter. This 
-      barebones starter ships with the main Gatsby configuration files you might
-      need.
-    `.trim(),
-    title: 'Gatsby Default Starter',
+    author: '@maxmind',
+    description: 'Developer website for MaxMind.',
+    title: 'MaxMind Developer Site',
   },
 };

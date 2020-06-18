@@ -1,6 +1,7 @@
 import PropTypes from 'prop-types';
 import React from 'react';
 
+import useIsClient from '../hooks/useIsClient';
 import { Store } from '../store';
 import styles from './CodeSet.module.scss';
 
@@ -57,6 +58,7 @@ const getHumanReadable = (className: string): string  => {
 };
 
 const CodeSet: React.FC = (props) => {
+  const { isClient, key } = useIsClient();
   const { dispatch, context } = React.useContext(Store);
   const [
     activeLanguage,
@@ -112,9 +114,15 @@ const CodeSet: React.FC = (props) => {
     activeLanguage,
   ]);
 
+  if ( !isClient ) return null;
   return (
-    <div>
-      <nav>
+    <div
+      className={styles.wrapper}
+      key={key}
+    >
+      <nav
+        className={styles.nav}
+      >
         {
           React.Children.map(orderedChildren, child => {
             if (React.isValidElement(child)) {

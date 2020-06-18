@@ -6,57 +6,121 @@
  */
 
 import 'normalize.css';
+import 'typeface-roboto';
 
-import { graphql,useStaticQuery } from 'gatsby';
+import classNames from 'classnames';
+import { Link } from 'gatsby';
 import PropTypes from 'prop-types';
-import React from 'react';
+import React, { useState } from 'react';
+import { FaArrowLeft, FaArrowRight } from 'react-icons/fa';
 
-import Header from './Header';
+import SEO from '../components/Seo';
+import Article from './Article';
 import styles from './Layout.module.scss';
+import { ITableOfContents } from './TableOfContents';
 
 interface ILayout {
   children: React.ReactNode;
+  description?: string;
+  keywords?: string[];
+  tableOfContents?: ITableOfContents;
+  title: string;
 }
 
-const Layout: React.FC<ILayout> = ({ children }) => {
-  const data = useStaticQuery(graphql`
-    query SiteTitleQuery {
-      site {
-        siteMetadata {
-          title
-        }
-      }
-    }
-  `);
+const Layout: React.FC<ILayout> = (props) => {
+  const [
+    isSidebarOpen,
+    setIsSidebarOpen,
+  ] = useState(false);
+
+  const toggleSidebar = (): void => setIsSidebarOpen(!isSidebarOpen);
 
   return (
     <>
-      <Header
-        siteTitle={data.site.siteMetadata.title}
+      <SEO
+        description={props.description}
+        meta={[
+          ...(props.keywords ? [
+            {
+              content: props.keywords.join(', '),
+              name: 'keywords',
+            },
+          ] : []),
+        ]}
+        title={props.title}
       />
-      <div
-        className={styles.container}
+
+      <header
+        className={styles.header}
       >
-        <main>{children}</main>
-        <footer>
-          ©
-          {' '}
-          {new Date().getFullYear()}
-          , Built with
-          {' '}
-          <a
-            href="https://www.gatsbyjs.org"
+        <button
+          aria-label={isSidebarOpen ? 'Open menu' : 'Close menu'}
+          className={styles.toggle}
+          onClick={toggleSidebar}
+        >
+          {isSidebarOpen ? (
+            <FaArrowLeft
+              aria-hidden="true"
+            />
+          ) : (
+            <FaArrowRight
+              aria-hidden="true"
+            />
+          )}
+        </button>
+      </header>
+
+      <main
+        className={classNames(
+          styles.main,
+          !isSidebarOpen ? styles['sidebar--hidden'] : ''
+        )}
+      >
+        <section
+          className={styles.sidebar}
+        >
+          <nav
+            className={styles.sidebarNav}
           >
-            Gatsby
-          </a>
-        </footer>
-      </div>
+            <ul>
+              <li>
+                <Link
+                  to="pages/longform-example"
+                >
+                  Longform Example
+                </Link>
+              </li>
+            </ul>
+          </nav>
+        </section>
+
+        <Article
+          className={styles.article}
+          tableOfContents={props.tableOfContents}
+          title={props.title}
+        >
+          {props.children}
+        </Article>
+      </main>
+
+      <footer
+        className={styles.footer}
+      >
+        &copy; 2012-
+        {new Date().getFullYear()}
+        {' '}
+        MaxMind, Inc. All Rights Reserved.
+      </footer>
     </>
   );
 };
 
 Layout.propTypes = {
   children: PropTypes.node.isRequired,
+  description: PropTypes.string,
+  keywords: PropTypes.array,
+  tableOfContents: PropTypes.any,
+  title: PropTypes.string.isRequired,
 };
 
 export default Layout;

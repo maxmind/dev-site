@@ -2,14 +2,12 @@ import { Link } from 'gatsby';
 import React from 'react';
 
 import Layout from '../components/Layout';
-import SEO from '../components/Seo';
 
 const SecondPage: React.FC = () => (
-  <Layout>
-    <SEO
-      title="Page two"
-    />
-    <h1>Hi from the second page</h1>
+  <Layout
+    description="This is page 2."
+    title="Page two"
+  >
     <p>Welcome to page 2</p>
     <Link
       to="/"

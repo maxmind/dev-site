@@ -61,6 +61,10 @@ module.exports = {
     },
   ],
   parser: 'babel-eslint',
+  parserOptions: {
+    ecmaVersion: 6,
+    sourceType: 'module',
+  },
   plugins: [
     '@typescript-eslint',
     'css-modules',
@@ -92,6 +96,8 @@ module.exports = {
       1,
       'pascal',
     ],
+    'react-hooks/exhaustive-deps': 'warn',
+    'react-hooks/rules-of-hooks': 'error',
     'react/boolean-prop-naming': [
       'warn',
       {
@@ -167,8 +173,6 @@ module.exports = {
         return: 'parens-new-line',
       },
     ],
-    'react-hooks/rules-of-hooks': 'error',
-    'react-hooks/exhaustive-deps': 'warn',
   },
   settings: {
     react: {

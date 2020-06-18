@@ -1,0 +1,6 @@
+@import '../../styles/variables';
+
+.h1 {
+  @include heading;
+  font-size: 40px;
+}

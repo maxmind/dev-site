@@ -1,11 +1,41 @@
+@import '../styles/variables';
+
+$radius: 6px;
+
+.wrapper {
+  margin: $mm-spacing 0;
+  width: 100%;
+}
+
+.nav {
+  background: $mm-dark-blue;
+  border-radius: $radius $radius 0 0;
+}
+
+.nav ~ pre {
+  border-radius: 0 0 $radius $radius;
+  margin-top: 0 !important;
+}
+
 .button {
-  background: #fff;
-  color: #639;
+  background: none;
+  border: 0;
+  color: #ccc;
   cursor: pointer;
+  font-size: 10px;
+  font-weight: 500;
+  height: 100%;
+  letter-spacing: 1px;
+  padding: $mm-spacing / 4;
+  text-transform: uppercase;
+}
+
+.button:first-of-type {
+  border-radius: $radius 0 0 0;
 }
 
 .button.active {
-  background: #639;
+  background: rgba(255, 255, 255, 0.1);
   color: #fff;
 }
 

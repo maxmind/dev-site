@@ -4,10 +4,35 @@
  * See: https://www.gatsbyjs.org/docs/ssr-apis/
  */
 
+
+import { MDXProvider } from '@mdx-js/react';
+import PropTypes from 'prop-types';
+import React from 'react';
+
+import * as components from './src/components/mdx';
+import { StoreProvider } from './src/store';
+
+
+/**
+ * Export the root element with wrapped providers
+ */
+export const wrapRootElement = (props) => (
+  <MDXProvider
+    components={components}
+  >
+    <StoreProvider>
+      {props.element}
+    </StoreProvider>
+  </MDXProvider>
+);
+
+wrapRootElement.propTypes = {
+  element: PropTypes.instanceOf(React.ReactElement),
+};
+
 import cheerio from 'cheerio';
 import crypto from 'crypto';
 import fs from 'fs';
-import React from 'react';
 import { renderToString } from 'react-dom/server';
 
 export const replaceRenderer = (props) => {

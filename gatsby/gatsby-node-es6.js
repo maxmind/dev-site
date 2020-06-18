@@ -6,13 +6,13 @@
 
 import path from 'path';
 
-export const onCreateWebpackConfig = ({ actions, stage }) => {
+export const onCreateWebpackConfig = (props) => {
   /**
    * In the development environment, we want eslint to parse files on change and
    * output any issues to console.
    */
-  if (stage === 'develop') {
-    actions.setWebpackConfig({
+  if (props.stage === 'develop') {
+    props.actions.setWebpackConfig({
       module: {
         rules: [
           {
@@ -35,7 +35,7 @@ export const onCreateWebpackConfig = ({ actions, stage }) => {
    * dependencies on others try to resolve them in the wrong places. The module
    * resolution below makes the dependency paths explicit rather than implicit.
    */
-  actions.setWebpackConfig({
+  props.actions.setWebpackConfig({
     resolve: {
       alias: {
         '@mdx-js/react': path.resolve(
@@ -58,13 +58,12 @@ export const createPages = async ({ graphql, actions, reporter }) => {
             fileAbsolutePath
             frontmatter {
               title
-              seo {
-                description
-                keywords
-              }
+              description
+              keywords
+              draft
             }
             id
-            tableOfContents
+            tableOfContents(maxDepth: 3)
             parent {
               id
               ... on File {
@@ -86,12 +85,12 @@ export const createPages = async ({ graphql, actions, reporter }) => {
   const posts = result.data.allMdx.edges;
 
   posts.forEach(({ node }) => {
-    createPage({
-      component: node.fileAbsolutePath,
-      context: {
-        id: node.id,
-      },
-      path: `${node.parent.relativeDirectory}/${node.parent.name}`,
-    });
+    if (process.env.gatsby_executing_command === 'develop' || !node.draft) {
+      createPage({
+        component: node.fileAbsolutePath,
+        context: node,
+        path: `${node.parent.relativeDirectory}/${node.parent.name}`,
+      });
+    }
   });
 };

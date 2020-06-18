@@ -2,32 +2,35 @@ import PropTypes from 'prop-types';
 import React from 'react';
 
 import Layout from '../components/Layout';
-import SEO from '../components/Seo';
+import { ITableOfContents } from '../components/TableOfContents';
 
-interface IPage {children: React.ReactNode;
+interface IPage {
+  children: React.ReactNode;
   pageContext: {
     readonly frontmatter: {
-      readonly seo: {
-        readonly description: string;
-      };
+      readonly description: string;
+      readonly keywords: string[];
       readonly title: string;
     };
     readonly itemTotal: number;
     readonly page: number;
     readonly pageTotal: number;
     readonly prefix: string;
+    readonly tableOfContents: ITableOfContents;
   };
 }
 
 const Page: React.FC<IPage> = (props) => {
-  const { seo, title } = props.pageContext.frontmatter;
+  const { frontmatter, tableOfContents } = props.pageContext;
+  const { description, keywords, title } = frontmatter;
 
   return (
-    <Layout>
-      <SEO
-        description={seo?.description}
-        title={title}
-      />
+    <Layout
+      description={description}
+      keywords={keywords}
+      tableOfContents={tableOfContents}
+      title={title}
+    >
       {props.children}
     </Layout>
   );
