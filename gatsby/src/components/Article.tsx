@@ -14,6 +14,7 @@ interface IArticle {
 
 const Article: React.FC<IArticle & React.HTMLProps<HTMLElement>> = (props) => {
   const { children, className, tableOfContents, title, ...rest } = props;
+  // TODO: Get current item based on scroll/anchor position
   const currentItem = '#redshift-is-hard';
   return (
     <article

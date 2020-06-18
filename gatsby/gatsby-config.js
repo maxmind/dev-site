@@ -1,3 +1,6 @@
+// TODO: Enable stylelint + postcss integration for feedback
+// using `gatsby develop`
+
 // const reporter = require('postcss-reporter');
 const remarkSlug = require('remark-slug');
 // const stylelint = require('stylelint');
