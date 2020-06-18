@@ -1,0 +1,6 @@
+@import '../../styles/variables';
+
+.h4 {
+  @include heading;
+  font-size: 18px;
+}

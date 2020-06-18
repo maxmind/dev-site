@@ -1,0 +1,6 @@
+@import '../../styles/variables';
+
+.h5 {
+  @include heading;
+  font-size: 16px;
+}

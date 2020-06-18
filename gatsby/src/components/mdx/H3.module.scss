@@ -1,0 +1,6 @@
+@import '../../styles/variables';
+
+.h3 {
+  @include heading;
+  font-size: 24px;
+}

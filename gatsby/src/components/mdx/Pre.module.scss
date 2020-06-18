@@ -1,0 +1,21 @@
+@import '../styles/variables';
+
+:global {
+  .line-numbers .line-numbers-rows {
+    border-color: rgba(255, 255, 255, 0.1) !important;
+    font-family: 'Source Code Pro', serif !important;
+    margin-top: -1px;
+  }
+
+  .line-numbers-rows > span::before {
+    color: rgba(255, 255, 255, 0.3) !important;
+  }
+}
+
+.pre {
+  border-radius: 6px;
+  font-family: 'Source Code Pro', serif !important;
+  margin: $mm-spacing auto !important;
+
+  @include scrollbars();
+}
