@@ -6,13 +6,13 @@
 
 import path from 'path';
 
-export const onCreateWebpackConfig = ({ actions, stage }) => {
+export const onCreateWebpackConfig = (props) => {
   /**
    * In the development environment, we want eslint to parse files on change and
    * output any issues to console.
    */
-  if (stage === 'develop') {
-    actions.setWebpackConfig({
+  if (props.stage === 'develop') {
+    props.actions.setWebpackConfig({
       module: {
         rules: [
           {
@@ -35,7 +35,7 @@ export const onCreateWebpackConfig = ({ actions, stage }) => {
    * dependencies on others try to resolve them in the wrong places. The module
    * resolution below makes the dependency paths explicit rather than implicit.
    */
-  actions.setWebpackConfig({
+  props.actions.setWebpackConfig({
     resolve: {
       alias: {
         '@mdx-js/react': path.resolve(
