@@ -52,15 +52,7 @@ export const createPages = async ({ graphql, actions, reporter }) => {
   const { createPage } = actions;
   const result = await graphql(`
     query {
-      allMdx(
-          filter: {
-            frontmatter: { 
-              draft: {
-                eq: ${process.env.gatsby_executing_command === 'develop'} 
-              }
-            }
-          }
-        ) {
+      allMdx {
         edges {
           node {
             fileAbsolutePath
@@ -68,6 +60,7 @@ export const createPages = async ({ graphql, actions, reporter }) => {
               title
               description
               keywords
+              draft
             }
             id
             tableOfContents
@@ -92,12 +85,12 @@ export const createPages = async ({ graphql, actions, reporter }) => {
   const posts = result.data.allMdx.edges;
 
   posts.forEach(({ node }) => {
+    if (process.env.gatsby_executing_command === 'develop' || !node.draft) {
     createPage({
       component: node.fileAbsolutePath,
-      context: {
-        id: node.id,
-      },
+        context: node,
       path: `${node.parent.relativeDirectory}/${node.parent.name}`,
     });
+    }
   });
 };
