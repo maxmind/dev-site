@@ -2,6 +2,7 @@ import PropTypes from 'prop-types';
 import React from 'react';
 
 import Layout from '../components/Layout';
+import { ITableOfContents } from '../components/TableOfContents';
 
 interface IPage {
   children: React.ReactNode;
@@ -15,16 +16,19 @@ interface IPage {
     readonly page: number;
     readonly pageTotal: number;
     readonly prefix: string;
+    readonly tableOfContents: ITableOfContents;
   };
 }
 
 const Page: React.FC<IPage> = (props) => {
-  const { description, keywords, title } = props.pageContext.frontmatter;
+  const { frontmatter, tableOfContents } = props.pageContext;
+  const { description, keywords, title } = frontmatter;
 
   return (
     <Layout
       description={description}
       keywords={keywords}
+      tableOfContents={tableOfContents}
       title={title}
     >
       {props.children}

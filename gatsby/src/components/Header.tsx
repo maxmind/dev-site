@@ -40,9 +40,9 @@ const Header: React.FC = () => {
         >
           <Link
             className={styles.link}
-            to="/pages/hello-world"
+            to="/pages/longform-example"
           >
-            Hello World
+            Longform Example
           </Link>
         </nav>
       </div>

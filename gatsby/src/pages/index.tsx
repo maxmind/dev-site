@@ -1,8 +1,8 @@
 import { Link } from 'gatsby';
 import React from 'react';
 
-import Image from '../components/Image';
 import Layout from '../components/Layout';
+import Image from '../components/mdx/Img';
 
 const IndexPage: React.FC = () => (
   <Layout
