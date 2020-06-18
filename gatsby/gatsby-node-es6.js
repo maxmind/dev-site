@@ -63,7 +63,7 @@ export const createPages = async ({ graphql, actions, reporter }) => {
               draft
             }
             id
-            tableOfContents
+            tableOfContents(maxDepth: 3)
             parent {
               id
               ... on File {
@@ -86,11 +86,11 @@ export const createPages = async ({ graphql, actions, reporter }) => {
 
   posts.forEach(({ node }) => {
     if (process.env.gatsby_executing_command === 'develop' || !node.draft) {
-    createPage({
-      component: node.fileAbsolutePath,
+      createPage({
+        component: node.fileAbsolutePath,
         context: node,
-      path: `${node.parent.relativeDirectory}/${node.parent.name}`,
-    });
+        path: `${node.parent.relativeDirectory}/${node.parent.name}`,
+      });
     }
   });
 };
