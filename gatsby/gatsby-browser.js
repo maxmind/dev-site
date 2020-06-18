@@ -29,3 +29,14 @@ export const wrapRootElement = (props) => (
 wrapRootElement.propTypes = {
   element: PropTypes.instanceOf(React.ReactElement),
 };
+
+/**
+ * Ensure that Reach Router honors url hash ids
+ */
+export const onRouteUpdate = (props) => {
+  if (props.location.hash) {
+    setTimeout(() => {
+      document.querySelector(props.location.hash).scrollIntoView();
+    }, 0);
+  }
+};
