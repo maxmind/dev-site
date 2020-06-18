@@ -13,10 +13,16 @@ interface IProvider {
   children?: React.ReactNode;
 }
 
-const initialContext = {
-  // value is prefixed with 'language-'
-  selectedLanguage: window.localStorage.getItem('mm-selected-language') || '',
-};
+let initialContext: IContext;
+if (typeof window !== 'undefined') {
+  initialContext = {
+    selectedLanguage: window.localStorage.getItem('mm-selected-language') || '',
+  };
+} else {
+  initialContext = {
+    selectedLanguage: '',
+  };
+}
 
 const reducer = (context: IContext, action: IAction): IContext => {
   switch (action.type) {
@@ -30,7 +36,6 @@ const reducer = (context: IContext, action: IAction): IContext => {
     return context;
   }
 };
-
 
 export const Store =
   React.createContext<
