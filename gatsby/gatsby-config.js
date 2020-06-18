@@ -1,4 +1,5 @@
 // const reporter = require('postcss-reporter');
+const remarkSlug = require('remark-slug');
 // const stylelint = require('stylelint');
 
 /**
@@ -46,6 +47,9 @@ module.exports = {
         extensions: [
           '.mdx',
           '.md',
+        ],
+        remarkPlugins: [
+          remarkSlug,
         ],
       },
       resolve: 'gatsby-plugin-mdx',
