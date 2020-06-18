@@ -1,4 +1,5 @@
-const stylelint = require('stylelint');
+// const reporter = require('postcss-reporter');
+// const stylelint = require('stylelint');
 
 /**
  * The plugins below must come last in the ordering of the plugins because they
@@ -19,9 +20,14 @@ module.exports = {
         includePaths: [
           'src/styles',
         ],
+        /* eslint-disable array-bracket-newline */
         postCssPlugins: [
-          stylelint(),
+          // stylelint(),
+          // reporter({
+          //   clearReportedMessages: true,
+          // }),
         ],
+        /* eslint-enable array-bracket-newline */
       },
       resolve: 'gatsby-plugin-sass',
     },
