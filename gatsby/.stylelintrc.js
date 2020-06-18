@@ -28,13 +28,27 @@ module.exports = {
             'Safari',
           ].map(browser => `last 2 ${browser} versions`)),
           'Firefox ESR',
-          'IE 11',
         ],
         ignore: [
+          'calc',
+          'multicolumn',
           'rem',
         ],
       },
     ],
-    'selector-class-pattern': '[a-z][a-zA-Z0-9]+$',
+    'selector-class-pattern': [
+      '[a-z]([a-zA-Z0-9]+)?$',
+      {
+        resolveNestedSelectors: true,
+      },
+    ],
+    'selector-pseudo-class-no-unknown': [
+      true,
+      {
+        ignorePseudoClasses: [
+          'global',
+        ],
+      },
+    ],
   },
 };

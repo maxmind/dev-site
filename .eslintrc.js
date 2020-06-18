@@ -61,6 +61,9 @@ module.exports = {
           1,
           '^[a-z0-9-]+$',
         ],
+        'max-len': [
+          0,
+        ],
       },
     },
   ],
@@ -111,7 +114,7 @@ module.exports = {
         ImportDeclaration: 'never',
         ObjectExpression: 'always',
         ObjectPattern: {
-          multiline: true ,
+          multiline: true,
         },
       },
     ],
