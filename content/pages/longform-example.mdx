@@ -196,20 +196,18 @@ advantage. To do so, we need a way to convert IPs and IP networks to numbers.
 Using the `geoip2-csv-converter` tool provided by MaxMind, we will add the
 integer range representation of each network to our CSV.
 
-```bash
-# Download the converter tool from Github
+```cli
 curl -o geoip2-csv-converter-v1.1.0-darwin-amd64.tar.gz \
-  -L https://github.com/maxmind/geoip2-csv-converter/releases/download/v1.1.0/geoip2-csv-converter-v1.1.0-darwin-amd64.tar.gz
+>  -L https://github.com/maxmind/geoip2-csv-converter/releases/download/v1.1.0/geoip2-csv-converter-v1.1.0-darwin-amd64.tar.gz
 tar xvf geoip2-csv-converter-v1.1.0-darwin-amd64.tar.gz
 ```
 
-```bash
-# Use the tool to add integer range columns to our CSV
+```cli
 ./geoip2-csv-converter-v1.1.0/geoip2-csv-converter \
-  -block-file=GeoLite2-City-CSV_20190108/GeoLite2-City-Blocks-IPv4.csv \
-  -output-file=GeoLite2-City-Blocks-IPv4-with-ranges.csv \
-  -include-cidr \
-  -include-integer-range
+>  -block-file=GeoLite2-City-CSV_20190108/GeoLite2-City-Blocks-IPv4.csv \
+>  -output-file=GeoLite2-City-Blocks-IPv4-with-ranges.csv \
+>  -include-cidr \
+>  -include-integer-range
 gzip GeoLite2-City-Blocks-IPv4-with-ranges.csv
 ```
 

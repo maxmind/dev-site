@@ -10,6 +10,14 @@
   .line-numbers-rows > span::before {
     color: rgba(255, 255, 255, 0.3) !important;
   }
+
+  .command-line-prompt {
+    border-color: rgba(255, 255, 255, 0.1) !important;
+  }
+
+  .command-line-prompt > span::before {
+    color: rgba(255, 255, 255, 0.3) !important;
+  }
 }
 
 .pre {

@@ -20,6 +20,8 @@ import 'prismjs/components/prism-php.js';
 import 'prismjs/components/prism-ruby.js';
 import 'prismjs/components/prism-sql.js';
 import 'prismjs/components/prism-typescript.js';
+import 'prismjs/plugins/command-line/prism-command-line.css';
+import 'prismjs/plugins/command-line/prism-command-line.js';
 import 'prismjs/plugins/line-numbers/prism-line-numbers.css';
 import 'prismjs/plugins/line-numbers/prism-line-numbers.js';
 
@@ -35,14 +37,21 @@ const Pre: React.FC<React.HTMLProps<HTMLPreElement>> = (props) => {
 
   return (
     <pre
-      className={classNames(languageClass, 'line-numbers', styles.pre)}
+      className={classNames(
+        languageClass,
+        {
+          'command-line': languageClass === 'language-cli',
+          'language-bash': languageClass === 'language-cli',
+          'line-numbers': languageClass !== 'language-cli',
+        },
+        styles.pre
+      )}
+      data-filter-output="> "
+      data-host="maxmind"
+      data-user="docs"
       ref={preRef}
     >
-      <code
-        className={classNames(languageClass, 'codeblock')}
-      >
-        {props.children}
-      </code>
+      {props.children}
     </pre>
   );
 };
