@@ -24,12 +24,54 @@ import 'prismjs/plugins/command-line/prism-command-line.css';
 import 'prismjs/plugins/command-line/prism-command-line.js';
 import 'prismjs/plugins/line-numbers/prism-line-numbers.css';
 import 'prismjs/plugins/line-numbers/prism-line-numbers.js';
+import 'prismjs/plugins/normalize-whitespace/prism-normalize-whitespace.js';
+import 'prismjs/plugins/show-invisibles/prism-show-invisibles.css';
+import 'prismjs/plugins/show-invisibles/prism-show-invisibles.js';
+
 
 const Pre: React.FC<React.HTMLProps<HTMLPreElement>> = (props) => {
   const preRef = React.createRef<HTMLPreElement>();
   const child =
     React.Children.toArray(props.children)[0] as React.ReactElement;
   const languageClass = child.props.className;
+  const language = languageClass.replace('language-', '');
+
+  // eslint-disable-next-line security/detect-object-injection
+  const firstGrammar =  (Prism.languages[language])
+    // eslint-disable-next-line security/detect-object-injection
+    ? Object.keys(Prism.languages[language]).shift()
+    : '';
+
+  Prism.languages.insertBefore(
+    language,
+    firstGrammar || '',
+    {
+      indent: {
+        inside: {
+          space: / /,
+          tab: /\t/,
+        },
+        pattern: /^\s+/gm,
+      },
+    },
+    Prism.languages
+  );
+
+  Prism.plugins.NormalizeWhitespace.setDefaults({
+    'left-trim': true,
+    'remove-indent': true,
+    'remove-initial-line-feed': true,
+    'remove-trailing': true,
+    'right-trim': true,
+    ...(languageClass === 'language-go' && ({
+      'spaces-to-tabs': 2,
+      'tabs-to-spaces': undefined,
+    })),
+    ...(languageClass !== 'language-go' && ({
+      'spaces-to-tabs': undefined,
+      'tabs-to-spaces': 2,
+    })),
+  });
 
   React.useEffect(() => {
     Prism.highlightAllUnder(preRef.current as Element);

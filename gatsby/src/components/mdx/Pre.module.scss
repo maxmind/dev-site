@@ -18,6 +18,45 @@
   .command-line-prompt > span::before {
     color: rgba(255, 255, 255, 0.3) !important;
   }
+
+  .token.tab::before {
+    content: '\279D' !important;
+  }
+
+  .token.tab:not(:empty)::before,
+  .token.cr::before,
+  .token.lf::before,
+  .token.space::before {
+    color: rgba(255, 255, 255, 0.1) !important;
+    opacity: 1 !important;
+  }
+
+  .token.cr::before,
+  .token.crlf::before,
+  .token.lf::before {
+    content: '\21b5' !important;
+    margin-left: 4px;
+  }
+
+  .token.indent {
+    border-left: 1px solid rgba(255, 255, 255, 0.1);
+    margin-left: 4px;
+    padding-left: 4px;
+  }
+
+  .token.indent .token.space:nth-of-type(2n),
+  .token.indent .token.tab {
+    border-right: 1px solid rgba(255, 255, 255, 0.1);
+    margin-right: 4px;
+    padding-right: 4px;
+  }
+
+  .token.indent .token.space:last-of-type,
+  .token.indent .token.tab:last-of-type {
+    border-right: 0;
+    margin-right: 0;
+    // padding-right: 0;
+  }
 }
 
 .pre {
