@@ -2,60 +2,13 @@ import PropTypes from 'prop-types';
 import React from 'react';
 
 import useIsClient from '../hooks/useIsClient';
+import { languages } from '../languages';
 import { Store } from '../store';
 import styles from './CodeSet.module.scss';
 
-// This defines both the human-readable version of the language class, and the
-// render order of the button selector.
-// If the language is not found in the Map, it is rendered first.
-// If multiple languages are not found in the Map, they are all rendered first
-// in order of appearance.
-const languageMap = new Map([
-  [
-    'language-c',
-    'C',
-  ],
-  [
-    'language-java',
-    'Java',
-  ],
-  [
-    'language-javascript',
-    'JS',
-  ],
-  [
-    'language-json',
-    'JSON',
-  ],
-  [
-    'language-php',
-    'PHP',
-  ],
-  [
-    'language-python',
-    'Python',
-  ],
-  [
-    'language-ruby',
-    'Ruby',
-  ],
-  [
-    'language-sharp',
-    '.NET',
-  ],
-  [
-    'language-typescript',
-    'TypeScript',
-  ],
-]);
-
-const languageArray = [
-  ...languageMap.entries(),
-];
-
-const getHumanReadable = (className: string): string  => {
-  return languageMap.get(className) || className.replace('language-', '');
-};
+const getHumanReadable = (className: string): string  => languages
+  .find(language => `language-${language.id}` === className)?.label
+    || className.replace('language-', '');
 
 const CodeSet: React.FC = (props) => {
   const { isClient, key } = useIsClient();
@@ -67,10 +20,12 @@ const CodeSet: React.FC = (props) => {
 
   const orderedChildren = React.Children.toArray(props.children).sort((a,b) => {
     if (React.isValidElement(a) && React.isValidElement(b)) {
-      const indexA = languageArray
-        .findIndex(element => element[0] === a.props.children.props.className);
-      const indexB = languageArray
-        .findIndex(element => element[0] === b.props.children.props.className);
+      const indexA = languages.findIndex(element =>
+        `language-${element.id}` === a.props.children.props.className
+      );
+      const indexB = languages.findIndex(element =>
+        `language-${element.id}` === b.props.children.props.className
+      );
 
       if (indexA - indexB > 0) {
         return 1;
@@ -84,7 +39,7 @@ const CodeSet: React.FC = (props) => {
     return -1;
   });
 
-  const languages = React.Children.map(orderedChildren, child => {
+  const orderedLanguages = React.Children.map(orderedChildren, child => {
     if (React.isValidElement(child)) {
       return child.props.children.props.className;
     }
@@ -95,21 +50,21 @@ const CodeSet: React.FC = (props) => {
   // Otherwise, don't change what is being displayed.
   // Default to displaying the first language in orderedChildren.
   React.useEffect(() => {
-    if (languages) {
-      if (languages.includes(context.selectedLanguage) &&
+    if (orderedLanguages) {
+      if (orderedLanguages.includes(context.selectedLanguage) &&
         context.selectedLanguage !== activeLanguage) {
         saveActiveLanguage(context.selectedLanguage);
       }
 
-      if (languages.includes(activeLanguage)) {
+      if (orderedLanguages.includes(activeLanguage)) {
         return;
       }
 
       // default to the first child
-      saveActiveLanguage(languages[0]);
+      saveActiveLanguage(orderedLanguages[0]);
     }
   }, [
-    languages,
+    orderedLanguages,
     context.selectedLanguage,
     activeLanguage,
   ]);

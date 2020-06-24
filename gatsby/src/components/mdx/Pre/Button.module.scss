@@ -1,0 +1,21 @@
+.button {
+  background: transparent;
+  border: 0;
+  color: rgba(255, 255, 255, 0.3);
+  cursor: pointer;
+  margin: 5px 0;
+  outline: none;
+  transition: color 0.2s ease-out;
+}
+
+.button:disabled {
+  color: rgba(255, 255, 255, 0.2);
+}
+
+.button:hover {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.button:target {
+  // outline: 1px solid $mm-light-blue;
+}

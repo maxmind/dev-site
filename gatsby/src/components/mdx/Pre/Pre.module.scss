@@ -1,0 +1,33 @@
+@import '../styles/variables';
+
+.container {
+  margin: 0 0 $mm-spacing;
+  position: relative;
+}
+
+.toolbar {
+  align-content: center;
+  background-color: lighten(#263238, 5);
+  border-radius: 0 6px 6px 0;
+  display: flex;
+  flex-wrap: wrap;
+  height: 100%;
+  justify-content: center;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  top: 0;
+  width: $mm-spacing;
+  z-index: 1;
+}
+
+.content {
+  // grid-area: code;
+  height: 100%;
+  position: relative;
+  width: calc(100% - #{$mm-spacing});
+}
+
+.container pre {
+  margin-top: 0 !important;
+}
