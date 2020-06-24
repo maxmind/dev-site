@@ -83,6 +83,13 @@ module.exports = {
       },
       resolve: 'gatsby-plugin-manifest',
     },
+    {
+      options: {
+        analyzerPort: 3000,
+        production: true,
+      },
+      resolve: 'gatsby-plugin-webpack-bundle-analyzer',
+    },
     ...THESE_PLUGINS_MUST_COME_LAST,
   ],
   siteMetadata: {
