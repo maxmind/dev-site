@@ -58,6 +58,7 @@ $transition: all 0.15s ease-out;
 
 .article {
   grid-area: article-start / sidebar-start / article-end / article-end;
+  overflow: hidden;
   transition: $transition;
 }
 

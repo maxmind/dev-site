@@ -39,10 +39,23 @@ $mm-light-blue: #00aeef;
 $mm-spacing: 40px;
 
 @mixin max-width {
+
+  @include breakpoint('lg') {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 720px;
+  }
+
   @include breakpoint('xl') {
     margin-left: auto;
     margin-right: auto;
-    max-width: 760px;
+    max-width: 720px;
+  }
+
+  @include breakpoint('xl') {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 720px;
   }
 }
 
@@ -92,7 +105,7 @@ $mm-spacing: 40px;
   &::-webkit-scrollbar-track {
     background: $mm-dark-blue;
     border: 0;
-    border-radius: 0 0 6px 6px;
+    border-radius: 0 0 0 6px;
   }
 
   &::-webkit-scrollbar-thumb {
