@@ -93,7 +93,9 @@ const Code: React.FC<ICode> = (props) => {
         'tabs-to-spaces': indentStyle === 'space' ? indentSize : undefined,
       });
 
-      Prism.highlightAllUnder(preRef.current as Element);
+      if(preRef.current) {
+        Prism.highlightAllUnder(preRef.current as Element);
+      }
     });
   });
 
