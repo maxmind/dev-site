@@ -23,60 +23,78 @@ const Code: React.FC<ICode> = (props) => {
   const preRef = React.createRef<HTMLPreElement>();
   const language = props.language;
 
+  let promises: Promise<void>[] = [];
+
   if (language.prismSettings.importScript) {
-    // eslint-disable-next-line security/detect-non-literal-require
-    require(`prismjs/components/prism-${language.id}.js`);
+    promises = [
+      ...promises,
+      import(`prismjs/components/prism-${language.id}.js`),
+    ];
   }
 
   if (language.prismSettings.cli) {
-    require('style-loader!prismjs/plugins/command-line/prism-command-line.css');
-    require('prismjs/plugins/command-line/prism-command-line.js');
+    promises = [
+      ...promises,
+      import(
+        'prismjs/plugins/command-line/prism-command-line.css' as string
+      ),
+      import(
+        'prismjs/plugins/command-line/prism-command-line.js' as string
+      ),
+    ];
   } else {
-    require(
-      'style-loader!prismjs/plugins/line-numbers/prism-line-numbers.css'
-    );
-    require('prismjs/plugins/line-numbers/prism-line-numbers.js');
-    require(
-      'style-loader!prismjs/plugins/show-invisibles/prism-show-invisibles.css'
-    );
-    require('prismjs/plugins/show-invisibles/prism-show-invisibles.js');
+    promises = [
+      ...promises,
+      import(
+        'prismjs/plugins/line-numbers/prism-line-numbers.css' as string
+      ),
+      import(
+        'prismjs/plugins/line-numbers/prism-line-numbers.js' as string
+      ),
+      import(
+        'prismjs/plugins/show-invisibles/prism-show-invisibles.css' as string
+      ),
+      import(
+        'prismjs/plugins/show-invisibles/prism-show-invisibles.js' as string
+      ).then(() => {
+        const firstGrammar =  (Prism.languages[language.id])
+          ? Object.keys(Prism.languages[language.id]).shift()
+          : '';
 
-    // eslint-disable-next-line security/detect-object-injection
-    const firstGrammar =  (Prism.languages[language.id])
-      // eslint-disable-next-line security/detect-object-injection
-      ? Object.keys(Prism.languages[language.id]).shift()
-      : '';
-
-    Prism.languages.insertBefore(
-      language.id,
-      firstGrammar || '',
-      {
-        indent: {
-          inside: {
-            space: / /,
-            tab: /\t/,
+        Prism.languages.insertBefore(
+          language.id,
+          firstGrammar || '',
+          {
+            indent: {
+              inside: {
+                space: / /,
+                tab: /\t/,
+              },
+              pattern: /^\s+/gm,
+            },
           },
-          pattern: /^\s+/gm,
-        },
-      },
-      Prism.languages
-    );
+          Prism.languages
+        );
+      }),
+    ];
   }
 
-  const { indentSize, indentStyle } =  language.prismSettings.whitespace;
-
-  Prism.plugins.NormalizeWhitespace.setDefaults({
-    'left-trim': true,
-    'remove-indent': true,
-    'remove-initial-line-feed': true,
-    'remove-trailing': true,
-    'right-trim': true,
-    'spaces-to-tabs': indentStyle === 'tab' ? indentSize : undefined,
-    'tabs-to-spaces': indentStyle === 'space' ? indentSize : undefined,
-  });
-
   React.useEffect(() => {
-    Prism.highlightAllUnder(preRef.current as Element);
+    Promise.all(promises).then(() => {
+      const { indentSize, indentStyle } =  language.prismSettings.whitespace;
+
+      Prism.plugins.NormalizeWhitespace.setDefaults({
+        'left-trim': true,
+        'remove-indent': true,
+        'remove-initial-line-feed': true,
+        'remove-trailing': true,
+        'right-trim': true,
+        'spaces-to-tabs': indentStyle === 'tab' ? indentSize : undefined,
+        'tabs-to-spaces': indentStyle === 'space' ? indentSize : undefined,
+      });
+
+      Prism.highlightAllUnder(preRef.current as Element);
+    });
   });
 
   return (
