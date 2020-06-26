@@ -4,6 +4,7 @@
     "url": "https://github.com/maxmind/dev-site/issues"
   },
   "dependencies": {
+    "@apidevtools/swagger-parser": "^9.0.1",
     "@babel/preset-env": "^7.10.3",
     "@babel/preset-react": "^7.10.1",
     "@mdx-js/mdx": "^1.5.8",

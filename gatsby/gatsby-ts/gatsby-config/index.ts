@@ -47,6 +47,13 @@ export default {
     },
     {
       options: {
+        name: 'specs',
+        path: `${GATSBY_ROOT}/src/specs/`,
+      },
+      resolve: 'gatsby-source-filesystem',
+    },
+    {
+      options: {
         defaultLayouts: {
           content: require.resolve(`${GATSBY_ROOT}src/templates/Page.tsx`),
         },
