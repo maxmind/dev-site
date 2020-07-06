@@ -63,6 +63,7 @@ const Pre: React.FC<React.HTMLProps<HTMLPreElement>> = (props) => {
   return (
     <div
       className={classNames(
+        props.className,
         styles.container,
       )}
       key={key}
@@ -105,6 +106,7 @@ const Pre: React.FC<React.HTMLProps<HTMLPreElement>> = (props) => {
 
 Pre.propTypes = {
   children: PropTypes.node,
+  className: PropTypes.string,
 };
 
 export default Pre;

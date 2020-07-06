@@ -15,7 +15,6 @@ import React, { useState } from 'react';
 import { FaArrowLeft, FaArrowRight } from 'react-icons/fa';
 
 import SEO from '../components/Seo';
-import Article from './Article';
 import styles from './Layout.module.scss';
 import { ITableOfContents } from './TableOfContents';
 
@@ -94,13 +93,11 @@ const Layout: React.FC<ILayout> = (props) => {
           </nav>
         </section>
 
-        <Article
-          className={styles.article}
-          tableOfContents={props.tableOfContents}
-          title={props.title}
+        <div
+          className={styles.content}
         >
           {props.children}
-        </Article>
+        </div>
       </main>
 
       <footer

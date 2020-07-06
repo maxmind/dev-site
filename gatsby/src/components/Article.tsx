@@ -31,7 +31,7 @@ const Article: React.FC<IArticle & React.HTMLProps<HTMLElement>> = (props) => {
           {title}
         </H1>
       </header>
-      {tableOfContents && (
+      {tableOfContents && tableOfContents?.items.length > 1 && (
         <aside
           className={styles.aside}
         >

@@ -11,8 +11,10 @@ interface INode {
   };
   id: string;
   // TODO: Properly type parent object
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   parent: any;
   // TODO: Properly type table of contents object
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   tableOfContents: any;
 }
 

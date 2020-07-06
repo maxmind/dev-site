@@ -1,6 +1,7 @@
 import PropTypes from 'prop-types';
 import React from 'react';
 
+import Article from '../components/Article';
 import Layout from '../components/Layout';
 import { ITableOfContents } from '../components/TableOfContents';
 
@@ -28,10 +29,14 @@ const Page: React.FC<IPage> = (props) => {
     <Layout
       description={description}
       keywords={keywords}
-      tableOfContents={tableOfContents}
       title={title}
     >
-      {props.children}
+      <Article
+        tableOfContents={tableOfContents}
+        title={title}
+      >
+        {props.children}
+      </Article>
     </Layout>
   );
 };

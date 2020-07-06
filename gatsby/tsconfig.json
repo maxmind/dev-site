@@ -14,6 +14,7 @@
     "paths": {
       "*": ["./gatsby-ts/types/*"]
     },
+    "resolveJsonModule": true,
     "strict": true,
     "target": "esnext"
   },

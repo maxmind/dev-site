@@ -31,6 +31,7 @@ module.exports = {
         ],
         ignore: [
           'calc',
+          'css-sticky',
           'multicolumn',
           'rem',
         ],

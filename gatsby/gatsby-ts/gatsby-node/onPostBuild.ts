@@ -4,11 +4,11 @@ import fs from 'fs';
 import { GatsbyNode } from 'gatsby';
 import path from 'path';
 
-import * as specs from '../../src/specs';
+import specs from '../../src/specs';
 
-export const onPostBuild: GatsbyNode['onPostBuild'] = async () => {
+export const onPreBuild: GatsbyNode['onPreInit'] = async () => {
   fs.writeFileSync(
-    path.resolve(`${__dirname}../../../public/specs/minfraud.json`),
-    JSON.stringify(specs.minFraud_2_0.getSpec()),
+    path.resolve(`${__dirname}../../../static/specs/minfraud.json`),
+    JSON.stringify(specs.minFraud.getSpec()),
   );
 };

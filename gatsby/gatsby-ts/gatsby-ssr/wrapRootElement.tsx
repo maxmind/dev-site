@@ -7,7 +7,7 @@ import { StoreProvider } from '../../src/store';
 
 export const wrapRootElement: GatsbySSR['wrapRootElement'] = (
   props: WrapRootElementNodeArgs
-): any => (
+): any => ( // eslint-disable-line @typescript-eslint/no-explicit-any
   <MDXProvider
     components={components}
   >
