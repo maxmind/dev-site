@@ -18,16 +18,6 @@
   border-bottom: 1px solid $mm-border;
   margin-bottom: $mm-spacing;
   padding: 0 0 $mm-spacing $mm-spacing / 2;
-
-}
-
-@include breakpoint('lg') {
-
-  $content-width: 720px;
-
-  .content {
-    max-width: $content-width;
-  }
 }
 
 @include breakpoint('xl') {
@@ -60,10 +50,12 @@
       'header aside'
       'content aside';
     grid-template-columns: 1fr 300px; /* stylelint-disable-line plugin/no-unsupported-browser-features */
+    justify-items: start;
   }
 
   .header {
     grid-area: header;
+    width: 100%;
   }
 
   .aside {
@@ -78,7 +70,7 @@
 
   .content {
     grid-area: content;
-    max-width: 720px;
+    max-width: 800px;
   }
 }
 

@@ -12,9 +12,14 @@ $radius: 6px;
   border-radius: $radius $radius 0 0;
 }
 
-.nav ~ pre {
-  border-radius: 0 0 $radius $radius;
-  margin-top: 0 !important;
+// TODO - target class names instead of elements
+.nav + div pre {
+  border-radius: 0 0 0 6px;
+}
+
+// TODO - target class names instead of elements
+.nav + div div {
+  border-radius: 0 0 6px;
 }
 
 .button {

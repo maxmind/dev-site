@@ -1,0 +1,20 @@
+import React from 'react';
+
+import data from '../../../static/specs/minfraud.json';
+import ApiSpec from '../../templates/ApiSpec';
+
+const Minfraud = (): React.ReactElement => (
+  <ApiSpec
+    description="foo"
+    keywords={[]}
+    specJson={data}
+    tableOfContents={{
+      items: [],
+    }}
+    title="minFraud API Reference"
+  >
+    foo
+  </ApiSpec>
+);
+
+export default Minfraud;

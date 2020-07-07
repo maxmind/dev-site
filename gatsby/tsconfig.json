@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+    "baseUrl": ".",
     "esModuleInterop": true,
     "isolatedModules": true,
     "jsx": "preserve",
@@ -10,6 +11,10 @@
     "module": "commonjs",
     "noEmit": true,
     "noUnusedLocals": false,
+    "paths": {
+      "*": ["./gatsby-ts/types/*"]
+    },
+    "resolveJsonModule": true,
     "strict": true,
     "target": "esnext"
   },

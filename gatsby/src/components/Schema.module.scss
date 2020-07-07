@@ -1,0 +1,29 @@
+@import '../styles/variables';
+
+.row {
+  border-bottom: 1px dashed $mm-border;
+  margin-bottom: $mm-spacing;
+}
+
+.row:last-of-type {
+  border-bottom: 0;
+}
+
+.heading {
+  margin-bottom: $mm-spacing / 2;
+}
+
+.name {
+  font-weight: 500;
+}
+
+.type {
+  font-size: 14px;
+  margin-left: $mm-spacing / 2;
+}
+
+.description {
+  color: #666;
+  line-height: 26px;
+  margin-bottom: $mm-spacing;
+}
