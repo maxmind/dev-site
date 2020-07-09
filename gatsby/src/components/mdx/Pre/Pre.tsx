@@ -71,19 +71,23 @@ const Pre: React.FC<React.HTMLProps<HTMLPreElement>> = (props) => {
       <div
         className={styles.toolbar}
       >
-        {navigator.clipboard && (
+        <div
+          className={styles['toolbar__buttons']}
+        >
+          {navigator.clipboard && (
+            <Button
+              disabled={messageState !== 'hidden'}
+              icon={FaCopy}
+              onClick={handleCopyClick}
+            />
+          )}
+
           <Button
             disabled={messageState !== 'hidden'}
-            icon={FaCopy}
-            onClick={handleCopyClick}
+            icon={FaParagraph}
+            onClick={handleInvisiblesClick}
           />
-        )}
-
-        <Button
-          disabled={messageState !== 'hidden'}
-          icon={FaParagraph}
-          onClick={handleInvisiblesClick}
-        />
+        </div>
       </div>
       <div
         className={styles.content}

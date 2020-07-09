@@ -93,9 +93,9 @@ $mm-spacing: 40px;
 }
 
 @mixin scrollbars {
-  --thumbBG: rgba(255, 255, 255, 0.15);
+  --thumbBG: rgba(255, 255, 255, 0.2);
 
-  scrollbar-color: var(--thumbBG) $mm-dark-blue;
+  scrollbar-color: var(--thumbBG) var(--thumbBG);
   scrollbar-width: thin;
 
   &::-webkit-scrollbar {
@@ -103,12 +103,13 @@ $mm-spacing: 40px;
   }
 
   &::-webkit-scrollbar-track {
-    background: $mm-dark-blue;
+    background: var(--thumbBG);
     border: 0;
     border-radius: 0 0 0 6px;
   }
 
   &::-webkit-scrollbar-thumb {
     background-color: var(--thumbBG);
+    border-radius: 0 0 0 6px;
   }
 }

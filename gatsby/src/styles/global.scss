@@ -14,5 +14,10 @@ body {
 
 * {
   box-sizing: border-box;
+}
+
+*:focus {
   outline-color: $mm-light-blue;
+  outline-style: solid;
+  outline-width: 2px;
 }

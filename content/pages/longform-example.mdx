@@ -14,9 +14,27 @@ puts "hello"
 ```
 
 ```javascript
+const err = 12;
+const err = 'afsd';
+const err = new Error();
+
 if (err) {
   console.log('hello');
 }
+
+const FOO = /fafdwfsfda/g;
+
+
+const foo = (a, b) => {
+  return 'a';
+};
+
+var foo = "\nafsdf"
+```
+
+```csharp
+void method<T, U>();
+method<int, char>();
 ```
 
 ```go
@@ -33,6 +51,11 @@ if (err != nil) {
 if (err) {
   console.log('hello');
 }
+
+const foo = (a = 2, b = 1) => {
+  const { a: string, ...b } = props;
+  return `asdfsa${a.toLowerCase()}`;
+};
 ```
 
 ```go
@@ -51,6 +74,31 @@ interface Foobar {
   hey: string;
   world?: number;
 }
+
+// Foo
+import(
+  'prismjs/plugins/command-line/prism-command-line.css' as string
+)
+```
+
+```css
+foo:after {
+}
+  foo::first-letter {
+
+  }
+
+  foo.bar.baz {
+
+  }
+
+  foo#bar.baz {
+
+  }
+
+  #foo > .bar:hover:after {
+
+  }
 ```
 
 </CodeSet>
@@ -62,7 +110,7 @@ console.log('hello');
 ```
 
 ```markup
-<hello>world</hello>
+<hello foo="bar" baz>world</hello>
 ```
 
 
@@ -73,6 +121,10 @@ interface Foobar {
   hey: string;
   world?: number;
 }
+
+const foo = (a: string, b: number) => {
+  return `asdfsa${a.toLowerCase()}`;
+};
 ```
 ```json
 {

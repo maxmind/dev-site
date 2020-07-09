@@ -10,7 +10,6 @@ import React from 'react';
 import { ILanguage } from '../../../languages';
 import styles from './Code.module.scss';
 
-import 'prism-themes/themes/prism-material-oceanic.css';
 import 'prismjs/plugins/normalize-whitespace/prism-normalize-whitespace.js';
 
 interface ICode {
@@ -45,37 +44,37 @@ const Code: React.FC<ICode> = (props) => {
   } else {
     promises = [
       ...promises,
-      import(
-        'prismjs/plugins/line-numbers/prism-line-numbers.css' as string
-      ),
-      import(
-        'prismjs/plugins/line-numbers/prism-line-numbers.js' as string
-      ),
-      import(
-        'prismjs/plugins/show-invisibles/prism-show-invisibles.css' as string
-      ),
-      import(
-        'prismjs/plugins/show-invisibles/prism-show-invisibles.js' as string
-      ).then(() => {
-        const firstGrammar =  (Prism.languages[language.id])
-          ? Object.keys(Prism.languages[language.id]).shift()
-          : '';
+      // import(
+      //   'prismjs/plugins/line-numbers/prism-line-numbers.css' as string
+      // ),
+      // import(
+      //   'prismjs/plugins/line-numbers/prism-line-numbers.js' as string
+      // ),
+      // import(
+      //   'prismjs/plugins/show-invisibles/prism-show-invisibles.css' as string
+      // ),
+      // import(
+      //   'prismjs/plugins/show-invisibles/prism-show-invisibles.js' as string
+      // ).then(() => {
+      //   const firstGrammar =  (Prism.languages[language.id])
+      //     ? Object.keys(Prism.languages[language.id]).shift()
+      //     : '';
 
-        Prism.languages.insertBefore(
-          language.id,
-          firstGrammar || '',
-          {
-            indent: {
-              inside: {
-                space: / /,
-                tab: /\t/,
-              },
-              pattern: /^\s+/gm,
-            },
-          },
-          Prism.languages
-        );
-      }),
+      //   Prism.languages.insertBefore(
+      //     language.id,
+      //     firstGrammar || '',
+      //     {
+      //       indent: {
+      //         inside: {
+      //           space: / /,
+      //           tab: /\t/,
+      //         },
+      //         pattern: /^[^\S\r\n]+/gm,
+      //       },
+      //     },
+      //     Prism.languages
+      //   );
+      // }),
     ];
   }
 

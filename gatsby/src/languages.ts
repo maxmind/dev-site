@@ -31,6 +31,16 @@ export const languages: ILanguage[] = [
     },
   },
   {
+    id: 'css',
+    label: 'CSS',
+    prismSettings: {
+      whitespace: {
+        indentSize: 2,
+        indentStyle: 'space' as IndentStyle,
+      },
+    },
+  },
+  {
     id: 'curl',
     label: 'Curl',
     prismSettings: {
@@ -90,6 +100,17 @@ export const languages: ILanguage[] = [
       whitespace: {
         indentSize: 2,
         indentStyle: 'tab' as IndentStyle,
+      },
+    },
+  },
+  {
+    id: 'javascript',
+    label: 'JavaScript',
+    prismSettings: {
+      importScript: true,
+      whitespace: {
+        indentSize: 2,
+        indentStyle: 'space' as IndentStyle,
       },
     },
   },

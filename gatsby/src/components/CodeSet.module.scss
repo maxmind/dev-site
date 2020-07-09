@@ -8,18 +8,15 @@ $radius: 6px;
 }
 
 .nav {
-  background: $mm-dark-blue;
+  background: lighten(#393d46, 10);
   border-radius: $radius $radius 0 0;
+  position: relative;
+  z-index: 2;
 }
 
 // TODO - target class names instead of elements
 .nav + div pre {
-  border-radius: 0 0 0 6px;
-}
-
-// TODO - target class names instead of elements
-.nav + div div {
-  border-radius: 0 0 6px;
+  border-radius: 0 0 6px 6px;
 }
 
 .button {
@@ -27,12 +24,12 @@ $radius: 6px;
   border: 0;
   color: #ccc;
   cursor: pointer;
-  font-size: 10px;
+  font-size: 12px;
   font-weight: 500;
   height: 100%;
   letter-spacing: 1px;
   padding: $mm-spacing / 4;
-  text-transform: uppercase;
+  // text-transform: uppercase;
 }
 
 .button:first-of-type {
@@ -43,4 +40,3 @@ $radius: 6px;
   background: rgba(255, 255, 255, 0.1);
   color: #fff;
 }
-

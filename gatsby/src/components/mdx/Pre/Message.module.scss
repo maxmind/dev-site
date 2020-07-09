@@ -1,7 +1,6 @@
 @import '../styles/variables';
 
 .message {
-  background-color: rgba(0, 0, 0, 0.5);
   border-radius: 6px 0 0 6px;
   font-size: 14px;
   height: 100%;
@@ -18,7 +17,7 @@
 .message__content {
   background: $mm-light-blue;
   border-radius: 6px !important;
-  box-shadow: 0 5px 30px rgba(0, 0, 0, 0.75);
+  box-shadow: 0 5px 2px rgba(0, 0, 0, 0.2);
   color: #eee;
   display: inline-block;
   font-size: 14px;
@@ -44,7 +43,6 @@
 
   .message--visible {
     animation: show-message 0.25s forwards;
-    background-color: rgba(0, 0, 0, 0.1);
   }
 
   @keyframes show-message-content {
