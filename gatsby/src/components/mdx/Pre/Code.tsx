@@ -22,7 +22,7 @@ const Code: React.FC<ICode> = (props) => {
   const preRef = React.createRef<HTMLPreElement>();
   const language = props.language;
 
-  let promises: Promise<void>[] = [];
+  let promises: Promise<any>[] = [];
 
   if (language.prismSettings.importScript) {
     promises = [
@@ -44,12 +44,22 @@ const Code: React.FC<ICode> = (props) => {
   } else {
     promises = [
       ...promises,
-      // import(
-      //   'prismjs/plugins/line-numbers/prism-line-numbers.css' as string
-      // ),
-      // import(
-      //   'prismjs/plugins/line-numbers/prism-line-numbers.js' as string
-      // ),
+      Promise.all([
+        import(
+          'prismjs/plugins/line-numbers/prism-line-numbers.css' as string
+        ),
+        import(
+          'prismjs/plugins/line-numbers/prism-line-numbers.js' as string
+        ),
+      ]).then(() => Promise.all([
+        import(
+          'prismjs/plugins/line-highlight/prism-line-highlight.js' as string
+        ),
+        import(
+          'prismjs/plugins/line-highlight/prism-line-highlight.css' as string
+        ),
+      ])),
+
       // import(
       //   'prismjs/plugins/show-invisibles/prism-show-invisibles.css' as string
       // ),
@@ -112,6 +122,7 @@ const Code: React.FC<ICode> = (props) => {
         styles.pre
       )}
       {...language.prismSettings.cli}
+      data-line="4-9"
       ref={preRef}
     >
       {props.children}

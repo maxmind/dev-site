@@ -93,7 +93,7 @@ $mm-spacing: 40px;
 }
 
 @mixin scrollbars {
-  --thumbBG: rgba(255, 255, 255, 0.2);
+  --thumbBG: rgba(255, 255, 255, 0.1);
 
   scrollbar-color: var(--thumbBG) var(--thumbBG);
   scrollbar-width: thin;
