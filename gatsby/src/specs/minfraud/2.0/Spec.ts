@@ -152,7 +152,7 @@ Spec
 ;
 
 try {
-  OpenApiParser.validate(Spec.getSpec() as OpenAPI.Document);
+  // OpenApiParser.validate(Spec.getSpec() as OpenAPI.Document);
 }
 catch(err) {
   console.error(err);

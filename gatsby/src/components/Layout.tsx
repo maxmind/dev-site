@@ -89,6 +89,13 @@ const Layout: React.FC<ILayout> = (props) => {
                   Longform Example
                 </Link>
               </li>
+              <li>
+                <Link
+                  to="api-reference/minfraud"
+                >
+                  minFraud Api Reference
+                </Link>
+              </li>
             </ul>
           </nav>
         </section>

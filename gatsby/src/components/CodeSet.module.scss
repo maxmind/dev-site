@@ -2,34 +2,36 @@
 
 $radius: 6px;
 
-.wrapper {
-  margin: $mm-spacing 0;
-  width: 100%;
-}
-
 .nav {
-  background: lighten(#393d46, 10);
+  background-color: #58577e;
   border-radius: $radius $radius 0 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
   position: relative;
   z-index: 2;
 }
 
 // TODO - target class names instead of elements
-.nav + div pre {
+.nav + div {
   border-radius: 0 0 6px 6px;
 }
 
 .button {
   background: none;
   border: 0;
-  color: #ccc;
+  border-left: 1px solid rgba(255, 255, 255, 0.2);
+  border-right: 1px solid rgba(0, 0, 0, 0.2);
+  color: #aaa;
   cursor: pointer;
   font-size: 12px;
   font-weight: 500;
   height: 100%;
   letter-spacing: 1px;
   padding: $mm-spacing / 4;
-  // text-transform: uppercase;
+}
+
+.button:hover {
+  background: rgba(255, 255, 255, 0.04);
+  color: #ccc;
 }
 
 .button:first-of-type {

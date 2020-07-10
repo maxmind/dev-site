@@ -6,6 +6,7 @@ import classNames from 'classnames';
 import Prism from 'prismjs';
 import PropTypes from 'prop-types';
 import React from 'react';
+import { FaAngleDoubleDown, FaAngleDoubleUp } from 'react-icons/fa';
 
 import { ILanguage } from '../../../languages';
 import styles from './Code.module.scss';
@@ -18,9 +19,21 @@ interface ICode {
   showInvisibles?: boolean;
 }
 
+const hasScrollbar = (
+  $el: HTMLElement
+): boolean => $el.scrollHeight > $el.offsetHeight;
+
 const Code: React.FC<ICode> = (props) => {
   const preRef = React.createRef<HTMLPreElement>();
   const language = props.language;
+  const [
+    isExpandable,
+    setIsExpandable,
+  ] = React.useState(false);
+  const [
+    isExpanded,
+    setIsExpanded,
+  ] = React.useState(false);
 
   let promises: Promise<any>[] = [];
 
@@ -108,25 +121,52 @@ const Code: React.FC<ICode> = (props) => {
     });
   });
 
+  React.useEffect(() => {
+    setIsExpandable(hasScrollbar(preRef.current as HTMLElement));
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [
+    isExpandable,
+  ]);
+
+  const handleExpansionToggle = (): void => setIsExpanded(!isExpanded);
+
   return (
-    <pre
+    <div
       className={classNames(
-        `language-${language.id}`,
+        styles.container,
         {
-          'command-line': language.prismSettings.cli,
-          'line-numbers': !language.prismSettings.cli,
-          [styles['invisibles--hidden']]: (
-            language.prismSettings.cli || !props.showInvisibles
-          ),
-        },
-        styles.pre
+          [styles['container--expandable']]: isExpandable,
+          [styles['container--expanded']]: isExpanded,
+        }
       )}
-      {...language.prismSettings.cli}
-      data-line="4-9"
-      ref={preRef}
     >
-      {props.children}
-    </pre>
+      <pre
+        className={classNames(
+          `language-${language.id}`,
+          {
+            'command-line': language.prismSettings.cli,
+            'line-numbers': !language.prismSettings.cli,
+            [styles['invisibles--hidden']]: (
+              language.prismSettings.cli || !props.showInvisibles
+            ),
+          },
+          styles.pre
+        )}
+        {...language.prismSettings.cli}
+        data-line="4-9"
+        ref={preRef}
+      >
+        {props.children}
+      </pre>
+      {isExpandable && (
+        <button
+          className={styles['expand-btn']}
+          onClick={handleExpansionToggle}
+        >
+          <FaAngleDoubleDown />
+        </button>
+      )}
+    </div>
   );
 };
 

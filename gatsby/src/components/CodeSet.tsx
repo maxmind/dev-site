@@ -1,6 +1,7 @@
 import PropTypes from 'prop-types';
 import React from 'react';
 
+import Pre from '../components/mdx/Pre';
 import useIsClient from '../hooks/useIsClient';
 import { languages } from '../languages';
 import { Store } from '../store';
@@ -69,49 +70,55 @@ const CodeSet: React.FC = (props) => {
     activeLanguage,
   ]);
 
-  if ( !isClient ) return null;
-  return (
-    <div
-      className={styles.wrapper}
-      key={key}
+  const nav = (
+    <nav
+      className={styles.nav}
     >
-      <nav
-        className={styles.nav}
-      >
-        {
-          React.Children.map(orderedChildren, child => {
-            if (React.isValidElement(child)) {
-              const className = child.props.children.props.className;
-              return (
-                <button
-                  className={`
-                    ${styles.button}
-                    ${className === activeLanguage ? styles.active : ''}
-                    `}
-                  onClick={(): void => {
-                    dispatch({
-                      payload: className,
-                      type: 'change_language',
-                    });
-                  }}
-                >
-                  {getHumanReadable(className)}
-                </button>
-              );
-            }
-          })
-        }
-      </nav>
       {
         React.Children.map(orderedChildren, child => {
           if (React.isValidElement(child)) {
-            if (child.props.children.props.className ===
-              activeLanguage) {
-              return child;
-            }
+            const className = child.props.children.props.className;
+            return (
+              <button
+                className={`
+                ${styles.button}
+                ${className === activeLanguage ? styles.active : ''}
+                `}
+                onClick={(): void => {
+                  dispatch({
+                    payload: className,
+                    type: 'change_language',
+                  });
+                }}
+              >
+                {getHumanReadable(className)}
+              </button>
+            );
           }
         })
       }
+    </nav>
+  );
+
+  if ( !isClient ) return null;
+
+  return (
+    <div
+      key={key}
+    >
+      {React.Children.map(orderedChildren, child => {
+        if (React.isValidElement(child)) {
+          if (child.props.children.props.className ===
+        activeLanguage) {
+            return (
+              <Pre
+                nav={nav}
+                {...child.props}
+              />
+            );
+          }
+        }
+      })}
     </div>
   );
 };

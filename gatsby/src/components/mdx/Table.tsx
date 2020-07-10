@@ -11,12 +11,16 @@ const Table: React.FC<React.HTMLProps<HTMLTableElement>> = ({
   <div
     className={styles.wrapper}
   >
-    <table
-      className={classNames(className, styles.table)}
-      {...props}
+    <div
+      className={styles.container}
     >
-      {props.children}
-    </table>
+      <table
+        className={classNames(className, styles.table)}
+        {...props}
+      >
+        {props.children}
+      </table>
+    </div>
   </div>
 );
 

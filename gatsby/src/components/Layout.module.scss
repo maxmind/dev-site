@@ -12,6 +12,35 @@ $transition: all 0.15s ease-out;
   top: 0;
   width: 100%;
   z-index: 10;
+
+  &::before {
+    content: ' ';
+    display: block;
+    height: 10px;
+    left: 0;
+    overflow: hidden;
+    padding: 0 !important;
+    position: absolute;
+    top: 0;
+    width: 100%;
+
+    @include pattern;
+  }
+
+  &::after {
+    background: rgb(0, 119, 194);
+    background: linear-gradient(90deg, rgba(0, 119, 194, 0.5) 0%, rgba(255, 0, 136, 0.5));
+    content: ' ';
+    // background: linear-gradient(90deg, rgba(0, 119, 194, 0.5) 0%, rgba(0, 255, 102, 0.5) 100%);
+    display: block;
+    height: 10px;
+    left: 0;
+    overflow: hidden;
+    padding: 0 !important;
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
 }
 
 .toggle {
@@ -19,9 +48,10 @@ $transition: all 0.15s ease-out;
   border: 1px solid $mm-border;
   border-radius: 0;
   color: #333;
-  height: 50px;
+  height: 40px;
   left: 0;
-  top: 0;
+  position: absolute;
+  top: 10px;
   width: 50px;
   z-index: 4;
 }
@@ -36,13 +66,13 @@ $transition: all 0.15s ease-out;
 }
 
 .sidebar {
-  background: rgba(60, 88, 99, 0.05);
+  background: #f5f6f7;
   border-right: 1px solid $mm-border;
   grid-area: sidebar;
   padding: $mm-spacing;
   position: relative;
   transition: $transition;
-  z-index: 3;
+  z-index: 9;
 }
 
 .sidebarNav {
@@ -59,13 +89,26 @@ $transition: all 0.15s ease-out;
 }
 
 .footer {
-  border-top: 1px solid $mm-border;
+  // border-top: 1px solid $mm-border;
   font-size: 14px;
   padding: $mm-spacing 0;
   text-align: center;
+
+  @include pattern;
+
+  &::before {
+    background: darken(rgba(57, 61, 100, 0.9), 15);
+    opacity: 0.9;
+  }
 }
 
 @include breakpoint('lg') {
+  $sidebar-width: 350px;
+
+  .main {
+    grid-template-columns: $sidebar-width calc(100vw - #{$sidebar-width});
+  }
+
   .toggle {
     display: none;
   }

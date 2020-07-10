@@ -1,17 +1,9 @@
 @import '../../styles/variables';
 
-.article {
-  padding: $mm-spacing;
-}
-
 .header {
   border-bottom: 1px solid $mm-border;
   margin-bottom: $mm-spacing;
   padding-bottom: $mm-spacing;
-}
-
-.content {
-  margin: 0 auto;
 }
 
 .aside {
@@ -27,7 +19,7 @@
       'header header'
       'aside aside'
       'content content';
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 50% 50%;
   }
 
   .header {
@@ -40,7 +32,15 @@
 
   .content {
     grid-area: content;
+  }
+}
+
+@include breakpoint('lg') {
+  // TODO - This selector. Ugh.
+  .content [class*='Pre-module--container'] {
     max-width: 100%;
+    min-width: 720px;
+    width: auto;
   }
 }
 
@@ -49,7 +49,7 @@
     grid-template-areas:
       'header aside'
       'content aside';
-    grid-template-columns: 1fr 300px; /* stylelint-disable-line plugin/no-unsupported-browser-features */
+    grid-template-columns: calc(100vw - 640px) 300px; /* stylelint-disable-line plugin/no-unsupported-browser-features */
     justify-items: start;
   }
 
@@ -70,7 +70,7 @@
 
   .content {
     grid-area: content;
-    max-width: 800px;
+    max-width: calc(100vw - 640px);
   }
 }
 
@@ -85,6 +85,5 @@
 
   .content {
     margin: 0 auto;
-    max-width: $content-width + 200px;
   }
 }

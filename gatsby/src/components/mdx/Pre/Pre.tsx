@@ -10,7 +10,11 @@ import Code from './Code';
 import Message, { State as MessageState } from './Message';
 import styles from './Pre.module.scss';
 
-const Pre: React.FC<React.HTMLProps<HTMLPreElement>> = (props) => {
+interface IPre {
+  nav?: React.ReactElement<React.HTMLProps<HTMLElement>>;
+}
+
+const Pre: React.FC<React.HTMLProps<HTMLPreElement> & IPre> = (props) => {
   const { isClient, key } = useIsClient();
 
   const [
@@ -64,45 +68,52 @@ const Pre: React.FC<React.HTMLProps<HTMLPreElement>> = (props) => {
     <div
       className={classNames(
         props.className,
-        styles.container,
+        styles.wrapper,
       )}
       key={key}
     >
+      {props.nav}
       <div
-        className={styles.toolbar}
+        className={styles.container}
       >
         <div
-          className={styles['toolbar__buttons']}
+          className={styles.toolbar}
         >
-          {navigator.clipboard && (
+          <div
+            className={styles['toolbar__buttons']}
+          >
+            {navigator.clipboard && (
+              <Button
+                disabled={messageState !== 'hidden'}
+                icon={FaCopy}
+                onClick={handleCopyClick}
+              />
+            )}
+
             <Button
               disabled={messageState !== 'hidden'}
-              icon={FaCopy}
-              onClick={handleCopyClick}
+              icon={FaParagraph}
+              onClick={handleInvisiblesClick}
             />
-          )}
-
-          <Button
-            disabled={messageState !== 'hidden'}
-            icon={FaParagraph}
-            onClick={handleInvisiblesClick}
-          />
+          </div>
         </div>
-      </div>
-      <div
-        className={styles.content}
-      >
-        <Message
-          onStateUpdate={(state: MessageState): void => setMessageState(state)}
+        <div
+          className={styles.content}
         >
-          {message}
-        </Message>
-        <Code
-          language={language}
-          showInvisibles={showInvisibles}
-        >
-          {props.children}
-        </Code>
+          <Message
+            onStateUpdate={(
+              state: MessageState
+            ): void => setMessageState(state)}
+          >
+            {message}
+          </Message>
+          <Code
+            language={language}
+            showInvisibles={showInvisibles}
+          >
+            {props.children}
+          </Code>
+        </div>
       </div>
     </div>
   );
@@ -111,6 +122,7 @@ const Pre: React.FC<React.HTMLProps<HTMLPreElement>> = (props) => {
 Pre.propTypes = {
   children: PropTypes.node,
   className: PropTypes.string,
+  nav: PropTypes.any,
 };
 
 export default Pre;

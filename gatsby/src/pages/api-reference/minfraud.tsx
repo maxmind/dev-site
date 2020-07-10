@@ -5,7 +5,7 @@ import ApiSpec from '../../templates/ApiSpec';
 
 const Minfraud = (): React.ReactElement => (
   <ApiSpec
-    description="foo"
+    description=""
     keywords={[]}
     specJson={data}
     tableOfContents={{

@@ -81,7 +81,7 @@ const Subscores: SchemaObject = {
     },
     issuer_id_number: {
       ...Subscore,
-      description: '	The risk associated with the particular issuer ID number (IIN) given the billing location and the history of usage of the IIN on your account and shop ID. ',
+      description: 'The risk associated with the particular issuer ID number (IIN) given the billing location and the history of usage of the IIN on your account and shop ID.',
       example: 0.13,
     },
     order_amount: {

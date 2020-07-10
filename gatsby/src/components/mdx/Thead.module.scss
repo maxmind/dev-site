@@ -1,5 +1,9 @@
 @import '../../styles/variables';
 
 .thead {
-  border-bottom: 1px solid $mm-border;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.thead + tbody > tr {
+  margin-top: 1px;
 }
