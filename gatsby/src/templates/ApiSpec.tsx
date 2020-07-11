@@ -99,7 +99,7 @@ const SectionCodeExample: React.FC<ISectionCodeExample> = (props) => (
       <code
         className="language-json"
       >
-        {JSON.stringify(props.schema, null, 2)}
+        {JSON.stringify(props.schema['x-compiled-example'], null, 2)}
       </code>
     </Pre>
   </div>

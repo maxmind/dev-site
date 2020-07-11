@@ -6,7 +6,7 @@ import classNames from 'classnames';
 import Prism from 'prismjs';
 import PropTypes from 'prop-types';
 import React from 'react';
-import { FaAngleDoubleDown, FaAngleDoubleUp } from 'react-icons/fa';
+import { FaAngleDoubleDown } from 'react-icons/fa';
 
 import { ILanguage } from '../../../languages';
 import styles from './Code.module.scss';
@@ -35,7 +35,7 @@ const Code: React.FC<ICode> = (props) => {
     setIsExpanded,
   ] = React.useState(false);
 
-  let promises: Promise<any>[] = [];
+  let promises: Promise<unknown>[] = [];
 
   if (language.prismSettings.importScript) {
     promises = [
