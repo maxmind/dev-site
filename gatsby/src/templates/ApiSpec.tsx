@@ -6,6 +6,7 @@ import { OpenApiBuilder,
   SchemasObject } from 'openapi3-ts';
 import PropTypes from 'prop-types';
 import React from 'react';
+import { FaAngleDoubleDown } from 'react-icons/fa';
 
 import Layout from '../components/Layout';
 import Pre from '../components/mdx/Pre';
@@ -52,12 +53,39 @@ const SectionProperties: React.FC<ISectionProperties> = (
         )}
       </div>
       <button
-        className={styles['schema__toggle-example']}
+        className={classNames(
+          styles['schema__toggle-example'],
+          {
+            [
+            styles['schema__toggle-example-btn--is-expanded']
+            ]: props.isExpanded,
+          }
+        )}
         onClick={props.handleExpand}
       >
-        {props.isExpanded ? '[-] Hide' : '[+] Show'}
+        {props.isExpanded ? (
+          <>
+            <span
+              className={styles['schema__toggle-example-btn-icon']}
+            >
+              <FaAngleDoubleDown />
+            </span>
+            {' '}
+            Hide
+          </>
+        ) : (
+          <>
+            <span
+              className={styles['schema__toggle-example-btn-icon']}
+            >
+              <FaAngleDoubleDown />
+            </span>
+            {' '}
+            Show
+          </>
+        )}
         {' '}
-        Example
+        example
       </button>
     </div>
   );

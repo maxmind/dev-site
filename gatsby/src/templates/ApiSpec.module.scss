@@ -34,15 +34,49 @@ $heading-height: 50px;
 }
 
 .schema__toggle-example {
-  background: lighten($mm-color-primary, 10);
+  background: lighten(#3b446f, 20);
   border: 0;
   border-radius: 6px;
-  color: #f6f7f7;
+  box-shadow: 0 6px 0 rgba(0, 0, 0, 0.1);
+  color: rgba(255, 255, 255, 0.9);
   cursor: pointer;
-  display: block;
+  display: inline-block;
   font-size: 14px;
-  margin: $mm-spacing auto;
-  padding: ($mm-spacing / 4) ($mm-spacing / 2);
+  font-weight: 500;
+  height: 35px;
+  left: 50%;
+  letter-spacing: 1px;
+  line-height: 35px;
+  margin-top: $mm-spacing;
+  padding: 0 !important;
+  padding-left: calc(#{$mm-spacing / 4} + 40px) !important;
+  padding-right: $mm-spacing / 4 !important;
+  position: relative;
+
+  // text-transform: uppercase;
+  transform: translateX(-50%);
+  vertical-align: middle;
+  @include pattern;
+
+  &::before {
+    border-radius: 6px;
+    z-index: -1;
+  }
+}
+
+.schema__toggle-example-btn-icon {
+  border-right: 2px solid #eee;
+  height: 100%;
+  left: 0;
+  line-height: 40px;
+  position: absolute;
+  text-align: center;
+  top: 0;
+  width: 40px;
+}
+
+.schema__toggle-example-btn--is-expanded .schema__toggle-example-btn-icon svg {
+  transform: rotate(180deg);
 }
 
 .schema__heading-link {
