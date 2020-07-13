@@ -1,3 +1,5 @@
+import { useLocation } from '@reach/router';
+import classNames from 'classnames';
 import { SchemaObject } from 'openapi3-ts';
 import PropTypes from 'prop-types';
 import React from 'react';
@@ -12,47 +14,73 @@ interface IRow {
   format?: string;
   key?: string;
   name: string;
+  schemaName: string;
   type?: string | React.ReactElement;
 }
 
-const renderRow = (props: IRow): React.ReactElement => (
-  <div
-    className={styles.row}
-    key={props.key}
-  >
+const NameRegex = new RegExp('\\.', 'g');
+
+const Row: React.FC<IRow> = (props) => {
+  const location = useLocation();
+  const id = [
+    props.schemaName.replace(NameRegex, '_'),
+    props.name.replace(NameRegex, '_'),
+  ].join('__');
+  return (
     <div
-      className={styles.heading}
+      className={classNames(
+        styles.row,
+        {
+          [styles['row--targeted']]: location.hash === `#${id}`,
+        }
+      )}
+      id={id}
+
     >
-      <span
-        className={styles.name}
-      >
-        {props.name}
-      </span>
+      <div>
+        <a
+          className={styles.name}
+          href={`#${id}`}
+        >
+          {props.name}
+        </a>
 
-      <Type
-        className={styles.type}
-      >
-        {props.type}
-        {props.format && (
-          <>
-            {' '}
-            {props.format}
-          </>
-        )}
-      </Type>
-    </div>
-
-    {props.description && (
-      <div
-        className={styles.description}
-      >
-        {renderMarkdownElement(props.description)}
+        <Type
+          className={styles.type}
+        >
+          {props.type}
+          {props.format && (
+            <>
+              {' '}
+              {props.format}
+            </>
+          )}
+        </Type>
       </div>
-    )}
-  </div>
-);
 
-const renderObjectRows = (schema: SchemaObject): React.ReactElement[] => {
+      {props.description && (
+        <div
+          className={styles.description}
+        >
+          {renderMarkdownElement(props.description)}
+        </div>
+      )}
+    </div>
+  );
+};
+
+Row.propTypes = {
+  description: PropTypes.string,
+  format: PropTypes.string,
+  name: PropTypes.string.isRequired,
+  schemaName: PropTypes.string.isRequired,
+  type: PropTypes.string,
+};
+
+const renderObjectRows = (
+  schema: SchemaObject,
+  schemaName: string
+): React.ReactElement[] => {
   return Object
     .entries(schema.properties as SchemaObject)
     .map((
@@ -70,32 +98,42 @@ const renderObjectRows = (schema: SchemaObject): React.ReactElement[] => {
         </>
       );
 
-      return renderRow({
-        description: properties.description,
-        format: properties.format && `(${properties.format})`,
-        key: `row-${index}`,
-        name,
-        type,
-      });
+      return (
+        <Row
+          description={properties.description}
+          format={properties.format && `(${properties.format})`}
+          key={`row-${index}`}
+          name={name}
+          schemaName={schemaName}
+          type={type}
+        />
+      );
     });
 };
 
-const renderArrayRows = (schema: SchemaObject): React.ReactElement => {
-  return renderRow({
-    description: schema.description,
-    format: `<${schema.items?.$ref}>[]`,
-    name: 'array',
-    type: 'array',
-  });
+const renderArrayRows = (
+  schema: SchemaObject,
+  schemaName: string,
+): React.ReactElement => {
+  return (
+    <Row
+      description={schema.description}
+      format={`<${schema.items?.$ref}>[]`}
+      name="array"
+      schemaName={schemaName}
+      type="array"
+    />
+  );
 };
 
 const renderRows = (
-  schema: SchemaObject
+  schema: SchemaObject,
+  schemaName: string,
 ):  React.ReactElement => {
   if (schema.type === 'object' && schema.properties) {
     return (
       <>
-        {renderObjectRows(schema)}
+        {renderObjectRows(schema, schemaName)}
       </>
     );
   }
@@ -103,7 +141,7 @@ const renderRows = (
   if (schema.type === 'array' && schema.items) {
     return (
       <>
-        {renderArrayRows(schema)}
+        {renderArrayRows(schema, schemaName)}
       </>
     );
   }
@@ -118,16 +156,18 @@ const renderRows = (
 
 interface IProperties {
   data: SchemaObject;
+  schemaName: string;
 }
 
 const Properties: React.FC<IProperties> = (props) => {
   const schema = parseSchema(props.data);
 
-  return renderRows(schema);
+  return renderRows(schema, props.schemaName);
 };
 
 Properties.propTypes = {
   data: PropTypes.any.isRequired,
+  schemaName: PropTypes.string.isRequired,
 };
 
 export default Properties;

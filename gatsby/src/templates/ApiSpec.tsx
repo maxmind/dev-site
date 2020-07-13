@@ -1,4 +1,5 @@
 /* eslint-disable react/prop-types */
+import classNames from 'classnames';
 import { OpenApiBuilder,
   OpenAPIObject,
   SchemaObject,
@@ -15,6 +16,9 @@ import { ITableOfContents } from '../components/TableOfContents';
 import styles from './ApiSpec.module.scss';
 
 interface ISectionProperties {
+  handleExpand: () => void;
+  isExpanded?: boolean;
+  name: string;
   schema: SchemasObject;
 }
 
@@ -29,17 +33,32 @@ const SectionProperties: React.FC<ISectionProperties> = (
         className={styles['schema__properties']}
       >
         {props.schema.description
-          && renderMarkdownElement(
-            props.schema.description as unknown as string
+          && (
+            <div
+              className={styles['schema__description']}
+            >
+              {renderMarkdownElement(
+                props.schema.description as unknown as string
+              )}
+            </div>
           )
         }
 
         {props.schema && (
           <Properties
             data={props.schema}
+            schemaName={props.name}
           />
         )}
       </div>
+      <button
+        className={styles['schema__toggle-example']}
+        onClick={props.handleExpand}
+      >
+        {props.isExpanded ? '[-] Hide' : '[+] Show'}
+        {' '}
+        Example
+      </button>
     </div>
   );
 };
@@ -90,12 +109,18 @@ const SectionHeading: React.FC<ISectionHeading> = (
 };
 
 interface ISectionCodeExample {
+  isExpanded?: boolean;
   schema: SchemaObject;
 }
 
 const SectionCodeExample: React.FC<ISectionCodeExample> = (props) => (
   <div
-    className={styles['schema__example']}
+    className={classNames(
+      {
+        [styles['schema__example--is-expanded']]: props.isExpanded,
+      },
+      styles['schema__example']
+    )}
   >
     <Pre
       className={styles['schema__example-json']}
@@ -117,26 +142,36 @@ interface IPage {
   title: string;
 }
 
-type Section = {
+interface ISection {
   name: string;
   schema: SchemaObject;
 }
 
-const renderSection = (section: Section, index: number): React.ReactElement => {
+const Section: React.FC<ISection> = (props) => {
+  const [
+    isExampleExpanded,
+    setIsExampleExpanded,
+  ] = React.useState(false);
+
+  const handleExpand = (): void => setIsExampleExpanded(!isExampleExpanded);
+
   return (
     <article
       className={styles.schema}
-      key={`section-${index}`}
     >
       <SectionHeading
-        name={section.name}
-        schema={section.schema}
+        name={props.name}
+        schema={props.schema}
       />
       <SectionProperties
-        schema={section.schema}
+        handleExpand={handleExpand}
+        isExpanded={isExampleExpanded}
+        name={props.name}
+        schema={props.schema}
       />
       <SectionCodeExample
-        schema={section.schema}
+        isExpanded={isExampleExpanded}
+        schema={props.schema}
       />
     </article>
   );
@@ -164,9 +199,12 @@ const ApiSpec: React.FC<IPage> = (props) => {
       tableOfContents={tableOfContents}
       title={title}
     >
-      {sections.map((section: Section, index: number) => renderSection(
-        section,
-        index
+      {sections.map((section: ISection, index: number) => (
+        <Section
+          key={`section-${index}`}
+          name={section.name}
+          schema={section.schema}
+        />
       ))}
     </Layout>
   );

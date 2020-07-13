@@ -1,6 +1,6 @@
 @import '../styles/variables';
 
-$heading-height: 70px;
+$heading-height: 50px;
 
 .schema {
   width: 100%;
@@ -13,10 +13,36 @@ $heading-height: 70px;
   height: $heading-height;
   line-height: $heading-height;
   margin: $mm-spacing $mm-spacing 0;
-  padding: 0 $mm-spacing;
+  padding: 0 $mm-spacing / 2;
   position: sticky;
+  scroll-margin-top: 49px + $mm-spacing;
   top: 49px + $mm-spacing;
+  transform-style: preserve-3d;
   z-index: 5;
+
+  &::after {
+    background: #fff;
+    content: ' ';
+    display: block;
+    height: calc(100% + #{$mm-spacing} + 2px);
+    left: calc(#{$mm-spacing * -1} - 1px);
+    position: absolute;
+    top: calc(#{$mm-spacing * -1} - 1px);
+    transform: translateZ(-1px);
+    width: calc(100% + #{$mm-spacing * 2} + 2px);
+  }
+}
+
+.schema__toggle-example {
+  background: lighten($mm-color-primary, 10);
+  border: 0;
+  border-radius: 6px;
+  color: #f6f7f7;
+  cursor: pointer;
+  display: block;
+  font-size: 14px;
+  margin: $mm-spacing auto;
+  padding: ($mm-spacing / 4) ($mm-spacing / 2);
 }
 
 .schema__heading-link {
@@ -32,13 +58,34 @@ $heading-height: 70px;
   vertical-align: middle;
 }
 
+.schema__description {
+  line-height: 1.5em;
+  padding: $mm-spacing / 2;
+}
+
 .schema__example {
+  height: 0;
+  overflow: hidden;
+  padding: 0 !important;
   @include pattern;
 }
 
+.schema__example--is-expanded {
+  height: auto;
+  margin: 0 !important;
+  overflow: initial;
+  padding: $mm-spacing;
+}
+
 .schema__body {
-  margin-bottom: $mm-spacing;
-  padding: $mm-spacing / 2;
+  margin: 0 $mm-spacing $mm-spacing;
+}
+
+.schema__properties {
+  border: 1px solid darken(rgba(60, 88, 99, 0.1), 0);
+  border-radius: 0 0 6px 6px;
+  border-top: 0;
+  padding-bottom: 1px;
 }
 
 @include breakpoint('xxl') {
@@ -48,16 +95,23 @@ $heading-height: 70px;
       'schema-heading schema-example'
       'schema-body schema-example';
     grid-template-columns: 50% 50%;
-    grid-template-rows: 70px auto;
+    grid-template-rows: 90px auto;
   }
 
   .schema__heading {
     grid-area: schema-heading;
   }
 
+  .schema__toggle-example {
+    display: none;
+  }
+
   .schema__example {
     grid-area: schema-example;
-    padding-top: $heading-height;
+    height: auto;
+    margin: 0 !important;
+    overflow: initial;
+    padding-top: $mm-spacing;
   }
 
   .schema__example-json {
@@ -68,7 +122,6 @@ $heading-height: 70px;
 
   .schema__body {
     grid-area: schema-body;
-    padding: $mm-spacing;
   }
 
   .schema__properties {

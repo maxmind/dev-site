@@ -1,19 +1,47 @@
 @import '../styles/variables';
 
 .row {
-  border-bottom: 1px dashed $mm-border;
-  margin-bottom: $mm-spacing;
+  border: 2px solid transparent;
+  padding: $mm-spacing / 2;
+  position: relative;
+  scroll-margin-top: 40vh;
+}
+
+.row::after {
+  background: #eee;
+  bottom: -2px;
+  content: ' ';
+  height: 1px;
+  left: $mm-spacing / 2;
+  position: absolute;
+  width: calc(100% - #{$mm-spacing});
 }
 
 .row:last-of-type {
-  border-bottom: 0;
+  border-radius: 0 0 6px 6px;
 }
 
-.heading {
-  margin-bottom: $mm-spacing / 2;
+.row:last-of-type::after {
+  display: none;
+}
+
+.row:hover {
+  background: lighten($mm-light-blue, 52);
+}
+
+.row--targeted {
+  background: lighten($mm-light-blue, 50);
+  border: 2px solid $mm-light-blue;
+  z-index: 2;
+}
+
+.row--targeted::after {
+  display: none;
 }
 
 .name {
+  color: $mm-color-primary;
+  font-family: 'Source Code Pro', monospace;
   font-weight: 500;
 }
 
@@ -23,7 +51,8 @@
 }
 
 .description {
-  color: #666;
-  line-height: 26px;
-  margin-bottom: $mm-spacing;
+  color: $mm-color-primary;
+  font-size: 14px;
+  line-height: 21px;
+  margin-top: $mm-spacing / 4;
 }
