@@ -35,16 +35,14 @@
   }
 }
 
-@include breakpoint('lg') {
+@include breakpoint('xxl') {
   // TODO - This selector. Ugh.
   .content [class*='Pre-module--container'] {
     max-width: 100%;
     min-width: 720px;
     width: auto;
   }
-}
 
-@include breakpoint('xxl') {
   .article {
     grid-template-areas:
       'header aside'

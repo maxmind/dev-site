@@ -52,7 +52,7 @@ const renderRow = (props: IRow): React.ReactElement => (
   </div>
 );
 
-const renderObjectRow = (schema: SchemaObject): React.ReactElement[] => {
+const renderObjectRows = (schema: SchemaObject): React.ReactElement[] => {
   return Object
     .entries(schema.properties as SchemaObject)
     .map((
@@ -80,7 +80,7 @@ const renderObjectRow = (schema: SchemaObject): React.ReactElement[] => {
     });
 };
 
-const renderArrayRow = (schema: SchemaObject): React.ReactElement => {
+const renderArrayRows = (schema: SchemaObject): React.ReactElement => {
   return renderRow({
     description: schema.description,
     format: `<${schema.items?.$ref}>[]`,
@@ -89,14 +89,13 @@ const renderArrayRow = (schema: SchemaObject): React.ReactElement => {
   });
 };
 
-
 const renderRows = (
   schema: SchemaObject
 ):  React.ReactElement => {
   if (schema.type === 'object' && schema.properties) {
     return (
       <>
-        {renderObjectRow(schema)}
+        {renderObjectRows(schema)}
       </>
     );
   }
@@ -104,7 +103,7 @@ const renderRows = (
   if (schema.type === 'array' && schema.items) {
     return (
       <>
-        {renderArrayRow(schema)}
+        {renderArrayRows(schema)}
       </>
     );
   }

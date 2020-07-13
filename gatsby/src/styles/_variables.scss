@@ -37,14 +37,16 @@ $mm-dark-blue: #425968;
 $mm-heading: #111;
 $mm-light-blue: #00aeef;
 $mm-spacing: 40px;
+$mm-color-primary: rgba(57, 61, 100, 0.9);
+$mm-color-light-grey: rgba(57, 61, 100, 0.05);
 
 @mixin max-width {
 
-  @include breakpoint('lg') {
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 720px;
-  }
+  // @include breakpoint('lg') {
+  //   margin-left: auto;
+  //   margin-right: auto;
+  //   max-width: 720px;
+  // }
 
   @include breakpoint('xl') {
     margin-left: auto;
@@ -60,17 +62,19 @@ $mm-spacing: 40px;
 }
 
 @mixin heading {
-  color: $mm-heading;
+  color: $mm-color-primary;
   font-weight: 500;
   line-height: 1.2em;
   margin-bottom: $mm-spacing / 2;
+  margin-left: $mm-spacing;
+  margin-right: $mm-spacing;
   margin-top: (50px + $mm-spacing) * -1;
   orphans: 2;
   padding-top: (50px + $mm-spacing);
   position: relative;
 
   .link {
-    color: $mm-color;
+    color: $mm-color-primary;
     text-decoration: none;
   }
 

@@ -49,19 +49,23 @@ interface ISectionHeading {
   schema: SchemaObject;
 }
 
+const NameRegex = new RegExp('\\.', 'g');
+
 const SectionHeading: React.FC<ISectionHeading> = (
   props
 ): React.ReactElement => {
+  const id = props.name.replace(NameRegex, '_');
+
   return (
     <h1
       className={styles['schema__heading']}
-      id={props.name}
+      id={id}
     >
       <a
         className={styles['schema__heading-link']}
-        href={`#${props.name}`}
+        href={`#${id}`}
       >
-        {props.name}
+        {props.name.replace(NameRegex, ' › ')}
       </a>
       {' '}
 

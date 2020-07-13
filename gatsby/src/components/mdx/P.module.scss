@@ -1,10 +1,10 @@
 @import '../../styles/variables';
 
 .p {
-  color: #333;
+  color: $mm-color-primary;
   font-size: 16px;
   line-height: 26px;
-  margin-bottom: $mm-spacing;
+  margin: $mm-spacing;
 
   @include max-width;
 }

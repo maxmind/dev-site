@@ -97,7 +97,7 @@ $transition: all 0.15s ease-out;
   @include pattern;
 
   &::before {
-    background: darken(rgba(57, 61, 100, 0.9), 15);
+    background: darken($mm-color-primary, 15);
     opacity: 0.9;
   }
 }

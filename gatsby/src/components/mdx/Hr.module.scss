@@ -2,6 +2,9 @@
 
 .hr {
   border: 0;
-  border-top: 1px solid $mm-border;
-  margin-bottom: $mm-spacing;
+  height: 5px;
+  margin: $mm-spacing;
+  padding: 0 !important;
+  @include pattern;
+  @include max-width;
 }

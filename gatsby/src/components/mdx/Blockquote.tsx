@@ -8,12 +8,16 @@ const Blockquote: React.FC<React.HTMLProps<HTMLQuoteElement>> = ({
   className,
   ...props
 }) => (
-  <blockquote
-    className={classNames(className, styles.blockquote)}
-    {...props}
+  <div
+    className={styles.wrapper}
   >
-    {props.children}
-  </blockquote>
+    <blockquote
+      className={classNames(className, styles.blockquote)}
+      {...props}
+    >
+      {props.children}
+    </blockquote>
+  </div>
 );
 
 Blockquote.propTypes = {
