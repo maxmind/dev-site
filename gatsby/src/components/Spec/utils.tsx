@@ -9,7 +9,6 @@ const renderers = {
 
 export const getRefAnchorLink = (ref: string): React.ReactElement => {
   const link = ref.replace('#/components/schemas/', '');
-  console.log('1111', link);
 
   return (
     <a

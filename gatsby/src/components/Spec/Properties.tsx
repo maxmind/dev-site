@@ -13,6 +13,7 @@ interface IRow {
   description?: string;
   format?: string;
   key?: string;
+  lineNumbers?: string;
   name: string;
   schemaName: string;
   type?: string | React.ReactElement;
@@ -65,6 +66,8 @@ const Row: React.FC<IRow> = (props) => {
           {renderMarkdownElement(props.description)}
         </div>
       )}
+
+      {props.lineNumbers && props.lineNumbers}
     </div>
   );
 };
@@ -72,6 +75,7 @@ const Row: React.FC<IRow> = (props) => {
 Row.propTypes = {
   description: PropTypes.string,
   format: PropTypes.string,
+  lineNumbers: PropTypes.string,
   name: PropTypes.string.isRequired,
   schemaName: PropTypes.string.isRequired,
   type: PropTypes.string,
@@ -103,6 +107,7 @@ const renderObjectRows = (
           description={properties.description}
           format={properties.format && `(${properties.format})`}
           key={`row-${index}`}
+          lineNumbers={properties['x-line-numbers']}
           name={name}
           schemaName={schemaName}
           type={type}

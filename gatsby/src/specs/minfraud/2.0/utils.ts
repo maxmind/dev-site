@@ -216,9 +216,70 @@ export const addCompiledExamples = (
           'x-compiled-example',
           sampleFromSchema(schema as SchemaObject)
         );
+
+        if (Spec.components.schemas[name]) {
+          Object.values(Spec.components.schemas[name]);
+        }
+
       }
+
+
     });
 
     return sortKeys(Spec);
+  })
+  .then((spec) => {
+    Object.entries(spec.components.schemas).map(([
+      name,
+      schema,
+    ]) => {
+      const properties = (schema as SchemaObject).properties;
+      if (properties) {
+        Object.keys(properties).map(property => {
+          const exampleProperty = JSON.stringify(
+            spec.components.schemas[name]['x-compiled-example'][property],
+            null,
+            2
+          );
+
+          if (!exampleProperty) {
+            return;
+          }
+
+          const exampleRegex = exampleProperty.replace(/\s+/gm, '\\s+');
+          // eslint-disable-next-line security/detect-non-literal-regexp
+          const ExampleRegex = new RegExp(exampleRegex, 'gm');
+
+          const example = JSON.stringify(
+            spec.components.schemas[name]['x-compiled-example'],
+            null,
+            2,
+          );
+
+          const index = example.search(ExampleRegex);
+
+          if (index <= 0) {
+            return;
+          }
+
+          const startingLineNumber = example
+            .substring(0, index)
+            .split('\n')
+            .length;
+
+          const endingLineNumber = (exampleProperty.split('\n')
+            .length) + startingLineNumber - 1;
+
+          addExtension(
+            spec.components.schemas[name].properties[property],
+            'x-line-numbers',
+            startingLineNumber === endingLineNumber
+              ? startingLineNumber
+              : `${startingLineNumber}-${endingLineNumber}`
+          );
+        });
+      }
+    });
+    return spec;
   });
 
