@@ -17,13 +17,15 @@ interface IMetaItem {
 }
 
 export interface ISEO {
+  bodyAttributes?: any;
   description?: string;
   lang?: string;
   meta?: IMetaItem[];
   title: string;
 }
 
-const SEO: React.FC<ISEO> = ({ description, lang, meta = [], title }) => {
+const SEO: React.FC<ISEO> = (props) => {
+  const { bodyAttributes, description, lang, meta = [], title } = props;
   const { site } = useStaticQuery(
     graphql`
       query {
@@ -42,6 +44,7 @@ const SEO: React.FC<ISEO> = ({ description, lang, meta = [], title }) => {
 
   return (
     <Helmet
+      bodyAttributes={bodyAttributes}
       htmlAttributes={{
         lang,
       }}
@@ -93,6 +96,7 @@ SEO.defaultProps = {
 };
 
 SEO.propTypes = {
+  bodyAttributes: PropTypes.any,
   description: PropTypes.string,
   lang: PropTypes.string,
   meta: PropTypes.arrayOf(PropTypes.any),

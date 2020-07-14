@@ -20,6 +20,7 @@ import { ITableOfContents } from './TableOfContents';
 
 interface ILayout {
   children: React.ReactNode;
+  className?: string;
   description?: string;
   keywords?: string[];
   tableOfContents?: ITableOfContents;
@@ -37,6 +38,9 @@ const Layout: React.FC<ILayout> = (props) => {
   return (
     <>
       <SEO
+        bodyAttributes={{
+          class: props.className,
+        }}
         description={props.description}
         meta={[
           ...(props.keywords ? [
@@ -96,6 +100,20 @@ const Layout: React.FC<ILayout> = (props) => {
                   minFraud Api Reference
                 </Link>
               </li>
+              <li>
+                <Link
+                  to="api-reference/geoip"
+                >
+                  GeoIP Api Reference
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="api-reference/other"
+                >
+                  Other page
+                </Link>
+              </li>
             </ul>
           </nav>
         </section>
@@ -121,6 +139,7 @@ const Layout: React.FC<ILayout> = (props) => {
 
 Layout.propTypes = {
   children: PropTypes.node.isRequired,
+  className: PropTypes.string,
   description: PropTypes.string,
   keywords: PropTypes.array,
   tableOfContents: PropTypes.any,

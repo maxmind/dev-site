@@ -2,6 +2,7 @@
 /* eslint-disable security/detect-object-injection */
 import OpenApiParser from '@apidevtools/swagger-parser';
 import cloneDeep from 'lodash/cloneDeep';
+import escapeRegExp from 'lodash/escapeRegExp';
 import merge from 'lodash/merge';
 import { OpenAPI } from 'openapi-types';
 import { addExtension,
@@ -236,8 +237,9 @@ export const addCompiledExamples = (
       const properties = (schema as SchemaObject).properties;
       if (properties) {
         Object.keys(properties).map(property => {
+          const compiledExample = spec.components.schemas[name]['x-compiled-example'][property];
           const exampleProperty = JSON.stringify(
-            spec.components.schemas[name]['x-compiled-example'][property],
+            compiledExample,
             null,
             2
           );
@@ -246,9 +248,38 @@ export const addCompiledExamples = (
             return;
           }
 
-          const exampleRegex = exampleProperty.replace(/\s+/gm, '\\s+');
+          let ExampleRegex = RegExp(
+            `(?:"${property}": )(.*?)(?:\\n)`,
+            'gm'
+          );
+
+          if (typeof compiledExample === 'object') {
+            if (Array.isArray(compiledExample)) {
+              // eslint-disable-next-line security/detect-non-literal-regexp
+              ExampleRegex = new RegExp(
+                `(?:"${property}": \\[)((.|\\s)*?)(?:\\])`,
+                'gm'
+              );
+            } else {
+              // eslint-disable-next-line security/detect-non-literal-regexp
+              ExampleRegex = new RegExp(
+                `(?:"${property}": {)((.|\\s)*?)(?:})`,
+                'gm'
+              );
+            }
+          }
+
           // eslint-disable-next-line security/detect-non-literal-regexp
-          const ExampleRegex = new RegExp(exampleRegex, 'gm');
+          // const ExampleRegex = new RegExp(
+          //   `"${property}":\\s${exampleRegex}`,
+          //   'gm'
+          // );
+
+          // addExtension(
+          //   spec.components.schemas[name].properties[property],
+          //   'x-regex',
+          //   `"${property}":\\s${escapeRegExp(exampleRegex)}`
+          // );
 
           const example = JSON.stringify(
             spec.components.schemas[name]['x-compiled-example'],

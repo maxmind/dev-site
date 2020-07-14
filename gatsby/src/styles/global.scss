@@ -17,3 +17,17 @@ body {
   outline-style: solid;
   outline-width: 2px;
 }
+
+:root {
+  --page-type-color: rgba(255, 255, 255, 0.3);
+}
+
+// Not sure why .page-type--minfraud does not work here
+[class='page-type--minfraud'] {
+  --page-type-color: rgba(255, 0, 136, 0.5);
+}
+
+// Not sure why .page-type--geoip does not work here
+[class='page-type--geoip'] {
+  --page-type-color: rgba(0, 255, 102, 0.5);
+}

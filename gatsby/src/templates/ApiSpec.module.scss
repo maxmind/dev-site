@@ -43,17 +43,16 @@ $heading-height: 50px;
   display: inline-block;
   font-size: 14px;
   font-weight: 500;
-  height: 35px;
+  height: 50px;
   left: 50%;
   letter-spacing: 1px;
-  line-height: 35px;
+  line-height: 50px;
   margin-top: $mm-spacing;
   padding: 0 !important;
-  padding-left: calc(#{$mm-spacing / 4} + 40px) !important;
-  padding-right: $mm-spacing / 4 !important;
+  padding-left: calc(#{$mm-spacing / 2} + 50px) !important;
+  padding-right: $mm-spacing / 2 !important;
   position: relative;
-
-  // text-transform: uppercase;
+  text-shadow: 0 2px 0 rgba(0, 0, 0, 0.2);
   transform: translateX(-50%);
   vertical-align: middle;
   @include pattern;
@@ -68,11 +67,11 @@ $heading-height: 50px;
   border-right: 2px solid #eee;
   height: 100%;
   left: 0;
-  line-height: 40px;
+  line-height: 55px;
   position: absolute;
   text-align: center;
   top: 0;
-  width: 40px;
+  width: 50px;
 }
 
 .schema__toggle-example-btn--is-expanded .schema__toggle-example-btn-icon svg {

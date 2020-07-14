@@ -12,7 +12,6 @@ const Minfraud = (): React.ReactElement => (
       items: [],
     }}
     title="minFraud API Reference"
-    type="minfraud"
   >
     foo
   </ApiSpec>

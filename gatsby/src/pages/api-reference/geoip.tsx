@@ -11,8 +11,8 @@ const Minfraud = (): React.ReactElement => (
     tableOfContents={{
       items: [],
     }}
-    title="minFraud API Reference"
-    type="minfraud"
+    title="GeoIP API Reference"
+    type="geoip"
   >
     foo
   </ApiSpec>

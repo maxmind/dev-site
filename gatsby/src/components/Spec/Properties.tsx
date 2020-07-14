@@ -25,15 +25,15 @@ const NameRegex = new RegExp('\\.', 'g');
 
 const Row: React.FC<IRow> = (props) => {
   const { handleHightlightLines, lineNumbers } = props;
-  const delayedHighlightLines = React.useCallback(
-    debounce((lines: string) =>  {
-      handleHightlightLines(`${lines}`);
-      console.log(`${lines}`);
-    }, 0),
-    [
-      lineNumbers,
-    ]
-  );
+  // const delayedHighlightLines = React.useCallback(
+  //   debounce((lines: string) =>  {
+  //     handleHightlightLines(`${lines}`);
+  //     console.log(`${lines}`);
+  //   }, 0),
+  //   [
+  //     lineNumbers,
+  //   ]
+  // );
   const location = useLocation();
   const id = [
     props.schemaName.replace(NameRegex, '_'),
@@ -60,11 +60,7 @@ const Row: React.FC<IRow> = (props) => {
         }
       )}
       id={id}
-      onMouseEnter={(): void => {
-        if (props.lineNumbers) {
-          delayedHighlightLines(props.lineNumbers);
-        }
-      }}
+      onMouseEnter={(): void => handleHightlightLines(`${props.lineNumbers}`)}
     >
       <div>
         <a
@@ -95,7 +91,7 @@ const Row: React.FC<IRow> = (props) => {
         </div>
       )}
 
-      {props.lineNumbers && props.lineNumbers}
+      {/* {props.lineNumbers && props.lineNumbers} */}
     </div>
   );
 };
@@ -187,7 +183,7 @@ const renderRows = (
 
   return (
     <>
-      {JSON.stringify(schema, null, 2)}
+      {/* {JSON.stringify(schema, null, 2)} */}
     </>
   );
 };

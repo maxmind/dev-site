@@ -4,7 +4,6 @@ import { OpenApiBuilder,
   OpenAPIObject,
   SchemaObject,
   SchemasObject } from 'openapi3-ts';
-import PropTypes from 'prop-types';
 import React from 'react';
 import { FaAngleDoubleDown } from 'react-icons/fa';
 
@@ -166,14 +165,6 @@ const SectionCodeExample: React.FC<ISectionCodeExample> = (props) => (
   </div>
 );
 
-interface IPage {
-  description: string;
-  keywords: string[];
-  specJson: unknown;
-  tableOfContents: ITableOfContents;
-  title: string;
-}
-
 interface ISection {
   name: string;
   schema: SchemaObject;
@@ -220,6 +211,15 @@ const Section: React.FC<ISection> = (props) => {
   );
 };
 
+interface IPage {
+  description: string;
+  keywords: string[];
+  specJson: unknown;
+  tableOfContents: ITableOfContents;
+  title: string;
+  type?: 'geoip' | 'minfraud';
+}
+
 const ApiSpec: React.FC<IPage> = (props) => {
   const { description, keywords, specJson, tableOfContents, title } = props;
 
@@ -235,8 +235,16 @@ const ApiSpec: React.FC<IPage> = (props) => {
     schema: schema[1],
   }));
 
+  const className: string | undefined = [
+    'geoip',
+    'minfraud',
+  ].includes(props.type as string)
+    ? `page-type--${props.type}`
+    : undefined;
+
   return (
     <Layout
+      className={className}
       description={description}
       keywords={keywords}
       tableOfContents={tableOfContents}
@@ -253,12 +261,5 @@ const ApiSpec: React.FC<IPage> = (props) => {
   );
 };
 
-ApiSpec.propTypes = {
-  description: PropTypes.string.isRequired,
-  keywords: PropTypes.any.isRequired,
-  specJson: PropTypes.any.isRequired,
-  tableOfContents: PropTypes.any.isRequired,
-  title: PropTypes.string.isRequired,
-};
 
 export default ApiSpec;
