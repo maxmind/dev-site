@@ -18,6 +18,7 @@ import styles from './ApiSpec.module.scss';
 
 interface ISectionProperties {
   handleExpand: () => void;
+  handleHightlightLines: (lines: string) => void;
   isExpanded?: boolean;
   name: string;
   schema: SchemasObject;
@@ -48,6 +49,7 @@ const SectionProperties: React.FC<ISectionProperties> = (
         {props.schema && (
           <Properties
             data={props.schema}
+            handleHightlightLines={props.handleHightlightLines}
             schemaName={props.name}
           />
         )}
@@ -137,6 +139,7 @@ const SectionHeading: React.FC<ISectionHeading> = (
 };
 
 interface ISectionCodeExample {
+  highlightLines?: string;
   isExpanded?: boolean;
   schema: SchemaObject;
 }
@@ -152,6 +155,7 @@ const SectionCodeExample: React.FC<ISectionCodeExample> = (props) => (
   >
     <Pre
       className={styles['schema__example-json']}
+      highlightLines={props.highlightLines}
     >
       <code
         className="language-json"
@@ -181,6 +185,15 @@ const Section: React.FC<ISection> = (props) => {
     setIsExampleExpanded,
   ] = React.useState(false);
 
+  const [
+    highlightedLines,
+    setHighlightedLines,
+  ] = React.useState<string>();
+
+  const handleHightlightLines = (
+    lines: string
+  ): void => setHighlightedLines(lines as string);
+
   const handleExpand = (): void => setIsExampleExpanded(!isExampleExpanded);
 
   return (
@@ -193,11 +206,13 @@ const Section: React.FC<ISection> = (props) => {
       />
       <SectionProperties
         handleExpand={handleExpand}
+        handleHightlightLines={handleHightlightLines}
         isExpanded={isExampleExpanded}
         name={props.name}
         schema={props.schema}
       />
       <SectionCodeExample
+        highlightLines={highlightedLines}
         isExpanded={isExampleExpanded}
         schema={props.schema}
       />

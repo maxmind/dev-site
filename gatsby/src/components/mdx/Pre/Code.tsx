@@ -15,6 +15,7 @@ import 'prismjs/plugins/normalize-whitespace/prism-normalize-whitespace.js';
 
 interface ICode {
   children: React.ReactNode;
+  hightlightLines?: string;
   language: ILanguage;
   showInvisibles?: boolean;
 }
@@ -153,7 +154,7 @@ const Code: React.FC<ICode> = (props) => {
           styles.pre
         )}
         {...language.prismSettings.cli}
-        data-line="4-9"
+        data-line={props.hightlightLines}
         ref={preRef}
       >
         {props.children}
@@ -172,6 +173,7 @@ const Code: React.FC<ICode> = (props) => {
 
 Code.propTypes = {
   children: PropTypes.node.isRequired,
+  hightlightLines: PropTypes.string,
   language: PropTypes.any.isRequired,
   // eslint-disable-next-line react/boolean-prop-naming
   showInvisibles: PropTypes.bool,

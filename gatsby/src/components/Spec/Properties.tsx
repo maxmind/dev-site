@@ -1,5 +1,6 @@
 import { useLocation } from '@reach/router';
 import classNames from 'classnames';
+import debounce from 'lodash/debounce';
 import { SchemaObject } from 'openapi3-ts';
 import PropTypes from 'prop-types';
 import React from 'react';
@@ -12,6 +13,7 @@ import { getRefAnchorLink, renderMarkdownElement } from './utils';
 interface IRow {
   description?: string;
   format?: string;
+  handleHightlightLines: (lines: string) => void;
   key?: string;
   lineNumbers?: string;
   name: string;
@@ -22,11 +24,33 @@ interface IRow {
 const NameRegex = new RegExp('\\.', 'g');
 
 const Row: React.FC<IRow> = (props) => {
+  const { handleHightlightLines, lineNumbers } = props;
+  const delayedHighlightLines = React.useCallback(
+    debounce((lines: string) =>  {
+      handleHightlightLines(`${lines}`);
+      console.log(`${lines}`);
+    }, 0),
+    [
+      lineNumbers,
+    ]
+  );
   const location = useLocation();
   const id = [
     props.schemaName.replace(NameRegex, '_'),
     props.name.replace(NameRegex, '_'),
   ].join('__');
+
+  React.useEffect(() => {
+    if (location.hash === `#${id}` && lineNumbers) {
+      handleHightlightLines(`${lineNumbers}`);
+    }
+  }, [
+    id,
+    location.hash,
+    lineNumbers,
+    handleHightlightLines,
+  ]);
+
   return (
     <div
       className={classNames(
@@ -36,7 +60,11 @@ const Row: React.FC<IRow> = (props) => {
         }
       )}
       id={id}
-
+      onMouseEnter={(): void => {
+        if (props.lineNumbers) {
+          delayedHighlightLines(props.lineNumbers);
+        }
+      }}
     >
       <div>
         <a
@@ -75,6 +103,7 @@ const Row: React.FC<IRow> = (props) => {
 Row.propTypes = {
   description: PropTypes.string,
   format: PropTypes.string,
+  handleHightlightLines: PropTypes.any.isRequired,
   lineNumbers: PropTypes.string,
   name: PropTypes.string.isRequired,
   schemaName: PropTypes.string.isRequired,
@@ -83,7 +112,8 @@ Row.propTypes = {
 
 const renderObjectRows = (
   schema: SchemaObject,
-  schemaName: string
+  schemaName: string,
+  handleHightlightLines: (lines: string) => void,
 ): React.ReactElement[] => {
   return Object
     .entries(schema.properties as SchemaObject)
@@ -106,6 +136,7 @@ const renderObjectRows = (
         <Row
           description={properties.description}
           format={properties.format && `(${properties.format})`}
+          handleHightlightLines={handleHightlightLines}
           key={`row-${index}`}
           lineNumbers={properties['x-line-numbers']}
           name={name}
@@ -119,11 +150,13 @@ const renderObjectRows = (
 const renderArrayRows = (
   schema: SchemaObject,
   schemaName: string,
+  handleHightlightLines: (lines: string) => void,
 ): React.ReactElement => {
   return (
     <Row
       description={schema.description}
       format={`<${schema.items?.$ref}>[]`}
+      handleHightlightLines={handleHightlightLines}
       name="array"
       schemaName={schemaName}
       type="array"
@@ -134,11 +167,12 @@ const renderArrayRows = (
 const renderRows = (
   schema: SchemaObject,
   schemaName: string,
+  handleHightlightLines: (lines: string) => void,
 ):  React.ReactElement => {
   if (schema.type === 'object' && schema.properties) {
     return (
       <>
-        {renderObjectRows(schema, schemaName)}
+        {renderObjectRows(schema, schemaName, handleHightlightLines)}
       </>
     );
   }
@@ -146,7 +180,7 @@ const renderRows = (
   if (schema.type === 'array' && schema.items) {
     return (
       <>
-        {renderArrayRows(schema, schemaName)}
+        {renderArrayRows(schema, schemaName, handleHightlightLines)}
       </>
     );
   }
@@ -161,17 +195,19 @@ const renderRows = (
 
 interface IProperties {
   data: SchemaObject;
+  handleHightlightLines: (lines: string) => void;
   schemaName: string;
 }
 
 const Properties: React.FC<IProperties> = (props) => {
   const schema = parseSchema(props.data);
 
-  return renderRows(schema, props.schemaName);
+  return renderRows(schema, props.schemaName, props.handleHightlightLines);
 };
 
 Properties.propTypes = {
   data: PropTypes.any.isRequired,
+  handleHightlightLines: PropTypes.any.isRequired,
   schemaName: PropTypes.string.isRequired,
 };
 

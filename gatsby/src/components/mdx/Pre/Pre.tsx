@@ -11,6 +11,7 @@ import Message, { State as MessageState } from './Message';
 import styles from './Pre.module.scss';
 
 interface IPre {
+  highlightLines?: string;
   nav?: React.ReactElement<React.HTMLProps<HTMLElement>>;
 }
 
@@ -108,6 +109,7 @@ const Pre: React.FC<React.HTMLProps<HTMLPreElement> & IPre> = (props) => {
             {message}
           </Message>
           <Code
+            hightlightLines={props.highlightLines}
             language={language}
             showInvisibles={showInvisibles}
           >
@@ -122,6 +124,7 @@ const Pre: React.FC<React.HTMLProps<HTMLPreElement> & IPre> = (props) => {
 Pre.propTypes = {
   children: PropTypes.node,
   className: PropTypes.string,
+  highlightLines: PropTypes.string,
   nav: PropTypes.any,
 };
 
