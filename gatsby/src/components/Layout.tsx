@@ -7,6 +7,7 @@
 
 import 'normalize.css';
 import 'typeface-roboto';
+import 'typeface-source-code-pro';
 
 import classNames from 'classnames';
 import { Link } from 'gatsby';

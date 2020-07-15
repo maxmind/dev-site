@@ -1,26 +1,48 @@
 @import '../styles/variables';
 
+.heading {
+  border-bottom: 1px dashed $mm-border;
+  display: inline-block;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: $mm-spacing / 2;
+  padding-bottom: $mm-spacing / 2;
+  width: 100%;
+}
+
 .list {
-  margin: 10px 0 10px 20px;
+  list-style-position: inside;
+  list-style-type: upper-roman;
+  margin: $mm-spacing / 4 0;
+}
+
+.list * {
+  vertical-align: top !important;
+}
+
+.list .list {
+  list-style-type: decimal;
+  margin-left: $mm-spacing / 2;
 }
 
 .list-item {
-  font-size: 18px;
+  color: #aaa;
+  font-size: 16px;
   line-height: 1.2em;
   margin-bottom: 10px;
 }
 
 .list-item .list-item {
-  font-size: 0.8em;
+  font-size: 14px;
 }
 
 .item--active > a {
-  color: #333;
+  color: $mm-color-primary;
   font-weight: bold;
 }
 
 .list-item a {
-  color: #999;
+  color: $mm-color-primary;
   display: inline-block;
   text-decoration: none;
   width: calc(100% - #{$mm-spacing});

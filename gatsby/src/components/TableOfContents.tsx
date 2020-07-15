@@ -50,6 +50,12 @@ const TableOfContents: React.FC<
     <nav
       {...rest}
     >
+      <span
+        className={styles.heading}
+      >
+        On this page
+
+      </span>
       {renderItems(items, currentItem)}
     </nav>
   );

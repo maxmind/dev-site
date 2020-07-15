@@ -2,5 +2,8 @@
 
 .h1 {
   @include heading;
-  font-size: 40px;
+  font-size: 32px;
+  margin: $mm-spacing;
+  margin-top: 0;
+  padding-top: $mm-spacing;
 }

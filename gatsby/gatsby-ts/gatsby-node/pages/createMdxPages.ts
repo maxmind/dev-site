@@ -42,12 +42,14 @@ const createMdxPages = async ( props: CreatePagesArgs): Promise<void> => {
             }
             id
             tableOfContents(maxDepth: 3)
+            timeToRead
             parent {
               id
               ... on File {
                 id
                 name
-                relativeDirectory
+                relativePath
+                modifiedTime
               }
             }
           }

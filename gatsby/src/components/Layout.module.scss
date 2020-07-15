@@ -7,8 +7,8 @@ $transition: all 0.15s ease-out;
 .header {
   background: $mm-background;
   border-bottom: 1px solid $mm-border;
-  height: 50px;
-  position: fixed;
+  height: var(--page-header-height);
+  position: sticky;
   top: 0;
   width: 100%;
   z-index: 10;
@@ -60,7 +60,6 @@ $transition: all 0.15s ease-out;
   display: grid;
   grid-template-areas: 'sidebar article';
   grid-template-columns: $sidebar-width calc(100vw - #{$sidebar-width});
-  margin: 50px auto 0;
   transition: $transition;
 }
 
@@ -75,7 +74,8 @@ $transition: all 0.15s ease-out;
 }
 
 .sidebarNav {
-  position: fixed;
+  position: sticky;
+  top: calc(var(--page-header-height) + #{$mm-spacing});
 }
 
 .sidebar--hidden .sidebar {

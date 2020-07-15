@@ -15,8 +15,8 @@ $heading-height: 50px;
   margin: $mm-spacing $mm-spacing 0;
   padding: 0 $mm-spacing / 2;
   position: sticky;
-  scroll-margin-top: 49px + $mm-spacing;
-  top: 49px + $mm-spacing;
+  scroll-margin-top: var(--page-header-height) + $mm-spacing;
+  top: calc(var(--page-header-height) + #{$mm-spacing});
   transform-style: preserve-3d;
   z-index: 5;
 
@@ -150,7 +150,7 @@ $heading-height: 50px;
   .schema__example-json {
     margin-bottom: 0;
     position: sticky;
-    top: 100px;
+    top: calc(var(--page-header-height) + #{$heading-height});
   }
 
   .schema__body {
@@ -159,6 +159,6 @@ $heading-height: 50px;
 
   .schema__properties {
     position: sticky;
-    top: 120px + $mm-spacing;
+    top: calc(var(--page-header-height) + #{$mm-spacing} + #{$heading-height});
   }
 }
