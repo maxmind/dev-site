@@ -2,7 +2,7 @@
 
 .ul {
   list-style-type: disc;
-  margin-bottom: $mm-spacing;
+  margin: $mm-spacing;
   padding-left: $mm-spacing / 2;
   @include max-width;
 }

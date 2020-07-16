@@ -6,6 +6,7 @@
  */
 
 import 'normalize.css';
+import 'typeface-montserrat';
 import 'typeface-roboto';
 import 'typeface-source-code-pro';
 
@@ -87,29 +88,41 @@ const Layout: React.FC<ILayout> = (props) => {
             className={styles.sidebarNav}
           >
             <ul>
-              <li>
+              <li
+                className={styles.sidebarNavItem}
+              >
                 <Link
+                  className={styles.sidebarNavLink}
                   to="pages/longform-example"
                 >
                   Longform Example
                 </Link>
               </li>
-              <li>
+              <li
+                className={styles.sidebarNavItem}
+              >
                 <Link
+                  className={styles.sidebarNavLink}
                   to="api-reference/minfraud"
                 >
                   minFraud Api Reference
                 </Link>
               </li>
-              <li>
+              <li
+                className={styles.sidebarNavItem}
+              >
                 <Link
+                  className={styles.sidebarNavLink}
                   to="api-reference/geoip"
                 >
                   GeoIP Api Reference
                 </Link>
               </li>
-              <li>
+              <li
+                className={styles.sidebarNavItem}
+              >
                 <Link
+                  className={styles.sidebarNavLink}
                   to="api-reference/other"
                 >
                   Other page

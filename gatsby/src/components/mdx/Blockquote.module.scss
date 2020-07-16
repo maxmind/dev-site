@@ -1,38 +1,12 @@
 @import '../../styles/variables';
 
 .wrapper {
-  // @include pattern;
-  background: lighten(#f5f6f7 , 1);
-  border: 5px solid lighten($mm-color-primary, 50);
+  // background: lighten(#f5f6f7 , 1);
+  // border: 5px solid lighten($mm-color-primary, 50);
   border-left: 0;
   border-right: 0;
   padding: $mm-spacing;
   position: relative;
-
-  // &::before,
-  // &::after {
-  //   content: ' ';
-  //   display: block;
-  //   height: 2px;
-  //   left: $mm-spacing * -1;
-  //   padding: 0 !important;
-  //   position: relative;
-  //   width: calc(100% + #{$mm-spacing * 2});
-  //   @include pattern;
-  // }
-
-  // &::before {
-  //   top: $mm-spacing * -1;
-  // }
-
-  // &::after {
-  //   bottom: $mm-spacing * -1;
-  // }
-}
-
-.blockquote .wrapper {
-  // background: transparent;
-  // padding: 0;
 }
 
 .blockquote {
@@ -40,11 +14,12 @@
   z-index: 3;
 
   p {
-    font-family: 'Source Code Pro', monospace;
+    font-family: $mm-font-display;
     font-size: 20px;
     font-style: italic;
     font-weight: 500;
     line-height: 1.5em;
+    text-align: center;
   }
 
   > p:first-of-type {

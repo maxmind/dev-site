@@ -2,7 +2,6 @@
 /* eslint-disable security/detect-object-injection */
 import OpenApiParser from '@apidevtools/swagger-parser';
 import cloneDeep from 'lodash/cloneDeep';
-import escapeRegExp from 'lodash/escapeRegExp';
 import merge from 'lodash/merge';
 import { OpenAPI } from 'openapi-types';
 import { addExtension,

@@ -16,14 +16,24 @@ interface IPage {
     readonly itemTotal: number;
     readonly page: number;
     readonly pageTotal: number;
+    readonly parent: {
+      modifiedTime: string;
+    };
     readonly prefix: string;
     readonly tableOfContents: ITableOfContents;
+    readonly timeToRead: number;
   };
 }
 
 const Page: React.FC<IPage> = (props) => {
-  const { frontmatter, tableOfContents } = props.pageContext;
+  const {
+    frontmatter,
+    parent,
+    tableOfContents,
+    timeToRead,
+  } = props.pageContext;
   const { description, keywords, title } = frontmatter;
+  const { modifiedTime } = parent;
 
   return (
     <Layout
@@ -32,7 +42,9 @@ const Page: React.FC<IPage> = (props) => {
       title={title}
     >
       <Article
+        lastUpdated={modifiedTime}
         tableOfContents={tableOfContents}
+        timeToRead={timeToRead}
         title={title}
       >
         {props.children}

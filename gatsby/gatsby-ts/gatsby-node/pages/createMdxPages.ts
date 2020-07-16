@@ -47,9 +47,10 @@ const createMdxPages = async ( props: CreatePagesArgs): Promise<void> => {
               id
               ... on File {
                 id
-                name
-                relativePath
                 modifiedTime
+                name
+                relativeDirectory
+                relativePath
               }
             }
           }

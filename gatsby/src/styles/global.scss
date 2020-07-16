@@ -1,5 +1,9 @@
 @import './reset';
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   color: $mm-color-primary;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Ubuntu, sans-serif;

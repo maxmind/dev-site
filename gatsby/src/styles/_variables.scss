@@ -30,6 +30,8 @@ $containers: (
   padding: 0;
 }
 
+$mm-font-display: 'montserrat';
+
 $mm-background: #fff;
 $mm-border: #ddd;
 $mm-color: #333;
@@ -44,22 +46,22 @@ $mm-color-light-grey: rgba(57, 61, 100, 0.05);
   @include breakpoint('xl') {
     margin-left: auto;
     margin-right: auto;
-    max-width: 720px;
+    max-width: 680px;
   }
 
   @include breakpoint('xl') {
     margin-left: auto;
     margin-right: auto;
-    max-width: 720px;
+    max-width: 680px;
   }
 }
 
 @mixin heading {
   color: $mm-color-primary;
+  font-family: $mm-font-display;
   font-weight: 500;
   line-height: 1.2em;
   margin: ($mm-spacing * 2) $mm-spacing ($mm-spacing / 2);
-  orphans: 2;
   position: relative;
   scroll-margin-top: calc(var(--page-header-height) + #{$mm-spacing});
 

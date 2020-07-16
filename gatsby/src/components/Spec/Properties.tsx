@@ -1,6 +1,5 @@
 import { useLocation } from '@reach/router';
 import classNames from 'classnames';
-import debounce from 'lodash/debounce';
 import { SchemaObject } from 'openapi3-ts';
 import PropTypes from 'prop-types';
 import React from 'react';

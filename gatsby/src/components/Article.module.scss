@@ -2,16 +2,51 @@
 
 .header {
   background: #fff;
-  // border-bottom: 1px solid $mm-border;
+  padding: $mm-spacing;
   z-index: 5;
+}
+
+.heading {
+  margin: 0;
+  padding: 0;
+  @include max-width;
+}
+
+.meta {
+  font-size: 14px;
+  margin-top: $mm-spacing / 2;
+  @include max-width;
 }
 
 .aside {
   background: #f5f6f7;
-  // border-bottom: 1px solid $mm-border;
   margin: $mm-spacing;
   padding: $mm-spacing;
-  // padding: 0 0 $mm-spacing $mm-spacing / 2;
+  position: relative;
+
+  &::before,
+  &::after {
+    content: ' ';
+    display: block;
+    height: 10px;
+    left: 0;
+    overflow: hidden;
+    padding: 0 !important;
+    position: absolute !important;
+    top: 0;
+    width: 100%;
+
+    @include pattern;
+  }
+
+  &::after {
+    background: rgb(0, 119, 194);
+    background: linear-gradient(90deg, rgba(0, 119, 194, 0.5) 0%, var(--page-type-color));
+  }
+}
+
+.header + .aside {
+  margin-top: 0;
 }
 
 @include breakpoint('xl') {
@@ -28,9 +63,13 @@
     grid-area: header;
   }
 
+  .header ~ .content > *:first-child {
+    margin-top: 0;
+  }
+
   .aside {
     grid-area: aside;
-    min-width: 720px;
+    min-width: 700px;
     @include max-width;
   }
 
@@ -43,7 +82,7 @@
   // TODO - This selector. Ugh.
   .content [class*='Pre-module--container'] {
     max-width: 100%;
-    min-width: 720px;
+    min-width: 700px;
     width: auto;
   }
 
@@ -69,7 +108,11 @@
     min-width: auto;
     padding: 0;
     width: 100%;
-    // padding: 0 0 0 $mm-spacing;
+  }
+
+  .aside::before,
+  .aside::after {
+    display: none;
   }
 
   .tableOfContents {
@@ -98,10 +141,3 @@
     margin: 0 auto;
   }
 }
-
-// @media screen and (min-height: 960px) {
-//   .header {
-//     position: sticky;
-//     top: var(--page-header-height);
-//   }
-// }
