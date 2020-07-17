@@ -4,11 +4,11 @@ import PropTypes from 'prop-types';
 import React from 'react';
 import { FaAngleDoubleDown } from 'react-icons/fa';
 
-import Props from '../Spec/Properties';
-import { renderMarkdownElement } from '../Spec/utils';
-import styles from './Properties.module.scss';
+import { renderMarkdownElement } from '../utils';
+import styles from './Content.module.scss';
+import Properties from './Properties';
 
-interface IProperties {
+interface IContent {
   handleExpand: () => void;
   handleHightlightLines: (lines: string) => void;
   isExpanded?: boolean;
@@ -16,7 +16,7 @@ interface IProperties {
   schema: SchemasObject;
 }
 
-const Properties: React.FC<IProperties> = (
+const Content: React.FC<IContent> = (
   props
 ): React.ReactElement => {
   return (
@@ -39,7 +39,7 @@ const Properties: React.FC<IProperties> = (
         }
 
         {props.schema && (
-          <Props
+          <Properties
             data={props.schema}
             handleHightlightLines={props.handleHightlightLines}
             schemaName={props.name}
@@ -85,7 +85,7 @@ const Properties: React.FC<IProperties> = (
   );
 };
 
-Properties.propTypes = {
+Content.propTypes = {
   handleExpand: PropTypes.func.isRequired,
   handleHightlightLines: PropTypes.func.isRequired,
   isExpanded: PropTypes.bool,
@@ -93,4 +93,4 @@ Properties.propTypes = {
   schema: PropTypes.any.isRequired,
 };
 
-export default Properties;
+export default Content;

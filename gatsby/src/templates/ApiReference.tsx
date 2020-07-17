@@ -6,7 +6,8 @@ import PropTypes from 'prop-types';
 import React from 'react';
 
 import Layout from '../components/Layout';
-import Schema, { ISchema } from '../components/Schema';
+import Schema from '../components/Schema';
+import { ISchema } from '../components/Schema/Schema';
 import { ITableOfContents } from '../components/TableOfContents';
 
 interface IApiReference {

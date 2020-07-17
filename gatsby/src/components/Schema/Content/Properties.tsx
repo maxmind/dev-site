@@ -4,10 +4,10 @@ import { SchemaObject } from 'openapi3-ts';
 import PropTypes from 'prop-types';
 import React from 'react';
 
-import { parseSchema } from '../../specs';
+import { parseSchema } from '../../../specs';
+import Type from '../Type';
+import { getRefAnchorLink, renderMarkdownElement } from '../utils';
 import styles from './Properties.module.scss';
-import Type from './Type';
-import { getRefAnchorLink, renderMarkdownElement } from './utils';
 
 interface IRow {
   description?: string;

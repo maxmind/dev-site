@@ -3,8 +3,8 @@ import PropTypes from 'prop-types';
 import React from 'react';
 
 import CodeExample from './CodeExample';
+import Content from './Content';
 import Heading from './Heading';
-import Properties from './Properties';
 import styles from './Schema.module.scss';
 
 export interface ISchema {
@@ -37,7 +37,7 @@ const Schema: React.FC<ISchema> = (props) => {
         name={props.name}
         schema={props.schema}
       />
-      <Properties
+      <Content
         handleExpand={handleExpand}
         handleHightlightLines={handleHightlightLines}
         isExpanded={isExampleExpanded}

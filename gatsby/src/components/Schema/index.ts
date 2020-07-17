@@ -1,1 +1,1 @@
-export { default as default, ISchema } from './Schema';
+export { default as default } from './Schema';
