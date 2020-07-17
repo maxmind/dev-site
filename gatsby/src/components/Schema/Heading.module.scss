@@ -1,0 +1,49 @@
+@import '../styles/variables';
+
+$heading-height: 50px;
+
+.schema__heading {
+  background: #f6f7f7;
+  border: 1px solid darken(rgba(60, 88, 99, 0.1), 0);
+  border-radius: 6px 6px 0 0;
+  height: $heading-height;
+  line-height: $heading-height;
+  margin: $mm-spacing $mm-spacing 0;
+  padding: 0 $mm-spacing / 2;
+  position: sticky;
+  scroll-margin-top: var(--page-header-height) + $mm-spacing;
+  top: calc(var(--page-header-height) + #{$mm-spacing});
+  transform-style: preserve-3d;
+  z-index: 5;
+
+  &::after {
+    background: #fff;
+    content: ' ';
+    display: block;
+    height: calc(100% + #{$mm-spacing} + 2px);
+    left: calc(#{$mm-spacing * -1} - 1px);
+    position: absolute;
+    top: calc(#{$mm-spacing * -1} - 1px);
+    transform: translateZ(-1px);
+    width: calc(100% + #{$mm-spacing * 2} + 2px);
+  }
+}
+
+.schema__heading-link {
+  color: #666;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+  width: 100%;
+}
+
+.schema__heading-type {
+  margin-left: $mm-spacing / 4;
+  vertical-align: middle;
+}
+
+@include breakpoint('xxl') {
+  .schema__heading {
+    grid-area: schema-heading;
+  }
+}

@@ -1,0 +1,79 @@
+@import '../styles/variables';
+
+$heading-height: 50px;
+
+.schema__description {
+  line-height: 1.5em;
+  padding: $mm-spacing / 2;
+}
+
+.schema__body {
+  margin: 0 $mm-spacing $mm-spacing;
+}
+
+.schema__properties {
+  border: 1px solid darken(rgba(60, 88, 99, 0.1), 0);
+  border-radius: 0 0 6px 6px;
+  border-top: 0;
+  padding-bottom: 1px;
+}
+
+.schema__toggle-example {
+  background: lighten(#3b446f, 20);
+  border: 0;
+  border-radius: 6px;
+  box-shadow: 0 6px 0 rgba(0, 0, 0, 0.1);
+  color: rgba(255, 255, 255, 0.9);
+  cursor: pointer;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 500;
+  height: 50px;
+  left: 50%;
+  letter-spacing: 1px;
+  line-height: 50px;
+  margin-top: $mm-spacing;
+  padding: 0 !important;
+  padding-left: calc(#{$mm-spacing / 2} + 50px) !important;
+  padding-right: $mm-spacing / 2 !important;
+  position: relative;
+  text-shadow: 0 2px 0 rgba(0, 0, 0, 0.2);
+  transform: translateX(-50%);
+  vertical-align: middle;
+  @include pattern;
+
+  &::before {
+    border-radius: 6px;
+    z-index: -1;
+  }
+}
+
+.schema__toggle-example-btn-icon {
+  border-right: 2px solid #eee;
+  height: 100%;
+  left: 0;
+  line-height: 55px;
+  position: absolute;
+  text-align: center;
+  top: 0;
+  width: 50px;
+}
+
+.schema__toggle-example-btn--is-expanded .schema__toggle-example-btn-icon svg {
+  transform: rotate(180deg);
+}
+
+@include breakpoint('xxl') {
+  .schema__body {
+    grid-area: schema-body;
+  }
+
+  .schema__properties {
+    position: sticky;
+    top: calc(var(--page-header-height) + #{$mm-spacing} + #{$heading-height});
+  }
+
+  .schema__toggle-example {
+    display: none;
+  }
+}

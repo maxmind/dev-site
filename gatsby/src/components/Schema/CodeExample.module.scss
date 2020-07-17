@@ -1,0 +1,33 @@
+@import '../styles/variables';
+
+$heading-height: 50px;
+
+.schema__example {
+  height: 0;
+  overflow: hidden;
+  padding: 0 !important;
+  @include pattern;
+}
+
+.schema__example--is-expanded {
+  height: auto;
+  margin: 0 !important;
+  overflow: initial;
+  padding: $mm-spacing;
+}
+
+@include breakpoint('xxl') {
+  .schema__example {
+    grid-area: schema-example;
+    height: auto;
+    margin: 0 !important;
+    overflow: initial;
+    padding-top: $mm-spacing;
+  }
+
+  .schema__example-json {
+    margin-bottom: 0;
+    position: sticky;
+    top: var(--page-header-height);
+  }
+}

@@ -1,0 +1,16 @@
+@import '../../styles/variables';
+
+.schema {
+  width: 100%;
+}
+
+@include breakpoint('xxl') {
+  .schema {
+    display: grid;
+    grid-template-areas:
+      'schema-heading schema-example'
+      'schema-body schema-example';
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 90px auto;
+  }
+}
