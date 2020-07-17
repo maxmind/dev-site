@@ -18,14 +18,13 @@ import { FaArrowLeft, FaArrowRight } from 'react-icons/fa';
 
 import SEO from '../components/Seo';
 import styles from './Layout.module.scss';
-import { ITableOfContents } from './TableOfContents';
 
 interface ILayout {
   children: React.ReactNode;
   className?: string;
   description?: string;
   keywords?: string[];
-  tableOfContents?: ITableOfContents;
+  tableOfContents?: any;
   title: string;
 }
 

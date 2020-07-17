@@ -5,16 +5,15 @@ import { OpenApiBuilder,
 import PropTypes from 'prop-types';
 import React from 'react';
 
-import Layout from '../components/Layout';
-import Schema from '../components/Schema';
-import { ISchema } from '../components/Schema/Schema';
-import { ITableOfContents } from '../components/TableOfContents';
+import Layout from '../../components/Layout';
+import Schema from './Schema';
+import { ISchema } from './Schema/Schema';
 
 interface IApiReference {
   description: string;
   keywords: string[];
   specJson: unknown;
-  tableOfContents: ITableOfContents;
+  tableOfContents: any;
   title: string;
   type?: 'geoip' | 'minfraud';
 }

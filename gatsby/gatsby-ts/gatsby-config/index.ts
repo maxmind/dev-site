@@ -55,7 +55,7 @@ export default {
     {
       options: {
         defaultLayouts: {
-          content: require.resolve(`${GATSBY_ROOT}src/templates/Page.tsx`),
+          content: require.resolve(`${GATSBY_ROOT}src/templates/Page`),
         },
         extensions: [
           '.mdx',
