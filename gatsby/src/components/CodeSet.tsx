@@ -1,11 +1,11 @@
 import PropTypes from 'prop-types';
 import React from 'react';
 
-import Pre from '../components/mdx/Pre';
 import useIsClient from '../hooks/useIsClient';
 import { languages } from '../languages';
 import { Store } from '../store';
 import styles from './CodeSet.module.scss';
+import Pre from './Mdx/Pre';
 
 const getHumanReadable = (className: string): string  => languages
   .find(language => `language-${language.id}` === className)?.label

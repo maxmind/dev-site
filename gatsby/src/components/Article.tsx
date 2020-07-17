@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import React from 'react';
 
 import styles from './Article.module.scss';
-import H1 from './mdx/H1';
+import H1 from './Mdx/H1';
 import TableOfContents, { ITableOfContents } from './TableOfContents';
 
 interface IArticle {

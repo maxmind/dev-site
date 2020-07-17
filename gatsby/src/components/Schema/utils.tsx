@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactMarkdown from 'react-markdown';
 
-import { a } from '../mdx';
+import { a } from '../Mdx';
 
 const renderers = {
   link: a,

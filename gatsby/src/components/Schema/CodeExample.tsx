@@ -3,7 +3,7 @@ import { SchemaObject } from 'openapi3-ts';
 import PropTypes from 'prop-types';
 import React from 'react';
 
-import Pre from '../mdx/Pre';
+import Pre from '../Mdx/Pre';
 import styles from './CodeExample.module.scss';
 
 interface ICodeExample {

@@ -2,7 +2,7 @@ import { MDXProvider } from '@mdx-js/react';
 import { GatsbySSR, WrapRootElementNodeArgs } from 'gatsby';
 import React from 'react';
 
-import * as components from '../../src/components/mdx';
+import * as components from '../../src/components/Mdx';
 import { StoreProvider } from '../../src/store';
 
 export const wrapRootElement: GatsbySSR['wrapRootElement'] = (
