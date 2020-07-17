@@ -1,0 +1,34 @@
+@import '../../styles/variables';
+@import '../../styles/global';
+
+$sidebar-width: 260px;
+$transition: all 0.15s ease-out;
+
+.main {
+  background: $mm-background;
+  display: grid;
+  grid-template-areas: 'sidebar article';
+  grid-template-columns: $sidebar-width calc(100vw - #{$sidebar-width});
+  transition: $transition;
+}
+
+.content {
+  grid-area: article-start / sidebar-start / article-end / article-end;
+  transition: $transition;
+}
+
+.sidebar--hidden [class*='Sidebar-module--sidebar--'] {
+  transform: translate3d(-100%, 0, 0);
+}
+
+@include breakpoint('lg') {
+  $sidebar-width: 350px;
+
+  .main {
+    grid-template-columns: $sidebar-width calc(100vw - #{$sidebar-width});
+  }
+
+  .content {
+    grid-area: article;
+  }
+}

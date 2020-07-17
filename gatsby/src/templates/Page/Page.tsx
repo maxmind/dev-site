@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import React from 'react';
 
-import Layout from '../../components/Layout';
+import Layout from '../../components/Layout/Layout';
 import H1 from '../../components/Mdx/H1';
 import styles from './Page.module.scss';
 import TableOfContents, { ITableOfContents } from './TableOfContents';

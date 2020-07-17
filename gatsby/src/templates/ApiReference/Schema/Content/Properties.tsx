@@ -24,15 +24,6 @@ const NameRegex = new RegExp('\\.', 'g');
 
 const Row: React.FC<IRow> = (props) => {
   const { handleHightlightLines, lineNumbers } = props;
-  // const delayedHighlightLines = React.useCallback(
-  //   debounce((lines: string) =>  {
-  //     handleHightlightLines(`${lines}`);
-  //     console.log(`${lines}`);
-  //   }, 0),
-  //   [
-  //     lineNumbers,
-  //   ]
-  // );
   const location = useLocation();
   const id = [
     props.schemaName.replace(NameRegex, '_'),
@@ -89,8 +80,6 @@ const Row: React.FC<IRow> = (props) => {
           {renderMarkdownElement(props.description)}
         </div>
       )}
-
-      {/* {props.lineNumbers && props.lineNumbers} */}
     </div>
   );
 };
@@ -99,10 +88,10 @@ Row.propTypes = {
   description: PropTypes.string,
   format: PropTypes.string,
   handleHightlightLines: PropTypes.any.isRequired,
-  lineNumbers: PropTypes.string,
+  lineNumbers: PropTypes.any,
   name: PropTypes.string.isRequired,
   schemaName: PropTypes.string.isRequired,
-  type: PropTypes.string,
+  type: PropTypes.any,
 };
 
 const renderObjectRows = (

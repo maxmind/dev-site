@@ -1,0 +1,59 @@
+@import '../../styles/variables';
+
+.sidebar {
+  background: #f5f6f7;
+  border-right: 1px solid $mm-border;
+  grid-area: sidebar;
+  position: relative;
+  transition: all 0.15s ease-out;
+  z-index: 9;
+}
+
+.nav {
+  position: sticky;
+  top: calc(var(--page-header-height) + #{$mm-spacing});
+}
+
+.navItem {
+  border-bottom: 1px solid $mm-border;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  margin-bottom: $mm-spacing / 4;
+}
+
+.navItemLink {
+  background: #fff;
+  border-top: 1px solid #eee;
+  color: #666;
+  display: inline-block;
+  font-family: $mm-font-display;
+  font-size: 14px;
+  font-weight: 500;
+  height: 60px;
+  line-height: 60px;
+  padding: 0 $mm-spacing / 2;
+  text-decoration: none;
+  transition: all 0.25s ease-out;
+  width: 100%;
+
+  &:hover {
+    background: rgba(255, 255, 255, 0.5);
+    padding: 0 $mm-spacing / 2 0 $mm-spacing;
+  }
+}
+
+@include breakpoint('lg') {
+  .sidebar {
+    grid-area: sidebar;
+    transform: initial !important;
+    transition: none;
+  }
+
+  .navItemLink {
+    font-size: 16px;
+    padding: 0 $mm-spacing;
+
+    &:hover {
+      padding-left: $mm-spacing * 1.25;
+    }
+  }
+}

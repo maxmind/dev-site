@@ -5,7 +5,7 @@ import { OpenApiBuilder,
 import PropTypes from 'prop-types';
 import React from 'react';
 
-import Layout from '../../components/Layout';
+import Layout from '../../components/Layout/Layout';
 import Schema from './Schema';
 import { ISchema } from './Schema/Schema';
 
