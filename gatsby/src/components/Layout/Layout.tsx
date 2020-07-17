@@ -14,10 +14,10 @@ import classNames from 'classnames';
 import PropTypes from 'prop-types';
 import React, { useState } from 'react';
 
-import SEO from '../Seo';
 import Footer from './Footer';
 import Header from './Header';
 import styles from './Layout.module.scss';
+import SEO from './Seo';
 import Sidebar from './Sidebar';
 
 interface ILayout {
