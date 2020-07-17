@@ -2,11 +2,11 @@
 
 .ul {
   list-style-type: disc;
-  margin: $mm-spacing;
-  padding-left: $mm-spacing / 2;
+  margin: var(--mm-spacing);
+  padding-left: calc(var(--mm-spacing) / 2);
   @include max-width;
 }
 
 .ul .ul {
-  margin: $mm-spacing / 4 0;
+  margin: calc(var(--mm-spacing) / 4) 0;
 }

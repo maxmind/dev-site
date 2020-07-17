@@ -30,18 +30,6 @@ $containers: (
   padding: 0;
 }
 
-$mm-font-display: 'montserrat';
-
-$mm-background: #fff;
-$mm-border: #ddd;
-$mm-color: #333;
-$mm-dark-blue: #425968;
-$mm-heading: #111;
-$mm-light-blue: #00aeef;
-$mm-spacing: 40px;
-$mm-color-primary: rgba(57, 61, 100, 0.9);
-$mm-color-light-grey: rgba(57, 61, 100, 0.05);
-
 @mixin max-width {
   @include breakpoint('xl') {
     margin-left: auto;
@@ -57,26 +45,26 @@ $mm-color-light-grey: rgba(57, 61, 100, 0.05);
 }
 
 @mixin heading {
-  color: $mm-color-primary;
-  font-family: $mm-font-display;
+  color: var(--mm-color-primary-text);
+  font-family: var(--mm-font-stack-display);
   font-weight: 500;
   line-height: 1.2em;
-  margin: ($mm-spacing * 2) $mm-spacing ($mm-spacing / 2);
+  margin: calc(var(--mm-spacing) * 2) var(--mm-spacing) calc(var(--mm-spacing) / 2);
   position: relative;
-  scroll-margin-top: calc(var(--page-header-height) + #{$mm-spacing});
+  scroll-margin-top: calc(var(--page-header-height) + var(--mm-spacing));
 
   & + p {
-    margin-top: $mm-spacing / 2;
+    margin-top: calc(var(--mm-spacing) / 2);
   }
 
   .link {
-    color: $mm-color-primary;
+    color: var(--mm-color-primary-text);
     text-decoration: none;
   }
 
   .icon {
     font-size: 16px;
-    left: $mm-spacing / 4 * -1;
+    left: calc(var(--mm-spacing) / 4 * -1);
     margin-bottom: 0 !important;
     opacity: 0.25;
     position: absolute;
@@ -99,13 +87,13 @@ $mm-color-light-grey: rgba(57, 61, 100, 0.05);
   scrollbar-width: thin;
 
   &::-webkit-scrollbar {
-    height: 6px;
-    width: 6px;
+    height: var(--mm-border-radius);
+    width: var(--mm-border-radius);
   }
 
   &::-webkit-scrollbar-thumb {
     background-color: $scroll-color;
-    border-radius: 6px;
+    border-radius: var(--mm-border-radius);
   }
 
   &::-webkit-scrollbar-corner {
@@ -113,23 +101,22 @@ $mm-color-light-grey: rgba(57, 61, 100, 0.05);
   }
 }
 
-$shade-1: darken($mm-light-blue, 2);
-$shade-2: darken($mm-light-blue, 4);
-$shade-3: $mm-light-blue;
-
 @mixin pattern {
+  --pattern-shade-1: #00a7e5;
+  --pattern-shade-2: #009fdb;
+  --pattern-shade-3: var(--mm-color-logo-blue-light);
   background-attachment: fixed;
-  background-color: $shade-1;
-  background-image: linear-gradient(30deg, $shade-2 12%, transparent 12.5%, transparent 87%, $shade-2 87.5%, $shade-2),
-    linear-gradient(150deg, $shade-2 12%, transparent 12.5%, transparent 87%, $shade-2 87.5%, $shade-2),
-    linear-gradient(30deg, $shade-2 12%, transparent 12.5%, transparent 87%, $shade-2 87.5%, $shade-2),
-    linear-gradient(150deg, $shade-2 12%, transparent 12.5%, transparent 87%, $shade-2 87.5%, $shade-2),
-    linear-gradient(60deg, $shade-3 25%, transparent 25.5%, transparent 75%, $shade-3 75%, $shade-3),
-    linear-gradient(60deg, $shade-3 25%, transparent 25.5%, transparent 75%, $shade-3 75%, $shade-3);
+  background-color: var(--pattern-shade-1);
+  background-image: linear-gradient(30deg, var(--pattern-shade-2) 12%, transparent 12.5%, transparent 87%, var(--pattern-shade-2) 87.5%, var(--pattern-shade-2)),
+    linear-gradient(150deg, var(--pattern-shade-2) 12%, transparent 12.5%, transparent 87%, var(--pattern-shade-2) 87.5%, var(--pattern-shade-2)),
+    linear-gradient(30deg, var(--pattern-shade-2) 12%, transparent 12.5%, transparent 87%, var(--pattern-shade-2) 87.5%, var(--pattern-shade-2)),
+    linear-gradient(150deg, var(--pattern-shade-2) 12%, transparent 12.5%, transparent 87%, var(--pattern-shade-2) 87.5%, var(--pattern-shade-2)),
+    linear-gradient(60deg, var(--pattern-shade-3) 25%, transparent 25.5%, transparent 75%, var(--pattern-shade-3) 75%, var(--pattern-shade-3)),
+    linear-gradient(60deg, var(--pattern-shade-3) 25%, transparent 25.5%, transparent 75%, var(--pattern-shade-3) 75%, var(--pattern-shade-3));
   background-position: 0 0, 0 0, 40px 70px, 40px 70px, 0 0, 40px 70px;
   background-repeat: round;
   background-size: 80px 140px;
-  padding: $mm-spacing;
+  padding: var(--mm-spacing);
   position: relative;
 
   &::before {

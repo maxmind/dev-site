@@ -2,7 +2,7 @@
 
 .row {
   border: 2px solid transparent;
-  padding: $mm-spacing / 2;
+  padding: calc(var(--mm-spacing) / 2);
   position: relative;
   scroll-margin-top: 40vh;
 }
@@ -12,13 +12,13 @@
   bottom: -2px;
   content: ' ';
   height: 1px;
-  left: $mm-spacing / 2;
+  left: calc(var(--mm-spacing) / 2);
   position: absolute;
-  width: calc(100% - #{$mm-spacing});
+  width: calc(100% - var(--mm-spacing));
 }
 
 .row:last-of-type {
-  border-radius: 0 0 6px 6px;
+  border-radius: 0 0 var(--mm-border-radius) var(--mm-border-radius);
 }
 
 .row:last-of-type::after {
@@ -26,12 +26,12 @@
 }
 
 .row:hover {
-  background: lighten($mm-light-blue, 52);
+  background: #f9fdff;
 }
 
 .row--targeted {
-  background: lighten($mm-light-blue, 50);
-  border: 2px solid $mm-light-blue;
+  background: #effbff;
+  border: 2px solid var(--mm-color-logo-blue-light);
   z-index: 2;
 }
 
@@ -40,19 +40,19 @@
 }
 
 .name {
-  color: $mm-color-primary;
-  font-family: 'Source Code Pro', monospace;
+  color: var(--mm-color-primary-text);
+  font-family: var(--mm-font-stack-monospace);
   font-weight: 500;
 }
 
 .type {
-  margin-left: $mm-spacing / 4;
+  margin-left: calc(var(--mm-spacing) / 4);
   vertical-align: middle;
 }
 
 .description {
-  color: $mm-color-primary;
+  color: var(--mm-color-primary-text);
   font-size: 14px;
   line-height: 21px;
-  margin-top: $mm-spacing / 4;
+  margin-top: calc(var(--mm-spacing) / 4);
 }

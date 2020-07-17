@@ -3,7 +3,7 @@
 .h1 {
   @include heading;
   font-size: 32px;
-  margin: $mm-spacing;
+  margin: var(--mm-spacing);
   margin-top: 0;
-  padding-top: $mm-spacing;
+  padding-top: var(--mm-spacing);
 }

@@ -2,7 +2,7 @@
 
 .heading {
   display: inline-block;
-  font-family: $mm-font-display;
+  font-family: var(--mm-font-stack-display);
   font-size: 20px;
   font-weight: 500;
   width: 100%;
@@ -11,7 +11,7 @@
 .list {
   list-style-position: outside;
   list-style-type: upper-roman;
-  margin: $mm-spacing / 2 0 0;
+  margin: calc(var(--mm-spacing) / 2) 0 0;
 }
 
 .list * {
@@ -24,14 +24,14 @@
 
 .list .list {
   list-style-type: decimal;
-  margin-left: $mm-spacing / 2;
+  margin-left: calc(var(--mm-spacing) / 2);
 }
 
 .list-item {
   color: #aaa;
   font-size: 16px;
   line-height: 1.2em;
-  margin-bottom: $mm-spacing * 0.75;
+  margin-bottom: calc(var(--mm-spacing) * 0.75);
   position: relative;
 }
 
@@ -41,63 +41,62 @@
 
 .list-item .list-item {
   font-size: 14px;
-  margin-bottom: $mm-spacing / 2;
+  margin-bottom: calc(var(--mm-spacing) / 2);
 }
 
 .list-item .list-item:last-child {
   margin-bottom: 0;
 }
 
-$psuedo-padding: 10px;
-
 .list-item a {
+  --psuedo-padding: 10px;
   color: rgba(57, 61, 100, 0.9);
   display: inline-block;
   position: relative;
   text-decoration: none;
-  width: calc(100% - #{$mm-spacing});
+  width: calc(100% - var(--mm-spacing));
 
   &::before,
   &::after {
     content: ' ';
     display: block;
     height: 100%;
-    padding: $psuedo-padding 0;
+    padding: var(--psuedo-padding) 0;
     position: absolute;
     right: 0;
     top: 0;
-    transform: translate(#{$mm-spacing * 2}, #{$psuedo-padding * -1});
-    width: calc(100% + #{$mm-spacing * 2});
+    transform: translate(calc(var(--mm-spacing) * 2), calc(var(--psuedo-padding) * -1));
+    width: calc(100% + var(--mm-spacing) * 2);
     z-index: -1;
   }
 
   &::before {
     left: 0;
     right: initial;
-    transform: translate(#{$mm-spacing * -1}, #{$psuedo-padding * -1});
+    transform: translate(calc(var(--mm-spacing) * -1), calc(var(--psuedo-padding) * -1));
   }
 
   &:hover::after,
   &:hover::before {
-    background: #f5f6f7;
+    background: var(--mm-color-sidebar);
   }
 }
 
 .list-item .list-item a::before {
-  transform: translate(#{$mm-spacing * -1.5}, #{$psuedo-padding * -1});
+  transform: translate(calc(var(--mm-spacing) * -1.5), calc(var(--psuedo-padding) * -1));
 }
 
 .list-item.item--active > a {
-  color: $mm-light-blue;
+  color: var(--mm-color-logo-blue-light);
   font-weight: 700;
 
   &::before {
-    border-left: 5px solid $mm-light-blue;
+    border-left: 5px solid var(--mm-color-logo-blue-light);
   }
 
   &::before,
   &::after {
-    background-color: darken(#f5f6f7, 2);
+    background-color: #eff1f2;
   }
 }
 

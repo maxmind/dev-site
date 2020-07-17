@@ -1,28 +1,17 @@
 @import './reset';
 
-html {
-  scroll-behavior: smooth;
-}
-
-body {
-  color: $mm-color-primary;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Ubuntu, sans-serif;
-  font-size: 1.1rem;
-  line-height: 1.3em;
-  position: relative;
-}
-
-* {
-  box-sizing: border-box;
-}
-
-*:focus {
-  outline-color: $mm-light-blue;
-  outline-style: solid;
-  outline-width: 2px;
-}
-
 :root {
+  --mm-color-background: #fff;
+  --mm-color-sidebar: #f5f6f7;
+  --mm-color-border: #ddd;
+  --mm-color-logo-blue-light: #00aeef;
+  --mm-color-primary-text: rgba(57, 61, 100, 0.9);
+  --mm-border-radius: 6px;
+  --mm-font-stack-default: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Ubuntu, sans-serif;
+  --mm-font-stack-display: 'montserrat', var(--mm-font-stack-default);
+  --mm-font-stack-monospace: 'Source Code Pro', monospace;
+  --mm-layout-sidebar-width: 260px;
+  --mm-spacing: 40px;
   --page-header-height: 100px;
   --page-type-color: rgba(255, 255, 255, 0.3);
 }
@@ -35,4 +24,26 @@ body {
 // Not sure why .page-type--geoip does not work here
 [class='page-type--geoip'] {
   --page-type-color: rgba(0, 255, 102, 0.5);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  color: var(--mm-color-primary-text);
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Ubuntu, sans-serif;
+  font-size: 1.1rem;
+  line-height: 1.3em;
+  position: relative;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+*:focus {
+  outline-color: --mm-color-logo-blue-light;
+  outline-style: solid;
+  outline-width: 2px;
 }

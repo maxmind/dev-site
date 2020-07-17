@@ -1,11 +1,9 @@
 @import '../../styles/variables';
 
 .wrapper {
-  // background: lighten(#f5f6f7 , 1);
-  // border: 5px solid lighten($mm-color-primary, 50);
   border-left: 0;
   border-right: 0;
-  padding: $mm-spacing;
+  padding: var(--mm-spacing);
   position: relative;
 }
 
@@ -14,7 +12,7 @@
   z-index: 3;
 
   p {
-    font-family: $mm-font-display;
+    font-family: var(--mm-font-stack-display);
     font-size: 20px;
     font-style: italic;
     font-weight: 500;

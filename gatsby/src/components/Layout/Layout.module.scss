@@ -1,14 +1,13 @@
 @import '../../styles/variables';
-@import '../../styles/global';
+@import '../../styles/global.scss';
 
-$sidebar-width: 260px;
 $transition: all 0.15s ease-out;
 
 .main {
-  background: $mm-background;
+  background: var(--mm-color-background);
   display: grid;
   grid-template-areas: 'sidebar article';
-  grid-template-columns: $sidebar-width calc(100vw - #{$sidebar-width});
+  grid-template-columns: var(--mm-layout-sidebar-width) calc(100vw - var(--mm-layout-sidebar-width));
   transition: $transition;
 }
 
@@ -22,10 +21,12 @@ $transition: all 0.15s ease-out;
 }
 
 @include breakpoint('lg') {
-  $sidebar-width: 350px;
+  :root {
+    --mm-layout-sidebar-width: 350px;
+  }
 
   .main {
-    grid-template-columns: $sidebar-width calc(100vw - #{$sidebar-width});
+    grid-template-columns: var(--mm-layout-sidebar-width) calc(100vw - var(--mm-layout-sidebar-width));
   }
 
   .content {

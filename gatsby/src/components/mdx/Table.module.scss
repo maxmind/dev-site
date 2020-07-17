@@ -2,14 +2,14 @@
 
 .wrapper {
   display: flex;
-  padding: $mm-spacing;
+  padding: var(--mm-spacing);
 }
 
 .container {
   background-color: rgba(0, 0, 0, 0.6);
-  background-color: $mm-color-primary;
+  background-color: var(--mm-color-primary-text);
   border-left: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 6px;
+  border-radius: var(--mm-border-radius);
   border-right: 1px solid rgba(255, 255, 255, 0.1);
   border-top: 1px solid rgba(255, 255, 255, 0.3);
   color: #ccc;

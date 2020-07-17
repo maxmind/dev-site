@@ -1,5 +1,5 @@
 @import '../../styles/variables';
 
 .a {
-  color: $mm-light-blue;
+  color: var(--mm-color-logo-blue-light);
 }

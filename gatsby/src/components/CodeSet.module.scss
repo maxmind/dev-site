@@ -1,10 +1,8 @@
 @import '../styles/variables';
 
-$radius: 6px;
-
 .nav {
   background-color: #58577e;
-  border-radius: $radius $radius 0 0;
+  border-radius: var(--mm-border-radius) var(--mm-border-radius) 0 0;
   border-top: 1px solid rgba(255, 255, 255, 0.3);
   position: relative;
   z-index: 2;
@@ -12,7 +10,7 @@ $radius: 6px;
 
 // TODO - target class names instead of elements
 .nav + div {
-  border-radius: 0 0 6px 6px;
+  border-radius: 0 0 var(--mm-border-radius) var(--mm-border-radius);
 }
 
 .button {
@@ -26,7 +24,7 @@ $radius: 6px;
   font-weight: 500;
   height: 100%;
   letter-spacing: 1px;
-  padding: $mm-spacing / 4;
+  padding: calc(var(--mm-spacing) / 4);
 }
 
 .button:hover {
@@ -35,7 +33,7 @@ $radius: 6px;
 }
 
 .button:first-of-type {
-  border-radius: $radius 0 0 0;
+  border-radius: var(--mm-border-radius) 0 0 0;
 }
 
 .button.active {

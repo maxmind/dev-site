@@ -1,7 +1,5 @@
 @import '../styles/variables';
 
-$heading-height: 50px;
-
 .schema__example {
   height: 0;
   overflow: hidden;
@@ -13,7 +11,7 @@ $heading-height: 50px;
   height: auto;
   margin: 0 !important;
   overflow: initial;
-  padding: $mm-spacing;
+  padding: var(--mm-spacing);
 }
 
 @include breakpoint('xxl') {
@@ -22,7 +20,7 @@ $heading-height: 50px;
     height: auto;
     margin: 0 !important;
     overflow: initial;
-    padding-top: $mm-spacing;
+    padding-top: var(--mm-spacing);
   }
 
   .schema__example-json {

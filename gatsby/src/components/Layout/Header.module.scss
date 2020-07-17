@@ -1,8 +1,8 @@
 @import '../../styles/variables';
 
 .header {
-  background: $mm-background;
-  border-bottom: 1px solid $mm-border;
+  background: var(--mm-color-background);
+  border-bottom: 1px solid var(--mm-color-border);
   height: var(--page-header-height);
   position: sticky;
   top: 0;
@@ -39,8 +39,8 @@
 }
 
 .toggle {
-  background: $mm-background;
-  border: 1px solid $mm-border;
+  background: var(--mm-color-background);
+  border: 1px solid var(--mm-color-border);
   border-radius: 0;
   color: #333;
   height: 40px;

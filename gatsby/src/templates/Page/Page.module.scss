@@ -1,8 +1,8 @@
 @import '../../styles/variables';
 
 .header {
-  background: #fff;
-  padding: $mm-spacing;
+  background: var(--mm-color-background);
+  padding: var(--mm-spacing);
   z-index: 5;
 }
 
@@ -14,14 +14,14 @@
 
 .meta {
   font-size: 14px;
-  margin-top: $mm-spacing / 2;
+  margin-top: var(--mm-spacing) / 2;
   @include max-width;
 }
 
 .aside {
-  background: #f5f6f7;
-  margin: $mm-spacing;
-  padding: $mm-spacing;
+  background: var(--mm-color-sidebar);
+  margin: var(--mm-spacing);
+  padding: var(--mm-spacing);
   position: relative;
 
   &::before,
@@ -100,9 +100,9 @@
   }
 
   .aside {
-    background: #f5f6f7;
+    background: var(--mm-color-sidebar);
     border-bottom: 0;
-    border-left: 1px solid $mm-border;
+    border-left: 1px solid var(--mm-color-border);
     grid-area: aside;
     margin: 0;
     min-width: auto;
@@ -116,9 +116,9 @@
   }
 
   .tableOfContents {
-    background-color: #fff;
-    border-bottom: 1px solid $mm-border;
-    padding: $mm-spacing;
+    background: var(--mm-color-background);
+    border-bottom: 1px solid var(--mm-color-border);
+    padding: var(--mm-spacing);
     position: sticky;
     top: calc(var(--page-header-height));
     width: 100%;
@@ -131,8 +131,6 @@
 }
 
 @include breakpoint('xxxl') {
-  $content-width: 760px;
-
   .heading {
     @include max-width;
   }
