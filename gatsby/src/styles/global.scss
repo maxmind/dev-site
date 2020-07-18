@@ -1,5 +1,11 @@
 @import './reset';
 
+:global {
+  .fa-icon {
+    vertical-align: middle;
+  }
+}
+
 :root {
   --mm-color-background: #fff;
   --mm-color-sidebar: #f5f6f7;
