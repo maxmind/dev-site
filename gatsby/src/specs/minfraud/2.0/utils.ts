@@ -4,23 +4,24 @@ import OpenApiParser from '@apidevtools/swagger-parser';
 import cloneDeep from 'lodash/cloneDeep';
 import merge from 'lodash/merge';
 import { OpenAPI } from 'openapi-types';
-import { addExtension,
+import {
+  addExtension,
   isSchemaObject,
   OpenAPIObject,
-  SchemaObject } from 'openapi3-ts';
+  SchemaObject,
+} from 'openapi3-ts';
 
-const normalizeArray = (arr: unknown): unknown[] => Array.isArray(arr) ? arr : [
-  arr,
-];
+const normalizeArray = (subject: unknown): unknown[] => Array.isArray(subject)
+  ? subject
+  : [
+    subject,
+  ];
 
-const objectify = (thing: unknown): Record<any, any> => {
-  if (!(!!thing && typeof thing === 'object')) {
-    return {
-    };
-  }
-
-  return thing as Record<any, any>;
-};
+const normalizeObject = (subject: unknown): Record<any, any> => (
+  subject && typeof subject === 'object'
+)
+  ? subject as Record<any, any>
+  : {};
 
 const primitives = {
   /* eslint-disable @typescript-eslint/camelcase */
@@ -41,9 +42,8 @@ const primitives = {
   /* eslint-enable @typescript-eslint/camelcase */
 };
 
-const primitive = (schema: SchemaObject): unknown => {
-  schema = objectify(schema);
-  const { type, format } = schema;
+const getPrimative = (schema: SchemaObject): unknown => {
+  const { type, format } = normalizeObject(schema);
 
   const fn = (primitives as any)[`${type}_${format}`]
     || (primitives as any)[(type as string)];
@@ -55,113 +55,56 @@ const primitive = (schema: SchemaObject): unknown => {
   return 'Unknown Type: ' + schema.type;
 };
 
-const deeplyStripKey = (
-  input: any,
-  keyToStrip: string,
-  predicate: (
-    a: any,
-    b: any
-  ) => boolean = (): boolean => true
-): Record<any, any> => {
-  if (
-    typeof input !== 'object'
-      || Array.isArray(input)
-      || input === null
-      || !keyToStrip
-  ) {
-    return input;
-  }
-
-  const obj = Object.assign({
-  }, input);
-
-  Object.keys(obj).forEach(k => {
-    if (k === keyToStrip && predicate(obj[k], k)) {
-      delete obj[k];
-      return;
-    }
-    obj[k] = deeplyStripKey(obj[k], keyToStrip, predicate);
-  });
-
-  return obj;
-};
-
-const sampleFromSchema = (schema: SchemaObject, config: any = {
-}): any => {
+const sampleFromSchema = (schema: SchemaObject, config: any = {}): any => {
   let { type } = schema;
-  const {
-    allOf,
-    additionalProperties,
-    example,
-    items,
-    properties,
-  } = schema;
+  const { allOf, items, properties } = schema;
   const { includeReadOnly, includeWriteOnly } = config;
 
-  if (example !== undefined) {
-    return deeplyStripKey(example, '$$ref', (val: unknown) => {
-      // do a couple of quick sanity tests to ensure the value
-      // looks like a $$ref that swagger-client generates.
-      return typeof val === 'string' && val.indexOf('#') > -1;
-    });
-  }
-
   if (allOf) {
-    const foo = {
-    };
-    allOf.map((item: any) => merge(foo, item));
-    return sampleFromSchema(foo, config);
+    const composedSchema = {};
+    allOf.map((item: any) => merge(composedSchema, item));
+    return sampleFromSchema(composedSchema, config);
   }
 
-  if (!type) {
-    if (properties) {
-      type = 'object';
-    } else if (items) {
-      type = 'array';
-    } else {
-      return;
-    }
+  if (properties) {
+    type = 'object';
+  }
+
+  if (items) {
+    type = 'array';
+  }
+
+  if (!type || type === 'file') {
+    return;
   }
 
   if (type === 'object') {
-    const props = objectify(properties);
-    const obj = {
-    };
+    const props = normalizeObject(properties);
+    const obj: any = {};
     for (const name in props) {
-      if ( props[name] && props[name].deprecated ) {
+      if (
+        props[name] && (
+          props[name].deprecated ||
+          (props[name].readOnly && !includeReadOnly) ||
+          (props[name].writeOnly && !includeWriteOnly)
+        )
+      ) {
         continue;
       }
-      if ( props[name] && props[name].readOnly && !includeReadOnly ) {
-        continue;
-      }
-      if ( props[name] && props[name].writeOnly && !includeWriteOnly ) {
-        continue;
-      }
-      (obj as any)[name] = sampleFromSchema(props[name], config);
+
+      obj[name] = sampleFromSchema(props[name], config);
     }
 
-    if ( additionalProperties === true ) {
-      (obj as any).additionalProp1 = {
-      };
-    } else if ( additionalProperties ) {
-      const additionalProps = objectify(additionalProperties);
-      const additionalPropVal = sampleFromSchema(additionalProps, config);
-
-      for (let i = 1; i < 4; i++) {
-        (obj as any)['additionalProp' + i] = additionalPropVal;
-      }
-    }
     return obj;
   }
 
   if (type === 'array' && items && isSchemaObject(items)) {
     if (Array.isArray(items.anyOf)) {
-      return items.anyOf.map((i: any)  => sampleFromSchema(i, config));
+      return items.anyOf.map((item: any)  => sampleFromSchema(item, config));
     }
 
     if (Array.isArray(items.oneOf)) {
       return sampleFromSchema(items.oneOf[0], config);
-      // return items.oneOf.map((i: any) => sampleFromSchema(i, config));
     }
 
     return [
@@ -175,11 +118,7 @@ const sampleFromSchema = (schema: SchemaObject, config: any = {
       : normalizeArray(schema['enum'])[0];
   }
 
-  if (type === 'file') {
-    return;
-  }
-
-  return primitive(schema);
+  return getPrimative(schema);
 };
 
 const sortKeys = (x: any): any => {
@@ -197,11 +136,11 @@ const sortKeys = (x: any): any => {
       // eslint-disable-next-line security/detect-object-injection
       [k]: sortKeys(x[k]),
     }),
-    {
-    }
+    {}
   );
 };
 
+// TODO: Add test for this
 export const addCompiledExamples = (
   Spec: OpenAPIObject
 ): Promise<OpenAPI.Document> => OpenApiParser.validate(cloneDeep(Spec) as OpenAPI.Document)
@@ -220,10 +159,7 @@ export const addCompiledExamples = (
         if (Spec.components.schemas[name]) {
           Object.values(Spec.components.schemas[name]);
         }
-
       }
-
-
     });
 
     return sortKeys(Spec);
@@ -234,82 +170,74 @@ export const addCompiledExamples = (
       schema,
     ]) => {
       const properties = (schema as SchemaObject).properties;
-      if (properties) {
-        Object.keys(properties).map(property => {
-          const compiledExample = spec.components.schemas[name]['x-compiled-example'][property];
-          const exampleProperty = JSON.stringify(
-            compiledExample,
-            null,
-            2
-          );
 
-          if (!exampleProperty) {
-            return;
-          }
-
-          let ExampleRegex = RegExp(
-            `(?:"${property}": )(.*?)(?:\\n)`,
-            'gm'
-          );
-
-          if (typeof compiledExample === 'object') {
-            if (Array.isArray(compiledExample)) {
-              // eslint-disable-next-line security/detect-non-literal-regexp
-              ExampleRegex = new RegExp(
-                `(?:"${property}": \\[)((.|\\s)*?)(?:\\])`,
-                'gm'
-              );
-            } else {
-              // eslint-disable-next-line security/detect-non-literal-regexp
-              ExampleRegex = new RegExp(
-                `(?:"${property}": {)((.|\\s)*?)(?:})`,
-                'gm'
-              );
-            }
-          }
-
-          // eslint-disable-next-line security/detect-non-literal-regexp
-          // const ExampleRegex = new RegExp(
-          //   `"${property}":\\s${exampleRegex}`,
-          //   'gm'
-          // );
-
-          // addExtension(
-          //   spec.components.schemas[name].properties[property],
-          //   'x-regex',
-          //   `"${property}":\\s${escapeRegExp(exampleRegex)}`
-          // );
-
-          const example = JSON.stringify(
-            spec.components.schemas[name]['x-compiled-example'],
-            null,
-            2,
-          );
-
-          const index = example.search(ExampleRegex);
-
-          if (index <= 0) {
-            return;
-          }
-
-          const startingLineNumber = example
-            .substring(0, index)
-            .split('\n')
-            .length;
-
-          const endingLineNumber = (exampleProperty.split('\n')
-            .length) + startingLineNumber - 1;
-
-          addExtension(
-            spec.components.schemas[name].properties[property],
-            'x-line-numbers',
-            startingLineNumber === endingLineNumber
-              ? startingLineNumber
-              : `${startingLineNumber}-${endingLineNumber}`
-          );
-        });
+      if (!properties) {
+        return;
       }
+
+      Object.keys(properties).map(property => {
+        const compiledExample = spec.components.schemas[name]['x-compiled-example'][property];
+        const exampleProperty = JSON.stringify(
+          compiledExample,
+          null,
+          2
+        );
+
+        if (!exampleProperty) {
+          return;
+        }
+
+        let ExampleRegex = RegExp(
+          `(?:"${property}": )(.*?)(?:\\n)`,
+          'gm'
+        );
+
+        if (typeof compiledExample === 'object') {
+          if (Array.isArray(compiledExample)) {
+            // eslint-disable-next-line security/detect-non-literal-regexp
+            ExampleRegex = new RegExp(
+              `(?:"${property}": \\[)((.|\\s)*?)(?:\\])`,
+              'gm'
+            );
+          } else {
+            // eslint-disable-next-line security/detect-non-literal-regexp
+            ExampleRegex = new RegExp(
+              `(?:"${property}": {)((.|\\s)*?)(?:})`,
+              'gm'
+            );
+          }
+        }
+
+        const example = JSON.stringify(
+          spec.components.schemas[name]['x-compiled-example'],
+          null,
+          2,
+        );
+
+        const index = example.search(ExampleRegex);
+
+        if (index <= 0) {
+          return;
+        }
+
+        const startingLineNumber = example
+          .substring(0, index)
+          .split('\n')
+          .length;
+
+        const endingLineNumber = (exampleProperty.split('\n')
+          .length) + startingLineNumber - 1;
+
+        addExtension(
+          spec.components.schemas[name].properties[property],
+          'x-line-numbers',
+          startingLineNumber === endingLineNumber
+            ? startingLineNumber
+            : `${startingLineNumber}-${endingLineNumber}`
+        );
+      });
     });
+
     return spec;
   });
 
