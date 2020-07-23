@@ -14,6 +14,10 @@
   padding: var(--mm-spacing);
 }
 
+.schema__example-json {
+  margin: 0;
+}
+
 @include breakpoint('xxl') {
   .schema__example {
     grid-area: schema-example;
