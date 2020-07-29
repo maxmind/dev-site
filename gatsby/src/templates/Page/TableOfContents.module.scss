@@ -1,14 +1,16 @@
 @import '../styles/variables';
 
 .heading {
+  color: var(--mm-color-display-text);
   display: inline-block;
   font-family: var(--mm-font-stack-display);
-  font-size: 20px;
-  font-weight: 500;
+  font-size: 16px;
+  font-weight: 700;
   width: 100%;
 }
 
 .list {
+  font-family: var(--mm-font-stack-display);
   list-style-position: outside;
   list-style-type: upper-roman;
   margin: calc(var(--mm-spacing) / 2) 0 0;
@@ -29,7 +31,7 @@
 
 .list-item {
   color: #aaa;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 1.2em;
   margin-bottom: calc(var(--mm-spacing) * 0.75);
   position: relative;
@@ -50,8 +52,9 @@
 
 .list-item a {
   --psuedo-padding: 10px;
-  color: rgba(57, 61, 100, 0.9);
+  color: #555;
   display: inline-block;
+  font-weight: 500;
   position: relative;
   text-decoration: none;
   width: calc(100% - var(--mm-spacing));
@@ -76,9 +79,8 @@
     transform: translate(calc(var(--mm-spacing) * -1), calc(var(--psuedo-padding) * -1));
   }
 
-  &:hover::after,
-  &:hover::before {
-    background: var(--mm-color-sidebar);
+  &:hover {
+    color: var(--mm-color-display-text);
   }
 }
 
@@ -87,21 +89,19 @@
 }
 
 .list-item.item--active > a {
-  color: var(--mm-color-logo-blue-light);
+  color: var(--mm-color-display-text);
   font-weight: 700;
-
-  &::before {
-    border-left: 5px solid var(--mm-color-logo-blue-light);
-  }
 
   &::before,
   &::after {
-    background-color: #eff1f2;
+    background-color: var(--mm-color-sidebar);
   }
-}
 
-.list-item a:hover {
-  color: #333;
+  &::after {
+    border-radius: 0 var(--mm-border-radius) var(--mm-border-radius) 0;
+    right: var(--mm-spacing);
+    width: calc(100%);
+  }
 }
 
 @include breakpoint('xl') {

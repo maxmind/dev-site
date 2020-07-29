@@ -5,13 +5,19 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin: 0 1em;
+  margin: 0 var(--mm-spacing);
   @include pattern;
 }
 
 @include breakpoint('lg') {
   .wrapper {
-    margin: 0 3em;
+    margin: 0 calc(var(--mm-spacing) / 2);
+  }
+}
+
+@include breakpoint('xxxl') {
+  .wrapper {
+    margin: 0 var(--mm-spacing);
   }
 }
 

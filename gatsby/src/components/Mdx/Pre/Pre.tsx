@@ -88,6 +88,7 @@ const Pre: React.FC<React.HTMLProps<HTMLPreElement> & IPre> = (props) => {
                 disabled={messageState !== 'hidden'}
                 icon={FaCopy}
                 onClick={handleCopyClick}
+                title="Copy code to clipboard"
               />
             )}
 
@@ -95,6 +96,7 @@ const Pre: React.FC<React.HTMLProps<HTMLPreElement> & IPre> = (props) => {
               disabled={messageState !== 'hidden'}
               icon={FaParagraph}
               onClick={handleInvisiblesClick}
+              title="Toggle invisible characters"
             />
           </div>
         </div>

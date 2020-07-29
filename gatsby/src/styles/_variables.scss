@@ -35,17 +35,12 @@ $containers: (
     margin-left: auto;
     margin-right: auto;
     max-width: 680px;
-  }
-
-  @include breakpoint('xl') {
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 680px;
+    min-width: 680px;
   }
 }
 
 @mixin heading {
-  color: var(--mm-color-primary-text);
+  color: var(--mm-color-display-text);
   font-family: var(--mm-font-stack-display);
   font-weight: 500;
   line-height: 1.2em;
@@ -58,7 +53,7 @@ $containers: (
   }
 
   .link {
-    color: var(--mm-color-primary-text);
+    color: var(--mm-color-display-text);
     text-decoration: none;
   }
 

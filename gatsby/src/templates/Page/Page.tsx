@@ -1,3 +1,4 @@
+import { useLocation } from '@reach/router';
 import PropTypes from 'prop-types';
 import React from 'react';
 
@@ -33,6 +34,7 @@ const Page: React.FC<IPage> = (props) => {
     tableOfContents,
     timeToRead,
   } = props.pageContext;
+  const location = useLocation();
   const { description, keywords, title } = frontmatter;
   const { modifiedTime } = parent;
 
@@ -43,11 +45,26 @@ const Page: React.FC<IPage> = (props) => {
     Date.parse(modifiedTime)
   );
 
+  let type;
+
+  if (location.pathname.startsWith('/minfraud')) {
+    type = 'minfraud';
+  }
+
+  if (location.pathname.startsWith('/geoip2')) {
+    type = 'geoip';
+  }
+
+  if (location.pathname.startsWith('/geolite2')) {
+    type = 'geolite';
+  }
+
   return (
     <Layout
       description={description}
       keywords={keywords}
       title={title}
+      type={type as 'minfraud' | 'geoip'}
     >
       <article
         className={styles.article}

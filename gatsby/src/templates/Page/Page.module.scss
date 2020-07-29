@@ -126,15 +126,12 @@
 
   .content {
     grid-area: content;
+    margin: 0 auto;
     max-width: calc(100vw - 640px);
   }
 }
 
 @include breakpoint('xxxl') {
-  .heading {
-    @include max-width;
-  }
-
   .content {
     margin: 0 auto;
   }

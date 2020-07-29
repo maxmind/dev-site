@@ -27,6 +27,7 @@ interface ILayout {
   keywords?: string[];
   tableOfContents?: any;
   title: string;
+  type?: 'geoip' | 'geolite' | 'minfraud';
 }
 
 const Layout: React.FC<ILayout> = (props) => {
@@ -37,11 +38,19 @@ const Layout: React.FC<ILayout> = (props) => {
 
   const toggleSidebar = (): void => setIsSidebarOpen(!isSidebarOpen);
 
+  const className: string | undefined = [
+    'geoip',
+    'geolite',
+    'minfraud',
+  ].includes(props.type as string)
+    ? `page-type--${props.type}`
+    : undefined;
+
   return (
     <>
       <SEO
         bodyAttributes={{
-          class: props.className,
+          class: className,
         }}
         description={props.description}
         meta={[
@@ -87,6 +96,11 @@ Layout.propTypes = {
   keywords: PropTypes.array,
   tableOfContents: PropTypes.any,
   title: PropTypes.string.isRequired,
+  type: PropTypes.oneOf([
+    'geoip',
+    'geolite',
+    'minfraud',
+  ]),
 };
 
 export default Layout;

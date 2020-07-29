@@ -163,6 +163,7 @@ const Code: React.FC<ICode> = (props) => {
         <button
           className={styles['expand-btn']}
           onClick={handleExpansionToggle}
+          title={isExpanded ? 'Collapse code example' : 'Expand code example'}
         >
           <FaAngleDoubleDown />
         </button>

@@ -90,6 +90,7 @@ const CodeSet: React.FC = (props) => {
                     type: 'change_language',
                   });
                 }}
+                title={`View ${activeLanguage} code`}
               >
                 {getHumanReadable(className)}
               </button>

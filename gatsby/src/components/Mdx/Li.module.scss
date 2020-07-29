@@ -3,3 +3,7 @@
 .li {
   margin-bottom: var(--mm-spacing) / 4;
 }
+
+.li::marker {
+  color: #ccc;
+}

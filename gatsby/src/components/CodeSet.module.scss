@@ -1,7 +1,7 @@
 @import '../styles/variables';
 
 .nav {
-  background-color: #58577e;
+  background-color: #3c3b62;
   border-radius: var(--mm-border-radius) var(--mm-border-radius) 0 0;
   border-top: 1px solid rgba(255, 255, 255, 0.3);
   position: relative;
@@ -18,7 +18,7 @@
   border: 0;
   border-left: 1px solid rgba(255, 255, 255, 0.2);
   border-right: 1px solid rgba(0, 0, 0, 0.2);
-  color: #aaa;
+  color: #ccc;
   cursor: pointer;
   font-size: 12px;
   font-weight: 500;
@@ -28,8 +28,8 @@
 }
 
 .button:hover {
-  background: rgba(255, 255, 255, 0.04);
-  color: #ccc;
+  background: rgba(255, 255, 255, 0.07);
+  color: #ddd;
 }
 
 .button:first-of-type {

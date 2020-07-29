@@ -7,6 +7,7 @@ import styles from './Button.module.scss';
 
 interface IButton {
   icon: IconType;
+  title: string;
 }
 
 const Button: React.FC<
@@ -31,6 +32,7 @@ const Button: React.FC<
 Button.propTypes = {
   className: PropTypes.string,
   icon: PropTypes.any.isRequired,
+  title: PropTypes.string.isRequired,
 };
 
 export default Button;

@@ -33,20 +33,13 @@ const ApiReference: React.FC<IApiReference> = (props) => {
     schema: schema[1],
   }));
 
-  const className: string | undefined = [
-    'geoip',
-    'minfraud',
-  ].includes(props.type as string)
-    ? `page-type--${props.type}`
-    : undefined;
-
   return (
     <Layout
-      className={className}
       description={description}
       keywords={keywords}
       tableOfContents={tableOfContents}
       title={title}
+      type={props.type}
     >
       {sections.map((section: ISchema, index: number) => (
         <Schema
