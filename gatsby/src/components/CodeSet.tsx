@@ -6,6 +6,7 @@ import { languages } from '../languages';
 import { Store } from '../store';
 import styles from './CodeSet.module.scss';
 import Pre from './Mdx/Pre';
+import { wrapCodeExample } from './Mdx/Pre/Pre';
 
 const getHumanReadable = (className: string): string  => languages
   .find(language => `language-${language.id}` === className)?.label
@@ -109,13 +110,19 @@ const CodeSet: React.FC = (props) => {
     >
       {React.Children.map(orderedChildren, child => {
         if (React.isValidElement(child)) {
-          if (child.props.children.props.className ===
-        activeLanguage) {
-            return (
-              <Pre
-                nav={nav}
-                {...child.props}
-              />
+          if (child.props.children.props.className === activeLanguage) {
+            return wrapCodeExample(
+              (
+                <>
+                  {nav}
+                  <Pre
+                    {...child.props}
+                    hasWrapper={false}
+                  />
+                </>
+              ),
+              'foo',
+              key,
             );
           }
         }

@@ -10,12 +10,31 @@ import Code from './Code';
 import Message, { State as MessageState } from './Message';
 import styles from './Pre.module.scss';
 
+export const wrapCodeExample = (
+  codeExample: React.ReactElement,
+  className: string | undefined,
+  key: string,
+): React.ReactElement => (
+  <div
+    className={classNames(
+      className,
+      styles.wrapper,
+    )}
+    key={key}
+  >
+    {codeExample}
+  </div>
+);
+
 interface IPre {
+  hasWrapper?: boolean;
   highlightLines?: string;
   nav?: React.ReactElement<React.HTMLProps<HTMLElement>>;
 }
 
 const Pre: React.FC<React.HTMLProps<HTMLPreElement> & IPre> = (props) => {
+  const { hasWrapper = true } = props;
+
   const { isClient, key } = useIsClient();
 
   const [
@@ -65,67 +84,71 @@ const Pre: React.FC<React.HTMLProps<HTMLPreElement> & IPre> = (props) => {
   };
 
   if ( !isClient ) return null;
-  return (
+
+  const codeExample = (
     <div
-      className={classNames(
-        props.className,
-        styles.wrapper,
-      )}
-      key={key}
+      className={styles.container}
     >
-      {props.nav}
       <div
-        className={styles.container}
+        className={styles.toolbar}
       >
         <div
-          className={styles.toolbar}
+          className={styles['toolbar__buttons']}
         >
-          <div
-            className={styles['toolbar__buttons']}
-          >
-            {navigator.clipboard && (
-              <Button
-                disabled={messageState !== 'hidden'}
-                icon={FaCopy}
-                onClick={handleCopyClick}
-                title="Copy code to clipboard"
-              />
-            )}
-
+          {navigator.clipboard && (
             <Button
               disabled={messageState !== 'hidden'}
-              icon={FaParagraph}
-              onClick={handleInvisiblesClick}
-              title="Toggle invisible characters"
+              icon={FaCopy}
+              onClick={handleCopyClick}
+              title="Copy code to clipboard"
             />
-          </div>
+          )}
+
+          <Button
+            disabled={messageState !== 'hidden'}
+            icon={FaParagraph}
+            onClick={handleInvisiblesClick}
+            title="Toggle invisible characters"
+          />
         </div>
-        <div
-          className={styles.content}
+      </div>
+      <div
+        className={styles.content}
+      >
+        <Message
+          onStateUpdate={(
+            state: MessageState
+          ): void => setMessageState(state)}
         >
-          <Message
-            onStateUpdate={(
-              state: MessageState
-            ): void => setMessageState(state)}
-          >
-            {message}
-          </Message>
-          <Code
-            hightlightLines={props.highlightLines}
-            language={language}
-            showInvisibles={showInvisibles}
-          >
-            {props.children}
-          </Code>
-        </div>
+          {message}
+        </Message>
+        <Code
+          hightlightLines={props.highlightLines}
+          language={language}
+          showInvisibles={showInvisibles}
+        >
+          {props.children}
+        </Code>
       </div>
     </div>
   );
+
+  if (hasWrapper) {
+    return wrapCodeExample(
+      codeExample,
+      props.className,
+      key
+    );
+  }
+
+  return codeExample;
+
 };
 
 Pre.propTypes = {
   children: PropTypes.node,
   className: PropTypes.string,
+  hasWrapper: PropTypes.bool,
   highlightLines: PropTypes.string,
   nav: PropTypes.any,
 };
