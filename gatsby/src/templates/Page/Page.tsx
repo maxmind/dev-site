@@ -93,17 +93,19 @@ const Page: React.FC<IPage> = (props) => {
             {formattedLastUpdated.toLocaleDateString('en-US')}
           </div>
         </header>
-        {tableOfContents && tableOfContents.items?.length > 0 && (
-          <aside
-            className={styles.aside}
-          >
+
+        <aside
+          className={styles.aside}
+        >
+          {tableOfContents && tableOfContents.items?.length > 0 && (
             <TableOfContents
               className={styles.tableOfContents}
               currentItem={currentItem}
               items={tableOfContents.items}
             />
-          </aside>
-        )}
+          )}
+        </aside>
+
         <section
           className={styles.content}
         >

@@ -121,7 +121,7 @@ const CodeSet: React.FC = (props) => {
                   />
                 </>
               ),
-              'foo',
+              undefined,
               key,
             );
           }

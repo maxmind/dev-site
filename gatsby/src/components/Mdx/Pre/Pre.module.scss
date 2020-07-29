@@ -9,18 +9,6 @@
   @include pattern;
 }
 
-@include breakpoint('lg') {
-  .wrapper {
-    margin: 0 calc(var(--mm-spacing) / 2);
-  }
-}
-
-@include breakpoint('xxxl') {
-  .wrapper {
-    margin: 0 var(--mm-spacing);
-  }
-}
-
 .container {
   display: inline-block;
   position: relative;
