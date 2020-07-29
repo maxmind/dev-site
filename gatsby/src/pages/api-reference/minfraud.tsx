@@ -1,17 +1,18 @@
 import React from 'react';
 
 import data from '../../../static/specs/minfraud.json';
-import ApiSpec from '../../templates/ApiSpec';
+import ApiSpec from '../../templates/ApiReference';
 
 const Minfraud = (): React.ReactElement => (
   <ApiSpec
-    description="foo"
+    description=""
     keywords={[]}
     specJson={data}
     tableOfContents={{
       items: [],
     }}
     title="minFraud API Reference"
+    type="minfraud"
   >
     foo
   </ApiSpec>

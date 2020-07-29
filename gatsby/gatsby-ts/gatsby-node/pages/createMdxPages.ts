@@ -42,12 +42,15 @@ const createMdxPages = async ( props: CreatePagesArgs): Promise<void> => {
             }
             id
             tableOfContents(maxDepth: 3)
+            timeToRead
             parent {
               id
               ... on File {
                 id
+                modifiedTime
                 name
                 relativeDirectory
+                relativePath
               }
             }
           }
@@ -72,10 +75,14 @@ const createMdxPages = async ( props: CreatePagesArgs): Promise<void> => {
       process.env.gatsby_executing_command === 'develop'
       || !node.frontmatter.draft
     ) {
+      const path = (node.parent.name === 'index')
+        ? node.parent.relativeDirectory
+        : `${node.parent.relativeDirectory}/${node.parent.name}`;
+
       createPage({
         component: node.fileAbsolutePath,
         context: node,
-        path: `${node.parent.relativeDirectory}/${node.parent.name}`,
+        path,
       });
     }
   });

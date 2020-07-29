@@ -1,0 +1,48 @@
+@import '../styles/variables';
+
+.heading {
+  --heading-height: 50px;
+  background: #f6f7f7;
+  border: 1px solid darken(rgba(60, 88, 99, 0.1), 0);
+  border-radius: var(--mm-border-radius) var(--mm-border-radius) 0 0;
+  height: var(--heading-height);
+  line-height: var(--heading-height);
+  margin: var(--mm-spacing) var(--mm-spacing) 0;
+  padding: 0 calc(var(--mm-spacing) / 2);
+  position: sticky;
+  scroll-margin-top: var(--page-header-height) + var(--mm-spacing);
+  top: calc(var(--page-header-height) + var(--mm-spacing));
+  transform-style: preserve-3d;
+  z-index: 5;
+
+  &::after {
+    background: var(--mm-color-background);
+    content: ' ';
+    display: block;
+    height: calc(100% + var(--mm-spacing) + 2px);
+    left: calc(var(--mm-spacing) * -1 - 1px);
+    position: absolute;
+    top: calc(var(--mm-spacing) * -1 - 1px);
+    transform: translateZ(-1px);
+    width: calc(100% + var(--mm-spacing) * 2 + 2px);
+  }
+}
+
+.heading-link {
+  color: #666;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+  width: 100%;
+}
+
+.heading-type {
+  margin-left: calc(var(--mm-spacing) / 4);
+  vertical-align: middle;
+}
+
+@include breakpoint('xxl') {
+  .heading {
+    grid-area: schema-heading;
+  }
+}

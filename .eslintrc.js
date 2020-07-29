@@ -81,6 +81,7 @@ module.exports = {
     'array-bracket-newline': [
       'warn',
       {
+        multiline: true,
         minItems: 1,
       },
     ],
@@ -111,8 +112,13 @@ module.exports = {
       'warn',
       {
         ExportDeclaration: 'never',
-        ImportDeclaration: 'never',
-        ObjectExpression: 'always',
+        ImportDeclaration: {
+          multiline: true,
+        },
+        ObjectExpression: {
+          minProperties: 1,
+          multiline: true,
+        },
         ObjectPattern: {
           multiline: true,
         },

@@ -1,0 +1,35 @@
+@import '../styles/variables';
+
+.example {
+  height: 0;
+  overflow: hidden;
+  padding: 0 !important;
+  @include pattern;
+}
+
+.example--is-expanded {
+  height: auto;
+  margin: 0 !important;
+  overflow: initial;
+  padding: var(--mm-spacing);
+}
+
+.example-json {
+  margin: 0;
+}
+
+@include breakpoint('xxl') {
+  .example {
+    grid-area: schema-example;
+    height: auto;
+    margin: 0 !important;
+    overflow: initial;
+    padding-top: var(--mm-spacing);
+  }
+
+  .example-json {
+    margin-bottom: 0;
+    position: sticky;
+    top: var(--page-header-height);
+  }
+}

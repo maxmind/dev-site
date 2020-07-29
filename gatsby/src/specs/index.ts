@@ -1,9 +1,11 @@
 // eslint-disable-next-line filenames/match-exported
 import merge from 'lodash/merge';
-import { isSchemaObject,
+import {
+  isSchemaObject,
   OpenApiBuilder,
   ReferenceObject,
-  SchemaObject } from 'openapi3-ts';
+  SchemaObject,
+} from 'openapi3-ts';
 
 import minFraud from './minfraud/2.0';
 
@@ -13,8 +15,7 @@ const specs: Record<string, OpenApiBuilder> = {
 
 export const parseSchema = (
   schema: ReferenceObject | SchemaObject,
-  combinedSchema: SchemaObject = {
-  },
+  combinedSchema: SchemaObject = {},
 ): SchemaObject => {
   if (isSchemaObject(schema)) {
     if (schema.allOf) {

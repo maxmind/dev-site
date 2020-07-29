@@ -1,0 +1,8 @@
+@import '../../styles/variables';
+
+.footer {
+  border-top: 1px solid var(--mm-color-border);
+  font-size: 14px;
+  padding: var(--mm-spacing) 0;
+  text-align: center;
+}

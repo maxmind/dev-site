@@ -1,0 +1,9 @@
+@import '../../styles/variables';
+
+.h1 {
+  @include heading;
+  font-size: 32px;
+  margin: var(--mm-spacing);
+  margin-top: 0;
+  padding-top: var(--mm-spacing);
+}

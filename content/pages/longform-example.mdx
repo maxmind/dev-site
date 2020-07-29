@@ -7,83 +7,6 @@ keywords:
   - bar
 ---
 
-<CodeSet>
-
-```ruby
-puts "hello"
-```
-
-```javascript
-if (err) {
-  console.log('hello');
-}
-```
-
-```go
-if (err != nil) {
-  spew.Dump(err)
-}
-```
-
-</CodeSet>
-
-<CodeSet>
-
-```javascript
-if (err) {
-  console.log('hello');
-}
-```
-
-```go
-if (err != nil) {
-  spew.Dump(err)
-}
-```
-
-```ruby
-puts "hello"
-```
-```typescript
-import foo, { foobar } from './foobar';
-
-interface Foobar {
-  hey: string;
-  world?: number;
-}
-```
-
-</CodeSet>
-
-<CodeSet>
-
-```javascript
-console.log('hello');
-```
-
-```markup
-<hello>world</hello>
-```
-
-
-```typescript
-import foo, { foobar } from './foobar';
-
-interface Foobar {
-  hey: string;
-  world?: number;
-}
-```
-```json
-{
-  "foo": "bar",
-  "bar": true
-}
-```
-
-</CodeSet>
-
-
 by TJ Murphy, @teej_m on Twitter
 This article was originally published on Towards Data Science on Jan 18, 2019.
 
@@ -98,6 +21,135 @@ w
 location, but that’s not gonna cut it. If you want to report on those retention
 rates, lifetime values, or repeat behaviors by geo, you need something you can
 query with SQL, something that lives in your data warehouse.
+
+
+<CodeSet>
+
+```ruby
+puts "hello"
+```
+
+```javascript
+const err = 12;
+const err = 'afsd';
+const err = new Error();
+
+if (err) {
+  console.log('hello');
+}
+
+const FOO = /fafdwfsfda/g;
+
+
+const foo = (a, b) => {
+  return 'a';
+};
+
+var foo = "\nafsdf"
+```
+
+```csharp
+void method<T, U>();
+method<int, char>();
+```
+
+```go
+if (err != nil) {
+  spew.Dump(err)
+}
+```
+
+</CodeSet>
+
+<CodeSet>
+
+```javascript
+if (err) {
+  console.log('hello');
+}
+
+const foo = (a = 2, b = 1) => {
+  const { a: string, ...b } = props;
+  return `asdfsa${a.toLowerCase()}`;
+};
+```
+
+```go
+if (err != nil) {
+  spew.Dump(err)
+}
+```
+
+```ruby
+puts "hello"
+```
+```typescript
+import foo, { foobar } from './foobar';
+
+interface Foobar {
+  hey: string;
+  world?: number;
+}
+
+// Foo
+import(
+  'prismjs/plugins/command-line/prism-command-line.css' as string
+)
+```
+
+```css
+foo:after {
+}
+  foo::first-letter {
+
+  }
+
+  foo.bar.baz {
+
+  }
+
+  foo#bar.baz {
+
+  }
+
+  #foo > .bar:hover:after {
+
+  }
+```
+
+</CodeSet>
+
+<CodeSet>
+
+```javascript
+console.log('hello');
+```
+
+```markup
+<hello foo="bar" baz>world</hello>
+```
+
+
+```typescript
+import foo, { foobar } from './foobar';
+
+interface Foobar {
+  hey: string;
+  world?: number;
+}
+
+const foo = (a: string, b: number) => {
+  return `asdfsa${a.toLowerCase()}`;
+};
+```
+```json
+{
+  "foo": "bar",
+  "bar": true
+}
+```
+
+</CodeSet>
 
 ### Data Warehousing (h3)
 
@@ -137,11 +189,6 @@ query with SQL, something that lives in your data warehouse.
 > But you don’t have anything like that. You know there’s user IP addresses in your
 log data, you just need to turn them into locations. But Redshift doesn’t have a way to
 do that.
-
->>>But you don’t have anything like that. You know there’s user IP addresses in your
-log data, you just need to turn them into locations. But Redshift doesn’t have a way to
-do that.
-
 
 ***
 

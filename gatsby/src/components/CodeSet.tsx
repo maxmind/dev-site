@@ -5,6 +5,8 @@ import useIsClient from '../hooks/useIsClient';
 import { languages } from '../languages';
 import { Store } from '../store';
 import styles from './CodeSet.module.scss';
+import Pre from './Mdx/Pre';
+import { wrapCodeExample } from './Mdx/Pre/Pre';
 
 const getHumanReadable = (className: string): string  => languages
   .find(language => `language-${language.id}` === className)?.label
@@ -69,49 +71,62 @@ const CodeSet: React.FC = (props) => {
     activeLanguage,
   ]);
 
-  if ( !isClient ) return null;
-  return (
-    <div
-      className={styles.wrapper}
-      key={key}
+  const nav = (
+    <nav
+      className={styles.nav}
     >
-      <nav
-        className={styles.nav}
-      >
-        {
-          React.Children.map(orderedChildren, child => {
-            if (React.isValidElement(child)) {
-              const className = child.props.children.props.className;
-              return (
-                <button
-                  className={`
-                    ${styles.button}
-                    ${className === activeLanguage ? styles.active : ''}
-                    `}
-                  onClick={(): void => {
-                    dispatch({
-                      payload: className,
-                      type: 'change_language',
-                    });
-                  }}
-                >
-                  {getHumanReadable(className)}
-                </button>
-              );
-            }
-          })
-        }
-      </nav>
       {
         React.Children.map(orderedChildren, child => {
           if (React.isValidElement(child)) {
-            if (child.props.children.props.className ===
-              activeLanguage) {
-              return child;
-            }
+            const className = child.props.children.props.className;
+            return (
+              <button
+                className={`
+                ${styles.button}
+                ${className === activeLanguage ? styles.active : ''}
+                `}
+                onClick={(): void => {
+                  dispatch({
+                    payload: className,
+                    type: 'change_language',
+                  });
+                }}
+                title={`View ${activeLanguage} code`}
+              >
+                {getHumanReadable(className)}
+              </button>
+            );
           }
         })
       }
+    </nav>
+  );
+
+  if ( !isClient ) return null;
+
+  return (
+    <div
+      key={key}
+    >
+      {React.Children.map(orderedChildren, child => {
+        if (React.isValidElement(child)) {
+          if (child.props.children.props.className === activeLanguage) {
+            return wrapCodeExample(
+              (
+                <>
+                  {nav}
+                  <Pre
+                    {...child.props}
+                    hasWrapper={false}
+                  />
+                </>
+              ),
+              undefined,
+              key,
+            );
+          }
+        }
+      })}
     </div>
   );
 };

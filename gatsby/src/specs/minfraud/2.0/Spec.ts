@@ -1,5 +1,3 @@
-import OpenApiParser from '@apidevtools/swagger-parser';
-import { OpenAPI } from 'openapi-types';
 import { OpenApiBuilder, RequestBodyObject } from 'openapi3-ts';
 
 import Request from './schemas/Request';
@@ -28,6 +26,7 @@ import ResponseScore from './schemas/Response/Score';
 import ResponseScoreDisposition from './schemas/Response/Score/Disposition';
 import ResponseScoreIpAddress from './schemas/Response/Score/IpAddress';
 import ResponseScoreWarnings from './schemas/Response/Score/Warnings';
+import { addCompiledExamples } from './utils';
 
 
 const Spec = new OpenApiBuilder();
@@ -151,11 +150,8 @@ Spec
   .addSchema('Response.Insights.Subscores', ResponseInsightsSubscores)
 ;
 
-try {
-  OpenApiParser.validate(Spec.getSpec() as OpenAPI.Document);
-}
-catch(err) {
-  console.error(err);
-}
+export const getRenderedSpec = (): Promise<unknown> => addCompiledExamples(
+  Spec.getSpec()
+);
 
 export default Spec;

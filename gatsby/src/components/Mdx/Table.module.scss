@@ -1,0 +1,31 @@
+@import '../styles/variables';
+
+.wrapper {
+  display: flex;
+  padding: var(--mm-spacing);
+}
+
+.container {
+  background-color: rgba(0, 0, 0, 0.6);
+  background-color: var(--mm-color-display-text);
+  border-left: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: var(--mm-border-radius);
+  border-right: 1px solid rgba(255, 255, 255, 0.1);
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  color: #ccc;
+  display: inline-block;
+  margin: 0 auto;
+  max-width: 100%;
+  overflow-x: scroll;
+  padding: 5px;
+  position: relative;
+  z-index: 2;
+
+  @include scrollbars;
+}
+
+.table {
+  font-size: 0.8rem;
+  line-height: 1rem;
+  overflow-x: auto;
+}

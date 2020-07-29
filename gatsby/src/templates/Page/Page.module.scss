@@ -1,0 +1,152 @@
+@import '../../styles/variables';
+
+.header {
+  background: var(--mm-color-background);
+  padding: var(--mm-spacing);
+  z-index: 5;
+}
+
+.heading {
+  margin: 0;
+  padding: 0;
+  @include max-width;
+}
+
+.meta {
+  font-size: 14px;
+  margin-top: var(--mm-spacing) / 2;
+  @include max-width;
+}
+
+.aside {
+  background: var(--mm-color-sidebar);
+  margin: var(--mm-spacing);
+  padding: var(--mm-spacing);
+  position: relative;
+
+  &::before,
+  &::after {
+    content: ' ';
+    display: block;
+    height: 10px;
+    left: 0;
+    overflow: hidden;
+    padding: 0 !important;
+    position: absolute !important;
+    top: 0;
+    width: 100%;
+
+    @include pattern;
+  }
+
+  &::after {
+    background: rgb(0, 119, 194);
+    background: linear-gradient(90deg, rgba(0, 119, 194, 0.5) 0%, var(--page-type-color));
+  }
+}
+
+.header + .aside {
+  margin-top: 0;
+}
+
+@include breakpoint('xl') {
+  .article {
+    display: grid;
+    grid-template-areas:
+      'header header'
+      'aside aside'
+      'content content';
+    grid-template-columns: 50% 50%;
+    grid-template-rows: min-content min-content min-content;
+    height: 100%;
+  }
+
+  .header {
+    grid-area: header;
+  }
+
+  .header ~ .content > *:first-child {
+    margin-top: 0;
+  }
+
+  .aside {
+    grid-area: aside;
+    min-width: 700px;
+    @include max-width;
+  }
+
+  .content {
+    grid-area: content;
+  }
+
+  .content [class*='Pre-module--container'] {
+    max-width: 100%;
+    min-width: 680px;
+    width: auto;
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  .content [class*='Pre-module--container'] {
+    min-width: 600px;
+  }
+}
+
+@media only screen and (min-width: 1480px) {
+  .content [class*='Pre-module--container'] {
+    min-width: 680px;
+  }
+}
+
+@include breakpoint('xxl') {
+  .article {
+    grid-template-areas:
+      'header aside'
+      'content aside';
+    grid-template-columns: calc(100vw - 640px) 290px;
+    grid-template-rows: min-content auto;
+    justify-items: start;
+  }
+
+  .header {
+    grid-area: header;
+    width: 100%;
+  }
+
+  .aside {
+    background: var(--mm-color-sidebar);
+    border-bottom: 0;
+    border-left: 1px solid var(--mm-color-border);
+    grid-area: aside;
+    height: auto;
+    margin: 0;
+    min-width: auto;
+    padding: 0;
+    position: sticky;
+    top: calc(var(--page-header-height));
+    width: 100%;
+  }
+
+  .aside::before,
+  .aside::after {
+    display: none;
+  }
+
+  .tableOfContents {
+    background: var(--mm-color-background);
+    border-bottom: 1px solid var(--mm-color-border);
+    padding: var(--mm-spacing);
+    width: 100%;
+  }
+
+  .content {
+    grid-area: content;
+    width: 100%;
+  }
+}
+
+@include breakpoint('xxxl') {
+  .content {
+    margin: 0 auto;
+  }
+}

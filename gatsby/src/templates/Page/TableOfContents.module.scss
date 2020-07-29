@@ -1,0 +1,111 @@
+@import '../styles/variables';
+
+.heading {
+  color: var(--mm-color-display-text);
+  display: inline-block;
+  font-family: var(--mm-font-stack-display);
+  font-size: 16px;
+  font-weight: 700;
+  width: 100%;
+}
+
+.list {
+  font-family: var(--mm-font-stack-display);
+  list-style-position: outside;
+  list-style-type: upper-roman;
+  margin: calc(var(--mm-spacing) / 2) 0 0;
+}
+
+.list * {
+  vertical-align: top !important;
+}
+
+.list:last-child {
+  margin-bottom: 0;
+}
+
+.list .list {
+  list-style-type: decimal;
+  margin-left: calc(var(--mm-spacing) / 2);
+}
+
+.list-item {
+  color: #aaa;
+  font-size: 14px;
+  line-height: 1.2em;
+  margin-bottom: calc(var(--mm-spacing) * 0.75);
+  position: relative;
+}
+
+.list-item:last-child {
+  margin-bottom: 0;
+}
+
+.list-item .list-item {
+  font-size: 14px;
+  margin-bottom: calc(var(--mm-spacing) / 2);
+}
+
+.list-item .list-item:last-child {
+  margin-bottom: 0;
+}
+
+.list-item a {
+  --psuedo-padding: 10px;
+  color: #555;
+  display: inline-block;
+  font-weight: 500;
+  position: relative;
+  text-decoration: none;
+  width: calc(100% - var(--mm-spacing));
+
+  &::before,
+  &::after {
+    content: ' ';
+    display: block;
+    height: 100%;
+    padding: var(--psuedo-padding) 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transform: translate(calc(var(--mm-spacing) * 2), calc(var(--psuedo-padding) * -1));
+    width: calc(100% + var(--mm-spacing) * 2);
+    z-index: -1;
+  }
+
+  &::before {
+    left: 0;
+    right: initial;
+    transform: translate(calc(var(--mm-spacing) * -1), calc(var(--psuedo-padding) * -1));
+  }
+
+  &:hover {
+    color: var(--mm-color-display-text);
+  }
+}
+
+.list-item .list-item a::before {
+  transform: translate(calc(var(--mm-spacing) * -1.5), calc(var(--psuedo-padding) * -1));
+}
+
+.list-item.item--active > a {
+  color: var(--mm-color-display-text);
+  font-weight: 700;
+
+  &::before,
+  &::after {
+    background-color: var(--mm-color-sidebar);
+  }
+
+  &::after {
+    border-radius: 0 var(--mm-border-radius) var(--mm-border-radius) 0;
+    right: var(--mm-spacing);
+    width: calc(100%);
+  }
+}
+
+@include breakpoint('xl') {
+  .list {
+    list-style-position: outside;
+  }
+}

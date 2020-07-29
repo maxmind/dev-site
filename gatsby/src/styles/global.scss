@@ -1,11 +1,45 @@
 @import './reset';
 
-html {
-  scroll-behavior: smooth;
+:global {
+  .fa-icon {
+    vertical-align: middle;
+  }
+}
+
+:root {
+  --mm-color-background: #fff;
+  --mm-color-sidebar: #f5f6f7;
+  --mm-color-border: #ddd;
+  --mm-color-logo-blue-light: #00aeef;
+  --mm-color-primary-text: #666;
+  --mm-color-display-text: rgba(57, 61, 100, 0.9);
+  --mm-border-radius: 6px;
+  --mm-font-stack-default: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Ubuntu, sans-serif;
+  --mm-font-stack-display: 'montserrat', var(--mm-font-stack-default);
+  --mm-font-stack-monospace: 'Source Code Pro', monospace;
+  --mm-layout-sidebar-width: 260px;
+  --mm-spacing: 40px;
+  --page-header-height: 100px;
+  --page-type-color: rgba(255, 255, 255, 0.3);
+}
+
+// Not sure why .page-type--minfraud does not work here
+[class='page-type--minfraud'] {
+  --page-type-color: rgba(255, 0, 136, 0.5);
+}
+
+// Not sure why .page-type--geoip does not work here
+[class='page-type--geoip'] {
+  --page-type-color: rgba(0, 255, 102, 0.5);
+}
+
+// Not sure why .page-type--geolite does not work here
+[class='page-type--geolite'] {
+  --page-type-color: rgba(255, 255, 0, 0.5);
 }
 
 body {
-  color: #666;
+  color: var(--mm-color-primary-text);
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Ubuntu, sans-serif;
   font-size: 1.1rem;
   line-height: 1.3em;
@@ -14,5 +48,10 @@ body {
 
 * {
   box-sizing: border-box;
-  outline-color: $mm-light-blue;
+}
+
+*:focus {
+  outline-color: var(--mm-color-logo-blue-light);
+  outline-style: solid;
+  outline-width: 2px;
 }
