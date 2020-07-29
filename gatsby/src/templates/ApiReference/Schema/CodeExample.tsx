@@ -16,13 +16,13 @@ const CodeExample: React.FC<ICodeExample> = (props) => (
   <div
     className={classNames(
       {
-        [styles['schema__example--is-expanded']]: props.isExpanded,
+        [styles['example--is-expanded']]: props.isExpanded,
       },
-      styles['schema__example']
+      styles.example
     )}
   >
     <Pre
-      className={styles['schema__example-json']}
+      className={styles['example-json']}
       highlightLines={props.highlightLines}
     >
       <code

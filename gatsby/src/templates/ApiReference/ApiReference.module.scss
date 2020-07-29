@@ -8,7 +8,7 @@
   width: 100%;
 }
 
-.schema__heading {
+.heading {
   background: #f6f7f7;
   border: 1px solid darken(rgba(60, 88, 99, 0.1), 0);
   border-radius: var(--mm-border-radius) var(--mm-border-radius) 0 0;
@@ -35,7 +35,7 @@
   }
 }
 
-.schema__toggle-example {
+.toggle-example {
   background: lighten(#3b446f, 20);
   border: 0;
   border-radius: var(--mm-border-radius);
@@ -65,7 +65,7 @@
   }
 }
 
-.schema__toggle-example-btn-icon {
+.toggle-example-btn-icon {
   border-right: 2px solid #eee;
   height: 100%;
   left: 0;
@@ -76,11 +76,11 @@
   width: 50px;
 }
 
-.schema__toggle-example-btn--is-expanded .schema__toggle-example-btn-icon svg {
+.toggle-example-btn--is-expanded .toggle-example-btn-icon svg {
   transform: rotate(180deg);
 }
 
-.schema__heading-link {
+.heading-link {
   color: #666;
   font-size: 16px;
   font-weight: bold;
@@ -88,35 +88,35 @@
   width: 100%;
 }
 
-.schema__heading-type {
+.heading-type {
   margin-left: var(--mm-spacing) / 4;
   vertical-align: middle;
 }
 
-.schema__description {
+.description {
   line-height: 1.5em;
   padding: var(--mm-spacing) / 2;
 }
 
-.schema__example {
+.example {
   height: 0;
   overflow: hidden;
   padding: 0 !important;
   @include pattern;
 }
 
-.schema__example--is-expanded {
+.example--is-expanded {
   height: auto;
   margin: 0 !important;
   overflow: initial;
   padding: var(--mm-spacing);
 }
 
-.schema__body {
+.body {
   margin: 0 var(--mm-spacing) var(--mm-spacing);
 }
 
-.schema__properties {
+.properties {
   border: 1px solid darken(rgba(60, 88, 99, 0.1), 0);
   border-radius: 0 0 var(--mm-border-radius) var(--mm-border-radius);
   border-top: 0;
@@ -133,15 +133,15 @@
     grid-template-rows: 90px auto;
   }
 
-  .schema__heading {
+  .heading {
     grid-area: schema-heading;
   }
 
-  .schema__toggle-example {
+  .toggle-example {
     display: none;
   }
 
-  .schema__example {
+  .example {
     grid-area: schema-example;
     height: auto;
     margin: 0 !important;
@@ -149,17 +149,17 @@
     padding-top: var(--mm-spacing);
   }
 
-  .schema__example-json {
+  .example-json {
     margin-bottom: 0;
     position: sticky;
     top: var(--page-header-height);
   }
 
-  .schema__body {
+  .body {
     grid-area: schema-body;
   }
 
-  .schema__properties {
+  .properties {
     position: sticky;
     // TODO: Ensure Schema properties stick if example json is tall
     top: calc(var(--page-header-height) + var(--mm-spacing) + var(--mm-spacing));

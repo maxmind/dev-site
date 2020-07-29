@@ -1,6 +1,6 @@
 @import '../styles/variables';
 
-.schema__heading {
+.heading {
   --heading-height: 50px;
   background: #f6f7f7;
   border: 1px solid darken(rgba(60, 88, 99, 0.1), 0);
@@ -28,7 +28,7 @@
   }
 }
 
-.schema__heading-link {
+.heading-link {
   color: #666;
   font-size: 16px;
   font-weight: bold;
@@ -36,13 +36,13 @@
   width: 100%;
 }
 
-.schema__heading-type {
+.heading-type {
   margin-left: calc(var(--mm-spacing) / 4);
   vertical-align: middle;
 }
 
 @include breakpoint('xxl') {
-  .schema__heading {
+  .heading {
     grid-area: schema-heading;
   }
 }

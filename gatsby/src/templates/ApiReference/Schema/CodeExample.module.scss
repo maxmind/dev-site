@@ -1,25 +1,25 @@
 @import '../styles/variables';
 
-.schema__example {
+.example {
   height: 0;
   overflow: hidden;
   padding: 0 !important;
   @include pattern;
 }
 
-.schema__example--is-expanded {
+.example--is-expanded {
   height: auto;
   margin: 0 !important;
   overflow: initial;
   padding: var(--mm-spacing);
 }
 
-.schema__example-json {
+.example-json {
   margin: 0;
 }
 
 @include breakpoint('xxl') {
-  .schema__example {
+  .example {
     grid-area: schema-example;
     height: auto;
     margin: 0 !important;
@@ -27,7 +27,7 @@
     padding-top: var(--mm-spacing);
   }
 
-  .schema__example-json {
+  .example-json {
     margin-bottom: 0;
     position: sticky;
     top: var(--page-header-height);

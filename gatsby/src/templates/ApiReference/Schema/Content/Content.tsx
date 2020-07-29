@@ -21,15 +21,15 @@ const Content: React.FC<IContent> = (
 ): React.ReactElement => {
   return (
     <div
-      className={styles['schema__body']}
+      className={styles.body}
     >
       <div
-        className={styles['schema__properties']}
+        className={styles.properties}
       >
         {props.schema.description
           && (
             <div
-              className={styles['schema__description']}
+              className={styles.description}
             >
               {renderMarkdownElement(
                 props.schema.description as unknown as string
@@ -48,10 +48,10 @@ const Content: React.FC<IContent> = (
       </div>
       <button
         className={classNames(
-          styles['schema__toggle-example'],
+          styles['toggle-example'],
           {
             [
-            styles['schema__toggle-example-btn--is-expanded']
+            styles['toggle-example-btn--is-expanded']
             ]: props.isExpanded,
           }
         )}
@@ -60,7 +60,7 @@ const Content: React.FC<IContent> = (
         {props.isExpanded ? (
           <>
             <span
-              className={styles['schema__toggle-example-btn-icon']}
+              className={styles['toggle-example-btn-icon']}
             >
               <FaAngleDoubleDown />
             </span>
@@ -70,7 +70,7 @@ const Content: React.FC<IContent> = (
         ) : (
           <>
             <span
-              className={styles['schema__toggle-example-btn-icon']}
+              className={styles['toggle-example-btn-icon']}
             >
               <FaAngleDoubleDown />
             </span>
