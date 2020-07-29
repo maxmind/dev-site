@@ -1,7 +1,9 @@
-import { OpenApiBuilder,
+import {
+  OpenApiBuilder,
   OpenAPIObject,
   SchemaObject,
-  SchemasObject } from 'openapi3-ts';
+  SchemasObject,
+} from 'openapi3-ts';
 import PropTypes from 'prop-types';
 import React from 'react';
 

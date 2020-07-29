@@ -48,7 +48,7 @@ $containers: (
   position: relative;
   scroll-margin-top: calc(var(--page-header-height) + var(--mm-spacing));
 
-  & + p {
+  + p {
     margin-top: calc(var(--mm-spacing) / 2);
   }
 

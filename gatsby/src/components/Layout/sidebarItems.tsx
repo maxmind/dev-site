@@ -1,6 +1,8 @@
 import React from 'react';
-import { FaGlobe,
-  FaShieldAlt } from 'react-icons/fa';
+import {
+  FaGlobe,
+  FaShieldAlt,
+} from 'react-icons/fa';
 import { FiGlobe } from 'react-icons/fi';
 
 // eslint-disable-next-line css-modules/no-unused-class
