@@ -12,6 +12,10 @@ const getHumanReadable = (className: string): string  => languages
   .find(language => `language-${language.id}` === className)?.label
     || className.replace('language-', '');
 
+export const extractLanguage = (className: string): string => className
+  .startsWith('language-cli-') ? className.replace('cli-', '') : className;
+
+
 const CodeSet: React.FC = (props) => {
   const { isClient, key } = useIsClient();
   const { dispatch, context } = React.useContext(Store);
@@ -23,10 +27,10 @@ const CodeSet: React.FC = (props) => {
   const orderedChildren = React.Children.toArray(props.children).sort((a,b) => {
     if (React.isValidElement(a) && React.isValidElement(b)) {
       const indexA = languages.findIndex(element =>
-        `language-${element.id}` === a.props.children.props.className
+        `language-${element.id}` === extractLanguage(a.props.children.props.className)
       );
       const indexB = languages.findIndex(element =>
-        `language-${element.id}` === b.props.children.props.className
+        `language-${element.id}` === extractLanguage(b.props.children.props.className)
       );
 
       if (indexA - indexB > 0) {
@@ -43,7 +47,7 @@ const CodeSet: React.FC = (props) => {
 
   const orderedLanguages = React.Children.map(orderedChildren, child => {
     if (React.isValidElement(child)) {
-      return child.props.children.props.className;
+      return extractLanguage(child.props.children.props.className);
     }
   });
 
@@ -78,7 +82,7 @@ const CodeSet: React.FC = (props) => {
       {
         React.Children.map(orderedChildren, child => {
           if (React.isValidElement(child)) {
-            const className = child.props.children.props.className;
+            const className = extractLanguage(child.props.children.props.className);
             return (
               <button
                 className={`
@@ -93,7 +97,7 @@ const CodeSet: React.FC = (props) => {
                 }}
                 title={`View ${activeLanguage} code`}
               >
-                {getHumanReadable(className)}
+                {getHumanReadable(extractLanguage(className))}
               </button>
             );
           }
@@ -110,7 +114,7 @@ const CodeSet: React.FC = (props) => {
     >
       {React.Children.map(orderedChildren, child => {
         if (React.isValidElement(child)) {
-          if (child.props.children.props.className === activeLanguage) {
+          if (extractLanguage(child.props.children.props.className) === activeLanguage) {
             return wrapCodeExample(
               (
                 <>

@@ -32,6 +32,9 @@ interface IPre {
   nav?: React.ReactElement<React.HTMLProps<HTMLElement>>;
 }
 
+const extractCli = (className: string): string => className
+  .startsWith('language-cli-') ? 'language-cli' : className;
+
 const Pre: React.FC<React.HTMLProps<HTMLPreElement> & IPre> = (props) => {
   const { hasWrapper = true } = props;
 
@@ -55,11 +58,13 @@ const Pre: React.FC<React.HTMLProps<HTMLPreElement> & IPre> = (props) => {
   const child =
     React.Children.toArray(props.children)[0] as React.ReactElement;
 
+  const extractedClassName = extractCli(child.props.className);
+
   const language = languages.find(
-    language => `language-${language.id}` === child.props.className
+    language => `language-${language.id}` === extractedClassName
   ) || {
-    id: child.props.className.replace('language-', ''),
-    label: child.props.className.replace('language-', ''),
+    id: extractedClassName.replace('language-', ''),
+    label: extractedClassName.replace('language-', ''),
     prismSettings: languages.find(
       language => language.id === '*'
     )?.prismSettings,
