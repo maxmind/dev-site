@@ -27,8 +27,8 @@ export const sidebarItems: IItem[] = [
         to: '/minfraud/setup',
       },
       {
-        title: 'Send a transaction',
-        to: '/minfraud/send-a-transaction',
+        title: 'Evaluate a transaction',
+        to: '/minfraud/evaluate-a-transaction',
       },
       {
         title: 'Handle Chargebacks',
