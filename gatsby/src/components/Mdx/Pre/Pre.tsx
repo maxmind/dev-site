@@ -33,7 +33,7 @@ interface IPre {
 }
 
 const extractCli = (className: string): string => className
-  .startsWith('language-cli-') ? 'language-cli' : className;
+  .startsWith('language-cli-') ? 'language-markdown' : className;
 
 const Pre: React.FC<React.HTMLProps<HTMLPreElement> & IPre> = (props) => {
   const { hasWrapper = true } = props;
@@ -55,10 +55,14 @@ const Pre: React.FC<React.HTMLProps<HTMLPreElement> & IPre> = (props) => {
     setShowInvisibles,
   ] = React.useState(true);
 
-  const child =
+  let child =
     React.Children.toArray(props.children)[0] as React.ReactElement;
 
   const extractedClassName = extractCli(child.props.className);
+
+  child = React.cloneElement(child, {
+    className: extractedClassName,
+  });
 
   const language = languages.find(
     language => `language-${language.id}` === extractedClassName
@@ -132,7 +136,7 @@ const Pre: React.FC<React.HTMLProps<HTMLPreElement> & IPre> = (props) => {
           language={language}
           showInvisibles={showInvisibles}
         >
-          {props.children}
+          {child}
         </Code>
       </div>
     </div>

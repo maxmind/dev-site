@@ -41,6 +41,9 @@ const Code: React.FC<ICode> = (props) => {
   if (language.prismSettings.importScript) {
     promises = [
       ...promises,
+      // Needed for PHP
+      import('prismjs/components/prism-markup-templating.js' as string),
+      // To add/remove languages, you also have to update languages.ts
       import(`prismjs/components/prism-${language.id}.js`),
     ];
   }
@@ -145,7 +148,6 @@ const Code: React.FC<ICode> = (props) => {
         className={classNames(
           `language-${language.id}`,
           {
-            'command-line': language.prismSettings.cli,
             'line-numbers': !language.prismSettings.cli,
             [styles['invisibles--hidden']]: (
               language.prismSettings.cli || !props.showInvisibles
