@@ -8,12 +8,14 @@ website, creating an object that contains the details of the
 transaction, and then submitting the transaction to the minFraud service for
 evaluation.
 
+## Implementation
+
 MaxMind offers and highly recommends using official client libraries to access
 our minFraud services.  If you cannot or do not wish to use our client libraries,
 please review our [minFraud API Reference page](/minfraud/api-reference) for
 details on our JSON API.
 
-## 1. Add device tracking to your website
+### 1. Add device tracking to your website
 The Device Tracking Add-On runs on a visiting device so that the minFraud
 service can assign a device ID and begin collecting fingerprint information.
 This helps detect fraudsters if they change or enable proxies while browsing
@@ -42,7 +44,7 @@ with your MaxMind account ID:
 ```
 
 
-## 2. Install the minFraud client library
+### 2. Install the minFraud client library
 We have a collection of officially supported libraries for you to interact with
 the minFraud API:
 
@@ -99,7 +101,7 @@ gem 'minfraud'
 </CodeSet>
 
 
-## 3. Create a minFraud client object
+### 3. Create a minFraud client object
 To interact with our API, you need to create a new client object.  For this you
 will need your MaxMind account ID and license key:
 
@@ -140,7 +142,7 @@ end
 </CodeSet>
 
 
-## 4. Create a transaction object
+### 4. Create a transaction object
 The transaction object represents a customer's transaction that you are sending
 to the minFraud service for evaluation. The customer's IP address is the only
 required input, but including [more
@@ -399,7 +401,7 @@ assessment = Minfraud::Assessments.new(
 
 </CodeSet>
 
-## 5. Submit the transaction object for evaluation
+### 5. Submit the transaction object for evaluation
 Our client libraries provide a distinct method for each minFraud service.  Use
 the appropriate method to submit the transaction object to the minFraud Score,
 Insights, or Factors service.
