@@ -2,9 +2,9 @@ type IndentStyle =  'space' | 'tab';
 
 interface IPrismSettings {
   cli?: {
-    'data-filter-output': string;
-    'data-host': string;
-    'data-user': string;
+    'data-filter-output'?: string;
+    'data-host'?: string;
+    'data-user'?: string;
   };
   importScript?: boolean;
   whitespace: {
@@ -61,8 +61,6 @@ export const languages: ILanguage[] = [
     prismSettings: {
       cli: {
         'data-filter-output': ' >',
-        'data-host': 'maxmind',
-        'data-user': 'docs',
       },
       whitespace: {
         indentSize: 2,
@@ -104,8 +102,19 @@ export const languages: ILanguage[] = [
     },
   },
   {
+    id: 'java',
+    label: 'Java',
+    prismSettings: {
+      importScript: true,
+      whitespace: {
+        indentSize: 2,
+        indentStyle: 'space' as IndentStyle,
+      },
+    },
+  },
+  {
     id: 'javascript',
-    label: 'JavaScript',
+    label: 'Node',
     prismSettings: {
       importScript: true,
       whitespace: {
@@ -117,6 +126,17 @@ export const languages: ILanguage[] = [
   {
     id: 'json',
     label: 'JSON',
+    prismSettings: {
+      importScript: true,
+      whitespace: {
+        indentSize: 2,
+        indentStyle: 'space' as IndentStyle,
+      },
+    },
+  },
+  {
+    id: 'markdown',
+    label: 'Markdown',
     prismSettings: {
       importScript: true,
       whitespace: {
