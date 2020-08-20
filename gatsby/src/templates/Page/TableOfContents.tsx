@@ -22,23 +22,36 @@ const renderItems = (
   <ul
     className={styles.list}
   >
-    {items.map((item, index) => (
-      <li
-        className={classNames(
-          styles.listItem,
-          (currentItem && currentItem === item.url)
-            ? styles['item--active'] : undefined
-        )}
-        key={`toc-item-${index}`}
-      >
-        <a
-          href={item.url}
+    {items.map((item, index) => {
+      let itemNumber;
+      let { title } = item;
+      const regex = new RegExp(/^(\d+)\.\s+([\s|\w]*)$/);
+      const matches = title.match(regex);
+
+      if (matches) {
+        itemNumber = `${matches[1]}. `;
+        title = matches[2];
+      }
+
+      return (
+        <li
+          className={classNames(
+            styles.listItem,
+            (currentItem && currentItem === item.url)
+              ? styles['item--active'] : undefined
+          )}
+          data-item-number={itemNumber}
+          key={`toc-item-${index}`}
         >
-          {item.title}
-        </a>
-        {item.items && renderItems(item.items, currentItem)}
-      </li>
-    ))}
+          <a
+            href={item.url}
+          >
+            {title}
+          </a>
+          {item.items && renderItems(item.items, currentItem)}
+        </li>
+      );
+    })}
   </ul>
 );
 
