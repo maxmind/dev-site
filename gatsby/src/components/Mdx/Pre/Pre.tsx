@@ -96,7 +96,7 @@ const Pre: React.FC<React.HTMLProps<HTMLPreElement> & IPre> = (props) => {
 
   const codeExample = (
     <div
-      className={styles.container}
+      className={classNames(styles.container, props.hidden && styles.hidden)}
     >
       <div
         className={styles.toolbar}

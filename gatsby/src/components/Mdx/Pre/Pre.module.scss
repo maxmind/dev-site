@@ -51,3 +51,9 @@
 .container pre {
   margin-top: 0 !important;
 }
+
+.hidden {
+  max-height: 0;
+  overflow: hidden;
+  visibility: hidden;
+}

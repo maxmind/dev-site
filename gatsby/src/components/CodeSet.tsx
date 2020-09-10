@@ -110,25 +110,20 @@ const CodeSet: React.FC = (props) => {
 
   return (
     <div
+      className={styles.wrapper}
       key={key}
     >
+      {nav}
       {React.Children.map(orderedChildren, child => {
         if (React.isValidElement(child)) {
-          if (extractLanguage(child.props.children.props.className) === activeLanguage) {
-            return wrapCodeExample(
-              (
-                <>
-                  {nav}
-                  <Pre
-                    {...child.props}
-                    hasWrapper={false}
-                  />
-                </>
-              ),
-              undefined,
-              key,
-            );
-          }
+          return (
+                <Pre
+                  {...child.props}
+                  hasWrapper={false}
+                  hidden={extractLanguage(child.props.children.props.className) !== activeLanguage}
+                  key
+                />
+            )
         }
       })}
     </div>
