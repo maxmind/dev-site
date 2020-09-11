@@ -1,14 +1,5 @@
 @import '../styles/variables';
 
-.wrapper {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin: 0 var(--mm-spacing);
-  @include pattern;
-}
-
 .nav {
   background-color: #3c3b62;
   border-radius: var(--mm-border-radius) var(--mm-border-radius) 0 0;
