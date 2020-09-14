@@ -1,14 +1,5 @@
 @import '../styles/variables';
 
-.wrapper {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin: 0 var(--mm-spacing);
-  @include pattern;
-}
-
 .container {
   display: inline-block;
   position: relative;
@@ -50,4 +41,10 @@
 // TODO - target class names instead of element
 .container pre {
   margin-top: 0 !important;
+}
+
+.hidden {
+  max-height: 0;
+  overflow: hidden;
+  visibility: hidden;
 }

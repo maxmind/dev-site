@@ -9,22 +9,7 @@ import Button from './Button';
 import Code from './Code';
 import Message, { State as MessageState } from './Message';
 import styles from './Pre.module.scss';
-
-export const wrapCodeExample = (
-  codeExample: React.ReactElement,
-  className: string | undefined,
-  key: string,
-): React.ReactElement => (
-  <div
-    className={classNames(
-      className,
-      styles.wrapper,
-    )}
-    key={key}
-  >
-    {codeExample}
-  </div>
-);
+import Wrapper from './Wrapper';
 
 interface IPre {
   hasWrapper?: boolean;
@@ -96,7 +81,7 @@ const Pre: React.FC<React.HTMLProps<HTMLPreElement> & IPre> = (props) => {
 
   const codeExample = (
     <div
-      className={styles.container}
+      className={classNames(styles.container, props.hidden && styles.hidden)}
     >
       <div
         className={styles.toolbar}
@@ -143,11 +128,11 @@ const Pre: React.FC<React.HTMLProps<HTMLPreElement> & IPre> = (props) => {
   );
 
   if (hasWrapper) {
-    return wrapCodeExample(
-      codeExample,
-      props.className,
-      key
-    );
+    return (
+      <Wrapper className={props.className} key={key}>
+        {codeExample}
+      </Wrapper>
+    )
   }
 
   return codeExample;
