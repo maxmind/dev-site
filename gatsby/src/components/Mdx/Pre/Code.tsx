@@ -105,7 +105,13 @@ const Code: React.FC<ICode> = (props) => {
     ];
   }
 
+  const mmReactCodeMount = new Event('mm-react-code-mount');
+
   React.useEffect(() => {
+    Promise.race(promises).then(() => {
+      document.dispatchEvent(mmReactCodeMount);
+    });
+
     Promise.all(promises).then(() => {
       const { indentSize, indentStyle } =  language.prismSettings.whitespace;
 
