@@ -109,19 +109,18 @@ const CodeSet: React.FC = (props) => {
   if ( !isClient ) return null;
 
   return (
-    <Wrapper
-    >
+    <Wrapper>
       {nav}
       {React.Children.map(orderedChildren, child => {
         if (React.isValidElement(child)) {
           return (
-                <Pre
-                  {...child.props}
-                  hasWrapper={false}
-                  hidden={extractLanguage(child.props.children.props.className) !== activeLanguage}
-                  key
-                />
-            )
+            <Pre
+              {...child.props}
+              hasWrapper={false}
+              hidden={extractLanguage(child.props.children.props.className) !== activeLanguage}
+              key={key}
+            />
+          );
         }
       })}
     </Wrapper>
