@@ -3,6 +3,7 @@
 
 // import reporter from 'postcss-reporter';
 import { GatsbyConfig } from 'gatsby';
+import remarkExternalLinks from 'remark-external-links';
 import remarkSlug from 'remark-slug';
 // import stylelint from 'stylelint';
 
@@ -62,6 +63,7 @@ export default {
           '.md',
         ],
         remarkPlugins: [
+          remarkExternalLinks,
           remarkSlug,
         ],
       },
@@ -93,6 +95,14 @@ export default {
         /* eslint-enable @typescript-eslint/camelcase */
       },
       resolve: 'gatsby-plugin-manifest',
+    },
+    {
+      options: {
+        rule: {
+          include: /assets/,
+        },
+      },
+      resolve: 'gatsby-plugin-react-svg',
     },
     // {
     //   options: {
