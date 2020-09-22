@@ -129,10 +129,13 @@ const Pre: React.FC<React.HTMLProps<HTMLPreElement> & IPre> = (props) => {
 
   if (hasWrapper) {
     return (
-      <Wrapper className={props.className} key={key}>
+      <Wrapper
+        className={props.className}
+        key={key}
+      >
         {codeExample}
       </Wrapper>
-    )
+    );
   }
 
   return codeExample;

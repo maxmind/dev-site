@@ -1,5 +1,21 @@
 @import '../../styles/variables';
 
 .a {
+  align-items: center;
+  border-bottom: 2px dotted var(--mm-color-display-text);
   color: var(--mm-color-display-text);
+  display: inline-flex;
+  height: 20px;
+  text-decoration: none;
+}
+
+a:hover {
+  border-bottom-style: solid;
+}
+
+.a[target=_blank] svg {
+  fill: var(--mm-color-display-text);
+  height: auto;
+  margin-left: 5px;
+  width: 15px;
 }
