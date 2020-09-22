@@ -48,7 +48,8 @@ $containers: (
   position: relative;
   scroll-margin-top: calc(var(--page-header-height) + var(--mm-spacing));
 
-  + p {
+  + p,
+  + [class*='Table-module'] {
     margin-top: calc(var(--mm-spacing) / 2);
   }
 
@@ -75,9 +76,7 @@ $containers: (
   @include max-width;
 }
 
-@mixin scrollbars {
-  $scroll-color: rgba(255, 255, 255, 0.2);
-
+@mixin scrollbars($scroll-color: rgba(255, 255, 255, 0.2)) {
   scrollbar-color: $scroll-color transparent;
   scrollbar-width: thin;
 

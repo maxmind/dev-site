@@ -1,7 +1,7 @@
-tbody .tr {
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
+thead .tr th {
+  background: rgba(255, 255, 255, 0.7);
 }
 
-.tr:nth-of-type(even) {
-  background: rgba(255, 255, 255, 0.05);
+tbody .tr:nth-of-type(even) td {
+  background: rgba(255, 255, 255, 0.7);
 }
