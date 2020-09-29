@@ -1,12 +1,12 @@
 import { useLocation } from '@reach/router';
 import classNames from 'classnames';
-import { SchemaObject } from 'openapi3-ts';
+import { OpenAPIV3 } from 'openapi-types';
 import PropTypes from 'prop-types';
 import React from 'react';
 
-import { parseSchema } from '../../../../specs';
 import Type from '../Type';
 import { getRefAnchorLink, renderMarkdownElement } from '../utils';
+import parseSchema from './parseSchema';
 import styles from './Properties.module.scss';
 
 interface IRow {
@@ -95,14 +95,14 @@ Row.propTypes = {
 };
 
 const renderObjectRows = (
-  schema: SchemaObject,
+  schema: OpenAPIV3.SchemaObject,
   schemaName: string,
   handleHightlightLines: (lines: string) => void,
 ): React.ReactElement[] => {
   return Object
-    .entries(schema.properties as SchemaObject)
+    .entries(schema.properties as unknown as OpenAPIV3.SchemaObject)
     .map((
-      property: [string, SchemaObject],
+      property: [string, OpenAPIV3.SchemaObject],
       index: number
     ): React.ReactElement => {
       const [
@@ -112,7 +112,7 @@ const renderObjectRows = (
 
       const type = properties.type || (
         <>
-          {getRefAnchorLink(properties.$ref)}
+          {getRefAnchorLink((properties as any).$ref)}
         </>
       );
 
@@ -122,7 +122,7 @@ const renderObjectRows = (
           format={properties.format && `(${properties.format})`}
           handleHightlightLines={handleHightlightLines}
           key={`row-${index}`}
-          lineNumbers={properties['x-line-numbers']}
+          lineNumbers={(properties as any)['x-line-numbers']}
           name={name}
           schemaName={schemaName}
           type={type}
@@ -132,14 +132,15 @@ const renderObjectRows = (
 };
 
 const renderArrayRows = (
-  schema: SchemaObject,
+  schema: OpenAPIV3.ArraySchemaObject,
   schemaName: string,
   handleHightlightLines: (lines: string) => void,
 ): React.ReactElement => {
   return (
     <Row
       description={schema.description}
-      format={`<${schema.items?.$ref}>[]`}
+      format={(schema.items as any)?.$ref
+        && `<${(schema.items as any)?.$ref}>[]`}
       handleHightlightLines={handleHightlightLines}
       name="array"
       schemaName={schemaName}
@@ -149,7 +150,7 @@ const renderArrayRows = (
 };
 
 const renderRows = (
-  schema: SchemaObject,
+  schema: OpenAPIV3.SchemaObject,
   schemaName: string,
   handleHightlightLines: (lines: string) => void,
 ):  React.ReactElement => {
@@ -178,7 +179,7 @@ const renderRows = (
 
 
 interface IProperties {
-  data: SchemaObject;
+  data: OpenAPIV3.SchemaObject;
   handleHightlightLines: (lines: string) => void;
   schemaName: string;
 }
@@ -186,7 +187,11 @@ interface IProperties {
 const Properties: React.FC<IProperties> = (props) => {
   const schema = parseSchema(props.data);
 
-  return renderRows(schema, props.schemaName, props.handleHightlightLines);
+  return renderRows(
+    schema as OpenAPIV3.SchemaObject,
+    props.schemaName,
+    props.handleHightlightLines
+  );
 };
 
 Properties.propTypes = {
