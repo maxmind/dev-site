@@ -12,16 +12,24 @@ import Schema from './Schema';
 import { ISchema } from './Schema/Schema';
 
 interface IApiReference {
-  description: string;
-  keywords: string[];
-  specJson: unknown;
-  tableOfContents: any;
-  title: string;
-  type?: 'geoip' | 'minfraud';
+  // description: string;
+  // keywords: string[];
+  pageContext: any;
+  // specJson: unknown;
+  // tableOfContents: any;
+  // title: string;
+  // type?: 'geoip' | 'minfraud';
 }
 
 const ApiReference: React.FC<IApiReference> = (props) => {
-  const { description, keywords, specJson, tableOfContents, title } = props;
+  const {
+    description,
+    keywords,
+    spec: specJson,
+    tableOfContents,
+    title,
+    type,
+  } = props.pageContext;
 
   const builder = new OpenApiBuilder(specJson as OpenAPIObject);
   const spec = builder.getSpec();
@@ -41,7 +49,7 @@ const ApiReference: React.FC<IApiReference> = (props) => {
       keywords={keywords}
       tableOfContents={tableOfContents}
       title={title}
-      type={props.type}
+      type={type}
     >
       {sections.map((section: ISchema, index: number) => (
         <Schema
@@ -55,15 +63,16 @@ const ApiReference: React.FC<IApiReference> = (props) => {
 };
 
 ApiReference.propTypes = {
-  description: PropTypes.string.isRequired,
-  keywords: PropTypes.arrayOf(PropTypes.any).isRequired,
-  specJson: PropTypes.any.isRequired,
-  tableOfContents: PropTypes.any.isRequired,
-  title: PropTypes.string.isRequired,
-  type: PropTypes.oneOf([
-    'geoip',
-    'minfraud',
-  ]),
+  pageContext: PropTypes.any.isRequired,
+  // description: PropTypes.string.isRequired,
+  // keywords: PropTypes.arrayOf(PropTypes.any).isRequired,
+  // specJson: PropTypes.any.isRequired,
+  // tableOfContents: PropTypes.any.isRequired,
+  // title: PropTypes.string.isRequired,
+  // type: PropTypes.oneOf([
+  //   'geoip',
+  //   'minfraud',
+  // ]),
 };
 
 export default ApiReference;

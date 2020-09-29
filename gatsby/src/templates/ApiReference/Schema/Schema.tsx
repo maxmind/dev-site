@@ -1,4 +1,4 @@
-import { SchemaObject } from 'openapi3-ts';
+import { OpenAPIV3 } from 'openapi-types';
 import PropTypes from 'prop-types';
 import React from 'react';
 
@@ -9,7 +9,7 @@ import styles from './Schema.module.scss';
 
 export interface ISchema {
   name: string;
-  schema: SchemaObject;
+  schema: OpenAPIV3.SchemaObject;
 }
 
 const Schema: React.FC<ISchema> = (props) => {

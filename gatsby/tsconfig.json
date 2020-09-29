@@ -6,7 +6,7 @@
     "jsx": "preserve",
     "lib": [
       "dom",
-      "esnext"
+      "ES2019"
     ],
     "module": "commonjs",
     "noEmit": true,
@@ -16,7 +16,7 @@
     },
     "resolveJsonModule": true,
     "strict": true,
-    "target": "esnext"
+    "target": "ES2019"
   },
   "exclude": [
     "node_modules",

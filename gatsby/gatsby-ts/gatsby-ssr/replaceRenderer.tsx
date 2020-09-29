@@ -37,7 +37,10 @@ export const replaceRenderer: GatsbySSR['replaceRenderer'] = (
   const cssFileNameBase = (props.pathname as string)
     .replace(/^\/|\/$/g, '')
     .replace('/', '--')
+    .replace('/', '.')
     .replace('.html', '');
+
+  console.log(props.pathname, cssFileNameBase);
 
   const cssFileName =
     `inline---${cssFileNameBase || 'index'}.${filenameHash}.css`;

@@ -1,5 +1,5 @@
 import classNames from 'classnames';
-import { SchemasObject } from 'openapi3-ts';
+import { OpenAPIV3 } from 'openapi-types';
 import PropTypes from 'prop-types';
 import React from 'react';
 import { FaAngleDoubleDown } from 'react-icons/fa';
@@ -13,7 +13,7 @@ interface IContent {
   handleHightlightLines: (lines: string) => void;
   isExpanded?: boolean;
   name: string;
-  schema: SchemasObject;
+  schema: OpenAPIV3.SchemaObject;
 }
 
 const Content: React.FC<IContent> = (
