@@ -4,4 +4,4 @@
  * See: https://www.gatsbyjs.org/docs/browser-apis/
  */
 
-export * from './gatsby-ts/gatsby-browser';
+export * from './src/gatsby/gatsby-browser';

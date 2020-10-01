@@ -2,7 +2,7 @@
 import { merge } from 'lodash';
 import { OpenAPIV3 } from 'openapi-types';
 
-import { isSchemaObject } from '../../../../../utils/openapi';
+import { isSchemaObject } from '../../../../utils/openapi';
 
 const parseSchema = (
   schema: OpenAPIV3.Document

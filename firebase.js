@@ -1,7 +1,7 @@
 /**
- * The Firebase config is typically managed in firebase.json. However, JSON is
- * a pain to manage when serveral hosting environments all share the same config
- * options.
+ * The Firebase config is typically managed in firebase.json. However, this JSON
+ * file is a pain to manage because several hosting environments share the same
+ * config options.
  *
  * This file generates a firebase.json file when running the following commands:
  *    `yarn deploy`
@@ -13,7 +13,14 @@ const fs = require('fs');
 
 const hostingConfig = {
   ignore: [
+    'content',
+    'firebase.js',
     'firebase.json',
+    'gatsby-*.js',
+    'package.json',
+    'src',
+    'tsconfig.json',
+    'yarn.lock',
     '**/.*',
     '**/node_modules/**',
   ],
