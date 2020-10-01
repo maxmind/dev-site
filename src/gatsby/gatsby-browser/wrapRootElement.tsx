@@ -3,8 +3,8 @@ import { GatsbyBrowser, WrapRootElementBrowserArgs } from 'gatsby';
 import React from 'react';
 import { IconContext } from 'react-icons';
 
-import * as components from '../../src/components/Mdx';
-import { StoreProvider } from '../../src/store';
+import * as components from '../../components/Mdx';
+import { StoreProvider } from '../../store';
 
 export const wrapRootElement: GatsbyBrowser['wrapRootElement'] = (
   props: WrapRootElementBrowserArgs

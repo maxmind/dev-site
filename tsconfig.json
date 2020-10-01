@@ -12,7 +12,7 @@
     "noEmit": true,
     "noUnusedLocals": false,
     "paths": {
-      "*": ["./gatsby-ts/types/*"]
+      "*": ["src/types/*"]
     },
     "resolveJsonModule": true,
     "strict": true,

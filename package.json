@@ -111,12 +111,7 @@
     }
   },
   "jest": {
-    "preset": "ts-jest",
-    "roots": [
-      "<rootDir>/gatsby-ts",
-      "<rootDir>/src",
-      "<rootDir>/utils"
-    ]
+    "preset": "ts-jest"
   },
   "license": "MIT",
   "lint-staged": {
@@ -141,8 +136,8 @@
   },
   "scripts": {
     "build": "gatsby clean && gatsby build",
-    "deploy": "node ./firebase-json.js && firebase deploy --only hosting:staging",
-    "deploy:ci": "node ./firebase-json.js && firebase deploy --only hosting:production --token \"$FIREBASE_TOKEN\"",
+    "deploy": "node ./firebase.js && firebase deploy --only hosting:staging",
+    "deploy:ci": "node ./firebase.js && firebase deploy --only hosting:production --token \"$FIREBASE_TOKEN\"",
     "develop": "gatsby clean && gatsby develop",
     "lint": "run-p lint:*",
     "lint:configs": "eslint .*rc.js --no-ignore",
@@ -150,7 +145,7 @@
     "lint:json": "eslint . --ext json",
     "lint:scripts": "eslint . --ext js,ts,tsx",
     "lint:styles": "stylelint ./src/**/*.{css,scss,sass}",
-    "serve": "node ./firebase-json.js && firebase serve --only hosting:local",
+    "serve": "node ./firebase.js && firebase serve --only hosting:local",
     "start": "yarn run develop",
     "test": "jest"
   },

@@ -16,4 +16,4 @@ require('@babel/register')({
   ],
 });
 
-module.exports = require('./gatsby-ts/gatsby-node');
+module.exports = require('./src/gatsby/gatsby-node');

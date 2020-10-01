@@ -1,5 +1,4 @@
 import { CreateWebpackConfigArgs, GatsbyNode } from 'gatsby';
-import path from 'path';
 
 export const onCreateWebpackConfig: GatsbyNode['onCreateWebpackConfig']= (
   props: CreateWebpackConfigArgs
