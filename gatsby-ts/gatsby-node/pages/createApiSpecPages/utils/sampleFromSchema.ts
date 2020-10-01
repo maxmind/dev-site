@@ -1,13 +1,13 @@
 /* eslint-disable security/detect-object-injection */
 /* eslint-disable filenames/match-exported */
+import merge from 'lodash/merge';
+import { OpenAPIV3 } from 'openapi-types';
+
 import {
   isArraySchemaObject,
   isNonArraySchemaObject,
   isSchemaObject,
 } from '../../../../../utils/openapi';
-import merge from 'lodash/merge';
-import { OpenAPIV3 } from 'openapi-types';
-
 import getPrimitive from './getPrimitive';
 import normalizeArray from './normalizeArray';
 import normalizeObject from './normalizeObject';

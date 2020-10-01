@@ -1,9 +1,9 @@
 import sortKeys from './sortKeys';
 
 const obj = {
-  c: 'c',
-  b: 'b',
   a: 'a',
+  b: 'b',
+  c: 'c',
 };
 
 const nestedObject = {
@@ -19,8 +19,8 @@ const arrayOfObjects = [
 const arrayOfNestedObjects = [
   nestedObject,
   {
-    foo: 'foo',
     bar: 'bar',
+    foo: 'foo',
   },
   nestedObject,
 ];
@@ -43,7 +43,7 @@ describe('sorkKeys()', () => {
         a: 'a',
         b: 'b',
         c: 'c',
-      }
+      },
     });
   });
 
@@ -58,7 +58,7 @@ describe('sorkKeys()', () => {
         a: 'a',
         b: 'b',
         c: 'c',
-      }
+      },
     ]);
   });
 
@@ -72,7 +72,7 @@ describe('sorkKeys()', () => {
           a: 'a',
           b: 'b',
           c: 'c',
-        }
+        },
       },
       {
         bar: 'bar',
@@ -86,7 +86,7 @@ describe('sorkKeys()', () => {
           a: 'a',
           b: 'b',
           c: 'c',
-        }
+        },
       },
     ]);
   });

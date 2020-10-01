@@ -55,7 +55,7 @@ typings/
 .env*
 
 # gatsby files
-.cache/
+.cache
 public
 
 # Mac files
@@ -70,3 +70,7 @@ yarn-error.log
 
 # VSCode
 .vscode
+
+# Firebase
+.firebase
+firebase.json

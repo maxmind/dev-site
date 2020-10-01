@@ -42,7 +42,7 @@ export default {
     {
       options: {
         name: 'content',
-        path: `${GATSBY_ROOT}/../content/`,
+        path: `${GATSBY_ROOT}/content/`,
       },
       resolve: 'gatsby-source-filesystem',
     },
