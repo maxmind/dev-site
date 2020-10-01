@@ -2,7 +2,11 @@ import normalizeObject from './normalizeObject';
 
 describe('normalizeObject()', () => {
   it('returns object when given an object', () => {
-    expect(normalizeObject({a: 'a'})).toEqual({a: 'a'});
+    expect(normalizeObject({
+      a: 'a',
+    })).toEqual({
+      a: 'a',
+    });
   });
 
   it('returns an object when given an array', () => {
@@ -14,4 +18,4 @@ describe('normalizeObject()', () => {
     expect(normalizeObject('a')).toEqual({});
     expect(normalizeObject(true)).toEqual({});
   });
-})
+});

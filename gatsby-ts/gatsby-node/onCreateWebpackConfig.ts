@@ -25,22 +25,4 @@ export const onCreateWebpackConfig: GatsbyNode['onCreateWebpackConfig']= (
       },
     });
   }
-
-  /**
-   * Ensure that correct packages are resolved when running Gatsby. This happens
-   * because this project uses Yarn workspaces. Some packages that have
-   * dependencies on others try to resolve them in the wrong places. The module
-   * resolution below makes the dependency paths explicit rather than implicit.
-   */
-  props.actions.setWebpackConfig({
-    resolve: {
-      alias: {
-        '@mdx-js/react': path.resolve(
-          __dirname,
-          '../../node_modules/@mdx-js/react'
-        ),
-        react: path.resolve(__dirname, '../../node_modules/react'),
-      },
-    },
-  });
 };
