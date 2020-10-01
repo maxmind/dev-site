@@ -3,6 +3,6 @@
  *
  * See: https://www.gatsbyjs.org/docs/ssr-apis/
  */
-import { replaceRenderer, wrapRootElement } from './gatsby-ts/gatsby-ssr';
+import { replaceRenderer, wrapRootElement } from './src/gatsby/gatsby-ssr';
 
 export { replaceRenderer, wrapRootElement };

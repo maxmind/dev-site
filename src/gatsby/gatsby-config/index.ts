@@ -16,7 +16,7 @@ const THESE_PLUGINS_MUST_COME_LAST = [
   'gatsby-plugin-csp',
 ];
 
-const GATSBY_ROOT = `${__dirname}/../../`;
+const GATSBY_ROOT = `${__dirname}/../../../`;
 
 export default {
   plugins: [
