@@ -116,16 +116,16 @@
   "license": "MIT",
   "lint-staged": {
     "**/*.{json}": [
-      "lint:json"
+      "yarn lint:json"
     ],
     "content/**/*.{mdx}": [
-      "lint:content"
+      "yarn lint:content"
     ],
     "**/*.{js,ts,tsx}": [
-      "lint:scripts"
+      "yarn lint:scripts"
     ],
     "src/**/*.{[s]css}": [
-      "lint:styles"
+      "yarn lint:styles"
     ]
   },
   "name": "dev-site",
