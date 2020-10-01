@@ -129,11 +129,17 @@ module.exports = {
   ],
   root: true,
   rules: {
-    '@typescript-eslint/interface-name-prefix': [
-      1,
+    '@typescript-eslint/naming-convention': [
+      'error',
       {
-        allowUnderscorePrefix: true,
-        prefixWithI: 'always',
+        custom: {
+          match: true,
+          regex: '^I[A-Z]',
+        },
+        format: [
+          'PascalCase',
+        ],
+        selector: 'interface',
       },
     ],
     'array-bracket-newline': [
