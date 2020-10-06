@@ -37,6 +37,17 @@
   }
 }
 
+.nav {
+  align-items: center;
+  display: flex;
+  height: calc(var(--page-header-height) - 10px);
+  padding: 0 var(--mm-spacing);
+}
+
+.logo {
+  width: 200px;
+}
+
 .toggle {
   background: var(--mm-color-background);
   border: 1px solid var(--mm-color-border);
