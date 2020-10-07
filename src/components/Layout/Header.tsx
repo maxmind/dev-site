@@ -20,7 +20,7 @@ const Header: React.FC<IHeader> = (props) => {
         <a className={styles.logo} href="/">
           <Logo />
         </a>
-        <input type="search" />
+        <input className={styles.searchBar} placeholder="Search" type="search" />
       </nav>
       <button
         aria-label={isSidebarOpen ? 'Open menu' : 'Close menu'}

@@ -48,6 +48,12 @@
   width: 200px;
 }
 
+.searchBar {
+  margin: 0 var(--mm-spacing);
+  padding: 5px;
+  width: 100%;
+}
+
 .toggle {
   background: var(--mm-color-background);
   border: 1px solid var(--mm-color-border);
