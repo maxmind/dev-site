@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "esModuleInterop": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "lib": [
+      "dom",
+      "ES2019"
+    ],
+    "module": "commonjs",
+    "noEmit": true,
+    "noUnusedLocals": false,
+    "paths": {
+      "*": ["src/types/*"]
+    },
+    "resolveJsonModule": true,
+    "strict": true,
+    "target": "ES2019"
+  },
+  "exclude": [
+    "node_modules",
+    "public",
+    ".cache"
+  ]
+}

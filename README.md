@@ -1,7 +1,7 @@
 <h3 align="center">
-  <img 
-    alt="MaxMind" 
-    src=".github/images/maxmind-logo-with-styles.svg" 
+  <img
+    alt="MaxMind"
+    src=".github/images/maxmind-logo-with-styles.svg"
     width="300"
   />
   <br/>
@@ -13,12 +13,12 @@
 
 ## Overview
 
-* __Static Site Generator__: [GatsbyJS](https://www.gatsbyjs.org/) + 
-[TypeScript](https://www.typescriptlang.org/) + 
-[CSS Modules](https://github.com/css-modules/css-modules) + 
+* __Static Site Generator__: [GatsbyJS](https://www.gatsbyjs.org/) +
+[TypeScript](https://www.typescriptlang.org/) +
+[CSS Modules](https://github.com/css-modules/css-modules) +
 [MDX](https://mdxjs.com/)
 * __Linting__: [ESLint](https://eslint.org/) +
-[StyleLint](https://stylelint.io/) + 
+[StyleLint](https://stylelint.io/) +
 [RemarkLint](https://github.com/remarkjs/remark-lint)
 * __Hosting__: [Firebase](https://firebase.google.com/docs/hosting)
 
@@ -62,7 +62,9 @@ yarn serve
 
 ### Testing
 
-(todo)
+```sh
+yarn test
+```
 
 ### Deployments
 This project can be deployed to a staging environment or a production environment.
@@ -77,4 +79,4 @@ yarn deploy
 
 ### Production Environment
 
-Deployment to production is only meant to be done from via GitHub actions as part of our CI/CD pipeline. 
+Deployment to production is only meant to be done from via GitHub actions as part of our CI/CD pipeline.
