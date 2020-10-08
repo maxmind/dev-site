@@ -12,6 +12,7 @@ const browsers = [
 
 module.exports = {
   configBasedir: path.resolve(__dirname),
+  defaultSeverity: 'warning',
   extends: [
     'stylelint-config-recommended',
     'stylelint-config-sass-guidelines',
@@ -26,6 +27,7 @@ module.exports = {
       'custom-properties',
       'declarations',
     ],
+    'max-nesting-depth': 4,
     'order/properties-alphabetical-order': true,
     'plugin/no-unsupported-browser-features': [
       true,
@@ -46,6 +48,7 @@ module.exports = {
         resolveNestedSelectors: true,
       },
     ],
+    'selector-max-compound-selectors': 5,
     'selector-pseudo-class-no-unknown': [
       true,
       {

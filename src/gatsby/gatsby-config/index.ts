@@ -1,11 +1,6 @@
-// TODO: Enable stylelint + postcss integration for feedback
-// using `gatsby develop`
-
-// import reporter from 'postcss-reporter';
 import { GatsbyConfig } from 'gatsby';
 import remarkExternalLinks from 'remark-external-links';
 import remarkSlug from 'remark-slug';
-// import stylelint from 'stylelint';
 
 /**
  * The plugins below must come last in the ordering of the plugins because they
@@ -28,14 +23,6 @@ export default {
         includePaths: [
           'src/styles',
         ],
-        /* eslint-disable array-bracket-newline */
-        postCssPlugins: [
-          // stylelint(),
-          // reporter({
-          //   clearReportedMessages: true,
-          // }),
-        ],
-        /* eslint-enable array-bracket-newline */
       },
       resolve: 'gatsby-plugin-sass',
     },
