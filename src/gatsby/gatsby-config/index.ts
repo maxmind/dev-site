@@ -71,12 +71,11 @@ export default {
       resolve: 'gatsby-source-filesystem',
     },
     'gatsby-plugin-typescript',
-    'gatsby-plugin-typescript-checker',
+    'gatsby-plugin-ts-checker',
     'gatsby-transformer-sharp',
     'gatsby-plugin-sharp',
     {
       options: {
-        /* eslint-disable @typescript-eslint/camelcase */
         background_color: '#663399',
         display: 'minimal-ui',
         // This path must be relative to the Gatsby root
@@ -85,7 +84,6 @@ export default {
         short_name: 'starter',
         start_url: '/',
         theme_color: '#663399',
-        /* eslint-enable @typescript-eslint/camelcase */
       },
       resolve: 'gatsby-plugin-manifest',
     },

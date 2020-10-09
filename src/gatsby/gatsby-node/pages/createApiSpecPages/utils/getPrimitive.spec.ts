@@ -2,9 +2,8 @@ import { OpenAPIV3 } from 'openapi-types';
 
 import getPrimitive from './getPrimitive';
 
-const mockedPrimitives: Record<any, Function> = {
+const mockedPrimitives: Record<string, (param?: any) => void> = {
   string: () => 'foo',
-  // eslint-disable-next-line @typescript-eslint/camelcase
   string_uuid: () => 'bar',
 };
 
