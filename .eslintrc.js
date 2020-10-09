@@ -80,6 +80,19 @@ module.exports = {
       ],
       parser: '@typescript-eslint/parser',
       rules: {
+        '@typescript-eslint/naming-convention': [
+          'error',
+          {
+            custom: {
+              match: true,
+              regex: '^I[A-Z]',
+            },
+            format: [
+              'PascalCase',
+            ],
+            selector: 'interface',
+          },
+        ],
         'typescript-sort-keys/interface': 1,
         'typescript-sort-keys/string-enum': 1,
       },
@@ -129,13 +142,6 @@ module.exports = {
   ],
   root: true,
   rules: {
-    '@typescript-eslint/interface-name-prefix': [
-      1,
-      {
-        allowUnderscorePrefix: true,
-        prefixWithI: 'always',
-      },
-    ],
     'array-bracket-newline': [
       'warn',
       {

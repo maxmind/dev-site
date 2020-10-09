@@ -5,7 +5,7 @@ import { PrimitiveType } from './primitives';
 
 export default (
   schema: OpenAPIV3.SchemaObject,
-  primitives: Record<PrimitiveType, Function>,
+  primitives: Record<PrimitiveType, (param?: any) => void>,
 ): unknown => {
   const { type, format } = normalizeObject(schema);
 
