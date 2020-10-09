@@ -9,7 +9,7 @@
     "@babel/register": "^7.9.0",
     "@babel/preset-env": "^7.10.3",
     "@babel/preset-react": "^7.10.1",
-    "@mdx-js/mdx": "^1.5.8",
+    "@mdx-js/mdx": "^1.6.18",
     "@mdx-js/react": "^1.5.8",
     "@types/cheerio": "^0.22.18",
     "@types/classnames": "^2.2.10",
