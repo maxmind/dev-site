@@ -5,7 +5,7 @@ import { OpenAPIV3 } from 'openapi-types';
 
 import {
   isArraySchemaObject,
-  isNonArraySchemaObject,
+  isReferenceObject,
   isSchemaObject,
 } from '../../../../../utils/openapi';
 import getPrimitive from './getPrimitive';
@@ -13,71 +13,141 @@ import normalizeArray from './normalizeArray';
 import normalizeObject from './normalizeObject';
 import primitives from './primitives';
 
+const fillSample = ({
+  maxLength,
+  minLength = 1,
+  possibleItems,
+} : {
+  maxLength?: number;
+  minLength?: number;
+  possibleItems: unknown[];
+}) => Array.from({
+  length: maxLength || minLength,
+}, (_, i) => possibleItems[i % possibleItems.length]);
+
+const handleCompositeSchema = (
+  schemas: OpenAPIV3.CompositeSchemaObjects,
+  composedSchema : any = {}
+) : any => {
+  schemas.map((item: any) =>  {
+    if (isReferenceObject(item)) {
+      throw new Error(
+        'Ensure that schemas are dereferenced before sampling them'
+      );
+    }
+
+    if (item.allOf) {
+      return merge(
+        composedSchema,
+        handleCompositeSchema(item.allOf, composedSchema)
+      );
+    }
+
+    if (item.type !== 'object') {
+      throw new Error('`allOf` schemas must have a type value of `object`');
+    }
+
+    return merge(composedSchema, item);
+  });
+
+  return sampleFromSchema(composedSchema);
+};
+
 const sampleFromSchema = (
-  schema: OpenAPIV3.SchemaObject,
-  config: any = {},
+  schema: OpenAPIV3.SchemaComponentObject,
 ): any => {
+  if (isReferenceObject(schema)) {
+    throw new Error(
+      'Ensure that schemas are dereferenced before sampling them'
+    );
+  }
+
   if (schema.allOf) {
-    const composedSchema = {};
-    schema.allOf.map((item: any) => merge(composedSchema, item));
-    return sampleFromSchema(composedSchema as OpenAPIV3.SchemaObject, config);
+    return handleCompositeSchema(schema.allOf);
   }
 
   if (isArraySchemaObject(schema)) {
-    if (isArraySchemaObject(schema) && isSchemaObject(schema.items)) {
-      const { items } = schema;
-
-      if (Array.isArray(items.anyOf)) {
-        return items.anyOf.map((item: any)  => sampleFromSchema(item, config));
-      }
-
-      if (Array.isArray(items.oneOf)) {
-        return items.oneOf.map((item: any)  => sampleFromSchema(item, config));
-      }
-
-      return [
-        sampleFromSchema(items, config),
-      ];
+    if (!isSchemaObject(schema.items)) {
+      return [];
     }
+
+    const {
+      default: def, // avoid keyword
+      example,
+      items,
+      maxLength,
+      minLength,
+    } = schema;
+
+    if (def !== undefined) {
+      return def;
+    }
+
+    if (example !== undefined) {
+      return example;
+    }
+
+    if (items && Array.isArray(items.anyOf)) {
+      const types = items.anyOf.map((item: any)  => sampleFromSchema(item));
+
+      return fillSample({
+        maxLength,
+        minLength,
+        possibleItems: types,
+      });
+    }
+
+    if (items && Array.isArray(items.oneOf)) {
+      const types = items.oneOf.map((item: any)  => sampleFromSchema(item));
+
+      return fillSample({
+        maxLength,
+        minLength,
+        possibleItems: [
+          types[0],
+        ],
+      });
+    }
+
+    if (Object.keys(items).length === 0) {
+      return [];
+    }
+
+    return fillSample({
+      maxLength,
+      minLength,
+      possibleItems: [
+        sampleFromSchema(items),
+      ],
+    });
   }
 
-  if (isNonArraySchemaObject(schema)) {
-    if (schema.type === 'object') {
-      const { properties } = schema;
-      const props = normalizeObject(properties);
-      const obj: any = {};
-      for (const name in props) {
-        if (
-          props[name] && (
-            props[name].deprecated ||
-            (props[name].readOnly && !config.includeReadOnly) ||
-            (props[name].writeOnly && !config.includeWriteOnly)
-          )
-        ) {
-          continue;
-        }
-        obj[name] = sampleFromSchema(props[name], config);
-      }
-
-      return obj;
-    }
-
-    if (schema.enum) {
-      return (schema.default)
-        ? schema.default
-        : normalizeArray(schema.enum)[0];
-    }
-
-    if (schema.example) {
-      return normalizeArray(schema.example)[0];
-    }
-
-    if (schema.type) {
-      return getPrimitive(schema, primitives);
-    }
+  if (schema.example !== undefined) {
+    return normalizeArray(schema.example)[0];
   }
 
-  return;
+  if (schema.type === 'object' && schema.properties) {
+    const { properties } = schema;
+    const props = normalizeObject(properties);
+    const obj: { [key: string]: unknown } = {};
+    for (const name in props) {
+      if (props[name] && props[name].deprecated) {
+        continue;
+      }
+      obj[name] = sampleFromSchema(props[name]);
+    }
+
+    return obj;
+  }
+
+  if (schema.enum) {
+    if (schema.enum.length == 0) {
+      throw new Error('No enumerated types defined for schema');
+    }
+    return normalizeArray(schema.enum)[0];
+  }
+
+  return getPrimitive(schema, primitives);
 };
 
 export default sampleFromSchema;
