@@ -71,7 +71,7 @@ export default {
       resolve: 'gatsby-source-filesystem',
     },
     'gatsby-plugin-typescript',
-    'gatsby-plugin-typescript-checker',
+    'gatsby-plugin-ts-checker',
     'gatsby-transformer-sharp',
     'gatsby-plugin-sharp',
     {
