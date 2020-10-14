@@ -1,5 +1,8 @@
 import { CreateWebpackConfigArgs, GatsbyNode } from 'gatsby';
 
+// eslint-disable-next-line @typescript-eslint/no-var-requires
+const StylelintPlugin = require('stylelint-webpack-plugin');
+
 export const onCreateWebpackConfig: GatsbyNode['onCreateWebpackConfig']= (
   props: CreateWebpackConfigArgs
 ) => {
@@ -22,6 +25,13 @@ export const onCreateWebpackConfig: GatsbyNode['onCreateWebpackConfig']= (
           },
         ],
       },
+      plugins: [
+        new StylelintPlugin({
+          configFile: './.stylelintrc.js',
+          files: 'src/**/*.s(a|c)ss',
+          fix: true,
+        }),
+      ],
     });
   }
 };
