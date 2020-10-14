@@ -14,17 +14,6 @@ module.exports = {
       '*',
     ],
     [
-      'remark-lint-write-good',
-      [
-        'warn',
-        {
-          whitelist: [
-            'read-only',
-          ],
-        },
-      ],
-    ],
-    [
       'lint-file-extension',
       'mdx',
     ],
