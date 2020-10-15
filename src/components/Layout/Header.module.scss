@@ -63,7 +63,6 @@
 
 @include breakpoint('xxl') {
   .search {
-    margin-left: 110px;
     width: calc(100% - 545px);
   }
 }

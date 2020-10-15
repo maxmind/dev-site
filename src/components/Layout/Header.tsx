@@ -34,7 +34,9 @@ const Header: React.FC<IHeader> = (props) => {
           className={styles.toggle}
           onClick={toggleSidebar}
         >
-          <FaBars />
+          <FaBars 
+            aria-hidden="true"
+          />
         </button>
       </nav>
     </header>

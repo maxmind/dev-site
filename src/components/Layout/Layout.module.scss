@@ -18,7 +18,7 @@ $transition: all 0.15s ease-out;
 }
 
 .sidebar--hidden [class*='Sidebar-module--sidebar--'] {
-  transform: translateX(100vw);
+  transform: translate3d(100vw, 0, 0);
 }
 
 @include breakpoint('lg') {
