@@ -121,19 +121,19 @@
   "license": "MIT",
   "lint-staged": {
     ".*rc.js": [
-      "yarn lint:configs:fix"
+      "yarn fix:configs"
     ],
     "**/*.{json}": [
-      "yarn lint:json:fix"
+      "yarn fix:json"
     ],
     "content/**/*.{mdx}": [
-      "yarn lint:content:fix"
+      "yarn fix:content"
     ],
     "**/*.{js,ts,tsx}": [
-      "yarn lint:scripts:fix"
+      "yarn fix:scripts"
     ],
     "src/**/*.{[s]css}": [
-      "yarn lint:styles:fix"
+      "yarn fix:styles"
     ]
   },
   "name": "dev-site",
@@ -152,18 +152,18 @@
     "deploy": "node ./firebase.js && firebase deploy --only hosting:staging",
     "deploy:ci": "node ./firebase.js && firebase deploy --only hosting:production --token \"$FIREBASE_TOKEN\"",
     "develop": "gatsby clean && gatsby develop",
+    "fix": "run-p fix:*",
+    "fix:configs": "yarn lint:configs --fix",
+    "fix:content": "prettier --write **/*.mdx --embedded-language-formatting off --loglevel silent && remark . --output --ext mdx --quiet",
+    "fix:json": "yarn lint:json --fix",
+    "fix:scripts": "yarn lint:scripts --fix",
+    "fix:styles": "yarn lint:styles --fix",
     "lint": "run-p lint:*",
-    "lint:fix": "run-p lint:*:fix",
     "lint:configs": "eslint .*rc.js --no-ignore",
-    "lint:configs:fix": "yarn lint:configs --fix",
     "lint:content": "remark . --ext mdx --quiet",
-    "lint:content:fix": "prettier --write **/*.mdx --embedded-language-formatting off --loglevel silent && remark . --output --ext mdx --quiet",
     "lint:json": "eslint . --ext json",
-    "lint:json:fix": "yarn lint:json --fix",
     "lint:scripts": "eslint . --ext js,ts,tsx",
-    "lint:scripts:fix": "yarn lint:scripts --fix",
     "lint:styles": "stylelint ./src/**/*.{css,scss,sass}",
-    "lint:styles:fix": "yarn lint:styles --fix",
     "serve": "node ./firebase.js && firebase serve --only hosting:local",
     "start": "yarn run develop",
     "test": "jest"
