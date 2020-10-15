@@ -31,7 +31,6 @@ export const onCreateWebpackConfig: GatsbyNode['onCreateWebpackConfig']= (
         new StylelintPlugin({
           configFile: './.stylelintrc.js',
           files: 'src/**/*.s(a|c)ss',
-          fix: true,
         }),
         {
           apply: (compiler: any) => {
