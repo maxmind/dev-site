@@ -3,27 +3,26 @@ draft: false
 title: Evaluate a Transaction
 ---
 
-Evaluating a transaction consists of setting up device tracking on your
-website, creating an object that contains the details of the
-transaction, and then submitting the transaction to the minFraud service for
-evaluation.
+Evaluating a transaction consists of setting up device tracking on your website,
+creating an object that contains the details of the transaction, and then
+submitting the transaction to the minFraud service for evaluation.
 
 ## Implementation
 
 MaxMind offers and highly recommends using official client libraries to access
-our minFraud services.  If you cannot or do not wish to use our client libraries,
+our minFraud services. If you cannot or do not wish to use our client libraries,
 please review our [minFraud API Reference page](/minfraud/api-reference) for
 details on our JSON API.
 
 ### 1. Add device tracking to your website
+
 The Device Tracking Add-On runs on a visiting device so that the minFraud
 service can assign a device ID and begin collecting fingerprint information.
 This helps detect fraudsters if they change or enable proxies while browsing
 your website.
 
-
-Place the following code in the footer of the HTML webpage and replace `ACCOUNT_ID`
-with your MaxMind account ID:
+Place the following code in the footer of the HTML webpage and replace
+`ACCOUNT_ID` with your MaxMind account ID:
 
 ```html
 <script type="text/javascript">
@@ -43,8 +42,8 @@ with your MaxMind account ID:
 </script>
 ```
 
-
 ### 2. Install the minFraud client library
+
 We have a collection of officially supported libraries for you to interact with
 the minFraud API:
 
@@ -100,9 +99,9 @@ gem 'minfraud'
 
 </CodeSet>
 
-
 ### 3. Create a minFraud client object
-To interact with our API, you need to create a new client object.  For this you
+
+To interact with our API, you need to create a new client object. For this you
 will need your MaxMind account ID and license key:
 
 <CodeSet>
@@ -131,7 +130,6 @@ client = Client(10, 'LICENSEKEY');
 async_client = AsyncClient(10, 'LICENSEKEY');
 ```
 
-
 ```ruby
 Minfraud.configure do |c|
   c.account_id = 10
@@ -141,13 +139,13 @@ end
 
 </CodeSet>
 
-
 ### 4. Create a transaction object
+
 The transaction object represents a customer's transaction that you are sending
 to the minFraud service for evaluation. The customer's IP address is the only
-required input, but including [more
-information](/minfraud/evaluate-a-transaction#full-examples) about the transaction improves
-the accuracy of the transaction's evaluation:
+required input, but including
+[more information](/minfraud/evaluate-a-transaction#full-examples) about the
+transaction improves the accuracy of the transaction's evaluation:
 
 <CodeSet>
 
@@ -402,7 +400,8 @@ assessment = Minfraud::Assessments.new(
 </CodeSet>
 
 ### 5. Submit the transaction object for evaluation
-Our client libraries provide a distinct method for each minFraud service.  Use
+
+Our client libraries provide a distinct method for each minFraud service. Use
 the appropriate method to submit the transaction object to the minFraud Score,
 Insights, or Factors service.
 
@@ -486,22 +485,22 @@ factors_model = assessment.factors.body
 </CodeSet>
 
 ## Validation and error handling
+
 By default, our client libaries will throw an exception if any of the
-transaction object's values are invalid.  The exception is thrown when the
-object is constructed; the python library will raise an error when the
-minFraud service method is called.
+transaction object's values are invalid. The exception is thrown when the object
+is constructed; the python library will raise an error when the minFraud service
+method is called.
 
 If the minFraud request fails, our client libraires will throw an exception,
 raise an error (python), or reject the promise (node).
 
 For more information on errors and exceptions, including their types and
-descriptions, [go to the specific library's documentation page](#links-to-maxmind-client-apis).
-
+descriptions,
+[go to the specific library's documentation page](#links-to-maxmind-client-apis).
 
 ## Full examples
 
 <CodeSet>
-
 
 ```csharp
 using MaxMind.MinFraud;
@@ -1217,14 +1216,14 @@ p score_model.risk_score
 
 </CodeSet>
 
-
 ## Links to MaxMind client APIs
+
 | Language or Framework | Package Repository                                                                          | Documentation                                                 | Version Control                                          |
-|-----------------------|---------------------------------------------------------------------------------------------|---------------------------------------------------------------|----------------------------------------------------------|
+| --------------------- | ------------------------------------------------------------------------------------------- | ------------------------------------------------------------- | -------------------------------------------------------- |
 | .NET (C#)             | [NuGet](https://www.nuget.org/packages/MaxMind.MinFraud)                                    | [GitHub Pages](https://maxmind.github.io/minfraud-api-dotnet) | [Github](https://github.com/maxmind/minfraud-api-dotnet) |
 | Java                  | [Maven Central](https://search.maven.org/#search%7Cga%7C1%7Cg%3A%22com.maxmind.minfraud%22) | [GitHub Pages](https://maxmind.github.io/minfraud-api-java)   | [Github](https://github.com/maxmind/minfraud-api-java)   |
 | Node.js               | [NPM](https://npmjs.com/package/@maxmind/minfraud-api-node)                                 | [GitHub Pages](https://maxmind.github.io/minfraud-api-node/)  | [Github](https://github.com/maxmind/minfraud-api-node)   |
-| Perl   (deprecated)   | [metacpan](https://metacpan.org/release/WebService-MinFraud)                                | [metacpan](https://metacpan.org/pod/WebService::MinFraud)     | [Github](https://github.com/maxmind/minfraud-api-perl)   |
+| Perl (deprecated)     | [metacpan](https://metacpan.org/release/WebService-MinFraud)                                | [metacpan](https://metacpan.org/pod/WebService::MinFraud)     | [Github](https://github.com/maxmind/minfraud-api-perl)   |
 | PHP                   | [Packagist](https://packagist.org/packages/maxmind/minfraud)                                | [GitHub Pages](https://maxmind.github.io/minfraud-api-php)    | [Github](https://github.com/maxmind/minfraud-api-php)    |
 | Python                | [PyPI](https://pypi.python.org/pypi/minfraud)                                               | [Read the Docs](https://minfraud.readthedocs.io/en/latest/)   | [Github](https://github.com/maxmind/minfraud-api-python) |
 | Ruby                  | [RubyGems.org](https://rubygems.org/gems/minfraud)                                          | [RubyDoc.info](https://www.rubydoc.info/gems/minfraud/)       | [Github](https://github.com/maxmind/minfraud-api-ruby)   |
