@@ -1,4 +1,6 @@
+import { exec } from 'child_process';
 import { CreateWebpackConfigArgs, GatsbyNode } from 'gatsby';
+import reporter from 'gatsby-cli/lib/reporter';
 
 // eslint-disable-next-line @typescript-eslint/no-var-requires
 const StylelintPlugin = require('stylelint-webpack-plugin');
@@ -29,8 +31,27 @@ export const onCreateWebpackConfig: GatsbyNode['onCreateWebpackConfig']= (
         new StylelintPlugin({
           configFile: './.stylelintrc.js',
           files: 'src/**/*.s(a|c)ss',
-          fix: false,
         }),
+        {
+          apply: (compiler: any) => {
+            compiler.hooks.watchRun.tapAsync(
+              'RemarkLint',
+              (_: unknown, next: () => void) => exec(
+                'remark . --ext mdx --quiet',
+                (_: unknown, stdout: string, stderr: string) => {
+                  if (stdout) {
+                    reporter.info(stdout);
+                  }
+
+                  if (stderr) {
+                    reporter.warn(`RemarkLink error:\n${stderr}`);
+                  }
+
+                  next();
+                }
+              ));
+          },
+        },
       ],
     });
   }

@@ -23,11 +23,11 @@ module.exports = {
   ],
   rules: {
     indentation: 2,
+    'max-nesting-depth': 4,
     'order/order': [
       'custom-properties',
       'declarations',
     ],
-    'max-nesting-depth': 4,
     'order/properties-alphabetical-order': true,
     'plugin/no-unsupported-browser-features': [
       true,

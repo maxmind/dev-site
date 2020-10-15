@@ -3,22 +3,20 @@ draft: false
 title: minFraud Overview
 ---
 
+by TJ Murphy, @teej_m on Twitter This article was originally published on
+Towards Data Science on Jan 18, 2019.
 
-by TJ Murphy, @teej_m on Twitter
-This article was originally published on Towards Data Science on Jan 18, 2019.
-
-~~Now~~ __you’re__ _in_ a predicament. You know Google Analytics has traffic by geographic
-location, but that’s not gonna cut it. If you want to report on those retention
-rates, lifetime values, or repeat behaviors by geo, you need something you can
-query with SQL, something that lives in your data warehouse.
+~~Now~~ **you’re** _in_ a predicament. You know Google Analytics has traffic by
+geographic location, but that’s not gonna cut it. If you want to report on those
+retention rates, lifetime values, or repeat behaviors by geo, you need something
+you can query with SQL, something that lives in your data warehouse.
 
 ## Google Analytics (h2)
-w
-~~Now~~ __you’re__ _in_ a predicament. You know Google Analytics has traffic by geographic
-location, but that’s not gonna cut it. If you want to report on those retention
-rates, lifetime values, or repeat behaviors by geo, you need something you can
-query with SQL, something that lives in your data warehouse.
 
+w ~~Now~~ **you’re** _in_ a predicament. You know Google Analytics has traffic
+by geographic location, but that’s not gonna cut it. If you want to report on
+those retention rates, lifetime values, or repeat behaviors by geo, you need
+something you can query with SQL, something that lives in your data warehouse.
 
 <CodeSet>
 
@@ -80,6 +78,7 @@ if (err != nil) {
 ```ruby
 puts "hello"
 ```
+
 ```typescript
 import foo, { foobar } from './foobar';
 
@@ -126,7 +125,6 @@ console.log('hello');
 <hello foo="bar" baz>world</hello>
 ```
 
-
 ```typescript
 import foo, { foobar } from './foobar';
 
@@ -139,6 +137,7 @@ const foo = (a: string, b: number) => {
   return `asdfsa${a.toLowerCase()}`;
 };
 ```
+
 ```json
 {
   "foo": "bar",
@@ -150,64 +149,44 @@ const foo = (a: string, b: number) => {
 
 ### Data Warehousing (h3)
 
-~~Now~~ __you’re__ _in_ a predicament. You know Google Analytics has traffic by geographic
-location, but that’s not gonna cut it. If you want to report on those retention
-rates, lifetime values, or repeat behaviors by geo, you need something you can
-query with SQL, something that lives in your data warehouse.
+~~Now~~ **you’re** _in_ a predicament. You know Google Analytics has traffic by
+geographic location, but that’s not gonna cut it. If you want to report on those
+retention rates, lifetime values, or repeat behaviors by geo, you need something
+you can query with SQL, something that lives in your data warehouse.
 
 #### Retention Rates (h4)
 
-~~Now~~ __you’re__ _in_ a predicament. You know Google Analytics has traffic by geographic
-location, but that’s not gonna cut it. If you want to report on those retention
-rates, lifetime values, or repeat behaviors by geo, you need something you can
-query with SQL, something that lives in your data warehouse.
+~~Now~~ **you’re** _in_ a predicament. You know Google Analytics has traffic by
+geographic location, but that’s not gonna cut it. If you want to report on those
+retention rates, lifetime values, or repeat behaviors by geo, you need something
+you can query with SQL, something that lives in your data warehouse.
 
-##### This article was originally published on Towards Data Science on Jan 18, 2019. This article was originally published on Towards Data Science on Jan 18, 2019. (h5)
+##### This article was originally published on Towards Data Science (h5)
 
-~~Now~~ __you’re__ _in_ a predicament. You know Google Analytics has traffic by geographic
-location, but that’s not gonna cut it. If you want to report on those retention
-rates, lifetime values, or repeat behaviors by geo, you need something you can
-query with SQL, something that lives in your data warehouse.
+~~Now~~ **you’re** _in_ a predicament. You know Google Analytics has traffic by
+geographic location, but that’s not gonna cut it. If you want to report on those
+retention rates, lifetime values, or repeat behaviors by geo, you need something
+you can query with SQL, something that lives in your data warehouse.
 
-###### This article was originally published on Towards Data Science on Jan 18, 2019. This article was originally published on Towards Data Science on Jan 18, 2019. (h6)
+###### This article was originally published on Towards Data Science (h6)
 
-~~Now~~ __you’re__ _in_ a predicament. You know Google Analytics has traffic by geographic
-location, but that’s not gonna cut it. If you want to report on those retention
-rates, lifetime values, or repeat behaviors by geo, you need something you can
-query with SQL, something that lives in your data warehouse.
+~~Now~~ **you’re** _in_ a predicament. You know Google Analytics has traffic by
+geographic location, but that’s not gonna cut it. If you want to report on those
+retention rates, lifetime values, or repeat behaviors by geo, you need something
+you can query with SQL, something that lives in your data warehouse.
 
 ## Pageload Performance
 
-~~Now~~ __you’re__ _in_ a predicament. You know Google Analytics has traffic by geographic
-location, but that’s not gonna cut it. If you want to report on those retention
-rates, lifetime values, or repeat behaviors by geo, you need something you can
-query with SQL, something that lives in your data warehouse.
+~~Now~~ **you’re** _in_ a predicament. You know Google Analytics has traffic by
+geographic location, but that’s not gonna cut it. If you want to report on those
+retention rates, lifetime values, or repeat behaviors by geo, you need something
+you can query with SQL, something that lives in your data warehouse.
 
-> But you don’t have anything like that. You know there’s user IP addresses in your
-log data, you just need to turn them into locations. But Redshift doesn’t have a way to
-do that.
+> But you don’t have anything like that. You know there’s user IP addresses in
+> your log data, you just need to turn them into locations. But Redshift doesn’t
+> have a way to do that.
 
-***
-
-* red
-  * red
-  * red
-* green
-  * green
-* blue
-  * blue
-  * blue
-  * blue
-
-1. foo
-    1. foo
-    1. foo
-1. bar
-    1. bar
-1. baz
-    1. baz
-    1. baz
-    1. baz
+* * *
 
 | Behavior Metric           | Perf Metric                             | Percentile | Correlation | Type     | Strength | rSquared |
 | ------------------------- | --------------------------------------- | ---------- | ----------- | -------- | -------- | -------- |
@@ -236,8 +215,8 @@ Right away we notice a problem — this data has something that looks like an IP
 but has a slash and an extra number at the end. This is an IP network
 represented in CIDR notation and itrepresents a range of IPs. It’s composed of
 an IP, a slash, and a number after the slash called a subnet mask. It’s like how
- you might describe a street of physical addresses in New York City by saying
- “The 500 block of west 23rd street.”
+you might describe a street of physical addresses in New York City by saying
+“The 500 block of west 23rd street.”
 
 If we had the network `X.Y.Z.0/24` that would mean “every IP that starts with
 `X.Y.Z`. and has any number between 0 and 255 at the end. In other words, any IP
@@ -373,6 +352,7 @@ Now we have everything we need to enrich our logs with location data using
 GeoIP. Almost everything.
 
 ## Redshift Is Hard
+
 If we join our new MaxMind GeoIP tables to our log data, we will immediately run
 into a problem. Suppose I have some bare bones access logs and try to calculate
 the top 50 regions by traffic.
@@ -387,7 +367,7 @@ CREATE TABLE access_logs (
 
 ### A Suboptimal Query
 
-If you ran this query, you’re going to have a *bad time*. You query will be
+If you ran this query, you’re going to have a _bad time_. You query will be
 running for minutes and you’ll start to sweat. Meanwhile your Redshift admin
 will be hunting for the individual who took down her cluster. Don’t be that
 person.
@@ -409,6 +389,7 @@ person.
 ```
 
 #### What's wrong?
+
 What’s wrong with this query? A quick peek at the `EXPLAIN` plan, the list of
 steps Redshift takes to execute the query, tells all.
 
@@ -426,6 +407,7 @@ matches their preference. Once there they taste-test a minuscule number of
 flavors in comparison to before.
 
 ### Creating an optimized GeoIP lookup table
+
 We will build a new table in Redshift that will replace `maxmind_ipv4_to_geo`
 that’s optimized for GeoIP lookups. We will organize it into distinct sections
 using the first half of the IPs and place each network into it’s proper section.
@@ -495,7 +477,7 @@ And with that, you’re ready to start your analysis. You can use this lookup
 table to join to any other in Redshift with an IP. Just remember to always
 include the join to first_16_bits as that’s the magic behind the approach.
 
----
+* * *
 
 This approach is inspired by a paper I read about optimizing IP lookups in a
 network appliance. I unfortunately can’t find the paper anymore. This post is a
@@ -505,4 +487,3 @@ something simple and performant.
 Thanks to the [dbt](https://www.getdbt.com/) Slack for inspiring this post,
 Julian Ganguli for working with some early code, and to Nick James for reading
 an early draft.
-
