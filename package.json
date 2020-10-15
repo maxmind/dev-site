@@ -88,8 +88,14 @@
     "jest": "^26.5.2",
     "lint-staged": "^10.4.0",
     "npm-run-all": "^4.1.5",
+    "prettier": "^2.1.2",
     "remark-cli": "^8.0.1",
+    "remark-lint-emphasis-marker": "^2.0.1",
+    "remark-lint-list-item-spacing": "^3.0.0",
     "remark-lint-no-empty-url": "^2.0.1",
+    "remark-lint-rule-style": "^2.0.1",
+    "remark-lint-strong-marker": "^2.0.1",
+    "remark-lint-unordered-list-marker-style": "^2.0.1",
     "remark-preset-github": "^3.0.0",
     "remark-preset-lint-markdown-style-guide": "^3.0.1",
     "remark-preset-lint-recommended": "^4.0.1",
@@ -114,17 +120,20 @@
   },
   "license": "MIT",
   "lint-staged": {
+    ".*rc.js": [
+      "yarn lint:configs:fix"
+    ],
     "**/*.{json}": [
-      "yarn lint:json"
+      "yarn lint:json:fix"
     ],
     "content/**/*.{mdx}": [
-      "yarn lint:content"
+      "yarn lint:content:fix"
     ],
     "**/*.{js,ts,tsx}": [
-      "yarn lint:scripts"
+      "yarn lint:scripts:fix"
     ],
     "src/**/*.{[s]css}": [
-      "yarn lint:styles"
+      "yarn lint:styles:fix"
     ]
   },
   "name": "dev-site",
@@ -144,11 +153,17 @@
     "deploy:ci": "node ./firebase.js && firebase deploy --only hosting:production --token \"$FIREBASE_TOKEN\"",
     "develop": "gatsby clean && gatsby develop",
     "lint": "run-p lint:*",
+    "lint:fix": "run-p lint:*:fix",
     "lint:configs": "eslint .*rc.js --no-ignore",
+    "lint:configs:fix": "yarn lint:configs --fix",
     "lint:content": "remark . --ext mdx --quiet",
+    "lint:content:fix": "prettier --write **/*.mdx --embedded-language-formatting off --loglevel silent && remark . --output --ext mdx --quiet",
     "lint:json": "eslint . --ext json",
+    "lint:json:fix": "yarn lint:json --fix",
     "lint:scripts": "eslint . --ext js,ts,tsx",
+    "lint:scripts:fix": "yarn lint:scripts --fix",
     "lint:styles": "stylelint ./src/**/*.{css,scss,sass}",
+    "lint:styles:fix": "yarn lint:styles --fix",
     "serve": "node ./firebase.js && firebase serve --only hosting:local",
     "start": "yarn run develop",
     "test": "jest"
