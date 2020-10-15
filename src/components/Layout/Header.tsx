@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 import React from 'react';
-import { FaArrowLeft, FaArrowRight, FaBars } from 'react-icons/fa';
+import { FaBars } from 'react-icons/fa';
 
 import Logo from '../../assets/svgs/maxmind-logo.svg';
 import styles from './Header.module.scss';
@@ -17,11 +17,18 @@ const Header: React.FC<IHeader> = (props) => {
     <header
       className={styles.header}
     >
-      <nav className={styles.nav}>
-        <a className={styles.logo} href="/">
+      <nav
+        className={styles.nav}
+      >
+        <a
+          className={styles.logo}
+          href="/"
+        >
           <Logo />
         </a>
-        <Search className={styles.search}/>
+        <Search
+          className={styles.search}
+        />
         <button
           aria-label={isSidebarOpen ? 'Open menu' : 'Close menu'}
           className={styles.toggle}

@@ -1,6 +1,6 @@
 import classNames from 'classnames';
 import PropTypes from 'prop-types';
-import React, { createRef, useRef, useState } from 'react';
+import React, { useRef, useState } from 'react';
 import { FaSearch } from 'react-icons/fa';
 
 import styles from './Search.module.scss';
@@ -10,7 +10,10 @@ interface ISearch {
 }
 
 const Search: React.FC<ISearch> = (props) => {
-  const [isMobileOpen, setIsMobileOpen] = useState(false);
+  const [
+    isMobileOpen,
+    setIsMobileOpen,
+  ] = useState(false);
 
   const inputRef = useRef<HTMLInputElement>(null);
 
@@ -19,21 +22,37 @@ const Search: React.FC<ISearch> = (props) => {
     setTimeout(() => {
       inputRef.current?.focus();
     }, 1);
-  }
+  };
 
   return (
-    <div className={props.className}>
-      <div className={classNames(
+    <div
+      className={props.className}
+    >
+      <div
+        className={classNames(
           styles.searchbar,
           isMobileOpen && styles['searchbar--mobile-open']
         )}
       >
-        <FaSearch className={styles.mag} />
-        <input className={styles.input} placeholder="Search" type="search" onBlur={() => setIsMobileOpen(false)} ref={inputRef}/>
+        <FaSearch
+          className={styles.mag}
+        />
+        <input
+          className={styles.input}
+          onBlur={() => setIsMobileOpen(false)}
+          placeholder="Search"
+          ref={inputRef}
+          type="search"
+        />
       </div>
-      <div className={styles['search-mobile']}>
-        <button className={styles['mobile-button']} onClick={toggleMobileOpen}>
-          <FaSearch className={styles['mag-mobile']} />
+      <div
+        className={styles['search-mobile']}
+      >
+        <button
+          className={styles['mobile-button']}
+          onClick={toggleMobileOpen}
+        >
+          <FaSearch />
         </button>
       </div>
     </div>
@@ -42,6 +61,6 @@ const Search: React.FC<ISearch> = (props) => {
 
 Search.propTypes = {
   className: PropTypes.string,
-}
+};
 
 export default Search;
