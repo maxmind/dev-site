@@ -4,7 +4,8 @@
   background: var(--mm-color-sidebar);
   border-right: 1px solid var(--mm-color-border);
   grid-area: sidebar;
-  position: relative;
+  position: fixed;
+  right: 0;
   transition: all 0.15s ease-out;
   z-index: 9;
 }
@@ -151,6 +152,7 @@
 @include breakpoint('lg') {
   .sidebar {
     grid-area: sidebar;
+    position: relative;
     transform: initial !important;
     transition: none;
   }

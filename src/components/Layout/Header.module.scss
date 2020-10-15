@@ -45,24 +45,36 @@
 }
 
 .logo {
+  margin-bottom: -5px;
+  min-width: 200px;
   width: 200px;
 }
 
-.searchBar {
-  margin: 0 var(--mm-spacing);
-  padding: 5px;
+.search {
   width: 100%;
 }
 
+@include breakpoint('lg') {
+  .search {
+    margin-left: 110px;
+    width: calc(100% - 290px);
+  }
+}
+
+@include breakpoint('xxl') {
+  .search {
+    margin-left: 110px;
+    width: calc(100% - 560px);
+  }
+}
+
+
 .toggle {
   background: var(--mm-color-background);
-  border: 1px solid var(--mm-color-border);
+  border: 0;
   border-radius: 0;
   color: #333;
   height: 40px;
-  left: 0;
-  position: absolute;
-  top: 10px;
   width: 50px;
   z-index: 4;
 }

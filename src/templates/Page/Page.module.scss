@@ -103,7 +103,7 @@
     grid-template-areas:
       'header aside'
       'content aside';
-    grid-template-columns: calc(100vw - 640px) 290px;
+    grid-template-columns: calc(100vw - 640px) var(--mm-aside-width);
     grid-template-rows: min-content auto;
     justify-items: start;
   }
