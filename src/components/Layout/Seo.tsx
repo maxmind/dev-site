@@ -8,20 +8,11 @@
 import { graphql, useStaticQuery } from 'gatsby';
 import PropTypes from 'prop-types';
 import React from 'react';
-import Helmet from 'react-helmet';
+import Helmet, { HelmetProps } from 'react-helmet';
 
-interface IMetaItem {
-  content: string;
-  name?: string;
-  property?: string;
-}
-
-export interface ISEO {
-  bodyAttributes?: any;
+export interface ISEO extends HelmetProps {
   description?: string;
   lang?: string;
-  meta?: IMetaItem[];
-  title: string;
 }
 
 const SEO: React.FC<ISEO> = (props) => {

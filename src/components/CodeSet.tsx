@@ -27,10 +27,14 @@ const CodeSet: React.FC = (props) => {
   const orderedChildren = React.Children.toArray(props.children).sort((a,b) => {
     if (React.isValidElement(a) && React.isValidElement(b)) {
       const indexA = languages.findIndex(element =>
-        `language-${element.id}` === extractLanguage(a.props.children.props.className)
+        `language-${element.id}` === extractLanguage(
+          a.props.children.props.className
+        )
       );
       const indexB = languages.findIndex(element =>
-        `language-${element.id}` === extractLanguage(b.props.children.props.className)
+        `language-${element.id}` === extractLanguage(
+          b.props.children.props.className
+        )
       );
 
       if (indexA - indexB > 0) {
@@ -82,7 +86,9 @@ const CodeSet: React.FC = (props) => {
       {
         React.Children.map(orderedChildren, child => {
           if (React.isValidElement(child)) {
-            const className = extractLanguage(child.props.children.props.className);
+            const className = extractLanguage(
+              child.props.children.props.className
+            );
             return (
               <button
                 className={`
@@ -113,11 +119,12 @@ const CodeSet: React.FC = (props) => {
       {nav}
       {React.Children.map(orderedChildren, child => {
         if (React.isValidElement(child)) {
+          const { className } = child.props.children.props;
           return (
             <Pre
               {...child.props}
               hasWrapper={false}
-              hidden={extractLanguage(child.props.children.props.className) !== activeLanguage}
+              hidden={extractLanguage(className) !== activeLanguage}
               key={key}
             />
           );

@@ -94,6 +94,10 @@ Row.propTypes = {
   type: PropTypes.any,
 };
 
+// TODO - Add proper types for anything that uses `TempAny` type
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+type TempAny = any;
+
 const renderObjectRows = (
   schema: OpenAPIV3.SchemaObject,
   schemaName: string,
@@ -112,7 +116,7 @@ const renderObjectRows = (
 
       const type = properties.type || (
         <>
-          {getRefAnchorLink((properties as any).$ref)}
+          {getRefAnchorLink((properties as TempAny).$ref)}
         </>
       );
 
@@ -122,7 +126,7 @@ const renderObjectRows = (
           format={properties.format && `(${properties.format})`}
           handleHightlightLines={handleHightlightLines}
           key={`row-${index}`}
-          lineNumbers={(properties as any)['x-line-numbers']}
+          lineNumbers={(properties as TempAny)['x-line-numbers']}
           name={name}
           schemaName={schemaName}
           type={type}
@@ -139,8 +143,8 @@ const renderArrayRows = (
   return (
     <Row
       description={schema.description}
-      format={(schema.items as any)?.$ref
-        && `<${(schema.items as any)?.$ref}>[]`}
+      format={(schema.items as TempAny)?.$ref
+        && `<${(schema.items as TempAny)?.$ref}>[]`}
       handleHightlightLines={handleHightlightLines}
       name="array"
       schemaName={schemaName}
