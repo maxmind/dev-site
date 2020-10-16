@@ -79,6 +79,7 @@ export const sidebarItems: IItem[] = [
                   {
                     className: styles['item-attribute'],
                     title: 'funds_remaining',
+                    // eslint-disable-next-line max-len
                     to: '/minfraud/api-reference#Response_Score__funds_remaining',
                   },
                   {

@@ -12,13 +12,16 @@ import Schema from './Schema';
 import { ISchema } from './Schema/Schema';
 
 interface IApiReference {
-  // description: string;
-  // keywords: string[];
-  pageContext: any;
-  // specJson: unknown;
-  // tableOfContents: any;
-  // title: string;
-  // type?: 'geoip' | 'minfraud';
+  pageContext: {
+    description: string;
+    keywords: string[];
+    spec: unknown;
+    // TODO - Add type for `tableOfContents`
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    tableOfContents: any;
+    title: string;
+    type?: 'geoip' | 'minfraud';
+  };
 }
 
 const ApiReference: React.FC<IApiReference> = (props) => {
@@ -63,16 +66,18 @@ const ApiReference: React.FC<IApiReference> = (props) => {
 };
 
 ApiReference.propTypes = {
-  pageContext: PropTypes.any.isRequired,
-  // description: PropTypes.string.isRequired,
-  // keywords: PropTypes.arrayOf(PropTypes.any).isRequired,
-  // specJson: PropTypes.any.isRequired,
-  // tableOfContents: PropTypes.any.isRequired,
-  // title: PropTypes.string.isRequired,
-  // type: PropTypes.oneOf([
-  //   'geoip',
-  //   'minfraud',
-  // ]),
+  pageContext: PropTypes.exact({
+    description: PropTypes.string.isRequired,
+    keywords: PropTypes.arrayOf(PropTypes.string.isRequired).isRequired,
+    spec: PropTypes.object.isRequired,
+    tableOfContents: PropTypes.any.isRequired,
+    title: PropTypes.string.isRequired,
+    type: PropTypes.oneOf([
+      'geoip',
+      'minfraud',
+    ] as const).isRequired,
+  }).isRequired,
+
 };
 
 export default ApiReference;

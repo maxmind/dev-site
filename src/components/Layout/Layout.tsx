@@ -25,6 +25,8 @@ interface ILayout {
   className?: string;
   description?: string;
   keywords?: string[];
+  // TODO - Add proper typing for `tableOfContents'
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   tableOfContents?: any;
   title: string;
   type?: 'geoip' | 'geolite' | 'minfraud';
