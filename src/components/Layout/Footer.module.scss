@@ -1,8 +1,113 @@
 @import '../../styles/variables';
 
 .footer {
+  background: rgb(46, 58, 71);
   border-top: 1px solid var(--mm-color-border);
+  color: #fff;
   font-size: 14px;
-  padding: var(--mm-spacing) 0;
+  padding: var(--mm-spacing);
+}
+
+.container {
+  display: grid;
+  row-gap: 20px;
+}
+
+.heading {
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.link {
+  color: #fff;
+  display: block;
+  margin-bottom: 10px;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.branding {
   text-align: center;
+}
+
+.logo {
+  display: block;
+  margin: 0 auto 20px;
+  max-width: 200px;
+}
+
+.social {
+  color: #fff;
+  font-size: 30px;
+
+  &:last-child {
+    margin-left: 10px;
+  }
+}
+
+.copyright {
+  text-align: center;
+}
+
+.terms {
+  text-align: center;
+}
+
+.terms-link {
+  color: #fff;
+  text-decoration: none;
+
+  &:first-child::after {
+    content: '|';
+    padding: 0 10px;
+  }
+}
+
+@include breakpoint('sm') {
+  .container {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .branding,
+  .copyright,
+  .terms {
+    grid-column-end: 3;
+    grid-column-start: 1;
+  }
+
+  .branding {
+    margin-bottom: 20px;
+  }
+}
+
+@include breakpoint('xl') {
+  .container {
+    column-gap: 15px;
+    grid-template-columns: repeat(5, 1fr);
+    row-gap: 10px;
+  }
+
+  .branding {
+    grid-column-end: 1;
+    grid-column-start: 1;
+  }
+
+  .copyright,
+  .terms {
+    grid-column-end: 6;
+    grid-column-start: 1;
+  }
+
+  .copyright {
+    margin-top: 15px;
+  }
+}
+
+@include breakpoint('xxxl') {
+  margin: 0 auto;
+  max-width: 80%;
 }
