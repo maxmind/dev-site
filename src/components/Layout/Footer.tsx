@@ -50,12 +50,14 @@ const Footer: React.FC = () => (
         </a>
         <a
           className={styles.link}
+          // eslint-disable-next-line max-len
           href="https://www.maxmind.com/en/solutions/geoip2-enterprise-product-suite/anonymous-ip-database"
         >
           GeoIP2 Anonymous IP Database
         </a>
         <a
           className={styles.link}
+          // eslint-disable-next-line max-len
           href="https://www.maxmind.com/en/solutions/geoip2-enterprise-product-suite/enterprise-database"
         >
           GeoIP2 Enterprise Database
@@ -114,12 +116,14 @@ const Footer: React.FC = () => (
         </a>
         <a
           className={styles.link}
+          // eslint-disable-next-line max-len
           href="https://www.maxmind.com/en/privacy-policy#additional-disclosures-for-california-residents"
         >
           Do Not Sell My Personal Information
         </a>
         <a
           className={styles.link}
+          // eslint-disable-next-line max-len
           href="https://www.maxmind.com/en/privacy-policy#california-notice-of-collection"
         >
           Notice of Collection
@@ -202,7 +206,8 @@ const Footer: React.FC = () => (
           {new Date().getFullYear()}
           {' '}
           MaxMind, Inc. All Rights Reserved.
-          MaxMind, GeoIP, minFraud, and related trademarks belong to MaxMind, Inc.
+          MaxMind, GeoIP, minFraud, and related trademarks belong to MaxMind,
+          Inc.
         </p>
       </section>
 
