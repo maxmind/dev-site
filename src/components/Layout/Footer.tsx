@@ -34,9 +34,7 @@ const Footer: React.FC = () => (
         </a>
       </nav>
 
-      <nav
-        className={styles.product}
-      >
+      <nav>
         <h3
           className={styles.heading}
         >
@@ -82,9 +80,7 @@ const Footer: React.FC = () => (
         </a>
       </nav>
 
-      <nav
-        className={styles.support}
-      >
+      <nav>
         <h3
           className={styles.heading}
         >
@@ -130,9 +126,7 @@ const Footer: React.FC = () => (
         </a>
       </nav>
 
-      <nav
-        className={styles.developers}
-      >
+      <nav>
         <h3
           className={styles.heading}
         >
@@ -158,9 +152,7 @@ const Footer: React.FC = () => (
         </a>
       </nav>
 
-      <nav
-        className={styles.company}
-      >
+      <nav>
         <h3
           className={styles.heading}
         >
