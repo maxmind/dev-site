@@ -3,7 +3,7 @@ import { CreatePagesArgs } from 'gatsby';
 import fetch from 'node-fetch';
 import path from 'path';
 
-import addCompiledExamples from './utils/addCompiledExamples';
+import transformDocument from './utils/transformDocument';
 
 interface IPage {
   description: string;
@@ -59,8 +59,9 @@ const createApiSpecPages = async ( props: CreatePagesArgs): Promise<void> => {
 
   await Promise.all(pages.map((page: IPage) => fetch(page.sourceUrl)
     .then(res => res.json())
-    .then(json => addCompiledExamples(json))
+    .then(json => transformDocument(json))
     .then(spec => {
+      console.log((spec.components?.schemas as any).Request);
       createPage({
         component: path.resolve('src/templates/ApiReference/index.ts'),
         context: {

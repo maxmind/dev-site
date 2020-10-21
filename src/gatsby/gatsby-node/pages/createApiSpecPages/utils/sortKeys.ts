@@ -1,5 +1,6 @@
+/* eslint-disable filenames/match-exported */
 const sortKeys = (x: any): any => {
-  if (typeof x !== 'object' || !x) {
+  if (typeof x !== 'object' || x === null) {
     return x;
   }
 
@@ -7,13 +8,16 @@ const sortKeys = (x: any): any => {
     return x.map(sortKeys);
   }
 
-  return Object.keys(x).sort().reduce(
-    (o, k) => ({
-      ...o,
-      [k]: sortKeys(x[k]),
-    }),
-    {}
-  );
+  return Object.keys(x)
+    .sort()
+    .reduce(
+      (obj, key) => ({
+        ...obj,
+        // eslint-disable-next-line security/detect-object-injection
+        [key]: sortKeys(x[key]),
+      }),
+      {}
+    );
 };
 
 export default sortKeys;

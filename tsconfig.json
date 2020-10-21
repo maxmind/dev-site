@@ -12,15 +12,18 @@
     "noEmit": true,
     "noUnusedLocals": false,
     "paths": {
-      "*": ["src/types/*"]
+      "*": ["src/types/*"],
+      "openapi-types": ["src/types/*"]
     },
     "resolveJsonModule": true,
     "strict": true,
-    "target": "ES2019"
+    "target": "ES2019",
+    "typeRoots": ["src/types", "./node_modules/@types"]
   },
   "exclude": [
     "node_modules",
     "public",
     ".cache"
-  ]
+  ],
+  "include": ["src/**/*"]
 }
