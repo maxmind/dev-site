@@ -4,7 +4,7 @@ import { FaBars } from 'react-icons/fa';
 
 import Logo from '../../assets/svgs/maxmind-logo.svg';
 import styles from './Header.module.scss';
-import Search from './Search';
+import SearchBar from './SearchBar';
 
 interface IHeader {
   isSidebarOpen?: boolean;
@@ -26,7 +26,7 @@ const Header: React.FC<IHeader> = (props) => {
         >
           <Logo />
         </a>
-        <Search
+        <SearchBar
           className={styles.search}
         />
         <button
