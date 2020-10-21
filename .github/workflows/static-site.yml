@@ -44,6 +44,10 @@ jobs:
         run: yarn install
 
       - name: Test
+        run: yarn test
+
+      - name: Test Coverage
+        if: ${{ github.event_name == 'pull_request' }}
         uses: dkershner6/jest-coverage-commenter-action@v1
         with:
           github_token: "${{ secrets.GITHUB_TOKEN }}"
