@@ -1,0 +1,30 @@
+@import '../styles/variables';
+
+.wrapper {
+  margin: 0 var(--mm-spacing);
+}
+
+.header {
+  margin-bottom: calc(var(--mm-spacing) / 2);
+}
+
+.heading {
+  font-size: 20px;
+  margin: 0;
+}
+
+.query {
+  font-weight: bold;
+}
+
+.count {
+  font-size: 14px;
+}
+
+.results {
+  margin-bottom: var(--mm-spacing);
+}
+
+.result {
+  margin-bottom: calc(var(--mm-spacing) / 1.5);
+}
