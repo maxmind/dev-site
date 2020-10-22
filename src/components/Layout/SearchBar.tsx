@@ -5,11 +5,11 @@ import { FaSearch } from 'react-icons/fa';
 
 import styles from './SearchBar.module.scss';
 
-interface ISearch {
+interface ISearchBar {
   className?: string;
 }
 
-const Search: React.FC<ISearch> = (props) => {
+const SearchBar: React.FC<ISearchBar> = (props) => {
   const [
     isMobileOpen,
     setIsMobileOpen,
@@ -62,8 +62,8 @@ const Search: React.FC<ISearch> = (props) => {
   );
 };
 
-Search.propTypes = {
+SearchBar.propTypes = {
   className: PropTypes.string,
 };
 
-export default Search;
+export default SearchBar;

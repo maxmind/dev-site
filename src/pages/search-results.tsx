@@ -2,6 +2,7 @@ import { RouteUpdateArgs } from 'gatsby';
 import React, { useEffect, useState } from 'react';
 
 import Layout from '../components/Layout/Layout';
+import Loading from '../components/Loading';
 import H1 from '../components/Mdx/H1';
 import SearchResult from '../components/SearchResult';
 import GoogleSearch, { ISearchResults } from '../services/GoogleSearch';
@@ -39,6 +40,7 @@ const SearchResultsPage: React.FC<RouteUpdateArgs> = (props) => {
 
   useEffect(() => {
     const fetchResults = async () => {
+      window.scrollTo(0,0);
       try {
         setHasError(false);
         setIsLoading(true);
@@ -47,7 +49,6 @@ const SearchResultsPage: React.FC<RouteUpdateArgs> = (props) => {
         setHasError(true);
       }
       setIsLoading(false);
-      window.scrollTo(0,0);
     };
 
     if (query) {
@@ -64,6 +65,17 @@ const SearchResultsPage: React.FC<RouteUpdateArgs> = (props) => {
       title="Search Results"
     >
       {
+        // Loading
+        isLoading &&
+        <div
+          className={styles.loading}
+        >
+          <Loading />
+        </div>
+      }
+
+      {
+        // No Query
         !query &&
         <div
           className={styles.wrapper}
@@ -81,6 +93,7 @@ const SearchResultsPage: React.FC<RouteUpdateArgs> = (props) => {
       }
 
       {
+        // There's a server error
         hasError &&
         <div
           className={styles.wrapper}
@@ -91,7 +104,7 @@ const SearchResultsPage: React.FC<RouteUpdateArgs> = (props) => {
             <H1
               className={styles.heading}
             >
-               There was an issue performing the search.
+              There was an issue performing the search.
             </H1>
             <p>
               Please try again.
@@ -101,6 +114,7 @@ const SearchResultsPage: React.FC<RouteUpdateArgs> = (props) => {
       }
 
       {
+        // There's no search results
         !isLoading && !hasError && !results.items && query &&
         <div
           className={styles.wrapper}
@@ -121,6 +135,7 @@ const SearchResultsPage: React.FC<RouteUpdateArgs> = (props) => {
       }
 
       {
+        // We found stuff
         results.items &&
         <div
           className={styles.wrapper}
