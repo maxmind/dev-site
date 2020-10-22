@@ -2,6 +2,7 @@
 
 .wrapper {
   margin: 0 var(--mm-spacing);
+  max-width: 960px;
   min-height: 500px;
 }
 
@@ -15,6 +16,12 @@
 
   strong {
     font-weight: bold;
+  }
+}
+
+@include breakpoint('lg') {
+  .heading {
+    font-size: 30px;
   }
 }
 
@@ -35,7 +42,7 @@
 }
 
 .pagination {
-  margin-bottom: calc(var(--mm-spacing) / 2);
+  margin-bottom: var(--mm-spacing);
 
   &::after {
     clear: both;
@@ -53,10 +60,20 @@
 
 .previous {
   float: left;
+
+  &::before {
+    content: '<';
+    margin-right: 5px;
+  }
 }
 
 .next {
   float: right;
+
+  &::after {
+    content: '>';
+    margin-left: 5px;
+  }
 }
 
 .previous:hover,
