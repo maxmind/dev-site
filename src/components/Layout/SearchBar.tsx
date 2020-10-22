@@ -28,23 +28,26 @@ const Search: React.FC<ISearch> = (props) => {
     <div
       className={props.className}
     >
-      <div
+      <form
+        action="/search-results"
         className={classNames(
           styles.searchbar,
           isMobileOpen && styles['searchbar--mobile-open']
         )}
+        role="search"
       >
         <FaSearch
           className={styles.mag}
         />
         <input
           className={styles.input}
+          name='q'
           onBlur={() => setIsMobileOpen(false)}
           placeholder="Search"
           ref={inputRef}
           type="search"
         />
-      </div>
+      </form>
       <div
         className={styles['search-mobile']}
       >

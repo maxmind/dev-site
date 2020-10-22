@@ -9,6 +9,10 @@
   font-size: 20px;
   margin-bottom: 3px;
   text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
 }
 
 .url {

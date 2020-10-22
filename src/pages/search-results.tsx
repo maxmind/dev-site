@@ -4,7 +4,7 @@ import React, { useEffect, useState } from 'react';
 import Layout from '../components/Layout/Layout';
 import H1 from '../components/Mdx/H1';
 import SearchResult from '../components/SearchResult';
-import googleSearch, { ISearchResults } from '../services/googleSearch';
+import GoogleSearch, { ISearchResults } from '../services/GoogleSearch';
 import styles from './search-results.module.scss';
 
 
@@ -30,15 +30,21 @@ const SearchResultsPage: React.FC<RouteUpdateArgs> = (props) => {
   const [
     isLoading,
     setIsLoading,
+  ] = useState(true);
+
+  const [
+    hasError,
+    setHasError,
   ] = useState(false);
 
   useEffect(() => {
     const fetchResults = async () => {
       try {
+        setHasError(false);
         setIsLoading(true);
-        setResults(await googleSearch(query, startIndex));
+        setResults(await GoogleSearch(query, startIndex));
       } catch {
-        setResults({} as ISearchResults);
+        setHasError(true);
       }
       setIsLoading(false);
       window.scrollTo(0,0);
@@ -75,7 +81,27 @@ const SearchResultsPage: React.FC<RouteUpdateArgs> = (props) => {
       }
 
       {
-        !isLoading && !results.items &&
+        hasError &&
+        <div
+          className={styles.wrapper}
+        >
+          <header
+            className={styles.header}
+          >
+            <H1
+              className={styles.heading}
+            >
+               There was an issue performing the search.
+            </H1>
+            <p>
+              Please try again.
+            </p>
+          </header>
+        </div>
+      }
+
+      {
+        !isLoading && !hasError && !results.items && query &&
         <div
           className={styles.wrapper}
         >

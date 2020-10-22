@@ -31,7 +31,7 @@ const url = endpoint
   .replace('{key}', key);
 
 
-const googleSearch =
+const GoogleSearch =
   async (query: string, startIndex: string | null): Promise<ISearchResults> => {
     let requestUrl = `${url}&q=${query}`;
 
@@ -47,4 +47,4 @@ const googleSearch =
     return await response.json() as ISearchResults;
   };
 
-export default googleSearch;
+export default GoogleSearch;
