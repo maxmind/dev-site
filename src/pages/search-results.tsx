@@ -1,89 +1,114 @@
-import classNames from 'classnames';
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 
 import Layout from '../components/Layout/Layout';
 import H1 from '../components/Mdx/H1';
 import SearchResult from '../components/SearchResult';
+import googleSearch, { ISearchResults } from '../services/googleSearch';
 import styles from './search-results.module.scss';
 
-const results = [
-  {
-    cacheId: 'foo',
-    htmlSnippet: 'this is a snippet',
-    htmlTitle: 'this is a title',
-    link: 'https://www.maxmind.com',
-  },
-  {
-    cacheId: 'foo1',
-    htmlSnippet: 'this is a snippet1',
-    htmlTitle: 'this is a title1',
-    link: 'https://www.maxmind.com/1',
-  },
-];
-
 const SearchResultsPage: React.FC = () => {
-  const query = new URLSearchParams(window.location.search).get('q');
+  const urlParams = new URLSearchParams(window.location.search);
+  const query = urlParams.get('q') as string;
+
+  const [
+    results,
+    setResults,
+  ] = useState({} as ISearchResults);
+
+  useEffect(() => {
+    const fetchResults = async () => {
+      try {
+        setResults(await googleSearch(query));
+      } catch {
+        setResults({} as ISearchResults);
+      }
+    };
+
+    if (query) {
+      fetchResults();
+    }
+  }, [
+    query,
+  ]);
+
 
   return (
     <Layout
-      className={styles.layout}
       title="Search Results"
     >
-      <div
-        className={styles.wrapper}
-      >
-        <header
-          className={styles.header}
+      {
+        !query &&
+        <div
+          className={styles.wrapper}
         >
-          {query && query.length > 0 &&
-          <>
+          <header
+            className={styles.header}
+          >
             <H1
               className={styles.heading}
             >
-              Search results for
-              {' '}
-              <strong
-                className={styles.query}
-              >
-                {query}
-              </strong>
+              Please enter a search query
             </H1>
-            <small
-              className={styles.count}
-            >
-              Displaying results 21-30 of 100
-            </small>
-          </>
-          }
-          {
-            !query &&
+          </header>
+        </div>
+      }
+
+      {
+        results.items &&
+        <div
+          className={styles.wrapper}
+        >
+          <header
+            className={styles.header}
+          >
             <>
               <H1
                 className={styles.heading}
               >
-                Please enter a search query
+                Search results for
+                {' '}
+                <strong
+                  className={styles.query}
+                >
+                  {query}
+                </strong>
               </H1>
+              <small
+                className={styles.count}
+              >
+                Displaying results
+                {' '}
+                {results.queries.request[0].startIndex}
+                -
+                {results.queries.request[0].startIndex
+                + results.queries.request[0].count
+                - 1}
+                {' '}
+                of
+                {' '}
+                {results.queries.request[0].totalResults}
+              </small>
             </>
-          }
-        </header>
-        <div
-          className={styles.results}
-        >
-          {
-            results.map((result) => {
-              return (
-                <SearchResult
-                  className={styles.result}
-                  key={result.cacheId}
-                  snippet={result.htmlSnippet}
-                  title={result.htmlTitle}
-                  url={result.link}
-                />
-              );
-            })
-          }
+          </header>
+          <div
+            className={styles.results}
+          >
+            {
+              results.items?.map((result) => {
+                return (
+                  <SearchResult
+                    className={styles.result}
+                    key={result.cacheId}
+                    snippet={result.htmlSnippet}
+                    title={result.htmlTitle}
+                    url={result.link}
+                  />
+                );
+              })
+            }
+          </div>
         </div>
-      </div>
+      }
     </Layout>
   );};
 

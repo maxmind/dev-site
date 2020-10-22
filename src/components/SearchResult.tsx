@@ -17,10 +17,11 @@ const SearchResult: React.FC<ISearchResult> = (props) => (
     <h3>
       <a
         className={styles.title}
+        dangerouslySetInnerHTML={{
+          __html: props.title,
+        }}
         href={props.url}
-      >
-        {props.title}
-      </a>
+      />
     </h3>
     <small
       className={styles.url}
@@ -29,9 +30,10 @@ const SearchResult: React.FC<ISearchResult> = (props) => (
     </small>
     <span
       className={styles.snippet}
-    >
-      {props.snippet}
-    </span>
+      dangerouslySetInnerHTML={{
+        __html: props.snippet,
+      }}
+    />
   </div>
 );
 
