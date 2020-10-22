@@ -24,6 +24,9 @@ const SearchBar: React.FC<ISearchBar> = (props) => {
     }, 1);
   };
 
+  const urlParams = new URLSearchParams(window.location.search);
+  const searchParam = urlParams.get('q') as string;
+
   return (
     <div
       className={props.className}
@@ -41,6 +44,7 @@ const SearchBar: React.FC<ISearchBar> = (props) => {
         />
         <input
           className={styles.input}
+          defaultValue={searchParam}
           name='q'
           onBlur={() => setIsMobileOpen(false)}
           placeholder="Search"

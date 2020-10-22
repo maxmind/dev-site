@@ -70,7 +70,7 @@ const SearchResultsPage: React.FC<RouteUpdateArgs> = (props) => {
     >
       {
         // Loading
-        isLoading &&
+        isLoading && query &&
         <div
           className={styles.loading}
         >
