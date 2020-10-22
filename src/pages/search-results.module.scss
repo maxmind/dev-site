@@ -2,6 +2,7 @@
 
 .wrapper {
   margin: 0 var(--mm-spacing);
+  min-height: 500px;
 }
 
 .header {
@@ -11,6 +12,10 @@
 .heading {
   font-size: 20px;
   margin: 0;
+
+  strong {
+    font-weight: bold;
+  }
 }
 
 .query {
@@ -27,4 +32,34 @@
 
 .result {
   margin-bottom: calc(var(--mm-spacing) / 1.5);
+}
+
+.pagination {
+  margin-bottom: calc(var(--mm-spacing) / 2);
+
+  &::after {
+    clear: both;
+    content: '';
+    display: table;
+  }
+}
+
+.previous,
+.next {
+  border-bottom: 2px dotted var(--mm-color-display-text);
+  color: var(--mm-color-display-text);
+  text-decoration: none;
+}
+
+.previous {
+  float: left;
+}
+
+.next {
+  float: right;
+}
+
+.previous:hover,
+.next:hover {
+  border-bottom-style: solid;
 }

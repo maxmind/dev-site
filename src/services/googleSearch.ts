@@ -31,14 +31,20 @@ const url = endpoint
   .replace('{key}', key);
 
 
-const googleSearch = async (query: string): Promise<ISearchResults> => {
-  const response = await fetch(`${url}&q=${query}`);
+const googleSearch =
+  async (query: string, startIndex: string | null): Promise<ISearchResults> => {
+    let requestUrl = `${url}&q=${query}`;
 
-  if (!response.ok) {
-    throw new Error(`There was an error searching for ${query}`);
-  }
+    if (startIndex) {
+      requestUrl = requestUrl + `&start=${startIndex}`;
+    }
+    const response = await fetch(requestUrl);
 
-  return await response.json() as ISearchResults;
-};
+    if (!response.ok) {
+      throw new Error(`There was an error searching for ${query}`);
+    }
+
+    return await response.json() as ISearchResults;
+  };
 
 export default googleSearch;
