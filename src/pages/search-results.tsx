@@ -8,6 +8,7 @@ import SearchResult from '../components/SearchResult';
 import GoogleSearch, { ISearchResults } from '../services/GoogleSearch';
 import styles from './search-results.module.scss';
 
+type queryValue = number | string | undefined;
 
 const SearchResultsPage: React.FC<RouteUpdateArgs> = (props) => {
   // eslint-disable-next-line react/prop-types
@@ -15,10 +16,13 @@ const SearchResultsPage: React.FC<RouteUpdateArgs> = (props) => {
   const query = urlParams.get('q') as string;
   const startIndex = urlParams.get('start');
 
-  const setUrl = (startIndex: number): string => {
+  const getQueryUrl = (param: string, q: queryValue): string => {
+    if (!q) {
+      return '';
+    }
     // eslint-disable-next-line react/prop-types
     const urlParams = new URLSearchParams(props.location.search);
-    urlParams.set('start', startIndex.toString());
+    urlParams.set(param, q.toString());
     // eslint-disable-next-line react/prop-types
     return `${props.uri}?${urlParams.toString()}`;
   };
@@ -129,6 +133,18 @@ const SearchResultsPage: React.FC<RouteUpdateArgs> = (props) => {
               {' '}
               <strong>{query}</strong>
             </H1>
+            { results.spelling &&
+              <p>
+                Try searching for
+                {' '}
+                <a
+                  className={styles['spelling-link']}
+                  href={getQueryUrl('q', results.spelling?.correctedQuery)}
+                >
+                  {results.spelling?.correctedQuery}
+                </a>
+              </p>
+            }
           </header>
         </div>
 
@@ -195,7 +211,9 @@ const SearchResultsPage: React.FC<RouteUpdateArgs> = (props) => {
             {results.queries.previousPage &&
             <a
               className={styles.previous}
-              href={setUrl(results.queries.previousPage[0].startIndex)}
+              href={
+                getQueryUrl('start', results.queries.previousPage[0].startIndex)
+              }
             >
               Previous
             </a>
@@ -203,7 +221,9 @@ const SearchResultsPage: React.FC<RouteUpdateArgs> = (props) => {
             {results.queries.nextPage &&
             <a
               className={styles.next}
-              href={setUrl(results.queries.nextPage[0].startIndex)}
+              href={
+                getQueryUrl('start', results.queries.nextPage[0].startIndex)
+              }
             >
               Next
             </a>

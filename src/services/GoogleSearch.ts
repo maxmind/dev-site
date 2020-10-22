@@ -18,6 +18,9 @@ export interface ISearchResults {
     previousPage?: IQuery[];
     request: IQuery[];
   }
+  spelling?: {
+    correctedQuery: string;
+  }
 }
 
 const endpoint =

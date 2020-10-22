@@ -58,6 +58,7 @@
   }
 }
 
+.spelling-link,
 .previous,
 .next {
   border-bottom: 2px dotted var(--mm-color-display-text);
@@ -83,6 +84,7 @@
   }
 }
 
+.spelling-link:hover,
 .previous:hover,
 .next:hover {
   border-bottom-style: solid;
