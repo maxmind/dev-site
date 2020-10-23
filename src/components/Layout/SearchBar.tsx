@@ -39,11 +39,19 @@ const SearchBar: React.FC<ISearchBar> = (props) => {
     navigate(`/search-results/?q=${searchQuery}`);
   });
 
+  let locationSearch: string;
+
+  if (typeof window !== 'undefined') {
+    locationSearch = window.location.search;
+  } else {
+    locationSearch = '';
+  }
+
   useEffect(() => {
-    const urlParams = new URLSearchParams(window.location.search);
+    const urlParams = new URLSearchParams(locationSearch);
     setSearchQuery(urlParams.get('q') as string);
   }, [
-    window.location.search
+    locationSearch,
   ]);
 
   return (

@@ -8,7 +8,15 @@ import remarkSlug from 'remark-slug';
  */
 const THESE_PLUGINS_MUST_COME_LAST = [
   'gatsby-plugin-sri',
-  'gatsby-plugin-csp',
+  {
+    options: {
+      directives: {
+        // eslint-disable-next-line quotes
+        'connect-src': "'self' www.googleapis.com",
+      },
+    },
+    resolve: 'gatsby-plugin-csp',
+  },
 ];
 
 const GATSBY_ROOT = `${__dirname}/../../../`;
