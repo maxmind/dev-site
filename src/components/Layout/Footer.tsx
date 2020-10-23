@@ -20,21 +20,28 @@ const Footer: React.FC = () => (
         >
           <Logo />
         </a>
-        <a
+        <div
           className={styles.social}
-          href="https://twitter.com/maxmind"
         >
-          <FaTwitterSquare />
-        </a>
-        <a
-          className={styles.social}
-          href="https://www.linkedin.com/company/maxmind"
-        >
-          <FaLinkedin />
-        </a>
+          <a
+            className={styles['social-icon']}
+            href="https://twitter.com/maxmind"
+          >
+            <FaTwitterSquare />
+          </a>
+          <a
+            className={styles['social-icon']}
+            href="https://www.linkedin.com/company/maxmind"
+          >
+            <FaLinkedin />
+          </a>
+        </div>
+
       </nav>
 
-      <nav>
+      <nav
+        className={styles.group}
+      >
         <h3
           className={styles.heading}
         >
@@ -80,7 +87,9 @@ const Footer: React.FC = () => (
         </a>
       </nav>
 
-      <nav>
+      <nav
+        className={styles.group}
+      >
         <h3
           className={styles.heading}
         >
@@ -126,7 +135,9 @@ const Footer: React.FC = () => (
         </a>
       </nav>
 
-      <nav>
+      <nav
+        className={styles.group}
+      >
         <h3
           className={styles.heading}
         >
@@ -152,7 +163,9 @@ const Footer: React.FC = () => (
         </a>
       </nav>
 
-      <nav>
+      <nav
+        className={styles.group}
+      >
         <h3
           className={styles.heading}
         >
@@ -201,24 +214,24 @@ const Footer: React.FC = () => (
           MaxMind, GeoIP, minFraud, and related trademarks belong to MaxMind,
           Inc.
         </p>
-      </section>
 
-      <nav
-        className={styles.terms}
-      >
-        <a
-          className={styles['terms-link']}
-          href="https://www.maxmind.com/en/terms-of-use"
+        <nav
+          className={styles.terms}
         >
-          Terms of Use
-        </a>
-        <a
-          className={styles['terms-link']}
-          href="https://www.maxmind.com/en/privacy-policy"
-        >
-          Privacy Policy
-        </a>
-      </nav>
+          <a
+            className={styles['terms-link']}
+            href="https://www.maxmind.com/en/terms-of-use"
+          >
+            Terms of Use
+          </a>
+          <a
+            className={styles['terms-link']}
+            href="https://www.maxmind.com/en/privacy-policy"
+          >
+            Privacy Policy
+          </a>
+        </nav>
+      </section>
     </div>
   </footer>
 );
