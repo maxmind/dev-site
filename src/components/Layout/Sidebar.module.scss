@@ -2,7 +2,8 @@
 
 .sidebar {
   background: var(--mm-color-sidebar);
-  border-right: 1px solid var(--mm-color-border);
+  border-left: 1px solid var(--mm-color-border);
+  box-shadow: -2px 0 10px #c0c0c0;
   grid-area: sidebar;
   position: fixed;
   right: 0;
@@ -12,7 +13,6 @@
 
 .nav {
   height: calc(100vh - calc(var(--page-header-height)));
-  margin-top: 2px;
   overflow-y: scroll;
   position: sticky;
   top: var(--page-header-height);
@@ -151,6 +151,9 @@
 
 @include breakpoint('lg') {
   .sidebar {
+    border-left: 0;
+    border-right: 1px solid var(--mm-color-border);
+    box-shadow: none;
     grid-area: sidebar;
     position: relative;
     transform: initial !important;
