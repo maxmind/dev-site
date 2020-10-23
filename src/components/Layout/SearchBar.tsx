@@ -71,6 +71,7 @@ const SearchBar: React.FC<ISearchBar> = (props) => {
           className={styles.mag}
         />
         <input
+          aria-label="Search"
           className={styles.input}
           defaultValue={searchQuery}
           name='q'
@@ -80,11 +81,17 @@ const SearchBar: React.FC<ISearchBar> = (props) => {
           ref={inputRef}
           type="search"
         />
+        <input
+          aria-label="Submit"
+          className={styles.hidden}
+          type="submit"
+        />
       </form>
       <div
         className={styles['search-mobile']}
       >
         <button
+          aria-label="Show search bar"
           className={styles['mobile-button']}
           onClick={toggleMobileOpen}
         >

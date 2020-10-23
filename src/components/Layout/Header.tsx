@@ -21,6 +21,7 @@ const Header: React.FC<IHeader> = (props) => {
         className={styles.nav}
       >
         <a
+          aria-label="Home"
           className={styles.logo}
           href="/"
         >
