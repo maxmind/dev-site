@@ -24,7 +24,7 @@ const SearchResultsPage: React.FC<RouteUpdateArgs> = (props) => {
     const urlParams = new URLSearchParams(props.location.search);
     urlParams.set(param, q.toString());
 
-    return `${props.uri}?${urlParams.toString()}`;
+    return `${props.uri}/?${urlParams.toString()}`;
   };
 
   const [
@@ -156,14 +156,14 @@ const SearchResultsPage: React.FC<RouteUpdateArgs> = (props) => {
               <p>
                 Try searching for
                 {' '}
-                <Link
+                <a
                   className={styles['spelling-link']}
-                  to={
+                  href={
                     getQueryUrl('q', results.spelling.correctedQuery)
                   }
                 >
                   {results.spelling?.correctedQuery}
-                </Link>
+                </a>
               </p>
             }
           </header>
@@ -173,7 +173,7 @@ const SearchResultsPage: React.FC<RouteUpdateArgs> = (props) => {
 
       {
         // We found stuff
-        !isLoading && results.items &&
+        !isLoading && results.items && query &&
         <div
           className={styles.wrapper}
         >
