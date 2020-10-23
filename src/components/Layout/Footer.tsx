@@ -15,6 +15,7 @@ const Footer: React.FC = () => (
         className={styles.branding}
       >
         <a
+          aria-label="https://www.maxmind.com"
           className={styles.logo}
           href="https://www.maxmind.com"
         >
@@ -24,12 +25,14 @@ const Footer: React.FC = () => (
           className={styles.social}
         >
           <a
+            aria-label="Twitter"
             className={styles['social-icon']}
             href="https://twitter.com/maxmind"
           >
             <FaTwitterSquare />
           </a>
           <a
+            aria-label="LinkedIn"
             className={styles['social-icon']}
             href="https://www.linkedin.com/company/maxmind"
           >
