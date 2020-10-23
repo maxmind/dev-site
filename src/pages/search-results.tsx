@@ -1,4 +1,7 @@
-import { RouteUpdateArgs } from 'gatsby';
+/* eslint-disable react/prop-types */
+
+import { globalHistory } from '@reach/router';
+import { Link, RouteUpdateArgs } from 'gatsby';
 import React, { useEffect, useState } from 'react';
 
 import Layout from '../components/Layout/Layout';
@@ -11,21 +14,28 @@ import styles from './search-results.module.scss';
 type queryValue = number | string | undefined;
 
 const SearchResultsPage: React.FC<RouteUpdateArgs> = (props) => {
-  // eslint-disable-next-line react/prop-types
   const urlParams = new URLSearchParams(props.location.search);
-  const query = urlParams.get('q') as string;
-  const startIndex = urlParams.get('start');
 
   const getQueryUrl = (param: string, q: queryValue): string => {
     if (!q) {
       return '';
     }
-    // eslint-disable-next-line react/prop-types
+
     const urlParams = new URLSearchParams(props.location.search);
     urlParams.set(param, q.toString());
-    // eslint-disable-next-line react/prop-types
+
     return `${props.uri}?${urlParams.toString()}`;
   };
+
+  const [
+    query,
+    setQuery,
+  ] = useState(urlParams.get('q') as string);
+
+  const [
+    startIndex,
+    setStartIndex,
+  ] = useState(urlParams.get('start') as string);
 
   const [
     results,
@@ -41,6 +51,15 @@ const SearchResultsPage: React.FC<RouteUpdateArgs> = (props) => {
     hasError,
     setHasError,
   ] = useState(false);
+
+  useEffect(() => {
+    globalHistory.listen((history) => {
+      const historyParams = new URLSearchParams(history.location.search);
+      setQuery(historyParams.get('q') as string);
+      setStartIndex(historyParams.get('start') as string);
+      props.location.search = history.location.search;
+    });
+  });
 
   useEffect(() => {
     const fetchResults = async () => {
@@ -137,12 +156,14 @@ const SearchResultsPage: React.FC<RouteUpdateArgs> = (props) => {
               <p>
                 Try searching for
                 {' '}
-                <a
+                <Link
                   className={styles['spelling-link']}
-                  href={getQueryUrl('q', results.spelling?.correctedQuery)}
+                  to={
+                    getQueryUrl('q', results.spelling.correctedQuery)
+                  }
                 >
                   {results.spelling?.correctedQuery}
-                </a>
+                </Link>
               </p>
             }
           </header>
@@ -152,7 +173,7 @@ const SearchResultsPage: React.FC<RouteUpdateArgs> = (props) => {
 
       {
         // We found stuff
-        results.items &&
+        !isLoading && results.items &&
         <div
           className={styles.wrapper}
         >
@@ -209,24 +230,27 @@ const SearchResultsPage: React.FC<RouteUpdateArgs> = (props) => {
             className={styles.pagination}
           >
             {results.queries.previousPage &&
-            <a
-              className={styles.previous}
-              href={
-                getQueryUrl('start', results.queries.previousPage[0].startIndex)
-              }
-            >
-              Previous
-            </a>
+              <Link
+                className={styles.previous}
+                to={
+                  getQueryUrl(
+                    'start',
+                    results.queries.previousPage[0].startIndex
+                  )
+                }
+              >
+                Previous
+              </Link>
             }
             {results.queries.nextPage &&
-            <a
-              className={styles.next}
-              href={
-                getQueryUrl('start', results.queries.nextPage[0].startIndex)
-              }
-            >
-              Next
-            </a>
+              <Link
+                className={styles.next}
+                to={
+                  getQueryUrl('start', results.queries.nextPage[0].startIndex)
+                }
+              >
+                Next
+              </Link>
             }
           </nav>
         </div>
