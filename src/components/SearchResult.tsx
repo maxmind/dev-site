@@ -13,15 +13,15 @@ interface ISearchResult {
 
 const sanitizeOpts = {
   ALLOWED_TAGS: [
-    'b'
+    'b',
   ],
 };
 
 const SearchResult: React.FC<ISearchResult> = (props) => (
-  <div
+  <article
     className={props.className}
   >
-    <h3>
+    <h2>
       <a
         className={styles.title}
         dangerouslySetInnerHTML={{
@@ -29,19 +29,19 @@ const SearchResult: React.FC<ISearchResult> = (props) => (
         }}
         href={props.url}
       />
-    </h3>
+    </h2>
     <small
       className={styles.url}
     >
       {props.url}
     </small>
-    <span
+    <p
       className={styles.snippet}
       dangerouslySetInnerHTML={{
         __html: sanitize(props.snippet, sanitizeOpts),
       }}
     />
-  </div>
+  </article>
 );
 
 SearchResult.propTypes = {

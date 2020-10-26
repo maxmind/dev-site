@@ -27,7 +27,7 @@ const endpoint =
   'https://www.googleapis.com/customsearch/v1/siterestrict?cx={cx}&key={key}';
 
 const cx = 'cde039a7678700a13';
-const key= 'AIzaSyAI4atAz3I5ujXCjoEXRvdwqcYn3AIsCA8';
+const key = 'AIzaSyAI4atAz3I5ujXCjoEXRvdwqcYn3AIsCA8';
 
 const url = endpoint
   .replace('{cx}', cx)
