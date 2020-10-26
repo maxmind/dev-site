@@ -24,7 +24,7 @@ const SearchResultsPage: React.FC<RouteUpdateArgs> = (props) => {
     const urlParams = new URLSearchParams(props.location.search);
     urlParams.set(param, q.toString());
 
-    return `${props.uri}/?${urlParams.toString()}`;
+    return `${props.uri}?${urlParams.toString()}`;
   };
 
   const [
@@ -236,7 +236,7 @@ const SearchResultsPage: React.FC<RouteUpdateArgs> = (props) => {
                   getQueryUrl(
                     'start',
                     results.queries.previousPage[0].startIndex
-                  )
+                )
                 }
               >
                 Previous
