@@ -1,3 +1,4 @@
+import { sanitize } from 'dompurify';
 import PropTypes from 'prop-types';
 import React from 'react';
 
@@ -10,6 +11,12 @@ interface ISearchResult {
   url: string;
 }
 
+const sanitizeOpts = {
+  ALLOWED_TAGS: [
+    'b'
+  ],
+};
+
 const SearchResult: React.FC<ISearchResult> = (props) => (
   <div
     className={props.className}
@@ -18,7 +25,7 @@ const SearchResult: React.FC<ISearchResult> = (props) => (
       <a
         className={styles.title}
         dangerouslySetInnerHTML={{
-          __html: props.title,
+          __html: sanitize(props.title, sanitizeOpts),
         }}
         href={props.url}
       />
@@ -31,7 +38,7 @@ const SearchResult: React.FC<ISearchResult> = (props) => (
     <span
       className={styles.snippet}
       dangerouslySetInnerHTML={{
-        __html: props.snippet,
+        __html: sanitize(props.snippet, sanitizeOpts),
       }}
     />
   </div>
