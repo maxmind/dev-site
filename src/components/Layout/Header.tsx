@@ -4,7 +4,7 @@ import { FaBars } from 'react-icons/fa';
 
 import Logo from '../../assets/svgs/maxmind-logo.svg';
 import styles from './Header.module.scss';
-import Search from './Search';
+import SearchBar from './SearchBar';
 
 interface IHeader {
   isSidebarOpen?: boolean;
@@ -21,12 +21,13 @@ const Header: React.FC<IHeader> = (props) => {
         className={styles.nav}
       >
         <a
+          aria-label="Home"
           className={styles.logo}
           href="/"
         >
           <Logo />
         </a>
-        <Search
+        <SearchBar
           className={styles.search}
         />
         <button
