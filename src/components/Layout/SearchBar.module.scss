@@ -1,0 +1,69 @@
+@import '../../styles/variables';
+
+.searchbar {
+  display: none;
+  position: relative;
+}
+
+@include breakpoint('lg') {
+  .searchbar {
+    display: inline-block;
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: map-get($breakpoints, 'lg')) {
+  .searchbar--mobile-open {
+    display: inline-block;
+    left: 0;
+    margin: 0 var(--mm-spacing);
+    position: absolute;
+    top: 23px;
+    width: calc(100% - (2 * var(--mm-spacing)));
+    z-index: 100;
+  }
+}
+
+.mag {
+  left: 10px;
+  position: absolute;
+  top: 12px;
+}
+
+.search-mobile {
+  position: relative;
+}
+
+@include breakpoint('lg') {
+  .search-mobile {
+    display: none;
+  }
+}
+
+.mobile-button {
+  background: none;
+  border: 0;
+  cursor: pointer;
+  float: right;
+}
+
+.input {
+  border: 1px solid var(--mm-color-border);
+  border-radius: var(--mm-border-radius);
+  color: var(--mm-color-primary-text);
+  padding: 10px 10px 10px 40px;
+  width: 100%;
+
+  &::placeholder {
+    opacity: 0.5;
+  }
+
+  &:focus {
+    box-shadow: 0 0 0 2px var(--mm-color-logo-blue-light);
+    outline: none;
+  }
+}
+
+.hidden {
+  display: none;
+}

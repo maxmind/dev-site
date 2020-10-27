@@ -1,8 +1,10 @@
 import PropTypes from 'prop-types';
 import React from 'react';
-import { FaArrowLeft, FaArrowRight } from 'react-icons/fa';
+import { FaBars } from 'react-icons/fa';
 
+import Logo from '../../assets/svgs/maxmind-logo.svg';
 import styles from './Header.module.scss';
+import SearchBar from './SearchBar';
 
 interface IHeader {
   isSidebarOpen?: boolean;
@@ -15,21 +17,29 @@ const Header: React.FC<IHeader> = (props) => {
     <header
       className={styles.header}
     >
-      <button
-        aria-label={isSidebarOpen ? 'Open menu' : 'Close menu'}
-        className={styles.toggle}
-        onClick={toggleSidebar}
+      <nav
+        className={styles.nav}
       >
-        {isSidebarOpen ? (
-          <FaArrowLeft
+        <a
+          aria-label="Home"
+          className={styles.logo}
+          href="/"
+        >
+          <Logo />
+        </a>
+        <SearchBar
+          className={styles.search}
+        />
+        <button
+          aria-label={isSidebarOpen ? 'Open menu' : 'Close menu'}
+          className={styles.toggle}
+          onClick={toggleSidebar}
+        >
+          <FaBars
             aria-hidden="true"
           />
-        ) : (
-          <FaArrowRight
-            aria-hidden="true"
-          />
-        )}
-      </button>
+        </button>
+      </nav>
     </header>
   );
 };
