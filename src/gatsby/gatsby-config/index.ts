@@ -90,6 +90,7 @@ export default {
       },
       resolve: 'gatsby-plugin-react-svg',
     },
+    'gatsby-plugin-remove-trailing-slashes',
     // {
     //   options: {
     //     analyzerPort: 3000,
