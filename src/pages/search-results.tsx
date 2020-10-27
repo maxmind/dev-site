@@ -232,12 +232,10 @@ const SearchResultsPage: React.FC<RouteUpdateArgs> = (props) => {
             {results.queries.previousPage &&
               <Link
                 className={styles.previous}
-                to={
-                  getQueryUrl(
-                    'start',
-                    results.queries.previousPage[0].startIndex
-                )
-                }
+                to={getQueryUrl(
+                  'start',
+                  results.queries.previousPage[0].startIndex
+                )}
               >
                 Previous
               </Link>
