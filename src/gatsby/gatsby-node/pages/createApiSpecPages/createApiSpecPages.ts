@@ -61,7 +61,6 @@ const createApiSpecPages = async ( props: CreatePagesArgs): Promise<void> => {
     .then(res => res.json())
     .then(json => transformDocument(json))
     .then(spec => {
-      console.log((spec.components?.schemas as any).Request);
       createPage({
         component: path.resolve('src/templates/ApiReference/index.ts'),
         context: {
