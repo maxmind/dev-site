@@ -34,7 +34,7 @@
 
 ### Minimum Requirements
 
-- Node 10.13.0
+- Node 12.16.0
 - Yarn 1.17.3
 
 If you need help installing and/or managing Node and Yarn versions, check out [NVM](https://github.com/nvm-sh/nvm) or [Volta](https://docs.volta.sh/guide/).
