@@ -5,14 +5,12 @@ import {
   isReferenceObject,
 } from '../../../../../utils/openapi';
 
-type DestructuredSchema = [
-  string,
-  OpenAPIV3.SchemaComponentObject,
-];
+type NonReferenceSchemaObject =
+  OpenAPIV3.ArraySchemaObject | OpenAPIV3.NonArraySchemaObject
 
 type DestructuredProperty = [
   string,
-  OpenAPIV3.PropertyObject,
+  NonReferenceSchemaObject
 ];
 
 const parseSchema = (
@@ -46,7 +44,7 @@ const parseSchema = (
     return schema;
   }
 
-  const properties: OpenAPIV3.PropertiesObject = schema.properties;
+  const properties: NonReferenceSchemaObject = schema.properties;
 
   return {
     ...schema,
@@ -72,10 +70,6 @@ const parseArraySchema = ({
   fullExampleJSON: string,
   schema: OpenAPIV3.ArraySchemaObject
 }) : OpenAPIV3.ArraySchemaObject => {
-  if (!isArraySchemaObject(schema)) {
-    return schema;
-  }
-
   const index = fullExampleJSON.search(
     new RegExp(
       '(?:\\[)((.|\\s)*?)(?:\\])',
@@ -103,9 +97,7 @@ const parseArraySchema = ({
 
   return {
     ...schema,
-    'x-line-numbers': startingLineNumber === endingLineNumber
-      ? startingLineNumber.toString()
-      : `${startingLineNumber}-${endingLineNumber}`,
+    'x-line-numbers': `${startingLineNumber}-${endingLineNumber}`,
   };
 };
 
@@ -119,11 +111,7 @@ const parseObjectSchema = ({
   propertyExample: unknown,
 }) : DestructuredProperty => {
   const propertyName: string = property[0];
-  const propertyObj: OpenAPIV3.PropertyObject = property[1];
-
-  if (isReferenceObject(propertyObj) || propertyExample === undefined) {
-    return property;
-  }
+  const propertyObj: NonReferenceSchemaObject = property[1];
 
   let PropertyExampleRegex: RegExp;
 
