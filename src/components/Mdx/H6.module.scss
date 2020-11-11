@@ -1,7 +1,7 @@
-@import '../../styles/variables';
+@use '../../styles/variables';
 
 .h6 {
-  @include heading;
+  @include variables.heading;
   font-size: 16px;
   text-transform: uppercase;
 

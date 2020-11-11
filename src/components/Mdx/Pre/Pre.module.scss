@@ -1,4 +1,4 @@
-@import '../styles/variables';
+@use '../styles/variables';
 
 .container {
   display: inline-block;
@@ -27,7 +27,7 @@
   z-index: 3;
 }
 
-@include breakpoint('lg') {
+@include variables.breakpoint('lg') {
   .toolbar__buttons {
     display: block;
   }

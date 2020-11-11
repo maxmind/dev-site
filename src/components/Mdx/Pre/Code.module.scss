@@ -1,5 +1,5 @@
 /* stylelint-disable */
-@import '../styles/variables';
+@use '../styles/variables';
 
 $border-color: rgba(255, 255, 255, 0.2);
 $chars-color: rgba(255, 255, 255, 0.2);
@@ -384,7 +384,7 @@ $font-color: rgba(255, 255, 255, 0.3);
 
   overflow-y: hidden !important;
 
-  @include scrollbars();
+  @include variables.scrollbars();
 }
 
 .container--expanded .pre {

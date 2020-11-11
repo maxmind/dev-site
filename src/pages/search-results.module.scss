@@ -1,4 +1,4 @@
-@import '../styles/variables';
+@use '../styles/variables';
 
 .loading {
   align-items: center;
@@ -26,7 +26,7 @@
   }
 }
 
-@include breakpoint('lg') {
+@include variables.breakpoint('lg') {
   .heading {
     font-size: 30px;
   }

@@ -1,4 +1,4 @@
-@import '../styles/variables';
+@use '../styles/variables';
 
 .heading {
   --heading-height: 50px;
@@ -41,7 +41,7 @@
   vertical-align: middle;
 }
 
-@include breakpoint('xxl') {
+@include variables.breakpoint('xxl') {
   .heading {
     grid-area: schema-heading;
   }

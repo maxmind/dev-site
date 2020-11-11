@@ -1,18 +1,18 @@
-@import '../../styles/variables';
+@use '../../styles/variables';
 
 .searchbar {
   display: none;
   position: relative;
 }
 
-@include breakpoint('lg') {
+@include variables.breakpoint('lg') {
   .searchbar {
     display: inline-block;
     width: 100%;
   }
 }
 
-@media only screen and (max-width: map-get($breakpoints, 'lg')) {
+@media only screen and (max-width: map-get(variables.$breakpoints, 'lg')) {
   .searchbar--mobile-open {
     display: inline-block;
     left: 0;
@@ -34,7 +34,7 @@
   position: relative;
 }
 
-@include breakpoint('lg') {
+@include variables.breakpoint('lg') {
   .search-mobile {
     display: none;
   }

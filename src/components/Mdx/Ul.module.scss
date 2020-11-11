@@ -1,10 +1,10 @@
-@import '../../styles/variables';
+@use '../../styles/variables';
 
 .ul {
   list-style-type: disc;
   margin: var(--mm-spacing);
   padding-left: calc(var(--mm-spacing) / 2);
-  @include max-width;
+  @include variables.max-width;
 }
 
 .ul .ul {

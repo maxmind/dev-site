@@ -1,4 +1,4 @@
-@import '../../styles/variables';
+@use '../../styles/variables';
 
 .sidebar {
   background: var(--mm-color-sidebar);
@@ -149,7 +149,7 @@
   margin-bottom: 0;
 }
 
-@include breakpoint('lg') {
+@include variables.breakpoint('lg') {
   .sidebar {
     border-left: 0;
     border-right: 1px solid var(--mm-color-border);
