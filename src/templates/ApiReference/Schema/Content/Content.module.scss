@@ -1,4 +1,4 @@
-@import '../styles/variables';
+@use '../styles/variables';
 
 .description {
   line-height: 1.5em;
@@ -38,7 +38,7 @@
   text-shadow: 0 2px 0 rgba(0, 0, 0, 0.2);
   transform: translateX(-50%);
   vertical-align: middle;
-  @include pattern;
+  @include variables.pattern;
 
   &::before {
     border-radius: var(--mm-border-radius);
@@ -61,7 +61,7 @@
   transform: rotate(180deg);
 }
 
-@include breakpoint('xxl') {
+@include variables.breakpoint('xxl') {
   .body {
     grid-area: schema-body;
   }

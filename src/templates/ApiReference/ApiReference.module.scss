@@ -1,4 +1,4 @@
-@import '../styles/variables';
+@use '../styles/variables';
 
 :root {
   --heading-height: 50px;
@@ -57,7 +57,7 @@
   text-shadow: 0 2px 0 rgba(0, 0, 0, 0.2);
   transform: translateX(-50%);
   vertical-align: middle;
-  @include pattern;
+  @include variables.pattern;
 
   &::before {
     border-radius: var(--mm-border-radius);
@@ -102,7 +102,7 @@
   height: 0;
   overflow: hidden;
   padding: 0 !important;
-  @include pattern;
+  @include variables.pattern;
 }
 
 .example--is-expanded {
@@ -123,7 +123,7 @@
   padding-bottom: 1px;
 }
 
-@include breakpoint('xxl') {
+@include variables.breakpoint('xxl') {
   .schema {
     display: grid;
     grid-template-areas:

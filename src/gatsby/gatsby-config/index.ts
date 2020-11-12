@@ -1,6 +1,7 @@
 import { GatsbyConfig } from 'gatsby';
 import remarkExternalLinks from 'remark-external-links';
 import remarkSlug from 'remark-slug';
+import sass from 'sass';
 
 /**
  * The plugins below must come last in the ordering of the plugins because they
@@ -28,6 +29,7 @@ export default {
         cssLoaderOptions: {
           camelCase: true,
         },
+        implementation: sass,
         includePaths: [
           'src/styles',
         ],

@@ -1,6 +1,6 @@
-@import '../../styles/variables';
+@use '../../styles/variables';
 
 .h2 {
-  @include heading;
+  @include variables.heading;
   font-size: 28px;
 }

@@ -1,10 +1,10 @@
-@import '../styles/variables';
+@use '../styles/variables';
 
 .example {
   height: 0;
   overflow: hidden;
   padding: 0 !important;
-  @include pattern;
+  @include variables.pattern;
 }
 
 .example--is-expanded {
@@ -18,7 +18,7 @@
   margin: 0;
 }
 
-@include breakpoint('xxl') {
+@include variables.breakpoint('xxl') {
   .example {
     grid-area: schema-example;
     height: auto;

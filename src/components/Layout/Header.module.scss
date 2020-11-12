@@ -1,4 +1,4 @@
-@import '../../styles/variables';
+@use '../../styles/variables';
 
 .header {
   background: var(--mm-color-background);
@@ -20,7 +20,7 @@
     top: 0;
     width: 100%;
 
-    @include pattern;
+    @include variables.pattern;
   }
 
   &::after {
@@ -54,14 +54,14 @@
   width: 100%;
 }
 
-@include breakpoint('lg') {
+@include variables.breakpoint('lg') {
   .search {
     margin-left: 110px;
     width: calc(100% - 290px);
   }
 }
 
-@include breakpoint('xxl') {
+@include variables.breakpoint('xxl') {
   .search {
     width: calc(100% - 558px);
   }
@@ -78,7 +78,7 @@
   z-index: 4;
 }
 
-@include breakpoint('lg') {
+@include variables.breakpoint('lg') {
   .toggle {
     display: none;
   }

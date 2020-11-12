@@ -1,4 +1,4 @@
-@import '../../styles/variables';
+@use '../../styles/variables';
 
 .footer {
   background: rgb(46, 58, 71);
@@ -17,7 +17,7 @@
     top: 0;
     width: 100%;
 
-    @include pattern;
+    @include variables.pattern;
   }
 
   &::after {
@@ -117,7 +117,7 @@
   }
 }
 
-@include breakpoint('md') {
+@include variables.breakpoint('md') {
   .container {
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
@@ -143,7 +143,7 @@
   }
 }
 
-@include breakpoint('xl') {
+@include variables.breakpoint('xl') {
   .container {
     grid-template-columns: var(--mm-layout-sidebar-width) 1fr 1fr 1fr 1fr;
   }
@@ -193,7 +193,9 @@
   }
 }
 
-@include breakpoint('xxxl') {
-  margin: 0 auto;
-  max-width: 80%;
+@include variables.breakpoint('xxxl') {
+  .container {
+    // margin: 0 auto;
+    max-width: map-get(variables.$breakpoints, 'xxxl');
+  }
 }

@@ -1,7 +1,7 @@
-@import '../../styles/variables';
+@use '../../styles/variables';
 
 .h1 {
-  @include heading;
+  @include variables.heading;
   font-size: 32px;
   margin: var(--mm-spacing);
   margin-top: 0;

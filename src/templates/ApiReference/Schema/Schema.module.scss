@@ -1,10 +1,10 @@
-@import '../../styles/variables';
+@use '../../../styles/variables';
 
 .schema {
   width: 100%;
 }
 
-@include breakpoint('xxl') {
+@include variables.breakpoint('xxl') {
   .schema {
     display: grid;
     grid-template-areas:

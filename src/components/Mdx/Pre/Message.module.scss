@@ -1,4 +1,4 @@
-@import '../styles/variables';
+@use '../styles/variables';
 
 .message {
   border-radius: var(--mm-border-radius) 0 0 var(--mm-border-radius);

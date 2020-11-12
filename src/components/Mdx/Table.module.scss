@@ -1,4 +1,4 @@
-@import '../styles/variables';
+@use '../styles/variables';
 
 .wrapper {
   display: flex;
@@ -21,7 +21,7 @@
   position: relative;
   z-index: 2;
 
-  @include scrollbars(rgba(0,0,0,0.2));
+  @include variables.scrollbars(rgba(0,0,0,0.2));
 }
 
 .table {
