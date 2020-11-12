@@ -1,5 +1,13 @@
 @use './reset';
 
+@import '~normalize.css/normalize.css';
+@import '~fontsource-montserrat/500.css';
+@import '~fontsource-montserrat/700.css';
+@import '~fontsource-roboto/500.css';
+@import '~fontsource-roboto/700.css';
+@import '~fontsource-source-code-pro/500.css';
+@import '~fontsource-source-code-pro/700.css';
+
 :global(.fa-icon) {
   vertical-align: middle;
 }

@@ -8719,6 +8719,21 @@ follow-redirects@^1.0.0, follow-redirects@^1.10.0:
   resolved "https://registry.yarnpkg.com/follow-redirects/-/follow-redirects-1.13.0.tgz#b42e8d93a2a7eea5ed88633676d6597bc8e384db"
   integrity sha512-aq6gF1BEKje4a9i9+5jimNFIpq4Q1WiwBToeRK5NvZBd/TRsmW8BsJfOEGkr76TbOyPVD3OVDN910EcUNtRYEA==
 
+fontsource-montserrat@^3.0.9:
+  version "3.0.9"
+  resolved "https://registry.yarnpkg.com/fontsource-montserrat/-/fontsource-montserrat-3.0.9.tgz#ff614725c420839c4aefbca6f2b49c6224050991"
+  integrity sha512-kSE4GwWoEKJlIp0UyuoYtBvjKv5kwOTK7EvCwdQ7ukvKvgIK1LR5+GpZC5c/juonasNtFTKav67Zd7/C7m+a5w==
+
+fontsource-roboto@^3.0.3:
+  version "3.0.3"
+  resolved "https://registry.yarnpkg.com/fontsource-roboto/-/fontsource-roboto-3.0.3.tgz#99c312babeabce22b3e933b3edf2951d4508f4f7"
+  integrity sha512-kfsC9qAP6XhwnSDAhg2lhWeaUJfLGXZh7GcLxFiz/4lXdkV2pVhWv2Xp9ES3b3BHdc9UuPrWXXLOphzHIStcOw==
+
+fontsource-source-code-pro@^3.0.10:
+  version "3.0.10"
+  resolved "https://registry.yarnpkg.com/fontsource-source-code-pro/-/fontsource-source-code-pro-3.0.10.tgz#6366788783b21ccdd29673537c4b35c278e874a0"
+  integrity sha512-O240cr7mUAiiqZZ4pb9tEZyRrmgYpS7qQvrnuS0zXFvHAuLRdl+hbE2RQN+QSQmzovOYIiZpHzX6cME4Phc8YA==
+
 for-in@^0.1.3:
   version "0.1.8"
   resolved "https://registry.yarnpkg.com/for-in/-/for-in-0.1.8.tgz#d8773908e31256109952b1fdb9b3fa867d2775e1"
@@ -21167,21 +21182,6 @@ typedarray@^0.0.6:
   version "0.0.6"
   resolved "https://registry.yarnpkg.com/typedarray/-/typedarray-0.0.6.tgz#867ac74e3864187b1d3d47d996a78ec5c8830777"
   integrity sha1-hnrHTjhkGHsdPUfZlqeOxciDB3c=
-
-typeface-montserrat@^1.1.13:
-  version "1.1.13"
-  resolved "https://registry.yarnpkg.com/typeface-montserrat/-/typeface-montserrat-1.1.13.tgz#2a16729c174dd1a8c3fec05a851b7725412606cc"
-  integrity sha512-Pklkyj0e+K+6I/t0M6JBDBphpfJkF1k+3qd8qDnp9aVtCC7oGBQWTAcL6+5eArfGe7h73uPwyal73hEkf9YCUA==
-
-typeface-roboto@^1.1.13:
-  version "1.1.13"
-  resolved "https://registry.yarnpkg.com/typeface-roboto/-/typeface-roboto-1.1.13.tgz#9c4517cb91e311706c74823e857b4bac9a764ae5"
-  integrity sha512-YXvbd3a1QTREoD+FJoEkl0VQNJoEjewR2H11IjVv4bp6ahuIcw0yyw/3udC4vJkHw3T3cUh85FTg8eWef3pSaw==
-
-typeface-source-code-pro@^1.1.13:
-  version "1.1.13"
-  resolved "https://registry.yarnpkg.com/typeface-source-code-pro/-/typeface-source-code-pro-1.1.13.tgz#88c8787f90294d00c3b05c35adc096a2d07d922f"
-  integrity sha512-TX3c89uW9uc5SJNFWY8HBFkZqcxcNY7nJz0rw+0Pk2ZVsog/v2d04yKRsPU+jJI4wFegOvWXbOWt927i/xUdIw==
 
 typescript@^4.0.3:
   version "4.0.3"

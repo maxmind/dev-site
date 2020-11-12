@@ -5,11 +5,6 @@
  * See: https://www.gatsbyjs.org/docs/use-static-query/
  */
 
-import 'normalize.css';
-import 'typeface-montserrat';
-import 'typeface-roboto';
-import 'typeface-source-code-pro';
-
 import classNames from 'classnames';
 import PropTypes from 'prop-types';
 import React, { useState } from 'react';
