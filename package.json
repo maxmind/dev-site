@@ -62,7 +62,7 @@
     "typeface-roboto": "^1.1.13",
     "typeface-source-code-pro": "^1.1.13",
     "typescript": "^4.0.3",
-    "webpack": "^4.0.0"
+    "webpack": "^5.4.0"
   },
   "description": "Developer website for MaxMind",
   "devDependencies": {
