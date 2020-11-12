@@ -1,9 +1,7 @@
 @use './reset';
 
-:global {
-  .fa-icon {
-    vertical-align: middle;
-  }
+:global(.fa-icon) {
+  vertical-align: middle;
 }
 
 :root {

@@ -24,6 +24,7 @@ interface ILayout {
   children: React.ReactNode;
   className?: string;
   description?: string;
+  isSidebarOpen?: boolean;
   keywords?: string[];
   // TODO - Add proper typing for `tableOfContents'
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
@@ -36,7 +37,7 @@ const Layout: React.FC<ILayout> = (props) => {
   const [
     isSidebarOpen,
     setIsSidebarOpen,
-  ] = useState(false);
+  ] = useState(props.isSidebarOpen);
 
   const toggleSidebar = (): void => setIsSidebarOpen(!isSidebarOpen);
 
@@ -95,6 +96,7 @@ Layout.propTypes = {
   children: PropTypes.node.isRequired,
   className: PropTypes.string,
   description: PropTypes.string,
+  isSidebarOpen: PropTypes.bool,
   keywords: PropTypes.array,
   tableOfContents: PropTypes.any,
   title: PropTypes.string.isRequired,

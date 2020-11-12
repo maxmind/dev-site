@@ -4,11 +4,6 @@ import document from './openapi.fixture';
 import primatives from './primitives';
 import sampleFromSchema from './sampleFromSchema';
 
-const mockedDate = '2020-01-01T00:00:00Z';
-jest
-  .useFakeTimers('modern')
-  .setSystemTime(new Date(mockedDate).getTime());
-
 if (!document.components?.schemas) {
   fail('Fixture must have component schemas');
 }
