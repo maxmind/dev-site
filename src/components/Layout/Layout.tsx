@@ -77,12 +77,16 @@ const Layout: React.FC<ILayout> = (props) => {
 
         <main
           className={styles.content}
+          id="content"
+          tabIndex={-1}
         >
           {props.children}
         </main>
       </div>
 
-      <Footer />
+      <Footer
+        id="footer"
+      />
     </>
   );
 };

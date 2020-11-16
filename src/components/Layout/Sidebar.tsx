@@ -73,6 +73,7 @@ const Sidebar: React.FC = () => {
     >
       <nav
         className={styles.nav}
+        id="navigation"
       >
         {renderItems(sidebarItems, location.pathname)}
       </nav>

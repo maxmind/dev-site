@@ -1,0 +1,43 @@
+@use '../../styles/variables';
+
+.container {
+  backdrop-filter: blur(3px);
+  background-color: rgba(66, 88, 104, 0.95);
+  height: 0;
+  left: 0;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 20;
+
+  &:focus-within {
+    display: flex;
+    flex-wrap: wrap;
+    gap: calc(var(--mm-spacing) * 2);
+    height: 100%;
+    justify-content: center;
+    padding: 10px var(--mm-spacing) 0;
+    visibility: visible;
+  }
+}
+
+.nav {
+  // text-align: center;
+}
+
+.link {
+  clear: both;
+  color: #ccc;
+  display: block;
+  font-family: var(--mm-font-stack-display);
+  font-size: 5vh;
+  line-height: 1em;
+  padding: var(--mm-spacing);
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    color: #fff;
+  }
+}

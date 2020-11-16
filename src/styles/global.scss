@@ -3,6 +3,7 @@
 @import '~normalize.css/normalize.css';
 @import '~fontsource-montserrat/500.css';
 @import '~fontsource-montserrat/700.css';
+@import '~fontsource-montserrat/900.css';
 @import '~fontsource-roboto/500.css';
 @import '~fontsource-roboto/700.css';
 @import '~fontsource-source-code-pro/500.css';
@@ -25,6 +26,7 @@
   --mm-font-stack-display: 'montserrat', var(--mm-font-stack-default);
   --mm-font-stack-monospace: 'Source Code Pro', monospace;
   --mm-layout-sidebar-width: 260px;
+  --mm-outline: 2px solid var(--mm-color-logo-blue-light);
   --mm-spacing: 40px;
   --page-header-height: 80px;
   --page-type-color: rgba(255, 255, 255, 0.3);

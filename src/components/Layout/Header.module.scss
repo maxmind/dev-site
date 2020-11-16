@@ -45,8 +45,12 @@
 }
 
 .logo {
-  margin-bottom: -5px;
+  border-left: 0;
+  border-right: 0;
+  line-height: 1px;
   min-width: 200px;
+  padding: calc(var(--mm-spacing) / 4);
+  transform: translateX(calc(var(--mm-spacing) / -4));
   width: 200px;
 }
 

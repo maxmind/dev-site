@@ -3,6 +3,7 @@ import React from 'react';
 import { FaBars } from 'react-icons/fa';
 
 import Logo from '../../assets/svgs/maxmind-logo.svg';
+import AccessibilityNav from './AccessibilityNav';
 import styles from './Header.module.scss';
 import SearchBar from './SearchBar';
 
@@ -14,33 +15,36 @@ interface IHeader {
 const Header: React.FC<IHeader> = (props) => {
   const { isSidebarOpen, toggleSidebar } = props;
   return (
-    <header
-      className={styles.header}
-    >
-      <nav
-        className={styles.nav}
+    <>
+      <AccessibilityNav />
+      <header
+        className={styles.header}
       >
-        <a
-          aria-label="Home"
-          className={styles.logo}
-          href="/"
+        <nav
+          className={styles.nav}
         >
-          <Logo />
-        </a>
-        <SearchBar
-          className={styles.search}
-        />
-        <button
-          aria-label={isSidebarOpen ? 'Open menu' : 'Close menu'}
-          className={styles.toggle}
-          onClick={toggleSidebar}
-        >
-          <FaBars
-            aria-hidden="true"
+          <a
+            aria-label="Home"
+            className={styles.logo}
+            href="/"
+          >
+            <Logo />
+          </a>
+          <SearchBar
+            className={styles.search}
           />
-        </button>
-      </nav>
-    </header>
+          <button
+            aria-label={isSidebarOpen ? 'Open menu' : 'Close menu'}
+            className={styles.toggle}
+            onClick={toggleSidebar}
+          >
+            <FaBars
+              aria-hidden="true"
+            />
+          </button>
+        </nav>
+      </header>
+    </>
   );
 };
 
