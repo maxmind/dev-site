@@ -1,7 +1,8 @@
 import { GatsbyConfig } from 'gatsby';
 import remarkExternalLinks from 'remark-external-links';
-import remarkSlug from 'remark-slug';
 import sass from 'sass';
+
+import sectionize from './remark/sectionize';
 
 /**
  * The plugins below must come last in the ordering of the plugins because they
@@ -53,8 +54,8 @@ export default {
           '.md',
         ],
         remarkPlugins: [
+          sectionize,
           remarkExternalLinks,
-          remarkSlug,
         ],
       },
       resolve: 'gatsby-plugin-mdx',
