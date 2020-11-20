@@ -20,6 +20,7 @@
     "@types/node": "^14.0.5",
     "@types/node-fetch": "^2.5.7",
     "@types/prismjs": "^1.16.1",
+    "@types/puppeteer": "^5.4.0",
     "@types/react": "^16.9.51",
     "@types/react-dom": "^16.9.8",
     "@types/react-helmet": "^6.1.0",
@@ -185,7 +186,8 @@
     "lint:styles": "stylelint ./src/**/*.{css,scss,sass}",
     "serve": "node ./firebase.js && firebase serve --only hosting:local",
     "start": "yarn run develop",
-    "test": "jest --config .jestrc.js"
+    "test": "jest --config .jestrc.js",
+    "test:a11y": "jest --config .jestrc.a11y.js"
   },
   "version": "0.1.0"
 }

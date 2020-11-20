@@ -5,7 +5,7 @@ import React from 'react';
 import useActiveHeading from '../../hooks/useActiveHeading';
 import styles from './TableOfContents.module.scss';
 
-interface IItem {
+export interface IItem {
   items: IItem[];
   title: string;
   url: string;

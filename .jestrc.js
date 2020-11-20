@@ -1,5 +1,3 @@
-const pa11yPreset = require('jest-pa11y/jest-preset');
-
 module.exports = {
   globals: {
     __PATH_PREFIX__: '',
@@ -11,6 +9,9 @@ module.exports = {
   setupFiles: [
     '<rootDir>/test/loadershim.ts',
   ],
+  setupFilesAfterEnv: [
+    './test/setup.ts',
+  ],
   testPathIgnorePatterns: [
     'node_modules',
     '\\.cache',
@@ -19,14 +20,9 @@ module.exports = {
   testURL: 'http://localhost',
   transform: {
     '^.+\\.[jt]s(x)?$': '<rootDir>/test/preprocess.js',
-    '^.+\\.module\\.scss$': 'jest-style-transformer-sass-css-modules',
+    '^.+\\.scss$': 'jest-style-transformer-sass-css-modules',
   },
   transformIgnorePatterns: [
     'node_modules/(?!(typeface-montserrat)/)',
-  ],
-  ...pa11yPreset,
-  setupFilesAfterEnv: [
-    ...pa11yPreset.setupFilesAfterEnv,
-    './test/setup.ts',
   ],
 };

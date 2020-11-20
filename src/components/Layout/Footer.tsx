@@ -12,7 +12,7 @@ const Footer: React.FC<React.HTMLProps<HTMLDivElement>> = (props) => (
     <div
       className={styles.container}
     >
-      <nav
+      <div
         className={styles.branding}
       >
         <a
@@ -40,10 +40,9 @@ const Footer: React.FC<React.HTMLProps<HTMLDivElement>> = (props) => (
             <FaLinkedin />
           </a>
         </div>
+      </div>
 
-      </nav>
-
-      <nav
+      <div
         className={styles.group}
       >
         <h3
@@ -89,9 +88,9 @@ const Footer: React.FC<React.HTMLProps<HTMLDivElement>> = (props) => (
         >
           GeoLite2 Databases
         </a>
-      </nav>
+      </div>
 
-      <nav
+      <div
         className={styles.group}
       >
         <h3
@@ -137,9 +136,9 @@ const Footer: React.FC<React.HTMLProps<HTMLDivElement>> = (props) => (
         >
           Notice of Collection
         </a>
-      </nav>
+      </div>
 
-      <nav
+      <div
         className={styles.group}
       >
         <h3
@@ -165,9 +164,9 @@ const Footer: React.FC<React.HTMLProps<HTMLDivElement>> = (props) => (
         >
           GeoIP
         </a>
-      </nav>
+      </div>
 
-      <nav
+      <div
         className={styles.group}
       >
         <h3
@@ -205,7 +204,7 @@ const Footer: React.FC<React.HTMLProps<HTMLDivElement>> = (props) => (
         >
           Contact Us
         </a>
-      </nav>
+      </div>
 
       <section
         className={styles.copyright}
@@ -219,7 +218,7 @@ const Footer: React.FC<React.HTMLProps<HTMLDivElement>> = (props) => (
           Inc.
         </p>
 
-        <nav
+        <div
           className={styles.terms}
         >
           <a
@@ -234,7 +233,7 @@ const Footer: React.FC<React.HTMLProps<HTMLDivElement>> = (props) => (
           >
             Privacy Policy
           </a>
-        </nav>
+        </div>
       </section>
     </div>
   </footer>

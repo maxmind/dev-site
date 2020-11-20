@@ -1,10 +1,6 @@
-import 'jest-pa11y/build/extendExpect';
-
 import { useLocation } from '@reach/router';
 import { mount } from 'enzyme';
 import { useStaticQuery } from 'gatsby';
-import { configurePa11y } from 'jest-pa11y';
-import { recorders } from 'jest-style-transformer-utils';
 import * as React from 'react';
 
 import Layout from './Layout';
@@ -25,10 +21,8 @@ import Layout from './Layout';
   },
 });
 
-xdescribe('Layout', () => {
+describe('Layout', () => {
   it('has no Pa11y violations', async () => {
-    const pa11y = configurePa11y();
-
     const component = mount(
       <Layout
         isSidebarOpen={true}
@@ -38,18 +32,18 @@ xdescribe('Layout', () => {
       </Layout>
     );
 
-    const html = `
-      <style>${recorders.styles.get()}</style>
-      ${component.html()}
-    `;
-
-    const results = await pa11y(html);
-
-    await (global as any).page.screenshot({
-      fullPage: true,
+    const results = await pa11y(
+      component,
+      {
+        ignore: [
+          // <h3> tags are appropriate here in the context of other components
+          'WCAG2AAA.Principle1.Guideline1_3.1_3_1_AAA.G141',
+        ],
+      },
+    );
+    await page.screenshot({
       path: 'foo.png',
     });
-
     expect(results).toHaveNoPa11yViolations();
   });
 });
