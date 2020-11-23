@@ -2,10 +2,19 @@ import 'jest-pa11y/build/extendExpect';
 import '../src/styles/global.scss';
 
 import { ReactWrapper } from 'enzyme';
+import fs from 'fs';
+import Slugger from 'github-slugger';
 import { configurePa11y } from 'jest-pa11y';
 import { recorders } from 'jest-style-transformer-utils';
+import { dirname } from 'path';
 
-const _pa11y = configurePa11y();
+const ROOT_ELEMENT = 'jest-pa11y-container';
+
+const slugger = new Slugger();
+
+const _pa11y = configurePa11y({
+  rootElement: `#${ROOT_ELEMENT}`,
+});
 
 global.pa11y = (
   component: ReactWrapper,
@@ -13,7 +22,31 @@ global.pa11y = (
 ): Promise<unknown> => _pa11y(
   `
     <style>${recorders.styles.get()}</style>
-    ${component.html()}
+    <div id="${ROOT_ELEMENT}">${component.html()}</div>
   `,
   options,
-);
+).then(async results => {
+  if (results.issues) {
+    const $component = await page.$(`#${ROOT_ELEMENT}`);
+
+    if ($component) {
+      const { currentTestName, testPath } = expect.getState();
+      const screenshotPath = `${dirname(testPath)}/__a11y__`;
+      const fileName = slugger.slug(currentTestName);
+
+      // eslint-disable-next-line security/detect-non-literal-fs-filename
+      fs.rmdirSync(screenshotPath, {
+        recursive: true,
+      });
+
+      // eslint-disable-next-line security/detect-non-literal-fs-filename
+      fs.mkdirSync(screenshotPath);
+
+      await $component.screenshot({
+        path: `${screenshotPath}/${fileName}.png`,
+      });
+    }
+  }
+
+  return results;
+});

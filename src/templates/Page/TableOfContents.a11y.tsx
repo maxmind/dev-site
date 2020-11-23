@@ -41,10 +41,6 @@ describe('TableOfContents', () => {
         ],
       },
     );
-
-    await page.screenshot({
-      path: 'foo1.png',
-    });
     expect(results).toHaveNoPa11yViolations();
   });
 });

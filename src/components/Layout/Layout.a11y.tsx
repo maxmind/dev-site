@@ -41,9 +41,7 @@ describe('Layout', () => {
         ],
       },
     );
-    await page.screenshot({
-      path: 'foo.png',
-    });
+
     expect(results).toHaveNoPa11yViolations();
   });
 });
