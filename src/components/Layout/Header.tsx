@@ -16,11 +16,13 @@ const Header: React.FC<IHeader> = (props) => {
   const { isSidebarOpen, toggleSidebar } = props;
   return (
     <>
-      <AccessibilityNav />
+      <AccessibilityNav
+        className={styles['accessibility-nav']}
+      />
       <header
         className={styles.header}
       >
-        <nav
+        <div
           className={styles.nav}
         >
           <a
@@ -42,7 +44,7 @@ const Header: React.FC<IHeader> = (props) => {
               aria-hidden="true"
             />
           </button>
-        </nav>
+        </div>
       </header>
     </>
   );

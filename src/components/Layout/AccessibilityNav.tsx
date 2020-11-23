@@ -1,13 +1,19 @@
+import classNames from 'classnames';
+import PropTypes from 'prop-types';
 import * as React from 'react';
 
 import styles from './AccessibilityNav.module.scss';
 
-const AccessibilityNav: React.FC = () => (
-  <div
-    className={styles.container}
+const AccessibilityNav: React.FC<React.HTMLProps<HTMLElement>> = (props) => (
+  <section
+    aria-label="Page nagivation"
+    className={classNames(
+      styles.container,
+      props.className,
+    )}
   >
     <ul
-      aria-label="Accessibility Navigation"
+      aria-label="Page navigation menu"
     >
       <li>
         <a
@@ -42,7 +48,11 @@ const AccessibilityNav: React.FC = () => (
         </a>
       </li>
     </ul>
-  </div>
+  </section>
 );
+
+AccessibilityNav.propTypes = {
+  className: PropTypes.string,
+};
 
 export default AccessibilityNav;

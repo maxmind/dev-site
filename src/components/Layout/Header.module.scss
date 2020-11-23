@@ -37,6 +37,20 @@
   }
 }
 
+.accessibility-nav {
+  height: 0;
+  left: 0;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  z-index: 20;
+
+  &:focus-within {
+    height: 100%;
+  }
+}
+
+
 .nav {
   align-items: center;
   display: flex;

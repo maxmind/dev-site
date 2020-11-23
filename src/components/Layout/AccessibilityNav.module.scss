@@ -2,14 +2,8 @@
 
 .container {
   backdrop-filter: blur(3px);
-  background-color: rgba(66, 88, 104, 0.95);
-  height: 0;
-  left: 0;
-  overflow: hidden;
-  position: fixed;
-  top: 0;
+  background-color: #2e3a47;
   width: 100%;
-  z-index: 20;
 
   &:focus-within {
     display: flex;
@@ -18,7 +12,6 @@
     height: 100%;
     justify-content: center;
     padding: 10px var(--mm-spacing) 0;
-    visibility: visible;
   }
 }
 
