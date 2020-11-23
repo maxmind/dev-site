@@ -4,7 +4,7 @@ import { Browser, Page } from 'puppeteer';
 declare global {
   type Pa11y = (
     component: ReactWrapper,
-    options: any,
+    options?: any,
   ) => Promise<any>;
 
   namespace NodeJS {

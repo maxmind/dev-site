@@ -34,6 +34,32 @@ global.pa11y = (
       const screenshotPath = `${dirname(testPath)}/__a11y__`;
       const fileName = slugger.slug(currentTestName);
 
+      results.issues.forEach(async (issue: any, index: number) => {
+        const styles = `
+          ${issue.selector} {
+            border: 2px solid red;
+            position: relative;
+          }
+
+          ${issue.selector}:after {
+            background: red;
+            content: '${index + 1}';
+            color: white;
+            display: block;
+            font-size: 12px;
+            left: 0;
+            padding: 2px 5px;
+            position: absolute;
+            top: 0;
+            transform: translate(-2px, -2px);
+          }
+        `;
+
+        page.addStyleTag({
+          content: styles,
+        });
+      });
+
       // eslint-disable-next-line security/detect-non-literal-fs-filename
       fs.rmdirSync(screenshotPath, {
         recursive: true,
@@ -46,6 +72,11 @@ global.pa11y = (
         path: `${screenshotPath}/${fileName}.png`,
       });
     }
+
+    results.issues.map((issue: any) => ({
+      ...issue,
+      selector: issue.selector.replace(`#${ROOT_ELEMENT} > `, ''),
+    }));
   }
 
   return results;
