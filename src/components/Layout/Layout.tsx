@@ -5,11 +5,6 @@
  * See: https://www.gatsbyjs.org/docs/use-static-query/
  */
 
-import 'normalize.css';
-import 'typeface-montserrat';
-import 'typeface-roboto';
-import 'typeface-source-code-pro';
-
 import classNames from 'classnames';
 import PropTypes from 'prop-types';
 import React, { useState } from 'react';
@@ -24,6 +19,7 @@ interface ILayout {
   children: React.ReactNode;
   className?: string;
   description?: string;
+  isSidebarOpen?: boolean;
   keywords?: string[];
   // TODO - Add proper typing for `tableOfContents'
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
@@ -36,7 +32,7 @@ const Layout: React.FC<ILayout> = (props) => {
   const [
     isSidebarOpen,
     setIsSidebarOpen,
-  ] = useState(false);
+  ] = useState(props.isSidebarOpen);
 
   const toggleSidebar = (): void => setIsSidebarOpen(!isSidebarOpen);
 
@@ -81,12 +77,16 @@ const Layout: React.FC<ILayout> = (props) => {
 
         <main
           className={styles.content}
+          id="content"
+          tabIndex={-1}
         >
           {props.children}
         </main>
       </div>
 
-      <Footer />
+      <Footer
+        id="footer"
+      />
     </>
   );
 };
@@ -95,6 +95,7 @@ Layout.propTypes = {
   children: PropTypes.node.isRequired,
   className: PropTypes.string,
   description: PropTypes.string,
+  isSidebarOpen: PropTypes.bool,
   keywords: PropTypes.array,
   tableOfContents: PropTypes.any,
   title: PropTypes.string.isRequired,

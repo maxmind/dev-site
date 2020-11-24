@@ -4,14 +4,15 @@ import { FaLinkedin, FaTwitterSquare } from 'react-icons/fa';
 import Logo from '../../assets/svgs/maxmind-footer-logo.svg';
 import styles from './Footer.module.scss';
 
-const Footer: React.FC = () => (
+const Footer: React.FC<React.HTMLProps<HTMLDivElement>> = (props) => (
   <footer
+    {...props}
     className={styles.footer}
   >
     <div
       className={styles.container}
     >
-      <nav
+      <div
         className={styles.branding}
       >
         <a
@@ -39,10 +40,9 @@ const Footer: React.FC = () => (
             <FaLinkedin />
           </a>
         </div>
+      </div>
 
-      </nav>
-
-      <nav
+      <div
         className={styles.group}
       >
         <h3
@@ -88,9 +88,9 @@ const Footer: React.FC = () => (
         >
           GeoLite2 Databases
         </a>
-      </nav>
+      </div>
 
-      <nav
+      <div
         className={styles.group}
       >
         <h3
@@ -136,9 +136,9 @@ const Footer: React.FC = () => (
         >
           Notice of Collection
         </a>
-      </nav>
+      </div>
 
-      <nav
+      <div
         className={styles.group}
       >
         <h3
@@ -164,9 +164,9 @@ const Footer: React.FC = () => (
         >
           GeoIP
         </a>
-      </nav>
+      </div>
 
-      <nav
+      <div
         className={styles.group}
       >
         <h3
@@ -204,7 +204,7 @@ const Footer: React.FC = () => (
         >
           Contact Us
         </a>
-      </nav>
+      </div>
 
       <section
         className={styles.copyright}
@@ -218,7 +218,7 @@ const Footer: React.FC = () => (
           Inc.
         </p>
 
-        <nav
+        <div
           className={styles.terms}
         >
           <a
@@ -233,7 +233,7 @@ const Footer: React.FC = () => (
           >
             Privacy Policy
           </a>
-        </nav>
+        </div>
       </section>
     </div>
   </footer>

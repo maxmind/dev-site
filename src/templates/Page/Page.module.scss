@@ -122,8 +122,6 @@
     margin: 0;
     min-width: auto;
     padding: 0;
-    position: sticky;
-    top: calc(var(--page-header-height));
     width: 100%;
   }
 
@@ -136,6 +134,8 @@
     background: var(--mm-color-background);
     border-bottom: 1px solid var(--mm-color-border);
     padding: var(--mm-spacing);
+    position: sticky;
+    top: calc(var(--page-header-height));
     width: 100%;
   }
 

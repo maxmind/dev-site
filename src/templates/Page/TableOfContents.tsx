@@ -2,18 +2,30 @@ import classNames from 'classnames';
 import PropTypes from 'prop-types';
 import React from 'react';
 
+import useActiveHeading from '../../hooks/useActiveHeading';
 import styles from './TableOfContents.module.scss';
 
-interface IItem {
+export interface IItem {
   items: IItem[];
   title: string;
   url: string;
 }
 
 export interface ITableOfContents {
-  currentItem?: string;
   items: IItem[];
 }
+
+const getIds = (
+  items: IItem[]
+): string[] => items.reduce((accumulator: string[], item: IItem) => {
+  const itemIds = item.items ? getIds(item.items) : [];
+
+  return [
+    ...accumulator,
+    item.url.slice(1),
+    ...itemIds,
+  ];
+}, []);
 
 const renderItems = (
   items: IItem[],
@@ -37,7 +49,7 @@ const renderItems = (
         <li
           className={classNames(
             styles.listItem,
-            (currentItem && currentItem === item.url)
+            (currentItem && currentItem === `toc-${item.url.slice(1)}`)
               ? styles['item--active'] : undefined
           )}
           data-item-number={itemNumber}
@@ -58,7 +70,11 @@ const renderItems = (
 const TableOfContents: React.FC<
   ITableOfContents & React.HTMLProps<HTMLElement>
 > = (props) => {
-  const { currentItem, items, ...rest } = props;
+  const { items, ...rest } = props;
+
+  const itemIds = getIds(items);
+  const currentItem = useActiveHeading(itemIds);
+
   return (
     <nav
       {...rest}
@@ -74,7 +90,6 @@ const TableOfContents: React.FC<
 };
 
 TableOfContents.propTypes = {
-  currentItem: PropTypes.string,
   items: PropTypes.any,
 };
 

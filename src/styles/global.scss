@@ -1,40 +1,50 @@
 @use './reset';
 
-:global {
-  .fa-icon {
-    vertical-align: middle;
-  }
+@import '~normalize.css/normalize.css';
+@import '~fontsource-montserrat/500.css';
+@import '~fontsource-montserrat/700.css';
+@import '~fontsource-montserrat/900.css';
+@import '~fontsource-roboto/500.css';
+@import '~fontsource-roboto/700.css';
+@import '~fontsource-source-code-pro/500.css';
+@import '~fontsource-source-code-pro/700.css';
+
+:global(.fa-icon) {
+  vertical-align: middle;
 }
 
 :root {
   --mm-aside-width: 290px;
   --mm-color-background: #fff;
+  --mm-color-background-code: rgba(57, 61, 100, 0.9);
   --mm-color-sidebar: #f5f6f7;
   --mm-color-border: #ddd;
   --mm-color-logo-blue-light: #00aeef;
-  --mm-color-primary-text: #666;
-  --mm-color-display-text: rgba(57, 61, 100, 0.9);
+  --mm-color-logo-blue-dark: #2e3a47;
+  --mm-color-primary-text: #595959;
+  --mm-color-display-text: #444666;
   --mm-border-radius: 6px;
   --mm-font-stack-default: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Ubuntu, sans-serif;
   --mm-font-stack-display: 'montserrat', var(--mm-font-stack-default);
   --mm-font-stack-monospace: 'Source Code Pro', monospace;
   --mm-layout-sidebar-width: 260px;
+  --mm-outline: 2px solid var(--mm-color-logo-blue-light);
   --mm-spacing: 40px;
   --page-header-height: 80px;
   --page-type-color: rgba(255, 255, 255, 0.3);
 }
 
-// Not sure why .page-type--minfraud does not work here
+/* Not sure why .page-type--minfraud does not work here */
 [class='page-type--minfraud'] {
   --page-type-color: rgba(255, 0, 136, 0.5);
 }
 
-// Not sure why .page-type--geoip does not work here
+/* Not sure why .page-type--geoip does not work here */
 [class='page-type--geoip'] {
   --page-type-color: rgba(0, 255, 102, 0.5);
 }
 
-// Not sure why .page-type--geolite does not work here
+/* Not sure why .page-type--geolite does not work here */
 [class='page-type--geolite'] {
   --page-type-color: rgba(255, 255, 0, 0.5);
 }

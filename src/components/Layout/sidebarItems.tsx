@@ -44,55 +44,20 @@ export const sidebarItems: IItem[] = [
           {
             items: [
               {
-                className: styles['item-attribute'],
-                title: 'account',
-                to: '/minfraud/api-reference#Request__account',
+                title: 'Authentication',
+                to: '#',
               },
               {
-                className: styles['item-attribute'],
-                title: 'billing',
-                to: '/minfraud/api-reference#Request__billing',
-              },
-              {
-                className: styles['item-attribute'],
-                title: 'credit_card',
-                to: '/minfraud/api-reference#Request__credit_card',
-              },
-              {
-                className: styles['item-attribute'],
-                title: '...',
+                title: 'Endpoints',
                 to: '#',
               },
             ],
-            title: 'Request',
+            title: 'Requests',
             to: '/minfraud/api-reference#Request',
           },
           {
             items: [
               {
-                items: [
-                  {
-                    className: styles['item-attribute'],
-                    title: 'disposition',
-                    to: '/minfraud/api-reference#Response_Score__disposition',
-                  },
-                  {
-                    className: styles['item-attribute'],
-                    title: 'funds_remaining',
-                    // eslint-disable-next-line max-len
-                    to: '/minfraud/api-reference#Response_Score__funds_remaining',
-                  },
-                  {
-                    className: styles['item-attribute'],
-                    title: 'id',
-                    to: '/minfraud/api-reference#Response_Score__',
-                  },
-                  {
-                    className: styles['item-attribute'],
-                    title: '...',
-                    to: '#',
-                  },
-                ],
                 title: 'Score',
                 to: '/minfraud/api-reference#Response_Score',
               },
@@ -106,6 +71,10 @@ export const sidebarItems: IItem[] = [
               },
             ],
             title: 'Responses',
+          },
+          {
+            title: 'Models',
+            to: '#',
           },
         ],
         title: 'API Reference',

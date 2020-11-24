@@ -23,14 +23,13 @@
 }
 
 .list .list {
-  max-height: 0;
-  overflow: hidden;
-  transition: all 0.5s ease-in-out;
+  display: none;
 }
 
 .item {
   border-top: 1px solid var(--mm-color-border);
   color: #666;
+  margin: 2px 0 3px;
   position: relative;
 }
 
@@ -39,7 +38,7 @@
 }
 
 .item-link {
-  color: var(--mm-color-display-text);
+  color: #444666;
   display: inline-block;
   font-family: var(--mm-font-stack-display);
   font-size: 16px;
@@ -52,13 +51,11 @@
   &:hover {
     background: rgba(255, 255, 255, 0.5);
   }
+}
 
-  :global {
-    .fa-icon {
-      margin-right: calc(var(--mm-spacing) / 2);
-      transform: translateY(-2px);
-    }
-  }
+:global(.fa-icon) {
+  margin-right: calc(var(--mm-spacing) / 2);
+  transform: translateY(-2px);
 }
 
 .item--active .item-link {
@@ -90,6 +87,7 @@
   background: var(--mm-color-background);
   border-right: 0 !important;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  padding-bottom: 5px;
 }
 
 .item--active .item--active {
@@ -109,14 +107,17 @@
   color: #767676;
   font-weight: 500;
 
+  &:focus {
+    font-weight: 700;
+  }
+
   &:hover {
     color: var(--mm-color-display-text);
   }
 }
 
 .list .item--active .list {
-  height: auto;
-  max-height: 100vh;
+  display: block;
 }
 
 .item:first-of-type {

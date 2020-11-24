@@ -4,11 +4,6 @@ import document from './openapi.fixture';
 import primatives from './primitives';
 import sampleFromSchema from './sampleFromSchema';
 
-const mockedDate = '2020-01-01T00:00:00Z';
-jest
-  .useFakeTimers('modern')
-  .setSystemTime(new Date(mockedDate).getTime());
-
 if (!document.components?.schemas) {
   fail('Fixture must have component schemas');
 }
@@ -401,10 +396,11 @@ describe('sampleFromSchema()', () => {
         () => {
           // eslint-disable-next-line max-len
           const schema = schemas.StringWithDateTimeFormat as OpenAPIV3.NonArraySchemaObject;
+
           expect(
-            sampleFromSchema(schema)
+            sampleFromSchema(schema).slice(0, 19)
           ).toBe(
-            primatives['string_date-time'](schema)
+            (primatives['string_date-time'](schema) as string).slice(0, 19)
           );
         }
       );

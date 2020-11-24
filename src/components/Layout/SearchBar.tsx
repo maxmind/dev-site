@@ -74,6 +74,7 @@ const SearchBar: React.FC<ISearchBar> = (props) => {
           aria-label="Search"
           className={styles.input}
           defaultValue={searchQuery}
+          id="search"
           name='q'
           onBlur={() => setIsMobileOpen(false)}
           onChange={handleChange}

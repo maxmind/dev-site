@@ -38,9 +38,6 @@ const Page: React.FC<IPage> = (props) => {
   const { description, keywords, title } = frontmatter;
   const { modifiedTime } = parent;
 
-  // TODO: Get current item based on scroll/anchor position
-  const currentItem = '#data-warehousing-h3';
-
   const formattedLastUpdated = new Date(
     Date.parse(modifiedTime)
   );
@@ -100,7 +97,6 @@ const Page: React.FC<IPage> = (props) => {
           {tableOfContents && tableOfContents.items?.length > 0 && (
             <TableOfContents
               className={styles.tableOfContents}
-              currentItem={currentItem}
               items={tableOfContents.items}
             />
           )}
