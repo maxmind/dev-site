@@ -54,7 +54,7 @@ jobs:
         uses: dkershner6/jest-coverage-commenter-action@v1
         with:
           github_token: "${{ secrets.GITHUB_TOKEN }}"
-          test_command: "yarn test --coverage"
+          test_command: "yarn test:unit --coverage"
 
       - name: Build
         run: yarn build
