@@ -186,8 +186,9 @@
     "lint:styles": "stylelint ./src/**/*.{css,scss,sass}",
     "serve": "node ./firebase.js && firebase serve --only hosting:local",
     "start": "yarn run develop",
-    "test": "jest --config .jestrc.js",
-    "test:a11y": "jest --config .jestrc.a11y.js"
+    "test": "run-s \"test:* --silent\"",
+    "test:a11y": "jest --config .jestrc.a11y.js --no-cache",
+    "test:unit": "jest --config .jestrc.js"
   },
   "version": "0.1.0"
 }

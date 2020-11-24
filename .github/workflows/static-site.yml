@@ -43,10 +43,13 @@ jobs:
       - name: Install dependencies
         run: yarn install
 
-      - name: Test
-        run: yarn test
+      - name: Run unit tests
+        run: yarn test:unit
 
-      - name: Test Coverage
+      - name: Run accessibility tests
+        run: yarn test:a11y
+
+      - name: Test coverage
         if: ${{ github.event_name == 'pull_request' }}
         uses: dkershner6/jest-coverage-commenter-action@v1
         with:
