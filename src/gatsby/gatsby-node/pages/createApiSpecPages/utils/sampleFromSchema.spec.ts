@@ -396,10 +396,11 @@ describe('sampleFromSchema()', () => {
         () => {
           // eslint-disable-next-line max-len
           const schema = schemas.StringWithDateTimeFormat as OpenAPIV3.NonArraySchemaObject;
+
           expect(
-            sampleFromSchema(schema)
+            sampleFromSchema(schema).slice(0, 19)
           ).toBe(
-            primatives['string_date-time'](schema)
+            (primatives['string_date-time'](schema) as string).slice(0, 19)
           );
         }
       );
