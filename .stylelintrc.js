@@ -1,14 +1,5 @@
 const path = require('path');
-
-const browsers = [
-  ...([
-    'Chrome',
-    'Edge',
-    'Firefox',
-    'Safari',
-  ].map(browser => `last 2 ${browser} versions`)),
-  'Firefox ESR',
-];
+const browsers = require('./.browsersrc');
 
 module.exports = {
   configBasedir: path.resolve(__dirname),
