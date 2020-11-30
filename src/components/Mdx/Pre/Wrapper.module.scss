@@ -6,5 +6,6 @@
   flex-direction: column;
   justify-content: center;
   margin: 0 var(--mm-spacing);
+  padding: var(--mm-spacing);
   @include variables.pattern;
 }

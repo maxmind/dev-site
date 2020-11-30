@@ -6,31 +6,10 @@
   font-size: 14px;
   position: relative;
 
-  &::before {
-    content: ' ';
-    display: block;
-    height: 100%;
-    left: 0;
-    overflow: hidden;
-    padding: 0 !important;
-    position: absolute !important;
-    top: 0;
-    width: 100%;
-
-    @include variables.pattern;
-  }
+  @include variables.pattern;
 
   &::after {
-    background: rgba(37, 11, 4, 0.7);
-    content: ' ';
-    display: block;
-    height: 100%;
-    left: 0;
-    overflow: hidden;
-    padding: 0 !important;
-    position: absolute;
-    top: 0;
-    width: 100%;
+    background: rgba(25, 19, 6, 0.7);
   }
 }
 

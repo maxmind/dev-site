@@ -5,6 +5,15 @@
   overflow: hidden;
   padding: 0 !important;
   @include variables.pattern;
+
+  [class*='Wrapper-module--wrapper'] {
+    z-index: 2;
+
+    &::before,
+    &::after {
+      display: none;
+    }
+  }
 }
 
 .example--is-expanded {

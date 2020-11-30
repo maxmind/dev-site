@@ -4,37 +4,13 @@
   background: var(--mm-color-background);
   border-bottom: 1px solid var(--mm-color-border);
   height: var(--page-header-height);
+  padding-top: 10px;
   position: sticky;
   top: 0;
   width: 100%;
   z-index: 10;
 
-  &::before {
-    content: ' ';
-    display: block;
-    height: 10px;
-    left: 0;
-    overflow: hidden;
-    padding: 0 !important;
-    position: absolute;
-    top: 0;
-    width: 100%;
-
-    @include variables.pattern;
-  }
-
-  &::after {
-    background: linear-gradient(90deg, rgba(0, 119, 194, 0.5) 0%, var(--page-type-color));
-    content: ' ';
-    display: block;
-    height: 10px;
-    left: 0;
-    overflow: hidden;
-    padding: 0 !important;
-    position: absolute;
-    top: 0;
-    width: 100%;
-  }
+  @include variables.pattern-border;
 }
 
 .accessibility-nav {
@@ -49,7 +25,6 @@
     height: 100%;
   }
 }
-
 
 .nav {
   align-items: center;
