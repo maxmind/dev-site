@@ -25,10 +25,6 @@
   position: sticky;
   top: calc(var(--page-header-height) + 15px);
   z-index: 3;
-
-  :global(.fa-icon) {
-    margin-right: 0;
-  }
 }
 
 @include variables.breakpoint('lg') {
