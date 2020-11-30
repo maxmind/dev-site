@@ -4,9 +4,9 @@
   height: 0;
   overflow: hidden;
   padding: 0 !important;
-  @include variables.pattern;
 
   [class*='Wrapper-module--wrapper'] {
+    margin: 0 var(--mm-spacing);
     z-index: 2;
 
     &::before,
@@ -34,6 +34,12 @@
     margin: 0 !important;
     overflow: initial;
     padding-top: var(--mm-spacing);
+
+    @include variables.pattern;
+
+    &::before {
+      background-attachment: fixed;
+    }
   }
 
   .example-json {

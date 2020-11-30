@@ -98,7 +98,6 @@ $containers: (
 $pattern-scale: 1;
 
 @mixin pattern-base {
-  background-attachment: fixed;
   background-color: #00a7e5;
   background-image: url('/assets/svg/bg-pattern.svg');
   background-position: 0 0;
