@@ -15,7 +15,7 @@
 }
 
 .toolbar__buttons {
-  background-color: #58577e;
+  background-color: rgb(61, 91, 104);
   border-left: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: var(--mm-border-radius);
   border-right: 1px solid rgba(255, 255, 255, 0.1);
@@ -25,6 +25,10 @@
   position: sticky;
   top: calc(var(--page-header-height) + 15px);
   z-index: 3;
+
+  :global(.fa-icon) {
+    margin-right: 0;
+  }
 }
 
 @include variables.breakpoint('lg') {
