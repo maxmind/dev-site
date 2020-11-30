@@ -7,6 +7,7 @@ module.exports = {
   extends: [
     'eslint:recommended',
     'plugin:css-modules/recommended',
+    'plugin:compat/recommended',
     'plugin:import/errors',
     'plugin:import/typescript',
     'plugin:import/warnings',
@@ -314,6 +315,14 @@ module.exports = {
         '.tsx',
       ],
     },
+    polyfills: [
+      'CustomEvent',
+      'fetch',
+      'IntersectionObserver',
+      'Promise.all',
+      'Promise.race',
+      'URLSearchParams',
+    ],
     react: {
       version: 'detect',
     },

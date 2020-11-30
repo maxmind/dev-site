@@ -1,5 +1,4 @@
 const path = require('path');
-const browsers = require('./.browsersrc');
 
 module.exports = {
   configBasedir: path.resolve(__dirname),
@@ -23,7 +22,6 @@ module.exports = {
     'plugin/no-unsupported-browser-features': [
       true,
       {
-        browsers,
         ignore: [
           'calc',
           'css-gradients',

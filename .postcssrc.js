@@ -1,5 +1,4 @@
 const postcssPresetEnv = require('postcss-preset-env');
-const browsers = require('./.browsersrc');
 
 module.exports = {
   plugins: [
@@ -7,7 +6,6 @@ module.exports = {
       autoprefixer: {
         grid: 'autoplace',
       },
-      browsers,
       stage: 0,
     }),
   ],
