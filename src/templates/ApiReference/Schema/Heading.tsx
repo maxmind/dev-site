@@ -1,3 +1,4 @@
+import classNames from 'classnames';
 import { SchemaObject } from 'openapi3-ts';
 import PropTypes from 'prop-types';
 import React from 'react';
@@ -7,6 +8,7 @@ import Type from './Type';
 import { getRefAnchorLink } from './utils';
 
 interface IHeading {
+  className?: string;
   name: string;
   schema: SchemaObject;
 }
@@ -20,7 +22,10 @@ const Heading: React.FC<IHeading> = (
 
   return (
     <h1
-      className={styles['heading']}
+      className={classNames(
+        styles['heading'],
+        props.className,
+      )}
       id={id}
     >
       <a
@@ -52,6 +57,7 @@ const Heading: React.FC<IHeading> = (
 };
 
 Heading.propTypes = {
+  className: PropTypes.string,
   name: PropTypes.string.isRequired,
   schema: PropTypes.any.isRequired,
 };

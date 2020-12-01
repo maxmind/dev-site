@@ -29,15 +29,16 @@
 
 @include variables.breakpoint('xxl') {
   .example {
-    grid-area: schema-example;
     height: auto;
     margin: 0 !important;
     overflow: initial;
     padding-top: var(--mm-spacing);
 
     @include variables.pattern;
+  }
 
-    &::before {
+  @supports(background-attachment: fixed) {
+    .example::before {
       background-attachment: fixed;
     }
   }

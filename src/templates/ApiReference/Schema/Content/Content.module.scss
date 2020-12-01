@@ -62,10 +62,6 @@
 }
 
 @include variables.breakpoint('xxl') {
-  .body {
-    grid-area: schema-body;
-  }
-
   .properties {
     position: sticky;
     top: calc(var(--page-header-height) + calc(var(--mm-spacing) + var(--heading-height)));
