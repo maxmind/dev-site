@@ -1,3 +1,4 @@
+import classNames from 'classnames';
 import React from 'react';
 import { FaLinkedin, FaTwitterSquare } from 'react-icons/fa';
 
@@ -43,7 +44,10 @@ const Footer: React.FC<React.HTMLProps<HTMLDivElement>> = (props) => (
       </div>
 
       <div
-        className={styles.group}
+        className={classNames(
+          styles.group,
+          styles['group--products']
+        )}
       >
         <h3
           className={styles.heading}
@@ -91,7 +95,10 @@ const Footer: React.FC<React.HTMLProps<HTMLDivElement>> = (props) => (
       </div>
 
       <div
-        className={styles.group}
+        className={classNames(
+          styles.group,
+          styles['group--support']
+        )}
       >
         <h3
           className={styles.heading}
@@ -139,7 +146,10 @@ const Footer: React.FC<React.HTMLProps<HTMLDivElement>> = (props) => (
       </div>
 
       <div
-        className={styles.group}
+        className={classNames(
+          styles.group,
+          styles['group--developers']
+        )}
       >
         <h3
           className={styles.heading}
@@ -167,7 +177,10 @@ const Footer: React.FC<React.HTMLProps<HTMLDivElement>> = (props) => (
       </div>
 
       <div
-        className={styles.group}
+        className={classNames(
+          styles.group,
+          styles['group--company']
+        )}
       >
         <h3
           className={styles.heading}
