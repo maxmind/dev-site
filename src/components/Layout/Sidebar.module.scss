@@ -38,7 +38,7 @@
 }
 
 .item-link {
-  color: #444666;
+  color: #444;
   display: inline-block;
   font-family: var(--mm-font-stack-display);
   font-size: 16px;
@@ -93,14 +93,15 @@
 .item--active .item--active {
   border: 0;
   box-shadow: none;
+  padding-bottom: 0;
 }
 
 .item--active .item--active .item-link {
   background: var(--mm-color-sidebar);
   border-radius: var(--mm-border-radius) 0 0 var(--mm-border-radius);
-  border-right: 0;
-  color: var(--mm-color-display-text);
-  font-weight: bold;
+  border-right: 4px solid var(--mm-color-display-text);
+  color: var(--mm-color-display-text) !important;
+  font-weight: 700 !important;
 }
 
 .item--active .list .item-link {
@@ -138,8 +139,9 @@
 
 .item .item--active .item .item-link {
   background: transparent;
-  color: #767676;
-  font-weight: 500;
+  border: 0;
+  color: #767676 !important;
+  font-weight: 500 !important;
 
   &:hover {
     color: var(--mm-color-display-text);
@@ -162,8 +164,8 @@
   }
 
   .nav {
-    height: calc(100vh - calc(var(--page-header-height) + calc(var(--mm-spacing) * 2)));
-    margin-top: var(--mm-spacing);
+    height: auto;
+    margin: var(--mm-spacing) 0;
     top: calc(var(--page-header-height) + var(--mm-spacing));
   }
 
