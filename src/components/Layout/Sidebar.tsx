@@ -3,9 +3,9 @@ import classNames from 'classnames';
 import { Link } from 'gatsby';
 import React from 'react';
 
+import { IItem, isInternalItem, sidebarItems } from '../../sidebarItems';
 // eslint-disable-next-line css-modules/no-unused-class
 import styles from './Sidebar.module.scss';
-import { IItem, sidebarItems } from './sidebarItems';
 
 const renderItems = (
   items: IItem[],
@@ -16,7 +16,7 @@ const renderItems = (
   >
     {items.map((item, index) => {
       const isItemActive = (
-        currentPath && item.to && currentPath.startsWith(item.to)
+        currentPath && isInternalItem(item) && currentPath.startsWith(item.to)
       );
 
       return (
@@ -29,10 +29,10 @@ const renderItems = (
             item.className,
           )}
           data-current-path={currentPath}
-          data-item-to={item.to}
+          data-item-to={isInternalItem(item) && item.to}
           key={`sidebar-item-${index}`}
         >
-          {item.to ? (
+          {isInternalItem(item) ? (
             <Link
               className={styles['item-link']}
               to={item.to}
@@ -52,10 +52,9 @@ const renderItems = (
 
           {item.items && renderItems(item.items, currentPath)}
           {isItemActive
-              && item.secondaryItems
-              && renderItems(item.secondaryItems, currentPath)
+            && item.secondaryItems
+            && renderItems(item.secondaryItems, currentPath)
           }
-
         </li>
       );
     }

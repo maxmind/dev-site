@@ -1,9 +1,15 @@
 import { useLocation } from '@reach/router';
+import { Link } from 'gatsby';
 import PropTypes from 'prop-types';
 import React from 'react';
+import {
+  FaArrowLeft,
+  FaArrowRight,
+} from 'react-icons/fa';
 
 import Layout from '../../components/Layout/Layout';
 import H1 from '../../components/Mdx/H1';
+import { getNextPage, getPreviousPage } from '../../utils/pagination';
 import styles from './Page.module.scss';
 import TableOfContents, { ITableOfContents } from './TableOfContents';
 
@@ -56,6 +62,9 @@ const Page: React.FC<IPage> = (props) => {
     type = 'geolite';
   }
 
+  const nextPage = getNextPage(location.pathname);
+  const previousPage = getPreviousPage(location.pathname);
+
   return (
     <Layout
       description={description}
@@ -107,6 +116,50 @@ const Page: React.FC<IPage> = (props) => {
         >
           {props.children}
         </section>
+
+        {(previousPage || nextPage) && (
+          <footer
+            className={styles.footer}
+          >
+            <div
+              className={styles['footer-container']}
+            >
+              {previousPage && (
+                <Link
+                  className={styles['footer-previous']}
+                  to={previousPage.to}
+                >
+                  <FaArrowLeft
+                    className={styles['footer-arrow']}
+                  />
+                  <span
+                    className={styles['footer-direction']}
+                  >
+                    Previous
+                  </span>
+                  {previousPage.title}
+                </Link>
+              )}
+
+              {nextPage && (
+                <Link
+                  className={styles['footer-next']}
+                  to={nextPage.to}
+                >
+                  <FaArrowRight
+                    className={styles['footer-arrow']}
+                  />
+                  <span
+                    className={styles['footer-direction']}
+                  >
+                    Next
+                  </span>
+                  {nextPage.title}
+                </Link>
+              )}
+            </div>
+          </footer>
+        )}
       </article>
     </Layout>
   );
