@@ -100,7 +100,7 @@ $pattern-scale: 1;
 @mixin pattern-base {
   background-color: #00a7e5;
   background-image: url('/assets/svg/bg-pattern.svg');
-  background-position: 0 0;
+  background-position: center center;
   background-size: (80px * $pattern-scale) (140px * $pattern-scale);
   content: ' ';
   height: 100%;

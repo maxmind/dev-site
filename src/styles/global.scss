@@ -9,10 +9,6 @@
 @import '~fontsource-source-code-pro/500.css';
 @import '~fontsource-source-code-pro/700.css';
 
-:global(.fa-icon) {
-  vertical-align: middle;
-}
-
 :root {
   --mm-aside-width: 290px;
   --mm-color-background: #fff;
@@ -32,6 +28,10 @@
   --mm-spacing: 40px;
   --page-header-height: 80px;
   --page-type-color: rgba(255, 255, 255, 0.3);
+}
+
+:global(.fa-icon) {
+  vertical-align: middle;
 }
 
 :global(#___gatsby) {
