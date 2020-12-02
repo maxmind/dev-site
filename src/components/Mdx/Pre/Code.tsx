@@ -105,7 +105,7 @@ const Code: React.FC<ICode> = (props) => {
     ];
   }
 
-  const mmReactCodeMount = new Event('mm-react-code-mount');
+  const mmReactCodeMount = new CustomEvent('mm-react-code-mount');
 
   React.useEffect(() => {
     Promise.race(promises).then(() => {

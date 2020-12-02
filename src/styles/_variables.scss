@@ -95,32 +95,59 @@ $containers: (
   }
 }
 
+$pattern-scale: 1;
+
+@mixin pattern-base {
+  background-color: #00a7e5;
+  background-image: url('/assets/svg/bg-pattern.svg');
+  background-position: 0 0;
+  background-size: (80px * $pattern-scale) (140px * $pattern-scale);
+  content: ' ';
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  transform: translateZ(0);
+  width: 100%;
+  will-change: transform; /* stylelint-disable-line */
+}
+
+@mixin pattern-gradient {
+  background: rgb(0, 119, 194);
+  background: linear-gradient(90deg, rgba(0, 119, 194, 0.5) 0%, var(--page-type-color));
+  content: ' ';
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
 @mixin pattern {
-  --pattern-shade-1: #00a7e5;
-  --pattern-shade-2: #009fdb;
-  --pattern-shade-3: var(--mm-color-logo-blue-light);
-  background-attachment: fixed;
-  background-color: var(--pattern-shade-1);
-  background-image: linear-gradient(30deg, var(--pattern-shade-2) 12%, transparent 12.5%, transparent 87%, var(--pattern-shade-2) 87.5%, var(--pattern-shade-2)),
-    linear-gradient(150deg, var(--pattern-shade-2) 12%, transparent 12.5%, transparent 87%, var(--pattern-shade-2) 87.5%, var(--pattern-shade-2)),
-    linear-gradient(30deg, var(--pattern-shade-2) 12%, transparent 12.5%, transparent 87%, var(--pattern-shade-2) 87.5%, var(--pattern-shade-2)),
-    linear-gradient(150deg, var(--pattern-shade-2) 12%, transparent 12.5%, transparent 87%, var(--pattern-shade-2) 87.5%, var(--pattern-shade-2)),
-    linear-gradient(60deg, var(--pattern-shade-3) 25%, transparent 25.5%, transparent 75%, var(--pattern-shade-3) 75%, var(--pattern-shade-3)),
-    linear-gradient(60deg, var(--pattern-shade-3) 25%, transparent 25.5%, transparent 75%, var(--pattern-shade-3) 75%, var(--pattern-shade-3));
-  background-position: 0 0, 0 0, 40px 70px, 40px 70px, 0 0, 40px 70px;
-  background-repeat: round;
-  background-size: 80px 140px;
-  padding: var(--mm-spacing);
   position: relative;
 
   &::before {
-    background: rgb(0, 119, 194);
-    background: linear-gradient(90deg, rgba(0, 119, 194, 0.5) 0%, var(--page-type-color));
-    content: ' ';
-    height: 100%;
-    left: 0;
-    position: absolute;
-    top: 0;
-    width: 100%;
+    @include pattern-base;
+  }
+
+  &::after {
+    @include pattern-gradient;
+  }
+}
+
+@mixin pattern-border {
+  &::before,
+  &::after {
+    display: block;
+    height: 10px !important;
+    overflow: hidden;
+  }
+
+  &::before {
+    @include pattern-base;
+  }
+
+  &::after {
+    @include pattern-gradient;
   }
 }

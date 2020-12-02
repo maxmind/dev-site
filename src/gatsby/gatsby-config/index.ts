@@ -27,18 +27,6 @@ export default {
   plugins: [
     {
       options: {
-        cssLoaderOptions: {
-          camelCase: true,
-        },
-        implementation: sass,
-        includePaths: [
-          'src/styles',
-        ],
-      },
-      resolve: 'gatsby-plugin-sass',
-    },
-    {
-      options: {
         name: 'content',
         path: `${GATSBY_ROOT}/content/`,
       },

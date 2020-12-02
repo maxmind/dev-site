@@ -34,10 +34,12 @@ const Schema: React.FC<ISchema> = (props) => {
       className={styles.schema}
     >
       <Heading
+        className={styles.heading}
         name={props.name}
         schema={props.schema}
       />
       <Content
+        className={styles.content}
         handleExpand={handleExpand}
         handleHightlightLines={handleHightlightLines}
         isExpanded={isExampleExpanded}
@@ -45,6 +47,7 @@ const Schema: React.FC<ISchema> = (props) => {
         schema={props.schema}
       />
       <CodeExample
+        className={styles.example}
         highlightLines={highlightedLines}
         isExpanded={isExampleExpanded}
         schema={props.schema}

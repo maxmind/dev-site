@@ -1,4 +1,5 @@
 /* eslint-disable filenames/match-exported */
+import forEach from 'lodash.foreach';
 import { useEffect, useState } from 'react';
 
 const useActiveHeading = (headingIds: string[]): string => {
@@ -10,7 +11,7 @@ const useActiveHeading = (headingIds: string[]): string => {
   useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {
-        entries.forEach((entry) => {
+        forEach(entries, (entry) => {
           if (entry.isIntersecting) {
             setActiveHeading(entry.target.id);
           }

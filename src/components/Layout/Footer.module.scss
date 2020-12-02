@@ -6,38 +6,21 @@
   font-size: 14px;
   position: relative;
 
-  &::before {
-    content: ' ';
-    display: block;
-    height: 100%;
-    left: 0;
-    overflow: hidden;
-    padding: 0 !important;
-    position: absolute !important;
-    top: 0;
-    width: 100%;
-
-    @include variables.pattern;
-  }
+  @include variables.pattern;
 
   &::after {
-    background: rgba(37, 11, 4, 0.7);
-    content: ' ';
-    display: block;
-    height: 100%;
-    left: 0;
-    overflow: hidden;
-    padding: 0 !important;
-    position: absolute;
-    top: 0;
-    width: 100%;
+    background: rgba(25, 19, 6, 0.7);
   }
 }
 
 .container {
   column-gap: 0;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    'a b'
+    'c d'
+    'branding branding'
+    'copyright copyright';
   position: relative;
   row-gap: 0;
   z-index: 2;
@@ -46,6 +29,22 @@
 .group {
   padding: var(--mm-spacing);
   padding-bottom: 0;
+}
+
+.group--products {
+  grid-area: a;
+}
+
+.group--support {
+  grid-area: b;
+}
+
+.group--developers {
+  grid-area: c;
+}
+
+.group--company {
+  grid-area: d;
 }
 
 .heading {
@@ -70,14 +69,15 @@
 .branding {
   align-items: flex-end;
   display: flex;
-  grid-column: span 2;
+  flex: 1 0 0;
+  grid-area: branding;
   justify-content: space-between;
-  order: 1;
   padding: var(--mm-spacing) var(--mm-spacing) 0;
 }
 
 .logo {
   display: inline-block;
+  height: 67px;
   margin-right: 10px;
   width: 160px;
 }
@@ -95,8 +95,7 @@
 
 .copyright {
   font-size: 12px;
-  grid-column: span 2;
-  order: 2;
+  grid-area: copyright;
   padding: var(--mm-spacing);
   text-align: center;
 }
@@ -119,7 +118,9 @@
 
 @include variables.breakpoint('md') {
   .container {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+      'a b c d'
+      'branding branding copyright copyright';
   }
 
   .branding {
@@ -130,6 +131,7 @@
   }
 
   .logo {
+    height: 85px;
     width: 200px;
   }
 
@@ -145,6 +147,9 @@
 
 @include variables.breakpoint('xl') {
   .container {
+    grid-template-areas:
+      'branding a b c d'
+      'branding copyright copyright copyright copyright';
     grid-template-columns: var(--mm-layout-sidebar-width) 1fr 1fr 1fr 1fr;
   }
 
@@ -152,20 +157,24 @@
     align-content: flex-start;
     border-top: 0;
     display: grid;
-    grid-column: 1;
-    grid-row: 1 / 3;
+    grid-area: branding;
+    grid-template-areas:
+      'logo'
+      'social';
     justify-content: center;
     order: 0;
   }
 
   .logo {
     display: block;
+    grid-area: logo;
     margin: 0 0 calc(var(--mm-spacing) / 4);
     width: 200px;
   }
 
   .social {
     display: flex;
+    grid-area: social;
     justify-content: center;
   }
 
@@ -177,17 +186,18 @@
     align-items: top;
     column-gap: var(--mm-spacing);
     display: grid;
-    grid-column-end: 6;
-    grid-column-start: 2;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-area: copyright;
+    grid-template-areas: 'p terms';
+    grid-template-columns: 3fr 1fr;
     text-align: left;
   }
 
   .copyright p {
-    grid-column: span 3;
+    grid-area: p;
   }
 
   .terms {
+    grid-area: terms;
     margin-top: 0;
     text-align: right;
   }

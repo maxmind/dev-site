@@ -6,13 +6,86 @@ import reporter from 'gatsby-cli/lib/reporter';
 const StylelintPlugin = require('stylelint-webpack-plugin');
 
 export const onCreateWebpackConfig: GatsbyNode['onCreateWebpackConfig']= (
-  props: CreateWebpackConfigArgs
+  props: CreateWebpackConfigArgs,
 ) => {
+  const IS_DEVELOP = props.stage === 'develop';
+  const IS_PRODUCTION = !IS_DEVELOP;
+  const IS_SSR = props.stage.includes('html');
+
+  const sassLoader = {
+    loader: 'sass-loader',
+    options: {
+      sourceMap: IS_PRODUCTION,
+    },
+  };
+
+  const sassRule = {
+    test: /\.s(a|c)ss$/,
+    use: IS_SSR
+      ? [
+        props.loaders.null(),
+      ]
+      : [
+        props.loaders.miniCssExtract(),
+        props.loaders.css({
+          camelCase: true,
+          importLoaders: 2,
+        }),
+        {
+          loader: 'postcss-loader',
+        },
+        sassLoader,
+      ],
+  };
+
+  const sassRuleModules = {
+    test: /\.module\.s(a|c)ss$/,
+    use: [
+      !IS_SSR && props.loaders.miniCssExtract({
+        hmr: false,
+      }),
+      props.loaders.css({
+        camelCase: true,
+        importLoaders: 2,
+        modules: true,
+      }),
+      {
+        loader: 'postcss-loader',
+      },
+      sassLoader,
+    ].filter(Boolean),
+  };
+
+  let configRules: any = [];
+
+  switch (props.stage) {
+  case 'develop':
+  case 'build-javascript':
+  case 'build-html':
+  case 'develop-html': {
+    configRules = configRules.concat([
+      {
+        oneOf: [
+          sassRuleModules,
+          sassRule,
+        ],
+      },
+    ]);
+    break;
+  }
+  }
+
+  props.actions.setWebpackConfig({
+    module: {
+      rules: configRules,
+    },
+  });
+
   /**
    * In the development environment, we want eslint to parse files on change and
    * output any issues to console.
    */
-  if (props.stage === 'develop') {
+  if (IS_DEVELOP) {
     props.actions.setWebpackConfig({
       module: {
         rules: [

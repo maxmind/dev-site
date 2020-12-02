@@ -1,4 +1,4 @@
-@use '../styles/variables';
+@use '../../../styles/variables';
 
 .wrapper {
   align-items: center;
@@ -6,5 +6,5 @@
   flex-direction: column;
   justify-content: center;
   margin: 0 var(--mm-spacing);
-  @include variables.pattern;
+  padding: var(--mm-spacing) 0;
 }

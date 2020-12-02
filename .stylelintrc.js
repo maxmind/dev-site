@@ -1,15 +1,5 @@
 const path = require('path');
 
-const browsers = [
-  ...([
-    'Chrome',
-    'Edge',
-    'Firefox',
-    'Safari',
-  ].map(browser => `last 2 ${browser} versions`)),
-  'Firefox ESR',
-];
-
 module.exports = {
   configBasedir: path.resolve(__dirname),
   defaultSeverity: 'warning',
@@ -32,7 +22,6 @@ module.exports = {
     'plugin/no-unsupported-browser-features': [
       true,
       {
-        browsers,
         ignore: [
           'calc',
           'css-gradients',

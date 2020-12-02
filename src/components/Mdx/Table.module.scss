@@ -1,8 +1,12 @@
-@use '../styles/variables';
+@use '../../styles/variables';
 
 .wrapper {
+  align-items: center;
   display: flex;
-  margin: var(--mm-spacing);
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 var(--mm-spacing);
+  padding: var(--mm-spacing) 0;
 }
 
 .container {
@@ -19,6 +23,7 @@
   max-width: 100%;
   overflow-x: scroll;
   position: relative;
+  width: 100%;
   z-index: 2;
 
   @include variables.scrollbars(rgba(0,0,0,0.2));
@@ -28,4 +33,5 @@
   font-size: 1rem;
   line-height: 1rem;
   overflow-x: auto;
+  width: 100%;
 }

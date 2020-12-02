@@ -1,7 +1,7 @@
 @use '../styles/variables';
 
 .nav {
-  background-color: #3c3b62;
+  background-color: var(--mm-color-background-code);
   border-radius: var(--mm-border-radius) var(--mm-border-radius) 0 0;
   border-top: 1px solid rgba(255, 255, 255, 0.3);
   position: relative;

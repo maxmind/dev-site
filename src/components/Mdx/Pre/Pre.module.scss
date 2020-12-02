@@ -1,4 +1,4 @@
-@use '../styles/variables';
+@use '../../../styles/variables';
 
 .container {
   display: inline-block;
@@ -15,7 +15,7 @@
 }
 
 .toolbar__buttons {
-  background-color: #58577e;
+  background-color: rgb(61, 91, 104);
   border-left: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: var(--mm-border-radius);
   border-right: 1px solid rgba(255, 255, 255, 0.1);

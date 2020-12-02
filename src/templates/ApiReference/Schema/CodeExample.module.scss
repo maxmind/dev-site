@@ -1,10 +1,19 @@
-@use '../styles/variables';
+@use '../../../styles/variables';
 
 .example {
   height: 0;
   overflow: hidden;
   padding: 0 !important;
-  @include variables.pattern;
+
+  [class*='Wrapper-module--wrapper'] {
+    margin: 0 var(--mm-spacing);
+    z-index: 2;
+
+    &::before,
+    &::after {
+      display: none;
+    }
+  }
 }
 
 .example--is-expanded {
@@ -20,11 +29,18 @@
 
 @include variables.breakpoint('xxl') {
   .example {
-    grid-area: schema-example;
     height: auto;
     margin: 0 !important;
     overflow: initial;
     padding-top: var(--mm-spacing);
+
+    @include variables.pattern;
+  }
+
+  @supports(background-attachment: fixed) {
+    .example::before {
+      background-attachment: fixed;
+    }
   }
 
   .example-json {

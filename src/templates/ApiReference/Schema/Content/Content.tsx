@@ -9,6 +9,7 @@ import styles from './Content.module.scss';
 import Properties from './Properties';
 
 interface IContent {
+  className?: string;
   handleExpand: () => void;
   handleHightlightLines: (lines: string) => void;
   isExpanded?: boolean;
@@ -21,7 +22,10 @@ const Content: React.FC<IContent> = (
 ): React.ReactElement => {
   return (
     <div
-      className={styles.body}
+      className={classNames(
+        styles.body,
+        props.className
+      )}
     >
       <div
         className={styles.properties}
@@ -86,6 +90,7 @@ const Content: React.FC<IContent> = (
 };
 
 Content.propTypes = {
+  className: PropTypes.string,
   handleExpand: PropTypes.func.isRequired,
   handleHightlightLines: PropTypes.func.isRequired,
   isExpanded: PropTypes.bool,

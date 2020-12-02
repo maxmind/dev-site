@@ -7,6 +7,7 @@ import Pre from '../../../components/Mdx/Pre';
 import styles from './CodeExample.module.scss';
 
 interface ICodeExample {
+  className?: string;
   highlightLines?: string;
   isExpanded?: boolean;
   schema: SchemaObject;
@@ -18,7 +19,8 @@ const CodeExample: React.FC<ICodeExample> = (props) => (
       {
         [styles['example--is-expanded']]: props.isExpanded,
       },
-      styles.example
+      styles.example,
+      props.className,
     )}
   >
     <Pre
@@ -35,6 +37,7 @@ const CodeExample: React.FC<ICodeExample> = (props) => (
 );
 
 CodeExample.propTypes = {
+  className: PropTypes.string,
   highlightLines: PropTypes.string,
   isExpanded: PropTypes.bool,
   schema: PropTypes.any.isRequired,
