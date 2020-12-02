@@ -34,6 +34,16 @@
   --page-type-color: rgba(255, 255, 255, 0.3);
 }
 
+:global(#___gatsby) {
+  min-height: 100vh;
+}
+
+:global(#gatsby-focus-wrapper) {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
 /* Not sure why .page-type--minfraud does not work here */
 [class='page-type--minfraud'] {
   --page-type-color: rgba(255, 0, 136, 0.5);
@@ -54,6 +64,7 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Ubuntu, sans-serif;
   font-size: 1.1rem;
   line-height: 1.3em;
+  min-height: 100vh;
   position: relative;
 }
 
