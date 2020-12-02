@@ -1,11 +1,14 @@
 @use '../../styles/variables';
 
 .heading {
+  border-bottom: 1px dashed var(--mm-color-border);
   color: var(--mm-color-display-text);
   display: inline-block;
   font-family: var(--mm-font-stack-display);
-  font-size: 16px;
-  font-weight: 700;
+  font-size: 20px;
+  font-weight: 500;
+  margin: calc(var(--mm-spacing) / 2) 0;
+  padding-bottom: calc(var(--mm-spacing) / 2);
   width: 100%;
 }
 
@@ -45,7 +48,7 @@
 }
 
 .list-item .list-item {
-  font-size: 14px;
+  font-size: 12px;
   margin-bottom: calc(var(--mm-spacing) / 2);
 }
 
@@ -71,7 +74,7 @@
     position: absolute;
     right: 0;
     top: 0;
-    transform: translate(calc(var(--mm-spacing) * 2), calc(var(--psuedo-padding) * -1));
+    transform: translate(calc(var(--mm-spacing) * 0.5), calc(var(--psuedo-padding) * -1));
     width: calc(100% + var(--mm-spacing) * 2);
     z-index: -1;
   }
@@ -79,7 +82,7 @@
   &::before {
     left: 0;
     right: initial;
-    transform: translate(calc(var(--mm-spacing) * -1), calc(var(--psuedo-padding) * -1));
+    transform: translate(calc(var(--mm-spacing) * -0.5), calc(var(--psuedo-padding) * -1));
   }
 
   &:hover {
@@ -88,22 +91,15 @@
 }
 
 .list-item .list-item a::before {
-  transform: translate(calc(var(--mm-spacing) * -1.5), calc(var(--psuedo-padding) * -1));
+  transform: translate(calc(var(--mm-spacing) * -1), calc(var(--psuedo-padding) * -1));
 }
 
 .list-item.item--active > a {
   color: var(--mm-color-display-text);
   font-weight: 700;
 
-  &::before,
-  &::after {
-    background-color: var(--mm-color-sidebar);
-  }
-
-  &::after {
-    border-radius: 0 var(--mm-border-radius) var(--mm-border-radius) 0;
-    right: var(--mm-spacing);
-    width: calc(100%);
+  &::before {
+    border-left: 3px solid var(--mm-color-display-text);
   }
 }
 

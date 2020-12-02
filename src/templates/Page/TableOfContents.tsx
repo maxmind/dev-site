@@ -82,7 +82,7 @@ const TableOfContents: React.FC<
       <span
         className={styles.heading}
       >
-        Table of Contents
+        On this Page
       </span>
       {renderItems(items, currentItem)}
     </nav>
