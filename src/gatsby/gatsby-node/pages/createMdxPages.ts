@@ -47,7 +47,7 @@ const createMdxPages = async ( props: CreatePagesArgs): Promise<void> => {
               id
               ... on File {
                 id
-                modifiedTime
+                modifiedTime(formatString: "MMMM D, YYYY", locale: "en-US")
                 name
                 relativeDirectory
                 relativePath

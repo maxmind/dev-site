@@ -2,8 +2,15 @@
 
 .h1 {
   @include variables.heading;
+  border-bottom: 1px dashed var(--mm-color-border);
   font-size: 32px;
   margin: var(--mm-spacing);
   margin-top: 0;
   padding-top: var(--mm-spacing);
+}
+
+@include variables.breakpoint('md') {
+  .h1 {
+    font-size: 42px;
+  }
 }
