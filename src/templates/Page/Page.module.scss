@@ -173,7 +173,7 @@
       'header aside'
       'content aside'
       'footer aside';
-    grid-template-columns: calc(100vw - 640px) var(--mm-aside-width);
+    grid-template-columns: calc(100vw - 640px) var(--mm-layout-toc-width);
     grid-template-rows: min-content auto min-content;
     justify-items: start;
   }

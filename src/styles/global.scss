@@ -10,7 +10,7 @@
 @import '~fontsource-source-code-pro/700.css';
 
 :root {
-  --mm-aside-width: 290px;
+
   --mm-color-background: #fff;
   --mm-color-background-code: #274958;
   --mm-color-sidebar: #f5f6f7;
@@ -23,6 +23,7 @@
   --mm-font-stack-default: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Ubuntu, sans-serif;
   --mm-font-stack-display: 'montserrat', var(--mm-font-stack-default);
   --mm-font-stack-monospace: 'Source Code Pro', monospace;
+  --mm-layout-toc-width: 290px;
   --mm-layout-sidebar-width: 260px;
   --mm-outline: 2px solid var(--mm-color-logo-blue-light);
   --mm-spacing: 40px;
