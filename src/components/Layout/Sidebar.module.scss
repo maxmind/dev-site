@@ -12,7 +12,7 @@
 }
 
 .nav {
-  max-height: calc(100vh - calc(var(--page-header-height)) + 80px);
+  height: calc(100vh - var(--page-header-height));
   overflow-y: scroll;
   position: sticky;
   top: var(--page-header-height);
@@ -164,8 +164,9 @@
   }
 
   .nav {
-    height: auto;
+    height: 100%;
     margin: var(--mm-spacing) 0;
+    max-height: calc(100vh - calc(var(--page-header-height) + 41px));
     top: calc(var(--page-header-height) + var(--mm-spacing));
   }
 
