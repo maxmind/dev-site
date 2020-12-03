@@ -18,7 +18,8 @@
     left: 0;
     margin: 0 var(--mm-spacing);
     position: absolute;
-    top: 23px;
+    top: calc(50% + 5px);
+    transform: translateY(-50%);
     width: calc(100% - (2 * var(--mm-spacing)));
     z-index: 100;
   }
