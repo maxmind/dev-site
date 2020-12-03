@@ -5,9 +5,11 @@
   border-left: 1px solid var(--mm-color-border);
   box-shadow: -2px 0 10px #c0c0c0;
   grid-area: sidebar;
+  max-width: var(--mm-layout-sidebar-width);
   position: fixed;
   right: 0;
   transition: all 0.15s ease-out;
+  width: 100%;
   z-index: 9;
 }
 

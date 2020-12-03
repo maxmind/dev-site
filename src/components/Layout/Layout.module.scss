@@ -36,10 +36,6 @@ $transition: all 0.15s ease-out;
 }
 
 @include variables.breakpoint('lg') {
-  :root {
-    --mm-layout-sidebar-width: 350px;
-  }
-
   .main {
     grid-template-areas: 'sidebar article';
     grid-template-columns: var(--mm-layout-sidebar-width) calc(100vw - var(--mm-layout-sidebar-width));
