@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 import React from 'react';
-import { FaBars } from 'react-icons/fa';
+import { FaBars, FaTimes } from 'react-icons/fa';
 
 import Logo from '../../assets/svgs/maxmind-logo.svg';
 import AccessibilityNav from './AccessibilityNav';
@@ -36,13 +36,19 @@ const Header: React.FC<IHeader> = (props) => {
             className={styles.search}
           />
           <button
-            aria-label={isSidebarOpen ? 'Open menu' : 'Close menu'}
+            aria-label={isSidebarOpen ? 'Close menu' : 'Open menu'}
             className={styles.toggle}
             onClick={toggleSidebar}
           >
-            <FaBars
-              aria-hidden="true"
-            />
+            {isSidebarOpen ? (
+              <FaTimes
+                aria-hidden="true"
+              />
+            ) : (
+              <FaBars
+                aria-hidden="true"
+              />
+            )}
           </button>
         </div>
       </header>
