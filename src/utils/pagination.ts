@@ -7,6 +7,7 @@ import {
   sidebarItems,
 } from '../sidebarItems';
 
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 const flattenDeep = (arr: any[]) : any[] => Array.isArray(arr)
   ? arr.reduce( (a, b) => a.concat(flattenDeep(b)) , [])
   : [

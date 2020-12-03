@@ -6,9 +6,11 @@
 
   &:focus-within {
     display: grid;
-    grid-auto-rows: min-content;
+    grid-template-columns: 1fr;
+    grid-template-rows: min-content;
     height: 100%;
-    justify-content: center;
+    /* autoprefixer: ignore next */
+    justify-items: center;
   }
 }
 

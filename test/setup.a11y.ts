@@ -12,6 +12,11 @@ const ROOT_ELEMENT = 'jest-pa11y-container';
 
 const slugger = new Slugger();
 
+interface IIssue {
+  [key: string]: string;
+  selector: string;
+}
+
 const _pa11y = configurePa11y({
   rootElement: `#${ROOT_ELEMENT}`,
 });
@@ -34,7 +39,7 @@ global.pa11y = (
       const screenshotPath = `${dirname(testPath)}/__a11y__`;
       const fileName = slugger.slug(currentTestName);
 
-      results.issues.forEach(async (issue: any, index: number) => {
+      results.issues.forEach(async (issue: IIssue, index: number) => {
         const styles = `
           ${issue.selector} {
             border: 2px solid red;
@@ -73,7 +78,7 @@ global.pa11y = (
       });
     }
 
-    results.issues.map((issue: any) => ({
+    results.issues.map((issue: IIssue) => ({
       ...issue,
       selector: issue.selector.replace(`#${ROOT_ELEMENT} > `, ''),
     }));

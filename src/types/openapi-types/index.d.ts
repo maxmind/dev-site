@@ -4,8 +4,9 @@
 import { OpenAPIV3 as OriginalOpenAPIV3 } from 'openapi-types';
 
 declare module 'openapi-types' {
-  namespace OpenAPIV3 {
+  export namespace OpenAPIV3 {
     interface BaseSchemaObject {
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
       'x-compiled-example'?: any;
       'x-line-numbers'?: string;
     }

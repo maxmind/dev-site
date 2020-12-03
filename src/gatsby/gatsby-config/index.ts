@@ -1,6 +1,5 @@
 import { GatsbyConfig } from 'gatsby';
 import remarkExternalLinks from 'remark-external-links';
-import sass from 'sass';
 
 import sectionize from './remark/sectionize';
 

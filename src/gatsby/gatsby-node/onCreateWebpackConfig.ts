@@ -56,6 +56,7 @@ export const onCreateWebpackConfig: GatsbyNode['onCreateWebpackConfig']= (
     ].filter(Boolean),
   };
 
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   let configRules: any = [];
 
   switch (props.stage) {
@@ -106,6 +107,7 @@ export const onCreateWebpackConfig: GatsbyNode['onCreateWebpackConfig']= (
           files: 'src/**/*.s(a|c)ss',
         }),
         {
+          // eslint-disable-next-line @typescript-eslint/no-explicit-any
           apply: (compiler: any) => {
             compiler.hooks.watchRun.tapAsync(
               'RemarkLint',

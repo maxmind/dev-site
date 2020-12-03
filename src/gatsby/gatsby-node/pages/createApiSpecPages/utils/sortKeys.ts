@@ -1,3 +1,5 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
+/* eslint-disable @typescript-eslint/explicit-module-boundary-types */
 /* eslint-disable filenames/match-exported */
 const sortKeys = (x: any): any => {
   if (typeof x !== 'object' || x === null) {

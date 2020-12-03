@@ -42,7 +42,7 @@
   grid-template-areas:
     'previous'
     'next';
-  grid-template-columns: auto;
+  grid-template-columns: 1fr;
   grid-template-rows: auto;
   margin: 0 auto;
   max-width: 820px;
@@ -175,6 +175,7 @@
       'footer aside';
     grid-template-columns: calc(100vw - 640px) var(--mm-layout-toc-width);
     grid-template-rows: min-content auto min-content;
+    /* autoprefixer: ignore next */
     justify-items: start;
   }
 

@@ -7,6 +7,7 @@ $transition: all 0.15s ease-out;
   background: var(--mm-color-background);
   display: grid;
   flex: 1 1 auto;
+  /* autoprefixer: ignore next */
   grid-template-areas: 'article sidebar';
   grid-template-columns: 100vw var(--mm-layout-sidebar-width);
   grid-template-rows: 100%;
@@ -37,6 +38,7 @@ $transition: all 0.15s ease-out;
 
 @include variables.breakpoint('lg') {
   .main {
+    /* autoprefixer: ignore next */
     grid-template-areas: 'sidebar article';
     grid-template-columns: var(--mm-layout-sidebar-width) calc(100vw - var(--mm-layout-sidebar-width));
   }

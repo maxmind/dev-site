@@ -20,6 +20,7 @@ const transform: TransformFn = (tree: Node) => {
     visitParents(
       tree,
       (node: Node) => node.type === 'heading' && node.depth === depth,
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
       visitor as Visitor<any>,
     );
   }
@@ -27,7 +28,10 @@ const transform: TransformFn = (tree: Node) => {
 
 const visitor = (node: Node, ancestors: Parent[]) => {
   const data = node.data || (node.data = {});
+
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const props = data.hProperties || (data.hProperties = {}) as any;
+
   props.id = props.id
     ? slugger.slug(props.id, true)
     : slugger.slug(toString(node));
