@@ -14,10 +14,21 @@ $transition: all 0.15s ease-out;
 }
 
 .content {
-  //grid-area: article-start / article-end / sidebar-start / article-end;
   grid-area: article;
   scroll-margin-top: calc(var(--page-header-height) + var(--mm-spacing));
   transition: $transition;
+}
+
+.sidebar--open::after {
+  @include variables.opaque-overlay;
+  content: ' ';
+  display: block;
+  height: 100vh;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  z-index: 8;
 }
 
 .sidebar--hidden [class*='Sidebar-module--sidebar--'] {
@@ -36,5 +47,9 @@ $transition: all 0.15s ease-out;
 
   .content {
     grid-area: article;
+  }
+
+  .sidebar--open::after {
+    display: none;
   }
 }

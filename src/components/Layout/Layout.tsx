@@ -73,7 +73,7 @@ const Layout: React.FC<ILayout> = (props) => {
       <div
         className={classNames(
           styles.main,
-          !isSidebarOpen ? styles['sidebar--hidden'] : ''
+          isSidebarOpen ? styles['sidebar--open'] : styles['sidebar--hidden']
         )}
       >
         <Sidebar />

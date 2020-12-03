@@ -1,8 +1,7 @@
 @use '../../styles/variables';
 
 .container {
-  backdrop-filter: blur(3px);
-  background-color: rgba(255, 255, 255, 0.7);
+  @include variables.opaque-overlay;
   width: 100%;
 
   &:focus-within {
@@ -20,7 +19,6 @@
   box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
   margin: var(--mm-spacing);
   max-width: 70vh;
-
 }
 
 .list-item {
