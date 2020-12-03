@@ -3,7 +3,7 @@
 .sidebar {
   background: var(--mm-color-sidebar);
   border-left: 1px solid var(--mm-color-border);
-  box-shadow: -2px 0 10px #c0c0c0;
+  box-shadow: -2px -1px 3px rgba(0, 0, 0, 0.1);
   grid-area: sidebar;
   max-width: var(--mm-layout-sidebar-width);
   position: fixed;
