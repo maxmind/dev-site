@@ -25,9 +25,11 @@
 }
 
 .mag {
-  left: 10px;
+  color: var(--mm-color-primary-text);
+  left: calc(var(--mm-spacing) / 2);
   position: absolute;
-  top: 12px;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .search-mobile {
@@ -50,7 +52,7 @@
   border: 1px solid var(--mm-color-border);
   border-radius: var(--mm-border-radius);
   color: var(--mm-color-primary-text);
-  padding: 10px 10px 10px 40px;
+  padding: 12px 10px 12px calc(var(--mm-spacing) + 15px);
   width: 100%;
 
   &::placeholder {
