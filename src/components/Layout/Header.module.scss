@@ -60,14 +60,8 @@
   }
 }
 
-
 .toggle {
-  background: var(--mm-color-background);
-  border: 0;
-  border-radius: 0;
-  color: #333;
-  height: 40px;
-  width: 50px;
+  @include variables.menu-button;
   z-index: 4;
 }
 

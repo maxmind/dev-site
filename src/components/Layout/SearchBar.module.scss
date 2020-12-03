@@ -41,10 +41,9 @@
 }
 
 .mobile-button {
-  background: none;
-  border: 0;
-  cursor: pointer;
+  @include variables.menu-button;
   float: right;
+  margin-right: calc(var(--mm-spacing) / 4);
 }
 
 .input {
