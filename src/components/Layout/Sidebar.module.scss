@@ -98,8 +98,7 @@
 
 .item--active .item--active .item-link {
   background: var(--mm-color-sidebar);
-  border-radius: var(--mm-border-radius) 0 0 var(--mm-border-radius);
-  border-right: 4px solid var(--mm-color-display-text);
+  border-left: 4px solid var(--mm-color-display-text);
   color: var(--mm-color-display-text) !important;
   font-weight: 700 !important;
 }
@@ -202,5 +201,11 @@
 
   .item--active {
     border-radius: var(--mm-border-radius) 0 0 var(--mm-border-radius);
+  }
+
+  .item--active .item--active .item-link {
+    border-left: 0;
+    border-radius: var(--mm-border-radius) 0 0 var(--mm-border-radius);
+    border-right: 4px solid var(--mm-color-display-text);
   }
 }
