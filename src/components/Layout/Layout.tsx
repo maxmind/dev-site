@@ -36,7 +36,7 @@ const Layout: React.FC<ILayout> = (props) => {
 
   const toggleSidebar = (): void => setIsSidebarOpen(!isSidebarOpen);
 
-  const className: string | undefined = [
+  const pageTypeClass: string | undefined = [
     'geoip',
     'geolite',
     'minfraud',
@@ -48,7 +48,10 @@ const Layout: React.FC<ILayout> = (props) => {
     <>
       <SEO
         bodyAttributes={{
-          class: className,
+          class: classNames(
+            pageTypeClass,
+            styles.layout,
+          ),
         }}
         description={props.description}
         meta={[
@@ -70,7 +73,7 @@ const Layout: React.FC<ILayout> = (props) => {
       <div
         className={classNames(
           styles.main,
-          !isSidebarOpen ? styles['sidebar--hidden'] : ''
+          isSidebarOpen ? styles['sidebar--open'] : styles['sidebar--hidden']
         )}
       >
         <Sidebar />

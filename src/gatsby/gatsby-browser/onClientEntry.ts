@@ -5,6 +5,7 @@ export const onClientEntry: GatsbyBrowser['onClientEntry'] = async () => {
   cssVars();
 
   if (!Element.prototype.matches) {
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     Element.prototype.matches = (Element as any).prototype.msMatchesSelector;
   }
 

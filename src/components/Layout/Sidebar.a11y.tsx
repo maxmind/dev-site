@@ -6,6 +6,7 @@ import * as React from 'react';
 
 import Sidebar from './Sidebar';
 
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 (useLocation as any).mockReturnValue({
   hash: '',
   key: '',

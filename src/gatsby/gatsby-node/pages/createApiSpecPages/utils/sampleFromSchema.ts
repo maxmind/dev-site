@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 /* eslint-disable security/detect-object-injection */
 /* eslint-disable filenames/match-exported */
 import merge from 'lodash/merge';

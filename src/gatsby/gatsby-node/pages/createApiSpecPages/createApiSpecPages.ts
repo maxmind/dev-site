@@ -10,8 +10,10 @@ interface IPage {
   keywords: string[];
   outputPath: string;
   sourceUrl: string;
-  spec?: any;
-  tableOfContents: any;
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  spec?: any; // TODO - Add type
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  tableOfContents: any;  // TODO - Add type
   title: string;
   type?: 'minfraud' | 'geoip';
 }

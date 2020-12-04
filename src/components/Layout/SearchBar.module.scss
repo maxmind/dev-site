@@ -18,16 +18,19 @@
     left: 0;
     margin: 0 var(--mm-spacing);
     position: absolute;
-    top: 23px;
+    top: calc(50% + 5px);
+    transform: translateY(-50%);
     width: calc(100% - (2 * var(--mm-spacing)));
     z-index: 100;
   }
 }
 
 .mag {
-  left: 10px;
+  color: var(--mm-color-primary-text);
+  left: calc(var(--mm-spacing) / 2);
   position: absolute;
-  top: 12px;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .search-mobile {
@@ -41,17 +44,16 @@
 }
 
 .mobile-button {
-  background: none;
-  border: 0;
-  cursor: pointer;
+  @include variables.menu-button;
   float: right;
+  margin-right: calc(var(--mm-spacing) / 4);
 }
 
 .input {
   border: 1px solid var(--mm-color-border);
   border-radius: var(--mm-border-radius);
   color: var(--mm-color-primary-text);
-  padding: 10px 10px 10px 40px;
+  padding: 12px 10px 12px calc(var(--mm-spacing) + 15px);
   width: 100%;
 
   &::placeholder {

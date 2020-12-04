@@ -49,25 +49,22 @@
 
 @include variables.breakpoint('lg') {
   .search {
-    margin-left: 110px;
-    width: calc(100% - 290px);
+    left: calc(50% + calc(var(--mm-layout-sidebar-width) / 2));
+    position: absolute;
+    transform: translateX(-50%);
+    width: calc(100% - var(--mm-layout-sidebar-width) - calc(var(--mm-spacing) * 2));
+    @include variables.max-width;
   }
 }
 
 @include variables.breakpoint('xxl') {
   .search {
-    width: calc(100% - 558px);
+    left: calc(50% + calc(var(--mm-layout-sidebar-width) - var(--mm-layout-toc-width)) / 2);
   }
 }
 
-
 .toggle {
-  background: var(--mm-color-background);
-  border: 0;
-  border-radius: 0;
-  color: #333;
-  height: 40px;
-  width: 50px;
+  @include variables.menu-button;
   z-index: 4;
 }
 

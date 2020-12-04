@@ -1,3 +1,4 @@
+/* eslint-disable no-prototype-builtins */
 import React from 'react';
 import {
   FaGlobe,
@@ -6,17 +7,29 @@ import {
 import { FiGlobe } from 'react-icons/fi';
 
 // eslint-disable-next-line css-modules/no-unused-class
-import styles from './Sidebar.module.scss';
+import styles from './components/Layout/Sidebar.module.scss';
 
-export interface IItem {
+interface IBaseItem {
   className?: string;
   icon?: React.ReactElement;
   items?: IItem[];
   secondaryItems?: IItem[];
   title: string;
-  to?: string;
-  url?: string;
 }
+
+export interface IInternalItem extends IBaseItem {
+  to: string;
+}
+
+export interface IExternalItem extends IBaseItem {
+  url: string;
+}
+
+export type IItem = IExternalItem | IInternalItem;
+
+export const isInternalItem = (
+  item:  IItem
+): item is IInternalItem => item.hasOwnProperty('to');
 
 export const sidebarItems: IItem[] = [
   {
@@ -71,6 +84,7 @@ export const sidebarItems: IItem[] = [
               },
             ],
             title: 'Responses',
+            to: '#',
           },
           {
             title: 'Models',
@@ -149,7 +163,6 @@ export const sidebarItems: IItem[] = [
         to: '/geolite2/release-notes',
       },
     ],
-
     title: 'GeoLite2',
     to: '/geolite2',
   },

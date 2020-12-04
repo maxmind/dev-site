@@ -341,8 +341,7 @@ $font-color: rgba(255, 255, 255, 0.3);
 }
 
 .container {
-  background-color: rgba(0, 0, 0, 0.6);
-  background-color: var(--mm-color-display-text);
+  background-color: var(--mm-color-background-code);
   border-left: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: var(--mm-border-radius);
   border-right: 1px solid rgba(255, 255, 255, 0.1);

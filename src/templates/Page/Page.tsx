@@ -1,9 +1,15 @@
 import { useLocation } from '@reach/router';
+import { Link } from 'gatsby';
 import PropTypes from 'prop-types';
 import React from 'react';
+import {
+  FaArrowLeft,
+  FaArrowRight,
+} from 'react-icons/fa';
 
 import Layout from '../../components/Layout/Layout';
-import H1 from '../../components/Mdx/H1';
+import { h1 as H1, p as P } from '../../components/Mdx';
+import { getNextPage, getPreviousPage } from '../../utils/pagination';
 import styles from './Page.module.scss';
 import TableOfContents, { ITableOfContents } from './TableOfContents';
 
@@ -32,15 +38,10 @@ const Page: React.FC<IPage> = (props) => {
     frontmatter,
     parent,
     tableOfContents,
-    timeToRead,
   } = props.pageContext;
   const location = useLocation();
   const { description, keywords, title } = frontmatter;
   const { modifiedTime } = parent;
-
-  const formattedLastUpdated = new Date(
-    Date.parse(modifiedTime)
-  );
 
   let type;
 
@@ -55,6 +56,9 @@ const Page: React.FC<IPage> = (props) => {
   if (location.pathname.startsWith('/geolite2')) {
     type = 'geolite';
   }
+
+  const nextPage = getNextPage(location.pathname);
+  const previousPage = getPreviousPage(location.pathname);
 
   return (
     <Layout
@@ -75,20 +79,6 @@ const Page: React.FC<IPage> = (props) => {
           >
             {title}
           </H1>
-          <div
-            className={styles.meta}
-          >
-            ~
-            {timeToRead}
-            {' '}
-            minute read
-            {' '}
-            &bull;
-            {' '}
-            last updated
-            {' '}
-            {formattedLastUpdated.toLocaleDateString('en-US')}
-          </div>
         </header>
 
         <aside
@@ -106,7 +96,60 @@ const Page: React.FC<IPage> = (props) => {
           className={styles.content}
         >
           {props.children}
+
+          <P
+            className={styles['last-updated']}
+          >
+            This page was last updated on
+            {' '}
+            {modifiedTime}
+            .
+          </P>
         </section>
+
+        {(previousPage || nextPage) && (
+          <footer
+            className={styles.footer}
+          >
+            <div
+              className={styles['footer-container']}
+            >
+              {previousPage && (
+                <Link
+                  className={styles['footer-previous']}
+                  to={previousPage.to}
+                >
+                  <FaArrowLeft
+                    className={styles['footer-arrow']}
+                  />
+                  <span
+                    className={styles['footer-direction']}
+                  >
+                    Previous
+                  </span>
+                  {previousPage.title}
+                </Link>
+              )}
+
+              {nextPage && (
+                <Link
+                  className={styles['footer-next']}
+                  to={nextPage.to}
+                >
+                  <FaArrowRight
+                    className={styles['footer-arrow']}
+                  />
+                  <span
+                    className={styles['footer-direction']}
+                  >
+                    Next
+                  </span>
+                  {nextPage.title}
+                </Link>
+              )}
+            </div>
+          </footer>
+        )}
       </article>
     </Layout>
   );

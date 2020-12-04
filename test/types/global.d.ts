@@ -4,7 +4,9 @@ import { Browser, Page } from 'puppeteer';
 declare global {
   type Pa11y = (
     component: ReactWrapper,
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     options?: any,
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   ) => Promise<any>;
 
   namespace NodeJS {
@@ -20,6 +22,7 @@ declare global {
 
   // eslint-disable-next-line @typescript-eslint/naming-convention
   interface Window {
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     IntersectionObserver: any;
   }
 }

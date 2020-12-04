@@ -5,17 +5,23 @@ import * as React from 'react';
 import styles from './AccessibilityNav.module.scss';
 
 const AccessibilityNav: React.FC<React.HTMLProps<HTMLElement>> = (props) => (
+  // eslint-disable-next-line jsx-a11y/no-access-key
   <section
+    accessKey="/"
     aria-label="Page nagivation"
     className={classNames(
       styles.container,
       props.className,
     )}
+    tabIndex={-1}
   >
     <ul
       aria-label="Page navigation menu"
+      className={styles.list}
     >
-      <li>
+      <li
+        className={styles['list-item']}
+      >
         <a
           className={styles.link}
           href="#content"
@@ -23,7 +29,9 @@ const AccessibilityNav: React.FC<React.HTMLProps<HTMLElement>> = (props) => (
           Skip to content
         </a>
       </li>
-      <li>
+      <li
+        className={styles['list-item']}
+      >
         <a
           className={styles.link}
           href="#navigation"
@@ -31,7 +39,9 @@ const AccessibilityNav: React.FC<React.HTMLProps<HTMLElement>> = (props) => (
           Skip to navigation
         </a>
       </li>
-      <li>
+      <li
+        className={styles['list-item']}
+      >
         <a
           className={styles.link}
           href="#search"
@@ -39,7 +49,9 @@ const AccessibilityNav: React.FC<React.HTMLProps<HTMLElement>> = (props) => (
           Skip to search
         </a>
       </li>
-      <li>
+      <li
+        className={styles['list-item']}
+      >
         <a
           className={styles.link}
           href="#footer"
