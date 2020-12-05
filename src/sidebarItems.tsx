@@ -36,11 +36,7 @@ export const sidebarItems: IItem[] = [
     icon: <FaShieldAlt />,
     items: [
       {
-        title: 'Setup',
-        to: '/minfraud/setup',
-      },
-      {
-        title: 'Evaluate a transaction',
+        title: 'Evaluate a Transaction',
         to: '/minfraud/evaluate-a-transaction',
       },
       {
@@ -48,8 +44,8 @@ export const sidebarItems: IItem[] = [
         to: '/minfraud/report-a-transaction',
       },
       {
-        title: 'Set a disposition',
-        to: '/minfraud/set-a-disposition',
+        title: 'Track Fraudsters',
+        to: '/minfraud/track-fraudsters',
       },
       {
         className: styles['item-divider'],
