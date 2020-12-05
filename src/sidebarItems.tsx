@@ -40,8 +40,8 @@ export const sidebarItems: IItem[] = [
         to: '/minfraud/evaluate-a-transaction',
       },
       {
-        title: 'Report a transaction',
-        to: '/minfraud/report-a-transaction',
+        title: 'Report Transactions',
+        to: '/minfraud/report-transactions',
       },
       {
         title: 'Track Fraudsters',
