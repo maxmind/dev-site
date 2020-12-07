@@ -18407,10 +18407,10 @@ remark-parse@^9.0.0:
   dependencies:
     mdast-util-from-markdown "^0.8.0"
 
-remark-preset-github@^3.0.0:
-  version "3.0.4"
-  resolved "https://registry.yarnpkg.com/remark-preset-github/-/remark-preset-github-3.0.4.tgz#0b40bdcea25d947322a3c91287ad505d94c0e480"
-  integrity sha512-+YooreeIFhaBjM9V3smVslDXAilqrnxtAzVFbxZXnrRAb/PjNaNspBvLi38BQ9bBlLUkxA/+sRbEqRofIuxeDA==
+remark-preset-github@^4.0.1:
+  version "4.0.1"
+  resolved "https://registry.yarnpkg.com/remark-preset-github/-/remark-preset-github-4.0.1.tgz#146dc120d6c6e73116ad8e8fb5dec76a85ad5083"
+  integrity sha512-2fwgL9484VA6WCc9EL3wNllo3VuP+FT84SZJncj4tAb7QsRUJwaDkh+3c6Htv19zSRfxCJ9PIikzyEuCrS7Gtw==
   dependencies:
     remark-comment-config "^6.0.0"
     remark-contributors "^5.0.1"
