@@ -1,0 +1,83 @@
+@use '../styles/variables';
+
+.alert {
+  --mm-color-primary-text: #444;
+  --mm-spacing: 20px;
+
+  background-color: var(--mm-color-sidebar);
+  border: 1px solid #eee;
+  border-bottom: 1px solid #ddd;
+  border-radius: var(--mm-border-radius);
+  border-top: 1px solid rgb(245, 245, 245);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  color: var(--mm-color-primary-text);
+  display: flex;
+  margin: calc(var(--mm-spacing) * 2);
+  padding-left: calc(var(--mm-spacing) * 1.5);
+  position: relative;
+  @include variables.max-width;
+}
+
+.icon {
+  background: var(--mm-color-background);
+  border-left: 1px solid #ddd;
+  border-radius: 30px;
+  color: rgb(39, 73, 88);
+  height: 60px;
+  left: 0;
+  padding: 10px;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 60px;
+}
+
+.alert > * {
+  min-width: auto !important;
+}
+
+.error {
+  background: #ffefee;
+  border: 2px solid #e9594c;
+}
+
+.error .icon {
+  border: 2px solid #e9594c;
+  color: #e9594c;
+}
+
+.info {
+  background: #ecf3fd;
+  border: 2px solid #4082ca;
+}
+
+.info .icon {
+  border: 2px solid #4082ca;
+  color: #4082ca;
+}
+
+.success {
+  background: #e5fff1;
+  border: 2px solid #3ac279;
+}
+
+.success .icon {
+  border: 2px solid #3ac279;
+  color: #3ac279;
+}
+
+.warning {
+  background: #fff3e0;
+  border: 2px solid #e89f29;
+}
+
+.warning .icon {
+  border: 2px solid #e89f29;
+  color: #e89f29;
+}
+
+@include variables.breakpoint('xl') {
+  .alert {
+    padding: 0 var(--mm-spacing) 0 50px;
+  }
+}
