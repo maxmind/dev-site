@@ -161,7 +161,7 @@
 
   .properties {
     position: sticky;
-    // TODO: Ensure Schema properties stick if example json is tall
+    /* TODO: Ensure Schema properties stick if example json is tall */
     top: calc(var(--page-header-height) + var(--mm-spacing) + var(--mm-spacing));
   }
 }

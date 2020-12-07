@@ -8,7 +8,7 @@
   z-index: 2;
 }
 
-// TODO - target class names instead of elements
+/* TODO - target class names instead of elements */
 .nav + div {
   border-radius: 0 0 var(--mm-border-radius) var(--mm-border-radius);
 }
