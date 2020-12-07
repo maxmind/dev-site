@@ -4,7 +4,7 @@
   border: 0;
   border-top: 1px dashed var(--mm-color-border);
   height: 0;
-  margin: var(--mm-spacing);
+  margin: var(--mm-spacing) auto;
   padding: 0 !important;
-  @include variables.max-width;
+  width: 200px;
 }
