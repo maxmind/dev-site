@@ -20,9 +20,6 @@ jobs:
       - name: Checkout Repo
         uses: actions/checkout@master
 
-      - name: Install Volta
-        uses: volta-cli/action@v1
-
       - name: Get yarn cache directory path
         id: yarn-cache-dir-path
         run: echo "::set-output name=dir::$(yarn cache dir)"
@@ -59,8 +56,22 @@ jobs:
       - name: Build
         run: yarn build
 
-      - name: Deploy
-        run: yarn deploy:ci
-        if: github.event.pull_request.merged == true
+      - name: Deploy to preview channel
+        if: ${{ github.event_name == 'pull_request' }}
+        uses: FirebaseExtended/action-hosting-deploy@v0
+        with:
+          repoToken: "${{ secrets.GITHUB_TOKEN }}"
+          firebaseServiceAccount: "${{ secrets.FIREBASE_SERVICE_ACCOUNT }}"
+          expires: 7d
+          projectId: dev-maxmind-com
         env:
-          FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
+          FIREBASE_CLI_PREVIEWS: hostingchannels
+
+      - name: Deploy to production channel
+        if: github.event.pull_request.merged == true
+        uses: FirebaseExtended/action-hosting-deploy@v0
+        with:
+          repoToken: "${{ secrets.GITHUB_TOKEN }}"
+          firebaseServiceAccount: "${{ secrets.FIREBASE_SERVICE_ACCOUNT }}"
+          projectId: dev-maxmind-com
+          channelId: live
