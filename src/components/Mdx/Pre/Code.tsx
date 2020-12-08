@@ -10,6 +10,7 @@ import { FaAngleDoubleDown } from 'react-icons/fa';
 
 import { ILanguage } from '../../../languages';
 import styles from './Code.module.scss';
+import './Code.dark-theme.css';
 
 import 'prismjs/plugins/normalize-whitespace/prism-normalize-whitespace.js';
 
