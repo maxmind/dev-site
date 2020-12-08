@@ -1,0 +1,24 @@
+{
+  "hosting": {
+    "ignore": [
+      "content",
+      "firebase.js",
+      "firebase.json",
+      "gatsby-*.js",
+      "package.json",
+      "src",
+      "tsconfig.json",
+      "yarn.lock",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "public": "public",
+    "redirects": [
+      {
+        "destination": "/",
+        "source": "/foo",
+        "type": 302
+      }
+    ]
+  }
+}

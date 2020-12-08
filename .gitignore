@@ -73,7 +73,6 @@ yarn-error.log
 
 # Firebase
 .firebase
-firebase.json
 
 # Jest Pa11y
 **/__a11y__
