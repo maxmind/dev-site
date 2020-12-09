@@ -1,0 +1,251 @@
+---
+draft: false
+title: Report a transaction
+---
+
+Reporting transactions as chargebacks, suspected fraud, spam/abuse, and/or false
+positive (not fraud) to MaxMind helps us detect about 10-50% more fraud and
+reduce false positives for you.
+
+You can report a transaction manually through the account portal’s
+[web form](https://www.maxmind.com/en/accounts/current/minfraud/report-transactions)
+or your
+[minFraud Transactions page](https://www.maxmind.com/en/accounts/current/minfraud-interactive/transactions).
+This guide will show you how to programmatically report a transaction using
+our official client libraries.
+
+## Implementation
+
+MaxMind offers and highly recommends using official client libraries to access
+the Report Transation API. If you cannot or do not wish to use our client
+libraries, please review our
+[minFraud Report Transaction API Reference page (need link)](/minfraud/api-reference)
+for details on our JSON API.
+
+### 1. Install the minFraud client library
+
+We have a collection of officially supported libraries for you to interact with
+the minFraud API:
+
+<CodeSet>
+
+```cli-csharp
+# Install via NuGet
+Install-Package MaxMind.MinFraud
+```
+
+```cli-java
+# Install via Maven, recommended
+<dependency>
+  <groupId>com.maxmind.minfraud</groupId>
+  <artifactId>minfraud</artifactId>
+  <version>1.15.0</version>
+</dependency>
+
+# Or install via Gradle
+repositories {
+  mavenCentral()
+}
+dependencies {
+  compile 'com.maxmind.minfraud:minfraud:1.15.0'
+}
+```
+
+```cli-javascript
+# Install via npm
+npm install @maxmind/minfraud-api-node
+
+# Or install via yarn
+yarn add @maxmind/minfraud-api-node
+```
+
+```cli-php
+# Install via Composer
+composer require maxmind/minfraud:~1.0
+```
+
+```cli-python
+# Install via pip
+pip install minfraud
+```
+
+```cli-ruby
+# Install as a gem
+gem install minfraud
+
+# Or add this to your Gemfile
+gem 'minfraud'
+```
+
+</CodeSet>
+
+### 2. Create and submit a transaction report object
+
+A transaction report only needs two things, the IP address of the customer that
+placed the order and a "tag". A "tag" can be one of the following values:
+
+| Tag             | Description                                                                   |
+| --------------- | ----------------------------------------------------------------------------- |
+| Chargeback      | Used to associate a chargeback with a transaction                             |
+| Not fraud       | Used to report a transaction that was later identified as a false positive    |
+| Spam or Abuse   | Used to report a transaction that was linked to spam or abuse                 |
+| Suspected fraud | Used to report a high risk transaction where fraud has not yet been confirmed |
+
+We highly encourage you to include the MaxMind ID or minFraud ID that identifies
+the minFraud Standard/Premium request or minFraud Score/Insights/Factors request
+respectively. Alternatively, you can send us the transaction ID you originally
+passed to the minFraud service.
+
+The transaction report object may optionally contain a chargeback code and notes
+about the transaction you would like to share with MaxMind. MaxMind manually
+reviews many reported transactions, so any additional details you provide to
+help us understand context are extremely helpful.
+
+<CodeSet>
+
+```csharp
+var client = new WebServiceClient(10, "LICENSEKEY");
+
+var report = new TransactionReport(
+    ipAddress: IPAddress.Parse("1.1.1.1"),
+    tag: TransactionReportTag.Chargeback,
+
+    // The following key/values are not mandatory but are encouraged
+    maxmindId: "abcd1234",
+    minfraudId: new Guid("01c25cb0-f067-4e02-8ed0-a094c580f5e4"),
+    transactionId: "txn123");
+    chargebackCode: "BL",
+    notes: "Suspicious account behavior",
+
+await client.ReportAsync(report);
+```
+
+```java
+WebServiceClient client = new WebServiceClient.Builder(10, "LICENSEKEY").build();
+
+TransactionReport transaction = new TransactionReport.Builder(InetAddress.getByName("1.1.1.1"), Tag.Chargeback)
+    // The following key/values are not mandatory but are encouraged
+    .maxmindId("abcd1234")
+    .minfraudId(UUID.fromString("01c25cb0-f067-4e02-8ed0-a094c580f5e4"))
+    .transactionId("txn123")
+    .chargebackCode("BL")
+    .notes("Suspicious account behavior")
+    .build();
+
+client.reportTransaction(transaction);
+```
+
+```javascript
+import * as minFraud from '@maxmind/minfraud-api-node';
+
+const client = new minFraud.Client('10', 'LICENSEKEY');
+
+const transactionReport = new minFraud.TransactionReport({
+    ipAddress: '1.1.1.1',
+    tag: minFraud.Constants.Tag.CHARGEBACK,
+
+    // The following key/values are not mandatory but are encouraged
+    maxmindId: 'abcd1234',
+    minfraudId: '01c25cb0-f067-4e02-8ed0-a094c580f5e4',
+    transactionId: 'txn123',
+    chargebackCode: 'BL'
+    notes: 'Suspicious account behavior',
+  });
+
+client.reportTransaction(transactionReport).then(() => ...);
+```
+
+```php
+require_once 'vendor/autoload.php';
+use MaxMind\MinFraud\ReportTransaction;
+
+$rt = new ReportTransaction(10, 'LICENSEKEY');
+
+$rt->report([
+    'ip_address'      => '1.1.1.1',
+    'tag'             => 'chargeback',
+    // The following key/values are not mandatory but are encouraged
+    'maxmind_id'      => 'abcd1234',
+    'minfraud_id'     => '01c25cb0-f067-4e02-8ed0-a094c580f5e4',
+    'transaction_id'  => 'txn123',
+    'chargeback_code' => 'BL',
+    'notes'           => 'Suspicious account behavior',
+]);
+```
+
+```python
+from minfraud import Client
+
+client = Client(10, 'LICENSEKEY');
+
+transaction_report = {
+  'ip_address': '1.1.1.1',
+  'tag': 'chargeback',
+  # The following key/values are not mandatory but are encouraged
+  'maxmind_id': 'abcd1234'
+  'minfraud_id': '01c25cb0-f067-4e02-8ed0-a094c580f5e4',
+  'transaction_id': 'txn123',
+  'chargeback_code': 'BL',
+  'notes': 'Suspicious account behavior',
+}
+
+client.report(transaction_report)
+
+# If you want to use asynchronous requests
+import asyncio
+from minfraud import Client
+
+async_client = AsyncClient(10, 'LICENSEKEY');
+
+async def report():
+  transaction_report = {
+    'ip_address': '1.1.1.1',
+    'tag': 'chargeback',
+    # The following key/values are not mandatory but are encouraged
+    'maxmind_id': 'abcd1234'
+    'minfraud_id': '01c25cb0-f067-4e02-8ed0-a094c580f5e4',
+    'transaction_id': 'txn123',
+    'chargeback_code': 'BL',
+    'notes': 'Suspicious account behavior',
+  }
+  await async_client.report(transaction_report)
+
+asyncio.run(report())
+```
+
+```ruby
+Minfraud.configure do |c|
+  c.account_id = 10
+  c.license_key = 'LICENSEKEY'
+end
+
+txn = Minfraud::Components::Report::Transaction.new(
+  ip_address:      '1.1.1.1',
+  tag:             :chargeback,
+  # The following key/values are not mandatory but are encouraged
+  maxmind_id:      'abcd1234',
+  minfraud_id:     '01c25cb0-f067-4e02-8ed0-a094c580f5e4',
+  transaction_id:  'txn123'
+  chargeback_code: 'BL'
+  notes:           'Suspicious account behavior',
+)
+
+reporter = Minfraud::Report.new(transaction: txn)
+reporter.report_transaction
+```
+
+</CodeSet>
+
+## Validation and error handling
+
+By default, our client libaries will throw an exception if any of the
+transaction report object's values are invalid. The exception is thrown when the
+object is constructed; the python library will raise an error when the minFraud
+service method is called.
+
+If the report transaction request fails, our client libraires will throw an
+exception, raise an error (python), or reject the promise (node).
+
+For more information on errors and exceptions, including their types and
+descriptions,
+[go to the specific library's documentation page](/minfraud/evaluate-a-transaction#links-to-maxmind-client-apis).
