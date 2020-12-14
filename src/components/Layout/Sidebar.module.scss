@@ -106,7 +106,7 @@
 }
 
 .item--active .list .item-link {
-  color: #767676;
+  color: var(--mm-color-primary-text);
   font-weight: 500;
 
   &:focus {
