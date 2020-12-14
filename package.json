@@ -198,7 +198,7 @@
     "serve": "firebase serve",
     "start": "yarn run develop",
     "test": "run-s \"test:* --silent\"",
-    "test:a11y": "jest --config .jestrc.a11y.js --no-cache",
+    "test:a11y": "jest --config .jestrc.a11y.js --no-cache --maxWorkers=4",
     "test:unit": "jest --config .jestrc.js"
   },
   "version": "0.1.0"
