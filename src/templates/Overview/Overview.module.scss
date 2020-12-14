@@ -1,0 +1,88 @@
+@use '../../styles/variables';
+
+.header {
+  @include variables.pattern;
+  padding: var(--mm-spacing);
+
+  > * {
+    position: relative;
+    z-index: 2;
+  }
+
+  &::before {
+    background-attachment: fixed;
+  }
+}
+
+.heading {
+  color: #fff;
+  font-family: var(--mm-font-stack-display);
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 1em;
+  margin-bottom: 10px;
+  text-align: center;
+  text-shadow: 2px 4px 0 rgba(0, 0, 0, 0.25);
+}
+
+.subheading {
+  color: #fff;
+  font-family: var(--mm-font-stack-display);
+  font-size: 25px;
+  font-weight: 700;
+  grid-area: heading;
+  line-height: 1.3em;
+  text-align: center;
+  text-shadow: 2px 4px 0 rgba(0, 0, 0, 0.25);
+}
+
+.sections {
+  display: grid;
+  gap: var(--mm-spacing);
+  grid-template-areas:
+    'guides'
+    'resources';
+  grid-template-columns: 1fr;
+  margin: var(--mm-spacing);
+}
+
+.section-heading {
+  color: var(--mm-color-primary-text);
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.guides {
+  grid-area: guides;
+}
+
+.resources {
+  grid-area: resources;
+}
+
+.card {
+  margin-bottom: 40px;
+  width: 100%;
+}
+
+@include variables.breakpoint('sm') {
+  .sections {
+    grid-template-areas: 'guides resources';
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@include variables.breakpoint('lg') {
+  .sections {
+    grid-template-areas: 'guides' 'resources';
+    grid-template-columns: 1fr;
+  }
+}
+
+@include variables.breakpoint('xl') {
+  .sections {
+    grid-template-areas: 'guides resources';
+    grid-template-columns: 1fr 1fr;
+  }
+}
