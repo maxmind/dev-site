@@ -1,4 +1,3 @@
-/* eslint-disable no-prototype-builtins */
 import React from 'react';
 import {
   FaGlobe,
@@ -6,32 +5,10 @@ import {
 } from 'react-icons/fa';
 import { FiGlobe } from 'react-icons/fi';
 
-// eslint-disable-next-line css-modules/no-unused-class
-import styles from './components/Layout/Sidebar.module.scss';
+import styles from '../src/components/Layout/Sidebar.module.scss';
+import { IItem } from '../src/types/Item';
 
-interface IBaseItem {
-  className?: string;
-  icon?: React.ReactElement;
-  items?: IItem[];
-  secondaryItems?: IItem[];
-  title: string;
-}
-
-export interface IInternalItem extends IBaseItem {
-  to: string;
-}
-
-export interface IExternalItem extends IBaseItem {
-  url: string;
-}
-
-export type IItem = IExternalItem | IInternalItem;
-
-export const isInternalItem = (
-  item:  IItem
-): item is IInternalItem => item.hasOwnProperty('to');
-
-export const sidebarItems: IItem[] = [
+const navigation: IItem[] = [
   {
     icon: <FaShieldAlt />,
     items: [
@@ -163,3 +140,5 @@ export const sidebarItems: IItem[] = [
     to: '/geolite2',
   },
 ];
+
+export default navigation;

@@ -3,7 +3,11 @@ import classNames from 'classnames';
 import { Link } from 'gatsby';
 import React from 'react';
 
-import { IItem, isInternalItem, sidebarItems } from '../../sidebarItems';
+import navigation from '../../../content/navigation';
+import {
+  IItem,
+  isInternalItem,
+} from '../../types/Item';
 import styles from './Sidebar.module.scss';
 
 const renderItems = (
@@ -61,7 +65,6 @@ const renderItems = (
   </ul>
 );
 
-
 const Sidebar: React.FC = () => {
   const location = useLocation();
 
@@ -73,7 +76,7 @@ const Sidebar: React.FC = () => {
         className={styles.nav}
         id="navigation"
       >
-        {renderItems(sidebarItems, location.pathname)}
+        {renderItems(navigation, location.pathname)}
       </nav>
     </section>
   );
