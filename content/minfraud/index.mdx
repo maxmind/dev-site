@@ -3,60 +3,15 @@ draft: false
 title: minFraud
 ---
 
-## Overview
+minFraud is our transaction risk API, consisting of the the minFraud Score,
+Insights and Factors services.
 
-minFraud is our transaction risk API, consisting of the following services:
-
-| Service           | Features                                                  | Price per Query |
-| ----------------- | --------------------------------------------------------- | --------------- |
-| minFraud Score    | Risk Scores                                               | $0.005          |
-| minFraud Insights | Risk Scores + Up to 60 additional data points             | $0.015          |
-| minFraud Factors  | Risk Scores + Up to 60 additional data points + Subscores | $0.02           |
-
-Each minFraud service builds on the risk evaluation provided by the minFraud
-riskScore and IP Risk Score.
-
-[Learn more and select the right service for your business](https://www.maxmind.com/en/solutions/minfraud-services)
-
-
-<Alert type="info">
+<Alert>
 
   If you are a minFraud Legacy customer, please refer to our
   [minFraud Legacy documentation](/legacy/minfraud).
 
-</Alert>
-
-<Alert type="info">
-
-If you are Proxy Detection Legacy customer, please refer to our
-[Proxy Detection Legacy documentation](/legacy/proxy-detection).
+  If you are Proxy Detection Legacy customer, please refer to our
+  [Proxy Detection Legacy documentation](/legacy/proxy-detection).
 
 </Alert>
-
-## Evaluate a Transaction
-
-[Start evaluating your transactions](/minfraud/evaluate-a-transaction) by
-installing, configuring, and using a minFraud API client.
-
-## Report Transactions
-
-Optionally, help us improve your future transaction risk scoring accuracy by
-about 10-50% using the [Report Transaction API](/minfraud/report-transactions)
-to report chargebacks, false positives, suspected fraud, or spam/abuse.
-
-## Track Fraudsters
-
-[Track fraudsters](/minfraud/track-fraudsters) by tracking their devices using
-our JavaScript device tracking library.
-
-## Additional Resources
-
-### API Reference
-
-Use the [minFraud API Reference](/minfraud/api-reference) for a detailed
-understanding of each minFraud service request and response objects.
-
-### Release Notes
-
-Review [minFraud release notes](/minfraud/release-notes) to understand changes
-to the minFraud API.
