@@ -156,12 +156,21 @@
 @include variables.breakpoint('lg') {
   .sidebar {
     border-left: 0;
-    border-right: 1px solid var(--mm-color-border);
-    box-shadow: none;
     grid-area: sidebar;
     position: relative;
     transform: initial !important;
     transition: none;
+
+    &::after {
+      background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.1) 100%);
+      content: ' ';
+      display: block;
+      height: 100%;
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 5px;
+    }
   }
 
   .nav {
@@ -172,7 +181,7 @@
   }
 
   .list {
-    margin-left: var(--mm-spacing);
+    margin-right: var(--mm-spacing);
   }
 
   .list .list {
@@ -202,12 +211,12 @@
   }
 
   .item--active {
-    border-radius: var(--mm-border-radius) 0 0 var(--mm-border-radius);
+    border-radius: 0 var(--mm-border-radius) var(--mm-border-radius) 0;
   }
 
   .item--active .item--active .item-link {
     border-left: 0;
-    border-radius: var(--mm-border-radius) 0 0 var(--mm-border-radius);
+    border-radius: 0 var(--mm-border-radius) var(--mm-border-radius) 0;
     border-right: 4px solid var(--mm-color-display-text);
   }
 }

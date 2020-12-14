@@ -2,7 +2,7 @@
 
 .header {
   background: var(--mm-color-background);
-  border-bottom: 1px solid var(--mm-color-border);
+  box-shadow: rgba(0, 0, 0, 0.1) 0 1px 13px 0, rgba(0, 0, 0, 0.06) 0 1px 5px 0;
   height: var(--page-header-height);
   padding-top: 10px;
   position: sticky;
