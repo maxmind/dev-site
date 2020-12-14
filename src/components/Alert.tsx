@@ -45,7 +45,11 @@ const Alert: React.FC<IAlert> = (props) => {
       <Icon
         className={styles.icon}
       />
-      {renderMarkdown(props.children)}
+      <div
+        className={styles.content}
+      >
+        {renderMarkdown(props.children)}
+      </div>
     </div>
   );
 };
