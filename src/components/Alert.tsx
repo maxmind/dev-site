@@ -9,7 +9,6 @@ import {
   FaTimesCircle,
 } from 'react-icons/fa';
 
-import { renderMarkdown } from '../utils/markdown';
 import styles from './Alert.module.scss';
 
 interface IAlert {
@@ -48,7 +47,7 @@ const Alert: React.FC<IAlert> = (props) => {
       <div
         className={styles.content}
       >
-        {renderMarkdown(props.children)}
+        {props.children}
       </div>
     </div>
   );
