@@ -13,16 +13,11 @@ import {
 import Layout from '../../components/Layout/Layout';
 import Card from './Card';
 import styles from './Overview.module.scss';
+import { IOverviewContext } from './query';
 
 interface IOverview {
   children: React.ReactNode;
-  pageContext: {
-    readonly frontmatter: {
-      readonly description: string;
-      readonly keywords: string[];
-      readonly title: string;
-    };
-  };
+  pageContext: IOverviewContext;
 }
 
 const Overview: React.FC<IOverview> = (props) => {
@@ -60,13 +55,13 @@ const Overview: React.FC<IOverview> = (props) => {
           <h1
             className={styles.heading}
           >
-            minFraud Web Services
+            {frontmatter.title}
           </h1>
 
           <h2
             className={styles.subheading}
           >
-            Transaction Risk API
+            {frontmatter.subtitle}
           </h2>
         </header>
 

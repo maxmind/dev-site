@@ -11,51 +11,8 @@ import Layout from '../../components/Layout/Layout';
 import { h1 as H1, p as P } from '../../components/Mdx';
 import { getNextPage, getPreviousPage } from '../../utils/pagination';
 import styles from './Page.module.scss';
-import TableOfContents, { ITableOfContents } from './TableOfContents';
-
-declare type GraphqlFn = <TData, TVariables = any>(
-  query: string,
-  variables?: TVariables
-) => Promise<{
-  data?: {
-    allMdx: {
-      nodes: TData[],
-    };
-  };
-  errors?: any,
-}>
-
-declare type QueryFn<T> = {
-  (graphql: GraphqlFn): Promise<{
-    data?: {
-      allMdx: {
-        nodes: T[];
-      };
-    };
-    errors?: any;
-  }>;
-}
-
-interface IPageContext {
-  readonly fileAbsolutePath: string;
-  readonly frontmatter: {
-    readonly description: string;
-    readonly draft: boolean;
-    readonly keywords: string[];
-    readonly title: string;
-  };
-  readonly itemTotal: number;
-  readonly page: number;
-  readonly pageTotal: number;
-  readonly parent: {
-    modifiedTime: string;
-    name: string;
-    relativeDirectory: string;
-  };
-  readonly prefix: string;
-  readonly tableOfContents: ITableOfContents;
-  readonly timeToRead: number;
-}
+import { IPageContext } from './query';
+import TableOfContents from './TableOfContents';
 
 interface IPage {
   children: React.ReactNode;
@@ -190,37 +147,3 @@ Page.propTypes = {
 };
 
 export default Page;
-
-export const query: QueryFn<IPageContext> = (
-  graphql: GraphqlFn
-) => graphql<IPageContext>(`
-  {
-    allMdx(filter: {fields: {layout: {eq: "pages"}}}) {
-      edges {
-        node {
-          fileAbsolutePath
-          frontmatter {
-            title
-            description
-            keywords
-            draft
-          }
-          id
-          tableOfContents(maxDepth: 3)
-          timeToRead
-          parent {
-            id
-            ... on File {
-              id
-              modifiedTime(formatString: "MMMM D, YYYY", locale: "en-US")
-              name
-              relativeDirectory
-              relativePath
-              sourceInstanceName
-            }
-          }
-        }
-      }
-    }
-  }
-`);
