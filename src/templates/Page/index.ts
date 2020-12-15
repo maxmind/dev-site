@@ -1,1 +1,2 @@
-export { default as default } from './Page';
+export { default as default, query } from './Page';
+
