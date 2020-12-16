@@ -7,7 +7,6 @@ import { IconType } from 'react-icons';
 import styles from './LinkGroupCard.module.scss';
 
 export interface ILinkGroupCard {
-  children: React.ReactNode,
   className?: string;
   description: string;
   heading: string;
@@ -43,7 +42,6 @@ const LinkGroupCard: React.FC<ILinkGroupCard> = (props) => {
 };
 
 LinkGroupCard.propTypes = {
-  children: PropTypes.node.isRequired,
   className: PropTypes.string,
   description: PropTypes.string.isRequired,
   heading: PropTypes.string.isRequired,

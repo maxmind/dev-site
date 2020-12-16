@@ -1,10 +1,11 @@
 import PropTypes from 'prop-types';
 import * as React from 'react';
 
+import { ILinkGroup } from './LinkGroup';
 import styles from './LinkGroup.module.scss';
 
 interface ILinkGroupContainer {
-  children: React.ReactNode,
+  children: React.ReactElement<ILinkGroup> | React.ReactElement<ILinkGroup>[],
 }
 
 const LinkGroupContainer: React.FC<ILinkGroupContainer> = (props) => {
@@ -18,7 +19,10 @@ const LinkGroupContainer: React.FC<ILinkGroupContainer> = (props) => {
 };
 
 LinkGroupContainer.propTypes = {
-  children: PropTypes.node.isRequired,
+  children: PropTypes.oneOfType([
+    PropTypes.arrayOf(PropTypes.element.isRequired).isRequired,
+    PropTypes.element.isRequired,
+  ]).isRequired,
 };
 
 export default LinkGroupContainer;

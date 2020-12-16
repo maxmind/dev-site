@@ -1,17 +1,8 @@
 import { useLocation } from '@reach/router';
 import PropTypes from 'prop-types';
 import React from 'react';
-import {
-  FaBook,
-  FaClipboardList,
-  FaDesktop,
-  FaPencilAlt,
-  FaQuestionCircle,
-  FaRocket,
-} from 'react-icons/fa';
 
 import Layout from '../../components/Layout/Layout';
-import Card from './Card';
 import styles from './Overview.module.scss';
 import { IOverviewContext } from './query';
 
@@ -66,92 +57,6 @@ const Overview: React.FC<IOverview> = (props) => {
         </header>
 
         {props.children}
-
-        <div
-          className={styles.sections}
-        >
-          <section
-            className={styles.guides}
-          >
-            <h2
-              className={styles['section-heading']}
-            >
-              Guides
-            </h2>
-            <div
-              className={styles.cards}
-            >
-              <Card
-                className={styles.card}
-                heading="Evaluate a Transaction"
-                icon={FaRocket}
-                to="/"
-              >
-                Start evaluating your transactions by installing, configuring,
-                and using a minFraud API client.
-              </Card>
-              <Card
-                className={styles.card}
-                heading="Report Transactions"
-                icon={FaPencilAlt}
-                to="/"
-              >
-                Use the Report Transaction API to report chargebacks, false
-                positives, suspected fraud, or spam/abuse.
-              </Card>
-              <Card
-                className={styles.card}
-                heading="Integrating Device Tracking"
-                icon={FaDesktop}
-                to="/"
-              >
-                Capture more data and catch more fraud using our JavaScript
-                device tracking library.
-              </Card>
-            </div>
-          </section>
-
-          <section
-            className={styles.resources}
-          >
-            <h2
-              className={styles['section-heading']}
-            >
-              Resources
-            </h2>
-            <div
-              className={styles.cards}
-            >
-              <Card
-                className={styles.card}
-                heading="API Reference"
-                icon={FaBook}
-                to="/"
-              >
-                Learn about each minFraud service&apos;s request and response
-                objects.
-              </Card>
-              <Card
-                className={styles.card}
-                heading="Release Notes"
-                icon={FaClipboardList}
-                to="/"
-              >
-                Review minFraud release notes to understand changes to the
-                minFraud API.
-              </Card>
-              <Card
-                className={styles.card}
-                heading="FAQ"
-                icon={FaQuestionCircle}
-                to="https://support.maxmind.com/minfraud-faq/"
-              >
-                Capture more data and catch more fraud using our JavaScript
-                device tracking library.
-              </Card>
-            </div>
-          </section>
-        </div>
       </article>
     </Layout>
   );
