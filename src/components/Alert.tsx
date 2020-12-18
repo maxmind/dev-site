@@ -3,10 +3,10 @@ import PropTypes from 'prop-types';
 import * as React from 'react';
 import { IconType } from 'react-icons';
 import {
-  FaCheckCircle,
-  FaExclamationCircle,
-  FaInfoCircle,
-  FaTimesCircle,
+  FaCheck,
+  FaExclamation,
+  FaInfo,
+  FaTimes,
 } from 'react-icons/fa';
 
 import styles from './Alert.module.scss';
@@ -21,16 +21,16 @@ const Alert: React.FC<IAlert> = (props) => {
 
   switch(props.type) {
   case 'error':
-    Icon = FaTimesCircle;
+    Icon = FaTimes;
     break;
   case 'success':
-    Icon = FaCheckCircle;
+    Icon = FaCheck;
     break;
   case 'warning':
-    Icon = FaExclamationCircle;
+    Icon = FaExclamation;
     break;
   case 'info':
-    Icon = FaInfoCircle;
+    Icon = FaInfo;
     break;
   }
 
@@ -41,9 +41,13 @@ const Alert: React.FC<IAlert> = (props) => {
         props.type && styles[props.type],
       )}
     >
-      <Icon
-        className={styles.icon}
-      />
+      <div
+        className={styles['icon-wrapper']}
+      >
+        <Icon
+          className={styles.icon}
+        />
+      </div>
       <div
         className={styles.content}
       >
