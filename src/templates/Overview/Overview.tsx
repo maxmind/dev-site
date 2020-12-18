@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import React from 'react';
 
 import Layout from '../../components/Layout/Layout';
+import ProductIcon from '../../components/ProductIcon';
 import styles from './Overview.module.scss';
 import { IOverviewContext } from './query';
 
@@ -14,7 +15,7 @@ interface IOverview {
 const Overview: React.FC<IOverview> = (props) => {
   const { frontmatter } = props.pageContext;
   const location = useLocation();
-  const { description, keywords, title } = frontmatter;
+  const { description, icon, keywords, title } = frontmatter;
 
   let type;
 
@@ -43,17 +44,27 @@ const Overview: React.FC<IOverview> = (props) => {
         <header
           className={styles.header}
         >
-          <h1
-            className={styles.heading}
+          <div
+            className={styles.lockup}
           >
-            {frontmatter.title}
-          </h1>
+            <ProductIcon
+              className={styles.icon}
+              svg={icon}
+            />
 
-          <h2
-            className={styles.subheading}
-          >
-            {frontmatter.subtitle}
-          </h2>
+            <h1
+              className={styles.heading}
+              dangerouslySetInnerHTML={{
+                __html: frontmatter.title,
+              }}
+            />
+
+            <h2
+              className={styles.subheading}
+            >
+              {frontmatter.subtitle}
+            </h2>
+          </div>
         </header>
 
         {props.children}

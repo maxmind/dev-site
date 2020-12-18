@@ -1,8 +1,11 @@
 /* eslint-disable filenames/match-exported */
+// import * as React from 'react';
+
 import { BaseQuery, IBaseQuery } from '../../fragments';
 
 export type IOverviewContext = IBaseQuery & {
   readonly frontmatter: {
+    readonly icon: string;
     readonly subtitle: string;
   };
 }
@@ -18,6 +21,7 @@ const query: QueryFn<IOverviewContext> = (
         ... BaseQuery
         frontmatter {
           subtitle
+          icon
         }
       }
     }
