@@ -9,6 +9,25 @@
   width: 100px;
 }
 
+@supports (transform-style: preserve-3d) {
+  .container {
+    position: relative;
+    transform-style: preserve-3d;
+    z-index: 1;
+
+    &::before {
+      background: #00a7e5;
+      border-radius: calc(var(--mm-border-radius) * 3);
+      content: ' ';
+      display: block;
+      height: 100%;
+      position: absolute;
+      transform: translateZ(-1px);
+      width: 100%;
+    }
+  }
+}
+
 .svg {
   align-self: center;
   fill: #fff;
@@ -16,4 +35,16 @@
   justify-self: center;
   max-height: 70%;
   max-width: 70%;
+}
+
+.geoip {
+  --page-type-color: rgba(0, 255, 102, 0.5);
+}
+
+.geolite {
+  --page-type-color: rgba(255, 255, 0, 0.5);
+}
+
+.minfraud {
+  --page-type-color: rgba(255, 0, 136, 0.5);
 }

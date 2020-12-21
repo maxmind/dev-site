@@ -22,6 +22,14 @@ const renderItems = (
         currentPath && isInternalItem(item) && currentPath.startsWith(item.to)
       );
 
+      if (item.icon) {
+        item.icon = React.cloneElement(item.icon, {
+          className: classNames(
+            styles['item-icon'],
+          ),
+        });
+      }
+
       return (
         <li
           className={classNames(
@@ -41,7 +49,11 @@ const renderItems = (
               to={item.to}
             >
               {item.icon}
-              {item.title}
+              <span
+                className={styles['item-title']}
+              >
+                {item.title}
+              </span>
             </Link>
           ) : (
             <a
@@ -49,7 +61,11 @@ const renderItems = (
               href={item.url}
             >
               {item.icon}
-              {item.title}
+              <span
+                className={styles['item-title']}
+              >
+                {item.title}
+              </span>
             </a>
           )}
 

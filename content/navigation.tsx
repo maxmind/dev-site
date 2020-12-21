@@ -1,16 +1,18 @@
 import React from 'react';
-import {
-  FaGlobe,
-  FaShieldAlt,
-} from 'react-icons/fa';
-import { FiGlobe } from 'react-icons/fi';
 
 import styles from '../src/components/Layout/Sidebar.module.scss';
+import ProductIcon from '../src/components/ProductIcon';
 import { IItem } from '../src/types/Item';
 
 const navigation: IItem[] = [
   {
-    icon: <FaShieldAlt />,
+    icon: (
+      <ProductIcon
+        className={styles['item-icon']}
+        family="minfraud"
+        svg="MinFraudIcon"
+      />
+    ),
     items: [
       {
         title: 'Evaluate a Transaction',
@@ -76,7 +78,13 @@ const navigation: IItem[] = [
     to: '/minfraud',
   },
   {
-    icon: <FaGlobe />,
+    icon: (
+      <ProductIcon
+        className={styles['item-icon']}
+        family="geoip"
+        svg="GeoIP2Icon"
+      />
+    ),
     items: [
       {
         title: 'Setup',
@@ -112,7 +120,13 @@ const navigation: IItem[] = [
     to: '/geoip2',
   },
   {
-    icon: <FiGlobe />,
+    icon: (
+      <ProductIcon
+        className={styles['item-icon']}
+        family="geolite"
+        svg="GeoLite2Icon"
+      />
+    ),
     items: [
       {
         title: 'Setup',

@@ -11,6 +11,7 @@ type SvgElementOrReference = SvgElement | string;
 
 interface IProductIcon {
   className?: string;
+  family?: 'geoip' | 'geolite' | 'minfraud',
   svg: SvgElementOrReference;
 }
 
@@ -37,6 +38,9 @@ const ProductIcon: React.FC<
       className={classNames(
         styles.container,
         props.className,
+        {
+          [styles[`${props.family}`]] : !!props.family,
+        }
       )}
     >
       <Svg
@@ -48,6 +52,11 @@ const ProductIcon: React.FC<
 
 ProductIcon.propTypes = {
   className: PropTypes.string,
+  family: PropTypes.oneOf([
+    'geoip',
+    'geolite',
+    'minfraud',
+  ] as const),
   svg: PropTypes.oneOfType([
     PropTypes.func.isRequired,
     PropTypes.string.isRequired,
