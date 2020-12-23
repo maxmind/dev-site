@@ -56,20 +56,16 @@
 }
 
 .item--active .item-link {
+  border-left: 4px solid transparent;
   color: var(--mm-color-display-text);
   font-weight: 700;
 }
 
-.item-attribute .item-link {
-  font-family: var(--mm-font-stack-monospace);
-}
-
 .item .item .item-link {
-  $margin-left: calc(var(--mm-spacing) * 1.5);
   font-size: 14px;
-  margin-left: $margin-left;
-  max-width: calc(100% - #{$margin-left} - var(--mm-spacing));
-  padding: 5px calc(var(--mm-spacing) * 0.4);
+  margin-left: 46px;
+  max-width: calc(100% - 46px);
+  padding: 5px 10px;
 }
 
 .item .item-divider::before {
@@ -99,7 +95,6 @@
   border-left: 4px solid #2b7ec6;
   color: var(--mm-color-display-text) !important;
   font-weight: 700 !important;
-  padding-left: calc(var(--mm-spacing) * 0.4 - 4px);
 }
 
 .item--active .list .item-link {
@@ -136,10 +131,11 @@
 }
 
 .nav > .list > .item > .item-link {
+  border-left: 0;
   column-gap: calc(var(--mm-spacing) / 4);
   display: grid;
-  grid-template-areas: 'icon text';
   grid-template-columns: max-content auto;
+  grid-template-rows: auto auto;
 }
 
 .item .item--active .item .item-link {
@@ -227,23 +223,12 @@
   }
 
   .item .item .item-link {
-    max-width: calc(100% - calc(var(--mm-spacing) * 1.25));
+    margin-left: 66px;
+    max-width: calc(100% - 66px);
   }
 
-  .item .item-divider::before {
-    margin-left: var(--mm-spacing);
-    width: calc(100% - var(--mm-spacing));
-  }
-
-  .item--active .item--active .item-link {
-    border-radius: 0 var(--mm-border-radius) var(--mm-border-radius) 0;
-  }
-
-  .nav > .list > .item--active {
-    padding-left: 20px;
-  }
-
-  .nav > .list > .item:not(.item--active) > .item-link {
+  .nav > .list > .item > .item-link {
     padding-left: 30px;
+    padding-right: 30px;
   }
 }
