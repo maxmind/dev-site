@@ -36,6 +36,10 @@ module.exports = {
       'lint-no-consecutive-blank-lines',
       false,
     ],
+    [
+      'lint-no-file-name-irregular-characters',
+      new RegExp('(?!^_)[^\\.a-zA-Z0-9-]'),
+    ],
   ],
   settings: {
     fences: true,

@@ -22,11 +22,16 @@ const THESE_PLUGINS_MUST_COME_LAST = [
 
 const GATSBY_ROOT = `${__dirname}/../../../`;
 
+const GLOBALLY_IGNORED_SOURCE_FILES = [
+  '**/_*.mdx',
+];
+
 export default {
   plugins: [
     {
       options: {
         ignore: [
+          ...GLOBALLY_IGNORED_SOURCE_FILES,
           '**/index.mdx',
         ],
         name: 'pages',
@@ -37,6 +42,7 @@ export default {
     {
       options: {
         ignore: [
+          ...GLOBALLY_IGNORED_SOURCE_FILES,
           '**/!(content)/index.mdx',
         ],
         name: 'home',
@@ -47,6 +53,7 @@ export default {
     {
       options: {
         ignore: [
+          ...GLOBALLY_IGNORED_SOURCE_FILES,
           '**/!(index).mdx',
         ],
         name: 'overviews',
