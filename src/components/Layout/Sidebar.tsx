@@ -37,8 +37,8 @@ const renderItems = (
             styles.item,
             {
               [styles['item--active']]: isItemActive,
+              [styles['item--has-divider']]: item.hasDivider,
             },
-            item.className,
           )}
           data-current-path={currentPath}
           data-item-to={isInternalItem(item) && item.to}

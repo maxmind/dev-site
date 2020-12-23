@@ -1,8 +1,6 @@
 interface IBaseItem {
-  className?: string;
+  hasDivider?: boolean;
   icon?: React.ReactElement;
-  items?: IItem[];
-  secondaryItems?: IItem[];
   title: string;
 }
 
@@ -11,6 +9,8 @@ export interface IInternalItem extends IBaseItem {
 }
 
 export interface IExternalItem extends IBaseItem {
+  items?: IItem[];
+  secondaryItems?: IItem[];
   url: string;
 }
 

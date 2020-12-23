@@ -1,6 +1,5 @@
 import React from 'react';
 
-import styles from '../src/components/Layout/Sidebar.module.scss';
 import ProductIcon from '../src/components/ProductIcon';
 import { IItem } from '../src/types/Item';
 
@@ -8,7 +7,6 @@ const navigation: IItem[] = [
   {
     icon: (
       <ProductIcon
-        className={styles['item-icon']}
         family="minfraud"
         svg="MinFraudIcon"
       />
@@ -27,7 +25,7 @@ const navigation: IItem[] = [
         to: '/minfraud/track-fraudsters',
       },
       {
-        className: styles['item-divider'],
+        hasDivider: true,
         secondaryItems: [
           {
             items: [
@@ -80,7 +78,6 @@ const navigation: IItem[] = [
   {
     icon: (
       <ProductIcon
-        className={styles['item-icon']}
         family="geoip"
         svg="GeoIP2Icon"
       />
@@ -122,7 +119,6 @@ const navigation: IItem[] = [
   {
     icon: (
       <ProductIcon
-        className={styles['item-icon']}
         family="geolite"
         svg="GeoLite2Icon"
       />
@@ -141,7 +137,7 @@ const navigation: IItem[] = [
         to: '/geolite2/updating-the-database',
       },
       {
-        className: styles['item-divider'],
+        hasDivider: true,
         title: 'API Reference',
         to: '/geolite2/api-reference',
       },
