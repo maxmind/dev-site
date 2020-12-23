@@ -1,37 +1,33 @@
 import classNames from 'classnames';
 import PropTypes from 'prop-types';
 import * as React from 'react';
+import { IconType } from 'react-icons';
 
 import { Icons } from '../assets';
 import styles from './ProductIcon.module.scss';
 
 type SvgElement = React.FC<React.SVGProps<SVGSVGElement>>
 
-type SvgElementOrReference = SvgElement | string;
+type Icon = SvgElement | string | IconType;
 
 interface IProductIcon {
   className?: string;
   family?: 'geoip' | 'geolite' | 'minfraud',
-  svg: SvgElementOrReference;
+  svg: Icon;
 }
 
-export const isSvgElement = (
-  svg: SvgElementOrReference
-): svg is SvgElement => typeof svg !== 'string' && !(svg instanceof String);
+export const isSvgString = (
+  svg: Icon
+): svg is string => typeof svg === 'string'
+  || (svg as unknown) instanceof String;
 
 const ProductIcon: React.FC<
   React.HTMLProps<HTMLDivElement> & IProductIcon
 > = (props) => {
   const svg = props.svg;
 
-  let Svg;
-
-  if (isSvgElement(svg)) {
-    Svg = svg;
-  } else {
-    // eslint-disable-next-line security/detect-object-injection
-    Svg = Icons[svg];
-  }
+  // eslint-disable-next-line security/detect-object-injection
+  const Icon = isSvgString(svg) ? Icons[svg] : svg;
 
   return (
     <div
@@ -45,8 +41,8 @@ const ProductIcon: React.FC<
         }
       )}
     >
-      <Svg
-        className={styles.svg}
+      <Icon
+        className={styles.icon}
       />
     </div>
   );

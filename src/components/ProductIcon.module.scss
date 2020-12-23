@@ -28,13 +28,15 @@
   }
 }
 
-.svg {
+.icon {
   align-self: center;
   fill: #fff;
   filter: drop-shadow(1px 2px 5px rgba(0, 119, 194, 1));
+  height: 100%;
   justify-self: center;
   max-height: 70%;
   max-width: 70%;
+  width: 100%;
 }
 
 .geoip {
