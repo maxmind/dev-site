@@ -2,6 +2,7 @@ import { useLocation } from '@reach/router';
 import classNames from 'classnames';
 import { Link } from 'gatsby';
 import React from 'react';
+import { FaExternalLinkAlt } from 'react-icons/fa';
 
 import navigation from '../../../content/navigation';
 import {
@@ -66,6 +67,9 @@ const renderItems = (
               >
                 {item.title}
               </span>
+              <FaExternalLinkAlt
+                className={styles['item-external-link']}
+              />
             </a>
           )}
 

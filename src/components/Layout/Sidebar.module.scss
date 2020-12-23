@@ -35,6 +35,11 @@
   position: relative;
 }
 
+.item-external-link {
+  margin-left: 5px;
+  transform: translateY(-1px);
+}
+
 .item .item {
   border-top: 0;
 }
