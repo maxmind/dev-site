@@ -3,6 +3,7 @@ import { Link } from 'gatsby';
 import PropTypes from 'prop-types';
 import * as React from 'react';
 import { IconType } from 'react-icons';
+import { FaArrowRight } from 'react-icons/fa';
 
 import styles from './LinkGroupCard.module.scss';
 
@@ -36,6 +37,11 @@ const LinkGroupCard: React.FC<ILinkGroupCard> = (props) => {
         className={styles.description}
       >
         {props.description}
+      </div>
+      <div
+        className={styles.arrow}
+      >
+        <FaArrowRight />
       </div>
     </Link>
   );

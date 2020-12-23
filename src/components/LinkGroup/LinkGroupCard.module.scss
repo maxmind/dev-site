@@ -9,9 +9,9 @@
   display: grid;
   gap: calc(var(--mm-spacing) / 2);
   grid-template-areas:
-    'icon heading'
-    '. description';
-  grid-template-columns: min-content 1fr;
+    'icon heading arrow'
+    '. description arrow';
+  grid-template-columns: min-content 1fr min-content;
   margin-top: 0;
   overflow: hidden;
   padding: calc(var(--mm-spacing) / 2);
@@ -53,4 +53,17 @@
   color: var(--mm-color-primary-text);
   font-size: 14px;
   grid-area: description;
+}
+
+.arrow {
+  border-left: 1px solid var(--mm-color-border);
+  color: var(--mm-color-display-text);
+  display: grid;
+  grid-area: arrow;
+  height: 100%;
+  padding-left: calc(var(--mm-spacing) / 2);
+
+  > * {
+    align-self: center;
+  }
 }
