@@ -30,7 +30,7 @@
   width: 100%;
 }
 
-@include variables.breakpoint('sm') {
+@include variables.breakpoint('md') {
   .sections {
     grid-template-areas: 'first second';
     grid-template-columns: 1fr 1fr;
