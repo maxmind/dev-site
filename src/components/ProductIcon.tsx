@@ -39,7 +39,9 @@ const ProductIcon: React.FC<
         styles.container,
         props.className,
         {
-          [styles[`${props.family}`]] : !!props.family,
+          [styles.geoip] : props.family === 'geoip',
+          [styles.geolite] : props.family === 'geolite',
+          [styles.minfraud] : props.family === 'minfraud',
         }
       )}
     >
