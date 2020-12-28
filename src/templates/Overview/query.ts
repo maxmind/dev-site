@@ -3,16 +3,16 @@
 
 import { BaseQuery, IBaseQuery } from '../../fragments';
 
-export type IOverviewContext = IBaseQuery & {
+export type IOverviewContext = Pick<IBaseQuery, 'frontmatter'> & {
   readonly frontmatter: {
     readonly icon: string;
     readonly subtitle: string;
   };
 }
 
-const query: QueryFn<IOverviewContext> = (
+const query: QueryFn<IBaseQuery & IOverviewContext> = (
   graphql: GraphqlFn
-) => graphql<IOverviewContext>(`
+) => graphql<IBaseQuery & IOverviewContext>(`
   ${BaseQuery}
 
   query OverviewTemplateQuery {

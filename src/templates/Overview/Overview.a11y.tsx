@@ -28,7 +28,10 @@ describe('Overview', () => {
         pageContext={{
           frontmatter: {
             description: 'Foo',
+            draft: false,
+            icon: 'DatabaseIcon',
             keywords: [],
+            subtitle: 'This is a test!',
             title: 'Foo',
           },
         }}
@@ -43,8 +46,8 @@ describe('Overview', () => {
          * background and drop shadow behind the text. Pa11y doesn't take these
          * properties into account when asserting contrast.
          */
-        '#content > article > header > h1',
-        '#content > article > header > h2',
+        '#content > article > header > div > h1',
+        '#content > article > header > div > h2',
       ].join(', '),
     });
     expect(results).toHaveNoPa11yViolations();
