@@ -73,8 +73,13 @@ const renderItems = (
             </a>
           )}
 
-          {item.items && renderItems(item.items, currentPath)}
+          {isInternalItem(item)
+            && item.items
+            && renderItems(item.items, currentPath)
+          }
+
           {isItemActive
+            && isInternalItem(item)
             && item.secondaryItems
             && renderItems(item.secondaryItems, currentPath)
           }

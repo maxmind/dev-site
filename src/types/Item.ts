@@ -5,12 +5,12 @@ interface IBaseItem {
 }
 
 export interface IInternalItem extends IBaseItem {
+  items?: IItem[];
+  secondaryItems?: IItem[];
   to: string;
 }
 
 export interface IExternalItem extends IBaseItem {
-  items?: IItem[];
-  secondaryItems?: IItem[];
   url: string;
 }
 

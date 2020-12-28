@@ -15,13 +15,17 @@ const flattenDeep = (arr: any[]) : any[] => Array.isArray(arr)
   ];
 
 const flattenTree = (tree: IItem[]) : IInternalItem[] => flattenDeep(
-  tree.map((node: IItem) => ([
-    ...(isInternalItem(node) ? [
+  tree.map((node: IItem) => {
+    if (!isInternalItem(node)) {
+      return [];
+    }
+
+    return [
       node,
-    ] : []),
-    ...(node.items ? flattenTree(node?.items) : []),
-    ...(node.secondaryItems ? flattenTree(node?.secondaryItems) : []),
-  ])));
+      ...(node.items ? flattenTree(node?.items) : []),
+      ...(node.secondaryItems ? flattenTree(node?.secondaryItems) : []),
+    ];
+  }));
 
 const flattenedNav = flattenTree(navigation);
 
