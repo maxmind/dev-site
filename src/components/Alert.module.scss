@@ -33,7 +33,6 @@
   z-index: 3;
 
   &::before {
-    // background: linear-gradient(rgb(72 55 202 / 78%), rgba(255, 255, 255, 0));
     border-radius: 50%;
     box-shadow: inset 0 0 0 6px rgba(255, 255, 255, 0.35);
     content: ' ';
