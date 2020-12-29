@@ -2,7 +2,7 @@ import { useLocation } from '@reach/router';
 import classNames from 'classnames';
 import { Link } from 'gatsby';
 import React from 'react';
-import { FaExternalLinkAlt } from 'react-icons/fa';
+import { FaExternalLinkAlt as ExternalLinkIcon } from 'react-icons/fa';
 
 import navigation from '../../../content/navigation';
 import {
@@ -13,15 +13,23 @@ import styles from './Sidebar.module.scss';
 
 const renderItems = (
   items: IItem[],
-  currentPath?: string,
+  currentPath: string,
+  level = 0
 ): React.ReactElement => (
   <ul
-    className={styles.list}
+    className={classNames(
+      styles.list,
+      styles[`list--level${level}`]
+    )}
   >
     {items.map((item, index) => {
-      const isItemActive = (
-        currentPath && isInternalItem(item) && currentPath.startsWith(item.to)
-      );
+      let isItemActive = false;
+      let isItemCurrent = false;
+
+      if (isInternalItem(item)) {
+        isItemActive = currentPath.startsWith(item.to);
+        isItemCurrent = currentPath === item.to;
+      }
 
       if (item.icon) {
         item.icon = React.cloneElement(item.icon, {
@@ -37,6 +45,7 @@ const renderItems = (
             styles.item,
             {
               [styles['item--active']]: isItemActive,
+              [styles['item--current']]: isItemCurrent,
               [styles['item--has-divider']]: item.hasDivider,
             },
           )}
@@ -45,17 +54,26 @@ const renderItems = (
           key={`sidebar-item-${index}`}
         >
           {isInternalItem(item) ? (
-            <Link
-              className={styles['item-link']}
-              to={item.to}
-            >
-              {item.icon}
-              <span
-                className={styles['item-title']}
+            <>
+              <Link
+                className={styles['item-link']}
+                to={item.to}
               >
-                {item.title}
-              </span>
-            </Link>
+                {item.icon}
+                <span
+                  className={styles['item-title']}
+                >
+                  {item.title}
+                </span>
+              </Link>
+
+              {item.items && renderItems(item.items, currentPath, level + 1)}
+
+              {isItemActive
+                && item.secondaryItems
+                && renderItems(item.secondaryItems, currentPath, level + 1)
+              }
+            </>
           ) : (
             <a
               className={styles['item-link']}
@@ -67,22 +85,11 @@ const renderItems = (
               >
                 {item.title}
               </span>
-              <FaExternalLinkAlt
-                className={styles['item-external-link']}
+              <ExternalLinkIcon
+                className={styles['external-link-icon']}
               />
             </a>
           )}
-
-          {isInternalItem(item)
-            && item.items
-            && renderItems(item.items, currentPath)
-          }
-
-          {isItemActive
-            && isInternalItem(item)
-            && item.secondaryItems
-            && renderItems(item.secondaryItems, currentPath)
-          }
         </li>
       );
     }
