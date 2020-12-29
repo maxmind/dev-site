@@ -17,12 +17,12 @@ const navigation: IItem[] = [
         to: '/minfraud/evaluate-a-transaction',
       },
       {
-        title: 'Report Transactions',
-        to: '/minfraud/report-transactions',
+        title: 'Report a Transaction',
+        to: '/minfraud/report-a-transaction',
       },
       {
-        title: 'Track Fraudsters',
-        to: '/minfraud/track-fraudsters',
+        title: 'Track Devices',
+        to: '/minfraud/track-devices',
       },
       {
         hasDivider: true,
@@ -71,6 +71,10 @@ const navigation: IItem[] = [
         title: 'Release Notes',
         to: '/minfraud/release-notes',
       },
+      {
+        title: 'Frequently Asked Questions',
+        url: 'https://support.maxmind.com/minfraud-faq/',
+      },
     ],
     title: 'minFraud',
     to: '/minfraud',
@@ -84,33 +88,141 @@ const navigation: IItem[] = [
     ),
     items: [
       {
-        title: 'Setup',
-        to: '/geoip2/setup',
+        secondaryItems: [
+          {
+            title: 'Database Formats',
+            to: '/geoip2/databases/database-formats',
+          },
+          {
+            title: 'Geolocate an IP Address',
+            to: '/geoip2/databases/geolocate-an-ip-address',
+          },
+          {
+            title: 'Updating Databases',
+            to: '/geoip2/databases/updating-databases',
+          },
+        ],
+        title: 'Databases',
+        to: '/geoip2/databases',
       },
       {
-        title: 'Geolocate an IP',
-        to: '/geoip2/geolocate-an-ip',
+        secondaryItems: [
+          {
+            title: 'Get a Geolocation',
+            to: '/geoip2/web-services/geolocate-an-ip-address',
+          },
+          {
+            title: 'Using the JavaScript Client',
+            to: '/geoip2/web-services/using-the-javascript-client',
+          },
+        ],
+        title: 'Web Services',
+        to: '/geoip2/web-services',
       },
       {
-        title: 'Updating the database',
-        to: '/geoip2/updating-the-database',
-      },
-      {
-        className: styles['item-divider'],
+        hasDivider: true,
+        secondaryItems: [
+          {
+            secondaryItems: [
+              {
+                items: [
+                  {
+                    title: 'Country',
+                    to: '#',
+                  },
+                ],
+                title: 'City',
+                to: '#',
+              },
+              {
+                title: 'Country',
+                to: '#',
+              },
+              {
+                title: 'Enterprise',
+                to: '#',
+              },
+              {
+                title: 'Anonymous IP',
+                to: '#',
+              },
+              {
+                title: 'ASN',
+                to: '#',
+              },
+              {
+                title: 'Connection Type',
+                to: '#',
+              },
+              {
+                title: 'Domain',
+                to: '#',
+              },
+              {
+                title: 'ISP',
+                to: '#',
+              },
+            ],
+            title: 'Databases',
+            to: '/geoip2/api-reference/databases',
+          },
+          {
+            secondaryItems: [
+              {
+                title: 'Authentication',
+                to: '#',
+              },
+              {
+                title: 'Endpoints',
+                to: '#',
+              },
+              {
+                title: 'Models',
+                to: '#',
+              },
+            ],
+            title: 'Web Services',
+            to: '/geoip2/api-reference/web-services',
+          },
+        ],
         title: 'API Reference',
         to: '/geoip2/api-reference',
-      },
-      {
-        title: 'CSV Databases',
-        to: '/geoip2/csv-databases',
       },
       {
         title: 'Release Notes',
         to: '/geoip2/release-notes',
       },
       {
-        title: 'Migrating from GeoIP Legacy',
-        to: '/geoip2/migrating-from-geoip-legacy',
+        title: 'Frequently Asked Questions',
+        url: 'https://support.maxmind.com/geoip-faq/',
+      },
+      {
+        secondaryItems: [
+          {
+            items: [
+              {
+                title: 'ISO 3166 Country Codes',
+                to: '#',
+              },
+              {
+                title: 'ISO 3166 Country Codes with Associated Continent',
+                to: '#',
+              },
+              {
+                title: 'MaxMind-Specific Codes for Europe',
+                to: '#',
+              },
+              {
+                title: 'MaxMind-Specific Codes for the Asia/Pacific Region',
+                to: '#',
+              },
+            ],
+            title: 'GeoIP Codes',
+            to: '#',
+          },
+        ],
+        title: 'Legacy Documentation',
+        to: '/legacy/geoip',
       },
     ],
     title: 'GeoIP2',
@@ -144,6 +256,10 @@ const navigation: IItem[] = [
       {
         title: 'Release Notes',
         to: '/geolite2/release-notes',
+      },
+      {
+        title: 'Frequently Asked Questions',
+        url: 'https://support.maxmind.com/geolite-faq/',
       },
     ],
     title: 'GeoLite2',
