@@ -1,0 +1,71 @@
+---
+draft: false
+title: GeoIP2 Databases
+subtitle: For High-Volume, Low-Latency Environments
+icon: DatabaseIcon
+---
+
+import {
+  FaBook,
+  FaClipboardList,
+  FaFile,
+  FaRocket,
+  FaSync,
+} from 'react-icons/fa';
+
+<Alert type="warning">
+  To comply with data privacy regulations, please monitor our
+  [Do Not Sell My Personal Information Requests page](https://www.maxmind.com/en/accounts/current/do-not-sell-requests)
+  (login required) for IP addresses and networks that should not be used for
+  advertising or marketing purposes.
+</Alert>
+
+Use local databases to retrieve geolocation and other information in high
+volume, low latency environments.
+
+MaxMind provides both binary and CSV databases for GeoIP2. Both formats provide
+additional data not available in our legacy databases including localized names
+for cities, subdivisions, and countries.
+
+{/*<!-- lint disable code-block-style -->*/}
+<LinkGroupContainer>
+  <LinkGroup heading="Guides">
+    <LinkGroupCard
+      description="Learn more about our CSV and binary (mmdb) database formats."
+      heading="Database Formats"
+      icon={FaFile}
+      to="/minfraud/evaluate-a-transaction"
+    />
+
+    <LinkGroupCard
+      description="Learn how to geolocate an IP address using an API client to query a database."
+      heading="Geolocate an IP Address"
+      icon={FaRocket}
+      to="/minfraud/evaluate-a-transaction"
+    />
+
+    <LinkGroupCard
+      description="Use the GeoIP Update program to automatically update your GeoIP databases."
+      heading="Updating Databases"
+      icon={FaSync}
+      to="/minfraud/evaluate-a-transaction"
+    />
+  </LinkGroup>
+
+  <LinkGroup heading="Resources">
+    <LinkGroupCard
+      description="Learn about GeoIP's  objects."
+      heading="API Reference"
+      icon={FaBook}
+      to="/minfraud/evaluate-a-transaction"
+    />
+
+    <LinkGroupCard
+      description="Review GeoIP2 release notes to understand changes to the GeoIP2 API."
+      heading="Release Notes"
+      icon={FaClipboardList}
+      to="/minfraud/evaluate-a-transaction"
+    />
+  </LinkGroup>
+</LinkGroupContainer>
+{/*<!-- lint enable code-block-style -->*/}
