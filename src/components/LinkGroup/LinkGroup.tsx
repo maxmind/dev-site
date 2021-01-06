@@ -1,3 +1,4 @@
+import classNames from 'classnames';
 import PropTypes from 'prop-types';
 import * as React from 'react';
 
@@ -8,6 +9,7 @@ export interface ILinkGroup {
   children: React.ReactElement<ILinkGroupCard>
     | React.ReactElement<ILinkGroupCard>[];
   heading: string;
+  isCompact?: boolean
 }
 
 const LinkGroup: React.FC<ILinkGroup> = (props) => (
@@ -20,7 +22,12 @@ const LinkGroup: React.FC<ILinkGroup> = (props) => (
       {props.heading}
     </h3>
     <div
-      className={styles.cards}
+      className={classNames(
+        styles.cards,
+        {
+          [styles['cards--is-compact']]: props.isCompact,
+        }
+      )}
     >
       {React.Children.map(
         props.children,
@@ -29,6 +36,7 @@ const LinkGroup: React.FC<ILinkGroup> = (props) => (
           index: number,
         ) => React.cloneElement((child), {
           className: styles.card,
+          isCompact: props.isCompact,
           key: `link-group-child-${index}`,
         })
       )}
@@ -42,6 +50,7 @@ LinkGroup.propTypes = {
     PropTypes.element.isRequired,
   ]).isRequired,
   heading: PropTypes.string.isRequired,
+  isCompact: PropTypes.bool,
 };
 
 export default LinkGroup;

@@ -12,6 +12,7 @@ export interface ILinkGroupCard {
   description: string;
   heading: string;
   icon: IconType,
+  isCompact?: boolean,
   to: string;
 }
 
@@ -22,6 +23,9 @@ const LinkGroupCard: React.FC<ILinkGroupCard> = (props) => {
       className={classNames(
         styles.container,
         props.className,
+        {
+          [styles['container--is-compact']]: props.isCompact,
+        }
       )}
       to={props.to}
     >
@@ -33,11 +37,11 @@ const LinkGroupCard: React.FC<ILinkGroupCard> = (props) => {
       >
         {props.heading}
       </h3>
-      <div
+      <p
         className={styles.description}
       >
         {props.description}
-      </div>
+      </p>
       <div
         className={styles.arrow}
       >
@@ -52,6 +56,7 @@ LinkGroupCard.propTypes = {
   description: PropTypes.string.isRequired,
   heading: PropTypes.string.isRequired,
   icon: PropTypes.any.isRequired,
+  isCompact: PropTypes.bool,
   to: PropTypes.string.isRequired,
 };
 

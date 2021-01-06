@@ -12,6 +12,7 @@
     'icon heading arrow'
     '. description arrow';
   grid-template-columns: min-content 1fr min-content;
+  grid-template-rows: auto;
   margin-top: 0;
   overflow: hidden;
   padding: calc(var(--mm-spacing) / 2);
@@ -33,12 +34,25 @@
   }
 }
 
+.container--is-compact {
+  gap: calc(var(--mm-spacing) / 4);
+  grid-template-columns: min-content 1fr min-content;
+  grid-template-rows: auto;
+  padding: calc(var(--mm-spacing) / 4);
+  padding-top: calc(calc(var(--mm-spacing) / 4) + 6px);
+}
+
 .icon {
   align-self: center;
   color: #2b7ec6;
   grid-area: icon;
   height: 30px;
   width: 30px;
+}
+
+.container--is-compact .icon {
+  height: 18px;
+  width: 18px;
 }
 
 .heading {
@@ -49,15 +63,23 @@
   grid-area: heading;
 }
 
+.container--is-compact .heading {
+  font-size: 14px;
+}
+
 .description {
   color: var(--mm-color-primary-text);
   font-size: 14px;
   grid-area: description;
 }
 
+.container--is-compact .description {
+  font-size: 12px;
+}
+
 .arrow {
   border-left: 1px solid var(--mm-color-border);
-  color: var(--mm-color-display-text);
+  color: #2b7ec6;
   display: grid;
   grid-area: arrow;
   height: 100%;
@@ -66,4 +88,9 @@
   > * {
     align-self: center;
   }
+}
+
+.container--is-compact .arrow {
+  font-size: 14px;
+  padding-left: calc(var(--mm-spacing) / 4);
 }
