@@ -156,10 +156,6 @@
   max-width: calc(100% - 46px);
   padding: 5px 10px;
 
-  &:focus {
-    font-weight: 700;
-  }
-
   &:hover {
     color: var(--mm-color-display-text);
   }
@@ -173,9 +169,8 @@
 
 .list--level1 .item--current > .item-link {
   background: var(--mm-color-sidebar);
-  border-left: 4px solid #2b7ec6;
+  border-left: 4px solid var(--mm-color-active-blue);
   color: var(--mm-color-display-text) !important;
-  font-weight: 700 !important;
 }
 
 .list--level1 [href*='#']:focus {
@@ -183,7 +178,7 @@
 }
 
 .list--level1 [href*='#']:focus::before {
-  background: #2b7ec6;
+  background: var(--mm-color-active-blue);
   border-radius: 50%;
   content: ' ';
   display: block;

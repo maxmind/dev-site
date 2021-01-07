@@ -44,7 +44,7 @@
 
 .icon {
   align-self: center;
-  color: #2b7ec6;
+  color: var(--mm-color-active-blue);
   grid-area: icon;
   height: 30px;
   width: 30px;
@@ -79,7 +79,7 @@
 
 .arrow {
   border-left: 1px solid var(--mm-color-border);
-  color: #2b7ec6;
+  color: var(--mm-color-active-blue);
   display: grid;
   grid-area: arrow;
   height: 100%;
