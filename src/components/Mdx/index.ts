@@ -2,6 +2,7 @@
 // eslint-disable-next-line max-len
 // Reference: https://github.com/mdx-js/mdx/blob/master/docs/getting-started/_table-of-components.mdx
 export { default as a } from './A';
+export { default as Alert } from '../Alert';
 export { default as blockquote } from './Blockquote';
 export { default as inlineCode } from './Code';
 export { default as CodeSet } from '../CodeSet';
@@ -16,6 +17,7 @@ export { default as h6 } from './H6';
 export { default as hr } from './Hr';
 export { default as img } from './Img';
 export { default as li } from './Li';
+export { Link } from 'gatsby';
 export { default as ol } from './Ol';
 export { default as p } from './P';
 export { default as pre } from './Pre';

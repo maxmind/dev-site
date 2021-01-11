@@ -25,6 +25,16 @@
   margin-top: 0;
 }
 
+.content > *:first-child > [class*='H2-module'] {
+  border-top: 0;
+  margin-top: 4px;
+  padding-top: 0;
+}
+
+.content > *:first-child > [class*='H2-module'] [class*='H2-module--icon'] {
+  top: 50%;
+}
+
 .footer {
   margin: 0 var(--mm-spacing);
   width: calc(100% - calc(var(--mm-spacing) * 2));
