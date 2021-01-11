@@ -20,7 +20,7 @@ describe('Alert', () => {
     expect(results).toHaveNoPa11yViolations();
   });
 
-  xit('type of `info` has no Pa11y violations', async () => {
+  it('type of `info` has no Pa11y violations', async () => {
     const component = mount(
       <Alert
         type="info"
@@ -36,7 +36,7 @@ describe('Alert', () => {
     expect(results).toHaveNoPa11yViolations();
   });
 
-  xit('type of `success` has no Pa11y violations', async () => {
+  it('type of `success` has no Pa11y violations', async () => {
     const component = mount(
       <Alert
         type="success"
@@ -52,7 +52,7 @@ describe('Alert', () => {
     expect(results).toHaveNoPa11yViolations();
   });
 
-  xit('type of `warning` has no Pa11y violations', async () => {
+  it('type of `warning` has no Pa11y violations', async () => {
     const component = mount(
       <Alert
         type="warning"
