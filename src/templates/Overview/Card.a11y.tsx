@@ -29,8 +29,8 @@ describe('Card', () => {
         'region',
 
         /**
-         * Ignore heading structure. Used with others to provid a valid heading
-         * structure.
+         * Ignore heading structure. This component is used with other
+         * components to provide a valid heading structure.
          */
         'WCAG2AAA.Principle1.Guideline1_3.1_3_1_AAA.G141',
       ],
