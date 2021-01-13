@@ -82,7 +82,7 @@
     "unist-util-find-after": "^3.0.0",
     "unist-util-visit-parents": "^3.1.1",
     "url-search-params-polyfill": "^8.1.0",
-    "webpack": "^4.0.0",
+    "webpack": "^5.13.0",
     "whatwg-fetch": "^3.5.0"
   },
   "description": "Developer website for MaxMind",
@@ -198,7 +198,7 @@
     "serve": "firebase serve",
     "start": "yarn run develop",
     "test": "run-s \"test:* --silent\"",
-    "test:a11y": "jest --config .jestrc.a11y.js --no-cache",
+    "test:a11y": "jest --config .jestrc.a11y.js --no-cache --maxWorkers=4",
     "test:unit": "jest --config .jestrc.js"
   },
   "version": "0.1.0"
