@@ -76,6 +76,11 @@
   color: #e89f29;
 }
 
+.content > * {
+  max-width: auto !important;
+  min-width: auto !important;
+}
+
 @include variables.breakpoint('xl') {
   .alert {
     padding: 0 var(--mm-spacing) 0 50px;

@@ -4,7 +4,6 @@ import { Link } from 'gatsby';
 import React from 'react';
 
 import { IItem, isInternalItem, sidebarItems } from '../../sidebarItems';
-// eslint-disable-next-line css-modules/no-unused-class
 import styles from './Sidebar.module.scss';
 
 const renderItems = (

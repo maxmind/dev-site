@@ -75,9 +75,18 @@ const createMdxPages = async ( props: CreatePagesArgs): Promise<void> => {
       process.env.gatsby_executing_command === 'develop'
       || !node.frontmatter.draft
     ) {
-      const path = (node.parent.name === 'index')
-        ? node.parent.relativeDirectory
-        : `${node.parent.relativeDirectory}/${node.parent.name}`;
+
+      let path: string;
+
+      if (node.parent.name === 'index') {
+        if (node.parent.relativeDirectory) {
+          path = node.parent.relativeDirectory;
+        } else {
+          path = '/';
+        }
+      } else {
+        path = `${node.parent.relativeDirectory}/${node.parent.name}`;
+      }
 
       createPage({
         component: node.fileAbsolutePath,

@@ -14,7 +14,7 @@ import styles from './Alert.module.scss';
 
 interface IAlert {
   children: React.ReactNode,
-  type: 'error' | 'info' | 'success' | 'warning'
+  type: 'error' | 'info' | 'success' | 'warning',
 }
 
 const Alert: React.FC<IAlert> = (props) => {
@@ -45,9 +45,17 @@ const Alert: React.FC<IAlert> = (props) => {
       <Icon
         className={styles.icon}
       />
-      {renderMarkdown(props.children)}
+      <div
+        className={styles.content}
+      >
+        {renderMarkdown(props.children)}
+      </div>
     </div>
   );
+};
+
+Alert.defaultProps = {
+  type: 'info',
 };
 
 Alert.propTypes = {

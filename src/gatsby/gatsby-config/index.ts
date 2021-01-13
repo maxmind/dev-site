@@ -26,7 +26,30 @@ export default {
   plugins: [
     {
       options: {
-        name: 'content',
+        ignore: [
+          '**/index.mdx',
+        ],
+        name: 'pages',
+        path: `${GATSBY_ROOT}/content/`,
+      },
+      resolve: 'gatsby-source-filesystem',
+    },
+    {
+      options: {
+        ignore: [
+          '**/!(content)/index.mdx',
+        ],
+        name: 'home',
+        path: `${GATSBY_ROOT}/content/`,
+      },
+      resolve: 'gatsby-source-filesystem',
+    },
+    {
+      options: {
+        ignore: [
+          '**/!(index).mdx',
+        ],
+        name: 'overviews',
         path: `${GATSBY_ROOT}/content/`,
       },
       resolve: 'gatsby-source-filesystem',
@@ -34,7 +57,9 @@ export default {
     {
       options: {
         defaultLayouts: {
-          content: require.resolve(`${GATSBY_ROOT}src/templates/Page`),
+          home: require.resolve(`${GATSBY_ROOT}src/templates/Home`),
+          overviews: require.resolve(`${GATSBY_ROOT}src/templates/Overview`),
+          pages: require.resolve(`${GATSBY_ROOT}src/templates/Page`),
         },
         extensions: [
           '.mdx',
