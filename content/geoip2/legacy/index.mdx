@@ -1,0 +1,73 @@
+---
+draft: false
+title: GeoIP Legacy Databases & Web Services
+subtitle: Industry Leading IP Intelligence
+icon: GeoIP2Icon
+---
+
+import {
+  FaArchive as LegacyIcon,
+  FaCloud as WebServicesIcon,
+  FaDatabase as DatabasesIcon,
+  FaBook as ApiReferenceIcon,
+  FaClipboardList as ReleaseNotesIcon,
+  FaPencilAlt,
+  FaQuestionCircle as FaqIcon,
+  FaRocket,
+} from 'react-icons/fa';
+
+import ProductAlert from './_alert.mdx';
+
+<ProductAlert />
+
+This documentation is for the legacy GeoIP databases and services. New customers
+do not have access to legacy services. Please use the
+[GeoIP2 Precision Web Services](/geoip2).
+
+<LinkGroupContainer>
+  <LinkGroupCard
+    description="Use local databases to retrieve geolocation and other information in high-volume, low-latency environments."
+    heading="Databases"
+    icon={DatabasesIcon}
+    to="/geoip2/databases"
+  />
+
+  <LinkGroupCard
+    description="Get geolocation and other information associated with an IP address through easy-to-use APIs."
+    heading="Web Services"
+    icon={WebServicesIcon}
+    to="/geoip2/web-services"
+  />
+</LinkGroupContainer>
+
+- - -
+
+<LinkGroupContainer>
+  <LinkGroupCard
+      description="Detailed documentation of database contents and web service usage."
+      heading="API Reference"
+      icon={ApiReferenceIcon}
+      to="/geoip2/api-reference"
+  />
+
+  <LinkGroupCard
+    description="Review GeoIP2 release notes to understand changes to the GeoIP2 API."
+    heading="Release Notes"
+    icon={ReleaseNotesIcon}
+    to="/geoip2/release-notes"
+  />
+
+  <LinkGroupCard
+    description="Review GeoIP2 release notes to understand changes to the GeoIP2 API."
+    heading="Frequently Asked Questions"
+    icon={FaqIcon}
+    to="/geoip2/release-notes"
+  />
+
+  <LinkGroupCard
+    description="Get geolocation and other information associated with an IP address through easy-to-use APIs."
+    heading="Legacy Documentation"
+    icon={LegacyIcon}
+    to="/legacy/geoip"
+  />
+</LinkGroupContainer>

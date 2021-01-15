@@ -1,52 +1,63 @@
 ---
 draft: false
-title: GeoLite2 Overview
+title: GeoLite2 Database &amp; Web Services
+subtitle: Free Geolocation Data
+icon: GeoLite2Icon
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vulputate
-nisl non leo imperdiet, eget ullamcorper sem bibendum. Nunc varius consequat
-elit et laoreet. Donec rhoncus commodo urna sed condimentum. Morbi a erat
-ornare, egestas diam quis, venenatis quam. Donec consequat congue nisl. Nam et
-nulla a ipsum fringilla tristique eget elementum lectus. Proin diam ipsum,
-porttitor eu interdum a, egestas sed sem. Nulla at pellentesque magna. Nam ut
-purus molestie, vulputate arcu id, iaculis arcu. Curabitur consectetur quam eu
-nulla ultricies dictum. Vestibulum ac hendrerit orci, a commodo augue. Nam ut
-iaculis mauris, eu tristique metus.
+import {
+  FaBook,
+  FaClipboardList,
+  FaDesktop,
+  FaPencilAlt,
+  FaQuestionCircle,
+  FaRocket,
+} from 'react-icons/fa';
 
-<CodeSet>
+<LinkGroupContainer>
+  <LinkGroup heading="Guides">
+    <LinkGroupCard
+      description="Start evaluating your transactions by installing, configuring, and using a minFraud API client."
+      heading="Evaluate a Transaction"
+      icon={FaRocket}
+      to="/minfraud/evaluate-a-transaction"
+    />
 
-```ruby
-puts "hello"
-```
+    <LinkGroupCard
+      description="Use the Report Transaction API to report chargebacks, false positives, suspected fraud, or spam/abuse."
+      heading="Report Transactions"
+      icon={FaPencilAlt}
+      to="/minfraud/evaluate-a-transaction"
+    />
 
-```javascript
-const err = 12;
-const err = 'afsd';
-const err = new Error();
+    <LinkGroupCard
+      description="Capture more data and catch more fraud using our JavaScript device tracking library."
+      heading="Integrate Device Tracking"
+      icon={FaDesktop}
+      to="/minfraud/evaluate-a-transaction"
+    />
+  </LinkGroup>
 
-if (err) {
-  console.log('hello');
-}
+  <LinkGroup isCompact heading="Resources">
+    <LinkGroupCard
+      description="Learn about each minFraud service's request and response objects."
+      heading="Report Transactions"
+      icon={FaBook}
+      to="/minfraud/evaluate-a-transaction"
+    />
 
-const FOO = /fafdwfsfda/g;
+    <LinkGroupCard
+      description="Review minFraud release notes to understand changes to the minFraud API."
+      heading="Release Notes"
+      icon={FaClipboardList}
+      to="/minfraud/evaluate-a-transaction"
+    />
 
-
-const foo = (a, b) => {
-  return 'a';
-};
-
-var foo = "\nafsdf"
-```
-
-```csharp
-void method<T, U>();
-method<int, char>();
-```
-
-```go
-if (err != nil) {
-  spew.Dump(err)
-}
-```
-
-</CodeSet>
+    <LinkGroupCard
+      description="Capture more data and catch more fraud using our JavaScript device tracking library."
+      heading="FAQ"
+      icon={FaQuestionCircle}
+      to="/minfraud/evaluate-a-transaction"
+    />
+  </LinkGroup>
+</LinkGroupContainer>

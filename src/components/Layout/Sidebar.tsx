@@ -2,21 +2,42 @@ import { useLocation } from '@reach/router';
 import classNames from 'classnames';
 import { Link } from 'gatsby';
 import React from 'react';
+import { FaExternalLinkAlt as ExternalLinkIcon } from 'react-icons/fa';
 
-import { IItem, isInternalItem, sidebarItems } from '../../sidebarItems';
+import navigation from '../../../content/navigation';
+import {
+  IItem,
+  isInternalItem,
+} from '../../types/Item';
 import styles from './Sidebar.module.scss';
 
 const renderItems = (
   items: IItem[],
-  currentPath?: string,
+  currentPath: string,
+  level = 0
 ): React.ReactElement => (
   <ul
-    className={styles.list}
+    className={classNames(
+      styles.list,
+      styles[`list--level${level}`]
+    )}
   >
     {items.map((item, index) => {
-      const isItemActive = (
-        currentPath && isInternalItem(item) && currentPath.startsWith(item.to)
-      );
+      let isItemActive = false;
+      let isItemCurrent = false;
+
+      if (isInternalItem(item)) {
+        isItemActive = currentPath.startsWith(item.to);
+        isItemCurrent = currentPath === item.to;
+      }
+
+      if (item.icon) {
+        item.icon = React.cloneElement(item.icon, {
+          className: classNames(
+            styles['item-icon'],
+          ),
+        });
+      }
 
       return (
         <li
@@ -24,43 +45,57 @@ const renderItems = (
             styles.item,
             {
               [styles['item--active']]: isItemActive,
+              [styles['item--current']]: isItemCurrent,
+              [styles['item--has-divider']]: item.hasDivider,
             },
-            item.className,
           )}
           data-current-path={currentPath}
           data-item-to={isInternalItem(item) && item.to}
           key={`sidebar-item-${index}`}
         >
           {isInternalItem(item) ? (
-            <Link
-              className={styles['item-link']}
-              to={item.to}
-            >
-              {item.icon}
-              {item.title}
-            </Link>
+            <>
+              <Link
+                className={styles['item-link']}
+                to={item.to}
+              >
+                {item.icon}
+                <span
+                  className={styles['item-title']}
+                >
+                  {item.title}
+                </span>
+              </Link>
+
+              {item.items && renderItems(item.items, currentPath, level + 1)}
+
+              {isItemActive
+                && item.secondaryItems
+                && renderItems(item.secondaryItems, currentPath, level + 1)
+              }
+            </>
           ) : (
             <a
               className={styles['item-link']}
               href={item.url}
             >
               {item.icon}
-              {item.title}
+              <span
+                className={styles['item-title']}
+              >
+                {item.title}
+              </span>
+              <ExternalLinkIcon
+                className={styles['external-link-icon']}
+              />
             </a>
           )}
-
-          {item.items && renderItems(item.items, currentPath)}
-          {isItemActive
-            && item.secondaryItems
-            && renderItems(item.secondaryItems, currentPath)
-          }
         </li>
       );
     }
     )}
   </ul>
 );
-
 
 const Sidebar: React.FC = () => {
   const location = useLocation();
@@ -73,7 +108,7 @@ const Sidebar: React.FC = () => {
         className={styles.nav}
         id="navigation"
       >
-        {renderItems(sidebarItems, location.pathname)}
+        {renderItems(navigation, location.pathname)}
       </nav>
     </section>
   );

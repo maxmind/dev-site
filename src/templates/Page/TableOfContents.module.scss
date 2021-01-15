@@ -26,7 +26,7 @@
 }
 
 .list .list {
-  margin-left: calc(var(--mm-spacing) / 2);
+  margin-left: 14px;
 }
 
 .list-item {
@@ -57,7 +57,7 @@
 }
 
 .list-item a {
-  --psuedo-padding: 10px;
+  --psuedo-padding: 8px;
   color: #555;
   display: inline-block;
   font-weight: 500;
@@ -82,7 +82,7 @@
   &::before {
     left: 0;
     right: initial;
-    transform: translate(calc(var(--mm-spacing) * -0.5), calc(var(--psuedo-padding) * -1));
+    transform: translate(-14px, calc(var(--psuedo-padding) * -1));
   }
 
   &:hover {
@@ -91,15 +91,14 @@
 }
 
 .list-item .list-item a::before {
-  transform: translate(calc(var(--mm-spacing) * -1), calc(var(--psuedo-padding) * -1));
+  transform: translate(-28px, calc(var(--psuedo-padding) * -1));
 }
 
 .list-item.item--active > a {
   color: var(--mm-color-display-text);
-  font-weight: 700;
 
   &::before {
-    border-left: 3px solid var(--mm-color-display-text);
+    border-left: 4px solid rgb(43, 126, 198);
   }
 }
 

@@ -22,7 +22,7 @@ const pages: IPage[] = [
   {
     description: 'GeoLite2 API Reference',
     keywords: [],
-    outputPath: 'geolite2/api-reference',
+    outputPath: 'geolite2/api-reference/web-services',
     // eslint-disable-next-line max-len
     sourceUrl: 'https://maxmind.github.io/api-specs/minfraud/2.0/spec.bundled.json',
     tableOfContents: {
@@ -33,7 +33,7 @@ const pages: IPage[] = [
   {
     description: 'GeoIP2 API Reference',
     keywords: [],
-    outputPath: 'geoip2/api-reference',
+    outputPath: 'geoip2/api-reference/web-services',
     // eslint-disable-next-line max-len
     sourceUrl: 'https://maxmind.github.io/api-specs/minfraud/2.0/spec.bundled.json',
     tableOfContents: {

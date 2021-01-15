@@ -1,25 +1,12 @@
 import PropTypes from 'prop-types';
 import React from 'react';
 
-import Layout from '../components/Layout/Layout';
+import Layout from '../../components/Layout/Layout';
+import { IHomeContext } from './query';
 
 interface IHome {
   children: React.ReactNode;
-  pageContext: {
-    readonly frontmatter: {
-      readonly description: string;
-      readonly keywords: string[];
-      readonly title: string;
-    };
-    readonly itemTotal: number;
-    readonly page: number;
-    readonly pageTotal: number;
-    readonly parent: {
-      modifiedTime: string;
-    };
-    readonly prefix: string;
-    readonly timeToRead: number;
-  };
+  pageContext: IHomeContext;
 }
 
 const Home: React.FC<IHome> = (props) => {
@@ -32,7 +19,7 @@ const Home: React.FC<IHome> = (props) => {
       keywords={keywords}
       title={title}
     >
-      Hello world.a
+      Hello world!
     </Layout>
   );
 };

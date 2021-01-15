@@ -4,76 +4,62 @@
   --mm-color-primary-text: #444;
   --mm-spacing: 20px;
 
-  background-color: var(--mm-color-sidebar);
+  background: linear-gradient(#fff, var(--mm-color-sidebar));
   border: 1px solid #eee;
   border-bottom: 1px solid #ddd;
-  border-radius: var(--mm-border-radius);
+  border-left: 6px solid #7eadda;
+  border-radius: 0 var(--mm-border-radius) var(--mm-border-radius) 0;
   border-top: 1px solid rgb(245, 245, 245);
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
   color: var(--mm-color-primary-text);
   display: flex;
   margin: calc(var(--mm-spacing) * 2);
-  padding-left: calc(var(--mm-spacing) * 1.5);
   position: relative;
   @include variables.max-width;
 }
 
-.icon {
-  background: var(--mm-color-background);
-  border-left: 1px solid #ddd;
-  border-radius: 30px;
-  color: rgb(39, 73, 88);
-  height: 60px;
-  left: 0;
+.icon-wrapper {
+  background: var(--mm-color-active-blue);
+  border-radius: 50%;
+  display: grid;
+  height: 55px;
+  left: -2px;
+  overflow: hidden;
   padding: 10px;
   position: absolute;
   top: 50%;
   transform: translate(-50%, -50%);
-  width: 60px;
+  width: 55px;
+  z-index: 3;
+
+  &::before {
+    border-radius: 50%;
+    box-shadow: inset 0 0 0 6px rgba(255, 255, 255, 0.35);
+    content: ' ';
+    display: block;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+  }
+}
+
+.icon {
+  align-self: center;
+  color: #fff;
+  filter: drop-shadow(1px 2px 2px  rgba(0, 119, 194, 0.5));
+  font-size: 18px;
+  justify-self: center;
 }
 
 .alert > * {
   min-width: auto !important;
 }
 
-.error {
-  background: #ffefee;
-  border: 2px solid #e9594c;
-}
-
-.error .icon {
-  border: 2px solid #e9594c;
-  color: #e9594c;
-}
-
-.info {
-  background: #ecf3fd;
-  border: 2px solid #4082ca;
-}
-
-.info .icon {
-  border: 2px solid #4082ca;
-  color: #4082ca;
-}
-
-.success {
-  background: #e5fff1;
-  border: 2px solid #3ac279;
-}
-
-.success .icon {
-  border: 2px solid #3ac279;
-  color: #3ac279;
-}
-
-.warning {
-  background: #fff3e0;
-  border: 2px solid #e89f29;
-}
-
-.warning .icon {
-  border: 2px solid #e89f29;
-  color: #e89f29;
+.content {
+  padding: 0 var(--mm-spacing);
 }
 
 .content > * {
@@ -81,8 +67,32 @@
   min-width: auto !important;
 }
 
+.error {
+  border-left-color: #f09791;
+}
+
+.error .icon-wrapper {
+  background: #e9594c;
+}
+
+.success {
+  border-left-color: #87d8aa;
+}
+
+.success .icon-wrapper {
+  background: #3ac279;
+}
+
+.warning {
+  border-left-color: rgba(232, 159, 41, 1);
+}
+
+.warning .icon-wrapper {
+  background: #e89f29;
+}
+
 @include variables.breakpoint('xl') {
-  .alert {
+  .content {
     padding: 0 var(--mm-spacing) 0 50px;
   }
 }

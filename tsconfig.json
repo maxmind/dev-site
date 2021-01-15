@@ -26,5 +26,5 @@
     "public",
     ".cache"
   ],
-  "include": ["src/**/*", "test/**/*"]
+  "include": ["src/**/*", "test/**/*", "content/navigation.tsx"]
 }

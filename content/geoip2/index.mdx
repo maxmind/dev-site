@@ -1,52 +1,72 @@
 ---
 draft: false
-title: GeoIP2 Overview
+title: GeoIP2 Databases & Web Services
+subtitle: Industry Leading IP Intelligence
+icon: GeoIP2Icon
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vulputate
-nisl non leo imperdiet, eget ullamcorper sem bibendum. Nunc varius consequat
-elit et laoreet. Donec rhoncus commodo urna sed condimentum. Morbi a erat
-ornare, egestas diam quis, venenatis quam. Donec consequat congue nisl. Nam et
-nulla a ipsum fringilla tristique eget elementum lectus. Proin diam ipsum,
-porttitor eu interdum a, egestas sed sem. Nulla at pellentesque magna. Nam ut
-purus molestie, vulputate arcu id, iaculis arcu. Curabitur consectetur quam eu
-nulla ultricies dictum. Vestibulum ac hendrerit orci, a commodo augue. Nam ut
-iaculis mauris, eu tristique metus.
+import {
+  FaArchive as LegacyIcon,
+  FaCloud as WebServicesIcon,
+  FaDatabase as DatabasesIcon,
+  FaBook as ApiReferenceIcon,
+  FaClipboardList as ReleaseNotesIcon,
+  FaPencilAlt,
+  FaQuestionCircle as FaqIcon,
+  FaRocket,
+} from 'react-icons/fa';
 
-<CodeSet>
+GeoIP, MaxMind’s IP intelligence product, consists of several related products.
+GeoIP lets you discover information about a specific IP address. We provide web
+services, subscription-based downloadable databases, and free downloadable
+databases.
 
-```ruby
-puts "hello"
-```
+<LinkGroupContainer>
+  <LinkGroup heading="Guides">
+    <LinkGroupCard
+      description="Use local databases to retrieve geolocation and other information in high-volume, low-latency environments."
+      heading="Databases"
+      icon={DatabasesIcon}
+      to="/geoip2/databases"
+    />
 
-```javascript
-const err = 12;
-const err = 'afsd';
-const err = new Error();
+    <LinkGroupCard
+      description="Get geolocation and other information associated with an IP address through easy-to-use APIs."
+      heading="Web Services"
+      icon={WebServicesIcon}
+      to="/geoip2/web-services"
+    />
+  </LinkGroup>
+</LinkGroupContainer>
 
-if (err) {
-  console.log('hello');
-}
+<LinkGroupContainer>
+  <LinkGroup isCompact heading="Resources">
+    <LinkGroupCard
+        description="Detailed documentation of database contents and web service usage."
+        heading="API Reference"
+        icon={ApiReferenceIcon}
+        to="/geoip2/api-reference"
+    />
 
-const FOO = /fafdwfsfda/g;
+    <LinkGroupCard
+      description="Review GeoIP2 release notes to understand changes to the GeoIP2 API."
+      heading="Release Notes"
+      icon={ReleaseNotesIcon}
+      to="/geoip2/release-notes"
+    />
 
+    <LinkGroupCard
+      description="Review GeoIP2 release notes to understand changes to the GeoIP2 API."
+      heading="Frequently Asked Questions"
+      icon={FaqIcon}
+      to="/geoip2/release-notes"
+    />
 
-const foo = (a, b) => {
-  return 'a';
-};
-
-var foo = "\nafsdf"
-```
-
-```csharp
-void method<T, U>();
-method<int, char>();
-```
-
-```go
-if (err != nil) {
-  spew.Dump(err)
-}
-```
-
-</CodeSet>
+    <LinkGroupCard
+      description="Get geolocation and other information associated with an IP address through easy-to-use APIs."
+      heading="Legacy Documentation"
+      icon={LegacyIcon}
+      to="/legacy/geoip"
+    />
+  </LinkGroup>
+</LinkGroupContainer>

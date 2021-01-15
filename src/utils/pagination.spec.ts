@@ -1,49 +1,43 @@
 import { getNextPage, getPreviousPage } from './pagination';
 
-jest.mock('../sidebarItems', () => {
-  const actualSidebarItems = jest.requireActual('../sidebarItems');
-  return {
-    ...actualSidebarItems,
-    sidebarItems: [
+jest.mock('../../content/navigation', () => ([
+  {
+    to: 'foo',
+  },
+  {
+    items: [
       {
-        to: 'foo',
+        to: 'bar-item-foo',
       },
       {
-        items: [
-          {
-            to: 'bar-item-foo',
-          },
-          {
-            to: 'bar-item-bar',
-          },
-        ],
-        to: 'bar',
-      },
-      {
-        url: '#',
-      },
-      {
-        items: [
-          {
-            to: 'baz-item-foo',
-          },
-          {
-            to: 'baz-item-bar',
-          },
-        ],
-        secondaryItems: [
-          {
-            to: 'baz-secondary-foo',
-          },
-          {
-            to: 'baz-secondary-bar',
-          },
-        ],
-        to: 'baz',
+        to: 'bar-item-bar',
       },
     ],
-  };
-});
+    to: 'bar',
+  },
+  {
+    url: '#',
+  },
+  {
+    items: [
+      {
+        to: 'baz-item-foo',
+      },
+      {
+        to: 'baz-item-bar',
+      },
+    ],
+    secondaryItems: [
+      {
+        to: 'baz-secondary-foo',
+      },
+      {
+        to: 'baz-secondary-bar',
+      },
+    ],
+    to: 'baz',
+  },
+]));
 
 describe('pagination', () => {
   describe('getPreviousPage()', () => {

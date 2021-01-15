@@ -17,6 +17,7 @@ export { default as h6 } from './H6';
 export { default as hr } from './Hr';
 export { default as img } from './Img';
 export { default as li } from './Li';
+export * from '../LinkGroup';
 export { Link } from 'gatsby';
 export { default as ol } from './Ol';
 export { default as p } from './P';

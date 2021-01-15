@@ -11,26 +11,12 @@ import Layout from '../../components/Layout/Layout';
 import { h1 as H1, p as P } from '../../components/Mdx';
 import { getNextPage, getPreviousPage } from '../../utils/pagination';
 import styles from './Page.module.scss';
-import TableOfContents, { ITableOfContents } from './TableOfContents';
+import { IPageContext } from './query';
+import TableOfContents from './TableOfContents';
 
 interface IPage {
   children: React.ReactNode;
-  pageContext: {
-    readonly frontmatter: {
-      readonly description: string;
-      readonly keywords: string[];
-      readonly title: string;
-    };
-    readonly itemTotal: number;
-    readonly page: number;
-    readonly pageTotal: number;
-    readonly parent: {
-      modifiedTime: string;
-    };
-    readonly prefix: string;
-    readonly tableOfContents: ITableOfContents;
-    readonly timeToRead: number;
-  };
+  pageContext: IPageContext;
 }
 
 const Page: React.FC<IPage> = (props) => {

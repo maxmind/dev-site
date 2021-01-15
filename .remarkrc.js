@@ -17,6 +17,10 @@ module.exports = {
       'mdx',
     ],
     [
+      'lint-code-block-style',
+      false,
+    ],
+    [
       'lint-list-item-spacing',
       false,
     ],
@@ -35,6 +39,10 @@ module.exports = {
     [
       'lint-no-consecutive-blank-lines',
       false,
+    ],
+    [
+      'lint-no-file-name-irregular-characters',
+      new RegExp('(?!^_)[^\\.a-zA-Z0-9-]'),
     ],
   ],
   settings: {
