@@ -3,7 +3,6 @@ import PropTypes from 'prop-types';
 import React from 'react';
 import { FaExternalLinkAlt } from 'react-icons/fa';
 
-// import Icon from '../../assets/svgs/open-in-new-window.svg';
 import styles from './A.module.scss';
 
 const A: React.FC<React.HTMLProps<HTMLAnchorElement>> = ({
