@@ -17,6 +17,10 @@ module.exports = {
       'mdx',
     ],
     [
+      'lint-code-block-style',
+      false,
+    ],
+    [
       'lint-list-item-spacing',
       false,
     ],
