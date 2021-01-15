@@ -1,7 +1,7 @@
 /* eslint-disable filenames/match-exported */
 import { CreatePagesArgs } from 'gatsby';
 
-import { IBaseQuery } from '../../../fragments';
+import { IBaseQuery } from '../../../baseQuery';
 import homeQuery from '../../../templates/Home/query';
 import overviewQuery from '../../../templates/Overview/query';
 import pageQuery from '../../../templates/Page/query';

@@ -1,5 +1,5 @@
 /* eslint-disable filenames/match-exported */
-import { BaseQuery, IBaseQuery } from '../../fragments';
+import { BaseQuery, IBaseQuery } from '../../baseQuery';
 import { ITableOfContents } from './TableOfContents';
 
 export type IPageContext = IBaseQuery & {

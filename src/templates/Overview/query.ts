@@ -1,7 +1,5 @@
 /* eslint-disable filenames/match-exported */
-// import * as React from 'react';
-
-import { BaseQuery, IBaseQuery } from '../../fragments';
+import { BaseQuery, IBaseQuery } from '../../baseQuery';
 
 export type IOverviewContext = Pick<IBaseQuery, 'frontmatter'> & {
   readonly frontmatter: {
