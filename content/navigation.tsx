@@ -25,6 +25,10 @@ const navigation: IItem[] = [
         to: '/minfraud/track-devices',
       },
       {
+        title: 'Working with Transaction Dispositions',
+        to: '/minfraud/working-with-transaction-dispositions',
+      },
+      {
         hasDivider: true,
         secondaryItems: [
           {
