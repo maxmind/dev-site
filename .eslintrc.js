@@ -302,7 +302,7 @@ module.exports = {
       1,
       'always',
     ],
-    'simple-import-sort/sort': 'warn',
+    'simple-import-sort/imports': 'warn',
     'sort-keys': [
       'warn',
     ],

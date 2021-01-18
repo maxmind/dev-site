@@ -119,7 +119,7 @@ export const onCreateWebpackConfig: GatsbyNode['onCreateWebpackConfig']= (
                   }
 
                   if (stderr) {
-                    reporter.warn(`RemarkLink error:\n${stderr}`);
+                    reporter.warn(`RemarkLint error:\n${stderr}`);
                   }
 
                   next();

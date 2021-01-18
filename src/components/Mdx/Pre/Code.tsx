@@ -1,4 +1,4 @@
-/* eslint-disable simple-import-sort/sort */
+/* eslint-disable simple-import-sort/imports */
 // Disabling import sort because prismjs needs to be imported before
 // the theme and components
 
