@@ -46,7 +46,7 @@
     "gatsby-plugin-react-helmet": "^3.3.13",
     "gatsby-plugin-react-svg": "^3.0.0",
     "gatsby-plugin-remove-trailing-slashes": "^2.3.13",
-    "gatsby-plugin-sharp": "^2.6.39",
+    "gatsby-plugin-sharp": "^2.12.2",
     "gatsby-plugin-sri": "^1.1.0",
     "gatsby-plugin-ts-checker": "^1.1.0",
     "gatsby-plugin-typescript": "^2.4.21",
