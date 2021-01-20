@@ -3,6 +3,7 @@ module.exports = {
     'preset-lint-recommended',
     'preset-lint-markdown-style-guide',
     'remark-frontmatter',
+    'remark-gfm',
     'remark-lint-emphasis-marker',
     'remark-lint-heading-increment',
     'remark-lint-no-empty-url',
