@@ -37,10 +37,11 @@ would look like:
 ### Authorization and security
 
 The HTTP Authorization header is required for authorization. The username is
-your <a href="https://www.maxmind.com/en/accounts/current/license-key">MaxMind
-account ID</a>. The password is your <a
-href="https://www.maxmind.com/en/accounts/current/license-key">MaxMind license
-key</a>. You must be approved for a trial or purchase credit for use with our
+your [MaxMind account
+ID](https://www.maxmind.com/en/accounts/current/license-key). The password is
+your [MaxMind license
+key](https://www.maxmind.com/en/accounts/current/license-key). You must be
+approved for a trial or purchase credit for use with our
 web services in order to receive an account ID and license key. The
 authorization realm is `minfraud`.
 
@@ -61,6 +62,17 @@ you must accept one of the following:
 If you set the `Accept-Charset` header in your client code, you must accpe the
 `UTF-8` character set;  If you do not you will receive a `406 Not Acceptable`
 response.
+
+### Command Line Example Using curl
+
+This example will get updates after March 15, 2021 at 9AM UTC. Please replace
+`{account_id}` and `{license_key}` with your [account ID and
+license key](https://www.maxmind.com/en/my_license_key)
+
+```cli
+curl -u "{account_id}:{license_key}" \
+  https://minfraud.maxmind.com/minfraud/disposition/v1.0/updates\?updates_after\=2021-03-15T09:00:00.00000Z
+```
 
 ## Response to successful requests
 
@@ -186,18 +198,18 @@ description of the error and may change at any time.
 In addition to the errors documented below, client code should also be prepared
 to handle any valid HTTP 4xx or 5xx status code.
 
-| Code                   | HTTP Status                | Error                                                                                                                                            |
-| ---------------------- | -------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------ |
-| UPDATES_AFTER_REQUIRED | 400 Bad Request            | You have not supplied the `updates_after`  URI parameter.                                                                                        |
-| TIMESTAMP_INVALID      | 400 Bad Request            | The `updates_after` field must be in RFC 3339 format.                                                                                            |
-| PARAMETER_UNKNOWN      | 400 Bad Request            | You have supplied one or more parameters which are not used by this endpoint.                                                                    |
-| AUTHORIZATION_INVALID  | 401 Unauthorized           | Your account ID or license key could not be authenticated.                                                                                       |
-| LICENSE_KEY_REQUIRED   | 401 Unauthorized           | An account ID and license key are required to use this service.                                                                                  |
-| ACCOUNT_ID_REQUIRED    | 401 Unauthorized           | An account ID and license key are required to use this service.                                                                                  |
-| PERMISSION_REQUIRED    | 403 Forbidden              | You do not have permission to use the service. Please contact <a href="mailto:support@maxmind.com">support@maxmind.com</a> for more information. |
-| (none)                 | 406 Not Acceptable         | Your request included an `Accept-Charset` header that is not supported. `UTF-8` is the only acceptable character set.                            |
-| (none)                 | 415 Unsupported Media Type | Your request included an `Accept` header that is not supported. The web service cannot return content of that type.                              |
-| (none)                 | 503 Service Not Available  | There is a problem with the web service server. You can try this request again later.                                                            |
+| Code                   | HTTP Status                | Error                                                                                                                                 |
+| ---------------------- | -------------------------- | ------------------------------------------------------------------------------------------------------------------------------------- |
+| UPDATES_AFTER_REQUIRED | 400 Bad Request            | You have not supplied the `updates_after`  URI parameter.                                                                             |
+| TIMESTAMP_INVALID      | 400 Bad Request            | The `updates_after` field must be in RFC 3339 format.                                                                                 |
+| PARAMETER_UNKNOWN      | 400 Bad Request            | You have supplied one or more parameters which are not used by this endpoint.                                                         |
+| AUTHORIZATION_INVALID  | 401 Unauthorized           | Your account ID or license key could not be authenticated.                                                                            |
+| LICENSE_KEY_REQUIRED   | 401 Unauthorized           | An account ID and license key are required to use this service.                                                                       |
+| ACCOUNT_ID_REQUIRED    | 401 Unauthorized           | An account ID and license key are required to use this service.                                                                       |
+| PERMISSION_REQUIRED    | 403 Forbidden              | You do not have permission to use the service. Please contact [support@maxmind.com](mailto:support@maxmind.com) for more information. |
+| (none)                 | 406 Not Acceptable         | Your request included an `Accept-Charset` header that is not supported. `UTF-8` is the only acceptable character set.                 |
+| (none)                 | 415 Unsupported Media Type | Your request included an `Accept` header that is not supported. The web service cannot return content of that type.                   |
+| (none)                 | 503 Service Not Available  | There is a problem with the web service server. You can try this request again later.                                                 |
 
 ### Example response to an unsuccessful request
 
