@@ -55,11 +55,6 @@
   --page-type-color: rgba(0, 255, 102, 0.5);
 }
 
-/* Not sure why .page-type--geolite does not work here */
-[class='page-type--geolite'] {
-  --page-type-color: rgba(255, 255, 0, 0.5);
-}
-
 body {
   color: var(--mm-color-primary-text);
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Ubuntu, sans-serif;

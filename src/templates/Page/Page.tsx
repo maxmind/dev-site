@@ -35,12 +35,8 @@ const Page: React.FC<IPage> = (props) => {
     type = 'minfraud';
   }
 
-  if (location.pathname.startsWith('/geoip2')) {
+  if (location.pathname.startsWith('/geoip')) {
     type = 'geoip';
-  }
-
-  if (location.pathname.startsWith('/geolite2')) {
-    type = 'geolite';
   }
 
   const nextPage = getNextPage(location.pathname);

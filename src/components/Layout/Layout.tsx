@@ -25,7 +25,7 @@ interface ILayout {
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   tableOfContents?: any;
   title: string;
-  type?: 'geoip' | 'geolite' | 'minfraud';
+  type?: 'geoip' | 'minfraud';
 }
 
 const Layout: React.FC<ILayout> = (props) => {
@@ -38,7 +38,6 @@ const Layout: React.FC<ILayout> = (props) => {
 
   const pageTypeClass: string | undefined = [
     'geoip',
-    'geolite',
     'minfraud',
   ].includes(props.type as string)
     ? `page-type--${props.type}`
@@ -104,7 +103,6 @@ Layout.propTypes = {
   title: PropTypes.string.isRequired,
   type: PropTypes.oneOf([
     'geoip',
-    'geolite',
     'minfraud',
   ]),
 };
