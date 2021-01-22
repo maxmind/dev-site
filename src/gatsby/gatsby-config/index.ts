@@ -1,6 +1,7 @@
 import { GatsbyConfig } from 'gatsby';
 import remarkExternalLinks from 'remark-external-links';
 
+import createFeed from './feeds/createFeed';
 import sectionize from './remark/sectionize';
 
 /**
@@ -113,6 +114,34 @@ export default {
       resolve: 'gatsby-plugin-react-svg',
     },
     'gatsby-plugin-remove-trailing-slashes',
+    {
+      options: {
+        feeds: [
+          createFeed({
+            title: 'GeoIP2 Release Notes',
+            url: '/geoip2/release-notes',
+          }),
+          createFeed({
+            title: 'minFraud Release Notes',
+            url: '/minfraud/release-notes',
+          }),
+        ],
+        query: `
+          {
+            site {
+              siteMetadata {
+                title
+                description
+                siteUrl
+                site_url: siteUrl
+              }
+            }
+          }
+        `,
+      },
+      resolve: 'gatsby-plugin-feed',
+    },
+    // 'gatsby-plugin-feed',
     // {
     //   options: {
     //     analyzerPort: 3000,
@@ -125,6 +154,7 @@ export default {
   siteMetadata: {
     author: '@maxmind',
     description: 'Developer website for MaxMind.',
+    siteUrl: 'https://dev.maxmind.com',
     title: 'MaxMind Developer Site',
   },
 } as GatsbyConfig;

@@ -10376,7 +10376,7 @@ hast-util-sanitize@^3.0.0:
   dependencies:
     xtend "^4.0.0"
 
-hast-util-to-html@^7.0.0:
+hast-util-to-html@^7.0.0, hast-util-to-html@^7.1.2:
   version "7.1.2"
   resolved "https://registry.yarnpkg.com/hast-util-to-html/-/hast-util-to-html-7.1.2.tgz#db677f0ee483658cea0eecc9dec30aba42b67111"
   integrity sha512-pu73bvORzdF6XZgwl9eID/0RjBb/jtRfoGRRSykpR1+o9rCdiAHpgkSukZsQBRlIqMg6ylAcd7F0F7myJUb09Q==
@@ -13816,7 +13816,7 @@ mdast-util-to-hast@9.1.0:
     unist-util-position "^3.0.0"
     unist-util-visit "^2.0.0"
 
-mdast-util-to-hast@^10.0.0:
+mdast-util-to-hast@^10.0.0, mdast-util-to-hast@^10.1.1:
   version "10.1.1"
   resolved "https://registry.yarnpkg.com/mdast-util-to-hast/-/mdast-util-to-hast-10.1.1.tgz#4dce367abdc57311a87cf95da54a4d115b9d25da"
   integrity sha512-+hvJrYiUgK2aY0Q1h1LaHQ4h0P7VVumWdAcUuG9k49lYglyU9GtTrA4O8hMh5gRnyT22wC15takM2qrrlpvNxQ==
