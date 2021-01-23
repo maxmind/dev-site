@@ -24,7 +24,7 @@ your MaxMind account ID and license key.
 ### Request URI and parameters
 
 API calls should be made with HTTP GET request to
-`https://minfraud.maxmind.com/minfraud/disposition/v1.0/updates`. 
+`https://minfraud.maxmind.com/minfraud/disposition/v1.0/updates`.
 
 We require a URL parameter called `updates_after` with an RFC 3339 timestamp
 value.  This value is an exclusive lower bound for the updates; only updates
@@ -53,11 +53,11 @@ HTTP response.
 ### Request headers
 
 The `Accept` header for a request is entirely optional.  If you do include one,
-you must accept one of the following: 
+you must accept one of the following:
 
-- `application/json`
-- `application/vnd.maxmind.com-disposition-updates+json`
-- `application/vnd.maxmind.com-disposition-updates+json; charset=UTF-8; version=1.0`
+* `application/json`
+* `application/vnd.maxmind.com-disposition-updates+json`
+* `application/vnd.maxmind.com-disposition-updates+json; charset=UTF-8; version=1.0`
 
 If you set the `Accept-Charset` header in your client code, you must accpe the
 `UTF-8` character set;  If you do not you will receive a `406 Not Acceptable`
@@ -198,18 +198,18 @@ description of the error and may change at any time.
 In addition to the errors documented below, client code should also be prepared
 to handle any valid HTTP 4xx or 5xx status code.
 
-| Code                   | HTTP Status                | Error                                                                                                                                 |
-| ---------------------- | -------------------------- | ------------------------------------------------------------------------------------------------------------------------------------- |
-| UPDATES_AFTER_REQUIRED | 400 Bad Request            | You have not supplied the `updates_after`  URI parameter.                                                                             |
-| TIMESTAMP_INVALID      | 400 Bad Request            | The `updates_after` field must be in RFC 3339 format.                                                                                 |
-| PARAMETER_UNKNOWN      | 400 Bad Request            | You have supplied one or more parameters which are not used by this endpoint.                                                         |
-| AUTHORIZATION_INVALID  | 401 Unauthorized           | Your account ID or license key could not be authenticated.                                                                            |
-| LICENSE_KEY_REQUIRED   | 401 Unauthorized           | An account ID and license key are required to use this service.                                                                       |
-| ACCOUNT_ID_REQUIRED    | 401 Unauthorized           | An account ID and license key are required to use this service.                                                                       |
-| PERMISSION_REQUIRED    | 403 Forbidden              | You do not have permission to use the service. Please contact [support@maxmind.com](mailto:support@maxmind.com) for more information. |
-| (none)                 | 406 Not Acceptable         | Your request included an `Accept-Charset` header that is not supported. `UTF-8` is the only acceptable character set.                 |
-| (none)                 | 415 Unsupported Media Type | Your request included an `Accept` header that is not supported. The web service cannot return content of that type.                   |
-| (none)                 | 503 Service Not Available  | There is a problem with the web service server. You can try this request again later.                                                 |
+| Code                   | HTTP Status                | Error                                                                                                                 |
+| ---------------------- | -------------------------- | --------------------------------------------------------------------------------------------------------------------- |
+| UPDATES_AFTER_REQUIRED | 400 Bad Request            | You have not supplied the `updates_after`  URI parameter.                                                             |
+| TIMESTAMP_INVALID      | 400 Bad Request            | The `updates_after` field must be in RFC 3339 format.                                                                 |
+| PARAMETER_UNKNOWN      | 400 Bad Request            | You have supplied one or more parameters which are not used by this endpoint.                                         |
+| AUTHORIZATION_INVALID  | 401 Unauthorized           | Your account ID or license key could not be authenticated.                                                            |
+| LICENSE_KEY_REQUIRED   | 401 Unauthorized           | An account ID and license key are required to use this service.                                                       |
+| ACCOUNT_ID_REQUIRED    | 401 Unauthorized           | An account ID and license key are required to use this service.                                                       |
+| PERMISSION_REQUIRED    | 403 Forbidden              | You do not have permission to use the service. Please contact [support@maxmind.com](mailto:support@maxmind.com) for more information.             |
+| (none)                 | 406 Not Acceptable         | Your request included an `Accept-Charset` header that is not supported. `UTF-8` is the only acceptable character set. |
+| (none)                 | 415 Unsupported Media Type | Your request included an `Accept` header that is not supported. The web service cannot return content of that type.   |
+| (none)                 | 503 Service Not Available  | There is a problem with the web service server. You can try this request again later.                                 |
 
 ### Example response to an unsuccessful request
 
