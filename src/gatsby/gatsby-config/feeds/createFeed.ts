@@ -63,10 +63,6 @@ export default (feed: IFeed): any => ({
           `#${dateAttribute.value}`,
         ].join('');
 
-        console.log((releaseNote.children as Node[]).map(
-          (child: Node) => toHtml(toHast(child))
-        ).join(''));
-
         return {
           ...node.frontmatter,
           custom_elements: [

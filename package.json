@@ -179,7 +179,9 @@
     "url": "https://github.com/maxmind/dev-site.git"
   },
   "scripts": {
-    "build": "gatsby clean && gatsby build",
+    "build": "run-p build:*",
+    "build:gatsby": "gatsby clean && gatsby build",
+    "build:functions": "cd functions && yarn build",
     "deploy": "firebase deploy",
     "develop": "gatsby clean && gatsby develop",
     "fix": "run-p fix:*",
