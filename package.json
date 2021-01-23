@@ -195,6 +195,7 @@
     "lint:json": "eslint . --ext json",
     "lint:scripts": "eslint . --ext js,ts,tsx",
     "lint:styles": "stylelint ./src/**/*.{css,scss,sass}",
+    "postinstall": "yarn --cwd functions install",
     "preview": "firebase hosting:channel:deploy $(git rev-parse --abbrev-ref HEAD)",
     "serve": "firebase serve",
     "start": "yarn run develop",
