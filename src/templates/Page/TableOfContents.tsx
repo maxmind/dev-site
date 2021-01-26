@@ -37,7 +37,7 @@ const renderItems = (
     {items.map((item, index) => {
       let itemNumber;
       let { title } = item;
-      const regex = new RegExp(/^(\d+)\.\s+([\s|\w]*)$/);
+      const regex = new RegExp(/^(\d+)\.\s+([\s|\w|\W]*)$/);
       const matches = title.match(regex);
 
       if (matches) {
