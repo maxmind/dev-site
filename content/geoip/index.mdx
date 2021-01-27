@@ -1,19 +1,21 @@
 ---
 draft: false
-title: GeoIP2 Databases & Web Services
-subtitle: Industry Leading IP Intelligence
-icon: GeoIP2Icon
+title: GeoIP and GeoLite
+subtitle: Databases and Web Services
+icon: GeoIPIcon
 ---
 
 import {
   FaArchive as LegacyIcon,
-  FaCloud as WebServicesIcon,
-  FaDatabase as DatabasesIcon,
   FaBook as ApiReferenceIcon,
   FaClipboardList as ReleaseNotesIcon,
+  FaCloud as WebServicesIcon,
+  FaDatabase as DatabasesIcon,
+  FaMapMarkerAlt as GeolocateAnIPIcon,
   FaPencilAlt,
   FaQuestionCircle as FaqIcon,
   FaRocket,
+  FaSync as UpdateDatabasesIcon,
 } from 'react-icons/fa';
 
 GeoIP, MaxMind’s IP intelligence product, consists of several related products.
@@ -24,17 +26,17 @@ databases.
 <LinkGroupContainer>
   <LinkGroup heading="Guides">
     <LinkGroupCard
-      description="Use local databases to retrieve geolocation and other information in high-volume, low-latency environments."
-      heading="Databases"
-      icon={DatabasesIcon}
-      to="/geoip2/databases"
+      description="Use MaxMind GeoIP databases, web services, or JavaScript client to geolocate an IP address."
+      heading="Geolocate an IP"
+      icon={GeolocateAnIPIcon}
+      to="/geoip/geolocate-an-ip"
     />
 
     <LinkGroupCard
-      description="Get geolocation and other information associated with an IP address through easy-to-use APIs."
-      heading="Web Services"
-      icon={WebServicesIcon}
-      to="/geoip2/web-services"
+      description="Automatically keep your MaxMind GeoIP database up to date using the GeoIP Update program."
+      heading="Updating Databases"
+      icon={UpdateDatabasesIcon}
+      to="/geoip/updating-databases"
     />
   </LinkGroup>
 </LinkGroupContainer>
@@ -45,28 +47,28 @@ databases.
         description="Detailed documentation of database contents and web service usage."
         heading="API Reference"
         icon={ApiReferenceIcon}
-        to="/geoip2/api-reference"
+        to="/geoip/api-reference"
     />
 
     <LinkGroupCard
       description="Review GeoIP2 release notes to understand changes to the GeoIP2 API."
       heading="Release Notes"
       icon={ReleaseNotesIcon}
-      to="/geoip2/release-notes"
+      to="/geoip/release-notes"
     />
 
     <LinkGroupCard
       description="Review GeoIP2 release notes to understand changes to the GeoIP2 API."
       heading="Frequently Asked Questions"
       icon={FaqIcon}
-      to="/geoip2/release-notes"
+      to="#"
     />
 
     <LinkGroupCard
       description="Get geolocation and other information associated with an IP address through easy-to-use APIs."
       heading="Legacy Documentation"
       icon={LegacyIcon}
-      to="/legacy/geoip"
+      to="/geoip/legacy"
     />
   </LinkGroup>
 </LinkGroupContainer>
