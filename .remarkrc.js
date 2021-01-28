@@ -22,8 +22,8 @@ module.exports = {
       false,
     ],
     [
-      'lint-list-item-spacing',
-      false,
+      'lint-list-item-indent',
+      'space',
     ],
     [
       'lint-first-heading-level',
