@@ -40,7 +40,7 @@ export const feedRewrite = functions.https.onRequest((request, response) => {
   const { post_type: postType, product } = request.query;
 
   if (postType === 'release_note' && product === 'geoip2') {
-    return response.redirect(`${origin}/geoip2/release-notes/rss.xml`);
+    return response.redirect(`${origin}/geoip/release-notes/rss.xml`);
   }
 
   if (postType === 'release_note' && product === 'minfraud') {

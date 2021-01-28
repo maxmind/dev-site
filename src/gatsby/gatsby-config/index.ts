@@ -118,8 +118,8 @@ export default {
       options: {
         feeds: [
           createFeed({
-            title: 'GeoIP2 Release Notes',
-            url: '/geoip2/release-notes',
+            title: 'GeoIP Release Notes',
+            url: '/geoip/release-notes',
           }),
           createFeed({
             title: 'minFraud Release Notes',
