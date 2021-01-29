@@ -47,7 +47,7 @@
     "gatsby-plugin-react-helmet": "^3.8.0",
     "gatsby-plugin-react-svg": "^3.0.0",
     "gatsby-plugin-remove-trailing-slashes": "^2.8.0",
-    "gatsby-plugin-sharp": "^2.12.2",
+    "gatsby-plugin-sharp": "^2.13.4",
     "gatsby-plugin-sri": "^1.1.0",
     "gatsby-plugin-ts-checker": "^1.1.0",
     "gatsby-plugin-typescript": "^2.10.0",
@@ -201,7 +201,8 @@
     "start": "yarn run develop",
     "test": "run-s \"test:* --silent\"",
     "test:a11y": "jest --config .jestrc.a11y.js --no-cache --maxWorkers=4",
-    "test:unit": "jest --config .jestrc.js"
+    "test:unit": "jest --config .jestrc.js",
+    "test:regressions": "jest --config .jestrc.regressions.js"
   },
   "version": "0.1.0"
 }
