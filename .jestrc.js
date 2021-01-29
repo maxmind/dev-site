@@ -17,6 +17,7 @@ module.exports = {
     'node_modules',
     '\\.cache',
     '<rootDir>.*/public',
+    '<rootDir>/test/regressions.spec.ts',
   ],
   testURL: 'http://localhost',
   transform: {

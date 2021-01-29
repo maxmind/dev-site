@@ -1,0 +1,2568 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`regression tests https://dev.maxmind.com/minfraud/ regression test 1`] = `
+"<!DOCTYPE html>
+<html class=\\"no-js\\" lang=\\"en-US\\">
+	<head>
+				<link rel=\\"profile\\" href=\\"http://gmpg.org/xfn/11\\" />
+		<meta charset=\\"UTF-8\\" />
+		<meta name=\\"viewport\\" content=\\"width=device-width, initial-scale=1.0\\" />
+
+		<title>minFraud Score, minFraud Insights, and minFraud Factors API &laquo; MaxMind Developer Site</title>
+
+				<link rel='dns-prefetch' href='//ajax.googleapis.com' />
+<link rel='dns-prefetch' href='//s.w.org' />
+<link rel=\\"alternate\\" type=\\"application/rss+xml\\" title=\\"MaxMind Developer Site &raquo; Feed\\" href=\\"https://dev.maxmind.com/feed/\\" />
+<link rel=\\"alternate\\" type=\\"application/rss+xml\\" title=\\"MaxMind Developer Site &raquo; Comments Feed\\" href=\\"https://dev.maxmind.com/comments/feed/\\" />
+		<script type=\\"text/javascript\\">
+			window._wpemojiSettings = {\\"baseUrl\\":\\"https:\\\\/\\\\/s.w.org\\\\/images\\\\/core\\\\/emoji\\\\/13.0.0\\\\/72x72\\\\/\\",\\"ext\\":\\".png\\",\\"svgUrl\\":\\"https:\\\\/\\\\/s.w.org\\\\/images\\\\/core\\\\/emoji\\\\/13.0.0\\\\/svg\\\\/\\",\\"svgExt\\":\\".svg\\",\\"source\\":{\\"concatemoji\\":\\"https:\\\\/\\\\/dev.maxmind.com\\\\/wp-includes\\\\/js\\\\/wp-emoji-release.min.js?ver=5.5.3\\"}};
+			!function(e,a,t){var r,n,o,i,p=a.createElement(\\"canvas\\"),s=p.getContext&&p.getContext(\\"2d\\");function c(e,t){var a=String.fromCharCode;s.clearRect(0,0,p.width,p.height),s.fillText(a.apply(this,e),0,0);var r=p.toDataURL();return s.clearRect(0,0,p.width,p.height),s.fillText(a.apply(this,t),0,0),r===p.toDataURL()}function l(e){if(!s||!s.fillText)return!1;switch(s.textBaseline=\\"top\\",s.font=\\"600 32px Arial\\",e){case\\"flag\\":return!c([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])&&(!c([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!c([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]));case\\"emoji\\":return!c([55357,56424,8205,55356,57212],[55357,56424,8203,55356,57212])}return!1}function d(e){var t=a.createElement(\\"script\\");t.src=e,t.defer=t.type=\\"text/javascript\\",a.getElementsByTagName(\\"head\\")[0].appendChild(t)}for(i=Array(\\"flag\\",\\"emoji\\"),t.supports={everything:!0,everythingExceptFlag:!0},o=0;o<i.length;o++)t.supports[i[o]]=l(i[o]),t.supports.everything=t.supports.everything&&t.supports[i[o]],\\"flag\\"!==i[o]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[i[o]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener(\\"DOMContentLoaded\\",n,!1),e.addEventListener(\\"load\\",n,!1)):(e.attachEvent(\\"onload\\",n),a.attachEvent(\\"onreadystatechange\\",function(){\\"complete\\"===a.readyState&&t.readyCallback()})),(r=t.source||{}).concatemoji?d(r.concatemoji):r.wpemoji&&r.twemoji&&(d(r.twemoji),d(r.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type=\\"text/css\\">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<link rel='stylesheet' id='jquery-ui-css'  href='//ajax.googleapis.com/ajax/libs/jqueryui/1.8.1/themes/base/jquery-ui.css?ver=5.5.3' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-block-library-css'  href='https://43jvg82rnbo4fbuxm18it39y-wpengine.netdna-ssl.com/wp-includes/css/dist/block-library/style.min.css?ver=5.5.3' type='text/css' media='all' />
+<link rel='stylesheet' id='page-list-style-css'  href='https://43jvg82rnbo4fbuxm18it39y-wpengine.netdna-ssl.com/wp-content/plugins/page-list/css/page-list.css?ver=5.2' type='text/css' media='all' />
+<link rel='stylesheet' id='widgetopts-styles-css'  href='https://43jvg82rnbo4fbuxm18it39y-wpengine.netdna-ssl.com/wp-content/plugins/widget-options/assets/css/widget-options.css' type='text/css' media='all' />
+<link rel='stylesheet' id='maxmind-bootstrap-css'  href='https://43jvg82rnbo4fbuxm18it39y-wpengine.netdna-ssl.com/wp-content/themes/dev-site-theme/css/maxmind.css?ver=2.0.9' type='text/css' media='all' />
+<link rel='stylesheet' id='prism-css'  href='https://43jvg82rnbo4fbuxm18it39y-wpengine.netdna-ssl.com/wp-content/themes/dev-site-theme/css/prism.css?ver=1.0.3' type='text/css' media='all' />
+<link rel='stylesheet' id='the-bootstrap-css'  href='https://43jvg82rnbo4fbuxm18it39y-wpengine.netdna-ssl.com/wp-content/themes/dev-site-theme/style.min.css?ver=2.0.1' type='text/css' media='all' />
+<link rel=\\"https://api.w.org/\\" href=\\"https://dev.maxmind.com/wp-json/\\" /><link rel=\\"alternate\\" type=\\"application/json\\" href=\\"https://dev.maxmind.com/wp-json/wp/v2/pages/1604\\" /><link rel=\\"EditURI\\" type=\\"application/rsd+xml\\" title=\\"RSD\\" href=\\"https://dev.maxmind.com/xmlrpc.php?rsd\\" />
+<link rel=\\"wlwmanifest\\" type=\\"application/wlwmanifest+xml\\" href=\\"https://dev.maxmind.com/wp-includes/wlwmanifest.xml\\" /> 
+<link rel=\\"canonical\\" href=\\"https://dev.maxmind.com/minfraud/\\" />
+<link rel='shortlink' href='https://dev.maxmind.com/?p=1604' />
+<link rel=\\"alternate\\" type=\\"application/json+oembed\\" href=\\"https://dev.maxmind.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fdev.maxmind.com%2Fminfraud%2F\\" />
+<link rel=\\"alternate\\" type=\\"text/xml+oembed\\" href=\\"https://dev.maxmind.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fdev.maxmind.com%2Fminfraud%2F&#038;format=xml\\" />
+  <!--[if lt IE 9]>
+    <script src=\\"https://43jvg82rnbo4fbuxm18it39y-wpengine.netdna-ssl.com/wp-content/themes/dev-site-theme/js/html5shiv.min.js\\" type=\\"text/javascript\\"></script>
+    <script src=\\"https://43jvg82rnbo4fbuxm18it39y-wpengine.netdna-ssl.com/wp-content/themes/dev-site-theme/js/respond.min.js\\" type=\\"text/javascript\\"></script>
+  <![endif]-->
+  		<style type=\\"text/css\\" id=\\"wp-custom-css\\">
+			/*
+You can add your own CSS here.
+
+Click the help icon above to learn more.
+*/
+
+.widgets_on_page ul {
+  list-style: none;
+}		</style>
+		
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src=\\"https://www.googletagmanager.com/gtag/js?id=UA-171943-3\\"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+
+			gtag('config', 'UA-171943-3');
+		</script>
+	</head>
+
+	<body class=\\"page-template-default page page-id-1604 page-parent line-numbers content-sidebar\\">
+						<div class=\\"container-fluid\\" style=\\"max-width: 1200px\\">
+			<div class=\\"row-fluid\\">
+				<div class=\\"span3\\">
+										<a id=\\"header-image\\" href=\\"https://www.maxmind.com/en/home\\" title=\\"MaxMind Developer Site\\" rel=\\"external\\">
+						<img src=\\"https://43jvg82rnbo4fbuxm18it39y-wpengine.netdna-ssl.com/wp-content/uploads/2016/10/maxmind-logo.gif\\" alt=\\"\\" />
+					</a>
+									</div>
+								<!-- XXX - inline style -->
+				<header id=\\"branding\\" role=\\"banner\\" class=\\"span9\\">
+					<nav class=\\"menu-nav-container\\"><ul id=\\"menu-nav\\" class=\\"nav nav-tabs\\"><li id=\\"menu-item-22\\" class=\\"menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-22\\"><a href=\\"https://dev.maxmind.com/\\">Dev Home</a></li>
+<li id=\\"menu-item-2185\\" class=\\"menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-1604 current_page_item menu-item-has-children menu-item-2185 active\\"><a href=\\"https://dev.maxmind.com/minfraud/\\">minFraud</a></li>
+<li id=\\"menu-item-26\\" class=\\"menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-26\\"><a href=\\"https://dev.maxmind.com/geoip/\\">GeoIP</a></li>
+<li id=\\"menu-item-19\\" class=\\"menu-item menu-item-type-custom menu-item-object-custom menu-item-19\\"><a href=\\"https://www.maxmind.com/\\">Main Site</a></li>
+<li id=\\"menu-item-521\\" class=\\"menu-item menu-item-type-post_type menu-item-object-page menu-item-521\\"><a href=\\"https://dev.maxmind.com/site-map/\\">Site Map</a></li>
+</ul></nav>									</header>
+			</div>
+			<div class=\\"row-fluid\\">
+	<div class=\\"span3\\">
+		<section id=\\"secondary\\" class=\\"widget-area\\">
+	<aside id=\\"search-2\\" class=\\"widget clearfix widget_search\\"><h4 class=\\"widget-title\\">Search</h4>
+<form method=\\"get\\" id=\\"site-search\\"  action=\\"https://dev.maxmind.com/\\">
+	<label for=\\"s\\" class=\\"assistive-text hidden\\">Search</label>
+	<div class=\\"input-append\\">
+		<input id=\\"s\\" class=\\"input-medium\\" type=\\"search\\" name=\\"s\\" placeholder=\\"Search\\">
+		<button class=\\"btn btn-primary\\" name=\\"submit\\" type=\\"submit\\"><i class=\\"icon-search icon-white\\"></i></button>
+	</div>
+</form>
+</aside><aside id=\\"ezw_tco-2\\" class=\\"widget clearfix ez-toc\\"><div class=\\"ez-toc-widget-container ez-toc-v2_0_15 ez-toc-widget counter-hierarchy\\">
+
+					<h4 class=\\"widget-title\\">
+					<span class=\\"ez-toc-title-container\\">
+
+						<style type=\\"text/css\\">
+							#ezw_tco-2 .ez-toc-widget-container ul.ez-toc-list li.active::before {
+								background-color: #ededed;
+							}
+						</style>
+
+						<span class=\\"ez-toc-title\\">Table of Contents</span>
+
+						<span class=\\"ez-toc-title-toggle\\">
+
+							
+						</span>
+
+					</span>
+
+					</h4>
+					<nav>
+<ul class=\\"ez-toc-list ez-toc-list-level-1\\"><li class=\\"ez-toc-page-1 ez-toc-heading-level-2\\"><a class=\\"ez-toc-link ez-toc-heading-1\\" href=\\"#Product_Information\\" title=\\"Product Information\\">Product Information</a></li><li class=\\"ez-toc-page-1 ez-toc-heading-level-2\\"><a class=\\"ez-toc-link ez-toc-heading-2\\" href=\\"#Release_Notes\\" title=\\"Release Notes\\">Release Notes</a></li><li class=\\"ez-toc-page-1 ez-toc-heading-level-2\\"><a class=\\"ez-toc-link ez-toc-heading-3\\" href=\\"#Client_APIs\\" title=\\"Client APIs\\">Client APIs</a><ul class=\\"ez-toc-list-level-3\\"><li class=\\"ez-toc-heading-level-3\\"><a class=\\"ez-toc-link ez-toc-heading-4\\" href=\\"#MaxMind_APIs\\" title=\\"MaxMind APIs\\">MaxMind APIs</a></li></ul></li><li class=\\"ez-toc-page-1 ez-toc-heading-level-2\\"><a class=\\"ez-toc-link ez-toc-heading-5\\" href=\\"#Additional_Features\\" title=\\"Additional Features\\">Additional Features</a><ul class=\\"ez-toc-list-level-3\\"><li class=\\"ez-toc-heading-level-3\\"><a class=\\"ez-toc-link ez-toc-heading-6\\" href=\\"#Disposition_API\\" title=\\"Disposition API\\">Disposition API</a></li><li class=\\"ez-toc-page-1 ez-toc-heading-level-3\\"><a class=\\"ez-toc-link ez-toc-heading-7\\" href=\\"#Report_Transactions\\" title=\\"Report Transactions\\">Report Transactions</a></li><li class=\\"ez-toc-page-1 ez-toc-heading-level-3\\"><a class=\\"ez-toc-link ez-toc-heading-8\\" href=\\"#Device_Tracking_Add-on\\" title=\\"Device Tracking Add-on\\">Device Tracking Add-on</a></li></ul></li><li class=\\"ez-toc-page-1 ez-toc-heading-level-2\\"><a class=\\"ez-toc-link ez-toc-heading-9\\" href=\\"#Per-Service_URIs\\" title=\\"Per-Service URIs\\">Per-Service URIs</a></li><li class=\\"ez-toc-page-1 ez-toc-heading-level-2\\"><a class=\\"ez-toc-link ez-toc-heading-10\\" href=\\"#Request_Headers\\" title=\\"Request Headers\\">Request Headers</a><ul class=\\"ez-toc-list-level-3\\"><li class=\\"ez-toc-heading-level-3\\"><a class=\\"ez-toc-link ez-toc-heading-11\\" href=\\"#AuthorizationSecurity\\" title=\\"Authorization/Security\\">Authorization/Security</a></li></ul></li><li class=\\"ez-toc-page-1 ez-toc-heading-level-2\\"><a class=\\"ez-toc-link ez-toc-heading-12\\" href=\\"#Request_Body\\" title=\\"Request Body\\">Request Body</a></li><li class=\\"ez-toc-page-1 ez-toc-heading-level-2\\"><a class=\\"ez-toc-link ez-toc-heading-13\\" href=\\"#Example_Request\\" title=\\"Example Request\\">Example Request</a><ul class=\\"ez-toc-list-level-3\\"><li class=\\"ez-toc-heading-level-3\\"><a class=\\"ez-toc-link ez-toc-heading-14\\" href=\\"#Top-Level_Request_Fields\\" title=\\"Top-Level Request Fields (/)\\">Top-Level Request Fields (/)</a><ul class=\\"ez-toc-list-level-4\\"><li class=\\"ez-toc-heading-level-4\\"><a class=\\"ez-toc-link ez-toc-heading-15\\" href=\\"#Device_device\\" title=\\"Device (/device)\\">Device (/device)</a></li><li class=\\"ez-toc-page-1 ez-toc-heading-level-4\\"><a class=\\"ez-toc-link ez-toc-heading-16\\" href=\\"#Event_event\\" title=\\"Event (/event)\\">Event (/event)</a></li><li class=\\"ez-toc-page-1 ez-toc-heading-level-4\\"><a class=\\"ez-toc-link ez-toc-heading-17\\" href=\\"#Account_account\\" title=\\"Account (/account)\\">Account (/account)</a></li><li class=\\"ez-toc-page-1 ez-toc-heading-level-4\\"><a class=\\"ez-toc-link ez-toc-heading-18\\" href=\\"#Email_email\\" title=\\"Email (/email)\\">Email (/email)</a></li><li class=\\"ez-toc-page-1 ez-toc-heading-level-4\\"><a class=\\"ez-toc-link ez-toc-heading-19\\" href=\\"#Billing_billing\\" title=\\"Billing (/billing)\\">Billing (/billing)</a></li><li class=\\"ez-toc-page-1 ez-toc-heading-level-4\\"><a class=\\"ez-toc-link ez-toc-heading-20\\" href=\\"#Shipping_shipping\\" title=\\"Shipping (/shipping)\\">Shipping (/shipping)</a></li><li class=\\"ez-toc-page-1 ez-toc-heading-level-4\\"><a class=\\"ez-toc-link ez-toc-heading-21\\" href=\\"#Payment_payment\\" title=\\"Payment (/payment)\\">Payment (/payment)</a></li><li class=\\"ez-toc-page-1 ez-toc-heading-level-4\\"><a class=\\"ez-toc-link ez-toc-heading-22\\" href=\\"#Credit_Card_credit_card\\" title=\\"Credit Card (/credit_card)\\">Credit Card (/credit_card)</a></li><li class=\\"ez-toc-page-1 ez-toc-heading-level-4\\"><a class=\\"ez-toc-link ez-toc-heading-23\\" href=\\"#Order_order\\" title=\\"Order (/order)\\">Order (/order)</a></li><li class=\\"ez-toc-page-1 ez-toc-heading-level-4\\"><a class=\\"ez-toc-link ez-toc-heading-24\\" href=\\"#Shopping_Cart_shopping_cart\\" title=\\"Shopping Cart (/shopping_cart)\\">Shopping Cart (/shopping_cart)</a><ul class=\\"ez-toc-list-level-5\\"><li class=\\"ez-toc-heading-level-5\\"><a class=\\"ez-toc-link ez-toc-heading-25\\" href=\\"#Shopping_Cart_Item\\" title=\\"Shopping Cart Item\\">Shopping Cart Item</a></li></ul></li><li class=\\"ez-toc-page-1 ez-toc-heading-level-4\\"><a class=\\"ez-toc-link ez-toc-heading-26\\" href=\\"#Custom_Inputs_custom_inputs\\" title=\\"Custom Inputs (/custom_inputs)\\">Custom Inputs (/custom_inputs)</a></li></ul></li></ul></li><li class=\\"ez-toc-page-1 ez-toc-heading-level-2\\"><a class=\\"ez-toc-link ez-toc-heading-27\\" href=\\"#Response_Headers\\" title=\\"Response Headers\\">Response Headers</a></li><li class=\\"ez-toc-page-1 ez-toc-heading-level-2\\"><a class=\\"ez-toc-link ez-toc-heading-28\\" href=\\"#Response_Body\\" title=\\"Response Body\\">Response Body</a><ul class=\\"ez-toc-list-level-3\\"><li class=\\"ez-toc-heading-level-3\\"><a class=\\"ez-toc-link ez-toc-heading-29\\" href=\\"#Top-Level_Fields\\" title=\\"Top-Level Fields (/)\\">Top-Level Fields (/)</a></li><li class=\\"ez-toc-page-1 ez-toc-heading-level-3\\"><a class=\\"ez-toc-link ez-toc-heading-30\\" href=\\"#IP_Address_ip_address\\" title=\\"IP Address (/ip_address)\\">IP Address (/ip_address)</a><ul class=\\"ez-toc-list-level-4\\"><li class=\\"ez-toc-heading-level-4\\"><a class=\\"ez-toc-link ez-toc-heading-31\\" href=\\"#Country_ip_addresscountry\\" title=\\"Country (/ip_address/country)\\">Country (/ip_address/country)</a></li><li class=\\"ez-toc-page-1 ez-toc-heading-level-4\\"><a class=\\"ez-toc-link ez-toc-heading-32\\" href=\\"#Location_ip_addresslocation\\" title=\\"Location (/ip_address/location)\\">Location (/ip_address/location)</a></li></ul></li><li class=\\"ez-toc-page-1 ez-toc-heading-level-3\\"><a class=\\"ez-toc-link ez-toc-heading-33\\" href=\\"#Credit_Card_credit_card-2\\" title=\\"Credit Card (/credit_card)\\">Credit Card (/credit_card)</a><ul class=\\"ez-toc-list-level-4\\"><li class=\\"ez-toc-heading-level-4\\"><a class=\\"ez-toc-link ez-toc-heading-34\\" href=\\"#Credit_Card_Issuer_credit_cardissuer\\" title=\\"Credit Card Issuer (/credit_card/issuer)\\">Credit Card Issuer (/credit_card/issuer)</a></li></ul></li><li class=\\"ez-toc-page-1 ez-toc-heading-level-3\\"><a class=\\"ez-toc-link ez-toc-heading-35\\" href=\\"#Device_device-2\\" title=\\"Device (/device)\\">Device (/device)</a></li><li class=\\"ez-toc-page-1 ez-toc-heading-level-3\\"><a class=\\"ez-toc-link ez-toc-heading-36\\" href=\\"#Email_email-2\\" title=\\"Email (/email)\\">Email (/email)</a><ul class=\\"ez-toc-list-level-4\\"><li class=\\"ez-toc-heading-level-4\\"><a class=\\"ez-toc-link ez-toc-heading-37\\" href=\\"#Email_Domain_emaildomain\\" title=\\"Email Domain (/email/domain)\\">Email Domain (/email/domain)</a></li></ul></li><li class=\\"ez-toc-page-1 ez-toc-heading-level-3\\"><a class=\\"ez-toc-link ez-toc-heading-38\\" href=\\"#Shipping_Address_shipping_address\\" title=\\"Shipping Address (/shipping_address)\\">Shipping Address (/shipping_address)</a></li><li class=\\"ez-toc-page-1 ez-toc-heading-level-3\\"><a class=\\"ez-toc-link ez-toc-heading-39\\" href=\\"#Billing_Address_billing_address\\" title=\\"Billing Address (/billing_address)\\">Billing Address (/billing_address)</a></li><li class=\\"ez-toc-page-1 ez-toc-heading-level-3\\"><a class=\\"ez-toc-link ez-toc-heading-40\\" href=\\"#Disposition_disposition\\" title=\\"Disposition (/disposition)\\">Disposition (/disposition)</a></li><li class=\\"ez-toc-page-1 ez-toc-heading-level-3\\"><a class=\\"ez-toc-link ez-toc-heading-41\\" href=\\"#Subscores_subscores\\" title=\\"Subscores (/subscores)\\">Subscores (/subscores)</a></li><li class=\\"ez-toc-page-1 ez-toc-heading-level-3\\"><a class=\\"ez-toc-link ez-toc-heading-42\\" href=\\"#Warning\\" title=\\"Warning\\">Warning</a></li></ul></li><li class=\\"ez-toc-page-1 ez-toc-heading-level-2\\"><a class=\\"ez-toc-link ez-toc-heading-43\\" href=\\"#Response_Body_Examples\\" title=\\"Response Body Examples\\">Response Body Examples</a></li><li class=\\"ez-toc-page-1 ez-toc-heading-level-2\\"><a class=\\"ez-toc-link ez-toc-heading-44\\" href=\\"#Errors\\" title=\\"Errors\\">Errors</a></li><li class=\\"ez-toc-page-1 ez-toc-heading-level-2\\"><a class=\\"ez-toc-link ez-toc-heading-45\\" href=\\"#Release_Notes-2\\" title=\\"Release Notes\\">Release Notes</a></li><li class=\\"ez-toc-page-1 ez-toc-heading-level-2\\"><a class=\\"ez-toc-link ez-toc-heading-46\\" href=\\"#Versioning\\" title=\\"Versioning\\">Versioning</a></li><li class=\\"ez-toc-page-1 ez-toc-heading-level-2\\"><a class=\\"ez-toc-link ez-toc-heading-47\\" href=\\"#License\\" title=\\"License\\">License</a></li></ul></nav>
+</div>
+</aside><aside id=\\"nav_menu-2\\" class=\\"widget clearfix widget_nav_menu\\"><h4 class=\\"widget-title\\">Links</h4><div class=\\"menu-left-hand-menu-container\\"><ul id=\\"menu-left-hand-menu\\" class=\\"menu\\"><li id=\\"menu-item-1405\\" class=\\"menu-item menu-item-type-custom menu-item-object-custom menu-item-1405\\"><a href=\\"https://status.maxmind.com/\\">System Status</a></li>
+</ul></div></aside><aside id=\\"text-2\\" class=\\"widget clearfix widget_text\\">			<div class=\\"textwidget\\"><!-- begin olark code -->
+<script data-cfasync=\\"false\\" type='text/javascript'>/*<![CDATA[*/window.olark||(function(c){var f=window,d=document,l=f.location.protocol==\\"https:\\"?\\"https:\\":\\"http:\\",z=c.name,r=\\"load\\";var nt=function(){
+f[z]=function(){
+(a.s=a.s||[]).push(arguments)};var a=f[z]._={
+},q=c.methods.length;while(q--){(function(n){f[z][n]=function(){
+f[z](\\"call\\",n,arguments)}})(c.methods[q])}a.l=c.loader;a.i=nt;a.p={
+0:+new Date};a.P=function(u){
+a.p[u]=new Date-a.p[0]};function s(){
+a.P(r);f[z](r)}f.addEventListener?f.addEventListener(r,s,false):f.attachEvent(\\"on\\"+r,s);var ld=function(){function p(hd){
+hd=\\"head\\";return[\\"<\\",hd,\\"></\\",hd,\\"><\\",i,' onl' + 'oad=\\"var d=',g,\\";d.getElementsByTagName('head')[0].\\",j,\\"(d.\\",h,\\"('script')).\\",k,\\"='\\",l,\\"//\\",a.l,\\"'\\",'\\"',\\"></\\",i,\\">\\"].join(\\"\\")}var i=\\"body\\",m=d[i];if(!m){
+return setTimeout(ld,100)}a.P(1);var j=\\"appendChild\\",h=\\"createElement\\",k=\\"src\\",n=d[h](\\"div\\"),v=n[j](d[h](z)),b=d[h](\\"iframe\\"),g=\\"document\\",e=\\"domain\\",o;n.style.display=\\"none\\";m.insertBefore(n,m.firstChild).id=z;b.frameBorder=\\"0\\";b.id=z+\\"-loader\\";if(/MSIE[ ]+6/.test(navigator.userAgent)){
+b.src=\\"javascript:false\\"}b.allowTransparency=\\"true\\";v[j](b);try{
+b.contentWindow[g].open()}catch(w){
+c[e]=d[e];o=\\"javascript:var d=\\"+g+\\".open();d.domain='\\"+d.domain+\\"';\\";b[k]=o+\\"void(0);\\"}try{
+var t=b.contentWindow[g];t.write(p());t.close()}catch(x){
+b[k]=o+'d.write(\\"'+p().replace(/\\"/g,String.fromCharCode(92)+'\\"')+'\\");d.close();'}a.P(2)};ld()};nt()})({
+loader: \\"static.olark.com/jsclient/loader0.js\\",name:\\"olark\\",methods:[\\"configure\\",\\"extend\\",\\"declare\\",\\"identify\\"]});
+/* custom configuration goes here (www.olark.com/documentation) */
+olark.identify('8022-431-10-3383');/*]]>*/</script><noscript><a href=\\"https://www.olark.com/site/8022-431-10-3383/contact\\" title=\\"Contact us\\" target=\\"_blank\\" rel=\\"noopener noreferrer\\">Questions? Feedback?</a> powered by <a href=\\"http://www.olark.com?welcome\\" title=\\"Olark live chat software\\">Olark live chat software</a></noscript>
+<!-- end olark code --></div>
+		</aside></section><!-- #secondary .widget-area -->
+	</div>
+	<div id=\\"primary\\" class=\\"span9\\">
+				<div id=\\"content\\" role=\\"main\\">
+			<article id=\\"post-1604\\" class=\\"post-1604 page type-page status-publish hentry\\">
+	
+	<h1 class=\\"entry-title\\">minFraud Score, minFraud Insights, and minFraud Factors API</h1>
+	<div class=\\"entry-content clearfix\\">
+		<p>If you are a <a href=\\"https://dev.maxmind.com/minfraud/minfraud-legacy/\\">minFraud Legacy</a> customer, please see our <a href=\\"https://dev.maxmind.com/minfraud/whats-new-in-minfraud-score-and-minfraud-insights/\\">&#8220;What&#8217;s New in minFraud Score, minFraud Insights, and minFraud Factors&#8221;</a> document for a summary of the changes.</p>
+
+<h2><span class=\\"ez-toc-section\\" id=\\"Product_Information\\"></span>Product Information<span class=\\"ez-toc-section-end\\"></span></h2>
+<p>To learn more about the minFraud services and to purchase credits, please <a href=\\"https://www.maxmind.com/en/solutions/minfraud-services\\" rel=\\"noopener noreferrer\\" target=\\"_blank\\">visit the minFraud Overview page</a>. If you are interested in minFraud Factors, please contact our <a href=\\"https://www.maxmind.com/en/solutions/geoip2-enterprise-product-suite#signUp\\" rel=\\"noopener noreferrer\\" target=\\"_blank\\">Enterprise Business team</a> for assistance. To better understand the differences between each minFraud service, <a href=\\"https://www.maxmind.com/en/solutions/minfraud-services\\" rel=\\"noopener noreferrer\\" target=\\"_blank\\">review our minFraud Service Comparison page</a> and the <a href=\\"https://dev.maxmind.com/minfraud/#Response_Body\\" rel=\\"noopener noreferrer\\" target=\\"_blank\\">Response Body section</a> below.</p>
+
+<h2><span class=\\"ez-toc-section\\" id=\\"Release_Notes\\"></span>Release Notes<span class=\\"ez-toc-section-end\\"></span></h2>
+<p>Changes to the minFraud web services are documented in our <a href=\\"https://dev.maxmind.com/minfraud/release-notes/\\">release notes</a>.</p>
+
+<h2><span class=\\"ez-toc-section\\" id=\\"Client_APIs\\"></span>Client APIs<span class=\\"ez-toc-section-end\\"></span></h2>
+<h3><span class=\\"ez-toc-section\\" id=\\"MaxMind_APIs\\"></span>MaxMind APIs<span class=\\"ez-toc-section-end\\"></span></h3>
+<p>If you are using one of the languages listed in the table below, we strongly encourage you to use the officially supported library. There will be no need to interface with the REST API directly.</p>
+<table class=\\"table table-bordered table-striped\\">
+  <thead>
+    <tr>
+      <th>Language or Framework</th>
+      <th>Package Repository</th>
+      <th>Documentation</th>
+      <th>Version Control</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>.NET (C#)</td>
+      <td><a href=\\"https://www.nuget.org/packages/MaxMind.MinFraud\\">NuGet</a></td>
+      <td><a href=\\"https://maxmind.github.io/minfraud-api-dotnet\\">GitHub Pages</a></td>
+      <td><a href=\\"https://github.com/maxmind/minfraud-api-dotnet\\">GitHub</a></td>
+    </tr>
+    <tr>
+      <td>Java</td>
+      <td><a href=\\"https://search.maven.org/#search%7Cga%7C1%7Cg%3A%22com.maxmind.minfraud%22\\">Maven Central</a></td>
+      <td><a href=\\"https://maxmind.github.io/minfraud-api-java\\">GitHub Pages</a></td>
+      <td><a href=\\"https://github.com/maxmind/minfraud-api-java\\">GitHub</a></td>
+    </tr>
+    <tr>
+      <td>Node.js</td>
+      <td><a href=\\"https://npmjs.com/package/@maxmind/minfraud-api-node\\">NPM</a></td>
+      <td><a href=\\"https://maxmind.github.io/minfraud-api-node/\\">GitHub Pages</a></td>
+      <td><a href=\\"https://github.com/maxmind/minfraud-api-node\\">GitHub</a></td>
+    </tr>
+    <tr>
+      <td>Perl <em>(deprecated)</em></td>
+      <td><a href=\\"https://metacpan.org/release/WebService-MinFraud\\">metacpan</a></td>
+      <td><a href=\\"https://metacpan.org/pod/WebService::MinFraud\\">metacpan</a></td>
+      <td><a href=\\"https://github.com/maxmind/minfraud-api-perl\\">GitHub</a></td>
+    </tr>
+    <tr>
+      <td>PHP</td>
+      <td><a href=\\"https://packagist.org/packages/maxmind/minfraud\\">Packagist</a></td>
+      <td><a href=\\"https://maxmind.github.io/minfraud-api-php\\">GitHub Pages</a></td>
+      <td><a href=\\"https://github.com/maxmind/minfraud-api-php\\">GitHub</a></td>
+    </tr>
+    <tr>
+      <td>Python</td>
+      <td><a href=\\"https://pypi.python.org/pypi/minfraud\\">PyPI</a></td>
+      <td><a href=\\"https://minfraud.readthedocs.io/en/latest/\\">Read the Docs</a></td>
+      <td><a href=\\"https://github.com/maxmind/minfraud-api-python\\">GitHub</a></td>
+    </tr>
+    <tr>
+      <td>Ruby</td>
+      <td><a href=\\"https://rubygems.org/gems/minfraud\\">RubyGems.org</a></td>
+      <td><a href=\\"https://www.rubydoc.info/gems/minfraud/\\">RubyDoc.info</a></td>
+      <td><a href=\\"https://github.com/maxmind/minfraud-api-ruby\\">GitHub</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<h2><span class=\\"ez-toc-section\\" id=\\"Additional_Features\\"></span>Additional Features<span class=\\"ez-toc-section-end\\"></span></h2>
+
+<h3><span class=\\"ez-toc-section\\" id=\\"Disposition_API\\"></span>Disposition API<span class=\\"ez-toc-section-end\\"></span></h3>
+
+<p>
+We provide a <a href=\\"https://dev.maxmind.com/minfraud/dispositions-api/\\">Dispositions API</a> for use with Disposition setting from the Transaction Details page. Use this API to integrate with your order management system, payment processor, or other internal system so that manual review decisions made from the Transaction Details page are available within your own systems.
+For more information about setting dispositions from the Transaction Details page, please refer to the <a href=\\"https://support.maxmind.com/minfraud-interactive-manual-review-guide/\\">minFraud Interactive reference guide</a>.
+</p>
+
+<h3><span class=\\"ez-toc-section\\" id=\\"Report_Transactions\\"></span><a name=\\"Chargeback_Reporting-0\\"></a>Report Transactions<span class=\\"ez-toc-section-end\\"></span></h3>
+<p>If you are using our minFraud transaction fraud detection service, we also encourage you to use our <a href=\\"https://dev.maxmind.com/minfraud/report-transaction/\\">report transaction service</a>. By reporting transactions, you can help us significantly increase the amount of fraud we can detect for you. We build custom machine learning models for each customer based on reported transactions. We also manually review many reported transactions to identify customizations and algorithmic improvements for each customer reporting feedback.</p>
+
+<h3><span class=\\"ez-toc-section\\" id=\\"Device_Tracking_Add-on\\"></span><a name=\\"Device_Tracking_Add-on-2\\"></a>Device Tracking Add-on<span class=\\"ez-toc-section-end\\"></span></h3>
+<p>You may optionally include <a href=\\"https://dev.maxmind.com/minfraud/device/\\">some JavaScript</a> on your site that helps us identify the device your customer is using to determine whether it has been used in previous fraudulent transactions. The device information is factored into the scores returned through the minFraud service.</p>
+
+<h2><span class=\\"ez-toc-section\\" id=\\"Per-Service_URIs\\"></span>Per-Service URIs<span class=\\"ez-toc-section-end\\"></span></h2>
+<p>The URI for each service is as specified below. All API calls should be made with <strong>HTTP POST</strong> using the request format specified below.</p>
+<p><strong>Please note that the free minFraud service trial provides access to the minFraud Score and minFraud Insights services only.</strong></p>
+<p>To learn more about gaining access to the minFraud Factors service, please click <a href=\\"https://www.maxmind.com/en/solutions/minfraud-services/minfraud-factors\\">here</a>.</p>
+<table class=\\"table table-bordered table-striped\\">
+  <thead>
+    <tr>
+      <th>Service</th>
+      <th>URI</th>
+      <th>Content-Type</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Score</td>
+      <td>https://minfraud.maxmind.com/minfraud/v2.0/score</td>
+      <td>application/vnd.maxmind.com-minfraud-score+json; charset=UTF-8; version=2.0</td>
+    </tr>
+    <tr>
+      <td>Insights</td>
+      <td>https://minfraud.maxmind.com/minfraud/v2.0/insights</td>
+      <td>application/vnd.maxmind.com-minfraud-insights+json; charset=UTF-8; version=2.0</td>
+    </tr>
+    <tr>
+      <td>Factors</td>
+      <td>https://minfraud.maxmind.com/minfraud/v2.0/factors</td>
+      <td>application/vnd.maxmind.com-minfraud-factors+json; charset=UTF-8; version=2.0</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>The <strong class=\\"no-wrap\\">minfraud.maxmind.com</strong> hostname automatically picks the data center geographically closest to you.</p>
+
+<h2><span class=\\"ez-toc-section\\" id=\\"Request_Headers\\"></span>Request Headers<span class=\\"ez-toc-section-end\\"></span></h2>
+<p>The <code>Accept</code> header for a request is entirely optional. If you do include one, you must accept one of the following:</p>
+<ul>
+  <li><code>application/json</code></li>
+  <li><code>application/vnd.maxmind.com-minfraud-score+json</code></li>
+  <li><code>application/vnd.maxmind.com-minfraud-score+json; charset=UTF-8; version=2.0</code></li>
+</ul>
+<p>Substitute the appropriate service&#8217;s type for &#8220;score&#8221;. A request for any other MIME type will result in a <code>415 Unsupported Media Type</code> error.</p>
+<p>If you set the <code>Accept-Charset</code> header in your client code, you must accept the <code>UTF-8</code> character set. If you don&#8217;t you will receive a <code>406 Not Acceptable</code> response, because this data is only available in UTF-8.</p>
+<h3><span class=\\"ez-toc-section\\" id=\\"AuthorizationSecurity\\"></span>Authorization/Security<span class=\\"ez-toc-section-end\\"></span></h3>
+<p>The HTTP Authorization header is required for authorization. The username is your <a href=\\"https://www.maxmind.com/en/accounts/current/license-key\\">MaxMind account ID</a>. The password is your <a href=\\"https://www.maxmind.com/en/accounts/current/license-key\\">MaxMind license key</a>. You must be approved for a trial or purchase credit for use with our web services in order to receive an account ID and license key.</p>
+<p>We use <a href=\\"https://en.wikipedia.org/wiki/Basic_access_authentication\\">basic HTTP authentication</a>. The APIs which require authentication are only available via HTTPS. The credentials are never transmitted unencrypted. If you attempt to access this service via HTTP, you will receive a <code>403 Forbidden</code> HTTP response.<p>
+<p>We require TLS 1.2 or greater for all requests to our servers to keep your data secure.</p>
+<h2><span class=\\"ez-toc-section\\" id=\\"Request_Body\\"></span>Request Body<span class=\\"ez-toc-section-end\\"></span></h2>
+<p>Currently minFraud Score, minFraud Insights, and minFraud Factors use the same request document format. The request consists of a JSON object with one or more of the fields shown below. Each key in the top-level object maps to an object or array as described below. New fields that apply to one or both may be added in the future.</p>
+<p>String fields are limited to no more than 255 valid Unicode characters unless a shorter length is specified; the null and newline characters are forbidden. Of course, many fields also have additional constraints that limit the length. For example, the <code>ip_address</code> field cannot be longer than the longest valid representation of an IPv6 address. Unless it must match a specific format, it is valid for a string field to be empty.</p>
+<p>Boolean fields must be provided as JSON <code>true</code> or <code>false</code>.</p>
+<p>Unless otherwise specified, if the value meets the requirements for the field, then it will not be modified. Beyond field specific exceptions, an exception to this is if the value is provided as a type different from what we require. In such cases we convert it to the required type if possible. For example, if you provide a string field as a number, then it will be converted to a string, and vice versa. This conversion happens only between numbers and strings.</p>
+<p>The entire request body is limited to 20,000 bytes. Requests larger than this size will be rejected.</p>
+<h2><span class=\\"ez-toc-section\\" id=\\"Example_Request\\"></span>Example Request<span class=\\"ez-toc-section-end\\"></span></h2>
+<pre><code class=\\"language-json\\">{
+  \\"device\\": {
+    \\"ip_address\\": \\"2001:db8::ff00:42:8329\\",
+    \\"user_agent\\": \\"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.89 Safari/537.36\\",
+    \\"accept_language\\": \\"en-US,en;q=0.8\\",
+    \\"session_age\\": 3600.5,
+    \\"session_id\\": \\"c2ffa1b7-f5c5-4702-beb2-4254794fe391\\"
+  },
+  \\"event\\": {
+    \\"transaction_id\\": \\"txn3134133\\",
+    \\"shop_id\\": \\"s2123\\",
+    \\"time\\": \\"2012-04-12T23:20:50.52Z\\",
+    \\"type\\": \\"purchase\\"
+  },
+  \\"account\\": {
+    \\"user_id\\": \\"3132\\",
+    \\"username_md5\\": \\"570a90bfbf8c7eab5dc5d4e26832d5b1\\"
+  },
+  \\"email\\": {
+    \\"address\\": \\"977577b140bfb7c516e4746204fbdb01\\",
+    \\"domain\\": \\"maxmind.com\\"
+  },
+  \\"billing\\": {
+    \\"first_name\\": \\"John\\",
+    \\"last_name\\": \\"Doe\\",
+    \\"company\\": \\"Big Corp.\\",
+    \\"address\\": \\"400 Blake St.\\",
+    \\"address_2\\": \\"Suite 5\\",
+    \\"city\\": \\"New Haven\\",
+    \\"region\\": \\"CT\\",
+    \\"country\\": \\"US\\",
+    \\"postal\\": \\"06511\\",
+    \\"phone_number\\": \\"203-000-0000\\",
+    \\"phone_country_code\\": \\"1\\"
+  },
+  \\"shipping\\": {
+    \\"first_name\\": \\"Jane\\",
+    \\"last_name\\": \\"Doe\\",
+    \\"company\\": \\"Smaller, Inc.\\",
+    \\"address\\": \\"82 Wall St.\\",
+    \\"address_2\\": \\"#1\\",
+    \\"city\\": \\"New Haven\\",
+    \\"region\\": \\"CT\\",
+    \\"country\\": \\"US\\",
+    \\"postal\\": \\"06515\\",
+    \\"phone_number\\": \\"203-000-0000\\",
+    \\"phone_country_code\\": \\"1\\",
+    \\"delivery_speed\\": \\"same_day\\"
+  },
+  \\"payment\\": {
+    \\"processor\\": \\"stripe\\",
+    \\"was_authorized\\": false,
+    \\"decline_code\\": \\"card_declined\\"
+  },
+  \\"credit_card\\": {
+    \\"issuer_id_number\\": \\"323132\\",
+    \\"last_4_digits\\": \\"7643\\",
+    \\"token\\": \\"OQRST14PLQ98323\\",
+    \\"bank_name\\": \\"Bank of America\\",
+    \\"bank_phone_country_code\\": \\"1\\",
+    \\"bank_phone_number\\": \\"800-342-1232\\",
+    \\"avs_result\\": \\"Y\\",
+    \\"cvv_result\\": \\"N\\"
+  },
+  \\"order\\": {
+    \\"amount\\": 323.21,
+    \\"currency\\": \\"USD\\",
+    \\"discount_code\\": \\"FIRST\\",
+    \\"affiliate_id\\": \\"af12\\",
+    \\"subaffiliate_id\\": \\"saf42\\",
+    \\"referrer_uri\\": \\"http://www.google.com/\\",
+    \\"is_gift\\": true,
+    \\"has_gift_message\\": false
+  },
+  \\"shopping_cart\\": [
+    {
+      \\"category\\": \\"pets\\",
+      \\"item_id\\": \\"ad23232\\",
+      \\"quantity\\": 2,
+      \\"price\\": 20.43
+    },
+    {
+      \\"category\\": \\"beauty\\",
+      \\"item_id\\": \\"bst112\\",
+      \\"quantity\\": 1,
+      \\"price\\": 100.00
+    }
+  ],
+  \\"custom_inputs\\": {
+    \\"a_custom_input_key\\": \\"NSC0083121\\",
+    \\"another_custom_input_key\\": false
+  }
+}</code></pre>
+<h3><span class=\\"ez-toc-section\\" id=\\"Top-Level_Request_Fields\\"></span>Top-Level Request Fields (<code>/</code>)<span class=\\"ez-toc-section-end\\"></span></h3>
+<h4><span class=\\"ez-toc-section\\" id=\\"Device_device\\"></span>Device (<code>/device</code>)<span class=\\"ez-toc-section-end\\"></span></h4>
+<p>This object contains information about the device used in the transaction.</p>
+<table class=\\"table table-bordered table-striped\\">
+  <thead>
+    <tr>
+      <th>Key</th>
+      <th>Value Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>ip_address</td>
+      <td>string</td>
+      <td>The IP address associated with the device used by the customer in the transaction. The IP address must be in IPv4 or IPv6 presentation format, i.e., dotted-quad notation or the IPv6 hexadecimal-colon notation.</td>
+    </tr>
+    <tr>
+      <td>user_agent</td>
+      <td>string (512)</td>
+      <td>The HTTP &#8220;User-Agent&#8221; header of the browser used in the transaction.</td>
+    </tr>
+    <tr>
+      <td>accept_language</td>
+      <td>string (255)</td>
+      <td>The HTTP &#8220;Accept-Language&#8221; header of the device used in the transaction.</td>
+    </tr>
+    <tr>
+      <td>session_age</td>
+      <td>decimal</td>
+      <td>The number of seconds between the creation of the user&#8217;s session and the time of the transaction. Note that session_age is not the duration of the current visit, but the time since the start of the first visit. The value must be at least 0 and at most 10<sup>13</sup>-1.</td>
+    </tr>
+    <tr>
+      <td>session_id</td>
+      <td>string (255)</td>
+      <td>An ID that uniquely identifies a visitor&#8217;s session on the site.</td>
+    </tr>
+  </tbody>
+</table>
+<h4><span class=\\"ez-toc-section\\" id=\\"Event_event\\"></span>Event (<code>/event</code>)<span class=\\"ez-toc-section-end\\"></span></h4>
+<p>This object contains general information related to the event being scored.</p>
+<table class=\\"table table-bordered table-striped\\">
+  <thead>
+    <tr>
+      <th>Key</th>
+      <th>Value Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>transaction_id</td>
+      <td>string (255)</td>
+      <td>Your internal ID for the transaction. We can use this to locate a specific transaction in our logs, and it will also show up in email alerts and notifications from us to you. No specific format is required.</td>
+    </tr>
+    <tr>
+      <td>shop_id</td>
+      <td>string (255)</td>
+      <td>Your internal ID for the shop, affiliate, or merchant this order is coming from. Required for minFraud users who are resellers, payment providers, gateways and affiliate networks. No specific format is required.</td>
+    </tr>
+    <tr>
+      <td>time</td>
+      <td>string</td>
+      <td>The date and time the event occurred. The string must be in the <a href=\\"https://tools.ietf.org/html/rfc3339\\">RFC 3339</a> date-time format, e.g., &#8220;2012-04-12T23:20:50.52Z&#8221;. The time must be within the past 10 years. If this field is not in the request, the current time will be used.</td>
+    </tr>
+    <tr>
+      <td>type</td>
+      <td>enum</td>
+      <td><p>The type of event being scored. The valid types are:</p>
+        <ul>
+          <li>account_creation</li>
+          <li>account_login</li>
+          <li>email_change</li>
+          <li>password_reset</li>
+          <li>payout_change</li>
+          <li>purchase</li>
+          <li>recurring_purchase</li>
+          <li>referral</li>
+          <li>survey</li>
+        </ul>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<h4><span class=\\"ez-toc-section\\" id=\\"Account_account\\"></span>Account (<code>/account</code>)<span class=\\"ez-toc-section-end\\"></span></h4>
+<p>This object contains account information for the end-user on the site where the event took place.</p>
+<table class=\\"table table-bordered table-striped\\">
+  <thead>
+    <tr>
+      <th>Key</th>
+      <th>Value Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>user_id</td>
+      <td>string (255)</td>
+      <td>A unique user ID associated with the end-user in your system. If your system allows the login name for the account to be changed, this should not be the login name for the account, but rather should be an internal ID that does not change. This is <em>not</em> your MaxMind account ID. No specific format is required.</td>
+    </tr>
+    <tr>
+      <td>username_md5</td>
+      <td>string (32)</td>
+      <td>An MD5 hash as a hexadecimal string of the username or login name associated with the account.</td>
+    </tr>
+  </tbody>
+</table>
+<h4><span class=\\"ez-toc-section\\" id=\\"Email_email\\"></span>Email (<code>/email</code>)<span class=\\"ez-toc-section-end\\"></span></h4>
+<table class=\\"table table-bordered table-striped\\">
+  <thead>
+    <tr>
+      <th>Key</th>
+      <th>Value Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>address</td>
+      <td>string (255)</td>
+      <td>This field must be either be a valid email address or an MD5 of the email used in the transaction. <strong><em>Important:</em></strong> if using the MD5 hash, please be sure to <a href=\\"https://dev.maxmind.com/normalizing-email-addresses-for-minfraud/\\">normalize it</a> before calculating its MD5 hash.</td>
+    </tr>
+    <tr>
+      <td>domain</td>
+      <td>string (255)</td>
+      <td>The domain of the email address used in the transaction. Do not include the @ in this field (i.e., for the email support@maxmind.com, pass <code>maxmind.com</code>).</td>
+    </tr>
+  </tbody>
+</table>
+<h4><span class=\\"ez-toc-section\\" id=\\"Billing_billing\\"></span>Billing (<code>/billing</code>)<span class=\\"ez-toc-section-end\\"></span></h4>
+<table class=\\"table table-bordered table-striped\\">
+  <thead>
+    <tr>
+      <th>Key</th>
+      <th>Value Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>first_name</td>
+      <td>string (255)</td>
+      <td>The first name of the end user as provided in their billing information.</td>
+    </tr>
+    <tr>
+      <td>last_name</td>
+      <td>string (255)</td>
+      <td>The last name of the end user as provided in their billing information.</td>
+    </tr>
+    <tr>
+      <td>company</td>
+      <td>string (255)</td>
+      <td>The company of the end user as provided in their billing information.</td>
+    </tr>
+    <tr>
+      <td>address</td>
+      <td>string (255)</td>
+      <td>The first line of the user&#8217;s billing address.</td>
+    </tr>
+    <tr>
+      <td>address_2</td>
+      <td>string (255)</td>
+      <td>The second line of the user&#8217;s billing address.</td>
+    </tr>
+    <tr>
+      <td>city</td>
+      <td>string (255)</td>
+      <td>The city of the user&#8217;s billing address.</td>
+    </tr>
+    <tr>
+      <td>region</td>
+      <td>string (4)</td>
+      <td>The <a href=\\"https://en.wikipedia.org/wiki/ISO_3166-2\\">ISO 3166-2 subdivision code</a> for the user&#8217;s billing address.</td>
+    </tr>
+    <tr>
+      <td>country</td>
+      <td>string (2)</td>
+      <td>The two character <a href=\\"https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2\\">ISO 3166-1 alpha-2 country code</a> of the user&#8217;s billing address.</td>
+    </tr>
+    <tr>
+      <td>postal</td>
+      <td>string (255)</td>
+      <td>The postal code of the user&#8217;s billing address.</td>
+    </tr>
+    <tr>
+      <td>phone_number</td>
+      <td>string (255)</td>
+      <td>The phone number without the country code for the user&#8217;s billing address. Punctuation characters will be stripped. After stripping punctuation characters, the number must contain only digits.</td>
+    </tr>
+    <tr>
+      <td>phone_country_code</td>
+      <td>string (4)</td>
+      <td>The country code for phone number associated with the user&#8217;s billing address. If you provide this information then you must provide at least one digit.</td>
+    </tr>
+  </tbody>
+</table>
+<h4><span class=\\"ez-toc-section\\" id=\\"Shipping_shipping\\"></span>Shipping (<code>/shipping</code>)<span class=\\"ez-toc-section-end\\"></span></h4>
+<table class=\\"table table-bordered table-striped\\">
+  <thead>
+    <tr>
+      <th>Key</th>
+      <th>Value Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>first_name</td>
+      <td>string (255)</td>
+      <td>The first name of the end user as provided in their shipping information.</td>
+    </tr>
+    <tr>
+      <td>last_name</td>
+      <td>string (255)</td>
+      <td>The last name of the end user as provided in their shipping information.</td>
+    </tr>
+    <tr>
+      <td>company</td>
+      <td>string (255)</td>
+      <td>The company of the end user as provided in their shipping information.</td>
+    </tr>
+    <tr>
+      <td>address</td>
+      <td>string (255)</td>
+      <td>The first line of the user&#8217;s shipping address.</td>
+    </tr>
+    <tr>
+      <td>address_2</td>
+      <td>string (255)</td>
+      <td>The second line of the user&#8217;s shipping address.</td>
+    </tr>
+    <tr>
+      <td>city</td>
+      <td>string (255)</td>
+      <td>The city of the user&#8217;s shipping address.</td>
+    </tr>
+    <tr>
+      <td>region</td>
+      <td>string (4)</td>
+      <td>The <a href=\\"https://en.wikipedia.org/wiki/ISO_3166-2\\">ISO 3166-2 subdivision code</a> for the user&#8217;s shipping address.</td>
+    </tr>
+    <tr>
+      <td>country</td>
+      <td>string (2)</td>
+      <td>The two character <a href=\\"https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2\\">ISO 3166-1 alpha-2 country code</a> of the user&#8217;s shipping address.</td>
+    </tr>
+    <tr>
+      <td>postal</td>
+      <td>string (255)</td>
+      <td>The postal code of the user&#8217;s shipping address.</td>
+    </tr>
+    <tr>
+      <td>phone_number</td>
+      <td>string (255)</td>
+      <td>The phone number without the country code for the user&#8217;s shipping address. Punctuation characters will be stripped. After stripping punctuation characters, the number must contain only digits.</td>
+    </tr>
+    <tr>
+      <td>phone_country_code</td>
+      <td>string (4)</td>
+      <td>The country code for phone number associated with the user&#8217;s shipping address. If you provide this information then you must provide at least one digit.</td>
+    </tr>
+    <tr>
+      <td>delivery_speed</td>
+      <td>enum</td>
+      <td><p>The shipping delivery speed for the order. The valid values are:</p>
+        <ul>
+          <li>same_day</li>
+          <li>overnight</li>
+          <li>expedited</li>
+          <li>standard</li>
+        </ul>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<h4><span class=\\"ez-toc-section\\" id=\\"Payment_payment\\"></span>Payment (<code>/payment</code>)<span class=\\"ez-toc-section-end\\"></span></h4>
+<table class=\\"table table-bordered table-striped\\">
+  <thead>
+    <tr>
+      <th>Key</th>
+      <th>Value Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>processor</td>
+      <td>enum</td>
+      <td><p>The payment processor used for the transaction. The valid values are:</p>
+        <ul>
+          <li>adyen</li>
+          <li>affirm</li>
+          <li>afterpay</li>
+          <li>altapay</li>
+          <li>amazon_payments</li>
+          <li>american_express_payment_gateway</li>
+          <li>apple_pay</li>
+          <li>aps_payments</li>
+          <li>authorizenet</li>
+          <li>balanced</li>
+          <li>beanstream</li>
+          <li>bluepay</li>
+          <li>bluesnap</li>
+          <li>bpoint</li>
+          <li>braintree</li>
+          <li>cardpay</li>
+          <li>cashfree</li>
+          <li>ccavenue</li>
+          <li>ccnow</li>
+          <li>cetelem</li>
+          <li>chase_paymentech</li>
+          <li>checkout_com</li>
+          <li>cielo</li>
+          <li>collector</li>
+          <li>commdoo</li>
+          <li>compropago</li>
+          <li>concept_payments</li>
+          <li>conekta</li>
+          <li>ct_payments</li>
+          <li>cuentadigital</li>
+          <li>curopayments</li>
+          <li>cybersource</li>
+          <li>dalenys</li>
+          <li>dalpay</li>
+          <li>datacash</li>
+          <li>dibs</li>
+          <li>digital_river</li>
+          <li>dotpay</li>
+          <li>ebs</li>
+          <li>ecomm365</li>
+          <li>ecommpay</li>
+          <li>elavon</li>
+          <li>emerchantpay</li>
+          <li>epay</li>
+          <li>eprocessing_network</li>
+          <li>epx</li>
+          <li>eway</li>
+          <li>exact</li>
+          <li>first_atlantic_commerce</li>
+          <li>first_data</li>
+          <li>g2a_pay</li>
+          <li>global_payments</li>
+          <li>gocardless</li>
+          <li>heartland</li>
+          <li>hipay</li>
+          <li>ingenico</li>
+          <li>interac</li>
+          <li>internetsecure</li>
+          <li>intuit_quickbooks_payments</li>
+          <li>iugu</li>
+          <li>klarna</li>
+          <li>komoju</li>
+          <li>lemon_way</li>
+          <li>mastercard_payment_gateway</li>
+          <li>mercadopago</li>
+          <li>mercanet</li>
+          <li>merchant_esolutions</li>
+          <li>mirjeh</li>
+          <li>mollie</li>
+          <li>moneris_solutions</li>
+          <li>nmi</li>
+          <li>oceanpayment</li>
+          <li>oney</li>
+          <li>openpaymx</li>
+          <li>optimal_payments</li>
+          <li>orangepay</li>
+          <li>other</li>
+          <li>pacnet_services</li>
+          <li>payeezy</li>
+          <li>payfast</li>
+          <li>paygate</li>
+          <li>paylike</li>
+          <li>payment_express</li>
+          <li>paymentwall</li>
+          <li>payone</li>
+          <li>paypal</li>
+          <li>payplus</li>
+          <li>paysafecard</li>
+          <li>paystation</li>
+          <li>paytm</li>
+          <li>paytrace</li>
+          <li>paytrail</li>
+          <li>payture</li>
+          <li>payulatam</li>
+          <li>payu</li>
+          <li>payway</li>
+          <li>payza</li>
+          <li>pinpayments</li>
+          <li>posconnect</li>
+          <li>princeton_payment_solutions</li>
+          <li>psigate</li>
+          <li>qiwi</li>
+          <li>quickpay</li>
+          <li>raberil</li>
+          <li>razorpay</li>
+          <li>rede</li>
+          <li>redpagos</li>
+          <li>rewardspay</li>
+          <li>sagepay</li>
+          <li>securetrading</li>
+          <li>simplify_commerce</li>
+          <li>skrill</li>
+          <li>smartcoin</li>
+          <li>smartdebit</li>
+          <li>solidtrust_pay</li>
+          <li>sps_decidir</li>
+          <li>stripe</li>
+          <li>synapsefi</li>
+          <li>systempay</li>
+          <li>telerecargas</li>
+          <li>towah</li>
+          <li>transact_pro</li>
+          <li>tsys</li>
+          <li>usa_epay</li>
+          <li>vantiv</li>
+          <li>verepay</li>
+          <li>vericheck</li>
+          <li>vindicia</li>
+          <li>virtual_card_services</li>
+          <li>vme</li>
+          <li>vpos</li>
+          <li>wirecard</li>
+          <li>worldpay</li>
+        </ul>
+        If your payment processor is missing from this list, please contact <a href=\\"mailto:support@maxmind.com\\">support@maxmind.com</a>.
+      </td>
+    </tr>
+    <tr>
+      <td>was_authorized</td>
+      <td>boolean</td>
+      <td>The authorization outcome from the payment processor. If the transaction has not yet been approved or denied, do not include this field.</td>
+    </tr>
+    <tr>
+      <td>decline_code</td>
+      <td>string (255)</td>
+      <td>The decline code as provided by your payment processor. If the transaction was not declined, do not include this field.</td>
+    </tr>
+  </tbody>
+</table>
+<h4><span class=\\"ez-toc-section\\" id=\\"Credit_Card_credit_card\\"></span>Credit Card (<code>/credit_card</code>)<span class=\\"ez-toc-section-end\\"></span></h4>
+<table class=\\"table table-bordered table-striped\\">
+  <thead>
+    <tr>
+      <th>Key</th>
+      <th>Value Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>issuer_id_number</td>
+      <td>string (6)</td>
+      <td>The issuer ID number for the credit card. This is the first 6 digits of the credit card number. It identifies the issuing bank.</td>
+    </tr>
+    <tr>
+      <td>last_4_digits</td>
+      <td>string (4)</td>
+      <td>The last four digits of the credit card number.</td>
+    </tr>
+    <tr>
+      <td>token</td>
+      <td>string (255)</td>
+      <td>A token uniquely identifying the card. The token should consist of non-space printable ASCII characters. If the token is all digits, it must be more than 19 characters long. The token <em>must not</em> be a primary account number (PAN) or a simple transformation of it. If you have a valid token that looks like a PAN but is not one, you may prefix that token with a fixed string, e.g., <code>token-</code>.
+    </tr>
+    <tr>
+      <td>bank_name</td>
+      <td>string (255)</td>
+      <td>The name of the issuing bank as provided by the end user.</td>
+    </tr>
+    <tr>
+      <td>bank_phone_country_code</td>
+      <td>string (4)</td>
+      <td>The phone country code for the issuing bank as provided by the end user. If you provide this information then you must provide at least one digit.</td>
+    </tr>
+    <tr>
+      <td>bank_phone_number</td>
+      <td>string (255)</td>
+      <td>The phone number, without the country code, for the issuing bank as provided by the end user. Punctuation characters will be stripped. After stripping punctuation characters, the number must contain only digits.</td>
+    </tr>
+    <tr>
+      <td>avs_result</td>
+      <td>character (1)</td>
+      <td>The address verification system (AVS) check result, as returned to you by the credit card processor. The minFraud service supports the standard AVS codes.</td>
+    </tr>
+    <tr>
+      <td>cvv_result</td>
+      <td>character (1)</td>
+      <td>The card verification value (CVV) code as provided by the payment processor.</td>
+    </tr>
+  </tbody>
+</table>
+<h4><span class=\\"ez-toc-section\\" id=\\"Order_order\\"></span>Order (<code>/order</code>)<span class=\\"ez-toc-section-end\\"></span></h4>
+<table class=\\"table table-bordered table-striped\\">
+  <thead>
+    <tr>
+      <th>Key</th>
+      <th>Value Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>amount</td>
+      <td>decimal</td>
+      <td>The total order amount for the transaction before taxes and discounts. The value must be at least 0 and at most 1e14 &#8211; 1.</td>
+    </tr>
+    <tr>
+      <td>currency</td>
+      <td>string (3)</td>
+      <td>The <a href=\\"https://en.wikipedia.org/wiki/ISO_4217\\">ISO 4217</a> currency code for the currency used in the transaction.</td>
+    </tr>
+    <tr>
+      <td>discount_code</td>
+      <td>string (255)</td>
+      <td>The discount code applied to the transaction. If multiple discount codes were used, please separate them with a comma.</td>
+    </tr>
+    <tr>
+      <td>affiliate_id</td>
+      <td>string (255)</td>
+      <td>The ID of the affiliate where the order is coming from. No specific format is required.</td>
+    </tr>
+    <tr>
+      <td>subaffiliate_id</td>
+      <td>string (255)</td>
+      <td>The ID of the sub-affiliate where the order is coming from. No specific format is required.</td>
+    </tr>
+    <tr>
+      <td>referrer_uri</td>
+      <td>string (1024)</td>
+      <td>The URI of the referring site for this order. Needs to be absolute and have a URI scheme such as <code>https://</code></td>
+    </tr>
+    <tr>
+      <td>is_gift</td>
+      <td>boolean</td>
+      <td>Whether order was marked as a gift by the purchaser.</td>
+    </tr>
+    <td>has_gift_message</td>
+    <td>boolean</td>
+    <td>Whether the purchaser included a gift message.</td>
+  </tr>
+</tbody>
+</table>
+<h4><span class=\\"ez-toc-section\\" id=\\"Shopping_Cart_shopping_cart\\"></span>Shopping Cart (<code>/shopping_cart</code>)<span class=\\"ez-toc-section-end\\"></span></h4>
+<p>This is an <em>array</em> of shopping cart item objects. A shopping cart should consist of an array of one or more item objects.</p>
+<h5><span class=\\"ez-toc-section\\" id=\\"Shopping_Cart_Item\\"></span>Shopping Cart Item<span class=\\"ez-toc-section-end\\"></span></h5>
+<table class=\\"table table-bordered table-striped\\">
+  <thead>
+    <tr>
+      <th>Key</th>
+      <th>Value Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>category</td>
+      <td>string (255)</td>
+      <td>The category of the item. This can also be a hashed value; <a href=\\"#cart-hashing\\">see below</a>. </td>
+    </tr>
+    <tr>
+      <td>item_id</td>
+      <td>string (255)</td>
+      <td>Your internal ID for the item. No specific format is required. This can also be a hashed value; <a href=\\"#cart-hashing\\">see below</a>.</td>
+    </tr>
+    <tr>
+      <td>quantity</td>
+      <td>integer</td>
+      <td>The quantity of the item in the shopping cart. The value must be at least 0, at most 10<sup>13</sup>-1, and have no fractional part.</td>
+    </tr>
+    <tr>
+      <td>price</td>
+      <td>decimal</td>
+      <td>The per-unit price of this item in the shopping cart. This should use the same currency as the order currency. The value must be at least 0 and at most 1e14 &#8211; 1.</td>
+    </tr>
+  </tbody>
+</table>
+<p id=\\"cart-hashing\\"><strong>Using hashed values</strong></p>
+<p>Instead of passing plain values to the minFraud API, using hashed values instead can increase the privacy of your customers’ information while continuing to fulfil the needs for fraud detection. A suitable hashed value can be produced by using a cryptographic hash function and a fixed salt. <strong>Using a random salt is not recommended</strong> as that will result in different hashed values for the same plain value, which would make them ineffective for our fraud detection service. See these links for more information:</p>
+<ul>
+  <li><a href=\\"https://cheatsheetseries.owasp.org/cheatsheets/Cryptographic_Storage_Cheat_Sheet.html\\" rel=\\"noopener noreferrer\\" target=\\"_blank\\">https://cheatsheetseries.owasp.org/cheatsheets/Cryptographic_Storage_Cheat_Sheet.html</a></li>
+  <li><a href=\\"https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.180-4.pdf\\" rel=\\"noopener noreferrer\\" target=\\"_blank\\">https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.180-4.pdf</a></li>
+</ul>
+<h4><span class=\\"ez-toc-section\\" id=\\"Custom_Inputs_custom_inputs\\"></span>Custom Inputs (<code>/custom_inputs</code>)<span class=\\"ez-toc-section-end\\"></span></h4>
+<p><em>Custom Inputs are optional inputs to the minFraud service that must first be defined for your account. Select &#8220;Custom Inputs&#8221; from the Account Portal in order to do so. See our <a href=\\"https://support.maxmind.com/custom-inputs-guide/\\">Custom Inputs documentation</a> for more information.</em></p>
+<table class=\\"table table-bordered table-striped\\">
+  <thead>
+    <tr>
+      <th>Key</th>
+      <th>Value Type</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><em>Your custom boolean input key</em></td>
+      <td>Boolean</td>
+    </tr>
+    <tr>
+      <td><em>Your custom number input key</em></td>
+      <td>A floating point number between -10<sup>13</sup> and 10<sup>13</sup></td>
+    </tr>
+    <tr>
+      <td><em>Your custom phone number input key</em></td>
+      <td>A phone number, limited to 255 characters. Numbers, spaces and punctuation accepted, although spaces and punctuation will be stripped. The following ASCII characters constitute the accepted punctuation: \` ~ ! @ # $ % ^ &amp; * ( ) &#8211; _ = + &#8216; &#8221; ; : , &lt; . &gt; / ? \\\\ | [ ] { and }.</td>
+    </tr>
+    <tr>
+      <td><em>Your custom string input key</em></td>
+      <td>A string, limited to 255 characters. The null character is not allowed.</td>
+    </tr>
+  </tbody>
+</table>
+<h2><span class=\\"ez-toc-section\\" id=\\"Response_Headers\\"></span>Response Headers<span class=\\"ez-toc-section-end\\"></span></h2>
+<p>The <code>Content-Type</code> header for a successful response varies based on the service as outlined above.</p>
+
+<p>Errors may be returned with the <code>Content-Type</code> set to <code>application/vnd.maxmind.com-error+json; charset=UTF-8; version=2.0</code>. If this is the case, then the body of the response contains a JSON document with two keys, <code>code</code> and <code>error</code>. See <a href=\\"#Errors\\">the Errors section</a> for more details.</p>
+
+<p>The response will always include a <code>Content-Length</code> header as well.</p>
+
+<h2><span class=\\"ez-toc-section\\" id=\\"Response_Body\\"></span>Response Body<span class=\\"ez-toc-section-end\\"></span></h2>
+<p>All services return data as a JSON document. The document that is returned always consists of an object (aka map or hash).</p>
+<p>Keys with undefined or empty values will not be included in the returned document.</p>
+<p>The data returned in the document will be in UTF-8 encoding.</p>
+
+<p>
+  Note that a given key and value may be omitted from the response entirely if there is no relevant information to include. For example, if you do not pass any information about the credit card in your request, then the response will not contain a <code>credit_card</code> key or value.
+</p>
+
+<h3><span class=\\"ez-toc-section\\" id=\\"Top-Level_Fields\\"></span>Top-Level Fields (<code>/</code>)<span class=\\"ez-toc-section-end\\"></span></h3>
+<table class=\\"table table-bordered table-striped\\">
+  <thead>
+    <tr>
+      <th colspan=\\"3\\"></th>
+      <th colspan=\\"3\\">Included in &#8230;</th>
+    </tr>
+    <tr>
+      <th>Key</th>
+      <th>Value Type</th>
+      <th>Description</th>
+      <th>Score?</th>
+      <th>Insights?</th>
+      <th>Factors?</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>id</td>
+      <td>string (UUID)</td>
+      <td>This is the minFraud ID, a <a href=\\"https://en.wikipedia.org/wiki/Universally_unique_identifier\\"> UUID</a> that identifies the minFraud response. Use this ID to <a href=\\"https://www.maxmind.com/en/minfraud-log\\">search your minFraud logs</a> or when making support requests to MaxMind.</td>
+      <td><i class=\\"icon-check\\"></i></td>
+      <td><i class=\\"icon-check\\"></i></td>
+      <td><i class=\\"icon-check\\"></i></td>
+    </tr>
+    <tr>
+      <td>risk_score</td>
+      <td>decimal</td>
+      <td>This field contains the risk score, from 0.01 to 99. A higher score indicates a higher risk of fraud. For example, a score of 20 indicates a 20% chance that a transaction is fraudulent. We never return a risk score of 0, since all transactions have the possibility of being fraudulent. Likewise we never return a risk score of 100.</td>
+      <td><i class=\\"icon-check\\"></i></td>
+      <td><i class=\\"icon-check\\"></i></td>
+      <td><i class=\\"icon-check\\"></i></td>
+    </tr>
+    <tr>
+      <td>funds_remaining</td>
+      <td>decimal</td>
+      <td>The approximate US dollar value of the funds remaining on your MaxMind account.</td>
+      <td><i class=\\"icon-check\\"></i></td>
+      <td><i class=\\"icon-check\\"></i></td>
+      <td><i class=\\"icon-check\\"></i></td>
+    </tr>
+    <tr>
+      <td>queries_remaining</td>
+      <td>integer</td>
+      <td>The approximate number of queries remaining for the service before your account runs out of funds.</td>
+      <td><i class=\\"icon-check\\"></i></td>
+      <td><i class=\\"icon-check\\"></i></td>
+      <td><i class=\\"icon-check\\"></i></td>
+    </tr>
+    <tr>
+      <td>warnings</td>
+      <td>array</td>
+      <td>This array contains warning objects detailing issues with the request that was sent such as invalid or unknown inputs. It is highly recommended that you check this array for issues when integrating the web service.</td>
+      <td><i class=\\"icon-check\\"></i></td>
+      <td><i class=\\"icon-check\\"></i></td>
+      <td><i class=\\"icon-check\\"></i></td>
+    </tr>
+  </tbody>
+</table>
+
+<h3><span class=\\"ez-toc-section\\" id=\\"IP_Address_ip_address\\"></span>IP Address (<code>/ip_address</code>)<span class=\\"ez-toc-section-end\\"></span></h3>
+<p>For minFraud Score, this object only contains the <code>risk</code> for the IP address. For minFraud Insights and Factors, the object is the <a href=\\"https://dev.maxmind.com/geoip/geoip2/web-services/#Response_Body\\"> GeoIP2 Insights response body</a> with four modifications: (1) <code>risk</code> has been added directly to the <code>ip_address</code> object; (2) <code>local_time</code> has been added to the <code>location</code> sub-object; and (3) the <code>maxmind</code> object is not present. See below for descriptions.</p>
+<p>minFraud Insights and Factors return the following anonymous IP outputs: <code>is_anonymous</code>, <code>is_anonymous_vpn</code>, <code>is_hosting_provider</code>, <code>is_public_proxy</code>, <code>is_residential_proxy</code>, and <code>is_tor_exit_node</code>. See the GeoIP2 Insights <a href=\\"https://dev.maxmind.com/geoip/geoip2/web-services/#traits\\">response body</a> for more information.</p>
+<table class=\\"table table-bordered table-striped\\">
+  <thead>
+    <tr>
+      <th colspan=\\"3\\"></th>
+      <th colspan=\\"3\\">Included in &#8230;</th>
+    </tr>
+    <tr>
+      <th>Key</th>
+      <th>Value Type</th>
+      <th>Description</th>
+      <th>Score?</th>
+      <th>Insights?</th>
+      <th>Factors?</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>risk</td>
+      <td>decimal</td>
+      <td>This field contains the risk associated with the IP address. The value ranges from 0.01 to 99. A higher score indicates a higher risk.</td>
+      <td><i class=\\"icon-check\\"></i></td>
+      <td><i class=\\"icon-check\\"></i></td>
+      <td><i class=\\"icon-check\\"></i></td>
+    </tr>
+  </tbody>
+</table>
+<h4><span class=\\"ez-toc-section\\" id=\\"Country_ip_addresscountry\\"></span>Country (<code>/ip_address/country</code>)<span class=\\"ez-toc-section-end\\"></span></h4>
+<table class=\\"table table-bordered table-striped\\">
+  <thead>
+    <tr>
+      <th colspan=\\"3\\"></th>
+      <th colspan=\\"3\\">Included in &#8230;</th>
+    </tr>
+    <tr>
+      <th>Key</th>
+      <th>Value Type</th>
+      <th>Description</th>
+      <th>Score?</th>
+      <th>Insights?</th>
+      <th>Factors?</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>is_high_risk</td>
+      <td>boolean</td>
+      <td><strong>This field has been deprecated.</strong></td>
+      <td></td>
+      <td><i class=\\"icon-check\\"></i></td>
+      <td><i class=\\"icon-check\\"></i></td>
+    </tr>
+  </tbody>
+</table>
+<h4><span class=\\"ez-toc-section\\" id=\\"Location_ip_addresslocation\\"></span>Location (<code>/ip_address/location</code>)<span class=\\"ez-toc-section-end\\"></span></h4>
+<table class=\\"table table-bordered table-striped\\">
+  <thead>
+    <tr>
+      <th>Key</th>
+      <th>Value Type</th>
+      <th>Description</th>
+      <th>Score?</th>
+      <th>Insights?</th>
+      <th>Factors?</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>local_time</td>
+      <td>string (255)</td>
+      <td>The date and time of the transaction in the time zone associated with the IP address. The value is formatted according to <a href=\\"https://tools.ietf.org/html/rfc3339\\">RFC 3339</a>. For instance, the local time in Boston might be returned as <code>2015-04-27T19:17:24-04:00</code>.</td>
+      <td></td>
+      <td><i class=\\"icon-check\\"></i></td>
+      <td><i class=\\"icon-check\\"></i></td>
+    </tr>
+  </tbody>
+</table>
+<h3><span class=\\"ez-toc-section\\" id=\\"Credit_Card_credit_card-2\\"></span>Credit Card (<code>/credit_card</code>)<span class=\\"ez-toc-section-end\\"></span></h3>
+<p>This object contains minFraud information related to the credit card.  If an issuer ID number (IIN) was not provided in the request, this object will not be present in the response.</p>
+<table class=\\"table table-bordered table-striped\\">
+  <thead>
+    <tr>
+      <th colspan=\\"3\\"></th>
+      <th colspan=\\"3\\">Included in &#8230;</th>
+    </tr>
+    <tr>
+      <th>Key</th>
+      <th>Value Type</th>
+      <th>Description</th>
+      <th>Score?</th>
+      <th>Insights?</th>
+      <th>Factors?</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>issuer</td>
+      <td>object</td>
+      <td>This field contains a JSON object with information relating to the credit card issuer.</td>
+      <td></td>
+      <td><i class=\\"icon-check\\"></i></td>
+      <td><i class=\\"icon-check\\"></i></td>
+    </tr>
+    <tr>
+      <td>brand</td>
+      <td>string (255)</td>
+      <td>
+        The card brand, such as &#8220;Visa&#8221;, &#8220;Discover&#8221;, &#8220;American Express&#8221;, etc.
+      </td>
+      <td></td>
+      <td><i class=\\"icon-check\\"></i></td>
+      <td><i class=\\"icon-check\\"></i></td>
+    </tr>
+    <tr>
+      <td>country</td>
+      <td>string (2)</td>
+      <td>The two letter <a href=\\"https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2\\">ISO 3166-1 alpha-2 country code</a> associated with the location of the majority of customers using this credit card as determined by their billing address. In cases where the location of customers is highly mixed, this defaults to the country of the bank issuing the card.
+      </td>
+      <td></td>
+      <td><i class=\\"icon-check\\"></i></td>
+      <td><i class=\\"icon-check\\"></i></td>
+    </tr>
+    <tr>
+      <td>is_business</td>
+      <td>boolean</td>
+      <td>This field is <code>true</code> if the issuer ID number is for a business card. It is <code>false</code> if the issuer ID number is for for a non-business card. The key is only present when a valid issuer ID number has been provided.</td>
+      <td></td>
+      <td><i class=\\"icon-check\\"></i></td>
+      <td><i class=\\"icon-check\\"></i></td>
+    </tr>
+    <tr>
+      <td>is_issued_in_billing_address_country</td>
+      <td>boolean</td>
+      <td>This field is <code>true</code> if the country of the billing address matches the country of the majority of customers using that IIN. It is <code>false</code> if both countries are available but do not match. If one or both of the countries are missing, the key will not be present. In cases where the location of customers is highly mixed, the match is to the country of the bank issuing the card.</td>
+      <td></td>
+      <td><i class=\\"icon-check\\"></i></td>
+      <td><i class=\\"icon-check\\"></i></td>
+    </tr>
+    <tr>
+      <td>is_prepaid</td>
+      <td>boolean</td>
+      <td>This field is <code>true</code> if the issuer ID number is for a prepaid card. It is <code>false</code> if the issuer ID number is for for a non-prepaid card. The key is only present when a valid issuer ID number has been provided.</td>
+      <td></td>
+      <td><i class=\\"icon-check\\"></i></td>
+      <td><i class=\\"icon-check\\"></i></td>
+    </tr>
+    <tr>
+      <td>is_virtual</td>
+      <td>boolean</td>
+      <td>This field is <code>true</code> if the issuer ID number is for a virtual card. It is <code>false</code> if the issuer ID number is for a non-virtual card. The key is only present when a valid issuer ID number has been provided.</td>
+      <td></td>
+      <td><i class=\\"icon-check\\"></i></td>
+      <td><i class=\\"icon-check\\"></i></td>
+    </tr>
+    <tr>
+      <td>type</td>
+      <td>enum</td>
+      <td>
+        <p>The card&#8217;s type. The valid values are:</p>
+        <ul>
+          <li>charge &#8211; <a href=\\"https://en.wikipedia.org/wiki/Charge_card\\">See Wikipedia</a> for an explanation of the difference between charge and credit cards.</li>
+          <li>credit</li>
+          <li>debit</li>
+        </ul>
+      </td>
+      <td></td>
+      <td><i class=\\"icon-check\\"></i></td>
+      <td><i class=\\"icon-check\\"></i></td>
+    </tr>
+  </tbody>
+</table>
+
+<h4><span class=\\"ez-toc-section\\" id=\\"Credit_Card_Issuer_credit_cardissuer\\"></span>Credit Card Issuer (<code>/credit_card/issuer</code>)<span class=\\"ez-toc-section-end\\"></span></h4>
+<p>This is a sub-object of <code>credit_card</code> that contains information related to the issuer of the card.</p>
+<table class=\\"table table-bordered table-striped\\">
+  <thead>
+    <tr>
+      <th colspan=\\"3\\"></th>
+      <th colspan=\\"3\\">Included in &#8230;</th>
+    </tr>
+    <tr>
+      <th>Key</th>
+      <th>Value Type</th>
+      <th>Description</th>
+      <th>Score?</th>
+      <th>Insights?</th>
+      <th>Factors?</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>name</td>
+      <td>string (255)</td>
+      <td>The name of the bank which issued the credit card.</td>
+      <td></td>
+      <td><i class=\\"icon-check\\"></i></td>
+      <td><i class=\\"icon-check\\"></i></td>
+    </tr>
+    <tr>
+      <td>matches_provided_name</td>
+      <td>boolean</td>
+      <td>This field is <code>true</code> if the name matches the name provided in the request for the card issuer. It is <code>false</code> if the name does not match. The field is not included if either no name or issuer ID number (IIN) is provided in the request or if MaxMind does not have a name associated with the IIN.</td>
+      <td></td>
+      <td><i class=\\"icon-check\\"></i></td>
+      <td><i class=\\"icon-check\\"></i></td>
+    </tr>
+    <tr>
+      <td>phone_number</td>
+      <td>string (255)</td>
+      <td>The phone number of the bank which issued the credit card. In some cases the phone number we return may be out of date.</td>
+      <td></td>
+      <td><i class=\\"icon-check\\"></i></td>
+      <td><i class=\\"icon-check\\"></i></td>
+    </tr>
+    <tr>
+      <td>matches_provided_phone_number</td>
+      <td>boolean</td>
+      <td>This field is <code>true</code> if the phone number matches the number provided in the request for the card issuer. It is <code>false</code> if the number does not match. The field is not included if either no phone number or issuer ID number (IIN) is provided in the request or if MaxMind does not have a phone number associated with the IIN.</td>
+      <td></td>
+      <td><i class=\\"icon-check\\"></i></td>
+      <td><i class=\\"icon-check\\"></i></td>
+    </tr>
+  </tbody>
+</table>
+
+<h3><span class=\\"ez-toc-section\\" id=\\"Device_device-2\\"></span>Device (<code>/device</code>)<span class=\\"ez-toc-section-end\\"></span></h3>
+<p>
+  This object contains information about the device that MaxMind believes is associated with the IP address passed in the request.
+</p>
+<table class=\\"table table-bordered table-striped\\">
+  <thead>
+    <tr>
+      <th colspan=\\"3\\"></th>
+      <th colspan=\\"3\\">Included in &#8230;</th>
+    </tr>
+    <tr>
+      <th>Key</th>
+      <th>Value Type</th>
+      <th>Description</th>
+      <th>Score?</th>
+      <th>Insights?</th>
+      <th>Factors?</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>confidence</td>
+      <td>decimal</td>
+      <td>
+        A number from 0.01 to 99 representing the confidence that the
+        <code>/device/id</code> refers to a unique device as opposed to a
+        cluster of similar devices. A confidence of 0.01 indicates very low
+        confidence that the device is unique, whereas 99 indicates very high
+        confidence.
+      </td>
+      <td></td>
+      <td><i class=\\"icon-check\\"></i></td>
+      <td><i class=\\"icon-check\\"></i></td>
+    </tr>
+    <tr>
+      <td>id</td>
+      <td>UUID</td>
+      <td>
+        A UUID that MaxMind uses for the device associated with this IP
+        address. Note that many devices cannot be uniquely identified because they
+        are too common (for example, all iPhones of a given model and OS
+        release). In these cases, the minFraud service will simply not return a UUID
+        for that device. This is only available if you are using the <a href=\\"https://dev.maxmind.com/minfraud/device/\\">Device Tracking Add-on</a>.
+      </td>
+      <td></td>
+      <td><i class=\\"icon-check\\"></i></td>
+      <td><i class=\\"icon-check\\"></i></td>
+    </tr>
+    <tr>
+      <td>last_seen</td>
+      <td>string (255)</td>
+      <td>
+        The date and time of the last sighting of the device. The value is
+        formatted according to <a href=\\"https://tools.ietf.org/html/rfc3339\\">
+        RFC 3339</a>.
+      <td></td>
+      <td><i class=\\"icon-check\\"></i></td>
+      <td><i class=\\"icon-check\\"></i></td>
+    </tr>
+    <tr>
+      <td>local_time</td>
+      <td>string (255)</td>
+      <td>
+        The local date and time of the transaction in the time zone of the device.
+        This is determined by using the UTC offset associated with the device.
+        The value is formatted according to <a href=\\"https://tools.ietf.org/html/rfc3339\\">RFC 3339</a>.
+      <td></td>
+      <td><i class=\\"icon-check\\"></i></td>
+      <td><i class=\\"icon-check\\"></i></td>
+    </tr>
+  </tbody>
+</table>
+
+<h3><span class=\\"ez-toc-section\\" id=\\"Email_email-2\\"></span>Email (<code>/email</code>)<span class=\\"ez-toc-section-end\\"></span></h3>
+<p>
+  This object contains information about the email address passed in the request.
+</p>
+<table class=\\"table table-bordered table-striped\\">
+  <thead>
+    <tr>
+      <th colspan=\\"3\\"></th>
+      <th colspan=\\"3\\">Included in &#8230;</th>
+    </tr>
+    <tr>
+      <th>Key</th>
+      <th>Value Type</th>
+      <th>Description</th>
+      <th>Score?</th>
+      <th>Insights?</th>
+      <th>Factors?</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>domain</td>
+      <td>object</td>
+      <td>This field contains a JSON object with information relating to the domain.</td>
+      <td></td>
+      <td><i class=\\"icon-check\\"></i></td>
+      <td><i class=\\"icon-check\\"></i></td>
+    </tr>
+    <tr>
+      <td>first_seen</td>
+      <td>string (10)</td>
+      <td>
+        A date string (e.g. 2017-04-24) to identify the date an email address was first seen by MaxMind. This is expressed using the ISO 8601 date format <code>YYYY-MM-DD</code>. The earliest date that may be returned is January 1, 2008.
+      </td>
+      <td></td>
+      <td><i class=\\"icon-check\\"></i></td>
+      <td><i class=\\"icon-check\\"></i></td>
+    </tr>
+    <tr>
+      <td>is_disposable</td>
+      <td>boolean</td>
+      <td>
+        This field is <code>true</code> if MaxMind believes that the email address is from a disposable email provider. It is <code>false</code> if the address is not from a known disposable email provider. The key will only be present if a valid email address or email domain is provided. 
+      </td>
+      <td></td>
+      <td><i class=\\"icon-check\\"></i></td>
+      <td><i class=\\"icon-check\\"></i></td>
+    </tr>
+    <tr>
+      <td>is_free</td>
+      <td>boolean</td>
+      <td>
+        This field is <code>true</code> if MaxMind believes that this email domain is for a free email provider such as Gmail or Yahoo! Mail. It is <code>false</code> if the domain is not for a known free email provider. The key will only be present if a valid email address or email domain is provided. 
+      </td>
+      <td></td>
+      <td><i class=\\"icon-check\\"></i></td>
+      <td><i class=\\"icon-check\\"></i></td>
+    </tr>
+    <tr>
+      <td>is_high_risk</td>
+      <td>boolean</td>
+      <td>
+        This field is <code>true</code> if MaxMind believes that this email address is likely to be used for fraud. It is <code>false</code> if MaxMind does not believe the address is used for fraud. The key will only be present if a valid email address or email address hash is provided. Note that this is also factored into the overall <code>risk_score</code> in
+        the response as well.
+      </td>
+      <td></td>
+      <td><i class=\\"icon-check\\"></i></td>
+      <td><i class=\\"icon-check\\"></i></td>
+    </tr>
+  </tbody>
+</table>
+
+<h4><span class=\\"ez-toc-section\\" id=\\"Email_Domain_emaildomain\\"></span>Email Domain (<code>/email/domain</code>)<span class=\\"ez-toc-section-end\\"></span></h4>
+<p>This is a sub-object of <code>email</code> that contains information related to the domain.</p>
+<table class=\\"table table-bordered table-striped\\">
+  <thead>
+    <tr>
+      <th colspan=\\"3\\"></th>
+      <th colspan=\\"3\\">Included in &#8230;</th>
+    </tr>
+    <tr>
+      <th>Key</th>
+      <th>Value Type</th>
+      <th>Description</th>
+      <th>Score?</th>
+      <th>Insights?</th>
+      <th>Factors?</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>first_seen</td>
+      <td>string (10)</td>
+      <td>A date string (e.g. 2019-01-01) to identify the date an email address domain was first seen by MaxMind. This is expressed using the ISO 8601 date format <code>YYYY-MM-DD</code>. The earliest date that may be returned is January 1, 2019.</td>
+      <td></td>
+      <td><i class=\\"icon-check\\"></i></td>
+      <td><i class=\\"icon-check\\"></i></td>
+    </tr>
+  </tbody>
+</table>
+
+<h3><span class=\\"ez-toc-section\\" id=\\"Shipping_Address_shipping_address\\"></span>Shipping Address (<code>/shipping_address</code>)<span class=\\"ez-toc-section-end\\"></span></h3>
+<p>
+  This object contains minFraud response data associated with the shipping address. If the shipping address was not provided in the request or could not be parsed, this object will not be present in the response.
+</p>
+<table class=\\"table table-bordered table-striped\\">
+  <thead>
+    <tr>
+      <th colspan=\\"3\\"></th>
+      <th colspan=\\"3\\">Included in &#8230;</th>
+    </tr>
+    <tr>
+      <th>Key</th>
+      <th>Value Type</th>
+      <th>Description</th>
+      <th>Score?</th>
+      <th>Insights?</th>
+      <th>Factors?</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>is_high_risk</td>
+      <td>boolean</td>
+      <td>This field is <code>true</code> if the shipping address is an address associated with fraudulent transactions. The field is <code>false</code> when the address is not associated with increased risk. The key will only be present when a shipping address is provided.</td>
+      <td></td>
+      <td><i class=\\"icon-check\\"></i></td>
+      <td><i class=\\"icon-check\\"></i></td>
+    </tr>
+    <tr>
+      <td>is_postal_in_city</td>
+      <td>boolean</td>
+      <td>This field is <code>true</code> if the postal code provided with the address is in the city for the address. The field is <code>false</code> when the postal code is not in the city. The key will only be present when a shipping postal code, city, and country are provided.<br><br> We use <a href=\\"https://www.geonames.org/postal-codes/postal-codes-us.html\\">GeoNames data</a> for the postal-city match, which uses the <a href=\\"https://en.wikipedia.org/wiki/ZIP_Code#Preferred_place_names:_ZIP_Codes_and_previous_zoning_lines\\">preferred place name</a> for a US ZIP code. <a href=\\"https://en.wikipedia.org/wiki/ZIP_Code#Preferred_place_names:_ZIP_Codes_and_previous_zoning_lines\\">Alternative place names</a> for US ZIP codes may not trigger a match for this field.</td>
+      <td></td>
+      <td><i class=\\"icon-check\\"></i></td>
+      <td><i class=\\"icon-check\\"></i></td>
+    </tr>
+    <tr>
+      <td>latitude*</td>
+      <td>decimal</td>
+      <td>The approximate <a href=\\"https://en.wikipedia.org/wiki/World_Geodetic_System\\">WGS84</a> latitude associated with the address.</td>
+      <td></td>
+      <td><i class=\\"icon-check\\"></i></td>
+      <td><i class=\\"icon-check\\"></i></td>
+    </tr>
+    <tr>
+      <td>longitude*</td>
+      <td>decimal</td>
+      <td>The approximate <a href=\\"https://en.wikipedia.org/wiki/World_Geodetic_System\\">WGS84</a> longitude associated with the address.</td>
+      <td></td>
+      <td><i class=\\"icon-check\\"></i></td>
+      <td><i class=\\"icon-check\\"></i></td>
+    </tr>
+    <tr>
+      <td>distance_to_ip_location</td>
+      <td>integer</td>
+      <td>The distance in kilometers from the address to the IP location.</td>
+      <td></td>
+      <td><i class=\\"icon-check\\"></i></td>
+      <td><i class=\\"icon-check\\"></i></td>
+    </tr>
+    <tr>
+      <td>distance_to_billing_address</td>
+      <td>integer</td>
+      <td>The distance in kilometers from the shipping address to billing address.</td>
+      <td></td>
+      <td><i class=\\"icon-check\\"></i></td>
+      <td><i class=\\"icon-check\\"></i></td>
+    </tr>
+    <tr>
+      <td>is_in_ip_country</td>
+      <td>boolean</td>
+      <td>This field is <code>true</code> if the shipping address is in the IP country. The field is <code>false</code> when the address is not in the IP country. If the IP address could not be geolocated or no shipping address was provided, then the field will not be included in the response.</td>
+      <td></td>
+      <td><i class=\\"icon-check\\"></i></td>
+      <td><i class=\\"icon-check\\"></i></td>
+    </tr>
+  </tbody>
+</table>
+* <em>Latitude and longitude are not precise and should not be used to identify a particular street address or household.</em><p>
+<h3><span class=\\"ez-toc-section\\" id=\\"Billing_Address_billing_address\\"></span>Billing Address (<code>/billing_address</code>)<span class=\\"ez-toc-section-end\\"></span></h3>
+<p>This object contains minFraud response data associated with the billing address. If the billing address was not provided in the request or could not be parsed, this object will not be present in the response.</p>
+<table class=\\"table table-bordered table-striped\\">
+  <thead>
+    <tr>
+      <th colspan=\\"3\\"></th>
+      <th colspan=\\"3\\">Included in &#8230;</th>
+    </tr>
+    <tr>
+      <th>Key</th>
+      <th>Value Type</th>
+      <th>Description</th>
+      <th>Score?</th>
+      <th>Insights?</th>
+      <th>Factors?</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>is_postal_in_city</td>
+      <td>boolean</td>
+      <td>This field is <code>true</code> if the postal code provided with the address is in the city for the address. The field is <code>false</code> when the postal code is not in the city. The key will only be present when a billing postal code, city, and country have been provided.<br><br> We use <a href=\\"https://www.geonames.org/postal-codes/postal-codes-us.html\\">GeoNames data</a> for the postal-city match, which uses the <a href=\\"https://en.wikipedia.org/wiki/ZIP_Code#Preferred_place_names:_ZIP_Codes_and_previous_zoning_lines\\">preferred place name</a> for a US ZIP code. <a href=\\"https://en.wikipedia.org/wiki/ZIP_Code#Preferred_place_names:_ZIP_Codes_and_previous_zoning_lines\\">Alternative place names</a> for US ZIP codes may not trigger a match for this field.</td>
+      <td></td>
+      <td><i class=\\"icon-check\\"></i></td>
+      <td><i class=\\"icon-check\\"></i></td>
+    </tr>
+    <tr>
+      <td>latitude*</td>
+      <td>decimal</td>
+      <td>The approximate <a href=\\"https://en.wikipedia.org/wiki/World_Geodetic_System\\">WGS84</a> latitude associated with the address.</td>
+      <td></td>
+      <td><i class=\\"icon-check\\"></i></td>
+      <td><i class=\\"icon-check\\"></i></td>
+    </tr>
+    <tr>
+      <td>longitude*</td>
+      <td>decimal</td>
+      <td>The approximate <a href=\\"https://en.wikipedia.org/wiki/World_Geodetic_System\\">WGS84</a> longitude associated with the address.</td>
+      <td></td>
+      <td><i class=\\"icon-check\\"></i></td>
+      <td><i class=\\"icon-check\\"></i></td>
+    </tr>
+    <tr>
+      <td>distance_to_ip_location</td>
+      <td>integer</td>
+      <td>The distance in kilometers from the address to the IP location.</td>
+      <td></td>
+      <td><i class=\\"icon-check\\"></i></td>
+      <td><i class=\\"icon-check\\"></i></td>
+    </tr>
+    <tr>
+      <td>is_in_ip_country</td>
+      <td>boolean</td>
+      <td>This field is <code>true</code> if the address is in the IP country. The field is <code>false</code> when the address is not in the IP country. If the IP address could not be geolocated or no billing address was provided, the field will not be included in the response.</td>
+      <td></td>
+      <td><i class=\\"icon-check\\"></i></td>
+      <td><i class=\\"icon-check\\"></i></td>
+    </tr>
+  </tbody>
+</table>
+* <em>Latitude and longitude are not precise and should not be used to identify a particular street address or household.</em><p>
+<h3><span class=\\"ez-toc-section\\" id=\\"Disposition_disposition\\"></span>Disposition (<code>/disposition</code>)<span class=\\"ez-toc-section-end\\"></span></h3>
+
+<p>
+This object contains information about how a request was handled by
+the <a href=\\"https://www.maxmind.com/en/solutions/minfraud-services/custom-rules\\">custom
+rules</a> you have defined. If your account does not have any
+custom rules defined, then this object will not be present in the response.
+</p>
+
+<table class=\\"table table-bordered table-striped\\">
+  <thead>
+    <tr>
+      <th colspan=\\"3\\"></th>
+      <th colspan=\\"3\\">Included in &#8230;</th>
+    </tr>
+    <tr>
+      <th>Key</th>
+      <th>Value Type</th>
+      <th>Description</th>
+      <th>Score?</th>
+      <th>Insights?</th>
+      <th>Factors?</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>action</td>
+      <td>enum</td>
+      <td><p>This describes how the request was handled. The valid values are:</p>
+        <ul>
+          <li>accept &#8211; this is the default value that is used if none your custom rules match the request</li>
+          <li>reject</li>
+          <li>manual_review</li>
+        </ul>
+      </td>
+      <td><i class=\\"icon-check\\"></i></td>
+      <td><i class=\\"icon-check\\"></i></td>
+      <td><i class=\\"icon-check\\"></i></td>
+    </tr>
+    <tr>
+      <td>reason</td>
+      <td>enum</td>
+      <td><p>This describes why the <code>action</code> was set to a particular value. The valid values are:</p>
+        <ul>
+          <li>default &#8211; no custom rules matched the request</li>
+          <li>custom_rule &#8211; a custom rule was applied and set the <code>action</code></li>
+        </ul>
+      </td>
+      <td><i class=\\"icon-check\\"></i></td>
+      <td><i class=\\"icon-check\\"></i></td>
+      <td><i class=\\"icon-check\\"></i></td>
+    </tr>
+  </tbody>
+</table>
+
+<h3><span class=\\"ez-toc-section\\" id=\\"Subscores_subscores\\"></span>Subscores (<code>/subscores</code>)<span class=\\"ez-toc-section-end\\"></span></h3>
+<p>This object contains subscores for many of the individual components that
+are used in calculating the <code>risk_score</code>.</p> This object is only
+included with minFraud Factors.
+<table class=\\"table table-bordered table-striped\\">
+  <thead>
+    <tr>
+      <th colspan=\\"3\\"></th>
+      <th colspan=\\"3\\">Included in &#8230;</th>
+    </tr>
+    <tr>
+      <th>Key</th>
+      <th>Value Type</th>
+      <th>Description</th>
+      <th>Score?</th>
+      <th>Insights?</th>
+      <th>Factors?</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>avs_result</td>
+      <td>decimal</td>
+      <td> The risk associated with the AVS result. If present, this is a
+           value in the range 0.01 to 99.</td>
+      <td></td>
+      <td></td>
+      <td><i class=\\"icon-check\\"></i></td>
+    </tr>
+    <tr>
+      <td>billing_address</td>
+      <td>decimal</td>
+      <td>The risk associated with the billing address. If present, this is
+          a value in the range 0.01 to 99.</td>
+      <td></td>
+      <td></td>
+      <td><i class=\\"icon-check\\"></i></td>
+    </tr>
+    <tr>
+      <td>billing_address_distance_to_ip_location</td>
+      <td>decimal</td>
+      <td>The risk associated with the distance between the billing address
+          and the location for the given IP address. If present, this is a
+          value in the range 0.01 to 99.</td>
+      <td></td>
+      <td></td>
+      <td><i class=\\"icon-check\\"></i></td>
+    </tr>
+    <tr>
+      <td>browser</td>
+      <td>decimal</td>
+      <td>The risk associated with the browser attributes such as the
+          User-Agent and Accept-Language. If present, this is a value in the
+          range 0.01 to 99.</td>
+      <td></td>
+      <td></td>
+      <td><i class=\\"icon-check\\"></i></td>
+    </tr>
+    <tr>
+      <td>chargeback</td>
+      <td>decimal</td>
+      <td>Individualized risk of chargeback for the given IP address on
+          your account and shop ID.This is only available to users sending
+          chargeback data to MaxMind. If present, this is a value in the
+          range 0.01 to 99.</td>
+      <td></td>
+      <td></td>
+      <td><i class=\\"icon-check\\"></i></td>
+    </tr>
+    <tr>
+      <td>country</td>
+      <td>decimal</td>
+      <td>The risk associated with the country the transaction originated
+          from. If present, this is a value in the range 0.01 to 99.</td>
+      <td></td>
+      <td></td>
+      <td><i class=\\"icon-check\\"></i></td>
+    </tr>
+    <tr>
+      <td>country_mismatch</td>
+      <td>decimal</td>
+      <td>The risk associated with the combination of IP country, card
+          issuer country, billing country, and shipping country. If present,
+          this is a value in the range 0.01 to 99.</td>
+      <td></td>
+      <td></td>
+      <td><i class=\\"icon-check\\"></i></td>
+    </tr>
+    <tr>
+      <td>cvv_result</td>
+      <td>decimal</td>
+      <td>The risk associated with the CVV result. If present, this is a
+          value in the range 0.01 to 99.</td>
+      <td></td>
+      <td></td>
+      <td><i class=\\"icon-check\\"></i></td>
+    </tr>
+    <tr>
+      <td>device</td>
+      <td>decimal</td>
+      <td>The risk associated with the device. If present, this is a
+          value in the range 0.01 to 99.</td>
+      <td></td>
+      <td></td>
+      <td><i class=\\"icon-check\\"></i></td>
+    </tr>      
+    <tr>
+      <td>email_address</td>
+      <td>decimal</td>
+      <td>The risk associated with the particular email address. If
+          present, this is a value in the range 0.01 to 99.</td>
+      <td></td>
+      <td></td>
+      <td><i class=\\"icon-check\\"></i></td>
+    </tr>
+    <tr>
+      <td>email_domain</td>
+      <td>decimal</td>
+      <td>The general risk associated with the email domain. If present,
+          this is a value in the range 0.01 to 99.</td>
+      <td></td>
+      <td></td>
+      <td><i class=\\"icon-check\\"></i></td>
+    </tr>
+    <tr>
+      <td>email_local_part</td>
+      <td>decimal</td>
+      <td>The risk associated with the email address local part (the part of the email address before the @ 
+          symbol). If present, this is a value in the range 0.01 to 99.</td>
+      <td></td>
+      <td></td>
+      <td><i class=\\"icon-check\\"></i></td>
+    </tr>
+    <tr>
+      <td>email_tenure</td>
+      <td>decimal</td>
+      <td><strong>This field has been deprecated.</strong> Please use <code>email_address</code> subscore instead.</td>
+      <td></td>
+      <td></td>
+      <td><i class=\\"icon-check\\"></i></td>
+    </tr>
+    <tr>
+      <td>ip_tenure</td>
+      <td>decimal</td>
+      <td><strong>This field has been deprecated.</strong> Please use <code>risk_score</code> instead.</td>
+      <td></td>
+      <td></td>
+      <td><i class=\\"icon-check\\"></i></td>
+    </tr>
+    <tr>
+      <td>issuer_id_number</td>
+      <td>decimal</td>
+      <td>The risk associated with the particular issuer ID number (IIN)
+          given the billing location and the history of usage of the IIN on
+          your account and shop ID. If present, this is a value in the range
+          0.01 to 99.</td>
+      <td></td>
+      <td></td>
+      <td><i class=\\"icon-check\\"></i></td>
+    </tr>
+    <tr>
+      <td>order_amount</td>
+      <td>decimal</td>
+      <td>The risk associated with the particular order amount for your
+          account and shop ID. If present, this is a value in the range
+          0.01 to 99.</td>
+      <td></td>
+      <td></td>
+      <td><i class=\\"icon-check\\"></i></td>
+    </tr>
+    <tr>
+      <td>phone_number</td>
+      <td>decimal</td>
+      <td>The risk associated with the particular phone number. If present,
+          this is a value in the range 0.01 to 99.</td>
+      <td></td>
+      <td></td>
+      <td><i class=\\"icon-check\\"></i></td>
+    </tr>
+    <tr>
+      <td>shipping_address</td>
+      <td>decimal</td>
+      <td>The risk associated with the shipping address. If present, this is a
+          value in the range 0.01 to 99.</td>
+      <td></td>
+      <td></td>
+      <td><i class=\\"icon-check\\"></i></td>
+    </tr>
+    <tr>
+      <td>shipping_address_distance_to_ip_location</td>
+      <td>decimal</td>
+      <td>The risk associated with the distance between the shipping address
+          and the location for the given IP address. If present, this is a
+          value in the range 0.01 to 99.</td>
+      <td></td>
+      <td></td>
+      <td><i class=\\"icon-check\\"></i></td>
+    </tr>
+    <tr>
+      <td>time_of_day</td>
+      <td>decimal</td>
+      <td>The risk associated with the local time of day of the transaction
+          in the IP address location. If present, this is a value in the range
+          0.01 to 99.</td>
+      <td></td>
+      <td></td>
+      <td><i class=\\"icon-check\\"></i></td>
+    </tr>
+  </tbody>
+</table>
+
+<h3><span class=\\"ez-toc-section\\" id=\\"Warning\\"></span>Warning<span class=\\"ez-toc-section-end\\"></span></h3>
+<table class=\\"table table-bordered table-striped\\">
+  <thead>
+    <tr>
+      <th colspan=\\"3\\"></th>
+      <th colspan=\\"3\\">Included in &#8230;</th>
+    </tr>
+    <tr>
+      <th>Key</th>
+      <th>Value Type</th>
+      <th>Description</th>
+      <th>Score?</th>
+      <th>Insights?</th>
+      <th>Factors?</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>code</td>
+      <td>string (255)</td>
+      <td><p>This value is a machine-readable code identifying the warning. Although more codes may be added in the future, the current codes are:</p>
+        <ul>
+          <li><code>BILLING_CITY_NOT_FOUND</code> &#8211; the billing city could not be found in our database.</li>
+          <li><code>BILLING_COUNTRY_MISSING</code> &#8211; billing address information was provided without providing a billing country.</li>
+          <li><code>BILLING_COUNTRY_NOT_FOUND</code> &#8211; the billing country could not be found in our database.</li>
+          <li><code>BILLING_POSTAL_NOT_FOUND</code> &#8211; the billing postal could not be found in our database.</li>
+          <li><code>INPUT_INVALID</code> &#8211; the value associated with the key does not meet the required constraints, e.g., &#8220;United States&#8221; in a field that requires a two-letter country code.</li>
+          <li><code>INPUT_UNKNOWN</code> &#8211; an unknown key was encountered in the request body.</li>
+          <li><code>IP_ADDRESS_INVALID</code> &#8211; the IP address supplied is not a valid IPv4 or IPv6 address.</li>
+          <li><code>IP_ADDRESS_NOT_FOUND</code> &#8211; the IP address could not be geolocated.</li>
+          <li><code>IP_ADDRESS_RESERVED</code> &#8211; the IP address supplied is in a reserved network.</li>
+          <li><code>SHIPPING_CITY_NOT_FOUND</code> &#8211; the shipping city could not be found in our database.</li>
+          <li><code>SHIPPING_COUNTRY_MISSING</code> &#8211; shipping address information was provided without providing a shipping country.</li>
+          <li><code>SHIPPING_COUNTRY_NOT_FOUND</code> &#8211; the shipping country could not be found in our database.</li>
+          <li><code>SHIPPING_POSTAL_NOT_FOUND</code> &#8211; the shipping postal could not be found in our database.</li>
+        </ul>
+      </td>
+      <td><i class=\\"icon-check\\"></i></td>
+      <td><i class=\\"icon-check\\"></i></td>
+      <td><i class=\\"icon-check\\"></i></td>
+    </tr>
+    <tr>
+      <td>warning</td>
+      <td>string (255)</td>
+      <td>This field provides a human-readable explanation of the warning. The description may change at any time and should not be matched against.</td>
+      <td><i class=\\"icon-check\\"></i></td>
+      <td><i class=\\"icon-check\\"></i></td>
+      <td><i class=\\"icon-check\\"></i></td>
+    </tr>
+    <tr>
+      <td>input_pointer</td>
+      <td><a href=\\"https://tools.ietf.org/html/rfc6901\\">JSON Pointer</a> string</td>
+      <td>A <a href=\\"https://tools.ietf.org/html/rfc6901\\">JSON Pointer</a> to the input field that the warning is associated with. For instance, if the warning was about the billing city, this would be <code>/billing/city</code>. If it was for the price in the second shopping cart item, it would be <code>/shopping_cart/1/price</code></td>
+      <td><i class=\\"icon-check\\"></i></td>
+      <td><i class=\\"icon-check\\"></i></td>
+      <td><i class=\\"icon-check\\"></i></td>
+    </tr>
+  </tbody>
+</table>
+
+<h2><span class=\\"ez-toc-section\\" id=\\"Response_Body_Examples\\"></span>Response Body Examples<span class=\\"ez-toc-section-end\\"></span></h2>
+
+<div class=\\"accordion\\" id=\\"accordion2\\">
+  <div class=\\"accordion-group\\">
+    <div class=\\"accordion-heading\\">
+      <a class=\\"accordion-toggle\\" data-toggle=\\"collapse\\"
+      data-parent=\\"#accordion2\\" href=\\"#scoreResponse\\">Score Response Example</a>
+    </div>
+
+    <div id=\\"scoreResponse\\" class=\\"accordion-body collapse in\\">
+      <div class=\\"accordion-inner\\">
+        <pre><code class=\\"language-json\\">{
+    \\"id\\": \\"5bc5d6c2-b2c8-40af-87f4-6d61af86b6ae\\",
+    \\"risk_score\\": 0.01,
+    \\"funds_remaining\\": 25.00,
+    \\"queries_remaining\\": 5000,
+
+    \\"ip_address\\": {
+        \\"risk\\": 0.01
+    },
+
+    \\"disposition\\": {
+         \\"action\\": \\"accept\\",
+         \\"reason\\": \\"default\\"
+    },
+
+    \\"warnings\\": [
+        {
+            \\"code\\": \\"INPUT_INVALID\\",
+            \\"warning\\": \\"Encountered value at /shipping/city that does not meet the required constraints\\",
+            \\"input_pointer\\": \\"/shipping/city\\"
+        }
+    ]
+}</code></pre>
+      </div>
+    </div>
+  </div>
+
+  <div class=\\"accordion-group\\">
+    <div class=\\"accordion-heading\\">
+      <a class=\\"accordion-toggle\\" data-toggle=\\"collapse\\"
+      data-parent=\\"#accordion2\\" href=\\"#insightsResponse\\">Insights Response Example</a>
+    </div>
+
+    <div id=\\"insightsResponse\\" class=\\"accordion-body collapse\\">
+      <div class=\\"accordion-inner\\">
+        <p>Note: This example shows sample data for illustration purposes.</p>
+        <pre><code class=\\"language-json\\">{
+    \\"id\\": \\"5bc5d6c2-b2c8-40af-87f4-6d61af86b6ae\\",
+    \\"risk_score\\": 0.01,
+    \\"funds_remaining\\": 25.00,
+    \\"queries_remaining\\": 1666,
+
+    \\"ip_address\\": {
+        \\"risk\\": 0.01,
+        \\"city\\":  {
+            \\"confidence\\":  25,
+            \\"geoname_id\\": 54321,
+            \\"names\\":  {
+                \\"de\\":    \\"Los Angeles\\",
+                \\"en\\":    \\"Los Angeles\\",
+                \\"es\\":    \\"Los Ángeles\\",
+                \\"fr\\":    \\"Los Angeles\\",
+                \\"ja\\":    \\"ロサンゼルス市\\",
+                \\"pt-BR\\":  \\"Los Angeles\\",
+                \\"ru\\":    \\"Лос-Анджелес\\",
+                \\"zh-CN\\": \\"洛杉矶\\"
+            }
+        },
+        \\"continent\\":  {
+            \\"code\\":       \\"NA\\",
+            \\"geoname_id\\": 123456,
+            \\"names\\":  {
+                \\"de\\":    \\"Nordamerika\\",
+                \\"en\\":    \\"North America\\",
+                \\"es\\":    \\"América del Norte\\",
+                \\"fr\\":    \\"Amérique du Nord\\",
+                \\"ja\\":    \\"北アメリカ\\",
+                \\"pt-BR\\": \\"América do Norte\\",
+                \\"ru\\":    \\"Северная Америка\\",
+                \\"zh-CN\\": \\"北美洲\\"
+
+            }
+        },
+        \\"country\\":  {
+            \\"confidence\\":  75,
+            \\"geoname_id\\":  6252001,
+            \\"is_in_european_union\\": true,
+            \\"iso_code\\":    \\"US\\",
+            \\"names\\":  {
+                \\"de\\":     \\"USA\\",
+                \\"en\\":     \\"United States\\",
+                \\"es\\":     \\"Estados Unidos\\",
+                \\"fr\\":     \\"États-Unis\\",
+                \\"ja\\":     \\"アメリカ合衆国\\",
+                \\"pt-BR\\":  \\"Estados Unidos\\",
+                \\"ru\\":     \\"США\\",
+                \\"zh-CN\\":  \\"美国\\"
+            }
+        },
+        \\"location\\":  {
+            \\"accuracy_radius\\":   20,
+            \\"average_income\\":    50321,
+            \\"latitude\\":          37.6293,
+            \\"local_time\\":        \\"2015-04-26T01:37:17-08:00\\",
+            \\"longitude\\":         -122.1163,
+            \\"metro_code\\":        807,
+            \\"population_density\\":  7122,
+            \\"time_zone\\":         \\"America/Los_Angeles\\"
+        },
+        \\"postal\\": {
+            \\"code\\":       \\"90001\\",
+            \\"confidence\\": 10
+        },
+        \\"registered_country\\":  {
+            \\"geoname_id\\":  6252001,
+            \\"is_in_european_union\\": true,
+            \\"iso_code\\":    \\"US\\",
+            \\"names\\":  {
+                \\"de\\":     \\"USA\\",
+                \\"en\\":     \\"United States\\",
+                \\"es\\":     \\"Estados Unidos\\",
+                \\"fr\\":     \\"États-Unis\\",
+                \\"ja\\":     \\"アメリカ合衆国\\",
+                \\"pt-BR\\":  \\"Estados Unidos\\",
+                \\"ru\\":     \\"США\\",
+                \\"zh-CN\\":  \\"美国\\"
+            }
+        },
+        \\"represented_country\\":  {
+            \\"geoname_id\\":  6252001,
+            \\"is_in_european_union\\": true,
+            \\"iso_code\\":    \\"US\\",
+            \\"names\\":  {
+                \\"de\\":     \\"USA\\",
+                \\"en\\":     \\"United States\\",
+                \\"es\\":     \\"Estados Unidos\\",
+                \\"fr\\":     \\"États-Unis\\",
+                \\"ja\\":     \\"アメリカ合衆国\\",
+                \\"pt-BR\\":  \\"Estados Unidos\\",
+                \\"ru\\":     \\"США\\",
+                \\"zh-CN\\":  \\"美国\\"
+            },
+            \\"type\\": \\"military\\"
+        },
+        \\"subdivisions\\":  [
+            {
+                \\"confidence\\":  50,
+                \\"geoname_id\\":  5332921,
+                \\"iso_code\\":    \\"CA\\",
+                \\"names\\":  {
+                    \\"de\\":    \\"Kalifornien\\",
+                    \\"en\\":    \\"California\\",
+                    \\"es\\":    \\"California\\",
+                    \\"fr\\":    \\"Californie\\",
+                    \\"ja\\":    \\"カリフォルニア\\",
+                    \\"ru\\":    \\"Калифорния\\",
+                    \\"zh-CN\\": \\"加州\\"
+                }
+            }
+        ],
+        \\"traits\\": {
+            \\"autonomous_system_number\\":      1239,
+            \\"autonomous_system_organization\\": \\"Linkem IR WiMax Network\\",
+            \\"domain\\":                        \\"example.com\\",
+            \\"ip_address\\":                    \\"1.2.3.4\\",
+            \\"is_anonymous\\":                  true,
+            \\"is_anonymous_proxy\\":            true,
+            \\"is_anonymous_vpn\\":              true,
+            \\"is_hosting_provider\\":           true,
+            \\"is_public_proxy\\":               true,
+            \\"is_residential_proxy\\":          true,
+            \\"is_satellite_provider\\":         true,
+            \\"is_tor_exit_node\\":              true,
+            \\"isp\\":                           \\"Linkem spa\\",
+            \\"network\\":                       \\"1.2.3.0/24\\",
+            \\"organization\\":                  \\"Linkem IR WiMax Network\\",
+            \\"static_ip_score\\":               1.5,
+            \\"user_count\\":                    1,
+            \\"user_type\\":                     \\"traveler\\"
+        }
+    },
+
+    \\"credit_card\\": {
+        \\"issuer\\": {
+            \\"name\\": \\"Bank of America\\",
+            \\"matches_provided_name\\": true,
+            \\"phone_number\\": \\"800-732-9194\\",
+            \\"matches_provided_phone_number\\": true
+        },
+        \\"brand\\": \\"Visa\\",
+        \\"country\\": \\"US\\",
+        \\"is_business\\": true,
+        \\"is_issued_in_billing_address_country\\": true,
+        \\"is_prepaid\\": true,
+        \\"is_virtual\\": true,
+        \\"type\\": \\"credit\\"
+    },
+
+    \\"device\\": {
+        \\"confidence\\": 99,
+        \\"id\\": \\"7835b099-d385-4e5b-969e-7df26181d73b\\",
+        \\"last_seen\\": \\"2016-06-08T14:16:38Z\\",
+        \\"local_time\\": \\"2018-01-02T10:40:11-08:00\\"
+    },
+
+    \\"email\\": {
+        \\"domain\\": {
+            \\"first_seen\\": \\"2015-01-20\\",
+        },
+        \\"first_seen\\": \\"2016-02-03\\",
+        \\"is_disposable\\": false,
+        \\"is_free\\": false,
+        \\"is_high_risk\\": true
+    },
+
+    \\"shipping_address\\": {
+        \\"is_high_risk\\": true,
+        \\"is_postal_in_city\\": true,
+        \\"latitude\\": 37.632,
+        \\"longitude\\": -122.313,
+        \\"distance_to_ip_location\\": 15,
+        \\"distance_to_billing_address\\": 22,
+        \\"is_in_ip_country\\": true
+    },
+
+    \\"billing_address\\": {
+        \\"is_postal_in_city\\": true,
+        \\"latitude\\": 37.545,
+        \\"longitude\\": -122.421,
+        \\"distance_to_ip_location\\": 100,
+        \\"is_in_ip_country\\": true
+    },
+
+    \\"disposition\\": {
+         \\"action\\": \\"accept\\",
+         \\"reason\\": \\"default\\"
+    },
+
+    \\"warnings\\": [
+        {
+            \\"code\\": \\"INPUT_INVALID\\",
+            \\"warning\\": \\"Encountered value at /shipping/city that does not meet the required constraints\\",
+            \\"input_pointer\\": \\"/shipping/city\\"
+        }
+    ]
+}</code></pre>
+      </div>
+    </div>
+  </div>
+
+  <div class=\\"accordion-group\\">
+    <div class=\\"accordion-heading\\">
+      <a class=\\"accordion-toggle\\" data-toggle=\\"collapse\\"
+      data-parent=\\"#accordion2\\" href=\\"#factorsResponse\\">Factors Response Example</a>
+    </div>
+
+    <div id=\\"factorsResponse\\" class=\\"accordion-body collapse\\">
+      <div class=\\"accordion-inner\\">
+        <p>Note: This example shows sample data for illustration purposes.</p>
+        <pre><code class=\\"language-json\\">{
+    \\"id\\": \\"5bc5d6c2-b2c8-40af-87f4-6d61af86b6ae\\",
+    \\"risk_score\\": 0.01,
+    \\"funds_remaining\\": 25.00,
+    \\"queries_remaining\\": 1666,
+
+    \\"ip_address\\": {
+        \\"risk\\": 0.01,
+        \\"city\\":  {
+            \\"confidence\\":  25,
+            \\"geoname_id\\": 54321,
+            \\"names\\":  {
+                \\"de\\":    \\"Los Angeles\\",
+                \\"en\\":    \\"Los Angeles\\",
+                \\"es\\":    \\"Los Ángeles\\",
+                \\"fr\\":    \\"Los Angeles\\",
+                \\"ja\\":    \\"ロサンゼルス市\\",
+                \\"pt-BR\\":  \\"Los Angeles\\",
+                \\"ru\\":    \\"Лос-Анджелес\\",
+                \\"zh-CN\\": \\"洛杉矶\\"
+            }
+        },
+        \\"continent\\":  {
+            \\"code\\":       \\"NA\\",
+            \\"geoname_id\\": 123456,
+            \\"names\\":  {
+                \\"de\\":    \\"Nordamerika\\",
+                \\"en\\":    \\"North America\\",
+                \\"es\\":    \\"América del Norte\\",
+                \\"fr\\":    \\"Amérique du Nord\\",
+                \\"ja\\":    \\"北アメリカ\\",
+                \\"pt-BR\\": \\"América do Norte\\",
+                \\"ru\\":    \\"Северная Америка\\",
+                \\"zh-CN\\": \\"北美洲\\"
+
+            }
+        },
+        \\"country\\":  {
+            \\"confidence\\":  75,
+            \\"geoname_id\\":  6252001,
+            \\"is_high_risk\\": true,
+            \\"is_in_european_union\\": true,
+            \\"iso_code\\":    \\"US\\",
+            \\"names\\":  {
+                \\"de\\":     \\"USA\\",
+                \\"en\\":     \\"United States\\",
+                \\"es\\":     \\"Estados Unidos\\",
+                \\"fr\\":     \\"États-Unis\\",
+                \\"ja\\":     \\"アメリカ合衆国\\",
+                \\"pt-BR\\":  \\"Estados Unidos\\",
+                \\"ru\\":     \\"США\\",
+                \\"zh-CN\\":  \\"美国\\"
+            }
+        },
+        \\"location\\":  {
+            \\"accuracy_radius\\":   20,
+            \\"average_income\\":    50321,
+            \\"latitude\\":          37.6293,
+            \\"local_time\\":        \\"2015-04-26T01:37:17-08:00\\",
+            \\"longitude\\":         -122.1163,
+            \\"metro_code\\":        807,
+            \\"population_density\\":  7122,
+            \\"time_zone\\":         \\"America/Los_Angeles\\"
+        },
+        \\"postal\\": {
+            \\"code\\":       \\"90001\\",
+            \\"confidence\\": 10
+        },
+        \\"registered_country\\":  {
+            \\"geoname_id\\":  6252001,
+            \\"is_in_european_union\\": true,
+            \\"iso_code\\":    \\"US\\",
+            \\"names\\":  {
+                \\"de\\":     \\"USA\\",
+                \\"en\\":     \\"United States\\",
+                \\"es\\":     \\"Estados Unidos\\",
+                \\"fr\\":     \\"États-Unis\\",
+                \\"ja\\":     \\"アメリカ合衆国\\",
+                \\"pt-BR\\":  \\"Estados Unidos\\",
+                \\"ru\\":     \\"США\\",
+                \\"zh-CN\\":  \\"美国\\"
+            }
+        },
+        \\"represented_country\\":  {
+            \\"geoname_id\\":  6252001,
+            \\"is_in_european_union\\": true,
+            \\"iso_code\\":    \\"US\\",
+            \\"names\\":  {
+                \\"de\\":     \\"USA\\",
+                \\"en\\":     \\"United States\\",
+                \\"es\\":     \\"Estados Unidos\\",
+                \\"fr\\":     \\"États-Unis\\",
+                \\"ja\\":     \\"アメリカ合衆国\\",
+                \\"pt-BR\\":  \\"Estados Unidos\\",
+                \\"ru\\":     \\"США\\",
+                \\"zh-CN\\":  \\"美国\\"
+            },
+            \\"type\\": \\"military\\"
+        },
+        \\"subdivisions\\":  [
+            {
+                \\"confidence\\":  50,
+                \\"geoname_id\\":  5332921,
+                \\"iso_code\\":    \\"CA\\",
+                \\"names\\":  {
+                    \\"de\\":    \\"Kalifornien\\",
+                    \\"en\\":    \\"California\\",
+                    \\"es\\":    \\"California\\",
+                    \\"fr\\":    \\"Californie\\",
+                    \\"ja\\":    \\"カリフォルニア\\",
+                    \\"ru\\":    \\"Калифорния\\",
+                    \\"zh-CN\\": \\"加州\\"
+                }
+            }
+        ],
+        \\"traits\\": {
+            \\"autonomous_system_number\\":      1239,
+            \\"autonomous_system_organization\\": \\"Linkem IR WiMax Network\\",
+            \\"domain\\":                        \\"example.com\\",
+            \\"ip_address\\":                    \\"1.2.3.4\\",
+            \\"is_anonymous\\":                  true,
+            \\"is_anonymous_proxy\\":            true,
+            \\"is_anonymous_vpn\\":              true,
+            \\"is_hosting_provider\\":           true,
+            \\"is_public_proxy\\":               true,
+            \\"is_residential_proxy\\":          true,
+            \\"is_satellite_provider\\":         true,
+            \\"is_tor_exit_node\\":              true,
+            \\"isp\\":                           \\"Linkem spa\\",
+            \\"network\\":                       \\"1.2.3.0/24\\",
+            \\"organization\\":                  \\"Linkem IR WiMax Network\\",
+            \\"static_ip_score\\":               1.5,
+            \\"user_count\\":                    1,
+            \\"user_type\\":                     \\"traveler\\"
+        }
+    },
+
+    \\"credit_card\\": {
+        \\"issuer\\": {
+            \\"name\\": \\"Bank of America\\",
+            \\"matches_provided_name\\": true,
+            \\"phone_number\\": \\"800-732-9194\\",
+            \\"matches_provided_phone_number\\": true
+        },
+        \\"brand\\": \\"Visa\\",
+        \\"country\\": \\"US\\",
+        \\"is_business\\": true,
+        \\"is_issued_in_billing_address_country\\": true,
+        \\"is_prepaid\\": true,
+        \\"is_virtual\\": true,
+        \\"type\\": \\"credit\\"
+    },
+
+    \\"device\\": {
+        \\"confidence\\": 99,
+        \\"id\\": \\"7835b099-d385-4e5b-969e-7df26181d73b\\",
+        \\"last_seen\\": \\"2016-06-08T14:16:38Z\\",
+        \\"local_time\\": \\"2018-01-02T10:40:11-08:00\\"
+    },
+
+    \\"email\\": {
+        \\"domain\\": {
+            \\"first_seen\\": \\"2015-01-20\\",
+        },
+        \\"first_seen\\": \\"2016-02-03\\",
+        \\"is_disposable\\": false,
+        \\"is_free\\": false,
+        \\"is_high_risk\\": true
+    },
+
+    \\"shipping_address\\": {
+        \\"is_high_risk\\": true,
+        \\"is_postal_in_city\\": true,
+        \\"latitude\\": 37.632,
+        \\"longitude\\": -122.313,
+        \\"distance_to_ip_location\\": 15,
+        \\"distance_to_billing_address\\": 22,
+        \\"is_in_ip_country\\": true
+    },
+
+    \\"billing_address\\": {
+        \\"is_postal_in_city\\": true,
+        \\"latitude\\": 37.545,
+        \\"longitude\\": -122.421,
+        \\"distance_to_ip_location\\": 100,
+        \\"is_in_ip_country\\": true
+    },
+
+    \\"disposition\\": {
+         \\"action\\": \\"accept\\",
+         \\"reason\\": \\"default\\"
+    },
+
+    \\"subscores\\": {
+        \\"avs_result\\": 0.01,
+        \\"billing_address\\": 0.02,
+        \\"billing_address_distance_to_ip_location\\": 0.03,
+        \\"browser\\": 0.04,
+        \\"chargeback\\": 0.05,
+        \\"country\\": 0.06,
+        \\"country_mismatch\\": 0.07,
+        \\"cvv_result\\": 0.08,
+        \\"device\\": 0.09,
+        \\"email_address\\": 0.10,
+        \\"email_domain\\": 0.11,
+        \\"email_local_part\\": 0.12,
+        \\"issuer_id_number\\": 0.13,
+        \\"order_amount\\": 0.14,
+        \\"phone_number\\": 0.15,
+        \\"shipping_address\\": 0.16,
+        \\"shipping_address_distance_to_ip_location\\": 0.17,
+        \\"time_of_day\\": 0.18
+    },
+
+    \\"warnings\\": [
+        {
+            \\"code\\": \\"INPUT_INVALID\\",
+            \\"warning\\": \\"Encountered value at /shipping/city that does not meet the required constraints\\",
+            \\"input_pointer\\": \\"/shipping/city\\"
+        }
+    ]
+}</code></pre>
+      </div>
+    </div>
+  </div>
+
+  <div class=\\"accordion-group\\">
+    <div class=\\"accordion-heading\\">
+      <a class=\\"accordion-toggle\\" data-toggle=\\"collapse\\"
+      data-parent=\\"#accordion2\\" href=\\"#errorResponse\\">Error Response Example</a>
+    </div>
+
+    <div id=\\"errorResponse\\" class=\\"accordion-body collapse\\">
+      <div class=\\"accordion-inner\\">
+        <pre><code class=\\"language-json\\">{
+    \\"code\\": \\"INSUFFICIENT_FUNDS\\",
+    \\"error\\": \\"You do not have sufficient funds to use this service.\\"
+}</code></pre>
+      </div>
+    </div>
+  </div>
+</div>
+
+<h2><span class=\\"ez-toc-section\\" id=\\"Errors\\"></span>Errors<span class=\\"ez-toc-section-end\\"></span></h2>
+<p>When the server returns an error (4xx or 5xx), the response may include a JSON document in the body. This document is a single object with the keys <code>code</code> and <code>error</code>. The <code>code</code> field is a static error code for machine use. The value of any given code will never change, though codes can be added or removed. The <code>error</code> field is a human-readable description of the error and may change at any time.</p>
+<p>Not all errors include a JSON body. An error in content negotiation will not include a body, nor will many 5xx errors, which typically happen outside of our web service request handling code. You should check the <code>Content-Type</code> type of an error response before attempting to decode the body as JSON.</p>
+<p>In addition to the errors documented below, client code should also be prepared to handle any valid HTTP 4xx or 5xx status code.</p>
+<table class=\\"table table-bordered table-striped error-codes\\">
+  <thead>
+    <tr>
+      <th>Code</th>
+      <th class=\\"status-code\\">HTTP Status</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>JSON_INVALID</td>
+      <td>400 Bad Request</td>
+      <td>
+        <p>We cannot decode the body as a JSON object.</p>
+      </td>
+    </tr>
+    <tr>
+      <td>REQUEST_INVALID</td>
+      <td>400 Bad Request</td>
+      <td>
+        <p>The request body is valid JSON but contains no valid input values.</p>
+      </td>
+    </tr>
+    <tr>
+      <td>AUTHORIZATION_INVALID</td>
+      <td>401 Unauthorized</td>
+      <td>
+        <p>You have supplied an invalid <a href=\\"https://www.maxmind.com/en/my_license_key\\">MaxMind account ID and/or license key</a> in the <a href=\\"#Authorization\\">Authorization</a> header.</p>
+      </td>
+    </tr>
+    <tr>
+      <td>LICENSE_KEY_REQUIRED</td>
+      <td>401 Unauthorized</td>
+      <td>
+        <p>You have not supplied a <a href=\\"https://www.maxmind.com/en/my_license_key\\">MaxMind license key</a> in the <a href=\\"#Authorization\\">Authorization</a> header.</p>
+      </td>
+    </tr>
+    <tr>
+      <td>ACCOUNT_ID_REQUIRED</td>
+      <td>401 Unauthorized</td>
+      <td>
+        <p>You have not supplied a <a href=\\"https://www.maxmind.com/en/my_license_key\\">MaxMind account ID</a> in the <a href=\\"#Authorization\\">Authorization</a> header.</p>
+      </td>
+    </tr>
+    <tr>
+      <td>INSUFFICIENT_FUNDS</td>
+      <td>402 Payment Required</td>
+      <td>
+        <p>The license key you have provided does not have sufficient funds to use this service. Please <a href=\\"https://www.maxmind.com/en/purchase-minfraud-services\\">purchase more service credits</a>.</p>
+      </td>
+    </tr>
+    <tr>
+      <td>PERMISSION_REQUIRED</td>
+      <td>403 Forbidden</td>
+      <td><p>You do not have permission to use the service. Please contact <a href=\\"mailto:support@maxmind.com\\">support@maxmind.com</a> for more information.</p>
+      </td>
+    </tr>
+    <tr>
+      <td>(none)</td>
+      <td>403 Forbidden</td>
+      <td><p>This status is returned when the request body is larger than 20,000 bytes.</p>
+    </tr>
+    <tr>
+      <td>(none)</td>
+      <td>415 Unsupported Media Type</td>
+      <td>
+        <p>Your request included a <code>Content-Type</code> header that is not supported. For <code>GET</code> requests, this means the web service cannot return content of that type. For <code>PUT</code> and <code>POST</code> queries, this means the web service cannot parse a request body of that type.</p>
+      </td>
+    </tr>
+    <tr>
+      <td>(none)</td>
+      <td>503 Service Not Available</td>
+      <td>
+        <p>There is a problem with the web service server. You can try this request again later.</p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<h2><span class=\\"ez-toc-section\\" id=\\"Release_Notes-2\\"></span>Release Notes<span class=\\"ez-toc-section-end\\"></span></h2>
+<p>Changes to the minFraud web services are documented in our <a href=\\"https://dev.maxmind.com/minfraud/release-notes/\\">release notes</a>.</p>
+<h2><span class=\\"ez-toc-section\\" id=\\"Versioning\\"></span>Versioning<span class=\\"ez-toc-section-end\\"></span></h2>
+<p>The minFraud Score and minFraud Insights web services use two part versions. Our current release is version 2.0. The major version number will remain at 2 for the foreseeable future.</p>
+<p>The minor version will only change if there are breaking changes in the web service. A breaking change is one that breaks client code that follows the documentation on this page. Breaking changes include changing the type of an existing field, deleting a field entirely, or changing URIs.</p>
+<p>All changes to the web services will be documented in the <a href=\\"https://dev.maxmind.com/minfraud/release-notes/\\">minFraud release notes</a>, whether or not the version number is changed.</p>
+<p>The following changes are <strong>not</strong> considered to be breaking changes and will not be accompanied by a version number change:</p>
+<ul>
+  <li>Increased validation of inputs that causes a warning to be returned when there previously was not one.</li>
+  <li>Adding a new request or response field, either at the top level of the structure or in one particular object such as the <code>billing</code> or <code>credit_card</code>. Client code should be written to allow for new fields to appear.</li>
+  <li>Adding new values to enum fields such as <code>processor</code>.</li>
+  <li>Adding or removing warning or error codes, and/or changing the body type for an error. Client code should always check the <code>Content-Type</code> header for any error response. Client code should also be prepared to handle any valid HTTP 4xx or 5xx status code.</li>
+  <li>Adding a new service with a new path.</li>
+</ul>
+<h2><span class=\\"ez-toc-section\\" id=\\"License\\"></span>License<span class=\\"ez-toc-section-end\\"></span></h2>
+These services incorporate <a href=\\"https://www.geonames.org\\">GeoNames</a> geographical data, which is made available under the <a href=\\"https://creativecommons.org/licenses/by/4.0/\\">Creative Commons Attribution 4.0 License</a>.
+
+	</div><!-- .entry-content -->
+	</article><!-- #post-1604 -->
+		</div><!-- #content -->
+			</div><!-- #primary -->
+</div>
+            <div class=\\"row-fluid\\">
+                <footer id=\\"colophon\\" role=\\"contentinfo\\" class=\\"offset3 span9\\">
+                    <hr />
+                                        <div id=\\"page-footer\\" class=\\"clearfix\\">
+                        <div class=\\"menu-footer-container\\"><ul id=\\"menu-footer\\" class=\\"inline\\"><li id=\\"menu-item-1386\\" class=\\"menu-item menu-item-type-custom menu-item-object-custom menu-item-1386\\"><a href=\\"https://www.maxmind.com/en/terms_of_use\\">Terms of Use</a></li>
+<li id=\\"menu-item-1387\\" class=\\"menu-item menu-item-type-custom menu-item-object-custom menu-item-1387\\"><a href=\\"https://www.maxmind.com/en/privacy-policy\\">Privacy Policy</a></li>
+<li id=\\"menu-item-1388\\" class=\\"menu-item menu-item-type-custom menu-item-object-custom menu-item-1388\\"><a href=\\"https://www.maxmind.com/en/contact\\">Contact</a></li>
+<li id=\\"menu-item-1389\\" class=\\"menu-item menu-item-type-custom menu-item-object-custom menu-item-1389\\"><a href=\\"https://blog.maxmind.com/\\">Blog</a></li>
+<li id=\\"menu-item-1390\\" class=\\"menu-item menu-item-type-custom menu-item-object-custom menu-item-1390\\"><a href=\\"https://twitter.com/maxmind\\">Twitter</a></li>
+<li id=\\"menu-item-3544\\" class=\\"menu-item menu-item-type-custom menu-item-object-custom menu-item-3544\\"><a href=\\"https://www.maxmind.com/en/privacy-policy#additional-disclosures-for-california-residents\\">Do Not Sell My Personal Information</a></li>
+<li id=\\"menu-item-3545\\" class=\\"menu-item menu-item-type-custom menu-item-object-custom menu-item-3545\\"><a href=\\"https://www.maxmind.com/en/privacy-policy#california-notice-of-collection\\">Notice of Collection</a></li>
+</ul></div>                        <p>MaxMind, GeoIP, minFraud, and related trademarks are the trademarks of MaxMind, Inc.</p>
+                        <p>Copyright&copy; 2012-2021 MaxMind, Inc. All Rights Reserved.</p>
+                    </div><!-- #page-footer .well .clearfix -->
+                                    </footer><!-- #colophon -->
+            </div>
+                    </div><!-- .container -->
+        <script type='text/javascript' src='https://43jvg82rnbo4fbuxm18it39y-wpengine.netdna-ssl.com/wp-content/themes/dev-site-theme/js/jquery-3.4.1.min.js' id='our-jquery-js'></script>
+<script type='text/javascript' src='https://43jvg82rnbo4fbuxm18it39y-wpengine.netdna-ssl.com/wp-content/themes/dev-site-theme/js/bootstrap.min.js?ver=2.0.3' id='maxmind-bootstrap-js'></script>
+<script type='text/javascript' src='https://43jvg82rnbo4fbuxm18it39y-wpengine.netdna-ssl.com/wp-content/themes/dev-site-theme/js/banner.js?ver=0.0.3' id='banner-js'></script>
+<script type='text/javascript' src='https://43jvg82rnbo4fbuxm18it39y-wpengine.netdna-ssl.com/wp-content/themes/dev-site-theme/js/prism.js?ver=1.0.1' id='prism-js'></script>
+<script type='text/javascript' src='https://43jvg82rnbo4fbuxm18it39y-wpengine.netdna-ssl.com/wp-content/themes/dev-site-theme/js/the-bootstrap.min.js?ver=2.0.1' id='the-bootstrap-js'></script>
+<script type='text/javascript' src='https://43jvg82rnbo4fbuxm18it39y-wpengine.netdna-ssl.com/wp-includes/js/wp-embed.min.js?ver=5.5.3' id='wp-embed-js'></script>
+    </body>
+</html>
+"
+`;
