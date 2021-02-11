@@ -21,8 +21,13 @@
     "public": "public",
     "redirects": [
       {
-        "destination": "/",
-        "source": "/foo",
+        "destination": "/geoip/geolocate-an-ip/databases",
+        "source": "/geoip/geoip2/downloadable",
+        "type": 302
+      },
+      {
+        "destination": "/geoip/geolocate-an-ip/web-services",
+        "source": "/geoip/geoip2/web-services",
         "type": 302
       }
     ],
