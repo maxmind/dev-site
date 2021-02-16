@@ -16,9 +16,10 @@ import 'prismjs/plugins/normalize-whitespace/prism-normalize-whitespace.js';
 
 interface ICode {
   children: React.ReactNode;
-  hightlightLines?: string;
+  highlightLines?: string;
   language: ILanguage;
   showInvisibles?: boolean;
+  showLineNumbers?: boolean;
 }
 
 const hasScrollbar = (
@@ -26,8 +27,15 @@ const hasScrollbar = (
 ): boolean => $el.scrollHeight > $el.offsetHeight;
 
 const Code: React.FC<ICode> = (props) => {
+  const {
+    children,
+    language,
+    highlightLines,
+    showLineNumbers,
+    showInvisibles,
+  } = props;
+
   const preRef = React.createRef<HTMLPreElement>();
-  const language = props.language;
   const [
     isExpandable,
     setIsExpandable,
@@ -155,18 +163,18 @@ const Code: React.FC<ICode> = (props) => {
         className={classNames(
           `language-${language.id}`,
           {
-            'line-numbers': !language.prismSettings.cli,
+            'line-numbers': !language.prismSettings.cli && showLineNumbers,
             [styles['invisibles--hidden']]: (
-              language.prismSettings.cli || !props.showInvisibles
+              language.prismSettings.cli || !showInvisibles
             ),
           },
           styles.pre
         )}
         {...language.prismSettings.cli}
-        data-line={props.hightlightLines}
+        data-line={highlightLines}
         ref={preRef}
       >
-        {props.children}
+        {children}
       </pre>
       {isExpandable && (
         <button
@@ -181,12 +189,18 @@ const Code: React.FC<ICode> = (props) => {
   );
 };
 
+Code.defaultProps = {
+  showLineNumbers: true,
+};
+
 Code.propTypes = {
   children: PropTypes.node.isRequired,
-  hightlightLines: PropTypes.string,
+  highlightLines: PropTypes.string,
   language: PropTypes.any.isRequired,
   // eslint-disable-next-line react/boolean-prop-naming
   showInvisibles: PropTypes.bool,
+  // eslint-disable-next-line react/boolean-prop-naming
+  showLineNumbers: PropTypes.bool.isRequired,
 };
 
 export default Code;

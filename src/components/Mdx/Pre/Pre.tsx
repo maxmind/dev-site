@@ -13,16 +13,24 @@ import Wrapper from './Wrapper';
 import styles from './Pre.module.scss';
 
 interface IPre {
+  className: string;
   hasWrapper?: boolean;
   highlightLines?: string;
   nav?: React.ReactElement<React.HTMLProps<HTMLElement>>;
+  showLineNumbers?: boolean;
 }
 
 const extractCli = (className: string): string => className
   .startsWith('language-cli-') ? 'language-markdown' : className;
 
 const Pre: React.FC<React.HTMLProps<HTMLPreElement> & IPre> = (props) => {
-  const { hasWrapper = true } = props;
+  const {
+    children,
+    className,
+    hasWrapper,
+    highlightLines,
+    showLineNumbers,
+  } = props;
 
   const { isClient, key } = useIsClient();
 
@@ -41,8 +49,7 @@ const Pre: React.FC<React.HTMLProps<HTMLPreElement> & IPre> = (props) => {
     setShowInvisibles,
   ] = React.useState(true);
 
-  let child =
-    React.Children.toArray(props.children)[0] as React.ReactElement;
+  let child = React.Children.toArray(children)[0] as React.ReactElement;
 
   const extractedClassName = extractCli(child.props.className);
 
@@ -118,9 +125,10 @@ const Pre: React.FC<React.HTMLProps<HTMLPreElement> & IPre> = (props) => {
           {message}
         </Message>
         <Code
-          hightlightLines={props.highlightLines}
+          highlightLines={highlightLines}
           language={language}
           showInvisibles={showInvisibles}
+          showLineNumbers={showLineNumbers}
         >
           {child}
         </Code>
@@ -131,7 +139,7 @@ const Pre: React.FC<React.HTMLProps<HTMLPreElement> & IPre> = (props) => {
   if (hasWrapper) {
     return (
       <Wrapper
-        className={props.className}
+        className={className}
         key={key}
       >
         {codeExample}
@@ -140,15 +148,19 @@ const Pre: React.FC<React.HTMLProps<HTMLPreElement> & IPre> = (props) => {
   }
 
   return codeExample;
+};
 
+Pre.defaultProps = {
+  hasWrapper: true,
 };
 
 Pre.propTypes = {
   children: PropTypes.node,
-  className: PropTypes.string,
+  className: PropTypes.string.isRequired,
   hasWrapper: PropTypes.bool,
   highlightLines: PropTypes.string,
   nav: PropTypes.any,
+  showLineNumbers: PropTypes.bool,
 };
 
 export default Pre;
