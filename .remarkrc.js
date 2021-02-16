@@ -45,6 +45,10 @@ module.exports = {
       'lint-no-file-name-irregular-characters',
       new RegExp('(?!^_)[^\\.a-zA-Z0-9-]'),
     ],
+    [
+      'lint-no-undefined-references',
+      false,
+    ],
   ],
   settings: {
     fences: true,
