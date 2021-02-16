@@ -1,12 +1,41 @@
 import { OpenAPIV3 } from 'openapi-types';
 
 import {
+  formatSchemaName,
   isArraySchemaObject,
   isDocumentObject,
   isNonArraySchemaObject,
   isReferenceObject,
   isSchemaObject,
 } from './openapi';
+
+describe('formatSchemaName()', () => {
+  describe(
+    'replaces `|` with `›`, ensuring proper spacing before and after',
+    () => {
+      it.each([
+        [
+          'foo',
+          'foo',
+        ],
+        [
+          ' foo ',
+          'foo',
+        ],
+        [
+          'foo |',
+          'foo |',
+        ],
+        [
+          'foo | bar',
+          'foo › bar',
+        ],
+      ])('given `%s`, returns `%s`', (given: string, expected: string) => {
+        expect(formatSchemaName(given)).toBe(expected);
+      });
+    }
+  );
+});
 
 describe('isArraySchemaObject()', () => {
   it('array type schema objects return true', () => {
@@ -60,7 +89,7 @@ describe('isNonArraySchemaObject', () => {
   });
 
   it('non-array type schema objects return true', () => {
-    const obj: OpenAPIV3.SchemaObject = {
+    const obj: OpenAPIV3.NonArraySchemaObject = {
       type: 'string',
     };
     expect(isNonArraySchemaObject(obj)).toBe(true);
@@ -74,6 +103,7 @@ describe('isReferenceObject()', () => {
     };
     expect(isReferenceObject(obj)).toBe(true);
   });
+
   it(
     'objects that don\'t contain a `$ref` property are not reference objects',
     () => {

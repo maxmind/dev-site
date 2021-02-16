@@ -1,0 +1,104 @@
+@use '../../styles/variables';
+
+.container {
+  display: table;
+  margin: var(--mm-spacing);
+  margin-bottom: calc(var(--mm-spacing) + 1px);
+  position: relative;
+  width: calc(100% - calc(var(--mm-spacing) * 2));
+  @include variables.max-width;
+}
+
+.heading {
+  background: linear-gradient(#fff, var(--mm-color-sidebar));
+  border: 1px solid var(--mm-color-border);
+  border-radius: var(--mm-border-radius) var(--mm-border-radius) 0 0;
+  box-shadow: 0 -4px 0 0 var(--mm-color-background);
+  display: grid;
+  gap: calc(var(--mm-spacing) / 4);
+  grid-auto-flow: column;
+  grid-template-areas: 'name type';
+  grid-template-columns: max-content 1fr;
+  grid-template-rows: max-content;
+  padding: calc(var(--mm-spacing) / 4) calc(var(--mm-spacing) / 2);
+  position: sticky;
+  scroll-margin-top: calc(var(--page-header-height) + var(--mm-spacing));
+  top: calc(var(--page-header-height) + var(--mm-spacing));
+  transform-style: preserve-3d;
+  z-index: 5;
+
+  &::before {
+    background: var(--mm-color-background);
+    content: ' ';
+    display: block;
+    height: calc(var(--mm-spacing) + 1px);
+    left: -1px;
+    position: absolute;
+    top: -1px;
+    transform: translateY(-100%);
+    width: calc(100% + 2px);
+  }
+}
+
+/* For IE11 support, align items via the children, not the `.heading` parent */
+.heading > * {
+  align-self: center;
+}
+
+.heading
+.heading__name {
+  font-weight: 700;
+  grid-area: name;
+}
+
+.heading__link {
+  color: var(--mm-color-primary-text);
+  display: inline-block;
+  font-size: 12px;
+  position: relative;
+  text-decoration: none;
+}
+
+.heading__link-icon {
+  font-size: 14px;
+  left: 0;
+  opacity: 0.5;
+  padding-right: 5px;
+  position: absolute;
+  top: 50%;
+  transform: translate(-100%, -50%);
+}
+
+.heading__link:hover .heading__link-icon {
+  opacity: 1;
+}
+
+.heading__type {
+  grid-area: type;
+}
+
+.content {
+  border: 1px solid var(--mm-color-border);
+  border-radius: 0 0 var(--mm-border-radius) var(--mm-border-radius);
+
+  > [class^='P-module'] {
+    margin: 0;
+    padding: calc(var(--mm-spacing) / 2);
+  }
+}
+
+@include variables.breakpoint('md') {
+  .heading {
+    grid-template-areas: 'name type';
+  }
+
+  .heading__link {
+    font-size: 14px;
+  }
+}
+
+@include variables.breakpoint('xxl') {
+  .heading__link {
+    font-size: 16px;
+  }
+}

@@ -1,0 +1,624 @@
+---
+draft: false
+title: minFraud API Documentation
+---
+
+import {
+  FaBook,
+  FaClipboardList,
+  FaShoePrints,
+  FaBroadcastTower,
+  FaQuestionCircle,
+  FaRocket,
+} from 'react-icons/fa';
+
+## Overview
+
+<Alert type="info">
+  If you are a [minFraud Legacy](https://dev.maxmind.com/minfraud/minfraud-legacy/)
+  customer, please see our
+  [What’s New in minFraud Score, minFraud Insights, and minFraud Factors](https://dev.maxmind.com/minfraud/whats-new-in-minfraud-score-and-minfraud-insights/)
+  document for a summary of the changes.
+</Alert>
+
+To learn more about the minFraud services and to purchase credits, please visit
+the minFraud Overview page. If you are interested in minFraud Factors, please
+contact our Enterprise Business team for assistance. To better understand the
+differences between each minFraud service, review our minFraud Service
+Comparison page and the Response Body section below.
+
+## Requests
+
+### Authorization and Security
+
+The HTTP Authorization header is required for authorization. The username is
+your [MaxMind account ID](https://www.maxmind.com/en/accounts/current/license-key).
+The password is your [MaxMind license key](https://www.maxmind.com/en/accounts/current/license-key).
+
+<Alert type="warning">
+  You must be approved for a trial or purchase credit for use with our web
+  services in order to receive an account ID and license key.
+</Alert>
+
+We use [basic HTTP authentication](https://en.wikipedia.org/wiki/Basic_access_authentication).
+The APIs which require authentication are only available via HTTPS. The
+credentials are never transmitted unencrypted. If you attempt to access this
+service via HTTP, you will receive a `403 Forbidden` HTTP response.
+
+We require TLS 1.2 or greater for all requests to our servers to keep your data
+secure.
+
+### Service Endpoints
+
+The URI for each service is as specified below.
+
+| Service  | HTTP Method | Endpoint                                              |
+| -------- | ----------- | ----------------------------------------------------- |
+| Score    | `POST`      | `https://minfraud.maxmind.com/minfraud/v2.0/score`    |
+| Insights | `POST`      | `https://minfraud.maxmind.com/minfraud/v2.0/insights` |
+| Factors  | `POST`      | `https://minfraud.maxmind.com/minfraud/v2.0/factors`  |
+
+The **minfraud.maxmind.com** hostname automatically picks the data center
+geographically closest to you.
+
+### Request Headers
+
+The `Accept` header for a request is entirely optional. If you do include one,
+you must accept one of the following:
+
+* `application/json`
+* `application/vnd.maxmind.com-minfraud-score+json`
+* `application/vnd.maxmind.com-minfraud-score+json; charset=UTF-8; version=2.0`
+
+Substitute the appropriate service’s type for “score”. A request for any other
+MIME type will result in a `415 Unsupported Media Type` error.
+
+If you set the `Accept-Charset` header in your client code, you must accept the
+UTF-8 character set. If you don’t you will receive a `406 Not Acceptable`
+response, because this data is only available in UTF-8.
+
+### Request Body
+
+Currently minFraud Score, minFraud Insights, and minFraud Factors use the same
+request document format. The request consists of a JSON object with one or more
+of the fields shown below. Each key in the top-level object maps to an object or
+array as described below. New fields that apply to one or both may be added in
+the future.
+
+String fields are limited to no more than 255 valid Unicode characters unless a
+shorter length is specified; the null and newline characters are forbidden. Of
+course, many fields also have additional constraints that limit the length. For
+example, the `ip_address` field cannot be longer than the longest valid
+representation of an IPv6 address. Unless it must match a specific format, it is
+valid for a string field to be empty.
+
+Boolean fields must be provided as JSON `true` or `false`.
+
+Unless otherwise specified, if the value meets the requirements for the field,
+then it will not be modified. Beyond field specific exceptions, an exception to
+this is if the value is provided as a type different from what we require. In
+such cases we convert it to the required type if possible. For example, if you
+provide a string field as a number, then it will be converted to a string, and
+vice versa. This conversion happens only between numbers and strings.
+
+The entire request body is limited to 20,000 bytes. Requests larger than this
+size will be rejected.
+
+<Schema name="Request" services="*">
+  <Property
+    example={`
+      {
+        "ip_address": "2001:db8::ff00:42:8329",
+        "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.89 Safari/537.36",
+        "accept_language": "en-US,en;q=0.8",
+        "session_age": 3600.5,
+        "session_id": "c2ffa1b7-f5c5-4702-beb2-4254794fe391"
+      }
+    `}
+    linkToSchemaName={'Request | Device'}
+    name="device"
+    type="object"
+  >
+    This object contains information about the device used in the transaction.
+  </Property>
+
+  <Property
+    example={`
+      {
+        "transaction_id": "txn3134133",
+        "shop_id": "s2123",
+        "time": "2012-04-12T23:20:50.52Z",
+        "type": "purchase"
+      }
+    `}
+    linkToSchemaName={'Request | Event'}
+    name="event"
+    type="object"
+  >
+    This object contains general information related to the event being scored.
+  </Property>
+
+  <Property
+    example={`
+      {
+        "user_id": "3132",
+        "username_md5": "570a90bfbf8c7eab5dc5d4e26832d5b1"
+      }
+    `}
+    linkToSchemaName={'Request | Account'}
+    name="account"
+    type="object"
+  >
+    This object contains account information for the end-user on the site where
+    the event took place.
+  </Property>
+
+  <Property
+    example={`
+      {
+        "address": "977577b140bfb7c516e4746204fbdb01",
+        "domain": "maxmind.com"
+      }
+    `}
+    linkToSchemaName={'Request | Email'}
+    name="email"
+    type="object"
+  />
+
+  <Property
+    example={`
+      {
+        "first_name": "John",
+        "last_name": "Doe",
+        "company": "Big Corp.",
+        "address": "400 Blake St.",
+        "address_2": "Suite 5",
+        "city": "New Haven",
+        "region": "CT",
+        "country": "US",
+        "postal": "06511",
+        "phone_number": "203-000-0000",
+        "phone_country_code": "1"
+      }
+    `}
+    linkToSchemaName={'Request | Billing'}
+    name="billing"
+    type="object"
+  />
+
+  <Property
+    example={`
+      {
+        "first_name": "Jane",
+        "last_name": "Doe",
+        "company": "Smaller, Inc.",
+        "address": "82 Wall St.",
+        "address_2": "#1",
+        "city": "New Haven",
+        "region": "CT",
+        "country": "US",
+        "postal": "06515",
+        "phone_number": "203-000-0000",
+        "phone_country_code": "1",
+        "delivery_speed": "same_day"
+      }
+    `}
+    linkToSchemaName={'Request | Shipping'}
+    name="shipping"
+    type="object"
+  />
+
+  <Property
+    example={`
+      {
+        "processor": "stripe",
+        "was_authorized": false,
+        "decline_code": "card_declined"
+      }
+    `}
+    linkToSchemaName={'Request | Payment'}
+    name="payment"
+    type="object"
+  />
+
+  <Property
+    example={`
+      {
+        "issuer_id_number": "323132",
+        "last_4_digits": "7643",
+        "token": "OQRST14PLQ98323",
+        "bank_name": "Bank of America",
+        "bank_phone_country_code": "1",
+        "bank_phone_number": "800-342-1232",
+        "avs_result": "Y",
+        "cvv_result": "N"
+      }
+    `}
+    linkToSchemaName={'Request | Credit Card'}
+    name="credit_card"
+    type="object"
+  />
+
+  <Property
+    example={`
+      {
+        "amount": 323.21,
+        "currency": "USD",
+        "discount_code": "FIRST",
+        "affiliate_id": "af12",
+        "subaffiliate_id": "saf42",
+        "referrer_uri": "http://www.google.com/",
+        "is_gift": true,
+        "has_gift_message": false
+      }
+    `}
+    linkToSchemaName={'Request | Order'}
+    name="order"
+    type="object"
+  />
+
+  <Property
+    example={`
+      [
+        {
+          "category": "pets",
+          "item_id": "ad23232",
+          "quantity": 2,
+          "price": 20.43
+        },
+        {
+          "category": "beauty",
+          "item_id": "bst112",
+          "quantity": 1,
+          "price": 100.00
+        }
+      ]
+    `}
+    linkToSchemaName="Request | Shopping Cart Item"
+    name="shopping_cart"
+    type="object[]"
+  >
+    This is an array of shopping cart item objects. A shopping cart should
+    consist of an array of one or more item objects.
+  </Property>
+
+  <Property
+    example={`
+      {
+        "a_custom_input_key": "NSC0083121",
+        "another_custom_input_key": false
+      }
+    `}
+    linkToSchemaName="Request | Custom Inputs"
+    name="custom_inputs"
+    type="object"
+  >
+    Custom Inputs are optional inputs to the minFraud service that must first be
+    defined for your account. Select “Custom Inputs” from the Account Portal in
+    order to do so. See our Custom Inputs documentation for more information.
+  </Property>
+</Schema>
+
+#### Request Body Example
+
+```json
+{
+  "device": {
+    "ip_address": "2001:db8::ff00:42:8329",
+    "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.89 Safari/537.36",
+    "accept_language": "en-US,en;q=0.8",
+    "session_age": 3600.5,
+    "session_id": "c2ffa1b7-f5c5-4702-beb2-4254794fe391"
+  },
+  "event": {
+    "transaction_id": "txn3134133",
+    "shop_id": "s2123",
+    "time": "2012-04-12T23:20:50.52Z",
+    "type": "purchase"
+  },
+  "account": {
+    "user_id": "3132",
+    "username_md5": "570a90bfbf8c7eab5dc5d4e26832d5b1"
+  },
+  "email": {
+    "address": "977577b140bfb7c516e4746204fbdb01",
+    "domain": "maxmind.com"
+  },
+  "billing": {
+    "first_name": "John",
+    "last_name": "Doe",
+    "company": "Big Corp.",
+    "address": "400 Blake St.",
+    "address_2": "Suite 5",
+    "city": "New Haven",
+    "region": "CT",
+    "country": "US",
+    "postal": "06511",
+    "phone_number": "203-000-0000",
+    "phone_country_code": "1"
+  },
+  "shipping": {
+    "first_name": "Jane",
+    "last_name": "Doe",
+    "company": "Smaller, Inc.",
+    "address": "82 Wall St.",
+    "address_2": "#1",
+    "city": "New Haven",
+    "region": "CT",
+    "country": "US",
+    "postal": "06515",
+    "phone_number": "203-000-0000",
+    "phone_country_code": "1",
+    "delivery_speed": "same_day"
+  },
+  "payment": {
+    "processor": "stripe",
+    "was_authorized": false,
+    "decline_code": "card_declined"
+  },
+  "credit_card": {
+    "issuer_id_number": "323132",
+    "last_4_digits": "7643",
+    "token": "OQRST14PLQ98323",
+    "bank_name": "Bank of America",
+    "bank_phone_country_code": "1",
+    "bank_phone_number": "800-342-1232",
+    "avs_result": "Y",
+    "cvv_result": "N"
+  },
+  "order": {
+    "amount": 323.21,
+    "currency": "USD",
+    "discount_code": "FIRST",
+    "affiliate_id": "af12",
+    "subaffiliate_id": "saf42",
+    "referrer_uri": "http://www.google.com/",
+    "is_gift": true,
+    "has_gift_message": false
+  },
+  "shopping_cart": [
+    {
+      "category": "pets",
+      "item_id": "ad23232",
+      "quantity": 2,
+      "price": 20.43
+    },
+    {
+      "category": "beauty",
+      "item_id": "bst112",
+      "quantity": 1,
+      "price": 100.00
+    }
+  ],
+  "custom_inputs": {
+    "a_custom_input_key": "NSC0083121",
+    "another_custom_input_key": false
+  }
+}
+```
+
+#### Request Body Objects
+
+<Schema name="Request | Device" services="*">
+  This object contains information about the device used in the transaction.
+
+  <Property
+    example="2001:db8::ff00:42:8329"
+    tags={{
+      'Format': 'IPv4 or IPv6',
+    }}
+    name="ip_address"
+    type="string"
+  >
+    The IP address associated with the device used by the customer in the
+    transaction. The IP address must be in IPv4 or IPv6 presentation format,
+    i.e., dotted-quad notation or the IPv6 hexadecimal-colon notation.
+  </Property>
+
+  <Property
+    example={[
+      'Mozilla/5.0 (X11; Linux x86_64)',
+      'AppleWebKit/537.36 (KHTML, like Gecko)',
+      'Chrome/41.0.2272.89 Safari/537.36',
+    ].join(' ')}
+    tags={{
+      'Max Length': 512,
+    }}
+    name="user_agent"
+    type="string"
+  >
+    The HTTP `User-Agent` header of the browser used in the transaction.
+  </Property>
+
+  <Property
+    example="en-US,en;q=0.8"
+    tags={{
+      'Max Length': 255,
+    }}
+    name="accept_language"
+    type="string"
+  >
+    The HTTP `Accept-Language` header of the device used in the transaction.
+  </Property>
+
+  <Property
+    example="3600.5"
+    tags={{
+      'Format': 'decimal',
+      'Min': 0,
+      'Max': '10e13-1'
+    }}
+    name="session_age"
+    type="number"
+  >
+    The number of seconds between the creation of the user’s session and the
+    time of the transaction. Note that `session_age` is not the duration of the
+    current visit, but the time since the start of the first visit.
+  </Property>
+
+  <Property
+    example="c2ffa1b7-f5c5-4702-beb2-4254794fe391"
+    tags={{
+      'Max Length': 255
+    }}
+    name="session_id"
+    type="string"
+  >
+    An ID that uniquely identifies a visitor’s session on the site.
+  </Property>
+</Schema>
+
+<Schema name="Request | Event" services="*">
+  This object contains general information related to the event being scored.
+
+  <Property
+    example="txn3134133"
+    tags={{
+      'Max Length': 255
+    }}
+    name="transaction_id"
+    type="string"
+  >
+    Your internal ID for the transaction. We can use this to locate a specific
+    transaction in our logs, and it will also show up in email alerts and
+    notifications from us to you. No specific format is required.
+  </Property>
+
+  <Property
+    example="s2123"
+    tags={{
+      'Max Length': 255
+    }}
+    name="shop_id"
+    type="string"
+  >
+    Your internal ID for the shop, affiliate, or merchant this order is coming
+    from. Required for minFraud users who are resellers, payment providers,
+    gateways and affiliate networks. No specific format is required.
+  </Property>
+
+  <Property
+    example="2012-04-12T23:20:50.52Z"
+    name="time"
+    type="string"
+  >
+    The date and time the event occurred. The string must be in the
+    [RFC 3339](https://tools.ietf.org/html/rfc3339) date-time format. The time
+    must be within the past 10 years. If this field is not in the request, the
+    current time will be used.
+  </Property>
+
+  <Property
+    example="account_creation"
+    name="type"
+    type="enum"
+  >
+    The type of event being scored. The valid types are:
+
+    * `account_creation`
+    * `account_login`
+    * `email_change`
+    * `password_reset`
+    * `payout_change`
+    * `purchase`
+    * `recurring_purchase`
+    * `referral`
+    * `survey`
+  </Property>
+</Schema>
+
+<Schema name="Request | Shopping Cart Item">
+
+</Schema>
+
+## Response
+
+### Response Headers
+
+The `Content-Type` header for a successful response varies based on the service
+as outlined above.
+
+Errors may be returned with the Content-Type set to
+`application/vnd.maxmind.com-error+json; charset=UTF-8; version=2.0`. If this is
+the case, then the body of the response contains a JSON document with two keys,
+`code` and `error`. See [the Errors section](#) for more details.
+
+The response will always include a `Content-Length` header as well.
+
+### Response Body
+
+All services return data as a JSON document. The document that is returned
+always consists of an object (aka map or hash).
+
+Keys with undefined or empty values will not be included in the returned
+document.
+
+The data returned in the document will be in UTF-8 encoding.
+
+Note that a given key and value may be omitted from the response entirely if
+there is no relevant information to include. For example, if you do not pass any
+information about the credit card in your request, then the response will not
+contain a `credit_card` key or value.
+
+<Schema name="Response.Foo" services={['score']}>
+  This is a description of Foo.
+
+  <Property name="transaction_id" type="string">
+    Your internal ID for the transaction. We can use this to locate a specific
+    transaction in our logs, and it will also show up in email alerts and
+    notifications from us to you. No specific format is required.
+  </Property>
+
+  <Property
+    name="transaction_ids"
+    services={['score', 'insights']}
+    type="string"
+  >
+    Your internal ID for the transaction. We can use this to locate a specific
+    transaction in our logs, and it will also show up in email alerts and
+    notifications from us to you. No specific format is required.
+  </Property>
+</Schema>
+
+#### Response Objects
+
+<LinkGroupContainer>
+  <LinkGroup>
+    <LinkGroupCard
+      description="(todo)"
+      heading="Official API Clients"
+      icon={FaQuestionCircle}
+      to="/minfraud/evaluate-a-transaction"
+    />
+
+    <LinkGroupCard
+      description="(todo)"
+      heading="Release Notes"
+      icon={FaQuestionCircle}
+      to="/minfraud/release-notes"
+    />
+  </LinkGroup>
+
+  <LinkGroup isCompact heading="Resources">
+    <LinkGroupCard
+      description="(todo)"
+      heading="Disposition API"
+      icon={FaQuestionCircle}
+      to="/minfraud/api-reference"
+    />
+
+    <LinkGroupCard
+      description="Use the Report Transaction API to report chargebacks, false positives, suspected fraud, or spam/abuse."
+      heading="Report a Transaction"
+      icon={FaQuestionCircle}
+      to="/minfraud/report-a-transaction"
+    />
+
+    <LinkGroupCard
+      description="Capture more data and catch more fraud using our JavaScript device tracking library."
+      heading="Integrate Device Tracking"
+      href="#"
+      icon={FaQuestionCircle}
+    />
+  </LinkGroup>
+</LinkGroupContainer>
