@@ -17,9 +17,10 @@ interface IAlert {
 }
 
 const Alert: React.FC<IAlert> = (props) => {
+  const { children, type } = props;
   let Icon: IconType;
 
-  switch(props.type) {
+  switch(type) {
   case 'error':
     Icon = FaTimes;
     break;
@@ -38,7 +39,8 @@ const Alert: React.FC<IAlert> = (props) => {
     <div
       className={classNames(
         styles.alert,
-        props.type && styles[props.type],
+        // eslint-disable-next-line security/detect-object-injection
+        type && styles[type],
       )}
     >
       <div
@@ -51,7 +53,7 @@ const Alert: React.FC<IAlert> = (props) => {
       <div
         className={styles.content}
       >
-        {props.children}
+        {children}
       </div>
     </div>
   );
