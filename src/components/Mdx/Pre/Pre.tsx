@@ -8,8 +8,9 @@ import { ILanguage,languages } from '../../../languages';
 import Button from './Button';
 import Code from './Code';
 import Message, { State as MessageState } from './Message';
-import styles from './Pre.module.scss';
 import Wrapper from './Wrapper';
+
+import styles from './Pre.module.scss';
 
 interface IPre {
   hasWrapper?: boolean;

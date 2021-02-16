@@ -4,8 +4,9 @@ import React from 'react';
 
 import Layout from '../../components/Layout/Layout';
 import ProductIcon from '../../components/ProductIcon';
-import styles from './Overview.module.scss';
 import { IOverviewContext } from './query';
+
+import styles from './Overview.module.scss';
 
 interface IOverview {
   children: React.ReactNode;

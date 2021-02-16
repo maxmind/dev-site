@@ -10,9 +10,10 @@ import {
 import Layout from '../../components/Layout/Layout';
 import { h1 as H1, p as P } from '../../components/Mdx';
 import { getNextPage, getPreviousPage } from '../../utils/pagination';
-import styles from './Page.module.scss';
 import { IPageContext } from './query';
 import TableOfContents from './TableOfContents';
+
+import styles from './Page.module.scss';
 
 interface IPage {
   children: React.ReactNode;

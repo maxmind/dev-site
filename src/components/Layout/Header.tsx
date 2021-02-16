@@ -4,8 +4,9 @@ import { FaBars, FaTimes } from 'react-icons/fa';
 
 import Logo from '../../assets/svgs/maxmind-logo.svg';
 import AccessibilityNav from './AccessibilityNav';
-import styles from './Header.module.scss';
 import SearchBar from './SearchBar';
+
+import styles from './Header.module.scss';
 
 interface IHeader {
   isSidebarOpen?: boolean;

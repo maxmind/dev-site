@@ -2,8 +2,9 @@ import classNames from 'classnames';
 import PropTypes from 'prop-types';
 import * as React from 'react';
 
-import styles from './LinkGroup.module.scss';
 import { ILinkGroupCard } from './LinkGroupCard';
+
+import styles from './LinkGroup.module.scss';
 
 export interface ILinkGroup {
   children: React.ReactElement<ILinkGroupCard>

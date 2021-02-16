@@ -5,6 +5,7 @@ import React from 'react';
 import CodeExample from './CodeExample';
 import Content from './Content';
 import Heading from './Heading';
+
 import styles from './Schema.module.scss';
 
 export interface ISchema {

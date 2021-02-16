@@ -4,6 +4,7 @@ import PropTypes from 'prop-types';
 import React from 'react';
 
 import Pre from '../../../components/Mdx/Pre';
+
 import styles from './CodeExample.module.scss';
 
 interface ICodeExample {

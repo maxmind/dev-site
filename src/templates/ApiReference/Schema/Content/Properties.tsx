@@ -7,6 +7,7 @@ import React from 'react';
 import Type from '../Type';
 import { getRefAnchorLink, renderMarkdownElement } from '../utils';
 import parseSchema from './parseSchema';
+
 import styles from './Properties.module.scss';
 
 interface IRow {

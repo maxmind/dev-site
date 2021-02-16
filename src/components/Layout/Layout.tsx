@@ -11,9 +11,10 @@ import React, { useState } from 'react';
 
 import Footer from './Footer';
 import Header from './Header';
-import styles from './Layout.module.scss';
 import SEO from './Seo';
 import Sidebar from './Sidebar';
+
+import styles from './Layout.module.scss';
 
 interface ILayout {
   children: React.ReactNode;
