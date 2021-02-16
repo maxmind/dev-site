@@ -2,12 +2,6 @@
 
 .h2 {
   @include variables.heading;
-  border-top: 1px dashed var(--mm-color-border);
-  font-size: 34px;
-  padding-top: var(--mm-spacing);
-  scroll-margin-top: calc(var(--page-header-height) - 1px);
-}
-
-.h2 .icon {
-  top: calc(50% + calc(var(--mm-spacing) / 2));
+  font-size: 24px;
+  font-weight: 700;
 }

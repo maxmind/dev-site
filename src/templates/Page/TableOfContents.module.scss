@@ -90,16 +90,24 @@
   }
 }
 
-.list-item .list-item a::before {
-  transform: translate(-28px, calc(var(--psuedo-padding) * -1));
-}
-
 .list-item.item--active > a {
   color: var(--mm-color-display-text);
 
   &::before {
     border-left: 4px solid rgb(43, 126, 198);
   }
+}
+
+.list-item .list-item a::before {
+  transform: translate(-28px, calc(var(--psuedo-padding) * -1));
+}
+
+.list-item .list-item .list-item a::before {
+  transform: translate(-42px, calc(var(--psuedo-padding) * -1));
+}
+
+.list-item .list-item .list-item .list-item a::before {
+  transform: translate(-56px, calc(var(--psuedo-padding) * -1));
 }
 
 @include variables.breakpoint('xl') {

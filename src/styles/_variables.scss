@@ -40,11 +40,11 @@ $containers: (
 }
 
 @mixin heading {
-  color: var(--mm-color-display-text);
+  color: #00374c;
   font-family: var(--mm-font-stack-display);
   font-weight: 500;
   line-height: 1.2em;
-  margin: calc(var(--mm-spacing) * 2) var(--mm-spacing) calc(var(--mm-spacing) / 2);
+  margin: calc(var(--mm-spacing) * 2) var(--mm-spacing) calc(var(--mm-spacing) / 4);
   position: relative;
   scroll-margin-top: calc(var(--page-header-height) + var(--mm-spacing));
 
@@ -53,24 +53,24 @@ $containers: (
     h4,
     h5,
     h6 {
-      margin-top: calc(var(--mm-spacing) / 2);
+      margin-top: calc(var(--mm-spacing) / 4);
     }
   }
 
-  + [class*='Table-module'] {
-    margin-top: calc(var(--mm-spacing) / 2);
+  + [class^='Table-module'] {
+    margin-top: calc(var(--mm-spacing) / 4);
   }
 
   .link {
-    color: var(--mm-color-display-text);
+    color: #00374c;
     text-decoration: none;
   }
 
   .icon {
-    font-size: 16px;
-    left: calc(var(--mm-spacing) / 4 * -1);
+    font-size: 12px;
+    left: -5px;
     margin-bottom: 0 !important;
-    opacity: 0.25;
+    opacity: 0.2;
     position: absolute;
     top: 50%;
     transform: translate(-100%, -50%);
@@ -78,6 +78,7 @@ $containers: (
   }
 
   .link:hover .icon {
+    font-size: 14px;
     opacity: 0.75;
   }
 

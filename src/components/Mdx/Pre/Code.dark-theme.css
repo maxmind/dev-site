@@ -3,7 +3,7 @@ code[class*='language-'],
 pre[class*='language-'] {
   color: #b3bac6;
   font-family: var(--mm-font-stack-monospace);
-  font-size: 18px;
+  font-size: 14px;
 
   hyphens: none;
   line-height: 1.5em;
@@ -35,7 +35,7 @@ pre[class*='language-'] ::selection {
 pre[class*='language-'] {
   margin: 0.5em 0;
   overflow: auto;
-  padding: var(--mm-spacing);
+  padding: calc(var(--mm-spacing) / 2);
   position: relative;
 }
 

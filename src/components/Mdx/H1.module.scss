@@ -2,8 +2,8 @@
 
 .h1 {
   @include variables.heading;
-  border-bottom: 1px dashed var(--mm-color-border);
-  font-size: 32px;
+  font-size: 28px;
+  font-weight: 600;
   margin: var(--mm-spacing);
   margin-top: 0;
   padding-top: var(--mm-spacing);
