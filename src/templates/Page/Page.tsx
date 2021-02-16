@@ -110,7 +110,11 @@ const Page: React.FC<IPage> = (props) => {
                   >
                     Previous
                   </span>
-                  {previousPage.title}
+                  <span
+                    className={styles['footer-title']}
+                  >
+                    {previousPage.title}
+                  </span>
                 </Link>
               )}
 
@@ -127,7 +131,11 @@ const Page: React.FC<IPage> = (props) => {
                   >
                     Next
                   </span>
-                  {nextPage.title}
+                  <span
+                    className={styles['footer-title']}
+                  >
+                    {nextPage.title}
+                  </span>
                 </Link>
               )}
             </div>
