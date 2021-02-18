@@ -3,9 +3,10 @@ import { SchemaObject } from 'openapi3-ts';
 import PropTypes from 'prop-types';
 import React from 'react';
 
-import styles from './Heading.module.scss';
 import Type from './Type';
 import { getRefAnchorLink } from './utils';
+
+import styles from './Heading.module.scss';
 
 interface IHeading {
   className?: string;

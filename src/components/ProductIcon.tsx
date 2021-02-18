@@ -4,6 +4,7 @@ import * as React from 'react';
 import { IconType } from 'react-icons';
 
 import { Icons } from '../assets';
+
 import styles from './ProductIcon.module.scss';
 
 type SvgElement = React.FC<React.SVGProps<SVGSVGElement>>

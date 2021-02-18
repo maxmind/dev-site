@@ -9,6 +9,7 @@ import Loading from '../components/Loading';
 import H1 from '../components/Mdx/H1';
 import SearchResult from '../components/SearchResult';
 import GoogleSearch, { ISearchResults } from '../services/GoogleSearch';
+
 import styles from './search-results.module.scss';
 
 type queryValue = number | string | undefined;

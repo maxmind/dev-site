@@ -302,7 +302,30 @@ module.exports = {
       1,
       'always',
     ],
-    'simple-import-sort/imports': 'warn',
+    'simple-import-sort/imports': [
+      'warn',
+      {
+        // eslint-disable-next-line max-len
+        // https://github.com/lydell/eslint-plugin-simple-import-sort#custom-grouping
+        groups: [
+          [
+            '^\\u0000',
+          ],
+          [
+            '^@?\\w',
+          ],
+          [
+            '^',
+          ],
+          [
+            '^\\.',
+          ],
+          [
+            '\\.module\\.scss$',
+          ],
+        ],
+      },
+    ],
     'sort-keys': [
       'warn',
     ],

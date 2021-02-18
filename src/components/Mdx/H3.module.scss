@@ -2,18 +2,5 @@
 
 .h3 {
   @include variables.heading;
-  font-size: 24px;
-}
-
-.h3::before {
-  border-top: 1px dashed var(--mm-color-border);
-  content: ' ';
-  display: block;
-  height: 0;
-  padding-top: calc(var(--mm-spacing));
-  width: calc(var(--mm-spacing) * 2);
-}
-
-.h3 .icon {
-  top: calc(50% + calc(var(--mm-spacing) / 2));
+  font-size: 20px;
 }

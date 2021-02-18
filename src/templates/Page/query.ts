@@ -19,7 +19,7 @@ const query: QueryFn<IPageContext> = (
     allMdx(filter: {fields: {layout: {eq: "pages"}}}) {
       nodes {
         ... BaseQuery
-        tableOfContents(maxDepth: 3)
+        tableOfContents(maxDepth: 4)
         timeToRead
         parent {
           ... on File {

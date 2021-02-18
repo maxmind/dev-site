@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import React from 'react';
 
 import useActiveHeading from '../../hooks/useActiveHeading';
+
 import styles from './TableOfContents.module.scss';
 
 export interface IItem {

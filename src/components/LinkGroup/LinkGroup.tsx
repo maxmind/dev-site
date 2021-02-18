@@ -2,13 +2,14 @@ import classNames from 'classnames';
 import PropTypes from 'prop-types';
 import * as React from 'react';
 
-import styles from './LinkGroup.module.scss';
 import { ILinkGroupCard } from './LinkGroupCard';
+
+import styles from './LinkGroup.module.scss';
 
 export interface ILinkGroup {
   children: React.ReactElement<ILinkGroupCard>
     | React.ReactElement<ILinkGroupCard>[];
-  heading: string;
+  heading?: string;
   isCompact?: boolean
 }
 
@@ -16,11 +17,13 @@ const LinkGroup: React.FC<ILinkGroup> = (props) => (
   <section
     className={styles.section}
   >
-    <h3
-      className={styles['section-heading']}
-    >
-      {props.heading}
-    </h3>
+    {props.heading && (
+      <h3
+        className={styles['section-heading']}
+      >
+        {props.heading}
+      </h3>
+    )}
     <div
       className={classNames(
         styles.cards,
@@ -49,7 +52,7 @@ LinkGroup.propTypes = {
     PropTypes.arrayOf(PropTypes.element.isRequired).isRequired,
     PropTypes.element.isRequired,
   ]).isRequired,
-  heading: PropTypes.string.isRequired,
+  heading: PropTypes.string,
   isCompact: PropTypes.bool,
 };
 

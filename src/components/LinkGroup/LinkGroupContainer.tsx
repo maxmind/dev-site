@@ -2,6 +2,7 @@ import PropTypes from 'prop-types';
 import * as React from 'react';
 
 import { ILinkGroup } from './LinkGroup';
+
 import styles from './LinkGroup.module.scss';
 
 interface ILinkGroupContainer {

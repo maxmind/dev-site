@@ -1,7 +1,7 @@
 @use '../../styles/variables';
 
 .li {
-  margin-bottom: var(--mm-spacing) / 4;
+  margin-bottom: calc(var(--mm-spacing) / 4);
 }
 
 .li::marker {

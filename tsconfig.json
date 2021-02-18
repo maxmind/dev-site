@@ -21,6 +21,9 @@
     "target": "ES2019",
     "typeRoots": ["src/types", "./node_modules/@types"]
   },
+  "files": [
+    "test/loadershim.d.ts"
+  ],
   "exclude": [
     "node_modules",
     "public",

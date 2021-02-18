@@ -9,6 +9,7 @@ import {
   IItem,
   isInternalItem,
 } from '../../types/Item';
+
 import styles from './Sidebar.module.scss';
 
 const renderItems = (

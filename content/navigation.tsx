@@ -30,48 +30,11 @@ const navigation: IItem[] = [
       },
       {
         hasDivider: true,
-        secondaryItems: [
-          {
-            items: [
-              {
-                title: 'Authentication',
-                to: '#',
-              },
-              {
-                title: 'Endpoints',
-                to: '#',
-              },
-            ],
-            title: 'Requests',
-            to: '/minfraud/api-reference#Request',
-          },
-          {
-            items: [
-              {
-                title: 'Score',
-                to: '/minfraud/api-reference#Response_Score',
-              },
-              {
-                title: 'Factors',
-                to: '/minfraud/api-reference#Response_Factors',
-              },
-              {
-                title: 'Insights',
-                to: '/minfraud/api-reference#Response_Insights',
-              },
-            ],
-            title: 'Responses',
-            to: '#',
-          },
-          {
-            title: 'Models',
-            to: '#',
-          },
-        ],
-        title: 'API Reference',
-        to: '/minfraud/api-reference',
+        title: 'API Documentation',
+        to: '/minfraud/api-documentation',
       },
       {
+        hasDivider: true,
         title: 'Release Notes',
         to: '/minfraud/release-notes',
       },
