@@ -28,7 +28,7 @@ const Page: React.FC<IPage> = (props) => {
   } = props.pageContext;
   const location = useLocation();
   const { description, keywords, title } = frontmatter;
-  const { modifiedTime } = parent;
+  const { modifiedTime } = parent || {};
 
   let type;
 
@@ -80,14 +80,16 @@ const Page: React.FC<IPage> = (props) => {
         >
           {props.children}
 
-          <P
-            className={styles['last-updated']}
-          >
-            This page was last updated on
-            {' '}
-            {modifiedTime}
-            .
-          </P>
+          {modifiedTime && (
+            <P
+              className={styles['last-updated']}
+            >
+              This page was last updated on
+              {' '}
+              {modifiedTime}
+              .
+            </P>
+          )}
         </section>
 
         {(previousPage || nextPage) && (
