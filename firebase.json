@@ -29,6 +29,11 @@
         "destination": "/geoip/geolocate-an-ip/web-services",
         "source": "/geoip/geoip2/web-services",
         "type": 302
+      },
+      {
+        "destination": "/minfraud/track-devices",
+        "source": "/minfraud/device",
+        "type": 302
       }
     ],
     "rewrites": [
