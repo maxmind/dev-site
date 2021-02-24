@@ -23,13 +23,42 @@ const years: {[index: string]: number[]} = {
   ],
 };
 
-const generateItems = (type: ProductSlug) =>
+const generateItems = (type: ProductSlug) => {
   // eslint-disable-next-line security/detect-object-injection
-  years[type].map((year: number) => ({
+  const items = years[type].map((year: number) => ({
     items: [],
     title: year.toString(),
     url: `/${type}/release-notes/${year}`,
   }));
+
+  const now = new Date();
+  let year = now.getUTCFullYear();
+
+  /*
+   * If we don't have an archive page for last year,
+   * assume that "[type]/release-notes" is still displaying last year's data.
+   * e.g. January doesn't have release notes.
+   */
+  // eslint-disable-next-line security/detect-object-injection
+  if (!years[type].includes(year - 1)) {
+    year = year - 1;
+  }
+
+  /*
+   * Add the most current year to the archive list and set
+   * "[type]/release-notes" as the url
+   */
+  // eslint-disable-next-line security/detect-object-injection
+  if (!years[type].includes(year) && years[type].includes(year - 1)) {
+    items.unshift({
+      items: [],
+      title: year.toString(),
+      url: `/${type}/release-notes`,
+    });
+  }
+
+  return items;
+};
 
 
 const ReleaseNotesArchiveList: React.FC<
