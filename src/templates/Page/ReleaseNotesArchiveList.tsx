@@ -14,6 +14,7 @@ const years: {[index: string]: number[]} = {
   minfraud: [
     2020,
     2019,
+    2018,
   ],
 };
 
