@@ -449,6 +449,12 @@ definition that further describes that specific object.
     [RFC 3339](https://tools.ietf.org/html/rfc3339) date-time format. The time
     must be within the past 10 years. If this field is not in the request, the
     current time will be used.
+
+    <Alert type="warning">
+      **It is not recommended to use this input when scoring live transactions
+      as they occur.** However, it can be useful if you store transactions to be
+      submitted to the service for scoring later.
+    </Alert>
   </Property>
 
   <Property
