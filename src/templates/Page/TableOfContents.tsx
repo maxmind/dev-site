@@ -1,3 +1,4 @@
+import { useLocation } from '@reach/router';
 import classNames from 'classnames';
 import PropTypes from 'prop-types';
 import React from 'react';
@@ -29,13 +30,14 @@ const getIds = (
   ];
 }, []);
 
-const isActive = (url: string, currentItem?: string) => {
-  return (url == location.pathname) ||
+const isActive = (url: string, pathname: string, currentItem?: string) => {
+  return (url == pathname) ||
     (currentItem && currentItem === `toc-${url.slice(1)}`);
 };
 
 const renderItems = (
   items: IItem[],
+  pathname: string,
   currentItem?: string,
 ): React.ReactElement => (
   <ul
@@ -56,7 +58,7 @@ const renderItems = (
         <li
           className={classNames(
             styles.listItem,
-            isActive(item.url, currentItem)
+            isActive(item.url, pathname, currentItem)
               ? styles['item--active'] : undefined
           )}
           data-item-number={itemNumber}
@@ -67,7 +69,7 @@ const renderItems = (
           >
             {title}
           </a>
-          {item.items && renderItems(item.items, currentItem)}
+          {item.items && renderItems(item.items, pathname, currentItem)}
         </li>
       );
     })}
@@ -79,6 +81,7 @@ const TableOfContents: React.FC<
 > = (props) => {
   const { heading, items, ...rest } = props;
 
+  const pathname = useLocation().pathname;
   const itemIds = getIds(items);
   const currentItem = useActiveHeading(itemIds);
 
@@ -91,7 +94,7 @@ const TableOfContents: React.FC<
       >
         {heading || 'On this Page'}
       </span>
-      {renderItems(items, currentItem)}
+      {renderItems(items, pathname, currentItem)}
     </nav>
   );
 };
