@@ -2209,6 +2209,13 @@
   resolved "https://registry.yarnpkg.com/@turist/time/-/time-0.0.1.tgz#57637d2a7d1860adb9f9cecbdcc966ce4f551d63"
   integrity sha512-M2BiThcbxMxSKX8W4z5u9jKZn6datnM3+FpEU+eYw0//l31E2xhqi7vTAuJ/Sf0P3yhp66SDJgPu3bRRpvrdQQ==
 
+"@types/airbnb-prop-types@^2.13.1":
+  version "2.13.1"
+  resolved "https://registry.yarnpkg.com/@types/airbnb-prop-types/-/airbnb-prop-types-2.13.1.tgz#9290689e95547cf2ab809585f553edef48cb20e9"
+  integrity sha512-EfUWjD7bqrspzWCBwnoaglrtJNqdyqYTWg6JxjWhOs9URskzQ/tR+OyYJbaIzGplqPRusYFc8Slt7f1MQLMdNQ==
+  dependencies:
+    "@types/prop-types" "*"
+
 "@types/babel__core@^7.0.0", "@types/babel__core@^7.1.7":
   version "7.1.12"
   resolved "https://registry.yarnpkg.com/@types/babel__core/-/babel__core-7.1.12.tgz#4d8e9e51eb265552a7e4f1ff2219ab6133bdfb2d"
