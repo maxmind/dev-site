@@ -11,6 +11,7 @@ import Layout from '../../components/Layout/Layout';
 import { h1 as H1, p as P } from '../../components/Mdx';
 import { getNextPage, getPreviousPage } from '../../utils/pagination';
 import { IPageContext } from './query';
+import ReleaseNotesArchiveList from './ReleaseNotesArchiveList';
 import TableOfContents from './TableOfContents';
 
 import styles from './Page.module.scss';
@@ -40,6 +41,12 @@ const Page: React.FC<IPage> = (props) => {
     type = 'geoip';
   }
 
+  let isReleaseNotesPage = false;
+
+  if (location.pathname.split('/')[2] === 'release-notes' && type) {
+    isReleaseNotesPage = true;
+  }
+
   const nextPage = getNextPage(location.pathname);
   const previousPage = getPreviousPage(location.pathname);
 
@@ -67,12 +74,21 @@ const Page: React.FC<IPage> = (props) => {
         <aside
           className={styles.aside}
         >
-          {tableOfContents && tableOfContents.items?.length > 0 && (
-            <TableOfContents
+          { !isReleaseNotesPage &&
+            tableOfContents &&
+            tableOfContents.items?.length > 0 &&
+            (
+              <TableOfContents
+                className={styles.tableOfContents}
+                items={tableOfContents.items}
+              />
+            )}
+          { isReleaseNotesPage &&
+            <ReleaseNotesArchiveList
               className={styles.tableOfContents}
-              items={tableOfContents.items}
+              type={type as 'minfraud' | 'geoip'}
             />
-          )}
+          }
         </aside>
 
         <section

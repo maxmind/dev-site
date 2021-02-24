@@ -13,6 +13,7 @@ export interface IItem {
 }
 
 export interface ITableOfContents {
+  heading?: string;
   items: IItem[];
 }
 
@@ -71,7 +72,7 @@ const renderItems = (
 const TableOfContents: React.FC<
   ITableOfContents & React.HTMLProps<HTMLElement>
 > = (props) => {
-  const { items, ...rest } = props;
+  const { heading, items, ...rest } = props;
 
   const itemIds = getIds(items);
   const currentItem = useActiveHeading(itemIds);
@@ -83,7 +84,7 @@ const TableOfContents: React.FC<
       <span
         className={styles.heading}
       >
-        On this Page
+        {heading || 'On this Page'}
       </span>
       {renderItems(items, currentItem)}
     </nav>
@@ -91,6 +92,7 @@ const TableOfContents: React.FC<
 };
 
 TableOfContents.propTypes = {
+  heading: PropTypes.string,
   items: PropTypes.any,
 };
 
