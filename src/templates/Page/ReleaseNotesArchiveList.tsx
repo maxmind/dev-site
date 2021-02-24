@@ -13,6 +13,7 @@ const years: {[index: string]: number[]} = {
   geoip: [],
   minfraud: [
     2020,
+    2019,
   ],
 };
 
