@@ -5,6 +5,7 @@ import * as React from 'react';
 import { FaLink as LinkIcon } from 'react-icons/fa';
 
 import { formatSchemaName } from '../../utils/openapi';
+import Example from './Example';
 import { IProperty } from './Property';
 import { Service } from './ServiceTags';
 import Tag from './Tag';
@@ -13,14 +14,22 @@ import styles from './Schema.module.scss';
 
 interface ISchema {
   children: React.ReactElement | React.ReactElement[];
+  example?: string,
   name: string;
   services?: '*' | Service[];
+  type: 'array<object>' | 'object';
 }
 
 const slugger = new GithubSlugger();
 
+const isPropertyComponent = (child: any) => (
+  // First option for Jest renderer. Second for MDX Runtime.
+  child.type.name === 'Property' || child.props.mdxType === 'Property'
+);
+
 const Schema: React.FC<ISchema> = (props) => {
-  const { children, name, services } = props;
+  const { children, name, services, type } = props;
+  let { example } = props;
 
   const formattedSchemaName = React.useMemo(
     () => formatSchemaName(name),
@@ -36,12 +45,9 @@ const Schema: React.FC<ISchema> = (props) => {
     ]
   );
 
-  const properties = React.Children.toArray(children)
+  const content = React.Children.toArray(children)
     .map((child: any) => {
-      if (
-        // First option for Jest renderer. Second for MDX Runtime.
-        !(child.type.name === 'Property' || child.props.mdxType === 'Property')
-      ) {
+      if (!isPropertyComponent(child)) {
         return child;
       }
 
@@ -59,6 +65,66 @@ const Schema: React.FC<ISchema> = (props) => {
 
       return React.cloneElement<IProperty>(child, props);
     });
+
+  if (type === 'object' && !example) {
+    example = content.reduce(
+      (accumulator: any, child) => {
+        if (child?.props?.name && child?.props?.example) {
+          const { example, name, type } = child.props;
+
+          let formattedExample = example;
+
+          if (type === 'object' || type.startsWith('array')) {
+            formattedExample = JSON.parse(formattedExample);
+
+            console.log(formattedExample);
+          }
+
+          if (type === 'boolean') {
+            formattedExample = (formattedExample === 'true');
+          }
+
+          if (type === 'integer') {
+            formattedExample = parseInt(formattedExample);
+          }
+
+          if (type === 'number') {
+            formattedExample = new Number(formattedExample);
+          }
+
+          return {
+            ...accumulator,
+            [name]: formattedExample,
+          };
+        }
+
+        return accumulator;
+      },
+      example,
+    );
+
+    example = JSON.stringify(example, null, 2);
+  }
+
+  if (example) {
+    const exampleComponent = (
+      <Example
+        language="json"
+      >
+        {example}
+      </Example>
+    );
+
+    const firstPropertyComponentIndex = content.findIndex(
+      (child) => isPropertyComponent(child)
+    );
+
+    if (firstPropertyComponentIndex != -1) {
+      content.splice(firstPropertyComponentIndex, 0, exampleComponent);
+    } else {
+      content.push(exampleComponent);
+    }
+  }
 
   return (
     <div
@@ -88,17 +154,21 @@ const Schema: React.FC<ISchema> = (props) => {
           <Tag
             className={styles['heading__tag']}
           >
-            object
+            {type}
           </Tag>
         </span>
       </div>
       <div
         className={styles.content}
       >
-        {properties}
+        {content}
       </div>
     </div>
   );
+};
+
+Schema.defaultProps = {
+  type: 'object',
 };
 
 Schema.propTypes = {
@@ -108,6 +178,7 @@ Schema.propTypes = {
       PropTypes.element.isRequired
     ),
   ]).isRequired,
+  example: PropTypes.string,
   name: PropTypes.string.isRequired,
   services: PropTypes.oneOfType([
     PropTypes.oneOf([
@@ -121,6 +192,10 @@ Schema.propTypes = {
       ] as const).isRequired,
     ),
   ]),
+  type: PropTypes.oneOf([
+    'array<object>',
+    'object',
+  ] as const).isRequired,
 };
 
 export default Schema;

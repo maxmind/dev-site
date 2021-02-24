@@ -2,7 +2,7 @@ import { ReactWrapper } from 'enzyme';
 import { Link } from 'gatsby';
 import * as React from 'react';
 
-import { p as P } from '../Mdx';
+import { p as P, pre as Pre } from '../Mdx';
 import Property, { PropertyType } from './Property';
 
 import styles from './Property.module.scss';
@@ -79,7 +79,7 @@ describe('<Property />', () => {
         />
       );
 
-      expect(component.find(`.${styles.example}`)).not.toExist();
+      expect(component.find('Example')).not.toExist();
     });
 
     it('is shown if `example` property exists', () => {
@@ -91,8 +91,35 @@ describe('<Property />', () => {
         />
       );
 
-      expect(component.find(`.${styles.example}`)).toExist();
+      expect(component.find('Example')).toExist();
     });
+
+    it(
+      'if `type` is `array<object>`, the `example` value is formatted json',
+      () => {
+        const component = global.mountWithRouter(
+          <Property
+            example={`
+              [
+                {
+                  "foo": "bar"
+                }
+              ]
+            `}
+            name="foo"
+            type="array<object>"
+          />
+        );
+
+        const exampleValue = component.find('Example').props().children;
+
+        expect(exampleValue).toBe(JSON.stringify([
+          {
+            foo: 'bar',
+          },
+        ], null, 2));
+      }
+    );
 
     it('if `type` is `object`, the `example` value is formatted json', () => {
       const component = global.mountWithRouter(
@@ -107,38 +134,28 @@ describe('<Property />', () => {
         />
       );
 
-      const exampleValue = component.find('Pre')
-        .filter(`.${styles['example-value']}`);
+      const exampleValue = component.find('Example').props().children;
 
-      expect(exampleValue.text()).toBe(JSON.stringify({
+      expect(exampleValue).toBe(JSON.stringify({
         foo: 'bar',
       }, null, 2));
     });
 
-    it.each([
-      'object',
-      'object[]',
-    ])(
-      'if `type` is `%s`, the `example` value is formatted json',
-      (type) => {
+    it(
+      // eslint-disable-next-line max-len
+      'if `type` is `string`, the `example` value is formatted is wrapped in quotes',
+      () => {
         const component = global.mountWithRouter(
           <Property
-            example={`
-            {
-              "foo": "bar"
-            }
-          `}
+            example="foo"
             name="foo"
-            type={type as PropertyType}
+            type="string"
           />
         );
 
-        const exampleValue = component.find('Pre')
-          .filter(`.${styles['example-value']}`);
+        const exampleValue = component.find('Example').props().children;
 
-        expect(exampleValue.text()).toBe(JSON.stringify({
-          foo: 'bar',
-        }, null, 2));
+        expect(exampleValue).toBe('"foo"');
       }
     );
 
@@ -148,20 +165,12 @@ describe('<Property />', () => {
         'true',
       ],
       [
-        'decimal',
-        '0.1',
-      ],
-      [
         'integer',
         '1',
       ],
       [
-        'enum',
-        'foo',
-      ],
-      [
-        'string',
-        'foo',
+        'number',
+        '0.1',
       ],
     ])(
       'if `type` is `%s`, the `example` value is not formatted',
@@ -174,10 +183,9 @@ describe('<Property />', () => {
           />
         );
 
-        const exampleValue = component.find('Pre')
-          .filter(`.${styles['example-value']}`);
+        const exampleValue = component.find('Example').props().children;
 
-        expect(exampleValue.text()).toBe(example);
+        expect(exampleValue).toBe(example);
       }
     );
   });
@@ -262,6 +270,7 @@ describe('<Property />', () => {
             services="*"
             tags={{
               bar: 'bar',
+              baz: null,
               foo: 'foo',
             }}
             type="string"
@@ -273,12 +282,16 @@ describe('<Property />', () => {
       });
 
       it('are listed', () => {
-        expect(schemaTags.length).toBe(2);
+        expect(schemaTags.length).toBe(3);
       });
 
       it('text is key / value pairs', () => {
         expect(schemaTags.at(0).text()).toBe('bar: bar');
-        expect(schemaTags.at(1).text()).toBe('foo: foo');
+        expect(schemaTags.at(2).text()).toBe('foo: foo');
+      });
+
+      it('keys without values only show key', () => {
+        expect(schemaTags.at(1).text()).toBe('baz');
       });
     });
   });

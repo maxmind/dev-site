@@ -5,3 +5,27 @@
   line-height: 1.5em;
   padding: 16px;
 }
+
+.td * {
+  font-size: 14px;
+  line-height: 26px;
+  max-width: initial !important;
+  min-width: initial !important;
+  width: auto !important;
+}
+
+.td > * {
+  margin: calc(var(--mm-spacing) / 4) 0;
+}
+
+.td > *:first-child {
+  margin-top: 0;
+}
+
+.td > *:last-child {
+  margin-bottom: 0;
+}
+
+.td [class^='Code-module'] {
+  white-space: nowrap;
+}

@@ -10,14 +10,16 @@ interface IWrapper {
 }
 
 const Wrapper: React.FC<IWrapper> = (props) => {
+  const { children, className, ...rest } = props;
   return (
     <div
       className={classNames(
-        props.className,
+        className,
         styles.wrapper,
       )}
+      {...rest}
     >
-      {props.children}
+      {children}
     </div>
   );
 };

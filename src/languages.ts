@@ -31,6 +31,17 @@ export const languages: ILanguage[] = [
     },
   },
   {
+    id: 'bash',
+    label: 'Bash',
+    prismSettings: {
+      importScript: true,
+      whitespace: {
+        indentSize: 2,
+        indentStyle: 'space' as IndentStyle,
+      },
+    },
+  },
+  {
     id: 'css',
     label: 'CSS',
     prismSettings: {

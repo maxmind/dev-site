@@ -7,24 +7,20 @@
   scroll-margin-top: calc(var(--page-header-height) + var(--mm-spacing) + 46px);
 }
 
-.row::after {
+.row::before {
   background: var(--mm-color-border);
-  bottom: -2px;
   content: ' ';
   height: 1px;
   left: calc(var(--mm-spacing) / 2);
   position: absolute;
+  top: -3px;
   width: calc(100% - var(--mm-spacing));
 }
 
-.row:first-of-type::before {
-  background: var(--mm-color-border);
-  content: '';
-  display: block;
-  height: 1px;
+:not(.row) + .row::before {
+  border-top: 1px solid var(--mm-color-border);
+  height: 0;
   left: -2px;
-  position: absolute;
-  top: -3px;
   width: calc(100% + 4px);
 }
 
@@ -89,21 +85,6 @@
   margin-bottom: 0 !important;
 }
 
-.example {
-  margin: calc(var(--mm-spacing) / 2) 0;
-}
-
-.example-label {
-  font-size: 14px;
-  font-weight: 500;
-}
-
-.example-value {
-  margin: calc(var(--mm-spacing) / 4) 0 0 0;
-  max-width: calc(100vw - calc(var(--mm-spacing) * 3 - 2px));
-  padding-top: 0;
-}
-
 .row--targeted .example-value {
   background: var(--mm-color-background);
 }
@@ -145,7 +126,6 @@
   margin-top: calc(var(--mm-spacing) / 4);
 }
 
-
 @include variables.breakpoint('sm') {
   .tags {
     display: grid;
@@ -153,17 +133,5 @@
     grid-auto-flow: column;
     grid-template-columns: 1fr max-content;
     grid-template-rows: auto;
-  }
-}
-
-@include variables.breakpoint('lg') {
-  .example-value {
-    max-width: calc(100vw - var(--mm-layout-sidebar-width) - calc(var(--mm-spacing) * 3) - 4px);
-  }
-}
-
-@include variables.breakpoint('xl') {
-  .example-value {
-    max-width: calc(680px - var(--mm-spacing));
   }
 }
