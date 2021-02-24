@@ -1,4 +1,5 @@
 import { useLocation } from '@reach/router';
+import classNames from 'classnames';
 import { Link } from 'gatsby';
 import PropTypes from 'prop-types';
 import React from 'react';
@@ -58,7 +59,9 @@ const Page: React.FC<IPage> = (props) => {
       type={type as 'minfraud' | 'geoip'}
     >
       <article
-        className={styles.article}
+        className={classNames(styles.article, {
+          [styles.releaseNotes]: isReleaseNotesPage,
+        })}
         data-plugin-header="line-numbers"
       >
         <header

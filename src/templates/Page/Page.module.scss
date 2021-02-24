@@ -192,6 +192,41 @@
   }
 }
 
+@include variables.max-breakpoint('xxl') {
+  .article.releaseNotes {
+    display: grid;
+    grid-template-areas:
+      'header header'
+      'content content'
+      'aside aside'
+      'footer footer';
+    grid-template-columns: 50% 50%;
+    grid-template-rows: min-content min-content 1fr min-content;
+    height: 100%;
+  }
+
+  .article.releaseNotes .header {
+    grid-area: header;
+  }
+
+  .article.releaseNotes .header ~ .content > *:first-child {
+    margin-top: 0;
+  }
+
+  .article.releaseNotes .aside {
+    grid-area: aside;
+    @include variables.max-width;
+  }
+
+  .article.releaseNotes .content {
+    grid-area: content;
+  }
+
+  .article.releaseNotes .footer {
+    grid-area: footer;
+  }
+}
+
 @include variables.breakpoint('xxl') {
   .article {
     grid-template-areas:

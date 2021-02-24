@@ -29,6 +29,11 @@ const getIds = (
   ];
 }, []);
 
+const isActive = (url: string, currentItem?: string) => {
+  return (url == location.pathname) ||
+    (currentItem && currentItem === `toc-${url.slice(1)}`);
+};
+
 const renderItems = (
   items: IItem[],
   currentItem?: string,
@@ -51,7 +56,7 @@ const renderItems = (
         <li
           className={classNames(
             styles.listItem,
-            (currentItem && currentItem === `toc-${item.url.slice(1)}`)
+            isActive(item.url, currentItem)
               ? styles['item--active'] : undefined
           )}
           data-item-number={itemNumber}
