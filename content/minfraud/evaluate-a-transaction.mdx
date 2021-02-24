@@ -16,13 +16,17 @@ details on our JSON API.
 
 ### 1. Add device tracking to your website
 
-The Device Tracking Add-On runs on a visiting device so that the minFraud
-service can assign a device ID and begin collecting fingerprint information.
-This helps detect fraudsters if they change or enable proxies while browsing
-your website.
+The [Device Tracking Add-On](/minfraud/track-devices) runs on a visiting device
+so that the minFraud service can assign a device ID and begin collecting
+fingerprint information.  This helps detect fraudsters if they change or enable
+proxies while browsing your website.
+
+Note that, in order to be effective, the Device Tracking Add-on must, at a
+minimum, be included on the page where the IP address is captured for a
+minFraud query.
 
 Place the following code in the footer of the HTML webpage and replace
-`ACCOUNT_ID` with your MaxMind account ID:
+`ACCOUNT_ID` with your [MaxMind account ID](https://www.maxmind.com/en/my_license_key):
 
 ```html
 <script type="text/javascript">
