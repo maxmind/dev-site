@@ -24,7 +24,8 @@ const THESE_PLUGINS_MUST_COME_LAST = [
 const GATSBY_ROOT = `${__dirname}/../../../`;
 
 const GLOBALLY_IGNORED_SOURCE_FILES = [
-  '**/_*.mdx',
+  '**/_**/*',
+  '**/_*',
 ];
 
 export default {
