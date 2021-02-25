@@ -13,9 +13,9 @@
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
   color: var(--mm-color-primary-text);
   display: flex;
-  margin: calc(var(--mm-spacing) * 2);
+  margin: calc(var(--mm-spacing) * 2) 0;
+  padding-left: var(--mm-spacing);
   position: relative;
-  @include variables.max-width;
 }
 
 .icon-wrapper {
@@ -89,10 +89,4 @@
 
 .warning .icon-wrapper {
   background: #e89f29;
-}
-
-@include variables.breakpoint('xl') {
-  .content {
-    padding: 0 var(--mm-spacing) 0 50px;
-  }
 }

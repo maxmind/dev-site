@@ -60,6 +60,14 @@
   text-shadow: var(--mm-overview-heading-drop-shadow);
 }
 
+.content {
+  padding: var(--mm-spacing);
+}
+
+.content > *:first-child {
+  margin-top: 0;
+}
+
 @include variables.breakpoint('sm') {
   .lockup {
     grid-template-areas:
@@ -93,5 +101,21 @@
 
   .subheading {
     font-size: 25px;
+  }
+
+  .content {
+    display: grid;
+  }
+
+  .content > * {
+    justify-self: center;
+  }
+
+  .content [class^='LinkGroupContainer-module'] {
+    max-width: calc(680px + 300px);
+  }
+
+  .content > *:not([class^='LinkGroupContainer-module']) {
+    @include variables.max-width;
   }
 }

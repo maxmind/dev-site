@@ -2,11 +2,8 @@
 
 .container {
   display: table;
-  margin: var(--mm-spacing);
-  margin-bottom: calc(var(--mm-spacing) + 1px);
+  margin: var(--mm-spacing) 0 calc(var(--mm-spacing) + 1px);
   position: relative;
-  width: calc(100% - calc(var(--mm-spacing) * 2));
-  @include variables.max-width;
 }
 
 .heading {
