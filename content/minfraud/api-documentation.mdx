@@ -13,10 +13,12 @@ title: minFraud API Documentation
 </Alert>
 
 To learn more about the minFraud services and to purchase credits, please visit
-the [minFraud Overview page](https://www.maxmind.com/en/solutions/minfraud-services). If you are interested in minFraud Factors, please
-[contact our Enterprise Business team](https://www.maxmind.com/en/sales-contact?comments=I+am+interested+in+minFraud+Factors.&interested_in=minfraud) for assistance. To better understand the
-differences between each minFraud service, review our [minFraud Service
-Comparison page](https://www.maxmind.com/en/solutions/minfraud-services#compare-features) and the Response Body section below.
+the [minFraud Overview page](https://www.maxmind.com/en/solutions/minfraud-services).
+If you are interested in minFraud Factors, please
+[contact our Enterprise Business team](https://www.maxmind.com/en/sales-contact?comments=I+am+interested+in+minFraud+Factors.&interested_in=minfraud)
+for assistance. To better understand the differences between each minFraud
+service, review our [minFraud Service Comparison page](https://www.maxmind.com/en/solutions/minfraud-services#compare-features)
+and the Response Body section below.
 
 ## Requests
 
@@ -141,7 +143,9 @@ definition that further describes that specific object.
     example={`
       {
         "ip_address": "2001:db8::ff00:42:8329",
-        "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.89 Safari/537.36",
+        "user_agent": "${[
+          'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36',
+          '(KHTML, like Gecko) Chrome/41.0.2272.89 Safari/537.36'].join(' ')}",
         "accept_language": "en-US,en;q=0.8",
         "session_age": 3600.5,
         "session_id": "c2ffa1b7-f5c5-4702-beb2-4254794fe391"

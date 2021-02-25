@@ -1,3 +1,5 @@
+// TODO - Figure out correct typings for React children that implement ISchema
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import { Link } from 'gatsby';
 import GithubSlugger from 'github-slugger';
 import PropTypes from 'prop-types';

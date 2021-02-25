@@ -7,7 +7,6 @@ import PropTypes from 'prop-types';
 import * as React from 'react';
 
 import { formatSchemaName } from '../../utils/openapi';
-import { inlineCode as Code } from '../Mdx';
 import Example from './Example';
 import ServiceTags from './ServiceTags';
 import Tag from './Tag';

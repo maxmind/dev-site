@@ -130,7 +130,6 @@
   .tags {
     display: grid;
     gap: var(--mm-spacing);
-    grid-auto-flow: column;
     grid-template-columns: 1fr max-content;
     grid-template-rows: auto;
   }

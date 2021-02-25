@@ -13,7 +13,6 @@
   box-shadow: 0 -4px 0 0 var(--mm-color-background);
   display: grid;
   gap: calc(var(--mm-spacing) / 4);
-  grid-auto-flow: column;
   grid-template-areas: 'name type';
   grid-template-columns: max-content 1fr;
   grid-template-rows: max-content;
@@ -94,6 +93,7 @@
 @include variables.breakpoint('md') {
   .heading {
     grid-template-areas: 'name type';
+    grid-template-columns: max-content 1fr;
   }
 
   .heading__link {
