@@ -9,7 +9,7 @@ export interface IReleaseNotesArchiveList {
   type: ProductSlug;
 }
 
-const years: {[index: string]: number[]} = {
+const years: Record<ProductSlug, number[]> = {
   geoip: [],
   minfraud: [
     2020,
