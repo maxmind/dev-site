@@ -192,6 +192,14 @@
   }
 }
 
+@include variables.max-breakpoint('xl') {
+  .article.releaseNotes .aside,
+  .article.releaseNotes .header {
+    justify-self: auto;
+  }
+}
+
+
 @include variables.max-breakpoint('xxl') {
   .article.releaseNotes {
     display: grid;
