@@ -21,6 +21,11 @@
     "public": "public",
     "redirects": [
       {
+        "destination": "/geoip/release-notes/rss.xml",
+        "source": "/feed/?post_type=release_note&product=geoip2",
+        "type": 302
+      },
+      {
         "destination": "/geoip/geolocate-an-ip/databases",
         "source": "/geoip/geoip2/downloadable",
         "type": 302
@@ -28,6 +33,16 @@
       {
         "destination": "/geoip/geolocate-an-ip/web-services",
         "source": "/geoip/geoip2/web-services",
+        "type": 302
+      },
+      {
+        "destination": "/geoip/release-notes/rss.xml",
+        "source": "/feed/?post_type=release_note&product=geoip2",
+        "type": 302
+      },
+      {
+        "destination": "/minfraud/release-notes/rss.xml",
+        "source": "/feed/?post_type=release_note&product=minfraud",
         "type": 302
       },
       {
