@@ -1,4 +1,6 @@
+import { useLocation } from '@reach/router';
 import classNames from 'classnames';
+import { Link } from 'gatsby';
 import PropTypes from 'prop-types';
 import React from 'react';
 
@@ -13,6 +15,7 @@ export interface IItem {
 }
 
 export interface ITableOfContents {
+  heading?: string;
   items: IItem[];
 }
 
@@ -28,8 +31,14 @@ const getIds = (
   ];
 }, []);
 
+const isActive = (url: string, pathname: string, currentItem?: string) => {
+  return (url == pathname) ||
+    (currentItem && currentItem === `toc-${url.slice(1)}`);
+};
+
 const renderItems = (
   items: IItem[],
+  pathname: string,
   currentItem?: string,
 ): React.ReactElement => (
   <ul
@@ -50,18 +59,18 @@ const renderItems = (
         <li
           className={classNames(
             styles.listItem,
-            (currentItem && currentItem === `toc-${item.url.slice(1)}`)
+            isActive(item.url, pathname, currentItem)
               ? styles['item--active'] : undefined
           )}
           data-item-number={itemNumber}
           key={`toc-item-${index}`}
         >
-          <a
-            href={item.url}
+          <Link
+            to={item.url}
           >
             {title}
-          </a>
-          {item.items && renderItems(item.items, currentItem)}
+          </Link>
+          {item.items && renderItems(item.items, pathname, currentItem)}
         </li>
       );
     })}
@@ -71,8 +80,9 @@ const renderItems = (
 const TableOfContents: React.FC<
   ITableOfContents & React.HTMLProps<HTMLElement>
 > = (props) => {
-  const { items, ...rest } = props;
+  const { heading, items, ...rest } = props;
 
+  const pathname = useLocation().pathname;
   const itemIds = getIds(items);
   const currentItem = useActiveHeading(itemIds);
 
@@ -83,14 +93,15 @@ const TableOfContents: React.FC<
       <span
         className={styles.heading}
       >
-        On this Page
+        {heading || 'On this Page'}
       </span>
-      {renderItems(items, currentItem)}
+      {renderItems(items, pathname, currentItem)}
     </nav>
   );
 };
 
 TableOfContents.propTypes = {
+  heading: PropTypes.string,
   items: PropTypes.any,
 };
 

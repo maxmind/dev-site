@@ -1,14 +1,17 @@
+import GithubSlugger from 'github-slugger';
 import toHtml from 'hast-util-to-html';
 import toHast from 'mdast-util-to-hast';
 // eslint-disable-next-line import/no-unresolved
 import type { Node, Parent } from 'unist';
 
 interface IFeed {
+  description: string;
   title: string;
   url: string,
 }
 
 export default (feed: IFeed): any => ({
+  description: `${feed.description}`,
   generator: '',
   output: `${feed.url}/rss.xml`,
   query: `
@@ -53,14 +56,25 @@ export default (feed: IFeed): any => ({
           (attribute: Node) => attribute.name === 'date'
         );
 
+        const titleAttribute = (releaseNote.attributes as Node[]).find(
+          (attribute: Node) => attribute.name === 'title'
+        );
+
         if (!dateAttribute?.value) {
           throw Error('`date` attribute value is missing');
         }
 
+        if (!titleAttribute?.value) {
+          throw Error('`title` attribute value is missing');
+        }
+
+        // Assume publish time is around noon office standard time
+        const dateString = `${dateAttribute.value} 12:00:00 GMT -0400`;
+
         const url = [
           site.siteMetadata.siteUrl,
           node.fields.slug,
-          `#${dateAttribute.value}`,
+          `#${GithubSlugger.slug(titleAttribute.value)}`,
         ].join('');
 
         return {
@@ -72,8 +86,9 @@ export default (feed: IFeed): any => ({
               ).join(''),
             },
           ],
-          date: new Date(dateAttribute.value as string),
+          date: new Date(dateString),
           guid: url,
+          title: titleAttribute.value,
           url,
         };
       });

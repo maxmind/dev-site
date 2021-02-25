@@ -15,6 +15,14 @@ $breakpoints: (
   }
 }
 
+@mixin max-breakpoint($size) {
+  $width: map-get($breakpoints, $size);
+
+  @media only screen and (max-width: $width) {
+    @content;
+  }
+}
+
 $containers: (
   sm: 540px,
   md: 720px,

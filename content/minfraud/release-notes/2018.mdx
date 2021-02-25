@@ -1,0 +1,87 @@
+---
+draft: false
+title: minFraud Release Notes - 2018 Archive
+---
+
+<ReleaseNote date="2018-09-21" title="Changes to US coordinate data">
+On Monday, October 1st, we will be changing a large amount of our U.S.
+coordinate (latitude & longitude) data\* to use
+[GeoNames](https://www.geonames.org/) coordinates for postal codes. This
+change will ensure greater consistency during our build processes. Around 95%
+of US coordinates will change with most moving about 1 mile. About 5 to 10% of
+US coordinates will move by more than 10 miles.
+
+_\* Coordinate data is approximate and is not precise. It should not be used
+to identify a particular street address or household as it refers to a larger
+geographical area instead of a precise location._
+</ReleaseNote>
+
+<ReleaseNote date="2018-07-17" title="New input parameters for use with custom rules">
+We have released additional input parameters for use with custom rules.
+Customers of minFraud Score, minFraud Insights, and minFraud Factors can now
+use the following inputs to serve as the basis when creating a custom rule:
+
+- IIN: `/credit_card/issuer_id_number` – The issuer ID number for the credit
+card. This is the first 6 digits of the credit card number. It identifies
+the issuing bank.
+- Accept Language: `/device/accept_language` – The HTTP “Accept-Language”
+header of the device used in the transaction.
+- IP (CIDR block): `/device/ip_address` – A network CIDR block
+</ReleaseNote>
+
+<ReleaseNote date="2018-05-25" title="New European Union locations added to minFraud Insights and Factors">
+Effective May 29, 2018, we will be adding Åland Islands, Martinique, Mayotte,
+Guadeloupe, French Guiana, Réunion, and Saint Martin to the list of European
+Union locations identified by minFraud Insights and minFraud Factors responses.
+</ReleaseNote>
+
+<ReleaseNote date="2018-05-18" title="Device Tracking Add-on now always uses HTTPS">
+The HTTP request made by the Device Tracking Add-on now always uses HTTPS.
+Previously it used HTTP if your document was served over HTTP. This reduces
+compatibility with certain older versions of Internet Explorer, but will not
+cause errors.
+
+We also recommend that you use an HTTPS URL when including the add-on in your
+site. We've updated the example code in [our
+documentation](/minfraud/track-devices) to show how to do this.
+</ReleaseNote>
+
+<ReleaseNote date="2018-04-10" title="Credit card is_virtual and device local_time outputs, and payout_change event type now available!">
+We've added two new output fields to the minFraud Insights and Factors
+services. The outputs are:
+
+- Credit card is_virtual: `/credit_card/is_virtual` – A flag that is true if
+the credit card is a virtual card.
+- Device local_time: `/device/local_time` – A date-time indicating the local
+date and time of the transaction in the time zone of the device.
+
+We've also added a new event type to the `/event/type` field for all minFraud
+requests: `payout_change`.
+</ReleaseNote>
+
+<ReleaseNote date="2018-02-13" title="EU Country outputs added to minFraud Insights and minFraud Factors services">
+We have added additional outputs to the minFraud Insights and minFraud Factors
+services. The outputs are:
+
+- EU Country: `/country/is_in_european_union` – Country of the location of the
+IP address in an EU member state
+- EU Registered Country: `/registered_country/is_in_european_union` – Country
+registered by the ISP or organization is an EU member state
+
+minFraud Insights and Factors services now include anonymizer-type outputs.
+These outputs are:
+
+- `/ip_address/traits/is_anonymous` – whether the IP address belongs to any
+sort of anonymous network.
+- `/ip_address/traits/is_anonymous_vpn` – whether the IP address belongs to an
+anonymous VPN system.
+- `/ip_address/traits/is_hosting_provider` – whether the IP address belongs to
+a hosting provider.
+- `/ip_address/traits/is_public_proxy` – whether the IP address belongs to a
+public proxy.
+- `/ip_address/traits/is_tor_exit_node` – whether the IP address is a Tor exit
+node.
+
+As these are included via GeoIP2 Precision Insights, please see our [GeoIP2
+Precision Web Services documentation](/geoip) for more information.
+</ReleaseNote>

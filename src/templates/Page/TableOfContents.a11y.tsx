@@ -1,7 +1,16 @@
+import { useLocation } from '@reach/router';
 import { mount  } from 'enzyme';
 import * as React from 'react';
 
 import TableOfContents, { IItem } from './TableOfContents';
+
+(useLocation as jest.Mock).mockReturnValue({
+  hash: '',
+  key: '',
+  pathname: '/',
+  search: '',
+  state: {},
+});
 
 const items: IItem[] = [
   {

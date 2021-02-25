@@ -1,7 +1,10 @@
+import GithubSlugger from 'github-slugger';
 import PropTypes from 'prop-types';
 import * as React from 'react';
 
 import H2 from './Mdx/H2';
+
+import styles from './ReleaseNote.module.scss';
 
 type Year = `${number}${number}${number}${number}`;
 type Month = '01' | '02' | '03' | '04' | '05' | '06' | '07' | '08' | '09' | '10'
@@ -13,16 +16,38 @@ type Day = '01' | '02'| '03'| '04' | '05' | '06' | '07' | '08' | '09' | '10'
 interface IReleaseNote {
   children: React.ReactNode;
   date: `${Year}-${Month}-${Day}`;
+  title: string;
 }
 
+const dateOptions = {
+  day: 'numeric',
+  month: 'long',
+  timeZone: 'America/New_York',
+  year: 'numeric',
+};
+
 const ReleaseNote: React.FC<IReleaseNote> = (props) => {
+  // Assume publish time is around noon office standard time
+  const date = new Date(`${props.date} 12:00:00`);
+  const humanDate = new Intl.DateTimeFormat('en-US', dateOptions).format(date);
+
   return (
-    <>
-      <H2>
-        {props.date}
+    <article
+      className={styles.article}
+    >
+      <H2
+        className={styles.title}
+        id={GithubSlugger.slug(props.title)}
+      >
+        {props.title}
       </H2>
+      <span
+        className={styles.date}
+      >
+        {humanDate}
+      </span>
       {props.children}
-    </>
+    </article>
   );
 };
 
@@ -43,6 +68,7 @@ ReleaseNote.propTypes = {
     }
     return null;
   },
+  title: PropTypes.string.isRequired,
 };
 
 export default ReleaseNote;

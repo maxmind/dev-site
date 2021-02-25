@@ -1,4 +1,5 @@
 import { useLocation } from '@reach/router';
+import classNames from 'classnames';
 import { Link } from 'gatsby';
 import PropTypes from 'prop-types';
 import React from 'react';
@@ -11,6 +12,7 @@ import Layout from '../../components/Layout/Layout';
 import { h1 as H1, p as P } from '../../components/Mdx';
 import { getNextPage, getPreviousPage } from '../../utils/pagination';
 import { IPageContext } from './query';
+import ReleaseNotesArchiveList from './ReleaseNotesArchiveList';
 import TableOfContents from './TableOfContents';
 
 import styles from './Page.module.scss';
@@ -28,7 +30,7 @@ const Page: React.FC<IPage> = (props) => {
   } = props.pageContext;
   const location = useLocation();
   const { description, keywords, title } = frontmatter;
-  const { modifiedTime } = parent;
+  const { modifiedTime } = parent || {};
 
   let type;
 
@@ -38,6 +40,12 @@ const Page: React.FC<IPage> = (props) => {
 
   if (location.pathname.startsWith('/geoip')) {
     type = 'geoip';
+  }
+
+  let isReleaseNotesPage = false;
+
+  if (location.pathname.split('/')[2] === 'release-notes' && type) {
+    isReleaseNotesPage = true;
   }
 
   const nextPage = getNextPage(location.pathname);
@@ -51,7 +59,9 @@ const Page: React.FC<IPage> = (props) => {
       type={type as 'minfraud' | 'geoip'}
     >
       <article
-        className={styles.article}
+        className={classNames(styles.article, {
+          [styles.releaseNotes]: isReleaseNotesPage,
+        })}
         data-plugin-header="line-numbers"
       >
         <header
@@ -67,12 +77,21 @@ const Page: React.FC<IPage> = (props) => {
         <aside
           className={styles.aside}
         >
-          {tableOfContents && tableOfContents.items?.length > 0 && (
-            <TableOfContents
+          { !isReleaseNotesPage &&
+            tableOfContents &&
+            tableOfContents.items?.length > 0 &&
+            (
+              <TableOfContents
+                className={styles.tableOfContents}
+                items={tableOfContents.items}
+              />
+            )}
+          { isReleaseNotesPage &&
+            <ReleaseNotesArchiveList
               className={styles.tableOfContents}
-              items={tableOfContents.items}
+              type={type as 'minfraud' | 'geoip'}
             />
-          )}
+          }
         </aside>
 
         <section
@@ -80,14 +99,16 @@ const Page: React.FC<IPage> = (props) => {
         >
           {props.children}
 
-          <P
-            className={styles['last-updated']}
-          >
-            This page was last updated on
-            {' '}
-            {modifiedTime}
-            .
-          </P>
+          {modifiedTime && (
+            <P
+              className={styles['last-updated']}
+            >
+              This page was last updated on
+              {' '}
+              {modifiedTime}
+              .
+            </P>
+          )}
         </section>
 
         {(previousPage || nextPage) && (

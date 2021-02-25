@@ -119,10 +119,12 @@ export default {
       options: {
         feeds: [
           createFeed({
-            title: 'GeoIP Release Notes',
+            description: 'Release notes for MaxMind\'s GeoIP2 product line',
+            title: 'GeoIP2 Release Notes',
             url: '/geoip/release-notes',
           }),
           createFeed({
+            description: 'Release notes for MaxMind\'s minFraud product line',
             title: 'minFraud Release Notes',
             url: '/minfraud/release-notes',
           }),
