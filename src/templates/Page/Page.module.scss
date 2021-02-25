@@ -33,6 +33,10 @@
   @include variables.max-width;
 }
 
+.content > [id^='toc-']:first-of-type > *:first-child {
+  margin-top: 0;
+}
+
 .footer {
   border-top: 1px solid var(--mm-color-border);
   display: grid;
