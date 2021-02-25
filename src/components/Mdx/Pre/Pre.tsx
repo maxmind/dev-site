@@ -23,13 +23,14 @@ interface IPre {
 const extractCli = (className: string): string => className
   .startsWith('language-cli-') ? 'language-markdown' : className;
 
-const Pre: React.FC<React.HTMLProps<HTMLPreElement> & IPre> = (props) => {
+const Pre: React.FC<React.HTMLProps<HTMLDivElement> & IPre> = (props) => {
   const {
     children,
     className,
     hasWrapper,
     highlightLines,
     showLineNumbers,
+    ...rest
   } = props;
 
   const { isClient, key } = useIsClient();
@@ -141,6 +142,7 @@ const Pre: React.FC<React.HTMLProps<HTMLPreElement> & IPre> = (props) => {
       <Wrapper
         className={className}
         key={key}
+        {...rest}
       >
         {codeExample}
       </Wrapper>

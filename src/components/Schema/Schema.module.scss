@@ -2,11 +2,8 @@
 
 .container {
   display: table;
-  margin: var(--mm-spacing);
-  margin-bottom: calc(var(--mm-spacing) + 1px);
+  margin: var(--mm-spacing) 0 calc(var(--mm-spacing) + 1px);
   position: relative;
-  width: calc(100% - calc(var(--mm-spacing) * 2));
-  @include variables.max-width;
 }
 
 .heading {
@@ -16,7 +13,6 @@
   box-shadow: 0 -4px 0 0 var(--mm-color-background);
   display: grid;
   gap: calc(var(--mm-spacing) / 4);
-  grid-auto-flow: column;
   grid-template-areas: 'name type';
   grid-template-columns: max-content 1fr;
   grid-template-rows: max-content;
@@ -81,15 +77,23 @@
   border: 1px solid var(--mm-color-border);
   border-radius: 0 0 var(--mm-border-radius) var(--mm-border-radius);
 
-  > [class^='P-module'] {
+  > :not([class^='Property-module']) {
+    font-size: 14px;
+    line-height: 26px;
+    margin: calc(var(--mm-spacing) / 2) 0;
+    padding: 0 calc(var(--mm-spacing) / 2);
+  }
+
+  > [class^='Footnote-module'] {
     margin: 0;
-    padding: calc(var(--mm-spacing) / 2);
+    padding: calc(var(--mm-spacing) / 2) calc(var(--mm-spacing) / 2);
   }
 }
 
 @include variables.breakpoint('md') {
   .heading {
     grid-template-areas: 'name type';
+    grid-template-columns: max-content 1fr;
   }
 
   .heading__link {

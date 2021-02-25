@@ -3,7 +3,7 @@ import * as React from 'react';
 
 import { ILinkGroup } from './LinkGroup';
 
-import styles from './LinkGroup.module.scss';
+import styles from './LinkGroupContainer.module.scss';
 
 interface ILinkGroupContainer {
   children: React.ReactElement<ILinkGroup> | React.ReactElement<ILinkGroup>[],
@@ -12,7 +12,7 @@ interface ILinkGroupContainer {
 const LinkGroupContainer: React.FC<ILinkGroupContainer> = (props) => {
   return(
     <div
-      className={styles.sections}
+      className={styles.container}
     >
       {props.children}
     </div>

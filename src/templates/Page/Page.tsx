@@ -94,51 +94,47 @@ const Page: React.FC<IPage> = (props) => {
           <footer
             className={styles.footer}
           >
-            <div
-              className={styles['footer-container']}
-            >
-              {previousPage && (
-                <Link
-                  className={styles['footer-previous']}
-                  to={previousPage.to}
+            {previousPage && (
+              <Link
+                className={styles['footer-previous']}
+                to={previousPage.to}
+              >
+                <FaArrowLeft
+                  className={styles['footer-arrow']}
+                />
+                <span
+                  className={styles['footer-direction']}
                 >
-                  <FaArrowLeft
-                    className={styles['footer-arrow']}
-                  />
-                  <span
-                    className={styles['footer-direction']}
-                  >
-                    Previous
-                  </span>
-                  <span
-                    className={styles['footer-title']}
-                  >
-                    {previousPage.title}
-                  </span>
-                </Link>
-              )}
+                  Previous
+                </span>
+                <span
+                  className={styles['footer-title']}
+                >
+                  {previousPage.title}
+                </span>
+              </Link>
+            )}
 
-              {nextPage && (
-                <Link
-                  className={styles['footer-next']}
-                  to={nextPage.to}
+            {nextPage && (
+              <Link
+                className={styles['footer-next']}
+                to={nextPage.to}
+              >
+                <FaArrowRight
+                  className={styles['footer-arrow']}
+                />
+                <span
+                  className={styles['footer-direction']}
                 >
-                  <FaArrowRight
-                    className={styles['footer-arrow']}
-                  />
-                  <span
-                    className={styles['footer-direction']}
-                  >
-                    Next
-                  </span>
-                  <span
-                    className={styles['footer-title']}
-                  >
-                    {nextPage.title}
-                  </span>
-                </Link>
-              )}
-            </div>
+                  Next
+                </span>
+                <span
+                  className={styles['footer-title']}
+                >
+                  {nextPage.title}
+                </span>
+              </Link>
+            )}
           </footer>
         )}
       </article>

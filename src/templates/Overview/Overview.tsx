@@ -64,7 +64,11 @@ const Overview: React.FC<IOverview> = (props) => {
           </div>
         </header>
 
-        {props.children}
+        <div
+          className={styles.content}
+        >
+          {props.children}
+        </div>
       </article>
     </Layout>
   );

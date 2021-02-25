@@ -1,3 +1,4 @@
+import { MDXProvider } from '@mdx-js/react';
 import classNames from 'classnames';
 import PropTypes from 'prop-types';
 import React from 'react';
@@ -12,7 +13,11 @@ const Th: React.FC<React.HTMLProps<HTMLTableDataCellElement>> = ({
     className={classNames(className, styles.th)}
     {...props}
   >
-    {props.children}
+    <MDXProvider
+      disableParentContext
+    >
+      {props.children}
+    </MDXProvider>
   </th>
 );
 

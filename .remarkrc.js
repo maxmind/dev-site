@@ -46,6 +46,10 @@ module.exports = {
       new RegExp('(?!^_)[^\\.a-zA-Z0-9-]'),
     ],
     [
+      'lint-no-literal-urls',
+      false,
+    ],
+    [
       'lint-no-undefined-references',
       false,
     ],

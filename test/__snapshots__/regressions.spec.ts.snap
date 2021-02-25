@@ -99,7 +99,7 @@ Click the help icon above to learn more.
 		<button class=\\"btn btn-primary\\" name=\\"submit\\" type=\\"submit\\"><i class=\\"icon-search icon-white\\"></i></button>
 	</div>
 </form>
-</aside><aside id=\\"ezw_tco-2\\" class=\\"widget clearfix ez-toc\\"><div class=\\"ez-toc-widget-container ez-toc-v2_0_15 ez-toc-widget counter-hierarchy\\">
+</aside><aside id=\\"ezw_tco-2\\" class=\\"widget clearfix ez-toc\\"><div class=\\"ez-toc-widget-container ez-toc-v2_0_16 ez-toc-widget counter-hierarchy\\">
 
 					<h4 class=\\"widget-title\\">
 					<span class=\\"ez-toc-title-container\\">
@@ -121,7 +121,7 @@ Click the help icon above to learn more.
 
 					</h4>
 					<nav>
-<ul class=\\"ez-toc-list ez-toc-list-level-1\\"><li class=\\"ez-toc-page-1 ez-toc-heading-level-2\\"><a class=\\"ez-toc-link ez-toc-heading-1\\" href=\\"#Product_Information\\" title=\\"Product Information\\">Product Information</a></li><li class=\\"ez-toc-page-1 ez-toc-heading-level-2\\"><a class=\\"ez-toc-link ez-toc-heading-2\\" href=\\"#Release_Notes\\" title=\\"Release Notes\\">Release Notes</a></li><li class=\\"ez-toc-page-1 ez-toc-heading-level-2\\"><a class=\\"ez-toc-link ez-toc-heading-3\\" href=\\"#Client_APIs\\" title=\\"Client APIs\\">Client APIs</a><ul class=\\"ez-toc-list-level-3\\"><li class=\\"ez-toc-heading-level-3\\"><a class=\\"ez-toc-link ez-toc-heading-4\\" href=\\"#MaxMind_APIs\\" title=\\"MaxMind APIs\\">MaxMind APIs</a></li></ul></li><li class=\\"ez-toc-page-1 ez-toc-heading-level-2\\"><a class=\\"ez-toc-link ez-toc-heading-5\\" href=\\"#Additional_Features\\" title=\\"Additional Features\\">Additional Features</a><ul class=\\"ez-toc-list-level-3\\"><li class=\\"ez-toc-heading-level-3\\"><a class=\\"ez-toc-link ez-toc-heading-6\\" href=\\"#Disposition_API\\" title=\\"Disposition API\\">Disposition API</a></li><li class=\\"ez-toc-page-1 ez-toc-heading-level-3\\"><a class=\\"ez-toc-link ez-toc-heading-7\\" href=\\"#Report_Transactions\\" title=\\"Report Transactions\\">Report Transactions</a></li><li class=\\"ez-toc-page-1 ez-toc-heading-level-3\\"><a class=\\"ez-toc-link ez-toc-heading-8\\" href=\\"#Device_Tracking_Add-on\\" title=\\"Device Tracking Add-on\\">Device Tracking Add-on</a></li></ul></li><li class=\\"ez-toc-page-1 ez-toc-heading-level-2\\"><a class=\\"ez-toc-link ez-toc-heading-9\\" href=\\"#Per-Service_URIs\\" title=\\"Per-Service URIs\\">Per-Service URIs</a></li><li class=\\"ez-toc-page-1 ez-toc-heading-level-2\\"><a class=\\"ez-toc-link ez-toc-heading-10\\" href=\\"#Request_Headers\\" title=\\"Request Headers\\">Request Headers</a><ul class=\\"ez-toc-list-level-3\\"><li class=\\"ez-toc-heading-level-3\\"><a class=\\"ez-toc-link ez-toc-heading-11\\" href=\\"#AuthorizationSecurity\\" title=\\"Authorization/Security\\">Authorization/Security</a></li></ul></li><li class=\\"ez-toc-page-1 ez-toc-heading-level-2\\"><a class=\\"ez-toc-link ez-toc-heading-12\\" href=\\"#Request_Body\\" title=\\"Request Body\\">Request Body</a></li><li class=\\"ez-toc-page-1 ez-toc-heading-level-2\\"><a class=\\"ez-toc-link ez-toc-heading-13\\" href=\\"#Example_Request\\" title=\\"Example Request\\">Example Request</a><ul class=\\"ez-toc-list-level-3\\"><li class=\\"ez-toc-heading-level-3\\"><a class=\\"ez-toc-link ez-toc-heading-14\\" href=\\"#Top-Level_Request_Fields\\" title=\\"Top-Level Request Fields (/)\\">Top-Level Request Fields (/)</a><ul class=\\"ez-toc-list-level-4\\"><li class=\\"ez-toc-heading-level-4\\"><a class=\\"ez-toc-link ez-toc-heading-15\\" href=\\"#Device_device\\" title=\\"Device (/device)\\">Device (/device)</a></li><li class=\\"ez-toc-page-1 ez-toc-heading-level-4\\"><a class=\\"ez-toc-link ez-toc-heading-16\\" href=\\"#Event_event\\" title=\\"Event (/event)\\">Event (/event)</a></li><li class=\\"ez-toc-page-1 ez-toc-heading-level-4\\"><a class=\\"ez-toc-link ez-toc-heading-17\\" href=\\"#Account_account\\" title=\\"Account (/account)\\">Account (/account)</a></li><li class=\\"ez-toc-page-1 ez-toc-heading-level-4\\"><a class=\\"ez-toc-link ez-toc-heading-18\\" href=\\"#Email_email\\" title=\\"Email (/email)\\">Email (/email)</a></li><li class=\\"ez-toc-page-1 ez-toc-heading-level-4\\"><a class=\\"ez-toc-link ez-toc-heading-19\\" href=\\"#Billing_billing\\" title=\\"Billing (/billing)\\">Billing (/billing)</a></li><li class=\\"ez-toc-page-1 ez-toc-heading-level-4\\"><a class=\\"ez-toc-link ez-toc-heading-20\\" href=\\"#Shipping_shipping\\" title=\\"Shipping (/shipping)\\">Shipping (/shipping)</a></li><li class=\\"ez-toc-page-1 ez-toc-heading-level-4\\"><a class=\\"ez-toc-link ez-toc-heading-21\\" href=\\"#Payment_payment\\" title=\\"Payment (/payment)\\">Payment (/payment)</a></li><li class=\\"ez-toc-page-1 ez-toc-heading-level-4\\"><a class=\\"ez-toc-link ez-toc-heading-22\\" href=\\"#Credit_Card_credit_card\\" title=\\"Credit Card (/credit_card)\\">Credit Card (/credit_card)</a></li><li class=\\"ez-toc-page-1 ez-toc-heading-level-4\\"><a class=\\"ez-toc-link ez-toc-heading-23\\" href=\\"#Order_order\\" title=\\"Order (/order)\\">Order (/order)</a></li><li class=\\"ez-toc-page-1 ez-toc-heading-level-4\\"><a class=\\"ez-toc-link ez-toc-heading-24\\" href=\\"#Shopping_Cart_shopping_cart\\" title=\\"Shopping Cart (/shopping_cart)\\">Shopping Cart (/shopping_cart)</a><ul class=\\"ez-toc-list-level-5\\"><li class=\\"ez-toc-heading-level-5\\"><a class=\\"ez-toc-link ez-toc-heading-25\\" href=\\"#Shopping_Cart_Item\\" title=\\"Shopping Cart Item\\">Shopping Cart Item</a></li></ul></li><li class=\\"ez-toc-page-1 ez-toc-heading-level-4\\"><a class=\\"ez-toc-link ez-toc-heading-26\\" href=\\"#Custom_Inputs_custom_inputs\\" title=\\"Custom Inputs (/custom_inputs)\\">Custom Inputs (/custom_inputs)</a></li></ul></li></ul></li><li class=\\"ez-toc-page-1 ez-toc-heading-level-2\\"><a class=\\"ez-toc-link ez-toc-heading-27\\" href=\\"#Response_Headers\\" title=\\"Response Headers\\">Response Headers</a></li><li class=\\"ez-toc-page-1 ez-toc-heading-level-2\\"><a class=\\"ez-toc-link ez-toc-heading-28\\" href=\\"#Response_Body\\" title=\\"Response Body\\">Response Body</a><ul class=\\"ez-toc-list-level-3\\"><li class=\\"ez-toc-heading-level-3\\"><a class=\\"ez-toc-link ez-toc-heading-29\\" href=\\"#Top-Level_Fields\\" title=\\"Top-Level Fields (/)\\">Top-Level Fields (/)</a></li><li class=\\"ez-toc-page-1 ez-toc-heading-level-3\\"><a class=\\"ez-toc-link ez-toc-heading-30\\" href=\\"#IP_Address_ip_address\\" title=\\"IP Address (/ip_address)\\">IP Address (/ip_address)</a><ul class=\\"ez-toc-list-level-4\\"><li class=\\"ez-toc-heading-level-4\\"><a class=\\"ez-toc-link ez-toc-heading-31\\" href=\\"#Country_ip_addresscountry\\" title=\\"Country (/ip_address/country)\\">Country (/ip_address/country)</a></li><li class=\\"ez-toc-page-1 ez-toc-heading-level-4\\"><a class=\\"ez-toc-link ez-toc-heading-32\\" href=\\"#Location_ip_addresslocation\\" title=\\"Location (/ip_address/location)\\">Location (/ip_address/location)</a></li></ul></li><li class=\\"ez-toc-page-1 ez-toc-heading-level-3\\"><a class=\\"ez-toc-link ez-toc-heading-33\\" href=\\"#Credit_Card_credit_card-2\\" title=\\"Credit Card (/credit_card)\\">Credit Card (/credit_card)</a><ul class=\\"ez-toc-list-level-4\\"><li class=\\"ez-toc-heading-level-4\\"><a class=\\"ez-toc-link ez-toc-heading-34\\" href=\\"#Credit_Card_Issuer_credit_cardissuer\\" title=\\"Credit Card Issuer (/credit_card/issuer)\\">Credit Card Issuer (/credit_card/issuer)</a></li></ul></li><li class=\\"ez-toc-page-1 ez-toc-heading-level-3\\"><a class=\\"ez-toc-link ez-toc-heading-35\\" href=\\"#Device_device-2\\" title=\\"Device (/device)\\">Device (/device)</a></li><li class=\\"ez-toc-page-1 ez-toc-heading-level-3\\"><a class=\\"ez-toc-link ez-toc-heading-36\\" href=\\"#Email_email-2\\" title=\\"Email (/email)\\">Email (/email)</a><ul class=\\"ez-toc-list-level-4\\"><li class=\\"ez-toc-heading-level-4\\"><a class=\\"ez-toc-link ez-toc-heading-37\\" href=\\"#Email_Domain_emaildomain\\" title=\\"Email Domain (/email/domain)\\">Email Domain (/email/domain)</a></li></ul></li><li class=\\"ez-toc-page-1 ez-toc-heading-level-3\\"><a class=\\"ez-toc-link ez-toc-heading-38\\" href=\\"#Shipping_Address_shipping_address\\" title=\\"Shipping Address (/shipping_address)\\">Shipping Address (/shipping_address)</a></li><li class=\\"ez-toc-page-1 ez-toc-heading-level-3\\"><a class=\\"ez-toc-link ez-toc-heading-39\\" href=\\"#Billing_Address_billing_address\\" title=\\"Billing Address (/billing_address)\\">Billing Address (/billing_address)</a></li><li class=\\"ez-toc-page-1 ez-toc-heading-level-3\\"><a class=\\"ez-toc-link ez-toc-heading-40\\" href=\\"#Disposition_disposition\\" title=\\"Disposition (/disposition)\\">Disposition (/disposition)</a></li><li class=\\"ez-toc-page-1 ez-toc-heading-level-3\\"><a class=\\"ez-toc-link ez-toc-heading-41\\" href=\\"#Subscores_subscores\\" title=\\"Subscores (/subscores)\\">Subscores (/subscores)</a></li><li class=\\"ez-toc-page-1 ez-toc-heading-level-3\\"><a class=\\"ez-toc-link ez-toc-heading-42\\" href=\\"#Warning\\" title=\\"Warning\\">Warning</a></li></ul></li><li class=\\"ez-toc-page-1 ez-toc-heading-level-2\\"><a class=\\"ez-toc-link ez-toc-heading-43\\" href=\\"#Response_Body_Examples\\" title=\\"Response Body Examples\\">Response Body Examples</a></li><li class=\\"ez-toc-page-1 ez-toc-heading-level-2\\"><a class=\\"ez-toc-link ez-toc-heading-44\\" href=\\"#Errors\\" title=\\"Errors\\">Errors</a></li><li class=\\"ez-toc-page-1 ez-toc-heading-level-2\\"><a class=\\"ez-toc-link ez-toc-heading-45\\" href=\\"#Release_Notes-2\\" title=\\"Release Notes\\">Release Notes</a></li><li class=\\"ez-toc-page-1 ez-toc-heading-level-2\\"><a class=\\"ez-toc-link ez-toc-heading-46\\" href=\\"#Versioning\\" title=\\"Versioning\\">Versioning</a></li><li class=\\"ez-toc-page-1 ez-toc-heading-level-2\\"><a class=\\"ez-toc-link ez-toc-heading-47\\" href=\\"#License\\" title=\\"License\\">License</a></li></ul></nav>
+<ul class=\\"ez-toc-list ez-toc-list-level-1\\"><li class=\\"ez-toc-page-1 ez-toc-heading-level-2\\"><a class=\\"ez-toc-link ez-toc-heading-1\\" href=\\"#Product_Information\\" title=\\"Product Information\\">Product Information</a></li><li class=\\"ez-toc-page-1 ez-toc-heading-level-2\\"><a class=\\"ez-toc-link ez-toc-heading-2\\" href=\\"#Release_Notes\\" title=\\"Release Notes\\">Release Notes</a></li><li class=\\"ez-toc-page-1 ez-toc-heading-level-2\\"><a class=\\"ez-toc-link ez-toc-heading-3\\" href=\\"#Client_APIs\\" title=\\"Client APIs\\">Client APIs</a><ul class=\\"ez-toc-list-level-3\\"><li class=\\"ez-toc-heading-level-3\\"><a class=\\"ez-toc-link ez-toc-heading-4\\" href=\\"#MaxMind_APIs\\" title=\\"MaxMind APIs\\">MaxMind APIs</a></li></ul></li><li class=\\"ez-toc-page-1 ez-toc-heading-level-2\\"><a class=\\"ez-toc-link ez-toc-heading-5\\" href=\\"#Additional_Features\\" title=\\"Additional Features\\">Additional Features</a><ul class=\\"ez-toc-list-level-3\\"><li class=\\"ez-toc-heading-level-3\\"><a class=\\"ez-toc-link ez-toc-heading-6\\" href=\\"#Disposition_API\\" title=\\"Disposition API\\">Disposition API</a></li><li class=\\"ez-toc-page-1 ez-toc-heading-level-3\\"><a class=\\"ez-toc-link ez-toc-heading-7\\" href=\\"#Report_Transactions\\" title=\\"Report Transactions\\">Report Transactions</a></li><li class=\\"ez-toc-page-1 ez-toc-heading-level-3\\"><a class=\\"ez-toc-link ez-toc-heading-8\\" href=\\"#Device_Tracking_Add-on\\" title=\\"Device Tracking Add-on\\">Device Tracking Add-on</a></li></ul></li><li class=\\"ez-toc-page-1 ez-toc-heading-level-2\\"><a class=\\"ez-toc-link ez-toc-heading-9\\" href=\\"#Per-Service_URIs\\" title=\\"Per-Service URIs\\">Per-Service URIs</a></li><li class=\\"ez-toc-page-1 ez-toc-heading-level-2\\"><a class=\\"ez-toc-link ez-toc-heading-10\\" href=\\"#Request_Headers\\" title=\\"Request Headers\\">Request Headers</a><ul class=\\"ez-toc-list-level-3\\"><li class=\\"ez-toc-heading-level-3\\"><a class=\\"ez-toc-link ez-toc-heading-11\\" href=\\"#AuthorizationSecurity\\" title=\\"Authorization/Security\\">Authorization/Security</a></li></ul></li><li class=\\"ez-toc-page-1 ez-toc-heading-level-2\\"><a class=\\"ez-toc-link ez-toc-heading-12\\" href=\\"#Request_Body\\" title=\\"Request Body\\">Request Body</a></li><li class=\\"ez-toc-page-1 ez-toc-heading-level-2\\"><a class=\\"ez-toc-link ez-toc-heading-13\\" href=\\"#Example_Request\\" title=\\"Example Request\\">Example Request</a><ul class=\\"ez-toc-list-level-3\\"><li class=\\"ez-toc-heading-level-3\\"><a class=\\"ez-toc-link ez-toc-heading-14\\" href=\\"#Top-Level_Request_Fields\\" title=\\"Top-Level Request Fields (/)\\">Top-Level Request Fields (/)</a><ul class=\\"ez-toc-list-level-4\\"><li class=\\"ez-toc-heading-level-4\\"><a class=\\"ez-toc-link ez-toc-heading-15\\" href=\\"#Device_device\\" title=\\"Device (/device)\\">Device (/device)</a></li><li class=\\"ez-toc-page-1 ez-toc-heading-level-4\\"><a class=\\"ez-toc-link ez-toc-heading-16\\" href=\\"#Event_event\\" title=\\"Event (/event)\\">Event (/event)</a></li><li class=\\"ez-toc-page-1 ez-toc-heading-level-4\\"><a class=\\"ez-toc-link ez-toc-heading-17\\" href=\\"#Account_account\\" title=\\"Account (/account)\\">Account (/account)</a></li><li class=\\"ez-toc-page-1 ez-toc-heading-level-4\\"><a class=\\"ez-toc-link ez-toc-heading-18\\" href=\\"#Email_email\\" title=\\"Email (/email)\\">Email (/email)</a></li><li class=\\"ez-toc-page-1 ez-toc-heading-level-4\\"><a class=\\"ez-toc-link ez-toc-heading-19\\" href=\\"#Billing_billing\\" title=\\"Billing (/billing)\\">Billing (/billing)</a></li><li class=\\"ez-toc-page-1 ez-toc-heading-level-4\\"><a class=\\"ez-toc-link ez-toc-heading-20\\" href=\\"#Shipping_shipping\\" title=\\"Shipping (/shipping)\\">Shipping (/shipping)</a></li><li class=\\"ez-toc-page-1 ez-toc-heading-level-4\\"><a class=\\"ez-toc-link ez-toc-heading-21\\" href=\\"#Payment_payment\\" title=\\"Payment (/payment)\\">Payment (/payment)</a></li><li class=\\"ez-toc-page-1 ez-toc-heading-level-4\\"><a class=\\"ez-toc-link ez-toc-heading-22\\" href=\\"#Credit_Card_credit_card\\" title=\\"Credit Card (/credit_card)\\">Credit Card (/credit_card)</a></li><li class=\\"ez-toc-page-1 ez-toc-heading-level-4\\"><a class=\\"ez-toc-link ez-toc-heading-23\\" href=\\"#Order_order\\" title=\\"Order (/order)\\">Order (/order)</a></li><li class=\\"ez-toc-page-1 ez-toc-heading-level-4\\"><a class=\\"ez-toc-link ez-toc-heading-24\\" href=\\"#Shopping_Cart_shopping_cart\\" title=\\"Shopping Cart (/shopping_cart)\\">Shopping Cart (/shopping_cart)</a><ul class=\\"ez-toc-list-level-5\\"><li class=\\"ez-toc-heading-level-5\\"><a class=\\"ez-toc-link ez-toc-heading-25\\" href=\\"#Shopping_Cart_Item\\" title=\\"Shopping Cart Item\\">Shopping Cart Item</a></li></ul></li><li class=\\"ez-toc-page-1 ez-toc-heading-level-4\\"><a class=\\"ez-toc-link ez-toc-heading-26\\" href=\\"#Custom_Inputs_custom_inputs\\" title=\\"Custom Inputs (/custom_inputs)\\">Custom Inputs (/custom_inputs)</a></li></ul></li></ul></li><li class=\\"ez-toc-page-1 ez-toc-heading-level-2\\"><a class=\\"ez-toc-link ez-toc-heading-27\\" href=\\"#Response_Headers\\" title=\\"Response Headers\\">Response Headers</a></li><li class=\\"ez-toc-page-1 ez-toc-heading-level-2\\"><a class=\\"ez-toc-link ez-toc-heading-28\\" href=\\"#Response_Body\\" title=\\"Response Body\\">Response Body</a><ul class=\\"ez-toc-list-level-3\\"><li class=\\"ez-toc-heading-level-3\\"><a class=\\"ez-toc-link ez-toc-heading-29\\" href=\\"#Top-Level_Fields\\" title=\\"Top-Level Fields (/)\\">Top-Level Fields (/)</a></li><li class=\\"ez-toc-page-1 ez-toc-heading-level-3\\"><a class=\\"ez-toc-link ez-toc-heading-30\\" href=\\"#IP_Address_ip_address\\" title=\\"IP Address (/ip_address)\\">IP Address (/ip_address)</a><ul class=\\"ez-toc-list-level-4\\"><li class=\\"ez-toc-heading-level-4\\"><a class=\\"ez-toc-link ez-toc-heading-31\\" href=\\"#Country_ip_addresscountry\\" title=\\"Country (/ip_address/country)\\">Country (/ip_address/country)</a></li><li class=\\"ez-toc-page-1 ez-toc-heading-level-4\\"><a class=\\"ez-toc-link ez-toc-heading-32\\" href=\\"#Location_ip_addresslocation\\" title=\\"Location (/ip_address/location)\\">Location (/ip_address/location)</a></li><li class=\\"ez-toc-page-1 ez-toc-heading-level-4\\"><a class=\\"ez-toc-link ez-toc-heading-33\\" href=\\"#Risk_Reason_ip_addressrisk_reasonsn\\" title=\\"Risk Reason (/ip_address/risk_reasons/{n})\\">Risk Reason (/ip_address/risk_reasons/{n})</a></li></ul></li><li class=\\"ez-toc-page-1 ez-toc-heading-level-3\\"><a class=\\"ez-toc-link ez-toc-heading-34\\" href=\\"#Credit_Card_credit_card-2\\" title=\\"Credit Card (/credit_card)\\">Credit Card (/credit_card)</a><ul class=\\"ez-toc-list-level-4\\"><li class=\\"ez-toc-heading-level-4\\"><a class=\\"ez-toc-link ez-toc-heading-35\\" href=\\"#Credit_Card_Issuer_credit_cardissuer\\" title=\\"Credit Card Issuer (/credit_card/issuer)\\">Credit Card Issuer (/credit_card/issuer)</a></li></ul></li><li class=\\"ez-toc-page-1 ez-toc-heading-level-3\\"><a class=\\"ez-toc-link ez-toc-heading-36\\" href=\\"#Device_device-2\\" title=\\"Device (/device)\\">Device (/device)</a></li><li class=\\"ez-toc-page-1 ez-toc-heading-level-3\\"><a class=\\"ez-toc-link ez-toc-heading-37\\" href=\\"#Email_email-2\\" title=\\"Email (/email)\\">Email (/email)</a><ul class=\\"ez-toc-list-level-4\\"><li class=\\"ez-toc-heading-level-4\\"><a class=\\"ez-toc-link ez-toc-heading-38\\" href=\\"#Email_Domain_emaildomain\\" title=\\"Email Domain (/email/domain)\\">Email Domain (/email/domain)</a></li></ul></li><li class=\\"ez-toc-page-1 ez-toc-heading-level-3\\"><a class=\\"ez-toc-link ez-toc-heading-39\\" href=\\"#Shipping_Address_shipping_address\\" title=\\"Shipping Address (/shipping_address)\\">Shipping Address (/shipping_address)</a></li><li class=\\"ez-toc-page-1 ez-toc-heading-level-3\\"><a class=\\"ez-toc-link ez-toc-heading-40\\" href=\\"#Billing_Address_billing_address\\" title=\\"Billing Address (/billing_address)\\">Billing Address (/billing_address)</a></li><li class=\\"ez-toc-page-1 ez-toc-heading-level-3\\"><a class=\\"ez-toc-link ez-toc-heading-41\\" href=\\"#Disposition_disposition\\" title=\\"Disposition (/disposition)\\">Disposition (/disposition)</a></li><li class=\\"ez-toc-page-1 ez-toc-heading-level-3\\"><a class=\\"ez-toc-link ez-toc-heading-42\\" href=\\"#Subscores_subscores\\" title=\\"Subscores (/subscores)\\">Subscores (/subscores)</a></li><li class=\\"ez-toc-page-1 ez-toc-heading-level-3\\"><a class=\\"ez-toc-link ez-toc-heading-43\\" href=\\"#Warning_warningsn\\" title=\\"Warning (/warnings/{n})\\">Warning (/warnings/{n})</a></li></ul></li><li class=\\"ez-toc-page-1 ez-toc-heading-level-2\\"><a class=\\"ez-toc-link ez-toc-heading-44\\" href=\\"#Response_Body_Examples\\" title=\\"Response Body Examples\\">Response Body Examples</a></li><li class=\\"ez-toc-page-1 ez-toc-heading-level-2\\"><a class=\\"ez-toc-link ez-toc-heading-45\\" href=\\"#Errors\\" title=\\"Errors\\">Errors</a></li><li class=\\"ez-toc-page-1 ez-toc-heading-level-2\\"><a class=\\"ez-toc-link ez-toc-heading-46\\" href=\\"#Release_Notes-2\\" title=\\"Release Notes\\">Release Notes</a></li><li class=\\"ez-toc-page-1 ez-toc-heading-level-2\\"><a class=\\"ez-toc-link ez-toc-heading-47\\" href=\\"#Versioning\\" title=\\"Versioning\\">Versioning</a></li><li class=\\"ez-toc-page-1 ez-toc-heading-level-2\\"><a class=\\"ez-toc-link ez-toc-heading-48\\" href=\\"#License\\" title=\\"License\\">License</a></li></ul></nav>
 </div>
 </aside><aside id=\\"nav_menu-2\\" class=\\"widget clearfix widget_nav_menu\\"><h4 class=\\"widget-title\\">Links</h4><div class=\\"menu-left-hand-menu-container\\"><ul id=\\"menu-left-hand-menu\\" class=\\"menu\\"><li id=\\"menu-item-1405\\" class=\\"menu-item menu-item-type-custom menu-item-object-custom menu-item-1405\\"><a href=\\"https://status.maxmind.com/\\">System Status</a></li>
 </ul></div></aside><aside id=\\"text-2\\" class=\\"widget clearfix widget_text\\">			<div class=\\"textwidget\\"><!-- begin olark code -->
@@ -442,7 +442,8 @@ For more information about setting dispositions from the Transaction Details pag
     <tr>
       <td>time</td>
       <td>string</td>
-      <td>The date and time the event occurred. The string must be in the <a href=\\"https://tools.ietf.org/html/rfc3339\\">RFC 3339</a> date-time format, e.g., &#8220;2012-04-12T23:20:50.52Z&#8221;. The time must be within the past 10 years. If this field is not in the request, the current time will be used.</td>
+      <td>The date and time the event occurred. The string must be in the <a href=\\"https://tools.ietf.org/html/rfc3339\\">RFC 3339</a> date-time format, e.g., &#8220;2012-04-12T23:20:50.52Z&#8221;. The time must be within the past 10 years. If this field is not in the request, the current time will be used.
+<br /><br />It is not recommended to use this input when scoring live transactions as they occur. However, it can be useful if you store transactions to be submitted to the service for scoring later.</td>
     </tr>
     <tr>
       <td>type</td>
@@ -1092,6 +1093,14 @@ For more information about setting dispositions from the Transaction Details pag
       <td><i class=\\"icon-check\\"></i></td>
       <td><i class=\\"icon-check\\"></i></td>
     </tr>
+    <tr>
+      <td>risk_reasons</td>
+      <td>array</td>
+      <td>This array contains IP Address Risk Reason objects identifying the reasons why the IP address received the associated risk.</td>
+      <td></td>
+      <td><i class=\\"icon-check\\"></i></td>
+      <td><i class=\\"icon-check\\"></i></td>
+    </tr>
   </tbody>
 </table>
 <h4><span class=\\"ez-toc-section\\" id=\\"Country_ip_addresscountry\\"></span>Country (<code>/ip_address/country</code>)<span class=\\"ez-toc-section-end\\"></span></h4>
@@ -1144,6 +1153,75 @@ For more information about setting dispositions from the Transaction Details pag
     </tr>
   </tbody>
 </table>
+
+<h4><span class=\\"ez-toc-section\\" id=\\"Risk_Reason_ip_addressrisk_reasonsn\\"></span>Risk Reason (<code>/ip_address/risk_reasons/{n}</code>)<span class=\\"ez-toc-section-end\\"></span></h4>
+
+<table class=\\"table table-bordered table-striped\\">
+  <thead>
+    <tr>
+      <th colspan=\\"3\\"></th>
+      <th colspan=\\"3\\">Included in &#8230;</th>
+    </tr>
+    <tr>
+      <th>Key</th>
+      <th>Value Type</th>
+      <th>Description</th>
+      <th>Score?</th>
+      <th>Insights?</th>
+      <th>Factors?</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>code</td>
+      <td>string (255)</td>
+      <td><p>This value is a machine-readable code identifying the reason. Although more codes may be added in the future, the current codes are:</p>
+
+        <dl>
+          <dt>ANONYMOUS_IP</dt>
+          <dd>The IP address belongs to an anonymous network. See the
+          object at <code>/ip_address/traits</code> for more details.</dd>
+
+          <dt>BILLING_POSTAL_VELOCITY</dt>
+          <dd>Many different billing postal codes have been seen on
+          this IP address.</dd>
+
+          <dt>EMAIL_VELOCITY</dt>
+          <dd>Many different email addresses have been seen on this
+          IP address.</dd>
+
+          <dt>HIGH_RISK_DEVICE</dt>
+          <dd>A high risk device was seen on this IP address.</dd>
+
+          <dt>HIGH_RISK_EMAIL</dt>
+          <dd>A high risk email address was seen on this IP address in
+          your past transactions.</dd>
+
+          <dt>ISSUER_ID_NUMBER_VELOCITY</dt>
+          <dd>Many different issuer ID numbers have been seen on this
+          IP address.</dd>
+
+          <dt>MINFRAUD_NETWORK_ACTIVITY</dt>
+          <dd>Suspicious activity has been seen on this IP address
+          across minFraud customers.</dd>
+        </dl>
+      </td>
+      <td></td>
+      <td><i class=\\"icon-check\\"></i></td>
+      <td><i class=\\"icon-check\\"></i></td>
+    </tr>
+    <tr>
+      <td>reason</td>
+      <td>string (255)</td>
+      <td>This field provides a human-readable explanation of the reason. The description may change at any time and should not be matched against.</td>
+      <td></td>
+      <td><i class=\\"icon-check\\"></i></td>
+      <td><i class=\\"icon-check\\"></i></td>
+    </tr>
+  </tbody>
+</table>
+
+
 <h3><span class=\\"ez-toc-section\\" id=\\"Credit_Card_credit_card-2\\"></span>Credit Card (<code>/credit_card</code>)<span class=\\"ez-toc-section-end\\"></span></h3>
 <p>This object contains minFraud information related to the credit card.  If an issuer ID number (IIN) was not provided in the request, this object will not be present in the response.</p>
 <table class=\\"table table-bordered table-striped\\">
@@ -1407,7 +1485,7 @@ For more information about setting dispositions from the Transaction Details pag
       <td>is_disposable</td>
       <td>boolean</td>
       <td>
-        This field is <code>true</code> if MaxMind believes that the email address is from a disposable email provider. It is <code>false</code> if the address is not from a known disposable email provider. The key will only be present if a valid email address or email domain is provided. 
+        This field is <code>true</code> if MaxMind believes that the email address is from a disposable email provider. It is <code>false</code> if the address is not from a known disposable email provider. The key will only be present if a valid email address or email domain is provided.
       </td>
       <td></td>
       <td><i class=\\"icon-check\\"></i></td>
@@ -1417,7 +1495,7 @@ For more information about setting dispositions from the Transaction Details pag
       <td>is_free</td>
       <td>boolean</td>
       <td>
-        This field is <code>true</code> if MaxMind believes that this email domain is for a free email provider such as Gmail or Yahoo! Mail. It is <code>false</code> if the domain is not for a known free email provider. The key will only be present if a valid email address or email domain is provided. 
+        This field is <code>true</code> if MaxMind believes that this email domain is for a free email provider such as Gmail or Yahoo! Mail. It is <code>false</code> if the domain is not for a known free email provider. The key will only be present if a valid email address or email domain is provided.
       </td>
       <td></td>
       <td><i class=\\"icon-check\\"></i></td>
@@ -1766,7 +1844,7 @@ included with minFraud Factors.
       <td></td>
       <td></td>
       <td><i class=\\"icon-check\\"></i></td>
-    </tr>      
+    </tr>
     <tr>
       <td>email_address</td>
       <td>decimal</td>
@@ -1788,7 +1866,7 @@ included with minFraud Factors.
     <tr>
       <td>email_local_part</td>
       <td>decimal</td>
-      <td>The risk associated with the email address local part (the part of the email address before the @ 
+      <td>The risk associated with the email address local part (the part of the email address before the @
           symbol). If present, this is a value in the range 0.01 to 99.</td>
       <td></td>
       <td></td>
@@ -1872,7 +1950,7 @@ included with minFraud Factors.
   </tbody>
 </table>
 
-<h3><span class=\\"ez-toc-section\\" id=\\"Warning\\"></span>Warning<span class=\\"ez-toc-section-end\\"></span></h3>
+<h3><span class=\\"ez-toc-section\\" id=\\"Warning_warningsn\\"></span>Warning (<code>/warnings/{n})</code><span class=\\"ez-toc-section-end\\"></span></h3>
 <table class=\\"table table-bordered table-striped\\">
   <thead>
     <tr>
@@ -1893,21 +1971,21 @@ included with minFraud Factors.
       <td>code</td>
       <td>string (255)</td>
       <td><p>This value is a machine-readable code identifying the warning. Although more codes may be added in the future, the current codes are:</p>
-        <ul>
-          <li><code>BILLING_CITY_NOT_FOUND</code> &#8211; the billing city could not be found in our database.</li>
-          <li><code>BILLING_COUNTRY_MISSING</code> &#8211; billing address information was provided without providing a billing country.</li>
-          <li><code>BILLING_COUNTRY_NOT_FOUND</code> &#8211; the billing country could not be found in our database.</li>
-          <li><code>BILLING_POSTAL_NOT_FOUND</code> &#8211; the billing postal could not be found in our database.</li>
-          <li><code>INPUT_INVALID</code> &#8211; the value associated with the key does not meet the required constraints, e.g., &#8220;United States&#8221; in a field that requires a two-letter country code.</li>
-          <li><code>INPUT_UNKNOWN</code> &#8211; an unknown key was encountered in the request body.</li>
-          <li><code>IP_ADDRESS_INVALID</code> &#8211; the IP address supplied is not a valid IPv4 or IPv6 address.</li>
-          <li><code>IP_ADDRESS_NOT_FOUND</code> &#8211; the IP address could not be geolocated.</li>
-          <li><code>IP_ADDRESS_RESERVED</code> &#8211; the IP address supplied is in a reserved network.</li>
-          <li><code>SHIPPING_CITY_NOT_FOUND</code> &#8211; the shipping city could not be found in our database.</li>
-          <li><code>SHIPPING_COUNTRY_MISSING</code> &#8211; shipping address information was provided without providing a shipping country.</li>
-          <li><code>SHIPPING_COUNTRY_NOT_FOUND</code> &#8211; the shipping country could not be found in our database.</li>
-          <li><code>SHIPPING_POSTAL_NOT_FOUND</code> &#8211; the shipping postal could not be found in our database.</li>
-        </ul>
+        <dl>
+          <dt>BILLING_CITY_NOT_FOUND</dt><dd>The billing city could not be found in our database.</dd>
+          <dt>BILLING_COUNTRY_MISSING</dt><dd>Billing address information was provided without providing a billing country.</dd>
+          <dt>BILLING_COUNTRY_NOT_FOUND</dt><dd>The billing country could not be found in our database.</dd>
+          <dt>BILLING_POSTAL_NOT_FOUND</dt><dd>The billing postal could not be found in our database.</dd>
+          <dt>INPUT_INVALID</dt><dd>The value associated with the key does not meet the required constraints, e.g., &#8220;United States&#8221; in a field that requires a two-letter country code.</dd>
+          <dt>INPUT_UNKNOWN</dt><dd>An unknown key was encountered in the request body.</dd>
+          <dt>IP_ADDRESS_INVALID</dt><dd>The IP address supplied is not a valid IPv4 or IPv6 address.</dd>
+          <dt>IP_ADDRESS_NOT_FOUND</dt><dd>The IP address could not be geolocated.</dd>
+          <dt>IP_ADDRESS_RESERVED</dt><dd>The IP address supplied is in a reserved network.</dd>
+          <dt>SHIPPING_CITY_NOT_FOUND</dt><dd>The shipping city could not be found in our database.</dd>
+          <dt>SHIPPING_COUNTRY_MISSING</dt><dd>Shipping address information was provided without providing a shipping country.</dd>
+          <dt>SHIPPING_COUNTRY_NOT_FOUND</dt><dd>The shipping country could not be found in our database.</dd>
+          <dt>SHIPPING_POSTAL_NOT_FOUND</dt><dd>The shipping postal could not be found in our database.</dd>
+        </dl>
       </td>
       <td><i class=\\"icon-check\\"></i></td>
       <td><i class=\\"icon-check\\"></i></td>
@@ -1987,6 +2065,16 @@ included with minFraud Factors.
 
     \\"ip_address\\": {
         \\"risk\\": 0.01,
+        \\"risk_reasons\\": [
+            {
+                \\"code\\": \\"ANONYMOUS_IP\\",
+                \\"reason\\": \\"The IP address belongs to an anonymous network. See /ip_address/traits for more details.\\"
+            },
+            {
+                \\"code\\": \\"MINFRAUD_NETWORK_ACTIVITY\\",
+                \\"reason\\": \\"Suspicious activity has been seen on this IP address across minFraud customers.\\"
+            }
+        ],
         \\"city\\":  {
             \\"confidence\\":  25,
             \\"geoname_id\\": 54321,
@@ -2200,6 +2288,16 @@ included with minFraud Factors.
 
     \\"ip_address\\": {
         \\"risk\\": 0.01,
+        \\"risk_reasons\\": [
+            {
+                \\"code\\": \\"ANONYMOUS_IP\\",
+                \\"reason\\": \\"The IP address belongs to an anonymous network. See /ip_address/traits for more details.\\"
+            },
+            {
+                \\"code\\": \\"MINFRAUD_NETWORK_ACTIVITY\\",
+                \\"reason\\": \\"Suspicious activity has been seen on this IP address across minFraud customers.\\"
+            }
+        ],
         \\"city\\":  {
             \\"confidence\\":  25,
             \\"geoname_id\\": 54321,
@@ -2532,8 +2630,7 @@ included with minFraud Factors.
   <li>Adding a new service with a new path.</li>
 </ul>
 <h2><span class=\\"ez-toc-section\\" id=\\"License\\"></span>License<span class=\\"ez-toc-section-end\\"></span></h2>
-These services incorporate <a href=\\"https://www.geonames.org\\">GeoNames</a> geographical data, which is made available under the <a href=\\"https://creativecommons.org/licenses/by/4.0/\\">Creative Commons Attribution 4.0 License</a>.
-
+<p>These services incorporate <a href=\\"https://www.geonames.org\\">GeoNames</a> geographical data, which is made available under the <a href=\\"https://creativecommons.org/licenses/by/4.0/\\">Creative Commons Attribution 4.0 License</a>.</p>
 	</div><!-- .entry-content -->
 	</article><!-- #post-1604 -->
 		</div><!-- #content -->

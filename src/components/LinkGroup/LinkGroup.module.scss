@@ -1,13 +1,7 @@
 @use '../../styles/variables';
 
 .section {
-  max-width: map-get(variables.$breakpoints, 'xl') !important;
-  padding: var(--mm-spacing);
-  @include variables.max-width;
-}
-
-.section:last-of-type {
-  padding-top: 0;
+  margin-top: var(--mm-spacing);
 }
 
 .section-heading {

@@ -28,6 +28,7 @@
     "@types/react-dom": "^17.0.0",
     "@types/react-helmet": "^6.1.0",
     "@types/unist": "^2.0.3",
+    "airbnb-prop-types": "^2.16.0",
     "babel-polyfill": "^6.26.0",
     "cheerio": "^1.0.0-rc.5",
     "classnames": "^2.2.6",
@@ -92,6 +93,7 @@
   },
   "description": "Developer website for MaxMind",
   "devDependencies": {
+    "@types/airbnb-prop-types": "^2.13.1",
     "@types/dompurify": "^2.2.1",
     "@types/enzyme": "^3.10.8",
     "@types/jest": "^26.0.20",

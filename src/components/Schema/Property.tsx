@@ -1,4 +1,5 @@
 import { useLocation } from '@reach/router';
+import CustomPropTypes from 'airbnb-prop-types';
 import classNames from 'classnames';
 import { Link } from 'gatsby';
 import GithubSlugger from 'github-slugger';
@@ -6,7 +7,7 @@ import PropTypes from 'prop-types';
 import * as React from 'react';
 
 import { formatSchemaName } from '../../utils/openapi';
-import Pre from '../Mdx/Pre';
+import Example from './Example';
 import ServiceTags from './ServiceTags';
 import Tag from './Tag';
 
@@ -16,14 +17,17 @@ const slugger = new GithubSlugger();
 
 type Service = 'score' | 'factors' | 'insights';
 
-type TagValue = boolean | string | number;
+type TagValue = boolean | string | number | null;
 
-export type PropertyType = 'boolean'
-  | 'decimal'
-  | 'enum'
+export type PropertyType = 'array<boolean>'
+  | 'array<number>'
+  | 'array<integer>'
+  | 'array<object>'
+  | 'array<string>'
+  | 'boolean'
+  | 'number'
   | 'integer'
   | 'object'
-  | 'object[]'
   | 'string';
 
 export interface IProperty {
@@ -66,9 +70,24 @@ const Property: React.FC<IProperty> = (props) => {
     ]
   );
 
-  const exampleClassName = (type === 'object' || type === 'object[]')
-    ? 'language-json'
-    : 'language-cli';
+  const exampleLanguage = (type === 'object' || type.startsWith('array'))
+    ? 'json'
+    : 'bash';
+
+
+  let formattedExample = '';
+
+  if (example) {
+    formattedExample = example.trim();
+
+    if (type === 'object' || type.startsWith('array')) {
+      formattedExample = JSON.stringify(JSON.parse(formattedExample), null, 2);
+    }
+
+    if (type === 'string') {
+      formattedExample = `"${formattedExample}"`;
+    }
+  }
 
   return (
     <div
@@ -80,20 +99,19 @@ const Property: React.FC<IProperty> = (props) => {
       )}
       id={propertyId}
     >
-      <div>
-        <Link
-          className={styles.name}
-          to={`#${propertyId}`}
-        >
-          {name}
-        </Link>
+      <Link
+        className={styles.name}
+        to={`#${propertyId}`}
+      >
+        {name}
+      </Link>
 
-        <Tag
-          className={styles.type}
-        >
-          {type}
-        </Tag>
-      </div>
+      <Tag
+        className={styles.type}
+      >
+        {type}
+      </Tag>
+
 
       {description && (
         <div
@@ -104,32 +122,11 @@ const Property: React.FC<IProperty> = (props) => {
       )}
 
       {example && (
-        <div
-          className={styles.example}
+        <Example
+          language={exampleLanguage}
         >
-          <div
-            className={styles['example-label']}
-          >
-            Example:
-          </div>
-
-          <Pre
-            className={classNames(
-              styles['example-value'],
-              'exampleClassName',
-            )}
-            showLineNumbers={false}
-          >
-            <code
-              className={exampleClassName}
-            >
-              {(type === 'object' || type === 'object[]')
-                ? JSON.stringify(JSON.parse(example), null, 2)
-                : example.trim()
-              }
-            </code>
-          </Pre>
-        </div>
+          {formattedExample}
+        </Example>
       )}
 
       {(linkToSchemaId || schemaTags || services) && (
@@ -169,13 +166,17 @@ const Property: React.FC<IProperty> = (props) => {
                 >
 
                   {name}
-                  :
-                  {' '}
-                  <span
-                    className={styles['tags__schema-tag-value']}
-                  >
-                    {value}
-                  </span>
+                  {value && (
+                    <>
+                      :
+                      {' '}
+                      <span
+                        className={styles['tags__schema-tag-value']}
+                      >
+                        {value}
+                      </span>
+                    </>
+                  )}
                 </Tag>
               ))}
           </div>
@@ -211,19 +212,23 @@ Property.propTypes = {
     ),
   ]),
   tags: PropTypes.objectOf(
-    PropTypes.oneOfType([
+    CustomPropTypes.or([
       PropTypes.bool,
       PropTypes.number,
       PropTypes.string,
+      CustomPropTypes.explicitNull(),
     ]).isRequired
   ),
   type: PropTypes.oneOf([
+    'array<boolean>',
+    'array<number>',
+    'array<integer>',
+    'array<object>',
+    'array<string>',
     'boolean',
-    'decimal',
-    'enum',
+    'number',
     'integer',
     'object',
-    'object[]',
     'string',
   ] as const).isRequired,
 };
