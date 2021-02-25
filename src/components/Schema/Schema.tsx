@@ -78,8 +78,6 @@ const Schema: React.FC<ISchema> = (props) => {
 
           if (type === 'object' || type.startsWith('array')) {
             formattedExample = JSON.parse(formattedExample);
-
-            console.log(formattedExample);
           }
 
           if (type === 'boolean') {
