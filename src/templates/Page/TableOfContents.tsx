@@ -1,5 +1,6 @@
 import { useLocation } from '@reach/router';
 import classNames from 'classnames';
+import { Link } from 'gatsby';
 import PropTypes from 'prop-types';
 import React from 'react';
 
@@ -64,11 +65,11 @@ const renderItems = (
           data-item-number={itemNumber}
           key={`toc-item-${index}`}
         >
-          <a
-            href={item.url}
+          <Link
+            to={item.url}
           >
             {title}
-          </a>
+          </Link>
           {item.items && renderItems(item.items, pathname, currentItem)}
         </li>
       );
