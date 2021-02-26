@@ -1,0 +1,39 @@
+diff_in,old_geoname_id,new_geoname_id,old_city_name,new_city_name,old_country_name,new_country_name,old_country_code,new_country_code,old_subdivision_codes,new_subdivision_codes
+city_name,7640413,7640413,Dianxia,Dianxiacun,China,China,CN,CN,FJ,FJ
+city_name,3093133,3093133,Łódź,Lodz,Poland,Poland,PL,PL,10,10
+city_name,3099434,3099434,Gdańsk,Gdansk,Poland,Poland,PL,PL,22,22
+city_name,3081368,3081368,Wrocław,Wroclaw,Poland,Poland,PL,PL,2,2
+city_name,3083271,3083271,Toruń,Torun,Poland,Poland,PL,PL,4,4
+city_name,668872,668872,Valcea,Râmnicu Vâlcea,Romania,Romania,RO,RO,VL,VL
+city_name,526651,526651,Mikhnëvo,Mikhnevo,Russia,Russia,RU,RU,MOS,MOS
+city_name,2516318,2516318,Jijona,Xixona,Spain,Spain,ES,ES,"VC, A","VC, A"
+city_name,689854,689854,Verkhnyaya Belka,Verkhnia Bilka,Ukraine,Ukraine,UA,UA,46,46
+city_name,711103,711103,Bus'k,Busk,Ukraine,Ukraine,UA,UA,46,46
+city_name,689994,689994,Verblyany,Verbliany,Ukraine,Ukraine,UA,UA,46,46
+geoname_id,2789696,2789697,Ophoven,Ophoven,Belgium,Belgium,BE,BE,"VLG, VLI","VLG, VLI"
+geoname_id,3452380,3452379,Pratapolis,Pratapolis,Brazil,Brazil,BR,BR,MG,MG
+geoname_id,3450094,12024974,Santa Maria,Santa Maria,Brazil,Brazil,BR,BR,RJ,RJ
+geoname_id,3454130,3454128,Pereiras,Pereiras,Brazil,Brazil,BR,BR,SP,SP
+geoname_id,3469942,3469933,Boa Esperanca,Boa Esperanca,Brazil,Brazil,BR,BR,ES,ES
+geoname_id,7622828,7622830,Varginha,Varginha,Brazil,Brazil,BR,BR,PR,PR
+geoname_id,3460687,3460686,Itapitanga,Itapitanga,Brazil,Brazil,BR,BR,BA,BA
+geoname_id,3447200,7593346,Tabatinga,Tabatinga,Brazil,Brazil,BR,BR,SP,SP
+geoname_id,3404963,3404962,Brasilia,Brasilia,Brazil,Brazil,BR,BR,RN,RN
+geoname_id,7502556,1784327,Zhongqiao,Zhongqiao,China,China,CN,CN,JS,JS
+geoname_id,1795053,1995658,Shishi,Shishi,China,China,CN,CN,HN,HN
+geoname_id,1812513,11635156,Donghe,Donghe,China,China,CN,CN,JS,JS
+geoname_id,10001214,12196371,Hebei,Hebei,China,China,CN,CN,HE,HE
+geoname_id,3688855,3784965,Betania,Betania,Colombia,Colombia,CO,CO,ANT,ANT
+geoname_id,3675908,3732273,Los Santos,Los Santos,Colombia,Colombia,CO,CO,SAN,SAN
+geoname_id,645887,645888,Molpe,Molpe,Finland,Finland,FI,FI,12,12
+geoname_id,6613910,2987442,Peze-le-Robert,Peze-le-Robert,France,France,FR,FR,"PDL, 72","PDL, 72"
+geoname_id,2877126,2877128,Lindow,Lindow,Germany,Germany,DE,DE,BB,BB
+geoname_id,11185728,11463086,Kumaranellur,Kumaranellur,India,India,IN,IN,KL,KL
+geoname_id,1277955,10696667,Badshahpur,Badshahpur,India,India,IN,IN,HR,HR
+geoname_id,1640266,7083623,Keputih,Keputih,Indonesia,Indonesia,ID,ID,JI,JI
+geoname_id,8080507,8391896,Blumbang,Blumbang,Indonesia,Indonesia,ID,ID,JI,JI
+geoname_id,10862402,10862573,Nogawa,Nogawa,Japan,Japan,JP,JP,14,14
+geoname_id,8700859,8877813,Emiliano Zapata,Emiliano Zapata,Mexico,Mexico,MX,MX,TAM,TAM
+geoname_id,7995648,7995649,Mirchaiya,Mirchaiya,Nepal,Nepal,NP,NP,P2,P2
+geoname_id,2726517,2726519,Alno,Alno,Sweden,Sweden,SE,SE,Y,Y
+subdivision_codes,2660995,2660995,Donatyre,Donatyre,Switzerland,Switzerland,CH,CH,FR,VD
