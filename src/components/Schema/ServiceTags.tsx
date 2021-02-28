@@ -6,11 +6,9 @@ import Tag from './Tag';
 
 import styles from './ServiceTags.module.scss';
 
-export type Service = 'score' | 'factors' | 'insights';
-
 interface IServiceTags {
   className?: string;
-  services: '*' | Service[];
+  services: MinFraudServices;
 }
 
 const renderTag = (service: string, isDisabled?: boolean) => (

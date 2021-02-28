@@ -8,6 +8,7 @@ import * as React from 'react';
 
 import { formatSchemaName } from '../../utils/openapi';
 import Example from './Example';
+import SchemaContext from './SchemaContext';
 import ServiceTags from './ServiceTags';
 import Tag from './Tag';
 
@@ -15,41 +16,37 @@ import styles from './Property.module.scss';
 
 const slugger = new GithubSlugger();
 
-type Service = 'score' | 'factors' | 'insights';
-
 type TagValue = boolean | string | number | null;
-
-export type PropertyType = 'array<boolean>'
-  | 'array<number>'
-  | 'array<integer>'
-  | 'array<object>'
-  | 'array<string>'
-  | 'boolean'
-  | 'number'
-  | 'integer'
-  | 'object'
-  | 'string';
-
 export interface IProperty {
   children?: React.ReactElement,
   example?: string;
   linkToSchemaName?: string;
   name: string;
   schemaId?: string;
-  services?: '*' | Service[];
+  services?: MinFraudServices;
   tags?: Record<string, TagValue>;
-  type: PropertyType;
+  type: SchemaPropertyType;
 }
 
 const Property: React.FC<IProperty> = (props) => {
   const location = useLocation();
 
   const {
+    addToSchemaExample,
+    id: schemaId,
+    services: schemaServices,
+  } = React.useContext(SchemaContext);
+
+  const [
+    formattedExample,
+    setFormattedExample,
+  ] = React.useState('');
+
+  const {
     children: description,
     example,
     linkToSchemaName,
     tags: schemaTags,
-    schemaId,
     name,
     services,
     type,
@@ -74,20 +71,40 @@ const Property: React.FC<IProperty> = (props) => {
     ? 'json'
     : 'bash';
 
+  React.useEffect(() => {
+    if (example) {
+      addToSchemaExample({
+        payload: {
+          name,
+          type,
+          value: example,
+        },
+      });
 
-  let formattedExample = '';
+      const trimmedExample = example.trim();
 
-  if (example) {
-    formattedExample = example.trim();
+      if (type === 'object' || type.startsWith('array')) {
+        return setFormattedExample(JSON.stringify(
+          JSON.parse(trimmedExample),
+          null,
+          2
+        ));
+      }
 
-    if (type === 'object' || type.startsWith('array')) {
-      formattedExample = JSON.stringify(JSON.parse(formattedExample), null, 2);
+      if (type === 'string') {
+        return setFormattedExample(`"${trimmedExample}"`);
+      }
+
+      return setFormattedExample(trimmedExample);
     }
+  }, [
+    addToSchemaExample,
+    example,
+    name,
+    type,
+  ]);
 
-    if (type === 'string') {
-      formattedExample = `"${formattedExample}"`;
-    }
-  }
+  const serviceTags = services || schemaServices;
 
   return (
     <div
@@ -129,7 +146,7 @@ const Property: React.FC<IProperty> = (props) => {
         </Example>
       )}
 
-      {(linkToSchemaId || schemaTags || services) && (
+      {(linkToSchemaId || schemaTags || serviceTags) && (
         <div
           className={styles.tags}
         >
@@ -181,10 +198,10 @@ const Property: React.FC<IProperty> = (props) => {
               ))}
           </div>
 
-          {services && (
+          {serviceTags && (
             <ServiceTags
               className={styles['tags__service-tags']}
-              services={services}
+              services={serviceTags}
             />
           )}
         </div>
@@ -198,7 +215,6 @@ Property.propTypes = {
   example: PropTypes.string,
   linkToSchemaName: PropTypes.string,
   name: PropTypes.string.isRequired,
-  schemaId: PropTypes.string,
   services: PropTypes.oneOfType([
     PropTypes.oneOf([
       '*',

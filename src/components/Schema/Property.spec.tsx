@@ -2,8 +2,9 @@ import { ReactWrapper } from 'enzyme';
 import { Link } from 'gatsby';
 import * as React from 'react';
 
-import { p as P, pre as Pre } from '../Mdx';
-import Property, { PropertyType } from './Property';
+import { p as P } from '../Mdx';
+import Property from './Property';
+import Schema from './Schema';
 
 import styles from './Property.module.scss';
 
@@ -11,22 +12,28 @@ describe('<Property />', () => {
   describe('is linkable', () => {
     const name = 'bar';
     const schemaId = 'foo';
-    const propertyId = `${schemaId}__${name}`;
+    const propertyId = `schema--${schemaId}__${name}`;
     let component: ReactWrapper;
 
     beforeAll(() => {
       component = global.mountWithRouter(
-        <Property
-          name={name}
-          schemaId={schemaId}
-          services="*"
-          type="string"
-        />
+        <Schema
+          name="Foo"
+          type="object"
+        >
+          <Property
+            name={name}
+            services="*"
+            type="string"
+          />
+        </Schema>
       );
     });
 
     it('adds correct `id` to property container', () => {
-      expect(component.find(`[id="${propertyId}"]`)).toExist();
+      expect(
+        component.find(`[id="${propertyId}"]`)
+      ).toExist();
     });
 
     it('has a <Link /> component', () => {
@@ -34,12 +41,18 @@ describe('<Property />', () => {
     });
 
     describe('<Link /> component', () => {
+      let link: any;
+
+      beforeAll(() => {
+        link = component.find('Property').find(Link);
+      });
+
       it('has correct `to` value', () => {
-        expect(component.find(Link).props().to).toBe(`#${propertyId}`);
+        expect(link.props().to).toBe(`#${propertyId}`);
       });
 
       it('has correct text value', () => {
-        expect(component.find(Link).text()).toBe(name);
+        expect(link.text()).toBe(name);
       });
     });
   });

@@ -4,6 +4,7 @@
   display: table;
   margin: var(--mm-spacing) 0 calc(var(--mm-spacing) + 1px);
   position: relative;
+  width: 100%;
 }
 
 .heading {
@@ -87,6 +88,11 @@
   > [class^='Footnote-module'] {
     margin: 0;
     padding: calc(var(--mm-spacing) / 2) calc(var(--mm-spacing) / 2);
+  }
+
+  > [class^='Alert-module'] {
+    margin-left: var(--mm-spacing);
+    margin-right: var(--mm-spacing);
   }
 }
 
