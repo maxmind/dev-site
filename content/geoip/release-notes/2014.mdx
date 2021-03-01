@@ -25,7 +25,9 @@ Czech Republic, Denmark, Finland, France, Germany, Hungary, Iceland, India,
 Italy, Malaysia, Mexico, Netherlands, New Zealand, Norway, Pakistan, Poland,
 Portugal, Russia, Slovakia, South Africa, Spain, Sweden, Switzerland, Thailand,
 United Kingdom, United States.
+</ReleaseNote>
 
+<ReleaseNote date="2014-11-25" title="Improvements to accuracy in Japan, South Korea and Venezuela and change in lat/lon returned">
 We have improved the coverage and accuracy for GeoIP City in Japan, South Korea
 and Venezuela. We expect to make further improvements to the accuracy in South
 Korea over the next few weeks.
@@ -36,6 +38,25 @@ Republic, Denmark, Egypt, Spain, Finland, Greece, Hungary, Indonesia, Ireland,
 Iran, Netherlands, Norway, Peru, Philippines, Poland, Portugal, Russia, Sweden,
 Thailand, Turkey, Ukraine, we will return a latitude and longitude of the
 largest city in the country.
+</ReleaseNote>
+
+<ReleaseNote date="2014-11-19" title="Free JavaScript service discontinued">
+We have disabled the free JavaScript GeoIP service.
+
+If you were using the free JavaScript service and wish to continue service, you
+must purchase [GeoIP2 Precision
+Service](https://www.maxmind.com/en/geoip2-precision-services) queries and
+either upgrade to the [GeoIP2 JavaScript
+API](/geoip/geolocate-an-ip/client-side-javascript) or change the URL called to
+that provided by the GeoIP Legacy JavaScript service.
+
+Upgrading to the GeoIP2 JavaScript API comes with several benefits:
+
+- MaxMind’s most accurate IP geolocation data – GeoIP2 Precision data accurately
+geolocates 5% more IPs to postal codes and 3% more IPs to cities than GeoIP
+Legacy data
+- Location names in eight popular languages
+- Support for IPv6 addresses
 </ReleaseNote>
 
 <ReleaseNote date="2014-07-18" title="GeoIP2 JavaScript v2.1">
@@ -82,4 +103,13 @@ as an `uint16`. This should not affect users of the official Java, .NET, Perl,
 or PHP GeoIP2 APIs. The Python API will now return an integer rather than a
 string for `metro_code`. Users of libmaxminddb or third-party APIs may be
 affected.
+</ReleaseNote>
+
+<ReleaseNote date="2014-01-21" title="Free use of the GeoIP2 JavaScript API has been discontinued">
+In order to focus our efforts on providing the best IP data to our customers,
+MaxMind has discontinued free use of the GeoIP2 JavaScript API. To continue
+using the API, you will need to purchase [GeoIP2 Web
+Service](https://www.maxmind.com/en/geoip2-precision-services) lookups.
+Individuals unable to purchase services are encouraged to use our free GeoLite2
+Country or City databases.
 </ReleaseNote>
