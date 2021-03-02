@@ -46,6 +46,11 @@
         "type": 302
       },
       {
+        "destination": "/minfraud/report-a-transaction/",
+        "source": "/minfraud/report-transaction/",
+        "type": 302
+      },
+      {
         "destination": "/minfraud/track-devices",
         "source": "/minfraud/device",
         "type": 302
