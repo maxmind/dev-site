@@ -8,6 +8,7 @@ describe('Schema', () => {
   it('renders children', async () => {
     const component = global.mountWithRouter(
       <Schema
+        jsonPointer="/"
         name="Foo"
         type="object"
       >
@@ -38,6 +39,7 @@ describe('Schema', () => {
     beforeEach(() => {
       component = global.mountWithRouter(
         <Schema
+          jsonPointer="/"
           name="Foo"
           services="*"
           type="object"

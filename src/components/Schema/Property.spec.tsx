@@ -5,8 +5,21 @@ import * as React from 'react';
 import { p as P } from '../Mdx';
 import Property from './Property';
 import Schema from './Schema';
+import SchemaContext from './SchemaContext';
 
 import styles from './Property.module.scss';
+
+const withContext = (element: React.ReactElement) => global.mountWithRouter(
+  <SchemaContext.Provider
+    value={{
+      addToSchemaExample: () => jest.fn(),
+      id: '',
+      jsonPointer: '',
+    }}
+  >
+    {element}
+  </SchemaContext.Provider>
+);
 
 describe('<Property />', () => {
   describe('is linkable', () => {
@@ -18,6 +31,7 @@ describe('<Property />', () => {
     beforeAll(() => {
       component = global.mountWithRouter(
         <Schema
+          jsonPointer="/"
           name="Foo"
           type="object"
         >
@@ -59,7 +73,7 @@ describe('<Property />', () => {
 
   describe('a description', () => {
     it('is not shown if component has no children', () => {
-      const component = global.mountWithRouter(
+      const component = withContext(
         <Property
           name="foo"
           type="string"
@@ -70,7 +84,7 @@ describe('<Property />', () => {
     });
 
     it('is shown if component has children', () => {
-      const component = global.mountWithRouter(
+      const component = withContext(
         <Property
           name="foo"
           type="string"
@@ -85,7 +99,7 @@ describe('<Property />', () => {
 
   describe('an example', () => {
     it('is not shown if `example` property exists', () => {
-      const component = global.mountWithRouter(
+      const component = withContext(
         <Property
           name="foo"
           type="string"
@@ -96,7 +110,7 @@ describe('<Property />', () => {
     });
 
     it('is shown if `example` property exists', () => {
-      const component = global.mountWithRouter(
+      const component = withContext(
         <Property
           example="foo"
           name="foo"
@@ -110,15 +124,15 @@ describe('<Property />', () => {
     it(
       'if `type` is `array<object>`, the `example` value is formatted json',
       () => {
-        const component = global.mountWithRouter(
+        const component = withContext(
           <Property
             example={`
-              [
-                {
-                  "foo": "bar"
-                }
-              ]
-            `}
+            [
+              {
+                "foo": "bar"
+              }
+            ]
+          `}
             name="foo"
             type="array<object>"
           />
@@ -135,13 +149,13 @@ describe('<Property />', () => {
     );
 
     it('if `type` is `object`, the `example` value is formatted json', () => {
-      const component = global.mountWithRouter(
+      const component = withContext(
         <Property
           example={`
-            {
-              "foo": "bar"
-            }
-          `}
+          {
+            "foo": "bar"
+          }
+        `}
           name="foo"
           type="object"
         />
@@ -158,7 +172,7 @@ describe('<Property />', () => {
       // eslint-disable-next-line max-len
       'if `type` is `string`, the `example` value is formatted is wrapped in quotes',
       () => {
-        const component = global.mountWithRouter(
+        const component = withContext(
           <Property
             example="foo"
             name="foo"
@@ -188,11 +202,11 @@ describe('<Property />', () => {
     ])(
       'if `type` is `%s`, the `example` value is not formatted',
       (type, example) => {
-        const component = global.mountWithRouter(
+        const component = withContext(
           <Property
             example={example}
             name="foo"
-            type={type as PropertyType}
+            type={type as SchemaPropertyType}
           />
         );
 
@@ -208,7 +222,7 @@ describe('<Property />', () => {
       // eslint-disable-next-line max-len
       'is not shown if `linkToSchemaName`, `services`, and `tags`  props are undefined',
       () => {
-        const component = global.mountWithRouter(
+        const component = withContext(
           <Property
             name="foo"
             type="string"
@@ -220,9 +234,10 @@ describe('<Property />', () => {
     );
 
     describe('is shown if', () => {
-      it('`linkToSchemaName` is defined', () => {
-        const component = global.mountWithRouter(
+      fit('`linkToSchemaName` is defined', () => {
+        const component = withContext(
           <Property
+            example="foo"
             linkToSchemaName={'Foo'}
             name="foo"
             type="string"
@@ -233,8 +248,9 @@ describe('<Property />', () => {
       });
 
       it('`services` is defined', () => {
-        const component = global.mountWithRouter(
+        const component = withContext(
           <Property
+            example="foo"
             name="foo"
             services="*"
             type="string"
@@ -245,8 +261,9 @@ describe('<Property />', () => {
       });
 
       it('`tags` is defined', () => {
-        const component = global.mountWithRouter(
+        const component = withContext(
           <Property
+            example="foo"
             name="foo"
             tags={{
               foo: 'foo',
@@ -260,11 +277,10 @@ describe('<Property />', () => {
     });
 
     it('lists service tags', () => {
-      const component = global.mountWithRouter(
+      const component = withContext(
         <Property
+          example="foo"
           name="foo"
-          schemaId="bar"
-          services="*"
           type="string"
         />
       );
@@ -276,11 +292,10 @@ describe('<Property />', () => {
       let schemaTags: ReactWrapper;
 
       beforeAll(() => {
-        const component = global.mountWithRouter(
+        const component = withContext(
           <Property
+            example="foo"
             name="foo"
-            schemaId="bar"
-            services="*"
             tags={{
               bar: 'bar',
               baz: null,
