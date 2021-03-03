@@ -77,13 +77,25 @@
 .content {
   border: 1px solid var(--mm-color-border);
   border-radius: 0 0 var(--mm-border-radius) var(--mm-border-radius);
+  border-top: 1px solid transparent;
 
   > :not([class^='Property-module']) {
-    font-size: 14px;
-    line-height: 26px;
     margin: calc(var(--mm-spacing) / 2) 0;
     padding: 0 calc(var(--mm-spacing) / 2);
   }
+
+  > :not([class^='Property-module']),
+  [class^='Li-module'],
+  [class^='Code-module'] {
+    font-size: 14px;
+    line-height: 26px;
+  }
+
+  [class^='Ol-module'],
+  [class^='Ul-module'] {
+    padding-left: var(--mm-spacing);
+  }
+
 
   > [class^='Footnote-module'] {
     margin: 0;

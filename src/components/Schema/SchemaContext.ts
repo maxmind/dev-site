@@ -9,10 +9,12 @@ type SchemaContextProps = {
     }
   }>;
   id: string;
+  jsonPointer: string;
   services?: MinFraudServices;
 }
 
 export default React.createContext<SchemaContextProps>({
   addToSchemaExample: () => ({}),
   id: '',
+  jsonPointer: '',
 });

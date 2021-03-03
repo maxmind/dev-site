@@ -7,7 +7,7 @@ import PropTypes from 'prop-types';
 import * as React from 'react';
 
 import { formatSchemaName } from '../../utils/openapi';
-import Example from './Example';
+import Example from '../Example';
 import SchemaContext from './SchemaContext';
 import ServiceTags from './ServiceTags';
 import Tag from './Tag';
@@ -18,7 +18,7 @@ const slugger = new GithubSlugger();
 
 type TagValue = boolean | string | number | null;
 export interface IProperty {
-  children?: React.ReactElement,
+  children?: React.ReactElement | React.ReactElement[],
   example?: string;
   linkToSchemaName?: string;
   name: string;
@@ -34,6 +34,7 @@ const Property: React.FC<IProperty> = (props) => {
   const {
     addToSchemaExample,
     id: schemaId,
+    jsonPointer: schemaJsonPath,
     services: schemaServices,
   } = React.useContext(SchemaContext);
 
@@ -129,7 +130,6 @@ const Property: React.FC<IProperty> = (props) => {
         {type}
       </Tag>
 
-
       {description && (
         <div
           className={styles.description}
@@ -140,9 +140,14 @@ const Property: React.FC<IProperty> = (props) => {
 
       {example && (
         <Example
+          label="Example"
           language={exampleLanguage}
         >
-          {formattedExample}
+          <>
+            {exampleLanguage === 'json' ? '//' : '#'}
+            {` JSON Path: ${schemaJsonPath}.${name}\n`}
+            {formattedExample}
+          </>
         </Example>
       )}
 
@@ -211,7 +216,10 @@ const Property: React.FC<IProperty> = (props) => {
 };
 
 Property.propTypes = {
-  children: PropTypes.element,
+  children: PropTypes.oneOfType([
+    PropTypes.element,
+    PropTypes.arrayOf(PropTypes.element.isRequired),
+  ]),
   example: PropTypes.string,
   linkToSchemaName: PropTypes.string,
   name: PropTypes.string.isRequired,

@@ -7,7 +7,7 @@ import * as React from 'react';
 import { FaLink as LinkIcon } from 'react-icons/fa';
 
 import { formatSchemaName } from '../../utils/openapi';
-import Example from './Example';
+import Example from '../Example';
 import SchemaContext from './SchemaContext';
 import Tag from './Tag';
 
@@ -16,6 +16,7 @@ import styles from './Schema.module.scss';
 interface ISchema {
   children: React.ReactElement | React.ReactElement[];
   example?: string;
+  jsonPointer: string;
   name: string;
   services?: MinFraudServices;
   type: SchemaType;
@@ -24,7 +25,14 @@ interface ISchema {
 const slugger = new GithubSlugger();
 
 const Schema: React.FC<ISchema> = (props) => {
-  const { children, example: exampleProp, name, services, type } = props;
+  const {
+    children,
+    example: exampleProp,
+    jsonPointer,
+    name,
+    services,
+    type,
+  } = props;
 
   const [
     example,
@@ -134,6 +142,7 @@ const Schema: React.FC<ISchema> = (props) => {
           value={{
             addToSchemaExample,
             id: schemaId,
+            jsonPointer,
             services,
           }}
         >
@@ -141,9 +150,13 @@ const Schema: React.FC<ISchema> = (props) => {
 
           {Object.keys(example).length > 0 && (
             <Example
+              label="Example"
               language="json"
             >
-              {JSON.stringify(example, null, 2)}
+              <>
+                {`// JSON Path: \`${jsonPointer}\`\n`}
+                {JSON.stringify(example, null, 2)}
+              </>
             </Example>
           )}
 
@@ -166,6 +179,7 @@ Schema.propTypes = {
     ),
   ]).isRequired,
   example: PropTypes.string,
+  jsonPointer: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
   services: PropTypes.oneOfType([
     PropTypes.oneOf([

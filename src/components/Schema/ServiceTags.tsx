@@ -35,14 +35,14 @@ const ServiceTags: React.FC<IServiceTags> = (props) => {
         : renderTag('Score', true)
       }
 
-      {(services === '*' || services.includes('factors'))
-        ? renderTag('Factors')
-        : renderTag('Factors', true)
-      }
-
       {(services === '*' || services.includes('insights'))
         ? renderTag('Insights')
         : renderTag('Insights', true)
+      }
+
+      {(services === '*' || services.includes('factors'))
+        ? renderTag('Factors')
+        : renderTag('Factors', true)
       }
     </div>
   );
