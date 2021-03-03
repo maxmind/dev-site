@@ -31,6 +31,21 @@
         "type": 302
       },
       {
+        "destination": "/geoip/release-notes",
+        "source": "/geoip/geoip2/release-notes/",
+        "type": 302
+      },
+      {
+        "destination": "/geoip/release-notes/rss.xml",
+        "source": "/feed/?post_type=release_note&product=geoip2",
+        "type": 302
+      },
+      {
+        "destination": "/minfraud/release-notes/rss.xml",
+        "source": "/feed/?post_type=release_note&product=minfraud",
+        "type": 302
+      },
+      {
         "destination": "/minfraud/track-devices",
         "source": "/minfraud/device",
         "type": 302

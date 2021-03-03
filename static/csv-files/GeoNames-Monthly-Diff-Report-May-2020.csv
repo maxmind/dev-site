@@ -1,0 +1,84 @@
+diff_in,old_geoname_id,new_geoname_id,old_city_name,new_city_name,old_country_name,new_country_name,old_country_code,new_country_code,old_subdivision_codes,new_subdivision_codes
+city_name,698740,698740,Odesa,Odessa,Ukraine,Ukraine,UA,UA,51,51
+city_name,1263285,1263285,Mavelikara,Mavelikkara,India,India,IN,IN,KL,KL
+city_name,6948711,6948711,Scarborough,,Canada,Canada,CA,CA,ON,ON
+city_name,1516776,1516776,Dzhansugirov,Dzhansugurov,Kazakhstan,Kazakhstan,KZ,KZ,ALM,ALM
+city_name,2925177,2925177,Freiburg,Freiburg im Breisgau,Germany,Germany,DE,DE,BW,BW
+city_name,293821,293821,Qiryat Ye`arim,Qiryat Ye'arim,Israel,Israel,IL,IL,JM,JM
+city_name,294097,294097,Nof HaGalil,Nazerat 'Illit,Israel,Israel,IL,IL,Z,Z
+city_name,9528317,9528317,Beigang,Beigangcun,China,China,CN,CN,HE,HE
+city_name,294410,294410,Ma`agan Mikha'el,Ma'agan Mikha'el,Israel,Israel,IL,IL,HA,HA
+city_name,295582,295582,`Azriqam,Azriqam,Israel,Israel,IL,IL,D,D
+city_name,578409,578409,Bazkovskaya,Bazkovskiy,Russia,Russia,RU,RU,ROS,ROS
+city_name,294805,294805,HaZore`im,HaZore'im,Israel,Israel,IL,IL,Z,Z
+city_name,697593,697593,Pervomays'k,Pervomaysk,Ukraine,Ukraine,UA,UA,48,48
+city_name,2641193,2641193,Norton Canes,Norton under Cannock,United Kingdom,United Kingdom,GB,GB,"ENG, STS","ENG, STS"
+city_name,9116051,9116051,Xie'erzhai,Xiezhaicun,China,China,CN,CN,HE,HE
+city_name,695369,695369,Rovnoye,Rivne,Ukraine,Ukraine,UA,UA,48,48
+city_name,294995,294995,Giv`at Hayyim Ihud,Giv'at Hayyim Ihud,Israel,Israel,IL,IL,M,M
+city_name,293543,293543,Shave Ziyyon,Shavei Tzion,Israel,Israel,IL,IL,Z,Z
+city_name,9116401,9116401,Dawang,Dawangcun,China,China,CN,CN,HE,HE
+city_name,2805615,2805615,Wurzburg,Würzburg,Germany,Germany,DE,DE,BY,BY
+city_name,295509,295509,Bene Ziyyon,Bnei Zion,Israel,Israel,IL,IL,M,M
+city_name,293293,293293,Tushiyya,Tushia,Israel,Israel,IL,IL,D,D
+city_name,293896,293896,Qalansuwa,Qalansawe,Israel,Israel,IL,IL,M,M
+city_name,7525990,7525990,Yuzhnoukrainsk,Yuzhnoukrayinsk,Ukraine,Ukraine,UA,UA,48,48
+city_name,3159107,3159107,Dombas,Dombås,Norway,Norway,NO,NO,34,34
+city_name,2776178,2776178,Hirschegg Rein,Hirschegg,Austria,Austria,AT,AT,6,6
+city_name,294053,294053,Newe Ilan,Neve Ilan,Israel,Israel,IL,IL,JM,JM
+city_name,6091104,6091104,North York,,Canada,Canada,CA,CA,ON,ON
+city_name,3855116,3855116,General Enrique Mosconi,General Mosconi,Argentina,Argentina,AR,AR,A,A
+city_name,293906,293906,Poriyya,Poria – Neve Oved,Israel,Israel,IL,IL,Z,Z
+city_name,3028349,3028349,Castelnau-d'Auzan,Castelnau d'Auzan,France,France,FR,FR,"OCC, 32","OCC, 32"
+city_name,1220163,1220163,Vose',Hulbuk,Tajikistan,Tajikistan,TJ,TJ,KT,KT
+city_name,692487,692487,Storozhynets',Storozhynets,Ukraine,Ukraine,UA,UA,77,77
+city_name,295425,295425,Bet Yehoshua`,Bet Yehoshua',Israel,Israel,IL,IL,M,M
+city_name,699620,699620,Novodnistrovs’k,Novodnistrovsk,Ukraine,Ukraine,UA,UA,77,77
+city_name,293823,293823,Qiryat Tiv`on,Kiryat Tiv'on,Israel,Israel,IL,IL,HA,HA
+city_name,706536,706536,Kel'mentsi,Kelmentsi,Ukraine,Ukraine,UA,UA,77,77
+city_name,9116324,9116324,Baidukou,Baidukoucun,China,China,CN,CN,HE,HE
+city_name,294395,294395,Mabbu`im,Mabbu'im,Israel,Israel,IL,IL,D,D
+city_name,295632,295632,`Aseret,Aseret,Israel,Israel,IL,IL,M,M
+city_name,617578,617578,Poganesti,Pogăneşti,Republic of Moldova,Republic of Moldova,MD,MD,HI,HI
+city_name,295471,295471,Bet `Ezra,Bet 'Ezra,Israel,Israel,IL,IL,D,D
+city_name,3278304,3278304,Lutzelbach,Lützelbach,Germany,Germany,DE,DE,HE,HE
+city_name,295480,295480,Bet `Arif,Bet 'Arif,Israel,Israel,IL,IL,M,M
+city_name,295225,295225,`En Ayyala,En Ayyala,Israel,Israel,IL,IL,HA,HA
+city_name,293624,293624,Sde Hemed,Sdei Hemed,Israel,Israel,IL,IL,M,M
+geoname_id,6913048,10160438,Jingyang,Jingyang,China,China,CN,CN,SC,SC
+geoname_id,3517644,3827390,Santa Cecilia,Santa Cecilia,Mexico,Mexico,MX,MX,CMX,CMX
+geoname_id,2791318,2791317,Mere,Mere,Belgium,Belgium,BE,BE,"VLG, VOV","VLG, VOV"
+geoname_id,3686736,3686737,Charala,Charala,Colombia,Colombia,CO,CO,SAN,SAN
+geoname_id,1810419,11181733,Gaoqiao,Gaoqiao,China,China,CN,CN,ZJ,ZJ
+geoname_id,3389134,3389141,Santo Antonio,Santo Antonio,Brazil,Brazil,BR,BR,RN,RN
+geoname_id,6957774,2789311,Papignies,Papignies,Belgium,Belgium,BE,BE,"WAL, WHT","WAL, WHT"
+geoname_id,3455684,3455682,Ouro Fino,Ouro Fino,Brazil,Brazil,BR,BR,MG,MG
+geoname_id,1268370,1268372,Kallar,Kallar,India,India,IN,IN,KL,KL
+geoname_id,11885795,3667816,Sopetran,Sopetran,Colombia,Colombia,CO,CO,ANT,ANT
+geoname_id,8964434,6534515,Taleggio,Taleggio,Italy,Italy,IT,IT,"25, BG","25, BG"
+geoname_id,3385504,8602304,Varjota,Varjota,Brazil,Brazil,BR,BR,CE,CE
+geoname_id,435203,435165,Ksara,Ksara,Lebanon,Lebanon,LB,LB,JA,JA
+geoname_id,2711508,2711509,,,Sweden,Sweden,SE,SE,I,I
+geoname_id,7870925,5946235,East York,East York,Canada,Canada,CA,CA,ON,ON
+geoname_id,10809530,1262006,Nana,Nana,India,India,IN,IN,RJ,RJ
+geoname_id,10862402,10862573,Nogawa,Nogawa,Japan,Japan,JP,JP,14,14
+geoname_id,6317026,12125743,Dom Aquino,Dom Aquino,Brazil,Brazil,BR,BR,MT,MT
+geoname_id,11562548,11562557,Emiliano Zapata,Emiliano Zapata,Mexico,Mexico,MX,MX,CMX,CMX
+geoname_id,2801341,2801342,Bost,Bost,Belgium,Belgium,BE,BE,"VLG, VBR","VLG, VBR"
+geoname_id,3455398,3455397,Palmeiras,Palmeiras,Brazil,Brazil,BR,BR,MS,MS
+geoname_id,1787075,7001712,Yantian,Yantian,China,China,CN,CN,GD,GD
+geoname_id,8959664,3178221,Comunanza,Comunanza,Italy,Italy,IT,IT,"57, AP","57, AP"
+geoname_id,11562389,11562163,Lomas de Santa Fe,Lomas de Santa Fe,Mexico,Mexico,MX,MX,CMX,CMX
+geoname_id,1977689,2006726,Daqian,Daqian,China,China,CN,CN,FJ,FJ
+geoname_id,1818116,8066183,Anbu,Anbu,China,China,CN,CN,GD,GD
+geoname_id,3154383,3154385,Haegeland,Haegeland,Norway,Norway,NO,NO,42,42
+geoname_id,2516932,6544442,Guadiaro,Guadiaro,Spain,Spain,ES,ES,"AN, CA","AN, CA"
+geoname_id,3453114,6318011,Ponte Branca,Ponte Branca,Brazil,Brazil,BR,BR,MT,MT
+geoname_id,3475603,3475493,Campo Largo,Campo Largo,Brazil,Brazil,BR,BR,SP,SP
+geoname_id,10262219,9888363,Naka,Naka,Japan,Japan,JP,JP,40,40
+geoname_id,3531046,9083052,Chelem,Chelem,Mexico,Mexico,MX,MX,YUC,YUC
+geoname_id,730094,730093,Kostenets,Kostenets,Bulgaria,Bulgaria,BG,BG,23,23
+subdivision_codes,1539906,1539906,Kokkaynar,Kokkaynar,Kazakhstan,Kazakhstan,KZ,KZ,ALA,ALM
+subdivision_codes,710846,710846,Cheponosy,Cheponosy,Ukraine,Ukraine,UA,UA,,77
+subdivision_codes,1517636,1517636,Ushtobe,Ushtobe,Kazakhstan,Kazakhstan,KZ,KZ,,ALM
+subdivision_codes,2424548,2424548,Toukoura,Toukoura,Chad,Chad,TD,TD,ND,CB

@@ -1,0 +1,54 @@
+diff_in,old_geoname_id,new_geoname_id,old_city_name,new_city_name,old_country_name,new_country_name,old_country_code,new_country_code,old_subdivision_codes,new_subdivision_codes
+city_name,2629833,2629833,Husavik,Norðurþing,Iceland,Iceland,IS,IS,6,6
+city_name,2112907,2112907,Funaoka-chuo,Funaoka,Japan,Japan,JP,JP,4,4
+city_name,4005937,4005937,San Pedro Garza Garcia,San Pedro,Mexico,Mexico,MX,MX,NLE,NLE
+city_name,1583477,1583477,Điện Biên Phủ,Dien Bien Phu,Vietnam,Vietnam,VN,VN,71,71
+city_name,1283562,1283562,Butwal,Butaul,Nepal,Nepal,NP,NP,P5,P5
+city_name,3413727,3413727,Sangerdi,Sandgerdi,Iceland,Iceland,IS,IS,2,2
+city_name,1793533,1793533,Taixing,Taishing,China,China,CN,CN,JS,JS
+city_name,11612285,11612285,Puchlkirchen am Trattberg,Puchkirchen am Trattberg,Austria,Austria,AT,AT,4,4
+city_name,2965516,2965516,Rath Luirc,Charleville,Ireland,Ireland,IE,IE,"M, CO","M, CO"
+city_name,1587923,1587923,Bien Hoa,Bia Hoa,Vietnam,Vietnam,VN,VN,39,39
+city_name,2919514,2919514,Goel,Goehl,Germany,Germany,DE,DE,SH,SH
+geoname_id,12108275,3455638,Santa Barbara,Santa Barbara,Brazil,Brazil,BR,BR,BA,BA
+geoname_id,3389134,3389141,Santo Antonio,Santo Antonio,Brazil,Brazil,BR,BR,RN,RN
+geoname_id,2789697,2789698,Ophoven,Ophoven,Belgium,Belgium,BE,BE,"VLG, VLI","VLG, VLI"
+geoname_id,6613916,2980499,Saint-Eloy,Saint-Eloy,France,France,FR,FR,"BRE, 29","BRE, 29"
+geoname_id,1728890,1729041,Bagumbayan,Bagumbayan,Philippines,Philippines,PH,PH,"40, RIZ","40, RIZ"
+geoname_id,3451144,11960326,Rio Fortuna,Rio Fortuna,Brazil,Brazil,BR,BR,SC,SC
+geoname_id,6614155,3023911,Congenies,Congenies,France,France,FR,FR,"OCC, 30","OCC, 30"
+geoname_id,3453787,3453786,Pinhalzinho,Pinhalzinho,Brazil,Brazil,BR,BR,SP,SP
+geoname_id,3448584,3448577,Sao Luis,Sao Luis,Brazil,Brazil,BR,BR,MS,MS
+geoname_id,1275634,10479556,Bilaspur,Bilaspur,India,India,IN,IN,UP,UP
+geoname_id,821356,565290,Donskoy,Donskoy,Russia,Russia,RU,RU,TUL,TUL
+geoname_id,3469942,3469933,Boa Esperanca,Boa Esperanca,Brazil,Brazil,BR,BR,ES,ES
+geoname_id,6614788,2980002,Saint-Genies-de-Malgoires,Saint-Genies-de-Malgoires,France,France,FR,FR,"OCC, 30","OCC, 30"
+geoname_id,7624282,3448980,Sao Joao,Sao Joao,Brazil,Brazil,BR,BR,PR,PR
+geoname_id,4679851,4679850,Cedar Lane,Cedar Lane,United States,United States,US,US,TX,TX
+geoname_id,11532629,11439697,Adaiyur,Adaiyur,India,India,IN,IN,TN,TN
+geoname_id,6316619,3664907,Bonfim,Bonfim,Brazil,Brazil,BR,BR,RR,RR
+geoname_id,11439650,1278454,Arni,Arni,India,India,IN,IN,TN,TN
+geoname_id,3475644,3460723,Itapeva,Itapeva,Brazil,Brazil,BR,BR,SP,SP
+geoname_id,1927457,10320612,Guakou,Guakou,China,China,CN,CN,HN,HN
+geoname_id,1264251,10455393,Majhgawan,Majhgawan,India,India,IN,IN,MP,MP
+geoname_id,11186019,2882257,Kuessaberg,Kuessaberg,Germany,Germany,DE,DE,BW,BW
+geoname_id,6615007,3008981,La Grande-Motte,La Grande-Motte,France,France,FR,FR,"OCC, 34","OCC, 34"
+geoname_id,3178221,8959664,Comunanza,Comunanza,Italy,Italy,IT,IT,"57, AP","57, AP"
+geoname_id,1817313,8394617,Baitu,Baitu,China,China,CN,CN,JS,JS
+geoname_id,1919149,8367765,Dongguan,Dongguan,China,China,CN,CN,ZJ,ZJ
+geoname_id,6691734,6547673,Kloster Lehnin,Kloster Lehnin,Germany,Germany,DE,DE,BB,BB
+geoname_id,3387423,6318704,Sitio Novo do Tocantins,Sitio Novo do Tocantins,Brazil,Brazil,BR,BR,TO,TO
+geoname_id,3445947,3445946,Tunas,Tunas,Brazil,Brazil,BR,BR,RS,RS
+geoname_id,3464411,7566537,Duas Barras,Duas Barras,Brazil,Brazil,BR,BR,RJ,RJ
+geoname_id,730093,730094,Kostenets,Kostenets,Bulgaria,Bulgaria,BG,BG,23,23
+geoname_id,6613961,2971978,Treffiagat,Treffiagat,France,France,FR,FR,"BRE, 29","BRE, 29"
+geoname_id,11055938,1278446,Araria,Araria,India,India,IN,IN,BR,BR
+subdivision_codes,3211309,3211309,Highcliffe,Highcliffe,United Kingdom,United Kingdom,GB,GB,"ENG, DOR",ENG
+subdivision_codes,2654219,2654219,Burton,Burton,United Kingdom,United Kingdom,GB,GB,"ENG, DOR",ENG
+subdivision_codes,146032,146032,Trachoni,Trachoni,Cyprus,Cyprus,CY,CY,1,2
+subdivision_codes,1106817,1106817,Coromandel,Coromandel,Mauritius,Mauritius,MU,MU,BL,PW
+subdivision_codes,8019123,8019123,Sharurah,Sharurah,Saudi Arabia,Saudi Arabia,SA,SA,,10
+subdivision_codes,934086,934086,Roche Bois,Roche Bois,Mauritius,Mauritius,MU,MU,PA,PL
+subdivision_codes,3836239,3836239,Santa Isabel,Santa Isabel,Argentina,Argentina,AR,AR,G,S
+subdivision_codes,1106764,1106764,Pointe aux Sables,Pointe aux Sables,Mauritius,Mauritius,MU,MU,BL,PL
+subdivision_codes,2653075,2653075,Christchurch,Christchurch,United Kingdom,United Kingdom,GB,GB,"ENG, DOR",ENG

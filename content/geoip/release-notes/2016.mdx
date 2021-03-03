@@ -1,0 +1,81 @@
+---
+draft: false
+title: GeoIP2 Release Notes - 2016 Archive
+---
+
+<ReleaseNote date="2016-11-08" title="Change to Comcast Business ISP name">
+We've updated any GeoIP database or service providing ISP and Organization data
+to return Comcast Business rather than Comcast Business Communications. We are
+doing so in order to use the trade name of the ISP and also because it is
+shorter.
+
+Please note that if you use this data point, for example, to flag a visitor if
+they change ISP, you may need to adjust your implementation in order to avoid
+false positive or negative flags.
+
+The following GeoIP databases and services are affected by this change:
+
+- GeoIP2 ISP database
+- GeoIP2 Enterprise database (Update will apply to November 15th release)
+- GeoIP Legacy ISP and Organization databases
+- GeoIP2 Precision and Legacy City Service
+- GeoIP2 Precision and Legacy Insights Service
+</ReleaseNote>
+
+<ReleaseNote date="2016-09-15" title="Improved GeoIP accuracy outside the US">
+The GeoIP City databases now provide significantly improved accuracy for
+countries outside the US, especially China, India, and Japan. See more
+information about GeoIP accuracy on
+[https://www.maxmind.com/en/geoip2-city-database-accuracy](https://www.maxmind.com/en/geoip2-city-database-accuracy)
+</ReleaseNote>
+
+<ReleaseNote date="2016-04-26" title="Accuracy radius to be added to GeoLite2 City, GeoIP2 City, and GeoIP2 Precision City">
+MaxMind will be adding accuracy radius to the GeoLite2 City and GeoIP2 City
+databases as well as the GeoIP2 Precision City service.
+
+The Accuracy Radius is an indication in kilometers of geolocation accuracy for
+the latitude and longitude coordinates we return for an IP address. The actual
+location of the IP address is likely within the area defined by this radius and
+the latitude and longitude coordinates.
+
+As a reminder, the latitude and longitude coordinates we return for a given IP
+address are near either the population or geographic center of the most
+granular location data we return for that IP address (i.e., country,
+region/state, city, or postal code) and should not be used to identify a
+particular address or household.
+
+For the binary databases and web service, this field will be available at
+`/location/accuracy_radius`. All official [GeoIP2 client
+APIs](/geoip/geolocate-an-ip/databases/#official-maxmind-api-clients) already
+support this field.
+
+**For the CSV databases, a new `accuracy_radius` column will be added to the
+end of the IPv4 and IPv6 blocks files. Please test your integration to ensure
+compatibility before updating.** You may test your integration by downloading
+the [latest
+copy](/geoip/geoip2/geolite2/) of the
+GeoLite2 CSV database, which already has the accuracy_radius column appended.
+
+Target availability dates:
+
+- GeoLite2 City – May 3, 2016
+- GeoIP2 City – May 17, 2016
+- GeoIP2 Precision City – May 19, 2016
+</ReleaseNote>
+
+<ReleaseNote date="2016-04-11" title="Change in default lat/lon">
+We are changing the latitude and longitude for two locations in our GeoIP and
+GeoLite databases. For IPs in the United States that we are unable to locate to
+a particular state or city, we will return 37.751, -97.822. For IPs that
+resolve to Ashburn, Virginia with zip code 20147, we will return 39.018,
+-77.539. We would like to remind customers that latitude and longitude values
+contained in the GeoIP databases are not precise and should not be used to
+identify a particular address or household.
+</ReleaseNote>
+
+<ReleaseNote date="2016-02-26" title="Capitalization change for Verizon FiOS">
+We are updating the GeoIP ISP and Organization databases to return `Verizon
+Fios` instead of `Verizon FiOS`, due to a change in how Verizon capitalizes
+Fios. If you reference `Verizon FiOS` in code or a custom rule, note that you
+may need to revise these references to `Verizon Fios`.
+</ReleaseNote>

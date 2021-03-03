@@ -1,0 +1,67 @@
+diff_in,old_geoname_id,new_geoname_id,old_city_name,new_city_name,old_country_name,new_country_name,old_country_code,new_country_code,old_subdivision_codes,new_subdivision_codes
+city_name,1810979,1810979,Fuchow,Fuling,China,China,CN,CN,CQ,CQ
+city_name,1920924,1920924,Kuicheng,Kuichengcun,China,China,CN,CN,FJ,FJ
+city_name,10002271,10002271,Alaying,Alayingcun,China,China,CN,CN,HE,HE
+city_name,10962256,10962256,Bishan,Bishancun,China,China,CN,CN,FJ,FJ
+city_name,2005766,2005766,Xiaotian,Yutiancun,China,China,CN,CN,FJ,FJ
+city_name,1914373,1914373,Hubin,Hubincun,China,China,CN,CN,FJ,FJ
+city_name,1817979,1817979,Anrenxi,Anren Xicun,China,China,CN,CN,FJ,FJ
+city_name,1922422,1922422,Dayuan,Longyuancun,China,China,CN,CN,FJ,FJ
+city_name,1281743,1281743,Artux,Atush,China,China,CN,CN,XJ,XJ
+city_name,1922399,1922399,Gulou,Guloucun,China,China,CN,CN,FJ,FJ
+city_name,7686610,7686610,Dacai,Dacaicun,China,China,CN,CN,FJ,FJ
+city_name,7686766,7686766,Chengji,Chengjicun,China,China,CN,CN,FJ,FJ
+city_name,8575807,8575807,Chengguan,Chengguancun,China,China,CN,CN,FJ,FJ
+city_name,2614402,2614402,Runavik,Runavík,Faroe Islands,Faroe Islands,FO,FO,,
+city_name,3003656,3003656,Le Louroux-Beconnais,Le Louroux Beconnais,France,France,FR,FR,"PDL, 49","PDL, 49"
+city_name,2973889,2973889,Souzay-Champigny,Souzay,France,France,FR,FR,"PDL, 49","PDL, 49"
+city_name,2979539,2979539,Saint-Hilaire-de-Talmont,Saint-Hilaire de Talmont,France,France,FR,FR,"PDL, 85","PDL, 85"
+city_name,2974047,2974047,Soulaire-et-Bourg,Soulaire,France,France,FR,FR,"PDL, 49","PDL, 49"
+city_name,3012120,3012120,Juigne-sur-Loire,Juigne sur Loire,France,France,FR,FR,"PDL, 49","PDL, 49"
+city_name,2922233,2922233,Gaussig,Huska,Germany,Germany,DE,DE,SN,SN
+city_name,2940424,2940424,Calau,Kalawa,Germany,Germany,DE,DE,BB,BB
+city_name,2911242,2911242,Hamm,Hamm (Sieg),Germany,Germany,DE,DE,RP,RP
+city_name,2915172,2915172,Grosspostwitz,Budestecy,Germany,Germany,DE,DE,SN,SN
+city_name,2875625,2875625,Luebben,Lubin,Germany,Germany,DE,DE,BB,BB
+city_name,2875623,2875623,Luebbenau,Lubnjow,Germany,Germany,DE,DE,BB,BB
+city_name,6722563,6722563,Kedungsari,Kedung Sari,Indonesia,Indonesia,ID,ID,RI,RI
+city_name,1650801,1650801,Bagansiapiapi,Bagan Si Api-api,Indonesia,Indonesia,ID,ID,RI,RI
+city_name,8432681,8432681,Pekanbaru,Pekan Baru,Indonesia,Indonesia,ID,ID,RI,RI
+city_name,294674,294674,Hulda,Huldah,Israel,Israel,IL,IL,M,M
+city_name,4090684,4090684,Smiths,Smiths Station,United States,United States,US,US,AL,AL
+geoname_id,3455938,3455937,Olhos d'Agua,Olhos d'Agua,Brazil,Brazil,BR,BR,MG,MG
+geoname_id,6318838,8602146,Uruara,Uruara,Brazil,Brazil,BR,BR,PA,PA
+geoname_id,3465542,12179408,Coracao de Jesus,Coracao de Jesus,Brazil,Brazil,BR,BR,MG,MG
+geoname_id,3453414,3453415,Planalto,Planalto,Brazil,Brazil,BR,BR,RS,RS
+geoname_id,3392532,3392531,Pedra Preta,Pedra Preta,Brazil,Brazil,BR,BR,RN,RN
+geoname_id,3456485,3456483,Muritiba,Muritiba,Brazil,Brazil,BR,BR,BA,BA
+geoname_id,12108334,3460542,Itororo,Itororo,Brazil,Brazil,BR,BR,BA,BA
+geoname_id,6180874,6180868,White Point,White Point,Canada,Canada,CA,CA,NS,NS
+geoname_id,1916727,7072519,Xinqiao,Xinqiao,China,China,CN,CN,ZJ,ZJ
+geoname_id,7629614,8541984,Yongfeng,Yongfeng,China,China,CN,CN,HL,HL
+geoname_id,1787119,1787118,Yanshan,Yanshan,China,China,CN,CN,GX,GX
+geoname_id,1790436,1790435,Xiangzhou,Xiangzhou,China,China,CN,CN,GX,GX
+geoname_id,9991855,10001140,Hebei,Hebei,China,China,CN,CN,HE,HE
+geoname_id,6614870,3000519,Les Landes-Genusson,Les Landes-Genusson,France,France,FR,FR,"PDL, 85","PDL, 85"
+geoname_id,6458655,2978065,Saint-Melaine-sur-Aubance,Saint-Melaine-sur-Aubance,France,France,FR,FR,"PDL, 49","PDL, 49"
+geoname_id,6458667,3008166,La Menitre,La Menitre,France,France,FR,FR,"PDL, 49","PDL, 49"
+geoname_id,2888113,2888112,Klein Trebbow,Klein Trebbow,Germany,Germany,DE,DE,MV,MV
+geoname_id,2909433,2909430,Hasselbach,Hasselbach,Germany,Germany,DE,DE,RP,RP
+geoname_id,10792355,3207187,Oberweser,Oberweser,Germany,Germany,DE,DE,HE,HE
+geoname_id,2917804,2917803,Greifenberg,Greifenberg,Germany,Germany,DE,DE,BY,BY
+geoname_id,1271885,10372689,Firozabad,Firozabad,India,India,IN,IN,UP,UP
+geoname_id,6742429,8068706,Doplang,Doplang,Indonesia,Indonesia,ID,ID,JT,JT
+geoname_id,6771450,8391827,Cangkring,Cangkring,Indonesia,Indonesia,ID,ID,JI,JI
+geoname_id,1971461,6410546,Bangun,Bangun,Indonesia,Indonesia,ID,ID,JI,JI
+geoname_id,1638081,6885353,Lemahabang,Lemahabang,Indonesia,Indonesia,ID,ID,JT,JT
+geoname_id,3176247,8963878,Gazzo,Gazzo,Italy,Italy,IT,IT,"25, MN","25, MN"
+geoname_id,11018171,11016609,Wakamiya,Wakamiya,Japan,Japan,JP,JP,11,11
+geoname_id,2743788,6544875,Zuideinde,Zuideinde,Netherlands,Netherlands,NL,NL,NH,NH
+geoname_id,4562487,4562503,,,Puerto Rico,Puerto Rico,PR,PR,,
+geoname_id,994859,994860,Inanda,Inanda,South Africa,South Africa,ZA,ZA,KZN,KZN
+geoname_id,2513296,6697035,Navas de San Juan,Navas de San Juan,Spain,Spain,ES,ES,"AN, J","AN, J"
+geoname_id,3104601,3104600,Vimianzo,Vimianzo,Spain,Spain,ES,ES,"GA, C","GA, C"
+geoname_id,2516932,6544442,Guadiaro,Guadiaro,Spain,Spain,ES,ES,"AN, CA","AN, CA"
+geoname_id,2518145,2518143,El Roque,El Roque,Spain,Spain,ES,ES,"CN, TF","CN, TF"
+geoname_id,810331,701660,Marivka,Marivka,Ukraine,Ukraine,UA,UA,9,9
+geoname_id,12047975,2650467,East Dulwich,East Dulwich,United Kingdom,United Kingdom,GB,GB,"ENG, SWK","ENG, SWK"

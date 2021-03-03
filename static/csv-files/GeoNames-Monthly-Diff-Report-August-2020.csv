@@ -1,0 +1,138 @@
+diff_in,old_geoname_id,new_geoname_id,old_city_name,new_city_name,old_country_name,new_country_name,old_country_code,new_country_code,old_subdivision_codes,new_subdivision_codes
+city_name,290299,290299,Oil City,`Awali,Bahrain,Bahrain,BH,BH,14,14
+city_name,6118001,6118001,Red Bank,Metapenagiag,Canada,Canada,CA,CA,NB,NB
+city_name,2037357,2037357,Fusheng,Fushengcun,China,China,CN,CN,JL,JL
+city_name,2003446,2003446,Wenzhou,Wenyicun,China,China,CN,CN,FJ,FJ
+city_name,9906035,9906035,Baiyu,Baiyucun,China,China,CN,CN,GX,GX
+city_name,2004186,2004186,Xiaha,Xiahecun,China,China,CN,CN,FJ,FJ
+city_name,1980382,1980382,Baokeng,Baokengcun,China,China,CN,CN,FJ,FJ
+city_name,1817701,1817701,Baihe,Baihecun,China,China,CN,CN,GX,GX
+city_name,9904973,9904973,Jianglong,Jianglongcun,China,China,CN,CN,GX,GX
+city_name,8574026,8574026,Xinzhou,Xinzhoucun,China,China,CN,CN,FJ,FJ
+city_name,3062487,3062487,Wrasch,Vraz,Czechia,Czechia,CZ,CZ,"20, 201","20, 201"
+city_name,3075983,3075983,Hamr,Hamr na Jezere,Czechia,Czechia,CZ,CZ,"51, 511","51, 511"
+city_name,3063551,3063551,Truss,Usti,Czechia,Czechia,CZ,CZ,"32, 327","32, 327"
+city_name,3070846,3070846,Mierschin,Merin,Czechia,Czechia,CZ,CZ,"20, 201","20, 201"
+city_name,3079569,3079569,Seibersdorf,Bela,Czechia,Czechia,CZ,CZ,"71, 712","71, 712"
+city_name,350422,350422,Kousa,Qus,Egypt,Egypt,EG,EG,KN,KN
+city_name,347236,347236,Toukh,Tukh,Egypt,Egypt,EG,EG,KB,KB
+city_name,589588,589588,Pyarnamyae,Parnamae,Estonia,Estonia,EE,EE,37,37
+city_name,591543,591543,Kasepya,Kasepaa,Estonia,Estonia,EE,EE,78,78
+city_name,2973280,2973280,Taussac-la-Billiere,Taussac,France,France,FR,FR,"OCC, 34","OCC, 34"
+city_name,3005202,3005202,Le Bono,Bono,France,France,FR,FR,"BRE, 56","BRE, 56"
+city_name,2978199,2978199,Saint-Mathieu-de-Treviers,Saint-Mathieu,France,France,FR,FR,"OCC, 34","OCC, 34"
+city_name,2969666,2969666,Versols-et-Lapeyre,Versols,France,France,FR,FR,"OCC, 12","OCC, 12"
+city_name,3030058,3030058,Brignogan-Plage,Brignogan-Plages,France,France,FR,FR,"BRE, 29","BRE, 29"
+city_name,2985968,2985968,Port-la-Nouvelle,Port-La Nouvelle,France,France,FR,FR,"OCC, 11","OCC, 11"
+city_name,3031339,3031339,Boucoiran-et-Nozieres,Boucoiran,France,France,FR,FR,"OCC, 30","OCC, 30"
+city_name,3037627,3037627,Anglars-Saint-Felix,Anglars,France,France,FR,FR,"OCC, 12","OCC, 12"
+city_name,2971783,2971783,Trespoux-Rassiels,Trespoux,France,France,FR,FR,"OCC, 46","OCC, 46"
+city_name,3031941,3031941,Boisset-et-Gaujac,Boisset,France,France,FR,FR,"OCC, 30","OCC, 30"
+city_name,2984704,2984704,Quimerch,Quimerc'h,France,France,FR,FR,"BRE, 29","BRE, 29"
+city_name,2413437,2413437,Georgetown,Janjanbureh,Gambia,Gambia,GM,GM,M,M
+city_name,2898081,2898081,Huede,Hude,Germany,Germany,DE,DE,NI,NI
+city_name,2803620,2803620,Zweibrücken,Two Bridges,Germany,Germany,DE,DE,RP,RP
+city_name,2882366,2882366,Kueps Oberfranken,Kups,Germany,Germany,DE,DE,BY,BY
+city_name,1278994,1278994,Allahabad,Prayagraj,India,India,IN,IN,UP,UP
+city_name,1254360,1254360,Tirumala - Tirupati,Tirupati,India,India,IN,IN,AP,AP
+city_name,1628757,1628757,Sangkulirang,Benua Baru,Indonesia,Indonesia,ID,ID,KI,KI
+city_name,1864055,1864055,Susaki,Toyo,Japan,Japan,JP,JP,13,13
+city_name,1859196,1859196,Kokufu,Ko,Japan,Japan,JP,JP,36,36
+city_name,1524938,1524938,Buzulukskoye,Buzuluk,Kazakhstan,Kazakhstan,KZ,KZ,AKM,AKM
+city_name,790508,790508,Fusha,Fushtice e Eperme,Kosovo,Kosovo,XK,XK,,
+city_name,454855,454855,Myza Tinuzhi,Tinuzi,Latvia,Latvia,LV,LV,35,35
+city_name,934347,934347,Le Reduit,Reduit,Mauritius,Mauritius,MU,MU,MO,MO
+city_name,1283562,1283562,Butaul,Butwal,Nepal,Nepal,NP,NP,P5,P5
+city_name,1283329,1283329,Titahari,Itahari,Nepal,Nepal,NP,NP,P1,P1
+city_name,286110,286110,Taywah,Tiwi,Oman,Oman,OM,OM,SJ,SJ
+city_name,11673539,11673539,Barrio Maria Auxiliadora,Maria Auxiliadora,Paraguay,Paraguay,PY,PY,11,11
+city_name,3437853,3437853,La Paloma,La Paloma del Espiritu Santo,Paraguay,Paraguay,PY,PY,14,14
+city_name,3438825,3438825,Coronel Jose Felix Bogado,Coronel Bogado,Paraguay,Paraguay,PY,PY,7,7
+city_name,3436959,3436959,Santa Rosa Misiones,Santa Rosa,Paraguay,Paraguay,PY,PY,8,8
+city_name,3439062,3439062,Colonia Catuete,Katuete,Paraguay,Paraguay,PY,PY,14,14
+city_name,3437696,3437696,Nanawua,Nanawa,Paraguay,Paraguay,PY,PY,15,15
+city_name,3437905,3437905,Juan Eulogio Estigarribia,Doctor Juan Eulogio Estigarribia,Paraguay,Paraguay,PY,PY,5,5
+city_name,3439378,3439378,Juan de Ayolas,Ayolas,Paraguay,Paraguay,PY,PY,8,8
+city_name,3437815,3437815,Cedrales,Los Cedrales,Paraguay,Paraguay,PY,PY,10,10
+city_name,11675317,11675317,Barrio San Roque,San Roque,Paraguay,Paraguay,PY,PY,10,10
+city_name,3436660,3436660,Yatairy,Yatytay,Paraguay,Paraguay,PY,PY,7,7
+city_name,598649,598649,Yure,Jure,Republic of Lithuania,Republic of Lithuania,LT,LT,"MR, 17","MR, 17"
+city_name,617629,617629,Panasheshty,Panasesti,Republic of Moldova,Republic of Moldova,MD,MD,ST,ST
+city_name,617196,617196,Tsyntsareny,Tintareni,Republic of Moldova,Republic of Moldova,MD,MD,AN,AN
+city_name,617421,617421,Shirovtsy,Sirauti,Republic of Moldova,Republic of Moldova,MD,MD,BR,BR
+city_name,618610,618610,Razeleu,Balasesti,Republic of Moldova,Republic of Moldova,MD,MD,SI,SI
+city_name,618177,618177,Ishnovets,Isnovat,Republic of Moldova,Republic of Moldova,MD,MD,CR,CR
+city_name,618178,618178,Iskaleu,Iscalau,Republic of Moldova,Republic of Moldova,MD,MD,FA,FA
+city_name,618603,618603,Baltsats,Baltati,Republic of Moldova,Republic of Moldova,MD,MD,IA,IA
+city_name,3197109,3197109,Veprovac,Kruscic,Serbia,Serbia,RS,RS,"VO, 05","VO, 05"
+city_name,790035,790035,Tiszahegyes,Idos,Serbia,Serbia,RS,RS,"VO, 03","VO, 03"
+city_name,787607,787607,Novi Belgrade,New Belgrade,Serbia,Serbia,RS,RS,0,0
+city_name,723430,723430,Szentes,Svatuse,Slovakia,Slovakia,SK,SK,KI,KI
+city_name,2679747,2679747,Kyrkobyn,Save,Sweden,Sweden,SE,SE,O,O
+city_name,307966,307966,Kibris,Kibriskoy,Turkey,Turkey,TR,TR,6,6
+city_name,307948,307948,Kasaba,Kigi,Turkey,Turkey,TR,TR,12,12
+city_name,738909,738909,Tekke,Tekkekoyu,Turkey,Turkey,TR,TR,55,55
+city_name,687487,687487,Zayachytsi,Zaiachytsi,Ukraine,Ukraine,UA,UA,7,7
+city_name,705076,705076,Konyukhy,Koniukhy,Ukraine,Ukraine,UA,UA,7,7
+city_name,707969,707969,Hruzevytsa,Hruzevytsia,Ukraine,Ukraine,UA,UA,68,68
+city_name,689260,689260,Volitsa,Volytsia,Ukraine,Ukraine,UA,UA,68,68
+city_name,711486,711486,Brailovka,Brailivka,Ukraine,Ukraine,UA,UA,68,68
+city_name,699035,699035,Novovolyns'k,Novovolynsk,Ukraine,Ukraine,UA,UA,7,7
+city_name,707888,707888,Gumentsy,Humentsi,Ukraine,Ukraine,UA,UA,68,68
+city_name,2649997,2649997,Enfield Town,Enfield,United Kingdom,United Kingdom,GB,GB,"ENG, ENF","ENG, ENF"
+city_name,1582203,1582203,Tram de Dak Mil,Dak Mil,Vietnam,Vietnam,VN,VN,72,72
+city_name,1585348,1585348,Dho Don,Cho Don,Vietnam,Vietnam,VN,VN,53,53
+city_name,1585660,1585660,Cho Dok,Chau Doc,Vietnam,Vietnam,VN,VN,44,44
+city_name,1570230,1570230,Ba Tu,Phuoc Dien,Vietnam,Vietnam,VN,VN,29,29
+city_name,1572588,1572588,Phu Quy,Nghia Dan,Vietnam,Vietnam,VN,VN,22,22
+city_name,1587923,1587923,Bia Hoa,Bien Hoa,Vietnam,Vietnam,VN,VN,39,39
+city_name,1580914,1580914,Doug An,Hiep Duc,Vietnam,Vietnam,VN,VN,27,27
+city_name,1583454,1583454,Tan Hop,Dien Phuoc,Vietnam,Vietnam,VN,VN,27,27
+city_name,1583478,1583478,Quang Nam,Dien Ban,Vietnam,Vietnam,VN,VN,27,27
+city_name,1593027,1593027,Long Xuyen,Ap Dong,Vietnam,Vietnam,VN,VN,43,43
+city_name,1582606,1582606,Vinh Bao,Dong Ta,Vietnam,Vietnam,VN,VN,HP,HP
+city_name,80384,80384,Dhalie,Ad Dali`,Yemen,Yemen,YE,YE,DA,DA
+geoname_id,2789698,2789697,Ophoven,Ophoven,Belgium,Belgium,BE,BE,"VLG, VLI","VLG, VLI"
+geoname_id,11959754,3449821,Santa Rosa,Santa Rosa,Brazil,Brazil,BR,BR,SC,SC
+geoname_id,3469772,3469735,Boa Vista,Boa Vista,Brazil,Brazil,BR,BR,SP,SP
+geoname_id,3388809,3388812,Sao Francisco,Sao Francisco,Brazil,Brazil,BR,BR,PB,PB
+geoname_id,3388304,3388301,Sao Miguel,Sao Miguel,Brazil,Brazil,BR,BR,RN,RN
+geoname_id,11960326,3451144,Rio Fortuna,Rio Fortuna,Brazil,Brazil,BR,BR,SC,SC
+geoname_id,6317419,3396601,Lago da Pedra,Lago da Pedra,Brazil,Brazil,BR,BR,MA,MA
+geoname_id,6318838,8602146,Uruara,Uruara,Brazil,Brazil,BR,BR,PA,PA
+geoname_id,3469933,3469942,Boa Esperanca,Boa Esperanca,Brazil,Brazil,BR,BR,ES,ES
+geoname_id,3460686,3460687,Itapitanga,Itapitanga,Brazil,Brazil,BR,BR,BA,BA
+geoname_id,3460723,3475644,Itapeva,Itapeva,Brazil,Brazil,BR,BR,SP,SP
+geoname_id,3445946,3445947,Tunas,Tunas,Brazil,Brazil,BR,BR,RS,RS
+geoname_id,3664443,3664441,Cujubim,Cujubim,Brazil,Brazil,BR,BR,RO,RO
+geoname_id,7332983,11635328,Anqiao,Anqiao,China,China,CN,CN,JS,JS
+geoname_id,1894880,11182732,Huangshi,Huangshi,China,China,CN,CN,ZJ,ZJ
+geoname_id,1817419,10424332,Baishan,Baishan,China,China,CN,CN,HA,HA
+geoname_id,8368122,1918955,Xiangshan,Xiangshan,China,China,CN,CN,ZJ,ZJ
+geoname_id,1814526,9936335,Dacheng,Dacheng,China,China,CN,CN,GX,GX
+geoname_id,1789428,7644816,Xihu,Xihu,China,China,CN,CN,JX,JX
+geoname_id,1817416,8514639,Baisha,Baisha,China,China,CN,CN,HB,HB
+geoname_id,11885795,3667816,Sopetran,Sopetran,Colombia,Colombia,CO,CO,ANT,ANT
+geoname_id,3670162,3791503,San Antonio,San Antonio,Colombia,Colombia,CO,CO,TOL,TOL
+geoname_id,592170,11776881,,,Estonia,Estonia,EE,EE,37,37
+geoname_id,6614173,3014412,Guemene-sur-Scorff,Guemene-sur-Scorff,France,France,FR,FR,"BRE, 56","BRE, 56"
+geoname_id,3017937,3017938,Fontenailles,Fontenailles,France,France,FR,FR,"BFC, 89","BFC, 89"
+geoname_id,10676520,1253863,Umaria,Umaria,India,India,IN,IN,MP,MP
+geoname_id,1265231,10704742,Lakhni,Lakhni,India,India,IN,IN,MH,MH
+geoname_id,1258869,10821425,Rajgarh,Rajgarh,India,India,IN,IN,RJ,RJ
+geoname_id,11037422,11027068,Magome,Magome,Japan,Japan,JP,JP,11,11
+geoname_id,11029865,11011081,Nakacho,Nakacho,Japan,Japan,JP,JP,11,11
+geoname_id,11082110,11087179,Kawashimacho,Kawashimacho,Japan,Japan,JP,JP,14,14
+geoname_id,7995648,7995649,Mirchaiya,Mirchaiya,Nepal,Nepal,NP,NP,P2,P2
+geoname_id,2192340,2192341,Claremont,Claremont,New Zealand,New Zealand,NZ,NZ,CAN,CAN
+geoname_id,565290,821356,Donskoy,Donskoy,Russia,Russia,RU,RU,TUL,TUL
+geoname_id,6363914,1951696,Baekseokdong,Baekseokdong,South Korea,South Korea,KR,KR,41,41
+geoname_id,2513296,6697035,Navas de San Juan,Navas de San Juan,Spain,Spain,ES,ES,"AN, J","AN, J"
+geoname_id,3104601,3104600,Vimianzo,Vimianzo,Spain,Spain,ES,ES,"GA, C","GA, C"
+geoname_id,2511062,7534754,Sant Jordi,Sant Jordi,Spain,Spain,ES,ES,"IB, PM","IB, PM"
+geoname_id,2516932,6544442,Guadiaro,Guadiaro,Spain,Spain,ES,ES,"AN, CA","AN, CA"
+geoname_id,12122997,2521892,Almendricos,Almendricos,Spain,Spain,ES,ES,"MC, MU","MC, MU"
+geoname_id,2726517,2726519,Alno,Alno,Sweden,Sweden,SE,SE,Y,Y
+geoname_id,305969,320257,Cigli,Cigli,Turkey,Turkey,TR,TR,35,35
+geoname_id,4679850,4679851,Cedar Lane,Cedar Lane,United States,United States,US,US,TX,TX
+subdivision_codes,373303,373303,Juba,Juba,South Sudan,South Sudan,SS,SS,,EC

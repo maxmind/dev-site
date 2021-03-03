@@ -1,6 +1,6 @@
 ---
 draft: false
-title: minFraud Release Notes - 2019 Archive
+title: GeoIP2 Release Notes - 2019 Archive
 ---
 
 <ReleaseNote date="2019-12-23" title="The USER_ID_REQUIRED error code is now ACCOUNT_ID_REQUIRED">
@@ -11,28 +11,26 @@ the error code `ACCOUNT_ID_REQUIRED` instead of `USER_ID_REQUIRED` when the
 account ID parameter is missing.
 </ReleaseNote>
 
+<ReleaseNote date="2019-12-19" title="Resolving to parent city for Australian suburbs">
+Effective December 23, 2019, we will begin resolving more Australian IP
+addresses to large cities instead of suburbs (e.g. to Sydney instead of
+Rushcutters Bay).
+</ReleaseNote>
+
+<ReleaseNote date="2019-12-18" title="Changes to accessing and using GeoLite2 databases">
+**Free GeoLite2 Database Users:** Due to upcoming data privacy regulations, we
+are making significant changes to how you access free GeoLite2 databases
+starting December 30, 2019. Learn more on our
+[blog](https://blog.maxmind.com/2019/12/18/significant-changes-to-accessing-and-using-geolite2-databases/).
+</ReleaseNote>
+
 <ReleaseNote date="2019-12-17" title="Query usage report license key filter">
 You can now filter by license key when viewing the [query usage
 report](https://www.maxmind.com/en/accounts/current/query-usage-report) \[login
 required\] in your account portal.
 </ReleaseNote>
 
-<ReleaseNote date="2019-12-11" title="Toggle minFraud Transactions Access">
-Account administrators can now enable or disable access to the [minFraud
-Transactions
-page](https://www.maxmind.com/en/accounts/current/minfraud-interactive/transactions)
-\[login required\], which is accessible from the account portal. You can manage
-account access to this feature
-[here](https://www.maxmind.com/en/accounts/current/manage-services) \[login
-required\].
-
-The minFraud Transactions page is used for review, dispositioning, tagging, and
-exporting transactions. See our
-[guide](https://support.maxmind.com/minfraud-interactive-manual-review-guide/)
-for more info.
-</ReleaseNote>
-
-<ReleaseNote date="2019-12-11" title="Changes to Japan Postal Codes">
+<ReleaseNote date="2019-12-10" title="Changes to Japan Postal Codes">
 Effective December 16, 2019, we will return `1` as the last digit for all 7
 digit postal codes in Japan. The last digit refers to [street-level
 resolution](https://en.wikipedia.org/wiki/Postal_codes_in_Japan) and should not
@@ -64,11 +62,11 @@ services](https://www.maxmind.com/en/solutions/minfraud-services):
 The value ranges from 0 to 99.99 with higher values meaning a greater static
 association. For example, many IPs with a `user_type` of `cellular` have a
 score under one. Static Cable/DSL IPs typically have a score above thirty.
-
-  This indicator can be useful for deciding whether an IP address represents
-  the same user over time.
+This indicator can be useful for deciding whether an IP address represents
+the same user over time.
 
 The `static_ip_score` output is present in the `traits` object.
+
 </ReleaseNote>
 
 <ReleaseNote date="2019-10-14" title="Final reminder of security-related retirements">
@@ -81,6 +79,7 @@ so.
 
 [Contact us](https://support.maxmind.com/contact-us/) for support or if you
 have questions.
+
 </ReleaseNote>
 
 <ReleaseNote date="2019-10-03" title="Improved cellular IP detection">
@@ -107,14 +106,7 @@ non-administrators will only see their own activity. You can find the account
 activity log in your account portal under 'Account Information' or
 [here](https://www.maxmind.com/en/accounts/current/activity-log) \[login
 required\].
-</ReleaseNote>
 
-<ReleaseNote date="2019-09-30" title="High risk IP country deprecation">
-We've deprecated the `/ip_address/country/is_high_risk` output in [minFraud
-Insights and minFraud Factors](/minfraud) (and highRiskCountry output in
-[legacy minFraud services](/minfraud/minfraud-legacy)) because it provides
-limited value. You can find the IP country in the `/ip_address/country/names`
-output.
 </ReleaseNote>
 
 <ReleaseNote date="2019-09-19" title="New network and user_count outputs in web services">
@@ -123,7 +115,8 @@ service](https://www.maxmind.com/en/geoip2-precision-insights), and [minFraud
 Insights and Factors web
 services](https://www.maxmind.com/en/solutions/minfraud-services):
 
-- `network` – The network in [CIDR notation](https://en.wikipedia.org/wiki/Classless_Inter-Domain_Routing#CIDR_notation)
+- `network` – The network in [CIDR
+notation](https://en.wikipedia.org/wiki/Classless_Inter-Domain_Routing#CIDR_notation)
 associated with the record. This is the largest network where all of the
 fields besides `ip_address` have the same value.
 - `user_count` – The estimated number of users sharing the IP/network during
@@ -131,6 +124,7 @@ the past 24 hours. For IPv4, the count is for the individual IP. For IPv6,
 the count is for the /64 network.
 
 Both of these outputs are present in the `traits` object.
+
 </ReleaseNote>
 
 <ReleaseNote date="2019-09-16" title="Planned warning interruption (September 2019)">
@@ -152,15 +146,17 @@ you have any questions, please do not hesitate to [contact
 us](https://support.maxmind.com/contact-us/). Additional info is available on
 our
 [blog](https://blog.maxmind.com/2019/04/12/important-updates-about-tls-v1-0-v1-1-unencrypted-http-requests-and-the-legacy-minfraud-soap-api/).
+
 </ReleaseNote>
 
-<ReleaseNote date="2019-08-29" title="IP and email tenure deprecation">
-Effective August 29th, 2019, we have deprecated the `/subscores/ip_tenure` and
-`subscores/email_tenure` subscore outputs in the minFraud Factors service
-because they provided limited value. The subscores will default to 1 and will
-be removed in a future release. The IP tenure is reflected in the overall risk
-score. The user tenure on email is reflected in the `/subscores/email_address`
-output.
+<ReleaseNote date="2019-08-26" title="Anonymous IP data in GeoIP online lookup form">
+GeoIP2 Precision web service customers can now access [anonymous IP
+data](https://www.maxmind.com/en/solutions/geoip2-enterprise-product-suite/anonymous-ip-database)
+through the [GeoIP2 online lookup
+form](https://www.maxmind.com/en/accounts/current/geoip/lookup) \[login
+required\] in the account portal. Select the [GeoIP2 Precision Insights web
+service](https://www.maxmind.com/en/geoip2-precision-insights) on the form when
+querying IP(s).
 </ReleaseNote>
 
 <ReleaseNote date="2019-08-21" title="Improved business IP detection">
@@ -191,21 +187,14 @@ you have any questions, please do not hesitate to [contact
 us](https://support.maxmind.com/contact-us/). Additional info is available on
 our
 [blog](https://blog.maxmind.com/2019/04/12/important-updates-about-tls-v1-0-v1-1-unencrypted-http-requests-and-the-legacy-minfraud-soap-api/).
+
 </ReleaseNote>
 
-<ReleaseNote date="2019-08-05" title="Retirement of legacy IIN (BIN) API service">
-We are discontinuing the legacy IIN (BIN) API on **January 31, 2020** in order
-to focus development and maintenance efforts on our core services. This means
-that the service will no longer function if you are querying the URL below:  
-[https://minfraud.maxmind.com/app/bin_http](https://minfraud.maxmind.com/app/bin_http)
-
-Please note that we continue to support the [IIN (BIN) look-up form on our
-website](https://www.maxmind.com/en/accounts/current/minfraud/iin/lookup)
-\[login required\], so that remains an option for your use. If you require an
-API because of volume considerations, we recommend either using our [minFraud
-Insights API](https://www.maxmind.com/en/accounts/current/minfraud/iin/lookup)
-(IP address is a required input field) or integrating an alternative
-commercially available solution.
+<ReleaseNote date="2019-08-13" title="Weekly updates for GeoIP2 ISP and GeoIP2 Connection Type">
+We now update the GeoIP2 ISP and GeoIP2 Connection Type databases weekly
+(previously they were updated twice a month and once a month respectively).
+Update your download frequency if you use these databases to ensure you have
+the most up-to-date files.
 </ReleaseNote>
 
 <ReleaseNote date="2019-07-24" title="Planned warning interruption">
@@ -228,24 +217,30 @@ you have any questions, please do not hesitate to [contact
 us](https://support.maxmind.com/contact-us/). Additional info is available on
 our
 [blog](https://blog.maxmind.com/2019/04/12/important-updates-about-tls-v1-0-v1-1-unencrypted-http-requests-and-the-legacy-minfraud-soap-api/).
+
 </ReleaseNote>
 
-<ReleaseNote date="2019-07-22" title="Disable IP Risk">
-You can now manage a list of IP addresses and networks that you want to exempt
-from IP risk scoring. This is helpful when the IP address is known to be
-unrelated to the end-customer, such as when you have transactions coming from a
-call center or agent. Adding an IP address or network to the exclusion list
-will ensure IP risk is neither calculated nor considered when determining the
-riskScore for transactions associated with excluded IPs. [Learn
-more](https://support.maxmind.com/minfraud-faq/minfraud-services/how-can-i-exclude-an-ip-address-network-from-being-used-for-risk-scoring/).
+<ReleaseNote date="2019-07-15" title="Postal code data for Singapore and South Korea">
+We are adding postal code data for Singapore and South Korea. Effective July
+22nd 2019, we will return the first 2 digits of Singapore postal codes and
+5-digit South Korea postal codes where we have reasonable confidence in postal
+resolution.
 </ReleaseNote>
 
-<ReleaseNote date="2019-06-14" title="Initial release of minFraud-node">
-We have added Node.js as a MaxMind Supported minFraud API
-([NPM](https://npmjs.com/package/@maxmind/minfraud-api-node),
-[GitHub](https://maxmind.github.io/minfraud-api-node/)). It provides an API for
-the [minFraud Score, Insights, and Factors
-services](https://www.maxmind.com/en/solutions/minfraud-services).
+<ReleaseNote date="2019-07-02" title="Security Tokens">
+We've updated the direct download URLs for GeoIP databases in your account
+portal to use security tokens instead of license keys. If you are a new user
+and wish to use your own script or program to automate GeoIP downloads instead
+of using our [GeoIP Update
+Program](https://github.com/maxmind/geoipupdate/releases), there are additional
+[steps to take](/geoip/updating-databases) after copying the direct download
+URL from your account portal.
+
+If you are an existing user that has already set up your own script or program
+to automate GeoIP downloads, this change should not affect you, unless you add
+new databases to your script or program. Instructions on additional steps are
+[here](/geoip/updating-databases).
+
 </ReleaseNote>
 
 <ReleaseNote date="2019-04-18" title="Security-related retirements 2019">
@@ -265,3 +260,68 @@ our [support center user
 guide](https://support.maxmind.com/two-factor-authentication-2fa-user-guide/)
 for information on how to set up 2FA.
 </ReleaseNote>
+
+<ReleaseNote date="2019-01-24" title="Crimea accuracy update 2019">
+We completed our most recent review and update of Geolocation for Crimea. Our
+accuracy has increased as follows:
+Approximately 93% of website visitors who are from Crimea are currently located
+by GeoIP as being in Crimea. Approximately 99% of the visitors who are located
+in Crimea by GeoIP are actually in Crimea.
+
+We currently locate Crimea in Ukraine, as we use GeoNames data and they locate
+Crimea in Ukraine. If GeoNames locates Crimea in Russia in the future, we will
+follow their change and post an announcement here as well as on
+[https://twitter.com/maxmind](https://twitter.com/maxmind).
+
+In legacy GeoIP, we return a FIPS region code of 11 or 20. In GeoIP2, we return
+a iso code of 40 or 43 in the subdivision object.
+
+Due to the nature of geolocation technology and other factors beyond our
+control, we cannot guarantee any specific future accuracy level. Further,
+accuracy figures are subject to change as IP networks are reallocated.
+</ReleaseNote>
+
+<ReleaseNote date="2019-01-23" title="Initial Release of Ruby API">
+We have added Ruby as a MaxMind Supported GeoIP2 API
+([RubyGems](https://rubygems.org/gems/maxmind-db),
+[GitHub](https://github.com/maxmind/MaxMind-DB-Reader-ruby)). It provides a
+Ruby reader for the MaxMind DB Database Format (used by the GeoIP2 databases
+and our free GeoLite2 databases).
+</ReleaseNote>
+
+<ReleaseNote date="2019-01-14" title="New GeoIP Update released">
+We've released a new major version of GeoIP Update. This release adds support
+for Windows and has a new code base. You can find it on
+[GitHub](https://github.com/maxmind/geoipupdate). We’ve written an [upgrade
+guide](/geoip/geoipupdate/upgrading-to-geoip-update-4-x/)
+if you’re running an older version.
+</ReleaseNote>
+
+<ReleaseNote date="2019-01-14" title="Limiting availability of archived GeoIP databases">
+In order to address new legal requirements, including the European Union's
+General Data Protection Regulation (GDPR), we will be limiting availability of
+archived GeoIP databases to 30 days. This change will be effective March 18,
+2019 and applies to all GeoIP2, GeoIP, and GeoLite2 databases. You may need to
+change your processes or applications to download more recent databases once
+this change occurs.
+</ReleaseNote>
+
+<ReleaseNote date="2019-01-04" title="Server IP Changes January 2019">
+On Monday, January 7, 2019 at approximately 15:00 UTC (10:00am EST), we will be
+switching to static server IP addresses for traffic to our website and to
+downloads.maxmind.com (used for GeoIP database downloads). The IP for the
+hostname used by our web services or geoipupdate tool won't change immediately,
+but if you whitelist IPs for any of our services we encourage you to add the
+new IP addresses to your whitelist. The static IP addresses will be a subset of
+what we list on our [MaxMind server IP addresses
+page](/maxmind-server-ip-addresses/). We will update the list of IP addresses
+on that page following the change. Please sign up for the email list on that
+page if you want a notification when our server IP addresses change.
+</ReleaseNote>
+
+<ReleaseNote date="2019-01-02" title="GeoIP2-node includes support for web service lookups">
+We have added web service lookup support to our GeoIP2 Node.js API
+([NPM](https://www.npmjs.com/package/@maxmind/geoip2-node),
+[GitHub](https://github.com/maxmind/GeoIP2-node)).
+</ReleaseNote>
+

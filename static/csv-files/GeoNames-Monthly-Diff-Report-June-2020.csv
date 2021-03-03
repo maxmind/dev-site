@@ -1,0 +1,146 @@
+diff_in,old_geoname_id,new_geoname_id,old_city_name,new_city_name,old_country_name,new_country_name,old_country_code,new_country_code,old_subdivision_codes,new_subdivision_codes
+city_name,621732,621732,Smilavichy,Smilavicy,Belarus,Belarus,BY,BY,MI,MI
+city_name,2784971,2784971,Velaine-sur-Sambre,Velaine,Belgium,Belgium,BE,BE,"WAL, WNA","WAL, WNA"
+city_name,2796695,2796695,Halle (Kempen),Halle,Belgium,Belgium,BE,BE,"VLG, VAN","VLG, VAN"
+city_name,2787465,2787465,Saint-Denis-Bovesse,Saint-Denis,Belgium,Belgium,BE,BE,"WAL, WNA","WAL, WNA"
+city_name,2787878,2787878,Roeulx,Le Roeulx,Belgium,Belgium,BE,BE,"WAL, WHT","WAL, WHT"
+city_name,6092125,6092125,Oakwood,Oakwood Village,Canada,Canada,CA,CA,ON,ON
+city_name,9904571,9904571,Baxiang,Baxiangtun,China,China,CN,CN,GX,GX
+city_name,3007456,3007456,Lapalme,La Palme,France,France,FR,FR,"OCC, 11","OCC, 11"
+city_name,2969079,2969079,Vigoulet-Auzil,Vigoulet,France,France,FR,FR,"OCC, 31","OCC, 31"
+city_name,2921528,2921528,Geldern,Guelders,Germany,Germany,DE,DE,NW,NW
+city_name,386291,386291,Kefar Hananya,Kfar Hananya,Israel,Israel,IL,IL,Z,Z
+city_name,293009,293009,Be'er Toviyya,Be’er Toviyya,Israel,Israel,IL,IL,D,D
+city_name,293985,293985,`Olesh,Olesh,Israel,Israel,IL,IL,M,M
+city_name,295635,295635,`Arugot,Arugot,Israel,Israel,IL,IL,D,D
+city_name,293013,293013,Zur Natan,Tsur Natan,Israel,Israel,IL,IL,M,M
+city_name,295550,295550,Bat Shelomo,Bat Shlomo,Israel,Israel,IL,IL,HA,HA
+city_name,1850834,1850834,Takeocho-takeo,Takeo,Japan,Japan,JP,JP,41,41
+city_name,778420,778420,Nordvagen,Nordre Honningsvaag,Norway,Norway,NO,NO,54,54
+city_name,3931509,3931509,Puente de Piedra,Puente Piedra,Peru,Peru,PE,PE,LIM,LIM
+city_name,3827811,3827811,Puerto de Belen,Belen,Peru,Peru,PE,PE,LOR,LOR
+city_name,3693826,3693826,Hacienda Patapo,Patapo,Peru,Peru,PE,PE,LAM,LAM
+city_name,3698841,3698841,Caras,Caraz,Peru,Peru,PE,PE,ANC,ANC
+city_name,3692462,3692462,San Juan de Miraflores,San Juan,Peru,Peru,PE,PE,LOR,LOR
+city_name,3929611,3929611,San Jeronimo,San Jeronimo De Tunan,Peru,Peru,PE,PE,JUN,JUN
+city_name,665024,665024,Târgovişte,Targoviste,Romania,Romania,RO,RO,DB,DB
+city_name,3109653,3109653,Doneztebe,Doneztebe-Santesteban,Spain,Spain,ES,ES,"NC, NA","NC, NA"
+city_name,3118621,3118621,Lecaroz,Lekaroz,Spain,Spain,ES,ES,"NC, NA","NC, NA"
+city_name,700051,700051,Nikopol,Mykytyn Rog,Ukraine,Ukraine,UA,UA,12,12
+city_name,709930,709930,Dnipro,Dnipropetrovsk,Ukraine,Ukraine,UA,UA,12,12
+city_name,704147,704147,Kremenchuk,Kremenchug,Ukraine,Ukraine,UA,UA,53,53
+city_name,706369,706369,Khmelnytskyi,Khmelnytskyy,Ukraine,Ukraine,UA,UA,68,68
+city_name,709782,709782,Dolyns'ka,Dolynska,Ukraine,Ukraine,UA,UA,35,35
+city_name,712451,712451,Berdyans'k,Osipenko,Ukraine,Ukraine,UA,UA,23,23
+city_name,701404,701404,Melitopol,Kyzyl-Yar,Ukraine,Ukraine,UA,UA,23,23
+city_name,687700,687700,Zaporizhia,Alexandrovsk,Ukraine,Ukraine,UA,UA,23,23
+city_name,690197,690197,Velykyi Bereznyi,Velykyy Bereznyy,Ukraine,Ukraine,UA,UA,21,21
+city_name,703555,703555,Kushuhum,Velyka Katerynivka,Ukraine,Ukraine,UA,UA,23,23
+city_name,693796,693796,Synel'nykove,Synelnykove,Ukraine,Ukraine,UA,UA,12,12
+city_name,701855,701855,Marhanets',Komintern,Ukraine,Ukraine,UA,UA,12,12
+city_name,697183,697183,Pyryatyn,Pyriatyn,Ukraine,Ukraine,UA,UA,53,53
+city_name,708210,708210,Gradizhsk,Hradyzk,Ukraine,Ukraine,UA,UA,53,53
+city_name,690688,690688,Uman',Uman,Ukraine,Ukraine,UA,UA,71,71
+city_name,709429,709429,Dunaivtsi,Dunayivtsi,Ukraine,Ukraine,UA,UA,68,68
+city_name,692087,692087,Svitlovods'k,Svitlovodsk,Ukraine,Ukraine,UA,UA,35,35
+city_name,709932,709932,Kamianske,Dniprodzerzhynsk,Ukraine,Ukraine,UA,UA,12,12
+city_name,709943,709943,Dneprovskoye,Dniprovske,Ukraine,Ukraine,UA,UA,12,12
+city_name,698534,698534,Ol'shana,Vilshana,Ukraine,Ukraine,UA,UA,71,71
+city_name,704705,704705,Kotel'va,Kotelva,Ukraine,Ukraine,UA,UA,53,53
+city_name,697616,697616,Pershotravensk,Shakhtarske,Ukraine,Ukraine,UA,UA,12,12
+city_name,689916,689916,Verkhn'odniprovs'k,Verkhnodniprovsk,Ukraine,Ukraine,UA,UA,12,12
+city_name,706950,706950,Kamianets-Podilskyi,Kamyianets-Podilskyy,Ukraine,Ukraine,UA,UA,68,68
+city_name,700918,700918,Mohyliv-Podilskyi,Mohyliv-Podilskyy,Ukraine,Ukraine,UA,UA,5,5
+city_name,700848,700848,Molochans'k,Halbstadt,Ukraine,Ukraine,UA,UA,23,23
+city_name,708901,708901,Haisyn,Haysyn,Ukraine,Ukraine,UA,UA,5,5
+city_name,705392,705392,Kolomyia,Kolomyya,Ukraine,Ukraine,UA,UA,26,26
+city_name,696292,696292,Prymors'k,Nogaisk,Ukraine,Ukraine,UA,UA,23,23
+city_name,686803,686803,Zvenyhorodka,Zvenihorodka,Ukraine,Ukraine,UA,UA,71,71
+city_name,706736,706736,Karnaukhovka,Karnaukhivka,Ukraine,Ukraine,UA,UA,12,12
+city_name,707052,707052,Kamianka,Kamyanka,Ukraine,Ukraine,UA,UA,71,71
+city_name,691628,691628,Ternovka,Ternivka,Ukraine,Ukraine,UA,UA,12,12
+city_name,692818,692818,Starokostiantyniv,Starokostyantyniv,Ukraine,Ukraine,UA,UA,68,68
+city_name,695965,695965,P'yatykhatky,Pyatykhatky,Ukraine,Ukraine,UA,UA,12,12
+city_name,691963,691963,Taborovka,Taborivka,Ukraine,Ukraine,UA,UA,48,48
+city_name,698436,698436,Pokrov,Ordzhonikidze,Ukraine,Ukraine,UA,UA,12,12
+city_name,686919,686919,Znamianka,Znamyanka,Ukraine,Ukraine,UA,UA,35,35
+city_name,689200,689200,Vil'nohirs'k,Vilnohirsk,Ukraine,Ukraine,UA,UA,12,12
+city_name,691422,691422,Tomashpil',Tomashpil,Ukraine,Ukraine,UA,UA,5,5
+city_name,687196,687196,Zhovti Vody,Zhovta Rika,Ukraine,Ukraine,UA,UA,12,12
+city_name,709276,709276,Energodar,Enerhodar,Ukraine,Ukraine,UA,UA,23,23
+city_name,687292,687292,Zin'kiv,Zinkiv,Ukraine,Ukraine,UA,UA,53,53
+city_name,701383,701383,Mel'nytsya-Podil's'ka,Melnytsya-Podilska,Ukraine,Ukraine,UA,UA,61,61
+city_name,708636,708636,Gogolevo,Hoholeve,Ukraine,Ukraine,UA,UA,53,53
+city_name,712629,712629,Beliki,Bilyky,Ukraine,Ukraine,UA,UA,53,53
+city_name,691037,691037,Tsyurupinsk,Tsyurupynsk,Ukraine,Ukraine,UA,UA,65,65
+city_name,697006,697006,Pochaiv,Pochayiv,Ukraine,Ukraine,UA,UA,61,61
+city_name,704858,704858,Korsun'-Shevchenkivs'kyy,Korsun-Shevchenkivskyy,Ukraine,Ukraine,UA,UA,71,71
+city_name,710532,710532,Chervonozavods'ke,Zavodske,Ukraine,Ukraine,UA,UA,53,53
+city_name,692866,692866,Stara Syniava,Stara Synyava,Ukraine,Ukraine,UA,UA,68,68
+city_name,691097,691097,Tsibulev,Tsybuliv,Ukraine,Ukraine,UA,UA,71,71
+city_name,695315,695315,Rozhniativ,Rozhnyativ,Ukraine,Ukraine,UA,UA,26,26
+city_name,707689,707689,Illarionovo,Ilarionove,Ukraine,Ukraine,UA,UA,12,12
+city_name,707840,707840,Husiatyn,Husyatyn,Ukraine,Ukraine,UA,UA,61,61
+city_name,708878,708878,Genichesk,Henichesk,Ukraine,Ukraine,UA,UA,65,65
+city_name,702981,702981,Lysets',Lysets,Ukraine,Ukraine,UA,UA,26,26
+city_name,710041,710041,Dykan'ka,Dykanka,Ukraine,Ukraine,UA,UA,53,53
+city_name,689808,689808,Verkhovtsevo,Verkhivtseve,Ukraine,Ukraine,UA,UA,12,12
+city_name,693709,693709,Skadowsk,Skadovsk,Ukraine,Ukraine,UA,UA,65,65
+city_name,711989,711989,Bobrynets',Bobrynets,Ukraine,Ukraine,UA,UA,35,35
+city_name,703840,703840,Kryzhopil',Kryzhopil,Ukraine,Ukraine,UA,UA,5,5
+city_name,699100,699100,Novotroyits'ke,Novotroyitske,Ukraine,Ukraine,UA,UA,65,65
+city_name,708663,708663,Hnivan',Hnivan,Ukraine,Ukraine,UA,UA,5,5
+geoname_id,3455638,12108275,Santa Barbara,Santa Barbara,Brazil,Brazil,BR,BR,BA,BA
+geoname_id,3389141,3389134,Santo Antonio,Santo Antonio,Brazil,Brazil,BR,BR,RN,RN
+geoname_id,3462513,3462511,Gaviao,Gaviao,Brazil,Brazil,BR,BR,BA,BA
+geoname_id,3460723,3475644,Itapeva,Itapeva,Brazil,Brazil,BR,BR,SP,SP
+geoname_id,3448582,3448576,Sao Luis,Sao Luis,Brazil,Brazil,BR,BR,MG,MG
+geoname_id,3467371,3467373,Capao Bonito,Capao Bonito,Brazil,Brazil,BR,BR,SP,SP
+geoname_id,12024460,3448033,Sapucaia,Sapucaia,Brazil,Brazil,BR,BR,RJ,RJ
+geoname_id,3403660,3403659,Campestre,Campestre,Brazil,Brazil,BR,BR,AL,AL
+geoname_id,3465302,3465301,Costas,Costas,Brazil,Brazil,BR,BR,MG,MG
+geoname_id,3388257,3388256,Sao Paulo,Sao Paulo,Brazil,Brazil,BR,BR,MA,MA
+geoname_id,8602146,6318838,Uruara,Uruara,Brazil,Brazil,BR,BR,PA,PA
+geoname_id,6065867,6065865,Marathon,Marathon,Canada,Canada,CA,CA,ON,ON
+geoname_id,1799845,10315795,Nanping,Nanping,China,China,CN,CN,CQ,CQ
+geoname_id,1909875,7452577,Baita,Baita,China,China,CN,CN,FJ,FJ
+geoname_id,7033845,11634812,Taiping,Taiping,China,China,CN,CN,JS,JS
+geoname_id,8422075,8408043,Heping,Heping,China,China,CN,CN,CQ,CQ
+geoname_id,2033292,8444795,Yuanbaoshan,Yuanbaoshan,China,China,CN,CN,NM,NM
+geoname_id,2034695,7539229,Songjiang,Songjiang,China,China,CN,CN,JL,JL
+geoname_id,2047775,9631409,Hexi,Hexi,China,China,CN,CN,HE,HE
+geoname_id,8361345,8272788,Donggu,Donggu,China,China,CN,CN,JS,JS
+geoname_id,1925026,7650131,Luoshi,Luoshi,China,China,CN,CN,JX,JX
+geoname_id,8375398,11622881,Bailu,Bailu,China,China,CN,CN,JS,JS
+geoname_id,3690172,3685001,Algarrobo,Algarrobo,Colombia,Colombia,CO,CO,MAG,MAG
+geoname_id,643638,643636,Orismala,Orismala,Finland,Finland,FI,FI,12,12
+geoname_id,6614944,3018671,Ferrals-les-Corbieres,Ferrals-les-Corbieres,France,France,FR,FR,"OCC, 11","OCC, 11"
+geoname_id,6614287,3027952,Cenne-Monesties,Cenne-Monesties,France,France,FR,FR,"OCC, 11","OCC, 11"
+geoname_id,3027802,3027801,Cerzat,Cerzat,France,France,FR,FR,"ARA, 43","ARA, 43"
+geoname_id,2882257,11186019,Kuessaberg,Kuessaberg,Germany,Germany,DE,DE,BW,BW
+geoname_id,1265242,10824670,Lakhimpur,Lakhimpur,India,India,IN,IN,UP,UP
+geoname_id,10789578,10770272,Cherlopalem,Cherlopalem,India,India,IN,IN,AP,AP
+geoname_id,10676520,1253863,Umaria,Umaria,India,India,IN,IN,MP,MP
+geoname_id,1279041,10214572,Alegaon,Alegaon,India,India,IN,IN,MH,MH
+geoname_id,10500286,10550479,Chandauli,Chandauli,India,India,IN,IN,UP,UP
+geoname_id,1445527,10461299,Lingampalli,Lingampalli,India,India,IN,IN,TG,TG
+geoname_id,1256493,1256492,Shirala,Shirala,India,India,IN,IN,MH,MH
+geoname_id,6583575,6598651,Biru,Biru,Indonesia,Indonesia,ID,ID,JB,JB
+geoname_id,9036385,3173877,Marotta,Marotta,Italy,Italy,IT,IT,"57, PU","57, PU"
+geoname_id,8966330,2524158,Miglierina,Miglierina,Italy,Italy,IT,IT,"78, CZ","78, CZ"
+geoname_id,1768346,1768345,Kampung Kepayang,Kampung Kepayang,Malaysia,Malaysia,MY,MY,8,8
+geoname_id,11537040,3518291,San Miguel Amantla,San Miguel Amantla,Mexico,Mexico,MX,MX,CMX,CMX
+geoname_id,11562557,11562548,Emiliano Zapata,Emiliano Zapata,Mexico,Mexico,MX,MX,CMX,CMX
+geoname_id,4005143,8755520,Guaymas,Guaymas,Mexico,Mexico,MX,MX,SON,SON
+geoname_id,3154385,3154383,Haegeland,Haegeland,Norway,Norway,NO,NO,42,42
+geoname_id,1354961,7108763,Ali Pur,Ali Pur,Pakistan,Pakistan,PK,PK,PB,PB
+geoname_id,6544442,2516932,Guadiaro,Guadiaro,Spain,Spain,ES,ES,"AN, CA","AN, CA"
+geoname_id,2726517,2726519,Alno,Alno,Sweden,Sweden,SE,SE,Y,Y
+geoname_id,707840,11750332,Husiatyn,Husiatyn,Ukraine,Ukraine,UA,UA,61,61
+geoname_id,688455,709701,Yaremche,Yaremche,Ukraine,Ukraine,UA,UA,26,26
+subdivision_codes,1273727,1273727,Dadra,Dadra,India,India,IN,IN,DN,
+subdivision_codes,1272502,1272502,Diu,Diu,India,India,IN,IN,DD,
+subdivision_codes,1273618,1273618,Daman,Daman,India,India,IN,IN,DD,
+subdivision_codes,1158377,1158377,Ao Nang,Ao Nang,Thailand,Thailand,TH,TH,82,81
+subdivision_codes,2637473,2637473,Southbourne,Southbourne,United Kingdom,United Kingdom,GB,GB,"ENG, BMH",ENG
+subdivision_codes,2640101,2640101,Poole,Poole,United Kingdom,United Kingdom,GB,GB,"ENG, POL",ENG
