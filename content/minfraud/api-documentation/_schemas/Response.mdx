@@ -1,0 +1,126 @@
+<Schema
+  jsonPointer="/"
+  name="Response"
+  type="object"
+>
+  <Property
+    example="5bc5d6c2-b2c8-40af-87f4-6d61af86b6ae"
+    tags={{
+      'Format': 'UUID',
+    }}
+    name="id"
+    services="*"
+    type="string"
+  >
+    This is the minFraud ID, a [UUID](https://en.wikipedia.org/wiki/Universally_unique_identifier)
+    that identifies the minFraud response. Use this ID to
+    [search your minFraud logs](https://www.maxmind.com/en/minfraud-log) or when
+    making support requests to MaxMind.
+  </Property>
+
+  <Property
+    example="0.01"
+    tags={{
+      'Format': 'decimal',
+      'Min': 0.01,
+      'Max': 99,
+    }}
+    name="risk_score"
+    services="*"
+    type="number"
+  >
+    This field contains the risk score, from 0.01 to 99. A higher score
+    indicates a higher risk of fraud. For example, a score of 20 indicates a
+    20% chance that a transaction is fraudulent. We never return a risk score
+    of 0, since all transactions have the possibility of being fraudulent.
+    Likewise we never return a risk score of 100.
+  </Property>
+
+  <Property
+    example="25.00"
+    tags={{
+      'Format': 'decimal',
+      'Min': 0.00,
+    }}
+    name="funds_remaining"
+    services="*"
+    type="number"
+  >
+    The approximate US dollar value of the funds remaining on your MaxMind
+    account.
+  </Property>
+
+  <Property
+    example="1666"
+    tags={{
+      'Min': 0,
+    }}
+    name="queries_remaining"
+    services="*"
+    type="integer"
+  >
+    The approximate US dollar value of the funds remaining on your MaxMind
+    account.
+  </Property>
+
+  {/* <!--lint disable maximum-line-length --> */}
+  <Property
+    example={`
+      [
+        {
+          "code": "INPUT_INVALID",
+          "warning": "Encountered value at /shipping/city that does not meet the required constraints",
+          "input_pointer": "/shipping/city"
+        }
+      ]
+    `}
+    linkToSchemaName={'Response | Warning'}
+    name="warnings"
+    services="*"
+    type="array<object>"
+  >
+    This array contains warning objects detailing issues with the request that was
+    sent such as invalid or unknown inputs. It is highly recommended that you
+    check this array for issues when integrating the web service.
+  </Property>
+  {/* <!--lint enable maximum-line-length --> */}
+
+  <Property
+    example=""
+    linkToSchemaName={'Response | IP Address'}
+    name="ip_address"
+    services="*"
+    type="object"
+  >
+
+  </Property>
+
+  <Property
+    example={`
+      {
+        "issuer": {
+          "name": "Bank of America",
+          "matches_provided_name": true,
+          "phone_number": "800-732-9194",
+          "matches_provided_phone_number": true
+        },
+        "brand": "Visa",
+        "country": "US",
+        "is_business": true,
+        "is_issued_in_billing_address_country": true,
+        "is_prepaid": true,
+        "is_virtual": true,
+        "type": "credit"
+      }
+    `}
+    linkToSchemaName={'Response | Credit Card'}
+    name="credit_card"
+    services={[
+      'insights',
+      'factors',
+    ]}
+    type="object"
+  >
+    This object contains minFraud information related to the credit card.
+  </Property>
+</Schema>

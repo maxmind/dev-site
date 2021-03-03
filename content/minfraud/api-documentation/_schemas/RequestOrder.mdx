@@ -1,0 +1,94 @@
+<Schema
+  jsonPointer="/order"
+  name="Request | Order"
+  services="*"
+>
+  <Property
+    example="323.21"
+    name="amount"
+    tags={{
+      'Format': 'decimal',
+      'Min': 0,
+      'Max': '1e14 – 1',
+    }}
+    type="number"
+  >
+    The total order amount for the transaction before taxes and discounts.
+  </Property>
+
+  <Property
+    example="USD"
+    name="currency"
+    tags={{
+      'Max Length': 3,
+    }}
+    type="string"
+  >
+    The [ISO 4217 currency code](https://en.wikipedia.org/wiki/ISO_4217) for the
+    currency used in the transaction.
+  </Property>
+
+  <Property
+    example="FIRST"
+    name="discount_code"
+    tags={{
+      'Max Length': 255,
+    }}
+    type="string"
+  >
+    The discount code applied to the transaction. If multiple discount codes
+    were used, please separate them with a comma.
+  </Property>
+
+  <Property
+    example="af12"
+    name="affiliate_id"
+    tags={{
+      'Max Length': 255,
+    }}
+    type="string"
+  >
+    The ID of the affiliate where the order is coming from. No specific format
+    is required.
+  </Property>
+
+  <Property
+    example="saf42"
+    name="subaffiliate_id"
+    tags={{
+      'Max Length': 255,
+    }}
+    type="string"
+  >
+    The ID of the sub-affiliate where the order is coming from. No specific
+    format is required.
+  </Property>
+
+  <Property
+    example="https://www.google.com/"
+    name="referrer_uri"
+    tags={{
+      'Max Length': 1024,
+    }}
+    type="string"
+  >
+    The URI of the referring site for this order. Needs to be absolute and have
+    a URI scheme such as `https://`.
+  </Property>
+
+  <Property
+    example="true"
+    name="is_gift"
+    type="boolean"
+  >
+    Whether order was marked as a gift by the purchaser.
+  </Property>
+
+  <Property
+    example="false"
+    name="has_gift_message"
+    type="boolean"
+  >
+    Whether the purchaser included a gift message.
+  </Property>
+</Schema>

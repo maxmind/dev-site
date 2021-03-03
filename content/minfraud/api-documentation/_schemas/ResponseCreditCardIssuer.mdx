@@ -1,0 +1,58 @@
+<Schema
+  jsonPointer="/credit_card/issuer"
+  name="Response | Credit Card | Issuer"
+  services={[
+    'insights',
+    'factors',
+  ]}
+  type="object"
+>
+  This is a sub-object of `credit_card` that contains information related to the
+  issuer of the card.
+
+  <Property
+    example=""
+    name="name"
+    tags={{
+      'Max Length': 255,
+    }}
+    type="string"
+  >
+    This field contains a JSON object with information relating to the credit card issuer.
+  </Property>
+
+  <Property
+    example=""
+    name="matches_provided_name"
+    type="boolean"
+  >
+    This field is `true` if the name matches the name provided in the request
+    for the card issuer. It is `false` if the name does not match. The field is
+    not included if either no name or issuer ID number (IIN) is provided in the
+    request or if MaxMind does not have a name associated with the IIN.
+  </Property>
+
+  <Property
+    example=""
+    name="phone_number"
+    tags={{
+      'Max Length': 255,
+    }}
+    type="string"
+  >
+    The phone number of the bank which issued the credit card. In some cases the
+    phone number we return may be out of date.
+  </Property>
+
+  <Property
+    example="true"
+    name="matches_provided_phone_number"
+    type="boolean"
+  >
+    This field is `true` if the phone number matches the number provided in the
+    request for the card issuer. It is `false` if the number does not match. The
+    field is not included if either no phone number or issuer ID number (IIN) is
+    provided in the request or if MaxMind does not have a phone number
+    associated with the IIN.
+  </Property>
+</Schema>

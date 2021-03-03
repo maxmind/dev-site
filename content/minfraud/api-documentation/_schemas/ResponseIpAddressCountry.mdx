@@ -1,0 +1,22 @@
+<Schema
+  jsonPointer="/ip_address/country"
+  name="Response | IP Address | Country"
+>
+  // TODO - short description + link to GeoIP2 country schema
+
+  <Property
+    name="is_high_risk"
+    tags={{
+      'Format': 'Decimal',
+    }}
+    services={[
+      'insights',
+      'factors',
+    ]}
+    type="number"
+  >
+    This field has been deprecated.
+
+    // TODO - Add deprecated tag
+  </Property>
+</Schema>

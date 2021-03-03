@@ -1,0 +1,77 @@
+<Schema
+  jsonPointer="/ip_address"
+  name="Response | IP Address"
+>
+  For minFraud Score, this object only contains the `risk` for the IP address.
+  For minFraud Insights and Factors, the object is the
+  [GeoIP2 Insights response body](#) with four modifications:
+
+  {/* <!--lint disable list-item-bullet-indent --> */}
+  1. `risk` has been added directly to the `ip_address` object
+  1. `local_time` has been added to the `location` sub-object
+  1. The `maxmind` object is not present. See below for descriptions.
+
+
+  minFraud Insights and Factors return the following anonymous IP outputs:
+
+  * `is_anonymous`
+  * `is_anonymous_vpn`
+  * `is_hosting_provider`
+  * `is_public_proxy`
+  * `is_residential_proxy`
+  * `is_tor_exit_node`
+  {/* <!--lint enable list-item-bullet-indent --> */}
+
+
+  See the [GeoIP2 Insights response body](#) for more information.
+
+  // TODO - Link to GeoIP2 objects
+
+  <Property
+    name="risk"
+    tags={{
+      'Format': 'Decimal',
+    }}
+    services="*"
+    type="number"
+  >
+    This field contains the risk associated with the IP address. The value
+    ranges from 0.01 to 99. A higher score indicates a higher risk.
+  </Property>
+
+  <Property
+    name="risk_reasons"
+    services={[
+      'insights',
+      'factors',
+    ]}
+    type="array<object>"
+  >
+    	This array contains IP Address Risk Reason objects identifying the reasons
+      why the IP address received the associated risk.
+  </Property>
+
+  <Property
+    linkToSchemaName="Response | IP Address | Country"
+    name="country"
+    type="object"
+  >
+    // TODO - Short description
+  </Property>
+
+  <Property
+    linkToSchemaName="Response | IP Address | Location"
+    name="location"
+    type="object"
+  >
+    // TODO - Short description
+  </Property>
+
+  <Property
+    linkToSchemaName="Response | IP Address | Risk Reasons"
+    name="risk_reasons"
+    type="array<object>"
+  >
+    // TODO - Short description
+  </Property>
+</Schema>

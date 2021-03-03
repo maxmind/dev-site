@@ -1,0 +1,104 @@
+<Schema
+  jsonPointer="/credit_card"
+  name="Request | Credit Card"
+  services="*"
+>
+  <Property
+    example="323132"
+    name="issue_id_number"
+    tags={{
+      'Max Length': 6,
+    }}
+    type="string"
+  >
+    The issuer ID number for the credit card. This is the first six digits of
+    the credit card number. It identifies the issuing bank.
+  </Property>
+
+  <Property
+    example="7643"
+    name="last_4_digits"
+    tags={{
+      'Max Length': 4,
+    }}
+    type="string"
+  >
+    The last four digits of the credit card number.
+  </Property>
+
+  <Property
+    example="OQRST14PLQ98323"
+    name="token"
+    tags={{
+      'Max Length': 255,
+    }}
+    type="string"
+  >
+    A token uniquely identifying the card. The token should consist of non-space
+    printable ASCII characters. If the token is all digits, it must be more than
+    19 characters long. The token must not be a primary account number (PAN) or
+    a simple transformation of it. If you have a valid token that looks like a
+    PAN but is not one, you may prefix that token with a fixed string, e.g.,
+    `token-`.
+  </Property>
+
+  <Property
+    example="Bank of America"
+    name="bank_name"
+    tags={{
+      'Max Length': 255,
+    }}
+    type="string"
+  >
+    The name of the issuing bank as provided by the end user.
+  </Property>
+
+  <Property
+    example="1"
+    name="bank_country_code"
+    tags={{
+      'Max Length': 4,
+    }}
+    type="string"
+  >
+    The phone country code for the issuing bank as provided by the end user. If
+    you provide this information then you must provide at least one digit.
+  </Property>
+
+  <Property
+    example="800-342-1232"
+    name="bank_phone_number"
+    tags={{
+      'Max Length': 255,
+    }}
+    type="string"
+  >
+    The phone number, without the country code, for the issuing bank as provided
+    by the end user. Punctuation characters will be stripped. After stripping
+    punctuation characters, the number must contain only digits.
+  </Property>
+
+  <Property
+    example="Y"
+    name="avs_result"
+    tags={{
+      'Max Length': 1,
+    }}
+    type="string"
+  >
+    The address verification system (AVS) check result, as returned to you by
+    the credit card processor. The minFraud service supports the standard AVS
+    codes.
+  </Property>
+
+  <Property
+    example="N"
+    name="cvv_result"
+    tags={{
+      'Max Length': 1,
+    }}
+    type="string"
+  >
+    The card verification value (CVV) code as provided by the payment processor.
+  </Property>
+</Schema>

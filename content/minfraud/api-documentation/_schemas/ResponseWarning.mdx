@@ -1,0 +1,159 @@
+<Schema
+  jsonPointer="/warnings/{n}"
+  name="Response | Warning"
+  type="object"
+>
+  <Property
+    tags={{
+      'Max Length': 255,
+    }}
+    name="code"
+    type="string"
+  >
+    This value is a machine-readable code identifying the warning. Although more
+    codes may be added in the future, the current codes are:
+
+    <table>
+      <thead>
+        <tr>
+          <th>Code</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            `BILLING_CITY_NOT_FOUND`
+          </td>
+          <td>
+            The billing city could not be found in our database.
+          </td>
+        </tr>
+        <tr>
+          <td>
+            `BILLING_COUNTRY_MISSING`
+          </td>
+          <td>
+            Billing address information was provided without providing a billing
+            country.
+          </td>
+        </tr>
+        <tr>
+          <td>
+            `BILLING_COUNTRY_NOT_FOUND`
+          </td>
+          <td>
+            The billing country could not be found in our database.
+          </td>
+        </tr>
+        <tr>
+          <td>
+            `BILLING_POSTAL_NOT_FOUND`
+          </td>
+          <td>
+            The billing postal could not be found in our database.
+          </td>
+        </tr>
+        <tr>
+          <td>
+            `INPUT_INVALID`
+          </td>
+          <td>
+            The value associated with the key does not meet the required
+            constraints, e.g., "United States" in a field that requires a
+            two-letter country code.
+          </td>
+        </tr>
+        <tr>
+          <td>
+            `INPUT_UNKNOWN`
+          </td>
+          <td>
+            An unknown key was encountered in the request body.
+          </td>
+        </tr>
+        <tr>
+          <td>
+            `IP_ADDRESS_INVALID`
+          </td>
+          <td>
+            The IP address supplied is not a valid IPv4 or IPv6 address.
+          </td>
+        </tr>
+        <tr>
+          <td>
+            `IP_ADDRESS_NOT_FOUND`
+          </td>
+          <td>
+            The IP address could not be geolocated.
+          </td>
+        </tr>
+        <tr>
+          <td>
+            `IP_ADDRESS_RESERVED`
+          </td>
+          <td>
+            The IP address supplied is in a reserved network.
+          </td>
+        </tr>
+        <tr>
+          <td>
+            `SHIPPING_CITY_NOT_FOUND`
+          </td>
+          <td>
+            The shipping city could not be found in our database.
+          </td>
+        </tr>
+        <tr>
+          <td>
+            `SHIPPING_COUNTRY_MISSING`
+          </td>
+          <td>
+            Shipping address information was provided without providing a
+            shipping country.
+          </td>
+        </tr>
+        <tr>
+          <td>
+            `SHIPPING_COUNTRY_NOT_FOUND`
+          </td>
+          <td>
+            The shipping country could not be found in our database.
+          </td>
+        </tr>
+        <tr>
+          <td>
+            `SHIPPING_POSTAL_NOT_FOUND`
+          </td>
+          <td>
+            The shipping postal could not be found in our database.
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </Property>
+
+  <Property
+    tags={{
+      'Max Length': 255,
+    }}
+    name="warning"
+    type="string"
+  >
+    This field provides a human-readable explanation of the warning. The
+    description may change at any time and should not be matched against.
+  </Property>
+
+  <Property
+    tags={{
+      'JSON Pointer': null,
+    }}
+    name="input_pointer"
+    type="string"
+  >
+    A [JSON Pointer](https://tools.ietf.org/html/rfc6901) to the input field
+    that the warning is associated with. For instance, if the warning was about
+    the billing city, this would be `/billing/city`. If it was for the price in
+    the second shopping cart item, it would be `/shopping_cart/1/price`
+  </Property>
+</Schema>
