@@ -53,6 +53,10 @@ module.exports = {
       'lint-no-undefined-references',
       false,
     ],
+    [
+      'lint-no-file-name-mixed-case',
+      false,
+    ],
   ],
   settings: {
     fences: true,
