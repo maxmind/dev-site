@@ -146,10 +146,11 @@ end
 ### 4. Create a transaction object
 
 The transaction object represents a customer's transaction that you are sending
-to the minFraud service for evaluation. The customer's IP address is the only
-required input, but including
-[more information](/minfraud/evaluate-a-transaction#full-examples) about the
-transaction improves the accuracy of the transaction's evaluation:
+to the minFraud service for evaluation. There are not any mandatory fields, but
+including [more information](/minfraud/evaluate-a-transaction#full-examples)
+about the transaction improves the accuracy of the transaction's evaluation.
+The following examples use the recommended minimum amount of information you
+should submit:
 
 <CodeSet>
 
@@ -983,7 +984,7 @@ foreach ($scoreResponse->warnings as $warning) {
 ```
 
 ```python
- import asyncio
+ import asyncio # Only import asyncio if you are playing to do an asynchronous request
  from minfraud import AsyncClient, Client
 
  request = {
@@ -1084,6 +1085,8 @@ foreach ($scoreResponse->warnings as $warning) {
          print(client.insights(request))
          print(client.factors(request))
 
+ client(42, 'license_key')
+
  # This example function uses an asynchronous AsyncClient object. The
  # object can be used across multiple requests.
  async def async_client(account_id, license_key):
@@ -1092,7 +1095,6 @@ foreach ($scoreResponse->warnings as $warning) {
          print(client.insights(request))
          print(client.factors(request))
 
- client(42, 'license_key')
  asyncio.run(async_client(42, 'license_key'))
 ```
 
