@@ -98,7 +98,7 @@ export default {
         background_color: '#663399',
         display: 'minimal-ui',
         // This path must be relative to the Gatsby root
-        icon: 'src/images/gatsby-icon.png',
+        icon: 'src/images/maxmind-icon.png',
         name: 'gatsby-starter-default',
         short_name: 'starter',
         start_url: '/',
