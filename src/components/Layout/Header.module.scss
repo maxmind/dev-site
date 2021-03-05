@@ -27,31 +27,93 @@
 }
 
 .nav {
-  align-items: center;
-  display: flex;
+  display: grid;
+  grid-template-areas: 'logo search menu';
+  grid-template-columns: max-content 1fr max-content;
+  grid-template-rows: auto;
   height: calc(var(--page-header-height) - 10px);
   padding: 0 var(--mm-spacing);
 }
 
+/* IE11 content alignment fix */
+.nav > * { align-self: center; }
+
 .logo {
-  border-left: 0;
-  border-right: 0;
-  line-height: 1px;
-  min-width: 200px;
+  display: grid;
+  gap: 15px;
+  grid-area: logo;
+  grid-template-areas: 'svg site-name';
+  grid-template-columns: auto;
   padding: calc(var(--mm-spacing) / 4);
+  text-decoration: none;
   transform: translateX(calc(var(--mm-spacing) / -4));
-  width: 200px;
+}
+
+.logo__svg {
+  align-self: center;
+  grid-area: svg;
+  max-width: 125px;
+  width: 100%;
+}
+
+.logo__site-name {
+  align-self: center;
+  color: var(--mm-color-primary-text);
+  font-family: var(--mm-font-stack-display);
+  font-size: 10px;
+  font-style: italic;
+  font-weight: 600;
+  grid-area: site-name;
+  letter-spacing: 1px;
+  line-height: 1;
+  overflow: hidden;
+  padding-left: 18px;
+  position: relative;
+  text-transform: uppercase;
+
+  &::before {
+    background: #ccc;
+    content: ' ';
+    display: block;
+    height: 30px;
+    left: 0;
+    position: absolute;
+    transform: rotate(20deg);
+    width: 1px;
+  }
 }
 
 .search {
+  grid-area: search;
   width: 100%;
 }
 
 @include variables.breakpoint('lg') {
+  .nav {
+    grid-template-columns: calc(var(--mm-layout-sidebar-width) - var(--mm-spacing)) 1fr;
+    grid-template-rows: auto;
+  }
+
+  .logo__svg {
+    max-width: initial;
+  }
+
+  .logo__site-name {
+    font-size: 12px;
+  }
+
   .search {
-    left: calc(50% + calc(var(--mm-layout-sidebar-width) / 2));
-    position: absolute;
-    transform: translateX(-50%);
+    padding-left: var(--mm-spacing);
+  }
+}
+
+@include variables.breakpoint('xl') {
+  .search {
+    align-self: center;
+    display: flex;
+    justify-self: center;
+    margin-left: var(--mm-spacing);
+    padding-left: 0;
     width: calc(100% - var(--mm-layout-sidebar-width) - calc(var(--mm-spacing) * 2));
     @include variables.max-width;
   }
@@ -59,12 +121,13 @@
 
 @include variables.breakpoint('xxl') {
   .search {
-    left: calc(50% + calc(var(--mm-layout-sidebar-width) - var(--mm-layout-toc-width)) / 2);
+    transform: translateX(calc(var(--mm-layout-toc-width) * -0.5));
   }
 }
 
 .toggle {
   @include variables.menu-button;
+  grid-area: menu;
   z-index: 4;
 }
 

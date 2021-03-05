@@ -1,3 +1,4 @@
+import { Link } from 'gatsby';
 import PropTypes from 'prop-types';
 import React from 'react';
 import { FaBars, FaTimes } from 'react-icons/fa';
@@ -26,13 +27,20 @@ const Header: React.FC<IHeader> = (props) => {
         <div
           className={styles.nav}
         >
-          <a
+          <Link
             aria-label="Home"
             className={styles.logo}
-            href="/"
+            to="/"
           >
-            <Logo />
-          </a>
+            <Logo
+              className={styles['logo__svg']}
+            />
+            <span
+              className={styles['logo__site-name']}
+            >
+              Developers
+            </span>
+          </Link>
           <SearchBar
             className={styles.search}
           />
