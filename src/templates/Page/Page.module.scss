@@ -33,7 +33,7 @@
   @include variables.max-width;
 }
 
-.content > [id^='toc-']:first-of-type > *:first-child {
+.content > [id^='toc-']:first-child > *:first-child {
   margin-top: 0;
 }
 
