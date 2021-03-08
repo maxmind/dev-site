@@ -154,7 +154,7 @@ const Schema: React.FC<ISchema> = (props) => {
               language="json"
             >
               <>
-                {`// JSON Path: \`${jsonPointer}\`\n`}
+                {`// JSON Pointer: ${jsonPointer}\n`}
                 {JSON.stringify(example, null, 2)}
               </>
             </Example>

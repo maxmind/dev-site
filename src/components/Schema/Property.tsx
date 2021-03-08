@@ -107,6 +107,10 @@ const Property: React.FC<IProperty> = (props) => {
 
   const serviceTags = services || schemaServices;
 
+  const jsonPointer = schemaJsonPath === '/'
+    ? `${schemaJsonPath}${name}`
+    : `${schemaJsonPath}/${name}`;
+
   return (
     <div
       className={classNames(
@@ -145,7 +149,7 @@ const Property: React.FC<IProperty> = (props) => {
         >
           <>
             {exampleLanguage === 'json' ? '//' : '#'}
-            {` JSON Path: ${schemaJsonPath}.${name}\n`}
+            {` JSON Pointer: ${jsonPointer}\n`}
             {formattedExample}
           </>
         </Example>
