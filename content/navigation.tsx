@@ -39,6 +39,10 @@ const navigation: IItem[] = [
         to: '/minfraud/release-notes',
       },
       {
+        title: 'minFraud Legacy',
+        to: '/minfraud/minfraud-legacy',
+      },
+      {
         title: 'Frequently Asked Questions',
         url: 'https://support.maxmind.com/minfraud-faq/',
       },
