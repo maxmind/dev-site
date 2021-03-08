@@ -1,0 +1,41 @@
+.container {
+  display: grid;
+  height: 100%;
+  width: 100%;
+}
+
+.under-construction {
+  align-self: center;
+  color: #005f82;
+  display: grid;
+  gap: var(--mm-spacing);
+  grid-template-areas: 'icon' 'text';
+  grid-template-columns: 1fr;
+  grid-template-rows: max-content;
+  justify-self: center;
+}
+
+.icon {
+  align-self: center;
+  grid-area: icon;
+  height: auto;
+  justify-self: center;
+  width: 25vh;
+}
+
+.text {
+  align-self: center;
+  color: #00adef;
+  font-family: var(--mm-font-stack-display);
+  font-size: 42px;
+  font-weight: 600;
+  grid-area: text;
+  justify-self: center;
+  letter-spacing: 10px;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.dark {
+  color: #005f82;
+}
