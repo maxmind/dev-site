@@ -1,0 +1,254 @@
+diff_in,old_geoname_id,new_geoname_id,old_city_name,new_city_name,old_country_name,new_country_name,old_country_code,new_country_code,old_subdivision_codes,new_subdivision_codes
+city_name,3427370,3427370,Villa San Jose,San Jose,Argentina,Argentina,AR,AR,E,E
+city_name,3840082,3840082,San Julian,Puerto San Julian,Argentina,Argentina,AR,AR,Z,Z
+city_name,6325529,6325529,St. Thomas de Montmagny,Saint Thomas de Montmagny,Canada,Canada,CA,CA,QC,QC
+city_name,1529047,1529047,Xinjiang,Xinjiang Uyghur Autonomous Region,China,China,CN,CN,XJ,XJ
+city_name,1979422,1979422,Pucheng,Puchengcun,China,China,CN,CN,FJ,FJ
+city_name,8575044,8575044,Fengling,Fenglingcun,China,China,CN,CN,FJ,FJ
+city_name,8575280,8575280,Guanzhou,Guanzhoucun,China,China,CN,CN,FJ,FJ
+city_name,3671916,3671916,Popayan,Popayán,Colombia,Colombia,CO,CO,CAU,CAU
+city_name,3189712,3189712,Strmec Samoborski,Strmec,Croatia,Croatia,HR,HR,1,1
+city_name,3192719,3192719,Popovec Sasinovecki,Popovec,Croatia,Croatia,HR,HR,21,21
+city_name,3579925,3579925,St. George's,Saint George's,Grenada,Grenada,GD,GD,3,3
+city_name,1271662,1271662,Gangawati,Gangavati,India,India,IN,IN,KA,KA
+city_name,2748838,2748838,Provincie Overijssel,Overijssel,Netherlands,Netherlands,NL,NL,OV,OV
+city_name,2756631,2756631,Provincie Drenthe,Drenthe,Netherlands,Netherlands,NL,NL,DR,DR
+city_name,3319179,3319179,Provincie Flevoland,Flevoland,Netherlands,Netherlands,NL,NL,FL,FL
+city_name,687433,687433,Zdovbytsya,Zdovbytsia,Ukraine,Ukraine,UA,UA,56,56
+city_name,690561,690561,Uyizdtsi,Uizdtsi,Ukraine,Ukraine,UA,UA,56,56
+city_name,691256,691256,Trostyanets',Trostianets,Ukraine,Ukraine,UA,UA,56,56
+city_name,694273,694273,Shchors,Snovsk,Ukraine,Ukraine,UA,UA,74,74
+city_name,698082,698082,Ozeryany,Ozeriany,Ukraine,Ukraine,UA,UA,56,56
+city_name,698191,698191,Ostrozhets',Ostrozhets,Ukraine,Ukraine,UA,UA,56,56
+city_name,709930,709930,Dnipropetrovsk,Dnipro,Ukraine,Ukraine,UA,UA,12,12
+country_name,2992741,2992741,Monte Carlo,Monte Carlo,Monaco,Principality of Monaco,MC,MC,,
+country_name,2993457,2993457,,,Monaco,Principality of Monaco,MC,MC,,
+country_name,2993458,2993458,Monaco,Monaco,Monaco,Principality of Monaco,MC,MC,,
+geoname_id,7871036,2771619,Micheldorf in Oberoesterreich,Micheldorf in Oberoesterreich,Austria,Austria,AT,AT,4,4
+geoname_id,7871560,2774076,Kleinmuerbisch,Kleinmuerbisch,Austria,Austria,AT,AT,1,1
+geoname_id,7871576,2768464,Poettsching,Poettsching,Austria,Austria,AT,AT,1,1
+geoname_id,7871590,2771284,Moenchhof,Moenchhof,Austria,Austria,AT,AT,1,1
+geoname_id,7871621,2769738,Oberschuetzen,Oberschuetzen,Austria,Austria,AT,AT,1,1
+geoname_id,7871703,2782043,Bad Voeslau,Bad Voeslau,Austria,Austria,AT,AT,3,3
+geoname_id,7871712,2768953,Pfaffstaetten,Pfaffstaetten,Austria,Austria,AT,AT,3,3
+geoname_id,7871811,2766357,Sankt Veit an der Goelsen,Sankt Veit an der Goelsen,Austria,Austria,AT,AT,3,3
+geoname_id,7871824,2768616,Poeggstall,Poeggstall,Austria,Austria,AT,AT,3,3
+geoname_id,7871851,2778573,Giesshuebl,Giesshuebl,Austria,Austria,AT,AT,3,3
+geoname_id,7871853,2776358,Hinterbruehl,Hinterbruehl,Austria,Austria,AT,AT,3,3
+geoname_id,7871864,2771273,Moenichkirchen,Moenichkirchen,Austria,Austria,AT,AT,3,3
+geoname_id,7871995,2777066,Hagenberg im Muehlkreis,Hagenberg im Muehlkreis,Austria,Austria,AT,AT,4,4
+geoname_id,7871998,2770722,Neumarkt im Muehlkreis,Neumarkt im Muehlkreis,Austria,Austria,AT,AT,4,4
+geoname_id,7872011,2777459,Gruenau im Almtal,Gruenau im Almtal,Austria,Austria,AT,AT,4,4
+geoname_id,7872533,2778220,Goetzens,Goetzens,Austria,Austria,AT,AT,7,7
+geoname_id,7872540,3319503,Muehlbachl,Muehlbachl,Austria,Austria,AT,AT,7,7
+geoname_id,7872560,2773691,Koessen,Koessen,Austria,Austria,AT,AT,7,7
+geoname_id,7872614,2778127,Graen,Graen,Austria,Austria,AT,AT,7,7
+geoname_id,7872644,2781161,Buers,Buers,Austria,Austria,AT,AT,8,8
+geoname_id,7872647,2770391,Nueziders,Nueziders,Austria,Austria,AT,AT,8,8
+geoname_id,7872686,2777673,Grosshoeflein,Grosshoeflein,Austria,Austria,AT,AT,1,1
+geoname_id,7872688,2771049,Muellendorf,Muellendorf,Austria,Austria,AT,AT,1,1
+geoname_id,7872708,2770803,Neudoerfl,Neudoerfl,Austria,Austria,AT,AT,1,1
+geoname_id,7872709,2768475,Poettelsdorf,Poettelsdorf,Austria,Austria,AT,AT,1,1
+geoname_id,7872722,2766769,Sankt Andrae am Zicksee,Sankt Andrae am Zicksee,Austria,Austria,AT,AT,1,1
+geoname_id,7872767,2781364,Brueckl,Brueckl,Austria,Austria,AT,AT,2,2
+geoname_id,7872806,2762315,Voelkermarkt,Voelkermarkt,Austria,Austria,AT,AT,2,2
+geoname_id,7872808,2772821,Lavamuend,Lavamuend,Austria,Austria,AT,AT,2,2
+geoname_id,7872841,2765730,Schoenau an der Triesting,Schoenau an der Triesting,Austria,Austria,AT,AT,3,3
+geoname_id,7872915,2778599,Gfoehl,Gfoehl,Austria,Austria,AT,AT,3,3
+geoname_id,7872937,2763235,Tuernitz,Tuernitz,Austria,Austria,AT,AT,3,3
+geoname_id,7872983,2762150,Voesendorf,Voesendorf,Austria,Austria,AT,AT,3,3
+geoname_id,7873132,2782627,Altmuenster,Altmuenster,Austria,Austria,AT,AT,4,4
+geoname_id,7873191,2782860,Aigen im Muehlkreis,Aigen im Muehlkreis,Austria,Austria,AT,AT,4,4
+geoname_id,7873308,2782058,Bad Gastein,Bad Gastein,Austria,Austria,AT,AT,5,5
+geoname_id,7873312,2775375,Huettau,Huettau,Austria,Austria,AT,AT,5,5
+geoname_id,7873518,2770844,Neuberg an der Muerz,Neuberg an der Muerz,Austria,Austria,AT,AT,6,6
+geoname_id,7873588,2774681,Karroesten,Karroesten,Austria,Austria,AT,AT,7,7
+geoname_id,7873652,2771028,Muenster,Muenster,Austria,Austria,AT,AT,7,7
+geoname_id,1186525,1186524,Tarakanda,Tarakanda,Bangladesh,Bangladesh,BD,BD,"H, 34","H, 34"
+geoname_id,2787388,2787387,Saint-Josse-ten-Noode,Saint-Josse-ten-Noode,Belgium,Belgium,BE,BE,BRU,BRU
+geoname_id,3386604,6319503,Tartarugalzinho,Tartarugalzinho,Brazil,Brazil,BR,BR,AP,AP
+geoname_id,3391368,6324187,Porto Grande,Porto Grande,Brazil,Brazil,BR,BR,AP,AP
+geoname_id,3392996,6319756,Parnarama,Parnarama,Brazil,Brazil,BR,BR,MA,MA
+geoname_id,3397292,6319721,Joao Lisboa,Joao Lisboa,Brazil,Brazil,BR,BR,MA,MA
+geoname_id,3407674,6319509,Ananas,Ananas,Brazil,Brazil,BR,BR,TO,TO
+geoname_id,3452379,3452380,Pratapolis,Pratapolis,Brazil,Brazil,BR,BR,MG,MG
+geoname_id,3453414,3453415,Planalto,Planalto,Brazil,Brazil,BR,BR,RS,RS
+geoname_id,3459431,7771981,Juranda,Juranda,Brazil,Brazil,BR,BR,PR,PR
+geoname_id,3467371,3467373,Capao Bonito,Capao Bonito,Brazil,Brazil,BR,BR,SP,SP
+geoname_id,3469933,3469942,Boa Esperanca,Boa Esperanca,Brazil,Brazil,BR,BR,ES,ES
+geoname_id,3661756,6319348,Uarini,Uarini,Brazil,Brazil,BR,BR,AM,AM
+geoname_id,6316373,12199880,Alvorada,Alvorada,Brazil,Brazil,BR,BR,RS,RS
+geoname_id,6317026,12125743,Dom Aquino,Dom Aquino,Brazil,Brazil,BR,BR,MT,MT
+geoname_id,6317871,6323851,Paranatinga,Paranatinga,Brazil,Brazil,BR,BR,MT,MT
+geoname_id,6318968,6319492,Xinguara,Xinguara,Brazil,Brazil,BR,BR,PA,PA
+geoname_id,6319329,3663503,Manicore,Manicore,Brazil,Brazil,BR,BR,AM,AM
+geoname_id,6319437,3393471,Oriximina,Oriximina,Brazil,Brazil,BR,BR,PA,PA
+geoname_id,6319717,3397936,Itapecuru Mirim,Itapecuru Mirim,Brazil,Brazil,BR,BR,MA,MA
+geoname_id,6319766,3392088,Pindare Mirim,Pindare Mirim,Brazil,Brazil,BR,BR,MA,MA
+geoname_id,6320587,3388925,Sao Caitano,Sao Caitano,Brazil,Brazil,BR,BR,PE,PE
+geoname_id,6320790,3467577,Canavieiras,Canavieiras,Brazil,Brazil,BR,BR,BA,BA
+geoname_id,6320824,3465294,Cotegipe,Cotegipe,Brazil,Brazil,BR,BR,BA,BA
+geoname_id,6320901,3460730,Itapetinga,Itapetinga,Brazil,Brazil,BR,BR,BA,BA
+geoname_id,6323169,3459712,Joinville,Joinville,Brazil,Brazil,BR,BR,SC,SC
+geoname_id,6048424,8556306,Lakehurst,Lakehurst,Canada,Canada,CA,CA,ON,ON
+geoname_id,8672882,6943814,Grande-Riviere,Grande-Riviere,Canada,Canada,CA,CA,QC,QC
+geoname_id,3674569,3674568,Monitos,Monitos,Colombia,Colombia,CO,CO,COR,COR
+geoname_id,3770955,3665911,Villa Rica,Villa Rica,Colombia,Colombia,CO,CO,CAU,CAU
+geoname_id,2615646,2615645,Orum,Orum,Denmark,Denmark,DK,DK,82,82
+geoname_id,2624897,2624896,Albaek,Albaek,Denmark,Denmark,DK,DK,81,81
+geoname_id,6438185,3021663,Dechy,Dechy,France,France,FR,FR,"HDF, 59","HDF, 59"
+geoname_id,6443514,2976703,Saint-Valery-en-Caux,Saint-Valery-en-Caux,France,France,FR,FR,"NOR, 76","NOR, 76"
+geoname_id,6451725,3019209,Eymoutiers,Eymoutiers,France,France,FR,FR,"NAQ, 87","NAQ, 87"
+geoname_id,6454552,2991202,Munchhausen,Munchhausen,France,France,FR,FR,"GES, 67","GES, 67"
+geoname_id,6613254,3025444,Cherisy,Cherisy,France,France,FR,FR,"CVL, 28","CVL, 28"
+geoname_id,6613404,3022566,Cresancey,Cresancey,France,France,FR,FR,"BFC, 70","BFC, 70"
+geoname_id,6613426,3027870,Cerisy-Buleux,Cerisy-Buleux,France,France,FR,FR,"HDF, 80","HDF, 80"
+geoname_id,6613465,3019362,Etrepigney,Etrepigney,France,France,FR,FR,"BFC, 39","BFC, 39"
+geoname_id,6613512,3025024,Choue,Choue,France,France,FR,FR,"CVL, 41","CVL, 41"
+geoname_id,6613559,3016390,Genainville,Genainville,France,France,FR,FR,"IDF, 95","IDF, 95"
+geoname_id,6613586,3026109,Chatenay-Macheron,Chatenay-Macheron,France,France,FR,FR,"GES, 52","GES, 52"
+geoname_id,6613617,2969162,Vievy-le-Raye,Vievy-le-Raye,France,France,FR,FR,"CVL, 41","CVL, 41"
+geoname_id,6613769,2977201,Saint-Remy-la-Calonne,Saint-Remy-la-Calonne,France,France,FR,FR,"GES, 55","GES, 55"
+geoname_id,6613779,2976701,Saint-Valery-sur-Somme,Saint-Valery-sur-Somme,France,France,FR,FR,"HDF, 80","HDF, 80"
+geoname_id,6613972,2980269,Saint-Etienne-de-Cuines,Saint-Etienne-de-Cuines,France,France,FR,FR,"ARA, 73","ARA, 73"
+geoname_id,6613994,3027480,Chalo-Saint-Mars,Chalo-Saint-Mars,France,France,FR,FR,"IDF, 91","IDF, 91"
+geoname_id,6614000,2968152,Villiers-Saint-Frederic,Villiers-Saint-Frederic,France,France,FR,FR,"IDF, 78","IDF, 78"
+geoname_id,6614093,3035701,Avesnes-les-Aubert,Avesnes-les-Aubert,France,France,FR,FR,"HDF, 59","HDF, 59"
+geoname_id,6614158,3022700,Cran-Gevrier,Cran-Gevrier,France,France,FR,FR,"ARA, 74","ARA, 74"
+geoname_id,6614164,3019153,Faches-Thumesnil,Faches-Thumesnil,France,France,FR,FR,"HDF, 59","HDF, 59"
+geoname_id,6614331,3017422,Frahier-et-Chatebier,Frahier-et-Chatebier,France,France,FR,FR,"BFC, 70","BFC, 70"
+geoname_id,6614526,3017248,Frelinghien,Frelinghien,France,France,FR,FR,"HDF, 59","HDF, 59"
+geoname_id,6614602,2975064,Senoncourt-les-Maujouy,Senoncourt-les-Maujouy,France,France,FR,FR,"GES, 55","GES, 55"
+geoname_id,6614826,2998333,L'Ile-Bouchard,L'Ile-Bouchard,France,France,FR,FR,"CVL, 37","CVL, 37"
+geoname_id,6615841,3036796,Arquettes-en-Val,Arquettes-en-Val,France,France,FR,FR,"OCC, 11","OCC, 11"
+geoname_id,6616330,2995334,Marville-Moutiers-Brule,Marville-Moutiers-Brule,France,France,FR,FR,"CVL, 28","CVL, 28"
+geoname_id,6618107,3033210,Bertaucourt-Epourdon,Bertaucourt-Epourdon,France,France,FR,FR,"HDF, 02","HDF, 02"
+geoname_id,6618190,3027562,Chalandry-Elaire,Chalandry-Elaire,France,France,FR,FR,"GES, 08","GES, 08"
+geoname_id,6618335,2984239,Reclinghem,Reclinghem,France,France,FR,FR,"HDF, 62","HDF, 62"
+geoname_id,6618336,2984263,Rebreuviette,Rebreuviette,France,France,FR,FR,"HDF, 62","HDF, 62"
+geoname_id,6618349,2990096,Norrent-Fontes,Norrent-Fontes,France,France,FR,FR,"HDF, 62","HDF, 62"
+geoname_id,6618390,3013801,Haute-Avesnes,Haute-Avesnes,France,France,FR,FR,"HDF, 62","HDF, 62"
+geoname_id,6618428,3030446,Brebieres,Brebieres,France,France,FR,FR,"HDF, 62","HDF, 62"
+geoname_id,2836443,2836444,Schoenwalde,Schoenwalde,Germany,Germany,DE,DE,BB,BB
+geoname_id,2877128,2877126,Lindow,Lindow,Germany,Germany,DE,DE,BB,BB
+geoname_id,2885763,2885764,Koenigstein,Koenigstein,Germany,Germany,DE,DE,SN,SN
+geoname_id,2896260,2896259,Immenstedt,Immenstedt,Germany,Germany,DE,DE,SH,SH
+geoname_id,6547694,2892648,Karstaedt,Karstaedt,Germany,Germany,DE,DE,BB,BB
+geoname_id,6547793,2843603,Roevershagen,Roevershagen,Germany,Germany,DE,DE,MV,MV
+geoname_id,6547826,2918974,Goermin,Goermin,Germany,Germany,DE,DE,MV,MV
+geoname_id,6547870,2951468,Behren-Luebchin,Behren-Luebchin,Germany,Germany,DE,DE,MV,MV
+geoname_id,6548199,2875431,Luedersdorf,Luedersdorf,Germany,Germany,DE,DE,MV,MV
+geoname_id,6548346,2936271,Domsuehl,Domsuehl,Germany,Germany,DE,DE,MV,MV
+geoname_id,6548404,2957949,Altefaehr,Altefaehr,Germany,Germany,DE,DE,MV,MV
+geoname_id,6548473,2853111,Ploewen,Ploewen,Germany,Germany,DE,DE,MV,MV
+geoname_id,6548591,2836581,Schoenheide,Schoenheide,Germany,Germany,DE,DE,SN,SN
+geoname_id,6549650,2939365,Daehre,Daehre,Germany,Germany,DE,DE,ST,ST
+geoname_id,6550264,2869891,Moenchenholzhausen,Moenchenholzhausen,Germany,Germany,DE,DE,TH,TH
+geoname_id,6550298,2925890,Foeritz,Foeritz,Germany,Germany,DE,DE,TH,TH
+geoname_id,6551563,2890086,Klanxbuell,Klanxbuell,Germany,Germany,DE,DE,SH,SH
+geoname_id,6551613,2825108,Suederluegum,Suederluegum,Germany,Germany,DE,DE,SH,SH
+geoname_id,6552299,2959482,Adenbuettel,Adenbuettel,Germany,Germany,DE,DE,NI,NI
+geoname_id,6552336,2941880,Buehren,Buehren,Germany,Germany,DE,DE,NI,NI
+geoname_id,6552337,2934009,Ebergoetzen,Ebergoetzen,Germany,Germany,DE,DE,NI,NI
+geoname_id,6552339,2894576,Juehnde,Juehnde,Germany,Germany,DE,DE,NI,NI
+geoname_id,6552358,3208594,Bueddenstedt,Bueddenstedt,Germany,Germany,DE,DE,NI,NI
+geoname_id,6552566,2819117,Unterluess,Unterluess,Germany,Germany,DE,DE,NI,NI
+geoname_id,6552583,2926154,Floegeln,Floegeln,Germany,Germany,DE,DE,NI,NI
+geoname_id,6552619,2805825,Wulsbuettel,Wulsbuettel,Germany,Germany,DE,DE,NI,NI
+geoname_id,6552908,3208438,Luenne,Luenne,Germany,Germany,DE,DE,NI,NI
+geoname_id,6553044,2897283,Huenxe,Huenxe,Germany,Germany,DE,DE,NW,NW
+geoname_id,6553129,2897844,Huellhorst,Huellhorst,Germany,Germany,DE,DE,NW,NW
+geoname_id,6553148,2955940,Anroechte,Anroechte,Germany,Germany,DE,DE,NW,NW
+geoname_id,6553223,3208118,Schoeffengrund,Schoeffengrund,Germany,Germany,DE,DE,HE,HE
+geoname_id,6553291,3207679,Ahrbrueck,Ahrbrueck,Germany,Germany,DE,DE,RP,RP
+geoname_id,6553396,2914309,Gruenebach,Gruenebach,Germany,Germany,DE,DE,RP,RP
+geoname_id,6553482,2935578,Doerrebach,Doerrebach,Germany,Germany,DE,DE,RP,RP
+geoname_id,6553487,2923706,Fuerfeld,Fuerfeld,Germany,Germany,DE,DE,RP,RP
+geoname_id,6553500,2898036,Hueffelsheim,Hueffelsheim,Germany,Germany,DE,DE,RP,RP
+geoname_id,6553670,2942688,Buechel,Buechel,Germany,Germany,DE,DE,RP,RP
+geoname_id,6553710,2869168,Moersdorf,Moersdorf,Germany,Germany,DE,DE,RP,RP
+geoname_id,6553719,2851689,Puenderich,Puenderich,Germany,Germany,DE,DE,RP,RP
+geoname_id,6553884,2942559,Buechenbeuren,Buechenbeuren,Germany,Germany,DE,DE,RP,RP
+geoname_id,6554346,2875824,Loesnich,Loesnich,Germany,Germany,DE,DE,RP,RP
+geoname_id,6554453,2885407,Koerperich,Koerperich,Germany,Germany,DE,DE,RP,RP
+geoname_id,6554731,2925977,Foehren,Foehren,Germany,Germany,DE,DE,RP,RP
+geoname_id,6554825,2958126,Alsheim,Alsheim,Germany,Germany,DE,DE,RP,RP
+geoname_id,6555149,3207540,Schoenenberg-Kuebelberg,Schoenenberg-Kuebelberg,Germany,Germany,DE,DE,RP,RP
+geoname_id,6555384,3207537,Rieschweiler-Muehlbach,Rieschweiler-Muehlbach,Germany,Germany,DE,DE,RP,RP
+geoname_id,6555715,3206256,OElbronn-Duerrn,OElbronn-Duerrn,Germany,Germany,DE,DE,BW,BW
+geoname_id,6555824,2869808,Moenchweiler,Moenchweiler,Germany,Germany,DE,DE,BW,BW
+geoname_id,6555888,2843099,Ruemmingen,Ruemmingen,Germany,Germany,DE,DE,BW,BW
+geoname_id,6556234,2820756,Tuerkenfeld,Tuerkenfeld,Germany,Germany,DE,DE,BY,BY
+geoname_id,6556425,2947450,Boebing,Boebing,Germany,Germany,DE,DE,BY,BY
+geoname_id,6556700,2947090,Bodenwoehr,Bodenwoehr,Germany,Germany,DE,DE,BY,BY
+geoname_id,6556754,2948292,Bischofsgruen,Bischofsgruen,Germany,Germany,DE,DE,BY,BY
+geoname_id,6556807,2821864,Toepen,Toepen,Germany,Germany,DE,DE,BY,BY
+geoname_id,6556818,2886839,Koednitz,Koednitz,Germany,Germany,DE,DE,BY,BY
+geoname_id,6556914,2867633,Muenchsteinach,Muenchsteinach,Germany,Germany,DE,DE,BY,BY
+geoname_id,6556947,2907697,Heigenbruecken,Heigenbruecken,Germany,Germany,DE,DE,BY,BY
+geoname_id,6557194,2914279,Gruenenbach,Gruenenbach,Germany,Germany,DE,DE,BY,BY
+geoname_id,6557213,2919008,Goerisried,Goerisried,Germany,Germany,DE,DE,BY,BY
+geoname_id,6557888,2866990,Nastaetten,Nastaetten,Germany,Germany,DE,DE,RP,RP
+geoname_id,6558468,2882243,Kuesten,Kuesten,Germany,Germany,DE,DE,NI,NI
+geoname_id,6559245,2839748,Schenkendoebern,Schenkendoebern,Germany,Germany,DE,DE,BB,BB
+geoname_id,7602451,2934324,Duerrhennersdorf,Duerrhennersdorf,Germany,Germany,DE,DE,SN,SN
+geoname_id,7602564,6547590,Dallgow-Doeberitz,Dallgow-Doeberitz,Germany,Germany,DE,DE,BB,BB
+geoname_id,10213494,1274484,Chaurai,Chaurai,India,India,IN,IN,MP,MP
+geoname_id,11721032,11721226,Kharagprasad,Kharagprasad,India,India,IN,IN,OR,OR
+geoname_id,3182886,8972388,Arese,Arese,Italy,Italy,IT,IT,"25, MI","25, MI"
+geoname_id,6535884,3181641,Bovisio-Masciago,Bovisio-Masciago,Italy,Italy,IT,IT,"25, MB","25, MB"
+geoname_id,6536030,3170316,Pont-Canavese,Pont-Canavese,Italy,Italy,IT,IT,"21, TO","21, TO"
+geoname_id,8959664,3178221,Comunanza,Comunanza,Italy,Italy,IT,IT,"57, AP","57, AP"
+geoname_id,1848308,1848313,Yokosuka,Yokosuka,Japan,Japan,JP,JP,14,14
+geoname_id,1848370,1848373,Yokkaichi,Yokkaichi,Japan,Japan,JP,JP,24,24
+geoname_id,1848938,1926004,Wakayama,Wakayama,Japan,Japan,JP,JP,30,30
+geoname_id,1855078,11137263,Noda,Noda,Japan,Japan,JP,JP,12,12
+geoname_id,1860633,1860635,Kameoka,Kameoka,Japan,Japan,JP,JP,26,26
+geoname_id,1862415,1862413,Hiroshima,Hiroshima,Japan,Japan,JP,JP,34,34
+geoname_id,1863288,1863289,Hamamatsu,Hamamatsu,Japan,Japan,JP,JP,22,22
+geoname_id,2110683,2110681,Tsukuba,Tsukuba,Japan,Japan,JP,JP,8,8
+geoname_id,10862573,10862402,Nogawa,Nogawa,Japan,Japan,JP,JP,14,14
+geoname_id,10936804,11838395,Miyazaki,Miyazaki,Japan,Japan,JP,JP,12,12
+geoname_id,11611642,6822127,Ayase,Ayase,Japan,Japan,JP,JP,14,14
+geoname_id,250625,6946409,Karak,Karak,Jordan,Jordan,JO,JO,KA,KA
+geoname_id,1735339,1735297,Mukah,Mukah,Malaysia,Malaysia,MY,MY,13,13
+geoname_id,3824644,8864641,Arroyo de Piedra,Arroyo de Piedra,Mexico,Mexico,MX,MX,VER,VER
+geoname_id,4016122,9504389,California,California,Mexico,Mexico,MX,MX,DUR,DUR
+geoname_id,7995649,7995648,Mirchaiya,Mirchaiya,Nepal,Nepal,NP,NP,P2,P2
+geoname_id,3142568,3150437,Karlshus,Karlshus,Norway,Norway,NO,NO,30,30
+geoname_id,497609,497610,Sel'tso,Sel'tso,Russia,Russia,RU,RU,BRY,BRY
+geoname_id,582149,582153,Anatkasy,Anatkasy,Russia,Russia,RU,RU,CU,CU
+geoname_id,821356,565290,Donskoy,Donskoy,Russia,Russia,RU,RU,TUL,TUL
+geoname_id,6607810,502267,Red'kino,Red'kino,Russia,Russia,RU,RU,NIZ,NIZ
+geoname_id,994860,994859,Inanda,Inanda,South Africa,South Africa,ZA,ZA,KZN,KZN
+geoname_id,10914977,1832426,Yongin-si,Yongin-si,South Korea,South Korea,KR,KR,41,41
+geoname_id,2512267,6357769,Puebla de Don Fadrique,Puebla de Don Fadrique,Spain,Spain,ES,ES,"AN, GR","AN, GR"
+geoname_id,3111817,3111820,Ribas de Mino,Ribas de Mino,Spain,Spain,ES,ES,"GA, LU","GA, LU"
+geoname_id,6356233,3110642,Sant Feliu de Llobregat,Sant Feliu de Llobregat,Spain,Spain,ES,ES,"CT, B","CT, B"
+geoname_id,6357085,2509509,Vila-real,Vila-real,Spain,Spain,ES,ES,"VC, CS","VC, CS"
+geoname_id,6359350,3110911,San Agustin del Guadalix,San Agustin del Guadalix,Spain,Spain,ES,ES,"MD, M","MD, M"
+geoname_id,6360256,3105575,Vilagarcia de Arousa,Vilagarcia de Arousa,Spain,Spain,ES,ES,"GA, PO","GA, PO"
+geoname_id,6361943,2520712,Burjassot,Burjassot,Spain,Spain,ES,ES,"VC, V","VC, V"
+geoname_id,2681304,2681305,Ruda,Ruda,Sweden,Sweden,SE,SE,H,H
+geoname_id,2726519,2726517,Alno,Alno,Sweden,Sweden,SE,SE,Y,Y
+geoname_id,2661431,8469167,Boettstein,Boettstein,Switzerland,Switzerland,CH,CH,AG,AG
+geoname_id,6293839,2658909,Rueti,Rueti,Switzerland,Switzerland,CH,CH,ZH,ZH
+geoname_id,7285216,2661542,Beromuenster,Beromuenster,Switzerland,Switzerland,CH,CH,LU,LU
+geoname_id,7285311,2661428,Bourg-Saint-Pierre,Bourg-Saint-Pierre,Switzerland,Switzerland,CH,CH,VS,VS
+geoname_id,7285410,2661302,Buetschwil,Buetschwil,Switzerland,Switzerland,CH,CH,SG,SG
+geoname_id,7285670,6612097,Doerflingen,Doerflingen,Switzerland,Switzerland,CH,CH,SH,SH
+geoname_id,7285835,2660763,Flaesch,Flaesch,Switzerland,Switzerland,CH,CH,GR,GR
+geoname_id,7285892,2660666,Gaensbrunnen,Gaensbrunnen,Switzerland,Switzerland,CH,CH,SO,SO
+geoname_id,7286430,2659772,Maennedorf,Maennedorf,Switzerland,Switzerland,CH,CH,ZH,ZH
+geoname_id,7287009,2658897,Saas-Grund,Saas-Grund,Switzerland,Switzerland,CH,CH,VS,VS
+geoname_id,7287028,2658872,Saint-Gingolph,Saint-Gingolph,Switzerland,Switzerland,CH,CH,VS,VS
+geoname_id,7287031,2658868,Saint-Leonard,Saint-Leonard,Switzerland,Switzerland,CH,CH,VS,VS
+geoname_id,7287034,2658864,Saint-Maurice,Saint-Maurice,Switzerland,Switzerland,CH,CH,VS,VS
+geoname_id,7287365,8533235,Uezwil,Uezwil,Switzerland,Switzerland,CH,CH,AG,AG
+geoname_id,7287562,2658011,Wettingen,Wettingen,Switzerland,Switzerland,CH,CH,AG,AG
+geoname_id,7293524,2654270,Burnham-on-Crouch,Burnham-on-Crouch,United Kingdom,United Kingdom,GB,GB,"ENG, ESS","ENG, ESS"
+geoname_id,5106122,7259146,Washington Township,Washington Township,United States,United States,US,US,NJ,NJ
+geoname_id,5391958,5391959,San Francisco,San Francisco,United States,United States,US,US,CA,CA
+geoname_id,7206436,4401242,O'Fallon,O'Fallon,United States,United States,US,US,MO,MO
+geoname_id,3649174,3649173,Aparicion,Aparicion,Venezuela,Venezuela,VE,VE,P,P
+subdivision_codes,3670223,3670223,San Andres,San Andres,Colombia,Colombia,CO,CO,CES,SAP
