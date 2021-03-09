@@ -15,7 +15,7 @@ import styles from './Schema.module.scss';
 
 interface ISchema {
   children: React.ReactElement | React.ReactElement[];
-  example?: string;
+  json: Json;
   jsonPointer: string;
   name: string;
   services?: MinFraudServices;
@@ -27,45 +27,12 @@ const slugger = new GithubSlugger();
 const Schema: React.FC<ISchema> = (props) => {
   const {
     children,
-    example: exampleProp,
+    json,
     jsonPointer,
     name,
     services,
     type,
   } = props;
-
-  const [
-    example,
-    addToSchemaExample,
-  ] = React.useReducer(
-    (state: any, action: any) => {
-      const { name: property, type, value } = action.payload;
-
-      let formattedValue = value;
-
-      if (type === 'object' || type.startsWith('array')) {
-        formattedValue = JSON.parse(formattedValue);
-      }
-
-      if (type === 'boolean') {
-        formattedValue = (formattedValue === 'true');
-      }
-
-      if (type === 'integer') {
-        formattedValue = parseInt(formattedValue);
-      }
-
-      if (type === 'number') {
-        formattedValue = new Number(formattedValue);
-      }
-
-      return {
-        ...state,
-        [property]: formattedValue,
-      };
-    },
-    exampleProp ? JSON.parse(exampleProp) : {}
-  );
 
   const formattedSchemaName = React.useMemo(
     () => formatSchemaName(name),
@@ -140,22 +107,22 @@ const Schema: React.FC<ISchema> = (props) => {
       >
         <SchemaContext.Provider
           value={{
-            addToSchemaExample,
             id: schemaId,
+            json,
             jsonPointer,
             services,
           }}
         >
           {schemaContent}
 
-          {Object.keys(example).length > 0 && (
+          {json && (
             <Example
               label="Example"
               language="json"
             >
               <>
                 {`// JSON Pointer: ${jsonPointer}\n`}
-                {JSON.stringify(example, null, 2)}
+                {JSON.stringify(json, null, 2)}
               </>
             </Example>
           )}
@@ -178,7 +145,7 @@ Schema.propTypes = {
       PropTypes.element.isRequired
     ),
   ]).isRequired,
-  example: PropTypes.string,
+  json: PropTypes.any.isRequired,
   jsonPointer: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
   services: PropTypes.oneOfType([

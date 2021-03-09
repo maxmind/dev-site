@@ -12,8 +12,8 @@ import styles from './Property.module.scss';
 const withContext = (element: React.ReactElement) => global.mountWithRouter(
   <SchemaContext.Provider
     value={{
-      addToSchemaExample: () => jest.fn(),
       id: '',
+      json: {},
       jsonPointer: '',
     }}
   >
@@ -31,6 +31,13 @@ describe('<Property />', () => {
     beforeAll(() => {
       component = global.mountWithRouter(
         <Schema
+          json={{
+            bar: 'bar',
+            baz: {
+              baz: 'baz',
+            },
+            foo: 'foo',
+          }}
           jsonPointer="/"
           name="Foo"
           type="object"
@@ -112,7 +119,6 @@ describe('<Property />', () => {
     it('is shown if `example` property exists', () => {
       const component = withContext(
         <Property
-          example="foo"
           name="foo"
           type="string"
         />
@@ -126,13 +132,6 @@ describe('<Property />', () => {
       () => {
         const component = withContext(
           <Property
-            example={`
-            [
-              {
-                "foo": "bar"
-              }
-            ]
-          `}
             name="foo"
             type="array<object>"
           />
@@ -151,11 +150,6 @@ describe('<Property />', () => {
     it('if `type` is `object`, the `example` value is formatted json', () => {
       const component = withContext(
         <Property
-          example={`
-          {
-            "foo": "bar"
-          }
-        `}
           name="foo"
           type="object"
         />
@@ -174,7 +168,6 @@ describe('<Property />', () => {
       () => {
         const component = withContext(
           <Property
-            example="foo"
             name="foo"
             type="string"
           />
@@ -204,7 +197,6 @@ describe('<Property />', () => {
       (type, example) => {
         const component = withContext(
           <Property
-            example={example}
             name="foo"
             type={type as SchemaPropertyType}
           />
@@ -237,7 +229,6 @@ describe('<Property />', () => {
       fit('`linkToSchemaName` is defined', () => {
         const component = withContext(
           <Property
-            example="foo"
             linkToSchemaName={'Foo'}
             name="foo"
             type="string"
@@ -250,7 +241,6 @@ describe('<Property />', () => {
       it('`services` is defined', () => {
         const component = withContext(
           <Property
-            example="foo"
             name="foo"
             services="*"
             type="string"
@@ -263,7 +253,6 @@ describe('<Property />', () => {
       it('`tags` is defined', () => {
         const component = withContext(
           <Property
-            example="foo"
             name="foo"
             tags={{
               foo: 'foo',
@@ -279,7 +268,6 @@ describe('<Property />', () => {
     it('lists service tags', () => {
       const component = withContext(
         <Property
-          example="foo"
           name="foo"
           type="string"
         />
@@ -294,7 +282,6 @@ describe('<Property />', () => {
       beforeAll(() => {
         const component = withContext(
           <Property
-            example="foo"
             name="foo"
             tags={{
               bar: 'bar',

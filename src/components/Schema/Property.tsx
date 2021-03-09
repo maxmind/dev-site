@@ -6,6 +6,11 @@ import GithubSlugger from 'github-slugger';
 import PropTypes from 'prop-types';
 import * as React from 'react';
 
+import {
+  isJsonArray,
+  isJsonMap,
+  isJsonStringPrimative,
+} from '../../utils/json';
 import { formatSchemaName } from '../../utils/openapi';
 import Example from '../Example';
 import SchemaContext from './SchemaContext';
@@ -19,7 +24,6 @@ const slugger = new GithubSlugger();
 type TagValue = boolean | string | number | null;
 export interface IProperty {
   children?: React.ReactElement | React.ReactElement[],
-  example?: string;
   linkToSchemaName?: string;
   name: string;
   schemaId?: string;
@@ -29,29 +33,38 @@ export interface IProperty {
 }
 
 const Property: React.FC<IProperty> = (props) => {
-  const location = useLocation();
-
-  const {
-    addToSchemaExample,
-    id: schemaId,
-    jsonPointer: schemaJsonPath,
-    services: schemaServices,
-  } = React.useContext(SchemaContext);
-
-  const [
-    formattedExample,
-    setFormattedExample,
-  ] = React.useState('');
-
   const {
     children: description,
-    example,
     linkToSchemaName,
     tags: schemaTags,
     name,
     services,
     type,
   } = props;
+
+  const location = useLocation();
+
+  const {
+    json: schemaJson,
+    id: schemaId,
+    jsonPointer: schemaJsonPath,
+    services: schemaServices,
+  } = React.useContext(SchemaContext);
+
+  const [
+    example,
+    setExample,
+  ] = React.useState<Json>();
+
+  const jsonPointer = React.useMemo(
+    () => schemaJsonPath === '/'
+      ? `${schemaJsonPath}${name}`
+      : `${schemaJsonPath}/${name}`,
+    [
+      name,
+      schemaJsonPath,
+    ]
+  );
 
   const propertyId = React.useMemo(
     () => `${schemaId}__${slugger.slug(name)}`,
@@ -68,48 +81,48 @@ const Property: React.FC<IProperty> = (props) => {
     ]
   );
 
-  const exampleLanguage = (type === 'object' || type.startsWith('array'))
-    ? 'json'
-    : 'bash';
+  const exampleLanguage = React.useMemo(
+    () => type === 'object' || type.startsWith('array')
+      ? 'json'
+      : 'bash',
+    [
+      type,
+    ]
+  );
 
-  React.useEffect(() => {
-    if (example) {
-      addToSchemaExample({
-        payload: {
-          name,
-          type,
-          value: example,
-        },
-      });
+  React.useEffect(
+    () => {
+      if (schemaJson) {
+        // eslint-disable-next-line security/detect-object-injection
+        const propertyExample = (schemaJson as any)[name];
 
-      const trimmedExample = example.trim();
+        if (!propertyExample) {
+          return;
+        }
 
-      if (type === 'object' || type.startsWith('array')) {
-        return setFormattedExample(JSON.stringify(
-          JSON.parse(trimmedExample),
-          null,
-          2
-        ));
+        if (isJsonArray(propertyExample) || isJsonMap(propertyExample)) {
+          return setExample(JSON.stringify(
+            propertyExample,
+            null,
+            2
+          ));
+        }
+
+        if (isJsonStringPrimative(propertyExample)) {
+          return setExample(`"${propertyExample}"`);
+        }
+
+        return setExample(propertyExample);
       }
-
-      if (type === 'string') {
-        return setFormattedExample(`"${trimmedExample}"`);
-      }
-
-      return setFormattedExample(trimmedExample);
-    }
-  }, [
-    addToSchemaExample,
-    example,
-    name,
-    type,
-  ]);
+    },
+    [
+      name,
+      schemaJson,
+      type,
+    ]
+  );
 
   const serviceTags = services || schemaServices;
-
-  const jsonPointer = schemaJsonPath === '/'
-    ? `${schemaJsonPath}${name}`
-    : `${schemaJsonPath}/${name}`;
 
   return (
     <div
@@ -150,7 +163,7 @@ const Property: React.FC<IProperty> = (props) => {
           <>
             {exampleLanguage === 'json' ? '//' : '#'}
             {` JSON Pointer: ${jsonPointer}\n`}
-            {formattedExample}
+            {example}
           </>
         </Example>
       )}
@@ -192,7 +205,7 @@ const Property: React.FC<IProperty> = (props) => {
                 >
 
                   {name}
-                  {value && (
+                  {typeof value !== 'undefined' && value !== null && (
                     <>
                       :
                       {' '}
@@ -224,7 +237,6 @@ Property.propTypes = {
     PropTypes.element,
     PropTypes.arrayOf(PropTypes.element.isRequired),
   ]),
-  example: PropTypes.string,
   linkToSchemaName: PropTypes.string,
   name: PropTypes.string.isRequired,
   services: PropTypes.oneOfType([

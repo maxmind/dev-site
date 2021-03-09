@@ -1,4 +1,7 @@
+import requestJson from '../_examples/request';
+
 <Schema
+  json={requestJson.device}
   jsonPointer="/device"
   name="Request | Device"
   services="*"
@@ -6,7 +9,6 @@
   This object contains information about the device used in the transaction.
 
   <Property
-    example="2001:db8::ff00:42:8329"
     tags={{
       'Format': 'IPv4 or IPv6',
     }}
@@ -18,9 +20,7 @@
     i.e., dotted-quad notation or the IPv6 hexadecimal-colon notation.
   </Property>
 
-  {/* <!--lint disable maximum-line-length --> */}
   <Property
-    example="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.89 Safari/537.36"
     tags={{
       'Max Length': 512,
     }}
@@ -29,10 +29,8 @@
   >
     The HTTP `User-Agent` header of the browser used in the transaction.
   </Property>
-  {/* <!--lint enable maximum-line-length --> */}
 
   <Property
-    example="en-US,en;q=0.8"
     tags={{
       'Max Length': 255,
     }}
@@ -43,7 +41,6 @@
   </Property>
 
   <Property
-    example="3600.5"
     tags={{
       'Format': 'decimal',
       'Min': 0,
@@ -58,7 +55,6 @@
   </Property>
 
   <Property
-    example="c2ffa1b7-f5c5-4702-beb2-4254794fe391"
     tags={{
       'Max Length': 255
     }}

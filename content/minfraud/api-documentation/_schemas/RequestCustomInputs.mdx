@@ -1,4 +1,7 @@
+import requestJson from '../_examples/request';
+
 <Schema
+  json={requestJson.custom_inputs}
   jsonPointer="/custom_inputs"
   name="Request | Custom Inputs"
   services="*"
@@ -9,7 +12,6 @@
   for more information.
 
   <Property
-    example="false"
     name="your_custom_BOOLEAN_key"
     type="boolean"
   >
@@ -17,7 +19,6 @@
   </Property>
 
   <Property
-    example="3.1415926535"
     tags={{
       'Format': 'float',
       'Min': '-1e14',
@@ -30,7 +31,6 @@
   </Property>
 
   <Property
-    example="800-342-1232"
     tags={{
       'Format': 'Phone number',
       'Max Length': 255,
@@ -45,7 +45,6 @@
   </Property>
 
   <Property
-    example="BEES?"
     tags={{
       'Max Length': 255,
     }}

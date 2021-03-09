@@ -1,4 +1,7 @@
+import requestJson from '../_examples/request';
+
 <Schema
+  json={requestJson}
   jsonPointer="/"
   name="Request"
   services="*"
@@ -28,34 +31,15 @@
   The entire request body is limited to 20,000 bytes. Requests larger than this
   size will be rejected.
 
-  {/* <!--lint disable maximum-line-length --> */}
   <Property
-    example={`
-      {
-        "ip_address": "2001:db8::ff00:42:8329",
-        "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.89 Safari/537.36",
-        "accept_language": "en-US,en;q=0.8",
-        "session_age": 3600.5,
-        "session_id": "c2ffa1b7-f5c5-4702-beb2-4254794fe391"
-      }
-    `}
     linkToSchemaName={'Request | Device'}
     name="device"
     type="object"
   >
     This object contains information about the device used in the transaction.
   </Property>
-  {/* <!--lint enable maximum-line-length --> */}
 
   <Property
-    example={`
-      {
-        "transaction_id": "txn3134133",
-        "shop_id": "s2123",
-        "time": "2012-04-12T23:20:50.52Z",
-        "type": "purchase"
-      }
-    `}
     linkToSchemaName={'Request | Event'}
     name="event"
     type="object"
@@ -64,12 +48,6 @@
   </Property>
 
   <Property
-    example={`
-      {
-        "user_id": "3132",
-        "username_md5": "570a90bfbf8c7eab5dc5d4e26832d5b1"
-      }
-    `}
     linkToSchemaName={'Request | Account'}
     name="account"
     type="object"
@@ -79,126 +57,42 @@
   </Property>
 
   <Property
-    example={`
-      {
-        "address": "977577b140bfb7c516e4746204fbdb01",
-        "domain": "maxmind.com"
-      }
-    `}
     linkToSchemaName={'Request | Email'}
     name="email"
     type="object"
   />
 
   <Property
-    example={`
-      {
-        "first_name": "John",
-        "last_name": "Doe",
-        "company": "Big Corp.",
-        "address": "400 Blake St.",
-        "address_2": "Suite 5",
-        "city": "New Haven",
-        "region": "CT",
-        "country": "US",
-        "postal": "06511",
-        "phone_number": "203-000-0000",
-        "phone_country_code": "1"
-      }
-    `}
     linkToSchemaName={'Request | Billing'}
     name="billing"
     type="object"
   />
 
   <Property
-    example={`
-      {
-        "first_name": "Jane",
-        "last_name": "Doe",
-        "company": "Smaller, Inc.",
-        "address": "82 Wall St.",
-        "address_2": "#1",
-        "city": "New Haven",
-        "region": "CT",
-        "country": "US",
-        "postal": "06515",
-        "phone_number": "203-000-0000",
-        "phone_country_code": "1",
-        "delivery_speed": "same_day"
-      }
-    `}
     linkToSchemaName={'Request | Shipping'}
     name="shipping"
     type="object"
   />
 
   <Property
-    example={`
-      {
-        "processor": "stripe",
-        "was_authorized": false,
-        "decline_code": "card_declined"
-      }
-    `}
     linkToSchemaName={'Request | Payment'}
     name="payment"
     type="object"
   />
 
   <Property
-    example={`
-      {
-        "issuer_id_number": "323132",
-        "last_4_digits": "7643",
-        "token": "OQRST14PLQ98323",
-        "bank_name": "Bank of America",
-        "bank_phone_country_code": "1",
-        "bank_phone_number": "800-342-1232",
-        "avs_result": "Y",
-        "cvv_result": "N"
-      }
-    `}
     linkToSchemaName={'Request | Credit Card'}
     name="credit_card"
     type="object"
   />
 
   <Property
-    example={`
-      {
-        "amount": 323.21,
-        "currency": "USD",
-        "discount_code": "FIRST",
-        "affiliate_id": "af12",
-        "subaffiliate_id": "saf42",
-        "referrer_uri": "http://www.google.com/",
-        "is_gift": true,
-        "has_gift_message": false
-      }
-    `}
     linkToSchemaName={'Request | Order'}
     name="order"
     type="object"
   />
 
   <Property
-    example={`
-      [
-        {
-          "category": "pets",
-          "item_id": "ad23232",
-          "quantity": 2,
-          "price": 20.43
-        },
-        {
-          "category": "beauty",
-          "item_id": "bst112",
-          "quantity": 1,
-          "price": 100.00
-        }
-      ]
-    `}
     linkToSchemaName="Request | Shopping Cart | Item"
     name="shopping_cart"
     type="array<object>"
@@ -208,12 +102,6 @@
   </Property>
 
   <Property
-    example={`
-      {
-        "a_custom_input_key": "NSC0083121",
-        "another_custom_input_key": false
-      }
-    `}
     linkToSchemaName="Request | Custom Inputs"
     name="custom_inputs"
     type="object"

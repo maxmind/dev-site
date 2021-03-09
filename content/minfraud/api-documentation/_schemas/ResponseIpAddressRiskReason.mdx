@@ -1,4 +1,7 @@
+import responseJson from '../_examples/response';
+
 <Schema
+  json={responseJson.ip_address.risk_reasons[0]}
   jsonPointer="/ip_address/risk_reasons/{n}"
   name="Response | IP Address | Risk Reason"
   services={[
@@ -8,7 +11,6 @@
   type="array<object>"
 >
   <Property
-    example="ANONYMOUS_IP"
     name="code"
     tags={{
       'Enum': null,
@@ -77,9 +79,7 @@
     </table>
   </Property>
 
-  {/* <!--lint disable maximum-line-length --> */}
   <Property
-    example="The IP address belongs to an anonymous network. See /ip_address/traits for more details."
     name="reason"
     type="string"
   >
@@ -87,5 +87,4 @@
     above. The explanation text may change at any time and should not be matched
     against.
   </Property>
-  {/* <!--lint enable maximum-line-length --> */}
 </Schema>

@@ -98,7 +98,7 @@ export default {
         background_color: '#663399',
         display: 'minimal-ui',
         // This path must be relative to the Gatsby root
-        icon: 'src/images/maxmind-icon.png',
+        icon: 'src/images/gatsby-icon.png',
         name: 'gatsby-starter-default',
         short_name: 'starter',
         start_url: '/',
@@ -145,13 +145,13 @@ export default {
       resolve: 'gatsby-plugin-feed',
     },
     // 'gatsby-plugin-feed',
-    // {
-    //   options: {
-    //     analyzerPort: 3000,
-    //     production: true,
-    //   },
-    //   resolve: 'gatsby-plugin-webpack-bundle-analyzer',
-    // },
+    {
+      options: {
+        analyzerPort: 3000,
+        production: true,
+      },
+      resolve: 'gatsby-plugin-webpack-bundle-analyzer',
+    },
     ...THESE_PLUGINS_MUST_COME_LAST,
   ],
   siteMetadata: {

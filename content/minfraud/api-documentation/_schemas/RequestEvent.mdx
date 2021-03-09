@@ -1,4 +1,7 @@
+import requestJson from '../_examples/request';
+
 <Schema
+  json={requestJson.event}
   jsonPointer="/event"
   name="Request | Event"
   services="*"
@@ -6,7 +9,6 @@
   This object contains general information related to the event being scored.
 
   <Property
-    example="txn3134133"
     tags={{
       'Max Length': 255
     }}
@@ -19,7 +21,6 @@
   </Property>
 
   <Property
-    example="s2123"
     tags={{
       'Max Length': 255
     }}
@@ -32,7 +33,6 @@
   </Property>
 
   <Property
-    example="2012-04-12T23:20:50.52Z"
     name="time"
     type="string"
   >
@@ -49,7 +49,6 @@
   </Property>
 
   <Property
-    example="account_creation"
     tags={{
       'Enum': null,
     }}

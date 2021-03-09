@@ -1,4 +1,7 @@
+import responseJson from '../_examples/response';
+
 <Schema
+  json={responseJson.email}
   jsonPointer="/email"
   name="Response | Email"
   services={[
@@ -8,7 +11,6 @@
   type="object"
 >
   <Property
-    example={``}
     linkToSchemaName="Response | Email | Domain"
     name="domain"
     type="object"
@@ -17,7 +19,6 @@
   </Property>
 
   <Property
-    example={``}
     name="first_seen"
     tags={{
       'Format': 'YYYY-MM-DD',
@@ -31,7 +32,6 @@
   </Property>
 
   <Property
-    example={``}
     name="is_disposable"
     type="boolean"
   >
@@ -42,7 +42,6 @@
   </Property>
 
   <Property
-    example={``}
     name="is_free"
     type="boolean"
   >
@@ -53,7 +52,6 @@
   </Property>
 
   <Property
-    example={``}
     name="is_high_risk"
     type="boolean"
   >

@@ -3,11 +3,7 @@ draft: false
 title: minFraud API Responses
 ---
 
-import errorResponseJson from './_examples/response-error.json';
-import factorsResponseJson from './_examples/response-factors.json';
-import insightsResponseJson from './_examples/response-insights.json';
-import scoreResponseJson from './_examples/response-score.json';
-
+import * as responseJson from './_examples/response'
 import * as Schemas from './_schemas/';
 
 ## Headers
@@ -55,22 +51,22 @@ that describe each service's response body.
 ### Score Body
 
 <Example language="json">
-  {JSON.stringify(scoreResponseJson, null, 2)}
+  {JSON.stringify(responseJson.score, null, 2)}
 </Example>
 
 ### Insights Body
 <Example language="json">
-  {JSON.stringify(insightsResponseJson, null, 2)}
+  {JSON.stringify(responseJson.insights, null, 2)}
 </Example>
 
 ### Factors Body
 <Example language="json">
-  {JSON.stringify(factorsResponseJson, null, 2)}
+  {JSON.stringify(responseJson.factors, null, 2)}
 </Example>
 
 ### Error Body
 <Example language="json">
-  {JSON.stringify(errorResponseJson, null, 2)}
+  {JSON.stringify(responseJson.error, null, 2)}
 </Example>
 
 ## Errors

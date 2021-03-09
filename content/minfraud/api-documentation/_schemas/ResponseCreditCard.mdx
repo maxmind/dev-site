@@ -1,4 +1,7 @@
+import responseJson from '../_examples/response';
+
 <Schema
+  json={responseJson.credit_card}
   jsonPointer="/credit_card"
   name="Response | Credit Card"
   services={[
@@ -12,14 +15,6 @@
   be present in the response.
 
   <Property
-    example={`
-      {
-        "name": "Bank of America",
-        "matches_provided_name": true,
-        "phone_number": "800-732-9194",
-        "matches_provided_phone_number": true
-      }
-    `}
     linkToSchemaName="Response | Credit Card | Issuer"
     name="issuer"
     type="object"
@@ -28,7 +23,6 @@
   </Property>
 
   <Property
-    example="Visa"
     name="brand"
     tags={{
       'Max Length': 255,
@@ -39,7 +33,6 @@
   </Property>
 
   <Property
-    example="US"
     name="country"
     tags={{
       'Max Length': 2,
@@ -54,7 +47,6 @@
   </Property>
 
   <Property
-    example="true"
     name="is_business"
     type="boolean"
   >
@@ -64,7 +56,6 @@
   </Property>
 
   <Property
-    example="true"
     name="is_issued_in_billing_address_country"
     type="boolean"
   >
@@ -77,7 +68,6 @@
   </Property>
 
   <Property
-    example="true"
     name="is_prepaid"
     type="boolean"
   >
@@ -87,7 +77,6 @@
   </Property>
 
   <Property
-    example="true"
     name="is_virtual"
     type="boolean"
   >
@@ -97,7 +86,6 @@
   </Property>
 
   <Property
-    example="credit"
     name="type"
     tags={{
       'Enum': null,

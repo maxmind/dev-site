@@ -1,4 +1,7 @@
+import responseJson from '../_examples/response';
+
 <Schema
+  json={responseJson.credit_card.issuer}
   jsonPointer="/credit_card/issuer"
   name="Response | Credit Card | Issuer"
   services={[
@@ -11,7 +14,6 @@
   issuer of the card.
 
   <Property
-    example=""
     name="name"
     tags={{
       'Max Length': 255,
@@ -22,7 +24,6 @@
   </Property>
 
   <Property
-    example=""
     name="matches_provided_name"
     type="boolean"
   >
@@ -33,7 +34,6 @@
   </Property>
 
   <Property
-    example=""
     name="phone_number"
     tags={{
       'Max Length': 255,
@@ -45,7 +45,6 @@
   </Property>
 
   <Property
-    example="true"
     name="matches_provided_phone_number"
     type="boolean"
   >

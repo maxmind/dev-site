@@ -1,4 +1,7 @@
+import responseJson from '../_examples/response';
+
 <Schema
+  json={responseJson.email.domain}
   jsonPointer="/email/domain"
   name="Response | Email | Domain"
   service={[
@@ -11,7 +14,6 @@
   domain.
 
   <Property
-    example=""
     name="first_seen"
     tags={{
       'Format': 'YYYY-MM-DD',

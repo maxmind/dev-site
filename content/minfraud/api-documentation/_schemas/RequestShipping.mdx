@@ -1,10 +1,11 @@
+import requestJson from '../_examples/request';
+
 <Schema
-  jsonPointer="/shipping"
+  json={requestJson.shipping}
   name="Request | Shipping"
   services="*"
 >
   <Property
-    example="Jane"
     tags={{
       'Max Length': 255,
     }}
@@ -15,7 +16,6 @@
   </Property>
 
   <Property
-    example="Doe"
     tags={{
       'Max Length': 255,
     }}
@@ -26,7 +26,6 @@
   </Property>
 
   <Property
-    example="Smaller, Inc."
     tags={{
       'Max Length': 255,
     }}
@@ -37,7 +36,6 @@
   </Property>
 
   <Property
-    example="82 Wall St."
     tags={{
       'Max Length': 255,
     }}
@@ -48,7 +46,6 @@
   </Property>
 
   <Property
-    example="#1"
     tags={{
       'Max Length': 255,
     }}
@@ -59,7 +56,6 @@
   </Property>
 
   <Property
-    example="New Haven"
     tags={{
       'Max Length': 255,
     }}
@@ -70,7 +66,6 @@
   </Property>
 
   <Property
-    example="CT"
     tags={{
       'Max Length': 4,
     }}
@@ -82,7 +77,6 @@
   </Property>
 
   <Property
-    example="US"
     tags={{
       'Max Length': 2,
     }}
@@ -94,7 +88,6 @@
   </Property>
 
   <Property
-    example="06511"
     tags={{
       'Max Length': 255,
     }}
@@ -105,7 +98,6 @@
   </Property>
 
   <Property
-    example="203-000-0000"
     tags={{
       'Max Length': 255,
     }}
@@ -118,7 +110,6 @@
   </Property>
 
   <Property
-    example="1"
     tags={{
       'Max Length': 4,
     }}
@@ -131,7 +122,6 @@
   </Property>
 
   <Property
-    example="same_day"
     tags={{
       Enum: null,
     }}

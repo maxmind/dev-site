@@ -1,4 +1,7 @@
+import responseJson from '../_examples/response';
+
 <Schema
+  json={responseJson.device}
   jsonPointer="/device"
   name="Response | Device"
   services={[
@@ -11,7 +14,6 @@
   associated with the IP address passed in the request.
 
   <Property
-    example=""
     name="confidence"
     tags={{
       'Format': 'Decimal',
@@ -27,7 +29,6 @@
   </Property>
 
   <Property
-    example=""
     name="id"
     tags={{
       'Format': 'UUID',
@@ -44,7 +45,6 @@
   </Property>
 
   <Property
-    example=""
     name="last_seen"
     tags={{
       'Max Length': 255,
@@ -56,7 +56,6 @@
   </Property>
 
   <Property
-    example=""
     name="local_time"
     tags={{
       'Max Length': 255,

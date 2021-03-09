@@ -1,10 +1,12 @@
+import requestJson from '../_examples/request';
+
 <Schema
+  json={requestJson.credit_card}
   jsonPointer="/credit_card"
   name="Request | Credit Card"
   services="*"
 >
   <Property
-    example="323132"
     name="issue_id_number"
     tags={{
       'Max Length': 6,
@@ -16,7 +18,6 @@
   </Property>
 
   <Property
-    example="7643"
     name="last_4_digits"
     tags={{
       'Max Length': 4,
@@ -27,7 +28,6 @@
   </Property>
 
   <Property
-    example="OQRST14PLQ98323"
     name="token"
     tags={{
       'Max Length': 255,
@@ -43,7 +43,6 @@
   </Property>
 
   <Property
-    example="Bank of America"
     name="bank_name"
     tags={{
       'Max Length': 255,
@@ -54,7 +53,6 @@
   </Property>
 
   <Property
-    example="1"
     name="bank_country_code"
     tags={{
       'Max Length': 4,
@@ -66,7 +64,6 @@
   </Property>
 
   <Property
-    example="800-342-1232"
     name="bank_phone_number"
     tags={{
       'Max Length': 255,
@@ -79,7 +76,6 @@
   </Property>
 
   <Property
-    example="Y"
     name="avs_result"
     tags={{
       'Max Length': 1,
@@ -92,7 +88,6 @@
   </Property>
 
   <Property
-    example="N"
     name="cvv_result"
     tags={{
       'Max Length': 1,

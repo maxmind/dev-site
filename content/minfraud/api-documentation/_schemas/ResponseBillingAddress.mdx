@@ -1,4 +1,7 @@
+import responseJson from '../_examples/response';
+
 <Schema
+  json={responseJson.billing_address}
   jsonPointer="/billing_address"
   name="Response | Billing Address"
   services={[
@@ -8,7 +11,6 @@
   type="object"
 >
   <Property
-    example=""
     name="is_postal_in_city"
     type="boolean"
   >
@@ -24,7 +26,6 @@
   </Property>
 
   <Property
-    example=""
     name="latitude"
     tags={{
       'Format': 'Decimal'
@@ -41,7 +42,6 @@
   </Property>
 
   <Property
-    example=""
     name="longitude"
     tags={{
       'Format': 'Decimal'
@@ -58,7 +58,6 @@
   </Property>
 
   <Property
-    example=""
     name="distance_to_ip_location"
     type="integer"
   >
@@ -66,7 +65,6 @@
   </Property>
 
   <Property
-    example=""
     name="is_in_ip_country"
     type="boolean"
   >

@@ -1,20 +1,7 @@
+import requestJson from '../_examples/request';
+
 <Schema
-  example={`
-    [
-      {
-        "category": "pets",
-        "item_id": "ad23232",
-        "quantity": 2,
-        "price": 20.43
-      },
-      {
-        "category": "beauty",
-        "item_id": "bst112",
-        "quantity": 1,
-        "price": 100.00
-      }
-    ]
-  `}
+  json={requestJson.shopping_cart}
   jsonPointer="/shopping_cart"
   name="Request | Shopping Cart"
   type="array<object>"

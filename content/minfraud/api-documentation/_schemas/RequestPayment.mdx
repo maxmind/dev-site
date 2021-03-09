@@ -1,10 +1,12 @@
+import requestJson from '../_examples/request';
+
 <Schema
+  json={requestJson.payment}
   jsonPointer="/payment"
   name="Request | Payment"
   services="*"
 >
   <Property
-    example="stripe"
     name="processor"
     tags={{
       Enum: null
@@ -153,7 +155,6 @@
   </Property>
 
   <Property
-    example="false"
     name="was_authorized"
     type="boolean"
   >
@@ -162,7 +163,6 @@
   </Property>
 
   <Property
-    example="card_declined"
     name="decline_code"
     tags={{
       'Max Length': 255,

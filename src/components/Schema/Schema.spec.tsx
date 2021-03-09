@@ -4,10 +4,19 @@ import { p as P } from '../Mdx';
 import Property from './Property';
 import Schema from './Schema';
 
+const json = {
+  bar: 'bar',
+  baz: {
+    baz: 'baz',
+  },
+  foo: 'foo',
+};
+
 describe('Schema', () => {
   it('renders children', async () => {
     const component = global.mountWithRouter(
       <Schema
+        json={json}
         jsonPointer="/"
         name="Foo"
         type="object"
@@ -39,6 +48,7 @@ describe('Schema', () => {
     beforeEach(() => {
       component = global.mountWithRouter(
         <Schema
+          json={json}
           jsonPointer="/"
           name="Foo"
           services="*"

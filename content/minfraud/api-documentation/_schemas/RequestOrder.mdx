@@ -1,10 +1,12 @@
+import requestJson from '../_examples/request';
+
 <Schema
+  json={requestJson.order}
   jsonPointer="/order"
   name="Request | Order"
   services="*"
 >
   <Property
-    example="323.21"
     name="amount"
     tags={{
       'Format': 'decimal',
@@ -17,7 +19,6 @@
   </Property>
 
   <Property
-    example="USD"
     name="currency"
     tags={{
       'Max Length': 3,
@@ -29,7 +30,6 @@
   </Property>
 
   <Property
-    example="FIRST"
     name="discount_code"
     tags={{
       'Max Length': 255,
@@ -41,7 +41,6 @@
   </Property>
 
   <Property
-    example="af12"
     name="affiliate_id"
     tags={{
       'Max Length': 255,
@@ -53,7 +52,6 @@
   </Property>
 
   <Property
-    example="saf42"
     name="subaffiliate_id"
     tags={{
       'Max Length': 255,
@@ -65,7 +63,6 @@
   </Property>
 
   <Property
-    example="https://www.google.com/"
     name="referrer_uri"
     tags={{
       'Max Length': 1024,
@@ -77,7 +74,6 @@
   </Property>
 
   <Property
-    example="true"
     name="is_gift"
     type="boolean"
   >
@@ -85,7 +81,6 @@
   </Property>
 
   <Property
-    example="false"
     name="has_gift_message"
     type="boolean"
   >

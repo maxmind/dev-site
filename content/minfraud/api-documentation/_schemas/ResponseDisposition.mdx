@@ -1,4 +1,7 @@
+import responseJson from '../_examples/response';
+
 <Schema
+  json={responseJson.disposition}
   jsonPointer="/disposition"
   name="Response | Disposition"
   services="*"
@@ -10,7 +13,6 @@
   this object will not be present in the response.
 
   <Property
-    example=""
     name="action"
     tags={{
       'Enum': null,
@@ -47,7 +49,6 @@
   </Property>
 
   <Property
-    example=""
     name="reason"
     tags={{
       'Enum': null,

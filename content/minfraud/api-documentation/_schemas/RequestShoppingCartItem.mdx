@@ -1,10 +1,12 @@
+import requestJson from '../_examples/request';
+
 <Schema
+  json={requestJson.shopping_cart[0]}
   jsonPointer="/shopping_cart/{n}"
   name="Request | Shopping Cart | Item"
   services="*"
 >
   <Property
-    example="pets"
     name="category"
     tags={{
       'Max Length': 255,
@@ -15,7 +17,6 @@
   </Property>
 
   <Property
-    example="ad23232"
     name="item_id"
     tags={{
       'Max Length': 255,
@@ -27,7 +28,6 @@
   </Property>
 
   <Property
-    example="2"
     name="quantity"
     tags={{
       'Min': 0,
@@ -40,7 +40,6 @@
   </Property>
 
   <Property
-    example="20.43"
     name="price"
     tags={{
       'Format': 'Decimal',
