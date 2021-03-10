@@ -13,7 +13,6 @@ import requestJson from '../_examples/request';
       'Min': 0,
       'Max': '1e14 – 1',
     }}
-    type="number"
   >
     The total order amount for the transaction before taxes and discounts.
   </Property>
@@ -23,7 +22,6 @@ import requestJson from '../_examples/request';
     tags={{
       'Max Length': 3,
     }}
-    type="string"
   >
     The [ISO 4217 currency code](https://en.wikipedia.org/wiki/ISO_4217) for the
     currency used in the transaction.
@@ -34,7 +32,6 @@ import requestJson from '../_examples/request';
     tags={{
       'Max Length': 255,
     }}
-    type="string"
   >
     The discount code applied to the transaction. If multiple discount codes
     were used, please separate them with a comma.
@@ -45,7 +42,6 @@ import requestJson from '../_examples/request';
     tags={{
       'Max Length': 255,
     }}
-    type="string"
   >
     The ID of the affiliate where the order is coming from. No specific format
     is required.
@@ -56,7 +52,6 @@ import requestJson from '../_examples/request';
     tags={{
       'Max Length': 255,
     }}
-    type="string"
   >
     The ID of the sub-affiliate where the order is coming from. No specific
     format is required.
@@ -67,7 +62,6 @@ import requestJson from '../_examples/request';
     tags={{
       'Max Length': 1024,
     }}
-    type="string"
   >
     The URI of the referring site for this order. Needs to be absolute and have
     a URI scheme such as `https://`.
@@ -75,14 +69,12 @@ import requestJson from '../_examples/request';
 
   <Property
     name="is_gift"
-    type="boolean"
   >
     Whether order was marked as a gift by the purchaser.
   </Property>
 
   <Property
     name="has_gift_message"
-    type="boolean"
   >
     Whether the purchaser included a gift message.
   </Property>

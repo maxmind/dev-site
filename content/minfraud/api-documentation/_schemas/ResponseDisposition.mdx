@@ -5,7 +5,6 @@ import responseJson from '../_examples/response';
   jsonPointer="/disposition"
   name="Response | Disposition"
   services="*"
-  type="object"
 >
   This object contains information about how a request was handled by the
   [custom rules](https://www.maxmind.com/en/solutions/minfraud-services/custom-rules)
@@ -17,7 +16,6 @@ import responseJson from '../_examples/response';
     tags={{
       'Enum': null,
     }}
-    type="string"
   >
     This describes how the request was handled. The valid values are:
 
@@ -53,7 +51,6 @@ import responseJson from '../_examples/response';
     tags={{
       'Enum': null,
     }}
-    type="string"
   >
     This describes why the `action` was set to a particular value. The valid
     values are:

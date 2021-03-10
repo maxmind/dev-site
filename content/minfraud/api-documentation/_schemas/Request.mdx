@@ -34,7 +34,6 @@ import requestJson from '../_examples/request';
   <Property
     linkToSchemaName={'Request | Device'}
     name="device"
-    type="object"
   >
     This object contains information about the device used in the transaction.
   </Property>
@@ -42,7 +41,6 @@ import requestJson from '../_examples/request';
   <Property
     linkToSchemaName={'Request | Event'}
     name="event"
-    type="object"
   >
     This object contains general information related to the event being scored.
   </Property>
@@ -50,7 +48,6 @@ import requestJson from '../_examples/request';
   <Property
     linkToSchemaName={'Request | Account'}
     name="account"
-    type="object"
   >
     This object contains account information for the end-user on the site where
     the event took place.
@@ -59,43 +56,36 @@ import requestJson from '../_examples/request';
   <Property
     linkToSchemaName={'Request | Email'}
     name="email"
-    type="object"
   />
 
   <Property
     linkToSchemaName={'Request | Billing'}
     name="billing"
-    type="object"
   />
 
   <Property
     linkToSchemaName={'Request | Shipping'}
     name="shipping"
-    type="object"
   />
 
   <Property
     linkToSchemaName={'Request | Payment'}
     name="payment"
-    type="object"
   />
 
   <Property
     linkToSchemaName={'Request | Credit Card'}
     name="credit_card"
-    type="object"
   />
 
   <Property
     linkToSchemaName={'Request | Order'}
     name="order"
-    type="object"
   />
 
   <Property
     linkToSchemaName="Request | Shopping Cart | Item"
     name="shopping_cart"
-    type="array<object>"
   >
     This is an array of shopping cart item objects. A shopping cart should
     consist of an array of one or more item objects.
@@ -104,7 +94,6 @@ import requestJson from '../_examples/request';
   <Property
     linkToSchemaName="Request | Custom Inputs"
     name="custom_inputs"
-    type="object"
   >
     Custom Inputs are optional inputs to the minFraud service that must first be
     defined for your account. Select “Custom Inputs” from the Account Portal in

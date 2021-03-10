@@ -11,7 +11,6 @@ import requestJson from '../_examples/request';
     tags={{
       'Max Length': 255,
     }}
-    type="string"
   >
     The category of the item. This can also be a hashed value; see below.
   </Property>
@@ -21,7 +20,6 @@ import requestJson from '../_examples/request';
     tags={{
       'Max Length': 255,
     }}
-    type="string"
   >
     Your internal ID for the item. No specific format is required. This can also
     be a hashed value; see below.
@@ -46,20 +44,19 @@ import requestJson from '../_examples/request';
       'Min': 0,
       'Max': '1e14-1',
     }}
-    type="number"
   >
     The per-unit price of this item in the shopping cart. This should use the
     same currency as the order currency.
   </Property>
 
   <Footnote>
-    Instead of passing plain values to the minFraud API, using hashed values
-    instead can increase the privacy of your customers' information while
-    continuing to fulfil the needs for fraud detection. A suitable hashed value
-    can be produced by using a cryptographic hash function and a fixed salt. Using
-    a random salt is not recommended as that will result in different hashed
-    values for the same plain value, which would make them ineffective for our
-    fraud detection service. See these links for more information:
+    Passing hashed values for shopping cart items can increase the privacy of
+    your customers' information while continuing to fulfill the needs for fraud
+    detection. A suitable hashed value can be produced by using a cryptographic
+    hash function and a fixed salt. **Using a random salt is not recommended**
+    as that will result in different hashed values for the same plain value,
+    which would make them ineffective for our fraud detection service. For more
+    information, see:
 
     * [OWASP Cryptographic Storage Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/Cryptographic_Storage_Cheat_Sheet.html)
     * [NIST FIPS Secure Hash Standard (SHS)](https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.180-4.pdf)

@@ -9,11 +9,10 @@ import requestJson from '../_examples/request';
   This object contains general information related to the event being scored.
 
   <Property
+    name="transaction_id"
     tags={{
       'Max Length': 255
     }}
-    name="transaction_id"
-    type="string"
   >
     Your internal ID for the transaction. We can use this to locate a specific
     transaction in our logs, and it will also show up in email alerts and
@@ -21,11 +20,10 @@ import requestJson from '../_examples/request';
   </Property>
 
   <Property
+    name="shop_id"
     tags={{
       'Max Length': 255
     }}
-    name="shop_id"
-    type="string"
   >
     Your internal ID for the shop, affiliate, or merchant this order is coming
     from. Required for minFraud users who are resellers, payment providers,
@@ -34,7 +32,6 @@ import requestJson from '../_examples/request';
 
   <Property
     name="time"
-    type="string"
   >
     The date and time the event occurred. The string must be in the
     [RFC 3339](https://tools.ietf.org/html/rfc3339) date-time format. The time
@@ -49,11 +46,10 @@ import requestJson from '../_examples/request';
   </Property>
 
   <Property
+    name="type"
     tags={{
       'Enum': null,
     }}
-    name="type"
-    type="string"
   >
     The type of event being scored. The valid types are:
 

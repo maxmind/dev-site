@@ -1,13 +1,47 @@
+import _isBoolean from 'lodash.isboolean';
+import _isNumber from 'lodash.isnumber';
 import isPlainObject from 'lodash.isplainobject';
 
-export const isJsonArray = (
-  json: Json
-): json is IJsonArray => Array.isArray(json);
+export const isArray = (
+  value: Json
+): value is IJsonArray => Array.isArray(value);
 
-export const isJsonMap = (
-  json: Json
-): json is IJsonMap => isPlainObject(json);
+export const isBoolean = (
+  value: Json
+): value is boolean => _isBoolean(value);
 
-export const isJsonStringPrimative = (
-  json: Json
-): json is IJsonMap => typeof json === 'string';
+export const isObject = (
+  value: Json
+): value is IJsonObject => isPlainObject(value);
+
+export const isNumber = (
+  value: Json
+): value is number => _isNumber(value);
+
+export const isString = (
+  value: Json
+): value is string => typeof value === 'string';
+
+export const inferType = (value: Json): string => {
+  if (isArray(value)) {
+    return 'array';
+  }
+
+  if (isBoolean(value)) {
+    return 'boolean';
+  }
+
+  if (isObject(value)) {
+    return 'object';
+  }
+
+  if (isNumber(value)) {
+    return 'number';
+  }
+
+  if (isString(value)) {
+    return 'string';
+  }
+
+  return 'null';
+};

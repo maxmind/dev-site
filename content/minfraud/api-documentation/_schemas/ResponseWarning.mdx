@@ -4,14 +4,12 @@ import responseJson from '../_examples/response';
   json={responseJson.warnings[0]}
   jsonPointer="/warnings/{n}"
   name="Response | Warning"
-  type="object"
 >
   <Property
+    name="code"
     tags={{
       'Max Length': 255,
     }}
-    name="code"
-    type="string"
   >
     This value is a machine-readable code identifying the warning. Although more
     codes may be added in the future, the current codes are:
@@ -137,22 +135,20 @@ import responseJson from '../_examples/response';
   </Property>
 
   <Property
+    name="warning"
     tags={{
       'Max Length': 255,
     }}
-    name="warning"
-    type="string"
   >
     This field provides a human-readable explanation of the warning. The
     description may change at any time and should not be matched against.
   </Property>
 
   <Property
+    name="input_pointer"
     tags={{
       'JSON Pointer': null,
     }}
-    name="input_pointer"
-    type="string"
   >
     A [JSON Pointer](https://tools.ietf.org/html/rfc6901) to the input field
     that the warning is associated with. For instance, if the warning was about

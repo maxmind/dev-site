@@ -32,32 +32,22 @@ import responseJson from '../_examples/response';
 
   <Property
     name="risk"
+    services="*"
     tags={{
       'Format': 'Decimal',
     }}
-    services="*"
-    type="number"
   >
     This field contains the risk associated with the IP address. The value
     ranges from 0.01 to 99. A higher score indicates a higher risk.
   </Property>
 
   <Property
-    name="risk_reasons"
+    linkToSchemaName="Response | IP Address | Country"
+    name="country"
     services={[
       'insights',
       'factors',
     ]}
-    type="array<object>"
-  >
-    	This array contains IP Address Risk Reason objects identifying the reasons
-      why the IP address received the associated risk.
-  </Property>
-
-  <Property
-    linkToSchemaName="Response | IP Address | Country"
-    name="country"
-    type="object"
   >
     // TODO - Short description
   </Property>
@@ -65,7 +55,10 @@ import responseJson from '../_examples/response';
   <Property
     linkToSchemaName="Response | IP Address | Location"
     name="location"
-    type="object"
+    services={[
+      'insights',
+      'factors',
+    ]}
   >
     // TODO - Short description
   </Property>
@@ -73,8 +66,12 @@ import responseJson from '../_examples/response';
   <Property
     linkToSchemaName="Response | IP Address | Risk Reasons"
     name="risk_reasons"
-    type="array<object>"
+    services={[
+      'insights',
+      'factors',
+    ]}
   >
-    // TODO - Short description
+    This array contains [IP Address Risk Reason objects](#schema--response--ip-address--risk-reason)
+    identifying the reasons why the IP address received the associated risk.
   </Property>
 </Schema>

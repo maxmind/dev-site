@@ -10,11 +10,10 @@ import requestJson from '../_examples/request';
   the event took place.
 
   <Property
+    name="user_id"
     tags={{
       'Max Length': 255,
     }}
-    name="user_id"
-    type="string"
   >
     A unique user ID associated with the end-user in your system. If your system
     allows the login name for the account to be changed, this should not be the
@@ -24,12 +23,11 @@ import requestJson from '../_examples/request';
   </Property>
 
   <Property
+    name="time"
     tags={{
       'Format': 'md5',
       'Max Length': 32,
     }}
-    name="time"
-    type="string"
   >
     The date and time the event occurred. The string must be in the
     [RFC 3339](https://tools.ietf.org/html/rfc3339) date-time format. The time

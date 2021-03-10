@@ -7,12 +7,11 @@ import requestJson from '../_examples/request';
   services="*"
 >
   <Property
+    name="address"
     tags={{
       'Max Length': 255,
       'Type': 'Email or MD5 of Email'
     }}
-    name="address"
-    type="string"
   >
     This field must be either be a valid email address or an MD5 of the email
     used in the transaction.
@@ -29,7 +28,6 @@ import requestJson from '../_examples/request';
     tags={{
       'Max Length': 255,
     }}
-    type="string"
   >
     The domain of the email address used in the transaction. Do not include the
     `@` in this field.

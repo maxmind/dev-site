@@ -6,6 +6,7 @@ import PropTypes from 'prop-types';
 import * as React from 'react';
 import { FaLink as LinkIcon } from 'react-icons/fa';
 
+import { inferType } from '../../utils/json';
 import { formatSchemaName } from '../../utils/openapi';
 import Example from '../Example';
 import SchemaContext from './SchemaContext';
@@ -19,7 +20,7 @@ interface ISchema {
   jsonPointer: string;
   name: string;
   services?: MinFraudServices;
-  type: SchemaType;
+  type?: SchemaType;
 }
 
 const slugger = new GithubSlugger();
@@ -48,6 +49,13 @@ const Schema: React.FC<ISchema> = (props) => {
     ]
   );
 
+  const inferredType = React.useMemo(
+    () => inferType(json),
+    [
+      json,
+    ]
+  );
+
   const [
     schemaContent,
     propertyContent,
@@ -55,11 +63,7 @@ const Schema: React.FC<ISchema> = (props) => {
     const content = React.Children.toArray(children);
 
     const firstPropertyComponentIndex =  content.findIndex(
-      (child: any) => (
-        child?.type?.name === 'Property'
-          || child?.props?.mdxType === 'Property'
-          || child?.props?.originalType?.name === 'MDXContent'
-      )
+      (child: any) => child.props.mdxType === 'Property'
     );
 
     return [
@@ -98,7 +102,7 @@ const Schema: React.FC<ISchema> = (props) => {
           <Tag
             className={styles['heading__tag']}
           >
-            {type}
+            {type || inferredType}
           </Tag>
         </span>
       </div>
@@ -134,9 +138,6 @@ const Schema: React.FC<ISchema> = (props) => {
   );
 };
 
-Schema.defaultProps = {
-  type: 'object',
-};
 
 Schema.propTypes = {
   children: PropTypes.oneOfType([

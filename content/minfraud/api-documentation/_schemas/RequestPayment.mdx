@@ -11,7 +11,6 @@ import requestJson from '../_examples/request';
     tags={{
       Enum: null
     }}
-    type="string"
   >
     The payment processor used for the transaction. The valid values are:
 
@@ -156,7 +155,6 @@ import requestJson from '../_examples/request';
 
   <Property
     name="was_authorized"
-    type="boolean"
   >
     The authorization outcome from the payment processor. If the transaction has
     not yet been approved or denied, do not include this field.
@@ -167,7 +165,6 @@ import requestJson from '../_examples/request';
     tags={{
       'Max Length': 255,
     }}
-    type="string"
   >
     The decline code as provided by your payment processor. If the transaction
     was not declined, do not include this field.

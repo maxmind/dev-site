@@ -8,7 +8,6 @@ import responseJson from '../_examples/response';
     'insights',
     'factors'
   ]}
-  type="object"
 >
   This object contains information about the device that MaxMind believes is
   associated with the IP address passed in the request.
@@ -20,7 +19,6 @@ import responseJson from '../_examples/response';
       'Min': 0.01,
       'Max': 99,
     }}
-    type="number"
   >
     A number from 0.01 to 99 representing the confidence that the `/device/id`
     refers to a unique device as opposed to a cluster of similar devices. A
@@ -33,7 +31,6 @@ import responseJson from '../_examples/response';
     tags={{
       'Format': 'UUID',
     }}
-    type="string"
   >
     A UUID that MaxMind uses for the device associated with this IP address.
     Note that many devices cannot be uniquely identified because they are too
@@ -49,7 +46,6 @@ import responseJson from '../_examples/response';
     tags={{
       'Max Length': 255,
     }}
-    type="string"
   >
     The date and time of the last sighting of the device. The value is formatted
     according to [RFC 3339](https://tools.ietf.org/html/rfc3339).
@@ -60,7 +56,6 @@ import responseJson from '../_examples/response';
     tags={{
       'Max Length': 255,
     }}
-    type="string"
   >
     The local date and time of the transaction in the time zone of the device.
     This is determined by using the UTC offset associated with the device.

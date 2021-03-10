@@ -8,11 +8,9 @@ import responseJson from '../_examples/response';
     'insights',
     'factors',
   ]}
-  type="object"
 >
   <Property
     name="is_high_risk"
-    type="boolean"
   >
     This field is `true` if the shipping address is an address associated with
     fraudulent transactions. The field is `false` when the address is not
@@ -22,7 +20,6 @@ import responseJson from '../_examples/response';
 
   <Property
     name="is_postal_in_city"
-    type="boolean"
   >
     This field is `true` if the postal code provided with the address is in the
     city for the address. The field is `false` when the postal code is not in
@@ -40,7 +37,6 @@ import responseJson from '../_examples/response';
     tags={{
       'Format': 'Decimal'
     }}
-    type="number"
   >
     The approximate [WGS84](https://en.wikipedia.org/wiki/World_Geodetic_System)
     latitude associated with the address.
@@ -56,7 +52,6 @@ import responseJson from '../_examples/response';
     tags={{
       'Format': 'Decimal'
     }}
-    type="number"
   >
     The approximate [WGS84](https://en.wikipedia.org/wiki/World_Geodetic_System)
     longitude associated with the address.
@@ -83,7 +78,6 @@ import responseJson from '../_examples/response';
 
   <Property
     name="is_in_ip_country"
-    type="boolean"
   >
     This field is `true` if the address is in the IP country. The field is
     `false` when the address is not in the IP country. If the IP address could

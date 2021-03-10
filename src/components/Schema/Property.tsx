@@ -7,9 +7,11 @@ import PropTypes from 'prop-types';
 import * as React from 'react';
 
 import {
-  isJsonArray,
-  isJsonMap,
-  isJsonStringPrimative,
+  inferType,
+  isArray,
+  isBoolean,
+  isObject,
+  isString,
 } from '../../utils/json';
 import { formatSchemaName } from '../../utils/openapi';
 import Example from '../Example';
@@ -29,7 +31,7 @@ export interface IProperty {
   schemaId?: string;
   services?: MinFraudServices;
   tags?: Record<string, TagValue>;
-  type: SchemaPropertyType;
+  type?: SchemaPropertyType;
 }
 
 const Property: React.FC<IProperty> = (props) => {
@@ -81,26 +83,21 @@ const Property: React.FC<IProperty> = (props) => {
     ]
   );
 
-  const exampleLanguage = React.useMemo(
-    () => type === 'object' || type.startsWith('array')
-      ? 'json'
-      : 'bash',
-    [
-      type,
-    ]
-  );
-
   React.useEffect(
     () => {
       if (schemaJson) {
-        // eslint-disable-next-line security/detect-object-injection
-        const propertyExample = (schemaJson as any)[name];
-
-        if (!propertyExample) {
+        if (!isObject(schemaJson)) {
           return;
         }
 
-        if (isJsonArray(propertyExample) || isJsonMap(propertyExample)) {
+        // eslint-disable-next-line security/detect-object-injection
+        const propertyExample = schemaJson[name];
+
+        if (typeof propertyExample === 'undefined') {
+          return;
+        }
+
+        if (isArray(propertyExample) || isObject(propertyExample)) {
           return setExample(JSON.stringify(
             propertyExample,
             null,
@@ -108,8 +105,13 @@ const Property: React.FC<IProperty> = (props) => {
           ));
         }
 
-        if (isJsonStringPrimative(propertyExample)) {
+        if (isString(propertyExample)) {
           return setExample(`"${propertyExample}"`);
+        }
+
+        if (isBoolean(propertyExample)) {
+          console.log('here', propertyExample.toString());
+          return setExample(propertyExample.toString());
         }
 
         return setExample(propertyExample);
@@ -118,6 +120,31 @@ const Property: React.FC<IProperty> = (props) => {
     [
       name,
       schemaJson,
+      type,
+    ]
+  );
+
+  const inferredType = React.useMemo(
+    () => inferType(schemaJson),
+    [
+      schemaJson,
+    ]
+  );
+
+  const exampleLanguage = React.useMemo(
+    () => {
+      if (type) {
+        return type === 'object' || type.startsWith('array')
+          ? 'json'
+          : 'bash';
+      }
+
+      return inferredType === 'object' || inferredType === 'array'
+        ? 'json'
+        : 'bash';
+    },
+    [
+      inferredType,
       type,
     ]
   );
@@ -144,7 +171,7 @@ const Property: React.FC<IProperty> = (props) => {
       <Tag
         className={styles.type}
       >
-        {type}
+        {type || inferredType}
       </Tag>
 
       {description && (
@@ -270,7 +297,7 @@ Property.propTypes = {
     'integer',
     'object',
     'string',
-  ] as const).isRequired,
+  ] as const),
 };
 
 export default Property;

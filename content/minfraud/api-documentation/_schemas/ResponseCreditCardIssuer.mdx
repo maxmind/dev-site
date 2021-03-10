@@ -8,7 +8,6 @@ import responseJson from '../_examples/response';
     'insights',
     'factors',
   ]}
-  type="object"
 >
   This is a sub-object of `credit_card` that contains information related to the
   issuer of the card.
@@ -18,14 +17,12 @@ import responseJson from '../_examples/response';
     tags={{
       'Max Length': 255,
     }}
-    type="string"
   >
     This field contains a JSON object with information relating to the credit card issuer.
   </Property>
 
   <Property
     name="matches_provided_name"
-    type="boolean"
   >
     This field is `true` if the name matches the name provided in the request
     for the card issuer. It is `false` if the name does not match. The field is
@@ -38,7 +35,6 @@ import responseJson from '../_examples/response';
     tags={{
       'Max Length': 255,
     }}
-    type="string"
   >
     The phone number of the bank which issued the credit card. In some cases the
     phone number we return may be out of date.
@@ -46,7 +42,6 @@ import responseJson from '../_examples/response';
 
   <Property
     name="matches_provided_phone_number"
-    type="boolean"
   >
     This field is `true` if the phone number matches the number provided in the
     request for the card issuer. It is `false` if the number does not match. The

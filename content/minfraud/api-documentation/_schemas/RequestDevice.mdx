@@ -9,11 +9,10 @@ import requestJson from '../_examples/request';
   This object contains information about the device used in the transaction.
 
   <Property
+    name="ip_address"
     tags={{
       'Format': 'IPv4 or IPv6',
     }}
-    name="ip_address"
-    type="string"
   >
     The IP address associated with the device used by the customer in the
     transaction. The IP address must be in IPv4 or IPv6 presentation format,
@@ -21,33 +20,30 @@ import requestJson from '../_examples/request';
   </Property>
 
   <Property
+    name="user_agent"
     tags={{
       'Max Length': 512,
     }}
-    name="user_agent"
-    type="string"
   >
     The HTTP `User-Agent` header of the browser used in the transaction.
   </Property>
 
   <Property
+    name="accept_language"
     tags={{
       'Max Length': 255,
     }}
-    name="accept_language"
-    type="string"
   >
     The HTTP `Accept-Language` header of the device used in the transaction.
   </Property>
 
   <Property
+    name="session_age"
     tags={{
       'Format': 'decimal',
       'Min': 0,
       'Max': '10e13-1'
     }}
-    name="session_age"
-    type="number"
   >
     The number of seconds between the creation of the user's session and the
     time of the transaction. Note that `session_age` is not the duration of the
@@ -55,11 +51,10 @@ import requestJson from '../_examples/request';
   </Property>
 
   <Property
+    name="session_id"
     tags={{
       'Max Length': 255
     }}
-    name="session_id"
-    type="string"
   >
     An ID that uniquely identifies a visitor's session on the site.
   </Property>

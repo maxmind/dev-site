@@ -8,12 +8,10 @@ import responseJson from '../_examples/response';
     'insights',
     'factors',
   ]}
-  type="object"
 >
   <Property
     linkToSchemaName="Response | Email | Domain"
     name="domain"
-    type="object"
   >
     This field contains a JSON object with information relating to the domain.
   </Property>
@@ -24,7 +22,6 @@ import responseJson from '../_examples/response';
       'Format': 'YYYY-MM-DD',
       'Max Length': 10,
     }}
-    type="string"
   >
     A date string (e.g. 2017-04-24) to identify the date an email address was
     first seen by MaxMind. This is expressed using the ISO 8601 date format
@@ -33,7 +30,6 @@ import responseJson from '../_examples/response';
 
   <Property
     name="is_disposable"
-    type="boolean"
   >
     This field is `true` if MaxMind believes that the email address is from a
     disposable email provider. It is `false` if the address is not from a known
@@ -43,7 +39,6 @@ import responseJson from '../_examples/response';
 
   <Property
     name="is_free"
-    type="boolean"
   >
     This field is `true` if MaxMind believes that this email domain is for a
     free email provider such as Gmail or Yahoo! Mail. It is `false` if the
@@ -53,7 +48,6 @@ import responseJson from '../_examples/response';
 
   <Property
     name="is_high_risk"
-    type="boolean"
   >
     This field is `true` if MaxMind believes that this email address is likely
     to be used for fraud. It is `false` if MaxMind does not believe the address

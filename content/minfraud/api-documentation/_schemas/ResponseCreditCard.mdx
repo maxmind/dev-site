@@ -8,7 +8,6 @@ import responseJson from '../_examples/response';
     'insights',
     'factors',
   ]}
-  type="object"
 >
   This object contains minFraud information related to the credit card. If an
   issuer ID number (IIN) was not provided in the request, this object will not
@@ -17,7 +16,6 @@ import responseJson from '../_examples/response';
   <Property
     linkToSchemaName="Response | Credit Card | Issuer"
     name="issuer"
-    type="object"
   >
     This field contains a JSON object with information relating to the credit card issuer.
   </Property>
@@ -27,7 +25,6 @@ import responseJson from '../_examples/response';
     tags={{
       'Max Length': 255,
     }}
-    type="string"
   >
     The card brand, such as "Visa", "Discover", "American Express", etc.
   </Property>
@@ -37,7 +34,6 @@ import responseJson from '../_examples/response';
     tags={{
       'Max Length': 2,
     }}
-    type="string"
   >
     The two letter [ISO 3166-1 alpha-2 country code](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2)
     associated with the location of the majority of customers using this credit
@@ -48,7 +44,6 @@ import responseJson from '../_examples/response';
 
   <Property
     name="is_business"
-    type="boolean"
   >
     This field is `true` if the issuer ID number is for a business card. It is
     `false` if the issuer ID number is for for a non-business card. The key is
@@ -57,7 +52,6 @@ import responseJson from '../_examples/response';
 
   <Property
     name="is_issued_in_billing_address_country"
-    type="boolean"
   >
     This field is `true` if the country of the billing address matches the
     country of the majority of customers using that IIN. It is `false` if both
@@ -69,7 +63,6 @@ import responseJson from '../_examples/response';
 
   <Property
     name="is_prepaid"
-    type="boolean"
   >
     This field is `true` if the issuer ID number is for a prepaid card. It is
     `false` if the issuer ID number is for for a non-prepaid card. The key is
@@ -78,7 +71,6 @@ import responseJson from '../_examples/response';
 
   <Property
     name="is_virtual"
-    type="boolean"
   >
     This field is `true` if the issuer ID number is for a virtual card. It is
     `false` if the issuer ID number is for a non-virtual card. The key is only
@@ -90,7 +82,6 @@ import responseJson from '../_examples/response';
     tags={{
       'Enum': null,
     }}
-    type="string"
   >
     The card’s type. The valid values are:
 

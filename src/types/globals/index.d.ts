@@ -25,14 +25,14 @@ declare type QueryFn<T> = {
 declare type JsonPrimitive = string | number | boolean | null
 
 // eslint-disable-next-line @typescript-eslint/no-empty-interface
-declare interface IJsonMap extends Record<
+declare interface IJsonObject extends Record<
   string,
-  JsonPrimitive | IJsonArray | IJsonMap
+  JsonPrimitive | IJsonArray | IJsonObject
 > {}
 
 // eslint-disable-next-line @typescript-eslint/no-empty-interface
 declare interface IJsonArray extends Array<
-  JsonPrimitive | IJsonArray | IJsonMap
+  JsonPrimitive | IJsonArray | IJsonObject
 > {}
 
-declare type Json = JsonPrimitive | IJsonMap | IJsonArray;
+declare type Json = JsonPrimitive | IJsonObject | IJsonArray;
