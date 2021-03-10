@@ -41,6 +41,21 @@
         "type": 302
       },
       {
+        "destination": "/geoip/updating-databases",
+        "source": "/geoip/geoip-direct-downloads",
+        "type": 302
+      },
+      {
+        "destination": "/geoip/updating-databases",
+        "source": "/geoip/geoipupdate",
+        "type": 302
+      },
+      {
+        "destination": "/geoip/updating-databases",
+        "source": "/geoip/geoipupdate/upgrading-to-geoip-update-4-x",
+        "type": 302
+      },
+      {
         "destination": "/minfraud/release-notes/rss.xml",
         "source": "/feed/?post_type=release_note&product=minfraud",
         "type": 302
