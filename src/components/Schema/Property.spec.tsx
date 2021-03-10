@@ -9,11 +9,26 @@ import SchemaContext from './SchemaContext';
 
 import styles from './Property.module.scss';
 
+const json = {
+  arr: [
+    'foo',
+    'bar',
+  ],
+  boolean: true,
+  null: null,
+  number: 42,
+  obj: {
+    bar: 'bar',
+    foo: 'foo',
+  },
+  string: 'string',
+};
+
 const withContext = (element: React.ReactElement) => global.mountWithRouter(
   <SchemaContext.Provider
     value={{
       id: '',
-      json: {},
+      json,
       jsonPointer: '',
     }}
   >
@@ -40,12 +55,10 @@ describe('<Property />', () => {
           }}
           jsonPointer="/"
           name="Foo"
-          type="object"
         >
           <Property
             name={name}
             services="*"
-            type="string"
           />
         </Schema>
       );
@@ -78,12 +91,34 @@ describe('<Property />', () => {
     });
   });
 
+  describe('a type', () => {
+    it('is inferred if no type property is defined', () => {
+      const component = withContext(
+        <Property
+          name="string"
+        />
+      );
+
+      expect(component.find(`.${styles.type}`).first().text()).toBe('string');
+    });
+
+    it('can be defined on the `Property` component', () => {
+      const component = withContext(
+        <Property
+          name="string"
+          type="object"
+        />
+      );
+
+      expect(component.find(`.${styles.type}`).first().text()).toBe('object');
+    });
+  });
+
   describe('a description', () => {
     it('is not shown if component has no children', () => {
       const component = withContext(
         <Property
           name="foo"
-          type="string"
         />
       );
 
@@ -94,7 +129,6 @@ describe('<Property />', () => {
       const component = withContext(
         <Property
           name="foo"
-          type="string"
         >
           <P>This is a property!</P>
         </Property>
@@ -105,119 +139,112 @@ describe('<Property />', () => {
   });
 
   describe('an example', () => {
-    it('is not shown if `example` property exists', () => {
+    it('is not shown if schema json is not an object', () => {
+      const component = global.mountWithRouter(
+        <SchemaContext.Provider
+          value={{
+            id: '',
+            json: '',
+            jsonPointer: '',
+          }}
+        >
+          <Property
+            name="foo"
+          />
+        </SchemaContext.Provider>
+      );
+
+      expect(component.find('Example')).not.toExist();
+    });
+
+    it('is not shown if property name does not exist in schema json', () => {
       const component = withContext(
         <Property
           name="foo"
-          type="string"
         />
       );
 
       expect(component.find('Example')).not.toExist();
     });
 
-    it('is shown if `example` property exists', () => {
+    it('is not shown if property name has null value', () => {
       const component = withContext(
         <Property
-          name="foo"
-          type="string"
+          name="null"
         />
       );
 
-      expect(component.find('Example')).toExist();
+      expect(component.find('Example')).not.toExist();
     });
 
-    it(
-      'if `type` is `array<object>`, the `example` value is formatted json',
-      () => {
-        const component = withContext(
-          <Property
-            name="foo"
-            type="array<object>"
-          />
-        );
-
-        const exampleValue = component.find('Example').props().children;
-
-        expect(exampleValue).toBe(JSON.stringify([
-          {
-            foo: 'bar',
-          },
-        ], null, 2));
-      }
-    );
-
-    it('if `type` is `object`, the `example` value is formatted json', () => {
+    it('contains stringified json for object properties', () => {
       const component = withContext(
         <Property
-          name="foo"
-          type="object"
+          name="obj"
         />
       );
 
-      const exampleValue = component.find('Example').props().children;
-
-      expect(exampleValue).toBe(JSON.stringify({
-        foo: 'bar',
-      }, null, 2));
+      const exampleValue = component.find('Example').first().text();
+      expect(exampleValue).toContain(JSON.stringify(json.obj, null, 2));
     });
 
-    it(
-      // eslint-disable-next-line max-len
-      'if `type` is `string`, the `example` value is formatted is wrapped in quotes',
-      () => {
-        const component = withContext(
-          <Property
-            name="foo"
-            type="string"
-          />
-        );
+    it('contains stringified json for array properties', () => {
+      const component = withContext(
+        <Property
+          name="arr"
+        />
+      );
 
-        const exampleValue = component.find('Example').props().children;
+      const exampleValue = component.find('Example').first().text();
+      expect(exampleValue).toContain(JSON.stringify(json.arr, null, 2));
+    });
 
-        expect(exampleValue).toBe('"foo"');
-      }
-    );
+    it('contains quotes around for string properties', () => {
+      const component = withContext(
+        <Property
+          name="string"
+        />
+      );
 
-    it.each([
-      [
-        'boolean',
-        'true',
-      ],
-      [
-        'integer',
-        '1',
-      ],
-      [
-        'number',
-        '0.1',
-      ],
-    ])(
-      'if `type` is `%s`, the `example` value is not formatted',
-      (type, example) => {
-        const component = withContext(
-          <Property
-            name="foo"
-            type={type as SchemaPropertyType}
-          />
-        );
+      const exampleValue = component.find('Example').first().text();
+      expect(exampleValue).toEqual(expect.stringMatching(/\s+"string"/));
+    });
 
-        const exampleValue = component.find('Example').props().children;
+    it('stringifies boolean values', () => {
+      const component = withContext(
+        <Property
+          name="boolean"
+        />
+      );
 
-        expect(exampleValue).toBe(example);
-      }
-    );
+      const exampleValue = component.find('Example').first().text();
+      const regex = new RegExp(/\s+true/);
+
+      expect(regex.test(exampleValue)).toBe(true);
+    });
+
+    it('does not format numbers', () => {
+      const component = withContext(
+        <Property
+          name="number"
+        />
+      );
+
+      const exampleValue = component.find('Example').first().text();
+      const regex = new RegExp(/\s+42/);
+
+      expect(regex.test(exampleValue)).toBe(true);
+    });
   });
 
   describe('tags section', () => {
     it(
       // eslint-disable-next-line max-len
-      'is not shown if `linkToSchemaName`, `services`, and `tags`  props are undefined',
+      'is not shown if `linkToSchemaName`, `services`, and `tags` props are undefined',
       () => {
         const component = withContext(
           <Property
             name="foo"
-            type="string"
           />
         );
 
@@ -226,12 +253,11 @@ describe('<Property />', () => {
     );
 
     describe('is shown if', () => {
-      fit('`linkToSchemaName` is defined', () => {
+      it('`linkToSchemaName` is defined', () => {
         const component = withContext(
           <Property
             linkToSchemaName={'Foo'}
             name="foo"
-            type="string"
           />
         );
 
@@ -243,7 +269,6 @@ describe('<Property />', () => {
           <Property
             name="foo"
             services="*"
-            type="string"
           />
         );
 
@@ -257,7 +282,6 @@ describe('<Property />', () => {
             tags={{
               foo: 'foo',
             }}
-            type="string"
           />
         );
 
@@ -269,7 +293,7 @@ describe('<Property />', () => {
       const component = withContext(
         <Property
           name="foo"
-          type="string"
+          services="*"
         />
       );
 
@@ -288,7 +312,6 @@ describe('<Property />', () => {
               baz: null,
               foo: 'foo',
             }}
-            type="string"
           />
         );
 

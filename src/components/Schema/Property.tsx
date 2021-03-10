@@ -56,7 +56,7 @@ const Property: React.FC<IProperty> = (props) => {
   const [
     example,
     setExample,
-  ] = React.useState<Json>();
+  ] = React.useState('');
 
   const jsonPointer = React.useMemo(
     () => schemaJsonPath === '/'
@@ -85,37 +85,37 @@ const Property: React.FC<IProperty> = (props) => {
 
   React.useEffect(
     () => {
-      if (schemaJson) {
-        if (!isObject(schemaJson)) {
-          return;
-        }
-
-        // eslint-disable-next-line security/detect-object-injection
-        const propertyExample = schemaJson[name];
-
-        if (typeof propertyExample === 'undefined') {
-          return;
-        }
-
-        if (isArray(propertyExample) || isObject(propertyExample)) {
-          return setExample(JSON.stringify(
-            propertyExample,
-            null,
-            2
-          ));
-        }
-
-        if (isString(propertyExample)) {
-          return setExample(`"${propertyExample}"`);
-        }
-
-        if (isBoolean(propertyExample)) {
-          console.log('here', propertyExample.toString());
-          return setExample(propertyExample.toString());
-        }
-
-        return setExample(propertyExample);
+      if (!isObject(schemaJson)) {
+        return;
       }
+
+      // eslint-disable-next-line security/detect-object-injection
+      const propertyExample = schemaJson[name];
+
+      if (
+        typeof propertyExample === 'undefined'
+        || propertyExample === null
+      ) {
+        return;
+      }
+
+      if (isArray(propertyExample) || isObject(propertyExample)) {
+        return setExample(JSON.stringify(
+          propertyExample,
+          null,
+          2
+        ));
+      }
+
+      if (isString(propertyExample)) {
+        return setExample(`"${propertyExample}"`);
+      }
+
+      if (isBoolean(propertyExample)) {
+        return setExample(propertyExample.toString());
+      }
+
+      return setExample(propertyExample.toString());
     },
     [
       name,
@@ -125,8 +125,22 @@ const Property: React.FC<IProperty> = (props) => {
   );
 
   const inferredType = React.useMemo(
-    () => inferType(schemaJson),
+    () => {
+      if (!isObject(schemaJson)) {
+        return;
+      }
+
+      // eslint-disable-next-line security/detect-object-injection
+      const propertyValue = schemaJson[name];
+
+      if (!propertyValue) {
+        return;
+      }
+
+      return inferType(propertyValue);
+    },
     [
+      name,
       schemaJson,
     ]
   );
@@ -168,11 +182,13 @@ const Property: React.FC<IProperty> = (props) => {
         {name}
       </Link>
 
-      <Tag
-        className={styles.type}
-      >
-        {type || inferredType}
-      </Tag>
+      {(type || inferredType) && (
+        <Tag
+          className={styles.type}
+        >
+          {type || inferredType}
+        </Tag>
+      )}
 
       {description && (
         <div

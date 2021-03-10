@@ -1,7 +1,6 @@
 import _isBoolean from 'lodash.isboolean';
 import _isNumber from 'lodash.isnumber';
 import isPlainObject from 'lodash.isplainobject';
-import { isNull } from 'util';
 
 export const isArray = (
   value: Json

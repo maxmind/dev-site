@@ -164,7 +164,7 @@ Schema.propTypes = {
   type: PropTypes.oneOf([
     'array<object>',
     'object',
-  ] as const).isRequired,
+  ] as const),
 };
 
 export default Schema;

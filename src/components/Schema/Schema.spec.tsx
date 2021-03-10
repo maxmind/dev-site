@@ -4,6 +4,8 @@ import { p as P } from '../Mdx';
 import Property from './Property';
 import Schema from './Schema';
 
+import styles from './Schema.module.scss';
+
 const json = {
   bar: 'bar',
   baz: {
@@ -19,7 +21,6 @@ describe('Schema', () => {
         json={json}
         jsonPointer="/"
         name="Foo"
-        type="object"
       >
         <P>This is example text.</P>
 
@@ -42,6 +43,41 @@ describe('Schema', () => {
     expect(component.find('Property')).toHaveLength(2);
   });
 
+  it('infers the schema type', async () => {
+    const component = global.mountWithRouter(
+      <Schema
+        json={json}
+        jsonPointer="/"
+        name="Foo"
+      >
+        <P>This is example text.</P>
+      </Schema>
+    );
+
+    expect(
+      component.find(`.${styles['heading__type']}`)
+        .first().text()
+    ).toBe('object');
+  });
+
+  it('allows a custom schema type to be set', async () => {
+    const component = global.mountWithRouter(
+      <Schema
+        json={json}
+        jsonPointer="/"
+        name="Foo"
+        type={'array<object>'}
+      >
+        <P>This is example text.</P>
+      </Schema>
+    );
+
+    expect(
+      component.find(`.${styles['heading__type']}`)
+        .first().text()
+    ).toBe('array<object>');
+  });
+
   describe('`services` property', () => {
     let component: any;
 
@@ -52,7 +88,6 @@ describe('Schema', () => {
           jsonPointer="/"
           name="Foo"
           services="*"
-          type="object"
         >
           <P>This is example text.</P>
 
