@@ -53,6 +53,10 @@ const navigation: IItem[] = [
         to: '/minfraud/minfraud-legacy',
       },
       {
+        title: 'MaxMind Server IP Addresses',
+        to: '/maxmind-server-ip-addresses',
+      },
+      {
         title: 'Frequently Asked Questions',
         url: 'https://support.maxmind.com/minfraud-faq/',
       },
@@ -89,6 +93,10 @@ const navigation: IItem[] = [
       {
         title: 'Updating Databases',
         to: '/geoip/updating-databases',
+      },
+      {
+        title: 'Privacy Exclusions API',
+        to: '/geoip/privacy-exclusions-api',
       },
       {
         hasDivider: true,
@@ -133,6 +141,10 @@ const navigation: IItem[] = [
         hasDivider: true,
         title: 'Release Notes',
         to: '/geoip/release-notes',
+      },
+      {
+        title: 'MaxMind Server IP Addresses',
+        to: '/maxmind-server-ip-addresses',
       },
       {
         title: 'GeoIP FAQ',
