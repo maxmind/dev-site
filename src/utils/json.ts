@@ -1,6 +1,7 @@
 import _isBoolean from 'lodash.isboolean';
 import _isNumber from 'lodash.isnumber';
 import isPlainObject from 'lodash.isplainobject';
+import { isNull } from 'util';
 
 export const isArray = (
   value: Json
@@ -10,13 +11,13 @@ export const isBoolean = (
   value: Json
 ): value is boolean => _isBoolean(value);
 
-export const isObject = (
-  value: Json
-): value is IJsonObject => isPlainObject(value);
-
 export const isNumber = (
   value: Json
 ): value is number => _isNumber(value);
+
+export const isObject = (
+  value: Json
+): value is IJsonObject => isPlainObject(value);
 
 export const isString = (
   value: Json
@@ -43,5 +44,9 @@ export const inferType = (value: Json): string => {
     return 'string';
   }
 
-  return 'null';
+  console.error('Invalid Type', value);
+
+  throw new Error(
+    'Cannot infer type from value. See console error labeled: `Invalid Type`'
+  );
 };
