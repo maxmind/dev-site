@@ -35,6 +35,8 @@ import responseJson from '../_examples/response';
     services="*"
     tags={{
       'Format': 'Decimal',
+      'Min': 0.01,
+      'Max': 99,
     }}
   >
     This field contains the risk associated with the IP address. The value
@@ -48,9 +50,7 @@ import responseJson from '../_examples/response';
       'insights',
       'factors',
     ]}
-  >
-    // TODO - Short description
-  </Property>
+  />
 
   <Property
     linkToSchemaName="Response | IP Address | Location"
@@ -59,9 +59,7 @@ import responseJson from '../_examples/response';
       'insights',
       'factors',
     ]}
-  >
-    // TODO - Short description
-  </Property>
+  />
 
   <Property
     linkToSchemaName="Response | IP Address | Risk Reasons"
