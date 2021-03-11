@@ -1,6 +1,6 @@
 import * as React from 'react';
 
-type SchemaContextProps = {
+export type SchemaContextProps = {
   id: string;
   json: Json;
   jsonPointer: string;

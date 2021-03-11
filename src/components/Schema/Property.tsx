@@ -6,16 +6,10 @@ import GithubSlugger from 'github-slugger';
 import PropTypes from 'prop-types';
 import * as React from 'react';
 
-import {
-  inferType,
-  isArray,
-  isBoolean,
-  isObject,
-  isString,
-} from '../../utils/json';
 import { formatSchemaName } from '../../utils/openapi';
 import Example from '../Example';
-import SchemaContext from './SchemaContext';
+import PropertyValues from './PropertyValues';
+import SchemaContext  from './SchemaContext';
 import ServiceTags from './ServiceTags';
 import Tag from './Tag';
 
@@ -24,6 +18,7 @@ import styles from './Property.module.scss';
 const slugger = new GithubSlugger();
 
 type TagValue = boolean | string | number | null;
+
 export interface IProperty {
   children?: React.ReactElement | React.ReactElement[],
   linkToSchemaName?: string;
@@ -41,37 +36,16 @@ const Property: React.FC<IProperty> = (props) => {
     tags: schemaTags,
     name,
     services,
-    type,
   } = props;
 
   const location = useLocation();
 
-  const {
-    json: schemaJson,
-    id: schemaId,
-    jsonPointer: schemaJsonPath,
-    services: schemaServices,
-  } = React.useContext(SchemaContext);
-
-  const [
-    example,
-    setExample,
-  ] = React.useState('');
-
-  const jsonPointer = React.useMemo(
-    () => schemaJsonPath === '/'
-      ? `${schemaJsonPath}${name}`
-      : `${schemaJsonPath}/${name}`,
-    [
-      name,
-      schemaJsonPath,
-    ]
-  );
+  const schema = React.useContext(SchemaContext);
 
   const propertyId = React.useMemo(
-    () => `${schemaId}__${slugger.slug(name)}`,
+    () => `${schema.id}__${slugger.slug(name)}`,
     [
-      schemaId,
+      schema.id,
       name,
     ]
   );
@@ -83,87 +57,18 @@ const Property: React.FC<IProperty> = (props) => {
     ]
   );
 
-  React.useEffect(
-    () => {
-      if (!isObject(schemaJson)) {
-        return;
-      }
-
-      // eslint-disable-next-line security/detect-object-injection
-      const propertyExample = schemaJson[name];
-
-      if (
-        typeof propertyExample === 'undefined'
-        || propertyExample === null
-      ) {
-        return;
-      }
-
-      if (isArray(propertyExample) || isObject(propertyExample)) {
-        return setExample(JSON.stringify(
-          propertyExample,
-          null,
-          2
-        ));
-      }
-
-      if (isString(propertyExample)) {
-        return setExample(`"${propertyExample}"`);
-      }
-
-      if (isBoolean(propertyExample)) {
-        return setExample(propertyExample.toString());
-      }
-
-      return setExample(propertyExample.toString());
+  const {
+    example,
+    type,
+  } = new PropertyValues({
+    property: {
+      name: name,
+      type: props.type,
     },
-    [
-      name,
-      schemaJson,
-      type,
-    ]
-  );
+    schema,
+  });
 
-  const inferredType = React.useMemo(
-    () => {
-      if (!isObject(schemaJson)) {
-        return;
-      }
-
-      // eslint-disable-next-line security/detect-object-injection
-      const propertyValue = schemaJson[name];
-
-      if (!propertyValue) {
-        return;
-      }
-
-      return inferType(propertyValue);
-    },
-    [
-      name,
-      schemaJson,
-    ]
-  );
-
-  const exampleLanguage = React.useMemo(
-    () => {
-      if (type) {
-        return type === 'object' || type.startsWith('array')
-          ? 'json'
-          : 'bash';
-      }
-
-      return inferredType === 'object' || inferredType === 'array'
-        ? 'json'
-        : 'bash';
-    },
-    [
-      inferredType,
-      type,
-    ]
-  );
-
-  const serviceTags = services || schemaServices;
+  const serviceTags = services || schema.services;
 
   return (
     <div
@@ -182,11 +87,11 @@ const Property: React.FC<IProperty> = (props) => {
         {name}
       </Link>
 
-      {(type || inferredType) && (
+      {type && (
         <Tag
           className={styles.type}
         >
-          {type || inferredType}
+          {type}
         </Tag>
       )}
 
@@ -201,12 +106,12 @@ const Property: React.FC<IProperty> = (props) => {
       {example && (
         <Example
           label="Example"
-          language={exampleLanguage}
+          language={example.language}
         >
           <>
-            {exampleLanguage === 'json' ? '//' : '#'}
-            {` JSON Pointer: ${jsonPointer}\n`}
-            {example}
+            {example.language === 'json' ? '//' : '#'}
+            {` JSON Pointer: ${example.jsonPointer}\n`}
+            {example.value}
           </>
         </Example>
       )}
