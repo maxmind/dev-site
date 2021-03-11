@@ -1,8 +1,11 @@
 import PropTypes from 'prop-types';
 import React from 'react';
 
+import UnderConstruction from '../../assets/svgs/under-construction.svg';
 import Layout from '../../components/Layout/Layout';
 import { IHomeContext } from './query';
+
+import styles from './Home.module.scss';
 
 interface IHome {
   children: React.ReactNode;
@@ -19,7 +22,28 @@ const Home: React.FC<IHome> = (props) => {
       keywords={keywords}
       title={title}
     >
-      Hello world!
+      <div
+        className={styles.container}
+      >
+        <div
+          className={styles['under-construction']}
+        >
+          <UnderConstruction
+            className={styles.icon}
+          />
+          <span
+            className={styles.text}
+          >
+            <span
+              className={styles.dark}
+            >
+              Under
+            </span>
+            {' '}
+            Construction
+          </span>
+        </div>
+      </div>
     </Layout>
   );
 };

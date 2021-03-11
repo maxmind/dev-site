@@ -5,6 +5,7 @@ export { Link } from 'gatsby';
 
 export { default as Alert } from '../Alert';
 export { default as CodeSet } from '../CodeSet';
+export { default as Example } from '../Example';
 export * from '../LinkGroup';
 export * from '../Schema';
 export { default as ReleaseNote } from '../ReleaseNote';

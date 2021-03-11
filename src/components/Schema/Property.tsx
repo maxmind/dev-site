@@ -2,92 +2,58 @@ import { useLocation } from '@reach/router';
 import CustomPropTypes from 'airbnb-prop-types';
 import classNames from 'classnames';
 import { Link } from 'gatsby';
-import GithubSlugger from 'github-slugger';
 import PropTypes from 'prop-types';
 import * as React from 'react';
 
-import { formatSchemaName } from '../../utils/openapi';
-import Example from './Example';
+import Example from '../Example';
+import PropertyValues from './PropertyValues';
+import SchemaContext  from './SchemaContext';
 import ServiceTags from './ServiceTags';
 import Tag from './Tag';
 
 import styles from './Property.module.scss';
 
-const slugger = new GithubSlugger();
-
-type Service = 'score' | 'factors' | 'insights';
-
 type TagValue = boolean | string | number | null;
 
-export type PropertyType = 'array<boolean>'
-  | 'array<number>'
-  | 'array<integer>'
-  | 'array<object>'
-  | 'array<string>'
-  | 'boolean'
-  | 'number'
-  | 'integer'
-  | 'object'
-  | 'string';
-
 export interface IProperty {
-  children?: React.ReactElement,
-  example?: string;
+  children?: React.ReactElement | React.ReactElement[],
+  isDeprecated?: boolean;
   linkToSchemaName?: string;
   name: string;
   schemaId?: string;
-  services?: '*' | Service[];
+  services?: MinFraudServices;
   tags?: Record<string, TagValue>;
-  type: PropertyType;
+  type?: SchemaPropertyType;
 }
 
 const Property: React.FC<IProperty> = (props) => {
-  const location = useLocation();
-
   const {
     children: description,
-    example,
+    isDeprecated,
     linkToSchemaName,
     tags: schemaTags,
-    schemaId,
     name,
     services,
-    type,
   } = props;
+  const location = useLocation();
 
-  const propertyId = React.useMemo(
-    () => `${schemaId}__${slugger.slug(name)}`,
-    [
-      schemaId,
-      name,
-    ]
-  );
+  const schema = React.useContext(SchemaContext);
 
-  const linkToSchemaId = React.useMemo(
-    () => linkToSchemaName && slugger.slug(formatSchemaName(linkToSchemaName)),
-    [
+  const {
+    example,
+    linkToSchemaId,
+    id: propertyId,
+    type,
+  } = new PropertyValues({
+    property: {
       linkToSchemaName,
-    ]
-  );
+      name,
+      type: props.type,
+    },
+    schema,
+  });
 
-  const exampleLanguage = (type === 'object' || type.startsWith('array'))
-    ? 'json'
-    : 'bash';
-
-
-  let formattedExample = '';
-
-  if (example) {
-    formattedExample = example.trim();
-
-    if (type === 'object' || type.startsWith('array')) {
-      formattedExample = JSON.stringify(JSON.parse(formattedExample), null, 2);
-    }
-
-    if (type === 'string') {
-      formattedExample = `"${formattedExample}"`;
-    }
-  }
+  const serviceTags = services || schema.services;
 
   return (
     <div
@@ -106,12 +72,21 @@ const Property: React.FC<IProperty> = (props) => {
         {name}
       </Link>
 
-      <Tag
-        className={styles.type}
-      >
-        {type}
-      </Tag>
+      {type && (
+        <Tag
+          className={styles.type}
+        >
+          {type}
+        </Tag>
+      )}
 
+      {isDeprecated && (
+        <Tag
+          className={styles.deprecated}
+        >
+          deprecated
+        </Tag>
+      )}
 
       {description && (
         <div
@@ -123,13 +98,18 @@ const Property: React.FC<IProperty> = (props) => {
 
       {example && (
         <Example
-          language={exampleLanguage}
+          label="Example"
+          language={example.language}
         >
-          {formattedExample}
+          <>
+            {example.language === 'json' ? '//' : '#'}
+            {` JSON Pointer: ${example.jsonPointer}\n`}
+            {example.value}
+          </>
         </Example>
       )}
 
-      {(linkToSchemaId || schemaTags || services) && (
+      {(linkToSchemaId || schemaTags || serviceTags) && !isDeprecated && (
         <div
           className={styles.tags}
         >
@@ -166,7 +146,7 @@ const Property: React.FC<IProperty> = (props) => {
                 >
 
                   {name}
-                  {value && (
+                  {typeof value !== 'undefined' && value !== null && (
                     <>
                       :
                       {' '}
@@ -181,10 +161,10 @@ const Property: React.FC<IProperty> = (props) => {
               ))}
           </div>
 
-          {services && (
+          {serviceTags && (
             <ServiceTags
               className={styles['tags__service-tags']}
-              services={services}
+              services={serviceTags}
             />
           )}
         </div>
@@ -194,11 +174,13 @@ const Property: React.FC<IProperty> = (props) => {
 };
 
 Property.propTypes = {
-  children: PropTypes.element,
-  example: PropTypes.string,
+  children: PropTypes.oneOfType([
+    PropTypes.element,
+    PropTypes.arrayOf(PropTypes.element.isRequired),
+  ]),
+  isDeprecated: PropTypes.bool,
   linkToSchemaName: PropTypes.string,
   name: PropTypes.string.isRequired,
-  schemaId: PropTypes.string,
   services: PropTypes.oneOfType([
     PropTypes.oneOf([
       '*',
@@ -230,7 +212,7 @@ Property.propTypes = {
     'integer',
     'object',
     'string',
-  ] as const).isRequired,
+  ] as const),
 };
 
 export default Property;

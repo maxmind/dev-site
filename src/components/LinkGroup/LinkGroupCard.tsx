@@ -9,7 +9,7 @@ import styles from './LinkGroupCard.module.scss';
 
 export interface ILinkGroupCard {
   className?: string;
-  description: string;
+  description?: string;
   heading: string;
   icon: IconType,
   isCompact?: boolean,
@@ -17,17 +17,18 @@ export interface ILinkGroupCard {
 }
 
 const LinkGroupCard: React.FC<ILinkGroupCard> = (props) => {
-  const { icon: Icon } = props;
+  const { className, description, icon: Icon, isCompact, to } = props;
   return (
     <Link
       className={classNames(
         styles.container,
-        props.className,
+        className,
         {
-          [styles['container--is-compact']]: props.isCompact,
+          [styles['container--is-compact']]: isCompact,
+          [styles['container--no-description']]: description === undefined,
         }
       )}
-      to={props.to}
+      to={to}
     >
       <Icon
         className={styles.icon}
@@ -37,11 +38,13 @@ const LinkGroupCard: React.FC<ILinkGroupCard> = (props) => {
       >
         {props.heading}
       </h3>
-      <p
-        className={styles.description}
-      >
-        {props.description}
-      </p>
+      {description && (
+        <p
+          className={styles.description}
+        >
+          {description}
+        </p>
+      )}
       <div
         className={styles.arrow}
       >
@@ -53,7 +56,7 @@ const LinkGroupCard: React.FC<ILinkGroupCard> = (props) => {
 
 LinkGroupCard.propTypes = {
   className: PropTypes.string,
-  description: PropTypes.string.isRequired,
+  description: PropTypes.string,
   heading: PropTypes.string.isRequired,
   icon: PropTypes.any.isRequired,
   isCompact: PropTypes.bool,

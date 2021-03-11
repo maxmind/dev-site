@@ -46,11 +46,21 @@
   border-bottom: 2px dotted var(--mm-color-primary-text);
   color: var(--mm-color-primary-text);
   font-family: var(--mm-font-stack-monospace);
+  font-size: 14px;
   font-weight: 500;
+  line-height: 26px;
   text-decoration: none;
 }
 
 .type {
+  margin-left: calc(var(--mm-spacing) / 4);
+  vertical-align: middle;
+}
+
+.deprecated {
+  background: #ffefee;
+  border-color: #ffd8d6;
+  color: #8c362e;
   margin-left: calc(var(--mm-spacing) / 4);
   vertical-align: middle;
 }
@@ -72,6 +82,22 @@
   margin-right: 0;
 }
 
+.description [class^='Table-module--wrapper'] {
+  padding: calc(var(--mm-spacing) / 2) 0;
+}
+
+.description [class^='Th-module'],
+.description [class^='Table-module--table'] [class^='P-module'],
+.description [class^='Table-module--table'] [class^='Code-module'] {
+  font-size: 12px;
+  line-height: 20px;
+}
+
+.description [class^='Th-module'],
+.description [class^='Td-module'] {
+  padding: 8px;
+}
+
 .description > * {
   max-width: auto !important;
   min-width: auto !important;
@@ -84,6 +110,7 @@
 .description > *:last-child {
   margin-bottom: 0 !important;
 }
+
 
 .row--targeted .example-value {
   background: var(--mm-color-background);

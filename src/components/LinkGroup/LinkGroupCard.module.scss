@@ -42,6 +42,10 @@
   padding-top: calc(calc(var(--mm-spacing) / 4) + 6px);
 }
 
+.container--no-description {
+  grid-template-areas: 'icon heading arrow';
+}
+
 .icon {
   align-self: center;
   color: var(--mm-color-active-blue);
@@ -76,6 +80,8 @@
 .container--is-compact .description {
   font-size: 12px;
 }
+
+
 
 .arrow {
   border-left: 1px solid var(--mm-color-border);

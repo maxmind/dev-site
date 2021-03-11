@@ -9,7 +9,12 @@
 @import '~fontsource-source-code-pro/500.css';
 @import '~fontsource-source-code-pro/700.css';
 
+:host {
+  --gatsby: #274958;
+}
+
 :root {
+  --gatsby: #274958;
   --mm-color-active-blue: #2b7ec6;
   --mm-color-background: #fff;
   --mm-color-background-code: #274958;
@@ -72,4 +77,8 @@ body {
   outline-color: var(--mm-color-logo-blue-light);
   outline-style: solid;
   outline-width: 2px;
+}
+
+[class='geoip-icon-st0'] {
+  fill: none;
 }

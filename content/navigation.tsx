@@ -30,6 +30,16 @@ const navigation: IItem[] = [
       },
       {
         hasDivider: true,
+        secondaryItems: [
+          {
+            title: 'Requests',
+            to: '/minfraud/api-documentation/requests',
+          },
+          {
+            title: 'Responses',
+            to: '/minfraud/api-documentation/responses',
+          },
+        ],
         title: 'API Documentation',
         to: '/minfraud/api-documentation',
       },

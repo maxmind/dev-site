@@ -1,0 +1,19 @@
+import responseJson from '../_examples/response';
+
+<Schema
+  json={responseJson.ip_address.country}
+  jsonPointer="/ip_address/country"
+  name="Response | IP Address | Country"
+>
+  <Property
+    isDeprecated
+    name="is_high_risk"
+    services={[
+      'insights',
+      'factors',
+    ]}
+    type="boolean"
+  >
+    This field has been deprecated.
+  </Property>
+</Schema>

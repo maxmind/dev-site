@@ -1,0 +1,84 @@
+import responseJson from '../_examples/response';
+
+<Schema
+  json={responseJson}
+  jsonPointer="/"
+  name="Response"
+  services="*"
+>
+  <Property
+    name="id"
+    tags={{
+      'Format': 'UUID',
+    }}
+  >
+    This is the minFraud ID, a [UUID](https://en.wikipedia.org/wiki/Universally_unique_identifier)
+    that identifies the minFraud response. Use this ID to
+    [search your minFraud logs](https://www.maxmind.com/en/minfraud-log) or when
+    making support requests to MaxMind.
+  </Property>
+
+  <Property
+    name="risk_score"
+    tags={{
+      'Format': 'decimal',
+      'Min': 0.01,
+      'Max': 99,
+    }}
+  >
+    This field contains the risk score, from 0.01 to 99. A higher score
+    indicates a higher risk of fraud. For example, a score of 20 indicates a
+    20% chance that a transaction is fraudulent. We never return a risk score
+    of 0, since all transactions have the possibility of being fraudulent.
+    Likewise we never return a risk score of 100.
+  </Property>
+
+  <Property
+    name="funds_remaining"
+    tags={{
+      'Format': 'decimal',
+      'Min': 0.00,
+    }}
+  >
+    The approximate US dollar value of the funds remaining on your MaxMind
+    account.
+  </Property>
+
+  <Property
+    name="queries_remaining"
+    tags={{
+      'Min': 0,
+    }}
+    type="integer"
+  >
+    The approximate US dollar value of the funds remaining on your MaxMind
+    account.
+  </Property>
+
+  <Property
+    linkToSchemaName={'Response | Warning'}
+    name="warnings"
+  >
+    This array contains warning objects detailing issues with the request that was
+    sent such as invalid or unknown inputs. It is highly recommended that you
+    check this array for issues when integrating the web service.
+  </Property>
+
+  <Property
+    linkToSchemaName={'Response | IP Address'}
+    name="ip_address"
+  >
+
+  </Property>
+
+  <Property
+    linkToSchemaName={'Response | Credit Card'}
+    name="credit_card"
+    services={[
+      'insights',
+      'factors',
+    ]}
+  >
+    This object contains minFraud information related to the credit card.
+  </Property>
+</Schema>

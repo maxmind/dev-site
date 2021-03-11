@@ -6,11 +6,9 @@ import Tag from './Tag';
 
 import styles from './ServiceTags.module.scss';
 
-export type Service = 'score' | 'factors' | 'insights';
-
 interface IServiceTags {
   className?: string;
-  services: '*' | Service[];
+  services: MinFraudServices;
 }
 
 const renderTag = (service: string, isDisabled?: boolean) => (
@@ -37,14 +35,14 @@ const ServiceTags: React.FC<IServiceTags> = (props) => {
         : renderTag('Score', true)
       }
 
-      {(services === '*' || services.includes('factors'))
-        ? renderTag('Factors')
-        : renderTag('Factors', true)
-      }
-
       {(services === '*' || services.includes('insights'))
         ? renderTag('Insights')
         : renderTag('Insights', true)
+      }
+
+      {(services === '*' || services.includes('factors'))
+        ? renderTag('Factors')
+        : renderTag('Factors', true)
       }
     </div>
   );

@@ -144,7 +144,6 @@ export default {
       },
       resolve: 'gatsby-plugin-feed',
     },
-    // 'gatsby-plugin-feed',
     // {
     //   options: {
     //     analyzerPort: 3000,

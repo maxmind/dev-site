@@ -2,31 +2,91 @@ import { ReactWrapper } from 'enzyme';
 import { Link } from 'gatsby';
 import * as React from 'react';
 
-import { p as P, pre as Pre } from '../Mdx';
-import Property, { PropertyType } from './Property';
+import { p as P } from '../Mdx';
+import Property from './Property';
+import Schema from './Schema';
+import SchemaContext from './SchemaContext';
 
 import styles from './Property.module.scss';
 
+const json = {
+  arr: [
+    'foo',
+    'bar',
+  ],
+  boolean: true,
+  null: null,
+  number: 42,
+  obj: {
+    bar: 'bar',
+    foo: 'foo',
+  },
+  string: 'string',
+};
+
+const withContext = (element: React.ReactElement) => global.mountWithRouter(
+  <SchemaContext.Provider
+    value={{
+      id: '',
+      json,
+      jsonPointer: '',
+    }}
+  >
+    {element}
+  </SchemaContext.Provider>
+);
+
 describe('<Property />', () => {
+  it('can be marked as deprecated', () => {
+    const component1 = withContext(
+      <Property
+        name="string"
+      />
+    );
+
+    expect(component1.find(`.${styles.deprecated}`)).not.toExist();
+
+    const component2 = withContext(
+      <Property
+        isDeprecated
+        name="string"
+      />
+    );
+
+    expect(component2.find(`.${styles.deprecated}`).first()).toExist();
+  });
+
   describe('is linkable', () => {
     const name = 'bar';
     const schemaId = 'foo';
-    const propertyId = `${schemaId}__${name}`;
+    const propertyId = `schema--${schemaId}__${name}`;
     let component: ReactWrapper;
 
     beforeAll(() => {
       component = global.mountWithRouter(
-        <Property
-          name={name}
-          schemaId={schemaId}
-          services="*"
-          type="string"
-        />
+        <Schema
+          json={{
+            bar: 'bar',
+            baz: {
+              baz: 'baz',
+            },
+            foo: 'foo',
+          }}
+          jsonPointer="/"
+          name="Foo"
+        >
+          <Property
+            name={name}
+            services="*"
+          />
+        </Schema>
       );
     });
 
     it('adds correct `id` to property container', () => {
-      expect(component.find(`[id="${propertyId}"]`)).toExist();
+      expect(
+        component.find(`[id="${propertyId}"]`)
+      ).toExist();
     });
 
     it('has a <Link /> component', () => {
@@ -34,22 +94,50 @@ describe('<Property />', () => {
     });
 
     describe('<Link /> component', () => {
+      let link: any;
+
+      beforeAll(() => {
+        link = component.find('Property').find(Link);
+      });
+
       it('has correct `to` value', () => {
-        expect(component.find(Link).props().to).toBe(`#${propertyId}`);
+        expect(link.props().to).toBe(`#${propertyId}`);
       });
 
       it('has correct text value', () => {
-        expect(component.find(Link).text()).toBe(name);
+        expect(link.text()).toBe(name);
       });
+    });
+  });
+
+  describe('a type', () => {
+    it('is inferred if no type property is defined', () => {
+      const component = withContext(
+        <Property
+          name="string"
+        />
+      );
+
+      expect(component.find(`.${styles.type}`).first().text()).toBe('string');
+    });
+
+    it('can be defined on the `Property` component', () => {
+      const component = withContext(
+        <Property
+          name="string"
+          type="object"
+        />
+      );
+
+      expect(component.find(`.${styles.type}`).first().text()).toBe('object');
     });
   });
 
   describe('a description', () => {
     it('is not shown if component has no children', () => {
-      const component = global.mountWithRouter(
+      const component = withContext(
         <Property
           name="foo"
-          type="string"
         />
       );
 
@@ -57,10 +145,9 @@ describe('<Property />', () => {
     });
 
     it('is shown if component has children', () => {
-      const component = global.mountWithRouter(
+      const component = withContext(
         <Property
           name="foo"
-          type="string"
         >
           <P>This is a property!</P>
         </Property>
@@ -71,148 +158,138 @@ describe('<Property />', () => {
   });
 
   describe('an example', () => {
-    it('is not shown if `example` property exists', () => {
+    it('is not shown if schema json is not an object', () => {
       const component = global.mountWithRouter(
+        <SchemaContext.Provider
+          value={{
+            id: '',
+            json: '',
+            jsonPointer: '',
+          }}
+        >
+          <Property
+            name="foo"
+          />
+        </SchemaContext.Provider>
+      );
+
+      expect(component.find('Example')).not.toExist();
+    });
+
+    it('is not shown if property name does not exist in schema json', () => {
+      const component = withContext(
         <Property
           name="foo"
-          type="string"
         />
       );
 
       expect(component.find('Example')).not.toExist();
     });
 
-    it('is shown if `example` property exists', () => {
-      const component = global.mountWithRouter(
+    it('is not shown if property name has null value', () => {
+      const component = withContext(
         <Property
-          example="foo"
-          name="foo"
-          type="string"
+          name="null"
         />
       );
 
-      expect(component.find('Example')).toExist();
+      expect(component.find('Example')).not.toExist();
     });
 
-    it(
-      'if `type` is `array<object>`, the `example` value is formatted json',
-      () => {
-        const component = global.mountWithRouter(
-          <Property
-            example={`
-              [
-                {
-                  "foo": "bar"
-                }
-              ]
-            `}
-            name="foo"
-            type="array<object>"
-          />
-        );
-
-        const exampleValue = component.find('Example').props().children;
-
-        expect(exampleValue).toBe(JSON.stringify([
-          {
-            foo: 'bar',
-          },
-        ], null, 2));
-      }
-    );
-
-    it('if `type` is `object`, the `example` value is formatted json', () => {
-      const component = global.mountWithRouter(
+    it('contains stringified json for object properties', () => {
+      const component = withContext(
         <Property
-          example={`
-            {
-              "foo": "bar"
-            }
-          `}
-          name="foo"
-          type="object"
+          name="obj"
         />
       );
 
-      const exampleValue = component.find('Example').props().children;
-
-      expect(exampleValue).toBe(JSON.stringify({
-        foo: 'bar',
-      }, null, 2));
+      const exampleValue = component.find('Example').first().text();
+      expect(exampleValue).toContain(JSON.stringify(json.obj, null, 2));
     });
 
-    it(
-      // eslint-disable-next-line max-len
-      'if `type` is `string`, the `example` value is formatted is wrapped in quotes',
-      () => {
-        const component = global.mountWithRouter(
-          <Property
-            example="foo"
-            name="foo"
-            type="string"
-          />
-        );
+    it('contains stringified json for array properties', () => {
+      const component = withContext(
+        <Property
+          name="arr"
+        />
+      );
 
-        const exampleValue = component.find('Example').props().children;
+      const exampleValue = component.find('Example').first().text();
+      expect(exampleValue).toContain(JSON.stringify(json.arr, null, 2));
+    });
 
-        expect(exampleValue).toBe('"foo"');
-      }
-    );
+    it('contains quotes around for string properties', () => {
+      const component = withContext(
+        <Property
+          name="string"
+        />
+      );
 
-    it.each([
-      [
-        'boolean',
-        'true',
-      ],
-      [
-        'integer',
-        '1',
-      ],
-      [
-        'number',
-        '0.1',
-      ],
-    ])(
-      'if `type` is `%s`, the `example` value is not formatted',
-      (type, example) => {
-        const component = global.mountWithRouter(
-          <Property
-            example={example}
-            name="foo"
-            type={type as PropertyType}
-          />
-        );
+      const exampleValue = component.find('Example').first().text();
+      expect(exampleValue).toEqual(expect.stringMatching(/\s+"string"/));
+    });
 
-        const exampleValue = component.find('Example').props().children;
+    it('stringifies boolean values', () => {
+      const component = withContext(
+        <Property
+          name="boolean"
+        />
+      );
 
-        expect(exampleValue).toBe(example);
-      }
-    );
+      const exampleValue = component.find('Example').first().text();
+      const regex = new RegExp(/\s+true/);
+
+      expect(regex.test(exampleValue)).toBe(true);
+    });
+
+    it('does not format numbers', () => {
+      const component = withContext(
+        <Property
+          name="number"
+        />
+      );
+
+      const exampleValue = component.find('Example').first().text();
+      const regex = new RegExp(/\s+42/);
+
+      expect(regex.test(exampleValue)).toBe(true);
+    });
   });
 
   describe('tags section', () => {
-    it(
-      // eslint-disable-next-line max-len
-      'is not shown if `linkToSchemaName`, `services`, and `tags`  props are undefined',
-      () => {
-        const component = global.mountWithRouter(
+    describe('is not shown if', () => {
+      it(
+        '`linkToSchemaName`, `services`, and `tags` props are undefined',
+        () => {
+          const component = withContext(
+            <Property
+              name="foo"
+            />
+          );
+
+          expect(component.find(`.${styles.tags}`)).not.toExist();
+        }
+      );
+
+      it('`isDeprecated` prop is true', () => {
+        const component = withContext(
           <Property
+            isDeprecated
             name="foo"
-            type="string"
+            services="*"
           />
         );
 
         expect(component.find(`.${styles.tags}`)).not.toExist();
-      }
-    );
+      });
+    });
 
     describe('is shown if', () => {
       it('`linkToSchemaName` is defined', () => {
-        const component = global.mountWithRouter(
+        const component = withContext(
           <Property
-            linkToSchemaName={'Foo'}
-            name="foo"
-            type="string"
+            linkToSchemaName={'Boolean'}
+            name="boolean"
           />
         );
 
@@ -220,11 +297,10 @@ describe('<Property />', () => {
       });
 
       it('`services` is defined', () => {
-        const component = global.mountWithRouter(
+        const component = withContext(
           <Property
             name="foo"
             services="*"
-            type="string"
           />
         );
 
@@ -232,13 +308,12 @@ describe('<Property />', () => {
       });
 
       it('`tags` is defined', () => {
-        const component = global.mountWithRouter(
+        const component = withContext(
           <Property
             name="foo"
             tags={{
               foo: 'foo',
             }}
-            type="string"
           />
         );
 
@@ -247,12 +322,10 @@ describe('<Property />', () => {
     });
 
     it('lists service tags', () => {
-      const component = global.mountWithRouter(
+      const component = withContext(
         <Property
           name="foo"
-          schemaId="bar"
           services="*"
-          type="string"
         />
       );
 
@@ -263,17 +336,14 @@ describe('<Property />', () => {
       let schemaTags: ReactWrapper;
 
       beforeAll(() => {
-        const component = global.mountWithRouter(
+        const component = withContext(
           <Property
             name="foo"
-            schemaId="bar"
-            services="*"
             tags={{
               bar: 'bar',
               baz: null,
               foo: 'foo',
             }}
-            type="string"
           />
         );
 
