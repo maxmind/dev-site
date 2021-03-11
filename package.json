@@ -63,7 +63,7 @@
     "lodash.isboolean": "^3.0.3",
     "lodash.isnumber": "^3.0.3",
     "lodash.isplainobject": "^4.0.6",
-    "mdast-util-to-hast": "^10.1.1",
+    "mdast-util-to-hast": "^10.2.0",
     "mdast-util-to-string": "^2.0.0",
     "node-fetch": "^2.6.1",
     "normalize.css": "^8.0.1",
