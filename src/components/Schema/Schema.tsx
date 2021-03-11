@@ -35,12 +35,7 @@ const Schema: React.FC<ISchema> = (props) => {
     type,
   } = props;
 
-  const formattedSchemaName = React.useMemo(
-    () => formatSchemaName(name),
-    [
-      name,
-    ]
-  );
+  const formattedSchemaName = formatSchemaName(name);
 
   const schemaId = React.useMemo(
     () => `schema--${slugger.slug(formattedSchemaName)}`,
@@ -49,30 +44,15 @@ const Schema: React.FC<ISchema> = (props) => {
     ]
   );
 
-  const inferredType = React.useMemo(
-    () => inferType(json),
-    [
-      json,
-    ]
+  const inferredType = inferType(json);
+
+  const schemaContent = React.Children.toArray(children);
+
+  const firstPropertyComponentIndex =  schemaContent.findIndex(
+    (child: any) => child.props.mdxType === 'Property'
   );
 
-  const [
-    schemaContent,
-    propertyContent,
-  ] = React.useMemo(() => {
-    const content = React.Children.toArray(children);
-
-    const firstPropertyComponentIndex =  content.findIndex(
-      (child: any) => child.props.mdxType === 'Property'
-    );
-
-    return [
-      content,
-      content.splice(firstPropertyComponentIndex),
-    ];
-  }, [
-    children,
-  ]);
+  const propertyContent = schemaContent.splice(firstPropertyComponentIndex);
 
   return (
     <div
