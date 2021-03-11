@@ -5,20 +5,15 @@ import responseJson from '../_examples/response';
   jsonPointer="/ip_address/country"
   name="Response | IP Address | Country"
 >
-  // TODO - short description + link to GeoIP2 country schema
-
   <Property
+    isDeprecated
     name="is_high_risk"
-    tags={{
-      'Format': 'Decimal',
-    }}
     services={[
       'insights',
       'factors',
     ]}
+    type="boolean"
   >
     This field has been deprecated.
-
-    // TODO - Add deprecated tag
   </Property>
 </Schema>

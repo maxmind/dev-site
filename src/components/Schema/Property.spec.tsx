@@ -37,6 +37,25 @@ const withContext = (element: React.ReactElement) => global.mountWithRouter(
 );
 
 describe('<Property />', () => {
+  it('can be marked as deprecated', () => {
+    const component1 = withContext(
+      <Property
+        name="string"
+      />
+    );
+
+    expect(component1.find(`.${styles.deprecated}`)).not.toExist();
+
+    const component2 = withContext(
+      <Property
+        isDeprecated
+        name="string"
+      />
+    );
+
+    expect(component2.find(`.${styles.deprecated}`).first()).toExist();
+  });
+
   describe('is linkable', () => {
     const name = 'bar';
     const schemaId = 'foo';
@@ -238,19 +257,32 @@ describe('<Property />', () => {
   });
 
   describe('tags section', () => {
-    it(
-      // eslint-disable-next-line max-len
-      'is not shown if `linkToSchemaName`, `services`, and `tags` props are undefined',
-      () => {
+    describe('is not shown if', () => {
+      it(
+        '`linkToSchemaName`, `services`, and `tags` props are undefined',
+        () => {
+          const component = withContext(
+            <Property
+              name="foo"
+            />
+          );
+
+          expect(component.find(`.${styles.tags}`)).not.toExist();
+        }
+      );
+
+      it('`isDeprecated` prop is true', () => {
         const component = withContext(
           <Property
+            isDeprecated
             name="foo"
+            services="*"
           />
         );
 
         expect(component.find(`.${styles.tags}`)).not.toExist();
-      }
-    );
+      });
+    });
 
     describe('is shown if', () => {
       it('`linkToSchemaName` is defined', () => {

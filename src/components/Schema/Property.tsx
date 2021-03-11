@@ -17,6 +17,7 @@ type TagValue = boolean | string | number | null;
 
 export interface IProperty {
   children?: React.ReactElement | React.ReactElement[],
+  isDeprecated?: boolean;
   linkToSchemaName?: string;
   name: string;
   schemaId?: string;
@@ -28,12 +29,12 @@ export interface IProperty {
 const Property: React.FC<IProperty> = (props) => {
   const {
     children: description,
+    isDeprecated,
     linkToSchemaName,
     tags: schemaTags,
     name,
     services,
   } = props;
-
   const location = useLocation();
 
   const schema = React.useContext(SchemaContext);
@@ -79,6 +80,14 @@ const Property: React.FC<IProperty> = (props) => {
         </Tag>
       )}
 
+      {isDeprecated && (
+        <Tag
+          className={styles.deprecated}
+        >
+          deprecated
+        </Tag>
+      )}
+
       {description && (
         <div
           className={styles.description}
@@ -100,7 +109,7 @@ const Property: React.FC<IProperty> = (props) => {
         </Example>
       )}
 
-      {(linkToSchemaId || schemaTags || serviceTags) && (
+      {(linkToSchemaId || schemaTags || serviceTags) && !isDeprecated && (
         <div
           className={styles.tags}
         >
@@ -169,6 +178,7 @@ Property.propTypes = {
     PropTypes.element,
     PropTypes.arrayOf(PropTypes.element.isRequired),
   ]),
+  isDeprecated: PropTypes.bool,
   linkToSchemaName: PropTypes.string,
   name: PropTypes.string.isRequired,
   services: PropTypes.oneOfType([

@@ -57,6 +57,14 @@
   vertical-align: middle;
 }
 
+.deprecated {
+  background: #ffefee;
+  border-color: #ffd8d6;
+  color: #8c362e;
+  margin-left: calc(var(--mm-spacing) / 4);
+  vertical-align: middle;
+}
+
 .row--targeted .type {
   background: #fff;
 }
