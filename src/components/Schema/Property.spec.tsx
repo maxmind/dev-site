@@ -256,8 +256,8 @@ describe('<Property />', () => {
       it('`linkToSchemaName` is defined', () => {
         const component = withContext(
           <Property
-            linkToSchemaName={'Foo'}
-            name="foo"
+            linkToSchemaName={'Boolean'}
+            name="boolean"
           />
         );
 

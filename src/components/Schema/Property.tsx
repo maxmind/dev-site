@@ -2,11 +2,9 @@ import { useLocation } from '@reach/router';
 import CustomPropTypes from 'airbnb-prop-types';
 import classNames from 'classnames';
 import { Link } from 'gatsby';
-import GithubSlugger from 'github-slugger';
 import PropTypes from 'prop-types';
 import * as React from 'react';
 
-import { formatSchemaName } from '../../utils/openapi';
 import Example from '../Example';
 import PropertyValues from './PropertyValues';
 import SchemaContext  from './SchemaContext';
@@ -14,8 +12,6 @@ import ServiceTags from './ServiceTags';
 import Tag from './Tag';
 
 import styles from './Property.module.scss';
-
-const slugger = new GithubSlugger();
 
 type TagValue = boolean | string | number | null;
 
@@ -42,27 +38,15 @@ const Property: React.FC<IProperty> = (props) => {
 
   const schema = React.useContext(SchemaContext);
 
-  const propertyId = React.useMemo(
-    () => `${schema.id}__${slugger.slug(name)}`,
-    [
-      schema.id,
-      name,
-    ]
-  );
-
-  const linkToSchemaId = React.useMemo(
-    () => linkToSchemaName && slugger.slug(formatSchemaName(linkToSchemaName)),
-    [
-      linkToSchemaName,
-    ]
-  );
-
   const {
     example,
+    linkToSchemaId,
+    id: propertyId,
     type,
   } = new PropertyValues({
     property: {
-      name: name,
+      linkToSchemaName,
+      name,
       type: props.type,
     },
     schema,

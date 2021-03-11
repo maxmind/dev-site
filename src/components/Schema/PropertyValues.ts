@@ -1,3 +1,5 @@
+import GithubSlugger from 'github-slugger';
+
 import {
   inferType,
   isArray,
@@ -5,8 +7,11 @@ import {
   isObject,
   isString,
 } from '../../utils/json';
+import { formatSchemaName } from '../../utils/openapi';
 import { IProperty } from './Property';
 import { SchemaContextProps } from './SchemaContext';
+
+const slug = GithubSlugger.slug;
 
 class PropertyValues {
   public example?: {
@@ -14,14 +19,16 @@ class PropertyValues {
     language: 'bash' | 'json';
     value: string;
   };
+  public id?: string;
+  public linkToSchemaId?: string;
   public type?: string;
 
   constructor({
     schema,
     property,
   }: {
-    property: Pick<IProperty, 'name' | 'type'>;
-    schema: Pick<SchemaContextProps, 'json' | 'jsonPointer'>
+    property: Pick<IProperty, 'linkToSchemaName' | 'name' | 'type'>;
+    schema: Pick<SchemaContextProps, 'id' | 'json' | 'jsonPointer'>
   }) {
     this.type = property.type;
 
@@ -45,6 +52,11 @@ class PropertyValues {
       language: this.getLanguage(this.type),
       value: this.formatExample(example),
     };
+
+    this.id = `${schema.id}__${slug(property.name)}`;
+
+    this.linkToSchemaId = property.linkToSchemaName &&
+      slug(formatSchemaName(property.linkToSchemaName));
   }
 
   private formatPointer(base: string, property: string) {
