@@ -23,7 +23,7 @@ interface ISchema {
   type?: SchemaType;
 }
 
-const slugger = new GithubSlugger();
+const slug = GithubSlugger.slug;
 
 const Schema: React.FC<ISchema> = (props) => {
   const {
@@ -37,12 +37,7 @@ const Schema: React.FC<ISchema> = (props) => {
 
   const formattedSchemaName = formatSchemaName(name);
 
-  const schemaId = React.useMemo(
-    () => `schema--${slugger.slug(formattedSchemaName)}`,
-    [
-      formattedSchemaName,
-    ]
-  );
+  const schemaId = `schema--${slug(formattedSchemaName)}`;
 
   const inferredType = inferType(json);
 
