@@ -40,7 +40,7 @@
 
 .logo {
   display: grid;
-  gap: 15px;
+  gap: 8px;
   grid-area: logo;
   grid-template-areas: 'svg site-name';
   grid-template-columns: auto;
@@ -67,7 +67,7 @@
   letter-spacing: 1px;
   line-height: 1;
   overflow: hidden;
-  padding-left: 18px;
+  padding-left: 9px;
   position: relative;
   text-transform: uppercase;
 
@@ -75,17 +75,36 @@
     background: #ccc;
     content: ' ';
     display: block;
-    height: 30px;
+    height: 100%;
     left: 0;
     position: absolute;
-    transform: rotate(20deg);
+    top: 50%;
+    transform: rotate(20deg) translateY(-50%);
     width: 1px;
   }
+}
+
+.eloper {
+  display: none;
 }
 
 .search {
   grid-area: search;
   width: 100%;
+}
+
+@include variables.breakpoint('sm') {
+  .logo {
+    gap: 15px;
+  }
+
+  .logo__site-name {
+    padding-left: 18px;
+  }
+
+  .eloper {
+    display: inline;
+  }
 }
 
 @include variables.breakpoint('lg') {

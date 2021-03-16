@@ -50,6 +50,9 @@
 }
 
 .input {
+  /* stylelint-disable */
+  -webkit-appearance: none;
+  /* stylelint-enable */
   border: 1px solid var(--mm-color-border);
   border-radius: var(--mm-border-radius);
   color: var(--mm-color-primary-text);

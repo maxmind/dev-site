@@ -1,4 +1,5 @@
 $breakpoints: (
+  xs: 360px,
   sm: 576px,
   md: 768px,
   lg: 992px,
@@ -171,15 +172,24 @@ $pattern-scale: 1;
   box-sizing: border-box;
   color: var(--mm-color-primary-color);
   cursor: pointer;
-  height: 50px;
-  min-width: 50px;
+  font-size: 12px;
+  height: 30px;
+  min-width: 30px;
   padding: 0;
-  width: 50px;
+  width: 30px;
 
   &:hover {
     background-color: var(--mm-color-sidebar);
   }
+
+  @media only screen and (min-width: 420px) {
+    font-size: 16px;
+    height: 50px;
+    min-width: 50px;
+    width: 50px;
+  }
 }
+
 
 @mixin opaque-overlay {
   backdrop-filter: blur(3px);

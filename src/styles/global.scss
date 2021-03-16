@@ -60,12 +60,17 @@
   --page-type-color: rgba(0, 255, 102, 0.5);
 }
 
+html {
+  min-width: 360px;
+}
+
 body {
   color: var(--mm-color-primary-text);
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Ubuntu, sans-serif;
   font-size: 1.1rem;
   line-height: 1.3em;
   min-height: 100vh;
+  min-width: 360px;
   position: relative;
 }
 
