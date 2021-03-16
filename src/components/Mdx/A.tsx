@@ -6,37 +6,42 @@ import { FaExternalLinkAlt } from 'react-icons/fa';
 
 import styles from './A.module.scss';
 
-const A: React.FC<React.HTMLProps<HTMLAnchorElement>> = ({
-  className,
-  children,
-  href,
-  ...props
-}) => {
+const A: React.FC<React.HTMLProps<HTMLAnchorElement>> = (props) => {
+  const { className, children, href, target, ...rest } = props;
+  let isEmail = false;
+
   // remark-external-links sets target='_blank'
-  const isExternal = props.target === '_blank';
+  const isExternal = target === '_blank';
+
+  if (href) {
+    isEmail = href.startsWith('mailto');
+  }
 
   return (
     <>
-      { isExternal &&
+      { (isExternal || isEmail) &&
         <a
           className={classNames(className, styles.a)}
           href={href}
-          {...props}
+          {...rest}
         >
           {children}
-          <FaExternalLinkAlt
-            className={styles.icon}
-          />
+
+          {!isEmail && (
+            <FaExternalLinkAlt
+              className={styles.icon}
+            />
+          )}
         </a>
       }
-      { !isExternal &&
+      { !isExternal && !isEmail && (
         <Link
           className={classNames(className, styles.a)}
           to={href || '#'}
         >
           {children}
         </Link>
-      }
+      )}
     </>
   );
 };
