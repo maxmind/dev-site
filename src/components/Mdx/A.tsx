@@ -23,6 +23,7 @@ const A: React.FC<React.HTMLProps<HTMLAnchorElement>> = (props) => {
         <a
           className={classNames(className, styles.a)}
           href={href}
+          target={target}
           {...rest}
         >
           {children}
