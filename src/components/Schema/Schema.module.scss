@@ -4,6 +4,7 @@
   display: table;
   margin: var(--mm-spacing) 0 calc(var(--mm-spacing) + 1px);
   position: relative;
+  scroll-margin-top: calc(var(--page-header-height) + var(--mm-spacing));
   width: 100%;
 }
 
@@ -19,7 +20,6 @@
   grid-template-rows: max-content;
   padding: calc(var(--mm-spacing) / 4) calc(var(--mm-spacing) / 2);
   position: sticky;
-  scroll-margin-top: calc(var(--page-header-height) + var(--mm-spacing));
   top: calc(var(--page-header-height) + var(--mm-spacing));
   transform-style: preserve-3d;
   z-index: 5;

@@ -39,7 +39,11 @@ const Schema: React.FC<ISchema> = (props) => {
 
   const schemaId = `schema--${slug(formattedSchemaName)}`;
 
-  const inferredType = inferType(json);
+  let inferredType = '';
+
+  if (typeof json !== 'undefined') {
+    inferredType = inferType(json);
+  }
 
   const schemaContent = React.Children.toArray(children);
 
@@ -52,10 +56,10 @@ const Schema: React.FC<ISchema> = (props) => {
   return (
     <div
       className={styles.container}
+      id={schemaId}
     >
       <div
         className={styles.heading}
-        id={schemaId}
       >
         <span
           className={styles['heading__name']}
@@ -71,15 +75,17 @@ const Schema: React.FC<ISchema> = (props) => {
           </Link>
         </span>
 
-        <span
-          className={styles['heading__type']}
-        >
-          <Tag
-            className={styles['heading__tag']}
+        {(type || inferredType) && (
+          <span
+            className={styles['heading__type']}
           >
-            {type || inferredType}
-          </Tag>
-        </span>
+            <Tag
+              className={styles['heading__tag']}
+            >
+              {type || inferredType}
+            </Tag>
+          </span>
+        )}
       </div>
       <div
         className={styles.content}
