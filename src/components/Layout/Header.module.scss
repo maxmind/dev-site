@@ -96,6 +96,8 @@
 @include variables.breakpoint('sm') {
   .logo {
     gap: 15px;
+    grid-template-areas: 'svg site-name';
+    grid-template-columns: auto;
   }
 
   .logo__site-name {
