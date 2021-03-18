@@ -18,13 +18,16 @@ const useActiveHeading = (headingIds: string[]): string => {
         });
       },
       {
-        rootMargin: '0% 0% -70% 0%',
+        // TODO - Adjust margin from bottom based on height of viewport in px
+        rootMargin: '0% 0% -80% 0%',
       },
     );
 
     const headings: HTMLElement[] = headingIds.reduce(
       (accumulator: HTMLElement[], headingId: string) => {
-        const element = document.getElementById(`toc-${headingId}`);
+        const element = headingId.startsWith('schema--')
+          ? document.getElementById(headingId)
+          : document.getElementById(`toc-${headingId}`);
 
         if (!element) {
           return accumulator;

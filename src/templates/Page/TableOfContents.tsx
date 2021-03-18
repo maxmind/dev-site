@@ -32,8 +32,19 @@ const getIds = (
 }, []);
 
 const isActive = (url: string, pathname: string, currentItem?: string) => {
-  return (url == pathname) ||
-    (currentItem && currentItem === `toc-${url.slice(1)}`);
+  if (
+    url === pathname
+    || (
+      currentItem && (
+        currentItem === `toc-${url.slice(1)}`
+        || currentItem === url.slice(1)
+      )
+    )
+  ) {
+    return true;
+  }
+
+  return false;
 };
 
 const renderItems = (

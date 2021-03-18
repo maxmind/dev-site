@@ -21,6 +21,7 @@ describe('Schema', () => {
         json={json}
         jsonPointer="/"
         name="Foo"
+        type="object"
       >
         <P>This is example text.</P>
 
@@ -60,6 +61,24 @@ describe('Schema', () => {
     ).toBe('object');
   });
 
+  it('does not infer the schema type if `json` prop is undefined', async () => {
+    const spy = jest.spyOn(console, 'error').mockImplementation();
+
+    const component = global.mountWithRouter(
+      // @ts-expect-error leaving `json` undefined
+      <Schema
+        jsonPointer="/"
+        name="Foo"
+      >
+        <P>This is example text.</P>
+      </Schema>
+    );
+
+    expect(component.find(`.${styles['heading__type']}`)).not.toExist();
+    expect(console.error).toHaveBeenCalled();
+    spy.mockRestore();
+  });
+
   it('allows a custom schema type to be set', async () => {
     const component = global.mountWithRouter(
       <Schema
@@ -88,6 +107,7 @@ describe('Schema', () => {
           jsonPointer="/"
           name="Foo"
           services="*"
+          type="object"
         >
           <P>This is example text.</P>
 
