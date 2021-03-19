@@ -10,7 +10,7 @@ import {
 } from 'react-icons/fa';
 
 // eslint-disable-next-line css-modules/no-unused-class
-import styles from './Alert.module.scss';
+import * as styles from './Alert.module.scss';
 
 interface IAlert {
   children: React.ReactNode,

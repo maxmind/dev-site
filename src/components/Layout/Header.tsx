@@ -7,7 +7,7 @@ import Logo from '../../assets/svgs/maxmind-logo.svg';
 import AccessibilityNav from './AccessibilityNav';
 import SearchBar from './SearchBar';
 
-import styles from './Header.module.scss';
+import * as styles from './Header.module.scss';
 
 interface IHeader {
   isSidebarOpen?: boolean;

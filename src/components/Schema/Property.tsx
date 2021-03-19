@@ -11,7 +11,7 @@ import SchemaContext  from './SchemaContext';
 import ServiceTags from './ServiceTags';
 import Tag from './Tag';
 
-import styles from './Property.module.scss';
+import * as styles from './Property.module.scss';
 
 type TagValue = boolean | string | number | null;
 

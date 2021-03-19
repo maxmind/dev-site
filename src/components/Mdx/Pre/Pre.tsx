@@ -10,7 +10,7 @@ import Code from './Code';
 import Message, { State as MessageState } from './Message';
 import Wrapper from './Wrapper';
 
-import styles from './Pre.module.scss';
+import * as styles from './Pre.module.scss';
 
 interface IPre {
   className: string;

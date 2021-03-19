@@ -3,7 +3,7 @@ import * as React from 'react';
 
 import { ILinkGroup } from './LinkGroup';
 
-import styles from './LinkGroupContainer.module.scss';
+import * as styles from './LinkGroupContainer.module.scss';
 
 interface ILinkGroupContainer {
   children: React.ReactElement<ILinkGroup> | React.ReactElement<ILinkGroup>[],

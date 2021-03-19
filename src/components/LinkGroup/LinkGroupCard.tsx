@@ -5,7 +5,7 @@ import * as React from 'react';
 import { IconType } from 'react-icons';
 import { FaArrowRight } from 'react-icons/fa';
 
-import styles from './LinkGroupCard.module.scss';
+import * as styles from './LinkGroupCard.module.scss';
 
 export interface ILinkGroupCard {
   className?: string;

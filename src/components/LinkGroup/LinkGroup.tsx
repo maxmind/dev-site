@@ -4,7 +4,7 @@ import * as React from 'react';
 
 import { ILinkGroupCard } from './LinkGroupCard';
 
-import styles from './LinkGroup.module.scss';
+import * as styles from './LinkGroup.module.scss';
 
 export interface ILinkGroup {
   children: React.ReactElement<ILinkGroupCard>

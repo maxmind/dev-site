@@ -12,7 +12,7 @@ import Example from '../Example';
 import SchemaContext from './SchemaContext';
 import Tag from './Tag';
 
-import styles from './Schema.module.scss';
+import * as styles from './Schema.module.scss';
 
 interface ISchema {
   children: React.ReactElement | React.ReactElement[];

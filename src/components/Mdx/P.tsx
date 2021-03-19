@@ -2,7 +2,7 @@ import classNames from 'classnames';
 import PropTypes from 'prop-types';
 import React from 'react';
 
-import styles from './P.module.scss';
+import * as styles from './P.module.scss';
 
 const P: React.FC<React.HTMLProps<HTMLParagraphElement>> = ({
   className,

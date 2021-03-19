@@ -6,7 +6,7 @@ import React from 'react';
 import Type from './Type';
 import { getRefAnchorLink } from './utils';
 
-import styles from './Heading.module.scss';
+import * as styles from './Heading.module.scss';
 
 interface IHeading {
   className?: string;

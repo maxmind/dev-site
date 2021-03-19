@@ -5,7 +5,7 @@ import React from 'react';
 
 import Pre from '../../../components/Mdx/Pre';
 
-import styles from './CodeExample.module.scss';
+import * as styles from './CodeExample.module.scss';
 
 interface ICodeExample {
   className?: string;

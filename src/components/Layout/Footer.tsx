@@ -4,7 +4,7 @@ import { FaLinkedin, FaTwitterSquare } from 'react-icons/fa';
 
 import Logo from '../../assets/svgs/maxmind-footer-logo.svg';
 
-import styles from './Footer.module.scss';
+import * as styles from './Footer.module.scss';
 
 const Footer: React.FC<React.HTMLProps<HTMLDivElement>> = (props) => (
   <footer

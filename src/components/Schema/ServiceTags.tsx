@@ -4,7 +4,7 @@ import * as React from 'react';
 
 import Tag from './Tag';
 
-import styles from './ServiceTags.module.scss';
+import * as styles from './ServiceTags.module.scss';
 
 interface IServiceTags {
   className?: string;

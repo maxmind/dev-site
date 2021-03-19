@@ -7,7 +7,7 @@ import Property from './Property';
 import Schema from './Schema';
 import SchemaContext from './SchemaContext';
 
-import styles from './Property.module.scss';
+import * as styles from './Property.module.scss';
 
 const json = {
   arr: [

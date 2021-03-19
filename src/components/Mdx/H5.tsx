@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import React from 'react';
 import { FaLink } from 'react-icons/fa';
 
-import styles from './H5.module.scss';
+import * as styles from './H5.module.scss';
 
 const H5: React.FC<React.HTMLProps<HTMLHeadingElement>> = ({
   className,

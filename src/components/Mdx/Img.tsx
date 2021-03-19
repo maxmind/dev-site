@@ -1,29 +1,26 @@
 import classNames from 'classnames';
 import { graphql,useStaticQuery } from 'gatsby';
-import Image from 'gatsby-image';
+import { GatsbyImage } from 'gatsby-plugin-image';
 import PropTypes from 'prop-types';
 import React from 'react';
 
-import styles from './Img.module.scss';
+import * as styles from './Img.module.scss';
 
 const Img: React.FC<React.HTMLProps<HTMLImageElement>> = (props) => {
-  const data = useStaticQuery(graphql`
-    query {
-      placeholderImage: file(relativePath: { eq: "gatsby-astronaut.png" }) {
-        childImageSharp {
-          fluid(maxWidth: 300) {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
+  const data = useStaticQuery(graphql`{
+  placeholderImage: file(relativePath: {eq: "gatsby-astronaut.png"}) {
+    childImageSharp {
+      gatsbyImageData(width: 300, layout: CONSTRAINED)
     }
-  `);
+  }
+}
+`);
 
   return (
-    <Image
-      alt={props.alt}
+    <GatsbyImage
+      alt={props.alt || ''}
       className={classNames(props.className, styles.img)}
-      fluid={data.placeholderImage.childImageSharp.fluid}
+      image={data.placeholderImage.childImageSharp.gatsbyImageData}
       title={props.title}
     />
   );

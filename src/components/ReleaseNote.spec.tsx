@@ -5,7 +5,7 @@ import H2 from './Mdx/H2';
 import ReleaseNote from './ReleaseNote';
 
 // eslint-disable-next-line css-modules/no-unused-class
-import styles from './ReleaseNote.module.scss';
+import * as styles from './ReleaseNote.module.scss';
 
 describe('ReleaseNote', () => {
   const component = mount(

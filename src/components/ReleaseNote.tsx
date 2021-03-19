@@ -4,7 +4,7 @@ import * as React from 'react';
 
 import H2 from './Mdx/H2';
 
-import styles from './ReleaseNote.module.scss';
+import * as styles from './ReleaseNote.module.scss';
 
 type Year = `${number}${number}${number}${number}`;
 type Month = '01' | '02' | '03' | '04' | '05' | '06' | '07' | '08' | '09' | '10'

@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import * as React from 'react';
 
-import styles from './Footnote.module.scss';
+import * as styles from './Footnote.module.scss';
 
 const Footnote: React.FC = (props) => {
   const { children } = props;

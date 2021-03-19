@@ -7,7 +7,7 @@ import { FaAngleDoubleDown } from 'react-icons/fa';
 import { renderMarkdownElement } from '../utils';
 import Properties from './Properties';
 
-import styles from './Content.module.scss';
+import * as styles from './Content.module.scss';
 
 interface IContent {
   className?: string;

@@ -4,7 +4,7 @@ import { p as P } from '../Mdx';
 import Property from './Property';
 import Schema from './Schema';
 
-import styles from './Schema.module.scss';
+import * as styles from './Schema.module.scss';
 
 const json = {
   bar: 'bar',

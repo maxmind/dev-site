@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import React, { useEffect, useRef, useState } from 'react';
 import { FaSearch } from 'react-icons/fa';
 
-import styles from './SearchBar.module.scss';
+import * as styles from './SearchBar.module.scss';
 
 interface ISearchBar {
   className?: string;

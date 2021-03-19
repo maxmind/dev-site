@@ -15,7 +15,7 @@ import { IPageContext } from './query';
 import ReleaseNotesArchiveList from './ReleaseNotesArchiveList';
 import TableOfContents from './TableOfContents';
 
-import styles from './Page.module.scss';
+import * as styles from './Page.module.scss';
 
 interface IPage {
   children: React.ReactNode;

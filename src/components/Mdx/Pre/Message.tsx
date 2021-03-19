@@ -2,7 +2,7 @@ import classNames from 'classnames';
 import PropTypes from 'prop-types';
 import React from 'react';
 
-import styles from './Message.module.scss';
+import * as styles from './Message.module.scss';
 
 export type State = 'hidden' | 'hiding' | 'visible';
 

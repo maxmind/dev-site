@@ -10,7 +10,7 @@ import {
   isInternalItem,
 } from '../../types/Item';
 
-import styles from './Sidebar.module.scss';
+import * as styles from './Sidebar.module.scss';
 
 const renderItems = (
   items: IItem[],

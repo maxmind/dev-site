@@ -4,7 +4,7 @@ import * as React from 'react';
 import ServiceTags from './ServiceTags';
 
 // eslint-disable-next-line css-modules/no-unused-class
-import styles from './ServiceTags.module.scss';
+import * as styles from './ServiceTags.module.scss';
 
 describe('<ServiceTags />', () => {
   it('renders all service tags', () => {

@@ -7,7 +7,7 @@ import { Store } from '../store';
 import Pre from './Mdx/Pre';
 import Wrapper from './Mdx/Pre/Wrapper';
 
-import styles from './CodeSet.module.scss';
+import * as styles from './CodeSet.module.scss';
 
 const getHumanReadable = (className: string): string  => languages
   .find(language => `language-${language.id}` === className)?.label

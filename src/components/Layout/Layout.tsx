@@ -14,7 +14,7 @@ import Header from './Header';
 import SEO from './Seo';
 import Sidebar from './Sidebar';
 
-import styles from './Layout.module.scss';
+import * as styles from './Layout.module.scss';
 
 interface ILayout {
   children: React.ReactNode;
