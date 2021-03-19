@@ -95,7 +95,11 @@ const renderItems = (
 );
 
 const Sidebar: React.FC = () => {
-  const location = useLocation();
+  let pathname = useLocation().pathname;
+
+  if (pathname.slice(pathname.length -1) === '/') {
+    pathname = pathname.slice(0, -1);
+  }
 
   return (
     <section
@@ -105,7 +109,7 @@ const Sidebar: React.FC = () => {
         className={styles.nav}
         id="navigation"
       >
-        {renderItems(navigation, location.pathname)}
+        {renderItems(navigation, pathname)}
       </nav>
     </section>
   );
