@@ -34,11 +34,12 @@ module.exports = {
           'calc',
 
           /**
-           * Not supported - IE11
+           * Not supported - IE 11
+           * Partial support - Safari
            *
-           * https://caniuse.com/?search=css-initial-value
+           * https://caniuse.com/?search=appearance
            */
-          'css-initial-value',
+          'css-appearance',
 
           /**
            * Not supported - IE11
@@ -65,6 +66,13 @@ module.exports = {
            * https://caniuse.com/?search=css-gradients
            */
           'css-gradients',
+
+          /**
+           * Not supported - IE11
+           *
+           * https://caniuse.com/?search=css-initial-value
+           */
+          'css-initial-value',
 
           /**
            * Not supported - IE11

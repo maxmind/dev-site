@@ -106,6 +106,10 @@
     margin-left: var(--mm-spacing);
     margin-right: var(--mm-spacing);
   }
+
+  [class^='Example-module--value'] {
+    max-width: calc(100vw - calc(var(--mm-spacing) * 3 + 6px));
+  }
 }
 
 @include variables.breakpoint('md') {

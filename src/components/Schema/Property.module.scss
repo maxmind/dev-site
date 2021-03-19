@@ -98,6 +98,14 @@
   padding: 8px;
 }
 
+.description > [class^='Ul-module'] {
+  margin-left: 0;
+  margin-right: 0;
+  max-width: calc(100vw - calc(var(--mm-spacing) * 3 + 6px));
+  overflow-x: scroll;
+  padding-left: calc(var(--mm-spacing) / 2) !important;
+}
+
 .description > * {
   max-width: auto !important;
   min-width: auto !important;
