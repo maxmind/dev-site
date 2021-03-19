@@ -42,7 +42,7 @@ export const onCreateWebpackConfig: GatsbyNode['onCreateWebpackConfig']= (
     test: /\.module\.s(a|c)ss$/,
     use: [
       !IS_SSR && props.loaders.miniCssExtract({
-        hmr: false,
+        modules: true,
       }),
       props.loaders.css({
         camelCase: true,
