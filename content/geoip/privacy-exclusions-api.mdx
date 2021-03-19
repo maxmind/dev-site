@@ -112,14 +112,14 @@ and may change at any time.
 In addition to the errors documented below, client code should also be prepared
 to handle any valid HTTP 4xx or 5xx status code.
 
-| Code                  | HTTP Status               | Error                                                                                                                                 |
-| --------------------- | ------------------------- | ------------------------------------------------------------------------------------------------------------------------------------- |
-| TIMESTAMP_INVALID     | 400 Bad Request           | The `updates_after` field must be in RFC 3339 format.                                                                                 |
-| AUTHORIZATION_INVALID | 401 Unauthorized          | Your account ID or license key could not be authenticated.                                                                            |
-| ACCOUNT_ID_REQUIRED   | 401 Unauthorized          | An account ID and license key are required to use this service.                                                                       |
-| LICENSE_KEY_REQUIRED  | 401 Unauthorized          | An account ID and license key are required to use this service.                                                                       |
+| Code                  | HTTP Status               | Error                                                                                                   |
+| --------------------- | ------------------------- | ------------------------------------------------------------------------------------------------------- |
+| TIMESTAMP_INVALID     | 400 Bad Request           | The `updates_after` field must be in RFC 3339 format.                                                   |
+| AUTHORIZATION_INVALID | 401 Unauthorized          | Your account ID or license key could not be authenticated.                                              |
+| ACCOUNT_ID_REQUIRED   | 401 Unauthorized          | An account ID and license key are required to use this service.                                         |
+| LICENSE_KEY_REQUIRED  | 401 Unauthorized          | An account ID and license key are required to use this service.                                         |
 | PERMISSION_REQUIRED   | 403 Forbidden             | You do not have permission to use the service. Please contact support@maxmind.com for more information. |
-| _(none)_              | 503 Service Not Available | There is a problem with the web service server. You can try this request again later.                                                 |
+| _(none)_              | 503 Service Not Available | There is a problem with the web service server. You can try this request again later.                   |
 
 #### Example Response (for an unsuccessful request)
 
