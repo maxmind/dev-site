@@ -13,7 +13,7 @@ import Wrapper from './Wrapper';
 import * as styles from './Pre.module.scss';
 
 interface IPre {
-  className: string;
+  className?: string;
   hasWrapper?: boolean;
   highlightLines?: string;
   nav?: React.ReactElement<React.HTMLProps<HTMLElement>>;
@@ -158,7 +158,7 @@ Pre.defaultProps = {
 
 Pre.propTypes = {
   children: PropTypes.node,
-  className: PropTypes.string.isRequired,
+  className: PropTypes.string,
   hasWrapper: PropTypes.bool,
   highlightLines: PropTypes.string,
   nav: PropTypes.any,
