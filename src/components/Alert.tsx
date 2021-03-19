@@ -45,7 +45,7 @@ const Alert: React.FC<IAlert> = (props) => {
       )}
     >
       <div
-        className={styles['icon-wrapper']}
+        className={styles.iconWrapper}
       >
         <Icon
           className={styles.icon}

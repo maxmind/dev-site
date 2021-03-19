@@ -62,7 +62,7 @@ const SearchBar: React.FC<ISearchBar> = (props) => {
         action="/search-results"
         className={classNames(
           styles.searchbar,
-          isMobileOpen && styles['searchbar--mobile-open']
+          isMobileOpen && styles['searchbar__mobileOpen']
         )}
         onSubmit={handleSubmit}
         role="search"
@@ -89,11 +89,11 @@ const SearchBar: React.FC<ISearchBar> = (props) => {
         />
       </form>
       <div
-        className={styles['search-mobile']}
+        className={styles.searchMobile}
       >
         <button
           aria-label="Show search bar"
-          className={styles['mobile-button']}
+          className={styles.mobileButton}
           onClick={toggleMobileOpen}
         >
           <FaSearch />

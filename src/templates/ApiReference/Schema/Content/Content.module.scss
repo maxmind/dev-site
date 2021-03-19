@@ -16,7 +16,7 @@
   padding-bottom: 1px;
 }
 
-.toggle-example {
+.toggleExample {
   background: lighten(#3b446f, 20);
   border: 0;
   border-radius: var(--mm-border-radius);
@@ -46,7 +46,7 @@
   }
 }
 
-.toggle-example-btn-icon {
+.btnIcon {
   border-right: 2px solid #eee;
   height: 100%;
   left: 0;
@@ -57,7 +57,7 @@
   width: 50px;
 }
 
-.toggle-example-btn--is-expanded .toggle-example-btn-icon svg {
+.isExpanded .btnIcon svg {
   transform: rotate(180deg);
 }
 
@@ -67,7 +67,7 @@
     top: calc(var(--page-header-height) + calc(var(--mm-spacing) + var(--heading-height)));
   }
 
-  .toggle-example {
+  .toggleExample {
     display: none;
   }
 }

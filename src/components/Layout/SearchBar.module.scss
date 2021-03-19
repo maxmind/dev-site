@@ -13,7 +13,7 @@
 }
 
 @media only screen and (max-width: map-get(variables.$breakpoints, 'lg')) {
-  .searchbar--mobile-open {
+  .searchbar__mobileOpen {
     display: inline-block;
     left: 0;
     margin: 0 var(--mm-spacing);
@@ -33,17 +33,17 @@
   transform: translateY(-50%);
 }
 
-.search-mobile {
+.searchMobile {
   position: relative;
 }
 
 @include variables.breakpoint('lg') {
-  .search-mobile {
+  .searchMobile {
     display: none;
   }
 }
 
-.mobile-button {
+.mobileButton {
   @include variables.menu-button;
   float: right;
   margin-right: calc(var(--mm-spacing) / 4);

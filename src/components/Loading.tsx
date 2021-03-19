@@ -7,7 +7,7 @@ const Loading: React.FC = () => (
     className={styles.image}
   >
     <div
-      className={styles['dot-container']}
+      className={styles.dotContainer}
     >
       <div
         className={styles.dot}
@@ -23,7 +23,7 @@ const Loading: React.FC = () => (
       </div>
     </div>
     <div
-      className={styles['dot-container']}
+      className={styles.dotContainer}
     >
       <div
         className={styles.dot}
@@ -39,7 +39,7 @@ const Loading: React.FC = () => (
       </div>
     </div>
     <div
-      className={styles['dot-container']}
+      className={styles.dotContainer}
     >
       <div
         className={styles.dot}

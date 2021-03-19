@@ -19,7 +19,7 @@ const LinkGroup: React.FC<ILinkGroup> = (props) => (
   >
     {props.heading && (
       <h3
-        className={styles['section-heading']}
+        className={styles.sectionHeading}
       >
         {props.heading}
       </h3>
@@ -28,7 +28,7 @@ const LinkGroup: React.FC<ILinkGroup> = (props) => (
       className={classNames(
         styles.cards,
         {
-          [styles['cards--is-compact']]: props.isCompact,
+          [styles['cards__isCompact']]: props.isCompact,
         }
       )}
     >

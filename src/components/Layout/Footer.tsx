@@ -29,14 +29,14 @@ const Footer: React.FC<React.HTMLProps<HTMLDivElement>> = (props) => (
         >
           <a
             aria-label="Twitter"
-            className={styles['social-icon']}
+            className={styles.socialIcon}
             href="https://twitter.com/maxmind"
           >
             <FaTwitterSquare />
           </a>
           <a
             aria-label="LinkedIn"
-            className={styles['social-icon']}
+            className={styles.socialIcon}
             href="https://www.linkedin.com/company/maxmind"
           >
             <FaLinkedin />
@@ -47,7 +47,7 @@ const Footer: React.FC<React.HTMLProps<HTMLDivElement>> = (props) => (
       <div
         className={classNames(
           styles.group,
-          styles['group--products']
+          styles['group__products']
         )}
       >
         <h3
@@ -98,7 +98,7 @@ const Footer: React.FC<React.HTMLProps<HTMLDivElement>> = (props) => (
       <div
         className={classNames(
           styles.group,
-          styles['group--support']
+          styles['group__support']
         )}
       >
         <h3
@@ -149,7 +149,7 @@ const Footer: React.FC<React.HTMLProps<HTMLDivElement>> = (props) => (
       <div
         className={classNames(
           styles.group,
-          styles['group--developers']
+          styles['group__developers']
         )}
       >
         <h3
@@ -180,7 +180,7 @@ const Footer: React.FC<React.HTMLProps<HTMLDivElement>> = (props) => (
       <div
         className={classNames(
           styles.group,
-          styles['group--company']
+          styles['group__company']
         )}
       >
         <h3
@@ -236,13 +236,13 @@ const Footer: React.FC<React.HTMLProps<HTMLDivElement>> = (props) => (
           className={styles.terms}
         >
           <a
-            className={styles['terms-link']}
+            className={styles.termsLink}
             href="https://www.maxmind.com/en/terms-of-use"
           >
             Terms of Use
           </a>
           <a
-            className={styles['terms-link']}
+            className={styles.termsLink}
             href="https://www.maxmind.com/en/privacy-policy"
           >
             Privacy Policy

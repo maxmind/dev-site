@@ -16,7 +16,7 @@ const renderTag = (service: string, isDisabled?: boolean) => (
     className={classNames(
       styles.tag,
       {
-        [styles['tag--disabled']]: isDisabled,
+        [styles['tag__disabled']]: isDisabled,
       }
     )}
   >

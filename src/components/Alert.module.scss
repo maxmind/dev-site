@@ -18,7 +18,7 @@
   position: relative;
 }
 
-.icon-wrapper {
+.iconWrapper {
   background: var(--mm-color-active-blue);
   border-radius: 50%;
   display: grid;
@@ -64,7 +64,7 @@
   border-left-color: #f09791;
 }
 
-.error .icon-wrapper {
+.error .iconWrapper {
   background: #e9594c;
 }
 
@@ -72,7 +72,7 @@
   border-left-color: #87d8aa;
 }
 
-.success .icon-wrapper {
+.success .iconWrapper {
   background: #3ac279;
 }
 
@@ -80,6 +80,6 @@
   border-left-color: rgba(232, 159, 41, 1);
 }
 
-.warning .icon-wrapper {
+.warning .iconWrapper {
   background: #e89f29;
 }

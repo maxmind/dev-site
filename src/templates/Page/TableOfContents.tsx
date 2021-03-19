@@ -71,7 +71,7 @@ const renderItems = (
           className={classNames(
             styles.listItem,
             isActive(item.url, pathname, currentItem)
-              ? styles['item--active'] : undefined
+              ? styles['item__active'] : undefined
           )}
           data-item-number={itemNumber}
           key={`toc-item-${index}`}

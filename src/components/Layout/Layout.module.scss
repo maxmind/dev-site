@@ -20,7 +20,7 @@ $transition: all 0.15s ease-out;
   transition: $transition;
 }
 
-.sidebar--open::after {
+.sidebar__open::after {
   @include variables.opaque-overlay;
   content: ' ';
   display: block;
@@ -32,7 +32,7 @@ $transition: all 0.15s ease-out;
   z-index: 8;
 }
 
-.sidebar--hidden [class*='Sidebar-module--sidebar--'] {
+.sidebar__hidden [class*='Sidebar-module--sidebar--'] {
   transform: translate3d(360px, 0, 0);
 }
 
@@ -42,7 +42,7 @@ $transition: all 0.15s ease-out;
     grid-template-rows: 100%;
   }
 
-  .sidebar--hidden [class*='Sidebar-module--sidebar--'] {
+  .sidebar__hidden [class*='Sidebar-module--sidebar--'] {
     transform: translate3d(100vw, 0, 0);
   }
 }

@@ -1,5 +1,5 @@
 .image,
-.dot-container {
+.dotContainer {
   height: 100px;
   position: relative;
   width: 100px;
@@ -38,7 +38,7 @@
   }
 }
 
-.dot-container {
+.dotContainer {
   border: 0 solid var(--mm-color-logo-blue-light);
   border-radius: 50px;
   position: absolute;

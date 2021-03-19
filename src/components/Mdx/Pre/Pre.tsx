@@ -20,7 +20,7 @@ interface IPre {
   showLineNumbers?: boolean;
 }
 
-const extractCli = (className: string): string => className
+const extractCli = (className: string): string => className && className
   .startsWith('language-cli-') ? 'language-markdown' : className;
 
 const Pre: React.FC<React.HTMLProps<HTMLDivElement> & IPre> = (props) => {
@@ -61,8 +61,8 @@ const Pre: React.FC<React.HTMLProps<HTMLDivElement> & IPre> = (props) => {
   const language = languages.find(
     language => `language-${language.id}` === extractedClassName
   ) || {
-    id: extractedClassName.replace('language-', ''),
-    label: extractedClassName.replace('language-', ''),
+    id: extractedClassName?.replace('language-', ''),
+    label: extractedClassName?.replace('language-', ''),
     prismSettings: languages.find(
       language => language.id === '*'
     )?.prismSettings,

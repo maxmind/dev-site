@@ -158,7 +158,7 @@ const SearchResultsPage: React.FC<RouteUpdateArgs> = (props) => {
                 Try searching for
                 {' '}
                 <a
-                  className={styles['spelling-link']}
+                  className={styles.spellingLink}
                   href={
                     getQueryUrl('q', results.spelling.correctedQuery)
                   }

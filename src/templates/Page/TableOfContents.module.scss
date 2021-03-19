@@ -29,7 +29,7 @@
   margin-left: 14px;
 }
 
-.list-item {
+.listItem {
   color: #aaa;
   font-size: 14px;
   line-height: 1.2em;
@@ -43,20 +43,20 @@
   }
 }
 
-.list-item:last-child {
+.listItem:last-child {
   margin-bottom: 0;
 }
 
-.list-item .list-item {
+.listItem .listItem {
   font-size: 12px;
   margin-bottom: calc(var(--mm-spacing) / 2);
 }
 
-.list-item .list-item:last-child {
+.listItem .listItem:last-child {
   margin-bottom: 0;
 }
 
-.list-item a {
+.listItem a {
   --psuedo-padding: 8px;
   color: #555;
   display: inline-block;
@@ -90,7 +90,7 @@
   }
 }
 
-.list-item.item--active > a {
+.listItem.item__active > a {
   color: var(--mm-color-display-text);
 
   &::before {
@@ -98,15 +98,15 @@
   }
 }
 
-.list-item .list-item a::before {
+.listItem .listItem a::before {
   transform: translate(-28px, calc(var(--psuedo-padding) * -1));
 }
 
-.list-item .list-item .list-item a::before {
+.listItem .listItem .listItem a::before {
   transform: translate(-42px, calc(var(--psuedo-padding) * -1));
 }
 
-.list-item .list-item .list-item .list-item a::before {
+.listItem .listItem .listItem .listItem a::before {
   transform: translate(-56px, calc(var(--psuedo-padding) * -1));
 }
 

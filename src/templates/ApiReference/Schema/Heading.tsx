@@ -30,7 +30,7 @@ const Heading: React.FC<IHeading> = (
       id={id}
     >
       <a
-        className={styles['heading-link']}
+        className={styles['headingLink']}
         href={`#${id}`}
       >
         {props.name.replace(NameRegex, ' › ')}
@@ -38,7 +38,7 @@ const Heading: React.FC<IHeading> = (
       {' '}
 
       <Type
-        className={styles['heading-type']}
+        className={styles['headingType']}
       >
         {props.schema.type === 'array' ? (
           <>

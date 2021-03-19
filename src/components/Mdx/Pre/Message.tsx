@@ -47,14 +47,14 @@ const Message: React.FC<IMessage> = (props) => {
         props.className,
         styles.message,
         {
-          [styles['message--hidden']]: messageState === 'hidden',
-          [styles['message--hiding']]: messageState === 'hiding',
-          [styles['message--visible']]: messageState === 'visible',
+          [styles['message__hidden']]: messageState === 'hidden',
+          [styles['message__hiding']]: messageState === 'hiding',
+          [styles['message__visible']]: messageState === 'visible',
         },
       )}
     >
       <div
-        className={styles['message__content']}
+        className={styles.messageContent}
       >
         {props.children}
       </div>

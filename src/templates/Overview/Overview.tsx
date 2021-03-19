@@ -35,9 +35,7 @@ const Overview: React.FC<IOverview> = (props) => {
       title={title}
       type={type as 'minfraud' | 'geoip'}
     >
-      <article
-        className={styles.container}
-      >
+      <article>
         <header
           className={styles.header}
         >

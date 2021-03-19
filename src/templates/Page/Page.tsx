@@ -101,7 +101,7 @@ const Page: React.FC<IPage> = (props) => {
 
           {modifiedTime && (
             <P
-              className={styles['last-updated']}
+              className={styles['lastUpdated']}
             >
               This page was last updated on
               {' '}
@@ -117,19 +117,19 @@ const Page: React.FC<IPage> = (props) => {
           >
             {previousPage && (
               <Link
-                className={styles['footer-previous']}
+                className={styles['footerPrevious']}
                 to={previousPage.to}
               >
                 <FaArrowLeft
-                  className={styles['footer-arrow']}
+                  className={styles['footerArrow']}
                 />
                 <span
-                  className={styles['footer-direction']}
+                  className={styles['footerDirection']}
                 >
                   Previous
                 </span>
                 <span
-                  className={styles['footer-title']}
+                  className={styles['footerTitle']}
                 >
                   {previousPage.title}
                 </span>
@@ -138,19 +138,19 @@ const Page: React.FC<IPage> = (props) => {
 
             {nextPage && (
               <Link
-                className={styles['footer-next']}
+                className={styles['footerNext']}
                 to={nextPage.to}
               >
                 <FaArrowRight
-                  className={styles['footer-arrow']}
+                  className={styles['footerArrow']}
                 />
                 <span
-                  className={styles['footer-direction']}
+                  className={styles['footerDirection']}
                 >
                   Next
                 </span>
                 <span
-                  className={styles['footer-title']}
+                  className={styles['footerTitle']}
                 >
                   {nextPage.title}
                 </span>

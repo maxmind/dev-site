@@ -19,7 +19,7 @@ const Header: React.FC<IHeader> = (props) => {
   return (
     <>
       <AccessibilityNav
-        className={styles['accessibility-nav']}
+        className={styles.accessibilityNav}
       />
       <header
         className={styles.header}
@@ -37,7 +37,7 @@ const Header: React.FC<IHeader> = (props) => {
             />
             <span
               aria-label="Developers"
-              className={styles['logo__site-name']}
+              className={styles['logo__siteName']}
             >
               Dev
               <span

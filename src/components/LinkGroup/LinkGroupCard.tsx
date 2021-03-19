@@ -24,8 +24,8 @@ const LinkGroupCard: React.FC<ILinkGroupCard> = (props) => {
         styles.container,
         className,
         {
-          [styles['container--is-compact']]: isCompact,
-          [styles['container--no-description']]: description === undefined,
+          [styles['container__isCompact']]: isCompact,
+          [styles['container__noDescription']]: description === undefined,
         }
       )}
       to={to}

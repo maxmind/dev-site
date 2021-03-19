@@ -26,7 +26,7 @@ const Home: React.FC<IHome> = (props) => {
         className={styles.container}
       >
         <div
-          className={styles['under-construction']}
+          className={styles['underConstruction']}
         >
           <UnderConstruction
             className={styles.icon}

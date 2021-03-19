@@ -20,7 +20,7 @@ const renderItems = (
   <ul
     className={classNames(
       styles.list,
-      styles[`list--level${level}`]
+      styles[`list__level${level}`]
     )}
   >
     {items.map((item, index) => {
@@ -35,7 +35,7 @@ const renderItems = (
       if (item.icon) {
         item.icon = React.cloneElement(item.icon, {
           className: classNames(
-            styles['item-icon'],
+            styles.itemIcon,
           ),
         });
       }
@@ -45,9 +45,9 @@ const renderItems = (
           className={classNames(
             styles.item,
             {
-              [styles['item--active']]: isItemActive,
-              [styles['item--current']]: isItemCurrent,
-              [styles['item--has-divider']]: item.hasDivider,
+              [styles['item__active']]: isItemActive,
+              [styles['item__current']]: isItemCurrent,
+              [styles['item__hasDivider']]: item.hasDivider,
             },
           )}
           data-current-path={currentPath}
@@ -57,13 +57,11 @@ const renderItems = (
           {isInternalItem(item) ? (
             <>
               <Link
-                className={styles['item-link']}
+                className={styles.itemLink}
                 to={item.to}
               >
                 {item.icon}
-                <span
-                  className={styles['item-title']}
-                >
+                <span>
                   {item.title}
                 </span>
               </Link>
@@ -77,17 +75,15 @@ const renderItems = (
             </>
           ) : (
             <a
-              className={styles['item-link']}
+              className={styles.itemLink}
               href={item.url}
             >
               {item.icon}
-              <span
-                className={styles['item-title']}
-              >
+              <span>
                 {item.title}
               </span>
               <ExternalLinkIcon
-                className={styles['external-link-icon']}
+                className={styles.externalLinkIcon}
               />
             </a>
           )}

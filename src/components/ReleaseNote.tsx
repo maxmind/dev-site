@@ -29,6 +29,7 @@ const dateOptions = {
 const ReleaseNote: React.FC<IReleaseNote> = (props) => {
   // Assume publish time is around noon office standard time
   const date = new Date(`${props.date} 12:00:00`);
+  //@ts-expect-error: Types are broken for DateTimeFormat
   const humanDate = new Intl.DateTimeFormat('en-US', dateOptions).format(date);
 
   return (

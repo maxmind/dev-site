@@ -47,7 +47,7 @@ const Row: React.FC<IRow> = (props) => {
       className={classNames(
         styles.row,
         {
-          [styles['row--targeted']]: location.hash === `#${id}`,
+          [styles['row__targeted']]: location.hash === `#${id}`,
         }
       )}
       id={id}

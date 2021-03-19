@@ -348,7 +348,7 @@ describe('<Property />', () => {
         );
 
         schemaTags = component.find('Tag')
-          .filter(`.${styles['tags__schema-tag']}`);
+          .filter(`.${styles['tags__schemaTag']}`);
       });
 
       it('are listed', () => {

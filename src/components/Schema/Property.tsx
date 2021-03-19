@@ -60,7 +60,7 @@ const Property: React.FC<IProperty> = (props) => {
       className={classNames(
         styles.row,
         {
-          [styles['row--targeted']]: location?.hash === `#${propertyId}`,
+          [styles['row__targeted']]: location?.hash === `#${propertyId}`,
         }
       )}
       id={propertyId}
@@ -113,16 +113,13 @@ const Property: React.FC<IProperty> = (props) => {
         <div
           className={styles.tags}
         >
-          <div
-            className={styles['tags__schema-tags']}
-          >
+          <div>
             {linkToSchemaId && (
               <Link
-                className={styles['schema-link']}
                 to={`#schema--${linkToSchemaId}`}
               >
                 <Tag
-                  className={styles['schema-link__tag']}
+                  className={styles['schemaLink__tag']}
                 >
                   View object schema
                 </Tag>
@@ -141,7 +138,7 @@ const Property: React.FC<IProperty> = (props) => {
                 index: number
               ) => (
                 <Tag
-                  className={styles['tags__schema-tag']}
+                  className={styles['tags__schemaTag']}
                   key={`tag-${index}`}
                 >
 
@@ -151,7 +148,7 @@ const Property: React.FC<IProperty> = (props) => {
                       :
                       {' '}
                       <span
-                        className={styles['tags__schema-tag-value']}
+                        className={styles['tags__schemaTagValue']}
                       >
                         {value}
                       </span>
@@ -163,7 +160,6 @@ const Property: React.FC<IProperty> = (props) => {
 
           {serviceTags && (
             <ServiceTags
-              className={styles['tags__service-tags']}
               services={serviceTags}
             />
           )}

@@ -16,15 +16,15 @@ describe('<ServiceTags />', () => {
 
     expect(
       component.find('Tag[children="Score"]')
-    ).not.toHaveClassName(styles['tag--disabled']);
+    ).not.toHaveClassName(styles['tag__disabled']);
 
     expect(
       component.find('Tag[children="Insights"]')
-    ).not.toHaveClassName(styles['tag--disabled']);
+    ).not.toHaveClassName(styles['tag__disabled']);
 
     expect(
       component.find('Tag[children="Factors"]')
-    ).not.toHaveClassName(styles['tag--disabled']);
+    ).not.toHaveClassName(styles['tag__disabled']);
   });
 
   it('renders `score` service tag', () => {
@@ -38,15 +38,15 @@ describe('<ServiceTags />', () => {
 
     expect(
       component.find('Tag[children="Score"]')
-    ).not.toHaveClassName(styles['tag--disabled']);
+    ).not.toHaveClassName(styles['tag__disabled']);
 
     expect(
       component.find('Tag[children="Insights"]')
-    ).toHaveClassName(styles['tag--disabled']);
+    ).toHaveClassName(styles['tag__disabled']);
 
     expect(
       component.find('Tag[children="Factors"]')
-    ).toHaveClassName(styles['tag--disabled']);
+    ).toHaveClassName(styles['tag__disabled']);
   });
 
   it('renders `insights` service tag', () => {
@@ -60,15 +60,15 @@ describe('<ServiceTags />', () => {
 
     expect(
       component.find('Tag[children="Score"]')
-    ).toHaveClassName(styles['tag--disabled']);
+    ).toHaveClassName(styles['tag__disabled']);
 
     expect(
       component.find('Tag[children="Insights"]')
-    ).not.toHaveClassName(styles['tag--disabled']);
+    ).not.toHaveClassName(styles['tag__disabled']);
 
     expect(
       component.find('Tag[children="Factors"]')
-    ).toHaveClassName(styles['tag--disabled']);
+    ).toHaveClassName(styles['tag__disabled']);
   });
 
   it('renders `factors` service tag', () => {
@@ -82,14 +82,14 @@ describe('<ServiceTags />', () => {
 
     expect(
       component.find('Tag[children="Score"]')
-    ).toHaveClassName(styles['tag--disabled']);
+    ).toHaveClassName(styles['tag__disabled']);
 
     expect(
       component.find('Tag[children="Insights"]')
-    ).toHaveClassName(styles['tag--disabled']);
+    ).toHaveClassName(styles['tag__disabled']);
 
     expect(
       component.find('Tag[children="Factors"]')
-    ).not.toHaveClassName(styles['tag--disabled']);
+    ).not.toHaveClassName(styles['tag__disabled']);
   });
 });
