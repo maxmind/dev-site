@@ -5,7 +5,7 @@
   border-left: 1px solid var(--mm-color-border);
   box-shadow: -2px -1px 3px rgba(0, 0, 0, 0.1);
   grid-area: sidebar;
-  height: calc(100% - var(--page-header-height));
+  height: 100%;
   max-width: var(--mm-layout-sidebar-width);
   position: fixed;
   right: 0;
