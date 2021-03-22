@@ -1,7 +1,7 @@
 import { mount } from 'enzyme';
 import * as React from 'react';
 
-import ServiceTags from './ServiceTags';
+import ServiceTags from './MinFraudServiceTags';
 
 // eslint-disable-next-line css-modules/no-unused-class
 import * as styles from './ServiceTags.module.scss';

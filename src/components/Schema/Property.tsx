@@ -6,9 +6,10 @@ import PropTypes from 'prop-types';
 import * as React from 'react';
 
 import Example from '../Example';
+import GeoIpServiceTags from './GeoIpServiceTags';
+import MinFraudServiceTags from './MinFraudServiceTags';
 import PropertyValues from './PropertyValues';
 import SchemaContext  from './SchemaContext';
-import ServiceTags from './ServiceTags';
 import Tag from './Tag';
 
 import * as styles from './Property.module.scss';
@@ -158,9 +159,17 @@ const Property: React.FC<IProperty> = (props) => {
               ))}
           </div>
 
-          {serviceTags && (
-            <ServiceTags
-              services={serviceTags}
+          {serviceTags && schema.productFamily === 'geoip' && (
+            <GeoIpServiceTags
+              className={styles['tags__service-tags']}
+              services={serviceTags as GeoIpServices}
+            />
+          )}
+
+          {serviceTags && schema.productFamily === 'minfraud' &&  (
+            <MinFraudServiceTags
+              className={styles['tags__service-tags']}
+              services={serviceTags as MinFraudServices}
             />
           )}
         </div>
