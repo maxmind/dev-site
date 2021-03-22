@@ -1,0 +1,108 @@
+import responseJson from '../_examples/geoip';
+
+<GeoIpSchema
+  json={responseJson}
+  jsonPointer="/"
+  name="Response"
+  services="*"
+>
+  All services return data as a JSON document. The document that is returned
+  always consists of an object (aka map or hash). Each key in the object in turn
+  maps to an object or an array of objects.
+
+  The exact set of top-level keys varies based on the particular GeoIP2
+  Precision service you are using. If a key maps to an undefined or empty value,
+  it is not included in the JSON object. This applies both to top-level keys and
+  the objects they map to.
+
+  The data returned in the document will be in UTF-8 encoding.
+
+  <Property
+    linkToSchemaName={'Response | City'}
+    name="city"
+    services={[
+      'city',
+      'insights',
+    ]}
+  >
+    A JSON object containing details about the city associated with the IP
+    address.
+  </Property>
+
+  <Property
+    linkToSchemaName={'Response | Continent'}
+    name="continent"
+  >
+    A JSON object containing information about the continent associated with the
+    IP address.
+  </Property>
+
+  <Property
+    linkToSchemaName={'Response | Country'}
+    name="country"
+  >
+    A JSON object containing details about the country where MaxMind believes
+    the end user is located.
+  </Property>
+
+  <Property
+    linkToSchemaName={'Response | Location'}
+    name="location"
+  >
+    A JSON object containing specific details about the location associated with
+    the IP address.
+  </Property>
+
+  <Property
+    linkToSchemaName={'Response | Postal'}
+    name="postal"
+  >
+    A JSON object containing details about the postal code associated with the
+    IP address.
+  </Property>
+
+  <Property
+    linkToSchemaName={'Response | Registered Country'}
+    name="registered_country"
+  >
+    A JSON object containing details about the country in which the ISP has
+    registered the IP address.
+  </Property>
+
+  <Property
+    linkToSchemaName={'Response | Represented Country'}
+    name="represented_country"
+  >
+    A JSON object containing details about the country which is represented by
+    users of the IP address. For instance, the country represented by an
+    overseas military base.
+  </Property>
+
+  <Property
+    linkToSchemaName={'Response | Subdivisions'}
+    name="subdivisions"
+  >
+    An array of JSON objects. Each of these objects contains details about a
+    subdivision of the country in which the IP address resides. Subdivisions are
+    arranged from largest to smallest.
+
+    For instance, the response for Oxford in the United Kingdom would have an
+    object for England as the first element in `subdivisions` array and an
+    object for Oxfordshire as the second element. The `subdivisions` array for
+    Minneapolis in the United States will have a single object for Minnesota.
+  </Property>
+
+  <Property
+    linkToSchemaName={'Response | Traits'}
+    name="traits"
+  >
+    A JSON object containing general traits associated with the IP address.
+  </Property>
+
+  <Property
+    linkToSchemaName={'Response | MaxMind'}
+    name="maxmind"
+  >
+    A JSON object containing information related to your MaxMind account.
+  </Property>
+</GeoIpSchema>

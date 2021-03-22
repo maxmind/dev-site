@@ -1,0 +1,51 @@
+import responseJson from '../_examples/geoip';
+
+<GeoIpSchema
+  json={responseJson.subdivisions[0]}
+  jsonPointer="/subdivisions[0]"
+  name="Response | Subdivision"
+  services={[
+    'city',
+    'insights',
+  ]}
+>
+  A JSON object containing details about a subdivision of the country in which
+  the IP address resides.
+
+  <Property
+    name="confidence"
+    services={[
+      'insights',
+    ]}
+    tags={{
+      'Min': 0,
+      'Max': 100,
+    }}
+    type="integer"
+  >
+    A value from 0-100 representing our confidence that the region is correct.
+  </Property>
+
+  <Property
+    name="geoname_id"
+    type="integer"
+  >
+    A unique identifier for the region as specified by
+    [GeoNames](https://www.geonames.org/).
+  </Property>
+
+  <Property
+    name="iso_code"
+  >
+    A string of up to three characters containing the region-portion of the
+    [ISO 3166-2](https://en.wikipedia.org/wiki/ISO_3166-2) code for the region
+    associated with the IP address.
+  </Property>
+
+  <Property
+    name="names"
+  >
+    A map from locale codes, such as `en`, to the localized names for the
+    feature.
+  </Property>
+</GeoIpSchema>

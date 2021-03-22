@@ -1,0 +1,47 @@
+import responseJson from '../_examples/geoip';
+
+<GeoIpSchema
+  json={responseJson.postal}
+  jsonPointer="/postal"
+  name="Response | Postal"
+>
+  A JSON object containing details about the postal code associated with the IP
+  address.
+
+  <Property
+    name="code"
+    services={[
+      'city',
+      'insights',
+    ]}
+  >
+    A postal code close to the user’s location. For the following countries, we
+    return partial postal codes with the number of characters indicated below:
+
+    * United States: 5
+    * Canada: 3
+    * United Kingdom: 2-4
+    * Brazil: 5
+    * Ireland: 3
+    * Japan: 7 (specified for the first 6. The last digit defaults to 1)
+    * Netherlands: 4
+    * Portugal: 7 (accurate for the first 4. The last 3 often defaults to
+    `-001`)
+    * Singapore: 2
+  </Property>
+
+  <Property
+    name="confidence"
+    services={[
+      'insights',
+    ]}
+    tags={{
+      'Min': 0,
+      'Max': 100,
+    }}
+    type="integer"
+  >
+    A value from 0-100 representing our confidence that the postal code is
+    correct.
+  </Property>
+</GeoIpSchema>

@@ -104,8 +104,18 @@ const navigation: IItem[] = [
       },
       {
         hasDivider: true,
-        title: 'API Documentation',
-        to: '/geoip/api-documentation',
+        secondaryItems: [
+          {
+            title: 'Requests',
+            to: '/geoip/precision-web-services/requests',
+          },
+          {
+            title: 'Responses',
+            to: '/geoip/precision-web-services/responses',
+          },
+        ],
+        title: 'Precision Web Services',
+        to: '/geoip/precision-web-services',
       },
       {
         secondaryItems: [

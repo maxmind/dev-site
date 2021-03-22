@@ -22,7 +22,7 @@ export interface IProperty {
   linkToSchemaName?: string;
   name: string;
   schemaId?: string;
-  services?: MinFraudServices;
+  services?: GeoIpServices | MinFraudServices;
   tags?: Record<string, TagValue>;
   type?: SchemaPropertyType;
 }
@@ -192,6 +192,13 @@ Property.propTypes = {
       PropTypes.oneOf([
         'score',
         'factors',
+        'insights',
+      ] as const).isRequired,
+    ),
+    PropTypes.arrayOf(
+      PropTypes.oneOf([
+        'country',
+        'city',
         'insights',
       ] as const).isRequired,
     ),

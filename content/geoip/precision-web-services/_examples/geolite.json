@@ -1,0 +1,9 @@
+curl -X POST \
+  -u 119957:beG55aYm9d7e7gwr \
+  -H "Content-Type: application/json" \
+  -d "{\"device\": { \"ip_address\": \"67.213.36.106\"}}" \
+  https://minfraud.maxmind.com/minfraud/v2.0/factors\?pretty
+
+curl -u "119957:beG55aYm9d7e7gwr" \
+  "https://geoip.maxmind.com/geoip/v2.1/insights/me?pretty"
+

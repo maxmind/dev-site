@@ -1,0 +1,49 @@
+import responseJson from '../_examples/geoip';
+
+<GeoIpSchema
+  json={responseJson.country}
+  jsonPointer="/country"
+  name="Response | Country"
+  services="*"
+>
+  A JSON object containing details about the country where MaxMind believes the
+  end user is located.
+
+  <Property
+    name="confidence"
+    tags={{
+      'Min': 0,
+      'Max': 100,
+    }}
+    services={[
+      'insights',
+    ]}
+    type="integer"
+  >
+    A value from 0-100 representing our confidence that the country is correct.
+  </Property>
+
+  <Property
+    name="is_in_european_union"
+  >
+    This is `true` if the country is a member state of the European Union.
+    Otherwise, the key is not included in the `country` object.
+  </Property>
+
+  <Property
+    name="iso_code"
+    tags={{
+      'Length': 2
+    }}
+  >
+    A two-character [ISO 3166-1](https://en.wikipedia.org/wiki/ISO_3166-1)
+    country code for the country associated with the IP address.
+  </Property>
+
+  <Property
+    name="names"
+  >
+    A map from locale codes, such as `en`, to the localized names for the
+    feature.
+  </Property>
+</GeoIpSchema>

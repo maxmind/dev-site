@@ -18,7 +18,7 @@ const ServiceTag: React.FC<IServiceTag> = (props) => {
       className={classNames(
         styles.tag,
         {
-          [styles['tag--disabled']]: isDisabled,
+          [styles.tag__disabled]: isDisabled,
         }
       )}
     >
