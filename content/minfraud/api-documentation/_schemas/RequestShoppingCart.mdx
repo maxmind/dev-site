@@ -1,10 +1,10 @@
 import requestJson from '../_examples/request';
 
-<Schema
+<MinFraudSchema
   json={requestJson.shopping_cart}
   jsonPointer="/shopping_cart"
   name="Request | Shopping Cart"
 >
   This is an _array_ of [shopping cart item objects](#schema--request--shopping-cart--item).
   A shopping cart should consist of an array of one or more item objects.
-</Schema>
+</MinFraudSchema>

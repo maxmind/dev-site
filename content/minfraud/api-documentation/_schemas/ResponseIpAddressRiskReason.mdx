@@ -1,6 +1,6 @@
 import responseJson from '../_examples/response';
 
-<Schema
+<MinFraudSchema
   json={responseJson.ip_address.risk_reasons[0]}
   jsonPointer="/ip_address/risk_reasons/{n}"
   name="Response | IP Address | Risk Reason"
@@ -84,4 +84,4 @@ import responseJson from '../_examples/response';
     above. The explanation text may change at any time and should not be matched
     against.
   </Property>
-</Schema>
+</MinFraudSchema>

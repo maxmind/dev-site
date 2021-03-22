@@ -1,6 +1,6 @@
 import requestJson from '../_examples/request';
 
-<Schema
+<MinFraudSchema
   json={requestJson.email}
   jsonPointer="/email"
   name="Request | Email"
@@ -35,4 +35,4 @@ import requestJson from '../_examples/request';
     The domain of the email address used in the transaction. Do not include the
     `@` in this field.
   </Property>
-</Schema>
+</MinFraudSchema>

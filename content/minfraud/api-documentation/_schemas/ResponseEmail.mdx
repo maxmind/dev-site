@@ -1,6 +1,6 @@
 import responseJson from '../_examples/response';
 
-<Schema
+<MinFraudSchema
   json={responseJson.email}
   jsonPointer="/email"
   name="Response | Email"
@@ -55,4 +55,4 @@ import responseJson from '../_examples/response';
     email address hash is provided. Note that this is also factored into the
     overall `risk_score` in the response as well.
   </Property>
-</Schema>
+</MinFraudSchema>

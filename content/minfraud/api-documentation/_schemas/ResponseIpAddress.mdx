@@ -1,6 +1,6 @@
 import responseJson from '../_examples/response';
 
-<Schema
+<MinFraudSchema
   json={responseJson.ip_address}
   jsonPointer="/ip_address"
   name="Response | IP Address"
@@ -75,4 +75,4 @@ import responseJson from '../_examples/response';
     This array contains [IP Address Risk Reason objects](#schema--response--ip-address--risk-reason)
     identifying the reasons why the IP address received the associated risk.
   </Property>
-</Schema>
+</MinFraudSchema>

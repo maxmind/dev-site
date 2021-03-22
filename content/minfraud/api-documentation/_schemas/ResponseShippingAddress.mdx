@@ -1,6 +1,6 @@
 import responseJson from '../_examples/response';
 
-<Schema
+<MinFraudSchema
   json={responseJson.shipping_address}
   jsonPointer="/shipping_address"
   name="Response | Shipping Address"
@@ -84,4 +84,4 @@ import responseJson from '../_examples/response';
     not be geolocated or no billing address was provided, the field will not be
     included in the response.
   </Property>
-</Schema>
+</MinFraudSchema>
