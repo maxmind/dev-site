@@ -28,13 +28,10 @@ service, you must have a valid
 We encourage you to use one our minFraud client APIs if possible. APIs are
 available in the following languages:
 
-{/* <!--lint disable maximum-line-length --> */}
-| Language/Platform | Documentation                                                                                 | Package Repository                                                                                                    | Version Control                                    |
-| ----------------- | --------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------- | --- |
-| Java              | [Documentation](https://github.com/maxmind/ccfd-api-java/blob/master/README.md)               | [Maven Central Repository](https://search.maven.org/#search%7Cga%7C1%7Ca%3A%22minfraud-api%22)                        | [GitHub](https://github.com/maxmind/ccfd-api-java) |     |
-| Perl              | [Documentation](https://metacpan.org/pod/Business%3A%3AMaxMind%3A%3ACreditCardFraudDetection) | [MetaCPAN](https://metacpan.org/pod/Business%3A%3AMaxMind%3A%3ACreditCardFraudDetection)                              | [GitHub](https://github.com/maxmind/ccfd-api-perl) |     |
-| PHP               | [Documentation](https://github.com/maxmind/ccfd-api-php/blob/master/README.md)                | [Composer](https://packagist.org/packages/minfraud/http) / [Source](https://github.com/maxmind/ccfd-api-php/releases) | [GitHub](https://github.com/maxmind/ccfd-api-php)  |     |
-{/* <!--lint enable maximum-line-length --> */}
+| ----------------- | --------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------- |
+| Java              | [Documentation](https://github.com/maxmind/ccfd-api-java/blob/master/README.md)               | [Maven Central Repository](https://search.maven.org/#search%7Cga%7C1%7Ca%3A%22minfraud-api%22)                        | [GitHub](https://github.com/maxmind/ccfd-api-java) |
+| Perl              | [Documentation](https://metacpan.org/pod/Business%3A%3AMaxMind%3A%3ACreditCardFraudDetection) | [MetaCPAN](https://metacpan.org/pod/Business%3A%3AMaxMind%3A%3ACreditCardFraudDetection)                              | [GitHub](https://github.com/maxmind/ccfd-api-perl) |
+| PHP               | [Documentation](https://github.com/maxmind/ccfd-api-php/blob/master/README.md)                | [Composer](https://packagist.org/packages/minfraud/http) / [Source](https://github.com/maxmind/ccfd-api-php/releases) | [GitHub](https://github.com/maxmind/ccfd-api-php)  |
 
 The client APIs take care of formatting requests and parsing the response for
 you.
@@ -412,7 +409,7 @@ current when they signed up for the service. The latest version is 1.3.
          <td>string (2)</td>
          <td>
             A two character <a href="https://en.wikipedia.org/wiki/ISO_3166-2">ISO-3166-2</a> code for the state/region associated with the IP address.
-            
+
             We previously returned a <a href="https://en.wikipedia.org/wiki/FIPS_10-4">FIPS 10-4</a> code for all countries other than the United States and Canada. See our <a href="https://blog.maxmind.com/2020/06/15/data-changes-to-geoip-legacy-and-minfraud-legacy-web-services-in-may-2022/">blog post detailing upcoming changes to legacy web services</a>.
 
             For customers who have not yet updated their integration to reflect the changes detailed in the above blog post, we provide a <a href="https://www.maxmind.com/download/geoip/misc/region_codes.csv">CSV file which maps our region codes to region names</a>. The columns are ISO country code, region code (FIPS or ISO), and the region name.
