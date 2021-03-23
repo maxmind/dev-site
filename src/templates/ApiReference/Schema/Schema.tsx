@@ -6,7 +6,7 @@ import CodeExample from './CodeExample';
 import Content from './Content';
 import Heading from './Heading';
 
-import styles from './Schema.module.scss';
+import * as styles from './Schema.module.scss';
 
 export interface ISchema {
   name: string;

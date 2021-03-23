@@ -13,6 +13,7 @@ import requestJson from '../_examples/request';
 
   <Property
     name="your_custom_BOOLEAN_key"
+    type="boolean"
   >
     A custom key of your choice, with a boolean value.
   </Property>
@@ -24,6 +25,7 @@ import requestJson from '../_examples/request';
       'Min': '-1e14',
       'Max': '1e14',
     }}
+    type="number"
   >
     A custom key of your choice, with a floating number value.
   </Property>
@@ -34,6 +36,7 @@ import requestJson from '../_examples/request';
       'Format': 'Phone number',
       'Max Length': 255,
     }}
+    type="string"
   >
     A custom key of your choice with a string value, formatted as a phone
     number. Numbers, spaces and punctuation accepted, although spaces and
@@ -46,6 +49,7 @@ import requestJson from '../_examples/request';
     tags={{
       'Max Length': 255,
     }}
+    type="string"
   >
     A custom key of your choice with a string value. The null character is not
     allowed.

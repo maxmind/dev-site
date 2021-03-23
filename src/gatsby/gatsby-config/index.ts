@@ -91,6 +91,7 @@ export default {
     },
     'gatsby-plugin-typescript',
     'gatsby-plugin-ts-checker',
+    'gatsby-plugin-image',
     'gatsby-transformer-sharp',
     'gatsby-plugin-sharp',
     {

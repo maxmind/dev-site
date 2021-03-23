@@ -5,7 +5,7 @@ import React from 'react';
 
 import Pre from '../../../components/Mdx/Pre';
 
-import styles from './CodeExample.module.scss';
+import * as styles from './CodeExample.module.scss';
 
 interface ICodeExample {
   className?: string;
@@ -18,14 +18,14 @@ const CodeExample: React.FC<ICodeExample> = (props) => (
   <div
     className={classNames(
       {
-        [styles['example--is-expanded']]: props.isExpanded,
+        [styles['example__isExpanded']]: props.isExpanded,
       },
       styles.example,
       props.className,
     )}
   >
     <Pre
-      className={styles['example-json']}
+      className={styles.exampleJson}
       highlightLines={props.highlightLines}
     >
       <code

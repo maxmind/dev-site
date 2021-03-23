@@ -2,7 +2,7 @@ import classNames from 'classnames';
 import PropTypes from 'prop-types';
 import * as React from 'react';
 
-import styles from './AccessibilityNav.module.scss';
+import * as styles from './AccessibilityNav.module.scss';
 
 const AccessibilityNav: React.FC<React.HTMLProps<HTMLElement>> = (props) => (
   // eslint-disable-next-line jsx-a11y/no-access-key
@@ -20,7 +20,7 @@ const AccessibilityNav: React.FC<React.HTMLProps<HTMLElement>> = (props) => (
       className={styles.list}
     >
       <li
-        className={styles['list-item']}
+        className={styles.listItem}
       >
         <a
           className={styles.link}
@@ -30,7 +30,7 @@ const AccessibilityNav: React.FC<React.HTMLProps<HTMLElement>> = (props) => (
         </a>
       </li>
       <li
-        className={styles['list-item']}
+        className={styles.listItem}
       >
         <a
           className={styles.link}
@@ -40,7 +40,7 @@ const AccessibilityNav: React.FC<React.HTMLProps<HTMLElement>> = (props) => (
         </a>
       </li>
       <li
-        className={styles['list-item']}
+        className={styles.listItem}
       >
         <a
           className={styles.link}
@@ -50,7 +50,7 @@ const AccessibilityNav: React.FC<React.HTMLProps<HTMLElement>> = (props) => (
         </a>
       </li>
       <li
-        className={styles['list-item']}
+        className={styles.listItem}
       >
         <a
           className={styles.link}

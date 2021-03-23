@@ -32,6 +32,11 @@ class PropertyValues {
   }) {
     this.type = property.type;
 
+    this.id = `${schema.id}__${slug(property.name)}`;
+
+    this.linkToSchemaId = property.linkToSchemaName &&
+      slug(formatSchemaName(property.linkToSchemaName));
+
     if (!isObject(schema.json)) {
       return;
     }
@@ -52,11 +57,6 @@ class PropertyValues {
       language: this.getLanguage(this.type),
       value: this.formatExample(example),
     };
-
-    this.id = `${schema.id}__${slug(property.name)}`;
-
-    this.linkToSchemaId = property.linkToSchemaName &&
-      slug(formatSchemaName(property.linkToSchemaName));
   }
 
   private formatPointer(base: string, property: string) {

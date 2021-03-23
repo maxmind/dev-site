@@ -14,7 +14,7 @@ import Header from './Header';
 import SEO from './Seo';
 import Sidebar from './Sidebar';
 
-import styles from './Layout.module.scss';
+import * as styles from './Layout.module.scss';
 
 interface ILayout {
   children: React.ReactNode;
@@ -50,7 +50,6 @@ const Layout: React.FC<ILayout> = (props) => {
         bodyAttributes={{
           class: classNames(
             pageTypeClass,
-            styles.layout,
           ),
         }}
         description={props.description}
@@ -73,7 +72,7 @@ const Layout: React.FC<ILayout> = (props) => {
       <div
         className={classNames(
           styles.main,
-          isSidebarOpen ? styles['sidebar--open'] : styles['sidebar--hidden']
+          isSidebarOpen ? styles['sidebar__open'] : styles['sidebar__hidden']
         )}
       >
         <Sidebar />

@@ -2,7 +2,7 @@ import classNames from 'classnames';
 import PropTypes from 'prop-types';
 import * as React from 'react';
 
-import styles from './Tag.module.scss';
+import * as styles from './Tag.module.scss';
 
 interface ITag {
   children: React.ReactNode,

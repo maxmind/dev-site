@@ -7,7 +7,7 @@ import { FaAngleDoubleDown } from 'react-icons/fa';
 import { renderMarkdownElement } from '../utils';
 import Properties from './Properties';
 
-import styles from './Content.module.scss';
+import * as styles from './Content.module.scss';
 
 interface IContent {
   className?: string;
@@ -53,10 +53,10 @@ const Content: React.FC<IContent> = (
       </div>
       <button
         className={classNames(
-          styles['toggle-example'],
+          styles.toggleExample,
           {
             [
-            styles['toggle-example-btn--is-expanded']
+            styles.isExpanded
             ]: props.isExpanded,
           }
         )}
@@ -65,7 +65,7 @@ const Content: React.FC<IContent> = (
         {props.isExpanded ? (
           <>
             <span
-              className={styles['toggle-example-btn-icon']}
+              className={styles.btnIcon}
             >
               <FaAngleDoubleDown />
             </span>
@@ -75,7 +75,7 @@ const Content: React.FC<IContent> = (
         ) : (
           <>
             <span
-              className={styles['toggle-example-btn-icon']}
+              className={styles.btnIcon}
             >
               <FaAngleDoubleDown />
             </span>

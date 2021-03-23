@@ -9,7 +9,7 @@ import React from 'react';
 import { FaAngleDoubleDown } from 'react-icons/fa';
 
 import { ILanguage } from '../../../languages';
-import styles from './Code.module.scss';
+import * as styles from './Code.module.scss';
 import './Code.dark-theme.css';
 
 import 'prismjs/plugins/normalize-whitespace/prism-normalize-whitespace.js';
@@ -32,7 +32,6 @@ const Code: React.FC<ICode> = (props) => {
     language,
     highlightLines,
     showLineNumbers,
-    showInvisibles,
   } = props;
 
   const preRef = React.createRef<HTMLPreElement>();
@@ -154,8 +153,8 @@ const Code: React.FC<ICode> = (props) => {
       className={classNames(
         styles.container,
         {
-          [styles['container--expandable']]: isExpandable,
-          [styles['container--expanded']]: isExpanded,
+          [styles['container__expandable']]: isExpandable,
+          [styles['container__expanded']]: isExpanded,
         }
       )}
     >
@@ -164,9 +163,6 @@ const Code: React.FC<ICode> = (props) => {
           `language-${language.id}`,
           {
             'line-numbers': !language.prismSettings.cli && showLineNumbers,
-            [styles['invisibles--hidden']]: (
-              language.prismSettings.cli || !showInvisibles
-            ),
           },
           styles.pre
         )}
@@ -178,7 +174,7 @@ const Code: React.FC<ICode> = (props) => {
       </pre>
       {isExpandable && (
         <button
-          className={styles['expand-btn']}
+          className={styles.expandBtn}
           onClick={handleExpansionToggle}
           title={isExpanded ? 'Collapse code example' : 'Expand code example'}
         >

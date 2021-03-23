@@ -10,7 +10,7 @@ import H1 from '../components/Mdx/H1';
 import SearchResult from '../components/SearchResult';
 import GoogleSearch, { ISearchResults } from '../services/GoogleSearch';
 
-import styles from './search-results.module.scss';
+import * as styles from './search-results.module.scss';
 
 type queryValue = number | string | undefined;
 
@@ -158,7 +158,7 @@ const SearchResultsPage: React.FC<RouteUpdateArgs> = (props) => {
                 Try searching for
                 {' '}
                 <a
-                  className={styles['spelling-link']}
+                  className={styles.spellingLink}
                   href={
                     getQueryUrl('q', results.spelling.correctedQuery)
                   }

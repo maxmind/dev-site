@@ -2,7 +2,7 @@ import classNames from 'classnames';
 import PropTypes from 'prop-types';
 import React from 'react';
 
-import styles from './Hr.module.scss';
+import * as styles from './Hr.module.scss';
 
 const Hr: React.FC<React.HTMLProps<HTMLHRElement>> = ({
   className,

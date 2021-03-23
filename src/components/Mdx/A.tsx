@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import React from 'react';
 import { FaExternalLinkAlt } from 'react-icons/fa';
 
-import styles from './A.module.scss';
+import * as styles from './A.module.scss';
 
 const A: React.FC<React.HTMLProps<HTMLAnchorElement>> = (props) => {
   const { className, children, href, target, ...rest } = props;

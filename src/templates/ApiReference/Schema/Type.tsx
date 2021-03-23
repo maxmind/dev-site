@@ -2,7 +2,7 @@ import classNames from 'classnames';
 import PropTypes from 'prop-types';
 import React from 'react';
 
-import styles from './Type.module.scss';
+import * as styles from './Type.module.scss';
 
 interface IType {
   children: React.ReactNode;

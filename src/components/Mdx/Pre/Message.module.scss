@@ -10,11 +10,11 @@
   z-index: 3;
 }
 
-.message--hidden {
+.message__hidden {
   display: none;
 }
 
-.message__content {
+.messageContent {
   background: var(--mm-color-logo-blue-light);
   border-radius: var(--mm-border-radius) !important;
   box-shadow: 0 5px 2px rgba(0, 0, 0, 0.2);
@@ -41,7 +41,7 @@
     }
   }
 
-  .message--visible {
+  .message__visible {
     animation: show-message 0.25s forwards;
   }
 
@@ -55,7 +55,7 @@
     }
   }
 
-  .message--visible .message__content {
+  .message__visible .messageContent {
     animation: show-message-content 0.1s forwards;
   }
 
@@ -69,7 +69,7 @@
     }
   }
 
-  .message--hiding {
+  .message__hiding {
     animation: hiding-message 0.25s forwards;
     background-color: transparent;
   }
@@ -84,7 +84,7 @@
     }
   }
 
-  .message--hiding .message__content {
+  .message__hiding .messageContent {
     animation: hide-message-content 0.1s forwards;
   }
 }

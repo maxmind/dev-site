@@ -2,7 +2,7 @@ import { sanitize } from 'dompurify';
 import PropTypes from 'prop-types';
 import React from 'react';
 
-import styles from './SearchResult.module.scss';
+import * as styles from './SearchResult.module.scss';
 
 interface ISearchResult {
   className?: string;

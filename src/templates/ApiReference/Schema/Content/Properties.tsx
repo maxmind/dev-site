@@ -8,7 +8,7 @@ import Type from '../Type';
 import { getRefAnchorLink, renderMarkdownElement } from '../utils';
 import parseSchema from './parseSchema';
 
-import styles from './Properties.module.scss';
+import * as styles from './Properties.module.scss';
 
 interface IRow {
   description?: string;
@@ -47,7 +47,7 @@ const Row: React.FC<IRow> = (props) => {
       className={classNames(
         styles.row,
         {
-          [styles['row--targeted']]: location.hash === `#${id}`,
+          [styles['row__targeted']]: location.hash === `#${id}`,
         }
       )}
       id={id}

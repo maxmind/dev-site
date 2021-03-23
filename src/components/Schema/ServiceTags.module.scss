@@ -14,12 +14,12 @@
   margin-left: 0;
 }
 
-.tag--disabled {
+.tag__disabled {
   background: #eee;
   border: 1px solid #ddd;
   color: #4f4f4f;
 }
 
-.tag--disabled::before {
+.tag__disabled::before {
   content: '✗';
 }

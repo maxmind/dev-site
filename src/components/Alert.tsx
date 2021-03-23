@@ -10,7 +10,7 @@ import {
 } from 'react-icons/fa';
 
 // eslint-disable-next-line css-modules/no-unused-class
-import styles from './Alert.module.scss';
+import * as styles from './Alert.module.scss';
 
 interface IAlert {
   children: React.ReactNode,
@@ -45,7 +45,7 @@ const Alert: React.FC<IAlert> = (props) => {
       )}
     >
       <div
-        className={styles['icon-wrapper']}
+        className={styles.iconWrapper}
       >
         <Icon
           className={styles.icon}

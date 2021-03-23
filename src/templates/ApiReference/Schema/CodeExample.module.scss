@@ -16,14 +16,14 @@
   }
 }
 
-.example--is-expanded {
+.example__isExpanded {
   height: auto;
   margin: 0 !important;
   overflow: initial;
   padding: var(--mm-spacing);
 }
 
-.example-json {
+.exampleJson {
   margin: 0;
 }
 
@@ -43,7 +43,7 @@
     }
   }
 
-  .example-json {
+  .exampleJson {
     margin-bottom: 0;
     position: sticky;
     top: var(--page-header-height);

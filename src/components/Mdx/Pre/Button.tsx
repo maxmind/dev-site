@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import React from 'react';
 import { IconType } from 'react-icons';
 
-import styles from './Button.module.scss';
+import * as styles from './Button.module.scss';
 
 interface IButton {
   icon: IconType;

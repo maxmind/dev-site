@@ -2,7 +2,7 @@ import classNames from 'classnames';
 import PropTypes from 'prop-types';
 import React from 'react';
 
-import styles from './Del.module.scss';
+import * as styles from './Del.module.scss';
 
 const Del: React.FC<React.HTMLProps<HTMLElement>> = ({
   className,

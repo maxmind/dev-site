@@ -2,7 +2,7 @@ import classNames from 'classnames';
 import PropTypes from 'prop-types';
 import React from 'react';
 
-import styles from './Em.module.scss';
+import * as styles from './Em.module.scss';
 
 const Em: React.FC<React.HTMLProps<HTMLElement>> = ({
   className,

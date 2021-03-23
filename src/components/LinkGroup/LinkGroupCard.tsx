@@ -5,7 +5,7 @@ import * as React from 'react';
 import { IconType } from 'react-icons';
 import { FaArrowRight } from 'react-icons/fa';
 
-import styles from './LinkGroupCard.module.scss';
+import * as styles from './LinkGroupCard.module.scss';
 
 export interface ILinkGroupCard {
   className?: string;
@@ -24,8 +24,8 @@ const LinkGroupCard: React.FC<ILinkGroupCard> = (props) => {
         styles.container,
         className,
         {
-          [styles['container--is-compact']]: isCompact,
-          [styles['container--no-description']]: description === undefined,
+          [styles['container__isCompact']]: isCompact,
+          [styles['container__noDescription']]: description === undefined,
         }
       )}
       to={to}

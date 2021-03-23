@@ -3,7 +3,7 @@ import classNames from 'classnames';
 import PropTypes from 'prop-types';
 import React from 'react';
 
-import styles from './Th.module.scss';
+import * as styles from './Th.module.scss';
 
 const Th: React.FC<React.HTMLProps<HTMLTableDataCellElement>> = ({
   className,

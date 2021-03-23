@@ -6,7 +6,7 @@ import Layout from '../../components/Layout/Layout';
 import ProductIcon from '../../components/ProductIcon';
 import { IOverviewContext } from './query';
 
-import styles from './Overview.module.scss';
+import * as styles from './Overview.module.scss';
 
 interface IOverview {
   children: React.ReactNode;
@@ -35,9 +35,7 @@ const Overview: React.FC<IOverview> = (props) => {
       title={title}
       type={type as 'minfraud' | 'geoip'}
     >
-      <article
-        className={styles.container}
-      >
+      <article>
         <header
           className={styles.header}
         >

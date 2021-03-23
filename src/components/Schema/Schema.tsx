@@ -12,7 +12,7 @@ import Example from '../Example';
 import SchemaContext from './SchemaContext';
 import Tag from './Tag';
 
-import styles from './Schema.module.scss';
+import * as styles from './Schema.module.scss';
 
 interface ISchema {
   children: React.ReactElement | React.ReactElement[];
@@ -69,7 +69,7 @@ const Schema: React.FC<ISchema> = (props) => {
             to={`#${schemaId}`}
           >
             <LinkIcon
-              className={styles['heading__link-icon']}
+              className={styles['heading__linkIcon']}
             />
             {formattedSchemaName}
           </Link>
@@ -79,9 +79,7 @@ const Schema: React.FC<ISchema> = (props) => {
           <span
             className={styles['heading__type']}
           >
-            <Tag
-              className={styles['heading__tag']}
-            >
+            <Tag>
               {type || inferredType}
             </Tag>
           </span>

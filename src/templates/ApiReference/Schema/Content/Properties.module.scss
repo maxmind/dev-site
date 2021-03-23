@@ -29,13 +29,13 @@
   background: #f9fdff;
 }
 
-.row--targeted {
+.row__targeted {
   background: #effbff;
   border: var(--mm-outline);
   z-index: 2;
 }
 
-.row--targeted::after {
+.row__targeted::after {
   display: none;
 }
 

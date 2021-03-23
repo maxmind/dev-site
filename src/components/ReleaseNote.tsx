@@ -4,7 +4,7 @@ import * as React from 'react';
 
 import H2 from './Mdx/H2';
 
-import styles from './ReleaseNote.module.scss';
+import * as styles from './ReleaseNote.module.scss';
 
 type Year = `${number}${number}${number}${number}`;
 type Month = '01' | '02' | '03' | '04' | '05' | '06' | '07' | '08' | '09' | '10'
@@ -29,6 +29,7 @@ const dateOptions = {
 const ReleaseNote: React.FC<IReleaseNote> = (props) => {
   // Assume publish time is around noon office standard time
   const date = new Date(`${props.date} 12:00:00`);
+  //@ts-expect-error: Types are broken for DateTimeFormat
   const humanDate = new Intl.DateTimeFormat('en-US', dateOptions).format(date);
 
   return (

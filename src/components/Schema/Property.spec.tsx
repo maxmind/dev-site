@@ -7,7 +7,7 @@ import Property from './Property';
 import Schema from './Schema';
 import SchemaContext from './SchemaContext';
 
-import styles from './Property.module.scss';
+import * as styles from './Property.module.scss';
 
 const json = {
   arr: [
@@ -348,7 +348,7 @@ describe('<Property />', () => {
         );
 
         schemaTags = component.find('Tag')
-          .filter(`.${styles['tags__schema-tag']}`);
+          .filter(`.${styles['tags__schemaTag']}`);
       });
 
       it('are listed', () => {

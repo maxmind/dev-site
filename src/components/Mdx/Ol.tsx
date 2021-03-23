@@ -2,7 +2,7 @@ import classNames from 'classnames';
 import PropTypes from 'prop-types';
 import React from 'react';
 
-import styles from './Ol.module.scss';
+import * as styles from './Ol.module.scss';
 
 // Using React.HTMLProps<HTMLOListElement> throws an error
 const Ol: React.FC<React.HTMLAttributes<HTMLOListElement>> = ({

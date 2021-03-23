@@ -2,7 +2,7 @@ import classNames from 'classnames';
 import PropTypes from 'prop-types';
 import React from 'react';
 
-import styles from './Li.module.scss';
+import * as styles from './Li.module.scss';
 
 const Li: React.FC<React.HTMLAttributes<HTMLLIElement>> = ({
   className,

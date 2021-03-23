@@ -2,7 +2,7 @@ import classNames from 'classnames';
 import PropTypes from 'prop-types';
 import React from 'react';
 
-import styles from './Strong.module.scss';
+import * as styles from './Strong.module.scss';
 
 const Strong: React.FC<React.HTMLProps<HTMLElement>> = ({
   className,

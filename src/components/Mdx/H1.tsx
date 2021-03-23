@@ -2,7 +2,7 @@ import classNames from 'classnames';
 import PropTypes from 'prop-types';
 import React from 'react';
 
-import styles from './H1.module.scss';
+import * as styles from './H1.module.scss';
 
 const H1: React.FC<React.HTMLProps<HTMLHeadingElement>> = ({
   className,

@@ -4,7 +4,7 @@ import * as React from 'react';
 
 import { pre as Pre } from './Mdx';
 
-import styles from './Example.module.scss';
+import * as styles from './Example.module.scss';
 
 interface IExample {
   children: React.ReactNode,

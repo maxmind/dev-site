@@ -7,7 +7,7 @@ import Logo from '../../assets/svgs/maxmind-logo.svg';
 import AccessibilityNav from './AccessibilityNav';
 import SearchBar from './SearchBar';
 
-import styles from './Header.module.scss';
+import * as styles from './Header.module.scss';
 
 interface IHeader {
   isSidebarOpen?: boolean;
@@ -19,7 +19,7 @@ const Header: React.FC<IHeader> = (props) => {
   return (
     <>
       <AccessibilityNav
-        className={styles['accessibility-nav']}
+        className={styles.accessibilityNav}
       />
       <header
         className={styles.header}
@@ -37,7 +37,7 @@ const Header: React.FC<IHeader> = (props) => {
             />
             <span
               aria-label="Developers"
-              className={styles['logo__site-name']}
+              className={styles['logo__siteName']}
             >
               Dev
               <span

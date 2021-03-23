@@ -10,17 +10,17 @@ import Code from './Code';
 import Message, { State as MessageState } from './Message';
 import Wrapper from './Wrapper';
 
-import styles from './Pre.module.scss';
+import * as styles from './Pre.module.scss';
 
 interface IPre {
-  className: string;
+  className?: string;
   hasWrapper?: boolean;
   highlightLines?: string;
   nav?: React.ReactElement<React.HTMLProps<HTMLElement>>;
   showLineNumbers?: boolean;
 }
 
-const extractCli = (className: string): string => className
+const extractCli = (className: string): string => className && className
   .startsWith('language-cli-') ? 'language-markdown' : className;
 
 const Pre: React.FC<React.HTMLProps<HTMLDivElement> & IPre> = (props) => {
@@ -61,8 +61,8 @@ const Pre: React.FC<React.HTMLProps<HTMLDivElement> & IPre> = (props) => {
   const language = languages.find(
     language => `language-${language.id}` === extractedClassName
   ) || {
-    id: extractedClassName.replace('language-', ''),
-    label: extractedClassName.replace('language-', ''),
+    id: extractedClassName?.replace('language-', ''),
+    label: extractedClassName?.replace('language-', ''),
     prismSettings: languages.find(
       language => language.id === '*'
     )?.prismSettings,
@@ -158,7 +158,7 @@ Pre.defaultProps = {
 
 Pre.propTypes = {
   children: PropTypes.node,
-  className: PropTypes.string.isRequired,
+  className: PropTypes.string,
   hasWrapper: PropTypes.bool,
   highlightLines: PropTypes.string,
   nav: PropTypes.any,

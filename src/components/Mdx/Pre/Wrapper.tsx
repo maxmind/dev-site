@@ -2,7 +2,7 @@ import classNames from 'classnames';
 import PropTypes from 'prop-types';
 import React from 'react';
 
-import styles from './Wrapper.module.scss';
+import * as styles from './Wrapper.module.scss';
 
 interface IWrapper {
   children?: React.ReactNode;

@@ -32,19 +32,19 @@
   padding-bottom: 0;
 }
 
-.group--products {
+.group__products {
   grid-area: a;
 }
 
-.group--support {
+.group__support {
   grid-area: b;
 }
 
-.group--developers {
+.group__developers {
   grid-area: c;
 }
 
-.group--company {
+.group__company {
   grid-area: d;
 }
 
@@ -88,7 +88,7 @@
   margin-bottom: 4px;
 }
 
-.social-icon {
+.socialIcon {
   color: #fff;
   display: inline-block;
   font-size: 30px;
@@ -107,7 +107,7 @@
   text-align: center;
 }
 
-.terms-link {
+.termsLink {
   color: #fff;
   text-decoration: none;
 
@@ -184,7 +184,7 @@
     justify-content: center;
   }
 
-  .social-icon:first-of-type {
+  .socialIcon:first-of-type {
     margin-left: 0;
   }
 
