@@ -161,14 +161,12 @@ const Property: React.FC<IProperty> = (props) => {
 
           {serviceTags && schema.productFamily === 'geoip' && (
             <GeoIpServiceTags
-              className={styles['tags__service-tags']}
               services={serviceTags as GeoIpServices}
             />
           )}
 
           {serviceTags && schema.productFamily === 'minfraud' &&  (
             <MinFraudServiceTags
-              className={styles['tags__service-tags']}
               services={serviceTags as MinFraudServices}
             />
           )}
