@@ -155,7 +155,7 @@
     "sass": "^1.32.4",
     "stylelint": "^13.7.2",
     "stylelint-config-recommended": "^3.0.0",
-    "stylelint-config-sass-guidelines": "^7.1.0",
+    "stylelint-config-sass-guidelines": "^8.0.0",
     "stylelint-no-unsupported-browser-features": "^4.0.0",
     "stylelint-order": "^4.1.0",
     "ts-jest": "^26.4.1"
