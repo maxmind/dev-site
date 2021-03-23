@@ -6,7 +6,16 @@ import {
 
 const genMDX = require('gatsby-plugin-mdx/utils/gen-mdx');
 
-import generateTableOfContents from '../../utils/get-toc-items';
+// eslint-disable-next-line max-len
+import generateTableOfContents, { createImportPathMap } from '../../utils/get-toc-items';
+
+const geoipImportPathMap = createImportPathMap(
+  `${process.cwd()}/content/geoip/web-services/_schemas`
+);
+
+const minFraudImportPathMap = createImportPathMap(
+  `${process.cwd()}/content/minfraud/api-documentation/_schemas`
+);
 
 export const createResolvers: GatsbyNode['createResolvers'] = async(
   args: CreateResolversArgs,
@@ -43,7 +52,15 @@ export const createResolvers: GatsbyNode['createResolvers'] = async(
             node: mdxNode,
           });
 
-          return generateTableOfContents(mdast);
+          if (mdxNode.fields.slug.startsWith('/minfraud')) {
+            return generateTableOfContents(mdast, minFraudImportPathMap);
+          }
+
+          if (mdxNode.fields.slug.startsWith('/geoip')) {
+            return generateTableOfContents(mdast, geoipImportPathMap);
+          }
+
+          return;
         },
         type: 'JSON',
       },

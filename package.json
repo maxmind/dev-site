@@ -194,10 +194,10 @@
   },
   "scripts": {
     "build": "run-p build:*",
-    "build:gatsby": "gatsby build",
+    "build:gatsby": "gatsby clean && gatsby build",
     "build:functions": "cd functions && yarn build",
     "deploy": "firebase deploy",
-    "develop": "gatsby develop",
+    "develop": "gatsby clean && gatsby develop",
     "fix": "run-p fix:*",
     "fix:content": "prettier --write **/*.mdx --embedded-language-formatting off --loglevel silent && remark . --output --ext mdx --quiet",
     "fix:json": "yarn lint:json --fix",

@@ -28,27 +28,29 @@ const visitParents = require('unist-util-visit-parents');
  * is one deeper than the closest heading.
  */
 
-// eslint-disable-next-line max-len
-const SCHEMA_DIR = `${process.cwd()}/content/minfraud/api-documentation/_schemas`;
-
 /* eslint-disable security/detect-non-literal-fs-filename */
-const importPathMap: Record<string, string> =
-  fs.readdirSync(SCHEMA_DIR).reduce((acc, file) => {
-    if (fs.lstatSync(path.resolve(SCHEMA_DIR, file)).isDirectory()) {
+export const createImportPathMap = (
+  schemaDir: string
+): Record<string, string> =>
+  fs.readdirSync(schemaDir).reduce((acc, file) => {
+    if (fs.lstatSync(path.resolve(schemaDir, file)).isDirectory()) {
       return acc;
     }
 
     return {
       ...acc,
       [`Schemas.${path.basename(file, '.mdx')}`]: path.resolve(
-        SCHEMA_DIR,
+        schemaDir,
         file
       ),
     };
   }, {});
 /* eslint-enable security/detect-non-literal-fs-filename */
 
-export default (sourceTree: Node): Node => {
+export default (
+  sourceTree: Node,
+  importPathMap: Record<string, string>,
+): Node => {
   const newTree = map(
     sourceTree,
     (node: Node) => {
@@ -94,7 +96,8 @@ export default (sourceTree: Node): Node => {
           if (importedComponentTree) {
             const foundNode = find(
               importedComponentTree,
-              (node: Node) => node.name === 'Schema'
+              (node: Node) => node.name
+                && (node.name as string).endsWith('Schema')
             );
 
             if (foundNode) {
