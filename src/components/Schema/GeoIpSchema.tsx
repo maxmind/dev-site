@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import * as React from 'react';
 
-import Schema, { ISchema } from './Schema';
+import Schema, { ISchema, schemaPropTypes } from './Schema';
 
 interface IGeoIpSchema extends Omit<ISchema, 'productFamily'>{
   services?: GeoIpServices;
@@ -17,7 +17,7 @@ const GeoIpSchema: React.FC<IGeoIpSchema> = (props) => {
 };
 
 GeoIpSchema.propTypes = {
-  ...Schema.propTypes,
+  ...schemaPropTypes,
   services: PropTypes.oneOfType([
     PropTypes.oneOf([
       '*',

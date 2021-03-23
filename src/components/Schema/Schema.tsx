@@ -120,7 +120,7 @@ const Schema: React.FC<ISchema> = (props) => {
   );
 };
 
-Schema.propTypes = {
+export const schemaPropTypes = {
   children: PropTypes.oneOfType([
     PropTypes.element,
     PropTypes.arrayOf(
@@ -130,6 +130,14 @@ Schema.propTypes = {
   json: PropTypes.any.isRequired,
   jsonPointer: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
+  type: PropTypes.oneOf([
+    'array<object>',
+    'object',
+  ] as const),
+};
+
+Schema.propTypes = {
+  ...schemaPropTypes,
   productFamily: PropTypes.oneOf([
     'geoip',
     'minfraud',
@@ -153,10 +161,6 @@ Schema.propTypes = {
       ] as const).isRequired,
     ),
   ]),
-  type: PropTypes.oneOf([
-    'array<object>',
-    'object',
-  ] as const),
 };
 
 export default Schema;

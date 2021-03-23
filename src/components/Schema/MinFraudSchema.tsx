@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import * as React from 'react';
 
-import Schema, { ISchema } from './Schema';
+import Schema, { ISchema, schemaPropTypes } from './Schema';
 
 interface IMinFraudSchema extends Omit<ISchema, 'productFamily'> {
   services?: MinFraudServices;
@@ -18,7 +18,7 @@ const MinFraudSchema: React.FC<IMinFraudSchema> = (props) => {
 };
 
 MinFraudSchema.propTypes = {
-  ...Schema.propTypes,
+  ...schemaPropTypes,
   services: PropTypes.oneOfType([
     PropTypes.oneOf([
       '*',
