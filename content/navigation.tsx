@@ -53,6 +53,10 @@ const navigation: IItem[] = [
         to: '/minfraud/minfraud-legacy',
       },
       {
+        title: 'Proxy Detection Legacy Web Service',
+        to: '/proxy-detection',
+      },
+      {
         title: 'MaxMind Server IP Addresses',
         to: '/maxmind-server-ip-addresses',
       },
