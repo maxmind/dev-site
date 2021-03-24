@@ -1,6 +1,10 @@
-import generateTableOfContents from './get-toc-items';
+import generateTableOfContents, { createImportPathMap } from './get-toc-items';
 import directSchemas from './get-toc-items--direct.fixture.json';
 import indirectSchemas from './get-toc-items--indirect.fixture.json';
+
+const minFraudImportPathMap = createImportPathMap(
+  `${process.cwd()}/content/minfraud/api-documentation/_schemas`
+);
 
 describe('getTocItems()', () => {
   it('works with direct `Schema` component usage', async () => {
@@ -8,7 +12,7 @@ describe('getTocItems()', () => {
       directSchemas as any
     ).data.allMdx.nodes[0].customTableOfContents;
 
-    const toc = generateTableOfContents(mdast);
+    const toc = generateTableOfContents(mdast, minFraudImportPathMap);
 
     const expected = {
       items: [
@@ -67,9 +71,10 @@ describe('getTocItems()', () => {
   });
 
   it('works with indirect `Schema` component usage', async () => {
-    const mdast = (indirectSchemas as any).data.allMdx.nodes[0].customTableOfContents;
+    const mdast = (indirectSchemas as any)
+      .data.allMdx.nodes[0].customTableOfContents;
 
-    const toc = generateTableOfContents(mdast);
+    const toc = generateTableOfContents(mdast, minFraudImportPathMap);
 
     const expected = {
       items: [

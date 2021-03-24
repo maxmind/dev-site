@@ -1,57 +1,79 @@
 import { mount } from 'enzyme';
 import * as React from 'react';
 
-import ServiceTags from './MinFraudServiceTags';
+import GeoIpServiceTags from './GeoIpServiceTags';
 
 // eslint-disable-next-line css-modules/no-unused-class
-import * as styles from './ServiceTags.module.scss';
+import * as styles from './ServiceTag.module.scss';
 
-describe('<ServiceTags />', () => {
+describe('<GeoIpServiceTags />', () => {
   it('renders all service tags', () => {
     const component = mount(
-      <ServiceTags
+      <GeoIpServiceTags
         services={'*'}
       />
     );
 
     expect(
-      component.find('Tag[children="Score"]')
+      component.find('Tag[children="Country"]')
+    ).not.toHaveClassName(styles['tag__disabled']);
+
+    expect(
+      component.find('Tag[children="City"]')
     ).not.toHaveClassName(styles['tag__disabled']);
 
     expect(
       component.find('Tag[children="Insights"]')
     ).not.toHaveClassName(styles['tag__disabled']);
-
-    expect(
-      component.find('Tag[children="Factors"]')
-    ).not.toHaveClassName(styles['tag__disabled']);
   });
 
-  it('renders `score` service tag', () => {
+  it('renders `country` service tag', () => {
     const component = mount(
-      <ServiceTags
+      <GeoIpServiceTags
         services={[
-          'score',
+          'country',
         ]}
       />
     );
 
     expect(
-      component.find('Tag[children="Score"]')
+      component.find('Tag[children="Country"]')
+    ).not.toHaveClassName(styles['tag__disabled']);
+
+    expect(
+      component.find('Tag[children="City"]')
+    ).toHaveClassName(styles['tag__disabled']);
+
+    expect(
+      component.find('Tag[children="Insights"]')
+    ).toHaveClassName(styles['tag__disabled']);
+  });
+
+  it('renders `city` service tag', () => {
+    const component = mount(
+      <GeoIpServiceTags
+        services={[
+          'city',
+        ]}
+      />
+    );
+
+    expect(
+      component.find('Tag[children="Country"]')
+    ).toHaveClassName(styles['tag__disabled']);
+
+    expect(
+      component.find('Tag[children="City"]')
     ).not.toHaveClassName(styles['tag__disabled']);
 
     expect(
       component.find('Tag[children="Insights"]')
     ).toHaveClassName(styles['tag__disabled']);
-
-    expect(
-      component.find('Tag[children="Factors"]')
-    ).toHaveClassName(styles['tag__disabled']);
   });
 
   it('renders `insights` service tag', () => {
     const component = mount(
-      <ServiceTags
+      <GeoIpServiceTags
         services={[
           'insights',
         ]}
@@ -59,37 +81,15 @@ describe('<ServiceTags />', () => {
     );
 
     expect(
-      component.find('Tag[children="Score"]')
+      component.find('Tag[children="Country"]')
+    ).toHaveClassName(styles['tag__disabled']);
+
+    expect(
+      component.find('Tag[children="City"]')
     ).toHaveClassName(styles['tag__disabled']);
 
     expect(
       component.find('Tag[children="Insights"]')
-    ).not.toHaveClassName(styles['tag__disabled']);
-
-    expect(
-      component.find('Tag[children="Factors"]')
-    ).toHaveClassName(styles['tag__disabled']);
-  });
-
-  it('renders `factors` service tag', () => {
-    const component = mount(
-      <ServiceTags
-        services={[
-          'factors',
-        ]}
-      />
-    );
-
-    expect(
-      component.find('Tag[children="Score"]')
-    ).toHaveClassName(styles['tag__disabled']);
-
-    expect(
-      component.find('Tag[children="Insights"]')
-    ).toHaveClassName(styles['tag__disabled']);
-
-    expect(
-      component.find('Tag[children="Factors"]')
     ).not.toHaveClassName(styles['tag__disabled']);
   });
 });

@@ -175,9 +175,9 @@ olark.identify('8022-431-10-3383');/*]]>*/</script><noscript><a href=\\"https://
 </dd><dt> January 29, 2021</dt>
 
 <dd>
-    We will be mapping more mobile (cellular) networks to a state (subdivision) rather than a city for Telstra Internet IPs in Australia. This change will better reflect the traffic distribution of these IP addresses across a state.
+    <p>We will be mapping more mobile (cellular) networks to a state (subdivision) rather than a city for Telstra Internet IPs in Australia, as well as other mobile networks in France and other countries. This change will better reflect the traffic distribution of these IP addresses across a state.</p>
 
-These changes will be implemented incrementally. Some IP addresses will reflect this change on February 2, 2021, and additional IP addresses will be updated on February 16, 2021.
+<p>These changes will be implemented incrementally. Some IP addresses will reflect this change on February 2, 2021, and additional IP addresses will be updated on February 16, 2021.</p>
 </dd><dt> January 22, 2021</dt>
 
 <dd>

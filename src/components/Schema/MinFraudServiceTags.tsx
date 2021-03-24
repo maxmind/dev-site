@@ -2,6 +2,7 @@ import PropTypes from 'prop-types';
 import * as React from 'react';
 
 import ServiceTag from './ServiceTag';
+
 interface IServiceTags {
   className?: string;
   services: MinFraudServices;
