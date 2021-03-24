@@ -351,6 +351,2341 @@ olark.identify('8022-431-10-3383');/*]]>*/</script><noscript><a href=\\"https://
 "
 `;
 
+exports[`regression tests https://dev.maxmind.com/geoip/geoip2/web-services/ regression test 1`] = `
+"<!DOCTYPE html>
+<html class=\\"no-js\\" lang=\\"en-US\\">
+	<head>
+				<link rel=\\"profile\\" href=\\"http://gmpg.org/xfn/11\\" />
+		<meta charset=\\"UTF-8\\" />
+		<meta name=\\"viewport\\" content=\\"width=device-width, initial-scale=1.0\\" />
+
+		<title>GeoIP2 Precision Web Services &laquo; MaxMind Developer Site</title>
+
+				<link rel='dns-prefetch' href='//ajax.googleapis.com' />
+<link rel='dns-prefetch' href='//s.w.org' />
+<link rel=\\"alternate\\" type=\\"application/rss+xml\\" title=\\"MaxMind Developer Site &raquo; Feed\\" href=\\"https://dev.maxmind.com/feed/\\" />
+<link rel=\\"alternate\\" type=\\"application/rss+xml\\" title=\\"MaxMind Developer Site &raquo; Comments Feed\\" href=\\"https://dev.maxmind.com/comments/feed/\\" />
+		<script type=\\"text/javascript\\">
+			window._wpemojiSettings = {\\"baseUrl\\":\\"https:\\\\/\\\\/s.w.org\\\\/images\\\\/core\\\\/emoji\\\\/13.0.1\\\\/72x72\\\\/\\",\\"ext\\":\\".png\\",\\"svgUrl\\":\\"https:\\\\/\\\\/s.w.org\\\\/images\\\\/core\\\\/emoji\\\\/13.0.1\\\\/svg\\\\/\\",\\"svgExt\\":\\".svg\\",\\"source\\":{\\"concatemoji\\":\\"https:\\\\/\\\\/dev.maxmind.com\\\\/wp-includes\\\\/js\\\\/wp-emoji-release.min.js?ver=5.6.2\\"}};
+			!function(e,a,t){var n,r,o,i=a.createElement(\\"canvas\\"),p=i.getContext&&i.getContext(\\"2d\\");function s(e,t){var a=String.fromCharCode;p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,e),0,0);e=i.toDataURL();return p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,t),0,0),e===i.toDataURL()}function c(e){var t=a.createElement(\\"script\\");t.src=e,t.defer=t.type=\\"text/javascript\\",a.getElementsByTagName(\\"head\\")[0].appendChild(t)}for(o=Array(\\"flag\\",\\"emoji\\"),t.supports={everything:!0,everythingExceptFlag:!0},r=0;r<o.length;r++)t.supports[o[r]]=function(e){if(!p||!p.fillText)return!1;switch(p.textBaseline=\\"top\\",p.font=\\"600 32px Arial\\",e){case\\"flag\\":return s([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])?!1:!s([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!s([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]);case\\"emoji\\":return!s([55357,56424,8205,55356,57212],[55357,56424,8203,55356,57212])}return!1}(o[r]),t.supports.everything=t.supports.everything&&t.supports[o[r]],\\"flag\\"!==o[r]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[o[r]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener(\\"DOMContentLoaded\\",n,!1),e.addEventListener(\\"load\\",n,!1)):(e.attachEvent(\\"onload\\",n),a.attachEvent(\\"onreadystatechange\\",function(){\\"complete\\"===a.readyState&&t.readyCallback()})),(n=t.source||{}).concatemoji?c(n.concatemoji):n.wpemoji&&n.twemoji&&(c(n.twemoji),c(n.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type=\\"text/css\\">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<link rel='stylesheet' id='jquery-ui-css'  href='//ajax.googleapis.com/ajax/libs/jqueryui/1.8.1/themes/base/jquery-ui.css?ver=5.6.2' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-block-library-css'  href='https://43jvg82rnbo4fbuxm18it39y-wpengine.netdna-ssl.com/wp-includes/css/dist/block-library/style.min.css?ver=5.6.2' type='text/css' media='all' />
+<link rel='stylesheet' id='page-list-style-css'  href='https://43jvg82rnbo4fbuxm18it39y-wpengine.netdna-ssl.com/wp-content/plugins/page-list/css/page-list.css?ver=5.2' type='text/css' media='all' />
+<link rel='stylesheet' id='widgetopts-styles-css'  href='https://43jvg82rnbo4fbuxm18it39y-wpengine.netdna-ssl.com/wp-content/plugins/widget-options/assets/css/widget-options.css' type='text/css' media='all' />
+<link rel='stylesheet' id='maxmind-bootstrap-css'  href='https://43jvg82rnbo4fbuxm18it39y-wpengine.netdna-ssl.com/wp-content/themes/dev-site-theme/css/maxmind.css?ver=2.0.9' type='text/css' media='all' />
+<link rel='stylesheet' id='prism-css'  href='https://43jvg82rnbo4fbuxm18it39y-wpengine.netdna-ssl.com/wp-content/themes/dev-site-theme/css/prism.css?ver=1.0.3' type='text/css' media='all' />
+<link rel='stylesheet' id='the-bootstrap-css'  href='https://43jvg82rnbo4fbuxm18it39y-wpengine.netdna-ssl.com/wp-content/themes/dev-site-theme/style.min.css?ver=2.0.1' type='text/css' media='all' />
+<link rel=\\"https://api.w.org/\\" href=\\"https://dev.maxmind.com/wp-json/\\" /><link rel=\\"alternate\\" type=\\"application/json\\" href=\\"https://dev.maxmind.com/wp-json/wp/v2/pages/1284\\" /><link rel=\\"EditURI\\" type=\\"application/rsd+xml\\" title=\\"RSD\\" href=\\"https://dev.maxmind.com/xmlrpc.php?rsd\\" />
+<link rel=\\"wlwmanifest\\" type=\\"application/wlwmanifest+xml\\" href=\\"https://dev.maxmind.com/wp-includes/wlwmanifest.xml\\" /> 
+<link rel=\\"canonical\\" href=\\"https://dev.maxmind.com/geoip/geoip2/web-services/\\" />
+<link rel='shortlink' href='https://dev.maxmind.com/?p=1284' />
+<link rel=\\"alternate\\" type=\\"application/json+oembed\\" href=\\"https://dev.maxmind.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fdev.maxmind.com%2Fgeoip%2Fgeoip2%2Fweb-services%2F\\" />
+<link rel=\\"alternate\\" type=\\"text/xml+oembed\\" href=\\"https://dev.maxmind.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fdev.maxmind.com%2Fgeoip%2Fgeoip2%2Fweb-services%2F&#038;format=xml\\" />
+  <!--[if lt IE 9]>
+    <script src=\\"https://43jvg82rnbo4fbuxm18it39y-wpengine.netdna-ssl.com/wp-content/themes/dev-site-theme/js/html5shiv.min.js\\" type=\\"text/javascript\\"></script>
+    <script src=\\"https://43jvg82rnbo4fbuxm18it39y-wpengine.netdna-ssl.com/wp-content/themes/dev-site-theme/js/respond.min.js\\" type=\\"text/javascript\\"></script>
+  <![endif]-->
+  		<style type=\\"text/css\\" id=\\"wp-custom-css\\">
+			/*
+You can add your own CSS here.
+
+Click the help icon above to learn more.
+*/
+
+.widgets_on_page ul {
+  list-style: none;
+}		</style>
+		
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src=\\"https://www.googletagmanager.com/gtag/js?id=UA-171943-3\\"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+
+			gtag('config', 'UA-171943-3');
+		</script>
+	</head>
+
+	<body class=\\"page-template-default page page-id-1284 page-parent page-child parent-pageid-102 line-numbers content-sidebar\\">
+						<div class=\\"container-fluid\\" style=\\"max-width: 1200px\\">
+			<div class=\\"row-fluid\\">
+				<div class=\\"span3\\">
+										<a id=\\"header-image\\" href=\\"https://www.maxmind.com/en/home\\" title=\\"MaxMind Developer Site\\" rel=\\"external\\">
+						<img src=\\"https://43jvg82rnbo4fbuxm18it39y-wpengine.netdna-ssl.com/wp-content/uploads/2016/10/maxmind-logo.gif\\" alt=\\"\\" />
+					</a>
+									</div>
+								<!-- XXX - inline style -->
+				<header id=\\"branding\\" role=\\"banner\\" class=\\"span9\\">
+					<nav class=\\"menu-nav-container\\"><ul id=\\"menu-nav\\" class=\\"nav nav-tabs\\"><li id=\\"menu-item-22\\" class=\\"menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-22\\"><a href=\\"https://dev.maxmind.com/\\">Dev Home</a></li>
+<li id=\\"menu-item-2185\\" class=\\"menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-2185\\"><a href=\\"https://dev.maxmind.com/minfraud/\\">minFraud</a></li>
+<li id=\\"menu-item-26\\" class=\\"menu-item menu-item-type-post_type menu-item-object-page current-page-ancestor menu-item-has-children menu-item-26\\"><a href=\\"https://dev.maxmind.com/geoip/\\">GeoIP</a></li>
+<li id=\\"menu-item-19\\" class=\\"menu-item menu-item-type-custom menu-item-object-custom menu-item-19\\"><a href=\\"https://www.maxmind.com/\\">Main Site</a></li>
+<li id=\\"menu-item-521\\" class=\\"menu-item menu-item-type-post_type menu-item-object-page menu-item-521\\"><a href=\\"https://dev.maxmind.com/site-map/\\">Site Map</a></li>
+</ul></nav>									</header>
+			</div>
+			<div class=\\"row-fluid\\">
+	<div class=\\"span3\\">
+		<section id=\\"secondary\\" class=\\"widget-area\\">
+	<aside id=\\"search-2\\" class=\\"widget clearfix widget_search\\"><h4 class=\\"widget-title\\">Search</h4>
+<form method=\\"get\\" id=\\"site-search\\"  action=\\"https://dev.maxmind.com/\\">
+	<label for=\\"s\\" class=\\"assistive-text hidden\\">Search</label>
+	<div class=\\"input-append\\">
+		<input id=\\"s\\" class=\\"input-medium\\" type=\\"search\\" name=\\"s\\" placeholder=\\"Search\\">
+		<button class=\\"btn btn-primary\\" name=\\"submit\\" type=\\"submit\\"><i class=\\"icon-search icon-white\\"></i></button>
+	</div>
+</form>
+</aside><aside id=\\"ezw_tco-2\\" class=\\"widget clearfix ez-toc\\"><div class=\\"ez-toc-widget-container ez-toc-v2_0_16 ez-toc-widget counter-hierarchy\\">
+
+					<h4 class=\\"widget-title\\">
+					<span class=\\"ez-toc-title-container\\">
+
+						<style type=\\"text/css\\">
+							#ezw_tco-2 .ez-toc-widget-container ul.ez-toc-list li.active::before {
+								background-color: #ededed;
+							}
+						</style>
+
+						<span class=\\"ez-toc-title\\">Table of Contents</span>
+
+						<span class=\\"ez-toc-title-toggle\\">
+
+							
+						</span>
+
+					</span>
+
+					</h4>
+					<nav>
+<ul class=\\"ez-toc-list ez-toc-list-level-1\\"><li class=\\"ez-toc-page-1 ez-toc-heading-level-2\\"><a class=\\"ez-toc-link ez-toc-heading-1\\" href=\\"#Product_Information\\" title=\\"Product Information\\">Product Information</a></li><li class=\\"ez-toc-page-1 ez-toc-heading-level-2\\"><a class=\\"ez-toc-link ez-toc-heading-2\\" href=\\"#Release_Notes\\" title=\\"Release Notes\\">Release Notes</a></li><li class=\\"ez-toc-page-1 ez-toc-heading-level-2\\"><a class=\\"ez-toc-link ez-toc-heading-3\\" href=\\"#Client_APIs\\" title=\\"Client APIs\\">Client APIs</a><ul class=\\"ez-toc-list-level-3\\"><li class=\\"ez-toc-heading-level-3\\"><a class=\\"ez-toc-link ez-toc-heading-4\\" href=\\"#MaxMind_APIs\\" title=\\"MaxMind APIs\\">MaxMind APIs</a></li><li class=\\"ez-toc-page-1 ez-toc-heading-level-3\\"><a class=\\"ez-toc-link ez-toc-heading-5\\" href=\\"#Third-Party_APIs\\" title=\\"Third-Party APIs\\">Third-Party APIs</a></li></ul></li><li class=\\"ez-toc-page-1 ez-toc-heading-level-2\\"><a class=\\"ez-toc-link ez-toc-heading-6\\" href=\\"#Per-Service_URIs\\" title=\\"Per-Service URIs\\">Per-Service URIs</a></li><li class=\\"ez-toc-page-1 ez-toc-heading-level-2\\"><a class=\\"ez-toc-link ez-toc-heading-7\\" href=\\"#IP_Address\\" title=\\"IP Address\\">IP Address</a></li><li class=\\"ez-toc-page-1 ez-toc-heading-level-2\\"><a class=\\"ez-toc-link ez-toc-heading-8\\" href=\\"#Request_Headers\\" title=\\"Request Headers\\">Request Headers</a><ul class=\\"ez-toc-list-level-3\\"><li class=\\"ez-toc-heading-level-3\\"><a class=\\"ez-toc-link ez-toc-heading-9\\" href=\\"#AuthorizationSecurity\\" title=\\"Authorization/Security\\">Authorization/Security</a></li></ul></li><li class=\\"ez-toc-page-1 ez-toc-heading-level-2\\"><a class=\\"ez-toc-link ez-toc-heading-10\\" href=\\"#Response_Headers\\" title=\\"Response Headers\\">Response Headers</a></li><li class=\\"ez-toc-page-1 ez-toc-heading-level-2\\"><a class=\\"ez-toc-link ez-toc-heading-11\\" href=\\"#Response_Body\\" title=\\"Response
+Body\\">Response
+Body</a><ul class=\\"ez-toc-list-level-3\\"><li class=\\"ez-toc-heading-level-3\\"><a class=\\"ez-toc-link ez-toc-heading-12\\" href=\\"#IP_Geolocation_Usage\\" title=\\"IP Geolocation Usage\\">IP Geolocation Usage</a></li><li class=\\"ez-toc-page-1 ez-toc-heading-level-3\\"><a class=\\"ez-toc-link ez-toc-heading-13\\" href=\\"#Languages\\" title=\\"Languages\\">Languages</a></li><li class=\\"ez-toc-page-1 ez-toc-heading-level-3\\"><a class=\\"ez-toc-link ez-toc-heading-14\\" href=\\"#city\\" title=\\"city\\">city</a></li><li class=\\"ez-toc-page-1 ez-toc-heading-level-3\\"><a class=\\"ez-toc-link ez-toc-heading-15\\" href=\\"#continent\\" title=\\"continent\\">continent</a></li><li class=\\"ez-toc-page-1 ez-toc-heading-level-3\\"><a class=\\"ez-toc-link ez-toc-heading-16\\" href=\\"#country\\" title=\\"country\\">country</a></li><li class=\\"ez-toc-page-1 ez-toc-heading-level-3\\"><a class=\\"ez-toc-link ez-toc-heading-17\\" href=\\"#location\\" title=\\"location\\">location</a></li><li class=\\"ez-toc-page-1 ez-toc-heading-level-3\\"><a class=\\"ez-toc-link ez-toc-heading-18\\" href=\\"#postal\\" title=\\"postal\\">postal</a></li><li class=\\"ez-toc-page-1 ez-toc-heading-level-3\\"><a class=\\"ez-toc-link ez-toc-heading-19\\" href=\\"#registered_country\\" title=\\"registered_country\\">registered_country</a></li><li class=\\"ez-toc-page-1 ez-toc-heading-level-3\\"><a class=\\"ez-toc-link ez-toc-heading-20\\" href=\\"#represented_country\\" title=\\"represented_country\\">represented_country</a></li><li class=\\"ez-toc-page-1 ez-toc-heading-level-3\\"><a class=\\"ez-toc-link ez-toc-heading-21\\" href=\\"#subdivisions\\" title=\\"subdivisions\\">subdivisions</a></li><li class=\\"ez-toc-page-1 ez-toc-heading-level-3\\"><a class=\\"ez-toc-link ez-toc-heading-22\\" href=\\"#traits\\" title=\\"traits\\">traits</a></li><li class=\\"ez-toc-page-1 ez-toc-heading-level-3\\"><a class=\\"ez-toc-link ez-toc-heading-23\\" href=\\"#maxmind\\" title=\\"maxmind\\">maxmind</a></li><li class=\\"ez-toc-page-1 ez-toc-heading-level-3\\"><a class=\\"ez-toc-link ez-toc-heading-24\\" href=\\"#Returned_Values_as_Database_Map_Dict_or_Hash_Keys\\" title=\\"Returned Values as Database, Map, Dict, or Hash Keys\\">Returned Values as Database, Map, Dict, or Hash Keys</a></li></ul></li><li class=\\"ez-toc-page-1 ez-toc-heading-level-2\\"><a class=\\"ez-toc-link ez-toc-heading-25\\" href=\\"#Output_Examples\\" title=\\"Output Examples\\">Output Examples</a></li><li class=\\"ez-toc-page-1 ez-toc-heading-level-2\\"><a class=\\"ez-toc-link ez-toc-heading-26\\" href=\\"#Command_Line_curl_Example\\" title=\\"Command Line (curl)
+Example\\">Command Line (curl)
+Example</a><ul class=\\"ez-toc-list-level-3\\"><li class=\\"ez-toc-heading-level-3\\"><a class=\\"ez-toc-link ez-toc-heading-27\\" href=\\"#Retrieving_Data_for_Your_IP_Address\\" title=\\"Retrieving Data for Your IP Address\\">Retrieving Data for Your IP Address</a></li><li class=\\"ez-toc-page-1 ez-toc-heading-level-3\\"><a class=\\"ez-toc-link ez-toc-heading-28\\" href=\\"#Retrieving_Data_for_an_Arbitrary_IP_Address\\" title=\\"Retrieving Data for an Arbitrary IP Address\\">Retrieving Data for an Arbitrary IP Address</a></li><li class=\\"ez-toc-page-1 ez-toc-heading-level-3\\"><a class=\\"ez-toc-link ez-toc-heading-29\\" href=\\"#Retrieving_Data_for_Your_IP_Address-2\\" title=\\"Retrieving Data for Your IP Address\\">Retrieving Data for Your IP Address</a></li><li class=\\"ez-toc-page-1 ez-toc-heading-level-3\\"><a class=\\"ez-toc-link ez-toc-heading-30\\" href=\\"#Retrieving_Data_for_an_Arbitrary_IP_Address-2\\" title=\\"Retrieving Data for an Arbitrary IP Address\\">Retrieving Data for an Arbitrary IP Address</a></li><li class=\\"ez-toc-page-1 ez-toc-heading-level-3\\"><a class=\\"ez-toc-link ez-toc-heading-31\\" href=\\"#Retrieving_Data_for_Your_IP_Address-3\\" title=\\"Retrieving Data for Your IP Address\\">Retrieving Data for Your IP Address</a></li><li class=\\"ez-toc-page-1 ez-toc-heading-level-3\\"><a class=\\"ez-toc-link ez-toc-heading-32\\" href=\\"#Retrieving_Data_for_an_Arbitrary_IP_Address-3\\" title=\\"Retrieving Data for an Arbitrary IP Address\\">Retrieving Data for an Arbitrary IP Address</a></li><li class=\\"ez-toc-page-1 ez-toc-heading-level-3\\"><a class=\\"ez-toc-link ez-toc-heading-33\\" href=\\"#Retrieving_Data_for_Your_IP_Address-4\\" title=\\"Retrieving Data for Your IP Address\\">Retrieving Data for Your IP Address</a></li><li class=\\"ez-toc-page-1 ez-toc-heading-level-3\\"><a class=\\"ez-toc-link ez-toc-heading-34\\" href=\\"#Retrieving_Data_for_an_Arbitrary_IP_Address-4\\" title=\\"Retrieving Data for an Arbitrary IP Address\\">Retrieving Data for an Arbitrary IP Address</a></li><li class=\\"ez-toc-page-1 ez-toc-heading-level-3\\"><a class=\\"ez-toc-link ez-toc-heading-35\\" href=\\"#Retrieving_Data_for_Your_IP_Address-5\\" title=\\"Retrieving Data for Your IP Address\\">Retrieving Data for Your IP Address</a></li><li class=\\"ez-toc-page-1 ez-toc-heading-level-3\\"><a class=\\"ez-toc-link ez-toc-heading-36\\" href=\\"#Retrieving_Data_for_an_Arbitrary_IP_Address-5\\" title=\\"Retrieving Data for an Arbitrary IP Address\\">Retrieving Data for an Arbitrary IP Address</a></li></ul></li><li class=\\"ez-toc-page-1 ez-toc-heading-level-2\\"><a class=\\"ez-toc-link ez-toc-heading-37\\" href=\\"#Errors\\" title=\\"Errors\\">Errors</a></li><li class=\\"ez-toc-page-1 ez-toc-heading-level-2\\"><a class=\\"ez-toc-link ez-toc-heading-38\\" href=\\"#Versioning\\" title=\\"Versioning\\">Versioning</a></li></ul></nav>
+</div>
+</aside><aside id=\\"nav_menu-2\\" class=\\"widget clearfix widget_nav_menu\\"><h4 class=\\"widget-title\\">Links</h4><div class=\\"menu-left-hand-menu-container\\"><ul id=\\"menu-left-hand-menu\\" class=\\"menu\\"><li id=\\"menu-item-1405\\" class=\\"menu-item menu-item-type-custom menu-item-object-custom menu-item-1405\\"><a href=\\"https://status.maxmind.com/\\">System Status</a></li>
+</ul></div></aside><aside id=\\"text-2\\" class=\\"widget clearfix widget_text\\">			<div class=\\"textwidget\\"><!-- begin olark code -->
+<script data-cfasync=\\"false\\" type='text/javascript'>/*<![CDATA[*/window.olark||(function(c){var f=window,d=document,l=f.location.protocol==\\"https:\\"?\\"https:\\":\\"http:\\",z=c.name,r=\\"load\\";var nt=function(){
+f[z]=function(){
+(a.s=a.s||[]).push(arguments)};var a=f[z]._={
+},q=c.methods.length;while(q--){(function(n){f[z][n]=function(){
+f[z](\\"call\\",n,arguments)}})(c.methods[q])}a.l=c.loader;a.i=nt;a.p={
+0:+new Date};a.P=function(u){
+a.p[u]=new Date-a.p[0]};function s(){
+a.P(r);f[z](r)}f.addEventListener?f.addEventListener(r,s,false):f.attachEvent(\\"on\\"+r,s);var ld=function(){function p(hd){
+hd=\\"head\\";return[\\"<\\",hd,\\"></\\",hd,\\"><\\",i,' onl' + 'oad=\\"var d=',g,\\";d.getElementsByTagName('head')[0].\\",j,\\"(d.\\",h,\\"('script')).\\",k,\\"='\\",l,\\"//\\",a.l,\\"'\\",'\\"',\\"></\\",i,\\">\\"].join(\\"\\")}var i=\\"body\\",m=d[i];if(!m){
+return setTimeout(ld,100)}a.P(1);var j=\\"appendChild\\",h=\\"createElement\\",k=\\"src\\",n=d[h](\\"div\\"),v=n[j](d[h](z)),b=d[h](\\"iframe\\"),g=\\"document\\",e=\\"domain\\",o;n.style.display=\\"none\\";m.insertBefore(n,m.firstChild).id=z;b.frameBorder=\\"0\\";b.id=z+\\"-loader\\";if(/MSIE[ ]+6/.test(navigator.userAgent)){
+b.src=\\"javascript:false\\"}b.allowTransparency=\\"true\\";v[j](b);try{
+b.contentWindow[g].open()}catch(w){
+c[e]=d[e];o=\\"javascript:var d=\\"+g+\\".open();d.domain='\\"+d.domain+\\"';\\";b[k]=o+\\"void(0);\\"}try{
+var t=b.contentWindow[g];t.write(p());t.close()}catch(x){
+b[k]=o+'d.write(\\"'+p().replace(/\\"/g,String.fromCharCode(92)+'\\"')+'\\");d.close();'}a.P(2)};ld()};nt()})({
+loader: \\"static.olark.com/jsclient/loader0.js\\",name:\\"olark\\",methods:[\\"configure\\",\\"extend\\",\\"declare\\",\\"identify\\"]});
+/* custom configuration goes here (www.olark.com/documentation) */
+olark.identify('8022-431-10-3383');/*]]>*/</script><noscript><a href=\\"https://www.olark.com/site/8022-431-10-3383/contact\\" title=\\"Contact us\\" target=\\"_blank\\" rel=\\"noopener\\">Questions? Feedback?</a> powered by <a href=\\"http://www.olark.com?welcome\\" title=\\"Olark live chat software\\">Olark live chat software</a></noscript>
+<!-- end olark code --></div>
+		</aside></section><!-- #secondary .widget-area -->
+	</div>
+	<div id=\\"primary\\" class=\\"span9\\">
+				<div id=\\"content\\" role=\\"main\\">
+			<article id=\\"post-1284\\" class=\\"post-1284 page type-page status-publish hentry\\">
+	
+	<h1 class=\\"entry-title\\">GeoIP2 Precision Web Services</h1>
+	<div class=\\"entry-content clearfix\\">
+		<p>If you are a legacy GeoIP customer, please see our <a href=
+\\"/geoip/geoip2/whats-new-in-geoip2/\\">&#8220;What&#8217;s New in GeoIP2&#8221;</a> document for a general
+overview of the changes from legacy GeoIP to GeoIP2.</p>
+
+<h2><span class=\\"ez-toc-section\\" id=\\"Product_Information\\"></span>Product Information<span class=\\"ez-toc-section-end\\"></span></h2>
+<p>To learn more about the GeoIP2 Precision services and to purchase credits, please <a href=\\"https://www.maxmind.com/en/geoip2-precision-services\\" rel=\\"noopener noreferrer\\" target=\\"_blank\\">view our GeoIP2 Precision Services page</a>.</p>
+
+<h2><span class=\\"ez-toc-section\\" id=\\"Release_Notes\\"></span>Release Notes<span class=\\"ez-toc-section-end\\"></span></h2>
+
+<p>Changes to the GeoIP2 Precision web services are documented in our
+<a href=\\"release-notes\\">release notes</a>.</p>
+
+<h2 id=\\"Client_APIs-1\\"><span class=\\"ez-toc-section\\" id=\\"Client_APIs\\"></span>Client APIs<span class=\\"ez-toc-section-end\\"></span></h2>
+
+<h3><span class=\\"ez-toc-section\\" id=\\"MaxMind_APIs\\"></span>MaxMind APIs<span class=\\"ez-toc-section-end\\"></span></h3>
+
+<p>If you are using one of the languages listed in the table
+below, we strongly encourage you to use the officially supported
+library. There will be no need to interface with the REST API
+directly.</p>
+
+<table class=\\"table table-bordered table-striped\\">
+  <thead>
+    <tr>
+      <th>Language or Framework</th>
+
+      <th>Package Repository</th>
+
+      <th>Documentation</th>
+
+      <th>Version Control</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td>.NET (C#)</td>
+
+      <td><a href=
+      \\"https://www.nuget.org/packages/MaxMind.GeoIP2/\\">NuGet</a></td>
+
+      <td><a href=
+      \\"https://maxmind.github.io/GeoIP2-dotnet/\\">GitHub
+      Pages</a></td>
+
+      <td><a href=
+      \\"https://github.com/maxmind/GeoIP2-dotnet\\">GitHub</a></td>
+    </tr>
+
+    <tr>
+      <td>Java</td>
+
+      <td><a href=
+      \\"https://search.maven.org/#search%7Cga%7C1%7Cg%3A%22com.maxmind.geoip2%22%20AND%20a%3A%22geoip2%22\\">
+      Maven Central Repository</a></td>
+
+      <td><a href=\\"https://maxmind.github.io/GeoIP2-java/\\">GitHub
+      Pages</a></td>
+
+      <td><a href=
+      \\"https://github.com/maxmind/GeoIP2-java\\">GitHub</a></td>
+    </tr>
+
+    <tr>
+      <td>JavaScript (browser)</td>
+
+      <td></td>
+
+      <td><a href=\\"https://dev.maxmind.com/geoip/geoip2/javascript/\\">API Docs</a></td>
+
+      <td></td>
+    </tr>
+    <tr>
+      <td>Node.js</td>
+      <td><a href=\\"https://npmjs.com/package/@maxmind/geoip2-node\\">NPM</a></td>
+      <td><a href=\\"https://maxmind.github.io/GeoIP2-node/\\">GitHub Pages</a></td>
+      <td><a href=\\"https://github.com/maxmind/GeoIP2-node\\">GitHub</a></td>
+    </tr>
+    <tr>
+      <td>Perl <em>(deprecated)</em></td>
+
+      <td><a href=
+      \\"https://metacpan.org/release/GeoIP2\\">CPAN</a></td>
+
+      <td><a href=
+      \\"https://metacpan.org/release/GeoIP2\\">MetaCPAN</a></td>
+
+      <td><a href=
+      \\"https://github.com/maxmind/GeoIP2-perl\\">GitHub</a></td>
+    </tr>
+
+    <tr>
+      <td>PHP</td>
+
+      <td><a href=
+      \\"https://packagist.org/packages/geoip2/geoip2\\">Packagist</a></td>
+
+      <td><a href=\\"https://maxmind.github.io/GeoIP2-php/\\">GitHub
+      Pages</a></td>
+
+      <td><a href=
+      \\"https://github.com/maxmind/GeoIP2-php\\">GitHub</a></td>
+    </tr>
+
+    <tr>
+      <td>Python</td>
+
+      <td><a href=
+      \\"https://pypi.python.org/pypi/geoip2\\">PyPI</a></td>
+
+      <td><a href=
+      \\"https://geoip2.readthedocs.org/en/latest/\\">Read the
+      Docs</a></td>
+
+      <td><a href=
+      \\"https://github.com/maxmind/GeoIP2-python\\">GitHub</a></td>
+    </tr>
+
+    <tr>
+      <td>Ruby</td>
+      <td><a href=\\"https://rubygems.org/gems/maxmind-geoip2\\">RubyGems</a></td>
+      <td><a href=\\"https://www.rubydoc.info/gems/maxmind-geoip2\\">RubyDoc</a></td>
+      <td><a href=\\"https://github.com/maxmind/GeoIP2-ruby\\">GitHub</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<h3><span class=\\"ez-toc-section\\" id=\\"Third-Party_APIs\\"></span>Third-Party APIs<span class=\\"ez-toc-section-end\\"></span></h3>
+
+<div class=\\"alert\\">
+  <strong>Warning!</strong> MaxMind does <em>not</em> offer
+  support for these APIs and has not reviewed the code. Use at
+  your own risk.
+</div>
+
+<table class=\\"table table-bordered table-striped\\">
+  <thead>
+    <tr>
+      <th>Language or Framework</th>
+
+      <th>API Name</th>
+
+      <th>Package Repository</th>
+
+      <th>Documentation</th>
+
+      <th>Version Control</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td>Go</td>
+      <td>geoip2</td>
+      <td></td>
+      <td><a href=\\"https://godoc.org/github.com/savaki/geoip2\\">GoDoc</a></td>
+      <td><a href=\\"https://github.com/savaki/geoip2\\">GitHub</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<h2><span class=\\"ez-toc-section\\" id=\\"Per-Service_URIs\\"></span><a name=\\"Per-Service_URIs-2\\" id=
+\\"Per-Service_URIs-2\\"></a>Per-Service URIs<span class=\\"ez-toc-section-end\\"></span></h2>
+
+<p>The URI for each service is as specified below. Please replace
+<code>{ip_address}</code> with the address you are querying. All
+API calls should be made with <strong>HTTP GET</strong>.</p>
+
+<table class=\\"table table-bordered table-striped\\">
+  <thead>
+    <tr>
+      <th>Service</th>
+
+      <th>URI</th>
+
+      <th>Content-Type</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td>Country</td>
+
+      <td>
+      https://geoip.maxmind.com/geoip/v2.1/country/{ip_address}</td>
+
+      <td>application/vnd.maxmind.com-country+json;
+      charset=UTF-8; version=2.1</td>
+    </tr>
+
+    <tr>
+      <td>City</td>
+
+      <td>
+      https://geoip.maxmind.com/geoip/v2.1/city/{ip_address}</td>
+
+      <td>application/vnd.maxmind.com-city+json; charset=UTF-8;
+      version=2.1</td>
+    </tr>
+
+    <tr>
+      <td>Insights</td>
+
+      <td>
+      https://geoip.maxmind.com/geoip/v2.1/insights/{ip_address}</td>
+
+      <td>application/vnd.maxmind.com-insights+json; charset=UTF-8;
+      version=2.1</td>
+    </tr>
+
+    <tr>
+      <td>GeoLite2 Country</td>
+      <td>https://geolite.info/geoip/v2.1/country/{ip_address}</td>
+      <td>application/vnd.maxmind.com-country+json; charset=UTF-8; version=2.1</td>
+    </tr>
+
+    <tr>
+      <td>GeoLite2 City</td>
+      <td>https://geolite.info/geoip/v2.1/city/{ip_address}</td>
+      <td>application/vnd.maxmind.com-city+json; charset=UTF-8; version=2.1</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>The <strong class=\\"no-wrap\\">geoip.maxmind.com</strong> and <strong class=\\"no-wrap\\">geolite.info</strong> hostnames automatically pick the data center geographically closest to you.</p>
+
+<h2 id=\\"IP_Address-3\\"><span class=\\"ez-toc-section\\" id=\\"IP_Address\\"></span>IP Address<span class=\\"ez-toc-section-end\\"></span></h2>
+
+<p>The IP address can be either an IPv4 or an IPv6 address. IPv4
+addresses should be passed in the standard dotted quad form, for
+example <code>1.2.3.4</code>. IPv6 addresses should be passed as
+strings as well. We recommend using the canonical form as
+described in <a href=\\"https://tools.ietf.org/html/rfc5952\\">RFC
+5952</a>, for example <code>2001:db8::1:0:0:1</code>, but we will
+handle any valid IPv6 string representation.</p>
+
+<p>You can also use the string <code>me</code> as the IP address.
+In this case, the record for the IP address you are querying from
+will be returned. This is useful when your application does not
+have easy access to its public IP address, e.g., when the system
+making the query is behind a NAT.</p>
+
+<h2><span class=\\"ez-toc-section\\" id=\\"Request_Headers\\"></span><a name=\\"Request_Headers-4\\" id=
+\\"Request_Headers-4\\"></a>Request Headers<span class=\\"ez-toc-section-end\\"></span></h2>
+
+<p>The <code>Accept</code> header for a request is entirely
+optional. If you do include one, you must accept one of the
+following:</p>
+
+<ul>
+  <li><code>application/json</code></li>
+
+  <li><code>application/vnd.maxmind.com-country+json</code></li>
+
+  <li><code>application/vnd.maxmind.com-country+json;
+  charset=UTF-8; version=2.1</code></li>
+</ul>
+
+<p>Substitute the appropriate service&#8217;s type for &#8220;country&#8221;. A
+request for any other MIME type will result in a <code>415
+Unsupported Media Type</code> error.</p>
+
+<p>If you set the <code>Accept-Charset</code> header in your
+client code, you must accept the <code>UTF-8</code> character
+set. If you don&#8217;t you will receive a <code>406 Not
+Acceptable</code> response, because this data is only available
+in UTF-8.</p>
+
+<p><a name=\\"Authorization\\" id=\\"Authorization\\"></a></p>
+
+<h3><span class=\\"ez-toc-section\\" id=\\"AuthorizationSecurity\\"></span><a name=\\"Authorization-5\\" id=\\"Authorization-5\\"></a>Authorization/Security<span class=\\"ez-toc-section-end\\"></span></h3>
+<p>The HTTP Authorization header is required for authorization. The username is your <a href=\\"https://www.maxmind.com/en/accounts/current/license-key\\">MaxMind account ID</a>. The password is your <a href=\\"https://www.maxmind.com/en/accounts/current/license-key\\">MaxMind license key</a>. You must be approved for a trial or GeoLite2 account, or purchase credit for use with our web services in order to receive an account ID and license key.</p>
+<p>We use <a href=\\"https://en.wikipedia.org/wiki/Basic_access_authentication\\">basic HTTP authentication</a>. The APIs which require authentication are only available via HTTPS. The credentials are never transmitted unencrypted. If you attempt to access this service via HTTP, you will receive a <code>403 Forbidden</code> HTTP response.<p>
+<p>We require TLS 1.2 or greater for all requests to our servers to keep your data secure.</p>
+
+<h2><span class=\\"ez-toc-section\\" id=\\"Response_Headers\\"></span><a name=\\"Response_Headers-6\\" id=
+\\"Response_Headers-6\\"></a>Response Headers<span class=\\"ez-toc-section-end\\"></span></h2>
+
+<p>The <code>Content-Type</code> header for a successful response
+varies based on the service you are using.</p>
+
+<p>Errors may be returned with the <code>Content-Type</code> set
+to <code>application/vnd.maxmind.com-error+json; charset=UTF-8;
+version=2.1</code>. If this is the case, then the body of the
+response contains a JSON document with two keys,
+<code>code</code> and <code>error</code>. See <a href=
+\\"#Errors\\">the Errors section</a> for more details.</p>
+
+<p>The response will always include a <code>Content-Length</code>
+header as well.</p>
+
+<h2 id=\\"Response_Body-7\\"><span class=\\"ez-toc-section\\" id=\\"Response_Body\\"></span>Response
+Body<span class=\\"ez-toc-section-end\\"></span></h2>
+
+<p>All services return data as a JSON document. The document that
+is returned always consists of an object (aka map or hash). Each
+key in the object in turn maps to an object or an array of
+objects. The top-level structure of a document will look
+something like this:</p>
+
+ 
+<pre><code class=\\"language-json\\" >{
+  \\"city\\":                 { ... },
+  \\"continent\\":            { ... },
+  \\"country\\":              { ... },
+  \\"location\\":             { ... },
+  \\"postal\\":               { ... },
+  \\"registered_country\\":   { ... },
+  \\"represented_country\\":  { ... },
+  \\"subdivisions\\":         [{ ... }, ... ],
+  \\"traits\\":               { ... },
+  \\"maxmind\\":              { ... }
+}
+</code></pre> 
+
+<p>The exact set of top-level keys varies based on the particular
+GeoIP2 Precision service you are using. If a key maps to an undefined or empty value,
+it is not included in the JSON object. This applies both to
+top-level keys and the objects they map to.</p>
+
+<p>The data returned in the document will be in UTF-8
+encoding.</p>
+
+<h3><span class=\\"ez-toc-section\\" id=\\"IP_Geolocation_Usage\\"></span>IP Geolocation Usage<span class=\\"ez-toc-section-end\\"></span></h3>
+
+<p>
+IP geolocation is inherently imprecise. Locations are often near the center of
+the population. Any location provided by a GeoIP database should not be used to
+identify a particular address or household.
+</p>
+
+<h3 id=\\"Languages-8\\"><span class=\\"ez-toc-section\\" id=\\"Languages\\"></span>Languages<span class=\\"ez-toc-section-end\\"></span></h3>
+
+<p>Many of the objects listed below include a <code>names</code>
+key. The value of that key is in turn an object which maps locale
+codes to a name in the appropriate language and script.</p>
+
+<p>Currently, this web service may return the following locale
+codes:</p>
+
+<table class=\\"table table-bordered table-striped\\">
+  <thead>
+    <tr>
+      <th>Code</th>
+
+      <th>Language</th>
+
+      <th>Notes</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td class=\\"no-wrap\\">de</td>
+
+      <td class=\\"no-wrap\\">German</td>
+
+      <td></td>
+    </tr>
+
+    <tr>
+      <td class=\\"no-wrap\\">en</td>
+
+      <td class=\\"no-wrap\\">English</td>
+
+      <td>English names may still include accented characters if
+      that is the accepted spelling in English. In other words,
+      English does not mean ASCII.</td>
+    </tr>
+
+    <tr>
+      <td class=\\"no-wrap\\">es</td>
+
+      <td class=\\"no-wrap\\">Spanish</td>
+
+      <td></td>
+    </tr>
+
+    <tr>
+      <td class=\\"no-wrap\\">fr</td>
+
+      <td class=\\"no-wrap\\">French</td>
+
+      <td></td>
+    </tr>
+
+    <tr>
+      <td class=\\"no-wrap\\">ja</td>
+
+      <td class=\\"no-wrap\\">Japanese</td>
+
+      <td></td>
+    </tr>
+
+    <tr>
+      <td class=\\"no-wrap\\">pt-BR</td>
+
+      <td class=\\"no-wrap\\">Brazilian Portuguese</td>
+
+      <td></td>
+    </tr>
+
+    <tr>
+      <td class=\\"no-wrap\\">ru</td>
+
+      <td class=\\"no-wrap\\">Russian</td>
+
+      <td></td>
+    </tr>
+
+    <tr>
+      <td class=\\"no-wrap\\">zh-CN</td>
+
+      <td class=\\"no-wrap\\">Chinese (Simplified)</td>
+
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+<p>If an object has any name data, then <code>en</code> will be
+one of the keys in the <code>names</code> object. No other
+language is guaranteed. However, it possible that we might not
+have <em>any</em> name data at all for a given object.</p>
+
+<h3 id=\\"city-9\\"><span class=\\"ez-toc-section\\" id=\\"city\\"></span>city<span class=\\"ez-toc-section-end\\"></span></h3>
+
+<p>A JSON object containing details about the city associated
+with the IP address.</p>
+
+<table class=\\"table table-bordered table-striped\\">
+  <thead>
+    <tr>
+      <th colspan=\\"3\\"></th>
+
+      <th colspan=\\"4\\">Included in &#8230;</th>
+    </tr>
+
+    <tr>
+      <th>Key</th>
+
+      <th>Value Type</th>
+
+      <th>Description</th>
+
+      <th>Country?</th>
+
+      <th>City?</th>
+
+      <th>Insights?</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td>confidence</td>
+
+      <td>integer</td>
+
+      <td>A value from 0-100 representing our confidence that the
+      city is correct.</td>
+
+      <td></td>
+
+      <td></td>
+
+      <td><i class=\\"icon-check\\"></i></td>
+    </tr>
+
+    <tr>
+      <td>geoname_id</td>
+
+      <td>integer</td>
+
+      <td>
+        <p>A unique identifier for the city as specified by
+        <a href=\\"https://www.geonames.org\\">GeoNames</a>.</p>
+      </td>
+
+      <td></td>
+
+      <td><i class=\\"icon-check\\"></i></td>
+
+      <td><i class=\\"icon-check\\"></i></td>
+    </tr>
+
+    <tr>
+      <td>names</td>
+
+      <td>JSON object (map)</td>
+
+      <td>
+        <p>A map from locale codes, such as <code>en</code>, to
+        the localized names for the feature.</p>
+      </td>
+
+      <td></td>
+
+      <td><i class=\\"icon-check\\"></i></td>
+
+      <td><i class=\\"icon-check\\"></i></td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id=\\"continent-10\\"><span class=\\"ez-toc-section\\" id=\\"continent\\"></span>continent<span class=\\"ez-toc-section-end\\"></span></h3>
+
+<p>A JSON object containing information about the continent
+associated with the IP address.</p>
+
+<table class=\\"table table-bordered table-striped\\">
+  <thead>
+    <tr>
+      <th colspan=\\"3\\"></th>
+
+      <th colspan=\\"4\\">Included in &#8230;</th>
+    </tr>
+
+    <tr>
+      <th>Key</th>
+
+      <th>Value Type</th>
+
+      <th>Description</th>
+
+      <th>Country?</th>
+
+      <th>City?</th>
+
+      <th>Insights?</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td>code</td>
+
+      <td>string (2)</td>
+
+      <td>
+        <p>A two-character code for the continent associated with
+        the IP address. The possible codes are:</p>
+<ul>
+	<li><strong>AF</strong> &#8211; Africa</li>
+        <li><strong>AN</strong> &#8211; Antarctica</li>
+	<li><strong>AS</strong> &#8211; Asia</li>
+	<li><strong>EU</strong> &#8211; Europe</li>
+	<li><strong>NA</strong> &#8211; North America</li>
+	<li><strong>OC</strong> &#8211; Oceania</li>
+	<li><strong>SA</strong> &#8211; South America</li>
+</ul>
+      </td>
+
+      <td><i class=\\"icon-check\\"></i></td>
+
+      <td><i class=\\"icon-check\\"></i></td>
+
+      <td><i class=\\"icon-check\\"></i></td>
+    </tr>
+
+    <tr>
+      <td>geoname_id</td>
+
+      <td>integer</td>
+
+      <td>
+        <p>A unique identifier for the continent as specified by
+        <a href=\\"https://www.geonames.org/\\">GeoNames</a>.</p>
+      </td>
+
+      <td><i class=\\"icon-check\\"></i></td>
+
+      <td><i class=\\"icon-check\\"></i></td>
+
+      <td><i class=\\"icon-check\\"></i></td>
+    </tr>
+
+    <tr>
+      <td>names</td>
+
+      <td>JSON object (map)</td>
+
+      <td>
+        <p>A map from locale codes, such as <code>en</code>, to
+        the localized names for the feature.</p>
+      </td>
+
+      <td><i class=\\"icon-check\\"></i></td>
+
+      <td><i class=\\"icon-check\\"></i></td>
+
+      <td><i class=\\"icon-check\\"></i></td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id=\\"country-11\\"><span class=\\"ez-toc-section\\" id=\\"country\\"></span>country<span class=\\"ez-toc-section-end\\"></span></h3>
+
+<p>A JSON object containing details about the country where
+MaxMind believes the end user is located.</p>
+
+<table class=\\"table table-bordered table-striped\\">
+  <thead>
+    <tr>
+      <th colspan=\\"3\\"></th>
+
+      <th colspan=\\"4\\">Included in &#8230;</th>
+    </tr>
+
+    <tr>
+      <th>Key</th>
+
+      <th>Value Type</th>
+
+      <th>Description</th>
+
+      <th>Country?</th>
+
+      <th>City?</th>
+
+      <th>Insights?</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td>confidence</td>
+
+      <td>integer</td>
+
+      <td>A value from 0-100 representing our confidence that the
+      country is correct.</td>
+
+      <td></td>
+
+      <td></td>
+
+      <td><i class=\\"icon-check\\"></i></td>
+    </tr>
+
+    <tr>
+      <td>geoname_id</td>
+
+      <td>integer</td>
+
+      <td>
+        <p>A unique identifier for the country as specified by
+        <a href=\\"https://www.geonames.org/\\">GeoNames</a>.</p>
+      </td>
+
+      <td><i class=\\"icon-check\\"></i></td>
+
+      <td><i class=\\"icon-check\\"></i></td>
+
+      <td><i class=\\"icon-check\\"></i></td>
+    </tr>
+
+    <tr>
+      <td>is_in_european_union</td>
+
+      <td>boolean</td>
+
+      <td>This is <code>true</code> if the country is a member state of the European Union.  Otherwise, the key is not included in the <code>country</code> object.</td>
+
+      <td><i class=\\"icon-check\\"></i></td>
+
+      <td><i class=\\"icon-check\\"></i></td>
+
+      <td><i class=\\"icon-check\\"></i></td>
+    </tr>
+
+    <tr>
+      <td>iso_code</td>
+
+      <td>string (2)</td>
+
+      <td>A two-character <a href=
+      \\"https://en.wikipedia.org/wiki/ISO_3166-1\\">ISO 3166-1</a>
+      country code for the country associated with the IP
+      address.</td>
+
+      <td><i class=\\"icon-check\\"></i></td>
+
+      <td><i class=\\"icon-check\\"></i></td>
+
+      <td><i class=\\"icon-check\\"></i></td>
+    </tr>
+
+    <tr>
+      <td>names</td>
+
+      <td>JSON object (map)</td>
+
+      <td>
+        <p>A map from locale codes, such as <code>en</code>, to
+        the localized names for the feature.</p>
+      </td>
+
+      <td><i class=\\"icon-check\\"></i></td>
+
+      <td><i class=\\"icon-check\\"></i></td>
+
+      <td><i class=\\"icon-check\\"></i></td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id=\\"location-12\\"><span class=\\"ez-toc-section\\" id=\\"location\\"></span>location<span class=\\"ez-toc-section-end\\"></span></h3>
+
+<p>A JSON object containing specific details about the location
+associated with the IP address.</p>
+
+<table class=\\"table table-bordered table-striped\\">
+  <thead>
+    <tr>
+      <th colspan=\\"3\\"></th>
+
+      <th colspan=\\"4\\">Included in &#8230;</th>
+    </tr>
+
+    <tr>
+      <th>Key</th>
+
+      <th>Value Type</th>
+
+      <th>Description</th>
+
+      <th>Country?</th>
+
+      <th>City?</th>
+
+      <th>Insights?</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td>accuracy_radius</td>
+
+      <td>integer</td>
+
+      <td>The approximate accuracy radius, in kilometers, around the latitude and longitude for the geographical entity (country, subdivision, city or postal code) associated with the IP address. <em>We have a 67% confidence that the location of the end-user falls within the area defined by the accuracy radius and the latitude and longitude coordinates.</em></td>
+      <td></td>
+
+      <td><i class=\\"icon-check\\"></i></td>
+
+      <td><i class=\\"icon-check\\"></i></td>
+    </tr>
+
+    <tr>
+
+      <td>average_income</td>
+
+      <td>integer</td>
+
+      <td>The average annual income associated with the IP address in US dollars. This is only
+      available for IP addresses in the US.</td>
+
+      <td></td>
+
+      <td></td>
+
+      <td><i class=\\"icon-check\\"></i></td>
+    </tr>
+
+    <tr>
+      <td>latitude</td>
+
+      <td>decimal</td>
+
+      <td>The approximate <a href=\\"https://en.wikipedia.org/wiki/World_Geodetic_System\\">WGS84</a> latitude of the postal code, city, subdivision or country associated with the IP address.<strong>*</strong></td>
+
+      <td></td>
+
+      <td><i class=\\"icon-check\\"></i></td>
+
+      <td><i class=\\"icon-check\\"></i></td>
+    </tr>
+
+    <tr>
+      <td>longitude</td>
+
+      <td>decimal</td>
+
+      <td>The approximate <a href=\\"https://en.wikipedia.org/wiki/World_Geodetic_System\\">WGS84</a> longitude of the postal code, city, subdivision or country associated with the IP address.<strong>*</strong></td>
+
+      <td></td>
+
+      <td><i class=\\"icon-check\\"></i></td>
+
+      <td><i class=\\"icon-check\\"></i></td>
+    </tr>
+
+    <tr>
+      <td>metro_code</td>
+
+      <td>integer</td>
+
+      <td>The metro code associated with the IP address. These are only
+      available for IP addresses in the US.
+
+      <td></td>
+
+      <td><i class=\\"icon-check\\"></i></td>
+
+      <td><i class=\\"icon-check\\"></i></td>
+    </tr>
+
+    <tr>
+
+      <td>population_density</td>
+
+      <td>integer</td>
+
+      <td>The estimated number of people per square kilometer. This is only
+      available for IP addresses in the US.</td>
+
+      <td></td>
+
+      <td></td>
+
+      <td><i class=\\"icon-check\\"></i></td>
+    </tr>
+
+    <tr>
+      <td>time_zone</td>
+
+      <td>string</td>
+
+      <td>The time zone associated with location, as specified by
+      the <a href=\\"https://www.iana.org/time-zones\\">IANA Time Zone
+      Database</a>, e.g., &#8220;America/New_York&#8221;.</td>
+
+      <td></td>
+
+      <td><i class=\\"icon-check\\"></i></td>
+
+      <td><i class=\\"icon-check\\"></i></td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>*</strong><em> The coordinates are not precise and should not be used to identify a particular street address or household. To better represent a level of accuracy, please include the <strong>accuracy_radius</strong> when displaying latitude and longitude and make it clear that the coordinates refer to a larger geographical area instead of a precise location.</em><p>
+
+<h3 id=\\"postal-13\\"><span class=\\"ez-toc-section\\" id=\\"postal\\"></span>postal<span class=\\"ez-toc-section-end\\"></span></h3>
+
+<p>A JSON object containing details about the postal code
+associated with the IP address.</p>
+
+<table class=\\"table table-bordered table-striped\\">
+  <thead>
+    <tr>
+      <th colspan=\\"3\\"></th>
+
+      <th colspan=\\"4\\">Included in &#8230;</th>
+    </tr>
+
+    <tr>
+      <th>Key</th>
+
+      <th>Value Type</th>
+
+      <th>Description</th>
+
+      <th>Country?</th>
+
+      <th>City?</th>
+
+      <th>Insights?</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td>code</td>
+
+      <td>string</td>
+
+      <td><p>A postal code close to the user&#8217;s location.  For the following countries, we return partial postal codes with the number of characters indicated below:</p>
+        <ul>
+           <li>United States: 5</li>
+           <li>Canada: 3</li>
+           <li>United Kingdom: 2-4</li>
+           <li>Brazil: 5</li>
+           <li>Ireland: 3</li>
+           <li>Japan: 7 (specified for the first 6. The last digit defaults to <code>1</code>)</li>
+           <li>Netherlands: 4</li>
+           <li>Portugal: 7 (accurate for the first 4. The last 3 often defaults to <code>-001</code>)</li>
+           <li>Singapore: 2</li>
+        </ul>
+      </td>
+
+      <td></td>
+
+      <td><i class=\\"icon-check\\"></i></td>
+
+      <td><i class=\\"icon-check\\"></i></td>
+    </tr>
+
+    <tr>
+      <td>confidence</td>
+
+      <td>integer</td>
+
+      <td>A value from 0-100 representing our confidence that the
+      postal code is correct.</td>
+
+      <td></td>
+
+      <td></td>
+
+      <td><i class=\\"icon-check\\"></i></td>
+    </tr>
+  </tbody>
+</table>
+
+<h3><span class=\\"ez-toc-section\\" id=\\"registered_country\\"></span><a name=\\"registered_country-14\\" id=
+\\"registered_country-14\\"></a>registered_country<span class=\\"ez-toc-section-end\\"></span></h3>
+
+<p>A JSON object containing details about the country in which
+the ISP has registered the IP address.</p>
+
+<table class=\\"table table-bordered table-striped\\">
+  <thead>
+    <tr>
+      <th colspan=\\"3\\"></th>
+
+      <th colspan=\\"4\\">Included in &#8230;</th>
+    </tr>
+
+    <tr>
+      <th>Key</th>
+
+      <th>Value Type</th>
+
+      <th>Description</th>
+
+      <th>Country?</th>
+
+      <th>City?</th>
+
+      <th>Insights?</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td>geoname_id</td>
+
+      <td>integer</td>
+
+      <td>
+        <p>A unique identifier for the country as specified by
+        <a href=\\"https://www.geonames.org/\\">GeoNames</a>.</p>
+      </td>
+
+      <td><i class=\\"icon-check\\"></i></td>
+
+      <td><i class=\\"icon-check\\"></i></td>
+
+      <td><i class=\\"icon-check\\"></i></td>
+    </tr>
+
+    <tr>
+      <td>is_in_european_union</td>
+
+      <td>boolean</td>
+
+      <td>This is <code>true</code> if the registered country is a member state of the European Union.  Otherwise, the key is not included in the <code>registered_country</code> object.</td>
+
+      <td><i class=\\"icon-check\\"></i></td>
+
+      <td><i class=\\"icon-check\\"></i></td>
+
+      <td><i class=\\"icon-check\\"></i></td>
+    </tr>
+
+    <tr>
+      <td>iso_code</td>
+
+      <td>string (2)</td>
+
+      <td>A two-character <a href=
+      \\"https://en.wikipedia.org/wiki/ISO_3166-1\\">ISO 3166-1</a>
+      country code for the registered country.</td>
+
+      <td><i class=\\"icon-check\\"></i></td>
+
+      <td><i class=\\"icon-check\\"></i></td>
+
+      <td><i class=\\"icon-check\\"></i></td>
+    </tr>
+
+    <tr>
+      <td>names</td>
+
+      <td>JSON object (map)</td>
+
+      <td>
+        <p>A map from locale codes, such as <code>en</code>, to
+        the localized names for the feature.</p>
+      </td>
+
+      <td><i class=\\"icon-check\\"></i></td>
+
+      <td><i class=\\"icon-check\\"></i></td>
+
+      <td><i class=\\"icon-check\\"></i></td>
+    </tr>
+  </tbody>
+</table>
+
+<h3><span class=\\"ez-toc-section\\" id=\\"represented_country\\"></span><a name=\\"represented_country-15\\" id=
+\\"represented_country-15\\"></a>represented_country<span class=\\"ez-toc-section-end\\"></span></h3>
+
+<p>A JSON object containing details about the country which is
+represented by users of the IP address. For instance, the country
+represented by an overseas military base.</p>
+
+<table class=\\"table table-bordered table-striped\\">
+  <thead>
+    <tr>
+      <th colspan=\\"3\\"></th>
+
+      <th colspan=\\"4\\">Included in &#8230;</th>
+    </tr>
+
+    <tr>
+      <th>Key</th>
+
+      <th>Value Type</th>
+
+      <th>Description</th>
+
+      <th>Country?</th>
+
+      <th>City?</th>
+
+      <th>Insights?</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td>geoname_id</td>
+
+      <td>integer</td>
+
+      <td>
+        <p>A unique identifier for the country as specified by
+        <a href=\\"https://www.geonames.org/\\">GeoNames</a>.</p>
+      </td>
+
+      <td><i class=\\"icon-check\\"></i></td>
+
+      <td><i class=\\"icon-check\\"></i></td>
+
+      <td><i class=\\"icon-check\\"></i></td>
+    </tr>
+
+    <tr>
+      <td>is_in_european_union</td>
+
+      <td>boolean</td>
+
+      <td>This is <code>true</code> if the represented country is a member state of the European Union.  Otherwise, the key is not included in the <code>represented_country</code> object.</td>
+
+      <td><i class=\\"icon-check\\"></i></td>
+
+      <td><i class=\\"icon-check\\"></i></td>
+
+      <td><i class=\\"icon-check\\"></i></td>
+    </tr>
+
+    <tr>
+      <td>iso_code</td>
+
+      <td>string (2)</td>
+
+      <td>A two-character <a href=
+      \\"https://en.wikipedia.org/wiki/ISO_3166-1\\">ISO 3166-1</a>
+      country code for the represented country.</td>
+
+      <td><i class=\\"icon-check\\"></i></td>
+
+      <td><i class=\\"icon-check\\"></i></td>
+
+      <td><i class=\\"icon-check\\"></i></td>
+    </tr>
+
+    <tr>
+      <td>names</td>
+
+      <td>JSON object (map)</td>
+
+      <td>
+        <p>A map from locale codes, such as <code>en</code>, to
+        the localized names for the feature.</p>
+      </td>
+
+      <td><i class=\\"icon-check\\"></i></td>
+
+      <td><i class=\\"icon-check\\"></i></td>
+
+      <td><i class=\\"icon-check\\"></i></td>
+    </tr>
+
+    <tr>
+      <td>type</td>
+
+      <td>string</td>
+
+      <td>The type of represented country. Currently limited to
+      <strong>military</strong> but may include other types in the
+      future.</td>
+
+      <td><i class=\\"icon-check\\"></i></td>
+
+      <td><i class=\\"icon-check\\"></i></td>
+
+      <td><i class=\\"icon-check\\"></i></td>
+    </tr>
+  </tbody>
+</table>
+
+<h3><span class=\\"ez-toc-section\\" id=\\"subdivisions\\"></span><a name=\\"subdivisions-16\\" id=
+\\"subdivisions-16\\"></a>subdivisions<span class=\\"ez-toc-section-end\\"></span></h3>
+
+<p>An array of JSON objects. Each of these objects contains
+details about a subdivision of the country in which the IP
+address resides. Subdivisions are arranged from largest to
+smallest.</p>
+
+<p>For instance, the response for Oxford in the United Kingdom
+would have an object for England as the first element in
+<code>subdivisions</code> array and an object for Oxfordshire as
+the second element. The <code>subdivisions</code> array for
+Minneapolis in the United States will have a single object for
+Minnesota.</p>
+
+<table class=\\"table table-bordered table-striped\\">
+  <thead>
+    <tr>
+      <th colspan=\\"3\\"></th>
+
+      <th colspan=\\"4\\">Included in &#8230;</th>
+    </tr>
+
+    <tr>
+      <th>Key</th>
+
+      <th>Value Type</th>
+
+      <th>Description</th>
+
+      <th>Country?</th>
+
+      <th>City?</th>
+
+      <th>Insights?</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td>confidence</td>
+
+      <td>integer</td>
+
+      <td>A value from 0-100 representing our confidence that the
+      region is correct.</td>
+
+      <td></td>
+
+      <td></td>
+
+      <td><i class=\\"icon-check\\"></i></td>
+    </tr>
+
+    <tr>
+      <td>geoname_id</td>
+
+      <td>integer</td>
+
+      <td>
+        <p>A unique identifier for the region as specified by
+        <a href=\\"https://www.geonames.org/\\">GeoNames</a>.</p>
+      </td>
+
+      <td></td>
+
+      <td><i class=\\"icon-check\\"></i></td>
+
+      <td><i class=\\"icon-check\\"></i></td>
+    </tr>
+
+    <tr>
+      <td>iso_code</td>
+
+      <td>string</td>
+
+      <td>A string of up to three characters containing the
+      region-portion of the <a href=
+      \\"https://en.wikipedia.org/wiki/ISO_3166-2\\">ISO 3166-2</a>
+      code for the region associated with the IP address.</td>
+
+      <td></td>
+
+      <td><i class=\\"icon-check\\"></i></td>
+
+      <td><i class=\\"icon-check\\"></i></td>
+    </tr>
+
+    <tr>
+      <td>names</td>
+
+      <td>JSON object (map)</td>
+
+      <td>
+        <p>A map from locale codes, such as <code>en</code>, to
+        the localized names for the feature.</p>
+      </td>
+
+      <td></td>
+
+      <td><i class=\\"icon-check\\"></i></td>
+
+      <td><i class=\\"icon-check\\"></i></td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id=\\"traits-17\\"><span class=\\"ez-toc-section\\" id=\\"traits\\"></span>traits<span class=\\"ez-toc-section-end\\"></span></h3>
+
+<p>A JSON object containing general traits associated with the IP
+address.</p>
+
+<table class=\\"table table-bordered table-striped\\">
+  <thead>
+    <tr>
+      <th colspan=\\"3\\"></th>
+
+      <th colspan=\\"4\\">Included in &#8230;</th>
+    </tr>
+
+    <tr>
+      <th>Key</th>
+
+      <th>Value Type</th>
+
+      <th>Description</th>
+
+      <th>Country?</th>
+
+      <th>City?</th>
+
+      <th>Insights?</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td>autonomous_system_number</td>
+
+      <td>integer</td>
+
+      <td>The <a href=
+      \\"https://en.wikipedia.org/wiki/Autonomous_system_(Internet)\\">
+      autonomous system number</a> associated with the IP
+      address.</td>
+
+      <td></td>
+
+      <td><i class=\\"icon-check\\"></i></td>
+
+      <td><i class=\\"icon-check\\"></i></td>
+    </tr>
+
+    <tr>
+      <td>autonomous_system_organization</td>
+
+      <td>string</td>
+
+      <td>The organization associated with the registered
+      <a href=\\"https://en.wikipedia.org/wiki/Autonomous_system_(Internet)\\">
+      autonomous system number</a> for the IP address.</td>
+
+      <td></td>
+
+      <td><i class=\\"icon-check\\"></i></td>
+
+      <td><i class=\\"icon-check\\"></i></td>
+    </tr>
+
+    <tr>
+      <td>domain</td>
+
+      <td>string</td>
+
+      <td>The second level domain associated with the IP address.
+      This will be something like &#8220;example.com&#8221; or
+      &#8220;example.co.uk&#8221;, not &#8220;foo.example.com&#8221;.
+      <em>*This field is not present in the GeoLite2 City web service.</em></td>
+
+      <td></td>
+
+      <td><i class=\\"icon-check\\"></i></td>
+
+      <td><i class=\\"icon-check\\"></i></td>
+    </tr>
+
+    <tr>
+      <td>ip_address</td>
+
+      <td>string</td>
+
+      <td>The requested IP address.</td>
+
+      <td><i class=\\"icon-check\\"></i></td>
+
+      <td><i class=\\"icon-check\\"></i></td>
+
+      <td><i class=\\"icon-check\\"></i></td>
+    </tr>
+
+    <tr>
+      <td>is_anonymous</td>
+
+      <td>boolean</td>
+
+      <td>This is <code>true</code> if the IP address belongs to any sort of anonymous network. Otherwise, the key is not included in the <code>traits</code> object.</td>
+
+      <td></td>
+
+      <td></td>
+
+      <td><i class=\\"icon-check\\"></i></td>
+    </tr>
+
+    <tr>
+      <td>is_anonymous_proxy</td>
+
+      <td>boolean</td>
+
+      <td><strong>Deprecated.</strong> Consider using one of our anonymizer service outputs, such as <code>is_anonymous</code> and <code>is_anonymous_vpn</code>. These anonymizing service outputs are available in the <a href=\\"https://www.maxmind.com/en/geoip2-anonymous-ip-database\\">GeoIP2 Anonymous IP database</a> and the <a href=\\"https://www.maxmind.com/en/geoip2-precision-insights\\">GeoIP2 Precision Insights services</a>.
+</td>
+
+      <td><i class=\\"icon-check\\"></i></td>
+
+      <td><i class=\\"icon-check\\"></i></td>
+
+      <td><i class=\\"icon-check\\"></i></td>
+    </tr>
+
+    <tr>
+      <td>is_anonymous_vpn</td>
+
+      <td>boolean</td>
+
+      <td>This is <code>true</code> if the IP address is registered to an anonymous VPN provider. Otherwise, the key is not included in the <code>traits</code> object.<br><br>
+If a VPN provider does not register subnets under names associated with them, we will likely only flag their IP ranges using the <code>is_hosting_provider</code> flag.</td>
+
+      <td></td>
+
+      <td></td>
+
+      <td><i class=\\"icon-check\\"></i></td>
+    </tr>
+
+    <tr>
+      <td>is_hosting_provider</td>
+
+      <td>boolean</td>
+
+      <td>This is <code>true</code> if the IP address belongs to a hosting or VPN provider (see description of <code>is_anonymous_vpn</code> flag). Otherwise, the key is not included in the <code>traits</code> object.</td>
+
+      <td></td>
+
+      <td></td>
+
+      <td><i class=\\"icon-check\\"></i></td>
+    </tr>
+
+    <tr>
+      <td>is_public_proxy</td>
+
+      <td>boolean</td>
+
+      <td>This is <code>true</code> if the IP address belongs to a public proxy. Otherwise, the key is not included in the <code>traits</code> object.</td>
+
+      <td></td>
+
+      <td></td>
+
+      <td><i class=\\"icon-check\\"></i></td>
+    </tr>
+
+    <tr>
+      <td>is_residential_proxy</td>
+
+      <td>boolean</td>
+
+      <td>This is <code>true</code> if the IP address is on a suspected anonymizing network and belongs to a residential ISP (does not include peer-to-peer proxy IPs). Otherwise, the key is not included in the <code>traits</code> object.</td>
+
+      <td></td>
+
+      <td></td>
+
+      <td><i class=\\"icon-check\\"></i></td>
+    </tr>
+
+    <tr>
+      <td>is_satellite_provider</td>
+
+      <td>boolean</td>
+
+      <td><strong>Deprecated.</strong></td>
+
+      <td><i class=\\"icon-check\\"></i></td>
+
+      <td><i class=\\"icon-check\\"></i></td>
+
+      <td><i class=\\"icon-check\\"></i></td>
+    </tr>
+
+    <tr>
+      <td>is_tor_exit_node</td>
+
+      <td>boolean</td>
+
+      <td>This is <code>true</code> if the IP address is a Tor exit node. Otherwise, the key is not included in the <code>traits</code> object.</td>
+
+      <td></td>
+
+      <td></td>
+
+      <td><i class=\\"icon-check\\"></i></td>
+    </tr>
+
+    <tr>
+      <td>isp</td>
+
+      <td>string</td>
+
+      <td>The name of the ISP associated with the IP
+      address. <em>*This field is not present in the GeoLite2 City web service.</em></td>
+
+      <td></td>
+
+      <td><i class=\\"icon-check\\"></i></td>
+
+      <td><i class=\\"icon-check\\"></i></td>
+    </tr>
+
+    <tr>
+      <td>network</td>
+
+      <td>string</td>
+
+      <td>The network in <a href=\\"https://en.wikipedia.org/wiki/Classless_Inter-Domain_Routing#CIDR_notation\\">CIDR notation</a> associated with the record. In particular, this is the largest network where all of the fields besides <code>ip_address</code> have the same value.</td>
+
+      <td><i class=\\"icon-check\\"></i></td>
+
+      <td><i class=\\"icon-check\\"></i></td>
+
+      <td><i class=\\"icon-check\\"></i></td>
+    </tr>
+
+    <tr>
+      <td>organization</td>
+
+      <td>string</td>
+
+      <td>The name of the organization associated with the IP
+      address. <em>*This field is not present in the GeoLite2 City web service.</em></td>
+
+      <td></td>
+
+      <td><i class=\\"icon-check\\"></i></td>
+
+      <td><i class=\\"icon-check\\"></i></td>
+    </tr>
+
+    <tr>
+        <td>static_ip_score</td>
+        <td>decimal</td>
+        <td>
+            An indicator of how static or dynamic an IP address is. The value ranges from 0 to 99.99 with higher values meaning a greater static association. For example, many IP addresses with a <code>user_type</code> of <code>cellular</code> have a score under one. Broadband IPs that don&#8217;t change very often typically have a score above thirty.
+            <br><br>
+            This indicator can be useful for deciding whether an IP address represents the same user over time.
+        </td>
+        <td></td>
+        <td></td>
+        <td><i class=\\"icon-check\\"></i></td>
+    </tr>
+
+    <tr>
+      <td>user_count</td>
+      <td>integer</td>
+      <td>The estimated number of users sharing the IP/network during the past 24 hours. For IPv4, the count is for the individual IP. For IPv6, the count is for the /64 network.</td>
+      <td></td>
+      <td></td>
+      <td><i class=\\"icon-check\\"></i></td>
+    </tr>
+
+    <tr>
+      <td>user_type</td>
+
+      <td>string</td>
+
+      <td>
+        <p>The user type associated with the IP address. This
+        will be one of the following values.</p>
+
+        <ul>
+          <li><code>business</code></li>
+
+          <li><code>cafe</code></li>
+
+          <li><code>cellular</code></li>
+
+          <li><code>college</code></li>
+
+          <li><code>content_delivery_network</code></li>
+
+          <li><code>dialup</code></li>
+
+          <li><code>government</code></li>
+
+          <li><code>hosting</code></li>
+
+          <li><code>library</code></li>
+
+          <li><code>military</code></li>
+
+          <li><code>residential</code></li>
+
+          <li><code>router</code></li>
+
+          <li><code>school</code></li>
+
+          <li><code>search_engine_spider</code></li>
+
+          <li><code>traveler</code></li>
+        </ul>
+      </td>
+
+      <td></td>
+
+      <td></td>
+
+      <td><i class=\\"icon-check\\"></i></td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id=\\"maxmind-18\\"><span class=\\"ez-toc-section\\" id=\\"maxmind\\"></span>maxmind<span class=\\"ez-toc-section-end\\"></span></h3>
+
+<p>A JSON object containing information related to your MaxMind
+account.</p>
+
+<table class=\\"table table-bordered table-striped\\">
+  <thead>
+    <tr>
+      <th colspan=\\"3\\"></th>
+
+      <th colspan=\\"4\\">Included in &#8230;</th>
+    </tr>
+
+    <tr>
+      <th>Key</th>
+
+      <th>Value Type</th>
+
+      <th>Description</th>
+
+      <th>Country?</th>
+
+      <th>City?</th>
+
+      <th>Insights?</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td>queries_remaining</td>
+
+      <td>integer</td>
+
+      <td>The approximate number of remaining queries available
+      for the end point which is being called.
+      <em>*This field is not present in the GeoLite2 web services.</em></td>
+
+      <td><i class=\\"icon-check\\"></i></td>
+
+      <td><i class=\\"icon-check\\"></i></td>
+
+      <td><i class=\\"icon-check\\"></i></td>
+    </tr>
+  </tbody>
+</table>
+
+<h3><span class=\\"ez-toc-section\\" id=\\"Returned_Values_as_Database_Map_Dict_or_Hash_Keys\\"></span>Returned Values as Database, Map, Dict, or Hash Keys<span class=\\"ez-toc-section-end\\"></span></h3>
+
+<p> <strong>We strongly discourage your from using a value from any
+<code>names</code> field as a key in a database or map/dict/hash data
+structure.</strong> </p>
+
+<p>
+These names may change between releases. Instead we recommend using one of the
+following:
+</p>
+
+<table class=\\"table table-bordered table-striped\\">
+  <thead>
+    <tr>
+      <th>Data object</th>
+      <th>Recommended key</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>city</td>
+      <td><code>geoname_id</code></td>
+    </tr>
+    <tr>
+      <td>continent</td>
+      <td><code>code</code> or <code>geoname_id</code></td>
+    </tr>
+    <tr>
+      <td>country, registered_country, and represented_country</td>
+      <td><code>iso_code</code> or <code>geoname_id</code></td>
+    </tr>
+    <tr>
+      <td>postal</td>
+      <td><code>code</code></td>
+    </tr>
+    <tr>
+      <td>subdivisions</td>
+      <td><code>iso_code</code> or <code>geoname_id</code></td>
+    </tr>
+  </tbody>
+</table>
+
+<h2><span class=\\"ez-toc-section\\" id=\\"Output_Examples\\"></span><a name=\\"Output_Examples-19\\" id=
+\\"Output_Examples-19\\"></a>Output Examples<span class=\\"ez-toc-section-end\\"></span></h2>
+
+<p>Below is an Insights output example containing all of the possible
+fields. <strong>Note</strong>: This example shows sample data for illustration purposes.</p>
+ 
+<pre><code class=\\"language-json\\">{
+  \\"city\\":  {
+      \\"confidence\\": 25,
+      \\"geoname_id\\": 54321,
+      \\"names\\":  {
+          \\"de\\":     \\"Los Angeles\\",
+          \\"en\\":     \\"Los Angeles\\",
+          \\"es\\":     \\"Los Ángeles\\",
+          \\"fr\\":     \\"Los Angeles\\",
+          \\"ja\\":     \\"ロサンゼルス市\\",
+          \\"pt-BR\\":  \\"Los Angeles\\",
+          \\"ru\\":     \\"Лос-Анджелес\\",
+          \\"zh-CN\\":  \\"洛杉矶\\"
+      }
+  },
+  \\"continent\\":  {
+      \\"code\\":       \\"NA\\",
+      \\"geoname_id\\": 123456,
+      \\"names\\":  {
+          \\"de\\":    \\"Nordamerika\\",
+          \\"en\\":    \\"North America\\",
+          \\"es\\":    \\"América del Norte\\",
+          \\"fr\\":    \\"Amérique du Nord\\",
+          \\"ja\\":    \\"北アメリカ\\",
+          \\"pt-BR\\": \\"América do Norte\\",
+          \\"ru\\":    \\"Северная Америка\\",
+          \\"zh-CN\\": \\"北美洲\\"
+
+      }
+  },
+  \\"country\\":  {
+      \\"confidence\\":           75,
+      \\"geoname_id\\":           6252001,
+      \\"is_in_european_union\\": true,
+      \\"iso_code\\":             \\"US\\",
+      \\"names\\":  {
+          \\"de\\":     \\"USA\\",
+          \\"en\\":     \\"United States\\",
+          \\"es\\":     \\"Estados Unidos\\",
+          \\"fr\\":     \\"États-Unis\\",
+          \\"ja\\":     \\"アメリカ合衆国\\",
+          \\"pt-BR\\":  \\"Estados Unidos\\",
+          \\"ru\\":     \\"США\\",
+          \\"zh-CN\\":  \\"美国\\"
+      }
+  },
+  \\"location\\":  {
+      \\"accuracy_radius\\":     20,
+      \\"average_income\\":      128321,
+      \\"latitude\\":            37.6293,
+      \\"longitude\\":           -122.1163,
+      \\"metro_code\\":          807,
+      \\"population_density\\":  7122,
+      \\"time_zone\\":           \\"America/Los_Angeles\\"
+  },
+  \\"postal\\": {
+      \\"code\\":       \\"90001\\",
+      \\"confidence\\": 10
+  },
+  \\"registered_country\\":  {
+      \\"geoname_id\\":           6252001,
+      \\"is_in_european_union\\": true,
+      \\"iso_code\\":             \\"US\\",
+      \\"names\\":  {
+          \\"de\\":     \\"USA\\",
+          \\"en\\":     \\"United States\\",
+          \\"es\\":     \\"Estados Unidos\\",
+          \\"fr\\":     \\"États-Unis\\",
+          \\"ja\\":     \\"アメリカ合衆国\\",
+          \\"pt-BR\\":  \\"Estados Unidos\\",
+          \\"ru\\":     \\"США\\",
+          \\"zh-CN\\":  \\"美国\\"
+      }
+  },
+  \\"represented_country\\":  {
+      \\"geoname_id\\":           6252001,
+      \\"is_in_european_union\\": true,
+      \\"iso_code\\":             \\"US\\",
+      \\"names\\":  {
+          \\"de\\":     \\"USA\\",
+          \\"en\\":     \\"United States\\",
+          \\"es\\":     \\"Estados Unidos\\",
+          \\"fr\\":     \\"États-Unis\\",
+          \\"ja\\":     \\"アメリカ合衆国\\",
+          \\"pt-BR\\":  \\"Estados Unidos\\",
+          \\"ru\\":     \\"США\\",
+          \\"zh-CN\\":  \\"美国\\"
+      },
+      \\"type\\": \\"military\\"
+  },
+  \\"subdivisions\\":  [
+      {
+          \\"confidence\\": 50,
+          \\"geoname_id\\": 5332921,
+          \\"iso_code\\":   \\"CA\\",
+          \\"names\\":  {
+              \\"de\\":     \\"Kalifornien\\",
+              \\"en\\":     \\"California\\",
+              \\"es\\":     \\"California\\",
+              \\"fr\\":     \\"Californie\\",
+              \\"ja\\":     \\"カリフォルニア\\",
+              \\"ru\\":     \\"Калифорния\\",
+              \\"zh-CN\\":  \\"加州\\"
+          }
+      }
+  ],
+  \\"traits\\": {
+      \\"autonomous_system_number\\":       1239,
+      \\"autonomous_system_organization\\": \\"Linkem IR WiMax Network\\",
+      \\"domain\\":                         \\"example.com\\",
+      \\"is_anonymous\\":                   true,
+      \\"is_anonymous_proxy\\":             true,
+      \\"is_anonymous_vpn\\":               true,
+      \\"is_hosting_provider\\":            true,
+      \\"is_public_proxy\\":                true,
+      \\"is_residential_proxy\\":           true,
+      \\"is_satellite_provider\\":          true,
+      \\"is_tor_exit_node\\":               true,
+      \\"isp\\":                            \\"Linkem spa\\",
+      \\"ip_address\\":                     \\"1.2.3.4\\",
+      \\"network\\":                        \\"1.2.3.0/24\\",
+      \\"organization\\":                   \\"Linkem IR WiMax Network\\",
+      \\"static_ip_score\\":                1.5,
+      \\"user_count\\":                     1,
+      \\"user_type\\":                      \\"traveler\\"
+  },
+  \\"maxmind\\": {
+      \\"queries_remaining\\":   54321
+  }
+}</code></pre> 
+
+
+<h2><span class=\\"ez-toc-section\\" id=\\"Command_Line_curl_Example\\"></span><a name=\\"Command Line (curl) Example\\"></a>Command Line (curl)
+Example<span class=\\"ez-toc-section-end\\"></span></h2>
+
+<p>The web service may be accessed using <a href=
+\\"https://curl.haxx.se/\\"><code>curl</code></a>, a simple
+command-line HTTP client. The <code>-u</code> flag is used to
+pass the <a href=
+\\"https://en.wikipedia.org/wiki/Basic_access_authentication#Client_side\\">
+HTTP basic authentication header</a> that provides the web
+service with your credentials.</p>
+
+<div class=\\"accordion\\" id=\\"accordion2\\">
+  <div class=\\"accordion-group\\">
+    <div class=\\"accordion-heading\\">
+      <a class=\\"accordion-toggle\\" data-toggle=\\"collapse\\"
+      data-parent=\\"#accordion2\\" href=\\"#curlCountry\\">Country
+      Example</a>
+    </div>
+
+    <div id=\\"curlCountry\\" class=\\"accordion-body collapse in\\">
+      <div class=\\"accordion-inner\\">
+        <p>Please replace <code>{account_id}</code> and
+        <code>{license_key}</code> with your <a href=
+        \\"https://www.maxmind.com/en/my_license_key\\">account ID and
+        license key</a>.</p>
+
+        <h3><span class=\\"ez-toc-section\\" id=\\"Retrieving_Data_for_Your_IP_Address\\"></span>Retrieving Data for Your IP Address<span class=\\"ez-toc-section-end\\"></span></h3>
+ 
+<pre><code class=\\"language-shell\\">curl -u \\"{account_id}:{license_key}\\" \\\\
+      \\"https://geoip.maxmind.com/geoip/v2.1/country/me?pretty\\"</code></pre> 
+
+
+        <h3><span class=\\"ez-toc-section\\" id=\\"Retrieving_Data_for_an_Arbitrary_IP_Address\\"></span>Retrieving Data for an Arbitrary IP Address<span class=\\"ez-toc-section-end\\"></span></h3>
+
+        <p>Replace <code>{ip_address}</code> with the IP address
+        you wish to look up.</p>
+        <pre><code class=\\"language-shell\\">curl -u \\"{account_id}:{license_key}\\" \\\\
+       \\"https://geoip.maxmind.com/geoip/v2.1/country/{ip_address}?pretty\\"</code></pre>
+      </div>
+    </div>
+  </div>
+
+  <div class=\\"accordion-group\\">
+    <div class=\\"accordion-heading\\">
+      <a class=\\"accordion-toggle\\" data-toggle=\\"collapse\\"
+      data-parent=\\"#accordion2\\" href=\\"#curlCity\\">City Example</a>
+    </div>
+
+    <div id=\\"curlCity\\" class=\\"accordion-body collapse\\">
+      <div class=\\"accordion-inner\\">
+        <p>Please replace <code>{account_id}</code> and
+        <code>{license_key}</code> with your <a href=
+        \\"https://www.maxmind.com/en/my_license_key\\">account ID and
+        license key</a>.</p>
+
+        <h3><span class=\\"ez-toc-section\\" id=\\"Retrieving_Data_for_Your_IP_Address-2\\"></span>Retrieving Data for Your IP Address<span class=\\"ez-toc-section-end\\"></span></h3>
+        <pre><code class=\\"language-shell\\">curl -u \\"{account_id}:{license_key}\\" \\\\
+      \\"https://geoip.maxmind.com/geoip/v2.1/city/me?pretty\\"</code></pre>
+
+        <h3><span class=\\"ez-toc-section\\" id=\\"Retrieving_Data_for_an_Arbitrary_IP_Address-2\\"></span>Retrieving Data for an Arbitrary IP Address<span class=\\"ez-toc-section-end\\"></span></h3>
+
+        <p>Replace <code>{ip_address}</code> with the IP address
+        you wish to look up.</p>
+        <pre><code class=\\"language-shell\\">curl -u \\"{account_id}:{license_key}\\" \\\\
+       \\"https://geoip.maxmind.com/geoip/v2.1/city/{ip_address}?pretty\\"</code></pre>
+      </div>
+    </div>
+  </div>
+
+  <div class=\\"accordion-group\\">
+    <div class=\\"accordion-heading\\">
+      <a class=\\"accordion-toggle\\" data-toggle=\\"collapse\\"
+      data-parent=\\"#accordion2\\" href=\\"#curlInsights\\">Insights Example</a>
+    </div>
+
+    <div id=\\"curlInsights\\" class=\\"accordion-body collapse\\">
+      <div class=\\"accordion-inner\\">
+        <p>Please replace <code>{account_id}</code> and
+        <code>{license_key}</code> with your <a href=
+        \\"https://www.maxmind.com/en/my_license_key\\">account ID and
+        license key</a>.</p>
+
+        <h3><span class=\\"ez-toc-section\\" id=\\"Retrieving_Data_for_Your_IP_Address-3\\"></span>Retrieving Data for Your IP Address<span class=\\"ez-toc-section-end\\"></span></h3>
+        <pre><code class=\\"language-shell\\">curl -u \\"{account_id}:{license_key}\\" \\\\
+      \\"https://geoip.maxmind.com/geoip/v2.1/insights/me?pretty\\"</code></pre>
+
+        <h3><span class=\\"ez-toc-section\\" id=\\"Retrieving_Data_for_an_Arbitrary_IP_Address-3\\"></span>Retrieving Data for an Arbitrary IP Address<span class=\\"ez-toc-section-end\\"></span></h3>
+
+        <p>Replace <code>{ip_address}</code> with the IP address
+        you wish to look up.</p>
+        <pre><code class=\\"language-shell\\">curl -u \\"{account_id}:{license_key}\\" \\\\
+       \\"https://geoip.maxmind.com/geoip/v2.1/insights/{ip_address}?pretty\\"</code></pre>
+      </div>
+    </div>
+  </div>
+
+  <div class=\\"accordion-group\\">
+    <div class=\\"accordion-heading\\">
+      <a class=\\"accordion-toggle\\" data-toggle=\\"collapse\\"
+      data-parent=\\"#accordion2\\" href=\\"#curlGeoLite2Country\\">GeoLite2 Country Example</a>
+    </div>
+
+    <div id=\\"curlGeoLite2Country\\" class=\\"accordion-body collapse\\">
+      <div class=\\"accordion-inner\\">
+        <p>Please replace <code>{account_id}</code> and
+        <code>{license_key}</code> with your <a href=
+        \\"https://www.maxmind.com/en/my_license_key\\">account ID and
+        license key</a>.</p>
+
+        <h3><span class=\\"ez-toc-section\\" id=\\"Retrieving_Data_for_Your_IP_Address-4\\"></span>Retrieving Data for Your IP Address<span class=\\"ez-toc-section-end\\"></span></h3>
+        <pre><code class=\\"language-shell\\">curl -u \\"{account_id}:{license_key}\\" \\\\
+      \\"https://geolite.info/geoip/v2.1/country/me?pretty\\"</code></pre>
+
+        <h3><span class=\\"ez-toc-section\\" id=\\"Retrieving_Data_for_an_Arbitrary_IP_Address-4\\"></span>Retrieving Data for an Arbitrary IP Address<span class=\\"ez-toc-section-end\\"></span></h3>
+
+        <p>Replace <code>{ip_address}</code> with the IP address
+        you wish to look up.</p>
+        <pre><code class=\\"language-shell\\">curl -u \\"{account_id}:{license_key}\\" \\\\
+       \\"https://geolite.info/geoip/v2.1/country/{ip_address}?pretty\\"</code></pre>
+      </div>
+    </div>
+  </div>
+
+  <div class=\\"accordion-group\\">
+    <div class=\\"accordion-heading\\">
+      <a class=\\"accordion-toggle\\" data-toggle=\\"collapse\\"
+      data-parent=\\"#accordion2\\" href=\\"#curlGeoLite2City\\">GeoLite2 City Example</a>
+    </div>
+
+    <div id=\\"curlGeoLite2City\\" class=\\"accordion-body collapse\\">
+      <div class=\\"accordion-inner\\">
+        <p>Please replace <code>{account_id}</code> and
+        <code>{license_key}</code> with your <a href=
+        \\"https://www.maxmind.com/en/my_license_key\\">account ID and
+        license key</a>.</p>
+
+        <h3><span class=\\"ez-toc-section\\" id=\\"Retrieving_Data_for_Your_IP_Address-5\\"></span>Retrieving Data for Your IP Address<span class=\\"ez-toc-section-end\\"></span></h3>
+        <pre><code class=\\"language-shell\\">curl -u \\"{account_id}:{license_key}\\" \\\\
+      \\"https://geolite.info/geoip/v2.1/city/me?pretty\\"</code></pre>
+
+        <h3><span class=\\"ez-toc-section\\" id=\\"Retrieving_Data_for_an_Arbitrary_IP_Address-5\\"></span>Retrieving Data for an Arbitrary IP Address<span class=\\"ez-toc-section-end\\"></span></h3>
+
+        <p>Replace <code>{ip_address}</code> with the IP address
+        you wish to look up.</p>
+        <pre><code class=\\"language-shell\\">curl -u \\"{account_id}:{license_key}\\" \\\\
+       \\"https://geolite.info/geoip/v2.1/city/{ip_address}?pretty\\"</code></pre>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<p><a name=\\"Errors\\" id=\\"Errors\\"></a></p>
+
+<h2 id=\\"Errors-20\\"><span class=\\"ez-toc-section\\" id=\\"Errors\\"></span>Errors<span class=\\"ez-toc-section-end\\"></span></h2>
+
+<p>When the server returns an error (4xx or 5xx), the response
+may include a JSON document in the body. This document is a
+single object with the keys <code>code</code> and
+<code>error</code>. The <code>code</code> field is a static error
+code for machine use. The value of any given code will never
+change, though codes can be added or removed. The
+<code>error</code> field is a human-readable description of the
+error and may change at any time.</p>
+
+<p>Not all errors include a JSON body. An error in content
+negotiation will not include a body, nor will many 5xx errors,
+which typically happen outside of our web service request
+handling code. You should check the <code>Content-Type</code>
+type of an error response before attempting to decode the body as
+JSON.</p>
+
+<p>In addition to the errors documented below, client code should
+also be prepared to handle any valid HTTP 4xx or 5xx status
+code.</p>
+
+<table class=\\"table table-bordered table-striped error-codes\\">
+  <thead>
+    <tr>
+      <th>Code</th>
+
+      <th class=\\"status-code\\">HTTP Status</th>
+
+      <th>Description</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td>IP_ADDRESS_INVALID</td>
+
+      <td>400 Bad Request</td>
+
+      <td>
+        <p>You have not supplied a valid IPv4 or IPv6
+        address.</p>
+      </td>
+    </tr>
+
+    <tr>
+      <td>IP_ADDRESS_REQUIRED</td>
+
+      <td>400 Bad Request</td>
+
+      <td>
+        <p>You have not supplied an IP address, which is a
+        required field.</p>
+      </td>
+    </tr>
+
+    <tr>
+      <td>IP_ADDRESS_RESERVED</td>
+
+      <td>400 Bad Request</td>
+
+      <td>
+        <p>You have supplied an IP address which belongs to a
+        reserved or private range.</p>
+      </td>
+    </tr>
+
+    <tr>
+      <td>IP_ADDRESS_NOT_FOUND</td>
+
+      <td>404 Not Found</td>
+
+      <td>
+        <p>The supplied IP address is not in the database.</p>
+      </td>
+    </tr>
+
+    <tr>
+      <td>AUTHORIZATION_INVALID</td>
+
+      <td>401 Unauthorized</td>
+
+      <td>
+        <p>You have supplied an invalid <a href=
+        \\"https://www.maxmind.com/en/my_license_key\\">MaxMind account
+        ID and/or license key</a> in the <a href=
+        \\"#Authorization\\">Authorization</a> header.</p>
+      </td>
+    </tr>
+
+    <tr>
+      <td>LICENSE_KEY_REQUIRED</td>
+
+      <td>401 Unauthorized</td>
+
+      <td>
+        <p>You have not supplied a <a href=
+        \\"https://www.maxmind.com/en/my_license_key\\">MaxMind
+        license key</a> in the <a href=
+        \\"#Authorization\\">Authorization</a> header.</p>
+      </td>
+    </tr>
+
+    <tr>
+      <td>ACCOUNT_ID_REQUIRED</td>
+
+      <td>401 Unauthorized</td>
+
+      <td>
+        <p>You have not supplied a <a href=
+        \\"https://www.maxmind.com/en/my_license_key\\">MaxMind account
+        ID</a> in the <a href=\\"#Authorization\\">Authorization</a>
+        header.</p>
+      </td>
+    </tr>
+
+    <tr>
+      <td>INSUFFICIENT_FUNDS</td>
+      <td>402 Payment Required</td>
+      <td>
+        <p>The license key you have provided does not have sufficient funds to use this service. Please <a href=\\"https://www.maxmind.com/en/purchase-minfraud-services\\">purchase more service credits</a>.</p>
+      </td>
+    </tr>
+
+    <tr>
+      <td>PERMISSION_REQUIRED</td>
+
+      <td>403 Forbidden</td>
+
+      <td>
+        <p>You do not have permission to use the service. Please contact <a href=\\"mailto:support@maxmind.com\\">support@maxmind.com</a> for more information.</p>
+      </td>
+    </tr>
+
+    <tr>
+      <td>(none)</td>
+
+      <td>415 Unsupported Media Type</td>
+
+      <td>
+        <p>Your request included a <code>Content-Type</code>
+        header that is not supported. For <code>GET</code>
+        requests, this means the web service cannot return
+        content of that type. For <code>PUT</code> and
+        <code>POST</code> queries, this means the web service
+        cannot parse a request body of that type.</p>
+      </td>
+    </tr>
+
+    <tr>
+      <td>(none)</td>
+
+      <td>503 Service Not Available</td>
+
+      <td>
+        <p>There is a problem with the web service server. You
+        can try this request again later.</p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<h2><span class=\\"ez-toc-section\\" id=\\"Versioning\\"></span><a name=\\"Versioning-21\\" id=
+\\"Versioning-21\\"></a>Versioning<span class=\\"ez-toc-section-end\\"></span></h2>
+
+<p>The GeoIP2 Precision web services use two part versions. Our current
+release is version 2.1. The major version number will remain at 2
+for the foreseeable future and will not change unless we are
+releasing an entirely new product (&#8220;GeoIP3&#8221;).</p>
+
+<p>The minor version will only change if there are breaking
+changes in the web service. A breaking change is one that breaks
+client code that follows the documentation on this page. Breaking
+changes include changing the type of an existing field, deleting
+a field entirely, or changing URIs.</p>
+
+<p>All changes to the web services will be documented in the
+<a href=\\"../release-notes\\">GeoIP2 release notes</a>, whether or
+not the version number is changed.</p>
+
+<p>The following changes are <strong>not</strong> considered to
+be breaking changes and will not be accompanied by a version
+number change:</p>
+
+<ul>
+  <li>Adding a new field, either at the top level of the
+  structure or in one particular object such as the country or
+  city. Client code should be written to allow for new fields to
+  appear.</li>
+
+  <li>Adding new values to enum fields such as
+  <code>user_type</code>. Note that this also applies to fields
+  such as country codes, country subdivision codes, time zones,
+  etc.</li>
+
+  <li>Adding a new language for localized names. We may add
+  additional locale codes in the future.</li>
+
+  <li>Adding or removing error codes, and/or changing the body
+  type for an error. Client code should always check the
+  <code>Content-Type</code> header for any error response. Client
+  code should also be prepared to handle any valid HTTP 4xx or
+  5xx status code.</li>
+
+  <li>Adding a new service. If we add a GeoIP2 Inter-Galactic
+  service, we will use a new path such as
+  <code>/geoip/v2.1/inter-galactic</code>. This should not break
+  any existing client code.</li>
+</ul>
+	</div><!-- .entry-content -->
+	</article><!-- #post-1284 -->
+		</div><!-- #content -->
+			</div><!-- #primary -->
+</div>
+            <div class=\\"row-fluid\\">
+                <footer id=\\"colophon\\" role=\\"contentinfo\\" class=\\"offset3 span9\\">
+                    <hr />
+                                        <div id=\\"page-footer\\" class=\\"clearfix\\">
+                        <div class=\\"menu-footer-container\\"><ul id=\\"menu-footer\\" class=\\"inline\\"><li id=\\"menu-item-1386\\" class=\\"menu-item menu-item-type-custom menu-item-object-custom menu-item-1386\\"><a href=\\"https://www.maxmind.com/en/terms_of_use\\">Terms of Use</a></li>
+<li id=\\"menu-item-1387\\" class=\\"menu-item menu-item-type-custom menu-item-object-custom menu-item-1387\\"><a href=\\"https://www.maxmind.com/en/privacy-policy\\">Privacy Policy</a></li>
+<li id=\\"menu-item-1388\\" class=\\"menu-item menu-item-type-custom menu-item-object-custom menu-item-1388\\"><a href=\\"https://www.maxmind.com/en/contact\\">Contact</a></li>
+<li id=\\"menu-item-1389\\" class=\\"menu-item menu-item-type-custom menu-item-object-custom menu-item-1389\\"><a href=\\"https://blog.maxmind.com/\\">Blog</a></li>
+<li id=\\"menu-item-1390\\" class=\\"menu-item menu-item-type-custom menu-item-object-custom menu-item-1390\\"><a href=\\"https://twitter.com/maxmind\\">Twitter</a></li>
+<li id=\\"menu-item-3544\\" class=\\"menu-item menu-item-type-custom menu-item-object-custom menu-item-3544\\"><a href=\\"https://www.maxmind.com/en/privacy-policy#additional-disclosures-for-california-residents\\">Do Not Sell My Personal Information</a></li>
+<li id=\\"menu-item-3545\\" class=\\"menu-item menu-item-type-custom menu-item-object-custom menu-item-3545\\"><a href=\\"https://www.maxmind.com/en/privacy-policy#california-notice-of-collection\\">Notice of Collection</a></li>
+</ul></div>                        <p>MaxMind, GeoIP, minFraud, and related trademarks are the trademarks of MaxMind, Inc.</p>
+                        <p>Copyright&copy; 2012-2021 MaxMind, Inc. All Rights Reserved.</p>
+                    </div><!-- #page-footer .well .clearfix -->
+                                    </footer><!-- #colophon -->
+            </div>
+                    </div><!-- .container -->
+        <script type='text/javascript' src='https://43jvg82rnbo4fbuxm18it39y-wpengine.netdna-ssl.com/wp-content/themes/dev-site-theme/js/jquery-3.4.1.min.js' id='our-jquery-js'></script>
+<script type='text/javascript' src='https://43jvg82rnbo4fbuxm18it39y-wpengine.netdna-ssl.com/wp-content/themes/dev-site-theme/js/bootstrap.min.js?ver=2.0.3' id='maxmind-bootstrap-js'></script>
+<script type='text/javascript' src='https://43jvg82rnbo4fbuxm18it39y-wpengine.netdna-ssl.com/wp-content/themes/dev-site-theme/js/banner.js?ver=0.0.3' id='banner-js'></script>
+<script type='text/javascript' src='https://43jvg82rnbo4fbuxm18it39y-wpengine.netdna-ssl.com/wp-content/themes/dev-site-theme/js/prism.js?ver=1.0.1' id='prism-js'></script>
+<script type='text/javascript' src='https://43jvg82rnbo4fbuxm18it39y-wpengine.netdna-ssl.com/wp-content/themes/dev-site-theme/js/the-bootstrap.min.js?ver=2.0.1' id='the-bootstrap-js'></script>
+<script type='text/javascript' src='https://43jvg82rnbo4fbuxm18it39y-wpengine.netdna-ssl.com/wp-includes/js/wp-embed.min.js?ver=5.6.2' id='wp-embed-js'></script>
+    </body>
+</html>
+"
+`;
+
 exports[`regression tests https://dev.maxmind.com/minfraud/ regression test 1`] = `
 "<!DOCTYPE html>
 <html class=\\"no-js\\" lang=\\"en-US\\">
