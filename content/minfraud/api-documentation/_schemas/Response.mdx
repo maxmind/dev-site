@@ -77,6 +77,10 @@ import responseJson from '../_examples/response';
   <Property
     linkToSchemaName={'Response | Device'}
     name="device"
+    services={[
+      'insights',
+      'factors',
+    ]}
   >
     This object contains information about the device that MaxMind believes is
     associated with the IP address passed in the request.
@@ -85,6 +89,10 @@ import responseJson from '../_examples/response';
   <Property
     linkToSchemaName={'Response | Email'}
     name="email"
+    services={[
+      'insights',
+      'factors',
+    ]}
   >
     This object contains information about the email address passed in the
     request.
@@ -93,6 +101,10 @@ import responseJson from '../_examples/response';
   <Property
     linkToSchemaName={'Response | Shipping Address'}
     name="shipping_address"
+    services={[
+      'insights',
+      'factors',
+    ]}
   >
     This object contains minFraud response data associated with the shipping
     address. If the shipping address was not provided in the request or could
@@ -102,6 +114,10 @@ import responseJson from '../_examples/response';
   <Property
     linkToSchemaName={'Response | Billing Address'}
     name="billing_address"
+    services={[
+      'insights',
+      'factors',
+    ]}
   >
     This object contains minFraud response data associated with the billing
     address. If the billing address was not provided in the request or could
