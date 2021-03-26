@@ -45,16 +45,23 @@ The `Content-Type` for a successful response varies based on the service as outl
   </tbody>
 </table>
 
-Errors may be returned with the `Content-Type` set to `application/vnd.maxmind.com-error+json; charset=UTF-8; version=2.0`.
-If this is the case, then the body of the response contains a JSON
-document with two keys, code and error. See the [Errors](/minfraud/api-documentation/responses/#errors)
-section for more details.
+Errors may be returned with the `Content-Type` set to 
+`application/vnd.maxmind.com-error+json; charset=UTF-8; version=2.0`.
+If this is the case, then the body of the response contains a JSON document 
+with two keys, code and error. See the 
+[Errors](/minfraud/api-documentation/responses/#errors) section for more 
+details.
 
 A `Content-Length` header will be provided.
 
 ## Bodies
 
-Each service returns data as a JSON document. The document that is returned always consists of an object (aka map or hash). Below are full examples of the JSON body document for the minFraud Score, minFraud Insights, and minFraud Factors services, and a full example of the JSON body document for an error. For detailed explanations of each property within the response body, please refer to the [object reference](#object-reference) section below.
+Each service returns data as a JSON document. The document that is returned 
+always consists of an object (aka map or hash). Below are full examples of the 
+JSON body document for the minFraud Score, minFraud Insights, and minFraud 
+Factors services, and a full example of the JSON body document for an error. 
+For detailed explanations of each property within the response body, please 
+refer to the [object reference](#object-reference) section below.
 
 ### Score Body
 
@@ -147,7 +154,7 @@ to handle any valid HTTP `4xx` or `5xx` status code.
       <td>402 Payment Required</td>
       <td>
         The license key you have provided does not have sufficient funds to use
-        this service. Please [purchase more service credits](https://www.maxmind.com/en/solutions/minfraud-services#buy-now.).
+        this service. Please [purchase more service credits](https://www.maxmind.com/en/solutions/minfraud-services#buy-now).
       </td>
     </tr>
     <tr>
