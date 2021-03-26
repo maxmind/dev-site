@@ -40,52 +40,17 @@ geographically closest to you.
 
 ## Headers
 
-<table>
-  <thead>
-    <tr>
-      <th>Header</th>
-      <th>Notes</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>
-        `Authorization`
-      </td>
-      <td>
-        **Required** – For more details, see
-        [Authorization and Security](#authorization-and-security).
-      </td>
-    </tr>
-    <tr>
-      <td>
-        `Accept`
-      </td>
-      <td>
-        **Optional** – If you do set this header, you must accept any of the
-        following, substituting the appropriate `[SERVICE TYPE]` for either
-        `score`, `factors`, or `insights`:
+The `Authorization` header is always required. See [Authorization and Security](#authorization-and-security) for more details.
 
-        * `application/json`
-        * `application/vnd.maxmind.com-minfraud-[SERVICE TYPE]+json`
-        * `application/vnd.maxmind.com-minfraud-[SERVICE TYPE]+json; charset=UTF-8; version=2.0`
+The `Accept` header for a request is entirely optional. If you do include one, you must accept one of the following, substituting the `[SERVICE-TYPE]` with either `score`, `insights`, or `factors` as appropriate:
 
+* `application/json`
+* `application/vnd.maxmind.com-minfraud-[SERVICE TYPE]+json`
+* application/vnd.maxmind.com-minfraud-[SERVICE TYPE]+json; charset=UTF-8; version=2.0
+ 
+ A request for any other MIME type will result in a `415 Unsupported Media Type` error.
 
-        A request for any other MIME type will result in a `415 Unsupported Media Type` error.
-      </td>
-    </tr>
-    <tr>
-      <td>
-        `Accept-Charset`
-      </td>
-      <td>
-        **Optional** – If you do set this header, you must accept the `UTF-8`
-        character set. If you don't you will receive a `406 Not Acceptable`
-        response, because this data is only available in `UTF-8`.
-      </td>
-    </tr>
-  </tbody>
-</table>
+If you set the `Accept-Charset` header in your client code, you must accept the `UTF-8` character set. If you don't you will receive a `406 Not Acceptable` response.
 
 ## Bodies
 minFraud Score, Factors and Insights share the same request body format. Below
