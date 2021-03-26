@@ -1,6 +1,69 @@
 ---
 draft: false
-title: (todo)
+title: GeoIP2 Domain CSV Database
 ---
 
-(todo)
+import ConversionUtility from './_conversion-utility.mdx';
+import DataPrivacy from './_data-privacy.mdx';
+import FileFormat from './_file-format.mdx';
+import Intro from './_intro.mdx';
+
+<Intro />
+
+## Product Information
+
+To learn more about the GeoIP2 Domain database, including terms and
+pricing, please
+[visit the GeoIP2 Domain Database page](https://www.maxmind.com/en/geoip2-domain-name-database). 
+
+## Data Privacy
+
+<DataPrivacy />
+
+## Zip File
+
+<ZipFileContent product-name="GeoIP2-Domain" />
+
+## CSV File Format
+
+<FileFormat />
+
+### Blocks Files
+
+There are two CSV files for network blocks, one each for IPv4 and IPv6 blocks.
+These are named `GeoIP2-Domain-Blocks-IPv4.csv` and
+`GeoIP2-Domain-Blocks-IPv6.csv` respectively.
+
+<table>
+  <tbody>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+
+    <tr>
+        <td>network</td>
+        <td>IP network as a string</td>
+        <td>
+          This is the IPv4 or IPv6 network in CIDR format such as
+          “2.21.92.0/29” or “2001:4b0::/80”. We offer a utility to convert
+          this column to start/end IPs or start/end integers. See <a
+          href="#conversion-utility">the conversion utility section</a> for
+          details.
+        </td>
+    </tr>
+
+    <tr>
+        <td>domain</td>
+        <td>string</td>
+        <td>
+          The domain associated with the IP address.
+        </td>
+    </tr>
+  </tbody>
+</table>
+
+## Conversion Utility
+
+<ConversionUtility />

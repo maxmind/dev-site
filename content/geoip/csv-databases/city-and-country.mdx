@@ -1,6 +1,117 @@
 ---
 draft: false
-title: (todo)
+title: GeoIP2 City and Country CSV Databases
 ---
 
-(todo)
+import CoordinatesWarning from './_coordinates-warning.mdx';
+import ConversionUtility from './_conversion-utility.mdx';
+import DataPrivacy from './_data-privacy.mdx';
+import FileFormat from './_file-format.mdx';
+import Intro from './_intro.mdx';
+import IPGeolocationUsage from './_ip-geolocation-usage.mdx';
+import ReturnedValuesAsKeys from './_returned-values-as-keys.mdx';
+
+<Intro />
+
+## Product Information
+
+Terms and pricing for the GeoIP2 City and GeoIP2 Country databases may be
+found on our product pages:
+
+* [GeoIP2 City](https://www.maxmind.com/en/geoip2-city)
+* [GeoIP2 Country](https://www.maxmind.com/en/geoip2-country)
+
+## IP Geolocation Usage
+
+<IPGeolocationUsage />
+
+## Data Privacy
+
+<DataPrivacy />
+
+## Zip File
+
+<ZipFileContent product-name="{Product}-{Content}" is-table-excluded={true} />
+
+The downloaded .zip file contains a single directory which in turn contains 13
+files:
+
+<table>
+  <tbody>
+    <tr>
+      <th>Filename</th>
+      <th>Description</th>
+    </tr>
+    <tr>
+      <td>`COPYRIGHT.txt`</td>
+      <td>Copyright statement</td>
+    </tr>
+
+    <tr>
+      <td>`LICENSE.txt`</td>
+      <td>End user license</td>
+    </tr>
+
+    <tr>
+      <td>`README.txt`</td>
+      <td>Information file</td>
+    </tr>
+
+    <tr>
+      <td>`{Product}-{Content}-Blocks-IPv4.csv`</td>
+      <td>CSV file containing data on IPv4 addresses</td>
+    </tr>
+
+    <tr>
+      <td>`{Product}-{Content}-Blocks-IPv6.csv`</td>
+      <td>CSV file containing data on IPv6 addresses</td>
+    </tr>
+
+    <tr>
+      <td>`{Product}-{Content}-Locations-{locale}.csv`</td>
+      <td>Eight CSV files containing data location for each locale code, where `{locale}` can be “de”, "en", “es”, “fr”, “ja”, “pt-BR”, “ru”, and “zh-CN” .</td>
+    </tr>
+  </tbody>
+</table>
+
+## CSV File Format
+
+<FileFormat />
+
+### Blocks Files
+
+There are two CSV files for network blocks, one each for IPv4 and IPv6 blocks.
+These files are named `{Product}-{Content}-Blocks-IPv4.csv` and
+`{Product}-{Content}-Blocks-IPv6.csv` respectively. An example name would be
+"GeoIP2-City-Blocks-IPv4.csv".
+
+[City subset by continent databases](https://www.maxmind.com/en/geoip2-city-database-by-continent)
+blocks files have the same columns as the City database.
+
+<CsvBlockTable />
+
+<CoordinatesWarning />
+
+### Locations Files
+
+The zip file includes one location file for each locale code for which data is
+available. There will always be an "en" file containing a record for every
+`geoname_id` used in the blocks files. Files corresponding to other locales will
+exist and have a record for a `geoname_id` only if data is available. The other
+possible locales are "de", "es", "fr", "ja", "pt-BR", "ru", and "zh-CN".
+
+These files are named `{Product}-{Content}-Locations-{locale}.csv`. An example
+name would be "GeoIP2-City-Locations-en.csv".
+
+[City subset by continent databases](https://www.maxmind.com/en/geoip2-city-database-by-continent)
+blocks files have the same columns as the City database.
+
+<CsvLocationContent />
+
+## Returned Values as Database, Map, Dict, or Hash Keys
+
+<ReturnedValuesAsKeys />
+
+## Conversion Utility
+
+<ConversionUtility />

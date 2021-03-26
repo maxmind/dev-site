@@ -1,6 +1,223 @@
 ---
 draft: false
-title: (todo)
+title: GeoIP2 Enterprise CSV Database
 ---
 
-(todo)
+import CoordinatesWarning from './_coordinates-warning.mdx';
+import ConversionUtility from './_conversion-utility.mdx';
+import DataPrivacy from './_data-privacy.mdx';
+import FileFormat from './_file-format.mdx';
+import Intro from './_intro.mdx';
+import IPGeolocationUsage from './_ip-geolocation-usage.mdx';
+import ReturnedValuesAsKeys from './_returned-values-as-keys.mdx';
+
+<Intro />
+
+## Product Information
+
+To learn more about the GeoIP2 Enterprise database, please visit the [GeoIP2
+Enterprise Database
+page](https://www.maxmind.com/en/solutions/geoip2-enterprise-product-suite/enterprise-database).
+If you are interested in purchasing the database, please [contact our
+Enterprise Business
+team](https://www.maxmind.com/en/solutions/geoip2-enterprise-product-suite#signUp)
+for assistance.
+
+## IP Geolocation Usage
+
+<IPGeolocationUsage />
+
+## Data Privacy
+
+<DataPrivacy />
+
+## Zip File
+
+<ZipFileContent product-name="GeoIP2-Enterprise" is-table-excluded={true} />
+
+The files in thie zip archive are:
+
+<table>
+  <tbody>
+    <tr>
+      <th>Filename</th>
+      <th>Description</th>
+    </tr>
+    <tr>
+      <td>`COPYRIGHT.txt`</td>
+      <td>Copyright statement</td>
+    </tr>
+
+    <tr>
+      <td>`LICENSE.txt`</td>
+      <td>End user license</td>
+    </tr>
+
+    <tr>
+      <td>`GeoIP2-Enterprise-Blocks-IPv4.CSV`</td>
+      <td>CSV file containing data on IPv4 addresses</td>
+    </tr>
+
+    <tr>
+      <td>`GeoIP2-Enterprise-Blocks-IPv6.CSV`</td>
+      <td>CSV file containing data on IPv6 addresses</td>
+    </tr>
+
+    <tr>
+      <td>`GeoIP2-Enterprise-ISP.CSV`</td>
+      <td>CSV file containing data on ISPs. This may be cross referenced with the various blocks files using the shared `isp_id` key.</td>
+    </tr>
+
+    <tr>
+      <td>`GeoIP2-Enterprise-Locations-XX.CSV`</td>
+      <td>CSV files containing data on locations. This may be cross referenced with the various blocks files using the shared `geoname_id` key.</td>
+    </tr>
+  </tbody>
+</table>
+
+### Example File
+
+This example file contains a CSV containing records for just the IP address
+67.248.44.118 -
+[GeoIP2-Enterprise-CSV_Example](/GeoIP2-Enterprise-CSV_Example.zip)
+
+## CSV File Format
+
+<FileFormat />
+
+### Blocks Files
+
+There are two CSV files for network blocks, one each for IPv4 and IPv6 blocks.
+These files are named `GeoIP2-Enterprise-Blocks-IPv4.csv` and
+`GeoIP2-Enterprise-Blocks-IPv6.csv` respectively.
+
+<CsvBlockTable is-enterprise={true} />
+
+<CoordinatesWarning />
+
+### ISP File
+
+A single CSV file, called `GeoIP2-Enterprise-ISP.csv`, contains information on
+ISPs.
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>isp_id</td>
+      <td>integer</td>
+      <td>
+        The identifier for the ISP.  This key can be cross referenced
+        with the `isp_id<` in the Blocks files.
+      </td>
+    </tr>
+    <tr>
+      <td>isp</td>
+      <td>string</td>
+      <td>
+          The name of the ISP associated with the IP address. 
+      </td>
+    </tr>
+    <tr>
+      <td>organization</td>
+      <td>string</td>
+      <td>
+          The name of the organization associated with the IP address.
+      </td>
+    </tr>
+    <tr>
+      <td>autonomous_system_number</td>
+      <td>integer</td>
+      <td>
+        The ASN assigned to the ISP for routing.
+      </td>
+    </tr>
+    <tr>
+      <td>autonomous_system_organization</td>
+      <td>string</td>
+      <td>
+        The name of the autonomous system organization.
+      </td>
+    </tr>
+    <tr>
+      <td>connection_type</td>
+      <td>string</td>
+      <td>
+        <p>The type of connection. This will be one of the following values.</p>
+        <ul>
+          <li><strong>Dialup</strong></li>
+          <li><strong>Cable/DSL</strong></li>
+          <li><strong>Corporate</strong></li>
+          <li><strong>Cellular</strong></li>
+        </ul>
+      </td>
+    </tr>
+   <tr>
+      <td>user_type</td>
+      <td>string</td>
+      <td>
+        <p>The user type associated with the IP address. This
+        will be one of the following values.</p>
+
+        <ul>
+          <li><strong>business</strong></li>
+
+          <li><strong>cafe</strong></li>
+
+          <li><strong>cellular</strong></li>
+
+          <li><strong>college</strong></li>
+
+          <li><strong>content_delivery_network</strong></li>
+
+          <li><strong>dialup</strong></li>
+
+          <li><strong>government</strong></li>
+
+          <li><strong>hosting</strong></li>
+
+          <li><strong>library</strong></li>
+
+          <li><strong>military</strong></li>
+
+          <li><strong>residential</strong></li>
+
+          <li><strong>router</strong></li>
+
+          <li><strong>school</strong></li>
+
+          <li><strong>search_engine_spider</strong></li>
+
+          <li><strong>traveler</strong></li>
+        </ul>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+### Locations Files
+
+The zip file includes one location file for each locale code for which data is
+available. There will always be an "en" file containing a record for every
+`geoname_id` used in the blocks files. Files corresponding to other locales will
+exist and have a record for a `geoname_id` only if data is available. The other
+possible locales are "de", "es", "fr", "ja", "pt-BR", "ru", and "zh-CN".
+
+These files are named `GeoIP2-Enterprise-Locations-{locale}.csv`. An example
+name would be "GeoIP2-City-Locations-en.csv".
+
+<CsvLocationTable is-enterprise={true} />
+
+## Returned Values as Database, Map, Dict, or Hash Keys
+
+<ReturnedValuesAsKeys />
+
+## Conversion Utility
+
+<ConversionUtility />

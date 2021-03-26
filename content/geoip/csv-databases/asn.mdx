@@ -1,6 +1,72 @@
 ---
 draft: false
-title: (todo)
+title: GeoLite2 ASN CSV Database
 ---
 
-(todo)
+import ConversionUtility from './_conversion-utility.mdx';
+import DataPrivacy from './_data-privacy.mdx';
+import FileFormat from './_file-format.mdx';
+import Intro from './_intro.mdx';
+
+<Intro />
+
+## Data Privacy
+
+<DataPrivacy />
+
+## Zip File
+
+<ZipFileContent product-name="GeoLite2-ASN" />
+
+## CSV File Format
+
+<FileFormat />
+
+### Blocks Files
+
+There are two CSV files for network blocks, one each for IPv4 and IPv6 blocks.
+These are named `GeoLite2-ASN-Blocks-IPv4.csv` and
+`GeoLite2-ASN-Blocks-IPv6.csv` respectively.
+
+<table>
+  <tbody>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+
+    <tr>
+        <td>network</td>
+        <td>IP network as a string</td>
+        <td>
+          This is the IPv4 or IPv6 network in CIDR format such as
+          “2.21.92.0/29” or “2001:4b0::/80”. We offer a utility to convert
+          this column to start/end IPs or start/end integers. See <a
+          href="#conversion-utility">the conversion utility section</a> for
+          details.
+        </td>
+    </tr>
+
+    <tr>
+        <td>autonomous_system_number</td>
+        <td>string</td>
+        <td>
+          The <a href="https://en.wikipedia.org/wiki/Autonomous_system_(Internet)">autonomous system</a> number associated with the IP address.
+        </td>
+    </tr>
+
+    <tr>
+        <td>autonomous_system_organization</td>
+        <td>string</td>
+        <td>
+          The organization associated with the registered autonomous system
+          number for the IP address.
+        </td>
+    </tr>
+  </tbody>
+</table>
+
+## Conversion Utility
+
+<ConversionUtility />
