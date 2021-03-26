@@ -193,8 +193,8 @@ longer than the longest valid representation of an IPv6 address.
       </tr>
       <tr>
          <td>emailMD5</td>
-         <td>string&nbsp;(32)</td>
-         <td>The customer’s email address. This field must be either be a valid email address or the MD5 of the lowercased email address. <strong><em>Important:</em></strong> if using the MD5 hash, please be sure to <a href="/minfraud/normalizing-email-addresses-for-minfraud">normalize it</a> before calculating its MD5 hash.</td>
+         <td>string (32)</td>
+         <td>The customer’s email address. This field must be a valid email address or the MD5 of the lowercased email address. <strong><em>Important:</em></strong> if using the MD5 hash, please be sure to <a href="/minfraud/normalizing-email-addresses-for-minfraud">normalize it</a> before calculating its MD5 hash.</td>
       </tr>
       <tr>
          <td>usernameMD5</td>
@@ -830,7 +830,7 @@ current when they signed up for the service. The latest version is 1.3.
                <li><strong>IP_NOT_FOUND</strong> – This error will be returned if the IP address is not valid, if it is not public, or if it is not in our GeoIP database.</li>
                <li><strong>MAX_REQUESTS_REACHED</strong> – This is returned when your account is out of queries.</li>
                <li><strong>LICENSE_REQUIRED</strong> – This is returned if you do not provide a license key at all.</li>
-               <li><strong>PERMISSION_REQUIRED</strong> – This is returned if you do not have permission to use the service. Please contact <a href="mailto:support@maxmind.com">support@maxmind.com</a> for more information.</li>
+               <li><strong>PERMISSION_REQUIRED</strong> – This is returned if you do not have permission to use the service. Please contact support@maxmind.com for more information.</li>
             </ul>
 
             The possible warning codes are:

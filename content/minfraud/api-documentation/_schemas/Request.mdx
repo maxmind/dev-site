@@ -56,35 +56,52 @@ import requestJson from '../_examples/request';
   <Property
     linkToSchemaName={'Request | Email'}
     name="email"
-  />
+  >
+    This object contains information about the email address of the end-user
+    who initiated the event.
+  </Property>
 
   <Property
     linkToSchemaName={'Request | Billing'}
     name="billing"
-  />
+  >
+    This object contains the billing address and contact information provided by
+    the end-user who initiated the event.
+  </Property>
 
   <Property
     linkToSchemaName={'Request | Shipping'}
     name="shipping"
-  />
+  >
+    This object contains the shipping address and contact information provided
+    by the end-user who initiated the event.
+  </Property>
 
   <Property
     linkToSchemaName={'Request | Payment'}
     name="payment"
-  />
+  >
+    This object contains information from and about the payment process that
+    was used for the event.
+  </Property>
 
   <Property
     linkToSchemaName={'Request | Credit Card'}
     name="credit_card"
-  />
+  >
+    This object contains information provided by the end-user and the payment
+    processor about the credit card used for the for the event.
+  </Property>
 
   <Property
     linkToSchemaName={'Request | Order'}
     name="order"
-  />
+  >
+    This object contains information about the order associated with the event.
+  </Property>
 
   <Property
-    linkToSchemaName="Request | Shopping Cart | Item"
+    linkToSchemaName="Request | Shopping Cart"
     name="shopping_cart"
   >
     This is an array of shopping cart item objects. A shopping cart should

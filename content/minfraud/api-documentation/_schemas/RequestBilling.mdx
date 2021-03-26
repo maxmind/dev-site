@@ -6,6 +6,9 @@ import requestJson from '../_examples/request';
   name="Request | Billing"
   services="*"
 >
+  This object contains the billing address and contact information provided by
+  the end-user who initiated the event.
+
   <Property
     name="first_name"
     tags={{
@@ -90,7 +93,7 @@ import requestJson from '../_examples/request';
   </Property>
 
   <Property
-    name="postal"
+    name="phone_number"
     tags={{
       'Max Length': 255,
     }}
