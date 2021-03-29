@@ -1,61 +1,73 @@
 ---
 draft: false
-title: CSV Databases
-subtitle: (todo)
+title: GeoIP2 CSV Databases
 icon: CsvIcon
 ---
 
 import { FaFileAlt as CsvIcon } from 'react-icons/fa';
 
-(todo)
+In addition to our MaxMind DB binary format, we also offer GeoIP2 databases in
+a CSV format suitable for importing into a SQL database. Choose a CSV database
+to get details of the format of the CSV files.
 
 <LinkGroupContainer>
   <LinkGroup isCompact heading="CSV Databases">
     <LinkGroupCard
-      description="(todo)"
-      heading="City and Country Databases"
+      description="Determine the country, subdivisions (regions), city, and
+      postal code associated with IPv4 and IPv6 addresses worldwide."
+      heading="GeoIP2 City and Country CSV Databases"
       icon={CsvIcon}
       to="/geoip/csv-databases/city-and-country"
     />
 
     <LinkGroupCard
-      description="(todo)"
-      heading="Enterprise Database"
+      description="Determine geolocation data such as country, region, state,
+      city, ZIP/postal code, and additional intelligence such as confidence
+      factors, ISP, domain, and connection type."
+      heading="GeoIP2 Enterprise CSV Database"
       icon={CsvIcon}
       to="/geoip/csv-databases/enterprise"
     />
 
     <LinkGroupCard
-      description="(todo)"
-      heading="Anonymous IP Database"
+      description="MaxMind's GeoIP2 Anonymous IP CSV database helps protect your
+      business by identifying proxy, VPN, hosting, and other anonymous IP
+      addresses."
+      heading="GeoIP2 Anonymous IP CSV Database"
       icon={CsvIcon}
       to="/geoip/csv-databases/anonymous-ip"
     />
 
     <LinkGroupCard
-      description="(todo)"
-      heading="ASN Database"
+      description="Look up the autonomous system number and autonomous system
+      organization associated with IPv4 and IPv6 addresses"
+      heading="GeoLite2 ASN CSV Database"
       icon={CsvIcon}
       to="/geoip/csv-databases/asn"
     />
 
     <LinkGroupCard
-      description="(todo)"
-      heading="Connection Type Database"
+      description="Determine the connection type of your visitors based on
+      their IP address. The database identifies dial-up, cellular, cable/DSL,
+      and corporate connection speeds."
+      heading="GeoIP2 Connection Type CSV Database"
       icon={CsvIcon}
       to="/geoip/csv-databases/connection-type"
     />
 
     <LinkGroupCard
-      description="(todo)"
-      heading="Domain Database"
+      description="Look up the second level domain names associated with IPv4
+      and IPv6 addresses."
+      heading="GeoIP2 Domain CSV Database"
       icon={CsvIcon}
       to="/geoip/csv-databases/domain"
     />
 
     <LinkGroupCard
-      description="(todo)"
-      heading="Connection Type Database"
+      description="Determine the Internet Service Provider, organization name,
+      and autonomous system organization and number associated with an IP
+      address."
+      heading="GeoIP2 ISP CSV Database"
       icon={CsvIcon}
       to="/geoip/csv-databases/isp"
     />
