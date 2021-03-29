@@ -3,6 +3,7 @@ import * as React from 'react';
 
 import {
   a as A,
+  strong as Strong,
   table as Table,
   td as Td,
   th as Th,
@@ -133,9 +134,10 @@ const CsvBlockTable: React.FC<ICsvBlockTable> = (props) => {
           <Td>is_anonymous_proxy</Td>
           <Td>boolean</Td>
           <Td>
-            <strong>Deprecated.</strong>
+            <Strong>Deprecated.</Strong>
             {' '}
             Please see our
+            {' '}
             <A
               href="https://www.maxmind.com/en/geoip2-anonymous-ip-database"
               rel="nofollow noopener noreferrer"
@@ -158,7 +160,7 @@ const CsvBlockTable: React.FC<ICsvBlockTable> = (props) => {
           <Td>is_satellite_provider</Td>
           <Td>boolean</Td>
           <Td>
-            <strong>Deprecated.</strong>
+            <Strong>Deprecated.</Strong>
           </Td>
           { !isEnterprise && (
             <Td>

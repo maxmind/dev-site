@@ -4,6 +4,7 @@ import * as React from 'react';
 import {
   a as A,
   inlineCode as Code,
+  strong as Strong,
   table as Table,
   td as Td,
   th as Th,
@@ -73,37 +74,37 @@ const CsvLocationTable: React.FC<ICsvLocationTable> = (props) => {
             <p>The continent code for this location. Possible codes are:</p>
             <ul>
               <li>
-                <strong>AF</strong>
+                <Strong>AF</Strong>
                 {' '}
                 - Africa
               </li>
               <li>
-                <strong>AN</strong>
+                <Strong>AN</Strong>
                 {' '}
                 - Antarctica
               </li>
               <li>
-                <strong>AS</strong>
+                <Strong>AS</Strong>
                 {' '}
                 - Asia
               </li>
               <li>
-                <strong>EU</strong>
+                <Strong>EU</Strong>
                 {' '}
                 - Europe
               </li>
               <li>
-                <strong>NA</strong>
+                <Strong>NA</Strong>
                 {' '}
                 - North America
               </li>
               <li>
-                <strong>OC</strong>
+                <Strong>OC</Strong>
                 {' '}
                 - Oceania
               </li>
               <li>
-                <strong>SA</strong>
+                <Strong>SA</Strong>
                 {' '}
                 - South America
               </li>
@@ -180,6 +181,7 @@ const CsvLocationTable: React.FC<ICsvLocationTable> = (props) => {
             >
               ISO 3166-2
             </A>
+            {' '}
             code for the first level region associated with the IP address.
             Some countries have two levels of subdivisions, in which case this
             is the least specific. For example, in the United Kingdom this will
@@ -222,6 +224,7 @@ const CsvLocationTable: React.FC<ICsvLocationTable> = (props) => {
             >
               ISO 3166-2
             </A>
+            {' '}
             code for the second level region associated with the IP address.
             Some countries have two levels of subdivisions, in which case this
             is the most specific. For example, in the United Kingdom this will
