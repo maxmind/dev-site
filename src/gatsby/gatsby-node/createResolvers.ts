@@ -10,7 +10,7 @@ const genMDX = require('gatsby-plugin-mdx/utils/gen-mdx');
 import generateTableOfContents, { createImportPathMap } from '../../utils/get-toc-items';
 
 const geoipImportPathMap = createImportPathMap(
-  `${process.cwd()}/content/geoip/precision-web-services/_schemas`
+  `${process.cwd()}/content/geoip/docs/web-services/_schemas`
 );
 
 const minFraudImportPathMap = createImportPathMap(

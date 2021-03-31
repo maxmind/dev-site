@@ -107,15 +107,15 @@ const navigation: IItem[] = [
         secondaryItems: [
           {
             title: 'Requests',
-            to: '/geoip/precision-web-services/requests',
+            to: '/geoip/docs/web-services/requests',
           },
           {
             title: 'Responses',
-            to: '/geoip/precision-web-services/responses',
+            to: '/geoip/docs/web-services/responses',
           },
         ],
-        title: 'Precision Web Services',
-        to: '/geoip/precision-web-services',
+        title: 'Web Services Documentation',
+        to: '/geoip/docs/web-services',
       },
       {
         secondaryItems: [
