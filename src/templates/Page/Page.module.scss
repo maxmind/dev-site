@@ -6,14 +6,13 @@
 
 .header {
   background: var(--mm-color-background);
-  padding: var(--mm-spacing) 0;
   z-index: 5;
+  @include variables.max-width;
 }
 
 .heading {
   margin: 0;
-  padding: 0 0 calc(var(--mm-spacing) / 4);
-  @include variables.max-width;
+  padding: 0 0 var(--mm-spacing);
 }
 
 .aside {
@@ -167,6 +166,7 @@
 
   .header {
     grid-area: header;
+    padding: 0 var(--mm-spacing) 0;
   }
 
   .header ~ .content > *:first-child {
@@ -175,11 +175,13 @@
 
   .aside {
     grid-area: aside;
-    @include variables.max-width;
+    max-width: 800px;
+    width: 100%;
   }
 
   .content {
     grid-area: content;
+    padding: 0 var(--mm-spacing);
   }
 
   .lastUpdated {
