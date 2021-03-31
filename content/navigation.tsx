@@ -121,35 +121,35 @@ const navigation: IItem[] = [
         secondaryItems: [
           {
             title: 'City and Country Databases',
-            to: '/geoip/csv-databases/city-and-country',
+            to: '/geoip/docs/databases/city-and-country',
           },
           {
             title: 'Enterprise Database',
-            to: '/geoip/csv-databases/enterprise',
+            to: '/geoip/docs/databases/enterprise',
           },
           {
             title: 'Anonymous IP Database',
-            to: '/geoip/csv-databases/anonymous-ip',
+            to: '/geoip/docs/databases/anonymous-ip',
           },
           {
             title: 'ASN Database',
-            to: '/geoip/csv-databases/asn',
+            to: '/geoip/docs/databases/asn',
           },
           {
             title: 'Connection Type Database',
-            to: '/geoip/csv-databases/connection-type',
+            to: '/geoip/docs/databases/connection-type',
           },
           {
             title: 'Domain Database',
-            to: '/geoip/csv-databases/domain',
+            to: '/geoip/docs/databases/domain',
           },
           {
             title: 'ISP Database',
-            to: '/geoip/csv-databases/isp',
+            to: '/geoip/docs/databases/isp',
           },
         ],
-        title: 'CSV Databases',
-        to: '/geoip/csv-databases',
+        title: 'Database Documentation',
+        to: '/geoip/docs/databases',
       },
       {
         hasDivider: true,

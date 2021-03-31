@@ -18,37 +18,37 @@
     "public": "public",
     "redirects": [
       {
-        "destination": "/geoip/csv-databases/anonymous-ip",
+        "destination": "/geoip/docs/databases/anonymous-ip",
         "source": "/geoip/geoip2/geoip2-anonymous-ip-csv-database/",
         "type": 302
       },
       {
-        "destination": "/geoip/csv-databases/asn",
+        "destination": "/geoip/docs/databases/asn",
         "source": "/geoip/geoip2/geolite2-asn-csv-database/",
         "type": 302
       },
       {
-        "destination": "/geoip/csv-databases/city-and-country",
+        "destination": "/geoip/docs/databases/city-and-country",
         "source": "/geoip/geoip2/geoip2-city-country-csv-databases",
         "type": 302
       },
       {
-        "destination": "/geoip/csv-databases/connection-type",
+        "destination": "/geoip/docs/databases/connection-type",
         "source": "/geoip/geoip2/geoip2-connection-type-csv-database/",
         "type": 302
       },
       {
-        "destination": "/geoip/csv-databases/domain",
+        "destination": "/geoip/docs/databases/domain",
         "source": "/geoip/geoip2/geoip2-domain-csv-database/",
         "type": 302
       },
       {
-        "destination": "/geoip/csv-databases/enterprise",
+        "destination": "/geoip/docs/databases/enterprise",
         "source": "/geoip/geoip2/geoip2-enterprise-csv-database/",
         "type": 302
       },
       {
-        "destination": "/geoip/csv-databases/isp",
+        "destination": "/geoip/docs/databases/isp",
         "source": "/geoip/geoip2/geoip2-isp-csv-database/",
         "type": 302
       },
