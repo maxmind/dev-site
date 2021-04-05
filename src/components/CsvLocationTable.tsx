@@ -10,7 +10,7 @@ import {
   th as Th,
   tr as Tr,
 } from './Mdx';
-import { renderTag } from './Schema/ServiceTags';
+import ServiceTag from './Schema/ServiceTag';
 
 interface ICsvLocationTable {
   isEnterprise?: boolean;
@@ -48,8 +48,12 @@ const CsvLocationTable: React.FC<ICsvLocationTable> = (props) => {
           </Td>
           { !isEnterprise && (
             <Td>
-              {renderTag('Country')}
-              {renderTag('City')}
+              <ServiceTag
+                text="Country"
+              />
+              <ServiceTag
+                text="City"
+              />
             </Td>
           )}
         </Tr>
@@ -62,8 +66,12 @@ const CsvLocationTable: React.FC<ICsvLocationTable> = (props) => {
           </Td>
           { !isEnterprise && (
             <Td>
-              {renderTag('Country')}
-              {renderTag('City')}
+              <ServiceTag
+                text="Country"
+              />
+              <ServiceTag
+                text="City"
+              />
             </Td>
           )}
         </Tr>
@@ -112,8 +120,12 @@ const CsvLocationTable: React.FC<ICsvLocationTable> = (props) => {
           </Td>
           { !isEnterprise && (
             <Td>
-              {renderTag('Country')}
-              {renderTag('City')}
+              <ServiceTag
+                text="Country"
+              />
+              <ServiceTag
+                text="City"
+              />
             </Td>
           )}
         </Tr>
@@ -125,8 +137,12 @@ const CsvLocationTable: React.FC<ICsvLocationTable> = (props) => {
           </Td>
           { !isEnterprise && (
             <Td>
-              {renderTag('Country')}
-              {renderTag('City')}
+              <ServiceTag
+                text="Country"
+              />
+              <ServiceTag
+                text="City"
+              />
             </Td>
           )}
         </Tr>
@@ -149,8 +165,12 @@ const CsvLocationTable: React.FC<ICsvLocationTable> = (props) => {
           </Td>
           { !isEnterprise && (
             <Td>
-              {renderTag('Country')}
-              {renderTag('City')}
+              <ServiceTag
+                text="Country"
+              />
+              <ServiceTag
+                text="City"
+              />
             </Td>
           )}
         </Tr>
@@ -162,8 +182,12 @@ const CsvLocationTable: React.FC<ICsvLocationTable> = (props) => {
           </Td>
           { !isEnterprise && (
             <Td>
-              {renderTag('Country')}
-              {renderTag('City')}
+              <ServiceTag
+                text="Country"
+              />
+              <ServiceTag
+                text="City"
+              />
             </Td>
           )}
         </Tr>
@@ -190,8 +214,13 @@ const CsvLocationTable: React.FC<ICsvLocationTable> = (props) => {
           </Td>
           { !isEnterprise && (
             <Td>
-              {renderTag('Country', true)}
-              {renderTag('City')}
+              <ServiceTag
+                isDisabled
+                text="Country"
+              />
+              <ServiceTag
+                text="City"
+              />
             </Td>
           )}
         </Tr>
@@ -205,8 +234,13 @@ const CsvLocationTable: React.FC<ICsvLocationTable> = (props) => {
           </Td>
           { !isEnterprise && (
             <Td>
-              {renderTag('Country', true)}
-              {renderTag('City')}
+              <ServiceTag
+                isDisabled
+                text="Country"
+              />
+              <ServiceTag
+                text="City"
+              />
             </Td>
           )}
         </Tr>
@@ -233,8 +267,13 @@ const CsvLocationTable: React.FC<ICsvLocationTable> = (props) => {
           </Td>
           { !isEnterprise && (
             <Td>
-              {renderTag('Country', true)}
-              {renderTag('City')}
+              <ServiceTag
+                isDisabled
+                text="Country"
+              />
+              <ServiceTag
+                text="City"
+              />
             </Td>
           )}
         </Tr>
@@ -248,8 +287,13 @@ const CsvLocationTable: React.FC<ICsvLocationTable> = (props) => {
           </Td>
           { !isEnterprise && (
             <Td>
-              {renderTag('Country', true)}
-              {renderTag('City')}
+              <ServiceTag
+                isDisabled
+                text="Country"
+              />
+              <ServiceTag
+                text="City"
+              />
             </Td>
           )}
         </Tr>
@@ -261,8 +305,13 @@ const CsvLocationTable: React.FC<ICsvLocationTable> = (props) => {
           </Td>
           { !isEnterprise && (
             <Td>
-              {renderTag('Country', true)}
-              {renderTag('City')}
+              <ServiceTag
+                isDisabled
+                text="Country"
+              />
+              <ServiceTag
+                text="City"
+              />
             </Td>
           )}
         </Tr>
@@ -293,8 +342,13 @@ const CsvLocationTable: React.FC<ICsvLocationTable> = (props) => {
           </Td>
           { !isEnterprise && (
             <Td>
-              {renderTag('Country', true)}
-              {renderTag('City')}
+              <ServiceTag
+                isDisabled
+                text="Country"
+              />
+              <ServiceTag
+                text="City"
+              />
             </Td>
           )}
         </Tr>
@@ -315,8 +369,13 @@ const CsvLocationTable: React.FC<ICsvLocationTable> = (props) => {
           </Td>
           { !isEnterprise && (
             <Td>
-              {renderTag('Country', true)}
-              {renderTag('City')}
+              <ServiceTag
+                isDisabled
+                text="Country"
+              />
+              <ServiceTag
+                text="City"
+              />
             </Td>
           )}
         </Tr>
