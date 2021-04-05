@@ -2,8 +2,11 @@ import cheerio from 'cheerio';
 import crypto from 'crypto';
 import fs from 'fs';
 import { GatsbySSR, ReplaceRendererArgs } from 'gatsby';
+import GithubSlugger from 'github-slugger';
 import React from 'react';
 import { renderToString } from 'react-dom/server';
+
+const slugger = new GithubSlugger();
 
 export const replaceRenderer: GatsbySSR['replaceRenderer'] = (
   props: ReplaceRendererArgs
@@ -36,12 +39,10 @@ export const replaceRenderer: GatsbySSR['replaceRenderer'] = (
 
   const cssFileNameBase = (props.pathname as string)
     .replace(/^\/|\/$/g, '')
-    .replace('/', '--')
-    .replace('/', '.')
     .replace('.html', '');
 
   const cssFileName =
-    `inline---${cssFileNameBase || 'index'}.${filenameHash}.css`;
+    `inline---${slugger.slug(cssFileNameBase) || 'index'}.${filenameHash}.css`;
 
   const integrityHash = crypto
     .createHash('sha512')
