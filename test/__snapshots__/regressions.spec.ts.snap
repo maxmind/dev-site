@@ -450,7 +450,7 @@ Click the help icon above to learn more.
 		<button class=\\"btn btn-primary\\" name=\\"submit\\" type=\\"submit\\"><i class=\\"icon-search icon-white\\"></i></button>
 	</div>
 </form>
-</aside><aside id=\\"ezw_tco-2\\" class=\\"widget clearfix ez-toc\\"><div class=\\"ez-toc-widget-container ez-toc-v2_0_16 ez-toc-widget counter-hierarchy\\">
+</aside><aside id=\\"ezw_tco-2\\" class=\\"widget clearfix ez-toc\\"><div class=\\"ez-toc-widget-container ez-toc-v2_0_17 ez-toc-widget counter-hierarchy\\">
 
 					<h4 class=\\"widget-title\\">
 					<span class=\\"ez-toc-title-container\\">
@@ -2785,7 +2785,7 @@ Click the help icon above to learn more.
 		<button class=\\"btn btn-primary\\" name=\\"submit\\" type=\\"submit\\"><i class=\\"icon-search icon-white\\"></i></button>
 	</div>
 </form>
-</aside><aside id=\\"ezw_tco-2\\" class=\\"widget clearfix ez-toc\\"><div class=\\"ez-toc-widget-container ez-toc-v2_0_16 ez-toc-widget counter-hierarchy\\">
+</aside><aside id=\\"ezw_tco-2\\" class=\\"widget clearfix ez-toc\\"><div class=\\"ez-toc-widget-container ez-toc-v2_0_17 ez-toc-widget counter-hierarchy\\">
 
 					<h4 class=\\"widget-title\\">
 					<span class=\\"ez-toc-title-container\\">
@@ -3371,6 +3371,7 @@ For more information about setting dispositions from the Transaction Details pag
           <li>bluesnap</li>
           <li>bpoint</li>
           <li>braintree</li>
+          <li>cardknox</li>
           <li>cardpay</li>
           <li>cashfree</li>
           <li>ccavenue</li>
@@ -3384,6 +3385,8 @@ For more information about setting dispositions from the Transaction Details pag
           <li>compropago</li>
           <li>concept_payments</li>
           <li>conekta</li>
+          <li>creditguard</li>
+          <li>credorax</li>
           <li>ct_payments</li>
           <li>cuentadigital</li>
           <li>curopayments</li>
@@ -3393,6 +3396,7 @@ For more information about setting dispositions from the Transaction Details pag
           <li>datacash</li>
           <li>dibs</li>
           <li>digital_river</li>
+          <li>dlocal</li>
           <li>dotpay</li>
           <li>ebs</li>
           <li>ecomm365</li>
@@ -3429,6 +3433,7 @@ For more information about setting dispositions from the Transaction Details pag
           <li>nmi</li>
           <li>oceanpayment</li>
           <li>oney</li>
+          <li>onpay</li>
           <li>openpaymx</li>
           <li>optimal_payments</li>
           <li>orangepay</li>
@@ -3464,6 +3469,7 @@ For more information about setting dispositions from the Transaction Details pag
           <li>rede</li>
           <li>redpagos</li>
           <li>rewardspay</li>
+          <li>safecharge</li>
           <li>sagepay</li>
           <li>securetrading</li>
           <li>simplify_commerce</li>
