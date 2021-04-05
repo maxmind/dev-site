@@ -14,12 +14,13 @@ import Tag from './Tag';
 
 import * as styles from './Schema.module.scss';
 
-interface ISchema {
+export interface ISchema {
   children: React.ReactElement | React.ReactElement[];
   json: Json;
   jsonPointer: string;
   name: string;
-  services?: MinFraudServices;
+  productFamily: ProductFamily;
+  services?: GeoIpServices | MinFraudServices;
   type?: SchemaType;
 }
 
@@ -31,6 +32,7 @@ const Schema: React.FC<ISchema> = (props) => {
     json,
     jsonPointer,
     name,
+    productFamily,
     services,
     type,
   } = props;
@@ -93,6 +95,7 @@ const Schema: React.FC<ISchema> = (props) => {
             id: schemaId,
             json,
             jsonPointer,
+            productFamily,
             services,
           }}
         >
@@ -117,8 +120,7 @@ const Schema: React.FC<ISchema> = (props) => {
   );
 };
 
-
-Schema.propTypes = {
+export const schemaPropTypes = {
   children: PropTypes.oneOfType([
     PropTypes.element,
     PropTypes.arrayOf(
@@ -128,6 +130,18 @@ Schema.propTypes = {
   json: PropTypes.any.isRequired,
   jsonPointer: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
+  type: PropTypes.oneOf([
+    'array<object>',
+    'object',
+  ] as const),
+};
+
+Schema.propTypes = {
+  ...schemaPropTypes,
+  productFamily: PropTypes.oneOf([
+    'geoip',
+    'minfraud',
+  ] as const).isRequired,
   services: PropTypes.oneOfType([
     PropTypes.oneOf([
       '*',
@@ -139,11 +153,14 @@ Schema.propTypes = {
         'insights',
       ] as const).isRequired,
     ),
+    PropTypes.arrayOf(
+      PropTypes.oneOf([
+        'country',
+        'city',
+        'insights',
+      ] as const).isRequired,
+    ),
   ]),
-  type: PropTypes.oneOf([
-    'array<object>',
-    'object',
-  ] as const),
 };
 
 export default Schema;

@@ -1,6 +1,6 @@
 import responseJson from '../_examples/response';
 
-<Schema
+<MinFraudSchema
   json={responseJson.credit_card.issuer}
   jsonPointer="/credit_card/issuer"
   name="Response | Credit Card | Issuer"
@@ -49,4 +49,4 @@ import responseJson from '../_examples/response';
     provided in the request or if MaxMind does not have a phone number
     associated with the IIN.
   </Property>
-</Schema>
+</MinFraudSchema>

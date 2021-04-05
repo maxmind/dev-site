@@ -74,6 +74,7 @@ describe('<Property />', () => {
           }}
           jsonPointer="/"
           name="Foo"
+          productFamily="minfraud"
         >
           <Property
             name={name}
@@ -321,15 +322,54 @@ describe('<Property />', () => {
       });
     });
 
-    it('lists service tags', () => {
-      const component = withContext(
-        <Property
-          name="foo"
-          services="*"
-        />
-      );
+    describe('lists service tags', () => {
+      it('for `geoip` product family', () => {
+        const component = global.mountWithRouter(
+          <Schema
+            json={{
+              bar: 'bar',
+              baz: {
+                baz: 'baz',
+              },
+              foo: 'foo',
+            }}
+            jsonPointer="/"
+            name="Foo"
+            productFamily="geoip"
+          >
+            <Property
+              name="Bar"
+              services="*"
+            />
+          </Schema>
+        );
 
-      expect(component.find('ServiceTags')).toExist();
+        expect(component.find('GeoIpServiceTags')).toExist();
+      });
+
+      it('for `minfraud` product family', () => {
+        const component = global.mountWithRouter(
+          <Schema
+            json={{
+              bar: 'bar',
+              baz: {
+                baz: 'baz',
+              },
+              foo: 'foo',
+            }}
+            jsonPointer="/"
+            name="Foo"
+            productFamily="minfraud"
+          >
+            <Property
+              name="Bar"
+              services="*"
+            />
+          </Schema>
+        );
+
+        expect(component.find('MinFraudServiceTags')).toExist();
+      });
     });
 
     describe('schema tags', () => {

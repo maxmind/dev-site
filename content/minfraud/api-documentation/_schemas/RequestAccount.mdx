@@ -1,6 +1,6 @@
 import requestJson from '../_examples/request';
 
-<Schema
+<MinFraudSchema
   json={requestJson.account}
   jsonPointer="/account"
   name="Request | Account"
@@ -25,10 +25,10 @@ import requestJson from '../_examples/request';
   <Property
     name="username_md5"
     tags={{
-      'Max Length': 255,
+      'Max Length': 32,
     }}
   >
-    An MD5 hash as a hexadecimal string of the username or login name
-    associated with the account.
+    An MD5 hash as a hexadecimal string of the username or login name associated
+    with the account.
   </Property>
-</Schema>
+</MinFraudSchema>

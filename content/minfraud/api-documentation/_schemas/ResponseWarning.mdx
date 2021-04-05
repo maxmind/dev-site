@@ -1,6 +1,6 @@
 import responseJson from '../_examples/response';
 
-<Schema
+<MinFraudSchema
   json={responseJson.warnings[0]}
   jsonPointer="/warnings/{n}"
   name="Response | Warning"
@@ -155,4 +155,4 @@ import responseJson from '../_examples/response';
     the billing city, this would be `/billing/city`. If it was for the price in
     the second shopping cart item, it would be `/shopping_cart/1/price`
   </Property>
-</Schema>
+</MinFraudSchema>

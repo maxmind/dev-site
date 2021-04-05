@@ -156,11 +156,6 @@
   background: var(--mm-color-background);
 }
 
-.service-list {
-  display: block;
-  margin-top: calc(var(--mm-spacing) / 4);
-}
-
 @include variables.breakpoint('sm') {
   .tags {
     display: grid;

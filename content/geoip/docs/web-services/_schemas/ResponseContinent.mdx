@@ -1,0 +1,41 @@
+import responseJson from '../_examples/geoip';
+
+<GeoIpSchema
+  json={responseJson.continent}
+  jsonPointer="/continent"
+  name="Response | Continent"
+  services="*"
+>
+  A JSON object containing information about the continent associated with the
+  IP address.
+
+  <Property
+    name="code"
+  >
+    A two-character code for the continent associated with the IP address. The
+    possible codes are:
+
+    * `AF` – Africa
+    * `AN` – Antarctica
+    * `AS` – Asia
+    * `EU` – Europe
+    * `NA` – North America
+    * `OC` – Oceania
+    * `SA` – South America
+  </Property>
+
+  <Property
+    name="geoname_id"
+    type="integer"
+  >
+    A unique identifier for the continent as specified by
+    [GeoNames](https://www.geonames.org/).
+  </Property>
+
+  <Property
+    name="names"
+  >
+    A map from locale codes, such as `en`, to the localized names for the
+    feature.
+  </Property>
+</GeoIpSchema>

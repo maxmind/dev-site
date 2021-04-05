@@ -14,6 +14,11 @@
   margin-left: 0;
 }
 
+.tag:last-of-type {
+  margin-right: 0;
+}
+
+
 .tag__disabled {
   background: #eee;
   border: 1px solid #ddd;

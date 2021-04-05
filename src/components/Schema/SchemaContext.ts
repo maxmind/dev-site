@@ -4,7 +4,8 @@ export type SchemaContextProps = {
   id: string;
   json: Json;
   jsonPointer: string;
-  services?: MinFraudServices;
+  productFamily?: ProductFamily;
+  services?: GeoIpServices | MinFraudServices;
 }
 
 export default React.createContext<SchemaContextProps>({

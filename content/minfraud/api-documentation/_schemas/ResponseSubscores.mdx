@@ -1,6 +1,6 @@
 import responseJson from '../_examples/response';
 
-<Schema
+<MinFraudSchema
   json={responseJson.subscores}
   jsonPointer="/subscores"
   name="Response | Subscores"
@@ -250,4 +250,4 @@ import responseJson from '../_examples/response';
     The risk associated with the local time of day of the transaction in the IP
     address location. If present, this is a value in the range 0.01 to 99.
   </Property>
-</Schema>
+</MinFraudSchema>

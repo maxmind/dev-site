@@ -6,9 +6,10 @@ import PropTypes from 'prop-types';
 import * as React from 'react';
 
 import Example from '../Example';
+import GeoIpServiceTags from './GeoIpServiceTags';
+import MinFraudServiceTags from './MinFraudServiceTags';
 import PropertyValues from './PropertyValues';
 import SchemaContext  from './SchemaContext';
-import ServiceTags from './ServiceTags';
 import Tag from './Tag';
 
 import * as styles from './Property.module.scss';
@@ -21,7 +22,7 @@ export interface IProperty {
   linkToSchemaName?: string;
   name: string;
   schemaId?: string;
-  services?: MinFraudServices;
+  services?: GeoIpServices | MinFraudServices;
   tags?: Record<string, TagValue>;
   type?: SchemaPropertyType;
 }
@@ -158,9 +159,15 @@ const Property: React.FC<IProperty> = (props) => {
               ))}
           </div>
 
-          {serviceTags && (
-            <ServiceTags
-              services={serviceTags}
+          {serviceTags && schema.productFamily === 'geoip' && (
+            <GeoIpServiceTags
+              services={serviceTags as GeoIpServices}
+            />
+          )}
+
+          {serviceTags && schema.productFamily === 'minfraud' &&  (
+            <MinFraudServiceTags
+              services={serviceTags as MinFraudServices}
             />
           )}
         </div>
@@ -185,6 +192,13 @@ Property.propTypes = {
       PropTypes.oneOf([
         'score',
         'factors',
+        'insights',
+      ] as const).isRequired,
+    ),
+    PropTypes.arrayOf(
+      PropTypes.oneOf([
+        'country',
+        'city',
         'insights',
       ] as const).isRequired,
     ),
