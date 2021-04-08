@@ -99,6 +99,10 @@ const navigation: IItem[] = [
         to: '/geoip/updating-databases',
       },
       {
+        title: 'GeoLite2 Free Geolocation Data',
+        to: '/geoip/geolite2-free-geolocation-data',
+      },
+      {
         title: 'Privacy Exclusions API',
         to: '/geoip/privacy-exclusions-api',
       },
