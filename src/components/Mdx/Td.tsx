@@ -17,7 +17,7 @@ const Td: React.FC<React.HTMLProps<HTMLTableDataCellElement>> = ({
 );
 
 Td.propTypes = {
-  children: PropTypes.node.isRequired,
+  children: PropTypes.node,
   className: PropTypes.string,
 };
 

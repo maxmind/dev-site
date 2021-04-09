@@ -1,21 +1,24 @@
 .td {
   border-top: 1px solid #eee;
   color: var(--mm-color-primary-text);
-  font-size: 12px;
-  line-height: 18px;
-  padding: 8px 16px;
+  font-size: 12px !important;
+  line-height: 18px !important;
+  padding: 16px;
 }
 
 .td * {
-  font-size: 12px;
-  line-height: 18px;
   max-width: initial !important;
   min-width: initial !important;
   width: auto !important;
 }
 
-.td > * {
+.td > *:not([class^='Tag-module--']) {
+  font-size: 12px;
+  line-height: 2em;
   margin: calc(var(--mm-spacing) / 4) 0;
+  max-width: initial !important;
+  min-width: initial !important;
+  width: auto !important;
 }
 
 .td > *:first-child {
