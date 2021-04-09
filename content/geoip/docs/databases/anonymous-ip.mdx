@@ -1,20 +1,44 @@
 ---
 draft: false
-title: GeoIP2 Anonymous IP CSV Database
+title: GeoIP2 Anonymous IP Databases
 ---
 
+import BinaryDatabases from './_binary-databases.mdx';
 import ConversionUtility from './_conversion-utility.mdx';
+import CsvDatabasesIntro from './_csv-databases-intro.mdx';
 import FileFormat from './_file-format.mdx';
-import Intro from './_intro.mdx';
-
-<Intro />
+import Warnings from './_warnings.mdx';
 
 
-## Zip File
+MaxMind's GeoIP2 Anonymous IP CSV database helps protect your business by
+identifying proxy, VPN, hosting, and other anonymous IP addresses.
+
+To learn more about the GeoIP2 Anonymous IP database, please visit the
+[GeoIP2 Anonymous IP Database page](https://www.maxmind.com/en/solutions/geoip2-enterprise-product-suite/anonymous-ip-database).
+If you are interested in purchasing the database, please
+[contact our Enterprise Business team](https://www.maxmind.com/en/solutions/geoip2-enterprise-product-suite#signUp)
+for assistance.
+
+<Warnings />
+
+## Binary Database
+
+<BinaryDatabases />
+
+| Language or Framework | Documentation                                                                      | Example                                                                                      |
+| --------------------- | ---------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------- |
+| .NET (C#)             | [GitHub - Database Usage](https://github.com/maxmind/GeoIP2-dotnet#database-usage) | [Anonymous IP Example](https://github.com/maxmind/GeoIP2-dotnet#anonymous-ip-database)       |
+| Java                  | [GitHub - Database Usage](https://github.com/maxmind/GeoIP2-java#database-usage)   | [Anonymous IP Example](https://github.com/maxmind/GeoIP2-java#anonymous-ip)                  |
+| Node.js               | [GitHub - Database Usage](https://github.com/maxmind/GeoIP2-node#database-usage)   | [Anonymous IP Example](https://github.com/maxmind/GeoIP2-node#anonymous-ip-database-example) |
+| PHP                   | [GitHub - Database Reader](https://github.com/maxmind/GeoIP2-php#database-reader)  | [Anonymous IP Example](https://github.com/maxmind/GeoIP2-php#anonymous-ip-example)           |
+| Python                | [GitHub - Database Usage](https://github.com/maxmind/GeoIP2-python#database-usage) | [Anonymous IP Example](https://github.com/maxmind/GeoIP2-python#anonymous-ip-database)       |
+| Ruby                  | [GitHub - Database Reader](https://github.com/maxmind/GeoIP2-ruby#database-reader) | [Anonymous IP Example](https://github.com/maxmind/GeoIP2-ruby#anonymous-ip-example)          |
+
+## CSV Database
+
+<CsvDatabasesIntro />
 
 <ZipFileContent product-name="GeoIP2-Anonymous-IP" />
-
-## CSV File Format
 
 <FileFormat />
 
@@ -96,15 +120,6 @@ These are named `GeoIP2-Anonymous-IP-Blocks-IPv4.csv` and
   </tbody>
 </table>
 
-## Conversion Utility
+### Conversion Utility
 
 <ConversionUtility />
-
-## Product Information
-
-To learn more about the GeoIP2 Anonymous IP database, please visit the [GeoIP2
-Anonymous IP Database
-page](https://www.maxmind.com/en/solutions/geoip2-enterprise-product-suite/anonymous-ip-database).
-If you are interested in purchasing the database, please
-[contact our Enterprise Business team](https://www.maxmind.com/en/solutions/geoip2-enterprise-product-suite#signUp)
-for assistance.

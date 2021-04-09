@@ -120,31 +120,31 @@ const navigation: IItem[] = [
       {
         secondaryItems: [
           {
-            title: 'City and Country Databases',
+            title: 'City and Country',
             to: '/geoip/docs/databases/city-and-country',
           },
           {
-            title: 'Enterprise Database',
+            title: 'Enterprise',
             to: '/geoip/docs/databases/enterprise',
           },
           {
-            title: 'Anonymous IP Database',
+            title: 'Anonymous IP',
             to: '/geoip/docs/databases/anonymous-ip',
           },
           {
-            title: 'ASN Database',
+            title: 'ASN',
             to: '/geoip/docs/databases/asn',
           },
           {
-            title: 'Connection Type Database',
+            title: 'Connection Type',
             to: '/geoip/docs/databases/connection-type',
           },
           {
-            title: 'Domain Database',
+            title: 'Domain',
             to: '/geoip/docs/databases/domain',
           },
           {
-            title: 'ISP Database',
+            title: 'ISP',
             to: '/geoip/docs/databases/isp',
           },
         ],
