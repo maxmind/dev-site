@@ -3,11 +3,14 @@ import * as React from 'react';
 
 import {
   a as A,
+  inlineCode as Code,
+  li as Li,
   strong as Strong,
   table as Table,
   td as Td,
   th as Th,
   tr as Tr,
+  ul as Ul,
 } from './Mdx';
 import ServiceTag from './Schema/ServiceTag';
 
@@ -197,10 +200,30 @@ const CsvBlockTable: React.FC<ICsvBlockTable> = (props) => {
           <Td>postal_code</Td>
           <Td>string</Td>
           <Td>
-            A postal code close to the user&apos;s location. We return the
-            first 3 characters for Canadian postal codes. We return the first
-            2-4 characters (outward code) for postal codes in the United
-            Kingdom.
+            A postal code close to the user&apos;s location. For the following
+            countries, we return partial postal codes with the number of
+            characters indicated below:
+
+            <Ul>
+              <Li>United States: 5</Li>
+              <Li>Canada: 3</Li>
+              <Li>United Kingdom: 2-4</Li>
+              <Li>Brazil: 5</Li>
+              <Li>Ireland: 3</Li>
+              <Li>
+                Japan: 7 (specified for the first 6. The last digit defaults to
+                1)
+              </Li>
+              <Li>Netherlands: 4</Li>
+              <Li>
+                Portugal: 7 (accurate for the first 4. The last 3 often defaults
+                to
+                {' '}
+                <Code>-001</Code>
+                )
+              </Li>
+              <Li>Singapore: 2</Li>
+            </Ul>
           </Td>
           { !isEnterprise && (
             <Td>
