@@ -16,7 +16,7 @@ official client libraries.
 
 ## Implementation
 
-MaxMind offers and highly recommends using official client libraries to access
+MaxMind offers and highly recommends using [official client libraries](evaluate-a-transaction/#links-to-maxmind-client-apis) to access
 the Report Transation API. If you cannot or do not wish to use our client
 libraries, please review our
 [minFraud Report Transaction API Documentation](#api-documentation) for details
@@ -267,8 +267,11 @@ your
 [MaxMind account ID](https://www.maxmind.com/en/accounts/current/license-key).
 The password is your
 [MaxMind license key](https://www.maxmind.com/en/accounts/current/license-key).
-You must be approved for a trial or purchase credit for use with our web
-services in order to receive an account ID and license key.
+
+<Alert type="warning">
+  You must be approved for a trial or purchase credit for use with our web
+  services in order to receive an account ID and license key.
+</Alert>
 
 We use
 [basic HTTP authentication](https://en.wikipedia.org/wiki/Basic_access_authentication).
@@ -278,6 +281,10 @@ service via HTTP, you will receive a `403 Forbidden` HTTP response.
 
 We require TLS 1.2 or greater for all requests to our servers to keep your data
 secure.
+
+### Request Headers
+
+The `Content-Type` header should always be `application/json`.
 
 ### Request Body
 
@@ -294,10 +301,6 @@ following keys (key names are case-sensitive):
 | **minfraud_id**     | string (36) | *Optional.* A UUID that identifies a minFraud Score, minFraud Insights, or minFraud Factors request. This ID is returned at `/id` in the response. This field is not required, but you are encouraged to provide it if the request was made to one of these services.           |
 | **notes**           | string      | *Optional.* Your notes on the fraud tag associated with the transaction. We manually review many reported transactions to improve our scoring for you so any additional details to help us understand context are helpful.                                                      |
 | **transaction_id**  | string      | *Optional.* The transaction ID you originally passed to minFraud. This field is not required, but you are encouraged to provide it or the transaction’s `maxmind_id` or `minfraud_id`.                                                                                          |
-
-### Request Headers
-
-The `Content-Type` header should always be `application/json`.
 
 ### Response
 
