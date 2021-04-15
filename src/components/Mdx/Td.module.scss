@@ -12,7 +12,7 @@
   width: auto !important;
 }
 
-.td > *:not([class^='Tag-module--']) {
+.td *:not([class^='Tag-module--']) {
   font-size: 12px;
   line-height: 2em;
   margin: calc(var(--mm-spacing) / 4) 0;
