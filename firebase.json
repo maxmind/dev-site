@@ -53,6 +53,11 @@
         "type": 302
       },
       {
+        "destination": "/geoip/geolite2-free-geolocation-data",
+        "source": "/geoip/geoip2/geolite2/",
+        "type": 302
+      },
+      {
         "destination": "/geoip/geolocate-an-ip/databases",
         "source": "/geoip/geoip2/downloadable",
         "type": 302

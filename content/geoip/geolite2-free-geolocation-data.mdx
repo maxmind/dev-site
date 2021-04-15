@@ -1,0 +1,98 @@
+---
+draft: false
+title: GeoLite2 Free Geolocation Data
+---
+
+GeoLite2 databases are free IP geolocation databases comparable to, but less
+accurate than, [MaxMind’s GeoIP2
+databases](https://www.maxmind.com/en/geoip2-databases). The [GeoLite2 Country,
+City, and ASN
+databases](/pdf-files/GeoLite2-IP-MetaData-Databases-Comparison-Chart.pdf) are
+updated weekly, every Tuesday. GeoLite2 data is also available as a web service
+in the [GeoLite2 Country and GeoLite2 City web
+services](GeoLite2-and-GeoIP2-Precision-Web-Services-Comparison.pdf) (users are
+limited to 1000 IP address lookups per service per day).
+
+## IP Geolocation Usage
+
+IP geolocation is inherently imprecise. Locations are often near the center of
+the population. Any location provided by a GeoIP database should not be used
+to identify a particular address or household.
+
+Use the Accuracy Radius as an indication of geolocation accuracy for the
+latitude and longitude coordinates we return for an IP address. The actual
+location of the IP address is likely within the area defined by this radius and
+the latitude and longitude coordinates.
+
+You can compare accuracy of the GeoLite2 data and MaxMind's paid GeoIP2
+products by selecting a country on our [GeoIP2 City Accuracy
+page](https://www.maxmind.com/en/geoip2-city-accuracy-comparison).
+
+## Accessing GeoLite2 Free Geolocation Data
+
+<Alert type="info">
+To receive download access to GeoLite2 databases or query access to GeoLite2
+web services at no charge, [sign up for a GeoLite2
+account](https://www.maxmind.com/en/geolite2/signup)
+</Alert>
+
+Once you’ve set up an account, login to your [account
+portal](https://www.maxmind.com/en/account/login) and select “Download
+Databases” to access the databases, or generate a license key to begin querying
+the web services (see more information in the [Integration](#integration)
+section below). You may also be interested in our guide to [Getting Started
+with GeoLite2](https://support.maxmind.com/getting-started-with-geolite2/).
+
+## Integration
+
+GeoLite2 databases and web services use nearly the same integration steps as
+our paid GeoIP2 databases and web services.  In fact, our client API libraries
+can be used for both GeoIP2 and GeoLite2 products, making transitioning from
+the free GeoLite2 product line to the paid GeoIP2 product line extremely easy.
+
+### Databases
+
+See our [Database Documentation
+page](/geoip/docs/databases#official-api-clients) for a list of available APIs.
+GeoIP2 APIs may be used with GeoLite2 binary databases (MMDB).
+
+### Web services 
+
+Web services. See our [Web Services Documentation
+page](/geoip/docs/web-services) for a list of available web
+service APIs. GeoIP2 Precision APIs may be used with the GeoLite2 web services.
+[GeoLite2 web service URIs can be found here](/geoip/docs/web-services/requests#geolite2-endpoints).
+
+You can also review our brief tutorial on [how to integrate the GeoLite2 City
+web service using PHP on our
+blog](https://blog.maxmind.com/2021/01/11/integrating-maxminds-free-and-paid-ip-geolocation-web-services-in-php/)
+
+## License
+The [GeoLite2 end-user license
+agreement](https://www.maxmind.com/en/geolite2/eula) incorporates components of
+the [Creative Commons Attribution-ShareAlike 4.0 International
+License](https://creativecommons.org/licenses/by-sa/4.0/). The attribution
+requirement may be met by including the following in all advertising and
+documentation mentioning features of or use of GeoLite2 data:
+
+```html
+This product includes GeoLite2 data created by MaxMind, available from
+<a href="https://www.maxmind.com">https://www.maxmind.com</a>.
+```
+
+## Support
+
+MaxMind does not provide official support for the free GeoLite2 web services or
+databases. If you have questions about the GeoLite2 web services or databases,
+or GeoIP2 APIs, please see [stackoverflow’s GeoIP questions and
+answers](https://stackoverflow.com/questions/tagged/geoip) or our [GeoLite
+FAQ](https://support.maxmind.com/geolite-faq/).
+
+## GeoLite2 Commercial Redistribution
+We also offer redistribution licenses for GeoLite2 databases that allow you to
+package the databases with your commercial products without the need for
+attribution. For more information, please [visit the GeoLite2 Commercial
+Redistribution
+page](https://www.maxmind.com/en/geolite2-commercial-redistribution).
+
+
