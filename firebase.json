@@ -18,6 +18,41 @@
     "public": "public",
     "redirects": [
       {
+        "destination": "/geoip/docs/databases/anonymous-ip",
+        "source": "/geoip/geoip2/geoip2-anonymous-ip-csv-database/",
+        "type": 302
+      },
+      {
+        "destination": "/geoip/docs/databases/asn",
+        "source": "/geoip/geoip2/geolite2-asn-csv-database/",
+        "type": 302
+      },
+      {
+        "destination": "/geoip/docs/databases/city-and-country",
+        "source": "/geoip/geoip2/geoip2-city-country-csv-databases",
+        "type": 302
+      },
+      {
+        "destination": "/geoip/docs/databases/connection-type",
+        "source": "/geoip/geoip2/geoip2-connection-type-csv-database/",
+        "type": 302
+      },
+      {
+        "destination": "/geoip/docs/databases/domain",
+        "source": "/geoip/geoip2/geoip2-domain-csv-database/",
+        "type": 302
+      },
+      {
+        "destination": "/geoip/docs/databases/enterprise",
+        "source": "/geoip/geoip2/geoip2-enterprise-csv-database/",
+        "type": 302
+      },
+      {
+        "destination": "/geoip/docs/databases/isp",
+        "source": "/geoip/geoip2/geoip2-isp-csv-database/",
+        "type": 302
+      },
+      {
         "destination": "/geoip/geolocate-an-ip/databases",
         "source": "/geoip/geoip2/downloadable",
         "type": 302

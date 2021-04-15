@@ -120,36 +120,36 @@ const navigation: IItem[] = [
       {
         secondaryItems: [
           {
-            title: 'City and Country Databases',
-            to: '/geoip/csv-databases/city-and-country',
+            title: 'City and Country',
+            to: '/geoip/docs/databases/city-and-country',
           },
           {
-            title: 'Enterprise Database',
-            to: '/geoip/csv-databases/enterprise',
+            title: 'Enterprise',
+            to: '/geoip/docs/databases/enterprise',
           },
           {
-            title: 'Anonymous IP Database',
-            to: '/geoip/csv-databases/anonymous-ip',
+            title: 'Anonymous IP',
+            to: '/geoip/docs/databases/anonymous-ip',
           },
           {
-            title: 'ASN Database',
-            to: '/geoip/csv-databases/asn',
+            title: 'ASN',
+            to: '/geoip/docs/databases/asn',
           },
           {
-            title: 'Connection Type Database',
-            to: '/geoip/csv-databases/connection-type',
+            title: 'Connection Type',
+            to: '/geoip/docs/databases/connection-type',
           },
           {
-            title: 'Domain Database',
-            to: '/geoip/csv-databases/domain',
+            title: 'Domain',
+            to: '/geoip/docs/databases/domain',
           },
           {
-            title: 'ISP Database',
-            to: '/geoip/csv-databases/isp',
+            title: 'ISP',
+            to: '/geoip/docs/databases/isp',
           },
         ],
-        title: 'CSV Databases',
-        to: '/geoip/csv-databases',
+        title: 'Database Documentation',
+        to: '/geoip/docs/databases',
       },
       {
         hasDivider: true,

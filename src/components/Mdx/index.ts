@@ -12,6 +12,8 @@ export { default as ReleaseNote } from '../ReleaseNote';
 
 export { default as a } from './A';
 export { default as blockquote } from './Blockquote';
+export { default as CsvBlockTable } from '../CsvBlockTable';
+export { default as CsvLocationTable } from '../CsvLocationTable';
 export { default as inlineCode } from './Code';
 export { default as del } from './Del';
 export { default as em } from './Em';
@@ -34,3 +36,4 @@ export { default as th } from './Th';
 export { default as tr } from './Tr';
 export { default as thead } from './Thead';
 export { default as ul } from './Ul';
+export { default as ZipFileContent } from '../ZipFileContent';
