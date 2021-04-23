@@ -14,7 +14,12 @@ const THESE_PLUGINS_MUST_COME_LAST = [
     options: {
       directives: {
         // eslint-disable-next-line quotes
-        'connect-src': "'self' www.googleapis.com",
+        'connect-src': "'self' www.googleapis.com www.google-analytics.com",
+        // eslint-disable-next-line quotes
+        'img-src': "'self' data: www.google-analytics.com",
+        'script-src':
+        // eslint-disable-next-line quotes
+          "'self' www.googletagmanager.com www.google-analytics.com",
       },
     },
     resolve: 'gatsby-plugin-csp',
@@ -144,6 +149,14 @@ export default {
         `,
       },
       resolve: 'gatsby-plugin-feed',
+    },
+    {
+      options: {
+        trackingIds: [
+          'UA-171943-3',
+        ],
+      },
+      resolve: 'gatsby-plugin-google-gtag',
     },
     // {
     //   options: {
