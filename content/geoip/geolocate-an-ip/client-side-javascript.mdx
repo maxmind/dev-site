@@ -11,7 +11,8 @@ successfully calling the web services. Additionally, there may be unexpected
 usage spikes which you may want to monitor, due to moments of high traffic to
 your website(s).
 
-We highly recommend using a server-side integration, as it is more secure and
+We highly recommend using a [server-side 
+integration](/geoip/geolocate-an-ip/web-services), as it is more secure and
 more robust than a client-side integration.
 
 ## Implementation
@@ -59,7 +60,7 @@ All of the functions take the same 3 arguments:
 * If successful, this function calls the `onSuccess` callback. The
   first parameter passed to the callback contains an object matching the output
   of one of MaxMind’s [Precision web service API
-  responses](https://dev.maxmind.com/geoip/geoip2/web-services/).
+  responses](/geoip/docs/web-services/responses).
 
   In addition to the attributes listed in the web services API docs, the object
   also has a `most_specific_subdivision` property that provides access to the
@@ -144,15 +145,11 @@ A successful response consists of a single JavaScript object. That object
 contains a set of key/value pairs, where the keys are things like `country` and
 `traits`, and the values are objects or arrays of objects.
 
-While our REST API is documented as omitting keys, for the JavaScript API, we
-add missing arrays and objects. This makes it much simpler to work with the
+While our REST API is documented as omitting missing keys, we add blank arrays and objects in the JavaScript API. This makes it much simpler to work with the
 response, as you will not need to check whether the data structure exists
 before using it.
 
-Wherever a property’s value could be an object or array, we will add an empty
-object or array as needed. For example, if you call the `city()` method and the
-response from the MaxMind server has no `city` key at all, it will end up being
-filled in as:
+Wherever a missing property’s value could be an object or array, we will add an empty object or array as needed. For example, if you call the `city()` method and the response from the MaxMind server has no `city` key at all, it will end up being filled in as:
 
 ```json
 {

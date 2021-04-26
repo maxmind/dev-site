@@ -5,7 +5,7 @@ title: GeoLite2 Free Geolocation Data
 
 import {
   FaUserCheck as SignUpIcon,
-  FaUnlockAlt as LoginIcon,
+  FaKey as LicenseKeyIcon,
 } from 'react-icons/fa';
 
 GeoLite2 databases are free IP geolocation databases comparable to, but less
@@ -15,8 +15,7 @@ City, and ASN
 databases](/pdf-files/GeoLite2-IP-MetaData-Databases-Comparison-Chart.pdf) are
 updated weekly, every Tuesday. GeoLite2 data is also available as a web service
 in the [GeoLite2 Country and GeoLite2 City web
-services](GeoLite2-and-GeoIP2-Precision-Web-Services-Comparison.pdf) (users are
-limited to 1000 IP address lookups per service per day).
+services](GeoLite2-and-GeoIP2-Precision-Web-Services-Comparison.pdf). Users of the GeoLite2 web services are limited to 1000 IP address lookups per service per day.
 
 ## Accessing GeoLite2 Free Geolocation Data
 
@@ -32,18 +31,16 @@ query the GeoLite2 web services.
       to="https://www.maxmind.com/en/geolite2/signup"
     />
     <LinkGroupCard
-      description="Download databases or generate a license key to query the web services."
-      heading="Log in to your Account Portal"
-      icon={LoginIcon}
-      to="https://www.maxmind.com/en/account/login"
+      description="License keys are used to query the web services and authenticate the GeoIP Update program."
+      heading="Generate a License Key"
+      icon={LicenseKeyIcon}
+      to="https://www.maxmind.com/en/accounts/current/license-key"
     />
   </LinkGroup>
 </LinkGroupContainer>
 
 From the side menu in your account portal, you can select [“Download 
-Files”](https://www.maxmind.com/en/accounts/current/geoip/downloads), or
-[“Manage License
-Keys”](https://www.maxmind.com/en/accounts/current/license-key) to generate a license key and begin querying the web services.
+Files”](https://www.maxmind.com/en/accounts/current/geoip/downloads) to download GeoLite2 databases in binary or CSV format. You can select [“Manage License Keys”](https://www.maxmind.com/en/accounts/current/license-key) to generate a license key, which can be used to automate GeoLite2 binary database downloads with the [GeoIP Update](/geoip/updating-databases/#using-geoip-update) program or query the web services.
 
 For more information about using GeoLite2, see our [section on 
 integration](#integration) below.
@@ -81,7 +78,7 @@ GeoIP2 APIs may be used with GeoLite2 binary databases (MMDB).
 
 ### Web services 
 
-See our [Web Services Documentation page](/geoip/docs/web-services) for a list of available web service APIs. GeoIP2 Precision APIs may be used with the GeoLite2 web services by changing the hostname to the appropriate [GeoLite2 web service URI](/geoip/docs/web-services/requests#geolite2-endpoints). Using the wrong host will result in a [permission 
+See our [Web Services Documentation page](/geoip/docs/web-services#official-api-clients) for a list of available web service APIs. GeoIP2 Precision APIs may be used with the GeoLite2 web services by changing the hostname to the appropriate [GeoLite2 web service URI](/geoip/docs/web-services/requests#geolite2-endpoints). Using the wrong host will result in a [permission 
 error](https://support.maxmind.com/geolite-faq/general/why-am-i-getting-a-permission-error-when-querying-the-geolite2-web-services/).
 
 You can also review our brief tutorial on [how to integrate the GeoLite2 City
@@ -115,5 +112,3 @@ package the databases with your commercial products without the need for
 attribution. For more information, please [visit the GeoLite2 Commercial
 Redistribution
 page](https://www.maxmind.com/en/geolite2-commercial-redistribution).
-
-
