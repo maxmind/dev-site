@@ -7,7 +7,7 @@ icon: GeoIPIcon
 
 import {
   FaArchive as LegacyIcon,
-  FaBook as ApiReferenceIcon,
+  FaCloud as ApiReferenceIcon,
   FaClipboardList as ReleaseNotesIcon,
   FaCloud as WebServicesIcon,
   FaDatabase as DatabasesIcon,
@@ -55,6 +55,13 @@ databases.
     />
 
     <LinkGroupCard
+        description="Detailed documentation of GeoIP2 and GeoLite2 database usage."
+        heading="Database Documentation"
+        icon={DatabasesIcon}
+        to="/geoip/docs/databases"
+    />
+
+    <LinkGroupCard
       description="Review GeoIP2 release notes to understand changes to the GeoIP2 API."
       heading="Release Notes"
       icon={ReleaseNotesIcon}
@@ -62,10 +69,10 @@ databases.
     />
 
     <LinkGroupCard
-      description="Review GeoIP2 release notes to understand changes to the GeoIP2 API."
+      description="Consult our Support Center for answers to frequently asked questions about using GeoIP."
       heading="Frequently Asked Questions"
       icon={FaqIcon}
-      to="#"
+      to="https://support.maxmind.com/geoip-faq/"
     />
 
     <LinkGroupCard

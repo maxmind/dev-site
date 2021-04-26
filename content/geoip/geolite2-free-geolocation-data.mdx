@@ -3,6 +3,11 @@ draft: false
 title: GeoLite2 Free Geolocation Data
 ---
 
+import {
+  FaUserCheck as SignUpIcon,
+  FaUnlockAlt as LoginIcon,
+} from 'react-icons/fa';
+
 GeoLite2 databases are free IP geolocation databases comparable to, but less
 accurate than, [MaxMind’s GeoIP2
 databases](https://www.maxmind.com/en/geoip2-databases). The [GeoLite2 Country,
@@ -12,6 +17,39 @@ updated weekly, every Tuesday. GeoLite2 data is also available as a web service
 in the [GeoLite2 Country and GeoLite2 City web
 services](GeoLite2-and-GeoIP2-Precision-Web-Services-Comparison.pdf) (users are
 limited to 1000 IP address lookups per service per day).
+
+## Accessing GeoLite2 Free Geolocation Data
+
+You will need a free GeoLite2 account to download the GeoLite2 databases or to
+query the GeoLite2 web services.
+
+<LinkGroupContainer>
+  <LinkGroup>
+    <LinkGroupCard
+      description="Receive download access to GeoLite2 databases or query access to GeoLite2 web services at no charge."
+      heading="Sign Up for GeoLite2"
+      icon={SignUpIcon}
+      to="https://www.maxmind.com/en/geolite2/signup"
+    />
+    <LinkGroupCard
+      description="Download databases or generate a license key to query the web services."
+      heading="Log in to your Account Portal"
+      icon={LoginIcon}
+      to="https://www.maxmind.com/en/account/login"
+    />
+  </LinkGroup>
+</LinkGroupContainer>
+
+From the side menu in your account portal, you can select [“Download 
+Files”](https://www.maxmind.com/en/accounts/current/geoip/downloads), or
+[“Manage License
+Keys”](https://www.maxmind.com/en/accounts/current/license-key) to generate a license key and begin querying the web services.
+
+For more information about using GeoLite2, see our [section on 
+integration](#integration) below.
+
+You may also be interested in our guide to [Getting Started with 
+GeoLite2](https://support.maxmind.com/getting-started-with-geolite2/).
 
 ## IP Geolocation Usage
 
@@ -27,21 +65,6 @@ the latitude and longitude coordinates.
 You can compare accuracy of the GeoLite2 data and MaxMind's paid GeoIP2
 products by selecting a country on our [GeoIP2 City Accuracy
 page](https://www.maxmind.com/en/geoip2-city-accuracy-comparison).
-
-## Accessing GeoLite2 Free Geolocation Data
-
-<Alert type="info">
-To receive download access to GeoLite2 databases or query access to GeoLite2
-web services at no charge, [sign up for a GeoLite2
-account](https://www.maxmind.com/en/geolite2/signup)
-</Alert>
-
-Once you’ve set up an account, login to your [account
-portal](https://www.maxmind.com/en/account/login) and select “Download
-Databases” to access the databases, or generate a license key to begin querying
-the web services (see more information in the [Integration](#integration)
-section below). You may also be interested in our guide to [Getting Started
-with GeoLite2](https://support.maxmind.com/getting-started-with-geolite2/).
 
 ## Integration
 
