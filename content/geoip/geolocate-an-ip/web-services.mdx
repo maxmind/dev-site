@@ -1,6 +1,6 @@
 ---
 draft: false
-title: Geolocate an IP address using MaxMind Web Services
+title: Geolocate an IP address using Web Services
 ---
 
 Geolocating an IP address using MaxMind web services consists of configuring a
@@ -8,10 +8,8 @@ web service client, creating a request, and handling the response.
 
 ## Implementation
 
-MaxMind offers and highly recommends using official client libraries to access
-our geolocation services. If you cannot or do not wish to use our client
-libraries, please review our [GeoIP2 API Documentation
-page](//geoip/api-documentation) for details on our JSON API.
+MaxMind offers and highly recommends using [official client 
+libraries](#official-api-clients) to access our geolocation services. If you cannot or do not wish to use our client libraries, please review our [GeoIP2 API Documentation page](//geoip/api-documentation) for details on our JSON API.
 
 ### 1. Install the GeoIP2 client library
 
@@ -73,9 +71,8 @@ gem 'maxmind-geoip2'
 ### 2. Create and configure a GeoIP2 client object
 
 To interact with our API, you need to create a new client object. For this you
-will need your MaxMind account ID and license key.  Our clients also allow you
-to interact with our GeoLite2 API, but this requires additional configuration
-as demonstrated below:
+will need your MaxMind [account ID and license 
+key](https://www.maxmind.com/en/accounts/current/license-key).  Our clients also allow you to interact with our GeoLite2 API, but this requires additional configuration as demonstrated below:
 
 <CodeSet>
 
@@ -97,19 +94,19 @@ WebServiceClient client = new WebServiceClient.Builder(10, "LICENSEKEY").host("g
 ```
 
 ```javascript
-const client = new minFraud.Client('10', 'LICENSEKEY');
+const client = new WebServiceClient('10', 'LICENSEKEY');
 
 // To query the GeoLite2 web service, you must set the optional `host` parameter
-const client = new minFraud.Client('10', 'LICENSEKEY', {host: 'geolite.info'});
+const client = new WebServiceClient('10', 'LICENSEKEY', {host: 'geolite.info'});
 ```
 
 ```php
-$client = new MinFraud(10, 'LICENSEKEY');
+$client = new Client(10, 'LICENSEKEY');
 
 // To query the GeoLite2 web service, you must set the optional `host` argument.
 // The third argument specifies the language preferences when using the `->name`
 // method on the model classes that this client creates.
-$client = new MinFraud(10, 'LICENSEKEY', ['en'], ['host' => 'geolite.info']);
+$client = new Client(10, 'LICENSEKEY', ['en'], ['host' => 'geolite.info']);
 ```
 
 ```python
@@ -263,7 +260,7 @@ puts record.country.iso_code
 
 </CodeSet>
 
-## Official MaxMind API Clients
+## Official API Clients
 
 | Language or Framework | Package Repository                                                                                                            | Documentation                                              | Version Control                                    |
 | --------------------- | ----------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------- | -------------------------------------------------- |
@@ -276,7 +273,7 @@ puts record.country.iso_code
 | Python                | [PyPI](https://pypi.python.org/pypi/geoip2)                                                                                   | [Read the Docs](https://geoip2.readthedocs.org/en/latest/) | [GitHub](https://github.com/maxmind/GeoIP2-python) |
 | Ruby                  | [RubyGems](https://rubygems.org/gems/maxmind-geoip2)                                                                          | [RubyDoc](https://www.rubydoc.info/gems/maxmind-geoip2)    | [GitHub](https://github.com/maxmind/GeoIP2-ruby)   |
 
-## Third-Party API Clients
+## Unofficial API Clients
 
 <Alert type="warning">
   MaxMind does **not** offer support for these APIs and has not reviewed the

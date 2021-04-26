@@ -174,7 +174,7 @@ const navigation: IItem[] = [
       },
       {
         title: 'MMDB Format Spec',
-        url: 'https://support.maxmind.com/geoip-faq/',
+        url: 'https://github.com/maxmind/MaxMind-DB/blob/main/MaxMind-DB-spec.md',
       },
     ],
     title: 'GeoIP and GeoLite',
