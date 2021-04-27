@@ -50,9 +50,9 @@ GeoLite2](https://support.maxmind.com/getting-started-with-geolite2/).
 
 ## IP Geolocation Usage
 
-IP geolocation is inherently imprecise. Locations are often near the center of
-the population. Any location provided by a GeoIP database should not be used
-to identify a particular address or household.
+<Alert type="warning">
+  IP geolocation is inherently imprecise. Locations are often near the center of the population. Any location provided by a GeoIP database should not be used to identify a particular address or household.
+</Alert>
 
 Use the Accuracy Radius as an indication of geolocation accuracy for the
 latitude and longitude coordinates we return for an IP address. The actual
@@ -74,7 +74,10 @@ the free GeoLite2 product line to the paid GeoIP2 product line extremely easy.
 
 See our [Database Documentation
 page](/geoip/docs/databases#official-api-clients) for a list of available APIs.
-GeoIP2 APIs may be used with GeoLite2 binary databases (MMDB).
+GeoIP2 APIs may be used with GeoLite2 binary databases (MMDB). You can also use the [GeoIP Update program](/geoip/updating-databases/#using-geoip-update) to automatically keep your GeoLite2 binary format databases up to date.
+
+GeoLite2 CSV databases are released in the same basic format as our [GeoIP2 
+CSV databases](/geoip/docs/databases/city-and-country#csv-databases), but they may contain fewer data points.
 
 ### Web services 
 
@@ -83,7 +86,7 @@ error](https://support.maxmind.com/geolite-faq/general/why-am-i-getting-a-permis
 
 You can also review our brief tutorial on [how to integrate the GeoLite2 City
 web service using PHP on our
-blog](https://blog.maxmind.com/2021/01/11/integrating-maxminds-free-and-paid-ip-geolocation-web-services-in-php/)
+blog](https://blog.maxmind.com/2021/01/11/integrating-maxminds-free-and-paid-ip-geolocation-web-services-in-php/).
 
 ## License
 The [GeoLite2 end-user license

@@ -10,7 +10,7 @@ import { FaDownload, FaUpload } from 'react-icons/fa';
 To learn more about the GeoIP2 Precision services and to purchase credits,
 please view our [GeoIP2 Precision Services page](https://www.maxmind.com/en/geoip2-precision-services).
 
-If you are interested in minFraud Insights or minFraud Factors web services, which also contain GeoIP Insights data, please [contact our Enterprise Business team](https://www.maxmind.com/en/sales-contact?comments=I+am+interested+in+minFraud+Factors.&interested_in=minfraud)
+If you are interested in minFraud Insights or minFraud Factors web services, which also contain GeoIP2 Precision Insights data, please [contact our Enterprise Business team](https://www.maxmind.com/en/sales-contact?comments=I+am+interested+in+minFraud+Factors.&interested_in=minfraud)
 for assistance. To better understand the differences between each minFraud
 service, review our [minFraud Service Comparison page](https://www.maxmind.com/en/solutions/minfraud-services#compare-features)
 and the Response Body section below.
@@ -126,9 +126,14 @@ and the Response Body section below.
 </LinkGroupContainer>
 
 ## IP Geolocation Usage
-IP geolocation is inherently imprecise. Locations are often near the center of
-the population. Any location provided by a GeoIP database should not be used to
-identify a particular address or household.
+<Alert type="warning">
+  IP geolocation is inherently imprecise. Locations are often near the center of the population. Any location provided by a GeoIP database should not be used to identify a particular address or household.
+</Alert>
+
+Use the Accuracy Radius as an indication of geolocation accuracy for the
+latitude and longitude coordinates we return for an IP address. The actual
+location of the IP address is likely within the area defined by this radius and
+the latitude and longitude coordinates.
 
 ## Versioning
 The GeoIP2 Precision web services use two part versions. Our current release is

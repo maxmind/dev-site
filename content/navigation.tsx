@@ -128,28 +128,28 @@ const navigation: IItem[] = [
             to: '/geoip/docs/databases/city-and-country',
           },
           {
-            title: 'Enterprise',
-            to: '/geoip/docs/databases/enterprise',
-          },
-          {
-            title: 'Anonymous IP',
-            to: '/geoip/docs/databases/anonymous-ip',
-          },
-          {
             title: 'ASN',
             to: '/geoip/docs/databases/asn',
           },
           {
-            title: 'Connection Type',
-            to: '/geoip/docs/databases/connection-type',
+            title: 'ISP',
+            to: '/geoip/docs/databases/isp',
           },
           {
             title: 'Domain',
             to: '/geoip/docs/databases/domain',
           },
           {
-            title: 'ISP',
-            to: '/geoip/docs/databases/isp',
+            title: 'Connection Type',
+            to: '/geoip/docs/databases/connection-type',
+          },
+          {
+            title: 'Enterprise',
+            to: '/geoip/docs/databases/enterprise',
+          },
+          {
+            title: 'Anonymous IP',
+            to: '/geoip/docs/databases/anonymous-ip',
           },
         ],
         title: 'Database Documentation',

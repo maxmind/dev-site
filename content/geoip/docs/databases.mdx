@@ -5,7 +5,7 @@ title: GeoIP2 and GeoLite2 Database Documentation
 
 import {
   FaMapMarkerAlt as CityCountryIcon,
-  FaBriefcase as EnterpriseIcon,
+  FaBuilding as EnterpriseIcon,
   FaUserSecret as AnonymousIcon,
   FaNetworkWired as ASNIcon,
   FaWifi as ConnectionTypeIcon,
@@ -44,11 +44,12 @@ import {
     />
 
     <LinkGroupCard
-      description="Look up the autonomous system number and autonomous system
-      organization associated with IPv4 and IPv6 addresses."
-      heading="ASN Databases"
-      icon={ASNIcon}
-      to="/geoip/docs/databases/asn"
+      description="Determine the Internet Service Provider, organization name,
+      and autonomous system organization and number associated with an IP
+      address."
+      heading="ISP Databases"
+      icon={ISPIcon}
+      to="/geoip/docs/databases/isp"
     />
 
     <LinkGroupCard
@@ -69,12 +70,11 @@ import {
     />
 
     <LinkGroupCard
-      description="Determine the Internet Service Provider, organization name,
-      and autonomous system organization and number associated with an IP
-      address."
-      heading="ISP Databases"
-      icon={ISPIcon}
-      to="/geoip/docs/databases/isp"
+      description="Look up the autonomous system number and autonomous system
+      organization associated with IPv4 and IPv6 addresses."
+      heading="ASN Databases"
+      icon={ASNIcon}
+      to="/geoip/docs/databases/asn"
     />
   </LinkGroup>
 </LinkGroupContainer>

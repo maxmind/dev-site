@@ -48,6 +48,10 @@ import responseJson from '../_examples/geoip';
   <Property
     linkToSchemaName={'Response | Location'}
     name="location"
+    services={[
+      'city',
+      'insights',
+    ]}
   >
     A JSON object containing specific details about the location associated with
     the IP address.
@@ -56,6 +60,10 @@ import responseJson from '../_examples/geoip';
   <Property
     linkToSchemaName={'Response | Postal'}
     name="postal"
+    services={[
+      'city',
+      'insights',
+    ]}
   >
     A JSON object containing details about the postal code associated with the
     IP address.
@@ -81,6 +89,10 @@ import responseJson from '../_examples/geoip';
   <Property
     linkToSchemaName={'Response | Subdivisions'}
     name="subdivisions"
+    services={[
+      'city',
+      'insights',
+    ]}
   >
     An array of JSON objects. Each of these objects contains details about a
     subdivision of the country in which the IP address resides. Subdivisions are
