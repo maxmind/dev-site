@@ -3,7 +3,7 @@ import ReactMarkdown from 'react-markdown';
 
 import { a } from '../../../components/Mdx';
 
-const renderers = {
+const components = {
   link: a,
 };
 
@@ -25,7 +25,7 @@ export const getRefAnchorLink = (ref: string): React.ReactElement => {
 export const renderMarkdownElement = (content: string): React.ReactElement => {
   return (
     <ReactMarkdown
-      renderers={renderers}
+      components={components}
     >
       {content}
     </ReactMarkdown>
