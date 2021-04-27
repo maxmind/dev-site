@@ -15,7 +15,9 @@ City, and ASN
 databases](/pdf-files/GeoLite2-IP-MetaData-Databases-Comparison-Chart.pdf) are
 updated weekly, every Tuesday. GeoLite2 data is also available as a web service
 in the [GeoLite2 Country and GeoLite2 City web
-services](GeoLite2-and-GeoIP2-Precision-Web-Services-Comparison.pdf). Users of the GeoLite2 web services are limited to 1000 IP address lookups per service per day.
+services](GeoLite2-and-GeoIP2-Precision-Web-Services-Comparison.pdf). Users of
+the GeoLite2 web services are limited to 1000 IP address lookups per service
+per day.
 
 ## Accessing GeoLite2 Free Geolocation Data
 
@@ -39,8 +41,14 @@ query the GeoLite2 web services.
   </LinkGroup>
 </LinkGroupContainer>
 
-From the side menu in your account portal, you can select [“Download 
-Files”](https://www.maxmind.com/en/accounts/current/geoip/downloads) to download GeoLite2 databases in binary or CSV format. You can select [“Manage License Keys”](https://www.maxmind.com/en/accounts/current/license-key) to generate a license key, which can be used to automate GeoLite2 binary database downloads with the [GeoIP Update](/geoip/updating-databases/#using-geoip-update) program or query the web services.
+From the side menu in your account portal, you can select
+[“Download  Files”](https://www.maxmind.com/en/accounts/current/geoip/downloads)
+to download GeoLite2 databases in binary or CSV format. You can select
+[“Manage License Keys”](https://www.maxmind.com/en/accounts/current/license-key)
+to generate a license key, which can be used to automate GeoLite2 binary
+database downloads with the
+[GeoIP Update](/geoip/updating-databases/#using-geoip-update) program or query
+the web services.
 
 For more information about using GeoLite2, see our [section on 
 integration](#integration) below.
@@ -48,10 +56,14 @@ integration](#integration) below.
 You may also be interested in our guide to [Getting Started with 
 GeoLite2](https://support.maxmind.com/getting-started-with-geolite2/).
 
-## IP Geolocation Usage
+## IP Geolocation Accuracy
 
 <Alert type="warning">
-  IP geolocation is inherently imprecise. Locations are often near the center of the population. Any location provided by a GeoIP database should not be used to identify a particular address or household.
+  ** IP Geolocation Usage**
+
+  IP geolocation is inherently imprecise. Locations are often near the center of
+  the population. Any location provided by a GeoIP database should not be used
+  to identify a particular address or household.
 </Alert>
 
 Use the Accuracy Radius as an indication of geolocation accuracy for the
@@ -74,14 +86,22 @@ the free GeoLite2 product line to the paid GeoIP2 product line extremely easy.
 
 See our [Database Documentation
 page](/geoip/docs/databases#official-api-clients) for a list of available APIs.
-GeoIP2 APIs may be used with GeoLite2 binary databases (MMDB). You can also use the [GeoIP Update program](/geoip/updating-databases/#using-geoip-update) to automatically keep your GeoLite2 binary format databases up to date.
+GeoIP2 APIs may be used with GeoLite2 binary databases (MMDB). You can also use
+the [GeoIP Update program](/geoip/updating-databases/#using-geoip-update) to
+automatically keep your GeoLite2 binary format databases up to date.
 
 GeoLite2 CSV databases are released in the same basic format as our [GeoIP2 
-CSV databases](/geoip/docs/databases/city-and-country#csv-databases), but they may contain fewer data points.
+CSV databases](/geoip/docs/databases/city-and-country#csv-databases), but they
+may contain fewer data points.
 
 ### Web services 
 
-See our [Web Services Documentation page](/geoip/docs/web-services#official-api-clients) for a list of available web service APIs. GeoIP2 Precision APIs may be used with the GeoLite2 web services by changing the hostname to the appropriate [GeoLite2 web service URI](/geoip/docs/web-services/requests#geolite2-endpoints). Using the wrong host will result in a [permission 
+See our [Web Services Documentation 
+page](/geoip/docs/web-services#official-api-clients) for a list of available web
+service APIs. GeoIP2 Precision APIs may be used with the GeoLite2 web services
+by changing the hostname to the appropriate [GeoLite2 web service
+URI](/geoip/docs/web-services/requests#geolite2-endpoints). Using the wrong host
+will result in a [permission 
 error](https://support.maxmind.com/geolite-faq/general/why-am-i-getting-a-permission-error-when-querying-the-geolite2-web-services/).
 
 You can also review our brief tutorial on [how to integrate the GeoLite2 City

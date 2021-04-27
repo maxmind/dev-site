@@ -23,8 +23,10 @@ method/service, and providing callbacks for all scenarios.
 
 ### 1. Register your domain(s)
 
-All domains using the service must be registered. New users may [request a free trial](https://www.maxmind.com/en/request-service-trial?service_geoip=1) or [purchase web
-service lookups](https://www.maxmind.com/en/geoip2-precision-services) and
+All domains using the service must be registered. New users may [request a free
+trial](https://www.maxmind.com/en/request-service-trial?service_geoip=1) or
+[purchase web service
+credit](https://www.maxmind.com/en/geoip2-precision-services) in order to
 receive an account to register domains. Existing account holders are able to
 [register domains 
 directly](https://www.maxmind.com/en/accounts/current/geoip/javascript/domains).
@@ -145,11 +147,15 @@ A successful response consists of a single JavaScript object. That object
 contains a set of key/value pairs, where the keys are things like `country` and
 `traits`, and the values are objects or arrays of objects.
 
-While our REST API is documented as omitting missing keys, we add blank arrays and objects in the JavaScript API. This makes it much simpler to work with the
+While our REST API is documented as omitting missing keys, we add blank arrays
+and objects in the JavaScript API. This makes it much simpler to work with the
 response, as you will not need to check whether the data structure exists
 before using it.
 
-Wherever a missing property’s value could be an object or array, we will add an empty object or array as needed. For example, if you call the `city()` method and the response from the MaxMind server has no `city` key at all, it will end up being filled in as:
+Wherever a missing property’s value could be an object or array, we will add an
+empty object or array as needed. For example, if you call the `city()` method
+and the response from the MaxMind server has no `city` key at all, it will end
+up being filled in as:
 
 ```json
 {

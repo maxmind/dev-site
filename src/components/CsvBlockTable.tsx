@@ -298,8 +298,15 @@ const CsvBlockTable: React.FC<ICsvBlockTable> = (props) => {
           <Td>integer</Td>
           <Td>
             The radius in kilometers around the specified location where the IP
-            address is likely to be. [Learn more about accuracy on our Support
-            Center.](https://support.maxmind.com/geoip-faq/specifications-and-implementation/how-accurate-is-geoip2/)
+            address is likely to be.
+            {' '}
+            <A
+              href="https://support.maxmind.com/geoip-faq/specifications-and-implementation/how-accurate-is-geoip2/"
+              rel="nofollow noopener noreferrer"
+              target="_blank"
+            >
+              Learn more about accuracy on our Support Center.
+            </A>
           </Td>
           { !isEnterprise && (
             <Td>

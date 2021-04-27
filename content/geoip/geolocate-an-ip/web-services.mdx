@@ -3,13 +3,16 @@ draft: false
 title: Geolocate an IP address using Web Services
 ---
 
-Geolocating an IP address using GeoIP2 or GeoLite2 web services consists of configuring a web service client, creating a request, and handling the response.
+Geolocating an IP address using GeoIP2 or GeoLite2 web services consists of
+configuring a web service client, creating a request, and handling the response.
 
 ## Implementation
 
 MaxMind offers and highly recommends using [official client 
-libraries](#official-api-clients) to access our geolocation services. If you cannot or do not wish to use our client libraries, please review our [GeoIP2 API Documentation 
-page](/geoip/docs/web-services/#request-and-response-api-references) for details on our REST API.
+libraries](#official-api-clients) to access our geolocation services. If you
+cannot or do not wish to use our client libraries, please review our [GeoIP2 API
+Documentation page](/geoip/docs/web-services/#request-and-response-api-references)
+for details on our REST API.
 
 ### 1. Install the GeoIP2 client library
 
@@ -71,8 +74,10 @@ gem 'maxmind-geoip2'
 ### 2. Create and configure a GeoIP2 client object
 
 To interact with our API, you need to create a new client object. For this you
-will need your MaxMind [account ID and license 
-key](https://www.maxmind.com/en/accounts/current/license-key).  Our clients also allow you to interact with our GeoLite2 API, but this requires additional configuration as demonstrated below:
+will need your MaxMind [account ID and license
+key](https://www.maxmind.com/en/accounts/current/license-key).  Our clients
+also allow you to interact with our GeoLite2 API, but this requires additional
+configuration as demonstrated below:
 
 <CodeSet>
 
