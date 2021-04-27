@@ -322,6 +322,17 @@ const CsvLocationTable: React.FC<ICsvLocationTable> = (props) => {
             The metro code associated with the IP address. These are only
             available for networks in the US.
           </Td>
+          { !isEnterprise && (
+            <Td>
+              <ServiceTag
+                isDisabled
+                text="Country"
+              />
+              <ServiceTag
+                text="City"
+              />
+            </Td>
+          )}
         </Tr>
         <Tr>
           <Td>time_zone</Td>
