@@ -21,7 +21,8 @@ both GeoIP2, GeoIP Legacy, and GeoLite2 binary databases.
 
 Install GeoIP Update. The latest release may be downloaded from [GitHub
 Releases](https://github.com/maxmind/geoipupdate/releases). See
-[the installation instructions](https://github.com/maxmind/geoipupdate) for more information. GeoIP Update can also be installed via our [Docker
+[the installation instructions](https://github.com/maxmind/geoipupdate) for more
+information. GeoIP Update can also be installed via our [Docker
 image](https://hub.docker.com/r/maxmindinc/geoipupdate).
 
 If you are using an older version of GeoIP Update, you may need to upgrade to
@@ -35,16 +36,19 @@ information on upgrading from an older version of GeoIP Update.
 ### 2. Obtain GeoIP.conf with Account Information
 
 Log in to your account portal to download a partially [pre-filled configuration
-file](https://www.maxmind.com/en/accounts/current/license-key/GeoIP.conf) and save it in your configuration directory (e.g.,
-`/usr/local/etc/`) as `GeoIP.conf`. You will need to replace the
-`YOUR_LICENSE_KEY_HERE` placeholder with an active license key associated with
-your MaxMind account. You can see your license key information on [your account
-License Keys page](https://www.maxmind.com/en/accounts/current/license-key).
+file](https://www.maxmind.com/en/accounts/current/license-key/GeoIP.conf) and
+save it in your configuration directory (e.g., `/usr/local/etc/`) as
+`GeoIP.conf`. You will need to replace the `YOUR_LICENSE_KEY_HERE` placeholder
+with an active license key associated with your MaxMind account. You can see
+your license key information on [your account License Keys
+page](https://www.maxmind.com/en/accounts/current/license-key).
 
 <Alert type="warning">
-  You may also write this file by hand using the template below (**not  recommended**).
+  You may also write this file by hand using the template below
+  (**not  recommended**).
 
-  Note that for `geoipupdate` versions less than 2.5.0, use `UserId` instead of `AccountID` and `ProductIds` instead of `EditionIDs`.
+  Note that for `geoipupdate` versions less than 2.5.0, use `UserId` instead
+  of `AccountID` and `ProductIds` instead of `EditionIDs`.
 </Alert>
 
 ```bash
