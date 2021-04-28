@@ -2,7 +2,8 @@ import { exec } from 'child_process';
 import { CreateWebpackConfigArgs, GatsbyNode } from 'gatsby';
 import reporter from 'gatsby-cli/lib/reporter';
 
-// eslint-disable-next-line @typescript-eslint/no-var-requires
+/* eslint-disable @typescript-eslint/no-var-requires */
+const ESLintPlugin = require('eslint-webpack-plugin');
 const StylelintPlugin = require('stylelint-webpack-plugin');
 
 export const onCreateWebpackConfig: GatsbyNode['onCreateWebpackConfig']= (
@@ -88,20 +89,22 @@ export const onCreateWebpackConfig: GatsbyNode['onCreateWebpackConfig']= (
    */
   if (IS_DEVELOP) {
     props.actions.setWebpackConfig({
-      module: {
-        rules: [
-          {
-            exclude: /(node_modules|cache|public)/,
-            test: /\.(js|json|md|mdx|ts|tsx)$/,
-            use: [
-              {
-                loader: 'eslint-loader',
-              },
-            ],
-          },
-        ],
-      },
       plugins: [
+        new ESLintPlugin({
+          exclude: [
+            'node_modules',
+            '.cache',
+            'public',
+          ],
+          extensions: [
+            'js',
+            'json',
+            'md',
+            'mdx',
+            'ts',
+            'tsx',
+          ],
+        }),
         new StylelintPlugin({
           configFile: './.stylelintrc.js',
           files: 'src/**/*.s(a|c)ss',
@@ -109,7 +112,7 @@ export const onCreateWebpackConfig: GatsbyNode['onCreateWebpackConfig']= (
         {
           // eslint-disable-next-line @typescript-eslint/no-explicit-any
           apply: (compiler: any) => {
-            compiler.hooks.watchRun.tapAsync(
+            compiler.hooks.afterEmit.tapAsync(
               'RemarkLint',
               (_: unknown, next: () => void) => exec(
                 'remark . --ext mdx --quiet',
