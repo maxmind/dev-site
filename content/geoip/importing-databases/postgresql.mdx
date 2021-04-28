@@ -40,7 +40,8 @@ create table geoip2_network (
 
 ### Load Data
 
-With the table created, we can now import the contents of the two `Blocks` files:
+With the table created, we can now import the contents of the two `Blocks`
+files:
 
 ```sql
 \copy geoip2_network(
@@ -61,8 +62,9 @@ With the table created, we can now import the contents of the two `Blocks` files
 Note how the table we created uses PostgreSQL's
 [cidr](https://www.postgresql.org/docs/current/datatype-net-types.html) type
 for the network column. This built-in type represents IPv4 and IPv6 networks and
-provides [operations](https://www.postgresql.org/docs/current/functions-net.html)
-to, amoung other things, determine if a given host address is contained in a
+provides
+[operations](https://www.postgresql.org/docs/current/functions-net.html) to,
+amoung other things, determine if a given host address is contained in a
 network. For example:
 
 ```sql
