@@ -297,12 +297,16 @@ const CsvBlockTable: React.FC<ICsvBlockTable> = (props) => {
           <Td>accuracy_radius</Td>
           <Td>integer</Td>
           <Td>
-            The approximate accuracy radius, in kilometers, around the latitude
-            and longitude for the geographical entity (country, subdivision,
-            city or postal code) associated with the IP address. We have a 67%
-            confidence that the location of the end-user falls within the area
-            defined by the accuracy radius and the latitude and longitude
-            coordinates.
+            The radius in kilometers around the specified location where the IP
+            address is likely to be.
+            {' '}
+            <A
+              href="https://support.maxmind.com/geoip-faq/specifications-and-implementation/how-accurate-is-geoip2/"
+              rel="nofollow noopener noreferrer"
+              target="_blank"
+            >
+              Learn more about accuracy on our Support Center.
+            </A>
           </Td>
           { !isEnterprise && (
             <Td>

@@ -3,7 +3,15 @@ draft: false
 title: GeoIP2 and GeoLite2 Database Documentation
 ---
 
-import { FaDatabase as DatabaseIcon } from 'react-icons/fa';
+import {
+  FaMapMarkerAlt as CityCountryIcon,
+  FaBuilding as EnterpriseIcon,
+  FaUserSecret as AnonymousIcon,
+  FaNetworkWired as ASNIcon,
+  FaWifi as ConnectionTypeIcon,
+  FaSign as DomainIcon,
+  FaServer as ISPIcon,
+ } from 'react-icons/fa';
 
 ## Databases
 
@@ -13,7 +21,7 @@ import { FaDatabase as DatabaseIcon } from 'react-icons/fa';
       description="Determine the country, subdivisions (regions), city, and
       postal code associated with IPv4 and IPv6 addresses worldwide."
       heading="City and Country Databases"
-      icon={DatabaseIcon}
+      icon={CityCountryIcon}
       to="/geoip/docs/databases/city-and-country"
     />
 
@@ -22,7 +30,7 @@ import { FaDatabase as DatabaseIcon } from 'react-icons/fa';
       city, ZIP/postal code, and additional intelligence such as confidence
       factors, ISP, domain, and connection type."
       heading="Enterprise Databases"
-      icon={DatabaseIcon}
+      icon={EnterpriseIcon}
       to="/geoip/docs/databases/enterprise"
     />
 
@@ -31,33 +39,8 @@ import { FaDatabase as DatabaseIcon } from 'react-icons/fa';
       business by identifying proxy, VPN, hosting, and other anonymous IP
       addresses."
       heading="Anonymous IP Databases"
-      icon={DatabaseIcon}
+      icon={AnonymousIcon}
       to="/geoip/docs/databases/anonymous-ip"
-    />
-
-    <LinkGroupCard
-      description="Look up the autonomous system number and autonomous system
-      organization associated with IPv4 and IPv6 addresses."
-      heading="ASN Databases"
-      icon={DatabaseIcon}
-      to="/geoip/docs/databases/asn"
-    />
-
-    <LinkGroupCard
-      description="Determine the connection type of your visitors based on
-      their IP address. The database identifies dial-up, cellular, cable/DSL,
-      and corporate connection speeds."
-      heading="Connection Type Databases"
-      icon={DatabaseIcon}
-      to="/geoip/docs/databases/connection-type"
-    />
-
-    <LinkGroupCard
-      description="Look up the second level domain names associated with IPv4
-      and IPv6 addresses."
-      heading="Domain Databases"
-      icon={DatabaseIcon}
-      to="/geoip/docs/databases/domain"
     />
 
     <LinkGroupCard
@@ -65,8 +48,33 @@ import { FaDatabase as DatabaseIcon } from 'react-icons/fa';
       and autonomous system organization and number associated with an IP
       address."
       heading="ISP Databases"
-      icon={DatabaseIcon}
+      icon={ISPIcon}
       to="/geoip/docs/databases/isp"
+    />
+
+    <LinkGroupCard
+      description="Determine the connection type of your visitors based on
+      their IP address. The database identifies dial-up, cellular, cable/DSL,
+      and corporate connection speeds."
+      heading="Connection Type Databases"
+      icon={ConnectionTypeIcon}
+      to="/geoip/docs/databases/connection-type"
+    />
+
+    <LinkGroupCard
+      description="Look up the second level domain names associated with IPv4
+      and IPv6 addresses."
+      heading="Domain Databases"
+      icon={DomainIcon}
+      to="/geoip/docs/databases/domain"
+    />
+
+    <LinkGroupCard
+      description="Look up the autonomous system number and autonomous system
+      organization associated with IPv4 and IPv6 addresses."
+      heading="ASN Databases"
+      icon={ASNIcon}
+      to="/geoip/docs/databases/asn"
     />
   </LinkGroup>
 </LinkGroupContainer>

@@ -15,7 +15,7 @@ export const country = {
   },
   country: {
     geoname_id: 6252001,
-    is_in_european_union: true,
+    is_in_european_union: false,
     iso_code: 'US',
     names: {
       de: 'USA',

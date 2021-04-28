@@ -1,30 +1,30 @@
 ---
 draft: false
-title: Updating GeoIP and GeoIP Legacy Databases
+title: Updating GeoIP and GeoLite Databases
 ---
 
 There are two methods for automatically updating GeoIP2 and GeoIP Legacy binary
 databases:
 
 1. Using MaxMind's [GeoIP Update
-program](https://github.com/maxmind/geoipupdate/releases)
+program](https://github.com/maxmind/geoipupdate/releases).
 2. Directly downloading the database.
 
-We highly recommend using the GeoIP Update program, but there may be some
-instances where you are unable to use the program or if you are using
-CSV-format databases.
+For clients using our binary database format, we highly recommend using GeoIP
+Update, but the direct download method is available if necessary. Clients using
+the CSV-format databases must use the direct download method.
 
 ## Using GeoIP Update
 
 MaxMind provides the GeoIP Update program, which performs automatic updates for
-both GeoIP2 and GeoIP Legacy binary databases.
+both GeoIP2, GeoIP Legacy, and GeoLite2 binary databases.
 
 ### 1. Install GeoIP Update
 
 Install GeoIP Update. The latest release may be downloaded from [GitHub
 Releases](https://github.com/maxmind/geoipupdate/releases). See
-[here](https://github.com/maxmind/geoipupdate) for installation
-instructions. It can also be installed via our [Docker
+[the installation instructions](https://github.com/maxmind/geoipupdate) for more
+information. GeoIP Update can also be installed via our [Docker
 image](https://hub.docker.com/r/maxmindinc/geoipupdate).
 
 If you are using an older version of GeoIP Update, you may need to upgrade to
@@ -37,18 +37,21 @@ information on upgrading from an older version of GeoIP Update.
 
 ### 2. Obtain GeoIP.conf with Account Information
 
-**For GeoIP2 and GeoIP Legacy Databases**
+Log in to your account portal to download a partially [pre-filled configuration
+file](https://www.maxmind.com/en/accounts/current/license-key/GeoIP.conf) and
+save it in your configuration directory (e.g., `/usr/local/etc/`) as
+`GeoIP.conf`. You will need to replace the `YOUR_LICENSE_KEY_HERE` placeholder
+with an active license key associated with your MaxMind account. You can see
+your license key information on [your account License Keys
+page](https://www.maxmind.com/en/accounts/current/license-key).
 
-Get a partially [pre-filled configuration
-file](https://www.maxmind.com/en/accounts/current/license-key/GeoIP.conf) (may
-require authentication) and save it in your configuration directory (e.g.,
-`/usr/local/etc/`) as `GeoIP.conf`. You will need to replace the
-`YOUR_LICENSE_KEY_HERE` placeholder with an active license key associated with
-your MaxMind account. You can see your license key information on [your account
-License Keys page](https://www.maxmind.com/en/accounts/current/license-key).
+<Alert type="warning">
+  You may also write this file by hand using the template below
+  (**not  recommended**).
 
-You may also write this file by hand using the template below (**not
-recommended**).
+  Note that for `geoipupdate` versions less than 2.5.0, use `UserId` instead
+  of `AccountID` and `ProductIds` instead of `EditionIDs`.
+</Alert>
 
 ```bash
 # GeoIP.conf file - used by geoipupdate program to update databases
@@ -57,9 +60,6 @@ AccountID YOUR_ACCOUNT_ID_HERE
 LicenseKey YOUR_LICENSE_KEY_HERE
 EditionIDs YOUR_EDITION_IDS_HERE
 ```
-
-Note that for `geoipupdate` versions less than 2.5.0, use `UserId` instead of
-`AccountID` and `ProductIds` instead of `EditionIDs`.
 
 ### 3. Run GeoIP Update
 
@@ -98,8 +98,8 @@ resolve some errors.
 
 ## Directly downloading databases
 
-This is only recommended for systems unable to use GeoIP Update program or for
-clients using the CSV-format databases.
+This is only recommended for systems unable to use GeoIP Update or for clients
+using the CSV-format databases.
 
 In order to download the databases from a script or program, please use the
 permalinks found on the [GeoIP download
@@ -108,7 +108,8 @@ page](https://www.maxmind.com/en/accounts/current/geoip/downloads).
 1. In the “Download Links” column, click “Get Permalink(s)” for the desired
 database.
 2. Copy the permalink(s) provided in the modal window.
-3. Replace `YOUR_LICENSE_KEY` with your license key.
+3. Replace `YOUR_LICENSE_KEY` with [your license 
+key](https://www.maxmind.com/en/accounts/current/license-key).
 4. If you are using `wget` or `curl` from a shell script, please be sure to
 quote the URL.
 
@@ -119,9 +120,10 @@ CSV) format, which can be uncompressed using a program like
 ### Checking for the Latest Release Date
 
 You can check the date of a given database’s latest release by issuing a HEAD
-request for that database’s download permalink URL, as found on our [database
-download page](https://www.maxmind.com/en/accounts/current/geoip/downloads)
-[login required].
+request for that database’s download permalink URL. The download permalink can
+be found in the [Download
+Databases](https://www.maxmind.com/en/accounts/current/geoip/downloads) section
+of your account portal.
 
 For example, using the permalink for the GeoIP2 City CSV database, you can
 issue a command like the following:
@@ -155,5 +157,6 @@ limit](https://support.maxmind.com/geoip-faq/geoip2-and-geoip-legacy-databases/i
 
 ## Download limits
 
-*MaxMind reserves the right to limit the number of downloads made within a
-limited period of time.*
+*MaxMind reserves the right to [limit the number of 
+downloads](https://support.maxmind.com/geolite-faq/general/is-there-a-limit-to-how-often-i-can-download-a-database-from-my-maxmind-account/)
+made within a limited period of time.*

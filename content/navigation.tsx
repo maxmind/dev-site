@@ -54,7 +54,7 @@ const navigation: IItem[] = [
       },
       {
         title: 'Proxy Detection Legacy Web Service',
-        to: '/proxy-detection',
+        to: '/minfraud/proxy-detection',
       },
       {
         title: 'MaxMind Server IP Addresses',
@@ -136,8 +136,8 @@ const navigation: IItem[] = [
             to: '/geoip/docs/databases/anonymous-ip',
           },
           {
-            title: 'ASN',
-            to: '/geoip/docs/databases/asn',
+            title: 'ISP',
+            to: '/geoip/docs/databases/isp',
           },
           {
             title: 'Connection Type',
@@ -148,8 +148,8 @@ const navigation: IItem[] = [
             to: '/geoip/docs/databases/domain',
           },
           {
-            title: 'ISP',
-            to: '/geoip/docs/databases/isp',
+            title: 'ASN',
+            to: '/geoip/docs/databases/asn',
           },
         ],
         title: 'Database Documentation',
@@ -174,7 +174,7 @@ const navigation: IItem[] = [
       },
       {
         title: 'MMDB Format Spec',
-        url: 'https://support.maxmind.com/geoip-faq/',
+        url: 'https://github.com/maxmind/MaxMind-DB/blob/main/MaxMind-DB-spec.md',
       },
     ],
     title: 'GeoIP and GeoLite',

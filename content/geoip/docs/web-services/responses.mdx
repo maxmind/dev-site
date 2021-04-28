@@ -8,39 +8,23 @@ import * as Schemas from './_schemas';
 
 ## Headers
 
-<table>
-  <thead>
-    <tr>
-      <th>Header</th>
-      <th>Notes</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>
-        `Content-Type`
-      </td>
-      <td>
-        The `Content-Type` header for a successful response varies based on the
-        service as outlined above.
+The `Content-Type` for a successful response varies based on the service as
+outlined below:
 
-        Errors may be returned with the `Content-Type` set to
-        `application/vnd.maxmind.com-error+json; charset=UTF-8; version=2.0`.
-        If this is the case, then the body of the response contains a JSON
-        document with two keys, code and error. See the [Errors](/geoip/web-services/responses/#errors)
-        section for more details.
-      </td>
-    </tr>
-    <tr>
-      <td>
-        `Content-Length`
-      </td>
-      <td>
-        The response will always include a `Content-Length` header as well.
-      </td>
-    </tr>
-  </tbody>
-</table>
+| Service          | Content-Type                                                            |
+|------------------|-------------------------------------------------------------------------|
+| GeoIP2 Country   | `application/vnd.maxmind.com-country+json; charset=UTF-8; version=2.1`  |
+| GeoIP2 City      | `application/vnd.maxmind.com-city+json; charset=UTF-8; version=2.1`     |
+| GeoIP2 Insights  | `application/vnd.maxmind.com-insights+json; charset=UTF-8; version=2.1` |
+| GeoLite2 Country | `application/vnd.maxmind.com-country+json; charset=UTF-8; version=2.1`  |
+| GeoLite2 City    | `application/vnd.maxmind.com-city+json; charset=UTF-8; version=2.1`     |
+
+Errors may be returned with the `Content-Type` set to
+`application/vnd.maxmind.com-error+json; charset=UTF-8; version=2.0`. If this
+is the case, then the body of the response contains a JSON document with two
+keys, `code` and `error`. See the [Errors](#errors) section for more details.
+
+The response will always include a `Content-Length` header as well.
 
 ## Bodies
 
@@ -48,18 +32,38 @@ Each service returns data as a JSON document. The document that is returned
 always consists of an object (aka map or hash). Below are the schema definitions
 that describe each service's response body.
 
-### GeoIP2 Country Body
+### GeoIP2 Country Body Example
+
+The following is an example of a full response to a GeoIP2 Precision Country
+request.
+
+A GeoLite2 Country request follow the same structure, but the data returned
+will be less accurate. In addition, GeoLite Country requests will not return
+the `maxmind` object.
 
 <Example language="json">
   {JSON.stringify(geoipResponseJson.country, null, 2)}
 </Example>
 
-### GeoIP2 City Body
+### GeoIP2 City Body Example
+
+The following is an example of a full response to a GeoIP2 Precision City
+request.
+
+A GeoLite2 City request follow the same structure, but the data returned will
+be less accurate. In addition, GeoLite2 City requests will not return the
+`domain`, `isp`, or `organization` values in the `traits` object, and it will
+not return the `maxmind` object.
+
 <Example language="json">
   {JSON.stringify(geoipResponseJson.city, null, 2)}
 </Example>
 
-### GeoIP2 Insights Body
+### GeoIP2 Insights Body Example
+
+The following is an example of a full response to a GeoIP2 Precision City
+request.
+
 <Example language="json">
   {JSON.stringify(geoipResponseJson.insights, null, 2)}
 </Example>
@@ -285,13 +289,13 @@ Currently, this web service may return the following locale codes:
 </table>
 
 If an object has any name data, then `en` will be one of the keys in the `names`
-object. No other language is guaranteed. However, it possible that we might not
-have any name data at all for a given object.
+object. No other language is guaranteed. However, it is possible that we might
+not have any name data at all for a given object.
 
 ### Returned Values as Database, Map, Dict, or Hash Keys
 
 <Alert type="warning">
-  We strongly discourage your from using a value from any `names` field as a key
+  We strongly discourage you from using a value from any `names` field as a key
   in a database or map/dict/hash data structure.
 </Alert>
 
