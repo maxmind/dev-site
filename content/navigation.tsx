@@ -110,7 +110,7 @@ const navigation: IItem[] = [
           },
         ],
         title: 'Importing Databases',
-        to: '/geoip/updating-databases',
+        to: '/geoip/importing-databases',
       },
       {
         title: 'GeoLite2 Free Geolocation Data',
