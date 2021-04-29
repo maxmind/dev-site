@@ -1,27 +1,72 @@
 ---
-draft: true
+draft: false
 title: Importing GeoIP2 and GeoLite2 databases to PostgreSQL
 ---
 
 This guide will show you how to import GeoIP2 or GeoLite2 databases into
 PostgreSQL so that they can be easily queried and manipulated on your server.
 
-## Retrieve database
+Importing a CSV database consists of downloading the database, extracting it,
+creating tables to hold the data, and indexing those tables for faster
+querying.
 
-Link readers to where they can purchase and download the zip file.
+## Download and extract the database
 
-Tell them to unpack the archive and link to 
-https://dev.maxmind.com/geoip/geoip2/geoip2-city-country-csv-databases/#Zip_File
-for details of zip structure.
+Begin by making sure you have downloaded the latest version of the GeoIP2 or
+GeoLite2 database that you want to import. You can [download databases through
+your account
+portal](https://www.maxmind.com/en/accounts/current/geoip/downloads). CSV
+format databases are shipped as a single zip file. See our CSV database
+documentation for details about the zip structure and contents of the archive.
+For the purposes of this tutorial, we will be using the [GeoIP2 City CSV
+file](/geoip/docs/databases/city-and-country/#csv-databases), but you can get
+information about [any of our CSV format databases](/geoip/docs/databases) and
+adapt the following instructions accordingly.
 
-## Networks
+### Keep your database updated
 
-### Schema
+If you are importing databases for use in an ongoing manner, you will want to
+[automate the process of downloading and extracting the CSV
+files](/geoip/updating-databases/#directly-downloading-databases) so that you
+can be sure that your database is always up to date.
+
+### Extract the CSV files
+
+Once you have downloaded the database, unpack the zip file in your desired
+directory. If you are importing the GeoIP2 City database, you will have a
+number of files. In this tutorial will be working with the following files:
+
+- `GeoIP2-City-Blocks-IPv4.csv`
+- `GeoIP2-City-Blocks-IPv6.csv`
+- `GeoIP2-City-Locations-en.csv`
+
+If you are working in a language other than English, you can choose the
+appropriate `Locations` file from the zip archive. For example, if you want to
+load Chinese location names into PostgreSQL, you can use
+`GeoIP2-City-Locations-zh-CN.csv` instead of `GeoIP2-City-Locations-en.csv`. Our
+documentation on CSV format databases includes a [list of all location files
+currently included in GeoIP2 and GeoLite2
+databases](/geoip/docs/databases/city-and-country/#locations-files).
+
+## Create a table for network data
 
 First we create a table to hold the network information contained in
 `GeoIP2-City-Blocks-IPv4.csv` and `GeoIP2-City-Blocks-IPv6.csv`.
-https://dev.maxmind.com/geoip/geoip2/geoip2-city-country-csv-databases/#CSV_File_Format
-describes the structure of those files.
+
+### Network table schema
+
+You can find the full description of the schema for these files in [the section
+on `Blocks` files for GeoIP2 and GeoLite2 CSV
+databases](/geoip/docs/databases/city-and-country/#blocks-files). If you are
+working with a different database, you can find the `Blocks` file schema [for
+the appropriate database](/geoip/docs/databases), and adapt the table to meet
+that structure.
+
+In this tutorial we will be creating a table to hold our network data called
+`geoip2_network`. Note that we will be using PostGreSQL's 
+[`cidr`](https://www.postgresql.org/docs/current/datatype-net-types.html) type
+for the `network` column. This will allow us to to query the database more
+easily.
 
 ```sql
 create table geoip2_network (
@@ -38,10 +83,10 @@ create table geoip2_network (
 );
 ```
 
-### Load Data
+### Load data into the network table
 
-With the table created, we can now import the contents of the two `Blocks`
-files:
+We can now import the contents of `GeoIP2-City-Blocks-IPv4.csv` and 
+`GeoIP2-City-Blocks-IPv6.csv` into the table we just created:
 
 ```sql
 \copy geoip2_network(
@@ -57,14 +102,14 @@ files:
 ) from 'GeoIP2-City-Blocks-IPv6.csv' with (format csv, header);
 ```
 
-### Query
+### Test our table by querying it
 
-Note how the table we created uses PostgreSQL's
+Remember that the table we created uses PostgreSQL's
 [cidr](https://www.postgresql.org/docs/current/datatype-net-types.html) type
-for the network column. This built-in type represents IPv4 and IPv6 networks and
-provides
-[operations](https://www.postgresql.org/docs/current/functions-net.html) to,
-amoung other things, determine if a given host address is contained in a
+for the `network` column. This built-in type represents IPv4 and IPv6 networks
+and provides
+[operations](https://www.postgresql.org/docs/current/functions-net.html) to
+(among other things) determine if a given host address is contained in a
 network. For example:
 
 ```sql
@@ -80,6 +125,8 @@ TODO: use a different address and update output accordingly
 ```sql
 select * from geoip2_network where network >> '97.115.100.128';
 ```
+
+Which gives a result of:
 
 ```
 -[ RECORD 1 ]------------------+------------------
@@ -97,12 +144,12 @@ accuracy_radius                | 10
 Time: 514.003 ms
 ```
 
-### Index
+### Index our table for faster searching
 
-While that allows us to look up an individual IP address's latitude, longitude,
-and accuracy_radius, you'll notice that executing that query took over half a
-second which isn't practical for many applications. To improve that we'll create
-an index using PostgreSQL's
+We can now look up an individual IP address's `latitude`, `longitude`, and
+`accuracy_radius`, but you'll notice that executing that query took over half a
+second. This isn't practical for many applications. To improve our query speed,
+we'll create an index using PostgreSQL's
 [GiST](https://www.postgresql.org/docs/current/textsearch-indexes.html) indexing
 method. For historical reasons, we also have to specify the
 [inet_ops](https://www.postgresql.org/docs/9.5/gist-builtin-opclasses.html)
@@ -112,11 +159,13 @@ operator class:
 create index on geoip2_network using gist (network inet_ops);
 ```
 
-With that change we observe the same query from before now being a lot faster:
+With that change we observe that the same query runs a lot faster:
 
 ```sql
 select * from geoip2_network net where network >> '97.115.100.128';
 ```
+
+Which gives a result of:
 
 ```
 -[ RECORD 1 ]------------------+------------------
@@ -134,16 +183,29 @@ accuracy_radius                | 10
 Time: 9.671 ms
 ```
 
-## Locations
+You can now geolocate IP addresses using `latitude`, `longitude`, and
+`accuracy_radius`. For more information about how to understand the
+`accuracy_radius` field, see the [article on geolocation accuracy our Support
+Center](https://support.maxmind.com/geoip-faq/specifications-and-implementation/how-accurate-is-geoip2/).
+
+## Optional: Create a table for locations data
 
 If `postal_code`, `latitude`, `longitude`, and `accuracy_radius` are everything
 we're interested in we'd be done at this point and our application would be
 easily able to query what it needs. However, GeoIP2 databases provide additional
-location information, which we'll load into PostgreSQL next.
+location information. Note the `geoname_id` field in our network table. This
+field can be used to look up additional information about the geolocation from
+the `Locations` files we downloaded before. We'll load this data into PostgreSQL
+next.
 
-### Import
+### Locations table schema
 
-We start with a table as before:
+We start by creating a table as before. As with the `Blocks` files, the schema
+for GeoIP2 and GeoLite2 City locations files can be found in the [CSV section of
+the database
+documentation](/geoip/docs/databases/city-and-country/#locations-files).
+
+We'll name this table `geoip2_location`:
 
 ```sql
 create table geoip2_location (
@@ -165,7 +227,12 @@ create table geoip2_location (
 );
 ```
 
-We then populate that table from a `Locations` CSV file:
+### Load data into the locations table
+
+We then populate our `geoip2_location` table from a `Locations` CSV file. In
+this case we will be populating the table from `GeoIP2-City-Locations-en.csv`.
+Using the file with the `-en` suffix will give us the names of geolocations in
+English:
 
 ```sql
 \copy geoip2_location(
@@ -175,17 +242,21 @@ We then populate that table from a `Locations` CSV file:
 ) from 'GeoIP2-City-Locations-en.csv' with (format csv, header);
 ```
 
-Note that there's a number of different `Locations` files available. The `-en`
-file contains english language data for all `geoname_id`s used in the the
-database. The additional files with different language suffixes contain
-localized versions of the `-en` data in different languages for some of
-`geoname_id`s. Depending on your application's needs you may decide to import
-any subset of them.
+Note that there's a number of different `Locations` files available. The other
+files with different language suffixes contain localized versions of the `-en`
+data in different languages for some of the `geoname_id`s. Depending on your
+application's needs you may decide to import additional `Locations` files into
+localized tables. For example, you could load `GeoIP2-City-Locations-en.csv`
+into a table called `geoip2_location-en`, and load
+`GeoIP2-City-Locations-zh-CN.csv` into a table called `geoip2_location-zh`. You
+could then query whichever locations table you needed for English or Chinese
+respectively.
 
-### Querying
 
-We can now use this additional table to resolve the `geoname_id`s provided by
-our `geoip2_network` table. For example:
+### Query our tables
+
+We can now use our `geoip2_location` table to resolve the `geoname_id`s
+provided by our `geoip2_network` table. For example:
 
 ```sql
 select latitude, longitude, accuracy_radius, continent_name, country_name, subdivision_1_name, city_name
@@ -197,6 +268,8 @@ left join geoip2_location location on (
 where network >> '97.115.100.128';
 ```
 
+Which gives a result of:
+
 ```
  latitude | longitude | accuracy_radius | continent_name | country_name  | subdivision_1_name | city_name 
 ----------+-----------+-----------------+----------------+---------------+--------------------+-----------
@@ -204,13 +277,14 @@ where network >> '97.115.100.128';
 (1 row)
 ```
 
-Here we were only interested in english results, but we can adjust our join
+Here we were only interested in English results, but we can adjust our join
 condition if we were interested in different or additional languages.
 
 Note how a left outer join is used. This is because additional location
 information might not be available for any given row of our `geoip2_network`
-table. With the left join we'd still receive latitude, longitude, and
-accuracy_radius as a result of our query if available, while an inner join
+table. For example, some IP addresses cannot be resolved to a city or
+subdivision. With the left join we'd still receive `latitude`, `longitude`, and
+`accuracy_radius` as a result of our query if available, while an inner join
 would result in zero rows if no additional location information was available.
 
 In addition to the `geoname_id` column that provides location information for a
@@ -246,6 +320,8 @@ left join geoip2_location represented_country on (
 where network >> '97.115.100.128';
 ```
 
+Which gives a result of:
+
 ```
 -[ RECORD 1 ]----------------------+--------------
 latitude                           | 45.4804
@@ -260,5 +336,3 @@ registered_country_country_name    | United States
 represented_country_continent_name | 
 represented_country_country_name   | 
 ```
-
-## Summary
