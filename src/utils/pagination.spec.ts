@@ -45,6 +45,10 @@ describe('pagination', () => {
       expect(getPreviousPage('bar')).toHaveProperty('to', 'foo');
     });
 
+    it('returns previous page when current url ends with a slash', () => {
+      expect(getPreviousPage('bar/')).toHaveProperty('to', 'foo');
+    });
+
     it('returns nothing if previous page does not exist', () => {
       expect(getPreviousPage('foo')).toBeUndefined;
     });
