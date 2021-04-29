@@ -102,11 +102,11 @@ const navigation: IItem[] = [
         items: [
           {
             title: 'Import to PostgreSQL',
-            to: '/geoip/importing-databases/postgresql.mdx',
+            to: '/geoip/importing-databases/postgresql',
           },
           {
             title: 'Import to MySQL',
-            to: '/geoip/importing-databases/mysql.mdx',
+            to: '/geoip/importing-databases/mysql',
           },
         ],
         title: 'Importing Databases',
