@@ -31,7 +31,7 @@ const flattenedNav = flattenTree(navigation);
 
 const findNodeIndex = (currentPath: string): number => findIndex(
   flattenedNav,
-  (item: IInternalItem) => item.to === currentPath
+  (item: IInternalItem) => item.to === currentPath.replace(/\/$/, '')
 );
 
 export const getPreviousPage = (currentPath: string): void | IInternalItem => {
