@@ -55,12 +55,12 @@ const Home: React.FC<IHome> = (props) => {
         <h2
           className={styles.calloutSubheading}
         >
-          Develop applications using
+          Develop applications using industry-leading
           {' '}
           <span
             className={styles.noWrap}
           >
-            industry leading IP intelligence.
+            IP intelligence and risk scoring.
           </span>
         </h2>
       </div>
