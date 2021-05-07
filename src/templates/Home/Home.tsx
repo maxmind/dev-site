@@ -76,7 +76,7 @@ const Home: React.FC<IHome> = (props) => {
               <A
                 href="https://www.maxmind.com/en/solutions/minfraud-services"
               >
-                Minfraud Web Services
+                minFraud Web Services
               </A>
               .
             </>
