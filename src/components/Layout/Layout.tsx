@@ -20,48 +20,62 @@ interface ILayout {
   children: React.ReactNode;
   className?: string;
   description?: string;
+  hasSidebar?: boolean,
   isSidebarOpen?: boolean;
   keywords?: string[];
-  // TODO - Add proper typing for `tableOfContents'
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  tableOfContents?: any;
   title: string;
   type?: 'geoip' | 'minfraud';
 }
 
 const Layout: React.FC<ILayout> = (props) => {
+  const {
+    className,
+    children,
+    description,
+    hasSidebar,
+    isSidebarOpen: sidebarState,
+    keywords,
+    title,
+    type,
+  } = props;
+
   const [
     isSidebarOpen,
     setIsSidebarOpen,
-  ] = useState(props.isSidebarOpen);
+  ] = useState(sidebarState);
 
   const toggleSidebar = (): void => setIsSidebarOpen(!isSidebarOpen);
 
   const pageTypeClass: string | undefined = [
     'geoip',
     'minfraud',
-  ].includes(props.type as string)
-    ? `page-type--${props.type}`
+  ].includes(type as string)
+    ? `page-type--${type}`
     : undefined;
 
   return (
-    <>
+    <div
+      className={classNames(
+        styles.container,
+        className,
+      )}
+    >
       <SEO
         bodyAttributes={{
           class: classNames(
             pageTypeClass,
           ),
         }}
-        description={props.description}
+        description={description}
         meta={[
-          ...(props.keywords ? [
+          ...(keywords ? [
             {
-              content: props.keywords.join(', '),
+              content: keywords.join(', '),
               name: 'keywords',
             },
           ] : []),
         ]}
-        title={props.title}
+        title={title}
       />
 
       <Header
@@ -72,7 +86,10 @@ const Layout: React.FC<ILayout> = (props) => {
       <div
         className={classNames(
           styles.main,
-          isSidebarOpen ? styles['sidebar__open'] : styles['sidebar__hidden']
+          isSidebarOpen ? styles['sidebar__open'] : styles['sidebar__hidden'],
+          {
+            [styles['main__hasSidebar']]: hasSidebar,
+          }
         )}
       >
         <Sidebar />
@@ -82,24 +99,28 @@ const Layout: React.FC<ILayout> = (props) => {
           id="content"
           tabIndex={-1}
         >
-          {props.children}
+          {children}
         </main>
       </div>
 
       <Footer
         id="footer"
       />
-    </>
+    </div>
   );
+};
+
+Layout.defaultProps = {
+  hasSidebar: true,
 };
 
 Layout.propTypes = {
   children: PropTypes.node.isRequired,
   className: PropTypes.string,
   description: PropTypes.string,
+  hasSidebar: PropTypes.bool,
   isSidebarOpen: PropTypes.bool,
   keywords: PropTypes.array,
-  tableOfContents: PropTypes.any,
   title: PropTypes.string.isRequired,
   type: PropTypes.oneOf([
     'geoip',

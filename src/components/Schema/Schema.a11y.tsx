@@ -20,6 +20,7 @@ describe('<Schema />', () => {
         json={json}
         jsonPointer="/"
         name={'Foo'}
+        productFamily="minfraud"
         services={[
           'score',
           'factors',

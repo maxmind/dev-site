@@ -1,41 +1,56 @@
-.container {
-  display: grid;
-  height: 100%;
-  width: 100%;
+@use '../../styles/variables';
+
+.layout [class^='Layout-module--content'] {
+  --mm-spacing: 20px;
+  background-color: var(--mm-color-sidebar);
 }
 
-.underConstruction {
-  align-self: center;
-  color: #005f82;
+.callout {
+  padding: var(--mm-spacing) var(--mm-spacing) 0;
+  text-align: center;
+}
+
+.calloutHeading {
+  font-family: var(--mm-font-stack-display);
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.2em;
+  margin-bottom: calc(var(--mm-spacing) / 2);
+}
+
+.noWrap {
+  white-space: nowrap;
+}
+
+.calloutSubheading {
+  font-family: var(--mm-font-stack-monospace);
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.products {
   display: grid;
   gap: var(--mm-spacing);
-  grid-template-areas: 'icon' 'text';
-  grid-template-columns: 1fr;
-  grid-template-rows: max-content;
-  justify-self: center;
+  padding: var(--mm-spacing);
 }
 
-.icon {
-  align-self: center;
-  grid-area: icon;
-  height: auto;
-  justify-self: center;
-  width: 25vh;
-}
+@include variables.breakpoint('md') {
+  .layout [class^='Layout-module--content'] {
+    --mm-spacing: 40px;
+    background-color: var(--mm-color-sidebar);
+  }
 
-.text {
-  align-self: center;
-  color: #00adef;
-  font-family: var(--mm-font-stack-display);
-  font-size: 42px;
-  font-weight: 600;
-  grid-area: text;
-  justify-self: center;
-  letter-spacing: 10px;
-  line-height: 1;
-  text-transform: uppercase;
-}
+  .calloutHeading {
+    font-size: 35px;
+  }
 
-.dark {
-  color: #005f82;
+  .calloutSubheading {
+    font-size: 20px;
+  }
+
+  .products {
+    gap: var(--mm-spacing);
+    grid-template-columns: repeat(2, minmax(0, 600px));
+    justify-content: center;
+  }
 }

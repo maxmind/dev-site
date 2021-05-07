@@ -34,10 +34,10 @@ const GLOBALLY_IGNORED_SOURCE_FILES = [
 ];
 
 export default {
-  flags: {
-    FAST_DEV: true,
-    PARALLEL_SOURCING: true,
-  },
+  // flags: {
+  //   FAST_DEV: true,
+  //   PARALLEL_SOURCING: true,
+  // },
   plugins: [
     {
       options: {
