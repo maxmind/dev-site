@@ -5,8 +5,6 @@ import {
   FaRocket as QuickstartIcon,
 } from 'react-icons/fa';
 
-import GeoIPIcon from '../../assets/svgs/geoip-icon.svg';
-import MinFraudIcon from '../../assets/svgs/minfraud-icon.svg';
 import Layout from '../../components/Layout/Layout';
 import LinkButton from '../../components/LinkButton';
 import { a as A } from '../../components/Mdx';
