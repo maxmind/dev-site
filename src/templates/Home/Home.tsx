@@ -111,7 +111,7 @@ const Home: React.FC<IHome> = (props) => {
               {' '}
               <A
                 // eslint-disable-next-line max-len
-                href="https://www.maxmind.com/en/solutions/geoip2-enterprise-product-suite"
+                href="https://www.maxmind.com/en/geoip2-services-and-databases"
               >
                 GeoIP2
               </A>
