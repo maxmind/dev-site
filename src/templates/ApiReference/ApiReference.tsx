@@ -29,7 +29,6 @@ const ApiReference: React.FC<IApiReference> = (props) => {
     description,
     keywords,
     spec: specJson,
-    tableOfContents,
     title,
     type,
   } = props.pageContext;
@@ -50,7 +49,6 @@ const ApiReference: React.FC<IApiReference> = (props) => {
     <Layout
       description={description}
       keywords={keywords}
-      tableOfContents={tableOfContents}
       title={title}
       type={type}
     >

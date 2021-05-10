@@ -1,11 +1,11 @@
 /* eslint-disable filenames/match-exported */
 import { BaseQuery, IBaseQuery } from '../../baseQuery';
 
-export type IHomeContext = IBaseQuery;
+export type IHomeContext = Pick<IBaseQuery, 'frontmatter'>;
 
-const query: QueryFn<IHomeContext> = (
+const query: QueryFn<IBaseQuery & IHomeContext> = (
   graphql: GraphqlFn
-) => graphql<IHomeContext>(`
+) => graphql<IBaseQuery & IHomeContext>(`
   ${BaseQuery}
 
   query PageTemplateQuery {

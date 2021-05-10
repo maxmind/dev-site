@@ -3,6 +3,12 @@
 
 $transition: all 0.15s ease-out;
 
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
 .main {
   background: var(--mm-color-background);
   display: grid;
@@ -12,6 +18,10 @@ $transition: all 0.15s ease-out;
   grid-template-columns: 360px var(--mm-layout-sidebar-width);
   grid-template-rows: 100%;
   transition: $transition;
+}
+
+.main__hasSidebar {
+  visibility: visible;
 }
 
 .content {
@@ -48,10 +58,18 @@ $transition: all 0.15s ease-out;
 }
 
 @include variables.breakpoint('lg') {
-  .main {
+  .main__hasSidebar {
     /* autoprefixer: ignore next */
     grid-template-areas: 'sidebar article';
     grid-template-columns: var(--mm-layout-sidebar-width) calc(100vw - var(--mm-layout-sidebar-width));
+  }
+
+  .main [class^='Sidebar-module'] {
+    display: none;
+  }
+
+  .main__hasSidebar [class^='Sidebar-module'] {
+    display: block;
   }
 
   .content {
