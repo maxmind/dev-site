@@ -133,7 +133,28 @@ olark.identify('8022-431-10-3383');/*]]>*/</script><noscript><a href=\\"https://
     
 <dl id=\\"release-notes\\">
 
-<dt> April 9, 2021</dt>
+<dt> May 10, 2021</dt>
+
+<dd>
+    <p><a href=\\"https://dev.maxmind.com/wp-content/uploads/2021/05/GeoNames-Monthly-Diff-Report-May-2021.csv\\">GeoNames Monthly Diff Report (May 2021)</a></p>
+
+<p>GeoIP2 and GeoLite2 databases incorporate <a href=\\"https://www.geonames.org/\\">GeoNames geographical data</a>, which is made available under the <a href=\\"https://creativecommons.org/licenses/by/4.0/\\">Creative Commons Attribution 4.0 License</a>.</p>
+
+<p>Monthly updates to GeoNames data are incorporated into our databases as we refresh them. Above you will find a CSV report of these changes for the month of May as they relate to the following fields:</p>
+
+<ul>
+	<li><code>geoname_id</code></li>
+	<li><code>country_name</code></li>
+	<li><code>country_code</code></li>
+	<li><code>city_name</code></li>
+	<li><code>subdivision_1_iso_code</code></li>
+	<li><code>subdivision_2_iso_code</code></li>
+</ul>
+
+<p>Note that the values for the &#8216;old&#8217; and &#8216;new&#8217; columns for a given field only differ for the field defined in the &#8216;diff_in&#8217; column.</p>
+
+<p>* This month&#8217;s update includes a significant number of changes to subdivision codes in Algeria and Lithuania.</p>
+</dd><dt> April 9, 2021</dt>
 
 <dd>
     <p><a href=\\"https://dev.maxmind.com/wp-content/uploads/2021/04/GeoNames-Monthly-Diff-Report-April-2021.csv\\">GeoNames Monthly Diff Report (April 2021)</a></p>
@@ -329,10 +350,6 @@ olark.identify('8022-431-10-3383');/*]]>*/</script><noscript><a href=\\"https://
 </ul>
 
 <p>Note that the values for the &#8216;old&#8217; and &#8216;new&#8217; columns for a given field only differ for the field defined in the &#8216;diff_in&#8217; column.</p>
-</dd><dt> September 17, 2020</dt>
-
-<dd>
-    <p>Effective September 21, 2020 we will be flagging significantly more IP networks used by data centers and businesses as <code>Corporate</code> in the <a href=\\"https://www.maxmind.com/en/geoip2-connection-type-database\\">GeoIP2 Connection Type database</a>. We expect the size of the MMDB file to increase by about 20% and the size of the CSV file to increase by about 210%.</p>
 </dd></dl>
     
 </div>            </article>
