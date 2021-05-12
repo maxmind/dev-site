@@ -4,6 +4,7 @@ import React from 'react';
 import { FaBars, FaTimes } from 'react-icons/fa';
 
 import Logo from '../../assets/svgs/maxmind-logo.svg';
+import useSystemStatus from '../../hooks/useSystemStatus';
 import AccessibilityNav from './AccessibilityNav';
 import SearchBar from './SearchBar';
 
@@ -15,12 +16,34 @@ interface IHeader {
 }
 
 const Header: React.FC<IHeader> = (props) => {
+  const systemStatus = useSystemStatus();
   const { isSidebarOpen, toggleSidebar } = props;
   return (
     <>
       <AccessibilityNav
         className={styles.accessibilityNav}
       />
+      {systemStatus && systemStatus.class !== 'operational' && (
+        <div
+          className={styles.systemStatus}
+        >
+          <div
+            className={styles['systemStatus__content']}
+          >
+            {systemStatus.icon}
+            {' '}
+            {systemStatus.title}
+            {' - '}
+            {systemStatus.message}
+            {' '}
+            <a
+              href="https://status.maxmind.com"
+            >
+              More info &raquo;
+            </a>
+          </div>
+        </div>
+      )}
       <header
         className={styles.header}
       >
