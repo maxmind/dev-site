@@ -1,0 +1,52 @@
+---
+draft: false
+title: GeoIP Legacy
+subtitle: Databases and Web Services
+icon: GeoIPIcon
+---
+
+import {
+  FaCloud as WebServicesIcon,
+  FaDatabase as DatabasesIcon,
+  FaStar,
+} from 'react-icons/fa';
+
+<Alert type="warning">
+We are retiring our GeoIP Legacy **database** formats at the end of May 2022.
+Please see our [blog post](https://blog.maxmind.com/2020/06/01/retirement-of-geoip-legacy-downloadable-databases-in-may-2022/)
+for more information.
+
+We are planning to make a number of data changes to the minFraud Legacy
+Standard and Premium, and GeoIP Legacy City and Insights (formerly Omni) web
+services at the end of May 2022. Please see our [blog post](https://blog.maxmind.com/2020/06/15/data-changes-to-geoip-legacy-and-minfraud-legacy-web-services-in-may-2022/)
+for more information, and how to prepare.
+</Alert>
+
+<Alert>
+Note: This documentation is for the legacy GeoIP databases and services. New
+customers do not have access to legacy databases and services. Please use 
+[GeoIP2 Databases and Web Services](/geoip).
+</Alert>
+
+<LinkGroupContainer>
+  <LinkGroup heading="Resources">
+    <LinkGroupCard
+      description="See the most important changes between GeoIP Legacy and GeoIP2"
+      heading="What's new in GeoIP2"
+      icon={FaStar}
+      to="/geoip/whats-new-in-geoip2"
+    />
+    <LinkGroupCard
+      description="Detailed documentation of GeoIP Legacy downloadable database and CSV usage"
+      heading="GeoIP Legacy Database Documentation"
+      icon={DatabasesIcon}
+      to="/geoip/legacy/databases"
+    />
+    <LinkGroupCard
+      description="Detailed documentation of GeoIP Legacy web service usage"
+      heading="GeoIP Legacy Web Service Documentation"
+      icon={WebServicesIcon}
+      to="/geoip/legacy/web-services"
+    />
+  </LinkGroup>
+</LinkGroupContainer>

@@ -58,6 +58,11 @@
         "type": 302
       },
       {
+        "destination": "/geoip/geolocate-an-ip/client-side-javascript",
+        "source": "/geoip/geoip2/javascript/",
+        "type": 302
+      },
+      {
         "destination": "/geoip/geolocate-an-ip/databases",
         "source": "/geoip/geoip2/downloadable",
         "type": 302
@@ -65,6 +70,16 @@
       {
         "destination": "/geoip/geolocate-an-ip/web-services",
         "source": "/geoip/geoip2/web-services",
+        "type": 302
+      },
+      {
+        "destination": "/geoip/legacy/databases",
+        "source": "/geoip/legacy/csv/",
+        "type": 302
+      },
+      {
+        "destination": "/geoip/legacy/databases",
+        "source": "/geoip/legacy/downloadable/",
         "type": 302
       },
       {
@@ -93,6 +108,11 @@
         "type": 302
       },
       {
+        "destination": "/geoip/whats-new-in-geoip2",
+        "source": "/geoip/geoip2/whats-new-in-geoip2/",
+        "type": 302
+      },
+      {
         "destination": "/minfraud/release-notes/rss.xml",
         "source": "/feed/?post_type=release_note&product=minfraud",
         "type": 302
@@ -105,6 +125,11 @@
       {
         "destination": "/minfraud/track-devices",
         "source": "/minfraud/device",
+        "type": 302
+      },
+      {
+        "destination": "https://github.com/maxmind/geoip-api-mod_geoip2",
+        "source": "/geoip/legacy/mod_geoip2/",
         "type": 302
       }
     ],

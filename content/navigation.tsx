@@ -161,6 +161,20 @@ const navigation: IItem[] = [
         to: '/geoip/release-notes',
       },
       {
+        items: [
+          {
+            title: 'Legacy Databases',
+            to: '/geoip/legacy/databases',
+          },
+          {
+            title: 'Legacy Web Services',
+            to: '/geoip/legacy/web-services',
+          },
+        ],
+        title: 'GeoIP Legacy',
+        to: '/geoip/legacy',
+      },
+      {
         title: 'MaxMind Server IP Addresses',
         to: '/maxmind-server-ip-addresses',
       },
@@ -177,7 +191,7 @@ const navigation: IItem[] = [
         url: 'https://github.com/maxmind/MaxMind-DB/blob/main/MaxMind-DB-spec.md',
       },
     ],
-    title: 'GeoIP and GeoLite',
+    title: 'GeoIP2 and GeoLite2',
     to: '/geoip',
   },
 ];

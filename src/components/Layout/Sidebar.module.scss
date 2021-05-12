@@ -16,7 +16,7 @@
 
 .nav {
   height: calc(100vh - var(--page-header-height));
-  overflow-y: scroll;
+  overflow-y: auto;
   position: sticky;
   top: var(--page-header-height);
 }
