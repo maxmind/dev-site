@@ -344,6 +344,7 @@ module.exports = {
       'IntersectionObserver',
       'Promise.all',
       'Promise.race',
+      'Promise.resolve',
       'URLSearchParams',
     ],
     react: {

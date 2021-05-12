@@ -2,6 +2,7 @@ import { useLocation } from '@reach/router';
 import { mount  } from 'enzyme';
 import { useStaticQuery } from 'gatsby';
 import * as React from 'react';
+import { act } from 'react-dom/test-utils';
 
 import Home from './Home';
 
@@ -21,8 +22,33 @@ import Home from './Home';
   },
 });
 
-describe('Overview', () => {
+describe('Home', () => {
+  beforeEach(() => {
+    fetchMock.resetMocks();
+  });
+
   it('type of `error` has no Pa11y violations', async () => {
+    fetchMock.mockIf(
+      /^https:\/\/status\.maxmind\.com.*$/gm,
+      (): any => Promise.resolve({
+        body: JSON.stringify({
+          result: {
+            status_overall: {
+              status: 'Operational',
+              status_code: 100,
+              updated: '2021-05-10T17:39:33.411Z',
+            },
+          },
+        }),
+        headers: [
+          [
+            'Content-Type',
+            'application/json',
+          ],
+        ],
+      })
+    );
+
     const component = mount(
       <Home
         pageContext={{
@@ -35,6 +61,7 @@ describe('Overview', () => {
         }}
       />
     );
+
     const results = await pa11y(component, {
       hideElements: [
         /* eslint-disable max-len */
