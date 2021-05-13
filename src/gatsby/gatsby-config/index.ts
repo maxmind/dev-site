@@ -101,14 +101,12 @@ export default {
     'gatsby-plugin-sharp',
     {
       options: {
-        background_color: '#663399',
+        background_color: '#0b8ad0',
         display: 'minimal-ui',
-        // This path must be relative to the Gatsby root
-        icon: 'src/images/gatsby-icon.png',
-        name: 'gatsby-starter-default',
-        short_name: 'starter',
+        icon: 'src/images/maxmind-icon.png',
+        name: 'MaxMind Developer Portal',
         start_url: '/',
-        theme_color: '#663399',
+        theme_color: '#0b8ad0',
       },
       resolve: 'gatsby-plugin-manifest',
     },
