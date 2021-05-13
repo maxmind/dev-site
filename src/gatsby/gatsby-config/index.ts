@@ -159,6 +159,7 @@ export default {
       resolve: 'gatsby-plugin-google-gtag',
     },
     'gatsby-plugin-advanced-sitemap',
+    'gatsby-plugin-robots-txt',
     // {
     //   options: {
     //     analyzerPort: 3000,
