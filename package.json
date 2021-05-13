@@ -214,7 +214,7 @@
     "lint:styles": "stylelint ./src/**/*.{css,scss,sass}",
     "postinstall": "yarn --cwd functions install",
     "preview": "firebase hosting:channel:deploy $(git rev-parse --abbrev-ref HEAD)",
-    "serve": "firebase serve",
+    "serve": "firebase emulators:start --only functions,hosting",
     "start": "yarn run develop",
     "test": "run-s \"test:* --silent\"",
     "test:a11y": "jest --config .jestrc.a11y.js --no-cache --maxWorkers=4",
