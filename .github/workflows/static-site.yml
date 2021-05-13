@@ -46,32 +46,25 @@ jobs:
       - name: Run accessibility tests
         run: yarn test:a11y
 
-      - name: Test coverage
-        if: ${{ github.event_name == 'pull_request' }}
-        uses: dkershner6/jest-coverage-commenter-action@v1
-        with:
-          github_token: "${{ secrets.GITHUB_TOKEN }}"
-          test_command: "yarn test:unit --coverage"
-
       - name: Build
         run: yarn build
 
-      - name: Deploy to preview channel
+      - name: Deploy to staging project
         if: ${{ github.event_name == 'pull_request' }}
         uses: FirebaseExtended/action-hosting-deploy@v0
         with:
           repoToken: "${{ secrets.GITHUB_TOKEN }}"
-          firebaseServiceAccount: "${{ secrets.FIREBASE_SERVICE_ACCOUNT }}"
+          firebaseServiceAccount: "${{ secrets.STAGING_FIREBASE_SERVICE_ACCOUNT }}"
           expires: 7d
-          projectId: dev-maxmind-com
+          projectId: "${secrets.STAGING_FIREBASE_PROJECT_ID}"
         env:
           FIREBASE_CLI_PREVIEWS: hostingchannels
 
-      - name: Deploy to production channel
-        if: github.event.pull_request.merged == true
+      - name: Deploy to production project
+        if: ${{ github.event.pull_request.merged == true && github.ref == 'refs/heads/main' }}
         uses: FirebaseExtended/action-hosting-deploy@v0
         with:
           repoToken: "${{ secrets.GITHUB_TOKEN }}"
-          firebaseServiceAccount: "${{ secrets.FIREBASE_SERVICE_ACCOUNT }}"
-          projectId: dev-maxmind-com
+          firebaseServiceAccount: "${{ secrets.PRODUCTION_FIREBASE_SERVICE_ACCOUNT }}"
+          projectId: "${secrets.PRODUCTION_FIREBASE_PROJECT_ID}"
           channelId: live
