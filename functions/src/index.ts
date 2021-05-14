@@ -31,7 +31,10 @@ export const feedRewrite = functions.https.onRequest((request, response) => {
   });
 
   if (!isValidHost) {
-    functions.logger.error('Host is invalid.', host);
+    functions.logger.error('Host is invalid.', {
+      header: request.headers['x-forwarded-host'],
+      host,
+    });
     response.status(400).send();
     return;
   }

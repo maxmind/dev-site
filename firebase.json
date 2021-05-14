@@ -3,6 +3,41 @@
     "predeploy": []
   },
   "hosting": {
+    "headers": [
+      {
+        "headers": [
+          {
+            "key": "Cache-Control",
+            "value": "public, max-age=31536000"
+          },
+          {
+            "key": "X-Content-Type-Options",
+            "value": "nosniff"
+          },
+          {
+            "key": "X-Frame-Options",
+            "value": "DENY"
+          },
+          {
+            "key": "X-XSS-Protection",
+            "value": "1; mode=block"
+          },
+          {
+            "key": "Referrer-Policy",
+            "value": "no-referrer"
+          },
+          {
+            "key": "Expect-CT",
+            "value": "max-age=86400"
+          },
+          {
+            "key": "Permissions-Policy",
+            "value": "accelerometer 'none'; ambient-light-sensor 'none'; autoplay 'none'; battery 'none'; camera 'none'; display-capture 'none'; document-domain 'none'; encrypted-media 'none'; fullscreen 'none'; geolocation 'none'; gyroscope 'none'; legacy-image-formats 'none'; magnetometer 'none'; microphone 'none'; midi 'none'; oversized-images 'none'; payment 'none'; picture-in-picture 'none'; publickey-credentials 'none'; sync-xhr 'none'; unoptimized-images 'none'; unsized-media 'none'; usb 'none'; vibrate 'none'; vr 'none'; wake-lock 'none'; xr-spatial-tracking 'none';"
+          }
+        ],
+        "source": "**"
+      }
+    ],
     "ignore": [
       "content",
       "firebase.js",
