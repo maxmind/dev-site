@@ -1,18 +1,18 @@
-name: Static Site – Production
+name: Firebase - Production
 
 on:
   push:
     branches:
       - main
     paths:
-      - '.github/workflows/static-site.yml'
+      - '.github/workflows/firebase-production.yml'
       - 'content/**'
       - 'functions/**'
       - 'gatsby/firebase/firebase.json'
       - 'gatsby/src/**'
 
 jobs:
-  static-site:
+  build-deploy:
     name: Build and Deploy
     runs-on: ubuntu-latest
 
@@ -43,10 +43,20 @@ jobs:
       - name: Build
         run: GATSBY_URL=https://dev.maxmind.com yarn build
 
-      - name: Deploy to production project
+      - name: Deploy Firebase preview channel
         uses: FirebaseExtended/action-hosting-deploy@v0
         with:
           repoToken: "${{ secrets.GITHUB_TOKEN }}"
           firebaseServiceAccount: "${{ secrets.PRODUCTION_FIREBASE_SERVICE_ACCOUNT }}"
           projectId: "${{ secrets.PRODUCTION_FIREBASE_PROJECT_ID }}"
           channelId: live
+
+      - name: Set up Google Cloud SDK
+        uses: google-github-actions/setup-gcloud@master
+        with:
+          project_id: ${{ secrets.PRODUCTION_FIREBASE_PROJECT_ID }}
+          service_account_key: ${{ secrets.PRODUCTION_FIREBASE_SERVICE_ACCOUNT }}
+          export_default_credentials: true
+
+      - name: Deploy all other Firebase resources
+        run: yarn firebase deploy --except hosting --project ${{ secrets.PRODUCTION_FIREBASE_PROJECT_ID }}
