@@ -8,6 +8,8 @@ const allowedHosts = [
 
 export const feedRewrite = functions.https.onRequest((request, response) => {
   let host = request.headers['x-forwarded-host'];
+
+  functions.logger.info('host-header', host);
   const protocol = request.protocol;
 
   if (!host) {
@@ -31,10 +33,7 @@ export const feedRewrite = functions.https.onRequest((request, response) => {
   });
 
   if (!isValidHost) {
-    functions.logger.error('Host is invalid.', {
-      header: request.headers['x-forwarded-host'],
-      host,
-    });
+    functions.logger.error('Host is invalid.', host);
     response.status(400).send();
     return;
   }
