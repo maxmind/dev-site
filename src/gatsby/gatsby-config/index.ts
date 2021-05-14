@@ -169,8 +169,8 @@ export default {
   ],
   siteMetadata: {
     author: '@maxmind',
-    description: 'Developer website for MaxMind.',
-    siteUrl: 'https://dev.maxmind.com',
-    title: 'MaxMind Developer Site',
+    // eslint-disable-next-line max-len
+    description: 'Develop applications using industry-leading IP intelligence and risk scoring.',
+    title: 'MaxMind Developer Portal',
   },
 } as GatsbyConfig;
