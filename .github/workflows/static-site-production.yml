@@ -1,4 +1,4 @@
-name: Static Site
+name: Static Site – Production
 
 on:
   push:
@@ -10,7 +10,6 @@ on:
       - 'functions/**'
       - 'gatsby/firebase/firebase.json'
       - 'gatsby/src/**'
-  pull_request:
 
 jobs:
   static-site:
@@ -41,28 +40,10 @@ jobs:
       - name: Install dependencies
         run: yarn install
 
-      - name: Run unit tests
-        run: yarn test:unit
-
-      - name: Run accessibility tests
-        run: yarn test:a11y
-
       - name: Build
-        run: yarn build
-
-      - name: Deploy to staging project
-        if: ${{ github.event_name == 'pull_request' }}
-        uses: FirebaseExtended/action-hosting-deploy@v0
-        with:
-          repoToken: "${{ secrets.GITHUB_TOKEN }}"
-          firebaseServiceAccount: "${{ secrets.STAGING_FIREBASE_SERVICE_ACCOUNT }}"
-          expires: 7d
-          projectId: "${{ secrets.STAGING_FIREBASE_PROJECT_ID }}"
-        env:
-          FIREBASE_CLI_PREVIEWS: hostingchannels
+        run: GATSBY_URL=https://dev.maxmind.com yarn build
 
       - name: Deploy to production project
-        if: ${{ github.ref == 'refs/heads/main' }}
         uses: FirebaseExtended/action-hosting-deploy@v0
         with:
           repoToken: "${{ secrets.GITHUB_TOKEN }}"
