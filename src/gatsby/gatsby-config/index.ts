@@ -4,6 +4,8 @@ import remarkExternalLinks from 'remark-external-links';
 import createFeed from './feeds/createFeed';
 import sectionize from './remark/sectionize';
 
+const { GATSBY_URL = 'http://localhost:5000' } = process.env;
+
 /**
  * The plugins below must come last in the ordering of the plugins because they
  * are dependent on transforming output of the previously listed plugins.
@@ -157,7 +159,36 @@ export default {
       resolve: 'gatsby-plugin-google-gtag',
     },
     'gatsby-plugin-advanced-sitemap',
-    'gatsby-plugin-robots-txt',
+    {
+      options: {
+        env: {
+          nonProduction: {
+            policy: [
+              {
+                disallow: [
+                  '/',
+                ],
+                userAgent: '*',
+              },
+            ],
+          },
+          production: {
+            policy: [
+              {
+                allow: '/',
+                userAgent: '*',
+              },
+            ],
+          },
+        },
+        host: GATSBY_URL,
+        resolveEnv: () => GATSBY_URL === 'https://dev.maxmind.com'
+          ? 'production'
+          : 'nonProduction',
+        sitemap: `${GATSBY_URL}/sitemap.xml`,
+      },
+      resolve: 'gatsby-plugin-robots-txt',
+    },
     // {
     //   options: {
     //     analyzerPort: 3000,
@@ -171,6 +202,7 @@ export default {
     author: '@maxmind',
     // eslint-disable-next-line max-len
     description: 'Develop applications using industry-leading IP intelligence and risk scoring.',
+    siteUrl: GATSBY_URL,
     title: 'MaxMind Developer Portal',
   },
 } as GatsbyConfig;
