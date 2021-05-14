@@ -1,10 +1,10 @@
-name: Static Site – Staging
+name: Firebase - Staging
 
 on:
   pull_request:
 
 jobs:
-  static-site:
+  build-test-deploy:
     name: Build, Test and Deploy
     runs-on: ubuntu-latest
     env:
@@ -43,7 +43,7 @@ jobs:
       - name: Build
         run: GATSBY_URL=https://${{ secrets.STAGING_FIREBASE_PROJECT_ID }}--${{ env.FIREBASE_CHANNEL_ID }}.web.app yarn build
 
-      - name: Deploy
+      - name: Deploy Firebase preview channel
         uses: FirebaseExtended/action-hosting-deploy@v0
         with:
           repoToken: "${{ secrets.GITHUB_TOKEN }}"
@@ -53,3 +53,13 @@ jobs:
           channelId: "${{ env.FIREBASE_CHANNEL_ID }}"
         env:
           FIREBASE_CLI_PREVIEWS: hostingchannels
+
+      - name: Set up Google Cloud SDK
+        uses: google-github-actions/setup-gcloud@master
+        with:
+          project_id: ${{ secrets.STAGING_FIREBASE_PROJECT_ID }}
+          service_account_key: ${{ secrets.STAGING_FIREBASE_SERVICE_ACCOUNT }}
+          export_default_credentials: true
+
+      - name: Deploy all other Firebase resources
+        run: yarn firebase deploy --except hosting --project ${{ secrets.STAGING_FIREBASE_PROJECT_ID }}
