@@ -6,61 +6,12 @@ import sectionize from './remark/sectionize';
 
 const { GATSBY_URL = 'http://localhost:5000' } = process.env;
 
-const cspDirectives = {
-  'connect-src': [
-    '\'self\'',
-    'www.googleapis.com',
-    'www.google-analytics.com',
-    'knrpc.olark.com',
-  ],
-  'font-src': [
-    '\'self\'',
-    'data:',
-    'static.olark.com',
-  ],
-  'frame-src': [
-    '\'self\'',
-    'static.olark.com',
-  ],
-  'img-src': [
-    '\'self\'',
-    'data: www.google-analytics.com',
-    'log.olark.com',
-  ],
-  'script-src': [
-    '\'self\'',
-    'www.googletagmanager.com',
-    'www.google-analytics.com',
-    'knrpc.olark.com',
-    'static.olark.com',
-    '\'unsafe-inline\' api.olark.com',
-  ],
-  'style-src': [
-    '\'self\'',
-    '\'unsafe-inline\' static.olark.com',
-  ],
-};
-
 /**
  * The plugins below must come last in the ordering of the plugins because they
  * are dependent on transforming output of the previously listed plugins.
  */
 const THESE_PLUGINS_MUST_COME_LAST = [
   'gatsby-plugin-sri',
-  {
-    options: {
-      directives: Object.entries(cspDirectives).reduce((acc, [
-        key,
-        values,
-      ]) => ({
-        ...acc,
-        [key]: values.join(' '),
-      }), {}),
-      mergeScriptHashes: false,
-      mergeStyleHashes: false,
-    },
-    resolve: 'gatsby-plugin-csp',
-  },
 ];
 
 const GATSBY_ROOT = `${__dirname}/../../../`;
