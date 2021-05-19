@@ -198,6 +198,7 @@
   "scripts": {
     "build": "run-p build:*",
     "build:gatsby": "gatsby clean && gatsby build",
+    "build:firebase-config": "node firebase.js",
     "build:functions": "cd functions && yarn build",
     "deploy": "firebase deploy",
     "develop": "gatsby clean && GATSBY_URL=http://localhost:8000 gatsby develop",
