@@ -24,6 +24,7 @@ import Home from './Home';
 
 describe('Home', () => {
   beforeEach(() => {
+    jest.useFakeTimers();
     fetchMock.resetMocks();
   });
 

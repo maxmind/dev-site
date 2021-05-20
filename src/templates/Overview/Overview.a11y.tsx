@@ -24,6 +24,7 @@ import Overview from './Overview';
 
 describe('Overview', () => {
   beforeEach(() => {
+    jest.useFakeTimers();
     fetchMock.resetMocks();
   });
 

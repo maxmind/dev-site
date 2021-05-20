@@ -24,6 +24,7 @@ import Layout from './Layout';
 
 describe('Layout', () => {
   beforeEach(() => {
+    jest.useFakeTimers();
     fetchMock.resetMocks();
   });
 

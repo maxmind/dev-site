@@ -5,6 +5,7 @@ import Footer from './Footer';
 
 describe('Footer', () => {
   beforeEach(() => {
+    jest.useFakeTimers();
     fetchMock.resetMocks();
   });
 
