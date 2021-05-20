@@ -2,7 +2,6 @@ import { useLocation } from '@reach/router';
 import { mount } from 'enzyme';
 import { useStaticQuery } from 'gatsby';
 import * as React from 'react';
-import { act } from 'react-dom/test-utils';
 
 import Layout from './Layout';
 
@@ -24,13 +23,14 @@ import Layout from './Layout';
 
 describe('Layout', () => {
   beforeEach(() => {
+    jest.useFakeTimers();
     fetchMock.resetMocks();
   });
 
   it('has no Pa11y violations', async () => {
     fetchMock.mockIf(
       /^https:\/\/status\.maxmind\.com.*$/gm,
-      (): any => Promise.resolve({
+      () => Promise.resolve({
         body: JSON.stringify({
           result: {
             status_overall: {

@@ -5,13 +5,14 @@ import Footer from './Footer';
 
 describe('Footer', () => {
   beforeEach(() => {
+    jest.useFakeTimers();
     fetchMock.resetMocks();
   });
 
   it('has no Pa11y violations', async () => {
     fetchMock.mockIf(
       /^https:\/\/status\.maxmind\.com.*$/gm,
-      (): any => Promise.resolve({
+      () => Promise.resolve({
         body: JSON.stringify({
           result: {
             status_overall: {

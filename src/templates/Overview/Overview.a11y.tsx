@@ -2,7 +2,6 @@ import { useLocation } from '@reach/router';
 import { mount  } from 'enzyme';
 import { useStaticQuery } from 'gatsby';
 import * as React from 'react';
-import { act } from 'react-dom/test-utils';
 
 import Overview from './Overview';
 
@@ -24,6 +23,7 @@ import Overview from './Overview';
 
 describe('Overview', () => {
   beforeEach(() => {
+    jest.useFakeTimers();
     fetchMock.resetMocks();
   });
 
@@ -31,7 +31,7 @@ describe('Overview', () => {
     jest.useFakeTimers();
     fetchMock.mockIf(
       /^https:\/\/status\.maxmind\.com.*$/gm,
-      (): any => Promise.resolve({
+      () => Promise.resolve({
         body: JSON.stringify({
           result: {
             status_overall: {
