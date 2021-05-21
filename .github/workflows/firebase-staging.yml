@@ -1,0 +1,65 @@
+name: Firebase - Staging
+
+on:
+  pull_request:
+
+jobs:
+  build-test-deploy:
+    name: Build, Test and Deploy
+    runs-on: ubuntu-latest
+    env:
+      FIREBASE_CHANNEL_ID: "pr-${{github.event.number}}"
+
+    steps:
+      - name: Checkout Repo
+        uses: actions/checkout@master
+
+      - name: Get yarn cache directory path
+        id: yarn-cache-dir-path
+        run: echo "::set-output name=dir::$(yarn cache dir)"
+
+      # https://help.github.com/en/actions/configuring-and-managing-workflows/caching-dependencies-to-speed-up-workflows#using-the-cache-action
+      - name: Cache Node modules
+        uses: actions/cache@v1
+        env:
+          cache-name: cache-node-modules
+        with:
+          path: ${{ steps.yarn-cache-dir-path.outputs.dir }}
+          key: ${{ runner.os }}-build-${{ env.cache-name }}-${{ hashFiles('**/yarn.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-build-${{ env.cache-name }}-
+            ${{ runner.os }}-build-
+            ${{ runner.os }}-
+
+      - name: Install dependencies
+        run: yarn install
+
+      - name: Run unit tests
+        run: yarn test:unit
+
+      - name: Run accessibility tests
+        run: yarn test:a11y
+
+      - name: Build
+        run: GATSBY_URL=https://${{ secrets.STAGING_FIREBASE_PROJECT_ID }}--${{ env.FIREBASE_CHANNEL_ID }}.web.app yarn build
+
+      - name: Deploy Firebase preview channel
+        uses: FirebaseExtended/action-hosting-deploy@v0
+        with:
+          repoToken: "${{ secrets.GITHUB_TOKEN }}"
+          firebaseServiceAccount: "${{ secrets.STAGING_FIREBASE_SERVICE_ACCOUNT }}"
+          expires: 7d
+          projectId: "${{ secrets.STAGING_FIREBASE_PROJECT_ID }}"
+          channelId: "${{ env.FIREBASE_CHANNEL_ID }}"
+        env:
+          FIREBASE_CLI_PREVIEWS: hostingchannels
+
+      - name: Set up Google Cloud SDK
+        uses: google-github-actions/setup-gcloud@master
+        with:
+          project_id: ${{ secrets.STAGING_FIREBASE_PROJECT_ID }}
+          service_account_key: ${{ secrets.STAGING_FIREBASE_SERVICE_ACCOUNT }}
+          export_default_credentials: true
+
+      - name: Deploy all other Firebase resources
+        run: yarn firebase deploy --except hosting --project ${{ secrets.STAGING_FIREBASE_PROJECT_ID }}

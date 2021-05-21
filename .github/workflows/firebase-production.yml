@@ -1,19 +1,18 @@
-name: Static Site
+name: Firebase - Production
 
 on:
   push:
     branches:
       - main
     paths:
-      - '.github/workflows/static-site.yml'
+      - '.github/workflows/firebase-production.yml'
       - 'content/**'
       - 'functions/**'
       - 'gatsby/firebase/firebase.json'
       - 'gatsby/src/**'
-  pull_request:
 
 jobs:
-  static-site:
+  build-deploy:
     name: Build and Deploy
     runs-on: ubuntu-latest
 
@@ -41,31 +40,23 @@ jobs:
       - name: Install dependencies
         run: yarn install
 
-      - name: Run unit tests
-        run: yarn test:unit
-
-      - name: Run accessibility tests
-        run: yarn test:a11y
-
       - name: Build
-        run: yarn build
+        run: GATSBY_URL=https://dev.maxmind.com yarn build
 
-      - name: Deploy to staging project
-        if: ${{ github.event_name == 'pull_request' }}
-        uses: FirebaseExtended/action-hosting-deploy@v0
-        with:
-          repoToken: "${{ secrets.GITHUB_TOKEN }}"
-          firebaseServiceAccount: "${{ secrets.STAGING_FIREBASE_SERVICE_ACCOUNT }}"
-          expires: 7d
-          projectId: "${{ secrets.STAGING_FIREBASE_PROJECT_ID }}"
-        env:
-          FIREBASE_CLI_PREVIEWS: hostingchannels
-
-      - name: Deploy to production project
-        if: ${{ github.ref == 'refs/heads/main' }}
+      - name: Deploy Firebase preview channel
         uses: FirebaseExtended/action-hosting-deploy@v0
         with:
           repoToken: "${{ secrets.GITHUB_TOKEN }}"
           firebaseServiceAccount: "${{ secrets.PRODUCTION_FIREBASE_SERVICE_ACCOUNT }}"
           projectId: "${{ secrets.PRODUCTION_FIREBASE_PROJECT_ID }}"
           channelId: live
+
+      - name: Set up Google Cloud SDK
+        uses: google-github-actions/setup-gcloud@master
+        with:
+          project_id: ${{ secrets.PRODUCTION_FIREBASE_PROJECT_ID }}
+          service_account_key: ${{ secrets.PRODUCTION_FIREBASE_SERVICE_ACCOUNT }}
+          export_default_credentials: true
+
+      - name: Deploy all other Firebase resources
+        run: yarn firebase deploy --except hosting --project ${{ secrets.PRODUCTION_FIREBASE_PROJECT_ID }}

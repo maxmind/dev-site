@@ -117,7 +117,7 @@
 .copyright {
   font-size: 12px;
   grid-area: copyright;
-  padding: var(--mm-spacing);
+  padding: var(--mm-spacing) var(--mm-spacing) calc(var(--mm-spacing) * 2.5);
   text-align: center;
 }
 

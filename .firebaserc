@@ -1,20 +1,5 @@
 {
   "projects": {
-    "default": "dev-maxmind-com"
-  },
-  "targets": {
-    "dev-maxmind-com": {
-      "hosting": {
-        "production": [
-          "dev-maxmind-com"
-        ],
-        "staging": [
-          "staging-dev-maxmind-com"
-        ],
-        "local": [
-          "staging-dev-maxmind-com"
-        ]
-      }
-    }
+    "default": "mm-static-site-staging"
   }
 }

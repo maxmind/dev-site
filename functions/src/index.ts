@@ -1,19 +1,21 @@
 import * as functions from 'firebase-functions';
 
+import releaseNoteRedirects from './release-note-redirects';
+
 const allowedHosts = [
   /^localhost:5000$/,
-  /^dev-maxmind-com.*\.web\.app$/,
+  /^mm-static-site-staging--pr-\d+-\w+\.web\.app$/,
   /^dev\.maxmind\.com$/,
 ];
 
-export const feedRewrite = functions.https.onRequest((request, response) => {
+const parseHost = (request: functions.Request) => {
   let host = request.headers['x-forwarded-host'];
-  const protocol = request.protocol;
+
+  functions.logger.info('host-header', host);
 
   if (!host) {
     functions.logger.error('Host not found.', host);
-    response.status(400).send();
-    return;
+    return undefined;
   }
 
   // It is possible to have multiple forwarded hosts defined.
@@ -32,6 +34,17 @@ export const feedRewrite = functions.https.onRequest((request, response) => {
 
   if (!isValidHost) {
     functions.logger.error('Host is invalid.', host);
+    return undefined;
+  }
+
+  return host;
+};
+
+export const feedRewrite = functions.https.onRequest((request, response) => {
+  const protocol = request.protocol;
+  const host = parseHost(request);
+
+  if (!host) {
     response.status(400).send();
     return;
   }
@@ -48,4 +61,25 @@ export const feedRewrite = functions.https.onRequest((request, response) => {
   }
 
   return response.redirect(origin);
+});
+
+export const releaseNoteRedirect = functions.https.onRequest((request, response) => {
+  const protocol = request.protocol;
+  const host = parseHost(request);
+
+  if (!host) {
+    response.status(400).send();
+    return;
+  }
+
+  const origin = `${protocol}://${host}`;
+  const path = request.path;
+
+  const redirect = releaseNoteRedirects.find(el => path.startsWith(el.source));
+
+  if (redirect) {
+    return response.redirect(`${origin}${redirect.destination}`, 302);
+  }
+
+  return response.redirect(origin, 302);
 });

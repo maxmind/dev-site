@@ -4,26 +4,14 @@ import remarkExternalLinks from 'remark-external-links';
 import createFeed from './feeds/createFeed';
 import sectionize from './remark/sectionize';
 
+const { GATSBY_URL = 'http://localhost:5000' } = process.env;
+
 /**
  * The plugins below must come last in the ordering of the plugins because they
  * are dependent on transforming output of the previously listed plugins.
  */
 const THESE_PLUGINS_MUST_COME_LAST = [
   'gatsby-plugin-sri',
-  {
-    options: {
-      directives: {
-        // eslint-disable-next-line quotes
-        'connect-src': "'self' www.googleapis.com www.google-analytics.com",
-        // eslint-disable-next-line quotes
-        'img-src': "'self' data: www.google-analytics.com",
-        'script-src':
-        // eslint-disable-next-line quotes
-          "'self' www.googletagmanager.com www.google-analytics.com",
-      },
-    },
-    resolve: 'gatsby-plugin-csp',
-  },
 ];
 
 const GATSBY_ROOT = `${__dirname}/../../../`;
@@ -101,14 +89,12 @@ export default {
     'gatsby-plugin-sharp',
     {
       options: {
-        background_color: '#663399',
+        background_color: '#0b8ad0',
         display: 'minimal-ui',
-        // This path must be relative to the Gatsby root
-        icon: 'src/images/gatsby-icon.png',
-        name: 'gatsby-starter-default',
-        short_name: 'starter',
+        icon: 'src/images/maxmind-icon.png',
+        name: 'MaxMind Developer Portal',
         start_url: '/',
-        theme_color: '#663399',
+        theme_color: '#0b8ad0',
       },
       resolve: 'gatsby-plugin-manifest',
     },
@@ -158,6 +144,37 @@ export default {
       },
       resolve: 'gatsby-plugin-google-gtag',
     },
+    'gatsby-plugin-advanced-sitemap',
+    {
+      options: {
+        env: {
+          nonProduction: {
+            policy: [
+              {
+                disallow: [
+                  '/',
+                ],
+                userAgent: '*',
+              },
+            ],
+          },
+          production: {
+            policy: [
+              {
+                allow: '/',
+                userAgent: '*',
+              },
+            ],
+          },
+        },
+        host: GATSBY_URL,
+        resolveEnv: () => GATSBY_URL === 'https://dev.maxmind.com'
+          ? 'production'
+          : 'nonProduction',
+        sitemap: `${GATSBY_URL}/sitemap.xml`,
+      },
+      resolve: 'gatsby-plugin-robots-txt',
+    },
     // {
     //   options: {
     //     analyzerPort: 3000,
@@ -169,8 +186,9 @@ export default {
   ],
   siteMetadata: {
     author: '@maxmind',
-    description: 'Developer website for MaxMind.',
-    siteUrl: 'https://dev.maxmind.com',
-    title: 'MaxMind Developer Site',
+    // eslint-disable-next-line max-len
+    description: 'Develop applications using industry-leading IP intelligence and risk scoring.',
+    siteUrl: GATSBY_URL,
+    title: 'MaxMind Developer Portal',
   },
 } as GatsbyConfig;
