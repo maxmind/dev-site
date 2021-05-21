@@ -12,8 +12,8 @@ on:
       - 'gatsby/src/**'
 
 jobs:
-  build-deploy:
-    name: Build and Deploy
+  production-build-test-deploy:
+    name: Production - Build, Test, and Deploy
     runs-on: ubuntu-latest
 
     steps:
@@ -39,6 +39,12 @@ jobs:
 
       - name: Install dependencies
         run: yarn install
+
+      - name: Run unit tests
+        run: yarn test:unit
+
+      - name: Run accessibility tests
+        run: yarn test:a11y
 
       - name: Build
         run: GATSBY_URL=https://dev.maxmind.com yarn build
