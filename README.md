@@ -49,7 +49,8 @@ yarn install
 
 #### Development Server
 
-The development server watches files, rebuilds the site, and reloads the browser when files change.
+The development server watches files, rebuilds the site, and reloads the browser
+when files change.
 
 ```sh
 yarn develop
@@ -57,30 +58,45 @@ yarn develop
 
 #### Static Server
 
-The static server is useful for testing features that might only be relevant to the production build, such as CSP Policies, SRI hashes, and Firebase routing rules, such as 301/302 redirects or url rewrites.
+The static server is useful for testing features that might only be relevant to
+the production build, such as CSP Policies, SRI hashes, Firebase routing
+rules (301/302 redirects or url rewrites), and Firebase functions.
+
 
 ```sh
-yarn serve
+yarn build && yarn serve
 ```
 
 ### Testing
 
 ```sh
-yarn test
+yarn test             # runs all tests
+yarn test:a11y        # runs accessibility tests
+yarn test:unit        # runs unit tests
+yarn test:regressions # runs regression tests
 ```
 
 ### Deployments
 
-This project can be deployed to a staging environment or a production environment.
+This project has two environments: staging environment and production. All
+preview links are deployed to the staging environment. The production
+environment can only be deploy to via a PR being merged into `main`.
 
-#### Staging Environment
+#### Preview Link Generation
 
-Users authenticated with the Firebase CLI can deploy to the staging site by running the following from the root of the project.
+All PRs will be assigned a preview link during the CI/CD process. These links
+are good for 7 days. To regenerate a link, delete the comment and run the CI/CD
+action again.
+
+Users authenticated with the Firebase CLI can generate an ad-hoc preview link
+site by running the following from the root of the project.
 
 ```sh
-yarn deploy
+yarn build && yarn preview
 ```
 
-### Production Environment
+#### Firebase Functions
 
-Deployment to production is only meant to be done from via GitHub actions as part of our CI/CD pipeline.
+**Firebase function resources are shared throughout environments.** If two PRs
+have changes to Firebase functions, the deployed functions will be those of the
+PR whose `Firebase - Staging` GitHub workflow has run most recently.
