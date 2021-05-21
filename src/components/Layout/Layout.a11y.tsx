@@ -22,7 +22,33 @@ import Layout from './Layout';
 });
 
 describe('Layout', () => {
+  beforeEach(() => {
+    jest.useFakeTimers();
+    fetchMock.resetMocks();
+  });
+
   it('has no Pa11y violations', async () => {
+    fetchMock.mockIf(
+      /^https:\/\/status\.maxmind\.com.*$/gm,
+      () => Promise.resolve({
+        body: JSON.stringify({
+          result: {
+            status_overall: {
+              status: 'Operational',
+              status_code: 100,
+              updated: '2021-05-10T17:39:33.411Z',
+            },
+          },
+        }),
+        headers: [
+          [
+            'Content-Type',
+            'application/json',
+          ],
+        ],
+      })
+    );
+
     const component = mount(
       <Layout
         isSidebarOpen={true}

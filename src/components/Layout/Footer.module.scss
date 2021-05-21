@@ -67,6 +67,25 @@
   }
 }
 
+.status {
+  position: relative;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.statusIcon {
+  left: -10px;
+  position: absolute;
+  top: 50%;
+  transform: translate(-100%, -50%);
+}
+
+.status:hover .statusText {
+  text-decoration: underline;
+}
+
 .branding {
   /* autoprefixer: ignore next */
   align-items: flex-end;

@@ -4,6 +4,7 @@ import '../src/styles/global.scss';
 import { ReactWrapper } from 'enzyme';
 import fs from 'fs';
 import Slugger from 'github-slugger';
+import fetchMock from 'jest-fetch-mock';
 import { configurePa11y } from 'jest-pa11y';
 import { recorders } from 'jest-style-transformer-utils';
 import { dirname } from 'path';
@@ -16,6 +17,8 @@ interface IIssue {
   [key: string]: string;
   selector: string;
 }
+
+fetchMock.enableMocks();
 
 const _pa11y = configurePa11y({
   rootElement: `#${ROOT_ELEMENT}`,

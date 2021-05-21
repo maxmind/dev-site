@@ -21,8 +21,34 @@ import Home from './Home';
   },
 });
 
-describe('Overview', () => {
+describe('Home', () => {
+  beforeEach(() => {
+    jest.useFakeTimers();
+    fetchMock.resetMocks();
+  });
+
   it('type of `error` has no Pa11y violations', async () => {
+    fetchMock.mockIf(
+      /^https:\/\/status\.maxmind\.com.*$/gm,
+      () => Promise.resolve({
+        body: JSON.stringify({
+          result: {
+            status_overall: {
+              status: 'Operational',
+              status_code: 100,
+              updated: '2021-05-10T17:39:33.411Z',
+            },
+          },
+        }),
+        headers: [
+          [
+            'Content-Type',
+            'application/json',
+          ],
+        ],
+      })
+    );
+
     const component = mount(
       <Home
         pageContext={{
@@ -35,6 +61,7 @@ describe('Overview', () => {
         }}
       />
     );
+
     const results = await pa11y(component, {
       hideElements: [
         /* eslint-disable max-len */
