@@ -4,8 +4,8 @@ on:
   pull_request:
 
 jobs:
-  build-test-deploy:
-    name: Build, Test and Deploy
+  staging-build-test-deploy:
+    name: Staging - Build, Test, and Deploy
     runs-on: ubuntu-latest
     env:
       FIREBASE_CHANNEL_ID: "pr-${{github.event.number}}"
