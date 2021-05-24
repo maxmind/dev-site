@@ -170,6 +170,10 @@ const navigation: IItem[] = [
             title: 'Legacy Web Services',
             to: '/geoip/legacy/web-services',
           },
+          {
+            title: 'Legacy JavaScript',
+            to: '/geoip/legacy/javascript',
+          },
         ],
         title: 'GeoIP Legacy',
         to: '/geoip/legacy',

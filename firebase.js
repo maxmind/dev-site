@@ -264,14 +264,11 @@ const config = {
         source: '/geoip/legacy/release-notes/',
         type: 302,
       },
-
-      // ⚠️ - Port needed
-      // {
-      //   destination: '',
-      //   source: '/geoip/legacy/javascript/',
-      //   type: 302,
-      // },
-
+      {
+        destination: '/geoip/legacy/javascript',
+        source: '/geoip/legacy/javascript/',
+        type: 302,
+      },
       {
         destination: '/geoip',
         source: '/geoip/geoip2/',
@@ -335,13 +332,11 @@ const config = {
         source: '/minfraud/dispositions-api/',
         type: 302,
       },
-
-      // ⚠️ - Port needed
-      // {
-      //   destination: '',
-      //   source: '/geoip/legacy/migrating-away-from-our-legacy-geoip-javascript-services/',
-      //   type: 302,
-      // },
+      {
+        destination: '/geoip/legacy/javascript',
+        source: '/geoip/legacy/migrating-away-from-our-legacy-geoip-javascript-services/',
+        type: 302,
+      },
 
       // ✅ Recommendation: let this 404
       // {
