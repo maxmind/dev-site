@@ -282,34 +282,31 @@ const config = {
         source: '/geoip/geoip2/javascript/tutorial/',
         type: 302,
       },
-
-      // ⚠️ - Port needed
-      // {
-      //   destination: '',
-      //   source: '/geoip/legacy/codes/',
-      //   type: 302,
-      // },
-      // {
-      //   destination: '',
-      //   source: '/geoip/legacy/codes/country_continent/',
-      //   type: 302,
-      // },
-      // {
-      //   destination: '',
-      //   source: '/geoip/legacy/codes/iso3166/',
-      //   type: 302,
-      // },
-      // {
-      //   destination: '',
-      //   source: '/geoip/legacy/codes/eu_country_list/',
-      //   type: 302,
-      // },
-      // {
-      //   destination: '',
-      //   source: '/geoip/legacy/codes/ap_country_list/',
-      //   type: 302,
-      // },
-
+      {
+        destination: '/geoip/legacy/codes',
+        source: '/geoip/legacy/codes/',
+        type: 302,
+      },
+      {
+        destination: '/geoip/legacy/codes',
+        source: '/geoip/legacy/codes/country_continent/',
+        type: 302,
+      },
+      {
+        destination: '/geoip/legacy/codes',
+        source: '/geoip/legacy/codes/iso3166/',
+        type: 302,
+      },
+      {
+        destination: '/geoip/legacy/codes',
+        source: '/geoip/legacy/codes/eu_country_list/',
+        type: 302,
+      },
+      {
+        destination: '/geoip/legacy/codes',
+        source: '/geoip/legacy/codes/ap_country_list/',
+        type: 302,
+      },
       {
         destination: 'https://github.com/maxmind/MaxMind-DB/blob/main/MaxMind-DB-spec.md',
         source: '/maxmind-db/',
