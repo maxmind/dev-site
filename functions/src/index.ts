@@ -4,6 +4,7 @@ import releaseNoteRedirects from './release-note-redirects';
 
 const allowedHosts = [
   /^localhost:5000$/,
+  /^mm-static-site-staging\.web\.app$/,
   /^mm-static-site-staging--pr-\d+-\w+\.web\.app$/,
   /^dev\.maxmind\.com$/,
 ];
