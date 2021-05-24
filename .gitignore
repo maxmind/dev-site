@@ -77,3 +77,6 @@ firebase.json
 
 # Jest Pa11y
 **/__a11y__
+
+# Misc
+.tmp

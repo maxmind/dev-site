@@ -161,7 +161,8 @@
     "stylelint-config-sass-guidelines": "^8.0.0",
     "stylelint-no-unsupported-browser-features": "^4.0.0",
     "stylelint-order": "^4.1.0",
-    "ts-jest": "^26.4.1"
+    "ts-jest": "^26.4.1",
+    "xml2js": "^0.4.23"
   },
   "engines": {
     "node": ">=12.16.0",
