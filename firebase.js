@@ -71,6 +71,7 @@ const config = {
               'connect-src': [
                 cspKeywords.SELF,
                 'knrpc.olark.com',
+                'status.maxmind.com',
                 'www.google-analytics.com',
                 'www.googleapis.com',
               ],
