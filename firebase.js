@@ -320,12 +320,11 @@ const config = {
       //   type: 302,
       // },
 
-      // ⚠️ - Port needed
-      // {
-      //   destination: '',
-      //   source: '/minfraud/whats-new-in-minfraud-score-and-minfraud-insights/',
-      //   type: 302,
-      // },
+      {
+        destination: '/minfraud/whats-new-in-minfraud-score-and-minfraud-insights',
+        source: '/minfraud/whats-new-in-minfraud-score-and-minfraud-insights/',
+        type: 302,
+      },
 
       {
         destination: '/minfraud/working-with-transaction-dispositions',

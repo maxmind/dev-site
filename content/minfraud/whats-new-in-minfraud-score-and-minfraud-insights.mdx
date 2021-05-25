@@ -1,0 +1,210 @@
+---
+draft: false
+title: What’s New in minFraud Score, minFraud Insights, and minFraud Factors
+---
+
+MaxMind minFraud Score, minFraud Insights, and minFraud Factors provide a modern
+RESTful way to access the minFraud data services. This document outlines the
+major changes for developers when using these services.
+
+For more information about ongoing enhancements to the minFraud services, see
+our [release notes](/minfraud/release-notes).
+
+## General Changes
+
+The minFraud web services now follow REST principles.
+
+Authentication is done using [basic authentication](https://en.wikipedia.org/wiki/Basic_access_authentication)
+over an SSL connection rather than passing the license key as a query parameter.
+
+All requests are made by a POST of a structured JSON document to the web
+service.
+
+When an error occurs, we now return an appropriate HTTP error code instead of
+simply returning a 200 with an error in the document. We also return a JSON
+document with details about the error in most cases.
+
+Successful responses also return a JSON document. All documents, both successful
+and error, are in the form of a JSON object.
+
+## Data Changes
+
+### Inputs
+The following inputs have been added to help us provide you with the most
+accurate risk assessment possible. Please see the [Request API documentation](https://mm-static-site-staging.web.app/minfraud/api-documentation/requests)
+for a complete description.
+
+* `credit_card`
+  * `token`
+  * `device`
+  * `session_age`
+  * `session_id`
+
+* `event`
+  * `time`
+  * `type`
+
+* `billing`
+  * `first_name`
+  * `last_name`
+  * `company`
+  * `address`
+  * `address_2`
+  * `phone_number`
+  * `phone_country_code`
+
+* `shipping`
+  * `first_name`
+  * `last_name`
+  * `company`
+  * `address_2`
+  * `phone_number`
+  * `phone_country_code`
+  * `delivery_speed`
+
+* `account`
+  * `user_id`
+
+* `email`
+  * `first_seen`
+
+* `payment`
+  * `processor`
+  * `was_authorized`
+  * `decline_code`
+
+* `credit_card`
+  * `last_4_digits`
+
+* `order`
+  * `affiliate_id`
+  * `discount_code`
+  * `subaffiliate_id`
+  * `referrer_uri`
+
+* `shopping_cart`
+  * `category`
+  * `item_id`
+  * `quantity`
+  * `price`
+
+### minFraud Score Outputs
+minFraud Score does not provide any new data outputs. Rather it provides a
+[simple JSON document](/minfraud/api-documentation/responses) containing the
+transaction’s `risk_score`, `id`, `credits_remaining`, and any warnings related
+to the input provided.
+
+### minFraud Insights Outputs
+minFraud Insights response data builds on our previous web service outputs,
+improving organization and consistency while adding several new data points.
+
+Beyond the new outputs listed below, the service provides
+[GeoIP2 Insights data](/geoip/docs/web-services/responses/#geoip2-insights-body-example)
+for the IP address in the `ip_address` object.
+
+`proxyScore` has been replaced with the IP address risk, `/ip_address/risk`.
+Whereas proxyScore ranged from 0-4, the IP address ranges from 0.01 to 99,
+similar to `risk_score`.
+
+`ountryMatch` has been replaced with `/billing_address/is_in_ip_country` and
+`/shipping_address/is_in_ip_country`.
+
+### New Outputs
+The following outputs have been added.
+
+* `credit_card`
+  * `brand`
+  * `is_prepaid`
+  * `is_virtual`
+  * `type`
+
+* `device` (requires [Device Tracking Add-on](/minfraud/track-devices))
+  * `id`
+  * `confidence`
+  * `last_seen`
+  * `local_time`
+
+* `disposition`
+  * `action`
+  * `reason`
+
+* `email`
+  * `first_seen`
+
+* `ip_address`
+  * `risk`
+
+  * `location`
+    * `average_income`
+    * `local_time`
+    * `population_density`
+
+  * `registered_country`
+
+  * `represented_country`
+
+  * `traits`
+    * `autonomous_system_number`
+    * `autonomous_system_organization`
+    * `is_anonymous`
+    * `is_anonymous_vpn`
+    * `is_hosting_provider`
+    * `is_public_proxy`
+    * `is_satellite_provider`
+    * `is_tor_exit_node`
+    * `is_residential_proxy`
+    * `network`
+    * `static_ip_score`
+    * `user_count`
+
+* `shipping_address`
+  * `latitude`<sup>*</sup>
+  * `longitude`<sup>*</sup>
+  * `distance_to_ip_location`
+  * `distance_to_billing_address`
+  * `is_in_ip_country`
+
+* `billing_address`
+  * `latitude`<sup>*</sup>
+  * `longitude`<sup>*</sup>
+  * `distance_to_ip_location`
+  * `is_in_ip_country`
+
+<small>\* Latitude and longitude are not precise and should not be used to identify a
+particular street address or household.</small>
+
+### Deprecated Outputs
+The following outputs have been removed without a direct replacement.
+
+* `ip_corporateProxy`
+* `highRiskCountry`
+* `highRiskUsername`
+* `highRiskPassword`
+* `custPhoneInBillingLoc`
+* `minFraud Factors Outputs`
+
+In addition to the changes in minFraud Insights, minFraud Factors also included
+the following outputs:
+
+* `subscores`
+  * `avs_result`
+  * `billing_address`
+  * `billing_address_distance_to_ip_location`
+  * `browser`
+  * `chargeback`
+  * `country`
+  * `country_mismatch`
+  * `cvv_result`
+  * `email_address`
+  * `email_domain`
+  * `email_tenure`(deprecated)
+  * `ip_tenure` (deprecated)
+  * `issuer_id_number`
+  * `order_amount`
+  * `phone_number`
+  * `shipping_address_distance_to_ip_location`
+  * `time_of_day`
+
+## More Information
+For more information on these web services, see the full
+[API documentation](/minfraud/api-documentation).
