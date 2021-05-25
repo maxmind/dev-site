@@ -8,7 +8,7 @@ interface  ILinkButton {
   Icon?: React.FC<React.SVGProps<SVGSVGElement>>;
   children?: React.ReactNode;
   text?: string;
-  to: any;
+  to: string;
 }
 
 const LinkButton: React.FC<ILinkButton> = (props) => {

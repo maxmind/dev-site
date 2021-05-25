@@ -127,7 +127,7 @@ functions to perform conversions.
 For cases where you cannot rely on your database to handle conversions, please
 refer to this pseudo-code for calculating the integer value of an IPv4 address:
 
-```
+```bash
 address = '174.36.207.186'
 
 ( o1, o2, o3, o4 ) = address.split('.')
@@ -142,7 +142,7 @@ For the IP address `174.36.207.186` this produces the number 2,921,648,058.
 
 Here is pseudo-code for turning an integer back into an IPv4 address:
 
-```
+```bash
 integer_ip = 2921648058
 
 o1 = int ( ipnum / 16777216 ) % 256;
@@ -158,7 +158,7 @@ address = ( o1, o2, o3, o4 ).join('.')
 You can now incorporate the integer representation of `174.36.207.186` (as
 calculated above) into an SQL query:
 
-```
+```sql
 SELECT ip_country
 FROM geoip
 WHERE
@@ -169,7 +169,7 @@ LIMIT 1
 When using MySQL, you can have the database perform the address to number
 conversion for you:
 
-```
+```sql
 SELECT ip_country
 FROM geoip
 WHERE

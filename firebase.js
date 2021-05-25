@@ -19,7 +19,7 @@ const config = {
         headers: [
           {
             key: 'Cache-Control',
-            value: 'public, max-age=31536000',
+            value: 'public, max-age=31536000, immutable',
           },
           {
             key: 'X-Content-Type-Options',
@@ -71,6 +71,7 @@ const config = {
               'connect-src': [
                 cspKeywords.SELF,
                 'knrpc.olark.com',
+                'status.maxmind.com',
                 'www.google-analytics.com',
                 'www.googleapis.com',
               ],
@@ -122,6 +123,25 @@ const config = {
           },
         ],
         source: '**',
+      },
+      {
+        headers: [
+          {
+            key: 'Cache-Control',
+            value: 'public, max-age=0, must-revalidate',
+          },
+        ],
+        source: `{${[
+          '**/*.html',
+          '**/rss.xml',
+          'app-data.json',
+          'manifest.webmanifest',
+          'page-data/**/page-data.json',
+          'robots.txt',
+          'sitemap.xml',
+          'sitemap-*.xml',
+          'sitemap.xsl',
+        ].join(',')}}`,
       },
     ],
     ignore: [

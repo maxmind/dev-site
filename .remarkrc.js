@@ -57,6 +57,14 @@ module.exports = {
       'lint-no-file-name-mixed-case',
       false,
     ],
+    [
+      'lint-list-item-spacing',
+      false,
+    ],
+    [
+      'lint-fenced-code-flag',
+      false,
+    ],
   ],
   settings: {
     fences: true,

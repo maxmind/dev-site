@@ -102,6 +102,16 @@ export const languages: ILanguage[] = [
     },
   },
   {
+    id: 'csv',
+    label: 'CSV',
+    prismSettings: {
+      whitespace: {
+        indentSize: 2,
+        indentStyle: 'space' as IndentStyle,
+      },
+    },
+  },
+  {
     id: 'go',
     label: 'Go',
     prismSettings: {

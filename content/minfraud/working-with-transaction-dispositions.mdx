@@ -6,17 +6,20 @@ title: Working with Transaction Dispositions
 With minFraud Interactive, customers can create Custom Rules that are used to
 assign a disposition to every transaction received in a minFraud request.
 Custom Rules can set a transaction’s disposition to `accept`, `reject`, or
-`manual_review`. For more information on Custom Rules and Dispositions, see the documentation in our [Support Center](https://support.maxmind.com/minfraud-interactive/).
+`manual_review`. For more information on Custom Rules and Dispositions, see the
+documentation in our [Support Center](https://support.maxmind.com/minfraud-interactive/).
 
-After transactions are received, customers can use the [minFraud Interactive
-interface](https://support.maxmind.com/minfraud-interactive/) to review all transactions dispositioned as `manual_review`.
-Transactions can then either be `accept`ed or `reject`ed, and/or have a note
-added. In order for these manual updates made in minFraud Interactive to be
-useful, they need to find their way back into customers’ systems. The
-Dispositions API allows customers to get a list of the manual updates and notes
-made to their transactions.
+After transactions are received, customers can use the [minFraud Interactive interface](https://support.maxmind.com/minfraud-interactive/)
+to review all transactions dispositioned as `manual_review`. Transactions can
+then either be `accept`ed or `reject`ed, and/or have a note added. In order for
+these manual updates made in minFraud Interactive to be useful, they need to
+find their way back into customers’ systems. The Dispositions API allows
+customers to get a list of the manual updates and notes made to their
+transactions.
 
-**You only need to implement the Dispositions API if you (1) use the minFraud Interactive interface to make manual changes to dispositions, and (2) require those changes to propagate to your own system.**
+**You only need to implement the Dispositions API if you (1) use the minFraud
+Interactive interface to make manual changes to dispositions, and (2) require
+those changes to propagate to your own system.**
 
 ## Making a disposition request
 
@@ -64,8 +67,8 @@ you must accept one of the following:
 * `application/vnd.maxmind.com-disposition-updates+json`
 * `application/vnd.maxmind.com-disposition-updates+json; charset=UTF-8; version=1.0`
 
-If you set the `Accept-Charset` header in your client code, you must accept the 
-`UTF-8` character set. If you don't you will receive a `406 Not Acceptable` 
+If you set the `Accept-Charset` header in your client code, you must accept the
+`UTF-8` character set. If you don't you will receive a `406 Not Acceptable`
 response.
 
 ### Command Line Example Using curl
@@ -203,18 +206,18 @@ description of the error and may change at any time.
 In addition to the errors documented below, client code should also be prepared
 to handle any valid HTTP 4xx or 5xx status code.
 
-| Code                   | HTTP Status                | Error                                                                                                                 |
-| ---------------------- | -------------------------- | --------------------------------------------------------------------------------------------------------------------- |
-| UPDATES_AFTER_REQUIRED | 400 Bad Request            | You have not supplied the `updates_after`  URI parameter.                                                             |
-| TIMESTAMP_INVALID      | 400 Bad Request            | The `updates_after` field must be in RFC 3339 format.                                                                 |
-| PARAMETER_UNKNOWN      | 400 Bad Request            | You have supplied one or more parameters which are not used by this endpoint.                                         |
-| AUTHORIZATION_INVALID  | 401 Unauthorized           | You have supplied an invalid [MaxMind account ID and/or license key](https://www.maxmind.com/en/my_license_key) in the [Authorization](#authorization-and-security) header.                                                            |
-| LICENSE_KEY_REQUIRED   | 401 Unauthorized           | You have not supplied a [MaxMind license key](https://www.maxmind.com/en/my_license_key) in the [Authorization](#authorization-and-security) header.                                                       |
-| ACCOUNT_ID_REQUIRED    | 401 Unauthorized           | You have not supplied a [MaxMind account ID](https://www.maxmind.com/en/my_license_key) in the [Authorization](#authorization-and-security) header.                                                       |
-| PERMISSION_REQUIRED    | 403 Forbidden              | You do not have permission to use the service. Please contact support@maxmind.com for more information.               |
-| (none)                 | 406 Not Acceptable         | Your request included an `Accept-Charset` header that is not supported. `UTF-8` is the only acceptable character set. |
-| (none)                 | 415 Unsupported Media Type | Your request included an `Accept` header that is not supported. The web service cannot return content of that type.   |
-| (none)                 | 503 Service Not Available  | There is a problem with the web service server. You can try this request again later.                                 |
+| Code                   | HTTP Status                | Error                                                                                                                                                                       |
+| ---------------------- | -------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| UPDATES_AFTER_REQUIRED | 400 Bad Request            | You have not supplied the `updates_after`  URI parameter.                                                                                                                   |
+| TIMESTAMP_INVALID      | 400 Bad Request            | The `updates_after` field must be in RFC 3339 format.                                                                                                                       |
+| PARAMETER_UNKNOWN      | 400 Bad Request            | You have supplied one or more parameters which are not used by this endpoint.                                                                                               |
+| AUTHORIZATION_INVALID  | 401 Unauthorized           | You have supplied an invalid [MaxMind account ID and/or license key](https://www.maxmind.com/en/my_license_key) in the [Authorization](#authorization-and-security) header. |
+| LICENSE_KEY_REQUIRED   | 401 Unauthorized           | You have not supplied a [MaxMind license key](https://www.maxmind.com/en/my_license_key) in the [Authorization](#authorization-and-security) header.                        |
+| ACCOUNT_ID_REQUIRED    | 401 Unauthorized           | You have not supplied a [MaxMind account ID](https://www.maxmind.com/en/my_license_key) in the [Authorization](#authorization-and-security) header.                         |
+| PERMISSION_REQUIRED    | 403 Forbidden              | You do not have permission to use the service. Please contact support@maxmind.com for more information.                                                                     |
+| (none)                 | 406 Not Acceptable         | Your request included an `Accept-Charset` header that is not supported. `UTF-8` is the only acceptable character set.                                                       |
+| (none)                 | 415 Unsupported Media Type | Your request included an `Accept` header that is not supported. The web service cannot return content of that type.                                                         |
+| (none)                 | 503 Service Not Available  | There is a problem with the web service server. You can try this request again later.                                                                                       |
 
 ### Example response to an unsuccessful request
 

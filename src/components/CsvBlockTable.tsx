@@ -301,6 +301,7 @@ const CsvBlockTable: React.FC<ICsvBlockTable> = (props) => {
             address is likely to be.
             {' '}
             <A
+              // eslint-disable-next-line max-len
               href="https://support.maxmind.com/geoip-faq/specifications-and-implementation/how-accurate-is-geoip2/"
               rel="nofollow noopener noreferrer"
               target="_blank"
