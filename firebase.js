@@ -137,6 +137,7 @@ const config = {
       '**/node_modules/**',
     ],
     public: 'public',
+    /* eslint-disable max-len */
     redirects: [
       {
         destination: '/geoip/docs/databases/anonymous-ip',
@@ -253,7 +254,165 @@ const config = {
         source: '/geoip/legacy/mod_geoip2/',
         type: 302,
       },
+      {
+        destination: '/minfraud/proxy-detection',
+        source: '/proxy-detection/',
+        type: 302,
+      },
+      {
+        destination: '/geoip/release-notes',
+        source: '/geoip/legacy/release-notes/',
+        type: 302,
+      },
+
+      // ⚠️ - Port needed
+      // {
+      //   destination: '',
+      //   source: '/geoip/legacy/javascript/',
+      //   type: 302,
+      // },
+
+      {
+        destination: '/geoip',
+        source: '/geoip/geoip2/',
+        type: 302,
+      },
+      {
+        destination: '/geoip/geolocate-an-ip/client-side-javascript',
+        source: '/geoip/geoip2/javascript/tutorial/',
+        type: 302,
+      },
+      {
+        destination: '/geoip/legacy/codes',
+        source: '/geoip/legacy/codes/',
+        type: 302,
+      },
+      {
+        destination: '/geoip/legacy/codes',
+        source: '/geoip/legacy/codes/country_continent/',
+        type: 302,
+      },
+      {
+        destination: '/geoip/legacy/codes',
+        source: '/geoip/legacy/codes/iso3166/',
+        type: 302,
+      },
+      {
+        destination: '/geoip/legacy/codes',
+        source: '/geoip/legacy/codes/eu_country_list/',
+        type: 302,
+      },
+      {
+        destination: '/geoip/legacy/codes',
+        source: '/geoip/legacy/codes/ap_country_list/',
+        type: 302,
+      },
+      {
+        destination: 'https://github.com/maxmind/MaxMind-DB/blob/main/MaxMind-DB-spec.md',
+        source: '/maxmind-db/',
+        type: 302,
+      },
+
+      // ✅ Recommendation: let this 404
+      // {
+      //   destination: '',
+      //   source: '/site-map/',
+      //   type: 302,
+      // },
+
+      {
+        destination: '/minfraud/whats-new-in-minfraud-score-and-minfraud-insights',
+        source: '/minfraud/whats-new-in-minfraud-score-and-minfraud-insights/',
+        type: 302,
+      },
+
+      {
+        destination: '/minfraud/working-with-transaction-dispositions',
+        source: '/minfraud/dispositions-api/',
+        type: 302,
+      },
+
+      // ⚠️ - Port needed
+      // {
+      //   destination: '',
+      //   source: '/geoip/legacy/migrating-away-from-our-legacy-geoip-javascript-services/',
+      //   type: 302,
+      // },
+
+      // ✅ Recommendation: let this 404
+      // {
+      //   destination: '',
+      //   source: '/subscription-successful/',
+      //   type: 302,
+      // },
+
+      {
+        destination: '/geoip/release-notes',
+        source: '/geoip/geoip2/javascript/release-notes/',
+        type: 302,
+      },
+      {
+        destination: '/geoip/release-notes',
+        source: '/geoip/geoip2/web-services/release-notes/',
+        type: 302,
+      },
+      {
+        destination: '/geoip/release-notes',
+        source: '/geoip/legacy/web-services/release-notes/',
+        type: 302,
+      },
+      {
+        destination: '/geoip',
+        source: '/normalizing-email-addresses-for-minfraud/',
+        type: 302,
+      },
+      {
+        destination: '/geoip',
+        source: '/product/geoip/',
+        type: 302,
+      },
+      {
+        destination: '/geoip/legacy',
+        source: '/product/geoip/geoip-legacy/',
+        type: 302,
+      },
+      {
+        destination: '/geoip',
+        source: '/product/geoip/geoip2/',
+        type: 302,
+      },
+      {
+        destination: '/geoip/geolocate-an-ip/client-side-javascript',
+        source: '/product/geoip/geoip2/geoip2-js/',
+        type: 302,
+      },
+      {
+        destination: '/geoip/legacy/web-services',
+        source: '/product/geoip/geoip-legacy-web-services/',
+        type: 302,
+      },
+      {
+        destination: '/geoip/docs/web-services',
+        source: '/product/geoip/geoip2-web-services/',
+        type: 302,
+      },
+      {
+        destination: '/minfraud',
+        source: '/product/minfraud/',
+        type: 302,
+      },
+      {
+        destination: '/minfraud/proxy-detection',
+        source: '/product/proxy-detection/',
+        type: 302,
+      },
+      {
+        destination: '/geoip',
+        source: '/product/geolite2/',
+        type: 302,
+      },
     ],
+    /* eslint-enable max-len */
     rewrites: [
       {
         function: 'feedRewrite',
