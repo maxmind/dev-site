@@ -259,11 +259,6 @@ const config = {
         type: 302,
       },
       {
-        destination: '/minfraud/report-a-transaction/',
-        source: '/minfraud/report-transaction/',
-        type: 302,
-      },
-      {
         destination: '/minfraud/track-devices',
         source: '/minfraud/device',
         type: 302,
@@ -303,11 +298,6 @@ const config = {
       },
       {
         destination: '/geoip/legacy/codes',
-        source: '/geoip/legacy/codes/',
-        type: 302,
-      },
-      {
-        destination: '/geoip/legacy/codes',
         source: '/geoip/legacy/codes/country_continent/',
         type: 302,
       },
@@ -338,12 +328,6 @@ const config = {
       //   source: '/site-map/',
       //   type: 302,
       // },
-
-      {
-        destination: '/minfraud/whats-new-in-minfraud-score-and-minfraud-insights',
-        source: '/minfraud/whats-new-in-minfraud-score-and-minfraud-insights/',
-        type: 302,
-      },
 
       {
         destination: '/minfraud/working-with-transaction-dispositions',
