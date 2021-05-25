@@ -134,9 +134,8 @@ const config = {
         source: `{${[
           '**/*.html',
           '**/rss.xml',
-          'app-data.json',
           'manifest.webmanifest',
-          'page-data/**/page-data.json',
+          'page-data/**/*',
           'robots.txt',
           'sitemap.xml',
           'sitemap-*.xml',
