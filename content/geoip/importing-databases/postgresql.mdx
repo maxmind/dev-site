@@ -120,26 +120,24 @@ select '192.168.0.0/24'::cidr >> '192.168.1.1'; -- false
 We can use that to look up the `geoip2_network` entry for a given IP address
 like so:
 
-TODO: use a different address and update output accordingly
-
 ```sql
-select * from geoip2_network where network >> '97.115.100.128';
+select * from geoip2_network where network >> '146.243.121.22';
 ```
 
 Which gives a result of:
 
 ```
 -[ RECORD 1 ]------------------+------------------
-network                        | 97.115.100.128/25
-geoname_id                     | 5746545
+network                        | 146.243.120.0/22
+geoname_id                     | 4930956
 registered_country_geoname_id  | 6252001
 represented_country_geoname_id | 
 is_anonymous_proxy             | f
 is_satellite_provider          | f
-postal_code                    | 97206
-latitude                       | 45.4804
-longitude                      | -122.5891
-accuracy_radius                | 10
+postal_code                    | 02118
+latitude                       | 42.3388
+longitude                      | -71.0726
+accuracy_radius                | 100
 
 Time: 514.003 ms
 ```
@@ -162,23 +160,23 @@ create index on geoip2_network using gist (network inet_ops);
 With that change we observe that the same query runs a lot faster:
 
 ```sql
-select * from geoip2_network net where network >> '97.115.100.128';
+select * from geoip2_network net where network >> '146.243.121.22';
 ```
 
 Which gives a result of:
 
 ```
 -[ RECORD 1 ]------------------+------------------
-network                        | 97.115.100.128/25
-geoname_id                     | 5746545
+network                        | 146.243.120.0/22
+geoname_id                     | 4930956
 registered_country_geoname_id  | 6252001
 represented_country_geoname_id | 
 is_anonymous_proxy             | f
 is_satellite_provider          | f
-postal_code                    | 97206
-latitude                       | 45.4804
-longitude                      | -122.5891
-accuracy_radius                | 10
+postal_code                    | 02118
+latitude                       | 42.3388
+longitude                      | -71.0726
+accuracy_radius                | 100
 
 Time: 9.671 ms
 ```
@@ -265,7 +263,7 @@ left join geoip2_location location on (
   net.geoname_id = location.geoname_id
   and location.locale_code = 'en'
 )
-where network >> '97.115.100.128';
+where network >> '146.243.121.22';
 ```
 
 Which gives a result of:
@@ -273,7 +271,7 @@ Which gives a result of:
 ```
  latitude | longitude | accuracy_radius | continent_name | country_name  | subdivision_1_name | city_name 
 ----------+-----------+-----------------+----------------+---------------+--------------------+-----------
-  45.4804 | -122.5891 |              10 | North America  | United States | Oregon             | Portland
+  42.3388 |  -72.0726 |             100 | North America  | United States | Massachusetts      | Boston
 (1 row)
 ```
 
@@ -317,20 +315,20 @@ left join geoip2_location represented_country on (
   net.represented_country_geoname_id = represented_country.geoname_id
   and represented_country.locale_code = 'en'
 )
-where network >> '97.115.100.128';
+where network >> '146.243.121.22';
 ```
 
 Which gives a result of:
 
 ```
 -[ RECORD 1 ]----------------------+--------------
-latitude                           | 45.4804
-longitude                          | -122.5891
-accuracy_radius                    | 10
+latitude                           | 42.3388
+longitude                          | -71.0726
+accuracy_radius                    | 100
 location_continent_name            | North America
 location_country_name              | United States
-location_subdivision_1_name        | Oregon
-location_city_name                 | Portland
+location_subdivision_1_name        | Massachusetts
+location_city_name                 | Boston
 registered_country_continent_name  | North America
 registered_country_country_name    | United States
 represented_country_continent_name | 
