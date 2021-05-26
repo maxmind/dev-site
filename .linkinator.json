@@ -1,0 +1,8 @@
+{
+  "concurrency": 100,
+  "directoryListing": true,
+  "format": "json",
+  "recurse": true,
+  "silent": true,
+  "timeout": 0
+}
