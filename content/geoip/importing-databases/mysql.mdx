@@ -1,0 +1,321 @@
+# Title
+
+Intro / Motivation
+
+We'll use GeoIP2 City in the example. The same method can be adapted for other databases.
+
+# Retrieve database
+
+Link readers to where they can purchase and download the zip file.
+
+Tell them to unpack the archive and link to https://dev.maxmind.com/geoip/geoip2/geoip2-city-country-csv-databases/#Zip_File for details of zip structure.
+
+# Networks
+
+First we want to create a table to hold the network information contained in GeoIP2-City-Blocks-IPv4.csv and GeoIP2-City-Blocks-IPv6.csv. https://dev.maxmind.com/geoip/geoip2/geoip2-city-country-csv-databases/#CSV_File_Format describes the structure of those files.
+
+## Conversion
+
+The `network` field of the database uses CIDR notation. Unfortunately MySQL doesn't offer any capabilities to work with data in that format, so we'll first have to convert the networks into something else that we can easily query later on. We chose to represent networks as a pair of IP addresses that are the first and last address in the network, respectively. Both of the IP addresses will be represented as hexadecimal numbers.
+
+The [database conversion tool](https://dev.maxmind.com/geoip/geoip2/geoip2-city-country-csv-databases/#Conversion_Utility) can be used to achieve that:
+
+```sh
+$ ./geoip2-csv-converter -block-file GeoIP2-City-Blocks-IPv4.csv -include-hex-range -output-file GeoIP2-City-Blocks-IPv4-Hex.csv
+$ ./geoip2-csv-converter -block-file GeoIP2-City-Blocks-IPv6.csv -include-hex-range -output-file GeoIP2-City-Blocks-IPv6-Hex.csv
+```
+
+## Schema
+
+We can now create a table to hold the data we just converted. We'll represent the IP addresses using the type `varbinary(16)`, which will be large enough to represent 128-bit (16 byte) IPv6 addresses.
+
+```sql
+create table geoip2_network (
+  network_start varbinary(16) not null,
+  network_end varbinary(16) not null,
+  geoname_id int,
+  registered_country_geoname_id int,
+  represented_country_geoname_id int,
+  is_anonymous_proxy bool,
+  is_satellite_provider bool,
+  postal_code text,
+  latitude float,
+  longitude float,
+  accuracy_radius int,
+  index(network_start),
+  index(network_end)
+);
+```
+
+Note that we're adding two separate indexes for `network_start` and `network_end`. Using a composite index over both columns won't be able to speed up the queries we'll be using later on.
+
+## Loading
+
+The converted IPv6 data can now be loaded:
+
+```sql
+load data infile '/var/lib/mysql-files/GeoIP2-City-Blocks-IPv6-Hex.csv'
+into table geoip2_network
+fields terminated by ',' enclosed by '"' lines terminated by '\n' ignore 1 rows
+(@network_start, @network_end, @geoname_id, @registered_country_geoname_id, @represented_country_geoname_id,
+ @is_anonymous_proxy, @is_satellite_provider, @postal_code, @latitude, @longitude, @accuracy_radius)
+set network_start = unhex(@network_start),
+    network_end = unhex(@network_end),
+    geoname_id = nullif(@geoname_id, ''),
+    registered_country_geoname_id = nullif(@registered_country_geoname_id, ''),
+    represented_country_geoname_id = nullif(@represented_country_geoname_id, ''),
+    is_anonymous_proxy = nullif(@is_anonymous_proxy, ''),
+    is_satellite_provider = nullif(@is_satellite_provider, ''),
+    postal_code = nullif(@postal_code, ''),
+    latitude = nullif(@latitude, ''),
+    longitude = nullif(@longitude, ''),
+    accuracy_radius = nullif(@accuracy_radius, '');
+```
+
+We can load the converted IPv4 data in the same way:
+
+```sql
+load data infile '/var/lib/mysql-files/GeoIP2-City-Blocks-IPv4-Hex.csv'
+into table geoip2_network
+fields terminated by ',' enclosed by '"' lines terminated by '\n' ignore 1 rows
+(@network_start, @network_end, @geoname_id, @registered_country_geoname_id, @represented_country_geoname_id,
+ @is_anonymous_proxy, @is_satellite_provider, @postal_code, @latitude, @longitude, @accuracy_radius)
+set network_start = unhex(@network_start),
+    network_end = unhex(@network_end),
+    geoname_id = nullif(@geoname_id, ''),
+    registered_country_geoname_id = nullif(@registered_country_geoname_id, ''),
+    represented_country_geoname_id = nullif(@represented_country_geoname_id, ''),
+    is_anonymous_proxy = nullif(@is_anonymous_proxy, ''),
+    is_satellite_provider = nullif(@is_satellite_provider, ''),
+    postal_code = nullif(@postal_code, ''),
+    latitude = nullif(@latitude, ''),
+    longitude = nullif(@longitude, ''),
+    accuracy_radius = nullif(@accuracy_radius, '');
+```
+
+## Querying
+
+With everything loaded we're now ready to look up an IP address in the database. As we're representing IP addresses as `varbinary(16)`, we'll first have to convert the textual representation of the IP address we're interested in to that same type using MySQL's built-in `inet6_aton` function.
+
+```sql
+select geoname_id, registered_country_geoname_id, represented_country_geoname_id,
+       postal_code, latitude, longitude, accuracy_radius
+from geoip2_network
+where inet6_aton('146.243.121.22') between network_start and network_end
+limit 1;
+```
+
+```
++------------+-------------------------------+--------------------------------+-------------+----------+-----------+-----------------+
+| geoname_id | registered_country_geoname_id | represented_country_geoname_id | postal_code | latitude | longitude | accuracy_radius |
++------------+-------------------------------+--------------------------------+-------------+----------+-----------+-----------------+
+|    4930956 |                       6252001 |                           NULL | 02118       |  42.3388 |  -71.0726 |             100 |
++------------+-------------------------------+--------------------------------+-------------+----------+-----------+-----------------+
+1 row in set (6.16 sec)
+```
+
+While that'll yield the correct results, we notice that the query performed poorly enough for it to not be practically useful in many applications.
+
+One way of speeding things up is the addition of `order by network_end` like so:
+
+```sql
+select geoname_id, registered_country_geoname_id, represented_country_geoname_id,
+       postal_code, latitude, longitude, accuracy_radius
+from geoip2_network
+where inet6_aton('146.243.121.22') between network_start and network_end
+order by network_end
+limit 1;
+```
+
+```
++------------+-------------------------------+--------------------------------+-------------+----------+-----------+-----------------+
+| geoname_id | registered_country_geoname_id | represented_country_geoname_id | postal_code | latitude | longitude | accuracy_radius |
++------------+-------------------------------+--------------------------------+-------------+----------+-----------+-----------------+
+|    4930956 |                       6252001 |                           NULL | 02118       |  42.3388 |  -71.0726 |             100 |
++------------+-------------------------------+--------------------------------+-------------+----------+-----------+-----------------+
+1 row in set (0.00 sec)
+```
+
+However, while that addresses the performance concern we've had with the previous query, this query will still perform poorly for addresses not contained in our GeoIP2 database:
+
+```sql
+select geoname_id, registered_country_geoname_id, represented_country_geoname_id,
+       postal_code, latitude, longitude, accuracy_radius
+from geoip2_network
+where inet6_aton('127.0.0.1') between network_start and network_end
+order by network_end
+limit 1;
+```
+
+```
+Empty set (52.82 sec)
+```
+
+We can work around that by breaking our query up into two parts such that MySQL will be able to utilise the indexes we've created more efficiently:
+
+```sql
+select geoname_id, registered_country_geoname_id, represented_country_geoname_id,
+       postal_code, latitude, longitude, accuracy_radius
+from (
+  select *
+  from geoip2_network
+  where inet6_aton('146.243.121.22') >= network_start
+  order by network_start desc
+  limit 1
+) net
+where inet6_aton('146.243.121.22') <= network_end
+```
+
+```
++------------+-------------------------------+--------------------------------+-------------+----------+-----------+-----------------+
+| geoname_id | registered_country_geoname_id | represented_country_geoname_id | postal_code | latitude | longitude | accuracy_radius |
++------------+-------------------------------+--------------------------------+-------------+----------+-----------+-----------------+
+|    4930956 |                       6252001 |                           NULL | 02118       |  42.3388 |  -71.0726 |             100 |
++------------+-------------------------------+--------------------------------+-------------+----------+-----------+-----------------+
+1 row in set (0.00 sec)
+```
+
+```sql
+select geoname_id, registered_country_geoname_id, represented_country_geoname_id,
+       postal_code, latitude, longitude, accuracy_radius
+from (
+  select *
+  from geoip2_network
+  where inet6_aton('127.0.0.1') >= network_start
+  order by network_start desc
+  limit 1
+) net
+where inet6_aton('127.0.0.1') <= network_end
+```
+
+```
+Empty set (52.82 sec)
+```
+
+Using that construct gives us good query performance for all addresses, regardless of whether or not the GeoIP2 database contains any information about them. Depending on your application, you might want to consider encapsulating this complexity/verbosity in a function. Alternatively, MySQL also offers spatial data types that can be used to achieve similar performance while allowing for queries to be expressed more naturally.
+
+FIXME: should we include a function to abstract this here? should we show how to use the GIS-features or link to something that shows how to use those?
+
+# Locations
+
+If `postal_code`, `latitude`, `longitude`, and `accuracy_radius` are everything we're interested in we'd be done at this point and our application would be easily able to query what it needs. However, GeoIP2 databases provide additional location information, which we'll load into PostgreSQL next.
+
+## Import
+
+We start with a table as before:
+
+```sql
+create table geoip2_location (
+  geoname_id int not null,
+  locale_code text not null,
+  continent_code text not null,
+  continent_name text not null,
+  country_iso_code text,
+  country_name text,
+  subdivision_1_iso_code text,
+  subdivision_1_name text,
+  subdivision_2_iso_code text,
+  subdivision_2_name text,
+  city_name text,
+  metro_code int,
+  time_zone text,
+  is_in_european_union bool,
+  primary key (geoname_id, locale_code(5))
+);
+```
+
+We then populate that table from a `Locations` CSV file:
+
+```sql
+load data infile '/var/lib/mysql-files/GeoIP2-City-Locations-en.csv'
+into table geoip2_location
+fields terminated by ',' enclosed by '"' lines terminated by '\n' ignore 1 rows (
+  geoname_id, locale_code, continent_code, continent_name,
+  @country_iso_code, @country_name, @subdivision_1_iso_code, @subdivision_1_name,
+  @subdivision_2_iso_code, @subdivision_2_name, @city_name, @metro_code, @time_zone,
+  is_in_european_union
+)
+set country_iso_code = nullif(@country_iso_code, ''),
+    country_name = nullif(@country_name, ''),
+    subdivision_1_iso_code = nullif(@subdivision_1_iso_code, ''),
+    subdivision_1_name = nullif(@subdivision_1_name, ''),
+    subdivision_2_iso_code = nullif(@subdivision_2_iso_code, ''),
+    subdivision_2_name = nullif(@subdivision_2_name, ''),
+    city_name = nullif(@city_name, ''),
+    metro_code = nullif(@metro_code, ''),
+    time_zone = nullif(@time_zone, '');
+```
+
+Note that there's a number of different `Locations` files available. The `-en` file contains english language data for all `geoname_id`s used in the the database. The additional files with different language suffixes contain localized versions of the `-en` data in different languages for some of `geoname_id`s. Depending on your application's needs you may decide to import any subset of them.
+
+## Querying
+
+We can now use this additional table to resolve the `geoname_id`s provided by our `geoip2_network` table. For example:
+
+```sql
+select latitude, longitude, accuracy_radius, continent_name, country_name, subdivision_1_name, city_name
+from (
+  select *
+  from geoip2_network
+  where inet6_aton('146.243.121.22') >= network_start
+  order by network_start desc
+  limit 1
+) net
+where inet6_aton('146.243.121.22') <= network_end
+left join geoip2_location location on (
+  net.geoname_id = location.geoname_id and location.locale_code = 'en'
+)
+```
+
+```
++----------+-----------+-----------------+----------------+---------------+--------------------+-----------+
+| latitude | longitude | accuracy_radius | continent_name | country_name  | subdivision_1_name | city_name |
++----------+-----------+-----------------+----------------+---------------+--------------------+-----------+
+|  42.3388 |  -71.0726 |             100 | North America  | United States | Massachusetts      | Boston    |
++----------+-----------+-----------------+----------------+---------------+--------------------+-----------+
+1 row in set (0.00 sec)
+```
+
+Here we were only interested in english results, but we can adjust our join condition if we were interested in different or additional languages.
+
+Note how a left outer join is used. This is because additional location information might not be available for any given row of our `geoip2_network` table. With the left join we'd still receive latitude, longitude, and accuracy_radius as a result of our query if available, while an inner join would result in zero rows if no additional location information was available.
+
+In addition to the `geoname_id` column that provides location information for a network, there's also `registered_country_geoname_id` and `represented_country_geoname_id`, which provide location information about the country in which the ISP has registered the network, and the country which is represented by users of the IP address, respectively. The location data for both can be included by additional joins:
+
+```sql
+select latitude, longitude, accuracy_radius,
+       location.continent_name as location_continent_name,
+       location.country_name as location_country_name,
+       location.subdivision_1_name as location_subdivision_1_name,
+       location.city_name as location_city_name,
+       registered_country.continent_name as registered_country_continent_name,
+       registered_country.country_name as registered_country_country_name,
+       represented_country.continent_name as represented_country_continent_name,
+       represented_country.country_name as represented_country_country_name 
+from (
+  select *
+  from geoip2_network
+  where inet6_aton('146.243.121.22') >= network_start
+  order by network_start desc
+  limit 1
+) net
+where inet6_aton('146.243.121.22') <= network_end
+left join geoip2_location location on (
+  net.geoname_id = location.geoname_id and location.locale_code = 'en'
+)
+left join geoip2_location registered_country on (
+  net.registered_country_geoname_id = registered_country.geoname_id
+  and registered_country.locale_code = 'en'
+)
+```
+
+```
++----------+-----------+-----------------+----------------+---------------+--------------------+-----------+----------------+---------------+
+| latitude | longitude | accuracy_radius | continent_name | country_name  | subdivision_1_name | city_name | continent_name | country_name  |
++----------+-----------+-----------------+----------------+---------------+--------------------+-----------+----------------+---------------+
+|  42.3388 |  -71.0726 |             100 | North America  | United States | Massachusetts      | Boston    | North America  | United States |
++----------+-----------+-----------------+----------------+---------------+--------------------+-----------+----------------+---------------+
+1 row in set (0.00 sec)
+```
+
+# Summary
