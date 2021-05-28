@@ -159,6 +159,51 @@ const config = {
     /* eslint-disable max-len */
     redirects: [
       {
+        destination: '/geoip',
+        source: '/geoip/geoip2{,/}',
+        type: 302,
+      },
+      {
+        destination: '/geoip',
+        source: '/normalizing-email-addresses-for-minfraud{,/}',
+        type: 302,
+      },
+      {
+        destination: '/geoip',
+        source: '/product/geoip{,/}',
+        type: 302,
+      },
+      {
+        destination: '/geoip/legacy',
+        source: '/product/geoip/geoip-legacy{,/}',
+        type: 302,
+      },
+      {
+        destination: '/geoip',
+        source: '/product/geoip/geoip2{,/}',
+        type: 302,
+      },
+      {
+        destination: '/geoip',
+        source: '/product/geolite2{,/}',
+        type: 302,
+      },
+      {
+        destination: '/geoip/geolocate-an-ip/client-side-javascript',
+        source: '/product/geoip/geoip2/geoip2-js{,/}',
+        type: 302,
+      },
+      {
+        destination: '/geoip/legacy/web-services',
+        source: '/product/geoip/geoip-legacy-web-services{,/}',
+        type: 302,
+      },
+      {
+        destination: '/geoip/docs/web-services',
+        source: '/product/geoip/geoip2-web-services{,/}',
+        type: 302,
+      },
+      {
         destination: '/geoip/docs/databases/anonymous-ip',
         source: '/geoip/geoip2/geoip2-anonymous-ip-csv-database{,/}',
         type: 302,
@@ -204,6 +249,11 @@ const config = {
         type: 302,
       },
       {
+        destination: '/geoip/geolocate-an-ip/client-side-javascript',
+        source: '/geoip/geoip2/javascript/tutorial{,/}',
+        type: 302,
+      },
+      {
         destination: '/geoip/geolocate-an-ip/databases',
         source: '/geoip/geoip2/downloadable{,/}',
         type: 302,
@@ -211,6 +261,26 @@ const config = {
       {
         destination: '/geoip/geolocate-an-ip/web-services',
         source: '/geoip/geoip2/web-services{,/}',
+        type: 302,
+      },
+      {
+        destination: '/geoip/legacy/codes',
+        source: '/geoip/legacy/codes/country_continent{,/}',
+        type: 302,
+      },
+      {
+        destination: '/geoip/legacy/codes',
+        source: '/geoip/legacy/codes/iso3166{,/}',
+        type: 302,
+      },
+      {
+        destination: '/geoip/legacy/codes',
+        source: '/geoip/legacy/codes/eu_country_list{,/}',
+        type: 302,
+      },
+      {
+        destination: '/geoip/legacy/codes',
+        source: '/geoip/legacy/codes/ap_country_list{,/}',
         type: 302,
       },
       {
@@ -225,7 +295,27 @@ const config = {
       },
       {
         destination: '/geoip/release-notes',
+        source: '/geoip/geoip2/javascript/release-notes{,/}',
+        type: 302,
+      },
+      {
+        destination: '/geoip/release-notes',
         source: '/geoip/geoip2/release-notes{,/}',
+        type: 302,
+      },
+      {
+        destination: '/geoip/release-notes',
+        source: '/geoip/geoip2/web-services/release-notes{,/}',
+        type: 302,
+      },
+      {
+        destination: '/geoip/release-notes',
+        source: '/geoip/legacy/release-notes{,/}',
+        type: 302,
+      },
+      {
+        destination: '/geoip/release-notes',
+        source: '/geoip/legacy/web-services/release-notes{,/}',
         type: 302,
       },
       {
@@ -254,6 +344,31 @@ const config = {
         type: 302,
       },
       {
+        destination: 'https://github.com/maxmind/geoip-api-mod_geoip2',
+        source: '/geoip/legacy/mod_geoip2{,/}',
+        type: 302,
+      },
+      {
+        destination: 'https://github.com/maxmind/MaxMind-DB/blob/main/MaxMind-DB-spec.md',
+        source: '/maxmind-db{,/}',
+        type: 302,
+      },
+      {
+        destination: '/minfraud',
+        source: '/product/minfraud{,/}',
+        type: 302,
+      },
+      {
+        destination: '/minfraud/proxy-detection',
+        source: '/product/proxy-detection{,/}',
+        type: 302,
+      },
+      {
+        destination: '/minfraud/proxy-detection',
+        source: '/proxy-detection{,/}',
+        type: 302,
+      },
+      {
         destination: '/minfraud/release-notes/rss.xml',
         source: '/feed/?post_type=release_note&product=minfraud',
         type: 302,
@@ -264,18 +379,8 @@ const config = {
         type: 302,
       },
       {
-        destination: 'https://github.com/maxmind/geoip-api-mod_geoip2',
-        source: '/geoip/legacy/mod_geoip2{,/}',
-        type: 302,
-      },
-      {
-        destination: '/minfraud/proxy-detection',
-        source: '/proxy-detection{,/}',
-        type: 302,
-      },
-      {
-        destination: '/geoip/release-notes',
-        source: '/geoip/legacy/release-notes{,/}',
+        destination: '/minfraud/working-with-transaction-dispositions',
+        source: '/minfraud/dispositions-api{,/}',
         type: 302,
       },
 
@@ -286,41 +391,6 @@ const config = {
       //   type: 302,
       // },
 
-      {
-        destination: '/geoip',
-        source: '/geoip/geoip2{,/}',
-        type: 302,
-      },
-      {
-        destination: '/geoip/geolocate-an-ip/client-side-javascript',
-        source: '/geoip/geoip2/javascript/tutorial{,/}',
-        type: 302,
-      },
-      {
-        destination: '/geoip/legacy/codes',
-        source: '/geoip/legacy/codes/country_continent{,/}',
-        type: 302,
-      },
-      {
-        destination: '/geoip/legacy/codes',
-        source: '/geoip/legacy/codes/iso3166{,/}',
-        type: 302,
-      },
-      {
-        destination: '/geoip/legacy/codes',
-        source: '/geoip/legacy/codes/eu_country_list{,/}',
-        type: 302,
-      },
-      {
-        destination: '/geoip/legacy/codes',
-        source: '/geoip/legacy/codes/ap_country_list{,/}',
-        type: 302,
-      },
-      {
-        destination: 'https://github.com/maxmind/MaxMind-DB/blob/main/MaxMind-DB-spec.md',
-        source: '/maxmind-db{,/}',
-        type: 302,
-      },
 
       // ✅ Recommendation: let this 404
       // {
@@ -329,11 +399,6 @@ const config = {
       //   type: 302,
       // },
 
-      {
-        destination: '/minfraud/working-with-transaction-dispositions',
-        source: '/minfraud/dispositions-api{,/}',
-        type: 302,
-      },
 
       // ⚠️ - Port needed
       // {
@@ -349,71 +414,6 @@ const config = {
       //   type: 302,
       // },
 
-      {
-        destination: '/geoip/release-notes',
-        source: '/geoip/geoip2/javascript/release-notes{,/}',
-        type: 302,
-      },
-      {
-        destination: '/geoip/release-notes',
-        source: '/geoip/geoip2/web-services/release-notes{,/}',
-        type: 302,
-      },
-      {
-        destination: '/geoip/release-notes',
-        source: '/geoip/legacy/web-services/release-notes{,/}',
-        type: 302,
-      },
-      {
-        destination: '/geoip',
-        source: '/normalizing-email-addresses-for-minfraud{,/}',
-        type: 302,
-      },
-      {
-        destination: '/geoip',
-        source: '/product/geoip{,/}',
-        type: 302,
-      },
-      {
-        destination: '/geoip/legacy',
-        source: '/product/geoip/geoip-legacy{,/}',
-        type: 302,
-      },
-      {
-        destination: '/geoip',
-        source: '/product/geoip/geoip2{,/}',
-        type: 302,
-      },
-      {
-        destination: '/geoip/geolocate-an-ip/client-side-javascript',
-        source: '/product/geoip/geoip2/geoip2-js{,/}',
-        type: 302,
-      },
-      {
-        destination: '/geoip/legacy/web-services',
-        source: '/product/geoip/geoip-legacy-web-services{,/}',
-        type: 302,
-      },
-      {
-        destination: '/geoip/docs/web-services',
-        source: '/product/geoip/geoip2-web-services{,/}',
-        type: 302,
-      },
-      {
-        destination: '/minfraud',
-        source: '/product/minfraud{,/}',
-        type: 302,
-      },
-      {
-        destination: '/minfraud/proxy-detection',
-        source: '/product/proxy-detection{,/}',
-        type: 302,
-      },
-      {
-        destination: '/geoip',
-        source: '/product/geolite2{,/}',
-        type: 302,
-      },
     ],
     /* eslint-enable max-len */
     rewrites: [
