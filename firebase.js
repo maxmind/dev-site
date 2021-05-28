@@ -359,6 +359,11 @@ const config = {
         type: 302,
       },
       {
+        destination: '/minfraud/api-documentation',
+        source: '/minfraud/minfraud-score-and-insights-api-documentation{,/}',
+        type: 302,
+      },
+      {
         destination: '/minfraud/proxy-detection',
         source: '/product/proxy-detection{,/}',
         type: 302,
