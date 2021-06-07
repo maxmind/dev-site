@@ -41,6 +41,7 @@ const config = {
       .map(worksWithOrWithoutTrailingSlash)
       .map(force302Redirect),
     rewrites,
+    trailingSlash: false,
   },
 };
 
