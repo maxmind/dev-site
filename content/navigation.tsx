@@ -49,6 +49,10 @@ const navigation: IItem[] = [
         to: '/minfraud/release-notes',
       },
       {
+        title: 'Contribute',
+        to: '/contribute',
+      },
+      {
         title: 'minFraud Legacy',
         to: '/minfraud/minfraud-legacy',
       },
@@ -159,6 +163,10 @@ const navigation: IItem[] = [
         hasDivider: true,
         title: 'Release Notes',
         to: '/geoip/release-notes',
+      },
+      {
+        title: 'Contribute',
+        to: '/contribute',
       },
       {
         items: [
