@@ -14,10 +14,15 @@ const getHumanReadable = (className: string): string  => languages
     || className.replace('language-', '');
 
 export const extractLanguage = (className: string): string => className
-  .startsWith('language-cli-') ? className.replace('cli-', '') : className;
+  .startsWith('language-cli-') ?
+  className.replace('cli-', '').replace('_', ' ') : className;
 
+interface ICodeSet {
+  children?: React.ReactNode;
+  noReorder?: boolean;
+}
 
-const CodeSet: React.FC = (props) => {
+const CodeSet: React.FC<ICodeSet> = (props) => {
   const { isClient, key } = useIsClient();
   const { dispatch, context } = React.useContext(Store);
   const [
@@ -25,30 +30,32 @@ const CodeSet: React.FC = (props) => {
     saveActiveLanguage,
   ] = React.useState(context.selectedLanguage);
 
-  const orderedChildren = React.Children.toArray(props.children).sort((a,b) => {
-    if (React.isValidElement(a) && React.isValidElement(b)) {
-      const indexA = languages.findIndex(element =>
-        `language-${element.id}` === extractLanguage(
-          a.props.children.props.className
-        )
-      );
-      const indexB = languages.findIndex(element =>
-        `language-${element.id}` === extractLanguage(
-          b.props.children.props.className
-        )
-      );
+  const orderedChildren = props.noReorder ?
+    React.Children.toArray(props.children) :
+    React.Children.toArray(props.children).sort((a,b) => {
+      if (React.isValidElement(a) && React.isValidElement(b)) {
+        const indexA = languages.findIndex(element =>
+          `language-${element.id}` === extractLanguage(
+            a.props.children.props.className
+          )
+        );
+        const indexB = languages.findIndex(element =>
+          `language-${element.id}` === extractLanguage(
+            b.props.children.props.className
+          )
+        );
 
-      if (indexA - indexB > 0) {
-        return 1;
+        if (indexA - indexB > 0) {
+          return 1;
+        }
+
+        if (indexA - indexB < 0) {
+          return -1;
+        }
       }
 
-      if (indexA - indexB < 0) {
-        return -1;
-      }
-    }
-
-    return -1;
-  });
+      return -1;
+    });
 
   const orderedLanguages = React.Children.map(orderedChildren, child => {
     if (React.isValidElement(child)) {
@@ -137,6 +144,8 @@ const CodeSet: React.FC = (props) => {
 
 CodeSet.propTypes = {
   children: PropTypes.node,
+  // eslint-disable-next-line react/boolean-prop-naming
+  noReorder: PropTypes.bool,
 };
 
 export default CodeSet;
