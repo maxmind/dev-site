@@ -6,6 +6,7 @@ export { Link } from 'gatsby';
 export { default as Alert } from '../Alert';
 export { default as CodeSet } from '../CodeSet';
 export { default as Example } from '../Example';
+export { default as GeoIPCrontab } from '../GeoIPCrontab';
 export * from '../LinkGroup';
 export * from '../Schema';
 export { default as ReleaseNote } from '../ReleaseNote';

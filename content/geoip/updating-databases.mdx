@@ -66,15 +66,9 @@ EditionIDs YOUR_EDITION_IDS_HERE
 Run `geoipupdate`. To fully automate this process on Linux or Unix, use a
 crontab file like:
 
-```bash
-# top of crontab
-MAILTO=your@email.com
+<GeoIPCrontab />
 
-7 9 * * 3 /usr/local/bin/geoipupdate
-# end of crontab
-```
-
-This crontab file would run every week, and it would email you the results.
+This crontab file would run twice a week, and it would email you the results.
 
 If you are running a firewall, `geoipupdate` requires that the DNS and HTTPS
 (443) ports be open.
