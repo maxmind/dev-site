@@ -47,9 +47,9 @@ system making the query is behind a NAT.
 ### GeoIP2 Endpoints
 | Service  | HTTP Method | Endpoint                                                     |
 | -------- | ----------- | ------------------------------------------------------------ |
-| Country  | `POST`      | `https://geoip.maxmind.com/geoip/v2.1/country/{ip_address}`  |
-| City     | `POST`      | `https://geoip.maxmind.com/geoip/v2.1/city/{ip_address}`     |
-| Insights | `POST`      | `https://geoip.maxmind.com/geoip/v2.1/insights/{ip_address}` |
+| Country  | `GET`       | `https://geoip.maxmind.com/geoip/v2.1/country/{ip_address}`  |
+| City     | `GET`       | `https://geoip.maxmind.com/geoip/v2.1/city/{ip_address}`     |
+| Insights | `GET`       | `https://geoip.maxmind.com/geoip/v2.1/insights/{ip_address}` |
 
 The `geoip.maxmind.com` hostname automatically picks the data center
 geographically closest to you.
@@ -57,8 +57,8 @@ geographically closest to you.
 ### GeoLite2 Endpoints
 | Service | HTTP Method | Endpoint                                               |
 | ------- | ----------- | ------------------------------------------------------ |
-| Country | `POST`      | `https://geolite.info/geoip/v2.1/country/{ip_address}` |
-| City    | `POST`      | `https://geolite.info/geoip/v2.1/city/{ip_address}`    |
+| Country | `GET`       | `https://geolite.info/geoip/v2.1/country/{ip_address}` |
+| City    | `GET`       | `https://geolite.info/geoip/v2.1/city/{ip_address}`    |
 
 The `geolite.info` hostname automatically picks the data center
 geographically closest to you.
