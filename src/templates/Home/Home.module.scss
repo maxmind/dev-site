@@ -26,6 +26,10 @@
   margin: auto;
   max-width: calc(1200px + var(--mm-spacing));
   padding: var(--mm-spacing);
+
+  a {
+    color: #005270;
+  }
 }
 
 .calloutLowerContainer {
