@@ -132,6 +132,7 @@ const config = {
           },
         ],
         source: `{${[
+          '/',
           '**/*.html',
           '**/rss.xml',
           'manifest.webmanifest',
