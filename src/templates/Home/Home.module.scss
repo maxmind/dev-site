@@ -18,6 +18,21 @@
   margin-bottom: calc(var(--mm-spacing) / 2);
 }
 
+.calloutLower {
+  background-color: #f0f8ff;
+  border-radius: var(--mm-border-radius);
+  box-shadow: rgb(0 0 0 / 10%) 0 10px 15px -3px, rgb(0 0 0 / 5%) 0 4px 6px -2px;
+  font-size: 12px;
+  margin: auto;
+  max-width: calc(1200px + var(--mm-spacing));
+  padding: var(--mm-spacing);
+  text-align: center;
+}
+
+.calloutLowerContainer {
+  padding: var(--mm-spacing);
+}
+
 .noWrap {
   white-space: nowrap;
 }

@@ -149,6 +149,23 @@ const Home: React.FC<IHome> = (props) => {
           more.
         </Product>
       </div>
+      <div
+        className={styles.calloutLowerContainer}
+      >
+        <h3
+          className={styles.calloutLower}
+        >
+          Learn how to
+          {' '}
+          <A
+            href="/contribute"
+          >
+            contribute to the MaxMind community
+          </A>
+          {' '}
+          by developing third-party integrations, tools, and apps.
+        </h3>
+      </div>
     </Layout>
   );
 };
