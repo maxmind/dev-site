@@ -26,7 +26,6 @@
   margin: auto;
   max-width: calc(1200px + var(--mm-spacing));
   padding: var(--mm-spacing);
-  text-align: center;
 }
 
 .calloutLowerContainer {
@@ -61,6 +60,10 @@
 
   .calloutSubheading {
     font-size: 20px;
+  }
+
+  .calloutLower {
+    text-align: center;
   }
 
   .products {
