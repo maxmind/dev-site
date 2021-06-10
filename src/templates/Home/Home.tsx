@@ -13,6 +13,8 @@ import { IHomeContext } from './query';
 
 import * as styles from './Home.module.scss';
 
+const queryString = '?lang=en';
+
 interface IHome {
   pageContext: IHomeContext;
 }
@@ -119,7 +121,7 @@ const Home: React.FC<IHome> = (props) => {
               and
               {' '}
               <A
-                href="/geoip/geolite2-free-geolocation-data"
+                href={`/geoip/geolite2-free-geolocation-data?${queryString}`}
               >
                 GeoLite2
               </A>
