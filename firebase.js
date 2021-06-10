@@ -19,7 +19,7 @@ const config = {
         headers: [
           {
             key: 'Cache-Control',
-            value: 'public, max-age=31536000, immutable',
+            value: 'max-age=0, no-cache',
           },
           {
             key: 'X-Content-Type-Options',
@@ -122,25 +122,19 @@ const config = {
               ]) => `${acc} ${key} ${values.join(' ')};`.trim(), ''),
           },
         ],
-        source: '**',
+        source: '/**',
       },
       {
         headers: [
           {
             key: 'Cache-Control',
-            value: 'public, max-age=0, must-revalidate',
+            value: 'public, max-age=604800, immutable',
           },
         ],
         source: `{${[
-          '/',
-          '**/*.html',
-          '**/rss.xml',
-          'manifest.webmanifest',
-          'page-data/**/*',
-          'robots.txt',
-          'sitemap.xml',
-          'sitemap-*.xml',
-          'sitemap.xsl',
+          '**/*.@(eot|otf|ttc|ttf|woff|woff2)',
+          '**/*.@(css|js)',
+          '**/*.@(jpg|jpeg|gif|png|svg)',
         ].join(',')}}`,
       },
     ],
