@@ -1,9 +1,10 @@
 import classNames from 'classnames';
-import { Link } from 'gatsby';
 import PropTypes from 'prop-types';
 import * as React from 'react';
 import { IconType } from 'react-icons';
 import { FaArrowRight } from 'react-icons/fa';
+
+import Link from '../Link';
 
 import * as styles from './LinkGroupCard.module.scss';
 

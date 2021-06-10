@@ -1,11 +1,11 @@
 import { useLocation } from '@reach/router';
 import CustomPropTypes from 'airbnb-prop-types';
 import classNames from 'classnames';
-import { Link } from 'gatsby';
 import PropTypes from 'prop-types';
 import * as React from 'react';
 
 import Example from '../Example';
+import Link from '../Link';
 import GeoIpServiceTags from './GeoIpServiceTags';
 import MinFraudServiceTags from './MinFraudServiceTags';
 import PropertyValues from './PropertyValues';

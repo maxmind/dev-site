@@ -1,6 +1,7 @@
-import { Link } from 'gatsby';
 import PropTypes from 'prop-types';
 import * as React from 'react';
+
+import Link from './Link';
 
 import * as styles from './LinkButton.module.scss';
 

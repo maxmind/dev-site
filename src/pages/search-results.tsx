@@ -1,10 +1,11 @@
 /* eslint-disable react/prop-types */
 
 import { globalHistory } from '@reach/router';
-import { Link, RouteUpdateArgs } from 'gatsby';
+import { RouteUpdateArgs } from 'gatsby';
 import React, { useEffect, useState } from 'react';
 
 import Layout from '../components/Layout/Layout';
+import Link from '../components/Link';
 import Loading from '../components/Loading';
 import H1 from '../components/Mdx/H1';
 import SearchResult from '../components/SearchResult';

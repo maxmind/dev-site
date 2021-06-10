@@ -1,9 +1,9 @@
 import { useLocation } from '@reach/router';
 import classNames from 'classnames';
-import { Link } from 'gatsby';
 import PropTypes from 'prop-types';
 import React from 'react';
 
+import Link from '../../components/Link';
 import useActiveHeading from '../../hooks/useActiveHeading';
 
 import * as styles from './TableOfContents.module.scss';

@@ -1,6 +1,5 @@
 import { useLocation } from '@reach/router';
 import classNames from 'classnames';
-import { Link } from 'gatsby';
 import PropTypes from 'prop-types';
 import React from 'react';
 import {
@@ -9,6 +8,7 @@ import {
 } from 'react-icons/fa';
 
 import Layout from '../../components/Layout/Layout';
+import Link from '../../components/Link';
 import { h1 as H1, p as P } from '../../components/Mdx';
 import { getNextPage, getPreviousPage } from '../../utils/pagination';
 import { IPageContext } from './query';

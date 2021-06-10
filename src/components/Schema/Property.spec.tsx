@@ -1,7 +1,7 @@
 import { ReactWrapper } from 'enzyme';
-import { Link } from 'gatsby';
 import * as React from 'react';
 
+import Link from '..//Link';
 import { p as P } from '../Mdx';
 import Property from './Property';
 import Schema from './Schema';
