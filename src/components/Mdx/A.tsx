@@ -23,6 +23,10 @@ const A: React.FC<React.HTMLProps<HTMLAnchorElement>> = (props) => {
     }
   }
 
+  const queryString = 'lang=en';
+  const hrefWithQueryString = !targetHref?.includes(queryString) ?
+    `${targetHref}?lang=en` : targetHref;
+
 
   return (
     <>
@@ -45,7 +49,7 @@ const A: React.FC<React.HTMLProps<HTMLAnchorElement>> = (props) => {
       { !isExternal && !isEmail && (
         <Link
           className={classNames(className, styles.a)}
-          to={targetHref || '#'}
+          to={hrefWithQueryString || '#'}
         >
           {children}
         </Link>
