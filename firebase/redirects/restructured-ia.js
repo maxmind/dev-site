@@ -52,6 +52,16 @@ module.exports = [
     type: 302,
   },
   {
+    destination: '/geoip/legacy/javascript',
+    source: '/geoip/legacy/javascript/',
+    type: 302,
+  },
+  {
+    destination: '/geoip/legacy/javascript',
+    source: '/geoip/legacy/migrating-away-from-our-legacy-geoip-javascript-services/',
+    type: 302,
+  },
+  {
     destination: '/geoip/docs/databases/anonymous-ip',
     source: '/geoip/geoip2/geoip2-anonymous-ip-csv-database',
     type: 302,
