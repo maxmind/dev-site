@@ -36,7 +36,10 @@ const getBrokenLinks = (): Promise<any> => new Promise((resolve, reject) => {
           return;
         }
 
-        if (statusCode === 401 && originalUrl.includes('www.maxmind.com')) {
+        if (
+          statusCode === 401
+          && originalUrl.startsWith('https://www.maxmind.com')
+        ) {
           return;
         }
 
