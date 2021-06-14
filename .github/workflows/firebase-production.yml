@@ -6,6 +6,7 @@ on:
       - main
 
 env:
+  CACHE_VERSION: v1
   FIREBASE_CHANNEL_ID:  "pr-${{github.event.number}}"
   FIREBASE_PROJECT_ID: mm-static-site-production
   FIREBASE_SERVICE_ACCOUNT: "${{ secrets.PRODUCTION_FIREBASE_SERVICE_ACCOUNT }}"
@@ -26,7 +27,7 @@ jobs:
           path: |
             node_modules
             functions/node_modules
-          key: node-modules-${{ hashFiles('**/yarn.lock') }}
+          key: node-modules-${{ hashFiles('**/yarn.lock') }}-${{ env.CACHE_VERSION }}
 
       - if: steps.cache-node-modules.outputs.cache-hit != 'true'
         name: Install dependencies
@@ -40,7 +41,7 @@ jobs:
             functions/lib
             public
             firebase.json
-          key: build-${{ hashFiles('content/**', 'firebase/**', 'functions/src/**', 'src/**', 'static/**') }}
+          key: build-${{ hashFiles('content/**', 'firebase/**', 'functions/src/**', 'src/**', 'static/**') }}-${{ env.CACHE_VERSION }}
 
       - if: steps.cache-build.outputs.cache-hit != 'true'
         name: Build
@@ -65,7 +66,7 @@ jobs:
           path: |
             node_modules
             functions/node_modules
-          key: node-modules-${{ hashFiles('**/yarn.lock') }}
+          key: node-modules-${{ hashFiles('**/yarn.lock') }}-${{ env.CACHE_VERSION }}
 
       - name: Run accessibility tests
         run: yarn test:a11y
@@ -87,7 +88,7 @@ jobs:
           path: |
             node_modules
             functions/node_modules
-          key: node-modules-${{ hashFiles('**/yarn.lock') }}
+          key: node-modules-${{ hashFiles('**/yarn.lock') }}-${{ env.CACHE_VERSION }}
 
       - name: Run unit tests
         run: yarn test:unit
@@ -116,7 +117,7 @@ jobs:
             functions/lib
             public
             firebase.json
-          key: build-${{ hashFiles('content/**', 'firebase/**', 'functions/src/**', 'src/**', 'static/**') }}
+          key: build-${{ hashFiles('content/**', 'firebase/**', 'functions/src/**', 'src/**', 'static/**') }}-${{ env.CACHE_VERSION }}
 
       - name: Deploy Firebase preview channel
         uses: FirebaseExtended/action-hosting-deploy@v0
@@ -150,7 +151,7 @@ jobs:
             functions/lib
             public
             firebase.json
-          key: build-${{ hashFiles('content/**', 'firebase/**', 'functions/src/**', 'src/**', 'static/**') }}
+          key: build-${{ hashFiles('content/**', 'firebase/**', 'functions/src/**', 'src/**', 'static/**') }}-${{ env.CACHE_VERSION }}
 
       - name: Set up Google Cloud SDK
         uses: google-github-actions/setup-gcloud@master
@@ -166,7 +167,7 @@ jobs:
           path: |
             node_modules
             functions/node_modules
-          key: node-modules-${{ hashFiles('**/yarn.lock') }}
+          key: node-modules-${{ hashFiles('**/yarn.lock') }}-${{ env.CACHE_VERSION }}
 
       - name: Deploy all other Firebase resources
         run: yarn firebase deploy --except hosting --project ${{ env.FIREBASE_PROJECT_ID }}
