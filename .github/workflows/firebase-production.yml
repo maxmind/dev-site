@@ -20,6 +20,7 @@ jobs:
         uses: actions/checkout@master
 
       - name: Get cached dependencies
+        id: cache-node-modules
         uses: actions/cache@v2
         with:
           path: |
@@ -27,7 +28,8 @@ jobs:
             functions/node_modules
           key: node-modules-${{ hashFiles('**/yarn.lock') }}
 
-      - name: Install dependencies
+      - if: steps.cache-node-modules.outputs.cache-hit != 'true'
+        name: Install dependencies
         run: yarn install
 
       - name: Run unit tests
