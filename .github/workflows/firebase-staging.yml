@@ -9,8 +9,8 @@ env:
   FIREBASE_SERVICE_ACCOUNT: "${{ secrets.STAGING_FIREBASE_SERVICE_ACCOUNT }}"
 
 jobs:
-  staging-build-test-deploy:
-    name: Staging - Build, Test, and Deploy
+  build:
+    name: Build
     runs-on: ubuntu-latest
 
     steps:
@@ -30,12 +30,6 @@ jobs:
         name: Install dependencies
         run: yarn install
 
-      - name: Run unit tests
-        run: yarn test:unit
-
-      - name: Run accessibility tests
-        run: yarn test:a11y
-
       - name: Get cached build
         id: cache-build
         uses: actions/cache@v2
@@ -52,6 +46,67 @@ jobs:
           GATSBY_URL: https://${{ env.FIREBASE_PROJECT_ID }}--${{ env.FIREBASE_CHANNEL_ID }}.web.app
         run:  yarn build
 
+  test-a11y:
+    name: Test – Accessibility
+    needs: build
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repo
+        uses: actions/checkout@master
+
+      - name: Get cached dependencies
+        uses: actions/cache@v2
+        id: cache-node-modules
+        with:
+          path: |
+            node_modules
+            functions/node_modules
+          key: node-modules-${{ hashFiles('**/yarn.lock') }}
+
+      - name: Run accessibility tests
+        run: yarn test:a11y
+
+  test-unit:
+    name: Test – Unit
+    needs: build
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repo
+        uses: actions/checkout@master
+
+      - name: Get cached dependencies
+        uses: actions/cache@v2
+        id: cache-node-modules
+        with:
+          path: |
+            node_modules
+            functions/node_modules
+          key: node-modules-${{ hashFiles('**/yarn.lock') }}
+
+      - name: Run unit tests
+        run: yarn test:unit
+
+  deploy-hosting:
+    name: Deploy – Hosting
+    needs: build
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repo
+        uses: actions/checkout@master
+
+      - name: Get cached build
+        id: cache-build
+        uses: actions/cache@v2
+        with:
+          path: |
+            functions/lib
+            public
+            firebase.json
+          key: build-${{ hashFiles('.github/**/*.yml', 'content/**', 'firebase/**', 'functions/src/**', 'src/**', 'static/**') }}
+
       - name: Deploy Firebase preview channel
         uses: FirebaseExtended/action-hosting-deploy@v0
         with:
@@ -63,12 +118,41 @@ jobs:
         env:
           FIREBASE_CLI_PREVIEWS: hostingchannels
 
+  deploy-functions:
+    name: Deploy – Functions
+    needs: build
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repo
+        uses: actions/checkout@master
+
+      - name: Get cached build
+        id: cache-build
+        uses: actions/cache@v2
+        with:
+          path: |
+            functions/lib
+            public
+            firebase.json
+          key: build-${{ hashFiles('.github/**/*.yml', 'content/**', 'firebase/**', 'functions/src/**', 'src/**', 'static/**') }}
+
       - name: Set up Google Cloud SDK
         uses: google-github-actions/setup-gcloud@master
         with:
           project_id: ${{ env.FIREBASE_PROJECT_ID }}
           service_account_key: ${{ env.FIREBASE_SERVICE_ACCOUNT }}
           export_default_credentials: true
+
+      # Dependencies are needed here to run `yarn firbase` command
+      - name: Get cached dependencies
+        uses: actions/cache@v2
+        id: cache-node-modules
+        with:
+          path: |
+            node_modules
+            functions/node_modules
+          key: node-modules-${{ hashFiles('**/yarn.lock') }}
 
       - name: Deploy all other Firebase resources
         run: yarn firebase deploy --except hosting --project ${{ env.FIREBASE_PROJECT_ID }}

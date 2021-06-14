@@ -11,8 +11,8 @@ env:
   FIREBASE_SERVICE_ACCOUNT: "${{ secrets.PRODUCTION_FIREBASE_SERVICE_ACCOUNT }}"
 
 jobs:
-  production-build-test-deploy:
-    name: Production - Build, Test, and Deploy
+  build:
+    name: Build
     runs-on: ubuntu-latest
 
     steps:
@@ -32,12 +32,6 @@ jobs:
         name: Install dependencies
         run: yarn install
 
-      - name: Run unit tests
-        run: yarn test:unit
-
-      - name: Run accessibility tests
-        run: yarn test:a11y
-
       - name: Get cached build
         id: cache-build
         uses: actions/cache@v2
@@ -54,6 +48,76 @@ jobs:
           GATSBY_URL: https://dev.maxmind.com
         run: yarn build
 
+  test-a11y:
+    if: jobs.build.steps.cache-build.outputs.cache-hit != 'true'
+    name: Test – Accessibility
+    needs: build
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repo
+        uses: actions/checkout@master
+
+      - name: Get cached dependencies
+        id: cache-node-modules
+        uses: actions/cache@v2
+        with:
+          path: |
+            node_modules
+            functions/node_modules
+          key: node-modules-${{ hashFiles('**/yarn.lock') }}
+
+      - name: Run accessibility tests
+        run: yarn test:a11y
+
+  test-unit:
+    if: jobs.build.steps.cache-build.outputs.cache-hit != 'true'
+    name: Test – Unit
+    needs: build
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repo
+        uses: actions/checkout@master
+
+      - name: Get cached dependencies
+        id: cache-node-modules
+        uses: actions/cache@v2
+        with:
+          path: |
+            node_modules
+            functions/node_modules
+          key: node-modules-${{ hashFiles('**/yarn.lock') }}
+
+      - name: Run unit tests
+        run: yarn test:unit
+
+  deploy-hosting:
+    name: Deploy – Hosting
+    needs: [build, test-a11y, test-unit]
+    # Only run this job if test jobs either ran successfully or were skipped
+    # because a previously tested build was cached.
+    # Inspired by https://github.com/actions/runner/issues/491#issuecomment-850884422
+    if: |
+      always() &&
+      (needs.test-a11y.result == 'success' || needs.test-a11y.result == 'skipped') &&
+      (needs.test-unit.result == 'success' || needs.test-unit.result == 'skipped')
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repo
+        uses: actions/checkout@master
+
+      - name: Get cached build
+        id: cache-build
+        uses: actions/cache@v2
+        with:
+          path: |
+            functions/lib
+            public
+            firebase.json
+          key: build-${{ hashFiles('.github/**/*.yml', 'content/**', 'firebase/**', 'functions/src/**', 'src/**', 'static/**') }}
+
       - name: Deploy Firebase preview channel
         uses: FirebaseExtended/action-hosting-deploy@v0
         with:
@@ -62,12 +126,47 @@ jobs:
           projectId: ${{ env.FIREBASE_PROJECT_ID }}
           channelId: live
 
+  deploy-functions:
+    name: Deploy - Functions
+    needs: [build, test-a11y, test-unit]
+    # Only run this job if test jobs either ran successfully or were skipped
+    # because a previously tested build was cached.
+    # Inspired by https://github.com/actions/runner/issues/491#issuecomment-850884422
+    if: |
+      always() &&
+      (needs.test-a11y.result == 'success' || needs.test-a11y.result == 'skipped') &&
+      (needs.test-unit.result == 'success' || needs.test-unit.result == 'skipped')
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repo
+        uses: actions/checkout@master
+
+      - name: Get cached build
+        id: cache-build
+        uses: actions/cache@v2
+        with:
+          path: |
+            functions/lib
+            public
+            firebase.json
+          key: build-${{ hashFiles('.github/**/*.yml', 'content/**', 'firebase/**', 'functions/src/**', 'src/**', 'static/**') }}
+
       - name: Set up Google Cloud SDK
         uses: google-github-actions/setup-gcloud@master
         with:
           project_id: ${{ env.FIREBASE_PROJECT_ID }}
           service_account_key: "${{ env.FIREBASE_SERVICE_ACCOUNT }}"
           export_default_credentials: true
+
+      - name: Get cached dependencies
+        id: cache-node-modules
+        uses: actions/cache@v2
+        with:
+          path: |
+            node_modules
+            functions/node_modules
+          key: node-modules-${{ hashFiles('**/yarn.lock') }}
 
       - name: Deploy all other Firebase resources
         run: yarn firebase deploy --except hosting --project ${{ env.FIREBASE_PROJECT_ID }}
