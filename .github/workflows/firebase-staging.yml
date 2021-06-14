@@ -40,6 +40,13 @@ jobs:
             firebase.json
           key: build-${{ hashFiles('.github/**/*.yml', 'content/**', 'firebase/**', 'functions/src/**', 'src/**', 'static/**') }}
 
+      - name: Get Gatsby cache
+        uses: actions/cache@v2
+        with:
+          path: |
+            .cache
+          key: gatsby-${{ github.event.number }}
+
       - if: steps.cache-build.outputs.cache-hit != 'true'
         name: Build
         env:
