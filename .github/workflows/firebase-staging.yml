@@ -46,7 +46,8 @@ jobs:
             firebase.json
           key: build-${{ hashFiles('.github/**/*.yml', 'content/**', 'firebase/**', 'functions/src/**', 'src/**', 'static/**') }}
 
-      - name: Build
+      - if: steps.cache-build.outputs.cache-hit != 'true'
+        name: Build
         env:
           GATSBY_URL: https://${{ env.FIREBASE_PROJECT_ID }}--${{ env.FIREBASE_CHANNEL_ID }}.web.app
         run:  yarn build
