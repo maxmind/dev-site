@@ -1,4 +1,4 @@
-name: Firebase - Production
+name: Production
 
 on:
   push:
