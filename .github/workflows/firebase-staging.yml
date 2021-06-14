@@ -114,6 +114,13 @@ jobs:
             firebase.json
           key: build-${{ hashFiles('.github/**/*.yml', 'content/**', 'firebase/**', 'functions/src/**', 'src/**', 'static/**') }}
 
+      - name: Get Firebase cache
+        uses: actions/cache@v2
+        with:
+          path: |
+            .cache
+          key: firebase-${{ github.event.number }}
+
       - name: Deploy Firebase preview channel
         uses: FirebaseExtended/action-hosting-deploy@v0
         with:
@@ -160,6 +167,13 @@ jobs:
             node_modules
             functions/node_modules
           key: node-modules-${{ hashFiles('**/yarn.lock') }}
+
+      - name: Get Firebase cache
+        uses: actions/cache@v2
+        with:
+          path: |
+            .cache
+          key: firebase-${{ github.event.number }}
 
       - name: Deploy all other Firebase resources
         run: yarn firebase deploy --except hosting --project ${{ env.FIREBASE_PROJECT_ID }}
