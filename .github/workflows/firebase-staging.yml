@@ -36,6 +36,16 @@ jobs:
       - name: Run accessibility tests
         run: yarn test:a11y
 
+      - name: Get cached build
+        id: cache-build
+        uses: actions/cache@v2
+        with:
+          path: |
+            functions/lib
+            public
+            firebase.json
+          key: build-${{ hashFiles('.github/**/*.yml', 'content/**', 'firebase/**', 'functions/src/**', 'src/**', 'static/**') }}
+
       - name: Build
         env:
           GATSBY_URL: https://${{ env.FIREBASE_PROJECT_ID }}--${{ env.FIREBASE_CHANNEL_ID }}.web.app
