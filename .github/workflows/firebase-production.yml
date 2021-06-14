@@ -40,7 +40,7 @@ jobs:
             functions/lib
             public
             firebase.json
-          key: build-${{ hashFiles('.github/**/*.yml', 'content/**', 'firebase/**', 'functions/src/**', 'src/**', 'static/**') }}
+          key: build-${{ hashFiles('content/**', 'firebase/**', 'functions/src/**', 'src/**', 'static/**') }}
 
       - if: steps.cache-build.outputs.cache-hit != 'true'
         name: Build
@@ -116,7 +116,7 @@ jobs:
             functions/lib
             public
             firebase.json
-          key: build-${{ hashFiles('.github/**/*.yml', 'content/**', 'firebase/**', 'functions/src/**', 'src/**', 'static/**') }}
+          key: build-${{ hashFiles('content/**', 'firebase/**', 'functions/src/**', 'src/**', 'static/**') }}
 
       - name: Deploy Firebase preview channel
         uses: FirebaseExtended/action-hosting-deploy@v0
@@ -150,7 +150,7 @@ jobs:
             functions/lib
             public
             firebase.json
-          key: build-${{ hashFiles('.github/**/*.yml', 'content/**', 'firebase/**', 'functions/src/**', 'src/**', 'static/**') }}
+          key: build-${{ hashFiles('content/**', 'firebase/**', 'functions/src/**', 'src/**', 'static/**') }}
 
       - name: Set up Google Cloud SDK
         uses: google-github-actions/setup-gcloud@master

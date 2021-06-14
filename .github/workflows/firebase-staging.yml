@@ -38,7 +38,7 @@ jobs:
             functions/lib
             public
             firebase.json
-          key: build-${{ hashFiles('.github/**/*.yml', 'content/**', 'firebase/**', 'functions/src/**', 'src/**', 'static/**') }}
+          key: build-${{ hashFiles('content/**', 'firebase/**', 'functions/src/**', 'src/**', 'static/**') }}
 
       - name: Get Gatsby cache
         uses: actions/cache@v2
@@ -112,7 +112,7 @@ jobs:
             functions/lib
             public
             firebase.json
-          key: build-${{ hashFiles('.github/**/*.yml', 'content/**', 'firebase/**', 'functions/src/**', 'src/**', 'static/**') }}
+          key: build-${{ hashFiles('content/**', 'firebase/**', 'functions/src/**', 'src/**', 'static/**') }}
 
       - name: Get Firebase cache
         uses: actions/cache@v2
@@ -122,11 +122,32 @@ jobs:
           key: firebase-${{ github.event.number }}
 
       - name: Deploy Firebase preview channel
+        id: deploy-preview-channel
         uses: FirebaseExtended/action-hosting-deploy@v0
         with:
           repoToken: "${{ secrets.GITHUB_TOKEN }}"
           firebaseServiceAccount: "${{ env.FIREBASE_SERVICE_ACCOUNT }}"
           expires: 7d
+          projectId: "${{ env.FIREBASE_PROJECT_ID }}"
+          channelId: "${{ env.FIREBASE_CHANNEL_ID }}"
+        env:
+          FIREBASE_CLI_PREVIEWS: hostingchannels
+
+      - name: Update robots and sitemap files for staging environments
+        env:
+          FIND_AND_REPLACE: s|https://dev.maxmind.com|${{ steps.deploy-preview-channel.outputs.details_url }}|g
+        run: |
+          sed -i "s/Allow:/Disallow:/g" public/robots.txt
+          sed -i "$FIND_AND_REPLACE" public/robots.txt
+          sed -i "$FIND_AND_REPLACE" public/sitemap.xml
+          sed -i "$FIND_AND_REPLACE" public/sitemap-pages.xml
+
+      - name: Deploy updated files staging environment files
+        uses: FirebaseExtended/action-hosting-deploy@v0
+        with:
+          repoToken: "${{ secrets.GITHUB_TOKEN }}"
+          firebaseServiceAccount: "${{ env.FIREBASE_SERVICE_ACCOUNT }}"
+          expires: 30d
           projectId: "${{ env.FIREBASE_PROJECT_ID }}"
           channelId: "${{ env.FIREBASE_CHANNEL_ID }}"
         env:
@@ -149,7 +170,7 @@ jobs:
             functions/lib
             public
             firebase.json
-          key: build-${{ hashFiles('.github/**/*.yml', 'content/**', 'firebase/**', 'functions/src/**', 'src/**', 'static/**') }}
+          key: build-${{ hashFiles('content/**', 'firebase/**', 'functions/src/**', 'src/**', 'static/**') }}
 
       - name: Set up Google Cloud SDK
         uses: google-github-actions/setup-gcloud@master
@@ -177,3 +198,25 @@ jobs:
 
       - name: Deploy all other Firebase resources
         run: yarn firebase deploy --except hosting --project ${{ env.FIREBASE_PROJECT_ID }}
+
+  test:
+    name: Deploy – Hosting - Test
+    needs: deploy-hosting
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repo
+        uses: actions/checkout@master
+
+      - name: Get cached build
+        id: cache-build
+        uses: actions/cache@v2
+        with:
+          path: |
+            functions/lib
+            public
+            firebase.json
+          key: build-${{ hashFiles('content/**', 'firebase/**', 'functions/src/**', 'src/**', 'static/**') }}
+
+      - name: Echo
+        run: cat public/robots.txt
