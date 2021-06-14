@@ -50,7 +50,7 @@ jobs:
       - if: steps.cache-build.outputs.cache-hit != 'true'
         name: Build
         env:
-          GATSBY_URL: https://${{ env.FIREBASE_PROJECT_ID }}--${{ env.FIREBASE_CHANNEL_ID }}.web.app
+          GATSBY_URL: https://dev.maxmind.com
         run:  yarn build
 
   test-a11y:
