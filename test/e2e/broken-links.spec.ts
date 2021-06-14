@@ -1,6 +1,10 @@
 import blc from 'broken-link-checker';
 
-const url = 'http://localhost:5000';
+const targetUrl = process.env.E2E_TARGET_URL;
+
+if (!targetUrl) {
+  throw new Error('`E2E_TARGET_URL` environment variable not dfined');
+}
 
 const falsePositives = [
   'https://crates.io/crates/maxminddb',
@@ -47,7 +51,7 @@ const getBrokenLinks = (): Promise<any> => new Promise((resolve, reject) => {
       },
     });
 
-    checker.enqueue(url, []);
+    checker.enqueue(targetUrl, []);
   } catch(err) {
     reject(err);
   }
