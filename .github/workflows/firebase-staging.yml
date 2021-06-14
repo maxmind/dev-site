@@ -3,12 +3,15 @@ name: Firebase - Staging
 on:
   pull_request:
 
+env:
+  FIREBASE_CHANNEL_ID:  "pr-${{github.event.number}}"
+  FIREBASE_PROJECT_ID: mm-static-site-staging
+  FIREBASE_SERVICE_ACCOUNT: "${{ secrets.STAGING_FIREBASE_SERVICE_ACCOUNT }}"
+
 jobs:
   staging-build-test-deploy:
     name: Staging - Build, Test, and Deploy
     runs-on: ubuntu-latest
-    env:
-      FIREBASE_CHANNEL_ID: "pr-${{github.event.number}}"
 
     steps:
       - name: Checkout Repo
@@ -41,15 +44,17 @@ jobs:
         run: yarn test:a11y
 
       - name: Build
-        run: GATSBY_URL=https://${{ secrets.STAGING_FIREBASE_PROJECT_ID }}--${{ env.FIREBASE_CHANNEL_ID }}.web.app yarn build
+        env:
+          GATSBY_URL: https://${{ env.FIREBASE_PROJECT_ID }}--${{ env.FIREBASE_CHANNEL_ID }}.web.app
+        run:  yarn build
 
       - name: Deploy Firebase preview channel
         uses: FirebaseExtended/action-hosting-deploy@v0
         with:
           repoToken: "${{ secrets.GITHUB_TOKEN }}"
-          firebaseServiceAccount: "${{ secrets.STAGING_FIREBASE_SERVICE_ACCOUNT }}"
+          firebaseServiceAccount: "${{ env.FIREBASE_SERVICE_ACCOUNT }}"
           expires: 7d
-          projectId: "${{ secrets.STAGING_FIREBASE_PROJECT_ID }}"
+          projectId: "${{ env.FIREBASE_PROJECT_ID }}"
           channelId: "${{ env.FIREBASE_CHANNEL_ID }}"
         env:
           FIREBASE_CLI_PREVIEWS: hostingchannels
@@ -57,9 +62,9 @@ jobs:
       - name: Set up Google Cloud SDK
         uses: google-github-actions/setup-gcloud@master
         with:
-          project_id: ${{ secrets.STAGING_FIREBASE_PROJECT_ID }}
-          service_account_key: ${{ secrets.STAGING_FIREBASE_SERVICE_ACCOUNT }}
+          project_id: ${{ env.FIREBASE_PROJECT_ID }}
+          service_account_key: ${{ env.FIREBASE_SERVICE_ACCOUNT }}
           export_default_credentials: true
 
       - name: Deploy all other Firebase resources
-        run: yarn firebase deploy --except hosting --project ${{ secrets.STAGING_FIREBASE_PROJECT_ID }}
+        run: yarn firebase deploy --except hosting --project ${{ env.FIREBASE_PROJECT_ID }}

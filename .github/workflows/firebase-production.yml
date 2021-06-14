@@ -5,6 +5,11 @@ on:
     branches:
       - main
 
+env:
+  FIREBASE_CHANNEL_ID:  "pr-${{github.event.number}}"
+  FIREBASE_PROJECT_ID: mm-static-site-production
+  FIREBASE_SERVICE_ACCOUNT: "${{ secrets.PRODUCTION_FIREBASE_SERVICE_ACCOUNT }}"
+
 jobs:
   production-build-test-deploy:
     name: Production - Build, Test, and Deploy
@@ -41,22 +46,24 @@ jobs:
         run: yarn test:a11y
 
       - name: Build
-        run: GATSBY_URL=https://dev.maxmind.com yarn build
+        env:
+          GATSBY_URL: https://dev.maxmind.com
+        run: yarn build
 
       - name: Deploy Firebase preview channel
         uses: FirebaseExtended/action-hosting-deploy@v0
         with:
           repoToken: "${{ secrets.GITHUB_TOKEN }}"
-          firebaseServiceAccount: "${{ secrets.PRODUCTION_FIREBASE_SERVICE_ACCOUNT }}"
-          projectId: "${{ secrets.PRODUCTION_FIREBASE_PROJECT_ID }}"
+          firebaseServiceAccount: "${{ env.FIREBASE_SERVICE_ACCOUNT }}"
+          projectId: ${{ env.FIREBASE_PROJECT_ID }}
           channelId: live
 
       - name: Set up Google Cloud SDK
         uses: google-github-actions/setup-gcloud@master
         with:
-          project_id: ${{ secrets.PRODUCTION_FIREBASE_PROJECT_ID }}
-          service_account_key: ${{ secrets.PRODUCTION_FIREBASE_SERVICE_ACCOUNT }}
+          project_id: ${{ env.FIREBASE_PROJECT_ID }}
+          service_account_key: "${{ env.FIREBASE_SERVICE_ACCOUNT }}"
           export_default_credentials: true
 
       - name: Deploy all other Firebase resources
-        run: yarn firebase deploy --except hosting --project ${{ secrets.PRODUCTION_FIREBASE_PROJECT_ID }}
+        run: yarn firebase deploy --except hosting --project ${{ env.FIREBASE_PROJECT_ID }}
