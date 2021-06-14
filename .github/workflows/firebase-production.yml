@@ -4,13 +4,6 @@ on:
   push:
     branches:
       - main
-    paths:
-      - '.github/workflows/firebase-production.yml'
-      - 'content/**'
-      - 'firebase.js'
-      - 'functions/**'
-      - 'gatsby/firebase/firebase.json'
-      - 'gatsby/src/**'
 
 jobs:
   production-build-test-deploy:
