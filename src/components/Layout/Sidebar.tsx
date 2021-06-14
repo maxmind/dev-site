@@ -1,6 +1,5 @@
 import { useLocation } from '@reach/router';
 import classNames from 'classnames';
-import { Link } from 'gatsby';
 import React from 'react';
 import { FaExternalLinkAlt as ExternalLinkIcon } from 'react-icons/fa';
 
@@ -9,6 +8,7 @@ import {
   IItem,
   isInternalItem,
 } from '../../types/Item';
+import Link from '../Link';
 
 import * as styles from './Sidebar.module.scss';
 

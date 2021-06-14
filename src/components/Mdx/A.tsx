@@ -1,8 +1,9 @@
 import classNames from 'classnames';
-import { Link } from 'gatsby';
 import PropTypes from 'prop-types';
 import React from 'react';
 import { FaExternalLinkAlt } from 'react-icons/fa';
+
+import Link from '../Link';
 
 import * as styles from './A.module.scss';
 
@@ -22,7 +23,6 @@ const A: React.FC<React.HTMLProps<HTMLAnchorElement>> = (props) => {
       targetHref = targetHref.slice(0, -1);
     }
   }
-
 
   return (
     <>

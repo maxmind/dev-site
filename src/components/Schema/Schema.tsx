@@ -1,6 +1,5 @@
 // TODO - Figure out correct typings for React children that implement ISchema
 /* eslint-disable @typescript-eslint/no-explicit-any */
-import { Link } from 'gatsby';
 import GithubSlugger from 'github-slugger';
 import PropTypes from 'prop-types';
 import * as React from 'react';
@@ -9,6 +8,7 @@ import { FaLink as LinkIcon } from 'react-icons/fa';
 import { inferType } from '../../utils/json';
 import { formatSchemaName } from '../../utils/openapi';
 import Example from '../Example';
+import Link from '../Link';
 import SchemaContext from './SchemaContext';
 import Tag from './Tag';
 

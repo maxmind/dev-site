@@ -1,10 +1,10 @@
-import { Link } from 'gatsby';
 import PropTypes from 'prop-types';
 import React from 'react';
 import { FaBars, FaTimes } from 'react-icons/fa';
 
 import Logo from '../../assets/svgs/maxmind-logo.svg';
 import useSystemStatus from '../../hooks/useSystemStatus';
+import Link from '../Link';
 import AccessibilityNav from './AccessibilityNav';
 import SearchBar from './SearchBar';
 

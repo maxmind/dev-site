@@ -197,7 +197,7 @@
     "url": "https://github.com/maxmind/dev-site.git"
   },
   "scripts": {
-    "build": "run-p build:*",
+    "build": "run-p build:* && yarn sitemap-query-string",
     "build:gatsby": "gatsby clean && gatsby build",
     "build:firebase-config": "node firebase.js",
     "build:functions": "cd functions && yarn build",
@@ -217,6 +217,7 @@
     "postinstall": "yarn --cwd functions install",
     "preview": "firebase hosting:channel:deploy $(git rev-parse --abbrev-ref HEAD)",
     "serve": "firebase emulators:start --only functions,hosting",
+    "sitemap-query-string": "node sitemap-query-string.js",
     "start": "yarn run develop",
     "test": "run-s \"test:* --silent\"",
     "test:a11y": "jest --config .jestrc.a11y.js --no-cache --maxWorkers=4",
