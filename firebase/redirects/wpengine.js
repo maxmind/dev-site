@@ -57,6 +57,11 @@ module.exports = [
   },
   {
     destination: 'https://support.maxmind.com/',
+    source: '/faq',
+    type: 302,
+  },
+  {
+    destination: 'https://support.maxmind.com/',
     source: '/faq/*',
     type: 302,
   },

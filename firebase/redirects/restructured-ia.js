@@ -246,4 +246,19 @@ module.exports = [
     source: '/minfraud/dispositions-api',
     type: 302,
   },
+  {
+    destination: '/csv-files/:1',
+    regex: '^\\/static\\/csv\\/(.*)$',
+    type: 301,
+  },
+  {
+    destination: '/pdf-files/GeoLite2-and-GeoIP2-Precision-Web-Services-Comparison.pdf',
+    source: '/geoip/geolite2-free-geolocation-data/GeoLite2-and-GeoIP2-Precision-Web-Services-Comparison.pdf',
+    type: 301,
+  },
+  {
+    destination: '/geoip/docs/databases/city-and-country',
+    source: '/geoip/install/country',
+    type: 301,
+  },
 ];
