@@ -1,0 +1,112 @@
+<?xml version='1.0' encoding='utf-8'?>
+<wsdl:definitions xmlns:http='http://schemas.xmlsoap.org/wsdl/http/' xmlns:soap='http://schemas.xmlsoap.org/wsdl/soap/' xmlns:s='http://www.w3.org/2001/XMLSchema' xmlns:soapenc='http://schemas.xmlsoap.org/soap/encoding/' xmlns:mm='http://www.maxmind.com/maxmind_soap/minfraud_soap' targetNamespace='http://www.maxmind.com/maxmind_soap/minfraud_soap' xmlns:wsdl='http://schemas.xmlsoap.org/wsdl/'>
+   <wsdl:types>
+      <s:schema elementFormDefault='qualified' targetNamespace='http://www.maxmind.com/maxmind_soap/minfraud_soap'>
+         <s:element name='minfraud_soap8'>
+            <s:complexType>
+               <s:sequence>
+                  <s:element minOccurs='0' maxOccurs='1' name='accept_language' type='s:string'/>
+                  <s:element minOccurs='1' maxOccurs='1' name='i' type='s:string'/>
+                  <s:element minOccurs='0' maxOccurs='1' name='city' type='s:string'/>
+                  <s:element minOccurs='0' maxOccurs='1' name='region' type='s:string'/>
+                  <s:element minOccurs='0' maxOccurs='1' name='postal' type='s:string'/>
+                  <s:element minOccurs='1' maxOccurs='1' name='country' type='s:string'/>
+                  <s:element minOccurs='0' maxOccurs='1' name='domain' type='s:string'/>
+                  <s:element minOccurs='0' maxOccurs='1' name='bin' type='s:string'/>
+                  <s:element minOccurs='0' maxOccurs='1' name='binName' type='s:string'/>
+                  <s:element minOccurs='0' maxOccurs='1' name='binPhone' type='s:string'/>
+                  <s:element minOccurs='0' maxOccurs='1' name='custPhone' type='s:string'/>
+                  <s:element minOccurs='1' maxOccurs='1' name='license_key' type='s:string'/>
+                  <s:element minOccurs='0' maxOccurs='1' name='requested_type' type='s:string'/>
+                  <s:element minOccurs='0' maxOccurs='1' name='forwardedIP' type='s:string'/>
+                  <s:element minOccurs='0' maxOccurs='1' name='emailMD5' type='s:string'/>
+                  <s:element minOccurs='0' maxOccurs='1' name='usernameMD5' type='s:string'/>
+                  <s:element minOccurs='0' maxOccurs='1' name='passwordMD5' type='s:string'/>
+                  <s:element minOccurs='0' maxOccurs='1' name='shipAddr' type='s:string'/>
+                  <s:element minOccurs='0' maxOccurs='1' name='shipCity' type='s:string'/>
+                  <s:element minOccurs='0' maxOccurs='1' name='shipRegion' type='s:string'/>
+                  <s:element minOccurs='0' maxOccurs='1' name='shipPostal' type='s:string'/>
+                  <s:element minOccurs='0' maxOccurs='1' name='shipCountry' type='s:string'/>
+                  <s:element minOccurs='0' maxOccurs='1' name='txnID' type='s:string'/>
+                  <s:element minOccurs='0' maxOccurs='1' name='sessionID' type='s:string'/>
+                  <s:element minOccurs='0' maxOccurs='1' name='user_agent' type='s:string'/>
+               </s:sequence>
+            </s:complexType>
+         </s:element>
+         <s:element name='minfraud_soap8Response'>
+            <s:complexType>
+               <s:sequence>
+                  <s:element minOccurs='0' maxOccurs='1' name='minfraud_output' type='mm:MINFRAUD'/>
+               </s:sequence>
+            </s:complexType>
+         </s:element>
+         <s:complexType name='MINFRAUD'>
+            <s:sequence>
+               <s:element minOccurs='0' maxOccurs='1' name='anonymousProxy' type='s:string'/>
+               <s:element minOccurs='0' maxOccurs='1' name='binCountry' type='s:string'/>
+               <s:element minOccurs='0' maxOccurs='1' name='binMatch' type='s:string'/>
+               <s:element minOccurs='0' maxOccurs='1' name='binName' type='s:string'/>
+               <s:element minOccurs='0' maxOccurs='1' name='binNameMatch' type='s:string'/>
+               <s:element minOccurs='0' maxOccurs='1' name='binPhone' type='s:string'/>
+               <s:element minOccurs='0' maxOccurs='1' name='binPhoneMatch' type='s:string'/>
+               <s:element minOccurs='0' maxOccurs='1' name='carderEmail' type='s:string'/>
+               <s:element minOccurs='0' maxOccurs='1' name='cityPostalMatch' type='s:string'/>
+               <s:element minOccurs='0' maxOccurs='1' name='countryCode' type='s:string'/>
+               <s:element minOccurs='0' maxOccurs='1' name='countryMatch' type='s:string'/>
+               <s:element minOccurs='0' maxOccurs='1' name='custPhoneInBillingLoc' type='s:string'/>
+               <s:element minOccurs='0' maxOccurs='1' name='distance' type='s:string'/>
+               <s:element minOccurs='0' maxOccurs='1' name='err' type='s:string'/>
+               <s:element minOccurs='0' maxOccurs='1' name='explanation' type='s:string'/>
+               <s:element minOccurs='0' maxOccurs='1' name='freeMail' type='s:string'/>
+               <s:element minOccurs='0' maxOccurs='1' name='highRiskCountry' type='s:string'/>
+               <s:element minOccurs='0' maxOccurs='1' name='highRiskPassword' type='s:string'/>
+               <s:element minOccurs='0' maxOccurs='1' name='highRiskUsername' type='s:string'/>
+               <s:element minOccurs='0' maxOccurs='1' name='ip_city' type='s:base64Binary'/>
+               <s:element minOccurs='0' maxOccurs='1' name='ip_isp' type='s:string'/>
+               <s:element minOccurs='0' maxOccurs='1' name='ip_latitude' type='s:string'/>
+               <s:element minOccurs='0' maxOccurs='1' name='ip_longitude' type='s:string'/>
+               <s:element minOccurs='0' maxOccurs='1' name='ip_org' type='s:string'/>
+               <s:element minOccurs='0' maxOccurs='1' name='ip_region' type='s:string'/>
+               <s:element minOccurs='0' maxOccurs='1' name='isTransProxy' type='s:string'/>
+               <s:element minOccurs='0' maxOccurs='1' name='maxmindID' type='s:string'/>
+               <s:element minOccurs='0' maxOccurs='1' name='proxyScore' type='s:string'/>
+               <s:element minOccurs='0' maxOccurs='1' name='queriesRemaining' type='s:string'/>
+               <s:element minOccurs='0' maxOccurs='1' name='riskScore' type='s:string'/>
+               <s:element minOccurs='0' maxOccurs='1' name='score' type='s:string'/>
+               <s:element minOccurs='0' maxOccurs='1' name='shipCityPostalMatch' type='s:string'/>
+               <s:element minOccurs='0' maxOccurs='1' name='shipForward' type='s:string'/>
+            </s:sequence>
+         </s:complexType>
+         <s:element name='MINFRAUD' nillable='true' type='mm:MINFRAUD'/>
+      </s:schema>
+   </wsdl:types>
+   <wsdl:message name='minfraudSoapIn'>
+      <wsdl:part name='parameters' element='mm:minfraud_soap8'/>
+   </wsdl:message>
+   <wsdl:message name='minfraudSoapOut'>
+      <wsdl:part name='parameters' element='mm:minfraud_soap8Response'/>
+   </wsdl:message>
+   <wsdl:portType name='minfraudWebServiceSoap'>
+      <wsdl:operation name='minfraud_soap8'>
+         <wsdl:input message='mm:minfraudSoapIn'/>
+         <wsdl:output message='mm:minfraudSoapOut'/>
+      </wsdl:operation>
+   </wsdl:portType>
+   <wsdl:binding name='minfraudWebServiceSoap' type='mm:minfraudWebServiceSoap'>
+      <soap:binding transport='http://schemas.xmlsoap.org/soap/http' style='document'/>
+      <wsdl:operation name='minfraud_soap8'>
+         <soap:operation soapAction='http://www.maxmind.com/maxmind_soap/minfraud_soap#minfraud_soap8' style='document'/>
+         <wsdl:input>
+            <soap:body use='literal'/>
+         </wsdl:input>
+         <wsdl:output>
+            <soap:body use='literal'/>
+         </wsdl:output>
+      </wsdl:operation>
+   </wsdl:binding>
+   <wsdl:service name='minfraudWebService'>
+      <wsdl:port name='minfraudWebServiceSoap' binding='mm:minfraudWebServiceSoap'>
+         <soap:address location='http://minfraud.maxmind.com/app/minfraud_soap'/>
+      </wsdl:port>
+   </wsdl:service>
+</wsdl:definitions>
