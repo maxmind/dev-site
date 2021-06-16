@@ -107,6 +107,7 @@
     "@types/dompurify": "^2.2.1",
     "@types/enzyme": "^3.10.8",
     "@types/jest": "^26.0.20",
+    "@types/jest-dev-server": "^4.2.0",
     "@types/lodash.isboolean": "^3.0.6",
     "@types/lodash.isnumber": "^3.0.6",
     "@types/lodash.isplainobject": "^4.0.6",
@@ -138,6 +139,7 @@
     "husky": "6.0.0",
     "identity-obj-proxy": "^3.0.0",
     "jest": "^26.5.2",
+    "jest-dev-server": "^5.0.3",
     "jest-enzyme": "^7.1.2",
     "jest-fetch-mock": "^3.0.3",
     "jest-pa11y": "^1.1.5",
@@ -226,7 +228,9 @@
     "test": "run-s \"test:* --silent\"",
     "test:a11y": "jest --config .jestrc.a11y.js --no-cache --maxWorkers=4",
     "test:unit": "jest --config .jestrc.js",
-    "test:e2e": "jest --config .jestrc.e2e.js"
+    "test:e2e": "jest --config .jestrc.e2e.js",
+    "test:broken-links": "yarn test:e2e --verbose -t 'website has no broken links'",
+    "test:redirects": "yarn build:firebase-config && yarn test:e2e --verbose -t 'Static file redirects'"
   },
   "version": "0.1.0"
 }
