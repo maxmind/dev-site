@@ -24,17 +24,14 @@ const toHaveNoBrokenLinks = (brokenLinks: any[]): any => {
   ];
 
   const formatedViolations = brokenLinks.map((brokenLink: any) => {
-    // eslint-disable-next-line compat/compat
-    const url = new URL(brokenLink.base.original);
-
     const table = Table(header, [
       [
         'Reason',
         brokenLink.brokenReason,
       ],
       [
-        'URI Path',
-        url.pathname,
+        'Page',
+        brokenLink.base.original,
       ],
       [
         'Broken Link Url',
