@@ -5,6 +5,7 @@
  * See: https://www.gatsbyjs.org/docs/use-static-query/
  */
 
+import { useLocation } from '@reach/router';
 import { graphql, useStaticQuery } from 'gatsby';
 import PropTypes from 'prop-types';
 import React from 'react';
@@ -25,6 +26,7 @@ const SEO: React.FC<ISEO> = (props) => {
             title
             description
             author
+            siteUrl
           }
         }
       }
@@ -39,6 +41,13 @@ const SEO: React.FC<ISEO> = (props) => {
       htmlAttributes={{
         lang,
       }}
+      link={[
+        {
+          href:
+            `${site.siteMetadata.siteUrl}${useLocation()?.pathname}?lang=en`,
+          rel:'canonical',
+        },
+      ]}
       meta={[
         {
           content: metaDescription,
