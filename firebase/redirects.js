@@ -108,6 +108,11 @@ const staticFileRedirects = [
 module.exports = [
   ...staticFileRedirects,
   {
+    destination: ':1',
+    regex: '^(.*)/page\\/\\d+$',
+    type: 302,
+  },
+  {
     destination: 'https://support.maxmind.com/',
     source: '/faq',
     type: 302,
