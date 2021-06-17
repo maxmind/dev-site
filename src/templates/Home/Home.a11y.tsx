@@ -82,6 +82,7 @@ describe('Home', () => {
         '#content > div:nth-child(2) > div:nth-child(1) > div:nth-child(4) > p > a',
         '#content > div:nth-child(2) > div:nth-child(2) > div:nth-child(4) > p > a:nth-child(1)',
         '#content > div:nth-child(2) > div:nth-child(2) > div:nth-child(4) > p > a:nth-child(2)',
+        '#content > div:nth-child(3) > p',
 
         /* eslint-enable max-len */
       ].join(', '),
