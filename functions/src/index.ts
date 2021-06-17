@@ -1,7 +1,5 @@
 import * as functions from 'firebase-functions';
 
-import releaseNoteRedirects from './release-note-redirects';
-
 const allowedHosts = [
   /^localhost:5000$/,
   /^mm-static-site-staging\.web\.app$/,
@@ -62,25 +60,4 @@ export const feedRewrite = functions.https.onRequest((request, response) => {
   }
 
   return response.redirect(origin);
-});
-
-export const releaseNoteRedirect = functions.https.onRequest((request, response) => {
-  const protocol = request.protocol;
-  const host = parseHost(request);
-
-  if (!host) {
-    response.status(400).send();
-    return;
-  }
-
-  const origin = `${protocol}://${host}`;
-  const path = request.path;
-
-  const redirect = releaseNoteRedirects.find(el => path.startsWith(el.source));
-
-  if (redirect) {
-    return response.redirect(`${origin}${redirect.destination}`, 302);
-  }
-
-  return response.redirect(origin, 302);
 });
