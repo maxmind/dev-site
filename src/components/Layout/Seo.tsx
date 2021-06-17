@@ -72,6 +72,10 @@ const SEO: React.FC<ISEO> = (props) => {
           content: metaDescription,
           name: 'twitter:description',
         },
+        {
+          content: 'jzxJA9mJTD-WTNDG-fbAdNT-thiZRme30MvnzuXMxsQ',
+          name: 'google-site-verification',
+        },
         ...meta,
       ]}
       title={title}
