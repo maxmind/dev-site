@@ -2,6 +2,7 @@ import PropTypes from 'prop-types';
 import React from 'react';
 import {
   FaBookOpen as ViewDocsIcon,
+  FaCode as ContributeIcon,
   FaRocket as QuickstartIcon,
 } from 'react-icons/fa';
 
@@ -73,7 +74,7 @@ const Home: React.FC<IHome> = (props) => {
           family="minfraud"
           footer={(
             <>
-              Learn More about
+              Learn more about
               {' '}
               <A
                 href="https://www.maxmind.com/en/solutions/minfraud-services"
@@ -109,7 +110,7 @@ const Home: React.FC<IHome> = (props) => {
           family="geoip"
           footer={(
             <>
-              Learn More about
+              Learn more about
               {' '}
               <A
                 // eslint-disable-next-line max-len
@@ -150,6 +151,26 @@ const Home: React.FC<IHome> = (props) => {
           digital rights management, compliance, fraud detection, security and
           more.
         </Product>
+      </div>
+      <div
+        className={styles.contribute}
+      >
+        <p
+          className={styles.contributeCopy}
+        >
+          <ContributeIcon
+            className={styles.contributeIcon}
+          />
+          Learn how to
+          {' '}
+          <A
+            href="/contribute"
+          >
+            contribute to the MaxMind community
+          </A>
+          {' '}
+          by developing third-party integrations, tools, and apps.
+        </p>
       </div>
     </Layout>
   );
