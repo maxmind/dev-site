@@ -225,7 +225,7 @@ Empty set (52.82 sec)
 ### Break up our query for faster searching
 
 We can work around this problem by breaking our query up into two parts such
-that MySQL will be able to utilise the indexes we've created more efficiently:
+that MySQL will be able to use the indexes we've created more efficiently:
 
 ```sql
 select geoname_id, registered_country_geoname_id, represented_country_geoname_id,
