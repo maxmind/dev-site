@@ -4,14 +4,34 @@ on:
   pull_request:
 
 env:
-  CACHE_VERSION: v1
   FIREBASE_CHANNEL_ID:  "pr-${{github.event.number}}"
   FIREBASE_PROJECT_ID: mm-static-site-staging
   FIREBASE_SERVICE_ACCOUNT: "${{ secrets.STAGING_FIREBASE_SERVICE_ACCOUNT }}"
 
 jobs:
+  cache-keys:
+    name: Cache keys
+    runs-on: ubuntu-latest
+
+    outputs:
+      build: build-${{ steps.build.outputs.hash }}-v1
+      firebase: gatsby-${{ github.event.number }}-v1
+      gatsby: gatsby-${{ github.event.number }}-v1
+      node-modules: node-modules-${{ steps.node-modules.outputs.hash }}-v1
+
+    steps:
+      - name: Checkout Repo
+        uses: actions/checkout@master
+
+      - id: build
+        run: echo "::set-output name=hash::${{ hashFiles('content/**', 'firebase/**', 'functions/src/**', 'src/**', 'static/**', '**/package.json', '**/yarn.lock') }}"
+
+      - id: node-modules
+        run: echo "::set-output name=hash::${{ hashFiles('**/yarn.lock') }}"
+
   build:
     name: Build
+    needs: cache-keys
     runs-on: ubuntu-latest
 
     steps:
@@ -25,7 +45,7 @@ jobs:
           path: |
             node_modules
             functions/node_modules
-          key: node-modules-${{ hashFiles('**/yarn.lock') }}-${{ env.CACHE_VERSION }}
+          key: ${{ needs.cache-keys.outputs.node-modules }}
 
       - if: steps.cache-node-modules.outputs.cache-hit != 'true'
         name: Install dependencies
@@ -39,7 +59,7 @@ jobs:
             functions/lib
             public
             firebase.json
-          key: build-${{ hashFiles('content/**', 'firebase/**', 'functions/src/**', 'src/**', 'static/**') }}-${{ env.CACHE_VERSION }}
+          key: ${{ needs.cache-keys.outputs.build }}
 
       - name: Get Gatsby cache
         uses: actions/cache@v2
@@ -56,7 +76,7 @@ jobs:
 
   test-a11y:
     name: Test – Accessibility
-    needs: build
+    needs: [cache-keys, build]
     runs-on: ubuntu-latest
 
     steps:
@@ -70,14 +90,14 @@ jobs:
           path: |
             node_modules
             functions/node_modules
-          key: node-modules-${{ hashFiles('**/yarn.lock') }}-${{ env.CACHE_VERSION }}
+          key: ${{ needs.cache-keys.outputs.node-modules }}
 
       - name: Run accessibility tests
         run: yarn test:a11y
 
   test-unit:
     name: Test – Unit
-    needs: build
+    needs: [cache-keys, build]
     runs-on: ubuntu-latest
 
     steps:
@@ -91,14 +111,14 @@ jobs:
           path: |
             node_modules
             functions/node_modules
-          key: node-modules-${{ hashFiles('**/yarn.lock') }}-${{ env.CACHE_VERSION }}
+          key: ${{ needs.cache-keys.outputs.node-modules }}
 
       - name: Run unit tests
         run: yarn test:unit
 
   deploy-hosting:
     name: Deploy – Hosting
-    needs: build
+    needs: [cache-keys, build]
     runs-on: ubuntu-latest
 
     steps:
@@ -113,14 +133,14 @@ jobs:
             functions/lib
             public
             firebase.json
-          key: build-${{ hashFiles('content/**', 'firebase/**', 'functions/src/**', 'src/**', 'static/**') }}-${{ env.CACHE_VERSION }}
+          key: ${{ needs.cache-keys.outputs.build }}
 
       - name: Get Firebase cache
         uses: actions/cache@v2
         with:
           path: |
             .cache
-          key: firebase-${{ github.event.number }}-${{ env.CACHE_VERSION }}
+          key: ${{ needs.cache-keys.outputs.firebase }}
 
       - name: Deploy Firebase preview channel
         id: deploy-preview-channel
@@ -156,7 +176,7 @@ jobs:
 
   deploy-functions:
     name: Deploy – Functions
-    needs: build
+    needs: [cache-keys, build]
     runs-on: ubuntu-latest
 
     steps:
@@ -171,7 +191,7 @@ jobs:
             functions/lib
             public
             firebase.json
-          key: build-${{ hashFiles('content/**', 'firebase/**', 'functions/src/**', 'src/**', 'static/**') }}-${{ env.CACHE_VERSION }}
+          key: ${{ needs.cache-keys.outputs.build }}
 
       - name: Set up Google Cloud SDK
         uses: google-github-actions/setup-gcloud@master
@@ -188,14 +208,14 @@ jobs:
           path: |
             node_modules
             functions/node_modules
-          key: node-modules-${{ hashFiles('**/yarn.lock') }}-${{ env.CACHE_VERSION }}
+          key: ${{ needs.cache-keys.outputs.build }}
 
       - name: Get Firebase cache
         uses: actions/cache@v2
         with:
           path: |
             .cache
-          key: firebase-${{ github.event.number }}-${{ env.CACHE_VERSION }}
+          key: ${{ needs.cache-keys.outputs.firebase }}
 
       - name: Deploy all other Firebase resources
         run: yarn firebase deploy --except hosting --project ${{ env.FIREBASE_PROJECT_ID }}

@@ -3,22 +3,44 @@ name: Production
 on:
   push:
     branches:
-      - main
+      - wes/optimize-cicd
 
 env:
-  CACHE_VERSION: v1
-  FIREBASE_CHANNEL_ID:  "pr-${{github.event.number}}"
-  FIREBASE_PROJECT_ID: mm-static-site-production
-  FIREBASE_SERVICE_ACCOUNT: "${{ secrets.PRODUCTION_FIREBASE_SERVICE_ACCOUNT }}"
+  FIREBASE_PROJECT_ID: mm-static-site-staging
+  FIREBASE_SERVICE_ACCOUNT: "${{ secrets.STAGING_FIREBASE_SERVICE_ACCOUNT }}"
 
 jobs:
-  build:
-    name: Build
+  cache-keys:
+    name: Cache keys
     runs-on: ubuntu-latest
+
+    outputs:
+      build: build-${{ steps.build.outputs.hash }}-v1
+      node-modules: node-modules-${{ steps.node-modules.outputs.hash }}-v1
 
     steps:
       - name: Checkout Repo
         uses: actions/checkout@master
+
+      - id: build
+        run: echo "::set-output name=hash::${{ hashFiles('content/**', 'firebase/**', 'functions/src/**', 'src/**', 'static/**', '**/package.json', '**/yarn.lock') }}"
+
+      - id: node-modules
+        run: echo "::set-output name=hash::${{ hashFiles('**/yarn.lock') }}"
+
+  build:
+    needs: cache-keys
+    name: Build
+    runs-on: ubuntu-latest
+
+    outputs:
+      build-cache-hit: ${{ steps.cache-node-modules.outputs.cache-hit }}
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@master
+
+      - run: echo "${{ toJSON(needs) }}"
 
       - name: Get cached dependencies
         id: cache-node-modules
@@ -27,7 +49,7 @@ jobs:
           path: |
             node_modules
             functions/node_modules
-          key: node-modules-${{ hashFiles('**/yarn.lock') }}-${{ env.CACHE_VERSION }}
+          key: ${{ needs.cache-keys.outputs.node-modules }}
 
       - if: steps.cache-node-modules.outputs.cache-hit != 'true'
         name: Install dependencies
@@ -41,7 +63,7 @@ jobs:
             functions/lib
             public
             firebase.json
-          key: build-${{ hashFiles('content/**', 'firebase/**', 'functions/src/**', 'src/**', 'static/**') }}-${{ env.CACHE_VERSION }}
+          key: ${{ needs.cache-keys.outputs.build }}
 
       - if: steps.cache-build.outputs.cache-hit != 'true'
         name: Build
@@ -50,9 +72,9 @@ jobs:
         run: yarn build
 
   test-a11y:
-    if: jobs.build.steps.cache-build.outputs.cache-hit != 'true'
+    if: needs.build.outputs.build-cache-hit != 'true'
     name: Test – Accessibility
-    needs: build
+    needs: [cache-keys, build]
     runs-on: ubuntu-latest
 
     steps:
@@ -66,15 +88,15 @@ jobs:
           path: |
             node_modules
             functions/node_modules
-          key: node-modules-${{ hashFiles('**/yarn.lock') }}-${{ env.CACHE_VERSION }}
+          key: ${{ needs.cache-keys.outputs.node-modules }}
 
       - name: Run accessibility tests
         run: yarn test:a11y
 
   test-unit:
-    if: jobs.build.steps.cache-build.outputs.cache-hit != 'true'
+    if: needs.build.outputs.build-cache-hit != 'true'
     name: Test – Unit
-    needs: build
+    needs: [cache-keys, build]
     runs-on: ubuntu-latest
 
     steps:
@@ -88,14 +110,14 @@ jobs:
           path: |
             node_modules
             functions/node_modules
-          key: node-modules-${{ hashFiles('**/yarn.lock') }}-${{ env.CACHE_VERSION }}
+          key: ${{ needs.cache-keys.outputs.node-modules }}
 
       - name: Run unit tests
         run: yarn test:unit
 
   deploy-hosting:
     name: Deploy – Hosting
-    needs: [build, test-a11y, test-unit]
+    needs: [cache-keys, build, test-a11y, test-unit]
     # Only run this job if test jobs either ran successfully or were skipped
     # because a previously tested build was cached.
     # Inspired by https://github.com/actions/runner/issues/491#issuecomment-850884422
@@ -117,7 +139,7 @@ jobs:
             functions/lib
             public
             firebase.json
-          key: build-${{ hashFiles('content/**', 'firebase/**', 'functions/src/**', 'src/**', 'static/**') }}-${{ env.CACHE_VERSION }}
+          key: ${{ needs.cache-keys.outputs.build }}
 
       - name: Deploy Firebase preview channel
         uses: FirebaseExtended/action-hosting-deploy@v0
@@ -129,7 +151,7 @@ jobs:
 
   deploy-functions:
     name: Deploy - Functions
-    needs: [build, test-a11y, test-unit]
+    needs: [cache-keys, build, test-a11y, test-unit]
     # Only run this job if test jobs either ran successfully or were skipped
     # because a previously tested build was cached.
     # Inspired by https://github.com/actions/runner/issues/491#issuecomment-850884422
@@ -151,7 +173,7 @@ jobs:
             functions/lib
             public
             firebase.json
-          key: build-${{ hashFiles('content/**', 'firebase/**', 'functions/src/**', 'src/**', 'static/**') }}-${{ env.CACHE_VERSION }}
+          key: ${{ needs.cache-keys.outputs.build }}
 
       - name: Set up Google Cloud SDK
         uses: google-github-actions/setup-gcloud@master
@@ -167,7 +189,7 @@ jobs:
           path: |
             node_modules
             functions/node_modules
-          key: node-modules-${{ hashFiles('**/yarn.lock') }}-${{ env.CACHE_VERSION }}
+          key: ${{ needs.cache-keys.outputs.node-modules }}
 
       - name: Deploy all other Firebase resources
         run: yarn firebase deploy --except hosting --project ${{ env.FIREBASE_PROJECT_ID }}
