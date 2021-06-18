@@ -1,0 +1,173 @@
+name: Production
+
+on:
+  push:
+    branches:
+      - main
+
+env:
+  CACHE_VERSION: v1
+  FIREBASE_CHANNEL_ID:  "pr-${{github.event.number}}"
+  FIREBASE_PROJECT_ID: mm-static-site-production
+  FIREBASE_SERVICE_ACCOUNT: "${{ secrets.PRODUCTION_FIREBASE_SERVICE_ACCOUNT }}"
+
+jobs:
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repo
+        uses: actions/checkout@master
+
+      - name: Get cached dependencies
+        id: cache-node-modules
+        uses: actions/cache@v2
+        with:
+          path: |
+            node_modules
+            functions/node_modules
+          key: node-modules-${{ hashFiles('**/yarn.lock') }}-${{ env.CACHE_VERSION }}
+
+      - if: steps.cache-node-modules.outputs.cache-hit != 'true'
+        name: Install dependencies
+        run: yarn install
+
+      - name: Get cached build
+        id: cache-build
+        uses: actions/cache@v2
+        with:
+          path: |
+            functions/lib
+            public
+            firebase.json
+          key: build-${{ hashFiles('content/**', 'firebase/**', 'functions/src/**', 'src/**', 'static/**') }}-${{ env.CACHE_VERSION }}
+
+      - if: steps.cache-build.outputs.cache-hit != 'true'
+        name: Build
+        env:
+          GATSBY_URL: https://dev.maxmind.com
+        run: yarn build
+
+  test-a11y:
+    if: jobs.build.steps.cache-build.outputs.cache-hit != 'true'
+    name: Test – Accessibility
+    needs: build
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repo
+        uses: actions/checkout@master
+
+      - name: Get cached dependencies
+        id: cache-node-modules
+        uses: actions/cache@v2
+        with:
+          path: |
+            node_modules
+            functions/node_modules
+          key: node-modules-${{ hashFiles('**/yarn.lock') }}-${{ env.CACHE_VERSION }}
+
+      - name: Run accessibility tests
+        run: yarn test:a11y
+
+  test-unit:
+    if: jobs.build.steps.cache-build.outputs.cache-hit != 'true'
+    name: Test – Unit
+    needs: build
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repo
+        uses: actions/checkout@master
+
+      - name: Get cached dependencies
+        id: cache-node-modules
+        uses: actions/cache@v2
+        with:
+          path: |
+            node_modules
+            functions/node_modules
+          key: node-modules-${{ hashFiles('**/yarn.lock') }}-${{ env.CACHE_VERSION }}
+
+      - name: Run unit tests
+        run: yarn test:unit
+
+  deploy-hosting:
+    name: Deploy – Hosting
+    needs: [build, test-a11y, test-unit]
+    # Only run this job if test jobs either ran successfully or were skipped
+    # because a previously tested build was cached.
+    # Inspired by https://github.com/actions/runner/issues/491#issuecomment-850884422
+    if: |
+      always() &&
+      (needs.test-a11y.result == 'success' || needs.test-a11y.result == 'skipped') &&
+      (needs.test-unit.result == 'success' || needs.test-unit.result == 'skipped')
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repo
+        uses: actions/checkout@master
+
+      - name: Get cached build
+        id: cache-build
+        uses: actions/cache@v2
+        with:
+          path: |
+            functions/lib
+            public
+            firebase.json
+          key: build-${{ hashFiles('content/**', 'firebase/**', 'functions/src/**', 'src/**', 'static/**') }}-${{ env.CACHE_VERSION }}
+
+      - name: Deploy Firebase preview channel
+        uses: FirebaseExtended/action-hosting-deploy@v0
+        with:
+          repoToken: "${{ secrets.GITHUB_TOKEN }}"
+          firebaseServiceAccount: "${{ env.FIREBASE_SERVICE_ACCOUNT }}"
+          projectId: ${{ env.FIREBASE_PROJECT_ID }}
+          channelId: live
+
+  deploy-functions:
+    name: Deploy - Functions
+    needs: [build, test-a11y, test-unit]
+    # Only run this job if test jobs either ran successfully or were skipped
+    # because a previously tested build was cached.
+    # Inspired by https://github.com/actions/runner/issues/491#issuecomment-850884422
+    if: |
+      always() &&
+      (needs.test-a11y.result == 'success' || needs.test-a11y.result == 'skipped') &&
+      (needs.test-unit.result == 'success' || needs.test-unit.result == 'skipped')
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repo
+        uses: actions/checkout@master
+
+      - name: Get cached build
+        id: cache-build
+        uses: actions/cache@v2
+        with:
+          path: |
+            functions/lib
+            public
+            firebase.json
+          key: build-${{ hashFiles('content/**', 'firebase/**', 'functions/src/**', 'src/**', 'static/**') }}-${{ env.CACHE_VERSION }}
+
+      - name: Set up Google Cloud SDK
+        uses: google-github-actions/setup-gcloud@master
+        with:
+          project_id: ${{ env.FIREBASE_PROJECT_ID }}
+          service_account_key: "${{ env.FIREBASE_SERVICE_ACCOUNT }}"
+          export_default_credentials: true
+
+      - name: Get cached dependencies
+        id: cache-node-modules
+        uses: actions/cache@v2
+        with:
+          path: |
+            node_modules
+            functions/node_modules
+          key: node-modules-${{ hashFiles('**/yarn.lock') }}-${{ env.CACHE_VERSION }}
+
+      - name: Deploy all other Firebase resources
+        run: yarn firebase deploy --except hosting --project ${{ env.FIREBASE_PROJECT_ID }}
