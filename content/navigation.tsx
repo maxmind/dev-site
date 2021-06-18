@@ -103,6 +103,20 @@ const navigation: IItem[] = [
         to: '/geoip/updating-databases',
       },
       {
+        items: [
+          {
+            title: 'Import to PostgreSQL',
+            to: '/geoip/importing-databases/postgresql',
+          },
+          {
+            title: 'Import to MySQL',
+            to: '/geoip/importing-databases/mysql',
+          },
+        ],
+        title: 'Importing Databases',
+        to: '/geoip/importing-databases',
+      },
+      {
         title: 'GeoLite2 Free Geolocation Data',
         to: '/geoip/geolite2-free-geolocation-data',
       },
