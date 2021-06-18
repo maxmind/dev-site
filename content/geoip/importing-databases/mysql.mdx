@@ -80,10 +80,6 @@ $ ./geoip2-csv-converter -block-file GeoIP2-City-Blocks-IPv4.csv -include-hex-ra
 $ ./geoip2-csv-converter -block-file GeoIP2-City-Blocks-IPv6.csv -include-hex-range -output-file GeoIP2-City-Blocks-IPv6-Hex.csv
 ```
 
-In this case, you are over-writing the CSV files you downloaded, with the first
-and last IP addresses from the `network` field converted from CIDR notation to a
-hexidecimal number.
-
 ## Schema
 
 We can now create a table called `geoip2_network`to hold the data we just
