@@ -1,0 +1,221 @@
+name: Staging
+
+on:
+  pull_request:
+
+env:
+  FIREBASE_CHANNEL_ID:  "pr-${{github.event.number}}"
+  FIREBASE_PROJECT_ID: mm-static-site-staging
+  FIREBASE_SERVICE_ACCOUNT: "${{ secrets.STAGING_FIREBASE_SERVICE_ACCOUNT }}"
+
+jobs:
+  cache-keys:
+    name: Setup – Cache keys
+    runs-on: ubuntu-latest
+
+    outputs:
+      build: build-${{ steps.build.outputs.hash }}-v1
+      firebase: gatsby-${{ github.event.number }}-v1
+      gatsby: gatsby-${{ github.event.number }}-v1
+      node-modules: node-modules-${{ steps.node-modules.outputs.hash }}-v1
+
+    steps:
+      - name: Checkout Repo
+        uses: actions/checkout@5a4ac9002d0be2fb38bd78e4b4dbde5606d7042f # v2.3.4
+
+      - id: build
+        run: echo "::set-output name=hash::${{ hashFiles('content/**', 'firebase/**', 'functions/src/**', 'src/**', 'static/**', '**/package.json', '**/yarn.lock') }}"
+
+      - id: node-modules
+        run: echo "::set-output name=hash::${{ hashFiles('**/yarn.lock') }}"
+
+  build:
+    name: Build
+    needs: cache-keys
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repo
+        uses: actions/checkout@5a4ac9002d0be2fb38bd78e4b4dbde5606d7042f # v2.3.4
+
+      - name: Get cached dependencies
+        uses: actions/cache@c64c572235d810460d0d6876e9c705ad5002b353 # v2.1.6
+        id: cache-node-modules
+        with:
+          path: |
+            node_modules
+            functions/node_modules
+          key: ${{ needs.cache-keys.outputs.node-modules }}
+
+      - if: steps.cache-node-modules.outputs.cache-hit != 'true'
+        name: Install dependencies
+        run: yarn install
+
+      - name: Get cached build
+        id: cache-build
+        uses: actions/cache@c64c572235d810460d0d6876e9c705ad5002b353 # v2.1.6
+        with:
+          path: |
+            functions/lib
+            public
+            firebase.json
+          key: ${{ needs.cache-keys.outputs.build }}
+
+      - name: Get Gatsby cache
+        uses: actions/cache@c64c572235d810460d0d6876e9c705ad5002b353 # v2.1.6
+        with:
+          path: |
+            .cache
+          key: gatsby-${{ github.event.number }}-${{ env.CACHE_VERSION }}
+
+      - if: steps.cache-build.outputs.cache-hit != 'true'
+        name: Build
+        env:
+          GATSBY_URL: https://dev.maxmind.com
+        run:  yarn build
+
+  test-a11y:
+    name: Test – Accessibility
+    needs: [cache-keys, build]
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repo
+        uses: actions/checkout@5a4ac9002d0be2fb38bd78e4b4dbde5606d7042f # v2.3.4
+
+      - name: Get cached dependencies
+        uses: actions/cache@c64c572235d810460d0d6876e9c705ad5002b353 # v2.1.6
+        id: cache-node-modules
+        with:
+          path: |
+            node_modules
+            functions/node_modules
+          key: ${{ needs.cache-keys.outputs.node-modules }}
+
+      - name: Run accessibility tests
+        run: yarn test:a11y
+
+  test-unit:
+    name: Test – Unit
+    needs: [cache-keys, build]
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repo
+        uses: actions/checkout@5a4ac9002d0be2fb38bd78e4b4dbde5606d7042f # v2.3.4
+
+      - name: Get cached dependencies
+        uses: actions/cache@c64c572235d810460d0d6876e9c705ad5002b353 # v2.1.6
+        id: cache-node-modules
+        with:
+          path: |
+            node_modules
+            functions/node_modules
+          key: ${{ needs.cache-keys.outputs.node-modules }}
+
+      - name: Run unit tests
+        run: yarn test:unit
+
+  deploy-hosting:
+    name: Deploy – Hosting
+    needs: [cache-keys, build]
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repo
+        uses: actions/checkout@5a4ac9002d0be2fb38bd78e4b4dbde5606d7042f # v2.3.4
+
+      - name: Get cached build
+        id: cache-build
+        uses: actions/cache@c64c572235d810460d0d6876e9c705ad5002b353 # v2.1.6
+        with:
+          path: |
+            functions/lib
+            public
+            firebase.json
+          key: ${{ needs.cache-keys.outputs.build }}
+
+      - name: Get Firebase cache
+        uses: actions/cache@c64c572235d810460d0d6876e9c705ad5002b353 # v2.1.6
+        with:
+          path: |
+            .cache
+          key: ${{ needs.cache-keys.outputs.firebase }}
+
+      - name: Deploy Firebase preview channel
+        id: deploy-preview-channel
+        uses: FirebaseExtended/action-hosting-deploy@276388dd6c2cde23455b30293105cc866c22282d # v0
+        with:
+          repoToken: "${{ secrets.GITHUB_TOKEN }}"
+          firebaseServiceAccount: "${{ env.FIREBASE_SERVICE_ACCOUNT }}"
+          expires: 7d
+          projectId: "${{ env.FIREBASE_PROJECT_ID }}"
+          channelId: "${{ env.FIREBASE_CHANNEL_ID }}"
+        env:
+          FIREBASE_CLI_PREVIEWS: hostingchannels
+
+      - name: Update robots and sitemap files for staging environments
+        env:
+          FIND_AND_REPLACE: s|https://dev.maxmind.com|${{ steps.deploy-preview-channel.outputs.details_url }}|g
+        run: |
+          sed -i "s/Allow:/Disallow:/g" public/robots.txt
+          sed -i "$FIND_AND_REPLACE" public/robots.txt
+          sed -i "$FIND_AND_REPLACE" public/sitemap.xml
+          sed -i "$FIND_AND_REPLACE" public/sitemap-pages.xml
+
+      - name: Deploy updated files staging environment files
+        uses: FirebaseExtended/action-hosting-deploy@276388dd6c2cde23455b30293105cc866c22282d # v0
+        with:
+          repoToken: "${{ secrets.GITHUB_TOKEN }}"
+          firebaseServiceAccount: "${{ env.FIREBASE_SERVICE_ACCOUNT }}"
+          expires: 30d
+          projectId: "${{ env.FIREBASE_PROJECT_ID }}"
+          channelId: "${{ env.FIREBASE_CHANNEL_ID }}"
+        env:
+          FIREBASE_CLI_PREVIEWS: hostingchannels
+
+  deploy-functions:
+    name: Deploy – Functions
+    needs: [cache-keys, build]
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repo
+        uses: actions/checkout@v2.3.4
+
+      - name: Get cached build
+        id: cache-build
+        uses: actions/cache@c64c572235d810460d0d6876e9c705ad5002b353 # v2.1.6
+        with:
+          path: |
+            functions/lib
+            public
+            firebase.json
+          key: ${{ needs.cache-keys.outputs.build }}
+
+      - name: Set up Google Cloud SDK
+        uses: google-github-actions/setup-gcloud@daadedc81d5f9d3c06d2c92f49202a3cc2b919ba # v0.2.1
+        with:
+          project_id: ${{ env.FIREBASE_PROJECT_ID }}
+          service_account_key: ${{ env.FIREBASE_SERVICE_ACCOUNT }}
+          export_default_credentials: true
+
+      # Dependencies are needed here to run `yarn firbase` command
+      - name: Get cached dependencies
+        uses: actions/cache@c64c572235d810460d0d6876e9c705ad5002b353 # v2.1.6
+        id: cache-node-modules
+        with:
+          path: |
+            node_modules
+            functions/node_modules
+          key: ${{ needs.cache-keys.outputs.node-modules }}
+
+      - name: Get Firebase cache
+        uses: actions/cache@c64c572235d810460d0d6876e9c705ad5002b353 # v2.1.6
+        with:
+          path: |
+            .cache
+          key: ${{ needs.cache-keys.outputs.firebase }}
+
+      - name: Deploy all other Firebase resources
+        run: yarn firebase deploy --except hosting --project ${{ env.FIREBASE_PROJECT_ID }} --force
