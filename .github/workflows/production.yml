@@ -3,11 +3,11 @@ name: Production
 on:
   push:
     branches:
-      - wes/fix-workflows
+      - main
 
 env:
-  FIREBASE_PROJECT_ID: mm-static-site-staging
-  FIREBASE_SERVICE_ACCOUNT: "${{ secrets.STAGING_FIREBASE_SERVICE_ACCOUNT }}"
+  FIREBASE_PROJECT_ID: mm-static-site-production
+  FIREBASE_SERVICE_ACCOUNT: "${{ secrets.PRODUCTION_FIREBASE_SERVICE_ACCOUNT }}"
 
 jobs:
   cache-keys:
