@@ -23,7 +23,7 @@ jobs:
         uses: actions/checkout@5a4ac9002d0be2fb38bd78e4b4dbde5606d7042f # v2.3.4
 
       - id: build
-        run: echo "::set-output name=hash::${{ hashFiles('content/**', 'firebase/**', 'functions/src/**', 'src/**', 'static/**', '**/package.json', '**/yarn.lock') }}"
+        run: echo "::set-output name=hash::${{ hashFiles('bin/**', 'content/**', 'firebase/**', 'functions/src/**', 'src/**', 'static/**', '**/package.json', '**/yarn.lock') }}"
 
       - id: node-modules
         run: echo "::set-output name=hash::${{ hashFiles('**/yarn.lock') }}"
