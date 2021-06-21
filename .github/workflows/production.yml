@@ -34,7 +34,7 @@ jobs:
     runs-on: ubuntu-latest
 
     outputs:
-      build-cache-hit: ${{ steps.cache-node-modules.outputs.cache-hit }}
+      is-cached-build: ${{ steps.cached-build.outputs.cache-hit }}
 
     steps:
       - name: Checkout repo
@@ -54,7 +54,7 @@ jobs:
         run: yarn install
 
       - name: Get cached build
-        id: cache-build
+        id: cached-build
         uses: actions/cache@c64c572235d810460d0d6876e9c705ad5002b353 # v2.1.6
         with:
           path: |
@@ -63,14 +63,14 @@ jobs:
             firebase.json
           key: ${{ needs.cache-keys.outputs.build }}
 
-      - if: steps.cache-build.outputs.cache-hit != 'true'
+      - if: steps.cached-build.outputs.cache-hit != 'true'
         name: Build
         env:
           GATSBY_URL: https://dev.maxmind.com
         run: yarn build
 
   test-a11y:
-    if: needs.build.outputs.build-cache-hit != 'true'
+    if: needs.build.outputs.is-cached-build != 'true'
     name: Test – Accessibility
     needs: [cache-keys, build]
     runs-on: ubuntu-latest
@@ -91,7 +91,7 @@ jobs:
         run: yarn test:a11y
 
   test-unit:
-    if: needs.build.outputs.build-cache-hit != 'true'
+    if: needs.build.outputs.is-cached-build != 'true'
     name: Test – Unit
     needs: [cache-keys, build]
     runs-on: ubuntu-latest

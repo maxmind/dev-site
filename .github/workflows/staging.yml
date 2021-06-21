@@ -52,7 +52,7 @@ jobs:
         run: yarn install
 
       - name: Get cached build
-        id: cache-build
+        id: cached-build
         uses: actions/cache@c64c572235d810460d0d6876e9c705ad5002b353 # v2.1.6
         with:
           path: |
@@ -68,7 +68,7 @@ jobs:
             .cache
           key: gatsby-${{ github.event.number }}-${{ env.CACHE_VERSION }}
 
-      - if: steps.cache-build.outputs.cache-hit != 'true'
+      - if: steps.cached-build.outputs.cache-hit != 'true'
         name: Build
         env:
           GATSBY_URL: https://dev.maxmind.com
