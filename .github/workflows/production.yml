@@ -204,7 +204,7 @@ jobs:
             functions/node_modules
           key: ${{ needs.cache-keys.outputs.node-modules }}
 
-      - name: Run unit tests
+      - name: Run end-to-end tests
         env:
           E2E_TARGET_URL: https://dev.maxmind.com
         run: yarn test:e2e
