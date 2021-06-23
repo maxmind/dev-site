@@ -9,6 +9,8 @@ const falsePositives = [
   'https://minfraud.maxmind.com/app/bin_http',
   'https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.180-4.pdf',
   'https://www.linkedin.com/company/maxmind',
+  'http://www.maxmind.com',
+  'https://www.maxmind.com',
   'https://www.nuget.org/packages/MaxMind.GeoIP2/',
   'https://www.nuget.org/packages/MaxMind.MinFraud',
 ];
