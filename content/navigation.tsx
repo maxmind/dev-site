@@ -193,10 +193,6 @@ const navigation: IItem[] = [
             to: '/geoip/legacy/web-services',
           },
           {
-            title: 'Legacy JavaScript',
-            to: '/geoip/legacy/javascript',
-          },
-          {
             title: 'Legacy Codes',
             to: '/geoip/legacy/codes',
           },

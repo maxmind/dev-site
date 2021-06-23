@@ -207,13 +207,13 @@ module.exports = [
     type: 301,
   },
   {
-    destination: '/geoip/legacy/javascript',
-    source: '/geoip/legacy/javascript/',
+    destination: '/geoip/geolocate-an-ip/client-side-javascript',
+    source: '/geoip/legacy/javascript',
     type: 302,
   },
   {
-    destination: '/geoip/legacy/javascript',
-    source: '/geoip/legacy/migrating-away-from-our-legacy-geoip-javascript-services/',
+    destination: '/geoip/geolocate-an-ip/client-side-javascript',
+    source: '/geoip/legacy/migrating-away-from-our-legacy-geoip-javascript-services',
     type: 302,
   },
   {
