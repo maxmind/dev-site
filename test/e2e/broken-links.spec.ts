@@ -32,7 +32,10 @@ const getBrokenLinks = (): Promise<any> => new Promise((resolve, reject) => {
       link: (result) => {
         const { broken, http, url } = result;
         const { statusCode } = http.response;
-        const { original: originalUrl } = url;
+        const { resolved: resolvedUrl } = url;
+
+        // eslint-disable-next-line compat/compat
+        const { origin } = new URL(resolvedUrl);
 
         if (!broken) {
           return;
@@ -40,7 +43,7 @@ const getBrokenLinks = (): Promise<any> => new Promise((resolve, reject) => {
 
         if (
           statusCode === 401
-          && originalUrl.startsWith('https://www.maxmind.com')
+          && origin === 'https://www.maxmind.com'
         ) {
           return;
         }
