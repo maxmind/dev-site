@@ -189,7 +189,7 @@ jobs:
 
   test-e2e:
     name: Test – End-to-end
-    needs: [deploy-hosting, deploy-functions]
+    needs: [cache-keys, deploy-hosting, deploy-functions]
     runs-on: ubuntu-latest
 
     steps:
