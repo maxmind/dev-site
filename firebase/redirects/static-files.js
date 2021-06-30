@@ -60,7 +60,7 @@ module.exports = [
     type: 301,
   },
   {
-    destination: 'https://www.maxmind.com/download/geoip/misc/region_codes.csv',
+    destination: 'https://download.maxmind.com/download/geoip/misc/region_codes.csv',
     source: '/static/maxmind-region-codes.csv',
     type: 301,
   },
