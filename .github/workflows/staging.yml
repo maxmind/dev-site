@@ -15,7 +15,7 @@ jobs:
 
     outputs:
       build: build-${{ steps.build.outputs.hash }}-v2
-      firebase: gatsby-${{ github.event.number }}-v1
+      firebase: firebase-${{ github.event.number }}-v1
       gatsby: gatsby-${{ github.event.number }}-v1
       node-modules: node-modules-${{ steps.node-modules.outputs.hash }}-v1
 
@@ -66,7 +66,7 @@ jobs:
         with:
           path: |
             .cache
-          key: gatsby-${{ github.event.number }}-${{ env.CACHE_VERSION }}
+          key: ${{ needs.cache-keys.outputs.gatsby }}
 
       - if: steps.cached-build.outputs.cache-hit != 'true'
         name: Build
