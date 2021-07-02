@@ -1,7 +1,8 @@
 import { GatsbyConfig } from 'gatsby';
 import remarkExternalLinks from 'remark-external-links';
 
-import createFeed from './feeds/createFeed';
+import createReleaseNotesFeed from './feeds/createReleaseNotesFeed';
+import createServerIpAddressesFeed from './feeds/createServerIpAddressesFeed';
 import sectionize from './remark/sectionize';
 
 const { GATSBY_URL = 'http://localhost:5000' } = process.env;
@@ -23,6 +24,19 @@ const GLOBALLY_IGNORED_SOURCE_FILES = [
 
 export default {
   plugins: [
+    {
+      options: {
+        typeName: 'Json',
+      },
+      resolve: 'gatsby-transformer-json',
+    },
+    {
+      options: {
+        name: 'maxmindServerIps',
+        path: `${GATSBY_ROOT}/static/maxmind-server-ip-addresses.json`,
+      },
+      resolve: 'gatsby-source-filesystem',
+    },
     {
       options: {
         ignore: [
@@ -110,16 +124,17 @@ export default {
     {
       options: {
         feeds: [
-          createFeed({
+          createReleaseNotesFeed({
             description: 'Release notes for MaxMind\'s GeoIP2 product line',
             title: 'GeoIP2 Release Notes',
             url: '/geoip/release-notes',
           }),
-          createFeed({
+          createReleaseNotesFeed({
             description: 'Release notes for MaxMind\'s minFraud product line',
             title: 'minFraud Release Notes',
             url: '/minfraud/release-notes',
           }),
+          createServerIpAddressesFeed(),
         ],
         query: `
           {

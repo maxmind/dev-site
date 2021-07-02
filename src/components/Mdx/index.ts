@@ -7,6 +7,7 @@ export { default as Alert } from '../Alert';
 export { default as CodeSet } from '../CodeSet';
 export { default as Example } from '../Example';
 export { default as GeoIPCrontab } from '../GeoIPCrontab';
+export { default as IpAddresses } from '../IpAddresses';
 export * from '../LinkGroup';
 export * from '../Schema';
 export { default as ReleaseNote } from '../ReleaseNote';
