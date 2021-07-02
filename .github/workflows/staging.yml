@@ -14,7 +14,7 @@ jobs:
     runs-on: ubuntu-latest
 
     outputs:
-      build: build-${{ steps.build.outputs.hash }}-v1
+      build: build-${{ steps.build.outputs.hash }}-v2
       firebase: gatsby-${{ github.event.number }}-v1
       gatsby: gatsby-${{ github.event.number }}-v1
       node-modules: node-modules-${{ steps.node-modules.outputs.hash }}-v1
