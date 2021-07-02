@@ -190,6 +190,11 @@ jobs:
   test-e2e:
     name: Test – End-to-end
     needs: [cache-keys, deploy-hosting, deploy-functions]
+    # Force this step to run after successful deployment jobs
+    if: |
+      always() &&
+      needs.deploy-hosting.result == 'success' &&
+      needs.deploy-functions.result == 'success'
     runs-on: ubuntu-latest
 
     steps:
