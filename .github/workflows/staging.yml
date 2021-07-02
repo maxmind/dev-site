@@ -16,6 +16,7 @@ jobs:
     outputs:
       build: build-${{ steps.build.outputs.hash }}-v2
       dot-cache: dot-cache-${{ github.event.number }}-v1
+      dot-firebase: dot-firebase-${{ github.event.number }}-v1
       node-modules: node-modules-${{ steps.node-modules.outputs.hash }}-v1
 
     steps:
@@ -134,12 +135,12 @@ jobs:
             firebase.json
           key: ${{ needs.cache-keys.outputs.build }}
 
-      - name: Get .cache cache
+      - name: Get .firebase cache
         uses: actions/cache@c64c572235d810460d0d6876e9c705ad5002b353 # v2.1.6
         with:
           path: |
-            .cache
-          key: ${{ needs.cache-keys.outputs.dot-cache }}
+            .firebase
+          key: ${{ needs.cache-keys.outputs.dot-firebase }}
 
       - name: Deploy Firebase preview channel
         id: deploy-preview-channel
@@ -207,12 +208,12 @@ jobs:
             functions/node_modules
           key: ${{ needs.cache-keys.outputs.node-modules }}
 
-      - name: Get .cache cache
+      - name: Get .firebase cache
         uses: actions/cache@c64c572235d810460d0d6876e9c705ad5002b353 # v2.1.6
         with:
           path: |
-            .cache
-          key: ${{ needs.cache-keys.outputs.dot-cache }}
+            .firebase
+          key: ${{ needs.cache-keys.outputs.dot-firebase }}
 
       - name: Deploy all other Firebase resources
         run: yarn firebase deploy --except hosting --project ${{ env.FIREBASE_PROJECT_ID }} --force
