@@ -15,8 +15,7 @@ jobs:
 
     outputs:
       build: build-${{ steps.build.outputs.hash }}-v2
-      firebase: firebase-${{ github.event.number }}-v1
-      gatsby: gatsby-${{ github.event.number }}-v1
+      dot-cache: dot-cache-${{ github.event.number }}-v1
       node-modules: node-modules-${{ steps.node-modules.outputs.hash }}-v1
 
     steps:
@@ -24,7 +23,7 @@ jobs:
         uses: actions/checkout@5a4ac9002d0be2fb38bd78e4b4dbde5606d7042f # v2.3.4
 
       - id: build
-        run: echo "::set-output name=hash::${{ hashFiles('content/**', 'firebase/**', 'functions/src/**', 'src/**', 'static/**', '**/package.json', '**/yarn.lock') }}"
+        run: echo "::set-output name=hash::${{ hashFiles('bin/**', 'content/**', 'firebase/**', 'functions/src/**', 'src/**', 'static/**', '**/package.json', '**/yarn.lock') }}"
 
       - id: node-modules
         run: echo "::set-output name=hash::${{ hashFiles('**/yarn.lock') }}"
@@ -61,12 +60,12 @@ jobs:
             firebase.json
           key: ${{ needs.cache-keys.outputs.build }}
 
-      - name: Get Gatsby cache
+      - name: Get .cache cache
         uses: actions/cache@c64c572235d810460d0d6876e9c705ad5002b353 # v2.1.6
         with:
           path: |
             .cache
-          key: ${{ needs.cache-keys.outputs.gatsby }}
+          key: ${{ needs.cache-keys.outputs.dot-cache }}
 
       - if: steps.cached-build.outputs.cache-hit != 'true'
         name: Build
@@ -135,13 +134,6 @@ jobs:
             firebase.json
           key: ${{ needs.cache-keys.outputs.build }}
 
-      - name: Get Firebase cache
-        uses: actions/cache@c64c572235d810460d0d6876e9c705ad5002b353 # v2.1.6
-        with:
-          path: |
-            .cache
-          key: ${{ needs.cache-keys.outputs.firebase }}
-
       - name: Deploy Firebase preview channel
         id: deploy-preview-channel
         uses: FirebaseExtended/action-hosting-deploy@276388dd6c2cde23455b30293105cc866c22282d # v0
@@ -207,13 +199,6 @@ jobs:
             node_modules
             functions/node_modules
           key: ${{ needs.cache-keys.outputs.node-modules }}
-
-      - name: Get Firebase cache
-        uses: actions/cache@c64c572235d810460d0d6876e9c705ad5002b353 # v2.1.6
-        with:
-          path: |
-            .cache
-          key: ${{ needs.cache-keys.outputs.firebase }}
 
       - name: Deploy all other Firebase resources
         run: yarn firebase deploy --except hosting --project ${{ env.FIREBASE_PROJECT_ID }} --force
