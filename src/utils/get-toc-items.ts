@@ -1,7 +1,7 @@
 import fs from 'fs';
 import path from 'path';
 // eslint-disable-next-line import/no-unresolved
-import { Node, Parent } from 'unist';
+import { Parent } from 'unist';
 
 /* eslint-disable @typescript-eslint/no-var-requires */
 // eslint-disable-next-line max-len
@@ -48,12 +48,12 @@ export const createImportPathMap = (
 /* eslint-enable security/detect-non-literal-fs-filename */
 
 export default (
-  sourceTree: Node,
+  sourceTree: any,
   importPathMap: Record<string, string>,
-): Node => {
+): any => {
   const newTree = map(
     sourceTree,
-    (node: Node) => {
+    (node: any) => {
       if (
         node.type !== 'mdxBlockElement'
         || !(node.name as string).startsWith('Schema')
@@ -61,7 +61,7 @@ export default (
         return node;
       }
 
-      let schemaNode: Node = node;
+      let schemaNode: any = node;
 
       /**
        * Schema component instances can either be used directly in an MDX file,
@@ -88,7 +88,7 @@ export default (
             })
             .use(stringify)
             .use(mdx)
-            .use(() => (node: Node) => {
+            .use(() => (node: any) => {
               importedComponentTree = node;
             })
             .processSync(fileContents);
@@ -96,7 +96,7 @@ export default (
           if (importedComponentTree) {
             const foundNode = find(
               importedComponentTree,
-              (node: Node) => node.name
+              (node: any) => node.name
                 && (node.name as string).endsWith('Schema')
             );
 
@@ -120,7 +120,7 @@ export default (
       visitParents(
         sourceTree,
         node,
-        (node: Node, ancestors: Parent[]) => {
+        (node: any, ancestors: Parent[]) => {
           ancestors.forEach((ancestor: Parent) => {
             closestHeadingNode = findBefore(ancestor, node, 'heading');
           });

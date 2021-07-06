@@ -1,7 +1,7 @@
 import GithubSlugger from 'github-slugger';
 import toString from 'mdast-util-to-string';
 // eslint-disable-next-line import/no-unresolved
-import { Node, Parent } from 'unist';
+import { Parent } from 'unist';
 import visitParents, { Visitor } from 'unist-util-visit-parents';
 
 // eslint-disable-next-line @typescript-eslint/no-var-requires
@@ -11,22 +11,22 @@ const MAX_HEADING_DEPTH = 6;
 
 const slugger = new GithubSlugger();
 
-type TransformFn = (tree: Node) => void;
+type TransformFn = (tree: any) => void;
 
-const transform: TransformFn = (tree: Node) => {
+const transform: TransformFn = (tree: any) => {
   slugger.reset();
 
   for (let depth = MAX_HEADING_DEPTH; depth > 0; depth--) {
     visitParents(
       tree,
-      (node: Node) => node.type === 'heading' && node.depth === depth,
+      (node: any) => node.type === 'heading' && node.depth === depth,
       // eslint-disable-next-line @typescript-eslint/no-explicit-any
       visitor as Visitor<any>,
     );
   }
 };
 
-const visitor = (node: Node, ancestors: Parent[]) => {
+const visitor = (node: any, ancestors: Parent[]) => {
   const data = node.data || (node.data = {});
 
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
@@ -40,7 +40,7 @@ const visitor = (node: Node, ancestors: Parent[]) => {
   const depth = start.depth as number;
   const parent = ancestors[ancestors.length - 1];
 
-  const isEnd = (node: Node) => node.type === 'heading'
+  const isEnd = (node: any) => node.type === 'heading'
     && (node.depth as number) <= depth || node.type === 'export';
 
   const end = findAfter(parent, start, isEnd);
