@@ -2,7 +2,7 @@ import GithubSlugger from 'github-slugger';
 import toHtml from 'hast-util-to-html';
 import toHast from 'mdast-util-to-hast';
 // eslint-disable-next-line import/no-unresolved
-import type { Node, Parent } from 'unist';
+import type { Parent } from 'unist';
 
 interface IFeed {
   description: string;
@@ -47,17 +47,17 @@ export default (feed: IFeed): any => ({
     return allMdx.nodes.flatMap((node: any) => {
       const releaseNotes = (
         node.mdxAST as Parent
-      ).children.filter((child: Node) =>
+      ).children.filter((child: any) =>
         child.name === 'ReleaseNote'
       );
 
-      return releaseNotes.map((releaseNote: Node) => {
-        const dateAttribute = (releaseNote.attributes as Node[]).find(
-          (attribute: Node) => attribute.name === 'date'
+      return releaseNotes.map((releaseNote: any) => {
+        const dateAttribute = (releaseNote.attributes as any[]).find(
+          (attribute: any) => attribute.name === 'date'
         );
 
-        const titleAttribute = (releaseNote.attributes as Node[]).find(
-          (attribute: Node) => attribute.name === 'title'
+        const titleAttribute = (releaseNote.attributes as any[]).find(
+          (attribute: any) => attribute.name === 'title'
         );
 
         if (!dateAttribute?.value) {
@@ -81,8 +81,8 @@ export default (feed: IFeed): any => ({
           ...node.frontmatter,
           custom_elements: [
             {
-              'content:encoded': (releaseNote.children as Node[]).map(
-                (child: Node) => toHtml(toHast(child))
+              'content:encoded': (releaseNote.children as any[]).map(
+                (child: any) => toHtml(toHast(child))
               ).join(''),
             },
           ],
