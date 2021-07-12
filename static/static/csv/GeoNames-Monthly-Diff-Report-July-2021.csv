@@ -1,0 +1,77 @@
+diff_in,old_geoname_id,new_geoname_id,old_city_name,new_city_name,old_country_name,new_country_name,old_country_code,new_country_code,old_subdivision_codes,new_subdivision_codes
+city_name,9901578,9901578,Gaoling,Gaoling Shequ,China,China,CN,CN,GX,GX
+city_name,1893304,1893304,Baimi,Baimicun,China,China,CN,CN,GX,GX
+city_name,1815917,1815917,Cencheng,Cenxi,China,China,CN,CN,GX,GX
+city_name,9899279,9899279,Chaoyang,Chaoyangcun,China,China,CN,CN,GX,GX
+city_name,9898685,9898685,Beilan,Beilancun,China,China,CN,CN,GX,GX
+city_name,1908298,1908298,Darong,Darongcun,China,China,CN,CN,GX,GX
+city_name,9894204,9894204,Ningjiang,Ningjiangcun,China,China,CN,CN,GX,GX
+city_name,9920123,9920123,Dajin,Dajincun,China,China,CN,CN,GX,GX
+city_name,9901017,9901017,Sanya,Sanyacun,China,China,CN,CN,GX,GX
+city_name,9127569,9127569,Fujia,Fujiacun,China,China,CN,CN,SD,SD
+city_name,9898168,9898168,Rongfeng,Rongfengcun,China,China,CN,CN,GX,GX
+city_name,9900273,9900273,Nanming,Nanmingcun,China,China,CN,CN,GX,GX
+city_name,1802965,1802965,Liupai,Tian'e,China,China,CN,CN,GX,GX
+city_name,1913068,1913068,Dali,Dalicun,China,China,CN,CN,GX,GX
+city_name,9935946,9935946,Fuping,Fupingcun,China,China,CN,CN,GX,GX
+city_name,1913019,1913019,Dinggeng,Dinggengcun,China,China,CN,CN,GX,GX
+city_name,9901846,9901846,Baiji,Baijicun,China,China,CN,CN,GX,GX
+city_name,9897094,9897094,Datong,Datongcun,China,China,CN,CN,GX,GX
+city_name,2006752,2006752,Hengkeng,Hengkengcun,China,China,CN,CN,FJ,FJ
+city_name,9898156,9898156,Bojia,Bojiacun,China,China,CN,CN,GX,GX
+city_name,9896719,9896719,Banhe,Banhecun,China,China,CN,CN,GX,GX
+city_name,9917944,9917944,Cantian,Cantiancun,China,China,CN,CN,GX,GX
+city_name,9899707,9899707,Qinghua,Qinghuacun,China,China,CN,CN,GX,GX
+city_name,9899699,9899699,Beihe,Beihe Shequ,China,China,CN,CN,GX,GX
+city_name,9898400,9898400,Wuxi,Wuxicun,China,China,CN,CN,GX,GX
+city_name,2006742,2006742,Xianyou,Xianyoucun,China,China,CN,CN,FJ,FJ
+city_name,9897274,9897274,Baixu,Baixucun,China,China,CN,CN,GX,GX
+city_name,9919743,9919743,Chunping,Chunpingcun,China,China,CN,CN,GX,GX
+city_name,1790688,1790688,Nancheng,Xiajin,China,China,CN,CN,SD,SD
+city_name,9940911,9940911,Gaowen,Gaowencun,China,China,CN,CN,GX,GX
+city_name,9918811,9918811,Ding'an,Ding'ancun,China,China,CN,CN,GX,GX
+city_name,9894390,9894390,Guanghua,Guanghuacun,China,China,CN,CN,GX,GX
+city_name,9896899,9896899,Dagong,Dagongcun,China,China,CN,CN,GX,GX
+city_name,9900004,9900004,Bantang,Bantangcun,China,China,CN,CN,GX,GX
+city_name,9902626,9902626,Baishajiang,Baishajiangcun,China,China,CN,CN,GX,GX
+city_name,9898164,9898164,Chendi,Chendicun,China,China,CN,CN,GX,GX
+city_name,9916673,9916673,Aimin,Aimincun,China,China,CN,CN,GX,GX
+city_name,9902794,9902794,Bailu,Bailucun,China,China,CN,CN,GX,GX
+city_name,1995527,1995527,Dagang,Dagangcun,China,China,CN,CN,GX,GX
+city_name,3682232,3682232,Galeras,Nueva Granada,Colombia,Colombia,CO,CO,SUC,SUC
+city_name,1522642,1522642,Balpyk Bi,Kirovskiy,Kazakhstan,Kazakhstan,KZ,KZ,ALM,ALM
+city_name,1690039,1690039,San Fernando,San Fernando City,Philippines,Philippines,PH,PH,"03, PAM","03, PAM"
+city_name,1690039,1690039,San Fernando,San Fernando City,Philippines,Philippines,PH,PH,"03, PAM","03, PAM"
+city_name,1690039,1690039,San Fernando,San Fernando City,Philippines,Philippines,PH,PH,"03, PAM","03, PAM"
+city_name,711096,711096,Butin,Butyn,Ukraine,Ukraine,UA,UA,61,61
+city_name,697637,697637,Pereiaslav-Khmelnytskyi,Pereiaslav,Ukraine,Ukraine,UA,UA,32,32
+geoname_id,6319378,3405806,Belterra,Belterra,Brazil,Brazil,BR,BR,PA,PA
+geoname_id,12024460,3448033,Sapucaia,Sapucaia,Brazil,Brazil,BR,BR,RJ,RJ
+geoname_id,3465696,6321289,Conego Marinho,Conego Marinho,Brazil,Brazil,BR,BR,MG,MG
+geoname_id,12179408,3465542,Coracao de Jesus,Coracao de Jesus,Brazil,Brazil,BR,BR,MG,MG
+geoname_id,3450085,11959731,Santa Maria,Santa Maria,Brazil,Brazil,BR,BR,SC,SC
+geoname_id,3475644,3460723,Itapeva,Itapeva,Brazil,Brazil,BR,BR,SP,SP
+geoname_id,3405286,8543807,Bom Lugar,Bom Lugar,Brazil,Brazil,BR,BR,MA,MA
+geoname_id,3463605,12229353,Farroupilha,Farroupilha,Brazil,Brazil,BR,BR,RS,RS
+geoname_id,8227069,11541611,Baofeng,Baofeng,China,China,CN,CN,JS,JS
+geoname_id,9897284,9897255,Donghua,Donghua,China,China,CN,CN,GX,GX
+geoname_id,9902969,9902940,Chalong,Chalong,China,China,CN,CN,GX,GX
+geoname_id,7049334,8275453,Yanhu,Yanhu,China,China,CN,CN,AH,AH
+geoname_id,1912988,12252189,Dacun,Dacun,China,China,CN,CN,GX,GX
+geoname_id,3770955,3665911,Villa Rica,Villa Rica,Colombia,Colombia,CO,CO,CAU,CAU
+geoname_id,10622334,10615065,Jalalpur,Jalalpur,India,India,IN,IN,UP,UP
+geoname_id,8950294,9036162,Velo,Velo,Italy,Italy,IT,IT,"34, VI","34, VI"
+geoname_id,3181080,8967351,Caminata,Caminata,Italy,Italy,IT,IT,"45, PC","45, PC"
+geoname_id,3174808,8965098,Leva,Leva,Italy,Italy,IT,IT,"34, VI","34, VI"
+geoname_id,3177752,9035358,Crosara,Crosara,Italy,Italy,IT,IT,"34, VI","34, VI"
+geoname_id,3168873,8948789,Roveleto,Roveleto,Italy,Italy,IT,IT,"45, PC","45, PC"
+geoname_id,8959664,3178221,Comunanza,Comunanza,Italy,Italy,IT,IT,"57, AP","57, AP"
+geoname_id,4562487,4563169,,,Puerto Rico,Puerto Rico,PR,PR,,
+geoname_id,994859,994860,Inanda,Inanda,South Africa,South Africa,ZA,ZA,KZN,KZN
+geoname_id,1618573,1618574,Ban Khai,Ban Khai,Thailand,Thailand,TH,TH,21,21
+geoname_id,699285,699174,Novoselytsya,Novoselytsya,Ukraine,Ukraine,UA,UA,77,77
+geoname_id,689736,689698,Vesele,Vesele,Ukraine,Ukraine,UA,UA,23,23
+geoname_id,859951,697621,Pershe Travnya,Pershe Travnya,Ukraine,Ukraine,UA,UA,51,51
+geoname_id,703844,687058,Kryzhanivka,Kryzhanivka,Ukraine,Ukraine,UA,UA,51,51
+geoname_id,12047975,2650467,East Dulwich,East Dulwich,United Kingdom,United Kingdom,GB,GB,"ENG, SWK","ENG, SWK"
+subdivision_codes,3053501,3053501,Duka,Duka,Hungary,Hungary,HU,HU,VE,VA
