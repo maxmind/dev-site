@@ -234,6 +234,7 @@ const SearchResultsPage: React.FC<RouteUpdateArgs> = (props) => {
             {results.queries.previousPage &&
               <Link
                 className={styles.previous}
+                omitLangQuery={true}
                 to={getQueryUrl(
                   'start',
                   results.queries.previousPage[0].startIndex
@@ -245,6 +246,7 @@ const SearchResultsPage: React.FC<RouteUpdateArgs> = (props) => {
             {results.queries.nextPage &&
               <Link
                 className={styles.next}
+                omitLangQuery={true}
                 to={
                   getQueryUrl('start', results.queries.nextPage[0].startIndex)
                 }

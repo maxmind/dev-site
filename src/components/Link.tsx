@@ -1,10 +1,14 @@
 import { GatsbyLinkProps, Link as GatsbyLink } from 'gatsby';
 import * as React from 'react';
 
+interface ILink extends Omit<GatsbyLinkProps<Record<string, unknown>>,'ref'> {
+  omitLangQuery?: boolean;
+}
+
 const queryString = '?lang=en';
 
-const addQueryString = (path: string) => {
-  if (path.includes(queryString)) {
+const addQueryString = (path: string, omitLangQuery?: boolean) => {
+  if (path.includes(queryString) || omitLangQuery) {
     return path;
   }
   if (path.includes('#')) {
@@ -15,13 +19,13 @@ const addQueryString = (path: string) => {
   return path + '?lang=en';
 };
 
-const Link: React.FC<Omit<GatsbyLinkProps<Record<string, unknown>>,'ref'>> =
+const Link: React.FC<ILink> =
   props => {
     return (
       <GatsbyLink
         {...props}
         // eslint-disable-next-line react/prop-types
-        to={addQueryString(props.to)}
+        to={addQueryString(props.to, props.omitLangQuery)}
       />
     );
   };

@@ -15,6 +15,17 @@ describe('Link', () => {
     expect(component.find(GatsbyLink).prop('to')).toBe('/foo?lang=en');
   });
 
+  it('does not append query string to Link if prop is passed in', () => {
+    const component = shallow(
+      <Link
+        omitLangQuery={true}
+        to="/foo"
+      />
+    );
+
+    expect(component.find(GatsbyLink).prop('to')).toBe('/foo');
+  });
+
   it('appends query string to Link, but before hash', () => {
     const component = shallow(
       <Link
