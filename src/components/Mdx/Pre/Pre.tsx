@@ -1,13 +1,12 @@
 import classNames from 'classnames';
 import PropTypes from 'prop-types';
 import React from 'react';
-import { FaCopy, FaParagraph } from 'react-icons/fa';
+import { FaCheck, FaCopy } from 'react-icons/fa';
 
 import useIsClient from '../../../hooks/useIsClient';
 import { ILanguage,languages } from '../../../languages';
 import Button from './Button';
 import Code from './Code';
-import Message, { State as MessageState } from './Message';
 import Wrapper from './Wrapper';
 
 import * as styles from './Pre.module.scss';
@@ -16,8 +15,8 @@ interface IPre {
   className?: string;
   hasWrapper?: boolean;
   highlightLines?: string;
-  nav?: React.ReactElement<React.HTMLProps<HTMLElement>>;
   showLineNumbers?: boolean;
+  tabs?: React.ReactElement<React.HTMLProps<HTMLElement>>;
 }
 
 const extractCli = (className: string): string => className && className
@@ -30,20 +29,16 @@ const Pre: React.FC<React.HTMLProps<HTMLDivElement> & IPre> = (props) => {
     hasWrapper,
     highlightLines,
     showLineNumbers,
+    tabs,
     ...rest
   } = props;
 
   const { isClient, key } = useIsClient();
 
   const [
-    message,
-    setMessage,
-  ] = React.useState('');
-
-  const [
-    messageState,
-    setMessageState,
-  ] = React.useState('hidden' as MessageState);
+    isCopying,
+    setIsCopying,
+  ] = React.useState(false);
 
   let child = React.Children.toArray(children)[0] as React.ReactElement;
 
@@ -63,15 +58,14 @@ const Pre: React.FC<React.HTMLProps<HTMLDivElement> & IPre> = (props) => {
     )?.prismSettings,
   } as ILanguage;
 
-  const updateMessage = (msg: string): void => {
-    // Force re-render of message component to avoid caching of same message
-    setMessage('');
-    setMessage(msg);
-  };
-
   const handleCopyClick = (): void => {
+    setIsCopying(true);
     navigator.clipboard.writeText(child.props.children.trim())
-      .then(() => updateMessage('Copied to clipboard.'));
+      .then(() => {
+        setTimeout(() => {
+          setIsCopying(false);
+        }, 3000);
+      });
   };
 
   if ( !isClient ) return null;
@@ -83,29 +77,43 @@ const Pre: React.FC<React.HTMLProps<HTMLDivElement> & IPre> = (props) => {
       <div
         className={styles.toolbar}
       >
+        <div>
+          {tabs}
+        </div>
         <div
           className={styles['toolbar__buttons']}
         >
           {navigator.clipboard && (
             <Button
-              disabled={messageState !== 'hidden'}
-              icon={FaCopy}
+              className={classNames(
+                styles.copyBtn,
+                {
+                  [styles.copyBtn__isCopying]: isCopying,
+                }
+              )}
+              disabled={isCopying}
               onClick={handleCopyClick}
               title="Copy code to clipboard"
-            />
+            >
+              <span
+                className={styles.copyBtn__content}
+              >
+                <FaCopy />
+                {' '}
+                Copy
+              </span>
+              <span
+                className={styles.copyBtn__checkedContent}
+              >
+                <FaCheck />
+              </span>
+            </Button>
           )}
         </div>
       </div>
       <div
         className={styles.content}
       >
-        <Message
-          onStateUpdate={(
-            state: MessageState
-          ): void => setMessageState(state)}
-        >
-          {message}
-        </Message>
         <Code
           highlightLines={highlightLines}
           language={language}
@@ -141,8 +149,8 @@ Pre.propTypes = {
   className: PropTypes.string,
   hasWrapper: PropTypes.bool,
   highlightLines: PropTypes.string,
-  nav: PropTypes.any,
   showLineNumbers: PropTypes.bool,
+  tabs: PropTypes.any,
 };
 
 export default Pre;
