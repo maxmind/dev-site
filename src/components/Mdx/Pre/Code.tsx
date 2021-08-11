@@ -18,7 +18,6 @@ interface ICode {
   children: React.ReactNode;
   highlightLines?: string;
   language: ILanguage;
-  showInvisibles?: boolean;
   showLineNumbers?: boolean;
 }
 
@@ -84,32 +83,6 @@ const Code: React.FC<ICode> = (props) => {
           'prismjs/plugins/line-highlight/prism-line-highlight.css' as string
         ),
       ])),
-
-      // import(
-      //   'prismjs/plugins/show-invisibles/prism-show-invisibles.css' as string
-      // ),
-      // import(
-      //   'prismjs/plugins/show-invisibles/prism-show-invisibles.js' as string
-      // ).then(() => {
-      //   const firstGrammar =  (Prism.languages[language.id])
-      //     ? Object.keys(Prism.languages[language.id]).shift()
-      //     : '';
-
-      //   Prism.languages.insertBefore(
-      //     language.id,
-      //     firstGrammar || '',
-      //     {
-      //       indent: {
-      //         inside: {
-      //           space: / /,
-      //           tab: /\t/,
-      //         },
-      //         pattern: /^[^\S\r\n]+/gm,
-      //       },
-      //     },
-      //     Prism.languages
-      //   );
-      // }),
     ];
   }
 
@@ -193,8 +166,6 @@ Code.propTypes = {
   children: PropTypes.node.isRequired,
   highlightLines: PropTypes.string,
   language: PropTypes.any.isRequired,
-  // eslint-disable-next-line react/boolean-prop-naming
-  showInvisibles: PropTypes.bool,
   // eslint-disable-next-line react/boolean-prop-naming
   showLineNumbers: PropTypes.bool.isRequired,
 };

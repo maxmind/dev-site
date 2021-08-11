@@ -45,11 +45,6 @@ const Pre: React.FC<React.HTMLProps<HTMLDivElement> & IPre> = (props) => {
     setMessageState,
   ] = React.useState('hidden' as MessageState);
 
-  const [
-    showInvisibles,
-    setShowInvisibles,
-  ] = React.useState(true);
-
   let child = React.Children.toArray(children)[0] as React.ReactElement;
 
   const extractedClassName = extractCli(child.props.className);
@@ -79,13 +74,6 @@ const Pre: React.FC<React.HTMLProps<HTMLDivElement> & IPre> = (props) => {
       .then(() => updateMessage('Copied to clipboard.'));
   };
 
-  const handleInvisiblesClick = (): void => {
-    setShowInvisibles(!showInvisibles);
-    updateMessage(
-      `Invisible characters are ${showInvisibles ? 'hidden' : 'visible'}.`
-    );
-  };
-
   if ( !isClient ) return null;
 
   const codeExample = (
@@ -106,13 +94,6 @@ const Pre: React.FC<React.HTMLProps<HTMLDivElement> & IPre> = (props) => {
               title="Copy code to clipboard"
             />
           )}
-
-          <Button
-            disabled={messageState !== 'hidden'}
-            icon={FaParagraph}
-            onClick={handleInvisiblesClick}
-            title="Toggle invisible characters"
-          />
         </div>
       </div>
       <div
@@ -128,7 +109,6 @@ const Pre: React.FC<React.HTMLProps<HTMLDivElement> & IPre> = (props) => {
         <Code
           highlightLines={highlightLines}
           language={language}
-          showInvisibles={showInvisibles}
           showLineNumbers={showLineNumbers}
         >
           {child}
