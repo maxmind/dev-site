@@ -1,3 +1,4 @@
+/* eslint-disable compat/compat */
 import classNames from 'classnames';
 import PropTypes from 'prop-types';
 import React from 'react';
@@ -98,7 +99,7 @@ const Pre: React.FC<React.HTMLProps<HTMLDivElement> & IPre> = (props) => {
         <div
           className={styles['toolbar__buttons']}
         >
-          {navigator.clipboard && (
+          {navigator?.clipboard && (
             <Button
               disabled={messageState !== 'hidden'}
               icon={FaCopy}

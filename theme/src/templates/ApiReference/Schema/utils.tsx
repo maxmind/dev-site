@@ -25,7 +25,7 @@ export const getRefAnchorLink = (ref: string): React.ReactElement => {
 export const renderMarkdownElement = (content: string): React.ReactElement => {
   return (
     <ReactMarkdown
-      components={components}
+      components={components as any}
     >
       {content}
     </ReactMarkdown>

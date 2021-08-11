@@ -1,0 +1,15 @@
+{
+  "dependencies": {
+    "gatsby": "^3.1.1",
+    "gatsby-maxmind-theme": "0.1.0"
+  },
+  "description": "",
+  "license": "MIT",
+  "main": "gatsby-config.js",
+  "name": "dev-maxmind-com",
+  "scripts": {
+    "build": "gatsby build",
+    "develop": "gatsby develop"
+  },
+  "version": "1.0.0"
+}

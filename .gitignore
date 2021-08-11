@@ -80,3 +80,5 @@ firebase.json
 
 # Misc
 .tmp
+
+node_modules
