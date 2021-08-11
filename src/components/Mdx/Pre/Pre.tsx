@@ -1,4 +1,5 @@
 import classNames from 'classnames';
+import debounce from 'lodash.debounce';
 import PropTypes from 'prop-types';
 import React from 'react';
 import { FaCheck, FaCopy } from 'react-icons/fa';
@@ -15,6 +16,7 @@ interface IPre {
   className?: string;
   hasWrapper?: boolean;
   highlightLines?: string;
+  select?: React.ReactElement<React.HTMLProps<HTMLElement>>;
   showLineNumbers?: boolean;
   tabs?: React.ReactElement<React.HTMLProps<HTMLElement>>;
 }
@@ -28,17 +30,13 @@ const Pre: React.FC<React.HTMLProps<HTMLDivElement> & IPre> = (props) => {
     className,
     hasWrapper,
     highlightLines,
+    select,
     showLineNumbers,
     tabs,
     ...rest
   } = props;
 
   const { isClient, key } = useIsClient();
-
-  const [
-    isCopying,
-    setIsCopying,
-  ] = React.useState(false);
 
   let child = React.Children.toArray(children)[0] as React.ReactElement;
 
@@ -58,6 +56,13 @@ const Pre: React.FC<React.HTMLProps<HTMLDivElement> & IPre> = (props) => {
     )?.prismSettings,
   } as ILanguage;
 
+  /* ---------- */
+
+  const [
+    isCopying,
+    setIsCopying,
+  ] = React.useState(false);
+
   const handleCopyClick = (): void => {
     setIsCopying(true);
     navigator.clipboard.writeText(child.props.children.trim())
@@ -68,6 +73,65 @@ const Pre: React.FC<React.HTMLProps<HTMLDivElement> & IPre> = (props) => {
       });
   };
 
+  /* ---------- */
+
+  const [
+    cachedTabsWidth,
+    cacheTabsWidth,
+  ] = React.useState(0);
+
+  const [
+    languageUIType,
+    setLanguageUIType,
+  ] = React.useState<'select' | 'tabs'>('tabs');
+
+  const toolbarRef = React.useRef<HTMLDivElement>(null);
+  const tabsRef = React.useRef<HTMLSpanElement>(null);
+
+  const handleWindowResize = React.useCallback(() => {
+    const tabsWidth = cachedTabsWidth || tabsRef.current?.offsetWidth || 0;
+
+    if (!cachedTabsWidth && tabsRef.current?.offsetWidth) {
+      cacheTabsWidth(tabsRef.current.offsetWidth);
+    }
+
+    if (!toolbarRef.current?.offsetWidth) {
+      return;
+    }
+
+    const toolbarWidth = toolbarRef.current.offsetWidth;
+
+    if (toolbarWidth - tabsWidth < 200 ) {
+      setLanguageUIType('select');
+    } else {
+      setLanguageUIType('tabs');
+    }
+  }, [
+    cachedTabsWidth,
+  ]);
+
+  const debouncedHandleWindowResize = React.useMemo(
+    () => debounce(handleWindowResize, 300),
+    [
+      handleWindowResize,
+    ]
+  );
+
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  React.useLayoutEffect(() => {
+    if (tabsRef.current?.offsetWidth) {
+      cacheTabsWidth(tabsRef.current.offsetWidth);
+    }
+
+    window.addEventListener('resize', debouncedHandleWindowResize);
+    handleWindowResize();
+
+    return () => window.removeEventListener(
+      'resize',
+      debouncedHandleWindowResize
+    );
+  });
+
   if ( !isClient ) return null;
 
   const codeExample = (
@@ -76,9 +140,16 @@ const Pre: React.FC<React.HTMLProps<HTMLDivElement> & IPre> = (props) => {
     >
       <div
         className={styles.toolbar}
+        ref={toolbarRef}
       >
         <div>
-          {tabs}
+          {languageUIType === 'tabs' ? (
+            <span
+              ref={tabsRef}
+            >
+              {tabs}
+            </span>
+          ) : select}
         </div>
         <div
           className={styles['toolbar__buttons']}
@@ -140,15 +211,13 @@ const Pre: React.FC<React.HTMLProps<HTMLDivElement> & IPre> = (props) => {
   return codeExample;
 };
 
-Pre.defaultProps = {
-  hasWrapper: true,
-};
 
 Pre.propTypes = {
   children: PropTypes.node,
   className: PropTypes.string,
   hasWrapper: PropTypes.bool,
   highlightLines: PropTypes.string,
+  select: PropTypes.any,
   showLineNumbers: PropTypes.bool,
   tabs: PropTypes.any,
 };

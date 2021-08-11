@@ -1,4 +1,3 @@
-import classNames from 'classnames';
 import PropTypes from 'prop-types';
 import React from 'react';
 
@@ -8,6 +7,8 @@ import { Store } from '../store';
 import Pre from './Mdx/Pre';
 import Button from './Mdx/Pre/Button';
 import Wrapper from './Mdx/Pre/Wrapper';
+
+import * as styles from './CodeSet.module.scss';
 
 const getHumanReadable = (className: string): string  => languages
   .find(language => `language-${language.id}` === className)?.label
@@ -112,6 +113,42 @@ const CodeSet: React.FC<ICodeSet> = (props) => {
     }
   });
 
+  const handleSelect = (e: any): void => {
+    dispatch({
+      payload: e.target.value,
+      type: 'change_language',
+    });
+  };
+
+  const select = (
+    // eslint-disable-next-line jsx-a11y/no-onchange
+    <select
+      className={styles.select}
+      onBlur={handleSelect}
+      onChange={handleSelect}
+      value={activeLanguage}
+    >
+      {React.Children.map(orderedChildren, child => {
+        if (React.isValidElement(child)) {
+          const className = extractLanguage(
+            child.props.children.props.className
+          );
+
+          const text = getHumanReadable(extractLanguage(className));
+
+          return (
+            <option
+              className={styles.option}
+              value={className}
+            >
+              {text}
+            </option>
+          );
+        }
+      })}
+    </select>
+  );
+
   if ( !isClient ) return null;
 
   return (
@@ -125,6 +162,7 @@ const CodeSet: React.FC<ICodeSet> = (props) => {
               hasWrapper={false}
               hidden={extractLanguage(className) !== activeLanguage}
               key={key}
+              select={select}
               tabs={tabs}
             />
           );
