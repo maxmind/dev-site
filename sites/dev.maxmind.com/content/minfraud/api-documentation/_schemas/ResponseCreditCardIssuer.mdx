@@ -1,0 +1,52 @@
+import responseJson from '../_examples/response';
+
+<MinFraudSchema
+  json={responseJson.credit_card.issuer}
+  jsonPointer="/credit_card/issuer"
+  name="Response | Credit Card | Issuer"
+  services={[
+    'insights',
+    'factors',
+  ]}
+>
+  This is a sub-object of `credit_card` that contains information related to the
+  issuer of the card.
+
+  <Property
+    name="name"
+    tags={{
+      'Max Length': 255,
+    }}
+  >
+    This field contains a JSON object with information relating to the credit card issuer.
+  </Property>
+
+  <Property
+    name="matches_provided_name"
+  >
+    This field is `true` if the name matches the name provided in the request
+    for the card issuer. It is `false` if the name does not match. The field is
+    not included if either no name or issuer ID number (IIN) is provided in the
+    request or if MaxMind does not have a name associated with the IIN.
+  </Property>
+
+  <Property
+    name="phone_number"
+    tags={{
+      'Max Length': 255,
+    }}
+  >
+    The phone number of the bank which issued the credit card. In some cases the
+    phone number we return may be out of date.
+  </Property>
+
+  <Property
+    name="matches_provided_phone_number"
+  >
+    This field is `true` if the phone number matches the number provided in the
+    request for the card issuer. It is `false` if the number does not match. The
+    field is not included if either no phone number or issuer ID number (IIN) is
+    provided in the request or if MaxMind does not have a phone number
+    associated with the IIN.
+  </Property>
+</MinFraudSchema>

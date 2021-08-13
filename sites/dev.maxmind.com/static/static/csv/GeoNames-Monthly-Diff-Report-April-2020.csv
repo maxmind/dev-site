@@ -1,0 +1,973 @@
+diff_in,old_geoname_id,new_geoname_id,old_city_name,new_city_name,old_country_name,new_country_name,old_country_code,new_country_code,old_subdivision_codes,new_subdivision_codes
+city_name,3110044,3110044,San Sebastian,Donostia / San Sebastian,Spain,Spain,ES,ES,"PV, SS","PV, SS"
+city_name,3116503,3116503,Mondragón,Arrasate / Mondragón,Spain,Spain,ES,ES,"PV, SS","PV, SS"
+city_name,3118228,3118228,Laudio-Llodio,Laudio / Llodio,Spain,Spain,ES,ES,"PV, VI","PV, VI"
+city_name,3198549,3198549,Sveti Jurij ob Scavnici,Sveti Jurij,Slovenia,Slovenia,SI,SI,116,116
+city_name,704679,704679,Podil's'k,Podilsk,Ukraine,Ukraine,UA,UA,51,51
+city_name,553399,553399,Kamensk-Shakhtinskiy,Kamensk-Shakhtinsky,Russia,Russia,RU,RU,ROS,ROS
+city_name,3110044,3110044,San Sebastian,Donostia / San Sebastian,Spain,Spain,ES,ES,"PV, SS","PV, SS"
+city_name,1881952,1881952,Jurong East New Town,Jurong East,Singapore,Singapore,SG,SG,,
+city_name,2622641,2622641,Ejstrup,Ejstrupholm,Denmark,Denmark,DK,DK,82,82
+city_name,3193463,3193463,Pesnica pri Mariboru,Pesnica,Slovenia,Slovenia,SI,SI,89,89
+city_name,3198549,3198549,Sveti Jurij ob Scavnici,Sveti Jurij,Slovenia,Slovenia,SI,SI,116,116
+city_name,3110044,3110044,San Sebastian,Donostia / San Sebastian,Spain,Spain,ES,ES,"PV, SS","PV, SS"
+city_name,264408,264408,Астипалея,Astypalaia,Greece,Greece,GR,GR,"L, 81","L, 81"
+city_name,3111864,3111864,Rivabellosa,Ribabellosa,Spain,Spain,ES,ES,"PV, VI","PV, VI"
+city_name,3110044,3110044,San Sebastian,Donostia / San Sebastian,Spain,Spain,ES,ES,"PV, SS","PV, SS"
+city_name,6886829,6886829,Map'o,Mapo,South Korea,South Korea,KR,KR,43,43
+city_name,1993314,1993314,Setiabudi,Setia Budi,Indonesia,Indonesia,ID,ID,JK,JK
+city_name,712160,712160,Bilhorod-Dnistrovs’kyy,"Tyras, Ophiusa, Asprokastron, Maurokastron",Ukraine,Ukraine,UA,UA,51,51
+city_name,1526651,1526651,Aqsuat,Aksuat,Kazakhstan,Kazakhstan,KZ,KZ,KZY,KZY
+city_name,1881955,1881955,Jurong West New Town,Jurong West,Singapore,Singapore,SG,SG,,
+city_name,1884384,1884384,Clementi New Town,Clementi Housing Estate,Singapore,Singapore,SG,SG,,
+city_name,3110044,3110044,San Sebastian,Donostia / San Sebastian,Spain,Spain,ES,ES,"PV, SS","PV, SS"
+city_name,3110044,3110044,San Sebastian,Donostia / San Sebastian,Spain,Spain,ES,ES,"PV, SS","PV, SS"
+city_name,3110044,3110044,San Sebastian,Donostia / San Sebastian,Spain,Spain,ES,ES,"PV, SS","PV, SS"
+city_name,1981184,1981184,Anmin,Anmincun,China,China,CN,CN,FJ,FJ
+city_name,3110044,3110044,San Sebastian,Donostia / San Sebastian,Spain,Spain,ES,ES,"PV, SS","PV, SS"
+city_name,703227,703227,Lenins'ke,Hrushivka,Ukraine,Ukraine,UA,UA,12,12
+city_name,3110044,3110044,San Sebastian,Donostia / San Sebastian,Spain,Spain,ES,ES,"PV, SS","PV, SS"
+city_name,3110044,3110044,San Sebastian,Donostia / San Sebastian,Spain,Spain,ES,ES,"PV, SS","PV, SS"
+city_name,553399,553399,Kamensk-Shakhtinskiy,Kamensk-Shakhtinsky,Russia,Russia,RU,RU,ROS,ROS
+city_name,710524,710524,Chervonyy Donets',Shchaslyve,Ukraine,Ukraine,UA,UA,63,63
+city_name,3110044,3110044,San Sebastian,Donostia / San Sebastian,Spain,Spain,ES,ES,"PV, SS","PV, SS"
+city_name,3198549,3198549,Sveti Jurij ob Scavnici,Sveti Jurij,Slovenia,Slovenia,SI,SI,116,116
+city_name,3110044,3110044,San Sebastian,Donostia / San Sebastian,Spain,Spain,ES,ES,"PV, SS","PV, SS"
+city_name,707034,707034,Kam'yanka,Kamenka,Ukraine,Ukraine,UA,UA,59,59
+city_name,8198530,8198530,Chervoni Partyzany,Novi Brody,Ukraine,Ukraine,UA,UA,74,74
+city_name,6886832,6886832,Yangsan,Gagok,South Korea,South Korea,KR,KR,43,43
+city_name,3060101,3060101,Hlinik,Limbach,Slovakia,Slovakia,SK,SK,BL,BL
+city_name,704362,704362,Krasnoperekops'k,Yany Kapu,Ukraine,Ukraine,UA,UA,43,43
+city_name,704679,704679,Podil's'k,Podilsk,Ukraine,Ukraine,UA,UA,51,51
+city_name,8574302,8574302,Zhenjiang,Zhenjiangcun,China,China,CN,CN,FJ,FJ
+city_name,704362,704362,Krasnoperekops'k,Yany Kapu,Ukraine,Ukraine,UA,UA,43,43
+city_name,3464010,3464010,Esmeralda,Esmeraldas de Ferro,Brazil,Brazil,BR,BR,MG,MG
+city_name,3193463,3193463,Pesnica pri Mariboru,Pesnica,Slovenia,Slovenia,SI,SI,89,89
+city_name,3198549,3198549,Sveti Jurij ob Scavnici,Sveti Jurij,Slovenia,Slovenia,SI,SI,116,116
+city_name,3110044,3110044,San Sebastian,Donostia / San Sebastian,Spain,Spain,ES,ES,"PV, SS","PV, SS"
+city_name,3110044,3110044,San Sebastian,Donostia / San Sebastian,Spain,Spain,ES,ES,"PV, SS","PV, SS"
+city_name,3110044,3110044,San Sebastian,Donostia / San Sebastian,Spain,Spain,ES,ES,"PV, SS","PV, SS"
+city_name,3110044,3110044,San Sebastian,Donostia / San Sebastian,Spain,Spain,ES,ES,"PV, SS","PV, SS"
+city_name,3110044,3110044,San Sebastian,Donostia / San Sebastian,Spain,Spain,ES,ES,"PV, SS","PV, SS"
+city_name,3110044,3110044,San Sebastian,Donostia / San Sebastian,Spain,Spain,ES,ES,"PV, SS","PV, SS"
+city_name,3112731,3112731,Puentelarra,Larrazubi / Puentelarra,Spain,Spain,ES,ES,"PV, VI","PV, VI"
+city_name,553399,553399,Kamensk-Shakhtinskiy,Kamensk-Shakhtinsky,Russia,Russia,RU,RU,ROS,ROS
+geoname_id,1988054,1645965,Balekambang,Balekambang,Indonesia,Indonesia,ID,ID,JK,JK
+geoname_id,11959358,3464801,Descanso,Descanso,Brazil,Brazil,BR,BR,SC,SC
+geoname_id,3470621,3470620,Barranco Alto,Barranco Alto,Brazil,Brazil,BR,BR,MG,MG
+geoname_id,1274880,1274879,Chakur,Chakur,India,India,IN,IN,MH,MH
+geoname_id,2888112,2888113,Klein Trebbow,Klein Trebbow,Germany,Germany,DE,DE,MV,MV
+geoname_id,3388812,3388809,Sao Francisco,Sao Francisco,Brazil,Brazil,BR,BR,PB,PB
+geoname_id,3667816,11885795,Sopetran,Sopetran,Colombia,Colombia,CO,CO,ANT,ANT
+geoname_id,3446579,6318978,Terra Roxa,Terra Roxa,Brazil,Brazil,BR,BR,PR,PR
+geoname_id,6316992,3411914,Darcinopolis,Darcinopolis,Brazil,Brazil,BR,BR,TO,TO
+geoname_id,3145148,3232860,Myre,Myre,Norway,Norway,NO,NO,18,18
+geoname_id,3472007,6316401,Antonio Joao,Antonio Joao,Brazil,Brazil,BR,BR,MS,MS
+geoname_id,2753983,2753982,Hoeven,Hoeven,Netherlands,Netherlands,NL,NL,NB,NB
+geoname_id,3462511,3462513,Gaviao,Gaviao,Brazil,Brazil,BR,BR,BA,BA
+geoname_id,6048424,8556306,Lakehurst,Lakehurst,Canada,Canada,CA,CA,ON,ON
+geoname_id,12108334,3460542,Itororo,Itororo,Brazil,Brazil,BR,BR,BA,BA
+geoname_id,3518291,11537040,San Miguel Amantla,San Miguel Amantla,Mexico,Mexico,MX,MX,CMX,CMX
+geoname_id,11563115,11563057,Ammapatti,Ammapatti,India,India,IN,IN,TN,TN
+geoname_id,3396601,6317419,Lago da Pedra,Lago da Pedra,Brazil,Brazil,BR,BR,MA,MA
+geoname_id,1979087,2005874,Banling,Banling,China,China,CN,CN,FJ,FJ
+geoname_id,565290,821356,Donskoy,Donskoy,Russia,Russia,RU,RU,TUL,TUL
+geoname_id,8273624,11578619,Binjiang,Binjiang,China,China,CN,CN,JS,JS
+geoname_id,2771682,11610435,Melk,Melk,Austria,Austria,AT,AT,3,3
+geoname_id,1812305,7332008,Dongqiao,Dongqiao,China,China,CN,CN,JS,JS
+geoname_id,1630473,1992918,Pulogadung,Pulogadung,Indonesia,Indonesia,ID,ID,JK,JK
+geoname_id,3475644,3460723,Itapeva,Itapeva,Brazil,Brazil,BR,BR,SP,SP
+geoname_id,10700273,10453647,Asoli,Asoli,India,India,IN,IN,MH,MH
+geoname_id,10982242,10982231,Liaoyuan,Liaoyuan,China,China,CN,CN,FJ,FJ
+geoname_id,3178221,8959664,Comunanza,Comunanza,Italy,Italy,IT,IT,"57, AP","57, AP"
+geoname_id,3404908,3404918,Brejinho,Brejinho,Brazil,Brazil,BR,BR,PE,PE
+geoname_id,6826574,10187004,Jinniu,Jinniu,China,China,CN,CN,SC,SC
+geoname_id,4024624,8864500,Santa Catarina,Santa Catarina,Mexico,Mexico,MX,MX,GUA,GUA
+geoname_id,3154385,3154383,Haegeland,Haegeland,Norway,Norway,NO,NO,42,42
+geoname_id,8540178,8360042,Chengxing,Chengxing,China,China,CN,CN,JS,JS
+geoname_id,2858252,6558484,Ochtersum,Ochtersum,Germany,Germany,DE,DE,NI,NI
+geoname_id,6544442,2516932,Guadiaro,Guadiaro,Spain,Spain,ES,ES,"AN, CA","AN, CA"
+geoname_id,1651386,6755264,Angke,Angke,Indonesia,Indonesia,ID,ID,JK,JK
+geoname_id,2508744,2508741,Afir,Afir,Algeria,Algeria,DZ,DZ,35,35
+geoname_id,11696088,3132911,Vale,Vale,Norway,Norway,NO,NO,38,38
+geoname_id,3467373,3467371,Capao Bonito,Capao Bonito,Brazil,Brazil,BR,BR,SP,SP
+geoname_id,3448033,12024460,Sapucaia,Sapucaia,Brazil,Brazil,BR,BR,RJ,RJ
+geoname_id,3465931,3465930,Colombia,Colombia,Brazil,Brazil,BR,BR,SP,SP
+geoname_id,1491330,1491333,Sosnovka,Sosnovka,Russia,Russia,RU,RU,KEM,KEM
+subdivision_codes,1002108,1002108,Germiston,Germiston,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,7870439,7870439,Horizon View,Horizon View,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,952869,952869,Springs,Springs,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,944120,944120,Verulam,Verulam,South Africa,South Africa,ZA,ZA,NL,KZN
+subdivision_codes,785537,785537,Star Dojran,Star Dojran,North Macedonia,North Macedonia,MK,MK,26,406
+subdivision_codes,978327,978327,Matatiele,Matatiele,South Africa,South Africa,ZA,ZA,NL,KZN
+subdivision_codes,1007311,1007311,Durban,Durban,South Africa,South Africa,ZA,ZA,NL,KZN
+subdivision_codes,948468,948468,oThongathi,oThongathi,South Africa,South Africa,ZA,ZA,NL,KZN
+subdivision_codes,1021390,1021390,Balgowan,Balgowan,South Africa,South Africa,ZA,ZA,NL,KZN
+subdivision_codes,783910,783910,Zerovjane,Zerovjane,North Macedonia,North Macedonia,MK,MK,6,601
+subdivision_codes,11204927,11204927,Rabie Ridge,Rabie Ridge,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,948468,948468,oThongathi,oThongathi,South Africa,South Africa,ZA,ZA,NL,KZN
+subdivision_codes,1012080,1012080,Dalton,Dalton,South Africa,South Africa,ZA,ZA,NL,KZN
+subdivision_codes,1005029,1005029,eSikhaleni,eSikhaleni,South Africa,South Africa,ZA,ZA,NL,KZN
+subdivision_codes,946128,946128,eMkhomazi,eMkhomazi,South Africa,South Africa,ZA,ZA,NL,KZN
+subdivision_codes,993800,993800,Johannesburg,Johannesburg,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,991415,991415,Kempton Park,Kempton Park,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,1007311,1007311,Durban,Durban,South Africa,South Africa,ZA,ZA,NL,KZN
+subdivision_codes,946010,946010,eMuziwezinto,eMuziwezinto,South Africa,South Africa,ZA,ZA,NL,KZN
+subdivision_codes,964137,964137,Pretoria,Pretoria,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,1007311,1007311,Durban,Durban,South Africa,South Africa,ZA,ZA,NL,KZN
+subdivision_codes,972787,972787,Mtunzini,Mtunzini,South Africa,South Africa,ZA,ZA,NL,KZN
+subdivision_codes,11524779,11524779,Ophirton,Ophirton,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,955577,955577,Silverton,Silverton,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,958093,958093,Salt Rock,Salt Rock,South Africa,South Africa,ZA,ZA,NL,KZN
+subdivision_codes,791930,791930,Ciflik,Ciflik,North Macedonia,North Macedonia,MK,MK,81,210
+subdivision_codes,997151,997151,Heidelberg,Heidelberg,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,1004599,1004599,Fairland,Fairland,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,972674,972674,Muldersdrift,Muldersdrift,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,939340,939340,Winterton,Winterton,South Africa,South Africa,ZA,ZA,NL,KZN
+subdivision_codes,1002108,1002108,Germiston,Germiston,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,7870414,7870414,Glenanda,Glenanda,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,7535491,7535491,Theresapark,Theresapark,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,1001642,1001642,Glenharvie,Glenharvie,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,964137,964137,Pretoria,Pretoria,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,1020098,1020098,Benoni,Benoni,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,1020098,1020098,Benoni,Benoni,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,967278,967278,Ottawa,Ottawa,South Africa,South Africa,ZA,ZA,NL,KZN
+subdivision_codes,1002108,1002108,Germiston,Germiston,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,956058,956058,Sherwood,Sherwood,South Africa,South Africa,ZA,ZA,NL,KZN
+subdivision_codes,993800,993800,Johannesburg,Johannesburg,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,994859,994859,Inanda,Inanda,South Africa,South Africa,ZA,ZA,NL,KZN
+subdivision_codes,1105723,1105723,Elandsfontein,Elandsfontein,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,944986,944986,Vanderbijlpark,Vanderbijlpark,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,964137,964137,Pretoria,Pretoria,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,963230,963230,Randfontein,Randfontein,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,940316,940316,Westonaria,Westonaria,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,1007311,1007311,Durban,Durban,South Africa,South Africa,ZA,ZA,NL,KZN
+subdivision_codes,991415,991415,Kempton Park,Kempton Park,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,991415,991415,Kempton Park,Kempton Park,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,1020098,1020098,Benoni,Benoni,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,993800,993800,Johannesburg,Johannesburg,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,964137,964137,Pretoria,Pretoria,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,1022953,1022953,eManzimtoti,eManzimtoti,South Africa,South Africa,ZA,ZA,NL,KZN
+subdivision_codes,991387,991387,Kenilworth,Kenilworth,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,8030229,8030229,The Reeds,The Reeds,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,945995,945995,Underberg,Underberg,South Africa,South Africa,ZA,ZA,NL,KZN
+subdivision_codes,1105777,1105777,Centurion,Centurion,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,993800,993800,Johannesburg,Johannesburg,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,993800,993800,Johannesburg,Johannesburg,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,1105777,1105777,Centurion,Centurion,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,789091,789091,Kratovo,Kratovo,North Macedonia,North Macedonia,MK,MK,43,701
+subdivision_codes,981139,981139,Lyndhurst,Lyndhurst,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,11204129,11204129,Vorna Valley,Vorna Valley,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,791443,791443,Dobri Dol,Dobri Dol,North Macedonia,North Macedonia,MK,MK,16,603
+subdivision_codes,1007311,1007311,Durban,Durban,South Africa,South Africa,ZA,ZA,NL,KZN
+subdivision_codes,997151,997151,Heidelberg,Heidelberg,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,1020098,1020098,Benoni,Benoni,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,1023441,1023441,Alberton,Alberton,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,964137,964137,Pretoria,Pretoria,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,991415,991415,Kempton Park,Kempton Park,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,982719,982719,Linden,Linden,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,7778818,7778818,Auckland Park,Auckland Park,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,971319,971319,Newlands,Newlands,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,1023374,1023374,Alexandra,Alexandra,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,8063423,8063423,Cowies Hill,Cowies Hill,South Africa,South Africa,ZA,ZA,NL,KZN
+subdivision_codes,996921,996921,Henley on Klip,Henley on Klip,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,962330,962330,Richmond,Richmond,South Africa,South Africa,ZA,ZA,NL,KZN
+subdivision_codes,936374,936374,Roodepoort,Roodepoort,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,1023441,1023441,Alberton,Alberton,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,993800,993800,Johannesburg,Johannesburg,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,8063415,8063415,Benmore Gardens,Benmore Gardens,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,1023441,1023441,Alberton,Alberton,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,966193,966193,Park Rynie,Park Rynie,South Africa,South Africa,ZA,ZA,NL,KZN
+subdivision_codes,972803,972803,Mtubatuba,Mtubatuba,South Africa,South Africa,ZA,ZA,NL,KZN
+subdivision_codes,944385,944385,Vereeniging,Vereeniging,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,940316,940316,Westonaria,Westonaria,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,944385,944385,Vereeniging,Vereeniging,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,1023441,1023441,Alberton,Alberton,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,944385,944385,Vereeniging,Vereeniging,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,7302797,7302797,Eden Glen,Eden Glen,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,1007311,1007311,Durban,Durban,South Africa,South Africa,ZA,ZA,NL,KZN
+subdivision_codes,1007311,1007311,Durban,Durban,South Africa,South Africa,ZA,ZA,NL,KZN
+subdivision_codes,1003820,1003820,Fourways,Fourways,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,7870467,7870467,Strydompark,Strydompark,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,996377,996377,Hlabisa,Hlabisa,South Africa,South Africa,ZA,ZA,NL,KZN
+subdivision_codes,941939,941939,Warner Beach,Warner Beach,South Africa,South Africa,ZA,ZA,NL,KZN
+subdivision_codes,949880,949880,Tembisa,Tembisa,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,1007601,1007601,Duduza,Duduza,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,998210,998210,Halfway House,Halfway House,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,1015304,1015304,Bryanston,Bryanston,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,7870429,7870429,Florida Glen,Florida Glen,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,965154,965154,Pinetown,Pinetown,South Africa,South Africa,ZA,ZA,NL,KZN
+subdivision_codes,991632,991632,Katlehong,Katlehong,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,8347481,8347481,,,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,983199,983199,Lenasia,Lenasia,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,993043,993043,Kagiso,Kagiso,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,8063470,8063470,Wilgeheuwel,Wilgeheuwel,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,939493,939493,Wingate Park,Wingate Park,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,962701,962701,Rensburgdorp,Rensburgdorp,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,7870432,7870432,Helderkruin,Helderkruin,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,1085594,1085594,,,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,1005040,1005040,Eshowe,Eshowe,South Africa,South Africa,ZA,ZA,NL,KZN
+subdivision_codes,11428031,11428031,Kibler Park,Kibler Park,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,993800,993800,Johannesburg,Johannesburg,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,946218,946218,eMdloti,eMdloti,South Africa,South Africa,ZA,ZA,NL,KZN
+subdivision_codes,7288036,7288036,Rossmore,Rossmore,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,11204193,11204193,Orlando East,Orlando East,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,972062,972062,,,South Africa,South Africa,ZA,ZA,NL,KZN
+subdivision_codes,1105777,1105777,Centurion,Centurion,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,979405,979405,Manguzi,Manguzi,South Africa,South Africa,ZA,ZA,NL,KZN
+subdivision_codes,1015723,1015723,Brenthurst,Brenthurst,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,978941,978941,Marburg,Marburg,South Africa,South Africa,ZA,ZA,NL,KZN
+subdivision_codes,993800,993800,Johannesburg,Johannesburg,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,952869,952869,Springs,Springs,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,993800,993800,Johannesburg,Johannesburg,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,971421,971421,Newcastle,Newcastle,South Africa,South Africa,ZA,ZA,NL,KZN
+subdivision_codes,7870450,7870450,North Riding,North Riding,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,1007311,1007311,Durban,Durban,South Africa,South Africa,ZA,ZA,NL,KZN
+subdivision_codes,1012528,1012528,Creighton,Creighton,South Africa,South Africa,ZA,ZA,NL,KZN
+subdivision_codes,1015504,1015504,Bronkhorstspruit,Bronkhorstspruit,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,1016181,1016181,Brakpan,Brakpan,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,1015504,1015504,Bronkhorstspruit,Bronkhorstspruit,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,953781,953781,Soweto,Soweto,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,993800,993800,Johannesburg,Johannesburg,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,1007311,1007311,Durban,Durban,South Africa,South Africa,ZA,ZA,NL,KZN
+subdivision_codes,7289557,7289557,Bluff,Bluff,South Africa,South Africa,ZA,ZA,NL,KZN
+subdivision_codes,985649,985649,KwaMashu,KwaMashu,South Africa,South Africa,ZA,ZA,NL,KZN
+subdivision_codes,11257195,11257195,Shakaville,Shakaville,South Africa,South Africa,ZA,ZA,NL,KZN
+subdivision_codes,964137,964137,Pretoria,Pretoria,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,7870457,7870457,Randvaal,Randvaal,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,784733,784733,Valandovo,Valandovo,North Macedonia,North Macedonia,MK,MK,10,403
+subdivision_codes,993800,993800,Johannesburg,Johannesburg,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,995335,995335,Houghton Estate,Houghton Estate,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,1007311,1007311,Durban,Durban,South Africa,South Africa,ZA,ZA,NL,KZN
+subdivision_codes,965301,965301,Pietermaritzburg,Pietermaritzburg,South Africa,South Africa,ZA,ZA,NL,KZN
+subdivision_codes,953781,953781,Soweto,Soweto,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,936374,936374,Roodepoort,Roodepoort,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,998210,998210,Halfway House,Halfway House,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,1007311,1007311,Durban,Durban,South Africa,South Africa,ZA,ZA,NL,KZN
+subdivision_codes,1007311,1007311,Durban,Durban,South Africa,South Africa,ZA,ZA,NL,KZN
+subdivision_codes,942470,942470,Vryheid,Vryheid,South Africa,South Africa,ZA,ZA,NL,KZN
+subdivision_codes,1014709,1014709,Bulwer,Bulwer,South Africa,South Africa,ZA,ZA,NL,KZN
+subdivision_codes,974686,974686,Monavoni,Monavoni,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,944385,944385,Vereeniging,Vereeniging,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,993800,993800,Johannesburg,Johannesburg,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,965154,965154,Pinetown,Pinetown,South Africa,South Africa,ZA,ZA,NL,KZN
+subdivision_codes,971421,971421,Newcastle,Newcastle,South Africa,South Africa,ZA,ZA,NL,KZN
+subdivision_codes,1023441,1023441,Alberton,Alberton,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,993800,993800,Johannesburg,Johannesburg,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,993800,993800,Johannesburg,Johannesburg,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,993800,993800,Johannesburg,Johannesburg,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,966616,966616,Paddock,Paddock,South Africa,South Africa,ZA,ZA,NL,KZN
+subdivision_codes,7870397,7870397,Robindale,Robindale,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,7871274,7871274,Bothas Hill,Bothas Hill,South Africa,South Africa,ZA,ZA,NL,KZN
+subdivision_codes,964137,964137,Pretoria,Pretoria,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,965301,965301,Pietermaritzburg,Pietermaritzburg,South Africa,South Africa,ZA,ZA,NL,KZN
+subdivision_codes,993800,993800,Johannesburg,Johannesburg,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,964137,964137,Pretoria,Pretoria,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,965301,965301,Pietermaritzburg,Pietermaritzburg,South Africa,South Africa,ZA,ZA,NL,KZN
+subdivision_codes,944986,944986,Vanderbijlpark,Vanderbijlpark,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,993568,993568,Jozini,Jozini,South Africa,South Africa,ZA,ZA,NL,KZN
+subdivision_codes,974222,974222,Mooi River,Mooi River,South Africa,South Africa,ZA,ZA,NL,KZN
+subdivision_codes,976927,976927,Merrivale,Merrivale,South Africa,South Africa,ZA,ZA,NL,KZN
+subdivision_codes,11395709,11395709,Lotus Park,Lotus Park,South Africa,South Africa,ZA,ZA,NL,KZN
+subdivision_codes,787928,787928,Miravci,Miravci,North Macedonia,North Macedonia,MK,MK,18,405
+subdivision_codes,1021360,1021360,Ballitoville,Ballitoville,South Africa,South Africa,ZA,ZA,NL,KZN
+subdivision_codes,787778,787778,Demir Hisar,Demir Hisar,North Macedonia,North Macedonia,MK,MK,25,502
+subdivision_codes,792257,792257,Makedonski Brod,Makedonski Brod,North Macedonia,North Macedonia,MK,MK,52,308
+subdivision_codes,1014180,1014180,Camperdown,Camperdown,South Africa,South Africa,ZA,ZA,NL,KZN
+subdivision_codes,977363,977363,Meadowlands,Meadowlands,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,785842,785842,Skopje,Skopje,North Macedonia,North Macedonia,MK,MK,85,
+subdivision_codes,1011696,1011696,Daveyton,Daveyton,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,7870445,7870445,Meadowdale,Meadowdale,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,7646541,7646541,Lanseria,Lanseria,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,1105776,1105776,Midrand,Midrand,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,994883,994883,Impendle,Impendle,South Africa,South Africa,ZA,ZA,NL,KZN
+subdivision_codes,791542,791542,Demir Kapija,Demir Kapija,North Macedonia,North Macedonia,MK,MK,24,103
+subdivision_codes,936374,936374,Roodepoort,Roodepoort,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,964137,964137,Pretoria,Pretoria,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,940296,940296,Westville,Westville,South Africa,South Africa,ZA,ZA,NL,KZN
+subdivision_codes,1017780,1017780,Boksburg,Boksburg,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,786341,786341,Resen,Resen,North Macedonia,North Macedonia,MK,MK,66,509
+subdivision_codes,944385,944385,Vereeniging,Vereeniging,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,964137,964137,Pretoria,Pretoria,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,996419,996419,Hilton,Hilton,South Africa,South Africa,ZA,ZA,NL,KZN
+subdivision_codes,1015304,1015304,Bryanston,Bryanston,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,1017780,1017780,Boksburg,Boksburg,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,1004666,1004666,Faerie Glen,Faerie Glen,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,785639,785639,Srbinovo,Srbinovo,North Macedonia,North Macedonia,MK,MK,19,604
+subdivision_codes,1010627,1010627,Devon,Devon,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,993800,993800,Johannesburg,Johannesburg,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,993800,993800,Johannesburg,Johannesburg,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,957654,957654,Sandton,Sandton,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,945094,945094,Valhalla,Valhalla,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,998080,998080,Hammarsdale,Hammarsdale,South Africa,South Africa,ZA,ZA,NL,KZN
+subdivision_codes,993800,993800,Johannesburg,Johannesburg,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,963253,963253,Ramsgate,Ramsgate,South Africa,South Africa,ZA,ZA,NL,KZN
+subdivision_codes,952869,952869,Springs,Springs,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,993800,993800,Johannesburg,Johannesburg,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,1002108,1002108,Germiston,Germiston,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,1007311,1007311,Durban,Durban,South Africa,South Africa,ZA,ZA,NL,KZN
+subdivision_codes,1007311,1007311,Durban,Durban,South Africa,South Africa,ZA,ZA,NL,KZN
+subdivision_codes,956785,956785,Sebokeng,Sebokeng,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,964137,964137,Pretoria,Pretoria,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,785842,785842,Skopje,Skopje,North Macedonia,North Macedonia,MK,MK,85,
+subdivision_codes,969454,969454,Nqutu,Nqutu,South Africa,South Africa,ZA,ZA,NL,KZN
+subdivision_codes,1023441,1023441,Alberton,Alberton,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,980921,980921,Mabopane,Mabopane,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,8063456,8063456,Mandeni,Mandeni,South Africa,South Africa,ZA,ZA,NL,KZN
+subdivision_codes,936374,936374,Roodepoort,Roodepoort,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,965301,965301,Pietermaritzburg,Pietermaritzburg,South Africa,South Africa,ZA,ZA,NL,KZN
+subdivision_codes,1008947,1008947,Doornpoort,Doornpoort,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,11238392,11238392,Vaal Marina,Vaal Marina,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,957654,957654,Sandton,Sandton,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,986822,986822,Krugersdorp,Krugersdorp,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,1002108,1002108,Germiston,Germiston,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,1007311,1007311,Durban,Durban,South Africa,South Africa,ZA,ZA,NL,KZN
+subdivision_codes,1002108,1002108,Germiston,Germiston,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,789629,789629,Makedonska Kamenica,Makedonska Kamenica,North Macedonia,North Macedonia,MK,MK,51,207
+subdivision_codes,786700,786700,Probistip,Probistip,North Macedonia,North Macedonia,MK,MK,63,209
+subdivision_codes,939455,939455,Winklespruit,Winklespruit,South Africa,South Africa,ZA,ZA,NL,KZN
+subdivision_codes,796356,796356,Bezovo,Bezovo,North Macedonia,North Macedonia,MK,MK,71,312
+subdivision_codes,8131576,8131576,Rhodesfield,Rhodesfield,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,994557,994557,Irene,Irene,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,965154,965154,Pinetown,Pinetown,South Africa,South Africa,ZA,ZA,NL,KZN
+subdivision_codes,985460,985460,KwaNgendezi,KwaNgendezi,South Africa,South Africa,ZA,ZA,NL,KZN
+subdivision_codes,965301,965301,Pietermaritzburg,Pietermaritzburg,South Africa,South Africa,ZA,ZA,NL,KZN
+subdivision_codes,1020098,1020098,Benoni,Benoni,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,1105774,1105774,Eersterus,Eersterus,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,1007311,1007311,Durban,Durban,South Africa,South Africa,ZA,ZA,NL,KZN
+subdivision_codes,965301,965301,Pietermaritzburg,Pietermaritzburg,South Africa,South Africa,ZA,ZA,NL,KZN
+subdivision_codes,7909995,7909995,Bramley,Bramley,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,1020066,1020066,Berea,Berea,South Africa,South Africa,ZA,ZA,NL,KZN
+subdivision_codes,964137,964137,Pretoria,Pretoria,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,963241,963241,Randburg,Randburg,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,965301,965301,Pietermaritzburg,Pietermaritzburg,South Africa,South Africa,ZA,ZA,NL,KZN
+subdivision_codes,964137,964137,Pretoria,Pretoria,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,964137,964137,Pretoria,Pretoria,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,1017780,1017780,Boksburg,Boksburg,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,964137,964137,Pretoria,Pretoria,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,936374,936374,Roodepoort,Roodepoort,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,964137,964137,Pretoria,Pretoria,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,1017780,1017780,Boksburg,Boksburg,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,1105777,1105777,Centurion,Centurion,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,963230,963230,Randfontein,Randfontein,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,991415,991415,Kempton Park,Kempton Park,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,997151,997151,Heidelberg,Heidelberg,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,976764,976764,Meyerton,Meyerton,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,11205171,11205171,Eldorado Park,Eldorado Park,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,1020098,1020098,Benoni,Benoni,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,952869,952869,Springs,Springs,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,993800,993800,Johannesburg,Johannesburg,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,944986,944986,Vanderbijlpark,Vanderbijlpark,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,1013683,1013683,Chartwell,Chartwell,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,1017780,1017780,Boksburg,Boksburg,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,956117,956117,Sheffield Beach,Sheffield Beach,South Africa,South Africa,ZA,ZA,NL,KZN
+subdivision_codes,1005544,1005544,Empangeni,Empangeni,South Africa,South Africa,ZA,ZA,NL,KZN
+subdivision_codes,966189,966189,Parkview,Parkview,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,981117,981117,Lynnwood,Lynnwood,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,785113,785113,Tearce,Tearce,North Macedonia,North Macedonia,MK,MK,75,608
+subdivision_codes,993800,993800,Johannesburg,Johannesburg,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,1016181,1016181,Brakpan,Brakpan,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,952869,952869,Springs,Springs,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,1023441,1023441,Alberton,Alberton,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,1013886,1013886,Cato Ridge,Cato Ridge,South Africa,South Africa,ZA,ZA,NL,KZN
+subdivision_codes,991415,991415,Kempton Park,Kempton Park,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,986822,986822,Krugersdorp,Krugersdorp,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,1014073,1014073,Carletonville,Carletonville,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,1017780,1017780,Boksburg,Boksburg,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,936374,936374,Roodepoort,Roodepoort,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,964137,964137,Pretoria,Pretoria,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,993800,993800,Johannesburg,Johannesburg,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,994526,994526,Isando,Isando,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,1105776,1105776,Midrand,Midrand,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,995335,995335,Houghton Estate,Houghton Estate,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,944385,944385,Vereeniging,Vereeniging,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,786565,786565,Radovis,Radovis,North Macedonia,North Macedonia,MK,MK,64,409
+subdivision_codes,1016181,1016181,Brakpan,Brakpan,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,944385,944385,Vereeniging,Vereeniging,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,986822,986822,Krugersdorp,Krugersdorp,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,964137,964137,Pretoria,Pretoria,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,986822,986822,Krugersdorp,Krugersdorp,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,8030233,8030233,Midstream,Midstream,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,991415,991415,Kempton Park,Kempton Park,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,1020098,1020098,Benoni,Benoni,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,993800,993800,Johannesburg,Johannesburg,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,1023441,1023441,Alberton,Alberton,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,997151,997151,Heidelberg,Heidelberg,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,1016181,1016181,Brakpan,Brakpan,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,7357897,7357897,Ravenswood,Ravenswood,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,993800,993800,Johannesburg,Johannesburg,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,991415,991415,Kempton Park,Kempton Park,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,1005544,1005544,Empangeni,Empangeni,South Africa,South Africa,ZA,ZA,NL,KZN
+subdivision_codes,993800,993800,Johannesburg,Johannesburg,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,975144,975144,Modderfontein,Modderfontein,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,1015304,1015304,Bryanston,Bryanston,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,944385,944385,Vereeniging,Vereeniging,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,970566,970566,Nigel,Nigel,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,963230,963230,Randfontein,Randfontein,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,1017780,1017780,Boksburg,Boksburg,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,996506,996506,Hillcrest,Hillcrest,South Africa,South Africa,ZA,ZA,NL,KZN
+subdivision_codes,947666,947666,Tugela Ferry,Tugela Ferry,South Africa,South Africa,ZA,ZA,NL,KZN
+subdivision_codes,970566,970566,Nigel,Nigel,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,993800,993800,Johannesburg,Johannesburg,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,964137,964137,Pretoria,Pretoria,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,1023441,1023441,Alberton,Alberton,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,7627570,7627570,Waverley,Waverley,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,957811,957811,Sandown,Sandown,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,969688,969688,Northcliff,Northcliff,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,964137,964137,Pretoria,Pretoria,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,964406,964406,Port Shepstone,Port Shepstone,South Africa,South Africa,ZA,ZA,NL,KZN
+subdivision_codes,997344,997344,Hatfield,Hatfield,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,954013,954013,Soshanguve,Soshanguve,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,1017780,1017780,Boksburg,Boksburg,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,1001736,1001736,Glencoe,Glencoe,South Africa,South Africa,ZA,ZA,NL,KZN
+subdivision_codes,971421,971421,Newcastle,Newcastle,South Africa,South Africa,ZA,ZA,NL,KZN
+subdivision_codes,1020098,1020098,Benoni,Benoni,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,995202,995202,Howick,Howick,South Africa,South Africa,ZA,ZA,NL,KZN
+subdivision_codes,936374,936374,Roodepoort,Roodepoort,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,1105777,1105777,Centurion,Centurion,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,1015304,1015304,Bryanston,Bryanston,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,1005928,1005928,Eldoradopark,Eldoradopark,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,993800,993800,Johannesburg,Johannesburg,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,1003820,1003820,Fourways,Fourways,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,1017780,1017780,Boksburg,Boksburg,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,993800,993800,Johannesburg,Johannesburg,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,964137,964137,Pretoria,Pretoria,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,964137,964137,Pretoria,Pretoria,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,7870466,7870466,Spartan,Spartan,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,7870444,7870444,Linbro Park,Linbro Park,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,8063469,8063469,Sundowner,Sundowner,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,953979,953979,Southbroom,Southbroom,South Africa,South Africa,ZA,ZA,NL,KZN
+subdivision_codes,1002108,1002108,Germiston,Germiston,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,964137,964137,Pretoria,Pretoria,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,993800,993800,Johannesburg,Johannesburg,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,993800,993800,Johannesburg,Johannesburg,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,7290211,7290211,Krugersdorp North,Krugersdorp North,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,993800,993800,Johannesburg,Johannesburg,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,964137,964137,Pretoria,Pretoria,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,964137,964137,Pretoria,Pretoria,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,973537,973537,Mount Edgecombe,Mount Edgecombe,South Africa,South Africa,ZA,ZA,NL,KZN
+subdivision_codes,998080,998080,Hammarsdale,Hammarsdale,South Africa,South Africa,ZA,ZA,NL,KZN
+subdivision_codes,978895,978895,Margate,Margate,South Africa,South Africa,ZA,ZA,NL,KZN
+subdivision_codes,979691,979691,Malvern,Malvern,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,1015459,1015459,Brooklyn,Brooklyn,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,963514,963514,Queenswood,Queenswood,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,978895,978895,Margate,Margate,South Africa,South Africa,ZA,ZA,NL,KZN
+subdivision_codes,993800,993800,Johannesburg,Johannesburg,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,993800,993800,Johannesburg,Johannesburg,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,993800,993800,Johannesburg,Johannesburg,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,1016181,1016181,Brakpan,Brakpan,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,964137,964137,Pretoria,Pretoria,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,993800,993800,Johannesburg,Johannesburg,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,993800,993800,Johannesburg,Johannesburg,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,7870429,7870429,Florida Glen,Florida Glen,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,941376,941376,Waverley,Waverley,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,988886,988886,Kloof,Kloof,South Africa,South Africa,ZA,ZA,NL,KZN
+subdivision_codes,977710,977710,Mbazwana,Mbazwana,South Africa,South Africa,ZA,ZA,NL,KZN
+subdivision_codes,986822,986822,Krugersdorp,Krugersdorp,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,949880,949880,Tembisa,Tembisa,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,1002108,1002108,Germiston,Germiston,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,7290485,7290485,Paulshof,Paulshof,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,948542,948542,Tokoza,Tokoza,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,984998,984998,Ladysmith,Ladysmith,South Africa,South Africa,ZA,ZA,NL,KZN
+subdivision_codes,964137,964137,Pretoria,Pretoria,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,964137,964137,Pretoria,Pretoria,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,964137,964137,Pretoria,Pretoria,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,993800,993800,Johannesburg,Johannesburg,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,990902,990902,Kingsborough,Kingsborough,South Africa,South Africa,ZA,ZA,NL,KZN
+subdivision_codes,7291234,7291234,Mogale City,Mogale City,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,970133,970133,Nongoma,Nongoma,South Africa,South Africa,ZA,ZA,NL,KZN
+subdivision_codes,1004348,1004348,Ferndale,Ferndale,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,1022945,1022945,aMatikulu,aMatikulu,South Africa,South Africa,ZA,ZA,NL,KZN
+subdivision_codes,946165,946165,Umhlanga,Umhlanga,South Africa,South Africa,ZA,ZA,NL,KZN
+subdivision_codes,948468,948468,oThongathi,oThongathi,South Africa,South Africa,ZA,ZA,NL,KZN
+subdivision_codes,956785,956785,Sebokeng,Sebokeng,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,952869,952869,Springs,Springs,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,1020098,1020098,Benoni,Benoni,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,1020098,1020098,Benoni,Benoni,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,984185,984185,Laudium,Laudium,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,959931,959931,Rooihuiskraal,Rooihuiskraal,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,946229,946229,Umbogintwini,Umbogintwini,South Africa,South Africa,ZA,ZA,NL,KZN
+subdivision_codes,984908,984908,La Lucia,La Lucia,South Africa,South Africa,ZA,ZA,NL,KZN
+subdivision_codes,7302540,7302540,Equestria,Equestria,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,8030230,8030230,Bromhof,Bromhof,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,991367,991367,Kensington,Kensington,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,943941,943941,Villieria,Villieria,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,7870421,7870421,Boksburg North,Boksburg North,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,964137,964137,Pretoria,Pretoria,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,964137,964137,Pretoria,Pretoria,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,1019102,1019102,Blackheath,Blackheath,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,948046,948046,Tsakane,Tsakane,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,977058,977058,Menlo Park,Menlo Park,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,964137,964137,Pretoria,Pretoria,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,964081,964081,Primrose,Primrose,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,1001875,1001875,Gillitts,Gillitts,South Africa,South Africa,ZA,ZA,NL,KZN
+subdivision_codes,1007311,1007311,Durban,Durban,South Africa,South Africa,ZA,ZA,NL,KZN
+subdivision_codes,8063461,8063461,Randhart,Randhart,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,1013366,1013366,Clayville,Clayville,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,978652,978652,Marshalltown,Marshalltown,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,957654,957654,Sandton,Sandton,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,1020590,1020590,Bedfordview,Bedfordview,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,964406,964406,Port Shepstone,Port Shepstone,South Africa,South Africa,ZA,ZA,NL,KZN
+subdivision_codes,946165,946165,Umhlanga,Umhlanga,South Africa,South Africa,ZA,ZA,NL,KZN
+subdivision_codes,8030240,8030240,Noordwyk,Noordwyk,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,940316,940316,Westonaria,Westonaria,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,965301,965301,Pietermaritzburg,Pietermaritzburg,South Africa,South Africa,ZA,ZA,NL,KZN
+subdivision_codes,964137,964137,Pretoria,Pretoria,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,944986,944986,Vanderbijlpark,Vanderbijlpark,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,993800,993800,Johannesburg,Johannesburg,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,11054645,11054645,Elysium,Elysium,South Africa,South Africa,ZA,ZA,NL,KZN
+subdivision_codes,952734,952734,KwaDukuza,KwaDukuza,South Africa,South Africa,ZA,ZA,NL,KZN
+subdivision_codes,946103,946103,Umlazi,Umlazi,South Africa,South Africa,ZA,ZA,NL,KZN
+subdivision_codes,973537,973537,Mount Edgecombe,Mount Edgecombe,South Africa,South Africa,ZA,ZA,NL,KZN
+subdivision_codes,787605,787605,Nov Dojran,Nov Dojran,North Macedonia,North Macedonia,MK,MK,26,406
+subdivision_codes,783845,783845,Zletovo,Zletovo,North Macedonia,North Macedonia,MK,MK,63,209
+subdivision_codes,993800,993800,Johannesburg,Johannesburg,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,959931,959931,Rooihuiskraal,Rooihuiskraal,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,993800,993800,Johannesburg,Johannesburg,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,1002108,1002108,Germiston,Germiston,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,971387,971387,New Germany,New Germany,South Africa,South Africa,ZA,ZA,NL,KZN
+subdivision_codes,983199,983199,Lenasia,Lenasia,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,942097,942097,Walkerville,Walkerville,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,996506,996506,Hillcrest,Hillcrest,South Africa,South Africa,ZA,ZA,NL,KZN
+subdivision_codes,1007311,1007311,Durban,Durban,South Africa,South Africa,ZA,ZA,NL,KZN
+subdivision_codes,995821,995821,Holy Cross,Holy Cross,South Africa,South Africa,ZA,ZA,NL,KZN
+subdivision_codes,941728,941728,Waterkloof,Waterkloof,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,970566,970566,Nigel,Nigel,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,956878,956878,Scottburgh,Scottburgh,South Africa,South Africa,ZA,ZA,NL,KZN
+subdivision_codes,995202,995202,Howick,Howick,South Africa,South Africa,ZA,ZA,NL,KZN
+subdivision_codes,1085594,1085594,,,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,976764,976764,Meyerton,Meyerton,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,998210,998210,Halfway House,Halfway House,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,1014073,1014073,Carletonville,Carletonville,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,1022953,1022953,eManzimtoti,eManzimtoti,South Africa,South Africa,ZA,ZA,NL,KZN
+subdivision_codes,1016181,1016181,Brakpan,Brakpan,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,955487,955487,Sinoville,Sinoville,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,8063412,8063412,Allen's Nek,Allen's Nek,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,963230,963230,Randfontein,Randfontein,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,936374,936374,Roodepoort,Roodepoort,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,1006834,1006834,Edenvale,Edenvale,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,986822,986822,Krugersdorp,Krugersdorp,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,936374,936374,Roodepoort,Roodepoort,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,1016181,1016181,Brakpan,Brakpan,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,964137,964137,Pretoria,Pretoria,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,1000006,1000006,Greytown,Greytown,South Africa,South Africa,ZA,ZA,NL,KZN
+subdivision_codes,792235,792235,Brusnik,Brusnik,North Macedonia,North Macedonia,MK,MK,4,501
+subdivision_codes,8347533,8347533,,,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,1012584,1012584,Craighall Park,Craighall Park,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,7870429,7870429,Florida Glen,Florida Glen,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,961065,961065,Rivonia,Rivonia,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,940296,940296,Westville,Westville,South Africa,South Africa,ZA,ZA,NL,KZN
+subdivision_codes,944986,944986,Vanderbijlpark,Vanderbijlpark,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,986822,986822,Krugersdorp,Krugersdorp,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,1007311,1007311,Durban,Durban,South Africa,South Africa,ZA,ZA,NL,KZN
+subdivision_codes,973847,973847,Morningside,Morningside,South Africa,South Africa,ZA,ZA,NL,KZN
+subdivision_codes,958273,958273,Saint Lucia,Saint Lucia,South Africa,South Africa,ZA,ZA,NL,KZN
+subdivision_codes,1020098,1020098,Benoni,Benoni,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,964137,964137,Pretoria,Pretoria,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,986822,986822,Krugersdorp,Krugersdorp,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,1007311,1007311,Durban,Durban,South Africa,South Africa,ZA,ZA,NL,KZN
+subdivision_codes,972614,972614,Munster,Munster,South Africa,South Africa,ZA,ZA,NL,KZN
+subdivision_codes,981084,981084,Lyttelton,Lyttelton,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,1009080,1009080,Doornkop,Doornkop,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,968517,968517,Oberholzer,Oberholzer,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,971421,971421,Newcastle,Newcastle,South Africa,South Africa,ZA,ZA,NL,KZN
+subdivision_codes,952869,952869,Springs,Springs,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,11524778,11524778,Jet Park,Jet Park,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,792578,792578,Bitola,Bitola,North Macedonia,North Macedonia,MK,MK,4,501
+subdivision_codes,789045,789045,Kriva Palanka,Kriva Palanka,North Macedonia,North Macedonia,MK,MK,44,702
+subdivision_codes,789215,789215,Kostinci,Kostinci,North Macedonia,North Macedonia,MK,MK,27,503
+subdivision_codes,785842,785842,Skopje,Skopje,North Macedonia,North Macedonia,MK,MK,85,
+subdivision_codes,791606,791606,Debar,Debar,North Macedonia,North Macedonia,MK,MK,21,303
+subdivision_codes,792656,792656,Berovo,Berovo,North Macedonia,North Macedonia,MK,MK,3,201
+subdivision_codes,993800,993800,Johannesburg,Johannesburg,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,980557,980557,Magaliesburg,Magaliesburg,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,1105776,1105776,Midrand,Midrand,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,952869,952869,Springs,Springs,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,791131,791131,Dracevo,Dracevo,North Macedonia,North Macedonia,MK,MK,85,
+subdivision_codes,1007311,1007311,Durban,Durban,South Africa,South Africa,ZA,ZA,NL,KZN
+subdivision_codes,937832,937832,Wynberg,Wynberg,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,969454,969454,Nqutu,Nqutu,South Africa,South Africa,ZA,ZA,NL,KZN
+subdivision_codes,1002108,1002108,Germiston,Germiston,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,961047,961047,Robertsham,Robertsham,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,1014180,1014180,Camperdown,Camperdown,South Africa,South Africa,ZA,ZA,NL,KZN
+subdivision_codes,1002108,1002108,Germiston,Germiston,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,1007311,1007311,Durban,Durban,South Africa,South Africa,ZA,ZA,NL,KZN
+subdivision_codes,11282213,11282213,Wierdapark,Wierdapark,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,1007311,1007311,Durban,Durban,South Africa,South Africa,ZA,ZA,NL,KZN
+subdivision_codes,1012413,1012413,Cullinan,Cullinan,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,1007311,1007311,Durban,Durban,South Africa,South Africa,ZA,ZA,NL,KZN
+subdivision_codes,985484,985484,KwaNdlovu,KwaNdlovu,South Africa,South Africa,ZA,ZA,NL,KZN
+subdivision_codes,1002108,1002108,Germiston,Germiston,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,956878,956878,Scottburgh,Scottburgh,South Africa,South Africa,ZA,ZA,NL,KZN
+subdivision_codes,7871273,7871273,Woodmead,Woodmead,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,951360,951360,Sunnyside,Sunnyside,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,1002037,1002037,Gezina,Gezina,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,995023,995023,Hyde Park,Hyde Park,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,941812,941812,Waterfall,Waterfall,South Africa,South Africa,ZA,ZA,NL,KZN
+subdivision_codes,945802,945802,Uvongo Beach,Uvongo Beach,South Africa,South Africa,ZA,ZA,NL,KZN
+subdivision_codes,962330,962330,Richmond,Richmond,South Africa,South Africa,ZA,ZA,NL,KZN
+subdivision_codes,991415,991415,Kempton Park,Kempton Park,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,998080,998080,Hammarsdale,Hammarsdale,South Africa,South Africa,ZA,ZA,NL,KZN
+subdivision_codes,1004866,1004866,Evaton,Evaton,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,789527,789527,Kicevo,Kicevo,North Macedonia,North Macedonia,MK,MK,40,307
+subdivision_codes,785058,785058,Veles,Veles,North Macedonia,North Macedonia,MK,MK,13,101
+subdivision_codes,785082,785082,Tetovo,Tetovo,North Macedonia,North Macedonia,MK,MK,76,609
+subdivision_codes,786735,786735,Prilep,Prilep,North Macedonia,North Macedonia,MK,MK,62,508
+subdivision_codes,964137,964137,Pretoria,Pretoria,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,788099,788099,Mavrovi Anovi,Mavrovi Anovi,North Macedonia,North Macedonia,MK,MK,50,607
+subdivision_codes,964137,964137,Pretoria,Pretoria,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,8030236,8030236,Birchleigh,Birchleigh,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,7290695,7290695,Douglasdale,Douglasdale,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,1005578,1005578,Emmarentia,Emmarentia,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,8030070,8030070,Morningside Manor,Morningside Manor,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,787159,787159,Pcinja,Pcinja,North Macedonia,North Macedonia,MK,MK,47,703
+subdivision_codes,787716,787716,Negotino,Negotino,North Macedonia,North Macedonia,MK,MK,54,106
+subdivision_codes,786700,786700,Probistip,Probistip,North Macedonia,North Macedonia,MK,MK,63,209
+subdivision_codes,785842,785842,Skopje,Skopje,North Macedonia,North Macedonia,MK,MK,85,
+subdivision_codes,787052,787052,Pirok,Pirok,North Macedonia,North Macedonia,MK,MK,76,609
+subdivision_codes,965154,965154,Pinetown,Pinetown,South Africa,South Africa,ZA,ZA,NL,KZN
+subdivision_codes,787487,787487,Ohrid,Ohrid,North Macedonia,North Macedonia,MK,MK,58,310
+subdivision_codes,785380,785380,Strumica,Strumica,North Macedonia,North Macedonia,MK,MK,72,410
+subdivision_codes,790744,790744,Gevgelija,Gevgelija,North Macedonia,North Macedonia,MK,MK,18,405
+subdivision_codes,792523,792523,Bogdanci,Bogdanci,North Macedonia,North Macedonia,MK,MK,5,401
+subdivision_codes,785482,785482,Shtip,Shtip,North Macedonia,North Macedonia,MK,MK,70,211
+subdivision_codes,785482,785482,Shtip,Shtip,North Macedonia,North Macedonia,MK,MK,70,211
+subdivision_codes,789403,789403,Kočani,Kočani,North Macedonia,North Macedonia,MK,MK,42,206
+subdivision_codes,791559,791559,Delcevo,Delcevo,North Macedonia,North Macedonia,MK,MK,23,203
+subdivision_codes,789527,789527,Kicevo,Kicevo,North Macedonia,North Macedonia,MK,MK,40,307
+subdivision_codes,1014073,1014073,Carletonville,Carletonville,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,1020098,1020098,Benoni,Benoni,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,11204397,11204397,Ridgeway,Ridgeway,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,11280696,11280696,Senaoane,Senaoane,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,1005976,1005976,Elarduspark,Elarduspark,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,940384,940384,Westdene,Westdene,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,1013214,1013214,Clubview West,Clubview West,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,8063558,8063558,Wadeville,Wadeville,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,8063421,8063421,Broadacres,Broadacres,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,1021360,1021360,Ballitoville,Ballitoville,South Africa,South Africa,ZA,ZA,NL,KZN
+subdivision_codes,997324,997324,Hattingspruit,Hattingspruit,South Africa,South Africa,ZA,ZA,NL,KZN
+subdivision_codes,995759,995759,Honeydew,Honeydew,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,790295,790295,Gostivar,Gostivar,North Macedonia,North Macedonia,MK,MK,19,604
+subdivision_codes,785387,785387,Struga,Struga,North Macedonia,North Macedonia,MK,MK,71,312
+subdivision_codes,944385,944385,Vereeniging,Vereeniging,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,944986,944986,Vanderbijlpark,Vanderbijlpark,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,1017780,1017780,Boksburg,Boksburg,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,993800,993800,Johannesburg,Johannesburg,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,993800,993800,Johannesburg,Johannesburg,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,785201,785201,Sveti Nikole,Sveti Nikole,North Macedonia,North Macedonia,MK,MK,69,108
+subdivision_codes,986822,986822,Krugersdorp,Krugersdorp,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,784424,784424,Vinica,Vinica,North Macedonia,North Macedonia,MK,MK,14,202
+subdivision_codes,976764,976764,Meyerton,Meyerton,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,993800,993800,Johannesburg,Johannesburg,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,785082,785082,Tetovo,Tetovo,North Macedonia,North Macedonia,MK,MK,76,609
+subdivision_codes,789822,789822,Jegunovce,Jegunovce,North Macedonia,North Macedonia,MK,MK,35,606
+subdivision_codes,991415,991415,Kempton Park,Kempton Park,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,956878,956878,Scottburgh,Scottburgh,South Africa,South Africa,ZA,ZA,NL,KZN
+subdivision_codes,991415,991415,Kempton Park,Kempton Park,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,1013675,1013675,Chatsworth,Chatsworth,South Africa,South Africa,ZA,ZA,NL,KZN
+subdivision_codes,1011696,1011696,Daveyton,Daveyton,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,975982,975982,Mid-Ennerdale,Mid-Ennerdale,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,1005264,1005264,Erasmia,Erasmia,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,8063458,8063458,Pierre van Ryneveld,Pierre van Ryneveld,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,8063418,8063418,Brackendowns,Brackendowns,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,966196,966196,Parkhurst,Parkhurst,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,942789,942789,Vosloorus,Vosloorus,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,967580,967580,Orange Farm,Orange Farm,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,1011497,1011497,De Deur,De Deur,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,966194,966194,Parkmore,Parkmore,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,964137,964137,Pretoria,Pretoria,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,789541,789541,Kavadarci,Kavadarci,North Macedonia,North Macedonia,MK,MK,36,104
+subdivision_codes,792854,792854,Barovo,Barovo,North Macedonia,North Macedonia,MK,MK,83,812
+subdivision_codes,1007311,1007311,Durban,Durban,South Africa,South Africa,ZA,ZA,NL,KZN
+subdivision_codes,1000006,1000006,Greytown,Greytown,South Africa,South Africa,ZA,ZA,NL,KZN
+subdivision_codes,993800,993800,Johannesburg,Johannesburg,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,1007311,1007311,Durban,Durban,South Africa,South Africa,ZA,ZA,NL,KZN
+subdivision_codes,11873967,11873967,Farrarmere,Farrarmere,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,1019933,1019933,Bergville,Bergville,South Africa,South Africa,ZA,ZA,NL,KZN
+subdivision_codes,963049,963049,Rayton,Rayton,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,964137,964137,Pretoria,Pretoria,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,963241,963241,Randburg,Randburg,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,1002108,1002108,Germiston,Germiston,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,1105776,1105776,Midrand,Midrand,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,969723,969723,Norkem Park,Norkem Park,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,1003820,1003820,Fourways,Fourways,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,7778854,7778854,Melville,Melville,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,993800,993800,Johannesburg,Johannesburg,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,789403,789403,Kočani,Kočani,North Macedonia,North Macedonia,MK,MK,42,206
+subdivision_codes,786565,786565,Radovis,Radovis,North Macedonia,North Macedonia,MK,MK,64,409
+subdivision_codes,792758,792758,Beli,Beli,North Macedonia,North Macedonia,MK,MK,42,206
+subdivision_codes,964137,964137,Pretoria,Pretoria,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,993800,993800,Johannesburg,Johannesburg,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,1004962,1004962,Estcourt,Estcourt,South Africa,South Africa,ZA,ZA,NL,KZN
+subdivision_codes,965154,965154,Pinetown,Pinetown,South Africa,South Africa,ZA,ZA,NL,KZN
+subdivision_codes,993800,993800,Johannesburg,Johannesburg,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,936374,936374,Roodepoort,Roodepoort,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,1007311,1007311,Durban,Durban,South Africa,South Africa,ZA,ZA,NL,KZN
+subdivision_codes,994490,994490,Isipingo Beach,Isipingo Beach,South Africa,South Africa,ZA,ZA,NL,KZN
+subdivision_codes,986822,986822,Krugersdorp,Krugersdorp,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,1005925,1005925,Eldoraigne,Eldoraigne,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,1012413,1012413,Cullinan,Cullinan,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,986822,986822,Krugersdorp,Krugersdorp,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,11204008,11204008,Parktown North,Parktown North,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,1001490,1001490,Glenwood,Glenwood,South Africa,South Africa,ZA,ZA,NL,KZN
+subdivision_codes,1002108,1002108,Germiston,Germiston,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,986822,986822,Krugersdorp,Krugersdorp,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,790319,790319,Gorno Orizari,Gorno Orizari,North Macedonia,North Macedonia,MK,MK,13,101
+subdivision_codes,993800,993800,Johannesburg,Johannesburg,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,978895,978895,Margate,Margate,South Africa,South Africa,ZA,ZA,NL,KZN
+subdivision_codes,993800,993800,Johannesburg,Johannesburg,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,1105727,1105727,Kwamhlanga,Kwamhlanga,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,789611,789611,Kamenjane,Kamenjane,North Macedonia,North Macedonia,MK,MK,6,601
+subdivision_codes,1105776,1105776,Midrand,Midrand,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,1002108,1002108,Germiston,Germiston,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,993800,993800,Johannesburg,Johannesburg,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,988356,988356,Kokstad,Kokstad,South Africa,South Africa,ZA,ZA,NL,KZN
+subdivision_codes,11428765,11428765,Florauna,Florauna,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,964137,964137,Pretoria,Pretoria,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,993800,993800,Johannesburg,Johannesburg,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,960469,960469,Roodekrans,Roodekrans,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,8030225,8030225,Greenstone Hill,Greenstone Hill,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,964574,964574,Pongola,Pongola,South Africa,South Africa,ZA,ZA,NL,KZN
+subdivision_codes,11281616,11281616,Lions River,Lions River,South Africa,South Africa,ZA,ZA,NL,KZN
+subdivision_codes,941923,941923,Wartburg,Wartburg,South Africa,South Africa,ZA,ZA,NL,KZN
+subdivision_codes,966060,966060,Paulpietersburg,Paulpietersburg,South Africa,South Africa,ZA,ZA,NL,KZN
+subdivision_codes,969618,969618,Nottingham Road,Nottingham Road,South Africa,South Africa,ZA,ZA,NL,KZN
+subdivision_codes,996256,996256,Hluhluwe,Hluhluwe,South Africa,South Africa,ZA,ZA,NL,KZN
+subdivision_codes,1003753,1003753,Franklin,Franklin,South Africa,South Africa,ZA,ZA,NL,KZN
+subdivision_codes,961065,961065,Rivonia,Rivonia,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,972674,972674,Muldersdrift,Muldersdrift,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,1001869,1001869,KwaGingindlovu,KwaGingindlovu,South Africa,South Africa,ZA,ZA,NL,KZN
+subdivision_codes,968296,968296,Olifantsfontein,Olifantsfontein,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,8063431,8063431,Kyalami Park,Kyalami Park,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,996643,996643,Hibberdene,Hibberdene,South Africa,South Africa,ZA,ZA,NL,KZN
+subdivision_codes,956098,956098,Shelly Beach,Shelly Beach,South Africa,South Africa,ZA,ZA,NL,KZN
+subdivision_codes,1022808,1022808,Anerley,Anerley,South Africa,South Africa,ZA,ZA,NL,KZN
+subdivision_codes,792216,792216,Brzdani,Brzdani,North Macedonia,North Macedonia,MK,MK,40,307
+subdivision_codes,8030218,8030218,Ruimsig,Ruimsig,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,983199,983199,Lenasia,Lenasia,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,1007400,1007400,Dundee,Dundee,South Africa,South Africa,ZA,ZA,NL,KZN
+subdivision_codes,963528,963528,Queensburgh,Queensburgh,South Africa,South Africa,ZA,ZA,NL,KZN
+subdivision_codes,785466,785466,Stojakovo,Stojakovo,North Macedonia,North Macedonia,MK,MK,5,401
+subdivision_codes,946257,946257,Ulundi,Ulundi,South Africa,South Africa,ZA,ZA,NL,KZN
+subdivision_codes,991415,991415,Kempton Park,Kempton Park,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,964137,964137,Pretoria,Pretoria,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,1020098,1020098,Benoni,Benoni,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,970566,970566,Nigel,Nigel,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,991415,991415,Kempton Park,Kempton Park,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,1007311,1007311,Durban,Durban,South Africa,South Africa,ZA,ZA,NL,KZN
+subdivision_codes,993800,993800,Johannesburg,Johannesburg,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,980921,980921,Mabopane,Mabopane,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,994418,994418,Ixopo,Ixopo,South Africa,South Africa,ZA,ZA,NL,KZN
+subdivision_codes,946053,946053,eMthenteni,eMthenteni,South Africa,South Africa,ZA,ZA,NL,KZN
+subdivision_codes,11495830,11495830,Assagay,Assagay,South Africa,South Africa,ZA,ZA,NL,KZN
+subdivision_codes,11282022,11282022,Dinwiddie,Dinwiddie,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,979635,979635,Mamelodi,Mamelodi,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,968517,968517,Oberholzer,Oberholzer,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,964424,964424,Port Edward,Port Edward,South Africa,South Africa,ZA,ZA,NL,KZN
+subdivision_codes,985609,985609,KwaMbonambi,KwaMbonambi,South Africa,South Africa,ZA,ZA,NL,KZN
+subdivision_codes,7870437,7870437,Heriotdale,Heriotdale,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,965301,965301,Pietermaritzburg,Pietermaritzburg,South Africa,South Africa,ZA,ZA,NL,KZN
+subdivision_codes,993800,993800,Johannesburg,Johannesburg,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,1020098,1020098,Benoni,Benoni,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,1016181,1016181,Brakpan,Brakpan,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,1020098,1020098,Benoni,Benoni,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,1007311,1007311,Durban,Durban,South Africa,South Africa,ZA,ZA,NL,KZN
+subdivision_codes,965301,965301,Pietermaritzburg,Pietermaritzburg,South Africa,South Africa,ZA,ZA,NL,KZN
+subdivision_codes,946257,946257,Ulundi,Ulundi,South Africa,South Africa,ZA,ZA,NL,KZN
+subdivision_codes,787715,787715,Negotino,Negotino,North Macedonia,North Macedonia,MK,MK,16,603
+subdivision_codes,1105781,1105781,Tierpoort,Tierpoort,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,10310297,10310297,Ali Koc,Ali Koc,North Macedonia,North Macedonia,MK,MK,64,409
+subdivision_codes,8126042,8126042,Dunkeld West,Dunkeld West,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,939179,939179,Witfield,Witfield,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,8030228,8030228,Olivedale,Olivedale,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,952734,952734,KwaDukuza,KwaDukuza,South Africa,South Africa,ZA,ZA,NL,KZN
+subdivision_codes,964406,964406,Port Shepstone,Port Shepstone,South Africa,South Africa,ZA,ZA,NL,KZN
+subdivision_codes,964137,964137,Pretoria,Pretoria,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,1023098,1023098,Alrode,Alrode,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,953781,953781,Soweto,Soweto,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,991632,991632,Katlehong,Katlehong,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,790118,790118,Grupcin,Grupcin,North Macedonia,North Macedonia,MK,MK,30,605
+subdivision_codes,997861,997861,Harding,Harding,South Africa,South Africa,ZA,ZA,NL,KZN
+subdivision_codes,1022055,1022055,Atteridgeville,Atteridgeville,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,945813,945813,Utrecht,Utrecht,South Africa,South Africa,ZA,ZA,NL,KZN
+subdivision_codes,993800,993800,Johannesburg,Johannesburg,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,944120,944120,Verulam,Verulam,South Africa,South Africa,ZA,ZA,NL,KZN
+subdivision_codes,1007311,1007311,Durban,Durban,South Africa,South Africa,ZA,ZA,NL,KZN
+subdivision_codes,1105776,1105776,Midrand,Midrand,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,1002108,1002108,Germiston,Germiston,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,1007311,1007311,Durban,Durban,South Africa,South Africa,ZA,ZA,NL,KZN
+subdivision_codes,791609,791609,Davidovo,Davidovo,North Macedonia,North Macedonia,MK,MK,18,405
+subdivision_codes,965301,965301,Pietermaritzburg,Pietermaritzburg,South Africa,South Africa,ZA,ZA,NL,KZN
+subdivision_codes,1005093,1005093,Escombe,Escombe,South Africa,South Africa,ZA,ZA,NL,KZN
+subdivision_codes,980921,980921,Mabopane,Mabopane,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,951869,951869,Strathavon,Strathavon,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,1105773,1105773,Garsfontein,Garsfontein,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,1105726,1105726,Ekangala,Ekangala,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,8030220,8030220,Highveld,Highveld,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,993800,993800,Johannesburg,Johannesburg,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,959148,959148,Rosettenville,Rosettenville,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,965154,965154,Pinetown,Pinetown,South Africa,South Africa,ZA,ZA,NL,KZN
+subdivision_codes,1020098,1020098,Benoni,Benoni,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,993800,993800,Johannesburg,Johannesburg,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,975511,975511,Mkuze,Mkuze,South Africa,South Africa,ZA,ZA,NL,KZN
+subdivision_codes,964137,964137,Pretoria,Pretoria,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,1017780,1017780,Boksburg,Boksburg,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,792019,792019,Cegrane,Cegrane,North Macedonia,North Macedonia,MK,MK,19,604
+subdivision_codes,1002108,1002108,Germiston,Germiston,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,993800,993800,Johannesburg,Johannesburg,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,1017780,1017780,Boksburg,Boksburg,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,962332,962332,Richmond,Richmond,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,784309,784309,Vogani,Vogani,North Macedonia,North Macedonia,MK,MK,45,504
+subdivision_codes,977797,977797,Mayville,Mayville,South Africa,South Africa,ZA,ZA,NL,KZN
+subdivision_codes,970480,970480,Nkandla,Nkandla,South Africa,South Africa,ZA,ZA,NL,KZN
+subdivision_codes,993800,993800,Johannesburg,Johannesburg,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,1105777,1105777,Centurion,Centurion,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,1017780,1017780,Boksburg,Boksburg,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,8126042,8126042,Dunkeld West,Dunkeld West,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,993800,993800,Johannesburg,Johannesburg,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,964137,964137,Pretoria,Pretoria,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,989052,989052,Kliprivier,Kliprivier,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,1007311,1007311,Durban,Durban,South Africa,South Africa,ZA,ZA,NL,KZN
+subdivision_codes,962367,962367,Richards Bay,Richards Bay,South Africa,South Africa,ZA,ZA,NL,KZN
+subdivision_codes,964137,964137,Pretoria,Pretoria,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,11436283,11436283,Bosmont,Bosmont,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,11204008,11204008,Parktown North,Parktown North,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,1105772,1105772,Akasia,Akasia,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,1007311,1007311,Durban,Durban,South Africa,South Africa,ZA,ZA,NL,KZN
+subdivision_codes,993800,993800,Johannesburg,Johannesburg,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,1023441,1023441,Alberton,Alberton,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,997861,997861,Harding,Harding,South Africa,South Africa,ZA,ZA,NL,KZN
+subdivision_codes,1105777,1105777,Centurion,Centurion,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,993800,993800,Johannesburg,Johannesburg,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,793162,793162,Agino Selo,Agino Selo,North Macedonia,North Macedonia,MK,MK,47,703
+subdivision_codes,1007311,1007311,Durban,Durban,South Africa,South Africa,ZA,ZA,NL,KZN
+subdivision_codes,8030070,8030070,Morningside Manor,Morningside Manor,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,11279253,11279253,Sunward Park,Sunward Park,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,946233,946233,Umbilo,Umbilo,South Africa,South Africa,ZA,ZA,NL,KZN
+subdivision_codes,965154,965154,Pinetown,Pinetown,South Africa,South Africa,ZA,ZA,NL,KZN
+subdivision_codes,792633,792633,Bigla,Bigla,North Macedonia,North Macedonia,MK,MK,23,203
+subdivision_codes,936374,936374,Roodepoort,Roodepoort,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,1016181,1016181,Brakpan,Brakpan,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,1002108,1002108,Germiston,Germiston,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,993800,993800,Johannesburg,Johannesburg,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,11467664,11467664,Bardene,Bardene,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,952869,952869,Springs,Springs,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,792968,792968,Balin Dol,Balin Dol,North Macedonia,North Macedonia,MK,MK,19,604
+subdivision_codes,792835,792835,Batinci,Batinci,North Macedonia,North Macedonia,MK,MK,73,813
+subdivision_codes,792501,792501,Bogovinje,Bogovinje,North Macedonia,North Macedonia,MK,MK,6,601
+subdivision_codes,948468,948468,oThongathi,oThongathi,South Africa,South Africa,ZA,ZA,NL,KZN
+subdivision_codes,965154,965154,Pinetown,Pinetown,South Africa,South Africa,ZA,ZA,NL,KZN
+subdivision_codes,1017780,1017780,Boksburg,Boksburg,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,7302282,7302282,Constantia Kloof,Constantia Kloof,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,7290084,7290084,Bonaero Park,Bonaero Park,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,8030224,8030224,Zimbali,Zimbali,South Africa,South Africa,ZA,ZA,NL,KZN
+subdivision_codes,976770,976770,Meyerspark,Meyerspark,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,7870401,7870401,Cresta,Cresta,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,8030231,8030231,Quellerina,Quellerina,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,7909716,7909716,Aston Manor,Aston Manor,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,786596,786596,Radiovce,Radiovce,North Macedonia,North Macedonia,MK,MK,8,602
+subdivision_codes,984998,984998,Ladysmith,Ladysmith,South Africa,South Africa,ZA,ZA,NL,KZN
+subdivision_codes,1004091,1004091,Fontainebleau,Fontainebleau,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,994493,994493,Isipingo,Isipingo,South Africa,South Africa,ZA,ZA,NL,KZN
+subdivision_codes,979011,979011,Maraisburg,Maraisburg,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,939435,939435,Winston Park,Winston Park,South Africa,South Africa,ZA,ZA,NL,KZN
+subdivision_codes,1004599,1004599,Fairland,Fairland,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,1014107,1014107,Capital Park,Capital Park,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,966931,966931,Overport,Overport,South Africa,South Africa,ZA,ZA,NL,KZN
+subdivision_codes,7870390,7870390,Alberton North,Alberton North,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,965301,965301,Pietermaritzburg,Pietermaritzburg,South Africa,South Africa,ZA,ZA,NL,KZN
+subdivision_codes,977135,977135,Melmoth,Melmoth,South Africa,South Africa,ZA,ZA,NL,KZN
+subdivision_codes,944385,944385,Vereeniging,Vereeniging,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,1009687,1009687,Dobsonville,Dobsonville,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,964137,964137,Pretoria,Pretoria,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,1007311,1007311,Durban,Durban,South Africa,South Africa,ZA,ZA,NL,KZN
+subdivision_codes,963241,963241,Randburg,Randburg,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,1007311,1007311,Durban,Durban,South Africa,South Africa,ZA,ZA,NL,KZN
+subdivision_codes,7870429,7870429,Florida Glen,Florida Glen,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,995202,995202,Howick,Howick,South Africa,South Africa,ZA,ZA,NL,KZN
+subdivision_codes,1105776,1105776,Midrand,Midrand,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,997116,997116,Hekpoort,Hekpoort,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,1007311,1007311,Durban,Durban,South Africa,South Africa,ZA,ZA,NL,KZN
+subdivision_codes,993800,993800,Johannesburg,Johannesburg,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,944385,944385,Vereeniging,Vereeniging,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,788886,788886,Kumanovo,Kumanovo,North Macedonia,North Macedonia,MK,MK,47,703
+subdivision_codes,1002108,1002108,Germiston,Germiston,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,996889,996889,Hercules,Hercules,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,957916,957916,Sandhurst,Sandhurst,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,994493,994493,Isipingo,Isipingo,South Africa,South Africa,ZA,ZA,NL,KZN
+subdivision_codes,1007311,1007311,Durban,Durban,South Africa,South Africa,ZA,ZA,NL,KZN
+subdivision_codes,1013675,1013675,Chatsworth,Chatsworth,South Africa,South Africa,ZA,ZA,NL,KZN
+subdivision_codes,11204927,11204927,Rabie Ridge,Rabie Ridge,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,8063414,8063414,Bedford Gardens,Bedford Gardens,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,1023441,1023441,Alberton,Alberton,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,993800,993800,Johannesburg,Johannesburg,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,8030071,8030071,Moreleta Park,Moreleta Park,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,1006834,1006834,Edenvale,Edenvale,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,1018242,1018242,Blythedale Beach,Blythedale Beach,South Africa,South Africa,ZA,ZA,NL,KZN
+subdivision_codes,988886,988886,Kloof,Kloof,South Africa,South Africa,ZA,ZA,NL,KZN
+subdivision_codes,993800,993800,Johannesburg,Johannesburg,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,991415,991415,Kempton Park,Kempton Park,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,993800,993800,Johannesburg,Johannesburg,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,1017780,1017780,Boksburg,Boksburg,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,986822,986822,Krugersdorp,Krugersdorp,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,938749,938749,Witpoortjie,Witpoortjie,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,991415,991415,Kempton Park,Kempton Park,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,1006834,1006834,Edenvale,Edenvale,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,1022953,1022953,eManzimtoti,eManzimtoti,South Africa,South Africa,ZA,ZA,NL,KZN
+subdivision_codes,1105777,1105777,Centurion,Centurion,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,993800,993800,Johannesburg,Johannesburg,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,965446,965446,Phoenix,Phoenix,South Africa,South Africa,ZA,ZA,NL,KZN
+subdivision_codes,1005040,1005040,Eshowe,Eshowe,South Africa,South Africa,ZA,ZA,NL,KZN
+subdivision_codes,980220,980220,Maidstone,Maidstone,South Africa,South Africa,ZA,ZA,NL,KZN
+subdivision_codes,976764,976764,Meyerton,Meyerton,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,965301,965301,Pietermaritzburg,Pietermaritzburg,South Africa,South Africa,ZA,ZA,NL,KZN
+subdivision_codes,1007367,1007367,Dunnottar,Dunnottar,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,993800,993800,Johannesburg,Johannesburg,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,1007311,1007311,Durban,Durban,South Africa,South Africa,ZA,ZA,NL,KZN
+subdivision_codes,1005544,1005544,Empangeni,Empangeni,South Africa,South Africa,ZA,ZA,NL,KZN
+subdivision_codes,946103,946103,Umlazi,Umlazi,South Africa,South Africa,ZA,ZA,NL,KZN
+subdivision_codes,786239,786239,Rosoman,Rosoman,North Macedonia,North Macedonia,MK,MK,67,107
+subdivision_codes,993800,993800,Johannesburg,Johannesburg,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,6692734,6692734,Pennington,Pennington,South Africa,South Africa,ZA,ZA,NL,KZN
+subdivision_codes,8030226,8030226,Dainfern,Dainfern,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,998210,998210,Halfway House,Halfway House,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,949049,949049,Three Rivers,Three Rivers,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,952734,952734,KwaDukuza,KwaDukuza,South Africa,South Africa,ZA,ZA,NL,KZN
+subdivision_codes,8063767,8063767,Mooikloof,Mooikloof,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,964137,964137,Pretoria,Pretoria,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,8063466,8063466,South Hills,South Hills,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,7871262,7871262,Sunninghill,Sunninghill,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,8030238,8030238,Weltevreedenpark,Weltevreedenpark,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,1001496,1001496,Glenvista,Glenvista,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,979692,979692,Malvern,Malvern,South Africa,South Africa,ZA,ZA,NL,KZN
+subdivision_codes,11288154,11288154,Newlands West,Newlands West,South Africa,South Africa,ZA,ZA,NL,KZN
+subdivision_codes,946165,946165,Umhlanga,Umhlanga,South Africa,South Africa,ZA,ZA,NL,KZN
+subdivision_codes,11126125,11126125,Rietvalleirand,Rietvalleirand,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,970133,970133,Nongoma,Nongoma,South Africa,South Africa,ZA,ZA,NL,KZN
+subdivision_codes,1105777,1105777,Centurion,Centurion,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,993800,993800,Johannesburg,Johannesburg,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,1017780,1017780,Boksburg,Boksburg,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,1012585,1012585,Craighall,Craighall,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,991632,991632,Katlehong,Katlehong,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,784205,784205,Vratnica,Vratnica,North Macedonia,North Macedonia,MK,MK,35,606
+subdivision_codes,1015504,1015504,Bronkhorstspruit,Bronkhorstspruit,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,995202,995202,Howick,Howick,South Africa,South Africa,ZA,ZA,NL,KZN
+subdivision_codes,7306537,7306537,Kloofendal,Kloofendal,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,787574,787574,Novo Selo,Novo Selo,North Macedonia,North Macedonia,MK,MK,56,408
+subdivision_codes,1105776,1105776,Midrand,Midrand,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,961921,961921,Rietfontein,Rietfontein,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,7870447,7870447,Mondeor,Mondeor,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,1016181,1016181,Brakpan,Brakpan,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,985484,985484,KwaNdlovu,KwaNdlovu,South Africa,South Africa,ZA,ZA,NL,KZN
+subdivision_codes,6693196,6693196,Umhlali,Umhlali,South Africa,South Africa,ZA,ZA,NL,KZN
+subdivision_codes,956162,956162,Sharpeville,Sharpeville,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,1085594,1085594,,,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,7290485,7290485,Paulshof,Paulshof,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,11467692,11467692,Ezakheni,Ezakheni,South Africa,South Africa,ZA,ZA,NL,KZN
+subdivision_codes,785825,785825,Skudrinje,Skudrinje,North Macedonia,North Macedonia,MK,MK,50,607
+subdivision_codes,993800,993800,Johannesburg,Johannesburg,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,1015504,1015504,Bronkhorstspruit,Bronkhorstspruit,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,986822,986822,Krugersdorp,Krugersdorp,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,11203990,11203990,Glenhazel,Glenhazel,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,11204811,11204811,Bloubosrand,Bloubosrand,South Africa,South Africa,ZA,ZA,GT,GP
+subdivision_codes,985218,985218,KwaThema,KwaThema,South Africa,South Africa,ZA,ZA,GT,GP

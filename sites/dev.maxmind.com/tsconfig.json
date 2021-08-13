@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "esModuleInterop": true,
+    "typeRoots": [
+      "../../packages/gatsby-theme-maxmind/src/types",
+      "./node_modules/@types"
+    ]
+  },
+  "exclude": [
+    "node_modules",
+  ],
+  "extends": "../../tsconfig.json",
+  "include": [
+    "./src/**/*"
+  ]
+}

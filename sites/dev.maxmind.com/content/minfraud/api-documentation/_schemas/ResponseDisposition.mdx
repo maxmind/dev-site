@@ -1,0 +1,79 @@
+import responseJson from '../_examples/response';
+
+<MinFraudSchema
+  json={responseJson.disposition}
+  jsonPointer="/disposition"
+  name="Response | Disposition"
+  services="*"
+>
+  This object contains information about how a request was handled by the
+  [custom rules](https://www.maxmind.com/en/solutions/minfraud-services/custom-rules)
+  you have defined. If your account does not have any custom rules defined, then
+  this object will not be present in the response.
+
+  <Property
+    name="action"
+    tags={{
+      'Enum': null,
+    }}
+  >
+    This describes how the request was handled. The valid values are:
+
+    <table>
+      <thead>
+        <tr>
+          <th>Action</th>
+          <th>Explanation</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>`accept`</td>
+          <td>
+            This is the default value that is used if none your custom rules
+            match the request.
+          </td>
+        </tr>
+        <tr>
+          <td>`reject`</td>
+          <td>{' '}</td>
+        </tr>
+        <tr>
+          <td>`manual_review`</td>
+          <td>{' '}</td>
+        </tr>
+      </tbody>
+    </table>
+  </Property>
+
+  <Property
+    name="reason"
+    tags={{
+      'Enum': null,
+    }}
+  >
+    This describes why the `action` was set to a particular value. The valid
+    values are:
+
+    <table>
+      <thead>
+        <tr>
+          <th>Reason</th>
+          <th>Explanation</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>`default`</td>
+          <td>
+            No custom rules matched the request.
+          </td>
+        </tr>
+        <tr>
+          <td>`custom_rule`</td>
+          <td>A custom rule was applied and set the action.</td>
+        </tr>
+      </tbody>
+    </table>
+  </Property>
+</MinFraudSchema>

@@ -1,0 +1,14 @@
+import responseJson from '../_examples/geoip';
+
+<GeoIpSchema
+  json={responseJson.subdivisions}
+  jsonPointer="/subdivisions"
+  name="Response | Subdivisions"
+  services={[
+    'city',
+    'insights',
+  ]}
+>
+  An array of [subdivision](#schema--response--subdivision) JSON objects.
+  Subdivisions are arranged from largest to smallest.
+</GeoIpSchema>

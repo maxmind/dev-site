@@ -1,0 +1,26 @@
+import responseJson from '../_examples/response';
+
+<MinFraudSchema
+  json={responseJson.email.domain}
+  jsonPointer="/email/domain"
+  name="Response | Email | Domain"
+  service={[
+    'insights',
+    'factors',
+  ]}
+>
+  This is a sub-object of `email` that contains information related to the
+  domain.
+
+  <Property
+    name="first_seen"
+    tags={{
+      'Format': 'YYYY-MM-DD',
+      'Max Length': 10,
+    }}
+  >
+    A date string (e.g. 2019-01-01) to identify the date an email address
+    domain was first seen by MaxMind. This is expressed using the ISO 8601 date
+    format `YYYY-MM-DD`. The earliest date that may be returned is January 1, 2019.
+  </Property>
+</MinFraudSchema>

@@ -1,0 +1,38 @@
+import requestJson from '../_examples/request';
+
+<MinFraudSchema
+  json={requestJson.email}
+  jsonPointer="/email"
+  name="Request | Email"
+  services="*"
+>
+  This object contains information about the email address of the end-user
+  who initiated the event.
+
+  <Property
+    name="address"
+    tags={{
+      'Max Length': 255,
+      'Type': 'Email or MD5 of Email'
+    }}
+  >
+    This field must be either be a valid email address or an MD5 of the email
+    used in the transaction.
+
+    <Alert type="warning">
+      If using the MD5 hash, please be sure to
+      [normalize it](/minfraud/normalizing-email-addresses-for-minfraud)
+      before calculating its MD5 hash.
+    </Alert>
+  </Property>
+
+  <Property
+    name="domain"
+    tags={{
+      'Max Length': 255,
+    }}
+  >
+    The domain of the email address used in the transaction. Do not include the
+    `@` in this field.
+  </Property>
+</MinFraudSchema>

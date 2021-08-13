@@ -1,0 +1,78 @@
+diff_in,old_geoname_id,new_geoname_id,old_city_name,new_city_name,old_country_name,new_country_name,old_country_code,new_country_code,old_subdivision_codes,new_subdivision_codes
+city_name,3347019,3347019,Namibe,Mossamedes,Angola,Angola,AO,AO,NAM,NAM
+city_name,1336137,1336137,Barisal,Barishal,Bangladesh,Bangladesh,BD,BD,"A, 06","A, 06"
+city_name,2424548,2424548,Toukoura,Toukra,Chad,Chad,TD,TD,CB,CB
+city_name,3671328,3671328,Puerto Salgar,Salgar,Colombia,Colombia,CO,CO,ATL,ATL
+city_name,3072675,3072675,Krizova,Krucemburk,Czechia,Czechia,CZ,CZ,"63, 631","63, 631"
+city_name,2977616,2977616,Saint-Pere,Saint-Pere-Marc-en-Poulet,France,France,FR,FR,"BRE, 35","BRE, 35"
+city_name,2864820,2864820,Neu Isenburg,Neu-Isenburg,Germany,Germany,DE,DE,HE,HE
+city_name,2803620,2803620,Two Bridges,Zweibrücken,Germany,Germany,DE,DE,RP,RP
+city_name,2925181,2925181,Freiburg,Freiburg/Elbe,Germany,Germany,DE,DE,NI,NI
+city_name,1257890,1257890,Sadaseopet,Sadashivpet,India,India,IN,IN,TG,TG
+city_name,96994,96994,Dahuk,Duhok,Iraq,Iraq,IQ,IQ,DA,DA
+city_name,295459,295459,Bet Hananya,Beit Hananya,Israel,Israel,IL,IL,HA,HA
+city_name,3181917,3181917,Lake Bolsena,Bolsena,Italy,Italy,IT,IT,"62, VT","62, VT"
+city_name,6232212,6232212,ONEHUNGA,Onehunga,New Zealand,New Zealand,NZ,NZ,AUK,AUK
+city_name,6232255,6232255,MOUNT ALBERT,Mount Albert,New Zealand,New Zealand,NZ,NZ,AUK,AUK
+city_name,6232009,6232009,OTAHUHU,Otahuhu,New Zealand,New Zealand,NZ,NZ,AUK,AUK
+city_name,6232238,6232238,MOUNT ROSKILL,Mount Roskill,New Zealand,New Zealand,NZ,NZ,AUK,AUK
+city_name,6232064,6232064,MANUREWA,Manurewa,New Zealand,New Zealand,NZ,NZ,AUK,AUK
+city_name,3162798,3162798,Aas,As,Norway,Norway,NO,NO,38,38
+city_name,1168544,1168544,Palandri,Pallandri,Pakistan,Pakistan,PK,PK,JK,JK
+city_name,1182637,1182637,Bhimbar,Bhimber,Pakistan,Pakistan,PK,PK,JK,JK
+city_name,1486209,1486209,Ekaterinburg,Yekaterinburg,Russia,Russia,RU,RU,SVE,SVE
+city_name,3057916,3057916,"Radvan nad Dunajom,Slovakia",Radvan nad Dunajom,Slovakia,Slovakia,SK,SK,NI,NI
+city_name,3059865,3059865,"Hrochot,Slovakia",Hrochot,Slovakia,Slovakia,SK,SK,BC,BC
+city_name,2516372,2516372,"Xeraco,Jaraco",Xeraco,Spain,Spain,ES,ES,"VC, V","VC, V"
+city_name,687972,687972,Zabolot',Zabolot,Ukraine,Ukraine,UA,UA,18,18
+city_name,712656,712656,Bila Krynytsya,Bila Krynytsia,Ukraine,Ukraine,UA,UA,18,18
+city_name,701023,701023,Myropil',Myropil,Ukraine,Ukraine,UA,UA,18,18
+city_name,713478,713478,Andriyevychi,Andriievychi,Ukraine,Ukraine,UA,UA,18,18
+city_name,688154,688154,Yemil'chyne,Yemilchyne,Ukraine,Ukraine,UA,UA,18,18
+city_name,697615,697615,Pershotravens'k,Pershotravensk,Ukraine,Ukraine,UA,UA,18,18
+city_name,696602,696602,Polyanka,Polianka,Ukraine,Ukraine,UA,UA,18,18
+city_name,688410,688410,Yarun',Yarun,Ukraine,Ukraine,UA,UA,18,18
+city_name,698597,698597,Olevs'k,Olevsk,Ukraine,Ukraine,UA,UA,18,18
+city_name,689249,689249,Volytsya,Volytsia,Ukraine,Ukraine,UA,UA,46,46
+city_name,4170965,4170965,Saint Cloud,St. Cloud,United States,United States,US,US,FL,FL
+city_name,80384,80384,Ad Dali`,Dhale,Yemen,Yemen,YE,YE,DA,DA
+geoname_id,3465808,3465807,Conceicao,Conceicao,Brazil,Brazil,BR,BR,MG,MG
+geoname_id,3408974,3405651,Boa Hora,Boa Hora,Brazil,Brazil,BR,BR,MA,MA
+geoname_id,3396601,6317419,Lago da Pedra,Lago da Pedra,Brazil,Brazil,BR,BR,MA,MA
+geoname_id,8602146,6318838,Uruara,Uruara,Brazil,Brazil,BR,BR,PA,PA
+geoname_id,3460687,3460686,Itapitanga,Itapitanga,Brazil,Brazil,BR,BR,BA,BA
+geoname_id,3458582,3458574,Limeira,Limeira,Brazil,Brazil,BR,BR,MS,MS
+geoname_id,3469328,3469331,Bonfim,Bonfim,Brazil,Brazil,BR,BR,MG,MG
+geoname_id,3398137,3398136,Ipiranga,Ipiranga,Brazil,Brazil,BR,BR,RN,RN
+geoname_id,7566537,3464411,Duas Barras,Duas Barras,Brazil,Brazil,BR,BR,RJ,RJ
+geoname_id,8556306,6048424,Lakehurst,Lakehurst,Canada,Canada,CA,CA,ON,ON
+geoname_id,6824331,10037279,Qilin,Qilin,China,China,CN,CN,YN,YN
+geoname_id,7843689,8383090,Gongnong,Gongnong,China,China,CN,CN,JS,JS
+geoname_id,1812902,7640413,Dianxia,Dianxia,China,China,CN,CN,FJ,FJ
+geoname_id,1916510,11182083,Chengnan,Chengnan,China,China,CN,CN,ZJ,ZJ
+geoname_id,1921604,1800820,Meishan,Meishan,China,China,CN,CN,FJ,FJ
+geoname_id,3667816,11885795,Sopetran,Sopetran,Colombia,Colombia,CO,CO,ANT,ANT
+geoname_id,11952697,146708,Agios Nikolaos,Agios Nikolaos,Cyprus,Cyprus,CY,CY,4,4
+geoname_id,7522467,7522295,,,Estonia,Estonia,EE,EE,65,65
+geoname_id,6615078,3010911,La Bouexiere,La Bouexiere,France,France,FR,FR,"BRE, 35","BRE, 35"
+geoname_id,2917803,2917804,Greifenberg,Greifenberg,Germany,Germany,DE,DE,BY,BY
+geoname_id,3606254,3606257,Las Vegas,Las Vegas,Honduras,Honduras,HN,HN,LE,LE
+geoname_id,1266834,1266833,Khatu,Khatu,India,India,IN,IN,RJ,RJ
+geoname_id,11725558,1255396,Supaul,Supaul,India,India,IN,IN,BR,BR
+geoname_id,11082110,11087179,Kawashimacho,Kawashimacho,Japan,Japan,JP,JP,14,14
+geoname_id,10862573,10862402,Nogawa,Nogawa,Japan,Japan,JP,JP,14,14
+geoname_id,1862045,1862047,,,Japan,Japan,JP,JP,28,28
+geoname_id,435165,435203,Ksara,Ksara,Lebanon,Lebanon,LB,LB,JA,JA
+geoname_id,11562754,11562663,El Mirador,El Mirador,Mexico,Mexico,MX,MX,CMX,CMX
+geoname_id,11562163,11562389,Lomas de Santa Fe,Lomas de Santa Fe,Mexico,Mexico,MX,MX,CMX,CMX
+geoname_id,1729041,1728890,Bagumbayan,Bagumbayan,Philippines,Philippines,PH,PH,"40, RIZ","40, RIZ"
+geoname_id,3104152,3104151,Aleksandrow,Aleksandrow,Poland,Poland,PL,PL,24,24
+geoname_id,2741894,2741892,Cabanelas,Cabanelas,Portugal,Portugal,PT,PT,3,3
+geoname_id,1843128,6363751,Gangseo-gu,Gangseo-gu,South Korea,South Korea,KR,KR,11,11
+geoname_id,6697035,2513296,Navas de San Juan,Navas de San Juan,Spain,Spain,ES,ES,"AN, J","AN, J"
+geoname_id,2516616,2516617,Hornos,Hornos,Spain,Spain,ES,ES,"AN, J","AN, J"
+geoname_id,7534754,2511062,Sant Jordi,Sant Jordi,Spain,Spain,ES,ES,"IB, PM","IB, PM"
+geoname_id,2726519,2726517,Alno,Alno,Sweden,Sweden,SE,SE,Y,Y
+geoname_id,9285690,1617331,Ban Kruat,Ban Kruat,Thailand,Thailand,TH,TH,31,31
+subdivision_codes,3203099,3203099,Bugojno,Bugojno,Bosnia and Herzegovina,Bosnia and Herzegovina,BA,BA,BIH,"BIH, 06"
+subdivision_codes,12070742,12070742,Fallingbrook,Fallingbrook,Canada,Canada,CA,CA,PE,ON

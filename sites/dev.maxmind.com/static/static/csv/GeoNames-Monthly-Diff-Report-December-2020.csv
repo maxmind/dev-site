@@ -1,0 +1,1614 @@
+diff_in,old_geoname_id,new_geoname_id,old_city_name,new_city_name,old_country_name,new_country_name,old_country_code,new_country_code,old_subdivision_codes,new_subdivision_codes
+city_name,2007847,2007847,Xiangyun,Xiangyuncun,China,China,CN,CN,FJ,FJ
+city_name,2008016,2008016,Bangshang,Bangshangcun,China,China,CN,CN,FJ,FJ
+city_name,1800820,1800820,Meishan,Meishancun,China,China,CN,CN,FJ,FJ
+city_name,360923,360923,Al Kharijah,Al Kharjah,Egypt,Egypt,EG,EG,WAD,WAD
+city_name,2827988,2827988,Steinheim am der Murr,Steinheim an der Murr,Germany,Germany,DE,DE,BW,BW
+city_name,295709,295709,`Alumim,Alumim,Israel,Israel,IL,IL,D,D
+city_name,293542,293542,She'ar Yashuv,She’ar Yashuv,Israel,Israel,IL,IL,Z,Z
+city_name,616196,616196,Staryy Dobrotvir,Staryi Dobrotvir,Ukraine,Ukraine,UA,UA,46,46
+city_name,5546220,5546220,Saint George,St. George,United States,United States,US,US,UT,UT
+country_name,250336,250336,Ar Ramtha,Ar Ramtha,Hashemite Kingdom of Jordan,Jordan,JO,JO,IR,IR
+country_name,249184,249184,Hatim,Hatim,Hashemite Kingdom of Jordan,Jordan,JO,JO,IR,IR
+country_name,250718,250718,Al Fuhays,Al Fuhays,Hashemite Kingdom of Jordan,Jordan,JO,JO,BA,BA
+country_name,248816,248816,,,Hashemite Kingdom of Jordan,Jordan,JO,JO,,
+country_name,11048880,11048880,Sweimeh,Sweimeh,Hashemite Kingdom of Jordan,Jordan,JO,JO,BA,BA
+country_name,250441,250441,Amman,Amman,Hashemite Kingdom of Jordan,Jordan,JO,JO,AM,AM
+country_name,248946,248946,Irbid,Irbid,Hashemite Kingdom of Jordan,Jordan,JO,JO,IR,IR
+country_name,247105,247105,Sahab,Sahab,Hashemite Kingdom of Jordan,Jordan,JO,JO,AM,AM
+country_name,250258,250258,Salt,Salt,Hashemite Kingdom of Jordan,Jordan,JO,JO,BA,BA
+country_name,248875,248875,Jerash,Jerash,Hashemite Kingdom of Jordan,Jordan,JO,JO,JA,JA
+country_name,250625,250625,,,Hashemite Kingdom of Jordan,Jordan,JO,JO,KA,KA
+country_name,250094,250094,Muthallath al Azraq,Muthallath al Azraq,Hashemite Kingdom of Jordan,Jordan,JO,JO,AZ,AZ
+country_name,250774,250774,Aqaba,Aqaba,Hashemite Kingdom of Jordan,Jordan,JO,JO,AQ,AQ
+country_name,250582,250582,Mafraq,Mafraq,Hashemite Kingdom of Jordan,Jordan,JO,JO,MA,MA
+country_name,248174,248174,Marka,Marka,Hashemite Kingdom of Jordan,Jordan,JO,JO,AM,AM
+country_name,250090,250090,Zarqa,Zarqa,Hashemite Kingdom of Jordan,Jordan,JO,JO,AZ,AZ
+country_name,6946409,6946409,Karak,Karak,Hashemite Kingdom of Jordan,Jordan,JO,JO,KA,KA
+country_name,10131667,10131667,Al Katrah,Al Katrah,Hashemite Kingdom of Jordan,Jordan,JO,JO,AJ,AJ
+country_name,250267,250267,As Safi,As Safi,Hashemite Kingdom of Jordan,Jordan,JO,JO,KA,KA
+country_name,246008,246008,Petra,Petra,Hashemite Kingdom of Jordan,Jordan,JO,JO,MN,MN
+country_name,250198,250198,At Tafilah,At Tafilah,Hashemite Kingdom of Jordan,Jordan,JO,JO,AT,AT
+country_name,10862121,10862121,Al `Abdalli,Al `Abdalli,Hashemite Kingdom of Jordan,Jordan,JO,JO,AM,AM
+country_name,248370,248370,Madaba,Madaba,Hashemite Kingdom of Jordan,Jordan,JO,JO,MD,MD
+country_name,250751,250751,,,Hashemite Kingdom of Jordan,Jordan,JO,JO,BA,BA
+country_name,247068,247068,Sakib,Sakib,Hashemite Kingdom of Jordan,Jordan,JO,JO,JA,JA
+country_name,250731,250731,Al Burj,Al Burj,Hashemite Kingdom of Jordan,Jordan,JO,JO,AQ,AQ
+country_name,11254061,11254061,Dabuq,Dabuq,Hashemite Kingdom of Jordan,Jordan,JO,JO,AM,AM
+country_name,250799,250799,Adjlun,Adjlun,Hashemite Kingdom of Jordan,Jordan,JO,JO,AJ,AJ
+country_name,247340,247340,Raymun,Raymun,Hashemite Kingdom of Jordan,Jordan,JO,JO,JA,JA
+country_name,249842,249842,Busayra,Busayra,Hashemite Kingdom of Jordan,Jordan,JO,JO,AT,AT
+country_name,250290,250290,Ash Shawbak,Ash Shawbak,Hashemite Kingdom of Jordan,Jordan,JO,JO,MN,MN
+country_name,596473,596473,Pabradė,Pabradė,Republic of Lithuania,Lithuania,LT,LT,VL,VL
+country_name,597199,597199,Matuizos,Matuizos,Republic of Lithuania,Lithuania,LT,LT,"AL, 55","AL, 55"
+country_name,598005,598005,Kražiai,Kražiai,Republic of Lithuania,Lithuania,LT,LT,"SA, 19","SA, 19"
+country_name,596195,596195,Paliuniskis,Paliuniskis,Republic of Lithuania,Lithuania,LT,LT,"PN, 32","PN, 32"
+country_name,594894,594894,Šaukėnai,Šaukėnai,Republic of Lithuania,Lithuania,LT,LT,"SA, 19","SA, 19"
+country_name,593362,593362,Vasilenai,Vasilenai,Republic of Lithuania,Lithuania,LT,LT,"SA, 19","SA, 19"
+country_name,11298637,11298637,Apusotas,Apusotas,Republic of Lithuania,Lithuania,LT,LT,"PN, 06","PN, 06"
+country_name,592817,592817,Zemale,Zemale,Republic of Lithuania,Lithuania,LT,LT,"TE, 26","TE, 26"
+country_name,593116,593116,Vilnius,Vilnius,Republic of Lithuania,Lithuania,LT,LT,"VL, 58","VL, 58"
+country_name,592991,592991,Vydmantai,Vydmantai,Republic of Lithuania,Lithuania,LT,LT,"TE, 51","TE, 51"
+country_name,7117229,7117229,Linksmakalnis,Linksmakalnis,Republic of Lithuania,Lithuania,LT,LT,KU,KU
+country_name,597838,597838,Kumzaiciai,Kumzaiciai,Republic of Lithuania,Lithuania,LT,LT,"TE, 35","TE, 35"
+country_name,598315,598315,Kaunatava,Kaunatava,Republic of Lithuania,Lithuania,LT,LT,"TE, 51","TE, 51"
+country_name,593269,593269,Verstaminai,Verstaminai,Republic of Lithuania,Lithuania,LT,LT,"AL, 24","AL, 24"
+country_name,596987,596987,Mikoliskis,Mikoliskis,Republic of Lithuania,Lithuania,LT,LT,"PN, 34","PN, 34"
+country_name,597664,597664,Lapes,Lapes,Republic of Lithuania,Lithuania,LT,LT,"KU, 15","KU, 15"
+country_name,599420,599420,Gelgaudiškis,Gelgaudiškis,Republic of Lithuania,Lithuania,LT,LT,"MR, 41","MR, 41"
+country_name,600780,600780,Bagotoji,Bagotoji,Republic of Lithuania,Lithuania,LT,LT,"MR, 17","MR, 17"
+country_name,597420,597420,Liuciunai,Liuciunai,Republic of Lithuania,Lithuania,LT,LT,"KU, 15","KU, 15"
+country_name,594867,594867,Seda,Seda,Republic of Lithuania,Lithuania,LT,LT,"TE, 26","TE, 26"
+country_name,598769,598769,Jucaiciai,Jucaiciai,Republic of Lithuania,Lithuania,LT,LT,"TE, 39","TE, 39"
+country_name,9972461,9972461,Valciunai,Valciunai,Republic of Lithuania,Lithuania,LT,LT,VL,VL
+country_name,598796,598796,Joniškis,Joniškis,Republic of Lithuania,Lithuania,LT,LT,"SA, 11","SA, 11"
+country_name,599233,599233,Godeliai,Godeliai,Republic of Lithuania,Lithuania,LT,LT,"TE, 51","TE, 51"
+country_name,598786,598786,Jotainiai,Jotainiai,Republic of Lithuania,Lithuania,LT,LT,"PN, 32","PN, 32"
+country_name,595742,595742,Piniava,Piniava,Republic of Lithuania,Lithuania,LT,LT,"PN, 32","PN, 32"
+country_name,601239,601239,Abromiskes,Abromiskes,Republic of Lithuania,Lithuania,LT,LT,"VL, 08","VL, 08"
+country_name,593406,593406,Varena,Varena,Republic of Lithuania,Lithuania,LT,LT,"AL, 55","AL, 55"
+country_name,601197,601197,Akademija,Akademija,Republic of Lithuania,Lithuania,LT,LT,"KU, 18","KU, 18"
+country_name,593291,593291,Verbunai,Verbunai,Republic of Lithuania,Lithuania,LT,LT,"SA, 43","SA, 43"
+country_name,11295657,11295657,Bulveniskis,Bulveniskis,Republic of Lithuania,Lithuania,LT,LT,"PN, 40","PN, 40"
+country_name,597904,597904,Kudirkos Naumiestis,Kudirkos Naumiestis,Republic of Lithuania,Lithuania,LT,LT,"MR, 41","MR, 41"
+country_name,593508,593508,Vainotiskiai,Vainotiskiai,Republic of Lithuania,Lithuania,LT,LT,"KU, 18","KU, 18"
+country_name,593084,593084,Virbaliskiai,Virbaliskiai,Republic of Lithuania,Lithuania,LT,LT,"KU, 15","KU, 15"
+country_name,11297674,11297674,Mikulionys,Mikulionys,Republic of Lithuania,Lithuania,LT,LT,"VL, 57","VL, 57"
+country_name,593175,593175,Vilainiai,Vilainiai,Republic of Lithuania,Lithuania,LT,LT,"KU, 18","KU, 18"
+country_name,593803,593803,Tryskiai,Tryskiai,Republic of Lithuania,Lithuania,LT,LT,"TE, 51","TE, 51"
+country_name,598378,598378,Kartena,Kartena,Republic of Lithuania,Lithuania,LT,LT,"KL, 22","KL, 22"
+country_name,601069,601069,Anciskiai,Anciskiai,Republic of Lithuania,Lithuania,LT,LT,"PN, 06","PN, 06"
+country_name,598656,598656,Jurbarkai,Jurbarkai,Republic of Lithuania,Lithuania,LT,LT,"TA, 12","TA, 12"
+country_name,594656,594656,Šilutė,Šilutė,Republic of Lithuania,Lithuania,LT,LT,KL,KL
+country_name,598515,598515,Kaltanėnai,Kaltanėnai,Republic of Lithuania,Lithuania,LT,LT,"VL, 49","VL, 49"
+country_name,599889,599889,Didžiasalis,Didžiasalis,Republic of Lithuania,Lithuania,LT,LT,"UT, 09","UT, 09"
+country_name,597231,597231,Marijampolė,Marijampolė,Republic of Lithuania,Lithuania,LT,LT,"MR, 25","MR, 25"
+country_name,593666,593666,Utriai,Utriai,Republic of Lithuania,Lithuania,LT,LT,"KL, 20","KL, 20"
+country_name,598655,598655,Jurbarkas,Jurbarkas,Republic of Lithuania,Lithuania,LT,LT,"TA, 12","TA, 12"
+country_name,594083,594083,Suzionys,Suzionys,Republic of Lithuania,Lithuania,LT,LT,"VL, 57","VL, 57"
+country_name,596128,596128,Panevezys,Panevezys,Republic of Lithuania,Lithuania,LT,LT,"PN, 32","PN, 32"
+country_name,595356,595356,Raudondvaris,Raudondvaris,Republic of Lithuania,Lithuania,LT,LT,"KU, 15","KU, 15"
+country_name,593017,593017,Vosbutai,Vosbutai,Republic of Lithuania,Lithuania,LT,LT,"TA, 12","TA, 12"
+country_name,598316,598316,Kaunas,Kaunas,Republic of Lithuania,Lithuania,LT,LT,"KU, 16","KU, 16"
+country_name,595029,595029,Sakyna,Sakyna,Republic of Lithuania,Lithuania,LT,LT,"SA, 43","SA, 43"
+country_name,593705,593705,Upninkai,Upninkai,Republic of Lithuania,Lithuania,LT,LT,"KU, 10","KU, 10"
+country_name,595436,595436,Raguva,Raguva,Republic of Lithuania,Lithuania,LT,LT,"PN, 32","PN, 32"
+country_name,594749,594749,Siauduva,Siauduva,Republic of Lithuania,Lithuania,LT,LT,"TA, 45","TA, 45"
+country_name,594052,594052,Sventininkai,Sventininkai,Republic of Lithuania,Lithuania,LT,LT,"VL, 52","VL, 52"
+country_name,599208,599208,Grajauskai,Grajauskai,Republic of Lithuania,Lithuania,LT,LT,"MR, 56","MR, 56"
+country_name,597855,597855,Kulva,Kulva,Republic of Lithuania,Lithuania,LT,LT,"KU, 10","KU, 10"
+country_name,600078,600078,Darbenai,Darbenai,Republic of Lithuania,Lithuania,LT,LT,"KL, 22","KL, 22"
+country_name,599504,599504,Garliava,Garliava,Republic of Lithuania,Lithuania,LT,LT,"KU, 15","KU, 15"
+country_name,598385,598385,Karsakiskis,Karsakiskis,Republic of Lithuania,Lithuania,LT,LT,"PN, 32","PN, 32"
+country_name,595770,595770,Piktakonys,Piktakonys,Republic of Lithuania,Lithuania,LT,LT,"VL, 57","VL, 57"
+country_name,595213,595213,Rokiškis,Rokiškis,Republic of Lithuania,Lithuania,LT,LT,"PN, 40","PN, 40"
+country_name,601105,601105,Alsedziai,Alsedziai,Republic of Lithuania,Lithuania,LT,LT,"TE, 35","TE, 35"
+country_name,596851,596851,Mosedis,Mosedis,Republic of Lithuania,Lithuania,LT,LT,"KL, 48","KL, 48"
+country_name,595393,595393,Ramuciai,Ramuciai,Republic of Lithuania,Lithuania,LT,LT,"KU, 15","KU, 15"
+country_name,600497,600497,Berzininkai,Berzininkai,Republic of Lithuania,Lithuania,LT,LT,"SA, 11","SA, 11"
+country_name,599123,599123,Gruzdiske,Gruzdiske,Republic of Lithuania,Lithuania,LT,LT,"KU, 38","KU, 38"
+country_name,593728,593728,Uliūnai,Uliūnai,Republic of Lithuania,Lithuania,LT,LT,"PN, 32","PN, 32"
+country_name,601227,601227,Adomiskis,Adomiskis,Republic of Lithuania,Lithuania,LT,LT,,
+country_name,594221,594221,Strakiskes,Strakiskes,Republic of Lithuania,Lithuania,LT,LT,"VL, 52","VL, 52"
+country_name,596238,596238,Palanga,Palanga,Republic of Lithuania,Lithuania,LT,LT,"KL, 21","KL, 21"
+country_name,599687,599687,Duseikiai,Duseikiai,Republic of Lithuania,Lithuania,LT,LT,"TE, 51","TE, 51"
+country_name,597568,597568,Leipalingis,Leipalingis,Republic of Lithuania,Lithuania,LT,LT,,
+country_name,601231,601231,Adomaiciai,Adomaiciai,Republic of Lithuania,Lithuania,LT,LT,"VL, 57","VL, 57"
+country_name,594165,594165,Sudvajai,Sudvajai,Republic of Lithuania,Lithuania,LT,LT,"AL, 02","AL, 02"
+country_name,598763,598763,Judrėnai,Judrėnai,Republic of Lithuania,Lithuania,LT,LT,"KL, 20","KL, 20"
+country_name,597232,597232,Marijampolis,Marijampolis,Republic of Lithuania,Lithuania,LT,LT,"VL, 57","VL, 57"
+country_name,598257,598257,Kelmė,Kelmė,Republic of Lithuania,Lithuania,LT,LT,"SA, 19","SA, 19"
+country_name,595020,595020,Salantai,Salantai,Republic of Lithuania,Lithuania,LT,LT,"KL, 22","KL, 22"
+country_name,597427,597427,,,Republic of Lithuania,Lithuania,LT,LT,,
+country_name,595664,595664,Poderiskiai,Poderiskiai,Republic of Lithuania,Lithuania,LT,LT,"KU, 15","KU, 15"
+country_name,598910,598910,Janapole,Janapole,Republic of Lithuania,Lithuania,LT,LT,"TE, 51","TE, 51"
+country_name,596612,596612,Nida,Nida,Republic of Lithuania,Lithuania,LT,LT,"KL, 28","KL, 28"
+country_name,600638,600638,Bariunai,Bariunai,Republic of Lithuania,Lithuania,LT,LT,"SA, 11","SA, 11"
+country_name,596960,596960,Milasaiciai,Milasaiciai,Republic of Lithuania,Lithuania,LT,LT,"TE, 35","TE, 35"
+country_name,593672,593672,Utena,Utena,Republic of Lithuania,Lithuania,LT,LT,"UT, 54","UT, 54"
+country_name,599757,599757,Druskininkai,Druskininkai,Republic of Lithuania,Lithuania,LT,LT,"AL, 07","AL, 07"
+country_name,600363,600363,Bubiai,Bubiai,Republic of Lithuania,Lithuania,LT,LT,"KU, 15","KU, 15"
+country_name,599579,599579,Ežerėlis,Ežerėlis,Republic of Lithuania,Lithuania,LT,LT,"KU, 15","KU, 15"
+country_name,594488,594488,Skuodas,Skuodas,Republic of Lithuania,Lithuania,LT,LT,"KL, 48","KL, 48"
+country_name,593558,593558,Vadakteliai,Vadakteliai,Republic of Lithuania,Lithuania,LT,LT,"PN, 32","PN, 32"
+country_name,597550,597550,Lėnas,Lėnas,Republic of Lithuania,Lithuania,LT,LT,"VL, 53","VL, 53"
+country_name,600226,600226,Butkunai,Butkunai,Republic of Lithuania,Lithuania,LT,LT,"KU, 15","KU, 15"
+country_name,601182,601182,Akmene,Akmene,Republic of Lithuania,Lithuania,LT,LT,"SA, 01","SA, 01"
+country_name,11289278,11289278,Ketvergiai,Ketvergiai,Republic of Lithuania,Lithuania,LT,LT,"KL, 20","KL, 20"
+country_name,598572,598572,Kairiai,Kairiai,Republic of Lithuania,Lithuania,LT,LT,"SA, 43","SA, 43"
+country_name,596634,596634,Netoniai,Netoniai,Republic of Lithuania,Lithuania,LT,LT,"KU, 15","KU, 15"
+country_name,594179,594179,Stungiai,Stungiai,Republic of Lithuania,Lithuania,LT,LT,"SA, 11","SA, 11"
+country_name,593378,593378,Varniai,Varniai,Republic of Lithuania,Lithuania,LT,LT,"TE, 51","TE, 51"
+country_name,597769,597769,Kuršėnai,Kuršėnai,Republic of Lithuania,Lithuania,LT,LT,"SA, 43","SA, 43"
+country_name,597646,597646,Lauciai,Lauciai,Republic of Lithuania,Lithuania,LT,LT,"KL, 46","KL, 46"
+country_name,597440,597440,Linkuva,Linkuva,Republic of Lithuania,Lithuania,LT,LT,"SA, 30","SA, 30"
+country_name,600536,600536,Berciunai,Berciunai,Republic of Lithuania,Lithuania,LT,LT,"PN, 32","PN, 32"
+country_name,599219,599219,Gotlybiskiai,Gotlybiskiai,Republic of Lithuania,Lithuania,LT,LT,"MR, 41","MR, 41"
+country_name,595026,595026,Salakas,Salakas,Republic of Lithuania,Lithuania,LT,LT,"UT, 60","UT, 60"
+country_name,593086,593086,Virbalis,Virbalis,Republic of Lithuania,Lithuania,LT,LT,"MR, 56","MR, 56"
+country_name,593892,593892,Titoniai,Titoniai,Republic of Lithuania,Lithuania,LT,LT,"SA, 30","SA, 30"
+country_name,598818,598818,Jonava,Jonava,Republic of Lithuania,Lithuania,LT,LT,KU,KU
+country_name,594126,594126,Šumskas,Šumskas,Republic of Lithuania,Lithuania,LT,LT,"VL, 57","VL, 57"
+country_name,597618,597618,Laukuva,Laukuva,Republic of Lithuania,Lithuania,LT,LT,"TA, 45","TA, 45"
+country_name,594585,594585,Skaidiskes,Skaidiskes,Republic of Lithuania,Lithuania,LT,LT,"VL, 57","VL, 57"
+country_name,593965,593965,Taujenai,Taujenai,Republic of Lithuania,Lithuania,LT,LT,"KU, 18","KU, 18"
+country_name,593926,593926,Telšiai,Telšiai,Republic of Lithuania,Lithuania,LT,LT,"TE, 51","TE, 51"
+country_name,595468,595468,Rabikiai II,Rabikiai II,Republic of Lithuania,Lithuania,LT,LT,,
+country_name,599141,599141,Gripiskes,Gripiskes,Republic of Lithuania,Lithuania,LT,LT,"KU, 36","KU, 36"
+country_name,594739,594739,Šiauliai,Šiauliai,Republic of Lithuania,Lithuania,LT,LT,"SA, 44","SA, 44"
+country_name,593476,593476,Vaivadai,Vaivadai,Republic of Lithuania,Lithuania,LT,LT,,
+country_name,595127,595127,Rukainiai,Rukainiai,Republic of Lithuania,Lithuania,LT,LT,"VL, 57","VL, 57"
+country_name,11298304,11298304,Migunai,Migunai,Republic of Lithuania,Lithuania,LT,LT,"VL, 57","VL, 57"
+country_name,599150,599150,Grimzdai,Grimzdai,Republic of Lithuania,Lithuania,LT,LT,"TA, 45","TA, 45"
+country_name,599596,599596,Endriejavas,Endriejavas,Republic of Lithuania,Lithuania,LT,LT,KL,KL
+country_name,596713,596713,Naujoji Vilnia,Naujoji Vilnia,Republic of Lithuania,Lithuania,LT,LT,,
+country_name,596629,596629,Nevarenai,Nevarenai,Republic of Lithuania,Lithuania,LT,LT,"TE, 51","TE, 51"
+country_name,593730,593730,Ukrinai,Ukrinai,Republic of Lithuania,Lithuania,LT,LT,"TE, 26","TE, 26"
+country_name,595196,595196,Rozalimas,Rozalimas,Republic of Lithuania,Lithuania,LT,LT,"SA, 30","SA, 30"
+country_name,594848,594848,Seirijai,Seirijai,Republic of Lithuania,Lithuania,LT,LT,"AL, 24","AL, 24"
+country_name,598599,598599,Kačerginė,Kačerginė,Republic of Lithuania,Lithuania,LT,LT,"KU, 15","KU, 15"
+country_name,597936,597936,Kruonis,Kruonis,Republic of Lithuania,Lithuania,LT,LT,"KU, 13","KU, 13"
+country_name,596750,596750,Naujasis Obelynas,Naujasis Obelynas,Republic of Lithuania,Lithuania,LT,LT,"TA, 45","TA, 45"
+country_name,599686,599686,Dusetos,Dusetos,Republic of Lithuania,Lithuania,LT,LT,"UT, 60","UT, 60"
+country_name,594814,594814,Senieji Trakai,Senieji Trakai,Republic of Lithuania,Lithuania,LT,LT,"VL, 52","VL, 52"
+country_name,594639,594639,Simnas,Simnas,Republic of Lithuania,Lithuania,LT,LT,"AL, 02","AL, 02"
+country_name,599614,599614,Eišiškės,Eišiškės,Republic of Lithuania,Lithuania,LT,LT,"VL, 42","VL, 42"
+country_name,11307091,11307091,Elzbietiskis,Elzbietiskis,Republic of Lithuania,Lithuania,LT,LT,"KU, 36","KU, 36"
+country_name,599075,599075,Gudgaliai,Gudgaliai,Republic of Lithuania,Lithuania,LT,LT,,
+country_name,594537,594537,Skirsnemunė,Skirsnemunė,Republic of Lithuania,Lithuania,LT,LT,"TA, 12","TA, 12"
+country_name,598399,598399,Karkliniai,Karkliniai,Republic of Lithuania,Lithuania,LT,LT,"MR, 56","MR, 56"
+country_name,597875,597875,Kuliai,Kuliai,Republic of Lithuania,Lithuania,LT,LT,"TE, 35","TE, 35"
+country_name,600994,600994,Anykščiai,Anykščiai,Republic of Lithuania,Lithuania,LT,LT,"UT, 04","UT, 04"
+country_name,595997,595997,Pasvalys,Pasvalys,Republic of Lithuania,Lithuania,LT,LT,PN,PN
+country_name,593959,593959,Tauragė,Tauragė,Republic of Lithuania,Lithuania,LT,LT,TA,TA
+country_name,598690,598690,Juodupė,Juodupė,Republic of Lithuania,Lithuania,LT,LT,"PN, 40","PN, 40"
+country_name,596804,596804,Naisiai,Naisiai,Republic of Lithuania,Lithuania,LT,LT,"SA, 43","SA, 43"
+country_name,598098,598098,Klaipėda,Klaipėda,Republic of Lithuania,Lithuania,LT,LT,"KL, 21","KL, 21"
+country_name,594607,594607,Širvintos,Širvintos,Republic of Lithuania,Lithuania,LT,LT,"VL, 47","VL, 47"
+country_name,596867,596867,Molėtai,Molėtai,Republic of Lithuania,Lithuania,LT,LT,"UT, 27","UT, 27"
+country_name,601084,601084,Alytus,Alytus,Republic of Lithuania,Lithuania,LT,LT,"AL, 03","AL, 03"
+country_name,598657,598657,Juragiai,Juragiai,Republic of Lithuania,Lithuania,LT,LT,"KU, 15","KU, 15"
+country_name,598836,598836,Jokūbavas,Jokūbavas,Republic of Lithuania,Lithuania,LT,LT,"KL, 22","KL, 22"
+country_name,598998,598998,Ignalina,Ignalina,Republic of Lithuania,Lithuania,LT,LT,"UT, 09","UT, 09"
+country_name,11296945,11296945,Nevainionys,Nevainionys,Republic of Lithuania,Lithuania,LT,LT,"VL, 42","VL, 42"
+country_name,599591,599591,Eriskiai,Eriskiai,Republic of Lithuania,Lithuania,LT,LT,"PN, 32","PN, 32"
+country_name,593191,593191,Vievis,Vievis,Republic of Lithuania,Lithuania,LT,LT,"VL, 57","VL, 57"
+country_name,594795,594795,Seredzius,Seredzius,Republic of Lithuania,Lithuania,LT,LT,"TA, 12","TA, 12"
+country_name,598616,598616,Juskonys,Juskonys,Republic of Lithuania,Lithuania,LT,LT,"KU, 10","KU, 10"
+country_name,596315,596315,Pakalniskes,Pakalniskes,Republic of Lithuania,Lithuania,LT,LT,"VL, 08","VL, 08"
+country_name,600065,600065,Dargužiai,Dargužiai,Republic of Lithuania,Lithuania,LT,LT,"AL, 55","AL, 55"
+country_name,11309254,11309254,Jiezno Kolonijos,Jiezno Kolonijos,Republic of Lithuania,Lithuania,LT,LT,"KU, 36","KU, 36"
+country_name,600716,600716,Balkasodis,Balkasodis,Republic of Lithuania,Lithuania,LT,LT,"AL, 02","AL, 02"
+country_name,11301776,11301776,Bataiciai,Bataiciai,Republic of Lithuania,Lithuania,LT,LT,"TE, 26","TE, 26"
+country_name,11300768,11300768,Rastinenai,Rastinenai,Republic of Lithuania,Lithuania,LT,LT,"VL, 57","VL, 57"
+country_name,594898,594898,Sauginiai,Sauginiai,Republic of Lithuania,Lithuania,LT,LT,"SA, 43","SA, 43"
+country_name,598887,598887,Jašiūnai,Jašiūnai,Republic of Lithuania,Lithuania,LT,LT,"VL, 42","VL, 42"
+country_name,596627,596627,Neveronys,Neveronys,Republic of Lithuania,Lithuania,LT,LT,"KU, 15","KU, 15"
+country_name,594741,594741,Siauliai,Siauliai,Republic of Lithuania,Lithuania,LT,LT,"VL, 47","VL, 47"
+country_name,595087,595087,Rusnė,Rusnė,Republic of Lithuania,Lithuania,LT,LT,"KL, 46","KL, 46"
+country_name,593871,593871,Trakai,Trakai,Republic of Lithuania,Lithuania,LT,LT,VL,VL
+country_name,597989,597989,Kretinga,Kretinga,Republic of Lithuania,Lithuania,LT,LT,"KL, 22","KL, 22"
+country_name,599815,599815,Domeikava,Domeikava,Republic of Lithuania,Lithuania,LT,LT,"KU, 15","KU, 15"
+country_name,601116,601116,Alksniupiai,Alksniupiai,Republic of Lithuania,Lithuania,LT,LT,"SA, 37","SA, 37"
+country_name,597208,597208,Mastaiciai,Mastaiciai,Republic of Lithuania,Lithuania,LT,LT,MR,MR
+country_name,11304962,11304962,Svetlica,Svetlica,Republic of Lithuania,Lithuania,LT,LT,"MR, 25","MR, 25"
+country_name,600840,600840,Avizieniai,Avizieniai,Republic of Lithuania,Lithuania,LT,LT,"VL, 57","VL, 57"
+country_name,597070,597070,Merkinė,Merkinė,Republic of Lithuania,Lithuania,LT,LT,"AL, 55","AL, 55"
+country_name,595152,595152,Rūdninkai,Rūdninkai,Republic of Lithuania,Lithuania,LT,LT,"VL, 42","VL, 42"
+country_name,599161,599161,Grigiškės,Grigiškės,Republic of Lithuania,Lithuania,LT,LT,"VL, 58","VL, 58"
+country_name,598035,598035,Kolainiai,Kolainiai,Republic of Lithuania,Lithuania,LT,LT,"SA, 19","SA, 19"
+country_name,11289372,11289372,Grambaviskiai,Grambaviskiai,Republic of Lithuania,Lithuania,LT,LT,"KL, 20","KL, 20"
+country_name,595016,595016,Šalčininkai,Šalčininkai,Republic of Lithuania,Lithuania,LT,LT,"VL, 42","VL, 42"
+country_name,597729,597729,Kybartai,Kybartai,Republic of Lithuania,Lithuania,LT,LT,MR,MR
+country_name,596102,596102,Papile,Papile,Republic of Lithuania,Lithuania,LT,LT,"SA, 01","SA, 01"
+country_name,593733,593733,Ukmerge,Ukmerge,Republic of Lithuania,Lithuania,LT,LT,VL,VL
+country_name,596544,596544,Obeliai,Obeliai,Republic of Lithuania,Lithuania,LT,LT,"PN, 40","PN, 40"
+country_name,594591,594591,Siupyliai,Siupyliai,Republic of Lithuania,Lithuania,LT,LT,"SA, 43","SA, 43"
+country_name,596664,596664,Nemenčinė,Nemenčinė,Republic of Lithuania,Lithuania,LT,LT,"VL, 57","VL, 57"
+country_name,597356,597356,Luokė,Luokė,Republic of Lithuania,Lithuania,LT,LT,"TE, 51","TE, 51"
+country_name,598512,598512,Kalvarija,Kalvarija,Republic of Lithuania,Lithuania,LT,LT,"MR, 14","MR, 14"
+country_name,597881,597881,Kulautuva,Kulautuva,Republic of Lithuania,Lithuania,LT,LT,"KU, 15","KU, 15"
+country_name,600765,600765,Baisogala,Baisogala,Republic of Lithuania,Lithuania,LT,LT,"SA, 37","SA, 37"
+country_name,598787,598787,Josvainiai,Josvainiai,Republic of Lithuania,Lithuania,LT,LT,"KU, 18","KU, 18"
+country_name,598854,598854,Jieznas,Jieznas,Republic of Lithuania,Lithuania,LT,LT,"KU, 36","KU, 36"
+country_name,598519,598519,Kalote,Kalote,Republic of Lithuania,Lithuania,LT,LT,KL,KL
+country_name,593396,593396,Varkaliai,Varkaliai,Republic of Lithuania,Lithuania,LT,LT,"TE, 35","TE, 35"
+country_name,598226,598226,Kernavė,Kernavė,Republic of Lithuania,Lithuania,LT,LT,"VL, 47","VL, 47"
+country_name,597189,597189,Mazeikiai,Mazeikiai,Republic of Lithuania,Lithuania,LT,LT,"SA, 43","SA, 43"
+country_name,597320,597320,Maciuiciai,Maciuiciai,Republic of Lithuania,Lithuania,LT,LT,"KL, 20","KL, 20"
+country_name,599271,599271,Girkalnis,Girkalnis,Republic of Lithuania,Lithuania,LT,LT,"KU, 38","KU, 38"
+country_name,864512,864512,,,Republic of Lithuania,Lithuania,LT,LT,"TE, 26","TE, 26"
+country_name,599310,599310,Gintaliske,Gintaliske,Republic of Lithuania,Lithuania,LT,LT,"TE, 35","TE, 35"
+country_name,599142,599142,Grinkiškis,Grinkiškis,Republic of Lithuania,Lithuania,LT,LT,"SA, 37","SA, 37"
+country_name,600438,600438,Biržai,Biržai,Republic of Lithuania,Lithuania,LT,LT,"PN, 06","PN, 06"
+country_name,595449,595449,Radviliškis,Radviliškis,Republic of Lithuania,Lithuania,LT,LT,SA,SA
+country_name,598286,598286,Kazlų Rūda,Kazlų Rūda,Republic of Lithuania,Lithuania,LT,LT,"MR, 17","MR, 17"
+country_name,598567,598567,Kaišiadorys,Kaišiadorys,Republic of Lithuania,Lithuania,LT,LT,"KU, 13","KU, 13"
+country_name,600443,600443,Birštonas,Birštonas,Republic of Lithuania,Lithuania,LT,LT,"KU, 05","KU, 05"
+country_name,595556,595556,Pumpėnai,Pumpėnai,Republic of Lithuania,Lithuania,LT,LT,"PN, 34","PN, 34"
+country_name,600018,600018,Dauglaukis,Dauglaukis,Republic of Lithuania,Lithuania,LT,LT,"TA, 50","TA, 50"
+country_name,592872,592872,Žasliai,Žasliai,Republic of Lithuania,Lithuania,LT,LT,"KU, 13","KU, 13"
+country_name,599140,599140,Griškabūdis,Griškabūdis,Republic of Lithuania,Lithuania,LT,LT,"MR, 41","MR, 41"
+country_name,593063,593063,Visaginas,Visaginas,Republic of Lithuania,Lithuania,LT,LT,"UT, 59","UT, 59"
+country_name,593767,593767,Tverai,Tverai,Republic of Lithuania,Lithuania,LT,LT,"TE, 39","TE, 39"
+country_name,600295,600295,Buivydiskes,Buivydiskes,Republic of Lithuania,Lithuania,LT,LT,"VL, 57","VL, 57"
+country_name,599725,599725,Dūkštos,Dūkštos,Republic of Lithuania,Lithuania,LT,LT,"VL, 57","VL, 57"
+country_name,596656,596656,Nemunėlio Radviliškis,Nemunėlio Radviliškis,Republic of Lithuania,Lithuania,LT,LT,"PN, 06","PN, 06"
+country_name,597933,597933,Kruopiai,Kruopiai,Republic of Lithuania,Lithuania,LT,LT,"SA, 01","SA, 01"
+country_name,11398421,11398421,Naujasis Lentvaris,Naujasis Lentvaris,Republic of Lithuania,Lithuania,LT,LT,"VL, 52","VL, 52"
+country_name,597743,597743,Kužiai,Kužiai,Republic of Lithuania,Lithuania,LT,LT,"SA, 43","SA, 43"
+country_name,11289032,11289032,Truseliai,Truseliai,Republic of Lithuania,Lithuania,LT,LT,"KL, 20","KL, 20"
+country_name,11300737,11300737,Grikieniai,Grikieniai,Republic of Lithuania,Lithuania,LT,LT,"VL, 57","VL, 57"
+country_name,596439,596439,Bazilionai,Bazilionai,Republic of Lithuania,Lithuania,LT,LT,"SA, 43","SA, 43"
+country_name,593226,593226,Vidukle,Vidukle,Republic of Lithuania,Lithuania,LT,LT,"KU, 38","KU, 38"
+country_name,598911,598911,Jakutiskiai,Jakutiskiai,Republic of Lithuania,Lithuania,LT,LT,"VL, 53","VL, 53"
+country_name,597740,597740,Kveciai,Kveciai,Republic of Lithuania,Lithuania,LT,LT,"KL, 22","KL, 22"
+country_name,596630,596630,Nevardenai,Nevardenai,Republic of Lithuania,Lithuania,LT,LT,"TE, 51","TE, 51"
+country_name,597300,597300,Maišiagala,Maišiagala,Republic of Lithuania,Lithuania,LT,LT,"VL, 57","VL, 57"
+country_name,595553,595553,Punia,Punia,Republic of Lithuania,Lithuania,LT,LT,"AL, 02","AL, 02"
+country_name,592819,592819,Zemaitkiemis,Zemaitkiemis,Republic of Lithuania,Lithuania,LT,LT,"VL, 53","VL, 53"
+country_name,595368,595368,Raubonys,Raubonys,Republic of Lithuania,Lithuania,LT,LT,"PN, 34","PN, 34"
+country_name,599298,599298,Giraite,Giraite,Republic of Lithuania,Lithuania,LT,LT,"AL, 55","AL, 55"
+country_name,598730,598730,Juodbudis,Juodbudis,Republic of Lithuania,Lithuania,LT,LT,"KU, 36","KU, 36"
+country_name,600596,600596,Barvydziai,Barvydziai,Republic of Lithuania,Lithuania,LT,LT,"TE, 51","TE, 51"
+country_name,597709,597709,Laborai,Laborai,Republic of Lithuania,Lithuania,LT,LT,"SA, 30","SA, 30"
+country_name,596661,596661,Nemezis,Nemezis,Republic of Lithuania,Lithuania,LT,LT,"VL, 57","VL, 57"
+country_name,864441,864441,Radikiai,Radikiai,Republic of Lithuania,Lithuania,LT,LT,"SA, 11","SA, 11"
+country_name,599602,599602,Elektrėnai,Elektrėnai,Republic of Lithuania,Lithuania,LT,LT,VL,VL
+country_name,598541,598541,Kalnijos,Kalnijos,Republic of Lithuania,Lithuania,LT,LT,TE,TE
+country_name,593222,593222,Vieciunai,Vieciunai,Republic of Lithuania,Lithuania,LT,LT,"AL, 02","AL, 02"
+country_name,600442,600442,Birstoniskiai,Birstoniskiai,Republic of Lithuania,Lithuania,LT,LT,"TA, 29","TA, 29"
+country_name,595752,595752,Pilsupiai,Pilsupiai,Republic of Lithuania,Lithuania,LT,LT,"KU, 18","KU, 18"
+country_name,595125,595125,Rukla,Rukla,Republic of Lithuania,Lithuania,LT,LT,"KU, 10","KU, 10"
+country_name,595759,595759,Pilialaukis,Pilialaukis,Republic of Lithuania,Lithuania,LT,LT,"VL, 52","VL, 52"
+country_name,864485,864485,,,Republic of Lithuania,Lithuania,LT,LT,VL,VL
+country_name,599803,599803,Dovainonys,Dovainonys,Republic of Lithuania,Lithuania,LT,LT,"KU, 13","KU, 13"
+country_name,596452,596452,Padovinys,Padovinys,Republic of Lithuania,Lithuania,LT,LT,"MR, 25","MR, 25"
+country_name,592942,592942,Zagare,Zagare,Republic of Lithuania,Lithuania,LT,LT,"SA, 11","SA, 11"
+country_name,599808,599808,Dotnuva,Dotnuva,Republic of Lithuania,Lithuania,LT,LT,"KU, 18","KU, 18"
+country_name,593748,593748,Tytuvenai,Tytuvenai,Republic of Lithuania,Lithuania,LT,LT,"SA, 19","SA, 19"
+country_name,592778,592778,Žiežmariai,Žiežmariai,Republic of Lithuania,Lithuania,LT,LT,"KU, 13","KU, 13"
+country_name,593338,593338,Veisiejai,Veisiejai,Republic of Lithuania,Lithuania,LT,LT,"AL, 24","AL, 24"
+country_name,595799,595799,Pjauliai,Pjauliai,Republic of Lithuania,Lithuania,LT,LT,"KL, 20","KL, 20"
+country_name,595541,595541,Puoke,Puoke,Republic of Lithuania,Lithuania,LT,LT,"KL, 48","KL, 48"
+country_name,11296128,11296128,Auleliai,Auleliai,Republic of Lithuania,Lithuania,LT,LT,"UT, 04","UT, 04"
+country_name,597436,597436,Lioliai,Lioliai,Republic of Lithuania,Lithuania,LT,LT,"SA, 19","SA, 19"
+country_name,600480,600480,Bezdonys,Bezdonys,Republic of Lithuania,Lithuania,LT,LT,"VL, 57","VL, 57"
+country_name,595746,595746,Pilviškiai,Pilviškiai,Republic of Lithuania,Lithuania,LT,LT,"MR, 56","MR, 56"
+country_name,592850,592850,Zeimelis,Zeimelis,Republic of Lithuania,Lithuania,LT,LT,"SA, 30","SA, 30"
+country_name,599628,599628,Eigirdziai,Eigirdziai,Republic of Lithuania,Lithuania,LT,LT,"TE, 51","TE, 51"
+country_name,592893,592893,Zapyškis,Zapyškis,Republic of Lithuania,Lithuania,LT,LT,"KU, 15","KU, 15"
+country_name,594305,594305,Stakiai,Stakiai,Republic of Lithuania,Lithuania,LT,LT,"TA, 12","TA, 12"
+country_name,598272,598272,Kėdainiai,Kėdainiai,Republic of Lithuania,Lithuania,LT,LT,"KU, 18","KU, 18"
+country_name,601152,601152,Alejai I,Alejai I,Republic of Lithuania,Lithuania,LT,LT,"KU, 38","KU, 38"
+country_name,597188,597188,Mažeikiai,Mažeikiai,Republic of Lithuania,Lithuania,LT,LT,TE,TE
+country_name,593585,593585,Užusaliai,Užusaliai,Republic of Lithuania,Lithuania,LT,LT,"KU, 10","KU, 10"
+country_name,595598,595598,Priekulė,Priekulė,Republic of Lithuania,Lithuania,LT,LT,"KL, 20","KL, 20"
+country_name,599338,599338,Giluciai,Giluciai,Republic of Lithuania,Lithuania,LT,LT,"VL, 08","VL, 08"
+country_name,599506,599506,Gargždai,Gargždai,Republic of Lithuania,Lithuania,LT,LT,"KL, 20","KL, 20"
+country_name,596144,596144,Pandėlys,Pandėlys,Republic of Lithuania,Lithuania,LT,LT,,
+country_name,597065,597065,Meskalaukis,Meskalaukis,Republic of Lithuania,Lithuania,LT,LT,"PN, 34","PN, 34"
+country_name,593315,593315,Velzys,Velzys,Republic of Lithuania,Lithuania,LT,LT,"PN, 32","PN, 32"
+country_name,594103,594103,Surviliškis,Surviliškis,Republic of Lithuania,Lithuania,LT,LT,"KU, 18","KU, 18"
+country_name,11310352,11310352,Kurpalaukis,Kurpalaukis,Republic of Lithuania,Lithuania,LT,LT,"PN, 34","PN, 34"
+country_name,596719,596719,Naujoji Akmenė,Naujoji Akmenė,Republic of Lithuania,Lithuania,LT,LT,"SA, 01","SA, 01"
+country_name,593153,593153,Vilkaviškis,Vilkaviškis,Republic of Lithuania,Lithuania,LT,LT,"MR, 56","MR, 56"
+country_name,599510,599510,Gardamas,Gardamas,Republic of Lithuania,Lithuania,LT,LT,"KL, 46","KL, 46"
+country_name,600688,600688,Baltoji Voke,Baltoji Voke,Republic of Lithuania,Lithuania,LT,LT,"VL, 57","VL, 57"
+country_name,600459,600459,Bilioniai,Bilioniai,Republic of Lithuania,Lithuania,LT,LT,"TA, 45","TA, 45"
+country_name,864470,864470,Aleksandravas,Aleksandravas,Republic of Lithuania,Lithuania,LT,LT,"SA, 11","SA, 11"
+country_name,600539,600539,Bendoriai,Bendoriai,Republic of Lithuania,Lithuania,LT,LT,"VL, 57","VL, 57"
+country_name,598509,598509,Kalveliai,Kalveliai,Republic of Lithuania,Lithuania,LT,LT,"VL, 57","VL, 57"
+country_name,597195,597195,Mauruciai,Mauruciai,Republic of Lithuania,Lithuania,LT,LT,"KU, 36","KU, 36"
+country_name,592992,592992,Vydeniai,Vydeniai,Republic of Lithuania,Lithuania,LT,LT,"AL, 55","AL, 55"
+country_name,594861,594861,Šeduva,Šeduva,Republic of Lithuania,Lithuania,LT,LT,"SA, 37","SA, 37"
+country_name,599122,599122,Gruzdziai,Gruzdziai,Republic of Lithuania,Lithuania,LT,LT,"SA, 43","SA, 43"
+country_name,594767,594767,Šėta,Šėta,Republic of Lithuania,Lithuania,LT,LT,"KU, 18","KU, 18"
+country_name,596328,596328,Pajuralis,Pajuralis,Republic of Lithuania,Lithuania,LT,LT,"TA, 45","TA, 45"
+country_name,594067,594067,Švenčionėliai,Švenčionėliai,Republic of Lithuania,Lithuania,LT,LT,"VL, 49","VL, 49"
+country_name,592828,592828,Žemaičių Naumiestis,Žemaičių Naumiestis,Republic of Lithuania,Lithuania,LT,LT,"KL, 46","KL, 46"
+country_name,595044,595044,Šakiai,Šakiai,Republic of Lithuania,Lithuania,LT,LT,"MR, 41","MR, 41"
+country_name,594744,594744,Šiaulėnai,Šiaulėnai,Republic of Lithuania,Lithuania,LT,LT,"SA, 37","SA, 37"
+country_name,595160,595160,Rūdiškės,Rūdiškės,Republic of Lithuania,Lithuania,LT,LT,"VL, 52","VL, 52"
+country_name,593697,593697,Upytė,Upytė,Republic of Lithuania,Lithuania,LT,LT,"PN, 33","PN, 33"
+country_name,595041,595041,Sakiai,Sakiai,Republic of Lithuania,Lithuania,LT,LT,"UT, 27","UT, 27"
+country_name,598103,598103,Kivyliai,Kivyliai,Republic of Lithuania,Lithuania,LT,LT,"SA, 01","SA, 01"
+country_name,594169,594169,Sudargas,Sudargas,Republic of Lithuania,Lithuania,LT,LT,"MR, 41","MR, 41"
+country_name,599094,599094,Gudeliai,Gudeliai,Republic of Lithuania,Lithuania,LT,LT,"AL, 24","AL, 24"
+country_name,597761,597761,Kurtuvenai,Kurtuvenai,Republic of Lithuania,Lithuania,LT,LT,"SA, 43","SA, 43"
+country_name,599887,599887,Didziasalis,Didziasalis,Republic of Lithuania,Lithuania,LT,LT,"UT, 09","UT, 09"
+country_name,595267,595267,Rimšė,Rimšė,Republic of Lithuania,Lithuania,LT,LT,"UT, 09","UT, 09"
+country_name,597687,597687,Laizuva,Laizuva,Republic of Lithuania,Lithuania,LT,LT,,
+country_name,596691,596691,Nausodis,Nausodis,Republic of Lithuania,Lithuania,LT,LT,"TE, 35","TE, 35"
+country_name,595378,595378,Raseiniai,Raseiniai,Republic of Lithuania,Lithuania,LT,LT,"KU, 38","KU, 38"
+country_name,596349,596349,Pajstrys,Pajstrys,Republic of Lithuania,Lithuania,LT,LT,"PN, 32","PN, 32"
+country_name,597078,597078,Mergalaukis,Mergalaukis,Republic of Lithuania,Lithuania,LT,LT,"AL, 02","AL, 02"
+country_name,599326,599326,Ginduliai,Ginduliai,Republic of Lithuania,Lithuania,LT,LT,"KL, 20","KL, 20"
+country_name,11300709,11300709,Vosyliukai,Vosyliukai,Republic of Lithuania,Lithuania,LT,LT,"VL, 52","VL, 52"
+country_name,598731,598731,Juodbaliai,Juodbaliai,Republic of Lithuania,Lithuania,LT,LT,"VL, 57","VL, 57"
+country_name,594351,594351,Spaigiai,Spaigiai,Republic of Lithuania,Lithuania,LT,LT,"SA, 01","SA, 01"
+country_name,600110,600110,Dainava,Dainava,Republic of Lithuania,Lithuania,LT,LT,"VL, 57","VL, 57"
+country_name,595880,595880,Pelednagiai,Pelednagiai,Republic of Lithuania,Lithuania,LT,LT,"KU, 18","KU, 18"
+country_name,596669,596669,Nemakščiai,Nemakščiai,Republic of Lithuania,Lithuania,LT,LT,"KU, 38","KU, 38"
+country_name,594429,594429,Smalininkai,Smalininkai,Republic of Lithuania,Lithuania,LT,LT,"TA, 12","TA, 12"
+country_name,600736,600736,Balbieriškis,Balbieriškis,Republic of Lithuania,Lithuania,LT,LT,"KU, 36","KU, 36"
+country_name,597596,597596,Lazdijai,Lazdijai,Republic of Lithuania,Lithuania,LT,LT,"AL, 24","AL, 24"
+country_name,592891,592891,Zarasai,Zarasai,Republic of Lithuania,Lithuania,LT,LT,"UT, 60","UT, 60"
+country_name,595596,595596,Prienai,Prienai,Republic of Lithuania,Lithuania,LT,LT,"KU, 36","KU, 36"
+country_name,595689,595689,Plungė,Plungė,Republic of Lithuania,Lithuania,LT,LT,TE,TE
+country_name,593336,593336,Veiveriai,Veiveriai,Republic of Lithuania,Lithuania,LT,LT,"KU, 36","KU, 36"
+country_name,598291,598291,Kazitiškis,Kazitiškis,Republic of Lithuania,Lithuania,LT,LT,"UT, 09","UT, 09"
+country_name,597806,597806,Kupiškis,Kupiškis,Republic of Lithuania,Lithuania,LT,LT,"PN, 23","PN, 23"
+country_name,594390,594390,Snaukstai,Snaukstai,Republic of Lithuania,Lithuania,LT,LT,"KL, 20","KL, 20"
+country_name,599999,599999,Daukšiai,Daukšiai,Republic of Lithuania,Lithuania,LT,LT,"MR, 25","MR, 25"
+country_name,596399,596399,Pagėgiai,Pagėgiai,Republic of Lithuania,Lithuania,LT,LT,"TA, 29","TA, 29"
+country_name,599935,599935,Deltuva,Deltuva,Republic of Lithuania,Lithuania,LT,LT,"VL, 53","VL, 53"
+country_name,600040,600040,Daugai,Daugai,Republic of Lithuania,Lithuania,LT,LT,"AL, 02","AL, 02"
+country_name,600962,600962,Ariogala,Ariogala,Republic of Lithuania,Lithuania,LT,LT,"KU, 38","KU, 38"
+country_name,598137,598137,Kirdonys,Kirdonys,Republic of Lithuania,Lithuania,LT,LT,"PN, 06","PN, 06"
+country_name,593632,593632,Uzliedziai,Uzliedziai,Republic of Lithuania,Lithuania,LT,LT,"KU, 15","KU, 15"
+country_name,600059,600059,Darsūniškis,Darsūniškis,Republic of Lithuania,Lithuania,LT,LT,"KU, 13","KU, 13"
+country_name,864394,864394,Jurgaiciai,Jurgaiciai,Republic of Lithuania,Lithuania,LT,LT,"SA, 43","SA, 43"
+country_name,11304606,11304606,Dabikine,Dabikine,Republic of Lithuania,Lithuania,LT,LT,"SA, 01","SA, 01"
+country_name,600592,600592,Barzdai,Barzdai,Republic of Lithuania,Lithuania,LT,LT,"MR, 41","MR, 41"
+country_name,11300866,11300866,Vaira,Vaira,Republic of Lithuania,Lithuania,LT,LT,"VL, 57","VL, 57"
+country_name,601042,601042,Antakalnis,Antakalnis,Republic of Lithuania,Lithuania,LT,LT,"KU, 36","KU, 36"
+country_name,596260,596260,Pakruojis,Pakruojis,Republic of Lithuania,Lithuania,LT,LT,"SA, 30","SA, 30"
+country_name,595287,595287,Riese,Riese,Republic of Lithuania,Lithuania,LT,LT,VL,VL
+country_name,597532,597532,Lentvaris,Lentvaris,Republic of Lithuania,Lithuania,LT,LT,"VL, 52","VL, 52"
+country_name,599204,599204,Gratiskes,Gratiskes,Republic of Lithuania,Lithuania,LT,LT,"VL, 52","VL, 52"
+country_name,594358,594358,Salovarte,Salovarte,Republic of Lithuania,Lithuania,LT,LT,"AL, 55","AL, 55"
+country_name,11300735,11300735,Klevinai,Klevinai,Republic of Lithuania,Lithuania,LT,LT,"VL, 57","VL, 57"
+country_name,597706,597706,Labūnava,Labūnava,Republic of Lithuania,Lithuania,LT,LT,"KU, 18","KU, 18"
+country_name,599619,599619,Einoraiciai,Einoraiciai,Republic of Lithuania,Lithuania,LT,LT,"SA, 43","SA, 43"
+country_name,596344,596344,Pajevonys,Pajevonys,Republic of Lithuania,Lithuania,LT,LT,"MR, 56","MR, 56"
+country_name,595284,595284,Rietavas,Rietavas,Republic of Lithuania,Lithuania,LT,LT,"TE, 39","TE, 39"
+country_name,595174,595174,Rudamina,Rudamina,Republic of Lithuania,Lithuania,LT,LT,"VL, 57","VL, 57"
+country_name,594577,594577,Skaistgirys,Skaistgirys,Republic of Lithuania,Lithuania,LT,LT,"SA, 11","SA, 11"
+country_name,11303373,11303373,Antabudis,Antabudis,Republic of Lithuania,Lithuania,LT,LT,"MR, 41","MR, 41"
+country_name,598899,598899,Jankunai,Jankunai,Republic of Lithuania,Lithuania,LT,LT,"SA, 37","SA, 37"
+country_name,599168,599168,Grigaiciai,Grigaiciai,Republic of Lithuania,Lithuania,LT,LT,"VL, 57","VL, 57"
+country_name,11297602,11297602,Uzuezere,Uzuezere,Republic of Lithuania,Lithuania,LT,LT,"VL, 57","VL, 57"
+country_name,599314,599314,Ginkunai,Ginkunai,Republic of Lithuania,Lithuania,LT,LT,"SA, 43","SA, 43"
+country_name,594072,594072,Švėkšna,Švėkšna,Republic of Lithuania,Lithuania,LT,LT,"KL, 46","KL, 46"
+country_name,601089,601089,Alvitas,Alvitas,Republic of Lithuania,Lithuania,LT,LT,"MR, 56","MR, 56"
+country_name,598578,598578,Kairenai,Kairenai,Republic of Lithuania,Lithuania,LT,LT,"SA, 37","SA, 37"
+country_name,593572,593572,Užventis,Užventis,Republic of Lithuania,Lithuania,LT,LT,"SA, 19","SA, 19"
+country_name,597274,597274,Maneikiai,Maneikiai,Republic of Lithuania,Lithuania,LT,LT,"SA, 19","SA, 19"
+country_name,598392,598392,Karmėlava,Karmėlava,Republic of Lithuania,Lithuania,LT,LT,"KU, 15","KU, 15"
+country_name,599800,599800,Dovilai,Dovilai,Republic of Lithuania,Lithuania,LT,LT,"KL, 20","KL, 20"
+country_name,592961,592961,Ylakiai,Ylakiai,Republic of Lithuania,Lithuania,LT,LT,"KL, 48","KL, 48"
+country_name,599058,599058,Gujenai,Gujenai,Republic of Lithuania,Lithuania,LT,LT,"SA, 37","SA, 37"
+country_name,593254,593254,Vėžaičiai,Vėžaičiai,Republic of Lithuania,Lithuania,LT,LT,"KL, 20","KL, 20"
+country_name,594563,594563,Skaudvilė,Skaudvilė,Republic of Lithuania,Lithuania,LT,LT,"TA, 50","TA, 50"
+country_name,597738,597738,Kvėdarna,Kvėdarna,Republic of Lithuania,Lithuania,LT,LT,"TA, 45","TA, 45"
+country_name,594772,594772,Šešuoliai,Šešuoliai,Republic of Lithuania,Lithuania,LT,LT,"VL, 53","VL, 53"
+country_name,595227,595227,Rockiai,Rockiai,Republic of Lithuania,Lithuania,LT,LT,"AL, 24","AL, 24"
+country_name,599527,599527,Galgiai,Galgiai,Republic of Lithuania,Lithuania,LT,LT,"VL, 57","VL, 57"
+country_name,597373,597373,Lukšiai,Lukšiai,Republic of Lithuania,Lithuania,LT,LT,"MR, 41","MR, 41"
+country_name,592845,592845,Zeimiai,Zeimiai,Republic of Lithuania,Lithuania,LT,LT,"KU, 10","KU, 10"
+country_name,595110,595110,Rumšiškės,Rumšiškės,Republic of Lithuania,Lithuania,LT,LT,"KU, 13","KU, 13"
+country_name,600885,600885,Aukštelkė,Aukštelkė,Republic of Lithuania,Lithuania,LT,LT,SA,SA
+country_name,593218,593218,Vieksniai,Vieksniai,Republic of Lithuania,Lithuania,LT,LT,"TE, 26","TE, 26"
+country_name,594693,594693,Šilalė,Šilalė,Republic of Lithuania,Lithuania,LT,LT,"TA, 45","TA, 45"
+country_name,598928,598928,Jakai,Jakai,Republic of Lithuania,Lithuania,LT,LT,"KL, 20","KL, 20"
+country_name,598054,598054,Klovainiai,Klovainiai,Republic of Lithuania,Lithuania,LT,LT,"SA, 30","SA, 30"
+country_name,593303,593303,Venta,Venta,Republic of Lithuania,Lithuania,LT,LT,"SA, 01","SA, 01"
+country_name,593556,593556,Vadokliai,Vadokliai,Republic of Lithuania,Lithuania,LT,LT,"PN, 32","PN, 32"
+country_name,597275,597275,Manciusenai,Manciusenai,Republic of Lithuania,Lithuania,LT,LT,VL,VL
+country_name,596076,596076,Papusynys,Papusynys,Republic of Lithuania,Lithuania,LT,LT,"SA, 37","SA, 37"
+country_name,601211,601211,Agluonenai,Agluonenai,Republic of Lithuania,Lithuania,LT,LT,KL,KL
+country_name,598958,598958,Islauzas,Islauzas,Republic of Lithuania,Lithuania,LT,LT,"KU, 36","KU, 36"
+country_name,594303,594303,Stakliškės,Stakliškės,Republic of Lithuania,Lithuania,LT,LT,"KU, 36","KU, 36"
+country_name,596188,596188,Palonai,Palonai,Republic of Lithuania,Lithuania,LT,LT,"SA, 37","SA, 37"
+country_name,593897,593897,Tirksliai,Tirksliai,Republic of Lithuania,Lithuania,LT,LT,"TE, 26","TE, 26"
+country_name,593144,593144,Vilkija,Vilkija,Republic of Lithuania,Lithuania,LT,LT,"KU, 15","KU, 15"
+country_name,597983,597983,Kretkampis,Kretkampis,Republic of Lithuania,Lithuania,LT,LT,"MR, 41","MR, 41"
+country_name,592730,592730,Žlibinai,Žlibinai,Republic of Lithuania,Lithuania,LT,LT,"TE, 35","TE, 35"
+country_name,598493,598493,Kamajai,Kamajai,Republic of Lithuania,Lithuania,LT,LT,"PN, 40","PN, 40"
+country_name,598634,598634,Jurgoniskiai,Jurgoniskiai,Republic of Lithuania,Lithuania,LT,LT,"SA, 19","SA, 19"
+country_name,600482,600482,Betygala,Betygala,Republic of Lithuania,Lithuania,LT,LT,"KU, 38","KU, 38"
+country_name,594064,594064,Švenčionys,Švenčionys,Republic of Lithuania,Lithuania,LT,LT,"VL, 49","VL, 49"
+country_name,597564,597564,Lekeciai,Lekeciai,Republic of Lithuania,Lithuania,LT,LT,"MR, 41","MR, 41"
+country_name,11309310,11309310,Girionys,Girionys,Republic of Lithuania,Lithuania,LT,LT,"KU, 15","KU, 15"
+country_name,599852,599852,Dimgailiai,Dimgailiai,Republic of Lithuania,Lithuania,LT,LT,"SA, 19","SA, 19"
+country_name,594559,594559,Skemai,Skemai,Republic of Lithuania,Lithuania,LT,LT,"PN, 40","PN, 40"
+country_name,618121,618121,Cateleni,Cateleni,Republic of Moldova,Moldova,MD,MD,HI,HI
+country_name,617049,617049,Zaicani,Zaicani,Republic of Moldova,Moldova,MD,MD,RI,RI
+country_name,829838,829838,Elizavetovca,Elizavetovca,Republic of Moldova,Moldova,MD,MD,UN,UN
+country_name,618072,618072,Chirsova,Chirsova,Republic of Moldova,Moldova,MD,MD,GA,GA
+country_name,617781,617781,Musaitu,Musaitu,Republic of Moldova,Moldova,MD,MD,TA,TA
+country_name,618406,618406,Cimislia,Cimislia,Republic of Moldova,Moldova,MD,MD,CM,CM
+country_name,617199,617199,Tiganesti,Tiganesti,Republic of Moldova,Moldova,MD,MD,ST,ST
+country_name,617693,617693,Dragusenii Noi,Dragusenii Noi,Republic of Moldova,Moldova,MD,MD,HI,HI
+country_name,617650,617650,Ochiul Alb,Ochiul Alb,Republic of Moldova,Moldova,MD,MD,RI,RI
+country_name,617751,617751,Buzduganii de Jos,Buzduganii de Jos,Republic of Moldova,Moldova,MD,MD,UN,UN
+country_name,831032,831032,Curchi,Curchi,Republic of Moldova,Moldova,MD,MD,OR,OR
+country_name,831191,831191,Sestaci,Sestaci,Republic of Moldova,Moldova,MD,MD,SI,SI
+country_name,617880,617880,Lucaseuca,Lucaseuca,Republic of Moldova,Moldova,MD,MD,OR,OR
+country_name,618593,618593,Bascalia,Bascalia,Republic of Moldova,Moldova,MD,MD,BS,BS
+country_name,618008,618008,Coscalia,Coscalia,Republic of Moldova,Moldova,MD,MD,CS,CS
+country_name,617721,617721,Singereii Noi,Singereii Noi,Republic of Moldova,Moldova,MD,MD,SI,SI
+country_name,618060,618060,Cobani,Cobani,Republic of Moldova,Moldova,MD,MD,RI,RI
+country_name,617703,617703,Albinetul Nou,Albinetul Nou,Republic of Moldova,Moldova,MD,MD,FA,FA
+country_name,618489,618489,Bucuria,Bucuria,Republic of Moldova,Moldova,MD,MD,CA,CA
+country_name,617801,617801,Miresti,Miresti,Republic of Moldova,Moldova,MD,MD,HI,HI
+country_name,618329,618329,Floresti,Floresti,Republic of Moldova,Moldova,MD,MD,FL,FL
+country_name,617136,617136,Verejeni,Verejeni,Republic of Moldova,Moldova,MD,MD,OC,OC
+country_name,617170,617170,Ustia,Ustia,Republic of Moldova,Moldova,MD,MD,DU,DU
+country_name,618338,618338,Festelita,Festelita,Republic of Moldova,Moldova,MD,MD,SV,SV
+country_name,824109,824109,Izvoare,Izvoare,Republic of Moldova,Moldova,MD,MD,SI,SI
+country_name,617528,617528,Raculesti,Raculesti,Republic of Moldova,Moldova,MD,MD,DU,DU
+country_name,618136,618136,Carahasani,Carahasani,Republic of Moldova,Moldova,MD,MD,SV,SV
+country_name,831226,831226,Bursuceni,Bursuceni,Republic of Moldova,Moldova,MD,MD,SI,SI
+country_name,617554,617554,Tirgul-Vertiujeni,Tirgul-Vertiujeni,Republic of Moldova,Moldova,MD,MD,FL,FL
+country_name,829701,829701,Popestii de Jos,Popestii de Jos,Republic of Moldova,Moldova,MD,MD,DR,DR
+country_name,617533,617533,Pirjolteni,Pirjolteni,Republic of Moldova,Moldova,MD,MD,CL,CL
+country_name,617921,617921,Larga,Larga,Republic of Moldova,Moldova,MD,MD,AN,AN
+country_name,618586,618586,Baimaclia,Baimaclia,Republic of Moldova,Moldova,MD,MD,CS,CS
+country_name,617926,617926,Cislita-Prut,Cislita-Prut,Republic of Moldova,Moldova,MD,MD,CA,CA
+country_name,829646,829646,Market,Market,Republic of Moldova,Moldova,MD,MD,HI,HI
+country_name,618305,618305,Gangura,Gangura,Republic of Moldova,Moldova,MD,MD,IA,IA
+country_name,618000,618000,Costesti,Costesti,Republic of Moldova,Moldova,MD,MD,RI,RI
+country_name,618506,618506,Bruslachi,Bruslachi,Republic of Moldova,Moldova,MD,MD,SN,SN
+country_name,617807,617807,Mihaileni,Mihaileni,Republic of Moldova,Moldova,MD,MD,RI,RI
+country_name,617946,617946,Cupcui,Cupcui,Republic of Moldova,Moldova,MD,MD,LE,LE
+country_name,617643,617643,Onitcani,Onitcani,Republic of Moldova,Moldova,MD,MD,CR,CR
+country_name,617079,617079,Iarova,Iarova,Republic of Moldova,Moldova,MD,MD,SO,SO
+country_name,863763,863763,Nihoreni,Nihoreni,Republic of Moldova,Moldova,MD,MD,RI,RI
+country_name,617343,617343,Brinzenii Vechi,Brinzenii Vechi,Republic of Moldova,Moldova,MD,MD,TE,TE
+country_name,617918,617918,Larguta,Larguta,Republic of Moldova,Moldova,MD,MD,CT,CT
+country_name,617664,617664,Obileni,Obileni,Republic of Moldova,Moldova,MD,MD,HI,HI
+country_name,617589,617589,Piscaresti,Piscaresti,Republic of Moldova,Moldova,MD,MD,RE,RE
+country_name,618365,618365,Dubăsari,Dubăsari,Republic of Moldova,Moldova,MD,MD,SN,SN
+country_name,824134,824134,Vatra,Vatra,Republic of Moldova,Moldova,MD,MD,CU,CU
+country_name,618109,618109,Chetris,Chetris,Republic of Moldova,Moldova,MD,MD,GL,GL
+country_name,617890,617890,Loganesti,Loganesti,Republic of Moldova,Moldova,MD,MD,CR,CR
+country_name,618496,618496,Budesti,Budesti,Republic of Moldova,Moldova,MD,MD,CU,CU
+country_name,831025,831025,Pelivan,Pelivan,Republic of Moldova,Moldova,MD,MD,OR,OR
+country_name,864969,864969,Ivanovca Noua,Ivanovca Noua,Republic of Moldova,Moldova,MD,MD,CM,CM
+country_name,617456,617456,Sarateni,Sarateni,Republic of Moldova,Moldova,MD,MD,HI,HI
+country_name,617180,617180,Ungheni,Ungheni,Republic of Moldova,Moldova,MD,MD,UN,UN
+country_name,617034,617034,Zimbreni,Zimbreni,Republic of Moldova,Moldova,MD,MD,IA,IA
+country_name,618379,618379,Dorotcaia,Dorotcaia,Republic of Moldova,Moldova,MD,MD,DU,DU
+country_name,829895,829895,Mardareuca,Mardareuca,Republic of Moldova,Moldova,MD,MD,CR,CR
+country_name,617493,617493,Rosu,Rosu,Republic of Moldova,Moldova,MD,MD,CA,CA
+country_name,617284,617284,Stefan Voda,Stefan Voda,Republic of Moldova,Moldova,MD,MD,SV,SV
+country_name,617914,617914,Singerei,Singerei,Republic of Moldova,Moldova,MD,MD,SI,SI
+country_name,618195,618195,Ignatei,Ignatei,Republic of Moldova,Moldova,MD,MD,RE,RE
+country_name,617190,617190,Tudora,Tudora,Republic of Moldova,Moldova,MD,MD,SV,SV
+country_name,618646,618646,Alexeevca,Alexeevca,Republic of Moldova,Moldova,MD,MD,UN,UN
+country_name,617147,617147,Varvareuca,Varvareuca,Republic of Moldova,Moldova,MD,MD,FL,FL
+country_name,617140,617140,Vasieni,Vasieni,Republic of Moldova,Moldova,MD,MD,TE,TE
+country_name,618013,618013,Corjova,Corjova,Republic of Moldova,Moldova,MD,MD,CR,CR
+country_name,618450,618450,Ceadir-Lunga,Ceadir-Lunga,Republic of Moldova,Moldova,MD,MD,GA,GA
+country_name,617378,617378,Sofia,Sofia,Republic of Moldova,Moldova,MD,MD,DR,DR
+country_name,618387,618387,Dnestrovsc,Dnestrovsc,Republic of Moldova,Moldova,MD,MD,SN,SN
+country_name,617203,617203,Tibirica,Tibirica,Republic of Moldova,Moldova,MD,MD,CL,CL
+country_name,617279,617279,Singera,Singera,Republic of Moldova,Moldova,MD,MD,CU,CU
+country_name,618247,618247,Horodiste,Horodiste,Republic of Moldova,Moldova,MD,MD,RI,RI
+country_name,618608,618608,Balauresti,Balauresti,Republic of Moldova,Moldova,MD,MD,NI,NI
+country_name,618248,618248,Horodiste,Horodiste,Republic of Moldova,Moldova,MD,MD,RE,RE
+country_name,618463,618463,Bujor,Bujor,Republic of Moldova,Moldova,MD,MD,HI,HI
+country_name,617947,617947,Cupcini,Cupcini,Republic of Moldova,Moldova,MD,MD,ED,ED
+country_name,617626,617626,Parcova,Parcova,Republic of Moldova,Moldova,MD,MD,ED,ED
+country_name,617697,617697,Borosenii Noi,Borosenii Noi,Republic of Moldova,Moldova,MD,MD,RI,RI
+country_name,618054,618054,Codru,Codru,Republic of Moldova,Moldova,MD,MD,CU,CU
+country_name,863762,863762,Armanca,Armanca,Republic of Moldova,Moldova,MD,MD,RI,RI
+country_name,617804,617804,Milesti,Milesti,Republic of Moldova,Moldova,MD,MD,NI,NI
+country_name,831070,831070,Hirtop,Hirtop,Republic of Moldova,Moldova,MD,MD,FL,FL
+country_name,831045,831045,Odaia,Odaia,Republic of Moldova,Moldova,MD,MD,SD,SD
+country_name,618476,618476,Burlanesti,Burlanesti,Republic of Moldova,Moldova,MD,MD,ED,ED
+country_name,618540,618540,Balatina,Balatina,Republic of Moldova,Moldova,MD,MD,GL,GL
+country_name,618429,618429,Ciniseuti,Ciniseuti,Republic of Moldova,Moldova,MD,MD,RE,RE
+country_name,829871,829871,Ivanovca,Ivanovca,Republic of Moldova,Moldova,MD,MD,FA,FA
+country_name,617994,617994,Cotova,Cotova,Republic of Moldova,Moldova,MD,MD,DR,DR
+country_name,617691,617691,Falestii Noi,Falestii Noi,Republic of Moldova,Moldova,MD,MD,FA,FA
+country_name,617275,617275,Tabani,Tabani,Republic of Moldova,Moldova,MD,MD,BR,BR
+country_name,617341,617341,Dubasarii Vechi,Dubasarii Vechi,Republic of Moldova,Moldova,MD,MD,CR,CR
+country_name,617757,617757,Nicoreni,Nicoreni,Republic of Moldova,Moldova,MD,MD,DR,DR
+country_name,618655,618655,Alexandreni,Alexandreni,Republic of Moldova,Moldova,MD,MD,SI,SI
+country_name,617845,617845,Maramonovca,Maramonovca,Republic of Moldova,Moldova,MD,MD,DO,DO
+country_name,617659,617659,Ocnita,Ocnita,Republic of Moldova,Moldova,MD,MD,OC,OC
+country_name,617897,617897,Lipcani,Lipcani,Republic of Moldova,Moldova,MD,MD,BR,BR
+country_name,617652,617652,Dusmani,Dusmani,Republic of Moldova,Moldova,MD,MD,GL,GL
+country_name,617960,617960,Cruglic,Cruglic,Republic of Moldova,Moldova,MD,MD,CR,CR
+country_name,617048,617048,Zberoaia,Zberoaia,Republic of Moldova,Moldova,MD,MD,NI,NI
+country_name,617070,617070,Ilenuta,Ilenuta,Republic of Moldova,Moldova,MD,MD,FA,FA
+country_name,618143,618143,Cania,Cania,Republic of Moldova,Moldova,MD,MD,CT,CT
+country_name,618559,618559,Codreni,Codreni,Republic of Moldova,Moldova,MD,MD,CM,CM
+country_name,617935,617935,Chircaiesti,Chircaiesti,Republic of Moldova,Moldova,MD,MD,CS,CS
+country_name,617406,617406,Sireti,Sireti,Republic of Moldova,Moldova,MD,MD,ST,ST
+country_name,617370,617370,Solonet,Solonet,Republic of Moldova,Moldova,MD,MD,FL,FL
+country_name,618299,618299,Gaureni,Gaureni,Republic of Moldova,Moldova,MD,MD,IA,IA
+country_name,617584,617584,Plop,Plop,Republic of Moldova,Moldova,MD,MD,DO,DO
+country_name,617490,617490,Rudi,Rudi,Republic of Moldova,Moldova,MD,MD,SO,SO
+country_name,618486,618486,Bulboaca,Bulboaca,Republic of Moldova,Moldova,MD,MD,AN,AN
+country_name,617649,617649,Ochiul Rosu,Ochiul Rosu,Republic of Moldova,Moldova,MD,MD,AN,AN
+country_name,618071,618071,Corten,Corten,Republic of Moldova,Moldova,MD,MD,TA,TA
+country_name,617646,617646,Onesti,Onesti,Republic of Moldova,Moldova,MD,MD,HI,HI
+country_name,617822,617822,Mereni,Mereni,Republic of Moldova,Moldova,MD,MD,AN,AN
+country_name,617605,617605,Pervomaisc,Pervomaisc,Republic of Moldova,Moldova,MD,MD,CS,CS
+country_name,618025,618025,Corbu,Corbu,Republic of Moldova,Moldova,MD,MD,DO,DO
+country_name,617379,617379,Sofia,Sofia,Republic of Moldova,Moldova,MD,MD,HI,HI
+country_name,617267,617267,Taraclia,Taraclia,Republic of Moldova,Moldova,MD,MD,CT,CT
+country_name,617764,617764,Nemteni,Nemteni,Republic of Moldova,Moldova,MD,MD,HI,HI
+country_name,617661,617661,Oclanda,Oclanda,Republic of Moldova,Moldova,MD,MD,SO,SO
+country_name,617086,617086,Iabloana,Iabloana,Republic of Moldova,Moldova,MD,MD,GL,GL
+country_name,618030,618030,Copaceni,Copaceni,Republic of Moldova,Moldova,MD,MD,SI,SI
+country_name,617874,617874,Luparia,Luparia,Republic of Moldova,Moldova,MD,MD,RI,RI
+country_name,618036,618036,Constantinovca,Constantinovca,Republic of Moldova,Moldova,MD,MD,BR,BR
+country_name,618545,618545,Bulboci,Bulboci,Republic of Moldova,Moldova,MD,MD,SO,SO
+country_name,617345,617345,Bilicenii Vechi,Bilicenii Vechi,Republic of Moldova,Moldova,MD,MD,SI,SI
+country_name,617041,617041,Jevreni,Jevreni,Republic of Moldova,Moldova,MD,MD,DU,DU
+country_name,829557,829557,Codrenii Noi,Codrenii Noi,Republic of Moldova,Moldova,MD,MD,DO,DO
+country_name,829543,829543,Surii Noi,Surii Noi,Republic of Moldova,Moldova,MD,MD,DR,DR
+country_name,618641,618641,Aluatu,Aluatu,Republic of Moldova,Moldova,MD,MD,TA,TA
+country_name,617844,617844,Marandeni,Marandeni,Republic of Moldova,Moldova,MD,MD,FA,FA
+country_name,618600,618600,Baraboi,Baraboi,Republic of Moldova,Moldova,MD,MD,DO,DO
+country_name,617196,617196,Tintareni,Tintareni,Republic of Moldova,Moldova,MD,MD,AN,AN
+country_name,618520,618520,Bratuleni,Bratuleni,Republic of Moldova,Moldova,MD,MD,UN,UN
+country_name,618006,618006,Cosnita,Cosnita,Republic of Moldova,Moldova,MD,MD,DU,DU
+country_name,618356,618356,Durlesti,Durlesti,Republic of Moldova,Moldova,MD,MD,CU,CU
+country_name,617375,617375,Socola,Socola,Republic of Moldova,Moldova,MD,MD,SD,SD
+country_name,618440,618440,Ciripcau,Ciripcau,Republic of Moldova,Moldova,MD,MD,FL,FL
+country_name,617648,617648,Olanesti,Olanesti,Republic of Moldova,Moldova,MD,MD,SV,SV
+country_name,618222,618222,Grozesti,Grozesti,Republic of Moldova,Moldova,MD,MD,NI,NI
+country_name,617495,617495,Roscani,Roscani,Republic of Moldova,Moldova,MD,MD,AN,AN
+country_name,618258,618258,Holercani,Holercani,Republic of Moldova,Moldova,MD,MD,DU,DU
+country_name,618003,618003,Cosauti,Cosauti,Republic of Moldova,Moldova,MD,MD,SO,SO
+country_name,617272,617272,Talmaza,Talmaza,Republic of Moldova,Moldova,MD,MD,SV,SV
+country_name,829805,829805,Cruzesti,Cruzesti,Republic of Moldova,Moldova,MD,MD,CU,CU
+country_name,829809,829809,Magdacesti,Magdacesti,Republic of Moldova,Moldova,MD,MD,CR,CR
+country_name,617834,617834,Mascauti,Mascauti,Republic of Moldova,Moldova,MD,MD,CR,CR
+country_name,858889,858889,,,Republic of Moldova,Moldova,MD,MD,SN,SN
+country_name,618134,618134,Caracui,Caracui,Republic of Moldova,Moldova,MD,MD,HI,HI
+country_name,618047,618047,Colibasi,Colibasi,Republic of Moldova,Moldova,MD,MD,CA,CA
+country_name,617265,617265,Taraclia de Salcie,Taraclia de Salcie,Republic of Moldova,Moldova,MD,MD,CA,CA
+country_name,618592,618592,Boscana,Boscana,Republic of Moldova,Moldova,MD,MD,CR,CR
+country_name,618207,618207,Hirbovat,Hirbovat,Republic of Moldova,Moldova,MD,MD,AN,AN
+country_name,618589,618589,Baurci,Baurci,Republic of Moldova,Moldova,MD,MD,GA,GA
+country_name,618302,618302,Haragis,Haragis,Republic of Moldova,Moldova,MD,MD,CT,CT
+country_name,617510,617510,Rautel,Rautel,Republic of Moldova,Moldova,MD,MD,FA,FA
+country_name,618403,618403,Criuleni,Criuleni,Republic of Moldova,Moldova,MD,MD,CR,CR
+country_name,617823,617823,Merenii Noi,Merenii Noi,Republic of Moldova,Moldova,MD,MD,AN,AN
+country_name,618595,618595,Baroncea,Baroncea,Republic of Moldova,Moldova,MD,MD,DR,DR
+country_name,618046,618046,Colicauti,Colicauti,Republic of Moldova,Moldova,MD,MD,BR,BR
+country_name,617855,617855,Molovata Noua,Molovata Noua,Republic of Moldova,Moldova,MD,MD,DU,DU
+country_name,831256,831256,Codrul Nou,Codrul Nou,Republic of Moldova,Moldova,MD,MD,TE,TE
+country_name,617478,617478,Sadovoe,Sadovoe,Republic of Moldova,Moldova,MD,MD,GL,GL
+country_name,617212,617212,Iujnoe,Iujnoe,Republic of Moldova,Moldova,MD,MD,CA,CA
+country_name,617410,617410,Suri,Suri,Republic of Moldova,Moldova,MD,MD,DR,DR
+country_name,617111,617111,Vadeni,Vadeni,Republic of Moldova,Moldova,MD,MD,SO,SO
+country_name,618421,618421,Ciocilteni,Ciocilteni,Republic of Moldova,Moldova,MD,MD,OR,OR
+country_name,617790,617790,,,Republic of Moldova,Moldova,MD,MD,,
+country_name,618500,618500,Buciumeni,Buciumeni,Republic of Moldova,Moldova,MD,MD,UN,UN
+country_name,617702,617702,Anenii Noi,Anenii Noi,Republic of Moldova,Moldova,MD,MD,AN,AN
+country_name,618594,618594,Basarabeasca,Basarabeasca,Republic of Moldova,Moldova,MD,MD,BS,BS
+country_name,618501,618501,Bubuieci,Bubuieci,Republic of Moldova,Moldova,MD,MD,CU,CU
+country_name,617372,617372,Soldanesti,Soldanesti,Republic of Moldova,Moldova,MD,MD,SD,SD
+country_name,829542,829542,Baroncea Noua,Baroncea Noua,Republic of Moldova,Moldova,MD,MD,DR,DR
+country_name,617399,617399,Scoreni,Scoreni,Republic of Moldova,Moldova,MD,MD,ST,ST
+country_name,618407,618407,Ciutulesti,Ciutulesti,Republic of Moldova,Moldova,MD,MD,FL,FL
+country_name,831196,831196,Chitcanii Noi,Chitcanii Noi,Republic of Moldova,Moldova,MD,MD,TE,TE
+country_name,618020,618020,Cornesti,Cornesti,Republic of Moldova,Moldova,MD,MD,UN,UN
+country_name,618618,618618,Bahu,Bahu,Republic of Moldova,Moldova,MD,MD,CL,CL
+country_name,618590,618590,Batir,Batir,Republic of Moldova,Moldova,MD,MD,CS,CS
+country_name,618326,618326,Frasinesti,Frasinesti,Republic of Moldova,Moldova,MD,MD,UN,UN
+country_name,617696,617696,Brinzenii Noi,Brinzenii Noi,Republic of Moldova,Moldova,MD,MD,TE,TE
+country_name,618626,618626,Badiceni,Badiceni,Republic of Moldova,Moldova,MD,MD,SO,SO
+country_name,617541,617541,Dolna,Dolna,Republic of Moldova,Moldova,MD,MD,ST,ST
+country_name,617239,617239,Tiraspol,Tiraspol,Republic of Moldova,Moldova,MD,MD,SN,SN
+country_name,617989,617989,Coteala,Coteala,Republic of Moldova,Moldova,MD,MD,BR,BR
+country_name,617117,617117,Visoca,Visoca,Republic of Moldova,Moldova,MD,MD,DO,DO
+country_name,617251,617251,Telita,Telita,Republic of Moldova,Moldova,MD,MD,AN,AN
+country_name,618075,618075,Chircaiesti,Chircaiesti,Republic of Moldova,Moldova,MD,MD,CS,CS
+country_name,617530,617530,Racaria,Racaria,Republic of Moldova,Moldova,MD,MD,RI,RI
+country_name,618150,618150,Camenca,Camenca,Republic of Moldova,Moldova,MD,MD,RI,RI
+country_name,617695,617695,Ciocana,Ciocana,Republic of Moldova,Moldova,MD,MD,CU,CU
+country_name,618270,618270,Hirova,Hirova,Republic of Moldova,Moldova,MD,MD,CL,CL
+country_name,618269,618269,Hijdieni,Hijdieni,Republic of Moldova,Moldova,MD,MD,GL,GL
+country_name,618138,618138,Capriana,Capriana,Republic of Moldova,Moldova,MD,MD,ST,ST
+country_name,617042,617042,Jeloboc,Jeloboc,Republic of Moldova,Moldova,MD,MD,OR,OR
+country_name,617581,617581,Voinescu,Voinescu,Republic of Moldova,Moldova,MD,MD,HI,HI
+country_name,618106,618106,Chetrosu,Chetrosu,Republic of Moldova,Moldova,MD,MD,DR,DR
+country_name,617340,617340,Fundurii Vechi,Fundurii Vechi,Republic of Moldova,Moldova,MD,MD,GL,GL
+country_name,618254,618254,Gordinesti,Gordinesti,Republic of Moldova,Moldova,MD,MD,RE,RE
+country_name,618532,618532,Borogani,Borogani,Republic of Moldova,Moldova,MD,MD,CT,CT
+country_name,617586,617586,Pleseni,Pleseni,Republic of Moldova,Moldova,MD,MD,CT,CT
+country_name,829591,829591,Hlinaia Mica,Hlinaia Mica,Republic of Moldova,Moldova,MD,MD,ED,ED
+country_name,617851,617851,Milestii Mici,Milestii Mici,Republic of Moldova,Moldova,MD,MD,IA,IA
+country_name,617254,617254,Telenesti,Telenesti,Republic of Moldova,Moldova,MD,MD,TE,TE
+country_name,617993,617993,Hincesti,Hincesti,Republic of Moldova,Moldova,MD,MD,HI,HI
+country_name,617288,617288,Suruceni,Suruceni,Republic of Moldova,Moldova,MD,MD,IA,IA
+country_name,618203,618203,Hirtop,Hirtop,Republic of Moldova,Moldova,MD,MD,CM,CM
+country_name,617614,617614,Pelinia,Pelinia,Republic of Moldova,Moldova,MD,MD,RI,RI
+country_name,617104,617104,Vorniceni,Vorniceni,Republic of Moldova,Moldova,MD,MD,ST,ST
+country_name,617405,617405,Sirota,Sirota,Republic of Moldova,Moldova,MD,MD,OR,OR
+country_name,618588,618588,Baurci-Moldoveni,Baurci-Moldoveni,Republic of Moldova,Moldova,MD,MD,CA,CA
+country_name,618405,618405,Comrat,Comrat,Republic of Moldova,Moldova,MD,MD,GA,GA
+country_name,617898,617898,Lipceni,Lipceni,Republic of Moldova,Moldova,MD,MD,RE,RE
+country_name,617149,617149,Varnita,Varnita,Republic of Moldova,Moldova,MD,MD,AN,AN
+country_name,617791,617791,Moldoveanca,Moldoveanca,Republic of Moldova,Moldova,MD,MD,FA,FA
+country_name,824100,824100,Parcani,Parcani,Republic of Moldova,Moldova,MD,MD,RE,RE
+country_name,617429,617429,Septelici,Septelici,Republic of Moldova,Moldova,MD,MD,SO,SO
+country_name,618023,618023,Corestauti,Corestauti,Republic of Moldova,Moldova,MD,MD,OC,OC
+country_name,617467,617467,Salcuta,Salcuta,Republic of Moldova,Moldova,MD,MD,CS,CS
+country_name,617619,617619,Paulesti,Paulesti,Republic of Moldova,Moldova,MD,MD,CL,CL
+country_name,617249,617249,Temeleuti,Temeleuti,Republic of Moldova,Moldova,MD,MD,FL,FL
+country_name,617915,617915,Chiscareni,Chiscareni,Republic of Moldova,Moldova,MD,MD,SI,SI
+country_name,617797,617797,Mitoc,Mitoc,Republic of Moldova,Moldova,MD,MD,OR,OR
+country_name,617563,617563,Porumbesti,Porumbesti,Republic of Moldova,Moldova,MD,MD,CT,CT
+country_name,618063,618063,Clocusna,Clocusna,Republic of Moldova,Moldova,MD,MD,OC,OC
+country_name,617938,617938,Cusmirca,Cusmirca,Republic of Moldova,Moldova,MD,MD,SD,SD
+country_name,618335,618335,Filipeni,Filipeni,Republic of Moldova,Moldova,MD,MD,LE,LE
+country_name,618185,618185,Inesti,Inesti,Republic of Moldova,Moldova,MD,MD,TE,TE
+country_name,617285,617285,Alexandru Ioan Cuza,Alexandru Ioan Cuza,Republic of Moldova,Moldova,MD,MD,GA,GA
+country_name,618200,618200,Hirtopul Mic,Hirtopul Mic,Republic of Moldova,Moldova,MD,MD,CR,CR
+country_name,617682,617682,Cuconestii Noi,Cuconestii Noi,Republic of Moldova,Moldova,MD,MD,ED,ED
+country_name,829639,829639,Feteasca,Feteasca,Republic of Moldova,Moldova,MD,MD,HI,HI
+country_name,617638,617638,Orhei,Orhei,Republic of Moldova,Moldova,MD,MD,OR,OR
+country_name,617576,617576,Pohoarna,Pohoarna,Republic of Moldova,Moldova,MD,MD,SD,SD
+country_name,617727,617727,Obreja Noua,Obreja Noua,Republic of Moldova,Moldova,MD,MD,FA,FA
+country_name,618644,618644,Alexeevca,Alexeevca,Republic of Moldova,Moldova,MD,MD,FL,FL
+country_name,618564,618564,Bezeni,Bezeni,Republic of Moldova,Moldova,MD,MD,FL,FL
+country_name,618609,618609,Balasinesti,Balasinesti,Republic of Moldova,Moldova,MD,MD,BR,BR
+country_name,617206,617206,Taul,Taul,Republic of Moldova,Moldova,MD,MD,DO,DO
+country_name,617216,617216,Trifesti,Trifesti,Republic of Moldova,Moldova,MD,MD,RE,RE
+country_name,617779,617779,Mindra,Mindra,Republic of Moldova,Moldova,MD,MD,CL,CL
+country_name,618250,618250,Horesti,Horesti,Republic of Moldova,Moldova,MD,MD,FA,FA
+country_name,617165,617165,Vadul lui Isac,Vadul lui Isac,Republic of Moldova,Moldova,MD,MD,CA,CA
+country_name,617866,617866,Maximovca,Maximovca,Republic of Moldova,Moldova,MD,MD,AN,AN
+country_name,618070,618070,Chioselia,Chioselia,Republic of Moldova,Moldova,MD,MD,CT,CT
+country_name,618601,618601,Banesti,Banesti,Republic of Moldova,Moldova,MD,MD,TE,TE
+country_name,618474,618474,Bursuc,Bursuc,Republic of Moldova,Moldova,MD,MD,FL,FL
+country_name,618306,618306,Hincesti,Hincesti,Republic of Moldova,Moldova,MD,MD,FA,FA
+country_name,617145,617145,Varzaresti,Varzaresti,Republic of Moldova,Moldova,MD,MD,NI,NI
+country_name,617641,617641,Orac,Orac,Republic of Moldova,Moldova,MD,MD,LE,LE
+country_name,617362,617362,Speia,Speia,Republic of Moldova,Moldova,MD,MD,AN,AN
+country_name,617395,617395,Scumpia,Scumpia,Republic of Moldova,Moldova,MD,MD,FA,FA
+country_name,617620,617620,Pascauti,Pascauti,Republic of Moldova,Moldova,MD,MD,RI,RI
+country_name,617474,617474,Sagaidac,Sagaidac,Republic of Moldova,Moldova,MD,MD,AN,AN
+country_name,617987,617987,Cotiujeni,Cotiujeni,Republic of Moldova,Moldova,MD,MD,BR,BR
+country_name,617068,617068,Elizavetovca,Elizavetovca,Republic of Moldova,Moldova,MD,MD,DO,DO
+country_name,864966,864966,Baurci,Baurci,Republic of Moldova,Moldova,MD,MD,CS,CS
+country_name,618610,618610,Balasesti,Balasesti,Republic of Moldova,Moldova,MD,MD,SI,SI
+country_name,618627,618627,Bacioi,Bacioi,Republic of Moldova,Moldova,MD,MD,CU,CU
+country_name,618645,618645,Alexeuca,Alexeuca,Republic of Moldova,Moldova,MD,MD,SI,SI
+country_name,618481,618481,Bumbata,Bumbata,Republic of Moldova,Moldova,MD,MD,UN,UN
+country_name,617922,617922,Lapusna,Lapusna,Republic of Moldova,Moldova,MD,MD,HI,HI
+country_name,618251,618251,Horesti,Horesti,Republic of Moldova,Moldova,MD,MD,IA,IA
+country_name,618028,618028,Copceac,Copceac,Republic of Moldova,Moldova,MD,MD,GA,GA
+country_name,618177,618177,Isnovat,Isnovat,Republic of Moldova,Moldova,MD,MD,CR,CR
+country_name,829705,829705,Grigorauca,Grigorauca,Republic of Moldova,Moldova,MD,MD,SO,SO
+country_name,618112,618112,Cazanesti,Cazanesti,Republic of Moldova,Moldova,MD,MD,TE,TE
+country_name,618337,618337,Fetesti,Fetesti,Republic of Moldova,Moldova,MD,MD,ED,ED
+country_name,824164,824164,Novosiolovca,Novosiolovca,Republic of Moldova,Moldova,MD,MD,TA,TA
+country_name,618114,618114,Cazaclia,Cazaclia,Republic of Moldova,Moldova,MD,MD,GA,GA
+country_name,617277,617277,Sirma,Sirma,Republic of Moldova,Moldova,MD,MD,LE,LE
+country_name,617271,617271,Tanatari,Tanatari,Republic of Moldova,Moldova,MD,MD,CS,CS
+country_name,617660,617660,Ocnita,Ocnita,Republic of Moldova,Moldova,MD,MD,SN,SN
+country_name,618664,618664,Abaclia,Abaclia,Republic of Moldova,Moldova,MD,MD,BS,BS
+country_name,618382,618382,Donduseni,Donduseni,Republic of Moldova,Moldova,MD,MD,DO,DO
+country_name,618597,618597,Bardar,Bardar,Republic of Moldova,Moldova,MD,MD,IA,IA
+country_name,618370,618370,Drochia,Drochia,Republic of Moldova,Moldova,MD,MD,DR,DR
+country_name,618637,618637,Antonesti,Antonesti,Republic of Moldova,Moldova,MD,MD,SV,SV
+country_name,617480,617480,Sadaclia,Sadaclia,Republic of Moldova,Moldova,MD,MD,BS,BS
+country_name,617701,617701,Hasnasenii Noi,Hasnasenii Noi,Republic of Moldova,Moldova,MD,MD,RI,RI
+country_name,617338,617338,Caracusenii Vechi,Caracusenii Vechi,Republic of Moldova,Moldova,MD,MD,BR,BR
+country_name,618401,618401,Danceni,Danceni,Republic of Moldova,Moldova,MD,MD,IA,IA
+country_name,830975,830975,Biruinta,Biruinta,Republic of Moldova,Moldova,MD,MD,SI,SI
+country_name,617322,617322,Saratenii Vechi,Saratenii Vechi,Republic of Moldova,Moldova,MD,MD,TE,TE
+country_name,618077,618077,Chircani,Chircani,Republic of Moldova,Moldova,MD,MD,CA,CA
+country_name,617518,617518,Raciula,Raciula,Republic of Moldova,Moldova,MD,MD,CL,CL
+country_name,617937,617937,Cuizauca,Cuizauca,Republic of Moldova,Moldova,MD,MD,RE,RE
+country_name,618619,618619,Bahmut,Bahmut,Republic of Moldova,Moldova,MD,MD,CL,CL
+country_name,617859,617859,Molesti,Molesti,Republic of Moldova,Moldova,MD,MD,GL,GL
+country_name,617211,617211,Truseni,Truseni,Republic of Moldova,Moldova,MD,MD,CU,CU
+country_name,617065,617065,Ermoclia,Ermoclia,Republic of Moldova,Moldova,MD,MD,SV,SV
+country_name,617668,617668,Iezarenii Noi,Iezarenii Noi,Republic of Moldova,Moldova,MD,MD,SI,SI
+country_name,617381,617381,Slobozia,Slobozia,Republic of Moldova,Moldova,MD,MD,SN,SN
+country_name,618657,618657,Albina,Albina,Republic of Moldova,Moldova,MD,MD,CM,CM
+country_name,618057,618057,Cocieri,Cocieri,Republic of Moldova,Moldova,MD,MD,DU,DU
+country_name,617765,617765,Nimereuca,Nimereuca,Republic of Moldova,Moldova,MD,MD,FL,FL
+country_name,618372,618372,Drepcauti,Drepcauti,Republic of Moldova,Moldova,MD,MD,BR,BR
+country_name,617999,617999,Costuleni,Costuleni,Republic of Moldova,Moldova,MD,MD,UN,UN
+country_name,824153,824153,Ciorescu,Ciorescu,Republic of Moldova,Moldova,MD,MD,CU,CU
+country_name,617609,617609,Peresecina,Peresecina,Republic of Moldova,Moldova,MD,MD,OR,OR
+country_name,618620,618620,Baccealia,Baccealia,Republic of Moldova,Moldova,MD,MD,CS,CS
+country_name,617767,617767,Negrea,Negrea,Republic of Moldova,Moldova,MD,MD,HI,HI
+country_name,617778,617778,Mindresti,Mindresti,Republic of Moldova,Moldova,MD,MD,TE,TE
+country_name,618640,618640,Alunis,Alunis,Republic of Moldova,Moldova,MD,MD,RI,RI
+country_name,617386,617386,Slobozia-Dusca,Slobozia-Dusca,Republic of Moldova,Moldova,MD,MD,CR,CR
+country_name,618410,618410,Ciulucani,Ciulucani,Republic of Moldova,Moldova,MD,MD,TE,TE
+country_name,618638,618638,Antonesti,Antonesti,Republic of Moldova,Moldova,MD,MD,CT,CT
+country_name,617540,617540,Putinesti,Putinesti,Republic of Moldova,Moldova,MD,MD,SI,SI
+country_name,618404,618404,Congaz,Congaz,Republic of Moldova,Moldova,MD,MD,GA,GA
+country_name,618488,618488,Bularda,Bularda,Republic of Moldova,Moldova,MD,MD,CL,CL
+country_name,829835,829835,Blindesti,Blindesti,Republic of Moldova,Moldova,MD,MD,UN,UN
+country_name,617179,617179,Unguri,Unguri,Republic of Moldova,Moldova,MD,MD,OC,OC
+country_name,617183,617183,Ucrainca,Ucrainca,Republic of Moldova,Moldova,MD,MD,CS,CS
+country_name,618451,618451,Ceadir,Ceadir,Republic of Moldova,Moldova,MD,MD,LE,LE
+country_name,618259,618259,Hoginesti,Hoginesti,Republic of Moldova,Moldova,MD,MD,CL,CL
+country_name,617364,617364,Sipoteni,Sipoteni,Republic of Moldova,Moldova,MD,MD,HI,HI
+country_name,617448,617448,Selemet,Selemet,Republic of Moldova,Moldova,MD,MD,CM,CM
+country_name,617569,617569,Popestii de Sus,Popestii de Sus,Republic of Moldova,Moldova,MD,MD,DR,DR
+country_name,618161,618161,Calfa,Calfa,Republic of Moldova,Moldova,MD,MD,AN,AN
+country_name,618027,618027,Copceac,Copceac,Republic of Moldova,Moldova,MD,MD,SV,SV
+country_name,618435,618435,Cetireni,Cetireni,Republic of Moldova,Moldova,MD,MD,UN,UN
+country_name,617230,617230,Tomai,Tomai,Republic of Moldova,Moldova,MD,MD,GA,GA
+country_name,618210,618210,Huzun,Huzun,Republic of Moldova,Moldova,MD,MD,ST,ST
+country_name,617233,617233,Tochile-Raducani,Tochile-Raducani,Republic of Moldova,Moldova,MD,MD,LE,LE
+country_name,618436,618436,Cernoleuca,Cernoleuca,Republic of Moldova,Moldova,MD,MD,DO,DO
+country_name,617744,617744,Jora de Jos,Jora de Jos,Republic of Moldova,Moldova,MD,MD,DU,DU
+country_name,617491,617491,Rublenita,Rublenita,Republic of Moldova,Moldova,MD,MD,SO,SO
+country_name,618587,618587,Baimaclia,Baimaclia,Republic of Moldova,Moldova,MD,MD,CT,CT
+country_name,618244,618244,Gotesti,Gotesti,Republic of Moldova,Moldova,MD,MD,CT,CT
+country_name,617642,617642,Opaci,Opaci,Republic of Moldova,Moldova,MD,MD,CS,CS
+country_name,618344,618344,Fălești,Fălești,Republic of Moldova,Moldova,MD,MD,FA,FA
+country_name,617385,617385,Slobozia-Cremene,Slobozia-Cremene,Republic of Moldova,Moldova,MD,MD,SO,SO
+country_name,618571,618571,Besghioz,Besghioz,Republic of Moldova,Moldova,MD,MD,GA,GA
+country_name,617637,617637,Otac,Otac,Republic of Moldova,Moldova,MD,MD,RE,RE
+country_name,618409,618409,Ciumai,Ciumai,Republic of Moldova,Moldova,MD,MD,TA,TA
+country_name,617531,617531,Radoaia,Radoaia,Republic of Moldova,Moldova,MD,MD,SI,SI
+country_name,618275,618275,Ghindesti,Ghindesti,Republic of Moldova,Moldova,MD,MD,FL,FL
+country_name,617187,617187,Tvardița,Tvardița,Republic of Moldova,Moldova,MD,MD,TA,TA
+country_name,618426,618426,Chisinau,Chisinau,Republic of Moldova,Moldova,MD,MD,CU,CU
+country_name,618125,618125,Casunca,Casunca,Republic of Moldova,Moldova,MD,MD,FL,FL
+country_name,618256,618256,Huluboaia,Huluboaia,Republic of Moldova,Moldova,MD,MD,CA,CA
+country_name,617204,617204,Tepilova,Tepilova,Republic of Moldova,Moldova,MD,MD,SO,SO
+country_name,618169,618169,Izvoare,Izvoare,Republic of Moldova,Moldova,MD,MD,FA,FA
+country_name,617207,617207,Tareuca,Tareuca,Republic of Moldova,Moldova,MD,MD,RE,RE
+country_name,617904,617904,Leova,Leova,Republic of Moldova,Moldova,MD,MD,LE,LE
+country_name,617477,617477,Sadic,Sadic,Republic of Moldova,Moldova,MD,MD,CT,CT
+country_name,617805,617805,Micleuseni,Micleuseni,Republic of Moldova,Moldova,MD,MD,ST,ST
+country_name,617810,617810,Mihailovca,Mihailovca,Republic of Moldova,Moldova,MD,MD,SI,SI
+country_name,618079,618079,Chiriet-Lunga,Chiriet-Lunga,Republic of Moldova,Moldova,MD,MD,GA,GA
+country_name,617107,617107,Volintiri,Volintiri,Republic of Moldova,Moldova,MD,MD,SV,SV
+country_name,618099,618099,Hiliuti,Hiliuti,Republic of Moldova,Moldova,MD,MD,FA,FA
+country_name,617186,617186,Tirnova,Tirnova,Republic of Moldova,Moldova,MD,MD,DO,DO
+country_name,617155,617155,Valea Perjei,Valea Perjei,Republic of Moldova,Moldova,MD,MD,CM,CM
+country_name,617248,617248,Terebna,Terebna,Republic of Moldova,Moldova,MD,MD,ED,ED
+country_name,617325,617325,Radenii Vechi,Radenii Vechi,Republic of Moldova,Moldova,MD,MD,UN,UN
+country_name,618603,618603,Baltati,Baltati,Republic of Moldova,Moldova,MD,MD,IA,IA
+country_name,617371,617371,Solonceni,Solonceni,Republic of Moldova,Moldova,MD,MD,RE,RE
+country_name,829665,829665,Dolinnoe,Dolinnoe,Republic of Moldova,Moldova,MD,MD,CR,CR
+country_name,617617,617617,Peciste,Peciste,Republic of Moldova,Moldova,MD,MD,RE,RE
+country_name,617302,617302,Straseni,Straseni,Republic of Moldova,Moldova,MD,MD,ST,ST
+country_name,618628,618628,Avrameni,Avrameni,Republic of Moldova,Moldova,MD,MD,RI,RI
+country_name,617520,617520,Recea,Recea,Republic of Moldova,Moldova,MD,MD,RI,RI
+country_name,617732,617732,Cobusca Noua,Cobusca Noua,Republic of Moldova,Moldova,MD,MD,AN,AN
+country_name,618510,618510,Briceni,Briceni,Republic of Moldova,Moldova,MD,MD,BR,BR
+country_name,617593,617593,Petrunea,Petrunea,Republic of Moldova,Moldova,MD,MD,GL,GL
+country_name,831243,831243,Codru,Codru,Republic of Moldova,Moldova,MD,MD,TE,TE
+country_name,618078,618078,Chirca,Chirca,Republic of Moldova,Moldova,MD,MD,AN,AN
+country_name,829649,829649,Bratianovca,Bratianovca,Republic of Moldova,Moldova,MD,MD,HI,HI
+country_name,617988,617988,Cotiujenii Mari,Cotiujenii Mari,Republic of Moldova,Moldova,MD,MD,SD,SD
+country_name,618349,618349,Giurgiulesti,Giurgiulesti,Republic of Moldova,Moldova,MD,MD,CA,CA
+country_name,618316,618316,Furceni,Furceni,Republic of Moldova,Moldova,MD,MD,OR,OR
+country_name,617597,617597,Petresti,Petresti,Republic of Moldova,Moldova,MD,MD,UN,UN
+country_name,618375,618375,Draganesti,Draganesti,Republic of Moldova,Moldova,MD,MD,SI,SI
+country_name,617832,617832,Mateuti,Mateuti,Republic of Moldova,Moldova,MD,MD,RE,RE
+country_name,618547,618547,Bocani,Bocani,Republic of Moldova,Moldova,MD,MD,FA,FA
+country_name,617719,617719,Taura Noua,Taura Noua,Republic of Moldova,Moldova,MD,MD,FA,FA
+country_name,618001,618001,Costesti,Costesti,Republic of Moldova,Moldova,MD,MD,IA,IA
+country_name,618229,618229,Grimancauti,Grimancauti,Republic of Moldova,Moldova,MD,MD,BR,BR
+country_name,618115,618115,Cairaclia,Cairaclia,Republic of Moldova,Moldova,MD,MD,TA,TA
+country_name,618264,618264,Hlinaia,Hlinaia,Republic of Moldova,Moldova,MD,MD,ED,ED
+country_name,618491,618491,Bugeac,Bugeac,Republic of Moldova,Moldova,MD,MD,GA,GA
+country_name,618111,618111,Cazangic,Cazangic,Republic of Moldova,Moldova,MD,MD,LE,LE
+country_name,617105,617105,Voloave,Voloave,Republic of Moldova,Moldova,MD,MD,SO,SO
+country_name,618629,618629,Avdarma,Avdarma,Republic of Moldova,Moldova,MD,MD,GA,GA
+country_name,618050,618050,Cucuruzeni,Cucuruzeni,Republic of Moldova,Moldova,MD,MD,OR,OR
+country_name,618577,618577,Tighina,Tighina,Republic of Moldova,Moldova,MD,MD,BD,BD
+country_name,618544,618544,Balceana,Balceana,Republic of Moldova,Moldova,MD,MD,HI,HI
+country_name,617486,617486,Rîbniţa,Rîbniţa,Republic of Moldova,Moldova,MD,MD,SN,SN
+country_name,617235,617235,Todiresti,Todiresti,Republic of Moldova,Moldova,MD,MD,UN,UN
+country_name,617451,617451,Sauca,Sauca,Republic of Moldova,Moldova,MD,MD,OC,OC
+country_name,617901,617901,Leuseni,Leuseni,Republic of Moldova,Moldova,MD,MD,TE,TE
+country_name,617886,617886,Lopatica,Lopatica,Republic of Moldova,Moldova,MD,MD,CA,CA
+country_name,618422,618422,Cioc Maidan,Cioc Maidan,Republic of Moldova,Moldova,MD,MD,GA,GA
+country_name,617514,617514,Rediul Mare,Rediul Mare,Republic of Moldova,Moldova,MD,MD,DO,DO
+country_name,618217,618217,Gura Bicului,Gura Bicului,Republic of Moldova,Moldova,MD,MD,AN,AN
+country_name,829807,829807,Buneti,Buneti,Republic of Moldova,Moldova,MD,MD,CU,CU
+country_name,617756,617756,Nimoreni,Nimoreni,Republic of Moldova,Moldova,MD,MD,IA,IA
+country_name,618631,618631,Otaci,Otaci,Republic of Moldova,Moldova,MD,MD,OC,OC
+country_name,618454,618454,Calarasi,Calarasi,Republic of Moldova,Moldova,MD,MD,CL,CL
+country_name,618512,618512,Briceni,Briceni,Republic of Moldova,Moldova,MD,MD,DO,DO
+country_name,618276,618276,Ghiliceni,Ghiliceni,Republic of Moldova,Moldova,MD,MD,TE,TE
+country_name,618201,618201,Hirtopul Mare,Hirtopul Mare,Republic of Moldova,Moldova,MD,MD,CR,CR
+country_name,618271,618271,Hiriseni,Hiriseni,Republic of Moldova,Moldova,MD,MD,TE,TE
+country_name,618009,618009,Cosernita,Cosernita,Republic of Moldova,Moldova,MD,MD,FL,FL
+country_name,617920,617920,Larga,Larga,Republic of Moldova,Moldova,MD,MD,BR,BR
+country_name,829713,829713,Lugovoe,Lugovoe,Republic of Moldova,Moldova,MD,MD,SO,SO
+country_name,617613,617613,Pepeni,Pepeni,Republic of Moldova,Moldova,MD,MD,SI,SI
+country_name,617487,617487,Rujnita,Rujnita,Republic of Moldova,Moldova,MD,MD,OC,OC
+country_name,617628,617628,Parcani,Parcani,Republic of Moldova,Moldova,MD,MD,SN,SN
+country_name,618024,618024,Cotovca,Cotovca,Republic of Moldova,Moldova,MD,MD,SI,SI
+country_name,617307,617307,Stolniceni,Stolniceni,Republic of Moldova,Moldova,MD,MD,UN,UN
+country_name,618155,618155,Calmatui,Calmatui,Republic of Moldova,Moldova,MD,MD,HI,HI
+country_name,829570,829570,Maiovca,Maiovca,Republic of Moldova,Moldova,MD,MD,OC,OC
+country_name,617505,617505,Razeni,Razeni,Republic of Moldova,Moldova,MD,MD,IA,IA
+country_name,618518,618518,Bratuseni,Bratuseni,Republic of Moldova,Moldova,MD,MD,ED,ED
+country_name,618615,618615,Balabanesti,Balabanesti,Republic of Moldova,Moldova,MD,MD,CR,CR
+country_name,617894,617894,Lipoveni,Lipoveni,Republic of Moldova,Moldova,MD,MD,CM,CM
+country_name,617384,617384,Slobozia Mare,Slobozia Mare,Republic of Moldova,Moldova,MD,MD,CA,CA
+country_name,618443,618443,Cenusa,Cenusa,Republic of Moldova,Moldova,MD,MD,FL,FL
+country_name,617925,617925,Chiurt,Chiurt,Republic of Moldova,Moldova,MD,MD,ED,ED
+country_name,617544,617544,Puhaceni,Puhaceni,Republic of Moldova,Moldova,MD,MD,AN,AN
+country_name,824139,824139,Ruseni,Ruseni,Republic of Moldova,Moldova,MD,MD,AN,AN
+country_name,618516,618516,Bravicea,Bravicea,Republic of Moldova,Moldova,MD,MD,CL,CL
+country_name,618468,618468,Buteni,Buteni,Republic of Moldova,Moldova,MD,MD,HI,HI
+country_name,618654,618654,Alexandrovca,Alexandrovca,Republic of Moldova,Moldova,MD,MD,FL,FL
+country_name,617072,617072,Echimauti,Echimauti,Republic of Moldova,Moldova,MD,MD,RE,RE
+country_name,618428,618428,Cismichioi,Cismichioi,Republic of Moldova,Moldova,MD,MD,GA,GA
+country_name,617231,617231,Tocuz,Tocuz,Republic of Moldova,Moldova,MD,MD,CS,CS
+country_name,618522,618522,Branesti,Branesti,Republic of Moldova,Moldova,MD,MD,OR,OR
+country_name,618022,618022,Crocmaz,Crocmaz,Republic of Moldova,Moldova,MD,MD,SV,SV
+country_name,617538,617538,Pinzareni,Pinzareni,Republic of Moldova,Moldova,MD,MD,FA,FA
+country_name,617374,617374,Socoleni,Socoleni,Republic of Moldova,Moldova,MD,MD,AN,AN
+country_name,617621,617621,Pascani,Pascani,Republic of Moldova,Moldova,MD,MD,CR,CR
+country_name,618255,618255,Goleni,Goleni,Republic of Moldova,Moldova,MD,MD,ED,ED
+country_name,618144,618144,Cotovscoe,Cotovscoe,Republic of Moldova,Moldova,MD,MD,GA,GA
+country_name,618120,618120,Căușeni,Căușeni,Republic of Moldova,Moldova,MD,MD,CS,CS
+country_name,618456,618456,Cahul,Cahul,Republic of Moldova,Moldova,MD,MD,CA,CA
+country_name,618605,618605,Bălţi,Bălţi,Republic of Moldova,Moldova,MD,MD,BA,BA
+country_name,617965,617965,Cricova,Cricova,Republic of Moldova,Moldova,MD,MD,CU,CU
+country_name,618240,618240,Gratiesti,Gratiesti,Republic of Moldova,Moldova,MD,MD,CU,CU
+country_name,617502,617502,Rezina,Rezina,Republic of Moldova,Moldova,MD,MD,RE,RE
+country_name,618261,618261,Glodeni,Glodeni,Republic of Moldova,Moldova,MD,MD,GL,GL
+country_name,617884,617884,Lozova,Lozova,Republic of Moldova,Moldova,MD,MD,ST,ST
+country_name,618151,618151,Camencea,Camencea,Republic of Moldova,Moldova,MD,MD,OR,OR
+country_name,618294,618294,Gaidar,Gaidar,Republic of Moldova,Moldova,MD,MD,GA,GA
+country_name,618085,618085,Chipesca,Chipesca,Republic of Moldova,Moldova,MD,MD,SD,SD
+country_name,618585,618585,Baius,Baius,Republic of Moldova,Moldova,MD,MD,LE,LE
+country_name,617562,617562,Porumbrei,Porumbrei,Republic of Moldova,Moldova,MD,MD,CM,CM
+country_name,618211,618211,Hutulu,Hutulu,Republic of Moldova,Moldova,MD,MD,CA,CA
+country_name,617132,617132,Cuhurestii de Sus,Cuhurestii de Sus,Republic of Moldova,Moldova,MD,MD,FL,FL
+country_name,617270,617270,Taraclia,Taraclia,Republic of Moldova,Moldova,MD,MD,TA,TA
+country_name,617096,617096,Vulcanesti,Vulcanesti,Republic of Moldova,Moldova,MD,MD,GA,GA
+country_name,617262,617262,Tartaul,Tartaul,Republic of Moldova,Moldova,MD,MD,CT,CT
+country_name,829664,829664,Bic,Bic,Republic of Moldova,Moldova,MD,MD,CU,CU
+country_name,617929,617929,Cirpesti,Cirpesti,Republic of Moldova,Moldova,MD,MD,CT,CT
+country_name,829652,829652,Anini,Anini,Republic of Moldova,Moldova,MD,MD,HI,HI
+country_name,829862,829862,Soroca,Soroca,Republic of Moldova,Moldova,MD,MD,GL,GL
+country_name,618343,618343,Firladeni,Firladeni,Republic of Moldova,Moldova,MD,MD,CS,CS
+country_name,617752,617752,Andrusul de Jos,Andrusul de Jos,Republic of Moldova,Moldova,MD,MD,CA,CA
+country_name,618614,618614,Balabanu,Balabanu,Republic of Moldova,Moldova,MD,MD,GA,GA
+country_name,617282,617282,Sverdiac,Sverdiac,Republic of Moldova,Moldova,MD,MD,RI,RI
+country_name,618116,618116,Cainarii Vechi,Cainarii Vechi,Republic of Moldova,Moldova,MD,MD,SO,SO
+country_name,617814,617814,Mihalasa,Mihalasa,Republic of Moldova,Moldova,MD,MD,TE,TE
+country_name,618100,618100,Helesteni,Helesteni,Republic of Moldova,Moldova,MD,MD,NI,NI
+country_name,618281,618281,Ghidighici,Ghidighici,Republic of Moldova,Moldova,MD,MD,CU,CU
+country_name,618045,618045,Colonita,Colonita,Republic of Moldova,Moldova,MD,MD,CU,CU
+country_name,617164,617164,Vadul lui Voda,Vadul lui Voda,Republic of Moldova,Moldova,MD,MD,CU,CU
+country_name,618015,618015,Corjeuti,Corjeuti,Republic of Moldova,Moldova,MD,MD,BR,BR
+country_name,618129,618129,Carpineni,Carpineni,Republic of Moldova,Moldova,MD,MD,HI,HI
+country_name,617446,617446,Seliste,Seliste,Republic of Moldova,Moldova,MD,MD,OR,OR
+country_name,617788,617788,Morozeni,Morozeni,Republic of Moldova,Moldova,MD,MD,OR,OR
+country_name,617398,617398,Scorteni,Scorteni,Republic of Moldova,Moldova,MD,MD,TE,TE
+country_name,617749,617749,Climautii de Jos,Climautii de Jos,Republic of Moldova,Moldova,MD,MD,SD,SD
+country_name,7730792,7730792,Congazcic,Congazcic,Republic of Moldova,Moldova,MD,MD,,
+country_name,618137,618137,Carabetovca,Carabetovca,Republic of Moldova,Moldova,MD,MD,BS,BS
+country_name,618158,618158,Calinesti,Calinesti,Republic of Moldova,Moldova,MD,MD,FA,FA
+country_name,617768,617768,Negresti,Negresti,Republic of Moldova,Moldova,MD,MD,ST,ST
+country_name,617130,617130,Albota de Sus,Albota de Sus,Republic of Moldova,Moldova,MD,MD,TA,TA
+country_name,618040,618040,Condratesti,Condratesti,Republic of Moldova,Moldova,MD,MD,UN,UN
+country_name,618350,618350,Joltai,Joltai,Republic of Moldova,Moldova,MD,MD,GA,GA
+country_name,617982,617982,Cojusna,Cojusna,Republic of Moldova,Moldova,MD,MD,ST,ST
+country_name,618539,618539,Chioselia Mare,Chioselia Mare,Republic of Moldova,Moldova,MD,MD,CT,CT
+country_name,617837,617837,Marculesti,Marculesti,Republic of Moldova,Moldova,MD,MD,FL,FL
+country_name,617081,617081,Iargara,Iargara,Republic of Moldova,Moldova,MD,MD,CT,CT
+country_name,617246,617246,Tescureni,Tescureni,Republic of Moldova,Moldova,MD,MD,UN,UN
+country_name,618315,618315,Fuzauca,Fuzauca,Republic of Moldova,Moldova,MD,MD,SD,SD
+country_name,618196,618196,Ialoveni,Ialoveni,Republic of Moldova,Moldova,MD,MD,IA,IA
+country_name,617479,617479,Sadova,Sadova,Republic of Moldova,Moldova,MD,MD,CL,CL
+country_name,617118,617118,Visniovca,Visniovca,Republic of Moldova,Moldova,MD,MD,CT,CT
+country_name,617803,617803,Mingir,Mingir,Republic of Moldova,Moldova,MD,MD,HI,HI
+country_name,618546,618546,Bocsa,Bocsa,Republic of Moldova,Moldova,MD,MD,FA,FA
+country_name,618297,618297,Gauzeni,Gauzeni,Republic of Moldova,Moldova,MD,MD,SD,SD
+country_name,617654,617654,Oxentea,Oxentea,Republic of Moldova,Moldova,MD,MD,DU,DU
+country_name,617753,617753,Nisporeni,Nisporeni,Republic of Moldova,Moldova,MD,MD,NI,NI
+country_name,617612,617612,Pereni,Pereni,Republic of Moldova,Moldova,MD,MD,HI,HI
+country_name,617578,617578,Pogăneşti,Pogăneşti,Republic of Moldova,Moldova,MD,MD,HI,HI
+country_name,831039,831039,Neculaieuca,Neculaieuca,Republic of Moldova,Moldova,MD,MD,OR,OR
+country_name,831057,831057,Antonovca,Antonovca,Republic of Moldova,Moldova,MD,MD,SI,SI
+country_name,829776,829776,Podul Lung,Podul Lung,Republic of Moldova,Moldova,MD,MD,CL,CL
+country_name,618480,618480,Burghelea,Burghelea,Republic of Moldova,Moldova,MD,MD,FA,FA
+country_name,618069,618069,,,Republic of Moldova,Moldova,MD,MD,CU,CU
+country_name,831190,831190,Cliscauti,Cliscauti,Republic of Moldova,Moldova,MD,MD,SI,SI
+country_name,617035,617035,Zubresti,Zubresti,Republic of Moldova,Moldova,MD,MD,ST,ST
+country_name,617426,617426,Serpeni,Serpeni,Republic of Moldova,Moldova,MD,MD,AN,AN
+country_name,618416,618416,Ciuciuleni,Ciuciuleni,Republic of Moldova,Moldova,MD,MD,HI,HI
+country_name,618558,618558,Biesti,Biesti,Republic of Moldova,Moldova,MD,MD,OR,OR
+country_name,617098,617098,Voinova,Voinova,Republic of Moldova,Moldova,MD,MD,ST,ST
+country_name,617870,617870,Macaresti,Macaresti,Republic of Moldova,Moldova,MD,MD,UN,UN
+country_name,617902,617902,Leuseni,Leuseni,Republic of Moldova,Moldova,MD,MD,HI,HI
+country_name,617539,617539,Putintei,Putintei,Republic of Moldova,Moldova,MD,MD,OR,OR
+country_name,617063,617063,Iurceni,Iurceni,Republic of Moldova,Moldova,MD,MD,NI,NI
+country_name,617297,617297,Sturzovca,Sturzovca,Republic of Moldova,Moldova,MD,MD,GL,GL
+country_name,617662,617662,Ohrincea,Ohrincea,Republic of Moldova,Moldova,MD,MD,CR,CR
+country_name,618110,618110,Cajba,Cajba,Republic of Moldova,Moldova,MD,MD,GL,GL
+country_name,617559,617559,Poiana,Poiana,Republic of Moldova,Moldova,MD,MD,SD,SD
+country_name,618283,618283,Ghetlova,Ghetlova,Republic of Moldova,Moldova,MD,MD,OR,OR
+country_name,617759,617759,Nicolaevca,Nicolaevca,Republic of Moldova,Moldova,MD,MD,GL,GL
+country_name,617425,617425,Sestaci,Sestaci,Republic of Moldova,Moldova,MD,MD,SD,SD
+country_name,617575,617575,Pohrebeni,Pohrebeni,Republic of Moldova,Moldova,MD,MD,OR,OR
+country_name,617958,617958,Cubolta,Cubolta,Republic of Moldova,Moldova,MD,MD,SI,SI
+country_name,617156,617156,Valea Perjei,Valea Perjei,Republic of Moldova,Moldova,MD,MD,TA,TA
+country_name,617403,617403,Scaieni,Scaieni,Republic of Moldova,Moldova,MD,MD,FL,FL
+country_name,617353,617353,Cobusca Veche,Cobusca Veche,Republic of Moldova,Moldova,MD,MD,AN,AN
+country_name,617109,617109,Valcinet,Valcinet,Republic of Moldova,Moldova,MD,MD,OC,OC
+country_name,617292,617292,Suhuluceni,Suhuluceni,Republic of Moldova,Moldova,MD,MD,TE,TE
+country_name,618180,618180,Isaicani,Isaicani,Republic of Moldova,Moldova,MD,MD,NI,NI
+country_name,618289,618289,Gherman,Gherman,Republic of Moldova,Moldova,MD,MD,UN,UN
+country_name,617452,617452,Satul-Nou,Satul-Nou,Republic of Moldova,Moldova,MD,MD,CM,CM
+country_name,618219,618219,Hulboaca,Hulboaca,Republic of Moldova,Moldova,MD,MD,CU,CU
+country_name,617387,617387,Slobozia,Slobozia,Republic of Moldova,Moldova,MD,MD,SV,SV
+country_name,618103,618103,Hagimus,Hagimus,Republic of Moldova,Moldova,MD,MD,CS,CS
+country_name,617679,617679,Limbenii Noi,Limbenii Noi,Republic of Moldova,Moldova,MD,MD,GL,GL
+country_name,618444,618444,Cenac,Cenac,Republic of Moldova,Moldova,MD,MD,CM,CM
+country_name,618304,618304,Hansca,Hansca,Republic of Moldova,Moldova,MD,MD,IA,IA
+country_name,617060,617060,Zaicana,Zaicana,Republic of Moldova,Moldova,MD,MD,CR,CR
+country_name,617931,617931,Cirnateni,Cirnateni,Republic of Moldova,Moldova,MD,MD,CS,CS
+country_name,617647,617647,Oliscani,Oliscani,Republic of Moldova,Moldova,MD,MD,SD,SD
+country_name,618636,618636,Antonovca,Antonovca,Republic of Moldova,Moldova,MD,MD,SI,SI
+country_name,618464,618464,Buzdugeni,Buzdugeni,Republic of Moldova,Moldova,MD,MD,ED,ED
+country_name,617316,617316,Stefanesti,Stefanesti,Republic of Moldova,Moldova,MD,MD,SV,SV
+country_name,618432,618432,Cimiseni,Cimiseni,Republic of Moldova,Moldova,MD,MD,CR,CR
+country_name,617507,617507,Revaca,Revaca,Republic of Moldova,Moldova,MD,MD,CU,CU
+country_name,829656,829656,Dobrogea,Dobrogea,Republic of Moldova,Moldova,MD,MD,CU,CU
+country_name,618477,618477,Burlacu,Burlacu,Republic of Moldova,Moldova,MD,MD,CA,CA
+country_name,617317,617317,Stauceni,Stauceni,Republic of Moldova,Moldova,MD,MD,CU,CU
+country_name,617280,617280,Singureni,Singureni,Republic of Moldova,Moldova,MD,MD,RI,RI
+country_name,617181,617181,,,Republic of Moldova,Moldova,MD,MD,UN,UN
+country_name,618574,618574,Berezlogi,Berezlogi,Republic of Moldova,Moldova,MD,MD,OR,OR
+country_name,617074,617074,Egorovca,Egorovca,Republic of Moldova,Moldova,MD,MD,FA,FA
+country_name,618625,618625,Badicul Moldovenesc,Badicul Moldovenesc,Republic of Moldova,Moldova,MD,MD,CA,CA
+country_name,829545,829545,Bratusenii Noi,Bratusenii Noi,Republic of Moldova,Moldova,MD,MD,ED,ED
+country_name,617245,617245,Tetcani,Tetcani,Republic of Moldova,Moldova,MD,MD,BR,BR
+country_name,618452,618452,Cantemir,Cantemir,Republic of Moldova,Moldova,MD,MD,CT,CT
+country_name,829888,829888,Pocrovca,Pocrovca,Republic of Moldova,Moldova,MD,MD,FA,FA
+country_name,618263,618263,Glinjeni,Glinjeni,Republic of Moldova,Moldova,MD,MD,FA,FA
+country_name,618154,618154,Calugar,Calugar,Republic of Moldova,Moldova,MD,MD,FA,FA
+country_name,617367,617367,Soroca,Soroca,Republic of Moldova,Moldova,MD,MD,SO,SO
+country_name,829571,829571,Berezovca,Berezovca,Republic of Moldova,Moldova,MD,MD,OC,OC
+country_name,618550,618550,Bogdanesti,Bogdanesti,Republic of Moldova,Moldova,MD,MD,BR,BR
+country_name,617624,617624,Paruceni,Paruceni,Republic of Moldova,Moldova,MD,MD,NI,NI
+country_name,617457,617457,Sarateni,Sarateni,Republic of Moldova,Moldova,MD,MD,LE,LE
+country_name,618097,618097,Hitresti,Hitresti,Republic of Moldova,Moldova,MD,MD,FA,FA
+country_name,617482,617482,Riscani,Riscani,Republic of Moldova,Moldova,MD,MD,RI,RI
+country_name,618098,618098,Hiliuti,Hiliuti,Republic of Moldova,Moldova,MD,MD,RI,RI
+country_name,617076,617076,Edineţ,Edineţ,Republic of Moldova,Moldova,MD,MD,ED,ED
+country_name,618232,618232,Grigorauca,Grigorauca,Republic of Moldova,Moldova,MD,MD,SI,SI
+country_name,617587,617587,Pitusca,Pitusca,Republic of Moldova,Moldova,MD,MD,CL,CL
+country_name,618415,618415,Ciuciulea,Ciuciulea,Republic of Moldova,Moldova,MD,MD,GL,GL
+country_name,824102,824102,Alexandresti,Alexandresti,Republic of Moldova,Moldova,MD,MD,RI,RI
+country_name,618010,618010,Cosernita,Cosernita,Republic of Moldova,Moldova,MD,MD,CR,CR
+country_name,618390,618390,Dezghingea,Dezghingea,Republic of Moldova,Moldova,MD,MD,GA,GA
+country_name,618170,618170,Izbiste,Izbiste,Republic of Moldova,Moldova,MD,MD,CR,CR
+country_name,617873,617873,Corlateni,Corlateni,Republic of Moldova,Moldova,MD,MD,RI,RI
+country_name,618604,618604,Baltata,Baltata,Republic of Moldova,Moldova,MD,MD,CR,CR
+country_name,617534,617534,Pirita,Pirita,Republic of Moldova,Moldova,MD,MD,DU,DU
+country_name,618455,618455,Cainari,Cainari,Republic of Moldova,Moldova,MD,MD,CS,CS
+country_name,618364,618364,Dubna,Dubna,Republic of Moldova,Moldova,MD,MD,SO,SO
+country_name,617234,617234,Tohatin,Tohatin,Republic of Moldova,Moldova,MD,MD,CU,CU
+country_name,617846,617846,Manta,Manta,Republic of Moldova,Moldova,MD,MD,CA,CA
+country_name,618439,618439,Cerlina,Cerlina,Republic of Moldova,Moldova,MD,MD,FL,FL
+country_name,618241,618241,Gradiste,Gradiste,Republic of Moldova,Moldova,MD,MD,CM,CM
+country_name,617400,617400,Schineni,Schineni,Republic of Moldova,Moldova,MD,MD,DR,DR
+country_name,617572,617572,Pocsesti,Pocsesti,Republic of Moldova,Moldova,MD,MD,OR,OR
+country_name,618656,618656,Alcedar,Alcedar,Republic of Moldova,Moldova,MD,MD,SD,SD
+country_name,617442,617442,Semeni,Semeni,Republic of Moldova,Moldova,MD,MD,UN,UN
+country_name,617174,617174,Ursoaia,Ursoaia,Republic of Moldova,Moldova,MD,MD,CS,CS
+country_name,618570,618570,Bestemac,Bestemac,Republic of Moldova,Moldova,MD,MD,LE,LE
+country_name,618554,618554,Bobeica,Bobeica,Republic of Moldova,Moldova,MD,MD,NI,NI
+country_name,618445,618445,Ciobalaccia,Ciobalaccia,Republic of Moldova,Moldova,MD,MD,CT,CT
+country_name,617839,617839,Marcauti,Marcauti,Republic of Moldova,Moldova,MD,MD,BR,BR
+country_name,618543,618543,Bolduresti,Bolduresti,Republic of Moldova,Moldova,MD,MD,NI,NI
+country_name,618352,618352,Geamana,Geamana,Republic of Moldova,Moldova,MD,MD,AN,AN
+country_name,617524,617524,Raspopeni,Raspopeni,Republic of Moldova,Moldova,MD,MD,SD,SD
+country_name,618209,618209,Gvozdova,Gvozdova,Republic of Moldova,Moldova,MD,MD,FL,FL
+country_name,617769,617769,Navirnet,Navirnet,Republic of Moldova,Moldova,MD,MD,FA,FA
+country_name,617733,617733,Chetrosica Noua,Chetrosica Noua,Republic of Moldova,Moldova,MD,MD,ED,ED
+country_name,618108,618108,Chetrosu,Chetrosu,Republic of Moldova,Moldova,MD,MD,CU,CU
+country_name,617532,617532,Pirjota,Pirjota,Republic of Moldova,Moldova,MD,MD,RI,RI
+country_name,618563,618563,Borceag,Borceag,Republic of Moldova,Moldova,MD,MD,TA,TA
+country_name,618300,618300,Gaspar,Gaspar,Republic of Moldova,Moldova,MD,MD,ED,ED
+country_name,829965,829965,Hirbovatul Nou,Hirbovatul Nou,Republic of Moldova,Moldova,MD,MD,AN,AN
+country_name,617536,617536,Pirlita,Pirlita,Republic of Moldova,Moldova,MD,MD,FA,FA
+country_name,618029,618029,Copanca,Copanca,Republic of Moldova,Moldova,MD,MD,SN,SN
+country_name,618493,618493,Budai,Budai,Republic of Moldova,Moldova,MD,MD,TE,TE
+country_name,617527,617527,Ramazan,Ramazan,Republic of Moldova,Moldova,MD,MD,RI,RI
+country_name,618408,618408,Ciutesti,Ciutesti,Republic of Moldova,Moldova,MD,MD,NI,NI
+country_name,618066,618066,Cizlar,Cizlar,Republic of Moldova,Moldova,MD,MD,LE,LE
+country_name,617610,617610,Pererita,Pererita,Republic of Moldova,Moldova,MD,MD,BR,BR
+country_name,617583,617583,Plop-Stiubei,Plop-Stiubei,Republic of Moldova,Moldova,MD,MD,CS,CS
+country_name,617961,617961,Criva,Criva,Republic of Moldova,Moldova,MD,MD,BR,BR
+country_name,617598,617598,Petreni,Petreni,Republic of Moldova,Moldova,MD,MD,DR,DR
+country_name,617891,617891,Loganesti,Loganesti,Republic of Moldova,Moldova,MD,MD,HI,HI
+country_name,618056,618056,Cociulia,Cociulia,Republic of Moldova,Moldova,MD,MD,CT,CT
+country_name,618277,618277,Ghiduleni,Ghiduleni,Republic of Moldova,Moldova,MD,MD,RE,RE
+country_name,617087,617087,Viscauti,Viscauti,Republic of Moldova,Moldova,MD,MD,DU,DU
+country_name,617441,617441,Sanatauca,Sanatauca,Republic of Moldova,Moldova,MD,MD,FL,FL
+country_name,617408,617408,Sipoteni,Sipoteni,Republic of Moldova,Moldova,MD,MD,CL,CL
+country_name,618478,618478,Burlaceni,Burlaceni,Republic of Moldova,Moldova,MD,MD,CA,CA
+country_name,831050,831050,Chersac,Chersac,Republic of Moldova,Moldova,MD,MD,TE,TE
+country_name,618007,618007,Coscodeni,Coscodeni,Republic of Moldova,Moldova,MD,MD,SI,SI
+country_name,618317,618317,Fundul Galbenei,Fundul Galbenei,Republic of Moldova,Moldova,MD,MD,HI,HI
+country_name,829921,829921,Albinita,Albinita,Republic of Moldova,Moldova,MD,MD,AN,AN
+country_name,618216,618216,Gura Galbenei,Gura Galbenei,Republic of Moldova,Moldova,MD,MD,CM,CM
+country_name,617820,617820,Mereseni,Mereseni,Republic of Moldova,Moldova,MD,MD,HI,HI
+country_name,618095,618095,Hadarauti,Hadarauti,Republic of Moldova,Moldova,MD,MD,OC,OC
+country_name,617421,617421,Sirauti,Sirauti,Republic of Moldova,Moldova,MD,MD,BR,BR
+geoname_id,2780771,2780772,Doerfla,Doerfla,Austria,Austria,AT,AT,6,6
+geoname_id,2772673,11591926,Lendorf,Lendorf,Austria,Austria,AT,AT,2,2
+geoname_id,3472476,7774437,Alto Alegre,Alto Alegre,Brazil,Brazil,BR,BR,PR,PR
+geoname_id,3454128,3454130,Pereiras,Pereiras,Brazil,Brazil,BR,BR,SP,SP
+geoname_id,3451704,3451705,Registro,Registro,Brazil,Brazil,BR,BR,SP,SP
+geoname_id,3455937,3455938,Olhos d'Agua,Olhos d'Agua,Brazil,Brazil,BR,BR,MG,MG
+geoname_id,3470916,12179498,Bandeirantes,Bandeirantes,Brazil,Brazil,BR,BR,MG,MG
+geoname_id,1914127,1814343,Dahe,Dahe,China,China,CN,CN,SC,SC
+geoname_id,1812216,1921109,Dongtian,Dongtian,China,China,CN,CN,FJ,FJ
+geoname_id,8375599,1549648,Chapeng,Chapeng,China,China,CN,CN,JS,JS
+geoname_id,1929512,6420169,Dachong,Dachong,China,China,CN,CN,HN,HN
+geoname_id,1974600,2005499,Xi'an,Xi'an,China,China,CN,CN,FJ,FJ
+geoname_id,10001140,10001214,Hebei,Hebei,China,China,CN,CN,HE,HE
+geoname_id,1808505,8401944,Hengdian,Hengdian,China,China,CN,CN,ZJ,ZJ
+geoname_id,1809234,7057133,Gushan,Gushan,China,China,CN,CN,AH,AH
+geoname_id,3784965,3688855,Betania,Betania,Colombia,Colombia,CO,CO,ANT,ANT
+geoname_id,6552964,2934717,Duensen,Duensen,Germany,Germany,DE,DE,NI,NI
+geoname_id,2849155,2849157,Reichenbach,Reichenbach,Germany,Germany,DE,DE,TH,TH
+geoname_id,2879745,2879744,Leckwitz,Leckwitz,Germany,Germany,DE,DE,SN,SN
+geoname_id,1265130,10304425,Lambi,Lambi,India,India,IN,IN,PB,PB
+geoname_id,10736986,1257429,Sangaria,Sangaria,India,India,IN,IN,RJ,RJ
+geoname_id,10366764,1256126,Singtam,Singtam,India,India,IN,IN,SK,SK
+geoname_id,10875997,1273117,Devapur,Devapur,India,India,IN,IN,TG,TG
+geoname_id,11039037,1261760,Narsampet,Narsampet,India,India,IN,IN,TG,TG
+geoname_id,8044365,1634519,Namlea,Namlea,Indonesia,Indonesia,ID,ID,MA,MA
+geoname_id,6719385,6703057,Cinta Raja,Cinta Raja,Indonesia,Indonesia,ID,ID,SU,SU
+geoname_id,8965098,3174808,Leva,Leva,Italy,Italy,IT,IT,"34, VI","34, VI"
+geoname_id,3177752,9035358,Crosara,Crosara,Italy,Italy,IT,IT,"34, VI","34, VI"
+geoname_id,6232166,2207724,Devonport,Devonport,New Zealand,New Zealand,NZ,NZ,AUK,AUK
+geoname_id,2338219,2338221,Ikot Abasi,Ikot Abasi,Nigeria,Nigeria,NG,NG,AK,AK
+geoname_id,4562503,4562487,,,Puerto Rico,Puerto Rico,PR,PR,,
+geoname_id,3056568,3056567,Zavodie,Zavodie,Slovakia,Slovakia,SK,SK,ZI,ZI
+geoname_id,994860,994859,Inanda,Inanda,South Africa,South Africa,ZA,ZA,KZN,KZN
+geoname_id,2650467,12047975,East Dulwich,East Dulwich,United Kingdom,United Kingdom,GB,GB,"ENG, SWK","ENG, SWK"
+subdivision_codes,3572797,3572797,Black Point,Black Point,Bahamas,Bahamas,BS,BS,SA,BP
+subdivision_codes,359507,359507,Az Zabu,Az Zabu,Egypt,Egypt,EG,EG,MT,GZ
+subdivision_codes,794612,794612,Kovakuela,Kovakuela,Estonia,Estonia,EE,EE,84,"84, 480"
+subdivision_codes,588470,588470,Suurupi,Suurupi,Estonia,Estonia,EE,EE,37,"37, 198"
+subdivision_codes,590010,590010,Neeme,Neeme,Estonia,Estonia,EE,EE,37,"37, 245"
+subdivision_codes,587620,587620,Viiratsi,Viiratsi,Estonia,Estonia,EE,EE,84,"84, 899"
+subdivision_codes,7522295,7522295,,,Estonia,Estonia,EE,EE,65,"64, 284"
+subdivision_codes,588151,588151,Tuerisalu,Tuerisalu,Estonia,Estonia,EE,EE,37,"37, 198"
+subdivision_codes,587490,587490,Voki,Voki,Estonia,Estonia,EE,EE,82,"81, 557"
+subdivision_codes,590947,590947,Kuremäe,Kuremäe,Estonia,Estonia,EE,EE,44,"45, 130"
+subdivision_codes,589671,589671,Palamuse,Palamuse,Estonia,Estonia,EE,EE,49,"50, 247"
+subdivision_codes,590842,590842,Laeva,Laeva,Estonia,Estonia,EE,EE,78,"79, 796"
+subdivision_codes,590819,590819,Laehte,Laehte,Estonia,Estonia,EE,EE,78,"79, 796"
+subdivision_codes,591703,591703,Kallaste,Kallaste,Estonia,Estonia,EE,EE,78,"79, 586"
+subdivision_codes,589796,589796,Orissaare,Orissaare,Estonia,Estonia,EE,EE,74,"74, 714"
+subdivision_codes,590806,590806,Laitse,Laitse,Estonia,Estonia,EE,EE,37,"37, 726"
+subdivision_codes,589531,589531,Peetri,Peetri,Estonia,Estonia,EE,EE,37,"37, 653"
+subdivision_codes,591738,591738,Kaiu,Kaiu,Estonia,Estonia,EE,EE,70,"71, 668"
+subdivision_codes,591406,591406,Kiikla,Kiikla,Estonia,Estonia,EE,EE,44,"45, 130"
+subdivision_codes,587643,587643,Vihasoo,Vihasoo,Estonia,Estonia,EE,EE,37,"37, 353"
+subdivision_codes,590943,590943,Kuressaare,Kuressaare,Estonia,Estonia,EE,EE,84,"84, 899"
+subdivision_codes,592459,592459,Antsla,Antsla,Estonia,Estonia,EE,EE,86,"87, 142"
+subdivision_codes,592233,592233,Haabneeme,Haabneeme,Estonia,Estonia,EE,EE,37,"37, 890"
+subdivision_codes,591961,591961,,,Estonia,Estonia,EE,EE,51,52
+subdivision_codes,591871,591871,Juuru,Juuru,Estonia,Estonia,EE,EE,70,"71, 668"
+subdivision_codes,587769,587769,Vao,Vao,Estonia,Estonia,EE,EE,59,"60, 928"
+subdivision_codes,589386,589386,Polli,Polli,Estonia,Estonia,EE,EE,70,"71, 503"
+subdivision_codes,591036,591036,Kudjape,Kudjape,Estonia,Estonia,EE,EE,74,"74, 714"
+subdivision_codes,590443,590443,Maaritsa,Maaritsa,Estonia,Estonia,EE,EE,65,"64, 284"
+subdivision_codes,590026,590026,Nasva,Nasva,Estonia,Estonia,EE,EE,74,"74, 714"
+subdivision_codes,11776875,11776875,,,Estonia,Estonia,EE,EE,51,"52, 255"
+subdivision_codes,591276,591276,Koeru,Koeru,Estonia,Estonia,EE,EE,51,"52, 255"
+subdivision_codes,592551,592551,Albu,Albu,Estonia,Estonia,EE,EE,51,"52, 255"
+subdivision_codes,588015,588015,Uuemoisa,Uuemoisa,Estonia,Estonia,EE,EE,57,"56, 184"
+subdivision_codes,588215,588215,Tori,Tori,Estonia,Estonia,EE,EE,67,"68, 809"
+subdivision_codes,590031,590031,Narva,Narva,Estonia,Estonia,EE,EE,44,"45, 511"
+subdivision_codes,587739,587739,Värska,Värska,Estonia,Estonia,EE,EE,86,"87, 732"
+subdivision_codes,587923,587923,Väike-Maarja,Väike-Maarja,Estonia,Estonia,EE,EE,59,"60, 928"
+subdivision_codes,591919,591919,Jõelähtme Parish,Jõelähtme Parish,Estonia,Estonia,EE,EE,37,"37, 245"
+subdivision_codes,588092,588092,Ülenurme,Ülenurme,Estonia,Estonia,EE,EE,78,"79, 283"
+subdivision_codes,588335,588335,Tartu,Tartu,Estonia,Estonia,EE,EE,78,"79, 793"
+subdivision_codes,588348,588348,Tapa,Tapa,Estonia,Estonia,EE,EE,59,"60, 792"
+subdivision_codes,592593,592593,Ahja,Ahja,Estonia,Estonia,EE,EE,65,"64, 622"
+subdivision_codes,592526,592526,Alliku,Alliku,Estonia,Estonia,EE,EE,37,"37, 726"
+subdivision_codes,588849,588849,Saha,Saha,Estonia,Estonia,EE,EE,37,"37, 245"
+subdivision_codes,591475,591475,Kehtna,Kehtna,Estonia,Estonia,EE,EE,70,"71, 293"
+subdivision_codes,591589,591589,Karksi,Karksi,Estonia,Estonia,EE,EE,84,"84, 480"
+subdivision_codes,591367,591367,Kirbla,Kirbla,Estonia,Estonia,EE,EE,67,"68, 430"
+subdivision_codes,590332,590332,Maramaa,Maramaa,Estonia,Estonia,EE,EE,78,"79, 796"
+subdivision_codes,587571,587571,Vinni,Vinni,Estonia,Estonia,EE,EE,59,"60, 901"
+subdivision_codes,589147,589147,Randvere,Randvere,Estonia,Estonia,EE,EE,37,"37, 890"
+subdivision_codes,592633,592633,Aaspere,Aaspere,Estonia,Estonia,EE,EE,59,"60, 272"
+subdivision_codes,590078,590078,Mustla,Mustla,Estonia,Estonia,EE,EE,84,"84, 899"
+subdivision_codes,587856,587856,Valguta,Valguta,Estonia,Estonia,EE,EE,78,"79, 171"
+subdivision_codes,588686,588686,Sillamäe,Sillamäe,Estonia,Estonia,EE,EE,44,"45, 735"
+subdivision_codes,588209,588209,Torma,Torma,Estonia,Estonia,EE,EE,49,"50, 247"
+subdivision_codes,794065,794065,Sirvaku,Sirvaku,Estonia,Estonia,EE,EE,78,"79, 283"
+subdivision_codes,794964,794964,Laagri,Laagri,Estonia,Estonia,EE,EE,37,"37, 726"
+subdivision_codes,590939,590939,Kuressaare,Kuressaare,Estonia,Estonia,EE,EE,74,"74, 714"
+subdivision_codes,592607,592607,Aespa,Aespa,Estonia,Estonia,EE,EE,70,"71, 317"
+subdivision_codes,589115,589115,,,Estonia,Estonia,EE,EE,70,71
+subdivision_codes,588829,588829,Sakussaare,Sakussaare,Estonia,Estonia,EE,EE,59,"60, 272"
+subdivision_codes,588944,588944,Rõuge,Rõuge,Estonia,Estonia,EE,EE,86,"87, 698"
+subdivision_codes,793458,793458,Naepi,Naepi,Estonia,Estonia,EE,EE,59,"60, 661"
+subdivision_codes,592220,592220,Haaslava,Haaslava,Estonia,Estonia,EE,EE,78,"79, 291"
+subdivision_codes,8435738,8435738,Haabersti,Haabersti,Estonia,Estonia,EE,EE,37,"37, 784"
+subdivision_codes,589782,589782,Otepaeae,Otepaeae,Estonia,Estonia,EE,EE,82,"81, 557"
+subdivision_codes,591000,591000,Külitse,Külitse,Estonia,Estonia,EE,EE,78,"79, 283"
+subdivision_codes,590468,590468,Luunja,Luunja,Estonia,Estonia,EE,EE,78,"79, 432"
+subdivision_codes,587440,587440,Vändra,Vändra,Estonia,Estonia,EE,EE,67,"68, 638"
+subdivision_codes,589123,589123,Rannamõisa,Rannamõisa,Estonia,Estonia,EE,EE,37,"37, 198"
+subdivision_codes,7522443,7522443,,,Estonia,Estonia,EE,EE,37,"37, 141"
+subdivision_codes,588922,588922,Rummu,Rummu,Estonia,Estonia,EE,EE,37,"37, 890"
+subdivision_codes,794950,794950,Vaeaena-Joesuu,Vaeaena-Joesuu,Estonia,Estonia,EE,EE,37,"37, 198"
+subdivision_codes,588539,588539,Sutlema,Sutlema,Estonia,Estonia,EE,EE,70,"71, 317"
+subdivision_codes,591746,591746,Kaeina,Kaeina,Estonia,Estonia,EE,EE,39,"39, 205"
+subdivision_codes,591815,591815,Kaberneeme,Kaberneeme,Estonia,Estonia,EE,EE,37,"37, 245"
+subdivision_codes,589576,589576,,,Estonia,Estonia,EE,EE,67,68
+subdivision_codes,590747,590747,Lavassaare,Lavassaare,Estonia,Estonia,EE,EE,67,"68, 624"
+subdivision_codes,8618995,8618995,Raudvere,Raudvere,Estonia,Estonia,EE,EE,59,"60, 661"
+subdivision_codes,590561,590561,Lohusuu,Lohusuu,Estonia,Estonia,EE,EE,49,"50, 486"
+subdivision_codes,589700,589700,Päinurme,Päinurme,Estonia,Estonia,EE,EE,51,"52, 255"
+subdivision_codes,591901,591901,,,Estonia,Estonia,EE,EE,49,50
+subdivision_codes,591392,591392,Kiiu,Kiiu,Estonia,Estonia,EE,EE,37,"37, 353"
+subdivision_codes,793948,793948,Sinikuela,Sinikuela,Estonia,Estonia,EE,EE,78,"79, 796"
+subdivision_codes,592626,592626,Abja-Paluoja,Abja-Paluoja,Estonia,Estonia,EE,EE,84,"84, 480"
+subdivision_codes,591585,591585,Kärla Parish,Kärla Parish,Estonia,Estonia,EE,EE,74,"74, 714"
+subdivision_codes,589865,589865,Oisu,Oisu,Estonia,Estonia,EE,EE,84,"84, 480"
+subdivision_codes,587699,587699,Vasalemma,Vasalemma,Estonia,Estonia,EE,EE,37,"37, 431"
+subdivision_codes,588187,588187,Tsirguliina,Tsirguliina,Estonia,Estonia,EE,EE,82,"81, 855"
+subdivision_codes,592279,592279,Elva,Elva,Estonia,Estonia,EE,EE,78,"79, 171"
+subdivision_codes,795155,795155,Kesklinn,Kesklinn,Estonia,Estonia,EE,EE,37,"37, 784"
+subdivision_codes,592062,592062,Iisaku Parish,Iisaku Parish,Estonia,Estonia,EE,EE,44,"45, 130"
+subdivision_codes,590322,590322,Märjamaa,Märjamaa,Estonia,Estonia,EE,EE,70,"71, 503"
+subdivision_codes,591778,591778,Kaerepere,Kaerepere,Estonia,Estonia,EE,EE,70,"71, 293"
+subdivision_codes,793870,793870,Mulgi,Mulgi,Estonia,Estonia,EE,EE,84,"84, 480"
+subdivision_codes,588454,588454,Tabasalu,Tabasalu,Estonia,Estonia,EE,EE,37,"37, 198"
+subdivision_codes,591939,591939,Keila-Joa,Keila-Joa,Estonia,Estonia,EE,EE,37,"37, 198"
+subdivision_codes,591306,591306,Klooga,Klooga,Estonia,Estonia,EE,EE,37,"37, 431"
+subdivision_codes,590186,590186,Mõisaküla,Mõisaküla,Estonia,Estonia,EE,EE,84,"84, 480"
+subdivision_codes,591026,591026,Kuimetsa,Kuimetsa,Estonia,Estonia,EE,EE,70,"71, 668"
+subdivision_codes,588153,588153,Türi,Türi,Estonia,Estonia,EE,EE,51,"52, 834"
+subdivision_codes,591637,591637,Kaeravete,Kaeravete,Estonia,Estonia,EE,EE,51,"52, 255"
+subdivision_codes,588276,588276,Tiskre,Tiskre,Estonia,Estonia,EE,EE,37,"37, 198"
+subdivision_codes,587938,587938,Vaida,Vaida,Estonia,Estonia,EE,EE,37,"37, 653"
+subdivision_codes,591514,591514,Kaesukonna,Kaesukonna,Estonia,Estonia,EE,EE,51,"52, 255"
+subdivision_codes,793460,793460,Paeide,Paeide,Estonia,Estonia,EE,EE,59,"60, 661"
+subdivision_codes,590030,590030,Narva-Jõesuu,Narva-Jõesuu,Estonia,Estonia,EE,EE,44,"45, 514"
+subdivision_codes,592635,592635,AEaesmaee,AEaesmaee,Estonia,Estonia,EE,EE,37,"37, 726"
+subdivision_codes,591893,591893,Jõhvi,Jõhvi,Estonia,Estonia,EE,EE,44,"45, 251"
+subdivision_codes,589165,589165,Rakvere,Rakvere,Estonia,Estonia,EE,EE,59,"60, 663"
+subdivision_codes,587667,587667,Veriora,Veriora,Estonia,Estonia,EE,EE,65,"64, 708"
+subdivision_codes,591304,591304,Kloogaranna,Kloogaranna,Estonia,Estonia,EE,EE,37,"37, 431"
+subdivision_codes,591381,591381,Kilingi-Nõmme,Kilingi-Nõmme,Estonia,Estonia,EE,EE,67,"68, 712"
+subdivision_codes,588409,588409,Tallinn,Tallinn,Estonia,Estonia,EE,EE,37,"37, 784"
+subdivision_codes,591450,591450,Kernu Parish,Kernu Parish,Estonia,Estonia,EE,EE,37,"37, 726"
+subdivision_codes,587553,587553,Viru-Nigula,Viru-Nigula,Estonia,Estonia,EE,EE,59,"60, 903"
+subdivision_codes,590447,590447,Maardu,Maardu,Estonia,Estonia,EE,EE,37,"37, 446"
+subdivision_codes,592441,592441,Aravete,Aravete,Estonia,Estonia,EE,EE,51,"52, 255"
+subdivision_codes,589703,589703,Paikuse,Paikuse,Estonia,Estonia,EE,EE,67,"68, 624"
+subdivision_codes,591313,591313,Kiviõli,Kiviõli,Estonia,Estonia,EE,EE,44,"45, 442"
+subdivision_codes,592501,592501,Ambla,Ambla,Estonia,Estonia,EE,EE,51,"52, 255"
+subdivision_codes,591968,591968,Järva-Jaani,Järva-Jaani,Estonia,Estonia,EE,EE,51,"52, 255"
+subdivision_codes,592478,592478,Anija,Anija,Estonia,Estonia,EE,EE,37,"37, 141"
+subdivision_codes,588334,588334,,,Estonia,Estonia,EE,EE,78,79
+subdivision_codes,589922,589922,Karksi-Nuia,Karksi-Nuia,Estonia,Estonia,EE,EE,84,"84, 480"
+subdivision_codes,592334,592334,Avinurme,Avinurme,Estonia,Estonia,EE,EE,49,"50, 486"
+subdivision_codes,590067,590067,Mustvee,Mustvee,Estonia,Estonia,EE,EE,49,"50, 486"
+subdivision_codes,588264,588264,Toila,Toila,Estonia,Estonia,EE,EE,44,"45, 803"
+subdivision_codes,591476,591476,Kehra,Kehra,Estonia,Estonia,EE,EE,37,"37, 141"
+subdivision_codes,590397,590397,Mäetaguse,Mäetaguse,Estonia,Estonia,EE,EE,44,"45, 130"
+subdivision_codes,590839,590839,Lagedi,Lagedi,Estonia,Estonia,EE,EE,37,"37, 653"
+subdivision_codes,8620169,8620169,Saaremaa,Saaremaa,Estonia,Estonia,EE,EE,86,"87, 917"
+subdivision_codes,591076,591076,Kose,Kose,Estonia,Estonia,EE,EE,37,"37, 784"
+subdivision_codes,591545,591545,Kasemetsa,Kasemetsa,Estonia,Estonia,EE,EE,37,"37, 719"
+subdivision_codes,589253,589253,Püssi,Püssi,Estonia,Estonia,EE,EE,44,"45, 442"
+subdivision_codes,589379,589379,Põltsamaa,Põltsamaa,Estonia,Estonia,EE,EE,49,"50, 618"
+subdivision_codes,592052,592052,Ilmandu,Ilmandu,Estonia,Estonia,EE,EE,37,"37, 198"
+subdivision_codes,589426,589426,Pirita,Pirita,Estonia,Estonia,EE,EE,37,"37, 784"
+subdivision_codes,590280,590280,Melliste,Melliste,Estonia,Estonia,EE,EE,78,"79, 291"
+subdivision_codes,591951,591951,Jaervekuela,Jaervekuela,Estonia,Estonia,EE,EE,37,"37, 653"
+subdivision_codes,588792,588792,Särevere,Särevere,Estonia,Estonia,EE,EE,51,"52, 834"
+subdivision_codes,590637,590637,Liiva,Liiva,Estonia,Estonia,EE,EE,74,"74, 478"
+subdivision_codes,589116,589116,Rapla,Rapla,Estonia,Estonia,EE,EE,70,"71, 668"
+subdivision_codes,587517,587517,Võhma,Võhma,Estonia,Estonia,EE,EE,84,"84, 615"
+subdivision_codes,588673,588673,Sindi,Sindi,Estonia,Estonia,EE,EE,67,"68, 809"
+subdivision_codes,587491,587491,Voka,Voka,Estonia,Estonia,EE,EE,44,"45, 803"
+subdivision_codes,794471,794471,Parksepa,Parksepa,Estonia,Estonia,EE,EE,86,"87, 917"
+subdivision_codes,592200,592200,Haljala,Haljala,Estonia,Estonia,EE,EE,59,"60, 191"
+subdivision_codes,588365,588365,Tamsalu,Tamsalu,Estonia,Estonia,EE,EE,59,"60, 792"
+subdivision_codes,589166,589166,Rakke,Rakke,Estonia,Estonia,EE,EE,59,"60, 928"
+subdivision_codes,590977,590977,Kunda,Kunda,Estonia,Estonia,EE,EE,59,"60, 903"
+subdivision_codes,591632,591632,Kärdla,Kärdla,Estonia,Estonia,EE,EE,39,"39, 205"
+subdivision_codes,589638,589638,Palupera Parish,Palupera Parish,Estonia,Estonia,EE,EE,78,"79, 171"
+subdivision_codes,587728,587728,Vaskjala,Vaskjala,Estonia,Estonia,EE,EE,37,"37, 653"
+subdivision_codes,591783,591783,Kadrina,Kadrina,Estonia,Estonia,EE,EE,59,"60, 272"
+subdivision_codes,591403,591403,Kiili,Kiili,Estonia,Estonia,EE,EE,37,"37, 305"
+subdivision_codes,592208,592208,Hagudi,Hagudi,Estonia,Estonia,EE,EE,70,"71, 668"
+subdivision_codes,589688,589688,Pajusti,Pajusti,Estonia,Estonia,EE,EE,59,"60, 901"
+subdivision_codes,591260,591260,Kohtla-Järve,Kohtla-Järve,Estonia,Estonia,EE,EE,44,"45, 321"
+subdivision_codes,11776872,11776872,,,Estonia,Estonia,EE,EE,39,"39, 205"
+subdivision_codes,590111,590111,Muraste,Muraste,Estonia,Estonia,EE,EE,37,"37, 198"
+subdivision_codes,589373,589373,,,Estonia,Estonia,EE,EE,65,64
+subdivision_codes,592399,592399,Arukuela,Arukuela,Estonia,Estonia,EE,EE,59,"60, 901"
+subdivision_codes,590856,590856,,,Estonia,Estonia,EE,EE,57,56
+subdivision_codes,8618826,8618826,Metsanurme,Metsanurme,Estonia,Estonia,EE,EE,37,"37, 719"
+subdivision_codes,590978,590978,Kumna,Kumna,Estonia,Estonia,EE,EE,37,"37, 198"
+subdivision_codes,589709,589709,Paide,Paide,Estonia,Estonia,EE,EE,51,"52, 567"
+subdivision_codes,588370,588370,Tammneeme,Tammneeme,Estonia,Estonia,EE,EE,37,"37, 890"
+subdivision_codes,592377,592377,Assaku,Assaku,Estonia,Estonia,EE,EE,37,"37, 653"
+subdivision_codes,592225,592225,Haapsalu,Haapsalu,Estonia,Estonia,EE,EE,57,"56, 184"
+subdivision_codes,587638,587638,Vihtra,Vihtra,Estonia,Estonia,EE,EE,67,"68, 638"
+subdivision_codes,592396,592396,Arukuela,Arukuela,Estonia,Estonia,EE,EE,37,"37, 651"
+subdivision_codes,591348,591348,Kirimaee,Kirimaee,Estonia,Estonia,EE,EE,57,"56, 441"
+subdivision_codes,588831,588831,Saku,Saku,Estonia,Estonia,EE,EE,37,"37, 719"
+subdivision_codes,592380,592380,Arvila,Arvila,Estonia,Estonia,EE,EE,44,"45, 130"
+subdivision_codes,592096,592096,Hosby,Hosby,Estonia,Estonia,EE,EE,57,"56, 907"
+subdivision_codes,591682,591682,Kambja,Kambja,Estonia,Estonia,EE,EE,78,"79, 283"
+subdivision_codes,589933,589933,Nõo,Nõo,Estonia,Estonia,EE,EE,78,"79, 528"
+subdivision_codes,793973,793973,Vaeaegvere,Vaeaegvere,Estonia,Estonia,EE,EE,78,"79, 796"
+subdivision_codes,589205,589205,Rae Parish,Rae Parish,Estonia,Estonia,EE,EE,37,"37, 653"
+subdivision_codes,592172,592172,Harju,Harju,Estonia,Estonia,EE,EE,39,"39, 205"
+subdivision_codes,590715,590715,Lehtse,Lehtse,Estonia,Estonia,EE,EE,59,"60, 792"
+subdivision_codes,587876,587876,Valga,Valga,Estonia,Estonia,EE,EE,82,"81, 855"
+subdivision_codes,590753,590753,Laulasmaa,Laulasmaa,Estonia,Estonia,EE,EE,37,"37, 431"
+subdivision_codes,588254,588254,Tolla,Tolla,Estonia,Estonia,EE,EE,67,"68, 712"
+subdivision_codes,590818,590818,Laiakuela,Laiakuela,Estonia,Estonia,EE,EE,37,"37, 784"
+subdivision_codes,588799,588799,Sangaste,Sangaste,Estonia,Estonia,EE,EE,82,"81, 557"
+subdivision_codes,589657,589657,Palivere,Palivere,Estonia,Estonia,EE,EE,57,"56, 441"
+subdivision_codes,588449,588449,Taebla,Taebla,Estonia,Estonia,EE,EE,57,"56, 441"
+subdivision_codes,589578,589578,Pärnu-Jaagupi,Pärnu-Jaagupi,Estonia,Estonia,EE,EE,67,"68, 638"
+subdivision_codes,587629,587629,Viimsi,Viimsi,Estonia,Estonia,EE,EE,37,"37, 890"
+subdivision_codes,11776869,11776869,,,Estonia,Estonia,EE,EE,84,"84, 480"
+subdivision_codes,587648,587648,Vidruka,Vidruka,Estonia,Estonia,EE,EE,57,"56, 441"
+subdivision_codes,588532,588532,Suure-Jaani,Suure-Jaani,Estonia,Estonia,EE,EE,84,"84, 615"
+subdivision_codes,590888,590888,Kuusalu,Kuusalu,Estonia,Estonia,EE,EE,37,"37, 353"
+subdivision_codes,588375,588375,Tammistu,Tammistu,Estonia,Estonia,EE,EE,78,"79, 796"
+subdivision_codes,591264,591264,Kohtla-Nomme,Kohtla-Nomme,Estonia,Estonia,EE,EE,44,"45, 803"
+subdivision_codes,591876,591876,Jüri,Jüri,Estonia,Estonia,EE,EE,37,"37, 653"
+subdivision_codes,587448,587448,,,Estonia,Estonia,EE,EE,86,87
+subdivision_codes,589663,589663,Paldiski,Paldiski,Estonia,Estonia,EE,EE,37,"37, 431"
+subdivision_codes,591086,591086,Kõrveküla,Kõrveküla,Estonia,Estonia,EE,EE,78,"79, 796"
+subdivision_codes,794979,794979,Aaviku,Aaviku,Estonia,Estonia,EE,EE,37,"37, 653"
+subdivision_codes,589117,589117,Raepina,Raepina,Estonia,Estonia,EE,EE,65,"64, 708"
+subdivision_codes,589375,589375,Põlva,Põlva,Estonia,Estonia,EE,EE,65,"64, 622"
+subdivision_codes,587577,587577,Viljandi,Viljandi,Estonia,Estonia,EE,EE,84,"84, 897"
+subdivision_codes,590552,590552,Loksa,Loksa,Estonia,Estonia,EE,EE,37,"37, 424"
+subdivision_codes,592214,592214,Habaja,Habaja,Estonia,Estonia,EE,EE,37,"37, 338"
+subdivision_codes,592437,592437,Ardu,Ardu,Estonia,Estonia,EE,EE,37,"37, 338"
+subdivision_codes,589085,589085,Ravila,Ravila,Estonia,Estonia,EE,EE,37,"37, 338"
+subdivision_codes,589012,589012,Risti,Risti,Estonia,Estonia,EE,EE,67,"68, 430"
+subdivision_codes,591678,591678,Kanavere,Kanavere,Estonia,Estonia,EE,EE,37,"37, 338"
+subdivision_codes,591070,591070,Kostivere,Kostivere,Estonia,Estonia,EE,EE,37,"37, 245"
+subdivision_codes,588780,588780,Saue,Saue,Estonia,Estonia,EE,EE,37,"37, 726"
+subdivision_codes,592168,592168,Harku,Harku,Estonia,Estonia,EE,EE,37,"37, 726"
+subdivision_codes,588221,588221,Toravere,Toravere,Estonia,Estonia,EE,EE,78,"79, 528"
+subdivision_codes,590657,590657,Lihula,Lihula,Estonia,Estonia,EE,EE,67,"68, 430"
+subdivision_codes,587450,587450,Võru,Võru,Estonia,Estonia,EE,EE,86,"87, 919"
+subdivision_codes,589243,589243,Puurmani,Puurmani,Estonia,Estonia,EE,EE,49,"50, 618"
+subdivision_codes,587945,587945,Vahi,Vahi,Estonia,Estonia,EE,EE,37,"37, 198"
+subdivision_codes,8618797,8618797,Taru,Taru,Estonia,Estonia,EE,EE,59,"60, 661"
+subdivision_codes,590537,590537,Loo,Loo,Estonia,Estonia,EE,EE,37,"37, 245"
+subdivision_codes,591472,591472,Keila,Keila,Estonia,Estonia,EE,EE,37,"37, 296"
+subdivision_codes,591265,591265,Kohila,Kohila,Estonia,Estonia,EE,EE,70,"71, 317"
+subdivision_codes,591074,591074,Kose-Uuemoisa,Kose-Uuemoisa,Estonia,Estonia,EE,EE,37,"37, 338"
+subdivision_codes,591965,591965,Järvakandi,Järvakandi,Estonia,Estonia,EE,EE,70,"71, 293"
+subdivision_codes,589223,589223,Raasiku,Raasiku,Estonia,Estonia,EE,EE,37,"37, 651"
+subdivision_codes,588204,588204,Tõrva,Tõrva,Estonia,Estonia,EE,EE,82,"81, 824"
+subdivision_codes,589580,589580,Pärnu,Pärnu,Estonia,Estonia,EE,EE,67,"68, 624"
+subdivision_codes,588157,588157,Turba,Turba,Estonia,Estonia,EE,EE,37,"37, 726"
+subdivision_codes,793457,793457,Someru,Someru,Estonia,Estonia,EE,EE,59,"60, 661"
+subdivision_codes,793343,793343,Rahivere,Rahivere,Estonia,Estonia,EE,EE,49,"50, 247"
+subdivision_codes,587774,587774,Vandjala,Vandjala,Estonia,Estonia,EE,EE,37,"37, 245"
+subdivision_codes,588537,588537,Sutlepa,Sutlepa,Estonia,Estonia,EE,EE,57,"56, 441"
+subdivision_codes,592232,592232,Häädemeeste,Häädemeeste,Estonia,Estonia,EE,EE,67,"68, 214"
+subdivision_codes,591902,591902,Jõgeva,Jõgeva,Estonia,Estonia,EE,EE,49,"50, 247"
+subdivision_codes,592379,592379,Aseri,Aseri,Estonia,Estonia,EE,EE,59,"60, 903"
+subdivision_codes,590873,590873,Laabi,Laabi,Estonia,Estonia,EE,EE,37,"37, 198"
+subdivision_codes,590581,590581,Liivamaee,Liivamaee,Estonia,Estonia,EE,EE,37,"37, 245"
+subdivision_codes,587704,587704,Vatla,Vatla,Estonia,Estonia,EE,EE,67,"68, 430"
+subdivision_codes,2973864,2973864,Speloncato,Speloncato,France,France,FR,FR,"COR, 2B","20R, 2B"
+subdivision_codes,3014456,3014456,Guagno,Guagno,France,France,FR,FR,"COR, 2A","20R, 2A"
+subdivision_codes,2989770,2989770,Occhiatana,Occhiatana,France,France,FR,FR,"COR, 2B","20R, 2B"
+subdivision_codes,3038334,3038334,Ajaccio,Ajaccio,France,France,FR,FR,"COR, 2A","20R, 2A"
+subdivision_codes,3023411,3023411,Coti-Chiavari,Coti-Chiavari,France,France,FR,FR,"COR, 2A","20R, 2A"
+subdivision_codes,3034640,3034640,Bastia,Bastia,France,France,FR,FR,"COR, 2B","20R, 2B"
+subdivision_codes,2975949,2975949,Sarrola,Sarrola,France,France,FR,FR,"COR, 2A","20R, 2A"
+subdivision_codes,3031537,3031537,Borgo,Borgo,France,France,FR,FR,"COR, 2B","20R, 2B"
+subdivision_codes,3014517,3014517,Grosseto-Prugna,Grosseto-Prugna,France,France,FR,FR,"COR, 2A","20R, 2A"
+subdivision_codes,2974342,2974342,Sollacaro,Sollacaro,France,France,FR,FR,"COR, 2A","20R, 2A"
+subdivision_codes,6620209,6620209,Bastelicaccia,Bastelicaccia,France,France,FR,FR,"COR, 2A","20R, 2A"
+subdivision_codes,6620222,6620222,Patrimonio,Patrimonio,France,France,FR,FR,"COR, 2B","20R, 2B"
+subdivision_codes,2976121,2976121,Santa-Reparata-di-Balagna,Santa-Reparata-di-Balagna,France,France,FR,FR,"COR, 2B","20R, 2B"
+subdivision_codes,2992470,2992470,Monticello,Monticello,France,France,FR,FR,"COR, 2B","20R, 2B"
+subdivision_codes,3031801,3031801,Bonifacio,Bonifacio,France,France,FR,FR,"COR, 2A","20R, 2A"
+subdivision_codes,2985947,2985947,Porto-Vecchio,Porto-Vecchio,France,France,FR,FR,"COR, 2A","20R, 2A"
+subdivision_codes,2997248,2997248,Lucciana,Lucciana,France,France,FR,FR,"COR, 2B","20R, 2B"
+subdivision_codes,2970027,2970027,Venzolasca,Venzolasca,France,France,FR,FR,"COR, 2B","20R, 2B"
+subdivision_codes,2967125,2967125,Zonza,Zonza,France,France,FR,FR,"COR, 2A","20R, 2A"
+subdivision_codes,6620213,6620213,Cagnano,Cagnano,France,France,FR,FR,"COR, 2B","20R, 2B"
+subdivision_codes,2986567,2986567,Poggio-di-Venaco,Poggio-di-Venaco,France,France,FR,FR,"COR, 2B","20R, 2B"
+subdivision_codes,2983979,2983979,Renno,Renno,France,France,FR,FR,"COR, 2A","20R, 2A"
+subdivision_codes,2991140,2991140,Muro,Muro,France,France,FR,FR,"COR, 2B","20R, 2B"
+subdivision_codes,2976202,2976202,San-Giuliano,San-Giuliano,France,France,FR,FR,"COR, 2B","20R, 2B"
+subdivision_codes,3018758,3018758,Feliceto,Feliceto,France,France,FR,FR,"COR, 2B","20R, 2B"
+subdivision_codes,3005755,3005755,Lavatoggio,Lavatoggio,France,France,FR,FR,"COR, 2B","20R, 2B"
+subdivision_codes,2985266,2985266,Propriano,Propriano,France,France,FR,FR,"COR, 2A","20R, 2A"
+subdivision_codes,2973505,2973505,Talasani,Talasani,France,France,FR,FR,"COR, 2B","20R, 2B"
+subdivision_codes,3023773,3023773,Corbara,Corbara,France,France,FR,FR,"COR, 2B","20R, 2B"
+subdivision_codes,6620225,6620225,Rogliano,Rogliano,France,France,FR,FR,"COR, 2B","20R, 2B"
+subdivision_codes,3029090,3029090,Calvi,Calvi,France,France,FR,FR,"COR, 2B","20R, 2B"
+subdivision_codes,3018167,3018167,Folelli,Folelli,France,France,FR,FR,"COR, 2B","20R, 2B"
+subdivision_codes,2989579,2989579,Olmeto,Olmeto,France,France,FR,FR,"COR, 2A","20R, 2A"
+subdivision_codes,3028651,3028651,Carbuccia,Carbuccia,France,France,FR,FR,"COR, 2A","20R, 2A"
+subdivision_codes,3028480,3028480,Casalabriva,Casalabriva,France,France,FR,FR,"COR, 2A","20R, 2A"
+subdivision_codes,2995710,2995710,Farinole,Farinole,France,France,FR,FR,"COR, 2B","20R, 2B"
+subdivision_codes,2987389,2987389,Pianottoli-Caldarello,Pianottoli-Caldarello,France,France,FR,FR,"COR, 2A","20R, 2A"
+subdivision_codes,3029145,3029145,Calcatoggio,Calcatoggio,France,France,FR,FR,"COR, 2A","20R, 2A"
+subdivision_codes,2985978,2985978,Porticcio,Porticcio,France,France,FR,FR,"COR, 2A","20R, 2A"
+subdivision_codes,2976140,2976140,Santa-Maria-di-Lota,Santa-Maria-di-Lota,France,France,FR,FR,"COR, 2B","20R, 2B"
+subdivision_codes,3002575,3002575,Travo,Travo,France,France,FR,FR,"COR, 2B","20R, 2B"
+subdivision_codes,3029140,3029140,Calenzana,Calenzana,France,France,FR,FR,"COR, 2B","20R, 2B"
+subdivision_codes,2987209,2987209,Pietra-di-Verde,Pietra-di-Verde,France,France,FR,FR,"COR, 2B","20R, 2B"
+subdivision_codes,2993460,2993460,Monacia-d'Aullene,Monacia-d'Aullene,France,France,FR,FR,"COR, 2A","20R, 2A"
+subdivision_codes,3038208,3038208,Algajola,Algajola,France,France,FR,FR,"COR, 2B","20R, 2B"
+subdivision_codes,11819276,11819276,Borgo,Borgo,France,France,FR,FR,"COR, 2B","20R, 2B"
+subdivision_codes,3028368,3028368,Castello-di-Rostino,Castello-di-Rostino,France,France,FR,FR,"COR, 2B","20R, 2B"
+subdivision_codes,6620217,6620217,Luri,Luri,France,France,FR,FR,"COR, 2B","20R, 2B"
+subdivision_codes,2976145,2976145,Santa-Lucia-di-Moriani,Santa-Lucia-di-Moriani,France,France,FR,FR,"COR, 2B","20R, 2B"
+subdivision_codes,2970033,2970033,Ventiseri,Ventiseri,France,France,FR,FR,"COR, 2B","20R, 2B"
+subdivision_codes,2982108,2982108,Rutali,Rutali,France,France,FR,FR,"COR, 2B","20R, 2B"
+subdivision_codes,3038244,3038244,Albitreccia,Albitreccia,France,France,FR,FR,"COR, 2A","20R, 2A"
+subdivision_codes,3028377,3028377,Castellare-di-Casinca,Castellare-di-Casinca,France,France,FR,FR,"COR, 2B","20R, 2B"
+subdivision_codes,2967716,2967716,Volpajola,Volpajola,France,France,FR,FR,"COR, 2B","20R, 2B"
+subdivision_codes,2998330,2998330,L'Île-Rousse,L'Île-Rousse,France,France,FR,FR,"COR, 2B","20R, 2B"
+subdivision_codes,2993438,2993438,Moncale,Moncale,France,France,FR,FR,"COR, 2B","20R, 2B"
+subdivision_codes,2969578,2969578,Vescovato,Vescovato,France,France,FR,FR,"COR, 2B","20R, 2B"
+subdivision_codes,2974157,2974157,Sotta,Sotta,France,France,FR,FR,"COR, 2A","20R, 2A"
+subdivision_codes,3023506,3023506,Corte,Corte,France,France,FR,FR,"COR, 2B","20R, 2B"
+subdivision_codes,3032668,3032668,Biguglia,Biguglia,France,France,FR,FR,"COR, 2B","20R, 2B"
+subdivision_codes,2975931,2975931,Sartène,Sartène,France,France,FR,FR,"COR, 2A","20R, 2A"
+subdivision_codes,6619555,6619555,Lecci,Lecci,France,France,FR,FR,"COR, 2A","20R, 2A"
+subdivision_codes,2976144,2976144,Sainte-Lucie-de-Tallano,Sainte-Lucie-de-Tallano,France,France,FR,FR,"COR, 2A","20R, 2A"
+subdivision_codes,3028169,3028169,Cauro,Cauro,France,France,FR,FR,"COR, 2A","20R, 2A"
+subdivision_codes,2967831,2967831,Vivario,Vivario,France,France,FR,FR,"COR, 2B","20R, 2B"
+subdivision_codes,3038305,3038305,Alata,Alata,France,France,FR,FR,"COR, 2A","20R, 2A"
+subdivision_codes,3016133,3016133,Ghisonaccia,Ghisonaccia,France,France,FR,FR,"COR, 2B","20R, 2B"
+subdivision_codes,2969386,2969386,Vico,Vico,France,France,FR,FR,"COR, 2A","20R, 2A"
+subdivision_codes,3027804,3027804,Cervione,Cervione,France,France,FR,FR,"COR, 2B","20R, 2B"
+subdivision_codes,3038653,3038653,Afa,Afa,France,France,FR,FR,"COR, 2A","20R, 2A"
+subdivision_codes,2987989,2987989,Peri,Peri,France,France,FR,FR,"COR, 2A","20R, 2A"
+subdivision_codes,3038225,3038225,Aléria,Aléria,France,France,FR,FR,"COR, 2B","20R, 2B"
+subdivision_codes,2991727,2991727,Morosaglia,Morosaglia,France,France,FR,FR,"COR, 2B","20R, 2B"
+subdivision_codes,3016890,3016890,Furiani,Furiani,France,France,FR,FR,"COR, 2B","20R, 2B"
+subdivision_codes,2985196,2985196,Prunelli-di-Fiumorbo,Prunelli-di-Fiumorbo,France,France,FR,FR,"COR, 2B","20R, 2B"
+subdivision_codes,2987192,2987192,Pietrosella,Pietrosella,France,France,FR,FR,"COR, 2A","20R, 2A"
+subdivision_codes,2997132,2997132,Lumio,Lumio,France,France,FR,FR,"COR, 2B","20R, 2B"
+subdivision_codes,3028481,3028481,Casaglione,Casaglione,France,France,FR,FR,"COR, 2A","20R, 2A"
+subdivision_codes,2976014,2976014,Sari-Solenzara,Sari-Solenzara,France,France,FR,FR,"COR, 2A","20R, 2A"
+subdivision_codes,3024444,3024444,Coggia Maio,Coggia Maio,France,France,FR,FR,"COR, 2A","20R, 2A"
+subdivision_codes,6620231,6620231,Ville-di-Pietrabugno,Ville-di-Pietrabugno,France,France,FR,FR,"COR, 2B","20R, 2B"
+subdivision_codes,3021976,3021976,Cuttoli-Corticchiato,Cuttoli-Corticchiato,France,France,FR,FR,"COR, 2A","20R, 2A"
+subdivision_codes,3037372,3037372,Appietto,Appietto,France,France,FR,FR,"COR, 2A","20R, 2A"
+subdivision_codes,2976180,2976180,San-Nicolao,San-Nicolao,France,France,FR,FR,"COR, 2B","20R, 2B"
+subdivision_codes,3028606,3028606,Cargèse,Cargèse,France,France,FR,FR,"COR, 2A","20R, 2A"
+subdivision_codes,3037305,3037305,Arbellara,Arbellara,France,France,FR,FR,"COR, 2A","20R, 2A"
+subdivision_codes,2972527,2972527,Figari,Figari,France,France,FR,FR,"COR, 2A","20R, 2A"
+subdivision_codes,2988063,2988063,Penta-di-Casinca,Penta-di-Casinca,France,France,FR,FR,"COR, 2B","20R, 2B"
+subdivision_codes,2974452,2974452,Sisco,Sisco,France,France,FR,FR,"COR, 2B","20R, 2B"
+subdivision_codes,2989625,2989625,Oletta,Oletta,France,France,FR,FR,"COR, 2B","20R, 2B"
+subdivision_codes,3030561,3030561,Brando,Brando,France,France,FR,FR,"COR, 2B","20R, 2B"
+subdivision_codes,2629833,2629833,Norðurþing,Norðurþing,Iceland,Iceland,IS,IS,6,"6, NOR"
+subdivision_codes,3413604,3413604,Selfoss,Selfoss,Iceland,Iceland,IS,IS,8,"8, SFA"
+subdivision_codes,3414222,3414222,Njardvik,Njardvik,Iceland,Iceland,IS,IS,2,"2, RKN"
+subdivision_codes,3416439,3416439,Hellissandur,Hellissandur,Iceland,Iceland,IS,IS,3,"3, SNF"
+subdivision_codes,3418226,3418226,Bildudalur,Bildudalur,Iceland,Iceland,IS,IS,4,"4, VER"
+subdivision_codes,2628020,2628020,Neskaupstadur,Neskaupstadur,Iceland,Iceland,IS,IS,7,"7, FJD"
+subdivision_codes,3418130,3418130,Blonduos,Blonduos,Iceland,Iceland,IS,IS,5,"5, BLO"
+subdivision_codes,3413829,3413829,Reykjavik,Reykjavik,Iceland,Iceland,IS,IS,1,"1, RKV"
+subdivision_codes,2629105,2629105,Kópasker,Kópasker,Iceland,Iceland,IS,IS,6,"6, NOR"
+subdivision_codes,3415720,3415720,Hvolsvollur,Hvolsvollur,Iceland,Iceland,IS,IS,8,"8, RGE"
+subdivision_codes,3412093,3412093,Vestmannaeyjar,Vestmannaeyjar,Iceland,Iceland,IS,IS,8,"8, VEM"
+subdivision_codes,8644037,8644037,Reykjanesbaer,Reykjanesbaer,Iceland,Iceland,IS,IS,2,"2, RKN"
+subdivision_codes,3418076,3418076,Borgarnes,Borgarnes,Iceland,Iceland,IS,IS,3,"3, BOG"
+subdivision_codes,3418653,3418653,Akranes,Akranes,Iceland,Iceland,IS,IS,3,"3, AKN"
+subdivision_codes,3416453,3416453,Hella,Hella,Iceland,Iceland,IS,IS,8,"8, RGY"
+subdivision_codes,3415212,3415212,Kopavogur,Kopavogur,Iceland,Iceland,IS,IS,1,"1, KOP"
+subdivision_codes,2632132,2632132,Egilsstaðir,Egilsstaðir,Iceland,Iceland,IS,IS,7,"7, FLD"
+subdivision_codes,3415811,3415811,Hvammstangi,Hvammstangi,Iceland,Iceland,IS,IS,5,"5, HUV"
+subdivision_codes,2630299,2630299,Hofn,Hofn,Iceland,Iceland,IS,IS,7,"7, SHF"
+subdivision_codes,3413877,3413877,Reykholar,Reykholar,Iceland,Iceland,IS,IS,4,"4, RHH"
+subdivision_codes,3413008,3413008,Stokkseyri,Stokkseyri,Iceland,Iceland,IS,IS,8,"8, SFA"
+subdivision_codes,6951090,6951090,Flúðir,Flúðir,Iceland,Iceland,IS,IS,8,"8, HRU"
+subdivision_codes,3414979,3414979,Seltjarnarnes,Seltjarnarnes,Iceland,Iceland,IS,IS,1,"1, SEL"
+subdivision_codes,2625499,2625499,Varmahlid,Varmahlid,Iceland,Iceland,IS,IS,5,"5, SSF"
+subdivision_codes,3417528,3417528,Eyrarbakki,Eyrarbakki,Iceland,Iceland,IS,IS,8,"8, SFA"
+subdivision_codes,3415496,3415496,Keflavik,Keflavik,Iceland,Iceland,IS,IS,2,"2, RKN"
+subdivision_codes,2625189,2625189,Vopnafjordur,Vopnafjordur,Iceland,Iceland,IS,IS,7,"7, VOP"
+subdivision_codes,2632287,2632287,Dalvik,Dalvik,Iceland,Iceland,IS,IS,6,"6, DAV"
+subdivision_codes,3414079,3414079,Olafsvik,Olafsvik,Iceland,Iceland,IS,IS,3,"3, SNF"
+subdivision_codes,2633274,2633274,Akureyri,Akureyri,Iceland,Iceland,IS,IS,6,"6, AKU"
+subdivision_codes,3414868,3414868,Laugaras,Laugaras,Iceland,Iceland,IS,IS,8,"8, BLA"
+subdivision_codes,3412589,3412589,Thorlakshofn,Thorlakshofn,Iceland,Iceland,IS,IS,8,"8, SOL"
+subdivision_codes,2629306,2629306,Kirkjubaejarklaustur,Kirkjubaejarklaustur,Iceland,Iceland,IS,IS,8,"8, SKF"
+subdivision_codes,3412878,3412878,Sudureyri,Sudureyri,Iceland,Iceland,IS,IS,4,"4, ISA"
+subdivision_codes,3412655,3412655,Thingeyri,Thingeyri,Iceland,Iceland,IS,IS,4,"4, ISA"
+subdivision_codes,3417195,3417195,Garðabaer,Garðabaer,Iceland,Iceland,IS,IS,1,"1, GAR"
+subdivision_codes,2630277,2630277,Hofsos,Hofsos,Iceland,Iceland,IS,IS,5,"5, SSF"
+subdivision_codes,2627309,2627309,Sauðarkrokur,Sauðarkrokur,Iceland,Iceland,IS,IS,5,"5, SSF"
+subdivision_codes,2627130,2627130,Siglufjordur,Siglufjordur,Iceland,Iceland,IS,IS,6,"6, FJL"
+subdivision_codes,2625252,2625252,Vik,Vik,Iceland,Iceland,IS,IS,8,"8, MYR"
+subdivision_codes,3415021,3415021,Mosfellsbaer,Mosfellsbaer,Iceland,Iceland,IS,IS,1,"1, MOS"
+subdivision_codes,2632552,2632552,Breiðdalsvík,Breiðdalsvík,Iceland,Iceland,IS,IS,7,"7, FJD"
+subdivision_codes,3416706,3416706,Hafnarfjordur,Hafnarfjordur,Iceland,Iceland,IS,IS,1,"1, HAF"
+subdivision_codes,3417878,3417878,Búðardalur,Búðardalur,Iceland,Iceland,IS,IS,3,"3, DAB"
+subdivision_codes,3416839,3416839,Grundarfjordur,Grundarfjordur,Iceland,Iceland,IS,IS,3,"3, GRU"
+subdivision_codes,2632428,2632428,Reydarfjordur,Reydarfjordur,Iceland,Iceland,IS,IS,7,"7, FJD"
+subdivision_codes,3412888,3412888,Stykkishólmur,Stykkishólmur,Iceland,Iceland,IS,IS,3,"3, STY"
+subdivision_codes,3228381,3228381,Bakkagerði,Bakkagerði,Iceland,Iceland,IS,IS,7,"7, BFJ"
+subdivision_codes,3416144,3416144,Holmavik,Holmavik,Iceland,Iceland,IS,IS,4,"4, STR"
+subdivision_codes,3426209,3426209,,,Iceland,Iceland,IS,IS,3,"3, SNF"
+subdivision_codes,2632028,2632028,Eskifjordur,Eskifjordur,Iceland,Iceland,IS,IS,7,"7, FJD"
+subdivision_codes,2629301,2629301,Stodvarfjordur,Stodvarfjordur,Iceland,Iceland,IS,IS,7,"7, FJD"
+subdivision_codes,3416694,3416694,Hafnir,Hafnir,Iceland,Iceland,IS,IS,2,"2, RKN"
+subdivision_codes,2627140,2627140,Seyðisfjörður,Seyðisfjörður,Iceland,Iceland,IS,IS,7,"7, SEY"
+subdivision_codes,3417363,3417363,Flateyri,Flateyri,Iceland,Iceland,IS,IS,4,"4, ISA"
+subdivision_codes,8643913,8643913,Grimsey,Grimsey,Iceland,Iceland,IS,IS,6,"6, AKU"
+subdivision_codes,3415667,3415667,Isafjordur,Isafjordur,Iceland,Iceland,IS,IS,4,"4, ISA"
+subdivision_codes,3416888,3416888,Grindavik,Grindavik,Iceland,Iceland,IS,IS,2,"2, GRN"
+subdivision_codes,3416248,3416248,Skagastrond,Skagastrond,Iceland,Iceland,IS,IS,5,"5, SSS"
+subdivision_codes,3418112,3418112,Bolungarvik,Bolungarvik,Iceland,Iceland,IS,IS,4,"4, BOL"
+subdivision_codes,3416267,3416267,Hnifsdalur,Hnifsdalur,Iceland,Iceland,IS,IS,4,"4, ISA"
+subdivision_codes,2632226,2632226,Djupivogur,Djupivogur,Iceland,Iceland,IS,IS,7,"7, DJU"
+subdivision_codes,3415761,3415761,Hveragerdi,Hveragerdi,Iceland,Iceland,IS,IS,8,"8, HVE"
+subdivision_codes,2627843,2627843,Olafsfjordur,Olafsfjordur,Iceland,Iceland,IS,IS,6,"6, FJL"
+subdivision_codes,3412887,3412887,Sudavik,Sudavik,Iceland,Iceland,IS,IS,4,"4, SDV"
+subdivision_codes,3417972,3417972,Alftanes,Alftanes,Iceland,Iceland,IS,IS,1,"1, GAR"
+subdivision_codes,3414856,3414856,Laugarvatn,Laugarvatn,Iceland,Iceland,IS,IS,8,"8, BLA"
+subdivision_codes,3413876,3413876,Reykholt,Reykholt,Iceland,Iceland,IS,IS,3,"3, BOG"
+subdivision_codes,3412011,3412011,Vogar,Vogar,Iceland,Iceland,IS,IS,2,"2, SVG"
+subdivision_codes,3412173,3412173,Patreksfjordur,Patreksfjordur,Iceland,Iceland,IS,IS,4,"4, VER"
+subdivision_codes,8643948,8643948,Laugar,Laugar,Iceland,Iceland,IS,IS,6,"6, THG"
+subdivision_codes,2631153,2631153,Grenvik,Grenvik,Iceland,Iceland,IS,IS,6,"6, GRY"
+subdivision_codes,2626002,2626002,Þórshöfn,Þórshöfn,Iceland,Iceland,IS,IS,6,"6, LAN"
+subdivision_codes,2627574,2627574,Reykjahlíð,Reykjahlíð,Iceland,Iceland,IS,IS,6,"6, SKU"
+subdivision_codes,8643914,8643914,Hrisey,Hrisey,Iceland,Iceland,IS,IS,6,"6, AKU"
+subdivision_codes,2627642,2627642,Raufarhofn,Raufarhofn,Iceland,Iceland,IS,IS,6,"6, NOR"
+subdivision_codes,8643899,8643899,Talknafjordur,Talknafjordur,Iceland,Iceland,IS,IS,4,"4, TAL"
+subdivision_codes,2632418,2632418,Faskrudsfjoerdur,Faskrudsfjoerdur,Iceland,Iceland,IS,IS,7,"7, FJD"
+subdivision_codes,3417724,3417724,Drangsnes,Drangsnes,Iceland,Iceland,IS,IS,4,"4, KAL"
+subdivision_codes,1256259,1256259,Silvassa,Silvassa,India,India,IN,IN,,DH
+subdivision_codes,1272502,1272502,Diu,Diu,India,India,IN,IN,,DH
+subdivision_codes,1273618,1273618,Daman,Daman,India,India,IN,IN,,DH
+subdivision_codes,139817,139817,Bushehr,Bushehr,Iran,Iran,IR,IR,6,18
+subdivision_codes,116996,116996,Sari,Sari,Iran,Iran,IR,IR,21,2
+subdivision_codes,6680752,6680752,Zahedan,Zahedan,Iran,Iran,IR,IR,14,7
+subdivision_codes,142363,142363,Babol,Babol,Iran,Iran,IR,IR,21,2
+subdivision_codes,124967,124967,Manjil,Manjil,Iran,Iran,IR,IR,19,1
+subdivision_codes,111453,111453,Zanjan,Zanjan,Iran,Iran,IR,IR,11,19
+subdivision_codes,130802,130802,Ilam,Ilam,Iran,Iran,IR,IR,5,16
+subdivision_codes,113646,113646,Tabriz,Tabriz,Iran,Iran,IR,IR,1,3
+subdivision_codes,418863,418863,Isfahan,Isfahan,Iran,Iran,IR,IR,4,10
+subdivision_codes,118743,118743,Rasht,Rasht,Iran,Iran,IR,IR,19,1
+subdivision_codes,132144,132144,Hamadan,Hamadan,Iran,Iran,IR,IR,24,13
+subdivision_codes,1159716,1159716,Sarakhs,Sarakhs,Iran,Iran,IR,IR,30,9
+subdivision_codes,134747,134747,Farsun,Farsun,Iran,Iran,IR,IR,8,14
+subdivision_codes,128234,128234,Kerman,Kerman,Iran,Iran,IR,IR,15,8
+subdivision_codes,126914,126914,Kish,Kish,Iran,Iran,IR,IR,23,22
+subdivision_codes,119208,119208,Qom,Qom,Iran,Iran,IR,IR,26,25
+subdivision_codes,112931,112931,Tehran,Tehran,Iran,Iran,IR,IR,7,23
+subdivision_codes,111822,111822,Yazd,Yazd,Iran,Iran,IR,IR,25,21
+subdivision_codes,124665,124665,Mashhad,Mashhad,Iran,Iran,IR,IR,30,9
+subdivision_codes,143127,143127,Arak,Arak,Iran,Iran,IR,IR,22,0
+subdivision_codes,144448,144448,Ahvaz,Ahvaz,Iran,Iran,IR,IR,10,6
+subdivision_codes,128226,128226,Kermanshah,Kermanshah,Iran,Iran,IR,IR,17,5
+subdivision_codes,128747,128747,Karaj,Karaj,Iran,Iran,IR,IR,32,30
+subdivision_codes,110791,110791,,,Iran,Iran,IR,IR,7,23
+subdivision_codes,114930,114930,Shirvan,Shirvan,Iran,Iran,IR,IR,31,28
+subdivision_codes,145459,145459,Abadan,Abadan,Iran,Iran,IR,IR,10,6
+subdivision_codes,134217,134217,Bandar-e Genaveh,Bandar-e Genaveh,Iran,Iran,IR,IR,6,18
+subdivision_codes,113514,113514,Tajrish,Tajrish,Iran,Iran,IR,IR,7,23
+subdivision_codes,115019,115019,Shiraz,Shiraz,Iran,Iran,IR,IR,14,7
+subdivision_codes,125185,125185,Malayer,Malayer,Iran,Iran,IR,IR,24,13
+subdivision_codes,17175,17175,Najaf,Najaf,Iran,Iran,IR,IR,1,3
+subdivision_codes,142962,142962,Arrak,Arrak,Iran,Iran,IR,IR,30,9
+subdivision_codes,117574,117574,Sanandij,Sanandij,Iran,Iran,IR,IR,16,12
+subdivision_codes,126972,126972,Khowy,Khowy,Iran,Iran,IR,IR,2,4
+subdivision_codes,2523456,2523456,San Giovanni Suergiu,San Giovanni Suergiu,Italy,Italy,IT,IT,"88, SD","88, SU"
+subdivision_codes,2523434,2523434,Sanluri,Sanluri,Italy,Italy,IT,IT,"88, SD","88, SU"
+subdivision_codes,2524617,2524617,Giba,Giba,Italy,Italy,IT,IT,"88, SD","88, SU"
+subdivision_codes,2523104,2523104,Siliqua,Siliqua,Italy,Italy,IT,IT,"88, SD","88, SU"
+subdivision_codes,2525592,2525592,Barrali,Barrali,Italy,Italy,IT,IT,"88, SD","88, SU"
+subdivision_codes,2524533,2524533,Iglesias,Iglesias,Italy,Italy,IT,IT,"88, SD","88, SU"
+subdivision_codes,2525688,2525688,Arbus,Arbus,Italy,Italy,IT,IT,"88, SD","88, SU"
+subdivision_codes,2524096,2524096,Monastir,Monastir,Italy,Italy,IT,IT,"88, SD","88, SU"
+subdivision_codes,2524841,2524841,Domusnovas,Domusnovas,Italy,Italy,IT,IT,"88, SD","88, SU"
+subdivision_codes,2523255,2523255,San Sperate,San Sperate,Italy,Italy,IT,IT,"88, SD","88, SU"
+subdivision_codes,2523984,2523984,Nurri,Nurri,Italy,Italy,IT,IT,"88, SD","88, SU"
+subdivision_codes,2523482,2523482,San Gavino Monreale,San Gavino Monreale,Italy,Italy,IT,IT,"88, SD","88, SU"
+subdivision_codes,2523699,2523699,Portoscuso,Portoscuso,Italy,Italy,IT,IT,"88, SD","88, SU"
+subdivision_codes,2523832,2523832,Perdaxius,Perdaxius,Italy,Italy,IT,IT,"88, SD","88, SU"
+subdivision_codes,2522748,2522748,Villamassargia,Villamassargia,Italy,Italy,IT,IT,"88, SD","88, SU"
+subdivision_codes,2522749,2522749,Villamar,Villamar,Italy,Italy,IT,IT,"88, SD","88, SU"
+subdivision_codes,2522821,2522821,Ussana,Ussana,Italy,Italy,IT,IT,"88, SD","88, SU"
+subdivision_codes,2525362,2525362,Carbonia,Carbonia,Italy,Italy,IT,IT,"88, SD","88, SU"
+subdivision_codes,2522742,2522742,Villanovafranca,Villanovafranca,Italy,Italy,IT,IT,"88, SD","88, SU"
+subdivision_codes,2525641,2525641,Bacu Abis,Bacu Abis,Italy,Italy,IT,IT,"88, SD","88, SU"
+subdivision_codes,2522734,2522734,Villaputzu,Villaputzu,Italy,Italy,IT,IT,"88, SD","88, SU"
+subdivision_codes,2523142,2523142,Serrenti,Serrenti,Italy,Italy,IT,IT,"88, SD","88, SU"
+subdivision_codes,2524831,2524831,Donorì,Donorì,Italy,Italy,IT,IT,"88, SD","88, SU"
+subdivision_codes,2524033,2524033,Muravera,Muravera,Italy,Italy,IT,IT,"88, SD","88, SU"
+subdivision_codes,2524731,2524731,Fluminimaggiore,Fluminimaggiore,Italy,Italy,IT,IT,"88, SD","88, SU"
+subdivision_codes,2523958,2523958,Orroli,Orroli,Italy,Italy,IT,IT,"88, SD","88, SU"
+subdivision_codes,2523989,2523989,Nuragus,Nuragus,Italy,Italy,IT,IT,"88, SD","88, SU"
+subdivision_codes,2524029,2524029,Musei,Musei,Italy,Italy,IT,IT,"88, SD","88, SU"
+subdivision_codes,2524589,2524589,Gonnesa,Gonnesa,Italy,Italy,IT,IT,"88, SD","88, SU"
+subdivision_codes,2523229,2523229,Sardara,Sardara,Italy,Italy,IT,IT,"88, SD","88, SU"
+subdivision_codes,2522845,2522845,Tuili,Tuili,Italy,Italy,IT,IT,"88, SD","88, SU"
+subdivision_codes,2522766,2522766,Villacidro,Villacidro,Italy,Italy,IT,IT,"88, SD","88, SU"
+subdivision_codes,2523148,2523148,Serramanna,Serramanna,Italy,Italy,IT,IT,"88, SD","88, SU"
+subdivision_codes,2525082,2525082,Castiadas,Castiadas,Italy,Italy,IT,IT,"88, SD","88, SU"
+subdivision_codes,2522798,2522798,Vallermosa,Vallermosa,Italy,Italy,IT,IT,"88, SD","88, SU"
+subdivision_codes,2523954,2523954,Ortacesus,Ortacesus,Italy,Italy,IT,IT,"88, SD","88, SU"
+subdivision_codes,2523536,2523536,Samatzai,Samatzai,Italy,Italy,IT,IT,"88, SD","88, SU"
+subdivision_codes,2523156,2523156,Serdiana,Serdiana,Italy,Italy,IT,IT,"88, SD","88, SU"
+subdivision_codes,2523133,2523133,Seui,Seui,Italy,Italy,IT,IT,"88, SD","88, SU"
+subdivision_codes,2524551,2524551,Guasila,Guasila,Italy,Italy,IT,IT,"88, SD","88, SU"
+subdivision_codes,2523062,2523062,Soleminis,Soleminis,Italy,Italy,IT,IT,"88, SD","88, SU"
+subdivision_codes,2524357,2524357,Lunamatrona,Lunamatrona,Italy,Italy,IT,IT,"88, SD","88, SU"
+subdivision_codes,2523983,2523983,Nuxis,Nuxis,Italy,Italy,IT,IT,"88, SD","88, SU"
+subdivision_codes,2525487,2525487,Burcei,Burcei,Italy,Italy,IT,IT,"88, SD","88, SU"
+subdivision_codes,2522941,2522941,Teulada,Teulada,Italy,Italy,IT,IT,"88, SD","88, SU"
+subdivision_codes,2523943,2523943,Pabillonis,Pabillonis,Italy,Italy,IT,IT,"88, SD","88, SU"
+subdivision_codes,2523172,2523172,Segariu,Segariu,Italy,Italy,IT,IT,"88, SD","88, SU"
+subdivision_codes,2524844,2524844,Dolianova,Dolianova,Italy,Italy,IT,IT,"88, SD","88, SU"
+subdivision_codes,2523987,2523987,Nuraminis,Nuraminis,Italy,Italy,IT,IT,"88, SD","88, SU"
+subdivision_codes,2525348,2525348,Carloforte,Carloforte,Italy,Italy,IT,IT,"88, SD","88, SU"
+subdivision_codes,2522725,2522725,Villasor,Villasor,Italy,Italy,IT,IT,"88, SD","88, SU"
+subdivision_codes,2524587,2524587,Gonnosfanadiga,Gonnosfanadiga,Italy,Italy,IT,IT,"88, SD","88, SU"
+subdivision_codes,2523159,2523159,Senorbì,Senorbì,Italy,Italy,IT,IT,"88, SD","88, SU"
+subdivision_codes,2522724,2522724,Villaspeciosa,Villaspeciosa,Italy,Italy,IT,IT,"88, SD","88, SU"
+subdivision_codes,2524864,2524864,Decimoputzu,Decimoputzu,Italy,Italy,IT,IT,"88, SD","88, SU"
+subdivision_codes,2523297,2523297,SantAntioco,SantAntioco,Italy,Italy,IT,IT,"88, SD","88, SU"
+subdivision_codes,2524814,2524814,Escalaplano,Escalaplano,Italy,Italy,IT,IT,"88, SD","88, SU"
+subdivision_codes,2524546,2524546,Guspini,Guspini,Italy,Italy,IT,IT,"88, SD","88, SU"
+subdivision_codes,2523778,2523778,Pimentel,Pimentel,Italy,Italy,IT,IT,"88, SD","88, SU"
+subdivision_codes,2523537,2523537,Samassi,Samassi,Italy,Italy,IT,IT,"88, SD","88, SU"
+subdivision_codes,2523103,2523103,Silius,Silius,Italy,Italy,IT,IT,"88, SD","88, SU"
+subdivision_codes,2524024,2524024,Narcao,Narcao,Italy,Italy,IT,IT,"88, SD","88, SU"
+subdivision_codes,8531925,8531925,Cortoghiana,Cortoghiana,Italy,Italy,IT,IT,"88, SD","88, SU"
+subdivision_codes,2523298,2523298,Sant'Anna Arresi,Sant'Anna Arresi,Italy,Italy,IT,IT,"88, SD","88, SU"
+subdivision_codes,2522727,2522727,Villasimius,Villasimius,Italy,Italy,IT,IT,"88, SD","88, SU"
+subdivision_codes,2522870,2522870,Tratalias,Tratalias,Italy,Italy,IT,IT,"88, SD","88, SU"
+subdivision_codes,1521368,1521368,Baikonur,Baikonur,Kazakhstan,Kazakhstan,KZ,KZ,BAY,
+subdivision_codes,2410763,2410763,São Tomé,São Tomé,São Tomé and Príncipe,São Tomé and Príncipe,ST,ST,S,
+subdivision_codes,2411207,2411207,Cantagalo,Cantagalo,São Tomé and Príncipe,São Tomé and Príncipe,ST,ST,S,
+subdivision_codes,2410972,2410972,Neves,Neves,São Tomé and Príncipe,São Tomé and Príncipe,ST,ST,S,4

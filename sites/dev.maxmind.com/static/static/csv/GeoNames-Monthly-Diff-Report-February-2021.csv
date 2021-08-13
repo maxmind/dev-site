@@ -1,0 +1,51 @@
+diff_in,old_geoname_id,new_geoname_id,old_city_name,new_city_name,old_country_name,new_country_name,old_country_code,new_country_code,old_subdivision_codes,new_subdivision_codes
+city_name,2111741,2111741,Naka-gun,Naka-shi,Japan,Japan,JP,JP,8,8
+city_name,2746751,2746751,Steijl,Steyl,Netherlands,Netherlands,NL,NL,LI,LI
+city_name,2510288,2510288,Torremanzanas,La Torre de les Macanes,Spain,Spain,ES,ES,"VC, A","VC, A"
+city_name,2514376,2514376,Lugar Nuevo de Fenollet,Llocnou d'En Fenollet,Spain,Spain,ES,ES,"VC, V","VC, V"
+city_name,691076,691076,Tsuman',Tsuman,Ukraine,Ukraine,UA,UA,7,7
+city_name,702340,702340,Omel'ne,Omelne,Ukraine,Ukraine,UA,UA,7,7
+city_name,709363,709363,Dyuksyn,Diuksyn,Ukraine,Ukraine,UA,UA,56,56
+geoname_id,2776823,2776815,Hart,Hart,Austria,Austria,AT,AT,4,4
+geoname_id,3472094,11960286,Anta Gorda,Anta Gorda,Brazil,Brazil,BR,BR,SC,SC
+geoname_id,3451705,3451704,Registro,Registro,Brazil,Brazil,BR,BR,SP,SP
+geoname_id,8603222,12137918,Sapucaia,Sapucaia,Brazil,Brazil,BR,BR,PE,PE
+geoname_id,3453415,3453414,Planalto,Planalto,Brazil,Brazil,BR,BR,RS,RS
+geoname_id,12125743,6317026,Dom Aquino,Dom Aquino,Brazil,Brazil,BR,BR,MT,MT
+geoname_id,3458341,6317497,Lunardelli,Lunardelli,Brazil,Brazil,BR,BR,PR,PR
+geoname_id,3475644,3460723,Itapeva,Itapeva,Brazil,Brazil,BR,BR,SP,SP
+geoname_id,3450030,3450017,Santana,Santana,Brazil,Brazil,BR,BR,MG,MG
+geoname_id,3451260,3451257,Rio Bonito,Rio Bonito,Brazil,Brazil,BR,BR,PR,PR
+geoname_id,3467373,3467371,Capao Bonito,Capao Bonito,Brazil,Brazil,BR,BR,SP,SP
+geoname_id,7771981,3459431,Juranda,Juranda,Brazil,Brazil,BR,BR,PR,PR
+geoname_id,3463982,8604352,Esperanca,Esperanca,Brazil,Brazil,BR,BR,RS,RS
+geoname_id,3449885,7582811,Santa Rita,Santa Rita,Brazil,Brazil,BR,BR,PR,PR
+geoname_id,6156859,6693050,St. Ives,St. Ives,Canada,Canada,CA,CA,BC,BC
+geoname_id,6054631,6621042,Liscomb Mills,Liscomb Mills,Canada,Canada,CA,CA,NS,NS
+geoname_id,8035673,8394845,Dazhu,Dazhu,China,China,CN,CN,JS,JS
+geoname_id,1914092,10215544,Anjia,Anjia,China,China,CN,CN,SC,SC
+geoname_id,2038477,9641442,Bancheng,Bancheng,China,China,CN,CN,HE,HE
+geoname_id,1812521,6922266,Donghai,Donghai,China,China,CN,CN,GD,GD
+geoname_id,1816171,7073998,Caigou,Caigou,China,China,CN,CN,HA,HA
+geoname_id,3791503,3670162,San Antonio,San Antonio,Colombia,Colombia,CO,CO,TOL,TOL
+geoname_id,3606254,3606257,Las Vegas,Las Vegas,Honduras,Honduras,HN,HN,LE,LE
+geoname_id,10655180,1267575,Kasia,Kasia,India,India,IN,IN,UP,UP
+geoname_id,1253985,1253986,Udaipur,Udaipur,India,India,IN,IN,RJ,RJ
+geoname_id,1274770,10550479,Chandauli,Chandauli,India,India,IN,IN,UP,UP
+geoname_id,7083623,1640266,Keputih,Keputih,Indonesia,Indonesia,ID,ID,JI,JI
+geoname_id,1961080,1646034,Citeureup,Citeureup,Indonesia,Indonesia,ID,ID,JB,JB
+geoname_id,8964434,6534515,Taleggio,Taleggio,Italy,Italy,IT,IT,"25, BG","25, BG"
+geoname_id,9036162,8950294,Velo,Velo,Italy,Italy,IT,IT,"34, VI","34, VI"
+geoname_id,2110681,2110683,Tsukuba,Tsukuba,Japan,Japan,JP,JP,8,8
+geoname_id,2111741,2111742,Naka-gun,Naka-gun,Japan,Japan,JP,JP,8,8
+geoname_id,1529689,1522872,Kazakhstan,Kazakhstan,Kazakhstan,Kazakhstan,KZ,KZ,ALM,ALM
+geoname_id,1736929,1736807,Dalat,Dalat,Malaysia,Malaysia,MY,MY,13,13
+geoname_id,7934269,7934283,Patihani,Patihani,Nepal,Nepal,NP,NP,P3,P3
+geoname_id,7969577,7954062,Budhabare,Budhabare,Nepal,Nepal,NP,NP,P1,P1
+geoname_id,2192340,2192341,Claremont,Claremont,New Zealand,New Zealand,NZ,NZ,CAN,CAN
+geoname_id,577006,6419867,Berezovka,Berezovka,Russia,Russia,RU,RU,NIZ,NIZ
+geoname_id,994859,994860,Inanda,Inanda,South Africa,South Africa,ZA,ZA,KZN,KZN
+geoname_id,2511062,7534754,Sant Jordi,Sant Jordi,Spain,Spain,ES,ES,"IB, PM","IB, PM"
+geoname_id,3111285,3111284,Rubian,Rubian,Spain,Spain,ES,ES,"GA, LU","GA, LU"
+geoname_id,6290459,6293109,Allenwinden,Allenwinden,Switzerland,Switzerland,CH,CH,ZH,ZH
+subdivision_codes,2410763,2410763,São Tomé,São Tomé,São Tomé and Príncipe,São Tomé and Príncipe,ST,ST,,1

@@ -1,0 +1,74 @@
+---
+draft: false
+title: minFraud Web Services
+subtitle: Transaction Risk API
+icon: MinFraudIcon
+---
+
+import {
+  FaBook,
+  FaClipboardList,
+  FaShoePrints,
+  FaBroadcastTower,
+  FaQuestionCircle,
+  FaRocket,
+} from 'react-icons/fa';
+
+minFraud is our transaction risk API, consisting of the minFraud Score,
+Insights and Factors services.
+
+<Alert type="info">
+  If you are a minFraud Legacy customer, please refer to our
+  [minFraud Legacy documentation](/minfraud/minfraud-legacy).
+
+  If you are Proxy Detection Legacy customer, please refer to our
+  [Proxy Detection Legacy documentation](/minfraud/proxy-detection).
+</Alert>
+
+<LinkGroupContainer>
+  <LinkGroup heading="Guides">
+    <LinkGroupCard
+      description="Start evaluating your transactions by installing, configuring, and using a minFraud API client."
+      heading="Evaluate a Transaction"
+      icon={FaRocket}
+      to="/minfraud/evaluate-a-transaction"
+    />
+
+    <LinkGroupCard
+      description="Use the Report Transaction API to report chargebacks, false positives, suspected fraud, or spam/abuse."
+      heading="Report Transactions"
+      icon={FaBroadcastTower}
+      to="/minfraud/report-a-transaction"
+    />
+
+    <LinkGroupCard
+      description="Capture more data and catch more fraud using our JavaScript device tracking library."
+      heading="Integrate Device Tracking"
+      icon={FaShoePrints}
+      to="/minfraud/track-devices"
+    />
+  </LinkGroup>
+
+  <LinkGroup isCompact heading="Resources">
+    <LinkGroupCard
+      description="Learn about each minFraud service's request and response objects."
+      heading="API Documentation"
+      icon={FaBook}
+      to="/minfraud/api-documentation"
+    />
+
+    <LinkGroupCard
+      description="Review minFraud release notes to understand changes to the minFraud API."
+      heading="Release Notes"
+      icon={FaClipboardList}
+      to="/minfraud/release-notes"
+    />
+
+    <LinkGroupCard
+      description="Consult our Support Center for answers to frequently asked questions about using minFraud."
+      heading="FAQ"
+      icon={FaQuestionCircle}
+      to="https://support.maxmind.com/minfraud-faq/"
+    />
+  </LinkGroup>
+</LinkGroupContainer>

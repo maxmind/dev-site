@@ -1,0 +1,182 @@
+import responseJson from '../_examples/response';
+
+<MinFraudSchema
+  json={responseJson.warnings[0]}
+  jsonPointer="/warnings/{n}"
+  name="Response | Warning"
+>
+  <Property
+    name="code"
+    tags={{
+      'Max Length': 255,
+    }}
+  >
+    This value is a machine-readable code identifying the warning. Although more
+    codes may be added in the future, the current codes are:
+
+    <table>
+      <thead>
+        <tr>
+          <th>Code</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            `BILLING_CITY_NOT_FOUND`
+          </td>
+          <td>
+            The billing city could not be found in our database.
+            This may impact our ability to provide accurate distance calculations.
+          </td>
+        </tr>
+        <tr>
+          <td>
+            `BILLING_COUNTRY_MISSING`
+          </td>
+          <td>
+            Billing address information was provided without providing a billing
+            country. This may impact our ability to provide accurate distance calculations.
+          </td>
+        </tr>
+        <tr>
+          <td>
+            `BILLING_COUNTRY_NOT_FOUND`
+          </td>
+          <td>
+            The billing country could not be found in our database.
+            This may impact our ability to provide accurate distance calculations.
+          </td>
+        </tr>
+        <tr>
+          <td>
+            `BILLING_POSTAL_NOT_FOUND`
+          </td>
+          <td>
+            The billing postal could not be found in our database.
+            This may impact our ability to provide accurate distance calculations.
+          </td>
+        </tr>
+        <tr>
+          <td>
+            `BILLING_REGION_NOT_FOUND`
+          </td>
+          <td>
+            The billing region could not be found in our database.
+            This may impact our ability to provide accurate distance calculations.
+          </td>
+        </tr>
+        <tr>
+          <td>
+            `INPUT_INVALID`
+          </td>
+          <td>
+            The value associated with the key does not meet the required
+            constraints, e.g., "United States" in a field that requires a
+            two-letter country code.
+          </td>
+        </tr>
+        <tr>
+          <td>
+            `INPUT_UNKNOWN`
+          </td>
+          <td>
+            An unknown key was encountered in the request body.
+          </td>
+        </tr>
+        <tr>
+          <td>
+            `IP_ADDRESS_INVALID`
+          </td>
+          <td>
+            The IP address supplied is not a valid IPv4 or IPv6 address.
+          </td>
+        </tr>
+        <tr>
+          <td>
+            `IP_ADDRESS_NOT_FOUND`
+          </td>
+          <td>
+            The IP address could not be geolocated.
+          </td>
+        </tr>
+        <tr>
+          <td>
+            `IP_ADDRESS_RESERVED`
+          </td>
+          <td>
+            The IP address supplied is in a reserved network.
+          </td>
+        </tr>
+        <tr>
+          <td>
+            `SHIPPING_CITY_NOT_FOUND`
+          </td>
+          <td>
+            The shipping city could not be found in our database.
+            This may impact our ability to provide accurate distance calculations.
+          </td>
+        </tr>
+        <tr>
+          <td>
+            `SHIPPING_COUNTRY_MISSING`
+          </td>
+          <td>
+            Shipping address information was provided without providing a
+            shipping country. This may impact our ability to provide accurate distance calculations.
+          </td>
+        </tr>
+        <tr>
+          <td>
+            `SHIPPING_COUNTRY_NOT_FOUND`
+          </td>
+          <td>
+            The shipping country could not be found in our database.
+            This may impact our ability to provide accurate distance calculations.
+          </td>
+        </tr>
+        <tr>
+          <td>
+            `SHIPPING_POSTAL_NOT_FOUND`
+          </td>
+          <td>
+            The shipping postal could not be found in our database.
+            This may impact our ability to provide accurate distance calculations.
+          </td>
+        </tr>
+        <tr>
+          <td>
+            `SHIPPING_REGION_NOT_FOUND`
+          </td>
+          <td>
+            The shipping region could not be found in our database.
+            This may impact our ability to provide accurate distance calculations.
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </Property>
+
+  <Property
+    name="warning"
+    tags={{
+      'Max Length': 255,
+    }}
+  >
+    This field provides a human-readable explanation of the warning. The
+    description may change at any time and should not be matched against.
+  </Property>
+
+  <Property
+    name="input_pointer"
+    tags={{
+      'JSON Pointer': null,
+    }}
+  >
+    A [JSON Pointer](https://tools.ietf.org/html/rfc6901) to the input field
+    that the warning is associated with. For instance, if the warning was about
+    the billing city, this would be `/billing/city`. If it was for the price in
+    the second shopping cart item, it would be `/shopping_cart/1/price`
+  </Property>
+</MinFraudSchema>

@@ -1,0 +1,37 @@
+---
+draft: false
+title: MaxMind Server IP Addresses
+---
+
+import { FaRss as RssFeed } from 'react-icons/fa';
+import { RiBracesFill as JsonFeed } from 'react-icons/ri';
+
+This page lists the IP addresses that may be used by our servers. We strongly
+encourage you to use DNS rather than hardcode our IPs. Not all IPs listed on
+this page will be in use at a given time. The IPs returned in DNS could change
+at any time. Note that the IPs below don’t apply to the `www.maxmind.com`
+hostname, which could use any IP and changes frequently.
+
+<IpAddresses />
+
+## Monitoring Changes
+
+MaxMind provides RSS and JSON feeds, allowing you to monitor changes to our
+server IP addresses.
+
+<LinkGroupContainer>
+  <LinkGroup>
+    <LinkGroupCard
+      description="Subscribe to our RSS and be notified when IP addresses change."
+      heading="RSS Feed"
+      icon={RssFeed}
+      to="/maxmind-server-ip-addresses.xml"
+    />
+    <LinkGroupCard
+      description="Integrate our JSON feed in your application for change automation."
+      heading="JSON Feed"
+      icon={JsonFeed}
+      to="/maxmind-server-ip-addresses.json"
+    />
+  </LinkGroup>
+</LinkGroupContainer>

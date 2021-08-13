@@ -1,0 +1,131 @@
+---
+draft: false
+title: GeoIP2 and GeoLite City and Country Databases
+---
+
+import BinaryDatabases from './_binary-databases.mdx';
+import ConversionUtility from './_conversion-utility.mdx';
+import CoordinatesWarning from './_coordinates-warning.mdx';
+import CsvDatabasesIntro from './_csv-databases-intro.mdx';
+import DataPrivacyWarning from './_data-privacy-warning.mdx';
+import FileFormat from './_file-format.mdx';
+import IpGeolocationUsageWarning from './_ip-geolocation-usage-warning.mdx';
+import ReturnedValuesAsKeys from './_returned-values-as-keys.mdx';
+import APIs from './_apis.mdx';
+
+
+Determine the country, subdivisions (regions), city, and postal code associated
+with IPv4 and IPv6 addresses worldwide.
+
+Terms and pricing for the GeoIP2 City and GeoIP2 Country databases may be
+found on our product pages:
+
+* [GeoIP2 City](https://www.maxmind.com/en/geoip2-city)
+* [GeoIP2 Country](https://www.maxmind.com/en/geoip2-country)
+
+<IpGeolocationUsageWarning />
+<DataPrivacyWarning />
+
+## Binary Databases
+
+<BinaryDatabases />
+
+| Language or Framework | Documentation                                                                      | Example                                                                |
+| --------------------- | ---------------------------------------------------------------------------------- | ---------------------------------------------------------------------- |
+| .NET (C#)             | [GitHub - Database Usage](https://github.com/maxmind/GeoIP2-dotnet#database-usage) | [City Example](https://github.com/maxmind/GeoIP2-dotnet#city-database) |
+| Java                  | [GitHub - Database Usage](https://github.com/maxmind/GeoIP2-java#database-usage)   | [City Example](https://github.com/maxmind/GeoIP2-java#city)            |
+| Node.js               | [GitHub - Database Usage](https://github.com/maxmind/GeoIP2-node#database-usage)   | [City Example](https://github.com/maxmind/GeoIP2-node#city-example)    |
+| PHP                   | [GitHub - Database Reader](https://github.com/maxmind/GeoIP2-php#database-reader)  | [City Example](https://github.com/maxmind/GeoIP2-php#city-example)     |
+| Python                | [GitHub - Database Usage](https://github.com/maxmind/GeoIP2-python#database-usage) | [City Example](https://github.com/maxmind/GeoIP2-python#city-database) |
+| Ruby                  | [GitHub - Database Reader](https://github.com/maxmind/GeoIP2-ruby#database-reader) | [City Example](https://github.com/maxmind/GeoIP2-ruby#city-example)    |
+
+## CSV Databases
+
+<CsvDatabasesIntro />
+
+<ZipFileContent product-name="{GeoIP2,GeoLite2}-{City,Country}" is-table-excluded={true} />
+
+The downloaded .zip file contains a single directory which in turn contains 13
+files:
+
+<table>
+  <tbody>
+    <tr>
+      <th>Filename</th>
+      <th>Description</th>
+    </tr>
+    <tr>
+      <td>`COPYRIGHT.txt`</td>
+      <td>Copyright statement</td>
+    </tr>
+
+    <tr>
+      <td>`LICENSE.txt`</td>
+      <td>End user license</td>
+    </tr>
+
+    <tr>
+      <td>`README.txt`</td>
+      <td>Information file</td>
+    </tr>
+
+    <tr>
+      <td>`{GeoIP2,GeoLite2}-{City,Country}-Blocks-IPv4.csv`</td>
+      <td>CSV file containing data on IPv4 addresses</td>
+    </tr>
+
+    <tr>
+      <td>`{GeoIP2,GeoLite2}-{City,Country}-Blocks-IPv6.csv`</td>
+      <td>CSV file containing data on IPv6 addresses</td>
+    </tr>
+
+    <tr>
+      <td>`{GeoIP2,GeoLite2}-{City,Country}-Locations-{locale}.csv`</td>
+      <td>Eight CSV files containing data location for each locale code, where `{locale}` can be “de”, "en", “es”, “fr”, “ja”, “pt-BR”, “ru”, and “zh-CN” .</td>
+    </tr>
+  </tbody>
+</table>
+
+<FileFormat />
+
+### Blocks Files
+
+There are two CSV files for network blocks, one each for IPv4 and IPv6 blocks.
+These files are named `{GeoIP2,GeoLite2}-{City,Country}-Blocks-IPv4.csv` and
+`{GeoIP2,GeoLite2}-{City,Country}-Blocks-IPv6.csv` respectively. An example name
+would be `GeoIP2-City-Blocks-IPv4.csv`.
+
+[City subset by continent databases](https://www.maxmind.com/en/geoip2-city-database-by-continent)
+blocks files have the same columns as the City database.
+
+<CsvBlockTable />
+
+<CoordinatesWarning />
+
+### Locations Files
+
+The zip file includes one location file for each locale code for which data is
+available. There will always be an "en" file containing a record for every
+`geoname_id` used in the blocks files. Files corresponding to other locales will
+exist and have a record for a `geoname_id` only if data is available. The other
+possible locales are "de", "es", "fr", "ja", "pt-BR", "ru", and "zh-CN".
+
+These files are named `{GeoIP2,GeoLite2}-{City,Country}-Locations-{locale}.csv`.
+An example name would be `GeoIP2-City-Locations-en.csv`.
+
+[City subset by continent databases](https://www.maxmind.com/en/geoip2-city-database-by-continent)
+blocks files have the same columns as the City database.
+
+<CsvLocationTable />
+
+### Returned Values as Database, Map, Dict, or Hash Keys
+
+<ReturnedValuesAsKeys />
+
+### Conversion Utility
+
+<ConversionUtility />
+
+## APIs and Third-Party Integrations
+
+<APIs />

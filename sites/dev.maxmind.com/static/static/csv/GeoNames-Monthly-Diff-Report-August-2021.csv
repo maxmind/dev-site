@@ -1,0 +1,226 @@
+diff_in,old_geoname_id,new_geoname_id,old_city_name,new_city_name,old_country_name,new_country_name,old_country_code,new_country_code,old_subdivision_codes,new_subdivision_codes
+city_name,2497655,2497655,El Meghaier,El Meghaïer,Algeria,Algeria,DZ,DZ,57,57
+city_name,3435280,3435280,"Comandante Nicanor Otamendi, Republica de Dubai",Comandante Nicanor Otamendi,Argentina,Argentina,AR,AR,B,B
+city_name,2078025,2078025,Adelaide,Adelaide CBD,Australia,Australia,AU,AU,SA,SA
+city_name,2078025,2078025,Adelaide,Adelaide CBD,Australia,Australia,AU,AU,SA,SA
+city_name,2078025,2078025,Adelaide,Adelaide CBD,Australia,Australia,AU,AU,SA,SA
+city_name,2078025,2078025,Adelaide,Adelaide CBD,Australia,Australia,AU,AU,SA,SA
+city_name,2078025,2078025,Adelaide,Adelaide CBD,Australia,Australia,AU,AU,SA,SA
+city_name,2078025,2078025,Adelaide,Adelaide CBD,Australia,Australia,AU,AU,SA,SA
+city_name,2078025,2078025,Adelaide,Adelaide CBD,Australia,Australia,AU,AU,SA,SA
+city_name,2078025,2078025,Adelaide,Adelaide CBD,Australia,Australia,AU,AU,SA,SA
+city_name,2078025,2078025,Adelaide,Adelaide CBD,Australia,Australia,AU,AU,SA,SA
+city_name,2078025,2078025,Adelaide,Adelaide CBD,Australia,Australia,AU,AU,SA,SA
+city_name,2078025,2078025,Adelaide,Adelaide CBD,Australia,Australia,AU,AU,SA,SA
+city_name,2078025,2078025,Adelaide,Adelaide CBD,Australia,Australia,AU,AU,SA,SA
+city_name,2078025,2078025,Adelaide,Adelaide CBD,Australia,Australia,AU,AU,SA,SA
+city_name,2078025,2078025,Adelaide,Adelaide CBD,Australia,Australia,AU,AU,SA,SA
+city_name,2078025,2078025,Adelaide,Adelaide CBD,Australia,Australia,AU,AU,SA,SA
+city_name,2078025,2078025,Adelaide,Adelaide CBD,Australia,Australia,AU,AU,SA,SA
+city_name,2078025,2078025,Adelaide,Adelaide CBD,Australia,Australia,AU,AU,SA,SA
+city_name,2078025,2078025,Adelaide,Adelaide CBD,Australia,Australia,AU,AU,SA,SA
+city_name,3469049,3469049,Brasilandia,Brazlandia,Brazil,Brazil,BR,BR,DF,DF
+city_name,6318568,6318568,Sao Pedro da agua Branca,Sao Pedro da Agua Branca,Brazil,Brazil,BR,BR,MA,MA
+city_name,3469049,3469049,Brasilandia,Brazlandia,Brazil,Brazil,BR,BR,DF,DF
+city_name,9897505,9897505,Chedong,Chedong Shequ,China,China,CN,CN,GX,GX
+city_name,9894480,9894480,Butang,Butangcun,China,China,CN,CN,GX,GX
+city_name,7283386,7283386,Changshu City,Changshu,China,China,CN,CN,JS,JS
+city_name,1811423,1811423,Fengbang,Fengbangcun,China,China,CN,CN,SH,SH
+city_name,1809898,1809898,Guangming,Guangmingcun,China,China,CN,CN,SH,SH
+city_name,9936203,9936203,Beijie,Beijiecun,China,China,CN,CN,GX,GX
+city_name,1941819,1941819,Huai'an,Huai'an Shequ,China,China,CN,CN,FJ,FJ
+city_name,7846676,7846676,Gupu,Gupucun,China,China,CN,CN,SH,SH
+city_name,1815755,1815755,Changdun,Changduncun,China,China,CN,CN,GX,GX
+city_name,8575558,8575558,Guolun,Guoluncun,China,China,CN,CN,FJ,FJ
+city_name,8576313,8576313,Chuanbian,Chuanbiancun,China,China,CN,CN,FJ,FJ
+city_name,7524983,7524983,Luli,Lulicun,China,China,CN,CN,SH,SH
+city_name,7844477,7844477,Xinzhai,Xinzhaicun,China,China,CN,CN,SH,SH
+city_name,9901699,9901699,Beidou,Beidoucun,China,China,CN,CN,GX,GX
+city_name,10982154,10982154,Batian,Batiancun,China,China,CN,CN,FJ,FJ
+city_name,9899633,9899633,Daguang,Daguangcun,China,China,CN,CN,GX,GX
+city_name,10982205,10982205,Songxi,Songxicun,China,China,CN,CN,FJ,FJ
+city_name,10982191,10982191,Chuilou,Chuiloucun,China,China,CN,CN,FJ,FJ
+city_name,8575249,8575249,Chouqi,Chouqicun,China,China,CN,CN,FJ,FJ
+city_name,7845600,7845600,Panqiao,Panqiaocun,China,China,CN,CN,SH,SH
+city_name,9898989,9898989,Chendong,Chendongcun,China,China,CN,CN,GX,GX
+city_name,9930039,9930039,Gunian,Guniancun,China,China,CN,CN,GX,GX
+city_name,7843229,7843229,Louxia,Louxiacun,China,China,CN,CN,SH,SH
+city_name,1913020,1913020,Xinwang,Xinwangcun,China,China,CN,CN,GX,GX
+city_name,9897239,9897239,Beishi,Beishi Shequ,China,China,CN,CN,GX,GX
+city_name,9898387,9898387,Qingxiu,Qingxiucun,China,China,CN,CN,GX,GX
+city_name,9898467,9898467,Guitang,Guitangcun,China,China,CN,CN,GX,GX
+city_name,9893984,9893984,Anfu,Anfucun,China,China,CN,CN,GX,GX
+city_name,9935610,9935610,Bailan,Bailancun,China,China,CN,CN,GX,GX
+city_name,7844601,7844601,Shengli,Shenglicun,China,China,CN,CN,SH,SH
+city_name,9901397,9901397,Anlin,Anlincun,China,China,CN,CN,GX,GX
+city_name,9899788,9899788,Mingshan,Mingshancun,China,China,CN,CN,GX,GX
+city_name,8573839,8573839,Xiaomei,Xiaomeicun,China,China,CN,CN,FJ,FJ
+city_name,1913002,1913002,Baihua,Baihuacun,China,China,CN,CN,GX,GX
+city_name,9932940,9932940,Daojiang,Daojiangcun,China,China,CN,CN,GX,GX
+city_name,7843211,7843211,Daxing,Daxingcun,China,China,CN,CN,SH,SH
+city_name,9899996,9899996,Binwu,Binwucun,China,China,CN,CN,GX,GX
+city_name,7845514,7845514,Jinhui,Jinhuicun,China,China,CN,CN,SH,SH
+city_name,8575347,8575347,Rujiang,Rujiangcun,China,China,CN,CN,FJ,FJ
+city_name,9900726,9900726,Banlong,Banlongcun,China,China,CN,CN,GX,GX
+city_name,9917370,9917370,Yi'an,Yi'ancun,China,China,CN,CN,GX,GX
+city_name,9907563,9907563,Zhengzhou,Zhengzhoucun,China,China,CN,CN,GX,GX
+city_name,8574000,8574000,Feiyun,Feiyuncun,China,China,CN,CN,FJ,FJ
+city_name,9916146,9916146,Fuxi,Fuxicun,China,China,CN,CN,GX,GX
+city_name,9898014,9898014,Baoling,Baolingcun,China,China,CN,CN,GX,GX
+city_name,9916329,9916329,Chajia,Chajiacun,China,China,CN,CN,GX,GX
+city_name,8580270,8580270,Baishan,Boshancun,China,China,CN,CN,FJ,FJ
+city_name,7843567,7843567,Chunguang,Chunguangcun,China,China,CN,CN,SH,SH
+city_name,1913045,1913045,Dafeng,Dafengcun,China,China,CN,CN,GX,GX
+city_name,9899380,9899380,Baji,Bajicun,China,China,CN,CN,GX,GX
+city_name,7843625,7843625,Shenzhen,Shenzhencun,China,China,CN,CN,SH,SH
+city_name,7843338,7843338,Xin'an,Xin'ancun,China,China,CN,CN,SH,SH
+city_name,7843579,7843579,Dahuang,Dahuangcun,China,China,CN,CN,SH,SH
+city_name,1913027,1913027,Aiguo,Aiguocun,China,China,CN,CN,GX,GX
+city_name,3621823,3621823,San Jose Pinilla,San Jose de Pinilla,Costa Rica,Costa Rica,CR,CR,G,G
+city_name,355026,355026,Jirja,Girga,Egypt,Egypt,EG,EG,SHG,SHG
+city_name,2913210,2913210,Fraunberg,Haag in Oberbayern,Germany,Germany,DE,DE,BY,BY
+city_name,2913210,2913210,Fraunberg,Haag in Oberbayern,Germany,Germany,DE,DE,BY,BY
+city_name,2833990,2833990,Seebad Ahlbeck,Ahlbeck,Germany,Germany,DE,DE,MV,MV
+city_name,3219676,3219676,Bolzano,Bolzano Bellunese,Italy,Italy,IT,IT,"34, BL","34, BL"
+city_name,791646,791646,Gjakove,Gjakova,Kosovo,Kosovo,XK,XK,,
+city_name,2746027,2746027,t Zandt,t Zandt,Netherlands,Netherlands,NL,NL,GR,GR
+city_name,563822,563822,Dyat'kovo,Dyatkovo,Russia,Russia,RU,RU,BRY,BRY
+city_name,470676,470676,Vyaz'ma,Vyazma,Russia,Russia,RU,RU,SMO,SMO
+city_name,563822,563822,Dyat'kovo,Dyatkovo,Russia,Russia,RU,RU,BRY,BRY
+city_name,522410,522410,Nevel',Nevel,Russia,Russia,RU,RU,PSK,PSK
+city_name,541796,541796,Krasnyye Baki,Krasnye Baki,Russia,Russia,RU,RU,NIZ,NIZ
+city_name,470676,470676,Vyaz'ma,Vyazma,Russia,Russia,RU,RU,SMO,SMO
+city_name,563822,563822,Dyat'kovo,Dyatkovo,Russia,Russia,RU,RU,BRY,BRY
+city_name,470676,470676,Vyaz'ma,Vyazma,Russia,Russia,RU,RU,SMO,SMO
+city_name,563822,563822,Dyat'kovo,Dyatkovo,Russia,Russia,RU,RU,BRY,BRY
+city_name,470676,470676,Vyaz'ma,Vyazma,Russia,Russia,RU,RU,SMO,SMO
+city_name,686919,686919,Znamyanka,Znamianka,Ukraine,Ukraine,UA,UA,35,35
+city_name,698619,698619,Olen'ovo,Olenovo,Ukraine,Ukraine,UA,UA,21,21
+city_name,697418,697418,Petropavlivs'ka Borshchahivka,Petropavlivska Borshchahivka,Ukraine,Ukraine,UA,UA,32,32
+city_name,8424038,8424038,Starosillya,Starosillia,Ukraine,Ukraine,UA,UA,7,7
+city_name,8146245,8146245,Kotsyubyns'ke,Kotsiubynske,Ukraine,Ukraine,UA,UA,32,32
+city_name,8282147,8282147,Khustets',Khustets,Ukraine,Ukraine,UA,UA,21,21
+city_name,690232,690232,Velyka Palad',Velyka Palad,Ukraine,Ukraine,UA,UA,21,21
+city_name,7525990,7525990,Yuzhnoukrayinsk,Yuzhnoukrainsk,Ukraine,Ukraine,UA,UA,48,48
+city_name,8519818,8519818,Kryukivshchyna,Kriukivshchyna,Ukraine,Ukraine,UA,UA,32,32
+city_name,8519818,8519818,Kryukivshchyna,Kriukivshchyna,Ukraine,Ukraine,UA,UA,32,32
+city_name,702469,702469,Lyubeshiv,Liubeshiv,Ukraine,Ukraine,UA,UA,7,7
+city_name,696447,696447,Postol'ne,Postolne,Ukraine,Ukraine,UA,UA,59,59
+city_name,8519820,8519820,Chayky,Chaiky,Ukraine,Ukraine,UA,UA,32,32
+city_name,8251789,8251789,Svalyavka,Svaliavka,Ukraine,Ukraine,UA,UA,21,21
+city_name,706178,706178,Khryplyn,Kryplyn,Ukraine,Ukraine,UA,UA,26,26
+city_name,690963,690963,Turiys'k,Turiisk,Ukraine,Ukraine,UA,UA,7,7
+city_name,692039,692039,Svityaz',Svitiaz,Ukraine,Ukraine,UA,UA,7,7
+city_name,5554566,5554566,Klawock,Klawak,United States,United States,US,US,AK,AK
+city_name,5859888,5859888,Cordova,Odiak,United States,United States,US,US,AK,AK
+geoname_id,6318263,3389549,Santa Luzia,Santa Luzia,Brazil,Brazil,BR,BR,MA,MA
+geoname_id,6317869,6323850,Paranaita,Paranaita,Brazil,Brazil,BR,BR,MT,MT
+geoname_id,6319330,3663475,Maraa,Maraa,Brazil,Brazil,BR,BR,AM,AM
+geoname_id,8602146,6318838,Uruara,Uruara,Brazil,Brazil,BR,BR,PA,PA
+geoname_id,6318968,6319492,Xinguara,Xinguara,Brazil,Brazil,BR,BR,PA,PA
+geoname_id,6317800,6319433,Novo Progresso,Novo Progresso,Brazil,Brazil,BR,BR,PA,PA
+geoname_id,8543807,3405286,Bom Lugar,Bom Lugar,Brazil,Brazil,BR,BR,MA,MA
+geoname_id,3451380,3451374,Ribeirao,Ribeirao,Brazil,Brazil,BR,BR,MG,MG
+geoname_id,6317803,6324149,Novo Sao Joaquim,Novo Sao Joaquim,Brazil,Brazil,BR,BR,MT,MT
+geoname_id,3663503,6319329,Manicore,Manicore,Brazil,Brazil,BR,BR,AM,AM
+geoname_id,6321383,3463120,Formoso,Formoso,Brazil,Brazil,BR,BR,MG,MG
+geoname_id,1914278,8408131,Baiyang,Baiyang,China,China,CN,CN,CQ,CQ
+geoname_id,1815146,10315644,Chenjia,Chenjia,China,China,CN,CN,CQ,CQ
+geoname_id,9930757,9930747,Dongwang,Dongwang,China,China,CN,CN,GX,GX
+geoname_id,1800079,1920458,Nangang,Nangang,China,China,CN,CN,GD,GD
+geoname_id,9936335,9936246,Dacheng,Dacheng,China,China,CN,CN,GX,GX
+geoname_id,1814646,8406442,Da'an,Da'an,China,China,CN,CN,CQ,CQ
+geoname_id,11885795,3667816,Sopetran,Sopetran,Colombia,Colombia,CO,CO,ANT,ANT
+geoname_id,2613196,2613195,Soby,Soby,Denmark,Denmark,DK,DK,83,83
+geoname_id,2937894,2937893,Dettmannsdorf,Dettmannsdorf,Germany,Germany,DE,DE,MV,MV
+geoname_id,10769624,10673446,Arlagudem,Arlagudem,India,India,IN,IN,TG,TG
+geoname_id,11740787,1269477,Jajpur,Jajpur,India,India,IN,IN,OR,OR
+geoname_id,1988329,1991574,Mesjid,Mesjid,Indonesia,Indonesia,ID,ID,JB,JB
+geoname_id,1631402,6764466,Papanggo,Papanggo,Indonesia,Indonesia,ID,ID,BT,BT
+geoname_id,3177712,8955352,Cugnoli,Cugnoli,Italy,Italy,IT,IT,"65, PE","65, PE"
+geoname_id,9035358,3177752,Crosara,Crosara,Italy,Italy,IT,IT,"34, VI","34, VI"
+geoname_id,1518296,12253783,Tekeli,Tekeli,Kazakhstan,Kazakhstan,KZ,KZ,ALM,ALM
+geoname_id,4563169,4562487,,,Puerto Rico,Puerto Rico,PR,PR,,
+geoname_id,504831,504830,Proletarsk,Proletarsk,Russia,Russia,RU,RU,ROS,ROS
+geoname_id,994860,994859,Inanda,Inanda,South Africa,South Africa,ZA,ZA,KZN,KZN
+geoname_id,1617331,9285690,Ban Kruat,Ban Kruat,Thailand,Thailand,TH,TH,31,31
+geoname_id,6946887,2642470,Milton Bryan,Milton Bryan,United Kingdom,United Kingdom,GB,GB,"ENG, CBF","ENG, CBF"
+geoname_id,2650467,12047975,East Dulwich,East Dulwich,United Kingdom,United Kingdom,GB,GB,"ENG, SWK","ENG, SWK"
+geoname_id,4504635,5105860,Voorhees Township,Voorhees Township,United States,United States,US,US,NJ,NJ
+geoname_id,8531735,12253704,Phu Quoc,Phu Quoc,Vietnam,Vietnam,VN,VN,47,47
+subdivision_codes,1735168,1735168,Ampang,Ampang,Malaysia,Malaysia,MY,MY,10,14
+subdivision_codes,2531875,2531875,Tafrawt,Tafrawt,Morocco,Morocco,MA,MA,9,"09, TAR"
+subdivision_codes,2555342,2555342,Bir Jdid,Bir Jdid,Morocco,Morocco,MA,MA,6,"06, JDI"
+subdivision_codes,2558436,2558436,Beni Yakhlef,Beni Yakhlef,Morocco,Morocco,MA,MA,6,"06, MOH"
+subdivision_codes,2554943,2554943,Bou Fekrane,Bou Fekrane,Morocco,Morocco,MA,MA,3,"03, MEK"
+subdivision_codes,2560774,2560774,Ain Taoujdat,Ain Taoujdat,Morocco,Morocco,MA,MA,3,"03, HAJ"
+subdivision_codes,2535535,2535535,Sidi Bou 'Otmane,Sidi Bou 'Otmane,Morocco,Morocco,MA,MA,7,"07, CHI"
+subdivision_codes,2531432,2531432,Tahannout,Tahannout,Morocco,Morocco,MA,MA,7,"07, HAO"
+subdivision_codes,2549235,2549235,Es Sebt,Es Sebt,Morocco,Morocco,MA,MA,3,"03, TAZ"
+subdivision_codes,8542188,8542188,Dakhla,Dakhla,Morocco,Morocco,MA,MA,,"09, AGD"
+subdivision_codes,2555009,2555009,Boudenib,Boudenib,Morocco,Morocco,MA,MA,8,"08, ERR"
+subdivision_codes,2538401,2538401,Ras el Ma,Ras el Ma,Morocco,Morocco,MA,MA,3,"03, MOU"
+subdivision_codes,2552292,2552292,Ad Darwa,Ad Darwa,Morocco,Morocco,MA,MA,6,"06, BRR"
+subdivision_codes,2549723,2549723,El Maarif,El Maarif,Morocco,Morocco,MA,MA,4,"04, SIK"
+subdivision_codes,2537772,2537772,Salah,Salah,Morocco,Morocco,MA,MA,7,"07, YUS"
+subdivision_codes,2556988,2556988,Assays,Assays,Morocco,Morocco,MA,MA,9,"09, TAR"
+subdivision_codes,2552399,2552399,Dechira,Dechira,Morocco,Morocco,MA,MA,7,"07, HAO"
+subdivision_codes,2532821,2532821,Sidi Yahya Zaer,Sidi Yahya Zaer,Morocco,Morocco,MA,MA,4,"04, SKH"
+subdivision_codes,2545069,2545069,Mrirt,Mrirt,Morocco,Morocco,MA,MA,5,"05, KHN"
+subdivision_codes,2532575,2532575,Asmara,Asmara,Morocco,Morocco,MA,MA,7,"07, REH"
+subdivision_codes,2556751,2556751,Al 'Attawia,Al 'Attawia,Morocco,Morocco,MA,MA,7,"07, KES"
+subdivision_codes,2561359,2561359,Agourai,Agourai,Morocco,Morocco,MA,MA,5,"05, AZI"
+subdivision_codes,2560774,2560774,Ain Taoujdat,Ain Taoujdat,Morocco,Morocco,MA,MA,3,"03, HAJ"
+subdivision_codes,2546029,2546029,Imouzzer des Marmoucha,Imouzzer des Marmoucha,Morocco,Morocco,MA,MA,3,"03, BOM"
+subdivision_codes,2544334,2544334,Khenichet-sur Ouerrha,Khenichet-sur Ouerrha,Morocco,Morocco,MA,MA,4,"04, SIK"
+subdivision_codes,2537610,2537610,Sebt Gzoula,Sebt Gzoula,Morocco,Morocco,MA,MA,7,"07, SAF"
+subdivision_codes,2541833,2541833,Moulay Bousselham,Moulay Bousselham,Morocco,Morocco,MA,MA,4,"04, KEN"
+subdivision_codes,10920963,10920963,Sale Al Jadida,Sale Al Jadida,Morocco,Morocco,MA,MA,4,"04, SAL"
+subdivision_codes,2538027,2538027,Recani,Recani,Morocco,Morocco,MA,MA,8,"08, ERR"
+subdivision_codes,2550806,2550806,El Aioun,El Aioun,Morocco,Morocco,MA,MA,2,"02, TAI"
+subdivision_codes,2532653,2532653,Skhirat,Skhirat,Morocco,Morocco,MA,MA,3,"03, MEK"
+subdivision_codes,2557134,2557134,Ar Rommani,Ar Rommani,Morocco,Morocco,MA,MA,4,"04, KHE"
+subdivision_codes,2542444,2542444,Marzouga,Marzouga,Morocco,Morocco,MA,MA,8,"08, ERR"
+subdivision_codes,2555519,2555519,Benslimane,Benslimane,Morocco,Morocco,MA,MA,6,"06, BES"
+subdivision_codes,2531432,2531432,Tahannout,Tahannout,Morocco,Morocco,MA,MA,7,"07, HAO"
+subdivision_codes,2548851,2548851,Figuig (Centre),Figuig (Centre),Morocco,Morocco,MA,MA,,"02, FIG"
+subdivision_codes,2557811,2557811,Anemz,Anemz,Morocco,Morocco,MA,MA,8,"08, MID"
+subdivision_codes,2560841,2560841,Ain Harrouda,Ain Harrouda,Morocco,Morocco,MA,MA,6,"06, MOH"
+subdivision_codes,2559217,2559217,Ait Ourir,Ait Ourir,Morocco,Morocco,MA,MA,7,"07, HAO"
+subdivision_codes,2549014,2549014,Farkhana,Farkhana,Morocco,Morocco,MA,MA,2,"02, NAD"
+subdivision_codes,2560803,2560803,Ain Mediouna,Ain Mediouna,Morocco,Morocco,MA,MA,3,"03, TAO"
+subdivision_codes,2546918,2546918,Zawyat Ifrane,Zawyat Ifrane,Morocco,Morocco,MA,MA,3,"03, IFR"
+subdivision_codes,2534949,2534949,Sidi El Hattab,Sidi El Hattab,Morocco,Morocco,MA,MA,7,"07, KES"
+subdivision_codes,2529941,2529941,Douar Tardane,Douar Tardane,Morocco,Morocco,MA,MA,1,"01, TET"
+subdivision_codes,2550985,2550985,Driouch,Driouch,Morocco,Morocco,MA,MA,2,"02, DRI"
+subdivision_codes,2550807,2550807,Laayoune,Laayoune,Morocco,Morocco,MA,MA,6,"06, BES"
+subdivision_codes,2548782,2548782,Foum el Anser,Foum el Anser,Morocco,Morocco,MA,MA,5,"05, BEM"
+subdivision_codes,2553508,2553508,Charf,Charf,Morocco,Morocco,MA,MA,1,"01, TNG"
+subdivision_codes,2556018,2556018,Ben Guerir,Ben Guerir,Morocco,Morocco,MA,MA,7,"07, REH"
+subdivision_codes,2548601,2548601,Gourrama,Gourrama,Morocco,Morocco,MA,MA,8,"08, MID"
+subdivision_codes,2533182,2533182,Sidi Rahal,Sidi Rahal,Morocco,Morocco,MA,MA,6,"06, BRR"
+subdivision_codes,2556018,2556018,Ben Guerir,Ben Guerir,Morocco,Morocco,MA,MA,7,"07, REH"
+subdivision_codes,2557707,2557707,Anou n'Ait Boulmane,Anou n'Ait Boulmane,Morocco,Morocco,MA,MA,5,"05, AZI"
+subdivision_codes,2537538,2537538,Zeghanghane,Zeghanghane,Morocco,Morocco,MA,MA,2,"02, NAD"
+subdivision_codes,2564858,2564858,Blougra,Blougra,Morocco,Morocco,MA,MA,9,"09, CHT"
+subdivision_codes,2538269,2538269,Retba,Retba,Morocco,Morocco,MA,MA,3,"03, TAO"
+subdivision_codes,2546028,2546028,Imouzzer Kandar,Imouzzer Kandar,Morocco,Morocco,MA,MA,3,"03, SEF"
+subdivision_codes,10960136,10960136,Moulay Bouazza,Moulay Bouazza,Morocco,Morocco,MA,MA,4,"04, KHE"
+subdivision_codes,2542013,2542013,Al Aaroui,Al Aaroui,Morocco,Morocco,MA,MA,2,"02, NAD"
+subdivision_codes,2549888,2549888,Zemamra,Zemamra,Morocco,Morocco,MA,MA,6,"06, SIB"
+subdivision_codes,10374934,10374934,Ait Melloul,Ait Melloul,Morocco,Morocco,MA,MA,9,"09, INE"
+subdivision_codes,2544606,2544606,Douar Kalaa,Douar Kalaa,Morocco,Morocco,MA,MA,1,"01, OUZ"
+subdivision_codes,2560939,2560939,Ain El Aouda,Ain El Aouda,Morocco,Morocco,MA,MA,4,"04, SKH"
+subdivision_codes,2537802,2537802,Saidia,Saidia,Morocco,Morocco,MA,MA,2,"02, BER"
+subdivision_codes,2528357,2528357,Tikiouine,Tikiouine,Morocco,Morocco,MA,MA,9,"09, AGD"
+subdivision_codes,2541304,2541304,Nkob,Nkob,Morocco,Morocco,MA,MA,8,"08, OUA"
+subdivision_codes,10958491,10958491,Bni Bouayach,Bni Bouayach,Morocco,Morocco,MA,MA,1,"01, HOC"
+subdivision_codes,2561545,2561545,Agdal,Agdal,Morocco,Morocco,MA,MA,4,"04, RAB"
+subdivision_codes,2562027,2562027,Douar Ajdir,Douar Ajdir,Morocco,Morocco,MA,MA,2,"02, DRI"
+subdivision_codes,2596460,2596460,Ribat Al Khayr,Ribat Al Khayr,Morocco,Morocco,MA,MA,3,"03, SEF"
+subdivision_codes,2536393,2536393,Sidi Allal el Bahraoui,Sidi Allal el Bahraoui,Morocco,Morocco,MA,MA,4,"04, KHE"
+subdivision_codes,2541210,2541210,Zawyat an Nwacer,Zawyat an Nwacer,Morocco,Morocco,MA,MA,6,"06, NOU"
+subdivision_codes,2552427,2552427,Eddechira,Eddechira,Morocco,Morocco,MA,MA,9,"09, TIZ"
+subdivision_codes,2560813,2560813,Aïn Leuh,Aïn Leuh,Morocco,Morocco,MA,MA,3,"03, IFR"
+subdivision_codes,2556076,2556076,Ben Ahmed,Ben Ahmed,Morocco,Morocco,MA,MA,6,"06, SET"
+subdivision_codes,2549623,2549623,El Menzel,El Menzel,Morocco,Morocco,MA,MA,3,"03, SEF"

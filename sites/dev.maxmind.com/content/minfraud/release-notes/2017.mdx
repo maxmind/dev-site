@@ -1,0 +1,67 @@
+---
+draft: false
+title: minFraud Release Notes - 2017 Archive
+---
+
+<ReleaseNote date="2017-11-24" title="Anonymizer types added to minFraud Insights and Factors
+">
+minFraud Insights and Factors services now include anonymizer-type outputs.
+These outputs are:
+
+- `/ip_address/traits/is_anonymous` – whether the IP address belongs to any sort
+of anonymous network.
+- `/ip_address/traits/is_anonymous_vpn` – whether the IP address belongs to an
+anonymous VPN system.
+- `/ip_address/traits/is_hosting_provider` – whether the IP address belongs to a
+hosting provider.
+- `/ip_address/traits/is_public_proxy` – whether the IP address belongs to a
+public proxy.
+- `/ip_address/traits/is_tor_exit_node` – whether the IP address is a Tor exit
+node.
+
+As these are included via GeoIP2 Precision Insights, please see our [GeoIP2
+Precision Web Services documentation](/geoip/docs/web-services) for more
+information.
+
+</ReleaseNote>
+
+<ReleaseNote date="2017-07-24" title="Dispositions API released">
+We have added a Dispositions API for use with Disposition setting from the
+Transaction Details page. Use this new API to integrate with your order
+management system, payment processor, or other internal system so that manual
+review decisions made in the MaxMind account portal are available within your
+own systems. More information
+[Here](/minfraud/working-with-transaction-dispositions).
+</ReleaseNote>
+
+<ReleaseNote date="2017-07-24" title="Mapping more mobile networks to regional level">
+We will be mapping additional mobile (cellular) networks to a region
+(subdivision) rather than city level. This change will only occur where the
+confidence in the city data is low due to the mobile provider allocating IPs
+over a wide area.
+</ReleaseNote>
+
+<ReleaseNote date="2017-07-13" title="Custom Inputs added to minFraud Score, Insights, and Factors">
+Customers now have the ability to create [Custom
+Inputs](https://support.maxmind.com/custom-inputs-guide/) for use with our
+minFraud services. Custom Inputs requires the use of minFraud Score, minFraud
+Insights, or minFraud Factors queries.
+</ReleaseNote>
+
+<ReleaseNote date="2017-07-13" title="New minFraud Input and Output parameters">
+We have added three new parameters to minFraud Score, Insights and Factors:
+**Input Parameters:** `/device/session_id`, `/device/session_age`. **Output
+Parameter:** `/email/first_seen`.
+</ReleaseNote>
+
+<ReleaseNote date="2017-06-23" title="Adding Multiple License Keys Support">
+Our Account Portal has been updated to include the ability for our customers to
+create and manage multiple license keys.
+</ReleaseNote>
+
+<ReleaseNote date="2017-03-17" title="minFraud Transaction History page is now minFraud Transactions Screen">
+The minFraud Transaction History page was replaced by the minFraud Transactions
+Screen in support of showing dispositions. In addition, it is now possible to
+[set dispositions from the transaction details
+screen](https://support.maxmind.com/minfraud-interactive-manual-review-guide/).
+</ReleaseNote>

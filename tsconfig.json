@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "allowJs": true,
+    "esModuleInterop": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "lib": [
+      "dom",
+      "ES2019"
+    ],
+    "module": "commonjs",
+    "noEmit": true,
+    "noUnusedLocals": false,
+    "resolveJsonModule": true,
+    "strict": true,
+    "target": "ES2019",
+  },
+  "exclude": [
+    "node_modules",
+  ],
+}

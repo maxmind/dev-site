@@ -1,0 +1,77 @@
+diff_in,old_geoname_id,new_geoname_id,old_city_name,new_city_name,old_country_name,new_country_name,old_country_code,new_country_code,old_subdivision_codes,new_subdivision_codes
+city_name,3348078,3348078,Kuito,Cuito,Angola,Angola,AO,AO,BIE,BIE
+city_name,9534257,9534257,Am Djarass,Amdjarass,Chad,Chad,TD,TD,EE,EE
+city_name,1810979,1810979,Fuling,Fuchow,China,China,CN,CN,CQ,CQ
+city_name,10982160,10982160,Shaokeng,Shaokengcun,China,China,CN,CN,FJ,FJ
+city_name,11594500,11594500,Seustadt am Kulm,Neustadt am Kulm,Germany,Germany,DE,DE,BY,BY
+city_name,2958802,2958802,Alterhofen,Aiterhofen,Germany,Germany,DE,DE,BY,BY
+city_name,2841125,2841125,Saulgau,Bad Saulgau,Germany,Germany,DE,DE,BW,BW
+city_name,2846166,2846166,Rodach,Bad Rodach,Germany,Germany,DE,DE,BY,BY
+city_name,2951834,2951834,Bayersoien,Bad Bayersoien,Germany,Germany,DE,DE,BY,BY
+city_name,2803564,2803564,Zwesten,Bad Zwesten,Germany,Germany,DE,DE,HE,HE
+city_name,722324,722324,Berettyoujfalu,Berettyóújfalu,Hungary,Hungary,HU,HU,HB,HB
+city_name,294023,294023,Nir Yisra'el,Nir Yisra’el,Israel,Israel,IL,IL,D,D
+city_name,6227908,6227908,Eketahuna,Mellemskov,New Zealand,New Zealand,NZ,NZ,MWT,MWT
+city_name,3106212,3106212,Vilella de Cinca / Velilla de Cinca,Vilella de Cinca,Spain,Spain,ES,ES,"AR, HU","AR, HU"
+city_name,687700,687700,Alexandrovsk,Zaporizhzhya,Ukraine,Ukraine,UA,UA,23,23
+city_name,688188,688188,Yelyzaveto-Mykolayivka,Yelyzaveta-Mykolaivka,Ukraine,Ukraine,UA,UA,14,14
+city_name,712200,712200,Bezlyudivka,Bezliudivka,Ukraine,Ukraine,UA,UA,63,63
+city_name,713068,713068,Pryazovs'ke,Pryazovske,Ukraine,Ukraine,UA,UA,14,14
+city_name,713501,713501,Anadol',Anadol,Ukraine,Ukraine,UA,UA,14,14
+city_name,688696,688696,Vysokyy,Vysokyi,Ukraine,Ukraine,UA,UA,63,63
+city_name,688148,688148,Yenakiyeve,Yenakiieve,Ukraine,Ukraine,UA,UA,14,14
+city_name,701228,701228,Mykhaylivka,Mykhailivka,Ukraine,Ukraine,UA,UA,14,14
+city_name,710798,710798,Cherkas'ka Lozova,Cherkaska Lozova,Ukraine,Ukraine,UA,UA,63,63
+city_name,11096831,11096831,Mar'yivka,Marivka,Ukraine,Ukraine,UA,UA,14,14
+city_name,712719,712719,Bayrak,Bairak,Ukraine,Ukraine,UA,UA,63,63
+city_name,707025,707025,Kamin-Kashyrskyi,Kamen’-Kashirskiy,Ukraine,Ukraine,UA,UA,7,7
+city_name,702320,702320,Makiyivka,Makiivka,Ukraine,Ukraine,UA,UA,14,14
+city_name,689197,689197,Vodyane,Vodiane,Ukraine,Ukraine,UA,UA,14,14
+city_name,700145,700145,Mykolayivka,Mykolaivka,Ukraine,Ukraine,UA,UA,14,14
+city_name,700829,700829,Molodohvardiys'k,Molodohvardiisk,Ukraine,Ukraine,UA,UA,9,9
+city_name,691705,691705,Teplohirs'k,Teplohirsk,Ukraine,Ukraine,UA,UA,9,9
+city_name,710429,710429,Chkalovs'ke,Chkalovske,Ukraine,Ukraine,UA,UA,63,63
+city_name,704202,704202,Krasnyy Luch,Krasnyi Luch,Ukraine,Ukraine,UA,UA,9,9
+city_name,687679,687679,Zaporizhzhya,Zaporizhzhia,Ukraine,Ukraine,UA,UA,14,14
+city_name,695581,695581,Rodyns'ke,Rodynske,Ukraine,Ukraine,UA,UA,14,14
+city_name,7165539,7165539,,Township of Columbus City,United States,United States,US,US,OH,OH
+geoname_id,2789697,2789696,Ophoven,Ophoven,Belgium,Belgium,BE,BE,"VLG, VLI","VLG, VLI"
+geoname_id,3389141,3389134,Santo Antonio,Santo Antonio,Brazil,Brazil,BR,BR,RN,RN
+geoname_id,3471390,6316447,Arvoredo,Arvoredo,Brazil,Brazil,BR,BR,SC,SC
+geoname_id,3452514,3452515,Pouso Alto,Pouso Alto,Brazil,Brazil,BR,BR,MG,MG
+geoname_id,3469333,12179399,Bonfim,Bonfim,Brazil,Brazil,BR,BR,MG,MG
+geoname_id,3462511,3462513,Gaviao,Gaviao,Brazil,Brazil,BR,BR,BA,BA
+geoname_id,3453415,3453414,Planalto,Planalto,Brazil,Brazil,BR,BR,RS,RS
+geoname_id,3456173,3456174,Nova Esperanca,Nova Esperanca,Brazil,Brazil,BR,BR,PR,PR
+geoname_id,3460542,12108334,Itororo,Itororo,Brazil,Brazil,BR,BR,BA,BA
+geoname_id,2037415,8507024,Fazhan,Fazhan,China,China,CN,CN,HL,HL
+geoname_id,2038356,10914961,Beigang,Beigang,China,China,CN,CN,JL,JL
+geoname_id,1817209,10425621,Baizhai,Baizhai,China,China,CN,CN,HA,HA
+geoname_id,2038119,8555277,Chaoyang,Chaoyang,China,China,CN,CN,NM,NM
+geoname_id,1812648,8396051,Dongchang,Dongchang,China,China,CN,CN,JS,JS
+geoname_id,1808526,9900502,Hemu,Hemu,China,China,CN,CN,GX,GX
+geoname_id,1916154,8366122,Dongsheng,Dongsheng,China,China,CN,CN,GD,GD
+geoname_id,1919860,6793030,Beiyang,Beiyang,China,China,CN,CN,GD,GD
+geoname_id,7522460,7522443,,,Estonia,Estonia,EE,EE,37,37
+geoname_id,6613997,2981296,Saint-Brevin-les-Pins,Saint-Brevin-les-Pins,France,France,FR,FR,"PDL, 44","PDL, 44"
+geoname_id,6616809,3015298,Grandchamps-des-Fontaines,Grandchamps-des-Fontaines,France,France,FR,FR,"PDL, 44","PDL, 44"
+geoname_id,6613903,3014413,Guemene-Penfao,Guemene-Penfao,France,France,FR,FR,"PDL, 44","PDL, 44"
+geoname_id,6553252,2810706,Petersberg,Petersberg,Germany,Germany,DE,DE,HE,HE
+geoname_id,6548732,12188619,Spreetal,Spreetal,Germany,Germany,DE,DE,SN,SN
+geoname_id,2900521,2900520,Hollenstedt,Hollenstedt,Germany,Germany,DE,DE,NI,NI
+geoname_id,6555266,12188614,Zell,Zell,Germany,Germany,DE,DE,BY,BY
+geoname_id,1276882,10191098,Barodia,Barodia,India,India,IN,IN,RJ,RJ
+geoname_id,8963878,3176247,Gazzo,Gazzo,Italy,Italy,IT,IT,"25, MN","25, MN"
+geoname_id,8477650,194449,Kangemi,Kangemi,Kenya,Kenya,KE,KE,30,30
+geoname_id,11364588,3526694,Ixtlahuacan,Ixtlahuacan,Mexico,Mexico,MX,MX,CMX,CMX
+geoname_id,2024877,2024876,Dormidontovka,Dormidontovka,Russia,Russia,RU,RU,KHA,KHA
+geoname_id,6544442,2516932,Guadiaro,Guadiaro,Spain,Spain,ES,ES,"AN, CA","AN, CA"
+subdivision_codes,1634098,1634098,Ngawi,Ngawi,Indonesia,Indonesia,ID,ID,JB,JI
+subdivision_codes,6822892,6822892,Wonosobo,Wonosobo,Indonesia,Indonesia,ID,ID,JB,JI
+subdivision_codes,2647539,2647539,Hamworthy,Hamworthy,United Kingdom,United Kingdom,GB,GB,ENG,"ENG, BCP"
+subdivision_codes,2639762,2639762,Quinton,Quinton,United Kingdom,United Kingdom,GB,GB,"ENG, DUD","ENG, BIR"
+subdivision_codes,3211309,3211309,Highcliffe,Highcliffe,United Kingdom,United Kingdom,GB,GB,ENG,"ENG, BCP"
+subdivision_codes,2640101,2640101,Poole,Poole,United Kingdom,United Kingdom,GB,GB,ENG,"ENG, BCP"
+subdivision_codes,9430066,9430066,Mudeford,Mudeford,United Kingdom,United Kingdom,GB,GB,ENG,"ENG, BCP"
+subdivision_codes,2646365,2646365,Hurn,Hurn,United Kingdom,United Kingdom,GB,GB,ENG,"ENG, BCP"
+subdivision_codes,2653075,2653075,Christchurch,Christchurch,United Kingdom,United Kingdom,GB,GB,ENG,"ENG, BCP"

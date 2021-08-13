@@ -1,0 +1,58 @@
+import responseJson from '../_examples/response';
+
+<MinFraudSchema
+  json={responseJson.email}
+  jsonPointer="/email"
+  name="Response | Email"
+  services={[
+    'insights',
+    'factors',
+  ]}
+>
+  <Property
+    linkToSchemaName="Response | Email | Domain"
+    name="domain"
+  >
+    This field contains a JSON object with information relating to the domain.
+  </Property>
+
+  <Property
+    name="first_seen"
+    tags={{
+      'Format': 'YYYY-MM-DD',
+      'Max Length': 10,
+    }}
+  >
+    A date string (e.g. 2017-04-24) to identify the date an email address was
+    first seen by MaxMind. This is expressed using the ISO 8601 date format
+    YYYY-MM-DD. The earliest date that may be returned is January 1, 2008.
+  </Property>
+
+  <Property
+    name="is_disposable"
+  >
+    This field is `true` if MaxMind believes that the email address is from a
+    disposable email provider. It is `false` if the address is not from a known
+    disposable email provider. The key will only be present if a valid email
+    address or email domain is provided.
+  </Property>
+
+  <Property
+    name="is_free"
+  >
+    This field is `true` if MaxMind believes that this email domain is for a
+    free email provider such as Gmail or Yahoo! Mail. It is `false` if the
+    domain is not for a known free email provider. The key will only be present
+    if a valid email address or email domain is provided.
+  </Property>
+
+  <Property
+    name="is_high_risk"
+  >
+    This field is `true` if MaxMind believes that this email address is likely
+    to be used for fraud. It is `false` if MaxMind does not believe the address
+    is used for fraud. The key will only be present if a valid email address or
+    email address hash is provided. Note that this is also factored into the
+    overall `risk_score` in the response as well.
+  </Property>
+</MinFraudSchema>

@@ -1,0 +1,87 @@
+import responseJson from '../_examples/response';
+
+<MinFraudSchema
+  json={responseJson.shipping_address}
+  jsonPointer="/shipping_address"
+  name="Response | Shipping Address"
+  services={[
+    'insights',
+    'factors',
+  ]}
+>
+  <Property
+    name="is_high_risk"
+  >
+    This field is `true` if the shipping address is an address associated with
+    fraudulent transactions. The field is `false` when the address is not
+    associated with increased risk. The key will only be present when a
+    shipping address is provided.
+  </Property>
+
+  <Property
+    name="is_postal_in_city"
+  >
+    This field is `true` if the postal code provided with the address is in the
+    city for the address. The field is `false` when the postal code is not in
+    the city. The key will only be present when a billing postal code, city,
+    and country have been provided.
+
+    We use [GeoNames data](https://www.geonames.org/postal-codes/postal-codes-us.html)
+    for the postal-city match, which uses the [preferred place name](https://en.wikipedia.org/wiki/ZIP_Code#Preferred_place_names:_ZIP_Codes_and_previous_zoning_lines)
+    for a US ZIP code. [Alternative place names](https://en.wikipedia.org/wiki/ZIP_Code#Preferred_place_names:_ZIP_Codes_and_previous_zoning_lines)
+    for US ZIP codes may not trigger a match for this field.
+  </Property>
+
+  <Property
+    name="latitude"
+    tags={{
+      'Format': 'Decimal'
+    }}
+  >
+    The approximate [WGS84](https://en.wikipedia.org/wiki/World_Geodetic_System)
+    latitude associated with the address.
+
+    <Alert type="warning">
+      **Latitude and longitude are not precise and should not be used to
+      identify a particular street address or household.**
+    </Alert>
+  </Property>
+
+  <Property
+    name="longitude"
+    tags={{
+      'Format': 'Decimal'
+    }}
+  >
+    The approximate [WGS84](https://en.wikipedia.org/wiki/World_Geodetic_System)
+    longitude associated with the address.
+
+    <Alert type="warning">
+      **Latitude and longitude are not precise and should not be used to
+      identify a particular street address or household.**
+    </Alert>
+  </Property>
+
+  <Property
+    name="distance_to_ip_location"
+    type="integer"
+  >
+    The distance in kilometers from the address to the IP location. We fall back to country or subdivision information if we do not have postal or city information for an IP address, which may lead to inaccurate distance calculations. 
+  </Property>
+
+  <Property
+    name="distance_to_billing_address"
+    type="integer"
+  >
+    The distance in kilometers from the shipping address to billing address. We fall back to country or subdivision information if we do not have postal or city information for an IP address, which may lead to inaccurate distance calculations. 
+  </Property>
+
+  <Property
+    name="is_in_ip_country"
+  >
+    This field is `true` if the address is in the IP country. The field is
+    `false` when the address is not in the IP country. If the IP address could
+    not be geolocated or no billing address was provided, the field will not be
+    included in the response.
+  </Property>
+</MinFraudSchema>

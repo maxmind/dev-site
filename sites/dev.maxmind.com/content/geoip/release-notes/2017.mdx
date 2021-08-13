@@ -1,0 +1,132 @@
+---
+draft: false
+title: GeoIP2 Release Notes - 2017 Archive
+---
+
+<ReleaseNote date="2017-11-02" title="Anonymizer types added to GeoIP2 Precision Insights">
+GeoIP2 Precision Insights now includes anonymizer-type outputs. These outputs
+are:
+
+- `/traits/is_anonymous` – whether the IP address belongs to any sort of
+anonymous network.
+- `/traits/is_anonymous_vpn` – whether the IP address belongs to an anonymous
+VPN system.
+- `/traits/is_hosting_provider` – whether the IP address belongs to a hosting
+provider.
+- `/traits/is_public_proxy` – whether the IP address belongs to a public proxy.
+- `/traits/is_tor_exit_node` – whether the IP address is a Tor exit node.
+
+Please see our [GeoIP2 Precision Web Services
+documentation](/geoip/docs/web-services) for more information.
+
+</ReleaseNote>
+
+<ReleaseNote date="2017-10-31" title="The legacy GeoIP JavaScript services have been discontinued">
+We have discontinued the legacy GeoIP JavaScript services, which used the
+endpoints http://js.maxmind.com/js/country.js and
+http://js.maxmind.com/js/geoip.js. If you still have not upgraded your
+integration to use the [GeoIP2 JavaScript Client
+API](/geoip/geolocate-an-ip/client-side-javascript) or are
+encountering problems with your legacy GeoIP JavaScript services, you can find
+more information about what to do by clicking
+[here](/geoip/legacy/migrating-away-from-our-legacy-geoip-javascript-services/).
+</ReleaseNote>
+
+<ReleaseNote date="2017-10-10" title="Our Singapore server is live">
+Our Singapore server is now live. GeoIP2 Precision and GeoIP web service
+customers – if you hardcode any of our IPs in your application or your
+firewall, please make sure you have added the new server IP addresses to your
+list:
+
+- IPv4 address: 169.55.62.55
+- IPv6 address: 2607:f0d0:3:2d::4
+- hostname: geoip-as-southeast.maxmind.com
+</ReleaseNote>
+
+<ReleaseNote date="2017-09-27" title="Crimea accuracy update">
+We completed our most recent review and update of Geolocation for Crimea. Our
+accuracy has increased as follows:
+
+Approximately 89% of website visitors who are from Crimea are currently located
+by GeoIP as being in Crimea. Approximately 97% of the visitors who are located
+in Crimea by GeoIP are actually in Crimea.
+
+We currently locate Crimea in Ukraine, as we use GeoNames data and they locate
+Crimea in Ukraine. If GeoNames locates Crimea in Russia in the future, we will
+follow their change and post an announcement here as well as on
+[https://twitter.com/maxmind](https://twitter.com/maxmind).
+
+In legacy GeoIP, we return a FIPS region code of 11 or 20. In GeoIP2, we return
+a iso code of 40 or 43 in the subdivision object.
+
+Due to the nature of geolocation technology and other factors beyond our
+control, we cannot guarantee any specific future accuracy level. Further,
+accuracy figures are subject to change as IP networks are reallocated.
+</ReleaseNote>
+
+<ReleaseNote date="2017-08-17" title="EOL legacy GeoIP JavaScript">
+On October 31, 2017, we will discontinue our legacy GeoIP JavaScript services,
+which use the endpoints http://js.maxmind.com/js/country.js and
+http://js.maxmind.com/js/geoip.js. Please upgrade your legacy GeoIP integration
+to use our [GeoIP2 JavaScript Client
+API](/geoip/geolocate-an-ip/client-side-javascript) before
+that date.
+</ReleaseNote>
+
+<ReleaseNote date="2017-07-24" title="Mapping more mobile networks to regional level">
+We will be mapping additional mobile (cellular) networks to a region
+(subdivision) rather than city level. This change will only occur where the
+confidence in the city data is low due to the mobile provider allocating IPs
+over a wide area.
+</ReleaseNote>
+
+<ReleaseNote date="2017-07-10" title="Removing additional anycast locations">
+The geographical location for anycast CloudFlare networks: `104.16.0.0/12`,
+`162.159.0.0/16`, `190.93.244.0/22`, `198.41.192.0/19` have been removed.
+</ReleaseNote>
+
+<ReleaseNote date="2017-06-23" title="Adding Multiple License Keys Support">
+Our Account Portal has been updated to include the ability for our customers to
+create and manage multiple license keys.
+</ReleaseNote>
+
+<ReleaseNote date="2017-06-11" title="Removing anycast locations">
+We are removing the geographical location for the anycast CloudFlare network
+`141.101.112.0/20`. Anycast networks can be routed to a number of different
+locations all around the world, typically based on what is the nearest
+location. Over the next few weeks, we may remove the geographical location for
+additional anycast networks, including more CloudFlare networks as well as
+Google public DNS servers `8.8.8.8` and `8.8.4.4`.
+</ReleaseNote>
+
+<ReleaseNote date="2017-05-09" title="New GeoLite2 ASN Database">
+Our [GeoLite2 ASN database](/geoip/docs/databases) is now provided in a CSV
+format suitable for importing into a SQL database as well as a GeoLite2 ASN
+database in our MaxMind DB binary format. You can [download the database
+here](/geoip/geoip2/geolite2/). GeoLite2 databases may also be downloaded and
+updated with our [GeoIP Update program](/geoip/geoipupdate/).
+</ReleaseNote>
+
+<ReleaseNote date="2017-05-08" title="Spectrum rebranding">
+We've updated the ISP and Organization data to replace the _Charter
+Communications_ and _Bright House Networks_ data points with the data point
+_Spectrum_, as these two ISPs have merged and been rebranded as _Spectrum_.
+</ReleaseNote>
+
+<ReleaseNote date="2017-03-05" title="GeoIP ISP Accuracy Improvements in Europe and Latin America">
+The GeoIP databases and services providing ISP and Organization data have been
+updated. The change is to a number of European and Latin Americans ISPs. We've
+updated the ISP name to use the common trade name instead of the legal name.
+This will make it easier to recognize the ISP.
+
+Please note that if you use this data point, for example, to flag a visitor if
+they change ISP, you may need to adjust your implementation in order to avoid
+false positive flags.
+
+The ISP name changes include the following:
+
+- `Proximus Skynet` to `Skynet Belgium`
+- `Telefonica Germany` to `O2 Deutschland`
+- `Telefonica Movil De Chile S.A.` to `Movistar Movil Chile`
+- `Tele Danmark` to `TDC Danmark`
+</ReleaseNote>

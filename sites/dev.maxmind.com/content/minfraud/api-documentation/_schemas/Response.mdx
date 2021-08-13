@@ -1,0 +1,158 @@
+import responseJson from '../_examples/response';
+
+<MinFraudSchema
+  json={responseJson}
+  jsonPointer="/"
+  name="Response"
+  services="*"
+>
+The following is an example of a complete minFraud Factors response, including
+all available outputs. In practice, fewer outputs may be returned based on the
+minFraud service you query and the inputs provided.
+
+  <Property
+    name="id"
+    tags={{
+      'Format': 'UUID',
+    }}
+  >
+    This is the minFraud ID, a [UUID](https://en.wikipedia.org/wiki/Universally_unique_identifier)
+    that identifies the minFraud response. Use this ID to
+    [search your minFraud logs](https://www.maxmind.com/en/minfraud-log) or when
+    making support requests to MaxMind.
+  </Property>
+
+  <Property
+    name="risk_score"
+    tags={{
+      'Format': 'decimal',
+      'Min': 0.01,
+      'Max': 99,
+    }}
+  >
+    This field contains the risk score, from 0.01 to 99. A higher score
+    indicates a higher risk of fraud. For example, a score of 20 indicates a
+    20% chance that a transaction is fraudulent. We never return a risk score
+    of 0, since all transactions have the possibility of being fraudulent.
+    Likewise we never return a risk score of 100.
+  </Property>
+
+  <Property
+    name="funds_remaining"
+    tags={{
+      'Format': 'decimal',
+      'Min': 0.00,
+    }}
+  >
+    The approximate US dollar value of the funds remaining on your MaxMind
+    account.
+  </Property>
+
+  <Property
+    name="queries_remaining"
+    tags={{
+      'Min': 0,
+    }}
+    type="integer"
+  >
+    The approximate number of queries remaining for the service before your
+    account runs out of funds.
+  </Property>
+
+  <Property
+    linkToSchemaName={'Response | IP Address'}
+    name="ip_address"
+  >
+    This object contains a risk score and (for minFraud Insights and Factors
+    requests) risk data for the IP address associated with the event.
+  </Property>
+
+  <Property
+    linkToSchemaName={'Response | Credit Card'}
+    name="credit_card"
+    services={[
+      'insights',
+      'factors',
+    ]}
+  >
+    This object contains minFraud information related to the credit card.
+  </Property>
+
+  <Property
+    linkToSchemaName={'Response | Device'}
+    name="device"
+    services={[
+      'insights',
+      'factors',
+    ]}
+  >
+    This object contains information about the device that MaxMind believes is
+    associated with the IP address passed in the request.
+  </Property>
+
+  <Property
+    linkToSchemaName={'Response | Email'}
+    name="email"
+    services={[
+      'insights',
+      'factors',
+    ]}
+  >
+    This object contains information about the email address passed in the
+    request.
+  </Property>
+
+  <Property
+    linkToSchemaName={'Response | Shipping Address'}
+    name="shipping_address"
+    services={[
+      'insights',
+      'factors',
+    ]}
+  >
+    This object contains minFraud response data associated with the shipping
+    address. If the shipping address was not provided in the request or could
+    not be parsed, this object will not be present in the response.
+  </Property>
+
+  <Property
+    linkToSchemaName={'Response | Billing Address'}
+    name="billing_address"
+    services={[
+      'insights',
+      'factors',
+    ]}
+  >
+    This object contains minFraud response data associated with the billing
+    address. If the billing address was not provided in the request or could
+    not be parsed, this object will not be present in the response.
+  </Property>
+
+  <Property
+    linkToSchemaName={'Response | Disposition'}
+    name="disposition"
+  >
+    This object contains information about how a request was handled by the
+    [custom rules](https://www.maxmind.com/en/solutions/minfraud-services/custom-rules)
+    you have defined. If your account does not have any custom rules defined,
+    then this object will not be present in the response.
+  </Property>
+
+  <Property
+    linkToSchemaName={'Response | Subscores'}
+    name="subscores"
+    services="factors"
+  >
+    This object contains subscores for many of the individual components that
+    are used in calculating the risk_score.
+  </Property>
+
+  <Property
+    linkToSchemaName={'Response | Warning'}
+    name="warnings"
+  >
+    This array contains warning objects detailing issues with the request that
+    was sent such as invalid or unknown inputs. It is highly recommended that
+    you check this array for issues when integrating the web service.
+  </Property>
+</MinFraudSchema>

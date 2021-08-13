@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "*": ["src/types/*"],
+      "openapi-types": ["src/types/*"]
+    },
+    "typeRoots": ["src/types", "./node_modules/@types", "../../node_modules/@types"]
+  },
+  "files": [
+    "test/loadershim.d.ts"
+  ],
+  "exclude": [
+    "node_modules",
+    "public",
+    ".cache"
+  ],
+  "extends": "../../tsconfig.json",
+  "include": ["functions/**/*", "src/**/*", "test/**/*", "content1/navigation.tsx"]
+}

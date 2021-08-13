@@ -1,0 +1,22 @@
+import responseJson from '../_examples/geoip';
+
+<GeoIpSchema
+  json={responseJson.maxmind}
+  jsonPointer="/maxmind"
+  name="Response | MaxMind"
+  services="*"
+>
+  A JSON object containing information related to your MaxMind account.
+
+  <Property
+    name="queries_remaining"
+    type="integer"
+  >
+    The approximate number of remaining queries available for the end point
+    which is being called.
+
+    <Alert type="warning">
+      This field is not present in the GeoLite2 City web service.
+    </Alert>
+  </Property>
+</GeoIpSchema>

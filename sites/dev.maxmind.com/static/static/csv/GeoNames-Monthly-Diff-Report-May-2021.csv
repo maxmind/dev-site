@@ -1,0 +1,250 @@
+diff_in,old_geoname_id,new_geoname_id,old_city_name,new_city_name,old_country_name,new_country_name,old_country_code,new_country_code,old_subdivision_codes,new_subdivision_codes
+city_name,6075562,6075562,Mitchell,Mitchell/Ontario,Canada,Canada,CA,CA,ON,ON
+city_name,7452577,7452577,Baita,Baitacun,China,China,CN,CN,FJ,FJ
+city_name,1922375,1922375,Chenfang,Chenfangcun,China,China,CN,CN,FJ,FJ
+city_name,2985282,2985282,Priziac,Priziac ( Priziac ),France,France,FR,FR,"BRE, 56","BRE, 56"
+city_name,1547314,1547314,Heard Island and McDonald Islands,,Heard Island and McDonald Islands,Heard Island and McDonald Islands,HM,HM,,
+city_name,1258916,1258916,Rajapalaiyam,Rajapalayam,India,India,IN,IN,TN,TN
+city_name,1275778,1275778,Bhusaval,Bhusawal,India,India,IN,IN,MH,MH
+city_name,1525600,1525600,Bayqongyr,Bayqonyr,Kazakhstan,Kazakhstan,KZ,KZ,KAR,KAR
+city_name,2567539,2567539,Saint John,San Gwann,Malta,Malta,MT,MT,49,49
+city_name,3523011,3523011,Mazatlan,Montemorelos,Mexico,Mexico,MX,MX,NLE,NLE
+city_name,776832,776832,Ytre Kiberg,Kiberg,Norway,Norway,NO,NO,54,54
+city_name,3088972,3088972,Piotrków Trybunalski,Piotrkow Trybunalski,Poland,Poland,PL,PL,10,10
+city_name,713121,713121,Avdiyivka,Avdiivka,Ukraine,Ukraine,UA,UA,74,74
+city_name,7021653,7021653,Tavriya,Tavriia,Ukraine,Ukraine,UA,UA,65,65
+city_name,691270,691270,Trostyanets',Trostianets,Ukraine,Ukraine,UA,UA,68,68
+city_name,713536,713536,Al'oshyns'ke,Aloshynske,Ukraine,Ukraine,UA,UA,74,74
+city_name,699516,699516,Novokyyivka,Novokyivka,Ukraine,Ukraine,UA,UA,65,65
+city_name,708321,708321,Horodnya,Horodnia,Ukraine,Ukraine,UA,UA,74,74
+city_name,709903,709903,Dobropillya,Dobropillia,Ukraine,Ukraine,UA,UA,65,65
+geoname_id,11959358,3464801,Descanso,Descanso,Brazil,Brazil,BR,BR,SC,SC
+geoname_id,3405887,3405883,Bela Vista,Bela Vista,Brazil,Brazil,BR,BR,PE,PE
+geoname_id,3449304,6321040,Sao Desiderio,Sao Desiderio,Brazil,Brazil,BR,BR,BA,BA
+geoname_id,6323726,6316423,Aral Moreira,Aral Moreira,Brazil,Brazil,BR,BR,MS,MS
+geoname_id,3388753,3388742,Sao Goncalo,Sao Goncalo,Brazil,Brazil,BR,BR,CE,CE
+geoname_id,12108334,3460542,Itororo,Itororo,Brazil,Brazil,BR,BR,BA,BA
+geoname_id,6321289,3465696,Conego Marinho,Conego Marinho,Brazil,Brazil,BR,BR,MG,MG
+geoname_id,6323843,6317747,Nova Lacerda,Nova Lacerda,Brazil,Brazil,BR,BR,MT,MT
+geoname_id,3460686,3460687,Itapitanga,Itapitanga,Brazil,Brazil,BR,BR,BA,BA
+geoname_id,6319492,6318968,Xinguara,Xinguara,Brazil,Brazil,BR,BR,PA,PA
+geoname_id,3475644,3460723,Itapeva,Itapeva,Brazil,Brazil,BR,BR,SP,SP
+geoname_id,3398381,6319712,Icatu,Icatu,Brazil,Brazil,BR,BR,MA,MA
+geoname_id,3449820,3449822,Santa Rosa,Santa Rosa,Brazil,Brazil,BR,BR,RS,RS
+geoname_id,3389509,3389501,Santa Maria,Santa Maria,Brazil,Brazil,BR,BR,RN,RN
+geoname_id,3397154,6320923,Juazeiro,Juazeiro,Brazil,Brazil,BR,BR,BA,BA
+geoname_id,3445946,3445947,Tunas,Tunas,Brazil,Brazil,BR,BR,RS,RS
+geoname_id,3736812,6319338,Presidente Figueiredo,Presidente Figueiredo,Brazil,Brazil,BR,BR,AM,AM
+geoname_id,3663516,6319284,Mancio Lima,Mancio Lima,Brazil,Brazil,BR,BR,AC,AC
+geoname_id,1810878,2002078,Fuxi,Fuxi,China,China,CN,CN,FJ,FJ
+geoname_id,1817602,7525867,Bailian,Bailian,China,China,CN,CN,FJ,FJ
+geoname_id,1553285,7040461,Banqiao,Banqiao,China,China,CN,CN,AH,AH
+geoname_id,1817490,6848743,Baini,Baini,China,China,CN,CN,GD,GD
+geoname_id,1981098,10367928,Baiyu,Baiyu,China,China,CN,CN,HN,HN
+geoname_id,1794617,8408084,Shuangqiao,Shuangqiao,China,China,CN,CN,CQ,CQ
+geoname_id,8540478,8396081,Hongshan,Hongshan,China,China,CN,CN,JS,JS
+geoname_id,1548554,8273397,Baidian,Baidian,China,China,CN,CN,JS,JS
+geoname_id,3579143,6690363,Guadeloupe,Guadeloupe,Guadeloupe,Guadeloupe,GP,GP,,
+geoname_id,1279135,1279134,Akbarpur,Akbarpur,India,India,IN,IN,UP,UP
+geoname_id,10665213,1276972,Barhaj,Barhaj,India,India,IN,IN,UP,UP
+geoname_id,10682154,10681804,Datial,Datial,India,India,IN,IN,PB,PB
+geoname_id,10439188,10318803,Hathwala,Hathwala,India,India,IN,IN,HR,HR
+geoname_id,2966607,2966605,Ballyduff,Ballyduff,Ireland,Ireland,IE,IE,"M, KY","M, KY"
+geoname_id,8955352,3177712,Cugnoli,Cugnoli,Italy,Italy,IT,IT,"65, PE","65, PE"
+geoname_id,1863288,1863289,Hamamatsu,Hamamatsu,Japan,Japan,JP,JP,22,22
+geoname_id,1735339,1735297,Mukah,Mukah,Malaysia,Malaysia,MY,MY,13,13
+geoname_id,7077251,1416358,Dheri,Dheri,Pakistan,Pakistan,PK,PK,KP,KP
+geoname_id,4564071,4562487,,,Puerto Rico,Puerto Rico,PR,PR,,
+geoname_id,506497,506529,Popovka,Popovka,Russia,Russia,RU,RU,ROS,ROS
+geoname_id,1880251,1880252,Singapore,Singapore,Singapore,Singapore,SG,SG,,
+geoname_id,2514410,2514411,Los Villares,Los Villares,Spain,Spain,ES,ES,"AN, J","AN, J"
+geoname_id,1607000,1607001,Roi Et,Roi Et,Thailand,Thailand,TH,TH,45,45
+geoname_id,1906691,1606807,Sa Kaeo,Sa Kaeo,Thailand,Thailand,TH,TH,27,27
+geoname_id,3164670,6691831,Vatican City,Vatican City,Vatican City,Vatican City,VA,VA,,
+subdivision_codes,2483757,2483757,Reghaia,Reghaia,Algeria,Algeria,DZ,DZ,35,16
+subdivision_codes,2479099,2479099,Staoueli,Staoueli,Algeria,Algeria,DZ,DZ,42,16
+subdivision_codes,2488202,2488202,Melouza,Melouza,Algeria,Algeria,DZ,DZ,34,28
+subdivision_codes,2482390,2482390,Saoula,Saoula,Algeria,Algeria,DZ,DZ,42,16
+subdivision_codes,2481058,2481058,Sidi Amrane,Sidi Amrane,Algeria,Algeria,DZ,DZ,30,57
+subdivision_codes,2476403,2476403,Timimoun,Timimoun,Algeria,Algeria,DZ,DZ,1,49
+subdivision_codes,2486825,2486825,Mouzaia,Mouzaia,Algeria,Algeria,DZ,DZ,42,9
+subdivision_codes,2490993,2490993,La Trappe,La Trappe,Algeria,Algeria,DZ,DZ,42,16
+subdivision_codes,2499692,2499692,Djilali Ben Amar,Djilali Ben Amar,Algeria,Algeria,DZ,DZ,48,14
+subdivision_codes,2479966,2479966,Sidi Moussa,Sidi Moussa,Algeria,Algeria,DZ,DZ,9,16
+subdivision_codes,2497410,2497410,El Oued,El Oued,Algeria,Algeria,DZ,DZ,10,28
+subdivision_codes,2484887,2484887,Ouled Hamla,Ouled Hamla,Algeria,Algeria,DZ,DZ,43,4
+subdivision_codes,2498314,2498314,El Ghomri,El Ghomri,Algeria,Algeria,DZ,DZ,27,29
+subdivision_codes,2479086,2479086,Stile,Stile,Algeria,Algeria,DZ,DZ,39,57
+subdivision_codes,2498305,2498305,El Goléa,El Goléa,Algeria,Algeria,DZ,DZ,47,58
+subdivision_codes,2474423,2474423,Ziama Mansouria,Ziama Mansouria,Algeria,Algeria,DZ,DZ,6,18
+subdivision_codes,2501465,2501465,Cheraga,Cheraga,Algeria,Algeria,DZ,DZ,42,16
+subdivision_codes,2475475,2475475,Touggourt,Touggourt,Algeria,Algeria,DZ,DZ,30,55
+subdivision_codes,2476915,2476915,Theniet el Had,Theniet el Had,Algeria,Algeria,DZ,DZ,44,38
+subdivision_codes,2501466,2501466,Cheraga,Cheraga,Algeria,Algeria,DZ,DZ,42,44
+subdivision_codes,2505871,2505871,Baba Ali,Baba Ali,Algeria,Algeria,DZ,DZ,43,25
+subdivision_codes,2500282,2500282,Djamaa,Djamaa,Algeria,Algeria,DZ,DZ,30,57
+subdivision_codes,2493605,2493605,Ighram,Ighram,Algeria,Algeria,DZ,DZ,15,6
+subdivision_codes,2498765,2498765,El Achour,El Achour,Algeria,Algeria,DZ,DZ,42,16
+subdivision_codes,2499061,2499061,Draria,Draria,Algeria,Algeria,DZ,DZ,42,16
+subdivision_codes,2497460,2497460,Bir Mourad Rais,Bir Mourad Rais,Algeria,Algeria,DZ,DZ,42,16
+subdivision_codes,2484942,2484942,Ouled Chebel,Ouled Chebel,Algeria,Algeria,DZ,DZ,9,16
+subdivision_codes,2477462,2477462,Tebesbest,Tebesbest,Algeria,Algeria,DZ,DZ,30,55
+subdivision_codes,2485633,2485633,Oued el Alleug,Oued el Alleug,Algeria,Algeria,DZ,DZ,42,9
+subdivision_codes,2488193,2488193,Menaâ,Menaâ,Algeria,Algeria,DZ,DZ,7,5
+subdivision_codes,2500997,2500997,Damous,Damous,Algeria,Algeria,DZ,DZ,2,42
+subdivision_codes,2484894,2484894,Ouled Fayet,Ouled Fayet,Algeria,Algeria,DZ,DZ,42,16
+subdivision_codes,2499193,2499193,Douéra,Douéra,Algeria,Algeria,DZ,DZ,42,16
+subdivision_codes,2500592,2500592,Deli Ibrahim,Deli Ibrahim,Algeria,Algeria,DZ,DZ,42,16
+subdivision_codes,2474583,2474583,Zeralda,Zeralda,Algeria,Algeria,DZ,DZ,42,16
+subdivision_codes,2484979,2484979,Ouled Beni Messous,Ouled Beni Messous,Algeria,Algeria,DZ,DZ,42,16
+subdivision_codes,2501508,2501508,Chemini,Chemini,Algeria,Algeria,DZ,DZ,15,6
+subdivision_codes,2497655,2497655,El Meghaier,El Meghaier,Algeria,Algeria,DZ,DZ,39,57
+subdivision_codes,2505653,2505653,Baraki,Baraki,Algeria,Algeria,DZ,DZ,42,16
+subdivision_codes,2508275,2508275,Ain Benian,Ain Benian,Algeria,Algeria,DZ,DZ,42,16
+subdivision_codes,2498491,2498491,El Biar,El Biar,Algeria,Algeria,DZ,DZ,42,16
+subdivision_codes,2498667,2498667,El Aouinet,El Aouinet,Algeria,Algeria,DZ,DZ,4,12
+subdivision_codes,2499197,2499197,Doucen,Doucen,Algeria,Algeria,DZ,DZ,7,51
+subdivision_codes,2508010,2508010,Ain Merane,Ain Merane,Algeria,Algeria,DZ,DZ,48,2
+subdivision_codes,2502174,2502174,Bouzarea,Bouzarea,Algeria,Algeria,DZ,DZ,42,16
+subdivision_codes,2480368,2480368,Sidi Khaled,Sidi Khaled,Algeria,Algeria,DZ,DZ,7,51
+subdivision_codes,2498752,2498752,El Affroun,El Affroun,Algeria,Algeria,DZ,DZ,42,9
+subdivision_codes,2499104,2499104,Draa el Mizan,Draa el Mizan,Algeria,Algeria,DZ,DZ,10,15
+subdivision_codes,2503724,2503724,Bologhine,Bologhine,Algeria,Algeria,DZ,DZ,42,16
+subdivision_codes,2484187,2484187,Rais Hamidou,Rais Hamidou,Algeria,Algeria,DZ,DZ,42,16
+subdivision_codes,2508893,2508893,Adjahil,Adjahil,Algeria,Algeria,DZ,DZ,33,56
+subdivision_codes,2497510,2497510,El Mihan,El Mihan,Algeria,Algeria,DZ,DZ,33,56
+subdivision_codes,2503829,2503829,Birtouta,Birtouta,Algeria,Algeria,DZ,DZ,42,16
+subdivision_codes,2485845,2485845,Ouamri,Ouamri,Algeria,Algeria,DZ,DZ,44,26
+subdivision_codes,2477113,2477113,Teniet en Nasr,Teniet en Nasr,Algeria,Algeria,DZ,DZ,6,34
+subdivision_codes,2484933,2484933,Ouled Djellal,Ouled Djellal,Algeria,Algeria,DZ,DZ,7,51
+subdivision_codes,2478831,2478831,Tadmait,Tadmait,Algeria,Algeria,DZ,DZ,35,15
+subdivision_codes,2503260,2503260,Boudjellil,Boudjellil,Algeria,Algeria,DZ,DZ,10,6
+subdivision_codes,2505865,2505865,Baba Hassen,Baba Hassen,Algeria,Algeria,DZ,DZ,42,16
+subdivision_codes,2477537,2477537,Tazmalt,Tazmalt,Algeria,Algeria,DZ,DZ,10,6
+subdivision_codes,2493602,2493602,Igli,Igli,Algeria,Algeria,DZ,DZ,8,52
+subdivision_codes,2490297,2490297,Makouda,Makouda,Algeria,Algeria,DZ,DZ,35,15
+subdivision_codes,2493546,2493546,Iherir,Iherir,Algeria,Algeria,DZ,DZ,33,56
+subdivision_codes,2474957,2474957,Zahana,Zahana,Algeria,Algeria,DZ,DZ,31,29
+subdivision_codes,2478509,2478509,Taibet,Taibet,Algeria,Algeria,DZ,DZ,30,55
+subdivision_codes,2500275,2500275,Djanet,Djanet,Algeria,Algeria,DZ,DZ,33,56
+subdivision_codes,2596857,2596857,Tin Alkoum,Tin Alkoum,Algeria,Algeria,DZ,DZ,33,56
+subdivision_codes,2475764,2475764,Tizi Gheniff,Tizi Gheniff,Algeria,Algeria,DZ,DZ,35,15
+subdivision_codes,2499055,2499055,Drean,Drean,Algeria,Algeria,DZ,DZ,23,36
+subdivision_codes,596473,596473,Pabradė,Pabradė,Lithuania,Lithuania,LT,LT,VL,"VL, 49"
+subdivision_codes,596195,596195,Paliuniskis,Paliuniskis,Lithuania,Lithuania,LT,LT,"PN, 32","PN, 33"
+subdivision_codes,593116,593116,Vilnius,Vilnius,Lithuania,Lithuania,LT,LT,"VL, 58","VL, 57"
+subdivision_codes,7117229,7117229,Linksmakalnis,Linksmakalnis,Lithuania,Lithuania,LT,LT,KU,"KU, 16"
+subdivision_codes,597664,597664,Lapes,Lapes,Lithuania,Lithuania,LT,LT,"KU, 15","KU, 16"
+subdivision_codes,598098,598098,Klaipėda,Klaipėda,Lithuania,Lithuania,LT,LT,"KL, 21","KL, 20"
+subdivision_codes,601084,601084,Alytus,Alytus,Lithuania,Lithuania,LT,LT,"AL, 03","AL, 02"
+subdivision_codes,11310027,11310027,Pavieseciai,Pavieseciai,Lithuania,Lithuania,LT,LT,"PN, 32","PN, 33"
+subdivision_codes,599422,599422,Geleziai,Geleziai,Lithuania,Lithuania,LT,LT,"PN, 32","PN, 33"
+subdivision_codes,594656,594656,Šilutė,Šilutė,Lithuania,Lithuania,LT,LT,KL,"KL, 46"
+subdivision_codes,593666,593666,Utriai,Utriai,Lithuania,Lithuania,LT,LT,"KL, 20","KL, 21"
+subdivision_codes,598316,598316,Kaunas,Kaunas,Lithuania,Lithuania,LT,LT,"KU, 16","KU, 15"
+subdivision_codes,595356,595356,Raudondvaris,Raudondvaris,Lithuania,Lithuania,LT,LT,"KU, 15","KU, 16"
+subdivision_codes,595029,595029,Sakyna,Sakyna,Lithuania,Lithuania,LT,LT,"SA, 43","SA, 44"
+subdivision_codes,595436,595436,Raguva,Raguva,Lithuania,Lithuania,LT,LT,"PN, 32","PN, 33"
+subdivision_codes,599504,599504,Garliava,Garliava,Lithuania,Lithuania,LT,LT,"KU, 15","KU, 16"
+subdivision_codes,11307305,11307305,Romainiu Kaimele,Romainiu Kaimele,Lithuania,Lithuania,LT,LT,"KU, 15","KU, 16"
+subdivision_codes,595393,595393,Ramuciai,Ramuciai,Lithuania,Lithuania,LT,LT,"KU, 15","KU, 16"
+subdivision_codes,596238,596238,Palanga,Palanga,Lithuania,Lithuania,LT,LT,"KL, 21","KL, 20"
+subdivision_codes,599800,599800,Dovilai,Dovilai,Lithuania,Lithuania,LT,LT,"KL, 20","KL, 21"
+subdivision_codes,595456,595456,Radiskis,Radiskis,Lithuania,Lithuania,LT,LT,VL,"VL, 53"
+subdivision_codes,11300742,11300742,Brinkiskes,Brinkiskes,Lithuania,Lithuania,LT,LT,"VL, 57","VL, 58"
+subdivision_codes,595615,595615,Pravieniskes,Pravieniskes,Lithuania,Lithuania,LT,LT,KU,"KU, 13"
+subdivision_codes,599527,599527,Galgiai,Galgiai,Lithuania,Lithuania,LT,LT,"VL, 57","VL, 58"
+subdivision_codes,596664,596664,Nemenčinė,Nemenčinė,Lithuania,Lithuania,LT,LT,"VL, 57","VL, 58"
+subdivision_codes,593733,593733,Ukmerge,Ukmerge,Lithuania,Lithuania,LT,LT,VL,"VL, 53"
+subdivision_codes,596985,596985,Mikasiunai,Mikasiunai,Lithuania,Lithuania,LT,LT,"VL, 57","VL, 58"
+subdivision_codes,11289008,11289008,Slengiai,Slengiai,Lithuania,Lithuania,LT,LT,"KL, 20","KL, 21"
+subdivision_codes,597275,597275,Manciusenai,Manciusenai,Lithuania,Lithuania,LT,LT,VL,"VL, 47"
+subdivision_codes,600363,600363,Bubiai,Bubiai,Lithuania,Lithuania,LT,LT,"KU, 15","KU, 16"
+subdivision_codes,599282,599282,Girininkai,Girininkai,Lithuania,Lithuania,LT,LT,"KU, 15","KU, 16"
+subdivision_codes,596497,596497,Pabaliai,Pabaliai,Lithuania,Lithuania,LT,LT,"KU, 15","KU, 16"
+subdivision_codes,601211,601211,Agluonenai,Agluonenai,Lithuania,Lithuania,LT,LT,KL,"KL, 21"
+subdivision_codes,599579,599579,Ežerėlis,Ežerėlis,Lithuania,Lithuania,LT,LT,"KU, 15","KU, 16"
+subdivision_codes,11307370,11307370,Jonuciai,Jonuciai,Lithuania,Lithuania,LT,LT,"KU, 15","KU, 16"
+subdivision_codes,593144,593144,Vilkija,Vilkija,Lithuania,Lithuania,LT,LT,"KU, 15","KU, 16"
+subdivision_codes,598818,598818,Jonava,Jonava,Lithuania,Lithuania,LT,LT,KU,"KU, 10"
+subdivision_codes,593334,593334,Veiviržėnai,Veiviržėnai,Lithuania,Lithuania,LT,LT,"KL, 20","KL, 21"
+subdivision_codes,600226,600226,Butkunai,Butkunai,Lithuania,Lithuania,LT,LT,"KU, 15","KU, 16"
+subdivision_codes,11289278,11289278,Ketvergiai,Ketvergiai,Lithuania,Lithuania,LT,LT,"KL, 20","KL, 21"
+subdivision_codes,596634,596634,Netoniai,Netoniai,Lithuania,Lithuania,LT,LT,"KU, 15","KU, 16"
+subdivision_codes,11295014,11295014,Blusine,Blusine,Lithuania,Lithuania,LT,LT,"VL, 57","VL, 58"
+subdivision_codes,597769,597769,Kuršėnai,Kuršėnai,Lithuania,Lithuania,LT,LT,"SA, 43","SA, 44"
+subdivision_codes,594585,594585,Skaidiskes,Skaidiskes,Lithuania,Lithuania,LT,LT,"VL, 57","VL, 58"
+subdivision_codes,594739,594739,Šiauliai,Šiauliai,Lithuania,Lithuania,LT,LT,"SA, 44","SA, 43"
+subdivision_codes,599596,599596,Endriejavas,Endriejavas,Lithuania,Lithuania,LT,LT,KL,"KL, 21"
+subdivision_codes,599145,599145,Griniunai,Griniunai,Lithuania,Lithuania,LT,LT,"PN, 32","PN, 33"
+subdivision_codes,594639,594639,Simnas,Simnas,Lithuania,Lithuania,LT,LT,"AL, 02","AL, 03"
+subdivision_codes,595997,595997,Pasvalys,Pasvalys,Lithuania,Lithuania,LT,LT,PN,"PN, 34"
+subdivision_codes,593959,593959,Tauragė,Tauragė,Lithuania,Lithuania,LT,LT,TA,"TA, 50"
+subdivision_codes,596268,596268,Pakonys,Pakonys,Lithuania,Lithuania,LT,LT,VL,"VL, 58"
+subdivision_codes,594703,594703,Silagalys,Silagalys,Lithuania,Lithuania,LT,LT,"PN, 32","PN, 33"
+subdivision_codes,599591,599591,Eriskiai,Eriskiai,Lithuania,Lithuania,LT,LT,"PN, 32","PN, 33"
+subdivision_codes,593191,593191,Vievis,Vievis,Lithuania,Lithuania,LT,LT,"VL, 57","VL, 08"
+subdivision_codes,11306715,11306715,Arciskonys,Arciskonys,Lithuania,Lithuania,LT,LT,"AL, 02","AL, 03"
+subdivision_codes,593871,593871,Trakai,Trakai,Lithuania,Lithuania,LT,LT,VL,"VL, 52"
+subdivision_codes,599815,599815,Domeikava,Domeikava,Lithuania,Lithuania,LT,LT,"KU, 15","KU, 16"
+subdivision_codes,599932,599932,Dercekliai,Dercekliai,Lithuania,Lithuania,LT,LT,"KL, 20","KL, 21"
+subdivision_codes,597208,597208,Mastaiciai,Mastaiciai,Lithuania,Lithuania,LT,LT,MR,"MR, 41"
+subdivision_codes,600840,600840,Avizieniai,Avizieniai,Lithuania,Lithuania,LT,LT,"VL, 57","VL, 58"
+subdivision_codes,597729,597729,Kybartai,Kybartai,Lithuania,Lithuania,LT,LT,MR,"MR, 56"
+subdivision_codes,597881,597881,Kulautuva,Kulautuva,Lithuania,Lithuania,LT,LT,"KU, 15","KU, 16"
+subdivision_codes,598519,598519,Kalote,Kalote,Lithuania,Lithuania,LT,LT,KL,"KL, 21"
+subdivision_codes,597189,597189,Mazeikiai,Mazeikiai,Lithuania,Lithuania,LT,LT,"SA, 43","SA, 44"
+subdivision_codes,595449,595449,Radviliškis,Radviliškis,Lithuania,Lithuania,LT,LT,SA,"SA, 37"
+subdivision_codes,599725,599725,Dūkštos,Dūkštos,Lithuania,Lithuania,LT,LT,"VL, 57","VL, 58"
+subdivision_codes,11307304,11307304,Didvyriai,Didvyriai,Lithuania,Lithuania,LT,LT,"KU, 15","KU, 16"
+subdivision_codes,597743,597743,Kužiai,Kužiai,Lithuania,Lithuania,LT,LT,"SA, 43","SA, 44"
+subdivision_codes,599881,599881,Didziosios Kabiskes,Didziosios Kabiskes,Lithuania,Lithuania,LT,LT,"VL, 57","VL, 58"
+subdivision_codes,11289032,11289032,Truseliai,Truseliai,Lithuania,Lithuania,LT,LT,"KL, 20","KL, 21"
+subdivision_codes,596439,596439,Bazilionai,Bazilionai,Lithuania,Lithuania,LT,LT,"SA, 43","SA, 44"
+subdivision_codes,599314,599314,Ginkunai,Ginkunai,Lithuania,Lithuania,LT,LT,"SA, 43","SA, 44"
+subdivision_codes,597300,597300,Maišiagala,Maišiagala,Lithuania,Lithuania,LT,LT,"VL, 57","VL, 58"
+subdivision_codes,11307375,11307375,Raziskiai,Raziskiai,Lithuania,Lithuania,LT,LT,"KU, 15","KU, 16"
+subdivision_codes,595553,595553,Punia,Punia,Lithuania,Lithuania,LT,LT,"AL, 02","AL, 03"
+subdivision_codes,594447,594447,Slienava,Slienava,Lithuania,Lithuania,LT,LT,"KU, 15","KU, 16"
+subdivision_codes,596661,596661,Nemezis,Nemezis,Lithuania,Lithuania,LT,LT,"VL, 57","VL, 58"
+subdivision_codes,600190,600190,Čekiškė,Čekiškė,Lithuania,Lithuania,LT,LT,"KU, 15","KU, 16"
+subdivision_codes,599602,599602,Elektrėnai,Elektrėnai,Lithuania,Lithuania,LT,LT,VL,"VL, 08"
+subdivision_codes,593222,593222,Vieciunai,Vieciunai,Lithuania,Lithuania,LT,LT,"AL, 02","AL, 07"
+subdivision_codes,598409,598409,Karkle,Karkle,Lithuania,Lithuania,LT,LT,"KL, 20","KL, 21"
+subdivision_codes,595754,595754,Piliuona,Piliuona,Lithuania,Lithuania,LT,LT,"KU, 15","KU, 16"
+subdivision_codes,592990,592990,Vydmantai,Vydmantai,Lithuania,Lithuania,LT,LT,,"KL, 22"
+subdivision_codes,597188,597188,Mažeikiai,Mažeikiai,Lithuania,Lithuania,LT,LT,TE,"TE, 26"
+subdivision_codes,595598,595598,Priekulė,Priekulė,Lithuania,Lithuania,LT,LT,"KL, 20","KL, 21"
+subdivision_codes,596384,596384,Pagiriai,Pagiriai,Lithuania,Lithuania,LT,LT,"VL, 57","VL, 58"
+subdivision_codes,599506,599506,Gargždai,Gargždai,Lithuania,Lithuania,LT,LT,"KL, 20","KL, 21"
+subdivision_codes,595252,595252,Ringaudai,Ringaudai,Lithuania,Lithuania,LT,LT,"KU, 15","KU, 16"
+subdivision_codes,593008,593008,Voskoniai,Voskoniai,Lithuania,Lithuania,LT,LT,"KU, 15","KU, 16"
+subdivision_codes,600539,600539,Bendoriai,Bendoriai,Lithuania,Lithuania,LT,LT,"VL, 57","VL, 58"
+subdivision_codes,598509,598509,Kalveliai,Kalveliai,Lithuania,Lithuania,LT,LT,"VL, 57","VL, 58"
+subdivision_codes,599122,599122,Gruzdziai,Gruzdziai,Lithuania,Lithuania,LT,LT,"SA, 43","SA, 44"
+subdivision_codes,598108,598108,Kiskenai,Kiskenai,Lithuania,Lithuania,LT,LT,"KL, 20","KL, 21"
+subdivision_codes,597987,597987,Kretingalė,Kretingalė,Lithuania,Lithuania,LT,LT,"KL, 20","KL, 21"
+subdivision_codes,597687,597687,Laizuva,Laizuva,Lithuania,Lithuania,LT,LT,,"TE, 26"
+subdivision_codes,595450,595450,Radviliskiai,Radviliskiai,Lithuania,Lithuania,LT,LT,"PN, 32","PN, 33"
+subdivision_codes,600110,600110,Dainava,Dainava,Lithuania,Lithuania,LT,LT,"VL, 57","VL, 58"
+subdivision_codes,595689,595689,Plungė,Plungė,Lithuania,Lithuania,LT,LT,TE,"TE, 35"
+subdivision_codes,600040,600040,Daugai,Daugai,Lithuania,Lithuania,LT,LT,"AL, 02","AL, 03"
+subdivision_codes,600803,600803,Babtai,Babtai,Lithuania,Lithuania,LT,LT,"KU, 15","KU, 16"
+subdivision_codes,11300697,11300697,Smigliai,Smigliai,Lithuania,Lithuania,LT,LT,"VL, 57","VL, 58"
+subdivision_codes,593632,593632,Uzliedziai,Uzliedziai,Lithuania,Lithuania,LT,LT,"KU, 15","KU, 16"
+subdivision_codes,601212,601212,Agluonai,Agluonai,Lithuania,Lithuania,LT,LT,SA,"SA, 01"
+subdivision_codes,600608,600608,Bartkunai,Bartkunai,Lithuania,Lithuania,LT,LT,"PN, 32","PN, 33"
+subdivision_codes,594972,594972,Samylai,Samylai,Lithuania,Lithuania,LT,LT,"KU, 15","KU, 16"
+subdivision_codes,599619,599619,Einoraiciai,Einoraiciai,Lithuania,Lithuania,LT,LT,"SA, 43","SA, 44"
+subdivision_codes,595174,595174,Rudamina,Rudamina,Lithuania,Lithuania,LT,LT,"VL, 57","VL, 58"
+subdivision_codes,599781,599781,Dreverna,Dreverna,Lithuania,Lithuania,LT,LT,KL,"KL, 21"
+subdivision_codes,592944,592944,Zadziunai,Zadziunai,Lithuania,Lithuania,LT,LT,"SA, 43","SA, 44"
+subdivision_codes,598392,598392,Karmėlava,Karmėlava,Lithuania,Lithuania,LT,LT,"KU, 15","KU, 16"
+subdivision_codes,1760605,1760605,Kepong,Kepong,Malaysia,Malaysia,MY,MY,,10
+subdivision_codes,1735160,1735160,Serdang,Serdang,Malaysia,Malaysia,MY,MY,,10
+subdivision_codes,1732894,1732894,Bukit Rotan,Bukit Rotan,Malaysia,Malaysia,MY,MY,,10
+subdivision_codes,1744508,1744508,Seputeh,Seputeh,Malaysia,Malaysia,MY,MY,,14
+subdivision_codes,1735169,1735169,Sungai Besi,Sungai Besi,Malaysia,Malaysia,MY,MY,,14
+subdivision_codes,1744763,1744763,Sentul,Sentul,Malaysia,Malaysia,MY,MY,,14
+subdivision_codes,1735545,1735545,Pasir Puteh,Pasir Puteh,Malaysia,Malaysia,MY,MY,,3
+subdivision_codes,71137,71137,Sanaa,Sanaa,Yemen,Yemen,YE,YE,SN,SA

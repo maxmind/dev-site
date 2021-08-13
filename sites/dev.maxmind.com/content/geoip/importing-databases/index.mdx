@@ -1,0 +1,31 @@
+---
+draft: false
+title: Importing Databases
+icon: DatabaseIcon
+---
+
+import {
+  SiPostgresql as PostgreSQLIcon,
+  SiMysql as MySQLIcon,
+} from 'react-icons/si';
+
+Learn how to import GeoIP2 and GeoLite2 CSV format databases into popular SQL
+database platforms.
+
+<LinkGroupContainer>
+  <LinkGroup heading="Guides">
+    <LinkGroupCard
+      description="Import databases to PostgreSQL."
+      heading="PostgreSQL"
+      icon={PostgreSQLIcon}
+      to="/geoip/importing-databases/postgresql"
+    />
+
+    <LinkGroupCard
+      description="Import databases to MySQL."
+      heading="MySQL"
+      icon={MySQLIcon}
+      to="/geoip/importing-databases/mysql"
+    />
+  </LinkGroup>
+</LinkGroupContainer>

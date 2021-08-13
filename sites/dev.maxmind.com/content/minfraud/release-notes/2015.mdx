@@ -1,0 +1,131 @@
+---
+draft: false
+title: minFraud Release Notes - 2015 Archive
+---
+
+<ReleaseNote date="2015-11-30" title="Expanded coverage of prepaid cards">
+We are pleased to announce expanded coverage of prepaid cards in minFraud. We
+should return `prepaid=Yes` in minFraud premium and `is_prepaid=true` in minFraud
+Insights for a larger range of prepaid cards.
+</ReleaseNote>
+
+<ReleaseNote date="2015-06-29" title="New beta versions of minFraud Score and minFraud Insights">
+We've released the beta versions of two new minFraud services, minFraud Score
+and minFraud Inisghts.
+
+To use either service, you must upgrade to version 2.0 of the client API.
+Please refer to the [minFraud Score and minFraud Insights API
+documentation](/minfraud/api-documentation) for more details.
+
+Changes in version 2.0 of the minFraud APIs include:
+
+- RESTful HTTP API
+- Request data validation
+- Model classes for return data
+- .NET client API now available
+- Python client API now available
+
+minFraud version 2.0 provides the following **new inputs**:
+
+In association with billing address:
+
+- First name
+- Last name
+- Company
+- Address line 1
+- Address line 2
+- Phone number
+- Phone country code
+
+In association with shipping address:
+
+- First name
+- Last name
+- Company
+- Address line 2
+- Phone number
+- Phone country code
+- Delivery speed
+
+User data:
+
+- Customer ID
+- Hashed or unhashed email address
+
+Credit card information:
+
+- Last four digits
+- Authorization outcome
+- Decline reason
+- Processor name
+
+Transaction information:
+
+- Transaction type
+- Timestamp
+- Discount code
+- Affiliate ID
+- Subaffiliate ID
+- Referrer URI
+
+Shopping cart:
+
+- Item category
+- Item ID or URL
+- Item quantity
+- Item price
+
+minFraud Insights provides the following **new outputs** (note that minFraud
+Score returns the riskScore only):
+
+All geolocation outputs provided by the [GeoIP2 Precision Insights service](https://www.maxmind.com/en/geoip2-precision-insights).
+
+Billing and shipping related outputs:
+
+- Billing is in IP country
+- Shipping is in IP country
+- Distance between IP and shipping address
+- Billing address longitude
+- Billing address latitude
+- Shipping address longitude
+- Shipping address latitude
+- Billing address to shipping address distance
+
+Local date/time of user using IP
+
+ProxyScore is now IP risk score. (/ip_address/risk). Whereas the ProxyScore
+was expressed on a scale of 0.00-4.00, the IP risk score uses a scale of 0.01
+to 99.
+
+The following fields are deprecated in version 2.0:
+
+- Anonymous Proxy (anonymousProxy)
+- Corporate Proxy (ip_corporateProxy)
+- Free Email (freeMail)
+- High Risk Email (carderEmail)
+- High risk username and high risk password (highRiskUsername,
+highRiskPassword)
+- Phone number check against billing postal code (custPhoneInBillingLoc)
+
+Country Match (countryMatch) has been replaced by _billing country is in IP
+country_ and _shipping country is in IP country_
+</ReleaseNote>
+
+<ReleaseNote date="2015-03-27" title="Discontinuing /app/ws_ipaddr">
+On April 28, we will deactivate the `/app/ws_ipaddr` endpoint. This endpoint
+returns a list of IP addresses for use when making minFraud or GeoIP web
+service requests to MaxMind servers.
+
+If you use this endpoint, you need to take action in order to continue
+accessing MaxMind services. Please switch and make requests using the
+minfraud.maxmind.com hostname for minFraud webservice requests and
+geoip.maxmind.com for GeoIP webservice requests.
+
+If you use a minFraud client API we provided, please update to the latest API,
+available on [the client APIs
+page](/minfraud/evaluate-a-transaction#links-to-maxmind-client-apis). Our
+newest API versions use hostnames instead of /app/ws_ipaddr.
+
+If you use a third-party plugin that makes requests to MaxMind web services,
+you may need to update it.
+</ReleaseNote>

@@ -1,0 +1,83 @@
+import requestJson from '../_examples/request';
+
+<MinFraudSchema
+  json={requestJson.order}
+  jsonPointer="/order"
+  name="Request | Order"
+  services="*"
+>
+  This object contains information about the order associated with the event.
+
+  <Property
+    name="amount"
+    tags={{
+      'Format': 'decimal',
+      'Min': 0,
+      'Max': '1e14 – 1',
+    }}
+  >
+    The total order amount for the transaction before taxes and discounts.
+  </Property>
+
+  <Property
+    name="currency"
+    tags={{
+      'Max Length': 3,
+    }}
+  >
+    The [ISO 4217 currency code](https://en.wikipedia.org/wiki/ISO_4217) for the
+    currency used in the transaction.
+  </Property>
+
+  <Property
+    name="discount_code"
+    tags={{
+      'Max Length': 255,
+    }}
+  >
+    The discount code applied to the transaction. If multiple discount codes
+    were used, please separate them with a comma.
+  </Property>
+
+  <Property
+    name="affiliate_id"
+    tags={{
+      'Max Length': 255,
+    }}
+  >
+    The ID of the affiliate where the order is coming from. No specific format
+    is required.
+  </Property>
+
+  <Property
+    name="subaffiliate_id"
+    tags={{
+      'Max Length': 255,
+    }}
+  >
+    The ID of the sub-affiliate where the order is coming from. No specific
+    format is required.
+  </Property>
+
+  <Property
+    name="referrer_uri"
+    tags={{
+      'Max Length': 1024,
+    }}
+  >
+    The URI of the referring site for this order. Needs to be absolute and have
+    a URI scheme such as `https://`.
+  </Property>
+
+  <Property
+    name="is_gift"
+  >
+    Whether order was marked as a gift by the purchaser.
+  </Property>
+
+  <Property
+    name="has_gift_message"
+  >
+    Whether the purchaser included a gift message.
+  </Property>
+</MinFraudSchema>

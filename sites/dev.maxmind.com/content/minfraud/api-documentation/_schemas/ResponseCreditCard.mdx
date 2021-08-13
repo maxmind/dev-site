@@ -1,0 +1,94 @@
+import responseJson from '../_examples/response';
+
+<MinFraudSchema
+  json={responseJson.credit_card}
+  jsonPointer="/credit_card"
+  name="Response | Credit Card"
+  services={[
+    'insights',
+    'factors',
+  ]}
+>
+  This object contains minFraud information related to the credit card. If an
+  issuer ID number (IIN) was not provided in the request, this object will not
+  be present in the response.
+
+  <Property
+    linkToSchemaName="Response | Credit Card | Issuer"
+    name="issuer"
+  >
+    This field contains a JSON object with information relating to the credit card issuer.
+  </Property>
+
+  <Property
+    name="brand"
+    tags={{
+      'Max Length': 255,
+    }}
+  >
+    The card brand, such as "Visa", "Discover", "American Express", etc.
+  </Property>
+
+  <Property
+    name="country"
+    tags={{
+      'Max Length': 2,
+    }}
+  >
+    The two letter [ISO 3166-1 alpha-2 country code](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2)
+    associated with the location of the majority of customers using this credit
+    card as determined by their billing address. In cases where the location of
+    customers is highly mixed, this defaults to the country of the bank issuing
+    the card.
+  </Property>
+
+  <Property
+    name="is_business"
+  >
+    This field is `true` if the issuer ID number is for a business card. It is
+    `false` if the issuer ID number is for for a non-business card. The key is
+    only present when a valid issuer ID number has been provided.
+  </Property>
+
+  <Property
+    name="is_issued_in_billing_address_country"
+  >
+    This field is `true` if the country of the billing address matches the
+    country of the majority of customers using that IIN. It is `false` if both
+    countries are available but do not match. If one or both of the countries
+    are missing, the key will not be present. In cases where the location of
+    customers is highly mixed, the match is to the country of the bank issuing
+    the card.
+  </Property>
+
+  <Property
+    name="is_prepaid"
+  >
+    This field is `true` if the issuer ID number is for a prepaid card. It is
+    `false` if the issuer ID number is for for a non-prepaid card. The key is
+    only present when a valid issuer ID number has been provided.
+  </Property>
+
+  <Property
+    name="is_virtual"
+  >
+    This field is `true` if the issuer ID number is for a virtual card. It is
+    `false` if the issuer ID number is for a non-virtual card. The key is only
+    present when a valid issuer ID number has been provided.
+  </Property>
+
+  <Property
+    name="type"
+    tags={{
+      'Enum': null,
+    }}
+  >
+    The card’s type. The valid values are:
+
+
+    * `charge` – See [Wikipedia](https://en.wikipedia.org/wiki/Charge_card) for
+      an explanation of the difference between charge and credit cards.
+    * `credit`
+    * `debit`
+  </Property>
+</MinFraudSchema>

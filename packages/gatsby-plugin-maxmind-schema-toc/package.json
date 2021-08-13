@@ -1,0 +1,13 @@
+{
+  "devDependencies": {
+    "typescript": "^4.3.5"
+  },
+  "license": "MIT",
+  "main": "dist/index.js",
+  "name": "gatsby-plugin-maxmind-schema-toc",
+  "scripts": {
+    "build": "rm -rf dist && tsc -b && cp package.json dist/",
+    "postinstall": "yarn build"
+  },
+  "version": "0.1.0"
+}

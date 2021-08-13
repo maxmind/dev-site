@@ -1,0 +1,61 @@
+import requestJson from '../_examples/request';
+
+<MinFraudSchema
+  json={requestJson.device}
+  jsonPointer="/device"
+  name="Request | Device"
+  services="*"
+>
+  This object contains information about the device used in the transaction.
+
+  <Property
+    name="ip_address"
+    tags={{
+      'Format': 'IPv4 or IPv6',
+    }}
+  >
+    The IP address associated with the device used by the customer in the
+    transaction. The IP address must be in IPv4 or IPv6 presentation format,
+    i.e., dotted-quad notation or the IPv6 hexadecimal-colon notation.
+  </Property>
+
+  <Property
+    name="user_agent"
+    tags={{
+      'Max Length': 512,
+    }}
+  >
+    The HTTP `User-Agent` header of the browser used in the transaction.
+  </Property>
+
+  <Property
+    name="accept_language"
+    tags={{
+      'Max Length': 255,
+    }}
+  >
+    The HTTP `Accept-Language` header of the device used in the transaction.
+  </Property>
+
+  <Property
+    name="session_age"
+    tags={{
+      'Format': 'decimal',
+      'Min': 0,
+      'Max': '10e13-1'
+    }}
+  >
+    The number of seconds between the creation of the user's session and the
+    time of the transaction. Note that `session_age` is not the duration of the
+    current visit, but the time since the start of the first visit.
+  </Property>
+
+  <Property
+    name="session_id"
+    tags={{
+      'Max Length': 255
+    }}
+  >
+    An ID that uniquely identifies a visitor's session on the site.
+  </Property>
+</MinFraudSchema>

@@ -1,0 +1,61 @@
+---
+draft: false
+title: Normalizing Email Addresses for minFraud
+---
+
+When providing an email address as an input to the minFraud services, you can
+provide it either as plain text or as an MD5 hash.
+
+If you provide the email as an MD5 hash, it’s important that you normalize it
+before generating the hash. Otherwise minor, inconsequential differences could
+cause minFraud to consider it a different address.
+
+Our [API clients](/minfraud/api-documentation/#api-clients) do this for you if
+you enable sending the MD5 hash. This is the recommended way to do this.
+
+## Normalizing email addresses
+If you are not able to use our API clients, you can normalize an email address
+yourself. Below are the steps to take to do this.
+
+1. Trim whitespace from both ends of the address.
+1. Lowercase the address.
+1. Find the local part of the email (before the `@`) and the domain (after the
+`@`).
+1. Trim whitespace from the beginning of the domain.
+1. If the domain ends with any number of periods, trim them off.
+1. Convert international domain names (IDNs) to ASCII. For example, you can do
+this in Java using [java.net.IDN](https://docs.oracle.com/javase/8/docs/api/java/net/IDN.html).
+1. Check for typos in the domain names (for a complete list of typos we correct
+for, you can consult the [normalization code in one of our client
+APIs](#examples) below).
+1. If the domain ends with a repetition of `.com` (`.com.com`, `.com.com.com`,
+etc.), replace with a single `.com`.
+1. If the domain ends with `.com` followed by any extra characters, the extra
+characters are removed (i.e., `.comxyz` is replaced with `.com`).
+1. If the domain is `gmail.com` with any leading digits, it is replaced with
+`gmail.com` (i.e., `123gmail.com` is replaced with `gmail.com`).
+1. If the domain is `fastmail.com` or any of the [fastmail
+domains](https://www.fastmail.com/about/ourdomains/), replace the email local
+part with the subdomain (i.e., `alias@user.fastmail.com` is replaced with
+`user@fastmail.com`).
+1. Fix common typos in domain names. You can see a list of typos we map in our
+[Java API client](https://github.com/maxmind/minfraud-api-java/blob/main/src/main/java/com/maxmind/minfraud/request/Email.java#L24).
+1. Remove alias parts from the local part. For addresses at the `yahoo.com`
+domain, or other domains affiliated with Yahoo, this is everything after and
+including the first `-` character, if present. For addresses with all other
+domains, this is everything after and including the first `+` character, if
+present.
+1. Put the local part and the domain back together to form the normalized email
+address.
+1. Calculate the MD5 hash.
+
+## Examples
+You can review the code in our API clients see how to normalize an email address
+in various languages.
+
+* [.NET (C#)](https://github.com/maxmind/minfraud-api-dotnet/blob/main/MaxMind.MinFraud/Request/Email.cs#L150)
+* [Java](https://github.com/maxmind/minfraud-api-java/blob/main/src/main/java/com/maxmind/minfraud/request/Email.java#L158)
+* [JavaScript](https://github.com/maxmind/minfraud-api-node/blob/main/src/request/email.ts#L75)
+* [PHP](https://github.com/maxmind/minfraud-api-php/blob/main/src/MinFraud/Util.php#L34)
+* [Python](https://github.com/maxmind/minfraud-api-python/blob/main/minfraud/request.py#L68)
+* [Ruby](https://github.com/maxmind/minfraud-api-ruby/blob/main/lib/minfraud/components/email.rb#L77)

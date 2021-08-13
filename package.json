@@ -3,20 +3,42 @@
   "bugs": {
     "url": "https://github.com/maxmind/dev-site/issues"
   },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^4.13.0",
+    "@typescript-eslint/parser": "^4.13.0",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.18.0",
+    "eslint-loader": "^4.0.0",
+    "eslint-plugin-babel": "^5.3.1",
+    "eslint-plugin-compat": "^3.9.0",
+    "eslint-plugin-css-modules": "^2.11.0",
+    "eslint-plugin-filenames": "^1.3.2",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-json": "^3.0.0",
+    "eslint-plugin-jsx-a11y": "^6.3.1",
+    "eslint-plugin-react": "^7.22.0",
+    "eslint-plugin-react-hooks": "^4.1.2",
+    "eslint-plugin-security": "^1.4.0",
+    "eslint-plugin-simple-import-sort": "^7.0.0",
+    "eslint-plugin-sort-keys-fix": "^1.1.0",
+    "eslint-plugin-typescript-sort-keys": "^1.5.0",
+    "firebase-tools": "^9.2.1",
+    "husky": "7.0.1"
+  },
   "engines": {
     "node": ">=14",
     "yarn": "^1.17.3"
   },
   "license": "MIT",
   "lint-staged": {
+    "**/*.{js,ts,tsx}": [
+      "yarn fix:scripts"
+    ],
     "**/*.{json}": [
       "yarn fix:json"
     ],
     "content/**/*.{mdx}": [
       "yarn fix:content"
-    ],
-    "**/*.{js,ts,tsx}": [
-      "yarn fix:scripts"
     ],
     "src/**/*.{[s]css}": [
       "yarn fix:styles"
@@ -32,10 +54,37 @@
     "remark-mdx": "2.0.0-next.8"
   },
   "scripts": {
-    "clean:node_modules": "find . -name 'node_modules' -type d -prune -exec rm -rf '{}' +"
+    "build": "run-p build:* && yarn sitemap-query-string",
+    "build:firebase-config": "node firebase/index.js",
+    "build:functions": "cd functions && yarn build",
+    "build:gatsby": "yarn workspaces run build",
+    "clean:node_modules": "find . -name 'node_modules' -type d -prune -exec rm -rf '{}' +",
+    "deploy": "firebase deploy",
+    "fix": "run-p fix:*",
+    "fix:content": "prettier --write **/*.mdx --embedded-language-formatting off --loglevel silent && remark . --output --ext mdx --quiet",
+    "fix:json": "yarn lint:json --fix",
+    "fix:scripts": "yarn lint:scripts --fix",
+    "fix:styles": "yarn lint:styles --fix",
+    "lint": "run-p lint:*",
+    "lint:configs": "eslint .*rc.js --no-ignore",
+    "lint:content": "remark . --ext mdx --quiet",
+    "lint:json": "eslint . --ext json",
+    "lint:scripts": "eslint . --ext js,ts,tsx --ignore-pattern 'functions/**/*.js'",
+    "lint:styles": "stylelint ./src/**/*.{css,scss,sass}",
+    "postinstall": "yarn --cwd functions install",
+    "preview": "firebase hosting:channel:deploy $(git rev-parse --abbrev-ref HEAD)",
+    "serve": "firebase emulators:start --only functions,hosting",
+    "sitemap-query-string": "node ../bin/sitemap-query-string.js",
+    "start": "yarn run develop",
+    "test": "run-s \"test:* --silent\"",
+    "test:a11y": "jest --config .jestrc.a11y.js --no-cache --maxWorkers=4",
+    "test:broken-links": "yarn test:e2e --verbose -t 'website has no broken links'",
+    "test:e2e": "jest --config .jestrc.e2e.js",
+    "test:redirects": "yarn build:firebase-config && yarn test:e2e --verbose -t 'Static file redirects'",
+    "test:unit": "jest --config .jestrc.js"
   },
   "workspaces": [
-    "sites/*",
-    "theme"
+    "packages/*",
+    "sites/*"
   ]
 }

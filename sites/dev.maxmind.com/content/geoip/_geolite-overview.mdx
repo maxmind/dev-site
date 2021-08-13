@@ -1,0 +1,56 @@
+import {
+  FaCloud as WebServiceIcon,
+  FaDatabase as DatabaseIcon,
+  FaMapMarkerAlt as CityCountryIcon,
+  FaNetworkWired as ASNIcon,
+  FaArrowAltCircleRight as GoToIcon,
+} from 'react-icons/fa';
+
+{/* <!--lint disable first-heading-level --> */}
+### GeoLite Databases and Services
+
+GeoLite2 databases and web services provide free geolocation and limited
+network data for IP addresses. This data is less accurate than the data in our
+paid, GeoIP2 products and services. You must [sign up for a free GeoLite2
+account](https://www.maxmind.com/en/geolite2/signup) in order to download
+GeoLite2 databases or query the GeoLite2 web services. GeoLite2 uses the same
+integration methods and documentation as GeoIP2 (linked below), with a few
+minor modifications. It is recommended that you get started by [reading about
+GeoLite2](/geoip/geolite2-free-geolocation-data).
+
+<table>
+  <thead>
+    <tr>
+      <th>{' '}</th>
+      <th><DatabaseIcon /> Binary Database</th>
+      <th><DatabaseIcon /> CSV Database</th>
+      <th><WebServiceIcon /> Web Service</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><CityCountryIcon /> City and Country</td>
+      <td>
+        [Docs <GoToIcon />](/geoip/docs/databases/city-and-country/#binary-databases)
+      </td>
+      <td>
+        [Docs <GoToIcon />](/geoip/docs/databases/city-and-country/#csv-databases)
+      </td>
+      <td>
+        [Docs <GoToIcon />](/geoip/docs/web-services)
+      </td>
+    </tr>
+    <tr>
+      <td><ASNIcon /> ASN</td>
+      <td>
+        [Docs <GoToIcon />](/geoip/docs/databases/asn/#binary-databases)
+      </td>
+      <td>
+        [Docs <GoToIcon />](/geoip/docs/databases/asn/#csv-databases)
+      </td>
+      <td>
+        Included in the GeoLite2 City Web Service.
+      </td>
+    </tr>
+  </tbody>
+</table>
