@@ -1,0 +1,119 @@
+import requestJson from '../_examples/request';
+
+<MinFraudSchema
+  json={requestJson}
+  jsonPointer="/"
+  name="Request"
+  services="*"
+>
+  Currently minFraud Score, minFraud Insights, and minFraud Factors use the same
+  request document format. The request consists of a JSON object with one or
+  more of the fields shown below. Each key in the top-level object maps to an
+  object or array as described below. New fields that apply to one or both may
+  be added in the future.
+
+  String fields are limited to no more than 255 valid Unicode characters unless
+  a shorter length is specified; the null and newline characters are forbidden.
+  Of course, many fields also have additional constraints that limit the length.
+  For example, the `ip_address` field cannot be longer than the longest valid
+  representation of an IPv6 address. Unless it must match a specific format, it
+  is valid for a string field to be empty.
+
+  Boolean fields must be provided as JSON `true` or `false`.
+
+  Unless otherwise specified, if the value meets the requirements for the field,
+  then it will not be modified. Beyond field specific exceptions, an exception
+  to this is if the value is provided as a type different from what we require.
+  In such cases we convert it to the required type if possible. For example, if
+  you provide a string field as a number, then it will be converted to a string,
+  and vice versa. This conversion happens only between numbers and strings.
+
+  The entire request body is limited to 20,000 bytes. Requests larger than this
+  size will be rejected.
+
+  <Property
+    linkToSchemaName={'Request | Device'}
+    name="device"
+  >
+    This object contains information about the device used in the transaction.
+  </Property>
+
+  <Property
+    linkToSchemaName={'Request | Event'}
+    name="event"
+  >
+    This object contains general information related to the event being scored.
+  </Property>
+
+  <Property
+    linkToSchemaName={'Request | Account'}
+    name="account"
+  >
+    This object contains account information for the end-user on the site where
+    the event took place.
+  </Property>
+
+  <Property
+    linkToSchemaName={'Request | Email'}
+    name="email"
+  >
+    This object contains information about the email address of the end-user
+    who initiated the event.
+  </Property>
+
+  <Property
+    linkToSchemaName={'Request | Billing'}
+    name="billing"
+  >
+    This object contains the billing address and contact information provided by
+    the end-user who initiated the event.
+  </Property>
+
+  <Property
+    linkToSchemaName={'Request | Shipping'}
+    name="shipping"
+  >
+    This object contains the shipping address and contact information provided
+    by the end-user who initiated the event.
+  </Property>
+
+  <Property
+    linkToSchemaName={'Request | Payment'}
+    name="payment"
+  >
+    This object contains information from and about the payment process that
+    was used for the event.
+  </Property>
+
+  <Property
+    linkToSchemaName={'Request | Credit Card'}
+    name="credit_card"
+  >
+    This object contains information provided by the end-user and the payment
+    processor about the credit card used for the for the event.
+  </Property>
+
+  <Property
+    linkToSchemaName={'Request | Order'}
+    name="order"
+  >
+    This object contains information about the order associated with the event.
+  </Property>
+
+  <Property
+    linkToSchemaName="Request | Shopping Cart"
+    name="shopping_cart"
+  >
+    This is an array of shopping cart item objects. A shopping cart should
+    consist of an array of one or more item objects.
+  </Property>
+
+  <Property
+    linkToSchemaName="Request | Custom Inputs"
+    name="custom_inputs"
+  >
+    Custom Inputs are optional inputs to the minFraud service that must first be
+    defined for your account. Select “Custom Inputs” from the Account Portal in
+    order to do so. See our Custom Inputs documentation for more information.
+  </Property>
+</MinFraudSchema>

@@ -1,0 +1,102 @@
+---
+draft: false
+title: minFraud Release Notes - 2016 Archive
+---
+
+<ReleaseNote date="2016-12-05" title="minFraud's is_postal_in_city available for non-US locations">
+minFraud's `is_postal_in_city`, `cityPostalMatch`, and `shipCityPostalMatch`
+outputs are available for non-US locations.
+</ReleaseNote>
+
+<ReleaseNote date="2016-12-01" title="Disposition Outputs for minFraud Score, Insights, and Factors">
+The responses for minFraud Score, Insights, and Factors may now include a
+[`disposition` object](/minfraud/api-documentation). This object contains
+information about [custom
+rules](https://www.maxmind.com/en/solutions/minfraud-services/custom-rules)
+that were applied to the request.
+</ReleaseNote>
+
+<ReleaseNote date="2016-11-17" title="New /credit_card/token Input">
+We have added a new [`/credit_card/token` input](/minfraud/api-documentation)
+to the minFraud Score, minFraud Insights, and minFraud Factors request bodies.
+The token must uniquely identify the credit card and must be different from the
+account number.
+</ReleaseNote>
+
+<ReleaseNote date="2016-10-10" title="New event types for minFraud requests">
+We have added two new event types to the `/event/type` field for all minFraud
+requests, `email_change` and `password_reset`.
+</ReleaseNote>
+
+<ReleaseNote date="2016-09-06" title="More proxy scores">
+We will be returning more proxyScores between 0 and 1.8 and 1.8 and 3. Such
+scores typically represent “medium” risk transactions which have some risk of
+fraud but may be legitimate. The higher the proxyScore, the riskier the
+transaction.
+
+The proxyScore is a score from 0.00-4.00 indicating the likelihood that the
+user's IP address is high risk.
+
+This change has also been implemented for the IP Risk Score provided with
+minFraud Score, minFraud Insights, and minFraud Factors. The IP Risk Score is a
+score from 0.01 to 99 indicating the likelihood that the user's IP address is
+high risk. We will return more positive IP Risk Scores between 0 and 45 and 45
+and 75. Such scores typically represent “medium” risk transactions which have
+some risk of fraud but may be legitimate. The higher the IP Risk Score, the
+riskier the transaction.
+</ReleaseNote>
+
+<ReleaseNote date="2016-06-09" title="New Device Field">
+`/device/confidence` and `/device/last_seen` have been added to the minFraud
+Insights and minFraud Factors response. These fields are only available for
+customers using our [Device Tracking Add-on](/minfraud/track-devices). Please
+see our [API documentation](/minfraud/api-documentation)
+for more information.
+</ReleaseNote>
+
+<ReleaseNote date="2016-06-06" title="Deprecated Fields and New Fields">
+`credits_remaining` is deprecated in the minFraud Score, minFraud Insights, and
+minFraud Factors response. It will be removed before the final release. It has
+been replaced with `queries_remaining`, which also returns the number of
+queries available. An additional field, `funds_remaining`, containing the US
+dollar value of the funds remaining will be added before the final release.
+</ReleaseNote>
+
+<ReleaseNote date="2016-02-18" title="Order Amount Now Used in Risk Score">
+All minFraud services now include an updated machine learning algorithm that
+takes order amount into consideration when calculating the risk score.
+
+Merchants may want to update their rules if the rule is a combination of risk
+score and order amount. For example, if a custom rule rejects transactions with
+a high order amount and a risk score above 10, the merchant may want to adjust
+the risk score to a higher number, as the high order amount itself may cause
+the risk score to increase.
+
+In general, orders $500 or above may have a higher risk score than before.
+</ReleaseNote>
+
+<ReleaseNote date="2016-01-29" title="New minFraud Insights Outputs">
+The following outputs have been added to minFraud Insights:
+
+- `/credit_card/brand` – The card brand, such as “Visa”, “Discover”, “American
+Express”, etc.
+- `/credit_card/type` – A string representing the card's type. The possible
+values are `charge`, `credit`, or `debit`.
+- `/device/id` – A UUID that MaxMind uses for the device associated with this
+IP address. This is only available if you are using the [Device Tracking
+Add-on](/minfraud/track-devices).
+- `/email/is_free` – This field is `true` if MaxMind believes that this email
+is hosted by a free email provider such as Gmail or Yahoo! Mail.
+- `/email/is_high_risk` – This field is `true` if MaxMind believes that this
+email is likely to be used for fraud.
+
+Also, for both minFraud Score and minFraud Insights, the `input` property in
+the warning objects has been removed and replaced with an `input_pointer`
+property. This new property is a JSON pointer to the value in the input object
+causing the warning.
+
+All of our client APIs have been updated to reflect these changes.
+
+For more information on these outputs, please see [our minFraud Score and
+minFraud Insights API documentation](/minfraud/api-documentation).
+</ReleaseNote>

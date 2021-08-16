@@ -8,7 +8,7 @@
       "dom",
       "ES2019"
     ],
-    "module": "commonjs",
+    "moduleResolution": "node",
     "noEmit": true,
     "noUnusedLocals": false,
     "resolveJsonModule": true,

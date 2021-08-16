@@ -1,0 +1,57 @@
+import requestJson from '../_examples/request';
+
+<MinFraudSchema
+  json={requestJson.custom_inputs}
+  jsonPointer="/custom_inputs"
+  name="Request | Custom Inputs"
+  services="*"
+>
+  Custom Inputs are optional inputs to the minFraud service that must first be
+  defined for your account. Select Custom Inputs from the Account Portal in
+  order to do so. See our [Custom Inputs documentation](https://support.maxmind.com/custom-inputs-guide/)
+  for more information.
+
+  <Property
+    name="your_custom_BOOLEAN_key"
+    type="boolean"
+  >
+    A custom key of your choice, with a boolean value.
+  </Property>
+
+  <Property
+    name="your_custom_FLOAT_NUMBER_key"
+    tags={{
+      'Format': 'float',
+      'Min': '-1e14',
+      'Max': '1e14',
+    }}
+    type="number"
+  >
+    A custom key of your choice, with a floating number value.
+  </Property>
+
+  <Property
+    name="your_custom_PHONE_NUMBER_key"
+    tags={{
+      'Format': 'Phone number',
+      'Max Length': 255,
+    }}
+    type="string"
+  >
+    A custom key of your choice with a string value, formatted as a phone
+    number. Numbers, spaces and punctuation accepted, although spaces and
+    punctuation will be stripped. The following ASCII characters constitute
+    the accepted punctuation: {'` ~ ! @ # $ % ^ & * ( ) – _ = + ‘ ” ; : , < . > / ? \\ | [ ] { and }'}.
+  </Property>
+
+  <Property
+    name="your_custom_STRING_key"
+    tags={{
+      'Max Length': 255,
+    }}
+    type="string"
+  >
+    A custom key of your choice with a string value. The null character is not
+    allowed.
+  </Property>
+</MinFraudSchema>

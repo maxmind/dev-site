@@ -1,0 +1,27 @@
+{
+  "dependencies": {},
+  "description": "",
+  "devDependencies": {
+    "@types/node": "^16.6.1",
+    "@types/unist": "^2.0.6",
+    "gatsby": "^3.1.1",
+    "gatsby-plugin-maxmind-schema-toc": "0.1.0",
+    "gatsby-source-filesystem": "^3.1.0",
+    "gatsby-theme-maxmind": "0.1.0",
+    "gatsby-transformer-json": "^3.8.0",
+    "github-slugger": "^1.3.0",
+    "hast-util-to-html": "^7.1.2",
+    "mdast-util-to-hast": "^10.1.1"
+  },
+  "license": "MIT",
+  "name": "blog-maxmind-com",
+  "scripts": {
+    "build": "gatsby clean && gatsby build",
+    "develop": "gatsby clean && GATSBY_URL=http://localhost:8000 gatsby develop",
+    "lint:scripts": "eslint . --ext js,ts,tsx --ignore-pattern 'functions/**/*.js'",
+    "start": "yarn run develop",
+    "test": "run-s \"test:* --silent\"",
+    "test:unit": "jest --config .jestrc.js"
+  },
+  "version": "1.0.0"
+}

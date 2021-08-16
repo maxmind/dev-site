@@ -1,0 +1,127 @@
+---
+draft: false
+title: GeoIP2 Anonymous IP Databases
+---
+
+import BinaryDatabases from './_binary-databases.mdx';
+import ConversionUtility from './_conversion-utility.mdx';
+import CsvDatabasesIntro from './_csv-databases-intro.mdx';
+import FileFormat from './_file-format.mdx';
+import APIs from './_apis.mdx';
+
+
+MaxMind's GeoIP2 Anonymous IP CSV database helps protect your business by
+identifying proxy, VPN, hosting, and other anonymous IP addresses.
+
+To learn more about the GeoIP2 Anonymous IP database, please visit the
+[GeoIP2 Anonymous IP Database page](https://www.maxmind.com/en/solutions/geoip2-enterprise-product-suite/anonymous-ip-database).
+If you are interested in purchasing the database, please
+[contact our Enterprise Business team](https://www.maxmind.com/en/solutions/geoip2-enterprise-product-suite#signUp)
+for assistance.
+
+## Binary Database
+
+<BinaryDatabases />
+
+| Language or Framework | Documentation                                                                      | Example                                                                                      |
+| --------------------- | ---------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------- |
+| .NET (C#)             | [GitHub - Database Usage](https://github.com/maxmind/GeoIP2-dotnet#database-usage) | [Anonymous IP Example](https://github.com/maxmind/GeoIP2-dotnet#anonymous-ip-database)       |
+| Java                  | [GitHub - Database Usage](https://github.com/maxmind/GeoIP2-java#database-usage)   | [Anonymous IP Example](https://github.com/maxmind/GeoIP2-java#anonymous-ip)                  |
+| Node.js               | [GitHub - Database Usage](https://github.com/maxmind/GeoIP2-node#database-usage)   | [Anonymous IP Example](https://github.com/maxmind/GeoIP2-node#anonymous-ip-database-example) |
+| PHP                   | [GitHub - Database Reader](https://github.com/maxmind/GeoIP2-php#database-reader)  | [Anonymous IP Example](https://github.com/maxmind/GeoIP2-php#anonymous-ip-example)           |
+| Python                | [GitHub - Database Usage](https://github.com/maxmind/GeoIP2-python#database-usage) | [Anonymous IP Example](https://github.com/maxmind/GeoIP2-python#anonymous-ip-database)       |
+| Ruby                  | [GitHub - Database Reader](https://github.com/maxmind/GeoIP2-ruby#database-reader) | [Anonymous IP Example](https://github.com/maxmind/GeoIP2-ruby#anonymous-ip-example)          |
+
+## CSV Database
+
+<CsvDatabasesIntro />
+
+<ZipFileContent product-name="GeoIP2-Anonymous-IP" />
+
+<FileFormat />
+
+### Blocks Files
+
+There are two CSV files for network blocks, one each for IPv4 and IPv6 blocks.
+These are named `GeoIP2-Anonymous-IP-Blocks-IPv4.csv` and
+`GeoIP2-Anonymous-IP-Blocks-IPv6.csv` respectively.
+
+<table>
+  <tbody>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+
+    <tr>
+        <td>network</td>
+        <td>IP network as a string</td>
+        <td>
+          This is the IPv4 or IPv6 network in CIDR format such as
+          “2.21.92.0/29” or “2001:4b0::/80”. We offer a utility to convert
+          this column to start/end IPs or start/end integers. See <a
+          href="#conversion-utility">the conversion utility section</a> for
+          details.
+        </td>
+    </tr>
+
+    <tr>
+        <td>is_anonymous</td>
+        <td>boolean</td>
+        <td>
+          1 if the IP address belongs to any sort of anonymous network. Blank if not.
+        </td>
+    </tr>
+
+    <tr>
+        <td>is_anonymous_vpn</td>
+        <td>boolean</td>
+        <td>
+          1 if the IP address is registered to an anonymous VPN provider. Blank if not.
+
+          If a VPN provider does not register subnets under names associated with
+          them, we will likely only flag their IP ranges using the
+          `is_hosting_provider` flag.
+        </td>
+    </tr>
+
+    <tr>
+        <td>is_hosting_provider</td>
+        <td>boolean</td>
+        <td>
+          1 if the IP address belongs to a hosting or VPN provider (see
+          description of `is_anonymous_vpn` flag). Blank if not.
+        </td>
+    </tr>
+
+    <tr>
+        <td>is_public_proxy</td>
+        <td>boolean</td>
+        <td>1 if the IP address belongs to a public proxy. Blank if not.</td>
+    </tr>
+
+    <tr>
+        <td>is_tor_exit_node</td>
+        <td>boolean</td>
+        <td>1 if the IP address is a Tor exit node. Blank if not.</td>
+    </tr>
+
+    <tr>
+        <td>is_residential_proxy</td>
+        <td>boolean</td>
+        <td>
+          1 if the IP address is on a suspected anonymizing network and belongs
+          to a residential ISP. Blank if not.
+        </td>
+    </tr>
+  </tbody>
+</table>
+
+### Conversion Utility
+
+<ConversionUtility />
+
+## APIs and Third-Party Integrations
+
+<APIs />

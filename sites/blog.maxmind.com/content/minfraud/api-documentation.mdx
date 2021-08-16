@@ -1,0 +1,112 @@
+---
+draft: false
+title: minFraud API Documentation
+---
+
+import { FaDownload, FaUpload } from 'react-icons/fa';
+import ApiClients from './_api-clients.mdx';
+
+<Alert type="info">
+  If you are a [minFraud Legacy](https://dev.maxmind.com/minfraud/minfraud-legacy/)
+  customer, please see our
+  [What's New in minFraud Score, minFraud Insights, and minFraud Factors](https://dev.maxmind.com/minfraud/whats-new-in-minfraud-score-and-minfraud-insights/)
+  document for a summary of the changes.
+</Alert>
+
+## Overview
+
+To learn more about the minFraud services and to purchase credits, please visit
+the [minFraud Overview page](https://www.maxmind.com/en/solutions/minfraud-services).
+If you are interested in minFraud Factors, please
+[contact our Enterprise Business team](https://www.maxmind.com/en/sales-contact?comments=I+am+interested+in+minFraud+Factors.&interested_in=minfraud)
+for assistance. To better understand the differences between each minFraud
+service, review our [minFraud Service Comparison page](https://www.maxmind.com/en/solutions/minfraud-services#compare-features)
+and the Response Body section below.
+
+## API Clients
+
+<ApiClients />
+
+## Request and Response API References
+
+<LinkGroupContainer heading="References">
+  <LinkGroup>
+    <LinkGroupCard
+      heading="Requests"
+      icon={FaDownload}
+      to="/minfraud/api-documentation/requests"
+    />
+
+    <LinkGroupCard
+      heading="Responses"
+      icon={FaUpload}
+      to="/minfraud/api-documentation/responses"
+    />
+  </LinkGroup>
+</LinkGroupContainer>
+
+## Additional Features
+
+### Disposition API
+
+We provide a [Dispositions API](/minfraud/working-with-transaction-dispositions)
+for use with Disposition setting from the Transaction Details page. Use this API
+to integrate with your order management system, payment processor, or other
+internal system so that manual review decisions made from the Transaction
+Details page are available within your own systems. For more information about
+setting dispositions from the Transaction Details page, please refer to the
+[minFraud Interactive reference guide](https://support.maxmind.com/minfraud-interactive-manual-review-guide/).
+
+### Report Transactions
+
+If you are using our minFraud transaction fraud detection service, we also
+encourage you to use our [report transaction service](/minfraud/report-a-transaction).
+By reporting transactions, you can help us significantly increase the amount of
+fraud we can detect for you. We build custom machine learning models for each
+customer based on reported transactions. We also manually review many reported
+transactions to identify customizations and algorithmic improvements for each
+customer reporting feedback.
+
+### Device Tracking Add-on
+
+You may optionally include the [Device Tracking JavaScript](/minfraud/track-devices)
+on your site that helps us identify the device your customer is using to
+determine whether it has been used in previous fraudulent transactions. The
+device information is factored into the scores returned through the minFraud
+service.
+
+## Versioning
+
+The minFraud Score, minFraud Insights, and minFraud Factors web services use
+two part versions. Our current release is version 2.0. The major version number
+will remain at 2 for the foreseeable future.
+
+The minor version will only change if there are breaking changes in the web
+service. A breaking change is one that breaks client code that follows the
+documentation on this page. Breaking changes include changing the type of an
+existing field, deleting a field entirely, or changing URIs.
+
+All changes to the web services will be documented in the
+[minFraud release notes](/minfraud/release-notes), whether or not the version
+number is changed.
+
+The following changes are not considered to be breaking changes and will not be
+accompanied by a version number change:
+
+* Increased validation of inputs that causes a warning to be returned when there
+previously was not one.
+* Adding a new request or response field, either at the top level of the
+structure or in one particular object such as the billing or `credit_card`.
+Client code should be written to allow for new fields to appear.
+* Adding new values to enum fields such as processor.
+* Adding or removing warning or error codes, and/or changing the body type for
+an error. Client code should always check the `Content-Type` header for any
+error response. Client code should also be prepared to handle any valid HTTP
+4xx or 5xx status code.
+* Adding a new service with a new path.
+
+## License
+
+These services incorporate [GeoNames](https://www.geonames.org/) geographical
+data, which is made available under the
+[Creative Commons Attribution 4.0 License](https://creativecommons.org/licenses/by/4.0/).

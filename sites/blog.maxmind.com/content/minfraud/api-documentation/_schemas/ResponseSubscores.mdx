@@ -1,0 +1,253 @@
+import responseJson from '../_examples/response';
+
+<MinFraudSchema
+  json={responseJson.subscores}
+  jsonPointer="/subscores"
+  name="Response | Subscores"
+  services={[
+    'factors',
+  ]}
+>
+  This object contains subscores for many of the individual components that are
+  used in calculating the `risk_score`.
+
+  This object is only included with [minFraud Factors](https://www.maxmind.com/en/solutions/minfraud-services/minfraud-factors).
+
+  <Property
+    name="billing_address"
+    tags={{
+      'Format': 'Decimal',
+      'Min': 0.01,
+      'Max': 99,
+    }}
+  >
+    The risk associated with the billing address. If present, this is a value in
+    the range 0.01 to 99.
+  </Property>
+
+  <Property
+    name="billing_address_distance_to_ip_location"
+    tags={{
+      'Format': 'Decimal',
+      'Min': 0.01,
+      'Max': 99,
+    }}
+  >
+    The risk associated with the distance between the billing address and the
+    location for the given IP address. If present, this is a value in the range
+    0.01 to 99.
+  </Property>
+
+  <Property
+    name="browser"
+    tags={{
+      'Format': 'Decimal',
+      'Min': 0.01,
+      'Max': 99,
+    }}
+  >
+    The risk associated with the browser attributes such as the `User-Agent` and
+    `Accept-Language`. If present, this is a value in the range 0.01 to 99.
+  </Property>
+
+  <Property
+    name="chargeback"
+    tags={{
+      'Format': 'Decimal',
+      'Min': 0.01,
+      'Max': 99,
+    }}
+  >
+    Risk of IP address based on the number of chargebacks and high risk activity
+    sighted on your account and shop ID from similar IP networks. This is only
+    available to 
+    users [sending chargeback data to MaxMind](/minfraud/report-a-transaction). 
+    If present, this is a value in the range 0.01 to 99.
+  </Property>
+
+  <Property
+    name="country"
+    tags={{
+      'Format': 'Decimal',
+      'Min': 0.01,
+      'Max': 99,
+    }}
+  >
+    The risk associated with the country the transaction originated from. If
+    present, this is a value in the range 0.01 to 99.
+  </Property>
+
+  <Property
+    name="country_mismatch"
+    tags={{
+      'Format': 'Decimal',
+      'Min': 0.01,
+      'Max': 99,
+    }}
+  >
+    The risk associated with the combination of IP country, card issuer country,
+    billing country, and shipping country. If present, this is a value in the
+    range 0.01 to 99.
+  </Property>
+
+  <Property
+    name="cvv_result"
+    tags={{
+      'Format': 'Decimal',
+      'Min': 0.01,
+      'Max': 99,
+    }}
+  >
+    The risk associated with the CVV result. If present, this is a value in the
+    range 0.01 to 99.
+  </Property>
+
+  <Property
+    name="device"
+    tags={{
+      'Format': 'Decimal',
+      'Min': 0.01,
+      'Max': 99,
+    }}
+  >
+    The risk associated with the device. If present, this is a value in the
+    range 0.01 to 99.
+  </Property>
+
+  <Property
+    name="email_address"
+    tags={{
+      'Format': 'Decimal',
+      'Min': 0.01,
+      'Max': 99,
+    }}
+  >
+    The risk associated with the particular email address. If present, this is a
+    value in the range 0.01 to 99.
+  </Property>
+
+  <Property
+    name="email_domain"
+    tags={{
+      'Format': 'Decimal',
+      'Min': 0.01,
+      'Max': 99,
+    }}
+  >
+    The general risk associated with the email domain. If present, this is a
+    value in the range 0.01 to 99.
+  </Property>
+
+  <Property
+    name="email_local_part"
+    tags={{
+      'Format': 'Decimal',
+      'Min': 0.01,
+      'Max': 99,
+    }}
+  >
+    	The risk associated with the email address local part (the part of the
+      email address before the @ symbol). If present, this is a value in the
+      range 0.01 to 99.
+  </Property>
+
+  <Property
+    isDeprecated
+    name="email_tenure"
+    tags={{
+      'Format': 'Decimal',
+      'Min': 0.01,
+      'Max': 99,
+    }}
+  >
+    **This field has been deprecated.** Please use `email_address` subscore
+    instead.
+  </Property>
+
+  <Property
+    isDeprecated
+    name="ip_tenure"
+    tags={{
+      'Format': 'Decimal',
+      'Min': 0.01,
+      'Max': 99,
+    }}
+  >
+    **This field has been deprecated.** Please use `risk_score` subscore
+    instead.
+  </Property>
+
+  <Property
+    name="issuer_id_number"
+    tags={{
+      'Format': 'Decimal',
+      'Min': 0.01,
+      'Max': 99,
+    }}
+  >
+    The risk associated with the particular issuer ID number (IIN) given the
+    billing location and the history of usage of the IIN on your account and
+    shop ID. If present, this is a value in the range 0.01 to 99.
+  </Property>
+
+  <Property
+    name="order_amount"
+    tags={{
+      'Format': 'Decimal',
+      'Min': 0.01,
+      'Max': 99,
+    }}
+  >
+    The risk associated with the particular order amount for your account and
+    shop ID. If present, this is a value in the range 0.01 to 99.
+  </Property>
+
+  <Property
+    name="phone_number"
+    tags={{
+      'Format': 'Decimal',
+      'Min': 0.01,
+      'Max': 99,
+    }}
+  >
+    The risk associated with the particular phone number. If present, this is a
+    value in the range 0.01 to 99.
+  </Property>
+
+  <Property
+    name="shipping_address"
+    tags={{
+      'Format': 'Decimal',
+      'Min': 0.01,
+      'Max': 99,
+    }}
+  >
+    The risk associated with the shipping address. If present, this is a value
+    in the range 0.01 to 99.
+  </Property>
+
+  <Property
+    name="shipping_address_distance_to_ip_location"
+    tags={{
+      'Format': 'Decimal',
+      'Min': 0.01,
+      'Max': 99,
+    }}
+  >
+    The risk associated with the distance between the shipping address and the
+    location for the given IP address. If present, this is a value in the range
+    0.01 to 99.
+  </Property>
+
+  <Property
+    name="time_of_day"
+    tags={{
+      'Format': 'Decimal',
+      'Min': 0.01,
+      'Max': 99,
+    }}
+  >
+    The risk associated with the local time of day of the transaction in the IP
+    address location. If present, this is a value in the range 0.01 to 99.
+  </Property>
+</MinFraudSchema>

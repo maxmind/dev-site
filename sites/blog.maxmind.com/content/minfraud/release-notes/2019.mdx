@@ -1,0 +1,267 @@
+---
+draft: false
+title: minFraud Release Notes - 2019 Archive
+---
+
+<ReleaseNote date="2019-12-23" title="The USER_ID_REQUIRED error code is now ACCOUNT_ID_REQUIRED">
+Our web services, including [GeoIP2 Precision web
+services](https://www.maxmind.com/en/geoip2-precision-insights) and [minFraud
+services](https://www.maxmind.com/en/solutions/minfraud-services), now return
+the error code `ACCOUNT_ID_REQUIRED` instead of `USER_ID_REQUIRED` when the
+account ID parameter is missing.
+</ReleaseNote>
+
+<ReleaseNote date="2019-12-17" title="Query usage report license key filter">
+You can now filter by license key when viewing the [query usage
+report](https://www.maxmind.com/en/accounts/current/query-usage-report) \[login
+required\] in your account portal.
+</ReleaseNote>
+
+<ReleaseNote date="2019-12-11" title="Toggle minFraud Transactions Access">
+Account administrators can now enable or disable access to the [minFraud
+Transactions
+page](https://www.maxmind.com/en/accounts/current/minfraud-interactive/transactions)
+\[login required\], which is accessible from the account portal. You can manage
+account access to this feature
+[here](https://www.maxmind.com/en/accounts/current/manage-services) \[login
+required\].
+
+The minFraud Transactions page is used for review, dispositioning, tagging, and
+exporting transactions. See our
+[guide](https://support.maxmind.com/minfraud-interactive-manual-review-guide/)
+for more info.
+</ReleaseNote>
+
+<ReleaseNote date="2019-12-11" title="Changes to Japan Postal Codes">
+Effective December 16, 2019, we will return `1` as the last digit for all 7
+digit postal codes in Japan. The last digit refers to [street-level
+resolution](https://en.wikipedia.org/wiki/Postal_codes_in_Japan) and should not
+be relied upon for IP geolocation.
+</ReleaseNote>
+
+<ReleaseNote date="2019-11-08" title="Changes to Portugal Postal Codes">
+Effective November 12, 2019, we will return `-001` as the last 3 digits for all
+7 digit postal codes in Lisbon, Portugal. Our postal code resolution in
+Portugal is accurate for the first 4 digits and we include the `-001` at the
+end for backwards compatibility for customers to join the data with 7 digit
+Portuguese postal code databases. We may extend this convention to other large
+Portuguese cities in the future.
+</ReleaseNote>
+
+<ReleaseNote date="2019-10-16" title="Retirement of TLS 1.0/1.1 and unencrypted http minFraud requests">
+We retired support for TLS v1.0/v1.1 and unencrypted HTTP requests to minFraud
+services today, as part of our commitment to securing and protecting your data.
+Please ensure you are using TLS v1.2+ to connect to MaxMind services.
+</ReleaseNote>
+
+<ReleaseNote date="2019-10-15" title="New static_ip_score output in web services">
+The following output has been added to the [GeoIP2 Precision Insights web
+service](https://www.maxmind.com/en/geoip2-precision-insights), and [minFraud
+Insights and Factors web
+services](https://www.maxmind.com/en/solutions/minfraud-services):
+
+- `static_ip_score` – An indicator of how static or dynamic an IP address is.
+The value ranges from 0 to 99.99 with higher values meaning a greater static
+association. For example, many IPs with a `user_type` of `cellular` have a
+score under one. Static Cable/DSL IPs typically have a score above thirty.
+
+  This indicator can be useful for deciding whether an IP address represents
+  the same user over time.
+
+The `static_ip_score` output is present in the `traits` object.
+</ReleaseNote>
+
+<ReleaseNote date="2019-10-14" title="Final reminder of security-related retirements">
+This is a reminder that we are retiring support for requests using TLS 1.0/1.1,
+and unencrypted HTTP requests to MaxMind minFraud services on **October 16,
+2019**. After October 16, 2019, these types of requests will always fail with
+an error. Please update to TLS 1.2+ to avoid service disruption. You may need
+to upgrade your technology stack to a later version, or make code changes to do
+so.
+
+[Contact us](https://support.maxmind.com/contact-us/) for support or if you
+have questions.
+</ReleaseNote>
+
+<ReleaseNote date="2019-10-03" title="Improved cellular IP detection">
+We have made improvements to how we identify cellular IPs for the
+`connection_type` field provided in the [GeoIP2 Connection Type
+database](https://www.maxmind.com/en/geoip2-connection-type-database), and the
+`user_type` field provided in the [GeoIP2 Precision Insights web
+service](https://www.maxmind.com/en/geoip2-precision-insights) and [minFraud
+services](https://www.maxmind.com/en/solutions/minfraud-services). Accuracy for
+cellular identification should now be about 95% accurate globally.
+</ReleaseNote>
+
+<ReleaseNote date="2019-10-02" title="Account activity log">
+You can now view a log of your MaxMind account activity, which includes a time
+stamp, requester, and subject, for the each of the following actions:
+
+- Creation of a new user
+- Deactivation of a user
+- User password changes
+- Email address / username changes
+
+Account administrators can see activity across the whole account, while
+non-administrators will only see their own activity. You can find the account
+activity log in your account portal under 'Account Information' or
+[here](https://www.maxmind.com/en/accounts/current/activity-log) \[login
+required\].
+</ReleaseNote>
+
+<ReleaseNote date="2019-09-30" title="High risk IP country deprecation">
+We've deprecated the `/ip_address/country/is_high_risk` output in [minFraud
+Insights and minFraud Factors](/minfraud) (and highRiskCountry output in
+[legacy minFraud services](/minfraud/minfraud-legacy)) because it provides
+limited value. You can find the IP country in the `/ip_address/country/names`
+output.
+</ReleaseNote>
+
+<ReleaseNote date="2019-09-19" title="New network and user_count outputs in web services">
+The following outputs have been added to the [GeoIP2 Precision Insights web
+service](https://www.maxmind.com/en/geoip2-precision-insights), and [minFraud
+Insights and Factors web
+services](https://www.maxmind.com/en/solutions/minfraud-services):
+
+- `network` – The network in [CIDR notation](https://en.wikipedia.org/wiki/Classless_Inter-Domain_Routing#CIDR_notation)
+associated with the record. This is the largest network where all of the
+fields besides `ip_address` have the same value.
+- `user_count` – The estimated number of users sharing the IP/network during
+the past 24 hours. For IPv4, the count is for the individual IP. For IPv6,
+the count is for the /64 network.
+
+Both of these outputs are present in the `traits` object.
+</ReleaseNote>
+
+<ReleaseNote date="2019-09-16" title="Planned warning interruption (September 2019)">
+**8-hour interruption of old TLS and unencrypted minFraud requests on September
+25, 2019**
+
+There will be a planned service interruption for all requests to MaxMind
+services that use TLS versions 1.0 and 1.1, and for unencrypted HTTP requests
+to MaxMind legacy minFraud services (e.g. minFraud Standard, minFraud Premium,
+Proxy Detection web service, IIN service). **This will take place for up to 8
+hours from 14:00-22:00 UTC on September 25, 2019.**
+
+During the interruption, requests using TLS v1.0 and v1.1 and unencrypted HTTP
+requests to legacy minFraud endpoints will fail with an error.
+
+To avoid service interruption, you may need to upgrade some part of your
+technology stack to a later version, or you may need to make code changes. If
+you have any questions, please do not hesitate to [contact
+us](https://support.maxmind.com/contact-us/). Additional info is available on
+our
+[blog](https://blog.maxmind.com/2019/04/12/important-updates-about-tls-v1-0-v1-1-unencrypted-http-requests-and-the-legacy-minfraud-soap-api/).
+</ReleaseNote>
+
+<ReleaseNote date="2019-08-29" title="IP and email tenure deprecation">
+Effective August 29th, 2019, we have deprecated the `/subscores/ip_tenure` and
+`subscores/email_tenure` subscore outputs in the minFraud Factors service
+because they provided limited value. The subscores will default to 1 and will
+be removed in a future release. The IP tenure is reflected in the overall risk
+score. The user tenure on email is reflected in the `/subscores/email_address`
+output.
+</ReleaseNote>
+
+<ReleaseNote date="2019-08-21" title="Improved business IP detection">
+We have made improvements in how we detect business IPs for the user type field
+provided as part of the [GeoIP2 Precision Insights web
+service](https://www.maxmind.com/en/geoip2-precision-insights) and [minFraud
+services](https://www.maxmind.com/en/solutions/minfraud-services).
+Approximately 1% of residential IPs were recently corrected to the appropriate
+business user type as a result of these improvements.
+</ReleaseNote>
+
+<ReleaseNote date="2019-08-20" title="Planned warning interruption (August 2019)">
+**8-hour interruption of old TLS and unencrypted minFraud requests on August
+28, 2019**
+
+There will be a planned service interruption for all requests to MaxMind
+services that use TLS versions 1.0 and 1.1, and for unencrypted HTTP requests
+to MaxMind legacy minFraud services (e.g. minFraud Standard, minFraud Premium,
+Proxy Detection web service, IIN service). **This will take place for up to 8
+hours from 14:00-22:00 UTC on August 28, 2019.**
+
+During the interruption, requests using TLS v1.0 and v1.1 and unencrypted HTTP
+requests to legacy minFraud endpoints will fail with an error.
+
+To avoid service interruption, you may need to upgrade some part of your
+technology stack to a later version, or you may need to make code changes. If
+you have any questions, please do not hesitate to [contact
+us](https://support.maxmind.com/contact-us/). Additional info is available on
+our
+[blog](https://blog.maxmind.com/2019/04/12/important-updates-about-tls-v1-0-v1-1-unencrypted-http-requests-and-the-legacy-minfraud-soap-api/).
+</ReleaseNote>
+
+<ReleaseNote date="2019-08-05" title="Retirement of legacy IIN (BIN) API service">
+We are discontinuing the legacy IIN (BIN) API on **January 31, 2020** in order
+to focus development and maintenance efforts on our core services. This means
+that the service will no longer function if you are querying the URL below:  
+[https://minfraud.maxmind.com/app/bin_http](https://minfraud.maxmind.com/app/bin_http)
+
+Please note that we continue to support the [IIN (BIN) look-up form on our
+website](https://www.maxmind.com/en/accounts/current/minfraud/iin/lookup)
+\[login required\], so that remains an option for your use. If you require an
+API because of volume considerations, we recommend either using our [minFraud
+Insights API](https://www.maxmind.com/en/accounts/current/minfraud/iin/lookup)
+(IP address is a required input field) or integrating an alternative
+commercially available solution.
+</ReleaseNote>
+
+<ReleaseNote date="2019-07-24" title="Planned warning interruption">
+There will be a planned service interruption for all requests to MaxMind
+services that use TLS versions 1.0 and 1.1, and for unencrypted HTTP requests
+to MaxMind legacy minFraud services (e.g. minFraud Standard, minFraud Premium,
+Proxy Detection web service, IIN service). This will take place for up to 2
+hours starting at 14:00 UTC on the three dates below:
+
+- Monday, July 29, 2019
+- Wednesday, July 31, 2019
+- Friday, August 2, 2019
+
+During the interruption, requests using TLS v1.0 and v1.1 and unencrypted HTTP
+requests to legacy minFraud endpoints will fail with an error.
+
+To avoid service interruption, you may need to upgrade some part of your
+technology stack to a later version, or you may need to make code changes. If
+you have any questions, please do not hesitate to [contact
+us](https://support.maxmind.com/contact-us/). Additional info is available on
+our
+[blog](https://blog.maxmind.com/2019/04/12/important-updates-about-tls-v1-0-v1-1-unencrypted-http-requests-and-the-legacy-minfraud-soap-api/).
+</ReleaseNote>
+
+<ReleaseNote date="2019-07-22" title="Disable IP Risk">
+You can now manage a list of IP addresses and networks that you want to exempt
+from IP risk scoring. This is helpful when the IP address is known to be
+unrelated to the end-customer, such as when you have transactions coming from a
+call center or agent. Adding an IP address or network to the exclusion list
+will ensure IP risk is neither calculated nor considered when determining the
+riskScore for transactions associated with excluded IPs. [Learn
+more](https://support.maxmind.com/minfraud-faq/minfraud-services/how-can-i-exclude-an-ip-address-network-from-being-used-for-risk-scoring/).
+</ReleaseNote>
+
+<ReleaseNote date="2019-06-14" title="Initial release of minFraud-node">
+We have added Node.js as a MaxMind Supported minFraud API
+([NPM](https://npmjs.com/package/@maxmind/minfraud-api-node),
+[GitHub](https://maxmind.github.io/minfraud-api-node/)). It provides an API for
+the [minFraud Score, Insights, and Factors
+services](https://www.maxmind.com/en/solutions/minfraud-services).
+</ReleaseNote>
+
+<ReleaseNote date="2019-04-18" title="Security-related retirements 2019">
+In order to ensure your data is as safe and secure as possible, we will be
+retiring support for TLS v1.0 and 1.1, unencrypted HTTP requests to our legacy
+minFraud services, and our legacy minFraud SOAP API in the coming months.
+Please see our
+[blog](https://blog.maxmind.com/2019/04/12/important-updates-about-tls-v1-0-v1-1-unencrypted-http-requests-and-the-legacy-minfraud-soap-api/)
+for more info.
+</ReleaseNote>
+
+<ReleaseNote date="2019-04-08" title="2FA release">
+To enhance the security of your MaxMind account, Chrome users can enable
+two-factor authentication (2FA). You can now add and require a (FIDO U2F)
+security key on top of your account credentials for a more secure log-in. See
+our [support center user
+guide](https://support.maxmind.com/two-factor-authentication-2fa-user-guide/)
+for information on how to set up 2FA.
+</ReleaseNote>

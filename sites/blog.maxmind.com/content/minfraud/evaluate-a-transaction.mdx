@@ -1,0 +1,1230 @@
+---
+draft: false
+title: Evaluate a Transaction
+---
+
+import ApiClients from './_api-clients.mdx';
+
+Evaluating a transaction consists of setting up device tracking on your website,
+creating an object that contains the details of the transaction, and then
+submitting the transaction to the minFraud service for evaluation.
+
+## Implementation
+
+MaxMind offers and highly recommends using official client libraries to access
+our minFraud services. If you cannot or do not wish to use our client libraries,
+please review our [minFraud API Documentation page](/minfraud/api-documentation) for
+details on our JSON API.
+
+### 1. Add device tracking to your website
+
+The [Device Tracking Add-On](/minfraud/track-devices) runs on a visiting device
+so that the minFraud service can assign a device ID and begin collecting
+fingerprint information.  This helps detect fraudsters if they change or enable
+proxies while browsing your website.
+
+Note that, in order to be effective, the Device Tracking Add-on must, at a
+minimum, be included on the page where the IP address is captured for a
+minFraud query.
+
+Place the following code in the footer of the HTML webpage and replace
+`ACCOUNT_ID` with your [MaxMind account ID](https://www.maxmind.com/en/my_license_key):
+
+```html
+<script type="text/javascript">
+  maxmind_user_id = "ACCOUNT_ID";
+  (function() {
+    var loadDeviceJs = function() {
+      var element = document.createElement('script');
+      element.src = 'https://device.maxmind.com/js/device.js';
+      document.body.appendChild(element);
+    };
+    if (window.addEventListener) {
+      window.addEventListener('load', loadDeviceJs, false);
+    } else if (window.attachEvent) {
+      window.attachEvent('onload', loadDeviceJs);
+    }
+  })();
+</script>
+```
+
+### 2. Install the minFraud client library
+
+We have a collection of officially supported libraries for you to interact with
+the minFraud API:
+
+<CodeSet>
+
+```cli-csharp
+# Install via NuGet
+Install-Package MaxMind.MinFraud
+```
+
+```cli-java
+# Install via Maven, recommended
+<dependency>
+  <groupId>com.maxmind.minfraud</groupId>
+  <artifactId>minfraud</artifactId>
+  <version>1.15.0</version>
+</dependency>
+
+# Or install via Gradle
+repositories {
+  mavenCentral()
+}
+dependencies {
+  compile 'com.maxmind.minfraud:minfraud:1.15.0'
+}
+```
+
+```cli-javascript
+# Install via npm
+npm install @maxmind/minfraud-api-node
+
+# Or install via yarn
+yarn add @maxmind/minfraud-api-node
+```
+
+```cli-php
+# Install via Composer
+composer require maxmind/minfraud:~1.0
+```
+
+```cli-python
+# Install via pip
+pip install minfraud
+```
+
+```cli-ruby
+# Install as a gem
+gem install minfraud
+
+# Or add this to your Gemfile
+gem 'minfraud'
+```
+
+</CodeSet>
+
+### 3. Create a minFraud client object
+
+To interact with our API, you need to create a new client object. For this you
+will need 
+[your MaxMind account ID and license key](https://www.maxmind.com/en/my_license_key):
+
+<CodeSet>
+
+```csharp
+var client = new WebServiceClient(10, "LICENSEKEY");
+```
+
+```java
+WebServiceClient client = new WebServiceClient.Builder(10, "LICENSEKEY").build();
+```
+
+```javascript
+const client = new minFraud.Client('10', 'LICENSEKEY');
+```
+
+```php
+$client = new MinFraud(10, 'LICENSEKEY');
+```
+
+```python
+# If you want to use synchronous requests
+client = Client(10, 'LICENSEKEY');
+
+# Or if you want to use asynchronous requests
+async_client = AsyncClient(10, 'LICENSEKEY');
+```
+
+```ruby
+Minfraud.configure do |c|
+  c.account_id = 10
+  c.license_key = 'LICENSEKEY'
+end
+```
+
+</CodeSet>
+
+### 4. Create a transaction object
+
+The transaction object represents a customer's transaction that you are sending
+to the minFraud service for evaluation. There are no mandatory fields, but
+including [more information](/minfraud/evaluate-a-transaction#full-examples)
+about the transaction improves the accuracy of the transaction's evaluation.
+The following examples use the recommended minimum amount of information you
+should submit:
+
+<CodeSet>
+
+```csharp
+var transaction = new Transaction(
+    device: new Device(System.Net.IPAddress.Parse("1.1.1.1")),
+    email:
+    new Email(
+        address: "test@maxmind.com",
+        domain: "maxmind.com"
+    ),
+    billing:
+    new Billing(
+        address: "1 Billing Address St.",
+        firstName: "First",
+        lastName: "Last",
+        company: "Company, Inc.",
+        address2: "Unit 1",
+        city: "Waltham",
+        region: "MA",
+        country: "US",
+        postal: "02451",
+        phoneNumber: "555-555-5555",
+        phoneCountryCode: "1"
+    ),
+    creditCard:
+    new CreditCard(
+        issuerIdNumber: "411111",
+    ),
+    shipping:
+    new Shipping(
+        firstName: "First",
+        lastName: "Last",
+        company: "Company Inc.",
+        address: "1 Shipping Address St.",
+        address2: "Unit 1",
+        city: "Waltham",
+        region: "MA",
+        country: "US",
+        postal: "02451",
+        phoneNumber: "555-555-5555",
+        phoneCountryCode: "1",
+    )
+);
+```
+
+```java
+Transaction transaction = new Transaction.Builder(
+        new Device.Builder(InetAddress.getByName("1.1.1.1"))
+            .build()
+    ).billing(
+        new Billing.Builder()
+            .address("1 Billing Address St.")
+            .address2("Unit 1")
+            .city("Waltham")
+            .company("Company, Inc")
+            .firstName("First")
+            .lastName("Last")
+            .phoneCountryCode("1")
+            .phoneNumber("555-555-5555")
+            .postal("02451")
+            .region("MA")
+            .build()
+    ).creditCard(
+        new CreditCard.Builder()
+            .issuerIdNumber("411111")
+            .build()
+    ).email(
+        new Email.Builder()
+            .address("test@maxmind.com")
+            .domain("maxmind.com")
+            .build()
+    ).shipping(
+        new Shipping.Builder()
+            .address("1 Shipping Address St.")
+            .address2("Unit 1")
+            .city("Waltham")
+            .company("Company, Inc")
+            .firstName("First")
+            .lastName("Last")
+            .phoneCountryCode("1")
+            .phoneNumber("555-555-5555")
+            .postal("02451")
+            .region("MA")
+            .build()
+    ).build();
+```
+
+```javascript
+let transaction;
+
+try {
+  transaction = new minFraud.Transaction({
+    device: new minFraud.Device({
+      ipAddress: "1.1.1.1",
+    }),
+    billing: new minFraud.Billing({
+      address: '1 Billing Address St.',
+      address2: 'Unit 1',
+      city: 'Waltham',
+      company: 'Company, Inc.',
+      country: 'US',
+      firstName: 'First',
+      lastName: 'Last',
+      phoneCountryCode: '1',
+      phoneNumber: '555-555-5555',
+      postal: '02451',
+      region: 'MA',
+    }),
+    creditCard: new minFraud.CreditCard({
+      issuerIdNumber: '411111',
+    }),
+    email: new minFraud.Email({
+      address: 'test@maxmind.com',
+      domain: 'maxmind.com',
+    }),
+    shipping: new minFraud.Shipping({
+      address: '1 Shipping Address St.',
+      address2: 'Unit 1',
+      city: 'Waltham',
+      company: 'Company, Inc.',
+      country: 'US',
+      firstName: 'First',
+      lastName: 'Last',
+      phoneCountryCode: '1',
+      phoneNumber: '555-555-5555',
+      postal: '02451',
+      region: 'MA',
+    }),
+  })
+} catch(error) {
+  // handle the error
+}
+```
+
+```php
+$request = $client->withDevice([
+    'ip_address'  => '1.1.1.1',
+])->withBilling([
+    'first_name'         => 'First',
+    'last_name'          => 'Last',
+    'company'            => 'Company',
+    'address'            => '1 Billing Address St.',
+    'address_2'          => 'Unit 1',
+    'city'               => 'Waltham',
+    'region'             => 'MA',
+    'country'            => 'US',
+    'postal'             => '02451',
+    'phone_number'       => '555-555-5555',
+    'phone_country_code' => '1',
+])->withCreditCard([
+    'issuer_id_number'        => '411111',
+])->withEmail([
+    'address' => 'test@maxmind.com',
+    'domain'  => 'maxmind.com',
+])->withShipping([
+    'first_name'         => 'First',
+    'last_name'          => 'Last',
+    'company'            => 'Company',
+    'address'            => '1 Shipping Address St.',
+    'address_2'          => 'Unit 1',
+    'city'               => 'Waltham',
+    'region'             => 'MA',
+    'country'            => 'US',
+    'postal'             => '02451',
+    'phone_number'       => '555-555-5555',
+    'phone_country_code' => '1',
+]);
+```
+
+```python
+request = {
+   'device': {
+       'ip_address': '1.1.1.1',
+   },
+   'billing': {
+       'first_name': 'First',
+       'last_name': 'Last',
+       'company': 'Company, Inc.',
+       'address': '1 Billing Address St.',
+       'address_2': 'Unit 1',
+       'city': 'Waltham',
+       'region': 'MA',
+       'country': 'US',
+       'postal': '02451',
+       'phone_country_code': '1',
+       'phone_number': '555-555-5555',
+   },
+   'credit_card': {
+       'issuer_id_number': '411111'
+   }'email': {
+       'address': '977577b140bfb7c516e4746204fbdb01',
+       'domain': 'maxmind.com'
+   },
+   'shipping': {
+       'first_name': 'First',
+       'last_name': 'Last',
+       'company': 'Company, Inc.',
+       'address': '1 Shipping Address St.',
+       'address_2': 'Unit 1',
+       'city': 'Waltham',
+       'region': 'MA',
+       'country': 'US',
+       'postal': '02451',
+       'phone_country_code': '1',
+       'phone_number': '555-555-5555',
+   }
+}
+```
+
+```ruby
+assessment = Minfraud::Assessments.new(
+  device: {
+    ip_address:      '1.1.1.1',
+  },
+  billing: {
+    first_name:         'First',
+    last_name:          'Last',
+    company:            'Company, Inc.',
+    address:            '1 Billing Address St.',
+    address_2:          'Unit 1',
+    city:               'Waltham',
+    region:             'MA',
+    country:            'US',
+    postal:             '02451',
+    phone_number:       '555-555-5555',
+    phone_country_code: '1',
+  },
+  credit_card: {
+    issuer_id_number:        '411111',
+  },
+  email: {
+    address: 'test@maxmind.com',
+    domain:  'maxmind.com',
+  },
+  shipping: {
+    first_name:         'First',
+    last_name:          'Last',
+    company:            'Company, Inc.',
+    address:            '1 Shipping Address St.',
+    address_2:          'Unit 1',
+    city:               'Waltham',
+    region:             'MA',
+    country:            'US',
+    postal:             '02451',
+    phone_number:       '555-555-5555',
+    phone_country_code: '1',
+  },
+)
+```
+
+</CodeSet>
+
+### 5. Submit the transaction object for evaluation
+
+Our client libraries provide a distinct method for each minFraud service. Use
+the appropriate method to submit the transaction object to the minFraud Score,
+Insights, or Factors service.
+
+<CodeSet>
+
+```csharp
+# minFraud Score
+var score = await client.ScoreAsync(transaction);
+
+# minFraud Insights
+var insights = await client.InsightsAsync(transaction);
+
+# minFraud Factors
+var factors = await client.FactorsAsync(transaction);
+```
+
+```java
+# minFraud Score
+ScoreResponse score = client.score(transaction);
+
+# minFraud Insights
+InsightsResponse insights = client.insights(transaction);
+
+# minFraud Factors
+FactorsResponse factors = client.factors(transaction);
+```
+
+```javascript
+// minFraud Score
+client.score(transaction).then(scoreResponse => ...);
+
+// minFraud Insights
+client.insights(transaction).then(insightsResponse => ...);
+
+// minFraud Factors
+client.factors(transaction).then(factorsResponse => ...);
+```
+
+```php
+# minFraud Score
+$scoreResponse = $request->score();
+
+# minFraud Insights
+$insightsResponse = $request->insights();
+
+# minFraud Factors
+$factorsResponse = $request->factors();
+```
+
+```python
+# minFraud Score - Synchronous
+score_response = client.score(request)
+
+# minFraud Score - Asynchronous
+score_response = await async_client.score(request)
+
+# minFraud Insights - Synchronous
+insights_response = client.insights(request)
+
+# minFraud Insights - Asynchronous
+insights_response = await async_client.insights(request)
+
+# minFraud Factors - Synchronous
+factors_response = client.factors(request)
+
+# minFraud Factors - Aynchronous
+factors_response = await async_client.factors(request)
+```
+
+```ruby
+# minFraud Score
+score_model = assessment.score.body
+
+# minFraud Insights
+insights_model = assessment.insights.body
+
+# minFraud Factors
+factors_model = assessment.factors.body
+```
+
+</CodeSet>
+
+## Validation and error handling
+
+By default, our client libaries will throw an exception if any of the
+transaction object's values are invalid. The exception is thrown when the object
+is constructed; the python library will raise an error when the minFraud service
+method is called.
+
+If the minFraud request fails, our client libraires will throw an exception,
+raise an error (python), or reject the promise (node).
+
+For more information on errors and exceptions, including their types and
+descriptions,
+[go to the specific library's documentation page](#links-to-maxmind-client-apis).
+
+## Full examples
+
+<CodeSet>
+
+```csharp
+using MaxMind.MinFraud;
+using MaxMind.MinFraud.Request;
+using System;
+using System.Collections.Generic;
+using System.Threading.Tasks;
+
+public class MinFraudExample
+{
+    static void Main()
+    {
+        MinFraudAsync().Wait();
+    }
+
+    static public async Task MinFraudAsync()
+    {
+        var transaction = new Transaction(
+            device: new Device(System.Net.IPAddress.Parse("1.1.1.1"),
+                userAgent:
+                "Mozilla/5.0 (X11; Linux x86_64)",
+                acceptLanguage: "en-US,en;q=0.8",
+                sessionAge: 3600,
+                sessionId: "a333a4e127f880d8820e56a66f40717c"
+            ),
+            userEvent:
+            new Event
+            (
+                transactionId: "txn3134133",
+                shopId: "s2123",
+                time: new DateTimeOffset(2014, 4, 12, 23, 20, 50, 52, new TimeSpan(0)),
+                type: EventType.Purchase
+            ),
+            account:
+            new Account(
+                userId: "3132",
+                username: "fred"
+            ),
+            email:
+            new Email(
+                address: "test@maxmind.com",
+                domain: "maxmind.com"
+            ),
+            billing:
+            new Billing(
+                address: "1 Billing Address St.",
+                firstName: "First",
+                lastName: "Last",
+                company: "Company, Inc.",
+                address2: "Unit 1",
+                city: "Waltham",
+                region: "MA",
+                country: "US",
+                postal: "02451",
+                phoneNumber: "555-555-5555",
+                phoneCountryCode: "1"
+            ),
+            shipping:
+            new Shipping(
+                firstName: "First",
+                lastName: "Last",
+                company: "Company Inc.",
+                address: "1 Shipping Address St.",
+                address2: "Unit 1",
+                city: "Waltham",
+                region: "MA",
+                country: "US",
+                postal: "02451",
+                phoneNumber: "555-555-5555",
+                phoneCountryCode: "1",
+                deliverySpeed: ShippingDeliverySpeed.SameDay
+            ),
+            payment:
+            new Payment(
+                processor: PaymentProcessor.Stripe,
+                wasAuthorized: false,
+                declineCode: "invalid number"
+            ),
+            creditCard:
+            new CreditCard(
+                issuerIdNumber: "411111",
+                bankName: "Test Bank",
+                bankPhoneCountryCode: "1",
+                bankPhoneNumber: "555-555-5555",
+                avsResult: 'Y',
+                cvvResult: 'N',
+                last4Digits: "1234"
+            ),
+            order:
+            new Order(
+                amount: 323.21m,
+                currency: "USD",
+                discountCode: "FIRST",
+                affiliateId: "af12",
+                subaffiliateId: "saf42",
+                referrerUri: new Uri("http://www.amazon.com/")
+            ),
+            shoppingCart: new List<ShoppingCartItem>
+            {
+                new ShoppingCartItem(
+                    category: "pets",
+                    itemId: "ad23232",
+                    quantity: 2,
+                    price: 20.43m
+                ),
+                new ShoppingCartItem(
+                    category: "beauty",
+                    itemId: "bst112",
+                    quantity: 1,
+                    price: 100.00m
+                )
+            },
+            customInputs: new CustomInputs.Builder
+            {
+                { "float_input", 12.1d},
+                { "integer_input", 3123},
+                { "string_input", "This is a string input."},
+                { "boolean_input", true},
+            }.Build()
+        );
+
+        // If you are making multiple requests, a single WebServiceClient
+        // should be shared across requests to allow connection reuse. The
+        // class is thread safe.
+        //
+        // Replace "6" with your account ID and "ABCD567890" with your license
+        // key.
+        using (var client = new WebServiceClient(6, "ABCD567890"))
+        {
+            // Use `InsightsAsync` if querying Insights; `FactorsAsync` if querying Factors
+            var score = await client.ScoreAsync(transaction);
+            Console.WriteLine(score);
+        }
+    }
+}
+```
+
+```java
+Transaction request = new Transaction.Builder(
+        new Device.Builder(InetAddress.getByName("1.1.1.1"))
+            .acceptLanguage("en-US")
+            .sessionAge(3600.6)
+            .sessionId("foobar")
+            .userAgent("Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36")
+            .build()
+    ).account(
+        new Account.Builder()
+            .userId("usr-123")
+            .username("fraudster9")
+            .build()
+    ).billing(
+        new Billing.Builder()
+            .address("1 Billing Address St.")
+            .address2("Unit 1")
+            .city("Waltham")
+            .company("Company, Inc")
+            .firstName("First")
+            .lastName("Last")
+            .phoneCountryCode("1")
+            .phoneNumber("555-555-5555")
+            .postal("02451")
+            .region("MA")
+            .build()
+    ).creditCard(
+        new CreditCard.Builder()
+            .avsResult('N')
+            .bankName("Test Bank")
+            .bankPhoneCountryCode("1")
+            .bankPhoneNumber("555-555-5555")
+            .cvvResult('Y')
+            .issuerIdNumber("411111")
+            .last4Digits("1234")
+            .build()
+    ).email(
+        new Email.Builder()
+            .address("fraud@ster.com")
+            .domain("ster.com")
+            .build()
+    ).event(
+        new Event.Builder()
+            .shopId("2432")
+            .time(new Date())
+            .transactionId("tr1242")
+            .type(Event.Type.ACCOUNT_CREATION)
+            .build()
+    ).order(
+        new Order.Builder()
+            .affiliateId("af5")
+            .amount(new BigDecimal(Double.toString(1.1)))
+            .currency("USD")
+            .discountCode("10OFF")
+            .referrerUri(new URI("https://www.google.com/"))
+            .subaffiliateId("saf9")
+            .build()
+    ).payment(
+        new Payment.Builder()
+            .declineCode("invalid")
+            .processor(Payment.Processor.ADYEN)
+            .wasAuthorized(false)
+            .build()
+    ).shipping(
+        new Shipping.Builder()
+            .address("1 Shipping Address St.")
+            .address2("Unit 1")
+            .city("Waltham")
+            .company("Company, Inc")
+            .firstName("First")
+            .lastName("Last")
+            .phoneCountryCode("1")
+            .phoneNumber("555-555-5555")
+            .postal("02451")
+            .region("MA")
+            .deliverySpeed(Shipping.DeliverySpeed.EXPEDITED)
+            .build()
+    ).addShoppingCartItem(
+        new ShoppingCartItem.Builder()
+            .category("TOYS")
+            .itemId("t-132")
+            .price(1.1)
+            .quantity(100)
+            .build()
+    ).addShoppingCartItem(
+        new ShoppingCartItem.Builder()
+            .category("COSMETICS")
+            .itemId("c-12312")
+            .price(3.)
+            .quantity(1)
+            .build()
+    ).customInputs(
+        new CustomInputs.Builder()
+            .put("float_input", 12.1)
+            .put("integer_input", 3123)
+            .put("string_input", "This is a string input.")
+            .put("boolean_input", true)
+            .build()
+    ).build();
+
+WebServiceClient client = new WebServiceClient.Builder(6, "ABCD567890").build();
+
+// use `client.insights` or `client.factors` for Insights and Factors respectively
+System.out.println(client.score(request));
+```
+
+```javascript
+import { URL } from 'url'; // Used for `order.referrerUri
+import * as minFraud from '@maxmind/minfraud-api-node';
+// const minFraud = require('@maxmind/minfraud-api-node');
+
+// client is reusable
+const client = new minFraud.Client("1234", "LICENSEKEY");
+
+let transaction;
+
+try {
+  transaction = new minFraud.Transaction({
+    // device is required
+    device: new minFraud.Device({
+      ipAddress: "1.1.1.1",
+      acceptLanguage: 'en-US,en;q=0.8',
+      sessionAge: 3600,
+      sessionId: 'a333a4e127f880d8820e56a66f40717c',
+      userAgent: 'Mozilla/5.0 (X11; Linux x86_64)',
+    }),
+    event: new minFraud.Event({
+      shopId: 'shop',
+      time: new Date(Date.now()),
+      transactionId: 'txn1234',
+      type: minFraud.Constants.EventType.PayoutChange,
+    }),
+    account: new minFraud.Account({
+      userId: 'user123',
+      username: 'userperson',
+    }),
+    email: new minFraud.Email({
+      address: 'foo@bar.com',
+      domain: 'bar.com',
+    }),
+    billing: new minFraud.Billing({
+      address: '1 Billing Address St.',
+      address2: 'Unit 1',
+      city: 'Waltham',
+      company: 'Company, Inc.',
+      country: 'US',
+      firstName: 'First',
+      lastName: 'Last',
+      phoneCountryCode: '1',
+      phoneNumber: '555-555-5555',
+      postal: '02451',
+      region: 'MA',
+    }),
+    shipping: new minFraud.Shipping({
+      address: '1 Shipping Address St.',
+      address2: 'Unit 1',
+      city: 'Waltham',
+      company: 'Company, Inc.',
+      country: 'US',
+      firstName: 'First',
+      lastName: 'Last',
+      phoneCountryCode: '1',
+      phoneNumber: '555-555-5555',
+      postal: '02451',
+      region: 'MA',
+    }),
+    payment: new minFraud.Payment({
+      declineCode: 'A',
+      processor: minFraud.Constants.Processor.ConceptPayments,
+      wasAuthorized: true,
+    }),
+    creditCard: new minFraud.CreditCard({
+      avsResult: 'A',
+      bankName: 'Test bank',
+      bankPhoneCountryCode: '1',
+      bankPhoneNumber: '555-555-5555',
+      cvvResult: 'B',
+      issuerIdNumber: '411111',
+      last4digits: '1234',
+      token: 'a_token',
+    }),
+    order: new minFraud.Order({
+      affiliateId: 'robotnet',
+      amount: 22.99,
+      currency: 'USD',
+      discountCode: 'COUPONS',
+      hasGiftMessage: true,
+      isGift: true,
+      referrerUri: new URL('https://robots.com/swarms'),
+      subaffiliateId: 'swarm',
+    }),
+    shoppingCart: [
+      new minFraud.ShoppingCartItem({
+        category: 'screws',
+        itemId: 'sc123',
+        price: 9.99,
+        quantity: 100,
+      }),
+      new minFraud.ShoppingCartItem({
+        category: 'screws',
+        itemId: 'sc123',
+        price: 9.99,
+        quantity: 100,
+      }),
+    ],
+    customInputs: [
+      new minFraud.CustomInput('key', 'value'),
+      new minFraud.CustomInput('key_2', true),
+      new minFraud.CustomInput('key_3', 100),
+    ]
+  })
+} catch(error) {
+  // handle the error
+}
+
+// Use `client.insights` or `client.factors` for Insights and Factors respectively
+client.score(transaction).then(response => {
+  console.log(response.riskScore) // 50
+  console.log(response.ipAddress.risk) // 50
+});
+```
+
+```php
+<?php
+require_once 'vendor/autoload.php';
+use MaxMind\MinFraud;
+
+# The constructor for MinFraud takes your account ID, your license key, and
+# optionally an array of options.
+$mf = new MinFraud(1, 'ABCD567890');
+
+# Note that each ->with*() call returns a new immutable object. This means
+# that if you separate the calls into separate statements without chaining,
+# you should assign the return value to a variable each time.
+$request = $mf->withDevice([
+    'ip_address'  => '1.1.1.1',
+    'session_age' => 3600.5,
+    'session_id'  => 'foobar',
+    'user_agent'  =>
+        'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.89 Safari/537.36',
+    'accept_language' => 'en-US,en;q=0.8',
+])->withEvent([
+    'transaction_id' => 'txn3134133',
+    'shop_id'        => 's2123',
+    'time'           => '2012-04-12T23:20:50+00:00',
+    'type'           => 'purchase',
+])->withAccount([
+    'user_id'      => 3132,
+    'username_md5' => '4f9726678c438914fa04bdb8c1a24088',
+])->withEmail([
+    'address' => 'test@maxmind.com',
+    'domain'  => 'maxmind.com',
+])->withBilling([
+    'first_name'         => 'First',
+    'last_name'          => 'Last',
+    'company'            => 'Company',
+    'address'            => '1 Billing Address St.',
+    'address_2'          => 'Unit 1',
+    'city'               => 'Waltham',
+    'region'             => 'MA',
+    'country'            => 'US',
+    'postal'             => '02451',
+    'phone_number'       => '555-555-5555',
+    'phone_country_code' => '1',
+])->withShipping([
+    'first_name'         => 'First',
+    'last_name'          => 'Last',
+    'company'            => 'Company',
+    'address'            => '1 Shipping Address St.',
+    'address_2'          => 'Unit 1',
+    'city'               => 'Waltham',
+    'region'             => 'MA',
+    'country'            => 'US',
+    'postal'             => '02451',
+    'phone_number'       => '555-555-5555',
+    'phone_country_code' => '1',
+    'delivery_speed'     => 'same_day',
+])->withPayment([
+    'processor'             => 'stripe',
+    'was_authorized'        => false,
+    'decline_code'          => 'invalid number',
+])->withCreditCard([
+    'issuer_id_number'        => '411111',
+    'last_4_digits'           => '1234',
+    'bank_name'               => 'Test Bank',
+    'bank_phone_country_code' => '1',
+    'bank_phone_number'       => '555-555-5555',
+    'avs_result'              => 'Y',
+    'cvv_result'              => 'N',
+])->withOrder([
+    'amount'           => 323.21,
+    'currency'         => 'USD',
+    'discount_code'    => 'FIRST',
+    'is_gift'          => true,
+    'has_gift_message' => false,
+    'affiliate_id'     => 'af12',
+    'subaffiliate_id'  => 'saf42',
+    'referrer_uri'     => 'http://www.amazon.com/',
+])->withShoppingCartItem([
+    'category' => 'pets',
+    'item_id'  => 'leash-0231',
+    'quantity' => 2,
+    'price'    => 20.43,
+])->withShoppingCartItem([
+    'category' => 'beauty',
+    'item_id'  => 'msc-1232',
+    'quantity' => 1,
+    'price'    => 100.00,
+])->withCustomInputs([
+    'section'            => 'news',
+    'previous_purchases' => 19,
+    'discount'           => 3.2,
+    'previous_user'      => true,
+]);
+
+# To get the minFraud Factors response model, use ->factors():
+$factorsResponse = $request->factors();
+
+print($factorsResponse->subscores->email . "\n");
+
+# To get the minFraud Insights response model, use ->insights():
+$insightsResponse = $request->insights();
+
+print($insightsResponse->riskScore . "\n");
+print($insightsResponse->creditCard->issuer->name . "\n");
+
+foreach ($insightsResponse->warnings as $warning) {
+    print($warning->warning . "\n");
+}
+
+# To get the minFraud Score response model, use ->score():
+$scoreResponse = $request->score();
+
+print($scoreResponse->riskScore . "\n");
+
+foreach ($scoreResponse->warnings as $warning) {
+    print($warning->warning . "\n");
+}
+```
+
+```python
+ import asyncio # Only import asyncio if you are playing to do an asynchronous request
+ from minfraud import AsyncClient, Client
+
+ request = {
+     'device': {
+         'ip_address': '1.1.1.1',
+         'accept_language': 'en-US,en;q=0.8',
+         'session_age': 3600,
+         'session_id': 'a333a4e127f880d8820e56a66f40717c',
+         'user_agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.89 Safari/537.36'
+     },
+     'event': {
+         'shop_id': 's2123',
+         'type': 'purchase',
+         'transaction_id': 'txn3134133',
+         'time': '2014-04-12T23:20:50.052+00:00'
+     },
+     'account': {
+         'user_id': '3132',
+         'username_md5': '570a90bfbf8c7eab5dc5d4e26832d5b1'
+     },
+     'email': {
+         'address': '977577b140bfb7c516e4746204fbdb01',
+         'domain': 'maxmind.com'
+     },
+     'billing': {
+         'first_name': 'First',
+         'last_name': 'Last',
+         'company': 'Company, Inc.',
+         'address': '1 Billing Address St.',
+         'address_2': 'Unit 1',
+         'city': 'Waltham',
+         'region': 'MA',
+         'country': 'US',
+         'postal': '02451',
+         'phone_country_code': '1',
+         'phone_number': '555-555-5555',
+     },
+     'shipping': {
+         'first_name': 'First',
+         'last_name': 'Last',
+         'company': 'Company, Inc.',
+         'address': '1 Shipping Address St.',
+         'address_2': 'Unit 1',
+         'city': 'Waltham',
+         'region': 'MA',
+         'country': 'US',
+         'postal': '02451',
+         'phone_country_code': '1',
+         'phone_number': '555-555-5555',
+         'delivery_speed': 'same_day',
+     },
+     'credit_card': {
+         'bank_phone_country_code': '1',
+         'avs_result': 'Y',
+         'bank_phone_number': '555-555-5555',
+         'last_4_digits': '1234',
+         'cvv_result': 'N',
+         'bank_name': 'Test Bank',
+         'issuer_id_number': '411111'
+     },
+     'payment': {
+         'decline_code': 'invalid number',
+         'was_authorized': False,
+         'processor': 'stripe'
+     },
+     'shopping_cart': [{
+         'category': 'pets',
+         'quantity': 2,
+         'price': 20.43,
+         'item_id': 'lsh12'
+     }, {
+         'category': 'beauty',
+         'quantity': 1,
+         'price': 100.0,
+         'item_id': 'ms12'
+     }],
+     'order': {
+         'affiliate_id': 'af12',
+         'referrer_uri': 'http://www.amazon.com/',
+         'subaffiliate_id': 'saf42',
+         'discount_code': 'FIRST',
+         'currency': 'USD',
+         'amount': 323.21
+      },
+     'custom_inputs': {
+         'section': 'news',
+         'num_of_previous_purchases': 19,
+         'discount': 3.2,
+         'previous_user': True
+     }
+ }
+
+ # This example function uses a synchronous Client object. The object
+ # can be used across multiple requests.
+ def client(account_id, license_key):
+     with Client(account_id, license_key) as client:
+         print(client.score(request))
+         print(client.insights(request))
+         print(client.factors(request))
+
+ client(42, 'license_key')
+
+ # This example function uses an asynchronous AsyncClient object. The
+ # object can be used across multiple requests.
+ async def async_client(account_id, license_key):
+     with Client(account_id, license_key) as client:
+         print(client.score(request))
+         print(client.insights(request))
+         print(client.factors(request))
+
+ asyncio.run(async_client(42, 'license_key'))
+```
+
+```ruby
+# Prepare the request.
+assessment = Minfraud::Assessments.new(
+  device: {
+    ip_address:      '1.1.1.1',
+    accept_language: 'en-US,en;q=0.8',
+    session_age:     3600.5,
+    session_id:      'foo',
+    user_agent:      'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.89 Safari/537.36',
+  },
+  event: {
+    transaction_id: 'txn3134133',
+    shop_id:        's2123',
+    time:           '2012-04-12T23:20:50+00:00',
+    type:           :purchase,
+  },
+  account: {
+    user_id:      '3132',
+    username_md5: '4f9726678c438914fa04bdb8c1a24088',
+  },
+  email: {
+    address: 'test@maxmind.com',
+    domain:  'maxmind.com',
+  },
+  billing: {
+    first_name:         'First',
+    last_name:          'Last',
+    company:            'Company, Inc.',
+    address:            '1 Billing Address St.',
+    address_2:          'Unit 1',
+    city:               'Waltham',
+    region:             'MA',
+    country:            'US',
+    postal:             '02451',
+    phone_number:       '555-555-5555',
+    phone_country_code: '1',
+  },
+  shipping: {
+    first_name:         'First',
+    last_name:          'Last',
+    company:            'Company, Inc.',
+    address:            '1 Shipping Address St.',
+    address_2:          'Unit 1',
+    city:               'Waltham',
+    region:             'MA',
+    country:            'US',
+    postal:             '02451',
+    phone_number:       '555-555-5555',
+    phone_country_code: '1',
+    delivery_speed:     :same_day,
+  },
+  payment: {
+    processor:      :stripe,
+    was_authorized: false,
+    decline_code:   'invalid number',
+  },
+  credit_card: {
+    issuer_id_number:        '411111',
+    last_4_digits:           '1234',
+    bank_name:               'Test Bank',
+    bank_phone_country_code: '1',
+    bank_phone_number:       '555-555-5555',
+    token:                   'abcd',
+    avs_result:              'Y',
+    cvv_result:              'N',
+  },
+  order: {
+    amount:           323.21,
+    currency:         'USD',
+    discount_code:    'FIRST',
+    is_gift:          true,
+    has_gift_message: false,
+    affiliate_id:     'af12',
+    subaffiliate_id:  'saf42',
+    referrer_uri:     'http://www.amazon.com/',
+  },
+  shopping_cart: [
+    {
+      category: 'pets',
+      item_id:  'leash-0231',
+      quantity: 2,
+      price:    20.43,
+    },
+    {
+      category: 'beauty',
+      item_id:  'msc-1232',
+      quantity: 1,
+      price:    100.00,
+    },
+  ],
+  custom_inputs: {
+    section:            'news',
+    previous_purchases: 19,
+    discount:           3.2,
+    previous_user:      true,
+  },
+)
+
+# To get the Factors response model, use #factors.
+factors_model = assessment.factors.body
+
+factors_model.warnings.each { |w| puts w.warning }
+
+p factors_model.subscores.email_address
+p factors_model.risk_score
+
+# To get the Insights response model, use #insights.
+insights_model = assessment.insights.body
+
+insights_model.warnings.each { |w| puts w.warning }
+
+p insights_model.credit_card.issuer.name
+p insights_model.risk_score
+
+# To get the Score response model, use #score.
+score_model = assessment.score.body
+
+score_model.warnings.each { |w| puts w.warning }
+
+p score_model.risk_score
+```
+
+</CodeSet>
+
+## Links to MaxMind client APIs
+
+<ApiClients />

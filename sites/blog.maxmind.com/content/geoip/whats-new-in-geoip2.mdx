@@ -1,0 +1,294 @@
+---
+draft: false
+title: What's New in GeoIP2
+---
+
+MaxMind's GeoIP2 Precision services and GeoIP2 databases are an evolution of our
+original GeoIP web services and databases, which we now refer to as GeoIP
+Legacy. This document highlights the most important changes for developers.
+
+## Data Changes
+
+GeoIP2 includes a variety of new data, as well as making changes to how existing
+data is represented.
+
+### Localized Data
+
+Perhaps the biggest change is the inclusion of localized name data. The service
+supports Brazilian Portuguese (`pt-BR`), English (`en`), French (`fr`), German
+(`de`), Japanese (`ja`), Russian (`ru`), Simplified Chinese (`zh-CN`), and
+Spanish (`es`).
+
+Whenever possible, we provide a `geoname_id` for things like cities, countries,
+and country subdivisions. The [GeoNames](https://www.geonames.org) data set
+includes a huge amount of data on geographical features.
+
+### Country, Registered Country, and Represented Country
+
+We now distinguish between several types of country data. The `country` is the
+country where the IP address is located. The `registered_country` is the country
+in which the IP is registered. These two may differ in some cases.
+
+Both `country` and `registered_country` may include the `is_in_european_union`
+key to indicate that the country is in the European Union.
+
+Finally, we also include a `represented_country` key for some records. This is
+used when the IP address belongs to something like a military base. The
+`represented_country` is the country that the base represents. This can be
+useful for managing content licensing, among other uses.
+
+### ISO 3166-2, FIPS 10-4, and Country Subdivisions
+
+We now provide the ISO 3166-2 codes for country subdivisions when they are
+available. The GeoIP2 databases and services **do not** include FIPS 10-4 region
+codes. The GeoIP Legacy databases included ISO codes for US and Canada and FIPS
+codes for all other countries.
+
+We also provide multiple levels of country subdivision data. The subdivisions
+these provide correspond to the subdivisions which have been given ISO 3166-2
+codes. For example, in the United States, we only provide a single level of
+subdivision data, corresponding to US states. But for the United Kingdom, we may
+provide two levels. The first level is the country (England, Scotland, Wales) or
+province (Northern Ireland). The second level may be a county, a London borough,
+a unitary authority, council area, etc.
+
+We provide a
+[CSV file which maps FIPS 10-4 region codes to their corresponding ISO 3166-2 subdivision codes](/static/csv//fips-iso-map.csv).
+Note that codes for the US and Canada are not present since we included ISO
+codes for these countries in GeoIP Legacy. Also note that the CSV file may
+contain outdated ISO 3166-2 subdivision codes in addition to any up-to-date
+codes that may have replaced them. This file incorporates GeoNames geographical
+data, which is made available under the
+[Creative Commons Attribution 4.0 License](https://creativecommons.org/licenses/by/4.0/).
+
+### Custom Country Codes
+
+In the GeoIP Legacy databases, we included several country codes that don't
+represent countries. These were `AP` (Asia/Pacific), `EU` (Europe), `A1`
+(anonymous proxy), and `A2` (satellite provider).
+
+For IP addresses where we used to use `AP`, we now return a response with no
+country set at all. It will, however, contain a `continent` object, and that
+continent will be Asia. The `time_zone` key under the `location` object will be
+set to `Australia/Perth`. For `EU`, we return a similar document where the
+continent is Europe and the `time_zone` is `Europe/Vaduz`.
+
+For IP addresses where we used `A1` or `A2`, we now set the appropriate key in
+the `traits` object. The `A1` code corresponds to the deprecated
+`is_anonymous_proxy` key, while `A2` corresponds to the deprecated
+`is_satellite_provider` key. New integrations are encouraged to use
+`is_anonymous`, `is_anonymous_vpn`, `is_hosting_provider`, `is_public_proxy`,
+`is_satellite_provider`, `is_tor_exit_node`, and `is_residential_proxy`, all
+available in the GeoIP2 Precision Insights web service or the GeoIP2 Anonymous
+IP database.
+
+### User Type and Net Speed (web service only)
+
+In the GeoIP2 web services, we have effectively merged the user type and net
+speed data into the `user_type` key. The possible `user_type` values now include
+`dialup`. The `cellular` net speed was already included in the list of possible
+`user_type` values.
+
+We have also changed the format of the `user_type` values so that they are in
+all lower case, with words separated by underscores (\_).
+
+### Autonomous System Number
+
+In GeoIP Legacy, this was returned as a string like "AS1239 Linkem IR WiMax
+Network". This has been split into two keys, `autonomous_system_number`, an
+integer, and `autonomous_system_organization`, which is a string.
+
+### Area Code
+
+The GeoIP2 databases and services **do not** include area codes.
+
+### Location Information
+
+GeoIP2 Precision Insights includes the average income and population density for
+the area in which the IP address is used.
+
+### IP and Network
+
+All GeoIP2 databases and web services provide the network of the associated data
+record in the database.
+
+GeoIP2 Precision Insights also includes `user_count`, an estimate of the number
+of users using the IP address, and the `static_ip_score`, an indicator of how
+static or dynamic an IP allocation is.
+
+## JavaScript API Changes
+
+The MaxMind GeoIP2 JavaScript API provides a JavaScript interface to our
+[GeoIP2 Precision web service](/geoip/docs/web-services). The API calls the web
+service to retrieve the location information of the user as a
+[JavaScript object](/geoip/docs/web-services).
+
+The API is written using the
+[JavaScript module pattern](https://www.adequatelygood.com/JavaScript-Module-Pattern-In-Depth.html).
+Rather than injecting many global functions into the top-level execution scope,
+it returns a single object containing multiple functions you can call.
+
+## Web Service Changes
+
+Our GeoIP2 web services now follow REST principles.
+
+Unlike the GeoIP Legacy web service, the GeoIP2 Precision services use HTTP
+basic authentication over SSL rather than passing the license key as a query
+parameter.
+
+When an error occurs, we now return an appropriate HTTP error code instead of
+simply returning a 200 with an error in the document. We also return a JSON
+document with details about the error in most cases.
+
+Successful responses also return a JSON document. All documents, both successful
+and error, are in the form of a JSON object.
+
+## Database Changes
+
+Downloadable databases for GeoIP2 use our new
+[MaxMind DB](https://maxmind.github.io/MaxMind-DB/) format. Our
+[GeoIP2 downloadable databases page](/geoip/docs/databases) has information on
+how to use the new format.
+
+## Web Service Example
+
+This is an example of our GeoIP2 Precision: Insights web service's return
+document.
+
+```json
+{
+  "city": {
+    "confidence": 25,
+    "geoname_id": 54321,
+    "names": {
+      "de": "Los Angeles",
+      "en": "Los Angeles",
+      "es": "Los Ángeles",
+      "fr": "Los Angeles",
+      "ja": "ロサンゼルス市",
+      "pt-BR": "Los Angeles",
+      "ru": "Лос-Анджелес",
+      "zh-CN": "洛杉矶"
+    }
+  },
+  "continent": {
+    "code": "NA",
+    "geoname_id": 123456,
+    "names": {
+      "de": "Nordamerika",
+      "en": "North America",
+      "es": "América del Norte",
+      "fr": "Amérique du Nord",
+      "ja": "北アメリカ",
+      "pt-BR": "América do Norte",
+      "ru": "Северная Америка",
+      "zh-CN": "北美洲"
+    }
+  },
+  "country": {
+    "confidence": 75,
+    "geoname_id": 6252001,
+    "is_in_european_union": true,
+    "iso_code": "US",
+    "names": {
+      "de": "USA",
+      "en": "United States",
+      "es": "Estados Unidos",
+      "fr": "États-Unis",
+      "ja": "アメリカ合衆国",
+      "pt-BR": "Estados Unidos",
+      "ru": "США",
+      "zh-CN": "美国"
+    }
+  },
+  "location": {
+    "accuracy_radius": 20,
+    "average_income": 128321,
+    "latitude": 37.6293,
+    "longitude": -122.1163,
+    "metro_code": 807,
+    "population_density": 7122,
+    "time_zone": "America/Los_Angeles"
+  },
+  "postal": {
+    "code": "90001",
+    "confidence": 10
+  },
+  "registered_country": {
+    "geoname_id": 6252001,
+    "is_in_european_union": true,
+    "iso_code": "US",
+    "names": {
+      "de": "USA",
+      "en": "United States",
+      "es": "Estados Unidos",
+      "fr": "États-Unis",
+      "ja": "アメリカ合衆国",
+      "pt-BR": "Estados Unidos",
+      "ru": "США",
+      "zh-CN": "美国"
+    }
+  },
+  "represented_country": {
+    "geoname_id": 6252001,
+    "is_in_european_union": true,
+    "iso_code": "US",
+    "names": {
+      "de": "USA",
+      "en": "United States",
+      "es": "Estados Unidos",
+      "fr": "États-Unis",
+      "ja": "アメリカ合衆国",
+      "pt-BR": "Estados Unidos",
+      "ru": "США",
+      "zh-CN": "美国"
+    },
+    "type": "military"
+  },
+  "subdivisions": [
+    {
+      "confidence": 50,
+      "geoname_id": 5332921,
+      "iso_code": "CA",
+      "names": {
+        "de": "Kalifornien",
+        "en": "California",
+        "es": "California",
+        "fr": "Californie",
+        "ja": "カリフォルニア",
+        "ru": "Калифорния",
+        "zh-CN": "加州"
+      }
+    }
+  ],
+  "traits": {
+    "autonomous_system_number": 1239,
+    "autonomous_system_organization": "Linkem IR WiMax Network",
+    "domain": "example.com",
+    "is_anonymous": true,
+    "is_anonymous_proxy": true,
+    "is_anonymous_vpn": true,
+    "is_hosting_provider": true,
+    "is_public_proxy": true,
+    "is_satellite_provider": true,
+    "is_tor_exit_node": true,
+    "is_residential_proxy": true,
+    "isp": "Linkem spa",
+    "ip_address": "1.2.3.4",
+    "network": "1.2.3.0/24",
+    "organization": "Linkem IR WiMax Network",
+    "static_ip_score": 1.5,
+    "user_count": 1,
+    "user_type": "traveler"
+  },
+  "maxmind": {
+    "queries_remaining": 54321
+  }
+}
+```
+
+_Latitude and longitude are not precise and should not be used to identify a
+particular street address or household. To better represent a level of accuracy,
+please include the accuracy_radius when displaying latitude and longitude and
+make it clear that the coordinates refer to a larger geographical area instead
+of a precise location._

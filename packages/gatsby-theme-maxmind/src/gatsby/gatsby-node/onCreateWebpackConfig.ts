@@ -1,6 +1,9 @@
 import { exec } from 'child_process';
-import { CreateWebpackConfigArgs, GatsbyNode } from 'gatsby';
+import { CreateWebpackConfigArgs, GatsbyNode, PluginOptions } from 'gatsby';
 import reporter from 'gatsby-cli/lib/reporter';
+import path from 'path';
+
+import { IThemeOptions } from '../gatsby-config';
 
 /* eslint-disable @typescript-eslint/no-var-requires */
 const ESLintPlugin = require('eslint-webpack-plugin');
@@ -8,7 +11,9 @@ const StylelintPlugin = require('stylelint-webpack-plugin');
 
 export const onCreateWebpackConfig: GatsbyNode['onCreateWebpackConfig']= (
   props: CreateWebpackConfigArgs,
+  options: PluginOptions & IThemeOptions,
 ) => {
+
   const IS_DEVELOP = props.stage === 'develop';
   const IS_PRODUCTION = !IS_DEVELOP;
   const IS_SSR = props.stage.includes('html');
@@ -76,6 +81,12 @@ export const onCreateWebpackConfig: GatsbyNode['onCreateWebpackConfig']= (
   props.actions.setWebpackConfig({
     module: {
       rules: configRules,
+    },
+    resolve: {
+      alias: {
+        '@site': path.resolve(options.sitePath, 'src/'),
+        '@theme': path.resolve(__dirname, '../../../src/'),
+      },
     },
   });
 

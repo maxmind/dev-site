@@ -1,0 +1,105 @@
+import responseJson from '../_examples/geoip';
+
+<GeoIpSchema
+  json={responseJson.location}
+  jsonPointer="/location"
+  name="Response | Location"
+  services={[
+    'city',
+    'insights',
+  ]}
+>
+  A JSON object containing specific details about the location associated with
+  the IP address.
+
+  <Property
+    name="accuracy_radius"
+    type="integer"
+  >
+    The approximate accuracy radius, in kilometers, around the latitude and
+    longitude for the geographical entity (country, subdivision, city or postal
+    code) associated with the IP address. We have a 67% confidence that the
+    location of the end-user falls within the area defined by the accuracy
+    radius and the latitude and longitude coordinates.
+  </Property>
+
+  <Property
+    name="average_income"
+    type="integer"
+    services={[
+      'insights',
+    ]}
+  >
+    The average annual income associated with the IP address in US dollars. This
+    is only available for IP addresses in the US.
+  </Property>
+
+  <Property
+    name="latitude"
+    tags={{
+      'Format': 'Decimal',
+    }}
+  >
+    The approximate [WGS84](https://en.wikipedia.org/wiki/World_Geodetic_System)
+    latitude of the postal code, city, subdivision or country associated with
+    the IP address.
+
+    <Alert type="warning">
+      **IP Geolocation Usage**
+
+      The coordinates are not precise and should not be used to identify a
+      particular street address or household. To better represent a level of
+      accuracy, please include the accuracy_radius when displaying latitude and
+      longitude and make it clear that the coordinates refer to a larger
+      geographical area instead of a precise location.
+    </Alert>
+  </Property>
+
+  <Property
+    name="longitude"
+    tags={{
+      'Format': 'Decimal',
+    }}
+  >
+    The approximate [WGS84](https://en.wikipedia.org/wiki/World_Geodetic_System)
+    longitude of the postal code, city, subdivision or country associated with
+    the IP address.
+
+    <Alert type="warning">
+      **IP Geolocation Usage**
+
+      The coordinates are not precise and should not be used to identify a
+      particular street address or household. To better represent a level of
+      accuracy, please include the accuracy_radius when displaying latitude and
+      longitude and make it clear that the coordinates refer to a larger
+      geographical area instead of a precise location.
+    </Alert>
+  </Property>
+
+  <Property
+    name="metro_code"
+    type="integer"
+  >
+    The metro code associated with the IP address. These are only available for
+    IP addresses in the US.
+  </Property>
+
+  <Property
+    name="population_density"
+    type="integer"
+    services={[
+      'insights',
+    ]}
+  >
+    The estimated number of people per square kilometer. This is only available
+    for IP addresses in the US.
+  </Property>
+
+  <Property
+    name="time_zone"
+  >
+    The time zone associated with location, as specified by the
+    [IANA Time Zone Database](https://www.iana.org/time-zones), e.g.,
+    "America/New_York".
+  </Property>
+</GeoIpSchema>

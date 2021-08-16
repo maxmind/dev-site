@@ -1,0 +1,230 @@
+---
+draft: false
+title: minFraud Release Notes - 2020 Archive
+---
+
+<ReleaseNote date="2020-12-30" title="United Kingdom will no longer be flagged is_in_european_union">
+Effective January 5, 2021, the `is_in_european_union` flag will no longer be
+marked true for locations in the United Kingdom. This change will be reflected
+in the data in GeoLite2 databases and web services, GeoIP2 databases, GeoIP2
+Precision web services, and minFraud Insights and Factors services.
+</ReleaseNote>
+
+<ReleaseNote date="2020-10-20" title="New Output is_residential_proxy Released for GeoIP2 Precision Insights Web Service, minFraud Insights, and minFraud Factors">
+We have released an additional output for our web services. [GeoIP2 Precision
+Insights](https://www.maxmind.com/en/geoip2-precision-services), [minFraud
+Insights, and minFraud
+Factors](https://www.maxmind.com/en/solutions/minfraud-services) customers can
+now see whether an IP address is likely a [residential
+proxy](https://en.wikipedia.org/wiki/Proxy_server#Residential_proxy):
+
+- `/traits/is_residential_proxy` – This is true if the IP address is on a
+suspected anonymizing network and belongs to a residential ISP. Otherwise,
+the key is not included in the traits object.
+
+Our [client APIs](/minfraud/evaluate-a-transaction#links-to-maxmind-client-apis)
+have been updated to support these outputs so may need to refresh yours if you
+are not interfacing directly with our REST API.
+</ReleaseNote>
+
+<ReleaseNote date="2020-10-12" title="IP Address Optional in minFraud Score, Insights, and Factors Services">
+Effective October 12, 2020 we are making the IP address input optional for all
+minFraud Score, Insights, and Factors queries. If you use these minFraud
+services for transactions where the IP address is not relevant (e.g. a phone
+order placed through a call center), you no longer need to include an IP
+address with your request. Note that the more data you send (including IP
+addresses, when applicable), the better the scoring the minFraud service will
+provide. See the [relevant FAQ on our Support
+Center](https://support.maxmind.com/minfraud-faq/minfraud-services/can-i-use-minfraud-to-score-a-transaction-where-the-ip-address-is-not-available-or-not-relevant/)
+for more information.
+</ReleaseNote>
+
+<ReleaseNote date="2020-10-06" title="IP Address Optional in minFraud Score, Insights, and Factors Services">
+Effective October 12, 2020 we are making the IP address input optional for all
+minFraud Score, Insights, and Factors queries. If you use these minFraud
+services for transactions where the IP address is not relevant (e.g. a phone
+order placed through a call center), you no longer need to include an IP
+address with your request. Note that the more data you send (including IP
+addresses, when applicable), the better the scoring the minFraud service will
+provide. See [the relevant FAQ on our Support
+Center](https://support.maxmind.com/minfraud-faq/can-i-use-minfraud-to-score-a-transaction-where-the-ip-address-is-not-available-or-not-relevant/)
+for more information.
+</ReleaseNote>
+
+<ReleaseNote date="2020-09-14" title="Email Now Available as Custom Rules Parameter">
+We have released an additional input parameter for use with custom rules.
+Customers of [minFraud Score, minFraud Insights, and minFraud
+Factors](/minfraud) can now use email address to serve as the basis when
+creating a custom rule:
+
+- Email address: `/email/address/` – a valid email address or an MD5 of the
+lowercased email used in the transaction.
+
+For more information on implementing custom rules, see the [Custom Rules Guide
+on our Support Center](https://support.maxmind.com/custom-rules-guide/).
+</ReleaseNote>
+
+<ReleaseNote date="2020-09-10" title="Billing and Product/Service Permission Types for Standard Users">
+We have added a new permission category for the Standard User type. The
+Product/Service permission grants a Standard User access to product and service
+related functionality in the account portal without having access to user
+management and billing functionality. For more information, consult our
+[Multi-User Account Access
+Guide](https://support.maxmind.com/multi-user-account-access/).
+</ReleaseNote>
+
+<ReleaseNote date="2020-08-10" title="Update to minFraud service server locations">
+Effective August 17, 2020, we will no longer serve minFraud service queries
+from our London-area servers. These queries will automatically be re-routed to
+our US-East servers. You do not need to take any action as a result of this
+change. Customers who have previously had queries routed to these servers may
+see an increase of 100 – 150 ms in the response time for your queries.
+</ReleaseNote>
+
+<ReleaseNote date="2020-08-06" title="New minFraud Factors subscores">
+We have released three additional subscore outputs. Customers of [minFraud
+Factors](/minfraud) can now access the following subscores:
+
+- `/subscores/device` – Risk associated with the device.
+- `/subscores/email_local_part` – Risk associated with the part of the email
+before the @ symbol.
+- `/subscores/shipping_address` – Risk associated with the shipping address.
+
+Our [client APIs](/minfraud/evaluate-a-transaction#links-to-maxmind-client-apis)
+have been updated to support these outputs so may need to refresh yours if you
+are not interfacing directly with our rest API.
+</ReleaseNote>
+
+<ReleaseNote date="2020-06-24" title="Report transaction support in minFraud client APIs">
+The [minFraud Score, Insights, and Factors](/minfraud) client APIs now support
+sending transaction feedback to our [Report Transaction
+endpoint](/minfraud/report-a-transaction). This will allow you to more
+easily report fraud, suspected fraud, spam/abuse, and false positives to
+improve scoring. You can find more details on using this functionality in the
+[documentation for the specific client API you
+use](/minfraud/evaluate-a-transaction#links-to-maxmind-client-apis).
+</ReleaseNote>
+
+<ReleaseNote date="2020-06-22" title="FIDO2 Support for Two-Factor Authentication">
+We've updated our Two-Factor Authentication (2FA) implementation to the [FIDO2
+standard](https://fidoalliance.org/fido2/), which supports more web browsers
+and more types of security keys (e.g. supported biometrics keys). See our
+[Two-Factor Authentication (2FA) User Guide for more
+information](https://support.maxmind.com/two-factor-authentication-2fa-user-guide/).
+</ReleaseNote>
+
+<ReleaseNote date="2020-06-15" title="Data Changes to GeoIP Legacy and minFraud Legacy Web Services">
+We are planning to make a number of data changes to the minFraud Legacy
+Standard and Premium, and GeoIP Legacy City and Insights (formerly Omni) web
+services at the end of May 2022. Please see our [blog
+post](https://blog.maxmind.com/2020/06/15/data-changes-to-geoip-legacy-and-minfraud-legacy-web-services-in-may-2022/)
+for more information, and how to prepare.
+</ReleaseNote>
+
+<ReleaseNote date="2020-05-14" title="Anonymous IP flags as parameters for custom rules">
+Customers of [minFraud Insights and minFraud Factors](/minfraud) can now use
+the following [Anonymous IP outputs](/geoip/docs/web-services/responses/#schema--response--traits) as parameters to
+serve as the basis when creating a custom rule:
+
+- `/ip_address/traits/is_anonymous`
+- `/ip_address/traits/is_anonymous_vpn`
+- `/ip_address/traits/is_hosting_provider`
+- `/ip_address/traits/is_public_proxy`
+- `/ip_address/traits/is_tor_exit_node`
+</ReleaseNote>
+
+<ReleaseNote date="2020-05-08" title="Retirement of legacy minFraud SOAP API">
+On May 8, 2020, we discontinued our legacy minFraud SOAP API in order to focus
+our development on our newer current APIs. We initially [announced this
+retirement in April
+2019](https://blog.maxmind.com/2019/04/12/important-updates-about-tls-v1-0-v1-1-unencrypted-http-requests-and-the-legacy-minfraud-soap-api/).
+
+Other [client APIs for legacy minFraud services](/minfraud/minfraud-legacy)
+(not recommended) will continue to be supported. We recommend either
+integrating with the [legacy minFraud service
+directly](/minfraud/minfraud-legacy), or using our [current minFraud
+services](/minfraud).
+</ReleaseNote>
+
+<ReleaseNote date="2020-04-27" title="Billing fields and is disposable email as input parameters for custom rules">
+We have released additional input parameters for use with custom rules.
+Customers of [minFraud Score, minFraud Insights, and minFraud
+Factors](/minfraud) can now use the following inputs to serve as the basis when
+creating a custom rule:
+
+- `/billing/address` – The first line of the user's billing address.
+- `/billing/address_2` – The second line of the user's billing address.
+- `/email/is_disposable` – This field is true if MaxMind believes that the
+email address is from a disposable email provider. It is false if the address
+is not from a known disposable email provider.
+</ReleaseNote>
+
+<ReleaseNote date="2020-04-06" title="New /credit_card/is_business output">
+The `/credit_card/is_business` output is now available in minFraud Insights and
+Factors. This field is `true` if the issuer ID number is for a business card.
+</ReleaseNote>
+
+<ReleaseNote date="2020-03-24" title="New /email/domain/first_seen output">
+The `/email/domain/first_seen` output is now available in minFraud Insights and
+Factors. This output is a date string (e.g. 2020-03-24) indicating the date the
+email address domain was first seen by MaxMind. The earliest date that may be
+returned is January 1, 2019.
+</ReleaseNote>
+
+<ReleaseNote date="2020-03-02" title="minFraud Query Form">
+Users of the minFraud Score, Insights, and Factors services can now manually
+submit minFraud queries (with a subset of inputs) through the new [minFraud
+Query
+Form](https://www.maxmind.com/en/accounts/current/minfraud-interactive/query-form)
+\[login required\]. The results of the query are displayed in our [minFraud
+Interactive](https://support.maxmind.com/minfraud-interactive-manual-review-guide/)
+user interface.
+</ReleaseNote>
+
+<ReleaseNote date="2020-02-19" title="New /email/is_disposable output">
+The `/email/is_disposable` output is now available in minFraud Insights and
+Factors. The output is a boolean indicating whether the email address is from a
+disposable email provider.
+</ReleaseNote>
+
+<ReleaseNote date="2020-02-04" title="More outputs on transaction details screen">
+We've added the following outputs to the Transaction Details screen in
+[minFraud
+Interactive](https://support.maxmind.com/minfraud-interactive-manual-review-guide/)
+to assist you with manual review of minFraud transactions:
+
+- Subdivision name
+- Registered country name
+- Represented country name
+- Represented country type
+- Country, city, and subdivision confidence
+- ISP
+- Organization
+- Domain
+- Anonymous IP flags
+- User count
+- Static IP score
+
+You can find descriptions of these outputs [here](/geoip/docs/web-services/responses).
+</ReleaseNote>
+
+<ReleaseNote date="2020-01-31" title="Retirement of legacy IIN (BIN) API">
+On January 31, 2020, we discontinued our legacy IIN (BIN) API in order to focus
+development and maintenance efforts on our core services. The affected endpoint
+is `/app/bin_http`.
+
+We continue to support the IIN (BIN) [manual look-up form on our
+website](https://www.maxmind.com/en/accounts/current/minfraud/iin/lookup)
+\[login required\].
+</ReleaseNote>
+
+<ReleaseNote date="2020-01-29" title="Tag transactions from transaction details screen">
+minFraud service users can now tag transactions (e.g. chargeback, not fraud,
+spam/abuse, suspected fraud) directly from the Transaction Details screen for
+an individual transaction in [minFraud
+Interactive](https://support.maxmind.com/minfraud-interactive-manual-review-guide/).
+
+Tagging transactions allows us to detect 10-50% more fraud for you. You may
+also tag transactions outside of minFraud Interactive by using [this
+form](https://www.maxmind.com/en/accounts/current/minfraud/report-transactions).
+</ReleaseNote>

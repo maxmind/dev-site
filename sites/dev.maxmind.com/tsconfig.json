@@ -1,10 +1,23 @@
 {
   "compilerOptions": {
     "baseUrl": ".",
-    "esModuleInterop": true,
+    "lib": [
+      "dom",
+      "ES2019"
+    ],
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "paths": {
+      "@site/*": [
+        "./src/*"
+      ],
+      "@theme/*": [
+        "../../packages/gatsby-theme-maxmind/src/*"
+      ]
+    },
     "typeRoots": [
       "../../packages/gatsby-theme-maxmind/src/types",
-      "./node_modules/@types"
+      "../../node_modules/@types"
     ]
   },
   "exclude": [
@@ -12,6 +25,7 @@
   ],
   "extends": "../../tsconfig.json",
   "include": [
+    "./content/**/*",
     "./src/**/*"
   ]
 }

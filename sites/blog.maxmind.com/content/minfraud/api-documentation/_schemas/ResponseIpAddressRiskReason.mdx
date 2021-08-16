@@ -1,0 +1,87 @@
+import responseJson from '../_examples/response';
+
+<MinFraudSchema
+  json={responseJson.ip_address.risk_reasons[0]}
+  jsonPointer="/ip_address/risk_reasons/{n}"
+  name="Response | IP Address | Risk Reason"
+  services={[
+    'insights',
+    'factors',
+  ]}
+>
+  <Property
+    name="code"
+    tags={{
+      'Enum': null,
+      'Max Length': 255,
+    }}
+  >
+    This value is a machine-readable code identifying the reason. Although more
+    codes may be added in the future, the current codes are:
+
+    <table>
+      <thead>
+        <tr>
+          <th>Code</th>
+          <th>Explanation</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>`ANONYMOUS_IP`</td>
+          <td>
+            The IP address belongs to an anonymous network. See the object at
+            `/ip_address/traits` for more details.
+          </td>
+        </tr>
+        <tr>
+          <td>`BILLING_POSTAL_VELOCITY`</td>
+          <td>
+            Many different billing postal codes have been seen on this IP
+            address.
+          </td>
+        </tr>
+        <tr>
+          <td>`EMAIL_VELOCITY`</td>
+          <td>
+            Many different email addresses have been seen on this IP address.
+          </td>
+        </tr>
+        <tr>
+          <td>`HIGH_RISK_DEVICE`</td>
+          <td>
+            A high risk device was seen on this IP address.
+          </td>
+        </tr>
+        <tr>
+          <td>`HIGH_RISK_EMAIL`</td>
+          <td>
+            A high risk email address was seen on this IP address in your past
+            transactions.
+          </td>
+        </tr>
+        <tr>
+          <td>`ISSUER_ID_NUMBER_VELOCITY`</td>
+          <td>
+            Many different issuer ID numbers have been seen on this IP address.
+          </td>
+        </tr>
+        <tr>
+          <td>`MINFRAUD_NETWORK_ACTIVITY`</td>
+          <td>
+            Suspicious activity has been seen on this IP address across minFraud
+            customers.
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </Property>
+
+  <Property
+    name="reason"
+  >
+    This field provides an explanation of the reason, as seen in the table
+    above. The explanation text may change at any time and should not be matched
+    against.
+  </Property>
+</MinFraudSchema>

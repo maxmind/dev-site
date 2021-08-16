@@ -3,10 +3,10 @@ import { BaseQuery, IBaseQuery } from '../../baseQuery';
 import { ITableOfContents } from './TableOfContents';
 
 export type IPageContext = IBaseQuery & {
-  readonly customTableOfContents: ITableOfContents;
   readonly parent: {
     readonly modifiedTime: string;
   };
+  readonly tableOfContents: ITableOfContents;
   readonly timeToRead: number;
 }
 
@@ -19,7 +19,7 @@ const query: QueryFn<IPageContext> = (
     allMdx(filter: {fields: {layout: {eq: "pages"}}}) {
       nodes {
         ... BaseQuery
-        customTableOfContents(maxDepth: 4)
+        tableOfContents(maxDepth: 4)
         timeToRead
         parent {
           ... on File {

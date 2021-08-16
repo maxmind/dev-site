@@ -1,0 +1,245 @@
+import responseJson from '../_examples/geoip';
+
+<GeoIpSchema
+  json={responseJson.traits}
+  jsonPointer="/traits"
+  name="Response | Traits"
+>
+  A JSON object containing general traits associated with the IP address.
+
+  <Property
+    name="autonomous_system_number"
+    services={[
+      'city',
+      'insights',
+    ]}
+    type="integer"
+  >
+    The [autonomous system number](https://en.wikipedia.org/wiki/Autonomous_system_(Internet))
+    associated with the IP address.
+  </Property>
+
+  <Property
+    name="autonomous_system_organization"
+    services={[
+      'city',
+      'insights',
+    ]}
+  >
+    The organization associated with the registered
+    [autonomous system number](https://en.wikipedia.org/wiki/Autonomous_system_(Internet))
+    for the IP address.
+  </Property>
+
+  <Property
+    name="domain"
+    services={[
+      'city',
+      'insights',
+    ]}
+  >
+    The second level domain associated with the IP address. This will be
+    something like “example.com” or “example.co.uk”, not “foo.example.com”.
+
+    <Alert type="warning">
+      This field is not present in the GeoLite2 City web service.
+    </Alert>
+  </Property>
+
+  <Property
+    name="ip_address"
+    services="*"
+  >
+    The requested IP address.
+  </Property>
+
+  <Property
+    name="is_anonymous"
+    services={[
+      'insights',
+    ]}
+  >
+    This is `true` if the IP address belongs to any sort of anonymous network.
+    Otherwise, the key is not included in the `traits` object.
+  </Property>
+
+  <Property
+    isDeprecated
+    name="is_anonymous_proxy"
+    services="*"
+  >
+    Consider using one of our anonymizer service outputs, such as `is_anonymous`
+    and `is_anonymous_vpn`. These anonymizing service outputs are available in
+    the [GeoIP2 Anonymous IP database](https://www.maxmind.com/en/geoip2-anonymous-ip-database)
+    and the [GeoIP2 Precision Insights services](https://www.maxmind.com/en/geoip2-precision-insights).
+  </Property>
+
+  <Property
+    isDeprecated
+    name="is_anonymous_proxy"
+    services="*"
+  >
+    Consider using one of our anonymizer service outputs, such as `is_anonymous`
+    and `is_anonymous_vpn`. These anonymizing service outputs are available in
+    the [GeoIP2 Anonymous IP database](https://www.maxmind.com/en/geoip2-anonymous-ip-database)
+    and the [GeoIP2 Precision Insights services](https://www.maxmind.com/en/geoip2-precision-insights).
+  </Property>
+
+  <Property
+    name="is_anonymous_vpn"
+    services={[
+      'insights',
+    ]}
+  >
+    This is `true` if the IP address is registered to an anonymous VPN provider.
+    Otherwise, the key is not included in the `traits` object.
+
+    If a VPN provider does not register subnets under names associated with
+    them, we will likely only flag their IP ranges using the
+    `is_hosting_provider` flag.
+  </Property>
+
+  <Property
+    name="is_hosting_provider"
+    services={[
+      'insights',
+    ]}
+  >
+    This is `true` if the IP address belongs to a hosting or VPN provider
+    (see description of `is_anonymous_vpn` flag). Otherwise, the key is not
+    included in the `traits` object.
+  </Property>
+
+  <Property
+    name="is_public_proxy"
+    services={[
+      'insights',
+    ]}
+  >
+    This is `true` if the IP address belongs to a public proxy. Otherwise, the
+    key is not included in the `traits` object.
+  </Property>
+
+  <Property
+    name="is_residential_proxy"
+    services={[
+      'insights',
+    ]}
+  >
+    This is `true` if the IP address is on a suspected anonymizing network and
+    belongs to a residential ISP (does not include peer-to-peer proxy IPs).
+    Otherwise, the key is not included in the `traits` object.
+  </Property>
+
+  <Property
+    isDeprecated
+    name="is_satellite_provider"
+    services="*"
+  />
+
+  <Property
+    name="is_tor_exit_node"
+    services={[
+      'insights',
+    ]}
+  >
+    This is `true` if the IP address is a Tor exit node. Otherwise, the key is
+    not included in the `traits` object.
+  </Property>
+
+  <Property
+    name="isp"
+    services={[
+      'city',
+      'insights',
+    ]}
+  >
+    The name of the ISP associated with the IP address.
+
+    <Alert type="warning">
+      This field is not present in the GeoLite2 City web service.
+    </Alert>
+  </Property>
+
+  <Property
+    name="network"
+    services="*"
+  >
+    The network in [CIDR notation](https://en.wikipedia.org/wiki/Classless_Inter-Domain_Routing#CIDR_notation)
+    associated with the record. In particular, this is the largest network where
+    all of the fields besides `ip_address` have the same value.
+  </Property>
+
+  <Property
+    name="organization"
+    services={[
+      'city',
+      'insights',
+    ]}
+  >
+    The name of the organization associated with the IP address.
+
+    <Alert type="warning">
+      This field is not present in the GeoLite2 City web service.
+    </Alert>
+  </Property>
+
+  <Property
+    name="static_ip_score"
+    services={[
+      'insights',
+    ]}
+    tags={{
+      'Format': 'Decimal',
+      'Min': 0,
+      'Max': 99.99
+    }}
+  >
+    An indicator of how static or dynamic an IP address is. The value ranges
+    from 0 to 99.99 with higher values meaning a greater static association. For
+    example, many IP addresses with a `user_type` of `cellular` have a score
+    under one. Broadband IPs that don’t change very often typically have a score
+    above thirty.
+
+    This indicator can be useful for deciding whether an IP address represents
+    the same user over time.
+  </Property>
+
+  <Property
+    name="user_count"
+    services={[
+      'insights',
+    ]}
+    type="integer"
+  >
+    The estimated number of users sharing the IP/network during the past 24
+    hours. For IPv4, the count is for the individual IP. For IPv6, the count
+    is for the /64 network.
+  </Property>
+
+  <Property
+    name="user_type"
+    services={[
+      'insights',
+    ]}
+  >
+    The user type associated with the IP address. This will be one of the
+    following values:
+
+    * `business`
+    * `cafe`
+    * `cellular`
+    * `college`
+    * `content_delivery_network`
+    * `dialup`
+    * `government`
+    * `hosting`
+    * `library`
+    * `military`
+    * `residential`
+    * `router`
+    * `school`
+    * `search_engine_spider`
+    * `traveler`
+  </Property>
+</GeoIpSchema>

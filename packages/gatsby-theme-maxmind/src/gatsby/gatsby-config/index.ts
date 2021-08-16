@@ -1,5 +1,5 @@
 /* eslint-disable filenames/match-exported */
-import { GatsbyConfig } from 'gatsby';
+import { GatsbyConfig, PluginOptions } from 'gatsby';
 import remarkExternalLinks from 'remark-external-links';
 
 import sectionize from './remark/sectionize';
@@ -21,8 +21,10 @@ const GLOBALLY_IGNORED_SOURCE_FILES = [
   '**/_*',
 ];
 
-export interface IThemeOptions {
-  feeds: any[],
+export interface IThemeOptions extends PluginOptions {
+  defaultLayouts?: Record<string, string>;
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  feeds: any[];
   gtmTrackingId: string;
   icon: string;
   meta: {
@@ -76,6 +78,7 @@ const config = (options: IThemeOptions): GatsbyConfig => {
             home: require.resolve(`${THEME_ROOT}src/templates/Home`),
             overviews: require.resolve(`${THEME_ROOT}src/templates/Overview`),
             pages: require.resolve(`${THEME_ROOT}src/templates/Page`),
+            ...options.defaultLayouts,
           },
           extensions: [
             '.mdx',
@@ -89,13 +92,13 @@ const config = (options: IThemeOptions): GatsbyConfig => {
         resolve: 'gatsby-plugin-mdx',
       },
       'gatsby-plugin-react-helmet',
-      // {
-      //   options: {
-      //     name: 'images',
-      //     path: `${THEME_ROOT}src/images`,
-      //   },
-      //   resolve: 'gatsby-source-filesystem',
-      // },
+      {
+        options: {
+          name: 'images',
+          path: `${THEME_ROOT}src/images`,
+        },
+        resolve: 'gatsby-source-filesystem',
+      },
       'gatsby-plugin-typescript',
       'gatsby-plugin-ts-checker',
       'gatsby-plugin-image',

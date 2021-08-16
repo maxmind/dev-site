@@ -10,14 +10,16 @@
     "gatsby-theme-maxmind": "0.1.0",
     "gatsby-transformer-json": "^3.8.0",
     "github-slugger": "^1.3.0",
-    "hast-util-to-html": "^8.0.1",
-    "mdast-util-to-hast": "^11.2.0"
+    "hast-util-to-html": "^7.1.2",
+    "mdast-util-to-hast": "^10.1.1"
   },
   "license": "MIT",
   "name": "dev-maxmind-com",
   "scripts": {
-    "build": "gatsby clean && gatsby build",
+    "build": "gatsby clean && gatsby build && yarn sitemap-query-string",
     "develop": "gatsby clean && GATSBY_URL=http://localhost:8000 gatsby develop",
+    "lint:scripts": "eslint . --ext js,ts,tsx --ignore-pattern 'functions/**/*.js'",
+    "sitemap-query-string": "node ./bin/sitemap-query-string.js",
     "start": "yarn run develop",
     "test": "run-s \"test:* --silent\"",
     "test:unit": "jest --config .jestrc.js"

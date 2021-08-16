@@ -1,52 +1,28 @@
 const { existsSync, unlinkSync, writeFileSync } = require('fs');
 const { resolve } = require('path');
 
-const headers = require('./headers');
-const redirects = require('./redirects');
-const rewrites = require('./rewrites');
+const blogSiteConfig = require('../sites/blog.maxmind.com/firebase');
+const devSiteConfig = require('../sites/dev.maxmind.com/firebase');
 
-const worksWithOrWithoutTrailingSlash = redirect => {
-  if (!redirect.source || redirect.source.endsWith('{,/}')) {
-    return redirect;
-  }
-
-  return {
-    ...redirect,
-    source: `${redirect.source}{,/}`,
-  };
+const cspKeywords = {
+  NONE: '\'none\'',
+  REPORT_SAMPLE: '\'report-sample\'',
+  SCRIPT: '\'script\'',
+  SELF: '\'self\'',
+  UNSAFE_INLINE: '\'unsafe-inline\'',
 };
-
-const force302Redirect = redirect => ({
-  ...redirect,
-  type: 302,
-});
 
 const config = {
-  hosting: {
-    headers,
-    ignore: [
-      'content',
-      'firebase.js',
-      'firebase',
-      'gatsby-*.js',
-      'package.json',
-      'src',
-      'tsconfig.json',
-      'yarn.lock',
-      '**/.*',
-      '**/node_modules/**',
-    ],
-    public: 'public',
-    redirects: redirects
-      .map(worksWithOrWithoutTrailingSlash)
-      .map(force302Redirect),
-    rewrites,
-    trailingSlash: false,
+  functions: {
+    predeploy: [],
   },
+  hosting: [
+    blogSiteConfig(cspKeywords),
+    devSiteConfig(cspKeywords),
+  ],
 };
 
-const configFile = resolve(__dirname, '../firebase.json');
-console.log(configFile);
+const configFile = resolve('firebase.json');
 
 if (existsSync(configFile)) {
   unlinkSync(configFile);

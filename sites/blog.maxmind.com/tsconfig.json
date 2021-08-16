@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "lib": [
+      "dom",
+      "ES2019"
+    ],
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "paths": {
+      "@theme/*": [
+        "../../packages/gatsby-theme-maxmind/src/*"
+      ]
+    },
+    "typeRoots": [
+      "../../packages/gatsby-theme-maxmind/src/types",
+      "../../node_modules/@types",
+    ]
+  },
+  "extends": "../../tsconfig.json",
+  "include": [
+    "./content/**/*",
+    "./src/**/*"
+  ]
+}

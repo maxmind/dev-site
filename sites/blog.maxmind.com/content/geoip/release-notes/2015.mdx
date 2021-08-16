@@ -1,0 +1,84 @@
+---
+draft: false
+title: GeoIP2 Release Notes - 2015 Archive
+---
+
+<ReleaseNote date="2015-11-17" title="libmaxminddb 1.1.2">
+MaxMind has released libmaxminddb 1.1.2, which includes a number of important
+security fixes. Among these fixes is improved validation of the database
+metadata. Unfortunately, MaxMind GeoIP2 and GeoLite2 databases created earlier
+than January 28, 2014, had an invalid data type for the `record_size` in the
+metadata. Previously these databases worked on little endian machines with
+libmaxminddb but did not work on big endian machines. Due to increased safety
+checks when reading the file, these databases will no longer work on any
+platform. If you are using one of these databases, we recommend that you
+upgrade to the latest GeoLite2 or GeoIP2 database.
+</ReleaseNote>
+
+<ReleaseNote date="2015-08-10" title="GeoIP ISP update">
+We are updating the GeoIP ISP and Organization databases today to return AT&T
+Internet Services instead of BellSouth.net, due to a merger with AT&T. We are
+renaming Bouygues Telecom Division Mobile to Bouygues Mobile. There is also a
+bug fix to return Frontier Communications instead of AT&T Wireless for Frontier
+customers in Connecticut.
+</ReleaseNote>
+
+<ReleaseNote date="2015-07-13" title="is_anonymous_proxy and is_satellite_provider Deprecation in GeoIP2">
+`is_anonymous_proxy` and `is_satellite_provider` are now deprecated in GeoIP2.
+
+Use the [GeoIP2 Anonymous IP
+Database](https://www.maxmind.com/en/geoip2-anonymous-ip-database) to identify
+anonymous IPs and refer to the [IP Risk
+Score](https://www.maxmind.com/en/explanation-of-minfraud-riskscore) to assess
+whether an IP address is high risk.
+
+Due to the increased coverage by mobile carriers, very few satellite providers
+now serve multiple countries. As a result, the `is_satellite_provider` output
+does not provide sufficiently relevant data for us to maintain it.
+</ReleaseNote>
+
+<ReleaseNote date="2015-06-29" title="Average Income and Population Density">
+GeoIP2 Precision Insights service now offers `average_income` and
+`population_density` fields within the `location` response. `average_income`
+represents the weighted average income in US dollars per person for the zip
+code(s) associated with the IP address. `population_density` represents the
+weighted population per square kilometer for the zip code(s) associated with
+the IP address. Note that these fields are returned for IP addresses located in
+the US only. These new fields are documented in the [GeoIP2 Precision Web
+Services API
+documentation.](/geoip/docs/web-services)
+</ReleaseNote>
+
+<ReleaseNote date="2015-06-11" title="GeoIP2 CSVs for Anonymous IP, ISP, Domain and Connection Type">
+We've released the GeoIP2 Anonymous IP, ISP, Domain and Connection Type
+databases in CSV format. All GeoIP2 databases are now available in this format.
+</ReleaseNote>
+
+<ReleaseNote date="2015-05-11" title="Improvements to GeoIP2 Precision City and Insights">
+We've enhanced the GeoIP2 Precision City and GeoIP2 Precision Insights services
+to identify the organization associated with a business IP address in 10% more
+instances.
+</ReleaseNote>
+
+<ReleaseNote date="2015-01-27" title="GeoIP Accuracy in Crimea">
+We are working on improving the accuracy in Crimea.
+
+Approximately 60% of website visitors who are from Crimea are currently located
+by GeoIP as being in Crimea. We plan to increase this to 75% in the next couple
+of months.
+
+Approximately 95% of the visitors who are located in Crimea by GeoIP are
+actually in Crimea.
+
+We currently locate Crimea in Ukraine, as we use GeoNames data and they locate
+Crimea in Ukraine. If GeoNames locates Crimea in Russia in the future, we will
+follow their change and post an announcement here as well as on
+https://twitter.com/maxmind
+
+In legacy GeoIP, we return a FIPS region code of 11 or 20. In GeoIP2, we return
+a iso code of 40 or 43 in the subdivision object.
+
+Due to the nature of geolocation technology and other factors beyond our
+control, we cannot guarantee any specific future accuracy level. Further,
+accuracy figures are subject to change as IP networks are reallocated.
+</ReleaseNote>

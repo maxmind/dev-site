@@ -1,0 +1,88 @@
+---
+draft: false
+title: GeoIP2 Release Notes - 2018 Archive
+---
+
+<ReleaseNote date="2018-11-19" title="Initial release of GeoIP2-node">
+We have added Node.js as a MaxMind Supported GeoIP2 API
+([NPM](https://www.npmjs.com/package/@maxmind/geoip2-node),
+[GitHub](https://github.com/maxmind/GeoIP2-node)). It provides an API for the
+GeoIP2 databases, and will provide an API for the GeoIP2 Precision web
+services. This API also works with MaxMind's free GeoLite2 databases.
+</ReleaseNote>
+
+<ReleaseNote date="2018-09-21" title="Changes to US coordinate data">
+On Monday, October 1st, we will be changing a large amount of our U.S.
+coordinate (latitude & longitude) data\* to use
+[GeoNames](https://www.geonames.org/) coordinates for postal codes. This change
+will ensure greater consistency during our build processes. Around 95% of US
+coordinates will change with most moving about 1 mile. About 5 to 10% of US
+coordinates will move by more than 10 miles.
+
+_\* Coordinate data is approximate and is not precise. It should not be used to
+identify a particular street address or household as it refers to a larger
+geographical area instead of a precise location._
+</ReleaseNote>
+
+<ReleaseNote date="2018-08-14" title="Mapping IPs to districts of Seoul">
+Effective August 21st, we will be mapping IP addresses to [Districts (Gu) of
+Seoul](https://en.wikipedia.org/wiki/List_of_districts_of_Seoul) instead of
+Seoul. This will allow customers to have a more precise mapping, similar to how
+we map IPs to New York City and London boroughs, and Tokyo's special wards. We
+will continue to map some IPs to Seoul if we are unable to determine the
+specific district the IP is located in. We will also continue to map IPs
+located in the central Jung District to Seoul, similar to how we map IPs in
+Manhattan to New York and IPs in Chūō to Tokyo.
+</ReleaseNote>
+
+<ReleaseNote date="2018-07-17" title="Mapping more IPs to special wards of Tokyo">
+Effective July 24th, we will be mapping more IP addresses to [special wards of
+Tokyo](https://en.wikipedia.org/wiki/Special_wards_of_Tokyo) instead of Tokyo
+itself. This will allow customers to have a more precise mapping, similar to
+how we map IPs to New York City and London boroughs. We will continue to map
+some IPs to Tokyo if we are unable to determine the specific special ward the
+IP is located in.
+</ReleaseNote>
+
+<ReleaseNote date="2018-07-03" title="Renaming Time Warner Cable to Spectrum">
+Effective July 10th, we will update the ISP and Organization data to replace
+the Time Warner Cable name with the name Spectrum, as these two ISPs have
+merged and Time Warner Cable has been rebranded as Spectrum.
+</ReleaseNote>
+
+ <ReleaseNote date="2018-05-25" title="New European Union locations added to GeoIP2 databases and services">
+Effective May 29, 2018, we will be adding Åland Islands, Martinique, Mayotte,
+Guadeloupe, French Guiana, Réunion, and Saint Martin to the list of European
+Union locations identified by the GeoIP2 Country, GeoIP2 City, and GeoIP2
+Enterprise databases and GeoIP2 Precision services responses.
+</ReleaseNote>
+
+ <ReleaseNote date="2018-04-18" title="Discontinuation of the GeoLite Legacy databases">
+We have decided to discontinue the GeoLite Legacy databases on January 2,
+2019. As part of that process, updated versions of the GeoLite Legacy databases
+are now only available to [redistribution license
+customers](https://www.maxmind.com/en/geolite-commercial-redistribution-license),
+although anyone can continue to download the March 2018 GeoLite Legacy builds.
+Starting January 2, 2019, the last build will be removed from our website.
+GeoLite Legacy database users will need to switch to
+the [GeoLite2](/geoip/geoip2/geolite2/) or [commercial
+GeoIP databases](https://www.maxmind.com/en/geoip2-services-and-databases) and
+update their integrations by January 2, 2019. Correspondingly, we have decided
+against removing latitude and longitude coordinates from the GeoLite2
+databases. We are in the process of reviewing coordinates used in all of our
+GeoLite2 and GeoIP databases to ensure there is no risk of misuse.
+</ReleaseNote>
+
+ <ReleaseNote date="2018-02-13" title="EU Country outputs added to to GeoIP2 Country, City, Enterprise DBs and Precision service">
+We have added additional outputs to the GeoIP2 Country, GeoIP2 City, and GeoIP2
+Enterprise databases and to the GeoIP2 Precision Services. The outputs are:
+
+- EU Country: `/country/is_in_european_union` – Country of the location of the
+IP address in an EU member state
+- EU Registered Country: `/registered_country/is_in_european_union` – Country
+registered by the ISP or organization is an EU member state
+
+_GeoIP2 Country, GeoIP2 City, and GeoIP2 Enterprise CSV databases will have a
+new column added to the location files named “is_in_european_union”. This will
+be “1” if the country is in the European Union and “0” otherwise._
+</ReleaseNote>

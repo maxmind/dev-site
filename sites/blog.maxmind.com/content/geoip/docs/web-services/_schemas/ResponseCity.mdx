@@ -1,0 +1,44 @@
+import responseJson from '../_examples/geoip';
+
+<GeoIpSchema
+  json={responseJson.city}
+  jsonPointer="/city"
+  name="Response | City"
+  services={[
+    'city',
+    'insights',
+  ]}
+>
+  A JSON object containing details about the city associated with the IP
+  address.
+
+  <Property
+    name="confidence"
+    services={[
+      'insights',
+    ]}
+    tags={{
+      'Min': 0,
+      'Max': 100,
+    }}
+    type="integer"
+  >
+    A value from 0-100 representing our confidence that the city is correct.
+  </Property>
+
+  <Property
+    name="geoname_id"
+    type="integer"
+  >
+    A unique identifier for the city as specified by
+    [GeoNames](https://www.geonames.org/).
+  </Property>
+
+  <Property
+    name="names"
+  >
+    A map from locale codes, such as `en`, to the localized names for the
+    feature.
+  </Property>
+
+</GeoIpSchema>

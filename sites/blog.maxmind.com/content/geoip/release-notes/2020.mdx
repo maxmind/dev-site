@@ -1,0 +1,409 @@
+---
+draft: false
+title: GeoIP2 Release Notes - 2020 Archive
+---
+
+<ReleaseNote date="2020-12-30" title="United Kingdom will no longer be flagged is_in_european_union">
+Effective January 5, 2021, the `is_in_european_union` flag will no longer be
+marked true for locations in the United Kingdom. This change will be reflected
+in the data in GeoLite2 databases and web services, GeoIP2 databases, GeoIP2
+Precision web services, and minFraud Insights and Factors services.
+</ReleaseNote>
+
+<ReleaseNote date="2020-12-15" title="GeoLite2 web service released">
+We have released a free IP geolocation API, which allows users to query our
+GeoLite2 data. See our blog for [an overview of the GeoLite2 web
+service](https://blog.maxmind.com/2020/12/15/geolite2-web-service-free-ip-geolocation-api/).
+You can learn how to integrate the GeoLite2 web service in our [Getting Started
+with GeoLite2
+guide](https://support.maxmind.com/getting-started-with-geolite2/).
+</ReleaseNote>
+
+<ReleaseNote date="2020-12-14" title="Notifications for database update delays">
+We now provide direct notifications in the rare event of a database update
+delay (past 11:59 PM EST on Tuesdays) on our [service status
+page](https://status.maxmind.com/). You can subscribe to these updates by
+email, webhook, or RSS. To subscribe, click the button in the upper right of
+the page. After subscribing to updates, select 'Manage Existing Subscription'
+to manage which services you receive updates for. You can deselect services and
+servers which are not relevant to you, though you should ensure ‘New Database
+Update Releases’ is selected.
+</ReleaseNote>
+
+<ReleaseNote date="2020-12-10" title="GeoNames Monthly Diff Report December 2020">
+[GeoNames Monthly Diff Report (December 2020)](/static/csv/GeoNames-Monthly-Diff-Report-December-2020.csv)
+
+GeoIP2 and GeoLite2 databases incorporate [GeoNames geographical
+data](https://www.geonames.org/), which is made available under the [Creative
+Commons Attribution 4.0 License](https://creativecommons.org/licenses/by/4.0/).
+
+Monthly updates to GeoNames data are incorporated into our databases as we
+refresh them. Above you will find a CSV report of these changes for the month
+of December as they relate to the following fields:
+
+- `geoname_id`
+- `country_name`
+- `country_code`
+- `city_name`
+- `subdivision_1_iso_code`
+- `subdivision_2_iso_code`
+
+Note that the values for the 'old' and ‘new’ columns for a given field only
+differ for the field defined in the ‘diff_in’ column.
+
+\* We have updated the names of several countries to their short names (e.g.
+`Republic of Lithuania` to `Lithuania`). These changes will show up in this
+month's GeoIP2 builds.
+</ReleaseNote>
+
+<ReleaseNote date="2020-11-10" title="GeoNames Monthly Diff Report November 2020">
+[GeoNames Monthly Diff Report (November 2020)](/static/csv/GeoNames-Monthly-Diff-Report-November-2020.csv)
+
+GeoIP2 and GeoLite2 databases incorporate [GeoNames geographical
+data](https://www.geonames.org/), which is made available under the [Creative
+Commons Attribution 4.0 License](https://creativecommons.org/licenses/by/4.0/).
+
+Monthly updates to GeoNames data are incorporated into our databases as we
+refresh them. Above you will find a CSV report of these changes for the month
+of November as they relate to the following fields:
+
+- `geoname_id`
+- `country_name`
+- `country_code`
+- `city_name`
+- `subdivision_1_iso_code`
+- `subdivision_2_iso_code`
+
+Note that the values for the 'old' and ‘new’ columns for a given field only
+differ for the field defined in the ‘diff_in’ column.
+</ReleaseNote>
+
+<ReleaseNote date="2020-10-20" title="New Data Point is_residential_proxy Released for GeoIP2 Anonymous IP">
+We have released an additional data point for the [GeoIP2 Anonymous IP
+Database](https://www.maxmind.com/en/solutions/geoip2-enterprise-product-suite/anonymous-ip-database).
+Subscribers can now identify whether an IP address is likely a [residential
+proxy](https://en.wikipedia.org/wiki/Proxy_server#Residential_proxy):
+
+- is_residential \_proxy – 1 if the IP address is on a suspected anonymizing
+network and belongs to a residential ISP. Blank if not.
+
+**CSV file users:**
+A new data column will be added to the end of the following files:
+
+- GeoIP2-Anonymous-IP-Blocks-IPv4.csv
+- GeoIP2-Anonymous-IP-Blocks-IPv6.csv
+
+**Binary MMDB file users:**
+You will need to update your [MMDB
+reader](/geoip/geolocate-an-ip/databases/#official-maxmind-api-clients)
+to support look-ups containing the new output when it is released.
+</ReleaseNote>
+
+<ReleaseNote date="2020-10-20" title="New Output is_residential_proxy Released for GeoIP2 Precision Insights Web Service, minFraud Insights, and minFraud Factors">
+We have released an additional output for our web services. [GeoIP2 Precision
+Insights](https://www.maxmind.com/en/geoip2-precision-services), [minFraud
+Insights, and minFraud
+Factors](https://www.maxmind.com/en/solutions/minfraud-services) customers can
+now see whether an IP address is likely a [residential
+proxy](https://en.wikipedia.org/wiki/Proxy_server#Residential_proxy):
+
+- /traits/is_residential_proxy – This is true if the IP address is on a
+suspected anonymizing network and belongs to a residential ISP. Otherwise,
+the key is not included in the traits object.
+
+Our [client
+APIs](/minfraud/evaluate-a-transaction/#links-to-maxmind-client-apis) have been
+updated to support these outputs so may need to refresh yours if you are not
+interfacing directly with our REST API.
+</ReleaseNote>
+
+<ReleaseNote date="2020-10-19" title="Residential proxy flag deployment">
+The release of the new `is_residential_proxy` output for the [GeoIP2 Anonymous
+IP
+database](https://www.maxmind.com/en/solutions/geoip2-enterprise-product-suite/anonymous-ip-database),
+which was originally scheduled for today (October 19, 2020), will instead
+happen tomorrow (October 20, 2020). We expect the database update will go out
+around 12:30pm UTC.
+</ReleaseNote>
+
+
+<ReleaseNote date="2020-10-12" title="GeoNames Monthly Diff Report October 2020">
+[GeoNames Monthly Diff Report (October 2020)](/static/csv/GeoNames-Monthly-Diff-Report-October-2020.csv)
+
+GeoIP2 and GeoLite2 databases incorporate [GeoNames geographical
+data](https://www.geonames.org/), which is made available under the [Creative
+Commons Attribution 4.0 License](https://creativecommons.org/licenses/by/4.0/).
+
+Monthly updates to GeoNames data are incorporated into our databases as we
+refresh them. Above you will find a CSV report of these changes for the month
+of October as they relate to the following fields:
+
+- `geoname_id`
+- `country_name`
+- `country_code`
+- `city_name`
+- `subdivision_1_iso_code`
+- `subdivision_2_iso_code`
+
+Note that the values for the 'old' and ‘new’ columns for a given field only
+differ for the field defined in the ‘diff_in’ column.
+</ReleaseNote>
+
+<ReleaseNote date="2020-09-17" title="Flagging more networks as 'corporate'">
+Effective September 21, 2020 we will be flagging significantly more IP networks
+used by data centers and businesses as `Corporate` in the [GeoIP2 Connection
+Type database](https://www.maxmind.com/en/geoip2-connection-type-database). We
+expect the size of the MMDB file to increase by about 20% and the size of the
+CSV file to increase by about 210%.
+</ReleaseNote>
+
+<ReleaseNote date="2020-09-10" title="Billing and Product/Service Permission Types for Standard Users">
+We have added a new permission category for the Standard User type. The
+Product/Service permission grants a Standard User access to product and service
+related functionality in the account portal without having access to user
+management and billing functionality. For more information, consult our
+[Multi-User Account Access
+Guide](https://support.maxmind.com/multi-user-account-access/).
+</ReleaseNote>
+
+<ReleaseNote date="2020-09-10" title="GeoNames Monthly Diff Report September 2020">
+[GeoNames Monthly Diff Report (September 2020)](/static/csv/GeoNames-Monthly-Diff-Report-September-2020.csv)
+
+GeoIP2 and GeoLite2 databases incorporate [GeoNames geographical
+data](https://www.geonames.org/), which is made available under the [Creative
+Commons Attribution 4.0 License](https://creativecommons.org/licenses/by/4.0/).
+
+Monthly updates to GeoNames data are incorporated into our databases as we
+refresh them. Below you will find a CSV report of these changes for the month
+of September as they relate to the following fields:
+
+- `geoname_id`
+- `country_name`
+- `country_code`
+- `city_name`
+- `subdivision_1_iso_code`
+- `subdivision_2_iso_code`
+
+Note that the values for the 'old' and ‘new’ columns for a given field only
+differ for the field defined in the ‘diff_in’ column.
+</ReleaseNote>
+
+<ReleaseNote date="2020-09-01" title="Decommissioned GeoIP2 JavaScript API Domain">
+In order to provide the best cross-browser support, we have migrated the GeoIP2
+JavaScript Client API from geoip-js.maxmind.com to geoip-js.com. The
+geoip-js.maxmind.com URL will be decommissioned at 5:00pm EDT today. If you
+have not already migrated your integration to geoip-js.com, please update your
+version of the GeoIP2 JavaScript Client API to the [version currently available
+on our website](/geoip/geolocate-an-ip/client-side-javascript).
+If you have your own forked version, update the domain name used for the
+service request from **geoip-js.maxmind.com** to **geoip-js.com**.
+</ReleaseNote>
+
+<ReleaseNote date="2020-08-13" title="Incorrect Spanish IP mappings to El Salvador">
+GeoIP databases released the week of August 11, 2020 contain an issue where
+approximately 1% of Spanish IPs incorrectly map to El Salvador. We are working
+on a fix and plan to release corrected GeoIP databases tomorrow (August 14,
+2020).
+</ReleaseNote>
+
+<ReleaseNote date="2020-08-10" title="GeoNames Monthly Diff Report August 2020">
+[GeoNames Monthly Diff Report (August 2020)](/static/csv/GeoNames-Monthly-Diff-Report-August-2020.csv)
+
+GeoIP2 and GeoLite2 databases incorporate [GeoNames geographical
+data](https://www.geonames.org/), which is made available under the [Creative
+Commons Attribution 4.0 License](https://creativecommons.org/licenses/by/4.0/).
+
+Monthly updates to GeoNames data are incorporated into our databases as we
+refresh them. Below you will find a CSV report of these changes for the month
+of August as they relate to the following fields:
+
+- `geoname_id`
+- `country_name`
+- `country_code`
+- `city_name`
+- `subdivision_1_iso_code`
+- `subdivision_2_iso_code`
+
+Note that the values for the 'old' and ‘new’ columns for a given field only
+differ for the field defined in the ‘diff_in’ column.
+
+\*GeoNames is changing the time zone for some larger cities in Northern Vietnam
+to `Asia/Bangkok` instead of `Asia/Ho_Chi_Minh`, though the UTC offset remains
+the same. For more info see [this
+thread](https://groups.google.com/g/geonames/c/_xNFdHAy07o/m/cW8VWFjGAAAJ).
+These changes will show up in this month's GeoIP2 builds.
+</ReleaseNote>
+
+<ReleaseNote date="2020-07-09" title="GeoNames Monthly Diff Report July 2020">
+[GeoNames Monthly Diff Report (July 2020)](/static/csv/GeoNames-Monthly-Diff-Report-July-2020.csv)
+
+GeoIP2 and GeoLite2 databases incorporate [GeoNames geographical
+data](https://www.geonames.org/), which is made available under the [Creative
+Commons Attribution 4.0 License](https://creativecommons.org/licenses/by/4.0/).
+
+Monthly updates to GeoNames data are incorporated into our databases as we
+refresh them. Above you will find a CSV report of upcoming changes for the
+month of July as they relate to the following fields:
+
+- `geoname_id`
+- `country_name`
+- `country_code`
+- `city_name`
+- `subdivision_1_iso_code`
+- `subdivision_2_iso_code`
+
+Note that the values for the 'old' and ‘new’ columns for a given field only
+differ for the field defined in the ‘diff_in’ column.
+</ReleaseNote>
+
+<ReleaseNote date="2020-06-22" title="FIDO2 Support for Two-Factor Authentication">
+We've updated our Two-Factor Authentication (2FA) implementation to the [FIDO2
+standard](https://fidoalliance.org/fido2/), which supports more web browsers
+and more types of security keys (e.g. supported biometrics keys). See our
+[Two-Factor Authentication (2FA) User Guide for more
+information](https://support.maxmind.com/two-factor-authentication-2fa-user-guide/).
+</ReleaseNote>
+
+<ReleaseNote date="2020-06-12" title="GeoNames Monthly Diff Report June 2020">
+[GeoNames Monthly Diff Report (June 2020)](/static/csv/GeoNames-Monthly-Diff-Report-June-2020.csv)
+
+GeoIP2 and GeoLite2 databases incorporate [GeoNames geographical
+data](https://www.geonames.org/), which is made available under the [Creative
+Commons Attribution 4.0 License](https://creativecommons.org/licenses/by/4.0/).
+
+Monthly updates to GeoNames data are incorporated into our databases as we
+refresh them. Above you will find a CSV report of upcoming changes for the
+month of June as they relate to the following fields:
+
+- `geoname_id`
+- `country_name`
+- `country_code`
+- `city_name`
+- `subdivision_1_iso_code`
+- `subdivision_2_iso_code`
+
+Note that the values for the 'old' and ‘new’ columns for a given field only
+differ for the field defined in the ‘diff_in’ column.
+</ReleaseNote>
+
+<ReleaseNote date="2020-05-11" title="GeoNames Monthly Diff Report May 2020">
+[GeoNames Monthly Diff Report (May 2020)](/static/csv/GeoNames-Monthly-Diff-Report-May-2020.csv)
+
+GeoIP2 and GeoLite2 databases incorporate [GeoNames geographical
+data](https://www.geonames.org/), which is made available under the [Creative
+Commons Attribution 4.0 License](https://creativecommons.org/licenses/by/4.0/).
+
+Monthly updates to GeoNames data are incorporated into our databases as we
+refresh them. Above you will find a CSV report of upcoming changes for the
+month of May as they relate to the following fields:
+
+- `geoname_id`
+- `country_name`
+- `country_code`
+- `city_name`
+- `subdivision_1_iso_code`
+- `subdivision_2_iso_code`
+
+Note that the values for the 'old' and ‘new’ columns for a given field only
+differ for the field defined in the ‘diff_in’ column.
+</ReleaseNote>
+
+<ReleaseNote date="2020-05-05" title="Resolving to borough of Queens for Queens, NY, neighborhoods">
+Effective May 11, 2020, we will begin resolving IPs that currently return the
+neighborhood of Astoria (Queens, NY) to the corresponding borough of Queens in
+the city name field. We will then resolve the remaining Queens neighborhoods to
+Queens starting May 18, 2020.
+
+For more granular place identification (such as neighborhood), we recommend
+using the postal code where provided.
+</ReleaseNote>
+
+<ReleaseNote date="2020-05-01" title="GeoIP Legacy Downloadable Database Retirement">
+We are retiring our GeoIP Legacy database formats at the end of May 2022.
+Please see our [blog
+post](https://blog.maxmind.com/2020/06/01/retirement-of-geoip-legacy-downloadable-databases-in-may-2022/)
+for more information, including how to migrate to GeoIP2.
+</ReleaseNote>
+
+<ReleaseNote date="2020-04-27" title="Broadband filter for GeoIP accuracy statistics">
+We updated our [GeoIP2 accuracy statistics
+page](https://www.maxmind.com/en/geoip2-city-accuracy-comparison) to allow
+filtering by broadband IPs. This builds on top of existing filters that allow
+you to filter by IPv6 or cellular IPs.
+</ReleaseNote>
+
+<ReleaseNote date="2020-04-17" title="Docker image for GeoIP update program">
+We published a Docker image for the [GeoIP Update
+program](/geoip/updating-databases) here:
+[https://hub.docker.com/r/maxmindinc/geoipupdate](https://hub.docker.com/r/maxmindinc/geoipupdate).
+</ReleaseNote>
+
+<ReleaseNote date="2020-04-15" title="GeoNames Monthly Diff Report April 2020">
+GeoIP2 and GeoLite2 databases incorporate [GeoNames geographical
+data](https://www.geonames.org/), which is made available under the [Creative
+Commons Attribution 4.0 License](https://creativecommons.org/licenses/by/4.0/).
+
+Monthly updates to GeoNames data are incorporated into our databases as we
+refresh them. Below you will find a CSV report of these changes for the month
+of April as they relate to the following fields:
+
+- `geoname_id`
+- `country_name`
+- `country_code`
+- `city_name`
+- `subdivision_1_iso_code`
+- `subdivision_2_iso_code`
+
+Note that the values for the 'old' and ‘new’ columns for a given field only
+differ for the field defined in the ‘diff_in’ column.
+
+[GeoNames Monthly Diff Report (April 2020)](/static/csv/GeoNames-Monthly-Diff-Report-April-2020.csv)
+
+\*There are several subdivision code changes of note in South Africa due to
+[recent ISO updates](https://www.iso.org/obp/ui/#iso:code:3166:ZA). These
+changes will show up in this month's GeoIP2 builds.
+
+</ReleaseNote>
+
+<ReleaseNote date="2020-02-27" title="GeoIP2 Ruby API supports web service lookups">
+We have added support for web service lookups to the MaxMind Supported Ruby API
+([RubyGems](https://rubygems.org/gems/maxmind-geoip2),
+[GitHub](https://github.com/maxmind/GeoIP2-ruby)).
+</ReleaseNote>
+
+<ReleaseNote date="2020-02-18" title="mmdbinspect beta release">
+We've released [mmdbinspect](https://github.com/maxmind/mmdbinspect), in beta,
+which gives GeoIP2 users an easier way to interface with multiple
+[MMDB](https://maxmind.github.io/MaxMind-DB/) files. The [mmdbinspect
+tool](https://github.com/maxmind/mmdbinspect) is a command-line interface built
+with Go, which allows a user to look up one or more IPs from one or more MMDB
+databases and receive the output in a parsable JSON format.
+</ReleaseNote>
+
+<ReleaseNote date="2020-02-14" title="Privacy Exclusions API">
+We've released a [Privacy Exclusions
+API](/geoip/privacy-exclusions-api/).
+This API allows you to retrieve a list of IP addresses associated with valid
+“Do Not Sell” or opt-out of sale requests in accordance with the California
+Consumer Privacy Act (CCPA). You may view this list, along with more
+information, in your [account
+portal](https://www.maxmind.com/en/accounts/current/do-not-sell-requests).
+</ReleaseNote>
+
+<ReleaseNote date="2020-01-21" title="Changes to ASN Organization Data">
+Effective January 21, 2020, many records for the
+`autonomous_system_organization` data field in GeoIP2 databases and web
+services will change from full ISP names to abbreviated codes, due to changes
+in a third-party data feed that contributes to building this data. We recommend
+using the `isp` and `organization` data fields as they should be more stable
+over time and reflect the full ISP brand name.
+</ReleaseNote>
+
+<ReleaseNote date="2020-01-06" title="Flagging more networks used by businesses as 'corporate'">
+Effective January 20, 2020, we will be flagging more Cable/DSL networks used by
+businesses (i.e. IP networks from ISPs that serve mid-small sized businesses)
+as `Corporate` in the [GeoIP2 Connection Type
+database](https://www.maxmind.com/en/geoip2-connection-type-database).
+Previously these types of networks were more often flagged as `Cable/DSL`.
+</ReleaseNote>
+

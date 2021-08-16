@@ -1,0 +1,311 @@
+---
+draft: false
+title: GeoIP and GeoLite API Responses
+---
+
+import * as geoipResponseJson from './_examples/geoip';
+import * as Schemas from './_schemas';
+
+## Headers
+
+The `Content-Type` for a successful response varies based on the service as
+outlined below:
+
+| Service          | Content-Type                                                            |
+|------------------|-------------------------------------------------------------------------|
+| GeoIP2 Country   | `application/vnd.maxmind.com-country+json; charset=UTF-8; version=2.1`  |
+| GeoIP2 City      | `application/vnd.maxmind.com-city+json; charset=UTF-8; version=2.1`     |
+| GeoIP2 Insights  | `application/vnd.maxmind.com-insights+json; charset=UTF-8; version=2.1` |
+| GeoLite2 Country | `application/vnd.maxmind.com-country+json; charset=UTF-8; version=2.1`  |
+| GeoLite2 City    | `application/vnd.maxmind.com-city+json; charset=UTF-8; version=2.1`     |
+
+Errors may be returned with the `Content-Type` set to
+`application/vnd.maxmind.com-error+json; charset=UTF-8; version=2.0`. If this
+is the case, then the body of the response contains a JSON document with two
+keys, `code` and `error`. See the [Errors](#errors) section for more details.
+
+The response will always include a `Content-Length` header as well.
+
+## Bodies
+
+Each service returns data as a JSON document. The document that is returned
+always consists of an object (aka map or hash). Below are the schema definitions
+that describe each service's response body.
+
+### GeoIP2 Country Body Example
+
+The following is an example of a full response to a GeoIP2 Precision Country
+request.
+
+A GeoLite2 Country request follow the same structure, but the data returned
+will be less accurate. In addition, GeoLite Country requests will not return
+the `maxmind` object.
+
+<Example language="json">
+  {JSON.stringify(geoipResponseJson.country, null, 2)}
+</Example>
+
+### GeoIP2 City Body Example
+
+The following is an example of a full response to a GeoIP2 Precision City
+request.
+
+A GeoLite2 City request follow the same structure, but the data returned will
+be less accurate. In addition, GeoLite2 City requests will not return the
+`domain`, `isp`, or `organization` values in the `traits` object, and it will
+not return the `maxmind` object.
+
+<Example language="json">
+  {JSON.stringify(geoipResponseJson.city, null, 2)}
+</Example>
+
+### GeoIP2 Insights Body Example
+
+The following is an example of a full response to a GeoIP2 Precision City
+request.
+
+<Example language="json">
+  {JSON.stringify(geoipResponseJson.insights, null, 2)}
+</Example>
+
+## Errors
+
+When the server returns an error (`4xx` or `5xx`), the response may include a
+JSON document in the body. This document is a single object with the keys `code`
+and `error`. The `code` field is a static error code for machine use. The value
+of any given code will never change, though codes can be added or removed. The
+`error` field is a human-readable description of the error and may change at any
+time.
+
+Not all errors include a JSON body. An error in content negotiation will not
+include a body, nor will many `5xx` errors, which typically happen outside of
+our web service request handling code. You should check the `Content-Type` type
+of an error response before attempting to decode the body as JSON.
+
+In addition to the errors documented below, client code should also be prepared
+to handle any valid HTTP `4xx` or `5xx` status code.
+
+<table>
+  <thead>
+    <tr>
+      <th>Code</th>
+      <th>HTTP Status</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>`IP_ADDRESS_INVALID`</td>
+      <td>400 Bad Request</td>
+      <td>You have not supplied a valid IPv4 or IPv6 address.</td>
+    </tr>
+    <tr>
+      <td>`IP_ADDRESS_REQUIRED`</td>
+      <td>400 Bad Request</td>
+      <td>
+        You have not supplied an IP address, which is a required field.
+      </td>
+    </tr>
+    <tr>
+      <td>`IP_ADDRESS_RESERVED`</td>
+      <td>400 Bad Request</td>
+      <td>
+        You have supplied an IP address which belongs to a reserved or private
+        range.
+      </td>
+    </tr>
+    <tr>
+      <td>`AUTHORIZATION_INVALID`</td>
+      <td>401 Unauthorized</td>
+      <td>
+        You have supplied an invalid [MaxMind account ID and/or license key](https://www.maxmind.com/en/my_license_key)
+        in the [Authorization](/minfraud/api-documentation/requests#authorization-and-security)
+        header.
+      </td>
+    </tr>
+    <tr>
+      <td>`LICENSE_KEY_REQUIRED`</td>
+      <td>401 Unauthorized</td>
+      <td>
+        You have not supplied a [MaxMind license key](https://www.maxmind.com/en/my_license_key)
+        in the [Authorization](/minfraud/api-documentation/requests#authorization-and-security)
+        header.
+      </td>
+    </tr>
+    <tr>
+      <td>`ACCOUNT_ID_REQUIRED`</td>
+      <td>401 Unauthorized</td>
+      <td>
+        You have not supplied a [MaxMind account ID](https://www.maxmind.com/en/my_license_key)
+        in the [Authorization](/minfraud/api-documentation/requests#authorization-and-security)
+        header.
+      </td>
+    </tr>
+    <tr>
+      <td>`INSUFFICIENT_FUNDS`</td>
+      <td>402 Payment Required</td>
+      <td>
+        The license key you have provided does not have sufficient funds to use
+        this service. Please [purchase more service credits](https://www.maxmind.com/en/purchase-minfraud-services).
+      </td>
+    </tr>
+    <tr>
+      <td>`PERMISSION_REQUIRED`</td>
+      <td>402 Payment Required</td>
+      <td>
+        You do not have permission to use the service. Please contact
+        support@maxmind.com for more information.
+      </td>
+    </tr>
+    <tr>
+      <td>(none)</td>
+      <td>403 Forbidden</td>
+      <td>
+        This status is returned when the request body is larger than 20,000
+        bytes.
+      </td>
+    </tr>
+    <tr>
+      <td>`IP_ADDRESS_NOT_FOUND`</td>
+      <td>404 Not Found</td>
+      <td>The supplied IP address is not in the database.</td>
+    </tr>
+    <tr>
+      <td>(none)</td>
+      <td>415 Unsupported Media Type</td>
+      <td>
+        Your request included a `Content-Type` header that is not supported. For
+        `GET` requests, this means the web service cannot return content of that
+        type. For `PUT` and `POST` queries, this means the web service cannot
+        parse a request body of that type.
+      </td>
+    </tr>
+    <tr>
+      <td>(none)</td>
+      <td>503 Service Not Available</td>
+      <td>
+        There is a problem with the web service server. You can try this request
+        again later.
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+## Object Reference
+
+Each schema definition contains a description of an object, along with a list of
+properties that belong to the object. The following information is listed for
+each object property:
+
+  {/* <!-- lint disable list-item-bullet-indent --> */}
+  * name
+  * type (`array<type>`, `boolean`, `number`, `integer`, `object`, `string`)
+  * description
+  * example
+  * formatting
+  * constraints
+  * supported services (`Country`, `City`, `Insights`)
+  {/* <!-- lint enable list-item-bullet-indent --> */}
+
+Additionally, for `object` properties, a link is provided to view a schema
+definition that further describes that specific object.
+
+<Schemas.Response />
+<Schemas.ResponseCity />
+<Schemas.ResponseContinent />
+<Schemas.ResponseCountry />
+<Schemas.ResponseLocation />
+<Schemas.ResponsePostal />
+<Schemas.ResponseRegisteredCountry />
+<Schemas.ResponseRepresentedCountry />
+<Schemas.ResponseSubdivisions />
+<Schemas.ResponseSubdivision />
+<Schemas.ResponseTraits />
+<Schemas.ResponseMaxMind />
+
+## Miscellaneous Notes
+
+### Languages
+Many of the objects listed above include a `names` key. The value of that key is
+in turn an object which maps locale codes to a name in the appropriate language
+and script.
+
+Currently, this web service may return the following locale codes:
+
+<table>
+  <thead>
+    <tr>
+      <th>Code</th>
+      <th>Language</th>
+      <th>Notes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>de</td>
+      <td>German</td>
+      <td>{' '}</td>
+    </tr>
+    <tr>
+      <td>en</td>
+      <td>English</td>
+      <td>
+        English names may still include accented characters if that is the
+        accepted spelling in English. In other words, English does not mean
+        ASCII.
+      </td>
+    </tr>
+    <tr>
+      <td>es</td>
+      <td>Spanish</td>
+      <td>{' '}</td>
+    </tr>
+    <tr>
+      <td>fr</td>
+      <td>French</td>
+      <td>{' '}</td>
+    </tr>
+    <tr>
+      <td>ja</td>
+      <td>Japanese</td>
+      <td>{' '}</td>
+    </tr>
+    <tr>
+      <td>pt-BR</td>
+      <td>Brazilian Portuguese</td>
+      <td>{' '}</td>
+    </tr>
+    <tr>
+      <td>ru</td>
+      <td>Russian</td>
+      <td>{' '}</td>
+    </tr>
+    <tr>
+      <td>zh-CN</td>
+      <td>Chinese (Simplified)</td>
+      <td>{' '}</td>
+    </tr>
+  </tbody>
+</table>
+
+If an object has any name data, then `en` will be one of the keys in the `names`
+object. No other language is guaranteed. However, it is possible that we might
+not have any name data at all for a given object.
+
+### Returned Values as Database, Map, Dict, or Hash Keys
+
+<Alert type="warning">
+  We strongly discourage you from using a value from any `names` field as a key
+  in a database or map/dict/hash data structure.
+</Alert>
+
+These names may change between releases. Instead we recommend using one of the
+following:
+
+| Data object                                                | Recommended key            |
+| ---------------------------------------------------------- | -------------------------- |
+| `city`                                                     | `geoname_id`               |
+| `continent`                                                | `code` or `geoname_id`     |
+| `country`, `registered_country`, and `represented_country` | `iso_code` or `geoname_id` |
+| `postal`                                                   | `code`                     |
+| `subdivisions`                                             | `iso_code` or `geoname_id` |

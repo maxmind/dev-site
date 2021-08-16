@@ -26,7 +26,7 @@ const Page: React.FC<IPage> = (props) => {
   const {
     frontmatter,
     parent,
-    customTableOfContents: tableOfContents,
+    tableOfContents,
   } = props.pageContext;
   const location = useLocation();
   const { description, keywords, title } = frontmatter;

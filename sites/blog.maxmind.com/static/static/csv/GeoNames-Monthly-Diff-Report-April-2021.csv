@@ -1,0 +1,55 @@
+diff_in,old_geoname_id,new_geoname_id,old_city_name,new_city_name,old_country_name,new_country_name,old_country_code,new_country_code,old_subdivision_codes,new_subdivision_codes
+city_name,1796340,1796340,Shancheng,Taining,China,China,CN,CN,FJ,FJ
+city_name,1280328,1280328,Pingyuan,Yingjiang,China,China,CN,CN,YN,YN
+city_name,644994,644994,Alaveteli,Nedervetil,Finland,Finland,FI,FI,12,12
+city_name,2891531,2891531,Kernen im Remstal,Kernen,Germany,Germany,DE,DE,BW,BW
+city_name,1691444,1691444,Roxas,Roxas City,Philippines,Philippines,PH,PH,"06, CAP","06, CAP"
+city_name,709397,709397,Dvorichi,Dvorichchia,Ukraine,Ukraine,UA,UA,61,61
+city_name,703446,703446,Kyiv,Kyiv Oblast,Ukraine,Ukraine,UA,UA,32,32
+city_name,5870043,5870043,Munina,Ninilchik,United States,United States,US,US,AK,AK
+geoname_id,3464801,11959358,Descanso,Descanso,Brazil,Brazil,BR,BR,SC,SC
+geoname_id,3389134,3389141,Santo Antonio,Santo Antonio,Brazil,Brazil,BR,BR,RN,RN
+geoname_id,6321040,3449304,Sao Desiderio,Sao Desiderio,Brazil,Brazil,BR,BR,BA,BA
+geoname_id,3463029,12024287,Frade,Frade,Brazil,Brazil,BR,BR,RJ,RJ
+geoname_id,6318263,3389549,Santa Luzia,Santa Luzia,Brazil,Brazil,BR,BR,MA,MA
+geoname_id,3392509,3392661,Pedras,Pedras,Brazil,Brazil,BR,BR,CE,CE
+geoname_id,3460542,12108334,Itororo,Itororo,Brazil,Brazil,BR,BR,BA,BA
+geoname_id,6321889,6318793,Tres Marias,Tres Marias,Brazil,Brazil,BR,BR,MG,MG
+geoname_id,3389448,3389445,Santana,Santana,Brazil,Brazil,BR,BR,MA,MA
+geoname_id,8602146,6318838,Uruara,Uruara,Brazil,Brazil,BR,BR,PA,PA
+geoname_id,6317134,6323824,Feliz Natal,Feliz Natal,Brazil,Brazil,BR,BR,MT,MT
+geoname_id,3465294,6320824,Cotegipe,Cotegipe,Brazil,Brazil,BR,BR,BA,BA
+geoname_id,3460723,3475644,Itapeva,Itapeva,Brazil,Brazil,BR,BR,SP,SP
+geoname_id,3450089,3450090,Santa Maria,Santa Maria,Brazil,Brazil,BR,BR,PR,PR
+geoname_id,11969001,3447651,Sertaozinho,Sertaozinho,Brazil,Brazil,BR,BR,SP,SP
+geoname_id,6319712,3398381,Icatu,Icatu,Brazil,Brazil,BR,BR,MA,MA
+geoname_id,6319327,3663524,Manaquiri,Manaquiri,Brazil,Brazil,BR,BR,AM,AM
+geoname_id,3471181,3471180,Baguacu,Baguacu,Brazil,Brazil,BR,BR,SP,SP
+geoname_id,3456483,3456485,Muritiba,Muritiba,Brazil,Brazil,BR,BR,BA,BA
+geoname_id,3445947,3445946,Tunas,Tunas,Brazil,Brazil,BR,BR,RS,RS
+geoname_id,12199880,6316373,Alvorada,Alvorada,Brazil,Brazil,BR,BR,RS,RS
+geoname_id,6319338,3736812,Presidente Figueiredo,Presidente Figueiredo,Brazil,Brazil,BR,BR,AM,AM
+geoname_id,6319284,3663516,Mancio Lima,Mancio Lima,Brazil,Brazil,BR,BR,AC,AC
+geoname_id,6692998,5913313,Calabogie,Calabogie,Canada,Canada,CA,CA,ON,ON
+geoname_id,5976991,7871324,Hornby,Hornby,Canada,Canada,CA,CA,ON,ON
+geoname_id,2037382,8472041,Fuhai,Fuhai,China,China,CN,CN,HL,HL
+geoname_id,1914542,6926745,Fenjie,Fenjie,China,China,CN,CN,GD,GD
+geoname_id,1805356,10161431,Jintang,Jintang,China,China,CN,CN,SC,SC
+geoname_id,2037332,11586598,Fuyuan,Fuyuan,China,China,CN,CN,HL,HL
+geoname_id,1788890,11196613,Xinhe,Xinhe,China,China,CN,CN,ZJ,ZJ
+geoname_id,2617175,2617176,Lystrup,Lystrup,Denmark,Denmark,DK,DK,82,82
+geoname_id,1647575,6967395,Buol,Buol,Indonesia,Indonesia,ID,ID,ST,ST
+geoname_id,3178221,8959664,Comunanza,Comunanza,Italy,Italy,IT,IT,"57, AP","57, AP"
+geoname_id,8356549,8356548,Yopougon,Yopougon,Ivory Coast,Ivory Coast,CI,CI,AB,AB
+geoname_id,11137263,1855078,Noda,Noda,Japan,Japan,JP,JP,12,12
+geoname_id,11087179,11082110,Kawashimacho,Kawashimacho,Japan,Japan,JP,JP,14,14
+geoname_id,11612474,6822218,Motosu,Motosu,Japan,Japan,JP,JP,21,21
+geoname_id,2110683,2110681,Tsukuba,Tsukuba,Japan,Japan,JP,JP,8,8
+geoname_id,6271817,6275036,Mezher,Mezher,Lebanon,Lebanon,LB,LB,JL,JL
+geoname_id,1735297,1735339,Mukah,Mukah,Malaysia,Malaysia,MY,MY,13,13
+geoname_id,2207724,6232166,Devonport,Devonport,New Zealand,New Zealand,NZ,NZ,AUK,AUK
+geoname_id,4562487,4564071,,,Puerto Rico,Puerto Rico,PR,PR,,
+geoname_id,3059519,3059520,Klacno,Klacno,Slovakia,Slovakia,SK,SK,TC,TC
+geoname_id,2514411,2514410,Los Villares,Los Villares,Spain,Spain,ES,ES,"AN, J","AN, J"
+geoname_id,1605451,7510712,Thep Sathit,Thep Sathit,Thailand,Thailand,TH,TH,36,36
+geoname_id,3626417,3649077,Araguita,Araguita,Venezuela,Venezuela,VE,VE,M,M

@@ -1,0 +1,34 @@
+import requestJson from '../_examples/request';
+
+<MinFraudSchema
+  json={requestJson.account}
+  jsonPointer="/account"
+  name="Request | Account"
+  services="*"
+>
+  This object contains account information for the end-user on the site where
+  the event took place.
+
+  <Property
+    name="user_id"
+    tags={{
+      'Max Length': 255,
+    }}
+  >
+    A unique user ID associated with the end-user in your system. If your system
+    allows the login name for the account to be changed, this should not be the
+    login name for the account, but rather should be an internal ID that does
+    not change. This is not your MaxMind account ID. No specific format is
+    required.
+  </Property>
+
+  <Property
+    name="username_md5"
+    tags={{
+      'Max Length': 32,
+    }}
+  >
+    An MD5 hash as a hexadecimal string of the username or login name associated
+    with the account.
+  </Property>
+</MinFraudSchema>

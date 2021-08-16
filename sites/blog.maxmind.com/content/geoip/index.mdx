@@ -1,0 +1,93 @@
+---
+draft: false
+title: GeoIP and GeoLite
+subtitle: Databases and Web Services
+icon: GeoIPIcon
+---
+
+import {
+  FaArchive as LegacyIcon,
+  FaCloud as ApiReferenceIcon,
+  FaClipboardList as ReleaseNotesIcon,
+  FaCloud as WebServicesIcon,
+  FaDatabase as DatabasesIcon,
+  FaMapMarkerAlt as GeolocateAnIPIcon,
+  FaPencilAlt,
+  FaQuestionCircle as FaqIcon,
+  FaRocket,
+  FaSync as UpdateDatabasesIcon,
+} from 'react-icons/fa';
+
+import GeoIPOverview from './_geoip-overview.mdx';
+import GeoLiteOverview from './_geolite-overview.mdx';
+
+MaxMind’s GeoIP2 and GeoLite2 IP intelligence products and services are used to
+discover information about a specific IP address. We provide free and paid web
+services, subscription-based downloadable databases, and free downloadable
+databases.
+
+<LinkGroupContainer>
+  <LinkGroup heading="Guides">
+    <LinkGroupCard
+      description="Use MaxMind GeoIP databases, web services, or JavaScript client to geolocate an IP address."
+      heading="Geolocate an IP"
+      icon={GeolocateAnIPIcon}
+      to="/geoip/geolocate-an-ip"
+    />
+
+    <LinkGroupCard
+      description="Automatically keep your MaxMind GeoIP database up to date using the GeoIP Update program."
+      heading="Updating Databases"
+      icon={UpdateDatabasesIcon}
+      to="/geoip/updating-databases"
+    />
+  </LinkGroup>
+</LinkGroupContainer>
+
+## Product Documentation
+
+Find detailed API documentation for our binary databases, data specifications,
+and information about client APIs and our REST API for our web services.
+
+<GeoIPOverview />
+
+<GeoLiteOverview />
+
+<LinkGroupContainer>
+  <LinkGroup isCompact heading="Resources">
+    <LinkGroupCard
+        description="Detailed documentation of GeoIP2 and GeoLite2 web service usage."
+        heading="Web Service Documentation"
+        icon={ApiReferenceIcon}
+        to="/geoip/docs/web-services"
+    />
+
+    <LinkGroupCard
+        description="Detailed documentation of GeoIP2 and GeoLite2 database usage."
+        heading="Database Documentation"
+        icon={DatabasesIcon}
+        to="/geoip/docs/databases"
+    />
+
+    <LinkGroupCard
+      description="Review GeoIP2 release notes to understand changes to the GeoIP2 API."
+      heading="Release Notes"
+      icon={ReleaseNotesIcon}
+      to="/geoip/release-notes"
+    />
+
+    <LinkGroupCard
+      description="Consult our Support Center for answers to frequently asked questions about using GeoIP."
+      heading="Frequently Asked Questions"
+      icon={FaqIcon}
+      to="https://support.maxmind.com/geoip-faq/"
+    />
+
+    <LinkGroupCard
+      description="Get geolocation and other information associated with an IP address through easy-to-use APIs."
+      heading="Legacy Documentation"
+      icon={LegacyIcon}
+      to="/geoip/legacy"
+    />
+  </LinkGroup>
+</LinkGroupContainer>

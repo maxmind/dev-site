@@ -1,0 +1,12 @@
+import responseJson from '../_examples/response';
+
+<MinFraudSchema
+  json={responseJson.warnings}
+  jsonPointer="/warnings"
+  name="Response | Warnings"
+>
+  This array contains [warning objects](#schema--response--warning) detailing
+  issues with the request that was sent such as invalid or unknown inputs. It is
+  highly recommended that you check this array for issues when integrating the
+  web service.
+</MinFraudSchema>

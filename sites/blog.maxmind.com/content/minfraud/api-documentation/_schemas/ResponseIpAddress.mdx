@@ -1,0 +1,78 @@
+import responseJson from '../_examples/response';
+
+<MinFraudSchema
+  json={responseJson.ip_address}
+  jsonPointer="/ip_address"
+  name="Response | IP Address"
+>
+  For minFraud Score, this object only contains the `risk` for the IP address.
+  For minFraud Insights and Factors, the object is the
+  [GeoIP2 Insights response body](/geoip/docs/web-services/responses/#geoip2-insights-body-example)
+  with four modifications:
+
+  {/* <!--lint disable list-item-bullet-indent --> */}
+  1. `risk` has been added directly to the `ip_address` object
+  1. `local_time` has been added to the `location` sub-object
+  1. The `maxmind` object is not present. See below for descriptions.
+  1. minFraud Insights and Factors return the following anonymous IP outputs:
+      * `is_anonymous`
+      * `is_anonymous_vpn`
+      * `is_hosting_provider`
+      * `is_public_proxy`
+      * `is_residential_proxy`
+      * `is_tor_exit_node`
+  {/* <!--lint enable list-item-bullet-indent --> */}
+
+
+  See the [GeoIP2 Insights response body](/geoip/docs/web-services/responses/#geoip2-insights-body-example)
+  for more information.
+
+  <Property
+    name="risk"
+    services="*"
+    tags={{
+      'Format': 'Decimal',
+      'Min': 0.01,
+      'Max': 99,
+    }}
+  >
+    This field contains the risk associated with the IP address. The value
+    ranges from 0.01 to 99. A higher score indicates a higher risk.
+  </Property>
+
+  <Property
+    linkToSchemaName="Response | IP Address | Country"
+    name="country"
+    services={[
+      'insights',
+      'factors',
+    ]}
+  >
+    This object contains country-level geolocation data associated with the IP
+    address associated with the event.
+  </Property>
+
+  <Property
+    linkToSchemaName="Response | IP Address | Location"
+    name="location"
+    services={[
+      'insights',
+      'factors',
+    ]}
+  >
+    This object contains city-level geolocation data associated with the IP
+    address associated with the event.
+  </Property>
+
+  <Property
+    linkToSchemaName="Response | IP Address | Risk Reasons"
+    name="risk_reasons"
+    services={[
+      'insights',
+      'factors',
+    ]}
+  >
+    This array contains [IP Address Risk Reason objects](#schema--response--ip-address--risk-reason)
+    identifying the reasons why the IP address received the associated risk.
+  </Property>
+</MinFraudSchema>

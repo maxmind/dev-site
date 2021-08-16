@@ -1,0 +1,284 @@
+---
+draft: false
+title: GeoIP Legacy Databases
+---
+
+<Alert type="error">
+We are retiring our GeoIP Legacy database formats at the end of May 2022.
+Please see our [blog
+post](https://blog.maxmind.com/2020/06/01/retirement-of-geoip-legacy-downloadable-databases-in-may-2022/)
+for more information, including how to migrate to GeoIP2.
+</Alert>
+
+<Alert type="warning">
+New Database Format Available: This page is for our legacy databases. For our latest database format, please see our [GeoIP2 Downloadable Databases](/geoip/docs/databases).
+</Alert>
+
+GeoIP Legacy is available in a variety of downloadable databases. These
+databases use a custom binary format to maximize lookup speed. MaxMind also
+offers CSV versions of the same data. This is useful if you would like to import
+this data into a SQL RDBMS, for example.
+
+## Binary Databases
+
+The binary databases come in many flavors, each of which contains a specific
+dataset. These are all offered as separate products with their own subscription.
+
+At present, we offer the following databases:
+
+- Country – maps the IP address to a country
+- Region – maps the IP address to a specific state/province within a country
+- City – maps the IP address to a specific city within a country. In the US, we
+  are able to map many IP addresses to specific postal codes. This database also
+  contains approximate latitude, longitude, and time zone data.
+- Organization – maps the IP address to the organization which was assigned
+  the IP address’s netblock.
+- ISP – maps the IP address to the ISP which owns the IP, including wireless
+  carriers.
+- Netspeed – maps the IP address a particular network speed.
+- Domain – maps the IP address to a domain (not a hostname).
+
+_Latitude and longitude are not precise and should not be used to identify a
+particular street address or household. To better represent a level of accuracy,
+please include the accuracy_radius when displaying latitude and longitude and
+make it clear that the coordinates refer to a larger geographical area instead
+of a precise location._
+
+### Official API Clients
+
+We supply APIs for many major programming languages
+
+All of our APIs are available on [GitHub](https://github.com/maxmind/). We are
+happy to review patches submitted as
+[GitHub Pull Requests](https://help.github.com/articles/using-pull-requests).
+
+| Language/Platform  | Documentation                                                                       |
+| ------------------ | ----------------------------------------------------------------------------------- |
+| Apache (mod_geoip) | [Documentation](https://github.com/maxmind/geoip-api-mod_geoip2)                    |
+| C                  | [Documentation](https://github.com/maxmind/geoip-api-c/blob/master/README.md)       |
+| C#                 | [Documentation](https://github.com/maxmind/geoip-api-csharp2/blob/master/README.md) |
+| Java               | [Documentation](https://github.com/maxmind/geoip-api-java/blob/master/README.md)    |
+| Perl               | [Documentation](https://metacpan.org/release/Geo-IP)                                |
+| PHP                | [Documentation](https://github.com/maxmind/geoip-api-php/blob/master/README.md)     |
+| Python             | [Documentation](https://github.com/maxmind/geoip-api-python/blob/master/README.rst) |
+
+### Unofficial API Clients
+
+<Alert type="warning">
+Use at your own risk.
+
+MaxMind does _not_ offer support for these integrations. Please contact the
+integrator for assistance. </Alert>
+
+| Language or Framework | API Name                       | Documentation/Version Control                                      |
+| --------------------- | ------------------------------ | ------------------------------------------------------------------ |
+| Erlang                | egoip                          | [GitHub](https://github.com/mochi/egeoip)                          |
+| Go                    | GeoIP (C wrapper)              | [GitHub](https://github.com/abh/geoip)                             |
+| Nim                   | mmgeoip (C wrapper)            | [GitHub](https://github.com/FedericoCeratto/nim-mmgeoip)           |
+| Node.js               | GeoIP binding (C extension)    | [GitHub](https://github.com/kuno/GeoIP)                            |
+| Node.js               | node-maxmind (0.6 and earlier) | [GitHub](https://github.com/runk/node-maxmind/releases/tag/v0.6.0) |
+| PHP                   | Net_GeoIP                      | [PEAR](https://pear.php.net/package/Net_GeoIP/)                    |
+| PHP                   | GeoIP PECL                     | [PECL package](https://pecl.php.net/package/geoip)                 |
+| Python                | pygeoip                        | [GitHub](https://github.com/appliedsec/pygeoip)                    |
+| Ruby                  | GeoIP Bindings (C Extension)   | [GitHub](https://github.com/mtodd/geoip)                           |
+| Ruby                  | geoip                          | [GitHub](https://github.com/cjheath/geoip)                         |
+| Scala                 | Scala MaxMind Geo-IP           | [GitHub](https://github.com/snowplow/scala-maxmind-geoip)          |
+
+### Download Limits
+
+_MaxMind reserves the right to limit the number of downloads made within a
+limited period of time._
+
+## CSV Databases
+
+<Alert type="warning">
+New CSV Formats Available: This page is for our legacy CSV formats. For our
+latest CSV formats, please see our [GeoIP2 Databases](/geoip/docs/databases).
+</Alert>
+
+The primary use case for these CSV files is to import them into a SQL database
+or other data store.
+
+This documentation details the contents of every CSV database. Some of our CSV
+files are shipped as [zipped](<https://en.wikipedia.org/wiki/Zip_(file_format)>)
+archives. Others are [gzipped](https://en.wikipedia.org/wiki/Gzip).
+
+In some cases, we offer a zip archive with multiple CSV files. The primary file
+will contain IDs referring to rows in other files. Each of these files can be
+imported directly into different database tables, and the referencing IDs will
+function as foreign keys.
+
+In the documentation below, all types are specified in a form that is useful for
+defining a SQL database table, such as "varchar(40)" or "unsigned integer".
+
+### Integer IPv4 Representation
+
+Many of our databases include an integer representation of an IPv4 address. This
+allows you to easily compare these addresses as numbers to determine if a
+specific IP falls into a given range. This is especially useful with databases
+that don't have native network address types. If your database _does_ have such
+a type, like PostgreSQL, then we recommend using that type instead. If you are
+using MySQL (which does _not_ have such a type), we recommend using the
+[INET_ATON()](https://dev.mysql.com/doc/refman/5.6/en/miscellaneous-functions.html#function_inet-aton)
+and
+[INET_NTOA()](https://dev.mysql.com/doc/refman/5.6/en/miscellaneous-functions.html#function_inet-ntoa)
+functions to perform conversions.
+
+For cases where you cannot rely on your database to handle conversions, please
+refer to this pseudo-code for calculating the integer value of an IPv4 address:
+
+```bash
+address = '174.36.207.186'
+
+( o1, o2, o3, o4 ) = address.split('.')
+
+integer_ip =   ( 16777216 * o1 )
+             + (    65536 * o2 )
+             + (      256 * o3 )
+             +              o4
+```
+
+For the IP address `174.36.207.186` this produces the number 2,921,648,058.
+
+Here is pseudo-code for turning an integer back into an IPv4 address:
+
+```bash
+integer_ip = 2921648058
+
+o1 = int ( ipnum / 16777216 ) % 256;
+o2 = int ( ipnum / 65536    ) % 256;
+o3 = int ( ipnum / 256      ) % 256;
+o4 = int ( ipnum            ) % 256;
+
+address = ( o1, o2, o3, o4 ).join('.')
+```
+
+### SQL Queries
+
+You can now incorporate the integer representation of `174.36.207.186` (as
+calculated above) into an SQL query:
+
+```sql
+SELECT ip_country
+FROM geoip
+WHERE
+2921648058 BETWEEN begin_ip_num AND end_ip_num
+LIMIT 1
+```
+
+When using MySQL, you can have the database perform the address to number
+conversion for you:
+
+```sql
+SELECT ip_country
+FROM geoip
+WHERE
+INET_ATON('174.36.207.186') BETWEEN begin_ip_num AND end_ip_num
+LIMIT 1
+```
+
+### CSV Database Fields
+
+This is a list of available CSV downloads. Please see the section on
+[field order](#field-order-and-database-format) for more information on the
+order of available columns. All strings are returned in the
+[ISO-8859-1 encoding](https://en.wikipedia.org/wiki/ISO/IEC_8859-1). This
+encoding is also referred to as latin1.
+
+### GeoIP Legacy Country CSV Database Fields
+
+| Name               | Type                        | Description                                                                                                                            |
+| ------------------ | --------------------------- | -------------------------------------------------------------------------------------------------------------------------------------- |
+| Start IPv4 address | varchar(15) or unsigned int |                                                                                                                                        |
+| End IPv4 address   | varchar(15) or unsigned int |                                                                                                                                        |
+| Netmask            | unsigned integer            | In some variants of our CSV databases, we offer an additional netmask column, containing the netblock's netmask as a number from 1-31. |
+| Country code       | varchar(2)                  |                                                                                                                                        |
+| Country name       | varchar(50)                 | The country name associated with the IP address.                                                                                       |
+
+### GeoIP Region Edition CSV Database Fields
+
+| Name               | Type                        | Description |
+| ------------------ | --------------------------- | ----------- |
+| Start IPv4 address | varchar(15) or unsigned int |             |
+| End IPv4 address   | varchar(15) or unsigned int |             |
+| Country code       | varchar(2)                  |             |
+| Region code        | char(2)                     |             |
+
+### GeoIP Legacy City CSV Database Fields
+
+| Name               | Type                        | Description                                                                                                                                                                                                                                                                                                                                   |
+| ------------------ | --------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Start IPv4 address | varchar(15) or unsigned int |                                                                                                                                                                                                                                                                                                                                               |
+| End IPv4 address   | varchar(15) or unsigned int |                                                                                                                                                                                                                                                                                                                                               |
+| Country code       | varchar(2)                  |                                                                                                                                                                                                                                                                                                                                               |
+| Region code        | char(2)                     |                                                                                                                                                                                                                                                                                                                                               |
+| City name          | varchar(255)                | The city or town name associated with the IP address.                                                                                                                                                                                                                                                                                         |
+| Postal code        | varchar(8)                  | The postal code associated with the IP address. These are available for some IP addresses in Australia, Canada, France, Germany, Italy, Spain, Switzerland, United Kingdom, and the US. We return the first 3 characters for Canadian postal codes. We return the first 2-4 characters (outward code) for postal codes in the United Kingdom. |
+| Latitude\*         | decimal                     | The latitude associated with the IP address. The latitude and longitude are near the center of the most granular location value returned: postal code, city, region, or country.                                                                                                                                                              |
+| Longitude\*        | decimal                     | The longitude associated with the IP address.                                                                                                                                                                                                                                                                                                 |
+| Metro code         | unsigned int                | The metro code associated with the IP address. These are only available for IP addresses in the US.                                                                                                                                                                                                                                           |
+| Area code          | char(3)                     | The telephone area code associated with the IP address. These are only available for IP addresses in the US. This output is deprecated, and may not reflect newer area codes.                                                                                                                                                                 |
+
+\* _Latitude and longitude are not precise and should not be used to identify a
+particular street address or household._
+
+### GeoIP ISP Edition CSV Database Fields
+
+| Name               | Type                        | Description                                         |
+| ------------------ | --------------------------- | --------------------------------------------------- |
+| Start IPv4 address | varchar(15) or unsigned int |                                                     |
+| End IPv4 address   | varchar(15) or unsigned int |                                                     |
+| ISP name           | varchar(50)                 | The name of the ISP associated with the IP address. |
+
+### GeoIP Organization Edition CSV Database Fields
+
+| Name               | Type                        | Description                                                  |
+| ------------------ | --------------------------- | ------------------------------------------------------------ |
+| Start IPv4 address | varchar(15) or unsigned int |                                                              |
+| End IPv4 address   | varchar(15) or unsigned int |                                                              |
+| Organization name  | varchar(50)                 | The name of the organization associated with the IP address. |
+
+### GeoIP Netspeed Edition CSV Database Fields
+
+| Name               | Type                        | Description |
+| ------------------ | --------------------------- | ----------- |
+| Start IPv4 address | varchar(15) or unsigned int |             |
+| End IPv4 address   | varchar(15) or unsigned int |             |
+| Netspeed           | enum                        |             |
+
+### GeoIP Domain Edition CSV Database Fields
+
+| Name               | Type                        | Description                                                                                                                                  |
+| ------------------ | --------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
+| Start IPv4 address | varchar(15) or unsigned int |                                                                                                                                              |
+| End IPv4 address   | varchar(15) or unsigned int |                                                                                                                                              |
+| Domain             | varchar(255)                | The second level domain associated with the IP address. This will be something like "example.com" or "example.co.uk", not "foo.example.com". |
+
+### Field Order and Database Format
+
+In order to parse a CSV database file successfully, you need to know the field
+order for that database. We offer many different variations of our CSV
+databases. In some cases, the same data may be available in three or four
+different layouts.
+
+Every CSV database includes column headers. Many of the databases also have a
+copyright statement on their first line. You can determine the field order by
+looking at the first few lines of the CSV file.
+
+We also offer combined CSV format databases. For example, we offer a database
+that combines the City, ISP, and Organization databases, as well as one that
+combines the Country and ISP databases.
+
+The [available downloads](https://www.maxmind.com/en/download_files) vary based
+on the subscriptions you have paid for. To download a combined database, you
+must purchase all the individual databases separately.
+
+### Third Party Tools
+
+<Alert type="warning">
+**Warning!** MaxMind does *not* offer support for these tools and has not
+reviewed the code. Use at your own risk.
+</Alert>
+
+David Neal has written a
+[tool to import GeoIP Legacy CSV files into a MySQL database](https://github.com/davidsneal/maxmind-csv-import).

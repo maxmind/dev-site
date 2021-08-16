@@ -1,0 +1,116 @@
+---
+draft: false
+title: GeoIP2 Release Notes - 2014 Archive
+---
+
+<ReleaseNote date="2014-12-16" title="More IPs mapped to postal codes">
+As part of our ongoing work to return more data, MaxMind has increased the
+number of IP addresses that map to a postal code.
+
+An ISP may allocate an IP range over multiple postal codes. In such cases,
+MaxMind cannot accurately determine the exact postal code associated with an IP
+address in that range. Previously we only included a postal code if we were
+confident of the resolution. Now, we include more postal codes, returning a
+postal code within a 50km radius.
+
+We are doing this as a convenience to our customers who want to use the postal
+code instead of the city to link to other data.
+
+In addition, we've added Poland and Portugal to the list of countries for which
+we return postal codes. The full list of countries for which we provide postal
+codes now includes the following:
+
+Argentina, Australia, Austria, Belgium, Brazil, Bulgaria, Canada, Croatia,
+Czech Republic, Denmark, Finland, France, Germany, Hungary, Iceland, India,
+Italy, Malaysia, Mexico, Netherlands, New Zealand, Norway, Pakistan, Poland,
+Portugal, Russia, Slovakia, South Africa, Spain, Sweden, Switzerland, Thailand,
+United Kingdom, United States.
+</ReleaseNote>
+
+<ReleaseNote date="2014-11-25" title="Improvements to accuracy in Japan, South Korea and Venezuela and change in lat/lon returned">
+We have improved the coverage and accuracy for GeoIP City in Japan, South Korea
+and Venezuela. We expect to make further improvements to the accuracy in South
+Korea over the next few weeks.
+
+If we are unable to determine the city or region for IP addresses in Argentina,
+Austria, Bangladesh, Belgium, Bulgaria, Brazil, Canada, Chile, Colombia, Czech
+Republic, Denmark, Egypt, Spain, Finland, Greece, Hungary, Indonesia, Ireland,
+Iran, Netherlands, Norway, Peru, Philippines, Poland, Portugal, Russia, Sweden,
+Thailand, Turkey, Ukraine, we will return a latitude and longitude of the
+largest city in the country.
+</ReleaseNote>
+
+<ReleaseNote date="2014-11-19" title="Free JavaScript service discontinued">
+We have disabled the free JavaScript GeoIP service.
+
+If you were using the free JavaScript service and wish to continue service, you
+must purchase [GeoIP2 Precision
+Service](https://www.maxmind.com/en/geoip2-precision-services) queries and
+either upgrade to the [GeoIP2 JavaScript
+API](/geoip/geolocate-an-ip/client-side-javascript) or change the URL called to
+that provided by the GeoIP Legacy JavaScript service.
+
+Upgrading to the GeoIP2 JavaScript API comes with several benefits:
+
+- MaxMind’s most accurate IP geolocation data – GeoIP2 Precision data accurately
+geolocates 5% more IPs to postal codes and 3% more IPs to cities than GeoIP
+Legacy data
+- Location names in eight popular languages
+- Support for IPv6 addresses
+</ReleaseNote>
+
+<ReleaseNote date="2014-07-18" title="GeoIP2 JavaScript v2.1">
+MaxMind released version 2.1 of our JavaScript API. Changes:
+
+- This release updates the API to use version 2.1 of our GeoIP2 Precision web
+service.
+- The `omni()` method has been replaced with the `insights()` method.
+- The `cityISPOrg()` has been removed.
+- The `city()` method now returns ASN, ISP, and organization data.
+- As noted in the web service release notes, several fields that were
+incorrectly strings in version 2.0 of the web service have been changed to be
+numeric.
+
+To upgrade, please use the new JavaScript file specified in our [developer
+documentation](/geoip/geolocate-an-ip/client-side-javascript).
+
+Users of version 2.0 are not affected, but they are encouraged to update to the
+new version. Only serious functionality issues will be fixed in version 2.0.
+</ReleaseNote>
+
+<ReleaseNote date="2014-07-18" title="GeoIP2 Precision Web Service v2.1">
+MaxMind has released version 2.1 of the GeoIP2 Precision web service. Changes
+include:
+
+- The Omni endpoint was renamed Insights. The path for this endpoint has
+changed accordingly.
+- The City/ISP/Org endpoint was removed. The City endpoint now returns all of
+the data previously returned by City/ISP/Org.
+- In v2.0, `accuracy_radius`, `autonomous_system_number`, and all of the
+`confidence` values were incorrectly returned as strings. These are now
+returned as integers.
+
+To upgrade, please use the updated service URIs specified in our [developer
+documentation](/geoip/docs/web-services/requests).
+
+For the version 2.0 endpoints, the City endpoint will now include ISP/Org data.
+The other output for the 2.0 endpoints was unchanged.
+</ReleaseNote>
+
+<ReleaseNote date="2014-04-01" title="Type Change to GeoIP2 Metro Code Field">
+In previous GeoIP2 databases, the `metro_code` was incorrectly represented as a
+string. This has been corrected and now `metro_code` is internally represented
+as an `uint16`. This should not affect users of the official Java, .NET, Perl,
+or PHP GeoIP2 APIs. The Python API will now return an integer rather than a
+string for `metro_code`. Users of libmaxminddb or third-party APIs may be
+affected.
+</ReleaseNote>
+
+<ReleaseNote date="2014-01-21" title="Free use of the GeoIP2 JavaScript API has been discontinued">
+In order to focus our efforts on providing the best IP data to our customers,
+MaxMind has discontinued free use of the GeoIP2 JavaScript API. To continue
+using the API, you will need to purchase [GeoIP2 Web
+Service](https://www.maxmind.com/en/geoip2-precision-services) lookups.
+Individuals unable to purchase services are encouraged to use our free GeoLite2
+Country or City databases.
+</ReleaseNote>

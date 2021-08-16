@@ -1,0 +1,111 @@
+---
+draft: false
+title: GeoIP2 ISP Databases
+---
+
+import BinaryDatabases from './_binary-databases.mdx';
+import ConversionUtility from './_conversion-utility.mdx';
+import CsvDatabasesIntro from './_csv-databases-intro.mdx';
+import DataPrivacyWarning from './_data-privacy-warning.mdx';
+import FileFormat from './_file-format.mdx';
+import APIs from './_apis.mdx';
+
+
+Determine the Internet Service Provider, organization name, and autonomous
+system organization and number associated with an IP address.
+
+To learn more about the GeoIP2 ISP database, including terms and
+pricing, please
+[visit the GeoIP2 ISP Database page](https://www.maxmind.com/en/geoip2-isp-database).
+
+<DataPrivacyWarning />
+
+## Binary Database
+
+<BinaryDatabases />
+
+| Language or Framework | Documentation                                                                      | Example                                                              |
+| --------------------- | ---------------------------------------------------------------------------------- | -------------------------------------------------------------------- |
+| .NET (C#)             | [GitHub - Database Usage](https://github.com/maxmind/GeoIP2-dotnet#database-usage) | [ISP Example](https://github.com/maxmind/GeoIP2-dotnet#isp-database) |
+| Java                  | [GitHub - Database Usage](https://github.com/maxmind/GeoIP2-java#database-usage)   | [ISP Example](https://github.com/maxmind/GeoIP2-java#isp)            |
+| Node.js               | [GitHub - Database Usage](https://github.com/maxmind/GeoIP2-node#database-usage)   | [ISP Example](https://github.com/maxmind/GeoIP2-node#isp-example)    |
+| PHP                   | [GitHub - Database Reader](https://github.com/maxmind/GeoIP2-php#database-reader)  | [ISP Example](https://github.com/maxmind/GeoIP2-php#isp-example)     |
+| Python                | [GitHub - Database Usage](https://github.com/maxmind/GeoIP2-python#database-usage) | [ISP Example](https://github.com/maxmind/GeoIP2-python#isp-database) |
+| Ruby                  | [GitHub - Database Reader](https://github.com/maxmind/GeoIP2-ruby#database-reader) | [ISP Example](https://github.com/maxmind/GeoIP2-ruby#isp-example)    |
+
+## CSV Database
+
+<CsvDatabasesIntro />
+
+<ZipFileContent product-name="GeoIP2-ISP" />
+
+<FileFormat />
+
+### Blocks Files
+
+There are two CSV files for network blocks, one each for IPv4 and IPv6 blocks.
+These are named `GeoIP2-ISP-Blocks-IPv4.csv` and
+`GeoIP2-ISP-Blocks-IPv6.csv` respectively.
+
+<table>
+  <tbody>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+
+    <tr>
+        <td>network</td>
+        <td>IP network as a string</td>
+        <td>
+          This is the IPv4 or IPv6 network in CIDR format such as
+          “2.21.92.0/29” or “2001:4b0::/80”. We offer a utility to convert
+          this column to start/end IPs or start/end integers. See <a
+          href="#conversion-utility">the conversion utility section</a> for
+          details.
+        </td>
+    </tr>
+
+    <tr>
+        <td>isp</td>
+        <td>string</td>
+        <td>
+          The name of the ISP associated with the IP address.
+        </td>
+    </tr>
+
+    <tr>
+        <td>organization</td>
+        <td>string</td>
+        <td>
+          The name of the organization associated with the IP address.
+        </td>
+    </tr>
+
+    <tr>
+        <td>autonomous_system_number</td>
+        <td>string</td>
+        <td>
+          The <a href="https://en.wikipedia.org/wiki/Autonomous_system_(Internet)">autonomous system</a> number associated with the IP address.
+        </td>
+    </tr>
+
+    <tr>
+        <td>autonomous_system_organization</td>
+        <td>string</td>
+        <td>
+          The organization associated with the registered autonomous system
+          number for the IP address.
+        </td>
+    </tr>
+  </tbody>
+</table>
+
+### Conversion Utility
+
+<ConversionUtility />
+
+## APIs and Third-Party Integrations
+
+<APIs />

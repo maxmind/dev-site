@@ -1,0 +1,22 @@
+import responseJson from '../_examples/response';
+
+<MinFraudSchema
+  json={responseJson.ip_address.country}
+  jsonPointer="/ip_address/country"
+  name="Response | IP Address | Country"
+>
+  This object contains country-level geolocation data associated with the IP
+  address associated with the event
+
+  <Property
+    isDeprecated
+    name="is_high_risk"
+    services={[
+      'insights',
+      'factors',
+    ]}
+    type="boolean"
+  >
+    This field has been deprecated.
+  </Property>
+</MinFraudSchema>

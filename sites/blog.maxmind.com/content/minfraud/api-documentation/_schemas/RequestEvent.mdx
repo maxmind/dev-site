@@ -1,0 +1,66 @@
+import requestJson from '../_examples/request';
+
+<MinFraudSchema
+  json={requestJson.event}
+  jsonPointer="/event"
+  name="Request | Event"
+  services="*"
+>
+  This object contains general information related to the event being scored.
+
+  <Property
+    name="transaction_id"
+    tags={{
+      'Max Length': 255
+    }}
+  >
+    Your internal ID for the transaction. We can use this to locate a specific
+    transaction in our logs, and it will also show up in email alerts and
+    notifications from us to you. No specific format is required.
+  </Property>
+
+  <Property
+    name="shop_id"
+    tags={{
+      'Max Length': 255
+    }}
+  >
+    Your internal ID for the shop, affiliate, or merchant this order is coming
+    from. Required for minFraud users who are resellers, payment providers,
+    gateways and affiliate networks. No specific format is required.
+  </Property>
+
+  <Property
+    name="time"
+  >
+    The date and time the event occurred. The string must be in the
+    [RFC 3339](https://tools.ietf.org/html/rfc3339) date-time format. The time
+    must be within the past 10 years. If this field is not in the request, the
+    current time will be used.
+
+    <Alert type="warning">
+      **It is not recommended to use this input when scoring live transactions
+      as they occur.** However, it can be useful if you store transactions to be
+      submitted to the service for scoring later.
+    </Alert>
+  </Property>
+
+  <Property
+    name="type"
+    tags={{
+      'Enum': null,
+    }}
+  >
+    The type of event being scored. The valid types are:
+
+    * `account_creation`
+    * `account_login`
+    * `email_change`
+    * `password_reset`
+    * `payout_change`
+    * `purchase`
+    * `recurring_purchase`
+    * `referral`
+    * `survey`
+  </Property>
+</MinFraudSchema>

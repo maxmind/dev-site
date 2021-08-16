@@ -1,0 +1,89 @@
+---
+draft: false
+title: minFraud Release Notes
+---
+
+<Alert type="info">
+Subscribe to the [minFraud release notes RSS feed](/minfraud/release-notes/rss.xml).
+</Alert>
+
+<ReleaseNote date="2021-05-19" title="Updated warning codes in minFraud Score, Insights, and Factors">
+We updated warning codes for [minFraud Score, Insights and Factors](/minfraud)
+responses in the [/warnings/
+object](/minfraud/api-documentation/responses/#schema--response--warnings).
+
+* We added `BILLING_REGION_NOT_FOUND` and `SHIPPING_REGION_NOT_FOUND` codes
+* We updated the warning explanations for certain warning codes to include that
+distance calculations (outlined below) may be impacted when certain location
+information is missing or cannot be found
+    - `/shipping_address/distance_to_ip_location`
+    - `/shipping_address/distance_to_billing_address`
+    - `/billing_address/distance_to_ip_location`
+
+See our developer documentation for the [updated codes and
+warnings](/minfraud/api-documentation/responses/#schema--response--warnings).
+</ReleaseNote>
+
+<ReleaseNote date="2021-05-13" title="Updates to minFraud Alerts">
+We recently made some updates to minFraud alerts, which notifies minFraud users
+about previously low-risk transactions that are now high-risk due to updated
+information. Learn more [on our
+blog](https://blog.maxmind.com/2021/05/12/what-are-minfraud-alerts-and-what-do-i-do-with-them/).
+</ReleaseNote>
+
+<ReleaseNote date="2021-02-22" title="Normalize Emails Before Hashing for Improved minFraud Scoring">
+The client APIs for minFraud Score, Insights, and Factors now normalize emails
+prior to hashing them for improved risk scoring. Email normalization ensures
+that minor, inconsequential differences in the email input (i.e.,
+`jadoeisonline@yahoo.com` and `jadoeisonline-12345@yahoo.com`) do not result in
+minFraud treating these as different email addresses.
+
+Our [client
+APIs](/minfraud/evaluate-a-transaction#links-to-maxmind-client-apis) for
+minFraud Score, Insights, and Factors have been updated to support email
+normalization so you may need to refresh yours in order to get automatic email
+normalization. If you interface directly with our REST API or use minFraud
+Legacy, we recommend that you normalize email addresses prior to hashing.
+Please see our developer’s site for [guidance on how to normalize
+emails](/minfraud/normalizing-email-addresses-for-minfraud).
+</ReleaseNote>
+
+<ReleaseNote date="2021-02-03" title="New output IP risk reasons">
+The `ip_address/risk_reasons` output is now available. [minFraud
+Insights](https://www.maxmind.com/en/solutions/minfraud-services) and [minFraud
+Factors](https://www.maxmind.com/en/solutions/minfraud-services/minfraud-factors)
+customers can now see reason codes associated with the IP risk score for high
+risk IP addresses. When the IP risk score is high, the field may be populated
+with one or more of the following reason codes:
+
+* `ANONYMOUS_IP` – The IP address belongs to an anonymous network. See
+`/ip_address/traits` for more information.
+* `HIGH_RISK_DEVICE` – A high risk device was seen on this IP address in your
+past transactions.
+* `HIGH_RISK_EMAIL` – A high risk email address was seen on this IP address in
+your past transactions.
+* `BILLING_POSTAL_VELOCITY` – Many different billing postal codes have been
+seen on this IP address in your past transactions.
+* `EMAIL_VELOCITY` – Many different email addresses have been seen on this IP
+address in your past transactions.
+* `ISSUER_ID_NUMBER_VELOCITY` – Many different issuer ID numbers have been seen
+on this IP address in your past transactions.
+* `MINFRAUD_NETWORK_ACTIVITY` – Suspicious activity has been seen on this IP
+address across minFraud customers.
+
+If the IP risk score is low, the `risk_reasons` field will be blank. Our
+[client APIs](/minfraud/evaluate-a-transaction#links-to-maxmind-client-apis)
+have been updated to support this output so you may need to refresh yours in
+order to see the new output if you are not interfacing directly with our REST
+API.
+</ReleaseNote>
+
+<ReleaseNote date="2021-01-22" title="Change to Vodafone Germany ISP name">
+On Monday, January 25 we will be updating MaxMind products and services with
+ISP data to consolidate naming conventions for Vodafone Germany. We will now
+return either `Vodafone Germany Cable`, `Vodafone Germany DSL`, `Vodafone
+Germany Business`, or `Vodafone Germany`. Previous values were `Vodafone GmbH`,
+`Vodafone Germany`, and `Vodafone DSL`. We are updating these values to more
+accurately reflect the type of connection that the IP address is associated
+with.
+</ReleaseNote>

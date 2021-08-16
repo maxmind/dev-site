@@ -82,7 +82,9 @@ export default (feed: IFeed): any => ({
           custom_elements: [
             {
               'content:encoded': (releaseNote.children as any[]).map(
-                (child: any) => toHtml(toHast(child))
+                (child: any) => {
+                  return toHtml(toHast(child) as any);
+                }
               ).join(''),
             },
           ],

@@ -2,7 +2,6 @@
 import {
   CreateResolversArgs,
   GatsbyNode,
-  PluginOptions,
 } from 'gatsby';
 
 const genMDX = require('gatsby-plugin-mdx/utils/gen-mdx');
@@ -20,7 +19,6 @@ const minFraudImportPathMap = createImportPathMap(
 
 export const createResolvers: GatsbyNode['createResolvers'] = async(
   args: CreateResolversArgs,
-  options: PluginOptions,
 ): Promise<any> => {
   const {
     createResolvers,
@@ -42,7 +40,7 @@ export const createResolvers: GatsbyNode['createResolvers'] = async(
 
   createResolvers({
     Mdx: {
-      customTableOfContents: {
+      tableOfContents: {
         args: {
           maxDepth: {
             default: 6,
