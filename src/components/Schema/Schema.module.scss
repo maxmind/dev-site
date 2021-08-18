@@ -1,11 +1,14 @@
 @use '../../styles/variables';
 
 .container {
-  display: table;
   margin: var(--mm-spacing) 0 calc(var(--mm-spacing) + 1px);
   position: relative;
   scroll-margin-top: calc(var(--page-header-height) + var(--mm-spacing));
   width: 100%;
+
+  [class^='Pre-module--toolbar'] {
+    top: calc(var(--page-header-height) + 102px);
+  }
 }
 
 .heading {
