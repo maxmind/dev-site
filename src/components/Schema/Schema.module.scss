@@ -6,6 +6,10 @@
   position: relative;
   scroll-margin-top: calc(var(--page-header-height) + var(--mm-spacing));
   width: 100%;
+
+  [class^='Pre-module--toolbar'] {
+    top: calc(var(--page-header-height) + 102px);
+  }
 }
 
 .heading {
