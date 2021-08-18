@@ -5,6 +5,7 @@ import useIsClient from '../hooks/useIsClient';
 import { languages } from '../languages';
 import { Store } from '../store';
 import Pre from './Mdx/Pre';
+import Button from './Mdx/Pre/Button';
 import Wrapper from './Mdx/Pre/Wrapper';
 
 import * as styles from './CodeSet.module.scss';
@@ -87,44 +88,71 @@ const CodeSet: React.FC<ICodeSet> = (props) => {
     activeLanguage,
   ]);
 
-  const nav = (
-    <nav
-      className={styles.nav}
+  const tabs = React.Children.map(orderedChildren, child => {
+    if (React.isValidElement(child)) {
+      const className = extractLanguage(
+        child.props.children.props.className
+      );
+
+      const text = getHumanReadable(extractLanguage(className));
+
+      return (
+        <Button
+          isActive={className === activeLanguage}
+          onClick={(): void => {
+            dispatch({
+              payload: className,
+              type: 'change_language',
+            });
+          }}
+          title={`Focus on ${text} tab`}
+        >
+          {text}
+        </Button>
+      );
+    }
+  });
+
+  const handleSelect = (e: any): void => {
+    dispatch({
+      payload: e.target.value,
+      type: 'change_language',
+    });
+  };
+
+  const select = (
+    // eslint-disable-next-line jsx-a11y/no-onchange
+    <select
+      className={styles.select}
+      onBlur={handleSelect}
+      onChange={handleSelect}
+      value={activeLanguage}
     >
-      {
-        React.Children.map(orderedChildren, child => {
-          if (React.isValidElement(child)) {
-            const className = extractLanguage(
-              child.props.children.props.className
-            );
-            return (
-              <button
-                className={`
-                ${styles.button}
-                ${className === activeLanguage ? styles.active : ''}
-                `}
-                onClick={(): void => {
-                  dispatch({
-                    payload: className,
-                    type: 'change_language',
-                  });
-                }}
-                title={`View ${activeLanguage} code`}
-              >
-                {getHumanReadable(extractLanguage(className))}
-              </button>
-            );
-          }
-        })
-      }
-    </nav>
+      {React.Children.map(orderedChildren, child => {
+        if (React.isValidElement(child)) {
+          const className = extractLanguage(
+            child.props.children.props.className
+          );
+
+          const text = getHumanReadable(extractLanguage(className));
+
+          return (
+            <option
+              className={styles.option}
+              value={className}
+            >
+              {text}
+            </option>
+          );
+        }
+      })}
+    </select>
   );
 
   if ( !isClient ) return null;
 
   return (
     <Wrapper>
-      {nav}
       {React.Children.map(orderedChildren, child => {
         if (React.isValidElement(child)) {
           const { className } = child.props.children.props;
@@ -134,6 +162,8 @@ const CodeSet: React.FC<ICodeSet> = (props) => {
               hasWrapper={false}
               hidden={extractLanguage(className) !== activeLanguage}
               key={key}
+              select={select}
+              tabs={tabs}
             />
           );
         }

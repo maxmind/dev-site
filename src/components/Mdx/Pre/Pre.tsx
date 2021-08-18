@@ -1,13 +1,13 @@
 import classNames from 'classnames';
+import debounce from 'lodash.debounce';
 import PropTypes from 'prop-types';
 import React from 'react';
-import { FaCopy, FaParagraph } from 'react-icons/fa';
+import { FaCheck, FaCopy } from 'react-icons/fa';
 
 import useIsClient from '../../../hooks/useIsClient';
 import { ILanguage,languages } from '../../../languages';
 import Button from './Button';
 import Code from './Code';
-import Message, { State as MessageState } from './Message';
 import Wrapper from './Wrapper';
 
 import * as styles from './Pre.module.scss';
@@ -16,8 +16,9 @@ interface IPre {
   className?: string;
   hasWrapper?: boolean;
   highlightLines?: string;
-  nav?: React.ReactElement<React.HTMLProps<HTMLElement>>;
+  select?: React.ReactElement<React.HTMLProps<HTMLElement>>;
   showLineNumbers?: boolean;
+  tabs?: React.ReactElement<React.HTMLProps<HTMLElement>>;
 }
 
 const extractCli = (className: string): string => className && className
@@ -29,26 +30,13 @@ const Pre: React.FC<React.HTMLProps<HTMLDivElement> & IPre> = (props) => {
     className,
     hasWrapper,
     highlightLines,
+    select,
     showLineNumbers,
+    tabs,
     ...rest
   } = props;
 
   const { isClient, key } = useIsClient();
-
-  const [
-    message,
-    setMessage,
-  ] = React.useState('');
-
-  const [
-    messageState,
-    setMessageState,
-  ] = React.useState('hidden' as MessageState);
-
-  const [
-    showInvisibles,
-    setShowInvisibles,
-  ] = React.useState(true);
 
   let child = React.Children.toArray(children)[0] as React.ReactElement;
 
@@ -68,23 +56,81 @@ const Pre: React.FC<React.HTMLProps<HTMLDivElement> & IPre> = (props) => {
     )?.prismSettings,
   } as ILanguage;
 
-  const updateMessage = (msg: string): void => {
-    // Force re-render of message component to avoid caching of same message
-    setMessage('');
-    setMessage(msg);
-  };
+  /* ---------- */
+
+  const [
+    isCopying,
+    setIsCopying,
+  ] = React.useState(false);
 
   const handleCopyClick = (): void => {
+    setIsCopying(true);
     navigator.clipboard.writeText(child.props.children.trim())
-      .then(() => updateMessage('Copied to clipboard.'));
+      .then(() => {
+        setTimeout(() => {
+          setIsCopying(false);
+        }, 3000);
+      });
   };
 
-  const handleInvisiblesClick = (): void => {
-    setShowInvisibles(!showInvisibles);
-    updateMessage(
-      `Invisible characters are ${showInvisibles ? 'hidden' : 'visible'}.`
+  /* ---------- */
+
+  const [
+    cachedTabsWidth,
+    cacheTabsWidth,
+  ] = React.useState(0);
+
+  const [
+    languageUIType,
+    setLanguageUIType,
+  ] = React.useState<'select' | 'tabs'>('tabs');
+
+  const toolbarRef = React.useRef<HTMLDivElement>(null);
+  const tabsRef = React.useRef<HTMLSpanElement>(null);
+
+  const handleWindowResize = React.useCallback(() => {
+    const tabsWidth = cachedTabsWidth || tabsRef.current?.offsetWidth || 0;
+
+    if (!cachedTabsWidth && tabsRef.current?.offsetWidth) {
+      cacheTabsWidth(tabsRef.current.offsetWidth);
+    }
+
+    if (!toolbarRef.current?.offsetWidth) {
+      return;
+    }
+
+    const toolbarWidth = toolbarRef.current.offsetWidth;
+
+    if (toolbarWidth - tabsWidth < 200 ) {
+      setLanguageUIType('select');
+    } else {
+      setLanguageUIType('tabs');
+    }
+  }, [
+    cachedTabsWidth,
+  ]);
+
+  const debouncedHandleWindowResize = React.useMemo(
+    () => debounce(handleWindowResize, 300),
+    [
+      handleWindowResize,
+    ]
+  );
+
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  React.useLayoutEffect(() => {
+    if (tabsRef.current?.offsetWidth) {
+      cacheTabsWidth(tabsRef.current.offsetWidth);
+    }
+
+    window.addEventListener('resize', debouncedHandleWindowResize);
+    handleWindowResize();
+
+    return () => window.removeEventListener(
+      'resize',
+      debouncedHandleWindowResize
     );
-  };
+  });
 
   if ( !isClient ) return null;
 
@@ -94,41 +140,54 @@ const Pre: React.FC<React.HTMLProps<HTMLDivElement> & IPre> = (props) => {
     >
       <div
         className={styles.toolbar}
+        ref={toolbarRef}
       >
+        <div>
+          {languageUIType === 'tabs' ? (
+            <span
+              ref={tabsRef}
+            >
+              {tabs}
+            </span>
+          ) : select}
+        </div>
         <div
           className={styles['toolbar__buttons']}
         >
           {navigator.clipboard && (
             <Button
-              disabled={messageState !== 'hidden'}
-              icon={FaCopy}
+              className={classNames(
+                styles.copyBtn,
+                {
+                  [styles.copyBtn__isCopying]: isCopying,
+                }
+              )}
+              disabled={isCopying}
               onClick={handleCopyClick}
               title="Copy code to clipboard"
-            />
+            >
+              <span
+                className={styles.copyBtn__content}
+              >
+                <FaCopy />
+                {' '}
+                Copy
+              </span>
+              <span
+                className={styles.copyBtn__checkedContent}
+              >
+                <FaCheck />
+              </span>
+            </Button>
           )}
-
-          <Button
-            disabled={messageState !== 'hidden'}
-            icon={FaParagraph}
-            onClick={handleInvisiblesClick}
-            title="Toggle invisible characters"
-          />
         </div>
       </div>
       <div
         className={styles.content}
       >
-        <Message
-          onStateUpdate={(
-            state: MessageState
-          ): void => setMessageState(state)}
-        >
-          {message}
-        </Message>
         <Code
           highlightLines={highlightLines}
           language={language}
-          showInvisibles={showInvisibles}
           showLineNumbers={showLineNumbers}
         >
           {child}
@@ -152,17 +211,15 @@ const Pre: React.FC<React.HTMLProps<HTMLDivElement> & IPre> = (props) => {
   return codeExample;
 };
 
-Pre.defaultProps = {
-  hasWrapper: true,
-};
 
 Pre.propTypes = {
   children: PropTypes.node,
   className: PropTypes.string,
   hasWrapper: PropTypes.bool,
   highlightLines: PropTypes.string,
-  nav: PropTypes.any,
+  select: PropTypes.any,
   showLineNumbers: PropTypes.bool,
+  tabs: PropTypes.any,
 };
 
 export default Pre;
