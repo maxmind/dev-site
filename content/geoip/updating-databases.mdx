@@ -102,7 +102,7 @@ page](https://www.maxmind.com/en/accounts/current/geoip/downloads).
 1. In the “Download Links” column, click “Get Permalink(s)” for the desired
 database.
 2. Copy the permalink(s) provided in the modal window.
-3. Replace `YOUR_LICENSE_KEY` with [your license 
+3. Replace `YOUR_LICENSE_KEY` with [your license
 key](https://www.maxmind.com/en/accounts/current/license-key).
 4. If you are using `wget` or `curl` from a shell script, please be sure to
 quote the URL.
@@ -156,6 +156,23 @@ creating or sharing your own unofficial tools.
 
 ## Download limits
 
-*MaxMind reserves the right to [limit the number of 
+*MaxMind reserves the right to [limit the number of
 downloads](https://support.maxmind.com/geolite-faq/general/is-there-a-limit-to-how-often-i-can-download-a-database-from-my-maxmind-account/)
 made within a limited period of time.*
+
+## Significant changes in database size
+
+It is difficult for us to be able to provide the exact file size difference
+between GeoIP database updates. This is because [we now update some of our GeoIP
+databases twice weekly in order to more quickly incorporate data corrections and
+updates](/geoip/release-notes?lang=en#twice-weekly-updates-for-some-geoip2-databases).
+Sizable swings in file size are possible as we receive and consolidate new data.
+Large IPv6 range activations is one specific example when these swings can
+occur. We understand that the unpredictability may impact your work, and we
+apologize for the inconvenience.
+
+We plan to post in our [GeoIP release notes](/geoip/release-notes) when we
+forecast a sizable increase in file size, and if this may cause problems for you
+we recommend delaying your deployment of the next release until the updated file
+is available and the exact file size is known. We may be able to provide more
+detailed projections in file size changes in the future.
