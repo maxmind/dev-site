@@ -42,6 +42,12 @@ import responseJson from '../_examples/response';
           <td>`manual_review`</td>
           <td>{' '}</td>
         </tr>
+        <tr>
+          <td>`test`</td>
+          <td>
+            This value can be used to test custom rules.
+          </td>
+        </tr>
       </tbody>
     </table>
   </Property>
@@ -75,5 +81,14 @@ import responseJson from '../_examples/response';
         </tr>
       </tbody>
     </table>
+  </Property>
+
+  <Property
+    name="rule_label"
+  >
+    The custom rule that was triggered. If you do not have custom rules set up,
+    the triggered custom rule does not have a label, or no custom rule was
+    triggered, the key will not be included in the response.
+
   </Property>
 </MinFraudSchema>

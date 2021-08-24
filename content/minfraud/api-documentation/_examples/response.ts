@@ -2,6 +2,7 @@ export const score = {
   disposition: {
     action: 'accept',
     reason: 'default',
+    rule_label: 'my_custom_rule',
   },
   funds_remaining: 25.00,
   id: '5bc5d6c2-b2c8-40af-87f4-6d61af86b6ae',
@@ -52,6 +53,7 @@ export const insights = {
   disposition: {
     action: 'accept',
     reason: 'default',
+    rule_label: 'my_custom_rule',
   },
   email: {
     domain: {
