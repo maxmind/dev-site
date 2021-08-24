@@ -65,12 +65,15 @@ const Pre: React.FC<React.HTMLProps<HTMLDivElement> & IPre> = (props) => {
 
   const handleCopyClick = (): void => {
     setIsCopying(true);
-    navigator.clipboard.writeText(child.props.children.trim())
-      .then(() => {
-        setTimeout(() => {
-          setIsCopying(false);
-        }, 3000);
-      });
+
+    if (navigator.clipboard) {
+      navigator.clipboard.writeText(child.props.children.trim())
+        .then(() => {
+          setTimeout(() => {
+            setIsCopying(false);
+          }, 3000);
+        });
+    }
   };
 
   /* ---------- */
@@ -154,7 +157,7 @@ const Pre: React.FC<React.HTMLProps<HTMLDivElement> & IPre> = (props) => {
         <div
           className={styles['toolbar__buttons']}
         >
-          {navigator.clipboard && (
+          {Object.prototype.hasOwnProperty.call(navigator, 'clipboard') && (
             <Button
               className={classNames(
                 styles.copyBtn,
