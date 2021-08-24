@@ -4,8 +4,9 @@ import { OpenAPIV3 } from 'openapi-types';
 import PropTypes from 'prop-types';
 import React from 'react';
 
+import { renderMarkdown } from '../../../../utils/markdown';
 import Type from '../Type';
-import { getRefAnchorLink, renderMarkdownElement } from '../utils';
+import { getRefAnchorLink } from '../utils';
 import parseSchema from './parseSchema';
 
 import * as styles from './Properties.module.scss';
@@ -78,7 +79,7 @@ const Row: React.FC<IRow> = (props) => {
         <div
           className={styles.description}
         >
-          {renderMarkdownElement(props.description)}
+          {renderMarkdown(props.description)}
         </div>
       )}
     </div>

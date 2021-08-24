@@ -1,11 +1,4 @@
 import React from 'react';
-import ReactMarkdown from 'react-markdown';
-
-import { a } from '../../../components/Mdx';
-
-const components = {
-  link: a,
-};
 
 const NameRegex = new RegExp('\\.', 'g');
 
@@ -19,15 +12,5 @@ export const getRefAnchorLink = (ref: string): React.ReactElement => {
     >
       {link}
     </a>
-  );
-};
-
-export const renderMarkdownElement = (content: string): React.ReactElement => {
-  return (
-    <ReactMarkdown
-      components={components}
-    >
-      {content}
-    </ReactMarkdown>
   );
 };

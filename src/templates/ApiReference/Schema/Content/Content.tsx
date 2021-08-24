@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import React from 'react';
 import { FaAngleDoubleDown } from 'react-icons/fa';
 
-import { renderMarkdownElement } from '../utils';
+import { renderMarkdown } from '../../../../utils/markdown';
 import Properties from './Properties';
 
 import * as styles from './Content.module.scss';
@@ -36,7 +36,7 @@ const Content: React.FC<IContent> = (
             <div
               className={styles.description}
             >
-              {renderMarkdownElement(
+              {renderMarkdown(
                 props.schema.description as unknown as string
               )}
             </div>
