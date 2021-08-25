@@ -1,6 +1,5 @@
 import { CreatePagesArgs, GatsbyNode } from 'gatsby';
 
-import createApiSpecPages from './pages/createApiSpecPages';
 import createMdxPages from './pages/createMdxPages';
 
 export const createPages: GatsbyNode['createPages'] = async (
@@ -8,6 +7,5 @@ export const createPages: GatsbyNode['createPages'] = async (
 ) => {
   await Promise.all([
     createMdxPages(props),
-    createApiSpecPages(props),
   ]);
 };
