@@ -25,6 +25,7 @@ export default {
     issuer_id_number: '323132',
     last_4_digits: '7643',
     token: 'OQRST14PLQ98323',
+    was_3d_secure_successful: true,
   },
   custom_inputs: {
     a_custom_input_key: 'NSC0083121',
