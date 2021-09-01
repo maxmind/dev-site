@@ -7,6 +7,24 @@ title: GeoIP2 Release Notes
 Subscribe to the [GeoIP2 release notes RSS feed](/geoip/release-notes/rss.xml).
 </Alert>
 
+<ReleaseNote date="2021-08-31" title="Mapping more mobile networks to a state">
+We will be mapping more mobile (cellular) networks to a state (subdivision)
+rather than a city for the United States and other countries. This change will
+better reflect the end user location of these IP addresses across a region
+instead of a specific city.
+
+For example, many of these networks use IP addresses across a region like
+“New England.” In such cases, we may map IP addresses to a state in the
+geographic center of the region, and set the `accuracy_radius` and
+`subdivision_confidence` values appropriately. See our [Support Center
+documentation on GeoIP2 accuracy](https://support.maxmind.com/geoip-faq/specifications-and-implementation/how-accurate-is-geoip2/)
+for more information about `accuracy_radius` values.
+
+These changes will be implemented incrementally. Some IP addresses will reflect
+this change on September 2, 2021, and additional IP addresses will be updated on
+September 13, 2021.
+</ReleaseNote>
+
 <ReleaseNote date="2021-08-18" title="Increased file size of GeoIP2 Country, City, and Enterprise databases, and GeoLite2 Country and City databases">
 The file sizes of the GeoIP2 Country, City, and Enterprise databases, and the
 GeoLite2 Country and City databases will increase significantly on Friday,
