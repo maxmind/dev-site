@@ -2,6 +2,8 @@ import { sanitize } from 'dompurify';
 import PropTypes from 'prop-types';
 import React from 'react';
 
+import Link from './Link';
+
 import * as styles from './SearchResult.module.scss';
 
 interface ISearchResult {
@@ -22,12 +24,12 @@ const SearchResult: React.FC<ISearchResult> = (props) => (
     className={props.className}
   >
     <h2>
-      <a
+      <Link
         className={styles.title}
         dangerouslySetInnerHTML={{
           __html: sanitize(props.title, sanitizeOpts),
         }}
-        href={props.url}
+        to={props.url.replace('https://dev.maxmind.com/', '/')}
       />
     </h2>
     <small

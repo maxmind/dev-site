@@ -19,15 +19,16 @@ const addQueryString = (path: string, omitLangQuery?: boolean) => {
   return path + '?lang=en';
 };
 
-const Link: React.FC<ILink> =
-  props => {
-    return (
-      <GatsbyLink
-        {...props}
-        // eslint-disable-next-line react/prop-types
-        to={addQueryString(props.to, props.omitLangQuery)}
-      />
-    );
-  };
+const Link: React.FC<ILink> = (props) => {
+  // eslint-disable-next-line react/prop-types
+  const { omitLangQuery, to, ...rest } = props;
+  return (
+    <GatsbyLink
+      {...rest}
+      // eslint-disable-next-line react/prop-types
+      to={addQueryString(to, omitLangQuery)}
+    />
+  );
+};
 
 export default Link;
