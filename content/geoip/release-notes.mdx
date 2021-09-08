@@ -36,7 +36,11 @@ fraud.
 - All traffic is secured using TLS 1.3.
 
 To ensure your website and servers are ready for Private Relay, database
-customers should be sure to update to the latest MaxMind GeoIP2 database.
+customers should be sure to update to the latest MaxMind GeoIP2 databases.
+
+In order to get ISP data that includes Private Relay IPs, update to the latest
+GeoIP2 ISP or Enterprise database. In order to get geolocation data for Private
+Relay IPs, update to the latest GeoIP2 City or Enterprise database.
 
 GeoIP2 Precision Insights customers do not need to take any action to receive
 this data. It will be returned in the
@@ -45,7 +49,7 @@ and [`/traits/organization`](/geoip/docs/web-services/responses/#schema--respons
 outputs.
 
 For more information about Private Relay along with helpful technical
-information, visit [Prepare Your Network for Private Relay](https://developer.apple.com/support/prepare-your-network-for-icloud-private-relay/)
+information, visit [Prepare Your Network or Web Server for Private Relay](https://developer.apple.com/support/prepare-your-network-for-icloud-private-relay/)
 on Apple’s developer website.
 
 We will continue to monitor these IPs and make any adjustments that are needed
