@@ -1,0 +1,218 @@
+diff_in,old_geoname_id,new_geoname_id,old_city_name,new_city_name,old_country_name,new_country_name,old_country_code,new_country_code,old_subdivision_codes,new_subdivision_codes
+city_name,2078025,2078025,Adelaide CBD,Adelaide,Australia,Australia,AU,AU,SA,SA
+city_name,2078025,2078025,Adelaide CBD,Adelaide,Australia,Australia,AU,AU,SA,SA
+city_name,2078025,2078025,Adelaide CBD,Adelaide,Australia,Australia,AU,AU,SA,SA
+city_name,2078025,2078025,Adelaide CBD,Adelaide,Australia,Australia,AU,AU,SA,SA
+city_name,2078025,2078025,Adelaide CBD,Adelaide,Australia,Australia,AU,AU,SA,SA
+city_name,2078025,2078025,Adelaide CBD,Adelaide,Australia,Australia,AU,AU,SA,SA
+city_name,2078025,2078025,Adelaide CBD,Adelaide,Australia,Australia,AU,AU,SA,SA
+city_name,2078025,2078025,Adelaide CBD,Adelaide,Australia,Australia,AU,AU,SA,SA
+city_name,2078025,2078025,Adelaide CBD,Adelaide,Australia,Australia,AU,AU,SA,SA
+city_name,2078025,2078025,Adelaide CBD,Adelaide,Australia,Australia,AU,AU,SA,SA
+city_name,2078025,2078025,Adelaide CBD,Adelaide,Australia,Australia,AU,AU,SA,SA
+city_name,2078025,2078025,Adelaide CBD,Adelaide,Australia,Australia,AU,AU,SA,SA
+city_name,2078025,2078025,Adelaide CBD,Adelaide,Australia,Australia,AU,AU,SA,SA
+city_name,2078025,2078025,Adelaide CBD,Adelaide,Australia,Australia,AU,AU,SA,SA
+city_name,2078025,2078025,Adelaide CBD,Adelaide,Australia,Australia,AU,AU,SA,SA
+city_name,2078025,2078025,Adelaide CBD,Adelaide,Australia,Australia,AU,AU,SA,SA
+city_name,2078025,2078025,Adelaide CBD,Adelaide,Australia,Australia,AU,AU,SA,SA
+city_name,9899552,9899552,Nazao,Nazaocun,China,China,CN,CN,GX,GX
+city_name,9930185,9930185,Dengji,Dengjicun,China,China,CN,CN,GX,GX
+city_name,9904606,9904606,Nali,Nalicun,China,China,CN,CN,GX,GX
+city_name,1901462,1901462,Baguang,Baguangcun,China,China,CN,CN,GX,GX
+city_name,9902176,9902176,Babai,Babaicun,China,China,CN,CN,GX,GX
+city_name,9907298,9907298,Baota,Baotacun,China,China,CN,CN,GX,GX
+city_name,9906107,9906107,Aijiang,Aijiangcun,China,China,CN,CN,GX,GX
+city_name,9897430,9897430,Dingning,Dingningcun,China,China,CN,CN,GX,GX
+city_name,9933733,9933733,Aobao,Aobaocun,China,China,CN,CN,GX,GX
+city_name,9902326,9902326,Chengdong,Chengdongcun,China,China,CN,CN,GX,GX
+city_name,9930526,9930526,Chuanqian,Chuanqiancun,China,China,CN,CN,GX,GX
+city_name,8598557,8598557,Banlingting,Banling Tingcun,China,China,CN,CN,FJ,FJ
+city_name,1791064,1791064,Chengxiang,Wuming,China,China,CN,CN,GX,GX
+city_name,9927446,9927446,Dengli,Denglicun,China,China,CN,CN,GX,GX
+city_name,9902690,9902690,Xinxing,Xinxingcun,China,China,CN,CN,GX,GX
+city_name,9895958,9895958,Baiyi,Baiyicun,China,China,CN,CN,GX,GX
+city_name,3622809,3622809,Mora,Altos de Mora,Costa Rica,Costa Rica,CR,CR,G,G
+city_name,2620765,2620765,Harby,Haarby,Denmark,Denmark,DK,DK,83,83
+city_name,2856189,2856189,Ostseebad Sellin,Sellin,Germany,Germany,DE,DE,MV,MV
+city_name,2856189,2856189,Ostseebad Sellin,Sellin,Germany,Germany,DE,DE,MV,MV
+city_name,2842568,2842568,Sachsen,Sachsen bei Ansbach,Germany,Germany,DE,DE,BY,BY
+city_name,3356832,3356832,Hentiesbaai,Henties Bay,Namibia,Namibia,NA,NA,ER,ER
+city_name,3701720,3701720,Sabalo,Rio Sabalo,Panama,Panama,PA,PA,8,8
+city_name,3081546,3081546,Wola Mokrzewska,Wola Mokrzeska,Poland,Poland,PL,PL,24,24
+city_name,775019,775019,Brzuza,Brzoze,Poland,Poland,PL,PL,14,14
+city_name,691763,691763,Teysariv,Teisariv,Ukraine,Ukraine,UA,UA,46,46
+city_name,710387,710387,Chudel',Chudel,Ukraine,Ukraine,UA,UA,56,56
+city_name,695127,695127,Sukhovolya,Sukhovolia,Ukraine,Ukraine,UA,UA,46,46
+city_name,705034,705034,Kopayhorod,Kopaihorod,Ukraine,Ukraine,UA,UA,5,5
+city_name,692301,692301,Sudova Vyshnya,Sudova Vyshnia,Ukraine,Ukraine,UA,UA,46,46
+city_name,696278,696278,Prymors'ke,Prymorske,Ukraine,Ukraine,UA,UA,23,23
+city_name,695781,695781,Rava-Rus'ka,Rava-Ruska,Ukraine,Ukraine,UA,UA,46,46
+city_name,10026216,10026216,Nova Oleksiyivka,Nova Oleksiivka,Ukraine,Ukraine,UA,UA,51,51
+city_name,7414199,7414199,Rehlyashyntsi,Rehliashyntsi,Ukraine,Ukraine,UA,UA,5,5
+city_name,702316,702316,Mokiyivka,Mokiivka,Ukraine,Ukraine,UA,UA,53,53
+city_name,689428,689428,Volodymyrets',Volodymyrets,Ukraine,Ukraine,UA,UA,56,56
+city_name,706007,706007,Pryvillya,Pryvillia,Ukraine,Ukraine,UA,UA,51,51
+city_name,701246,701246,Mykhaylo-Lukasheve,Mykhailo-Lukasheve,Ukraine,Ukraine,UA,UA,23,23
+city_name,693301,693301,Sokal',Sokal,Ukraine,Ukraine,UA,UA,46,46
+city_name,713397,713397,Andriyivka,Andriivka,Ukraine,Ukraine,UA,UA,5,5
+city_name,709493,709493,Dubrovytsya,Dubrovytsia,Ukraine,Ukraine,UA,UA,56,56
+city_name,702392,702392,Lyukhcha,Liukhcha,Ukraine,Ukraine,UA,UA,56,56
+country_name,7304591,7304591,West Island,West Island,Cocos [Keeling] Islands,Cocos (Keeling) Islands,CC,CC,,
+country_name,1547376,1547376,,,Cocos [Keeling] Islands,Cocos (Keeling) Islands,CC,CC,,
+country_name,7304591,7304591,West Island,West Island,Cocos [Keeling] Islands,Cocos (Keeling) Islands,CC,CC,,
+country_name,1547314,1547314,,,Heard Island and McDonald Islands,Heard and McDonald Islands,HM,HM,,
+country_name,2993457,2993457,,,Principality of Monaco,Monaco,MC,MC,,
+country_name,8029384,8029384,Beausoleil,Beausoleil,Principality of Monaco,Monaco,MC,MC,,
+country_name,2993458,2993458,Monaco,Monaco,Principality of Monaco,Monaco,MC,MC,,
+country_name,2992741,2992741,Monte Carlo,Monte Carlo,Principality of Monaco,Monaco,MC,MC,,
+country_name,3426466,3426466,Grytviken,Grytviken,South Georgia and the South Sandwich Islands,South Georgia and South Sandwich Islands,GS,GS,,
+country_name,3426466,3426466,Grytviken,Grytviken,South Georgia and the South Sandwich Islands,South Georgia and South Sandwich Islands,GS,GS,,
+country_name,3474415,3474415,,,South Georgia and the South Sandwich Islands,South Georgia and South Sandwich Islands,GS,GS,,
+country_name,3577900,3577900,Georgetown,Georgetown,Saint Vincent and the Grenadines,St Vincent and Grenadines,VC,VC,1,1
+country_name,3577887,3577887,Kingstown,Kingstown,Saint Vincent and the Grenadines,St Vincent and Grenadines,VC,VC,4,4
+country_name,3577839,3577839,Questelles,Questelles,Saint Vincent and the Grenadines,St Vincent and Grenadines,VC,VC,2,2
+country_name,3577952,3577952,Brighton Village,Brighton Village,Saint Vincent and the Grenadines,St Vincent and Grenadines,VC,VC,4,4
+country_name,3577933,3577933,Chateaubelair,Chateaubelair,Saint Vincent and the Grenadines,St Vincent and Grenadines,VC,VC,3,3
+country_name,3577900,3577900,Georgetown,Georgetown,Saint Vincent and the Grenadines,St Vincent and Grenadines,VC,VC,1,1
+country_name,3748746,3748746,Calliaqua,Calliaqua,Saint Vincent and the Grenadines,St Vincent and Grenadines,VC,VC,4,4
+country_name,3577815,3577815,,,Saint Vincent and the Grenadines,St Vincent and Grenadines,VC,VC,,
+country_name,3577825,3577825,Rutland Vale,Rutland Vale,Saint Vincent and the Grenadines,St Vincent and Grenadines,VC,VC,5,5
+country_name,5854968,5854968,,,U.S. Minor Outlying Islands,U.S. Outlying Islands,UM,UM,,
+geoname_id,1462806,1196464,Kuti,Kuti,Bangladesh,Bangladesh,BD,BD,"B, 04","B, 04"
+geoname_id,3385670,6319349,Urucara,Urucara,Brazil,Brazil,BR,BR,AM,AM
+geoname_id,8431559,3473086,Agua Boa,Agua Boa,Brazil,Brazil,BR,BR,MG,MG
+geoname_id,3389549,6318263,Santa Luzia,Santa Luzia,Brazil,Brazil,BR,BR,MA,MA
+geoname_id,6318131,3451332,Ribeirao Grande,Ribeirao Grande,Brazil,Brazil,BR,BR,SP,SP
+geoname_id,3398535,6317239,Guaribas,Guaribas,Brazil,Brazil,BR,BR,PI,PI
+geoname_id,6323850,6317869,Paranaita,Paranaita,Brazil,Brazil,BR,BR,MT,MT
+geoname_id,3925280,6319277,Assis Brasil,Assis Brasil,Brazil,Brazil,BR,BR,AC,AC
+geoname_id,6319433,6317800,Novo Progresso,Novo Progresso,Brazil,Brazil,BR,BR,PA,PA
+geoname_id,3460723,3475644,Itapeva,Itapeva,Brazil,Brazil,BR,BR,SP,SP
+geoname_id,6322523,6318187,Rosana,Rosana,Brazil,Brazil,BR,BR,SP,SP
+geoname_id,6319712,3398381,Icatu,Icatu,Brazil,Brazil,BR,BR,MA,MA
+geoname_id,6324149,6317803,Novo Sao Joaquim,Novo Sao Joaquim,Brazil,Brazil,BR,BR,MT,MT
+geoname_id,3453736,3453734,Pinheiros,Pinheiros,Brazil,Brazil,BR,BR,SP,SP
+geoname_id,6323907,3471915,Apore,Apore,Brazil,Brazil,BR,BR,GO,GO
+geoname_id,3471990,3471987,Antonio Pereira,Antonio Pereira,Brazil,Brazil,BR,BR,MG,MG
+geoname_id,6323770,6317707,Nova Andradina,Nova Andradina,Brazil,Brazil,BR,BR,MS,MS
+geoname_id,3463120,6321383,Formoso,Formoso,Brazil,Brazil,BR,BR,MG,MG
+geoname_id,1802809,9865287,Lixian,Lixian,China,China,CN,CN,BJ,BJ
+geoname_id,7526014,1980016,Nan'ancun,Nan'ancun,China,China,CN,CN,FJ,FJ
+geoname_id,9896535,9893851,Xi'ancun,Xi'ancun,China,China,CN,CN,GX,GX
+geoname_id,1913121,6858981,Dongfeng,Dongfeng,China,China,CN,CN,GD,GD
+geoname_id,1914073,10216541,Liujia,Liujia,China,China,CN,CN,SC,SC
+geoname_id,1798791,7468374,Pinghu,Pinghu,China,China,CN,CN,FJ,FJ
+geoname_id,3667816,11885795,Sopetran,Sopetran,Colombia,Colombia,CO,CO,ANT,ANT
+geoname_id,3679317,3778835,La Cumbre,La Cumbre,Colombia,Colombia,CO,CO,VAC,VAC
+geoname_id,2613195,2613196,Soby,Soby,Denmark,Denmark,DK,DK,83,83
+geoname_id,2937893,2937894,Dettmannsdorf,Dettmannsdorf,Germany,Germany,DE,DE,MV,MV
+geoname_id,8955352,3177712,Cugnoli,Cugnoli,Italy,Italy,IT,IT,"65, PE","65, PE"
+geoname_id,3178221,8959664,Comunanza,Comunanza,Italy,Italy,IT,IT,"57, AP","57, AP"
+geoname_id,460414,460413,Daugavpils,Daugavpils,Latvia,Latvia,LV,LV,DGV,DGV
+geoname_id,8865938,3527879,Emiliano Zapata,Emiliano Zapata,Mexico,Mexico,MX,MX,MOR,MOR
+geoname_id,11562548,11562557,Emiliano Zapata,Emiliano Zapata,Mexico,Mexico,MX,MX,CMX,CMX
+geoname_id,2192340,2192341,Claremont,Claremont,New Zealand,New Zealand,NZ,NZ,CAN,CAN
+geoname_id,490170,490172,Sosnovyy Bor,Sosnovyy Bor,Russia,Russia,RU,RU,LEN,LEN
+geoname_id,713340,713342,Annovka,Annovka,Ukraine,Ukraine,UA,UA,35,35
+geoname_id,7300607,12265895,Cranham,Cranham,United Kingdom,United Kingdom,GB,GB,"ENG, GLS","ENG, GLS"
+geoname_id,2642470,6946887,Milton Bryan,Milton Bryan,United Kingdom,United Kingdom,GB,GB,"ENG, CBF","ENG, CBF"
+geoname_id,7301025,12263242,Fonthill Bishop,Fonthill Bishop,United Kingdom,United Kingdom,GB,GB,"ENG, WIL","ENG, WIL"
+geoname_id,12048157,2649216,Forest Hill,Forest Hill,United Kingdom,United Kingdom,GB,GB,"ENG, LEW","ENG, LEW"
+geoname_id,7300607,12265895,Cranham,Cranham,United Kingdom,United Kingdom,GB,GB,"ENG, GLS","ENG, GLS"
+geoname_id,7299992,12264886,Sparsholt,Sparsholt,United Kingdom,United Kingdom,GB,GB,"ENG, OXF","ENG, OXF"
+geoname_id,2634595,12263996,Welburn,Welburn,United Kingdom,United Kingdom,GB,GB,"ENG, NYK","ENG, NYK"
+geoname_id,12047975,2650467,East Dulwich,East Dulwich,United Kingdom,United Kingdom,GB,GB,"ENG, SWK","ENG, SWK"
+geoname_id,7300483,12262454,Westham,Westham,United Kingdom,United Kingdom,GB,GB,"ENG, ESX","ENG, ESX"
+geoname_id,2638488,12262593,Saunderton,Saunderton,United Kingdom,United Kingdom,GB,GB,"ENG, BKM","ENG, BKM"
+geoname_id,7297453,12264990,Leckhampstead,Leckhampstead,United Kingdom,United Kingdom,GB,GB,"ENG, WBK","ENG, WBK"
+subdivision_codes,3196079,3196079,Lukavac,Lukavac,Bosnia and Herzegovina,Bosnia and Herzegovina,BA,BA,BIH,"BIH, 03"
+subdivision_codes,457965,457965,Lielvārde,Lielvārde,Latvia,Latvia,LV,LV,53,67
+subdivision_codes,459402,459402,Jaunjelgava,Jaunjelgava,Latvia,Latvia,LV,LV,38,2
+subdivision_codes,454522,454522,Varkali,Varkali,Latvia,Latvia,LV,LV,12,62
+subdivision_codes,456635,456635,Pļaviņas,Pļaviņas,Latvia,Latvia,LV,LV,72,2
+subdivision_codes,456272,456272,Rauna,Rauna,Latvia,Latvia,LV,LV,76,94
+subdivision_codes,454407,454407,Vecpils,Vecpils,Latvia,Latvia,LV,LV,28,
+subdivision_codes,460568,460568,Cesvaine,Cesvaine,Latvia,Latvia,LV,LV,21,59
+subdivision_codes,457289,457289,Misa,Misa,Latvia,Latvia,LV,LV,105,16
+subdivision_codes,457912,457912,Līgatne,Līgatne,Latvia,Latvia,LV,LV,55,22
+subdivision_codes,864726,864726,Sauriesi,Sauriesi,Latvia,Latvia,LV,LV,95,80
+subdivision_codes,459754,459754,Grasi,Grasi,Latvia,Latvia,LV,LV,21,59
+subdivision_codes,458892,458892,Ķegums,Ķegums,Latvia,Latvia,LV,LV,51,67
+subdivision_codes,461224,461224,Baldone,Baldone,Latvia,Latvia,LV,LV,13,52
+subdivision_codes,456008,456008,Rūjiena,Rūjiena,Latvia,Latvia,LV,LV,84,VMR
+subdivision_codes,454216,454216,Viesīte,Viesīte,Latvia,Latvia,LV,LV,107,42
+subdivision_codes,454537,454537,Vangaži,Vangaži,Latvia,Latvia,LV,LV,37,91
+subdivision_codes,455523,455523,Skrīveri,Skrīveri,Latvia,Latvia,LV,LV,92,2
+subdivision_codes,454273,454273,Vecumnieki,Vecumnieki,Latvia,Latvia,LV,LV,105,16
+subdivision_codes,459598,459598,Ikšķile,Ikšķile,Latvia,Latvia,LV,LV,35,67
+subdivision_codes,459624,459624,Iecava,Iecava,Latvia,Latvia,LV,LV,34,16
+subdivision_codes,460413,460413,Daugavpils,Daugavpils,Latvia,Latvia,LV,LV,25,DGV
+subdivision_codes,455520,455520,Skrunda,Skrunda,Latvia,Latvia,LV,LV,93,50
+subdivision_codes,461602,461602,Aizpute,Aizpute,Latvia,Latvia,LV,LV,3,
+subdivision_codes,456341,456341,Ragana,Ragana,Latvia,Latvia,LV,LV,48,91
+subdivision_codes,461315,461315,Augstkalne,Augstkalne,Latvia,Latvia,LV,LV,98,26
+subdivision_codes,459692,459692,Grobina,Grobina,Latvia,Latvia,LV,LV,32,
+subdivision_codes,460187,460187,Dundaga,Dundaga,Latvia,Latvia,LV,LV,27,97
+subdivision_codes,457148,457148,Nereta,Nereta,Latvia,Latvia,LV,LV,65,2
+subdivision_codes,458695,458695,Kociena,Kociena,Latvia,Latvia,LV,LV,45,VMR
+subdivision_codes,457799,457799,Lubāna,Lubāna,Latvia,Latvia,LV,LV,57,59
+subdivision_codes,455298,455298,Staicele,Staicele,Latvia,Latvia,LV,LV,5,54
+subdivision_codes,459871,459871,Garciems,Garciems,Latvia,Latvia,LV,LV,20,11
+subdivision_codes,455166,455166,Strenči,Strenči,Latvia,Latvia,LV,LV,96,VMR
+subdivision_codes,459031,459031,Kandava,Kandava,Latvia,Latvia,LV,LV,43,99
+subdivision_codes,459004,459004,Kapsede,Kapsede,Latvia,Latvia,LV,LV,32,
+subdivision_codes,457676,457676,Malpils,Malpils,Latvia,Latvia,LV,LV,61,91
+subdivision_codes,458182,458182,Lēdmane,Lēdmane,Latvia,Latvia,LV,LV,53,67
+subdivision_codes,864233,864233,Mezares,Mezares,Latvia,Latvia,LV,LV,12,62
+subdivision_codes,454214,454214,Viesites,Viesites,Latvia,Latvia,LV,LV,38,2
+subdivision_codes,460122,460122,Dzērbene,Dzērbene,Latvia,Latvia,LV,LV,104,22
+subdivision_codes,459276,459276,Jelgavkrasti,Jelgavkrasti,Latvia,Latvia,LV,LV,86,54
+subdivision_codes,457676,457676,Malpils,Malpils,Latvia,Latvia,LV,LV,61,91
+subdivision_codes,460231,460231,Dubeni,Dubeni,Latvia,Latvia,LV,LV,32,
+subdivision_codes,457676,457676,Malpils,Malpils,Latvia,Latvia,LV,LV,61,91
+subdivision_codes,459050,459050,Kalvene,Kalvene,Latvia,Latvia,LV,LV,3,
+subdivision_codes,461073,461073,Bene,Bene,Latvia,Latvia,LV,LV,10,26
+subdivision_codes,461628,461628,Ainaži,Ainaži,Latvia,Latvia,LV,LV,86,54
+subdivision_codes,461336,461336,Auce,Auce,Latvia,Latvia,LV,LV,10,26
+subdivision_codes,455825,455825,Saulaine,Saulaine,Latvia,Latvia,LV,LV,83,16
+subdivision_codes,456954,456954,Ozolnieki,Ozolnieki,Latvia,Latvia,LV,LV,69,41
+subdivision_codes,461255,461255,Pupe,Pupe,Latvia,Latvia,LV,LV,12,62
+subdivision_codes,7628331,7628331,Lielvārde,Lielvārde,Latvia,Latvia,LV,LV,53,
+subdivision_codes,454714,454714,Ulbroka,Ulbroka,Latvia,Latvia,LV,LV,95,80
+subdivision_codes,454698,454698,Ungurpils,Ungurpils,Latvia,Latvia,LV,LV,5,54
+subdivision_codes,461566,461566,Aknīste,Aknīste,Latvia,Latvia,LV,LV,4,42
+subdivision_codes,458574,458574,Sunisi,Sunisi,Latvia,Latvia,LV,LV,48,91
+subdivision_codes,460786,460786,Broceni,Broceni,Latvia,Latvia,LV,LV,18,88
+subdivision_codes,453864,453864,Zilaiskalns,Zilaiskalns,Latvia,Latvia,LV,LV,45,VMR
+subdivision_codes,456050,456050,Rucava,Rucava,Latvia,Latvia,LV,LV,81,
+subdivision_codes,459099,459099,Kalngale,Kalngale,Latvia,Latvia,LV,LV,20,11
+subdivision_codes,460474,460474,Dagda,Dagda,Latvia,Latvia,LV,LV,24,47
+subdivision_codes,456089,456089,Garkalne,Garkalne,Latvia,Latvia,LV,LV,31,80
+subdivision_codes,458687,458687,Koknese,Koknese,Latvia,Latvia,LV,LV,46,2
+subdivision_codes,457533,457533,Mazsalaca,Mazsalaca,Latvia,Latvia,LV,LV,60,VMR
+subdivision_codes,456503,456503,Priekuļi,Priekuļi,Latvia,Latvia,LV,LV,75,22
+subdivision_codes,459795,459795,Glāžšķūnis,Glāžšķūnis,Latvia,Latvia,LV,LV,51,67
+subdivision_codes,458279,458279,Lapmezciems,Lapmezciems,Latvia,Latvia,LV,LV,29,99
+subdivision_codes,864213,864213,Tetele,Tetele,Latvia,Latvia,LV,LV,69,41
+subdivision_codes,454069,454069,Rembate,Rembate,Latvia,Latvia,LV,LV,51,67
+subdivision_codes,456107,456107,Roya,Roya,Latvia,Latvia,LV,LV,79,97
+subdivision_codes,457615,457615,Matīši,Matīši,Latvia,Latvia,LV,LV,19,VMR
+subdivision_codes,459357,459357,Jaunpils,Jaunpils,Latvia,Latvia,LV,LV,40,99
+subdivision_codes,458263,458263,Latgale,Latgale,Latvia,Latvia,LV,LV,25,
+subdivision_codes,460001,460001,Ērgļi,Ērgļi,Latvia,Latvia,LV,LV,30,59
+subdivision_codes,453850,453850,Zilupe,Zilupe,Latvia,Latvia,LV,LV,110,58
+subdivision_codes,460943,460943,Birzgale,Birzgale,Latvia,Latvia,LV,LV,51,67
+subdivision_codes,455910,455910,Salacgrīva,Salacgrīva,Latvia,Latvia,LV,LV,86,54
+subdivision_codes,460659,460659,Carnikava,Carnikava,Latvia,Latvia,LV,LV,20,11
+subdivision_codes,454178,454178,Viļāni,Viļāni,Latvia,Latvia,LV,LV,109,77
+subdivision_codes,456685,456685,Pinki,Pinki,Latvia,Latvia,LV,LV,12,62
+subdivision_codes,456278,456278,Rauda,Rauda,Latvia,Latvia,LV,LV,29,99
+subdivision_codes,459359,459359,Jaunpiebalga,Jaunpiebalga,Latvia,Latvia,LV,LV,39,22
+subdivision_codes,454602,454602,Vainode,Vainode,Latvia,Latvia,LV,LV,100,
+subdivision_codes,461539,461539,Aloja,Aloja,Latvia,Latvia,LV,LV,5,54
+subdivision_codes,458972,458972,Kārsava,Kārsava,Latvia,Latvia,LV,LV,44,58
+subdivision_codes,457408,457408,Mersrags,Mersrags,Latvia,Latvia,LV,LV,63,97
+subdivision_codes,460673,460673,Caci,Caci,Latvia,Latvia,LV,LV,78,73
+subdivision_codes,454855,454855,Tinuzi,Tinuzi,Latvia,Latvia,LV,LV,35,67
+subdivision_codes,459564,459564,Inciems,Inciems,Latvia,Latvia,LV,LV,48,91
