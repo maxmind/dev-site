@@ -13,6 +13,7 @@ module.exports = {
   setupFilesAfterEnv: [
     './test/setup.ts',
   ],
+  testEnvironment: 'jsdom',
   testPathIgnorePatterns: [
     'node_modules',
     '\\.cache',
