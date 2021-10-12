@@ -1,0 +1,156 @@
+diff_in,old_geoname_id,new_geoname_id,old_city_name,new_city_name,old_country_name,new_country_name,old_country_code,new_country_code,old_subdivision_codes,new_subdivision_codes
+"geoname_id, subdivision_codes",7528770,1800163,Nanchang,Nanchang,China,China,CN,CN,JS,JX
+city_name,9934055,9934055,Beidan,Beidancun,China,China,CN,CN,GX,GX
+city_name,9933864,9933864,Daying,Dayingcun,China,China,CN,CN,GX,GX
+"city_name, geoname_id",709932,706966,Dniprodzerzhynsk,Kamianske,Ukraine,Ukraine,UA,UA,12,12
+"city_name, geoname_id, subdivision_codes",8962488,2523312,Sant'Andrea,Sant'Andrea Frius,Italy,Italy,IT,IT,"88, CA","88, SU"
+"city_name, geoname_id",1174852,1175565,Karalo,Kabbal,Pakistan,Pakistan,PK,PK,KP,KP
+city_name,9933041,9933041,Jiahao,Jiahaocun,China,China,CN,CN,GX,GX
+"city_name, geoname_id",1408020,1180289,Basti Sumra Sikani,Dera Ghazi Khan,Pakistan,Pakistan,PK,PK,PB,PB
+"city_name, geoname_id, subdivision_codes",2523984,2525473,Nurri,Cagliari,Italy,Italy,IT,IT,"88, SU","88, CA"
+"city_name, geoname_id",1372478,1330335,Jangi,Jhang City,Pakistan,Pakistan,PK,PK,PB,PB
+"city_name, geoname_id",1168195,1168197,Peshāwar District,Peshawar,Pakistan,Pakistan,PK,PK,KP,KP
+city_name,1789262,1789262,Xin'an,Xinyi,China,China,CN,CN,JS,JS
+"city_name, geoname_id",1450785,1168864,Sarah Garhi,Nowshera,Pakistan,Pakistan,PK,PK,KP,KP
+city_name,1789897,1789897,Zijinglu,Gongyi,China,China,CN,CN,HA,HA
+"city_name, geoname_id",1174872,11246240,Karachi,Karachi Water and Severage Colony,Pakistan,Pakistan,PK,PK,SD,SD
+"city_name, geoname_id",2523141,2523076,Serri,Sirri,Italy,Italy,IT,IT,"88, SU","88, SU"
+"city_name, geoname_id",3451341,3456370,Ribeirao do Ouro,Navegantes,Brazil,Brazil,BR,BR,SC,SC
+city_name,1789897,1789897,Zijinglu,Gongyi,China,China,CN,CN,HA,HA
+city_name,6824283,6824283,Luxi,Luexi,China,China,CN,CN,YN,YN
+city_name,1816522,1816522,Beixiang,Beixiangcun,China,China,CN,CN,GX,GX
+city_name,9946062,9946062,Beilou,Beiloucun,China,China,CN,CN,GX,GX
+city_name,8580274,8580274,Xinqian,Xinqiancun,China,China,CN,CN,FJ,FJ
+city_name,9895507,9895507,Hubiao,Hubiaocun,China,China,CN,CN,GX,GX
+"city_name, geoname_id",11510779,1177662,Basti Gujranwala,Gujranwala,Pakistan,Pakistan,PK,PK,PB,PB
+city_name,9902930,9902930,Hezhou,Hezhoucun,China,China,CN,CN,GX,GX
+"city_name, geoname_id",2647550,9613008,Hampton,Hampton Wick,United Kingdom,United Kingdom,GB,GB,"ENG, RIC","ENG, RIC"
+"city_name, geoname_id, subdivision_codes",2475763,2475764,Commune de Tizi Gheniff,Tizi Gheniff,Algeria,Algeria,DZ,DZ,6,15
+"city_name, geoname_id",9179694,11537138,Vallejo,Nueva Industrial Vallejo,Mexico,Mexico,MX,MX,CMX,CMX
+city_name,9935902,9935902,Chuanshan,Chuanshancun,China,China,CN,CN,GX,GX
+city_name,1811200,1811200,Fengxian,Fengcheng,China,China,CN,CN,JS,JS
+"city_name, geoname_id",1788694,10859300,Xinpu,Lianyungang,China,China,CN,CN,JS,JS
+"city_name, geoname_id",6138802,11257133,Saint-Michel-des-Saints,Saint-Alexis-des-Monts,Canada,Canada,CA,CA,QC,QC
+"city_name, geoname_id",3385660,3402320,Urucuba,Cedro,Brazil,Brazil,BR,BR,PE,PE
+city_name,9903037,9903037,Hongqi,Hongqicun,China,China,CN,CN,GX,GX
+city_name,9996923,9996923,Baosha,Baoshacun,China,China,CN,CN,GX,GX
+city_name,1787816,1787816,Yucheng,Ya'an,China,China,CN,CN,SC,SC
+"city_name, geoname_id",1174872,11246240,Karachi,Karachi Water and Severage Colony,Pakistan,Pakistan,PK,PK,SD,SD
+"city_name, geoname_id",1167528,1185021,Quetta,Kili Rahmanzai,Pakistan,Pakistan,PK,PK,BA,BA
+city_name,1909945,1909945,Baiyu,Baiyucun,China,China,CN,CN,FJ,FJ
+"city_name, geoname_id",2847251,2847213,Rieden,Rieder,Germany,Germany,DE,DE,BY,BY
+city_name,1815482,1815482,Kuiju,Changyi,China,China,CN,CN,SD,SD
+city_name,8359315,8359315,Luhe,Luehe,China,China,CN,CN,JS,JS
+city_name,9895479,9895479,Hechi,Hechicun,China,China,CN,CN,GX,GX
+city_name,9929034,9929034,Yi'an,Yi'ancun,China,China,CN,CN,GX,GX
+city_name,8429009,8429009,Fengjia,Fengjiacun,China,China,CN,CN,SD,SD
+"city_name, geoname_id",5924579,6092122,Cobourg,Oakville,Canada,Canada,CA,CA,ON,ON
+"city_name, geoname_id, subdivision_codes",2760043,2751810,Achterbroek,Leerbroek,Netherlands,Netherlands,NL,NL,ZH,UT
+"city_name, geoname_id",3681008,3681010,Municipio Hato Corozal,Hato Corozal,Colombia,Colombia,CO,CO,CAS,CAS
+city_name,1817421,1817421,Baishan,Baishancun,China,China,CN,CN,GX,GX
+city_name,1909600,1909600,Dahe,Dahecun,China,China,CN,CN,GX,GX
+"city_name, geoname_id, subdivision_codes",1415765,7091688,Ukhi,Oghi,Pakistan,Pakistan,PK,PK,JK,KP
+city_name,9929439,9929439,Shifeng,Shifengcun,China,China,CN,CN,GX,GX
+city_name,1817582,1817582,Bailong,Bailong Shequ,China,China,CN,CN,GX,GX
+"city_name, geoname_id",1162812,1162813,Chak Sixty-one -Twelve Left,Vehari,Pakistan,Pakistan,PK,PK,PB,PB
+city_name,3623715,3623715,Fortuna,La Fortuna,Costa Rica,Costa Rica,CR,CR,G,G
+"city_name, geoname_id",6355181,12319446,Les Laures,Les Maurels,France,France,FR,FR,"PAC, 83","PAC, 83"
+"city_name, geoname_id",8299623,2640923,Orkney,Orkney Islands,United Kingdom,United Kingdom,GB,GB,"SCT, ORK","SCT, ORK"
+"geoname_id, subdivision_codes",7522443,862995,,,Estonia,Estonia,EE,EE,"37, 141","37, 784"
+city_name,2836443,2836443,Schoenwalde,Schoenwalde-Glien,Germany,Germany,DE,DE,BB,BB
+city_name,2836443,2836443,Schoenwalde,Schoenwalde-Glien,Germany,Germany,DE,DE,BB,BB
+city_name,704737,704737,Kostopil',Kostopil,Ukraine,Ukraine,UA,UA,56,56
+"city_name, geoname_id",1482597,1170951,Pansera,Mansehra,Pakistan,Pakistan,PK,PK,KP,KP
+country_name,1645457,1645457,Dili,Dili,East Timor,Democratic Republic of Timor-Leste,TL,TL,DI,DI
+"city_name, geoname_id",8613117,2155400,One Tree,,Australia,Australia,AU,AU,NSW,NSW
+country_name,1622867,1622867,Uatocarabau,Uatocarabau,East Timor,Democratic Republic of Timor-Leste,TL,TL,VI,VI
+"city_name, geoname_id",1788694,9797826,Xinpu,Xinxu,China,China,CN,CN,JS,JS
+"city_name, geoname_id",8543736,6323855,Pontal do Araguaia,Pontal Do Araguaia,Brazil,Brazil,BR,BR,MT,MT
+country_name,1622471,1622471,Viqueque,Viqueque,East Timor,Democratic Republic of Timor-Leste,TL,TL,VI,VI
+country_name,1636526,1636526,Manatutu,Manatutu,East Timor,Democratic Republic of Timor-Leste,TL,TL,MT,MT
+"city_name, geoname_id",1152633,1156780,Krabi,Ban Krabi Noi,Thailand,Thailand,TH,TH,81,81
+country_name,1626459,1626459,Suai,Suai,East Timor,Democratic Republic of Timor-Leste,TL,TL,CO,CO
+country_name,1628926,1628926,Same,Same,East Timor,Democratic Republic of Timor-Leste,TL,TL,MF,MF
+"city_name, geoname_id",1341203,1164216,Charpani,Swabi,Pakistan,Pakistan,PK,PK,KP,KP
+country_name,1966436,1966436,,,East Timor,Democratic Republic of Timor-Leste,TL,TL,,
+"city_name, geoname_id",2915391,2914138,Gross Kordshagen,Gruen Kordshagen,Germany,Germany,DE,DE,MV,MV
+country_name,1649539,1649539,Baucau,Baucau,East Timor,Democratic Republic of Timor-Leste,TL,TL,BA,BA
+"city_name, geoname_id, subdivision_codes",3194351,8986867,Novo Mesto,Gradiška,Slovenia,Slovenia,SI,SI,85,55
+country_name,1636670,1636670,Maliana,Maliana,East Timor,Democratic Republic of Timor-Leste,TL,TL,BO,BO
+"city_name, geoname_id",1174217,1172451,Khangah Dogran,Lahore,Pakistan,Pakistan,PK,PK,PB,PB
+"city_name, geoname_id",1735265,1734625,Sungai Siput,Sungai Siput Utara,Malaysia,Malaysia,MY,MY,8,8
+country_name,1937274,1937274,Lospalos,Lospalos,East Timor,Democratic Republic of Timor-Leste,TL,TL,LA,LA
+country_name,1942811,1942811,Gleno,Gleno,East Timor,Democratic Republic of Timor-Leste,TL,TL,ER,ER
+"city_name, geoname_id",1163224,1185056,Topi,Abbottabad,Pakistan,Pakistan,PK,PK,KP,KP
+"city_name, geoname_id",1792892,1816751,Tianshui,Beidao,China,China,CN,CN,GS,GS
+country_name,1632533,1632533,Pante Makasar,Pante Makasar,East Timor,Democratic Republic of Timor-Leste,TL,TL,OE,OE
+country_name,1643272,1643272,Hatoudo,Hatoudo,East Timor,Democratic Republic of Timor-Leste,TL,TL,AN,AN
+"city_name, geoname_id",1174872,11246240,Karachi,Karachi Water and Severage Colony,Pakistan,Pakistan,PK,PK,SD,SD
+country_name,1637730,1637730,Likisa,Likisa,East Timor,Democratic Republic of Timor-Leste,TL,TL,LI,LI
+country_name,1945061,1945061,Fatubossa,Fatubossa,East Timor,Democratic Republic of Timor-Leste,TL,TL,AL,AL
+country_name,1944096,1944096,Padiae,Padiae,East Timor,Democratic Republic of Timor-Leste,TL,TL,OE,OE
+country_name,3426466,3426466,Grytviken,Grytviken,South Georgia and South Sandwich Islands,South Georgia and the South Sandwich Islands,GS,GS,,
+country_name,3426466,3426466,Grytviken,Grytviken,South Georgia and South Sandwich Islands,South Georgia and the South Sandwich Islands,GS,GS,,
+country_name,3474415,3474415,,,South Georgia and South Sandwich Islands,South Georgia and the South Sandwich Islands,GS,GS,,
+geoname_id,3447780,12179414,Serra,Serra,Brazil,Brazil,BR,BR,MG,MG
+geoname_id,3451332,6318131,Ribeirao Grande,Ribeirao Grande,Brazil,Brazil,BR,BR,SP,SP
+geoname_id,3402199,6319393,Chaves,Chaves,Brazil,Brazil,BR,BR,PA,PA
+geoname_id,3469942,3469933,Boa Esperanca,Boa Esperanca,Brazil,Brazil,BR,BR,ES,ES
+geoname_id,3447651,11969001,Sertaozinho,Sertaozinho,Brazil,Brazil,BR,BR,SP,SP
+"city_name, geoname_id",8010693,3372644,Santa Cruz da Graciosa Municipality,Santa Cruz da Graciosa,Portugal,Portugal,PT,PT,20,20
+geoname_id,6319329,3663503,Manicore,Manicore,Brazil,Brazil,BR,BR,AM,AM
+geoname_id,1803992,12271477,Liangqing,Liangqing,China,China,CN,CN,GX,GX
+"city_name, geoname_id",1409725,7505177,Samuhdri,Samundri,Pakistan,Pakistan,PK,PK,PB,PB
+"geoname_id, subdivision_codes",1567068,1567069,Tan An,Tan An,Vietnam,Vietnam,VN,VN,SG,41
+geoname_id,1808053,10216851,Hongqi,Hongqi,China,China,CN,CN,SC,SC
+geoname_id,9908526,9908544,Tiande,Tiande,China,China,CN,CN,GX,GX
+"city_name, geoname_id, subdivision_codes",2523988,2525473,Nurallao,Cagliari,Italy,Italy,IT,IT,"88, SU","88, CA"
+geoname_id,9893851,9907428,Xi'ancun,Xi'ancun,China,China,CN,CN,GX,GX
+geoname_id,1787824,10630003,Xuzhou,Xuzhou,China,China,CN,CN,JS,JS
+"city_name, geoname_id",11789220,2633807,Winstone,Winson,United Kingdom,United Kingdom,GB,GB,"ENG, GLS","ENG, GLS"
+"city_name, geoname_id",1732877,1768656,Labis,Kampong Kahang Batu Twenty-eight,Malaysia,Malaysia,MY,MY,1,1
+"city_name, geoname_id",2999683,12310718,Les Sables-d'Olonne,Le Chateau,France,France,FR,FR,"PDL, 85","PDL, 85"
+geoname_id,1911456,10421886,Gaozhai,Gaozhai,China,China,CN,CN,HA,HA
+"city_name, geoname_id",3622545,3622074,Paraiso,Rio Segundo,Costa Rica,Costa Rica,CR,CR,A,A
+geoname_id,11885795,3667816,Sopetran,Sopetran,Colombia,Colombia,CO,CO,ANT,ANT
+geoname_id,3687908,8182762,Calima,Calima,Colombia,Colombia,CO,CO,VAC,VAC
+geoname_id,8478213,3657629,Guamani,Guamani,Ecuador,Ecuador,EC,EC,P,P
+geoname_id,8478213,3657629,Guamani,Guamani,Ecuador,Ecuador,EC,EC,P,P
+geoname_id,2906333,2906334,Hennickendorf,Hennickendorf,Germany,Germany,DE,DE,BB,BB
+geoname_id,2934717,2934548,Duensen,Duensen,Germany,Germany,DE,DE,NI,NI
+geoname_id,10886008,11724983,Bagodih,Bagodih,India,India,IN,IN,JH,JH
+geoname_id,1989807,1989798,Tegal,Tegal,Indonesia,Indonesia,ID,ID,JB,JB
+geoname_id,3177712,8955352,Cugnoli,Cugnoli,Italy,Italy,IT,IT,"65, PE","65, PE"
+"city_name, geoname_id",2647550,9613008,Hampton,Hampton Wick,United Kingdom,United Kingdom,GB,GB,"ENG, RIC","ENG, RIC"
+geoname_id,8959664,3178221,Comunanza,Comunanza,Italy,Italy,IT,IT,"57, AP","57, AP"
+"city_name, geoname_id",7302144,6690589,Kings Cross,King's Cross,United Kingdom,United Kingdom,GB,GB,"ENG, CMD","ENG, CMD"
+"city_name, geoname_id",8299623,2640923,Orkney,Orkney Islands,United Kingdom,United Kingdom,GB,GB,"SCT, ORK","SCT, ORK"
+geoname_id,3167792,8949881,San Prospero,San Prospero,Italy,Italy,IT,IT,"45, BO","45, BO"
+"city_name, geoname_id",2657180,2652347,Ardgour,Corran,United Kingdom,United Kingdom,GB,GB,"SCT, HLD","SCT, HLD"
+geoname_id,1735339,1735297,Mukah,Mukah,Malaysia,Malaysia,MY,MY,13,13
+geoname_id,11562557,11562548,Emiliano Zapata,Emiliano Zapata,Mexico,Mexico,MX,MX,CMX,CMX
+geoname_id,1386345,1415434,Kotla,Kotla,Pakistan,Pakistan,PK,PK,JK,JK
+geoname_id,1183324,1183323,Barikot,Barikot,Pakistan,Pakistan,PK,PK,KP,KP
+"city_name, geoname_id",2971041,12317400,Valenciennes,Faubourg de France,France,France,FR,FR,"HDF, 59","HDF, 59"
+"city_name, geoname_id, subdivision_codes",2647421,6694222,Harrow on the Hill,Muswell Hill,United Kingdom,United Kingdom,GB,GB,"ENG, HRW","ENG, HRY"
+"city_name, geoname_id",3016808,12307079,Gaillon-sur-Montcient,Gaillon,France,France,FR,FR,"IDF, 78","IDF, 78"
+geoname_id,1333089,1165183,Shergarh,Shergarh,Pakistan,Pakistan,PK,PK,KP,KP
+"city_name, geoname_id",652281,642113,Knaapila,Pernioe,Finland,Finland,FI,FI,19,19
+"geoname_id, subdivision_codes",3291416,2963528,Kells,Kells,Ireland,Ireland,IE,IE,"M, LK","L, MH"
+"city_name, geoname_id",2640759,12264859,Over Worton,Over Norton,United Kingdom,United Kingdom,GB,GB,"ENG, OXF","ENG, OXF"
+geoname_id,1338346,1164415,Sukho,Sukho,Pakistan,Pakistan,PK,PK,PB,PB
+geoname_id,709943,709950,Dniprovske,Dniprovske,Ukraine,Ukraine,UA,UA,12,12
+"city_name, geoname_id",3010826,12313455,La Bree-les-Bains,Les Haies,France,France,FR,FR,"NAQ, 17","NAQ, 17"
+geoname_id,701154,701238,Mykhailivka,Mykhailivka,Ukraine,Ukraine,UA,UA,51,51
+"city_name, geoname_id",1612150,7510905,Ban Tin Kong,Chumsaeng,Thailand,Thailand,TH,TH,60,60
+geoname_id,6946887,2642470,Milton Bryan,Milton Bryan,United Kingdom,United Kingdom,GB,GB,"ENG, CBF","ENG, CBF"
+geoname_id,12048157,2649216,Forest Hill,Forest Hill,United Kingdom,United Kingdom,GB,GB,"ENG, LEW","ENG, LEW"
+"city_name, geoname_id",2990450,2998643,Nezignan-l'Eveque,Lezignan-la-Cebe,France,France,FR,FR,"OCC, 34","OCC, 34"
+"city_name, geoname_id",6321815,6318487,Sao Jose Da Lapa,Sao Jose da Lapa,Brazil,Brazil,BR,BR,MG,MG
+geoname_id,6690805,12047986,Elm Park,Elm Park,United Kingdom,United Kingdom,GB,GB,"ENG, HAV","ENG, HAV"
+geoname_id,2656330,12048339,Barkingside,Barkingside,United Kingdom,United Kingdom,GB,GB,"ENG, RDB","ENG, RDB"
+geoname_id,2656330,12048339,Barkingside,Barkingside,United Kingdom,United Kingdom,GB,GB,"ENG, RDB","ENG, RDB"
+"city_name, geoname_id",3463731,3463668,Estrema,Extrema,Brazil,Brazil,BR,BR,MG,MG
+"city_name, geoname_id",3392456,3392455,Pedreiras,Pedreira,Brazil,Brazil,BR,BR,MA,MA
+"city_name, geoname_id",3034535,12309817,Baume-les-Dames,Les Granges Mathieu,France,France,FR,FR,"BFC, 25","BFC, 25"
+subdivision_codes,216449,216449,Gandajika,Gandajika,DR Congo,DR Congo,CD,CD,KE,LO
