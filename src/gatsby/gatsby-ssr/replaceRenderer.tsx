@@ -72,25 +72,13 @@ const extractInlinedStyles = (args: ReplaceRendererArgs) => {
   replaceBodyHTMLString($('body').html() as string);
 };
 
-const addOlark = (args: ReplaceRendererArgs) => {
+const addZendesk = (args: ReplaceRendererArgs) => {
   const { setPostBodyComponents } = args;
 
   setPostBodyComponents([
     <script
-      async
-      dangerouslySetInnerHTML={{
-        __html: `(function(o,l,a,r,k,y){if(o.olark)return;
-          r="script";y=l.createElement(r);r=l.getElementsByTagName(r)[0];
-          y.async=1;y.src="//"+a;r.parentNode.insertBefore(y,r);
-          y=o.olark=function(){k.s.push(arguments);k.t.push(+new Date)};
-          y.extend=function(i,j){y("extend",i,j)};
-          y.identify=function(i){y("identify",k.i=i)};
-          y.configure=function(i,j){y("configure",i,j);k.c[i]=j};
-          k=y._={s:[],t:[+new Date],c:{},l:a};
-          })(window,document,"static.olark.com/jsclient/loader.js");
-          olark.identify("8022-431-10-3383");`,
-      }}
-      key="olark"
+      id="ze-snippet"
+      src="https://static.zdassets.com/ekr/snippet.js?key=e32809b5-6032-4c2f-b1f9-63931adc0cc1"
     />,
   ]);
 };
@@ -98,6 +86,6 @@ const addOlark = (args: ReplaceRendererArgs) => {
 export const replaceRenderer: GatsbySSR['replaceRenderer'] = (
   args: ReplaceRendererArgs
 ): any => { // eslint-disable-line @typescript-eslint/no-explicit-any
-  addOlark(args);
+  addZendesk(args);
   extractInlinedStyles(args);
 };
