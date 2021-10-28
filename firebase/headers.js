@@ -62,10 +62,15 @@ module.exports = [
           ],
           'connect-src': [
             cspKeywords.SELF,
-            'knrpc.olark.com',
             'status.maxmind.com',
             'www.google-analytics.com',
             'www.googleapis.com',
+            'https://ekr.zdassets.com',
+            'https://maxmind.zendesk.com',
+            'https://static.zdassets.com',
+            'https://*.zopim.com',
+            'wss://maxmind.zendesk.com',
+            'wss://*.zopim.com',
           ],
           'default-src': [
             cspKeywords.SELF,
@@ -73,20 +78,38 @@ module.exports = [
           'font-src': [
             cspKeywords.SELF,
             'data:',
-            'static.olark.com',
+            'https://ekr.zdassets.com',
+            'https://maxmind.zendesk.com',
+            'https://static.zdassets.com',
+            'https://*.zopim.com',
+            'wss://maxmind.zendesk.com',
+            'wss://*.zopim.com',
           ],
           'form-action ': [
             cspKeywords.SELF,
           ],
           'frame-src': [
             cspKeywords.SELF,
-            'static.olark.com',
+            'https://ekr.zdassets.com',
+            'https://maxmind.zendesk.com',
+            'https://static.zdassets.com',
+            'https://*.zopim.com',
+            'wss://maxmind.zendesk.com',
+            'wss://*.zopim.com',
           ],
           'img-src': [
             cspKeywords.SELF,
             'data:',
-            'log.olark.com',
             'www.google-analytics.com',
+            'https://ekr.zdassets.com',
+            'https://maxmind.zendesk.com',
+            'https://static.zdassets.com',
+            'https://*.zopim.com',
+            'wss://maxmind.zendesk.com',
+            'wss://*.zopim.com',
+          ],
+          'media-src': [
+            'https://static.zdassets.com',
           ],
           'object-src': [
             cspKeywords.NONE,
@@ -94,18 +117,20 @@ module.exports = [
           'script-src': [
             cspKeywords.SELF,
             cspKeywords.REPORT_SAMPLE,
-            cspKeywords.UNSAFE_INLINE, // Olark 😕
-            'api.olark.com',
-            'knrpc.olark.com',
-            'static.olark.com',
+            cspKeywords.UNSAFE_INLINE, // Misc. inlined scripts 😕
             'www.google-analytics.com',
             'www.googletagmanager.com',
+            'https://ekr.zdassets.com',
+            'https://maxmind.zendesk.com',
+            'https://static.zdassets.com',
+            'https://*.zopim.com',
+            'wss://maxmind.zendesk.com',
+            'wss://*.zopim.com',
           ],
           'style-src': [
             cspKeywords.SELF,
             cspKeywords.REPORT_SAMPLE,
-            cspKeywords.UNSAFE_INLINE, // Olark 😕
-            'static.olark.com',
+            cspKeywords.UNSAFE_INLINE, // Zendesk 😕
           ],
         })
           .reduce((acc, [
