@@ -12,20 +12,22 @@ import requestJson from '../_examples/request';
   <Property
     name="issuer_id_number"
     tags={{
-      'Max Length': 6,
+      'Max Length': 8,
     }}
   >
-    The issuer ID number for the credit card. This is the first six digits of
-    the credit card number. It identifies the issuing bank.
+    The issuer ID number for the credit card. This is the first six or eight
+    digits of the credit card number. It identifies the issuing bank.
   </Property>
 
   <Property
-    name="last_4_digits"
+    name="last_digits"
     tags={{
       'Max Length': 4,
     }}
   >
-    The last four digits of the credit card number.
+    The last digits of the credit card number. `last_digits` should be two
+    digits if the issuer ID number sent is eight digits; `last_digits`
+    should be four digits otherwise.
   </Property>
 
   <Property

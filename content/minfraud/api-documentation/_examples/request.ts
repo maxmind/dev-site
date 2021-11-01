@@ -23,7 +23,7 @@ export default {
     bank_phone_number: '800-342-1232',
     cvv_result: 'N',
     issuer_id_number: '323132',
-    last_4_digits: '7643',
+    last_digits: '7643',
     token: 'OQRST14PLQ98323',
     was_3d_secure_successful: true,
   },
