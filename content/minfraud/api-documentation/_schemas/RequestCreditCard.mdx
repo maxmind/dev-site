@@ -16,7 +16,8 @@ import requestJson from '../_examples/request';
     }}
   >
     The issuer ID number for the credit card. This is the first six or eight
-    digits of the credit card number. It identifies the issuing bank.
+    digits of the credit card number. It identifies the issuing bank. If you do
+    not know whether the IIN is six or eight digits long, send us six digits.
   </Property>
 
   <Property
@@ -25,9 +26,12 @@ import requestJson from '../_examples/request';
       'Max Length': 4,
     }}
   >
-    The last digits of the credit card number. `last_digits` should be two
-    digits if the issuer ID number sent is eight digits; `last_digits`
-    should be four digits otherwise.
+    The last digits of the credit card number. If you send six digits for the
+    [`issuer_id_number`](#schema--request--credit-card__issuer_id_number), you
+    should send the last four digits for `last_digits`. If you send eight digits
+    for `issuer_id_number`, you should send the last two digits for
+    `last_digits`. If you don't know how many digits you send for
+    `issuer_id_number`, you should send the last two digits for `last_digits`.
   </Property>
 
   <Property
