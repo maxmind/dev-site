@@ -1,0 +1,90 @@
+diff_in,old_geoname_id,new_geoname_id,old_city_name,new_city_name,old_country_name,new_country_name,old_country_code,new_country_code,old_subdivision_codes,new_subdivision_codes
+city_name,3348076,3348076,Kuvango,Cuvango,Angola,Angola,AO,AO,HUI,HUI
+city_name,9995627,9995627,Babachang,Babachangcun,China,China,CN,CN,GX,GX
+city_name,1816634,1816634,Beilong,Beilongcun,China,China,CN,CN,GX,GX
+city_name,9945846,9945846,Yizhou,Yizhoucun,China,China,CN,CN,GX,GX
+city_name,9926844,9926844,Bading,Badingcun,China,China,CN,CN,GX,GX
+city_name,1991801,1991801,Changzhou,Changzhoucun,China,China,CN,CN,GX,GX
+city_name,1909550,1909550,Shuanghe,Shuanghecun,China,China,CN,CN,GX,GX
+city_name,1783683,1783683,Yanjiang,Ziyang,China,China,CN,CN,SC,SC
+city_name,9996395,9996395,Baishandi,Baishandicun,China,China,CN,CN,GX,GX
+city_name,1992337,1992337,Jiangzhou,Jiangzhoucun,China,China,CN,CN,GX,GX
+city_name,1788772,1788772,Xinjing,Jingxi,China,China,CN,CN,GX,GX
+city_name,1813875,1813875,Dangchang Chengguanzhen,Tanchang Chengguanzhen,China,China,CN,CN,GS,GS
+city_name,1909572,1909572,Da'an,Da'ancun,China,China,CN,CN,GX,GX
+city_name,9943877,9943877,Chongdong,Chongdongcun,China,China,CN,CN,GX,GX
+city_name,1990787,1990787,Aishantang,Aishantangcun,China,China,CN,CN,GX,GX
+city_name,9906361,9906361,Balie,Baliecun,China,China,CN,CN,GX,GX
+city_name,11258886,11258886,Cuijia,Cuijiacun,China,China,CN,CN,SD,SD
+city_name,1992576,1992576,Dazhou,Dazhoucun,China,China,CN,CN,GX,GX
+city_name,1812990,1812990,Huazhou,Dengzhou,China,China,CN,CN,HA,HA
+city_name,1993722,1993722,Furong,Furongcun,China,China,CN,CN,GX,GX
+city_name,1990909,1990909,Shantou,Shantoucun,China,China,CN,CN,GX,GX
+city_name,1806602,1806602,Xushan,Cixi,China,China,CN,CN,ZJ,ZJ
+city_name,9907850,9907850,Baideng,Baidengcun,China,China,CN,CN,GX,GX
+city_name,1993711,1993711,Batan,Batancun,China,China,CN,CN,GX,GX
+city_name,1990842,1990842,Sihe,Sihecun,China,China,CN,CN,GX,GX
+city_name,1992065,1992065,Anle,Anlecun,China,China,CN,CN,GX,GX
+city_name,1803551,1803551,Lingcheng,Beiliu,China,China,CN,CN,GX,GX
+city_name,1279553,1279553,Yuhu,Zibihu,China,China,CN,CN,YN,YN
+city_name,9933245,9933245,Bainuo,Bainuocun,China,China,CN,CN,GX,GX
+city_name,3622323,3622323,Pocosol,Poco Sol,Costa Rica,Costa Rica,CR,CR,A,A
+city_name,3022467,3022467,Criqueboeuf,Cricqueboeuf,France,France,FR,FR,"NOR, 14","NOR, 14"
+city_name,2866075,2866075,Neuburg,Neuburg am Inn,Germany,Germany,DE,DE,BY,BY
+city_name,2747169,2747169,Sliedrech,Sliedrecht,Netherlands,Netherlands,NL,NL,ZH,ZH
+city_name,3191024,3191024,Sentrupert,Sentrupert na Dolenjskem,Slovenia,Slovenia,SI,SI,211,211
+city_name,2519240,2519240,Cordova,Córdoba,Spain,Spain,ES,ES,"AN, CO","AN, CO"
+city_name,3120998,3120998,Guenes,Gueenes,Spain,Spain,ES,ES,"PV, BI","PV, BI"
+city_name,3639747,3639747,Guigue,Gueiguee,Venezuela,Venezuela,VE,VE,G,G
+geoname_id,2767809,2767808,Redleiten,Redleiten,Austria,Austria,AT,AT,4,4
+geoname_id,3393471,6319437,Oriximina,Oriximina,Brazil,Brazil,BR,BR,PA,PA
+geoname_id,6321040,3449304,Sao Desiderio,Sao Desiderio,Brazil,Brazil,BR,BR,BA,BA
+geoname_id,3405806,6319378,Belterra,Belterra,Brazil,Brazil,BR,BR,PA,PA
+geoname_id,12229477,3450917,Rondinha,Rondinha,Brazil,Brazil,BR,BR,RS,RS
+geoname_id,3465696,6321289,Conego Marinho,Conego Marinho,Brazil,Brazil,BR,BR,MG,MG
+geoname_id,3451423,6319985,Riacho Frio,Riacho Frio,Brazil,Brazil,BR,BR,PI,PI
+geoname_id,6318838,8602146,Uruara,Uruara,Brazil,Brazil,BR,BR,PA,PA
+geoname_id,3448898,3448897,Sao Joao da Lagoa,Sao Joao da Lagoa,Brazil,Brazil,BR,BR,MG,MG
+geoname_id,3469933,3469942,Boa Esperanca,Boa Esperanca,Brazil,Brazil,BR,BR,ES,ES
+geoname_id,6319556,3463122,Formoso do Araguaia,Formoso do Araguaia,Brazil,Brazil,BR,BR,TO,TO
+geoname_id,6317803,6324149,Novo Sao Joaquim,Novo Sao Joaquim,Brazil,Brazil,BR,BR,MT,MT
+geoname_id,6319587,3393239,Palmeirante,Palmeirante,Brazil,Brazil,BR,BR,TO,TO
+geoname_id,3664716,6324275,Canutama,Canutama,Brazil,Brazil,BR,BR,AM,AM
+geoname_id,3471915,6323907,Apore,Apore,Brazil,Brazil,BR,BR,GO,GO
+geoname_id,6317214,6319704,Governador Eugenio Barros,Governador Eugenio Barros,Brazil,Brazil,BR,BR,MA,MA
+geoname_id,6318704,3387423,Sitio Novo do Tocantins,Sitio Novo do Tocantins,Brazil,Brazil,BR,BR,TO,TO
+geoname_id,3467373,3467371,Capao Bonito,Capao Bonito,Brazil,Brazil,BR,BR,SP,SP
+geoname_id,7771981,3459431,Juranda,Juranda,Brazil,Brazil,BR,BR,PR,PR
+geoname_id,11714057,7071303,Xi'an,Xi'an,China,China,CN,CN,ZJ,ZJ
+geoname_id,9907428,9893851,Xi'ancun,Xi'ancun,China,China,CN,CN,GX,GX
+geoname_id,9908079,9908107,Bailin,Bailin,China,China,CN,CN,GX,GX
+geoname_id,10132240,2048018,Xi'an,Xi'an,China,China,CN,CN,HE,HE
+geoname_id,1797132,9072919,Rizhao,Rizhao,China,China,CN,CN,SD,SD
+geoname_id,8418149,8400544,Nan'an,Nan'an,China,China,CN,CN,CQ,CQ
+geoname_id,12196371,9642065,Hebei,Hebei,China,China,CN,CN,HE,HE
+geoname_id,3667816,11885795,Sopetran,Sopetran,Colombia,Colombia,CO,CO,ANT,ANT
+geoname_id,8182762,3687908,Calima,Calima,Colombia,Colombia,CO,CO,VAC,VAC
+geoname_id,2613195,2613196,Soby,Soby,Denmark,Denmark,DK,DK,83,83
+geoname_id,3009141,12314465,La Gavotte,La Gavotte,France,France,FR,FR,"PAC, 13","PAC, 13"
+geoname_id,2807213,2807214,Wittorf,Wittorf,Germany,Germany,DE,DE,NI,NI
+geoname_id,3050547,12157097,Karolyhaza,Karolyhaza,Hungary,Hungary,HU,HU,GS,GS
+geoname_id,10739914,10739912,Chakalia,Chakalia,India,India,IN,IN,GJ,GJ
+geoname_id,1255778,11326868,Sonbarsa,Sonbarsa,India,India,IN,IN,BR,BR
+geoname_id,7863223,8362791,Sukarame,Sukarame,Indonesia,Indonesia,ID,ID,LA,LA
+geoname_id,2110564,2114134,Yamanobe,Yamanobe,Japan,Japan,JP,JP,6,6
+geoname_id,8313487,2110766,Tokamachi,Tokamachi,Japan,Japan,JP,JP,6,6
+geoname_id,8412148,8476318,Tsuruta,Tsuruta,Japan,Japan,JP,JP,2,2
+geoname_id,1850158,1850157,Tokushima,Tokushima,Japan,Japan,JP,JP,36,36
+geoname_id,1735297,1735339,Mukah,Mukah,Malaysia,Malaysia,MY,MY,13,13
+geoname_id,1413332,1174042,Kharian,Kharian,Pakistan,Pakistan,PK,PK,PB,PB
+geoname_id,1182682,1182680,Bhawana,Bhawana,Pakistan,Pakistan,PK,PK,PB,PB
+geoname_id,2270119,2270121,Carrascal,Carrascal,Portugal,Portugal,PT,PT,11,11
+geoname_id,504831,504830,Proletarsk,Proletarsk,Russia,Russia,RU,RU,ROS,ROS
+geoname_id,7045595,8515471,Nagornyy,Nagornyy,Russia,Russia,RU,RU,KAM,KAM
+geoname_id,712091,688902,Blahodatne,Blahodatne,Ukraine,Ukraine,UA,UA,14,14
+geoname_id,6931023,698347,Orzhiv,Orzhiv,Ukraine,Ukraine,UA,UA,56,56
+geoname_id,703397,703398,Lanivtsi,Lanivtsi,Ukraine,Ukraine,UA,UA,61,61
+geoname_id,709796,709794,Dolina,Dolina,Ukraine,Ukraine,UA,UA,61,61
+geoname_id,7645989,2635042,Uxbridge,Uxbridge,United Kingdom,United Kingdom,GB,GB,"ENG, HIL","ENG, HIL"
+geoname_id,2642470,6946887,Milton Bryan,Milton Bryan,United Kingdom,United Kingdom,GB,GB,"ENG, CBF","ENG, CBF"
+geoname_id,12047986,6690805,Elm Park,Elm Park,United Kingdom,United Kingdom,GB,GB,"ENG, HAV","ENG, HAV"
