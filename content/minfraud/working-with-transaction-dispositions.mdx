@@ -7,19 +7,21 @@ With minFraud Interactive, customers can create Custom Rules that are used to
 assign a disposition to every transaction received in a minFraud request.
 Custom Rules can set a transaction’s disposition to `accept`, `reject`, or
 `manual_review`. For more information on Custom Rules and Dispositions, see the
-documentation in our [Support Center](https://support.maxmind.com/minfraud-interactive/).
+documentation on our [knowledge base](https://support.maxmind.com/hc/en-us/articles/4408801942811-Use-Custom-Rules-and-Dispositions).
 
-After transactions are received, customers can use the [minFraud Interactive interface](https://support.maxmind.com/minfraud-interactive/)
-to review all transactions dispositioned as `manual_review`. Transactions can
-then either be `accept`ed or `reject`ed, and/or have a note added. In order for
-these manual updates made in minFraud Interactive to be useful, they need to
-find their way back into customers’ systems. The Dispositions API allows
+After transactions are received, customers can use the account portal to review
+all transactions dispositioned as `manual_review`. Transactions can then either
+be `accept`ed or `reject`ed, and/or have a note added. [Learn how to use the
+account portal to do manual review on our knowledge
+base.](https://support.maxmiind.com/hc/en-us/articles/4408762136603-Review-a-minFraud-Transaction).
+In order for these manual updates made in the account portal to be useful, they
+need to find their way back into customers’ systems. The Dispositions API allows
 customers to get a list of the manual updates and notes made to their
 transactions.
 
-**You only need to implement the Dispositions API if you (1) use the minFraud
-Interactive interface to make manual changes to dispositions, and (2) require
-those changes to propagate to your own system.**
+**You only need to implement the Dispositions API if you (1) use the account
+portal to make manual changes to dispositions, and (2) require those changes to
+propagate to your own system.**
 
 ## Making a disposition request
 

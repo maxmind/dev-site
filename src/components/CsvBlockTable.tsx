@@ -302,11 +302,11 @@ const CsvBlockTable: React.FC<ICsvBlockTable> = (props) => {
             {' '}
             <A
               // eslint-disable-next-line max-len
-              href="https://support.maxmind.com/geoip-faq/specifications-and-implementation/how-accurate-is-geoip2/"
+              href="https://support.maxmind.com/hc/en-us/articles/4407630607131-Geolocation-Accuracy"
               rel="nofollow noopener noreferrer"
               target="_blank"
             >
-              Learn more about accuracy on our Support Center.
+              Learn more about accuracy on our knowledge base.
             </A>
           </Td>
           { !isEnterprise && (

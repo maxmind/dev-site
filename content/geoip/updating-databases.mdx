@@ -129,8 +129,8 @@ issue a command like the following:
 curl -I 'https://download.maxmind.com/app/geoip_download?edition_id=GeoIP2-City-CSV&license_key=YOUR_LICENSE_KEY&suffix=zip'
 ```
 
-Where `YOUR_LICENSE_KEY` is a placeholder for your account’s actual
-[license key](https://support.maxmind.com/account-faq/account-related/where-do-i-find-my-license-key/).
+Where `YOUR_LICENSE_KEY` is a placeholder for your account’s actual license key.
+[Learn more about license keys on our knowledge base.](https://support.maxmind.com/hc/en-us/articles/4407116112539-Using-License-Keys)
 
 In the response, you can check the `last-modified` header for the file’s build
 date, or you can check the `content-disposition` header for the date that would
@@ -139,7 +139,7 @@ or program, according to your needs.
 
 This method only issues a HEAD request, rather than a download request, so
 running this check won’t count against your [daily database download
-limit](https://support.maxmind.com/geoip-faq/geoip2-and-geoip-legacy-databases/is-there-a-limit-to-how-often-i-can-download-a-database-from-my-maxmind-account/).
+limit](https://support.maxmind.com/hc/en-us/articles/4408216129947).
 
 ## Third-party tools
 
@@ -171,5 +171,5 @@ notify customers by [posting a release note](/geoip/release-notes).
 ## Download limits
 
 *MaxMind reserves the right to [limit the number of
-downloads](https://support.maxmind.com/geolite-faq/general/is-there-a-limit-to-how-often-i-can-download-a-database-from-my-maxmind-account/)
-made within a limited period of time.*
+downloads](https://support.maxmind.com/hc/en-us/articles/4408216129947) made
+within a limited period of time.*

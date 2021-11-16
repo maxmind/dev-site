@@ -63,7 +63,7 @@ the appropriate database](/geoip/docs/databases), and adapt the table to meet
 that structure.
 
 In this tutorial we will be creating a table to hold our network data called
-`geoip2_network`. Note that we will be using PostGreSQL's 
+`geoip2_network`. Note that we will be using PostGreSQL's
 [`cidr`](https://www.postgresql.org/docs/current/datatype-net-types.html) type
 for the `network` column. This will allow us to to query the database more
 easily.
@@ -85,7 +85,7 @@ create table geoip2_network (
 
 ### Load data into the network table
 
-We can now import the contents of `GeoIP2-City-Blocks-IPv4.csv` and 
+We can now import the contents of `GeoIP2-City-Blocks-IPv4.csv` and
 `GeoIP2-City-Blocks-IPv6.csv` into the table we just created:
 
 ```sql
@@ -131,7 +131,7 @@ Which gives a result of:
 network                        | 146.243.120.0/22
 geoname_id                     | 4930956
 registered_country_geoname_id  | 6252001
-represented_country_geoname_id | 
+represented_country_geoname_id |
 is_anonymous_proxy             | f
 is_satellite_provider          | f
 postal_code                    | 02118
@@ -170,7 +170,7 @@ Which gives a result of:
 network                        | 146.243.120.0/22
 geoname_id                     | 4930956
 registered_country_geoname_id  | 6252001
-represented_country_geoname_id | 
+represented_country_geoname_id |
 is_anonymous_proxy             | f
 is_satellite_provider          | f
 postal_code                    | 02118
@@ -183,8 +183,8 @@ Time: 9.671 ms
 
 You can now geolocate IP addresses using `latitude`, `longitude`, and
 `accuracy_radius`. For more information about how to understand the
-`accuracy_radius` field, see the [article on geolocation accuracy our Support
-Center](https://support.maxmind.com/geoip-faq/specifications-and-implementation/how-accurate-is-geoip2/).
+`accuracy_radius` field, see the [article on geolocation accuracy our knowledge
+base](https://support.maxmind.com/hc/en-us/articles/4407630607131-Geolocation-Accuracy).
 
 ## Optional: Create a table for locations data
 
@@ -268,7 +268,7 @@ where network >> '146.243.121.22';
 Which gives a result of:
 
 ```
- latitude | longitude | accuracy_radius | continent_name | country_name  | subdivision_1_name | city_name 
+ latitude | longitude | accuracy_radius | continent_name | country_name  | subdivision_1_name | city_name
 ----------+-----------+-----------------+----------------+---------------+--------------------+-----------
   42.3388 |  -72.0726 |             100 | North America  | United States | Massachusetts      | Boston
 (1 row)
@@ -330,6 +330,6 @@ location_subdivision_1_name        | Massachusetts
 location_city_name                 | Boston
 registered_country_continent_name  | North America
 registered_country_country_name    | United States
-represented_country_continent_name | 
-represented_country_country_name   | 
+represented_country_continent_name |
+represented_country_country_name   |
 ```

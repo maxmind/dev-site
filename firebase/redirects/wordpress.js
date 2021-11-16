@@ -7,17 +7,17 @@ module.exports = [
     type: 302,
   },
   {
-    destination: 'https://support.maxmind.com/',
+    destination: 'https://support.maxmind.com/hc/en-us',
     source: '/faq',
     type: 302,
   },
   {
-    destination: 'https://support.maxmind.com/',
+    destination: 'https://support.maxmind.com/hc/en-us',
     source: '/faq/*',
     type: 302,
   },
   {
-    destination: 'https://support.maxmind.com/',
+    destination: 'https://support.maxmind.com/hc/en-us',
     source: '/faq/*',
     type: 302,
   },
