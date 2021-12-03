@@ -8,7 +8,7 @@
     "typescript": "^3.8.0"
   },
   "engines": {
-    "node": "14"
+    "node": "16"
   },
   "main": "lib/index.js",
   "name": "functions",
