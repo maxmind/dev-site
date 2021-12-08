@@ -13,6 +13,7 @@ const falsePositives = [
   'https://www.maxmind.com',
   'https://www.nuget.org/packages/MaxMind.GeoIP2/',
   'https://www.nuget.org/packages/MaxMind.MinFraud',
+  'https://www.rubydoc.info/gems/minfraud/',
 ];
 
 // eslint-disable-next-line compat/compat
