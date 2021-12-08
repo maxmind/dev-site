@@ -136,7 +136,7 @@ Minfraud.configure do |c|
   c.account_id = 10
   c.license_key = 'LICENSEKEY'
 
-  # To use the GeoLite2 web service instead of GeoIP2 Precisions, set the host
+  # To use the GeoLite2 web service instead of GeoIP2, set the host
   # parameter to "geolite.info", eg:
   # host: 'geolite.info'
 end
@@ -146,7 +146,7 @@ end
 
 ### 3. Query the desired geolocation service
 
-GeoIP2 Precision offers 3 services: Insights, City, and Country.  GeoLite2
+GeoIP2 offers 3 services: Insights, City Plus, and Country.  GeoLite2
 offers 2 services: City and Country.  Each client library has an appropriately
 named method for accessing the desired geolocation service.
 

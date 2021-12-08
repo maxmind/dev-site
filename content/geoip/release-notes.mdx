@@ -119,7 +119,7 @@ differ for the field defined in the ‘diff_in’ column.
 
 <ReleaseNote date="2021-09-28" title="Update to geolocation databases to fix Japanese geolocations">
 We are releasing an update for our GeoIP2 Country, City, and Enterprise
-databases, and for our GeoIP2 Precision Country, City, and Insights web services
+databases, and for our GeoIP2 Country, City Plus, and Insights web services
 to fix a bug that geolocated about 0.1% of IP addresses located in Japan to the
 wrong country and the wrong coordinates.
 
@@ -127,7 +127,7 @@ When the updated databases are released today, you will be able to download them
 via [your account
 portal](https://www.maxmind.com/en/accounts/current/geoip/downloads), or using
 [your GeoIP Update program](/geoip/updating-databases). If you use any of the
-GeoIP2 Precision web services, you will have access to the updated data with no
+GeoIP2 web services, you will have access to the updated data with no
 further action required.
 </ReleaseNote>
 
@@ -140,8 +140,8 @@ services:
 - GeoIP2 City database
 - GeoLite2 City database
 - GeoIP2 Enterprise database
-- GeoIP2 Precision City web service
-- GeoIP2 Precision Insights web service
+- GeoIP2 City Plus web service
+- GeoIP2 Insights web service
 - minFraud Insights and Factors web services
 
 We are making this change in order to ensure it is clear that IP geolocation
@@ -183,7 +183,7 @@ geolocation mappings for iCloud Private Relay IPs.
 - We identify iCloud Private Relay IPs in our ISP dataset (present in our
 [GeoIP2 ISP](https://www.maxmind.com/en/geoip2-isp-database) and
 [Enterprise](https://www.maxmind.com/en/solutions/geoip2-enterprise-product-suite/enterprise-database)
-databases, and in our [GeoIP2 Precision
+databases, and in our [GeoIP2
 Insights](https://www.maxmind.com/en/geoip2-precision-services) web service)
 by tagging ranges as `iCloud Private Relay`.
 
@@ -205,7 +205,7 @@ In order to get ISP data that includes Private Relay IPs, update to the latest
 GeoIP2 ISP or Enterprise database. In order to get geolocation data for Private
 Relay IPs, update to the latest GeoIP2 City or Enterprise database.
 
-GeoIP2 Precision Insights customers do not need to take any action to receive
+GeoIP2 Insights customers do not need to take any action to receive
 this data. It will be returned in the
 [`/traits/isp`](/geoip/docs/web-services/responses/#schema--response--traits__isp)
 and [`/traits/organization`](/geoip/docs/web-services/responses/#schema--response--traits__organization)
@@ -459,8 +459,8 @@ The following GeoIP databases and services are affected by this change:
 - GeoIP2 ISP database
 - GeoIP2 Enterprise database
 - GeoIP Legacy ISP and Organization databases
-- GeoIP2 Precision and Legacy City Service
-- GeoIP2 Precision and Legacy Insights Service
+- GeoIP2 City Plus and Legacy City Web Service
+- GeoIP2 and Legacy Insights Web Service
 - minFraud Insights
 - minFraud Factors
 </ReleaseNote>

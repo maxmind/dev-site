@@ -3,7 +3,7 @@ draft: false
 title: Geolocate an IP address using Web Services with the client-side JavaScript
 ---
 
-Our GeoIP2 JavaScript client allows you to use GeoIP2 Precision services
+Our GeoIP2 JavaScript client allows you to use GeoIP2 web services
 client-side without doing any server-side integration on your end. While it is
 convenient, there are some caveats with its usage. Some browser settings and
 add-ons (such as ad blockers) may prevent the GeoIP2 JavaScript API from
@@ -53,15 +53,15 @@ The JavaScript client provides 3 public methods:
 
 | Option                                         | Description                                                                                                                       |
 | ---------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------- |
-| `geoip2.country(onSuccess, onError, options)`  | Calls the "GeoIP2 Precision: Country" endpoint using the routable IP address associated with the machine on which it is running.  |
-| `geoip2.city(onSuccess, onError, options)`     | Calls the "GeoIP2 Precision: City" endpoint using the routable IP address associated with the machine on which it is running.     |
-| `geoip2.insights(onSuccess, onError, options)` | Calls the "GeoIP2 Precision: Insights" endpoint using the routable IP address associated with the machine on which it is running. |
+| `geoip2.country(onSuccess, onError, options)`  | Calls the "GeoIP2 Country" endpoint using the routable IP address associated with the machine on which it is running.  |
+| `geoip2.city(onSuccess, onError, options)`     | Calls the "GeoIP2 City Plus" endpoint using the routable IP address associated with the machine on which it is running.     |
+| `geoip2.insights(onSuccess, onError, options)` | Calls the "GeoIP2 Insights" endpoint using the routable IP address associated with the machine on which it is running. |
 
 All of the functions take the same 3 arguments:
 
 * If successful, this function calls the `onSuccess` callback. The
   first parameter passed to the callback contains an object matching the output
-  of one of MaxMind’s [Precision web service API
+  of one of MaxMind’s [GeoIP2 web service API
   responses](/geoip/docs/web-services/responses).
 
   In addition to the attributes listed in the web services API docs, the object
@@ -216,7 +216,7 @@ separately. We will bump the JavaScript API version when we add new features or
 need to break backwards compatibility with previous versions of the JavaScript
 API.
 
-Version 2.1 of the JavaScript API uses version 2.1 of the [GeoIP2 Precision web
+Version 2.1 of the JavaScript API uses version 2.1 of the [GeoIP2 web
 services REST API](https://dev.maxmind.com/geoip/geoip2/web-services/).
 
 ### Browser support
