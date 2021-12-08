@@ -7,7 +7,7 @@ const { parseStringPromise } = require('xml2js');
 
 const OUTPUT_FILE = path.resolve('.tmp/redirects.json');
 
-const FIREBASE_URL = 'https://mm-static-site-staging.web.app';
+const FIREBASE_URL = 'https://mm-dev-site-staging.web.app';
 
 const SOURCE_SITEMAPS = [
   'https://dev.maxmind.com/wp-sitemap-posts-page-1.xml',

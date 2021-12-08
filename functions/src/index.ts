@@ -2,8 +2,8 @@ import * as functions from 'firebase-functions';
 
 const allowedHosts = [
   /^localhost:5000$/,
-  /^mm-static-site-staging\.web\.app$/,
-  /^mm-static-site-staging--pr-\d+-\w+\.web\.app$/,
+  /^mm-dev-site-staging\.web\.app$/,
+  /^mm-dev-site-staging--pr-\d+-\w+\.web\.app$/,
   /^dev\.maxmind\.com$/,
 ];
 

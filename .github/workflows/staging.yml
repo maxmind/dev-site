@@ -5,7 +5,7 @@ on:
 
 env:
   FIREBASE_CHANNEL_ID:  "pr-${{github.event.number}}"
-  FIREBASE_PROJECT_ID: mm-static-site-staging
+  FIREBASE_PROJECT_ID: mm-dev-site-staging
   FIREBASE_SERVICE_ACCOUNT: "${{ secrets.STAGING_FIREBASE_SERVICE_ACCOUNT }}"
 
 jobs:
