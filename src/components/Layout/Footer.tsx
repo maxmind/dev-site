@@ -112,9 +112,21 @@ const Footer: React.FC<React.HTMLProps<HTMLDivElement>> = (props) => {
           </h3>
           <a
             className={styles.link}
-            href="https://support.maxmind.com/"
+            href="https://support.maxmind.com/hc/en-us"
           >
-            Support Center
+            Knowledge Base
+          </a>
+          <a
+            className={styles.link}
+            href="https://support.maxmind.com/hc/en-us/categories/1260801482329-minFraud-Web-Services"
+          >
+            minFraud
+          </a>
+          <a
+            className={styles.link}
+            href="https://support.maxmind.com/hc/en-us/categories/1260801446650-GeoIP2-and-GeoLite2"
+          >
+            GeoIP
           </a>
           <a
             className={classNames(
@@ -142,13 +154,7 @@ const Footer: React.FC<React.HTMLProps<HTMLDivElement>> = (props) => {
           </a>
           <a
             className={styles.link}
-            href="https://support.maxmind.com/"
-          >
-            Frequently Asked Questions
-          </a>
-          <a
-            className={styles.link}
-            href="https://support.maxmind.com/geoip-data-correction-request/"
+            href="https://support.maxmind.com/hc/en-us/articles/4408252036123-GeoIP-Corrections"
           >
             GeoIP Data Correction Request
           </a>

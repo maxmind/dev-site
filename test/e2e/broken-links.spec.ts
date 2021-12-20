@@ -11,6 +11,7 @@ const falsePositives = [
   'https://www.linkedin.com/company/maxmind',
   'http://www.maxmind.com',
   'https://www.maxmind.com',
+  'https://support.maxmind.com',
   'https://www.nuget.org/packages/MaxMind.GeoIP2/',
   'https://www.nuget.org/packages/MaxMind.MinFraud',
   'https://www.rubydoc.info/gems/minfraud/',

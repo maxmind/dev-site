@@ -69,8 +69,8 @@ const navigation: IItem[] = [
         to: '/maxmind-server-ip-addresses',
       },
       {
-        title: 'Frequently Asked Questions',
-        url: 'https://support.maxmind.com/minfraud-faq/',
+        title: 'Knowledge Base',
+        url: 'https://support.maxmind.com/hc/en-us/categories/1260801482329-minFraud-Web-Services',
       },
     ],
     title: 'minFraud',
@@ -209,12 +209,8 @@ const navigation: IItem[] = [
         to: '/maxmind-server-ip-addresses',
       },
       {
-        title: 'GeoIP FAQ',
-        url: 'https://support.maxmind.com/geoip-faq/',
-      },
-      {
-        title: 'GeoLite FAQ',
-        url: 'https://support.maxmind.com/geolite-faq/',
+        title: 'Knowledge Base',
+        url: 'https://support.maxmind.com/hc/en-us/categories/1260801446650-GeoIP2-and-GeoLite2',
       },
       {
         title: 'MMDB Format Spec',

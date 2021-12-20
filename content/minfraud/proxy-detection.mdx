@@ -12,9 +12,9 @@ of geotargeting and ad serving environments, we recommend using the
 </Alert>
 
 The proxy detection web service provides a score measuring the risk associated
-with an IP address. Learn more about the proxyScore (called the IP Risk Score in
-current minFraud services) [on our Support 
-Center](https://support.maxmind.com/what-is-the-riskscore/#what-is-the-difference-between-the-riskScore-and-the-IP-Risk-Score).
+with an IP address. It is called the IP risk score in our current minFraud
+services. [Learn more about the IP risk score on our knowledge
+base.](https://support.maxmind.com/hc/en-us/articles/4408382525851-IP-Risk-Score)
 
 ## Release Notes
 
@@ -234,7 +234,7 @@ else:
 <?php
 $license_key = 'LICENSE_KEY_HERE';
 $ipaddress   = 'IP_ADDRESS_HERE';
-$query = "https://minfraud.maxmind.com/app/ipauth_http?l=" . $license_key 
+$query = "https://minfraud.maxmind.com/app/ipauth_http?l=" . $license_key
     . "&i=" . $ipaddress;
 $score = file_get_contents($query);
 echo $score;
