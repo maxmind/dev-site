@@ -154,7 +154,7 @@ const Footer: React.FC<React.HTMLProps<HTMLDivElement>> = (props) => {
           </a>
           <a
             className={styles.link}
-            href="https://support.maxmind.com/geoip-data-correction-request/"
+            href="https://support.maxmind.com/hc/en-us/articles/4408252036123-GeoIP-Corrections"
           >
             GeoIP Data Correction Request
           </a>
