@@ -3,9 +3,9 @@
     alt="MaxMind"
     src=".github/images/maxmind-logo-with-styles.svg"
     width="300"
-  />
-  <br/>
-  <br/>
+  >
+  <br>
+  <br>
   <small>Developer Documentation Static Site Generator</small>
 </h3>
 
