@@ -75,14 +75,13 @@ Alert. These codes are subject to change.
 
 ### Securing your webhook
 
-Part of securing your webhook is verifying that alert requests come from
-MaxMind.
+You can secure your webhook by verifying that alert requests come from MaxMind:
 
-* You can check each request comes from one of the IPs we list below.
-* You can check each request is signed using a secret you configure in your
-  [minFraud Alert configuration screen in your account
-  portal](https://www.maxmind.com/en/accounts/current/minfraud/alerts/settings)
-  (login required).
+* Check that requests come from one of the MaxMind IPs we [list
+below](#alert-webhook-request-ips).
+* Check that requests are signed using a secret you configure in your minFraud
+Alert configuration screen in your account portal. [Learn more about setting up
+signed requests below.](#signed-requests)
 
 #### Alert webhook request IPs
 
@@ -123,7 +122,7 @@ everything after the `?`. In this case, the text to be signed is:
 i=24.24.24.24&maxmindID=1234ABCD&domain=sample.com&city=Anytown&region=CA&country=US&date=Jan.+1,+1970&txnID=foo123&reason=IP+address+has+been+marked+as+a+high-risk+IP&reason_code=HIGH_RISK_IP&minfraud_id=2afb0d26-e3b4-4624-8e66-fd10e64b95df&shop_id=shop321
 ```
 
-In code this looks something like:
+You can check the signaturing using something like the following code:
 
 <CodeSet>
 
@@ -162,5 +161,5 @@ func verifySignature(secret, header, query string) (bool, error) {
 
 </CodeSet>
 
-To avoid timing attacks, please use a secure comparison function rather the
-equals operator of your language.
+To avoid [timing attacks](https://en.wikipedia.org/wiki/Timing_attack), please
+use a secure comparison function rather the equals operator of your language.
