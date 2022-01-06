@@ -36,11 +36,6 @@ The User-Agent of the minFraud Alert service is `MaxMind MinFraud Alert Robot`.
 http://yourdomain/yoururl?i=24.24.24.24&maxmindID=1234ABCD&domain=sample.com&city=Anytown&region=CA&country=US&date=Jan.+1,+1970&txnID=foo123&reason=IP+address+has+been+marked+as+a+high-risk+IP&reason_code=HIGH_RISK_IP&minfraud_id=2afb0d26-e3b4-4624-8e66-fd10e64b95df&shop_id=shop321
 ```
 
-#### Alert webhook request IPs
-minFraud alert requests may come from one of the following IP addresses. This list is subject to change.
-
- * `35.186.179.139`
-
 #### Parameters
 
 The following are the parameters that will be included in the query string of
@@ -50,7 +45,7 @@ the request. Additional parameters may be added in the future.
 | ---------------- | ---------------------------------------------------------------------------------------------------------------------------------- |
 | `city`           | The billing city included in the original minFraud request.                                                                        |
 | `country`        | The billing country included in the original minFraud request.                                                                     |
-| `date`	         | The date of the original minFraud request, e.g., `Nov. 1, 2019`.                                                                   |
+| `date`           | The date of the original minFraud request, e.g., `Nov. 1, 2019`.                                                                   |
 | `domain`         | The email domain included in the original minFraud request.                                                                        |
 | `i`              | The IP address included in the original minFraud request.                                                                          |
 | `maxmindID`      | The minFraud Legacy `maxmindID` of the original minFraud request.                                                                  |
@@ -77,3 +72,94 @@ Alert. These codes are subject to change.
 | `HIGH_RISK_IP`     | IP address has been marked as a high-risk IP                                                     |
 | `HOSTING_PROVIDER` | IP is from High Risk Hosting Provider                                                            |
 | `POSTAL_VELOCITY`  | IP address had high velocity of orders (e.g. different zipcodes on same IP address)              |
+
+### Securing your webhook
+
+You can secure your webhook by verifying that alert requests come from MaxMind:
+
+* Check that requests come from one of the MaxMind IPs we [list
+below](#alert-webhook-request-ips).
+* Check that requests are signed using a secret you configure in your minFraud
+Alert configuration screen in your account portal. [Learn more about setting up
+signed requests below.](#signed-requests)
+
+#### Alert webhook request IPs
+
+minFraud alert requests may come from one of the following IP addresses. This
+list is subject to change.
+
+* `35.186.179.139`
+
+#### Signed requests
+
+Alert requests can be signed by MaxMind. To enable signed requests, visit your
+[minFraud Alert configuration screen in your account
+portal](https://www.maxmind.com/en/accounts/current/minfraud/alerts/settings)
+(login required) and set an Alert Webhook Secret.
+
+Once you set a secret, each alert request will have an HTTP header with a
+signature of the request. You can calculate the signature of the request on
+your server and check it matches the signature in the header to verify the
+request is authentic.
+
+For example, if the secret is `supersekret-0123456789` and the alert request
+is:
+
+```html
+http://yourdomain/yoururl?i=24.24.24.24&maxmindID=1234ABCD&domain=sample.com&city=Anytown&region=CA&country=US&date=Jan.+1,+1970&txnID=foo123&reason=IP+address+has+been+marked+as+a+high-risk+IP&reason_code=HIGH_RISK_IP&minfraud_id=2afb0d26-e3b4-4624-8e66-fd10e64b95df&shop_id=shop321
+```
+
+Then the request will include this header:
+
+```
+X-MaxMind-Alert-HMAC-SHA256: c333974ffdddfa5d1ba866171847bacf1af06bbe6ff6b6ce73632116ed36f617
+```
+
+The signature is the hex encoded HMAC-SHA256 of the URL query parameters -
+everything after the `?`. In this case, the text to be signed is:
+
+```html
+i=24.24.24.24&maxmindID=1234ABCD&domain=sample.com&city=Anytown&region=CA&country=US&date=Jan.+1,+1970&txnID=foo123&reason=IP+address+has+been+marked+as+a+high-risk+IP&reason_code=HIGH_RISK_IP&minfraud_id=2afb0d26-e3b4-4624-8e66-fd10e64b95df&shop_id=shop321
+```
+
+You can check the signaturing using something like the following code:
+
+<CodeSet>
+
+```ruby
+require 'openssl'
+require 'openssl/hmac'
+require 'rack/utils'
+
+def verify_signature(secret, header, query)
+  expectedMAC = OpenSSL::HMAC.hexdigest('SHA256', secret, query)
+
+  raise 'invalid signature' if !Rack::Utils.secure_compare(header, expectedMAC)
+end
+```
+
+```go
+import (
+	"crypto/hmac"
+	"crypto/sha256"
+	"encoding/hex"
+)
+
+func verifySignature(secret, header, query string) (bool, error) {
+  gotMAC, err := hex.DecodeString(header)
+  if err != nil {
+    return false, err
+  }
+
+  mac := hmac.New(sha256.New, []byte(secret))
+  mac.Write([]byte(query))
+  expectedMAC := mac.Sum(nil)
+
+  return hmac.Equal(gotMAC, expectedMAC), nil
+}
+```
+
+</CodeSet>
+
+To avoid [timing attacks](https://en.wikipedia.org/wiki/Timing_attack), please
+use a secure comparison function rather the equals operator of your language.
