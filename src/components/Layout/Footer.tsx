@@ -83,7 +83,7 @@ const Footer: React.FC<React.HTMLProps<HTMLDivElement>> = (props) => {
             className={styles.link}
             href="https://www.maxmind.com/en/geoip2-precision-services"
           >
-            GeoIP2 Precision Services
+            GeoIP2 web services
           </a>
           <a
             className={styles.link}

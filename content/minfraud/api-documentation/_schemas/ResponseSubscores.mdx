@@ -8,8 +8,8 @@ import responseJson from '../_examples/response';
     'factors',
   ]}
 >
-  This object contains subscores for many of the individual components that are
-  used in calculating the `risk_score`.
+  This object contains risk factor scores for many of the individual components
+  that are used in calculating the `risk_score`.
 
   This object is only included with [minFraud Factors](https://www.maxmind.com/en/solutions/minfraud-services/minfraud-factors).
 
@@ -60,8 +60,8 @@ import responseJson from '../_examples/response';
   >
     Risk of IP address based on the number of chargebacks and high risk activity
     sighted on your account and shop ID from similar IP networks. This is only
-    available to 
-    users [sending chargeback data to MaxMind](/minfraud/report-a-transaction). 
+    available to
+    users [sending chargeback data to MaxMind](/minfraud/report-a-transaction).
     If present, this is a value in the range 0.01 to 99.
   </Property>
 
@@ -160,7 +160,7 @@ import responseJson from '../_examples/response';
       'Max': 99,
     }}
   >
-    **This field has been deprecated.** Please use the `email_address` subscore
+    **This field has been deprecated.** Please use the `email_address` risk factor
     instead.
   </Property>
 

@@ -4,7 +4,7 @@ title: minFraud Release Notes - 2019 Archive
 ---
 
 <ReleaseNote date="2019-12-23" title="The USER_ID_REQUIRED error code is now ACCOUNT_ID_REQUIRED">
-Our web services, including [GeoIP2 Precision web
+Our web services, including [GeoIP2 web
 services](https://www.maxmind.com/en/geoip2-precision-insights) and [minFraud
 services](https://www.maxmind.com/en/solutions/minfraud-services), now return
 the error code `ACCOUNT_ID_REQUIRED` instead of `USER_ID_REQUIRED` when the
@@ -55,7 +55,7 @@ Please ensure you are using TLS v1.2+ to connect to MaxMind services.
 </ReleaseNote>
 
 <ReleaseNote date="2019-10-15" title="New static_ip_score output in web services">
-The following output has been added to the [GeoIP2 Precision Insights web
+The following output has been added to the [GeoIP2 Insights web
 service](https://www.maxmind.com/en/geoip2-precision-insights), and [minFraud
 Insights and Factors web
 services](https://www.maxmind.com/en/solutions/minfraud-services):
@@ -87,7 +87,7 @@ have questions.
 We have made improvements to how we identify cellular IPs for the
 `connection_type` field provided in the [GeoIP2 Connection Type
 database](https://www.maxmind.com/en/geoip2-connection-type-database), and the
-`user_type` field provided in the [GeoIP2 Precision Insights web
+`user_type` field provided in the [GeoIP2 Insights web
 service](https://www.maxmind.com/en/geoip2-precision-insights) and [minFraud
 services](https://www.maxmind.com/en/solutions/minfraud-services). Accuracy for
 cellular identification should now be about 95% accurate globally.
@@ -118,7 +118,7 @@ output.
 </ReleaseNote>
 
 <ReleaseNote date="2019-09-19" title="New network and user_count outputs in web services">
-The following outputs have been added to the [GeoIP2 Precision Insights web
+The following outputs have been added to the [GeoIP2 Insights web
 service](https://www.maxmind.com/en/geoip2-precision-insights), and [minFraud
 Insights and Factors web
 services](https://www.maxmind.com/en/solutions/minfraud-services):
@@ -156,7 +156,7 @@ our
 
 <ReleaseNote date="2019-08-29" title="IP and email tenure deprecation">
 Effective August 29th, 2019, we have deprecated the `/subscores/ip_tenure` and
-`subscores/email_tenure` subscore outputs in the minFraud Factors service
+`subscores/email_tenure` risk-factor outputs in the minFraud Factors service
 because they provided limited value. The subscores will default to 1 and will
 be removed in a future release. The IP tenure is reflected in the overall risk
 score. The user tenure on email is reflected in the `/subscores/email_address`
@@ -165,7 +165,7 @@ output.
 
 <ReleaseNote date="2019-08-21" title="Improved business IP detection">
 We have made improvements in how we detect business IPs for the user type field
-provided as part of the [GeoIP2 Precision Insights web
+provided as part of the [GeoIP2 Insights web
 service](https://www.maxmind.com/en/geoip2-precision-insights) and [minFraud
 services](https://www.maxmind.com/en/solutions/minfraud-services).
 Approximately 1% of residential IPs were recently corrected to the appropriate
