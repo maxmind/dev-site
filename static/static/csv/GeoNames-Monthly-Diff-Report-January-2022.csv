@@ -1,0 +1,84 @@
+diff_in,old_geoname_id,new_geoname_id,old_city_name,new_city_name,old_country_name,new_country_name,old_country_code,new_country_code,old_subdivision_codes,new_subdivision_codes
+city_name,2765688,2765688,Schoenfeld im Marchfeld,Schonfeld,Austria,Austria,AT,AT,3,3
+city_name,2766406,2766406,Sankt Sigmund im Sellrain,Sankt Sigmund,Austria,Austria,AT,AT,7,7
+city_name,3467723,3467723,Campo Limpo,Campo Limpo Paulista,Brazil,Brazil,BR,BR,SP,SP
+city_name,2035261,2035261,Taihecun,Qitaihe,China,China,CN,CN,HL,HL
+city_name,6833503,6833503,Wanzhou,Wanzhoucun,China,China,CN,CN,GD,GD
+city_name,2037393,2037393,Fengxiang,Luobei,China,China,CN,CN,HL,HL
+city_name,1893389,1893389,Anmiao,Anmiaocun,China,China,CN,CN,GD,GD
+city_name,10651383,10651383,Beigou,Beigoucun,China,China,CN,CN,GD,GD
+city_name,6787177,6787177,Hongxing,Hongxingcun,China,China,CN,CN,GD,GD
+city_name,1916012,1916012,Chongshan,Wuzhishan,China,China,CN,CN,HI,HI
+city_name,2035754,2035754,Mingyue,Antu,China,China,CN,CN,JL,JL
+city_name,3624198,3624198,Ciudad Cortes,Puerto Cortes,Costa Rica,Costa Rica,CR,CR,P,P
+city_name,11054637,11054637,Orestad,Orestad Syd,Denmark,Denmark,DK,DK,84,84
+city_name,2610310,2610310,Viby,Viby J,Denmark,Denmark,DK,DK,82,82
+city_name,2978199,2978199,Saint-Mathieu,Saint-Mathieu-de-Treviers,France,France,FR,FR,"OCC, 34","OCC, 34"
+city_name,2943425,2943425,Bruck in der Oberpfalz,Bruck,Germany,Germany,DE,DE,BY,BY
+city_name,2877336,2877336,Lindenberg im Allgau,Lindenberg,Germany,Germany,DE,DE,BY,BY
+city_name,2949928,2949928,Berod bei Hoechstenbach,Berod,Germany,Germany,DE,DE,RP,RP
+city_name,2941273,2941273,Burghausen bei Munnerstadt,Burghausen,Germany,Germany,DE,DE,BY,BY
+city_name,2810120,2810120,Westheim bei Hassfurt,Westheim,Germany,Germany,DE,DE,BY,BY
+city_name,2861969,2861969,Nordheim vor der Rhon,Nordheim,Germany,Germany,DE,DE,BY,BY
+city_name,2845937,2845937,Rodheim vor der Hoehe,Rodheim,Germany,Germany,DE,DE,HE,HE
+city_name,2809984,2809984,Wetter (Ruhr),Wetter,Germany,Germany,DE,DE,NW,NW
+city_name,2891832,2891832,Kelkheim (Taunus),Kelkheim,Germany,Germany,DE,DE,HE,HE
+city_name,2933168,2933168,Egg an der Gunz,Egg,Germany,Germany,DE,DE,BY,BY
+city_name,2823368,2823368,Tettnang Castle,Tettnang,Germany,Germany,DE,DE,BW,BW
+city_name,2922582,2922582,Garching bei Munchen,Garching,Germany,Germany,DE,DE,BY,BY
+city_name,1275362,1275362,Bokaro Steel City,Bokaro,India,India,IN,IN,JH,JH
+city_name,1526059,1526059,Astrakhan,Astrakhanka,Kazakhstan,Kazakhstan,KZ,KZ,AKM,AKM
+city_name,3517220,3517220,Santa Maria Petapa,Petapa,Mexico,Mexico,MX,MX,OAX,OAX
+city_name,2261633,2261633,Vila Nogueira de Azeitao,Vila Nogueira,Portugal,Portugal,PT,PT,15,15
+city_name,2739152,2739152,Gafanha da Nazare,Gafanha,Portugal,Portugal,PT,PT,1,1
+city_name,2741742,2741742,Caldas das Taipas,Taipas,Portugal,Portugal,PT,PT,3,3
+city_name,2736792,2736792,Pampilhosa do Botao,Pampilhosa,Portugal,Portugal,PT,PT,1,1
+city_name,2739841,2739841,Estacao do Mogadouro,Mogadouro,Portugal,Portugal,PT,PT,4,4
+city_name,2734339,2734339,Sao Romao do Coronado,Coronado,Portugal,Portugal,PT,PT,13,13
+city_name,670059,670059,Poiana Marului (Brasov),Poiana Marului,Romania,Romania,RO,RO,BV,BV
+city_name,698436,698436,Ordzhonikidze,Pokrov,Ukraine,Ukraine,UA,UA,12,12
+city_name,709932,709932,Dniprodzerzhynsk,Kamianske,Ukraine,Ukraine,UA,UA,12,12
+city_name,2646620,2646620,Hopton on Sea,Hopton,United Kingdom,United Kingdom,GB,GB,"ENG, NFK","ENG, NFK"
+city_name,1588189,1588189,Huong Ba Thuoc,Ba Thuoc,Vietnam,Vietnam,VN,VN,21,21
+city_name,1566910,1566910,Huong Tan Lac,Tan Lac,Vietnam,Vietnam,VN,VN,14,14
+geoname_id,3389141,3389134,Santo Antonio,Santo Antonio,Brazil,Brazil,BR,BR,RN,RN
+geoname_id,3391368,6324187,Porto Grande,Porto Grande,Brazil,Brazil,BR,BR,AP,AP
+geoname_id,3466430,12377009,Cerqueira Cesar,Cerqueira Cesar,Brazil,Brazil,BR,BR,SP,SP
+geoname_id,6317869,6323850,Paranaita,Paranaita,Brazil,Brazil,BR,BR,MT,MT
+geoname_id,3472398,12199880,Alvorada,Alvorada,Brazil,Brazil,BR,BR,RS,RS
+geoname_id,8602146,6318838,Uruara,Uruara,Brazil,Brazil,BR,BR,PA,PA
+geoname_id,3406883,3406887,Bacuri,Bacuri,Brazil,Brazil,BR,BR,MA,MA
+geoname_id,11959362,3449273,Sao Domingos,Sao Domingos,Brazil,Brazil,BR,BR,SC,SC
+geoname_id,3389341,8602364,Santa Rita,Santa Rita,Brazil,Brazil,BR,BR,CE,CE
+geoname_id,3662009,6324276,Tapaua,Tapaua,Brazil,Brazil,BR,BR,AM,AM
+geoname_id,3451202,3451203,Rio das Pedras,Rio das Pedras,Brazil,Brazil,BR,BR,SP,SP
+geoname_id,1908254,6833215,Beijie,Beijie,China,China,CN,CN,GD,GD
+geoname_id,3791503,3670162,San Antonio,San Antonio,Colombia,Colombia,CO,CO,TOL,TOL
+geoname_id,3778835,3679317,La Cumbre,La Cumbre,Colombia,Colombia,CO,CO,VAC,VAC
+geoname_id,2613196,2613195,Soby,Soby,Denmark,Denmark,DK,DK,83,83
+geoname_id,2846967,2846965,Riepe,Riepe,Germany,Germany,DE,DE,NI,NI
+geoname_id,2829664,2829663,Stahlhofen,Stahlhofen,Germany,Germany,DE,DE,RP,RP
+geoname_id,2906334,2906333,Hennickendorf,Hennickendorf,Germany,Germany,DE,DE,BB,BB
+geoname_id,2828259,2828258,Steinebach,Steinebach,Germany,Germany,DE,DE,RP,RP
+geoname_id,2929744,2929743,Erbstetten,Erbstetten,Germany,Germany,DE,DE,BW,BW
+geoname_id,2944205,2944204,Brettach,Brettach,Germany,Germany,DE,DE,BW,BW
+geoname_id,2923296,2923294,Gaisbach,Gaisbach,Germany,Germany,DE,DE,BW,BW
+geoname_id,2909443,2909442,Hassel,Hassel,Germany,Germany,DE,DE,NI,NI
+geoname_id,2854544,2854543,Petzenhausen,Petzenhausen,Germany,Germany,DE,DE,BY,BY
+geoname_id,12048475,10587242,Sultanpur,Sultanpur,India,India,IN,IN,UP,UP
+geoname_id,1436659,10146822,Mathana,Mathana,India,India,IN,IN,HR,HR
+geoname_id,9031767,9036161,Botta,Botta,Italy,Italy,IT,IT,"25, BG","25, BG"
+geoname_id,9009219,1859319,Kitakata,Kitakata,Japan,Japan,JP,JP,7,7
+geoname_id,1778306,1751647,Bukit Payung,Bukit Payung,Malaysia,Malaysia,MY,MY,11,11
+geoname_id,1735339,1735297,Mukah,Mukah,Malaysia,Malaysia,MY,MY,13,13
+geoname_id,11561654,11561010,Heroes de Padierna,Heroes de Padierna,Mexico,Mexico,MX,MX,CMX,CMX
+geoname_id,2206805,2184409,Porangahau,Porangahau,New Zealand,New Zealand,NZ,NZ,HKB,HKB
+geoname_id,775506,775507,Borowa Gora,Borowa Gora,Poland,Poland,PL,PL,14,14
+geoname_id,582203,582200,Anan'ino,Anan'ino,Russia,Russia,RU,RU,YAR,YAR
+geoname_id,994859,994860,Inanda,Inanda,South Africa,South Africa,ZA,ZA,KZN,KZN
+geoname_id,7040775,713062,Azovskoye,Azovskoye,Ukraine,Ukraine,UA,UA,43,43
+geoname_id,2642470,6946887,Milton Bryan,Milton Bryan,United Kingdom,United Kingdom,GB,GB,"ENG, CBF","ENG, CBF"
+geoname_id,1592965,1592966,My An,My An,Vietnam,Vietnam,VN,VN,44,44
+subdivision_codes,643636,643636,Orismala,Orismala,Finland,Finland,FI,FI,12,3
+subdivision_codes,656456,656456,Isokyrö,Isokyrö,Finland,Finland,FI,FI,12,3
+subdivision_codes,634666,634666,Tervajoki,Tervajoki,Finland,Finland,FI,FI,12,3
