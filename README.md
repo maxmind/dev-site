@@ -100,3 +100,6 @@ yarn build && yarn preview
 **Firebase function resources are shared throughout environments.** If two PRs
 have changes to Firebase functions, the deployed functions will be those of the
 PR whose `Firebase - Staging` GitHub workflow has run most recently.
+
+
+## Known Issues

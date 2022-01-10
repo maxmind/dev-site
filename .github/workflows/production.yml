@@ -42,7 +42,7 @@ jobs:
 
       - uses: actions/setup-node@04c56d2f954f1e4c69436aa54cfef261a018f458  # v2.5.0
         with:
-          node-version: '14'
+          node-version: '16'
 
       - name: Get cached dependencies
         id: cache-node-modules
@@ -85,7 +85,7 @@ jobs:
 
       - uses: actions/setup-node@04c56d2f954f1e4c69436aa54cfef261a018f458  # v2.5.0
         with:
-          node-version: '14'
+          node-version: '16'
 
       - name: Get cached dependencies
         uses: actions/cache@c64c572235d810460d0d6876e9c705ad5002b353 # v2.1.6
@@ -110,7 +110,7 @@ jobs:
 
       - uses: actions/setup-node@04c56d2f954f1e4c69436aa54cfef261a018f458  # v2.5.0
         with:
-          node-version: '14'
+          node-version: '16'
 
       - name: Get cached dependencies
         uses: actions/cache@c64c572235d810460d0d6876e9c705ad5002b353 # v2.1.6
@@ -141,7 +141,7 @@ jobs:
 
       - uses: actions/setup-node@04c56d2f954f1e4c69436aa54cfef261a018f458  # v2.5.0
         with:
-          node-version: '14'
+          node-version: '16'
 
       - name: Get cached build
         uses: actions/cache@c64c572235d810460d0d6876e9c705ad5002b353 # v2.1.6
@@ -178,7 +178,7 @@ jobs:
 
       - uses: actions/setup-node@04c56d2f954f1e4c69436aa54cfef261a018f458  # v2.5.0
         with:
-          node-version: '14'
+          node-version: '16'
 
       - name: Get cached build
         uses: actions/cache@c64c572235d810460d0d6876e9c705ad5002b353 # v2.1.6
@@ -223,7 +223,7 @@ jobs:
 
       - uses: actions/setup-node@04c56d2f954f1e4c69436aa54cfef261a018f458  # v2.5.0
         with:
-          node-version: '14'
+          node-version: '16'
 
       - name: Get cached dependencies
         uses: actions/cache@c64c572235d810460d0d6876e9c705ad5002b353 # v2.1.6
