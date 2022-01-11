@@ -11,6 +11,7 @@ export interface IReleaseNotesArchiveList {
 
 const years: Record<ProductSlug, number[]> = {
   geoip: [
+    2021,
     2020,
     2019,
     2018,
@@ -21,6 +22,7 @@ const years: Record<ProductSlug, number[]> = {
     2013,
   ],
   minfraud: [
+    2021,
     2020,
     2019,
     2018,
