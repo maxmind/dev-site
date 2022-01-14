@@ -95,7 +95,7 @@ const Footer: React.FC<React.HTMLProps<HTMLDivElement>> = (props) => {
             className={styles.link}
             href="https://dev.maxmind.com/geoip/geoip2/geolite2"
           >
-            GeoLite2 Databases
+            GeoLite2 Free Geolocation Data
           </a>
         </div>
 

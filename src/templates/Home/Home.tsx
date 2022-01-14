@@ -4,11 +4,15 @@ import {
   FaBookOpen as ViewDocsIcon,
   FaCode as ContributeIcon,
   FaRocket as QuickstartIcon,
+  FaUserCheck as SignUpIcon,
 } from 'react-icons/fa';
 
 import Layout from '../../components/Layout/Layout';
 import LinkButton from '../../components/LinkButton';
-import { a as A } from '../../components/Mdx';
+import {
+  a as A,
+  LinkGroupCard,
+} from '../../components/Mdx';
 import Product from './Product';
 import { IHomeContext } from './query';
 
@@ -153,24 +157,14 @@ const Home: React.FC<IHome> = (props) => {
         </Product>
       </div>
       <div
-        className={styles.contribute}
+        className={styles.signUp}
       >
-        <p
-          className={styles.contributeCopy}
-        >
-          <ContributeIcon
-            className={styles.contributeIcon}
-          />
-          Learn how to
-          {' '}
-          <A
-            href="/contribute"
-          >
-            contribute to the MaxMind community
-          </A>
-          {' '}
-          by developing third-party integrations, tools, and apps.
-        </p>
+        <LinkGroupCard
+          heading="Sign up for a GeoLite2 account
+            to get free IP geolocation data."
+          icon={SignUpIcon}
+          to="https://www.maxmind.com/en/geolite2/signup"
+        />
       </div>
     </Layout>
   );
