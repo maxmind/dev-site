@@ -21,30 +21,6 @@
   margin-bottom: calc(var(--mm-spacing) / 2);
 }
 
-.contribute {
-  background-color: #f0f8ff;
-  border-radius: var(--mm-border-radius);
-  border-top: 1px solid #cfdee8;
-  box-shadow: rgb(0 0 0 / 10%) 0 10px 15px -3px, rgb(0 0 0 / 5%) 0 4px 6px -2px;
-  margin: var(--mm-spacing) var(--mm-spacing) calc(var(--mm-spacing) * 2);
-  padding: var(--mm-spacing);
-}
-
-.contributeCopy {
-  font-size: 14px;
-}
-
-.contributeLink {
-  color: #005270;
-  font-weight: 600;
-}
-
-.contributeIcon {
-  color: var(--mm-color-active-blue);
-  font-size: 20px;
-  margin-right: 8px;
-}
-
 .noWrap {
   white-space: nowrap;
 }
@@ -61,6 +37,23 @@
   padding: var(--mm-spacing);
 }
 
+.signUp {
+  padding: 0 var(--mm-spacing) var(--mm-spacing) var(--mm-spacing);
+
+  h3 {
+    font-size: 16px !important;
+  }
+
+  svg {
+    width: 25px !important;
+  }
+
+  > * {
+    --page-type-color: rgba(0, 255, 102, 0.5);
+  }
+}
+
+
 @include variables.breakpoint('md') {
   .layout [class^='Layout-module--content'] {
     --mm-spacing: 40px;
@@ -73,12 +66,6 @@
 
   .calloutSubheading {
     font-size: 20px;
-  }
-
-  .contribute {
-    margin: 0 var(--mm-spacing) var(--mm-spacing);
-    padding: calc(var(--mm-spacing) / 2);
-    text-align: center;
   }
 
   .products {
