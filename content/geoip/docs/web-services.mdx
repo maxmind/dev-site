@@ -132,6 +132,33 @@ and the Response Body section below.
   </LinkGroup>
 </LinkGroupContainer>
 
+## Timeout Errors
+
+If you get timeout errors, first confirm if we experienced a service disruption
+on our [status page](https://status.maxmind.com/) or on
+[Pingdom](http://stats.pingdom.com/datuqzybqg5z).
+
+If there has not been a service disruption, we may be able to help you diagnose
+your connection issues. Please use our [mm-network-analyzer
+program](https://github.com/maxmind/mm-network-analyzer), which is designed to
+aid in diagnosing networking issues. It creates a zip file containing various
+network checks like traceroute, DNS, etc. You can download the latest version,
+run it, and send the resulting zip file to our support team for review.
+
+Please note, the mm-network-analyzer is not compatible with Windows, but you can
+reach out to support with the following information (if available to you) to
+help us investigate an issue:
+
+- Your requesting server’s IP address
+- Which web service demonstrates the issue
+- What integration method you’re using for that web service
+- Any full error messages you’re receiving
+- Date and time frame (including time zone) that you experienced the issue
+- Your traceroute to `minfraud.maxmind.com`
+
+[You can submit your support request on our knowledge
+base.](https://support.maxmind.com/hc/en-us/requests/new)
+
 ## Command Line (curl) Examples
 
 <CurlExamples />
