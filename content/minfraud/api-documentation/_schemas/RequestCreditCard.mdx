@@ -26,12 +26,12 @@ import requestJson from '../_examples/request';
       'Max Length': 4,
     }}
   >
-    The last digits of the credit card number. If you send six digits for the
-    [`issuer_id_number`](#schema--request--credit-card__issuer_id_number), you
-    should send the last four digits for `last_digits`. If you send eight digits
-    for `issuer_id_number`, you should send the last two digits for
-    `last_digits`. If you don't know how many digits you send for
-    `issuer_id_number`, you should send the last two digits for `last_digits`.
+    The last digits of the credit card number. In most cases, you should send
+    the last four digits for `last_digits`. If you send an
+    [`issuer_id_number`](#schema--request--credit-card__issuer_id_number)
+    that contains an eight digit IIN, and if the credit card brand is not one
+    of the following, you should send the last two digits for `last_digits`:
+    `Discover`, `JCB`, `Mastercard`, `UnionPay`, `Visa`.
   </Property>
 
   <Property
