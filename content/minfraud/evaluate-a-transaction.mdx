@@ -929,7 +929,7 @@ $request = $mf->withDevice([
     'decline_code'          => 'invalid number',
 ])->withCreditCard([
     'issuer_id_number'        => '411111',
-    'last_4_digits'           => '1234',
+    'last_digits'             => '1234',
     'bank_name'               => 'Test Bank',
     'bank_phone_country_code' => '1',
     'bank_phone_number'       => '555-555-5555',
@@ -1043,7 +1043,7 @@ foreach ($scoreResponse->warnings as $warning) {
          'bank_phone_country_code': '1',
          'avs_result': 'Y',
          'bank_phone_number': '555-555-5555',
-         'last_4_digits': '1234',
+         'last_digits': '1234',
          'cvv_result': 'N',
          'bank_name': 'Test Bank',
          'issuer_id_number': '411111'
@@ -1159,7 +1159,7 @@ assessment = Minfraud::Assessments.new(
   },
   credit_card: {
     issuer_id_number:        '411111',
-    last_4_digits:           '1234',
+    last_digits:             '1234',
     bank_name:               'Test Bank',
     bank_phone_country_code: '1',
     bank_phone_number:       '555-555-5555',
