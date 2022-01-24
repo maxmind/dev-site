@@ -114,6 +114,8 @@ export const city = {
     autonomous_system_organization: 'Linkem IR WiMax Network',
     domain: 'example.com',
     isp: 'Linkem spa',
+    mobile_country_code: '310',
+    mobile_network_code: '004',
     organization: 'Linkem IR WiMax Network',
   },
 };
