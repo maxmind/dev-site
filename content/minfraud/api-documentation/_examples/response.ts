@@ -196,6 +196,8 @@ export const insights = {
       is_satellite_provider:         true,
       is_tor_exit_node:              true,
       isp:                           'Linkem spa',
+      mobile_country_code:           '310',
+      mobile_network_code:           '004',
       network:                       '1.2.3.0/24',
       organization:                  'Linkem IR WiMax Network',
       static_ip_score:               1.5,

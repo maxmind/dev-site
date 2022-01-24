@@ -151,6 +151,34 @@ import responseJson from '../_examples/geoip';
   </Property>
 
   <Property
+    name="mobile_country_code"
+    services={[
+      'city',
+      'insights',
+    ]}
+  >
+    The [mobile country code (MCC)](https://en.wikipedia.org/wiki/Mobile_country_code) associated with the IP address and ISP.
+
+    <Alert type="warning">
+      This field is not present in the GeoLite2 City web service.
+    </Alert>
+  </Property>
+
+  <Property
+    name="mobile_network_code"
+    services={[
+      'city',
+      'insights',
+    ]}
+  >
+    The [mobile network code (MNC)](https://en.wikipedia.org/wiki/Mobile_country_code) associated with the IP address and ISP.
+
+    <Alert type="warning">
+      This field is not present in the GeoLite2 City web service.
+    </Alert>
+  </Property>
+
+  <Property
     name="network"
     services="*"
   >
