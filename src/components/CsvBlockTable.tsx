@@ -332,14 +332,6 @@ const CsvBlockTable: React.FC<ICsvBlockTable> = (props) => {
               </Td>
             </Tr>
             <Tr>
-              <Td>is_legitimate_proxy</Td>
-              <Td>boolean</Td>
-              <Td>
-                A 1 if the network is a legitimate proxy. Otherwise, the value
-                will not be set.
-              </Td>
-            </Tr>
-            <Tr>
               <Td>domain</Td>
               <Td>string</Td>
               <Td>
@@ -373,6 +365,53 @@ const CsvBlockTable: React.FC<ICsvBlockTable> = (props) => {
               <Td>decimal (1-100)</Td>
               <Td>
                 The confidence that the postal code was correctly geolocated.
+              </Td>
+            </Tr>
+            <Tr>
+              <Td>is_legitimate_proxy</Td>
+              <Td>boolean</Td>
+              <Td>
+                <Strong>Deprecated.</Strong>
+                {' '}
+                Use the
+                {' '}
+                <Code>user_type</Code>
+                {' '}
+                data to identify traffic from businesses.
+                {' '}
+                <A
+                  // eslint-disable-next-line max-len
+                  href="https://support.maxmind.com/hc/en-us/articles/4408208479131-User-Context-Data#h_01FN9BTGFQVP41YNPDGM454T2T"
+                  rel="nofollow noopener noreferrer"
+                  target="_blank"
+                >
+                  Learn more about
+                  {' '}
+                  <Code>user_type</Code>
+                  {' '}
+                  data on our knowledge base
+                </A>
+                . To identify anonymous proxies, you can learn
+                more about the GeoIP2 Anonymous IP database in
+                {' '}
+                <A
+                  href="/geoip/docs/databases/anonymous-ip?lang=en"
+                  target="_self"
+                >
+                  the developer portal
+                </A>
+                {' '}
+                or
+                {' '}
+                <A
+                  // eslint-disable-next-line max-len
+                  href="https://www.maxmind.com/en/solutions/geoip2-enterprise-product-suite/anonymous-ip-database"
+                  rel="nofollow noopener noreferrer"
+                  target="_blank"
+                >
+                  our main website
+                </A>
+                .
               </Td>
             </Tr>
           </>

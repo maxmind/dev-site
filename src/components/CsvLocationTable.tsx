@@ -381,7 +381,6 @@ const CsvLocationTable: React.FC<ICsvLocationTable> = (props) => {
           { !isEnterprise && (
             <Td>
               <ServiceTag
-                isDisabled
                 text="Country"
               />
               <ServiceTag
