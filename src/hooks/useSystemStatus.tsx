@@ -5,6 +5,7 @@ import {
   DegradedPerformanceIcon,
   OperationalIcon,
   PartialServiceDisruptionIcon,
+  PlannedMaintenanceIcon,
   SecurityEventIcon,
   ServiceDisruptionIcon,
 } from '../components/SystemsStatusIcons';
@@ -36,6 +37,12 @@ const status: Record<string, SystemStatus> = {
     message: 'Some of our web services are temporarily unavailable.',
     title: 'Partial Service Disruption',
   },
+  PLANNED_MAINTENANCE: {
+    class: 'planned_maintenance',
+    icon: <PlannedMaintenanceIcon />,
+    message: 'We are currently undergoing some scheduled maintenance.',
+    title: 'Planned Maintenance',
+  },
   SECURITY_EVENT: {
     class: 'security_event',
     icon: <SecurityEventIcon />,
@@ -66,6 +73,9 @@ const useSystemStatus = (): null | SystemStatus => {
       switch (status_code) {
       case 100:
         setSystemStatus(status.OPERATIONAL);
+        break;
+      case 200:
+        setSystemStatus(status.PLANNED_MAINTENANCE);
         break;
       case 300:
         setSystemStatus(status.DEGRADED_PERFORMANCE);
