@@ -10,12 +10,13 @@
   color: #ffb302;
 }
 
-.serviceDisruption {
-  color: #ff3838;
-}
-
+.plannedMaintenance,
 .securityEvent {
   color: #2dccff;
+}
+
+.serviceDisruption {
+  color: #ff3838;
 }
 
 .statusUnknown {

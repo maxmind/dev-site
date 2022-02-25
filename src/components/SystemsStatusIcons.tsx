@@ -25,6 +25,12 @@ export const PartialServiceDisruptionIcon: React.FC = () => (
   />
 );
 
+export const PlannedMaintenanceIcon: React.FC = () => (
+  <FaExclamationTriangle
+    className={styles.plannedMaintenance}
+  />
+);
+
 export const ServiceDisruptionIcon: React.FC = () => (
   <FaExclamationTriangle
     className={styles.serviceDisruption}
