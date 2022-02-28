@@ -11,6 +11,7 @@ export interface IReleaseNotesArchiveList {
 
 const years: Record<ProductSlug, number[]> = {
   geoip: [
+    2022,
     2021,
     2020,
     2019,
@@ -22,6 +23,7 @@ const years: Record<ProductSlug, number[]> = {
     2013,
   ],
   minfraud: [
+    2022,
     2021,
     2020,
     2019,
@@ -41,32 +43,6 @@ const generateItems = (type: ProductSlug) => {
     title: year.toString(),
     url: `/${type}/release-notes/${year}`,
   }));
-
-  const now = new Date();
-  let year = now.getUTCFullYear();
-
-  /*
-   * If we don't have an archive page for last year,
-   * assume that "[type]/release-notes" is still displaying last year's data.
-   * e.g. January doesn't have release notes.
-   */
-  // eslint-disable-next-line security/detect-object-injection
-  if (!years[type].includes(year - 1)) {
-    year = year - 1;
-  }
-
-  /*
-   * Add the most current year to the archive list and set
-   * "[type]/release-notes" as the url
-   */
-  // eslint-disable-next-line security/detect-object-injection
-  if (!years[type].includes(year) && years[type].includes(year - 1)) {
-    items.unshift({
-      items: [],
-      title: year.toString(),
-      url: `/${type}/release-notes`,
-    });
-  }
 
   return items;
 };

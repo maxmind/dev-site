@@ -3,6 +3,8 @@ import React from 'react';
 import ProductIcon from '../src/components/ProductIcon';
 import { IItem } from '../src/types/Item';
 
+const year = 2022;
+
 const navigation: IItem[] = [
   {
     icon: (
@@ -50,7 +52,7 @@ const navigation: IItem[] = [
       {
         hasDivider: true,
         title: 'Release Notes',
-        to: '/minfraud/release-notes',
+        to: `/minfraud/release-notes/${year}`,
       },
       {
         title: 'Contribute',
@@ -180,7 +182,7 @@ const navigation: IItem[] = [
       {
         hasDivider: true,
         title: 'Release Notes',
-        to: '/geoip/release-notes',
+        to: `/geoip/release-notes/${year}`,
       },
       {
         title: 'Contribute',
