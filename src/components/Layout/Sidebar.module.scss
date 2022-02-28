@@ -105,6 +105,14 @@
   display: block;
 }
 
+.item__nonProduct {
+  background-color: var(--mm-color-sidebar) !important;
+}
+
+.item__nonProduct > .itemLink {
+  background: var(--mm-color-background) !important;
+}
+
 .externalLinkIcon {
   margin-left: 5px;
   transform: translateY(-1px);
