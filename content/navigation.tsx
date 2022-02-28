@@ -3,8 +3,7 @@ import React from 'react';
 import ProductIcon from '../src/components/ProductIcon';
 import { IItem } from '../src/types/Item';
 
-const now = new Date();
-const year = now.getUTCFullYear();
+const year = 2022;
 
 const navigation: IItem[] = [
   {

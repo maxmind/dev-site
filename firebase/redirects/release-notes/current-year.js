@@ -1,5 +1,4 @@
-const now = new Date();
-const year = now.getUTCFullYear();
+const year = 2022;
 
 module.exports = [
   {

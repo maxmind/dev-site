@@ -44,19 +44,6 @@ const generateItems = (type: ProductSlug) => {
     url: `/${type}/release-notes/${year}`,
   }));
 
-  const now = new Date();
-  let year = now.getUTCFullYear();
-
-  /*
-   * If we don't have an archive page for last year,
-   * assume that "[type]/release-notes" is still displaying last year's data.
-   * e.g. January doesn't have release notes.
-   */
-  // eslint-disable-next-line security/detect-object-injection
-  if (!years[type].includes(year - 1)) {
-    year = year - 1;
-  }
-
   return items;
 };
 
