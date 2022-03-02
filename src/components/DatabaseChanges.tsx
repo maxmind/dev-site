@@ -29,9 +29,8 @@ const DatabaseChanges: React.FC<IDatabaseName> = (props) => {
         Subscribe to our
         {' '}
         <A
-          href="https://dev.maxmind.com/geoip/release-notes?lang=en"
+          href="/geoip/release-notes"
           rel="nofollow noopener noreferrer"
-          target="_blank"
         >
           GeoIP2 release notes
         </A>
