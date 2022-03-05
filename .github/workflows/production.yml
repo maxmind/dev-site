@@ -40,7 +40,7 @@ jobs:
       - name: Checkout repo
         uses: actions/checkout@v3
 
-      - uses: actions/setup-node@04c56d2f954f1e4c69436aa54cfef261a018f458  # v2.5.0
+      - uses: actions/setup-node@v3
         with:
           node-version: '14'
 
@@ -83,7 +83,7 @@ jobs:
       - name: Checkout Repo
         uses: actions/checkout@v3
 
-      - uses: actions/setup-node@04c56d2f954f1e4c69436aa54cfef261a018f458  # v2.5.0
+      - uses: actions/setup-node@v3
         with:
           node-version: '14'
 
@@ -108,7 +108,7 @@ jobs:
       - name: Checkout Repo
         uses: actions/checkout@v3
 
-      - uses: actions/setup-node@04c56d2f954f1e4c69436aa54cfef261a018f458  # v2.5.0
+      - uses: actions/setup-node@v3
         with:
           node-version: '14'
 
@@ -139,7 +139,7 @@ jobs:
       - name: Checkout Repo
         uses: actions/checkout@v3
 
-      - uses: actions/setup-node@04c56d2f954f1e4c69436aa54cfef261a018f458  # v2.5.0
+      - uses: actions/setup-node@v3
         with:
           node-version: '14'
 
@@ -176,7 +176,7 @@ jobs:
       - name: Checkout Repo
         uses: actions/checkout@v3
 
-      - uses: actions/setup-node@04c56d2f954f1e4c69436aa54cfef261a018f458  # v2.5.0
+      - uses: actions/setup-node@v3
         with:
           node-version: '14'
 
@@ -221,7 +221,7 @@ jobs:
       - name: Checkout Repo
         uses: actions/checkout@v3
 
-      - uses: actions/setup-node@04c56d2f954f1e4c69436aa54cfef261a018f458  # v2.5.0
+      - uses: actions/setup-node@v3
         with:
           node-version: '14'
 
