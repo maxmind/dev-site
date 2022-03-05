@@ -20,7 +20,7 @@ jobs:
 
     steps:
       - name: Checkout Repo
-        uses: actions/checkout@5a4ac9002d0be2fb38bd78e4b4dbde5606d7042f # v2.3.4
+        uses: actions/checkout@v3
 
       - id: build
         run: echo "::set-output name=hash::${{ hashFiles('bin/**', 'content/**', 'firebase/**', 'functions/src/**', 'src/**', 'static/**', '**/package.json', '**/yarn.lock') }}"
@@ -38,7 +38,7 @@ jobs:
 
     steps:
       - name: Checkout repo
-        uses: actions/checkout@5a4ac9002d0be2fb38bd78e4b4dbde5606d7042f # v2.3.4
+        uses: actions/checkout@v3
 
       - uses: actions/setup-node@04c56d2f954f1e4c69436aa54cfef261a018f458  # v2.5.0
         with:
@@ -81,7 +81,7 @@ jobs:
 
     steps:
       - name: Checkout Repo
-        uses: actions/checkout@5a4ac9002d0be2fb38bd78e4b4dbde5606d7042f # v2.3.4
+        uses: actions/checkout@v3
 
       - uses: actions/setup-node@04c56d2f954f1e4c69436aa54cfef261a018f458  # v2.5.0
         with:
@@ -106,7 +106,7 @@ jobs:
 
     steps:
       - name: Checkout Repo
-        uses: actions/checkout@5a4ac9002d0be2fb38bd78e4b4dbde5606d7042f # v2.3.4
+        uses: actions/checkout@v3
 
       - uses: actions/setup-node@04c56d2f954f1e4c69436aa54cfef261a018f458  # v2.5.0
         with:
@@ -137,7 +137,7 @@ jobs:
 
     steps:
       - name: Checkout Repo
-        uses: actions/checkout@5a4ac9002d0be2fb38bd78e4b4dbde5606d7042f # v2.3.4
+        uses: actions/checkout@v3
 
       - uses: actions/setup-node@04c56d2f954f1e4c69436aa54cfef261a018f458  # v2.5.0
         with:
@@ -174,7 +174,7 @@ jobs:
 
     steps:
       - name: Checkout Repo
-        uses: actions/checkout@5a4ac9002d0be2fb38bd78e4b4dbde5606d7042f # v2.3.4
+        uses: actions/checkout@v3
 
       - uses: actions/setup-node@04c56d2f954f1e4c69436aa54cfef261a018f458  # v2.5.0
         with:
@@ -219,7 +219,7 @@ jobs:
 
     steps:
       - name: Checkout Repo
-        uses: actions/checkout@5a4ac9002d0be2fb38bd78e4b4dbde5606d7042f # v2.3.4
+        uses: actions/checkout@v3
 
       - uses: actions/setup-node@04c56d2f954f1e4c69436aa54cfef261a018f458  # v2.5.0
         with:
