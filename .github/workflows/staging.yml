@@ -42,7 +42,7 @@ jobs:
           node-version: '14'
 
       - name: Get cached dependencies
-        uses: actions/cache@c64c572235d810460d0d6876e9c705ad5002b353 # v2.1.6
+        uses: actions/cache@v2
         id: cache-node-modules
         with:
           path: |
@@ -56,7 +56,7 @@ jobs:
 
       - name: Get cached build
         id: cached-build
-        uses: actions/cache@c64c572235d810460d0d6876e9c705ad5002b353 # v2.1.6
+        uses: actions/cache@v2
         with:
           path: |
             functions/lib
@@ -65,7 +65,7 @@ jobs:
           key: ${{ needs.cache-keys.outputs.build }}
 
       - name: Get .cache cache
-        uses: actions/cache@c64c572235d810460d0d6876e9c705ad5002b353 # v2.1.6
+        uses: actions/cache@v2
         with:
           path: |
             .cache
@@ -91,7 +91,7 @@ jobs:
           node-version: '14'
 
       - name: Get cached dependencies
-        uses: actions/cache@c64c572235d810460d0d6876e9c705ad5002b353 # v2.1.6
+        uses: actions/cache@v2
         with:
           path: |
             node_modules
@@ -115,7 +115,7 @@ jobs:
           node-version: '14'
 
       - name: Get cached dependencies
-        uses: actions/cache@c64c572235d810460d0d6876e9c705ad5002b353 # v2.1.6
+        uses: actions/cache@v2
         with:
           path: |
             node_modules
@@ -142,7 +142,7 @@ jobs:
           node-version: '14'
 
       - name: Get cached build
-        uses: actions/cache@c64c572235d810460d0d6876e9c705ad5002b353 # v2.1.6
+        uses: actions/cache@v2
         with:
           path: |
             functions/lib
@@ -196,7 +196,7 @@ jobs:
           node-version: '14'
 
       - name: Get cached build
-        uses: actions/cache@c64c572235d810460d0d6876e9c705ad5002b353 # v2.1.6
+        uses: actions/cache@v2
         with:
           path: |
             functions/lib
@@ -213,7 +213,7 @@ jobs:
 
       # Dependencies are needed here to run `yarn firbase` command
       - name: Get cached dependencies
-        uses: actions/cache@c64c572235d810460d0d6876e9c705ad5002b353 # v2.1.6
+        uses: actions/cache@v2
         with:
           path: |
             node_modules
@@ -237,7 +237,7 @@ jobs:
           node-version: '14'
 
       - name: Get cached dependencies
-        uses: actions/cache@c64c572235d810460d0d6876e9c705ad5002b353 # v2.1.6
+        uses: actions/cache@v2
         with:
           path: |
             node_modules
