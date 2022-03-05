@@ -19,7 +19,7 @@ jobs:
       node-modules: node-modules-${{ steps.node-modules.outputs.hash }}-v1
 
     steps:
-      - name: Checkout Repo
+      - name: Check Out Repo
         uses: actions/checkout@v3
 
       - id: build
@@ -37,7 +37,7 @@ jobs:
       is-cached-build: ${{ steps.cached-build.outputs.cache-hit }}
 
     steps:
-      - name: Checkout repo
+      - name: Check Out repo
         uses: actions/checkout@v3
 
       - uses: actions/setup-node@v3
@@ -80,7 +80,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout Repo
+      - name: Check Out Repo
         uses: actions/checkout@v3
 
       - uses: actions/setup-node@v3
@@ -105,7 +105,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout Repo
+      - name: Check Out Repo
         uses: actions/checkout@v3
 
       - uses: actions/setup-node@v3
@@ -136,7 +136,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout Repo
+      - name: Check Out Repo
         uses: actions/checkout@v3
 
       - uses: actions/setup-node@v3
@@ -173,7 +173,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout Repo
+      - name: Check Out Repo
         uses: actions/checkout@v3
 
       - uses: actions/setup-node@v3
@@ -218,7 +218,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout Repo
+      - name: Check Out Repo
         uses: actions/checkout@v3
 
       - uses: actions/setup-node@v3
