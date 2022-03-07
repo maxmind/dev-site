@@ -79,6 +79,20 @@ import requestJson from '../_examples/request';
   </Property>
 
   <Property
+    name="country"
+    tags={{
+      'Max Length': 2,
+    }}
+  >
+    The two character [ISO 3166-1 alpha-2 country
+    code](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2) where the issuer of
+    the card is located. This may be passed instead of the
+    [`issuer_id_number`](#schema--request--credit-card__issuer_id_number) if
+    you do not wish to pass partial account numbers, or if your payment
+    processor does not provide them.
+  </Property>
+
+  <Property
     name="avs_result"
     tags={{
       'Max Length': 1,
