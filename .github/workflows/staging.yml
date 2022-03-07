@@ -19,8 +19,8 @@ jobs:
       node-modules: node-modules-${{ steps.node-modules.outputs.hash }}-v1
 
     steps:
-      - name: Checkout Repo
-        uses: actions/checkout@5a4ac9002d0be2fb38bd78e4b4dbde5606d7042f # v2.3.4
+      - name: Check Out Repo
+        uses: actions/checkout@v3
 
       - id: build
         run: echo "::set-output name=hash::${{ hashFiles('bin/**', 'content/**', 'firebase/**', 'functions/src/**', 'src/**', 'static/**', '**/package.json', '**/yarn.lock') }}"
@@ -34,15 +34,15 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout Repo
-        uses: actions/checkout@5a4ac9002d0be2fb38bd78e4b4dbde5606d7042f # v2.3.4
+      - name: Check Out Repo
+        uses: actions/checkout@v3
 
-      - uses: actions/setup-node@04c56d2f954f1e4c69436aa54cfef261a018f458  # v2.5.0
+      - uses: actions/setup-node@v3
         with:
           node-version: '14'
 
       - name: Get cached dependencies
-        uses: actions/cache@c64c572235d810460d0d6876e9c705ad5002b353 # v2.1.6
+        uses: actions/cache@v2
         id: cache-node-modules
         with:
           path: |
@@ -56,7 +56,7 @@ jobs:
 
       - name: Get cached build
         id: cached-build
-        uses: actions/cache@c64c572235d810460d0d6876e9c705ad5002b353 # v2.1.6
+        uses: actions/cache@v2
         with:
           path: |
             functions/lib
@@ -65,7 +65,7 @@ jobs:
           key: ${{ needs.cache-keys.outputs.build }}
 
       - name: Get .cache cache
-        uses: actions/cache@c64c572235d810460d0d6876e9c705ad5002b353 # v2.1.6
+        uses: actions/cache@v2
         with:
           path: |
             .cache
@@ -83,15 +83,15 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout Repo
-        uses: actions/checkout@5a4ac9002d0be2fb38bd78e4b4dbde5606d7042f # v2.3.4
+      - name: Check Out Repo
+        uses: actions/checkout@v3
 
-      - uses: actions/setup-node@04c56d2f954f1e4c69436aa54cfef261a018f458  # v2.5.0
+      - uses: actions/setup-node@v3
         with:
           node-version: '14'
 
       - name: Get cached dependencies
-        uses: actions/cache@c64c572235d810460d0d6876e9c705ad5002b353 # v2.1.6
+        uses: actions/cache@v2
         with:
           path: |
             node_modules
@@ -107,15 +107,15 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout Repo
-        uses: actions/checkout@5a4ac9002d0be2fb38bd78e4b4dbde5606d7042f # v2.3.4
+      - name: Check Out Repo
+        uses: actions/checkout@v3
 
-      - uses: actions/setup-node@04c56d2f954f1e4c69436aa54cfef261a018f458  # v2.5.0
+      - uses: actions/setup-node@v3
         with:
           node-version: '14'
 
       - name: Get cached dependencies
-        uses: actions/cache@c64c572235d810460d0d6876e9c705ad5002b353 # v2.1.6
+        uses: actions/cache@v2
         with:
           path: |
             node_modules
@@ -134,15 +134,15 @@ jobs:
       hosting-url: ${{ steps.deploy-preview-channel.outputs.details_url }}
 
     steps:
-      - name: Checkout Repo
-        uses: actions/checkout@5a4ac9002d0be2fb38bd78e4b4dbde5606d7042f # v2.3.4
+      - name: Check Out Repo
+        uses: actions/checkout@v3
 
-      - uses: actions/setup-node@04c56d2f954f1e4c69436aa54cfef261a018f458  # v2.5.0
+      - uses: actions/setup-node@v3
         with:
           node-version: '14'
 
       - name: Get cached build
-        uses: actions/cache@c64c572235d810460d0d6876e9c705ad5002b353 # v2.1.6
+        uses: actions/cache@v2
         with:
           path: |
             functions/lib
@@ -188,15 +188,15 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout Repo
-        uses: actions/checkout@5a4ac9002d0be2fb38bd78e4b4dbde5606d7042f # v2.3.4
+      - name: Check Out Repo
+        uses: actions/checkout@v3
 
-      - uses: actions/setup-node@04c56d2f954f1e4c69436aa54cfef261a018f458  # v2.5.0
+      - uses: actions/setup-node@v3
         with:
           node-version: '14'
 
       - name: Get cached build
-        uses: actions/cache@c64c572235d810460d0d6876e9c705ad5002b353 # v2.1.6
+        uses: actions/cache@v2
         with:
           path: |
             functions/lib
@@ -213,7 +213,7 @@ jobs:
 
       # Dependencies are needed here to run `yarn firbase` command
       - name: Get cached dependencies
-        uses: actions/cache@c64c572235d810460d0d6876e9c705ad5002b353 # v2.1.6
+        uses: actions/cache@v2
         with:
           path: |
             node_modules
@@ -229,15 +229,15 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout Repo
-        uses: actions/checkout@5a4ac9002d0be2fb38bd78e4b4dbde5606d7042f # v2.3.4
+      - name: Check Out Repo
+        uses: actions/checkout@v3
 
-      - uses: actions/setup-node@04c56d2f954f1e4c69436aa54cfef261a018f458  # v2.5.0
+      - uses: actions/setup-node@v3
         with:
           node-version: '14'
 
       - name: Get cached dependencies
-        uses: actions/cache@c64c572235d810460d0d6876e9c705ad5002b353 # v2.1.6
+        uses: actions/cache@v2
         with:
           path: |
             node_modules
