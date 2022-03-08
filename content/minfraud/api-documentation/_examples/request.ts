@@ -21,6 +21,7 @@ export default {
     bank_name: 'Bank of America',
     bank_phone_country_code: '1',
     bank_phone_number: '800-342-1232',
+    country: 'US',
     cvv_result: 'N',
     issuer_id_number: '323132',
     last_digits: '7643',
