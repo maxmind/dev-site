@@ -105,14 +105,6 @@
   display: block;
 }
 
-.item__nonProduct.item__current {
-  background-color: var(--mm-color-sidebar);
-}
-
-.item__nonProduct.item__current > .itemLink {
-  background: var(--mm-color-background) !important;
-}
-
 .externalLinkIcon {
   margin-left: 5px;
   transform: translateY(-1px);
@@ -206,6 +198,14 @@
 
 .list__level2 .item:last-of-type {
   margin-bottom: 0;
+}
+
+.item__nonProduct.item__current {
+  background-color: var(--mm-color-sidebar);
+}
+
+.item__nonProduct.item__current > .itemLink {
+  background: var(--mm-color-background);
 }
 
 @include variables.breakpoint('lg') {
