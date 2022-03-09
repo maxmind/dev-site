@@ -200,6 +200,14 @@
   margin-bottom: 0;
 }
 
+.item__nonProduct.item__current {
+  background-color: var(--mm-color-sidebar);
+}
+
+.item__nonProduct.item__current > .itemLink {
+  background: var(--mm-color-background);
+}
+
 @include variables.breakpoint('lg') {
   .sidebar {
     border-left: 0;

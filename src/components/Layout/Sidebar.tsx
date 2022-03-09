@@ -26,10 +26,13 @@ const renderItems = (
     {items.map((item, index) => {
       let isItemActive = false;
       let isItemCurrent = false;
+      let isItemNonProduct = false;
 
       if (isInternalItem(item)) {
         isItemActive = currentPath.startsWith(item.to);
         isItemCurrent = currentPath === item.to;
+        isItemNonProduct = !item.to.startsWith('/minfraud')
+          && !item.to.startsWith('/geoip');
       }
 
       if (item.icon) {
@@ -48,6 +51,7 @@ const renderItems = (
               [styles['item__active']]: isItemActive,
               [styles['item__current']]: isItemCurrent,
               [styles['item__hasDivider']]: item.hasDivider,
+              [styles['item__nonProduct']]: isItemNonProduct,
             },
           )}
           data-current-path={currentPath}

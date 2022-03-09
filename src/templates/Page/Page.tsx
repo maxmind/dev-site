@@ -74,10 +74,11 @@ const Page: React.FC<IPage> = (props) => {
           </H1>
         </header>
 
-        <aside
-          className={styles.aside}
-        >
-          { !isReleaseNotesPage &&
+        { tableOfContents !== null && (
+          <aside
+            className={styles.aside}
+          >
+            { !isReleaseNotesPage &&
             tableOfContents &&
             tableOfContents.items?.length > 0 &&
             (
@@ -86,13 +87,14 @@ const Page: React.FC<IPage> = (props) => {
                 items={tableOfContents.items}
               />
             )}
-          { isReleaseNotesPage &&
+            { isReleaseNotesPage &&
             <ReleaseNotesArchiveList
               className={styles.tableOfContents}
               type={type as 'minfraud' | 'geoip'}
             />
-          }
-        </aside>
+            }
+          </aside>
+        )}
 
         <section
           className={styles.content}
