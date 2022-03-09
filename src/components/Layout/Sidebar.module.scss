@@ -105,11 +105,11 @@
   display: block;
 }
 
-.item__nonProduct {
-  background-color: var(--mm-color-sidebar) !important;
+.item__nonProduct.item__current {
+  background-color: var(--mm-color-sidebar);
 }
 
-.item__nonProduct > .itemLink {
+.item__nonProduct.item__current > .itemLink {
   background: var(--mm-color-background) !important;
 }
 

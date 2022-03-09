@@ -31,8 +31,8 @@ const renderItems = (
       if (isInternalItem(item)) {
         isItemActive = currentPath.startsWith(item.to);
         isItemCurrent = currentPath === item.to;
-        isItemNonProduct = isItemActive && !currentPath.startsWith('/minfraud')
-          && !currentPath.startsWith('/geoip');
+        isItemNonProduct = !item.to.startsWith('/minfraud')
+          && !item.to.startsWith('/geoip');
       }
 
       if (item.icon) {
