@@ -69,9 +69,12 @@ global.pa11y = (
       });
 
       // eslint-disable-next-line security/detect-non-literal-fs-filename
-      fs.rmdirSync(screenshotPath, {
-        recursive: true,
-      });
+      if (fs.existsSync(screenshotPath)) {
+        // eslint-disable-next-line security/detect-non-literal-fs-filename
+        fs.rmSync(screenshotPath, {
+          recursive: true,
+        });
+      }
 
       // eslint-disable-next-line security/detect-non-literal-fs-filename
       fs.mkdirSync(screenshotPath);
