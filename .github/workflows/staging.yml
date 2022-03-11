@@ -129,6 +129,8 @@ jobs:
     name: Deploy – Hosting
     needs: [cache-keys, build]
     runs-on: ubuntu-latest
+    # Requires access to our secrets.
+    if: ${{ github.repository_owner == 'maxmind' && github.actor != 'dependabot[bot]' }}
 
     outputs:
       hosting-url: ${{ steps.deploy-preview-channel.outputs.details_url }}
@@ -186,6 +188,8 @@ jobs:
     name: Deploy – Functions
     needs: [cache-keys, build]
     runs-on: ubuntu-latest
+    # Requires access to our secrets.
+    if: ${{ github.repository_owner == 'maxmind' && github.actor != 'dependabot[bot]' }}
 
     steps:
       - name: Check Out Repo
