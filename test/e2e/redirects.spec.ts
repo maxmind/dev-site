@@ -4,6 +4,10 @@ import fetch from 'node-fetch';
 
 import { uriChecksums } from './redirects.fixture';
 
+// JSDOM does not provide TextEncoder, causing fetch-blob to fail
+import { TextEncoder } from 'util';
+global.TextEncoder = TextEncoder;
+
 const targetUrl = process.env.E2E_TARGET_URL || 'http://localhost:5000';
 
 describe('Redirects', () => {
