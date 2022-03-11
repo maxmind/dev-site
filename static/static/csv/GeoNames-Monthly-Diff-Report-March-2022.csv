@@ -15,7 +15,6 @@ city_name,10132793,10132793,Wanghewan,Wanghewancun,China,China,CN,CN,HE,HE
 city_name,10132681,10132681,Jijiafang,Jijiafangcun,China,China,CN,CN,HE,HE
 city_name,2036536,2036536,Minzhu,Jiaohe,China,China,CN,CN,JL,JL
 city_name,3005102,3005102,el Volo,Le Boulou,France,France,FR,FR,"OCC, 66","OCC, 66"
-city_name,3005102,3005102,el Volo,Le Boulou,France,France,FR,FR,"OCC, 66","OCC, 66"
 city_name,3006701,3006701,la Roca d'Albera,Laroque-des-Alberes,France,France,FR,FR,"OCC, 66","OCC, 66"
 city_name,2979205,2979205,Sant Joan de Pladecorts,St. Jean-Pla-de-Corts,France,France,FR,FR,"OCC, 66","OCC, 66"
 city_name,2849446,2849446,Rehau,Rehau-Pilgramsreuth,Germany,Germany,DE,DE,BY,BY
@@ -27,7 +26,6 @@ city_name,295758,295758,`Adanim,Adanim,Israel,Israel,IL,IL,M,M
 city_name,294878,294878,Ha`Ogen,Ha'Ogen,Israel,Israel,IL,IL,M,M
 city_name,295419,295419,Bet Zera`,Bet Zera',Israel,Israel,IL,IL,Z,Z
 city_name,293672,293672,Sa`ad,Sa'ad,Israel,Israel,IL,IL,D,D
-city_name,295102,295102,Ga`ash,Ga'ash,Israel,Israel,IL,IL,M,M
 city_name,295206,295206,`En HaShofet,En HaShofet,Israel,Israel,IL,IL,Z,Z
 city_name,294052,294052,Newe Mivtah,Neve Mivtah,Israel,Israel,IL,IL,D,D
 city_name,295226,295226,`Enat,Enat,Israel,Israel,IL,IL,M,M
@@ -46,7 +44,6 @@ city_name,294563,294563,Kefar `Azza,Kefar 'Azza,Israel,Israel,IL,IL,D,D
 city_name,295038,295038,Geva`,Geva',Israel,Israel,IL,IL,Z,Z
 city_name,295606,295606,Avi`ezer,Avi'ezer,Israel,Israel,IL,IL,JM,JM
 city_name,295119,295119,`Evron,Evron,Israel,Israel,IL,IL,Z,Z
-city_name,295226,295226,`Enat,Enat,Israel,Israel,IL,IL,M,M
 city_name,3802785,3802785,Chichonal 3ra. Seccion (La Capilla),Chichonal,Mexico,Mexico,MX,MX,TAB,TAB
 city_name,691705,691705,Teplohirsk,Irmino,Ukraine,Ukraine,UA,UA,9,9
 city_name,1577922,1577922,Lai Vung,Thi Tran Lai Vung,Vietnam,Vietnam,VN,VN,45,45
@@ -140,16 +137,13 @@ geoname_id,3985035,3985070,San Pedro,San Pedro,Mexico,Mexico,MX,MX,COA,COA
 geoname_id,9519242,8902976,San Agustin,San Agustin,Mexico,Mexico,MX,MX,PUE,PUE
 geoname_id,8866801,4007431,El Tablon,El Tablon,Mexico,Mexico,MX,MX,GUA,GUA
 geoname_id,9623294,3824383,El Veintidos,El Veintidos,Mexico,Mexico,MX,MX,VER,VER
-geoname_id,3521912,8867987,Paraiso,Paraiso,Mexico,Mexico,MX,MX,TAB,TAB
 geoname_id,3978864,3980151,Francisco I. Madero,Francisco I. Madero,Mexico,Mexico,MX,MX,DUR,DUR
 geoname_id,3514868,3514869,Valle Hermoso,Valle Hermoso,Mexico,Mexico,MX,MX,TAM,TAM
 geoname_id,4017953,11364633,Avandaro,Avandaro,Mexico,Mexico,MX,MX,MEX,MEX
 geoname_id,8908800,3802724,El Dorado,El Dorado,Mexico,Mexico,MX,MX,TAB,TAB
-geoname_id,3521912,8867987,Paraiso,Paraiso,Mexico,Mexico,MX,MX,TAB,TAB
 geoname_id,3824690,3527186,Gutierrez Zamora,Gutierrez Zamora,Mexico,Mexico,MX,MX,VER,VER
 geoname_id,11120624,3823676,Ejidal,Ejidal,Mexico,Mexico,MX,MX,VER,VER
 geoname_id,11095680,3818621,Ixtepec,Ixtepec,Mexico,Mexico,MX,MX,PUE,PUE
-geoname_id,3985129,3985070,San Pedro,San Pedro,Mexico,Mexico,MX,MX,COA,COA
 geoname_id,8875710,8861291,Allende,Allende,Mexico,Mexico,MX,MX,CHP,CHP
 geoname_id,8863842,3523243,Miahuatlan,Miahuatlan,Mexico,Mexico,MX,MX,VER,VER
 geoname_id,3823688,8859663,Las Trancas,Las Trancas,Mexico,Mexico,MX,MX,VER,VER
@@ -161,48 +155,16 @@ geoname_id,2270119,2270121,Carrascal,Carrascal,Portugal,Portugal,PT,PT,11,11
 geoname_id,3116143,3116142,Moreda,Moreda,Spain,Spain,ES,ES,"GA, LU","GA, LU"
 geoname_id,2693369,2693368,Lycke,Lycke,Sweden,Sweden,SE,SE,O,O
 geoname_id,2691400,2691401,Mora,Mora,Sweden,Sweden,SE,SE,W,W
-geoname_id,2691400,2691401,Mora,Mora,Sweden,Sweden,SE,SE,W,W
 geoname_id,2668227,2668221,Torestorp,Torestorp,Sweden,Sweden,SE,SE,O,O
 geoname_id,2687693,2687690,Nykvarn,Nykvarn,Sweden,Sweden,SE,SE,AB,AB
-geoname_id,2691400,2691401,Mora,Mora,Sweden,Sweden,SE,SE,W,W
-geoname_id,2691400,2691401,Mora,Mora,Sweden,Sweden,SE,SE,W,W
 geoname_id,2687066,2687063,Olofstorp,Olofstorp,Sweden,Sweden,SE,SE,O,O
-geoname_id,2691400,2691401,Mora,Mora,Sweden,Sweden,SE,SE,W,W
-geoname_id,2691400,2691401,Mora,Mora,Sweden,Sweden,SE,SE,W,W
-geoname_id,2687693,2687690,Nykvarn,Nykvarn,Sweden,Sweden,SE,SE,AB,AB
-geoname_id,2687693,2687690,Nykvarn,Nykvarn,Sweden,Sweden,SE,SE,AB,AB
 geoname_id,2666124,2666122,Utby,Utby,Sweden,Sweden,SE,SE,O,O
-geoname_id,2687066,2687063,Olofstorp,Olofstorp,Sweden,Sweden,SE,SE,O,O
-geoname_id,2691400,2691401,Mora,Mora,Sweden,Sweden,SE,SE,W,W
-geoname_id,2687693,2687690,Nykvarn,Nykvarn,Sweden,Sweden,SE,SE,AB,AB
 geoname_id,2700688,2700686,Klagstorp,Klagstorp,Sweden,Sweden,SE,SE,M,M
-geoname_id,2687066,2687063,Olofstorp,Olofstorp,Sweden,Sweden,SE,SE,O,O
 geoname_id,2695030,2695029,Lima,Lima,Sweden,Sweden,SE,SE,W,W
 geoname_id,2663078,2663077,Vikarbyn,Vikarbyn,Sweden,Sweden,SE,SE,W,W
-geoname_id,2691400,2691401,Mora,Mora,Sweden,Sweden,SE,SE,W,W
-geoname_id,2687066,2687063,Olofstorp,Olofstorp,Sweden,Sweden,SE,SE,O,O
-geoname_id,2700688,2700686,Klagstorp,Klagstorp,Sweden,Sweden,SE,SE,M,M
 geoname_id,2673370,2673369,Stora Dalby,Stora Dalby,Sweden,Sweden,SE,SE,H,H
 geoname_id,2710040,2710041,Gudhem,Gudhem,Sweden,Sweden,SE,SE,O,O
-geoname_id,2691400,2691401,Mora,Mora,Sweden,Sweden,SE,SE,W,W
-geoname_id,2691400,2691401,Mora,Mora,Sweden,Sweden,SE,SE,W,W
-geoname_id,2691400,2691401,Mora,Mora,Sweden,Sweden,SE,SE,W,W
-geoname_id,2687693,2687690,Nykvarn,Nykvarn,Sweden,Sweden,SE,SE,AB,AB
-geoname_id,2687693,2687690,Nykvarn,Nykvarn,Sweden,Sweden,SE,SE,AB,AB
-geoname_id,2691400,2691401,Mora,Mora,Sweden,Sweden,SE,SE,W,W
-geoname_id,2691400,2691401,Mora,Mora,Sweden,Sweden,SE,SE,W,W
-geoname_id,2687693,2687690,Nykvarn,Nykvarn,Sweden,Sweden,SE,SE,AB,AB
-geoname_id,2663078,2663077,Vikarbyn,Vikarbyn,Sweden,Sweden,SE,SE,W,W
-geoname_id,2687693,2687690,Nykvarn,Nykvarn,Sweden,Sweden,SE,SE,AB,AB
-geoname_id,2687693,2687690,Nykvarn,Nykvarn,Sweden,Sweden,SE,SE,AB,AB
-geoname_id,2687693,2687690,Nykvarn,Nykvarn,Sweden,Sweden,SE,SE,AB,AB
-geoname_id,2691400,2691401,Mora,Mora,Sweden,Sweden,SE,SE,W,W
-geoname_id,2700688,2700686,Klagstorp,Klagstorp,Sweden,Sweden,SE,SE,M,M
-geoname_id,2687693,2687690,Nykvarn,Nykvarn,Sweden,Sweden,SE,SE,AB,AB
-geoname_id,2710040,2710041,Gudhem,Gudhem,Sweden,Sweden,SE,SE,O,O
 geoname_id,2719312,2719318,Brevik,Brevik,Sweden,Sweden,SE,SE,AB,AB
-geoname_id,2691400,2691401,Mora,Mora,Sweden,Sweden,SE,SE,W,W
 geoname_id,693087,11816625,Sosnivka,Sosnivka,Ukraine,Ukraine,UA,UA,32,32
 subdivision_codes,1524849,1524849,Cheremshanka,Cheremshanka,Kazakhstan,Kazakhstan,KZ,KZ,,VOS
-subdivision_codes,1711082,1711082,Iligan City,Iligan City,Philippines,Philippines,PH,PH,12,"12, LAN"
 subdivision_codes,1711082,1711082,Iligan City,Iligan City,Philippines,Philippines,PH,PH,12,"12, LAN"
