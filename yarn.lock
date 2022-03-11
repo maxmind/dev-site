@@ -6399,20 +6399,10 @@ csstype@^3.0.2:
   resolved "https://registry.npmjs.org/csstype/-/csstype-3.0.8.tgz"
   integrity sha512-jXKhWqXPmlUeoQnF/EhTtTl4C9SnrxSH/jZUih3jmO6lBKr99rP3/+FmrMj4EFpOXzMtXHAZkd3x0E6h6Fgflw==
 
-csv-generate@^3.4.0:
-  version "3.4.0"
-  resolved "https://registry.npmjs.org/csv-generate/-/csv-generate-3.4.0.tgz"
-  integrity sha512-D6yi7c6lL70cpTx3TQIVWKrfxuLiKa0pBizu0zi7fSRXlhmE7u674gk9k1IjCEnxKq2t6xzbXnxcOmSdBbE8vQ==
-
 csv-generate@^3.4.3:
   version "3.4.3"
   resolved "https://registry.yarnpkg.com/csv-generate/-/csv-generate-3.4.3.tgz#bc42d943b45aea52afa896874291da4b9108ffff"
   integrity sha512-w/T+rqR0vwvHqWs/1ZyMDWtHHSJaN06klRqJXBEpDJaM/+dZkso0OKh1VcuuYvK3XM53KysVNq8Ko/epCK8wOw==
-
-csv-parse@^4.15.3:
-  version "4.16.0"
-  resolved "https://registry.npmjs.org/csv-parse/-/csv-parse-4.16.0.tgz"
-  integrity sha512-Zb4tGPANH4SW0LgC9+s9Mnequs9aqn7N3/pCqNbVjs2XhEF6yWNU2Vm4OGl1v2Go9nw8rXt87Cm2QN/o6Vpqgg==
 
 csv-parse@^4.16.3:
   version "4.16.3"
@@ -6426,25 +6416,10 @@ csv-streamify@^3.0.4:
   dependencies:
     through2 "2.0.1"
 
-csv-stringify@^5.6.2:
-  version "5.6.2"
-  resolved "https://registry.npmjs.org/csv-stringify/-/csv-stringify-5.6.2.tgz"
-  integrity sha512-n3rIVbX6ylm1YsX2NEug9IaPV8xRnT+9/NNZbrA/bcHgOSSeqtWla6XnI/xmyu57wIw+ASCAoX1oM6EZtqJV0A==
-
 csv-stringify@^5.6.5:
   version "5.6.5"
   resolved "https://registry.yarnpkg.com/csv-stringify/-/csv-stringify-5.6.5.tgz#c6d74badda4b49a79bf4e72f91cce1e33b94de00"
   integrity sha512-PjiQ659aQ+fUTQqSrd1XEDnOr52jh30RBurfzkscaE2tPaFsDH5wOAHJiw8XAHphRknCwMUE9KRayc4K/NbO8A==
-
-csv@^5.3.2:
-  version "5.5.0"
-  resolved "https://registry.npmjs.org/csv/-/csv-5.5.0.tgz"
-  integrity sha512-32tcuxdb4HW3zbk8NBcVQb8/7xuJB5sv+q4BuQ6++E/K6JvHvWoCHcGzB5Au95vVikNH4ztE0XNC/Bws950cfA==
-  dependencies:
-    csv-generate "^3.4.0"
-    csv-parse "^4.15.3"
-    csv-stringify "^5.6.2"
-    stream-transform "^2.1.0"
 
 csv@^5.5.0:
   version "5.5.3"
@@ -14510,11 +14485,6 @@ mixin-object@^2.0.1:
     for-in "^0.1.3"
     is-extendable "^0.1.1"
 
-mixme@^0.5.0:
-  version "0.5.1"
-  resolved "https://registry.npmjs.org/mixme/-/mixme-0.5.1.tgz"
-  integrity sha512-NaeZIckeBFT7i0XBEpGyFcAE0/bLcQ9MHErTpnU3bLWVE5WZbxG5Y3fDsMxYGifTo5khDA42OquXCC2ngKJB+g==
-
 mixme@^0.5.1:
   version "0.5.2"
   resolved "https://registry.yarnpkg.com/mixme/-/mixme-0.5.2.tgz#33c7e21d8e9b73abc2711c5197ae6c93f65fe0e4"
@@ -19561,7 +19531,7 @@ smart-buffer@^4.1.0:
   resolved "https://registry.npmjs.org/smart-buffer/-/smart-buffer-4.2.0.tgz"
   integrity sha512-94hK0Hh8rPqQl2xXc3HsaBoOXKV20MToPkcXvwbISWLEs+64sBq5kFgn2kJDHb1Pry9yrP0dxrCI9RRci7RXKg==
 
-smartwrap@^2.0.1, smartwrap@^2.0.2:
+smartwrap@^2.0.2:
   version "2.0.2"
   resolved "https://registry.npmjs.org/smartwrap/-/smartwrap-2.0.2.tgz"
   integrity sha512-vCsKNQxb7PnCNd2wY1WClWifAc2lwqsG8OaswpJkVJsvMGcnEntdTCDajZCkk93Ay1U3t/9puJmb525Rg5MZBA==
@@ -20018,13 +19988,6 @@ stream-shift@^1.0.0:
   version "1.0.1"
   resolved "https://registry.npmjs.org/stream-shift/-/stream-shift-1.0.1.tgz"
   integrity sha512-AiisoFqQ0vbGcZgQPY1cdP2I76glaVA/RauYR4G4thNFgkTqr90yXTo4LYX60Jl+sIlPNHHdGSwo01AvbKUSVQ==
-
-stream-transform@^2.1.0:
-  version "2.1.0"
-  resolved "https://registry.npmjs.org/stream-transform/-/stream-transform-2.1.0.tgz"
-  integrity sha512-bwQO+75rzQbug7e5OOHnOR3FgbJ0fCjHmDIdynkwUaFzleBXugGmv2dx3sX3aIHUQRLjrcisRPgN9BWl63uGgw==
-  dependencies:
-    mixme "^0.5.0"
 
 stream-transform@^2.1.3:
   version "2.1.3"
@@ -21221,19 +21184,6 @@ tsutils@^3.17.1, tsutils@^3.21.0:
   integrity sha512-mHKK3iUXL+3UF6xL5k0PEhKRUBKPBCv/+RkEOpjRWxxx27KKRBmmA60A9pgOUvMi8GKhRMPEmjBRPzs2W7O1OA==
   dependencies:
     tslib "^1.8.1"
-
-tty-table@^4.1.3:
-  version "4.1.3"
-  resolved "https://registry.npmjs.org/tty-table/-/tty-table-4.1.3.tgz"
-  integrity sha512-Aireaxah5bTJkkJ7b2RI8tMZxogscWP4UCgi5dKuOqL8BWPjnnOebC7F+oFYWTLKUaiJm8h+CvsigBaaCtxqGw==
-  dependencies:
-    chalk "^3.0.0"
-    csv "^5.3.2"
-    kleur "^3.0.3"
-    smartwrap "^2.0.1"
-    strip-ansi "^6.0.0"
-    wcwidth "^1.0.1"
-    yargs "^15.3.1"
 
 tty-table@^4.1.5:
   version "4.1.5"
@@ -22986,7 +22936,7 @@ yargs@^13.3.2:
     y18n "^4.0.0"
     yargs-parser "^13.1.2"
 
-yargs@^15.0.2, yargs@^15.1.0, yargs@^15.3.1, yargs@^15.4.1:
+yargs@^15.0.2, yargs@^15.1.0, yargs@^15.4.1:
   version "15.4.1"
   resolved "https://registry.npmjs.org/yargs/-/yargs-15.4.1.tgz"
   integrity sha512-aePbxDmcYW++PaqBsJ+HYUFwCdv4LVvdnhBy78E57PIor8/OVvhMrADFFEDh8DHDFRv/O9i3lPhsENjO7QX0+A==
