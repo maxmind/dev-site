@@ -6,7 +6,7 @@ on:
       - main
 
 env:
-  FIREBASE_PROJECT_ID: mm-static-site-production
+  FIREBASE_PROJECT_ID: mm-dev-site-production
   FIREBASE_SERVICE_ACCOUNT: "${{ secrets.PRODUCTION_FIREBASE_SERVICE_ACCOUNT }}"
 
 jobs:
