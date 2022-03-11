@@ -12419,10 +12419,15 @@ jest-style-transformer-sass-css-modules@^2.0.0:
     jest-style-transformer-utils "^1.0.0"
     postcss-modules "^3.2.2"
 
-jest-style-transformer-utils@^1.0.0, jest-style-transformer-utils@^1.0.2:
+jest-style-transformer-utils@^1.0.0:
   version "1.0.2"
   resolved "https://registry.npmjs.org/jest-style-transformer-utils/-/jest-style-transformer-utils-1.0.2.tgz"
   integrity sha512-kkFb269267wBiEwEBTtAU+BtOpAx/xZGlMOkOyNK8CPvON41meZ/6Ox3rvApIeARWCH/KXGxSB29KLWouW/WcQ==
+
+jest-style-transformer-utils@^2.0.1:
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/jest-style-transformer-utils/-/jest-style-transformer-utils-2.0.1.tgz#2a8fe5d42773902cf0cf047ac5810a1ff5eed622"
+  integrity sha512-y0dZuxKPj5UzRRG5FJuSfwNZRvZ4CtCvkDF9/VqUIUPQKXNCR1LVoCMz3YJ8B0V+Xme87kEGw5ec0LkEOMIpQA==
 
 jest-util@^24.9.0:
   version "24.9.0"
