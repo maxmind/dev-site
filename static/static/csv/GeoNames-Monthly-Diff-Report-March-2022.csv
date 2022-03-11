@@ -1,0 +1,170 @@
+diff_in,old_geoname_id,new_geoname_id,old_city_name,new_city_name,old_country_name,new_country_name,old_country_code,new_country_code,old_subdivision_codes,new_subdivision_codes
+city_name,6320844,6320844,Formosa Do Rio Preto,Formosa do Rio Preto,Brazil,Brazil,BR,BR,BA,BA
+city_name,6319281,6319281,Cruzeiro Do Sul,Cruzeiro do Sul,Brazil,Brazil,BR,BR,AC,AC
+city_name,6319470,6319470,Sao Felix Do Xingu,Sao Felix do Xingu,Brazil,Brazil,BR,BR,PA,PA
+city_name,8365997,8365997,Butang,Butangcun,China,China,CN,CN,GD,GD
+city_name,6926634,6926634,Boxi,Boxicun,China,China,CN,CN,GD,GD
+city_name,6862372,6862372,Chetou,Chetoucun,China,China,CN,CN,GD,GD
+city_name,2033261,2033261,Yulinbu,Dongyulincun,China,China,CN,CN,HE,HE
+city_name,6851307,6851307,Gongqiao,Gongqiaocun,China,China,CN,CN,GD,GD
+city_name,6851483,6851483,Chashui,Chashuicun,China,China,CN,CN,GD,GD
+city_name,9999171,9999171,Chahanhulun,Chahanhuluncun,China,China,CN,CN,HE,HE
+city_name,8540393,8540393,Jinzhou,Jinzhoucun,China,China,CN,CN,GD,GD
+city_name,6852166,6852166,Bafang,Bafangcun,China,China,CN,CN,GD,GD
+city_name,10132793,10132793,Wanghewan,Wanghewancun,China,China,CN,CN,HE,HE
+city_name,10132681,10132681,Jijiafang,Jijiafangcun,China,China,CN,CN,HE,HE
+city_name,2036536,2036536,Minzhu,Jiaohe,China,China,CN,CN,JL,JL
+city_name,3005102,3005102,el Volo,Le Boulou,France,France,FR,FR,"OCC, 66","OCC, 66"
+city_name,3006701,3006701,la Roca d'Albera,Laroque-des-Alberes,France,France,FR,FR,"OCC, 66","OCC, 66"
+city_name,2979205,2979205,Sant Joan de Pladecorts,St. Jean-Pla-de-Corts,France,France,FR,FR,"OCC, 66","OCC, 66"
+city_name,2849446,2849446,Rehau,Rehau-Pilgramsreuth,Germany,Germany,DE,DE,BY,BY
+city_name,295102,295102,Ga`ash,Ga'ash,Israel,Israel,IL,IL,M,M
+city_name,293177,293177,Yish`i,Yish'i,Israel,Israel,IL,IL,JM,JM
+city_name,8072917,8072917,`Ezer,Ezer,Israel,Israel,IL,IL,D,D
+city_name,293194,293194,Yesha`,Yesha',Israel,Israel,IL,IL,D,D
+city_name,295758,295758,`Adanim,Adanim,Israel,Israel,IL,IL,M,M
+city_name,294878,294878,Ha`Ogen,Ha'Ogen,Israel,Israel,IL,IL,M,M
+city_name,295419,295419,Bet Zera`,Bet Zera',Israel,Israel,IL,IL,Z,Z
+city_name,293672,293672,Sa`ad,Sa'ad,Israel,Israel,IL,IL,D,D
+city_name,295206,295206,`En HaShofet,En HaShofet,Israel,Israel,IL,IL,Z,Z
+city_name,294052,294052,Newe Mivtah,Neve Mivtah,Israel,Israel,IL,IL,D,D
+city_name,295226,295226,`Enat,Enat,Israel,Israel,IL,IL,M,M
+city_name,295733,295733,`Agur,Agur,Israel,Israel,IL,IL,JM,JM
+city_name,295213,295213,`En HaHoresh,En HaHoresh,Israel,Israel,IL,IL,M,M
+city_name,294979,294979,Giv`at Yesha`yahu,Giv'at Yesha'yahu,Israel,Israel,IL,IL,JM,JM
+city_name,294025,294025,Nir `Oz,Nir 'Oz,Israel,Israel,IL,IL,D,D
+city_name,295518,295518,Ben `Ammi,Ben 'Ammi,Israel,Israel,IL,IL,Z,Z
+city_name,294404,294404,Ma`anit,Ma'anit,Israel,Israel,IL,IL,HA,HA
+city_name,8261948,8261948,Ya`ad,Ya'ad,Israel,Israel,IL,IL,Z,Z
+city_name,8071775,8071775,Netiv Ha`Asara,Netiv Ha'Asara,Israel,Israel,IL,IL,D,D
+city_name,294910,294910,HaMa`pil,HaMa'pil,Israel,Israel,IL,IL,M,M
+city_name,294806,294806,HaZorea`,HaZorea',Israel,Israel,IL,IL,Z,Z
+city_name,295207,295207,`En HaShelosha,En HaShelosha,Israel,Israel,IL,IL,D,D
+city_name,294563,294563,Kefar `Azza,Kefar 'Azza,Israel,Israel,IL,IL,D,D
+city_name,295038,295038,Geva`,Geva',Israel,Israel,IL,IL,Z,Z
+city_name,295606,295606,Avi`ezer,Avi'ezer,Israel,Israel,IL,IL,JM,JM
+city_name,295119,295119,`Evron,Evron,Israel,Israel,IL,IL,Z,Z
+city_name,3802785,3802785,Chichonal 3ra. Seccion (La Capilla),Chichonal,Mexico,Mexico,MX,MX,TAB,TAB
+city_name,691705,691705,Teplohirsk,Irmino,Ukraine,Ukraine,UA,UA,9,9
+city_name,1577922,1577922,Lai Vung,Thi Tran Lai Vung,Vietnam,Vietnam,VN,VN,45,45
+geoname_id,6319348,3661756,Uarini,Uarini,Brazil,Brazil,BR,BR,AM,AM
+geoname_id,6698115,12432979,Samambaia,Samambaia,Brazil,Brazil,BR,BR,DF,DF
+geoname_id,3460045,6323760,Jatei,Jatei,Brazil,Brazil,BR,BR,MS,MS
+geoname_id,3398535,6317239,Guaribas,Guaribas,Brazil,Brazil,BR,BR,PI,PI
+geoname_id,3393106,3393105,Paragominas,Paragominas,Brazil,Brazil,BR,BR,PA,PA
+geoname_id,3665168,6319299,Atalaia do Norte,Atalaia do Norte,Brazil,Brazil,BR,BR,AM,AM
+geoname_id,3462513,3462511,Gaviao,Gaviao,Brazil,Brazil,BR,BR,BA,BA
+geoname_id,6319215,3465999,Cocalinho,Cocalinho,Brazil,Brazil,BR,BR,MT,MT
+geoname_id,3468071,3468072,Caldeirao Grande,Caldeirao Grande,Brazil,Brazil,BR,BR,BA,BA
+geoname_id,3398619,6317228,Guadalupe,Guadalupe,Brazil,Brazil,BR,BR,PI,PI
+geoname_id,6317580,6319424,Medicilandia,Medicilandia,Brazil,Brazil,BR,BR,PA,PA
+geoname_id,3467442,3467443,Cantagalo,Cantagalo,Brazil,Brazil,BR,BR,PR,PR
+geoname_id,3465294,6320824,Cotegipe,Cotegipe,Brazil,Brazil,BR,BR,BA,BA
+geoname_id,3406883,3406887,Bacuri,Bacuri,Brazil,Brazil,BR,BR,MA,MA
+geoname_id,3475644,3460723,Itapeva,Itapeva,Brazil,Brazil,BR,BR,SP,SP
+geoname_id,3470772,6316500,Barra Bonita,Barra Bonita,Brazil,Brazil,BR,BR,SC,SC
+geoname_id,3466345,3466344,Chacara,Chacara,Brazil,Brazil,BR,BR,MG,MG
+geoname_id,3459176,8437646,Lagoa Grande,Lagoa Grande,Brazil,Brazil,BR,BR,BA,BA
+geoname_id,6322523,6318187,Rosana,Rosana,Brazil,Brazil,BR,BR,SP,SP
+geoname_id,6319712,3398381,Icatu,Icatu,Brazil,Brazil,BR,BR,MA,MA
+geoname_id,6318970,6319833,Ze Doca,Ze Doca,Brazil,Brazil,BR,BR,MA,MA
+geoname_id,6323907,3471915,Apore,Apore,Brazil,Brazil,BR,BR,GO,GO
+geoname_id,3387423,6318704,Sitio Novo do Tocantins,Sitio Novo do Tocantins,Brazil,Brazil,BR,BR,TO,TO
+geoname_id,3451202,3451203,Rio das Pedras,Rio das Pedras,Brazil,Brazil,BR,BR,SP,SP
+geoname_id,1787091,1787092,Yantai,Yantai,China,China,CN,CN,HE,HE
+geoname_id,1892908,7679673,Donglin,Donglin,China,China,CN,CN,ZJ,ZJ
+geoname_id,1998247,12410541,Dadongcun,Dadongcun,China,China,CN,CN,GD,GD
+geoname_id,1913701,1917181,Huangsha,Huangsha,China,China,CN,CN,GD,GD
+geoname_id,6856338,1793954,Songyuan,Songyuan,China,China,CN,CN,GD,GD
+geoname_id,1788788,1788789,Xinjie,Xinjie,China,China,CN,CN,YN,YN
+geoname_id,11866623,7401199,Guojia,Guojia,China,China,CN,CN,LN,LN
+geoname_id,8416184,8408379,Baishi,Baishi,China,China,CN,CN,CQ,CQ
+geoname_id,7536778,2033263,Yulin,Yulin,China,China,CN,CN,JL,JL
+geoname_id,9116160,1816560,Beisu,Beisu,China,China,CN,CN,HE,HE
+geoname_id,9617405,7466647,Gaolong,Gaolong,China,China,CN,CN,JX,JX
+geoname_id,9987672,9076883,Bianhe,Bianhe,China,China,CN,CN,YN,YN
+geoname_id,8361402,1816494,Beiyang,Beiyang,China,China,CN,CN,JS,JS
+geoname_id,1914238,1817038,Banqiao,Banqiao,China,China,CN,CN,CQ,CQ
+geoname_id,10405554,1809161,Guyang,Guyang,China,China,CN,CN,HA,HA
+geoname_id,10863976,12411329,Fengdongcun,Fengdongcun,China,China,CN,CN,GD,GD
+geoname_id,8421991,8416018,Liujiao,Liujiao,China,China,CN,CN,CQ,CQ
+geoname_id,1548259,1811544,Fangshan,Fangshan,China,China,CN,CN,JS,JS
+geoname_id,8383372,1798117,Qiaotou,Qiaotou,China,China,CN,CN,JS,JS
+geoname_id,7644696,7465985,Beitian,Beitian,China,China,CN,CN,JX,JX
+geoname_id,12398581,12412055,Chengdongcun,Chengdongcun,China,China,CN,CN,GD,GD
+geoname_id,12398446,6846316,Dalicun,Dalicun,China,China,CN,CN,GD,GD
+geoname_id,12398590,6843430,Beishancun,Beishancun,China,China,CN,CN,GD,GD
+geoname_id,1929922,1928859,Luocheng,Luocheng,China,China,CN,CN,HN,HN
+geoname_id,10215334,6961396,Waluo,Waluo,China,China,CN,CN,SC,SC
+geoname_id,6842650,12411493,Chendongcun,Chendongcun,China,China,CN,CN,GD,GD
+geoname_id,7029880,1916848,Daling,Daling,China,China,CN,CN,GD,GD
+geoname_id,1910105,1909000,Guanyinsi,Guanyinsi,China,China,CN,CN,HA,HA
+geoname_id,2053527,11480511,Laoyemiaocun,Laoyemiaocun,China,China,CN,CN,LN,LN
+geoname_id,8366159,8333950,Hongshan,Hongshan,China,China,CN,CN,GD,GD
+geoname_id,8366434,7787461,Henan,Henan,China,China,CN,CN,GD,GD
+geoname_id,10050181,10024275,Fangjiazhai,Fangjiazhai,China,China,CN,CN,GZ,GZ
+geoname_id,1817517,11337176,Baimashi,Baimashi,China,China,CN,CN,SN,SN
+geoname_id,8408964,8400238,Wuxing,Wuxing,China,China,CN,CN,CQ,CQ
+geoname_id,1538476,1538424,Dongwan,Dongwan,China,China,CN,CN,XJ,XJ
+geoname_id,7469397,6905759,Changzhou,Changzhou,China,China,CN,CN,FJ,FJ
+geoname_id,3686736,3686737,Charala,Charala,Colombia,Colombia,CO,CO,SAN,SAN
+geoname_id,11885795,3667816,Sopetran,Sopetran,Colombia,Colombia,CO,CO,ANT,ANT
+geoname_id,3204232,3213252,Bicine,Bicine,Croatia,Croatia,HR,HR,15,15
+geoname_id,2613196,2613195,Soby,Soby,Denmark,Denmark,DK,DK,83,83
+geoname_id,2949010,2949009,Bietingen,Bietingen,Germany,Germany,DE,DE,BW,BW
+geoname_id,2922816,2922815,Gallin,Gallin,Germany,Germany,DE,DE,MV,MV
+geoname_id,2869404,2869396,Moosham,Moosham,Germany,Germany,DE,DE,BY,BY
+geoname_id,10500286,10550479,Chandauli,Chandauli,India,India,IN,IN,UP,UP
+geoname_id,11420737,11420438,Bommasamudram,Bommasamudram,India,India,IN,IN,AP,AP
+geoname_id,11419982,11412000,Ayyavaripalli,Ayyavaripalli,India,India,IN,IN,AP,AP
+geoname_id,6993725,10454872,Arrua,Arrua,India,India,IN,IN,UP,UP
+geoname_id,1279414,11421955,Abdullapuram,Abdullapuram,India,India,IN,IN,TN,TN
+geoname_id,9031001,11719692,Batagaon,Batagaon,India,India,IN,IN,OR,OR
+geoname_id,6775494,6775491,Tamanan,Tamanan,Indonesia,Indonesia,ID,ID,JI,JI
+geoname_id,3171718,8963506,Padula,Padula,Italy,Italy,IT,IT,"72, SA","72, SA"
+geoname_id,9032243,3171728,Padova,Padova,Italy,Italy,IT,IT,"34, PD","34, PD"
+geoname_id,8980123,3180511,Carignano,Carignano,Italy,Italy,IT,IT,"21, TO","21, TO"
+geoname_id,9009219,1859319,Kitakata,Kitakata,Japan,Japan,JP,JP,7,7
+geoname_id,8411877,8412231,Oshimizu,Oshimizu,Japan,Japan,JP,JP,2,2
+geoname_id,11752756,11827238,Aoba,Aoba,Japan,Japan,JP,JP,1,1
+geoname_id,10311515,10311269,Yayoi,Yayoi,Japan,Japan,JP,JP,40,40
+geoname_id,1736929,1736807,Dalat,Dalat,Malaysia,Malaysia,MY,MY,13,13
+geoname_id,1736837,1779135,Betong,Betong,Malaysia,Malaysia,MY,MY,13,13
+geoname_id,3521912,8867987,Paraiso,Paraiso,Mexico,Mexico,MX,MX,TAB,TAB
+geoname_id,3985129,3985070,San Pedro,San Pedro,Mexico,Mexico,MX,MX,COA,COA
+geoname_id,11561783,11561432,Santo Tomas,Santo Tomas,Mexico,Mexico,MX,MX,CMX,CMX
+geoname_id,3985035,3985070,San Pedro,San Pedro,Mexico,Mexico,MX,MX,COA,COA
+geoname_id,9519242,8902976,San Agustin,San Agustin,Mexico,Mexico,MX,MX,PUE,PUE
+geoname_id,8866801,4007431,El Tablon,El Tablon,Mexico,Mexico,MX,MX,GUA,GUA
+geoname_id,9623294,3824383,El Veintidos,El Veintidos,Mexico,Mexico,MX,MX,VER,VER
+geoname_id,3978864,3980151,Francisco I. Madero,Francisco I. Madero,Mexico,Mexico,MX,MX,DUR,DUR
+geoname_id,3514868,3514869,Valle Hermoso,Valle Hermoso,Mexico,Mexico,MX,MX,TAM,TAM
+geoname_id,4017953,11364633,Avandaro,Avandaro,Mexico,Mexico,MX,MX,MEX,MEX
+geoname_id,8908800,3802724,El Dorado,El Dorado,Mexico,Mexico,MX,MX,TAB,TAB
+geoname_id,3824690,3527186,Gutierrez Zamora,Gutierrez Zamora,Mexico,Mexico,MX,MX,VER,VER
+geoname_id,11120624,3823676,Ejidal,Ejidal,Mexico,Mexico,MX,MX,VER,VER
+geoname_id,11095680,3818621,Ixtepec,Ixtepec,Mexico,Mexico,MX,MX,PUE,PUE
+geoname_id,8875710,8861291,Allende,Allende,Mexico,Mexico,MX,MX,CHP,CHP
+geoname_id,8863842,3523243,Miahuatlan,Miahuatlan,Mexico,Mexico,MX,MX,VER,VER
+geoname_id,3823688,8859663,Las Trancas,Las Trancas,Mexico,Mexico,MX,MX,VER,VER
+geoname_id,3801806,3524476,La Venta,La Venta,Mexico,Mexico,MX,MX,OAX,OAX
+geoname_id,8710898,3529538,Miguel Aleman,Miguel Aleman,Mexico,Mexico,MX,MX,TAM,TAM
+geoname_id,3529692,3529691,Dos Rios,Dos Rios,Mexico,Mexico,MX,MX,VER,VER
+geoname_id,1718153,1718152,Casiguran,Casiguran,Philippines,Philippines,PH,PH,"03, AUR","03, AUR"
+geoname_id,2270119,2270121,Carrascal,Carrascal,Portugal,Portugal,PT,PT,11,11
+geoname_id,3116143,3116142,Moreda,Moreda,Spain,Spain,ES,ES,"GA, LU","GA, LU"
+geoname_id,2693369,2693368,Lycke,Lycke,Sweden,Sweden,SE,SE,O,O
+geoname_id,2691400,2691401,Mora,Mora,Sweden,Sweden,SE,SE,W,W
+geoname_id,2668227,2668221,Torestorp,Torestorp,Sweden,Sweden,SE,SE,O,O
+geoname_id,2687693,2687690,Nykvarn,Nykvarn,Sweden,Sweden,SE,SE,AB,AB
+geoname_id,2687066,2687063,Olofstorp,Olofstorp,Sweden,Sweden,SE,SE,O,O
+geoname_id,2666124,2666122,Utby,Utby,Sweden,Sweden,SE,SE,O,O
+geoname_id,2700688,2700686,Klagstorp,Klagstorp,Sweden,Sweden,SE,SE,M,M
+geoname_id,2695030,2695029,Lima,Lima,Sweden,Sweden,SE,SE,W,W
+geoname_id,2663078,2663077,Vikarbyn,Vikarbyn,Sweden,Sweden,SE,SE,W,W
+geoname_id,2673370,2673369,Stora Dalby,Stora Dalby,Sweden,Sweden,SE,SE,H,H
+geoname_id,2710040,2710041,Gudhem,Gudhem,Sweden,Sweden,SE,SE,O,O
+geoname_id,2719312,2719318,Brevik,Brevik,Sweden,Sweden,SE,SE,AB,AB
+geoname_id,693087,11816625,Sosnivka,Sosnivka,Ukraine,Ukraine,UA,UA,32,32
+subdivision_codes,1524849,1524849,Cheremshanka,Cheremshanka,Kazakhstan,Kazakhstan,KZ,KZ,,VOS
+subdivision_codes,1711082,1711082,Iligan City,Iligan City,Philippines,Philippines,PH,PH,12,"12, LAN"
