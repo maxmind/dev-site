@@ -42,7 +42,7 @@ jobs:
 
       - uses: actions/setup-node@v3
         with:
-          node-version: '14'
+          node-version: '16'
 
       - name: Get cached dependencies
         id: cache-node-modules
@@ -85,7 +85,7 @@ jobs:
 
       - uses: actions/setup-node@v3
         with:
-          node-version: '14'
+          node-version: '16'
 
       - name: Get cached dependencies
         uses: actions/cache@v2
@@ -110,7 +110,7 @@ jobs:
 
       - uses: actions/setup-node@v3
         with:
-          node-version: '14'
+          node-version: '16'
 
       - name: Get cached dependencies
         uses: actions/cache@v2
@@ -141,7 +141,7 @@ jobs:
 
       - uses: actions/setup-node@v3
         with:
-          node-version: '14'
+          node-version: '16'
 
       - name: Get cached build
         uses: actions/cache@v2
@@ -178,7 +178,7 @@ jobs:
 
       - uses: actions/setup-node@v3
         with:
-          node-version: '14'
+          node-version: '16'
 
       - name: Get cached build
         uses: actions/cache@v2
@@ -223,7 +223,7 @@ jobs:
 
       - uses: actions/setup-node@v3
         with:
-          node-version: '14'
+          node-version: '16'
 
       - name: Get cached dependencies
         uses: actions/cache@v2
