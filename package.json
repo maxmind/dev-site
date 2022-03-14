@@ -71,7 +71,7 @@
     "node-fetch": "^3.2.3",
     "normalize.css": "^8.0.1",
     "openapi-types": "^9.0.0",
-    "openapi3-ts": "^2.0.1",
+    "openapi3-ts": "^2.0.2",
     "postcss": "^8.2.4",
     "postcss-load-config": "^3.0.1",
     "postcss-loader": "^6.1.1",
