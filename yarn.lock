@@ -14772,22 +14772,22 @@ node-eta@^0.9.0:
   resolved "https://registry.npmjs.org/node-eta/-/node-eta-0.9.0.tgz"
   integrity sha1-n7CwmbzSoCGUDmA8ZCVNwAPZp6g=
 
-node-fetch@2.6.1, node-fetch@^2.3.0, node-fetch@^2.5.0, node-fetch@^2.6.1:
+node-fetch@2.6.1:
   version "2.6.1"
   resolved "https://registry.npmjs.org/node-fetch/-/node-fetch-2.6.1.tgz"
   integrity sha512-V4aYg89jEoVRxRb2fJdAg8FHvI7cEyYdVAh94HH0UIK8oJxUfkjlDQN9RbMx+bEjP7+ggMiFRprSti032Oipxw==
 
-node-fetch@^2.6.7:
+node-fetch@^2.3.0, node-fetch@^2.5.0, node-fetch@^2.6.1, node-fetch@^2.6.7:
   version "2.6.7"
   resolved "https://registry.yarnpkg.com/node-fetch/-/node-fetch-2.6.7.tgz#24de9fba827e3b4ae44dc8b20256a379160052ad"
   integrity sha512-ZjMPFEfVx5j+y2yF35Kzx5sF7kDzxuDj6ziH4FFbOp87zKDZNx8yExJIb05OGF4Nlt9IHFIMBkRl41VdvcNdbQ==
   dependencies:
     whatwg-url "^5.0.0"
 
-node-fetch@^3.2.2:
-  version "3.2.2"
-  resolved "https://registry.yarnpkg.com/node-fetch/-/node-fetch-3.2.2.tgz#16d33fbe32ca7c6ca1ca8ba5dfea1dd885c59f04"
-  integrity sha512-Cwhq1JFIoon15wcIkFzubVNFE5GvXGV82pKf4knXXjvGmn7RJKcypeuqcVNZMGDZsAFWyIRya/anwAJr7TWJ7w==
+node-fetch@^3.2.3:
+  version "3.2.3"
+  resolved "https://registry.yarnpkg.com/node-fetch/-/node-fetch-3.2.3.tgz#a03c9cc2044d21d1a021566bd52f080f333719a6"
+  integrity sha512-AXP18u4pidSZ1xYXRDPY/8jdv3RAozIt/WLNR/MBGZAz+xjtlr90RvCnsvHQRiXyWliZF/CpytExp32UU67/SA==
   dependencies:
     data-uri-to-buffer "^4.0.0"
     fetch-blob "^3.1.4"
