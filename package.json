@@ -39,7 +39,7 @@
     "fontsource-source-code-pro": "^4.0.0",
     "gatsby": "^3.1.1",
     "gatsby-plugin-advanced-sitemap": "^2.0.0",
-    "gatsby-plugin-feed": "^3.1.0",
+    "gatsby-plugin-feed": "^3.14.0",
     "gatsby-plugin-google-gtag": "^3.3.0",
     "gatsby-plugin-image": "^1.1.1",
     "gatsby-plugin-manifest": "^3.14.0",
