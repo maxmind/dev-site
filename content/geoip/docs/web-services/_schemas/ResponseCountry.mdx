@@ -10,6 +10,19 @@ import responseJson from '../_examples/geoip';
   end user is located.
 
   <Property
+    name="geoname_id"
+    services={[
+      'country',
+      'city',
+      'insights',
+    ]}
+    type="integer"
+  >
+    A unique identifier for the country as specified by
+    [GeoNames](https://www.geonames.org/).
+  </Property>
+
+  <Property
     name="confidence"
     tags={{
       'Min': 0,
