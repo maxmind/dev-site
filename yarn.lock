@@ -2959,10 +2959,10 @@
   dependencies:
     "@types/react" "*"
 
-"@types/react-helmet@^6.1.2":
-  version "6.1.2"
-  resolved "https://registry.npmjs.org/@types/react-helmet/-/react-helmet-6.1.2.tgz"
-  integrity sha512-dcfAZNlWb5JYFbO9CGfrPWLJAyFcT6UeR3u35eBbv8liY2Rg4K7fM1G5+HnwVgot+C+kVwXAZ8pLEn2jsMfTDg==
+"@types/react-helmet@^6.1.5":
+  version "6.1.5"
+  resolved "https://registry.yarnpkg.com/@types/react-helmet/-/react-helmet-6.1.5.tgz#35f89a6b1646ee2bc342a33a9a6c8777933f9083"
+  integrity sha512-/ICuy7OHZxR0YCAZLNg9r7I9aijWUWvxaPR6uTuyxe8tAj5RL4Sw1+R6NhXUtOsarkGYPmaHdBDvuXh2DIN/uA==
   dependencies:
     "@types/react" "*"
 
@@ -5227,7 +5227,7 @@ cheerio@^0.22.0:
     lodash.reject "^4.4.0"
     lodash.some "^4.4.0"
 
-cheerio@^1.0.0-rc.3, cheerio@^1.0.0-rc.5, cheerio@^1.0.0-rc.9:
+cheerio@^1.0.0-rc.10, cheerio@^1.0.0-rc.3, cheerio@^1.0.0-rc.5:
   version "1.0.0-rc.10"
   resolved "https://registry.npmjs.org/cheerio/-/cheerio-1.0.0-rc.10.tgz"
   integrity sha512-g0J0q/O6mW8z5zxQ3A8E8J1hUgp4SMOvEoW/x84OwyHKe/Zccz83PVT4y5Crcr530FV6NgmKI1qvGTKVl9XXVw==
@@ -9092,15 +9092,15 @@ gatsby-plugin-mdx@^2.1.0:
     unist-util-remove "^1.0.3"
     unist-util-visit "^1.4.1"
 
-gatsby-plugin-offline@^4.1.0:
-  version "4.11.0"
-  resolved "https://registry.npmjs.org/gatsby-plugin-offline/-/gatsby-plugin-offline-4.11.0.tgz"
-  integrity sha512-JRn/Voi7lyuVcc7NgXnr8ZAoMg34dFdUgnGJxqkh7cqEmH+1vvdbqKR3Z1i2OLlCJo4BE8rE0A/etYsIbM2oow==
+gatsby-plugin-offline@^4.14.0:
+  version "4.14.0"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-offline/-/gatsby-plugin-offline-4.14.0.tgz#df2e6f17184a58e66a3ae693855dd91601479ffb"
+  integrity sha512-ac6Jl/xvQq0v+PF1ip3aUBdnarxLyfDenK//frxY00gcAv2QjaEG8H8SMLbbgdPWqSnpzfrc+U2rE9CvJpwO1A==
   dependencies:
-    "@babel/runtime" "^7.14.6"
-    cheerio "^1.0.0-rc.9"
-    gatsby-core-utils "^2.11.0"
-    glob "^7.1.6"
+    "@babel/runtime" "^7.15.4"
+    cheerio "^1.0.0-rc.10"
+    gatsby-core-utils "^2.14.0"
+    glob "^7.1.7"
     idb-keyval "^3.2.0"
     lodash "^4.17.21"
     workbox-build "^4.3.1"
