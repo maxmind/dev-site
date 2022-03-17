@@ -25,7 +25,7 @@
     "@types/puppeteer": "^5.4.5",
     "@types/react": "^17.0.40",
     "@types/react-dom": "^17.0.13",
-    "@types/react-helmet": "^6.1.2",
+    "@types/react-helmet": "^6.1.5",
     "@types/unist": "^2.0.3",
     "airbnb-prop-types": "^2.16.0",
     "babel-polyfill": "^6.26.0",
