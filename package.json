@@ -109,7 +109,6 @@
     "@types/lodash.isboolean": "^3.0.6",
     "@types/lodash.isnumber": "^3.0.6",
     "@types/lodash.isplainobject": "^4.0.6",
-    "@types/sass": "^1.16.0",
     "@typescript-eslint/eslint-plugin": "^4.33.0",
     "@typescript-eslint/parser": "^4.33.0",
     "@wojtekmaj/enzyme-adapter-react-17": "^0.6.1",

@@ -2965,13 +2965,6 @@
     "@types/glob" "*"
     "@types/node" "*"
 
-"@types/sass@^1.16.0":
-  version "1.16.1"
-  resolved "https://registry.npmjs.org/@types/sass/-/sass-1.16.1.tgz"
-  integrity sha512-iZUcRrGuz/Tbg3loODpW7vrQJkUtpY2fFSf4ELqqkApcS2TkZ1msk7ie8iZPB86lDOP8QOTTmuvWjc5S0R9OjQ==
-  dependencies:
-    "@types/node" "*"
-
 "@types/scheduler@*":
   version "0.16.2"
   resolved "https://registry.npmjs.org/@types/scheduler/-/scheduler-0.16.2.tgz"
