@@ -28,7 +28,6 @@
     "@types/react-helmet": "^6.1.5",
     "@types/unist": "^2.0.3",
     "airbnb-prop-types": "^2.16.0",
-    "babel-polyfill": "^6.26.0",
     "cheerio": "^1.0.0-rc.5",
     "classnames": "^2.2.6",
     "css-vars-ponyfill": "^2.4.2",
