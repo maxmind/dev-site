@@ -190,13 +190,6 @@ export default {
       },
       resolve: 'gatsby-plugin-robots-txt',
     },
-    // {
-    //   options: {
-    //     analyzerPort: 3000,
-    //     production: true,
-    //   },
-    //   resolve: 'gatsby-plugin-webpack-bundle-analyzer',
-    // },
     ...THESE_PLUGINS_MUST_COME_LAST,
   ],
   siteMetadata: {
