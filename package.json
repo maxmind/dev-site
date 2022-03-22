@@ -178,16 +178,16 @@
   },
   "license": "MIT",
   "lint-staged": {
-    "**/*.{json}": [
+    "**/*.json": [
       "yarn fix:json"
     ],
-    "content/**/*.{mdx}": [
+    "content/**/*.mdx": [
       "yarn fix:content"
     ],
     "**/*.{js,ts,tsx}": [
       "yarn fix:scripts"
     ],
-    "src/**/*.{[s]css}": [
+    "src/**/*.[s]css": [
       "yarn fix:styles"
     ]
   },
