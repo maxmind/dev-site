@@ -75,12 +75,14 @@ const extractInlinedStyles = (args: ReplaceRendererArgs) => {
 const addZendesk = (args: ReplaceRendererArgs) => {
   const { setPostBodyComponents } = args;
 
+  /* eslint-disable react/jsx-key */
   setPostBodyComponents([
     <script
       id="ze-snippet"
       src="https://static.zdassets.com/ekr/snippet.js?key=e32809b5-6032-4c2f-b1f9-63931adc0cc1"
     />,
   ]);
+  /* eslint-enable react/jsx-key */
 };
 
 export const replaceRenderer: GatsbySSR['replaceRenderer'] = (

@@ -15,6 +15,7 @@ import * as styles from './Pre.module.scss';
 interface IPre {
   className?: string;
   hasWrapper?: boolean;
+  hidden?: boolean;
   highlightLines?: string;
   select?: React.ReactElement<React.HTMLProps<HTMLElement>>;
   showLineNumbers?: boolean;
@@ -219,6 +220,7 @@ Pre.propTypes = {
   children: PropTypes.node,
   className: PropTypes.string,
   hasWrapper: PropTypes.bool,
+  hidden: PropTypes.bool,
   highlightLines: PropTypes.string,
   select: PropTypes.any,
   showLineNumbers: PropTypes.bool,
