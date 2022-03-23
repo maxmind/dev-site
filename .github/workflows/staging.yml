@@ -125,6 +125,30 @@ jobs:
       - name: Run unit tests
         run: yarn test:unit
 
+  test-lint:
+    name: Test – Lint
+    needs: [cache-keys, build]
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check Out Repo
+        uses: actions/checkout@v3
+
+      - uses: actions/setup-node@v3
+        with:
+          node-version: '16'
+
+      - name: Get cached dependencies
+        uses: actions/cache@v2
+        with:
+          path: |
+            node_modules
+            functions/node_modules
+          key: ${{ needs.cache-keys.outputs.node-modules }}
+
+      - name: Run linters
+        run: yarn lint
+
   deploy-hosting:
     name: Deploy – Hosting
     needs: [cache-keys, build]
