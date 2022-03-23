@@ -9,6 +9,8 @@ env:
   FIREBASE_PROJECT_ID: mm-dev-site-production
   FIREBASE_SERVICE_ACCOUNT: "${{ secrets.PRODUCTION_FIREBASE_SERVICE_ACCOUNT }}"
 
+concurrency: production_deploy
+
 jobs:
   cache-keys:
     name: Cache keys
