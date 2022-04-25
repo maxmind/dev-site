@@ -45,6 +45,15 @@ const CsvLocationTable: React.FC<ICsvLocationTable> = (props) => {
             </A>
             . This ID can be
             used as a key for the Location file.
+            <br/>
+            <br/>
+            <A
+              href="https://support.maxmind.com/hc/en-us/articles/4414877149467-IP-Geolocation-Data#h_01FRRNFD5Z5EWNCAXM6SZZ5H2C"
+              rel="nofollow noopener noreferrer"
+              target="_blank"
+            >
+              Learn more about GeoNames IDs on our Knowledge Base.
+            </A>
           </Td>
           { !isEnterprise && (
             <Td>
@@ -134,6 +143,15 @@ const CsvLocationTable: React.FC<ICsvLocationTable> = (props) => {
           <Td>string</Td>
           <Td>
             The continent name for this location in the file&apos;s locale.
+            <br/>
+            <br/>
+            <A
+              href="https://support.maxmind.com/hc/en-us/articles/4414877149467-IP-Geolocation-Data#h_01FRRGRYTGZB29ERDBZCX3MR8Q"
+              rel="nofollow noopener noreferrer"
+              target="_blank"
+            >
+              Learn more about localized names on our Knowledge Base.
+            </A>
           </Td>
           { !isEnterprise && (
             <Td>
@@ -179,6 +197,15 @@ const CsvLocationTable: React.FC<ICsvLocationTable> = (props) => {
           <Td>string</Td>
           <Td>
             The country name for this location in the file&apos;s locale.
+            <br/>
+            <br/>
+            <A
+              href="https://support.maxmind.com/hc/en-us/articles/4414877149467-IP-Geolocation-Data#h_01FRRGRYTGZB29ERDBZCX3MR8Q"
+              rel="nofollow noopener noreferrer"
+              target="_blank"
+            >
+              Learn more about localized names on our Knowledge Base.
+            </A>
           </Td>
           { !isEnterprise && (
             <Td>
@@ -231,6 +258,15 @@ const CsvLocationTable: React.FC<ICsvLocationTable> = (props) => {
             The subdivision name for this location in the file&apos;s locale.
             As with the subdivision code, this is the least specific
             subdivision for the location.
+            <br/>
+            <br/>
+            <A
+              href="https://support.maxmind.com/hc/en-us/articles/4414877149467-IP-Geolocation-Data#h_01FRRGRYTGZB29ERDBZCX3MR8Q"
+              rel="nofollow noopener noreferrer"
+              target="_blank"
+            >
+              Learn more about localized names on our Knowledge Base.
+            </A>
           </Td>
           { !isEnterprise && (
             <Td>
@@ -284,6 +320,15 @@ const CsvLocationTable: React.FC<ICsvLocationTable> = (props) => {
             The subdivision name for this location in the file&apos;s locale.
             As with the subdivision code, this is the most specific subdivision
             for the location.
+            <br/>
+            <br/>
+            <A
+              href="https://support.maxmind.com/hc/en-us/articles/4414877149467-IP-Geolocation-Data#h_01FRRGRYTGZB29ERDBZCX3MR8Q"
+              rel="nofollow noopener noreferrer"
+              target="_blank"
+            >
+              Learn more about localized names on our Knowledge Base.
+            </A>
           </Td>
           { !isEnterprise && (
             <Td>
@@ -302,6 +347,15 @@ const CsvLocationTable: React.FC<ICsvLocationTable> = (props) => {
           <Td>string</Td>
           <Td>
             The city name for this location in the file&apos;s locale.
+            <br/>
+            <br/>
+            <A
+              href="https://support.maxmind.com/hc/en-us/articles/4414877149467-IP-Geolocation-Data#h_01FRRGRYTGZB29ERDBZCX3MR8Q"
+              rel="nofollow noopener noreferrer"
+              target="_blank"
+            >
+              Learn more about localized names on our Knowledge Base.
+            </A>
           </Td>
           { !isEnterprise && (
             <Td>
@@ -319,8 +373,7 @@ const CsvLocationTable: React.FC<ICsvLocationTable> = (props) => {
           <Td>metro_code</Td>
           <Td>integer</Td>
           <Td>
-            The metro code associated with the IP address. These are only
-            available for networks in the US.
+            Metro code is a geolocation target code from Google.
           </Td>
           { !isEnterprise && (
             <Td>
