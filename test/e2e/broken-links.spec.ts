@@ -43,6 +43,10 @@ const getBrokenLinks = (): Promise<any> => new Promise((resolve, reject) => {
           return;
         }
 
+        if (statusCode === 403) {
+          return;
+        }
+
         if (
           statusCode === 401
           && origin === 'https://www.maxmind.com'
