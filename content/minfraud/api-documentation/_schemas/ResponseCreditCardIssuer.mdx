@@ -19,9 +19,13 @@ import responseJson from '../_examples/response';
     }}
   >
     This field contains a JSON object with information relating to the credit card issuer.
+
+    [Learn how to use the credit card issuer name for risk analysis on our
+    Knowledge Base.](https://support.maxmind.com/hc/en-us/articles/4408734452123-Credit-Card-Risk-Data#h_01FN6TY3X4AHK80QZ85KXX6BZZ)
   </Property>
 
   <Property
+  isDeprecated
     name="matches_provided_name"
   >
     This field is `true` if the name matches the name provided in the request
@@ -41,6 +45,7 @@ import responseJson from '../_examples/response';
   </Property>
 
   <Property
+    isDeprecated
     name="matches_provided_phone_number"
   >
     This field is `true` if the phone number matches the number provided in the

@@ -10,12 +10,18 @@ import responseJson from '../_examples/geoip';
   users of the IP address. For instance, the country represented by an overseas
   military base.
 
+  [Learn about represented countries on our Knowledge
+  Base.](https://support.maxmind.com/hc/en-us/articles/4414762983195-Country-level-and-City-level-Geolocation)
+
   <Property
     name="geoname_id"
     type="integer"
   >
     A unique identifier for the country as specified by
     [GeoNames](https://www.geonames.org/).
+
+    [Learn more about GeoNames IDs on our Knowledge
+    Base.](https://support.maxmind.com/hc/en-us/articles/4414877149467-IP-Geolocation-Data#h_01FRRNFD5Z5EWNCAXM6SZZ5H2C)
   </Property>
 
   <Property
@@ -24,6 +30,9 @@ import responseJson from '../_examples/geoip';
     This is `true` if the registered country is a member state of the European
     Union. Otherwise, the key is not included in the `represented_country`
     object.
+
+    [Learn more about the European Union flag on our Knowledge
+    Base.](https://support.maxmind.com/hc/en-us/articles/4414877149467-IP-Geolocation-Data#h_01FRRMQN1B2WWTDM8HSQ20870M)
   </Property>
 
   <Property
@@ -34,6 +43,9 @@ import responseJson from '../_examples/geoip';
   >
     A two-character [ISO 3166-1](https://en.wikipedia.org/wiki/ISO_3166-1)
     country code for the represented_country country.
+
+    [Learn more about ISO code data on our Knowledge
+    Base.](https://support.maxmind.com/hc/en-us/articles/4414877149467-IP-Geolocation-Data#h_01FRRJSP2B14KSWWJTXKRWZGKJ)
   </Property>
 
   <Property
@@ -48,5 +60,8 @@ import responseJson from '../_examples/geoip';
   >
     The type of represented country. Currently limited to `military`, but may
     include other types in the future.
+
+    [Learn more about localized geolocation names on our Knowledge
+    Base.](https://support.maxmind.com/hc/en-us/articles/4414877149467-IP-Geolocation-Data#h_01FRRGRYTGZB29ERDBZCX3MR8Q)
   </Property>
 </GeoIpSchema>
