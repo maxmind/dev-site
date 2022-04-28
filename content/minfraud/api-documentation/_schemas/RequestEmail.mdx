@@ -19,11 +19,8 @@ import requestJson from '../_examples/request';
     This field must be either be a valid email address or an MD5 of the email
     used in the transaction.
 
-    <Alert type="warning">
-      If using the MD5 hash, please be sure to
-      [normalize it](/minfraud/normalizing-email-addresses-for-minfraud)
-      before calculating its MD5 hash.
-    </Alert>
+    [Learn more about the `/email/address` input on our Knowledge
+    Base.](https://support.maxmind.com/hc/en-us/articles/5451485951387)
   </Property>
 
   <Property
@@ -34,5 +31,11 @@ import requestJson from '../_examples/request';
   >
     The domain of the email address used in the transaction. Do not include the
     `@` in this field.
+
+    <Alert type="warning">
+      You do not need to pass the email domain input unless you are passing the
+      email address as an MD5 hash. [Learn more about hashed email inputs on our
+      Knowledge Base.](https://support.maxmind.com/hc/en-us/articles/5451485951387#h_01G0Z373C3H1QA68TTHVYMXGTT)
+    </Alert>
   </Property>
 </MinFraudSchema>

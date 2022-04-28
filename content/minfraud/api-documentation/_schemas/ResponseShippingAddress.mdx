@@ -16,6 +16,9 @@ import responseJson from '../_examples/response';
     fraudulent transactions. The field is `false` when the address is not
     associated with increased risk. The key will only be present when a
     shipping address is provided.
+
+    [Learn more about the flag for high risk shipping addresses on our Knowledge
+    Base.](https://support.maxmind.com/hc/en-us/articles/4408737039515-Billing-and-Shipping-Address-Risk-Data#h_01FN6TQP51E294G9ANGEHPC9ZY)
   </Property>
 
   <Property
@@ -30,6 +33,9 @@ import responseJson from '../_examples/response';
     for the postal-city match, which uses the [preferred place name](https://en.wikipedia.org/wiki/ZIP_Code#Preferred_place_names:_ZIP_Codes_and_previous_zoning_lines)
     for a US ZIP code. [Alternative place names](https://en.wikipedia.org/wiki/ZIP_Code#Preferred_place_names:_ZIP_Codes_and_previous_zoning_lines)
     for US ZIP codes may not trigger a match for this field.
+
+    [Learn how to use the postal to city check for risk analysis on our
+    Knowledge Base.](https://support.maxmind.com/hc/en-us/articles/4408737039515-Billing-and-Shipping-Address-Risk-Data#h_01FN6TV1Z2BRWCHVBK1ZE8276E)
   </Property>
 
   <Property
@@ -66,14 +72,26 @@ import responseJson from '../_examples/response';
     name="distance_to_ip_location"
     type="integer"
   >
-    The distance in kilometers from the address to the IP location. We fall back to country or subdivision information if we do not have postal or city information for an IP address, which may lead to inaccurate distance calculations. 
+    The distance in kilometers from the address to the IP location. We fall back
+    to country or subdivision information if we do not have postal or city
+    information for an IP address, which may lead to inaccurate distance
+    calculations.
+
+    [Learn how to use the IP geolocation to address distance for risk analysis
+    on our Knowledge Base.](https://support.maxmind.com/hc/en-us/articles/4408737039515-Billing-and-Shipping-Address-Risk-Data#h_01FN6TVDXWSBQR55FJ0K2KWGJQ)
   </Property>
 
   <Property
     name="distance_to_billing_address"
     type="integer"
   >
-    The distance in kilometers from the shipping address to billing address. We fall back to country or subdivision information if we do not have postal or city information for an IP address, which may lead to inaccurate distance calculations. 
+    The distance in kilometers from the shipping address to billing address. We
+    fall back to country or subdivision information if we do not have postal or
+    city information for an IP address, which may lead to inaccurate distance
+    calculations.
+
+    [Learn how to use the shipping to billing address distance for risk analysis
+    on our Knowledge Base.](https://support.maxmind.com/hc/en-us/articles/4408737039515-Billing-and-Shipping-Address-Risk-Data#h_01FN6TREMWDMHSB6EW41XX1A0Y)
   </Property>
 
   <Property
@@ -83,5 +101,8 @@ import responseJson from '../_examples/response';
     `false` when the address is not in the IP country. If the IP address could
     not be geolocated or no billing address was provided, the field will not be
     included in the response.
+
+    [Learn how to use the IP location to country check for risk analysis on our
+    Knowledge Base.](https://support.maxmind.com/hc/en-us/articles/4408737039515-Billing-and-Shipping-Address-Risk-Data#h_01FN6TVDXWSBQR55FJ0K2KWGJQ)
   </Property>
 </MinFraudSchema>

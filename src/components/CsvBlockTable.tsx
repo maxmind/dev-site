@@ -76,6 +76,15 @@ const CsvBlockTable: React.FC<ICsvBlockTable> = (props) => {
             </A>
             . This ID can be
             used to look up the location information in the Location file.
+            <br/>
+            <br/>
+            <A
+              href="https://support.maxmind.com/hc/en-us/articles/4414877149467-IP-Geolocation-Data#h_01FRRNFD5Z5EWNCAXM6SZZ5H2C"
+              rel="nofollow noopener noreferrer"
+              target="_blank"
+            >
+              Learn more about GeoNames IDs on our Knowledge Base.
+            </A>
           </Td>
           { !isEnterprise && (
             <Td>
@@ -106,6 +115,15 @@ const CsvBlockTable: React.FC<ICsvBlockTable> = (props) => {
             </A>
             . This ID can be
             used to look up the location information in the Location file.
+            <br/>
+            <br/>
+            <A
+              href="https://support.maxmind.com/hc/en-us/articles/4414762983195-Country-level-and-City-level-Geolocation"
+              rel="nofollow noopener noreferrer"
+              target="_blank"
+            >
+              Learn more about registered countries on our Knowledge Base.
+            </A>
           </Td>
           { !isEnterprise && (
             <Td>
@@ -125,7 +143,7 @@ const CsvBlockTable: React.FC<ICsvBlockTable> = (props) => {
             The represented country is the country which is represented by
             users of the IP address. For instance, the country represented by
             an overseas military base. This column contains a unique
-            identifier for the network&apos;s registered country as specified
+            identifier for the network&apos;s represented country as specified
             by
             {' '}
             <A
@@ -137,6 +155,15 @@ const CsvBlockTable: React.FC<ICsvBlockTable> = (props) => {
             </A>
             . This ID can be
             used to look up the location information in the Location file.
+            <br/>
+            <br/>
+            <A
+              href="https://support.maxmind.com/hc/en-us/articles/4414762983195-Country-level-and-City-level-Geolocation"
+              rel="nofollow noopener noreferrer"
+              target="_blank"
+            >
+              Learn more about represented countries on our Knowledge Base.
+            </A>
           </Td>
           { !isEnterprise && (
             <Td>
@@ -252,6 +279,16 @@ const CsvBlockTable: React.FC<ICsvBlockTable> = (props) => {
             </A>
             {' '}
             latitude of the location associated with the network.
+            <br/>
+            <br/>
+            <A
+              href="https://support.maxmind.com/hc/en-us/articles/4414877149467-IP-Geolocation-Data#h_01FRRHZZP6RAYSNZTYE4MQ3MWY"
+              rel="nofollow noopener noreferrer"
+              target="_blank"
+            >
+              Learn about the geolocation area defined by latitude, longitude,
+              and accuracy radius, on our Knowledge Base.
+            </A>
           </Td>
           { !isEnterprise && (
             <Td>
@@ -280,6 +317,16 @@ const CsvBlockTable: React.FC<ICsvBlockTable> = (props) => {
             </A>
             {' '}
             longitude of the location associated with the network.
+            <br/>
+            <br/>
+            <A
+              href="https://support.maxmind.com/hc/en-us/articles/4414877149467-IP-Geolocation-Data#h_01FRRHZZP6RAYSNZTYE4MQ3MWY"
+              rel="nofollow noopener noreferrer"
+              target="_blank"
+            >
+              Learn about the geolocation area defined by latitude, longitude,
+              and accuracy radius, on our Knowledge Base.
+            </A>
           </Td>
           { !isEnterprise && (
             <Td>
@@ -299,14 +346,15 @@ const CsvBlockTable: React.FC<ICsvBlockTable> = (props) => {
           <Td>
             The radius in kilometers around the specified location where the IP
             address is likely to be.
-            {' '}
+            <br/>
+            <br/>
             <A
-              // eslint-disable-next-line max-len
-              href="https://support.maxmind.com/hc/en-us/articles/4407630607131-Geolocation-Accuracy"
+              href="https://support.maxmind.com/hc/en-us/articles/4414877149467-IP-Geolocation-Data#h_01FRRHZZP6RAYSNZTYE4MQ3MWY"
               rel="nofollow noopener noreferrer"
               target="_blank"
             >
-              Learn more about accuracy on our knowledge base.
+              Learn about the geolocation area defined by latitude, longitude,
+              and accuracy radius, on our Knowledge Base.
             </A>
           </Td>
           { !isEnterprise && (
@@ -329,6 +377,15 @@ const CsvBlockTable: React.FC<ICsvBlockTable> = (props) => {
               <Td>
                 A identifier for the ISP. This ID can be used to look up the
                 location information in the ISP file.
+                <br/>
+                <br/>
+                <A
+                  href="https://support.maxmind.com/hc/en-us/articles/4408200231067-IP-Network-Data#h_01FN989KHXR7TGXPB5T2DK0Q77"
+                  rel="nofollow noopener noreferrer"
+                  target="_blank"
+                >
+                  Learn more about ISP data on our Knowledge Base.
+                </A>
               </Td>
             </Tr>
             <Tr>
@@ -336,6 +393,15 @@ const CsvBlockTable: React.FC<ICsvBlockTable> = (props) => {
               <Td>string</Td>
               <Td>
                 The domain associated with the network.
+                <br/>
+                <br/>
+                <A
+                  href="https://support.maxmind.com/hc/en-us/articles/4408200231067-IP-Network-Data#h_01FN98A5BNTS0GGWTD2QA4AHXN"
+                  rel="nofollow noopener noreferrer"
+                  target="_blank"
+                >
+                  Learn more about domain name data on our Knowledge Base.
+                </A>
               </Td>
             </Tr>
             <Tr>
@@ -343,6 +409,15 @@ const CsvBlockTable: React.FC<ICsvBlockTable> = (props) => {
               <Td>decimal (1-100)</Td>
               <Td>
                 The confidence that the country was correctly geolocated.
+                <br/>
+                <br/>
+                <A
+                  href="https://support.maxmind.com/hc/en-us/articles/4414877149467-IP-Geolocation-Data#h_01FRRHZ767N9MJJ21K9CW04WWQ"
+                  rel="nofollow noopener noreferrer"
+                  target="_blank"
+                >
+                  Learn more about confidence factors on our Knowledge Base.
+                </A>
               </Td>
             </Tr>
             <Tr>
@@ -351,6 +426,15 @@ const CsvBlockTable: React.FC<ICsvBlockTable> = (props) => {
               <Td>
                 The confidence that the most specific subdivision was correctly
                 geolocated.
+                <br/>
+                <br/>
+                <A
+                  href="https://support.maxmind.com/hc/en-us/articles/4414877149467-IP-Geolocation-Data#h_01FRRHZ767N9MJJ21K9CW04WWQ"
+                  rel="nofollow noopener noreferrer"
+                  target="_blank"
+                >
+                  Learn more about confidence factors on our Knowledge Base.
+                </A>
               </Td>
             </Tr>
             <Tr>
@@ -358,6 +442,15 @@ const CsvBlockTable: React.FC<ICsvBlockTable> = (props) => {
               <Td>decimal (1-100)</Td>
               <Td>
                 The confidence that the city was correctly geolocated.
+                <br/>
+                <br/>
+                <A
+                  href="https://support.maxmind.com/hc/en-us/articles/4414877149467-IP-Geolocation-Data#h_01FRRHZ767N9MJJ21K9CW04WWQ"
+                  rel="nofollow noopener noreferrer"
+                  target="_blank"
+                >
+                  Learn more about confidence factors on our Knowledge Base.
+                </A>
               </Td>
             </Tr>
             <Tr>
@@ -365,6 +458,15 @@ const CsvBlockTable: React.FC<ICsvBlockTable> = (props) => {
               <Td>decimal (1-100)</Td>
               <Td>
                 The confidence that the postal code was correctly geolocated.
+                <br/>
+                <br/>
+                <A
+                  href="https://support.maxmind.com/hc/en-us/articles/4414877149467-IP-Geolocation-Data#h_01FRRHZ767N9MJJ21K9CW04WWQ"
+                  rel="nofollow noopener noreferrer"
+                  target="_blank"
+                >
+                  Learn more about confidence factors on our Knowledge Base.
+                </A>
               </Td>
             </Tr>
             <Tr>
