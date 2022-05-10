@@ -1,0 +1,299 @@
+diff_in,old_geoname_id,new_geoname_id,old_city_name,new_city_name,old_country_name,new_country_name,old_country_code,new_country_code,old_subdivision_codes,new_subdivision_codes
+city_name,3889867,3889867,Espejo,Lo Espejo,Chile,Chile,CL,CL,RM,RM
+city_name,8066249,8066249,Yongxing,Yongxingcun,China,China,CN,CN,GD,GD
+city_name,8365712,8365712,Nanning,Nanningcun,China,China,CN,CN,GD,GD
+city_name,8366199,8366199,Bianchong,Bianchongcun,China,China,CN,CN,GD,GD
+city_name,6897802,6897802,Beifen,Beifencun,China,China,CN,CN,GD,GD
+city_name,8066006,8066006,Dalian,Daliancun,China,China,CN,CN,GD,GD
+city_name,8066230,8066230,Shaoyang,Shaoyangcun,China,China,CN,CN,GD,GD
+city_name,2038333,2038333,Beishuangdong,Beishuangdongcun,China,China,CN,CN,HE,HE
+city_name,1913093,1913093,Cixi,Cixicun,China,China,CN,CN,GD,GD
+city_name,1913490,1913490,Gaolong,Gaolongcun,China,China,CN,CN,GD,GD
+city_name,9992044,9992044,Baoshenmiao,Baoshenmiaocun,China,China,CN,CN,HE,HE
+city_name,8066185,8066185,Xinyu,Xinyucun,China,China,CN,CN,GD,GD
+city_name,2048018,2048018,Xi'an,Xi'ancun,China,China,CN,CN,HE,HE
+city_name,8366172,8366172,Aodi,Aodicun,China,China,CN,CN,GD,GD
+city_name,9991949,9991949,Changbeigou,Changbeigoucun,China,China,CN,CN,HE,HE
+city_name,6922262,6922262,Jiangbian,Jiangbiancun,China,China,CN,CN,GD,GD
+city_name,3193400,3193400,Petrovcy,Petrovci,Croatia,Croatia,HR,HR,16,16
+city_name,2836443,2836443,Schoenwalde-Glien,Schoenwalde,Germany,Germany,DE,DE,BB,BB
+city_name,1519948,1519948,Kapshagay,Konayev,Kazakhstan,Kazakhstan,KZ,KZ,ALM,ALM
+city_name,1301322,1301322,Papun,Hpar Pun,Myanmar,Myanmar,MM,MM,13,13
+city_name,1324570,1324570,Hlaing,Mun Hlaing,Myanmar,Myanmar,MM,MM,13,13
+city_name,1168372,1168372,Padhana,Parhana,Pakistan,Pakistan,PK,PK,PB,PB
+city_name,2692570,2692570,Marks Kommun,Mark Municipality,Sweden,Sweden,SE,SE,O,O
+city_name,713174,713174,Artemivs'k,Bakhmut,Ukraine,Ukraine,UA,UA,14,14
+city_name,616743,616743,Druzhkovka,Druzhkivka,Ukraine,Ukraine,UA,UA,14,14
+geoname_id,2789697,2789698,Ophoven,Ophoven,Belgium,Belgium,BE,BE,"VLG, VLI","VLG, VLI"
+geoname_id,6317771,6323847,Nova Ubirata,Nova Ubirata,Brazil,Brazil,BR,BR,MT,MT
+geoname_id,3449304,6321040,Sao Desiderio,Sao Desiderio,Brazil,Brazil,BR,BR,BA,BA
+geoname_id,12141560,3449293,Sao Domingos,Sao Domingos,Brazil,Brazil,BR,BR,GO,GO
+geoname_id,7771981,3459431,Juranda,Juranda,Brazil,Brazil,BR,BR,PR,PR
+geoname_id,3463120,6321383,Formoso,Formoso,Brazil,Brazil,BR,BR,MG,MG
+geoname_id,3445689,3445688,Urucuia,Urucuia,Brazil,Brazil,BR,BR,MG,MG
+geoname_id,3396828,6317428,Lagoa de Dentro,Lagoa de Dentro,Brazil,Brazil,BR,BR,PB,PB
+geoname_id,12179408,3465542,Coracao de Jesus,Coracao de Jesus,Brazil,Brazil,BR,BR,MG,MG
+geoname_id,3469933,3469942,Boa Esperanca,Boa Esperanca,Brazil,Brazil,BR,BR,ES,ES
+geoname_id,6319433,6317800,Novo Progresso,Novo Progresso,Brazil,Brazil,BR,BR,PA,PA
+geoname_id,3460516,11968844,Itupeva,Itupeva,Brazil,Brazil,BR,BR,SP,SP
+geoname_id,3463605,12229353,Farroupilha,Farroupilha,Brazil,Brazil,BR,BR,RS,RS
+geoname_id,6319587,3393239,Palmeirante,Palmeirante,Brazil,Brazil,BR,BR,TO,TO
+geoname_id,6324275,3664716,Canutama,Canutama,Brazil,Brazil,BR,BR,AM,AM
+geoname_id,3397292,6319721,Joao Lisboa,Joao Lisboa,Brazil,Brazil,BR,BR,MA,MA
+geoname_id,3459531,6324009,Jussara,Jussara,Brazil,Brazil,BR,BR,GO,GO
+geoname_id,6318704,3387423,Sitio Novo do Tocantins,Sitio Novo do Tocantins,Brazil,Brazil,BR,BR,TO,TO
+geoname_id,6317707,6323770,Nova Andradina,Nova Andradina,Brazil,Brazil,BR,BR,MS,MS
+geoname_id,6075292,12031951,Mission,Mission,Canada,Canada,CA,CA,BC,BC
+geoname_id,8272768,7502669,Baimiao,Baimiao,China,China,CN,CN,JS,JS
+geoname_id,10163668,10148225,Feifeng,Feifeng,China,China,CN,CN,SC,SC
+geoname_id,1797587,8534427,Qinjiang,Qinjiang,China,China,CN,CN,JX,JX
+geoname_id,1974566,1812395,Dongling,Dongling,China,China,CN,CN,FJ,FJ
+geoname_id,1893325,1919415,Tianxin,Tianxin,China,China,CN,CN,GD,GD
+geoname_id,11451247,1794779,Chaoyang,Chaoyang,China,China,CN,CN,SX,SX
+geoname_id,9998752,9999333,Dagoucun,Dagoucun,China,China,CN,CN,HE,HE
+geoname_id,1923333,1817314,Baitu,Baitu,China,China,CN,CN,JX,JX
+geoname_id,11151638,1813455,Datong,Datong,China,China,CN,CN,ZJ,ZJ
+geoname_id,11481047,7401619,Dacheng,Dacheng,China,China,CN,CN,LN,LN
+geoname_id,11080768,1548617,Shuanglong,Shuanglong,China,China,CN,CN,JS,JS
+geoname_id,2609991,2609990,Vra,Vra,Denmark,Denmark,DK,DK,81,81
+geoname_id,2617548,2617549,Lintrup,Lintrup,Denmark,Denmark,DK,DK,83,83
+geoname_id,2624361,2624360,Balle,Balle,Denmark,Denmark,DK,DK,82,82
+geoname_id,2615928,2615927,Nyrup,Nyrup,Denmark,Denmark,DK,DK,85,85
+geoname_id,2622299,2622298,Farup,Farup,Denmark,Denmark,DK,DK,82,82
+geoname_id,2621709,2621710,Galten,Galten,Denmark,Denmark,DK,DK,82,82
+geoname_id,2807200,2807201,Wittstock,Wittstock,Germany,Germany,DE,DE,BB,BB
+geoname_id,2955510,2955507,Arnhofen,Arnhofen,Germany,Germany,DE,DE,BY,BY
+geoname_id,10700273,10453647,Asoli,Asoli,India,India,IN,IN,MH,MH
+geoname_id,10474841,1445195,Annaram,Annaram,India,India,IN,IN,TG,TG
+geoname_id,10454342,1276579,Bela,Bela,India,India,IN,IN,MH,MH
+geoname_id,10658176,10575441,Amawan,Amawan,India,India,IN,IN,UP,UP
+geoname_id,10732399,10723424,Bhadrol,Bhadrol,India,India,IN,IN,HP,HP
+geoname_id,10788168,10783450,Vadada,Vadada,India,India,IN,IN,AP,AP
+geoname_id,10530901,10530900,Aber,Aber,India,India,IN,IN,MP,MP
+geoname_id,6396341,1650198,Banjarsari,Banjarsari,Indonesia,Indonesia,ID,ID,JB,JB
+geoname_id,1962362,1962954,Ciparay Tengah,Ciparay Tengah,Indonesia,Indonesia,ID,ID,JB,JB
+geoname_id,1651017,1963653,Awilarangan,Awilarangan,Indonesia,Indonesia,ID,ID,JB,JB
+geoname_id,8052307,7928700,Lengkongsari,Lengkongsari,Indonesia,Indonesia,ID,ID,JB,JB
+geoname_id,7558599,7474303,Dulalowo,Dulalowo,Indonesia,Indonesia,ID,ID,GO,GO
+geoname_id,1626444,1626443,Subang,Subang,Indonesia,Indonesia,ID,ID,JB,JB
+geoname_id,1646436,1646435,Cimanggis,Cimanggis,Indonesia,Indonesia,ID,ID,JB,JB
+geoname_id,6834363,7406579,Petemon,Petemon,Indonesia,Indonesia,ID,ID,JI,JI
+geoname_id,6744539,1971831,Batur,Batur,Indonesia,Indonesia,ID,ID,JT,JT
+geoname_id,1959849,1960320,Pabuaran,Pabuaran,Indonesia,Indonesia,ID,ID,JB,JB
+geoname_id,6866032,6822684,Beton,Beton,Indonesia,Indonesia,ID,ID,JI,JI
+geoname_id,7780132,1960976,Juhut,Juhut,Indonesia,Indonesia,ID,ID,BT,BT
+geoname_id,6264968,6564934,Bendungan,Bendungan,Indonesia,Indonesia,ID,ID,YO,YO
+geoname_id,7061609,1650847,Bacu,Bacu,Indonesia,Indonesia,ID,ID,SN,SN
+geoname_id,7051290,8300477,Jambewangi,Jambewangi,Indonesia,Indonesia,ID,ID,JI,JI
+geoname_id,8060704,6822683,Karangturi,Karangturi,Indonesia,Indonesia,ID,ID,JT,JT
+geoname_id,7666853,7665862,Banyumas,Banyumas,Indonesia,Indonesia,ID,ID,LA,LA
+geoname_id,1999382,1645222,Dlingo,Dlingo,Indonesia,Indonesia,ID,ID,YO,YO
+geoname_id,7779823,1646762,Cijambu,Cijambu,Indonesia,Indonesia,ID,ID,JB,JB
+geoname_id,1646136,1964496,Cisalak,Cisalak,Indonesia,Indonesia,ID,ID,JB,JB
+geoname_id,1631498,1631494,Penggilingan,Penggilingan,Indonesia,Indonesia,ID,ID,JK,JK
+geoname_id,1641192,1965440,Karangrejo,Karangrejo,Indonesia,Indonesia,ID,ID,JI,JI
+geoname_id,6605700,1642415,Jombang,Jombang,Indonesia,Indonesia,ID,ID,JB,JB
+geoname_id,6581990,7848301,Batusari,Batusari,Indonesia,Indonesia,ID,ID,JB,JB
+geoname_id,6589891,1961411,Cipanas,Cipanas,Indonesia,Indonesia,ID,ID,JB,JB
+geoname_id,6762671,1646384,Cimuncang,Cimuncang,Indonesia,Indonesia,ID,ID,BT,BT
+geoname_id,1962009,1962010,Banyumanik,Banyumanik,Indonesia,Indonesia,ID,ID,JT,JT
+geoname_id,6882462,6822368,Peterongan,Peterongan,Indonesia,Indonesia,ID,ID,JI,JI
+geoname_id,8075153,8323052,Jetis,Jetis,Indonesia,Indonesia,ID,ID,JI,JI
+geoname_id,6578948,7861029,Bojonglarang,Bojonglarang,Indonesia,Indonesia,ID,ID,JB,JB
+geoname_id,6745061,1972852,Bancak,Bancak,Indonesia,Indonesia,ID,ID,JT,JT
+geoname_id,1987658,7928574,Leuwinanggung,Leuwinanggung,Indonesia,Indonesia,ID,ID,JB,JB
+geoname_id,6775491,8379755,Tamanan,Tamanan,Indonesia,Indonesia,ID,ID,JI,JI
+geoname_id,6264468,6260115,Banaran,Banaran,Indonesia,Indonesia,ID,ID,YO,YO
+geoname_id,6264746,1631948,Patuk,Patuk,Indonesia,Indonesia,ID,ID,YO,YO
+geoname_id,7920632,8058639,Babakansari,Babakansari,Indonesia,Indonesia,ID,ID,JB,JB
+geoname_id,6834070,7081760,Magersari,Magersari,Indonesia,Indonesia,ID,ID,JI,JI
+geoname_id,7375769,6786358,Kebonsari,Kebonsari,Indonesia,Indonesia,ID,ID,JI,JI
+geoname_id,11009767,1649881,Batang,Batang,Indonesia,Indonesia,ID,ID,JT,JT
+geoname_id,1960308,1961511,Barengkok,Barengkok,Indonesia,Indonesia,ID,ID,JB,JB
+geoname_id,1631005,1971507,Ploso,Ploso,Indonesia,Indonesia,ID,ID,JI,JI
+geoname_id,6372051,1973418,Duren,Duren,Indonesia,Indonesia,ID,ID,JT,JT
+geoname_id,8647089,8647030,Damai,Damai,Indonesia,Indonesia,ID,ID,KI,KI
+geoname_id,1642715,1962789,Jatiluhur,Jatiluhur,Indonesia,Indonesia,ID,ID,JB,JB
+geoname_id,6591034,1646448,Cimahi,Cimahi,Indonesia,Indonesia,ID,ID,JB,JB
+geoname_id,1213840,6702313,Sidikalang,Sidikalang,Indonesia,Indonesia,ID,ID,SU,SU
+geoname_id,6740029,1630326,Purworejo,Purworejo,Indonesia,Indonesia,ID,ID,JT,JT
+geoname_id,1646034,1963978,Citeureup,Citeureup,Indonesia,Indonesia,ID,ID,JB,JB
+geoname_id,7051791,8170780,Argosari,Argosari,Indonesia,Indonesia,ID,ID,JI,JI
+geoname_id,1971552,7350353,Gelang,Gelang,Indonesia,Indonesia,ID,ID,JI,JI
+geoname_id,6744621,6410846,Lebak,Lebak,Indonesia,Indonesia,ID,ID,JT,JT
+geoname_id,2007708,6404619,Banyuripan,Banyuripan,Indonesia,Indonesia,ID,ID,JT,JT
+geoname_id,1963538,2007453,Glodogan,Glodogan,Indonesia,Indonesia,ID,ID,JT,JT
+geoname_id,6589173,6588276,Benjot,Benjot,Indonesia,Indonesia,ID,ID,JB,JB
+geoname_id,6582950,8046049,Cisadap,Cisadap,Indonesia,Indonesia,ID,ID,JB,JB
+geoname_id,6838126,8314266,Bangunsari,Bangunsari,Indonesia,Indonesia,ID,ID,JI,JI
+geoname_id,6753240,7766564,Tajur,Tajur,Indonesia,Indonesia,ID,ID,BT,BT
+geoname_id,6791879,6405009,Andongsili,Andongsili,Indonesia,Indonesia,ID,ID,JT,JT
+geoname_id,6737500,6562252,Bandingan,Bandingan,Indonesia,Indonesia,ID,ID,JT,JT
+geoname_id,1647740,1647739,Bulukumba,Bulukumba,Indonesia,Indonesia,ID,ID,SN,SN
+geoname_id,6561380,6411576,Bago,Bago,Indonesia,Indonesia,ID,ID,JT,JT
+geoname_id,6263533,1973328,Jaten,Jaten,Indonesia,Indonesia,ID,ID,JT,JT
+geoname_id,6999325,1974915,Cempa,Cempa,Indonesia,Indonesia,ID,ID,SN,SN
+geoname_id,6724610,8600966,Solok,Solok,Indonesia,Indonesia,ID,ID,RI,RI
+geoname_id,6768247,8078019,Kuta,Kuta,Indonesia,Indonesia,ID,ID,JT,JT
+geoname_id,6769805,1973309,Bandung,Bandung,Indonesia,Indonesia,ID,ID,JT,JT
+geoname_id,6263238,1963730,Wonosari,Wonosari,Indonesia,Indonesia,ID,ID,JT,JT
+geoname_id,1987963,1992917,Kampungbaru,Kampungbaru,Indonesia,Indonesia,ID,ID,JK,JK
+geoname_id,7083207,6829602,Mangli,Mangli,Indonesia,Indonesia,ID,ID,JI,JI
+geoname_id,6715497,6702388,Kampung Manggis,Kampung Manggis,Indonesia,Indonesia,ID,ID,SU,SU
+geoname_id,1643770,1971964,Grobogan,Grobogan,Indonesia,Indonesia,ID,ID,JT,JT
+geoname_id,6605052,6597784,Cemplang,Cemplang,Indonesia,Indonesia,ID,ID,JB,JB
+geoname_id,6830912,6777052,Sentanan,Sentanan,Indonesia,Indonesia,ID,ID,JI,JI
+geoname_id,6590717,1963509,Paledang,Paledang,Indonesia,Indonesia,ID,ID,JB,JB
+geoname_id,6590926,1963575,Hegarmanah,Hegarmanah,Indonesia,Indonesia,ID,ID,JB,JB
+geoname_id,6581337,8025981,Cihanyir,Cihanyir,Indonesia,Indonesia,ID,ID,JB,JB
+geoname_id,6733391,6732915,Ballaparang,Ballaparang,Indonesia,Indonesia,ID,ID,SN,SN
+geoname_id,6592439,6578943,Menteng,Menteng,Indonesia,Indonesia,ID,ID,JB,JB
+geoname_id,8023893,1628057,Cidolog,Cidolog,Indonesia,Indonesia,ID,ID,JB,JB
+geoname_id,6762719,6753429,Panancangan,Panancangan,Indonesia,Indonesia,ID,ID,BT,BT
+geoname_id,6837847,1972182,Madyopuro,Madyopuro,Indonesia,Indonesia,ID,ID,JI,JI
+geoname_id,1640266,6837840,Keputih,Keputih,Indonesia,Indonesia,ID,ID,JI,JI
+geoname_id,6390301,6376926,Gandekan,Gandekan,Indonesia,Indonesia,ID,ID,JT,JT
+geoname_id,6253416,6264088,Baturono,Baturono,Indonesia,Indonesia,ID,ID,JT,JT
+geoname_id,1640688,7666023,Kedaton,Kedaton,Indonesia,Indonesia,ID,ID,LA,LA
+geoname_id,6781417,1965333,Babadan,Babadan,Indonesia,Indonesia,ID,ID,JI,JI
+geoname_id,6867472,1965383,Duren,Duren,Indonesia,Indonesia,ID,ID,JI,JI
+geoname_id,6264911,6259854,Wonogiri,Wonogiri,Indonesia,Indonesia,ID,ID,YO,YO
+geoname_id,8550599,1638546,Lampeong,Lampeong,Indonesia,Indonesia,ID,ID,KT,KT
+geoname_id,6606710,1962575,Cicadas,Cicadas,Indonesia,Indonesia,ID,ID,JB,JB
+geoname_id,6264904,6371631,Purworejo,Purworejo,Indonesia,Indonesia,ID,ID,YO,YO
+geoname_id,6265027,1624819,Tanjung,Tanjung,Indonesia,Indonesia,ID,ID,YO,YO
+geoname_id,6597449,1636681,Maleber,Maleber,Indonesia,Indonesia,ID,ID,JB,JB
+geoname_id,6568194,1949176,Compreng,Compreng,Indonesia,Indonesia,ID,ID,JB,JB
+geoname_id,1647004,1647003,Cibinong,Cibinong,Indonesia,Indonesia,ID,ID,JB,JB
+geoname_id,6739912,1971726,Kembangan,Kembangan,Indonesia,Indonesia,ID,ID,JT,JT
+geoname_id,7036584,1650693,Bakalan,Bakalan,Indonesia,Indonesia,ID,ID,JI,JI
+geoname_id,6264676,1621399,Wonosari,Wonosari,Indonesia,Indonesia,ID,ID,YO,YO
+geoname_id,6742328,1642705,Jatinom,Jatinom,Indonesia,Indonesia,ID,ID,JT,JT
+geoname_id,6758429,1960646,Babakan,Babakan,Indonesia,Indonesia,ID,ID,BT,BT
+geoname_id,6593938,8057022,Sukapura,Sukapura,Indonesia,Indonesia,ID,ID,JB,JB
+geoname_id,8068764,1973591,Sidomulyo,Sidomulyo,Indonesia,Indonesia,ID,ID,JT,JT
+geoname_id,6252781,6565388,Jombang,Jombang,Indonesia,Indonesia,ID,ID,JT,JT
+geoname_id,1949517,1962718,Arjasari,Arjasari,Indonesia,Indonesia,ID,ID,JB,JB
+geoname_id,8068167,1648469,Bogorejo,Bogorejo,Indonesia,Indonesia,ID,ID,JT,JT
+geoname_id,6597666,7845156,Karadenan,Karadenan,Indonesia,Indonesia,ID,ID,JB,JB
+geoname_id,6597816,7847352,Ciparigi,Ciparigi,Indonesia,Indonesia,ID,ID,JB,JB
+geoname_id,6584081,1963425,Karasak,Karasak,Indonesia,Indonesia,ID,ID,JB,JB
+geoname_id,1639612,1639610,Kopo,Kopo,Indonesia,Indonesia,ID,ID,JB,JB
+geoname_id,6839904,8142620,Kauman,Kauman,Indonesia,Indonesia,ID,ID,JI,JI
+geoname_id,6563706,1963825,Bumen,Bumen,Indonesia,Indonesia,ID,ID,JT,JT
+geoname_id,2011590,6371083,Bandung,Bandung,Indonesia,Indonesia,ID,ID,YO,YO
+geoname_id,6605829,1645524,Depok,Depok,Indonesia,Indonesia,ID,ID,JB,JB
+geoname_id,6767795,1646677,Cikarang,Cikarang,Indonesia,Indonesia,ID,ID,BT,BT
+geoname_id,6863941,8079275,Balongrejo,Balongrejo,Indonesia,Indonesia,ID,ID,JI,JI
+geoname_id,6584583,1651413,Andir,Andir,Indonesia,Indonesia,ID,ID,JB,JB
+geoname_id,1638562,6837850,Lamongan,Lamongan,Indonesia,Indonesia,ID,ID,JI,JI
+geoname_id,1646815,7849683,Cigunungherang,Cigunungherang,Indonesia,Indonesia,ID,ID,JB,JB
+geoname_id,7766680,1647080,Cibarani,Cibarani,Indonesia,Indonesia,ID,ID,BT,BT
+geoname_id,6856985,8322309,Bandulan,Bandulan,Indonesia,Indonesia,ID,ID,JI,JI
+geoname_id,6588840,1960749,Cempaka,Cempaka,Indonesia,Indonesia,ID,ID,JB,JB
+geoname_id,6758661,7781048,Citangkil,Citangkil,Indonesia,Indonesia,ID,ID,BT,BT
+geoname_id,6792451,1621395,Wonosobo,Wonosobo,Indonesia,Indonesia,ID,ID,JT,JT
+geoname_id,6605793,1646945,Cibunar,Cibunar,Indonesia,Indonesia,ID,ID,JB,JB
+geoname_id,6594635,7849151,Karangpawitan,Karangpawitan,Indonesia,Indonesia,ID,ID,JB,JB
+geoname_id,6828681,1639864,Klojen,Klojen,Indonesia,Indonesia,ID,ID,JI,JI
+geoname_id,1989798,1961125,Tegal,Tegal,Indonesia,Indonesia,ID,ID,JB,JB
+geoname_id,7779922,7759869,Karet,Karet,Indonesia,Indonesia,ID,ID,BT,BT
+geoname_id,6761364,7847744,Cigereleng,Cigereleng,Indonesia,Indonesia,ID,ID,JB,JB
+geoname_id,1986604,8538014,Cikaret,Cikaret,Indonesia,Indonesia,ID,ID,JB,JB
+geoname_id,1970190,6820874,Sidomoro,Sidomoro,Indonesia,Indonesia,ID,ID,JI,JI
+geoname_id,7743430,8615430,Aek Nauli,Aek Nauli,Indonesia,Indonesia,ID,ID,SU,SU
+geoname_id,6594835,8054369,Jatirasa,Jatirasa,Indonesia,Indonesia,ID,ID,JB,JB
+geoname_id,6396448,8028760,Bungursari,Bungursari,Indonesia,Indonesia,ID,ID,JB,JB
+geoname_id,7036883,1965625,Ardirejo,Ardirejo,Indonesia,Indonesia,ID,ID,JI,JI
+geoname_id,6753281,1961005,Bandung,Bandung,Indonesia,Indonesia,ID,ID,BT,BT
+geoname_id,6590157,1962282,Bangbayang,Bangbayang,Indonesia,Indonesia,ID,ID,JB,JB
+geoname_id,7083373,7083232,Ajung,Ajung,Indonesia,Indonesia,ID,ID,JI,JI
+geoname_id,6408090,8144525,Bungkuk,Bungkuk,Indonesia,Indonesia,ID,ID,JI,JI
+geoname_id,6868176,8358574,Badean,Badean,Indonesia,Indonesia,ID,ID,JI,JI
+geoname_id,6567978,1965143,Bantarsari,Bantarsari,Indonesia,Indonesia,ID,ID,JB,JB
+geoname_id,1634408,8018819,Nanggewer,Nanggewer,Indonesia,Indonesia,ID,ID,JB,JB
+geoname_id,6379100,1650210,Banjarnegara,Banjarnegara,Indonesia,Indonesia,ID,ID,JT,JT
+geoname_id,6717719,1215355,Binjai,Binjai,Indonesia,Indonesia,ID,ID,SU,SU
+geoname_id,6867308,6840353,Banggle,Banggle,Indonesia,Indonesia,ID,ID,JI,JI
+geoname_id,6792450,6562872,Kejiwan,Kejiwan,Indonesia,Indonesia,ID,ID,JT,JT
+geoname_id,6781828,1965851,Banjarejo,Banjarejo,Indonesia,Indonesia,ID,ID,JI,JI
+geoname_id,6840194,6765174,Bajulan,Bajulan,Indonesia,Indonesia,ID,ID,JI,JI
+geoname_id,6581026,1964143,Cigentur,Cigentur,Indonesia,Indonesia,ID,ID,JB,JB
+geoname_id,6257503,6566736,Gilingan,Gilingan,Indonesia,Indonesia,ID,ID,JT,JT
+geoname_id,6264747,6564944,Wonosobo,Wonosobo,Indonesia,Indonesia,ID,ID,YO,YO
+geoname_id,6596327,6596302,Kutagandok,Kutagandok,Indonesia,Indonesia,ID,ID,JB,JB
+geoname_id,6388359,6409593,Sidoarjo,Sidoarjo,Indonesia,Indonesia,ID,ID,JT,JT
+geoname_id,1644349,1972395,Gedangan,Gedangan,Indonesia,Indonesia,ID,ID,JI,JI
+geoname_id,6265045,6564680,Kendal,Kendal,Indonesia,Indonesia,ID,ID,YO,YO
+geoname_id,6265519,6406118,Pacitan,Pacitan,Indonesia,Indonesia,ID,ID,JT,JT
+geoname_id,6401464,1966017,Babakan,Babakan,Indonesia,Indonesia,ID,ID,JB,JB
+geoname_id,6758894,1650200,Banjarsari,Banjarsari,Indonesia,Indonesia,ID,ID,BT,BT
+geoname_id,6744491,1650205,Banjarejo,Banjarejo,Indonesia,Indonesia,ID,ID,JT,JT
+geoname_id,1967223,1623014,Tumpaan,Tumpaan,Indonesia,Indonesia,ID,ID,SA,SA
+geoname_id,1648399,1959770,Bojongkoneng,Bojongkoneng,Indonesia,Indonesia,ID,ID,JB,JB
+geoname_id,6829959,7579578,Bulusari,Bulusari,Indonesia,Indonesia,ID,ID,JI,JI
+geoname_id,6764466,1631402,Papanggo,Papanggo,Indonesia,Indonesia,ID,ID,BT,BT
+geoname_id,6599295,8307977,Cikedokan,Cikedokan,Indonesia,Indonesia,ID,ID,JB,JB
+geoname_id,6820501,8314833,Bawangan,Bawangan,Indonesia,Indonesia,ID,ID,JI,JI
+geoname_id,1649027,1648066,Berbek,Berbek,Indonesia,Indonesia,ID,ID,JI,JI
+geoname_id,6598225,7849789,Batununggal,Batununggal,Indonesia,Indonesia,ID,ID,JB,JB
+geoname_id,6822654,1650849,Bacem,Bacem,Indonesia,Indonesia,ID,ID,JI,JI
+geoname_id,6774938,1972844,Bendungan,Bendungan,Indonesia,Indonesia,ID,ID,JT,JT
+geoname_id,6583575,7914923,Biru,Biru,Indonesia,Indonesia,ID,ID,JB,JB
+geoname_id,1642756,1964892,Jatake,Jatake,Indonesia,Indonesia,ID,ID,JB,JB
+geoname_id,7755820,1647053,Cibeber,Cibeber,Indonesia,Indonesia,ID,ID,BT,BT
+geoname_id,6827913,1626272,Sukoharjo,Sukoharjo,Indonesia,Indonesia,ID,ID,JT,JT
+geoname_id,6722570,8600834,Rintis,Rintis,Indonesia,Indonesia,ID,ID,RI,RI
+geoname_id,6772649,8072458,Babakan,Babakan,Indonesia,Indonesia,ID,ID,JT,JT
+geoname_id,8068736,8058072,Sambong,Sambong,Indonesia,Indonesia,ID,ID,JT,JT
+geoname_id,1963391,1951834,Curug,Curug,Indonesia,Indonesia,ID,ID,JB,JB
+geoname_id,1646939,1964767,Cibuntu,Cibuntu,Indonesia,Indonesia,ID,ID,JB,JB
+geoname_id,7339863,1650686,Baru,Baru,Indonesia,Indonesia,ID,ID,SN,SN
+geoname_id,6370474,6566050,Blekatuk,Blekatuk,Indonesia,Indonesia,ID,ID,JT,JT
+geoname_id,6739041,6409655,Genting,Genting,Indonesia,Indonesia,ID,ID,JT,JT
+geoname_id,1965171,1963182,Kecandran,Kecandran,Indonesia,Indonesia,ID,ID,JT,JT
+geoname_id,6264929,6260055,Babadan,Babadan,Indonesia,Indonesia,ID,ID,YO,YO
+geoname_id,6389737,8076207,Bantarmangu,Bantarmangu,Indonesia,Indonesia,ID,ID,JT,JT
+geoname_id,1960784,6594198,Duren,Duren,Indonesia,Indonesia,ID,ID,JB,JB
+geoname_id,6732479,7688408,Bangunsari,Bangunsari,Indonesia,Indonesia,ID,ID,JT,JT
+geoname_id,2000007,2003338,Tahunan,Tahunan,Indonesia,Indonesia,ID,ID,YO,YO
+geoname_id,6409372,8315842,Campurejo,Campurejo,Indonesia,Indonesia,ID,ID,JI,JI
+geoname_id,6591419,1646675,Cikarang Satu,Cikarang Satu,Indonesia,Indonesia,ID,ID,JB,JB
+geoname_id,6591485,7845362,Loji,Loji,Indonesia,Indonesia,ID,ID,JB,JB
+geoname_id,6590710,1962529,Cihampelas,Cihampelas,Indonesia,Indonesia,ID,ID,JB,JB
+geoname_id,6782069,8079891,Banjaranyar,Banjaranyar,Indonesia,Indonesia,ID,ID,JI,JI
+geoname_id,6822516,6775267,Tambang,Tambang,Indonesia,Indonesia,ID,ID,JI,JI
+geoname_id,2004945,2000150,Prenggan,Prenggan,Indonesia,Indonesia,ID,ID,YO,YO
+geoname_id,6561150,1963669,Banaran,Banaran,Indonesia,Indonesia,ID,ID,JT,JT
+geoname_id,6781934,1971617,Balongdowo,Balongdowo,Indonesia,Indonesia,ID,ID,JI,JI
+geoname_id,3176376,8978594,Gallicchio,Gallicchio,Italy,Italy,IT,IT,"77, PZ","77, PZ"
+geoname_id,3182286,8957439,Bastiglia,Bastiglia,Italy,Italy,IT,IT,"45, MO","45, MO"
+geoname_id,3179517,8950325,Castelnuovo Fogliani,Castelnuovo Fogliani,Italy,Italy,IT,IT,"45, PC","45, PC"
+geoname_id,3180511,8980123,Carignano,Carignano,Italy,Italy,IT,IT,"21, TO","21, TO"
+geoname_id,2128924,11671442,Nishikicho,Nishikicho,Japan,Japan,JP,JP,1,1
+geoname_id,1736807,1736929,Dalat,Dalat,Malaysia,Malaysia,MY,MY,13,13
+geoname_id,3514906,3761092,Ursulo Galvan,Ursulo Galvan,Mexico,Mexico,MX,MX,VER,VER
+geoname_id,8874459,4017384,Barrio Nuevo,Barrio Nuevo,Mexico,Mexico,MX,MX,GRO,GRO
+geoname_id,4007812,3988416,El Rosario,El Rosario,Mexico,Mexico,MX,MX,SIN,SIN
+geoname_id,3531764,3527670,Camargo,Camargo,Mexico,Mexico,MX,MX,TAM,TAM
+geoname_id,3514063,3514065,Zapotitlan,Zapotitlan,Mexico,Mexico,MX,MX,PUE,PUE
+geoname_id,8932203,3530775,Chochola,Chochola,Mexico,Mexico,MX,MX,YUC,YUC
+geoname_id,4007684,4007682,El Salto,El Salto,Mexico,Mexico,MX,MX,JAL,JAL
+geoname_id,3527879,3532340,Emiliano Zapata,Emiliano Zapata,Mexico,Mexico,MX,MX,MOR,MOR
+geoname_id,11338338,3822992,Benito Juarez,Benito Juarez,Mexico,Mexico,MX,MX,ROO,ROO
+geoname_id,3985035,3985070,San Pedro,San Pedro,Mexico,Mexico,MX,MX,COA,COA
+geoname_id,4005297,4005302,Guamuchil,Guamuchil,Mexico,Mexico,MX,MX,SIN,SIN
+geoname_id,1730266,1730265,Arado,Arado,Philippines,Philippines,PH,PH,"05, MAS","05, MAS"
+geoname_id,1732068,1732067,Aggunetan,Aggunetan,Philippines,Philippines,PH,PH,"02, CAG","02, CAG"
+geoname_id,1729640,1729639,Bacayawan,Bacayawan,Philippines,Philippines,PH,PH,"14, LAS","14, LAS"
+geoname_id,4566025,4562487,,,Puerto Rico,Puerto Rico,PR,PR,,
+geoname_id,529367,529368,Marfino,Marfino,Russia,Russia,RU,RU,MOS,MOS
+geoname_id,507268,7044682,Polevoy,Polevoy,Russia,Russia,RU,RU,VGG,VGG
+geoname_id,3204308,3204307,Belotic,Belotic,Serbia,Serbia,RS,RS,8,8
+geoname_id,7290411,3128624,Barreiros,Barreiros,Spain,Spain,ES,ES,"GA, LU","GA, LU"
+geoname_id,1152222,1152221,Mae Hong Son,Mae Hong Son,Thailand,Thailand,TH,TH,58,58
+geoname_id,323776,323777,Antalya,Antalya,Turkey,Turkey,TR,TR,7,7
+geoname_id,747711,747712,Edirne,Edirne,Turkey,Turkey,TR,TR,22,22
+geoname_id,314829,314830,Gaziantep,Gaziantep,Turkey,Turkey,TR,TR,27,27
+geoname_id,306569,306571,Konya,Konya,Turkey,Turkey,TR,TR,42,42
+subdivision_codes,281715,281715,Surif,Surif,Palestine,Palestine,PS,PS,HBN,
