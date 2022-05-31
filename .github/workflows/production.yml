@@ -73,7 +73,7 @@ jobs:
         name: Build
         env:
           GATSBY_URL: https://dev.maxmind.com
-        run: npm build
+        run: npm run build
 
   test-a11y:
     if: needs.build.outputs.is-cached-build != 'true'
