@@ -42,7 +42,7 @@ If you need help installing and/or managing Node and Yarn versions, check out [N
 ### Installation
 
 ```sh
-npm install
+yarn install
 ```
 
 ### Development
@@ -53,7 +53,7 @@ The development server watches files, rebuilds the site, and reloads the browser
 when files change.
 
 ```sh
-npm run develop
+yarn develop
 ```
 
 #### Static Server
@@ -64,16 +64,16 @@ rules (301/302 redirects or url rewrites), and Firebase functions.
 
 
 ```sh
-npm run build && npm run serve
+yarn build && yarn serve
 ```
 
 ### Testing
 
 ```sh
-npm run test             # runs all tests
-npm run test:a11y        # runs accessibility tests
-npm run test:unit        # runs unit tests
-npm run test:regressions # runs regression tests
+yarn test             # runs all tests
+yarn test:a11y        # runs accessibility tests
+yarn test:unit        # runs unit tests
+yarn test:regressions # runs regression tests
 ```
 
 ### Deployments
@@ -92,7 +92,7 @@ Users authenticated with the Firebase CLI can generate an ad-hoc preview link
 site by running the following from the root of the project.
 
 ```sh
-npm run build && npm run preview
+yarn build && yarn preview
 ```
 
 #### Firebase Functions

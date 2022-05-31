@@ -43,7 +43,7 @@ const getBrokenLinks = (): Promise<any> => new Promise((resolve, reject) => {
           return;
         }
 
-        if (statusCode === 403 || statusCode === 429) {
+        if (statusCode === 403) {
           return;
         }
 
