@@ -42,7 +42,7 @@
     "gatsby-plugin-google-gtag": "^3.14.0",
     "gatsby-plugin-image": "^1.1.1",
     "gatsby-plugin-manifest": "^3.14.0",
-    "gatsby-plugin-mdx": "^2.1.0",
+    "gatsby-plugin-mdx": "^3.12.1",
     "gatsby-plugin-react-helmet": "^4.14.0",
     "gatsby-plugin-react-svg": "^3.1.0",
     "gatsby-plugin-remove-trailing-slashes": "^3.14.0",
@@ -107,6 +107,7 @@
     "@types/lodash.isboolean": "^3.0.6",
     "@types/lodash.isnumber": "^3.0.6",
     "@types/lodash.isplainobject": "^4.0.6",
+    "@types/prettier": "^2.6.1",
     "@typescript-eslint/eslint-plugin": "^4.33.0",
     "@typescript-eslint/parser": "^4.33.0",
     "@wojtekmaj/enzyme-adapter-react-17": "^0.6.7",
@@ -164,22 +165,21 @@
     "xml2js": "^0.4.23"
   },
   "engines": {
-    "node": ">=16",
-    "yarn": "^1.17.3"
+    "node": ">=16"
   },
   "license": "MIT",
   "lint-staged": {
     "**/*.json": [
-      "yarn fix:json"
+      "npm run fix:json"
     ],
     "content/**/*.mdx": [
-      "yarn fix:content"
+      "npm run fix:content"
     ],
     "**/*.{js,ts,tsx}": [
-      "yarn fix:scripts"
+      "npm run fix:scripts"
     ],
     "src/**/*.[s]css": [
-      "yarn fix:styles"
+      "npm run fix:styles"
     ]
   },
   "name": "dev-site",
@@ -196,34 +196,38 @@
     "url": "https://github.com/maxmind/dev-site.git"
   },
   "scripts": {
-    "build": "run-p build:* && yarn sitemap-query-string",
+    "build": "run-p build:* && npm run sitemap-query-string",
     "build:gatsby": "gatsby clean && gatsby build",
     "build:firebase-config": "node firebase/index.js",
-    "build:functions": "cd functions && yarn build",
+    "build:functions": "cd functions && npm run build",
     "deploy": "firebase deploy",
     "develop": "gatsby clean && GATSBY_URL=http://localhost:8000 gatsby develop",
     "fix": "run-p fix:*",
     "fix:content": "prettier --write **/*.mdx --embedded-language-formatting off --loglevel silent && remark . --output --ext mdx --quiet",
-    "fix:json": "yarn lint:json --fix",
-    "fix:scripts": "yarn lint:scripts --fix",
-    "fix:styles": "yarn lint:styles --fix",
+    "fix:json": "npm run lint:json --fix",
+    "fix:scripts": "npm run lint:scripts --fix",
+    "fix:styles": "npm run lint:styles --fix",
     "lint": "run-p lint:*",
     "lint:configs": "eslint .*rc.js --no-ignore",
     "lint:content": "remark . --ext mdx --quiet",
     "lint:json": "eslint . --ext json",
     "lint:scripts": "eslint . --ext js,ts,tsx --ignore-pattern 'functions/**/*.js'",
     "lint:styles": "stylelint ./src/**/*.{css,scss,sass}",
-    "postinstall": "yarn --cwd functions install",
     "preview": "firebase hosting:channel:deploy $(git rev-parse --abbrev-ref HEAD)",
     "serve": "firebase emulators:start --only functions,hosting",
     "sitemap-query-string": "node ./bin/sitemap-query-string.js",
-    "start": "yarn run develop",
+    "start": "npm run develop",
     "test": "run-s \"test:* --silent\"",
     "test:a11y": "jest --config .jestrc.a11y.js --no-cache --maxWorkers=4",
     "test:unit": "jest --config .jestrc.js",
     "test:e2e": "jest --config .jestrc.e2e.js",
-    "test:broken-links": "yarn test:e2e --verbose -t 'website has no broken links'",
-    "test:redirects": "yarn build:firebase-config && yarn test:e2e --verbose -t 'Static file redirects'"
+    "test:broken-links": "npm run test:e2e --verbose -t 'website has no broken links'",
+    "test:redirects": "npm run build:firebase-config && npm run test:e2e --verbose -t 'Static file redirects'"
   },
-  "version": "0.1.0"
+  "version": "0.1.0",
+  "workspaces": {
+    "packages": [
+      "functions"
+    ]
+  }
 }
