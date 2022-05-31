@@ -400,13 +400,13 @@ current when they signed up for the service. The latest version is 1.3.
       <tr>
          <td>ip_accuracyRadius</td>
          <td>integer</td>
-         <td>The radius in kilometers around the specified location where the IP address is likely to be. <em>If you have not updated your integration as specified in our <a href="https://blog.maxmind.com/2020/06/15/data-changes-to-geoip-legacy-and-minfraud-legacy-web-services-in-may-2022/">blog post detailing upcoming changes to legacy web services</a>, this output will only be available for IPv4 addresses.</em></td>
+         <td>The radius in kilometers around the specified location where the IP address is likely to be. </td>
          <td>1.2</td>
       </tr>
       <tr>
          <td>ip_city</td>
          <td>string</td>
-         <td>The city or town name associated with the IP address. <em>If you have not updated your integration as specified in our <a href="https://blog.maxmind.com/2020/06/15/data-changes-to-geoip-legacy-and-minfraud-legacy-web-services-in-may-2022/">blog post detailing upcoming changes to legacy web services</a>, this output will only be available for IPv4 addresses.</em></td>
+         <td>The city or town name as defined by <a href="https://www.geonames.org/">GeoNames</a> associated with the IP address. </td>
          <td>1.0</td>
       </tr>
       <tr>
@@ -415,39 +415,33 @@ current when they signed up for the service. The latest version is 1.3.
          <td>
             A two character <a href="https://en.wikipedia.org/wiki/ISO_3166-2">ISO-3166-2</a> code for the state/region associated with the IP address.
 
-            We previously returned a <a href="https://en.wikipedia.org/wiki/FIPS_10-4">FIPS 10-4</a> code for all countries other than the United States and Canada. See our <a href="https://blog.maxmind.com/2020/06/15/data-changes-to-geoip-legacy-and-minfraud-legacy-web-services-in-may-2022/">blog post detailing upcoming changes to legacy web services</a>.
-
-            For customers who have not yet updated their integration to reflect the changes detailed in the above blog post, we provide a <a href="https://download.maxmind.com/download/geoip/misc/region_codes.csv">CSV file which maps our region codes to region names</a>. The columns are ISO country code, region code (FIPS or ISO), and the region name.
-
-            <em>If you have not updated your integration as specified in the above blog post, this output will only be available for IPv4 addresses.</em>
+            We previously returned a <a href="https://en.wikipedia.org/wiki/FIPS_10-4">FIPS 10-4</a> code for all countries other than the United States and Canada. See our <a href="https://blog.maxmind.com/2020/06/15/data-changes-to-geoip-legacy-and-minfraud-legacy-web-services-in-may-2022/">blog post</a> for mor information.
          </td>
          <td>1.0</td>
       </tr>
       <tr>
          <td>ip_regionName</td>
          <td>string</td>
-         <td>The region name associated with the IP address. <em>If you have not updated your integration as specified in our <a href="https://blog.maxmind.com/2020/06/15/data-changes-to-geoip-legacy-and-minfraud-legacy-web-services-in-may-2022/">blog post detailing upcoming changes to legacy web services</a>, this output will only be available for IPv4 addresses.</em></td>
+         <td>The region name as defined by <a href="https://www.geonames.org/">GeoNames</a> associated with the IP address. </td>
          <td>1.2</td>
       </tr>
       <tr>
          <td>ip_postalCode</td>
          <td>string</td>
-         <td>The postal code associated with the IP address. These are available for some IP addresses in Australia, Canada, France, Germany, Italy, Spain, Switzerland, United Kingdom, and the US. We return the first 3 characters for Canadian postal codes. We return the first 2-4 characters (outward code) for postal codes in the United Kingdom. <em>If you have not updated your integration as specified in our <a href="https://blog.maxmind.com/2020/06/15/data-changes-to-geoip-legacy-and-minfraud-legacy-web-services-in-may-2022/">blog post detailing upcoming changes to legacy web services</a>, this output will only be available for IPv4 addresses.</em></td>
+         <td>The postal code associated with the IP address. These are available for some IP addresses in Australia, Canada, France, Germany, Italy, Spain, Switzerland, United Kingdom, and the US. We return the first 3 characters for Canadian postal codes. We return the first 2-4 characters (outward code) for postal codes in the United Kingdom. </td>
          <td>1.2</td>
       </tr>
       <tr>
          <td>ip_metroCode</td>
          <td>integer</td>
-         <td>The metro code associated with the IP address. These are only available for IP addresses in the US. <em>If you have not updated your integration as specified in our <a href="https://blog.maxmind.com/2020/06/15/data-changes-to-geoip-legacy-and-minfraud-legacy-web-services-in-may-2022/">blog post detailing upcoming changes to legacy web services</a>, this output will only be available for IPv4 addresses.</em></td>
+         <td>The metro code associated with the IP address. These are only available for IP addresses in the US. </td>
          <td>1.2</td>
       </tr>
       <tr>
          <td>ip_areaCode</td>
          <td>string</td>
          <td>
-            <strong>Deprecated. This field will be empty in the updated legacy web service. See our <a href="https://blog.maxmind.com/2020/06/15/data-changes-to-geoip-legacy-and-minfraud-legacy-web-services-in-may-2022/">blog post detailing upcoming changes to legacy web services</a>.</strong>
-
-            For customers who have not yet updated their integration to reflect the changes detailed in the above blog post, this field will be the telephone area code associated with the IP address. These are only available for IP addresses in the US. This output may not reflect newer area codes. <em>Only available for IPv4 addresses.</em>
+            <strong>Deprecated. This field is empty. See our <a href="https://blog.maxmind.com/2020/06/15/data-changes-to-geoip-legacy-and-minfraud-legacy-web-services-in-may-2022/">blog post</a> for more information.</strong>
          </td>
          <td>1.2</td>
       </tr>
@@ -471,7 +465,7 @@ current when they signed up for the service. The latest version is 1.3.
       <tr>
          <td>ip_countryName</td>
          <td>string</td>
-         <td>The country name associated with the IP address.</td>
+         <td>The country name as defined by <a href="https://www.geonames.org/">GeoNames</a> associated with the IP address.</td>
          <td>1.2</td>
       </tr>
       <tr>
@@ -495,25 +489,25 @@ current when they signed up for the service. The latest version is 1.3.
       <tr>
          <td>ip_latitude</td>
          <td>decimal</td>
-         <td>The approximate latitude of the location associated with the IP address. This value is not precise and should not be used to identify a particular address or household. The latitude and longitude are near the center of the most granular location value returned: postal code, city, region, or country. <em>If you have not updated your integration as specified in our <a href="https://blog.maxmind.com/2020/06/15/data-changes-to-geoip-legacy-and-minfraud-legacy-web-services-in-may-2022/">blog post detailing upcoming changes to legacy web services</a>, this will be the latitude of the country for IPv6 addresses.</em></td>
+         <td>The approximate latitude of the location associated with the IP address. This value is not precise and should not be used to identify a particular address or household. The latitude and longitude are near the center of the most granular location value returned: postal code, city, region, or country.</td>
          <td>1.0</td>
       </tr>
       <tr>
          <td>ip_longitude</td>
          <td>decimal</td>
-         <td>The approximate longitude of the location associated with the IP address. This value is not precise and should not be used to identify a particular address or household. <em>If you have not updated your integration as specified in our <a href="https://blog.maxmind.com/2020/06/15/data-changes-to-geoip-legacy-and-minfraud-legacy-web-services-in-may-2022/">blog post detailing upcoming changes to legacy web services</a>, this will be the longitude of the country for IPv6 addresses.</em></td>
+         <td>The approximate longitude of the location associated with the IP address. This value is not precise and should not be used to identify a particular address or household.</td>
          <td>1.0</td>
       </tr>
       <tr>
          <td>ip_timeZone</td>
          <td>string</td>
-         <td>The time zone associated with the IP address. Time zone names are taken from the <a href="https://www.iana.org/time-zones/">IANA time zone database</a>. <em>If you have not updated your integration as specified in our <a href="https://blog.maxmind.com/2020/06/15/data-changes-to-geoip-legacy-and-minfraud-legacy-web-services-in-may-2022/">blog post detailing upcoming changes to legacy web services</a>, this output will only be available for IPv4 addresses.</em></td>
+         <td>The time zone associated with the IP address. Time zone names are taken from the <a href="https://www.iana.org/time-zones/">IANA time zone database</a>. </td>
          <td>1.2</td>
       </tr>
       <tr>
          <td>ip_asnum</td>
          <td>string</td>
-         <td>The <a href="https://en.wikipedia.org/wiki/Autonomous_system_(Internet)">autonomous system number</a> associated with the IP address. <em>If you have not updated your integration as specified in our <a href="https://blog.maxmind.com/2020/06/15/data-changes-to-geoip-legacy-and-minfraud-legacy-web-services-in-may-2022/">blog post detailing upcoming changes to legacy web services</a>, this output will only be available for IPv4 addresses.</em></td>
+         <td>The <a href="https://en.wikipedia.org/wiki/Autonomous_system_(Internet)">autonomous system number</a> associated with the IP address. </td>
          <td>1.2</td>
       </tr>
       <tr>
@@ -539,7 +533,7 @@ current when they signed up for the service. The latest version is 1.3.
                <li><strong>traveler</strong></li>
             </ul>
 
-            <em>If you have not updated your integration as specified in our <a href="https://blog.maxmind.com/2020/06/15/data-changes-to-geoip-legacy-and-minfraud-legacy-web-services-in-may-2022/">blog post detailing upcoming changes to legacy web services</a>, this output will only be available for IPv4 addresses.</em>
+
          </td>
          <td>1.2</td>
       </tr>
@@ -556,50 +550,50 @@ current when they signed up for the service. The latest version is 1.3.
                <li><strong>Cellular</strong></li>
             </ul>
 
-            <em>If you have not updated your integration as specified in our <a href="https://blog.maxmind.com/2020/06/15/data-changes-to-geoip-legacy-and-minfraud-legacy-web-services-in-may-2022/">blog post detailing upcoming changes to legacy web services</a>, this output will only be available for IPv4 addresses.</em>
+
          </td>
          <td>1.2</td>
       </tr>
       <tr>
          <td>ip_domain</td>
          <td>string</td>
-         <td>The second level domain associated with the IP address. This will be something like “example.com” or “example.co.uk”, not “foo.example.com”. <em>If you have not updated your integration as specified in our <a href="https://blog.maxmind.com/2020/06/15/data-changes-to-geoip-legacy-and-minfraud-legacy-web-services-in-may-2022/">blog post detailing upcoming changes to legacy web services</a>, this output will only be available for IPv4 addresses.</em></td>
+         <td>The second level domain associated with the IP address. This will be something like “example.com” or “example.co.uk”, not “foo.example.com”. </td>
          <td>1.2</td>
       </tr>
       <tr>
          <td>ip_isp</td>
          <td>string</td>
-         <td>The name of the ISP associated with the IP address. <em>If you have not updated your integration as specified in our <a href="https://blog.maxmind.com/2020/06/15/data-changes-to-geoip-legacy-and-minfraud-legacy-web-services-in-may-2022/">blog post detailing upcoming changes to legacy web services</a>, this output will only be available for IPv4 addresses.</em></td>
+         <td>The name of the ISP associated with the IP address. </td>
          <td>1.0</td>
       </tr>
       <tr>
          <td>ip_org</td>
          <td>string</td>
-         <td>The name of the organization associated with the IP address. <em>If you have not updated your integration as specified in our <a href="https://blog.maxmind.com/2020/06/15/data-changes-to-geoip-legacy-and-minfraud-legacy-web-services-in-may-2022/">blog post detailing upcoming changes to legacy web services</a>, this output will only be available for IPv4 addresses.</em></td>
+         <td>The name of the organization associated with the IP address. </td>
          <td>1.0</td>
       </tr>
       <tr>
          <td>ip_cityConf</td>
          <td>decimal</td>
-         <td>A value from 0-100 representing our confidence that the city is correct. <em>If you have not updated your integration as specified in our <a href="https://blog.maxmind.com/2020/06/15/data-changes-to-geoip-legacy-and-minfraud-legacy-web-services-in-may-2022/">blog post detailing upcoming changes to legacy web services</a>, this output will only be available for IPv4 addresses.</em></td>
+         <td>A value from 0-100 representing our confidence that the city is correct. </td>
          <td>1.2</td>
       </tr>
       <tr>
          <td>ip_regionConf</td>
          <td>decimal</td>
-         <td>A value from 0-100 representing our confidence that the region is correct. <em>If you have not updated your integration as specified in our <a href="https://blog.maxmind.com/2020/06/15/data-changes-to-geoip-legacy-and-minfraud-legacy-web-services-in-may-2022/">blog post detailing upcoming changes to legacy web services</a>, this output will only be available for IPv4 addresses.</em></td>
+         <td>A value from 0-100 representing our confidence that the region is correct. </td>
          <td>1.2</td>
       </tr>
       <tr>
          <td>ip_postalConf</td>
          <td>decimal</td>
-         <td>A value from 0-100 representing our confidence that the postal code is correct. <em>If you have not updated your integration as specified in our <a href="https://blog.maxmind.com/2020/06/15/data-changes-to-geoip-legacy-and-minfraud-legacy-web-services-in-may-2022/">blog post detailing upcoming changes to legacy web services</a>, this output will only be available for IPv4 addresses.</em></td>
+         <td>A value from 0-100 representing our confidence that the postal code is correct. </td>
          <td>1.2</td>
       </tr>
       <tr>
          <td>ip_countryConf</td>
          <td>decimal</td>
-         <td>A value from 0-100 representing our confidence that the country is correct. <em>If you have not updated your integration as specified in our <a href="https://blog.maxmind.com/2020/06/15/data-changes-to-geoip-legacy-and-minfraud-legacy-web-services-in-may-2022/">blog post detailing upcoming changes to legacy web services</a>, this output will only be available for IPv4 addresses.</em></td>
+         <td>A value from 0-100 representing our confidence that the country is correct. </td>
          <td>1.2</td>
       </tr>
       <tr>

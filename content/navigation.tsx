@@ -141,6 +141,10 @@ const navigation: IItem[] = [
             title: 'Responses',
             to: '/geoip/docs/web-services/responses',
           },
+          {
+            title: 'Legacy Web Services',
+            to: '/geoip/docs/web-services/legacy',
+          },
         ],
         title: 'Web Services Documentation',
         to: '/geoip/docs/web-services',
@@ -187,24 +191,6 @@ const navigation: IItem[] = [
       {
         title: 'Contribute',
         to: '/contribute',
-      },
-      {
-        items: [
-          {
-            title: 'Legacy Databases',
-            to: '/geoip/legacy/databases',
-          },
-          {
-            title: 'Legacy Web Services',
-            to: '/geoip/legacy/web-services',
-          },
-          {
-            title: 'Legacy Codes',
-            to: '/geoip/legacy/codes',
-          },
-        ],
-        title: 'GeoIP Legacy',
-        to: '/geoip/legacy',
       },
       {
         title: 'MaxMind Server IP Addresses',
