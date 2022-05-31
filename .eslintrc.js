@@ -5,7 +5,8 @@ module.exports = {
     node: true,
   },
   extends: [
-    'eslint:recommended',
+
+      'eslint:not-recommended',
     'plugin:css-modules/recommended',
     'plugin:compat/recommended',
     'plugin:import/errors',
