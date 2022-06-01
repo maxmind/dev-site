@@ -7,12 +7,35 @@ title: GeoIP2 Release Notes
 Subscribe to the [GeoIP2 release notes RSS feed](/geoip/release-notes/rss.xml).
 </Alert>
 
+<<<<<<< HEAD
 <ReleaseNote date="2022-06-01" title="GeoIP Legacy databases have been retired">
 
 In line with the [announcement on our blog from
 2020](https://blog.maxmind.com/2020/06/retirement-of-geoip-legacy-downloadable-databases-in-may-2022),
 GeoIP Legacy databases have been retired.
 
+=======
+<ReleaseNote date="2022-06-15" title="GeoNames Monthly Diff Report June 2022">
+[GeoNames Monthly Diff Report (June 2022)](/csv-files/GeoNames-Monthly-Diff-Report-June-2022.csv)
+
+GeoIP2 and GeoLite2 databases incorporate [GeoNames geographical
+data](https://www.geonames.org/), which is made available under the [Creative
+Commons Attribution 4.0 License](https://creativecommons.org/licenses/by/4.0/).
+
+Monthly updates to GeoNames data are incorporated into our databases as we
+refresh them. Above you will find a CSV report of these changes for the month
+of June as they relate to the following fields:
+
+- `geoname_id`
+- `country_name`
+- `country_code`
+- `city_name`
+- `subdivision_1_iso_code`
+- `subdivision_2_iso_code`
+
+Note that the values for the 'old' and ‘new’ columns for a given field only
+differ for the field defined in the ‘diff_in’ column.
+>>>>>>> 624d404 (Add release note for GeoNames diff report for June)
 </ReleaseNote>
 
 <ReleaseNote date="2022-05-31" title="Data changes to GeoIP Legacy web services">
