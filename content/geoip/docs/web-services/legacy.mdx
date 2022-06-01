@@ -6,10 +6,10 @@ title: GeoIP Legacy Web Services
 import { FaCheck } from 'react-icons/fa';
 
 <Alert type="error">
-We are retiring our GeoIP Legacy database formats at the end of May 2022.
-Please see our [blog
-post](https://blog.maxmind.com/2020/06/01/retirement-of-geoip-legacy-downloadable-databases-in-may-2022/)
-for more information, including how to migrate to GeoIP2.
+We have implemented recent changes to our GeoIP Legacy web services in line with
+the retirement of GeoIP Legacy Databases. Please see our [blog
+post](https://blog.maxmind.com/2020/06/data-changes-to-geoip-legacy-and-minfraud-legacy-web-services-in-may-2022)
+for more information.
 </Alert>
 
 <Alert type="warning">
@@ -111,7 +111,7 @@ likely to be.
       <td>City name</td>
       <td>string</td>
       <td>
-        The city or town name associated with the IP address.
+        The city or town name as defined by <a href="https://www.geonames.org/">GeoNames</a> associated with the IP address.
       </td>
       <td></td>
       <td><FaCheck /></td>
@@ -130,12 +130,6 @@ likely to be.
 <p>
   We previously returned a <a href="https://en.wikipedia.org/wiki/FIPS_10-4">FIPS 10-4</a> code for all countries other than the United States and Canada. See our <a href="https://blog.maxmind.com/2020/06/15/data-changes-to-geoip-legacy-and-minfraud-legacy-web-services-in-may-2022/">blog post detailing changes to our legacy web services</a>.
 </p>
-
-<p>
-  For customers who have not yet updated their integration to reflect the changes detailed in the above blog post, we provide a <a href="https://download.maxmind.com/download/geoip/misc/region_codes.csv">CSV file which maps
-  our region codes to region names</a>. The columns are ISO country code,
-  region code (FIPS or ISO), and the region name.
-</p>
       </td>
       <td></td>
       <td><FaCheck /></td>
@@ -146,7 +140,7 @@ likely to be.
       <td>Region name</td>
       <td>string</td>
       <td>
-        The region name associated with the IP address.
+        The region name as defined by <a href="https://www.geonames.org/">GeoNames</a> associated with the IP address.
       </td>
       <td></td>
       <td></td>
@@ -184,10 +178,7 @@ postal codes in the United Kingdom.
       <td>Area code</td>
       <td>string</td>
       <td>
-        <p><strong>Deprecated. This field will be empty in the updated legacy web service. See our <a href="https://blog.maxmind.com/2020/06/15/data-changes-to-geoip-legacy-and-minfraud-legacy-web-services-in-may-2022/">blog post detailing changes to our legacy web services</a>.</strong></p><strong>
-        <p>For customers who have not yet updated their integration to reflect the changes detailed in the above blog post, this field will be the telephone area code associated with the IP address. These are only
-available for IP addresses in the US. This output may not reflect newer area codes.</p>
-      </strong></td>
+        <p><strong>Deprecated. This field will be empty in the updated legacy web service. See our <a href="https://blog.maxmind.com/2020/06/15/data-changes-to-geoip-legacy-and-minfraud-legacy-web-services-in-may-2022/">blog post detailing changes to our legacy web services</a>.</strong></p></td>
       <td></td>
       <td></td>
       <td><FaCheck /></td>
@@ -198,7 +189,7 @@ available for IP addresses in the US. This output may not reflect newer area cod
       <td>string (2)</td>
       <td>
         <p>
-  A two-character <a href="https://en.wikipedia.org/wiki/ISO_3166-1">ISO
+  A <a href="https://en.wikipedia.org/wiki/ISO_3166-1">ISO
   3166-1</a> country code for the country associated with the IP address. In
   addition to the standard codes, we may also return one of the following:
 </p>
@@ -235,7 +226,7 @@ available for IP addresses in the US. This output may not reflect newer area cod
       <td>Country name</td>
       <td>string</td>
       <td>
-        The country name associated with the IP address.
+        The country name as defined by <a href="https://www.geonames.org/">GeoNames</a> associated with the IP address.
 
       </td>
       <td></td>
