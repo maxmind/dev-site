@@ -143,7 +143,7 @@
     "lint-staged": "^12.3.5",
     "npm-run-all": "^4.1.5",
     "prettier": "^2.6.1",
-    "remark-cli": "^9.0.0",
+    "remark-cli": "^10.0.1",
     "remark-gfm": "^1.0.0",
     "remark-html": "^13.0.1",
     "remark-lint-emphasis-marker": "^2.0.1",
