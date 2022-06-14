@@ -252,10 +252,11 @@ const Footer: React.FC<React.HTMLProps<HTMLDivElement>> = (props) => {
           className={styles.copyright}
         >
           <p>
-            &copy; 2012-
+            &copy;
+            {' '}
             {new Date().getFullYear()}
             {' '}
-            MaxMind, Inc. All Rights Reserved.
+            MaxMind, Inc.
             MaxMind, GeoIP, minFraud, and related trademarks belong to MaxMind,
             Inc.
           </p>
