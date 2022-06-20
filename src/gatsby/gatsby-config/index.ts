@@ -126,13 +126,15 @@ export default {
         feeds: [
           createReleaseNotesFeed({
             description: 'Release notes for MaxMind\'s GeoIP2 product line',
+            inputUrl: '/geoip/release-notes/2022',
+            outputUrl: '/geoip/release-notes/rss.xml',
             title: 'GeoIP2 Release Notes',
-            url: '/geoip/release-notes',
           }),
           createReleaseNotesFeed({
             description: 'Release notes for MaxMind\'s minFraud product line',
+            inputUrl: '/minfraud/release-notes/2022',
+            outputUrl: '/minfraud/release-notes/rss.xml',
             title: 'minFraud Release Notes',
-            url: '/minfraud/release-notes',
           }),
           createServerIpAddressesFeed(),
         ],
