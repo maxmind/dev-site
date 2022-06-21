@@ -32,12 +32,12 @@ module.exports = [
     type: 302,
   },
   {
-    destination: '/geoip/legacy',
+    destination: '/geoip/release-notes/2022#geoip-legacy-databases-have-been-retired',
     regex: '/geoip/(benchmarks|csv|downloadable|geolite|install|javascript|mod_geoip2|openx|web-service)$',
     type: 302,
   },
   {
-    destination: '/geoip/legacy/codes',
+    destination: '/geoip/release-notes/2022#geoip-legacy-databases-have-been-retired',
     regex: '/geoip/codes(.*)',
     type: 301,
   },
@@ -152,7 +152,7 @@ module.exports = [
     type: 301,
   },
   {
-    destination: '/geoip/legacy/databases',
+    destination: '/geoip/release-notes/2022#geoip-legacy-databases-have-been-retired',
     regex: '^/geoip/install/.*',
     type: 301,
   },
@@ -162,47 +162,62 @@ module.exports = [
     type: 301,
   },
   {
-    destination: '/geoip/legacy/codes',
+    destination: '/geoip/release-notes/2022#geoip-legacy-databases-have-been-retired',
+    source: '/geoip/legacy',
+    type: 302,
+  },
+  {
+    destination: '/geoip/release-notes/2022#geoip-legacy-databases-have-been-retired',
+    source: '/geoip/legacy/codes',
+    type: 302,
+  },
+  {
+    destination: '/geoip/release-notes/2022#geoip-legacy-databases-have-been-retired',
     regex: '^/geoip/legacy/codes/country_latlon/.*$',
     type: 301,
   },
   {
-    destination: '/geoip/legacy/codes',
+    destination: '/geoip/release-notes/2022#geoip-legacy-databases-have-been-retired',
     source: '/geoip/legacy/codes/ap_country_list',
     type: 302,
   },
   {
-    destination: '/geoip/legacy/codes',
+    destination: '/geoip/release-notes/2022#geoip-legacy-databases-have-been-retired',
     source: '/geoip/legacy/codes/country_continent',
     type: 302,
   },
   {
-    destination: '/geoip/legacy/codes',
+    destination: '/geoip/release-notes/2022#geoip-legacy-databases-have-been-retired',
     source: '/geoip/legacy/codes/eu_country_list',
     type: 302,
   },
   {
-    destination: '/geoip/legacy/codes',
+    destination: '/geoip/release-notes/2022#geoip-legacy-databases-have-been-retired',
     source: '/geoip/legacy/codes/iso3166',
     type: 302,
   },
   {
-    destination: '/geoip/legacy/codes',
+    destination: '/geoip/release-notes/2022#geoip-legacy-databases-have-been-retired',
     source: '/geoip/legacy/codes/state_latlon',
     type: 301,
   },
   {
-    destination: '/geoip/legacy/databases',
+    destination: '/geoip/release-notes/2022#geoip-legacy-databases-have-been-retired',
     source: '/geoip/legacy/csv',
     type: 302,
   },
   {
-    destination: '/geoip/legacy/databases',
+    destination: '/geoip/release-notes/2022#geoip-legacy-databases-have-been-retired',
+    source: '/geoip/legacy/databases',
+    type: 302,
+  },
+  {
+    destination: '/geoip/release-notes/2022#geoip-legacy-databases-have-been-retired',
     source: '/geoip/legacy/downloadable',
     type: 302,
   },
   {
-    destination: '/geoip',
+    destination: '/geoip/release-notes/2018#discontinuation-of-the-geolite-legacy-databases',
     source: '/geoip/legacy/geolite',
     type: 301,
   },
@@ -229,6 +244,11 @@ module.exports = [
   {
     destination: '/geoip/release-notes',
     source: '/geoip/legacy/web-services/release-notes',
+    type: 302,
+  },
+  {
+    destination: '/geoip/docs/web-services/legacy',
+    source: '/geoip/legacy/web-services',
     type: 302,
   },
   {
@@ -267,7 +287,7 @@ module.exports = [
     type: 302,
   },
   {
-    destination: '/geoip',
+    destination: 'https://support.maxmind.com/hc/en-us/articles/5451485951387#h_01G0Z373C3H1QA68TTHVYMXGTT',
     source: '/normalizing-email-addresses-for-minfraud',
     type: 302,
   },
@@ -277,12 +297,12 @@ module.exports = [
     type: 302,
   },
   {
-    destination: '/geoip/legacy',
+    destination: '/geoip/release-notes/2022#geoip-legacy-databases-have-been-retired',
     source: '/product/geoip/geoip-legacy',
     type: 302,
   },
   {
-    destination: '/geoip/legacy/web-services',
+    destination: '/geoip/docs/web-services/legacy',
     source: '/product/geoip/geoip-legacy-web-services',
     type: 302,
   },
