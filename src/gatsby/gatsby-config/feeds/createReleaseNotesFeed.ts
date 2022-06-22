@@ -6,21 +6,22 @@ import type { Parent } from 'unist';
 
 interface IFeed {
   description: string;
+  inputUrl: string,
+  outputUrl: string,
   title: string;
-  url: string,
 }
 
 export default (feed: IFeed): any => ({
   description: `${feed.description}`,
   generator: '',
-  output: `${feed.url}/rss.xml`,
+  output: `${feed.outputUrl}`,
   query: `
     {
       allMdx(
         filter: {
           fields: {
             slug: {
-              eq: "${feed.url}"
+              eq: "${feed.inputUrl}"
             }
           }
         }

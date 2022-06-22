@@ -3,8 +3,6 @@ import React from 'react';
 import ProductIcon from '../src/components/ProductIcon';
 import { IItem } from '../src/types/Item';
 
-const year = 2022;
-
 const navigation: IItem[] = [
   {
     icon: (
@@ -49,10 +47,13 @@ const navigation: IItem[] = [
         title: 'API Documentation',
         to: '/minfraud/api-documentation',
       },
+      // The year needs to be hardcoded. A page for the new year's
+      // release notes won't exist until a new MDX file is created
+      // in the /content/<product>/release-notes folder for that new year.
       {
         hasDivider: true,
         title: 'Release Notes',
-        to: `/minfraud/release-notes/${year}`,
+        to: '/minfraud/release-notes/2022',
       },
       {
         title: 'Contribute',
@@ -183,10 +184,13 @@ const navigation: IItem[] = [
         title: 'Database Documentation',
         to: '/geoip/docs/databases',
       },
+      // The year needs to be hardcoded. A page for the new year's
+      // release notes won't exist until a new MDX file is created
+      // in the /content/<product>/release-notes folder for that new year.
       {
         hasDivider: true,
         title: 'Release Notes',
-        to: `/geoip/release-notes/${year}`,
+        to: '/geoip/release-notes/2022',
       },
       {
         title: 'Contribute',
