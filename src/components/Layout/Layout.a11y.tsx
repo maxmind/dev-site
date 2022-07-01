@@ -63,6 +63,8 @@ describe('Layout', () => {
       {
         hideElements: '#jest-pa11y-container > section',
         ignore: [
+          // See https://github.com/pa11y/pa11y/issues/623
+          'color-contrast',
           // <h3> tags are appropriate here in the context of other components
           'WCAG2AAA.Principle1.Guideline1_3.1_3_1_AAA.G141',
         ],

@@ -1,5 +1,5 @@
 import { useLocation } from '@reach/router';
-import { mount  } from 'enzyme';
+import { mount } from 'enzyme';
 import * as React from 'react';
 
 import TableOfContents, { IItem } from './TableOfContents';
@@ -45,6 +45,8 @@ describe('TableOfContents', () => {
       component,
       {
         ignore: [
+          // See https://github.com/pa11y/pa11y/issues/623
+          'color-contrast',
           // <h3> tags are appropriate here in the context of other components
           'WCAG2AAA.Principle1.Guideline1_3.1_3_1_AAA.G141',
         ],

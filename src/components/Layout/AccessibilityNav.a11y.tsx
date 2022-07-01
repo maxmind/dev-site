@@ -11,6 +11,8 @@ describe('AccessibilityNav', () => {
 
     const results = await pa11y(component, {
       ignore: [
+        // See https://github.com/pa11y/pa11y/issues/623
+        'color-contrast',
         // Ignore missing anchors that are part of other components
         'WCAG2AAA.Principle2.Guideline2_4.2_4_1.G1,G123,G124.NoSuchID',
       ],
