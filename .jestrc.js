@@ -27,6 +27,6 @@ module.exports = {
     '^.+\\.scss$': 'jest-style-transformer-sass-css-modules',
   },
   transformIgnorePatterns: [
-    'node_modules/(?!(data-uri-to-buffer|fetch-blob|formdata-polyfill|node-fetch|typeface-montserrat)/)',
+    'node_modules/(?!(data-uri-to-buffer|fetch-blob|formdata-polyfill|gatsby-script|node-fetch|typeface-montserrat)/)',
   ],
 };
