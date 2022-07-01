@@ -120,7 +120,6 @@ export default {
       },
       resolve: 'gatsby-plugin-react-svg',
     },
-    'gatsby-plugin-remove-trailing-slashes',
     {
       options: {
         feeds: [
@@ -204,4 +203,5 @@ export default {
     siteUrl: GATSBY_URL,
     title: 'MaxMind Developer Portal',
   },
+  trailingSlash: 'never',
 } as GatsbyConfig;

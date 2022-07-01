@@ -17,7 +17,7 @@ const addLayoutField = (args: CreateNodeArgs): void => {
     createNodeField({
       name: 'layout',
       node,
-      value: parentNode.sourceInstanceName,
+      value: parentNode?.sourceInstanceName,
     });
   }
 };
