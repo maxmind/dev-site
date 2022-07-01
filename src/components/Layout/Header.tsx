@@ -61,6 +61,7 @@ const Header: React.FC<IHeader> = (props) => {
             <span
               aria-label="Developers"
               className={styles['logo__siteName']}
+              role="img"
             >
               Dev
               <span
