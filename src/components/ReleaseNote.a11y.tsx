@@ -16,6 +16,8 @@ describe('ReleaseNote', () => {
   it('has no Pa11y violations', async () => {
     const results = await pa11y(component, {
       ignore: [
+        // See https://github.com/pa11y/pa11y/issues/623
+        'color-contrast',
         'region',
         'WCAG2AAA.Principle1.Guideline1_3.1_3_1_AAA.G141',
       ],

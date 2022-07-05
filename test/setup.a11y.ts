@@ -21,12 +21,20 @@ interface IIssue {
 fetchMock.enableMocks();
 
 const _pa11y = configurePa11y({
+  // See https://github.com/pa11y/pa11y/issues/623
+  ignore: [
+    'color-contrast',
+  ],
   rootElement: `#${ROOT_ELEMENT}`,
 });
 
 global.pa11y = (
   component: ReactWrapper,
-  options = {},
+  options = {
+    ignore: [
+      'color-contrast',
+    ],
+  },
 ): Promise<unknown> => _pa11y(
   `
     <style>${recorders.styles.get()}</style>

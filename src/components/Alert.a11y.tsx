@@ -1,4 +1,4 @@
-import { mount  } from 'enzyme';
+import { mount } from 'enzyme';
 import * as React from 'react';
 
 import Alert from './Alert';
@@ -14,6 +14,8 @@ describe('Alert', () => {
     );
     const results = await pa11y(component, {
       ignore: [
+        // See https://github.com/pa11y/pa11y/issues/623
+        'color-contrast',
         'region',
       ],
     });
@@ -30,6 +32,8 @@ describe('Alert', () => {
     );
     const results = await pa11y(component, {
       ignore: [
+        // See https://github.com/pa11y/pa11y/issues/623
+        'color-contrast',
         'region',
       ],
     });
@@ -46,6 +50,8 @@ describe('Alert', () => {
     );
     const results = await pa11y(component, {
       ignore: [
+        // See https://github.com/pa11y/pa11y/issues/623
+        'color-contrast',
         'region',
       ],
     });
@@ -62,6 +68,8 @@ describe('Alert', () => {
     );
     const results = await pa11y(component, {
       ignore: [
+        // See https://github.com/pa11y/pa11y/issues/623
+        'color-contrast',
         'region',
       ],
     });

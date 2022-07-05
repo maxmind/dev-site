@@ -1,5 +1,5 @@
 import { useLocation } from '@reach/router';
-import { mount  } from 'enzyme';
+import { mount } from 'enzyme';
 import { useStaticQuery } from 'gatsby';
 import * as React from 'react';
 
@@ -77,6 +77,10 @@ describe('Overview', () => {
         '#content > article > header > div > h1',
         '#content > article > header > div > h2',
       ].join(', '),
+      ignore: [
+        // See https://github.com/pa11y/pa11y/issues/623
+        'color-contrast',
+      ],
     });
     expect(results).toHaveNoPa11yViolations();
   });

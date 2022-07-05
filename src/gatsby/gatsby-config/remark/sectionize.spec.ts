@@ -34,23 +34,23 @@ describe('sectionize', () => {
 
     const expected = [
       /* eslint-disable indent */
-      '<div id="toc-heading-1">',
-        '<h1 id="heading-1">Heading 1</h1>',
+      '<div id="user-content-toc-heading-1">',
+        '<h1 id="user-content-heading-1">Heading 1</h1>',
 
-        '<div id="toc-heading-2">',
-          '<h2 id="heading-2">Heading 2</h2>',
+        '<div id="user-content-toc-heading-2">',
+          '<h2 id="user-content-heading-2">Heading 2</h2>',
           '<p>Additional text.</p>',
           '<p>Additional text.</p>',
 
-          '<div id="toc-heading-3">',
-            '<h3 id="heading-3">Heading 3</h3>',
+          '<div id="user-content-toc-heading-3">',
+            '<h3 id="user-content-heading-3">Heading 3</h3>',
             '<p>Additional text.</p>',
             '<p>Additional text.</p>',
           '</div>',
         '</div>',
 
-        '<div id="toc-heading-2-1">',
-          '<h2 id="heading-2-1">Heading 2</h2>',
+        '<div id="user-content-toc-heading-2-1">',
+          '<h2 id="user-content-heading-2-1">Heading 2</h2>',
           '<p>Additional text.</p>',
         '</div>',
       '</div>',

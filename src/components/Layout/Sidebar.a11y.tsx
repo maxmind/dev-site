@@ -1,7 +1,7 @@
 import 'jest-pa11y/build/extendExpect';
 
 import { useLocation } from '@reach/router';
-import { mount  } from 'enzyme';
+import { mount } from 'enzyme';
 import * as React from 'react';
 
 import Sidebar from './Sidebar';
@@ -18,7 +18,15 @@ import Sidebar from './Sidebar';
 describe('Sidebar', () => {
   it('has no Pa11y violations', async () => {
     const component = mount(<Sidebar />);
-    const results = await pa11y(component);
+    const results = await pa11y(
+      component,
+      {
+        ignore: [
+          // See https://github.com/pa11y/pa11y/issues/623
+          'color-contrast',
+        ],
+      },
+    );
     expect(results).toHaveNoPa11yViolations();
   });
 });

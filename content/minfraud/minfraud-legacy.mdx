@@ -7,7 +7,7 @@ title: minFraud Legacy Web Service API
 We are planning to make a number of data changes to the minFraud Legacy
 Standard and Premium, and GeoIP Legacy City and Insights (formerly Omni) web
 services at the end of May 2022. Please see our [blog
-post](https://blog.maxmind.com/2020/06/15/data-changes-to-geoip-legacy-and-minfraud-legacy-web-services-in-may-2022/)
+post](https://blog.maxmind.com/2020/06/data-changes-to-geoip-legacy-and-minfraud-legacy-web-services-in-may-2022/)
 for more information, and how to prepare.
 </Alert>
 
@@ -129,10 +129,9 @@ longer than the longest valid representation of an IPv6 address.
       </tr>
       <tr>
          <td colspan="3">
-            <strong>Shipping Address</strong>
-            These fields are used to check against our database of known high risk shipping addresses.
-
-            You should only pass these fields when shipping physical goods.
+             <strong>Shipping Address</strong>
+             These fields are used to check against our database of known high risk shipping addresses.
+             You should only pass these fields when shipping physical goods.
          </td>
       </tr>
       <tr>
@@ -298,7 +297,6 @@ longer than the longest valid representation of an IPv6 address.
             If you have both the premium and standard minFraud service, you can choose to use the <strong>standard</strong> service to save on costs.
          </td>
       </tr>
-
    </tbody>
 </table>
 
@@ -397,8 +395,7 @@ current when they signed up for the service. The latest version is 1.3.
          <td>string</td>
          <td>
             The <a href="https://en.wikipedia.org/wiki/ISO_3166-2">ISO-3166-2</a> code for the state/region associated with the IP address.
-
-            We previously returned a <a href="https://en.wikipedia.org/wiki/FIPS_10-4">FIPS 10-4</a> code for all countries other than the United States and Canada. See our <a href="https://blog.maxmind.com/2020/06/15/data-changes-to-geoip-legacy-and-minfraud-legacy-web-services-in-may-2022/">blog post</a> for mor information.
+            We previously returned a <a href="https://en.wikipedia.org/wiki/FIPS_10-4">FIPS 10-4</a> code for all countries other than the United States and Canada. See our <a href="https://blog.maxmind.com/2020/06/data-changes-to-geoip-legacy-and-minfraud-legacy-web-services-in-may-2022/">blog post</a> for mor information.
          </td>
          <td>1.0</td>
       </tr>
@@ -424,7 +421,7 @@ current when they signed up for the service. The latest version is 1.3.
          <td>ip_areaCode</td>
          <td>string</td>
          <td>
-            <strong>Deprecated. This field is empty. See our <a href="https://blog.maxmind.com/2020/06/15/data-changes-to-geoip-legacy-and-minfraud-legacy-web-services-in-may-2022/">blog post</a> for more information.</strong>
+            <strong>Deprecated. This field is empty. See our <a href="https://blog.maxmind.com/2020/06/data-changes-to-geoip-legacy-and-minfraud-legacy-web-services-in-may-2022/">blog post</a> for more information.</strong>
          </td>
          <td>1.2</td>
       </tr>
@@ -433,14 +430,12 @@ current when they signed up for the service. The latest version is 1.3.
          <td>string</td>
          <td>
             A <a href="https://en.wikipedia.org/wiki/ISO_3166-1">ISO 3166-1</a> country code for the country associated with the IP address. In addition to the standard codes, we may also return one of the following:
-
             <ul>
                <li><strong>A1</strong> – an anonymous proxy.</li>
                <li><strong>A2</strong> – a satellite provider.</li>
                <li><strong>EU</strong> – an IP in a block used by multiple European countries.</li>
                <li><strong>AP</strong> – an IP in a block used by multiple Asia/Pacific region countries.</li>
             </ul>
-
             The <strong>US</strong> country code is returned for IP addresses associated with overseas US military bases.
          </td>
          <td>1.0</td>
@@ -456,7 +451,6 @@ current when they signed up for the service. The latest version is 1.3.
          <td>string (2)</td>
          <td>
             A two-character code for the continent associated with the IP address. The possible codes are:
-
             <ul>
                <li><strong>AF</strong> – Africa</li>
                <li><strong>AN</strong> – Antarctica</li>
@@ -498,7 +492,6 @@ current when they signed up for the service. The latest version is 1.3.
          <td>enum</td>
          <td>
             The user type associated with the IP address. This will be one of the following values.
-
             <ul>
                <li><strong>business</strong></li>
                <li><strong>cafe</strong></li>
@@ -515,8 +508,6 @@ current when they signed up for the service. The latest version is 1.3.
                <li><strong>searchEngineSpider</strong></li>
                <li><strong>traveler</strong></li>
             </ul>
-
-
          </td>
          <td>1.2</td>
       </tr>
@@ -525,15 +516,12 @@ current when they signed up for the service. The latest version is 1.3.
          <td>enum</td>
          <td>
             The connection type associated with the IP address. This can be one of the following values:
-
             <ul>
                <li><strong>Dialup</strong></li>
                <li><strong>Cable/DSL</strong></li>
                <li><strong>Corporate</strong></li>
                <li><strong>Cellular</strong></li>
             </ul>
-
-
          </td>
          <td>1.2</td>
       </tr>
@@ -596,7 +584,6 @@ current when they signed up for the service. The latest version is 1.3.
          <td>decimal</td>
          <td>
             A score from 0.00-4.00 indicating the likelihood that the user’s IP address is high risk.
-
             <table>
                <thead>
                   <tr>
@@ -623,7 +610,6 @@ current when they signed up for the service. The latest version is 1.3.
                   </tr>
                </tbody>
             </table>
-
             <strong>Note:</strong> Anonymous proxies will generally return a <code>proxyScore</code> of 0.
          </td>
          <td>1.0</td>
@@ -675,7 +661,6 @@ current when they signed up for the service. The latest version is 1.3.
          <td>enum</td>
          <td>
             This field can be either <strong>Yes</strong>, <strong>No</strong>, <strong>NotFound</strong>, or <strong>NA</strong>.  It indicates whether the country of the billing address matches the country of the majority of customers using that BIN. In cases where the location of customers is highly mixed, the match is to the country of the bank issuing the card.
-
             The <strong>NotFound</strong> response means that we could not find a match for the provided <em>bin</em> input field. The <strong>NA</strong> response means that you did not provide a <em>bin</em> in the input.
          </td>
          <td>1.1</td>
@@ -691,7 +676,6 @@ current when they signed up for the service. The latest version is 1.3.
          <td>enum</td>
          <td>
             This field can be either <strong>Yes</strong>, <strong>No</strong>, <strong>NotFound</strong>, or <strong>NA</strong> It indicates whether the credit card’s bank name matches the <em>binName</em> input field.
-
             The <strong>NotFound</strong> response means that we could not find a match for the provided <em>bin</em> input field. The <strong>NA</strong> response means that you did not provide a <em>binName</em> in the input.
          </td>
          <td>1.1</td>
@@ -707,7 +691,6 @@ current when they signed up for the service. The latest version is 1.3.
          <td>enum</td>
          <td>
             This field can be either <strong>Yes</strong>, <strong>No</strong>, <strong>NotFound</strong>, or <strong>NA</strong> It indicates whether the credit card’s bank name matches the <em>binPhone</em> input field.
-
             The <strong>NotFound</strong> response means that we could not find a match for the provided <em>bin</em> input field. The <strong>NA</strong> response means that you did not provide a <em>binPhone</em> in the input.
          </td>
          <td>1.1</td>
@@ -735,9 +718,7 @@ current when they signed up for the service. The latest version is 1.3.
          <td>enum</td>
          <td>
             This field can be either <strong>Yes</strong>, <strong>No</strong>, or <strong>NotFound</strong>. This indicates whether the customer’s phone number is in the billing address’s postal code.
-
             The <strong>No</strong> response means that phone number may be in a different area, or it is not listed in our database. The <strong>NotFound</strong> response indicates that the phone number <em>prefix</em> is not in our database.
-
             Currently we only return information about US phone numbers. For all other countries, this field will be left blank.
          </td>
          <td>1.0</td>
@@ -800,9 +781,7 @@ current when they signed up for the service. The latest version is 1.3.
          <td>enum</td>
          <td>
             If there was an error or warning with this request, this field contains an error code string.
-
             The possible error codes are:
-
             <ul>
                <li><strong>INVALID_LICENSE_KEY</strong></li>
                <li><strong>IP_REQUIRED</strong></li>
@@ -811,9 +790,7 @@ current when they signed up for the service. The latest version is 1.3.
                <li><strong>LICENSE_REQUIRED</strong> – This is returned if you do not provide a license key at all.</li>
                <li><strong>PERMISSION_REQUIRED</strong> – This is returned if you do not have permission to use the service. Please contact support@maxmind.com for more information.</li>
             </ul>
-
             The possible warning codes are:
-
             <ul>
                <li><strong>COUNTRY_NOT_FOUND</strong></li>
                <li><strong>CITY_NOT_FOUND</strong></li>
@@ -825,6 +802,5 @@ current when they signed up for the service. The latest version is 1.3.
          </td>
          <td>1.0</td>
       </tr>
-
    </tbody>
 </table>

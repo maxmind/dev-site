@@ -1,4 +1,4 @@
-import { mount  } from 'enzyme';
+import { mount } from 'enzyme';
 import * as React from 'react';
 
 import { p as P } from '../Mdx';
@@ -49,6 +49,8 @@ describe('<Schema />', () => {
 
     const results = await pa11y(component, {
       ignore: [
+        // See https://github.com/pa11y/pa11y/issues/623
+        'color-contrast',
         'region',
       ],
     });
