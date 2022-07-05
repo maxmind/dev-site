@@ -4,4 +4,10 @@ updates:
     directory: "/"
     schedule:
       interval: daily
-    open-pull-requests-limit: 20
+    open-pull-requests-limit: 200
+
+  - package-ecosystem: npm
+    directory: "/functions"
+    schedule:
+      interval: daily
+    open-pull-requests-limit: 200
