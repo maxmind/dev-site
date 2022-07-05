@@ -150,7 +150,7 @@
     "remark-html": "^13.0.1",
     "remark-lint-emphasis-marker": "^2.0.1",
     "remark-lint-list-item-spacing": "^3.0.0",
-    "remark-lint-no-empty-url": "^2.0.1",
+    "remark-lint-no-empty-url": "^3.1.1",
     "remark-lint-rule-style": "^2.0.1",
     "remark-lint-strong-marker": "^2.0.1",
     "remark-lint-unordered-list-marker-style": "^2.0.1",
