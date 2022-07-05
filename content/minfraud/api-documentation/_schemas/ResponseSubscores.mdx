@@ -17,6 +17,18 @@ import responseJson from '../_examples/response';
   Base.](https://support.maxmind.com/hc/en-us/articles/4407833140123-Compare-the-minFraud-Services)
 
   <Property
+    name="avs_result"
+    tags={{
+      'Format': 'Decimal',
+      'Min': 0.01,
+      'Max': 99,
+    }}
+  >
+    The risk associated with the AVS result. If present, this is a value in the range 0.01 to 99.
+
+  </Property>
+
+  <Property
     name="billing_address"
     tags={{
       'Format': 'Decimal',
