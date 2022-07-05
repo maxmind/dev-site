@@ -148,7 +148,7 @@
     "remark-cli": "^11.0.0",
     "remark-gfm": "^3.0.1",
     "remark-html": "^13.0.1",
-    "remark-lint-emphasis-marker": "^2.0.1",
+    "remark-lint-emphasis-marker": "^3.1.1",
     "remark-lint-list-item-spacing": "^3.0.0",
     "remark-lint-no-empty-url": "^3.1.1",
     "remark-lint-rule-style": "^2.0.1",
