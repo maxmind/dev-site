@@ -152,7 +152,7 @@
     "remark-lint-list-item-spacing": "^4.1.1",
     "remark-lint-no-empty-url": "^3.1.1",
     "remark-lint-rule-style": "^3.1.1",
-    "remark-lint-strong-marker": "^2.0.1",
+    "remark-lint-strong-marker": "^3.1.1",
     "remark-lint-unordered-list-marker-style": "^3.1.1",
     "remark-preset-github": "^4.0.1",
     "remark-preset-lint-markdown-style-guide": "^4.0.0",
