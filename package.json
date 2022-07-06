@@ -19,7 +19,7 @@
     "@types/lodash.findindex": "^4.6.6",
     "@types/lodash.foreach": "^4.5.6",
     "@types/mdx-js__react": "^1.5.5",
-    "@types/node": "^16.0.1",
+    "@types/node": "^18.0.3",
     "@types/node-fetch": "^2.6.1",
     "@types/prismjs": "^1.26.0",
     "@types/puppeteer": "^5.4.5",
