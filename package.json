@@ -70,7 +70,7 @@
     "openapi3-ts": "^2.0.2",
     "postcss": "^8.2.4",
     "postcss-load-config": "^4.0.1",
-    "postcss-loader": "^6.2.1",
+    "postcss-loader": "^7.0.0",
     "postcss-preset-env": "^7.4.3",
     "prismjs": "^1.27.0",
     "promise-polyfill": "^8.2.3",
