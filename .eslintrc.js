@@ -121,12 +121,13 @@ module.exports = {
       },
     },
   ],
-  parser: 'babel-eslint',
+  parser: '@babel/eslint-parser',
   parserOptions: {
     ecmaFeatures: {
       modules: true,
     },
     ecmaVersion: 6,
+    requireConfigFile: false,
     sourceType: 'module',
   },
   plugins: [
