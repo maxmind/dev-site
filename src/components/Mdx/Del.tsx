@@ -4,7 +4,7 @@ import React from 'react';
 
 import * as styles from './Del.module.scss';
 
-const Del: React.FC<React.HTMLProps<HTMLElement>> = ({
+const Del: React.FC<React.HTMLProps<HTMLModElement>> = ({
   className,
   ...props
 }) => (
