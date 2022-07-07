@@ -6,7 +6,7 @@ const queryString = 'lang=en';
 
 if (!existsSync(sitemapFile)) {
   console.error(`ERROR: ${sitemapFile} not found.`);
-  return;
+  process.exit();
 }
 
 
@@ -18,7 +18,7 @@ if (
   sitemapContents.match(locRegex)[0].includes(queryString)
 ) {
   console.log('Query string is already present in sitemap.');
-  return;
+  process.exit();
 }
 
 console.log(`Adding query string to sitemap: ${queryString}`);
