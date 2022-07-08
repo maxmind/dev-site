@@ -75,6 +75,50 @@ jobs:
           GATSBY_URL: https://dev.maxmind.com
         run: npm run build
 
+  develop:
+    needs: [cache-keys, build]
+    name: Develop
+    runs-on: ubuntu-latest
+
+    outputs:
+      is-cached-build: ${{ steps.cached-build.outputs.cache-hit }}
+
+    steps:
+      - name: Check Out repo
+        uses: actions/checkout@v3
+
+      - uses: actions/setup-node@v3
+        with:
+          node-version: '16'
+
+      - name: Get cached dependencies
+        id: cache-node-modules
+        uses: actions/cache@v2
+        with:
+          path: |
+            node_modules
+            functions/node_modules
+          key: ${{ needs.cache-keys.outputs.node-modules }}
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Get cached build
+        id: cached-build
+        uses: actions/cache@v2
+        with:
+          path: |
+            functions/lib
+            public
+            firebase.json
+          key: ${{ needs.cache-keys.outputs.build }}
+
+      - if: steps.cached-build.outputs.cache-hit != 'true'
+        name: Develop
+        env:
+          GATSBY_URL: https://dev.maxmind.com
+        run: npm run develop
+
   test-a11y:
     if: needs.build.outputs.is-cached-build != 'true'
     name: Test – Accessibility
