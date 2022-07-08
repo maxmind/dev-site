@@ -1,4 +1,5 @@
 import type { GatsbyConfig } from 'gatsby';
+import path from 'path';
 import remarkExternalLinks from 'remark-external-links';
 
 import createReleaseNotesFeed from './feeds/createReleaseNotesFeed';
@@ -73,9 +74,9 @@ export default {
     {
       options: {
         defaultLayouts: {
-          home: require.resolve(`${GATSBY_ROOT}src/templates/Home`),
-          overviews: require.resolve(`${GATSBY_ROOT}src/templates/Overview`),
-          pages: require.resolve(`${GATSBY_ROOT}src/templates/Page`),
+          home: path.resolve(`${GATSBY_ROOT}src/templates/Home`),
+          overviews: path.resolve(`${GATSBY_ROOT}src/templates/Overview`),
+          pages: path.resolve(`${GATSBY_ROOT}src/templates/Page`),
         },
         extensions: [
           '.mdx',
