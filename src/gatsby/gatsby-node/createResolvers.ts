@@ -17,7 +17,15 @@ const minFraudImportPathMap = createImportPathMap(
   `${process.cwd()}/content/minfraud/api-documentation/_schemas`
 );
 
-export const createResolvers: GatsbyNode['createResolvers'] = async(
+exports.createSchemaCustomization = ({ actions }) => {
+  const { createTypes } = actions;
+
+  createTypes(`
+    type Mdx implements Node
+  `);
+};
+
+export const createResolvers: GatsbyNode['createResolvers'] = async (
   args: CreateResolversArgs,
 ): Promise<any> => {
   const {
