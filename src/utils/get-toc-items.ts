@@ -11,10 +11,11 @@ const parse = require('remark-parse');
 const mdx = require('remark-mdx');
 const stringify = require('remark-stringify');
 const unified = require('unified');
-const map = require('unist-util-map');
 const find = require('unist-util-find');
-const findBefore = require('unist-util-find-before');
-const visitParents = require('unist-util-visit-parents');
+
+import { map } from 'unist-util-map'
+import { findBefore } from 'unist-util-find-before'
+import { visitParents } from 'unist-util-visit-parents';
 
 /**
  * To get the add `Schema` component names to the table of contents, the

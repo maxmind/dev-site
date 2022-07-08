@@ -2,10 +2,8 @@ import GithubSlugger from 'github-slugger';
 import toString from 'mdast-util-to-string';
 // eslint-disable-next-line import/no-unresolved
 import { Parent } from 'unist';
-import visitParents, { Visitor } from 'unist-util-visit-parents';
-
-// eslint-disable-next-line @typescript-eslint/no-var-requires
-const findAfter = require('unist-util-find-after');
+import { visitParents, Visitor } from 'unist-util-visit-parents';
+import { findAfter } from 'unist-util-find-after';
 
 const MAX_HEADING_DEPTH = 6;
 
@@ -21,7 +19,7 @@ const transform: TransformFn = (tree: any) => {
       tree,
       (node: any) => node.type === 'heading' && node.depth === depth,
       // eslint-disable-next-line @typescript-eslint/no-explicit-any
-      visitor as Visitor<any>,
+      visitor as Visitor,
     );
   }
 };
@@ -46,7 +44,7 @@ const visitor = (node: any, ancestors: Parent[]) => {
   const end = findAfter(parent, start, isEnd);
 
   const startIndex = parent.children.indexOf(start);
-  const endIndex = parent.children.indexOf(end);
+  const endIndex = end ? parent.children.indexOf(end) : 0;
 
   const section = {
     children: parent.children.slice(

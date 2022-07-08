@@ -1,4 +1,4 @@
-import { GatsbyConfig } from 'gatsby';
+import type { GatsbyConfig } from 'gatsby';
 import remarkExternalLinks from 'remark-external-links';
 
 import createReleaseNotesFeed from './feeds/createReleaseNotesFeed';
