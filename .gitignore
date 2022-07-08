@@ -74,3 +74,4 @@ firebase.json
 
 # Misc
 .tmp
+*.swp
