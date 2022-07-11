@@ -215,7 +215,7 @@
     "lint:configs": "eslint .*rc.js --no-ignore",
     "lint:content": "remark . --ext mdx --quiet",
     "lint:json": "eslint . --ext json",
-    "lint:scripts": "eslint . --ext js,ts,tsx --ignore-pattern 'functions/**/*.js'",
+    "lint:scripts": "tsc && eslint . --ext js,ts,tsx --ignore-pattern 'functions/**/*.js'",
     "lint:styles": "stylelint ./src/**/*.{css,scss,sass}",
     "preview": "firebase hosting:channel:deploy $(git rev-parse --abbrev-ref HEAD)",
     "serve": "firebase emulators:start --only functions,hosting",
