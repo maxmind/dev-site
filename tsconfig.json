@@ -17,6 +17,7 @@
       "openapi-types": ["src/types/*"]
     },
     "resolveJsonModule": true,
+    "skipLibCheck": true,
     "strict": true,
     "target": "ES2019",
     "typeRoots": ["src/types", "./node_modules/@types"]
