@@ -67,7 +67,7 @@ describe('Overview', () => {
       </Overview>
     );
 
-    const results = await pa11y(component, {
+    const results = await __pa11y(component, {
       hideElements: [
         /**
          * Skip testing for these two heading elements, which have a gradient

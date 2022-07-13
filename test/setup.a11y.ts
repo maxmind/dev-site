@@ -28,7 +28,11 @@ const _pa11y = configurePa11y({
   rootElement: `#${ROOT_ELEMENT}`,
 });
 
-global.pa11y = (
+declare global {
+  function __pa11y(component: ReactWrapper, options: any): Promise<unknown>;
+}
+
+global.__pa11y = (
   component: ReactWrapper,
   options = {
     ignore: [

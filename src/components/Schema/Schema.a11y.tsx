@@ -47,7 +47,7 @@ describe('<Schema />', () => {
       </Schema>
     );
 
-    const results = await pa11y(component, {
+    const results = await __pa11y(component, {
       ignore: [
         // See https://github.com/pa11y/pa11y/issues/623
         'color-contrast',

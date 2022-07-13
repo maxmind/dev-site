@@ -30,7 +30,7 @@ describe('sectionize', () => {
       .use(sectionize)
       .use(html)
       .process(content)
-      .then(result => String(result).trim());
+      .then((result: any) => String(result).trim());
 
     const expected = [
       /* eslint-disable indent */

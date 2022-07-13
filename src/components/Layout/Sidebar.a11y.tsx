@@ -18,7 +18,7 @@ import Sidebar from './Sidebar';
 describe('Sidebar', () => {
   it('has no Pa11y violations', async () => {
     const component = mount(<Sidebar />);
-    const results = await pa11y(
+    const results = await __pa11y(
       component,
       {
         ignore: [

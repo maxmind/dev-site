@@ -62,7 +62,7 @@ describe('Home', () => {
       />
     );
 
-    const results = await pa11y(component, {
+    const results = await __pa11y(component, {
       hideElements: [
         /* eslint-disable max-len */
 

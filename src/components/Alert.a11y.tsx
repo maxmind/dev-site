@@ -12,7 +12,7 @@ describe('Alert', () => {
         <p>Error</p>
       </Alert>
     );
-    const results = await pa11y(component, {
+    const results = await __pa11y(component, {
       ignore: [
         // See https://github.com/pa11y/pa11y/issues/623
         'color-contrast',
@@ -30,7 +30,7 @@ describe('Alert', () => {
         <p>Info</p>
       </Alert>
     );
-    const results = await pa11y(component, {
+    const results = await __pa11y(component, {
       ignore: [
         // See https://github.com/pa11y/pa11y/issues/623
         'color-contrast',
@@ -48,7 +48,7 @@ describe('Alert', () => {
         <p>Success</p>
       </Alert>
     );
-    const results = await pa11y(component, {
+    const results = await __pa11y(component, {
       ignore: [
         // See https://github.com/pa11y/pa11y/issues/623
         'color-contrast',
@@ -66,7 +66,7 @@ describe('Alert', () => {
         <p>Warning</p>
       </Alert>
     );
-    const results = await pa11y(component, {
+    const results = await __pa11y(component, {
       ignore: [
         // See https://github.com/pa11y/pa11y/issues/623
         'color-contrast',

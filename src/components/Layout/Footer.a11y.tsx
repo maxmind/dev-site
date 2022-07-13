@@ -32,7 +32,7 @@ describe('Footer', () => {
     );
 
     const component = mount(<Footer />);
-    const results = await pa11y(
+    const results = await __pa11y(
       component,
       {
         ignore: [
