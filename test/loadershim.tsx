@@ -8,10 +8,6 @@ import {
 import { mount, ReactWrapper } from 'enzyme';
 import * as React from 'react';
 
-declare global {
-  function mountWithRouter(child: React.ReactElement): ReactWrapper;
-}
-
 global.mountWithRouter = (child: React.ReactElement): ReactWrapper => {
   const history = createHistory(createMemorySource('/starting/url#foo'));
 
