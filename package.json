@@ -64,7 +64,7 @@
     "lodash.isplainobject": "^4.0.6",
     "mdast-util-to-hast": "^10.1.1",
     "mdast-util-to-string": "^2.0.0",
-    "node-fetch": "^3.2.8",
+    "node-fetch": "^3.2.9",
     "normalize.css": "^8.0.1",
     "openapi-types": "^12.0.0",
     "openapi3-ts": "^2.0.2",
