@@ -26,7 +26,6 @@
     "@types/node": "^18.0.6",
     "@types/node-fetch": "^2.6.1",
     "@types/prismjs": "^1.26.0",
-    "@types/puppeteer": "^5.4.5",
     "@types/react": "^17.0.40",
     "@types/react-dom": "^17.0.13",
     "@types/react-helmet": "^6.1.5",
