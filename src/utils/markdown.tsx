@@ -5,7 +5,7 @@ import React from 'react';
 import * as components from '../components/Mdx';
 
 export const renderMarkdown = (
-  content: React.ReactNode
+  content: any
 ): React.ReactElement => {
   return (
     <MDXProvider

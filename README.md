@@ -71,7 +71,6 @@ npm run build && npm run serve
 
 ```sh
 npm run test             # runs all tests
-npm run test:a11y        # runs accessibility tests
 npm run test:unit        # runs unit tests
 npm run test:regressions # runs regression tests
 ```

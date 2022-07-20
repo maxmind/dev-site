@@ -77,30 +77,6 @@ jobs:
           GATSBY_URL: https://dev.maxmind.com
         run:  npm run build
 
-  test-a11y:
-    name: Test – Accessibility
-    needs: [cache-keys, build]
-    runs-on: ubuntu-latest
-
-    steps:
-      - name: Check Out Repo
-        uses: actions/checkout@v3
-
-      - uses: actions/setup-node@v3
-        with:
-          node-version: '16'
-
-      - name: Get cached dependencies
-        uses: actions/cache@v2
-        with:
-          path: |
-            node_modules
-            functions/node_modules
-          key: ${{ needs.cache-keys.outputs.node-modules }}
-
-      - name: Run accessibility tests
-        run: npm run test:a11y
-
   test-unit:
     name: Test – Unit
     needs: [cache-keys, build]
