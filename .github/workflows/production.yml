@@ -102,13 +102,12 @@ jobs:
 
   deploy-hosting:
     name: Deploy – Hosting
-    needs: [cache-keys, build, test-a11y, test-unit]
+    needs: [cache-keys, build, test-unit]
     # Only run this job if test jobs either ran successfully or were skipped
     # because a previously tested build was cached.
     # Inspired by https://github.com/actions/runner/issues/491#issuecomment-850884422
     if: |
       always() &&
-      (needs.test-a11y.result == 'success' || needs.test-a11y.result == 'skipped') &&
       (needs.test-unit.result == 'success' || needs.test-unit.result == 'skipped')
     runs-on: ubuntu-latest
 
@@ -139,13 +138,12 @@ jobs:
 
   deploy-functions:
     name: Deploy - Functions
-    needs: [cache-keys, build, test-a11y, test-unit]
+    needs: [cache-keys, build, test-unit]
     # Only run this job if test jobs either ran successfully or were skipped
     # because a previously tested build was cached.
     # Inspired by https://github.com/actions/runner/issues/491#issuecomment-850884422
     if: |
       always() &&
-      (needs.test-a11y.result == 'success' || needs.test-a11y.result == 'skipped') &&
       (needs.test-unit.result == 'success' || needs.test-unit.result == 'skipped')
     runs-on: ubuntu-latest
 
