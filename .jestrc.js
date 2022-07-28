@@ -22,7 +22,9 @@ module.exports = {
     '<rootDir>.*/public',
     '<rootDir>/test',
   ],
-  testURL: 'http://localhost',
+  testEnvironmentOptions: {
+    url: 'http://localhost',
+  },
   transform: {
     '^.+\\.[jt]s(x)?$': '<rootDir>/test/preprocess.js',
     '^.+\\.scss$': 'jest-scss-transform',
