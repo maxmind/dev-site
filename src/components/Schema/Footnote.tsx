@@ -3,7 +3,11 @@ import * as React from 'react';
 
 import * as styles from './Footnote.module.scss';
 
-const Footnote: React.FC = (props) => {
+interface IFootnote {
+  children: string;
+}
+
+const Footnote: React.FC<IFootnote> = (props) => {
   const { children } = props;
 
   return (
@@ -16,7 +20,7 @@ const Footnote: React.FC = (props) => {
 };
 
 Footnote.propTypes = {
-  children: PropTypes.node.isRequired,
+  children: PropTypes.string.isRequired,
 };
 
 export default Footnote;
