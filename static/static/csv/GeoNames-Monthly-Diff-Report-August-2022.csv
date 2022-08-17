@@ -1,0 +1,143 @@
+diff_in,old_geoname_id,new_geoname_id,old_city_name,new_city_name,old_country_name,new_country_name,old_country_code,new_country_code,old_subdivision_codes,new_subdivision_codes
+city_name,1809054,1809054,Hainan,,China,China,CN,CN,HI,HI
+city_name,1806691,1806691,Hunan,,China,China,CN,CN,HN,HN
+city_name,1794299,1794299,Sichuan,,China,China,CN,CN,SC,SC
+city_name,1796328,1796328,Shandong,,China,China,CN,CN,SD,SD
+city_name,1785694,1785694,Yunnan,,China,China,CN,CN,YN,YN
+city_name,1784764,1784764,Zhejiang,,China,China,CN,CN,ZJ,ZJ
+city_name,2036500,2036500,Jilin,,China,China,CN,CN,JL,JL
+city_name,1806222,1806222,Jiangxi,,China,China,CN,CN,JX,JX
+city_name,2036965,2036965,Heilongjiang,,China,China,CN,CN,HL,HL
+city_name,1806260,1806260,Jiangsu,,China,China,CN,CN,JS,JS
+city_name,1811017,1811017,Fujian,,China,China,CN,CN,FJ,FJ
+city_name,1795912,1795912,Shanxi,,China,China,CN,CN,SX,SX
+city_name,1809445,1809445,Guizhou,,China,China,CN,CN,GZ,GZ
+city_name,2036115,2036115,Liaoning,,China,China,CN,CN,LN,LN
+city_name,1808520,1808520,Henan,,China,China,CN,CN,HA,HA
+city_name,1809935,1809935,Guangdong,,China,China,CN,CN,GD,GD
+city_name,1818058,1818058,Anhui,,China,China,CN,CN,AH,AH
+city_name,1806949,1806949,Hubei,,China,China,CN,CN,HB,HB
+city_name,2805059,2805059,Zehlendorf Bezirk,Zehlendorf,Germany,Germany,DE,DE,BE,BE
+city_name,2958024,2958024,Altdorf,Altdorf bei Nurnberg,Germany,Germany,DE,DE,BY,BY
+city_name,702659,702659,Lugovoye,Luhove,Ukraine,Ukraine,UA,UA,68,68
+geoname_id,3430428,3430427,Nicanor Olivera,Nicanor Olivera,Argentina,Argentina,AR,AR,B,B
+geoname_id,8614218,2168087,Dunmore,Dunmore,Australia,Australia,AU,AU,NSW,NSW
+geoname_id,2764792,2764791,Spital,Spital,Austria,Austria,AT,AT,3,3
+geoname_id,2783046,3321894,Ach,Ach,Austria,Austria,AT,AT,4,4
+geoname_id,2778001,11695613,Gries,Gries,Austria,Austria,AT,AT,2,2
+geoname_id,2780983,2780982,Diepolz,Diepolz,Austria,Austria,AT,AT,3,3
+geoname_id,7670694,7923297,Nalitabari,Nalitabari,Bangladesh,Bangladesh,BD,BD,"H, 57","H, 57"
+geoname_id,1194347,7478994,Mirpur,Mirpur,Bangladesh,Bangladesh,BD,BD,"D, 30","D, 30"
+geoname_id,2802223,2802225,Berg,Berg,Belgium,Belgium,BE,BE,"VLG, VBR","VLG, VBR"
+geoname_id,6316411,6323798,Apiacas,Apiacas,Brazil,Brazil,BR,BR,MT,MT
+geoname_id,3447117,3447118,Tabuleiro,Tabuleiro,Brazil,Brazil,BR,BR,MG,MG
+geoname_id,6318262,3450118,Santa Luzia,Santa Luzia,Brazil,Brazil,BR,BR,BA,BA
+geoname_id,3405171,3405172,Bonito,Bonito,Brazil,Brazil,BR,BR,PE,PE
+geoname_id,3392438,6319591,Pedro Afonso,Pedro Afonso,Brazil,Brazil,BR,BR,TO,TO
+geoname_id,6317824,6319439,Ourilandia do Norte,Ourilandia do Norte,Brazil,Brazil,BR,BR,PA,PA
+geoname_id,3449088,3449094,Sao Geraldo,Sao Geraldo,Brazil,Brazil,BR,BR,MG,MG
+geoname_id,3470191,8612180,Bela Vista,Bela Vista,Brazil,Brazil,BR,BR,ES,ES
+geoname_id,6319378,3405806,Belterra,Belterra,Brazil,Brazil,BR,BR,PA,PA
+geoname_id,6319223,6316314,Agua Boa,Agua Boa,Brazil,Brazil,BR,BR,MT,MT
+geoname_id,6319373,3406856,Bagre,Bagre,Brazil,Brazil,BR,BR,PA,PA
+geoname_id,6317869,6323850,Paranaita,Paranaita,Brazil,Brazil,BR,BR,MT,MT
+geoname_id,7874519,6316311,Agronomica,Agronomica,Brazil,Brazil,BR,BR,SC,SC
+geoname_id,6319397,6316974,Cumaru do Norte,Cumaru do Norte,Brazil,Brazil,BR,BR,PA,PA
+geoname_id,3460148,6321486,Januaria,Januaria,Brazil,Brazil,BR,BR,MG,MG
+geoname_id,6318649,6323785,Selviria,Selviria,Brazil,Brazil,BR,BR,MS,MS
+geoname_id,3459084,3459088,Laje,Laje,Brazil,Brazil,BR,BR,BA,BA
+geoname_id,3447712,6319159,Serranopolis,Serranopolis,Brazil,Brazil,BR,BR,GO,GO
+geoname_id,6318187,6322523,Rosana,Rosana,Brazil,Brazil,BR,BR,SP,SP
+geoname_id,6318347,12117513,Santo Antonio da Barra,Santo Antonio da Barra,Brazil,Brazil,BR,BR,GO,GO
+geoname_id,3404918,3404908,Brejinho,Brejinho,Brazil,Brazil,BR,BR,PE,PE
+geoname_id,6317803,6324149,Novo Sao Joaquim,Novo Sao Joaquim,Brazil,Brazil,BR,BR,MT,MT
+geoname_id,3405864,3405863,Belem,Belem,Brazil,Brazil,BR,BR,PB,PB
+geoname_id,12133955,3445113,Vieiras,Vieiras,Brazil,Brazil,BR,BR,MG,MG
+geoname_id,6318807,3385980,Tucuma,Tucuma,Brazil,Brazil,BR,BR,PA,PA
+geoname_id,3467057,3467061,Caraibas,Caraibas,Brazil,Brazil,BR,BR,BA,BA
+geoname_id,7615245,7615192,Vila Galvao,Vila Galvao,Brazil,Brazil,BR,BR,SP,SP
+geoname_id,6317214,6319704,Governador Eugenio Barros,Governador Eugenio Barros,Brazil,Brazil,BR,BR,MA,MA
+geoname_id,7568690,3456675,Morro Grande,Morro Grande,Brazil,Brazil,BR,BR,SC,SC
+geoname_id,11885795,3667816,Sopetran,Sopetran,Colombia,Colombia,CO,CO,ANT,ANT
+geoname_id,8182762,3687908,Calima,Calima,Colombia,Colombia,CO,CO,VAC,VAC
+geoname_id,3784965,3688855,Betania,Betania,Colombia,Colombia,CO,CO,ANT,ANT
+geoname_id,3204232,3213252,Bicine,Bicine,Croatia,Croatia,HR,HR,15,15
+geoname_id,2624896,2624897,Albaek,Albaek,Denmark,Denmark,DK,DK,81,81
+geoname_id,2865640,2865642,Neuenkirchen,Neuenkirchen,Germany,Germany,DE,DE,NI,NI
+geoname_id,2906334,2906333,Hennickendorf,Hennickendorf,Germany,Germany,DE,DE,BB,BB
+geoname_id,2872546,2872545,Medenbach,Medenbach,Germany,Germany,DE,DE,HE,HE
+geoname_id,2957733,2957735,Altendorf,Altendorf,Germany,Germany,DE,DE,BY,BY
+geoname_id,2865642,2865632,Neuenkirchen,Neuenkirchen,Germany,Germany,DE,DE,NI,NI
+geoname_id,2816685,2816684,Volkenshagen,Volkenshagen,Germany,Germany,DE,DE,MV,MV
+geoname_id,10453064,10212765,Belora,Belora,India,India,IN,IN,MH,MH
+geoname_id,11677565,1466024,Agaram,Agaram,India,India,IN,IN,TN,TN
+geoname_id,6734751,1966964,Tamarunang,Tamarunang,Indonesia,Indonesia,ID,ID,SN,SN
+geoname_id,6410750,1964030,Jombor,Jombor,Indonesia,Indonesia,ID,ID,JT,JT
+geoname_id,7553518,1632724,Pangkajene,Pangkajene,Indonesia,Indonesia,ID,ID,SN,SN
+geoname_id,6866118,1971411,Jeruk,Jeruk,Indonesia,Indonesia,ID,ID,JI,JI
+geoname_id,6707402,6707405,Martoba,Martoba,Indonesia,Indonesia,ID,ID,SU,SU
+geoname_id,6784904,8322225,Kelutan,Kelutan,Indonesia,Indonesia,ID,ID,JI,JI
+geoname_id,1969788,7589758,Cendana,Cendana,Indonesia,Indonesia,ID,ID,SN,SN
+geoname_id,1959782,1959535,Tipar,Tipar,Indonesia,Indonesia,ID,ID,JB,JB
+geoname_id,6881794,6745570,Bangkle,Bangkle,Indonesia,Indonesia,ID,ID,JT,JT
+geoname_id,7061335,1974405,Lumpue,Lumpue,Indonesia,Indonesia,ID,ID,SN,SN
+geoname_id,6832665,6765656,Ngronggo,Ngronggo,Indonesia,Indonesia,ID,ID,JI,JI
+geoname_id,6881276,6771205,Sidokare,Sidokare,Indonesia,Indonesia,ID,ID,JI,JI
+geoname_id,1991086,8058602,Sukaluyu,Sukaluyu,Indonesia,Indonesia,ID,ID,JB,JB
+geoname_id,1989505,1959246,Larangan,Larangan,Indonesia,Indonesia,ID,ID,JB,JB
+geoname_id,1971037,1965919,Pojok,Pojok,Indonesia,Indonesia,ID,ID,JI,JI
+geoname_id,6767820,7781637,Masigit,Masigit,Indonesia,Indonesia,ID,ID,BT,BT
+geoname_id,6563852,1963906,Kembangsari,Kembangsari,Indonesia,Indonesia,ID,ID,JT,JT
+geoname_id,6263891,1630338,Purwantoro,Purwantoro,Indonesia,Indonesia,ID,ID,JT,JT
+geoname_id,6379099,6373886,Karanglewas,Karanglewas,Indonesia,Indonesia,ID,ID,JT,JT
+geoname_id,6792574,1963817,Bantir,Bantir,Indonesia,Indonesia,ID,ID,JT,JT
+geoname_id,7916464,8018040,Bunisari,Bunisari,Indonesia,Indonesia,ID,ID,JB,JB
+geoname_id,6597185,8024180,Cikalang,Cikalang,Indonesia,Indonesia,ID,ID,JB,JB
+geoname_id,6534515,8964434,Taleggio,Taleggio,Italy,Italy,IT,IT,"25, BG","25, BG"
+geoname_id,11791340,11827199,Hondori,Hondori,Japan,Japan,JP,JP,1,1
+geoname_id,2110766,8313487,Tokamachi,Tokamachi,Japan,Japan,JP,JP,6,6
+geoname_id,11525877,11672108,Yamato,Yamato,Japan,Japan,JP,JP,1,1
+geoname_id,10351336,10351756,Tokunaga,Tokunaga,Japan,Japan,JP,JP,40,40
+geoname_id,1735339,1735297,Mukah,Mukah,Malaysia,Malaysia,MY,MY,13,13
+geoname_id,3981069,3821726,Tres Palos,Tres Palos,Mexico,Mexico,MX,MX,GRO,GRO
+geoname_id,8864017,3532340,Emiliano Zapata,Emiliano Zapata,Mexico,Mexico,MX,MX,MOR,MOR
+geoname_id,4016407,8582120,Cabo Corrientes,Cabo Corrientes,Mexico,Mexico,MX,MX,JAL,JAL
+geoname_id,4008150,9184886,El Rayo,El Rayo,Mexico,Mexico,MX,MX,DUR,DUR
+geoname_id,2338221,2325894,Ikot Abasi,Ikot Abasi,Nigeria,Nigeria,NG,NG,AK,AK
+geoname_id,7100186,2320829,Ughelli,Ughelli,Nigeria,Nigeria,NG,NG,DE,DE
+geoname_id,2271728,2271727,Amendoeira,Amendoeira,Portugal,Portugal,PT,PT,8,8
+geoname_id,4562487,4566966,,,Puerto Rico,Puerto Rico,PR,PR,,
+geoname_id,576380,8305641,Biklyan',Biklyan',Russia,Russia,RU,RU,TA,TA
+geoname_id,1666916,1666915,Caohu,Caohu,Taiwan,Taiwan,TW,TW,YUN,YUN
+geoname_id,6644746,1988983,Zhuangwei,Zhuangwei,Taiwan,Taiwan,TW,TW,CHA,CHA
+geoname_id,1679346,1671442,Ailiao,Ailiao,Taiwan,Taiwan,TW,TW,PIF,PIF
+geoname_id,6574575,1675111,Xinfeng,Xinfeng,Taiwan,Taiwan,TW,TW,HSZ,HSZ
+geoname_id,1670321,1672022,Buxin,Buxin,Taiwan,Taiwan,TW,TW,TAO,TAO
+geoname_id,1671423,1671422,Neibu,Neibu,Taiwan,Taiwan,TW,TW,PIF,PIF
+geoname_id,1620795,8667019,Ban Bang Kung,Ban Bang Kung,Thailand,Thailand,TH,TH,72,72
+geoname_id,8396833,8397193,Ban Kao,Ban Kao,Thailand,Thailand,TH,TH,61,61
+geoname_id,1156907,1156905,Ban Khuan,Ban Khuan,Thailand,Thailand,TH,TH,82,82
+geoname_id,1118965,1156400,Ban Mai,Ban Mai,Thailand,Thailand,TH,TH,71,71
+subdivision_codes,653492,653492,Kausala,Kausala,Finland,Finland,FI,FI,9,16
+subdivision_codes,656807,656807,Iitti,Iitti,Finland,Finland,FI,FI,9,16
+subdivision_codes,658318,658318,Heinävesi,Heinävesi,Finland,Finland,FI,FI,4,13
+subdivision_codes,461512,461512,Ambeli,Ambeli,Latvia,Latvia,LV,LV,,111
+subdivision_codes,454602,454602,Vainode,Vainode,Latvia,Latvia,LV,LV,,112
+subdivision_codes,456008,456008,Rūjiena,Rūjiena,Latvia,Latvia,LV,LV,VMR,113
+subdivision_codes,460697,460697,Bunka,Bunka,Latvia,Latvia,LV,LV,,112
+subdivision_codes,459586,459586,Ilūkste,Ilūkste,Latvia,Latvia,LV,LV,,111
+subdivision_codes,453754,453754,Valmiera,Valmiera,Latvia,Latvia,LV,LV,VMR,113
+subdivision_codes,461602,461602,Aizpute,Aizpute,Latvia,Latvia,LV,LV,,112
+subdivision_codes,459692,459692,Grobina,Grobina,Latvia,Latvia,LV,LV,,112
+subdivision_codes,458695,458695,Kocēni,Kocēni,Latvia,Latvia,LV,LV,VMR,113
+subdivision_codes,455166,455166,Strenči,Strenči,Latvia,Latvia,LV,LV,VMR,113
+subdivision_codes,461104,461104,Bebrene,Bebrene,Latvia,Latvia,LV,LV,,111
+subdivision_codes,455786,455786,Seda,Seda,Latvia,Latvia,LV,LV,VMR,113
+subdivision_codes,456050,456050,Rucava,Rucava,Latvia,Latvia,LV,LV,,112
+subdivision_codes,457533,457533,Mazsalaca,Mazsalaca,Latvia,Latvia,LV,LV,VMR,113
+subdivision_codes,454614,454614,Vaidava,Vaidava,Latvia,Latvia,LV,LV,VMR,113
+subdivision_codes,456827,456827,Pavilosta,Pavilosta,Latvia,Latvia,LV,LV,,112
+subdivision_codes,457161,457161,Naukšēni,Naukšēni,Latvia,Latvia,LV,LV,VMR,113
+subdivision_codes,458948,458948,Kauguri,Kauguri,Latvia,Latvia,LV,LV,VMR,113
+subdivision_codes,456506,456506,Priekule,Priekule,Latvia,Latvia,LV,LV,,112
+subdivision_codes,460171,460171,Durbe,Durbe,Latvia,Latvia,LV,LV,,112
