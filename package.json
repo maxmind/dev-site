@@ -35,7 +35,7 @@
     "classnames": "^2.2.6",
     "css-vars-ponyfill": "^2.4.8",
     "custom-event-polyfill": "^1.0.7",
-    "dompurify": "^2.3.10",
+    "dompurify": "^2.3.12",
     "gatsby": "^4.20.0",
     "gatsby-plugin-advanced-sitemap": "^2.0.0",
     "gatsby-plugin-feed": "^4.20.0",
