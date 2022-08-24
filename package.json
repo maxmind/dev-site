@@ -38,7 +38,7 @@
     "dompurify": "^2.3.12",
     "gatsby": "^4.21.1",
     "gatsby-plugin-advanced-sitemap": "^2.0.0",
-    "gatsby-plugin-feed": "^4.20.0",
+    "gatsby-plugin-feed": "^4.21.0",
     "gatsby-plugin-google-gtag": "^4.21.0",
     "gatsby-plugin-image": "^2.21.0",
     "gatsby-plugin-manifest": "^4.21.0",
