@@ -48,7 +48,7 @@ jobs:
 
       - name: Get cached dependencies
         id: cache-node-modules
-        uses: actions/cache@v2
+        uses: actions/cache@v3
         with:
           path: |
             node_modules
@@ -61,7 +61,7 @@ jobs:
 
       - name: Get cached build
         id: cached-build
-        uses: actions/cache@v2
+        uses: actions/cache@v3
         with:
           path: |
             functions/lib
@@ -90,7 +90,7 @@ jobs:
           node-version: '16'
 
       - name: Get cached dependencies
-        uses: actions/cache@v2
+        uses: actions/cache@v3
         with:
           path: |
             node_modules
@@ -120,7 +120,7 @@ jobs:
           node-version: '16'
 
       - name: Get cached build
-        uses: actions/cache@v2
+        uses: actions/cache@v3
         with:
           path: |
             functions/lib
@@ -156,7 +156,7 @@ jobs:
           node-version: '16'
 
       - name: Get cached build
-        uses: actions/cache@v2
+        uses: actions/cache@v3
         with:
           path: |
             functions/lib
@@ -172,7 +172,7 @@ jobs:
           export_default_credentials: true
 
       - name: Get cached dependencies
-        uses: actions/cache@v2
+        uses: actions/cache@v3
         with:
           path: |
             node_modules
@@ -201,7 +201,7 @@ jobs:
           node-version: '16'
 
       - name: Get cached dependencies
-        uses: actions/cache@v2
+        uses: actions/cache@v3
         with:
           path: |
             node_modules

@@ -42,7 +42,7 @@ jobs:
           node-version: '16'
 
       - name: Get cached dependencies
-        uses: actions/cache@v2
+        uses: actions/cache@v3
         id: cache-node-modules
         with:
           path: |
@@ -56,7 +56,7 @@ jobs:
 
       - name: Get cached build
         id: cached-build
-        uses: actions/cache@v2
+        uses: actions/cache@v3
         with:
           path: |
             functions/lib
@@ -65,7 +65,7 @@ jobs:
           key: ${{ needs.cache-keys.outputs.build }}
 
       - name: Get .cache cache
-        uses: actions/cache@v2
+        uses: actions/cache@v3
         with:
           path: |
             .cache
@@ -91,7 +91,7 @@ jobs:
           node-version: '16'
 
       - name: Get cached dependencies
-        uses: actions/cache@v2
+        uses: actions/cache@v3
         with:
           path: |
             node_modules
@@ -115,7 +115,7 @@ jobs:
           node-version: '16'
 
       - name: Get cached dependencies
-        uses: actions/cache@v2
+        uses: actions/cache@v3
         with:
           path: |
             node_modules
@@ -144,7 +144,7 @@ jobs:
           node-version: '16'
 
       - name: Get cached build
-        uses: actions/cache@v2
+        uses: actions/cache@v3
         with:
           path: |
             functions/lib
@@ -200,7 +200,7 @@ jobs:
           node-version: '16'
 
       - name: Get cached build
-        uses: actions/cache@v2
+        uses: actions/cache@v3
         with:
           path: |
             functions/lib
@@ -217,7 +217,7 @@ jobs:
 
       # Dependencies are needed here to run `npm exec -- firbase` command
       - name: Get cached dependencies
-        uses: actions/cache@v2
+        uses: actions/cache@v3
         with:
           path: |
             node_modules
@@ -241,7 +241,7 @@ jobs:
           node-version: '16'
 
       - name: Get cached dependencies
-        uses: actions/cache@v2
+        uses: actions/cache@v3
         with:
           path: |
             node_modules
