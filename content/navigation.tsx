@@ -56,6 +56,10 @@ const navigation: IItem[] = [
         to: '/minfraud/release-notes/2022',
       },
       {
+        title: 'Sandbox Environment',
+        to: '/minfraud/sandbox-environment',
+      },
+      {
         title: 'Contribute',
         to: '/contribute',
       },
@@ -141,6 +145,10 @@ const navigation: IItem[] = [
           {
             title: 'Responses',
             to: '/geoip/docs/web-services/responses',
+          },
+          {
+            title: 'Sandbox Environment',
+            to: '/geoip/docs/web-services/sandbox-environment',
           },
           {
             title: 'Legacy Web Services',
