@@ -112,7 +112,7 @@
     "@types/lodash.isplainobject": "^4.0.6",
     "@types/prettier": "^2.7.0",
     "@typescript-eslint/eslint-plugin": "^5.36.1",
-    "@typescript-eslint/parser": "^5.36.1",
+    "@typescript-eslint/parser": "^5.36.2",
     "@wojtekmaj/enzyme-adapter-react-17": "^0.6.7",
     "babel-jest": "^29.0.2",
     "broken-link-checker": "^0.7.8",
