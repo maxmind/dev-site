@@ -5,7 +5,7 @@
   },
   "dependencies": {
     "@apidevtools/swagger-parser": "^10.0.3",
-    "@babel/core": "^7.18.13",
+    "@babel/core": "^7.19.0",
     "@babel/preset-env": "^7.19.0",
     "@babel/preset-react": "^7.16.7",
     "@babel/register": "^7.18.9",
