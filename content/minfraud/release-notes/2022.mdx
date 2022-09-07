@@ -7,6 +7,33 @@ title: minFraud Release Notes
 Subscribe to the [minFraud release notes RSS feed](/minfraud/release-notes/rss.xml).
 </Alert>
 
+<ReleaseNote date="2022-09-07" title="Geolocation Coordinate Bug Fix">
+We are aware of a bug in which databases and web services have been returning
+[geolocation location
+coordinates](https://support.maxmind.com/hc/en-us/articles/4414877149467-IP-Geolocation-Data#h_01FRRHZZP6RAYSNZTYE4MQ3MWY)
+of 0,0 for IPv6 addresses which are geolocated only down to the country-level.
+
+The following databases and web services are affected:
+
+ - GeoIP2 City database
+ - GeoIP2 Enterprise database
+ - GeoIP Legacy City web service
+ - GeoIP Legacy Omni/Insights web service
+ - GeoIP2 City Plus web service
+ - GeoIP2 Insights web service
+ - minFraud Insights web service
+ - minFraud Factors web service
+
+We have a fix, and it will be released later today.
+
+GeoIP2 database users should download this update when it becomes available.
+
+Web service users will see the corrected data as soon as the fix has been
+implemented.
+
+We apologize for any inconvenience this may have caused.
+</ReleaseNote>
+
 <ReleaseNote date="2022-05-31" title="Data changes to minFraud Legacy web services">
 
 In line with the [announcement on our blog from
