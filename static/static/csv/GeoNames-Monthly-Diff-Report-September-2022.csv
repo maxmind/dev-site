@@ -1,0 +1,82 @@
+diff_in,old_geoname_id,new_geoname_id,old_city_name,new_city_name,old_country_name,new_country_name,old_country_code,new_country_code,old_subdivision_codes,new_subdivision_codes
+city_name,6115065,6115065,Queen Charlotte,Daajing Giids,Canada,Canada,CA,CA,BC,BC
+city_name,2849446,2849446,Rehau-Pilgramsreuth,Rehau,Germany,Germany,DE,DE,BY,BY
+city_name,2896020,2896020,Ingelheim am Rhein,Ingelheim,Germany,Germany,DE,DE,RP,RP
+city_name,264384,264384,Ateni,Ateni Katakilou,Greece,Greece,GR,GR,"L, 82","L, 82"
+city_name,714772,714772,Tiszafured,Tiszafuered,Hungary,Hungary,HU,HU,JN,JN
+city_name,3047651,3047651,Nagykoros,Nagykoroes,Hungary,Hungary,HU,HU,PE,PE
+city_name,3055566,3055566,Balatonfured,Balatonfuered,Hungary,Hungary,HU,HU,VE,VE
+city_name,7468181,7468181,Minamiuonuma Shi,Minamiuonuma,Japan,Japan,JP,JP,15,15
+city_name,698740,698740,Odessa,Odesa,Ukraine,Ukraine,UA,UA,51,51
+country_name,3041760,3041760,Jomala,Jomala,Åland,Åland Islands,AX,AX,,
+country_name,3041806,3041806,Emkarby,Emkarby,Åland,Åland Islands,AX,AX,,
+country_name,3041732,3041732,Mariehamn,Mariehamn,Åland,Åland Islands,AX,AX,,
+country_name,661882,661882,,,Åland,Åland Islands,AX,AX,,
+country_name,647455,647455,Lumparland,Lumparland,Åland,Åland Islands,AX,AX,,
+country_name,648382,648382,Lemland,Lemland,Åland,Åland Islands,AX,AX,,
+country_name,3041785,3041785,Gottby,Gottby,Åland,Åland Islands,AX,AX,,
+country_name,653740,653740,Kastelholm,Kastelholm,Åland,Åland Islands,AX,AX,,
+geoname_id,2773022,2773021,Langegg,Langegg,Austria,Austria,AT,AT,3,3
+geoname_id,7923297,7670694,Nalitabari,Nalitabari,Bangladesh,Bangladesh,BD,BD,"H, 57","H, 57"
+geoname_id,2789663,2789662,Opstal,Opstal,Belgium,Belgium,BE,BE,"VLG, VAN","VLG, VAN"
+geoname_id,3455638,12108275,Santa Barbara,Santa Barbara,Brazil,Brazil,BR,BR,BA,BA
+geoname_id,3471909,3471910,Apucarana,Apucarana,Brazil,Brazil,BR,BR,PR,PR
+geoname_id,3389141,3389134,Santo Antonio,Santo Antonio,Brazil,Brazil,BR,BR,RN,RN
+geoname_id,6319439,6317824,Ourilandia do Norte,Ourilandia do Norte,Brazil,Brazil,BR,BR,PA,PA
+geoname_id,11970661,3450163,Santa Lucia,Santa Lucia,Brazil,Brazil,BR,BR,SP,SP
+geoname_id,3405806,6319378,Belterra,Belterra,Brazil,Brazil,BR,BR,PA,PA
+geoname_id,3390682,6321013,Remanso,Remanso,Brazil,Brazil,BR,BR,BA,BA
+geoname_id,3463120,6321383,Formoso,Formoso,Brazil,Brazil,BR,BR,MG,MG
+geoname_id,3395239,3395238,Massape,Massape,Brazil,Brazil,BR,BR,CE,CE
+geoname_id,3461871,3480536,Guararema,Guararema,Brazil,Brazil,BR,BR,SP,SP
+geoname_id,6318414,6319182,Sao Felix do Araguaia,Sao Felix do Araguaia,Brazil,Brazil,BR,BR,MT,MT
+geoname_id,3394372,3394380,Morros,Morros,Brazil,Brazil,BR,BR,MA,MA
+geoname_id,6321486,3460148,Januaria,Januaria,Brazil,Brazil,BR,BR,MG,MG
+geoname_id,3663973,6319316,Guajara,Guajara,Brazil,Brazil,BR,BR,AM,AM
+geoname_id,8604131,3470912,Bandeirantes,Bandeirantes,Brazil,Brazil,BR,BR,PR,PR
+geoname_id,12117513,6318347,Santo Antonio da Barra,Santo Antonio da Barra,Brazil,Brazil,BR,BR,GO,GO
+geoname_id,3471910,3471909,Apucarana,Apucarana,Brazil,Brazil,BR,BR,PR,PR
+geoname_id,3406085,3406088,Barro,Barro,Brazil,Brazil,BR,BR,CE,CE
+geoname_id,3667816,11885795,Sopetran,Sopetran,Colombia,Colombia,CO,CO,ANT,ANT
+geoname_id,3687908,8182762,Calima,Calima,Colombia,Colombia,CO,CO,VAC,VAC
+geoname_id,3621692,3621696,San Rafael,San Rafael,Costa Rica,Costa Rica,CR,CR,C,C
+geoname_id,3213252,3204232,Bicine,Bicine,Croatia,Croatia,HR,HR,15,15
+geoname_id,2623487,2623486,Bredsten,Bredsten,Denmark,Denmark,DK,DK,83,83
+geoname_id,2619552,2619551,Hvidbjerg,Hvidbjerg,Denmark,Denmark,DK,DK,82,82
+geoname_id,2613312,2613313,Snertinge,Snertinge,Denmark,Denmark,DK,DK,85,85
+geoname_id,2938721,2938720,Daufenbach,Daufenbach,Germany,Germany,DE,DE,RP,RP
+geoname_id,2807200,2807201,Wittstock,Wittstock,Germany,Germany,DE,DE,BB,BB
+geoname_id,2906333,2906334,Hennickendorf,Hennickendorf,Germany,Germany,DE,DE,BB,BB
+geoname_id,2865974,2865966,Neudorf,Neudorf,Germany,Germany,DE,DE,SN,SN
+geoname_id,3206785,2957733,Altendorf,Altendorf,Germany,Germany,DE,DE,BY,BY
+geoname_id,1443427,9921679,Bara,Bara,India,India,IN,IN,HP,HP
+geoname_id,1259843,10693047,Pethapur,Pethapur,India,India,IN,IN,GJ,GJ
+geoname_id,1277590,1277589,Bali,Bali,India,India,IN,IN,RJ,RJ
+geoname_id,6740445,1961945,Manyaran,Manyaran,Indonesia,Indonesia,ID,ID,JT,JT
+geoname_id,7055791,7376235,Banjar Tegal,Banjar Tegal,Indonesia,Indonesia,ID,ID,BA,BA
+geoname_id,1635542,7862103,Menggala,Menggala,Indonesia,Indonesia,ID,ID,LA,LA
+geoname_id,6763445,1963330,Kertosari,Kertosari,Indonesia,Indonesia,ID,ID,JT,JT
+geoname_id,6744638,6409571,Siwalan,Siwalan,Indonesia,Indonesia,ID,ID,JT,JT
+geoname_id,6830005,1972357,Manisrejo,Manisrejo,Indonesia,Indonesia,ID,ID,JI,JI
+geoname_id,8075937,1972044,Sumberejo,Sumberejo,Indonesia,Indonesia,ID,ID,JI,JI
+geoname_id,6594130,1642402,Jonggol,Jonggol,Indonesia,Indonesia,ID,ID,JB,JB
+geoname_id,6838211,1972692,Pesanggrahan,Pesanggrahan,Indonesia,Indonesia,ID,ID,JI,JI
+geoname_id,8411579,8394538,Omachi,Omachi,Japan,Japan,JP,JP,2,2
+geoname_id,11446398,11558467,Zaimokucho,Zaimokucho,Japan,Japan,JP,JP,1,1
+geoname_id,3984719,3984687,Santa Ana Viejo,Santa Ana Viejo,Mexico,Mexico,MX,MX,SON,SON
+geoname_id,10228306,1724936,Binondo,Binondo,Philippines,Philippines,PH,PH,0,0
+geoname_id,775653,775652,Boksyce,Boksyce,Poland,Poland,PL,PL,26,26
+geoname_id,962330,962331,Richmond,Richmond,South Africa,South Africa,ZA,ZA,KZN,KZN
+geoname_id,971017,971016,Ngqeleni,Ngqeleni,South Africa,South Africa,ZA,ZA,EC,EC
+geoname_id,1016670,1016672,Botshabelo,Botshabelo,South Africa,South Africa,ZA,ZA,FS,FS
+geoname_id,985130,985129,Kwelera,Kwelera,South Africa,South Africa,ZA,ZA,EC,EC
+geoname_id,992072,992071,Kareedouw,Kareedouw,South Africa,South Africa,ZA,ZA,EC,EC
+geoname_id,941812,941811,Waterfall,Waterfall,South Africa,South Africa,ZA,ZA,KZN,KZN
+geoname_id,971442,971441,New Brighton,New Brighton,South Africa,South Africa,ZA,ZA,EC,EC
+geoname_id,1012724,1012723,Cornelia,Cornelia,South Africa,South Africa,ZA,ZA,FS,FS
+geoname_id,1014747,1014744,Bultfontein,Bultfontein,South Africa,South Africa,ZA,ZA,FS,FS
+geoname_id,1003763,1003762,Frankfort,Frankfort,South Africa,South Africa,ZA,ZA,FS,FS
+geoname_id,2519566,2519565,Chaparral,Chaparral,Spain,Spain,ES,ES,"AN, J","AN, J"
+geoname_id,2727073,2727074,Alberga,Alberga,Sweden,Sweden,SE,SE,D,D
+geoname_id,1668432,1670526,Dahu,Dahu,Taiwan,Taiwan,TW,TW,NWT,NWT
+geoname_id,1620071,8318776,Ban Daeng,Ban Daeng,Thailand,Thailand,TH,TH,34,34
