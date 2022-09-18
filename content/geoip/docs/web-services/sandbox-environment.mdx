@@ -3,24 +3,16 @@ draft: false
 title: Testing GeoIP Web Services in the MaxMind Sandbox
 ---
 
-MaxMind maintains a Sandbox environment so that you can test your integration
-with the GeoIP web services. In order to set up a Sandbox account you must
-already have a paid account, and you must be an account administrator. [Learn
-how to set up a Sandbox account on our Knowledge
-Base.](https://support.maxmind.com/hc/en-us/articles/8604168846363)
+import SandboxIntro from '/content/_sandbox-intro.mdx';
+import SandboxLicenseKey from '/content/_sandbox-license-key.mdx';
+import SandboxLimits from '/content/_sandbox-limits.mdx';
+import SandboxLearnMore from '/content/_sandbox-learn-more.mdx';
 
-Once you have your Sandbox account set up and activated, follow the steps below.
+<SandboxIntro />
 
-## Generate a license key for your Sandbox account
+## Generate a License Key for the Sandbox
 
-In order to test the GeoIP web services in the Sandbox environment, you will
-need to generate a license key from your Sandbox account. [Learn how to generate a
-license key on our Knowledge
-Base.](https://support.maxmind.com/hc/en-us/articles/4407111582235-Generate-a-License-Key)
-The process is the same for your Sandbox account, but you must login to your
-Sandbox account [(direct
-link)](https://sandbox.maxmind.com/en/accounts/current/license-key) rather than
-your regular MaxMind account.
+<SandboxLicenseKey />
 
 ## Build your integration
 
@@ -60,11 +52,8 @@ The test data is displayed in JSON format, and would be the expected response
 for a query using the listed IP address. [Learn more about working with our
 GeoIP test data on our Knowledge Base.](https://support.maxmind.com/hc/en-us/articles/8610782760731-Sandbox-for-the-GeoIP-Web-Services#h_01GC7FJGRWC116ZCDPAJP09V9M)
 
-## Transaction Request Limits on the Sandbox
+<SandboxLimits />
 
-The Sandbox environment imposes volume limits on API requests to prevent abuse.
-The Sandbox should not be used to test the capacity of the production web service
-in high volume situations.
+## Learn more about the MaxMind Sandbox
 
-If you are running into the request limit and need help, please [reach out to our
-support team for assistance](https://dev.maxmind.com/minfraud/api-documentation/responses?lang=en#schema--response--warnings).
+<SandboxLearnMore />
