@@ -5,6 +5,7 @@ title: Testing minFraud in the MaxMind Sandbox
 
 import SandboxIntro from '/content/_sandbox-intro.mdx';
 import SandboxLicenseKey from '/content/_sandbox-license-key.mdx';
+import SandboxTestData from './_sandbox-mf-test-data.mdx';
 import SandboxLimits from '/content/_sandbox-limits.mdx';
 import SandboxLearnMore from '/content/_sandbox-learn-more.mdx';
 
@@ -37,40 +38,14 @@ authenticate your requests.
 
 ## Test data for the Sandbox minFraud service
 
-<Alert type="info">
-The Sandbox will return risk scores and risk data, but this data is not
-accurate and should not be used to evaluate the efficacy of the minFraud
-scoring engine, or for geolocation or IP intelligence. It is designed
-for testing purposes only.
-</Alert>
-
-You may only submit approved test data to the Sandbox version of the minFraud
-services. At this time, the only approved test transaction data are the three IP
-addresses listed below. You can submit transactions to Sandbox minFraud services
-with any of the following IP addresses as the [`/device/ip_address`](/minfraud/api-documentation/requests?lang=en#schema--request--device__ip_address)
-input. You should receive a minFraud response with risk scores and risk data.
-The IP risk score output ([`/ip_address/risk`](/minfraud/api-documentation/responses?lang=en#schema--response--ip-address__risk))
-will contain the expected response below.
-
-| Test IP Address Input | Test IP Risk Score Output |
-| --------------------- | ------------------------- |
-| `146.243.121.22`      | 75                        |
-| `152.216.7.110`       | 0.01                      |
-| `23.10.87.103`        | 0.01                      |
-
-You should not submit real transaction data to the Sandbox version of the
-minFraud services, but you can submit transactions with dummy data.
+<SandboxTestData />
 
 ## Test Legacy versions of minFraud using the Sandbox
 
-You can control which version of the minFraud services your Sandbox account
-simulates so that you can test your integrations with various versions. This may
-help with upgrading from minFraud Legacy.
+If you are a minFraud Legacy user, you can test Legacy versions of the minFraud
+services your Sandbox account.
 
-[Learn how to test with different versions of the minFraud service on our
-Knowledge Base.](https://support.maxmind.com/hc/en-us/articles/8609986461083#h_01GC79RT2Y24K8YGB7AH0EP9N9)
-
-[Learn more about minFraud Legacy.](/minfraud/minfraud-legacy?lang=en)
+[Learn how to test with different versions of the minFraud service.](/minfraud/minfraud-legacy?lang=en#select-the-proper-legacy-version-for-testing)
 
 <SandboxLimits />
 

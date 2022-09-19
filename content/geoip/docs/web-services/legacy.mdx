@@ -52,12 +52,21 @@ The IP address should be passed as a string like "44.55.66.77" or
 
 The URIs for each service are as follows:
 
-| Service                  | URI                                               |
-| ------------------------ | ------------------------------------------------- |
-| Country                  | https://geoip.maxmind.com/geoip/v1.0/country      |
-| City                     | https://geoip.maxmind.com/geoip/v1.0/city         |
-| City/ISP/Org             | https://geoip.maxmind.com/geoip/v1.0/city-isp-org |
-| Insights (formerly Omni) | https://geoip.maxmind.com/geoip/v1.0/insights     |
+| Service                  | URI                                                 |
+| ------------------------ | --------------------------------------------------- |
+| Country                  | `https://geoip.maxmind.com/geoip/v1.0/country`      |
+| City                     | `https://geoip.maxmind.com/geoip/v1.0/city`         |
+| City/ISP/Org             | `https://geoip.maxmind.com/geoip/v1.0/city-isp-org` |
+| Insights (formerly Omni) | `https://geoip.maxmind.com/geoip/v1.0/insights`     |
+
+You might also be using the original GeoIP Legacy URIs:
+
+| Service                  | URI                           |
+| ------------------------ | ----------------------------- |
+| Country                  | `https://geoip.maxmind.com/a` |
+| City                     | `https://geoip.maxmind.com/b` |
+| City/ISP/Org             | `https://geoip.maxmind.com/f` |
+| Insights (formerly Omni) | `https://geoip.maxmind.com/e` |
 
 The `geoip.maxmind.com` hostname automatically picks the data center
 geographically closest to you.
