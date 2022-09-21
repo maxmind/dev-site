@@ -2,6 +2,7 @@ name: Staging
 
 on:
   pull_request:
+  push:
 
 env:
   FIREBASE_CHANNEL_ID:  "pr-${{github.event.number}}"
