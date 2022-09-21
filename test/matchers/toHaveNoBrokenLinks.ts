@@ -1,51 +1,18 @@
 import { matcherHint } from 'jest-matcher-utils';
-import Table, { Header } from 'tty-table';
 
 const BR = '\n';
 
 const toHaveNoBrokenLinks = (brokenLinks: any[]): any => {
-  const header: Header[] = [
-    {
-      align: 'left',
-      // Required property for some reason...
-      formatter: (value) => value,
-      value: '',
-      width: 'auto',
-    },
-    {
-      align: 'left',
-      // Required property for some reason...
-      formatter: (value) => value,
-      value: '',
-      width: 75,
-    },
-  ];
 
   const formatedViolations = brokenLinks.map((brokenLink: any) => {
-    const table = Table(header, [
-      [
-        'Reason',
-        brokenLink.brokenReason,
-      ],
-      [
-        'Page',
-        brokenLink.base.original,
-      ],
-      [
-        'Broken Link Url',
-        brokenLink.url.original,
-      ],
-      [
-        'Broken Link Text',
-        brokenLink.html.text,
-      ],
-      [
-        'Broken Link Selector',
-        brokenLink.html.selector,
-      ],
-    ]);
+    const list =
+        `Reason: ${brokenLink.brokenReason} ${BR}
+        Page: ${brokenLink.base.original} ${BR}
+        Broken Link Url: ${brokenLink.url.original} ${BR}
+        Broken Link Text: ${brokenLink.html.text} ${BR}
+        Broken Link Selector: ${brokenLink.html.selector} ${BR}`
 
-    return table.render();
+    return list;
   });
 
   const pass = brokenLinks.length === 0;

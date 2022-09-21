@@ -159,7 +159,6 @@
     "stylelint-config-sass-guidelines": "^9.0.0",
     "stylelint-no-unsupported-browser-features": "^5.0.4",
     "stylelint-order": "^5.0.0",
-    "tty-table": "^4.1.5",
     "xml2js": "^0.4.23"
   },
   "engines": {
