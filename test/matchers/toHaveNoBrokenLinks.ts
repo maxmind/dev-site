@@ -1,5 +1,3 @@
-
-import chalk from 'chalk';
 import { matcherHint } from 'jest-matcher-utils';
 import Table, { Header } from 'tty-table';
 
@@ -47,7 +45,7 @@ const toHaveNoBrokenLinks = (brokenLinks: any[]): any => {
       ],
     ]);
 
-    return chalk.gray(table.render());
+    return table.render();
   });
 
   const pass = brokenLinks.length === 0;
@@ -59,7 +57,7 @@ const toHaveNoBrokenLinks = (brokenLinks: any[]): any => {
 
     return [
       matcherHint('.toHaveNoBrokenLinks'),
-      chalk.gray(`${BR}${formatedViolations.length} broken links:`),
+      `${BR}${formatedViolations.length} broken links:`,
       formatedViolations.join(BR),
     ].join(BR);
   };
