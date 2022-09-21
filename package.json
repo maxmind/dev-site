@@ -115,7 +115,6 @@
     "@wojtekmaj/enzyme-adapter-react-17": "^0.6.7",
     "babel-jest": "^29.0.3",
     "broken-link-checker": "^0.7.8",
-    "dedent": "^0.7.0",
     "enzyme": "^3.11.0",
     "eslint": "^8.23.1",
     "eslint-plugin-compat": "^4.0.2",
