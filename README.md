@@ -18,8 +18,7 @@
   [CSS Modules](https://github.com/css-modules/css-modules) +
   [MDX](https://mdxjs.com/)
 - **Linting**: [ESLint](https://eslint.org/) +
-  [StyleLint](https://stylelint.io/) +
-  [RemarkLint](https://github.com/remarkjs/remark-lint)
+  [StyleLint](https://stylelint.io/)
 - **Hosting**: [Firebase](https://firebase.google.com/docs/hosting)
 
 ## Usage
