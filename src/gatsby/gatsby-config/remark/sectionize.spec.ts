@@ -1,23 +1,22 @@
-import dedent from 'dedent';
 import remark from 'remark';
 import html from 'remark-html';
 
 import sectionize from './sectionize';
 
-const content = dedent`
-  # Heading 1
-  ## Heading 2
-  Additional text.
+const content =
+`# Heading 1
+## Heading 2
+Additional text.
 
-  Additional text.
+Additional text.
 
-  ### Heading 3
-  Additional text.
+### Heading 3
+Additional text.
 
-  Additional text.
+Additional text.
 
-  ## Heading 2
-  Additional text.
+## Heading 2
+Additional text.
 `.trim();
 
 describe('sectionize', () => {
