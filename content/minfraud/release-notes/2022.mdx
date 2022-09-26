@@ -7,6 +7,35 @@ title: minFraud Release Notes
 Subscribe to the [minFraud release notes RSS feed](/minfraud/release-notes/rss.xml).
 </Alert>
 
+<ReleaseNote date="2022-09-26" title="Changes to Registered Country data">
+We have made some changes to how we determine the registered country associated
+with an IP address. We estimate that this change will affect around 1% of IP
+addresses with a registered country value. The following databases and web
+services will be affected:
+
+- GeoIP2 Country database
+- GeoIP2 City database
+- GeoIP2 Enterprise database
+- GeoLite2 Country database
+- GeoLite2 City database
+- GeoIP2 Country web service
+- GeoIP2 City Plus web service
+- GeoIP2 Insights web service
+- GeoLite2 Country web service
+- GeoLite2 City web service
+- minFraud Insights web service
+- minFraud Factors web service
+
+In some cases where we are no longer confident in the registered country for an
+IP, it will be removed. In other cases, the value may be changed.
+
+[You can learn more about the `/registered_country` output in the API schema for
+GeoIP2 web services.](/geoip/docs/web-services/responses?lang=en#schema--response--registered-country)
+
+[You can learn more about the difference between registered country and the IP
+geolocation on our Knowledge Base.](https://support.maxmind.com/hc/en-us/articles/4414762983195-Country-level-and-City-level-Geolocation)
+</ReleaseNote>
+
 <ReleaseNote date="2022-09-14" title="Change to Time Zone Name for Ukraine">
 The time zone name for Kyiv, Ukraine, which covers most of the country,
 has been updated.
