@@ -1,5 +1,5 @@
 /* eslint-disable filenames/match-regex */
 module.exports = {
-  parser: 'markdown',
+  parser: 'mdx',
   proseWrap: 'always',
 };
