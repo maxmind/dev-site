@@ -33,13 +33,14 @@ Update Releases’ is selected.
 <ReleaseNote date="2020-12-10" title="GeoNames Monthly Diff Report December 2020">
 [GeoNames Monthly Diff Report (December 2020)](/static/csv/GeoNames-Monthly-Diff-Report-December-2020.csv)
 
-GeoIP2 and GeoLite2 databases incorporate [GeoNames geographical
-data](https://www.geonames.org/), which is made available under the [Creative
-Commons Attribution 4.0 License](https://creativecommons.org/licenses/by/4.0/).
+GeoIP2 and GeoLite2 databases incorporate
+[GeoNames geographical data](https://www.geonames.org/), which is made available
+under the
+[Creative Commons Attribution 4.0 License](https://creativecommons.org/licenses/by/4.0/).
 
 Monthly updates to GeoNames data are incorporated into our databases as we
-refresh them. Above you will find a CSV report of these changes for the month
-of December as they relate to the following fields:
+refresh them. Above you will find a CSV report of these changes for the month of
+December as they relate to the following fields:
 
 - `geoname_id`
 - `country_name`
@@ -54,18 +55,20 @@ differ for the field defined in the ‘diff_in’ column.
 \* We have updated the names of several countries to their short names (e.g.
 `Republic of Lithuania` to `Lithuania`). These changes will show up in this
 month's GeoIP2 builds.
+
 </ReleaseNote>
 
 <ReleaseNote date="2020-11-10" title="GeoNames Monthly Diff Report November 2020">
 [GeoNames Monthly Diff Report (November 2020)](/static/csv/GeoNames-Monthly-Diff-Report-November-2020.csv)
 
-GeoIP2 and GeoLite2 databases incorporate [GeoNames geographical
-data](https://www.geonames.org/), which is made available under the [Creative
-Commons Attribution 4.0 License](https://creativecommons.org/licenses/by/4.0/).
+GeoIP2 and GeoLite2 databases incorporate
+[GeoNames geographical data](https://www.geonames.org/), which is made available
+under the
+[Creative Commons Attribution 4.0 License](https://creativecommons.org/licenses/by/4.0/).
 
 Monthly updates to GeoNames data are incorporated into our databases as we
-refresh them. Above you will find a CSV report of these changes for the month
-of November as they relate to the following fields:
+refresh them. Above you will find a CSV report of these changes for the month of
+November as they relate to the following fields:
 
 - `geoname_id`
 - `country_name`
@@ -76,6 +79,7 @@ of November as they relate to the following fields:
 
 Note that the values for the 'old' and ‘new’ columns for a given field only
 differ for the field defined in the ‘diff_in’ column.
+
 </ReleaseNote>
 
 <ReleaseNote date="2020-10-20" title="New Data Point is_residential_proxy Released for GeoIP2 Anonymous IP">
@@ -85,18 +89,18 @@ Subscribers can now identify whether an IP address is likely a [residential
 proxy](https://en.wikipedia.org/wiki/Proxy_server#Residential_proxy):
 
 - is_residential \_proxy – 1 if the IP address is on a suspected anonymizing
-network and belongs to a residential ISP. Blank if not.
+  network and belongs to a residential ISP. Blank if not.
 
-**CSV file users:**
-A new data column will be added to the end of the following files:
+**CSV file users:** A new data column will be added to the end of the following
+files:
 
 - GeoIP2-Anonymous-IP-Blocks-IPv4.csv
 - GeoIP2-Anonymous-IP-Blocks-IPv6.csv
 
-**Binary MMDB file users:**
-You will need to update your [MMDB
-reader](/geoip/geolocate-an-ip/databases/#official-maxmind-api-clients)
-to support look-ups containing the new output when it is released.
+**Binary MMDB file users:** You will need to update your
+[MMDB reader](/geoip/geolocate-an-ip/databases/#official-maxmind-api-clients) to
+support look-ups containing the new output when it is released.
+
 </ReleaseNote>
 
 <ReleaseNote date="2020-10-20" title="New Output is_residential_proxy Released for GeoIP2 Insights Web Service, minFraud Insights, and minFraud Factors">
@@ -108,13 +112,14 @@ now see whether an IP address is likely a [residential
 proxy](https://en.wikipedia.org/wiki/Proxy_server#Residential_proxy):
 
 - /traits/is_residential_proxy – This is true if the IP address is on a
-suspected anonymizing network and belongs to a residential ISP. Otherwise,
-the key is not included in the traits object.
+  suspected anonymizing network and belongs to a residential ISP. Otherwise, the
+  key is not included in the traits object.
 
-Our [client
-APIs](/minfraud/evaluate-a-transaction/#links-to-maxmind-client-apis) have been
-updated to support these outputs so may need to refresh yours if you are not
-interfacing directly with our REST API.
+Our
+[client APIs](/minfraud/evaluate-a-transaction/#links-to-maxmind-client-apis)
+have been updated to support these outputs so may need to refresh yours if you
+are not interfacing directly with our REST API.
+
 </ReleaseNote>
 
 <ReleaseNote date="2020-10-19" title="Residential proxy flag deployment">
@@ -126,17 +131,17 @@ happen tomorrow (October 20, 2020). We expect the database update will go out
 around 12:30pm UTC.
 </ReleaseNote>
 
-
 <ReleaseNote date="2020-10-12" title="GeoNames Monthly Diff Report October 2020">
 [GeoNames Monthly Diff Report (October 2020)](/static/csv/GeoNames-Monthly-Diff-Report-October-2020.csv)
 
-GeoIP2 and GeoLite2 databases incorporate [GeoNames geographical
-data](https://www.geonames.org/), which is made available under the [Creative
-Commons Attribution 4.0 License](https://creativecommons.org/licenses/by/4.0/).
+GeoIP2 and GeoLite2 databases incorporate
+[GeoNames geographical data](https://www.geonames.org/), which is made available
+under the
+[Creative Commons Attribution 4.0 License](https://creativecommons.org/licenses/by/4.0/).
 
 Monthly updates to GeoNames data are incorporated into our databases as we
-refresh them. Above you will find a CSV report of these changes for the month
-of October as they relate to the following fields:
+refresh them. Above you will find a CSV report of these changes for the month of
+October as they relate to the following fields:
 
 - `geoname_id`
 - `country_name`
@@ -147,6 +152,7 @@ of October as they relate to the following fields:
 
 Note that the values for the 'old' and ‘new’ columns for a given field only
 differ for the field defined in the ‘diff_in’ column.
+
 </ReleaseNote>
 
 <ReleaseNote date="2020-09-17" title="Flagging more networks as 'corporate'">
@@ -169,13 +175,14 @@ Guide](https://support.maxmind.com/hc/en-us/articles/4407107969947-Manage-Multip
 <ReleaseNote date="2020-09-10" title="GeoNames Monthly Diff Report September 2020">
 [GeoNames Monthly Diff Report (September 2020)](/static/csv/GeoNames-Monthly-Diff-Report-September-2020.csv)
 
-GeoIP2 and GeoLite2 databases incorporate [GeoNames geographical
-data](https://www.geonames.org/), which is made available under the [Creative
-Commons Attribution 4.0 License](https://creativecommons.org/licenses/by/4.0/).
+GeoIP2 and GeoLite2 databases incorporate
+[GeoNames geographical data](https://www.geonames.org/), which is made available
+under the
+[Creative Commons Attribution 4.0 License](https://creativecommons.org/licenses/by/4.0/).
 
 Monthly updates to GeoNames data are incorporated into our databases as we
-refresh them. Below you will find a CSV report of these changes for the month
-of September as they relate to the following fields:
+refresh them. Below you will find a CSV report of these changes for the month of
+September as they relate to the following fields:
 
 - `geoname_id`
 - `country_name`
@@ -186,6 +193,7 @@ of September as they relate to the following fields:
 
 Note that the values for the 'old' and ‘new’ columns for a given field only
 differ for the field defined in the ‘diff_in’ column.
+
 </ReleaseNote>
 
 <ReleaseNote date="2020-09-01" title="Decommissioned GeoIP2 JavaScript API Domain">
@@ -209,13 +217,14 @@ on a fix and plan to release corrected GeoIP databases tomorrow (August 14,
 <ReleaseNote date="2020-08-10" title="GeoNames Monthly Diff Report August 2020">
 [GeoNames Monthly Diff Report (August 2020)](/static/csv/GeoNames-Monthly-Diff-Report-August-2020.csv)
 
-GeoIP2 and GeoLite2 databases incorporate [GeoNames geographical
-data](https://www.geonames.org/), which is made available under the [Creative
-Commons Attribution 4.0 License](https://creativecommons.org/licenses/by/4.0/).
+GeoIP2 and GeoLite2 databases incorporate
+[GeoNames geographical data](https://www.geonames.org/), which is made available
+under the
+[Creative Commons Attribution 4.0 License](https://creativecommons.org/licenses/by/4.0/).
 
 Monthly updates to GeoNames data are incorporated into our databases as we
-refresh them. Below you will find a CSV report of these changes for the month
-of August as they relate to the following fields:
+refresh them. Below you will find a CSV report of these changes for the month of
+August as they relate to the following fields:
 
 - `geoname_id`
 - `country_name`
@@ -229,21 +238,23 @@ differ for the field defined in the ‘diff_in’ column.
 
 \*GeoNames is changing the time zone for some larger cities in Northern Vietnam
 to `Asia/Bangkok` instead of `Asia/Ho_Chi_Minh`, though the UTC offset remains
-the same. For more info see [this
-thread](https://groups.google.com/g/geonames/c/_xNFdHAy07o/m/cW8VWFjGAAAJ).
+the same. For more info see
+[this thread](https://groups.google.com/g/geonames/c/_xNFdHAy07o/m/cW8VWFjGAAAJ).
 These changes will show up in this month's GeoIP2 builds.
+
 </ReleaseNote>
 
 <ReleaseNote date="2020-07-09" title="GeoNames Monthly Diff Report July 2020">
 [GeoNames Monthly Diff Report (July 2020)](/static/csv/GeoNames-Monthly-Diff-Report-July-2020.csv)
 
-GeoIP2 and GeoLite2 databases incorporate [GeoNames geographical
-data](https://www.geonames.org/), which is made available under the [Creative
-Commons Attribution 4.0 License](https://creativecommons.org/licenses/by/4.0/).
+GeoIP2 and GeoLite2 databases incorporate
+[GeoNames geographical data](https://www.geonames.org/), which is made available
+under the
+[Creative Commons Attribution 4.0 License](https://creativecommons.org/licenses/by/4.0/).
 
 Monthly updates to GeoNames data are incorporated into our databases as we
-refresh them. Above you will find a CSV report of upcoming changes for the
-month of July as they relate to the following fields:
+refresh them. Above you will find a CSV report of upcoming changes for the month
+of July as they relate to the following fields:
 
 - `geoname_id`
 - `country_name`
@@ -254,6 +265,7 @@ month of July as they relate to the following fields:
 
 Note that the values for the 'old' and ‘new’ columns for a given field only
 differ for the field defined in the ‘diff_in’ column.
+
 </ReleaseNote>
 
 <ReleaseNote date="2020-06-22" title="FIDO2 Support for Two-Factor Authentication">
@@ -267,13 +279,14 @@ information](https://support.maxmind.com/hc/en-us/articles/1260803946470-Set-Up-
 <ReleaseNote date="2020-06-12" title="GeoNames Monthly Diff Report June 2020">
 [GeoNames Monthly Diff Report (June 2020)](/static/csv/GeoNames-Monthly-Diff-Report-June-2020.csv)
 
-GeoIP2 and GeoLite2 databases incorporate [GeoNames geographical
-data](https://www.geonames.org/), which is made available under the [Creative
-Commons Attribution 4.0 License](https://creativecommons.org/licenses/by/4.0/).
+GeoIP2 and GeoLite2 databases incorporate
+[GeoNames geographical data](https://www.geonames.org/), which is made available
+under the
+[Creative Commons Attribution 4.0 License](https://creativecommons.org/licenses/by/4.0/).
 
 Monthly updates to GeoNames data are incorporated into our databases as we
-refresh them. Above you will find a CSV report of upcoming changes for the
-month of June as they relate to the following fields:
+refresh them. Above you will find a CSV report of upcoming changes for the month
+of June as they relate to the following fields:
 
 - `geoname_id`
 - `country_name`
@@ -284,18 +297,20 @@ month of June as they relate to the following fields:
 
 Note that the values for the 'old' and ‘new’ columns for a given field only
 differ for the field defined in the ‘diff_in’ column.
+
 </ReleaseNote>
 
 <ReleaseNote date="2020-05-11" title="GeoNames Monthly Diff Report May 2020">
 [GeoNames Monthly Diff Report (May 2020)](/static/csv/GeoNames-Monthly-Diff-Report-May-2020.csv)
 
-GeoIP2 and GeoLite2 databases incorporate [GeoNames geographical
-data](https://www.geonames.org/), which is made available under the [Creative
-Commons Attribution 4.0 License](https://creativecommons.org/licenses/by/4.0/).
+GeoIP2 and GeoLite2 databases incorporate
+[GeoNames geographical data](https://www.geonames.org/), which is made available
+under the
+[Creative Commons Attribution 4.0 License](https://creativecommons.org/licenses/by/4.0/).
 
 Monthly updates to GeoNames data are incorporated into our databases as we
-refresh them. Above you will find a CSV report of upcoming changes for the
-month of May as they relate to the following fields:
+refresh them. Above you will find a CSV report of upcoming changes for the month
+of May as they relate to the following fields:
 
 - `geoname_id`
 - `country_name`
@@ -306,6 +321,7 @@ month of May as they relate to the following fields:
 
 Note that the values for the 'old' and ‘new’ columns for a given field only
 differ for the field defined in the ‘diff_in’ column.
+
 </ReleaseNote>
 
 <ReleaseNote date="2020-05-05" title="Resolving to borough of Queens for Queens, NY, neighborhoods">
@@ -316,6 +332,7 @@ Queens starting May 18, 2020.
 
 For more granular place identification (such as neighborhood), we recommend
 using the postal code where provided.
+
 </ReleaseNote>
 
 <ReleaseNote date="2020-05-01" title="GeoIP Legacy Downloadable Database Retirement">
@@ -344,8 +361,8 @@ data](https://www.geonames.org/), which is made available under the [Creative
 Commons Attribution 4.0 License](https://creativecommons.org/licenses/by/4.0/).
 
 Monthly updates to GeoNames data are incorporated into our databases as we
-refresh them. Below you will find a CSV report of these changes for the month
-of April as they relate to the following fields:
+refresh them. Below you will find a CSV report of these changes for the month of
+April as they relate to the following fields:
 
 - `geoname_id`
 - `country_name`
@@ -406,4 +423,3 @@ as `Corporate` in the [GeoIP2 Connection Type
 database](https://www.maxmind.com/en/geoip2-connection-type-database).
 Previously these types of networks were more often flagged as `Cable/DSL`.
 </ReleaseNote>
-

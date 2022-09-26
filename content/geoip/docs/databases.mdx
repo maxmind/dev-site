@@ -76,20 +76,22 @@ import {
       icon={ASNIcon}
       to="/geoip/docs/databases/asn"
     />
+
   </LinkGroup>
 </LinkGroupContainer>
 
 ## API Clients
+
 ### Official API Clients
 
 | Language or Framework | Package Repository                                                                                                            | Documentation                                              | Version Control                                    |
 | --------------------- | ----------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------- | -------------------------------------------------- |
 | .NET (C#)             | [NuGet](https://www.nuget.org/packages/MaxMind.GeoIP2/)                                                                       | [GitHub Pages](https://maxmind.github.io/GeoIP2-dotnet/)   | [GitHub](https://github.com/maxmind/GeoIP2-dotnet) |
-| Apache                | N/A                                                                                                                           | [GitHub Pages](https://maxmind.github.io/mod_maxminddb/)    | [GitHub](https://github.com/maxmind/mod_maxminddb) |
-| C                     | N/A                                                                                                                           | [GitHub Pages](https://maxmind.github.io/libmaxminddb/)     | [GitHub](https://github.com/maxmind/libmaxminddb)  |
+| Apache                | N/A                                                                                                                           | [GitHub Pages](https://maxmind.github.io/mod_maxminddb/)   | [GitHub](https://github.com/maxmind/mod_maxminddb) |
+| C                     | N/A                                                                                                                           | [GitHub Pages](https://maxmind.github.io/libmaxminddb/)    | [GitHub](https://github.com/maxmind/libmaxminddb)  |
 | Java                  | [Maven Central Repository](https://search.maven.org/#search%7Cga%7C1%7Cg%3A%22com.maxmind.geoip2%22%20AND%20a%3A%22geoip2%22) | [GitHub Pages](https://maxmind.github.io/GeoIP2-java/)     | [GitHub](https://github.com/maxmind/GeoIP2-java)   |
 | Node.js               | [NPM](https://npmjs.com/package/@maxmind/geoip2-node)                                                                         | [GitHub Pages](https://maxmind.github.io/GeoIP2-node/)     | [GitHub](https://github.com/maxmind/GeoIP2-node)   |
-| Perl *(deprecated)*   | [CPAN](https://metacpan.org/release/GeoIP2)                                                                                   | [MetaCPAN](https://metacpan.org/release/GeoIP2)            | [GitHub](https://github.com/maxmind/GeoIP2-perl)   |
+| Perl _(deprecated)_   | [CPAN](https://metacpan.org/release/GeoIP2)                                                                                   | [MetaCPAN](https://metacpan.org/release/GeoIP2)            | [GitHub](https://github.com/maxmind/GeoIP2-perl)   |
 | PHP                   | [Packagist](https://packagist.org/packages/geoip2/geoip2)                                                                     | [GitHub Pages](https://maxmind.github.io/GeoIP2-php/)      | [GitHub](https://github.com/maxmind/GeoIP2-php)    |
 | Python                | [PyPI](https://pypi.python.org/pypi/geoip2)                                                                                   | [Read the Docs](https://geoip2.readthedocs.org/en/latest/) | [GitHub](https://github.com/maxmind/GeoIP2-python) |
 | Ruby                  | [RubyGems](https://rubygems.org/gems/maxmind-geoip2)                                                                          | [RubyDoc](https://www.rubydoc.info/gems/maxmind-geoip2)    | [GitHub](https://github.com/maxmind/GeoIP2-ruby)   |
@@ -99,47 +101,49 @@ import {
 <Alert type="warning">
   **Use at your own risk.**
 
-  MaxMind does ***not*** offer support for these integrations. Please contact
-  the integrator for assistance.
+MaxMind does **_not_** offer support for these integrations. Please contact the
+integrator for assistance.
+
 </Alert>
 
-| Language or Software | API Name                | Package Repository                                                    | Documentation                                                                      | Version Control                                              |
-| -------------------- | ----------------------- | --------------------------------------------------------------------- | ---------------------------------------------------------------------------------- | ------------------------------------------------------------ |
-| C++                  | GeoLite2++              |                                                                       | [Usage](https://www.ccoderun.ca/GeoLite2++/api/usage.html)                         |                                                              |
-| Clojure              | maximator               | [Clojars](https://clojars.org/com.oscaro/maximator)                   | [README](https://github.com/oscaro/maximator/blob/master/README.md)                | [GitHub](https://github.com/oscaro/maximator)                |
-| Common Lisp          | CL-MAXMINDDB            |                                                                       | [README](https://github.com/turtle-bazon/cl-maxminddb/blob/hg/README.md)           | [GitHub](https://github.com/turtle-bazon/cl-maxminddb)       |
-| Crystal              | GeoIP2.cr (C extension) |                                                                       | [README](https://github.com/delef/geoip2.cr/blob/master/README.md)                 | [GitHub](https://github.com/delef/geoip2.cr)                 |
-| Crystal              | MaxMindDB.cr            |                                                                       | [README](https://github.com/delef/maxminddb.cr/blob/master/README.md)              | [GitHub](https://github.com/delef/maxminddb.cr)              |
-| D                    | dmaxminddb              | [DUB](https://code.dlang.org/packages/dmaxminddb)                     | [DUB](https://code.dlang.org/packages/dmaxminddb)                                  | [GitHub](https://github.com/maxpoulin64/dmaxminddb)          |
-| Dart                 | maxminddb               | [pub.dev](https://pub.dev/packages/maxminddb)                         | [pub.dev](https://pub.dev/documentation/maxminddb/latest/)                         | [GitHub](https://github.com/fischerscode/dart-maxmindDB)     |
-| Delphi               | MMDB Reader             |                                                                       | [README.md](https://github.com/optinsoft/MMDBReader/blob/master/README.md)         | [GitHub](https://github.com/optinsoft/MMDBReader)            |
-| Elixir               | Geolix                  | [Hex](https://hex.pm/packages/geolix)                                 | [README](https://github.com/mneudert/geolix/blob/master/README.md)                 | [GitHub](https://github.com/mneudert/geolix)                 |
-| Erlang               | ego                     |                                                                       | [README](https://github.com/jflatow/ego/blob/master/README)                        | [GitHub](https://github.com/jflatow/ego/tree/master)         |
-| Erlang               | geodata2                |                                                                       | [README](https://github.com/brigadier/geodata2/blob/master/README.md)              | [GitHub](https://github.com/brigadier/geodata2)              |
-| Erlang               | locus                   | [Hex](https://hex.pm/packages/locus)                                  | [HexDocs](https://hexdocs.pm/locus/)                                               | [GitHub](https://github.com/g-andrade/locus)                 |
-| Go                   | oschwald/geoip2-golang  |                                                                       | [pkg.go.dev](https://pkg.go.dev/github.com/oschwald/geoip2-golang?tab=doc)         | [GitHub](https://github.com/oschwald/geoip2-golang)          |
-| Go                   | IncSW/geoip2            |                                                                       | [pkg.go.dev](https://pkg.go.dev/github.com/IncSW/geoip2?tab=doc)                   | [GitHub](https://github.com/IncSW/geoip2)                    |
-| Haskell              | geoip2                  | [Hackage](https://hackage.haskell.org/package/geoip2)                 | [README](https://github.com/ondrap/geoip2/blob/master/README.md)                   | [GitHub](https://github.com/ondrap/geoip2)                   |
-| Lua                  | mmdblua                 |                                                                       | [README](https://github.com/daurnimator/mmdblua/blob/master/README.md)             | [GitHub](https://github.com/daurnimator/mmdblua)             |
-| Lua (C extension)    | lua-maxminddb           |                                                                       |                                                                                    | [GitHub](https://github.com/fabled/lua-maxminddb)            |
-| Lua (C extension)    | lua-resty-maxminddb     |                                                                       | [README](https://github.com/anjia0532/lua-resty-maxminddb/blob/master/README.md)   | [GitHub](https://github.com/anjia0532/lua-resty-maxminddb)   |
-| OCaml                | ocaml-maxminddb         | [OPAM](https://opam.ocaml.org/packages/maxminddb/)                    | [README](https://github.com/fxfactorial/ocaml-maxminddb/blob/master/README.md)     | [GitHub](https://github.com/fxfactorial/ocaml-maxminddb)     |
-| Perl                 | IP::Geolocation::MMDB   | [CPAN](https://metacpan.org/pod/IP::Geolocation::MMDB)                | [MetaCPAN](https://metacpan.org/pod/IP::Geolocation::MMDB)                         | [GitLab](https://gitlab.com/voegelas/ip-geolocation-mmdb/-/tree/main) |
-| PHP                  | librarymarket/maxmind-db-reader | [Packagist](https://packagist.org/packages/librarymarket/maxmind-db-reader) | [README](https://github.com/librarymarket/maxmind-db-reader/blob/1.0.x/README.md) | [GitHub](https://github.com/librarymarket/maxmind-db-reader) |
-| R                    | rgeolocate              | [CRAN](https://cran.r-project.org/web/packages/rgeolocate/index.html) | [README](https://github.com/Ironholds/rgeolocate/blob/master/README.md)            | [GitHub](https://github.com/Ironholds/rgeolocate)            |
-| Racket               | geoip                   |                                                                       | [Racket Documentation](https://docs.racket-lang.org/geoip/index.html)              | [GitHub](https://github.com/Bogdanp/racket-geoip)            |
-| Raku                 | GeoIP2                  |                                                                       | [README](https://github.com/bbkr/GeoIP2/blob/master/README.md)                     | [GitHub](https://github.com/bbkr/GeoIP2)                     |
-| Rust                 | maxminddb               | [Cargo](https://crates.io/crates/maxminddb)                           | [API docs](https://oschwald.github.io/maxminddb-rust/maxminddb/struct.Reader.html) | [GitHub](https://github.com/oschwald/maxminddb-rust)         |
-| Scala                | maxmind-geoip2-scala    |                                                                       | [README](https://github.com/Sanoma-CDA/maxmind-geoip2-scala/blob/master/README.md) | [GitHub](https://github.com/Sanoma-CDA/maxmind-geoip2-scala) |
-| Swift (C extension)  | MMDB-Swift              | [MMDB-Swift](https://cocoapods.org/pods/MMDB-Swift)                   | [CocoaPods](https://cocoapods.org/pods/MMDB-Swift)                                 | [GitHub](https://github.com/lexrus/MMDB-Swift)               |
+| Language or Software | API Name                        | Package Repository                                                          | Documentation                                                                      | Version Control                                                       |
+| -------------------- | ------------------------------- | --------------------------------------------------------------------------- | ---------------------------------------------------------------------------------- | --------------------------------------------------------------------- |
+| C++                  | GeoLite2++                      |                                                                             | [Usage](https://www.ccoderun.ca/GeoLite2++/api/usage.html)                         |                                                                       |
+| Clojure              | maximator                       | [Clojars](https://clojars.org/com.oscaro/maximator)                         | [README](https://github.com/oscaro/maximator/blob/master/README.md)                | [GitHub](https://github.com/oscaro/maximator)                         |
+| Common Lisp          | CL-MAXMINDDB                    |                                                                             | [README](https://github.com/turtle-bazon/cl-maxminddb/blob/hg/README.md)           | [GitHub](https://github.com/turtle-bazon/cl-maxminddb)                |
+| Crystal              | GeoIP2.cr (C extension)         |                                                                             | [README](https://github.com/delef/geoip2.cr/blob/master/README.md)                 | [GitHub](https://github.com/delef/geoip2.cr)                          |
+| Crystal              | MaxMindDB.cr                    |                                                                             | [README](https://github.com/delef/maxminddb.cr/blob/master/README.md)              | [GitHub](https://github.com/delef/maxminddb.cr)                       |
+| D                    | dmaxminddb                      | [DUB](https://code.dlang.org/packages/dmaxminddb)                           | [DUB](https://code.dlang.org/packages/dmaxminddb)                                  | [GitHub](https://github.com/maxpoulin64/dmaxminddb)                   |
+| Dart                 | maxminddb                       | [pub.dev](https://pub.dev/packages/maxminddb)                               | [pub.dev](https://pub.dev/documentation/maxminddb/latest/)                         | [GitHub](https://github.com/fischerscode/dart-maxmindDB)              |
+| Delphi               | MMDB Reader                     |                                                                             | [README.md](https://github.com/optinsoft/MMDBReader/blob/master/README.md)         | [GitHub](https://github.com/optinsoft/MMDBReader)                     |
+| Elixir               | Geolix                          | [Hex](https://hex.pm/packages/geolix)                                       | [README](https://github.com/mneudert/geolix/blob/master/README.md)                 | [GitHub](https://github.com/mneudert/geolix)                          |
+| Erlang               | ego                             |                                                                             | [README](https://github.com/jflatow/ego/blob/master/README)                        | [GitHub](https://github.com/jflatow/ego/tree/master)                  |
+| Erlang               | geodata2                        |                                                                             | [README](https://github.com/brigadier/geodata2/blob/master/README.md)              | [GitHub](https://github.com/brigadier/geodata2)                       |
+| Erlang               | locus                           | [Hex](https://hex.pm/packages/locus)                                        | [HexDocs](https://hexdocs.pm/locus/)                                               | [GitHub](https://github.com/g-andrade/locus)                          |
+| Go                   | oschwald/geoip2-golang          |                                                                             | [pkg.go.dev](https://pkg.go.dev/github.com/oschwald/geoip2-golang?tab=doc)         | [GitHub](https://github.com/oschwald/geoip2-golang)                   |
+| Go                   | IncSW/geoip2                    |                                                                             | [pkg.go.dev](https://pkg.go.dev/github.com/IncSW/geoip2?tab=doc)                   | [GitHub](https://github.com/IncSW/geoip2)                             |
+| Haskell              | geoip2                          | [Hackage](https://hackage.haskell.org/package/geoip2)                       | [README](https://github.com/ondrap/geoip2/blob/master/README.md)                   | [GitHub](https://github.com/ondrap/geoip2)                            |
+| Lua                  | mmdblua                         |                                                                             | [README](https://github.com/daurnimator/mmdblua/blob/master/README.md)             | [GitHub](https://github.com/daurnimator/mmdblua)                      |
+| Lua (C extension)    | lua-maxminddb                   |                                                                             |                                                                                    | [GitHub](https://github.com/fabled/lua-maxminddb)                     |
+| Lua (C extension)    | lua-resty-maxminddb             |                                                                             | [README](https://github.com/anjia0532/lua-resty-maxminddb/blob/master/README.md)   | [GitHub](https://github.com/anjia0532/lua-resty-maxminddb)            |
+| OCaml                | ocaml-maxminddb                 | [OPAM](https://opam.ocaml.org/packages/maxminddb/)                          | [README](https://github.com/fxfactorial/ocaml-maxminddb/blob/master/README.md)     | [GitHub](https://github.com/fxfactorial/ocaml-maxminddb)              |
+| Perl                 | IP::Geolocation::MMDB           | [CPAN](https://metacpan.org/pod/IP::Geolocation::MMDB)                      | [MetaCPAN](https://metacpan.org/pod/IP::Geolocation::MMDB)                         | [GitLab](https://gitlab.com/voegelas/ip-geolocation-mmdb/-/tree/main) |
+| PHP                  | librarymarket/maxmind-db-reader | [Packagist](https://packagist.org/packages/librarymarket/maxmind-db-reader) | [README](https://github.com/librarymarket/maxmind-db-reader/blob/1.0.x/README.md)  | [GitHub](https://github.com/librarymarket/maxmind-db-reader)          |
+| R                    | rgeolocate                      | [CRAN](https://cran.r-project.org/web/packages/rgeolocate/index.html)       | [README](https://github.com/Ironholds/rgeolocate/blob/master/README.md)            | [GitHub](https://github.com/Ironholds/rgeolocate)                     |
+| Racket               | geoip                           |                                                                             | [Racket Documentation](https://docs.racket-lang.org/geoip/index.html)              | [GitHub](https://github.com/Bogdanp/racket-geoip)                     |
+| Raku                 | GeoIP2                          |                                                                             | [README](https://github.com/bbkr/GeoIP2/blob/master/README.md)                     | [GitHub](https://github.com/bbkr/GeoIP2)                              |
+| Rust                 | maxminddb                       | [Cargo](https://crates.io/crates/maxminddb)                                 | [API docs](https://oschwald.github.io/maxminddb-rust/maxminddb/struct.Reader.html) | [GitHub](https://github.com/oschwald/maxminddb-rust)                  |
+| Scala                | maxmind-geoip2-scala            |                                                                             | [README](https://github.com/Sanoma-CDA/maxmind-geoip2-scala/blob/master/README.md) | [GitHub](https://github.com/Sanoma-CDA/maxmind-geoip2-scala)          |
+| Swift (C extension)  | MMDB-Swift                      | [MMDB-Swift](https://cocoapods.org/pods/MMDB-Swift)                         | [CocoaPods](https://cocoapods.org/pods/MMDB-Swift)                                 | [GitHub](https://github.com/lexrus/MMDB-Swift)                        |
 
 ### Integrations
 
 <Alert type="warning">
   **Use at your own risk.**
 
-  MaxMind does ***not*** offer support for these integrations. Please contact
-  the integrator for assistance.
+MaxMind does **_not_** offer support for these integrations. Please contact the
+integrator for assistance.
+
 </Alert>
 
 | Application                    | Platform                | Link                                                                                                                    |

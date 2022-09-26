@@ -13,22 +13,23 @@ submitting the transaction to the minFraud service for evaluation.
 
 MaxMind offers and highly recommends using official client libraries to access
 our minFraud services. If you cannot or do not wish to use our client libraries,
-please review our [minFraud API Documentation page](/minfraud/api-documentation) for
-details on our JSON API.
+please review our [minFraud API Documentation page](/minfraud/api-documentation)
+for details on our JSON API.
 
 ### 1. Add device tracking to your website
 
 The [Device Tracking Add-On](/minfraud/track-devices) runs on a visiting device
 so that the minFraud service can assign a device ID and begin collecting
-fingerprint information.  This helps detect fraudsters if they change or enable
+fingerprint information. This helps detect fraudsters if they change or enable
 proxies while browsing your website.
 
 Note that, in order to be effective, the Device Tracking Add-on must, at a
-minimum, be included on the page where the IP address is captured for a
-minFraud query.
+minimum, be included on the page where the IP address is captured for a minFraud
+query.
 
 Place the following code in the footer of the HTML webpage and replace
-`ACCOUNT_ID` with your [MaxMind account ID](https://www.maxmind.com/en/my_license_key):
+`ACCOUNT_ID` with your
+[MaxMind account ID](https://www.maxmind.com/en/my_license_key):
 
 ```html
 <script type="text/javascript">
@@ -108,7 +109,7 @@ gem 'minfraud'
 ### 3. Create a minFraud client object
 
 To interact with our API, you need to create a new client object. For this you
-will need 
+will need
 [your MaxMind account ID and license key](https://www.maxmind.com/en/my_license_key):
 
 <CodeSet>
@@ -151,9 +152,9 @@ end
 The transaction object represents a customer's transaction that you are sending
 to the minFraud service for evaluation. There are no mandatory fields, but
 including [more information](/minfraud/evaluate-a-transaction#full-examples)
-about the transaction improves the accuracy of the transaction's evaluation.
-The following examples use the recommended minimum amount of information you
-should submit:
+about the transaction improves the accuracy of the transaction's evaluation. The
+following examples use the recommended minimum amount of information you should
+submit:
 
 <CodeSet>
 

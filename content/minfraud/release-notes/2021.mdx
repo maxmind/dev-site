@@ -18,6 +18,7 @@ services:
 
 We are making this change in order to ensure it is clear that IP geolocation
 should not be used to identify a particular street address or household.
+
 </ReleaseNote>
 
 <ReleaseNote date="2021-09-08" title="Data Updates for Apple iCloud Private Relay">
@@ -28,57 +29,65 @@ Private Relay works and delivers the best possible user experience for your
 users.
 
 - Geolocation data across our products and services now incorporate the IP
-geolocation feeds published by Apple, which provides coarse city or region
-geolocation mappings for iCloud Private Relay IPs.
+  geolocation feeds published by Apple, which provides coarse city or region
+  geolocation mappings for iCloud Private Relay IPs.
 - We identify iCloud Private Relay IPs in our ISP dataset (present in our
-[minFraud Insights and
-Factors](https://www.maxmind.com/en/solutions/minfraud-services) web services)
-by tagging ranges as `iCloud Private Relay`.
+  [minFraud Insights and Factors](https://www.maxmind.com/en/solutions/minfraud-services)
+  web services) by tagging ranges as `iCloud Private Relay`.
 
 Apple has shared the following assurances built into Private Relay:
 
 - Geolocation information for clients is validated by the relay servers using
-signed tokens, and visible to origins through the IP addresses selected by relay
-servers.
-   - A user is not able to arbitrarily select their geolocation to evade
-   geolocation controls.
+  signed tokens, and visible to origins through the IP addresses selected by
+  relay servers.
+  - A user is not able to arbitrarily select their geolocation to evade
+    geolocation controls.
 - Access to relay servers is rate-limited using device attestation to reduce
-fraud.
+  fraud.
 - All traffic is secured using TLS 1.3.
 
 You do not need to take any action to receive this data. It will be returned in
-the [`/traits/isp`](/geoip/docs/web-services/responses/#schema--response--traits__isp)
-and [`/traits/organization`](/geoip/docs/web-services/responses/#schema--response--traits__organization)
+the
+[`/traits/isp`](/geoip/docs/web-services/responses/#schema--response--traits__isp)
+and
+[`/traits/organization`](/geoip/docs/web-services/responses/#schema--response--traits__organization)
 outputs.
 
 For more information about Private Relay along with helpful technical
-information, visit [Prepare Your Network or Web Server for Private Relay](https://developer.apple.com/support/prepare-your-network-for-icloud-private-relay/)
+information, visit
+[Prepare Your Network or Web Server for Private Relay](https://developer.apple.com/support/prepare-your-network-for-icloud-private-relay/)
 on Apple’s developer website.
 
 We will continue to monitor these IPs and make any adjustments that are needed
 in the future.
+
 </ReleaseNote>
 
 <ReleaseNote date="2021-09-03" title="New minFraud features: passing 3-D Secure outcome, custom rule label in minFraud response, “test” disposition for custom rules">
 We have released a couple of new features for the [minFraud Score, Insights, and
 Factors service](https://www.maxmind.com/en/solutions/minfraud-services).
 
-* A new input, [`/credit_card/was_3d_secure_successful`](/minfraud/api-documentation/requests#schema--request--credit-card__was_3d_secure_successful),
-which allows you to send us whether the outcome of
-[3-D Secure verification](https://en.wikipedia.org/wiki/3-D_Secure) was
-successful. This can help us improve your risk scoring.
-* A new output, [`/disposition/rule_label`](/minfraud/api-documentation/responses#schema--response--disposition__rule_label),
-which returns the label of the custom rule that affected a transaction.
-* A new value for the [`/disposition/action` output](/minfraud/api-documentation/responses#schema--response--disposition__action),
-“test”. This additional disposition action can be used to separate transactions
-for rules which you are interested in actively testing without affecting your
-existing workflows.
+- A new input,
+  [`/credit_card/was_3d_secure_successful`](/minfraud/api-documentation/requests#schema--request--credit-card__was_3d_secure_successful),
+  which allows you to send us whether the outcome of
+  [3-D Secure verification](https://en.wikipedia.org/wiki/3-D_Secure) was
+  successful. This can help us improve your risk scoring.
+- A new output,
+  [`/disposition/rule_label`](/minfraud/api-documentation/responses#schema--response--disposition__rule_label),
+  which returns the label of the custom rule that affected a transaction.
+- A new value for the
+  [`/disposition/action` output](/minfraud/api-documentation/responses#schema--response--disposition__action),
+  “test”. This additional disposition action can be used to separate
+  transactions for rules which you are interested in actively testing without
+  affecting your existing workflows.
 
-For more information, see our [blog post](https://blog.maxmind.com/2021/09/new-minfraud-features-passing-3-d-secure-outcome-custom-rule-label-in-minfraud-response-test-disposition-for-custom-rules/).
+For more information, see our
+[blog post](https://blog.maxmind.com/2021/09/new-minfraud-features-passing-3-d-secure-outcome-custom-rule-label-in-minfraud-response-test-disposition-for-custom-rules/).
 
 Our [client APIs](/minfraud/evaluate-a-transaction#links-to-maxmind-client-apis)
 have been updated to support these outputs so may need to refresh yours if you
 are not interfacing directly with our REST API.
+
 </ReleaseNote>
 
 <ReleaseNote date="2021-05-19" title="Updated warning codes in minFraud Score, Insights, and Factors">
@@ -86,16 +95,17 @@ We updated warning codes for [minFraud Score, Insights and Factors](/minfraud)
 responses in the [/warnings/
 object](/minfraud/api-documentation/responses/#schema--response--warnings).
 
-* We added `BILLING_REGION_NOT_FOUND` and `SHIPPING_REGION_NOT_FOUND` codes
-* We updated the warning explanations for certain warning codes to include that
-distance calculations (outlined below) may be impacted when certain location
-information is missing or cannot be found
-    - `/shipping_address/distance_to_ip_location`
-    - `/shipping_address/distance_to_billing_address`
-    - `/billing_address/distance_to_ip_location`
+- We added `BILLING_REGION_NOT_FOUND` and `SHIPPING_REGION_NOT_FOUND` codes
+- We updated the warning explanations for certain warning codes to include that
+  distance calculations (outlined below) may be impacted when certain location
+  information is missing or cannot be found -
+  `/shipping_address/distance_to_ip_location` -
+  `/shipping_address/distance_to_billing_address` -
+  `/billing_address/distance_to_ip_location`
 
-See our developer documentation for the [updated codes and
-warnings](/minfraud/api-documentation/responses/#schema--response--warnings).
+See our developer documentation for the
+[updated codes and warnings](/minfraud/api-documentation/responses/#schema--response--warnings).
+
 </ReleaseNote>
 
 <ReleaseNote date="2021-05-13" title="Updates to minFraud Alerts">
@@ -112,14 +122,14 @@ that minor, inconsequential differences in the email input (i.e.,
 `jadoeisonline@yahoo.com` and `jadoeisonline-12345@yahoo.com`) do not result in
 minFraud treating these as different email addresses.
 
-Our [client
-APIs](/minfraud/evaluate-a-transaction#links-to-maxmind-client-apis) for
-minFraud Score, Insights, and Factors have been updated to support email
+Our [client APIs](/minfraud/evaluate-a-transaction#links-to-maxmind-client-apis)
+for minFraud Score, Insights, and Factors have been updated to support email
 normalization so you may need to refresh yours in order to get automatic email
 normalization. If you interface directly with our REST API or use minFraud
-Legacy, we recommend that you normalize email addresses prior to hashing.
-Please see our developer’s site for [guidance on how to normalize
-emails](/minfraud/normalizing-email-addresses-for-minfraud).
+Legacy, we recommend that you normalize email addresses prior to hashing. Please
+see our developer’s site for
+[guidance on how to normalize emails](/minfraud/normalizing-email-addresses-for-minfraud).
+
 </ReleaseNote>
 
 <ReleaseNote date="2021-02-03" title="New output IP risk reasons">
@@ -130,26 +140,27 @@ customers can now see reason codes associated with the IP risk score for high
 risk IP addresses. When the IP risk score is high, the field may be populated
 with one or more of the following reason codes:
 
-* `ANONYMOUS_IP` – The IP address belongs to an anonymous network. See
-`/ip_address/traits` for more information.
-* `HIGH_RISK_DEVICE` – A high risk device was seen on this IP address in your
-past transactions.
-* `HIGH_RISK_EMAIL` – A high risk email address was seen on this IP address in
-your past transactions.
-* `BILLING_POSTAL_VELOCITY` – Many different billing postal codes have been
-seen on this IP address in your past transactions.
-* `EMAIL_VELOCITY` – Many different email addresses have been seen on this IP
-address in your past transactions.
-* `ISSUER_ID_NUMBER_VELOCITY` – Many different issuer ID numbers have been seen
-on this IP address in your past transactions.
-* `MINFRAUD_NETWORK_ACTIVITY` – Suspicious activity has been seen on this IP
-address across minFraud customers.
+- `ANONYMOUS_IP` – The IP address belongs to an anonymous network. See
+  `/ip_address/traits` for more information.
+- `HIGH_RISK_DEVICE` – A high risk device was seen on this IP address in your
+  past transactions.
+- `HIGH_RISK_EMAIL` – A high risk email address was seen on this IP address in
+  your past transactions.
+- `BILLING_POSTAL_VELOCITY` – Many different billing postal codes have been seen
+  on this IP address in your past transactions.
+- `EMAIL_VELOCITY` – Many different email addresses have been seen on this IP
+  address in your past transactions.
+- `ISSUER_ID_NUMBER_VELOCITY` – Many different issuer ID numbers have been seen
+  on this IP address in your past transactions.
+- `MINFRAUD_NETWORK_ACTIVITY` – Suspicious activity has been seen on this IP
+  address across minFraud customers.
 
 If the IP risk score is low, the `risk_reasons` field will be blank. Our
 [client APIs](/minfraud/evaluate-a-transaction#links-to-maxmind-client-apis)
 have been updated to support this output so you may need to refresh yours in
 order to see the new output if you are not interfacing directly with our REST
 API.
+
 </ReleaseNote>
 
 <ReleaseNote date="2021-01-22" title="Change to Vodafone Germany ISP name">

@@ -9,15 +9,18 @@ import * as Schemas from './_schemas/';
 ## Authorization and Security
 
 The HTTP `Authorization` header is required for authorization. The username is
-your [MaxMind account ID](https://www.maxmind.com/en/accounts/current/license-key).
-The password is your [MaxMind license key](https://www.maxmind.com/en/accounts/current/license-key).
+your
+[MaxMind account ID](https://www.maxmind.com/en/accounts/current/license-key).
+The password is your
+[MaxMind license key](https://www.maxmind.com/en/accounts/current/license-key).
 
 <Alert type="warning">
   You must be approved for a trial or purchase credit for use with our web
   services in order to receive an account ID and license key.
 </Alert>
 
-We use [basic HTTP authentication](https://en.wikipedia.org/wiki/Basic_access_authentication).
+We use
+[basic HTTP authentication](https://en.wikipedia.org/wiki/Basic_access_authentication).
 The APIs which require authentication are only available via HTTPS. The
 credentials are never transmitted unencrypted. If you attempt to access this
 service via HTTP, you will receive a `403 Forbidden` HTTP response.
@@ -40,25 +43,26 @@ geographically closest to you.
 
 ## Headers
 
-The `Authorization` header is always required. See 
+The `Authorization` header is always required. See
 [Authorization and Security](#authorization-and-security) for more details.
 
 The `Accept` header for a request is entirely optional. If you do include one,
-you must accept one of the following, substituting the `[SERVICE-TYPE]` with 
+you must accept one of the following, substituting the `[SERVICE-TYPE]` with
 either `score`, `insights`, or `factors` as appropriate:
 
-* `application/json`
-* `application/vnd.maxmind.com-minfraud-[SERVICE TYPE]+json`
-* `application/vnd.maxmind.com-minfraud-[SERVICE TYPE]+json; charset=UTF-8; version=2.0`
- 
- A request for any other MIME type will result in a 
- `415 Unsupported Media Type` error.
+- `application/json`
+- `application/vnd.maxmind.com-minfraud-[SERVICE TYPE]+json`
+- `application/vnd.maxmind.com-minfraud-[SERVICE TYPE]+json; charset=UTF-8; version=2.0`
 
-If you set the `Accept-Charset` header in your client code, you must accept the 
-`UTF-8` character set. If you don't you will receive a `406 Not Acceptable` 
+A request for any other MIME type will result in a `415 Unsupported Media Type`
+error.
+
+If you set the `Accept-Charset` header in your client code, you must accept the
+`UTF-8` character set. If you don't you will receive a `406 Not Acceptable`
 response.
 
 ## Bodies
+
 minFraud Score, Factors and Insights share the same request body format. Below
 is a full example of the JSON body document. For detailed explainations of each
 property within the request body, please refer to the
@@ -77,13 +81,13 @@ Each schema definition contains a description of an object, along with a list of
 properties that belong to the object. The following information is listed for
 each object property:
 
-* name
-* type (`array<type>`, `boolean`, `number`, `integer`, `object`, `string`)
-* description
-* example
-* formatting
-* constraints (format, min/max, max length, etc.)
-* supported services (`Score`, `Factors`, `Insights`)
+- name
+- type (`array<type>`, `boolean`, `number`, `integer`, `object`, `string`)
+- description
+- example
+- formatting
+- constraints (format, min/max, max length, etc.)
+- supported services (`Score`, `Factors`, `Insights`)
 
 Additionally, for `object` properties, a link is provided to view a schema
 definition that further describes that specific object.

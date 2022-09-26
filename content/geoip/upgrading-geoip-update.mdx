@@ -9,8 +9,8 @@ describes how you can upgrade from earlier versions.
 ## What’s new
 
 `geoipupdate` 4\.x is a rewrite of the old `geoipupdate` and starts from a new
-modern code base. It supports the same core functionality and config file
-format as before.
+modern code base. It supports the same core functionality and config file format
+as before.
 
 The biggest change is support for additional platforms, notably Windows.
 
@@ -22,13 +22,13 @@ versions.
 If you’re coming from `geoipupdate` 2\.x:
 
 - We removed support for the configuration options `Protocol`,
-`SkipPeerVerification`, and `SkipHostnameVerification`. `geoipupdate` now
-always uses HTTPS and always verifies certificates. We ignore these options
-if present.
+  `SkipPeerVerification`, and `SkipHostnameVerification`. `geoipupdate` now
+  always uses HTTPS and always verifies certificates. We ignore these options if
+  present.
 - The configuration file must have the `AccountID` (or the deprecated `UserId`)
-when downloading a paid database. Previously, when downloading the GeoIP
-Legacy Country database, you were able to only provide the `LicenseKey`. Now
-you must provide both `AccountID` and `LicenseKey`.
+  when downloading a paid database. Previously, when downloading the GeoIP
+  Legacy Country database, you were able to only provide the `LicenseKey`. Now
+  you must provide both `AccountID` and `LicenseKey`.
 
 ## Confirm your version
 
@@ -39,14 +39,12 @@ geoipupdate -V
 > geoipupdate 3.1.1
 ```
 
-If this says something like `geoipupdate 4.0.0` then you’re already running
-4.x.
+If this says something like `geoipupdate 4.0.0` then you’re already running 4.x.
 
 If this says something like `command not found` then you may not have
 `geoipupdate` installed. Please see our
 [installation guide](/geoip/updating-databases#1-install-geoip-update) for more
 information.
-
 
 ## Find your config file
 
@@ -65,8 +63,9 @@ In this case the config file is `/etc/GeoIP.conf`.
 
 ## Install geoipupdate 4.x
 
-Follow the instructions in our [installation guide](/geoip/updating-databases#1-install-geoip-update)
-for how to do this.
+Follow the instructions in our
+[installation guide](/geoip/updating-databases#1-install-geoip-update) for how
+to do this.
 
 If you previously installed it via our PPA, you should be able to upgrade
 through `apt`.
@@ -98,8 +97,8 @@ geoipupdate -v
 ```
 
 If it’s using a config file from a different spot than you expect, either move
-your config to that location or pass the `-f` flag when running `geoipupdate`
-to tell it where to find the config.
+your config to that location or pass the `-f` flag when running `geoipupdate` to
+tell it where to find the config.
 
 ## Check cron
 
@@ -107,4 +106,3 @@ If you configured `geoipupdate` to run from cron then it is a good idea to
 confirm it will continue to work. In particular you should check the command in
 your cron configuration will use the config file you expect. You can run the
 command from your crontab with the verbose flag (`-v`) to verify this.
-

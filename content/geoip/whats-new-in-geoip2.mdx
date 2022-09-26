@@ -79,8 +79,8 @@ the `traits` object. The `A1` code corresponds to the deprecated
 `is_satellite_provider` key. New integrations are encouraged to use
 `is_anonymous`, `is_anonymous_vpn`, `is_hosting_provider`, `is_public_proxy`,
 `is_satellite_provider`, `is_tor_exit_node`, and `is_residential_proxy`, all
-available in the GeoIP2 Insights web service or the GeoIP2 Anonymous
-IP database.
+available in the GeoIP2 Insights web service or the GeoIP2 Anonymous IP
+database.
 
 ### User Type and Net Speed (web service only)
 
@@ -103,23 +103,23 @@ The GeoIP2 databases and services **do not** include area codes.
 
 ### Location Information
 
-GeoIP2 Insights includes the average income and population density for
-the area in which the IP address is used.
+GeoIP2 Insights includes the average income and population density for the area
+in which the IP address is used.
 
 ### IP and Network
 
 All GeoIP2 databases and web services provide the network of the associated data
 record in the database.
 
-GeoIP2 Insights also includes `user_count`, an estimate of the number
-of users using the IP address, and the `static_ip_score`, an indicator of how
-static or dynamic an IP allocation is.
+GeoIP2 Insights also includes `user_count`, an estimate of the number of users
+using the IP address, and the `static_ip_score`, an indicator of how static or
+dynamic an IP allocation is.
 
 ## JavaScript API Changes
 
 The MaxMind GeoIP2 JavaScript API provides a JavaScript interface to our
-[GeoIP2 web service](/geoip/docs/web-services). The API calls the web
-service to retrieve the location information of the user as a
+[GeoIP2 web service](/geoip/docs/web-services). The API calls the web service to
+retrieve the location information of the user as a
 [JavaScript object](/geoip/docs/web-services).
 
 The API is written using the
@@ -131,8 +131,8 @@ it returns a single object containing multiple functions you can call.
 
 Our GeoIP2 web services now follow REST principles.
 
-Unlike the GeoIP Legacy web service, the GeoIP2 web services use HTTP
-basic authentication over SSL rather than passing the license key as a query
+Unlike the GeoIP Legacy web service, the GeoIP2 web services use HTTP basic
+authentication over SSL rather than passing the license key as a query
 parameter.
 
 When an error occurs, we now return an appropriate HTTP error code instead of
@@ -151,8 +151,7 @@ how to use the new format.
 
 ## Web Service Example
 
-This is an example of our GeoIP2 Insights web service's return
-document.
+This is an example of our GeoIP2 Insights web service's return document.
 
 ```json
 {

@@ -59,11 +59,11 @@ Insights and Factors web
 services](https://www.maxmind.com/en/solutions/minfraud-services):
 
 - `static_ip_score` – An indicator of how static or dynamic an IP address is.
-The value ranges from 0 to 99.99 with higher values meaning a greater static
-association. For example, many IPs with a `user_type` of `cellular` have a
-score under one. Static Cable/DSL IPs typically have a score above thirty.
-This indicator can be useful for deciding whether an IP address represents
-the same user over time.
+  The value ranges from 0 to 99.99 with higher values meaning a greater static
+  association. For example, many IPs with a `user_type` of `cellular` have a
+  score under one. Static Cable/DSL IPs typically have a score above thirty.
+  This indicator can be useful for deciding whether an IP address represents the
+  same user over time.
 
 The `static_ip_score` output is present in the `traits` object.
 
@@ -77,8 +77,8 @@ an error. Please update to TLS 1.2+ to avoid service disruption. You may need
 to upgrade your technology stack to a later version, or make code changes to do
 so.
 
-[Contact us](https://support.maxmind.com/hc/en-us/requests/new) for support or if you
-have questions.
+[Contact us](https://support.maxmind.com/hc/en-us/requests/new) for support or
+if you have questions.
 
 </ReleaseNote>
 
@@ -115,13 +115,13 @@ service](https://www.maxmind.com/en/geoip2-precision-insights), and [minFraud
 Insights and Factors web
 services](https://www.maxmind.com/en/solutions/minfraud-services):
 
-- `network` – The network in [CIDR
-notation](https://en.wikipedia.org/wiki/Classless_Inter-Domain_Routing#CIDR_notation)
-associated with the record. This is the largest network where all of the
-fields besides `ip_address` have the same value.
-- `user_count` – The estimated number of users sharing the IP/network during
-the past 24 hours. For IPv4, the count is for the individual IP. For IPv6,
-the count is for the /64 network.
+- `network` – The network in
+  [CIDR notation](https://en.wikipedia.org/wiki/Classless_Inter-Domain_Routing#CIDR_notation)
+  associated with the record. This is the largest network where all of the
+  fields besides `ip_address` have the same value.
+- `user_count` – The estimated number of users sharing the IP/network during the
+  past 24 hours. For IPv4, the count is for the individual IP. For IPv6, the
+  count is for the /64 network.
 
 Both of these outputs are present in the `traits` object.
 
@@ -132,8 +132,8 @@ Both of these outputs are present in the `traits` object.
 25, 2019**
 
 There will be a planned service interruption for all requests to MaxMind
-services that use TLS versions 1.0 and 1.1, and for unencrypted HTTP requests
-to MaxMind legacy minFraud services (e.g. minFraud Standard, minFraud Premium,
+services that use TLS versions 1.0 and 1.1, and for unencrypted HTTP requests to
+MaxMind legacy minFraud services (e.g. minFraud Standard, minFraud Premium,
 Proxy Detection web service, IIN service). **This will take place for up to 8
 hours from 14:00-22:00 UTC on September 25, 2019.**
 
@@ -142,9 +142,9 @@ requests to legacy minFraud endpoints will fail with an error.
 
 To avoid service interruption, you may need to upgrade some part of your
 technology stack to a later version, or you may need to make code changes. If
-you have any questions, please do not hesitate to [contact
-us](https://support.maxmind.com/hc/en-us/requests/new). Additional info is available on
-our
+you have any questions, please do not hesitate to
+[contact us](https://support.maxmind.com/hc/en-us/requests/new). Additional info
+is available on our
 [blog](https://blog.maxmind.com/2019/04/important-updates-about-tls-v1-0-v1-1-unencrypted-http-requests-and-the-legacy-minfraud-soap-api/).
 
 </ReleaseNote>
@@ -173,8 +173,8 @@ business user type as a result of these improvements.
 28, 2019**
 
 There will be a planned service interruption for all requests to MaxMind
-services that use TLS versions 1.0 and 1.1, and for unencrypted HTTP requests
-to MaxMind legacy minFraud services (e.g. minFraud Standard, minFraud Premium,
+services that use TLS versions 1.0 and 1.1, and for unencrypted HTTP requests to
+MaxMind legacy minFraud services (e.g. minFraud Standard, minFraud Premium,
 Proxy Detection web service, IIN service). **This will take place for up to 8
 hours from 14:00-22:00 UTC on August 28, 2019.**
 
@@ -183,9 +183,9 @@ requests to legacy minFraud endpoints will fail with an error.
 
 To avoid service interruption, you may need to upgrade some part of your
 technology stack to a later version, or you may need to make code changes. If
-you have any questions, please do not hesitate to [contact
-us](https://support.maxmind.com/hc/en-us/requests/new). Additional info is available on
-our
+you have any questions, please do not hesitate to
+[contact us](https://support.maxmind.com/hc/en-us/requests/new). Additional info
+is available on our
 [blog](https://blog.maxmind.com/2019/04/important-updates-about-tls-v1-0-v1-1-unencrypted-http-requests-and-the-legacy-minfraud-soap-api/).
 
 </ReleaseNote>
@@ -213,9 +213,9 @@ requests to legacy minFraud endpoints will fail with an error.
 
 To avoid service interruption, you may need to upgrade some part of your
 technology stack to a later version, or you may need to make code changes. If
-you have any questions, please do not hesitate to [contact
-us](https://support.maxmind.com/hc/en-us/requests/new). Additional info is available on
-our
+you have any questions, please do not hesitate to
+[contact us](https://support.maxmind.com/hc/en-us/requests/new). Additional info
+is available on our
 [blog](https://blog.maxmind.com/2019/04/important-updates-about-tls-v1-0-v1-1-unencrypted-http-requests-and-the-legacy-minfraud-soap-api/).
 
 </ReleaseNote>
@@ -279,6 +279,7 @@ a iso code of 40 or 43 in the subdivision object.
 Due to the nature of geolocation technology and other factors beyond our
 control, we cannot guarantee any specific future accuracy level. Further,
 accuracy figures are subject to change as IP networks are reallocated.
+
 </ReleaseNote>
 
 <ReleaseNote date="2019-01-23" title="Initial Release of Ruby API">
@@ -324,4 +325,3 @@ We have added web service lookup support to our GeoIP2 Node.js API
 ([NPM](https://www.npmjs.com/package/@maxmind/geoip2-node),
 [GitHub](https://github.com/maxmind/GeoIP2-node)).
 </ReleaseNote>
-

@@ -44,6 +44,7 @@ high risk. We will return more positive IP Risk Scores between 0 and 45 and 45
 and 75. Such scores typically represent “medium” risk transactions which have
 some risk of fraud but may be legitimate. The higher the IP Risk Score, the
 riskier the transaction.
+
 </ReleaseNote>
 
 <ReleaseNote date="2016-06-09" title="New Device Field">
@@ -69,34 +70,36 @@ takes order amount into consideration when calculating the risk score.
 Merchants may want to update their rules if the rule is a combination of risk
 score and order amount. For example, if a custom rule rejects transactions with
 a high order amount and a risk score above 10, the merchant may want to adjust
-the risk score to a higher number, as the high order amount itself may cause
-the risk score to increase.
+the risk score to a higher number, as the high order amount itself may cause the
+risk score to increase.
 
 In general, orders $500 or above may have a higher risk score than before.
+
 </ReleaseNote>
 
 <ReleaseNote date="2016-01-29" title="New minFraud Insights Outputs">
 The following outputs have been added to minFraud Insights:
 
 - `/credit_card/brand` – The card brand, such as “Visa”, “Discover”, “American
-Express”, etc.
+  Express”, etc.
 - `/credit_card/type` – A string representing the card's type. The possible
-values are `charge`, `credit`, or `debit`.
-- `/device/id` – A UUID that MaxMind uses for the device associated with this
-IP address. This is only available if you are using the [Device Tracking
-Add-on](/minfraud/track-devices).
-- `/email/is_free` – This field is `true` if MaxMind believes that this email
-is hosted by a free email provider such as Gmail or Yahoo! Mail.
+  values are `charge`, `credit`, or `debit`.
+- `/device/id` – A UUID that MaxMind uses for the device associated with this IP
+  address. This is only available if you are using the
+  [Device Tracking Add-on](/minfraud/track-devices).
+- `/email/is_free` – This field is `true` if MaxMind believes that this email is
+  hosted by a free email provider such as Gmail or Yahoo! Mail.
 - `/email/is_high_risk` – This field is `true` if MaxMind believes that this
-email is likely to be used for fraud.
+  email is likely to be used for fraud.
 
-Also, for both minFraud Score and minFraud Insights, the `input` property in
-the warning objects has been removed and replaced with an `input_pointer`
-property. This new property is a JSON pointer to the value in the input object
-causing the warning.
+Also, for both minFraud Score and minFraud Insights, the `input` property in the
+warning objects has been removed and replaced with an `input_pointer` property.
+This new property is a JSON pointer to the value in the input object causing the
+warning.
 
 All of our client APIs have been updated to reflect these changes.
 
-For more information on these outputs, please see [our minFraud Score and
-minFraud Insights API documentation](/minfraud/api-documentation).
+For more information on these outputs, please see
+[our minFraud Score and minFraud Insights API documentation](/minfraud/api-documentation).
+
 </ReleaseNote>
