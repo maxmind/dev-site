@@ -155,16 +155,16 @@
   "license": "MIT",
   "lint-staged": {
     "**/*.json": [
-      "npm run fix:json"
+      "npx eslint --fix --config '.eslintrc.js'"
     ],
     "content/**/*.mdx": [
-      "npm run fix:content"
+      "npx prettier --write --embedded-language-formatting off --config './content/.prettierrc.js'"
     ],
     "**/*.{js,ts,tsx}": [
-      "npm run fix:scripts"
+      "npx eslint --fix --ignore-pattern 'functions/**/*.js' --config '.eslintrc.js'"
     ],
     "src/**/*.[s]css": [
-      "npm run fix:styles"
+      "npx stylelint --fix --config '.stylelintrc.js'"
     ]
   },
   "name": "dev-site",
