@@ -142,7 +142,7 @@
     "prettier": "^2.6.1",
     "remark-html": "^15.0.1",
     "sass": "^1.55.0",
-    "stylelint": "^14.12.1",
+    "stylelint": "^14.13.0",
     "stylelint-config-recommended": "^9.0.0",
     "stylelint-config-sass-guidelines": "^9.0.0",
     "stylelint-no-unsupported-browser-features": "^5.0.4",
