@@ -26,15 +26,16 @@ customers in Connecticut.
 <ReleaseNote date="2015-07-13" title="is_anonymous_proxy and is_satellite_provider Deprecation in GeoIP2">
 `is_anonymous_proxy` and `is_satellite_provider` are now deprecated in GeoIP2.
 
-Use the [GeoIP2 Anonymous IP
-Database](https://www.maxmind.com/en/geoip2-anonymous-ip-database) to identify
-anonymous IPs and refer to the [IP Risk
-Score](https://www.maxmind.com/en/explanation-of-minfraud-riskscore) to assess
-whether an IP address is high risk.
+Use the
+[GeoIP2 Anonymous IP Database](https://www.maxmind.com/en/geoip2-anonymous-ip-database)
+to identify anonymous IPs and refer to the
+[IP Risk Score](https://www.maxmind.com/en/explanation-of-minfraud-riskscore) to
+assess whether an IP address is high risk.
 
 Due to the increased coverage by mobile carriers, very few satellite providers
 now serve multiple countries. As a result, the `is_satellite_provider` output
 does not provide sufficiently relevant data for us to maintain it.
+
 </ReleaseNote>
 
 <ReleaseNote date="2015-06-29" title="Average Income and Population Density">
@@ -80,4 +81,5 @@ a iso code of 40 or 43 in the subdivision object.
 Due to the nature of geolocation technology and other factors beyond our
 control, we cannot guarantee any specific future accuracy level. Further,
 accuracy figures are subject to change as IP networks are reallocated.
+
 </ReleaseNote>

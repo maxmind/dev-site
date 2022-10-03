@@ -3,12 +3,13 @@ draft: false
 title: GeoIP and GeoLite API Requests
 ---
 
-
 ## Authorization and Security
 
 The HTTP `Authorization` header is required for authorization. The username is
-your [MaxMind account ID](https://www.maxmind.com/en/accounts/current/license-key).
-The password is your [MaxMind license key](https://www.maxmind.com/en/accounts/current/license-key).
+your
+[MaxMind account ID](https://www.maxmind.com/en/accounts/current/license-key).
+The password is your
+[MaxMind license key](https://www.maxmind.com/en/accounts/current/license-key).
 
 <Alert type="warning">
   You must be approved for a [GeoIP2 web service
@@ -19,7 +20,8 @@ The password is your [MaxMind license key](https://www.maxmind.com/en/accounts/c
   account ID and license key.
 </Alert>
 
-We use [basic HTTP authentication](https://en.wikipedia.org/wiki/Basic_access_authentication).
+We use
+[basic HTTP authentication](https://en.wikipedia.org/wiki/Basic_access_authentication).
 The APIs which require authentication are only available via HTTPS. The
 credentials are never transmitted unencrypted. If you attempt to access this
 service via HTTP, you will receive a `403 Forbidden` HTTP response.
@@ -29,8 +31,8 @@ secure.
 
 ## Service Endpoints
 
-The endpoint for each service is as specified below. Each endpoint expects an
-IP adddress to be defined as a path parameter (`{ip_address}`).
+The endpoint for each service is as specified below. Each endpoint expects an IP
+adddress to be defined as a path parameter (`{ip_address}`).
 
 The IP address can be either an IPv4 or an IPv6 address. IPv4 addresses should
 be passed in the standard dotted quad form, for example `1.2.3.4`. IPv6
@@ -45,6 +47,7 @@ application does not have easy access to its public IP address, e.g., when the
 system making the query is behind a NAT.
 
 ### GeoIP2 Endpoints
+
 | Service   | HTTP Method | Endpoint                                                     |
 | --------- | ----------- | ------------------------------------------------------------ |
 | Country   | `GET`       | `https://geoip.maxmind.com/geoip/v2.1/country/{ip_address}`  |
@@ -55,13 +58,14 @@ The `geoip.maxmind.com` hostname automatically picks the data center
 geographically closest to you.
 
 ### GeoLite2 Endpoints
+
 | Service | HTTP Method | Endpoint                                               |
 | ------- | ----------- | ------------------------------------------------------ |
 | Country | `GET`       | `https://geolite.info/geoip/v2.1/country/{ip_address}` |
 | City    | `GET`       | `https://geolite.info/geoip/v2.1/city/{ip_address}`    |
 
-The `geolite.info` hostname automatically picks the data center
-geographically closest to you.
+The `geolite.info` hostname automatically picks the data center geographically
+closest to you.
 
 ## Headers
 
@@ -72,12 +76,12 @@ The `Accept` header for a request is entirely optional. If you do include one,
 you must accept one of the following, substituting the `[SERVICE-TYPE]` with
 either `score`, `insights`, or `factors` as appropriate:
 
-* `application/json`
-* `application/vnd.maxmind.com-minfraud-[SERVICE TYPE]+json`
-* `application/vnd.maxmind.com-minfraud-[SERVICE TYPE]+json; charset=UTF-8; version=2.0`
+- `application/json`
+- `application/vnd.maxmind.com-minfraud-[SERVICE TYPE]+json`
+- `application/vnd.maxmind.com-minfraud-[SERVICE TYPE]+json; charset=UTF-8; version=2.0`
 
- A request for any other MIME type will result in a
- `415 Unsupported Media Type` error.
+A request for any other MIME type will result in a `415 Unsupported Media Type`
+error.
 
 If you set the `Accept-Charset` header in your client code, you must accept the
 `UTF-8` character set. If you don't you will receive a `406 Not Acceptable`
@@ -85,6 +89,4 @@ response.
 
 ## Troubleshooting IP Lookups
 
-[Learn about common troubleshooting steps to make sure that you're querying the
-correct IP addresses, and making efficient use of your queries, on our Knowledge
-Base.](https://support.maxmind.com/hc/en-us/articles/4408248823835-Optimize-my-Web-Service-Integration)
+[Learn about common troubleshooting steps to make sure that you're querying the correct IP addresses, and making efficient use of your queries, on our Knowledge Base.](https://support.maxmind.com/hc/en-us/articles/4408248823835-Optimize-my-Web-Service-Integration)

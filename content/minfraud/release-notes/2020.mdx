@@ -19,12 +19,13 @@ now see whether an IP address is likely a [residential
 proxy](https://en.wikipedia.org/wiki/Proxy_server#Residential_proxy):
 
 - `/traits/is_residential_proxy` – This is true if the IP address is on a
-suspected anonymizing network and belongs to a residential ISP. Otherwise,
-the key is not included in the traits object.
+  suspected anonymizing network and belongs to a residential ISP. Otherwise, the
+  key is not included in the traits object.
 
 Our [client APIs](/minfraud/evaluate-a-transaction#links-to-maxmind-client-apis)
 have been updated to support these outputs so may need to refresh yours if you
 are not interfacing directly with our REST API.
+
 </ReleaseNote>
 
 <ReleaseNote date="2020-10-12" title="IP Address Optional in minFraud Score, Insights, and Factors Services">
@@ -58,10 +59,11 @@ Factors](/minfraud) can now use email address to serve as the basis when
 creating a custom rule:
 
 - Email address: `/email/address/` – a valid email address or an MD5 of the
-lowercased email used in the transaction.
+  lowercased email used in the transaction.
 
-For more information on implementing custom rules, see the [Custom Rules Guide
-on our Support Center](https://support.maxmind.com/hc/en-us/articles/4408801942811-Use-Custom-Rules-and-Dispositions).
+For more information on implementing custom rules, see the
+[Custom Rules Guide on our Support Center](https://support.maxmind.com/hc/en-us/articles/4408801942811-Use-Custom-Rules-and-Dispositions).
+
 </ReleaseNote>
 
 <ReleaseNote date="2020-09-10" title="Billing and Product/Service Permission Types for Standard Users">
@@ -87,12 +89,13 @@ Factors](/minfraud) can now access the following risk factors:
 
 - `/subscores/device` – Risk associated with the device.
 - `/subscores/email_local_part` – Risk associated with the part of the email
-before the @ symbol.
+  before the @ symbol.
 - `/subscores/shipping_address` – Risk associated with the shipping address.
 
 Our [client APIs](/minfraud/evaluate-a-transaction#links-to-maxmind-client-apis)
 have been updated to support these outputs so may need to refresh yours if you
 are not interfacing directly with our rest API.
+
 </ReleaseNote>
 
 <ReleaseNote date="2020-06-24" title="Report transaction support in minFraud client APIs">
@@ -131,7 +134,7 @@ serve as the basis when creating a custom rule:
 - `/ip_address/traits/is_hosting_provider`
 - `/ip_address/traits/is_public_proxy`
 - `/ip_address/traits/is_tor_exit_node`
-</ReleaseNote>
+  </ReleaseNote>
 
 <ReleaseNote date="2020-05-08" title="Retirement of legacy minFraud SOAP API">
 On May 8, 2020, we discontinued our legacy minFraud SOAP API in order to focus
@@ -139,11 +142,11 @@ our development on our newer current APIs. We initially [announced this
 retirement in April
 2019](https://blog.maxmind.com/2019/04/important-updates-about-tls-v1-0-v1-1-unencrypted-http-requests-and-the-legacy-minfraud-soap-api/).
 
-Other [client APIs for legacy minFraud services](/minfraud/minfraud-legacy)
-(not recommended) will continue to be supported. We recommend either
-integrating with the [legacy minFraud service
-directly](/minfraud/minfraud-legacy), or using our [current minFraud
-services](/minfraud).
+Other [client APIs for legacy minFraud services](/minfraud/minfraud-legacy) (not
+recommended) will continue to be supported. We recommend either integrating with
+the [legacy minFraud service directly](/minfraud/minfraud-legacy), or using our
+[current minFraud services](/minfraud).
+
 </ReleaseNote>
 
 <ReleaseNote date="2020-04-27" title="Billing fields and is disposable email as input parameters for custom rules">
@@ -154,10 +157,10 @@ creating a custom rule:
 
 - `/billing/address` – The first line of the user's billing address.
 - `/billing/address_2` – The second line of the user's billing address.
-- `/email/is_disposable` – This field is true if MaxMind believes that the
-email address is from a disposable email provider. It is false if the address
-is not from a known disposable email provider.
-</ReleaseNote>
+- `/email/is_disposable` – This field is true if MaxMind believes that the email
+  address is from a disposable email provider. It is false if the address is not
+  from a known disposable email provider.
+  </ReleaseNote>
 
 <ReleaseNote date="2020-04-06" title="New /credit_card/is_business output">
 The `/credit_card/is_business` output is now available in minFraud Insights and
@@ -205,7 +208,9 @@ to assist you with manual review of minFraud transactions:
 - User count
 - Static IP score
 
-You can find descriptions of these outputs [here](/geoip/docs/web-services/responses).
+You can find descriptions of these outputs
+[here](/geoip/docs/web-services/responses).
+
 </ReleaseNote>
 
 <ReleaseNote date="2020-01-31" title="Retirement of legacy IIN (BIN) API">
@@ -213,9 +218,10 @@ On January 31, 2020, we discontinued our legacy IIN (BIN) API in order to focus
 development and maintenance efforts on our core services. The affected endpoint
 is `/app/bin_http`.
 
-We continue to support the IIN (BIN) [manual look-up form on our
-website](https://www.maxmind.com/en/accounts/current/minfraud/iin/lookup)
+We continue to support the IIN (BIN)
+[manual look-up form on our website](https://www.maxmind.com/en/accounts/current/minfraud/iin/lookup)
 \[login required\].
+
 </ReleaseNote>
 
 <ReleaseNote date="2020-01-29" title="Tag transactions from transaction details screen">
@@ -224,7 +230,8 @@ spam/abuse, suspected fraud) directly from the Transaction Details screen for
 an individual transaction in [minFraud
 Interactive](https://support.maxmind.com/hc/en-us/articles/4408762136603-Review-a-minFraud-Transaction).
 
-Tagging transactions allows us to detect 10-50% more fraud for you. You may
-also tag transactions outside of minFraud Interactive by using [this
-form](https://www.maxmind.com/en/accounts/current/minfraud/report-transactions).
+Tagging transactions allows us to detect 10-50% more fraud for you. You may also
+tag transactions outside of minFraud Interactive by using
+[this form](https://www.maxmind.com/en/accounts/current/minfraud/report-transactions).
+
 </ReleaseNote>

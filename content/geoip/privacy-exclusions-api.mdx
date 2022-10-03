@@ -4,9 +4,9 @@ title: Privacy Exclusions API
 ---
 
 MaxMind maintains a list of Do Not Sell My Personal Information requests. This
-API provides a simple way to retrieve [privacy exclusion
-requests](https://www.maxmind.com/en/accounts/current/do-not-sell-requests) in
-an automated fashion.
+API provides a simple way to retrieve
+[privacy exclusion requests](https://www.maxmind.com/en/accounts/current/do-not-sell-requests)
+in an automated fashion.
 
 ## Request
 
@@ -114,7 +114,7 @@ In addition to the errors documented below, client code should also be prepared
 to handle any valid HTTP 4xx or 5xx status code.
 
 | Code Error            | HTTP Status               | Error Mode                                                                                                                                               |
-|-----------------------|---------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------|
+| --------------------- | ------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | TIMESTAMP_INVALID     | 400 Bad Request           | The `updates_after` field must be in [RFC 3339 format](https://tools.ietf.org/html/rfc3339).                                                             |
 | AUTHORIZATION_INVALID | 401 Unauthorized          | Your [account ID or license key](https://www.maxmind.com/en/accounts/current/license-key) could not be authenticated.                                    |
 | ACCOUNT_ID_REQUIRED   | 401 Unauthorized          | An [account ID and license key](https://www.maxmind.com/en/accounts/current/license-key) are required to use this service.                               |

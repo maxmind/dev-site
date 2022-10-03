@@ -3,17 +3,16 @@ draft: false
 title: Geolocate an IP address using Web Services with the client-side JavaScript
 ---
 
-Our GeoIP2 JavaScript client allows you to use GeoIP2 web services
-client-side without doing any server-side integration on your end. While it is
-convenient, there are some caveats with its usage. Some browser settings and
-add-ons (such as ad blockers) may prevent the GeoIP2 JavaScript API from
-successfully calling the web services. Additionally, there may be unexpected
-usage spikes which you may want to monitor, due to moments of high traffic to
-your website(s).
+Our GeoIP2 JavaScript client allows you to use GeoIP2 web services client-side
+without doing any server-side integration on your end. While it is convenient,
+there are some caveats with its usage. Some browser settings and add-ons (such
+as ad blockers) may prevent the GeoIP2 JavaScript API from successfully calling
+the web services. Additionally, there may be unexpected usage spikes which you
+may want to monitor, due to moments of high traffic to your website(s).
 
-We highly recommend using a [server-side 
-integration](/geoip/geolocate-an-ip/web-services), as it is more secure and
-more robust than a client-side integration.
+We highly recommend using a
+[server-side integration](/geoip/geolocate-an-ip/web-services), as it is more
+secure and more robust than a client-side integration.
 
 ## Implementation
 
@@ -23,13 +22,13 @@ method/service, and providing callbacks for all scenarios.
 
 ### 1. Register your domain(s)
 
-All domains using the service must be registered. New users may [request a free
-trial](https://www.maxmind.com/en/request-service-trial?service_geoip=1) or
-[purchase web service
-credit](https://www.maxmind.com/en/geoip2-precision-services) in order to
-receive an account to register domains. Existing account holders are able to
-[register domains 
-directly](https://www.maxmind.com/en/accounts/current/geoip/javascript/domains).
+All domains using the service must be registered. New users may
+[request a free trial](https://www.maxmind.com/en/request-service-trial?service_geoip=1)
+or
+[purchase web service credit](https://www.maxmind.com/en/geoip2-precision-services)
+in order to receive an account to register domains. Existing account holders are
+able to
+[register domains directly](https://www.maxmind.com/en/accounts/current/geoip/javascript/domains).
 
 ### 2. Add a JavaScript snippet to your page
 
@@ -39,8 +38,9 @@ page.
 <Alert type="warning">
   **Do not download this JavaScript file and serve it from your server(s)!**
 
-  The JavaScript file must be served from MaxMind servers, otherwise GeoIP2
-  requests will fail.
+The JavaScript file must be served from MaxMind servers, otherwise GeoIP2
+requests will fail.
+
 </Alert>
 
 ```html
@@ -51,18 +51,18 @@ page.
 
 The JavaScript client provides 3 public methods:
 
-| Option                                         | Description                                                                                                                       |
-| ---------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------- |
-| `geoip2.country(onSuccess, onError, options)`  | Calls the "GeoIP2 Country" endpoint using the routable IP address associated with the machine on which it is running.  |
-| `geoip2.city(onSuccess, onError, options)`     | Calls the "GeoIP2 City Plus" endpoint using the routable IP address associated with the machine on which it is running.     |
-| `geoip2.insights(onSuccess, onError, options)` | Calls the "GeoIP2 Insights" endpoint using the routable IP address associated with the machine on which it is running. |
+| Option                                         | Description                                                                                                             |
+| ---------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------- |
+| `geoip2.country(onSuccess, onError, options)`  | Calls the "GeoIP2 Country" endpoint using the routable IP address associated with the machine on which it is running.   |
+| `geoip2.city(onSuccess, onError, options)`     | Calls the "GeoIP2 City Plus" endpoint using the routable IP address associated with the machine on which it is running. |
+| `geoip2.insights(onSuccess, onError, options)` | Calls the "GeoIP2 Insights" endpoint using the routable IP address associated with the machine on which it is running.  |
 
 All of the functions take the same 3 arguments:
 
-* If successful, this function calls the `onSuccess` callback. The
-  first parameter passed to the callback contains an object matching the output
-  of one of MaxMind’s [GeoIP2 web service API
-  responses](/geoip/docs/web-services/responses).
+- If successful, this function calls the `onSuccess` callback. The first
+  parameter passed to the callback contains an object matching the output of one
+  of MaxMind’s
+  [GeoIP2 web service API responses](/geoip/docs/web-services/responses).
 
   In addition to the attributes listed in the web services API docs, the object
   also has a `most_specific_subdivision` property that provides access to the
@@ -70,16 +70,16 @@ All of the functions take the same 3 arguments:
   Explorer 8, this is implemented as a non-enumerable property using
   `defineProperty`.
 
-* If there is an error, the function calls the `onError` callback with
-  the error object as a parameter.
+- If there is an error, the function calls the `onError` callback with the error
+  object as a parameter.
 
-* The optional `options` parameter is an object containing flags for the
+- The optional `options` parameter is an object containing flags for the
   service. This parameter is reserved for future use. There are no options at
   this time.
 
 ### Example: Display the user's city name in a page
 
-In this example, we are displaying the user's city name in a page.  We have 2
+In this example, we are displaying the user's city name in a page. We have 2
 files: page.html and demo.js.
 
 ```html
@@ -149,8 +149,8 @@ contains a set of key/value pairs, where the keys are things like `country` and
 
 While our REST API is documented as omitting missing keys, we add blank arrays
 and objects in the JavaScript API. This makes it much simpler to work with the
-response, as you will not need to check whether the data structure exists
-before using it.
+response, as you will not need to check whether the data structure exists before
+using it.
 
 Wherever a missing property’s value could be an object or array, we will add an
 empty object or array as needed. For example, if you call the `city()` method
@@ -183,9 +183,9 @@ If the response contains no `subdivisions` key, you will get this:
 ### Errors
 
 All errors are passed in a JavaScript object as the first parameter to the
-`onError` function. This object contains two keys, `code` and `error`. `code`
-is a machine-readable error code that will not change. `error` is a
-human-readable description of the error.
+`onError` function. This object contains two keys, `code` and `error`. `code` is
+a machine-readable error code that will not change. `error` is a human-readable
+description of the error.
 
 | Code                         | HTTP Status          | Description                                                                                             |
 | ---------------------------- | -------------------- | ------------------------------------------------------------------------------------------------------- |
@@ -203,9 +203,9 @@ human-readable description of the error.
 ### Versioning
 
 This document covers **version 2.1** of the GeoIP2 JavaScript API. Whenever
-MaxMind releases a new version of the JavaScript API, we will use a new path,
-so the old JavaScript files will always be accessible. For example, if we
-released version 42.6 of the JavaScript API, its path would be
+MaxMind releases a new version of the JavaScript API, we will use a new path, so
+the old JavaScript files will always be accessible. For example, if we released
+version 42.6 of the JavaScript API, its path would be
 `/js/apis/geoip2/**v42.6**/geoip2.js`.
 
 However, support will only be provided for the newest version of the JavaScript
@@ -216,19 +216,19 @@ separately. We will bump the JavaScript API version when we add new features or
 need to break backwards compatibility with previous versions of the JavaScript
 API.
 
-Version 2.1 of the JavaScript API uses version 2.1 of the [GeoIP2 web
-services REST API](https://dev.maxmind.com/geoip/geoip2/web-services/).
+Version 2.1 of the JavaScript API uses version 2.1 of the
+[GeoIP2 web services REST API](https://dev.maxmind.com/geoip/geoip2/web-services/).
 
 ### Browser support
 
 MaxMind is committed to support all browser versions that are currently
-supported by their respective creators. When the creator offers multiple
-support levels, we only support the browser through its initial support phase.
-For example, Microsoft has two support phases, Mainstream and Extended. We are
+supported by their respective creators. When the creator offers multiple support
+levels, we only support the browser through its initial support phase. For
+example, Microsoft has two support phases, Mainstream and Extended. We are
 committed to supporting browsers through the end of the Mainstream support
-phase. We reserve the right to end support at any time for any browser no
-longer supported by its creator. In order to ensure your data is as safe and
-secure as possible, we recommend using the encrypted HTTP (HTTPS) protocol.
+phase. We reserve the right to end support at any time for any browser no longer
+supported by its creator. In order to ensure your data is as safe and secure as
+possible, we recommend using the encrypted HTTP (HTTPS) protocol.
 
 Here is the list of browsers supported:
 

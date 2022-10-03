@@ -6,8 +6,8 @@ title: Updating GeoIP and GeoLite Databases
 There are two methods for automatically updating GeoIP2 and GeoIP Legacy binary
 databases:
 
-1. Using MaxMind's [GeoIP Update
-program](https://github.com/maxmind/geoipupdate/releases).
+1. Using MaxMind's
+   [GeoIP Update program](https://github.com/maxmind/geoipupdate/releases).
 2. Directly downloading the database.
 
 For clients using our binary database format, we highly recommend using GeoIP
@@ -21,36 +21,37 @@ both GeoIP2, GeoIP Legacy, and GeoLite2 binary databases.
 
 ### 1. Install GeoIP Update
 
-Install GeoIP Update. The latest release may be downloaded from [GitHub
-Releases](https://github.com/maxmind/geoipupdate/releases). See
+Install GeoIP Update. The latest release may be downloaded from
+[GitHub Releases](https://github.com/maxmind/geoipupdate/releases). See
 [the installation instructions](https://github.com/maxmind/geoipupdate) for more
-information. GeoIP Update can also be installed via our [Docker
-image](https://hub.docker.com/r/maxmindinc/geoipupdate).
+information. GeoIP Update can also be installed via our
+[Docker image](https://hub.docker.com/r/maxmindinc/geoipupdate).
 
 If you are using an older version of GeoIP Update, you may need to upgrade to
 GeoIP Update 4.x or later version. The 4.x and later versions meet our
-requirement for using TLS 1.2 or greater for all requests to our servers to
-keep your data secure.
+requirement for using TLS 1.2 or greater for all requests to our servers to keep
+your data secure.
 
 Please see our [upgrade guide](/geoip/upgrading-geoip-update) for more
 information on upgrading from an older version of GeoIP Update.
 
 ### 2. Obtain GeoIP.conf with Account Information
 
-Log in to your account portal to download a partially [pre-filled configuration
-file](https://www.maxmind.com/en/accounts/current/license-key/GeoIP.conf) and
-save it in your configuration directory (e.g., `/usr/local/etc/`) as
+Log in to your account portal to download a partially
+[pre-filled configuration file](https://www.maxmind.com/en/accounts/current/license-key/GeoIP.conf)
+and save it in your configuration directory (e.g., `/usr/local/etc/`) as
 `GeoIP.conf`. You will need to replace the `YOUR_LICENSE_KEY_HERE` placeholder
 with an active license key associated with your MaxMind account. You can see
-your license key information on [your account License Keys
-page](https://www.maxmind.com/en/accounts/current/license-key).
+your license key information on
+[your account License Keys page](https://www.maxmind.com/en/accounts/current/license-key).
 
 <Alert type="warning">
   You may also write this file by hand using the template below
   (**not  recommended**).
 
-  Note that for `geoipupdate` versions less than 2.5.0, use `UserId` instead
-  of `AccountID` and `ProductIds` instead of `EditionIDs`.
+Note that for `geoipupdate` versions less than 2.5.0, use `UserId` instead of
+`AccountID` and `ProductIds` instead of `EditionIDs`.
+
 </Alert>
 
 ```bash
@@ -81,17 +82,17 @@ The information provided can often help to clarify issues. Additional
 instructions for GeoIP Update can be viewed when running `man geoipupdate` on
 the command line.
 
-Please note that GeoIP Update requires current access to database updates to
-run properly. If your subscription needs to be renewed, updates can be
-purchased while logged into [your Account Summary
-page](https://www.maxmind.com/en/accounts/current/people/current).
+Please note that GeoIP Update requires current access to database updates to run
+properly. If your subscription needs to be renewed, updates can be purchased
+while logged into
+[your Account Summary page](https://www.maxmind.com/en/accounts/current/people/current).
 
-Updating to the [latest release of GeoIP
-Update](https://github.com/maxmind/geoipupdate/releases) may be required to
-resolve some errors. If you are not currently using version 4 or higher of GeoIP
-Update and would like to learn about upgrading to the current version of the
-program, read our [guide on how to upgrade to GeoIP Update version
-4.x](/geoip/upgrading-geoip-update).
+Updating to the
+[latest release of GeoIP Update](https://github.com/maxmind/geoipupdate/releases)
+may be required to resolve some errors. If you are not currently using version 4
+or higher of GeoIP Update and would like to learn about upgrading to the current
+version of the program, read our
+[guide on how to upgrade to GeoIP Update version 4.x](/geoip/upgrading-geoip-update).
 
 ## Directly downloading databases
 
@@ -99,16 +100,16 @@ This is only recommended for systems unable to use GeoIP Update or for clients
 using the CSV-format databases.
 
 In order to download the databases from a script or program, please use the
-permalinks found on the [GeoIP download
-page](https://www.maxmind.com/en/accounts/current/geoip/downloads).
+permalinks found on the
+[GeoIP download page](https://www.maxmind.com/en/accounts/current/geoip/downloads).
 
 1. In the “Download Links” column, click “Get Permalink(s)” for the desired
-database.
+   database.
 2. Copy the permalink(s) provided in the modal window.
-3. Replace `YOUR_LICENSE_KEY` with [your license
-key](https://www.maxmind.com/en/accounts/current/license-key).
+3. Replace `YOUR_LICENSE_KEY` with
+   [your license key](https://www.maxmind.com/en/accounts/current/license-key).
 4. If you are using `wget` or `curl` from a shell script, please be sure to
-quote the URL.
+   quote the URL.
 
 This download will return a compressed file in gzip (for binary) or zip (for
 CSV) format, which can be uncompressed using a program like
@@ -118,12 +119,12 @@ CSV) format, which can be uncompressed using a program like
 
 You can check the date of a given database’s latest release by issuing a HEAD
 request for that database’s download permalink URL. The download permalink can
-be found in the [Download
-Databases](https://www.maxmind.com/en/accounts/current/geoip/downloads) section
-of your account portal.
+be found in the
+[Download Databases](https://www.maxmind.com/en/accounts/current/geoip/downloads)
+section of your account portal.
 
-For example, using the permalink for the GeoIP2 City CSV database, you can
-issue a command like the following:
+For example, using the permalink for the GeoIP2 City CSV database, you can issue
+a command like the following:
 
 ```cli
 curl -I 'https://download.maxmind.com/app/geoip_download?edition_id=GeoIP2-City-CSV&license_key=YOUR_LICENSE_KEY&suffix=zip'
@@ -138,8 +139,8 @@ appear in the file name. These checks can be incorporated into your own script
 or program, according to your needs.
 
 This method only issues a HEAD request, rather than a download request, so
-running this check won’t count against your [daily database download
-limit](https://support.maxmind.com/hc/en-us/articles/4408216129947).
+running this check won’t count against your
+[daily database download limit](https://support.maxmind.com/hc/en-us/articles/4408216129947).
 
 ## Third-party tools
 
@@ -149,11 +150,11 @@ limit](https://support.maxmind.com/hc/en-us/articles/4408216129947).
 </Alert>
 
 The following tools have been developed by the community of GeoIP users. MaxMind
-does not offer support for these integrations, or maintain them. See [our guide
-on developing for the community](/contribute) if you have questions about
-creating or sharing your own unofficial tools.
+does not offer support for these integrations, or maintain them. See
+[our guide on developing for the community](/contribute) if you have questions
+about creating or sharing your own unofficial tools.
 
-* [Geoip2 Update](https://github.com/tronovav/geoip2-update) - A PHP tool for
+- [Geoip2 Update](https://github.com/tronovav/geoip2-update) - A PHP tool for
   updating MaxMind GeoLite2 and GeoIP2 databases from your script or via
   Composer.
 
@@ -170,6 +171,6 @@ notify customers by [posting a release note](/geoip/release-notes).
 
 ## Download limits
 
-*MaxMind reserves the right to [limit the number of
-downloads](https://support.maxmind.com/hc/en-us/articles/4408216129947) made
-within a limited period of time.*
+_MaxMind reserves the right to
+[limit the number of downloads](https://support.maxmind.com/hc/en-us/articles/4408216129947)
+made within a limited period of time._

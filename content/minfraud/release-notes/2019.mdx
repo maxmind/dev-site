@@ -30,6 +30,7 @@ The minFraud Transactions page is used for review, dispositioning, tagging, and
 exporting transactions. See our
 [guide](https://support.maxmind.com/hc/en-us/articles/4408762136603-Review-a-minFraud-Transaction)
 for more info.
+
 </ReleaseNote>
 
 <ReleaseNote date="2019-12-11" title="Changes to Japan Postal Codes">
@@ -61,14 +62,15 @@ Insights and Factors web
 services](https://www.maxmind.com/en/solutions/minfraud-services):
 
 - `static_ip_score` – An indicator of how static or dynamic an IP address is.
-The value ranges from 0 to 99.99 with higher values meaning a greater static
-association. For example, many IPs with a `user_type` of `cellular` have a
-score under one. Static Cable/DSL IPs typically have a score above thirty.
+  The value ranges from 0 to 99.99 with higher values meaning a greater static
+  association. For example, many IPs with a `user_type` of `cellular` have a
+  score under one. Static Cable/DSL IPs typically have a score above thirty.
 
-  This indicator can be useful for deciding whether an IP address represents
-  the same user over time.
+  This indicator can be useful for deciding whether an IP address represents the
+  same user over time.
 
 The `static_ip_score` output is present in the `traits` object.
+
 </ReleaseNote>
 
 <ReleaseNote date="2019-10-14" title="Final reminder of security-related retirements">
@@ -79,8 +81,9 @@ an error. Please update to TLS 1.2+ to avoid service disruption. You may need
 to upgrade your technology stack to a later version, or make code changes to do
 so.
 
-[Contact us](https://support.maxmind.com/hc/en-us/requests/new) for support or if you
-have questions.
+[Contact us](https://support.maxmind.com/hc/en-us/requests/new) for support or
+if you have questions.
+
 </ReleaseNote>
 
 <ReleaseNote date="2019-10-03" title="Improved cellular IP detection">
@@ -107,6 +110,7 @@ non-administrators will only see their own activity. You can find the account
 activity log in your account portal under 'Account Information' or
 [here](https://www.maxmind.com/en/accounts/current/activity-log) \[login
 required\].
+
 </ReleaseNote>
 
 <ReleaseNote date="2019-09-30" title="High risk IP country deprecation">
@@ -123,14 +127,16 @@ service](https://www.maxmind.com/en/geoip2-precision-insights), and [minFraud
 Insights and Factors web
 services](https://www.maxmind.com/en/solutions/minfraud-services):
 
-- `network` – The network in [CIDR notation](https://en.wikipedia.org/wiki/Classless_Inter-Domain_Routing#CIDR_notation)
-associated with the record. This is the largest network where all of the
-fields besides `ip_address` have the same value.
-- `user_count` – The estimated number of users sharing the IP/network during
-the past 24 hours. For IPv4, the count is for the individual IP. For IPv6,
-the count is for the /64 network.
+- `network` – The network in
+  [CIDR notation](https://en.wikipedia.org/wiki/Classless_Inter-Domain_Routing#CIDR_notation)
+  associated with the record. This is the largest network where all of the
+  fields besides `ip_address` have the same value.
+- `user_count` – The estimated number of users sharing the IP/network during the
+  past 24 hours. For IPv4, the count is for the individual IP. For IPv6, the
+  count is for the /64 network.
 
 Both of these outputs are present in the `traits` object.
+
 </ReleaseNote>
 
 <ReleaseNote date="2019-09-16" title="Planned warning interruption (September 2019)">
@@ -138,8 +144,8 @@ Both of these outputs are present in the `traits` object.
 25, 2019**
 
 There will be a planned service interruption for all requests to MaxMind
-services that use TLS versions 1.0 and 1.1, and for unencrypted HTTP requests
-to MaxMind legacy minFraud services (e.g. minFraud Standard, minFraud Premium,
+services that use TLS versions 1.0 and 1.1, and for unencrypted HTTP requests to
+MaxMind legacy minFraud services (e.g. minFraud Standard, minFraud Premium,
 Proxy Detection web service, IIN service). **This will take place for up to 8
 hours from 14:00-22:00 UTC on September 25, 2019.**
 
@@ -148,10 +154,11 @@ requests to legacy minFraud endpoints will fail with an error.
 
 To avoid service interruption, you may need to upgrade some part of your
 technology stack to a later version, or you may need to make code changes. If
-you have any questions, please do not hesitate to [contact
-us](https://support.maxmind.com/hc/en-us/requests/new). Additional info is available on
-our
+you have any questions, please do not hesitate to
+[contact us](https://support.maxmind.com/hc/en-us/requests/new). Additional info
+is available on our
 [blog](https://blog.maxmind.com/2019/04/important-updates-about-tls-v1-0-v1-1-unencrypted-http-requests-and-the-legacy-minfraud-soap-api/).
+
 </ReleaseNote>
 
 <ReleaseNote date="2019-08-29" title="IP and email tenure deprecation">
@@ -177,8 +184,8 @@ business user type as a result of these improvements.
 28, 2019**
 
 There will be a planned service interruption for all requests to MaxMind
-services that use TLS versions 1.0 and 1.1, and for unencrypted HTTP requests
-to MaxMind legacy minFraud services (e.g. minFraud Standard, minFraud Premium,
+services that use TLS versions 1.0 and 1.1, and for unencrypted HTTP requests to
+MaxMind legacy minFraud services (e.g. minFraud Standard, minFraud Premium,
 Proxy Detection web service, IIN service). **This will take place for up to 8
 hours from 14:00-22:00 UTC on August 28, 2019.**
 
@@ -187,10 +194,11 @@ requests to legacy minFraud endpoints will fail with an error.
 
 To avoid service interruption, you may need to upgrade some part of your
 technology stack to a later version, or you may need to make code changes. If
-you have any questions, please do not hesitate to [contact
-us](https://support.maxmind.com/hc/en-us/requests/new). Additional info is available on
-our
+you have any questions, please do not hesitate to
+[contact us](https://support.maxmind.com/hc/en-us/requests/new). Additional info
+is available on our
 [blog](https://blog.maxmind.com/2019/04/important-updates-about-tls-v1-0-v1-1-unencrypted-http-requests-and-the-legacy-minfraud-soap-api/).
+
 </ReleaseNote>
 
 <ReleaseNote date="2019-08-05" title="Retirement of legacy IIN (BIN) API service">
@@ -199,13 +207,14 @@ to focus development and maintenance efforts on our core services. This means
 that the service will no longer function if you are querying the URL below:
 [https://minfraud.maxmind.com/app/bin_http](https://minfraud.maxmind.com/app/bin_http)
 
-Please note that we continue to support the [IIN (BIN) look-up form on our
-website](https://www.maxmind.com/en/accounts/current/minfraud/iin/lookup)
+Please note that we continue to support the
+[IIN (BIN) look-up form on our website](https://www.maxmind.com/en/accounts/current/minfraud/iin/lookup)
 \[login required\], so that remains an option for your use. If you require an
-API because of volume considerations, we recommend either using our [minFraud
-Insights API](https://www.maxmind.com/en/accounts/current/minfraud/iin/lookup)
+API because of volume considerations, we recommend either using our
+[minFraud Insights API](https://www.maxmind.com/en/accounts/current/minfraud/iin/lookup)
 (IP address is a required input field) or integrating an alternative
 commercially available solution.
+
 </ReleaseNote>
 
 <ReleaseNote date="2019-07-24" title="Planned warning interruption">
@@ -224,10 +233,11 @@ requests to legacy minFraud endpoints will fail with an error.
 
 To avoid service interruption, you may need to upgrade some part of your
 technology stack to a later version, or you may need to make code changes. If
-you have any questions, please do not hesitate to [contact
-us](https://support.maxmind.com/hc/en-us/requests/new). Additional info is available on
-our
+you have any questions, please do not hesitate to
+[contact us](https://support.maxmind.com/hc/en-us/requests/new). Additional info
+is available on our
 [blog](https://blog.maxmind.com/2019/04/important-updates-about-tls-v1-0-v1-1-unencrypted-http-requests-and-the-legacy-minfraud-soap-api/).
+
 </ReleaseNote>
 
 <ReleaseNote date="2019-07-22" title="Disable IP Risk">

@@ -140,18 +140,7 @@
     "lint-staged": "^13.0.3",
     "npm-run-all": "^4.1.5",
     "prettier": "^2.6.1",
-    "remark-cli": "^11.0.0",
-    "remark-gfm": "^3.0.1",
     "remark-html": "^15.0.1",
-    "remark-lint-emphasis-marker": "^3.1.1",
-    "remark-lint-list-item-spacing": "^4.1.1",
-    "remark-lint-no-empty-url": "^3.1.1",
-    "remark-lint-rule-style": "^3.1.1",
-    "remark-lint-strong-marker": "^3.1.1",
-    "remark-lint-unordered-list-marker-style": "^3.1.1",
-    "remark-preset-github": "^4.0.1",
-    "remark-preset-lint-markdown-style-guide": "^5.1.2",
-    "remark-preset-lint-recommended": "^6.1.2",
     "sass": "^1.55.0",
     "stylelint": "^14.12.1",
     "stylelint-config-recommended": "^9.0.0",
@@ -166,16 +155,16 @@
   "license": "MIT",
   "lint-staged": {
     "**/*.json": [
-      "npm run fix:json"
+      "npx eslint --fix --config '.eslintrc.js'"
     ],
     "content/**/*.mdx": [
-      "npm run fix:content"
+      "npx prettier --write --embedded-language-formatting off --config './content/.prettierrc.js'"
     ],
     "**/*.{js,ts,tsx}": [
-      "npm run fix:scripts"
+      "npx eslint --fix --ignore-pattern 'functions/**/*.js' --config '.eslintrc.js'"
     ],
     "src/**/*.[s]css": [
-      "npm run fix:styles"
+      "npx stylelint --fix --config '.stylelintrc.js'"
     ]
   },
   "name": "dev-site",
@@ -200,13 +189,13 @@
     "deploy": "firebase deploy",
     "develop": "gatsby clean && GATSBY_URL=http://localhost:8000 gatsby develop",
     "fix": "run-p fix:*",
-    "fix:content": "prettier --write **/*.mdx --embedded-language-formatting off --loglevel silent && remark . --output --ext mdx --quiet",
+    "fix:content": "prettier --write '**/*.mdx' --embedded-language-formatting off",
     "fix:json": "npm run lint:json --fix",
     "fix:scripts": "npm run lint:scripts --fix",
     "fix:styles": "npm run lint:styles --fix",
     "lint": "run-p lint:*",
     "lint:configs": "eslint .*rc.js --no-ignore",
-    "lint:content": "remark . --ext mdx --quiet",
+    "lint:content": "prettier --check '**/*.mdx' --embedded-language-formatting off",
     "lint:json": "eslint . --ext json",
     "lint:scripts": "tsc && eslint . --ext js,ts,tsx --ignore-pattern 'functions/**/*.js'",
     "lint:styles": "stylelint ./src/**/*.{css,scss,sass}",

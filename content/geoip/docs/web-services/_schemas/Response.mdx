@@ -10,12 +10,12 @@ import responseJson from '../_examples/geoip';
   always consists of an object (aka map or hash). Each key in the object in turn
   maps to an object or an array of objects.
 
-  The exact set of top-level keys varies based on the particular GeoIP2
-  web service you are using. If a key maps to an undefined or empty value,
-  it is not included in the JSON object. This applies both to top-level keys and
-  the objects they map to.
+The exact set of top-level keys varies based on the particular GeoIP2 web
+service you are using. If a key maps to an undefined or empty value, it is not
+included in the JSON object. This applies both to top-level keys and the objects
+they map to.
 
-  The data returned in the document will be in UTF-8 encoding.
+The data returned in the document will be in UTF-8 encoding.
 
   <Property
     linkToSchemaName={'Response | City'}
@@ -102,6 +102,7 @@ import responseJson from '../_examples/geoip';
     object for England as the first element in `subdivisions` array and an
     object for Oxfordshire as the second element. The `subdivisions` array for
     Minneapolis in the United States will have a single object for Minnesota.
+
   </Property>
 
   <Property
