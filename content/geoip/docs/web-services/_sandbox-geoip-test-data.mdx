@@ -7,17 +7,11 @@ testing purposes only.
 
 There are a limited number of IP addresses in the test database for the GeoIP
 web services on the Sandbox. The Sandbox versions of the GeoIP web services use
-the same data as our test databases, which are published to Github:
+[special test data that is published to Github](https://github.com/maxmind/MaxMind-DB/blob/main/source-data/GeoIP2-Precision-Enterprise-Sandbox-Test.json).
 
-- The Sandbox version of our GeoIP City Plus and Insights web service both use
-  the
-  [Precision Enterprise test database](https://github.com/maxmind/MaxMind-DB/blob/main/source-data/GeoIP2-Precision-Enterprise-Test.json).
-- The Sandbox version of our GeoIP Country web service uses the
-  [Country test database](https://github.com/maxmind/MaxMind-DB/blob/main/source-data/GeoIP2-Country-Test.json).
-
-If you attempt to submit an IP address that doesn't exist in the test data for
-the appropriate service, you will receive an error stating that the IP address
-does not exist in our database.
+If you attempt to submit an IP address that doesn't exist in the test data, you
+will receive an error stating that the IP address does not exist in our
+database.
 
 The test data is displayed in JSON format, and would be the expected response
 for a query using the listed IP address.
