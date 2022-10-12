@@ -5,7 +5,6 @@ title: minFraud Legacy Web Service API
 
 import SandboxIntro from '/content/_sandbox-intro.mdx';
 import SandboxLicenseKey from '/content/_sandbox-license-key.mdx';
-import SandboxTestData from './_sandbox-mf-test-data.mdx';
 import SandboxLimits from '/content/_sandbox-limits.mdx';
 import SandboxLearnMore from '/content/_sandbox-learn-more.mdx';
 
@@ -858,7 +857,26 @@ authenticate your requests.
 
 ### Test data for the Sandbox minFraud Legacy service
 
-<SandboxTestData />
+You may only submit approved test data to the Sandbox version of the minFraud
+services. At this time, the only approved test transaction data are the three IP
+addresses listed below. You can submit transactions to Sandbox minFraud services
+with any of the following IP addresses:
+
+- `146.243.121.22`
+- `152.216.7.110`
+- `23.10.87.103`
+
+You should receive a valid minFraud response.
+
+You should not submit real transaction data to the Sandbox version of the
+minFraud services, but you can submit transactions with dummy data.
+
+The Sandbox environment imposes volume limits on API requests to prevent abuse.
+The Sandbox should not be used to test the capacity of the production web
+service in high volume situations.
+
+If you are running into the request limit and need help, please
+[reach out to our support team for assistance](https://support.maxmind.com/hc/en-us/requests/new).
 
 <SandboxLimits />
 
