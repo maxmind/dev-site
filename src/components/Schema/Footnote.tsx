@@ -3,7 +3,7 @@ import * as React from 'react';
 
 import * as styles from './Footnote.module.scss';
 
-const Footnote: React.FC = (props) => {
+const Footnote: React.FC<React.PropsWithChildren> = (props) => {
   const { children } = props;
 
   return (
