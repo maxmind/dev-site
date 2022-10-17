@@ -13,6 +13,8 @@ const Th: React.FC<React.HTMLProps<HTMLTableDataCellElement>> = ({
     className={classNames(className, styles.th)}
     {...props}
   >
+    {/* eslint-disable-next-line max-len */ }
+    {/* @ts-expect-error: @type for @mdx-js/react has implicit children which is incompat with react 18 */}
     <MDXProvider
       disableParentContext
     >

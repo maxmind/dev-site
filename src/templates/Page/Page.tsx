@@ -74,11 +74,12 @@ const Page: React.FC<IPage> = (props) => {
           </H1>
         </header>
 
-        { tableOfContents !== null && (
-          <aside
-            className={styles.aside}
-          >
-            { !isReleaseNotesPage &&
+        <>
+          { tableOfContents !== null && (
+            <aside
+              className={styles.aside}
+            >
+              { !isReleaseNotesPage &&
             tableOfContents &&
             tableOfContents.items?.length > 0 &&
             (
@@ -87,14 +88,15 @@ const Page: React.FC<IPage> = (props) => {
                 items={tableOfContents.items}
               />
             )}
-            { isReleaseNotesPage &&
-            <ReleaseNotesArchiveList
-              className={styles.tableOfContents}
-              type={type as 'minfraud' | 'geoip'}
-            />
-            }
-          </aside>
-        )}
+              { isReleaseNotesPage &&
+              <ReleaseNotesArchiveList
+                className={styles.tableOfContents}
+                type={type as 'minfraud' | 'geoip'}
+              />
+              }
+            </aside>
+          )}
+        </>
 
         <section
           className={styles.content}
@@ -113,53 +115,59 @@ const Page: React.FC<IPage> = (props) => {
           )}
         </section>
 
-        {(previousPage || nextPage) && (
-          <footer
-            className={styles.footer}
-          >
-            {previousPage && (
-              <Link
-                className={styles['footerPrevious']}
-                to={previousPage.to}
-              >
-                <FaArrowLeft
-                  className={styles['footerArrow']}
-                />
-                <span
-                  className={styles['footerDirection']}
-                >
-                  Previous
-                </span>
-                <span
-                  className={styles['footerTitle']}
-                >
-                  {previousPage.title}
-                </span>
-              </Link>
-            )}
+        <>
+          {(previousPage || nextPage) && (
+            <footer
+              className={styles.footer}
+            >
+              <>
+                {previousPage && (
+                  <Link
+                    className={styles['footerPrevious']}
+                    to={previousPage.to}
+                  >
+                    <FaArrowLeft
+                      className={styles['footerArrow']}
+                    />
+                    <span
+                      className={styles['footerDirection']}
+                    >
+                      Previous
+                    </span>
+                    <span
+                      className={styles['footerTitle']}
+                    >
+                      {previousPage.title}
+                    </span>
+                  </Link>
+                )}
+              </>
 
-            {nextPage && (
-              <Link
-                className={styles['footerNext']}
-                to={nextPage.to}
-              >
-                <FaArrowRight
-                  className={styles['footerArrow']}
-                />
-                <span
-                  className={styles['footerDirection']}
-                >
-                  Next
-                </span>
-                <span
-                  className={styles['footerTitle']}
-                >
-                  {nextPage.title}
-                </span>
-              </Link>
-            )}
-          </footer>
-        )}
+              <>
+                {nextPage && (
+                  <Link
+                    className={styles['footerNext']}
+                    to={nextPage.to}
+                  >
+                    <FaArrowRight
+                      className={styles['footerArrow']}
+                    />
+                    <span
+                      className={styles['footerDirection']}
+                    >
+                      Next
+                    </span>
+                    <span
+                      className={styles['footerTitle']}
+                    >
+                      {nextPage.title}
+                    </span>
+                  </Link>
+                )}
+              </>
+            </footer>
+          )}
+        </>
       </article>
     </Layout>
   );

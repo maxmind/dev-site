@@ -7,6 +7,10 @@ import {
 } from '@reach/router';
 import { mount, ReactWrapper } from 'enzyme';
 import * as React from 'react';
+import { TextEncoder } from 'util';
+
+// TODO: Remove this once we get off of enzyme
+global.TextEncoder = TextEncoder;
 
 global.mountWithRouter = (child: React.ReactElement): ReactWrapper => {
   const history = createHistory(createMemorySource('/starting/url#foo'));

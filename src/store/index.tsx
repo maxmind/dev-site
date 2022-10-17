@@ -9,10 +9,6 @@ interface IAction {
   type: 'change_language' | undefined;
 }
 
-interface IProvider {
-  children?: React.ReactNode;
-}
-
 let initialContext: IContext;
 if (typeof window !== 'undefined') {
   initialContext = {
@@ -47,7 +43,7 @@ export const Store =
     dispatch: () => null,
   });
 
-export const StoreProvider: React.FC = (props: IProvider) => {
+export const StoreProvider: React.FC<React.PropsWithChildren> = (props) => {
   const [
     context,
     dispatch,
