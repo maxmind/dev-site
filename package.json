@@ -25,7 +25,7 @@
     "@types/node-fetch": "^2.6.1",
     "@types/prismjs": "^1.26.0",
     "@types/react": "^18.0.22",
-    "@types/react-dom": "^18.0.7",
+    "@types/react-dom": "^18.0.8",
     "@types/react-helmet": "^6.1.5",
     "@types/unist": "^2.0.3",
     "airbnb-prop-types": "^2.16.0",
