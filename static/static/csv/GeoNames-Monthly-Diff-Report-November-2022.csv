@@ -1,0 +1,66 @@
+diff_in,old_geoname_id,new_geoname_id,old_city_name,new_city_name,old_country_name,new_country_name,old_country_code,new_country_code,old_subdivision_codes,new_subdivision_codes
+city_name,2795100,2795100,Ypres,Ieper,Belgium,Belgium,BE,BE,"VLG, VWV","VLG, VWV"
+city_name,632514,632514,Vanhakylae,Old Ulvila,Finland,Finland,FI,FI,17,17
+city_name,3043356,3043356,Ullo,UEllo,Hungary,Hungary,HU,HU,PE,PE
+city_name,829129,829129,Zaozërnyy,Zaozyornyy,Russia,Russia,RU,RU,ARK,ARK
+city_name,472231,472231,Volzhskiy,Volzhsky,Russia,Russia,RU,RU,VGG,VGG
+city_name,8691395,8691395,Soheul-eup,Sohol-eup,South Korea,South Korea,KR,KR,41,41
+city_name,704202,704202,Krasnyi Luch,Khrustalnyi,Ukraine,Ukraine,UA,UA,9,9
+city_name,695379,695379,Rovenki,Rovenky,Ukraine,Ukraine,UA,UA,9,9
+geoname_id,2061927,7839635,Sandstone,Sandstone,Australia,Australia,AU,AU,WA,WA
+geoname_id,7483957,7483954,Lalpur,Lalpur,Bangladesh,Bangladesh,BD,BD,"E, 44","E, 44"
+geoname_id,2789696,2789697,Ophoven,Ophoven,Belgium,Belgium,BE,BE,"VLG, VLI","VLG, VLI"
+geoname_id,6316861,6321272,Chapada Gaucha,Chapada Gaucha,Brazil,Brazil,BR,BR,MG,MG
+geoname_id,6319591,3392438,Pedro Afonso,Pedro Afonso,Brazil,Brazil,BR,BR,TO,TO
+geoname_id,3452515,3452514,Pouso Alto,Pouso Alto,Brazil,Brazil,BR,BR,MG,MG
+geoname_id,3450872,6323873,Rosario Oeste,Rosario Oeste,Brazil,Brazil,BR,BR,MT,MT
+geoname_id,3388210,3388207,Sao Pedro,Sao Pedro,Brazil,Brazil,BR,BR,RN,RN
+geoname_id,3388847,6319470,Sao Felix do Xingu,Sao Felix do Xingu,Brazil,Brazil,BR,BR,PA,PA
+geoname_id,3445539,3445543,Vargem Alegre,Vargem Alegre,Brazil,Brazil,BR,BR,MG,MG
+geoname_id,6317707,6323770,Nova Andradina,Nova Andradina,Brazil,Brazil,BR,BR,MS,MS
+geoname_id,6319378,3405806,Belterra,Belterra,Brazil,Brazil,BR,BR,PA,PA
+geoname_id,3394116,12494565,Murici,Murici,Brazil,Brazil,BR,BR,AL,AL
+geoname_id,11669527,6318630,Sapezal,Sapezal,Brazil,Brazil,BR,BR,MT,MT
+geoname_id,3390420,3390418,Riacho dos Cavalos,Riacho dos Cavalos,Brazil,Brazil,BR,BR,PB,PB
+geoname_id,6319342,3662252,Sao Paulo de Olivenca,Sao Paulo de Olivenca,Brazil,Brazil,BR,BR,AM,AM
+geoname_id,3469942,3469933,Boa Esperanca,Boa Esperanca,Brazil,Brazil,BR,BR,ES,ES
+geoname_id,6316460,3411874,Augustinopolis,Augustinopolis,Brazil,Brazil,BR,BR,TO,TO
+geoname_id,6319325,3663694,Jutai,Jutai,Brazil,Brazil,BR,BR,AM,AM
+geoname_id,6318187,6322523,Rosana,Rosana,Brazil,Brazil,BR,BR,SP,SP
+geoname_id,3460558,6323831,Itiquira,Itiquira,Brazil,Brazil,BR,BR,MT,MT
+geoname_id,6324149,6317803,Novo Sao Joaquim,Novo Sao Joaquim,Brazil,Brazil,BR,BR,MT,MT
+geoname_id,7692676,3450237,Santa Fe,Santa Fe,Brazil,Brazil,BR,BR,PR,PR
+geoname_id,3405863,3405864,Belem,Belem,Brazil,Brazil,BR,BR,PB,PB
+geoname_id,6319721,3397292,Joao Lisboa,Joao Lisboa,Brazil,Brazil,BR,BR,MA,MA
+geoname_id,10186795,1810445,Gaoping,Gaoping,China,China,CN,CN,SC,SC
+geoname_id,2807201,2807200,Wittstock,Wittstock,Germany,Germany,DE,DE,BB,BB
+geoname_id,2943818,2943814,Brombach,Brombach,Germany,Germany,DE,DE,BW,BW
+geoname_id,6551118,2818107,Usedom,Usedom,Germany,Germany,DE,DE,MV,MV
+geoname_id,2910493,2910492,Hargarten,Hargarten,Germany,Germany,DE,DE,RP,RP
+geoname_id,1259190,10556452,Puranpur,Puranpur,India,India,IN,IN,UP,UP
+geoname_id,1278201,1278202,Atmakur,Atmakur,India,India,IN,IN,AP,AP
+geoname_id,1278680,1278679,Anandpur,Anandpur,India,India,IN,IN,GJ,GJ
+geoname_id,1258599,10497598,Rampur,Rampur,India,India,IN,IN,UP,UP
+geoname_id,1627240,6828701,Sidotopo,Sidotopo,Indonesia,Indonesia,ID,ID,JI,JI
+geoname_id,6763647,1640594,Kedungsari,Kedungsari,Indonesia,Indonesia,ID,ID,JT,JT
+geoname_id,1972759,6405808,Kedungwuluh,Kedungwuluh,Indonesia,Indonesia,ID,ID,JT,JT
+geoname_id,3168269,8949734,San Giovanni,San Giovanni,Italy,Italy,IT,IT,"32, BZ","32, BZ"
+geoname_id,8411877,8412231,Oshimizu,Oshimizu,Japan,Japan,JP,JP,2,2
+geoname_id,8945206,3523971,Los Naranjos,Los Naranjos,Mexico,Mexico,MX,MX,VER,VER
+geoname_id,2192340,2192341,Claremont,Claremont,New Zealand,New Zealand,NZ,NZ,CAN,CAN
+geoname_id,3136429,3158697,Eide,Eide,Norway,Norway,NO,NO,15,15
+geoname_id,3144759,3144754,Nes,Nes,Norway,Norway,NO,NO,30,30
+geoname_id,11696088,3132911,Vale,Vale,Norway,Norway,NO,NO,38,38
+geoname_id,3161413,3161412,Bjordal,Bjordal,Norway,Norway,NO,NO,46,46
+geoname_id,3136947,3136946,Steinkjer,Steinkjer,Norway,Norway,NO,NO,50,50
+geoname_id,3134968,3134969,Sylte,Sylte,Norway,Norway,NO,NO,15,15
+geoname_id,3162413,3162412,Aure,Aure,Norway,Norway,NO,NO,15,15
+geoname_id,1732067,1732068,Aggunetan,Aggunetan,Philippines,Philippines,PH,PH,"02, CAG","02, CAG"
+geoname_id,504831,504830,Proletarsk,Proletarsk,Russia,Russia,RU,RU,ROS,ROS
+geoname_id,2514410,2514411,Los Villares,Los Villares,Spain,Spain,ES,ES,"AN, J","AN, J"
+geoname_id,2692556,2692554,Marma,Marma,Sweden,Sweden,SE,SE,C,C
+geoname_id,2727074,2727073,Alberga,Alberga,Sweden,Sweden,SE,SE,D,D
+geoname_id,8396833,8397193,Ban Kao,Ban Kao,Thailand,Thailand,TH,TH,61,61
+geoname_id,1156400,1118965,Ban Mai,Ban Mai,Thailand,Thailand,TH,TH,71,71
+geoname_id,9116462,7503154,Krasnyi Luch,Krasnyi Luch,Ukraine,Ukraine,UA,UA,14,14
+geoname_id,7039963,713686,Aleksandrovka,Aleksandrovka,Ukraine,Ukraine,UA,UA,43,43
