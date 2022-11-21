@@ -11,6 +11,14 @@ import requestJson from '../_examples/request';
   order to do so. See our [Custom Inputs documentation](https://support.maxmind.com/hc/en-us/articles/4408216546203-Use-Custom-Inputs)
   for more information.
 
+  <Alert type="warning">
+      **You should never send a full credit card number as an input.** If you
+      attempt to send a full credit card number as an input, the minFraud
+      service will reject the input and issue a warning.
+
+      [Learn more about valid payment number inputs above.](#schema--request--credit-card)
+    </Alert>
+
   <Property
     name="your_custom_BOOLEAN_key"
     type="boolean"
