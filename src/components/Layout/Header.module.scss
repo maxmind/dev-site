@@ -122,7 +122,7 @@
 
 @include variables.breakpoint('sm') {
   .logo {
-    gap: 15px;
+    gap: 10px;
     grid-template-areas: 'svg site-name';
     grid-template-columns: auto;
   }
