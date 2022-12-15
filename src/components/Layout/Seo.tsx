@@ -91,7 +91,6 @@ const SEO: React.FC<ISEO> = (props) => {
         {
           async: '',
           src: 'https://www.maxmind.com/js/global-privacy-control.js',
-          type: 'module',
         },
       ]}
       title={title}
