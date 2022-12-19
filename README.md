@@ -41,7 +41,7 @@ If you need help installing and/or managing Node and Yarn versions, check out [N
 ### Installation
 
 ```sh
-npm install && npm prepare
+npm install && npm run prepare
 ```
 
 #### Explanation
