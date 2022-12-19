@@ -198,6 +198,7 @@
     "lint:json": "eslint . --ext json",
     "lint:scripts": "tsc && eslint . --ext js,ts,tsx --ignore-pattern 'functions/**/*.js'",
     "lint:styles": "stylelint ./src/**/*.{css,scss,sass}",
+    "prepare": "husky install",
     "preview": "firebase hosting:channel:deploy $(git rev-parse --abbrev-ref HEAD)",
     "serve": "firebase emulators:start --only functions,hosting",
     "sitemap-query-string": "node ./bin/sitemap-query-string.js",
