@@ -87,6 +87,12 @@ const SEO: React.FC<ISEO> = (props) => {
         },
         ...meta,
       ]}
+      script={[
+        {
+          async: '',
+          src: 'https://www.maxmind.com/js/global-privacy-control.js',
+        },
+      ]}
       title={title}
       titleTemplate={`%s | ${site.siteMetadata.title}`}
     />

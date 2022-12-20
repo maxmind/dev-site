@@ -71,6 +71,7 @@ module.exports = [
             'https://*.zopim.com',
             'wss://maxmind.zendesk.com',
             'wss://*.zopim.com',
+            'https://www.maxmind.com',
           ],
           'default-src': [
             cspKeywords.SELF,
@@ -126,6 +127,7 @@ module.exports = [
             'https://*.zopim.com',
             'wss://maxmind.zendesk.com',
             'wss://*.zopim.com',
+            'https://www.maxmind.com',
           ],
           'style-src': [
             cspKeywords.SELF,
