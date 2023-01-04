@@ -1,7 +1,7 @@
 <h3 align="center">
   <img
     alt="MaxMind"
-    src=".github/images/maxmind-logo-with-styles.svg"
+    src="src/assets/svgs/maxmind-logo.svg"
     width="300"
   >
   <br>
