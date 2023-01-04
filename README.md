@@ -47,7 +47,7 @@ npm install && npm run prepare
 #### Explanation
 
 * `npm install` installs the neccessary node modules for development.
-* `npm prepare` sets up the linting pre-commit hooks via husky.
+* `npm run prepare` sets up the linting pre-commit hooks via husky.
 
 ### Development
 
