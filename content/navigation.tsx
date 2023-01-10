@@ -198,7 +198,7 @@ const navigation: IItem[] = [
       {
         hasDivider: true,
         title: 'Release Notes',
-        to: '/geoip/release-notes/2022',
+        to: '/geoip/release-notes/2023',
       },
       {
         title: 'Contribute',
