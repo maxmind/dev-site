@@ -1,0 +1,129 @@
+diff_in,old_geoname_id,new_geoname_id,old_city_name,new_city_name,old_country_name,new_country_name,old_country_code,new_country_code,old_subdivision_codes,new_subdivision_codes
+city_name,3189517,3189517,Sumarina,Šumarina,Croatia,Croatia,HR,HR,14,14
+city_name,3187662,3187662,Visignano,Visnjan - Visignano,Croatia,Croatia,HR,HR,18,18
+city_name,361628,361628,Al `Ajami,Al Ajami,Egypt,Egypt,EG,EG,ALX,ALX
+city_name,2927443,2927443,Feldberg,Muellheim-Feldberg,Germany,Germany,DE,DE,BW,BW
+city_name,734564,734564,Plagiari,Playiárion,Greece,Greece,GR,GR,"B, 54","B, 54"
+city_name,736336,736336,Eleftherio - Kordelio,Eleftherio-Kordelio,Greece,Greece,GR,GR,"B, 54","B, 54"
+city_name,7667666,7667666,Bomet District,Bomet,Kenya,Kenya,KE,KE,2,2
+city_name,2463161,2463161,Awsard,Aousserd,Morocco,Morocco,MA,MA,"12, AOU","12, AOU"
+city_name,776788,776788,Gmina Adamów,Adamów,Poland,Poland,PL,PL,6,6
+city_name,763011,763011,Gmina Osiek,Osiek,Poland,Poland,PL,PL,26,26
+city_name,790015,790015,Ingija,Indjija,Serbia,Serbia,RS,RS,"VO, 07","VO, 07"
+city_name,691999,691999,Syeverodonets'k,Sievierodonetsk,Ukraine,Ukraine,UA,UA,9,9
+city_name,700646,700646,Mukacheve,Mukachevo,Ukraine,Ukraine,UA,UA,21,21
+city_name,709309,709309,Dzhurin,Dzhuryn,Ukraine,Ukraine,UA,UA,61,61
+city_name,709960,709960,Dniprohrad,Dniprorudne,Ukraine,Ukraine,UA,UA,23,23
+city_name,707296,707296,Izyaslav,Iziaslav,Ukraine,Ukraine,UA,UA,68,68
+city_name,697593,697593,Pervomaysk,Pervomaisk,Ukraine,Ukraine,UA,UA,48,48
+city_name,701855,701855,Komintern,Marhanets,Ukraine,Ukraine,UA,UA,12,12
+city_name,707688,707688,Chornomors'k,Chornomorsk,Ukraine,Ukraine,UA,UA,51,51
+city_name,692129,692129,Svalyava,Svaliava,Ukraine,Ukraine,UA,UA,21,21
+city_name,689378,689378,Volodymyr-Volynskyi,Volodymyr,Ukraine,Ukraine,UA,UA,7,7
+city_name,707898,707898,Hulyaypole,Huliaipole,Ukraine,Ukraine,UA,UA,23,23
+city_name,687196,687196,Zhovta Rika,Zhovti Vody,Ukraine,Ukraine,UA,UA,12,12
+city_name,712160,712160,"Tyras, Ophiusa, Asprokastron, Maurokastron",Bilhorod-Dnistrovskyi,Ukraine,Ukraine,UA,UA,51,51
+city_name,706950,706950,Kamyianets-Podilskyy,Kamianets-Podilskyi,Ukraine,Ukraine,UA,UA,68,68
+city_name,692866,692866,Stara Synyava,Stara Syniava,Ukraine,Ukraine,UA,UA,68,68
+city_name,698142,698142,Otyniya,Otyniia,Ukraine,Ukraine,UA,UA,26,26
+city_name,691693,691693,Terebovlya,Terebovlia,Ukraine,Ukraine,UA,UA,61,61
+city_name,691443,691443,Tolstoye,Tovste,Ukraine,Ukraine,UA,UA,61,61
+city_name,691469,691469,Tokmak,Tokamak,Ukraine,Ukraine,UA,UA,23,23
+city_name,689584,689584,Sofiyivka,Vilniansk,Ukraine,Ukraine,UA,UA,23,23
+city_name,707840,707840,Husyatyn,Husiatyn,Ukraine,Ukraine,UA,UA,61,61
+city_name,690873,690873,Tysmenytsya,Tysmenytsia,Ukraine,Ukraine,UA,UA,26,26
+city_name,705392,705392,Kolomyya,Kolomyia,Ukraine,Ukraine,UA,UA,26,26
+city_name,700696,700696,Mostys'ka,Mostyska,Ukraine,Ukraine,UA,UA,46,46
+city_name,709716,709716,Donetsk Oblast,Donetsk,Ukraine,Ukraine,UA,UA,14,14
+city_name,707292,707292,Izyum,Izium,Ukraine,Ukraine,UA,UA,63,63
+city_name,696292,696292,Nogaisk,Prymorsk,Ukraine,Ukraine,UA,UA,23,23
+city_name,686852,686852,Zorinsk,Zorynsk,Ukraine,Ukraine,UA,UA,9,9
+city_name,5855815,5855815,Hawaiian Ocean View,Ocean View,United States,United States,US,US,HI,HI
+city_name,8605007,8605007,"Clear, Alaska",Clear,United States,United States,US,US,AK,AK
+city_name,1585332,1585332,Cholach,Cho Lach,Vietnam,Vietnam,VN,VN,50,50
+geoname_id,12055979,2167109,Eureka,Eureka,Australia,Australia,AU,AU,NSW,NSW
+geoname_id,7923297,7670694,Nalitabari,Nalitabari,Bangladesh,Bangladesh,BD,BD,"H, 57","H, 57"
+geoname_id,12108275,3455638,Santa Barbara,Santa Barbara,Brazil,Brazil,BR,BR,BA,BA
+geoname_id,3453080,3453078,Ponte Nova,Ponte Nova,Brazil,Brazil,BR,BR,MG,MG
+geoname_id,6324156,3460849,Itaja,Itaja,Brazil,Brazil,BR,BR,GO,GO
+geoname_id,3461840,3461839,Guarda Mor,Guarda Mor,Brazil,Brazil,BR,BR,MG,MG
+geoname_id,3387928,6319478,Senador Jose Porfirio,Senador Jose Porfirio,Brazil,Brazil,BR,BR,PA,PA
+geoname_id,3470597,12499077,Barra Velha,Barra Velha,Brazil,Brazil,BR,BR,SC,SC
+geoname_id,3445448,6321092,Varzea Nova,Varzea Nova,Brazil,Brazil,BR,BR,BA,BA
+geoname_id,3393239,6319587,Palmeirante,Palmeirante,Brazil,Brazil,BR,BR,TO,TO
+geoname_id,3456058,6317783,Novo Horizonte,Novo Horizonte,Brazil,Brazil,BR,BR,SC,SC
+geoname_id,7692676,3450237,Santa Fe,Santa Fe,Brazil,Brazil,BR,BR,PR,PR
+geoname_id,3395239,3395238,Massape,Massape,Brazil,Brazil,BR,BR,CE,CE
+geoname_id,3389671,3389669,Santa Cruz,Santa Cruz,Brazil,Brazil,BR,BR,PB,PB
+geoname_id,6323850,6317869,Paranaita,Paranaita,Brazil,Brazil,BR,BR,MT,MT
+geoname_id,3460148,6321486,Januaria,Januaria,Brazil,Brazil,BR,BR,MG,MG
+geoname_id,6323812,6316760,Canarana,Canarana,Brazil,Brazil,BR,BR,MT,MT
+geoname_id,3446171,11959882,Tres Barras,Tres Barras,Brazil,Brazil,BR,BR,SC,SC
+geoname_id,3445946,3445947,Tunas,Tunas,Brazil,Brazil,BR,BR,RS,RS
+geoname_id,6318785,6319485,Trairao,Trairao,Brazil,Brazil,BR,BR,PA,PA
+geoname_id,3472031,3472032,Antonio Carlos,Antonio Carlos,Brazil,Brazil,BR,BR,MG,MG
+geoname_id,6317580,6319424,Medicilandia,Medicilandia,Brazil,Brazil,BR,BR,PA,PA
+geoname_id,8980123,3180511,Carignano,Carignano,Italy,Italy,IT,IT,"21, TO","21, TO"
+geoname_id,1778306,1751647,Bukit Payung,Bukit Payung,Malaysia,Malaysia,MY,MY,11,11
+geoname_id,1184370,1366254,Arifwala,Arifwala,Pakistan,Pakistan,PK,PK,PB,PB
+geoname_id,1174241,1174240,Khan Bela,Khan Bela,Pakistan,Pakistan,PK,PK,PB,PB
+geoname_id,7467622,1165569,Shahkot,Shahkot,Pakistan,Pakistan,PK,PK,PB,PB
+geoname_id,1168749,7565535,Nushki,Nushki,Pakistan,Pakistan,PK,PK,BA,BA
+geoname_id,1331042,1169692,Muridke,Muridke,Pakistan,Pakistan,PK,PK,PB,PB
+geoname_id,1181636,1181638,Chakwal,Chakwal,Pakistan,Pakistan,PK,PK,PB,PB
+geoname_id,1178587,1178621,Gharo,Gharo,Pakistan,Pakistan,PK,PK,SD,SD
+geoname_id,1174220,1388314,Khanewal,Khanewal,Pakistan,Pakistan,PK,PK,PB,PB
+geoname_id,1179450,1179451,Dunyapur,Dunyapur,Pakistan,Pakistan,PK,PK,PB,PB
+geoname_id,7067627,1390042,Sadiqabad,Sadiqabad,Pakistan,Pakistan,PK,PK,KP,KP
+geoname_id,1177662,1177660,Gujranwala,Gujranwala,Pakistan,Pakistan,PK,PK,PB,PB
+geoname_id,1164825,7391013,Sillanwali,Sillanwali,Pakistan,Pakistan,PK,PK,PB,PB
+geoname_id,1173055,7100656,Kotli,Kotli,Pakistan,Pakistan,PK,PK,JK,JK
+geoname_id,1175560,1418157,Kabirwala,Kabirwala,Pakistan,Pakistan,PK,PK,PB,PB
+geoname_id,1180809,1396862,Dadu,Dadu,Pakistan,Pakistan,PK,PK,SD,SD
+geoname_id,1172295,1386778,Lalian,Lalian,Pakistan,Pakistan,PK,PK,PB,PB
+geoname_id,1176106,7324482,Jaranwala,Jaranwala,Pakistan,Pakistan,PK,PK,PB,PB
+geoname_id,1177384,1411258,Hafizabad,Hafizabad,Pakistan,Pakistan,PK,PK,PB,PB
+geoname_id,1170306,1170291,Mirpur,Mirpur,Pakistan,Pakistan,PK,PK,PB,PB
+geoname_id,3201693,3200259,Gornja Grabovica,Gornja Grabovica,Serbia,Serbia,RS,RS,9,9
+geoname_id,11428151,983038,Letaba,Letaba,South Africa,South Africa,ZA,ZA,LP,LP
+geoname_id,1156400,1118965,Ban Mai,Ban Mai,Thailand,Thailand,TH,TH,71,71
+geoname_id,709428,709429,Dunayivtsi,Dunayivtsi,Ukraine,Ukraine,UA,UA,68,68
+subdivision_codes,3185797,3185797,Divjake,Divjake,Albania,Albania,AL,AL,"04, LU",4
+subdivision_codes,3184099,3184099,Shijak,Shijak,Albania,Albania,AL,AL,"02, DR",2
+subdivision_codes,363243,363243,Sarandë,Sarandë,Albania,Albania,AL,AL,"12, SR",12
+subdivision_codes,3184081,3184081,Shkoder,Shkoder,Albania,Albania,AL,AL,"10, SH",10
+subdivision_codes,7932375,7932375,Bajram Curri,Bajram Curri,Albania,Albania,AL,AL,"07, TP",7
+subdivision_codes,3185060,3185060,Kucove,Kucove,Albania,Albania,AL,AL,"01, KC",1
+subdivision_codes,783493,783493,Burrel,Burrel,Albania,Albania,AL,AL,"09, MT",9
+subdivision_codes,3183875,3183875,Tirana,Tirana,Albania,Albania,AL,AL,"11, TR",11
+subdivision_codes,782756,782756,Korçë,Korçë,Albania,Albania,AL,AL,"06, KO",6
+subdivision_codes,3183814,3183814,Ura Vajgurore,Ura Vajgurore,Albania,Albania,AL,AL,"01, BR",1
+subdivision_codes,3184862,3184862,Lushnje,Lushnje,Albania,Albania,AL,AL,"04, LU",4
+subdivision_codes,3184264,3184264,Rreshen,Rreshen,Albania,Albania,AL,AL,"08, MR",8
+subdivision_codes,783408,783408,Corovode,Corovode,Albania,Albania,AL,AL,"01, SK",1
+subdivision_codes,781443,781443,Tepelenë,Tepelenë,Albania,Albania,AL,AL,"05, TE",5
+subdivision_codes,781920,781920,Perrenjas,Perrenjas,Albania,Albania,AL,AL,"03, LB",3
+subdivision_codes,781988,781988,Pogradec,Pogradec,Albania,Albania,AL,AL,"06, PG",6
+subdivision_codes,3185728,3185728,Durrës,Durrës,Albania,Albania,AL,AL,"02, DR",2
+subdivision_codes,3185897,3185897,Cerrik,Cerrik,Albania,Albania,AL,AL,"03, EL",3
+subdivision_codes,3185133,3185133,Koplik,Koplik,Albania,Albania,AL,AL,"10, MM",10
+subdivision_codes,782519,782519,Librazhd,Librazhd,Albania,Albania,AL,AL,"03, LB",3
+subdivision_codes,3186084,3186084,Berat,Berat,Albania,Albania,AL,AL,"01, BR",1
+subdivision_codes,3185211,3185211,Kavajë,Kavajë,Albania,Albania,AL,AL,"11, KA",11
+subdivision_codes,782685,782685,Krume,Krume,Albania,Albania,AL,AL,"07, HA",7
+subdivision_codes,782248,782248,Mollas,Mollas,Albania,Albania,AL,AL,"03, EL",3
+subdivision_codes,1623834,1623834,Timika,Timika,Indonesia,Indonesia,ID,ID,PA,PT
+subdivision_codes,1642585,1642585,Jembrana,Jembrana,Indonesia,Indonesia,ID,ID,,BA
+subdivision_codes,2082539,2082539,Merauke,Merauke,Indonesia,Indonesia,ID,ID,PA,PS
+subdivision_codes,1624196,1624196,Teminabuan,Teminabuan,Indonesia,Indonesia,ID,ID,PB,
+subdivision_codes,1626724,1626724,Soba,Soba,Indonesia,Indonesia,ID,ID,,PS
+subdivision_codes,1628107,1628107,Sekongkang,Sekongkang,Indonesia,Indonesia,ID,ID,,NB
+subdivision_codes,1648060,1648060,Brenggolo,Brenggolo,Indonesia,Indonesia,ID,ID,,JI
+subdivision_codes,1626542,1626542,Sorong,Sorong,Indonesia,Indonesia,ID,ID,PB,
+subdivision_codes,1635243,1635243,Mimika,Mimika,Indonesia,Indonesia,ID,ID,,PT
+subdivision_codes,1636128,1636128,Marga,Marga,Indonesia,Indonesia,ID,ID,,BA
+subdivision_codes,1637971,1637971,Lengkoajang,Lengkoajang,Indonesia,Indonesia,ID,ID,,NT
+subdivision_codes,1631551,1631551,Pendopo,Pendopo,Indonesia,Indonesia,ID,ID,,SS
+subdivision_codes,1650329,1650329,Banggai,Banggai,Indonesia,Indonesia,ID,ID,,ST
+subdivision_codes,4004198,4004198,Jacona de Plancarte,Jacona de Plancarte,Mexico,Mexico,MX,MX,MEX,MIC
+subdivision_codes,3993207,3993207,Melchor Ocampo,Melchor Ocampo,Mexico,Mexico,MX,MX,MEX,MIC
