@@ -131,7 +131,7 @@ jobs:
     needs: [cache-keys, build]
     runs-on: ubuntu-latest
     # Requires access to our secrets.
-    if: ${{ github.repository_owner == 'maxmind' && github.actor != 'dependabot[bot]' }}
+    if: ${{ github.repository_owner == 'maxmind' && github.actor != 'dependabot[bot]' && github.event.pull_request.head.repo.fork == false }}
 
     outputs:
       hosting-url: ${{ steps.deploy-preview-channel.outputs.details_url }}
@@ -190,7 +190,7 @@ jobs:
     needs: [cache-keys, build]
     runs-on: ubuntu-latest
     # Requires access to our secrets.
-    if: ${{ github.repository_owner == 'maxmind' && github.actor != 'dependabot[bot]' }}
+    if: ${{ github.repository_owner == 'maxmind' && github.actor != 'dependabot[bot]' && github.event.pull_request.head.repo.fork == false }}
 
     steps:
       - name: Check Out Repo
