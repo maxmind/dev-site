@@ -2,7 +2,6 @@ import PropTypes from 'prop-types';
 import React from 'react';
 import {
   FaBookOpen as ViewDocsIcon,
-  FaCode as ContributeIcon,
   FaRocket as QuickstartIcon,
   FaUserCheck as SignUpIcon,
 } from 'react-icons/fa';

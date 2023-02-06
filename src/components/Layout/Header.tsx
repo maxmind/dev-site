@@ -33,7 +33,7 @@ const Header: React.FC<IHeader> = (props) => {
             {systemStatus.icon}
             {' '}
             {systemStatus.title}
-            {' - '}
+            {': '}
             {systemStatus.message}
             {' '}
             <a

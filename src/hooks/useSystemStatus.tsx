@@ -2,12 +2,8 @@
 import * as React from 'react';
 
 import {
-  DegradedPerformanceIcon,
   OperationalIcon,
-  PartialServiceDisruptionIcon,
-  PlannedMaintenanceIcon,
-  SecurityEventIcon,
-  ServiceDisruptionIcon,
+  WarningIcon,
 } from '../components/SystemsStatusIcons';
 
 type SystemStatus = {
@@ -18,43 +14,43 @@ type SystemStatus = {
 }
 
 // https://kb.status.io/developers/status-codes/
-const status: Record<string, SystemStatus> = {
-  DEGRADED_PERFORMANCE: {
-    class: 'degraded_performance',
-    icon: <DegradedPerformanceIcon />,
-    // eslint-disable-next-line max-len
-    message: 'We are currently experiencing degraded performance in some of our web services.',
-    title: 'Degraded Performance',
-  },
-  OPERATIONAL: {
+const status: Record<number, SystemStatus> = {
+  100: {
     class: 'operational',
     icon: <OperationalIcon />,
     title: 'Operational',
   },
-  PARTIAL_SERVICE_DISRUPTION: {
-    class: 'partial_service_disruption',
-    icon: <PartialServiceDisruptionIcon />,
-    message: 'Some of our web services are temporarily unavailable.',
-    title: 'Partial Service Disruption',
-  },
-  PLANNED_MAINTENANCE: {
+  200: {
     class: 'planned_maintenance',
-    icon: <PlannedMaintenanceIcon />,
+    icon: <WarningIcon />,
     message: 'We are currently undergoing some scheduled maintenance.',
     title: 'Planned Maintenance',
   },
-  SECURITY_EVENT: {
+  300: {
+    class: 'degraded_performance',
+    icon: <WarningIcon />,
+    // eslint-disable-next-line max-len
+    message: 'We are currently experiencing degraded performance in some of our web services.',
+    title: 'Degraded Performance',
+  },
+  400: {
+    class: 'partial_service_disruption',
+    icon: <WarningIcon />,
+    message: 'Some of our web services are temporarily unavailable.',
+    title: 'Partial Service Disruption',
+  },
+  500: {
+    class: 'service_disruption',
+    icon: <WarningIcon />,
+    message: 'Our web services are temporarily unavailable.',
+    title: 'Service Disruption',
+  },
+  600: {
     class: 'security_event',
-    icon: <SecurityEventIcon />,
+    icon: <WarningIcon />,
     // eslint-disable-next-line max-len
     message: 'We are currently mitigating issues relating to some of our web services.',
     title: 'Security Event',
-  },
-  SERVICE_DISRUPTION: {
-    class: 'service_disruption',
-    icon: <ServiceDisruptionIcon />,
-    message: 'Our web services are temporarily unavailable.',
-    title: 'Service Disruption',
   },
 };
 
@@ -69,27 +65,29 @@ const useSystemStatus = (): null | SystemStatus => {
   )
     .then(res => res.json())
     .then(json => {
-      const { status_code } = json.result.status_overall;
-      switch (status_code) {
-      case 100:
-        setSystemStatus(status.OPERATIONAL);
-        break;
-      case 200:
-        setSystemStatus(status.PLANNED_MAINTENANCE);
-        break;
-      case 300:
-        setSystemStatus(status.DEGRADED_PERFORMANCE);
-        break;
-      case 400:
-        setSystemStatus(status.PARTIAL_SERVICE_DISRUPTION);
-        break;
-      case 500:
-        setSystemStatus(status.SERVICE_DISRUPTION);
-        break;
-      case 600:
-        setSystemStatus(status.SECURITY_EVENT);
-        break;
+      const status_code = Number(json.result.status_overall);
+      if (!(status_code in status)) {
+        throw new TypeError('status_code invalid');
       }
+      if (json.result.incidents.length != 0) {
+        setSystemStatus({
+          class: '',
+          icon: <WarningIcon />,
+          message: json.result.incidents[0].name,
+          title: status[Number(status_code)].title,
+        });
+        return;
+      }
+      else if (json.result.maintenance.active.length != 0) {
+        setSystemStatus({
+          class: '',
+          icon: <WarningIcon />,
+          message: json.result.maintenance.active[0].name,
+          title: status[Number(status_code)].title,
+        });
+        return;
+      }
+      setSystemStatus(status[Number(status_code)]);
     })
     .catch(() => {
       /**
