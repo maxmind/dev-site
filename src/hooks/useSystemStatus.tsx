@@ -65,7 +65,7 @@ const useSystemStatus = (): null | SystemStatus => {
   )
     .then(res => res.json())
     .then(json => {
-      const status_code = Number(json.result.status_overall);
+      const status_code = Number(json.result.status_overall.status_code);
       if (!(status_code in status)) {
         throw new TypeError('status_code invalid');
       }
