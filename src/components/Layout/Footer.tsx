@@ -161,7 +161,7 @@ const Footer: React.FC<React.HTMLProps<HTMLDivElement>> = (props) => {
           <a
             className={styles.link}
             // eslint-disable-next-line max-len
-            href="https://www.maxmind.com/en/privacy-policy#additional-disclosures-for-california-residents"
+            href="https://www.maxmind.com/en/opt-out"
           >
             Do Not Sell My Personal Information
           </a>
