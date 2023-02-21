@@ -1,0 +1,321 @@
+diff_in,old_geoname_id,new_geoname_id,old_city_name,new_city_name,old_country_name,new_country_name,old_country_code,new_country_code,old_subdivision_codes,new_subdivision_codes
+city_name,6317245,6317245,Herval dOeste,Herval d'Oeste,Brazil,Brazil,BR,BR,SC,SC
+city_name,3189350,3189350,Sveti Durd,Sveti Djurdj,Croatia,Croatia,HR,HR,5,5
+city_name,3196502,3196502,Lipovaca,Lipovača,Croatia,Croatia,HR,HR,16,16
+city_name,2611962,2611962,Sydhrugota,Sydrugota,Faroe Islands,Faroe Islands,FO,FO,,
+city_name,2616140,2616140,Nordhskali,Nordskali,Faroe Islands,Faroe Islands,FO,FO,,
+city_name,2618511,2618511,Kollafjordhur,Kollafjordur,Faroe Islands,Faroe Islands,FO,FO,,
+city_name,11809714,11809714,Tojimmachi,Tojinmachi,Japan,Japan,JP,JP,40,40
+city_name,1506073,1506073,Gur'yevsk,Guryevsk,Russia,Russia,RU,RU,KEM,KEM
+city_name,1488272,1488272,Ust'-Abakan,Ust-abakan,Russia,Russia,RU,RU,KK,KK
+city_name,1502060,1502060,Krasnoural'sk,Krasnouralsk,Russia,Russia,RU,RU,SVE,SVE
+city_name,542197,542197,Krasnoural'sk,Krasnouralsk,Russia,Russia,RU,RU,ORE,ORE
+city_name,496275,496275,Severoural'sk,Severouralsk,Russia,Russia,RU,RU,SVE,SVE
+city_name,3122426,3122426,Finisterra,Fisterra,Spain,Spain,ES,ES,"GA, C","GA, C"
+city_name,1606418,1606418,Saraburi,Changwat Sara Buri,Thailand,Thailand,TH,TH,19,19
+city_name,1611453,1611453,Buriram,Changwat Buri Ram,Thailand,Thailand,TH,TH,31,31
+city_name,1607532,1607532,Ayutthaya,Phra Nakhon Si Ayutthaya,Thailand,Thailand,TH,TH,14,14
+city_name,1606590,1606590,Samut Prakan,Mueang Samut Prakan,Thailand,Thailand,TH,TH,11,11
+city_name,7027003,7027003,Watthana,Vadhana,Thailand,Thailand,TH,TH,10,10
+city_name,1619278,1619278,Bangrak,Bang Rak,Thailand,Thailand,TH,TH,10,10
+city_name,701404,701404,Kyzyl-Yar,Melitopol,Ukraine,Ukraine,UA,UA,23,23
+city_name,694272,694272,Shchorsk,Bozhedarivka,Ukraine,Ukraine,UA,UA,12,12
+city_name,692105,692105,Sverdlovs'k,Dovzhansk,Ukraine,Ukraine,UA,UA,9,9
+geoname_id,2167109,12055979,Eureka,Eureka,Australia,Australia,AU,AU,NSW,NSW
+geoname_id,9535103,8598931,Pine Creek,Pine Creek,Australia,Australia,AU,AU,QLD,QLD
+geoname_id,1203894,7105620,Dimla,Dimla,Bangladesh,Bangladesh,BD,BD,"F, 46","F, 46"
+geoname_id,3921633,12496031,Cercado,Cercado,Bolivia,Bolivia,BO,BO,T,T
+geoname_id,3258623,3188464,Usora,Usora,Bosnia and Herzegovina,Bosnia and Herzegovina,BA,BA,SRP,SRP
+geoname_id,3199509,3292446,Grude,Grude,Bosnia and Herzegovina,Bosnia and Herzegovina,BA,BA,BIH,BIH
+geoname_id,3266863,3194204,Odzak,Odzak,Bosnia and Herzegovina,Bosnia and Herzegovina,BA,BA,SRP,SRP
+geoname_id,3198137,3198138,Kiseljak,Kiseljak,Bosnia and Herzegovina,Bosnia and Herzegovina,BA,BA,BIH,BIH
+geoname_id,3265307,3270055,Prisoje,Prisoje,Bosnia and Herzegovina,Bosnia and Herzegovina,BA,BA,SRP,SRP
+geoname_id,3456751,6320962,Morpara,Morpara,Brazil,Brazil,BR,BR,BA,BA
+geoname_id,6316298,6319005,Acailandia,Acailandia,Brazil,Brazil,BR,BR,MA,MA
+geoname_id,6318970,6319833,Ze Doca,Ze Doca,Brazil,Brazil,BR,BR,MA,MA
+geoname_id,3453078,3453080,Ponte Nova,Ponte Nova,Brazil,Brazil,BR,BR,MG,MG
+geoname_id,3456173,3456174,Nova Esperanca,Nova Esperanca,Brazil,Brazil,BR,BR,PR,PR
+geoname_id,3461871,3480536,Guararema,Guararema,Brazil,Brazil,BR,BR,SP,SP
+geoname_id,3472271,3472270,Andarai,Andarai,Brazil,Brazil,BR,BR,BA,BA
+geoname_id,6319478,3387928,Senador Jose Porfirio,Senador Jose Porfirio,Brazil,Brazil,BR,BR,PA,PA
+geoname_id,6319470,3388847,Sao Felix do Xingu,Sao Felix do Xingu,Brazil,Brazil,BR,BR,PA,PA
+geoname_id,6323873,3450872,Rosario Oeste,Rosario Oeste,Brazil,Brazil,BR,BR,MT,MT
+geoname_id,3411874,6316460,Augustinopolis,Augustinopolis,Brazil,Brazil,BR,BR,TO,TO
+geoname_id,6321092,3445448,Varzea Nova,Varzea Nova,Brazil,Brazil,BR,BR,BA,BA
+geoname_id,3663503,6319329,Manicore,Manicore,Brazil,Brazil,BR,BR,AM,AM
+geoname_id,6319587,3393239,Palmeirante,Palmeirante,Brazil,Brazil,BR,BR,TO,TO
+geoname_id,6317783,3456058,Novo Horizonte,Novo Horizonte,Brazil,Brazil,BR,BR,SC,SC
+geoname_id,3456057,6317795,Novo Mundo,Novo Mundo,Brazil,Brazil,BR,BR,MT,MT
+geoname_id,3452514,3452515,Pouso Alto,Pouso Alto,Brazil,Brazil,BR,BR,MG,MG
+geoname_id,6320811,3465983,Cocos,Cocos,Brazil,Brazil,BR,BR,BA,BA
+geoname_id,6318630,11669527,Sapezal,Sapezal,Brazil,Brazil,BR,BR,MT,MT
+geoname_id,6317869,6323850,Paranaita,Paranaita,Brazil,Brazil,BR,BR,MT,MT
+geoname_id,3389141,3389134,Santo Antonio,Santo Antonio,Brazil,Brazil,BR,BR,RN,RN
+geoname_id,6317292,3398136,Ipiranga,Ipiranga,Brazil,Brazil,BR,BR,RN,RN
+geoname_id,3396194,6317488,Logradouro,Logradouro,Brazil,Brazil,BR,BR,PB,PB
+geoname_id,6321486,3460148,Januaria,Januaria,Brazil,Brazil,BR,BR,MG,MG
+geoname_id,6319437,3393471,Oriximina,Oriximina,Brazil,Brazil,BR,BR,PA,PA
+geoname_id,3394372,3394380,Morros,Morros,Brazil,Brazil,BR,BR,MA,MA
+geoname_id,6316432,3665202,Aripuana,Aripuana,Brazil,Brazil,BR,BR,MT,MT
+geoname_id,3449194,3449216,Sao Felipe,Sao Felipe,Brazil,Brazil,BR,BR,BA,BA
+geoname_id,6316760,6323812,Canarana,Canarana,Brazil,Brazil,BR,BR,MT,MT
+geoname_id,6317803,6324149,Novo Sao Joaquim,Novo Sao Joaquim,Brazil,Brazil,BR,BR,MT,MT
+geoname_id,6319555,3399603,Filadelfia,Filadelfia,Brazil,Brazil,BR,BR,TO,TO
+geoname_id,3450917,12229477,Rondinha,Rondinha,Brazil,Brazil,BR,BR,RS,RS
+geoname_id,3445947,3445946,Tunas,Tunas,Brazil,Brazil,BR,BR,RS,RS
+geoname_id,6319485,6318785,Trairao,Trairao,Brazil,Brazil,BR,BR,PA,PA
+geoname_id,3663495,6324176,Manoel Urbano,Manoel Urbano,Brazil,Brazil,BR,BR,AC,AC
+geoname_id,3390420,3390418,Riacho dos Cavalos,Riacho dos Cavalos,Brazil,Brazil,BR,BR,PB,PB
+geoname_id,3449304,6321040,Sao Desiderio,Sao Desiderio,Brazil,Brazil,BR,BR,BA,BA
+geoname_id,3664464,6319281,Cruzeiro do Sul,Cruzeiro do Sul,Brazil,Brazil,BR,BR,AC,AC
+geoname_id,3450163,11970661,Santa Lucia,Santa Lucia,Brazil,Brazil,BR,BR,SP,SP
+geoname_id,3461839,3461840,Guarda Mor,Guarda Mor,Brazil,Brazil,BR,BR,MG,MG
+geoname_id,3871524,11965967,Santa Juana,Santa Juana,Chile,Chile,CL,CL,BI,BI
+geoname_id,3874536,3874535,Puyehue,Puyehue,Chile,Chile,CL,CL,LR,LR
+geoname_id,3873116,11881754,Rio Negro,Rio Negro,Chile,Chile,CL,CL,LL,LL
+geoname_id,3897243,12468964,Calle Larga,Calle Larga,Chile,Chile,CL,CL,VS,VS
+geoname_id,3875691,3875684,Placilla,Placilla,Chile,Chile,CL,CL,VS,VS
+geoname_id,3877599,12008757,Palmilla,Palmilla,Chile,Chile,CL,CL,LI,LI
+geoname_id,3890949,3890948,El Monte,El Monte,Chile,Chile,CL,CL,RM,RM
+geoname_id,11967004,11966943,San Miguel,San Miguel,Chile,Chile,CL,CL,BI,BI
+geoname_id,3891837,3891842,El Bosque,El Bosque,Chile,Chile,CL,CL,RM,RM
+geoname_id,3868194,12004353,Villa Alegre,Villa Alegre,Chile,Chile,CL,CL,ML,ML
+geoname_id,3884580,3884582,Las Cabras,Las Cabras,Chile,Chile,CL,CL,LI,LI
+geoname_id,3894464,3894463,Codegua,Codegua,Chile,Chile,CL,CL,LI,LI
+geoname_id,11966900,11965860,El Carmen,El Carmen,Chile,Chile,CL,CL,BI,BI
+geoname_id,3868989,3868988,Tucapel,Tucapel,Chile,Chile,CL,CL,BI,BI
+geoname_id,3882460,11967688,Los Alamos,Los Alamos,Chile,Chile,CL,CL,BI,BI
+geoname_id,3203670,3244782,Borovo,Borovo,Croatia,Croatia,HR,HR,16,16
+geoname_id,2617549,2617548,Lintrup,Lintrup,Denmark,Denmark,DK,DK,83,83
+geoname_id,2619859,2619860,Horning,Horning,Denmark,Denmark,DK,DK,82,82
+geoname_id,11608792,3206177,Grafenberg,Grafenberg,Germany,Germany,DE,DE,BW,BW
+geoname_id,718624,718623,Komoro,Komoro,Hungary,Hungary,HU,HU,SZ,SZ
+geoname_id,7920506,6591831,Babakan Sari,Babakan Sari,Indonesia,Indonesia,ID,ID,JB,JB
+geoname_id,1647739,1647740,Bulukumba,Bulukumba,Indonesia,Indonesia,ID,ID,SN,SN
+geoname_id,7081760,6760899,Magersari,Magersari,Indonesia,Indonesia,ID,ID,JI,JI
+geoname_id,1972044,1972389,Sumberejo,Sumberejo,Indonesia,Indonesia,ID,ID,JI,JI
+geoname_id,8529281,1640137,Teluk Ketapang,Teluk Ketapang,Indonesia,Indonesia,ID,ID,JA,JA
+geoname_id,7847352,6739474,Ciparigi,Ciparigi,Indonesia,Indonesia,ID,ID,JB,JB
+geoname_id,1962535,6585496,Sekeloa,Sekeloa,Indonesia,Indonesia,ID,ID,JB,JB
+geoname_id,7375680,6865392,Pandanwangi,Pandanwangi,Indonesia,Indonesia,ID,ID,JI,JI
+geoname_id,6822848,6841732,Brebes,Brebes,Indonesia,Indonesia,ID,ID,JI,JI
+geoname_id,12184146,1970015,Lebak,Lebak,Indonesia,Indonesia,ID,ID,JI,JI
+geoname_id,6786431,1644683,Gading,Gading,Indonesia,Indonesia,ID,ID,JI,JI
+geoname_id,1959317,1631743,Pekayon,Pekayon,Indonesia,Indonesia,ID,ID,JK,JK
+geoname_id,6264759,2000029,Tegal,Tegal,Indonesia,Indonesia,ID,ID,YO,YO
+geoname_id,1636878,1972214,Magetan,Magetan,Indonesia,Indonesia,ID,ID,JI,JI
+geoname_id,6701352,6717705,Bantan,Bantan,Indonesia,Indonesia,ID,ID,SU,SU
+geoname_id,8018227,6400672,Babakanmulya,Babakanmulya,Indonesia,Indonesia,ID,ID,JB,JB
+geoname_id,6836800,7051517,Pakunden,Pakunden,Indonesia,Indonesia,ID,ID,JI,JI
+geoname_id,1959225,1959568,Beji,Beji,Indonesia,Indonesia,ID,ID,JB,JB
+geoname_id,8323052,1969970,Jetis,Jetis,Indonesia,Indonesia,ID,ID,JI,JI
+geoname_id,8076085,6777347,Banyubang,Banyubang,Indonesia,Indonesia,ID,ID,JI,JI
+geoname_id,7766564,6753240,Tajur,Tajur,Indonesia,Indonesia,ID,ID,BT,BT
+geoname_id,7912099,1646148,Ciroyom,Ciroyom,Indonesia,Indonesia,ID,ID,JB,JB
+geoname_id,1971576,1642735,Jati,Jati,Indonesia,Indonesia,ID,ID,JI,JI
+geoname_id,7928659,6596507,Tugujaya,Tugujaya,Indonesia,Indonesia,ID,ID,JB,JB
+geoname_id,6264326,1999916,Jagalan,Jagalan,Indonesia,Indonesia,ID,ID,YO,YO
+geoname_id,8073848,6567836,Sukagalih,Sukagalih,Indonesia,Indonesia,ID,ID,JB,JB
+geoname_id,7860122,1642689,Jatisari,Jatisari,Indonesia,Indonesia,ID,ID,JB,JB
+geoname_id,8534024,7085362,Pagutan,Pagutan,Indonesia,Indonesia,ID,ID,NB,NB
+geoname_id,8080532,1971529,Ketintang,Ketintang,Indonesia,Indonesia,ID,ID,JI,JI
+geoname_id,8059834,6396218,Mekarjaya,Mekarjaya,Indonesia,Indonesia,ID,ID,JB,JB
+geoname_id,8391094,6773303,Kapasan,Kapasan,Indonesia,Indonesia,ID,ID,JI,JI
+geoname_id,7375666,6865303,Kadipaten,Kadipaten,Indonesia,Indonesia,ID,ID,JI,JI
+geoname_id,6828695,1985525,Ketabang,Ketabang,Indonesia,Indonesia,ID,ID,JI,JI
+geoname_id,7849746,6785196,Kalijaga,Kalijaga,Indonesia,Indonesia,ID,ID,JB,JB
+geoname_id,7847051,6399537,Mekarwangi,Mekarwangi,Indonesia,Indonesia,ID,ID,JB,JB
+geoname_id,6265297,2000126,Pandeyan,Pandeyan,Indonesia,Indonesia,ID,ID,YO,YO
+geoname_id,6715206,1215481,Banjar,Banjar,Indonesia,Indonesia,ID,ID,SU,SU
+geoname_id,8059789,1642188,Kadupandak,Kadupandak,Indonesia,Indonesia,ID,ID,JB,JB
+geoname_id,8058602,6397334,Sukaluyu,Sukaluyu,Indonesia,Indonesia,ID,ID,JB,JB
+geoname_id,6828797,1650318,Bangilan,Bangilan,Indonesia,Indonesia,ID,ID,JI,JI
+geoname_id,7385877,6999341,Palu,Palu,Indonesia,Indonesia,ID,ID,SN,SN
+geoname_id,8026128,6583523,Sariwangi,Sariwangi,Indonesia,Indonesia,ID,ID,JB,JB
+geoname_id,7385711,7385845,Barana,Barana,Indonesia,Indonesia,ID,ID,SN,SN
+geoname_id,7350501,6838367,Mangunsari,Mangunsari,Indonesia,Indonesia,ID,ID,JI,JI
+geoname_id,8058141,6570677,Tegalgede,Tegalgede,Indonesia,Indonesia,ID,ID,JT,JT
+geoname_id,8068068,6372061,Kiringan,Kiringan,Indonesia,Indonesia,ID,ID,JT,JT
+geoname_id,7849789,6598225,Batununggal,Batununggal,Indonesia,Indonesia,ID,ID,JB,JB
+geoname_id,1933486,1635105,Mojosongo,Mojosongo,Indonesia,Indonesia,ID,ID,JT,JT
+geoname_id,8058639,6399567,Babakansari,Babakansari,Indonesia,Indonesia,ID,ID,JB,JB
+geoname_id,6837840,1640266,Keputih,Keputih,Indonesia,Indonesia,ID,ID,JI,JI
+geoname_id,1650328,1650329,Banggai,Banggai,Indonesia,Indonesia,ID,ID,ST,ST
+geoname_id,6265369,2000264,Tamanan,Tamanan,Indonesia,Indonesia,ID,ID,YO,YO
+geoname_id,7781637,6758435,Masigit,Masigit,Indonesia,Indonesia,ID,ID,BT,BT
+geoname_id,8057362,7861028,Cigadung,Cigadung,Indonesia,Indonesia,ID,ID,JB,JB
+geoname_id,1985924,6782091,Jagir,Jagir,Indonesia,Indonesia,ID,ID,JI,JI
+geoname_id,1934660,1648065,Brebes,Brebes,Indonesia,Indonesia,ID,ID,JT,JT
+geoname_id,7781547,6753677,Cikupa,Cikupa,Indonesia,Indonesia,ID,ID,BT,BT
+geoname_id,6837723,1905785,Lontar,Lontar,Indonesia,Indonesia,ID,ID,JI,JI
+geoname_id,7914399,1647143,Ciangsana,Ciangsana,Indonesia,Indonesia,ID,ID,JB,JB
+geoname_id,8538173,6381648,Bringin,Bringin,Indonesia,Indonesia,ID,ID,JT,JT
+geoname_id,1961945,1636237,Manyaran,Manyaran,Indonesia,Indonesia,ID,ID,JT,JT
+geoname_id,6762678,6764488,Kotabaru,Kotabaru,Indonesia,Indonesia,ID,ID,BT,BT
+geoname_id,6830573,6786187,Sambikerep,Sambikerep,Indonesia,Indonesia,ID,ID,JI,JI
+geoname_id,1971964,1643770,Grobogan,Grobogan,Indonesia,Indonesia,ID,ID,JT,JT
+geoname_id,3178221,8959664,Comunanza,Comunanza,Italy,Italy,IT,IT,"57, AP","57, AP"
+geoname_id,1735297,1735339,Mukah,Mukah,Malaysia,Malaysia,MY,MY,13,13
+geoname_id,3531764,3527670,Camargo,Camargo,Mexico,Mexico,MX,MX,TAM,TAM
+geoname_id,1295290,1295289,Tadagyi,Tadagyi,Myanmar,Myanmar,MM,MM,17,17
+geoname_id,3132911,11696088,Vale,Vale,Norway,Norway,NO,NO,38,38
+geoname_id,1361743,11775180,Kot Ghulam Muhammad,Kot Ghulam Muhammad,Pakistan,Pakistan,PK,PK,SD,SD
+geoname_id,3812466,3697234,El Porvenir,El Porvenir,Peru,Peru,PE,PE,LAL,LAL
+geoname_id,3936599,3936598,La Victoria,La Victoria,Peru,Peru,PE,PE,JUN,JUN
+geoname_id,3691359,3691353,Tinco,Tinco,Peru,Peru,PE,PE,ANC,ANC
+geoname_id,3944389,3944388,Chanchamayo,Chanchamayo,Peru,Peru,PE,PE,ICA,ICA
+geoname_id,3761981,11007462,Lima,Lima,Peru,Peru,PE,PE,CAJ,CAJ
+geoname_id,3698458,3693292,Chao,Chao,Peru,Peru,PE,PE,LAL,LAL
+geoname_id,3936921,3936920,La Perla,La Perla,Peru,Peru,PE,PE,LIM,LIM
+geoname_id,3931543,3931542,Pueblo Libre,Pueblo Libre,Peru,Peru,PE,PE,LIM,LIM
+geoname_id,3968305,3929395,San Miguel,San Miguel,Peru,Peru,PE,PE,LIM,LIM
+geoname_id,3692522,3692521,San Isidro,San Isidro,Peru,Peru,PE,PE,PIU,PIU
+geoname_id,3929631,3929635,San Isidro,San Isidro,Peru,Peru,PE,PE,LIM,LIM
+geoname_id,3943439,3943437,Chorrillos,Chorrillos,Peru,Peru,PE,PE,LIM,LIM
+geoname_id,1719683,1719684,Camiling,Camiling,Philippines,Philippines,PH,PH,"03, TAR","03, TAR"
+geoname_id,515175,515172,Oparino,Oparino,Russia,Russia,RU,RU,KIR,KIR
+geoname_id,513898,513897,Otradnoye,Otradnoye,Russia,Russia,RU,RU,LEN,LEN
+geoname_id,559396,559395,Gorshki,Gorshki,Russia,Russia,RU,RU,PER,PER
+geoname_id,1494857,1494854,Plotbishche,Plotbishche,Russia,Russia,RU,RU,KYA,KYA
+geoname_id,1494251,6283719,Pravda,Pravda,Russia,Russia,RU,RU,ALT,ALT
+geoname_id,551976,551974,Kashino,Kashino,Russia,Russia,RU,RU,VLA,VLA
+geoname_id,1505386,8305588,Itatka,Itatka,Russia,Russia,RU,RU,TOM,TOM
+geoname_id,580584,580583,Askarovo,Askarovo,Russia,Russia,RU,RU,BA,BA
+geoname_id,6875316,1508713,Bulanikha,Bulanikha,Russia,Russia,RU,RU,ALT,ALT
+geoname_id,523465,523464,Naratly,Naratly,Russia,Russia,RU,RU,TA,TA
+geoname_id,487262,487260,Streletskoye,Streletskoye,Russia,Russia,RU,RU,BEL,BEL
+geoname_id,545848,545847,Komintern,Komintern,Russia,Russia,RU,RU,SAR,SAR
+geoname_id,481440,481439,Trosna,Trosna,Russia,Russia,RU,RU,ORL,ORL
+geoname_id,569318,569317,Cheremshan,Cheremshan,Russia,Russia,RU,RU,TA,TA
+geoname_id,481166,7601524,Trusovo,Trusovo,Russia,Russia,RU,RU,MOS,MOS
+geoname_id,563719,563721,Dyurtyuli,Dyurtyuli,Russia,Russia,RU,RU,BA,BA
+geoname_id,519763,519757,Novaya Derevnya,Novaya Derevnya,Russia,Russia,RU,RU,LIP,LIP
+geoname_id,1511995,1511994,Aktel,Aktel,Russia,Russia,RU,RU,AL,AL
+geoname_id,546056,546055,Koltushi,Koltushi,Russia,Russia,RU,RU,LEN,LEN
+geoname_id,516326,516325,Obukhovka,Obukhovka,Russia,Russia,RU,RU,BEL,BEL
+geoname_id,2019892,2019893,Mogoytuy,Mogoytuy,Russia,Russia,RU,RU,ZAB,ZAB
+geoname_id,488881,488501,Starobaltachevo,Starobaltachevo,Russia,Russia,RU,RU,BA,BA
+geoname_id,2020009,2020008,Mikhaylovka,Mikhaylovka,Russia,Russia,RU,RU,AMU,AMU
+geoname_id,1537737,1504741,Kamyshta,Kamyshta,Russia,Russia,RU,RU,KK,KK
+geoname_id,7585193,486797,Sugushla,Sugushla,Russia,Russia,RU,RU,TA,TA
+geoname_id,554295,554246,Kalikino,Kalikino,Russia,Russia,RU,RU,IVA,IVA
+geoname_id,518584,518585,Novomikhaylovskiy,Novomikhaylovskiy,Russia,Russia,RU,RU,KDA,KDA
+geoname_id,521148,8535539,Nizhnedevitsk,Nizhnedevitsk,Russia,Russia,RU,RU,VOR,VOR
+geoname_id,7094334,7093788,Rubilovo,Rubilovo,Russia,Russia,RU,RU,PSK,PSK
+geoname_id,539840,539839,Kudrovo,Kudrovo,Russia,Russia,RU,RU,LEN,LEN
+geoname_id,2251707,2251706,Gambissara,Gambissara,Senegal,Senegal,SN,SN,KD,KD
+geoname_id,983038,11428151,Letaba,Letaba,South Africa,South Africa,ZA,ZA,LP,LP
+geoname_id,1832426,10914977,Yongin-si,Yongin-si,South Korea,South Korea,KR,KR,41,41
+geoname_id,2727073,2727074,Alberga,Alberga,Sweden,Sweden,SE,SE,D,D
+geoname_id,1619505,1619506,Bang Khen,Bang Khen,Thailand,Thailand,TH,TH,10,10
+geoname_id,1616794,1616797,Ban Mai,Ban Mai,Thailand,Thailand,TH,TH,14,14
+geoname_id,6845259,1620706,Bang Phlat,Bang Phlat,Thailand,Thailand,TH,TH,10,10
+geoname_id,3637559,3798193,La Hoyada,La Hoyada,Venezuela,Venezuela,VE,VE,P,P
+geoname_id,3627144,3627138,Santa Rosa,Santa Rosa,Venezuela,Venezuela,VE,VE,B,B
+geoname_id,3635707,3635701,Las Mercedes,Las Mercedes,Venezuela,Venezuela,VE,VE,M,M
+geoname_id,3634186,3634184,Los Dos Caminos,Los Dos Caminos,Venezuela,Venezuela,VE,VE,M,M
+geoname_id,3625944,3625943,Tucupido,Tucupido,Venezuela,Venezuela,VE,VE,J,J
+geoname_id,8200699,8137924,Minh Khai,Minh Khai,Vietnam,Vietnam,VN,VN,68,68
+geoname_id,1586373,1586372,Cam My,Cam My,Vietnam,Vietnam,VN,VN,39,39
+geoname_id,1904472,1904536,Tan Hung,Tan Hung,Vietnam,Vietnam,VN,VN,SG,SG
+geoname_id,1593819,1561965,Binh Phuoc,Binh Phuoc,Vietnam,Vietnam,VN,VN,SG,SG
+geoname_id,1570052,1570051,Phuong Lam,Phuong Lam,Vietnam,Vietnam,VN,VN,14,14
+geoname_id,1573848,1573845,Na Duong,Na Duong,Vietnam,Vietnam,VN,VN,69,69
+geoname_id,1583748,9867659,Dat Do,Dat Do,Vietnam,Vietnam,VN,VN,54,54
+geoname_id,1565099,1565108,Thuan An,Thuan An,Vietnam,Vietnam,VN,VN,27,27
+geoname_id,1566793,1592170,Tan Thanh,Tan Thanh,Vietnam,Vietnam,VN,VN,46,46
+subdivision_codes,3194035,3194035,Orasje,Orasje,Bosnia and Herzegovina,Bosnia and Herzegovina,BA,BA,BIH,"BIH, 02"
+subdivision_codes,3204222,3204222,Bihać,Bihać,Bosnia and Herzegovina,Bosnia and Herzegovina,BA,BA,BIH,"BIH, 01"
+subdivision_codes,2625499,2625499,Varmahlid,Varmahlid,Iceland,Iceland,IS,IS,"5, SSF","5, SKR"
+subdivision_codes,2627309,2627309,Sauðarkrokur,Sauðarkrokur,Iceland,Iceland,IS,IS,"5, SSF","5, SKR"
+subdivision_codes,2627574,2627574,Reykjahlíð,Reykjahlíð,Iceland,Iceland,IS,IS,"6, SKU","6, THG"
+subdivision_codes,8643869,8643869,Fellabaer,Fellabaer,Iceland,Iceland,IS,IS,"7, FLD","7, MUL"
+subdivision_codes,2632226,2632226,Djupivogur,Djupivogur,Iceland,Iceland,IS,IS,"7, DJU","7, MUL"
+subdivision_codes,2632132,2632132,Egilsstaðir,Egilsstaðir,Iceland,Iceland,IS,IS,"7, FLD","7, MUL"
+subdivision_codes,2627140,2627140,Seyðisfjörður,Seyðisfjörður,Iceland,Iceland,IS,IS,"7, SEY","7, MUL"
+subdivision_codes,3418130,3418130,Blonduos,Blonduos,Iceland,Iceland,IS,IS,"5, BLO","5, HUG"
+subdivision_codes,1519931,1519931,Kaskelen,Kaskelen,Kazakhstan,Kazakhstan,KZ,KZ,ALM,19
+subdivision_codes,1519948,1519948,Konayev,Konayev,Kazakhstan,Kazakhstan,KZ,KZ,ALM,19
+subdivision_codes,1524325,1524325,Ekibastuz,Ekibastuz,Kazakhstan,Kazakhstan,KZ,KZ,PAV,55
+subdivision_codes,1520240,1520240,Pavlodar,Pavlodar,Kazakhstan,Kazakhstan,KZ,KZ,PAV,55
+subdivision_codes,1519922,1519922,Kyzylorda,Kyzylorda,Kazakhstan,Kazakhstan,KZ,KZ,KZY,43
+subdivision_codes,1518542,1518542,Taldykorgan,Taldykorgan,Kazakhstan,Kazakhstan,KZ,KZ,ALM,33
+subdivision_codes,1520316,1520316,Ust-Kamenogorsk,Ust-Kamenogorsk,Kazakhstan,Kazakhstan,KZ,KZ,VOS,63
+subdivision_codes,1525798,1525798,Balqash,Balqash,Kazakhstan,Kazakhstan,KZ,KZ,KAR,35
+subdivision_codes,1519936,1519936,Qaraūyl,Qaraūyl,Kazakhstan,Kazakhstan,KZ,KZ,VOS,63
+subdivision_codes,1524298,1524298,Aqsū,Aqsū,Kazakhstan,Kazakhstan,KZ,KZ,PAV,55
+subdivision_codes,1519422,1519422,Semey,Semey,Kazakhstan,Kazakhstan,KZ,KZ,VOS,10
+subdivision_codes,608668,608668,Oral,Oral,Kazakhstan,Kazakhstan,KZ,KZ,ZAP,27
+subdivision_codes,1520172,1520172,Petropavl,Petropavl,Kazakhstan,Kazakhstan,KZ,KZ,SEV,59
+subdivision_codes,1516905,1516905,Taraz,Taraz,Kazakhstan,Kazakhstan,KZ,KZ,ZHA,31
+subdivision_codes,610529,610529,Atyrau,Atyrau,Kazakhstan,Kazakhstan,KZ,KZ,ATY,23
+subdivision_codes,610612,610612,Aktau,Aktau,Kazakhstan,Kazakhstan,KZ,KZ,MAN,47
+subdivision_codes,609404,609404,Khromtau,Khromtau,Kazakhstan,Kazakhstan,KZ,KZ,AKT,15
+subdivision_codes,1519843,1519843,Rudnyy,Rudnyy,Kazakhstan,Kazakhstan,KZ,KZ,KUS,39
+subdivision_codes,1523401,1523401,,,Kazakhstan,Kazakhstan,KZ,KZ,KAR,35
+subdivision_codes,1526970,1526970,Abay,Abay,Kazakhstan,Kazakhstan,KZ,KZ,KAR,35
+subdivision_codes,1519327,1519327,Shakhtinsk,Shakhtinsk,Kazakhstan,Kazakhstan,KZ,KZ,KAR,35
+subdivision_codes,1518262,1518262,Temirtau,Temirtau,Kazakhstan,Kazakhstan,KZ,KZ,KAR,35
+subdivision_codes,1518518,1518518,Talghar,Talghar,Kazakhstan,Kazakhstan,KZ,KZ,ALM,19
+subdivision_codes,1519725,1519725,Soran,Soran,Kazakhstan,Kazakhstan,KZ,KZ,KAR,35
+subdivision_codes,608679,608679,Kandyagash,Kandyagash,Kazakhstan,Kazakhstan,KZ,KZ,AKT,15
+subdivision_codes,1522203,1522203,Kokshetau,Kokshetau,Kazakhstan,Kazakhstan,KZ,KZ,AKM,11
+subdivision_codes,607493,607493,Staryy Beyneu,Staryy Beyneu,Kazakhstan,Kazakhstan,KZ,KZ,MAN,47
+subdivision_codes,1517948,1517948,Turkestan,Turkestan,Kazakhstan,Kazakhstan,KZ,KZ,ZHA,31
+subdivision_codes,1523741,1523741,Esik,Esik,Kazakhstan,Kazakhstan,KZ,KZ,ALM,19
+subdivision_codes,1518980,1518980,Shymkent,Shymkent,Kazakhstan,Kazakhstan,KZ,KZ,SHY,79
+subdivision_codes,1538012,1538012,Altay,Altay,Kazakhstan,Kazakhstan,KZ,KZ,VOS,63
+subdivision_codes,1519938,1519938,Karatau,Karatau,Kazakhstan,Kazakhstan,KZ,KZ,ZHA,31
+subdivision_codes,1520969,1520969,Merke,Merke,Kazakhstan,Kazakhstan,KZ,KZ,ZHA,31
+subdivision_codes,1518139,1518139,Tobol,Tobol,Kazakhstan,Kazakhstan,KZ,KZ,KUS,39
+subdivision_codes,1522872,1522872,Kazakhstan,Kazakhstan,Kazakhstan,Kazakhstan,KZ,KZ,ALM,19
+subdivision_codes,1521379,1521379,Lenger,Lenger,Kazakhstan,Kazakhstan,KZ,KZ,YUZ,61
+subdivision_codes,1519673,1519673,Saryaghash,Saryaghash,Kazakhstan,Kazakhstan,KZ,KZ,YUZ,61
+subdivision_codes,1517945,1517945,Turkestan,Turkestan,Kazakhstan,Kazakhstan,KZ,KZ,YUZ,61
+subdivision_codes,1516601,1516601,Zhetikara,Zhetikara,Kazakhstan,Kazakhstan,KZ,KZ,KUS,39
+subdivision_codes,1522339,1522339,Komsomol'skoe,Komsomol'skoe,Kazakhstan,Kazakhstan,KZ,KZ,KUS,39
+subdivision_codes,1537939,1537939,Stepnogorsk,Stepnogorsk,Kazakhstan,Kazakhstan,KZ,KZ,AKM,11
+subdivision_codes,1521370,1521370,Ridder,Ridder,Kazakhstan,Kazakhstan,KZ,KZ,VOS,63
+subdivision_codes,608872,608872,Maqat,Maqat,Kazakhstan,Kazakhstan,KZ,KZ,ATY,23
+subdivision_codes,1526059,1526059,Astrakhanka,Astrakhanka,Kazakhstan,Kazakhstan,KZ,KZ,AKM,11
+subdivision_codes,1519932,1519932,Kachar,Kachar,Kazakhstan,Kazakhstan,KZ,KZ,KUS,39
+subdivision_codes,1522751,1522751,Kentau,Kentau,Kazakhstan,Kazakhstan,KZ,KZ,YUZ,61
+subdivision_codes,609343,609343,Koktau,Koktau,Kazakhstan,Kazakhstan,KZ,KZ,AKT,15
+subdivision_codes,1525809,1525809,Balkashīno,Balkashīno,Kazakhstan,Kazakhstan,KZ,KZ,AKM,11
+subdivision_codes,1526384,1526384,Almaty,Almaty,Kazakhstan,Kazakhstan,KZ,KZ,ALA,75
+subdivision_codes,1526273,1526273,Astana,Astana,Kazakhstan,Kazakhstan,KZ,KZ,AST,71
+subdivision_codes,1524302,1524302,Yereymentau,Yereymentau,Kazakhstan,Kazakhstan,KZ,KZ,AKM,11
+subdivision_codes,1519455,1519455,Sayram,Sayram,Kazakhstan,Kazakhstan,KZ,KZ,YUZ,61
+subdivision_codes,610613,610613,Aksay,Aksay,Kazakhstan,Kazakhstan,KZ,KZ,ZAP,27
+subdivision_codes,1519226,1519226,Shemonaīkha,Shemonaīkha,Kazakhstan,Kazakhstan,KZ,KZ,VOS,63
+subdivision_codes,12253783,12253783,Tekeli,Tekeli,Kazakhstan,Kazakhstan,KZ,KZ,ALM,19
+subdivision_codes,1518622,1518622,Tayynsha,Tayynsha,Kazakhstan,Kazakhstan,KZ,KZ,SEV,59
+subdivision_codes,608271,608271,Shubarkuduk,Shubarkuduk,Kazakhstan,Kazakhstan,KZ,KZ,AKT,15
+subdivision_codes,1519244,1519244,Shchūchīnsk,Shchūchīnsk,Kazakhstan,Kazakhstan,KZ,KZ,AKM,11
+subdivision_codes,1525600,1525600,Bayqonyr,Bayqonyr,Kazakhstan,Kazakhstan,KZ,KZ,KAR,35
+subdivision_codes,1519928,1519928,Kostanay,Kostanay,Kazakhstan,Kazakhstan,KZ,KZ,KUS,39
+subdivision_codes,610611,610611,Aktobe,Aktobe,Kazakhstan,Kazakhstan,KZ,KZ,AKT,15
+subdivision_codes,1516589,1516589,Dzhezkazgan,Dzhezkazgan,Kazakhstan,Kazakhstan,KZ,KZ,KAR,62
+subdivision_codes,1526708,1526708,Aqsay,Aqsay,Kazakhstan,Kazakhstan,KZ,KZ,KUS,39
+subdivision_codes,1520692,1520692,Satbayev,Satbayev,Kazakhstan,Kazakhstan,KZ,KZ,KAR,35
+subdivision_codes,1521315,1521315,Līsakovsk,Līsakovsk,Kazakhstan,Kazakhstan,KZ,KZ,KUS,39
+subdivision_codes,1539938,1539938,Qayrat,Qayrat,Kazakhstan,Kazakhstan,KZ,KZ,ALM,19
+subdivision_codes,1526443,1526443,Akkol',Akkol',Kazakhstan,Kazakhstan,KZ,KZ,AKM,11
+subdivision_codes,1524787,1524787,South Kazakhstan,South Kazakhstan,Kazakhstan,Kazakhstan,KZ,KZ,YUZ,61
+subdivision_codes,7536148,7536148,Priozersk,Priozersk,Kazakhstan,Kazakhstan,KZ,KZ,KAR,35
+subdivision_codes,1520947,1520947,Sarykemer,Sarykemer,Kazakhstan,Kazakhstan,KZ,KZ,ZHA,31
+subdivision_codes,609123,609123,Qulsary,Qulsary,Kazakhstan,Kazakhstan,KZ,KZ,ATY,23
+subdivision_codes,608324,608324,Shetpe,Shetpe,Kazakhstan,Kazakhstan,KZ,KZ,MAN,47
+subdivision_codes,1520885,1520885,Kurchatov,Kurchatov,Kazakhstan,Kazakhstan,KZ,KZ,VOS,63
+subdivision_codes,607610,607610,Zhangaözen,Zhangaözen,Kazakhstan,Kazakhstan,KZ,KZ,MAN,47
+subdivision_codes,1524871,1524871,Chayan,Chayan,Kazakhstan,Kazakhstan,KZ,KZ,YUZ,61
+subdivision_codes,1524243,1524243,Korday,Korday,Kazakhstan,Kazakhstan,KZ,KZ,ZHA,31
+subdivision_codes,610658,610658,Algha,Algha,Kazakhstan,Kazakhstan,KZ,KZ,AKT,15
+subdivision_codes,609655,609655,Karaganda,Karaganda,Kazakhstan,Kazakhstan,KZ,KZ,KAR,35
+subdivision_codes,1519580,1519580,Saryozek,Saryozek,Kazakhstan,Kazakhstan,KZ,KZ,ALM,19
+subdivision_codes,1517672,1517672,Usharal,Usharal,Kazakhstan,Kazakhstan,KZ,KZ,ZHA,31
+subdivision_codes,1526395,1526395,,,Kazakhstan,Kazakhstan,KZ,KZ,ALA,75
+subdivision_codes,1524787,1524787,,,Kazakhstan,Kazakhstan,KZ,KZ,YUZ,61
+subdivision_codes,833264,833264,Zelezara,Zelezara,North Macedonia,North Macedonia,MK,MK,,815
+subdivision_codes,8549215,8549215,Trubarevo,Trubarevo,North Macedonia,North Macedonia,MK,MK,,801
+subdivision_codes,788579,788579,Ljubanci,Ljubanci,North Macedonia,North Macedonia,MK,MK,,814
