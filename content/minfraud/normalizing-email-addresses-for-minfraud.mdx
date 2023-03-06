@@ -10,12 +10,12 @@ If you provide the email as an MD5 hash, it’s important that you normalize it
 before generating the hash. Otherwise minor, inconsequential differences could
 cause minFraud to consider it a different address.
 
-Our [API clients](/minfraud/api-documentation/#api-clients) do this for you if
+Our [client APIs](/minfraud/api-documentation/#client-apis) do this for you if
 you enable sending the MD5 hash. This is the recommended way to do this.
 
 ## Normalizing email addresses
 
-If you are not able to use our API clients, you can normalize an email address
+If you are not able to use our client APIs, you can normalize an email address
 yourself. Below are the steps to take to do this.
 
 1. Trim whitespace from both ends of the address.
@@ -41,7 +41,7 @@ yourself. Below are the steps to take to do this.
    email local part with the subdomain (i.e., `alias@user.fastmail.com` is
    replaced with `user@fastmail.com`).
 1. Fix common typos in domain names. You can see a list of typos we map in our
-   [Java API client](https://github.com/maxmind/minfraud-api-java/blob/main/src/main/java/com/maxmind/minfraud/request/Email.java#L24).
+   [Java client API](https://github.com/maxmind/minfraud-api-java/blob/main/src/main/java/com/maxmind/minfraud/request/Email.java#L24).
 1. Remove alias parts from the local part. For addresses at the `yahoo.com`
    domain, or other domains affiliated with Yahoo, this is everything after and
    including the first `-` character, if present. For addresses with all other
@@ -53,7 +53,7 @@ yourself. Below are the steps to take to do this.
 
 ## Examples
 
-You can review the code in our API clients see how to normalize an email address
+You can review the code in our client APIs see how to normalize an email address
 in various languages.
 
 - [.NET (C#)](https://github.com/maxmind/minfraud-api-dotnet/blob/main/MaxMind.MinFraud/Request/Email.cs#L150)
