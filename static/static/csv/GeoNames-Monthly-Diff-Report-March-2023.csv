@@ -1,0 +1,70 @@
+diff_in,old_geoname_id,new_geoname_id,old_city_name,new_city_name,old_country_name,new_country_name,old_country_code,new_country_code,old_subdivision_codes,new_subdivision_codes
+city_name,2782566,2782566,Taxerhof Lake,Ampass,Austria,Austria,AT,AT,7,7
+city_name,3920177,3920177,Departamento de Chuquisaca,Chuquisaca Department,Bolivia,Bolivia,BO,BO,H,H
+city_name,2997996,2997996,Château de Loches,Loches,France,France,FR,FR,"CVL, 37","CVL, 37"
+city_name,3035156,3035156,Bandol AOC,Bandol,France,France,FR,FR,"PAC, 83","PAC, 83"
+city_name,2879407,2879407,Lehnin Abbey,Kloster Lehnin,Germany,Germany,DE,DE,BB,BB
+city_name,2885912,2885912,Königsbronn Abbey,Königsbronn,Germany,Germany,DE,DE,BW,BW
+city_name,2933008,2933008,Eging on Sea,Eging am See,Germany,Germany,DE,DE,BY,BY
+city_name,2862576,2862576,"Nienhagen, Lower Saxony",Nienhagen,Germany,Germany,DE,DE,NI,NI
+city_name,2810581,2810581,Wessobrunn Abbey,Wessobrunn,Germany,Germany,DE,DE,BY,BY
+city_name,2822160,2822160,Timmendorf Beach,Timmendorfer Strand,Germany,Germany,DE,DE,SH,SH
+city_name,11777422,11777422,Ohorikoen,Ōhori Park,Japan,Japan,JP,JP,40,40
+city_name,11776124,11776124,Nanotsu,Suzaki Futō,Japan,Japan,JP,JP,40,40
+city_name,11809917,11809917,Hakozakifuto,Hakozaki Futō,Japan,Japan,JP,JP,40,40
+city_name,2722027,2722027,Bjorko,Bjoerkoe,Sweden,Sweden,SE,SE,AB,AB
+city_name,2682691,2682691,Reso,Resoe,Sweden,Sweden,SE,SE,O,O
+city_name,2658729,2658729,Schlatt bei Diessenhofen,Schlatt TG,Switzerland,Switzerland,CH,CH,TG,TG
+city_name,2659779,2659779,Maloja District,Maloja,Switzerland,Switzerland,CH,CH,GR,GR
+city_name,1611453,1611453,Changwat Buri Ram,Buriram,Thailand,Thailand,TH,TH,31,31
+city_name,1611453,1611453,Changwat Buri Ram,Buriram,Thailand,Thailand,TH,TH,31,31
+city_name,5090100,5090100,New Castle,Newcastle,United States,United States,US,US,NH,NH
+geoname_id,3195128,3292947,Milici,Milici,Bosnia and Herzegovina,Bosnia and Herzegovina,BA,BA,SRP,SRP
+geoname_id,6319833,6318970,Ze Doca,Ze Doca,Brazil,Brazil,BR,BR,MA,MA
+geoname_id,3388207,3388210,Sao Pedro,Sao Pedro,Brazil,Brazil,BR,BR,RN,RN
+geoname_id,3456174,3456173,Nova Esperanca,Nova Esperanca,Brazil,Brazil,BR,BR,PR,PR
+geoname_id,3405433,3405432,Bodo,Bodo,Brazil,Brazil,BR,BR,RN,RN
+geoname_id,6317709,3456196,Nova Aurora,Nova Aurora,Brazil,Brazil,BR,BR,PR,PR
+geoname_id,3472270,3472271,Andarai,Andarai,Brazil,Brazil,BR,BR,BA,BA
+geoname_id,3449775,12229322,Santa Tereza,Santa Tereza,Brazil,Brazil,BR,BR,RS,RS
+geoname_id,3471909,3471910,Apucarana,Apucarana,Brazil,Brazil,BR,BR,PR,PR
+geoname_id,6319284,3663516,Mancio Lima,Mancio Lima,Brazil,Brazil,BR,BR,AC,AC
+geoname_id,6316460,3411874,Augustinopolis,Augustinopolis,Brazil,Brazil,BR,BR,TO,TO
+geoname_id,3456058,6317783,Novo Horizonte,Novo Horizonte,Brazil,Brazil,BR,BR,SC,SC
+geoname_id,8602689,3385745,Uniao,Uniao,Brazil,Brazil,BR,BR,PI,PI
+geoname_id,3387423,6318704,Sitio Novo do Tocantins,Sitio Novo do Tocantins,Brazil,Brazil,BR,BR,TO,TO
+geoname_id,6318649,6323785,Selviria,Selviria,Brazil,Brazil,BR,BR,MS,MS
+geoname_id,6323812,6316760,Canarana,Canarana,Brazil,Brazil,BR,BR,MT,MT
+geoname_id,3472007,6316401,Antonio Joao,Antonio Joao,Brazil,Brazil,BR,BR,MS,MS
+geoname_id,3405806,6319378,Belterra,Belterra,Brazil,Brazil,BR,BR,PA,PA
+geoname_id,6324176,3663495,Manoel Urbano,Manoel Urbano,Brazil,Brazil,BR,BR,AC,AC
+geoname_id,6318418,3449165,Sao Francisco,Sao Francisco,Brazil,Brazil,BR,BR,SP,SP
+geoname_id,6321040,3449304,Sao Desiderio,Sao Desiderio,Brazil,Brazil,BR,BR,BA,BA
+geoname_id,6319281,3664464,Cruzeiro do Sul,Cruzeiro do Sul,Brazil,Brazil,BR,BR,AC,AC
+geoname_id,3668332,3668333,Santo Tomas,Santo Tomas,Colombia,Colombia,CO,CO,ATL,ATL
+geoname_id,2619860,2619859,Horning,Horning,Denmark,Denmark,DK,DK,82,82
+geoname_id,3492553,3492552,Tabique,Tabique,Dominican Republic,Dominican Republic,DO,DO,5,5
+geoname_id,3497281,3497280,Magante,Magante,Dominican Republic,Dominican Republic,DO,DO,9,9
+geoname_id,590977,590975,Kunda,Kunda,Estonia,Estonia,EE,EE,"60, 903","60, 903"
+geoname_id,2957733,3206785,Altendorf,Altendorf,Germany,Germany,DE,DE,BY,BY
+geoname_id,2906334,2906333,Hennickendorf,Hennickendorf,Germany,Germany,DE,DE,BB,BB
+geoname_id,3206177,11608792,Grafenberg,Grafenberg,Germany,Germany,DE,DE,BW,BW
+geoname_id,3728088,3728087,Cazeau,Cazeau,Haiti,Haiti,HT,HT,OU,OU
+geoname_id,3723783,3723782,Jackson,Jackson,Haiti,Haiti,HT,HT,SE,SE
+geoname_id,3607516,3607491,La Lima,La Lima,Honduras,Honduras,HN,HN,LE,LE
+geoname_id,3607965,3607960,La Esperanza,La Esperanza,Honduras,Honduras,HN,HN,FM,FM
+geoname_id,1936351,1630923,Polokarto,Polokarto,Indonesia,Indonesia,ID,ID,JT,JT
+geoname_id,8379755,1625360,Tamanan,Tamanan,Indonesia,Indonesia,ID,ID,JI,JI
+geoname_id,12032400,7087267,Subagan,Subagan,Indonesia,Indonesia,ID,ID,BA,BA
+geoname_id,1647575,1647574,Buol,Buol,Indonesia,Indonesia,ID,ID,ST,ST
+geoname_id,3180511,8980123,Carignano,Carignano,Italy,Italy,IT,IT,"21, TO","21, TO"
+geoname_id,1855886,11821857,Nakamura,Nakamura,Japan,Japan,JP,JP,35,35
+geoname_id,1735339,1735297,Mukah,Mukah,Malaysia,Malaysia,MY,MY,13,13
+geoname_id,1291452,1291451,Thingangyun,Thingangyun,Myanmar,Myanmar,MM,MM,6,6
+geoname_id,11696088,3132911,Vale,Vale,Norway,Norway,NO,NO,38,38
+geoname_id,1719684,1719683,Camiling,Camiling,Philippines,Philippines,PH,PH,"03, TAR","03, TAR"
+geoname_id,11428151,983038,Letaba,Letaba,South Africa,South Africa,ZA,ZA,LP,LP
+geoname_id,2514410,2514411,Los Villares,Los Villares,Spain,Spain,ES,ES,"AN, J","AN, J"
+geoname_id,1616797,1616794,Ban Mai,Ban Mai,Thailand,Thailand,TH,TH,14,14
+subdivision_codes,2198148,2198148,Suva,Suva,Fiji,Fiji,FJ,FJ,C,"C, 12"
+subdivision_codes,2198148,2198148,Suva,Suva,Fiji,Fiji,FJ,FJ,C,"C, 12"
