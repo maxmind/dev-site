@@ -30,6 +30,7 @@
   - [Static Server](#static-server)
 - [Testing](#testing)
 - [Deployments](#deployments)
+- [Updating Release Notes for the New Year](#updating-release-notes-for-the-new-year)
 
 ### Minimum Requirements
 
@@ -103,3 +104,23 @@ npm run build && npm run preview
 **Firebase function resources are shared throughout environments.** If two PRs
 have changes to Firebase functions, the deployed functions will be those of the
 PR whose `Firebase - Staging` GitHub workflow has run most recently.
+
+### Updating Release Notes for the New Year
+
+Whenever you create your first release note for a product category for a new
+year:
+
+1. Add a file called `<year>.mdx` to the `content/<product>/release-notes`
+folder. (e.g., `content/geoip/release-notes/2024.mdx`)
+2. Add the header to your new release note file with the title: `<Product> Release Notes`
+(e.g., `GeoIP2 Release Notes`)
+3. Add the RSS notification to the top of the new file.
+4. Change the `title:` field in the previous year's `mdx` file to read: `<Product> Release Notes - <Year> Archive`
+(e.g., `GeoIP2 Release Notes - 2023 Archive`)
+5. Remove the RSS notification from the top of the archived file.
+6. Update link to the release notes in the navigation menu (`content/navigation.tsx`)
+to point to the current year's pathway.
+7. Update the URL in the JS redirects (`firebase/redirects/release-notes/current-year.js`)
+to the current year's pathway.
+8. Update the URLs used to create RSS feeds (`gatsby/gatsby-config/index.ts`) to
+the current year's pathway.

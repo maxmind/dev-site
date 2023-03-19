@@ -9,7 +9,7 @@ module.exports = [
     type: 302,
   },
   {
-    destination: '/minfraud/release-notes/2022',
+    destination: '/minfraud/release-notes/2023',
     source: '/minfraud/release-notes',
     type: 302,
   },
