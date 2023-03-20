@@ -7,6 +7,24 @@ title: minFraud Release Notes
 Subscribe to the [minFraud release notes RSS feed](/minfraud/release-notes/rss.xml).
 </Alert>
 
+<ReleaseNote date="2023-03-21" title="Velocity Checking on User ID">
+
+We have enabled velocity tracking on the `account/user_id` input for all
+minFraud customers.
+
+If you send a user ID associated with your transactions, minFraud will now
+factor the velocity of the user's transactions into the risk score.
+
+The `account/user_id` input allows you to pass a unique identifier for each of
+your users so that the minFraud service can group transactions by user in order
+to identify fraud signals attached to specific users.
+
+[Learn more about the `account/user_id` input on our Developer Portal.](/minfraud/api-documentation/requests?lang=en#schema--request--account__user_id)
+
+[Learn more about velocity tracking on our Knowledge Base.](https://support.maxmind.com/hc/en-us/articles/4408261402651-Velocity-Checks)
+
+</ReleaseNote>
+
 <ReleaseNote date="2023-03-16" title="New License Key Format">
 
 We have updated the format of our license keys. New license keys will be longer,
