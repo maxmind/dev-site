@@ -497,7 +497,7 @@ const CsvBlockTable: React.FC<ICsvBlockTable> = (props) => {
                 more about the GeoIP2 Anonymous IP database in
                 {' '}
                 <A
-                  href="/geoip/docs/databases/anonymous-ip?lang=en"
+                  href="/geoip/docs/databases/anonymous-ip"
                   target="_self"
                 >
                   the developer portal

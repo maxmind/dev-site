@@ -44,7 +44,7 @@ const SEO: React.FC<ISEO> = (props) => {
       link={[
         {
           href:
-            `${site.siteMetadata.siteUrl}${useLocation()?.pathname}?lang=en`,
+            `${site.siteMetadata.siteUrl}${useLocation()?.pathname}`,
           rel:'canonical',
         },
       ]}
