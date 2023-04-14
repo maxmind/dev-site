@@ -43,7 +43,7 @@ export default (): any => ({
         date,
         guid: `${siteUrl}/maxmind-server-ip-addresses?t=${date.getTime()}`,
         title: 'MaxMind Server IP Addresses',
-        url: `${siteUrl}/maxmind-server-ip-addresses?lang=en`,
+        url: `${siteUrl}/maxmind-server-ip-addresses`,
       },
     ];
   },

@@ -10,7 +10,7 @@ environment is available for all paying MaxMind customers.
 
 [Learn more about the Sandbox environment on our Knowledge Base.](https://support.maxmind.com/hc/en-us/sections/8603980533659-Sandbox-Environment)
 
-[You can also read more about testing minFraud web services on the Sandbox.](/minfraud/sandbox-environment?lang=en)
+[You can also read more about testing minFraud web services on the Sandbox.](/minfraud/sandbox-environment)
 
 </ReleaseNote>
 
@@ -36,7 +36,7 @@ services will be affected:
 In some cases where we are no longer confident in the registered country for an
 IP, it will be removed. In other cases, the value may be changed.
 
-[You can learn more about the `/registered_country` output in the API schema for GeoIP2 web services.](/geoip/docs/web-services/responses?lang=en#schema--response--registered-country)
+[You can learn more about the `/registered_country` output in the API schema for GeoIP2 web services.](/geoip/docs/web-services/responses#schema--response--registered-country)
 
 [You can learn more about the difference between registered country and the IP geolocation on our Knowledge Base.](https://support.maxmind.com/hc/en-us/articles/4414762983195-Country-level-and-City-level-Geolocation)
 
@@ -164,8 +164,8 @@ numbers (IINs). These are non-breaking changes.
 Learn more about how to pass the correct number of digits for credit card inputs
 in our developer portal:
 
-- [`credit_card/issuer_id_number`](https://dev.maxmind.com/minfraud/api-documentation/requests?lang=en#schema--request--credit-card__issuer_id_number)
-- [`credit_card/last_digits`](https://dev.maxmind.com/minfraud/api-documentation/requests?lang=en#schema--request--credit-card__last_digits)
+- [`credit_card/issuer_id_number`](https://dev.maxmind.com/minfraud/api-documentation/requests#schema--request--credit-card__issuer_id_number)
+- [`credit_card/last_digits`](https://dev.maxmind.com/minfraud/api-documentation/requests#schema--request--credit-card__last_digits)
 
 You can read more about these changes in
 [the announcement on our blog](https://blog.maxmind.com/2022/01/minfraud-now-supports-8-digit-iins/).
@@ -177,11 +177,11 @@ numbers, you can read more at
 </ReleaseNote>
 
 <ReleaseNote date="2022-01-14" title="minFraud alerts webhook now supports signed requests">
-[minFraud alerts](https://dev.maxmind.com/minfraud/alerts?lang=en) now support
+[minFraud alerts](https://dev.maxmind.com/minfraud/alerts) now support
 signed requests for webhook delivery. You can now set a secret, which can be
 used to verify the authenticity of a minFraud alert delivered via webhook. See
 our [minFraud Alert
-documentation](https://dev.maxmind.com/minfraud/alerts?lang=en#signed-requests)
+documentation](https://dev.maxmind.com/minfraud/alerts#signed-requests)
 for instructions.
 </ReleaseNote>
 
@@ -196,6 +196,6 @@ Nothing has changed about how to use our web services, and no changes are
 required to your current integration. Specifically, the JSON response for
 minFraud Factors queries will continue to return risk factor scores in the
 `subscores` object.
-[Learn more about the subscores object.](/minfraud/api-documentation/responses?lang=en#schema--response--subscores)
+[Learn more about the subscores object.](/minfraud/api-documentation/responses#schema--response--subscores)
 
 </ReleaseNote>
