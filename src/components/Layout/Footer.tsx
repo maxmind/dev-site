@@ -203,6 +203,12 @@ const Footer: React.FC<React.HTMLProps<HTMLDivElement>> = (props) => {
           >
             GeoIP
           </a>
+          <a
+            className={styles.link}
+            href="https://www.maxmind.com/en/affiliate-program"
+          >
+            Affiliate Program
+          </a>
         </div>
 
         <div
