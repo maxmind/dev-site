@@ -97,6 +97,12 @@ const Footer: React.FC<React.HTMLProps<HTMLDivElement>> = (props) => {
           >
             GeoLite2 Free Geolocation Data
           </a>
+          <a
+            className={styles.link}
+            href="https://www.maxmind.com/en/affiliate-program"
+          >
+            Affiliate Program
+          </a>
         </div>
 
         <div
