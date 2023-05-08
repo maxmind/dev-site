@@ -158,7 +158,7 @@ export default {
     {
       options: {
         trackingIds: [
-          'G-TV4RYDTCKV',
+          'G-8F9B6Q5C11',
         ],
       },
       resolve: 'gatsby-plugin-google-gtag',
