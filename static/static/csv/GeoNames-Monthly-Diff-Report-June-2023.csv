@@ -1,0 +1,165 @@
+diff_in,old_geoname_id,new_geoname_id,old_city_name,new_city_name,old_country_name,new_country_name,old_country_code,new_country_code,old_subdivision_codes,new_subdivision_codes
+city_name,6324182,6324182,Almeirim,Almeirim Municipality,Brazil,Brazil,BR,BR,PA,PA
+city_name,6319494,6319494,Calcoene,Calçoene Municipality,Brazil,Brazil,BR,BR,AP,AP
+city_name,3925074,3925074,Guajara-Mirim,Guajará-Mirim Municipality,Brazil,Brazil,BR,BR,RO,RO
+city_name,3880827,3880827,Malloa,Rinconada de Malloa,Chile,Chile,CL,CL,LI,LI
+city_name,1812768,1812768,Dingping,Linshui,China,China,CN,CN,SC,SC
+city_name,3067695,3067695,Hlavni mesto Praha,Prague,Czechia,Czechia,CZ,CZ,10,10
+city_name,1270752,1270752,Gulbarga,Kalaburagi,India,India,IN,IN,KA,KA
+city_name,1254163,1254163,Trivandrum,Thiruvananthapuram,India,India,IN,IN,KL,KL
+city_name,1254163,1254163,Trivandrum,Thiruvananthapuram,India,India,IN,IN,KL,KL
+city_name,1254388,1254388,Tiruchi,Tiruchirappalli,India,India,IN,IN,TN,TN
+city_name,1254163,1254163,Trivandrum,Thiruvananthapuram,India,India,IN,IN,KL,KL
+city_name,1254388,1254388,Tiruchi,Tiruchirappalli,India,India,IN,IN,TN,TN
+city_name,1270642,1270642,Gurgaon,Gurugram,India,India,IN,IN,HR,HR
+city_name,1270642,1270642,Gurgaon,Gurugram,India,India,IN,IN,HR,HR
+city_name,1270642,1270642,Gurgaon,Gurugram,India,India,IN,IN,HR,HR
+city_name,1270642,1270642,Gurgaon,Gurugram,India,India,IN,IN,HR,HR
+city_name,1276509,1276509,Bellary,Ballari,India,India,IN,IN,KA,KA
+city_name,1254163,1254163,Trivandrum,Thiruvananthapuram,India,India,IN,IN,KL,KL
+city_name,1270752,1270752,Gulbarga,Kalaburagi,India,India,IN,IN,KA,KA
+city_name,1254388,1254388,Tiruchi,Tiruchirappalli,India,India,IN,IN,TN,TN
+city_name,1254163,1254163,Trivandrum,Thiruvananthapuram,India,India,IN,IN,KL,KL
+city_name,1254388,1254388,Tiruchi,Tiruchirappalli,India,India,IN,IN,TN,TN
+city_name,1254163,1254163,Trivandrum,Thiruvananthapuram,India,India,IN,IN,KL,KL
+city_name,1276509,1276509,Bellary,Ballari,India,India,IN,IN,KA,KA
+city_name,1269939,1269939,Hoshangabad,Narmadapuram,India,India,IN,IN,MP,MP
+city_name,1270642,1270642,Gurgaon,Gurugram,India,India,IN,IN,HR,HR
+city_name,1270642,1270642,Gurgaon,Gurugram,India,India,IN,IN,HR,HR
+city_name,1254163,1254163,Trivandrum,Thiruvananthapuram,India,India,IN,IN,KL,KL
+city_name,1270642,1270642,Gurgaon,Gurugram,India,India,IN,IN,HR,HR
+city_name,1254163,1254163,Trivandrum,Thiruvananthapuram,India,India,IN,IN,KL,KL
+city_name,1269939,1269939,Hoshangabad,Narmadapuram,India,India,IN,IN,MP,MP
+city_name,1254163,1254163,Trivandrum,Thiruvananthapuram,India,India,IN,IN,KL,KL
+city_name,1254163,1254163,Trivandrum,Thiruvananthapuram,India,India,IN,IN,KL,KL
+city_name,1270642,1270642,Gurgaon,Gurugram,India,India,IN,IN,HR,HR
+city_name,1276509,1276509,Bellary,Ballari,India,India,IN,IN,KA,KA
+city_name,1254163,1254163,Trivandrum,Thiruvananthapuram,India,India,IN,IN,KL,KL
+city_name,1270642,1270642,Gurgaon,Gurugram,India,India,IN,IN,HR,HR
+city_name,1270642,1270642,Gurgaon,Gurugram,India,India,IN,IN,HR,HR
+city_name,1254163,1254163,Trivandrum,Thiruvananthapuram,India,India,IN,IN,KL,KL
+city_name,1254163,1254163,Trivandrum,Thiruvananthapuram,India,India,IN,IN,KL,KL
+city_name,1254163,1254163,Trivandrum,Thiruvananthapuram,India,India,IN,IN,KL,KL
+city_name,1269939,1269939,Hoshangabad,Narmadapuram,India,India,IN,IN,MP,MP
+city_name,1270642,1270642,Gurgaon,Gurugram,India,India,IN,IN,HR,HR
+city_name,1254163,1254163,Trivandrum,Thiruvananthapuram,India,India,IN,IN,KL,KL
+city_name,1254163,1254163,Trivandrum,Thiruvananthapuram,India,India,IN,IN,KL,KL
+city_name,1270642,1270642,Gurgaon,Gurugram,India,India,IN,IN,HR,HR
+city_name,1270642,1270642,Gurgaon,Gurugram,India,India,IN,IN,HR,HR
+city_name,1270752,1270752,Gulbarga,Kalaburagi,India,India,IN,IN,KA,KA
+city_name,1270752,1270752,Gulbarga,Kalaburagi,India,India,IN,IN,KA,KA
+city_name,1254163,1254163,Trivandrum,Thiruvananthapuram,India,India,IN,IN,KL,KL
+city_name,1254163,1254163,Trivandrum,Thiruvananthapuram,India,India,IN,IN,KL,KL
+city_name,1254163,1254163,Trivandrum,Thiruvananthapuram,India,India,IN,IN,KL,KL
+city_name,1254163,1254163,Trivandrum,Thiruvananthapuram,India,India,IN,IN,KL,KL
+city_name,1270642,1270642,Gurgaon,Gurugram,India,India,IN,IN,HR,HR
+city_name,1270642,1270642,Gurgaon,Gurugram,India,India,IN,IN,HR,HR
+city_name,1270642,1270642,Gurgaon,Gurugram,India,India,IN,IN,HR,HR
+city_name,1270642,1270642,Gurgaon,Gurugram,India,India,IN,IN,HR,HR
+city_name,1270642,1270642,Gurgaon,Gurugram,India,India,IN,IN,HR,HR
+city_name,1254388,1254388,Tiruchi,Tiruchirappalli,India,India,IN,IN,TN,TN
+city_name,1254388,1254388,Tiruchi,Tiruchirappalli,India,India,IN,IN,TN,TN
+city_name,1254163,1254163,Trivandrum,Thiruvananthapuram,India,India,IN,IN,KL,KL
+city_name,1254388,1254388,Tiruchi,Tiruchirappalli,India,India,IN,IN,TN,TN
+city_name,1276509,1276509,Bellary,Ballari,India,India,IN,IN,KA,KA
+city_name,1254163,1254163,Trivandrum,Thiruvananthapuram,India,India,IN,IN,KL,KL
+city_name,1261012,1261012,Osmanabad,Dharashiv,India,India,IN,IN,MH,MH
+city_name,1270752,1270752,Gulbarga,Kalaburagi,India,India,IN,IN,KA,KA
+city_name,1270642,1270642,Gurgaon,Gurugram,India,India,IN,IN,HR,HR
+city_name,1270642,1270642,Gurgaon,Gurugram,India,India,IN,IN,HR,HR
+city_name,1254388,1254388,Tiruchi,Tiruchirappalli,India,India,IN,IN,TN,TN
+city_name,1254388,1254388,Tiruchi,Tiruchirappalli,India,India,IN,IN,TN,TN
+city_name,1270642,1270642,Gurgaon,Gurugram,India,India,IN,IN,HR,HR
+city_name,1270642,1270642,Gurgaon,Gurugram,India,India,IN,IN,HR,HR
+city_name,1254388,1254388,Tiruchi,Tiruchirappalli,India,India,IN,IN,TN,TN
+city_name,1270752,1270752,Gulbarga,Kalaburagi,India,India,IN,IN,KA,KA
+city_name,1270642,1270642,Gurgaon,Gurugram,India,India,IN,IN,HR,HR
+city_name,1520692,1520692,Satbayev,Satpayev,Kazakhstan,Kazakhstan,KZ,KZ,62,62
+city_name,3979822,3979822,Zacoalco de Torres,Zacoalco,Mexico,Mexico,MX,MX,JAL,JAL
+city_name,3985005,3985005,San Pedro,San Pedro Tesistan,Mexico,Mexico,MX,MX,JAL,JAL
+city_name,1489530,1489530,Tobol'sk,Tobolsk,Russia,Russia,RU,RU,TYU,TYU
+city_name,1494114,1494114,Prokop'yevsk,Prokopyevsk,Russia,Russia,RU,RU,KEM,KEM
+city_name,1504826,1504826,Kamensk-Ural'skiy,Kamensk-Uralsky,Russia,Russia,RU,RU,SVE,SVE
+city_name,462755,462755,Zhukovskiy,Zhukovsky,Russia,Russia,RU,RU,MOS,MOS
+city_name,1504826,1504826,Kamensk-Ural'skiy,Kamensk-Uralsky,Russia,Russia,RU,RU,SVE,SVE
+city_name,484972,484972,Syzran',Syzran,Russia,Russia,RU,RU,SAM,SAM
+city_name,495344,495344,Shchelkovo,Shchyolkovo,Russia,Russia,RU,RU,MOS,MOS
+city_name,1504826,1504826,Kamensk-Ural'skiy,Kamensk-Uralsky,Russia,Russia,RU,RU,SVE,SVE
+city_name,571170,571170,Bugul'ma,Bugulma,Russia,Russia,RU,RU,TA,TA
+city_name,495344,495344,Shchelkovo,Shchyolkovo,Russia,Russia,RU,RU,MOS,MOS
+city_name,462755,462755,Zhukovskiy,Zhukovsky,Russia,Russia,RU,RU,MOS,MOS
+city_name,487147,487147,Stroitel',Stroitel,Russia,Russia,RU,RU,BEL,BEL
+city_name,495344,495344,Shchelkovo,Shchyolkovo,Russia,Russia,RU,RU,MOS,MOS
+city_name,495344,495344,Shchelkovo,Shchyolkovo,Russia,Russia,RU,RU,MOS,MOS
+city_name,571170,571170,Bugul'ma,Bugulma,Russia,Russia,RU,RU,TA,TA
+city_name,571170,571170,Bugul'ma,Bugulma,Russia,Russia,RU,RU,TA,TA
+city_name,515879,515879,Oktyabr'skiy,Oktyabrsky,Russia,Russia,RU,RU,BA,BA
+city_name,1504826,1504826,Kamensk-Ural'skiy,Kamensk-Uralsky,Russia,Russia,RU,RU,SVE,SVE
+city_name,495344,495344,Shchelkovo,Shchyolkovo,Russia,Russia,RU,RU,MOS,MOS
+city_name,565614,565614,Dolgoprudnyy,Dolgoprudny,Russia,Russia,RU,RU,MOS,MOS
+city_name,484972,484972,Syzran',Syzran,Russia,Russia,RU,RU,SAM,SAM
+city_name,484972,484972,Syzran',Syzran,Russia,Russia,RU,RU,SAM,SAM
+city_name,495344,495344,Shchelkovo,Shchyolkovo,Russia,Russia,RU,RU,MOS,MOS
+city_name,462755,462755,Zhukovskiy,Zhukovsky,Russia,Russia,RU,RU,MOS,MOS
+city_name,5334320,5334320,Carmel-by-the-Sea,Carmel,United States,United States,US,US,CA,CA
+city_name,5334320,5334320,Carmel-by-the-Sea,Carmel,United States,United States,US,US,CA,CA
+city_name,5334320,5334320,Carmel-by-the-Sea,Carmel,United States,United States,US,US,CA,CA
+city_name,71132,71132,Sanaa,Sanaa Governorate,Yemen,Yemen,YE,YE,SN,SN
+geoname_id,10228362,8599519,Bonnie Doon,Bonnie Doon,Australia,Australia,AU,AU,QLD,QLD
+geoname_id,2789696,2789697,Ophoven,Ophoven,Belgium,Belgium,BE,BE,"VLG, VLI","VLG, VLI"
+geoname_id,3460642,3460643,Itaquara,Itaquara,Brazil,Brazil,BR,BR,BA,BA
+geoname_id,3388210,3388207,Sao Pedro,Sao Pedro,Brazil,Brazil,BR,BR,RN,RN
+geoname_id,6317771,6323847,Nova Ubirata,Nova Ubirata,Brazil,Brazil,BR,BR,MT,MT
+geoname_id,6323813,6316824,Castanheira,Castanheira,Brazil,Brazil,BR,BR,MT,MT
+geoname_id,6319341,3662342,Sao Gabriel da Cachoeira,Sao Gabriel da Cachoeira,Brazil,Brazil,BR,BR,AM,AM
+geoname_id,6319470,3388847,Sao Felix do Xingu,Sao Felix do Xingu,Brazil,Brazil,BR,BR,PA,PA
+geoname_id,8304762,3451261,Rio Bonito,Rio Bonito,Brazil,Brazil,BR,BR,RJ,RJ
+geoname_id,3662927,6319337,Pauini,Pauini,Brazil,Brazil,BR,BR,AM,AM
+geoname_id,3395852,3458112,Malhada,Malhada,Brazil,Brazil,BR,BR,BA,BA
+geoname_id,3466344,3466345,Chacara,Chacara,Brazil,Brazil,BR,BR,MG,MG
+geoname_id,3452514,3452515,Pouso Alto,Pouso Alto,Brazil,Brazil,BR,BR,MG,MG
+geoname_id,6323801,6316428,Araputanga,Araputanga,Brazil,Brazil,BR,BR,MT,MT
+geoname_id,3387423,6318704,Sitio Novo do Tocantins,Sitio Novo do Tocantins,Brazil,Brazil,BR,BR,TO,TO
+geoname_id,3449467,3449466,Santo Estevao,Santo Estevao,Brazil,Brazil,BR,BR,BA,BA
+geoname_id,3402163,6324322,Chorrocho,Chorrocho,Brazil,Brazil,BR,BR,BA,BA
+geoname_id,6317277,12532158,Imbe,Imbe,Brazil,Brazil,BR,BR,RS,RS
+geoname_id,3389141,3389134,Santo Antonio,Santo Antonio,Brazil,Brazil,BR,BR,RN,RN
+geoname_id,3411916,6319579,Muricilandia,Muricilandia,Brazil,Brazil,BR,BR,TO,TO
+geoname_id,3444885,3444882,Volta Grande,Volta Grande,Brazil,Brazil,BR,BR,MG,MG
+geoname_id,3473143,3473144,Adrianopolis,Adrianopolis,Brazil,Brazil,BR,BR,PR,PR
+geoname_id,6323812,6316760,Canarana,Canarana,Brazil,Brazil,BR,BR,MT,MT
+geoname_id,6319223,6316314,Agua Boa,Agua Boa,Brazil,Brazil,BR,BR,MT,MT
+geoname_id,3461649,12229349,Humaita,Humaita,Brazil,Brazil,BR,BR,RS,RS
+geoname_id,6317537,6324164,Marcelandia,Marcelandia,Brazil,Brazil,BR,BR,MT,MT
+geoname_id,3394253,3394239,Mulungu,Mulungu,Brazil,Brazil,BR,BR,CE,CE
+geoname_id,3449165,6318418,Sao Francisco,Sao Francisco,Brazil,Brazil,BR,BR,SP,SP
+geoname_id,11970661,3450163,Santa Lucia,Santa Lucia,Brazil,Brazil,BR,BR,SP,SP
+geoname_id,8672827,12534446,Saint-Hubert-de-Riviere-du-Loup,Saint-Hubert-de-Riviere-du-Loup,Canada,Canada,CA,CA,QC,QC
+geoname_id,6064685,8556284,Malahat,Malahat,Canada,Canada,CA,CA,BC,BC
+geoname_id,12031951,6075292,Mission,Mission,Canada,Canada,CA,CA,BC,BC
+geoname_id,11881754,3873115,Rio Negro,Rio Negro,Chile,Chile,CL,CL,LL,LL
+geoname_id,3890948,3890949,El Monte,El Monte,Chile,Chile,CL,CL,RM,RM
+geoname_id,3891842,3891837,El Bosque,El Bosque,Chile,Chile,CL,CL,RM,RM
+geoname_id,3893880,7114228,Conchali,Conchali,Chile,Chile,CL,CL,RM,RM
+geoname_id,3895165,12525059,Chicureo,Chicureo,Chile,Chile,CL,CL,RM,RM
+geoname_id,3884448,3884447,Las Condes,Las Condes,Chile,Chile,CL,CL,RM,RM
+geoname_id,3668333,3668332,Santo Tomas,Santo Tomas,Colombia,Colombia,CO,CO,ATL,ATL
+geoname_id,3188553,3215010,Udbinja,Udbinja,Croatia,Croatia,HR,HR,4,4
+geoname_id,2613313,2613312,Snertinge,Snertinge,Denmark,Denmark,DK,DK,85,85
+geoname_id,2620871,2620872,Hals,Hals,Denmark,Denmark,DK,DK,81,81
+geoname_id,2619859,2619860,Horning,Horning,Denmark,Denmark,DK,DK,82,82
+geoname_id,2988115,2988114,Penguily,Penguily,France,France,FR,FR,"BRE, 22","BRE, 22"
+geoname_id,2807201,2807200,Wittstock,Wittstock,Germany,Germany,DE,DE,BB,BB
+geoname_id,2865640,2865642,Neuenkirchen,Neuenkirchen,Germany,Germany,DE,DE,NI,NI
+geoname_id,7351118,7406879,Banjar Galiran,Banjar Galiran,Indonesia,Indonesia,ID,ID,BA,BA
+geoname_id,2524158,8966330,Miglierina,Miglierina,Italy,Italy,IT,IT,"78, CZ","78, CZ"
+geoname_id,8980123,3180511,Carignano,Carignano,Italy,Italy,IT,IT,"21, TO","21, TO"
+geoname_id,11267649,6941607,Oyama,Oyama,Japan,Japan,JP,JP,43,43
+geoname_id,1735339,1735297,Mukah,Mukah,Malaysia,Malaysia,MY,MY,13,13
+geoname_id,497927,497928,Segezha,Segezha,Russia,Russia,RU,RU,KR,KR
+geoname_id,11428151,983038,Letaba,Letaba,South Africa,South Africa,ZA,ZA,LP,LP
+geoname_id,1832426,10914977,Yongin-si,Yongin-si,South Korea,South Korea,KR,KR,41,41
+geoname_id,709429,709428,Dunayivtsi,Dunayivtsi,Ukraine,Ukraine,UA,UA,68,68
+geoname_id,2642470,6946887,Milton Bryan,Milton Bryan,United Kingdom,United Kingdom,GB,GB,"ENG, CBF","ENG, CBF"
+subdivision_codes,3516958,3516958,Santiago Cuaula,Santiago Cuaula,Mexico,Mexico,MX,MX,HID,TLA
+subdivision_codes,6301912,6301912,El Diario de Yaracuy,El Diario de Yaracuy,Venezuela,Venezuela,VE,VE,,U
