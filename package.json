@@ -34,7 +34,7 @@
     "css-vars-ponyfill": "^2.4.8",
     "custom-event-polyfill": "^1.0.7",
     "dompurify": "^2.4.0",
-    "gatsby": "^4.25.7",
+    "gatsby": "^5.10.0",
     "gatsby-plugin-advanced-sitemap": "^2.0.0",
     "gatsby-plugin-feed": "^4.24.0",
     "gatsby-plugin-google-gtag": "^4.24.0",
