@@ -7,6 +7,24 @@ title: GeoIP2 Release Notes
 Subscribe to the [GeoIP2 release notes RSS feed](/geoip/release-notes/rss.xml).
 </Alert>
 
+<ReleaseNote date="2023-06-12" title="Correction regarding London boroughs in our geolocation data">
+
+On June 6,
+[we announced that more networks would be mapped to London boroughs](#more-networks-mapped-to-london-boroughs)
+beginning on Friday, June 9.
+
+This change has been delayed. It should be present in our products and services
+beginning on Friday, June 16.
+
+In addition, for networks in the greater London area we will be returning the
+name of the town for city-level name data instead of the borough. The borough
+will be populated in the second level subdivision.
+
+For example, a network that maps to the Walthamstow town will return Walthamstow
+for the city_name, and Walthamstow Forest for the second level subdivision.
+
+</ReleaseNote>
+
 <ReleaseNote date="2023-06-12" title="Delayed update for GeoIP Anonymous IP database">
 
 We are aware of an issue that caused a delay to the GeoIP Anonymous IP database
