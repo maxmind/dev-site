@@ -16,7 +16,6 @@
     z-index: 1;
 
     &::before {
-      background: #00a7e5;
       border-radius: calc(var(--mm-border-radius) * 3);
       content: ' ';
       display: block;
