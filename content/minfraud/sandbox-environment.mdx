@@ -48,8 +48,8 @@ services. At this time, the only approved test transaction data are the three IP
 addresses listed below. You can submit transactions to Sandbox minFraud services
 with any of the following IP addresses as the
 [`/device/ip_address`](/minfraud/api-documentation/requests#schema--request--device__ip_address)
-input. You should receive a minFraud response with risk scores and risk data.
-The IP risk score output
+input. You should receive a minFraud response with risk scores. The IP risk
+score output
 ([`/ip_address/risk`](/minfraud/api-documentation/responses#schema--response--ip-address__risk))
 will contain a response within the range defined below:
 
@@ -58,6 +58,14 @@ will contain a response within the range defined below:
 | `128.101.101.101`     | 40 - 99                         |
 | `74.209.24.1`         | 5 - 39.99                       |
 | `65.116.3.80`         | 0.01 - 4.99                     |
+
+Please note that the Sandbox environment may not return all the risk data that
+the minFraud service would return, and the risk scores and risk data it does
+return will not be accurate. The Sandbox environment should be used for basic
+integration testing, to confirm that you are passing inputs in a valid format
+and that you are able to process the basic format of minFraud responses.
+
+[Learn more on our Knowledge Base about the kinds of outputs you can expect to receive from real minFraud transactions.](https://support.maxmind.com/hc/en-us/articles/4407964824859-Pass-Inputs-to-minFraud#h_01GD1EDANJCXFHBD9TT8TXA615)
 
 You should not submit real transaction data to the Sandbox version of the
 minFraud services, but you can submit transactions with dummy data.
