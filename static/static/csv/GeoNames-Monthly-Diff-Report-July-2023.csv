@@ -1,0 +1,143 @@
+diff_in,old_geoname_id,new_geoname_id,old_city_name,new_city_name,old_country_name,new_country_name,old_country_code,new_country_code,old_subdivision_codes,new_subdivision_codes
+city_name,3846029,3846029,Los Manantiales,Manantiales,Argentina,Argentina,AR,AR,Y,Y
+city_name,6323798,6323798,Apiacas,Apiacás Municipality,Brazil,Brazil,BR,BR,MT,MT
+city_name,6319312,6319312,Codajas,Codajás Municipality,Brazil,Brazil,BR,BR,AM,AM
+city_name,6319420,6319420,Maraba,Marabá Municipality,Brazil,Brazil,BR,BR,PA,PA
+city_name,638915,638915,Roeykkae,Röykkä,Finland,Finland,FI,FI,18,18
+city_name,2906376,2906376,Hennef,Hennef (Sieg),Germany,Germany,DE,DE,NW,NW
+city_name,1282940,1282940,Parasi,Ramgram Parasi,Nepal,Nepal,NP,NP,P5,P5
+city_name,2014022,2014022,Usol'ye-Sibirskoye,Usolye-Sibirskoye,Russia,Russia,RU,RU,IRK,IRK
+city_name,710374,710374,Chuhuyiv,Chuhuiv,Ukraine,Ukraine,UA,UA,63,63
+city_name,709334,709334,Dzhankoy,Dzhankoi,Ukraine,Ukraine,UA,UA,43,43
+city_name,700918,700918,Mohyliv-Podilskyy,Mohyliv-Podilskyi,Ukraine,Ukraine,UA,UA,5,5
+city_name,697576,697576,Pervomays'kyy,Pervomaiskyi,Ukraine,Ukraine,UA,UA,63,63
+city_name,692818,692818,Starokostyantyniv,Starokostiantyniv,Ukraine,Ukraine,UA,UA,68,68
+city_name,691469,691469,Tokamak,Tokmak,Ukraine,Ukraine,UA,UA,23,23
+city_name,709354,709354,Dzerzhyns'k,Toretsk,Ukraine,Ukraine,UA,UA,14,14
+city_name,688373,688373,Yasinovataya,Yasynuvata,Ukraine,Ukraine,UA,UA,14,14
+city_name,5325259,5325259,Aukum,Mount Aukum,United States,United States,US,US,CA,CA
+city_name,1587883,1587883,Binh Dai,Binh GJai,Vietnam,Vietnam,VN,VN,50,50
+city_name,1587613,1587613,Bu Dop,Bu GJop,Vietnam,Vietnam,VN,VN,58,58
+city_name,1585660,1585660,Chau Doc,Chau GJoc,Vietnam,Vietnam,VN,VN,44,44
+city_name,8616190,8616190,Chi Dong,Chi GJong,Vietnam,Vietnam,VN,VN,HN,HN
+city_name,1582338,1582338,D'Ran,GJ'Ran,Vietnam,Vietnam,VN,VN,35,35
+city_name,1584284,1584284,Dai Ngai,GJai Ngai,Vietnam,Vietnam,VN,VN,52,52
+city_name,8695369,8695369,Dak Doa,GJak GJoa,Vietnam,Vietnam,VN,VN,30,30
+city_name,1582203,1582203,Dak Mil,GJak Mil,Vietnam,Vietnam,VN,VN,72,72
+city_name,1584099,1584099,Dak Song,GJak Song,Vietnam,Vietnam,VN,VN,72,72
+city_name,1583882,1583882,Dan Phuong,GJan Phuong,Vietnam,Vietnam,VN,VN,HN,HN
+city_name,9867659,9867659,Dat Do,GJat GJo,Vietnam,Vietnam,VN,VN,54,54
+city_name,1583478,1583478,Dien Ban,GJien Ban,Vietnam,Vietnam,VN,VN,27,27
+city_name,1583395,1583395,Dinh Binh,GJinh Binh,Vietnam,Vietnam,VN,VN,31,31
+city_name,1583341,1583341,Dinh Lien Chieu,GJinh Lien Chieu,Vietnam,Vietnam,VN,VN,DN,DN
+city_name,1583327,1583327,Dinh Quan,GJinh Quan,Vietnam,Vietnam,VN,VN,39,39
+city_name,1582367,1582367,Do Son,GJo Son,Vietnam,Vietnam,VN,VN,HP,HP
+city_name,1583240,1583240,Doan Hung,GJoan Hung,Vietnam,Vietnam,VN,VN,68,68
+city_name,8616040,8616040,Dong Anh,GJong Anh,Vietnam,Vietnam,VN,VN,HN,HN
+city_name,8616121,8616121,Dong Da,GJong GJa,Vietnam,Vietnam,VN,VN,HN,HN
+city_name,8569646,8569646,Dong Hung,GJong Hung,Vietnam,Vietnam,VN,VN,20,20
+city_name,1582723,1582723,Dong Nai,GJong Nai,Vietnam,Vietnam,VN,VN,23,23
+city_name,1904486,1904486,Dong Phu,GJong Phu,Vietnam,Vietnam,VN,VN,SG,SG
+city_name,9643325,9643325,Duc An,GJuc An,Vietnam,Vietnam,VN,VN,59,59
+city_name,1582210,1582210,Duc Hoa,GJuc Hoa,Vietnam,Vietnam,VN,VN,41,41
+city_name,1593478,1593478,Duc Hoa,GJuc Hoa,Vietnam,Vietnam,VN,VN,49,49
+city_name,1582190,1582190,Duc Pho,GJuc Pho,Vietnam,Vietnam,VN,VN,29,29
+city_name,1582187,1582187,Duc Phong,GJuc Phong,Vietnam,Vietnam,VN,VN,58,58
+city_name,1581360,1581360,Ha Dong,Ha GJong,Vietnam,Vietnam,VN,VN,31,31
+city_name,1581364,1581364,Ha Dong,Ha GJong,Vietnam,Vietnam,VN,VN,HN,HN
+city_name,1580914,1580914,Hiep Duc,Hiep GJuc,Vietnam,Vietnam,VN,VN,27,27
+city_name,1580421,1580421,Hon Dat,Hon GJat,Vietnam,Vietnam,VN,VN,47,47
+city_name,1577883,1577883,Lam Dong,Lam GJong,Vietnam,Vietnam,VN,VN,HP,HP
+city_name,1572585,1572585,Nghia Do,Nghia GJo,Vietnam,Vietnam,VN,VN,HN,HN
+city_name,1571768,1571768,Nui Deo,Nui GJeo,Vietnam,Vietnam,VN,VN,HP,HP
+city_name,8595146,8595146,Nui Doi,Nui GJoi,Vietnam,Vietnam,VN,VN,HP,HP
+city_name,9081450,9081450,Phuoc Dong,Phuoc GJong,Vietnam,Vietnam,VN,VN,37,37
+city_name,1567652,1567652,Son Dong,Son GJong,Vietnam,Vietnam,VN,VN,54,54
+city_name,1941427,1941427,Tam Diep,Tam GJiep,Vietnam,Vietnam,VN,VN,18,18
+city_name,1566769,1566769,Tan Thuan Dong,Tan Thuan GJong,Vietnam,Vietnam,VN,VN,SG,SG
+city_name,1584023,1584023,Thi Tran Dam Ha,Thi Tran GJam Ha,Vietnam,Vietnam,VN,VN,13,13
+city_name,1565654,1565654,Thon Dien Ha,Thon GJien Ha,Vietnam,Vietnam,VN,VN,34,34
+city_name,9868002,9868002,Thon Dong,Thon GJong,Vietnam,Vietnam,VN,VN,54,54
+city_name,1565019,1565019,Thu Duc,Thu GJuc,Vietnam,Vietnam,VN,VN,SG,SG
+city_name,1563141,1563141,Van Dien,Van GJien,Vietnam,Vietnam,VN,VN,HN,HN
+geoname_id,2508812,2508811,Adrar,Adrar,Algeria,Algeria,DZ,DZ,15,15
+geoname_id,7670694,7923297,Nalitabari,Nalitabari,Bangladesh,Bangladesh,BD,BD,"H, 57","H, 57"
+geoname_id,3472998,3472999,Agua Fria,Agua Fria,Brazil,Brazil,BR,BR,BA,BA
+geoname_id,3472271,3472270,Andarai,Andarai,Brazil,Brazil,BR,BR,BA,BA
+geoname_id,6316447,3471390,Arvoredo,Arvoredo,Brazil,Brazil,BR,BR,SC,SC
+geoname_id,3406883,3406885,Bacuri,Bacuri,Brazil,Brazil,BR,BR,MA,MA
+geoname_id,6319378,3405806,Belterra,Belterra,Brazil,Brazil,BR,BR,PA,PA
+geoname_id,6316760,6323812,Canarana,Canarana,Brazil,Brazil,BR,BR,MT,MT
+geoname_id,12466921,12396675,Casa Branca,Casa Branca,Brazil,Brazil,BR,BR,SP,SP
+geoname_id,7699675,3466688,Catanduvas,Catanduvas,Brazil,Brazil,BR,BR,PR,PR
+geoname_id,3463865,12532168,Estancia Velha,Estancia Velha,Brazil,Brazil,BR,BR,RS,RS
+geoname_id,3463761,3463760,Estrela,Estrela,Brazil,Brazil,BR,BR,RS,RS
+geoname_id,3461908,3461903,Guarani,Guarani,Brazil,Brazil,BR,BR,MG,MG
+geoname_id,3397906,12530833,Itapiranga,Itapiranga,Brazil,Brazil,BR,BR,AM,AM
+geoname_id,3397851,6319413,Itupiranga,Itupiranga,Brazil,Brazil,BR,BR,PA,PA
+geoname_id,3458112,3395852,Malhada,Malhada,Brazil,Brazil,BR,BR,BA,BA
+geoname_id,6317531,6319737,Maranhaozinho,Maranhaozinho,Brazil,Brazil,BR,BR,MA,MA
+geoname_id,3456604,3456602,Mucuge,Mucuge,Brazil,Brazil,BR,BR,BA,BA
+geoname_id,3456485,3456483,Muritiba,Muritiba,Brazil,Brazil,BR,BR,BA,BA
+geoname_id,6323847,6317771,Nova Ubirata,Nova Ubirata,Brazil,Brazil,BR,BR,MT,MT
+geoname_id,6324149,6317803,Novo Sao Joaquim,Novo Sao Joaquim,Brazil,Brazil,BR,BR,MT,MT
+geoname_id,6323850,6317869,Paranaita,Paranaita,Brazil,Brazil,BR,BR,MT,MT
+geoname_id,6319337,3662927,Pauini,Pauini,Brazil,Brazil,BR,BR,AM,AM
+geoname_id,3454130,3454128,Pereiras,Pereiras,Brazil,Brazil,BR,BR,SP,SP
+geoname_id,3451261,8304762,Rio Bonito,Rio Bonito,Brazil,Brazil,BR,BR,RJ,RJ
+geoname_id,11959267,6318204,Saltinho,Saltinho,Brazil,Brazil,BR,BR,SC,SC
+geoname_id,6318221,6323868,Santa Carmem,Santa Carmem,Brazil,Brazil,BR,BR,MT,MT
+geoname_id,3450237,7692676,Santa Fe,Santa Fe,Brazil,Brazil,BR,BR,PR,PR
+geoname_id,3450163,11970661,Santa Lucia,Santa Lucia,Brazil,Brazil,BR,BR,SP,SP
+geoname_id,3449466,3449467,Santo Estevao,Santo Estevao,Brazil,Brazil,BR,BR,BA,BA
+geoname_id,3449304,6321040,Sao Desiderio,Sao Desiderio,Brazil,Brazil,BR,BR,BA,BA
+geoname_id,6318418,3449165,Sao Francisco,Sao Francisco,Brazil,Brazil,BR,BR,SP,SP
+geoname_id,12467128,11969001,Sertaozinho,Sertaozinho,Brazil,Brazil,BR,BR,SP,SP
+geoname_id,3445946,3445947,Tunas,Tunas,Brazil,Brazil,BR,BR,RS,RS
+geoname_id,6321092,3445448,Varzea Nova,Varzea Nova,Brazil,Brazil,BR,BR,BA,BA
+geoname_id,3444882,3444885,Volta Grande,Volta Grande,Brazil,Brazil,BR,BR,MG,MG
+geoname_id,6318970,6319833,Ze Doca,Ze Doca,Brazil,Brazil,BR,BR,MA,MA
+geoname_id,12013375,3885840,La Granja,La Granja,Chile,Chile,CL,CL,LI,LI
+geoname_id,12004474,3871911,San Miguel,San Miguel,Chile,Chile,CL,CL,ML,ML
+geoname_id,2865642,2865640,Neuenkirchen,Neuenkirchen,Germany,Germany,DE,DE,NI,NI
+geoname_id,6957898,1818673,Tai Po,Tai Po,Hong Kong,Hong Kong,HK,HK,NTP,NTP
+geoname_id,1959243,1634589,Nagreg,Nagreg,Indonesia,Indonesia,ID,ID,JB,JB
+geoname_id,3308361,2965743,Carrick,Carrick,Ireland,Ireland,IE,IE,"U, DL","U, DL"
+geoname_id,3313244,2965070,Craughwell,Craughwell,Ireland,Ireland,IE,IE,"C, G","C, G"
+geoname_id,2962610,2962611,Milltown,Milltown,Ireland,Ireland,IE,IE,"M, KY","M, KY"
+geoname_id,3180511,8980123,Carignano,Carignano,Italy,Italy,IT,IT,"21, TO","21, TO"
+geoname_id,8411877,8412231,Oshimizu,Oshimizu,Japan,Japan,JP,JP,2,2
+geoname_id,6941607,11267649,Oyama,Oyama,Japan,Japan,JP,JP,43,43
+geoname_id,10351756,10351336,Tokunaga,Tokunaga,Japan,Japan,JP,JP,40,40
+geoname_id,11537329,11537324,El Paraiso,El Paraiso,Mexico,Mexico,MX,MX,MEX,MEX
+geoname_id,1729119,1729118,Baggao,Baggao,Philippines,Philippines,PH,PH,"02, CAG","02, CAG"
+geoname_id,1714949,1724028,Bonifacio,Bonifacio,Philippines,Philippines,PH,PH,"10, MSC","10, MSC"
+geoname_id,1722423,1722421,Burgos,Burgos,Philippines,Philippines,PH,PH,"02, ISA","02, ISA"
+geoname_id,1709093,1689609,Catigbian,Catigbian,Philippines,Philippines,PH,PH,"07, BOH","07, BOH"
+geoname_id,1717001,7454453,Concepcion,Concepcion,Philippines,Philippines,PH,PH,"03, PAM","03, PAM"
+geoname_id,1711645,1711644,Hindang,Hindang,Philippines,Philippines,PH,PH,"08, LEY","08, LEY"
+geoname_id,1710054,1710053,Julita,Julita,Philippines,Philippines,PH,PH,"08, LEY","08, LEY"
+geoname_id,1696780,1696781,Padada,Padada,Philippines,Philippines,PH,PH,"11, DAS","11, DAS"
+geoname_id,7391142,7391141,Poblacion,Poblacion,Philippines,Philippines,PH,PH,"40, LAG","40, LAG"
+geoname_id,1690344,8300897,San Antonio,San Antonio,Philippines,Philippines,PH,PH,"40, QUE","40, QUE"
+geoname_id,1689051,1689052,San Mateo,San Mateo,Philippines,Philippines,PH,PH,"02, ISA","02, ISA"
+geoname_id,7630301,1688948,San Miguel,San Miguel,Philippines,Philippines,PH,PH,"03, NUE","03, NUE"
+geoname_id,1687536,1687534,Santo Tomas,Santo Tomas,Philippines,Philippines,PH,PH,"40, BTG","40, BTG"
+geoname_id,7885243,1686582,Sikatuna,Sikatuna,Philippines,Philippines,PH,PH,"07, BOH","07, BOH"
+geoname_id,1683862,1683860,Talisay,Talisay,Philippines,Philippines,PH,PH,"40, BTG","40, BTG"
+geoname_id,1680694,1680693,Tunga,Tunga,Philippines,Philippines,PH,PH,"08, LEY","08, LEY"
+geoname_id,3372964,3372965,Lagoa,Lagoa,Portugal,Portugal,PT,PT,20,20
+geoname_id,497928,497927,Segezha,Segezha,Russia,Russia,RU,RU,KR,KR
+geoname_id,473237,473161,Vladimirovka,Vladimirovka,Russia,Russia,RU,RU,STA,STA
+geoname_id,2688027,2688029,Nyaker,Nyaker,Sweden,Sweden,SE,SE,AC,AC
+geoname_id,233436,233421,Gayaza,Gayaza,Uganda,Uganda,UG,UG,"C, 113","C, 113"
+geoname_id,3628374,3790510,San Francisco,San Francisco,Venezuela,Venezuela,VE,VE,V,V
+subdivision_codes,2297312,2297312,Nkawkaw,Nkawkaw,Ghana,Ghana,GH,GH,EP,AH
+subdivision_codes,8508213,8508213,Tinadu,Tinadu,Maldives,Maldives,MV,MV,,4
+subdivision_codes,8594082,8594082,Ukulhas,Ukulhas,Maldives,Maldives,MV,MV,,2
+subdivision_codes,3532340,3532340,Emiliano Zapata,Emiliano Zapata,Mexico,Mexico,MX,MX,MOR,MEX
+subdivision_codes,1834886,1834886,Tangjin,Tangjin,South Korea,South Korea,KR,KR,46,48
+subdivision_codes,1587905,1587905,Binh An,Binh An,Vietnam,Vietnam,VN,VN,,57
+subdivision_codes,1577955,1577955,Lai Chau,Lai Chau,Vietnam,Vietnam,VN,VN,1,71
+subdivision_codes,1575204,1575204,Luong Tai,Luong Tai,Vietnam,Vietnam,VN,VN,,66
+subdivision_codes,1570240,1570240,Phuoc Binh,Phuoc Binh,Vietnam,Vietnam,VN,VN,SG,41
