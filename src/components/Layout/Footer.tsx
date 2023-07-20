@@ -2,6 +2,7 @@ import classNames from 'classnames';
 import React from 'react';
 import { FaLinkedin, FaTwitterSquare } from 'react-icons/fa';
 
+import CcpaIcon from '../../assets/svgs/icon-ccpa-opt-out.svg';
 import Logo from '../../assets/svgs/maxmind-footer-logo.svg';
 import useSystemStatus from '../../hooks/useSystemStatus';
 
@@ -165,11 +166,18 @@ const Footer: React.FC<React.HTMLProps<HTMLDivElement>> = (props) => {
             GeoIP Data Correction Request
           </a>
           <a
-            className={styles.link}
-            // eslint-disable-next-line max-len
+            className={classNames(
+              styles['link'],
+              styles.status,
+            )}
             href="https://www.maxmind.com/en/opt-out"
           >
-            Do Not Sell My Personal Information
+            <span
+              className={styles.ccpaIcon}
+            >
+              <CcpaIcon />
+            </span>
+            Your Privacy Choices
           </a>
           <a
             className={styles.link}
