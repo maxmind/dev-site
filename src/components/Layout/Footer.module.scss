@@ -67,7 +67,8 @@
   }
 }
 
-.status {
+.status,
+.ccpa {
   position: relative;
 
   &:hover {
@@ -84,6 +85,17 @@
 
 .status:hover .statusText {
   text-decoration: underline;
+}
+
+.ccpaIcon {
+  left: -10px;
+  position: absolute;
+  top: 57%;
+  transform: translate(-100%, -50%);
+
+  svg {
+    height: 14px;
+  }
 }
 
 .branding {
