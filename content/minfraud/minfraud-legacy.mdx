@@ -46,6 +46,15 @@ information is factored into the scores returned through the minFraud service.
 
 ## HTTP API
 
+<Alert type="error">
+
+Please note, the original URI, `https://minfraud.maxmind.com/app/ccv2r`, has
+been deprecated. Support for this URI will be removed in the future.
+
+Please update your integration to use the official URI listed below.
+
+</Alert>
+
 If an API for your language is not available, you can use the “raw” API detailed
 below.
 
@@ -53,8 +62,6 @@ The HTTP API requires you to pass a set of parameters as an HTTP GET or POST.
 Results are returned in a simple text format documented below.
 
 The URI for this service is `https://minfraud.maxmind.com/minfraud/v1.0/legacy`.
-
-You may be using the original URI, `https://minfraud.maxmind.com/app/ccv2r`.
 
 The `minfraud.maxmind.com` hostname automatically picks the data center
 geographically closest to you.

@@ -50,6 +50,20 @@ The IP address should be passed as a string like "44.55.66.77" or
 
 ### Per-Service URIs
 
+<Alert type="error">
+
+Please note, the original URIs have been deprecated. Support for these URIs will
+be removed in the future:
+
+- `https://geoip.maxmind.com/a`
+- `https://geoip.maxmind.com/b`
+- `https://geoip.maxmind.com/f`
+- `https://geoip.maxmind.com/e`
+
+Please update your integration to use the official URIs listed below.
+
+</Alert>
+
 The URIs for each service are as follows:
 
 | Service                  | URI                                                 |
@@ -58,15 +72,6 @@ The URIs for each service are as follows:
 | City                     | `https://geoip.maxmind.com/geoip/v1.0/city`         |
 | City/ISP/Org             | `https://geoip.maxmind.com/geoip/v1.0/city-isp-org` |
 | Insights (formerly Omni) | `https://geoip.maxmind.com/geoip/v1.0/insights`     |
-
-You might also be using the original GeoIP Legacy URIs:
-
-| Service                  | URI                           |
-| ------------------------ | ----------------------------- |
-| Country                  | `https://geoip.maxmind.com/a` |
-| City                     | `https://geoip.maxmind.com/b` |
-| City/ISP/Org             | `https://geoip.maxmind.com/f` |
-| Insights (formerly Omni) | `https://geoip.maxmind.com/e` |
 
 The `geoip.maxmind.com` hostname automatically picks the data center
 geographically closest to you.
