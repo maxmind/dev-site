@@ -26,6 +26,13 @@ export default {
   plugins: [
     {
       options: {
+        id: 'GTM-M8K593P',
+        includeInDevelopment: false,
+      },
+      resolve: 'gatsby-plugin-google-tagmanager',
+    },
+    {
+      options: {
         typeName: 'Json',
       },
       resolve: 'gatsby-transformer-json',
