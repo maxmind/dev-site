@@ -72,15 +72,19 @@ const extractInlinedStyles = (args: ReplaceRendererArgs) => {
   replaceBodyHTMLString($('body').html() as string);
 };
 
-const addZendesk = (args: ReplaceRendererArgs) => {
+const addHubspotChat = (args: ReplaceRendererArgs) => {
   const { setPostBodyComponents } = args;
 
   /* eslint-disable react/jsx-key */
   setPostBodyComponents([
     <script
-      id="ze-snippet"
-      src="https://static.zdassets.com/ekr/snippet.js?key=e32809b5-6032-4c2f-b1f9-63931adc0cc1"
-    />,
+      async
+      defer
+      id="hs-script-loader"
+      src="//js.hs-scripts.com/21266834.js"
+      type="text/javascript"
+    >
+    </script>,
   ]);
   /* eslint-enable react/jsx-key */
 };
@@ -88,6 +92,6 @@ const addZendesk = (args: ReplaceRendererArgs) => {
 export const replaceRenderer: GatsbySSR['replaceRenderer'] = (
   args: ReplaceRendererArgs
 ): any => { // eslint-disable-line @typescript-eslint/no-explicit-any
-  addZendesk(args);
+  addHubspotChat(args);
   extractInlinedStyles(args);
 };

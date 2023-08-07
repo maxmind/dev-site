@@ -65,13 +65,12 @@ module.exports = [
             'status.maxmind.com',
             'www.google-analytics.com',
             'www.googleapis.com',
-            'https://ekr.zdassets.com',
-            'https://maxmind.zendesk.com',
-            'https://static.zdassets.com',
-            'https://*.zopim.com',
-            'wss://maxmind.zendesk.com',
-            'wss://*.zopim.com',
             'https://www.maxmind.com',
+
+            // HubSpot chat
+            'https://api.hubspot.com',
+            'https://forms.hscollectedforms.net',
+            'https://forms.hsforms.com',
           ],
           'default-src': [
             cspKeywords.SELF,
@@ -79,38 +78,23 @@ module.exports = [
           'font-src': [
             cspKeywords.SELF,
             'data:',
-            'https://ekr.zdassets.com',
-            'https://maxmind.zendesk.com',
-            'https://static.zdassets.com',
-            'https://*.zopim.com',
-            'wss://maxmind.zendesk.com',
-            'wss://*.zopim.com',
           ],
           'form-action ': [
             cspKeywords.SELF,
           ],
           'frame-src': [
             cspKeywords.SELF,
-            'https://ekr.zdassets.com',
-            'https://maxmind.zendesk.com',
-            'https://static.zdassets.com',
-            'https://*.zopim.com',
-            'wss://maxmind.zendesk.com',
-            'wss://*.zopim.com',
+
+            // HubSpot chat
+            'https://app.hubspot.com',
           ],
           'img-src': [
             cspKeywords.SELF,
             'data:',
             'www.google-analytics.com',
-            'https://ekr.zdassets.com',
-            'https://maxmind.zendesk.com',
-            'https://static.zdassets.com',
-            'https://*.zopim.com',
-            'wss://maxmind.zendesk.com',
-            'wss://*.zopim.com',
-          ],
-          'media-src': [
-            'https://static.zdassets.com',
+
+            // HubSpot chat
+            'https://forms.hsforms.com',
           ],
           'object-src': [
             cspKeywords.NONE,
@@ -121,18 +105,19 @@ module.exports = [
             cspKeywords.UNSAFE_INLINE, // Misc. inlined scripts 😕
             'www.google-analytics.com',
             'www.googletagmanager.com',
-            'https://ekr.zdassets.com',
-            'https://maxmind.zendesk.com',
-            'https://static.zdassets.com',
-            'https://*.zopim.com',
-            'wss://maxmind.zendesk.com',
-            'wss://*.zopim.com',
             'https://www.maxmind.com',
+
+            // HubSpot chat
+            'https://js.hs-scripts.com',
+            'https://js.hs-analytics.net',
+            'https://js.hscollectedforms.net',
+            'https://js.hs-banner.com',
+            'https://js.usemessages.com',
           ],
           'style-src': [
             cspKeywords.SELF,
             cspKeywords.REPORT_SAMPLE,
-            cspKeywords.UNSAFE_INLINE, // Zendesk 😕
+            cspKeywords.UNSAFE_INLINE, // HubSpot chat 😕
           ],
         })
           .reduce((acc, [
