@@ -1,0 +1,114 @@
+diff_in,old_geoname_id,new_geoname_id,old_city_name,new_city_name,old_country_name,new_country_name,old_country_code,new_country_code,old_subdivision_codes,new_subdivision_codes
+city_name,3389614,3389614,Santa Helena,Agrovila do Projeto de Assentamento Santa Helena,Brazil,Brazil,BR,BR,PB,PB
+city_name,6316432,6316432,Aripuana,Aripuanã,Brazil,Brazil,BR,BR,MT,MT
+city_name,2864054,2864054,Neustadt,Neustadt an der Weinstraße,Germany,Germany,DE,DE,RP,RP
+city_name,2864054,2864054,Neustadt,Neustadt an der Weinstraße,Germany,Germany,DE,DE,RP,RP
+city_name,2864054,2864054,Neustadt,Neustadt an der Weinstraße,Germany,Germany,DE,DE,RP,RP
+city_name,6534786,6534786,Renon - Ritten,Renon,Italy,Italy,IT,IT,"32, BZ","32, BZ"
+city_name,6621593,6621593,Klobenstein,Collalbo,Italy,Italy,IT,IT,"32, BZ","32, BZ"
+city_name,460311,460311,Dobeles novads,Dobele Municipality,Latvia,Latvia,LV,LV,26,26
+city_name,459278,459278,Jelgavas novads,Jelgava Municipality,Latvia,Latvia,LV,LV,41,41
+city_name,460569,460569,Cesu Novads,Cēsis Municipality,Latvia,Latvia,LV,LV,22,22
+city_name,454771,454771,Tukuma novads,Tukums Municipality,Latvia,Latvia,LV,LV,99,99
+city_name,456197,456197,Rezeknes Novads,Rēzekne Municipality,Latvia,Latvia,LV,LV,77,77
+city_name,457889,457889,Limbazu novads,Limbaži Municipality,Latvia,Latvia,LV,LV,54,54
+city_name,8583010,8583010,Centro,Centro Municipality,Mexico,Mexico,MX,MX,TAB,TAB
+city_name,8583010,8583010,Centro,Centro Municipality,Mexico,Mexico,MX,MX,TAB,TAB
+city_name,8583010,8583010,Centro,Centro Municipality,Mexico,Mexico,MX,MX,TAB,TAB
+city_name,8583010,8583010,Centro,Centro Municipality,Mexico,Mexico,MX,MX,TAB,TAB
+city_name,8583010,8583010,Centro,Centro Municipality,Mexico,Mexico,MX,MX,TAB,TAB
+city_name,8583010,8583010,Centro,Centro Municipality,Mexico,Mexico,MX,MX,TAB,TAB
+city_name,8583010,8583010,Centro,Centro Municipality,Mexico,Mexico,MX,MX,TAB,TAB
+city_name,8583010,8583010,Centro,Centro Municipality,Mexico,Mexico,MX,MX,TAB,TAB
+city_name,8582043,8582043,Francisco I. Madero,Francisco I. Madero Municipality,Mexico,Mexico,MX,MX,HID,HID
+city_name,8583010,8583010,Centro,Centro Municipality,Mexico,Mexico,MX,MX,TAB,TAB
+city_name,8582043,8582043,Francisco I. Madero,Francisco I. Madero Municipality,Mexico,Mexico,MX,MX,HID,HID
+city_name,8583010,8583010,Centro,Centro Municipality,Mexico,Mexico,MX,MX,TAB,TAB
+city_name,8583010,8583010,Centro,Centro Municipality,Mexico,Mexico,MX,MX,TAB,TAB
+city_name,8583010,8583010,Centro,Centro Municipality,Mexico,Mexico,MX,MX,TAB,TAB
+city_name,8583010,8583010,Centro,Centro Municipality,Mexico,Mexico,MX,MX,TAB,TAB
+city_name,8582336,8582336,Salvador Escalante,Santa Clara del Cobre Municipality,Mexico,Mexico,MX,MX,MIC,MIC
+city_name,8583010,8583010,Centro,Centro Municipality,Mexico,Mexico,MX,MX,TAB,TAB
+city_name,8583010,8583010,Centro,Centro Municipality,Mexico,Mexico,MX,MX,TAB,TAB
+city_name,8583010,8583010,Centro,Centro Municipality,Mexico,Mexico,MX,MX,TAB,TAB
+city_name,8583010,8583010,Centro,Centro Municipality,Mexico,Mexico,MX,MX,TAB,TAB
+city_name,8583010,8583010,Centro,Centro Municipality,Mexico,Mexico,MX,MX,TAB,TAB
+city_name,8583010,8583010,Centro,Centro Municipality,Mexico,Mexico,MX,MX,TAB,TAB
+city_name,8582043,8582043,Francisco I. Madero,Francisco I. Madero Municipality,Mexico,Mexico,MX,MX,HID,HID
+city_name,8583010,8583010,Centro,Centro Municipality,Mexico,Mexico,MX,MX,TAB,TAB
+city_name,8583010,8583010,Centro,Centro Municipality,Mexico,Mexico,MX,MX,TAB,TAB
+city_name,8583010,8583010,Centro,Centro Municipality,Mexico,Mexico,MX,MX,TAB,TAB
+city_name,8583010,8583010,Centro,Centro Municipality,Mexico,Mexico,MX,MX,TAB,TAB
+city_name,11154042,11154042,Dawbon,Dawbon Township,Myanmar,Myanmar,MM,MM,6,6
+city_name,2734132,2734132,Senhora das Febres,Febres,Portugal,Portugal,PT,PT,6,6
+city_name,690197,690197,Velykyy Bereznyy,Velykyi Bereznyi,Ukraine,Ukraine,UA,UA,21,21
+city_name,710915,710915,Chasov Yar,Chasiv Yar,Ukraine,Ukraine,UA,UA,14,14
+city_name,704495,704495,Krasenovka,Krasenivka,Ukraine,Ukraine,UA,UA,71,71
+geoname_id,7923297,7670694,Nalitabari,Nalitabari,Bangladesh,Bangladesh,BD,BD,"H, 57","H, 57"
+geoname_id,12108334,3460542,Itororo,Itororo,Brazil,Brazil,BR,BR,BA,BA
+geoname_id,6316823,12542436,Casserengue,Casserengue,Brazil,Brazil,BR,BR,PB,PB
+geoname_id,6319833,6318970,Ze Doca,Ze Doca,Brazil,Brazil,BR,BR,MA,MA
+geoname_id,6321040,3449304,Sao Desiderio,Sao Desiderio,Brazil,Brazil,BR,BR,BA,BA
+geoname_id,3451423,6319985,Riacho Frio,Riacho Frio,Brazil,Brazil,BR,BR,PI,PI
+geoname_id,3467536,6316767,Candoi,Candoi,Brazil,Brazil,BR,BR,PR,PR
+geoname_id,3450841,3450842,Rubim,Rubim,Brazil,Brazil,BR,BR,MG,MG
+geoname_id,3453415,3453414,Planalto,Planalto,Brazil,Brazil,BR,BR,RS,RS
+geoname_id,6316704,12544713,Caldas Brandao,Caldas Brandao,Brazil,Brazil,BR,BR,PB,PB
+geoname_id,3472270,3472271,Andarai,Andarai,Brazil,Brazil,BR,BR,BA,BA
+geoname_id,6318523,3388507,Sao Jose dos Ramos,Sao Jose dos Ramos,Brazil,Brazil,BR,BR,PB,PB
+geoname_id,3405341,6319662,Bom Jardim,Bom Jardim,Brazil,Brazil,BR,BR,MA,MA
+geoname_id,3456058,6317783,Novo Horizonte,Novo Horizonte,Brazil,Brazil,BR,BR,SC,SC
+geoname_id,6316989,12542538,Damiao,Damiao,Brazil,Brazil,BR,BR,PB,PB
+geoname_id,3393981,3393984,Nazare,Nazare,Brazil,Brazil,BR,BR,TO,TO
+geoname_id,12229353,3463605,Farroupilha,Farroupilha,Brazil,Brazil,BR,BR,RS,RS
+geoname_id,3461903,3461908,Guarani,Guarani,Brazil,Brazil,BR,BR,MG,MG
+geoname_id,6317869,6323850,Paranaita,Paranaita,Brazil,Brazil,BR,BR,MT,MT
+geoname_id,6317799,6324044,Novo Planalto,Novo Planalto,Brazil,Brazil,BR,BR,GO,GO
+geoname_id,3456602,3456604,Mucuge,Mucuge,Brazil,Brazil,BR,BR,BA,BA
+geoname_id,3454128,3454130,Pereiras,Pereiras,Brazil,Brazil,BR,BR,SP,SP
+geoname_id,6316908,6323818,Confresa,Confresa,Brazil,Brazil,BR,BR,MT,MT
+geoname_id,3451705,3451704,Registro,Registro,Brazil,Brazil,BR,BR,SP,SP
+geoname_id,6319697,6317137,Fernando Falcao,Fernando Falcao,Brazil,Brazil,BR,BR,MA,MA
+geoname_id,6318523,3388507,Sao Jose dos Ramos,Sao Jose dos Ramos,Brazil,Brazil,BR,BR,PB,PB
+geoname_id,6324164,6317537,Marcelandia,Marcelandia,Brazil,Brazil,BR,BR,MT,MT
+geoname_id,12200503,3446015,Trombas,Trombas,Brazil,Brazil,BR,BR,GO,GO
+geoname_id,3397174,3397175,Juazeirinho,Juazeirinho,Brazil,Brazil,BR,BR,PB,PB
+geoname_id,6319413,3397851,Itupiranga,Itupiranga,Brazil,Brazil,BR,BR,PA,PA
+geoname_id,3445947,3445946,Tunas,Tunas,Brazil,Brazil,BR,BR,RS,RS
+geoname_id,6318331,3389429,Santana do Serido,Santana do Serido,Brazil,Brazil,BR,BR,RN,RN
+geoname_id,6318981,3404148,Caicara do Norte,Caicara do Norte,Brazil,Brazil,BR,BR,RN,RN
+geoname_id,6319737,6317531,Maranhaozinho,Maranhaozinho,Brazil,Brazil,BR,BR,MA,MA
+geoname_id,2619860,2619859,Horning,Horning,Denmark,Denmark,DK,DK,82,82
+geoname_id,3653399,3653400,Pascuales,Pascuales,Ecuador,Ecuador,EC,EC,G,G
+geoname_id,2988114,2988115,Penguily,Penguily,France,France,FR,FR,"BRE, 22","BRE, 22"
+geoname_id,8058411,6376803,Kunden,Kunden,Indonesia,Indonesia,ID,ID,JT,JT
+geoname_id,112179,6657205,Fardis,Fardis,Iran,Iran,IR,IR,23,23
+geoname_id,3313427,2965298,Cloonfad,Cloonfad,Ireland,Ireland,IE,IE,"C, RN","C, RN"
+geoname_id,2963491,2963490,Kilbride,Kilbride,Ireland,Ireland,IE,IE,"L, WW","L, WW"
+geoname_id,8980123,3180511,Carignano,Carignano,Italy,Italy,IT,IT,"21, TO","21, TO"
+geoname_id,10862573,10862402,Nogawa,Nogawa,Japan,Japan,JP,JP,14,14
+geoname_id,10190942,10180766,Nishihara,Nishihara,Japan,Japan,JP,JP,46,46
+geoname_id,1735297,1735339,Mukah,Mukah,Malaysia,Malaysia,MY,MY,13,13
+geoname_id,1704126,1704127,Madridejos,Madridejos,Philippines,Philippines,PH,PH,"07, CEB","07, CEB"
+geoname_id,1723477,1723381,Buenavista,Buenavista,Philippines,Philippines,PH,PH,"07, BOH","07, BOH"
+geoname_id,1704560,1704557,Mabini,Mabini,Philippines,Philippines,PH,PH,"40, BTG","40, BTG"
+geoname_id,497927,497928,Segezha,Segezha,Russia,Russia,RU,RU,KR,KR
+geoname_id,983038,11428151,Letaba,Letaba,South Africa,South Africa,ZA,ZA,LP,LP
+geoname_id,3130066,9883586,Andosilla,Andosilla,Spain,Spain,ES,ES,"NC, NA","NC, NA"
+geoname_id,709428,709429,Dunayivtsi,Dunayivtsi,Ukraine,Ukraine,UA,UA,68,68
+geoname_id,3784466,3628367,San Francisco,San Francisco,Venezuela,Venezuela,VE,VE,I,I
+geoname_id,10252809,1566206,Thanh Chuong,Thanh Chuong,Vietnam,Vietnam,VN,VN,22,22
+geoname_id,10262577,10177811,Tan Tien,Tan Tien,Vietnam,Vietnam,VN,VN,33,33
+geoname_id,8312288,8312688,Khom Bon,Khom Bon,Vietnam,Vietnam,VN,VN,49,49
+geoname_id,9534824,9534911,Chau Thanh,Chau Thanh,Vietnam,Vietnam,VN,VN,52,52
+geoname_id,10252856,10181904,Xom Muoi,Xom Muoi,Vietnam,Vietnam,VN,VN,22,22
+geoname_id,10357301,10275518,Tran Phu,Tran Phu,Vietnam,Vietnam,VN,VN,23,23
+geoname_id,8616181,8201663,Thai Binh,Thai Binh,Vietnam,Vietnam,VN,VN,HN,HN
+geoname_id,9867550,1594496,An Chau,An Chau,Vietnam,Vietnam,VN,VN,54,54
+geoname_id,10252831,8627929,Hung Nguyen,Hung Nguyen,Vietnam,Vietnam,VN,VN,22,22
+geoname_id,9078306,9078184,Tan Phu,Tan Phu,Vietnam,Vietnam,VN,VN,58,58
+geoname_id,10372440,8628100,Xom Mot,Xom Mot,Vietnam,Vietnam,VN,VN,22,22
+geoname_id,10372438,8628106,Xom Tam,Xom Tam,Vietnam,Vietnam,VN,VN,22,22
+geoname_id,1566099,1904562,Thanh My Loi,Thanh My Loi,Vietnam,Vietnam,VN,VN,SG,SG
+geoname_id,9101395,8337823,Thanh Hoa,Thanh Hoa,Vietnam,Vietnam,VN,VN,41,41
+geoname_id,1592170,1592157,Tan Thanh,Tan Thanh,Vietnam,Vietnam,VN,VN,46,46
