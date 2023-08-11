@@ -162,14 +162,6 @@ export default {
       },
       resolve: 'gatsby-plugin-feed',
     },
-    {
-      options: {
-        trackingIds: [
-          'G-8F9B6Q5C11',
-        ],
-      },
-      resolve: 'gatsby-plugin-google-gtag',
-    },
     'gatsby-plugin-advanced-sitemap',
     {
       options: {
