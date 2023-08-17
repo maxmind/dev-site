@@ -7,6 +7,36 @@ title: minFraud Release Notes
 Subscribe to the [minFraud release notes RSS feed](/minfraud/release-notes/rss.xml).
 </Alert>
 
+<ReleaseNote date="2023-08-17" title="API policies - temporary enforcement on October 17, 2023">
+
+To improve our server infrastructure and allow for better performance and
+efficiency, MaxMind will begin enforcing our policies around our API and
+database download requests in March 2024. To help customers get ready for this
+change, we will have a planned, temporary enforcement of these policies on
+October 17, 2023.
+
+**What are the policies?**
+
+- MaxMind will only accept API and database download requests sent with the more
+  secure HTTPS protocol.
+- MaxMind will only accept API and database download requests that are sent to
+  the appropriate hostname as documented in the integration instructions on our
+  Developer Portal (see direct links below).
+
+**What do I need to do?** To ensure that your MaxMind service is not
+interrupted, please ensure ensure that you are using the correct hostname for
+your API requests, and that you are using HTTPS, prior to October 17, 2023. You
+can view the appropriate URIs for minFraud services on our Developer Portal
+using the links below:
+
+- [minFraud Score, Insights, and Factors web services](/minfraud/api-documentation/requests#service-endpoints)
+- [minFraud Device Tracking](/minfraud/track-devices/#implementation)
+- [minFraud Transaction Reporting](/minfraud/report-a-transaction#api-documentation)
+- [Legacy minFraud web services](/minfraud/minfraud-legacy#http-api)
+- [Legacy Proxy Detection web service](/minfraud/proxy-detection#http-based-api)
+
+</ReleaseNote>
+
 <ReleaseNote date="2023-07-20" title="Expanded filtering options in minFraud Interactive">
 
 Within minFraud Interactive, the interface provided in your account portal for
