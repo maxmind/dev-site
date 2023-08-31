@@ -63,7 +63,6 @@ module.exports = [
           'connect-src': [
             cspKeywords.SELF,
             'status.maxmind.com',
-            'www.google-analytics.com',
             'www.googleapis.com',
             'https://www.maxmind.com',
 
@@ -91,7 +90,6 @@ module.exports = [
           'img-src': [
             cspKeywords.SELF,
             'data:',
-            'www.google-analytics.com',
 
             // HubSpot chat
             'https://forms.hsforms.com',
@@ -103,7 +101,6 @@ module.exports = [
             cspKeywords.SELF,
             cspKeywords.REPORT_SAMPLE,
             cspKeywords.UNSAFE_INLINE, // Misc. inlined scripts 😕
-            'www.google-analytics.com',
             'www.googletagmanager.com',
             'https://www.maxmind.com',
 
