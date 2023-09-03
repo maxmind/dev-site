@@ -1,0 +1,78 @@
+diff_in,old_geoname_id,new_geoname_id,old_city_name,new_city_name,old_country_name,new_country_name,old_country_code,new_country_code,old_subdivision_codes,new_subdivision_codes
+city_name,3832518,3832518,Vista Alegre,Vista Alegre Norte,Argentina,Argentina,AR,AR,Q,Q
+city_name,3861361,3861361,Chiriguanos,Los Chiriguanos,Argentina,Argentina,AR,AR,P,P
+city_name,3427327,3427327,Wanda,Colonia Wanda,Argentina,Argentina,AR,AR,N,N
+city_name,3860466,3860466,Comandante Luis Piedra Buena,Comandante Luis Piedrabuena,Argentina,Argentina,AR,AR,Z,Z
+city_name,3860319,3860319,Contraalmirante Cordero,Contralmirante Cordero,Argentina,Argentina,AR,AR,R,R
+city_name,3429567,3429567,Riacho Eh-Eh,Riacho He-He,Argentina,Argentina,AR,AR,P,P
+city_name,3390974,3390974,Quintino,Dom Quintino,Brazil,Brazil,BR,BR,CE,CE
+city_name,3388247,3388247,Sao Paulo,Sao Paulinho,Brazil,Brazil,BR,BR,CE,CE
+city_name,2035072,2035072,Shacheng,Huailai,China,China,CN,CN,HE,HE
+city_name,648605,648605,Laeyliaeinen,Läyliäinen,Finland,Finland,FI,FI,6,6
+city_name,1519725,1519725,Soran,Saran,Kazakhstan,Kazakhstan,KZ,KZ,35,35
+city_name,2685699,2685699,OEsthammar,Östhammar,Sweden,Sweden,SE,SE,C,C
+city_name,2687509,2687509,OEckeroe,Öckerö,Sweden,Sweden,SE,SE,O,O
+city_name,6696918,6696918,Taoyuan City,Taoyuan,Taiwan,Taiwan,TW,TW,TAO,TAO
+city_name,709900,709900,Dobropol'ye,Dobropillia,Ukraine,Ukraine,UA,UA,14,14
+city_name,712926,712926,Balakliya,Balakliia,Ukraine,Ukraine,UA,UA,63,63
+city_name,697616,697616,Shakhtarske,Perschotravensk,Ukraine,Ukraine,UA,UA,12,12
+city_name,705544,705544,Kobelyaky,Kobeliaky,Ukraine,Ukraine,UA,UA,53,53
+city_name,712969,712969,Bakhchisaray,Bakhchysarai,Ukraine,Ukraine,UA,UA,43,43
+city_name,708901,708901,Haysyn,Haisyn,Ukraine,Ukraine,UA,UA,5,5
+city_name,7259777,7259777,Fort Rucker,Fort Novosel,United States,United States,US,US,AL,AL
+geoname_id,3429301,3429302,San Antonio,San Antonio,Argentina,Argentina,AR,AR,N,N
+geoname_id,2145478,9973370,Upper Barron,Upper Barron,Australia,Australia,AU,AU,QLD,QLD
+geoname_id,2165017,8596658,Goodwood,Goodwood,Australia,Australia,AU,AU,QLD,QLD
+geoname_id,3460542,12108334,Itororo,Itororo,Brazil,Brazil,BR,BR,BA,BA
+geoname_id,6319985,3451423,Riacho Frio,Riacho Frio,Brazil,Brazil,BR,BR,PI,PI
+geoname_id,3445650,3445651,Utinga,Utinga,Brazil,Brazil,BR,BR,BA,BA
+geoname_id,3405433,3405432,Bodo,Bodo,Brazil,Brazil,BR,BR,RN,RN
+geoname_id,3386543,3386544,Tavares,Tavares,Brazil,Brazil,BR,BR,PB,PB
+geoname_id,3466688,7699675,Catanduvas,Catanduvas,Brazil,Brazil,BR,BR,PR,PR
+geoname_id,3446818,8469377,Taquaral,Taquaral,Brazil,Brazil,BR,BR,SP,SP
+geoname_id,6317180,3394647,Frutuoso Gomes,Frutuoso Gomes,Brazil,Brazil,BR,BR,RN,RN
+geoname_id,6317586,3397091,Messias Targino,Messias Targino,Brazil,Brazil,BR,BR,RN,RN
+geoname_id,3411874,6316460,Augustinopolis,Augustinopolis,Brazil,Brazil,BR,BR,TO,TO
+geoname_id,6317431,3396722,Lagoa de Sao Francisco,Lagoa de Sao Francisco,Brazil,Brazil,BR,BR,PI,PI
+geoname_id,6317783,3456058,Novo Horizonte,Novo Horizonte,Brazil,Brazil,BR,BR,SC,SC
+geoname_id,6318690,8437533,Sigefredo Pacheco,Sigefredo Pacheco,Brazil,Brazil,BR,BR,PI,PI
+geoname_id,3469933,3469942,Boa Esperanca,Boa Esperanca,Brazil,Brazil,BR,BR,ES,ES
+geoname_id,3458903,3458902,Lajinha,Lajinha,Brazil,Brazil,BR,BR,MG,MG
+geoname_id,8604177,3462439,Getulio Vargas,Getulio Vargas,Brazil,Brazil,BR,BR,RS,RS
+geoname_id,6322523,6318187,Rosana,Rosana,Brazil,Brazil,BR,BR,SP,SP
+geoname_id,6318704,3387423,Sitio Novo do Tocantins,Sitio Novo do Tocantins,Brazil,Brazil,BR,BR,TO,TO
+geoname_id,3408386,6319364,Acara,Acara,Brazil,Brazil,BR,BR,PA,PA
+geoname_id,3402340,12543089,Cedro,Cedro,Brazil,Brazil,BR,BR,CE,CE
+geoname_id,6324322,3402163,Chorrocho,Chorrocho,Brazil,Brazil,BR,BR,BA,BA
+geoname_id,6323850,6317869,Paranaita,Paranaita,Brazil,Brazil,BR,BR,MT,MT
+geoname_id,3389134,3389141,Santo Antonio,Santo Antonio,Brazil,Brazil,BR,BR,RN,RN
+geoname_id,3396194,12544804,Logradouro,Logradouro,Brazil,Brazil,BR,BR,PB,PB
+geoname_id,6324044,6317799,Novo Planalto,Novo Planalto,Brazil,Brazil,BR,BR,GO,GO
+geoname_id,6316610,3405262,Bom Principio do Piaui,Bom Principio do Piaui,Brazil,Brazil,BR,BR,PI,PI
+geoname_id,6323818,6316908,Confresa,Confresa,Brazil,Brazil,BR,BR,MT,MT
+geoname_id,3463760,3463761,Estrela,Estrela,Brazil,Brazil,BR,BR,RS,RS
+geoname_id,3389501,12542350,Santa Maria,Santa Maria,Brazil,Brazil,BR,BR,RN,RN
+geoname_id,6316702,3403973,Cajueiro da Praia,Cajueiro da Praia,Brazil,Brazil,BR,BR,PI,PI
+geoname_id,3462759,6321046,Sao Gabriel,Sao Gabriel,Brazil,Brazil,BR,BR,BA,BA
+geoname_id,3405559,12544796,Boa Vista,Boa Vista,Brazil,Brazil,BR,BR,PB,PB
+geoname_id,3394239,3394253,Mulungu,Mulungu,Brazil,Brazil,BR,BR,CE,CE
+geoname_id,6318803,3386029,Triunfo Potiguar,Triunfo Potiguar,Brazil,Brazil,BR,BR,RN,RN
+geoname_id,6138055,6138048,Sainte-Monique,Sainte-Monique,Canada,Canada,CA,CA,QC,QC
+geoname_id,3657935,12544228,Febres Cordero,Febres Cordero,Ecuador,Ecuador,EC,EC,G,G
+geoname_id,3652313,12544222,Rocafuerte,Rocafuerte,Ecuador,Ecuador,EC,EC,G,G
+geoname_id,3650959,12543856,Sucre,Sucre,Ecuador,Ecuador,EC,EC,G,G
+geoname_id,2906333,2906334,Hennickendorf,Hennickendorf,Germany,Germany,DE,DE,BB,BB
+geoname_id,8329965,1970054,Demangan,Demangan,Indonesia,Indonesia,ID,ID,JI,JI
+geoname_id,3180511,8980123,Carignano,Carignano,Italy,Italy,IT,IT,"21, TO","21, TO"
+geoname_id,3167069,6542253,Sassofeltrio,Sassofeltrio,Italy,Italy,IT,IT,"57, PU","57, PU"
+geoname_id,8313839,1850405,Tenno,Tenno,Japan,Japan,JP,JP,5,5
+geoname_id,11562315,11562320,Los Alpes,Los Alpes,Mexico,Mexico,MX,MX,CMX,CMX
+geoname_id,3513969,11085957,Zumpahuacan,Zumpahuacan,Mexico,Mexico,MX,MX,MEX,MEX
+geoname_id,11696088,3132911,Vale,Vale,Norway,Norway,NO,NO,38,38
+geoname_id,3438106,3439039,Fram,Fram,Paraguay,Paraguay,PY,PY,7,7
+geoname_id,497928,497927,Segezha,Segezha,Russia,Russia,RU,RU,KR,KR
+geoname_id,3200259,3201693,Gornja Grabovica,Gornja Grabovica,Serbia,Serbia,RS,RS,9,9
+geoname_id,11428151,983038,Letaba,Letaba,South Africa,South Africa,ZA,ZA,LP,LP
+geoname_id,1152221,1152222,Mae Hong Son,Mae Hong Son,Thailand,Thailand,TH,TH,58,58
+geoname_id,8615973,1569813,Phu Xuyen,Phu Xuyen,Vietnam,Vietnam,VN,VN,HN,HN
+subdivision_codes,12278193,12278193,Marne La Vallee,Marne La Vallee,France,France,FR,FR,"IDF, 77",IDF
