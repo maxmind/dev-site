@@ -22,6 +22,9 @@ module.exports = {
     graphql: true,
   },
   ignorePatterns: [
+    '**/_examples/*.ts*',
+    '**/_schemas/*.ts*',
+    '**/__mocks__/*',
     '**/*.mdx',
     '.cache',
     'node_modules',
@@ -80,7 +83,13 @@ module.exports = {
         '**/*.{ts,tsx}',
       ],
       parser: '@typescript-eslint/parser',
+      parserOptions: {
+        project: [
+          'tsconfig.json',
+        ],
+      },
       rules: {
+        '@typescript-eslint/await-thenable': 'error',
         '@typescript-eslint/naming-convention': [
           'error',
           {
