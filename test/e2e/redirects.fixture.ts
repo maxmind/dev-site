@@ -110,7 +110,8 @@ const devSiteStaticChecksums = [
   {
     checksum: 'b61b9c2938fdd08e226b117fadb378aed137a274',
     // eslint-disable-next-line max-len
-    uriPath: '/static/pdfs/GeoLite2-and-GeoIP2-Precision-Web-Services-Comparison.pdf',
+    uriPath:
+      '/static/pdfs/GeoLite2-and-GeoIP2-Precision-Web-Services-Comparison.pdf',
   },
 ];
 
@@ -213,10 +214,6 @@ const wpUploadsChecksums = [
   {
     checksum: '4cb469176066f5855ceb17a49ce64c502b83d8a0',
     uriPath: '/2015/07/GeoIP2-Enterprise-CSV_Example.zip',
-  },
-  {
-    checksum: '516e34059ed22d3d5d52935825c0b0a224b17039',
-    uriPath: '/2015/07/GeoIP2-Enterprise-CSV_Example1.zip',
   },
   {
     checksum: 'bcf94ada6d53857c0ca7f841b4ef1b90ad839182',
