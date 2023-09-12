@@ -34,7 +34,7 @@
 
 ### Minimum Requirements
 
-- Node 16
+- Node 18
 - npm 8.5.5
 
 If you need help installing and/or managing Node and Yarn versions, check out [NVM](https://github.com/nvm-sh/nvm).
