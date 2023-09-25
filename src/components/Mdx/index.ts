@@ -39,4 +39,5 @@ export { default as tr } from './Tr';
 export { default as thead } from './Thead';
 export { default as ul } from './Ul';
 export { default as DatabaseChanges } from '../DatabaseChanges';
+export { default as MmdbFileExamples } from '../MmdbExampleFiles';
 export { default as ZipFileContent } from '../ZipFileContent';
