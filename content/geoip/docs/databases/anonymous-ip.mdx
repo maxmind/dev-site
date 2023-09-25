@@ -6,6 +6,7 @@ title: GeoIP2 Anonymous IP Databases
 import BinaryDatabases from './_binary-databases.mdx';
 import ConversionUtility from './_conversion-utility.mdx';
 import CsvDatabasesIntro from './_csv-databases-intro.mdx';
+import ExampleFiles from './_example-files.mdx';
 import FileFormat from './_file-format.mdx';
 import APIs from './_apis.mdx';
 
@@ -134,17 +135,33 @@ These are named `GeoIP2-Anonymous-IP-Blocks-IPv4.csv` and
   </tbody>
 </table>
 
-### Example Files
-
-This zip file contains examples of all GeoIP2 Anonymous IP CSV files as they
-would be downloaded from the account portal. The files contain dummy data rather
-than real GeoIP data:
-
-- [GeoIP2-Anonymous-IP-CSV_Example](/static/GeoIP2-Anonymous-IP-CSV_Example.zip)
-
 ### Conversion Utility
 
 <ConversionUtility />
+
+## Example Files
+
+<ExampleFiles />
+
+### CSV Example Files
+
+<CsvFileExamples files={[
+    {
+       filename: 'GeoIP2-Anonymous-IP-CSV_Example.zip',
+       link: '/static/GeoIP2-Anonymous-IP-CSV_Example.zip'
+    }
+  ]}
+/>
+
+### MMDB Example Files
+
+<MmdbFileExamples files={[
+    {
+       filename: 'GeoIP2-Anonymous-IP-Test.mmdb',
+       link: 'https://github.com/maxmind/MaxMind-DB/blob/main/test-data/GeoIP2-Anonymous-IP-Test.mmdb'
+    }
+  ]}
+/>
 
 ## Database Changes
 

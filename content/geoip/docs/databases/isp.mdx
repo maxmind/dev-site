@@ -7,6 +7,7 @@ import BinaryDatabases from './_binary-databases.mdx';
 import ConversionUtility from './_conversion-utility.mdx';
 import CsvDatabasesIntro from './_csv-databases-intro.mdx';
 import DataPrivacyWarning from './_data-privacy-warning.mdx';
+import ExampleFiles from './_example-files.mdx';
 import FileFormat from './_file-format.mdx';
 import APIs from './_apis.mdx';
 
@@ -131,15 +132,33 @@ respectively.
   </tbody>
 </table>
 
-### Example Files
-
-This zip file contains examples of all GeoIP2 ISP CSV files:
-
-- [GeoIP2-ISP-CSV_Example](/static/GeoIP2-ISP-CSV_Example.zip)
-
 ### Conversion Utility
 
 <ConversionUtility />
+
+## Example Files
+
+<ExampleFiles />
+
+### CSV Example Files
+
+<CsvFileExamples files={[
+    {
+       filename: 'GeoIP2-ISP-CSV_Example.zip',
+       link: '/static/GeoIP2-ISP-CSV_Example.zip'
+    }
+  ]}
+/>
+
+### MMDB Example Files
+
+<MmdbFileExamples files={[
+    {
+       filename: 'GeoIP2-ISP-Test.mmdb',
+       link: 'https://github.com/maxmind/MaxMind-DB/blob/main/test-data/GeoIP2-ISP-Test.mmdb'
+    }
+  ]}
+/>
 
 ## Database Changes
 

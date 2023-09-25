@@ -8,6 +8,7 @@ import CoordinatesWarning from './_coordinates-warning.mdx';
 import ConversionUtility from './_conversion-utility.mdx';
 import CsvDatabasesIntro from './_csv-databases-intro.mdx';
 import DataPrivacyWarning from './_data-privacy-warning.mdx';
+import ExampleFiles from './_example-files.mdx';
 import FileFormat from './_file-format.mdx';
 import IpGeolocationUsageWarning from './_ip-geolocation-usage-warning.mdx';
 import ReturnedValuesAsKeys from './_returned-values-as-keys.mdx';
@@ -221,14 +222,6 @@ name would be "GeoIP2-City-Locations-en.csv".
 
 <CsvLocationTable is-enterprise={true} />
 
-### Example Files
-
-This zip file contains examples of all GeoIP2 Enterprise CSV files as they would
-be downloaded from the account portal. The files contain dummy data rather than
-real GeoIP data:
-
-- [GeoIP2-Enterprise-CSV_Example](/static/GeoIP2-Enterprise-CSV_Example.zip)
-
 ### Returned Values as Database, Map, Dict, or Hash Keys
 
 <ReturnedValuesAsKeys />
@@ -236,6 +229,30 @@ real GeoIP data:
 ### Conversion Utility
 
 <ConversionUtility />
+
+## Example Files
+
+<ExampleFiles />
+
+### CSV Example Files
+
+<CsvFileExamples files={[
+    {
+       filename: 'GeoIP2-Enterprise-CSV_Example.zip',
+       link: '/static/GeoIP2-Enterprise-CSV_Example.zip'
+    }
+  ]}
+/>
+
+### MMDB Example Files
+
+<MmdbFileExamples files={[
+    {
+       filename: 'GeoIP2-Enterprise-Test.mmdb',
+       link: 'https://github.com/maxmind/MaxMind-DB/blob/main/test-data/GeoIP2-Enterprise-Test.mmdb'
+    }
+  ]}
+/>
 
 ## Database Changes
 

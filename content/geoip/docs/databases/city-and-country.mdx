@@ -8,6 +8,7 @@ import ConversionUtility from './_conversion-utility.mdx';
 import CoordinatesWarning from './_coordinates-warning.mdx';
 import CsvDatabasesIntro from './_csv-databases-intro.mdx';
 import DataPrivacyWarning from './_data-privacy-warning.mdx';
+import ExampleFiles from './_example-files.mdx';
 import FileFormat from './_file-format.mdx';
 import IpGeolocationUsageWarning from './_ip-geolocation-usage-warning.mdx';
 import ReturnedValuesAsKeys from './_returned-values-as-keys.mdx';
@@ -118,15 +119,6 @@ blocks files have the same columns as the City database.
 
 <CsvLocationTable />
 
-### Example Files
-
-These zip files are examples of GeoIP2 City CSV and GeoIP2 Country CSV zip files
-as they would be downloaded from the account portal. The files contain dummy
-data rather than real GeoIP data:
-
-- [GeoIP2-City-CSV_Example](/static/GeoIP2-City-CSV_Example.zip)
-- [GeoIP2-Country-CSV_Example](/static/GeoIP2-Country-CSV_Example.zip)
-
 ### Returned Values as Database, Map, Dict, or Hash Keys
 
 <ReturnedValuesAsKeys />
@@ -134,6 +126,38 @@ data rather than real GeoIP data:
 ### Conversion Utility
 
 <ConversionUtility />
+
+## Example Files
+
+<ExampleFiles />
+
+### CSV Example Files
+
+<CsvFileExamples files={[
+    {
+       filename: 'GeoIP2-City-CSV_Example.zip',
+       link: '/static/GeoIP2-City-CSV_Example.zip'
+    },
+    {
+       filename: 'GeoIP2-Country-CSV_Example.zip',
+       link: '/static/GeoIP2-Country-CSV_Example.zip'
+    }
+  ]}
+/>
+
+### MMDB Example Files
+
+<MmdbFileExamples files={[
+    {
+       filename: 'GeoIP2-City-Test.mmdb',
+       link: 'https://github.com/maxmind/MaxMind-DB/blob/main/test-data/GeoIP2-City-Test.mmdb'
+    },
+    {
+       filename: 'GeoIP2-Country-Test.mmdb',
+       link: 'https://github.com/maxmind/MaxMind-DB/blob/main/test-data/GeoIP2-Country-Test.mmdb'
+    }
+  ]}
+/>
 
 ## Database Changes
 
