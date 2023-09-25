@@ -10,7 +10,7 @@ interface IExampleFiles {
   }[]
 }
 
-const MmdbExampleFiles: React.FC<IExampleFiles> = (props) => {
+const CsvExampleFiles: React.FC<IExampleFiles> = (props) => {
   const { files } = props;
   const fileItems = files.map(files => (
     <Li
@@ -18,8 +18,6 @@ const MmdbExampleFiles: React.FC<IExampleFiles> = (props) => {
     >
       <A
         href={files.link}
-        rel="nofollow noopener noreferrer"
-        target="_blank"
       >
         {files.filename}
       </A>
@@ -28,32 +26,22 @@ const MmdbExampleFiles: React.FC<IExampleFiles> = (props) => {
 
   return (
     <>
-      <P>We maintain test MMDB files on GitHub:</P>
+      <P>
+        We maintain examples of the CSV files as they would be downloaded from
+        the account portal:
+      </P>
 
       <P>
         <Ul>
           {fileItems}
         </Ul>
       </P>
-
-      <P>
-        Alternatively, you can
-        {' '}
-        <A
-          href="https://github.com/maxmind/MaxMind-DB/tree/main/test-data"
-          rel="nofollow noopener noreferrer"
-          target="_blank"
-        >
-          view all of our MMDB test data on GitHub
-        </A>
-        .
-      </P>
     </>
   );
 };
 
-MmdbExampleFiles.propTypes = {
+CsvExampleFiles.propTypes = {
   files: PropTypes.array.isRequired,
 };
 
-export default MmdbExampleFiles;
+export default CsvExampleFiles;

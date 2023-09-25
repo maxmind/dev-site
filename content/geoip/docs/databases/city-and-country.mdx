@@ -131,19 +131,33 @@ blocks files have the same columns as the City database.
 
 <ExampleFiles />
 
-### CSV example files
+### CSV Example Files
 
-These zip files are examples of GeoIP2 City CSV and GeoIP2 Country CSV zip files
-as they would be downloaded from the account portal:
+<CsvFileExamples files={[
+    {
+       filename: 'GeoIP2-City-CSV_Example.zip',
+       link: '/static/GeoIP2-City-CSV_Example.zip'
+    },
+    {
+       filename: 'GeoIP2-Country-CSV_Example.zip',
+       link: '/static/GeoIP2-Country-CSV_Example.zip'
+    }
+  ]}
+/>
 
-- [GeoIP2-City-CSV_Example](/static/GeoIP2-City-CSV_Example.zip)
-- [GeoIP2-Country-CSV_Example](/static/GeoIP2-Country-CSV_Example.zip)
+### MMDB Example Files
 
-### MMDB example files
-
-TODO: Add Country
-
-<MmdbFileExamples link="https://github.com/maxmind/MaxMind-DB/blob/main/test-data/GeoIP2-City-Test.mmdb" product="GeoIP2-City-Test.mmdb" />
+<MmdbFileExamples files={[
+    {
+       filename: 'GeoIP2-City-Test.mmdb',
+       link: 'https://github.com/maxmind/MaxMind-DB/blob/main/test-data/GeoIP2-City-Test.mmdb'
+    },
+    {
+       filename: 'GeoIP2-Country-Test.mmdb',
+       link: 'https://github.com/maxmind/MaxMind-DB/blob/main/test-data/GeoIP2-Country-Test.mmdb'
+    }
+  ]}
+/>
 
 ## Database Changes
 
