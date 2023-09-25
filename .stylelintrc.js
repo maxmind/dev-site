@@ -12,7 +12,6 @@ module.exports = {
     'stylelint-order',
   ],
   rules: {
-    indentation: 2,
     'max-nesting-depth': 4,
     'order/order': [
       'custom-properties',
@@ -73,6 +72,11 @@ module.exports = {
            * https://caniuse.com/?search=css-initial-value
            */
           'css-initial-value',
+
+          /**
+           * False positive
+           */
+          'css-nesting',
 
           /**
            * Not supported - IE11
