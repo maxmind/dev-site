@@ -12,14 +12,14 @@ interface IExampleFiles {
 
 const CsvExampleFiles: React.FC<IExampleFiles> = (props) => {
   const { files } = props;
-  const fileItems = files.map(files => (
+  const fileItems = files.map((file) => (
     <Li
-      key={files.filename}
+      key={file.filename}
     >
       <A
-        href={files.link}
+        href={file.link}
       >
-        {files.filename}
+        {file.filename}
       </A>
     </Li>
   ));
