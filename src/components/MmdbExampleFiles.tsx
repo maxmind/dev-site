@@ -12,16 +12,14 @@ interface IExampleFiles {
 
 const MmdbExampleFiles: React.FC<IExampleFiles> = (props) => {
   const { files } = props;
-  const fileItems = files.map(files => (
+  const fileItems = files.map((file) => (
     <Li
-      key={files.filename}
+      key={file.filename}
     >
       <A
-        href={files.link}
-        rel="nofollow noopener noreferrer"
-        target="_blank"
+        href={file.link}
       >
-        {files.filename}
+        {file.filename}
       </A>
     </Li>
   ));
