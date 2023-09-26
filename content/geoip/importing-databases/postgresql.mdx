@@ -109,15 +109,15 @@ provides
 network. For example:
 
 ```sql
-select '192.168.0.0/24'::cidr >> '192.168.0.1'; -- true
-select '192.168.0.0/24'::cidr >> '192.168.1.1'; -- false
+select '192.168.0.0/24'::cidr >>= '192.168.0.1'; -- true
+select '192.168.0.0/24'::cidr >>= '192.168.1.1'; -- false
 ```
 
 We can use that to look up the `geoip2_network` entry for a given IP address
 like so:
 
 ```sql
-select * from geoip2_network where network >> '146.243.121.22';
+select * from geoip2_network where network >>= '146.243.121.22';
 ```
 
 Which gives a result of:
@@ -156,7 +156,7 @@ create index on geoip2_network using gist (network inet_ops);
 With that change we observe that the same query runs a lot faster:
 
 ```sql
-select * from geoip2_network net where network >> '146.243.121.22';
+select * from geoip2_network net where network >>= '146.243.121.22';
 ```
 
 Which gives a result of:
@@ -257,7 +257,7 @@ left join geoip2_location location on (
   net.geoname_id = location.geoname_id
   and location.locale_code = 'en'
 )
-where network >> '146.243.121.22';
+where network >>= '146.243.121.22';
 ```
 
 Which gives a result of:
@@ -309,7 +309,7 @@ left join geoip2_location represented_country on (
   net.represented_country_geoname_id = represented_country.geoname_id
   and represented_country.locale_code = 'en'
 )
-where network >> '146.243.121.22';
+where network >>= '146.243.121.22';
 ```
 
 Which gives a result of:
