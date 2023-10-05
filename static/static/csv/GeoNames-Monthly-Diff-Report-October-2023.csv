@@ -1,0 +1,82 @@
+diff_in,old_geoname_id,new_geoname_id,old_city_name,new_city_name,old_country_name,new_country_name,old_country_code,new_country_code,old_subdivision_codes,new_subdivision_codes
+city_name,3838158,3838158,San Agustin de Valle Fertil,Villa San Agustin,Argentina,Argentina,AR,AR,J,J
+city_name,3836993,3836993,San Martin,Villa General San Martin,Argentina,Argentina,AR,AR,J,J
+city_name,3860355,3860355,Conhello,Conhelo,Argentina,Argentina,AR,AR,L,L
+city_name,2036109,2036109,Liaoyuan,Longshan,China,China,CN,CN,JL,JL
+city_name,145987,145987,Ορόκλινη,Oroklini,Cyprus,Cyprus,CY,CY,3,3
+city_name,3654451,3654451,Provincia de Manabi,Manabí,Ecuador,Ecuador,EC,EC,M,M
+city_name,3653224,3653224,Provincia de Pichincha,Pichincha,Ecuador,Ecuador,EC,EC,P,P
+city_name,3830305,3830305,Provincia de Sucumbios,Sucumbíos,Ecuador,Ecuador,EC,EC,U,U
+city_name,3654592,3654592,Provincia de Los Rios,Los Ríos,Ecuador,Ecuador,EC,EC,R,R
+city_name,2837085,2837085,Schönau am Königsee,Schönau am Königssee,Germany,Germany,DE,DE,BY,BY
+city_name,706571,706571,Kozyatyn,Koziatyn,Ukraine,Ukraine,UA,UA,5,5
+city_name,709054,709054,Hadyach,Hadiach,Ukraine,Ukraine,UA,UA,53,53
+city_name,704362,704362,Yany Kapu,Krasnoperekopsk,Ukraine,Ukraine,UA,UA,43,43
+city_name,691037,691037,Tsyurupynsk,Oleshky,Ukraine,Ukraine,UA,UA,65,65
+geoname_id,3430654,3427884,Mision Tacaagle,Mision Tacaagle,Argentina,Argentina,AR,AR,P,P
+geoname_id,8596658,2165017,Goodwood,Goodwood,Australia,Australia,AU,AU,QLD,QLD
+geoname_id,3901436,3901435,Vinto,Vinto,Bolivia,Bolivia,BO,BO,C,C
+geoname_id,6316575,12551418,Boa Hora,Boa Hora,Brazil,Brazil,BR,BR,PI,PI
+geoname_id,3390814,6318104,Raposa,Raposa,Brazil,Brazil,BR,BR,MA,MA
+geoname_id,6318970,6319833,Ze Doca,Ze Doca,Brazil,Brazil,BR,BR,MA,MA
+geoname_id,3406954,12554941,Aurora,Aurora,Brazil,Brazil,BR,BR,CE,CE
+geoname_id,6316767,3467536,Candoi,Candoi,Brazil,Brazil,BR,BR,PR,PR
+geoname_id,3445651,3445650,Utinga,Utinga,Brazil,Brazil,BR,BR,BA,BA
+geoname_id,3405432,3405433,Bodo,Bodo,Brazil,Brazil,BR,BR,RN,RN
+geoname_id,11970661,3450163,Santa Lucia,Santa Lucia,Brazil,Brazil,BR,BR,SP,SP
+geoname_id,3451088,3451086,Rio Preto,Rio Preto,Brazil,Brazil,BR,BR,MG,MG
+geoname_id,3449775,12229322,Santa Tereza,Santa Tereza,Brazil,Brazil,BR,BR,RS,RS
+geoname_id,3393789,3456559,Mundo Novo,Mundo Novo,Brazil,Brazil,BR,BR,BA,BA
+geoname_id,3450314,3450313,Santa Cruz,Santa Cruz,Brazil,Brazil,BR,BR,PR,PR
+geoname_id,3396756,12550831,Lagoa do Mato,Lagoa do Mato,Brazil,Brazil,BR,BR,CE,CE
+geoname_id,6319662,3405341,Bom Jardim,Bom Jardim,Brazil,Brazil,BR,BR,MA,MA
+geoname_id,6316460,3411874,Augustinopolis,Augustinopolis,Brazil,Brazil,BR,BR,TO,TO
+geoname_id,3398054,12554189,Iracema,Iracema,Brazil,Brazil,BR,BR,CE,CE
+geoname_id,3458902,3458903,Lajinha,Lajinha,Brazil,Brazil,BR,BR,MG,MG
+geoname_id,3402538,12548918,Catarina,Catarina,Brazil,Brazil,BR,BR,CE,CE
+geoname_id,6317399,3459518,Jucurucu,Jucurucu,Brazil,Brazil,BR,BR,BA,BA
+geoname_id,3388248,12555201,Sao Paulo,Sao Paulo,Brazil,Brazil,BR,BR,RN,RN
+geoname_id,6316428,6323801,Araputanga,Araputanga,Brazil,Brazil,BR,BR,MT,MT
+geoname_id,6318187,6322523,Rosana,Rosana,Brazil,Brazil,BR,BR,SP,SP
+geoname_id,11960413,3451211,Rio das Antas,Rio das Antas,Brazil,Brazil,BR,BR,SC,SC
+geoname_id,3387423,6318704,Sitio Novo do Tocantins,Sitio Novo do Tocantins,Brazil,Brazil,BR,BR,TO,TO
+geoname_id,12543089,12554641,Cedro,Cedro,Brazil,Brazil,BR,BR,CE,CE
+geoname_id,3463605,12229353,Farroupilha,Farroupilha,Brazil,Brazil,BR,BR,RS,RS
+geoname_id,3461908,3461903,Guarani,Guarani,Brazil,Brazil,BR,BR,MG,MG
+geoname_id,8437724,3407797,Altos,Altos,Brazil,Brazil,BR,BR,PI,PI
+geoname_id,3389141,3389134,Santo Antonio,Santo Antonio,Brazil,Brazil,BR,BR,RN,RN
+geoname_id,3394878,12551227,Milha,Milha,Brazil,Brazil,BR,BR,CE,CE
+geoname_id,3452712,6323776,Porto Murtinho,Porto Murtinho,Brazil,Brazil,BR,BR,MS,MS
+geoname_id,3406626,12551049,Baixio,Baixio,Brazil,Brazil,BR,BR,CE,CE
+geoname_id,3451704,3451705,Registro,Registro,Brazil,Brazil,BR,BR,SP,SP
+geoname_id,6321046,3462759,Sao Gabriel,Sao Gabriel,Brazil,Brazil,BR,BR,BA,BA
+geoname_id,3446015,12200503,Trombas,Trombas,Brazil,Brazil,BR,BR,GO,GO
+geoname_id,3385736,3385737,Upanema,Upanema,Brazil,Brazil,BR,BR,RN,RN
+geoname_id,3389321,3389325,Santa Rita,Santa Rita,Brazil,Brazil,BR,BR,PB,PB
+geoname_id,3394253,12549102,Mulungu,Mulungu,Brazil,Brazil,BR,BR,CE,CE
+geoname_id,6318785,6319485,Trairao,Trairao,Brazil,Brazil,BR,BR,PA,PA
+geoname_id,3399445,3399439,Forquilha,Forquilha,Brazil,Brazil,BR,BR,CE,CE
+geoname_id,6319424,6317580,Medicilandia,Medicilandia,Brazil,Brazil,BR,BR,PA,PA
+geoname_id,3407453,3407454,Aparecida,Aparecida,Brazil,Brazil,BR,BR,PB,PB
+geoname_id,3669188,3669196,San Pablo,San Pablo,Colombia,Colombia,CO,CO,BOL,BOL
+geoname_id,3668333,3668332,Santo Tomas,Santo Tomas,Colombia,Colombia,CO,CO,ATL,ATL
+geoname_id,3686142,3686141,Coello,Coello,Colombia,Colombia,CO,CO,TOL,TOL
+geoname_id,2619859,2619860,Horning,Horning,Denmark,Denmark,DK,DK,82,82
+geoname_id,12311334,3004687,Le Chatellier,Le Chatellier,France,France,FR,FR,"NOR, 61","NOR, 61"
+geoname_id,2807200,2807201,Wittstock,Wittstock,Germany,Germany,DE,DE,BB,BB
+geoname_id,2865640,2865642,Neuenkirchen,Neuenkirchen,Germany,Germany,DE,DE,NI,NI
+geoname_id,7334569,6828748,Tembokrejo,Tembokrejo,Indonesia,Indonesia,ID,ID,JI,JI
+geoname_id,2964051,2964050,Gleneely,Gleneely,Ireland,Ireland,IE,IE,"U, DL","U, DL"
+geoname_id,2962610,2962611,Milltown,Milltown,Ireland,Ireland,IE,IE,"M, KY","M, KY"
+geoname_id,8964434,6534515,Taleggio,Taleggio,Italy,Italy,IT,IT,"25, BG","25, BG"
+geoname_id,1850405,8313839,Tenno,Tenno,Japan,Japan,JP,JP,5,5
+geoname_id,11791238,10351801,Yakatabaru,Yakatabaru,Japan,Japan,JP,JP,40,40
+geoname_id,1735339,1735297,Mukah,Mukah,Malaysia,Malaysia,MY,MY,13,13
+geoname_id,1177662,1177660,Gujranwala,Gujranwala,Pakistan,Pakistan,PK,PK,PB,PB
+geoname_id,3372964,3372965,Lagoa,Lagoa,Portugal,Portugal,PT,PT,20,20
+geoname_id,497927,497928,Segezha,Segezha,Russia,Russia,RU,RU,KR,KR
+geoname_id,852346,787513,Obrez,Obrez,Serbia,Serbia,RS,RS,19,19
+geoname_id,994860,994859,Inanda,Inanda,South Africa,South Africa,ZA,ZA,KZN,KZN
+geoname_id,2727074,2727073,Alberga,Alberga,Sweden,Sweden,SE,SE,D,D
+geoname_id,2680989,2680986,Ryd,Ryd,Sweden,Sweden,SE,SE,O,O
+geoname_id,1152222,1152221,Mae Hong Son,Mae Hong Son,Thailand,Thailand,TH,TH,58,58
