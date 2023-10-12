@@ -10,7 +10,7 @@ const toHaveNoBrokenLinks = (brokenLinks: any[]): any => {
         Page: ${brokenLink.base.original} ${BR}
         Broken Link Url: ${brokenLink.url.original} ${BR}
         Broken Link Text: ${brokenLink.html.text} ${BR}
-        Broken Link Selector: ${brokenLink.html.selector} ${BR}`
+        Broken Link Selector: ${brokenLink.html.selector} ${BR}`;
 
     return list;
   });

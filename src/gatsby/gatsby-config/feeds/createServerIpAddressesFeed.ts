@@ -8,10 +8,8 @@ export default (): any => ({
         nodes {
           IPv4
           IPv6
+          lastUpdated
         }
-      }
-      file {
-        modifiedTime
       }
       site {
         siteMetadata {
@@ -23,10 +21,9 @@ export default (): any => ({
   serialize: (args: any) => {
     const { query } = args;
     const { allJson } = query;
-    const { modifiedTime } = query.file;
     const { siteUrl } = query.site.siteMetadata;
 
-    const date = new Date(modifiedTime);
+    const date = new Date(allJson.nodes[0].lastUpdated);
 
     return [
       {
