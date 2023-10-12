@@ -228,7 +228,7 @@ module.exports = {
       'as-needed',
     ],
     quotes: [
-      'warn',
+      'error',
       'single',
     ],
     'react-hooks/exhaustive-deps': 'warn',
