@@ -17,6 +17,7 @@ const IpAddresses: React.FC = () => (
     </Example>
     <P>
       Last updated:
+      {' '}
       {lastUpdated}
     </P>
   </>
