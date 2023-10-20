@@ -112,6 +112,7 @@ export const city = {
     ...country.traits,
     autonomous_system_number: 1239,
     autonomous_system_organization: 'Linkem IR WiMax Network',
+    connection_type: "Cable/DSL",
     domain: 'example.com',
     isp: 'Linkem spa',
     mobile_country_code: '310',

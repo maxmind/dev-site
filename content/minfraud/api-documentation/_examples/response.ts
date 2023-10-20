@@ -185,6 +185,7 @@ export const insights = {
     traits: {
       autonomous_system_number:      1239,
       autonomous_system_organization: 'Linkem IR WiMax Network',
+      connection_type:               'Cable/DSL',
       domain:                        'example.com',
       ip_address:                    '1.2.3.4',
       is_anonymous:                  true,
