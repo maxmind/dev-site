@@ -216,10 +216,6 @@ const wpUploadsChecksums = [
     uriPath: '/2015/07/GeoIP2-Enterprise-CSV_Example.zip',
   },
   {
-    checksum: 'bcf94ada6d53857c0ca7f841b4ef1b90ad839182',
-    uriPath: '/2017/10/GeoIP2-User-Count-CSV_Example.zip',
-  },
-  {
     checksum: '8754acf71336199677759db99ed63adf62a162d6',
     uriPath: '/2020/04/GeoNames-Monthly-Diff-Report-April-2020.csv',
   },
