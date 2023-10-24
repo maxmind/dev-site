@@ -1,6 +1,6 @@
 const devSiteStaticChecksums = [
   {
-    checksum: '4cb469176066f5855ceb17a49ce64c502b83d8a0',
+    checksum: '967f65b63881e325a4d6af43828ea80b8de74c26',
     uriPath: '/GeoIP2-Enterprise-CSV_Example.zip',
   },
   {
@@ -212,7 +212,7 @@ const wpStaticChecksums = [
 
 const wpUploadsChecksums = [
   {
-    checksum: '4cb469176066f5855ceb17a49ce64c502b83d8a0',
+    checksum: '967f65b63881e325a4d6af43828ea80b8de74c26',
     uriPath: '/2015/07/GeoIP2-Enterprise-CSV_Example.zip',
   },
   {
