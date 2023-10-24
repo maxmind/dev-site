@@ -124,3 +124,8 @@ to point to the current year's pathway.
 to the current year's pathway.
 8. Update the URLs used to create RSS feeds (`gatsby/gatsby-config/index.ts`) to
 the current year's pathway.
+
+### Updating Example CSVs
+
+To do this, use the `create-example-csv-zips-for-dev-site` script in the
+internal oneoffs repository.
