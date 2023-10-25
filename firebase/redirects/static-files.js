@@ -87,11 +87,6 @@ module.exports = [
     type: 301,
   },
   {
-    destination: '/static/GeoIP2-User-Count-CSV_Example.zip',
-    source: '/2017/10/GeoIP2-User-Count-CSV_Example.zip',
-    type: 301,
-  },
-  {
     destination: '/static/csv/fips-iso-map.csv',
     source: '/2020/06/fips-iso-map.csv',
     type: 301,
