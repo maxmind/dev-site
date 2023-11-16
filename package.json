@@ -99,7 +99,6 @@
   "devDependencies": {
     "@babel/eslint-parser": "^7.19.1",
     "@types/airbnb-prop-types": "^2.13.1",
-    "@types/broken-link-checker": "^0.7.0",
     "@types/dompurify": "^2.3.4",
     "@types/enzyme": "^3.10.11",
     "@types/jest": "^29.2.1",
