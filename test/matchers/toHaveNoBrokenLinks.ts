@@ -1,16 +1,29 @@
 import { matcherHint } from 'jest-matcher-utils';
+// eslint-disable-next-line import/no-unresolved
+import { LinkResult } from 'linkinator';
 
 const BR = '\n';
 
-const toHaveNoBrokenLinks = (brokenLinks: any[]): any => {
+const isError = (err: Error | unknown): err is Error =>
+  err instanceof Error && 'message' in err && err.message !== undefined;
 
-  const formatedViolations = brokenLinks.map((brokenLink: any) => {
-    const list =
-        `Reason: ${brokenLink.brokenReason} ${BR}
-        Page: ${brokenLink.base.original} ${BR}
-        Broken Link Url: ${brokenLink.url.original} ${BR}
-        Broken Link Text: ${brokenLink.html.text} ${BR}
-        Broken Link Selector: ${brokenLink.html.selector} ${BR}`;
+const toHaveNoBrokenLinks = (brokenLinks: LinkResult[]) => {
+  const formatedViolations = brokenLinks.map((brokenLink) => {
+    const reason = [
+      undefined,
+      0,
+    ].includes(brokenLink.status)
+      ? 'No response'
+      : `HTTP status ${brokenLink.status}`;
+
+    const failureDetails = brokenLink.failureDetails
+      ?.map((err) => (isError(err) ? err.message : undefined))
+      .filter((err) => err !== undefined);
+
+    const list = `Reason: ${reason} ${BR}
+        Page: ${brokenLink.parent} ${BR}
+        Broken Link Url: ${brokenLink.url} ${BR}
+        Failure details: ${failureDetails?.join(BR)} ${BR}`;
 
     return list;
   });
@@ -33,7 +46,7 @@ const toHaveNoBrokenLinks = (brokenLinks: any[]): any => {
     actual: brokenLinks,
     message,
     pass,
-  } as any;
+  };
 };
 
 expect.extend({
