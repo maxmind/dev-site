@@ -7,6 +7,29 @@ title: minFraud Release Notes
 Subscribe to the [minFraud release notes RSS feed](/minfraud/release-notes/rss.xml).
 </Alert>
 
+<ReleaseNote date="2023-11-16" title="Free email output can be used as a parameter for custom rules">
+
+You can now use the `/email/is_free` output in minFraud custom rules. This
+output is available for transactions submitted through minFraud Insights and
+minFraud Factors when you pass the `/email/address` input as plaintext, or when
+you pass an MD5 hash of the `/email/address` and the plaintext `/email/domain`
+input.
+
+Use of free email providers (e.g. Gmail, Yahoo, Outlook, etc.) by consumers is
+the norm, so filtering transactions on this data point is often useful only in
+business-to-business contexts where you expect transactions to be conducted
+using a business email domain.
+
+You can select the free email output as a parameter in custom rules by selecting
+minFraud outputs > Is free email when defining a new condition for a custom
+rule.
+
+- [Learn more about setting custom rule conditions on our Knowledge Base.](https://support.maxmind.com/hc/en-us/articles/4408362750875#h_01HBNQ01QST1MPM481ZW520R7J)
+- [Learn more about free email detection on our Knowledge Base.](https://support.maxmind.com/hc/en-us/articles/4408562891803-Email-Risk-Data#h_01FN6V5QYMX2DYRB4YSFM93F8D)
+- [Learn more about passing email inputs on our Knowledge Base.](https://support.maxmind.com/hc/en-us/articles/5451485951387-Email-Inputs)
+
+</ReleaseNote>
+
 <ReleaseNote date="2023-11-15" title="Create stored lists of email addresses to use in minFraud custom rules">
 
 You can now add up to 2000 emails to a stored list and use it within minFraud
