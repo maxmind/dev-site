@@ -1,4 +1,5 @@
-import blc from 'broken-link-checker';
+// eslint-disable-next-line import/no-unresolved
+import { LinkChecker, LinkResult } from 'linkinator';
 
 const targetUrl = process.env.E2E_TARGET_URL || 'http://localhost:5000';
 
@@ -18,53 +19,49 @@ const falsePositives = [
   'https://www.rubydoc.info/gems/minfraud/',
 ];
 
-// eslint-disable-next-line compat/compat
-const getBrokenLinks = (): Promise<any> => new Promise((resolve, reject) => {
-  try {
-    const brokenLinks: string[] = [];
 
-    const checker = new blc.SiteChecker({
-      excludedKeywords: [
-        ...falsePositives,
-      ],
-      honorRobotExclusions: false,
-    }, {
-      end: () => {
-        resolve(brokenLinks);
-      },
-      link: (result) => {
-        const { broken, http, url } = result;
-        const { statusCode } = http.response;
-        const { resolved: resolvedUrl } = url;
+const getBrokenLinks = async () => {
 
-        // eslint-disable-next-line compat/compat
-        const { origin } = new URL(resolvedUrl);
+  const brokenLinks: LinkResult[] = [];
 
-        if (!broken) {
-          return;
-        }
+  const checker = new LinkChecker();
 
-        if (statusCode === 403 || statusCode === 429) {
-          return;
-        }
+  checker.on('link', (result) => {
+    const broken = result.state === 'BROKEN';
+    const statusCode = result.status ?? 0;
+    const resolvedUrl = result.url;
+    const { origin } = new URL(resolvedUrl);
 
-        if (
-          statusCode === 401
-          && origin === 'https://www.maxmind.com'
-        ) {
-          return;
-        }
+    if (!broken) {
+      return;
+    }
 
-        brokenLinks.push(result);
-      },
-    });
+    if (statusCode === 403 || statusCode === 429 || statusCode >= 500) {
+      return;
+    }
 
-    checker.enqueue(targetUrl, []);
-  } catch(err) {
-    reject(err);
-  }
-});
+    if (statusCode === 401 && origin === 'https://www.maxmind.com') {
+      return;
+    }
 
-test('website has no broken links', async () => {
-  expect(await getBrokenLinks()).toHaveNoBrokenLinks();
-}, 1000 * 60 * 5);
+    brokenLinks.push(result);
+  });
+
+  await checker.check({
+    linksToSkip: falsePositives,
+    path: targetUrl,
+    recurse: true,
+    timeout: 30 * 1000,
+  });
+
+  return brokenLinks;
+
+};
+
+test(
+  'website has no broken links',
+  async () => {
+    expect(await getBrokenLinks()).toHaveNoBrokenLinks();
+  },
+  1000 * 60 * 5
+);

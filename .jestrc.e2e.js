@@ -7,6 +7,7 @@ module.exports = {
   setupFilesAfterEnv: [
     '<rootDir>test/matchers/toHaveNoBrokenLinks.ts',
   ],
+  testEnvironment: 'node',
   testMatch: [
     '<rootDir>test/e2e/*.spec.ts'
   ],
