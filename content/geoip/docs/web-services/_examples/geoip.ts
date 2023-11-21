@@ -114,6 +114,7 @@ export const city = {
     autonomous_system_organization: 'Linkem IR WiMax Network',
     connection_type: "Cable/DSL",
     domain: 'example.com',
+    is_anycast: true,
     isp: 'Linkem spa',
     mobile_country_code: '310',
     mobile_network_code: '004',
