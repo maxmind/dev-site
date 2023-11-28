@@ -64,6 +64,7 @@ export const country = {
   },
   traits: {
     ip_address: '1.2.3.4',
+    is_anycast: true,
     network: '1.2.3.0/24',
   },
 };
@@ -114,7 +115,6 @@ export const city = {
     autonomous_system_organization: 'Linkem IR WiMax Network',
     connection_type: "Cable/DSL",
     domain: 'example.com',
-    is_anycast: true,
     isp: 'Linkem spa',
     mobile_country_code: '310',
     mobile_network_code: '004',
