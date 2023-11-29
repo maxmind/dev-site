@@ -7,6 +7,54 @@ title: GeoIP2 Release Notes
 Subscribe to the [GeoIP2 release notes RSS feed](/geoip/release-notes/rss.xml).
 </Alert>
 
+<ReleaseNote date="2023-11-29" title="Improved postal resolution and accuracy in GeoIP products and services">
+
+Over the past two weeks, we have introduced improved postal code resolution for
+all GeoIP products and services with city-level data, especially for large
+cities. GeoIP customers should see more diverse postal codes for IP addresses
+geolocated to large cities. This improvement impacts the following products and
+services:
+
+- GeoIP City Plus and Insights web services
+- GeoIP Enterprise database
+- GeoIP City database
+
+In addition, we have improved the geolocation accuracy at the city and postal
+levels for IPv6 networks in our GeoIP web services. This improvement impacts the
+following services:
+
+- GeoIP City Plus and Insights web services
+
+</ReleaseNote>
+
+<ReleaseNote date="2023-11-29" title="Update to KDDI Japanese ISP name">
+
+In the Friday, December 1 release of our ISP data, we will be changing the name
+of `KDDI`, a large Japanese ISP, to `au one net` because KDDI offers its
+services under the au one net brand name.
+
+ISP data in the following products and services will be updated:
+
+- GeoIP City Plus and Insights web services
+- GeoIP Enterprise database
+- GeoIP ISP database
+
+</ReleaseNote>
+
+<ReleaseNote date="2023-11-29" title="Updated static IP scoring for IPv6 addresses">
+
+We are releasing a bug fix to our static IP scoring system today.
+
+Previously we were returning higher static IP scores for cellular IPv6 addresses
+when the networks were actually more dynamic.
+
+GeoIP Insights and Factors customers will see the static IP score for cellular
+IPv6 addresses reduce.
+
+[Learn more about static IP scores in GeoIP on our Knowledge Base.](https://support.maxmind.com/hc/en-us/articles/4408208479131-User-Context-Data#h_01FN9BSX7X351J8PV0WCH0E88F)
+
+</ReleaseNote>
+
 <ReleaseNote date="2023-11-15" title="Special release of our geolocation databases">
 
 We are issuing an off-schedule release of our geolocation databases in order to
