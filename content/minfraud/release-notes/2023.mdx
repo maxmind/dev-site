@@ -7,6 +7,22 @@ title: minFraud Release Notes
 Subscribe to the [minFraud release notes RSS feed](/minfraud/release-notes/rss.xml).
 </Alert>
 
+<ReleaseNote date="2023-12-04" title="ISP output can be used as a parameter for custom rules">
+
+You can now use the `ip_address/traits/isp` output in minFraud custom rules,
+with the following operators: matches, does not match, contains, does not
+contain.
+
+Filtering transactions by ISP can be especially helpful if you notice certain
+ISPs are more likely to be associated with fraudulent behavior.
+
+You can select the ISP output as a parameter in custom rules by selecting
+minFraud outputs > ISP when defining a new condition for a custom rule.
+
+- [Learn more about setting custom rule conditions on our Knowledge Base.](https://support.maxmind.com/hc/en-us/articles/4408362750875#h_01HBNQ01QST1MPM481ZW520R7J)
+
+</ReleaseNote>
+
 <ReleaseNote date="2023-11-29" title="Updated static IP scoring for IPv6 addresses">
 
 We are releasing a bug fix to our static IP scoring system today.
