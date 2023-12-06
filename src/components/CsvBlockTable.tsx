@@ -518,6 +518,41 @@ const CsvBlockTable: React.FC<ICsvBlockTable> = (props) => {
             </Tr>
           </>
         )}
+        <Tr>
+          <Td>is_anycast</Td>
+          <Td>boolean</Td>
+          <Td>
+            This is
+            {' '}
+            <Code>1</Code>
+            {' '}
+            if the network is an
+            {' '}
+            <A
+              href="https://en.wikipedia.org/wiki/Anycast"
+              rel="nofollow noopener noreferrer"
+              target="_blank"
+            >
+              anycast network
+            </A>
+            .
+            { !isEnterprise && (
+              <div>
+                This column will be empty in GeoLite2-Country and GeoLite2-City.
+              </div>
+            )}
+          </Td>
+          { !isEnterprise && (
+            <Td>
+              <ServiceTag
+                text="Country"
+              />
+              <ServiceTag
+                text="City"
+              />
+            </Td>
+          )}
+        </Tr>
       </tbody>
     </Table>
   );
