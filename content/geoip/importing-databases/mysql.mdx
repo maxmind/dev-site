@@ -95,6 +95,7 @@ create table geoip2_network (
   latitude float,
   longitude float,
   accuracy_radius int,
+  is_anycast bool,
   index(network_start),
   index(network_end)
 );
@@ -116,7 +117,7 @@ load data infile '/var/lib/mysql-files/GeoIP2-City-Blocks-IPv6-Hex.csv'
 into table geoip2_network
 fields terminated by ',' enclosed by '"' lines terminated by '\n' ignore 1 rows
 (@network_start, @network_end, @geoname_id, @registered_country_geoname_id, @represented_country_geoname_id,
- @is_anonymous_proxy, @is_satellite_provider, @postal_code, @latitude, @longitude, @accuracy_radius)
+ @is_anonymous_proxy, @is_satellite_provider, @postal_code, @latitude, @longitude, @accuracy_radius, @is_anycast)
 set network_start = unhex(@network_start),
     network_end = unhex(@network_end),
     geoname_id = nullif(@geoname_id, ''),
@@ -127,7 +128,8 @@ set network_start = unhex(@network_start),
     postal_code = nullif(@postal_code, ''),
     latitude = nullif(@latitude, ''),
     longitude = nullif(@longitude, ''),
-    accuracy_radius = nullif(@accuracy_radius, '');
+    accuracy_radius = nullif(@accuracy_radius, ''),
+    is_anycast = nullif(@is_anycast, '');
 ```
 
 We can load the converted IPv4 data in the same way:
@@ -137,7 +139,7 @@ load data infile '/var/lib/mysql-files/GeoIP2-City-Blocks-IPv4-Hex.csv'
 into table geoip2_network
 fields terminated by ',' enclosed by '"' lines terminated by '\n' ignore 1 rows
 (@network_start, @network_end, @geoname_id, @registered_country_geoname_id, @represented_country_geoname_id,
- @is_anonymous_proxy, @is_satellite_provider, @postal_code, @latitude, @longitude, @accuracy_radius)
+ @is_anonymous_proxy, @is_satellite_provider, @postal_code, @latitude, @longitude, @accuracy_radius, @is_anycast)
 set network_start = unhex(@network_start),
     network_end = unhex(@network_end),
     geoname_id = nullif(@geoname_id, ''),
@@ -148,7 +150,8 @@ set network_start = unhex(@network_start),
     postal_code = nullif(@postal_code, ''),
     latitude = nullif(@latitude, ''),
     longitude = nullif(@longitude, ''),
-    accuracy_radius = nullif(@accuracy_radius, '');
+    accuracy_radius = nullif(@accuracy_radius, ''),
+    is_anycast = nullif(@is_anycast, '');
 ```
 
 ### Test our table by querying it

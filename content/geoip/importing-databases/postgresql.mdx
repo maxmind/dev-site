@@ -75,7 +75,8 @@ create table geoip2_network (
   postal_code text,
   latitude numeric,
   longitude numeric,
-  accuracy_radius int
+  accuracy_radius int,
+  is_anycast bool
 );
 ```
 
@@ -87,14 +88,14 @@ We can now import the contents of `GeoIP2-City-Blocks-IPv4.csv` and
 ```sql
 \copy geoip2_network(
   network, geoname_id, registered_country_geoname_id, represented_country_geoname_id,
-  is_anonymous_proxy, is_satellite_provider, postal_code, latitude, longitude, accuracy_radius
+  is_anonymous_proxy, is_satellite_provider, postal_code, latitude, longitude, accuracy_radius, is_anycast
 ) from 'GeoIP2-City-Blocks-IPv4.csv' with (format csv, header);
 ```
 
 ```sql
 \copy geoip2_network(
   network, geoname_id, registered_country_geoname_id, represented_country_geoname_id,
-  is_anonymous_proxy, is_satellite_provider, postal_code, latitude, longitude, accuracy_radius
+  is_anonymous_proxy, is_satellite_provider, postal_code, latitude, longitude, accuracy_radius, is_anycast
 ) from 'GeoIP2-City-Blocks-IPv6.csv' with (format csv, header);
 ```
 
@@ -134,6 +135,7 @@ postal_code                    | 02118
 latitude                       | 42.3388
 longitude                      | -71.0726
 accuracy_radius                | 100
+is_anycast                     |
 
 Time: 514.003 ms
 ```
@@ -173,6 +175,7 @@ postal_code                    | 02118
 latitude                       | 42.3388
 longitude                      | -71.0726
 accuracy_radius                | 100
+is_anycast                     |
 
 Time: 9.671 ms
 ```
