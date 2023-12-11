@@ -170,11 +170,11 @@ limit 1;
 ```
 
 ```
-+------------+-------------------------------+--------------------------------+-------------+----------+-----------+-----------------+------------+
-| geoname_id | registered_country_geoname_id | represented_country_geoname_id | postal_code | latitude | longitude | accuracy_radius | is_anycast |
-+------------+-------------------------------+--------------------------------+-------------+----------+-----------+-----------------+------------+
-|    4930956 |                       6252001 |                           NULL | 02118       |  42.3388 |  -71.0726 |             100 |       NULL |
-+------------+-------------------------------+--------------------------------+-------------+----------+-----------+-----------------+------------+
++------------+-------------------------------+--------------------------------+-------------+----------+-----------+-----------------+
+| geoname_id | registered_country_geoname_id | represented_country_geoname_id | postal_code | latitude | longitude | accuracy_radius |
++------------+-------------------------------+--------------------------------+-------------+----------+-----------+-----------------+
+|    4930956 |                       6252001 |                           NULL | 02118       |  42.3388 |  -71.0726 |             100 |
++------------+-------------------------------+--------------------------------+-------------+----------+-----------+-----------------+
 1 row in set (6.16 sec)
 ```
 
@@ -210,7 +210,7 @@ database:
 
 ```sql
 select geoname_id, registered_country_geoname_id, represented_country_geoname_id,
-       postal_code, latitude, longitude, accuracy_radius, is_anycast
+       postal_code, latitude, longitude, accuracy_radius
 from geoip2_network
 where inet6_aton('127.0.0.1') between network_start and network_end
 order by network_end
@@ -228,7 +228,7 @@ that MySQL will be able to use the indexes we've created more efficiently:
 
 ```sql
 select geoname_id, registered_country_geoname_id, represented_country_geoname_id,
-       postal_code, latitude, longitude, accuracy_radius, is_anycast
+       postal_code, latitude, longitude, accuracy_radius
 from (
   select *
   from geoip2_network
@@ -240,17 +240,17 @@ where inet6_aton('146.243.121.22') <= network_end
 ```
 
 ```
-+------------+-------------------------------+--------------------------------+-------------+----------+-----------+-----------------+------------+
-| geoname_id | registered_country_geoname_id | represented_country_geoname_id | postal_code | latitude | longitude | accuracy_radius | is_anycast |
-+------------+-------------------------------+--------------------------------+-------------+----------+-----------+-----------------+------------+
-|    4930956 |                       6252001 |                           NULL | 02118       |  42.3388 |  -71.0726 |             100 |       NULL |
-+------------+-------------------------------+--------------------------------+-------------+----------+-----------+-----------------+------------+
++------------+-------------------------------+--------------------------------+-------------+----------+-----------+-----------------+
+| geoname_id | registered_country_geoname_id | represented_country_geoname_id | postal_code | latitude | longitude | accuracy_radius |
++------------+-------------------------------+--------------------------------+-------------+----------+-----------+-----------------+
+|    4930956 |                       6252001 |                           NULL | 02118       |  42.3388 |  -71.0726 |             100 |
++------------+-------------------------------+--------------------------------+-------------+----------+-----------+-----------------+
 1 row in set (0.00 sec)
 ```
 
 ```sql
 select geoname_id, registered_country_geoname_id, represented_country_geoname_id,
-       postal_code, latitude, longitude, accuracy_radius, is_anycast
+       postal_code, latitude, longitude, accuracy_radius
 from (
   select *
   from geoip2_network
