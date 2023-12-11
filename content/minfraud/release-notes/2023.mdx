@@ -7,6 +7,21 @@ title: minFraud Release Notes
 Subscribe to the [minFraud release notes RSS feed](/minfraud/release-notes/rss.xml).
 </Alert>
 
+<ReleaseNote date="2023-12-11" title="Session age input can be used as a parameter for custom rules">
+
+You can now use the `/device/session_age` input in minFraud custom rules.
+Session age can be used to detect patterns of device usage across multiple
+sessions to help determine risk. For example, short sessions may be a higher
+indicator of risk.
+
+You can select the session age input as a parameter in custom rules by selecting
+minFraud inputs > Session age when defining a new condition for a custom rule.
+
+- [Learn more about setting custom rule conditions on our Knowledge Base.](https://support.maxmind.com/hc/en-us/articles/4408362750875#h_01HBNQ01QST1MPM481ZW520R7J)
+- [Learn more about session inputs on our Knowledge Base.](https://support.maxmind.com/hc/en-us/articles/5444495353883-Device-Inputs#h_01G0YJ77MFVS4XW63W9G2Y1Y65)
+
+</ReleaseNote>
+
 <ReleaseNote date="2023-12-04" title="ISP output can be used as a parameter for custom rules">
 
 You can now use the `/ip_address/traits/isp` output in minFraud custom rules,

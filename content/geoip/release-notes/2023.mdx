@@ -7,6 +7,59 @@ title: GeoIP2 Release Notes
 Subscribe to the [GeoIP2 release notes RSS feed](/geoip/release-notes/rss.xml).
 </Alert>
 
+<ReleaseNote date="2023-12-11" title="Anycast flag available for GeoIP web services and databases">
+
+The Anycast data point is now available in all GeoIP web services and all MMDB
+format databases. This includes GeoIP Country, GeoIP City, and GeoIP Enterprise.
+
+For GeoIP web services and databases using the MMDB format, this is a
+non-breaking change. However, you may need to update to the latest version of
+your API to see the Anycast flag.
+
+For CSV databases (including GeoLite Country and City CSV databases), the
+Anycast flag will be released in the first database update after January
+17, 2024. In most cases, this should also be a non-breaking change if your
+integration can accommodate the addition of new fields. As a best practice, we
+recommend checking your integration to confirm.
+
+For more details, including what information the Anycast field will contain,
+please
+[read our previous release note on the Anycast flag](/geoip/release-notes/2023#anycast-flag-releasing-soon-for-geoip-web-services-and-databases).
+
+</ReleaseNote>
+
+<ReleaseNote date="2023-12-11" title="GeoNames Monthly Diff Report December 2023">
+[GeoNames Monthly Diff Report (December 2023)](/csv-files/GeoNames-Monthly-Diff-Report-December-2023.csv)
+
+GeoIP2 and GeoLite2 databases incorporate
+[GeoNames geographical data](https://www.geonames.org/), which is made available
+under the
+[Creative Commons Attribution 4.0 License](https://creativecommons.org/licenses/by/4.0/).
+
+Monthly updates to GeoNames data are incorporated into our databases as we
+refresh them. Above you will find a CSV report of these changes for the month of
+December as they relate to the following fields:
+
+- `geoname_id`
+- `country_name`
+- `country_code`
+- `city_name`
+- `subdivision_1_iso_code`
+- `subdivision_2_iso_code`
+
+Note that the values for the `old_` and `new_` columns for a given field only
+differ for the field defined in the `diff_in` column.
+
+\* In this month's update there are a larger than usual number of changes,
+including:
+
+- change of the `country_name` from `Turkey` to `Türkiye`
+- a number of Vietnamese locations updated to include non-ASCII characters (for
+  example, `Tinh Lam GJong` is now `Lâm Đồng Province`)
+- a large number of locations in Brazil and India have updated `geoname_id`s
+
+</ReleaseNote>
+
 <ReleaseNote date="2023-12-08" title="Update to Suddenlink ISP name">
 
 In the Friday, December 8 release of our ISP data, we will be changing the name
@@ -47,8 +100,8 @@ non-breaking change for MMDB format database users.
 
 The Anycast flag will be released in CSV format databases in mid-January, 2023.
 In most cases, the addition of a new field to CSV databases should also be a
-non-breaking change, but you should check your integration to make sure that the
-it can accomodate the addition of new fields.
+non-breaking change, but you should check your integration to make sure that it
+can accommodate the addition of new fields.
 
 The field will be present in the following GeoIP databases:
 
@@ -60,8 +113,8 @@ The field will be present in the following GeoIP databases:
 
 The Anycast field will also be added to the CSV version of GeoLite geolocation
 databases, but the new field will be blank. This will allow the GeoIP databases
-to continue to be drag-and-drop replacements for GeoLite databases, so that it's
-easy to upgrade. The field will be present in the following GeoLite databases:
+to continue to be drop in replacements for GeoLite databases, so that it's easy
+to upgrade. The field will be present in the following GeoLite databases:
 
 - GeoLite Country database
 - GeoLite City database

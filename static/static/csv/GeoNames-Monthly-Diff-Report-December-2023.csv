@@ -1,0 +1,1200 @@
+diff_in,old_geoname_id,new_geoname_id,old_city_name,new_city_name,old_country_name,new_country_name,old_country_code,new_country_code,old_subdivision_codes,new_subdivision_codes
+city_name,2497655,2497655,El M'Ghair,El Meghaïer,Algeria,Algeria,DZ,DZ,57,57
+city_name,3337531,3337531,County of Zagreb,Zagreb County,Croatia,Croatia,HR,HR,1,1
+city_name,359792,359792,Aswan,Aswān,Egypt,Egypt,EG,EG,ASN,ASN
+city_name,358631,358631,Burj al `Arab,Burj al 'Arab,Egypt,Egypt,EG,EG,ALX,ALX
+city_name,361546,361546,Arish,Al ‘Arīsh,Egypt,Egypt,EG,EG,SIN,SIN
+city_name,410142,410142,Bi'r al `Abd,Bi'r al 'Abd,Egypt,Egypt,EG,EG,SIN,SIN
+city_name,361495,361495,Al `Ayyat,Al 'Ayyat,Egypt,Egypt,EG,EG,GZ,GZ
+city_name,349156,349156,Shibîn el-Qanâṭir,Shibīn al Qanāţir,Egypt,Egypt,EG,EG,KB,KB
+city_name,336014,336014,Gondar,Gonder,Ethiopia,Ethiopia,ET,ET,AM,AM
+city_name,2953336,2953336,Bad Sooden-Allendor,Bad Sooden-Allendorf,Germany,Germany,DE,DE,HE,HE
+city_name,265040,265040,Andros,Chóra,Greece,Greece,GR,GR,"L, 82","L, 82"
+city_name,617510,617510,Răuţel,Răuțel,Moldova,Moldova,MD,MD,FA,FA
+city_name,617235,617235,Todireşti,Todirești,Moldova,Moldova,MD,MD,UN,UN
+city_name,284976,284976,`Anabta,Anabta,Palestine,Palestine,PS,PS,TKM,TKM
+city_name,2749343,2749343,Oostrum,Eastrum,The Netherlands,The Netherlands,NL,NL,FR,FR
+city_name,5807223,5807223,Port Gamble,Port Gamble Tribal Community,United States,United States,US,US,WA,WA
+city_name,1577882,1577882,Tinh Lam GJong,Lâm Đồng Province,Vietnam,Vietnam,VN,VN,35,35
+city_name,1568839,1568839,Tinh Quang Binh,Quảng Bình Province,Vietnam,Vietnam,VN,VN,24,24
+city_name,1905856,1905856,Tinh Vinh Phuc,Vĩnh Phúc Province,Vietnam,Vietnam,VN,VN,70,70
+city_name,1559969,1559969,Tinh Nghe An,Nghệ An Province,Vietnam,Vietnam,VN,VN,22,22
+city_name,1905419,1905419,Tinh Bac Giang,Bắc Giang Province,Vietnam,Vietnam,VN,VN,54,54
+city_name,1905475,1905475,Tinh Binh Duong,Bình Dương Province,Vietnam,Vietnam,VN,VN,57,57
+city_name,1584534,1584534,Tinh Ba Ria-Vung Tau,Bà Rịa–Vũng Tàu Province,Vietnam,Vietnam,VN,VN,43,43
+city_name,1905699,1905699,Tinh Hung Yen,Hưng Yên Province,Vietnam,Vietnam,VN,VN,66,66
+city_name,1559978,1559978,Tinh Yen Bai,Yên Bái Province,Vietnam,Vietnam,VN,VN,6,6
+city_name,1587974,1587974,Tinh Ben Tre,Bến Tre Province,Vietnam,Vietnam,VN,VN,50,50
+city_name,1579008,1579008,Tinh Kien Giang,Kiên Giang Province,Vietnam,Vietnam,VN,VN,47,47
+city_name,1905516,1905516,Tinh Quang Nam,Quảng Nam Province,Vietnam,Vietnam,VN,VN,27,27
+city_name,1582720,1582720,Tinh GJong Nai,Đồng Nai Province,Vietnam,Vietnam,VN,VN,39,39
+city_name,1567643,1567643,Tinh Son La,Sơn La Province,Vietnam,Vietnam,VN,VN,5,5
+city_name,1582562,1582562,Tinh GJong Thap,Đồng Tháp Province,Vietnam,Vietnam,VN,VN,45,45
+city_name,1566165,1566165,Tinh Thanh Hoa,Thanh Hóa Province,Vietnam,Vietnam,VN,VN,21,21
+city_name,1559977,1559977,Tinh Vinh Long,Vĩnh Long Province,Vietnam,Vietnam,VN,VN,49,49
+city_name,1569805,1569805,Tinh Phu Yen,Phú Yên Province,Vietnam,Vietnam,VN,VN,32,32
+city_name,1576632,1576632,Tinh Lang Son,Lạng Sơn Province,Vietnam,Vietnam,VN,VN,9,9
+city_name,1594446,1594446,An Giang,An Giang Province,Vietnam,Vietnam,VN,VN,44,44
+city_name,1905637,1905637,Tinh Ha Nam,Hà Nam Province,Vietnam,Vietnam,VN,VN,63,63
+country_name,745044,745044,Istanbul,Istanbul,Turkey,Türkiye,TR,TR,34,34
+country_name,315202,315202,Eskişehir,Eskişehir,Turkey,Türkiye,TR,TR,26,26
+country_name,299445,299445,Tekirova,Tekirova,Turkey,Türkiye,TR,TR,7,7
+country_name,738228,738228,Vakfıkebir,Vakfıkebir,Turkey,Türkiye,TR,TR,61,61
+country_name,298117,298117,Van,Van,Turkey,Türkiye,TR,TR,65,65
+country_name,751057,751057,Bartın,Bartın,Turkey,Türkiye,TR,TR,74,74
+country_name,318675,318675,Ceyhan,Ceyhan,Turkey,Türkiye,TR,TR,1,1
+country_name,8073960,8073960,Fener,Fener,Turkey,Türkiye,TR,TR,7,7
+country_name,322618,322618,Babadag,Babadag,Turkey,Türkiye,TR,TR,20,20
+country_name,742987,742987,Kızılırmak,Kızılırmak,Turkey,Türkiye,TR,TR,18,18
+country_name,318496,318496,Evren,Evren,Turkey,Türkiye,TR,TR,6,6
+country_name,301546,301546,Sariz,Sariz,Turkey,Türkiye,TR,TR,38,38
+country_name,310044,310044,Karacasu,Karacasu,Turkey,Türkiye,TR,TR,9,9
+country_name,298882,298882,Tufanbeyli,Tufanbeyli,Turkey,Türkiye,TR,TR,1,1
+country_name,304964,304964,Mahmutlar,Mahmutlar,Turkey,Türkiye,TR,TR,7,7
+country_name,309199,309199,Karayazi,Karayazi,Turkey,Türkiye,TR,TR,25,25
+country_name,311073,311073,Isparta,Isparta,Turkey,Türkiye,TR,TR,32,32
+country_name,312579,312579,Harbiye,Harbiye,Turkey,Türkiye,TR,TR,31,31
+country_name,308224,308224,Kemalpasa,Kemalpasa,Turkey,Türkiye,TR,TR,35,35
+country_name,323014,323014,Atca,Atca,Turkey,Türkiye,TR,TR,9,9
+country_name,752083,752083,Almus,Almus,Turkey,Türkiye,TR,TR,60,60
+country_name,9548074,9548074,Basiskele,Basiskele,Turkey,Türkiye,TR,TR,41,41
+country_name,7581673,7581673,Esenyurt,Esenyurt,Turkey,Türkiye,TR,TR,52,52
+country_name,298795,298795,,,Turkey,Türkiye,TR,TR,,
+country_name,310859,310859,Kahramanmaraş,Kahramanmaraş,Turkey,Türkiye,TR,TR,46,46
+country_name,323786,323786,Ankara,Ankara,Turkey,Türkiye,TR,TR,6,6
+country_name,748893,748893,Çorlu,Çorlu,Turkey,Türkiye,TR,TR,59,59
+country_name,321426,321426,Bergama,Bergama,Turkey,Türkiye,TR,TR,35,35
+country_name,747323,747323,Esenyurt,Esenyurt,Turkey,Türkiye,TR,TR,34,34
+country_name,325363,325363,Adana,Adana,Turkey,Türkiye,TR,TR,1,1
+country_name,7628419,7628419,Sultanbeyli,Sultanbeyli,Turkey,Türkiye,TR,TR,34,34
+country_name,308464,308464,Kayseri,Kayseri,Turkey,Türkiye,TR,TR,38,38
+country_name,750269,750269,Bursa,Bursa,Turkey,Türkiye,TR,TR,16,16
+country_name,750516,750516,Bolu,Bolu,Turkey,Türkiye,TR,TR,14,14
+country_name,311046,311046,Izmir,Izmir,Turkey,Türkiye,TR,TR,35,35
+country_name,7927370,7927370,Kolej,Kolej,Turkey,Türkiye,TR,TR,6,6
+country_name,308569,308569,Kayapinar,Kayapinar,Turkey,Türkiye,TR,TR,21,21
+country_name,321836,321836,Batman,Batman,Turkey,Türkiye,TR,TR,72,72
+country_name,316541,316541,Diyarbakır,Diyarbakır,Turkey,Türkiye,TR,TR,21,21
+country_name,316540,316540,,,Turkey,Türkiye,TR,TR,21,21
+country_name,10048770,10048770,Baglar,Baglar,Turkey,Türkiye,TR,TR,21,21
+country_name,309653,309653,Karakopru,Karakopru,Turkey,Türkiye,TR,TR,63,63
+country_name,311044,311044,,,Turkey,Türkiye,TR,TR,35,35
+country_name,323777,323777,Antalya,Antalya,Turkey,Türkiye,TR,TR,7,7
+country_name,323776,323776,,,Turkey,Türkiye,TR,TR,7,7
+country_name,305969,305969,Kucukcigli,Kucukcigli,Turkey,Türkiye,TR,TR,35,35
+country_name,296355,296355,Yukarikaraman,Yukarikaraman,Turkey,Türkiye,TR,TR,7,7
+country_name,305359,305359,Kusadasi,Kusadasi,Turkey,Türkiye,TR,TR,9,9
+country_name,322830,322830,Aydin,Aydin,Turkey,Türkiye,TR,TR,9,9
+country_name,320528,320528,Buca,Buca,Turkey,Türkiye,TR,TR,35,35
+country_name,740483,740483,Rize,Rize,Turkey,Türkiye,TR,TR,53,53
+country_name,306571,306571,Konya,Konya,Turkey,Türkiye,TR,TR,42,42
+country_name,323784,323784,,,Turkey,Türkiye,TR,TR,6,6
+country_name,9549747,9549747,Atakum,Atakum,Turkey,Türkiye,TR,TR,55,55
+country_name,304885,304885,Mamak,Mamak,Turkey,Türkiye,TR,TR,6,6
+country_name,296954,296954,Yenimahalle,Yenimahalle,Turkey,Türkiye,TR,TR,6,6
+country_name,739636,739636,Şile,Şile,Turkey,Türkiye,TR,TR,34,34
+country_name,300997,300997,Seyhan,Seyhan,Turkey,Türkiye,TR,TR,1,1
+country_name,751214,751214,Bakırköy,Bakırköy,Turkey,Türkiye,TR,TR,34,34
+country_name,740264,740264,Samsun,Samsun,Turkey,Türkiye,TR,TR,55,55
+country_name,300619,300619,Sivas,Sivas,Turkey,Türkiye,TR,TR,58,58
+country_name,298333,298333,Sanliurfa,Sanliurfa,Turkey,Türkiye,TR,TR,63,63
+country_name,303354,303354,Ortaca,Ortaca,Turkey,Türkiye,TR,TR,48,48
+country_name,299137,299137,Tire,Tire,Turkey,Türkiye,TR,TR,35,35
+country_name,738927,738927,Tekirdağ,Tekirdağ,Turkey,Türkiye,TR,TR,59,59
+country_name,296562,296562,Yozgat,Yozgat,Turkey,Türkiye,TR,TR,66,66
+country_name,314967,314967,Fethiye,Fethiye,Turkey,Türkiye,TR,TR,48,48
+country_name,317109,317109,Denizli,Denizli,Turkey,Türkiye,TR,TR,20,20
+country_name,303873,303873,Nazilli,Nazilli,Turkey,Türkiye,TR,TR,9,9
+country_name,306641,306641,Konak,Konak,Turkey,Türkiye,TR,TR,35,35
+country_name,298316,298316,Urla,Urla,Turkey,Türkiye,TR,TR,35,35
+country_name,308988,308988,Cordaleo,Cordaleo,Turkey,Türkiye,TR,TR,35,35
+country_name,296895,296895,Yerkoy,Yerkoy,Turkey,Türkiye,TR,TR,66,66
+country_name,320857,320857,Bornova,Bornova,Turkey,Türkiye,TR,TR,35,35
+country_name,297090,297090,Didim,Didim,Turkey,Türkiye,TR,TR,9,9
+country_name,743932,743932,Kartal,Kartal,Turkey,Türkiye,TR,TR,34,34
+country_name,737071,737071,Zeytinburnu,Zeytinburnu,Turkey,Türkiye,TR,TR,34,34
+country_name,742588,742588,Köseköy,Köseköy,Turkey,Türkiye,TR,TR,41,41
+country_name,322165,322165,Balıkesir,Balıkesir,Turkey,Türkiye,TR,TR,10,10
+country_name,6947639,6947639,Basaksehir,Basaksehir,Turkey,Türkiye,TR,TR,34,34
+country_name,6692058,6692058,Karatay,Karatay,Turkey,Türkiye,TR,TR,42,42
+country_name,320995,320995,Bodrum,Bodrum,Turkey,Türkiye,TR,TR,48,48
+country_name,320392,320392,Burdur,Burdur,Turkey,Türkiye,TR,TR,15,15
+country_name,737022,737022,Zonguldak,Zonguldak,Turkey,Türkiye,TR,TR,67,67
+country_name,740006,740006,Sarıyer,Sarıyer,Turkey,Türkiye,TR,TR,34,34
+country_name,745042,745042,,,Turkey,Türkiye,TR,TR,34,34
+country_name,315201,315201,,,Turkey,Türkiye,TR,TR,26,26
+country_name,739788,739788,Serdivan,Serdivan,Turkey,Türkiye,TR,TR,54,54
+country_name,742394,742394,Küçükçekmece,Küçükçekmece,Turkey,Türkiye,TR,TR,34,34
+country_name,314826,314826,Gaziemir,Gaziemir,Turkey,Türkiye,TR,TR,35,35
+country_name,325426,325426,Acipayam,Acipayam,Turkey,Türkiye,TR,TR,20,20
+country_name,314830,314830,Gaziantep,Gaziantep,Turkey,Türkiye,TR,TR,27,27
+country_name,304531,304531,Mersin,Mersin,Turkey,Türkiye,TR,TR,33,33
+country_name,307727,307727,Kiraz,Kiraz,Turkey,Türkiye,TR,TR,35,35
+country_name,738648,738648,Trabzon,Trabzon,Turkey,Türkiye,TR,TR,61,61
+country_name,744906,744906,Kadıköy,Kadıköy,Turkey,Türkiye,TR,TR,34,34
+country_name,7628420,7628420,Sancaktepe,Sancaktepe,Turkey,Türkiye,TR,TR,34,34
+country_name,741763,741763,Maltepe,Maltepe,Turkey,Türkiye,TR,TR,34,34
+country_name,745028,745028,İzmit,İzmit,Turkey,Türkiye,TR,TR,41,41
+country_name,747014,747014,Gebze,Gebze,Turkey,Türkiye,TR,TR,41,41
+country_name,746666,746666,Gölcük,Gölcük,Turkey,Türkiye,TR,TR,41,41
+country_name,304797,304797,Mardin,Mardin,Turkey,Türkiye,TR,TR,47,47
+country_name,300748,300748,Sincan,Sincan,Turkey,Türkiye,TR,TR,6,6
+country_name,6955677,6955677,Cankaya,Cankaya,Turkey,Türkiye,TR,TR,6,6
+country_name,312289,312289,Haymana,Haymana,Turkey,Türkiye,TR,TR,6,6
+country_name,747340,747340,Esenler,Esenler,Turkey,Türkiye,TR,TR,34,34
+country_name,324190,324190,Alanya,Alanya,Turkey,Türkiye,TR,TR,7,7
+country_name,304854,304854,Manavgat,Manavgat,Turkey,Türkiye,TR,TR,7,7
+country_name,309647,309647,Ağrı,Ağrı,Turkey,Türkiye,TR,TR,4,4
+country_name,308335,308335,Kecioeren,Kecioeren,Turkey,Türkiye,TR,TR,6,6
+country_name,325330,325330,Adıyaman,Adıyaman,Turkey,Türkiye,TR,TR,2,2
+country_name,304922,304922,Malatya,Malatya,Turkey,Türkiye,TR,TR,44,44
+country_name,315808,315808,Elâzığ,Elâzığ,Turkey,Türkiye,TR,TR,23,23
+country_name,752015,752015,Amasya,Amasya,Turkey,Türkiye,TR,TR,5,5
+country_name,315368,315368,Erzurum,Erzurum,Turkey,Türkiye,TR,TR,25,25
+country_name,741100,741100,Ordu,Ordu,Turkey,Türkiye,TR,TR,52,52
+country_name,323828,323828,Anamur,Anamur,Turkey,Türkiye,TR,TR,33,33
+country_name,303195,303195,Osmaniye,Osmaniye,Turkey,Türkiye,TR,TR,80,80
+country_name,746881,746881,Giresun,Giresun,Turkey,Türkiye,TR,TR,28,28
+country_name,307654,307654,Kirikkale,Kirikkale,Turkey,Türkiye,TR,TR,71,71
+country_name,302525,302525,Polatlı,Polatlı,Turkey,Türkiye,TR,TR,6,6
+country_name,323933,323933,Altindag,Altindag,Turkey,Türkiye,TR,TR,6,6
+country_name,738743,738743,Tokat Province,Tokat Province,Turkey,Türkiye,TR,TR,60,60
+country_name,747712,747712,Edirne,Edirne,Turkey,Türkiye,TR,TR,22,22
+country_name,751077,751077,Panderma,Panderma,Turkey,Türkiye,TR,TR,10,10
+country_name,751558,751558,Avcılar,Avcılar,Turkey,Türkiye,TR,TR,34,34
+country_name,739549,739549,Şişli,Şişli,Turkey,Türkiye,TR,TR,34,34
+country_name,747471,747471,Bender Eregli,Bender Eregli,Turkey,Türkiye,TR,TR,67,67
+country_name,10345207,10345207,Odunpazari,Odunpazari,Turkey,Türkiye,TR,TR,26,26
+country_name,325303,325303,Afyonkarahisar,Afyonkarahisar,Turkey,Türkiye,TR,TR,3,3
+country_name,750662,750662,Beykoz,Beykoz,Turkey,Türkiye,TR,TR,34,34
+country_name,11238838,11238838,Merkezefendi,Merkezefendi,Turkey,Türkiye,TR,TR,20,20
+country_name,312001,312001,Selcuklu,Selcuklu,Turkey,Türkiye,TR,TR,42,42
+country_name,738025,738025,Yalova,Yalova,Turkey,Türkiye,TR,TR,77,77
+country_name,738549,738549,Tuzla,Tuzla,Turkey,Türkiye,TR,TR,34,34
+country_name,315373,315373,Erzincan,Erzincan,Turkey,Türkiye,TR,TR,24,24
+country_name,748870,748870,Çubuk,Çubuk,Turkey,Türkiye,TR,TR,6,6
+country_name,304782,304782,Marmaris,Marmaris,Turkey,Türkiye,TR,TR,48,48
+country_name,308463,308463,,,Turkey,Türkiye,TR,TR,38,38
+country_name,315972,315972,Kocasinan,Kocasinan,Turkey,Türkiye,TR,TR,38,38
+country_name,314133,314133,Golbasi,Golbasi,Turkey,Türkiye,TR,TR,6,6
+country_name,740616,740616,Pendik,Pendik,Turkey,Türkiye,TR,TR,34,34
+country_name,308220,308220,Kemer,Kemer,Turkey,Türkiye,TR,TR,7,7
+country_name,323779,323779,Antakya,Antakya,Turkey,Türkiye,TR,TR,31,31
+country_name,311728,311728,,,Turkey,Türkiye,TR,TR,33,33
+country_name,746574,746574,Gönen,Gönen,Turkey,Türkiye,TR,TR,10,10
+country_name,307864,307864,Kilis,Kilis,Turkey,Türkiye,TR,TR,79,79
+country_name,11282178,11282178,Kartepe,Kartepe,Turkey,Türkiye,TR,TR,41,41
+country_name,304827,304827,Magnesia ad Sipylum,Magnesia ad Sipylum,Turkey,Türkiye,TR,TR,45,45
+country_name,748879,748879,Çorum,Çorum,Turkey,Türkiye,TR,TR,19,19
+country_name,747458,747458,Erenler,Erenler,Turkey,Türkiye,TR,TR,34,34
+country_name,304612,304612,Menemen,Menemen,Turkey,Türkiye,TR,TR,35,35
+country_name,10346824,10346824,Nilufer,Nilufer,Turkey,Türkiye,TR,TR,16,16
+country_name,6947637,6947637,Atasehir,Atasehir,Turkey,Türkiye,TR,TR,34,34
+country_name,309527,309527,Karaman,Karaman,Turkey,Türkiye,TR,TR,70,70
+country_name,752627,752627,Akçaabat,Akçaabat,Turkey,Türkiye,TR,TR,61,61
+country_name,750872,750872,Bayrampaşa,Bayrampaşa,Turkey,Türkiye,TR,TR,34,34
+country_name,447273,447273,Dalaman,Dalaman,Turkey,Türkiye,TR,TR,48,48
+country_name,744687,744687,Kapaklı,Kapaklı,Turkey,Türkiye,TR,TR,59,59
+country_name,743166,743166,Kırklareli,Kırklareli,Turkey,Türkiye,TR,TR,39,39
+country_name,747158,747158,Fatih,Fatih,Turkey,Türkiye,TR,TR,34,34
+country_name,296852,296852,Erzin,Erzin,Turkey,Türkiye,TR,TR,31,31
+country_name,737421,737421,Yomra,Yomra,Turkey,Türkiye,TR,TR,61,61
+country_name,300640,300640,Sirnak,Sirnak,Turkey,Türkiye,TR,TR,73,73
+country_name,318253,318253,Cizre,Cizre,Turkey,Türkiye,TR,TR,73,73
+country_name,751817,751817,Artvin,Artvin,Turkey,Türkiye,TR,TR,8,8
+country_name,749274,749274,Çerkezköy,Çerkezköy,Turkey,Türkiye,TR,TR,59,59
+country_name,747764,747764,Düzce,Düzce,Turkey,Türkiye,TR,TR,81,81
+country_name,749780,749780,Çanakkale,Çanakkale,Turkey,Türkiye,TR,TR,17,17
+country_name,739600,739600,Sinop,Sinop,Turkey,Türkiye,TR,TR,57,57
+country_name,739251,739251,Suluova,Suluova,Turkey,Türkiye,TR,TR,5,5
+country_name,7628416,7628416,Sultangazi,Sultangazi,Turkey,Türkiye,TR,TR,34,34
+country_name,306570,306570,Konyaalti,Konyaalti,Turkey,Türkiye,TR,TR,7,7
+country_name,301101,301101,Serik,Serik,Turkey,Türkiye,TR,TR,7,7
+country_name,296791,296791,Yesilyurt,Yesilyurt,Turkey,Türkiye,TR,TR,44,44
+country_name,299900,299900,Talas,Talas,Turkey,Türkiye,TR,TR,38,38
+country_name,303827,303827,Niğde,Niğde,Turkey,Türkiye,TR,TR,51,51
+country_name,746958,746958,Gemlik,Gemlik,Turkey,Türkiye,TR,TR,16,16
+country_name,750598,750598,Bilecik,Bilecik,Turkey,Türkiye,TR,TR,11,11
+country_name,315639,315639,Emet,Emet,Turkey,Türkiye,TR,TR,43,43
+country_name,388147,388147,Merkez,Merkez,Turkey,Türkiye,TR,TR,33,33
+country_name,304184,304184,Mugla,Mugla,Turkey,Türkiye,TR,TR,48,48
+country_name,749748,749748,Çankırı,Çankırı,Turkey,Türkiye,TR,TR,18,18
+country_name,315155,315155,Etimesgut,Etimesgut,Turkey,Türkiye,TR,TR,6,6
+country_name,298299,298299,Uşak,Uşak,Turkey,Türkiye,TR,TR,64,64
+country_name,743952,743952,Kars,Kars,Turkey,Türkiye,TR,TR,36,36
+country_name,324496,324496,Aksaray,Aksaray,Turkey,Türkiye,TR,TR,68,68
+country_name,302903,302903,Pamukkale,Pamukkale,Turkey,Türkiye,TR,TR,20,20
+country_name,317851,317851,Menderes,Menderes,Turkey,Türkiye,TR,TR,35,35
+country_name,325361,325361,,,Turkey,Türkiye,TR,TR,1,1
+country_name,740205,740205,Saray,Saray,Turkey,Türkiye,TR,TR,59,59
+country_name,741855,741855,Lüleburgaz,Lüleburgaz,Turkey,Türkiye,TR,TR,39,39
+country_name,315720,315720,Elmadag,Elmadag,Turkey,Türkiye,TR,TR,6,6
+country_name,7732576,7732576,Okmeydani,Okmeydani,Turkey,Türkiye,TR,TR,34,34
+country_name,740883,740883,Osmancık,Osmancık,Turkey,Türkiye,TR,TR,19,19
+country_name,9542263,9542263,Toroslar,Toroslar,Turkey,Türkiye,TR,TR,33,33
+country_name,303750,303750,Nisibis,Nisibis,Turkey,Türkiye,TR,TR,47,47
+country_name,744814,744814,Kalecik,Kalecik,Turkey,Türkiye,TR,TR,6,6
+country_name,741099,741099,Orduköy,Orduköy,Turkey,Türkiye,TR,TR,55,55
+country_name,738618,738618,Turhal,Turhal,Turkey,Türkiye,TR,TR,60,60
+country_name,303905,303905,Narlidere,Narlidere,Turkey,Türkiye,TR,TR,35,35
+country_name,741771,741771,Malkara,Malkara,Turkey,Türkiye,TR,TR,59,59
+country_name,8074174,8074174,Muratpasa,Muratpasa,Turkey,Türkiye,TR,TR,7,7
+country_name,741487,741487,Mudanya,Mudanya,Turkey,Türkiye,TR,TR,16,16
+country_name,752850,752850,Adapazarı,Adapazarı,Turkey,Türkiye,TR,TR,54,54
+country_name,750733,750733,Beşiktaş,Beşiktaş,Turkey,Türkiye,TR,TR,34,34
+country_name,321025,321025,Bitlis,Bitlis,Turkey,Türkiye,TR,TR,13,13
+country_name,321191,321191,Beysehir,Beysehir,Turkey,Türkiye,TR,TR,42,42
+country_name,322673,322673,Aivali,Aivali,Turkey,Türkiye,TR,TR,10,10
+country_name,741793,741793,Mahmut Sevket Pasa,Mahmut Sevket Pasa,Turkey,Türkiye,TR,TR,34,34
+country_name,324476,324476,Aksu,Aksu,Turkey,Türkiye,TR,TR,7,7
+country_name,304582,304582,Meram,Meram,Turkey,Türkiye,TR,TR,42,42
+country_name,738803,738803,Terme,Terme,Turkey,Türkiye,TR,TR,55,55
+country_name,740511,740511,Pursaklar,Pursaklar,Turkey,Türkiye,TR,TR,6,6
+country_name,307515,307515,Kırşehir,Kırşehir,Turkey,Türkiye,TR,TR,40,40
+country_name,7701384,7701384,Karabaglar,Karabaglar,Turkey,Türkiye,TR,TR,35,35
+country_name,10400338,10400338,UEmraniye,UEmraniye,Turkey,Türkiye,TR,TR,34,34
+country_name,738377,738377,Umraniye,Umraniye,Turkey,Türkiye,TR,TR,34,34
+country_name,10331001,10331001,Palandoken,Palandoken,Turkey,Türkiye,TR,TR,25,25
+country_name,299817,299817,Tarsus,Tarsus,Turkey,Türkiye,TR,TR,33,33
+country_name,750637,750637,Beypazarı,Beypazarı,Turkey,Türkiye,TR,TR,6,6
+country_name,310403,310403,Yenisehir,Yenisehir,Turkey,Türkiye,TR,TR,33,33
+country_name,315515,315515,Erdemli,Erdemli,Turkey,Türkiye,TR,TR,33,33
+country_name,321337,321337,Besni,Besni,Turkey,Türkiye,TR,TR,2,2
+country_name,304561,304561,Akdeniz,Akdeniz,Turkey,Türkiye,TR,TR,33,33
+country_name,750640,750640,Beyoğlu,Beyoğlu,Turkey,Türkiye,TR,TR,34,34
+country_name,300399,300399,Soeke,Soeke,Turkey,Türkiye,TR,TR,9,9
+country_name,318668,318668,Ceylanpinar,Ceylanpinar,Turkey,Türkiye,TR,TR,63,63
+country_name,298806,298806,Turgutlu,Turgutlu,Turkey,Türkiye,TR,TR,45,45
+country_name,303831,303831,Nevşehir,Nevşehir,Turkey,Türkiye,TR,TR,50,50
+country_name,743882,743882,Kastamonu,Kastamonu,Turkey,Türkiye,TR,TR,37,37
+country_name,745175,745175,İnebolu,İnebolu,Turkey,Türkiye,TR,TR,37,37
+country_name,300822,300822,Siirt,Siirt,Turkey,Türkiye,TR,TR,56,56
+country_name,10048815,10048815,Yenisehir,Yenisehir,Turkey,Türkiye,TR,TR,21,21
+country_name,302043,302043,Salihli,Salihli,Turkey,Türkiye,TR,TR,45,45
+country_name,311111,311111,İskenderun,İskenderun,Turkey,Türkiye,TR,TR,31,31
+country_name,310641,310641,Kaman,Kaman,Turkey,Türkiye,TR,TR,40,40
+country_name,324172,324172,Alaşehir,Alaşehir,Turkey,Türkiye,TR,TR,45,45
+country_name,751949,751949,Ardeşen,Ardeşen,Turkey,Türkiye,TR,TR,53,53
+country_name,299545,299545,Tavsanli,Tavsanli,Turkey,Türkiye,TR,TR,43,43
+country_name,740675,740675,Pazar,Pazar,Turkey,Türkiye,TR,TR,53,53
+country_name,302819,302819,Patnos,Patnos,Turkey,Türkiye,TR,TR,4,4
+country_name,298846,298846,Tunceli,Tunceli,Turkey,Türkiye,TR,TR,62,62
+country_name,298435,298435,Arsuz,Arsuz,Turkey,Türkiye,TR,TR,31,31
+country_name,747489,747489,Erbaa,Erbaa,Turkey,Türkiye,TR,TR,60,60
+country_name,740430,740430,Safranbolu,Safranbolu,Turkey,Türkiye,TR,TR,78,78
+country_name,300791,300791,Simav,Simav,Turkey,Türkiye,TR,TR,43,43
+country_name,302355,302355,Reyhanli,Reyhanli,Turkey,Türkiye,TR,TR,31,31
+country_name,7569266,7569266,Guce,Guce,Turkey,Türkiye,TR,TR,28,28
+country_name,311665,311665,Iğdır,Iğdır,Turkey,Türkiye,TR,TR,76,76
+country_name,738662,738662,Tosya,Tosya,Turkey,Türkiye,TR,TR,37,37
+country_name,750317,750317,Bulancak,Bulancak,Turkey,Türkiye,TR,TR,28,28
+country_name,310855,310855,Kahta,Kahta,Turkey,Türkiye,TR,TR,2,2
+country_name,310892,310892,Kadirli,Kadirli,Turkey,Türkiye,TR,TR,80,80
+country_name,307084,307084,Kiziltepe,Kiziltepe,Turkey,Türkiye,TR,TR,47,47
+country_name,751371,751371,Babaeski,Babaeski,Turkey,Türkiye,TR,TR,39,39
+country_name,300352,300352,Sorgun,Sorgun,Turkey,Türkiye,TR,TR,66,66
+country_name,7669106,7669106,Aksaray,Aksaray,Turkey,Türkiye,TR,TR,34,34
+country_name,322965,322965,Avanos,Avanos,Turkey,Türkiye,TR,TR,50,50
+country_name,299582,299582,Tatvan,Tatvan,Turkey,Türkiye,TR,TR,13,13
+country_name,316046,316046,Duzce,Duzce,Turkey,Türkiye,TR,TR,58,58
+country_name,303700,303700,OEdemis,OEdemis,Turkey,Türkiye,TR,TR,35,35
+country_name,747184,747184,Eyüpsultan,Eyüpsultan,Turkey,Türkiye,TR,TR,34,34
+country_name,298433,298433,Uludere,Uludere,Turkey,Türkiye,TR,TR,73,73
+country_name,315183,315183,Esme,Esme,Turkey,Türkiye,TR,TR,64,64
+country_name,300797,300797,Silopi,Silopi,Turkey,Türkiye,TR,TR,73,73
+country_name,314716,314716,Gediz,Gediz,Turkey,Türkiye,TR,TR,43,43
+country_name,312405,312405,Hassa,Hassa,Turkey,Türkiye,TR,TR,31,31
+country_name,752284,752284,Akyurt,Akyurt,Turkey,Türkiye,TR,TR,6,6
+country_name,320557,320557,Bozuyuk,Bozuyuk,Turkey,Türkiye,TR,TR,11,11
+country_name,751335,751335,Bafra,Bafra,Turkey,Türkiye,TR,TR,55,55
+country_name,300808,300808,Silifke,Silifke,Turkey,Türkiye,TR,TR,33,33
+country_name,306112,306112,Kozan,Kozan,Turkey,Türkiye,TR,TR,1,1
+country_name,305681,305681,Kumluca,Kumluca,Turkey,Türkiye,TR,TR,7,7
+country_name,747155,747155,Fatsa,Fatsa,Turkey,Türkiye,TR,TR,52,52
+country_name,750938,750938,Bayburt,Bayburt,Turkey,Türkiye,TR,TR,69,69
+country_name,321743,321743,Bayrakli,Bayrakli,Turkey,Türkiye,TR,TR,35,35
+country_name,308948,308948,Kas,Kas,Turkey,Türkiye,TR,TR,7,7
+country_name,304642,304642,Melikgazi,Melikgazi,Turkey,Türkiye,TR,TR,38,38
+country_name,6686860,6686860,Eryaman,Eryaman,Turkey,Türkiye,TR,TR,6,6
+country_name,738907,738907,Tekkeköy,Tekkeköy,Turkey,Türkiye,TR,TR,55,55
+country_name,739209,739209,Suşehri,Suşehri,Turkey,Türkiye,TR,TR,58,58
+country_name,743537,743537,Kelkit,Kelkit,Turkey,Türkiye,TR,TR,29,29
+country_name,740881,740881,Osmaneli,Osmaneli,Turkey,Türkiye,TR,TR,11,11
+country_name,738349,738349,Ünye,Ünye,Turkey,Türkiye,TR,TR,52,52
+country_name,745530,745530,Hopa,Hopa,Turkey,Türkiye,TR,TR,8,8
+country_name,300371,300371,Soma,Soma,Turkey,Türkiye,TR,TR,45,45
+country_name,737500,737500,Yıldırım,Yıldırım,Turkey,Türkiye,TR,TR,16,16
+country_name,741609,741609,Merzifon,Merzifon,Turkey,Türkiye,TR,TR,5,5
+country_name,10402306,10402306,Altinordu,Altinordu,Turkey,Türkiye,TR,TR,52,52
+country_name,301770,301770,Saricam,Saricam,Turkey,Türkiye,TR,TR,1,1
+country_name,301256,301256,Selcuk,Selcuk,Turkey,Türkiye,TR,TR,35,35
+country_name,312114,312114,Hinis,Hinis,Turkey,Türkiye,TR,TR,25,25
+country_name,304081,304081,Muş,Muş,Turkey,Türkiye,TR,TR,49,49
+country_name,741385,741385,Mustafakemalpaşa,Mustafakemalpaşa,Turkey,Türkiye,TR,TR,16,16
+country_name,308572,308572,Kayapinar,Kayapinar,Turkey,Türkiye,TR,TR,72,72
+country_name,744168,744168,Karamürsel,Karamürsel,Turkey,Türkiye,TR,TR,41,41
+country_name,307657,307657,Kirikhan,Kirikhan,Turkey,Türkiye,TR,TR,31,31
+country_name,304013,304013,Mut,Mut,Turkey,Türkiye,TR,TR,33,33
+country_name,319171,319171,Cavdarhisar,Cavdarhisar,Turkey,Türkiye,TR,TR,43,43
+country_name,298935,298935,Torbali,Torbali,Turkey,Türkiye,TR,TR,35,35
+country_name,296137,296137,Ayas,Ayas,Turkey,Türkiye,TR,TR,1,1
+country_name,742437,742437,Kozlu,Kozlu,Turkey,Türkiye,TR,TR,67,67
+country_name,738390,738390,Ulus,Ulus,Turkey,Türkiye,TR,TR,74,74
+country_name,312531,312531,Harran,Harran,Turkey,Türkiye,TR,TR,63,63
+country_name,311962,311962,Chonai,Chonai,Turkey,Türkiye,TR,TR,20,20
+country_name,746913,746913,Gerze,Gerze,Turkey,Türkiye,TR,TR,57,57
+country_name,739634,739634,Siliviri,Siliviri,Turkey,Türkiye,TR,TR,34,34
+country_name,739887,739887,Şehremini,Şehremini,Turkey,Türkiye,TR,TR,34,34
+country_name,321572,321572,Belen,Belen,Turkey,Türkiye,TR,TR,31,31
+country_name,299268,299268,Tercan,Tercan,Turkey,Türkiye,TR,TR,24,24
+country_name,745527,745527,Horasan,Horasan,Turkey,Türkiye,TR,TR,25,25
+country_name,323906,323906,Altinoezue,Altinoezue,Turkey,Türkiye,TR,TR,31,31
+country_name,746565,746565,Görele,Görele,Turkey,Türkiye,TR,TR,28,28
+country_name,739236,739236,Sungurlu,Sungurlu,Turkey,Türkiye,TR,TR,19,19
+country_name,316411,316411,Doğubeyazıt,Doğubeyazıt,Turkey,Türkiye,TR,TR,4,4
+country_name,744876,744876,Kâğıthane,Kâğıthane,Turkey,Türkiye,TR,TR,34,34
+country_name,304382,304382,Midyat,Midyat,Turkey,Türkiye,TR,TR,47,47
+country_name,299575,299575,Tavas,Tavas,Turkey,Türkiye,TR,TR,20,20
+country_name,749704,749704,Çarşamba,Çarşamba,Turkey,Türkiye,TR,TR,55,55
+country_name,747482,747482,Erdek,Erdek,Turkey,Türkiye,TR,TR,10,10
+country_name,315985,315985,Edremit,Edremit,Turkey,Türkiye,TR,TR,10,10
+country_name,749279,749279,Çerkeş,Çerkeş,Turkey,Türkiye,TR,TR,18,18
+country_name,752278,752278,Alaca,Alaca,Turkey,Türkiye,TR,TR,19,19
+country_name,319104,319104,Cay,Cay,Turkey,Türkiye,TR,TR,3,3
+country_name,10332081,10332081,Yakutiye,Yakutiye,Turkey,Türkiye,TR,TR,25,25
+country_name,442301,442301,Batikent,Batikent,Turkey,Türkiye,TR,TR,6,6
+country_name,324698,324698,Akhisar,Akhisar,Turkey,Türkiye,TR,TR,45,45
+country_name,315401,315401,Ermenek,Ermenek,Turkey,Türkiye,TR,TR,70,70
+country_name,304355,304355,Milas,Milas,Turkey,Türkiye,TR,TR,48,48
+country_name,747459,747459,Erenler,Erenler,Turkey,Türkiye,TR,TR,54,54
+country_name,750468,750468,Boyabat,Boyabat,Turkey,Türkiye,TR,TR,57,57
+country_name,746940,746940,Gerede,Gerede,Turkey,Türkiye,TR,TR,14,14
+country_name,751952,751952,Ardahan,Ardahan,Turkey,Türkiye,TR,TR,75,75
+country_name,10375669,10375669,Merkez,Merkez,Turkey,Türkiye,TR,TR,17,17
+country_name,316726,316726,Dikili,Dikili,Turkey,Türkiye,TR,TR,35,35
+country_name,746426,746426,Gümüşhacıköy,Gümüşhacıköy,Turkey,Türkiye,TR,TR,5,5
+country_name,303798,303798,Nizip,Nizip,Turkey,Türkiye,TR,TR,27,27
+country_name,316795,316795,Develi,Develi,Turkey,Türkiye,TR,TR,38,38
+country_name,297899,297899,Payas,Payas,Turkey,Türkiye,TR,TR,31,31
+country_name,738329,738329,Skutari,Skutari,Turkey,Türkiye,TR,TR,34,34
+country_name,321031,321031,Bismil,Bismil,Turkey,Türkiye,TR,TR,21,21
+country_name,747090,747090,Fındıklı,Fındıklı,Turkey,Türkiye,TR,TR,53,53
+country_name,750605,750605,Biga,Biga,Turkey,Türkiye,TR,TR,17,17
+country_name,751516,751516,Ayancık,Ayancık,Turkey,Türkiye,TR,TR,57,57
+country_name,314903,314903,Foça,Foça,Turkey,Türkiye,TR,TR,35,35
+country_name,741045,741045,Orhangazi,Orhangazi,Turkey,Türkiye,TR,TR,16,16
+country_name,306194,306194,Koycegiz,Koycegiz,Turkey,Türkiye,TR,TR,48,48
+country_name,317543,317543,Datca,Datca,Turkey,Türkiye,TR,TR,48,48
+country_name,320437,320437,Buldan,Buldan,Turkey,Türkiye,TR,TR,20,20
+country_name,324106,324106,Aliaga,Aliaga,Turkey,Türkiye,TR,TR,35,35
+country_name,751922,751922,Arifiye,Arifiye,Turkey,Türkiye,TR,TR,54,54
+country_name,7457829,7457829,Battalgazi,Battalgazi,Turkey,Türkiye,TR,TR,44,44
+country_name,312394,312394,,,Turkey,Türkiye,TR,TR,31,31
+country_name,306474,306474,Korkuteli,Korkuteli,Turkey,Türkiye,TR,TR,7,7
+country_name,744537,744537,Karacabey,Karacabey,Turkey,Türkiye,TR,TR,16,16
+country_name,297917,297917,Yahyalı,Yahyalı,Turkey,Türkiye,TR,TR,38,38
+country_name,737054,737054,Zile,Zile,Turkey,Türkiye,TR,TR,60,60
+country_name,298454,298454,Ulubey,Ulubey,Turkey,Türkiye,TR,TR,64,64
+country_name,300273,300273,Suhut,Suhut,Turkey,Türkiye,TR,TR,3,3
+country_name,749644,749644,Çatalca,Çatalca,Turkey,Türkiye,TR,TR,34,34
+country_name,744092,744092,Karasu,Karasu,Turkey,Türkiye,TR,TR,54,54
+country_name,8140653,8140653,Cumayeri,Cumayeri,Turkey,Türkiye,TR,TR,81,81
+country_name,740729,740729,Pamukova,Pamukova,Turkey,Türkiye,TR,TR,54,54
+country_name,314136,314136,Golbasi,Golbasi,Turkey,Türkiye,TR,TR,2,2
+country_name,311553,311553,Ilgin,Ilgin,Turkey,Türkiye,TR,TR,42,42
+country_name,741240,741240,Of,Of,Turkey,Türkiye,TR,TR,61,61
+country_name,740570,740570,Pınarhisar,Pınarhisar,Turkey,Türkiye,TR,TR,39,39
+country_name,738154,738154,Vize,Vize,Turkey,Türkiye,TR,TR,39,39
+country_name,743051,743051,Kızılcahamam,Kızılcahamam,Turkey,Türkiye,TR,TR,6,6
+country_name,739015,739015,Taşova,Taşova,Turkey,Türkiye,TR,TR,5,5
+country_name,747375,747375,Esbiye,Esbiye,Turkey,Türkiye,TR,TR,28,28
+country_name,295781,295781,Demre,Demre,Turkey,Türkiye,TR,TR,7,7
+country_name,748636,748636,Darıca,Darıca,Turkey,Türkiye,TR,TR,41,41
+country_name,318137,318137,Hakkari,Hakkari,Turkey,Türkiye,TR,TR,30,30
+country_name,319458,319458,Cankaya,Cankaya,Turkey,Türkiye,TR,TR,47,47
+country_name,749387,749387,Çekmeköy,Çekmeköy,Turkey,Türkiye,TR,TR,34,34
+country_name,10179841,10179841,Karabaglar,Karabaglar,Turkey,Türkiye,TR,TR,9,9
+country_name,322185,322185,Balcova,Balcova,Turkey,Türkiye,TR,TR,35,35
+country_name,304418,304418,Mezitli,Mezitli,Turkey,Türkiye,TR,TR,33,33
+country_name,9888715,9888715,Aydin,Aydin,Turkey,Türkiye,TR,TR,35,35
+country_name,7627606,7627606,Bahcesehir,Bahcesehir,Turkey,Türkiye,TR,TR,34,34
+country_name,752288,752288,Akyazı,Akyazı,Turkey,Türkiye,TR,TR,54,54
+country_name,300058,300058,Susurluk,Susurluk,Turkey,Türkiye,TR,TR,10,10
+country_name,744716,744716,Kandıra,Kandıra,Turkey,Türkiye,TR,TR,41,41
+country_name,746180,746180,Çayırova,Çayırova,Turkey,Türkiye,TR,TR,41,41
+country_name,305810,305810,Kula,Kula,Turkey,Türkiye,TR,TR,45,45
+country_name,743404,743404,Kestel,Kestel,Turkey,Türkiye,TR,TR,16,16
+country_name,745148,745148,İpsala,İpsala,Turkey,Türkiye,TR,TR,22,22
+country_name,317106,317106,,,Turkey,Türkiye,TR,TR,20,20
+country_name,317496,317496,Dazkiri,Dazkiri,Turkey,Türkiye,TR,TR,3,3
+country_name,320369,320369,Burhaniye,Burhaniye,Turkey,Türkiye,TR,TR,10,10
+country_name,320552,320552,Bozyazi,Bozyazi,Turkey,Türkiye,TR,TR,33,33
+country_name,740561,740561,Piraziz,Piraziz,Turkey,Türkiye,TR,TR,28,28
+country_name,311704,311704,Idil,Idil,Turkey,Türkiye,TR,TR,73,73
+country_name,298332,298332,,,Turkey,Türkiye,TR,TR,63,63
+country_name,314829,314829,,,Turkey,Türkiye,TR,TR,27,27
+country_name,747538,747538,Eminönü,Eminönü,Turkey,Türkiye,TR,TR,34,34
+country_name,298485,298485,Ula,Ula,Turkey,Türkiye,TR,TR,48,48
+country_name,317844,317844,Cumra,Cumra,Turkey,Türkiye,TR,TR,42,42
+country_name,746232,746232,Gürsu,Gürsu,Turkey,Türkiye,TR,TR,16,16
+country_name,321136,321136,Bigadic,Bigadic,Turkey,Türkiye,TR,TR,10,10
+country_name,304825,304825,,,Turkey,Türkiye,TR,TR,45,45
+country_name,318755,318755,Cesme,Cesme,Turkey,Türkiye,TR,TR,35,35
+country_name,300614,300614,Siverek,Siverek,Turkey,Türkiye,TR,TR,63,63
+country_name,752042,752042,Altınova,Altınova,Turkey,Türkiye,TR,TR,77,77
+country_name,301350,301350,Seferihisar,Seferihisar,Turkey,Türkiye,TR,TR,35,35
+country_name,320533,320533,Bucak,Bucak,Turkey,Türkiye,TR,TR,15,15
+country_name,746821,746821,Gökçebey,Gökçebey,Turkey,Türkiye,TR,TR,67,67
+country_name,304196,304196,Mucur,Mucur,Turkey,Türkiye,TR,TR,40,40
+country_name,316262,316262,Dosemealti,Dosemealti,Turkey,Türkiye,TR,TR,7,7
+country_name,315795,315795,Elbistan,Elbistan,Turkey,Türkiye,TR,TR,46,46
+country_name,306041,306041,Kozluk,Kozluk,Turkey,Türkiye,TR,TR,72,72
+country_name,745719,745719,Havsa,Havsa,Turkey,Türkiye,TR,TR,22,22
+country_name,301975,301975,Samandag,Samandag,Turkey,Türkiye,TR,TR,31,31
+country_name,748208,748208,Derince,Derince,Turkey,Türkiye,TR,TR,41,41
+country_name,313013,313013,Hacilar,Hacilar,Turkey,Türkiye,TR,TR,38,38
+country_name,304183,304183,,,Turkey,Türkiye,TR,TR,48,48
+country_name,304919,304919,,,Turkey,Türkiye,TR,TR,44,44
+country_name,325163,325163,,,Turkey,Türkiye,TR,TR,4,4
+country_name,320448,320448,Bulanik,Bulanik,Turkey,Türkiye,TR,TR,49,49
+country_name,741160,741160,Oltu,Oltu,Turkey,Türkiye,TR,TR,25,25
+country_name,10048774,10048774,Sur,Sur,Turkey,Türkiye,TR,TR,21,21
+country_name,315000,315000,Feke,Feke,Turkey,Türkiye,TR,TR,1,1
+country_name,298326,298326,UErguep,UErguep,Turkey,Türkiye,TR,TR,50,50
+country_name,749075,749075,Çınarcık,Çınarcık,Turkey,Türkiye,TR,TR,77,77
+country_name,300075,300075,Suruc,Suruc,Turkey,Türkiye,TR,TR,63,63
+country_name,320946,320946,Bogazliyan,Bogazliyan,Turkey,Türkiye,TR,TR,66,66
+country_name,746308,746308,Güneysu,Güneysu,Turkey,Türkiye,TR,TR,53,53
+country_name,305210,305210,Kuyucak,Kuyucak,Turkey,Türkiye,TR,TR,9,9
+country_name,313249,313249,Guzelbahce,Guzelbahce,Turkey,Türkiye,TR,TR,35,35
+country_name,746413,746413,Gümüşova,Gümüşova,Turkey,Türkiye,TR,TR,81,81
+country_name,7619146,7619146,Sahinbey,Sahinbey,Turkey,Türkiye,TR,TR,27,27
+country_name,308233,308233,Kemah,Kemah,Turkey,Türkiye,TR,TR,24,24
+country_name,741737,741737,Manyas,Manyas,Turkey,Türkiye,TR,TR,10,10
+country_name,752016,752016,Amasra,Amasra,Turkey,Türkiye,TR,TR,74,74
+country_name,8384779,8384779,Termal,Termal,Turkey,Türkiye,TR,TR,77,77
+country_name,737069,737069,Zeytinburun,Zeytinburun,Turkey,Türkiye,TR,TR,41,41
+country_name,751881,751881,Armutlu,Armutlu,Turkey,Türkiye,TR,TR,77,77
+country_name,314573,314573,Germencik,Germencik,Turkey,Türkiye,TR,TR,9,9
+country_name,741484,741484,Mudurnu,Mudurnu,Turkey,Türkiye,TR,TR,14,14
+country_name,309415,309415,Karapinar,Karapinar,Turkey,Türkiye,TR,TR,42,42
+country_name,297925,297925,Yahsihan,Yahsihan,Turkey,Türkiye,TR,TR,71,71
+country_name,745026,745026,Nicaea,Nicaea,Turkey,Türkiye,TR,TR,16,16
+country_name,749795,749795,Çan,Çan,Turkey,Türkiye,TR,TR,17,17
+country_name,300195,300195,Sultanhisar,Sultanhisar,Turkey,Türkiye,TR,TR,9,9
+country_name,297097,297097,Yenifoca,Yenifoca,Turkey,Türkiye,TR,TR,35,35
+country_name,742904,742904,Kocaali,Kocaali,Turkey,Türkiye,TR,TR,59,59
+country_name,305686,305686,Kumlu,Kumlu,Turkey,Türkiye,TR,TR,31,31
+country_name,306569,306569,,,Turkey,Türkiye,TR,TR,42,42
+country_name,750268,750268,,,Turkey,Türkiye,TR,TR,16,16
+country_name,297466,297466,Yayladagi,Yayladagi,Turkey,Türkiye,TR,TR,31,31
+country_name,740924,740924,Kolavlağı,Kolavlağı,Turkey,Türkiye,TR,TR,18,18
+country_name,311433,311433,Imranli,Imranli,Turkey,Türkiye,TR,TR,58,58
+country_name,742865,742865,,,Turkey,Türkiye,TR,TR,41,41
+country_name,7627067,7627067,Bahcelievler,Bahcelievler,Turkey,Türkiye,TR,TR,34,34
+country_name,738926,738926,,,Turkey,Türkiye,TR,TR,59,59
+country_name,750225,750225,Büyükçekmece,Büyükçekmece,Turkey,Türkiye,TR,TR,34,34
+country_name,298033,298033,Viranşehir,Viranşehir,Turkey,Türkiye,TR,TR,63,63
+country_name,745169,745169,İnegöl,İnegöl,Turkey,Türkiye,TR,TR,16,16
+country_name,6947640,6947640,Beylikduzu,Beylikduzu,Turkey,Türkiye,TR,TR,34,34
+country_name,737961,737961,Körfez,Körfez,Turkey,Türkiye,TR,TR,41,41
+country_name,749778,749778,,,Turkey,Türkiye,TR,TR,17,17
+country_name,746898,746898,Geyve,Geyve,Turkey,Türkiye,TR,TR,54,54
+country_name,325449,325449,Acigoel,Acigoel,Turkey,Türkiye,TR,TR,50,50
+country_name,751971,751971,Araklı,Araklı,Turkey,Türkiye,TR,TR,61,61
+country_name,749456,749456,Çaykara,Çaykara,Turkey,Türkiye,TR,TR,61,61
+country_name,752584,752584,Akçakoca,Akçakoca,Turkey,Türkiye,TR,TR,81,81
+country_name,323797,323797,Andirin,Andirin,Turkey,Türkiye,TR,TR,46,46
+country_name,738647,738647,,,Turkey,Türkiye,TR,TR,61,61
+country_name,295803,295803,Akcagedik,Akcagedik,Turkey,Türkiye,TR,TR,56,56
+country_name,320871,320871,Bor,Bor,Turkey,Türkiye,TR,TR,51,51
+country_name,310858,310858,,,Turkey,Türkiye,TR,TR,46,46
+country_name,751503,751503,Aybasti,Aybasti,Turkey,Türkiye,TR,TR,52,52
+country_name,751931,751931,Arhavi,Arhavi,Turkey,Türkiye,TR,TR,8,8
+country_name,750392,750392,Bozkurt,Bozkurt,Turkey,Türkiye,TR,TR,37,37
+country_name,743633,743633,Kaynarca,Kaynarca,Turkey,Türkiye,TR,TR,54,54
+country_name,316102,316102,Dursunbey,Dursunbey,Turkey,Türkiye,TR,TR,10,10
+country_name,740000,740000,Şarköy,Şarköy,Turkey,Türkiye,TR,TR,59,59
+country_name,745664,745664,Hendek,Hendek,Turkey,Türkiye,TR,TR,54,54
+country_name,747503,747503,Enez,Enez,Turkey,Türkiye,TR,TR,22,22
+country_name,313658,313658,Gulsehir,Gulsehir,Turkey,Türkiye,TR,TR,50,50
+country_name,749508,749508,Çaycuma,Çaycuma,Turkey,Türkiye,TR,TR,67,67
+country_name,745714,745714,Havza,Havza,Turkey,Türkiye,TR,TR,55,55
+country_name,314923,314923,Finike,Finike,Turkey,Türkiye,TR,TR,7,7
+country_name,298088,298088,Varto,Varto,Turkey,Türkiye,TR,TR,49,49
+country_name,315468,315468,Ergani,Ergani,Turkey,Türkiye,TR,TR,21,21
+country_name,7927358,7927358,Kizilay,Kizilay,Turkey,Türkiye,TR,TR,6,6
+country_name,748167,748167,Devrek,Devrek,Turkey,Türkiye,TR,TR,67,67
+country_name,740230,740230,Sapanca,Sapanca,Turkey,Türkiye,TR,TR,54,54
+country_name,301492,301492,Saruhanli,Saruhanli,Turkey,Türkiye,TR,TR,45,45
+country_name,304734,304734,Mazidagi,Mazidagi,Turkey,Türkiye,TR,TR,47,47
+country_name,320879,320879,Bolvadin,Bolvadin,Turkey,Türkiye,TR,TR,3,3
+country_name,302482,302482,Pozanti,Pozanti,Turkey,Türkiye,TR,TR,1,1
+country_name,312806,312806,Hallaclar,Hallaclar,Turkey,Türkiye,TR,TR,9,9
+country_name,324944,324944,Akcakale,Akcakale,Turkey,Türkiye,TR,TR,63,63
+country_name,321062,321062,Birecik,Birecik,Turkey,Türkiye,TR,TR,63,63
+country_name,310839,310839,Kaklıç,Kaklıç,Turkey,Türkiye,TR,TR,35,35
+country_name,323716,323716,Yuregir,Yuregir,Turkey,Türkiye,TR,TR,1,1
+country_name,7279530,7279530,Ihlas Marmara Evleri - I. Kisim,Ihlas Marmara Evleri - I. Kisim,Turkey,Türkiye,TR,TR,34,34
+country_name,7628414,7628414,Gaziosmanpasa,Gaziosmanpasa,Turkey,Türkiye,TR,TR,34,34
+country_name,8542938,8542938,Osmangazi,Osmangazi,Turkey,Türkiye,TR,TR,16,16
+country_name,443189,443189,,,Turkey,Türkiye,TR,TR,73,73
+country_name,750249,750249,Adalar,Adalar,Turkey,Türkiye,TR,TR,34,34
+country_name,321786,321786,Bayindir,Bayindir,Turkey,Türkiye,TR,TR,35,35
+country_name,302912,302912,Palu,Palu,Turkey,Türkiye,TR,TR,23,23
+country_name,320581,320581,Bozova,Bozova,Turkey,Türkiye,TR,TR,63,63
+country_name,298388,298388,Ulus,Ulus,Turkey,Türkiye,TR,TR,6,6
+country_name,738753,738753,Tirebolu,Tirebolu,Turkey,Türkiye,TR,TR,28,28
+country_name,299499,299499,Tefenni,Tefenni,Turkey,Türkiye,TR,TR,15,15
+country_name,746302,746302,Güngören,Güngören,Turkey,Türkiye,TR,TR,34,34
+country_name,319309,319309,Catalan,Catalan,Turkey,Türkiye,TR,TR,47,47
+country_name,9888727,9888727,Dokuz Eylul,Dokuz Eylul,Turkey,Türkiye,TR,TR,35,35
+country_name,443183,443183,,,Turkey,Türkiye,TR,TR,80,80
+country_name,752184,752184,Alaplı,Alaplı,Turkey,Türkiye,TR,TR,67,67
+country_name,301116,301116,Sereflikochisar,Sereflikochisar,Turkey,Türkiye,TR,TR,6,6
+country_name,742657,742657,Korgun,Korgun,Turkey,Türkiye,TR,TR,18,18
+country_name,749392,749392,Çekerek,Çekerek,Turkey,Türkiye,TR,TR,66,66
+country_name,307623,307623,Kirkagac,Kirkagac,Turkey,Türkiye,TR,TR,45,45
+country_name,315905,315905,Egirdir,Egirdir,Turkey,Türkiye,TR,TR,32,32
+country_name,297789,297789,Yalvac,Yalvac,Turkey,Türkiye,TR,TR,32,32
+country_name,312245,312245,Hekimhan,Hekimhan,Turkey,Türkiye,TR,TR,44,44
+country_name,741529,741529,Mimarsinan,Mimarsinan,Turkey,Türkiye,TR,TR,34,34
+country_name,741098,741098,,,Turkey,Türkiye,TR,TR,52,52
+country_name,314072,314072,Golhisar,Golhisar,Turkey,Türkiye,TR,TR,15,15
+country_name,322887,322887,Avsallar,Avsallar,Turkey,Türkiye,TR,TR,7,7
+country_name,322164,322164,,,Turkey,Türkiye,TR,TR,10,10
+country_name,7642392,7642392,Gulekildam,Gulekildam,Turkey,Türkiye,TR,TR,1,1
+country_name,319857,319857,Cal,Cal,Turkey,Türkiye,TR,TR,20,20
+country_name,8074164,8074164,Yukselis,Yukselis,Turkey,Türkiye,TR,TR,7,7
+country_name,310907,310907,Kadinhani,Kadinhani,Turkey,Türkiye,TR,TR,42,42
+country_name,306569,306569,Konya,Konya,Turkey,Türkiye,TR,TR,42,42
+country_name,751324,751324,Bağcılar,Bağcılar,Turkey,Türkiye,TR,TR,34,34
+country_name,320004,320004,Caglayancerit,Caglayancerit,Turkey,Türkiye,TR,TR,46,46
+country_name,318766,318766,Cermik,Cermik,Turkey,Türkiye,TR,TR,21,21
+country_name,300616,300616,Sivasli,Sivasli,Turkey,Türkiye,TR,TR,64,64
+country_name,743590,743590,Kazımiye,Kazımiye,Turkey,Türkiye,TR,TR,77,77
+country_name,322692,322692,Ayvacik,Ayvacik,Turkey,Türkiye,TR,TR,17,17
+country_name,443188,443188,,,Turkey,Türkiye,TR,TR,71,71
+country_name,305267,305267,,,Turkey,Türkiye,TR,TR,43,43
+country_name,298113,298113,,,Turkey,Türkiye,TR,TR,65,65
+country_name,862469,862469,,,Turkey,Türkiye,TR,TR,77,77
+country_name,323735,323735,Aralik,Aralik,Turkey,Türkiye,TR,TR,76,76
+country_name,750735,750735,Beşikdüzü,Beşikdüzü,Turkey,Türkiye,TR,TR,61,61
+country_name,9888883,9888883,Merkez,Merkez,Turkey,Türkiye,TR,TR,35,35
+country_name,740930,740930,Ortaköy,Ortaköy,Turkey,Türkiye,TR,TR,34,34
+country_name,302824,302824,Pasinler,Pasinler,Turkey,Türkiye,TR,TR,25,25
+country_name,415534,415534,Nurdagi,Nurdagi,Turkey,Türkiye,TR,TR,27,27
+country_name,307513,307513,,,Turkey,Türkiye,TR,TR,40,40
+country_name,309512,309512,Karamanli,Karamanli,Turkey,Türkiye,TR,TR,15,15
+country_name,301529,301529,Edremit,Edremit,Turkey,Türkiye,TR,TR,65,65
+country_name,324029,324029,Alikoy,Alikoy,Turkey,Türkiye,TR,TR,32,32
+country_name,325329,325329,,,Turkey,Türkiye,TR,TR,2,2
+country_name,744562,744562,Karabük,Karabük,Turkey,Türkiye,TR,TR,78,78
+country_name,321082,321082,Bingoel,Bingoel,Turkey,Türkiye,TR,TR,12,12
+country_name,746425,746425,Gümüşhane,Gümüşhane,Turkey,Türkiye,TR,TR,29,29
+country_name,299840,299840,Taraksu,Taraksu,Turkey,Türkiye,TR,TR,2,2
+country_name,738251,738251,Uzunköprü,Uzunköprü,Turkey,Türkiye,TR,TR,22,22
+country_name,312355,312355,Havran,Havran,Turkey,Türkiye,TR,TR,10,10
+country_name,8017024,8017024,Aydinlikevler,Aydinlikevler,Turkey,Türkiye,TR,TR,6,6
+country_name,321814,321814,Bayat,Bayat,Turkey,Türkiye,TR,TR,3,3
+country_name,438236,438236,Anayazi,Anayazi,Turkey,Türkiye,TR,TR,31,31
+country_name,301911,301911,Sandikli,Sandikli,Turkey,Türkiye,TR,TR,3,3
+country_name,7619145,7619145,Sehitkamil,Sehitkamil,Turkey,Türkiye,TR,TR,27,27
+country_name,752437,752437,Akkuş,Akkuş,Turkey,Türkiye,TR,TR,52,52
+country_name,747728,747728,Eceabat,Eceabat,Turkey,Türkiye,TR,TR,17,17
+country_name,321022,321022,,,Turkey,Türkiye,TR,TR,13,13
+country_name,310200,310200,Karaburun,Karaburun,Turkey,Türkiye,TR,TR,35,35
+country_name,751170,751170,Balçık,Balçık,Turkey,Türkiye,TR,TR,41,41
+country_name,738123,738123,Yağlıdere,Yağlıdere,Turkey,Türkiye,TR,TR,28,28
+country_name,303646,303646,Oguz,Oguz,Turkey,Türkiye,TR,TR,72,72
+country_name,314665,314665,Gemerek,Gemerek,Turkey,Türkiye,TR,TR,58,58
+country_name,9888515,9888515,Ciplakoy,Ciplakoy,Turkey,Türkiye,TR,TR,35,35
+country_name,314038,314038,Golmarmara,Golmarmara,Turkey,Türkiye,TR,TR,45,45
+country_name,305268,305268,Kütahya,Kütahya,Turkey,Türkiye,TR,TR,43,43
+country_name,302781,302781,Pazaryeri,Pazaryeri,Turkey,Türkiye,TR,TR,11,11
+country_name,312253,312253,Hazro,Hazro,Turkey,Türkiye,TR,TR,21,21
+country_name,9985334,9985334,Bagcilar,Bagcilar,Turkey,Türkiye,TR,TR,35,35
+country_name,740605,740605,Perşembe,Perşembe,Turkey,Türkiye,TR,TR,52,52
+country_name,324490,324490,Akşehir,Akşehir,Turkey,Türkiye,TR,TR,42,42
+country_name,740490,740490,Reşadiye,Reşadiye,Turkey,Türkiye,TR,TR,60,60
+country_name,862940,862940,Halıdere,Halıdere,Turkey,Türkiye,TR,TR,41,41
+country_name,8522437,8522437,Demirci,Demirci,Turkey,Türkiye,TR,TR,16,16
+country_name,7539164,7539164,Ulubag,Ulubag,Turkey,Türkiye,TR,TR,63,63
+country_name,7927375,7927375,Bagcilar,Bagcilar,Turkey,Türkiye,TR,TR,6,6
+country_name,744767,744767,Kalkandere,Kalkandere,Turkey,Türkiye,TR,TR,53,53
+country_name,8623128,8623128,Cumhuriyet,Cumhuriyet,Turkey,Türkiye,TR,TR,34,34
+country_name,438400,438400,Denizciler,Denizciler,Turkey,Türkiye,TR,TR,31,31
+country_name,10345206,10345206,Tepebasi,Tepebasi,Turkey,Türkiye,TR,TR,26,26
+country_name,741136,741136,Olur,Olur,Turkey,Türkiye,TR,TR,25,25
+country_name,10179401,10179401,Karsiyaka,Karsiyaka,Turkey,Türkiye,TR,TR,20,20
+country_name,6692524,6692524,Sarigerme,Sarigerme,Turkey,Türkiye,TR,TR,48,48
+country_name,7701435,7701435,Osmangazi,Osmangazi,Turkey,Türkiye,TR,TR,16,16
+country_name,10833289,10833289,Osmangazi,Osmangazi,Turkey,Türkiye,TR,TR,27,27
+country_name,749443,749443,Çayköy,Çayköy,Turkey,Türkiye,TR,TR,81,81
+country_name,300351,300351,Sorgun,Sorgun,Turkey,Türkiye,TR,TR,16,16
+country_name,10376352,10376352,Ilkadim,Ilkadim,Turkey,Türkiye,TR,TR,55,55
+country_name,304726,304726,Mazmanli,Mazmanli,Turkey,Türkiye,TR,TR,31,31
+country_name,741730,741730,Marmara,Marmara,Turkey,Türkiye,TR,TR,10,10
+country_name,748635,748635,Darıca,Darıca,Turkey,Türkiye,TR,TR,61,61
+country_name,740830,740830,Ovaköy,Ovaköy,Turkey,Türkiye,TR,TR,78,78
+country_name,9922398,9922398,Yali,Yali,Turkey,Türkiye,TR,TR,35,35
+country_name,309427,309427,Karaozu,Karaozu,Turkey,Türkiye,TR,TR,38,38
+country_name,305900,305900,Kucukkoy,Kucukkoy,Turkey,Türkiye,TR,TR,10,10
+country_name,312872,312872,Halalca,Halalca,Turkey,Türkiye,TR,TR,10,10
+country_name,746378,746378,Bekirpaşa,Bekirpaşa,Turkey,Türkiye,TR,TR,41,41
+country_name,741764,741764,Maltepe,Maltepe,Turkey,Türkiye,TR,TR,17,17
+country_name,744683,744683,Yeşilköy,Yeşilköy,Turkey,Türkiye,TR,TR,55,55
+country_name,309609,309609,Karakoyunlu,Karakoyunlu,Turkey,Türkiye,TR,TR,76,76
+country_name,10834692,10834692,Girne,Girne,Turkey,Türkiye,TR,TR,27,27
+country_name,316667,316667,Dilek,Dilek,Turkey,Türkiye,TR,TR,44,44
+country_name,740560,740560,Piraziz,Piraziz,Turkey,Türkiye,TR,TR,52,52
+country_name,309568,309568,Karakuyu,Karakuyu,Turkey,Türkiye,TR,TR,35,35
+geoname_id,2501162,12640237,Collo,Collo,Algeria,Algeria,DZ,DZ,21,21
+geoname_id,3835612,3835611,Saujil,Saujil,Argentina,Argentina,AR,AR,K,K
+geoname_id,3859821,12594605,Cruz de Piedra,Cruz de Piedra,Argentina,Argentina,AR,AR,M,M
+geoname_id,8614218,2168087,Dunmore,Dunmore,Australia,Australia,AU,AU,NSW,NSW
+geoname_id,12055979,2167109,Eureka,Eureka,Australia,Australia,AU,AU,NSW,NSW
+geoname_id,9535103,8598931,Pine Creek,Pine Creek,Australia,Australia,AU,AU,QLD,QLD
+geoname_id,2073079,8347992,Dawesley,Dawesley,Australia,Australia,AU,AU,SA,SA
+geoname_id,12055360,8347963,Woodlands,Woodlands,Australia,Australia,AU,AU,NSW,NSW
+geoname_id,2165017,8596658,Goodwood,Goodwood,Australia,Australia,AU,AU,QLD,QLD
+geoname_id,8599519,10228362,Bonnie Doon,Bonnie Doon,Australia,Australia,AU,AU,QLD,QLD
+geoname_id,11715404,2158542,Maryvale,Maryvale,Australia,Australia,AU,AU,NSW,NSW
+geoname_id,7670694,7923297,Nalitabari,Nalitabari,Bangladesh,Bangladesh,BD,BD,"H, 57","H, 57"
+geoname_id,2789696,2789697,Ophoven,Ophoven,Belgium,Belgium,BE,BE,"VLG, VLI","VLG, VLI"
+geoname_id,3298367,3202487,Crkvina,Crkvina,Bosnia and Herzegovina,Bosnia and Herzegovina,BA,BA,SRP,SRP
+geoname_id,6316823,12542436,Casserengue,Casserengue,Brazil,Brazil,BR,BR,PB,PB
+geoname_id,3458889,3458885,Lamarao,Lamarao,Brazil,Brazil,BR,BR,BA,BA
+geoname_id,3468071,3468072,Caldeirao Grande,Caldeirao Grande,Brazil,Brazil,BR,BR,BA,BA
+geoname_id,3387208,3387210,Sossego,Sossego,Brazil,Brazil,BR,BR,PB,PB
+geoname_id,3409113,6316553,Belagua,Belagua,Brazil,Brazil,BR,BR,MA,MA
+geoname_id,3394594,3394591,Monte Alegre,Monte Alegre,Brazil,Brazil,BR,BR,RN,RN
+geoname_id,6317710,6323842,Nova Bandeirantes,Nova Bandeirantes,Brazil,Brazil,BR,BR,MT,MT
+geoname_id,6316941,6323819,Cotriguacu,Cotriguacu,Brazil,Brazil,BR,BR,MT,MT
+geoname_id,3459406,6323837,Juruena,Juruena,Brazil,Brazil,BR,BR,MT,MT
+geoname_id,6317029,6319402,Dom Eliseu,Dom Eliseu,Brazil,Brazil,BR,BR,PA,PA
+geoname_id,3390814,6318104,Raposa,Raposa,Brazil,Brazil,BR,BR,MA,MA
+geoname_id,6317837,8430485,Paco do Lumiar,Paco do Lumiar,Brazil,Brazil,BR,BR,MA,MA
+geoname_id,6317986,6319447,Placas,Placas,Brazil,Brazil,BR,BR,PA,PA
+geoname_id,6318194,6319456,Ruropolis,Ruropolis,Brazil,Brazil,BR,BR,PA,PA
+geoname_id,6317872,6319443,Parauapebas,Parauapebas,Brazil,Brazil,BR,BR,PA,PA
+geoname_id,6317707,6323770,Nova Andradina,Nova Andradina,Brazil,Brazil,BR,BR,MS,MS
+geoname_id,6316314,6319223,Agua Boa,Agua Boa,Brazil,Brazil,BR,BR,MT,MT
+geoname_id,6318091,6323863,Querencia,Querencia,Brazil,Brazil,BR,BR,MT,MT
+geoname_id,3465303,6316937,Costa Rica,Costa Rica,Brazil,Brazil,BR,BR,MS,MS
+geoname_id,6318711,6323786,Sonora,Sonora,Brazil,Brazil,BR,BR,MS,MS
+geoname_id,3471915,6323907,Apore,Apore,Brazil,Brazil,BR,BR,GO,GO
+geoname_id,6316908,6323818,Confresa,Confresa,Brazil,Brazil,BR,BR,MT,MT
+geoname_id,6316423,6323726,Aral Moreira,Aral Moreira,Brazil,Brazil,BR,BR,MS,MS
+geoname_id,7582886,3448525,Sao Martinho,Sao Martinho,Brazil,Brazil,BR,BR,RS,RS
+geoname_id,3453906,6320994,Pilao Arcado,Pilao Arcado,Brazil,Brazil,BR,BR,BA,BA
+geoname_id,3390682,6321013,Remanso,Remanso,Brazil,Brazil,BR,BR,BA,BA
+geoname_id,3472085,3472086,Antas,Antas,Brazil,Brazil,BR,BR,BA,BA
+geoname_id,3397154,6320923,Juazeiro,Juazeiro,Brazil,Brazil,BR,BR,BA,BA
+geoname_id,12125760,6323809,Campo Verde,Campo Verde,Brazil,Brazil,BR,BR,MT,MT
+geoname_id,3407674,6319509,Ananas,Ananas,Brazil,Brazil,BR,BR,TO,TO
+geoname_id,3467442,3467443,Cantagalo,Cantagalo,Brazil,Brazil,BR,BR,PR,PR
+geoname_id,6317801,6319434,Novo Repartimento,Novo Repartimento,Brazil,Brazil,BR,BR,PA,PA
+geoname_id,6318931,6323887,Vila Rica,Vila Rica,Brazil,Brazil,BR,BR,MT,MT
+geoname_id,3453114,6318011,Ponte Branca,Ponte Branca,Brazil,Brazil,BR,BR,MT,MT
+geoname_id,8437724,3407797,Altos,Altos,Brazil,Brazil,BR,BR,PI,PI
+geoname_id,3395238,3395239,Massape,Massape,Brazil,Brazil,BR,BR,CE,CE
+geoname_id,3468453,6323927,Cachoeira Alta,Cachoeira Alta,Brazil,Brazil,BR,BR,GO,GO
+geoname_id,3397528,6317374,Jatoba,Jatoba,Brazil,Brazil,BR,BR,MA,MA
+geoname_id,3451662,3451663,Reserva,Reserva,Brazil,Brazil,BR,BR,PR,PR
+geoname_id,3404817,6319385,Breves,Breves,Brazil,Brazil,BR,BR,PA,PA
+geoname_id,3385737,3385736,Upanema,Upanema,Brazil,Brazil,BR,BR,RN,RN
+geoname_id,3401632,3465405,Corrente,Corrente,Brazil,Brazil,BR,BR,PI,PI
+geoname_id,3411903,6319608,Rio Sono,Rio Sono,Brazil,Brazil,BR,BR,TO,TO
+geoname_id,6317776,6319583,Novo Acordo,Novo Acordo,Brazil,Brazil,BR,BR,TO,TO
+geoname_id,3405998,3406001,Batalha,Batalha,Brazil,Brazil,BR,BR,PI,PI
+geoname_id,11959882,3446171,Tres Barras,Tres Barras,Brazil,Brazil,BR,BR,SC,SC
+geoname_id,3460915,6317311,Itacurubi,Itacurubi,Brazil,Brazil,BR,BR,RS,RS
+geoname_id,3389549,6318263,Santa Luzia,Santa Luzia,Brazil,Brazil,BR,BR,MA,MA
+geoname_id,3458903,3458902,Lajinha,Lajinha,Brazil,Brazil,BR,BR,MG,MG
+geoname_id,8304762,3451261,Rio Bonito,Rio Bonito,Brazil,Brazil,BR,BR,RJ,RJ
+geoname_id,3386773,3446943,Tanquinho,Tanquinho,Brazil,Brazil,BR,BR,BA,BA
+geoname_id,6317030,6319899,Dom Inocencio,Dom Inocencio,Brazil,Brazil,BR,BR,PI,PI
+geoname_id,3387432,6319816,Sitio Novo,Sitio Novo,Brazil,Brazil,BR,BR,MA,MA
+geoname_id,3456057,6317795,Novo Mundo,Novo Mundo,Brazil,Brazil,BR,BR,MT,MT
+geoname_id,3467061,3467057,Caraibas,Caraibas,Brazil,Brazil,BR,BR,BA,BA
+geoname_id,3386544,3386543,Tavares,Tavares,Brazil,Brazil,BR,BR,PB,PB
+geoname_id,3450842,3450841,Rubim,Rubim,Brazil,Brazil,BR,BR,MG,MG
+geoname_id,3392438,6319591,Pedro Afonso,Pedro Afonso,Brazil,Brazil,BR,BR,TO,TO
+geoname_id,3461908,3461903,Guarani,Guarani,Brazil,Brazil,BR,BR,MG,MG
+geoname_id,3447118,3447117,Tabuleiro,Tabuleiro,Brazil,Brazil,BR,BR,MG,MG
+geoname_id,6317521,6320948,Manoel Vitorino,Manoel Vitorino,Brazil,Brazil,BR,BR,BA,BA
+geoname_id,12024913,3465527,Cordeiro,Cordeiro,Brazil,Brazil,BR,BR,RJ,RJ
+geoname_id,7567333,3461874,Guararapes,Guararapes,Brazil,Brazil,BR,BR,SP,SP
+geoname_id,8603683,6316999,Delta,Delta,Brazil,Brazil,BR,BR,MG,MG
+geoname_id,3406545,6319653,Balsas,Balsas,Brazil,Brazil,BR,BR,MA,MA
+geoname_id,3411874,6316460,Augustinopolis,Augustinopolis,Brazil,Brazil,BR,BR,TO,TO
+geoname_id,6317749,6319146,Nova Marilandia,Nova Marilandia,Brazil,Brazil,BR,BR,MT,MT
+geoname_id,11959657,3458729,Laurentino,Laurentino,Brazil,Brazil,BR,BR,SC,SC
+geoname_id,3406885,3406887,Bacuri,Bacuri,Brazil,Brazil,BR,BR,MA,MA
+geoname_id,6318970,6319833,Ze Doca,Ze Doca,Brazil,Brazil,BR,BR,MA,MA
+geoname_id,12179533,3444969,Visconde do Rio Branco,Visconde do Rio Branco,Brazil,Brazil,BR,BR,MG,MG
+geoname_id,3398381,6319712,Icatu,Icatu,Brazil,Brazil,BR,BR,MA,MA
+geoname_id,6317835,6319358,Pacaraima,Pacaraima,Brazil,Brazil,BR,BR,RR,RR
+geoname_id,3386808,3446947,Tanque Novo,Tanque Novo,Brazil,Brazil,BR,BR,BA,BA
+geoname_id,3399439,3399445,Forquilha,Forquilha,Brazil,Brazil,BR,BR,CE,CE
+geoname_id,3445571,6321098,Wanderley,Wanderley,Brazil,Brazil,BR,BR,BA,BA
+geoname_id,3447712,6319159,Serranopolis,Serranopolis,Brazil,Brazil,BR,BR,GO,GO
+geoname_id,6317388,6320922,Joao Dourado,Joao Dourado,Brazil,Brazil,BR,BR,BA,BA
+geoname_id,3460148,6321486,Januaria,Januaria,Brazil,Brazil,BR,BR,MG,MG
+geoname_id,3475644,3460723,Itapeva,Itapeva,Brazil,Brazil,BR,BR,SP,SP
+geoname_id,3454613,3454614,Pe de Serra,Pe de Serra,Brazil,Brazil,BR,BR,BA,BA
+geoname_id,12229353,3463605,Farroupilha,Farroupilha,Brazil,Brazil,BR,BR,RS,RS
+geoname_id,3472025,3472024,Antonio Dias,Antonio Dias,Brazil,Brazil,BR,BR,MG,MG
+geoname_id,3396601,6317419,Lago da Pedra,Lago da Pedra,Brazil,Brazil,BR,BR,MA,MA
+geoname_id,3392996,6319756,Parnarama,Parnarama,Brazil,Brazil,BR,BR,MA,MA
+geoname_id,3464724,6323822,Diamantino,Diamantino,Brazil,Brazil,BR,BR,MT,MT
+geoname_id,6316428,6323801,Araputanga,Araputanga,Brazil,Brazil,BR,BR,MT,MT
+geoname_id,12548918,3402538,Catarina,Catarina,Brazil,Brazil,BR,BR,CE,CE
+geoname_id,3397292,6319721,Joao Lisboa,Joao Lisboa,Brazil,Brazil,BR,BR,MA,MA
+geoname_id,6317755,6324219,Nova Mutum,Nova Mutum,Brazil,Brazil,BR,BR,MT,MT
+geoname_id,3453437,6319597,Pium,Pium,Brazil,Brazil,BR,BR,TO,TO
+geoname_id,3665348,6319296,Anama,Anama,Brazil,Brazil,BR,BR,AM,AM
+geoname_id,3460045,6323760,Jatei,Jatei,Brazil,Brazil,BR,BR,MS,MS
+geoname_id,7771981,3459431,Juranda,Juranda,Brazil,Brazil,BR,BR,PR,PR
+geoname_id,7566537,3464411,Duas Barras,Duas Barras,Brazil,Brazil,BR,BR,RJ,RJ
+geoname_id,3385980,6318807,Tucuma,Tucuma,Brazil,Brazil,BR,BR,PA,PA
+geoname_id,3401263,6319399,Curralinho,Curralinho,Brazil,Brazil,BR,BR,PA,PA
+geoname_id,3389669,3389671,Santa Cruz,Santa Cruz,Brazil,Brazil,BR,BR,PB,PB
+geoname_id,3387928,6319478,Senador Jose Porfirio,Senador Jose Porfirio,Brazil,Brazil,BR,BR,PA,PA
+geoname_id,3394605,6319428,Monte Alegre,Monte Alegre,Brazil,Brazil,BR,BR,PA,PA
+geoname_id,3445253,6318882,Vereda,Vereda,Brazil,Brazil,BR,BR,BA,BA
+geoname_id,3460849,6324156,Itaja,Itaja,Brazil,Brazil,BR,BR,GO,GO
+geoname_id,3456483,3456485,Muritiba,Muritiba,Brazil,Brazil,BR,BR,BA,BA
+geoname_id,3407798,6319638,Alto Parnaiba,Alto Parnaiba,Brazil,Brazil,BR,BR,MA,MA
+geoname_id,11960647,3453416,Planalto,Planalto,Brazil,Brazil,BR,BR,SP,SP
+geoname_id,3451705,3451704,Registro,Registro,Brazil,Brazil,BR,BR,SP,SP
+geoname_id,6317537,6324164,Marcelandia,Marcelandia,Brazil,Brazil,BR,BR,MT,MT
+geoname_id,12549102,3394253,Mulungu,Mulungu,Brazil,Brazil,BR,BR,CE,CE
+geoname_id,3406948,6319300,Autazes,Autazes,Brazil,Brazil,BR,BR,AM,AM
+geoname_id,3459531,6324009,Jussara,Jussara,Brazil,Brazil,BR,BR,GO,GO
+geoname_id,3460508,6320910,Iuiu,Iuiu,Brazil,Brazil,BR,BR,BA,BA
+geoname_id,6316343,6323793,Alta Floresta,Alta Floresta,Brazil,Brazil,BR,BR,MT,MT
+geoname_id,12551152,3385504,Varjota,Varjota,Brazil,Brazil,BR,BR,CE,CE
+geoname_id,3406844,6319374,Baiao,Baiao,Brazil,Brazil,BR,BR,PA,PA
+geoname_id,3398899,6319559,Goiatins,Goiatins,Brazil,Brazil,BR,BR,TO,TO
+geoname_id,3393239,6319587,Palmeirante,Palmeirante,Brazil,Brazil,BR,BR,TO,TO
+geoname_id,3401600,3465329,Coruripe,Coruripe,Brazil,Brazil,BR,BR,AL,AL
+geoname_id,3471693,3471694,Araujos,Araujos,Brazil,Brazil,BR,BR,MG,MG
+geoname_id,6317345,6320911,Jaborandi,Jaborandi,Brazil,Brazil,BR,BR,BA,BA
+geoname_id,3395090,6317567,Mato Grosso,Mato Grosso,Brazil,Brazil,BR,BR,PB,PB
+geoname_id,8601945,3386467,Terra Santa,Terra Santa,Brazil,Brazil,BR,BR,PA,PA
+geoname_id,3394813,6319743,Mirador,Mirador,Brazil,Brazil,BR,BR,MA,MA
+geoname_id,3453080,3453078,Ponte Nova,Ponte Nova,Brazil,Brazil,BR,BR,MG,MG
+geoname_id,3467299,3467301,Capetinga,Capetinga,Brazil,Brazil,BR,BR,MG,MG
+geoname_id,3393789,3456559,Mundo Novo,Mundo Novo,Brazil,Brazil,BR,BR,BA,BA
+geoname_id,12229351,3461300,Independencia,Independencia,Brazil,Brazil,BR,BR,RS,RS
+geoname_id,12499077,3470597,Barra Velha,Barra Velha,Brazil,Brazil,BR,BR,SC,SC
+geoname_id,3459173,6317441,Lagoa Grande,Lagoa Grande,Brazil,Brazil,BR,BR,MG,MG
+geoname_id,3476920,6317027,Dom Bosco,Dom Bosco,Brazil,Brazil,BR,BR,MG,MG
+geoname_id,3662075,6319345,Tabatinga,Tabatinga,Brazil,Brazil,BR,BR,AM,AM
+geoname_id,11959362,3449273,Sao Domingos,Sao Domingos,Brazil,Brazil,BR,BR,SC,SC
+geoname_id,3473960,3456272,Nonoai,Nonoai,Brazil,Brazil,BR,BR,RS,RS
+geoname_id,8604177,3462439,Getulio Vargas,Getulio Vargas,Brazil,Brazil,BR,BR,RS,RS
+geoname_id,8602145,6319451,Prainha,Prainha,Brazil,Brazil,BR,BR,PA,PA
+geoname_id,6318187,6322523,Rosana,Rosana,Brazil,Brazil,BR,BR,SP,SP
+geoname_id,3406088,3406085,Barro,Barro,Brazil,Brazil,BR,BR,CE,CE
+geoname_id,3449304,6321040,Sao Desiderio,Sao Desiderio,Brazil,Brazil,BR,BR,BA,BA
+geoname_id,6317214,6319704,Governador Eugenio Barros,Governador Eugenio Barros,Brazil,Brazil,BR,BR,MA,MA
+geoname_id,3406856,6319373,Bagre,Bagre,Brazil,Brazil,BR,BR,PA,PA
+geoname_id,3471834,6323799,Araguaiana,Araguaiana,Brazil,Brazil,BR,BR,MT,MT
+geoname_id,12108378,3458237,Macaubas,Macaubas,Brazil,Brazil,BR,BR,BA,BA
+geoname_id,3456751,6320962,Morpara,Morpara,Brazil,Brazil,BR,BR,BA,BA
+geoname_id,8603881,3451750,Recreio,Recreio,Brazil,Brazil,BR,BR,MG,MG
+geoname_id,3397851,6319413,Itupiranga,Itupiranga,Brazil,Brazil,BR,BR,PA,PA
+geoname_id,12229477,3450917,Rondinha,Rondinha,Brazil,Brazil,BR,BR,RS,RS
+geoname_id,8604131,3470912,Bandeirantes,Bandeirantes,Brazil,Brazil,BR,BR,PR,PR
+geoname_id,3458341,6317497,Lunardelli,Lunardelli,Brazil,Brazil,BR,BR,PR,PR
+geoname_id,3480688,3471665,Areal,Areal,Brazil,Brazil,BR,BR,RJ,RJ
+geoname_id,3456173,3456174,Nova Esperanca,Nova Esperanca,Brazil,Brazil,BR,BR,PR,PR
+geoname_id,3466912,3466913,Carmo,Carmo,Brazil,Brazil,BR,BR,RJ,RJ
+geoname_id,6316389,6319370,Anapu,Anapu,Brazil,Brazil,BR,BR,PA,PA
+geoname_id,6317747,6323843,Nova Lacerda,Nova Lacerda,Brazil,Brazil,BR,BR,MT,MT
+geoname_id,12108334,3460542,Itororo,Itororo,Brazil,Brazil,BR,BR,BA,BA
+geoname_id,6317728,6324037,Nova Crixas,Nova Crixas,Brazil,Brazil,BR,BR,GO,GO
+geoname_id,6316382,6323900,Amaralina,Amaralina,Brazil,Brazil,BR,BR,GO,GO
+geoname_id,3390318,6319987,Ribeiro Goncalves,Ribeiro Goncalves,Brazil,Brazil,BR,BR,PI,PI
+geoname_id,3460273,3460267,Jacutinga,Jacutinga,Brazil,Brazil,BR,BR,MG,MG
+geoname_id,3472007,6316401,Antonio Joao,Antonio Joao,Brazil,Brazil,BR,BR,MS,MS
+geoname_id,3405171,3405172,Bonito,Bonito,Brazil,Brazil,BR,BR,PE,PE
+geoname_id,12141560,3449293,Sao Domingos,Sao Domingos,Brazil,Brazil,BR,BR,GO,GO
+geoname_id,3459343,3459344,Lagamar,Lagamar,Brazil,Brazil,BR,BR,MG,MG
+geoname_id,3463122,6319556,Formoso do Araguaia,Formoso do Araguaia,Brazil,Brazil,BR,BR,TO,TO
+geoname_id,3403049,3403050,Caracol,Caracol,Brazil,Brazil,BR,BR,PI,PI
+geoname_id,3456807,3456806,Monte Siao,Monte Siao,Brazil,Brazil,BR,BR,MG,MG
+geoname_id,12554189,3398054,Iracema,Iracema,Brazil,Brazil,BR,BR,CE,CE
+geoname_id,6317531,6319737,Maranhaozinho,Maranhaozinho,Brazil,Brazil,BR,BR,MA,MA
+geoname_id,12125743,6317026,Dom Aquino,Dom Aquino,Brazil,Brazil,BR,BR,MT,MT
+geoname_id,12554641,3402340,Cedro,Cedro,Brazil,Brazil,BR,BR,CE,CE
+geoname_id,3389751,6319783,Sambaiba,Sambaiba,Brazil,Brazil,BR,BR,MA,MA
+geoname_id,12024460,3448033,Sapucaia,Sapucaia,Brazil,Brazil,BR,BR,RJ,RJ
+geoname_id,3663973,6319316,Guajara,Guajara,Brazil,Brazil,BR,BR,AM,AM
+geoname_id,3476482,3472159,Anhumas,Anhumas,Brazil,Brazil,BR,BR,SP,SP
+geoname_id,12024678,3447249,Sumidouro,Sumidouro,Brazil,Brazil,BR,BR,RJ,RJ
+geoname_id,3388033,6318633,Sapucaia,Sapucaia,Brazil,Brazil,BR,BR,PA,PA
+geoname_id,3445650,3445651,Utinga,Utinga,Brazil,Brazil,BR,BR,BA,BA
+geoname_id,6317771,6323847,Nova Ubirata,Nova Ubirata,Brazil,Brazil,BR,BR,MT,MT
+geoname_id,12551227,3394878,Milha,Milha,Brazil,Brazil,BR,BR,CE,CE
+geoname_id,3401204,3401205,Curua,Curua,Brazil,Brazil,BR,BR,PA,PA
+geoname_id,3401831,6316907,Condado,Condado,Brazil,Brazil,BR,BR,PB,PB
+geoname_id,3450722,3450723,Sales,Sales,Brazil,Brazil,BR,BR,SP,SP
+geoname_id,3387922,6321060,Sento Se,Sento Se,Brazil,Brazil,BR,BR,BA,BA
+geoname_id,8603762,3469994,Biquinhas,Biquinhas,Brazil,Brazil,BR,BR,MG,MG
+geoname_id,6317580,6319424,Medicilandia,Medicilandia,Brazil,Brazil,BR,BR,PA,PA
+geoname_id,8602676,6317696,Nossa Senhora de Nazare,Nossa Senhora de Nazare,Brazil,Brazil,BR,BR,PI,PI
+geoname_id,3459518,6317399,Jucurucu,Jucurucu,Brazil,Brazil,BR,BR,BA,BA
+geoname_id,3480348,3451363,Ribeirao Bonito,Ribeirao Bonito,Brazil,Brazil,BR,BR,SP,SP
+geoname_id,12390918,3455251,Panorama,Panorama,Brazil,Brazil,BR,BR,SP,SP
+geoname_id,6316644,6323733,Brasilandia,Brasilandia,Brazil,Brazil,BR,BR,MS,MS
+geoname_id,8440220,3460548,Itiuba,Itiuba,Brazil,Brazil,BR,BR,BA,BA
+geoname_id,3405341,6319662,Bom Jardim,Bom Jardim,Brazil,Brazil,BR,BR,MA,MA
+geoname_id,3663524,6319327,Manaquiri,Manaquiri,Brazil,Brazil,BR,BR,AM,AM
+geoname_id,6317803,6324149,Novo Sao Joaquim,Novo Sao Joaquim,Brazil,Brazil,BR,BR,MT,MT
+geoname_id,6318649,6323785,Selviria,Selviria,Brazil,Brazil,BR,BR,MS,MS
+geoname_id,3460558,6323831,Itiquira,Itiquira,Brazil,Brazil,BR,BR,MT,MT
+geoname_id,3463760,3463761,Estrela,Estrela,Brazil,Brazil,BR,BR,RS,RS
+geoname_id,3448898,3448897,Sao Joao da Lagoa,Sao Joao da Lagoa,Brazil,Brazil,BR,BR,MG,MG
+geoname_id,12179408,3465542,Coracao de Jesus,Coracao de Jesus,Brazil,Brazil,BR,BR,MG,MG
+geoname_id,6316727,6323807,Campinapolis,Campinapolis,Brazil,Brazil,BR,BR,MT,MT
+geoname_id,3457362,3457363,Medeiros,Medeiros,Brazil,Brazil,BR,BR,MG,MG
+geoname_id,3445532,3445531,Vargem Bonita,Vargem Bonita,Brazil,Brazil,BR,BR,MG,MG
+geoname_id,3393051,6319695,Estreito,Estreito,Brazil,Brazil,BR,BR,MA,MA
+geoname_id,3385645,6319350,Urucurituba,Urucurituba,Brazil,Brazil,BR,BR,AM,AM
+geoname_id,7694009,3445898,Turvo,Turvo,Brazil,Brazil,BR,BR,PR,PR
+geoname_id,6318314,6318315,Santa Terezinha,Santa Terezinha,Brazil,Brazil,BR,BR,PE,PE
+geoname_id,3398205,3398207,Ingazeira,Ingazeira,Brazil,Brazil,BR,BR,PE,PE
+geoname_id,3387423,6318704,Sitio Novo do Tocantins,Sitio Novo do Tocantins,Brazil,Brazil,BR,BR,TO,TO
+geoname_id,3468326,3468327,Caete,Caete,Brazil,Brazil,BR,BR,MG,MG
+geoname_id,3451907,6318097,Quixabeira,Quixabeira,Brazil,Brazil,BR,BR,BA,BA
+geoname_id,7583518,3468899,Brotas,Brotas,Brazil,Brazil,BR,BR,SP,SP
+geoname_id,3388210,3388207,Sao Pedro,Sao Pedro,Brazil,Brazil,BR,BR,RN,RN
+geoname_id,3462499,6323827,General Carneiro,General Carneiro,Brazil,Brazil,BR,BR,MT,MT
+geoname_id,3470697,6324198,Barra do Mendes,Barra do Mendes,Brazil,Brazil,BR,BR,BA,BA
+geoname_id,3394661,6319427,Moju,Moju,Brazil,Brazil,BR,BR,PA,PA
+geoname_id,6318179,6319289,Rodrigues Alves,Rodrigues Alves,Brazil,Brazil,BR,BR,AC,AC
+geoname_id,3446587,3446599,Terra Nova,Terra Nova,Brazil,Brazil,BR,BR,BA,BA
+geoname_id,3459931,3459933,Jequitiba,Jequitiba,Brazil,Brazil,BR,BR,MG,MG
+geoname_id,3465999,6319215,Cocalinho,Cocalinho,Brazil,Brazil,BR,BR,MT,MT
+geoname_id,3448320,6321828,Sao Romao,Sao Romao,Brazil,Brazil,BR,BR,MG,MG
+geoname_id,3473955,6316954,Cristal,Cristal,Brazil,Brazil,BR,BR,RS,RS
+geoname_id,3470427,3470428,Barrinha,Barrinha,Brazil,Brazil,BR,BR,SP,SP
+geoname_id,3445539,3445543,Vargem Alegre,Vargem Alegre,Brazil,Brazil,BR,BR,MG,MG
+geoname_id,7692676,3450237,Santa Fe,Santa Fe,Brazil,Brazil,BR,BR,PR,PR
+geoname_id,3736812,6319338,Presidente Figueiredo,Presidente Figueiredo,Brazil,Brazil,BR,BR,AM,AM
+geoname_id,6317869,6323850,Paranaita,Paranaita,Brazil,Brazil,BR,BR,MT,MT
+geoname_id,3452786,6323859,Porto Esperidiao,Porto Esperidiao,Brazil,Brazil,BR,BR,MT,MT
+geoname_id,6316824,6323813,Castanheira,Castanheira,Brazil,Brazil,BR,BR,MT,MT
+geoname_id,3472442,6323796,Alto Paraguai,Alto Paraguai,Brazil,Brazil,BR,BR,MT,MT
+geoname_id,3459088,3459084,Laje,Laje,Brazil,Brazil,BR,BR,BA,BA
+geoname_id,8551281,3391196,Primavera,Primavera,Brazil,Brazil,BR,BR,PA,PA
+geoname_id,12494565,3394116,Murici,Murici,Brazil,Brazil,BR,BR,AL,AL
+geoname_id,3460725,3460724,Itapeva,Itapeva,Brazil,Brazil,BR,BR,MG,MG
+geoname_id,3403185,3403186,Capim,Capim,Brazil,Brazil,BR,BR,PB,PB
+geoname_id,3450872,6323873,Rosario Oeste,Rosario Oeste,Brazil,Brazil,BR,BR,MT,MT
+geoname_id,3456604,3456602,Mucuge,Mucuge,Brazil,Brazil,BR,BR,BA,BA
+geoname_id,3457943,6320949,Mansidao,Mansidao,Brazil,Brazil,BR,BR,BA,BA
+geoname_id,3444885,3444882,Volta Grande,Volta Grande,Brazil,Brazil,BR,BR,MG,MG
+geoname_id,3472271,3472270,Andarai,Andarai,Brazil,Brazil,BR,BR,BA,BA
+geoname_id,3454130,3454128,Pereiras,Pereiras,Brazil,Brazil,BR,BR,SP,SP
+geoname_id,3465696,6321289,Conego Marinho,Conego Marinho,Brazil,Brazil,BR,BR,MG,MG
+geoname_id,12551049,3406627,Baixio,Baixio,Brazil,Brazil,BR,BR,CE,CE
+geoname_id,12108379,3447939,Saude,Saude,Brazil,Brazil,BR,BR,BA,BA
+geoname_id,3456277,6324162,Nobres,Nobres,Brazil,Brazil,BR,BR,MT,MT
+geoname_id,6317799,6324044,Novo Planalto,Novo Planalto,Brazil,Brazil,BR,BR,GO,GO
+geoname_id,3445448,6321092,Varzea Nova,Varzea Nova,Brazil,Brazil,BR,BR,BA,BA
+geoname_id,3405145,3405239,Bom Sucesso,Bom Sucesso,Brazil,Brazil,BR,BR,PB,PB
+geoname_id,3404971,3404972,Branquinha,Branquinha,Brazil,Brazil,BR,BR,AL,AL
+geoname_id,3447573,3447572,Silveiras,Silveiras,Brazil,Brazil,BR,BR,SP,SP
+geoname_id,12551418,6316575,Boa Hora,Boa Hora,Brazil,Brazil,BR,BR,PI,PI
+geoname_id,12530833,6319322,Itapiranga,Itapiranga,Brazil,Brazil,BR,BR,AM,AM
+geoname_id,3411870,6319504,Abreulandia,Abreulandia,Brazil,Brazil,BR,BR,TO,TO
+geoname_id,7615468,3458795,Laranjal,Laranjal,Brazil,Brazil,BR,BR,PR,PR
+geoname_id,3405806,6319378,Belterra,Belterra,Brazil,Brazil,BR,BR,PA,PA
+geoname_id,3394372,3394380,Morros,Morros,Brazil,Brazil,BR,BR,MA,MA
+geoname_id,3466345,3466344,Chacara,Chacara,Brazil,Brazil,BR,BR,MG,MG
+geoname_id,12229349,3461649,Humaita,Humaita,Brazil,Brazil,BR,BR,RS,RS
+geoname_id,11962372,3446194,Tremembe,Tremembe,Brazil,Brazil,BR,BR,SP,SP
+geoname_id,3449216,3449194,Sao Felipe,Sao Felipe,Brazil,Brazil,BR,BR,BA,BA
+geoname_id,3472032,3472031,Antonio Carlos,Antonio Carlos,Brazil,Brazil,BR,BR,MG,MG
+geoname_id,6318751,6323788,Taquarussu,Taquarussu,Brazil,Brazil,BR,BR,MS,MS
+geoname_id,3462511,3462513,Gaviao,Gaviao,Brazil,Brazil,BR,BR,BA,BA
+geoname_id,3404908,3404918,Brejinho,Brejinho,Brazil,Brazil,BR,BR,PE,PE
+geoname_id,3396757,6317436,Lagoa do Mato,Lagoa do Mato,Brazil,Brazil,BR,BR,MA,MA
+geoname_id,3451423,6319985,Riacho Frio,Riacho Frio,Brazil,Brazil,BR,BR,PI,PI
+geoname_id,3411916,6319579,Muricilandia,Muricilandia,Brazil,Brazil,BR,BR,TO,TO
+geoname_id,3396828,6317428,Lagoa de Dentro,Lagoa de Dentro,Brazil,Brazil,BR,BR,PB,PB
+geoname_id,3447878,6318648,Segredo,Segredo,Brazil,Brazil,BR,BR,RS,RS
+geoname_id,3394958,6319425,Melgaco,Melgaco,Brazil,Brazil,BR,BR,PA,PA
+geoname_id,3471909,3471910,Apucarana,Apucarana,Brazil,Brazil,BR,BR,PR,PR
+geoname_id,12034833,3396517,Lajeado,Lajeado,Brazil,Brazil,BR,BR,TO,TO
+geoname_id,11960326,3451144,Rio Fortuna,Rio Fortuna,Brazil,Brazil,BR,BR,SC,SC
+geoname_id,3451122,3451123,Rio Negro,Rio Negro,Brazil,Brazil,BR,BR,MS,MS
+geoname_id,8469377,3446818,Taquaral,Taquaral,Brazil,Brazil,BR,BR,SP,SP
+geoname_id,3395852,3458112,Malhada,Malhada,Brazil,Brazil,BR,BR,BA,BA
+geoname_id,6075292,12031951,Mission,Mission,Canada,Canada,CA,CA,BC,BC
+geoname_id,6095438,12626165,Outremont,Outremont,Canada,Canada,CA,CA,QC,QC
+geoname_id,8672772,12626117,Senneville,Senneville,Canada,Canada,CA,CA,QC,QC
+geoname_id,6122709,6122708,Riversdale,Riversdale,Canada,Canada,CA,CA,NS,NS
+geoname_id,1919562,1798715,Pingshan,Pingshan,China,China,CN,CN,GD,GD
+geoname_id,7756557,12573860,Jiangxi,Jiangxi,China,China,CN,CN,JX,JX
+geoname_id,10001939,9642065,Hebeicun,Hebeicun,China,China,CN,CN,HE,HE
+geoname_id,3669214,12385149,San Pablo,San Pablo,Colombia,Colombia,CO,CO,NAR,NAR
+geoname_id,2613313,2613312,Snertinge,Snertinge,Denmark,Denmark,DK,DK,85,85
+geoname_id,359783,359781,Asyut,Asyut,Egypt,Egypt,EG,EG,AST,AST
+geoname_id,2988115,2988114,Penguily,Penguily,France,France,FR,FR,"BRE, 22","BRE, 22"
+geoname_id,3206177,11608792,Grafenberg,Grafenberg,Germany,Germany,DE,DE,BW,BW
+geoname_id,2906334,2906333,Hennickendorf,Hennickendorf,Germany,Germany,DE,DE,BB,BB
+geoname_id,2932070,2932069,Eichstätt,Eichstätt,Germany,Germany,DE,DE,BY,BY
+geoname_id,6756218,6372494,Cilongok,Cilongok,Indonesia,Indonesia,ID,ID,JT,JT
+geoname_id,1972301,1632740,Panggungrejo,Panggungrejo,Indonesia,Indonesia,ID,ID,JI,JI
+geoname_id,8074573,1964715,Semanding,Semanding,Indonesia,Indonesia,ID,ID,JT,JT
+geoname_id,6765037,6834955,Selosari,Selosari,Indonesia,Indonesia,ID,ID,JI,JI
+geoname_id,3313244,2965070,Craughwell,Craughwell,Ireland,Ireland,IE,IE,"C, G","C, G"
+geoname_id,3182286,8957439,Bastiglia,Bastiglia,Italy,Italy,IT,IT,"45, MO","45, MO"
+geoname_id,2524158,8966330,Miglierina,Miglierina,Italy,Italy,IT,IT,"78, CZ","78, CZ"
+geoname_id,11821857,1855886,Nakamura,Nakamura,Japan,Japan,JP,JP,35,35
+geoname_id,3523302,3523303,Metepec,Metepec,Mexico,Mexico,MX,MX,MEX,MEX
+geoname_id,3977506,3990615,El Cambio,El Cambio,Mexico,Mexico,MX,MX,COA,COA
+geoname_id,4006822,3977170,Emiliano Zapata,Emiliano Zapata,Mexico,Mexico,MX,MX,JAL,JAL
+geoname_id,3827598,11046151,Ojo de Agua,Ojo de Agua,Mexico,Mexico,MX,MX,MEX,MEX
+geoname_id,3526484,3526483,Joachin,Joachin,Mexico,Mexico,MX,MX,VER,VER
+geoname_id,8885159,3526668,Ixtlahuaca,Ixtlahuaca,Mexico,Mexico,MX,MX,MEX,MEX
+geoname_id,3979706,3988950,Zaragoza,Zaragoza,Mexico,Mexico,MX,MX,COA,COA
+geoname_id,3531119,11502489,San Jose Chapulco,San Jose Chapulco,Mexico,Mexico,MX,MX,PUE,PUE
+geoname_id,3532559,3532558,Soledad Atzompa,Soledad Atzompa,Mexico,Mexico,MX,MX,VER,VER
+geoname_id,8910758,4017125,Betania,Betania,Mexico,Mexico,MX,MX,JAL,JAL
+geoname_id,2592489,2592368,Dakata,Dakata,Nigeria,Nigeria,NG,NG,KN,KN
+geoname_id,3151392,3151391,Husby,Husby,Norway,Norway,NO,NO,18,18
+geoname_id,3136946,3136947,Steinkjer,Steinkjer,Norway,Norway,NO,NO,50,50
+geoname_id,3161412,3161413,Bjordal,Bjordal,Norway,Norway,NO,NO,46,46
+geoname_id,7870560,281318,Ya'bad,Ya'bad,Palestine,Palestine,PS,PS,,
+geoname_id,3929633,11083191,San Isidro,San Isidro,Peru,Peru,PE,PE,ICA,ICA
+geoname_id,3372707,3372709,Ribeira Grande,Ribeira Grande,Portugal,Portugal,PT,PT,20,20
+geoname_id,3372964,3372965,Lagoa,Lagoa,Portugal,Portugal,PT,PT,20,20
+geoname_id,2264485,2264487,Portela,Portela,Portugal,Portugal,PT,PT,14,14
+geoname_id,2736966,2736965,Outeiro,Outeiro,Portugal,Portugal,PT,PT,13,13
+geoname_id,2271387,2271386,Atalaia,Atalaia,Portugal,Portugal,PT,PT,14,14
+geoname_id,3128649,3128648,Barral,Barral,Spain,Spain,ES,ES,"GA, LU","GA, LU"
+geoname_id,2516932,6544442,Guadiaro,Guadiaro,Spain,Spain,ES,ES,"AN, CA","AN, CA"
+geoname_id,2726572,2726576,Älmhult,Älmhult,Sweden,Sweden,SE,SE,G,G
+geoname_id,2687673,2687679,Nyland,Nyland,Sweden,Sweden,SE,SE,Y,Y
+geoname_id,2715702,2715700,Fagerhult,Fagerhult,Sweden,Sweden,SE,SE,H,H
+geoname_id,604004,2688428,Norrfors,Norrfors,Sweden,Sweden,SE,SE,AC,AC
+geoname_id,1906691,1606807,Sa Kaeo,Sa Kaeo,Thailand,Thailand,TH,TH,27,27
+geoname_id,7261291,7267472,Fort Hood,Fort Hood,United States,United States,US,US,TX,TX
+subdivision_codes,1273780,1273780,Cuttack,Cuttack,India,India,IN,IN,OR,OD
+subdivision_codes,1260141,1260141,Pathalgaon,Pathalgaon,India,India,IN,IN,CT,CG
+subdivision_codes,1276436,1276436,Berināg,Berināg,India,India,IN,IN,UT,UK
+subdivision_codes,1277344,1277344,Bonaigarh,Bonaigarh,India,India,IN,IN,OR,OD
+subdivision_codes,1275649,1275649,Bilaigarh,Bilaigarh,India,India,IN,IN,CT,CG
+subdivision_codes,1277533,1277533,Baloda,Baloda,India,India,IN,IN,CT,CG
+subdivision_codes,1268031,1268031,Kānker,Kānker,India,India,IN,IN,CT,CG
+subdivision_codes,10524135,10524135,Kokapet,Kokapet,India,India,IN,IN,TG,TS
+subdivision_codes,8533699,8533699,Gajapati,Gajapati,India,India,IN,IN,OR,OD
+subdivision_codes,1269581,1269581,Jagatsinghapur,Jagatsinghapur,India,India,IN,IN,OR,OD
+subdivision_codes,11720606,11720606,Patna,Patna,India,India,IN,IN,OR,OD
+subdivision_codes,10447903,10447903,Sitapur,Sitapur,India,India,IN,IN,CT,CG
+subdivision_codes,1266128,1266128,Korāput,Korāput,India,India,IN,IN,OR,OD
+subdivision_codes,1277583,1277583,Bāliāpāl,Bāliāpāl,India,India,IN,IN,OR,OD
+subdivision_codes,8741056,8741056,Hemgir,Hemgir,India,India,IN,IN,OR,OD
+subdivision_codes,1255635,1255635,Srīnagar,Srīnagar,India,India,IN,IN,UT,UK
+subdivision_codes,1269843,1269843,Hyderabad,Hyderabad,India,India,IN,IN,TG,TS
+subdivision_codes,1258980,1258980,Raipur,Raipur,India,India,IN,IN,CT,CG
+subdivision_codes,1265767,1265767,Kūkatpalli,Kūkatpalli,India,India,IN,IN,TG,TS
+subdivision_codes,1275637,1275637,Bilāspur,Bilāspur,India,India,IN,IN,CT,CG
+subdivision_codes,1267056,1267056,Khandagiri,Khandagiri,India,India,IN,IN,OR,OD
+subdivision_codes,1263230,1263230,Medak,Medak,India,India,IN,IN,TG,TS
+subdivision_codes,1255963,1255963,Sitārganj,Sitārganj,India,India,IN,IN,UT,UK
+subdivision_codes,1253628,1253628,Uttarkāshi,Uttarkāshi,India,India,IN,IN,UT,UK
+subdivision_codes,1273313,1273313,Dehradun,Dehradun,India,India,IN,IN,UT,UK
+subdivision_codes,1252948,1252948,Warangal,Warangal,India,India,IN,IN,TG,TS
+subdivision_codes,1257542,1257542,Sambalpur,Sambalpur,India,India,IN,IN,OR,OD
+subdivision_codes,1275198,1275198,Brahmapur,Brahmapur,India,India,IN,IN,OR,OD
+subdivision_codes,1262117,1262117,Nainital,Nainital,India,India,IN,IN,UT,UK
+subdivision_codes,8740322,8740322,Rudrapur,Rudrapur,India,India,IN,IN,UT,UK
+subdivision_codes,1276159,1276159,Bhanjanagar,Bhanjanagar,India,India,IN,IN,OR,OD
+subdivision_codes,1270351,1270351,Haridwar,Haridwar,India,India,IN,IN,UT,UK
+subdivision_codes,8347656,8347656,Ramagundam,Ramagundam,India,India,IN,IN,TG,TS
+subdivision_codes,10474755,10474755,Murlinagar,Murlinagar,India,India,IN,IN,TG,TS
+subdivision_codes,1252956,1252956,Wanparti,Wanparti,India,India,IN,IN,TG,TS
+subdivision_codes,1276988,1276988,Bargarh,Bargarh,India,India,IN,IN,OR,OD
+subdivision_codes,1261029,1261029,,,India,India,IN,IN,OR,OD
+subdivision_codes,1277599,1277599,Balasore,Balasore,India,India,IN,IN,OR,OD
+subdivision_codes,1276942,1276942,Baripāda,Baripāda,India,India,IN,IN,OR,OD
+subdivision_codes,1277643,1277643,Balāngīr,Balāngīr,India,India,IN,IN,OR,OD
+subdivision_codes,11738736,11738736,Kanpur,Kanpur,India,India,IN,IN,OR,OD
+subdivision_codes,1266616,1266616,Khurda,Khurda,India,India,IN,IN,OR,OD
+subdivision_codes,1269092,1269092,Jeypore,Jeypore,India,India,IN,IN,OR,OD
+subdivision_codes,1268977,1268977,Jharsuguda,Jharsuguda,India,India,IN,IN,OR,OD
+subdivision_codes,11733784,11733784,Nuapada,Nuapada,India,India,IN,IN,OR,OD
+subdivision_codes,1258275,1258275,Rāygarh,Rāygarh,India,India,IN,IN,OR,OD
+subdivision_codes,1269477,1269477,Jājpur,Jājpur,India,India,IN,IN,OR,OD
+subdivision_codes,1258044,1258044,Roorkee,Roorkee,India,India,IN,IN,UT,UK
+subdivision_codes,1266014,1266014,Kotdwāra,Kotdwāra,India,India,IN,IN,UT,UK
+subdivision_codes,1444366,1444366,,,India,India,IN,IN,UT,UK
+subdivision_codes,1267369,1267369,Kawardha,Kawardha,India,India,IN,IN,CT,CG
+subdivision_codes,1267755,1267755,Karīmnagar,Karīmnagar,India,India,IN,IN,TG,TS
+subdivision_codes,1261258,1261258,Nizāmābād,Nizāmābād,India,India,IN,IN,TG,TS
+subdivision_codes,1269562,1269562,Jagtiāl,Jagtiāl,India,India,IN,IN,TG,TS
+subdivision_codes,1262067,1262067,Nalgonda,Nalgonda,India,India,IN,IN,TG,TS
+subdivision_codes,1270498,1270498,Haldwani,Haldwani,India,India,IN,IN,UT,UK
+subdivision_codes,1255437,1255437,Sundargarh,Sundargarh,India,India,IN,IN,OR,OD
+subdivision_codes,1259184,1259184,Puri,Puri,India,India,IN,IN,OR,OD
+subdivision_codes,1262374,1262374,Mussoorie,Mussoorie,India,India,IN,IN,UT,UK
+subdivision_codes,1267076,1267076,Khammam,Khammam,India,India,IN,IN,TG,TS
+subdivision_codes,1265938,1265938,Kottagūdem,Kottagūdem,India,India,IN,IN,TG,TS
+subdivision_codes,1258857,1258857,Rājim,Rājim,India,India,IN,IN,CT,CG
+subdivision_codes,1264414,1264414,Mahāsamund,Mahāsamund,India,India,IN,IN,CT,CG
+subdivision_codes,1272181,1272181,Durg,Durg,India,India,IN,IN,CT,CG
+subdivision_codes,1275971,1275971,Bhilai,Bhilai,India,India,IN,IN,CT,CG
+subdivision_codes,1444364,1444364,,,India,India,IN,IN,CT,CG
+subdivision_codes,1270444,1270444,Hanamkonda,Hanamkonda,India,India,IN,IN,TG,TS
+subdivision_codes,7535666,7535666,Banjara Hills,Banjara Hills,India,India,IN,IN,TG,TS
+subdivision_codes,1275391,1275391,Bodhan,Bodhan,India,India,IN,IN,TG,TS
+subdivision_codes,1267579,1267579,Kashipur,Kashipur,India,India,IN,IN,UT,UK
+subdivision_codes,1266122,1266122,Korba,Korba,India,India,IN,IN,CT,CG
+subdivision_codes,1274837,1274837,Chāmpa,Chāmpa,India,India,IN,IN,CT,CG
+subdivision_codes,10260686,10260686,Bhagwanpur,Bhagwanpur,India,India,IN,IN,UT,UK
+subdivision_codes,1257242,1257242,Sārangarh,Sārangarh,India,India,IN,IN,CT,CG
+subdivision_codes,1269578,1269578,Jagdalpur,Jagdalpur,India,India,IN,IN,CT,CG
+subdivision_codes,1278974,1278974,Almora,Almora,India,India,IN,IN,UT,UK
+subdivision_codes,1255344,1255344,Suriāpet,Suriāpet,India,India,IN,IN,TG,TS
+subdivision_codes,1266575,1266575,Kichha,Kichha,India,India,IN,IN,UT,UK
+subdivision_codes,1276328,1276328,Bhadrāchalam,Bhadrāchalam,India,India,IN,IN,TG,TS
+subdivision_codes,1276642,1276642,Bāzpur,Bāzpur,India,India,IN,IN,UT,UK
+subdivision_codes,10805650,10805650,Gadarpur,Gadarpur,India,India,IN,IN,UT,UK
+subdivision_codes,1276325,1276325,Bhadrakh,Bhadrakh,India,India,IN,IN,OR,OD
+subdivision_codes,1272997,1272997,Dhamtari,Dhamtari,India,India,IN,IN,CT,CG
+subdivision_codes,1266124,1266124,Koratla,Koratla,India,India,IN,IN,TG,TS
+subdivision_codes,1256377,1256377,Siddipet,Siddipet,India,India,IN,IN,TG,TS
+subdivision_codes,1259005,1259005,Raigarh,Raigarh,India,India,IN,IN,CT,CG
+subdivision_codes,12522576,12522576,Bhupalpally,Bhupalpally,India,India,IN,IN,TG,TS
+subdivision_codes,1269177,1269177,Jashpurnagar,Jashpurnagar,India,India,IN,IN,CT,CG
+subdivision_codes,1278827,1278827,Ambikāpur,Ambikāpur,India,India,IN,IN,CT,CG
+subdivision_codes,1278279,1278279,Āsika,Āsika,India,India,IN,IN,OR,OD
+subdivision_codes,1266843,1266843,Khatīma,Khatīma,India,India,IN,IN,UT,UK
+subdivision_codes,1279344,1279344,Adilabad,Adilabad,India,India,IN,IN,TG,TS
+subdivision_codes,1260016,1260016,Pauri,Pauri,India,India,IN,IN,UT,UK
+subdivision_codes,1277530,1277530,Baloda Bazar,Baloda Bazar,India,India,IN,IN,CT,CG
+subdivision_codes,7279597,7279597,Barbil,Barbil,India,India,IN,IN,OR,OD
+subdivision_codes,1278593,1278593,Angul,Angul,India,India,IN,IN,OR,OD
+subdivision_codes,1277514,1277514,Bālugaon,Bālugaon,India,India,IN,IN,OR,OD
+subdivision_codes,1275526,1275526,Birbhaddar,Birbhaddar,India,India,IN,IN,UT,UK
+subdivision_codes,1263936,1263936,Mancherial,Mancherial,India,India,IN,IN,TG,TS
+subdivision_codes,1271777,1271777,Gajwel,Gajwel,India,India,IN,IN,TG,TS
+subdivision_codes,7302836,7302836,Manuguru,Manuguru,India,India,IN,IN,TG,TS
+subdivision_codes,7302827,7302827,Madhira,Madhira,India,India,IN,IN,TG,TS
+subdivision_codes,1445378,1445378,Ghatkesar,Ghatkesar,India,India,IN,IN,TG,TS
+subdivision_codes,1272780,1272780,Dhenkānāl,Dhenkānāl,India,India,IN,IN,OR,OD
+subdivision_codes,1259961,1259961,Peddapalli,Peddapalli,India,India,IN,IN,TG,TS
+subdivision_codes,1258717,1258717,Rāmāyampet,Rāmāyampet,India,India,IN,IN,TG,TS
+subdivision_codes,1258128,1258128,Rishikesh,Rishikesh,India,India,IN,IN,UT,UK
+subdivision_codes,1263226,1263226,Medchal,Medchal,India,India,IN,IN,TG,TS
+subdivision_codes,1266216,1266216,Kondagaon,Kondagaon,India,India,IN,IN,CT,CG
+subdivision_codes,1261580,1261580,Nayāgarh,Nayāgarh,India,India,IN,IN,OR,OD
+subdivision_codes,1267222,1267222,Kesinga,Kesinga,India,India,IN,IN,OR,OD
+subdivision_codes,1255143,1255143,Tālcher,Tālcher,India,India,IN,IN,OR,OD
+subdivision_codes,10524114,10524114,Chandanagar,Chandanagar,India,India,IN,IN,TG,TS
+subdivision_codes,1253744,1253744,Uppal Kalan,Uppal Kalan,India,India,IN,IN,TG,TS
+subdivision_codes,8051055,8051055,Jubilee Hills,Jubilee Hills,India,India,IN,IN,TG,TS
+subdivision_codes,7302856,7302856,Serilingampalle,Serilingampalle,India,India,IN,IN,TG,TS
+subdivision_codes,1267267,1267267,Keonjhargarh,Keonjhargarh,India,India,IN,IN,OR,OD
+subdivision_codes,1277247,1277247,Bānposh,Bānposh,India,India,IN,IN,OR,OD
+subdivision_codes,1263012,1263012,Miryalaguda,Miryalaguda,India,India,IN,IN,TG,TS
+subdivision_codes,10461329,10461329,Ibrahimpatnam,Ibrahimpatnam,India,India,IN,IN,TG,TS
+subdivision_codes,1253182,1253182,Vikārābād,Vikārābād,India,India,IN,IN,TG,TS
+subdivision_codes,1272145,1272145,Dwārāhāt,Dwārāhāt,India,India,IN,IN,UT,UK
+subdivision_codes,1257890,1257890,Sadashivpet,Sadashivpet,India,India,IN,IN,TG,TS
+subdivision_codes,1258637,1258637,Ramnagar,Ramnagar,India,India,IN,IN,UT,UK
+subdivision_codes,1261288,1261288,Nirmal,Nirmal,India,India,IN,IN,TG,TS
+subdivision_codes,1444364,1444364,Chhattisgarh,Chhattisgarh,India,India,IN,IN,CT,CG
+subdivision_codes,10450332,10450332,Nehrunagar,Nehrunagar,India,India,IN,IN,TG,TS
+subdivision_codes,1278282,1278282,Asifābād,Asifābād,India,India,IN,IN,TG,TS
+subdivision_codes,1269239,1269239,Jānjgīr,Jānjgīr,India,India,IN,IN,CT,CG
+subdivision_codes,10757111,10757111,Andharibanji,Andharibanji,India,India,IN,IN,OR,OD
+subdivision_codes,1267174,1267174,Khairāgarh,Khairāgarh,India,India,IN,IN,CT,CG
+subdivision_codes,1275848,1275848,Bhongīr,Bhongīr,India,India,IN,IN,TG,TS
+subdivision_codes,8741024,8741024,Sunabeda,Sunabeda,India,India,IN,IN,OR,OD
+subdivision_codes,1261162,1261162,Nowrangapur,Nowrangapur,India,India,IN,IN,OR,OD
+subdivision_codes,1266075,1266075,Kosgi,Kosgi,India,India,IN,IN,TG,TS
+subdivision_codes,9063948,9063948,Joda,Joda,India,India,IN,IN,OR,OD
+subdivision_codes,1260393,1260393,Paradip,Paradip,India,India,IN,IN,OR,OD
+subdivision_codes,1271819,1271819,Gadwāl,Gadwāl,India,India,IN,IN,TG,TS
+subdivision_codes,1264407,1264407,Mahbūbnagar,Mahbūbnagar,India,India,IN,IN,TG,TS
+subdivision_codes,1260440,1260440,Pantnagar,Pantnagar,India,India,IN,IN,UT,UK
+subdivision_codes,1260168,1260168,Patancheru,Patancheru,India,India,IN,IN,TG,TS
+subdivision_codes,1264830,1264830,Loharsi,Loharsi,India,India,IN,IN,CT,CG
+subdivision_codes,12165955,12165955,Mulugu,Mulugu,India,India,IN,IN,TG,TS
+subdivision_codes,7302826,7302826,Lal Bahadur Nagar,Lal Bahadur Nagar,India,India,IN,IN,TG,TS
+subdivision_codes,1265208,1265208,Laksar,Laksar,India,India,IN,IN,UT,UK
+subdivision_codes,1255763,1255763,Sonepur,Sonepur,India,India,IN,IN,OR,OD
+subdivision_codes,10524208,10524208,Attapur,Attapur,India,India,IN,IN,TG,TS
+subdivision_codes,10781410,10781410,Bacheli,Bacheli,India,India,IN,IN,CT,CG
+subdivision_codes,1277535,1277535,Balod,Balod,India,India,IN,IN,CT,CG
+subdivision_codes,1269845,1269845,Huzūrnagar,Huzūrnagar,India,India,IN,IN,TG,TS
+subdivision_codes,11721392,11721392,Kalahandi,Kalahandi,India,India,IN,IN,OR,OD
+subdivision_codes,1262093,1262093,Nakrekal,Nakrekal,India,India,IN,IN,TG,TS
+subdivision_codes,1269154,1269154,Jatani,Jatani,India,India,IN,IN,OR,OD
+subdivision_codes,11185818,11185818,Manendragarh,Manendragarh,India,India,IN,IN,CT,CG
+subdivision_codes,1445800,1445800,Kondapur,Kondapur,India,India,IN,IN,TG,TS
+subdivision_codes,1267517,1267517,Katghora,Katghora,India,India,IN,IN,CT,CG
+subdivision_codes,1275050,1275050,Burla,Burla,India,India,IN,IN,OR,OD
+subdivision_codes,1263761,1263761,Manglaur,Manglaur,India,India,IN,IN,UT,UK
+subdivision_codes,1445197,1445197,Shadnagar,Shadnagar,India,India,IN,IN,TG,TS
+subdivision_codes,1258003,1258003,Rudraprayāg,Rudraprayāg,India,India,IN,IN,UT,UK
+subdivision_codes,1269846,1269846,Huzūrābād,Huzūrābād,India,India,IN,IN,TG,TS
+subdivision_codes,10774143,10774143,Vikrampur,Vikrampur,India,India,IN,IN,OR,OD
+subdivision_codes,1261823,1261823,Nārāyanpet,Nārāyanpet,India,India,IN,IN,TG,TS
+subdivision_codes,10448056,10448056,Urla,Urla,India,India,IN,IN,CT,CG
+subdivision_codes,1255381,1255381,Surajpur,Surajpur,India,India,IN,IN,CT,CG
+subdivision_codes,1275759,1275759,Bībīnagar,Bībīnagar,India,India,IN,IN,TG,TS
+subdivision_codes,1445888,1445888,Nacharām,Nacharām,India,India,IN,IN,TG,TS
+subdivision_codes,1265472,1265472,Kurud,Kurud,India,India,IN,IN,CT,CG
+subdivision_codes,10769541,10769541,Aswapuram,Aswapuram,India,India,IN,IN,TG,TS
+subdivision_codes,1333553,1333553,Bhānupratāppur,Bhānupratāppur,India,India,IN,IN,CT,CG
+subdivision_codes,1276023,1276023,Bhawānipatna,Bhawānipatna,India,India,IN,IN,OR,OD
+subdivision_codes,1270961,1270961,Gopālpur,Gopālpur,India,India,IN,IN,OR,OD
+subdivision_codes,1258455,1258455,Rānikhet,Rānikhet,India,India,IN,IN,UT,UK
+subdivision_codes,1259503,1259503,Pithorāgarh,Pithorāgarh,India,India,IN,IN,UT,UK
+subdivision_codes,1254808,1254808,Tehri,Tehri,India,India,IN,IN,UT,UK
+subdivision_codes,10447425,10447425,Nawapara,Nawapara,India,India,IN,IN,CT,CG
+subdivision_codes,1445322,1445322,Madhapur,Madhapur,India,India,IN,IN,TG,TS
+subdivision_codes,1276756,1276756,Basna,Basna,India,India,IN,IN,CT,CG
+subdivision_codes,1253656,1253656,Utai,Utai,India,India,IN,IN,CT,CG
+subdivision_codes,1260940,1260940,Padampur,Padampur,India,India,IN,IN,OR,OD
+subdivision_codes,1269807,1269807,Ïj,Ïj,India,India,IN,IN,TG,TS
+subdivision_codes,10526914,10526914,Shamirpet,Shamirpet,India,India,IN,IN,TG,TS
+subdivision_codes,1272396,1272396,Dongargarh,Dongargarh,India,India,IN,IN,CT,CG
+subdivision_codes,10526801,10526801,Jaggayyapeta,Jaggayyapeta,India,India,IN,IN,TG,TS
+subdivision_codes,10707162,10707162,Jamnipali,Jamnipali,India,India,IN,IN,CT,CG
+subdivision_codes,1257801,1257801,Sahaspur,Sahaspur,India,India,IN,IN,UT,UK
+subdivision_codes,1266348,1266348,Koīra,Koīra,India,India,IN,IN,OR,OD
+subdivision_codes,1275817,1275817,Bhubaneswar,Bhubaneswar,India,India,IN,IN,OR,OD
+subdivision_codes,12522825,12522825,Lathikata,Lathikata,India,India,IN,IN,OR,OD
+subdivision_codes,1256922,1256922,Secunderabad,Secunderabad,India,India,IN,IN,TG,TS
+subdivision_codes,1254176,1254176,Trimulgherry,Trimulgherry,India,India,IN,IN,TG,TS
+subdivision_codes,1259446,1259446,Polasara,Polasara,India,India,IN,IN,OR,OD
+subdivision_codes,12522828,12522828,Bondamunda,Bondamunda,India,India,IN,IN,OR,OD
+subdivision_codes,1278216,1278216,Āthagarh,Āthagarh,India,India,IN,IN,OR,OD
+subdivision_codes,8985975,8985975,Chuchrungpur,Chuchrungpur,India,India,IN,IN,CT,CG
+subdivision_codes,10875997,10875997,Devapur,Devapur,India,India,IN,IN,TG,TS
+subdivision_codes,10707960,10707960,Narayanpur,Narayanpur,India,India,IN,IN,CT,CG
+subdivision_codes,10750530,10750530,Lara,Lara,India,India,IN,IN,CT,CG
+subdivision_codes,10525684,10525684,Achampet,Achampet,India,India,IN,IN,TG,TS
+subdivision_codes,1261029,1261029,Odisha,Odisha,India,India,IN,IN,OR,OD
+subdivision_codes,10260622,10260622,Karaundi,Karaundi,India,India,IN,IN,UT,UK
+subdivision_codes,1262700,1262700,Motkūr,Motkūr,India,India,IN,IN,TG,TS
+subdivision_codes,10705038,10705038,Darrabhata,Darrabhata,India,India,IN,IN,CT,CG
+subdivision_codes,10525620,10525620,Aler,Aler,India,India,IN,IN,TG,TS
+subdivision_codes,1270691,1270691,Gundipet,Gundipet,India,India,IN,IN,TG,TS
+subdivision_codes,1624196,1624196,Teminabuan,Teminabuan,Indonesia,Indonesia,ID,ID,,PD
+subdivision_codes,1626542,1626542,Sorong,Sorong,Indonesia,Indonesia,ID,ID,,PD
+subdivision_codes,1520422,1520422,Abay,Abay,Kazakhstan,Kazakhstan,KZ,KZ,75,19
+subdivision_codes,1518518,1518518,Talghar,Talghar,Kazakhstan,Kazakhstan,KZ,KZ,75,19
+subdivision_codes,1524958,1524958,Burunday,Burunday,Kazakhstan,Kazakhstan,KZ,KZ,75,19
+subdivision_codes,11528071,11528071,Merey,Merey,Kazakhstan,Kazakhstan,KZ,KZ,75,19
