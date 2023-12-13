@@ -173,13 +173,10 @@ limit 1;
 +------------+-------------------------------+--------------------------------+-------------+----------+-----------+-----------------+
 | geoname_id | registered_country_geoname_id | represented_country_geoname_id | postal_code | latitude | longitude | accuracy_radius |
 +------------+-------------------------------+--------------------------------+-------------+----------+-----------+-----------------+
-|    4930956 |                       6252001 |                           NULL | 02118       |  42.3388 |  -71.0726 |             100 |
+|    4952487 |                       6252001 |                           NULL | 02777       |  41.7505 |  -71.2089 |             100 |
 +------------+-------------------------------+--------------------------------+-------------+----------+-----------+-----------------+
-1 row in set (6.16 sec)
+1 row in set (0.03 sec)
 ```
-
-While that yields the correct results, we notice that the query performed so
-poorly that it will not be practical in many applications.
 
 ### Order the table for faster searching
 
@@ -199,7 +196,7 @@ limit 1;
 +------------+-------------------------------+--------------------------------+-------------+----------+-----------+-----------------+
 | geoname_id | registered_country_geoname_id | represented_country_geoname_id | postal_code | latitude | longitude | accuracy_radius |
 +------------+-------------------------------+--------------------------------+-------------+----------+-----------+-----------------+
-|    4930956 |                       6252001 |                           NULL | 02118       |  42.3388 |  -71.0726 |             100 |
+|    4952487 |                       6252001 |                           NULL | 02777       |  41.7505 |  -71.2089 |             100 |
 +------------+-------------------------------+--------------------------------+-------------+----------+-----------+-----------------+
 1 row in set (0.00 sec)
 ```
@@ -218,7 +215,7 @@ limit 1;
 ```
 
 ```
-Empty set (52.82 sec)
+Empty set (4.45 sec)
 ```
 
 ### Break up our query for faster searching
@@ -236,14 +233,14 @@ from (
   order by network_start desc
   limit 1
 ) net
-where inet6_aton('146.243.121.22') <= network_end
+where inet6_aton('146.243.121.22') <= network_end;
 ```
 
 ```
 +------------+-------------------------------+--------------------------------+-------------+----------+-----------+-----------------+
 | geoname_id | registered_country_geoname_id | represented_country_geoname_id | postal_code | latitude | longitude | accuracy_radius |
 +------------+-------------------------------+--------------------------------+-------------+----------+-----------+-----------------+
-|    4930956 |                       6252001 |                           NULL | 02118       |  42.3388 |  -71.0726 |             100 |
+|    4952487 |                       6252001 |                           NULL | 02777       |  41.7505 |  -71.2089 |             100 |
 +------------+-------------------------------+--------------------------------+-------------+----------+-----------+-----------------+
 1 row in set (0.00 sec)
 ```
@@ -258,11 +255,11 @@ from (
   order by network_start desc
   limit 1
 ) net
-where inet6_aton('127.0.0.1') <= network_end
+where inet6_aton('127.0.0.1') <= network_end;
 ```
 
 ```
-Empty set (0.01 sec)
+Empty set (0.00 sec)
 ```
 
 Using that construct gives us good query performance for all addresses,
@@ -361,17 +358,17 @@ from (
   order by network_start desc
   limit 1
 ) net
-where inet6_aton('146.243.121.22') <= network_end
 left join geoip2_location location on (
   net.geoname_id = location.geoname_id and location.locale_code = 'en'
 )
+where inet6_aton('146.243.121.22') <= network_end;
 ```
 
 ```
 +----------+-----------+-----------------+----------------+---------------+--------------------+-----------+
 | latitude | longitude | accuracy_radius | continent_name | country_name  | subdivision_1_name | city_name |
 +----------+-----------+-----------------+----------------+---------------+--------------------+-----------+
-|  42.3388 |  -71.0726 |             100 | North America  | United States | Massachusetts      | Boston    |
+|  41.7505 |  -71.2089 |             100 | North America  | United States | Massachusetts      | Swansea   |
 +----------+-----------+-----------------+----------------+---------------+--------------------+-----------+
 1 row in set (0.00 sec)
 ```
@@ -410,7 +407,6 @@ from (
   order by network_start desc
   limit 1
 ) net
-where inet6_aton('146.243.121.22') <= network_end
 left join geoip2_location location on (
   net.geoname_id = location.geoname_id and location.locale_code = 'en'
 )
@@ -418,13 +414,18 @@ left join geoip2_location registered_country on (
   net.registered_country_geoname_id = registered_country.geoname_id
   and registered_country.locale_code = 'en'
 )
+left join geoip2_location represented_country on (
+  net.represented_country_geoname_id = represented_country.geoname_id
+  and represented_country.locale_code = 'en'
+)
+where inet6_aton('146.243.121.22') <= network_end;
 ```
 
 ```
-+----------+-----------+-----------------+----------------+---------------+--------------------+-----------+----------------+---------------+
-| latitude | longitude | accuracy_radius | continent_name | country_name  | subdivision_1_name | city_name | continent_name | country_name  |
-+----------+-----------+-----------------+----------------+---------------+--------------------+-----------+----------------+---------------+
-|  42.3388 |  -71.0726 |             100 | North America  | United States | Massachusetts      | Boston    | North America  | United States |
-+----------+-----------+-----------------+----------------+---------------+--------------------+-----------+----------------+---------------+
++----------+-----------+-----------------+-------------------------+-----------------------+-----------------------------+--------------------+-----------------------------------+---------------------------------+------------------------------------+----------------------------------+
+| latitude | longitude | accuracy_radius | location_continent_name | location_country_name | location_subdivision_1_name | location_city_name | registered_country_continent_name | registered_country_country_name | represented_country_continent_name | represented_country_country_name |
++----------+-----------+-----------------+-------------------------+-----------------------+-----------------------------+--------------------+-----------------------------------+---------------------------------+------------------------------------+----------------------------------+
+|  41.7505 |  -71.2089 |             100 | North America           | United States         | Massachusetts               | Swansea            | North America                     | United States                   | NULL                               | NULL                             |
++----------+-----------+-----------------+-------------------------+-----------------------+-----------------------------+--------------------+-----------------------------------+---------------------------------+------------------------------------+----------------------------------+
 1 row in set (0.00 sec)
 ```
