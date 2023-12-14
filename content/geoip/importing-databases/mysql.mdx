@@ -154,6 +154,9 @@ set network_start = unhex(@network_start),
     is_anycast = nullif(@is_anycast, '');
 ```
 
+Note, the data will be imported even if the CSV file has extra columns that are
+missing in the table.
+
 ### Test our table by querying it
 
 With everything loaded we're now ready to look up an IP address in the database.
@@ -177,6 +180,9 @@ limit 1;
 +------------+-------------------------------+--------------------------------+-------------+----------+-----------+-----------------+
 1 row in set (0.03 sec)
 ```
+
+While that yields the correct results, we notice that the query performance
+could be better. Let's improve it.
 
 ### Order the table for faster searching
 
