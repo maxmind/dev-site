@@ -58,6 +58,19 @@ If you are working with a different database, you can find the `Blocks` file
 schema [for the appropriate database](/geoip/docs/databases), and adapt the
 table to meet that structure.
 
+<Alert type="warning">
+
+Please note that we may add additional columns to the CSV version of our GeoIP
+databases at any time. Ideally, you will design any automated integration to
+check the columns of the CSV and build your table schema based on the actual
+columns, or remove columns from the CSV that you don't need before importing.
+
+The specific method for comparing the columns in the CSV file against the table
+schema will depend on the language you're working with and how you wish to
+handle additional data.
+
+</Alert>
+
 In this tutorial we will be creating a table to hold our network data called
 `geoip2_network`. Note that we will be using PostGreSQL's
 [`cidr`](https://www.postgresql.org/docs/current/datatype-net-types.html) type
@@ -86,18 +99,16 @@ We can now import the contents of `GeoIP2-City-Blocks-IPv4.csv` and
 `GeoIP2-City-Blocks-IPv6.csv` into the table we just created:
 
 ```sql
-\copy geoip2_network(
-  network, geoname_id, registered_country_geoname_id, represented_country_geoname_id,
-  is_anonymous_proxy, is_satellite_provider, postal_code, latitude, longitude, accuracy_radius, is_anycast
-) from 'GeoIP2-City-Blocks-IPv4.csv' with (format csv, header);
+\copy geoip2_network from 'GeoIP2-City-Blocks-IPv4.csv' with (format csv, header);
 ```
 
 ```sql
-\copy geoip2_network(
-  network, geoname_id, registered_country_geoname_id, represented_country_geoname_id,
-  is_anonymous_proxy, is_satellite_provider, postal_code, latitude, longitude, accuracy_radius, is_anycast
-) from 'GeoIP2-City-Blocks-IPv6.csv' with (format csv, header);
+\copy geoip2_network from 'GeoIP2-City-Blocks-IPv6.csv' with (format csv, header);
 ```
+
+If there are errors such as `missing data for column` or
+`extra data after last expected column`, alter the table to meet the CSV file
+structure.
 
 ### Test our table by querying it
 
@@ -118,34 +129,33 @@ We can use that to look up the `geoip2_network` entry for a given IP address
 like so:
 
 ```sql
-select * from geoip2_network where network >>= '146.243.121.22';
+select * from geoip2_network where network >>= '214.0.0.0';
 ```
 
 Which gives a result of:
 
 ```
--[ RECORD 1 ]------------------+------------------
-network                        | 146.243.120.0/22
-geoname_id                     | 4930956
+-[ RECORD 1 ]------------------+-------------
+network                        | 214.0.0.0/16
+geoname_id                     | 6252001
 registered_country_geoname_id  | 6252001
 represented_country_geoname_id |
 is_anonymous_proxy             | f
 is_satellite_provider          | f
-postal_code                    | 02118
-latitude                       | 42.3388
-longitude                      | -71.0726
-accuracy_radius                | 100
-is_anycast                     |
+postal_code                    |
+latitude                       | 37.7510
+longitude                      | -97.8220
+accuracy_radius                | 1000
+is_anycast                     | f
 
-Time: 514.003 ms
+Time: 227.970 ms
 ```
 
 ### Index our table for faster searching
 
 We can now look up an individual IP address's `latitude`, `longitude`, and
-`accuracy_radius`, but you'll notice that executing that query took over half a
-second. This isn't practical for many applications. To improve our query speed,
-we'll create an index using PostgreSQL's
+`accuracy_radius`. To improve our query speed, we'll create an index using
+PostgreSQL's
 [GiST](https://www.postgresql.org/docs/current/textsearch-indexes.html) indexing
 method. For historical reasons, we also have to specify the
 [inet_ops](https://www.postgresql.org/docs/9.5/gist-builtin-opclasses.html)
@@ -158,26 +168,26 @@ create index on geoip2_network using gist (network inet_ops);
 With that change we observe that the same query runs a lot faster:
 
 ```sql
-select * from geoip2_network net where network >>= '146.243.121.22';
+select * from geoip2_network net where network >>= '214.0.0.0';
 ```
 
 Which gives a result of:
 
 ```
--[ RECORD 1 ]------------------+------------------
-network                        | 146.243.120.0/22
-geoname_id                     | 4930956
+-[ RECORD 1 ]------------------+-------------
+network                        | 214.0.0.0/16
+geoname_id                     | 6252001
 registered_country_geoname_id  | 6252001
 represented_country_geoname_id |
 is_anonymous_proxy             | f
 is_satellite_provider          | f
-postal_code                    | 02118
-latitude                       | 42.3388
-longitude                      | -71.0726
-accuracy_radius                | 100
-is_anycast                     |
+postal_code                    |
+latitude                       | 37.7510
+longitude                      | -97.8220
+accuracy_radius                | 1000
+is_anycast                     | f
 
-Time: 9.671 ms
+Time: 9.869 ms
 ```
 
 You can now geolocate IP addresses using `latitude`, `longitude`, and
@@ -231,11 +241,7 @@ Using the file with the `-en` suffix will give us the names of geolocations in
 English:
 
 ```sql
-\copy geoip2_location(
-  geoname_id, locale_code, continent_code, continent_name, country_iso_code, country_name,
-  subdivision_1_iso_code, subdivision_1_name, subdivision_2_iso_code, subdivision_2_name,
-  city_name, metro_code, time_zone, is_in_european_union
-) from 'GeoIP2-City-Locations-en.csv' with (format csv, header);
+\copy geoip2_location from 'GeoIP2-City-Locations-en.csv' with (format csv, header);
 ```
 
 Note that there's a number of different `Locations` files available. The other
@@ -260,16 +266,20 @@ left join geoip2_location location on (
   net.geoname_id = location.geoname_id
   and location.locale_code = 'en'
 )
-where network >>= '146.243.121.22';
+where network >>= '214.0.0.0';
 ```
 
 Which gives a result of:
 
 ```
- latitude | longitude | accuracy_radius | continent_name | country_name  | subdivision_1_name | city_name
-----------+-----------+-----------------+----------------+---------------+--------------------+-----------
-  42.3388 |  -72.0726 |             100 | North America  | United States | Massachusetts      | Boston
-(1 row)
+-[ RECORD 1 ]------+--------------
+latitude           | 37.7510
+longitude          | -97.8220
+accuracy_radius    | 1000
+continent_name     | North America
+country_name       | United States
+subdivision_1_name |
+city_name          |
 ```
 
 Here we were only interested in English results, but we can adjust our join
@@ -312,20 +322,20 @@ left join geoip2_location represented_country on (
   net.represented_country_geoname_id = represented_country.geoname_id
   and represented_country.locale_code = 'en'
 )
-where network >>= '146.243.121.22';
+where network >>= '214.0.0.0';
 ```
 
 Which gives a result of:
 
 ```
 -[ RECORD 1 ]----------------------+--------------
-latitude                           | 42.3388
-longitude                          | -71.0726
-accuracy_radius                    | 100
+latitude                           | 37.7510
+longitude                          | -97.8220
+accuracy_radius                    | 1000
 location_continent_name            | North America
 location_country_name              | United States
-location_subdivision_1_name        | Massachusetts
-location_city_name                 | Boston
+location_subdivision_1_name        |
+location_city_name                 |
 registered_country_continent_name  | North America
 registered_country_country_name    | United States
 represented_country_continent_name |
