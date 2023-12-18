@@ -129,26 +129,26 @@ We can use that to look up the `geoip2_network` entry for a given IP address
 like so:
 
 ```sql
-select * from geoip2_network where network >>= '146.243.121.22';
+select * from geoip2_network where network >>= '214.0.0.0';
 ```
 
 Which gives a result of:
 
 ```
--[ RECORD 1 ]------------------+-----------------
-network                        | 146.243.120.0/23
-geoname_id                     | 4952487
+-[ RECORD 1 ]------------------+-------------
+network                        | 214.0.0.0/16
+geoname_id                     | 6252001
 registered_country_geoname_id  | 6252001
 represented_country_geoname_id |
 is_anonymous_proxy             | f
 is_satellite_provider          | f
-postal_code                    | 02777
-latitude                       | 41.7505
-longitude                      | -71.2089
-accuracy_radius                | 100
+postal_code                    |
+latitude                       | 37.7510
+longitude                      | -97.8220
+accuracy_radius                | 1000
 is_anycast                     | f
 
-Time: 240.164 ms
+Time: 227.970 ms
 ```
 
 ### Index our table for faster searching
@@ -168,26 +168,26 @@ create index on geoip2_network using gist (network inet_ops);
 With that change we observe that the same query runs a lot faster:
 
 ```sql
-select * from geoip2_network net where network >>= '146.243.121.22';
+select * from geoip2_network net where network >>= '214.0.0.0';
 ```
 
 Which gives a result of:
 
 ```
--[ RECORD 1 ]------------------+-----------------
-network                        | 146.243.120.0/23
-geoname_id                     | 4952487
+-[ RECORD 1 ]------------------+-------------
+network                        | 214.0.0.0/16
+geoname_id                     | 6252001
 registered_country_geoname_id  | 6252001
 represented_country_geoname_id |
 is_anonymous_proxy             | f
 is_satellite_provider          | f
-postal_code                    | 02777
-latitude                       | 41.7505
-longitude                      | -71.2089
-accuracy_radius                | 100
+postal_code                    |
+latitude                       | 37.7510
+longitude                      | -97.8220
+accuracy_radius                | 1000
 is_anycast                     | f
 
-Time: 7.032 ms
+Time: 9.869 ms
 ```
 
 You can now geolocate IP addresses using `latitude`, `longitude`, and
@@ -266,20 +266,20 @@ left join geoip2_location location on (
   net.geoname_id = location.geoname_id
   and location.locale_code = 'en'
 )
-where network >>= '146.243.121.22';
+where network >>= '214.0.0.0';
 ```
 
 Which gives a result of:
 
 ```
 -[ RECORD 1 ]------+--------------
-latitude           | 41.7505
-longitude          | -71.2089
-accuracy_radius    | 100
+latitude           | 37.7510
+longitude          | -97.8220
+accuracy_radius    | 1000
 continent_name     | North America
 country_name       | United States
-subdivision_1_name | Massachusetts
-city_name          | Swansea
+subdivision_1_name |
+city_name          |
 ```
 
 Here we were only interested in English results, but we can adjust our join
@@ -322,20 +322,20 @@ left join geoip2_location represented_country on (
   net.represented_country_geoname_id = represented_country.geoname_id
   and represented_country.locale_code = 'en'
 )
-where network >>= '146.243.121.22';
+where network >>= '214.0.0.0';
 ```
 
 Which gives a result of:
 
 ```
 -[ RECORD 1 ]----------------------+--------------
-latitude                           | 41.7505
-longitude                          | -71.2089
-accuracy_radius                    | 100
+latitude                           | 37.7510
+longitude                          | -97.8220
+accuracy_radius                    | 1000
 location_continent_name            | North America
 location_country_name              | United States
-location_subdivision_1_name        | Massachusetts
-location_city_name                 | Swansea
+location_subdivision_1_name        |
+location_city_name                 |
 registered_country_continent_name  | North America
 registered_country_country_name    | United States
 represented_country_continent_name |

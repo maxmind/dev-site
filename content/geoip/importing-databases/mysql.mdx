@@ -168,7 +168,7 @@ same type using MySQL's built-in `inet6_aton` function.
 select geoname_id, registered_country_geoname_id, represented_country_geoname_id,
        postal_code, latitude, longitude, accuracy_radius
 from geoip2_network
-where inet6_aton('146.243.121.22') between network_start and network_end
+where inet6_aton('214.0.0.0') between network_start and network_end
 limit 1;
 ```
 
@@ -176,7 +176,7 @@ limit 1;
 +------------+-------------------------------+--------------------------------+-------------+----------+-----------+-----------------+
 | geoname_id | registered_country_geoname_id | represented_country_geoname_id | postal_code | latitude | longitude | accuracy_radius |
 +------------+-------------------------------+--------------------------------+-------------+----------+-----------+-----------------+
-|    4952487 |                       6252001 |                           NULL | 02777       |  41.7505 |  -71.2089 |             100 |
+|    6252001 |                       6252001 |                           NULL | NULL        |   37.751 |   -97.822 |            1000 |
 +------------+-------------------------------+--------------------------------+-------------+----------+-----------+-----------------+
 1 row in set (0.03 sec)
 ```
@@ -193,7 +193,7 @@ so:
 select geoname_id, registered_country_geoname_id, represented_country_geoname_id,
        postal_code, latitude, longitude, accuracy_radius
 from geoip2_network
-where inet6_aton('146.243.121.22') between network_start and network_end
+where inet6_aton('214.0.0.0') between network_start and network_end
 order by network_end
 limit 1;
 ```
@@ -202,7 +202,7 @@ limit 1;
 +------------+-------------------------------+--------------------------------+-------------+----------+-----------+-----------------+
 | geoname_id | registered_country_geoname_id | represented_country_geoname_id | postal_code | latitude | longitude | accuracy_radius |
 +------------+-------------------------------+--------------------------------+-------------+----------+-----------+-----------------+
-|    4952487 |                       6252001 |                           NULL | 02777       |  41.7505 |  -71.2089 |             100 |
+|    6252001 |                       6252001 |                           NULL | NULL        |   37.751 |   -97.822 |            1000 |
 +------------+-------------------------------+--------------------------------+-------------+----------+-----------+-----------------+
 1 row in set (0.00 sec)
 ```
@@ -235,18 +235,18 @@ select geoname_id, registered_country_geoname_id, represented_country_geoname_id
 from (
   select *
   from geoip2_network
-  where inet6_aton('146.243.121.22') >= network_start
+  where inet6_aton('214.0.0.0') >= network_start
   order by network_start desc
   limit 1
 ) net
-where inet6_aton('146.243.121.22') <= network_end;
+where inet6_aton('214.0.0.0') <= network_end;
 ```
 
 ```
 +------------+-------------------------------+--------------------------------+-------------+----------+-----------+-----------------+
 | geoname_id | registered_country_geoname_id | represented_country_geoname_id | postal_code | latitude | longitude | accuracy_radius |
 +------------+-------------------------------+--------------------------------+-------------+----------+-----------+-----------------+
-|    4952487 |                       6252001 |                           NULL | 02777       |  41.7505 |  -71.2089 |             100 |
+|    6252001 |                       6252001 |                           NULL | NULL        |   37.751 |   -97.822 |            1000 |
 +------------+-------------------------------+--------------------------------+-------------+----------+-----------+-----------------+
 1 row in set (0.00 sec)
 ```
@@ -360,21 +360,21 @@ select latitude, longitude, accuracy_radius, continent_name, country_name, subdi
 from (
   select *
   from geoip2_network
-  where inet6_aton('146.243.121.22') >= network_start
+  where inet6_aton('214.0.0.0') >= network_start
   order by network_start desc
   limit 1
 ) net
 left join geoip2_location location on (
   net.geoname_id = location.geoname_id and location.locale_code = 'en'
 )
-where inet6_aton('146.243.121.22') <= network_end;
+where inet6_aton('214.0.0.0') <= network_end;
 ```
 
 ```
 +----------+-----------+-----------------+----------------+---------------+--------------------+-----------+
 | latitude | longitude | accuracy_radius | continent_name | country_name  | subdivision_1_name | city_name |
 +----------+-----------+-----------------+----------------+---------------+--------------------+-----------+
-|  41.7505 |  -71.2089 |             100 | North America  | United States | Massachusetts      | Swansea   |
+|   37.751 |   -97.822 |            1000 | North America  | United States | NULL               | NULL      |
 +----------+-----------+-----------------+----------------+---------------+--------------------+-----------+
 1 row in set (0.00 sec)
 ```
@@ -409,7 +409,7 @@ select latitude, longitude, accuracy_radius,
 from (
   select *
   from geoip2_network
-  where inet6_aton('146.243.121.22') >= network_start
+  where inet6_aton('214.0.0.0') >= network_start
   order by network_start desc
   limit 1
 ) net
@@ -424,14 +424,14 @@ left join geoip2_location represented_country on (
   net.represented_country_geoname_id = represented_country.geoname_id
   and represented_country.locale_code = 'en'
 )
-where inet6_aton('146.243.121.22') <= network_end;
+where inet6_aton('214.0.0.0') <= network_end;
 ```
 
 ```
 +----------+-----------+-----------------+-------------------------+-----------------------+-----------------------------+--------------------+-----------------------------------+---------------------------------+------------------------------------+----------------------------------+
 | latitude | longitude | accuracy_radius | location_continent_name | location_country_name | location_subdivision_1_name | location_city_name | registered_country_continent_name | registered_country_country_name | represented_country_continent_name | represented_country_country_name |
 +----------+-----------+-----------------+-------------------------+-----------------------+-----------------------------+--------------------+-----------------------------------+---------------------------------+------------------------------------+----------------------------------+
-|  41.7505 |  -71.2089 |             100 | North America           | United States         | Massachusetts               | Swansea            | North America                     | United States                   | NULL                               | NULL                             |
+|   37.751 |   -97.822 |            1000 | North America           | United States         | NULL                        | NULL               | North America                     | United States                   | NULL                               | NULL                             |
 +----------+-----------+-----------------+-------------------------+-----------------------+-----------------------------+--------------------+-----------------------------------+---------------------------------+------------------------------------+----------------------------------+
 1 row in set (0.00 sec)
 ```
