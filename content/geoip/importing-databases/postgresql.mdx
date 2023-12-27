@@ -72,7 +72,7 @@ handle additional data.
 </Alert>
 
 In this tutorial we will be creating a table to hold our network data called
-`geoip2_network`. Note that we will be using PostGreSQL's
+`geoip2_network`. Note that we will be using PostgreSQL's
 [`cidr`](https://www.postgresql.org/docs/current/datatype-net-types.html) type
 for the `network` column. This will allow us to to query the database more
 easily.
@@ -217,8 +217,8 @@ We'll name this table `geoip2_location`:
 create table geoip2_location (
   geoname_id int not null,
   locale_code text not null,
-  continent_code text not null,
-  continent_name text not null,
+  continent_code text,
+  continent_name text,
   country_iso_code text,
   country_name text,
   subdivision_1_iso_code text,
