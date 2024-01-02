@@ -109,20 +109,21 @@ PR whose `Firebase - Staging` GitHub workflow has run most recently.
 Whenever you create your first release note for a product category for a new
 year:
 
-1. Add a file called `<year>.mdx` to the `content/<product>/release-notes`
-folder. (e.g., `content/geoip/release-notes/2024.mdx`)
-2. Add the header to your new release note file with the title: `<Product> Release Notes`
-(e.g., `GeoIP2 Release Notes`)
-3. Add the RSS notification to the top of the new file.
-4. Change the `title:` field in the previous year's `mdx` file to read: `<Product> Release Notes - <Year> Archive`
+1. Add a file called `<year>.mdx` to the `/content/<product>/release-notes`
+folder. (e.g., `/content/geoip/release-notes/2024.mdx`)
+    - Add the header to your new release note file with the title: `<Product> Release Notes`
+(e.g., `GeoIP2 Release Notes`) and draft to `false`.
+    - Add the RSS notification to the top of the new file.
+2. Change the `title:` field in the previous year's `mdx` file to read: `<Product> Release Notes - <Year> Archive`
 (e.g., `GeoIP2 Release Notes - 2023 Archive`)
-5. Remove the RSS notification from the top of the archived file.
-6. Update link to the release notes in the navigation menu (`content/navigation.tsx`)
+    - Remove the RSS notification from the top of the archived file.
+3. Update link to the release notes in the navigation menu (`content/navigation.tsx`)
 to point to the current year's pathway.
-7. Update the URL in the JS redirects (`firebase/redirects/release-notes/current-year.js`)
+4. Update the URL in the JS redirects (`/firebase/redirects/release-notes/current-year.js`)
 to the current year's pathway.
-8. Update the URLs used to create RSS feeds (`gatsby/gatsby-config/index.ts`) to
+5. Update the URLs used to create RSS feeds (`/gatsby/gatsby-config/index.ts`) to
 the current year's pathway.
+6. Add the newly archived year to the `/templates/Page/ReleaseNotesArchiveList.tsx` file.
 
 ### Updating Example CSVs
 
