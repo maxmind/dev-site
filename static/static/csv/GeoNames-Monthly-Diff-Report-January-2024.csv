@@ -1,0 +1,129 @@
+diff_in,old_geoname_id,new_geoname_id,old_city_name,new_city_name,old_country_name,new_country_name,old_country_code,new_country_code,old_subdivision_codes,new_subdivision_codes
+city_name,3431627,3431627,Las Pipinas,Pipinas,Argentina,Argentina,AR,AR,B,B
+city_name,3433975,3433975,Jose Maria Ezeiza,Ezeiza,Argentina,Argentina,AR,AR,B,B
+city_name,3435963,3435963,Brandsen,Coronel Brandsen,Argentina,Argentina,AR,AR,B,B
+city_name,3433923,3433923,Florencio Varela,San Juan Bautista,Argentina,Argentina,AR,AR,B,B
+city_name,3427474,3427474,Villa Alsina,Valentin Alsina,Argentina,Argentina,AR,AR,B,B
+city_name,3433779,3433779,General San Martin,Ciudad del Libertador General San Martin,Argentina,Argentina,AR,AR,B,B
+city_name,3435971,3435971,Boulogne,Boulogne Sur Mer,Argentina,Argentina,AR,AR,B,B
+city_name,3429316,3429316,San Andres,Villa San Andres,Argentina,Argentina,AR,AR,B,B
+city_name,3433323,3433323,Jose Leon Suarez,Villa Jose Leon Suarez,Argentina,Argentina,AR,AR,B,B
+city_name,3427444,3427444,Villa El Cacique,Villa Cacique,Argentina,Argentina,AR,AR,B,B
+city_name,3430975,3430975,Lynch,Villa Lynch,Argentina,Argentina,AR,AR,B,B
+city_name,3427405,3427405,Villa Madero,Villa Eduardo Madero,Argentina,Argentina,AR,AR,B,B
+city_name,3427399,3427399,Villa Maria Grande,Maria Grande,Argentina,Argentina,AR,AR,E,E
+city_name,3436168,3436168,Balneario Mar Chiquita,Mar Chiquita,Argentina,Argentina,AR,AR,B,B
+city_name,3427886,3427886,Tablada,La Tablada,Argentina,Argentina,AR,AR,B,B
+city_name,3855917,3855917,Estacion Ramallo,Villa Ramallo,Argentina,Argentina,AR,AR,B,B
+city_name,3435373,3435373,Clara,Villa Clara,Argentina,Argentina,AR,AR,E,E
+city_name,3837893,3837893,San Carlos,San Carlos Minas,Argentina,Argentina,AR,AR,X,X
+city_name,3429582,3429582,Remedios de Escalada,Remedios de Escalada de San Martin,Argentina,Argentina,AR,AR,B,B
+city_name,3866308,3866308,Algarrobo,Juan Couste,Argentina,Argentina,AR,AR,B,B
+city_name,3860189,3860189,Coronel Granada,Villa Francia,Argentina,Argentina,AR,AR,B,B
+city_name,3839516,3839516,Quiroga,Alfredo Demarchi,Argentina,Argentina,AR,AR,B,B
+city_name,3859502,3859502,De la Garma,De La Garma,Argentina,Argentina,AR,AR,B,B
+city_name,3864887,3864887,Balneario Claromeco,Claromeco,Argentina,Argentina,AR,AR,B,B
+city_name,3427228,3427228,Yurucua,Yuru Cua,Argentina,Argentina,AR,AR,W,W
+city_name,3436169,3436169,Balneario Mar Azul,Mar Azul,Argentina,Argentina,AR,AR,B,B
+city_name,3428776,3428776,San Justo,Villa San Justo,Argentina,Argentina,AR,AR,E,E
+city_name,3861526,3861526,Chicligasta,Villa Chicligasta,Argentina,Argentina,AR,AR,T,T
+city_name,3855043,3855043,General Viamonte,Los Toldos,Argentina,Argentina,AR,AR,B,B
+city_name,3845391,3845391,San Isidro de Lules,Lules,Argentina,Argentina,AR,AR,T,T
+city_name,3843090,3843090,Nicolas Bruzone,Nicolas Bruzzone,Argentina,Argentina,AR,AR,X,X
+city_name,3853754,3853754,Ingenio Santa Lucia,Santa Lucia,Argentina,Argentina,AR,AR,T,T
+city_name,3853763,3853763,Ingenio Lastenia,Lastenia,Argentina,Argentina,AR,AR,T,T
+city_name,3853716,3853716,Iriarte,Colonia San Ricardo,Argentina,Argentina,AR,AR,B,B
+city_name,3863346,3863346,Calmayo,Parque Calmayo,Argentina,Argentina,AR,AR,X,X
+city_name,3865582,3865582,Araoz,Estacion Araoz,Argentina,Argentina,AR,AR,T,T
+city_name,3203521,3203521,Brcko,Brčko,Bosnia and Herzegovina,Bosnia and Herzegovina,BA,BA,BRC,BRC
+city_name,3471487,3471487,Armacao de Buzios,Armacao dos Buzios,Brazil,Brazil,BR,BR,RJ,RJ
+city_name,733264,733264,Berkovitsa Municipality,Berkovitsa,Bulgaria,Bulgaria,BG,BG,12,12
+city_name,1799355,1799355,Ningxia Hui Autonomous Region,Ningxia,China,China,CN,CN,NX,NX
+city_name,662004,662004,Ahmo,Ahmoo,Finland,Finland,FI,FI,18,18
+city_name,1819775,1819775,Ha Tsuen Shi,Ha Tsuen,Hong Kong,Hong Kong,HK,HK,NYL,NYL
+city_name,1818501,1818501,Tsimshatsui,Tsim Sha Tsui,Hong Kong,Hong Kong,HK,HK,KKC,KKC
+city_name,1819706,1819706,Jardines Lookout,Jardine's Lookout,Hong Kong,Hong Kong,HK,HK,HWC,HWC
+city_name,3489316,3489316,Newark,Newark Pen,Jamaica,Jamaica,JM,JM,12,12
+city_name,675809,675809,Iaşi,Iași County,Romania,Romania,RO,RO,IS,IS
+city_name,673612,673612,Mehedinţi,Mehedinți County,Romania,Romania,RO,RO,MH,MH
+city_name,675848,675848,Ialomiţa,Ialomița County,Romania,Romania,RO,RO,IL,IL
+city_name,679385,679385,Dâmboviţa,Dâmbovița County,Romania,Romania,RO,RO,DB,DB
+city_name,3382761,3382761,Distrikt Wanica,Wanica District,Suriname,Suriname,SR,SR,WA,WA
+city_name,2639436,2639436,Rhosllanerchrugog,Rhosllannerchrugog,United Kingdom,United Kingdom,GB,GB,"WLS, WRX","WLS, WRX"
+city_name,4492756,4492756,Southport,Smithville,United States,United States,US,US,NC,NC
+geoname_id,8598931,9535103,Pine Creek,Pine Creek,Australia,Australia,AU,AU,QLD,QLD
+geoname_id,8598863,2170723,Conway,Conway,Australia,Australia,AU,AU,QLD,QLD
+geoname_id,2607527,11903673,Mitterberg,Mitterberg,Austria,Austria,AT,AT,6,6
+geoname_id,2764486,2764485,Steindorf,Steindorf,Austria,Austria,AT,AT,6,6
+geoname_id,2776857,2776855,Harmannsdorf,Harmannsdorf,Austria,Austria,AT,AT,3,3
+geoname_id,3288237,3213603,Donja Mala,Donja Mala,Bosnia and Herzegovina,Bosnia and Herzegovina,BA,BA,BIH,BIH
+geoname_id,3194943,11205170,Modrica,Modrica,Bosnia and Herzegovina,Bosnia and Herzegovina,BA,BA,SRP,SRP
+geoname_id,6323770,6317707,Nova Andradina,Nova Andradina,Brazil,Brazil,BR,BR,MS,MS
+geoname_id,6318968,6319492,Xinguara,Xinguara,Brazil,Brazil,BR,BR,PA,PA
+geoname_id,3389134,3389141,Santo Antonio,Santo Antonio,Brazil,Brazil,BR,BR,RN,RN
+geoname_id,6323927,3468453,Cachoeira Alta,Cachoeira Alta,Brazil,Brazil,BR,BR,GO,GO
+geoname_id,11669527,6318630,Sapezal,Sapezal,Brazil,Brazil,BR,BR,MT,MT
+geoname_id,6319833,6318970,Ze Doca,Ze Doca,Brazil,Brazil,BR,BR,MA,MA
+geoname_id,3462759,6321046,Sao Gabriel,Sao Gabriel,Brazil,Brazil,BR,BR,BA,BA
+geoname_id,3405559,3405561,Boa Vista,Boa Vista,Brazil,Brazil,BR,BR,PB,PB
+geoname_id,6320911,6317345,Jaborandi,Jaborandi,Brazil,Brazil,BR,BR,BA,BA
+geoname_id,3458237,12108378,Macaubas,Macaubas,Brazil,Brazil,BR,BR,BA,BA
+geoname_id,3455638,12108275,Santa Barbara,Santa Barbara,Brazil,Brazil,BR,BR,BA,BA
+geoname_id,6323873,3450872,Rosario Oeste,Rosario Oeste,Brazil,Brazil,BR,BR,MT,MT
+geoname_id,6316352,6319222,Alto Boa Vista,Alto Boa Vista,Brazil,Brazil,BR,BR,MT,MT
+geoname_id,12150866,1812538,Dongguancun,Dongguancun,China,China,CN,CN,HE,HE
+geoname_id,1920535,1789273,Sanshui,Sanshui,China,China,CN,CN,GD,GD
+geoname_id,3830871,3667920,Sitio Nuevo,Sitio Nuevo,Colombia,Colombia,CO,CO,BOL,BOL
+geoname_id,3671655,3671651,Pueblo Nuevo,Pueblo Nuevo,Colombia,Colombia,CO,CO,COR,COR
+geoname_id,336015,336014,Gonder,Gonder,Ethiopia,Ethiopia,ET,ET,AM,AM
+geoname_id,2808479,2808478,Wilmersdorf,Wilmersdorf,Germany,Germany,DE,DE,BB,BB
+geoname_id,2881499,2881497,Landscheide,Landscheide,Germany,Germany,DE,DE,SH,SH
+geoname_id,3602052,3602046,San Juan,San Juan,Honduras,Honduras,HN,HN,IN,IN
+geoname_id,10767579,1271613,Gannavaram,Gannavaram,India,India,IN,IN,AP,AP
+geoname_id,10263309,12681642,Model Town,Model Town,India,India,IN,IN,DL,DL
+geoname_id,7532611,12685424,Saket,Saket,India,India,IN,IN,DL,DL
+geoname_id,8052102,1638082,Lemahabang,Lemahabang,Indonesia,Indonesia,ID,ID,JB,JB
+geoname_id,6598575,6397232,Bima,Bima,Indonesia,Indonesia,ID,ID,JB,JB
+geoname_id,6828795,1972150,Trajeng,Trajeng,Indonesia,Indonesia,ID,ID,JI,JI
+geoname_id,7688410,6384467,Tambakreja,Tambakreja,Indonesia,Indonesia,ID,ID,JT,JT
+geoname_id,6881886,1963190,Gedong,Gedong,Indonesia,Indonesia,ID,ID,JT,JT
+geoname_id,8423151,7334713,Pendem,Pendem,Indonesia,Indonesia,ID,ID,BA,BA
+geoname_id,8079130,1639905,Klatak,Klatak,Indonesia,Indonesia,ID,ID,JI,JI
+geoname_id,11446398,11558467,Zaimokucho,Zaimokucho,Japan,Japan,JP,JP,1,1
+geoname_id,10351756,10351336,Tokunaga,Tokunaga,Japan,Japan,JP,JP,40,40
+geoname_id,186072,11002530,Mtwapa,Mtwapa,Kenya,Kenya,KE,KE,14,14
+geoname_id,3985035,3985070,San Pedro,San Pedro,Mexico,Mexico,MX,MX,COA,COA
+geoname_id,4012934,4012922,Copala,Copala,Mexico,Mexico,MX,MX,JAL,JAL
+geoname_id,3701270,10348389,Santa Ana,Santa Ana,Panama,Panama,PA,PA,2,2
+geoname_id,1726172,1726168,Bato,Bato,Philippines,Philippines,PH,PH,"08, LEY","08, LEY"
+geoname_id,1683961,1683962,Talibon,Talibon,Philippines,Philippines,PH,PH,"07, BOH","07, BOH"
+geoname_id,1693794,1693793,Pili,Pili,Philippines,Philippines,PH,PH,"05, CAS","05, CAS"
+geoname_id,1688864,1688865,San Nicolas,San Nicolas,Philippines,Philippines,PH,PH,"01, PAN","01, PAN"
+geoname_id,1719683,1719684,Camiling,Camiling,Philippines,Philippines,PH,PH,"03, TAR","03, TAR"
+geoname_id,1692196,1710586,Quezon,Quezon,Philippines,Philippines,PH,PH,"02, ISA","02, ISA"
+geoname_id,7419953,1718193,San Pablo,San Pablo,Philippines,Philippines,PH,PH,"02, ISA","02, ISA"
+geoname_id,1679678,1679677,Wao,Wao,Philippines,Philippines,PH,PH,"14, LAS","14, LAS"
+geoname_id,1683860,1683861,Talisay,Talisay,Philippines,Philippines,PH,PH,"40, BTG","40, BTG"
+geoname_id,1688991,1688995,San Miguel,San Miguel,Philippines,Philippines,PH,PH,"08, LEY","08, LEY"
+geoname_id,1691286,1691287,Sablan,Sablan,Philippines,Philippines,PH,PH,"15, BEN","15, BEN"
+geoname_id,1689787,8235588,San Isidro,San Isidro,Philippines,Philippines,PH,PH,"07, BOH","07, BOH"
+geoname_id,7091184,1680102,Valenzuela,Valenzuela,Philippines,Philippines,PH,PH,0,0
+geoname_id,1687528,1687531,Santo Tomas,Santo Tomas,Philippines,Philippines,PH,PH,"03, PAM","03, PAM"
+geoname_id,1681802,7429469,Tinoc,Tinoc,Philippines,Philippines,PH,PH,"15, IFU","15, IFU"
+geoname_id,3372964,3372965,Lagoa,Lagoa,Portugal,Portugal,PT,PT,20,20
+geoname_id,3372707,3372709,Ribeira Grande,Ribeira Grande,Portugal,Portugal,PT,PT,20,20
+geoname_id,2735124,2735126,Rio Covo,Rio Covo,Portugal,Portugal,PT,PT,3,3
+geoname_id,552328,8253443,Karmanovo,Karmanovo,Russia,Russia,RU,RU,BA,BA
+geoname_id,7538906,827934,Dorokhovo,Dorokhovo,Russia,Russia,RU,RU,TVE,TVE
+geoname_id,6544442,2516932,Guadiaro,Guadiaro,Spain,Spain,ES,ES,"AN, CA","AN, CA"
+geoname_id,2716362,2716361,Elinge,Elinge,Sweden,Sweden,SE,SE,C,C
+geoname_id,2687679,2687673,Nyland,Nyland,Sweden,Sweden,SE,SE,Y,Y
+geoname_id,703071,687068,Lyman,Lyman,Ukraine,Ukraine,UA,UA,63,63
+geoname_id,1580101,8637696,Huong Son,Huong Son,Vietnam,Vietnam,VN,VN,23,23
+geoname_id,1574215,1574209,My An,My An,Vietnam,Vietnam,VN,VN,31,31
+subdivision_codes,3194199,3194199,Odzak,Odzak,Bosnia and Herzegovina,Bosnia and Herzegovina,BA,BA,BIH,"BIH, 02"
+subdivision_codes,11205170,11205170,Modrica,Modrica,Bosnia and Herzegovina,Bosnia and Herzegovina,BA,BA,,SRP
+subdivision_codes,1819142,1819142,Pak Shek Kok,Pak Shek Kok,Hong Kong,Hong Kong,HK,HK,,NST
+subdivision_codes,1818616,1818616,Tai Wo,Tai Wo,Hong Kong,Hong Kong,HK,HK,NKT,NTP
+subdivision_codes,1818550,1818550,Tiu Keng Leng,Tiu Keng Leng,Hong Kong,Hong Kong,HK,HK,NSK,KKT
+subdivision_codes,2272197,2272197,Alcains,Alcains,Portugal,Portugal,PT,PT,9,5
