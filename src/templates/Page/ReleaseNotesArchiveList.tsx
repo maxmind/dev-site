@@ -11,6 +11,7 @@ export interface IReleaseNotesArchiveList {
 
 const years: Record<ProductSlug, number[]> = {
   geoip: [
+    2023,
     2022,
     2021,
     2020,

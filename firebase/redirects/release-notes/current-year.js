@@ -4,7 +4,7 @@
 
 module.exports = [
   {
-    destination: '/geoip/release-notes/2023',
+    destination: '/geoip/release-notes/2024',
     source: '/geoip/release-notes',
     type: 302,
   },

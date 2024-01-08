@@ -135,7 +135,7 @@ export default {
           // in the /content/<product>/release-notes folder for that new year.
           createReleaseNotesFeed({
             description: 'Release notes for MaxMind\'s GeoIP2 product line',
-            inputUrl: '/geoip/release-notes/2023',
+            inputUrl: '/geoip/release-notes/2024',
             outputUrl: '/geoip/release-notes/rss.xml',
             title: 'GeoIP2 Release Notes',
           }),

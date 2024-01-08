@@ -121,9 +121,9 @@ folder. (e.g., `/content/geoip/release-notes/2024.mdx`)
 to point to the current year's pathway.
 4. Update the URL in the JS redirects (`/firebase/redirects/release-notes/current-year.js`)
 to the current year's pathway.
-5. Update the URLs used to create RSS feeds (`/gatsby/gatsby-config/index.ts`) to
+5. Update the URLs used to create RSS feeds (`/src/gatsby/gatsby-config/index.ts`) to
 the current year's pathway.
-6. Add the newly archived year to the `/templates/Page/ReleaseNotesArchiveList.tsx` file.
+6. Add the newly archived year to the `/src/templates/Page/ReleaseNotesArchiveList.tsx` file.
 
 ### Updating Example CSVs
 
