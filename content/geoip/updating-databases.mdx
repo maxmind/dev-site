@@ -155,7 +155,7 @@ For example, using the permalink for the GeoIP2 City CSV database, you can issue
 a command like the following:
 
 ```cli
-curl -I 'https://download.maxmind.com/app/geoip_download?edition_id=GeoIP2-City-CSV&license_key=YOUR_LICENSE_KEY&suffix=zip'
+curl -I -L 'https://download.maxmind.com/geoip/databases/GeoIP2-City-CSV/download?license_key=YOUR_LICENSE_KEY&suffix=zip'
 ```
 
 Where `YOUR_LICENSE_KEY` is a placeholder for your account’s actual license key.
