@@ -7,6 +7,29 @@ title: GeoIP2 Release Notes
 Subscribe to the [GeoIP2 release notes RSS feed](/geoip/release-notes/rss.xml).
 </Alert>
 
+<ReleaseNote date="2024-01-17" title="Presigned URLs for database downloads">
+
+We will begin using R2 presigned URLs for all database downloads in order to
+increase the security and reliability of our services.
+[Learn more about R2 presigned URLs in Cloudflare’s online documentation.](https://developers.cloudflare.com/r2/api/s3/presigned-urls/)
+
+MaxMind users who download databases should make sure that their servers can
+make HTTPS connections to the following hostname:
+
+- `mm-prod-geoip-databases.a2649acb697e2c09b632799562c076f2.r2.cloudflarestorage.com`
+
+If you download databases manually through the account portal and encounter an
+error, check your firewall and browser security settings.
+
+The R2 presigned URLs will be used for all database downloads done through the
+account portal, and all database downloads for new MaxMind accounts.
+
+We will roll out R2 presigned URLs for all downloads on older accounts on an
+incremental basis. We will email affected accounts one week before implementing
+this change.
+
+</ReleaseNote>
+
 <ReleaseNote date="2024-01-17" title="Anycast flag available for CSV format databases">
 
 The Anycast data point is now available in all CVS format databases—and, as
