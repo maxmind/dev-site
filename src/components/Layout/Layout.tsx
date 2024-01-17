@@ -20,7 +20,8 @@ interface ILayout {
   children: React.ReactNode;
   className?: string;
   description?: string;
-  hasSidebar?: boolean,
+  hasSidebar?: boolean;
+  image?: string;
   isSidebarOpen?: boolean;
   keywords?: string[];
   title: string;
@@ -33,6 +34,7 @@ const Layout: React.FC<ILayout> = (props) => {
     children,
     description,
     hasSidebar,
+    image,
     isSidebarOpen: sidebarState,
     keywords,
     title,
@@ -49,31 +51,31 @@ const Layout: React.FC<ILayout> = (props) => {
   const pageTypeClass: string | undefined = [
     'geoip',
     'minfraud',
-  ].includes(type as string)
+  ].includes(
+    type as string
+  )
     ? `page-type--${type}`
     : undefined;
 
   return (
     <div
-      className={classNames(
-        styles.container,
-        className,
-      )}
+      className={classNames(styles.container, className)}
     >
       <SEO
         bodyAttributes={{
-          class: classNames(
-            pageTypeClass,
-          ),
+          class: classNames(pageTypeClass),
         }}
         description={description}
+        image={image}
         meta={[
-          ...(keywords ? [
-            {
-              content: keywords.join(', '),
-              name: 'keywords',
-            },
-          ] : []),
+          ...(keywords
+            ? [
+              {
+                content: keywords.join(', '),
+                name: 'keywords',
+              },
+            ]
+            : []),
         ]}
         title={title}
       />
