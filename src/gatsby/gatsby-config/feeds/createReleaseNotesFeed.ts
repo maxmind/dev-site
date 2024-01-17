@@ -6,8 +6,8 @@ import type { Parent } from 'unist';
 
 interface IFeed {
   description: string;
-  inputUrl: string,
-  outputUrl: string,
+  inputUrl: string;
+  outputUrl: string;
   title: string;
 }
 
@@ -30,6 +30,7 @@ export default (feed: IFeed): any => ({
           frontmatter {
             title
             description
+            image
             keywords
             draft
           }
@@ -46,10 +47,8 @@ export default (feed: IFeed): any => ({
     const { site, allMdx } = query;
 
     return allMdx.nodes.flatMap((node: any) => {
-      const releaseNotes = (
-        node.mdxAST as Parent
-      ).children.filter((child: any) =>
-        child.name === 'ReleaseNote'
+      const releaseNotes = (node.mdxAST as Parent).children.filter(
+        (child: any) => child.name === 'ReleaseNote'
       );
 
       return releaseNotes.map((releaseNote: any) => {
@@ -82,9 +81,9 @@ export default (feed: IFeed): any => ({
           ...node.frontmatter,
           custom_elements: [
             {
-              'content:encoded': (releaseNote.children as any[]).map(
-                (child: any) => toHtml(toHast(child))
-              ).join(''),
+              'content:encoded': (releaseNote.children as any[])
+                .map((child: any) => toHtml(toHast(child)))
+                .join(''),
             },
           ],
           date: new Date(dateString),

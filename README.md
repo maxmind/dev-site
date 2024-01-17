@@ -129,3 +129,30 @@ the current year's pathway.
 
 To do this, use the `create-example-csv-zips-for-dev-site` script in the
 internal oneoffs repository.
+
+### Adding Page Metadata for SEO and Social Sharing
+
+#### Adding a description
+In the markdown (mdx) file, add a `description` to the frontmatter located at the top of the file:
+```
+---
+draft: false
+title: GeoIP2 is the best
+description: GeoIP2 is the bestest IP Intelligence product suite ever made
+---
+```
+
+#### Adding an image
+
+1. Add your image to the [static/images](static/images) directory.
+
+2. In the markdown (mdx) file, add the path to the `image` key in the frontmatter located at the top of the file. **Do not include `static` to the path.** For example, if your file is at `static/images/geoip2-so-cool.gif`, your frontmatter would look like:
+
+```
+---
+draft: false
+title: GeoIP2 is the best
+description: GeoIP2 is the bestest IP Intelligence product suite ever made
+image: /images/geoip2-so-cool.gif
+---
+```

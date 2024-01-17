@@ -13,11 +13,12 @@ import Helmet, { HelmetProps } from 'react-helmet';
 
 export interface ISEO extends HelmetProps {
   description?: string;
+  image?: string;
   lang?: string;
 }
 
 const SEO: React.FC<ISEO> = (props) => {
-  const { bodyAttributes, description, lang, meta = [], title } = props;
+  const { bodyAttributes, description, image, lang, meta = [], title } = props;
   const { site } = useStaticQuery(
     graphql`
       query {
@@ -35,6 +36,11 @@ const SEO: React.FC<ISEO> = (props) => {
 
   const metaDescription = description || site.siteMetadata.description;
 
+  const metaImage = new URL(
+    image ?? '/images/og-image.jpg',
+    site.siteMetadata.siteUrl
+  ).href;
+
   return (
     <Helmet
       bodyAttributes={bodyAttributes}
@@ -43,9 +49,8 @@ const SEO: React.FC<ISEO> = (props) => {
       }}
       link={[
         {
-          href:
-            `${site.siteMetadata.siteUrl}${useLocation()?.pathname}`,
-          rel:'canonical',
+          href: `${site.siteMetadata.siteUrl}${useLocation()?.pathname}`,
+          rel: 'canonical',
         },
       ]}
       meta={[
@@ -66,6 +71,10 @@ const SEO: React.FC<ISEO> = (props) => {
           property: 'og:type',
         },
         {
+          content: metaImage,
+          property: 'og:image',
+        },
+        {
           content: 'summary',
           name: 'twitter:card',
         },
@@ -80,6 +89,10 @@ const SEO: React.FC<ISEO> = (props) => {
         {
           content: metaDescription,
           name: 'twitter:description',
+        },
+        {
+          content: metaImage,
+          name: 'twitter:image',
         },
         {
           content: 'jzxJA9mJTD-WTNDG-fbAdNT-thiZRme30MvnzuXMxsQ',

@@ -2,13 +2,14 @@ export interface IBaseQuery {
   fields: {
     slug: string;
   };
-  fileAbsolutePath: string,
+  fileAbsolutePath: string;
   frontmatter: {
     description: string;
     draft: boolean;
+    image: string;
     keywords: string[];
     title: string;
-  }
+  };
 }
 
 export const BaseQuery = `
@@ -20,6 +21,7 @@ export const BaseQuery = `
     frontmatter {
       title
       description
+      image
       keywords
       draft
     }

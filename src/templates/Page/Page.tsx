@@ -2,10 +2,7 @@ import { useLocation } from '@reach/router';
 import classNames from 'classnames';
 import PropTypes from 'prop-types';
 import React from 'react';
-import {
-  FaArrowLeft,
-  FaArrowRight,
-} from 'react-icons/fa';
+import { FaArrowLeft, FaArrowRight } from 'react-icons/fa';
 
 import Layout from '../../components/Layout/Layout';
 import Link from '../../components/Link';
@@ -29,7 +26,7 @@ const Page: React.FC<IPage> = (props) => {
     customTableOfContents: tableOfContents,
   } = props.pageContext;
   const location = useLocation();
-  const { description, keywords, title } = frontmatter;
+  const { description, keywords, image, title } = frontmatter;
   const { modifiedTime } = parent || {};
 
   let type;
@@ -54,6 +51,7 @@ const Page: React.FC<IPage> = (props) => {
   return (
     <Layout
       description={description}
+      image={image}
       keywords={keywords}
       title={title}
       type={type as 'minfraud' | 'geoip'}
@@ -75,25 +73,24 @@ const Page: React.FC<IPage> = (props) => {
         </header>
 
         <>
-          { tableOfContents !== null && (
+          {tableOfContents !== null && (
             <aside
               className={styles.aside}
             >
-              { !isReleaseNotesPage &&
-            tableOfContents &&
-            tableOfContents.items?.length > 0 &&
-            (
-              <TableOfContents
-                className={styles.tableOfContents}
-                items={tableOfContents.items}
-              />
-            )}
-              { isReleaseNotesPage &&
-              <ReleaseNotesArchiveList
-                className={styles.tableOfContents}
-                type={type as 'minfraud' | 'geoip'}
-              />
-              }
+              {!isReleaseNotesPage &&
+                tableOfContents &&
+                tableOfContents.items?.length > 0 && (
+                <TableOfContents
+                  className={styles.tableOfContents}
+                  items={tableOfContents.items}
+                />
+              )}
+              {isReleaseNotesPage && (
+                <ReleaseNotesArchiveList
+                  className={styles.tableOfContents}
+                  type={type as 'minfraud' | 'geoip'}
+                />
+              )}
             </aside>
           )}
         </>
