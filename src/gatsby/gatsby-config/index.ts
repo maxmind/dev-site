@@ -141,7 +141,7 @@ export default {
           }),
           createReleaseNotesFeed({
             description: 'Release notes for MaxMind\'s minFraud product line',
-            inputUrl: '/minfraud/release-notes/2023',
+            inputUrl: '/minfraud/release-notes/2024',
             outputUrl: '/minfraud/release-notes/rss.xml',
             title: 'minFraud Release Notes',
           }),
