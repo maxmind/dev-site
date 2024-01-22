@@ -53,7 +53,7 @@ const navigation: IItem[] = [
       {
         hasDivider: true,
         title: 'Release Notes',
-        to: '/minfraud/release-notes/2023',
+        to: '/minfraud/release-notes/2024',
       },
       {
         title: 'Sandbox Environment',

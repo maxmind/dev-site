@@ -1,0 +1,25 @@
+---
+draft: false
+title: minFraud Release Notes
+---
+
+<Alert type="info">
+Subscribe to the [minFraud release notes RSS feed](/minfraud/release-notes/rss.xml).
+</Alert>
+
+<ReleaseNote date="2024-01-22" title="minFraud no longer accepts event times more than one year in the past">
+
+Starting tomorrow, January 23, 2024, minFraud will no longer accept
+`/event/time` inputs with values more than one year in the past. Most customers
+do not need to send the `/event/time` input and will not be impacted by this
+change.
+[Learn more about this input and how to use it to score historical transactions on our Knowledge Base.](https://support.maxmind.com/hc/en-us/articles/5452006111003-Event-and-Account-Inputs#h_01G0Z3WBNAP5Y8WNRR156EJBBF)
+
+If you send the `/event/time` inputs with values more than one year in the past,
+minFraud will:
+
+- replace the event time with the current time
+- score the transaction and return a score
+- return an `INPUT_INVALID` warning with its response
+
+</ReleaseNote>

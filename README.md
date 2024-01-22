@@ -117,7 +117,7 @@ folder. (e.g., `/content/geoip/release-notes/2024.mdx`)
 2. Change the `title:` field in the previous year's `mdx` file to read: `<Product> Release Notes - <Year> Archive`
 (e.g., `GeoIP2 Release Notes - 2023 Archive`)
     - Remove the RSS notification from the top of the archived file.
-3. Update link to the release notes in the navigation menu (`content/navigation.tsx`)
+3. Update link to the release notes in the navigation menu (`/content/navigation.tsx`)
 to point to the current year's pathway.
 4. Update the URL in the JS redirects (`/firebase/redirects/release-notes/current-year.js`)
 to the current year's pathway.

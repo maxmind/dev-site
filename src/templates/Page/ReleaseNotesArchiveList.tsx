@@ -24,6 +24,7 @@ const years: Record<ProductSlug, number[]> = {
     2013,
   ],
   minfraud: [
+    2023,
     2022,
     2021,
     2020,
