@@ -155,10 +155,16 @@ be found in the
 section of your account portal.
 
 For example, using the permalink for the GeoIP2 City CSV database, you can issue
-a command like the following:
+a `curl` command like the following:
 
 ```cli
 curl -I -L -u YOUR_ACCOUNT_ID:YOUR_LICENSE_KEY 'https://download.maxmind.com/geoip/databases/GeoIP2-City-CSV/download?suffix=zip'
+```
+
+Or a `wget` command like the following:
+
+```cli
+wget -S --method HEAD --user=YOUR_ACCOUNT_ID --password=YOUR_LICENSE_KEY 'https://download.maxmind.com/geoip/databases/GeoIP2-City-CSV/download?suffix=zip'
 ```
 
 Where `YOUR_ACCOUNT_ID` is a placeholder for your account’s actual account ID
