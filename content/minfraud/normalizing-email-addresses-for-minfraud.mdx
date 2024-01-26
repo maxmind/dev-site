@@ -41,7 +41,7 @@ yourself. Below are the steps to take to do this.
    email local part with the subdomain (i.e., `alias@user.fastmail.com` is
    replaced with `user@fastmail.com`).
 1. Fix common typos in domain names. You can see a list of typos we map in our
-   [Java client API](https://github.com/maxmind/minfraud-api-java/blob/main/src/main/java/com/maxmind/minfraud/request/Email.java#L24).
+   [Java client API](https://github.com/maxmind/minfraud-api-java/blob/main/src/main/java/com/maxmind/minfraud/request/Email.java#L26).
 1. Remove alias parts from the local part. For addresses at the `yahoo.com`
    domain, or other domains affiliated with Yahoo, this is everything after and
    including the first `-` character, if present. For addresses with all other
@@ -57,8 +57,8 @@ You can review the code in our client APIs see how to normalize an email address
 in various languages.
 
 - [.NET (C#)](https://github.com/maxmind/minfraud-api-dotnet/blob/main/MaxMind.MinFraud/Request/Email.cs#L150)
-- [Java](https://github.com/maxmind/minfraud-api-java/blob/main/src/main/java/com/maxmind/minfraud/request/Email.java#L158)
+- [Java](https://github.com/maxmind/minfraud-api-java/blob/main/src/main/java/com/maxmind/minfraud/request/Email.java#L169)
 - [JavaScript](https://github.com/maxmind/minfraud-api-node/blob/main/src/request/email.ts#L75)
 - [PHP](https://github.com/maxmind/minfraud-api-php/blob/main/src/MinFraud/Util.php#L34)
-- [Python](https://github.com/maxmind/minfraud-api-python/blob/main/minfraud/request.py#L68)
-- [Ruby](https://github.com/maxmind/minfraud-api-ruby/blob/main/lib/minfraud/components/email.rb#L77)
+- [Python](https://github.com/maxmind/minfraud-api-python/blob/main/minfraud/request.py#L83)
+- [Ruby](https://github.com/maxmind/minfraud-api-ruby/blob/main/lib/minfraud/components/email.rb#L84)
