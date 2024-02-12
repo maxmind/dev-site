@@ -98,7 +98,11 @@ automatically keep your GeoLite2 binary format databases up to date.
 
 GeoLite2 CSV databases are released in the same basic format as our
 [GeoIP2 CSV databases](/geoip/docs/databases/city-and-country#csv-databases),
-but they may contain fewer data points.
+but they may contain fewer data points. To support a seamless upgrade to GeoIP2,
+and to allow the GeoIP databases to continue to be drop-in replacements for
+GeoLite database, GeoLite 2 CSV databases include the Anycast field as a data
+point. This field is left intentionally blank and will not be populated in
+GeoLIte2 CSV databases.
 
 ### Web services
 
