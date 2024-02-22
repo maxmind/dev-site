@@ -13,7 +13,7 @@ title: Updating GeoIP and GeoLite Databases
 
 </Alert>
 
-There are two methods for automatically updating GeoIP2 and GeoIP Legacy binary
+There are two methods for automatically updating GeoIP2 and GeoLite binary
 databases:
 
 1. Using MaxMind's
@@ -27,7 +27,7 @@ the CSV-format databases must use the direct download method.
 ## Using GeoIP Update
 
 MaxMind provides the GeoIP Update program, which performs automatic updates for
-both GeoIP2, GeoIP Legacy, and GeoLite2 binary databases.
+both GeoIP2 and GeoLite2 binary databases.
 
 MaxMind uses R2 presigned URLs for database downloads. Make sure that your
 servers can make HTTPS connections to the following hostname:
@@ -129,23 +129,6 @@ servers can make HTTPS connections to the following hostname:
 
 - `mm-prod-geoip-databases.a2649acb697e2c09b632799562c076f2.r2.cloudflarestorage.com`
 
-For example, using the permalink for the GeoIP2 City CSV database, you can issue
-a `curl` command like the following:
-
-```cli
-curl -O -J -L -u YOUR_ACCOUNT_ID:YOUR_LICENSE_KEY 'https://download.maxmind.com/geoip/databases/GeoIP2-City-CSV/download?suffix=zip'
-```
-
-Or a `wget` command like the following:
-
-```cli
-wget --content-disposition --user=YOUR_ACCOUNT_ID --password=YOUR_LICENSE_KEY 'https://download.maxmind.com/geoip/databases/GeoIP2-City-CSV/download?suffix=zip'
-```
-
-Where `YOUR_ACCOUNT_ID` is a placeholder for your account’s actual account ID
-and `YOUR_LICENSE_KEY` is a placeholder for your account’s actual license key.
-[Learn more about license keys on our knowledge base](https://support.maxmind.com/hc/en-us/articles/4407116112539-Using-License-Keys).
-
 To directly download databases, follow these steps:
 
 1. In the “Download Links” column, click “Get Permalink(s)” for the desired
@@ -164,6 +147,32 @@ To directly download databases, follow these steps:
 This download will return a compressed file in gzip (for binary) or zip (for
 CSV) format, which can be uncompressed using a program like
 [7-Zip](https://www.7-zip.org/) or [gzip](https://www.gzip.org/).
+
+For example, using the permalink for the GeoIP2 City CSV database, you can issue
+a `curl` command like the following:
+
+```cli
+curl -O -J -L -u YOUR_ACCOUNT_ID:YOUR_LICENSE_KEY 'https://download.maxmind.com/geoip/databases/GeoIP2-City-CSV/download?suffix=zip'
+```
+
+Or a `wget` command like the following:
+
+```cli
+wget --content-disposition --user=YOUR_ACCOUNT_ID --password=YOUR_LICENSE_KEY 'https://download.maxmind.com/geoip/databases/GeoIP2-City-CSV/download?suffix=zip'
+```
+
+Where `YOUR_ACCOUNT_ID` is a placeholder for your account ID and
+`YOUR_LICENSE_KEY` is a placeholder for your license key.
+[Learn more about license keys on our knowledge base](https://support.maxmind.com/hc/en-us/articles/4407116112539-Using-License-Keys).
+
+These examples will save the database to a file called
+`GeoIP2-City-CSV_YYYYMMDD.zip` where YYYYMMDD is the date of the latest release.
+
+We also maintain example zip files on the corresponding GeoIP database
+documentation pages (see
+[the GeoIP City example file](/geoip/docs/databases/city-and-country/#example-files)),
+and
+[tutorials for importing CSV databases into SQL](/geoip/importing-databases).
 
 ### Checking for the Latest Release Date
 
@@ -185,6 +194,10 @@ Or a `wget` command like the following:
 ```cli
 wget -S --method HEAD --user=YOUR_ACCOUNT_ID --password=YOUR_LICENSE_KEY 'https://download.maxmind.com/geoip/databases/GeoIP2-City-CSV/download?suffix=zip'
 ```
+
+Where `YOUR_ACCOUNT_ID` is a placeholder for your account ID and
+`YOUR_LICENSE_KEY` is a placeholder for your license key.
+[Learn more about license keys on our knowledge base](https://support.maxmind.com/hc/en-us/articles/4407116112539-Using-License-Keys).
 
 In the response, you can check the `last-modified` header for the file’s build
 date, or you can check the `content-disposition` header for the date that would
