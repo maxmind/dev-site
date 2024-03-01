@@ -136,6 +136,10 @@ const navigation: IItem[] = [
         to: '/geoip/privacy-exclusions-api',
       },
       {
+        title: 'License Key Validation API',
+        to: '/geoip/license-key-validation-api',
+      },
+      {
         hasDivider: true,
         secondaryItems: [
           {
