@@ -5,8 +5,7 @@ title: Updating GeoIP and GeoLite Databases
 
 <Alert type="warning">
   In January 2024, we began using R2 presigned URLs for all database downloads.
-  This means that we will begin returning redirects on our database download
-  links. Make sure that your servers can make HTTPS connections to the following
+  Make sure that your servers can make HTTPS connections to the following
   hostname:
 
 - `mm-prod-geoip-databases.a2649acb697e2c09b632799562c076f2.r2.cloudflarestorage.com`
@@ -126,9 +125,8 @@ In order to download the databases from a script or program, please use the
 permalinks found on the
 [GeoIP download page](https://www.maxmind.com/en/accounts/current/geoip/downloads).
 Please note that you will be redirected from these permalinks because MaxMind
-uses R2 presigned URLs for database downloads. This means that we will begin
-returning redirects on our database download links. You should make sure that
-your servers can make HTTPS connections to the following hostname:
+uses R2 presigned URLs for database downloads. You should make sure that your
+servers can make HTTPS connections to the following hostname:
 
 - `mm-prod-geoip-databases.a2649acb697e2c09b632799562c076f2.r2.cloudflarestorage.com`
 
