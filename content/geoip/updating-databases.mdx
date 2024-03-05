@@ -5,7 +5,9 @@ title: Updating GeoIP and GeoLite Databases
 
 <Alert type="warning">
   In January 2024, we began using R2 presigned URLs for all database downloads.
-  Make sure that your servers can make HTTPS connections to the following
+  You should make sure that your HTTP client follows redirects and there are no
+  proxy or firewall settings that would block requests to the host we are
+  redirecting to. We will redirect requests using HTTPS on the following
   hostname:
 
 - `mm-prod-geoip-databases.a2649acb697e2c09b632799562c076f2.r2.cloudflarestorage.com`

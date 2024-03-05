@@ -64,14 +64,14 @@ are also a minFraud user,
 <ReleaseNote date="2024-01-17" title="Presigned URLs for database downloads">
 
 We will begin using R2 presigned URLs for all database downloads in order to
-increase the security and reliability of our services. You should make sure that
-your downloading servers don't have any proxies or firewall settings that would
-block the host we are redirecting to.
+increase the security and reliability of our services.
 
 **What do I need to do?**
 
-MaxMind users who download databases should make sure that their servers can
-make HTTPS connections to the following hostname:
+MaxMind users who download databases should make sure that their HTTP client
+follows redirects and there are no proxy or firewall settings that would block
+requests to the host we are redirecting to. We will redirect requests using
+HTTPS on the following hostname:
 
 - `mm-prod-geoip-databases.a2649acb697e2c09b632799562c076f2.r2.cloudflarestorage.com`
 
