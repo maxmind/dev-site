@@ -65,27 +65,40 @@ are also a minFraud user,
 
 We will begin using R2 presigned URLs for all database downloads in order to
 increase the security and reliability of our services.
-[Learn more about R2 presigned URLs in Cloudflare’s online documentation.](https://developers.cloudflare.com/r2/api/s3/presigned-urls/)
 
-MaxMind users who download databases should make sure that their servers can
-make HTTPS connections to the following hostname:
+**What do I need to do?**
+
+MaxMind users who download databases should make sure that their HTTP client
+follows redirects and there are no proxy or firewall settings that would block
+requests to the host we are redirecting to. We will redirect requests using
+HTTPS on the following hostname:
 
 - `mm-prod-geoip-databases.a2649acb697e2c09b632799562c076f2.r2.cloudflarestorage.com`
 
-The permalinks from the download page in your
-[account portal](https://www.maxmind.com/en/accounts/current/geoip/downloads)
-(login required) will not be changing. You will be redirected from those
-permalinks to the R2 presigned URLs.
+**If you use a direct-download method (most CSV downloaders):**
 
-If you download databases manually through the account portal and encounter an
-error, check your firewall and browser security settings.
+The permalinks from the download page in your account portal will not be
+changing. You will be redirected from those permalinks to the R2 presigned URLs.
 
-The R2 presigned URLs will be used for all database downloads done through the
-account portal, and all database downloads for new MaxMind accounts.
+You can test to ensure that your server is properly configured by getting a
+permalink from the account portal and using this permalink with the `curl` or
+`wget` examples in
+[our documentation on directly downloading databases](/geoip/updating-databases/#directly-downloading-databases).
 
-We will roll out R2 presigned URLs for all downloads on older accounts on an
-incremental basis. We will email affected accounts before implementing this
-change.
+**If you use `geoipupdate` (most MMDB downloaders):**
+
+We will be releasing a new major version that uses redirecting links. You can
+test your server configuration by updating to this new major version in a
+controlled environment before updating your version on production.
+
+**If you download directly from the account portal:**
+
+Check your firewall and browser security settings if you get errors when trying
+to download.
+
+**If you need more help:**
+
+[Review our documentation on how to update and download databases.](/geoip/updating-databases/)
 
 </ReleaseNote>
 
