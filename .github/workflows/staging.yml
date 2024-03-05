@@ -216,7 +216,7 @@ jobs:
           service_account_key: ${{ env.FIREBASE_SERVICE_ACCOUNT }}
           export_default_credentials: true
 
-      # Dependencies are needed here to run `npm exec -- firbase` command
+      # Dependencies are needed here to run `npm exec -- firebase` command
       - name: Get cached dependencies
         uses: actions/cache@v3
         with:
