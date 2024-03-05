@@ -17,6 +17,14 @@ const falsePositives = [
   'https://www.nuget.org/packages/MaxMind.GeoIP2/',
   'https://www.nuget.org/packages/MaxMind.MinFraud',
   'https://www.rubydoc.info/gems/minfraud/',
+
+  // Pages have <link> elements with rel="canonical" that point to their path
+  // on dev.maxmind.com. This causes us to try to find the page on the prod
+  // site. For new pages this is a problem since the page doesn't exist there
+  // yet. We could potentially get the href in these elements to point to the
+  // staging site URL, but it does not look trivial. As such, ignore these
+  // links as a workaround. See #187152961.
+  'https://dev.maxmind.com',
 ];
 
 
