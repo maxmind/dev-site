@@ -6,18 +6,31 @@ title: MaxMind Server IP Addresses
 import { FaRss as RssFeed } from 'react-icons/fa';
 import { RiBracesFill as JsonFeed } from 'react-icons/ri';
 
-This page lists the IP addresses that may be used by our \*.maxmind.com API
-hostnames. We strongly encourage you to use DNS rather than hardcode our IPs.
-Not all IPs listed on this page will be in use at a given time. The IPs returned
-in DNS could change at any time. Note that the IPs below don’t apply to the
-`www.maxmind.com` hostname, which could use any IP and changes frequently.
+<Alert type="warning">
+
+In January 2024, we began using R2 presigned URLs for all database downloads.
+Database downloads will no longer use the IP addresses specified below.
+
+For information about IP addresses used to serve database downloads see
+[the appropriate section below](#database-download-ip-addresses).
+
+[Read our release note for more information.](/geoip/release-notes/2024#presigned-urls-for-database-downloads)
+
+</Alert>
+
+This page lists the IP addresses that may be used for minFraud, GeoIP, and
+GeoLite web service requests by our \*.maxmind.com API hostnames. We strongly
+encourage you to use DNS rather than hardcode our IPs. Not all IPs listed on
+this page will be in use at a given time. The IPs returned in DNS could change
+at any time. Note that the IPs below don’t apply to the `www.maxmind.com`
+hostname, which could use any IP and changes frequently.
 
 <IpAddresses />
 
 ## Monitoring Changes
 
 MaxMind provides RSS and JSON feeds, allowing you to monitor changes to our
-server IP addresses.
+minFraud, GeoIP, and GeoLite web service server IP addresses.
 
 <LinkGroupContainer>
   <LinkGroup>
@@ -35,3 +48,12 @@ server IP addresses.
     />
   </LinkGroup>
 </LinkGroupContainer>
+
+## Database download IP addresses
+
+MaxMind uses Cloudflare to serve our GeoIP and GeoLite database downloads.
+
+[You can view a list of Cloudflare IP ranges that may be used to serve MaxMind database downloads on their website.](https://www.cloudflare.com/ips/)
+
+Cloudflare also maintains
+[an API that can be used to retrieve the list of Cloudflare IP ranges](https://developers.cloudflare.com/api/operations/cloudflare-i-ps-cloudflare-ip-details).

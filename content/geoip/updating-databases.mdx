@@ -126,7 +126,9 @@ permalinks found on the
 [GeoIP download page](https://www.maxmind.com/en/accounts/current/geoip/downloads).
 Please note that you will be redirected from these permalinks because MaxMind
 uses R2 presigned URLs for database downloads. You should make sure that your
-servers can make HTTPS connections to the following hostname:
+HTTP client follows redirects and there are no proxy or firewall settings that
+would block requests to the host we are redirecting to. We will redirect
+requests using HTTPS on the following hostname:
 
 - `mm-prod-geoip-databases.a2649acb697e2c09b632799562c076f2.r2.cloudflarestorage.com`
 
