@@ -94,7 +94,7 @@ const Footer: React.FC<React.HTMLProps<HTMLDivElement>> = (props) => {
           </a>
           <a
             className={styles.link}
-            href="https://dev.maxmind.com/geoip/geoip2/geolite2"
+            href="/geoip/geoip2/geolite2"
           >
             GeoLite2 Free Geolocation Data
           </a>
@@ -201,19 +201,19 @@ const Footer: React.FC<React.HTMLProps<HTMLDivElement>> = (props) => {
           </h3>
           <a
             className={styles.link}
-            href="https://dev.maxmind.com/"
+            href="/"
           >
             Developer Portal
           </a>
           <a
             className={styles.link}
-            href="https://dev.maxmind.com/minfraud/"
+            href="/minfraud/"
           >
             minFraud
           </a>
           <a
             className={styles.link}
-            href="https://dev.maxmind.com/geoip/"
+            href="/geoip/"
           >
             GeoIP
           </a>
