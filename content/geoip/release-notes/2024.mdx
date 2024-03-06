@@ -64,7 +64,8 @@ are also a minFraud user,
 <ReleaseNote date="2024-01-17" title="Presigned URLs for database downloads">
 
 We will begin using R2 presigned URLs for all database downloads in order to
-increase the security and reliability of our services.
+increase the security and reliability of our services. Database download links
+and integration methods will not be changing.
 
 **What do I need to do?**
 
@@ -77,13 +78,8 @@ HTTPS on the following hostname:
 
 **If you use a direct-download method (most CSV downloaders):**
 
-The permalinks from the download page in your account portal will not be
-changing. You will be redirected from those permalinks to the R2 presigned URLs.
-
-You can test to ensure that your server is properly configured by getting a
-permalink from the account portal and using this permalink with the `curl` or
-`wget` examples in
-[our documentation on directly downloading databases](/geoip/updating-databases/#directly-downloading-databases).
+The permalinks for downloading databases will not be changing. You will be
+redirected from those permalinks to the R2 presigned URLs.
 
 **If you use `geoipupdate` (most MMDB downloaders):**
 
