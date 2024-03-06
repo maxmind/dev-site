@@ -16,7 +16,7 @@ verifying MaxMind license keys in your codebase. This can help prevent license
 keys accidentally ending up in unexpected places and enhance the security of
 your applications.
 
-## Request:
+## Request
 
 ### Request URI
 
@@ -65,7 +65,7 @@ time.
 ### Response Body (for successful requests)
 
 When the license key is successfully validated, the server will return a status
-of `204 No Content`. This means that the request was successful.
+of `204 No Content`.
 
 ### Response Body (for unauthorized license keys)
 
@@ -90,7 +90,7 @@ structure:
 ```json
 {
   "code": "LICENSE_KEY_INVALID",
-  "error": "'foo-bad-license-key' is not a valid license_key. when calling /secrets/validate-license-key"
+  "error": "'foo-bad-license-key' is not a valid license_key when calling /secrets/validate-license-key"
 }
 ```
 
