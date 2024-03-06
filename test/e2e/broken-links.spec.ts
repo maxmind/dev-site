@@ -1,7 +1,7 @@
 // eslint-disable-next-line import/no-unresolved
 import { LinkChecker, LinkResult } from 'linkinator';
 
-const targetUrl = 'https://mm-dev-site-staging--pr-1108-m8xgzi9q.web.app';
+const targetUrl = process.env.E2E_TARGET_URL || 'http://localhost:5000';
 
 const falsePositives = [
   'https://crates.io/crates/maxminddb',

@@ -3,23 +3,24 @@ draft: false
 title: License Key Validation API
 ---
 
-MaxMind provides a License Key Validation API, a valuable tool for developers
-and organizations seeking to verify the validity of MaxMind license keys within
+MaxMind provides a License Key Validation API, a tool for developers and
+organizations seeking to verify the validity of MaxMind license keys within
 their systems. This API endpoint is designed to check the existence and format
 of a license key, but it does not provide information about the license key's
 access to MaxMind products or the account to which it is associated.
 
 This API can be particularly useful when integrated with secret scanning tools
 used for compliance purposes. By using our License Key Validation API in
-conjunction, you can automate the process of finding and verifying MaxMind
-license keys in your codebase. This can help prevent unauthorized use of your
-keys and enhance the security of your applications.
+conjunction with these tools, you can automate the process of finding and
+verifying MaxMind license keys in your codebase. This can help prevent license
+keys accidentally ending up in unexpected places and enhance the security of
+your applications.
 
 ## Request:
 
 ### Request URI
 
-API calls should be made with HTTP POST request to:
+API calls should be made with an HTTP POST request to:
 
 `https://secret-scanning.maxmind.com/secrets/validate-license-key`
 
@@ -30,6 +31,9 @@ the license key itself.
 
 ### Request Body
 
+The Content Type of the request must be `application/x-www-form-urlencoded`. No
+other content types are accepted at the moment.
+
 The request body may include the following field:
 
 | Key           | Value Type | Description                                                                       |
@@ -39,13 +43,24 @@ The request body may include the following field:
 Here is an example of how to make the request using curl:
 
 ```bash
-curl -X POST https://secret-scanning.maxmind.com/secrets/validate-license-key \
+curl https://secret-scanning.maxmind.com/secrets/validate-license-key \
     -F license_key="your_license_key_here"
-
-Please replace "your_license_key_here" with the actual license key you want to validate.
 ```
 
+Please replace "your_license_key_here" with the actual license key you want to
+validate.
+
 ## Response
+
+HTTP status codes are used to relay success and error messages. A successful
+POST will return a 204 (No Content) status code.
+
+When the server returns an error (4xx or 5xx), the response may include a JSON
+document in the body. This document is a single object with the keys `code` and
+`error`. The `code` field is a static error code for machine use. The value of
+any given code will never change, though codes can be added or removed. The
+`error` field is a human-readable description of the error and may change at any
+time.
 
 ### Response Body (for successful requests)
 
