@@ -5,16 +5,17 @@ title: License Key Validation API
 
 MaxMind provides a License Key Validation API, a tool for developers and
 organizations seeking to verify the validity of MaxMind license keys within
-their systems. This API endpoint is designed to check the existence and format
-of a license key, but it does not provide information about the license key's
-access to MaxMind products or the account to which it is associated.
+their systems. This API endpoint is designed to check the existence and the
+format of a license key. It does not provide information about the license key's
+access to MaxMind products or the account to which it is associated. Using other
+endpoints to check for the validity of a license key would fail as license keys
+are bound to certain products only.
 
-This API can be particularly useful when integrated with secret scanning tools
-used for compliance purposes. By using our License Key Validation API in
-conjunction with these tools, you can automate the process of finding and
-verifying MaxMind license keys in your codebase. This can help prevent license
-keys accidentally ending up in unexpected places and enhance the security of
-your applications.
+You could use this API for building tools to scan your code for secrets to
+ensure that secrets are not published in improper locations. One example of such
+a tool is trufflehog. Using such a tool, you can prevent license keys
+accidentally ending up in unexpected places and enhance the security of your
+applications.
 
 ## Request
 
