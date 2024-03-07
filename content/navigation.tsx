@@ -209,6 +209,10 @@ const navigation: IItem[] = [
         to: '/maxmind-server-ip-addresses',
       },
       {
+        title: 'License Key Validation API',
+        to: '/license-key-validation-api',
+      },
+      {
         title: 'Knowledge Base',
         url: 'https://support.maxmind.com/hc/en-us/categories/1260801446650-GeoIP2-and-GeoLite2',
       },
