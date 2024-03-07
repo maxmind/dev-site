@@ -210,7 +210,7 @@ const navigation: IItem[] = [
       },
       {
         title: 'License Key Validation API',
-        to: '/geoip/license-key-validation-api',
+        to: '/license-key-validation-api',
       },
       {
         title: 'Knowledge Base',
