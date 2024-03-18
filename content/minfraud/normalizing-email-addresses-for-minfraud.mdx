@@ -27,18 +27,16 @@ yourself. Below are the steps to take to do this.
 1. Convert international domain names (IDNs) to ASCII. For example, you can do
    this in Java using
    [java.net.IDN](https://docs.oracle.com/javase/8/docs/api/java/net/IDN.html).
-1. Check for typos in the domain names (for a complete list of typos we correct
-   for, you can consult the
-   [normalization code in one of our client APIs](#examples) below).
 1. If the domain ends with a repetition of `.com` (`.com.com`, `.com.com.com`,
    etc.), replace with a single `.com`.
-1. If the domain ends with `.com` followed by any extra characters, the extra
-   characters are removed (i.e., `.comxyz` is replaced with `.com`).
-1. If the domain ends with a TLD that appears to be a typo of `.com`, it is
-   replaced with `.com`. For the exact expression we use to determine this,
-   consult the [normalization code in one of our client APIs](#examples) below.
 1. If the domain is `gmail.com` with any leading digits, it is replaced with
    `gmail.com` (i.e., `123gmail.com` is replaced with `gmail.com`).
+1. Check for typos in the TLD and correct them. For a complete list of typos we
+   correct, consult the
+   [normalization code in one of our client APIs](#examples) below.
+1. Check for typos in the domain name and correct them. For a complete list of
+   typos we correct, consult the
+   [normalization code in one of our client APIs](#examples) below.
 1. If the domain is `fastmail.com` or any of the
    [fastmail domains](https://www.fastmail.com/about/ourdomains/), replace the
    email local part with the subdomain (i.e., `alias@user.fastmail.com` is
