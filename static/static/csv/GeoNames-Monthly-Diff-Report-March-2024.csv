@@ -1,0 +1,651 @@
+diff_in,old_geoname_id,new_geoname_id,old_city_name,new_city_name,old_country_name,new_country_name,old_country_code,new_country_code,old_subdivision_codes,new_subdivision_codes
+city_name,3832705,3832705,Villa Las Rosas,Villa de las Rosas,Argentina,Argentina,AR,AR,X,X
+city_name,3832809,3832809,Villa Anizacate,Valle de Anisacate,Argentina,Argentina,AR,AR,X,X
+city_name,3859951,3859951,Costa Sacate,Costasacate,Argentina,Argentina,AR,AR,X,X
+city_name,3859535,3859535,Dalmacio Velez Sarsfield,Dalmacio Velez,Argentina,Argentina,AR,AR,X,X
+city_name,3861042,3861042,Ciudad de Loreto,Villa San Martin,Argentina,Argentina,AR,AR,G,G
+city_name,3855467,3855467,Forres,Ingeniero Forres,Argentina,Argentina,AR,AR,G,G
+city_name,3849187,3849187,La Punta,Villa La Punta,Argentina,Argentina,AR,AR,G,G
+city_name,3832780,3832780,Villa Colonia Italiana,Colonia Italiana,Argentina,Argentina,AR,AR,X,X
+city_name,3864889,3864889,Ballesteros Sur,Ballesteros Sud,Argentina,Argentina,AR,AR,X,X
+city_name,3854413,3854413,Gutenberg,Gutemberg,Argentina,Argentina,AR,AR,X,X
+city_name,2151629,2151629,Riddell,Riddells Creek,Australia,Australia,AU,AU,VIC,VIC
+city_name,2178125,2178125,Alfred Town,Alfredtown,Australia,Australia,AU,AU,NSW,NSW
+city_name,2159648,2159648,Longley Lower,Lower Longley,Australia,Australia,AU,AU,TAS,TAS
+city_name,2169005,2169005,Derwent,Bushy Park,Australia,Australia,AU,AU,TAS,TAS
+city_name,385038,385038,Ar Rifa',Riffa,Bahrain,Bahrain,BH,BH,14,14
+city_name,290160,290160,Qalali,Galali,Bahrain,Bahrain,BH,BH,15,15
+city_name,290368,290368,Al Budayyi`,Budaiya,Bahrain,Bahrain,BH,BH,17,17
+city_name,290296,290296,Az Zallaq,Zallaq,Bahrain,Bahrain,BH,BH,14,14
+city_name,290306,290306,Ash Shakhurah,Shakhura,Bahrain,Bahrain,BH,BH,17,17
+city_name,290247,290247,Madinat Hamad,Hamad Town,Bahrain,Bahrain,BH,BH,17,17
+city_name,290187,290187,Madinat `Isa,Isa Town,Bahrain,Bahrain,BH,BH,14,14
+city_name,3464305,3464305,Embu,Embu das Artes,Brazil,Brazil,BR,BR,SP,SP
+city_name,3686880,3686880,Departamento del Cesar,Cesar Department,Colombia,Colombia,CO,CO,CES,CES
+city_name,3505867,3505867,Provincia Espaillat,Espaillat Province,Dominican Republic,Dominican Republic,DO,DO,9,9
+city_name,3508718,3508718,Provincia Duarte,Duarte Province,Dominican Republic,Dominican Republic,DO,DO,6,6
+city_name,3503706,3503706,Provincia de La Altagracia,La Altagracia Province,Dominican Republic,Dominican Republic,DO,DO,11,11
+city_name,3659237,3659237,Chimborazo,Chimborazo Province,Ecuador,Ecuador,EC,EC,H,H
+city_name,347236,347236,Tukh,Toukh,Egypt,Egypt,EG,EG,KB,KB
+city_name,349114,349114,Shirbin,Sherbin,Egypt,Egypt,EG,EG,DK,DK
+city_name,353229,353229,Al 'Ashir min Ramadan,10th of Ramadan City,Egypt,Egypt,EG,EG,SHR,SHR
+city_name,350370,350370,Quwaysina,Quweisna,Egypt,Egypt,EG,EG,MNF,MNF
+city_name,354365,354365,Kafr az Zayyat,Kafr az Zayyāt,Egypt,Egypt,EG,EG,GH,GH
+city_name,352354,352354,Munuf,Menouf,Egypt,Egypt,EG,EG,MNF,MNF
+city_name,361029,361029,Al Jammaliyah,Al Jamālīyah,Egypt,Egypt,EG,EG,DK,DK
+city_name,2081550,2081550,State of Pohnpei,Pohnpei State,Federated States of Micronesia,Federated States of Micronesia,FM,FM,PNI,PNI
+city_name,2081175,2081175,State of Yap,Yap State,Federated States of Micronesia,Federated States of Micronesia,FM,FM,YAP,YAP
+city_name,2082282,2082282,State of Chuuk,Chuuk,Federated States of Micronesia,Federated States of Micronesia,FM,FM,TRK,TRK
+city_name,611716,611716,K'alak'i T'bilisi,Tbilisi,Georgia,Georgia,GE,GE,TB,TB
+city_name,2294962,2294962,Swedru,Agona Swedru,Ghana,Ghana,GH,GH,CP,CP
+city_name,3579938,3579938,Saint Andrew,Saint Andrew Parish,Grenada,Grenada,GD,GD,1,1
+city_name,3719432,3719432,Departement de l'Ouest,Ouest,Haiti,Haiti,HT,HT,OU,OU
+city_name,1818379,1818379,Wanchai,Wan Chai,Hong Kong,Hong Kong,HK,HK,HWC,HWC
+city_name,1819980,1819980,Chek Chue,Stanley,Hong Kong,Hong Kong,HK,HK,HSO,HSO
+city_name,1818264,1818264,Yau Yat Tsuen,Yau Yat Chuen,Hong Kong,Hong Kong,HK,HK,KSS,KSS
+city_name,3046431,3046431,Pest megye,Pest County,Hungary,Hungary,HU,HU,PE,PE
+city_name,1270647,1270647,Gurdāspur,Gurdaspur,India,India,IN,IN,PB,PB
+city_name,1265767,1265767,Kūkatpalli,Kukatpally,India,India,IN,IN,TS,TS
+city_name,1266616,1266616,Khurda,Khordha,India,India,IN,IN,OD,OD
+city_name,1274693,1274693,Chānda,Chandrapur,India,India,IN,IN,MH,MH
+city_name,1255437,1255437,Sundargarh,Sundergarh,India,India,IN,IN,OD,OD
+city_name,1261828,1261828,Narāyangarh,Naraingarh,India,India,IN,IN,HR,HR
+city_name,1260137,1260137,Pathānkot,Pathankot,India,India,IN,IN,PB,PB
+city_name,1259110,1259110,Qādiān,Qadian,India,India,IN,IN,PB,PB
+city_name,1265709,1265709,Kulu,Kullu,India,India,IN,IN,HP,HP
+city_name,1276325,1276325,Bhadrakh,Bhadrak,India,India,IN,IN,OD,OD
+city_name,1274040,1274040,Chittaurgarh,Chittorgarh,India,India,IN,IN,RJ,RJ
+city_name,1263959,1263959,Mānantoddy,Mananthavady,India,India,IN,IN,KL,KL
+city_name,1264352,1264352,Mahrauli,Mehrauli,India,India,IN,IN,DL,DL
+city_name,1275804,1275804,Bhūm,Bhoom,India,India,IN,IN,MH,MH
+city_name,1258140,1258140,Rīngas,Reengus,India,India,IN,IN,RJ,RJ
+city_name,1272646,1272646,Dicholi,Bicholim,India,India,IN,IN,GA,GA
+city_name,1253579,1253579,Vādippatti,Vadipatti,India,India,IN,IN,TN,TN
+city_name,117574,117574,Sanandij,Sanandaj,Iran,Iran,IR,IR,12,12
+city_name,99532,99532,Basrah,Basra,Iraq,Iraq,IQ,IQ,BA,BA
+city_name,99347,99347,Al Hillah,Hillah,Iraq,Iraq,IQ,IQ,BB,BB
+city_name,99608,99608,Amara,Amarah,Iraq,Iraq,IQ,IQ,MA,MA
+city_name,294508,294508,KfarShmaryahu,Kfar Shmaryahu,Israel,Israel,IL,IL,TA,TA
+city_name,294498,294498,Kefar Vitqin,Kfar Vitkin,Israel,Israel,IL,IL,M,M
+city_name,295492,295492,Beror Hayil,Bror Hayil,Israel,Israel,IL,IL,D,D
+city_name,294634,294634,Jaljulya,Jaljulia,Israel,Israel,IL,IL,M,M
+city_name,294032,294032,NirDavid,Nir David,Israel,Israel,IL,IL,Z,Z
+city_name,295714,295714,Allonim,Alonim,Israel,Israel,IL,IL,Z,Z
+city_name,294878,294878,Ha'Ogen,HaOgen,Israel,Israel,IL,IL,M,M
+city_name,293791,293791,RamatDavid,Ramat David,Israel,Israel,IL,IL,Z,Z
+city_name,294388,294388,Maggal,Magal,Israel,Israel,IL,IL,HA,HA
+city_name,443109,443109,Al Rum,El Rom,Israel,Israel,IL,IL,,
+city_name,294043,294043,NevveYaraq,Neve Yarak,Israel,Israel,IL,IL,M,M
+city_name,295708,295708,Alummot,Alumot,Israel,Israel,IL,IL,Z,Z
+city_name,443100,443100,Marom Golan,Merom Golan,Israel,Israel,IL,IL,Z,Z
+city_name,295370,295370,Dabburiya,Daburiyya,Israel,Israel,IL,IL,Z,Z
+city_name,295439,295439,Bet Qama,Beit Kama,Israel,Israel,IL,IL,D,D
+city_name,386233,386233,Qoranit,Koranit,Israel,Israel,IL,IL,Z,Z
+city_name,295226,295226,Enat,Einat,Israel,Israel,IL,IL,M,M
+city_name,293438,293438,Talme Bilu,Talmei Bilu,Israel,Israel,IL,IL,D,D
+city_name,294552,294552,Qiryat 'Eqron,Kiryat Ekron,Israel,Israel,IL,IL,M,M
+city_name,294926,294926,HaGosherim,HaGoshrim,Israel,Israel,IL,IL,Z,Z
+city_name,294605,294605,Kafr Qari',Kafr Qara,Israel,Israel,IL,IL,HA,HA
+city_name,295743,295743,Afiqim,Afikim,Israel,Israel,IL,IL,Z,Z
+city_name,293985,293985,Olesh,Olesh,Israel,Israel,IL,IL,M,M
+city_name,295086,295086,Gannot,Ganot,Israel,Israel,IL,IL,TA,TA
+city_name,293410,293410,Tel 'Adashim,Tel Adashim,Israel,Israel,IL,IL,Z,Z
+city_name,295571,295571,Baqa el Gharbiya,Baqa al-Gharbiyye,Israel,Israel,IL,IL,HA,HA
+city_name,294315,294315,Massada,Masada,Israel,Israel,IL,IL,Z,Z
+city_name,294809,294809,HatsorHaGelilit,Hatzor HaGlilit,Israel,Israel,IL,IL,Z,Z
+city_name,295055,295055,Gelil Yam,Glil Yam,Israel,Israel,IL,IL,TA,TA
+city_name,295441,295441,Bet Oren,Beit Oren,Israel,Israel,IL,IL,HA,HA
+city_name,295765,295765,Abu Sinan,Abu Snan,Israel,Israel,IL,IL,Z,Z
+city_name,295042,295042,GesherHaZiv,Gesher HaZiv,Israel,Israel,IL,IL,Z,Z
+city_name,294814,294814,Hatseva,Hatzeva,Israel,Israel,IL,IL,D,D
+city_name,295425,295425,Bet Yehoshua',Beit Yehoshua,Israel,Israel,IL,IL,M,M
+city_name,294251,294251,Mesillot,Mesilot,Israel,Israel,IL,IL,Z,Z
+city_name,295745,295745,Afeq,Afek,Israel,Israel,IL,IL,Z,Z
+city_name,295582,295582,Azriqam,Azrikam,Israel,Israel,IL,IL,D,D
+city_name,295085,295085,Gannot Hadar,Ganot Hadar,Israel,Israel,IL,IL,M,M
+city_name,295456,295456,Bet Hillel,Beit Hillel,Israel,Israel,IL,IL,Z,Z
+city_name,293092,293092,Tselafon,Tzelafon,Israel,Israel,IL,IL,JM,JM
+city_name,293078,293078,Zetan,Zeitan,Israel,Israel,IL,IL,M,M
+city_name,294545,294545,KfarHabad,Kfar Chabad,Israel,Israel,IL,IL,M,M
+city_name,294044,294044,NevveYamin,Neve Yamin,Israel,Israel,IL,IL,M,M
+city_name,295484,295484,Bet Alfa,Beit Alfa,Israel,Israel,IL,IL,Z,Z
+city_name,294252,294252,MesillatTsiyyon,Mesilat Zion,Israel,Israel,IL,IL,JM,JM
+city_name,295205,295205,En Hod,Ein Hod,Israel,Israel,IL,IL,HA,HA
+city_name,293273,293273,Uzeir,Uzeir,Israel,Israel,IL,IL,Z,Z
+city_name,173882,173882,El Ghajar,Ghajar,Israel,Israel,IL,IL,Z,Z
+city_name,293182,293182,Yinnon,Yinon,Israel,Israel,IL,IL,D,D
+city_name,295263,295263,Elishama',Elishama,Israel,Israel,IL,IL,M,M
+city_name,294031,294031,Nir Eliyyahu,Nir Eliyahu,Israel,Israel,IL,IL,M,M
+city_name,293455,293455,Sitriyya,Sitria,Israel,Israel,IL,IL,M,M
+city_name,294954,294954,Hadar 'Am,Hadar Am,Israel,Israel,IL,IL,M,M
+city_name,295421,295421,Bet Zayit,Beit Zayit,Israel,Israel,IL,IL,JM,JM
+city_name,294256,294256,Meshar,Meishar,Israel,Israel,IL,IL,M,M
+city_name,293847,293847,Qiryat 'Anavim,Kiryat Anavim,Israel,Israel,IL,IL,JM,JM
+city_name,294505,294505,Kefar Sirkin,Kfar Sirkin,Israel,Israel,IL,IL,M,M
+city_name,295040,295040,Ge'ullim,Geulim,Israel,Israel,IL,IL,M,M
+city_name,295002,295002,Ginnosar,Ginosar,Israel,Israel,IL,IL,Z,Z
+city_name,295565,295565,Bareqet,Bareket,Israel,Israel,IL,IL,M,M
+city_name,295758,295758,Adanim,Adanim,Israel,Israel,IL,IL,M,M
+city_name,386194,386194,Rumat Heib,Rumat al-Heib,Israel,Israel,IL,IL,Z,Z
+city_name,295491,295491,Berosh,Brosh,Israel,Israel,IL,IL,D,D
+city_name,294399,294399,Midrakh 'Oz,Midrakh Oz,Israel,Israel,IL,IL,Z,Z
+city_name,293605,293605,Segev,Atzmon,Israel,Israel,IL,IL,Z,Z
+city_name,295004,295004,Ginnegar,Ginegar,Israel,Israel,IL,IL,Z,Z
+city_name,294516,294516,KfarRuppin,Kfar Ruppin,Israel,Israel,IL,IL,Z,Z
+city_name,295119,295119,Evron,Evron,Israel,Israel,IL,IL,Z,Z
+city_name,295225,295225,En Ayyala,Ein Ayala,Israel,Israel,IL,IL,HA,HA
+city_name,295363,295363,Daliyya,Dalia,Israel,Israel,IL,IL,Z,Z
+city_name,294924,294924,HaHoterim,Hahotrim,Israel,Israel,IL,IL,HA,HA
+city_name,295038,295038,Geva',Geva,Israel,Israel,IL,IL,Z,Z
+city_name,294543,294543,Kefar HaMakkabbi,Kfar HaMaccabi,Israel,Israel,IL,IL,HA,HA
+city_name,295037,295037,Geva' Karmel,Geva Carmel,Israel,Israel,IL,IL,HA,HA
+city_name,294567,294567,KfarAhim,Kfar Ahim,Israel,Israel,IL,IL,D,D
+city_name,293233,293233,Yaqum,Yakum,Israel,Israel,IL,IL,M,M
+city_name,295241,295241,Elon,Eilon,Israel,Israel,IL,IL,Z,Z
+city_name,294034,294034,Nir 'Aqiva,Nir Akiva,Israel,Israel,IL,IL,D,D
+city_name,293480,293480,Shoqeda,Shokeda,Israel,Israel,IL,IL,D,D
+city_name,295284,295284,Ein Rafa,Ein Rafa,Israel,Israel,IL,IL,JM,JM
+city_name,6534219,6534219,Beccacivetta-Azzano,Beccacivetta,Italy,Italy,IT,IT,"34, VR","34, VR"
+city_name,3488715,3488715,Parish of Saint Ann,Saint Ann Parish,Jamaica,Jamaica,JM,JM,6,6
+city_name,3488716,3488716,Saint Andrew,Saint Andrew Parish,Jamaica,Jamaica,JM,JM,2,2
+city_name,3488700,3488700,Saint James,Saint James Parish,Jamaica,Jamaica,JM,JM,8,8
+city_name,2111686,2111686,Narashino-shi,Narashino Shi,Japan,Japan,JP,JP,12,12
+city_name,250799,250799,Adjlun,Ajloun,Jordan,Jordan,JO,JO,AJ,AJ
+city_name,265749,265749,Zouq Mosbeh,Zouk Mosbeh,Lebanon,Lebanon,LB,LB,JL,JL
+city_name,280602,280602,Aajaltoun,Ajaltoun,Lebanon,Lebanon,LB,LB,JL,JL
+city_name,1732892,1732892,Batang Berjuntai,Bestari Jaya,Malaysia,Malaysia,MY,MY,10,10
+city_name,1736366,1736366,Wakaf Baharu,Wakaf Bharu,Malaysia,Malaysia,MY,MY,3,3
+city_name,1735018,1735018,Mentekab,Mentakab,Malaysia,Malaysia,MY,MY,6,6
+city_name,1736284,1736284,Changloon,Changlun,Malaysia,Malaysia,MY,MY,2,2
+city_name,1735093,1735093,Tasek Glugor,Tasek Gelugor,Malaysia,Malaysia,MY,MY,7,7
+city_name,1732676,1732676,Kuala Kubu Baharu,Kuala Kubu Bharu,Malaysia,Malaysia,MY,MY,10,10
+city_name,1735438,1735438,Kampung Bota Kiri,Bota,Malaysia,Malaysia,MY,MY,8,8
+city_name,1734316,1734316,Kertih,Kerteh,Malaysia,Malaysia,MY,MY,11,11
+city_name,1734575,1734575,Kampung Cangkat Jering,Changkat Jering,Malaysia,Malaysia,MY,MY,8,8
+city_name,1734702,1734702,Kampung Seberang Takir,Seberang Takir,Malaysia,Malaysia,MY,MY,11,11
+city_name,934750,934750,Bel Air Riviere Seche,Bel Air Rivière Sèche,Mauritius,Mauritius,MU,MU,FL,FL
+city_name,617486,617486,Rîbniţa,Rîbnița,Moldova,Moldova,MD,MD,SN,SN
+city_name,3352137,3352137,Khomas,Khomas Region,Namibia,Namibia,NA,NA,KH,KH
+city_name,1283679,1283679,Banepā,Banepa,Nepal,Nepal,NP,NP,P3,P3
+city_name,2180293,2180293,Waikato,Waikato Region,New Zealand,New Zealand,NZ,NZ,WKO,WKO
+city_name,2181872,2181872,Taranaki,Taranaki Region,New Zealand,New Zealand,NZ,NZ,TKI,TKI
+city_name,2190146,2190146,Hawke's Bay,Hawke's Bay Region,New Zealand,New Zealand,NZ,NZ,HKB,HKB
+city_name,2181818,2181818,Tasman,Tasman District,New Zealand,New Zealand,NZ,NZ,TAS,TAS
+city_name,1176948,1176948,Hazro City,Hazro,Pakistan,Pakistan,PK,PK,PB,PB
+city_name,1166195,1166195,Sandilianwali,Sandhilianwali,Pakistan,Pakistan,PK,PK,PB,PB
+city_name,1175892,1175892,Jhang Sadr,Jhang Sadar,Pakistan,Pakistan,PK,PK,PB,PB
+city_name,284294,284294,Baytunya,Beitunia,Palestine,Palestine,PS,PS,RBH,RBH
+city_name,284237,284237,Bir Zayt,Birzeit,Palestine,Palestine,PS,PS,RBH,RBH
+city_name,1696165,1696165,Palayan City,Palayan,Philippines,Philippines,PH,PH,"03, NUE","03, NUE"
+city_name,1684269,1684269,Magugpo Poblacion,Tagum,Philippines,Philippines,PH,PH,"11, DAV","11, DAV"
+city_name,1729085,1729085,Bago City,Bago,Philippines,Philippines,PH,PH,"06, NEC","06, NEC"
+city_name,1688830,1688830,San Pablo City,San Pablo,Philippines,Philippines,PH,PH,"40, LAG","40, LAG"
+city_name,1728772,1728772,Bais City,Bais,Philippines,Philippines,PH,PH,"07, NER","07, NER"
+city_name,1701966,1701966,Mandaluyong City,Mandaluyong,Philippines,Philippines,PH,PH,0,0
+city_name,1966336,1966336,Bagong Pagasa,Bagong Pag-asa,Philippines,Philippines,PH,PH,40,40
+city_name,492768,492768,Novosin'kovo,Novosinkovo,Russia,Russia,RU,RU,MOS,MOS
+city_name,784535,784535,Gradiste,Veliko Gradište,Serbia,Serbia,RS,RS,11,11
+city_name,793014,793014,Backo Petrovo Selo,Bačko Petrovo Selo,Serbia,Serbia,RS,RS,"VO, 06","VO, 06"
+city_name,784563,784563,Veliki Popovic,Veliki Popović,Serbia,Serbia,RS,RS,13,13
+city_name,948468,948468,oThongathi,Tongaat,South Africa,South Africa,ZA,ZA,KZN,KZN
+city_name,1250164,1250164,Battaramulla South,Battaramulla,Sri Lanka,Sri Lanka,LK,LK,"1, 11","1, 11"
+city_name,1223522,1223522,Wennappuwa Town,Wennappuwa,Sri Lanka,Sri Lanka,LK,LK,"6, 62","6, 62"
+city_name,1224688,1224688,Meda Wadduwa,Wadduwa,Sri Lanka,Sri Lanka,LK,LK,"1, 13","1, 13"
+city_name,1235972,1235972,Marawila Town,Marawila,Sri Lanka,Sri Lanka,LK,LK,"6, 62","6, 62"
+city_name,602804,602804,Soedra Sunderbyn,Södra Sunderbyn,Sweden,Sweden,SE,SE,BD,BD
+city_name,1568758,1568758,Tinh Quang Ninh,Quảng Ninh,Vietnam,Vietnam,VN,VN,13,13
+geoname_id,3855043,3431023,Los Toldos,Los Toldos,Argentina,Argentina,AR,AR,B,B
+geoname_id,3847919,3847914,Las Penas,Las Penas,Argentina,Argentina,AR,AR,X,X
+geoname_id,3428576,3428546,San Pedro,San Pedro,Argentina,Argentina,AR,AR,B,B
+geoname_id,3436062,12671333,Bella Vista,Bella Vista,Argentina,Argentina,AR,AR,W,W
+geoname_id,3434509,3434508,El Palomar,El Palomar,Argentina,Argentina,AR,AR,B,B
+geoname_id,3854290,3857906,Hinojo,Hinojo,Argentina,Argentina,AR,AR,B,B
+geoname_id,3428704,12654285,San Manuel,San Manuel,Argentina,Argentina,AR,AR,B,B
+geoname_id,3428775,12675206,San Justo,San Justo,Argentina,Argentina,AR,AR,B,B
+geoname_id,3850481,12653988,La Laguna,La Laguna,Argentina,Argentina,AR,AR,X,X
+geoname_id,3431266,3432315,Loma Verde,Loma Verde,Argentina,Argentina,AR,AR,B,B
+geoname_id,3856397,12654279,El Triunfo,El Triunfo,Argentina,Argentina,AR,AR,B,B
+geoname_id,3847728,12675178,Las Toscas,Las Toscas,Argentina,Argentina,AR,AR,B,B
+geoname_id,3858133,3434671,El Dorado,El Dorado,Argentina,Argentina,AR,AR,B,B
+geoname_id,3848610,12671877,Las Cejas,Las Cejas,Argentina,Argentina,AR,AR,T,T
+geoname_id,8596658,2165017,Goodwood,Goodwood,Australia,Australia,AU,AU,QLD,QLD
+geoname_id,2764792,2764791,Spital,Spital,Austria,Austria,AT,AT,3,3
+geoname_id,6317707,6323770,Nova Andradina,Nova Andradina,Brazil,Brazil,BR,BR,MS,MS
+geoname_id,6321013,3390682,Remanso,Remanso,Brazil,Brazil,BR,BR,BA,BA
+geoname_id,6318970,6319833,Ze Doca,Ze Doca,Brazil,Brazil,BR,BR,MA,MA
+geoname_id,3460723,3475644,Itapeva,Itapeva,Brazil,Brazil,BR,BR,SP,SP
+geoname_id,3402538,12548918,Catarina,Catarina,Brazil,Brazil,BR,BR,CE,CE
+geoname_id,6317345,6320911,Jaborandi,Jaborandi,Brazil,Brazil,BR,BR,BA,BA
+geoname_id,12108378,3458237,Macaubas,Macaubas,Brazil,Brazil,BR,BR,BA,BA
+geoname_id,6323843,6317747,Nova Lacerda,Nova Lacerda,Brazil,Brazil,BR,BR,MT,MT
+geoname_id,3460542,12108334,Itororo,Itororo,Brazil,Brazil,BR,BR,BA,BA
+geoname_id,6321060,3387922,Sento Se,Sento Se,Brazil,Brazil,BR,BR,BA,BA
+geoname_id,6324198,3470697,Barra do Mendes,Barra do Mendes,Brazil,Brazil,BR,BR,BA,BA
+geoname_id,3460724,3460725,Itapeva,Itapeva,Brazil,Brazil,BR,BR,MG,MG
+geoname_id,3450872,6323873,Rosario Oeste,Rosario Oeste,Brazil,Brazil,BR,BR,MT,MT
+geoname_id,6318337,6323869,Santo Afonso,Santo Afonso,Brazil,Brazil,BR,BR,MT,MT
+geoname_id,3446194,11962372,Tremembe,Tremembe,Brazil,Brazil,BR,BR,SP,SP
+geoname_id,6318751,6323788,Taquarussu,Taquarussu,Brazil,Brazil,BR,BR,MS,MS
+geoname_id,3471910,3471909,Apucarana,Apucarana,Brazil,Brazil,BR,BR,PR,PR
+geoname_id,6139086,6139085,Saint-Stanislas,Saint-Stanislas,Canada,Canada,CA,CA,QC,QC
+geoname_id,5950267,5950268,Etobicoke,Etobicoke,Canada,Canada,CA,CA,ON,ON
+geoname_id,12188907,5959230,Trent Lakes,Trent Lakes,Canada,Canada,CA,CA,ON,ON
+geoname_id,8400923,1795632,Shenjiamen,Shenjiamen,China,China,CN,CN,ZJ,ZJ
+geoname_id,9642065,12648526,Hebeicun,Hebeicun,China,China,CN,CN,HE,HE
+geoname_id,3675637,3675635,Majagual,Majagual,Colombia,Colombia,CO,CO,SUC,SUC
+geoname_id,3668332,3668333,Santo Tomas,Santo Tomas,Colombia,Colombia,CO,CO,ATL,ATL
+geoname_id,840165,840203,Metsäkulma,Metsäkulma,Finland,Finland,FI,FI,9,9
+geoname_id,719111,719110,Kétpó,Kétpó,Hungary,Hungary,HU,HU,JN,JN
+geoname_id,6598547,6774834,Gelora,Gelora,Indonesia,Indonesia,ID,ID,JB,JB
+geoname_id,2966380,9866684,Balrath,Balrath,Ireland,Ireland,IE,IE,"L, MH","L, MH"
+geoname_id,1859146,1859133,Kochi,Kochi,Japan,Japan,JP,JP,39,39
+geoname_id,10351336,10351756,Tokunaga,Tokunaga,Japan,Japan,JP,JP,40,40
+geoname_id,1735297,1735339,Mukah,Mukah,Malaysia,Malaysia,MY,MY,13,13
+geoname_id,934439,934438,Hermitage,Hermitage,Mauritius,Mauritius,MU,MU,MO,MO
+geoname_id,921688,1090340,Sada,Sada,Mayotte,Mayotte,YT,YT,,
+geoname_id,3988265,3988253,Sahuaripa,Sahuaripa,Mexico,Mexico,MX,MX,SON,SON
+geoname_id,3518454,3814377,San Marcos,San Marcos,Mexico,Mexico,MX,MX,HID,HID
+geoname_id,4004662,4004663,Huasabas,Huasabas,Mexico,Mexico,MX,MX,SON,SON
+geoname_id,9818648,4022368,El Pescadero,El Pescadero,Mexico,Mexico,MX,MX,BCS,BCS
+geoname_id,6546397,12718663,Bejaad,Bejaad,Morocco,Morocco,MA,MA,"05, KHO","05, KHO"
+geoname_id,7986751,1283067,Manigram,Manigram,Nepal,Nepal,NP,NP,P5,P5
+geoname_id,1731586,1958350,Alcoy,Alcoy,Philippines,Philippines,PH,PH,"07, CEB","07, CEB"
+geoname_id,3372964,3372965,Lagoa,Lagoa,Portugal,Portugal,PT,PT,20,20
+geoname_id,2019892,2019893,Mogoytuy,Mogoytuy,Russia,Russia,RU,RU,ZAB,ZAB
+geoname_id,497927,497928,Segezha,Segezha,Russia,Russia,RU,RU,KR,KR
+geoname_id,1506421,1506422,Golyshmanovo,Golyshmanovo,Russia,Russia,RU,RU,TYU,TYU
+geoname_id,984087,12718813,Lebowakgomo,Lebowakgomo,South Africa,South Africa,ZA,ZA,LP,LP
+geoname_id,11428151,983038,Letaba,Letaba,South Africa,South Africa,ZA,ZA,LP,LP
+geoname_id,10914977,1832426,Yongin-si,Yongin-si,South Korea,South Korea,KR,KR,41,41
+geoname_id,1840898,1951567,Paju,Paju,South Korea,South Korea,KR,KR,41,41
+subdivision_codes,3135642,3135642,Strommen,Strommen,Norway,Norway,NO,NO,30,2
+subdivision_codes,3131396,3131396,Vollen,Vollen,Norway,Norway,NO,NO,30,2
+subdivision_codes,3137796,3137796,Sollihogda,Sollihogda,Norway,Norway,NO,NO,30,6
+subdivision_codes,11998982,11998982,Fjell,Fjell,Norway,Norway,NO,NO,38,7
+subdivision_codes,11846447,11846447,Askim,Askim,Norway,Norway,NO,NO,38,7
+subdivision_codes,779683,779683,Hammerfest,Hammerfest,Norway,Norway,NO,NO,54,20
+subdivision_codes,779146,779146,Kvalsund,Kvalsund,Norway,Norway,NO,NO,54,20
+subdivision_codes,3134331,3134331,Tønsberg,Tønsberg,Norway,Norway,NO,NO,38,7
+subdivision_codes,3147465,3147465,Lillestrøm,Lillestrøm,Norway,Norway,NO,NO,30,2
+subdivision_codes,3139075,3139075,Skien,Skien,Norway,Norway,NO,NO,38,8
+subdivision_codes,3145375,3145375,Moss,Moss,Norway,Norway,NO,NO,30,1
+subdivision_codes,3159016,3159016,Drammen,Drammen,Norway,Norway,NO,NO,30,6
+subdivision_codes,3156529,3156529,Fredrikstad,Fredrikstad,Norway,Norway,NO,NO,30,1
+subdivision_codes,3157889,3157889,Fagerstrand,Fagerstrand,Norway,Norway,NO,NO,30,2
+subdivision_codes,3139516,3139516,Sjovegan,Sjovegan,Norway,Norway,NO,NO,54,19
+subdivision_codes,3151917,3151917,Honefoss,Honefoss,Norway,Norway,NO,NO,30,6
+subdivision_codes,3156470,3156470,Frogner,Frogner,Norway,Norway,NO,NO,30,2
+subdivision_codes,6639663,6639663,Skjetten,Skjetten,Norway,Norway,NO,NO,30,2
+subdivision_codes,3143427,3143427,Orje,Orje,Norway,Norway,NO,NO,30,1
+subdivision_codes,3145841,3145841,Minnesund,Minnesund,Norway,Norway,NO,NO,30,2
+subdivision_codes,3148129,3148129,Larvik,Larvik,Norway,Norway,NO,NO,38,7
+subdivision_codes,3145063,3145063,Naersnes,Naersnes,Norway,Norway,NO,NO,30,2
+subdivision_codes,3159232,3159232,Dilling,Dilling,Norway,Norway,NO,NO,30,1
+subdivision_codes,3140128,3140128,Sandvika,Sandvika,Norway,Norway,NO,NO,30,2
+subdivision_codes,3140398,3140398,Sande,Sande,Norway,Norway,NO,NO,38,7
+subdivision_codes,3142657,3142657,Porsgrunn,Porsgrunn,Norway,Norway,NO,NO,38,8
+subdivision_codes,11746717,11746717,Eiksmarka,Eiksmarka,Norway,Norway,NO,NO,30,2
+subdivision_codes,3138304,3138304,Slemmestad,Slemmestad,Norway,Norway,NO,NO,30,2
+subdivision_codes,9165762,9165762,Yven,Yven,Norway,Norway,NO,NO,30,1
+subdivision_codes,3151989,3151989,Holter,Holter,Norway,Norway,NO,NO,30,2
+subdivision_codes,3336586,3336586,Skedsmokorset,Skedsmokorset,Norway,Norway,NO,NO,30,2
+subdivision_codes,3139894,3139894,Seljord,Seljord,Norway,Norway,NO,NO,38,8
+subdivision_codes,3155079,3155079,Gressvik,Gressvik,Norway,Norway,NO,NO,30,1
+subdivision_codes,3157311,3157311,Fjellstrand,Fjellstrand,Norway,Norway,NO,NO,30,2
+subdivision_codes,3131684,3131684,Vikersund,Vikersund,Norway,Norway,NO,NO,30,6
+subdivision_codes,3137959,3137959,Sokna,Sokna,Norway,Norway,NO,NO,30,6
+subdivision_codes,3131337,3131337,Vormsund,Vormsund,Norway,Norway,NO,NO,30,2
+subdivision_codes,3157549,3157549,Finnsnes,Finnsnes,Norway,Norway,NO,NO,54,19
+subdivision_codes,3149563,3149563,Kongsberg,Kongsberg,Norway,Norway,NO,NO,30,6
+subdivision_codes,3151278,3151278,Hyggen,Hyggen,Norway,Norway,NO,NO,30,2
+subdivision_codes,3146049,3146049,Melsomvik,Melsomvik,Norway,Norway,NO,NO,38,7
+subdivision_codes,3142520,3142520,Rakkestad,Rakkestad,Norway,Norway,NO,NO,30,1
+subdivision_codes,3140390,3140390,Sandefjord,Sandefjord,Norway,Norway,NO,NO,38,7
+subdivision_codes,3134521,3134521,Tjøme,Tjøme,Norway,Norway,NO,NO,38,7
+subdivision_codes,8558590,8558590,Langhus,Langhus,Norway,Norway,NO,NO,30,2
+subdivision_codes,3145014,3145014,Nannestad,Nannestad,Norway,Norway,NO,NO,30,2
+subdivision_codes,3146631,3146631,Lysaker,Lysaker,Norway,Norway,NO,NO,30,2
+subdivision_codes,3158960,3158960,Drobak,Drobak,Norway,Norway,NO,NO,30,2
+subdivision_codes,3154209,3154209,Halden,Halden,Norway,Norway,NO,NO,30,1
+subdivision_codes,3152327,3152327,Hokksund,Hokksund,Norway,Norway,NO,NO,30,6
+subdivision_codes,3144754,3144754,Nes,Nes,Norway,Norway,NO,NO,30,6
+subdivision_codes,3140084,3140084,Sarpsborg,Sarpsborg,Norway,Norway,NO,NO,30,1
+subdivision_codes,3155422,3155422,Gol,Gol,Norway,Norway,NO,NO,30,6
+subdivision_codes,9404111,9404111,Rykkin,Rykkin,Norway,Norway,NO,NO,30,2
+subdivision_codes,3151770,3151770,Horten,Horten,Norway,Norway,NO,NO,38,7
+subdivision_codes,3133895,3133895,Tromsø,Tromsø,Norway,Norway,NO,NO,54,19
+subdivision_codes,3157162,3157162,Flateby,Flateby,Norway,Norway,NO,NO,30,2
+subdivision_codes,3149813,3149813,Klofta,Klofta,Norway,Norway,NO,NO,30,2
+subdivision_codes,3162657,3162657,Asker,Asker,Norway,Norway,NO,NO,30,2
+subdivision_codes,3140825,3140825,Rygge,Rygge,Norway,Norway,NO,NO,30,1
+subdivision_codes,7626323,7626323,Fjerdingby,Fjerdingby,Norway,Norway,NO,NO,30,2
+subdivision_codes,3142539,3142539,Raholt,Raholt,Norway,Norway,NO,NO,30,2
+subdivision_codes,3133904,3133904,Tromsdalen,Tromsdalen,Norway,Norway,NO,NO,54,19
+subdivision_codes,3150191,3150191,Kjeller,Kjeller,Norway,Norway,NO,NO,30,2
+subdivision_codes,11745967,11745967,Haslum,Haslum,Norway,Norway,NO,NO,30,2
+subdivision_codes,3157686,3157686,Fetsund,Fetsund,Norway,Norway,NO,NO,30,2
+subdivision_codes,3144123,3144123,Nore,Nore,Norway,Norway,NO,NO,30,6
+subdivision_codes,3132319,3132319,Veggli,Veggli,Norway,Norway,NO,NO,30,6
+subdivision_codes,3156764,3156764,Fornebu,Fornebu,Norway,Norway,NO,NO,30,2
+subdivision_codes,3138624,3138624,Skoppum,Skoppum,Norway,Norway,NO,NO,38,7
+subdivision_codes,847633,847633,Alta,Alta,Norway,Norway,NO,NO,54,20
+subdivision_codes,3148138,3148138,Larkollen,Larkollen,Norway,Norway,NO,NO,30,1
+subdivision_codes,3139081,3139081,Ski,Ski,Norway,Norway,NO,NO,30,2
+subdivision_codes,3150851,3150851,Jessheim,Jessheim,Norway,Norway,NO,NO,30,2
+subdivision_codes,3150915,3150915,Jar,Jar,Norway,Norway,NO,NO,30,2
+subdivision_codes,11747886,11747886,Blystadlia,Blystadlia,Norway,Norway,NO,NO,30,2
+subdivision_codes,9403910,9403910,Osteras,Osteras,Norway,Norway,NO,NO,30,2
+subdivision_codes,7626345,7626345,Revetal,Revetal,Norway,Norway,NO,NO,38,7
+subdivision_codes,3141682,3141682,Rjukan,Rjukan,Norway,Norway,NO,NO,38,8
+subdivision_codes,3152132,3152132,Holmestrand,Holmestrand,Norway,Norway,NO,NO,38,7
+subdivision_codes,3162797,3162797,As,As,Norway,Norway,NO,NO,30,2
+subdivision_codes,3162651,3162651,Askim,Askim,Norway,Norway,NO,NO,30,1
+subdivision_codes,3149242,3149242,Krokstadelva,Krokstadelva,Norway,Norway,NO,NO,30,6
+subdivision_codes,3149640,3149640,Kolbotn,Kolbotn,Norway,Norway,NO,NO,30,2
+subdivision_codes,3146270,3146270,Maura,Maura,Norway,Norway,NO,NO,30,2
+subdivision_codes,3336585,3336585,Nesoddtangen,Nesoddtangen,Norway,Norway,NO,NO,30,2
+subdivision_codes,9403931,9403931,Vear,Vear,Norway,Norway,NO,NO,38,7
+subdivision_codes,3136725,3136725,Stokke,Stokke,Norway,Norway,NO,NO,38,7
+subdivision_codes,11746737,11746737,Gjettum,Gjettum,Norway,Norway,NO,NO,30,2
+subdivision_codes,9536509,9536509,Kolsas,Kolsas,Norway,Norway,NO,NO,30,6
+subdivision_codes,3146936,3146936,Lorenskog,Lorenskog,Norway,Norway,NO,NO,30,2
+subdivision_codes,11745964,11745964,Fjellhamar,Fjellhamar,Norway,Norway,NO,NO,30,2
+subdivision_codes,3153823,3153823,Harstad,Harstad,Norway,Norway,NO,NO,54,19
+subdivision_codes,3141449,3141449,Rolvsoy,Rolvsoy,Norway,Norway,NO,NO,30,1
+subdivision_codes,3149387,3149387,Krakeroy,Krakeroy,Norway,Norway,NO,NO,30,1
+subdivision_codes,3137390,3137390,Sorumsand,Sorumsand,Norway,Norway,NO,NO,30,2
+subdivision_codes,11746980,11746980,Blommenholm,Blommenholm,Norway,Norway,NO,NO,30,2
+subdivision_codes,3137232,3137232,Stabekk,Stabekk,Norway,Norway,NO,NO,30,2
+subdivision_codes,11746985,11746985,Lierskogen,Lierskogen,Norway,Norway,NO,NO,30,6
+subdivision_codes,3148892,3148892,Kvelde,Kvelde,Norway,Norway,NO,NO,38,7
+subdivision_codes,3149412,3149412,Kragero,Kragero,Norway,Norway,NO,NO,38,8
+subdivision_codes,3162475,3162475,Auli,Auli,Norway,Norway,NO,NO,30,2
+subdivision_codes,8504433,8504433,Billingstad,Billingstad,Norway,Norway,NO,NO,30,2
+subdivision_codes,9304401,9304401,Voll,Voll,Norway,Norway,NO,NO,30,2
+subdivision_codes,3132058,3132058,Vestby,Vestby,Norway,Norway,NO,NO,30,2
+subdivision_codes,3142561,3142561,Raelingen,Raelingen,Norway,Norway,NO,NO,30,2
+subdivision_codes,3143499,3143499,Sondre Oppegard,Sondre Oppegard,Norway,Norway,NO,NO,30,2
+subdivision_codes,3144075,3144075,Notodden,Notodden,Norway,Norway,NO,NO,38,8
+subdivision_codes,3137142,3137142,Stathelle,Stathelle,Norway,Norway,NO,NO,38,8
+subdivision_codes,9403922,9403922,Kodal,Kodal,Norway,Norway,NO,NO,38,7
+subdivision_codes,3144113,3144113,Noresund,Noresund,Norway,Norway,NO,NO,30,6
+subdivision_codes,12077946,12077946,Heimdal,Heimdal,Norway,Norway,NO,NO,38,7
+subdivision_codes,11204060,11204060,Finstadjordet,Finstadjordet,Norway,Norway,NO,NO,30,2
+subdivision_codes,3153380,3153380,Heggedal,Heggedal,Norway,Norway,NO,NO,30,2
+subdivision_codes,3152862,3152862,Herre,Herre,Norway,Norway,NO,NO,38,8
+subdivision_codes,8558581,8558581,Degernes,Degernes,Norway,Norway,NO,NO,30,1
+subdivision_codes,3134349,3134349,Tomter,Tomter,Norway,Norway,NO,NO,30,1
+subdivision_codes,3155113,3155113,Greaker,Greaker,Norway,Norway,NO,NO,30,1
+subdivision_codes,6545369,6545369,Oppakermoen,Oppakermoen,Norway,Norway,NO,NO,30,2
+subdivision_codes,11746712,11746712,Slependen,Slependen,Norway,Norway,NO,NO,30,2
+subdivision_codes,3145094,3145094,Mysen,Mysen,Norway,Norway,NO,NO,30,1
+subdivision_codes,9404467,9404467,Voyenenga,Voyenenga,Norway,Norway,NO,NO,30,2
+subdivision_codes,3158605,3158605,Eidsvoll verk,Eidsvoll verk,Norway,Norway,NO,NO,30,2
+subdivision_codes,3152238,3152238,Holen,Holen,Norway,Norway,NO,NO,30,2
+subdivision_codes,7626346,7626346,Andebu,Andebu,Norway,Norway,NO,NO,38,7
+subdivision_codes,3150842,3150842,Jevnaker,Jevnaker,Norway,Norway,NO,NO,30,2
+subdivision_codes,3151000,3151000,Ise,Ise,Norway,Norway,NO,NO,30,1
+subdivision_codes,3137697,3137697,Son,Son,Norway,Norway,NO,NO,30,2
+subdivision_codes,3138423,3138423,Skui,Skui,Norway,Norway,NO,NO,30,2
+subdivision_codes,3150437,3150437,Karlshus,Karlshus,Norway,Norway,NO,NO,30,1
+subdivision_codes,3134574,3134574,Tistedal,Tistedal,Norway,Norway,NO,NO,30,1
+subdivision_codes,11747880,11747880,Lovenstad,Lovenstad,Norway,Norway,NO,NO,30,2
+subdivision_codes,3144549,3144549,Nittedal,Nittedal,Norway,Norway,NO,NO,30,2
+subdivision_codes,3132894,3132894,Valer,Valer,Norway,Norway,NO,NO,30,2
+subdivision_codes,3134975,3134975,Sylling,Sylling,Norway,Norway,NO,NO,30,6
+subdivision_codes,3162385,3162385,Aursmoen,Aursmoen,Norway,Norway,NO,NO,30,2
+subdivision_codes,3139014,3139014,Skiptvet,Skiptvet,Norway,Norway,NO,NO,30,1
+subdivision_codes,3157756,3157756,Feiring,Feiring,Norway,Norway,NO,NO,30,2
+subdivision_codes,3259347,3259347,Svartskog,Svartskog,Norway,Norway,NO,NO,30,2
+subdivision_codes,9403960,9403960,Borre,Borre,Norway,Norway,NO,NO,38,7
+subdivision_codes,3162907,3162907,Arnes,Arnes,Norway,Norway,NO,NO,38,8
+subdivision_codes,3157238,3157238,Fla,Fla,Norway,Norway,NO,NO,30,6
+subdivision_codes,3145757,3145757,Mjondalen,Mjondalen,Norway,Norway,NO,NO,30,6
+subdivision_codes,3142623,3142623,Prestfoss,Prestfoss,Norway,Norway,NO,NO,30,6
+subdivision_codes,9404171,9404171,Klokkarstua,Klokkarstua,Norway,Norway,NO,NO,30,2
+subdivision_codes,3162906,3162906,Arnes,Arnes,Norway,Norway,NO,NO,30,2
+subdivision_codes,11746711,11746711,Lommedalen,Lommedalen,Norway,Norway,NO,NO,30,2
+subdivision_codes,3147854,3147854,Leirsund,Leirsund,Norway,Norway,NO,NO,30,2
+subdivision_codes,9007790,9007790,Royse,Royse,Norway,Norway,NO,NO,30,6
+subdivision_codes,3137906,3137906,Solbergelva,Solbergelva,Norway,Norway,NO,NO,30,6
+subdivision_codes,3154279,3154279,Hakadal,Hakadal,Norway,Norway,NO,NO,30,2
+subdivision_codes,11048386,11048386,Rasta,Rasta,Norway,Norway,NO,NO,30,2
+subdivision_codes,11746991,11746991,Kurland,Kurland,Norway,Norway,NO,NO,30,2
+subdivision_codes,3144071,3144071,Nøtterøy,Nøtterøy,Norway,Norway,NO,NO,38,7
+subdivision_codes,7648910,7648910,Tolvsrod,Tolvsrod,Norway,Norway,NO,NO,38,7
+subdivision_codes,3151351,3151351,Husoy,Husoy,Norway,Norway,NO,NO,38,7
+subdivision_codes,9536662,9536662,Steinsholt,Steinsholt,Norway,Norway,NO,NO,38,7
+subdivision_codes,3139819,3139819,Sem,Sem,Norway,Norway,NO,NO,38,7
+subdivision_codes,3139676,3139676,Siljan,Siljan,Norway,Norway,NO,NO,38,8
+subdivision_codes,8128569,8128569,Vestskogen,Vestskogen,Norway,Norway,NO,NO,38,7
+subdivision_codes,11746709,11746709,Tjollingvollen,Tjollingvollen,Norway,Norway,NO,NO,38,7
+subdivision_codes,3137091,3137091,Stavern,Stavern,Norway,Norway,NO,NO,38,7
+subdivision_codes,3162682,3162682,Asgardstrand,Asgardstrand,Norway,Norway,NO,NO,38,7
+subdivision_codes,3162032,3162032,Barkaker,Barkaker,Norway,Norway,NO,NO,38,7
+subdivision_codes,7534543,7534543,Spikkestad,Spikkestad,Norway,Norway,NO,NO,30,2
+subdivision_codes,3141107,3141107,Royken,Royken,Norway,Norway,NO,NO,30,2
+subdivision_codes,3140636,3140636,Saetre,Saetre,Norway,Norway,NO,NO,30,2
+subdivision_codes,9404106,9404106,Gralum,Gralum,Norway,Norway,NO,NO,30,1
+subdivision_codes,3139886,3139886,Sellebakk,Sellebakk,Norway,Norway,NO,NO,30,1
+subdivision_codes,9536264,9536264,Vinterbru,Vinterbru,Norway,Norway,NO,NO,30,2
+subdivision_codes,3134259,3134259,Torp,Torp,Norway,Norway,NO,NO,30,1
+subdivision_codes,3137309,3137309,Sperrebotn,Sperrebotn,Norway,Norway,NO,NO,30,1
+subdivision_codes,3137009,3137009,Steinberg,Steinberg,Norway,Norway,NO,NO,30,6
+subdivision_codes,3135124,3135124,Svelvik,Svelvik,Norway,Norway,NO,NO,30,6
+subdivision_codes,9404432,9404432,Darbu,Darbu,Norway,Norway,NO,NO,30,6
+subdivision_codes,3158608,3158608,Eidsvoll,Eidsvoll,Norway,Norway,NO,NO,30,2
+subdivision_codes,3153801,3153801,Hasle,Hasle,Norway,Norway,NO,NO,30,2
+subdivision_codes,3137394,3137394,Sorum,Sorum,Norway,Norway,NO,NO,30,2
+subdivision_codes,11746718,11746718,Ytre Enebakk,Ytre Enebakk,Norway,Norway,NO,NO,30,2
+subdivision_codes,3151627,3151627,Hovik verk,Hovik verk,Norway,Norway,NO,NO,30,2
+subdivision_codes,9404478,9404478,Sofiemyr,Sofiemyr,Norway,Norway,NO,NO,30,2
+subdivision_codes,3162212,3162212,Baerum,Baerum,Norway,Norway,NO,NO,30,2
+subdivision_codes,8558598,8558598,Hagan,Hagan,Norway,Norway,NO,NO,30,2
+subdivision_codes,3158260,3158260,Enebakk,Enebakk,Norway,Norway,NO,NO,30,2
+subdivision_codes,7626344,7626344,Hof,Hof,Norway,Norway,NO,NO,38,7
+subdivision_codes,9404005,9404005,Sundbyfoss,Sundbyfoss,Norway,Norway,NO,NO,38,7
+subdivision_codes,12176630,12176630,Nyborg,Nyborg,Norway,Norway,NO,NO,38,7
+subdivision_codes,847634,847634,Rypefjord,Rypefjord,Norway,Norway,NO,NO,54,20
+subdivision_codes,3148726,3148726,Kviteseid,Kviteseid,Norway,Norway,NO,NO,38,8
+subdivision_codes,779330,779330,Kautokeino,Kautokeino,Norway,Norway,NO,NO,54,20
+subdivision_codes,3153182,3153182,Helgeroa,Helgeroa,Norway,Norway,NO,NO,38,7
+subdivision_codes,3156137,3156137,Gan,Gan,Norway,Norway,NO,NO,30,2
+subdivision_codes,3156087,3156087,Gardermoen,Gardermoen,Norway,Norway,NO,NO,30,2
+subdivision_codes,3147061,3147061,Loken,Loken,Norway,Norway,NO,NO,30,2
+subdivision_codes,779451,779451,Vestre Jakobselv,Vestre Jakobselv,Norway,Norway,NO,NO,54,20
+subdivision_codes,777197,777197,Tana,Tana,Norway,Norway,NO,NO,54,20
+subdivision_codes,780717,780717,Båtsfjord,Båtsfjord,Norway,Norway,NO,NO,54,20
+subdivision_codes,780687,780687,Berlevåg,Berlevåg,Norway,Norway,NO,NO,54,20
+subdivision_codes,777019,777019,Vardø,Vardø,Norway,Norway,NO,NO,54,20
+subdivision_codes,780643,780643,Bjørnevatn,Bjørnevatn,Norway,Norway,NO,NO,54,20
+subdivision_codes,777032,777032,Varangerbotn,Varangerbotn,Norway,Norway,NO,NO,54,20
+subdivision_codes,10171143,10171143,Vettre,Vettre,Norway,Norway,NO,NO,30,2
+subdivision_codes,3152997,3152997,Hemnes,Hemnes,Norway,Norway,NO,NO,30,2
+subdivision_codes,3152989,3152989,Hemsedal,Hemsedal,Norway,Norway,NO,NO,30,6
+subdivision_codes,3152111,3152111,Holmsbu,Holmsbu,Norway,Norway,NO,NO,30,2
+subdivision_codes,3144656,3144656,Nesodden,Nesodden,Norway,Norway,NO,NO,30,2
+subdivision_codes,3138955,3138955,Skjeberg,Skjeberg,Norway,Norway,NO,NO,30,1
+subdivision_codes,3151304,3151304,Hvalstad,Hvalstad,Norway,Norway,NO,NO,30,2
+subdivision_codes,6545370,6545370,Blaker,Blaker,Norway,Norway,NO,NO,30,2
+subdivision_codes,3134070,3134070,Tranby,Tranby,Norway,Norway,NO,NO,30,6
+subdivision_codes,11748706,11748706,Lierstranda,Lierstranda,Norway,Norway,NO,NO,30,6
+subdivision_codes,3155913,3155913,Geilo,Geilo,Norway,Norway,NO,NO,30,6
+subdivision_codes,3163410,3163410,Al,Al,Norway,Norway,NO,NO,30,6
+subdivision_codes,3154704,3154704,Grua,Grua,Norway,Norway,NO,NO,30,2
+subdivision_codes,3152504,3152504,Hobol,Hobol,Norway,Norway,NO,NO,,1
+subdivision_codes,9403965,9403965,Silsand,Silsand,Norway,Norway,NO,NO,54,19
+subdivision_codes,3155223,3155223,Senjahopen,Senjahopen,Norway,Norway,NO,NO,54,19
+subdivision_codes,778707,778707,Mehamn,Mehamn,Norway,Norway,NO,NO,54,20
+subdivision_codes,779261,779261,Kjøllefjord,Kjøllefjord,Norway,Norway,NO,NO,54,20
+subdivision_codes,779603,779603,Hesseng,Hesseng,Norway,Norway,NO,NO,54,20
+subdivision_codes,779303,779303,Kirkenes,Kirkenes,Norway,Norway,NO,NO,54,20
+subdivision_codes,779554,779554,Honningsvåg,Honningsvåg,Norway,Norway,NO,NO,54,20
+subdivision_codes,778362,778362,Øksfjord,Øksfjord,Norway,Norway,NO,NO,54,20
+subdivision_codes,779082,779082,Lakselv,Lakselv,Norway,Norway,NO,NO,54,20
+subdivision_codes,780524,780524,Burfjord,Burfjord,Norway,Norway,NO,NO,54,19
+subdivision_codes,7290286,7290286,Bardu,Bardu,Norway,Norway,NO,NO,54,19
+subdivision_codes,776832,776832,Kiberg,Kiberg,Norway,Norway,NO,NO,54,20
+subdivision_codes,3161346,3161346,Bjorkelangen,Bjorkelangen,Norway,Norway,NO,NO,30,2
+subdivision_codes,3156611,3156611,Fosser,Fosser,Norway,Norway,NO,NO,30,2
+subdivision_codes,11748654,11748654,Setskog,Setskog,Norway,Norway,NO,NO,30,2
+subdivision_codes,3154712,3154712,Grov,Grov,Norway,Norway,NO,NO,54,19
+subdivision_codes,3157994,3157994,Evenskjer,Evenskjer,Norway,Norway,NO,NO,54,19
+subdivision_codes,3147541,3147541,Lier,Lier,Norway,Norway,NO,NO,30,6
+subdivision_codes,3142041,3142041,Reistad,Reistad,Norway,Norway,NO,NO,30,6
+subdivision_codes,8692901,8692901,Akkerhaugen,Akkerhaugen,Norway,Norway,NO,NO,38,8
+subdivision_codes,3160911,3160911,Bo,Bo,Norway,Norway,NO,NO,38,8
+subdivision_codes,3144733,3144733,Nesbyen,Nesbyen,Norway,Norway,NO,NO,30,6
+subdivision_codes,3133402,3133402,Ulefoss,Ulefoss,Norway,Norway,NO,NO,38,8
+subdivision_codes,7626349,7626349,Sauland,Sauland,Norway,Norway,NO,NO,38,8
+subdivision_codes,3154441,3154441,Gvarv,Gvarv,Norway,Norway,NO,NO,38,8
+subdivision_codes,3134011,3134011,Treungen,Treungen,Norway,Norway,NO,NO,38,8
+subdivision_codes,9404117,9404117,Bodalen,Bodalen,Norway,Norway,NO,NO,30,2
+subdivision_codes,3162884,3162884,Aros,Aros,Norway,Norway,NO,NO,30,2
+subdivision_codes,3134429,3134429,Tofte,Tofte,Norway,Norway,NO,NO,30,2
+subdivision_codes,3159007,3159007,Drangedal,Drangedal,Norway,Norway,NO,NO,38,8
+subdivision_codes,3151773,3151773,Horte,Horte,Norway,Norway,NO,NO,38,8
+subdivision_codes,3137237,3137237,Stabbestad,Stabbestad,Norway,Norway,NO,NO,38,8
+subdivision_codes,9404002,9404002,Nordagutu,Nordagutu,Norway,Norway,NO,NO,38,8
+subdivision_codes,3163195,3163195,Amot,Amot,Norway,Norway,NO,NO,30,6
+subdivision_codes,9404430,9404430,Manstad,Manstad,Norway,Norway,NO,NO,30,1
+subdivision_codes,3153111,3153111,Helle,Helle,Norway,Norway,NO,NO,38,8
+subdivision_codes,3160630,3160630,Borkenes,Borkenes,Norway,Norway,NO,NO,54,19
+subdivision_codes,3137245,3137245,Spydeberg,Spydeberg,Norway,Norway,NO,NO,30,1
+subdivision_codes,3162211,3162211,Baerums verk,Baerums verk,Norway,Norway,NO,NO,30,2
+subdivision_codes,3139431,3139431,Skaland,Skaland,Norway,Norway,NO,NO,54,19
+subdivision_codes,3138976,3138976,Skjaerhalden,Skjaerhalden,Norway,Norway,NO,NO,30,1
+subdivision_codes,11747883,11747883,Varteig,Varteig,Norway,Norway,NO,NO,30,1
+subdivision_codes,3145589,3145589,Fyresdal,Fyresdal,Norway,Norway,NO,NO,38,8
+subdivision_codes,3157165,3157165,Flatdal,Flatdal,Norway,Norway,NO,NO,38,8
+subdivision_codes,3151288,3151288,Hvittingfoss,Hvittingfoss,Norway,Norway,NO,NO,30,6
+subdivision_codes,9404029,9404029,Harestua,Harestua,Norway,Norway,NO,NO,30,2
+subdivision_codes,7626327,7626327,Hurdal,Hurdal,Norway,Norway,NO,NO,30,2
+subdivision_codes,11747866,11747866,Mogreina,Mogreina,Norway,Norway,NO,NO,30,2
+subdivision_codes,3155709,3155709,Gjerdrum,Gjerdrum,Norway,Norway,NO,NO,30,2
+subdivision_codes,3149726,3149726,Knappstad,Knappstad,Norway,Norway,NO,NO,30,1
+subdivision_codes,779217,779217,Goavkejohka,Goavkejohka,Norway,Norway,NO,NO,54,20
+subdivision_codes,3155331,3155331,Gran,Gran,Norway,Norway,NO,NO,38,7
+subdivision_codes,3149304,3149304,Kroderen,Kroderen,Norway,Norway,NO,NO,30,6
+subdivision_codes,3133491,3133491,Tyristrand,Tyristrand,Norway,Norway,NO,NO,30,6
+subdivision_codes,3132014,3132014,Vestfossen,Vestfossen,Norway,Norway,NO,NO,30,6
+subdivision_codes,3155887,3155887,Geithus,Geithus,Norway,Norway,NO,NO,30,6
+subdivision_codes,12176545,12176545,Ramberg,Ramberg,Norway,Norway,NO,NO,38,7
+subdivision_codes,3146760,3146760,Lunner,Lunner,Norway,Norway,NO,NO,30,2
+subdivision_codes,7626403,7626403,Sorreisa,Sorreisa,Norway,Norway,NO,NO,54,19
+subdivision_codes,7626343,7626343,Rodberg,Rodberg,Norway,Norway,NO,NO,30,6
+subdivision_codes,3157728,3157728,Fenstad,Fenstad,Norway,Norway,NO,NO,30,2
+subdivision_codes,9404018,9404018,Skotselv,Skotselv,Norway,Norway,NO,NO,30,6
+subdivision_codes,11746719,11746719,Krokkleiva,Krokkleiva,Norway,Norway,NO,NO,30,6
+subdivision_codes,11748570,11748570,Duken,Duken,Norway,Norway,NO,NO,38,7
+subdivision_codes,9404016,9404016,Krakstad,Krakstad,Norway,Norway,NO,NO,30,2
+subdivision_codes,11746990,11746990,Skallestad,Skallestad,Norway,Norway,NO,NO,38,7
+subdivision_codes,3136023,3136023,Storsteinnes,Storsteinnes,Norway,Norway,NO,NO,54,19
+subdivision_codes,3158651,3158651,Eidsberg,Eidsberg,Norway,Norway,NO,NO,30,1
+subdivision_codes,3138322,3138322,Slattum,Slattum,Norway,Norway,NO,NO,30,2
+subdivision_codes,3163480,3163480,Akershus,Akershus,Norway,Norway,NO,NO,,2
+subdivision_codes,3158219,3158219,Engalsvik,Engalsvik,Norway,Norway,NO,NO,30,1
+subdivision_codes,9537094,9537094,Otteid,Otteid,Norway,Norway,NO,NO,30,1
+subdivision_codes,3151289,3151289,Hvitsten,Hvitsten,Norway,Norway,NO,NO,30,2
+subdivision_codes,9404188,9404188,Brarud,Brarud,Norway,Norway,NO,NO,30,2
+subdivision_codes,3141671,3141671,Roa,Roa,Norway,Norway,NO,NO,30,2
+subdivision_codes,779642,779642,Hasvik,Hasvik,Norway,Norway,NO,NO,54,20
+subdivision_codes,3135120,3135120,Svene,Svene,Norway,Norway,NO,NO,30,6
+subdivision_codes,3161724,3161724,Berger,Berger,Norway,Norway,NO,NO,30,6
+subdivision_codes,3160007,3160007,Brevik,Brevik,Norway,Norway,NO,NO,38,8
+subdivision_codes,3154639,3154639,Gryllefjord,Gryllefjord,Norway,Norway,NO,NO,54,19
+subdivision_codes,3134266,3134266,Torod,Torod,Norway,Norway,NO,NO,38,7
+subdivision_codes,3134115,3134115,Tovik,Tovik,Norway,Norway,NO,NO,54,19
+subdivision_codes,3159666,3159666,Buskerud,Buskerud,Norway,Norway,NO,NO,30,6
+subdivision_codes,3162957,3162957,Aremark,Aremark,Norway,Norway,NO,NO,30,1
+subdivision_codes,3144312,3144312,Nordkisa,Nordkisa,Norway,Norway,NO,NO,30,2
+subdivision_codes,9404090,9404090,Sorvika,Sorvika,Norway,Norway,NO,NO,54,19
+subdivision_codes,11748587,11748587,Rossfjordstraumen,Rossfjordstraumen,Norway,Norway,NO,NO,54,19
+subdivision_codes,3137261,3137261,Sponvika,Sponvika,Norway,Norway,NO,NO,30,1
+subdivision_codes,3135095,3135095,Svensby,Svensby,Norway,Norway,NO,NO,54,19
+subdivision_codes,3153299,3153299,Heias,Heias,Norway,Norway,NO,NO,30,1
+subdivision_codes,3142224,3142224,Rauland,Rauland,Norway,Norway,NO,NO,38,8
+subdivision_codes,3145856,3145856,Miland,Miland,Norway,Norway,NO,NO,38,8
+subdivision_codes,3162350,3162350,Austbygdi,Austbygdi,Norway,Norway,NO,NO,38,8
+subdivision_codes,3144427,3144427,Nordby Bruk,Nordby Bruk,Norway,Norway,NO,NO,30,2
+subdivision_codes,7626404,7626404,Brostadbotn,Brostadbotn,Norway,Norway,NO,NO,54,19
+subdivision_codes,3157379,3157379,Fjelldal,Fjelldal,Norway,Norway,NO,NO,54,19
+subdivision_codes,3154000,3154000,Hamnvik,Hamnvik,Norway,Norway,NO,NO,54,19
+subdivision_codes,3144311,3144311,Gargan,Gargan,Norway,Norway,NO,NO,54,19
+subdivision_codes,777381,777381,Storslett,Storslett,Norway,Norway,NO,NO,54,19
+subdivision_codes,777682,777682,Skjervøy,Skjervøy,Norway,Norway,NO,NO,54,19
+subdivision_codes,778829,778829,Lyngseidet,Lyngseidet,Norway,Norway,NO,NO,54,19
+subdivision_codes,3145649,3145649,Moen,Moen,Norway,Norway,NO,NO,54,19
+subdivision_codes,9403968,9403968,Fjordgard,Fjordgard,Norway,Norway,NO,NO,54,19
+subdivision_codes,780662,780662,Birtavarre,Birtavarre,Norway,Norway,NO,NO,54,19
+subdivision_codes,7626406,7626406,Breivikbotn,Breivikbotn,Norway,Norway,NO,NO,54,20
+subdivision_codes,779622,779622,Havøysund,Havøysund,Norway,Norway,NO,NO,54,20
+subdivision_codes,3159829,3159829,Brygghaugen,Brygghaugen,Norway,Norway,NO,NO,54,19
+subdivision_codes,3153910,3153910,Hansnes,Hansnes,Norway,Norway,NO,NO,54,19
+subdivision_codes,3148507,3148507,Laksvatn,Laksvatn,Norway,Norway,NO,NO,54,19
+subdivision_codes,3135698,3135698,Straumsbukta,Straumsbukta,Norway,Norway,NO,NO,54,19
+subdivision_codes,3134691,3134691,Tennevollen,Tennevollen,Norway,Norway,NO,NO,54,19
+subdivision_codes,3137714,3137714,Sommaroy,Sommaroy,Norway,Norway,NO,NO,54,19
+subdivision_codes,3142490,3142490,Ramfjordbotn,Ramfjordbotn,Norway,Norway,NO,NO,54,19
+subdivision_codes,3138409,3138409,Skulsfjord,Skulsfjord,Norway,Norway,NO,NO,54,19
+subdivision_codes,11746742,11746742,Ramnes,Ramnes,Norway,Norway,NO,NO,38,7
+subdivision_codes,3160913,3160913,Bo,Bo,Norway,Norway,NO,NO,30,1
+subdivision_codes,3160490,3160490,Botnhamn,Botnhamn,Norway,Norway,NO,NO,54,19
+subdivision_codes,7626341,7626341,Lierbyen,Lierbyen,Norway,Norway,NO,NO,30,6
+subdivision_codes,3158783,3158783,Eggedal,Eggedal,Norway,Norway,NO,NO,30,6
+subdivision_codes,7626342,7626342,Lampeland,Lampeland,Norway,Norway,NO,NO,30,6
+subdivision_codes,3151299,3151299,Hvam,Hvam,Norway,Norway,NO,NO,30,2
+subdivision_codes,9403909,9403909,Ringvoll,Ringvoll,Norway,Norway,NO,NO,30,2
+subdivision_codes,12077886,12077886,Hvasser,Hvasser,Norway,Norway,NO,NO,38,7
+subdivision_codes,8558575,8558575,Siggerud,Siggerud,Norway,Norway,NO,NO,30,2
+subdivision_codes,3143073,3143073,Overbygd,Overbygd,Norway,Norway,NO,NO,54,19
+subdivision_codes,778346,778346,Olderdalen,Olderdalen,Norway,Norway,NO,NO,54,19
+subdivision_codes,3150604,3150604,Kaldfarnes,Kaldfarnes,Norway,Norway,NO,NO,54,19
+subdivision_codes,9536989,9536989,Lavangen,Lavangen,Norway,Norway,NO,NO,54,19
+subdivision_codes,3133977,3133977,Trogstad,Trogstad,Norway,Norway,NO,NO,,1
+subdivision_codes,11746715,11746715,Klavestadhaugen,Klavestadhaugen,Norway,Norway,NO,NO,30,1
+subdivision_codes,9403914,9403914,Svinndal,Svinndal,Norway,Norway,NO,NO,30,1
+subdivision_codes,11748655,11748655,Trollasen,Trollasen,Norway,Norway,NO,NO,30,2
+subdivision_codes,777073,777073,Vadsø,Vadsø,Norway,Norway,NO,NO,54,20
+subdivision_codes,9495214,9495214,Borgen,Borgen,Norway,Norway,NO,NO,30,2
+subdivision_codes,3148354,3148354,Langesund,Langesund,Norway,Norway,NO,NO,38,8
+subdivision_codes,6355182,6355182,Bardufoss,Bardufoss,Norway,Norway,NO,NO,54,19
+subdivision_codes,3143138,3143138,Cavkkus,Cavkkus,Norway,Norway,NO,NO,54,19
+subdivision_codes,779350,779350,Karasjok,Karasjok,Norway,Norway,NO,NO,54,20
+subdivision_codes,3134384,3134384,Tomasjorda,Tomasjorda,Norway,Norway,NO,NO,54,19
+subdivision_codes,9494304,9494304,Vinje,Vinje,Norway,Norway,NO,NO,38,8
+subdivision_codes,3140940,3140940,Rundhaug,Rundhaug,Norway,Norway,NO,NO,54,19
+subdivision_codes,3142398,3142398,Ranasfoss,Ranasfoss,Norway,Norway,NO,NO,30,2
+subdivision_codes,3158259,3158259,Enebakkneset,Enebakkneset,Norway,Norway,NO,NO,30,2
+subdivision_codes,9404488,9404488,"Eggedal,nedre","Eggedal,nedre",Norway,Norway,NO,NO,30,6
+subdivision_codes,7626348,7626348,Svarstad,Svarstad,Norway,Norway,NO,NO,38,7
+subdivision_codes,9404004,9404004,Oppegard,Oppegard,Norway,Norway,NO,NO,30,2
+subdivision_codes,11873310,11873310,Myre,Myre,Norway,Norway,NO,NO,38,7
+subdivision_codes,3133381,3133381,Ullensaker,Ullensaker,Norway,Norway,NO,NO,30,2
+subdivision_codes,6355193,6355193,Vradal,Vradal,Norway,Norway,NO,NO,38,8
+subdivision_codes,3139765,3139765,Setermoen,Setermoen,Norway,Norway,NO,NO,54,19
+subdivision_codes,9537658,9537658,Kjopmannskjaer,Kjopmannskjaer,Norway,Norway,NO,NO,38,7
+subdivision_codes,3159400,3159400,Dalen,Dalen,Norway,Norway,NO,NO,38,8
+subdivision_codes,777035,777035,Vannvåg,Vannvåg,Norway,Norway,NO,NO,54,19
+subdivision_codes,3141019,3141019,Rud,Rud,Norway,Norway,NO,NO,30,2
+subdivision_codes,3157054,3157054,Flesberg,Flesberg,Norway,Norway,NO,NO,30,6
+subdivision_codes,3158633,3158633,Eidsfoss,Eidsfoss,Norway,Norway,NO,NO,38,7
+subdivision_codes,3149488,3149488,Kornsjo,Kornsjo,Norway,Norway,NO,NO,30,1
+subdivision_codes,776936,776936,Vikran,Vikran,Norway,Norway,NO,NO,54,20
+subdivision_codes,3145984,3145984,Mestervik,Mestervik,Norway,Norway,NO,NO,54,19
+subdivision_codes,3146326,3146326,Mortenhals,Mortenhals,Norway,Norway,NO,NO,54,19
+subdivision_codes,3207628,3207628,Rorvik,Rorvik,Norway,Norway,NO,NO,30,6
+subdivision_codes,3154552,3154552,Gullaug,Gullaug,Norway,Norway,NO,NO,30,6
+subdivision_codes,3150496,3150496,Kambo,Kambo,Norway,Norway,NO,NO,30,1
+subdivision_codes,3133164,3133164,Utgard,Utgard,Norway,Norway,NO,NO,30,1
+subdivision_codes,9536262,9536262,Lier,Lier,Norway,Norway,NO,NO,30,2
+subdivision_codes,3139111,3139111,Skedsmo,Skedsmo,Norway,Norway,NO,NO,,2
+subdivision_codes,6545367,6545367,Neskollen,Neskollen,Norway,Norway,NO,NO,30,2
+subdivision_codes,9404413,9404413,Sand,Sand,Norway,Norway,NO,NO,30,1
+subdivision_codes,9404013,9404013,Husoy,Husoy,Norway,Norway,NO,NO,54,19
+subdivision_codes,777138,777138,Tufjord,Tufjord,Norway,Norway,NO,NO,54,20
+subdivision_codes,3143601,3143601,Olsborg,Olsborg,Norway,Norway,NO,NO,54,19
+subdivision_codes,9536261,9536261,Blafjellet,Blafjellet,Norway,Norway,NO,NO,30,2
+subdivision_codes,3161752,3161752,Berge,Berge,Norway,Norway,NO,NO,38,8
+subdivision_codes,778451,778451,Nordlenangen,Nordlenangen,Norway,Norway,NO,NO,54,19
+subdivision_codes,3139816,3139816,Sem,Sem,Norway,Norway,NO,NO,30,2
+subdivision_codes,3158786,3158786,Egge,Egge,Norway,Norway,NO,NO,30,6
