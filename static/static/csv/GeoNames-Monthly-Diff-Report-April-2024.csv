@@ -1,0 +1,214 @@
+diff_in,old_geoname_id,new_geoname_id,old_city_name,new_city_name,old_country_name,new_country_name,old_country_code,new_country_code,old_subdivision_codes,new_subdivision_codes
+city_name,3427474,3427474,Valentin Alsina,Valentín Alsina,Argentina,Argentina,AR,AR,B,B
+city_name,3433723,3433723,Gonzalez Catan,González Catán,Argentina,Argentina,AR,AR,B,B
+city_name,3862320,3862320,Castelli,Juan Jose Castelli,Argentina,Argentina,AR,AR,H,H
+city_name,3861568,3861568,Chepes Viejo,Chepes,Argentina,Argentina,AR,AR,F,F
+city_name,3427505,3427505,Vicente Lopez,Vicente López,Argentina,Argentina,AR,AR,B,B
+city_name,3436434,3436434,Aldea Asuncion,Aldea Asunción,Argentina,Argentina,AR,AR,E,E
+city_name,11551604,11551604,Eunonyhareenyha,Eunanoreenya,Australia,Australia,AU,AU,NSW,NSW
+city_name,7701323,7701323,Shariatpur District,Shariatpur,Bangladesh,Bangladesh,BD,BD,"C, 62","C, 62"
+city_name,627907,627907,Gomel,Homyel,Belarus,Belarus,BY,BY,HO,HO
+city_name,6319847,6319847,Baixa Grande Do Ribeiro,Baixa Grande do Ribeiro,Brazil,Brazil,BR,BR,PI,PI
+city_name,6319698,6319698,Formosa Da Serra Negra,Formosa da Serra Negra,Brazil,Brazil,BR,BR,MA,MA
+city_name,6323218,6323218,Passo De Torres,Passo de Torres,Brazil,Brazil,BR,BR,SC,SC
+city_name,6321184,6321184,Bonito De Minas,Bonito de Minas,Brazil,Brazil,BR,BR,MG,MG
+city_name,6323862,6323862,Primavera Do Leste,Primavera do Leste,Brazil,Brazil,BR,BR,MT,MT
+city_name,6323881,6323881,Terra Nova Do Norte,Terra Nova do Norte,Brazil,Brazil,BR,BR,MT,MT
+city_name,6319663,6319663,Bom Jesus Das Selvas,Bom Jesus das Selvas,Brazil,Brazil,BR,BR,MA,MA
+city_name,6323853,6323853,Planalto Da Serra,Planalto da Serra,Brazil,Brazil,BR,BR,MT,MT
+city_name,6323855,6323855,Pontal Do Araguaia,Pontal do Araguaia,Brazil,Brazil,BR,BR,MT,MT
+city_name,5887470,5887470,Asbestos,Val-des-Sources,Canada,Canada,CA,CA,QC,QC
+city_name,6325480,6325480,Berthier-Sur-Mer,Berthier-sur-Mer,Canada,Canada,CA,CA,QC,QC
+city_name,3073789,3073789,Karviná,Fryštát,Czechia,Czechia,CZ,CZ,"80, 803","80, 803"
+city_name,3660073,3660073,San Jacinto de Buena Fe,Buena Fe,Ecuador,Ecuador,EC,EC,R,R
+city_name,3653015,3653015,Playas,General Villamil,Ecuador,Ecuador,EC,EC,G,G
+city_name,3657722,3657722,Guabo,El Guabo,Ecuador,Ecuador,EC,EC,O,O
+city_name,2890657,2890657,Kirchberg,Erlbach-Kirchberg,Germany,Germany,DE,DE,SN,SN
+city_name,1263772,1263772,Māngaon,Mangaon,India,India,IN,IN,MH,MH
+city_name,2961642,2961642,Rylane Cross,Rylane,Ireland,Ireland,IE,IE,"M, CO","M, CO"
+city_name,8184332,8184332,Segev Shalom,Shaqib al-Salam,Israel,Israel,IL,IL,D,D
+city_name,8265550,8265550,Adi,Adi,Israel,Israel,IL,IL,Z,Z
+city_name,295587,295587,Ayyelet HaShahar,Ayelet HaShahar,Israel,Israel,IL,IL,Z,Z
+city_name,295464,295464,Bet HaGaddi,Beit HaGadi,Israel,Israel,IL,IL,D,D
+city_name,3167872,3167872,San Pier d'Arena,Sampierdarena,Italy,Italy,IT,IT,"42, GE","42, GE"
+city_name,2563230,2563230,Bahar ic-Caghaq,Baħar iċ-Ċagħaq,Malta,Malta,MT,MT,38,38
+city_name,4013720,4013720,Ciudad Delicias,Delicias,Mexico,Mexico,MX,MX,CHH,CHH
+city_name,3516168,3516168,Tekoh,Tecoh,Mexico,Mexico,MX,MX,YUC,YUC
+city_name,3521168,3521168,Poza Rica de Hidalgo,Poza Rica,Mexico,Mexico,MX,MX,VER,VER
+city_name,3983820,3983820,Santa Rosa Jauregui,Santa Rosa Jáuregui,Mexico,Mexico,MX,MX,QUE,QUE
+city_name,3818742,3818742,San Andres Cholula,San Andrés Cholula,Mexico,Mexico,MX,MX,PUE,PUE
+city_name,3522251,3522251,Oxkutzkab,Oxkutzcab,Mexico,Mexico,MX,MX,YUC,YUC
+city_name,3532899,3532899,Amecameca,Amecameca de Juárez,Mexico,Mexico,MX,MX,MEX,MEX
+city_name,3985504,3985504,San Martin Hidalgo,San Martín de Hidalgo,Mexico,Mexico,MX,MX,JAL,JAL
+city_name,4017984,4017984,Atoyac de Alvarez,Atoyac de Álvarez,Mexico,Mexico,MX,MX,GRO,GRO
+city_name,3523450,3523450,Matias Romero,Matías Romero,Mexico,Mexico,MX,MX,OAX,OAX
+city_name,3516076,3516076,Tecax,Tekax,Mexico,Mexico,MX,MX,YUC,YUC
+city_name,3529660,3529660,Dzidzantun,Dzidzantún,Mexico,Mexico,MX,MX,YUC,YUC
+city_name,3158605,3158605,Eidsvoll verk,Eidsvoll Verk,Norway,Norway,NO,NO,2,2
+city_name,3144595,3144595,Nevlunghamn,Nevlunghavn,Norway,Norway,NO,NO,7,7
+city_name,3151096,3151096,Indre Standal,Store Standal,Norway,Norway,NO,NO,15,15
+city_name,3146169,3146169,Melandsjø,Melandsjøen,Norway,Norway,NO,NO,50,50
+city_name,3147047,3147047,Lokken Verk,Løkken Verk,Norway,Norway,NO,NO,50,50
+city_name,3163608,3163608,Åfjord,Å,Norway,Norway,NO,NO,50,50
+city_name,3148080,3148080,Laukvika,Laukvik,Norway,Norway,NO,NO,18,18
+city_name,3149879,3149879,Klepp,Klepp stasjon,Norway,Norway,NO,NO,11,11
+city_name,9403902,9403902,Vikhamar,Vikhammer,Norway,Norway,NO,NO,50,50
+city_name,3149721,3149721,Knarrlaget,Knarrlagsund,Norway,Norway,NO,NO,50,50
+city_name,9404009,9404009,Brekkebygd,Brekken,Norway,Norway,NO,NO,50,50
+city_name,3162892,3162892,Sor-Arnoy,Sørarnøy,Norway,Norway,NO,NO,18,18
+city_name,9536264,9536264,Vinterbru,Vinterbro,Norway,Norway,NO,NO,2,2
+city_name,3204669,3204669,Backi Brestovac,Bački Brestovac,Serbia,Serbia,RS,RS,"VO, 05","VO, 05"
+city_name,3204666,3204666,Backi Monostor,Bački Monoštor,Serbia,Serbia,RS,RS,"VO, 05","VO, 05"
+city_name,3191339,3191339,Salas Nocajski,Salaš Noćajski,Serbia,Serbia,RS,RS,"VO, 07","VO, 07"
+city_name,3191019,3191019,Sentvid pri Sticni,Šentvid pri Stični,Slovenia,Slovenia,SI,SI,39,39
+city_name,3189940,3189940,Stari Trg pri Lozu,Stari trg pri Ložu,Slovenia,Slovenia,SI,SI,65,65
+city_name,3202425,3202425,Crni Kal,Črni Kal,Slovenia,Slovenia,SI,SI,50,50
+city_name,3187428,3187428,Volcja Draga,Volčja Draga,Slovenia,Slovenia,SI,SI,201,201
+city_name,3191034,3191034,Sentjanz pri Dravogradu,Šentjanž pri Dravogradu,Slovenia,Slovenia,SI,SI,25,25
+city_name,3190714,3190714,Skofja Vas,Škofja vas,Slovenia,Slovenia,SI,SI,11,11
+city_name,3190494,3190494,Smartno pri Slovenj Gradcu,Šmartno pri Slovenj Gradcu,Slovenia,Slovenia,SI,SI,112,112
+city_name,3195469,3195469,Marjeta na Dravskem Polju,Marjeta na Dravskem polju,Slovenia,Slovenia,SI,SI,115,115
+city_name,3196642,3196642,Leskovec pri Krskem,Leskovec pri Krškem,Slovenia,Slovenia,SI,SI,54,54
+city_name,3192813,3192813,Poljane nad Skofjo Loko,Poljane nad Škofjo Loko,Slovenia,Slovenia,SI,SI,27,27
+city_name,3190499,3190499,Smartno ob Dreti,Šmartno ob Dreti,Slovenia,Slovenia,SI,SI,83,83
+city_name,3190493,3190493,Smartno v Rozni Dolini,Šmartno v Rožni dolini,Slovenia,Slovenia,SI,SI,11,11
+city_name,3190500,3190500,Smartno na Pohorju,Šmartno na Pohorju,Slovenia,Slovenia,SI,SI,113,113
+city_name,3201976,3201976,Dob pri Sentvidu,Dob pri Šentvidu,Slovenia,Slovenia,SI,SI,39,39
+city_name,3195161,3195161,Miklavz pri Ormozu,Miklavž pri Ormožu,Slovenia,Slovenia,SI,SI,87,87
+city_name,3186511,3186511,Zgornje Hoce,Zgornje Hoče,Slovenia,Slovenia,SI,SI,160,160
+city_name,3190230,3190230,Spodnja Volicina,Spodnja Voličina,Slovenia,Slovenia,SI,SI,58,58
+city_name,3191577,3191577,Rogatec nad Zelimljami,Rogatec nad Želimljami,Slovenia,Slovenia,SI,SI,37,37
+city_name,3196152,3196152,Zgornja Loznica,Zgornja Ložnica,Slovenia,Slovenia,SI,SI,113,113
+city_name,3200378,3200378,Gorenja Vas pri Smarjeti,Gorenja Vas pri Šmarjeti,Slovenia,Slovenia,SI,SI,206,206
+city_name,3190249,3190249,Hajdina,Spodnja Hajdina,Slovenia,Slovenia,SI,SI,159,159
+city_name,3192748,3192748,Ponikva pri Zalcu,Ponikva pri Žalcu,Slovenia,Slovenia,SI,SI,190,190
+city_name,3204040,3204040,Bistrica pri Trzicu,Bistrica pri Tržiču,Slovenia,Slovenia,SI,SI,131,131
+city_name,3199666,3199666,Grahovo ob Baci,Grahovo ob Bači,Slovenia,Slovenia,SI,SI,128,128
+city_name,3196271,3196271,Loka pri Mengsu,Loka pri Mengšu,Slovenia,Slovenia,SI,SI,72,72
+city_name,2518766,2518766,El Abrigo,Los Abrigos,Spain,Spain,ES,ES,"CN, TF","CN, TF"
+city_name,2515638,2515638,La Playa de Arguineguin,Arguineguín,Spain,Spain,ES,ES,"CN, GC","CN, GC"
+city_name,7626798,7626798,Sant Rafel,San Rafael,Spain,Spain,ES,ES,"IB, PM","IB, PM"
+city_name,3336568,3336568,Skanoer med Falsterbo,Skanör med Falsterbo,Sweden,Sweden,SE,SE,M,M
+city_name,2664151,2664151,Vaestra AEmtervik,Västra Ämtervik,Sweden,Sweden,SE,SE,S,S
+city_name,2663957,2663957,Vaestra Karup,Västra Karup,Sweden,Sweden,SE,SE,M,M
+city_name,2675692,2675692,Soedra Sandby,Södra Sandby,Sweden,Sweden,SE,SE,M,M
+city_name,2672805,2672805,Stora Melloesa,Stora Mellösa,Sweden,Sweden,SE,SE,T,T
+city_name,2675561,2675561,Soedra Vi,Södra Vi,Sweden,Sweden,SE,SE,H,H
+city_name,2712715,2712715,Gaerds Koepinge,Gärds Köpinge,Sweden,Sweden,SE,SE,M,M
+city_name,2719965,2719965,Braekne-Hoby,Bräkne-Hoby,Sweden,Sweden,SE,SE,K,K
+city_name,2711903,2711903,Glemminge,Glemmingebro,Sweden,Sweden,SE,SE,M,M
+city_name,2673076,2673076,Stora Hoega,Stora Höga,Sweden,Sweden,SE,SE,O,O
+city_name,2718133,2718133,Dals Langed,Dals Långed,Sweden,Sweden,SE,SE,O,O
+city_name,6574590,6574590,Pingzhen District,Pingzhen,Taiwan,Taiwan,TW,TW,TAO,TAO
+city_name,2749427,2749427,Oosternijkerk,Easternijtsjerk,The Netherlands,The Netherlands,NL,NL,FR,FR
+city_name,2747358,2747358,s-Heer-Arendskerke,s-Heer Arendskerke,The Netherlands,The Netherlands,NL,NL,ZE,ZE
+city_name,2756936,2756936,De Wijk,de Wijk,The Netherlands,The Netherlands,NL,NL,DR,DR
+city_name,2752520,2752520,Kollumerzwaag,Kollumersweach,The Netherlands,The Netherlands,NL,NL,FR,FR
+city_name,2750399,2750399,Niawier,Nijewier,The Netherlands,The Netherlands,NL,NL,FR,FR
+city_name,2747359,2747359,s-Heer-Abtskerke,s-Heer Abtskerke,The Netherlands,The Netherlands,NL,NL,ZE,ZE
+city_name,2749434,2749434,Oosterlittens,Easterlittens,The Netherlands,The Netherlands,NL,NL,FR,FR
+city_name,2747352,2747352,s-Heer-Hendrikskinderen,s-Heer Hendrikskinderen,The Netherlands,The Netherlands,NL,NL,ZE,ZE
+city_name,2747082,2747082,Smeulveen,Klazienaveen-Noord,The Netherlands,The Netherlands,NL,NL,DR,DR
+city_name,2745018,2745018,Warga,Wergea,The Netherlands,The Netherlands,NL,NL,FR,FR
+city_name,2756427,2756427,Edens,Iens,The Netherlands,The Netherlands,NL,NL,FR,FR
+city_name,5390267,5390267,Saint Helena,St. Helena,United States,United States,US,US,CA,CA
+city_name,5853992,5853992,Wahiawā,Wahiawa,United States,United States,US,US,HI,HI
+city_name,5139399,5139399,Saint Bonaventure,St. Bonaventure,United States,United States,US,US,NY,NY
+city_name,5856111,5856111,Honoka'a,Honokaa,United States,United States,US,US,HI,HI
+city_name,5852140,5852140,Papa'ikou,Papaikou,United States,United States,US,US,HI,HI
+city_name,5181475,5181475,Branch Dale,Branchdale,United States,United States,US,US,PA,PA
+city_name,3440571,3440571,Santa Lucia,Santa Lucía,Uruguay,Uruguay,UY,UY,CA,CA
+city_name,3440394,3440394,Sarandi Grande,Sarandí Grande,Uruguay,Uruguay,UY,UY,FD,FD
+geoname_id,3431204,12707154,Los Cardales,Los Cardales,Argentina,Argentina,AR,AR,B,B
+geoname_id,3842907,12725800,Nueva Esperanza,Nueva Esperanza,Argentina,Argentina,AR,AR,G,G
+geoname_id,12654330,12707158,Cuartel V,Cuartel V,Argentina,Argentina,AR,AR,B,B
+geoname_id,3470160,6323070,Bela Vista do Toldo,Bela Vista do Toldo,Brazil,Brazil,BR,BR,SC,SC
+geoname_id,3462986,6324217,Lucas do Rio Verde,Lucas do Rio Verde,Brazil,Brazil,BR,BR,MT,MT
+geoname_id,3454363,6323774,Pedro Gomes,Pedro Gomes,Brazil,Brazil,BR,BR,MS,MS
+geoname_id,3398105,6320520,Ipubi,Ipubi,Brazil,Brazil,BR,BR,PE,PE
+geoname_id,3406910,6319649,Bacabal,Bacabal,Brazil,Brazil,BR,BR,MA,MA
+geoname_id,3400918,6319901,Eliseu Martins,Eliseu Martins,Brazil,Brazil,BR,BR,PI,PI
+geoname_id,6318630,6323876,Sapezal,Sapezal,Brazil,Brazil,BR,BR,MT,MT
+geoname_id,3472391,6323719,Amambai,Amambai,Brazil,Brazil,BR,BR,MS,MS
+geoname_id,3401522,6319893,Cristino Castro,Cristino Castro,Brazil,Brazil,BR,BR,PI,PI
+geoname_id,3451399,6323777,Ribas do Rio Pardo,Ribas do Rio Pardo,Brazil,Brazil,BR,BR,MS,MS
+geoname_id,6317704,6323769,Nova Alvorada do Sul,Nova Alvorada do Sul,Brazil,Brazil,BR,BR,MS,MS
+geoname_id,3468720,6321197,Buritizeiro,Buritizeiro,Brazil,Brazil,BR,BR,MG,MG
+geoname_id,3445418,6321913,Vazante,Vazante,Brazil,Brazil,BR,BR,MG,MG
+geoname_id,3475644,3460723,Itapeva,Itapeva,Brazil,Brazil,BR,BR,SP,SP
+geoname_id,6317600,6324174,Mirante da Serra,Mirante da Serra,Brazil,Brazil,BR,BR,RO,RO
+geoname_id,3467860,6321215,Campina Verde,Campina Verde,Brazil,Brazil,BR,BR,MG,MG
+geoname_id,3467687,6323938,Campos Belos,Campos Belos,Brazil,Brazil,BR,BR,GO,GO
+geoname_id,3471795,6322677,Arapoti,Arapoti,Brazil,Brazil,BR,BR,PR,PR
+geoname_id,6318752,6319819,Tasso Fragoso,Tasso Fragoso,Brazil,Brazil,BR,BR,MA,MA
+geoname_id,3392907,6319758,Pastos Bons,Pastos Bons,Brazil,Brazil,BR,BR,MA,MA
+geoname_id,3462439,8604177,Getulio Vargas,Getulio Vargas,Brazil,Brazil,BR,BR,RS,RS
+geoname_id,3462371,6323977,Goiatuba,Goiatuba,Brazil,Brazil,BR,BR,GO,GO
+geoname_id,3471940,6323724,Aparecida do Taboado,Aparecida do Taboado,Brazil,Brazil,BR,BR,MS,MS
+geoname_id,6317747,6323843,Nova Lacerda,Nova Lacerda,Brazil,Brazil,BR,BR,MT,MT
+geoname_id,3459344,6321511,Lagamar,Lagamar,Brazil,Brazil,BR,BR,MG,MG
+geoname_id,3472473,6323794,Alto Araguaia,Alto Araguaia,Brazil,Brazil,BR,BR,MT,MT
+geoname_id,3396675,6320540,Lagoa Grande,Lagoa Grande,Brazil,Brazil,BR,BR,PE,PE
+geoname_id,3462607,6321399,Gameleiras,Gameleiras,Brazil,Brazil,BR,BR,MG,MG
+geoname_id,3470718,6323804,Barra do Bugres,Barra do Bugres,Brazil,Brazil,BR,BR,MT,MT
+geoname_id,3461151,6323990,Ipameri,Ipameri,Brazil,Brazil,BR,BR,GO,GO
+geoname_id,3391371,6319771,Porto Franco,Porto Franco,Brazil,Brazil,BR,BR,MA,MA
+geoname_id,6321383,3463120,Formoso,Formoso,Brazil,Brazil,BR,BR,MG,MG
+geoname_id,3470697,6324198,Barra do Mendes,Barra do Mendes,Brazil,Brazil,BR,BR,BA,BA
+geoname_id,3457152,6321566,Minas Novas,Minas Novas,Brazil,Brazil,BR,BR,MG,MG
+geoname_id,3460725,3460724,Itapeva,Itapeva,Brazil,Brazil,BR,BR,MG,MG
+geoname_id,6323873,3450872,Rosario Oeste,Rosario Oeste,Brazil,Brazil,BR,BR,MT,MT
+geoname_id,3466594,6323944,Cavalcante,Cavalcante,Brazil,Brazil,BR,BR,GO,GO
+geoname_id,3394380,6319747,Morros,Morros,Brazil,Brazil,BR,BR,MA,MA
+geoname_id,6324249,6316346,Alto Alegre,Alto Alegre,Brazil,Brazil,BR,BR,RR,RR
+geoname_id,6317844,6321626,Pai Pedro,Pai Pedro,Brazil,Brazil,BR,BR,MG,MG
+geoname_id,3411887,6319537,Caseara,Caseara,Brazil,Brazil,BR,BR,TO,TO
+geoname_id,6160740,6160739,Sydenham,Sydenham,Canada,Canada,CA,CA,ON,ON
+geoname_id,6177594,6177596,Weedon,Weedon,Canada,Canada,CA,CA,QC,QC
+geoname_id,6104975,6104974,Pine Grove,Pine Grove,Canada,Canada,CA,CA,NS,NS
+geoname_id,5909491,5909489,Brooklyn,Brooklyn,Canada,Canada,CA,CA,NS,NS
+geoname_id,6109117,7732511,Pomquet,Pomquet,Canada,Canada,CA,CA,NS,NS
+geoname_id,5942913,5942911,Dryden,Dryden,Canada,Canada,CA,CA,ON,ON
+geoname_id,6068245,6068246,Maxwell,Maxwell,Canada,Canada,CA,CA,ON,ON
+geoname_id,5955498,5955497,Forest,Forest,Canada,Canada,CA,CA,ON,ON
+geoname_id,5978128,5978129,Hudson,Hudson,Canada,Canada,CA,CA,ON,ON
+geoname_id,5926753,5926755,Connaught,Connaught,Canada,Canada,CA,CA,ON,ON
+geoname_id,6149294,6149297,Slate Falls,Slate Falls,Canada,Canada,CA,CA,ON,ON
+geoname_id,6082316,6082313,Mount Pleasant,Mount Pleasant,Canada,Canada,CA,CA,ON,ON
+geoname_id,6182380,6182379,Willow Beach,Willow Beach,Canada,Canada,CA,CA,ON,ON
+geoname_id,6122755,6122754,River Valley,River Valley,Canada,Canada,CA,CA,ON,ON
+geoname_id,5944779,5944778,Eagle Lake,Eagle Lake,Canada,Canada,CA,CA,ON,ON
+geoname_id,12096567,5946961,Eel Ground,Eel Ground,Canada,Canada,CA,CA,NB,NB
+geoname_id,6087523,6615433,New Dayton,New Dayton,Canada,Canada,CA,CA,AB,AB
+geoname_id,5914676,5914675,Canaan,Canaan,Canada,Canada,CA,CA,NS,NS
+geoname_id,5955532,5955531,Forest Hill,Forest Hill,Canada,Canada,CA,CA,NS,NS
+geoname_id,6075006,6075007,Minto,Minto,Canada,Canada,CA,CA,ON,ON
+geoname_id,1918733,11182641,Dalian,Dalian,China,China,CN,CN,ZJ,ZJ
+geoname_id,3671651,3671655,Pueblo Nuevo,Pueblo Nuevo,Colombia,Colombia,CO,CO,COR,COR
+geoname_id,3072020,3072024,Lhotka,Lhotka,Czechia,Czechia,CZ,CZ,"80, 805","80, 805"
+geoname_id,2981456,2981468,Saint-Barthelemy,Saint-Barthelemy,France,France,FR,FR,"ARA, 38","ARA, 38"
+geoname_id,2968997,2968962,Villard,Villard,France,France,FR,FR,"ARA, 74","ARA, 74"
+geoname_id,1274236,1274237,Chikhli,Chikhli,India,India,IN,IN,MH,MH
+geoname_id,1259653,1259652,Pimpri,Pimpri,India,India,IN,IN,MH,MH
+geoname_id,10434064,1269668,Islāmpur,Islāmpur,India,India,IN,IN,MH,MH
+geoname_id,12522576,11875608,Bhupalpally,Bhupalpally,India,India,IN,IN,TS,TS
+geoname_id,8957439,3182286,Bastiglia,Bastiglia,Italy,Italy,IT,IT,"45, MO","45, MO"
+geoname_id,11446627,2127989,Kasugachō,Kasugachō,Japan,Japan,JP,JP,1,1
+geoname_id,777382,777381,Storslett,Storslett,Norway,Norway,NO,NO,19,19
+geoname_id,3141021,3141018,Rud,Rud,Norway,Norway,NO,NO,6,6
+geoname_id,3152879,11746741,Hernes,Hernes,Norway,Norway,NO,NO,34,34
+geoname_id,7324482,1176106,Jaranwala,Jaranwala,Pakistan,Pakistan,PK,PK,PB,PB
+geoname_id,1386778,1172295,Lalian,Lalian,Pakistan,Pakistan,PK,PK,PB,PB
+geoname_id,1418157,1175560,Kabirwala,Kabirwala,Pakistan,Pakistan,PK,PK,PB,PB
+geoname_id,3372964,3372965,Lagoa,Lagoa,Portugal,Portugal,PT,PT,20,20
+geoname_id,3372707,3372709,Ribeira Grande,Ribeira Grande,Portugal,Portugal,PT,PT,20,20
+geoname_id,3363486,7506857,Newlands,Newlands,South Africa,South Africa,ZA,ZA,WC,WC
+geoname_id,2687673,2687678,Nyland,Nyland,Sweden,Sweden,SE,SE,Y,Y
+geoname_id,2687679,2687678,Nyland,Nyland,Sweden,Sweden,SE,SE,Y,Y
+geoname_id,2749137,2749138,Oudega,Oudega,The Netherlands,The Netherlands,NL,NL,FR,FR
+geoname_id,3333166,2644556,Lewisham,Lewisham,United Kingdom,United Kingdom,GB,GB,"ENG, LEW","ENG, LEW"
+geoname_id,3333147,2647937,Greenwich,Greenwich,United Kingdom,United Kingdom,GB,GB,"ENG, GRE","ENG, GRE"
+geoname_id,3333163,6545250,Lambeth,Lambeth,United Kingdom,United Kingdom,GB,GB,"ENG, LBH","ENG, LBH"
+geoname_id,5106160,7259148,Wayne,Wayne,United States,United States,US,US,NJ,NJ
+geoname_id,5603460,5603461,Peck,Peck,United States,United States,US,US,ID,ID
+geoname_id,4277555,4277554,Pomona,Pomona,United States,United States,US,US,KS,KS
