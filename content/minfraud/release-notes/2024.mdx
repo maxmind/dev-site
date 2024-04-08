@@ -7,6 +7,43 @@ title: minFraud Release Notes
 Subscribe to the [minFraud release notes RSS feed](/minfraud/release-notes/rss.xml).
 </Alert>
 
+<ReleaseNote date="2024-04-08" title="Email first seen can be used as a parameter for custom rules">
+
+minFraud Insights and Factors customers can now use the
+[`/email/first_seen` output](https://dev.maxmind.com/minfraud/api-documentation/responses/#schema--response--email)
+in minFraud custom rules.
+
+The minFraud service retains a record of when an email address or email domain
+was first seen on the minFraud Network. An email address that has been
+conducting transactions for a long time across the minFraud Network may be more
+trustworthy than a new email address created within the last 30 days.
+
+You can select the email first seen output as a parameter in custom rules by
+selecting minFraud outputs > Email first seen when defining a new condition for
+a custom rule.
+
+- [Learn more about setting custom rule conditions on our Knowledge Base.](https://support.maxmind.com/hc/en-us/articles/4408362750875#h_01HBNQ01QST1MPM481ZW520R7J)
+- [Learn more about email risk data on our Knowledge Base.](https://support.maxmind.com/hc/en-us/articles/4408562891803-Email-Risk-Data)
+
+</ReleaseNote>
+
+<ReleaseNote date="2024-04-08" title="Upcoming changes to our TLS certificates may impact customers with unusual server configuration">
+
+Starting in May, Let's Encrypt will no longer use a cross-signed root
+certificate, and the primary TLS certificate handling the `*.maxmind.com`
+domains will be impacted by this change.
+
+**Most customers will see no impact from this change.**
+
+This change should only be of concern if the servers interacting with MaxMind
+domains are running a very old or out of date operating system, or if you manage
+your own local Certificate Authority store.
+
+- [Read more about these changes on the Cloudflare blog.](https://blog.cloudflare.com/upcoming-lets-encrypt-certificate-chain-change-and-impact-for-cloudflare-customers)
+- [Get information about compatibility from Let's Encrypt.](https://letsencrypt.org/docs/certificate-compatibility/)
+
+</ReleaseNote>
+
 <ReleaseNote date="2024-03-13" title="API policies are now permanently enforced">
 
 To improve our server infrastructure and allow for better performance and
