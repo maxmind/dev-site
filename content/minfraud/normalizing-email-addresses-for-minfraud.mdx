@@ -22,6 +22,7 @@ yourself. Below are the steps to take to do this.
 1. Lowercase the address.
 1. Find the local part of the email (before the `@`) and the domain (after the
    `@`).
+1. Apply NFC normalization to the email local part.
 1. Trim whitespace from the beginning of the domain.
 1. If the domain ends with any number of periods, trim them off.
 1. Convert international domain names (IDNs) to ASCII. For example, you can do
