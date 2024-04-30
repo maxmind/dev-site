@@ -52,8 +52,9 @@ typings/
 # dotenv environment variable files
 .env*
 
-# gatsby files
-.cache
+# hugo files
+.sass-cache
+.hugo_build.lock
 public
 
 # Mac files
