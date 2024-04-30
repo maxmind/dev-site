@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # baseurl is updated on deploy
 baseurl = "/"
 languageCode = "en-us"
@@ -207,3 +208,8 @@ title = 'MaxMind'
 
 [outputs]
   home = ["HTML"]
+=======
+baseURL = '/'
+languageCode = 'en-us'
+title = 'MaxMind'
+>>>>>>> b73cd20 (Init hugo and delete gatsby related files)
