@@ -1,0 +1,45 @@
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>{{ .Title }}</title>
+
+  {{ $style := resources.Get "scss/index.scss" }} {{ $options := dict
+  "transpiler" "dartsass" }} {{ $style := $style | resources.ToCSS $options}}
+
+  <link rel="stylesheet" type="text/css" href="{{ $style.RelPermalink }}" />
+
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=Source+Code+Pro:wght@700&display=swap"
+    rel="stylesheet"
+  />
+
+  <link
+    rel="alternate"
+    type="application/rss+xml"
+    href="{{.Site.BaseURL }}feed.xml"
+    title="RSS Feed for dev.maxmind.com"
+  />
+
+  <!-- Google Tag Manager -->
+  <script>
+    (function (w, d, s, l, i) {
+      w[l] = w[l] || [];
+      w[l].push({
+        "gtm.start": new Date().getTime(),
+        event: "gtm.js",
+      });
+      var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s),
+        dl = l != "dataLayer" ? "&l=" + l : "";
+      j.async = true;
+      j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+      f.parentNode.insertBefore(j, f);
+    })(window, document, "script", "dataLayer", "GTM-M8K593P");
+  </script>
+  <!-- End Google Tag Manager -->
+  <script
+    async
+    src="https://www.maxmind.com/js/global-privacy-control.js"
+  ></script>
+</head>
