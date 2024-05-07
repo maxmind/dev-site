@@ -1,0 +1,92 @@
+/***** Mixins *****/
+@mixin heading {
+  color: #00374c;
+  font-family: var(--mm-font-stack-display);
+  font-weight: 500;
+  line-height: 1.2em;
+  margin: calc(var(--mm-spacing) * 2) 0 calc(var(--mm-spacing) / 4);
+  position: relative;
+  scroll-margin-top: calc(var(--page-header-height) + var(--mm-spacing));
+}
+
+$pattern-scale: 1;
+
+@mixin pattern {
+  position: relative;
+
+  &::before {
+    @include pattern-base;
+  }
+
+  &::after {
+    @include pattern-gradient;
+  }
+}
+
+@mixin pattern-base {
+  background-color: #00a7e5;
+  background-image: url('/images/bg-pattern.svg');
+  background-position: center center;
+  background-size: (80px * $pattern-scale) (140px * $pattern-scale);
+  content: ' ';
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  transform: translateZ(0);
+  width: 100%;
+  will-change: transform;
+}
+
+@mixin pattern-border {
+  &::before,
+  &::after {
+    display: block;
+    height: 10px !important;
+    overflow: hidden;
+  }
+
+  &::before {
+    @include pattern-base;
+  }
+
+  &::after {
+    @include pattern-gradient;
+  }
+}
+
+@mixin pattern-gradient {
+  background: rgb(0, 119, 194);
+  background: linear-gradient(90deg, rgba(0, 119, 194, 0.5) 0%, var(--page-type-color));
+  content: ' ';
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+@mixin menu-button {
+  background: var(--mm-color-background);
+  border: 1px solid var(--mm-color-border);
+  border-radius: var(--mm-border-radius);
+  box-sizing: border-box;
+  color: var(--mm-color-primary-text);
+  cursor: pointer;
+  font-size: 12px;
+  height: 30px;
+  min-width: 30px;
+  padding: 0;
+  width: 30px;
+
+  &:hover {
+    background-color: var(--mm-color-sidebar);
+  }
+
+  @media only screen and (min-width: 420px) {
+    font-size: 16px;
+    height: 50px;
+    min-width: 50px;
+    width: 50px;
+  }
+}
