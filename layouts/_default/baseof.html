@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  {{- partial "head.html" . -}}
+  <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript>
+      <iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-M8K593P"
+        height="0"
+        width="0"
+        style="display:none;visibility:hidden"
+      >
+      </iframe>
+    </noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <div class="wrapper">
+      {{- partial "header.html" . -}}
+      <main id="main-content">
+      {{- block "main" . }}{{- end }}
+      </main>
+      {{- partial "footer.html" . -}}
+    </div>
+    <!-- HubSpot chat -->
+    <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/21266834.js"></script>
+  </body>
+</html>
