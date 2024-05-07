@@ -1,0 +1,32 @@
+$breakpoints: (
+  xs: 360px,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px,
+  xxxl: 1660px
+);
+
+@mixin breakpoint($size) {
+  $width: map-get($breakpoints, $size);
+
+  @media only screen and (min-width: $width) {
+    @content;
+  }
+}
+
+$containers: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px,
+  xxl: 1320px,
+  xxxl: 1600px
+);
+
+@mixin container($size) {
+  $width: map-get($containers, $size);
+  max-width: $width;
+  padding: 0;
+}
