@@ -1,0 +1,59 @@
+@use 'mixins';
+
+.searchbar {
+  display: none;
+  position: relative;
+}
+
+.mag {
+  svg {
+    color: var(--mm-color-primary-text);
+    left: calc(var(--mm-spacing) / 2);
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+
+.searchbar__open {
+  display: inline-block;
+  left: calc(50% - 20px);
+  margin: 0 calc(var(--mm-spacing) / 2);
+  max-width: calc(var(--mm-max-width) - 80px);
+  position: absolute;
+  top: calc(50% + 5px);
+  transform: translate(-50%, -50%);
+  width: calc(100% - (2 * var(--mm-spacing)));
+  z-index: 100;
+}
+
+.search {
+  position: relative;
+}
+
+.search__button {
+  @include mixins.menu-button;
+  float: right;
+}
+
+.input {
+  appearance: none !important;
+  border: 1px solid var(--mm-color-border);
+  border-radius: var(--mm-border-radius);
+  color: var(--mm-color-primary-text);
+  padding: 12px 10px 12px calc(var(--mm-spacing) + 15px);
+  width: 100%;
+
+  &::placeholder {
+    opacity: 0.5;
+  }
+
+  &:focus {
+    box-shadow: 0 0 0 2px var(--mm-color-logo-blue-light);
+    outline: none;
+  }
+}
+
+.hidden {
+  display: none;
+}

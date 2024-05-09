@@ -1,0 +1,90 @@
+{{ define "main" }}
+<main aria-role="main">
+  <div class="home__callout">
+    <h1 class="home__callout-heading">
+      Welcome to the MaxMind Developer Portal!
+    </h1>
+    <h2 class="home__callout-subheading">
+      Develop applications using industry-leading IP intelligence and risk
+      scoring.
+    </h2>
+  </div>
+
+  <div class="home__products">
+    <div class="product-featured">
+      <div class="product-featured__header">
+        <h2
+          class="product-featured__heading product-featured__heading--minfraud"
+        >
+          minFraud Web Services
+        </h2>
+        <h3 class="product-featured__subheading">Transaction Risk API</h3>
+      </div>
+      <div class="product-featured__content">
+        <p>
+          Use risk scoring and data to identify high-risk activity in e-commerce
+          payments, platform user activity, incentivized traffic, and more.
+        </p>
+      </div>
+      <div class="product-featured__links">
+        <a href="/minfraud/evaluate-a-transaction" class="btn btn--minfraud"
+          >Quickstart</a
+        >
+        <a href="/minfraud" class="btn btn--minfraud">View docs</a>
+      </div>
+      <div class="product-featured__footer">
+        <p>
+          Learn more about
+          <a
+            href="https://www.maxmind.com/en/solutions/minfraud-services"
+            class="product-featured__footer-link"
+            >minFraud Web Services</a
+          >.
+        </p>
+      </div>
+    </div>
+    <div class="product-featured">
+      <div class="product-featured__header">
+        <h2 class="product-featured__heading product-featured__heading--geoip">
+          GeoIP2 and GeoLite2
+        </h2>
+        <h3 class="product-featured__subheading">Databases and Web Services</h3>
+      </div>
+      <div class="product-featured__content">
+        <p>
+          Use GeoIP intelligence for content customization, advertising, digital
+          rights management, compliance, fraud detection, security and more.
+        </p>
+      </div>
+      <div class="product-featured__links">
+        <a href="/geoip/geolocate-an-ip" class="btn btn--geoip">Quickstart</a>
+        <a href="/geoip" class="btn btn--geoip">View docs</a>
+      </div>
+      <div class="product-featured__footer">
+        <p>
+          Learn more about
+          <a
+            href="https://www.maxmind.com/en/geoip2-services-and-databases"
+            class="product-featured__footer-link"
+            >GeoIP2</a
+          >
+          and
+          <a
+            href="https://www.maxmind.com/en/geoip2-services-and-databases"
+            class="product-featured__footer-link"
+            >GeoLite2</a
+          >.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="home__signup">
+    <a
+      href="https://www.maxmind.com/en/geolite2/signup"
+      class="home__signup-btn btn btn--primary"
+      >Sign up for a GeoLite2 account to get free IP geolocation data</a
+    >
+  </div>
+</main>
+{{ end }}

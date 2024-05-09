@@ -1,0 +1,118 @@
+/* stylelint-disable no-descending-specificity */
+@use 'variables';
+
+@media only screen and (max-width: 992px) {
+  .search-results__heading {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .search-results__heading {
+    font-size: 30px;
+  }
+}
+
+.search-results {
+  margin: auto;
+  max-width: 800px;
+  padding: 0 var(--mm-spacing) 0;
+}
+
+.search-results__header {
+  margin-bottom: calc(var(--mm-spacing) / 2);
+
+  .search-results__heading {
+    color: #00374c;
+    font-family: var(--mm-font-stack-display);
+    font-weight: 700;
+    line-height: 1.2em;
+    margin: 0;
+    padding-top: var(--mm-spacing);
+    position: relative;
+    scroll-margin-top: calc(var(--page-header-height) + var(--mm-spacing));
+  }
+
+  .search-results__count {
+    font-size: 14px;
+  }
+
+  a {
+    border-bottom: 2px dotted var(--mm-color-display-text);
+    color: var(--mm-color-display-text);
+
+    &:hover {
+      border-bottom-style: solid;
+      text-decoration: none;
+    }
+  }
+}
+
+.search__result-list-item {
+  margin-bottom: calc(var(--mm-spacing) / 1.5);
+
+}
+
+.search__result-title {
+  color: var(--mm-color-display-text);
+  display: inline-block;
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 3px;
+  text-decoration: none;
+
+  &:hover {
+    cursor: pointer;
+    text-decoration: underline;
+  }
+}
+
+.search__result-url {
+  display: block;
+  font-size: 12px;
+  margin-bottom: 3px;
+}
+
+.search__result-description {
+  font-size: 16px;
+  font-weight: 400;
+  margin: 0;
+}
+
+.search__result-heading {
+  border-top: 1px dashed var(--mm-color-border);
+  color: #00374c;
+  font-family: var(--mm-font-stack-display);
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.2em;
+  margin: var(--mm-spacing) 0 calc(var(--mm-spacing) / 2) 0;
+  padding-top: var(--mm-spacing);
+}
+
+.search__pagination {
+  padding-bottom: calc(var(--mm-spacing) * 2);
+
+  .search__next,
+  .search__previous {
+    border-bottom: 2px dotted var(--mm-color-display-text);
+    color: var(--mm-color-display-text);
+    font-size: 18px;
+    text-decoration: none;
+
+    &:hover {
+      border-bottom: 2px solid var(--mm-color-display-text) !important;
+    }
+  }
+
+  .search__next {
+    display: none;
+    float: right;
+  }
+
+  .search__previous {
+    display: none;
+    float: left;
+  }
+}
+

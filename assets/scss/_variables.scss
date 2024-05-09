@@ -1,0 +1,59 @@
+$breakpoints: (
+  xs: 360px,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px,
+  xxxl: 1660px
+);
+
+@mixin breakpoint($size) {
+  $width: map-get($breakpoints, $size);
+
+  @media only screen and (min-width: $width) {
+    @content;
+  }
+}
+
+$containers: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px,
+  xxl: 1320px,
+  xxxl: 1600px
+);
+
+@mixin container($size) {
+  $width: map-get($containers, $size);
+  max-width: $width;
+  padding: 0;
+}
+
+:root {
+  --mm-color-active-blue: #2b7ec6;
+  --mm-color-background: #fff;
+  --mm-color-background-code: #274958;
+  --mm-color-sidebar: #f5f6f7;
+  --mm-color-border: #ddd;
+  --mm-color-logo-blue-light: #00aeef;
+  --mm-color-logo-blue-dark: #005f83;
+  --mm-color-primary-text: #595959;
+  --mm-color-display-text: #005f83;
+  --mm-color-medium-blue: #4877bb;
+  --mm-color-geoip: #2ca695;
+  --mm-color-minfraud: #aa48bc;
+  --mm-border-radius: 6px;
+  --mm-font-stack-default: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Ubuntu, sans-serif;
+  --mm-font-stack-display: 'montserrat', var(--mm-font-stack-default);
+  --mm-font-stack-monospace: 'Source Code Pro', monospace;
+  --mm-layout-toc-width: 290px;
+  --mm-layout-sidebar-width: 350px;
+  --mm-max-width: 880px;
+  --mm-outline: 2px solid var(--mm-color-logo-blue-light);
+  --mm-overview-heading-drop-shadow: 1px 3px 0 rgba(0, 0, 0, 0.25);
+  --mm-spacing: 40px;
+  --page-header-height: 80px;
+  --page-type-color: rgba(255, 255, 255, 0.3);
+}
