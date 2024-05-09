@@ -1,0 +1,52 @@
+@use 'variables';
+
+.home__callout {
+  color: var(--mm-color-primary-text);
+  padding: var(--mm-spacing) var(--mm-spacing) 0;
+  text-align: center;
+}
+
+.home__callout-heading {
+  font-family: var(--mm-font-stack-display);
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.2em;
+  margin-bottom: calc(var(--mm-spacing) / 2);
+  margin-top: 0;
+
+  @include variables.breakpoint('lg') {
+    font-size: 35px;
+  }
+}
+
+.home__callout-subheading {
+  font-family: var(--mm-font-stack-monospace);
+  font-size: 14px;
+  font-weight: 700;
+
+  @include variables.breakpoint('lg') {
+    font-size: 20px;
+  }
+}
+
+.home__products {
+  display: grid;
+  gap: var(--mm-spacing);
+  padding: calc(var(--mm-spacing)/2);
+
+  @include variables.breakpoint('lg') {
+    grid-template-columns: repeat(2, minmax(0, 600px));
+    justify-content: center;
+  }
+}
+
+.home__signup {
+  padding: calc(var(--mm-spacing) / 2) var(--mm-spacing) var(--mm-spacing);
+}
+
+.home__signup-btn {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  max-width: 600px;
+}

@@ -5,6 +5,10 @@
 @import 'search';
 @import 'search-results';
 @import 'variables';
+@import 'btn';
+
+@import 'home';
+@import 'product-featured';
 
 :root {
   --mm-color-active-blue: #2b7ec6;
@@ -16,6 +20,8 @@
   --mm-color-logo-blue-dark: #005f83;
   --mm-color-primary-text: #595959;
   --mm-color-display-text: #005f83;
+  --mm-color-geoip: #2ca695;
+  --mm-color-minfraud: #aa48bc;
   --mm-border-radius: 6px;
   --mm-font-stack-default: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Ubuntu, sans-serif;
   --mm-font-stack-display: 'montserrat', var(--mm-font-stack-default);
