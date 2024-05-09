@@ -3,8 +3,10 @@
   border-radius: 5px;
   cursor: pointer;
   display: inline-block;
+  font-size: 19px;
+  font-weight: 500;
   padding: .375rem .75rem;
-  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
 
   &:active, &:focus, &:hover {
     text-decoration: none;
@@ -36,7 +38,7 @@
 }
 
 .btn--primary {
-  background-color: #4877bb;
+  background-color: var(--mm-color-medium-blue);
   border-color: #4877bb;
   color: #fff;
 
