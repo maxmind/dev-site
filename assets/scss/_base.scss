@@ -26,8 +26,6 @@ h1 {
   @include mixins.heading;
   font-size: 28px;
   font-weight: 700;
-  margin: var(--mm-spacing) 0 0;
-  padding-top: var(--mm-spacing);
 }
 
 h2 {
