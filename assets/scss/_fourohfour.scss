@@ -1,7 +1,8 @@
-@use '../styles/variables';
+@use 'variables';
 
 .fourOhFour {
   align-items: center;
+  color: var(--mm-color-primary-text);
   display: grid;
   font-family: var(--mm-font-stack-monospace);
   font-size: 100px;
@@ -12,19 +13,20 @@
   white-space: nowrap;
 }
 
-.message {
+.fourOhFour-message {
   margin: 0;
   padding: 0 var(--mm-spacing) var(--mm-spacing);
   text-align: center;
 }
 
-@include variables.breakpoint('lg') {
+
+@include variables.breakpoint('md') {
   .fourOhFour {
     font-size: 200px;
     padding: calc(var(--mm-spacing) * 2);
   }
 
-  .message {
+  .fourOhFour-message {
     padding: 0 calc(var(--mm-spacing) * 2) calc(var(--mm-spacing) * 2);
   }
 }

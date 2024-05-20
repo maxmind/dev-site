@@ -1,0 +1,11 @@
+{{ define "main"}}
+  <div>
+    <div aria-label="404" class="fourOhFour" role="img">
+      4
+
+      {{ readFile "assets/FourOhFour.svg" | safeHTML }}
+      4
+    </div>
+    <p class="fourOhFour-message">It seems we can't find what you're looking for. Perhaps searching can help.</p>
+  </div>
+{{ end }}
