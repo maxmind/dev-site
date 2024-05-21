@@ -21,11 +21,11 @@ fmt.Println("hello")
 
 {{< codeset >}}
   {{< highlight php >}}
-console.log('hello');
+<?php echo '<p>Hello World</p>'; ?>
   {{< /highlight >}}
 
   {{< highlight csharp >}}
-fmt.Println("hello")
+System.Console.WriteLine("Hello, World!");
   {{< /highlight >}}
 {{< /codeset >}}
 
