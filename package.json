@@ -1,0 +1,23 @@
+{
+  "author": "MaxMind",
+  "bugs": {
+    "url": "https://github.com/maxmind/dev-site/issues"
+  },
+  "description": "Developer website for MaxMind",
+  "devDependencies": {
+    "typescript": "^5.4.5"
+  },
+  "engines": {
+    "node": ">=20",
+    "npm": ">=9"
+  },
+  "license": "MIT",
+  "name": "dev-site",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/maxmind/dev-site.git"
+  },
+  "scripts": {},
+  "version": "1.0.0"
+}
