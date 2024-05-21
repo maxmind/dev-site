@@ -28,65 +28,7 @@
       src="//js.hs-scripts.com/21266834.js"
     ></script>
   </body>
-
-  <script type="module">
-    const codesets = document.querySelectorAll(".js-codeset");
-    codesets.forEach((codeset) => {
-      const codeSnippets = codeset.querySelectorAll(".highlight");
-      const selector = codeset.querySelector(".js-selector");
-      const tabFragment = new DocumentFragment();
-      const langs = new Set();
-
-      codeSnippets.forEach((codeSnippet) => {
-        codeSnippet.classList.add("hide");
-
-        const code = codeSnippet.querySelector("code");
-        const lang = code.dataset.lang;
-        codeSnippet.dataset.lang = lang;
-        langs.add(lang);
-
-        if (getLang() === null) {
-          setLang(lang);
-        }
-
-        if (lang === getLang()) {
-          codeSnippet.classList.remove("hide");
-        }
-
-        const button = document.createElement("button");
-        button.textContent = lang;
-        button.addEventListener("click", () => {
-          setLang(lang);
-        });
-        tabFragment.appendChild(button);
-        document.addEventListener("mm-langChange", () => {
-          if (codeSnippet.dataset.lang === getLang()) {
-            codeSnippet.classList.remove("hide");
-          } else {
-            codeSnippet.classList.add("hide");
-          }
-          maybeShowFirstLang(langs, codeSnippets);
-        });
-      });
-      selector.appendChild(tabFragment);
-      maybeShowFirstLang(langs, codeSnippets);
-      codeset.classList.remove("hide");
-    });
-
-    function getLang() {
-      return localStorage.getItem("mm-lang");
-    }
-
-    function setLang(lang) {
-      localStorage.setItem("mm-lang", lang);
-      const evt = new Event("mm-langChange");
-      document.dispatchEvent(evt);
-    }
-
-    function maybeShowFirstLang(langs, codeSnippets) {
-      if (!langs.has(getLang())) {
-        codeSnippets[0].classList.remove("hide");
-      }
-    }
-  </script>
+  {{ $codeset := resources.Get "js/codeset.ts" | js.Build }}
+  {{ $js := slice $codeset | resources.Concat "js/bundle.js" }}
+  <script type="module" src="{{ $js.RelPermalink }}"></script>
 </html>

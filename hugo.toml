@@ -1,3 +1,6 @@
 baseURL = '/'
 languageCode = 'en-us'
 title = 'MaxMind'
+
+[build]
+noJSConfigInAssets = true
