@@ -1,0 +1,18 @@
+# baseurl is updated on deploy
+baseurl = "/"
+languageCode = 'en-us'
+title = 'MaxMind'
+
+[markup]
+  [markup.highlight]
+    codeFences = true
+    guessSyntax = false
+    hl_Lines = ''
+    lineAnchors = ''
+    lineNoStart = 1
+    lineNos = true
+    lineNumbersInTable = false
+    noClasses = true
+    noHl = false
+    style = 'monokai'
+    tabWidth = 4
