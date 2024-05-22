@@ -55,6 +55,7 @@ typings/
 # hugo files
 .sass-cache
 .hugo_build.lock
+public/
 resources/
 
 # Mac files
