@@ -4,6 +4,7 @@
   font-family: var(--mm-font-stack-display);
   font-weight: 500;
   line-height: 1.2em;
+  margin: calc(var(--mm-spacing) * 2) 0 calc(var(--mm-spacing) / 4);
   position: relative;
   scroll-margin-top: calc(var(--page-header-height) + var(--mm-spacing));
 }
