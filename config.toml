@@ -16,3 +16,19 @@ title = 'MaxMind'
     noHl = false
     style = 'monokai'
     tabWidth = 4
+
+[menus]
+  [[menus.main]]
+    name = 'minFraud'
+    pageRef = 'minfraud'
+    url = '/minfraud'
+    weight = 10
+    [menus.main.params]
+      external = true
+  [[menus.main]]
+    name = 'GeoIP'
+    pageRef = 'geoip'
+    url = '/geoip'
+    weight = 20
+    [menus.main.params]
+      external = true
