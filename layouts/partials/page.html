@@ -1,0 +1,10 @@
+<div class="page__wrapper">
+  <div class="page__sidebar">
+    {{ partial "sidebar.html" . }}
+  </div>
+  <div class="page__content">
+    <h1 class="page__title">{{ .Title }}</h1>
+    {{ .Content }}
+    <p class="page__meta">This page was last updated on {{ .Date.Format "January 2, 2006" }}</p>
+  </div>
+</div>
