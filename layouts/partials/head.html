@@ -21,12 +21,6 @@
     title="RSS Feed for dev.maxmind.com"
   />
 
-  {{ $sidebar := resources.Get "js/sidebar.ts" | js.Build }}
-  {{ $js := slice $sidebar | resources.Concat "js/bundle.js" }}
-  <script src="{{ $js.Permalink }}" defer></script>
-
-  <script defer language="javascript" type="text/javascript"  src="{{ "js/sidebar.js" | urlize | relURL }}"></script>
-
   <!-- Google Tag Manager -->
   <script>
     (function (w, d, s, l, i) {
