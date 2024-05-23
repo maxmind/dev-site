@@ -26,3 +26,6 @@ title = 'MaxMind'
     name = 'GeoIP'
     pageRef = '/geoip'
     weight = 20
+
+[build]
+noJSConfigInAssets = true
