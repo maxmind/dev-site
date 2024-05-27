@@ -1,0 +1,40 @@
+.codeset {
+  margin: 2rem 0;
+}
+
+.codeset > .highlight > pre {
+  margin: 0.25rem 0 0;
+}
+
+.codeset__btn {
+  background-color: #fff;
+  border: 1px solid var(--mm-color-dark-blue);
+  color: var(--mm-color-dark-blue);
+  font-size: 1rem;
+  margin-left: -1px;
+
+  &:focus {
+    background-color: var(--mm-color-background-code);
+    color: #fff;
+    outline: none;
+  }
+
+  &:hover, &.active {
+    background-color: var(--mm-color-dark-blue);
+    color: #fff;
+  }
+
+  &:not(:last-child), &:not(:first-child) {
+    border-radius: 0;
+  }
+
+  &:first-child {
+    border-radius: 0.25rem 0 0 0.25rem;
+    margin-left: 0;
+  }
+
+  &:last-child {
+    border-radius: 0 0.25rem 0.25rem 0;
+  }
+}
+

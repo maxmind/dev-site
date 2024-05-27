@@ -17,6 +17,10 @@ console.log('hello');
   {{< highlight go >}}
 fmt.Println("hello")
   {{< /highlight >}}
+
+  {{< highlight php >}}
+<?php echo '<p>Hello World</p>'; ?>
+  {{< /highlight >}}
 {{< /codeset >}}
 
 {{< codeset >}}

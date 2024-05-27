@@ -1,7 +1,7 @@
 const langChangeEvent = "mm-langChange";
 const langStorageKey = "mm-lang";
 
-const codesets = document.querySelectorAll(".js-codeset");
+const codesets = document.querySelectorAll<HTMLElement>(".js-codeset");
 codesets.forEach((codeset) => {
   const codeSnippets = codeset.querySelectorAll<HTMLElement>(".highlight");
   const selector = codeset.querySelector(".js-selector");
@@ -32,6 +32,8 @@ codesets.forEach((codeset) => {
 
     const button = document.createElement("button");
     button.textContent = lang;
+    button.dataset.lang = lang;
+    button.classList.add("btn", "codeset__btn");
     button.addEventListener("click", () => {
       setLang(lang);
     });
@@ -39,6 +41,7 @@ codesets.forEach((codeset) => {
   });
   selector?.appendChild(tabFragment);
   maybeShowFirstLang(langs, codeSnippets);
+  setActiveButtons();
   codeset.classList.remove("hide");
 });
 
@@ -59,6 +62,7 @@ document.addEventListener(langChangeEvent, () => {
       }
     });
     maybeShowFirstLang(langs, codeSnippets);
+    setActiveButtons();
   });
 });
 
@@ -83,4 +87,25 @@ function maybeShowFirstLang(
   if (!langs.has(lang) && codeSnippets.length > 0) {
     codeSnippets[0].classList.remove("hide");
   }
+}
+
+function setActiveButtons() {
+  const lang = getLang();
+  codesets.forEach((codeset) => {
+    const buttons = codeset.querySelectorAll(".codeset__btn");
+    const langs = new Set<string>();
+    buttons.forEach((button: HTMLElement) => {
+      const lang = button.dataset.lang;
+      langs.add(lang);
+      if (lang === getLang()) {
+        button.classList.add("active");
+      } else {
+        button.classList.remove("active");
+      }
+    });
+
+    if (!langs.has(lang) && buttons.length > 0) {
+      buttons[0].classList.add("active");
+    }
+  });
 }
