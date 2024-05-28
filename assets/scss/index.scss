@@ -2,14 +2,20 @@
 @import 'header';
 @import 'footer';
 @import 'mixins';
+@import 'page';
+@import 'pre';
 @import 'search';
 @import 'search-results';
+@import 'sidebar';
+@import 'table';
 @import 'variables';
 @import 'btn';
 
 @import 'home';
+@import 'page';
 @import 'product-featured';
 @import 'fourohfour';
+@import 'codeset';
 
 *:focus {
   outline-color: var(--mm-color-logo-blue-light);
@@ -17,3 +23,6 @@
   outline-width: 2px;
 }
 
+.hide {
+  display: none !important;
+}

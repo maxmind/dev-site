@@ -1,0 +1,41 @@
+.page__wrapper {
+  display: flex;
+  height: 100%;
+}
+
+.page__content {
+  max-width: 800px;
+  padding: var(--mm-spacing);
+}
+
+.page__sidebar {
+  background: var(--mm-color-sidebar);
+  border-left: 1px solid var(--mm-color-border);
+  box-shadow: -2px -1px 3px rgba(0, 0, 0, .1);
+  display: none;
+  height: 100%;
+  max-width: var(--mm-layout-sidebar-width);
+  width: 100%;
+
+  @media only screen and (min-width: 992px) {
+    display: block;
+}
+
+  ul {
+    list-style: none;
+    margin: 0;
+  }
+}
+
+.page__title {
+  margin-top: 0;
+  padding: 0 0 var(--mm-spacing);
+}
+
+.page__meta {
+  font-size: 12px;
+  font-style: italic;
+  font-weight: 400;
+  margin-top: calc(var(--mm-spacing) * 2);
+  text-align: center;
+}

@@ -8,7 +8,7 @@
         src="https://www.googletagmanager.com/ns.html?id=GTM-M8K593P"
         height="0"
         width="0"
-        style="display:none;visibility:hidden"
+        style="display: none; visibility: hidden"
       >
       </iframe>
     </noscript>
@@ -16,12 +16,19 @@
 
     <div class="wrapper">
       {{- partial "header.html" . -}}
-      <main id="main-content">
-      {{- block "main" . }}{{- end }}
-      </main>
+      <main id="main-content">{{- block "main" . }}{{- end }}</main>
       {{- partial "footer.html" . -}}
     </div>
     <!-- HubSpot chat -->
-    <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/21266834.js"></script>
+    <script
+      type="text/javascript"
+      id="hs-script-loader"
+      async
+      defer
+      src="//js.hs-scripts.com/21266834.js"
+    ></script>
   </body>
+  {{ $codeset := resources.Get "js/codeset.ts" | js.Build }}
+  {{ $js := slice $codeset | resources.Concat "js/bundle.js" }}
+  <script type="module" src="{{ $js.RelPermalink }}"></script>
 </html>

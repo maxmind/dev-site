@@ -1,0 +1,31 @@
+<nav aria-label="Main Navigation">
+  <ul>
+    {{ $currentPage := . }}
+    {{ range .Site.Menus.main }}
+      <li>
+        <a
+        class="{{ if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }}is-active{{ end }}"
+        href="{{ .URL }}"
+        {{ if eq .Params.external true }}
+          target="_blank" rel="noopener noreferrer"
+        {{ end }}
+        >
+        {{ .Name }}
+        </a>
+        {{ if .HasChildren }}
+          <ul>
+            {{ range .Children }}
+              <li>
+                <a
+                class="{{ if $currentPage.IsMenuCurrent "main" . }}is-active{{ end }}"
+                href="{{ .URL }}">
+                  {{ .Name }}
+                </a>
+              </li>
+            {{ end }}
+          </ul>
+        {{ end }}
+      </li>
+    {{ end }}
+  </ul>
+</nav>
