@@ -1,0 +1,17 @@
+.mm-ips {
+  background-color: var(--mm-color-background-code);
+  border-radius: var(--mm-border-radius);
+  padding: 1rem;
+
+  span {
+    color: #ddd;
+    display: block;
+    font-family: monospace;
+    font-size: 0.9rem;
+  }
+}
+
+.mm-ips__last-updated {
+  font-style: italic;
+  margin-top: 0.5rem;
+}

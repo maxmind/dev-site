@@ -1,0 +1,30 @@
+<rss
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+	<channel>
+		<title>
+      {{ .Page.Title }}
+		</title>
+		<description>
+      Feed of MaxMind server addresses.
+		</description>
+		<link>https://dev.maxmind.com</link>
+		<lastBuildDate>{{ index $.Site.Data.mm_ips "lastUpdated" }}</lastBuildDate>
+		<item>
+			<title>
+				{{ .Page.Title }}
+			</title>
+			<link>https://dev.maxmind.com/maxmind-server-ip-addresses</link>
+			<pubDate>{{ index $.Site.Data.mm_ips "lastUpdated" }}</pubDate>
+			<content:encoded>
+				{{ range index $.Site.Data.mm_ips "IPv4"}}
+				{{ . }}<br />
+				{{ end }}
+				{{ range index $.Site.Data.mm_ips "IPv6"}}
+				{{ . }}<br />
+				{{ end }}
+			</content:encoded>
+		</item>
+	</channel>
+</rss>
