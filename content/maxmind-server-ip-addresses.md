@@ -1,13 +1,14 @@
 ---
 draft: false
+layout: mm-ips
 title: MaxMind Server IP Addresses
+outputs:
+- rss
+- html
+_comment: json feed is handled by module mounts.  see hugo.toml
 ---
 
-import { FaRss as RssFeed } from 'react-icons/fa';
-import { RiBracesFill as JsonFeed } from 'react-icons/ri';
-
-<Alert type="warning">
-
+{{< warning >}}
 In January 2024, we began using R2 presigned URLs for all database downloads.
 Database downloads will no longer use the IP addresses specified below.
 
@@ -15,8 +16,7 @@ For information about IP addresses used to serve database downloads see
 [the appropriate section below](#database-download-ip-addresses).
 
 [Read our release note for more information.](/geoip/release-notes/2024#presigned-urls-for-database-downloads)
-
-</Alert>
+{{< /warning >}}
 
 This page lists the IP addresses that may be used for minFraud, GeoIP, and
 GeoLite web service requests by our \*.maxmind.com API hostnames. We strongly
@@ -25,29 +25,12 @@ this page will be in use at a given time. The IPs returned in DNS could change
 at any time. Note that the IPs below don’t apply to the `www.maxmind.com`
 hostname, which could use any IP and changes frequently.
 
-<IpAddresses />
+{{< mm-ips >}}
 
 ## Monitoring Changes
 
-MaxMind provides RSS and JSON feeds, allowing you to monitor changes to our
+MaxMind provides [**RSS**](/maxmind-server-ip-addresses/index.xml) and [**JSON**](/maxmind-server-ip-addresses.json) feeds, allowing you to monitor changes to our
 minFraud, GeoIP, and GeoLite web service server IP addresses.
-
-<LinkGroupContainer>
-  <LinkGroup>
-    <LinkGroupCard
-      description="Subscribe to our RSS and be notified when IP addresses change."
-      heading="RSS Feed"
-      icon={RssFeed}
-      to="/maxmind-server-ip-addresses.xml"
-    />
-    <LinkGroupCard
-      description="Integrate our JSON feed in your application for change automation."
-      heading="JSON Feed"
-      icon={JsonFeed}
-      to="/maxmind-server-ip-addresses.json"
-    />
-  </LinkGroup>
-</LinkGroupContainer>
 
 ## Database download IP addresses
 
