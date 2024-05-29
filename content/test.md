@@ -10,35 +10,35 @@ description: >
 
 
 {{< codeset >}}
-  {{< highlight js >}}
+```js
 console.log('hello');
-  {{< /highlight >}}
+```
 
-  {{< highlight go >}}
+```go
 fmt.Println("hello")
-  {{< /highlight >}}
+```
 
-  {{< highlight php >}}
+```php
 <?php echo '<p>Hello World</p>'; ?>
-  {{< /highlight >}}
+```
 {{< /codeset >}}
 
 {{< codeset >}}
-  {{< highlight php >}}
+```php
 <?php echo '<p>Hello World</p>'; ?>
-  {{< /highlight >}}
+```
 
-  {{< highlight csharp >}}
+```csharp
 System.Console.WriteLine("Hello, World!");
-  {{< /highlight >}}
+```
 {{< /codeset >}}
 
 {{< codeset >}}
-  {{< highlight js >}}
+```js
 console.log('hello');
-  {{< /highlight >}}
+```
 
-  {{< highlight go >}}
+```go
 fmt.Println("hello")
-  {{< /highlight >}}
+```
 {{< /codeset >}}
