@@ -18,11 +18,23 @@ title = 'MaxMind'
     tabWidth = 4
 
 [menus]
-  [[menus.main]]
+  [[menus.minfraud]]
     name = 'minFraud'
     pageRef = '/minfraud'
     weight = 10
-  [[menus.main]]
+  [[menus.geoip]]
     name = 'GeoIP'
     pageRef = '/geoip'
-    weight = 20
+    weight = 10
+  [[menus.general]]
+    name = 'MaxMind Server IP Addresses'
+    pageRef = '/maxmind-server-ip-addresses'
+    weight = 10
+
+[module]
+  [[module.mounts]]
+    source = "data/mm_ips.json"
+    target = "static/maxmind-server-ip-addresses.json"
+
+[outputs]
+  home = ["HTML"]

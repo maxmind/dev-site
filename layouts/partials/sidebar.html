@@ -1,10 +1,10 @@
+{{ $currentPage := . }}
 <nav aria-label="Main Navigation">
   <ul>
-    {{ $currentPage := . }}
-    {{ range .Site.Menus.main }}
+    {{ range .Site.Menus.minfraud }}
       <li>
         <a
-        class="{{ if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }}is-active{{ end }}"
+        class="{{ if or ($currentPage.IsMenuCurrent "minfraud" .) ($currentPage.HasMenuCurrent "minfraud" .) }}is-active{{ end }}"
         href="{{ .URL }}"
         {{ if eq .Params.external true }}
           target="_blank" rel="noopener noreferrer"
@@ -17,7 +17,65 @@
             {{ range .Children }}
               <li>
                 <a
-                class="{{ if $currentPage.IsMenuCurrent "main" . }}is-active{{ end }}"
+                class="{{ if $currentPage.IsMenuCurrent "minfraud" . }}is-active{{ end }}"
+                href="{{ .URL }}">
+                  {{ .Name }}
+                </a>
+              </li>
+            {{ end }}
+          </ul>
+        {{ end }}
+      </li>
+    {{ end }}
+  </ul>
+
+  <ul>
+    {{ range .Site.Menus.geoip }}
+      <li>
+        <a
+        class="{{ if or ($currentPage.IsMenuCurrent "geoip" .) ($currentPage.HasMenuCurrent "geoip" .) }}is-active{{ end }}"
+        href="{{ .URL }}"
+        {{ if eq .Params.external true }}
+          target="_blank" rel="noopener noreferrer"
+        {{ end }}
+        >
+        {{ .Name }}
+        </a>
+        {{ if .HasChildren }}
+          <ul>
+            {{ range .Children }}
+              <li>
+                <a
+                class="{{ if $currentPage.IsMenuCurrent "geoip" . }}is-active{{ end }}"
+                href="{{ .URL }}">
+                  {{ .Name }}
+                </a>
+              </li>
+            {{ end }}
+          </ul>
+        {{ end }}
+      </li>
+    {{ end }}
+  </ul>
+
+  <ul>
+    {{ range .Site.Menus.general }}
+      <li>
+        <a
+        class="{{ if or ($currentPage.IsMenuCurrent "general" .) ($currentPage.HasMenuCurrent "general" .) }}is-active{{ end }}"
+        href="{{ .URL }}"
+        {{ if eq .Params.external true }}
+          target="_blank" rel="noopener noreferrer"
+        {{ end }}
+        >
+        {{ .Name }}
+        </a>
+        {{ if .HasChildren }}
+          <ul>
+            {{ range .Children }}
+              <li>
+                <a
+                class="{{ if $currentPage.IsMenuCurrent "general" . }}is-active{{ end }}"
                 href="{{ .URL }}">
                   {{ .Name }}
                 </a>
