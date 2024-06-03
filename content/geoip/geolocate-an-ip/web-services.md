@@ -3,8 +3,6 @@ draft: false
 title: Geolocate an IP address using Web Services
 ---
 
-import CurlExamples from '../_curl-examples.mdx';
-
 Geolocating an IP address using GeoIP2 or GeoLite2 web services consists of
 configuring a web service client, creating a request, and handling the response.
 
@@ -22,22 +20,22 @@ for details on our REST API.
 We have a collection of officially supported libraries for you to interact with
 the GeoIP2 and GeoLite2 APIs:
 
-<CodeSet>
+{{< codeset >}}
 
-```cli-csharp
-# Install via NuGet
+```csharp
+// Install via NuGet
 Install-Package MaxMind.GeoIP2
 ```
 
-```cli-java
-# Install via Maven, recommended
+```java
+// Install via Maven, recommended
 <dependency>
   <groupId>com.maxmind.geoip2</groupId>
   <artifactId>geoip2</artifactId>
   <version>2.15.0</version>
 </dependency>
 
-# Or install via Gradle
+// Or install via Gradle
 repositories {
   mavenCentral()
 }
@@ -46,25 +44,25 @@ dependencies {
 }
 ```
 
-```cli-javascript
-# Install via npm
+```javascript
+// Install via npm
 npm install @maxmind/geoip2-node
 
-# Or install via yarn
+// Or install via yarn
 yarn add @maxmind/geoip2-node
 ```
 
-```cli-php
+```php
 # Install via Composer
 composer require geoip2/geoip2:~2.0
 ```
 
-```cli-python
+```python
 # Install via pip
 pip install geoip2
 ```
 
-```cli-ruby
+```ruby
 # Install as a gem
 gem install maxmind-geoip2
 
@@ -72,7 +70,7 @@ gem install maxmind-geoip2
 gem 'maxmind-geoip2'
 ```
 
-</CodeSet>
+{{< /codeset >}}
 
 ### 2. Create and configure a GeoIP2 client object
 
@@ -82,7 +80,7 @@ will need your MaxMind
 Our clients also allow you to interact with our GeoLite2 API, but this requires
 additional configuration as demonstrated below:
 
-<CodeSet>
+{{< codeset >}}
 
 ```csharp
 var client = new WebServiceClient(10, "LICENSEKEY");
@@ -143,7 +141,7 @@ Minfraud.configure do |c|
 end
 ```
 
-</CodeSet>
+{{< /codeset >}}
 
 ### 3. Query the desired geolocation service
 
@@ -151,7 +149,7 @@ GeoIP2 offers 3 services: Insights, City Plus, and Country. GeoLite2 offers 2
 services: City and Country. Each client library has an appropriately named
 method for accessing the desired geolocation service.
 
-<CodeSet>
+{{< codeset >}}
 
 ```csharp
 // If you are making multiple requests, a single WebServiceClient
@@ -266,7 +264,7 @@ record = client.country('128.101.101.101')
 puts record.country.iso_code
 ```
 
-</CodeSet>
+{{< /codeset >}}
 
 ## Client APIs
 
@@ -275,4 +273,4 @@ You can find a complete list of official and third-party client APIs on the
 
 ## Command Line (curl) Examples
 
-<CurlExamples />
+{{< snippet "snippets/geoip-curl-examples.md" >}}

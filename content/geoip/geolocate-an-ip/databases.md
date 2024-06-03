@@ -3,8 +3,6 @@ draft: false
 title: Geolocate an IP address using Databases
 ---
 
-import APIs from '../docs/databases/_apis.mdx';
-
 Geolocating an IP address using GeoIP2 and GeoLite2 databases consists of
 configuring a database reader and querying the database.
 
@@ -19,22 +17,22 @@ our databases.
 We have a collection of officially supported libraries for you to query with the
 GeoIP2 and GeoLite2 databases:
 
-<CodeSet>
+{{< codeset >}}
 
-```cli-csharp
-# Install via NuGet
+```csharp
+// Install via NuGet
 Install-Package MaxMind.GeoIP2
 ```
 
-```cli-java
-# Install via Maven, recommended
+```java
+// Install via Maven, recommended
 <dependency>
   <groupId>com.maxmind.geoip2</groupId>
   <artifactId>geoip2</artifactId>
   <version>2.15.0</version>
 </dependency>
 
-# Or install via Gradle
+// Or install via Gradle
 repositories {
   mavenCentral()
 }
@@ -43,25 +41,25 @@ dependencies {
 }
 ```
 
-```cli-javascript
-# Install via npm
+```javascript
+// Install via npm
 npm install @maxmind/geoip2-node
 
-# Or install via yarn
+// Or install via yarn
 yarn add @maxmind/geoip2-node
 ```
 
-```cli-php
+```php
 # Install via Composer
 composer require geoip2/geoip2:~2.0
 ```
 
-```cli-python
+```python
 # Install via pip
 pip install geoip2
 ```
 
-```cli-ruby
+```ruby
 # Install as a gem
 gem install maxmind-geoip2
 
@@ -69,7 +67,7 @@ gem install maxmind-geoip2
 gem 'maxmind-geoip2'
 ```
 
-</CodeSet>
+{{< /codeset >}}
 
 ### 2. Configure a GeoIP2 database reader to query the database
 
@@ -88,7 +86,7 @@ error depending on the library.
 For more details on database methods, errors, and exceptions,
 [see the client API documentation below](#apis-and-third-party-integrations).
 
-<CodeSet>
+{{< codeset >}}
 
 ```csharp
 using (var reader = new DatabaseReader("path/to/maxmind-database.mmdb"))
@@ -180,8 +178,8 @@ record = reader.city('128.101.101.101')
 puts record.country.iso_code
 ```
 
-</CodeSet>
+{{< /codeset >}}
 
 ## APIs and Third-Party Integrations
 
-<APIs />
+{{< snippet "snippets/geoip-client-apis.md" >}}

@@ -1,0 +1,6 @@
+<div class="link-group">
+  {{ if .Get "heading" }}<h3>{{ with .Get "heading" }}{{ . }}{{ end }}</h3>{{ end }}
+  <div class="link-group__cards">
+    {{ .Inner }}
+  </div>
+</div>
