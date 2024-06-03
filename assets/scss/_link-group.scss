@@ -1,0 +1,30 @@
+.link-group__cards {
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+
+.link-group__card {
+  border: 1px solid var(--mm-color-display-text);
+  border-radius: var(--mm-border-radius);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  color: var(--mm-color-text);
+  display: block;
+  font-size: 0.9rem;
+  padding: 1rem;
+  position: relative;
+  top: 0;
+  transition: all 0.1s ease-in-out;
+
+  &:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+    top: -2px;
+  }
+}
+
+.link-group__card-title {
+  color: var(--mm-color-display-text);
+  font-size: 1.1rem;
+  margin: 0 0 1rem;
+}

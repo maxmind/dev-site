@@ -35,13 +35,13 @@ able to
 In order to use this service, the following JavaScript must be included in your
 page.
 
-<Alert type="warning">
+{{< warning >}}
   **Do not download this JavaScript file and serve it from your server(s)!**
 
 The JavaScript file must be served from MaxMind servers, otherwise GeoIP2
 requests will fail.
 
-</Alert>
+{{</ warning >}}
 
 ```html
 <script src="https://geoip-js.com/js/apis/geoip2/v2.1/geoip2.js" type="text/javascript"></script>
@@ -51,11 +51,13 @@ requests will fail.
 
 The JavaScript client provides 3 public methods:
 
+{{< table >}}
 | Option                                         | Description                                                                                                             |
 | ---------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------- |
 | `geoip2.country(onSuccess, onError, options)`  | Calls the "GeoIP2 Country" endpoint using the routable IP address associated with the machine on which it is running.   |
 | `geoip2.city(onSuccess, onError, options)`     | Calls the "GeoIP2 City Plus" endpoint using the routable IP address associated with the machine on which it is running. |
 | `geoip2.insights(onSuccess, onError, options)` | Calls the "GeoIP2 Insights" endpoint using the routable IP address associated with the machine on which it is running.  |
+{{</ table >}}
 
 All of the functions take the same 3 arguments:
 
@@ -187,6 +189,7 @@ All errors are passed in a JavaScript object as the first parameter to the
 a machine-readable error code that will not change. `error` is a human-readable
 description of the error.
 
+{{< table >}}
 | Code                         | HTTP Status          | Description                                                                                             |
 | ---------------------------- | -------------------- | ------------------------------------------------------------------------------------------------------- |
 | IP_ADDRESS_INVALID           | 400 Bad Request      | You have not supplied a valid IPv4 or IPv6 address.                                                     |
@@ -199,6 +202,7 @@ description of the error.
 | PERMISSION_REQUIRED          | 403 Forbidden        | You do not have permission to use the service. Please contact support@maxmind.com for more information. |
 | HTTP_TIMEOUT                 | (none)               | The request to the GeoIP2 web service timed out.                                                        |
 | HTTP_ERROR                   | (none)               | There was an error making the request to the GeoIP2 web service.                                        |
+{{</ table >}}
 
 ### Versioning
 
@@ -232,6 +236,7 @@ possible, we recommend using the encrypted HTTP (HTTPS) protocol.
 
 Here is the list of browsers supported:
 
+{{< table >}}
 | Browser                     | Version(s)                                                  |
 | --------------------------- | ----------------------------------------------------------- |
 | Chrome                      | Last two stable releases per Chrome Release Stable Channels |
@@ -242,6 +247,7 @@ Here is the list of browsers supported:
 | Opera                       | Current release                                             |
 | Android native browser      | 5+                                                          |
 | iOS native browser          | 10+                                                         |
+{{</ table >}}
 
 ### Security
 
