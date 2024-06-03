@@ -8,9 +8,8 @@ For the following examples, replace `{account_id}` and `{license_key}`
 [account ID and license key](https://www.maxmind.com/en/my_license_key), and
 replace `{ip_address}` with the IP address you wish to look up.
 
-<CodeSet no-reorder="true">
-
-```cli-Country
+#### GeoIP Country
+```bash
 # Retrieve data for your IP address.
 curl -u "{account_id}:{license_key}" \
   "https://geoip.maxmind.com/geoip/v2.1/country/me?pretty"
@@ -20,7 +19,8 @@ curl -u "{account_id}:{license_key}" \
   "https://geoip.maxmind.com/geoip/v2.1/country/{ip_address}?pretty"
 ```
 
-```cli-City_Plus
+#### GeoIP City Plus
+```bash
 # Retrieve data for your IP address.
 curl -u "{account_id}:{license_key}" \
   "https://geoip.maxmind.com/geoip/v2.1/city/me?pretty"
@@ -30,7 +30,8 @@ curl -u "{account_id}:{license_key}" \
   "https://geoip.maxmind.com/geoip/v2.1/city/{ip_address}?pretty"
 ```
 
-```cli-Insights
+#### GeoIP Insights
+```bash
 # Retrieve data for your IP address.
 curl -u "{account_id}:{license_key}" \
   "https://geoip.maxmind.com/geoip/v2.1/insights/me?pretty"
@@ -40,7 +41,8 @@ curl -u "{account_id}:{license_key}" \
   "https://geoip.maxmind.com/geoip/v2.1/insights/{ip_address}?pretty"
 ```
 
-```cli-GeoLite2_Country
+#### GeoLite2 Country
+```bash
 # Retrieve data for your IP address.
 curl -u "{account_id}:{license_key}" \
   "https://geolite.info/geoip/v2.1/country/me?pretty"
@@ -50,7 +52,8 @@ curl -u "{account_id}:{license_key}" \
   "https://geolite.info/geoip/v2.1/country/{ip_address}?pretty"
 ```
 
-```cli-GeoLite2_City
+#### GeoLite2 City
+```bash
 # Retrieve data for your IP address.
 curl -u "{account_id}:{license_key}" \
   "https://geolite.info/geoip/v2.1/city/me?pretty"
@@ -59,5 +62,3 @@ curl -u "{account_id}:{license_key}" \
 curl -u "{account_id}:{license_key}" \
   "https://geolite.info/geoip/v2.1/city/{ip_address}?pretty"
 ```
-
-</CodeSet>
