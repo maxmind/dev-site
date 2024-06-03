@@ -22,10 +22,62 @@ title = 'MaxMind'
     name = 'minFraud'
     pageRef = '/minfraud'
     weight = 10
+
   [[menus.geoip]]
     name = 'GeoIP'
     pageRef = '/geoip'
     weight = 10
+    [[menus.geoip]]
+      name = 'Geolocate an IP'
+      pageRef = '/geoip/geolocate-an-ip'
+      parent = 'GeoIP'
+      weight = 10
+      [[menus.geoip]]
+        name = 'Databases'
+        pageRef = '/geoip/geolocate-an-ip/databases'
+        parent = 'Geolocate an IP'
+        weight = 10
+      [[menus.geoip]]
+        name = 'Web Services'
+        pageRef = '/geoip/geolocate-an-ip/web-services'
+        parent = 'Geolocate an IP'
+        weight = 20
+      [[menus.geoip]]
+        name = 'Client-side Javascript'
+        pageRef = '/geoip/geolocate-an-ip/client-side-javascript'
+        parent = 'Geolocate an IP'
+        weight = 30
+    [[menus.geoip]]
+      name = 'Updating Databases'
+      pageRef = '/geoip/updating-databases'
+      parent = 'GeoIP'
+      weight = 20
+    [[menus.geoip]]
+      name = 'Importing Databases'
+      pageRef = '/geoip/importing-databases'
+      parent = 'GeoIP'
+      weight = 30
+      [[menus.geoip]]
+        name = 'Import to PostgreSQL'
+        pageRef = '/geoip/importing-databases/postgresql'
+        parent = 'Importing Databases'
+        weight = 10
+      [[menus.geoip]]
+        name = 'Import to MySQL'
+        pageRef = '/geoip/importing-databases/mysql'
+        parent = 'Importing Databases'
+        weight = 20
+    [[menus.geoip]]
+      name = 'GeoLite2 Free Geolocation Data'
+      pageRef = '/geoip/geolite2-free-geolocation-data'
+      parent = 'GeoIP'
+      weight = 40
+    [[menus.geoip]]
+      name = 'Privacy Exclusions API'
+      pageRef = '/geoip/privacy-exclusions-api'
+      parent = 'GeoIP'
+      weight = 50
+
   [[menus.general]]
     name = 'MaxMind Server IP Addresses'
     pageRef = '/maxmind-server-ip-addresses'

@@ -134,7 +134,7 @@ select * from geoip2_network where network >>= '214.0.0.0';
 
 Which gives a result of:
 
-```
+```markdown
 -[ RECORD 1 ]------------------+-------------
 network                        | 214.0.0.0/16
 geoname_id                     | 6252001
@@ -173,7 +173,7 @@ select * from geoip2_network net where network >>= '214.0.0.0';
 
 Which gives a result of:
 
-```
+```markdown
 -[ RECORD 1 ]------------------+-------------
 network                        | 214.0.0.0/16
 geoname_id                     | 6252001
@@ -271,7 +271,7 @@ where network >>= '214.0.0.0';
 
 Which gives a result of:
 
-```
+```markdown
 -[ RECORD 1 ]------+--------------
 latitude           | 37.7510
 longitude          | -97.8220
@@ -327,7 +327,7 @@ where network >>= '214.0.0.0';
 
 Which gives a result of:
 
-```
+```markdown
 -[ RECORD 1 ]----------------------+--------------
 latitude                           | 37.7510
 longitude                          | -97.8220

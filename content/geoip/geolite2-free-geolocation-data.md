@@ -3,11 +3,6 @@ draft: false
 title: GeoLite2 Free Geolocation Data
 ---
 
-import {
-  FaUserCheck as SignUpIcon,
-  FaKey as LicenseKeyIcon,
-} from 'react-icons/fa';
-
 GeoLite2 databases are free IP geolocation databases comparable to, but less
 accurate than,
 [MaxMind’s GeoIP2 databases](https://www.maxmind.com/en/geoip2-databases). The
@@ -23,22 +18,14 @@ service per day.
 You will need a free GeoLite2 account to download the GeoLite2 databases or to
 query the GeoLite2 web services.
 
-<LinkGroupContainer>
-  <LinkGroup>
-    <LinkGroupCard
-      description="Receive download access to GeoLite2 databases or query access to GeoLite2 web services at no charge."
-      heading="Sign Up for GeoLite2"
-      icon={SignUpIcon}
-      to="https://www.maxmind.com/en/geolite2/signup"
-    />
-    <LinkGroupCard
-      description="License keys are used to query the web services and authenticate the GeoIP Update program."
-      heading="Generate a License Key"
-      icon={LicenseKeyIcon}
-      to="https://www.maxmind.com/en/accounts/current/license-key"
-    />
-  </LinkGroup>
-</LinkGroupContainer>
+{{< link-group/container >}}
+  {{< link-group/card heading="Sign Up for GeoLite2" href="https://www.maxmind.com/en/geolite2/signup" >}}
+    Receive download access to GeoLite2 databases or query access to GeoLite2 web services at no charge.
+  {{</ link-group/card >}}
+  {{< link-group/card heading="Generate a License Key" href="https://www.maxmind.com/en/accounts/current/license-key" >}}
+    License keys are used to query the web services and authenticate the GeoIP Update program.
+  {{</ link-group/card >}}
+{{</ link-group/container >}}
 
 From the side menu in your account portal, you can select
 [“Download Files”](https://www.maxmind.com/en/accounts/current/geoip/downloads)
@@ -60,14 +47,14 @@ on our knowledge base.
 
 ## IP Geolocation Accuracy
 
-<Alert type="warning">
-  ** IP Geolocation Usage**
+{{< warning >}}
+**IP Geolocation Usage**
 
 IP geolocation is inherently imprecise. Locations are often near the center of
 the population. Any location provided by a GeoIP database should not be used to
 identify a particular address or household.
 
-</Alert>
+{{</ warning >}}
 
 Use the Accuracy Radius as an indication of geolocation accuracy for the
 latitude and longitude coordinates we return for an IP address. The actual

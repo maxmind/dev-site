@@ -172,7 +172,7 @@ where inet6_aton('214.0.0.0') between network_start and network_end
 limit 1;
 ```
 
-```
+```markdown
 +------------+-------------------------------+--------------------------------+-------------+----------+-----------+-----------------+
 | geoname_id | registered_country_geoname_id | represented_country_geoname_id | postal_code | latitude | longitude | accuracy_radius |
 +------------+-------------------------------+--------------------------------+-------------+----------+-----------+-----------------+
@@ -198,7 +198,7 @@ order by network_end
 limit 1;
 ```
 
-```
+```markdown
 +------------+-------------------------------+--------------------------------+-------------+----------+-----------+-----------------+
 | geoname_id | registered_country_geoname_id | represented_country_geoname_id | postal_code | latitude | longitude | accuracy_radius |
 +------------+-------------------------------+--------------------------------+-------------+----------+-----------+-----------------+
@@ -220,7 +220,7 @@ order by network_end
 limit 1;
 ```
 
-```
+```markdown
 Empty set (4.45 sec)
 ```
 
@@ -242,7 +242,7 @@ from (
 where inet6_aton('214.0.0.0') <= network_end;
 ```
 
-```
+```markdown
 +------------+-------------------------------+--------------------------------+-------------+----------+-----------+-----------------+
 | geoname_id | registered_country_geoname_id | represented_country_geoname_id | postal_code | latitude | longitude | accuracy_radius |
 +------------+-------------------------------+--------------------------------+-------------+----------+-----------+-----------------+
@@ -264,7 +264,7 @@ from (
 where inet6_aton('127.0.0.1') <= network_end;
 ```
 
-```
+```markdown
 Empty set (0.00 sec)
 ```
 
@@ -370,7 +370,7 @@ left join geoip2_location location on (
 where inet6_aton('214.0.0.0') <= network_end;
 ```
 
-```
+```markdown
 +----------+-----------+-----------------+----------------+---------------+--------------------+-----------+
 | latitude | longitude | accuracy_radius | continent_name | country_name  | subdivision_1_name | city_name |
 +----------+-----------+-----------------+----------------+---------------+--------------------+-----------+
@@ -427,7 +427,7 @@ left join geoip2_location represented_country on (
 where inet6_aton('214.0.0.0') <= network_end;
 ```
 
-```
+```markdown
 +----------+-----------+-----------------+-------------------------+-----------------------+-----------------------------+--------------------+-----------------------------------+---------------------------------+------------------------------------+----------------------------------+
 | latitude | longitude | accuracy_radius | location_continent_name | location_country_name | location_subdivision_1_name | location_city_name | registered_country_continent_name | registered_country_country_name | represented_country_continent_name | represented_country_country_name |
 +----------+-----------+-----------------+-------------------------+-----------------------+-----------------------------+--------------------+-----------------------------------+---------------------------------+------------------------------------+----------------------------------+
