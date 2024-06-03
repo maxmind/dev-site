@@ -29,6 +29,7 @@
     ></script>
   </body>
   {{ $codeset := resources.Get "js/codeset.ts" | js.Build }}
-  {{ $js := slice $codeset | resources.Concat "js/bundle.js" }}
+  {{ $geoipCrontab := resources.Get "js/geoip-crontab.ts" | js.Build }}
+  {{ $js := slice $codeset $geoipCrontab | resources.Concat "js/bundle.js" }}
   <script type="module" src="{{ $js.RelPermalink }}"></script>
 </html>

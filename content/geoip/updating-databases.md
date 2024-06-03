@@ -3,7 +3,7 @@ draft: false
 title: Updating GeoIP and GeoLite Databases
 ---
 
-<Alert type="warning">
+{{< warning >}}
   In January 2024, we began using R2 presigned URLs for all database downloads.
   You should make sure that your HTTP client follows redirects and there are no
   proxy or firewall settings that would block requests to the host we are
@@ -17,7 +17,7 @@ redirected.
 
 [Read our release note for more information.](/geoip/release-notes/2024#presigned-urls-for-database-downloads)
 
-</Alert>
+{{</ warning >}}
 
 There are two methods for automatically updating GeoIP2 and GeoLite binary
 databases:
@@ -66,14 +66,14 @@ with an active license key associated with your MaxMind account. You can see
 your license key information on
 [your account License Keys page](https://www.maxmind.com/en/accounts/current/license-key).
 
-<Alert type="warning">
+{{< warning >}}
   You may also write this file by hand using the template below
   (**not  recommended**).
 
 Note that for `geoipupdate` versions less than 2.5.0, use `UserId` instead of
 `AccountID` and `ProductIds` instead of `EditionIDs`.
 
-</Alert>
+{{</ warning >}}
 
 ```bash
 # GeoIP.conf file - used by geoipupdate program to update databases
@@ -88,7 +88,15 @@ EditionIDs YOUR_EDITION_IDS_HERE
 Run `geoipupdate`. To fully automate this process on Linux or Unix, use a
 crontab file like:
 
-<GeoIPCrontab />
+{{< geoip-crontab >}}
+```bash
+# top of crontab
+MAILTO=your@email.com
+
+___js-cron-placeholder___ /usr/local/bin/geoipupdate
+# end of crontab
+```
+{{</ geoip-crontab >}}
 
 This crontab file would run twice a week, and it would email you the results.
 
@@ -193,14 +201,19 @@ section of your account portal.
 For example, using the permalink for the GeoIP2 City CSV database, you can issue
 a `curl` command like the following:
 
-```cli
-curl -I -L -u YOUR_ACCOUNT_ID:YOUR_LICENSE_KEY 'https://download.maxmind.com/geoip/databases/GeoIP2-City-CSV/download?suffix=zip'
+```bash
+curl -I -L -u YOUR_ACCOUNT_ID:YOUR_LICENSE_KEY \
+'https://download.maxmind.com/geoip/databases/GeoIP2-City-CSV/download?suffix=zip'
 ```
 
 Or a `wget` command like the following:
 
-```cli
-wget -S --method HEAD --user=YOUR_ACCOUNT_ID --password=YOUR_LICENSE_KEY 'https://download.maxmind.com/geoip/databases/GeoIP2-City-CSV/download?suffix=zip'
+```bash
+wget -S \
+--method HEAD \
+--user=YOUR_ACCOUNT_ID \
+--password=YOUR_LICENSE_KEY \
+'https://download.maxmind.com/geoip/databases/GeoIP2-City-CSV/download?suffix=zip'
 ```
 
 Where `YOUR_ACCOUNT_ID` is a placeholder for your account ID and
