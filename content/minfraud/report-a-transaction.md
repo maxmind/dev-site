@@ -28,22 +28,22 @@ on our JSON API.
 We have a collection of officially supported libraries for you to interact with
 the minFraud API:
 
-<CodeSet>
+{{< codeset >}}
 
-```cli-csharp
-# Install via NuGet
+```csharp
+// Install via NuGet
 Install-Package MaxMind.MinFraud
 ```
 
-```cli-java
-# Install via Maven, recommended
+```java
+// Install via Maven, recommended
 <dependency>
   <groupId>com.maxmind.minfraud</groupId>
   <artifactId>minfraud</artifactId>
   <version>1.15.0</version>
 </dependency>
 
-# Or install via Gradle
+// Or install via Gradle
 repositories {
   mavenCentral()
 }
@@ -52,25 +52,25 @@ dependencies {
 }
 ```
 
-```cli-javascript
-# Install via npm
+```javascript
+// Install via npm
 npm install @maxmind/minfraud-api-node
 
-# Or install via yarn
+// Or install via yarn
 yarn add @maxmind/minfraud-api-node
 ```
 
-```cli-php
+```php
 # Install via Composer
 composer require maxmind/minfraud:~1.0
 ```
 
-```cli-python
+```python
 # Install via pip
 pip install minfraud
 ```
 
-```cli-ruby
+```ruby
 # Install as a gem
 gem install minfraud
 
@@ -78,7 +78,7 @@ gem install minfraud
 gem 'minfraud'
 ```
 
-</CodeSet>
+{{</ codeset >}}
 
 ### 2. Create and submit a transaction report object
 
@@ -86,12 +86,14 @@ A transaction report only needs two fields, a transaction identifier, which can
 be the `ip_address`, the `maxmind_id`, the `minfraud_id`, or the
 `transaction_id`, and a `tag`. A `tag` can be one of the following values:
 
+{{< table >}}
 | Tag             | Description                                                                   |
 | --------------- | ----------------------------------------------------------------------------- |
 | Chargeback      | Used to associate a chargeback with a transaction                             |
 | Not fraud       | Used to report a transaction that was later identified as a false positive    |
 | Spam or Abuse   | Used to report a transaction that was linked to spam or abuse                 |
 | Suspected fraud | Used to report a high risk transaction where fraud has not yet been confirmed |
+{{</ table >}}
 
 We highly encourage you to include the MaxMind ID or minFraud ID that identifies
 the minFraud Standard/Premium request or minFraud Score/Insights/Factors request
@@ -103,7 +105,7 @@ about the transaction you would like to share with MaxMind. MaxMind manually
 reviews many reported transactions, so any additional details you provide to
 help us understand context are extremely helpful.
 
-<CodeSet>
+{{< codeset >}}
 
 ```csharp
 var client = new WebServiceClient(10, "LICENSEKEY");
@@ -236,7 +238,7 @@ reporter = Minfraud::Report.new(transaction: txn)
 reporter.report_transaction
 ```
 
-</CodeSet>
+{{</ codeset >}}
 
 ## Validation and error handling
 
@@ -270,10 +272,10 @@ your
 The password is your
 [MaxMind license key](https://www.maxmind.com/en/accounts/current/license-key).
 
-<Alert type="warning">
-  You must be approved for a trial or purchase credit for use with our web
-  services in order to receive an account ID and license key.
-</Alert>
+{{< alert warning >}}
+You must be approved for a trial or purchase credit for use with our web
+services in order to receive an account ID and license key.
+{{</ alert >}}
 
 We use
 [basic HTTP authentication](https://en.wikipedia.org/wiki/Basic_access_authentication).
@@ -294,6 +296,7 @@ The minFraud API accepts input as JSON in the body of an HTTP POST. The JSON
 document should consist of a single object. That object may contain the
 following keys (key names are case-sensitive):
 
+{{< table >}}
 | Name                | Type        | Description                                                                                                                                                                                                                |
 | ------------------- | ----------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **ip_address**      | string      | _Conditionally required.[^1]_ The IP address of the customer placing the order. This should be passed as a string like “44.55.66.77” or “2001:db8::2:1”.                                                                   |
@@ -303,6 +306,7 @@ following keys (key names are case-sensitive):
 | **minfraud_id**     | string (36) | _Conditionally required.[^1]_ A UUID that identifies a minFraud Score, minFraud Insights, or minFraud Factors request. This ID is returned at `/id` in the response.                                                       |
 | **notes**           | string      | _Optional._ Your notes on the fraud tag associated with the transaction. We manually review many reported transactions to improve our scoring for you so any additional details to help us understand context are helpful. |
 | **transaction_id**  | string      | _Conditionally required.[^1]_ The transaction ID you originally passed to minFraud.                                                                                                                                        |
+{{</ table >}}
 
 [^1]:
     You must provide at least one of `ip_address`, `maxmind_id`, `minfraud_id`,
@@ -329,6 +333,7 @@ an error response before attempting to decode the body as JSON.
 In addition to the errors documented below, client code should also be prepared
 to handle any valid HTTP 4xx or 5xx status code.
 
+{{< table >}}
 | Error Code              | HTTP Status                | Description                                                                                                                                                                                                                                                                       |
 | ----------------------- | -------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | JSON_INVALID            | 400 Bad Request            | Your JSON could not be parsed.                                                                                                                                                                                                                                                    |
@@ -345,6 +350,7 @@ to handle any valid HTTP 4xx or 5xx status code.
 | ACCOUNT_ID_REQUIRED     | 401 Unauthorized           | You have not supplied a [MaxMind account ID](https://support.maxmind.com/hc/en-us/articles/4412951066779-Find-my-Account-ID) in the [Authorization](#authorization-and-security) header.                                                                                          |
 | (none)                  | 415 Unsupported Media Type | Your request included a `Content-Type` header that is not supported. For `GET` requests, this means the web service cannot return content of that type. For `PUT` and `POST` queries, this means the web service cannot parse a request body of that type.                        |
 | (none)                  | 503 Service Not Available  | There is a problem with the web service server. You can try this request again later.                                                                                                                                                                                             |
+{{</ table >}}
 
 ### Example using curl
 
