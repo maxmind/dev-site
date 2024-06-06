@@ -1,0 +1,3 @@
+<div class="alert {{ if len .Params | eq 1 }}alert--{{ index .Params 0 }}{{ end }}">
+  {{ .Inner | .Page.RenderString }}
+</div>
