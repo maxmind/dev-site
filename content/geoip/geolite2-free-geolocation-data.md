@@ -47,14 +47,14 @@ on our knowledge base.
 
 ## IP Geolocation Accuracy
 
-{{< warning >}}
+{{< alert warning >}}
 **IP Geolocation Usage**
 
 IP geolocation is inherently imprecise. Locations are often near the center of
 the population. Any location provided by a GeoIP database should not be used to
 identify a particular address or household.
 
-{{</ warning >}}
+{{</ alert >}}
 
 Use the Accuracy Radius as an indication of geolocation accuracy for the
 latitude and longitude coordinates we return for an IP address. The actual
