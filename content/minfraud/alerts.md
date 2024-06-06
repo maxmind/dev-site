@@ -40,6 +40,7 @@ http://yourdomain/yoururl?i=24.24.24.24&maxmindID=1234ABCD&domain=sample.com&cit
 The following are the parameters that will be included in the query string of
 the request. Additional parameters may be added in the future.
 
+{{< table >}}
 | Parameter        | Description                                                                                                                        |
 | ---------------- | ---------------------------------------------------------------------------------------------------------------------------------- |
 | `city`           | The billing city included in the original minFraud request.                                                                        |
@@ -58,12 +59,14 @@ the request. Additional parameters may be added in the future.
 | `shop_id`        | The shop ID included in the original minFraud request. This will only be set if the original request included a shop ID.           |
 | `txnID`          | The transaction ID included in the original minFraud request.                                                                      |
 | `updated_at`     | The date and time at which the new risk score was calculated, in RFC3339 format, e.g., `2019-11-01T12:34:56Z`                      |
+{{</ table >}}
 
 #### Possible alert reasons
 
 These are the possible `reason_code`s which might be returned with a minFraud
 Alert. These codes are subject to change.
 
+{{< table >}}
 | `reason_code`      | `reason`                                                                                         |
 | ------------------ | ------------------------------------------------------------------------------------------------ |
 | `CARDER_EMAIL`     | Email on order was flagged as high-risk email, as it was associated with another high-risk order |
@@ -72,6 +75,7 @@ Alert. These codes are subject to change.
 | `HOSTING_PROVIDER` | IP is from High Risk Hosting Provider                                                            |
 | `MANUAL_REVIEW`    | The transaction was flagged as risky after manual review                                         |
 | `POSTAL_VELOCITY`  | IP address had high velocity of orders (e.g. different zipcodes on same IP address)              |
+{{</ table >}}
 
 ### Securing your webhook
 
@@ -122,7 +126,7 @@ i=24.24.24.24&maxmindID=1234ABCD&domain=sample.com&city=Anytown&region=CA&countr
 
 You can check the signaturing using something like the following code:
 
-<CodeSet>
+{{< codeset >}}
 
 ```ruby
 require 'openssl'
@@ -157,7 +161,7 @@ func verifySignature(secret, header, query string) (bool, error) {
 }
 ```
 
-</CodeSet>
+{{</ codeset >}}
 
 To avoid [timing attacks](https://en.wikipedia.org/wiki/Timing_attack), please
 use a secure comparison function rather the equals operator of your language.
