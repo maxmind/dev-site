@@ -1,0 +1,71 @@
+diff_in,old_geoname_id,new_geoname_id,old_city_name,new_city_name,old_country_name,new_country_name,old_country_code,new_country_code,old_subdivision_codes,new_subdivision_codes
+city_name,5710756,5710756,Albany,Albania,United States,United States,US,US,OR,OR
+city_name,5884472,5884472,Amhertsburg,Amherstburg,Canada,Canada,CA,CA,ON,ON
+city_name,1275947,1275947,Bhīmavaram,Bhimavaram,India,India,IN,IN,AP,AP
+city_name,1678835,1678835,Chiayi County,Chiyayi County,Taiwan,Taiwan,TW,TW,CYQ,CYQ
+city_name,292261,292261,Dayrah,Deira,United Arab Emirates,United Arab Emirates,AE,AE,DU,DU
+city_name,1203891,1203891,Dinājpur,Dinajpur,Bangladesh,Bangladesh,BD,BD,"F, 14","F, 14"
+city_name,3658380,3658380,El Anegado,Eloy Alfaro,Ecuador,Ecuador,EC,EC,M,M
+city_name,285629,285629,Ḩawallī,Hawalli,Kuwait,Kuwait,KW,KW,HA,HA
+city_name,3836170,3836170,Santa Magdalena,Jovita,Argentina,Argentina,AR,AR,X,X
+city_name,3655141,3655141,La Joya de los Sachas,La Joya de Los Sachas,Ecuador,Ecuador,EC,EC,D,D
+city_name,3860757,3860757,Colonia La Tordilla,La Tordilla,Argentina,Argentina,AR,AR,X,X
+city_name,3654884,3654884,Las Pinas,Las Pinas de Julcuy,Ecuador,Ecuador,EC,EC,M,M
+city_name,3843871,3843871,Monte Cristo,Montecristo,Argentina,Argentina,AR,AR,X,X
+city_name,954286,954286,Soekmekaar,Morebeng,South Africa,South Africa,ZA,ZA,LP,LP
+city_name,2562698,2562698,Imsida,Msida,Malta,Malta,MT,MT,34,34
+city_name,950468,950468,Tabankulu,Ntabankulu,South Africa,South Africa,ZA,ZA,EC,EC
+city_name,1019883,1019883,Berlin,Ntabozuko,South Africa,South Africa,ZA,ZA,EC,EC
+city_name,1260792,1260792,Pālakollu,Palakollu,India,India,IN,IN,AP,AP
+city_name,1798425,1798425,Puyang,Pujiang,China,China,CN,CN,ZJ,ZJ
+city_name,990849,990849,King William's Town,Qonce,South Africa,South Africa,ZA,ZA,EC,EC
+city_name,3652029,3652029,San Antonio de Ibarra,San Antonio,Ecuador,Ecuador,EC,EC,I,I
+city_name,3653858,3653858,Natabuela,San Francisco de Natabuela,Ecuador,Ecuador,EC,EC,I,I
+city_name,984118,984118,Leandra,Thuli,South Africa,South Africa,ZA,ZA,MP,MP
+city_name,973527,973527,Mount Fletcher,Tlokoeng,South Africa,South Africa,ZA,ZA,EC,EC
+city_name,3649960,3649960,Zamora,Zamora Nuevo,Ecuador,Ecuador,EC,EC,G,G
+city_name,1676847,1676847,Chung-ho,Zhonghe,Taiwan,Taiwan,TW,TW,NWT,NWT
+geoname_id,10525684,10450568,Achampet,Achampet,India,India,IN,IN,TS,TS
+geoname_id,1864912,1864913,Atsuta,Atsuta,Japan,Japan,JP,JP,47,47
+geoname_id,6319300,3406948,Autazes,Autazes,Brazil,Brazil,BR,BR,AM,AM
+geoname_id,6319373,3406856,Bagre,Bagre,Brazil,Brazil,BR,BR,PA,PA
+geoname_id,6323927,3468453,Cachoeira Alta,Cachoeira Alta,Brazil,Brazil,BR,BR,GO,GO
+geoname_id,3404284,3404323,Cacimbas,Cacimbas,Brazil,Brazil,BR,BR,CE,CE
+geoname_id,3177712,8955352,Cugnoli,Cugnoli,Italy,Italy,IT,IT,"65, PE","65, PE"
+geoname_id,564745,6641740,Dubki,Dubki,Russia,Russia,RU,RU,YAR,YAR
+geoname_id,10792676,12866243,El Quinche,El Quinche,Ecuador,Ecuador,EC,EC,P,P
+geoname_id,3463120,6321383,Formoso,Formoso,Brazil,Brazil,BR,BR,MG,MG
+geoname_id,11721090,1270353,Harichandanpur,Harichandanpur,India,India,IN,IN,OD,OD
+geoname_id,3151391,3151392,Husby,Husby,Norway,Norway,NO,NO,18,18
+geoname_id,3460723,3475644,Itapeva,Itapeva,Brazil,Brazil,BR,BR,SP,SP
+geoname_id,2332796,2332795,Kwara,Kwara,Nigeria,Nigeria,NG,NG,JI,JI
+geoname_id,3885936,11956211,La Florida,La Florida,Chile,Chile,CL,CL,ML,ML
+geoname_id,3847914,3847920,Las Penas,Las Penas,Argentina,Argentina,AR,AR,X,X
+geoname_id,983038,11428151,Letaba,Letaba,South Africa,South Africa,ZA,ZA,LP,LP
+geoname_id,3675635,3675637,Majagual,Majagual,Colombia,Colombia,CO,CO,SUC,SUC
+geoname_id,3996040,3996037,Mezcala,Mezcala,Mexico,Mexico,MX,MX,JAL,JAL
+geoname_id,1735297,1735339,Mukah,Mukah,Malaysia,Malaysia,MY,MY,13,13
+geoname_id,1608408,1608409,Narathiwat,Narathiwat,Thailand,Thailand,TH,TH,96,96
+geoname_id,3456277,6324162,Nobres,Nobres,Brazil,Brazil,BR,BR,MT,MT
+geoname_id,6317783,3456058,Novo Horizonte,Novo Horizonte,Brazil,Brazil,BR,BR,SC,SC
+geoname_id,11669139,2769504,Oed,Oed,Austria,Austria,AT,AT,3,3
+geoname_id,3822977,8583283,Othon P. Blanco,Othon P. Blanco,Mexico,Mexico,MX,MX,ROO,ROO
+geoname_id,513898,513897,Otradnoye,Otradnoye,Russia,Russia,RU,RU,LEN,LEN
+geoname_id,10792986,12866327,Puembo,Puembo,Ecuador,Ecuador,EC,EC,P,P
+geoname_id,12655478,3838865,Rio de los Sauces,Rio de los Sauces,Argentina,Argentina,AR,AR,X,X
+geoname_id,1691487,1691490,Rosario,Rosario,Philippines,Philippines,PH,PH,"40, BTG","40, BTG"
+geoname_id,7575232,1690479,San Agustin,San Agustin,Philippines,Philippines,PH,PH,"03, TAR","03, TAR"
+geoname_id,3428775,12675206,San Justo,San Justo,Argentina,Argentina,AR,AR,B,B
+geoname_id,12035902,3428068,San Vicente,San Vicente,Argentina,Argentina,AR,AR,N,N
+geoname_id,7417465,1687801,Santiago,Santiago,Philippines,Philippines,PH,PH,"02, ISA","02, ISA"
+geoname_id,666717,666712,Slobozia,Slobozia,Romania,Romania,RO,RO,AG,AG
+geoname_id,565680,1491267,Sos'va,Sos'va,Russia,Russia,RU,RU,SVE,SVE
+geoname_id,723507,723508,Stankovce,Stankovce,Slovakia,Slovakia,SK,SK,KI,KI
+geoname_id,8635185,11102944,Sundown,Sundown,Australia,Australia,AU,AU,QLD,QLD
+geoname_id,2262625,2262626,Torrão,Torrão,Portugal,Portugal,PT,PT,15,15
+geoname_id,11962372,3446194,Tremembé,Tremembé,Brazil,Brazil,BR,BR,SP,SP
+geoname_id,11672944,4022970,Victoria,Victoria,Mexico,Mexico,MX,MX,GUA,GUA
+geoname_id,10351801,11791238,Yakatabaru,Yakatabaru,Japan,Japan,JP,JP,40,40
+geoname_id,6318970,6319833,Ze Doca,Ze Doca,Brazil,Brazil,BR,BR,MA,MA
+subdivision_codes,3654059,3654059,Montañita,Montañita,Ecuador,Ecuador,EC,EC,G,SE
+subdivision_codes,8504423,8504423,Subang Jaya,Subang Jaya,Malaysia,Malaysia,MY,MY,10,14
