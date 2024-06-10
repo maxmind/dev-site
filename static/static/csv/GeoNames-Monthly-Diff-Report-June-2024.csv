@@ -1,5 +1,4 @@
 diff_in,old_geoname_id,new_geoname_id,old_city_name,new_city_name,old_country_name,new_country_name,old_country_code,new_country_code,old_subdivision_codes,new_subdivision_codes
-city_name,5710756,5710756,Albany,Albania,United States,United States,US,US,OR,OR
 city_name,5884472,5884472,Amhertsburg,Amherstburg,Canada,Canada,CA,CA,ON,ON
 city_name,1275947,1275947,Bhīmavaram,Bhimavaram,India,India,IN,IN,AP,AP
 city_name,1678835,1678835,Chiayi County,Chiyayi County,Taiwan,Taiwan,TW,TW,CYQ,CYQ
