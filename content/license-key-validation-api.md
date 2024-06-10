@@ -37,9 +37,11 @@ other content types are accepted at the moment.
 
 The request body may include the following field:
 
+{{< table >}}
 | Key           | Value Type | Description                                                                       |
 | ------------- | ---------- | --------------------------------------------------------------------------------- |
 | `license_key` | string     | The `license_key` field should contain the license key that you want to validate. |
+{{</ table >}}
 
 Here is an example of how to make the request using curl:
 
