@@ -52,6 +52,16 @@ title = 'MaxMind'
       pageRef = '/minfraud/sandbox-environment'
       parent = 'minFraud'
       weight = 60
+    [[menus.minfraud]]
+      name = 'minFraud Legacy'
+      pageRef = '/minfraud/minfraud-legacy'
+      parent = 'minFraud'
+      weight = 70
+    [[menus.minfraud]]
+      name = 'Proxy Detection Legacy Web Service'
+      pageRef = '/minfraud/proxy-detection'
+      parent = 'minFraud'
+      weight = 80
   [[menus.geoip]]
     name = 'GeoIP'
     pageRef = '/geoip'
