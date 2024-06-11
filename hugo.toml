@@ -121,6 +121,14 @@ title = 'MaxMind'
     name = 'MaxMind Server IP Addresses'
     pageRef = '/maxmind-server-ip-addresses'
     weight = 10
+  [[menus.general]]
+    name = 'License Key Validation API'
+    pageRef = '/license-key-validation-api'
+    weight = 20
+  [[menus.general]]
+    name = 'Contribute'
+    pageRef = '/contribute'
+    weight = 30
 
 [module]
   [[module.mounts]]
