@@ -3,7 +3,7 @@ draft: false
 title: Updating GeoIP and GeoLite Databases
 ---
 
-{{< warning >}}
+{{< alert warning >}}
   In January 2024, we began using R2 presigned URLs for all database downloads.
   You should make sure that your HTTP client follows redirects and there are no
   proxy or firewall settings that would block requests to the host we are
@@ -17,7 +17,7 @@ redirected.
 
 [Read our release note for more information.](/geoip/release-notes/2024#presigned-urls-for-database-downloads)
 
-{{</ warning >}}
+{{</ alert >}}
 
 There are two methods for automatically updating GeoIP2 and GeoLite binary
 databases:
@@ -66,14 +66,14 @@ with an active license key associated with your MaxMind account. You can see
 your license key information on
 [your account License Keys page](https://www.maxmind.com/en/accounts/current/license-key).
 
-{{< warning >}}
+{{< alert warning >}}
   You may also write this file by hand using the template below
   (**not  recommended**).
 
 Note that for `geoipupdate` versions less than 2.5.0, use `UserId` instead of
 `AccountID` and `ProductIds` instead of `EditionIDs`.
 
-{{</ warning >}}
+{{</ alert >}}
 
 ```bash
 # GeoIP.conf file - used by geoipupdate program to update databases

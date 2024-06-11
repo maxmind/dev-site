@@ -8,7 +8,7 @@ outputs:
 _comment: json feed is handled by module mounts.  see hugo.toml
 ---
 
-{{< warning >}}
+{{< alert warning >}}
 In January 2024, we began using R2 presigned URLs for all database downloads.
 Database downloads will no longer use the IP addresses specified below.
 
@@ -16,7 +16,7 @@ For information about IP addresses used to serve database downloads see
 [the appropriate section below](#database-download-ip-addresses).
 
 [Read our release note for more information.](/geoip/release-notes/2024#presigned-urls-for-database-downloads)
-{{< /warning >}}
+{{</ alert >}}
 
 This page lists the IP addresses that may be used for minFraud, GeoIP, and
 GeoLite web service requests by our \*.maxmind.com API hostnames. We strongly

@@ -22,7 +22,36 @@ title = 'MaxMind'
     name = 'minFraud'
     pageRef = '/minfraud'
     weight = 10
-
+    [[menus.minfraud]]
+      name = 'Evaluate a Transaction'
+      pageRef = '/minfraud/evaluate-a-transaction'
+      parent = 'minFraud'
+      weight = 10
+    [[menus.minfraud]]
+      name = 'Report a transaction'
+      pageRef = '/minfraud/report-a-transaction'
+      parent = 'minFraud'
+      weight = 20
+    [[menus.minfraud]]
+      name = 'Track Devices'
+      pageRef = '/minfraud/track-devices'
+      parent = 'minFraud'
+      weight = 30
+    [[menus.minfraud]]
+      name = 'minFraud Alerts'
+      pageRef = '/minfraud/alerts'
+      parent = 'minFraud'
+      weight = 40
+    [[menus.minfraud]]
+      name = 'Working with Transaction Dispositions'
+      pageRef = '/minfraud/working-with-transaction-dispositions'
+      parent = 'minFraud'
+      weight = 50
+    [[menus.minfraud]]
+      name = 'Testing minFraud in the MaxMind Sandbox'
+      pageRef = '/minfraud/sandbox-environment'
+      parent = 'minFraud'
+      weight = 60
   [[menus.geoip]]
     name = 'GeoIP'
     pageRef = '/geoip'

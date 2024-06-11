@@ -3,8 +3,6 @@ draft: false
 title: Evaluate a Transaction
 ---
 
-import ApiClients from './_api-clients.mdx';
-
 Evaluating a transaction consists of setting up device tracking on your website,
 creating an object that contains the details of the transaction, and then
 submitting the transaction to the minFraud service for evaluation.
@@ -56,22 +54,22 @@ Place the following code in the footer of the HTML webpage and replace
 We have a collection of officially supported libraries for you to interact with
 the minFraud API:
 
-<CodeSet>
+{{< codeset >}}
 
-```cli-csharp
-# Install via NuGet
+```csharp
+// Install via NuGet
 Install-Package MaxMind.MinFraud
 ```
 
-```cli-java
-# Install via Maven, recommended
+```java
+// Install via Maven, recommended
 <dependency>
   <groupId>com.maxmind.minfraud</groupId>
   <artifactId>minfraud</artifactId>
   <version>1.15.0</version>
 </dependency>
 
-# Or install via Gradle
+// Or install via Gradle
 repositories {
   mavenCentral()
 }
@@ -80,25 +78,25 @@ dependencies {
 }
 ```
 
-```cli-javascript
-# Install via npm
+```javascript
+// Install via npm
 npm install @maxmind/minfraud-api-node
 
-# Or install via yarn
+// Or install via yarn
 yarn add @maxmind/minfraud-api-node
 ```
 
-```cli-php
+```php
 # Install via Composer
 composer require maxmind/minfraud:~1.0
 ```
 
-```cli-python
+```python
 # Install via pip
 pip install minfraud
 ```
 
-```cli-ruby
+```ruby
 # Install as a gem
 gem install minfraud
 
@@ -106,7 +104,7 @@ gem install minfraud
 gem 'minfraud'
 ```
 
-</CodeSet>
+{{</ codeset >}}
 
 ### 3. Create a minFraud client object
 
@@ -114,7 +112,7 @@ To interact with our API, you need to create a new client object. For this you
 will need
 [your MaxMind account ID and license key](https://www.maxmind.com/en/my_license_key):
 
-<CodeSet>
+{{< codeset >}}
 
 ```csharp
 var client = new WebServiceClient(10, "LICENSEKEY");
@@ -147,7 +145,7 @@ Minfraud.configure do |c|
 end
 ```
 
-</CodeSet>
+{{</ codeset >}}
 
 ### 4. Create a transaction object
 
@@ -158,7 +156,7 @@ about the transaction improves the accuracy of the transaction's evaluation. The
 following examples use the recommended minimum amount of information you should
 submit:
 
-<CodeSet>
+{{< codeset >}}
 
 ```csharp
 var transaction = new Transaction(
@@ -409,7 +407,7 @@ assessment = Minfraud::Assessments.new(
 )
 ```
 
-</CodeSet>
+{{</ codeset >}}
 
 ### 5. Submit the transaction object for evaluation
 
@@ -417,7 +415,7 @@ Our client libraries provide a distinct method for each minFraud service. Use
 the appropriate method to submit the transaction object to the minFraud Score,
 Insights, or Factors service.
 
-<CodeSet>
+{{< codeset >}}
 
 ```csharp
 # minFraud Score
@@ -494,7 +492,7 @@ insights_model = assessment.insights.body
 factors_model = assessment.factors.body
 ```
 
-</CodeSet>
+{{</ codeset >}}
 
 ## Validation and error handling
 
@@ -512,7 +510,7 @@ descriptions,
 
 ## Full examples
 
-<CodeSet>
+{{< codeset >}}
 
 ```csharp
 using MaxMind.MinFraud;
@@ -1227,8 +1225,8 @@ score_model.warnings.each { |w| puts w.warning }
 p score_model.risk_score
 ```
 
-</CodeSet>
+{{</ codeset >}}
 
 ## Links to MaxMind client APIs
 
-<ApiClients />
+{{< snippet "snippets/minfraud-client-apis.md" >}}

@@ -35,13 +35,13 @@ able to
 In order to use this service, the following JavaScript must be included in your
 page.
 
-{{< warning >}}
+{{< alert warning >}}
   **Do not download this JavaScript file and serve it from your server(s)!**
 
 The JavaScript file must be served from MaxMind servers, otherwise GeoIP2
 requests will fail.
 
-{{</ warning >}}
+{{</ alert >}}
 
 ```html
 <script src="https://geoip-js.com/js/apis/geoip2/v2.1/geoip2.js" type="text/javascript"></script>
