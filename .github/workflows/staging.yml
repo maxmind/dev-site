@@ -139,6 +139,9 @@ jobs:
     outputs:
       hosting-url: ${{ steps.deploy-preview-channel.outputs.details_url }}
 
+    permissions:
+      checks: write
+
     steps:
       - name: Check Out Repo
         uses: actions/checkout@v3
