@@ -111,6 +111,9 @@ jobs:
       (needs.test-unit.result == 'success' || needs.test-unit.result == 'skipped')
     runs-on: ubuntu-latest
 
+    permissions:
+      checks: write
+
     steps:
       - name: Check Out Repo
         uses: actions/checkout@v3
