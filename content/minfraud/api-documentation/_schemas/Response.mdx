@@ -120,6 +120,19 @@ minFraud service you query and the inputs provided.
   </Property>
 
   <Property
+    linkToSchemaName={'Response | Shipping Phone'}
+    name="shipping_phone"
+    services={[
+      'insights',
+      'factors',
+    ]}
+  >
+    This object contains minFraud response data associated with the shipping
+    phone. If the shipping phone was not provided in the request or could
+    not be parsed, this object will not be present in the response.
+  </Property>
+
+  <Property
     linkToSchemaName={'Response | Billing Address'}
     name="billing_address"
     services={[
@@ -129,6 +142,19 @@ minFraud service you query and the inputs provided.
   >
     This object contains minFraud response data associated with the billing
     address. If the billing address was not provided in the request or could
+    not be parsed, this object will not be present in the response.
+  </Property>
+
+  <Property
+    linkToSchemaName={'Response | Billing Phone'}
+    name="billing_phone"
+    services={[
+      'insights',
+      'factors',
+    ]}
+  >
+    This object contains minFraud response data associated with the billing
+    phone. If the billing phone was not provided in the request or could
     not be parsed, this object will not be present in the response.
   </Property>
 
