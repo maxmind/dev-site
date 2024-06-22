@@ -3,87 +3,48 @@ draft: false
 title: GeoIP2 and GeoLite2 Database Documentation
 ---
 
-import {
-  FaMapMarkerAlt as CityCountryIcon,
-  FaBuilding as EnterpriseIcon,
-  FaUserSecret as AnonymousIcon,
-  FaNetworkWired as ASNIcon,
-  FaWifi as ConnectionTypeIcon,
-  FaSign as DomainIcon,
-  FaServer as ISPIcon,
- } from 'react-icons/fa';
-
 ## Databases
 
-<LinkGroupContainer>
-  <LinkGroup>
-    <LinkGroupCard
-      description="Determine the country, subdivisions (regions), city, and
-      postal code associated with IPv4 and IPv6 addresses worldwide."
-      heading="City and Country Databases"
-      icon={CityCountryIcon}
-      to="/geoip/docs/databases/city-and-country"
-    />
-
-    <LinkGroupCard
-      description="Determine geolocation data such as country, region, state,
-      city, ZIP/postal code, and additional intelligence such as confidence
-      factors, ISP, domain, and connection type."
-      heading="Enterprise Databases"
-      icon={EnterpriseIcon}
-      to="/geoip/docs/databases/enterprise"
-    />
-
-    <LinkGroupCard
-      description="MaxMind's GeoIP2 Anonymous IP CSV database helps protect your
-      business by identifying proxy, VPN, hosting, and other anonymous IP
-      addresses."
-      heading="Anonymous IP Databases"
-      icon={AnonymousIcon}
-      to="/geoip/docs/databases/anonymous-ip"
-    />
-
-    <LinkGroupCard
-      description="Determine the Internet Service Provider, organization name,
-      and autonomous system organization and number associated with an IP
-      address."
-      heading="ISP Databases"
-      icon={ISPIcon}
-      to="/geoip/docs/databases/isp"
-    />
-
-    <LinkGroupCard
-      description="Determine the connection type of your visitors based on
-      their IP address. The database identifies dial-up, cellular, cable/DSL,
-      and corporate connection speeds."
-      heading="Connection Type Databases"
-      icon={ConnectionTypeIcon}
-      to="/geoip/docs/databases/connection-type"
-    />
-
-    <LinkGroupCard
-      description="Look up the second level domain names associated with IPv4
-      and IPv6 addresses."
-      heading="Domain Databases"
-      icon={DomainIcon}
-      to="/geoip/docs/databases/domain"
-    />
-
-    <LinkGroupCard
-      description="Look up the autonomous system number and autonomous system
-      organization associated with IPv4 and IPv6 addresses."
-      heading="ASN Databases"
-      icon={ASNIcon}
-      to="/geoip/docs/databases/asn"
-    />
-
-  </LinkGroup>
-</LinkGroupContainer>
+{{< link-group/container >}}
+  {{< link-group/card heading="City and Country Databases" href="/geoip/docs/databases/city-and-country" >}}
+    Determine the country, subdivisions (regions), city, and postal code associated with IPv4 and
+    IPv6 addresses worldwide.
+  {{</ link-group/card >}}
+  {{< link-group/card heading="Enterprise Databases" href="/geoip/docs/databases/enterprise" >}}
+    Determine geolocation data such as country, region, state,
+    city, ZIP/postal code, and additional intelligence such as confidence
+    factors, ISP, domain, and connection type.
+  {{</ link-group/card >}}
+  {{< link-group/card heading="Anonymous IP Databases" href="/geoip/docs/databases/anonymous-ip" >}}
+    MaxMind's GeoIP2 Anonymous IP CSV database helps protect your
+    business by identifying proxy, VPN, hosting, and other anonymous IP
+    addresses.
+  {{</ link-group/card >}}
+  {{< link-group/card heading="ISP Databases" href="/geoip/docs/databases/isp" >}}
+    Determine the Internet Service Provider, organization name,
+    and autonomous system organization and number associated with an IP
+    address.
+  {{</ link-group/card >}}
+  {{< link-group/card heading="Connection Type Databases" href="/geoip/docs/databases/connection-type" >}}
+    Determine the connection type of your visitors based on
+    their IP address. The database identifies dial-up, cellular, cable/DSL,
+    and corporate connection speeds.
+  {{</ link-group/card >}}
+  {{< link-group/card heading="Domain Databases" href="/geoip/docs/databases/domain" >}}
+    Look up the second level domain names associated with IPv4
+    and IPv6 addresses.
+  {{</ link-group/card >}}
+  {{< link-group/card heading="ASN Databases" href="/geoip/docs/databases/asn" >}}
+    Look up the autonomous system number and autonomous system
+    organization associated with IPv4 and IPv6 addresses.
+  {{</ link-group/card >}}
+{{</ link-group/container >}}
 
 ## Client APIs
 
 ### Official Client APIs
 
+{{< table >}}
 | Language or Framework | Package Repository                                                                                                            | Documentation                                              | Version Control                                    |
 | --------------------- | ----------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------- | -------------------------------------------------- |
 | .NET (C#)             | [NuGet](https://www.nuget.org/packages/MaxMind.GeoIP2/)                                                                       | [GitHub Pages](https://maxmind.github.io/GeoIP2-dotnet/)   | [GitHub](https://github.com/maxmind/GeoIP2-dotnet) |
@@ -95,17 +56,19 @@ import {
 | PHP                   | [Packagist](https://packagist.org/packages/geoip2/geoip2)                                                                     | [GitHub Pages](https://maxmind.github.io/GeoIP2-php/)      | [GitHub](https://github.com/maxmind/GeoIP2-php)    |
 | Python                | [PyPI](https://pypi.python.org/pypi/geoip2)                                                                                   | [Read the Docs](https://geoip2.readthedocs.org/en/latest/) | [GitHub](https://github.com/maxmind/GeoIP2-python) |
 | Ruby                  | [RubyGems](https://rubygems.org/gems/maxmind-geoip2)                                                                          | [RubyDoc](https://www.rubydoc.info/gems/maxmind-geoip2)    | [GitHub](https://github.com/maxmind/GeoIP2-ruby)   |
+{{</ table >}}
 
 ### Unofficial Client APIs
 
-<Alert type="warning">
-  **Use at your own risk.**
+{{< alert warning >}}
+**Use at your own risk.**
 
 MaxMind does **_not_** offer support for these integrations. Please contact the
 integrator for assistance.
+{{</ alert >}}
 
-</Alert>
 
+{{< table >}}
 | Language or Software | API Name                        | Package Repository                                                          | Documentation                                                                      | Version Control                                              |
 | -------------------- | ------------------------------- | --------------------------------------------------------------------------- | ---------------------------------------------------------------------------------- | ------------------------------------------------------------ |
 | C++                  | GeoLite2++                      |                                                                             | [Usage](https://www.ccoderun.ca/GeoLite2++/api/usage.html)                         |                                                              |
@@ -136,17 +99,19 @@ integrator for assistance.
 | Rust                 | maxminddb                       | [Cargo](https://crates.io/crates/maxminddb)                                 | [API docs](https://oschwald.github.io/maxminddb-rust/maxminddb/struct.Reader.html) | [GitHub](https://github.com/oschwald/maxminddb-rust)         |
 | Scala                | maxmind-geoip2-scala            |                                                                             | [README](https://github.com/Sanoma-CDA/maxmind-geoip2-scala/blob/master/README.md) | [GitHub](https://github.com/Sanoma-CDA/maxmind-geoip2-scala) |
 | Swift (C extension)  | MMDB-Swift                      | [MMDB-Swift](https://cocoapods.org/pods/MMDB-Swift)                         | [CocoaPods](https://cocoapods.org/pods/MMDB-Swift)                                 | [GitHub](https://github.com/lexrus/MMDB-Swift)               |
+{{</ table >}}
 
 ### Integrations
 
+{{< alert warning >}}
 <Alert type="warning">
-  **Use at your own risk.**
+**Use at your own risk.**
 
 MaxMind does **_not_** offer support for these integrations. Please contact the
 integrator for assistance.
+{{</ alert >}}
 
-</Alert>
-
+{{< table >}}
 | Application                    | Platform                | Link                                                                                                                    |
 | ------------------------------ | ----------------------- | ----------------------------------------------------------------------------------------------------------------------- |
 | Ad-serving                     | Revive Adserver         | [Geotargeting with Revive Adserver](https://www.revive-adserver.com/faq/geotargeting-with-revive-adserver/)             |
@@ -158,6 +123,7 @@ integrator for assistance.
 | Log Analyzer / Data Processing | Logstash                | [Geoip filter plugin](https://www.elastic.co/guide/en/logstash/current/plugins-filters-geoip.html)                      |
 | Network Protocol Analyzer      | Wireshark               | [How To Use GeoIP With Wireshark](https://gitlab.com/wireshark/wireshark/-/wikis/HowToUseGeoIP)                         |
 | Search                         | Elasticsearch           | [GeoIP processor](https://www.elastic.co/guide/en/elasticsearch/reference/current/geoip-processor.html#geoip-processor) |
+{{</ table >}}
 
 ## Command Line (mmdbinspect)
 

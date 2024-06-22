@@ -3,23 +3,16 @@ draft: false
 title: GeoLite2 ASN Database
 ---
 
-import BinaryDatabases from './_binary-databases.mdx';
-import ConversionUtility from './_conversion-utility.mdx';
-import CsvDatabasesIntro from './_csv-databases-intro.mdx';
-import DataPrivacyWarning from './_data-privacy-warning.mdx';
-import ExampleFiles from './_example-files.mdx';
-import FileFormat from './_file-format.mdx';
-import APIs from './_apis.mdx';
-
 Look up the autonomous system number and autonomous system organization
 associated with IPv4 and IPv6 addresses.
 
-<DataPrivacyWarning />
+{{< snippet "snippets/data-privacy-warning.md" >}}
 
 ## Binary Database
 
-<BinaryDatabases />
+{{< snippet "snippets/binary-databases.md" >}}
 
+{{< table >}}
 | Language or Framework | Documentation                                                                      | Example                                                              |
 | --------------------- | ---------------------------------------------------------------------------------- | -------------------------------------------------------------------- |
 | .NET (C#)             | [GitHub - Database Usage](https://github.com/maxmind/GeoIP2-dotnet#database-usage) | [ASN Example](https://github.com/maxmind/GeoIP2-dotnet#asn)          |
@@ -28,14 +21,15 @@ associated with IPv4 and IPv6 addresses.
 | PHP                   | [GitHub - Database Reader](https://github.com/maxmind/GeoIP2-php#database-reader)  | &bull;                                                               |
 | Python                | [GitHub - Database Usage](https://github.com/maxmind/GeoIP2-python#database-usage) | [ASN Example](https://github.com/maxmind/GeoIP2-python#asn-database) |
 | Ruby                  | [GitHub - Database Reader](https://github.com/maxmind/GeoIP2-ruby#database-reader) | [ASN Example](https://github.com/maxmind/GeoIP2-ruby#asn-example)    |
+{{</ table >}}
 
 ## CSV Database
 
-<CsvDatabasesIntro />
+{{< snippet "snippets/csv-databases-intro.md" >}}
 
-<ZipFileContent product-name="GeoLite2-ASN" />
+{{< zip-file-content product-name="GeoLite2 ASN" >}}
 
-<FileFormat />
+{{< snippet "snippets/file-format.md" >}}
 
 ### Blocks Files
 
@@ -43,6 +37,8 @@ There are two CSV files for network blocks, one each for IPv4 and IPv6 blocks.
 These are named `GeoLite2-ASN-Blocks-IPv4.csv` and
 `GeoLite2-ASN-Blocks-IPv6.csv` respectively.
 
+{{< rawhtml >}}
+<div class="table">
 <table>
   <tbody>
     <tr>
@@ -68,8 +64,8 @@ These are named `GeoLite2-ASN-Blocks-IPv4.csv` and
         <td>integer</td>
         <td>
           The <a href="https://en.wikipedia.org/wiki/Autonomous_system_(Internet)">autonomous system</a> number associated with the IP address.
-
-          \* <a href="https://support.maxmind.com/hc/en-us/articles/4408200231067-IP-Network-Data#h_01FN989WWSE56YD6AV4QSPSWDW" target="_blank" rel="nofollow noopener noreferrer">Learn more about autonomous system data on our Knowledge Base.</a>
+          <br />
+          <a href="https://support.maxmind.com/hc/en-us/articles/4408200231067-IP-Network-Data#h_01FN989WWSE56YD6AV4QSPSWDW">Learn more about autonomous system data on our Knowledge Base.</a>
         </td>
     </tr>
 
@@ -79,41 +75,37 @@ These are named `GeoLite2-ASN-Blocks-IPv4.csv` and
         <td>
           The organization associated with the registered autonomous system
           number for the IP address.
-
-          \* <a href="https://support.maxmind.com/hc/en-us/articles/4408200231067-IP-Network-Data#h_01FN989WWSE56YD6AV4QSPSWDW" target="_blank" rel="nofollow noopener noreferrer">Learn more about autonomous system data on our Knowledge Base.</a>
+          <br />
+          <a href="https://support.maxmind.com/hc/en-us/articles/4408200231067-IP-Network-Data#h_01FN989WWSE56YD6AV4QSPSWDW">Learn more about autonomous system data on our Knowledge Base.</a>
         </td>
     </tr>
 
   </tbody>
 </table>
+</div>
+{{</ rawhtml >}}
 
 ### Conversion Utility
 
-<ConversionUtility />
+{{< snippet "snippets/conversion-utility.md" >}}
 
 ## Example Files
 
-<ExampleFiles />
+{{< snippet "snippets/example-files.md" >}}
 
 ### CSV Example Files
 
-<CsvFileExamples files={[
-    {
-       filename: 'GeoLite2-ASN-CSV_Example.zip',
-       link: '/static/GeoLite2-ASN-CSV_Example.zip'
-    }
-  ]}
-/>
+We maintain examples of the CSV files as they would be downloaded from the account portal:
+
+* [GeoLite2-ASN-CSV\_Example.zip](/static/GeoLite2-ASN-CSV_Example.zip)
 
 ### MMDB Example Files
 
-<MmdbFileExamples files={[
-    {
-       filename: 'GeoLite2-ASN-Test.mmdb',
-       link: 'https://github.com/maxmind/MaxMind-DB/blob/main/test-data/GeoLite2-ASN-Test.mmdb'
-    }
-  ]}
-/>
+We maintain test MMDB files on GitHub:
+
+* [GeoLite2-ASN-Test.mmdb](https://github.com/maxmind/MaxMind-DB/blob/main/test-data/GeoLite2-ASN-Test.mmdb)
+
+Alternatively, you can [view all of our MMDB test data on GitHub](https://github.com/maxmind/MaxMind-DB/tree/main/test-data).
 
 ## Database Sizes
 
@@ -130,8 +122,8 @@ These are named `GeoLite2-ASN-Blocks-IPv4.csv` and
 
 ## Database Changes
 
-<DatabaseChanges product="ASN" />
+{{< database-changes product="ASN" >}}
 
 ## APIs and Third-Party Integrations
 
-<APIs />
+{{< snippet "snippets/geoip-db-apis.md" >}}
