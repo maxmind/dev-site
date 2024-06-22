@@ -1,0 +1,54 @@
+{{ $productName := .Get "product-name" }}
+<div>
+  <p>
+    The zip file itself is named <code>{{ $productName }}-CSV_{YYYYMMDD}.zip</code>.
+    The downloaded zip file contains a single directory which in turn
+    contains several files. That directory is named
+    <code>{{ $productName }}-CSV_{YYYYMMDD}</code>.
+  </p>
+  {{ if eq (.Get "exclude-table") "true" }}
+    <!-- Do nothing -->
+  {{ else }}
+      <p>
+        The files in this zip archive are:
+      </p>
+      <div class="table">
+        <table>
+          <tbody>
+            <tr>
+              <th>Filename</th>
+              <th>Description</th>
+            </tr>
+
+            <tr>
+              <td><code>LICENSE.txt</code></td>
+              <td>End user license</td>
+            </tr>
+
+            <tr>
+              <td><code>COPYRIGHT.txt</code></td>
+              <td>Copyright statement</td>
+            </tr>
+
+            <tr>
+              <td>
+                <code>
+                  {{ $productName }}-Blocks-IPv4.csv
+                </code>
+              </td>
+              <td>CSV file containing data on IPv4 addresses</td>
+            </tr>
+
+            <tr>
+              <td>
+                <code>
+                  {{ $productName }}-Blocks-IPv6.csv
+                </code>
+              </td>
+              <td>CSV file containing data on IPv6 addresses</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    {{ end }}
+</div>

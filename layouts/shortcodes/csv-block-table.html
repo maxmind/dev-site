@@ -1,0 +1,460 @@
+{{ $isEnterprise := .Get "isEnterprise" }}
+<div class="table">
+  <table>
+    <tbody>
+      <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Description</th>
+        {{ if eq $isEnterprise "false" }}
+          <th>Included in...</th>
+        {{ end }}
+      </tr>
+      <tr>
+        <td>network</td>
+        <td>IP network as a string</td>
+        <td>
+          This is the IPv4 or IPv6 network in CIDR format such as
+          &quot;2.21.92.0/29&quot; or &quot;2001:4b0::/80&quot;. We offer a
+          utility to convert this column to start/end IPs or start/end
+          integers. See
+          <a
+            href="#conversion-utility"
+          >
+            the conversion utility
+            section
+          </a>
+          for details.
+        </td>
+        {{ if eq $isEnterprise "false" }}
+          <td>
+            <span class="tag tag--checked">Country</span>
+            <span class="tag tag--checked">City</span>
+          </td>
+        {{ end }}
+      </tr>
+      <tr>
+        <td>geoname_id</td>
+        <td>integer</td>
+        <td>
+          A unique identifier for the network&apos;s location as specified
+          by
+                  <a
+            href="https://www.geonames.org/"
+            rel="nofollow noopener noreferrer"
+            target="_blank"
+          >
+            GeoNames
+          </a>
+          . This ID can be
+          used to look up the location information in the Location file.
+          <br/>
+          <br/>
+          <a
+            href="https://support.maxmind.com/hc/en-us/articles/4414877149467-IP-Geolocation-Data#h_01FRRNFD5Z5EWNCAXM6SZZ5H2C"
+            rel="nofollow noopener noreferrer"
+            target="_blank"
+          >
+            Learn more about GeoNames IDs on our Knowledge Base.
+          </a>
+        </td>
+        {{ if eq $isEnterprise "false" }}
+          <td>
+            <span class="tag tag--checked">Country</span>
+            <span class="tag tag--checked">City</span>
+          </td>
+        {{ end }}
+      </tr>
+      <tr>
+        <td>registered_country_geoname_id</td>
+        <td>integer</td>
+        <td>
+          The registered country is the country in which the ISP has
+          registered the network. This column contains a unique identifier
+          for the network&apos;s registered country as specified
+          by
+                  <a
+            href="https://www.geonames.org/"
+            rel="nofollow noopener noreferrer"
+            target="_blank"
+          >
+            GeoNames
+          </a>
+          . This ID can be
+          used to look up the location information in the Location file.
+          <br/>
+          <br/>
+          <a
+            href="https://support.maxmind.com/hc/en-us/articles/4414762983195-Country-level-and-City-level-Geolocation"
+            rel="nofollow noopener noreferrer"
+            target="_blank"
+          >
+            Learn more about registered countries on our Knowledge Base.
+          </a>
+        </td>
+        {{ if eq $isEnterprise "false" }}
+          <td>
+            <span class="tag tag--checked">Country</span>
+            <span class="tag tag--checked">City</span>
+          </td>
+        {{ end }}
+      </tr>
+      <tr>
+        <td>represented_country_geoname_id</td>
+        <td>integer</td>
+        <td>
+          The represented country is the country which is represented by
+          users of the IP address. For instance, the country represented by
+          an overseas military base. This column contains a unique
+          identifier for the network&apos;s represented country as specified
+          by
+                  <a
+            href="https://www.geonames.org/"
+            rel="nofollow noopener noreferrer"
+            target="_blank"
+          >
+            GeoNames
+          </a>
+          . This ID can be
+          used to look up the location information in the Location file.
+          <br/>
+          <br/>
+          <a
+            href="https://support.maxmind.com/hc/en-us/articles/4414762983195-Country-level-and-City-level-Geolocation"
+            rel="nofollow noopener noreferrer"
+            target="_blank"
+          >
+            Learn more about represented countries on our Knowledge Base.
+          </a>
+        </td>
+        {{ if eq $isEnterprise "false" }}
+          <td>
+            <span class="tag tag--checked">Country</span>
+            <span class="tag tag--checked">City</span>
+          </td>
+        {{ end }}
+      </tr>
+      <tr>
+        <td>is_anonymous_proxy</td>
+        <td>boolean</td>
+        <td>
+          <strong>Deprecated.</strong>
+                  Please see our
+                  <a
+            href="https://www.maxmind.com/en/geoip2-anonymous-ip-database"
+            rel="nofollow noopener noreferrer"
+            target="_blank"
+          >
+            GeoIP2 Anonymous IP database
+          </a>
+                  to determine whether the IP address is used by an anonymizing
+          service.
+        </td>
+        {{ if eq $isEnterprise "false" }}
+          <td>
+            <span class="tag tag--checked">Country</span>
+            <span class="tag tag--checked">City</span>
+          </td>
+        {{ end }}
+      </tr>
+      <tr>
+        <td>is_satellite_provider</td>
+        <td>boolean</td>
+        <td>
+          <strong>Deprecated.</strong>
+        </td>
+        {{ if eq $isEnterprise "false" }}
+          <td>
+            <span class="tag tag--checked">Country</span>
+            <span class="tag tag--checked">City</span>
+          </td>
+        {{ end }}
+      </tr>
+      <tr>
+        <td>postal_code</td>
+        <td>string</td>
+        <td>
+          A postal code close to the user&apos;s location. For the following
+          countries, we return partial postal codes with the number of
+          characters indicated below:
+
+          <Ul>
+            <Li>United States: 5</Li>
+            <Li>Canada: 3</Li>
+            <Li>United Kingdom: 2-4</Li>
+            <Li>Brazil: 5</Li>
+            <Li>Ireland: 3</Li>
+            <Li>
+              Japan: 7 (specified for the first 6. The last digit defaults to
+              1)
+            </Li>
+            <Li>Netherlands: 4</Li>
+            <Li>
+              Portugal: 7 (accurate for the first 4. The last 3 often defaults
+              to
+                          <code>-001</code>
+              )
+            </Li>
+            <Li>Singapore: 2</Li>
+          </Ul>
+        </td>
+        {{ if eq $isEnterprise "false" }}
+          <td>
+            <span class="tag tag--disabled">Country</span>
+            <span class="tag tag--checked">City</span>
+          </td>
+        {{ end }}
+      </tr>
+      <tr>
+        <td>latitude*</td>
+        <td>decimal</td>
+        <td>
+          The approximate
+                  <a
+            href="https://en.wikipedia.org/wiki/World_Geodetic_System"
+            rel="nofollow noopener noreferrer"
+            target="_blank"
+          >
+            WGS84
+          </a>
+                  latitude of the location associated with the network.
+          <br/>
+          <br/>
+          <a
+            href="https://support.maxmind.com/hc/en-us/articles/4414877149467-IP-Geolocation-Data#h_01FRRHZZP6RAYSNZTYE4MQ3MWY"
+            rel="nofollow noopener noreferrer"
+            target="_blank"
+          >
+            Learn about the geolocation area defined by latitude, longitude,
+            and accuracy radius, on our Knowledge Base.
+          </a>
+        </td>
+        {{ if eq $isEnterprise "false" }}
+          <td>
+            <span class="tag tag--disabled">Country</span>
+            <span class="tag tag--checked">City</span>
+          </td>
+        {{ end }}
+      </tr>
+      <tr>
+        <td>longitude*</td>
+        <td>decimal</td>
+        <td>
+          The approximate
+                  <a
+            href="https://en.wikipedia.org/wiki/World_Geodetic_System"
+            rel="nofollow noopener noreferrer"
+            target="_blank"
+          >
+            WGS84
+          </a>
+                  longitude of the location associated with the network.
+          <br/>
+          <br/>
+          <a
+            href="https://support.maxmind.com/hc/en-us/articles/4414877149467-IP-Geolocation-Data#h_01FRRHZZP6RAYSNZTYE4MQ3MWY"
+            rel="nofollow noopener noreferrer"
+            target="_blank"
+          >
+            Learn about the geolocation area defined by latitude, longitude,
+            and accuracy radius, on our Knowledge Base.
+          </a>
+        </td>
+        {{ if eq $isEnterprise "false" }}
+          <td>
+            <span class="tag tag--disabled">Country</span>
+            <span class="tag tag--checked">City</span>
+          </td>
+        {{ end }}
+      </tr>
+      <tr>
+        <td>accuracy_radius</td>
+        <td>integer</td>
+        <td>
+          The radius in kilometers around the specified location where the IP
+          address is likely to be.
+          <br/>
+          <br/>
+          <a
+            href="https://support.maxmind.com/hc/en-us/articles/4414877149467-IP-Geolocation-Data#h_01FRRHZZP6RAYSNZTYE4MQ3MWY"
+            rel="nofollow noopener noreferrer"
+            target="_blank"
+          >
+            Learn about the geolocation area defined by latitude, longitude,
+            and accuracy radius, on our Knowledge Base.
+          </a>
+        </td>
+        {{ if eq $isEnterprise "false" }}
+          <td>
+            <span class="tag tag--disabled">Country</span>
+            <span class="tag tag--checked">City</span>
+          </td>
+        {{ end }}
+      </tr>
+      {{ if eq $isEnterprise "true" }}
+          <tr>
+            <td>isp_id</td>
+            <td>integer</td>
+            <td>
+              A identifier for the ISP. This ID can be used to look up the
+              location information in the ISP file.
+              <br/>
+              <br/>
+              <a
+                href="https://support.maxmind.com/hc/en-us/articles/4408200231067-IP-Network-Data#h_01FN989KHXR7TGXPB5T2DK0Q77"
+                rel="nofollow noopener noreferrer"
+                target="_blank"
+              >
+                Learn more about ISP data on our Knowledge Base.
+              </a>
+            </td>
+          </tr>
+          <tr>
+            <td>domain</td>
+            <td>string</td>
+            <td>
+              The domain associated with the network.
+              <br/>
+              <br/>
+              <a
+                href="https://support.maxmind.com/hc/en-us/articles/4408200231067-IP-Network-Data#h_01FN98A5BNTS0GGWTD2QA4AHXN"
+                rel="nofollow noopener noreferrer"
+                target="_blank"
+              >
+                Learn more about domain name data on our Knowledge Base.
+              </a>
+            </td>
+          </tr>
+          <tr>
+            <td>country_confidence</td>
+            <td>decimal (1-100)</td>
+            <td>
+              The confidence that the country was correctly geolocated.
+              <br/>
+              <br/>
+              <a
+                href="https://support.maxmind.com/hc/en-us/articles/4414877149467-IP-Geolocation-Data#h_01FRRHZ767N9MJJ21K9CW04WWQ"
+                rel="nofollow noopener noreferrer"
+                target="_blank"
+              >
+                Learn more about confidence factors on our Knowledge Base.
+              </a>
+            </td>
+          </tr>
+          <tr>
+            <td>subdivision_confidence</td>
+            <td>decimal (1-100)</td>
+            <td>
+              The confidence that the most specific subdivision was correctly
+              geolocated.
+              <br/>
+              <br/>
+              <a
+                href="https://support.maxmind.com/hc/en-us/articles/4414877149467-IP-Geolocation-Data#h_01FRRHZ767N9MJJ21K9CW04WWQ"
+                rel="nofollow noopener noreferrer"
+                target="_blank"
+              >
+                Learn more about confidence factors on our Knowledge Base.
+              </a>
+            </td>
+          </tr>
+          <tr>
+            <td>city_confidence</td>
+            <td>decimal (1-100)</td>
+            <td>
+              The confidence that the city was correctly geolocated.
+              <br/>
+              <br/>
+              <a
+                href="https://support.maxmind.com/hc/en-us/articles/4414877149467-IP-Geolocation-Data#h_01FRRHZ767N9MJJ21K9CW04WWQ"
+                rel="nofollow noopener noreferrer"
+                target="_blank"
+              >
+                Learn more about confidence factors on our Knowledge Base.
+              </a>
+            </td>
+          </tr>
+          <tr>
+            <td>postal_confidence</td>
+            <td>decimal (1-100)</td>
+            <td>
+              The confidence that the postal code was correctly geolocated.
+              <br/>
+              <br/>
+              <a
+                href="https://support.maxmind.com/hc/en-us/articles/4414877149467-IP-Geolocation-Data#h_01FRRHZ767N9MJJ21K9CW04WWQ"
+                rel="nofollow noopener noreferrer"
+                target="_blank"
+              >
+                Learn more about confidence factors on our Knowledge Base.
+              </a>
+            </td>
+          </tr>
+          <tr>
+            <td>is_legitimate_proxy</td>
+            <td>boolean</td>
+            <td>
+              <strong>Deprecated.</strong>
+                          Use the
+                          <code>user_type</code>
+                          data to identify traffic from businesses.
+                          <a
+                href="https://support.maxmind.com/hc/en-us/articles/4408208479131-User-Context-Data#h_01FN9BTGFQVP41YNPDGM454T2T"
+                rel="nofollow noopener noreferrer"
+                target="_blank"
+              >
+                Learn more about
+                              <code>user_type</code>
+                              data on our knowledge base
+              </a>
+              . To identify anonymous proxies, you can learn
+              more about the GeoIP2 Anonymous IP database in
+                          <a
+                href="/geoip/docs/databases/anonymous-ip"
+                target="_self"
+              >
+                the developer portal
+              </a>
+                          or
+                          <a
+                href="https://www.maxmind.com/en/solutions/geoip2-enterprise-product-suite/anonymous-ip-database"
+                rel="nofollow noopener noreferrer"
+                target="_blank"
+              >
+                our main website
+              </a>
+              .
+            </td>
+          </tr>
+      {{ end }}
+      <tr>
+        <td>is_anycast</td>
+        <td>boolean</td>
+        <td>
+          This is
+                  <code>1</code>
+                  if the network is an
+                  <a
+            href="https://en.wikipedia.org/wiki/Anycast"
+            rel="nofollow noopener noreferrer"
+            target="_blank"
+          >
+            anycast network
+          </a>
+          .
+          {{ if eq $isEnterprise "false" }}
+            <div>
+              This column will be empty in GeoLite2-Country and GeoLite2-City.
+            </div>
+          {{ end }}
+        </td>
+        {{ if eq $isEnterprise "false" }}
+          <td>
+            <span class="tag tag--checked">Country</span>
+            <span class="tag tag--checked">City</span>
+          </td>
+        {{ end }}
+      </tr>
+    </tbody>
+  </table>
+</div>
