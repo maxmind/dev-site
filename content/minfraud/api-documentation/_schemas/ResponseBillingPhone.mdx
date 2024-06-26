@@ -1,0 +1,36 @@
+import responseJson from '../_examples/response';
+
+<MinFraudSchema
+  json={responseJson.billing_phone}
+  jsonPointer="/billing_phone"
+  name="Response | Billing Phone"
+  services={[
+    'insights',
+    'factors',
+  ]}
+>
+  <Property
+    name="country"
+  >
+    A two-character [ISO 3166-1](https://en.wikipedia.org/wiki/ISO_3166-1) country code for the country associated with the billing phone number.
+  </Property>
+
+  <Property
+    name="network_operator"
+  >
+    The name of the original network operator associated with the billing phone number. This field does not reflect phone numbers that have been ported from the original operator to another, nor does it identify [mobile virtual network operators](https://en.wikipedia.org/wiki/Mobile_virtual_network_operator).
+  </Property>
+
+  <Property
+    name="number_type"
+  >
+    One of the following values: `fixed` or `mobile`. Additional values may be added in the future.
+  </Property>
+
+  <Property
+    name="is_voip"
+    type="boolean"
+  >
+    This is `true` if the billing phone number is a Voice over Internet Protocol (VoIP) number allocated by a regulator. It is `false` if the billing phone number is not a VoIP number allocated by a regulator. The key is only present when a valid billing phone number has been provided and we have data for it.
+  </Property>
+</MinFraudSchema>

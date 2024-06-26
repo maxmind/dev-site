@@ -29,6 +29,12 @@ export const insights = {
     latitude: 37.545,
     longitude: -122.421,
   },
+  biling_phone: {
+    country: "US",
+    is_voip: true,
+    network_operator: "Verizon/1",
+    number_type: "fixed",
+  },
   credit_card: {
     brand: 'Visa',
     country: 'US',
@@ -215,6 +221,12 @@ export const insights = {
     is_postal_in_city: true,
     latitude: 37.632,
     longitude: -122.313,
+  },
+  shipping_phone: {
+    country: "CA",
+    is_voip: true,
+    network_operator: "Telus Mobility-SVR/2",
+    number_type: "mobile",
   },
 };
 
