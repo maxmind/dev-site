@@ -31,6 +31,6 @@ import responseJson from '../_examples/response';
     name="is_voip"
     type="boolean"
   >
-    This is `true` if the shipping phone number is a Voice over Internet Protocol (VoIP) number allocated by a regulator. Otherwise, the key is not included in the `shipping_phone` object.
+    This is `true` if the shipping phone number is a Voice over Internet Protocol (VoIP) number allocated by a regulator. It is `false` if the shipping phone number is not a VoIP number allocated by a regulator. The key is only present when a valid shipping phone number has been provided and we have data for it.
   </Property>
 </MinFraudSchema>
