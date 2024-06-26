@@ -40,5 +40,6 @@ export { default as thead } from './Thead';
 export { default as ul } from './Ul';
 export { default as CsvFileExamples } from '../CsvExampleFiles';
 export { default as DatabaseChanges } from '../DatabaseChanges';
+export { default as DatabaseSizes } from '../DatabaseSizes';
 export { default as MmdbFileExamples } from '../MmdbExampleFiles';
 export { default as ZipFileContent } from '../ZipFileContent';
