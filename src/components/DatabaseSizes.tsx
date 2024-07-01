@@ -15,24 +15,24 @@ interface IDatabaseSizes {
 }
 
 const DatabaseSizes: React.FC<IDatabaseSizes> = (props) => {
-  const { databasechanges , daterange } = props;
+  const { databaseChanges , dateRange } = props;
   const databaseChangesItems = databaseChanges.map((databaseChange) => (
     <>
       <Tr>
         <Td>
-          {databasechange.databasename}
+          {databaseChange.databaseName}
         </Td>
         <Td>
-          {databasechange.csvsizerange}
+          {databaseChange.csvSizeRange}
         </Td>
         <Td>
-          {databasechange.mmdbsizerange}
+          {databaseChange.mmdbSizeRange}
         </Td>
         <Td>
-          {databasechange.ipv4range}
+          {databaseChange.ipv4Range}
         </Td>
         <Td>
-          {databasechange.ipv6range}
+          {databaseChange.ipv6Range}
         </Td>
       </Tr>
     </>
@@ -49,7 +49,7 @@ const DatabaseSizes: React.FC<IDatabaseSizes> = (props) => {
       <P>
         From
         {' '}
-        {daterange}
+        {dateRange}
         , the database files varied in file size and number of networks as
         follows:
       </P>
@@ -75,7 +75,7 @@ const DatabaseSizes: React.FC<IDatabaseSizes> = (props) => {
           </Tr>
         </Thead>
         <Tbody>
-          {databasechangesItems}
+          {databaseChangesItems}
         </Tbody>
       </Table>
 
@@ -88,8 +88,8 @@ const DatabaseSizes: React.FC<IDatabaseSizes> = (props) => {
 };
 
 DatabaseSizes.propTypes = {
-  databasechanges: PropTypes.array.isRequired,
-  daterange: PropTypes.string.isRequired,
+  databaseChanges: PropTypes.array.isRequired,
+  dateRange: PropTypes.string.isRequired,
 };
 
 export default DatabaseSizes;
