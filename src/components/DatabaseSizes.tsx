@@ -4,14 +4,14 @@ import * as React from 'react';
 import { li as Li, p as P, table as Table, tbody as Tbody, td as Td, th as Th, thead as Thead, tr as Tr, ul as Ul } from './Mdx';
 
 interface IDatabaseSizes {
-    databasechanges: {
-      csvsizerange: string;
-      databasename: string;
-      ipv4range: string;
-      ipv6range: string;
-      mmdbsizerange: string;
+    databaseChanges: {
+      csvSizeRange: string;
+      databaseName: string;
+      ipv4Range: string;
+      ipv6Range: string;
+      mmdbSizeRange: string;
     }[];
-    daterange: string;
+    dateRange: string;
 }
 
 const DatabaseSizes: React.FC<IDatabaseSizes> = (props) => {
