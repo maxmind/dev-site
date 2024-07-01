@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import * as React from 'react';
 
-import { li as Li, p as P, table as Table, td as Td, th as Th, tr as Tr, ul as Ul } from './Mdx';
+import { li as Li, p as P, table as Table, tbody as Tbody, td as Td, th as Th, thead as Thead, tr as Tr, ul as Ul } from './Mdx';
 
 interface IDatabaseSizes {
     databasechanges: {
@@ -55,24 +55,28 @@ const DatabaseSizes: React.FC<IDatabaseSizes> = (props) => {
       </P>
 
       <Table>
-        <Tr>
-          <Th>
-            Database
-          </Th>
-          <Th>
-            CSV File Size
-          </Th>
-          <Th>
-            MMDB File Size
-          </Th>
-          <Th>
-            IPv4 Networks
-          </Th>
-          <Th>
-            IPv6 Networks
-          </Th>
-        </Tr>
-        {databasechangesItems}
+        <Thead>
+          <Tr>
+            <Th>
+              Database
+            </Th>
+            <Th>
+              CSV File Size
+            </Th>
+            <Th>
+              MMDB File Size
+            </Th>
+            <Th>
+              IPv4 Networks
+            </Th>
+            <Th>
+              IPv6 Networks
+            </Th>
+          </Tr>
+        </Thead>
+        <Tbody>
+          {databasechangesItems}
+        </Tbody>
       </Table>
 
       <P>

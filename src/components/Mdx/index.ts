@@ -33,6 +33,7 @@ export { default as p } from './P';
 export { default as pre } from './Pre';
 export { default as strong } from './Strong';
 export { default as table } from './Table';
+export { default as tbody } from './Tbody';
 export { default as td } from './Td';
 export { default as th } from './Th';
 export { default as tr } from './Tr';
