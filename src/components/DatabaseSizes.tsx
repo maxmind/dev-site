@@ -16,7 +16,7 @@ interface IDatabaseSizes {
 
 const DatabaseSizes: React.FC<IDatabaseSizes> = (props) => {
   const { databasechanges , daterange } = props;
-  const databasechangesItems = databasechanges.map((databasechange) => (
+  const databaseChangesItems = databaseChanges.map((databaseChange) => (
     <>
       <Tr>
         <Td>
