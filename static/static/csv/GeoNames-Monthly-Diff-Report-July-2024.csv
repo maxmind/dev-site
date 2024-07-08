@@ -1,0 +1,48 @@
+diff_in,old_geoname_id,new_geoname_id,old_city_name,new_city_name,old_country_name,new_country_name,old_country_code,new_country_code,old_subdivision_codes,new_subdivision_codes
+city_name,3040051,3040051,Escaldes-Engordany,Les Escaldes,Andorra,Andorra,AD,AD,8,8
+city_name,5955948,5955948,Fort Saskatchewan,Ft Saskatchewan,Canada,Canada,CA,CA,AB,AB
+city_name,8672628,8672628,Sainte-Famille,Sainte-Famille-de-l'Ile-d'Orleans,Canada,Canada,CA,CA,QC,QC
+city_name,8672809,8672809,Sainte-Helene,Sainte-Helene-de-Kamouraska,Canada,Canada,CA,CA,QC,QC
+city_name,181656,181656,Parklands,Upper Parklands Estate,Kenya,Kenya,KE,KE,30,30
+city_name,2552292,2552292,Ad Darwa,Deroua,Morocco,Morocco,MA,MA,"06, BRR","06, BRR"
+city_name,1167507,1167507,Chenab Nagar,Rabwah,Pakistan,Pakistan,PK,PK,PB,PB
+city_name,289888,289888,Ar Rayyan,Al Rayyan,Qatar,Qatar,QA,QA,RA,RA
+city_name,1840379,1840379,Nangen,Namwon,South Korea,South Korea,KR,KR,45,45
+city_name,1587871,1587871,ình Định Province,Bình Định Province,Vietnam,Vietnam,VN,VN,31,31
+geoname_id,3849206,12577576,La Puerta,La Puerta,Argentina,Argentina,AR,AR,K,K
+geoname_id,3434508,3434509,El Palomar,El Palomar,Argentina,Argentina,AR,AR,B,B
+geoname_id,12675206,3428775,San Justo,San Justo,Argentina,Argentina,AR,AR,B,B
+geoname_id,3431280,3846684,Loma Negra,Loma Negra,Argentina,Argentina,AR,AR,B,B
+geoname_id,6318968,6319492,Xinguara,Xinguara,Brazil,Brazil,BR,BR,PA,PA
+geoname_id,3451202,3451203,Rio das Pedras,Rio das Pedras,Brazil,Brazil,BR,BR,SP,SP
+geoname_id,6324219,6317755,Nova Mutum,Nova Mutum,Brazil,Brazil,BR,BR,MT,MT
+geoname_id,3406948,6319300,Autazes,Autazes,Brazil,Brazil,BR,BR,AM,AM
+geoname_id,3445651,3445650,Utinga,Utinga,Brazil,Brazil,BR,BR,BA,BA
+geoname_id,12108275,3455638,Santa Barbara,Santa Barbara,Brazil,Brazil,BR,BR,BA,BA
+geoname_id,3468899,7583518,Brotas,Brotas,Brazil,Brazil,BR,BR,SP,SP
+geoname_id,3456058,6317783,Novo Horizonte,Novo Horizonte,Brazil,Brazil,BR,BR,SC,SC
+geoname_id,12024209,3473663,Botafogo,Botafogo,Brazil,Brazil,BR,BR,RJ,RJ
+geoname_id,6316346,6324249,Alto Alegre,Alto Alegre,Brazil,Brazil,BR,BR,RR,RR
+geoname_id,3471909,3471910,Apucarana,Apucarana,Brazil,Brazil,BR,BR,PR,PR
+geoname_id,6324162,3456277,Nobres,Nobres,Brazil,Brazil,BR,BR,MT,MT
+geoname_id,5887766,5887765,Asquith,Asquith,Canada,Canada,CA,CA,SK,SK
+geoname_id,6072836,6072835,Middle Arm,Middle Arm,Canada,Canada,CA,CA,NL,NL
+geoname_id,5958172,5958170,Freshwater,Freshwater,Canada,Canada,CA,CA,NL,NL
+geoname_id,8422090,8397864,Wulong,Wulong,China,China,CN,CN,CQ,CQ
+geoname_id,3668333,3668332,Santo Tomas,Santo Tomas,Colombia,Colombia,CO,CO,ATL,ATL
+geoname_id,7083389,7406459,Sumberjeruk,Sumberjeruk,Indonesia,Indonesia,ID,ID,JI,JI
+geoname_id,1864913,1864912,Atsuta,Atsuta,Japan,Japan,JP,JP,47,47
+geoname_id,3521078,3818786,Guadalupe Victoria,Guadalupe Victoria,Mexico,Mexico,MX,MX,PUE,PUE
+geoname_id,3824555,3523616,Manlio Fabio Altamirano,Manlio Fabio Altamirano,Mexico,Mexico,MX,MX,VER,VER
+geoname_id,3132852,3132855,Valle,Valle,Norway,Norway,NO,NO,42,42
+geoname_id,1691490,1691487,Rosario,Rosario,Philippines,Philippines,PH,PH,"40, BTG","40, BTG"
+geoname_id,819280,539888,Kudinovo,Kudinovo,Russia,Russia,RU,RU,KLU,KLU
+geoname_id,1497017,1497016,Novokopylovo,Novokopylovo,Russia,Russia,RU,RU,ALT,ALT
+geoname_id,11428151,983038,Letaba,Letaba,South Africa,South Africa,ZA,ZA,LP,LP
+geoname_id,3118307,3118308,Llanera,Llanera,Spain,Spain,ES,ES,"AS, O","AS, O"
+geoname_id,3117970,3117969,Los Olmos,Los Olmos,Spain,Spain,ES,ES,"AR, TE","AR, TE"
+geoname_id,1665148,12908892,New Taipei City,New Taipei City,Taiwan,Taiwan,TW,TW,NWT,NWT
+geoname_id,743166,743165,Kırklareli,Kırklareli,Türkiye,Türkiye,TR,TR,39,39
+subdivision_codes,343137,343137,Awasa,Awasa,Ethiopia,Ethiopia,ET,ET,SN,SI
+subdivision_codes,338998,338998,Dīla,Dīla,Ethiopia,Ethiopia,ET,ET,SN,
+subdivision_codes,3014370,3014370,Guerlédan,Guerlédan,France,France,FR,FR,"BRE, 56","BRE, 22"
