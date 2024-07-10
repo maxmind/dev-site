@@ -7,6 +7,30 @@ title: GeoIP2 Release Notes
 Subscribe to the [GeoIP2 release notes RSS feed](/geoip/release-notes/rss.xml).
 </Alert>
 
+<ReleaseNote date="2024-07-10" title="Increase in the number of English place names with non-ASCII characters in GeoIP® products and services">
+
+You will now see an increase in the number of English place names with accented
+characters in GeoIP products and services. Previously, we were using the
+ASCII-only version of the names.
+
+Non-ASCII characters may contain diacritics, accents and other marks. For
+example:
+
+| Unicode     | ASCII       |
+| ----------- | ----------- |
+| `La Bassée` | `La Bassee` |
+
+You may see English place names with non-ASCII characters in all products and
+services that contain geolocation data, including:
+
+- GeoIP Insights, City Plus, and Country web services
+- GeoIP Enterprise, City, and Country databases
+- minFraud Insights and Factors web services
+- GeoLite City and Country web services
+- GeoLite City and Country databases
+
+</ReleaseNote>
+
 <ReleaseNote date="2024-07-08" title="GeoNames Monthly Diff Report July 2024">
 [GeoNames Monthly Diff Report (July 2024)](/csv-files/GeoNames-Monthly-Diff-Report-July-2024.csv)
 
