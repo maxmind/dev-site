@@ -117,10 +117,20 @@ title = 'MaxMind'
       parent = 'GeoIP'
       weight = 50
     [[menus.geoip]]
-      name = 'TODO: Web Services Documentation'
-      pageRef = '/geoip/privacy-exclusions-api'
+      name = 'Web Services Documentation'
+      pageRef = '/geoip/docs/web-services'
       parent = 'GeoIP'
       weight = 60
+      [[menus.geoip]]
+        name = 'Requests'
+        pageRef = '/geoip/docs/web-services/requests'
+        parent = 'Web Services Documentation'
+        weight = 10
+      [[menus.geoip]]
+        name = 'Responses'
+        pageRef = '/geoip/docs/web-services/responses'
+        parent = 'Web Services Documentation'
+        weight = 20
     [[menus.geoip]]
       name = 'Database Documentation'
       pageRef = '/geoip/docs/databases'
