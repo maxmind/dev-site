@@ -3,10 +3,6 @@ draft: false
 title: GeoIP2 and GeoLite2 Web Services Documentation
 ---
 
-import { FaDownload, FaUpload } from 'react-icons/fa';
-
-import CurlExamples from '../_curl-examples.mdx';
-
 ## Overview
 
 To learn more about the GeoIP2 web services and to purchase credits, please view
@@ -25,111 +21,101 @@ and the Response Body section below.
 
 ### Official Client APIs
 
-<table>
-  <thead>
-    <tr>
-      <th>Language or Framework</th>
-      <th>Package Repository</th>
-      <th>Documentation</th>
-      <th>Version Control</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>.NET (C#)</td>
-      <td>[NuGet](https://www.nuget.org/packages/MaxMind.GeoIP2/)</td>
-      <td>[GitHub Pages](https://maxmind.github.io/GeoIP2-dotnet/)</td>
-      <td>[GitHub](https://github.com/maxmind/GeoIP2-dotnet) </td>
-    </tr>
-    <tr>
-      <td>Java</td>
-      <td>[Maven Central](https://search.maven.org/#search%7Cga%7C1%7Cg%3A%22com.maxmind.geoip2%22%20AND%20a%3A%22geoip2%22)</td>
-      <td>[GitHub Pages](https://maxmind.github.io/GeoIP2-java/)</td>
-      <td>[GitHub](https://github.com/maxmind/GeoIP2-java)</td>
-    </tr>
-    <tr>
-      <td>JavaScript (browser)</td>
-      <td></td>
-      <td>[API Docs](/geoip/geolocate-an-ip/client-side-javascript)</td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>Node.js </td>
-      <td>[NPM](https://npmjs.com/package/@maxmind/geoip2-node) </td>
-      <td>[GitHub Pages](https://maxmind.github.io/GeoIP2-node/)</td>
-      <td>[GitHub](https://github.com/maxmind/GeoIP2-node)</td>
-    </tr>
-    <tr>
-      <td>Perl (deprecated)</td>
-      <td>[CPAN](https://metacpan.org/release/GeoIP2)</td>
-      <td>[MetaCPAN](https://metacpan.org/release/GeoIP2)</td>
-      <td>[GitHub](https://github.com/maxmind/GeoIP2-perl)</td>
-    </tr>
-    <tr>
-      <td>PHP</td>
-      <td>[Packagist](https://packagist.org/packages/geoip2/geoip2)</td>
-      <td>[GitHub Pages](https://maxmind.github.io/GeoIP2-php/)</td>
-      <td>[GitHub](https://github.com/maxmind/GeoIP2-php)</td>
-    </tr>
-    <tr>
-      <td>Python</td>
-      <td>[PyPI](https://pypi.python.org/pypi/geoip2)</td>
-      <td>[Read the Docs](https://geoip2.readthedocs.org/en/latest/)</td>
-      <td>[GitHub](https://github.com/maxmind/GeoIP2-python)</td>
-    </tr>
-    <tr>
-      <td>Ruby</td>
-      <td>[RubyGems](https://rubygems.org/gems/maxmind-geoip2)</td>
-      <td>[RubyDoc](https://www.rubydoc.info/gems/maxmind-geoip2)</td>
-      <td>[GitHub](https://github.com/maxmind/GeoIP2-ruby)</td>
-    </tr>
-  </tbody>
-</table>
+
+{{< rawhtml >}}
+<div class="table">
+  <table>
+    <thead>
+      <tr>
+        <th>Language or Framework</th>
+        <th>Package Repository</th>
+        <th>Documentation</th>
+        <th>Version Control</th>
+      </tr>
+    </thead>
+    <tbody>
+     <tr>
+        <td>.NET (C#)</td>
+        <td><a href="https://www.nuget.org/packages/MaxMind.GeoIP2/">NuGet</a></td>
+        <td><a href="https://maxmind.github.io/GeoIP2-dotnet/">GitHub Pages</a></td>
+        <td><a href="https://github.com/maxmind/GeoIP2-dotnet">GitHub</a> </td>
+      </tr>
+      <tr>
+        <td>Java</td>
+        <td><a href="https://search.maven.org/#search%7Cga%7C1%7Cg%3A%22com.maxmind.geoip2%22%20AND%20a%3A%22geoip2%22">Maven Central</a></td>
+        <td><a href="https://maxmind.github.io/GeoIP2-java/">GitHub Pages</a></td>
+        <td><a href="https://github.com/maxmind/GeoIP2-java">GitHub</a></td>
+      </tr>
+      <tr>
+        <td>JavaScript (browser)</td>
+        <td></td>
+        <td><a href="/geoip/geolocate-an-ip/client-side-javascript">API Docs</a></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>Node.js </td>
+        <td><a href="https://npmjs.com/package/@maxmind/geoip2-node">NPM</a> </td>
+        <td><a href="https://maxmind.github.io/GeoIP2-node/">GitHub Pages</a></td>
+        <td><a href="https://github.com/maxmind/GeoIP2-node">GitHub</a></td>
+      </tr>
+      <tr>
+        <td>Perl (deprecated)</td>
+        <td><a href="https://metacpan.org/release/GeoIP2">CPAN</a></td>
+        <td><a href="https://metacpan.org/release/GeoIP2">MetaCPAN</a></td>
+        <td><a href="https://github.com/maxmind/GeoIP2-perl">GitHub</a></td>
+      </tr>
+      <tr>
+        <td>PHP</td>
+        <td><a href="https://packagist.org/packages/geoip2/geoip2">Packagist</a></td>
+        <td><a href="https://maxmind.github.io/GeoIP2-php/">GitHub Pages</a></td>
+        <td><a href="https://github.com/maxmind/GeoIP2-php">GitHub</a></td>
+      </tr>
+      <tr>
+        <td>Python</td>
+        <td><a href="https://pypi.python.org/pypi/geoip2">PyPI</a></td>
+        <td><a href="https://geoip2.readthedocs.org/en/latest/">Read the Docs</a></td>
+        <td><a href="https://github.com/maxmind/GeoIP2-python">GitHub</a></td>
+      </tr>
+      <tr>
+        <td>Ruby</td>
+        <td><a href="https://rubygems.org/gems/maxmind-geoip2">RubyGems</a></td>
+        <td><a href="https://www.rubydoc.info/gems/maxmind-geoip2">RubyDoc</a></td>
+        <td><a href="https://github.com/maxmind/GeoIP2-ruby">GitHub</a></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+{{</ rawhtml >}}
 
 ### Third-Party Client APIs
 
-<Alert type="warning">
+{{< alert warning >}}
   **_Use at your own risk._** MaxMind does not offer support for these APIs and
   has not reviewed the code.
-</Alert>
+{{</ alert >}}
 
-<table>
-  <thead>
-    <tr>
-      <th>Language or Framework</th>
-      <th>Package Repository</th>
-      <th>Documentation</th>
-      <th>Version Control</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Go</td>
-      <td></td>
-      <td>[GoDoc](https://godoc.org/github.com/savaki/geoip2)</td>
-      <td>[GitHub](https://github.com/savaki/geoip2)</td>
-    </tr>
-  </tbody>
-</table>
-
-## Request and Response API References
-
-<LinkGroupContainer heading="References">
-  <LinkGroup>
-    <LinkGroupCard
-      heading="Requests"
-      icon={FaDownload}
-      to="/geoip/docs/web-services/requests"
-    />
-
-    <LinkGroupCard
-      heading="Responses"
-      icon={FaUpload}
-      to="/geoip/docs/web-services/responses"
-    />
-
-  </LinkGroup>
-</LinkGroupContainer>
+{{< rawhtml >}}
+<div class="table">
+  <table>
+    <thead>
+      <tr>
+        <th>Language or Framework</th>
+        <th>Package Repository</th>
+        <th>Documentation</th>
+        <th>Version Control</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Go</td>
+        <td></td>
+        <td><a href="https://godoc.org/github.com/savaki/geoip2">GoDoc</a></td>
+        <td><a href="https://github.com/savaki/geoip2">GitHub</a></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+{{</ rawhtml >}}
 
 ## Timeout Errors
 
@@ -160,18 +146,17 @@ help us investigate an issue:
 
 ## Command Line (curl) Examples
 
-<CurlExamples />
+{{< snippet "snippets/geoip-curl-examples.md" >}}
 
 ## IP Geolocation Accuracy
 
-<Alert type="warning">
+{{< alert warning >}}
   **IP Geolocation Usage**
 
 IP geolocation is inherently imprecise. Locations are often near the center of
 the population. Any location provided by a GeoIP database should not be used to
 identify a particular address or household.
-
-</Alert>
+{{</ alert >}}
 
 Use the Accuracy Radius as an indication of geolocation accuracy for the
 latitude and longitude coordinates we return for an IP address. The actual
