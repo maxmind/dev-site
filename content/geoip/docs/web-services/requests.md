@@ -11,14 +11,14 @@ your
 The password is your
 [MaxMind license key](https://www.maxmind.com/en/accounts/current/license-key).
 
-<Alert type="warning">
+{{< alert warning >}}
   You must be approved for a [GeoIP2 web service
   trial](https://www.maxmind.com/en/request-service-trial?service_geoip=1),
   [purchase service credit](https://www.maxmind.com/en/geoip2-precision-insights)
   for use with our web services, or have a [GeoLite2
   account](https://www.maxmind.com/en/geolite2/signup), in order to receive an
   account ID and license key.
-</Alert>
+{{</ alert >}}
 
 We use
 [basic HTTP authentication](https://en.wikipedia.org/wiki/Basic_access_authentication).
@@ -48,21 +48,25 @@ system making the query is behind a NAT.
 
 ### GeoIP2 Endpoints
 
+{{< table >}}
 | Service   | HTTP Method | Endpoint                                                     |
 | --------- | ----------- | ------------------------------------------------------------ |
 | Country   | `GET`       | `https://geoip.maxmind.com/geoip/v2.1/country/{ip_address}`  |
 | City Plus | `GET`       | `https://geoip.maxmind.com/geoip/v2.1/city/{ip_address}`     |
 | Insights  | `GET`       | `https://geoip.maxmind.com/geoip/v2.1/insights/{ip_address}` |
+{{</ table >}}
 
 The `geoip.maxmind.com` hostname automatically picks the data center
 geographically closest to you.
 
 ### GeoLite2 Endpoints
 
+{{< table >}}
 | Service | HTTP Method | Endpoint                                               |
 | ------- | ----------- | ------------------------------------------------------ |
 | Country | `GET`       | `https://geolite.info/geoip/v2.1/country/{ip_address}` |
 | City    | `GET`       | `https://geolite.info/geoip/v2.1/city/{ip_address}`    |
+{{</ table >}}
 
 The `geolite.info` hostname automatically picks the data center geographically
 closest to you.
