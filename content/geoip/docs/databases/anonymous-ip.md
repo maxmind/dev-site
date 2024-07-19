@@ -69,7 +69,7 @@ These are named `GeoIP2-Anonymous-IP-Blocks-IPv4.csv` and
           <td>
             1 if the IP address belongs to any sort of anonymous network. Blank if not.
             <br />
-            <a href="https://support.maxmind.com/hc/en-us/articles/4408208507163-Anonymizer-and-Proxy-Data#h_01FN9BBGV3ZG3TC0357Q9Y07C6" target="_blank" rel="nofollow noopener noreferrer">Learn more about anonymizer and proxy detection on our Knowledge Base.</a>
+            <a href="https://support.maxmind.com/hc/en-us/articles/4408208507163-Anonymizer-and-Proxy-Data#h_01FN9BBGV3ZG3TC0357Q9Y07C6">Learn more about anonymizer and proxy detection on our Knowledge Base.</a>
           </td>
       </tr>
 
@@ -83,7 +83,7 @@ These are named `GeoIP2-Anonymous-IP-Blocks-IPv4.csv` and
             them, we will likely only flag their IP ranges using the
             <code>is_hosting_provider</code> flag.
             <br />
-            <a href="https://support.maxmind.com/hc/en-us/articles/4408208507163#h_01G1EDVJKNQY02XXFRM31N7SS2" target="_blank" rel="nofollow noopener noreferrer">Learn more about VPNs on our Knowledge Base.</a>
+            <a href="https://support.maxmind.com/hc/en-us/articles/4408208507163#h_01G1EDVJKNQY02XXFRM31N7SS2">Learn more about VPNs on our Knowledge Base.</a>
           </td>
       </tr>
 
@@ -94,7 +94,7 @@ These are named `GeoIP2-Anonymous-IP-Blocks-IPv4.csv` and
             1 if the IP address belongs to a hosting or VPN provider (see
             description of <code>is_anonymous_vpn</code> flag). Blank if not.
             <br />
-            <a href="https://support.maxmind.com/hc/en-us/articles/4408208507163#h_01G1EDVXR9RQFMCY6SAWJM4YH0" target="_blank" rel="nofollow noopener noreferrer">Learn more about hosting providers used for anonymizing on our Knowledge Base.</a>
+            <a href="https://support.maxmind.com/hc/en-us/articles/4408208507163#h_01G1EDVXR9RQFMCY6SAWJM4YH0">Learn more about hosting providers used for anonymizing on our Knowledge Base.</a>
           </td>
       </tr>
 
@@ -104,7 +104,7 @@ These are named `GeoIP2-Anonymous-IP-Blocks-IPv4.csv` and
           <td>
             1 if the IP address belongs to a public proxy. Blank if not.
             <br />
-            <a href="https://support.maxmind.com/hc/en-us/articles/4408208507163#h_01G1EDW5RZQCD4X4A76908DJ6Z" target="_blank" rel="nofollow noopener noreferrer">Learn more about public proxies on our Knowledge Base.</a>
+            <a href="https://support.maxmind.com/hc/en-us/articles/4408208507163#h_01G1EDW5RZQCD4X4A76908DJ6Z">Learn more about public proxies on our Knowledge Base.</a>
           </td>
       </tr>
 
@@ -114,7 +114,7 @@ These are named `GeoIP2-Anonymous-IP-Blocks-IPv4.csv` and
           <td>
             1 if the IP address is a Tor exit node. Blank if not.
             <br />
-            <a href="https://support.maxmind.com/hc/en-us/articles/4408208507163#h_01G1EDWR1VQR8A0NB3R8WXT8QF" target="_blank" rel="nofollow noopener noreferrer">Learn more about Tor exit nodes on our Knowledge Base.</a>
+            <a href="https://support.maxmind.com/hc/en-us/articles/4408208507163#h_01G1EDWR1VQR8A0NB3R8WXT8QF">Learn more about Tor exit nodes on our Knowledge Base.</a>
           </td>
       </tr>
 
@@ -125,7 +125,7 @@ These are named `GeoIP2-Anonymous-IP-Blocks-IPv4.csv` and
             1 if the IP address is on a suspected anonymizing network and belongs
             to a residential ISP. Blank if not.
             <br />
-            <a href="https://support.maxmind.com/hc/en-us/articles/4408208507163#h_01G1EDWEW3HAJT97P8EAZFQZMZ" target="_blank" rel="nofollow noopener noreferrer">Learn more about residential proxies on our Knowledge Base.</a>
+            <a href="https://support.maxmind.com/hc/en-us/articles/4408208507163#h_01G1EDWEW3HAJT97P8EAZFQZMZ">Learn more about residential proxies on our Knowledge Base.</a>
           </td>
       </tr>
 
