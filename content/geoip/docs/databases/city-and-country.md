@@ -128,19 +128,17 @@ blocks files have the same columns as the City database.
 
 ### CSV Example Files
 
-We maintain examples of the CSV files as they would be downloaded from the account portal:
-
+{{< csv-example-files >}}
 * [GeoIP2-City-CSV\_Example.zip](/static/GeoIP2-City-CSV_Example.zip)
 * [GeoIP2-Country-CSV\_Example.zip](/static/GeoIP2-Country-CSV_Example.zip)
+{{</ csv-example-files >}}
 
 ### MMDB Example Files
 
-We maintain test MMDB files on GitHub:
-
+{{< mmdb-example-files >}}
 * [GeoIP2-City-Test.mmdb](https://github.com/maxmind/MaxMind-DB/blob/main/test-data/GeoIP2-City-Test.mmdb)
 * [GeoIP2-Country-Test.mmdb](https://github.com/maxmind/MaxMind-DB/blob/main/test-data/GeoIP2-Country-Test.mmdb)
-
-Alternatively, you can [view all of our MMDB test data on GitHub](https://github.com/maxmind/MaxMind-DB/tree/main/test-data).
+{{</ mmdb-example-files >}}
 
 ## Database Sizes
 
