@@ -237,15 +237,16 @@ name would be "GeoIP2-City-Locations-en.csv".
 
 ### CSV Example Files
 
-We maintain examples of the CSV files as they would be downloaded from the account portal:
-
+{{< csv-example-files >}}
 * [GeoIP2-Enterprise-CSV\_Example.zip](/static/GeoIP2-Enterprise-CSV_Example.zip)
+{{</ csv-example-files >}}
 
 ### MMDB Example Files
 
-We maintain test MMDB files on GitHub:
-
+{{< mmdb-example-files >}}
 * [GeoIP2-Enterprise-Test.mmdb](https://github.com/maxmind/MaxMind-DB/blob/main/test-data/GeoIP2-Enterprise-Test.mmdb)
+{{</ mmdb-example-files >}}
+
 
 ## Database Changes
 
