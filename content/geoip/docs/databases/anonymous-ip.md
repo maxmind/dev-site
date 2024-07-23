@@ -154,6 +154,18 @@ These are named `GeoIP2-Anonymous-IP-Blocks-IPv4.csv` and
 * [GeoIP2-Anonymous-IP-Test.mmdb](https://github.com/maxmind/MaxMind-DB/blob/main/test-data/GeoIP2-Anonymous-IP-Test.mmdb)
 {{</ mmdb-example-files >}}
 
+## Database Sizes
+
+{{< db-sizes-table dateRange="March to June 2024" >}}
+  {{< db-sizes-row
+    databaseName="GeoIP Anonymous IP"
+    csvSizeRange="4.31 MB - 4.75 MB"
+    mmdbSizeRange="2.69 MB - 2.87 MB"
+    ipv4Range="155,000 - 166,000"
+    ipv6Range="19,000 - 26,000"
+  >}}
+{{</ db-sizes-table >}}
+
 ## Database Changes
 
 {{< database-changes product="Anonymous IP" >}}

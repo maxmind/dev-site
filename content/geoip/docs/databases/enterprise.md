@@ -252,6 +252,18 @@ name would be "GeoIP2-City-Locations-en.csv".
 
 {{< database-changes product="Enterprise" >}}
 
+## Database Sizes
+
+{{< db-sizes-table dateRange="March to June 2024">}}
+  {{< db-sizes-row
+    databaseName="GeoIP Enterprise"
+    csvSizeRange="975 MB - 1.06 GB"
+    mmdbSizeRange="341 MB - 350 MB"
+    ipv4Range="8,064,000 - 8,733,000"
+    ipv6Range="2,933,000 - 3,151,000"
+  >}}
+{{</ db-sizes-table>}}
+
 ## APIs and Third-Party Integrations
 
 {{< snippet "snippets/geoip-db-apis.md" >}}
