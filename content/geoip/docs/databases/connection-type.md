@@ -88,17 +88,15 @@ These are named `GeoIP2-Connection-Type-Blocks-IPv4.csv` and
 
 ### CSV Example Files
 
-We maintain examples of the CSV files as they would be downloaded from the account portal:
-
+{{< csv-example-files >}}
 * [GeoIP2-Connection-Type-CSV\_Example.zip](/static/GeoIP2-Connection-Type-CSV_Example.zip)
+{{</ csv-example-files >}}
 
 ### MMDB Example Files
 
-We maintain test MMDB files on GitHub:
-
+{{< mmdb-example-files >}}
 * [GeoIP2-Connection-Type-Test.mmdb](https://github.com/maxmind/MaxMind-DB/blob/main/test-data/GeoIP2-Connection-Type-Test.mmdb)
-
-Alternatively, you can [view all of our MMDB test data on GitHub](https://github.com/maxmind/MaxMind-DB/tree/main/test-data).
+{{</ mmdb-example-files >}}
 
 ## Database Sizes
 
