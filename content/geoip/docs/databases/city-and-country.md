@@ -142,37 +142,36 @@ blocks files have the same columns as the City database.
 
 ## Database Sizes
 
-<DatabaseSizes dateRange = 'March to June 2024' databaseChanges ={[
-    {
-       databaseName: 'GeoIP City',
-       csvSizeRange: '577 MB - 606 MB',
-       mmdbSizeRange: '108 MB - 110 MB',
-       ipv4Range: '657,000 - 682,000',
-       ipv6Range: '231,000 - 250,000'
-    },
-    {
-       databaseName: 'GeoIP Country',
-       csvSizeRange: '29.2 MB - 30.8 MB',
-       mmdbSizeRange: '6.29 MB - 6.53 MB',
-       ipv4Range: '480,000 - 502,000',
-       ipv6Range: '265,000 - 280,000'
-    },
-    {
-       databaseName: 'GeoLite City',
-       csvSizeRange: '226.2 MB - 292.7 MB',
-       mmdbSizeRange: '50 MB - 63.8 MB',
-       ipv4Range: '236,000 - 334,000',
-       ipv6Range: '114,000 - 123,000'
-    },
-    {
-       databaseName: 'GeoLite Country',
-       csvSizeRange: '30 MB - 31.7 MB',
-       mmdbSizeRange: '6.38 MB - 6.64 MB',
-       ipv4Range: '480,000 - 490,000',
-       ipv6Range: '280,000 - 308,000'
-    }
-  ]}
-/>
+{{< db-sizes-table dateRange="March to June 2024">}}
+  {{< db-sizes-row
+    databaseName="GeoIP City"
+    csvSizeRange="577 MB - 606 MB"
+    mmdbSizeRange="108 MB - 110 MB"
+    ipv4Range="657,000 - 682,000"
+    ipv6Range="231,000 - 250,000"
+  >}}
+  {{< db-sizes-row
+    databaseName="GeoIP Country"
+    csvSizeRange="29.2 MB - 30.8 MB"
+    mmdbSizeRange="6.29 MB - 6.53 MB"
+    ipv4Range="480,000 - 502,000"
+    ipv6Range="265,000 - 280,000"
+  >}}
+  {{< db-sizes-row
+    databaseName="GeoLite City"
+    csvSizeRange="226.2 MB - 292.7 MB"
+    mmdbSizeRange="50 MB - 63.8 MB"
+    ipv4Range="236,000 - 334,000"
+    ipv6Range="114,000 - 123,000"
+  >}}
+  {{< db-sizes-row
+    databaseName="GeoLite Country"
+    csvSizeRange="30 MB - 31.7 MB"
+    mmdbSizeRange="6.38 MB - 6.64 MB"
+    ipv4Range="480,000 - 490,000"
+    ipv6Range="280,000 - 308,000"
+  >}}
+{{</ db-sizes-table>}}
 
 ## Database Changes
 

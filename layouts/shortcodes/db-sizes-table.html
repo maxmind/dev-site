@@ -1,0 +1,33 @@
+<p>
+  MaxMind databases can vary in size from release to release. If you are
+  working with file size limitations that are concerning, you should build
+  your integrations to fail gracefully in event of a significant size
+  change.
+</p>
+
+<p>
+  From {{ .Get "dateRange" }}, the database files varied in file size and number of networks as
+  follows:
+</p>
+
+<div class="table">
+  <table>
+    <thead>
+      <tr>
+        <th>Database</th>
+        <th>CSV File Size</th>
+        <th>MMDB File Size</th>
+        <th>IPv4 Networks</th>
+        <th>IPv6 Networks</th>
+      </tr>
+    </thead>
+    <tbody>
+      {{.Inner}}
+    </tbody>
+  </table>
+</div>
+
+<p>
+  The listed file sizes are for unpacked databases. Databases are
+  downloaded in a compressed format.
+</p>
