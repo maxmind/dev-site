@@ -3,26 +3,19 @@ draft: false
 title: GeoIP2 Domain Databases
 ---
 
-import BinaryDatabases from './_binary-databases.mdx';
-import ConversionUtility from './_conversion-utility.mdx';
-import CsvDatabasesIntro from './_csv-databases-intro.mdx';
-import DataPrivacyWarning from './_data-privacy-warning.mdx';
-import ExampleFiles from './_example-files.mdx';
-import FileFormat from './_file-format.mdx';
-import APIs from './_apis.mdx';
-
 Look up the second level domain names associated with IPv4 and IPv6 addresses.
 
 To learn more about the GeoIP2 Domain database, including terms and pricing,
 please
 [visit the GeoIP2 Domain Database page](https://www.maxmind.com/en/geoip2-domain-name-database).
 
-<DataPrivacyWarning />
+{{< snippet "snippets/data-privacy-warning.md" >}}
 
 ## Binary Database
 
-<BinaryDatabases />
+{{< snippet "snippets/binary-databases.md" >}}
 
+{{< table >}}
 | Language or Framework | Documentation                                                                      | Example                                                                    |
 | --------------------- | ---------------------------------------------------------------------------------- | -------------------------------------------------------------------------- |
 | .NET (C#)             | [GitHub - Database Usage](https://github.com/maxmind/GeoIP2-dotnet#database-usage) | [Domain Example](https://github.com/maxmind/GeoIP2-dotnet#domain-database) |
@@ -31,14 +24,15 @@ please
 | PHP                   | [GitHub - Database Reader](https://github.com/maxmind/GeoIP2-php#database-reader)  | [Domain Example](https://github.com/maxmind/GeoIP2-php#domain-example)     |
 | Python                | [GitHub - Database Usage](https://github.com/maxmind/GeoIP2-python#database-usage) | [Domain Example](https://github.com/maxmind/GeoIP2-python#domain-database) |
 | Ruby                  | [GitHub - Database Reader](https://github.com/maxmind/GeoIP2-ruby#database-reader) | [Domain Example](https://github.com/maxmind/GeoIP2-ruby#domain-example)    |
+{{</ table >}}
 
 ## CSV Database
 
-<CsvDatabasesIntro />
+{{< snippet "snippets/csv-databases-intro.md" >}}
 
-<ZipFileContent product-name="GeoIP2-Domain" />
+{{< zip-file-content product-name="GeoIP2-Domain" >}}
 
-<FileFormat />
+{{< snippet "snippets/file-format.md" >}}
 
 ### Blocks Files
 
@@ -46,6 +40,8 @@ There are two CSV files for network blocks, one each for IPv4 and IPv6 blocks.
 These are named `GeoIP2-Domain-Blocks-IPv4.csv` and
 `GeoIP2-Domain-Blocks-IPv6.csv` respectively.
 
+{{< rawhtml >}}
+<div class="table">
 <table>
   <tbody>
     <tr>
@@ -71,59 +67,52 @@ These are named `GeoIP2-Domain-Blocks-IPv4.csv` and
         <td>string</td>
         <td>
           The domain associated with the IP address.
-
-          \* <a href="https://support.maxmind.com/hc/en-us/articles/4408200231067-IP-Network-Data#h_01FN98A5BNTS0GGWTD2QA4AHXN" target="_blank" rel="nofollow noopener noreferrer">Learn more about domain name data on our Knowledge Base.</a>
+          <br />
+          <a href="https://support.maxmind.com/hc/en-us/articles/4408200231067-IP-Network-Data#h_01FN98A5BNTS0GGWTD2QA4AHXN">Learn more about domain name data on our Knowledge Base.</a>
         </td>
     </tr>
 
   </tbody>
 </table>
+</div>
+{{</ rawhtml >}}
 
 ### Conversion Utility
 
-<ConversionUtility />
+{{< snippet "snippets/conversion-utility.md" >}}
 
 ## Example Files
 
-<ExampleFiles />
+{{< snippet "snippets/example-files.md" >}}
 
 ### CSV Example Files
 
-<CsvFileExamples files={[
-    {
-       filename: 'GeoIP2-Domain-CSV_Example.zip',
-       link: '/static/GeoIP2-Domain-CSV_Example.zip'
-    }
-  ]}
-/>
+{{< csv-example-files >}}
+* [GeoIP2-Domain-CSV\_Example.zip](/static/GeoIP2-Domain-Example.zip)
+{{</ csv-example-files >}}
 
 ### MMDB Example Files
 
-<MmdbFileExamples files={[
-    {
-       filename: 'GeoIP2-Domain-Test.mmdb',
-       link: 'https://github.com/maxmind/MaxMind-DB/blob/main/test-data/GeoIP2-Domain-Test.mmdb'
-    }
-  ]}
-/>
+{{< mmdb-example-files >}}
+* [GeoIP2-Domain-Test.mmdb](https://github.com/maxmind/MaxMind-DB/blob/main/test-data/GeoIP2-Domain-Test.mmdb)
+{{</ mmdb-example-files >}}
 
 ## Database Sizes
 
-<DatabaseSizes dateRange = 'March to June 2024' databaseChanges ={[
-    {
-       databaseName: 'GeoIP Domain',
-       csvSizeRange: '17.44 MB - 17.87 MB',
-       mmdbSizeRange: '9.96 MB - 10.3 MB',
-       ipv4Range: '502,000 - 508,000',
-       ipv6Range: '97,000 - 107,000'
-    }
-  ]}
-/>
+{{< db-sizes-table dateRange="March to June 2024">}}
+  {{< db-sizes-row
+    databaseName="GeoIP Domain"
+    csvSizeRange="17.44 MB - 17.87 MB"
+    mmdbSizeRange="9.96 MB - 10.3 MB"
+    ipv4Range="502,000 - 508,000"
+    ipv6Range="97,000 - 107,000"
+  >}}
+{{</ db-sizes-table>}}
 
 ## Database Changes
 
-<DatabaseChanges product="Domain" />
+{{< database-changes product="Domain" >}}
 
 ## APIs and Third-Party Integrations
 
-<APIs />
+{{< snippet "snippets/geoip-db-apis.md" >}}

@@ -116,6 +116,61 @@ title = 'MaxMind'
       pageRef = '/geoip/privacy-exclusions-api'
       parent = 'GeoIP'
       weight = 50
+    [[menus.geoip]]
+      name = 'Web Services Documentation'
+      pageRef = '/geoip/docs/web-services'
+      parent = 'GeoIP'
+      weight = 60
+      [[menus.geoip]]
+        name = 'Requests'
+        pageRef = '/geoip/docs/web-services/requests'
+        parent = 'Web Services Documentation'
+        weight = 10
+      [[menus.geoip]]
+        name = 'Responses'
+        pageRef = '/geoip/docs/web-services/responses'
+        parent = 'Web Services Documentation'
+        weight = 20
+    [[menus.geoip]]
+      name = 'Database Documentation'
+      pageRef = '/geoip/docs/databases'
+      parent = 'GeoIP'
+      weight = 70
+      [[menus.geoip]]
+        name = 'City and Country'
+        pageRef = '/geoip/docs/databases/city-and-country'
+        parent = 'Database Documentation'
+        weight = 10
+      [[menus.geoip]]
+        name = 'Enterprise'
+        pageRef = '/geoip/docs/databases/enterprise'
+        parent = 'Database Documentation'
+        weight = 20
+      [[menus.geoip]]
+        name = 'Anonymous IP'
+        pageRef = '/geoip/docs/databases/anonymous-ip'
+        parent = 'Database Documentation'
+        weight = 30
+      [[menus.geoip]]
+        name = 'ISP'
+        pageRef = '/geoip/docs/databases/isp'
+        parent = 'Database Documentation'
+        weight = 40
+      [[menus.geoip]]
+        name = 'Connection Type'
+        pageRef = '/geoip/docs/databases/connection-type'
+        parent = 'Database Documentation'
+        weight = 50
+      [[menus.geoip]]
+        name = 'Domain'
+        pageRef = '/geoip/docs/databases/domain'
+        parent = 'Database Documentation'
+        weight = 60
+      [[menus.geoip]]
+        name = 'ASN'
+        pageRef = '/geoip/docs/databases/asn'
+        parent = 'Database Documentation'
+        weight = 70
 
   [[menus.general]]
     name = 'MaxMind Server IP Addresses'

@@ -3,26 +3,19 @@ draft: false
 title: GeoIP2 ISP Databases
 ---
 
-import BinaryDatabases from './_binary-databases.mdx';
-import ConversionUtility from './_conversion-utility.mdx';
-import CsvDatabasesIntro from './_csv-databases-intro.mdx';
-import DataPrivacyWarning from './_data-privacy-warning.mdx';
-import ExampleFiles from './_example-files.mdx';
-import FileFormat from './_file-format.mdx';
-import APIs from './_apis.mdx';
-
 Determine the Internet Service Provider, organization name, and autonomous
 system organization and number associated with an IP address.
 
 To learn more about the GeoIP2 ISP database, including terms and pricing, please
 [visit the GeoIP2 ISP Database page](https://www.maxmind.com/en/geoip2-isp-database).
 
-<DataPrivacyWarning />
+{{< snippet "snippets/data-privacy-warning.md" >}}
 
 ## Binary Database
 
-<BinaryDatabases />
+{{< snippet "snippets/binary-databases.md" >}}
 
+{{< table >}}
 | Language or Framework | Documentation                                                                      | Example                                                              |
 | --------------------- | ---------------------------------------------------------------------------------- | -------------------------------------------------------------------- |
 | .NET (C#)             | [GitHub - Database Usage](https://github.com/maxmind/GeoIP2-dotnet#database-usage) | [ISP Example](https://github.com/maxmind/GeoIP2-dotnet#isp-database) |
@@ -31,14 +24,15 @@ To learn more about the GeoIP2 ISP database, including terms and pricing, please
 | PHP                   | [GitHub - Database Reader](https://github.com/maxmind/GeoIP2-php#database-reader)  | [ISP Example](https://github.com/maxmind/GeoIP2-php#isp-example)     |
 | Python                | [GitHub - Database Usage](https://github.com/maxmind/GeoIP2-python#database-usage) | [ISP Example](https://github.com/maxmind/GeoIP2-python#isp-database) |
 | Ruby                  | [GitHub - Database Reader](https://github.com/maxmind/GeoIP2-ruby#database-reader) | [ISP Example](https://github.com/maxmind/GeoIP2-ruby#isp-example)    |
+{{</ table >}}
 
 ## CSV Database
 
-<CsvDatabasesIntro />
+{{< snippet "snippets/csv-databases-intro.md" >}}
 
-<ZipFileContent product-name="GeoIP2-ISP" />
+{{< zip-file-content product-name="GeoIP2-ISP" >}}
 
-<FileFormat />
+{{< snippet "snippets/file-format.md" >}}
 
 ### Blocks Files
 
@@ -46,6 +40,8 @@ There are two CSV files for network blocks, one each for IPv4 and IPv6 blocks.
 These are named `GeoIP2-ISP-Blocks-IPv4.csv` and `GeoIP2-ISP-Blocks-IPv6.csv`
 respectively.
 
+{{< rawhtml >}}
+<div class="table">
 <table>
   <tbody>
     <tr>
@@ -71,8 +67,8 @@ respectively.
         <td>string</td>
         <td>
           The name of the ISP associated with the IP address.
-
-          \* <a href="https://support.maxmind.com/hc/en-us/articles/4408200231067-IP-Network-Data#h_01FN989KHXR7TGXPB5T2DK0Q77" target="_blank" rel="nofollow noopener noreferrer">Learn more about ISP data on our Knowledge Base.</a>
+          <br />
+          <a href="https://support.maxmind.com/hc/en-us/articles/4408200231067-IP-Network-Data#h_01FN989KHXR7TGXPB5T2DK0Q77">Learn more about ISP data on our Knowledge Base.</a>
         </td>
     </tr>
 
@@ -81,8 +77,8 @@ respectively.
         <td>string</td>
         <td>
           The name of the organization associated with the IP address.
-
-          \* <a href="https://support.maxmind.com/hc/en-us/articles/4408200231067-IP-Network-Data#h_01FN989KHXR7TGXPB5T2DK0Q77" target="_blank" rel="nofollow noopener noreferrer">Learn more about organization data on our Knowledge Base.</a>
+          <br />
+          <a href="https://support.maxmind.com/hc/en-us/articles/4408200231067-IP-Network-Data#h_01FN989KHXR7TGXPB5T2DK0Q77">Learn more about organization data on our Knowledge Base.</a>
         </td>
     </tr>
 
@@ -91,8 +87,8 @@ respectively.
         <td>integer</td>
         <td>
           The <a href="https://en.wikipedia.org/wiki/Autonomous_system_(Internet)">autonomous system</a> number associated with the IP address.
-
-          \* <a href="https://support.maxmind.com/hc/en-us/articles/4408200231067-IP-Network-Data#h_01FN989WWSE56YD6AV4QSPSWDW" target="_blank" rel="nofollow noopener noreferrer">Learn more about autonomous system data on our Knowledge Base.</a>
+          <br />
+          <a href="https://support.maxmind.com/hc/en-us/articles/4408200231067-IP-Network-Data#h_01FN989WWSE56YD6AV4QSPSWDW">Learn more about autonomous system data on our Knowledge Base.</a>
         </td>
     </tr>
 
@@ -102,81 +98,75 @@ respectively.
         <td>
           The organization associated with the registered autonomous system
           number for the IP address.
-
-          \* <a href="https://support.maxmind.com/hc/en-us/articles/4408200231067-IP-Network-Data#h_01FN989WWSE56YD6AV4QSPSWDW" target="_blank" rel="nofollow noopener noreferrer">Learn more about autonomous system data on our Knowledge Base.</a>
+          <br />
+          <a href="https://support.maxmind.com/hc/en-us/articles/4408200231067-IP-Network-Data#h_01FN989WWSE56YD6AV4QSPSWDW">Learn more about autonomous system data on our Knowledge Base.</a>
         </td>
     </tr>
     <tr>
       <td>mobile_country_code</td>
       <td>string</td>
       <td>
-        The [mobile country code
-        (MCC)](https://en.wikipedia.org/wiki/Mobile_country_code) associated
+        The <a href="https://en.wikipedia.org/wiki/Mobile_country_code">mobile country code
+        (MCC)</a> associated
         with the IP address and ISP.
-
-          \* <a href="https://support.maxmind.com/hc/en-us/articles/4408200231067-IP-Network-Data#h_01FT6Y6ANRH9GWYXE78B4RXAEX" target="_blank" rel="nofollow noopener noreferrer">Learn more about mobile country codes on our Knowledge Base.</a>
+        <br />
+        <a href="https://support.maxmind.com/hc/en-us/articles/4408200231067-IP-Network-Data#h_01FT6Y6ANRH9GWYXE78B4RXAEX">Learn more about mobile country codes on our Knowledge Base.</a>
       </td>
     </tr>
     <tr>
       <td>mobile_network_code</td>
       <td>string</td>
       <td>
-        The [mobile network code
-        (MNC)](https://en.wikipedia.org/wiki/Mobile_country_code) associated
+        The <a href="https://en.wikipedia.org/wiki/Mobile_country_code">mobile network code
+        (MNC)</a> associated
         with the IP address and ISP.
 
-          \* <a href="https://support.maxmind.com/hc/en-us/articles/4408200231067-IP-Network-Data#h_01FT6Y6ANRH9GWYXE78B4RXAEX" target="_blank" rel="nofollow noopener noreferrer">Learn more about mobile network codes on our Knowledge Base.</a>
+        <br />
+        <a href="https://support.maxmind.com/hc/en-us/articles/4408200231067-IP-Network-Data#h_01FT6Y6ANRH9GWYXE78B4RXAEX">Learn more about mobile network codes on our Knowledge Base.</a>
       </td>
     </tr>
 
   </tbody>
 </table>
+</div>
+{{</ rawhtml >}}
 
 ### Conversion Utility
 
-<ConversionUtility />
+{{< snippet "snippets/conversion-utility.md" >}}
 
 ## Example Files
 
-<ExampleFiles />
+{{< snippet "snippets/example-files.md" >}}
 
 ### CSV Example Files
 
-<CsvFileExamples files={[
-    {
-       filename: 'GeoIP2-ISP-CSV_Example.zip',
-       link: '/static/GeoIP2-ISP-CSV_Example.zip'
-    }
-  ]}
-/>
+{{< csv-example-files >}}
+* [GeoIP2-ISP-CSV\_Example.zip](/static/GeoIP2-ISP-CSV_Example.zip)
+{{</ csv-example-files >}}
 
 ### MMDB Example Files
 
-<MmdbFileExamples files={[
-    {
-       filename: 'GeoIP2-ISP-Test.mmdb',
-       link: 'https://github.com/maxmind/MaxMind-DB/blob/main/test-data/GeoIP2-ISP-Test.mmdb'
-    }
-  ]}
-/>
+{{< mmdb-example-files >}}
+* [GeoIP2-ISP-Test.mmdb](https://github.com/maxmind/MaxMind-DB/blob/main/test-data/GeoIP2-ISP-Test.mmdb)
+{{</ mmdb-example-files >}}
 
 ## Database Sizes
 
-<DatabaseSizes dateRange = 'March to June 2024' databaseChanges ={[
-    {
-       databaseName: 'GeoIP ISP',
-       csvSizeRange: '80.1 MB - 83.4 MB',
-       mmdbSizeRange: '14.5 MB - 14.8 MB',
-       ipv4Range: '715,000 - 739,000',
-       ipv6Range: '248,000 - 264,000'
-    }
-  ]}
-/>
+{{< db-sizes-table dateRange="March to June 2024">}}
+  {{< db-sizes-row
+    databaseName="GeoIP ISP"
+    csvSizeRange="80.1 MB - 83.4 MB"
+    mmdbSizeRange="14.5 MB - 14.8 MB"
+    ipv4Range="715,000 - 739,000"
+    ipv6Range="248,000 - 264,000"
+  >}}
+{{</ db-sizes-table>}}
 
 ## Database Changes
 
-<DatabaseChanges product="ISP" />
+{{< database-changes product="ISP" >}}
 
 ## APIs and Third-Party Integrations
 
-<APIs />
+{{< snippet "snippets/geoip-db-apis.md" >}}

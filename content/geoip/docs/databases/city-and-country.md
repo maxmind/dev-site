@@ -3,17 +3,6 @@ draft: false
 title: GeoIP2 and GeoLite City and Country Databases
 ---
 
-import BinaryDatabases from './_binary-databases.mdx';
-import ConversionUtility from './_conversion-utility.mdx';
-import CoordinatesWarning from './_coordinates-warning.mdx';
-import CsvDatabasesIntro from './_csv-databases-intro.mdx';
-import DataPrivacyWarning from './_data-privacy-warning.mdx';
-import ExampleFiles from './_example-files.mdx';
-import FileFormat from './_file-format.mdx';
-import IpGeolocationUsageWarning from './_ip-geolocation-usage-warning.mdx';
-import ReturnedValuesAsKeys from './_returned-values-as-keys.mdx';
-import APIs from './_apis.mdx';
-
 Determine the country, subdivisions (regions), city, and postal code associated
 with IPv4 and IPv6 addresses worldwide.
 
@@ -23,13 +12,14 @@ on our product pages:
 - [GeoIP2 City](https://www.maxmind.com/en/geoip2-city)
 - [GeoIP2 Country](https://www.maxmind.com/en/geoip2-country)
 
-<IpGeolocationUsageWarning />
-<DataPrivacyWarning />
+{{< snippet "snippets/ip-geolocation-usage-warning.md" >}}
+{{< snippet "snippets/data-privacy-warning.md" >}}
 
 ## Binary Databases
 
-<BinaryDatabases />
+{{< snippet "snippets/binary-databases.md" >}}
 
+{{< table >}}
 | Language or Framework | Documentation                                                                      | Example                                                                |
 | --------------------- | ---------------------------------------------------------------------------------- | ---------------------------------------------------------------------- |
 | .NET (C#)             | [GitHub - Database Usage](https://github.com/maxmind/GeoIP2-dotnet#database-usage) | [City Example](https://github.com/maxmind/GeoIP2-dotnet#city-database) |
@@ -38,56 +28,61 @@ on our product pages:
 | PHP                   | [GitHub - Database Reader](https://github.com/maxmind/GeoIP2-php#database-reader)  | [City Example](https://github.com/maxmind/GeoIP2-php#city-example)     |
 | Python                | [GitHub - Database Usage](https://github.com/maxmind/GeoIP2-python#database-usage) | [City Example](https://github.com/maxmind/GeoIP2-python#city-database) |
 | Ruby                  | [GitHub - Database Reader](https://github.com/maxmind/GeoIP2-ruby#database-reader) | [City Example](https://github.com/maxmind/GeoIP2-ruby#city-example)    |
+{{</ table >}}
 
 ## CSV Databases
 
-<CsvDatabasesIntro />
+{{< snippet "snippets/csv-databases-intro.md" >}}
 
-<ZipFileContent product-name="{GeoIP2,GeoLite2}-{City,Country}" is-table-excluded={true} />
+{{< zip-file-content product-name="{GeoIP2,GeoLite2}-{City,Country}" exclude-table="true" >}}
 
 The downloaded .zip file contains a single directory which in turn contains 13
 files:
 
-<table>
-  <tbody>
-    <tr>
-      <th>Filename</th>
-      <th>Description</th>
-    </tr>
-    <tr>
-      <td>`COPYRIGHT.txt`</td>
-      <td>Copyright statement</td>
-    </tr>
+{{< rawhtml >}}
+<div class="table">
+  <table>
+    <tbody>
+      <tr>
+        <th>Filename</th>
+        <th>Description</th>
+      </tr>
+      <tr>
+        <td><code>COPYRIGHT.txt</code></td>
+        <td>Copyright statement</td>
+      </tr>
 
-    <tr>
-      <td>`LICENSE.txt`</td>
-      <td>End user license</td>
-    </tr>
+      <tr>
+        <td><code>LICENSE.txt</code></td>
+        <td>End user license</td>
+      </tr>
 
-    <tr>
-      <td>`README.txt`</td>
-      <td>Information file</td>
-    </tr>
+      <tr>
+        <td><code>README.txt</code></td>
+        <td>Information file</td>
+      </tr>
 
-    <tr>
-      <td>`{GeoIP2,GeoLite2}-{City,Country}-Blocks-IPv4.csv`</td>
-      <td>CSV file containing data on IPv4 addresses</td>
-    </tr>
+      <tr>
+        <td><code>{GeoIP2,GeoLite2}-{City,Country}-Blocks-IPv4.csv</code></td>
+        <td>CSV file containing data on IPv4 addresses</td>
+      </tr>
 
-    <tr>
-      <td>`{GeoIP2,GeoLite2}-{City,Country}-Blocks-IPv6.csv`</td>
-      <td>CSV file containing data on IPv6 addresses</td>
-    </tr>
+      <tr>
+        <td><code>{GeoIP2,GeoLite2}-{City,Country}-Blocks-IPv6.csv</code></td>
+        <td>CSV file containing data on IPv6 addresses</td>
+      </tr>
 
-    <tr>
-      <td>`{GeoIP2,GeoLite2}-{City,Country}-Locations-{locale}.csv`</td>
-      <td>Eight CSV files containing data location for each locale code, where `{locale}` can be “de”, "en", “es”, “fr”, “ja”, “pt-BR”, “ru”, and “zh-CN” .</td>
-    </tr>
+      <tr>
+        <td><code>{GeoIP2,GeoLite2}-{City,Country}-Locations-{locale}.csv</code></td>
+        <td>Eight CSV files containing data location for each locale code, where <code>{locale}</code> can be “de”, "en", “es”, “fr”, “ja”, “pt-BR”, “ru”, and “zh-CN” .</td>
+      </tr>
 
-  </tbody>
-</table>
+    </tbody>
+  </table>
+</div>
+{{</ rawhtml >}}
 
-<FileFormat />
+{{< snippet "snippets/file-format.md" >}}
 
 ### Blocks Files
 
@@ -99,9 +94,9 @@ would be `GeoIP2-City-Blocks-IPv4.csv`.
 [City subset by continent databases](https://www.maxmind.com/en/geoip2-city-database-by-continent)
 blocks files have the same columns as the City database.
 
-<CsvBlockTable />
+{{< csv-block-table isEnterprise="false" >}}
 
-<CoordinatesWarning />
+{{< snippet "snippets/coordinates-warning.md" >}}
 
 ### Locations Files
 
@@ -117,86 +112,71 @@ An example name would be `GeoIP2-City-Locations-en.csv`.
 [City subset by continent databases](https://www.maxmind.com/en/geoip2-city-database-by-continent)
 blocks files have the same columns as the City database.
 
-<CsvLocationTable />
+{{< csv-location-table isEnterprise="false" >}}
 
 ### Returned Values as Database, Map, Dict, or Hash Keys
 
-<ReturnedValuesAsKeys />
+{{< snippet "snippets/returned-values-as-keys.md" >}}
 
 ### Conversion Utility
 
-<ConversionUtility />
+{{< snippet "snippets/conversion-utility.md" >}}
 
 ## Example Files
 
-<ExampleFiles />
+{{< snippet "snippets/example-files.md" >}}
 
 ### CSV Example Files
 
-<CsvFileExamples files={[
-    {
-       filename: 'GeoIP2-City-CSV_Example.zip',
-       link: '/static/GeoIP2-City-CSV_Example.zip'
-    },
-    {
-       filename: 'GeoIP2-Country-CSV_Example.zip',
-       link: '/static/GeoIP2-Country-CSV_Example.zip'
-    }
-  ]}
-/>
+{{< csv-example-files >}}
+* [GeoIP2-City-CSV\_Example.zip](/static/GeoIP2-City-CSV_Example.zip)
+* [GeoIP2-Country-CSV\_Example.zip](/static/GeoIP2-Country-CSV_Example.zip)
+{{</ csv-example-files >}}
 
 ### MMDB Example Files
 
-<MmdbFileExamples files={[
-    {
-       filename: 'GeoIP2-City-Test.mmdb',
-       link: 'https://github.com/maxmind/MaxMind-DB/blob/main/test-data/GeoIP2-City-Test.mmdb'
-    },
-    {
-       filename: 'GeoIP2-Country-Test.mmdb',
-       link: 'https://github.com/maxmind/MaxMind-DB/blob/main/test-data/GeoIP2-Country-Test.mmdb'
-    }
-  ]}
-/>
+{{< mmdb-example-files >}}
+* [GeoIP2-City-Test.mmdb](https://github.com/maxmind/MaxMind-DB/blob/main/test-data/GeoIP2-City-Test.mmdb)
+* [GeoIP2-Country-Test.mmdb](https://github.com/maxmind/MaxMind-DB/blob/main/test-data/GeoIP2-Country-Test.mmdb)
+{{</ mmdb-example-files >}}
 
 ## Database Sizes
 
-<DatabaseSizes dateRange = 'March to June 2024' databaseChanges ={[
-    {
-       databaseName: 'GeoIP City',
-       csvSizeRange: '577 MB - 606 MB',
-       mmdbSizeRange: '108 MB - 110 MB',
-       ipv4Range: '657,000 - 682,000',
-       ipv6Range: '231,000 - 250,000'
-    },
-    {
-       databaseName: 'GeoIP Country',
-       csvSizeRange: '29.2 MB - 30.8 MB',
-       mmdbSizeRange: '6.29 MB - 6.53 MB',
-       ipv4Range: '480,000 - 502,000',
-       ipv6Range: '265,000 - 280,000'
-    },
-    {
-       databaseName: 'GeoLite City',
-       csvSizeRange: '226.2 MB - 292.7 MB',
-       mmdbSizeRange: '50 MB - 63.8 MB',
-       ipv4Range: '236,000 - 334,000',
-       ipv6Range: '114,000 - 123,000'
-    },
-    {
-       databaseName: 'GeoLite Country',
-       csvSizeRange: '30 MB - 31.7 MB',
-       mmdbSizeRange: '6.38 MB - 6.64 MB',
-       ipv4Range: '480,000 - 490,000',
-       ipv6Range: '280,000 - 308,000'
-    }
-  ]}
-/>
+{{< db-sizes-table dateRange="March to June 2024">}}
+  {{< db-sizes-row
+    databaseName="GeoIP City"
+    csvSizeRange="577 MB - 606 MB"
+    mmdbSizeRange="108 MB - 110 MB"
+    ipv4Range="657,000 - 682,000"
+    ipv6Range="231,000 - 250,000"
+  >}}
+  {{< db-sizes-row
+    databaseName="GeoIP Country"
+    csvSizeRange="29.2 MB - 30.8 MB"
+    mmdbSizeRange="6.29 MB - 6.53 MB"
+    ipv4Range="480,000 - 502,000"
+    ipv6Range="265,000 - 280,000"
+  >}}
+  {{< db-sizes-row
+    databaseName="GeoLite City"
+    csvSizeRange="226.2 MB - 292.7 MB"
+    mmdbSizeRange="50 MB - 63.8 MB"
+    ipv4Range="236,000 - 334,000"
+    ipv6Range="114,000 - 123,000"
+  >}}
+  {{< db-sizes-row
+    databaseName="GeoLite Country"
+    csvSizeRange="30 MB - 31.7 MB"
+    mmdbSizeRange="6.38 MB - 6.64 MB"
+    ipv4Range="480,000 - 490,000"
+    ipv6Range="280,000 - 308,000"
+  >}}
+{{</ db-sizes-table>}}
 
 ## Database Changes
 
-<DatabaseChanges product="City and Country" />
+{{< database-changes product="City and Country" >}}
 
 ## APIs and Third-Party Integrations
 
-<APIs />
+{{< snippet "snippets/geoip-db-apis.md" >}}

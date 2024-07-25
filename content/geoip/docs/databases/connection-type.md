@@ -3,14 +3,6 @@ draft: false
 title: GeoIP2 Connection Type Databases
 ---
 
-import BinaryDatabases from './_binary-databases.mdx';
-import ConversionUtility from './_conversion-utility.mdx';
-import CsvDatabasesIntro from './_csv-databases-intro.mdx';
-import DataPrivacyWarning from './_data-privacy-warning.mdx';
-import ExampleFiles from './_example-files.mdx';
-import FileFormat from './_file-format.mdx';
-import APIs from './_apis.mdx';
-
 Determine the connection type of your visitors based on their IP address. The
 database identifies cellular, cable/DSL, and corporate connection speeds.
 
@@ -18,12 +10,13 @@ To learn more about the GeoIP2 Connection Type database, including terms and
 pricing, please
 [visit the GeoIP2 Connection Type Database page](https://www.maxmind.com/en/geoip2-connection-type-database).
 
-<DataPrivacyWarning />
+{{< snippet "snippets/data-privacy-warning.md" >}}
 
 ## Binary Database
 
-<BinaryDatabases />
+{{< snippet "snippets/binary-databases.md" >}}
 
+{{< table >}}
 | Language or Framework | Documentation                                                                      | Example                                                                                      |
 | --------------------- | ---------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------- |
 | .NET (C#)             | [GitHub - Database Usage](https://github.com/maxmind/GeoIP2-dotnet#database-usage) | [Connection Type Example](https://github.com/maxmind/GeoIP2-dotnet#connection-type-database) |
@@ -32,14 +25,15 @@ pricing, please
 | PHP                   | [GitHub - Database Reader](https://github.com/maxmind/GeoIP2-php#database-reader)  | [Connection Type Example](https://github.com/maxmind/GeoIP2-php#connection-type-example)     |
 | Python                | [GitHub - Database Usage](https://github.com/maxmind/GeoIP2-python#database-usage) | [Connection Type Example](https://github.com/maxmind/GeoIP2-python#connection-type-database) |
 | Ruby                  | [GitHub - Database Reader](https://github.com/maxmind/GeoIP2-ruby#database-reader) | [Connection Type Example](https://github.com/maxmind/GeoIP2-ruby#connection-type-example)    |
+{{</ table >}}
 
 ## CSV Database
 
-<CsvDatabasesIntro />
+{{< snippet "snippets/csv-databases-intro.md" >}}
 
-<ZipFileContent product-name="GeoIP2-Connection-Type" />
+{{< zip-file-content product-name="GeoIP2-Connection-Type" >}}
 
-<FileFormat />
+{{< snippet "snippets/file-format.md" >}}
 
 ### Blocks Files
 
@@ -47,6 +41,8 @@ There are two CSV files for network blocks, one each for IPv4 and IPv6 blocks.
 These are named `GeoIP2-Connection-Type-Blocks-IPv4.csv` and
 `GeoIP2-Connection-Type-Blocks-IPv6.csv` respectively.
 
+{{< rawhtml >}}
+<div class="table">
 <table>
   <tbody>
     <tr>
@@ -71,61 +67,53 @@ These are named `GeoIP2-Connection-Type-Blocks-IPv4.csv` and
         <td>connection_type</td>
         <td>string</td>
         <td>
-          One of the following values: `Cable/DSL`, `Cellular`, `Corporate`, or
-          `Satellite`. Additional values may be added in the future.
-
-          \* <a href="https://support.maxmind.com/hc/en-us/articles/4408200231067-IP-Network-Data#h_01FN988THBX8RVERNTZ12BY2EC" target="_blank" rel="nofollow noopener noreferrer">Learn more about connection type data on our Knowledge Base.</a>
+          One of the following values: <code>Cable/DSL</code>, <code>Cellular</code>, <code>Corporate</code>, or
+          <code>Satellite</code>. Additional values may be added in the future.
+          <br />
+          <a href="https://support.maxmind.com/hc/en-us/articles/4408200231067-IP-Network-Data#h_01FN988THBX8RVERNTZ12BY2EC">Learn more about connection type data on our Knowledge Base.</a>
         </td>
     </tr>
-
   </tbody>
 </table>
+</div>
+{{</ rawhtml >}}
 
 ### Conversion Utility
 
-<ConversionUtility />
+{{< snippet "snippets/conversion-utility.md" >}}
 
 ## Example Files
 
-<ExampleFiles />
+{{< snippet "snippets/example-files.md" >}}
 
 ### CSV Example Files
 
-<CsvFileExamples files={[
-    {
-       filename: 'GeoIP2-Connection-Type-CSV_Example.zip',
-       link: '/static/GeoIP2-Connection-Type-CSV_Example.zip'
-    }
-  ]}
-/>
+{{< csv-example-files >}}
+* [GeoIP2-Connection-Type-CSV\_Example.zip](/static/GeoIP2-Connection-Type-CSV_Example.zip)
+{{</ csv-example-files >}}
 
 ### MMDB Example Files
 
-<MmdbFileExamples files={[
-    {
-       filename: 'GeoIP2-Connection-Type-Test.mmdb',
-       link: 'https://github.com/maxmind/MaxMind-DB/blob/main/test-data/GeoIP2-Connection-Type-Test.mmdb'
-    }
-  ]}
-/>
+{{< mmdb-example-files >}}
+* [GeoIP2-Connection-Type-Test.mmdb](https://github.com/maxmind/MaxMind-DB/blob/main/test-data/GeoIP2-Connection-Type-Test.mmdb)
+{{</ mmdb-example-files >}}
 
 ## Database Sizes
 
-<DatabaseSizes dateRange = 'March to June 2024' databaseChanges ={[
-    {
-       databaseName: 'GeoIP Connection Type',
-       csvSizeRange: '30.56 MB - 47.44 MB',
-       mmdbSizeRange: '9.02 MB - 12.7 MB',
-       ipv4Range: '933,000 - 1,550,000',
-       ipv6Range: '197,000 - 208,000'
-    }
-  ]}
-/>
+{{< db-sizes-table dateRange="March to June 2024">}}
+  {{< db-sizes-row
+    databaseName="GeoIP Connection Type"
+    csvSizeRange="30.56 MB - 47.44 MB"
+    mmdbSizeRange="9.02 MB - 12.7 MB"
+    ipv4Range="933,000 - 1,550,000"
+    ipv6Range="197,000 - 208,000"
+  >}}
+{{</ db-sizes-table>}}
 
 ## Database Changes
 
-<DatabaseChanges product="Connection Type" />
+{{< database-changes product="Connection Type" >}}
 
 ## APIs and Third-Party Integrations
 
-<APIs />
+{{< snippet "snippets/geoip-db-apis.md" >}}
