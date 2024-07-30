@@ -1,3 +1,8 @@
+{{ $parentKey := .Parent.Get "key" }}
+{{ $parentKey = replace $parentKey "_" "-" }}
+{{ $key := .Get "key" }}
+{{ $fragment := printf "schema--response--%s__%s" $parentKey $key }}
+
 {{ $country := .Get "country" }}
 {{ $city := .Get "city" }}
 {{ $insights := .Get "insights" }}
@@ -8,7 +13,7 @@
 
 <tr>
   <td>
-    <code>{{ .Get "key" }}</code>
+    <a href="#{{ $fragment }}"><code>{{ $key }}</code></a>
   </td>
   <td>
     {{ .Get "valueType" }}
@@ -18,16 +23,18 @@
     {{ end }}
   </td>
   <td>
-    {{ .Inner | .Page.RenderString }}
-    <div>
-      <span class="tag {{ if $hasCountry }}tag--checked{{ else }}tag--disabled{{ end }}">
-        GeoIP Country
-      </span>
-      <span class="tag {{ if $hasCity }}tag--checked{{ else }}tag--disabled{{ end }}">
-        GeoIP City
-      </span>
-      <span class="tag {{ if $hasInsights }}tag--checked{{ else }}tag--disabled{{ end }}">
-        GeoIP Insights
-      </span>
+    <div id="{{ $fragment }}">
+      {{ .Inner | .Page.RenderString }}
+      <div>
+        <span class="tag {{ if $hasCountry }}tag--checked{{ else }}tag--disabled{{ end }}">
+          GeoIP Country
+        </span>
+        <span class="tag {{ if $hasCity }}tag--checked{{ else }}tag--disabled{{ end }}">
+          GeoIP City
+        </span>
+        <span class="tag {{ if $hasInsights }}tag--checked{{ else }}tag--disabled{{ end }}">
+          GeoIP Insights
+        </span>
+      </div>
     </div>
 </tr>
