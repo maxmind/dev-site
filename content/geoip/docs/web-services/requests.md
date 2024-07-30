@@ -12,7 +12,7 @@ The password is your
 [MaxMind license key](https://www.maxmind.com/en/accounts/current/license-key).
 
 {{< alert warning >}}
-  You must be approved for a [GeoIP2 web service
+  You must be approved for a [GeoIP web service
   trial](https://www.maxmind.com/en/request-service-trial?service_geoip=1),
   [purchase service credit](https://www.maxmind.com/en/geoip2-precision-insights)
   for use with our web services, or have a [GeoLite2
@@ -46,7 +46,7 @@ the IP address you are querying from will be returned. This is useful when your
 application does not have easy access to its public IP address, e.g., when the
 system making the query is behind a NAT.
 
-### GeoIP2 Endpoints
+### GeoIP Endpoints
 
 {{< table >}}
 | Service   | HTTP Method | Endpoint                                                     |
