@@ -14,7 +14,7 @@ title = 'MaxMind'
     lineNumbersInTable = false
     noClasses = true
     noHl = false
-    style = 'monokai'
+    style = 'doom-one2'
     tabWidth = 4
 
 [menus]
