@@ -11,9 +11,9 @@ outlined below:
 {{< table >}}
 | Service          | Content-Type                                                            |
 | ---------------- | ----------------------------------------------------------------------- |
-| GeoIP2 Country   | `application/vnd.maxmind.com-country+json; charset=UTF-8; version=2.1`  |
-| GeoIP2 City      | `application/vnd.maxmind.com-city+json; charset=UTF-8; version=2.1`     |
-| GeoIP2 Insights  | `application/vnd.maxmind.com-insights+json; charset=UTF-8; version=2.1` |
+| GeoIP Country   | `application/vnd.maxmind.com-country+json; charset=UTF-8; version=2.1`  |
+| GeoIP City      | `application/vnd.maxmind.com-city+json; charset=UTF-8; version=2.1`     |
+| GeoIP Insights  | `application/vnd.maxmind.com-insights+json; charset=UTF-8; version=2.1` |
 | GeoLite2 Country | `application/vnd.maxmind.com-country+json; charset=UTF-8; version=2.1`  |
 | GeoLite2 City    | `application/vnd.maxmind.com-city+json; charset=UTF-8; version=2.1`     |
 {{</ table >}}
@@ -174,7 +174,7 @@ maps to an object or an array of objects.
 }
 ```
 
-The exact set of top-level keys varies based on the particular GeoIP2 web
+The exact set of top-level keys varies based on the particular GeoIP web
 service you are using. If a key maps to an undefined or empty value, it is not
 included in the JSON object. This applies both to top-level keys and the objects
 they map to.
@@ -881,9 +881,9 @@ Each service returns data as a JSON document. The document that is returned
 always consists of an object (aka map or hash). Below are the schema definitions
 that describe each service's response body.
 
-### GeoIP2 Country Body Example
+### GeoIP Country Body Example
 
-The following is an example of a full response to a GeoIP2 Country web service
+The following is an example of a full response to a GeoIP Country web service
 request.
 
 A GeoLite2 Country request follow the same structure, but the data returned will
@@ -963,9 +963,9 @@ be less accurate. In addition, GeoLite Country requests will not return the
 }
 ```
 
-### GeoIP2 City Body Example
+### GeoIP City Body Example
 
-The following is an example of a full response to a GeoIP2 City Plus web service
+The following is an example of a full response to a GeoIP City Plus web service
 request.
 
 A GeoLite2 City request follow the same structure, but the data returned will be
@@ -1092,9 +1092,9 @@ the `maxmind` object.
 }
 ```
 
-### GeoIP2 Insights Body Example
+### GeoIP Insights Body Example
 
-The following is an example of a full response to a GeoIP2 Insights web service
+The following is an example of a full response to a GeoIP Insights web service
 request.
 
 ```json
