@@ -203,7 +203,7 @@ address.
 }
 ```
 
-{{< schema-table >}}
+{{< schema-table key="city" >}}
   {{< schema-row key="confidence" valueType="integer" valueTypeNote="min: 0, max: 100" insights="true">}}
   A value from 0-100 representing our confidence that the city is correct.
 
@@ -245,7 +245,7 @@ address.
 }
 ```
 
-{{< schema-table >}}
+{{< schema-table key="continent" >}}
   {{< schema-row key="code" valueType="string" country="true" city="true" insights="true">}}
   A two-character code for the continent associated with the IP address. The possible codes are:
 
@@ -296,7 +296,7 @@ address.
 }
 ```
 
-{{< schema-table >}}
+{{< schema-table key="country" >}}
   {{< schema-row key="confidence" valueType="integer" valueTypeNote="min: 0, max: 100" insights="true">}}
   A value from 0-100 representing our confidence that the country is correct.
 
@@ -343,7 +343,7 @@ address.
 }
 ```
 
-{{< schema-table >}}
+{{< schema-table key="location" >}}
   {{< schema-row key="accuracy_radius" valueType="integer" city="true" insights="true">}}
   The approximate accuracy radius, in kilometers, around the latitude and longitude for the geographical entity (country, subdivision, city or postal code) associated with the IP address. We have a 67% confidence that the location of the end-user falls within the area defined by the accuracy radius and the latitude and longitude coordinates.
 
@@ -406,7 +406,7 @@ address.
 }
 ```
 
-{{< schema-table >}}
+{{< schema-table key="postal" >}}
   {{< schema-row key="code" valueType="string" city="true" insights="true">}}
   A postal code close to the user’s location. For the following countries, we return partial postal codes with the number of characters indicated below:
 
@@ -454,7 +454,7 @@ address.
 }
 ```
 
-{{< schema-table >}}
+{{< schema-table key="registered_country" >}}
   {{< schema-row key="geoname_id" valueType="integer" country="true" city="true" insights="true">}}
   A unique identifier for the country as specified by [GeoNames](https://www.geonames.org/).
 
@@ -505,7 +505,7 @@ address.
 }
 ```
 
-{{< schema-table >}}
+{{< schema-table key="represented_country" >}}
   {{< schema-row key="geoname_id" valueType="integer" country="true" city="true" insights="true">}}
   A unique identifier for the country as specified by [GeoNames](https://www.geonames.org/).
 
@@ -560,7 +560,7 @@ address.
 ]
 ```
 
-{{< schema-table >}}
+{{< schema-table key="subdivision" >}}
   {{< schema-row key="confidence" valueType="integer" valueTypeNote="min: 0, max: 100" insights="true">}}
   A value from 0-100 representing our confidence that the region is correct.
 
@@ -615,7 +615,7 @@ address.
 }
 ```
 
-{{< schema-table >}}
+{{< schema-table key="traits" >}}
   {{< schema-row key="autonomous_system_number" valueType="integer" city="true" insights="true">}}
   The [autonomous system number](https://en.wikipedia.org/wiki/Autonomous_system_(Internet)) associated with the IP address.
 
@@ -773,7 +773,7 @@ address.
 }
 ```
 
-{{< schema-table >}}
+{{< schema-table key="maxmind" >}}
   {{< schema-row key="queries_remaining" valueType="integer" country="true" city="true" insights="true">}}
   The approximate number of remaining queries available for the end point which is being called.
 
