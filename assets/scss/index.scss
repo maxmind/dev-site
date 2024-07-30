@@ -30,3 +30,8 @@
 .hide {
   display: none !important;
 }
+
+// Account for the fixed header
+:target {
+  scroll-margin-top: 100px;
+}
