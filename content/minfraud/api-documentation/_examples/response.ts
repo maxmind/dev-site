@@ -29,7 +29,7 @@ export const insights = {
     latitude: 37.545,
     longitude: -122.421,
   },
-  biling_phone: {
+  billing_phone: {
     country: "US",
     is_voip: true,
     network_operator: "Verizon/1",
