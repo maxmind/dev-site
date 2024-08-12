@@ -1,0 +1,35 @@
+diff_in,old_geoname_id,new_geoname_id,old_country_name,new_country_name,old_country_code,new_country_code,old_city_name,new_city_name,old_subdivision_codes,new_subdivision_codes
+city_name,1200109,1200109,Bangladesh,Bangladesh,BD,BD,Jaydebpur,Gazipur,"C, 18","C, 18"
+city_name,1268341,1268341,India,India,IN,IN,Kālna,Kalna,WB,WB
+city_name,1271685,1271685,India,India,IN,IN,Gangānagar,Sri Ganganagar,RJ,RJ
+city_name,1277902,1277902,India,India,IN,IN,Bāgha Purāna,Bagha Purana,PB,PB
+city_name,293153,293153,Israel,Israel,IL,IL,Yoqne'am 'Illit,Yokneam Illit,Z,Z
+city_name,2111692,2111692,Japan,Japan,JP,JP,Nanyō Shi,Nan'yō Shi,6,6
+city_name,287275,287275,Oman,Oman,OM,OM,Muţraḩ,Muttrah,MA,MA
+city_name,2269557,2269557,Portugal,Portugal,PT,PT,Castanheira de Pêra,Castanheira de Pera,10,10
+city_name,672937,672937,Romania,Romania,RO,RO,Mogoşoaia,Mogosoaia,IF,IF
+city_name,2016910,2016910,Russia,Russia,RU,RU,Severobaykal'sk,Severobaykalsk,BU,BU
+city_name,1673820,1673820,Taiwan,Taiwan,TW,TW,Kaohsiung City,Kaohsiung,KHH,KHH
+city_name,738329,738329,Türkiye,Türkiye,TR,TR,Skutari,Üsküdar,34,34
+city_name,5250188,5250188,United States,United States,US,US,De Forest,DeForest,WI,WI
+geoname_id,3428775,12675206,Argentina,Argentina,AR,AR,San Justo,San Justo,B,B
+geoname_id,11102944,8635185,Australia,Australia,AU,AU,Sundown,Sundown,QLD,QLD
+geoname_id,2767294,2767292,Austria,Austria,AT,AT,Rohrbach,Rohrbach,3,3
+geoname_id,3468453,6323927,Brazil,Brazil,BR,BR,Cachoeira Alta,Cachoeira Alta,GO,GO
+geoname_id,6323990,3461151,Brazil,Brazil,BR,BR,Ipameri,Ipameri,GO,GO
+geoname_id,3445531,3445532,Brazil,Brazil,BR,BR,Vargem Bonita,Vargem Bonita,MG,MG
+geoname_id,11969001,3447651,Brazil,Brazil,BR,BR,Sertãozinho,Sertãozinho,SP,SP
+geoname_id,3456917,3456916,Brazil,Brazil,BR,BR,Monjolos,Monjolos,MG,MG
+geoname_id,3072024,3072020,Czechia,Czechia,CZ,CZ,Lhotka,Lhotka,"80, 805","80, 805"
+geoname_id,2906333,2906334,Germany,Germany,DE,DE,Hennickendorf,Hennickendorf,BB,BB
+geoname_id,1270914,11857993,India,India,IN,IN,Goregaon,Goregaon,MH,MH
+geoname_id,11250236,6695463,India,India,IN,IN,Koramangala,Koramangala,KA,KA
+geoname_id,6822127,11611642,Japan,Japan,JP,JP,Ayase,Ayase,14,14
+geoname_id,1735339,1735297,Malaysia,Malaysia,MY,MY,Mukah,Mukah,13,13
+geoname_id,11337637,8031394,Mexico,Mexico,MX,MX,Solidaridad,Solidaridad,ROO,ROO
+geoname_id,3985035,3985070,Mexico,Mexico,MX,MX,San Pedro,San Pedro,COA,COA
+geoname_id,3985070,3985035,Mexico,Mexico,MX,MX,San Pedro,San Pedro,COA,COA
+geoname_id,3354938,3354939,Namibia,Namibia,NA,NA,Ohangwena,Ohangwena,OW,OW
+geoname_id,7329356,1167507,Pakistan,Pakistan,PK,PK,Rabwah,Rabwah,PB,PB
+geoname_id,1690321,7575600,Philippines,Philippines,PH,PH,San Antonio,San Antonio,"03, ZMB","03, ZMB"
+geoname_id,7534754,2511062,Spain,Spain,ES,ES,Sant Jordi,Sant Jordi,"IB, PM","IB, PM"
