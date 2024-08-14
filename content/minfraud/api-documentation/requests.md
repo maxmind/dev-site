@@ -289,15 +289,6 @@ size will be rejected.
 ### Account
 {{< anchor-target schema--request--account >}}
 
-`event` is a JSON object that contains general information related to the event being scored
-
-```json
-{
-  "shop_id": "s2123",
-  "time": "2012-04-12T23:20:50.52Z",
-  "transaction_id": "txn3134133",
-  "type": "purchase"
-
 `account` is a JSON object that contains account information for the end-user on the site
 where the event took place
 
@@ -321,7 +312,6 @@ where the event took place
 {{</ schema-table >}}
 
 ### Email
-{{< anchor-target schema--request--email >}}
 
 `email` is a JSON object that contains information about the email address of the end-user who initiated the event.
 
