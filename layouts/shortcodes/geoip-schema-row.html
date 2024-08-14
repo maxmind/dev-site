@@ -12,10 +12,10 @@
 {{ $hasInsights := eq $insights "true" }}
 
 <tr>
-  <td>
-    <a href="#{{ $fragment }}"><code class="schema-row-key">{{ $key }}</code></a>
+  <td class="schema__key-cell">
+    <a href="#{{ $fragment }}"><code class="schema__row-key">{{ $key }}</code></a>
   </td>
-  <td>
+  <td class="schema__type-cell">
     {{ .Get "valueType" }}
   </td>
   <td>
