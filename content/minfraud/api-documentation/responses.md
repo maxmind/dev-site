@@ -179,6 +179,7 @@ For full examples of response bodies, select one of the following:
 * [Error Body Example](error-body-example)
 
 ### Top-Level Fields
+{{< anchor-target schema--response >}}
 
 ```json
 {
@@ -214,6 +215,7 @@ For full examples of response bodies, select one of the following:
 {{</ schema-table >}}
 
 ### IP Address
+{{< anchor-target schema--response--ip-address >}}
 
 For minFraud Score, this object only contains the `risk` for the IP address. For minFraud Insights and Factors, the object is the [GeoIP2 Insights response body](/geoip/docs/web-services/responses/#geoip2-insights-body-example) with four modifications:
 
@@ -399,6 +401,7 @@ See the [GeoIP2 Insights response body](/geoip/docs/web-services/responses/#geoi
 {{</ schema-table >}}
 
 ### IP Address > Country
+{{< anchor-target schema--response--ip-address--country >}}
 
 This object contains country-level geolocation data associated with the IP address associated with the event
 
@@ -424,6 +427,7 @@ This object contains country-level geolocation data associated with the IP addre
 ```
 
 ### IP Address > Location
+{{< anchor-target schema--response--ip-address--location >}}
 
 This object contains city-level geolocation data associated with the IP address associated with the event.
 
@@ -450,6 +454,7 @@ This object contains city-level geolocation data associated with the IP address 
 {{</ schema-table >}}
 
 ### IP Address > Risk Reasons
+{{< anchor-target schema--response--ip-address--risk-reasons >}}
 
 This array contains IP Address Risk Reason objects identifying the reasons why the IP address received the associated risk.
 
@@ -493,6 +498,7 @@ This array contains IP Address Risk Reason objects identifying the reasons why t
 {{</ schema-table >}}
 
 ### Credit Card
+{{< anchor-target schema--response--credit-card >}}
 
 This object contains minFraud information related to the credit card. If an issuer ID number (IIN) was not provided in the request, this object will not be present in the response.
 ```json
@@ -563,6 +569,7 @@ This object contains minFraud information related to the credit card. If an issu
 {{</ schema-table >}}
 
 ### Credit Card > Issuer
+{{< anchor-target schema--response--credit-card--issuer >}}
 
 This is a sub-object of `credit_card` that contains information related to the issuer of the card.
 ```json
@@ -596,6 +603,7 @@ This is a sub-object of `credit_card` that contains information related to the i
 {{</ schema-table >}}
 
 ### Device
+{{< anchor-target schema--response--device >}}
 
 This object contains information about the device that MaxMind believes is associated with the IP address passed in the request.
 ```json
@@ -633,6 +641,7 @@ This object contains information about the device that MaxMind believes is assoc
 {{</ schema-table >}}
 
 ### Email
+{{< anchor-target schema--response--email >}}
 
 ```json
 {
@@ -678,6 +687,7 @@ This object contains information about the device that MaxMind believes is assoc
 {{</ schema-table >}}
 
 ### Email > Domain
+{{< anchor-target schema--response--email--domain >}}
 
 This is a sub-object of `email` that contains information related to the domain.
 ```json
@@ -696,6 +706,7 @@ This is a sub-object of `email` that contains information related to the domain.
 {{</ schema-table >}}
 
 ### Shipping Address
+{{< anchor-target schema--response--shipping-address >}}
 
 ```json
 {
@@ -757,6 +768,7 @@ This is a sub-object of `email` that contains information related to the domain.
 {{</ schema-table >}}
 
 ### Shipping Phone
+{{< anchor-target schema--response--shipping-phone >}}
 
 ```json
 {
@@ -787,6 +799,7 @@ This is a sub-object of `email` that contains information related to the domain.
 {{</ schema-table >}}
 
 ### Billing Address
+{{< anchor-target schema--response--billing-address >}}
 
 ```json
 {
@@ -834,6 +847,7 @@ This is a sub-object of `email` that contains information related to the domain.
 {{</ schema-table >}}
 
 ### Billing Phone
+{{< anchor-target schema--response--billing-phone >}}
 
 ```json
 {
@@ -865,6 +879,7 @@ This is a sub-object of `email` that contains information related to the domain.
 {{</ schema-table >}}
 
 ### Disposition
+{{< anchor-target schema--response--disposition >}}
 
 This object contains information about how a request was handled by the custom rules you have defined. If your account does not have any custom rules defined, then this object will not be present in the response.
 
@@ -906,6 +921,7 @@ This object contains information about how a request was handled by the custom r
 {{</ schema-table >}}
 
 ### Subscores
+{{< anchor-target schema--response--subscores >}}
 
 This object contains risk factor scores for many of the individual components that are used in calculating the `risk_score`. [Learn more about risk factor scores on our Knowledge Base.](https://support.maxmind.com/hc/en-us/articles/4408382645915-Risk-Factor-Scores)
 
@@ -1053,6 +1069,7 @@ This object is only included with minFraud Factors. [Learn more about the differ
 {{</ schema-table >}}
 
 ### Warnings
+{{< anchor-target schema--response--warnings >}}
 
 This array contains warning objects detailing issues with the request that was sent such as invalid or unknown inputs. It is highly recommended that you check this array for issues when integrating the web service.
 
