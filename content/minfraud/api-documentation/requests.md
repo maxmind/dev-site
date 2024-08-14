@@ -186,6 +186,7 @@ size will be rejected.
 ```
 
 ### Device
+{{< anchor-target schema--request--device >}}
 
 `device` is a JSON object that contains information about the device used in the transaction.
 
@@ -232,6 +233,7 @@ size will be rejected.
 {{</ schema-table >}}
 
 ### Event
+{{< anchor-target schema--request--event >}}
 
 `event` is a JSON object that contains general information related to the event being scored
 
@@ -285,6 +287,16 @@ size will be rejected.
 {{</ schema-table >}}
 
 ### Account
+{{< anchor-target schema--request--account >}}
+
+`event` is a JSON object that contains general information related to the event being scored
+
+```json
+{
+  "shop_id": "s2123",
+  "time": "2012-04-12T23:20:50.52Z",
+  "transaction_id": "txn3134133",
+  "type": "purchase"
 
 `account` is a JSON object that contains account information for the end-user on the site
 where the event took place
@@ -309,6 +321,7 @@ where the event took place
 {{</ schema-table >}}
 
 ### Email
+{{< anchor-target schema--request--email >}}
 
 `email` is a JSON object that contains information about the email address of the end-user who initiated the event.
 
@@ -334,6 +347,8 @@ where the event took place
 {{</ schema-table >}}
 
 ### Billing
+{{< anchor-target schema--request--billing >}}
+
 `billing` is a JSON object that contains the billing address and contact information provided by the end-user who initiated the event.
 
 [Learn more about the billing address inputs on our Knowledge Base.](https://support.maxmind.com/hc/en-us/articles/5447224594075-Billing-and-Shipping-Inputs#h_01G0YN48RWENDYCKN2J3RQK2S3)
@@ -401,6 +416,8 @@ where the event took place
 {{</ schema-table >}}
 
 ### Shipping
+{{< anchor-target schema--request--shipping >}}
+
 `shipping` is a JSON object that contains the shipping address and contact information provided by the end-user who initiated the event.
 
 [Learn more about the shipping address inputs on our Knowledge Base.](https://support.maxmind.com/hc/en-us/articles/5447224594075-Billing-and-Shipping-Inputs#h_01G0YN4GGRCC99P2HH0X54RFVA)
@@ -478,6 +495,7 @@ where the event took place
 {{</ schema-table >}}
 
 ### Payment
+{{< anchor-target schema--request--payment >}}
 
 `payment` is a JSON object that contains information from and about the payment process that was used for the event.
 
@@ -664,6 +682,7 @@ where the event took place
 {{</ schema-table >}}
 
 ### Credit Card
+{{< anchor-target schema--request--credit-card >}}
 
 `credit_card` is a JSON object that contains information provided by the end-user and the payment processor about the credit card used for the for the event.
 ```json
@@ -739,6 +758,7 @@ where the event took place
 {{</ schema-table >}}
 
 ### Order
+{{< anchor-target schema--request--order >}}
 
 `order` is a JSON object that contains information about the order associated with the event.
 
@@ -808,6 +828,7 @@ where the event took place
 {{</ schema-table >}}
 
 ### Shopping Cart
+{{< anchor-target schema--request--shopping-cart >}}
 
 `shopping_cart` is an array of shopping cart item objects.
 
@@ -861,6 +882,7 @@ see:
 {{</ schema-table >}}
 
 ### Custom Inputs
+{{< anchor-target schema--request--custom-inputs >}}
 
 `custom_inputs` are optional inputs to the minFraud service that must first be defined for your account. Select Custom Inputs from the Account Portal in order to do so. See our [Custom Inputs documentation](https://support.maxmind.com/hc/en-us/articles/4408216546203-Use-Custom-Inputs) for more information.
 
