@@ -17,14 +17,15 @@
   </td>
   <td>
     {{ .Get "valueType" }}
-    {{ with .Get "valueTypeNote" }}
-      <br />
-      <em>{{ . }}</em>
-    {{ end }}
   </td>
   <td>
     <div id="{{ $fragment }}">
       {{ .Inner | .Page.RenderString }}
+      {{ with .Get "valueTypeNote" }}
+        <p>
+          <em>{{ . }}</em>
+        </p>
+      {{ end }}
       <div>
         <span class="tag {{ if $hasCountry }}tag--checked{{ else }}tag--disabled{{ end }}">
           GeoIP Country

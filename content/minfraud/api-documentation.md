@@ -3,15 +3,12 @@ draft: false
 title: minFraud API Documentation
 ---
 
-import { FaDownload, FaUpload } from 'react-icons/fa';
-import ApiClients from './_api-clients.mdx';
-
-<Alert type="info">
+{{< alert info >}}
   If you are a [minFraud Legacy](/minfraud/minfraud-legacy/)
   customer, please see our
   [What's New in minFraud Score, minFraud Insights, and minFraud Factors](/minfraud/whats-new-in-minfraud-score-and-minfraud-insights/)
   document for a summary of the changes.
-</Alert>
+{{</ alert >}}
 
 ## Overview
 
@@ -25,26 +22,7 @@ and the
 
 ## Client APIs
 
-<ApiClients />
-
-## Request and Response API References
-
-<LinkGroupContainer heading="References">
-  <LinkGroup>
-    <LinkGroupCard
-      heading="Requests"
-      icon={FaDownload}
-      to="/minfraud/api-documentation/requests"
-    />
-
-    <LinkGroupCard
-      heading="Responses"
-      icon={FaUpload}
-      to="/minfraud/api-documentation/responses"
-    />
-
-  </LinkGroup>
-</LinkGroupContainer>
+{{< snippet "snippets/minfraud-client-apis.md" >}}
 
 ## Additional Features
 
