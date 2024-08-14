@@ -181,6 +181,13 @@ they map to.
 
 The data returned in the document will be in UTF-8 encoding.
 
+For full examples of response bodies, select one of the following:
+
+* [GeoIP Country Body Example](#geoip-country-body-example)
+* [GeoIP City Body Example](#geoip-city-body-example)
+* [GeoIP Insights Body Example](#geoip-insights-body-example)
+
+
 ### City
 
 `city` is a JSON object that contains details about the city associated with the IP

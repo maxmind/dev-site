@@ -171,6 +171,13 @@ there is no relevant information to include. For example, if you do not pass
 any information about the credit card in your request, then the response will
 not contain a `credit_card` key or value.
 
+For full examples of response bodies, select one of the following:
+
+* [minFraud Score Body Example](minfraud-score-body-example)
+* [minFraud Insights Body Example](minfraud-insights-body-example)
+* [minFraud Factors Body Example](minfraud-factors-body-example)
+* [Error Body Example](error-body-example)
+
 ### Top-Level Fields
 
 ```json
