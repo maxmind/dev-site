@@ -204,23 +204,23 @@ address.
 ```
 
 {{< schema-table key="city" >}}
-  {{< schema-row key="confidence" valueType="integer" valueTypeNote="min: 0, max: 100" insights="true">}}
+  {{< geoip-schema-row key="confidence" valueType="integer" valueTypeNote="min: 0, max: 100" insights="true">}}
   A value from 0-100 representing our confidence that the city is correct.
 
   [Learn more about confidence factors on our Knowledge Base.](https://support.maxmind.com/hc/en-us/articles/4414877149467-IP-Geolocation-Data#h_01FRRHZ767N9MJJ21K9CW04WWQ)
-  {{</ schema-row >}}
+  {{</ geoip-schema-row >}}
 
-  {{< schema-row key="geoname_id" valueType="integer" city="true" insights="true">}}
+  {{< geoip-schema-row key="geoname_id" valueType="integer" city="true" insights="true">}}
   A unique identifier for the city as specified by [GeoNames](https://www.geonames.org/).
 
   [Learn more about GeoNames IDs on our Knowledge Base.](https://support.maxmind.com/hc/en-us/articles/4414877149467-IP-Geolocation-Data#h_01FRRNFD5Z5EWNCAXM6SZZ5H2C)
-  {{</ schema-row >}}
+  {{</ geoip-schema-row >}}
 
-  {{< schema-row key="names" valueType="object" city="true" insights="true">}}
+  {{< geoip-schema-row key="names" valueType="object" city="true" insights="true">}}
   A map from locale codes, such as `en`, to the localized names for the feature.
 
   [Learn more about localized geolocation names on our Knowledge Base.](https://support.maxmind.com/hc/en-us/articles/4414877149467-IP-Geolocation-Data#h_01FRRGRYTGZB29ERDBZCX3MR8Q)
-  {{</ schema-row >}}
+  {{</ geoip-schema-row >}}
 {{</ schema-table >}}
 
 
@@ -246,7 +246,7 @@ address.
 ```
 
 {{< schema-table key="continent" >}}
-  {{< schema-row key="code" valueType="string" country="true" city="true" insights="true">}}
+  {{< geoip-schema-row key="code" valueType="string" country="true" city="true" insights="true">}}
   A two-character code for the continent associated with the IP address. The possible codes are:
 
   * `AF` – Africa
@@ -258,19 +258,19 @@ address.
   * `SA` – South America
 
   [Learn more about continent codes on our Knowledge Base.](https://support.maxmind.com/hc/en-us/articles/4414877149467-IP-Geolocation-Data#h_01FRRJSP2B14KSWWJTXKRWZGKJ)
-  {{</ schema-row >}}
+  {{</ geoip-schema-row >}}
 
-  {{< schema-row key="geoname_id" valueType="integer" country="true" city="true" insights="true">}}
+  {{< geoip-schema-row key="geoname_id" valueType="integer" country="true" city="true" insights="true">}}
   A unique identifier for the continent as specified by [GeoNames](https://www.geonames.org/).
 
   [Learn more about GeoNames IDs on our Knowledge Base.](https://support.maxmind.com/hc/en-us/articles/4414877149467-IP-Geolocation-Data#h_01FRRNFD5Z5EWNCAXM6SZZ5H2C)
-  {{</ schema-row >}}
+  {{</ geoip-schema-row >}}
 
-  {{< schema-row key="names" valueType="object" country="true" city="true" insights="true">}}
+  {{< geoip-schema-row key="names" valueType="object" country="true" city="true" insights="true">}}
   A map from locale codes, such as `en`, to the localized names for the feature.
 
   [Learn more about localized geolocation names on our Knowledge Base.](https://support.maxmind.com/hc/en-us/articles/4414877149467-IP-Geolocation-Data#h_01FRRGRYTGZB29ERDBZCX3MR8Q)
-  {{</ schema-row >}}
+  {{</ geoip-schema-row >}}
 {{</ schema-table >}}
 
 ### Country
@@ -297,35 +297,35 @@ address.
 ```
 
 {{< schema-table key="country" >}}
-  {{< schema-row key="confidence" valueType="integer" valueTypeNote="min: 0, max: 100" insights="true">}}
+  {{< geoip-schema-row key="confidence" valueType="integer" valueTypeNote="min: 0, max: 100" insights="true">}}
   A value from 0-100 representing our confidence that the country is correct.
 
   [Learn more about confidence factors on our Knowledge Base.](https://support.maxmind.com/hc/en-us/articles/4414877149467-IP-Geolocation-Data#h_01FRRHZ767N9MJJ21K9CW04WWQ)
-  {{</ schema-row >}}
+  {{</ geoip-schema-row >}}
 
-  {{< schema-row key="geoname_id" valueType="integer" country="true" city="true" insights="true">}}
+  {{< geoip-schema-row key="geoname_id" valueType="integer" country="true" city="true" insights="true">}}
   A unique identifier for the country as specified by [GeoNames](https://www.geonames.org/).
 
   [Learn more about GeoNames IDs on our Knowledge Base.](https://support.maxmind.com/hc/en-us/articles/4414877149467-IP-Geolocation-Data#h_01FRRNFD5Z5EWNCAXM6SZZ5H2C)
-  {{</ schema-row >}}
+  {{</ geoip-schema-row >}}
 
-  {{< schema-row key="is_in_european_union" valueType="boolean" country="true" city="true" insights="true">}}
+  {{< geoip-schema-row key="is_in_european_union" valueType="boolean" country="true" city="true" insights="true">}}
   This is `true` if the country is a member state of the European Union. Otherwise, the key is not included in the `country` object.
 
   [Learn more about the European Union flag on our Knowledge Base.](https://support.maxmind.com/hc/en-us/articles/4414877149467-IP-Geolocation-Data#h_01FRRMQN1B2WWTDM8HSQ20870M)
-  {{</ schema-row >}}
+  {{</ geoip-schema-row >}}
 
-  {{< schema-row key="iso_code" valueType="string" country="true" city="true" insights="true">}}
+  {{< geoip-schema-row key="iso_code" valueType="string" country="true" city="true" insights="true">}}
   A two-character [ISO 3166-1](https://en.wikipedia.org/wiki/ISO_3166-1) country code for the country associated with the IP address.
 
   [Learn more about country codes on our Knowledge Base.](https://support.maxmind.com/hc/en-us/articles/4414877149467-IP-Geolocation-Data#h_01FRRJSP2B14KSWWJTXKRWZGKJ)
-  {{</ schema-row >}}
+  {{</ geoip-schema-row >}}
 
-  {{< schema-row key="names" valueType="object" country="true" city="true" insights="true">}}
+  {{< geoip-schema-row key="names" valueType="object" country="true" city="true" insights="true">}}
   A map from locale codes, such as `en`, to the localized names for the feature.
 
   [Learn more about localized geolocation names on our Knowledge Base.](https://support.maxmind.com/hc/en-us/articles/4414877149467-IP-Geolocation-Data#h_01FRRGRYTGZB29ERDBZCX3MR8Q)
-  {{</ schema-row >}}
+  {{</ geoip-schema-row >}}
 {{</ schema-table >}}
 
 ### Location
@@ -344,19 +344,19 @@ address.
 ```
 
 {{< schema-table key="location" >}}
-  {{< schema-row key="accuracy_radius" valueType="integer" city="true" insights="true">}}
+  {{< geoip-schema-row key="accuracy_radius" valueType="integer" city="true" insights="true">}}
   The approximate accuracy radius, in kilometers, around the latitude and longitude for the geographical entity (country, subdivision, city or postal code) associated with the IP address. We have a 67% confidence that the location of the end-user falls within the area defined by the accuracy radius and the latitude and longitude coordinates.
 
   [Learn about the geolocation area defined by latitude, longitude, and accuracy radius, on our Knowledge Base.](https://support.maxmind.com/hc/en-us/articles/4414877149467-IP-Geolocation-Data#h_01FRRHZZP6RAYSNZTYE4MQ3MWY)
-  {{</ schema-row >}}
+  {{</ geoip-schema-row >}}
 
-  {{< schema-row key="average_income" valueType="integer" insights="true">}}
+  {{< geoip-schema-row key="average_income" valueType="integer" insights="true">}}
   The average annual income associated with the IP address in US dollars. This is only available for IP addresses in the US.
 
   [Learn more about average income data on our Knowledge Base.](https://support.maxmind.com/hc/en-us/articles/4408208479131-User-Context-Data#h_01FN9BTX4DQGT8W7JBX60A7PM5)
-  {{</ schema-row >}}
+  {{</ geoip-schema-row >}}
 
-  {{< schema-row key="latitude" valueType="decimal" city="true" insights="true">}}
+  {{< geoip-schema-row key="latitude" valueType="decimal" city="true" insights="true">}}
   The approximate [WGS84](https://en.wikipedia.org/wiki/World_Geodetic_System) latitude of the postal code, city, subdivision or country associated with the IP address.
 
   **The coordinates are not precise and should not be used to identify a particular street address
@@ -365,9 +365,9 @@ address.
   geographical area instead of a precise location.**
 
   [Learn about the geolocation area defined by latitude, longitude, and accuracy radius, on our Knowledge Base.](https://support.maxmind.com/hc/en-us/articles/4414877149467-IP-Geolocation-Data#h_01FRRHZZP6RAYSNZTYE4MQ3MWY)
-  {{</ schema-row >}}
+  {{</ geoip-schema-row >}}
 
-  {{< schema-row key="longitude" valueType="decimal" city="true" insights="true">}}
+  {{< geoip-schema-row key="longitude" valueType="decimal" city="true" insights="true">}}
   The approximate [WGS84](https://en.wikipedia.org/wiki/World_Geodetic_System) longitude of the postal code, city, subdivision or country associated with the IP address.
 
   **The coordinates are not precise and should not be used to identify a particular street address
@@ -376,23 +376,23 @@ address.
   geographical area instead of a precise location.**
 
   [Learn about the geolocation area defined by latitude, longitude, and accuracy radius, on our Knowledge Base.](https://support.maxmind.com/hc/en-us/articles/4414877149467-IP-Geolocation-Data#h_01FRRHZZP6RAYSNZTYE4MQ3MWY)
-  {{</ schema-row >}}
+  {{</ geoip-schema-row >}}
 
-  {{< schema-row key="metro_code" valueType="integer" city="true" insights="true">}}
+  {{< geoip-schema-row key="metro_code" valueType="integer" city="true" insights="true">}}
   Metro code is a geolocation target code from Google.
-  {{</ schema-row >}}
+  {{</ geoip-schema-row >}}
 
-  {{< schema-row key="population_density" valueType="integer" insights="true">}}
+  {{< geoip-schema-row key="population_density" valueType="integer" insights="true">}}
   The estimated number of people per square kilometer. This is only available for IP addresses in the US.
 
   [Learn more about population density data on our Knowledge Base.](https://support.maxmind.com/hc/en-us/articles/4408208479131-User-Context-Data#h_01FN9BTX4DQGT8W7JBX60A7PM5)
-  {{</ schema-row >}}
+  {{</ geoip-schema-row >}}
 
-  {{< schema-row key="time_zone" valueType="string" city="true" insights="true">}}
+  {{< geoip-schema-row key="time_zone" valueType="string" city="true" insights="true">}}
   The time zone associated with location, as specified by the [IANA Time Zone Database](https://www.iana.org/time-zones), e.g., "America/New\_York".
 
   [Learn more about time zone data on our Knowledge Base.](https://support.maxmind.com/hc/en-us/articles/4414877149467-IP-Geolocation-Data#h_01FRRKYHGB5C5Y1G4Y3AW18PYC)
-  {{</ schema-row >}}
+  {{</ geoip-schema-row >}}
 {{</ schema-table >}}
 
 ### Postal
@@ -407,7 +407,7 @@ address.
 ```
 
 {{< schema-table key="postal" >}}
-  {{< schema-row key="code" valueType="string" city="true" insights="true">}}
+  {{< geoip-schema-row key="code" valueType="string" city="true" insights="true">}}
   A postal code close to the user’s location. For the following countries, we return partial postal codes with the number of characters indicated below:
 
   * United States: 5
@@ -421,13 +421,13 @@ address.
   * Singapore: 2
 
   [Learn more about postal code data on our Knowledge Base.](https://support.maxmind.com/hc/en-us/articles/4414877149467-IP-Geolocation-Data#h_01FRRJSP2B14KSWWJTXKRWZGKJ)
-  {{</ schema-row >}}
+  {{</ geoip-schema-row >}}
 
-  {{< schema-row key="confidence" valueType="integer" valueTypeNote="min: 0 max: 100" insights="true">}}
+  {{< geoip-schema-row key="confidence" valueType="integer" valueTypeNote="min: 0 max: 100" insights="true">}}
   A value from 0-100 representing our confidence that the postal code is correct.
 
   [Learn more about confidence factors on our Knowledge Base.](https://support.maxmind.com/hc/en-us/articles/4414877149467-IP-Geolocation-Data#h_01FRRHZ767N9MJJ21K9CW04WWQ)
-  {{</ schema-row >}}
+  {{</ geoip-schema-row >}}
 {{</ schema-table >}}
 
 ### Registered Country
@@ -455,29 +455,29 @@ address.
 ```
 
 {{< schema-table key="registered_country" >}}
-  {{< schema-row key="geoname_id" valueType="integer" country="true" city="true" insights="true">}}
+  {{< geoip-schema-row key="geoname_id" valueType="integer" country="true" city="true" insights="true">}}
   A unique identifier for the country as specified by [GeoNames](https://www.geonames.org/).
 
   [Learn more about GeoNames IDs on our Knowledge Base.](https://support.maxmind.com/hc/en-us/articles/4414877149467-IP-Geolocation-Data#h_01FRRNFD5Z5EWNCAXM6SZZ5H2C)
-  {{</ schema-row >}}
+  {{</ geoip-schema-row >}}
 
-  {{< schema-row key="is_in_european_union" valueType="boolean" country="true" city="true" insights="true">}}
+  {{< geoip-schema-row key="is_in_european_union" valueType="boolean" country="true" city="true" insights="true">}}
   This is `true` if the country is a member state of the European Union. Otherwise, the key is not included in the `country` object.
 
   [Learn more about the European Union flag on our Knowledge Base.](https://support.maxmind.com/hc/en-us/articles/4414877149467-IP-Geolocation-Data#h_01FRRMQN1B2WWTDM8HSQ20870M)
-  {{</ schema-row >}}
+  {{</ geoip-schema-row >}}
 
-  {{< schema-row key="iso_code" valueType="string" country="true" city="true" insights="true">}}
+  {{< geoip-schema-row key="iso_code" valueType="string" country="true" city="true" insights="true">}}
   A two-character [ISO 3166-1](https://en.wikipedia.org/wiki/ISO_3166-1) country code for the country associated with the IP address.
 
   [Learn more about country codes on our Knowledge Base.](https://support.maxmind.com/hc/en-us/articles/4414877149467-IP-Geolocation-Data#h_01FRRJSP2B14KSWWJTXKRWZGKJ)
-  {{</ schema-row >}}
+  {{</ geoip-schema-row >}}
 
-  {{< schema-row key="names" valueType="object" country="true" city="true" insights="true">}}
+  {{< geoip-schema-row key="names" valueType="object" country="true" city="true" insights="true">}}
   A map from locale codes, such as `en`, to the localized names for the feature.
 
   [Learn more about localized geolocation names on our Knowledge Base.](https://support.maxmind.com/hc/en-us/articles/4414877149467-IP-Geolocation-Data#h_01FRRGRYTGZB29ERDBZCX3MR8Q)
-  {{</ schema-row >}}
+  {{</ geoip-schema-row >}}
 {{</ schema-table >}}
 
 ### Represented Country
@@ -506,35 +506,35 @@ address.
 ```
 
 {{< schema-table key="represented_country" >}}
-  {{< schema-row key="geoname_id" valueType="integer" country="true" city="true" insights="true">}}
+  {{< geoip-schema-row key="geoname_id" valueType="integer" country="true" city="true" insights="true">}}
   A unique identifier for the country as specified by [GeoNames](https://www.geonames.org/).
 
   [Learn more about GeoNames IDs on our Knowledge Base.](https://support.maxmind.com/hc/en-us/articles/4414877149467-IP-Geolocation-Data#h_01FRRNFD5Z5EWNCAXM6SZZ5H2C)
-  {{</ schema-row >}}
+  {{</ geoip-schema-row >}}
 
-  {{< schema-row key="is_in_european_union" valueType="boolean" country="true" city="true" insights="true">}}
+  {{< geoip-schema-row key="is_in_european_union" valueType="boolean" country="true" city="true" insights="true">}}
   This is `true` if the country is a member state of the European Union. Otherwise, the key is not included in the `country` object.
 
   [Learn more about the European Union flag on our Knowledge Base.](https://support.maxmind.com/hc/en-us/articles/4414877149467-IP-Geolocation-Data#h_01FRRMQN1B2WWTDM8HSQ20870M)
-  {{</ schema-row >}}
+  {{</ geoip-schema-row >}}
 
-  {{< schema-row key="iso_code" valueType="string" country="true" city="true" insights="true">}}
+  {{< geoip-schema-row key="iso_code" valueType="string" country="true" city="true" insights="true">}}
   A two-character [ISO 3166-1](https://en.wikipedia.org/wiki/ISO_3166-1) country code for the country associated with the IP address.
 
   [Learn more about country codes on our Knowledge Base.](https://support.maxmind.com/hc/en-us/articles/4414877149467-IP-Geolocation-Data#h_01FRRJSP2B14KSWWJTXKRWZGKJ)
-  {{</ schema-row >}}
+  {{</ geoip-schema-row >}}
 
-  {{< schema-row key="names" valueType="object" country="true" city="true" insights="true">}}
+  {{< geoip-schema-row key="names" valueType="object" country="true" city="true" insights="true">}}
   A map from locale codes, such as `en`, to the localized names for the feature.
 
   [Learn more about localized geolocation names on our Knowledge Base.](https://support.maxmind.com/hc/en-us/articles/4414877149467-IP-Geolocation-Data#h_01FRRGRYTGZB29ERDBZCX3MR8Q)
-  {{</ schema-row >}}
+  {{</ geoip-schema-row >}}
 
-  {{< schema-row key="type" valueType="string" country="true" city="true" insights="true">}}
+  {{< geoip-schema-row key="type" valueType="string" country="true" city="true" insights="true">}}
   The type of represented country. Currently limited to `military`, but may include other types in the future.
 
   [Learn more about localized geolocation names on our Knowledge Base.](https://support.maxmind.com/hc/en-us/articles/4414877149467-IP-Geolocation-Data#h_01FRRGRYTGZB29ERDBZCX3MR8Q)
-  {{</ schema-row >}}
+  {{</ geoip-schema-row >}}
 {{</ schema-table >}}
 
 ### Subdivisions
@@ -561,29 +561,29 @@ address.
 ```
 
 {{< schema-table key="subdivision" >}}
-  {{< schema-row key="confidence" valueType="integer" valueTypeNote="min: 0, max: 100" insights="true">}}
+  {{< geoip-schema-row key="confidence" valueType="integer" valueTypeNote="min: 0, max: 100" insights="true">}}
   A value from 0-100 representing our confidence that the region is correct.
 
   [Learn more about confidence factors on our Knowledge Base.](https://support.maxmind.com/hc/en-us/articles/4414877149467-IP-Geolocation-Data#h_01FRRHZ767N9MJJ21K9CW04WWQ)
-  {{</ schema-row >}}
+  {{</ geoip-schema-row >}}
 
-  {{< schema-row key="geoname_id" valueType="integer" city="true" insights="true">}}
+  {{< geoip-schema-row key="geoname_id" valueType="integer" city="true" insights="true">}}
   A unique identifier for the region as specified by [GeoNames](https://www.geonames.org/).
 
   [Learn more about GeoNames IDs on our Knowledge Base.](https://support.maxmind.com/hc/en-us/articles/4414877149467-IP-Geolocation-Data#h_01FRRNFD5Z5EWNCAXM6SZZ5H2C)
-  {{</ schema-row >}}
+  {{</ geoip-schema-row >}}
 
-  {{< schema-row key="iso_code" valueType="string" city="true" insights="true">}}
+  {{< geoip-schema-row key="iso_code" valueType="string" city="true" insights="true">}}
   A string of up to three characters containing the region-portion of the [ISO 3166-2](https://en.wikipedia.org/wiki/ISO_3166-2) code for the region associated with the IP address.
 
   [Learn more about ISO code data on our Knowledge Base.](https://support.maxmind.com/hc/en-us/articles/4414877149467-IP-Geolocation-Data#h_01FRRJSP2B14KSWWJTXKRWZGKJ)
-  {{</ schema-row >}}
+  {{</ geoip-schema-row >}}
 
-  {{< schema-row key="names" valueType="object" city="true" insights="true">}}
+  {{< geoip-schema-row key="names" valueType="object" city="true" insights="true">}}
   A map from locale codes, such as `en`, to the localized names for the feature.
 
   [Learn more about localized geolocation names on our Knowledge Base.](https://support.maxmind.com/hc/en-us/articles/4414877149467-IP-Geolocation-Data#h_01FRRGRYTGZB29ERDBZCX3MR8Q)
-  {{</ schema-row >}}
+  {{</ geoip-schema-row >}}
 {{</ schema-table >}}
 
 ### Traits
@@ -616,131 +616,131 @@ address.
 ```
 
 {{< schema-table key="traits" >}}
-  {{< schema-row key="autonomous_system_number" valueType="integer" city="true" insights="true">}}
+  {{< geoip-schema-row key="autonomous_system_number" valueType="integer" city="true" insights="true">}}
   The [autonomous system number](https://en.wikipedia.org/wiki/Autonomous_system_(Internet)) associated with the IP address.
 
   [Learn more about autonomous system data on our Knowledge Base.](https://support.maxmind.com/hc/en-us/articles/4408200231067-IP-Network-Data#h_01FN989WWSE56YD6AV4QSPSWDW)
-  {{</ schema-row >}}
+  {{</ geoip-schema-row >}}
 
-  {{< schema-row key="autonomous_system_organization" valueType="string" city="true" insights="true">}}
+  {{< geoip-schema-row key="autonomous_system_organization" valueType="string" city="true" insights="true">}}
   The organization associated with the registered [autonomous system number](https://en.wikipedia.org/wiki/Autonomous_system_(Internet)) for the IP address.
 
   [Learn more about autonomous system data on our Knowledge Base.](https://support.maxmind.com/hc/en-us/articles/4408200231067-IP-Network-Data#h_01FN989WWSE56YD6AV4QSPSWDW)
-  {{</ schema-row >}}
+  {{</ geoip-schema-row >}}
 
-  {{< schema-row key="connection_type" valueType="string" city="true" insights="true">}}
+  {{< geoip-schema-row key="connection_type" valueType="string" city="true" insights="true">}}
   One of the following values: `Cable/DSL`, `Cellular`, `Corporate`, or `Satellite`. Additional values may be added in the future.
 
   **This field is not present in the GeoLite2 City web service.**
 
   [Learn more about connection type data on our Knowledge Base.](https://support.maxmind.com/hc/en-us/articles/4408200231067-IP-Network-Data#h_01FN988THBX8RVERNTZ12BY2EC)
-  {{</ schema-row >}}
+  {{</ geoip-schema-row >}}
 
-  {{< schema-row key="domain" valueType="string" city="true" insights="true">}}
+  {{< geoip-schema-row key="domain" valueType="string" city="true" insights="true">}}
   The second level domain associated with the IP address. This will be something like “example.com” or “example.co.uk”, not “foo.example.com”.
 
   **This field is not present in the GeoLite2 City web service.**
 
   [Learn more about domain name data on our Knowledge Base.](https://support.maxmind.com/hc/en-us/articles/4408200231067-IP-Network-Data#h_01FN98A5BNTS0GGWTD2QA4AHXN)
-  {{</ schema-row >}}
+  {{</ geoip-schema-row >}}
 
-  {{< schema-row key="ip_address" valueType="string" country="true" city="true" insights="true">}}
+  {{< geoip-schema-row key="ip_address" valueType="string" country="true" city="true" insights="true">}}
   The requested IP address.
-  {{</ schema-row >}}
+  {{</ geoip-schema-row >}}
 
-  {{< schema-row key="is_anonymous" valueType="boolean" insights="true">}}
+  {{< geoip-schema-row key="is_anonymous" valueType="boolean" insights="true">}}
   This is `true` if the IP address belongs to any sort of anonymous network. Otherwise, the key is not included in the `traits` object.
 
   [Learn more about anonymizer and proxy detection on our Knowledge Base.](https://support.maxmind.com/hc/en-us/articles/4408208507163-Anonymizer-and-Proxy-Data#h_01FN9BBGV3ZG3TC0357Q9Y07C6)
-  {{</ schema-row >}}
+  {{</ geoip-schema-row >}}
 
-  {{< schema-row key="is_anonymous_vpn" valueType="boolean" insights="true">}}
+  {{< geoip-schema-row key="is_anonymous_vpn" valueType="boolean" insights="true">}}
   This is `true` if the IP address is registered to an anonymous VPN provider. Otherwise, the key is not included in the `traits` object.
 
   If a VPN provider does not register subnets under names associated with them, we will likely only flag their IP ranges using the `is_hosting_provider` flag.
 
   [Learn more about VPNs on our Knowledge Base.](https://support.maxmind.com/hc/en-us/articles/4408208507163#h_01G1EDVJKNQY02XXFRM31N7SS2)
-  {{</ schema-row >}}
+  {{</ geoip-schema-row >}}
 
-  {{< schema-row key="is_anycast" valueType="boolean" country="true" city="true" insights="true">}}
+  {{< geoip-schema-row key="is_anycast" valueType="boolean" country="true" city="true" insights="true">}}
   This is `true` if the IP address belongs to an [anycast network](https://en.wikipedia.org/wiki/Anycast).
-  {{</ schema-row >}}
+  {{</ geoip-schema-row >}}
 
-  {{< schema-row key="is_hosting_provider" valueType="boolean" insights="true">}}
+  {{< geoip-schema-row key="is_hosting_provider" valueType="boolean" insights="true">}}
   This is `true` if the IP address belongs to a hosting or VPN provider (see description of `is_anonymous_vpn` flag). Otherwise, the key is not included in the `traits` object.
 
   [Learn more about hosting providers used for anonymizing on our Knowledge Base.](https://support.maxmind.com/hc/en-us/articles/4408208507163#h_01G1EDVXR9RQFMCY6SAWJM4YH0)
-  {{</ schema-row >}}
+  {{</ geoip-schema-row >}}
 
-  {{< schema-row key="is_public_proxy" valueType="boolean" insights="true">}}
+  {{< geoip-schema-row key="is_public_proxy" valueType="boolean" insights="true">}}
   This is `true` if the IP address belongs to a public proxy. Otherwise, the key is not included in the `traits` object.
 
   [Learn more about public proxies on our Knowledge Base.](https://support.maxmind.com/hc/en-us/articles/4408208507163#h_01G1EDW5RZQCD4X4A76908DJ6Z)
-  {{</ schema-row >}}
+  {{</ geoip-schema-row >}}
 
-  {{< schema-row key="is_residential_proxy" valueType="boolean" insights="true">}}
+  {{< geoip-schema-row key="is_residential_proxy" valueType="boolean" insights="true">}}
   This is `true` if the IP address is on a suspected anonymizing network and belongs to a residential ISP (does not include peer-to-peer proxy IPs). Otherwise, the key is not included in the `traits` object.
 
   [Learn more about residential proxies on our Knowledge Base.](https://support.maxmind.com/hc/en-us/articles/4408208507163#h_01G1EDWEW3HAJT97P8EAZFQZMZ)
-  {{</ schema-row >}}
+  {{</ geoip-schema-row >}}
 
-  {{< schema-row key="is_tor_exit_node" valueType="boolean" insights="true">}}
+  {{< geoip-schema-row key="is_tor_exit_node" valueType="boolean" insights="true">}}
   This is `true` if the IP address is a Tor exit node. Otherwise, the key is not included in the `traits` object.
 
   [Learn more about Tor exit nodes on our Knowledge Base.](https://support.maxmind.com/hc/en-us/articles/4408208507163#h_01G1EDWR1VQR8A0NB3R8WXT8QF)
-  {{</ schema-row >}}
+  {{</ geoip-schema-row >}}
 
-  {{< schema-row key="isp" valueType="boolean" city="true" insights="true">}}
+  {{< geoip-schema-row key="isp" valueType="boolean" city="true" insights="true">}}
   The name of the ISP associated with the IP address.
 
   **This field is not present in the GeoLite2 City web service.**
 
   [Learn more about ISP data on our Knowledge Base.](https://support.maxmind.com/hc/en-us/articles/4408200231067-IP-Network-Data#h_01FN989KHXR7TGXPB5T2DK0Q77)
-  {{</ schema-row >}}
+  {{</ geoip-schema-row >}}
 
-  {{< schema-row key="mobile_country_code" valueType="string" city="true" insights="true">}}
+  {{< geoip-schema-row key="mobile_country_code" valueType="string" city="true" insights="true">}}
   The [mobile country code (MCC)](https://en.wikipedia.org/wiki/Mobile_country_code) associated with the IP address and ISP.
 
   This field is not present in the GeoLite2 City web service.
 
   [Learn more about mobile country code data on our Knowledge Base.](https://support.maxmind.com/hc/en-us/articles/4408200231067-IP-Network-Data#h_01FT6Y6ANRH9GWYXE78B4RXAEX)
-  {{</ schema-row >}}
+  {{</ geoip-schema-row >}}
 
-  {{< schema-row key="mobile_network_code" valueType="string" city="true" insights="true">}}
+  {{< geoip-schema-row key="mobile_network_code" valueType="string" city="true" insights="true">}}
   The [mobile network code (MNC)](https://en.wikipedia.org/wiki/Mobile_country_code) associated with the IP address and ISP.
 
   This field is not present in the GeoLite2 City web service.
 
   [Learn more about mobile network code data on our Knowledge Base.](https://support.maxmind.com/hc/en-us/articles/4408200231067-IP-Network-Data#h_01FT6Y6ANRH9GWYXE78B4RXAEX)
-  {{</ schema-row >}}
+  {{</ geoip-schema-row >}}
 
-  {{< schema-row key="network" valueType="string" country="true" city="true" insights="true">}}
+  {{< geoip-schema-row key="network" valueType="string" country="true" city="true" insights="true">}}
   The network in [CIDR notation](https://en.wikipedia.org/wiki/Classless_Inter-Domain_Routing#CIDR_notation) associated with the record. In particular, this is the largest network where all of the fields besides `ip_address` have the same value.
-  {{</ schema-row >}}
+  {{</ geoip-schema-row >}}
 
-  {{< schema-row key="organization" valueType="string" city="true" insights="true">}}
+  {{< geoip-schema-row key="organization" valueType="string" city="true" insights="true">}}
   The name of the organization associated with the IP address.
 
   **This field is not present in the GeoLite2 City web service.**
 
   [Learn more about organization data on our Knowledge Base.](https://support.maxmind.com/hc/en-us/articles/4408200231067-IP-Network-Data#h_01FN989KHXR7TGXPB5T2DK0Q77)
-  {{</ schema-row >}}
+  {{</ geoip-schema-row >}}
 
-  {{< schema-row key="static_ip_score" valueType="decimal" valueTypeNote="min: 0, max: 99.99" insights="true">}}
+  {{< geoip-schema-row key="static_ip_score" valueType="decimal" valueTypeNote="min: 0, max: 99.99" insights="true">}}
   An indicator of how static or dynamic an IP address is. The value ranges from 0 to 99.99 with higher values meaning a greater static association. For example, many IP addresses with a `user_type` of `cellular` have a score under one. Broadband IPs that don’t change very often typically have a score above thirty.
 
   This indicator can be useful for deciding whether an IP address represents the same user over time.
 
   [Learn more about the static IP score on our Knowledge Base.](https://support.maxmind.com/hc/en-us/articles/4408208479131-User-Context-Data#h_01FN9BSX7X351J8PV0WCH0E88F)
-  {{</ schema-row >}}
+  {{</ geoip-schema-row >}}
 
-  {{< schema-row key="user_count" valueType="integer" insights="true">}}
+  {{< geoip-schema-row key="user_count" valueType="integer" insights="true">}}
   The estimated number of users sharing the IP/network during the past 24 hours. For IPv4, the count is for the individual IP. For IPv6, the count is for the /64 network.
 
   [Learn more about the user count on our Knowledge Base.](https://support.maxmind.com/hc/en-us/articles/4408208479131-User-Context-Data#h_01FN9BT5PC591YRNBFZGHDYNS6)
-  {{</ schema-row >}}
+  {{</ geoip-schema-row >}}
 
-  {{< schema-row key="user_type" valueType="string" insights="true">}}
+  {{< geoip-schema-row key="user_type" valueType="string" insights="true">}}
   The user type associated with the IP address. This will be one of the following values:
 
   * `business`
@@ -760,7 +760,7 @@ address.
   * `traveler`
 
     [Learn more about the user type on our Knowledge Base.](https://support.maxmind.com/hc/en-us/articles/4408208479131-User-Context-Data#h_01FN9BTGFQVP41YNPDGM454T2T)
-  {{</ schema-row >}}
+  {{</ geoip-schema-row >}}
 {{</ schema-table >}}
 
 ### MaxMind
@@ -774,11 +774,11 @@ address.
 ```
 
 {{< schema-table key="maxmind" >}}
-  {{< schema-row key="queries_remaining" valueType="integer" country="true" city="true" insights="true">}}
+  {{< geoip-schema-row key="queries_remaining" valueType="integer" country="true" city="true" insights="true">}}
   The approximate number of remaining queries available for the end point which is being called.
 
   **This field is not present in the GeoLite2 City web service.**
-  {{</ schema-row >}}
+  {{</ geoip-schema-row >}}
 {{</ schema-table >}}
 
 ## Miscellaneous Notes
@@ -875,7 +875,7 @@ following:
 | `subdivisions`                                             | `iso_code` or `geoname_id` |
 {{</ table >}}
 
-## Bodies
+## Example Response Bodies
 
 Each service returns data as a JSON document. The document that is returned
 always consists of an object (aka map or hash). Below are the schema definitions
