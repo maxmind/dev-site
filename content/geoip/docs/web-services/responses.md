@@ -189,6 +189,7 @@ For full examples of response bodies, select one of the following:
 
 
 ### City
+{{< anchor-target schema--response--city >}}
 
 `city` is a JSON object that contains details about the city associated with the IP
 address.
@@ -232,6 +233,7 @@ address.
 
 
 ### Continent
+{{< anchor-target schema--response--continent >}}
 
 `continent` is a JSON object that contains information about the continent associated with the IP address.
 
@@ -281,6 +283,7 @@ address.
 {{</ schema-table >}}
 
 ### Country
+{{< anchor-target schema--response--country >}}
 
 `country` is a JSON object that contains details about the country where MaxMind believes the end user is located.
 
@@ -336,6 +339,7 @@ address.
 {{</ schema-table >}}
 
 ### Location
+{{< anchor-target schema--response--location >}}
 
 `location` is a JSON object that contains specific details about the location associated with the IP address.
 
@@ -403,6 +407,7 @@ address.
 {{</ schema-table >}}
 
 ### Postal
+{{< anchor-target schema--response--postal >}}
 
 `postal` is a JSON object that contains details about the postal code associated with the IP address.
 
@@ -438,6 +443,7 @@ address.
 {{</ schema-table >}}
 
 ### Registered Country
+{{< anchor-target schema--response--registered-country >}}
 
 `registered_country` is a JSON object that contains details about the country in which the ISP has registered the IP address.
 
@@ -488,6 +494,7 @@ address.
 {{</ schema-table >}}
 
 ### Represented Country
+{{< anchor-target schema--response--represented-country >}}
 
 `represented_country` is a JSON object that contains details about the country which is represented by users of the IP address. For instance, the country represented by an overseas military base.
 
@@ -545,6 +552,7 @@ address.
 {{</ schema-table >}}
 
 ### Subdivisions
+{{< anchor-target schema--response--subdivisions >}}
 
 `subdivisions` is an array of JSON objects. Each of these objects contains details about a subdivision of the country in which the IP address resides. Subdivisions are arranged from largest to smallest.
 
@@ -594,6 +602,7 @@ address.
 {{</ schema-table >}}
 
 ### Traits
+{{< anchor-target schema--response--traits >}}
 
 `traits` is a JSON object that contains general traits associated with the IP address.
 
@@ -771,6 +780,7 @@ address.
 {{</ schema-table >}}
 
 ### MaxMind
+{{< anchor-target schema--response--maxmind >}}
 
 `maxmind` is a JSON object that contains information related to your MaxMind account.
 
