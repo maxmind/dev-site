@@ -28,7 +28,6 @@
     font-weight: 700;
     line-height: 1.2em;
     margin: 0;
-    padding-top: var(--mm-spacing);
     position: relative;
     scroll-margin-top: calc(var(--page-header-height) + var(--mm-spacing));
   }
@@ -95,7 +94,6 @@
 
   .search__next,
   .search__previous {
-    border-bottom: 2px dotted var(--mm-color-display-text);
     color: var(--mm-color-display-text);
     font-size: 18px;
     text-decoration: none;
