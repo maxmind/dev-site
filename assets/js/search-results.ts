@@ -11,6 +11,10 @@ window.addEventListener("DOMContentLoaded", () => {
   const resultsList = <HTMLDivElement>(
     document.querySelector(".search-results__list")
   );
+  const searchNext = <HTMLLinkElement>document.querySelector(".search__next");
+  const searchPrev = <HTMLLinkElement>(
+    document.querySelector(".search__previous")
+  );
 
   const searchProperty = window.location.search;
   const urlSearchParams = new URLSearchParams(searchProperty);
@@ -21,13 +25,6 @@ window.addEventListener("DOMContentLoaded", () => {
     try {
       const results = await GoogleSearch(query, startIndex);
       loading.style.display = "none";
-
-      const searchNext = <HTMLLinkElement>(
-        document.querySelector(".search__next")
-      );
-      const searchPrev = <HTMLLinkElement>(
-        document.querySelector(".search__previous")
-      );
 
       if (results.items) {
         resultsHeading.textContent = `Search results for ${query}`;
@@ -42,7 +39,7 @@ window.addEventListener("DOMContentLoaded", () => {
           of
           ${results.queries.request[0].totalResults}`;
 
-        results.items?.map((result) => {
+        results.items.forEach((result) => {
           const article = document.createElement("article");
           article.className = "search__result-list-item";
 
@@ -96,16 +93,14 @@ window.addEventListener("DOMContentLoaded", () => {
       p.textContent = "Please try again.";
 
       resultsHeading.textContent = "There was an issue performing the search.";
-      resultsHeading.appendChild(p);
+      resultsHeading.insertAdjacentElement("afterend", p);
     }
   };
 
-  if (searchProperty) {
-    if (query.trim() === "") {
-      loading.style.display = "none";
-      resultsHeading.textContent = "Please enter a search query";
-    } else {
-      fetchResults();
-    }
+  if (query.trim() === "") {
+    loading.style.display = "none";
+    resultsHeading.textContent = "Please enter a search query";
+  } else {
+    fetchResults();
   }
 });
