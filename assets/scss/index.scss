@@ -20,6 +20,7 @@
 @import 'alert';
 @import 'link-group';
 @import 'tag';
+@import 'schema';
 
 *:focus {
   outline-color: var(--mm-color-logo-blue-light);
@@ -29,4 +30,9 @@
 
 .hide {
   display: none !important;
+}
+
+// Account for the fixed header
+:target {
+  scroll-margin-top: 100px;
 }

@@ -1,0 +1,44 @@
+{{ $parentKey := .Parent.Get "key" }}
+{{ $parentKey = replace $parentKey "_" "-" }}
+{{ $key := .Get "key" }}
+{{ $type := .Get "type" }}
+{{ $fragment := printf "schema--%s--%s__%s" $type $parentKey $key }}
+
+{{ $score := .Get "score" }}
+{{ $insights := .Get "insights" }}
+{{ $factors := .Get "factors" }}
+
+{{ $hasScore := eq $score "true" }}
+{{ $hasInsights := eq $insights "true" }}
+{{ $hasFactors := eq $factors "true" }}
+
+<tr>
+  <td class="schema__key-cell">
+    <a href="#{{ $fragment }}"><code class="schema__row-key">{{ $key }}</code></a>
+  </td>
+  <td class="schema__type-cell">
+    {{ .Get "valueType" }}
+  </td>
+  <td>
+    <div id="{{ $fragment }}">
+      {{ .Inner | .Page.RenderString }}
+      {{ with .Get "valueTypeNote" }}
+        <p>
+          <em>{{ . }}</em>
+        </p>
+      {{ end }}
+      {{ if eq $type "response" }}
+        <div>
+          <span class="tag {{ if $hasScore }}tag--checked{{ else }}tag--disabled{{ end }}">
+            minFraud Score
+          </span>
+          <span class="tag {{ if $hasInsights }}tag--checked{{ else }}tag--disabled{{ end }}">
+            minFraud Insights
+          </span>
+          <span class="tag {{ if $hasFactors }}tag--checked{{ else }}tag--disabled{{ end }}">
+            minFraud Factors
+          </span>
+        </div>
+      {{ end }}
+    </div>
+</tr>

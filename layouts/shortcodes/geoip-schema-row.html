@@ -1,0 +1,41 @@
+{{ $parentKey := .Parent.Get "key" }}
+{{ $parentKey = replace $parentKey "_" "-" }}
+{{ $key := .Get "key" }}
+{{ $fragment := printf "schema--response--%s__%s" $parentKey $key }}
+
+{{ $country := .Get "country" }}
+{{ $city := .Get "city" }}
+{{ $insights := .Get "insights" }}
+
+{{ $hasCountry := eq $country "true" }}
+{{ $hasCity := eq $city "true" }}
+{{ $hasInsights := eq $insights "true" }}
+
+<tr>
+  <td class="schema__key-cell">
+    <a href="#{{ $fragment }}"><code class="schema__row-key">{{ $key }}</code></a>
+  </td>
+  <td class="schema__type-cell">
+    {{ .Get "valueType" }}
+  </td>
+  <td>
+    <div id="{{ $fragment }}">
+      {{ .Inner | .Page.RenderString }}
+      {{ with .Get "valueTypeNote" }}
+        <p>
+          <em>{{ . }}</em>
+        </p>
+      {{ end }}
+      <div>
+        <span class="tag {{ if $hasCountry }}tag--checked{{ else }}tag--disabled{{ end }}">
+          GeoIP Country
+        </span>
+        <span class="tag {{ if $hasCity }}tag--checked{{ else }}tag--disabled{{ end }}">
+          GeoIP City
+        </span>
+        <span class="tag {{ if $hasInsights }}tag--checked{{ else }}tag--disabled{{ end }}">
+          GeoIP Insights
+        </span>
+      </div>
+    </div>
+</tr>

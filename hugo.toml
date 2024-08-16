@@ -14,7 +14,7 @@ title = 'MaxMind'
     lineNumbersInTable = false
     noClasses = true
     noHl = false
-    style = 'monokai'
+    style = 'doom-one2'
     tabWidth = 4
 
 [menus]
@@ -53,15 +53,30 @@ title = 'MaxMind'
       parent = 'minFraud'
       weight = 60
     [[menus.minfraud]]
+      name = 'API Documentation'
+      pageRef = '/minfraud/api-documentation'
+      parent = 'minFraud'
+      weight = 70
+      [[menus.minfraud]]
+        name = 'Requests'
+        pageRef = '/minfraud/api-documentation/requests'
+        parent = 'API Documentation'
+        weight = 10
+      [[menus.minfraud]]
+        name = 'Responses'
+        pageRef = '/minfraud/api-documentation/responses'
+        parent = 'API Documentation'
+        weight = 20
+    [[menus.minfraud]]
       name = 'minFraud Legacy'
       pageRef = '/minfraud/minfraud-legacy'
       parent = 'minFraud'
-      weight = 70
+      weight = 80
     [[menus.minfraud]]
       name = 'Proxy Detection Legacy Web Service'
       pageRef = '/minfraud/proxy-detection'
       parent = 'minFraud'
-      weight = 80
+      weight = 90
   [[menus.geoip]]
     name = 'GeoIP'
     pageRef = '/geoip'
