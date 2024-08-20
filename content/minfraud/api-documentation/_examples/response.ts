@@ -232,6 +232,44 @@ export const insights = {
 
 export const factors = {
   ...insights,
+  risk_score_reasons: [
+    {
+      "multiplier": 45,
+      "reasons": [
+        {
+          "code": "ANONYMOUS_IP",
+          "reason": "Risk due to IP being an Anonymous IP"
+        }
+      ]
+    },
+    {
+      "multiplier": 1.8,
+      "reasons": [
+        {
+          "code": "TIME_OF_DAY",
+          "reason": "Risk due to local time of day"
+        }
+      ]
+    },
+    {
+      "multiplier": 1.6,
+      "reasons": [
+        {
+          "reason": "Riskiness of newly-sighted email domain",
+          "code": "EMAIL_DOMAIN_NEW"
+        }
+      ]
+    },
+    {
+      "multiplier": 0.34,
+      "reasons": [
+        {
+          "code": "EMAIL_ADDRESS_NEW",
+          "reason": "Riskiness of newly-sighted email address"
+        }
+      ]
+    }
+  ],
   subscores: {
     avs_result: 0.01,
     billing_address: 0.02,

@@ -169,6 +169,22 @@ minFraud service you query and the inputs provided.
   </Property>
 
   <Property
+    linkToSchemaName={'Response | Risk Score Reasons'}
+    name="risk_score_reasons"
+    services="factors"
+  >
+    <Alert type="info">
+      The risk reasons output codes and reasons are currently in beta and are subject to change.
+      These outputs are being actively developed and tested, and may undergo modifications that could impact their structure, format, and content.
+      While we strive to maintain stability, we recommend that you use these beta outputs with caution and avoid relying on them for critical applications.
+      Your feedback is valuable and will help us improve the final release.
+    </Alert>
+
+    This array contains objects that describe risk score reasons for a given transaction that change the risk score significantly.
+
+  </Property>
+
+  <Property
     linkToSchemaName={'Response | Subscores'}
     name="subscores"
     services="factors"
