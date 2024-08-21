@@ -76,6 +76,8 @@ module.exports = [
             'https://www.maxmind.com',
 
             // HubSpot chat
+            // eslint-disable-next-line max-len
+            // https://knowledge.hubspot.com/domains-and-urls/ssl-and-domain-security-in-hubspot#content-security-policy
             'https://api.hubspot.com',
             'https://forms.hscollectedforms.net',
             'https://forms.hsforms.com',
@@ -109,6 +111,7 @@ module.exports = [
 
             // HubSpot chat
             'https://forms.hsforms.com',
+            'https://track.hubspot.com',
           ],
           'object-src': [
             cspKeywords.NONE,
