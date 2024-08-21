@@ -80,6 +80,7 @@ module.exports = [
             'https://forms.hscollectedforms.net',
             'https://forms.hsforms.com',
 
+            // eslint-disable-next-line max-len
             // https://developers.google.com/tag-platform/security/guides/csp#google_analytics_4_google_analytics
             'https://*.google-analytics.com',
             'https://*.analytics.google.com',
@@ -126,6 +127,7 @@ module.exports = [
             'https://js.hs-banner.com',
             'https://js.usemessages.com',
 
+            // eslint-disable-next-line max-len
             // https://developers.google.com/tag-platform/security/guides/csp#google_ads_conversions
             'https://www.googleadservices.com',
             'https://www.google.com',
