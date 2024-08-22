@@ -76,10 +76,13 @@ module.exports = [
             'https://www.maxmind.com',
 
             // HubSpot chat
+            // eslint-disable-next-line max-len
+            // https://knowledge.hubspot.com/domains-and-urls/ssl-and-domain-security-in-hubspot#content-security-policy
             'https://api.hubspot.com',
             'https://forms.hscollectedforms.net',
             'https://forms.hsforms.com',
 
+            // eslint-disable-next-line max-len
             // https://developers.google.com/tag-platform/security/guides/csp#google_analytics_4_google_analytics
             'https://*.google-analytics.com',
             'https://*.analytics.google.com',
@@ -108,6 +111,7 @@ module.exports = [
 
             // HubSpot chat
             'https://forms.hsforms.com',
+            'https://track.hubspot.com',
           ],
           'object-src': [
             cspKeywords.NONE,
@@ -126,6 +130,7 @@ module.exports = [
             'https://js.hs-banner.com',
             'https://js.usemessages.com',
 
+            // eslint-disable-next-line max-len
             // https://developers.google.com/tag-platform/security/guides/csp#google_ads_conversions
             'https://www.googleadservices.com',
             'https://www.google.com',
