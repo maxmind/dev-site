@@ -16,6 +16,9 @@ import responseJson from '../_examples/response';
   </Alert>
 
 This array contains
-[risk score reason objects](#schema--response--risk-score-reason).
+[risk score reason objects](#schema--response--risk-score-reason). Risk score
+reasons are usually only returned for medium to high risk transactions. If there
+were no significant changes to the risk score due to these reasons, then this
+array will not be present in the response.
 
 </MinFraudSchema>
