@@ -1,0 +1,31 @@
+import responseJson from '../_examples/response';
+
+<MinFraudSchema
+  json={responseJson.risk_score_reasons[0]}
+  jsonPointer="/risk_score_reasons/{n}"
+  name="Response | Risk Score Reason"
+  services={[
+    'factors',
+  ]}
+>
+  This object contains risk score reasons for a given transaction that change the risk score significantly.
+
+  <Property
+    name="multiplier"
+    tags={{
+      'Format': 'Decimal',
+      'Min': 0.01,
+      'Max': 100,
+    }}
+  >
+    The factor by which the risk score is increased (if the value is greater than 1) or decreased (if the value is less than 1) for given risk reason(s). Multipliers greater than 1.5 and less than 0.66 are considered significant and lead to risk reason(s) being present.
+  </Property>
+
+  <Property
+    linkToSchemaName={'Response | Risk Score Reason | Multiplier Reason'}
+    name="reasons"
+  >
+    This array contains objects that describe one of the reasons for the multiplier.
+  </Property>
+
+</MinFraudSchema>
