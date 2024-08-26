@@ -111,8 +111,8 @@ year:
 
 1. Add a file called `<year>.mdx` to the `/content/<product>/release-notes`
 folder. (e.g., `/content/geoip/release-notes/2024.mdx`)
-    - Add the header to your new release note file with the title: `<Product> Release Notes`
-(e.g., `GeoIP2 Release Notes`) and draft to `false`.
+    - Add the header to your new release note file with the title: `<Product>® Release Notes`
+(e.g., `GeoIP® Release Notes`) and draft to `false`.
     - Add the RSS notification to the top of the new file.
 2. Change the `title:` field in the previous year's `mdx` file to read: `<Product> Release Notes - <Year> Archive`
 (e.g., `GeoIP2 Release Notes - 2023 Archive`)
