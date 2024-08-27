@@ -18,7 +18,7 @@ official client libraries.
 
 MaxMind offers and highly recommends using
 [official client libraries](/minfraud/evaluate-a-transaction/#links-to-maxmind-client-apis)
-to access the Report Transation API. If you cannot or do not wish to use our
+to access the Report Transaction API. If you cannot or do not wish to use our
 client libraries, please review our
 [minFraud Report Transaction API Documentation](#api-documentation) for details
 on our JSON API.
@@ -240,12 +240,12 @@ reporter.report_transaction
 
 ## Validation and error handling
 
-By default, our client libaries will throw an exception if any of the
+By default, our client libraries will throw an exception if any of the
 transaction report object's values are invalid. The exception is thrown when the
 object is constructed; the python library will raise an error when the minFraud
 service method is called.
 
-If the report transaction request fails, our client libraires will throw an
+If the report transaction request fails, our client libraries will throw an
 exception, raise an error (python), or reject the promise (node).
 
 For more information on errors and exceptions, including their types and
