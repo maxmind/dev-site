@@ -1,7 +1,72 @@
+@use 'mixins';
+
+.sidebar-toggle {
+  @media only screen and (min-width: 992px) {
+    display: none;
+  }
+}
+
+.sidebar-toggle__button {
+  @include mixins.menu-button;
+
+  display: flex;
+  flex-direction: column;
+  float: right;
+  gap: 3px;
+  justify-content: center;
+  margin-left: 5px;
+  padding: 8px;
+
+  @media only screen and (min-width: 420px) {
+    gap: 4px;
+    padding: 14px;
+    width: 24px;
+  }
+}
+
+.sidebar-toggle__button span {
+  backface-visibility: hidden;
+  background-color: #000;
+  height: 1px;
+  transition: all .3s ease-out;
+  width: 12px;
+
+  @media only screen and (min-width: 420px) {
+    height: 2px;
+    width: 20px;
+  }
+}
+
+.sidebar-toggle__button.is-active span {
+  opacity: 0;
+
+  &:first-child {
+    opacity: 1;
+    transform: translateY(4px) rotate(135deg);
+  }
+
+  &:last-child {
+    opacity: 1;
+    transform: translateY(-4px) rotate(-135deg);
+  }
+
+  @media only screen and (min-width: 420px) {
+    &:first-child {
+      transform: translateY(6px) rotate(135deg);
+    }
+
+    &:last-child {
+      transform: translateY(-6px) rotate(-135deg);
+    }
+  }
+}
+
 .sidebar {
   display: flex;
   flex-direction: column;
   height: 100%;
+  overflow-y: auto;
+  padding-bottom: 20px;
   padding-left: 20px;
 }
 
@@ -15,8 +80,22 @@
 }
 
 .sidebar__group:first-child {
-  margin-top: 50px;
+  margin-top: 20px;
+
+  @media only screen and (min-width: 992px) {
+    margin-top: 50px;
+  }
 }
+
+.sidebar__group:last-child {
+  padding-bottom: 20px;
+}
+
+.sidebar__general {
+  margin: 20px 0 0 0;
+  padding: 10px 0 0 0;
+}
+
 
 .sidebar__group li {
   margin-bottom: 5px;
@@ -71,11 +150,6 @@
   background-color: var(--mm-color-sidebar);
   margin-top: 0;
   padding: 5px 10px;
-}
-
-.sidebar .sidebar__general {
-  margin: 20px 0 0 0;
-  padding: 10px 0 0 0;
 }
 
 .sidebar__group-break {
