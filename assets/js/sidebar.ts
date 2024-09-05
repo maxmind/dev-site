@@ -34,3 +34,13 @@ document.querySelectorAll('.js-sidebar-toggle').forEach((toggle) => {
     caret?.classList.toggle('rotate', isExpanded);
   });
 });
+
+// Handle mobile menu toggle
+const sidebarContainer = document.querySelector('.page__sidebar');
+document
+  .getElementById('sidebar-toggle')
+  .addEventListener('click', function (e) {
+    e.preventDefault();
+    this.classList.toggle('is-active');
+    sidebarContainer?.classList.toggle('show');
+  });
