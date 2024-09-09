@@ -920,6 +920,123 @@ This object contains information about how a request was handled by the custom r
 
 {{</ schema-table >}}
 
+### Risk Score Reasons
+{{< anchor-target schema--response--risk-score-reasons >}}
+
+{{< alert info >}}
+The risk reasons output codes and reasons are currently in beta and are subject
+to change. These outputs are being actively developed and tested, and may
+undergo modifications that could impact their structure, format, and content.
+While we strive to maintain stability, we recommend that you use these beta
+outputs with caution and avoid relying on them for critical applications. Your
+feedback is valuable and will help us improve the final release.
+{{</ alert >}}
+
+This array contains risk score reason objects. Risk score reasons are usually
+only returned for medium to high risk transactions. If there were no
+significant changes to the risk score due to these reasons, then this array
+will not be present in the response.
+
+```json
+[
+  {
+    "multiplier": 45,
+    "reasons": [
+      {
+        "code": "ANONYMOUS_IP",
+        "reason": "Risk due to IP being an Anonymous IP"
+      }
+    ]
+  },
+  {
+    "multiplier": 1.8,
+    "reasons": [
+      {
+        "code": "TIME_OF_DAY",
+        "reason": "Risk due to local time of day"
+      }
+    ]
+  },
+  {
+    "multiplier": 1.6,
+    "reasons": [
+      {
+        "reason": "Riskiness of newly-sighted email domain",
+        "code": "EMAIL_DOMAIN_NEW"
+      }
+    ]
+  },
+  {
+    "multiplier": 0.34,
+    "reasons": [
+      {
+        "code": "EMAIL_ADDRESS_NEW",
+        "reason": "Riskiness of newly-sighted email address"
+      }
+    ]
+  }
+]
+```
+
+{{< schema-table key="risk_score_reason" >}}
+  {{< minfraud-schema-row key="multiplier" type="response" valueType="Decimal" valueTypeNote="min: 0.01, max: 100" factors="true" >}}
+  The factor by which the risk score is increased (if the value is greater than 1) or decreased (if the value is less than 1) for given risk reason(s). Multipliers greater than 1.5 and less than 0.66 are considered significant and lead to risk reason(s) being present.
+  {{</minfraud-schema-row>}}
+
+  {{< minfraud-schema-row key="reasons" type="response" valueType="array" factors="true" >}}
+  This array contains objects that describe one of the reasons for the multiplier.
+  {{</minfraud-schema-row>}}
+
+  {{< minfraud-schema-row key="code" type="response" valueType="string" valueTypeNote="format: enum, max length: 255" factors="true" >}}
+  The machine-readable code for the risk reason. Although more codes may be added in the future, the current codes are:
+
+  | Code                                       | Reason                                                                                                           |
+  | ------------------------------------------ | ---------------------------------------------------------------------------------------------------------------- |
+  | BROWSER\_LANGUAGE                          | Riskiness of the browser user-agent and language associated with the request.                                    |
+  | BUSINESS\_ACTIVITY                         | Riskiness of business activity associated with the request.                                                      |
+  | COUNTRY                                    | Riskiness of the country associated with the request.                                                            |
+  | CUSTOMER\_ID                               | Riskiness of a customer's activity.                                                                              |
+  | EMAIL\_DOMAIN                              | Riskiness of email domain.                                                                                       |
+  | EMAIL\_DOMAIN\_NEW                         | Riskiness of newly-sighted email domain.                                                                         |
+  | EMAIL\_ADDRESS\_NEW                        | Riskiness of newly-sighted email address.                                                                        |
+  | EMAIL\_LOCAL\_PART                         | Riskiness of the local part of the email address.                                                                |
+  | EMAIL\_VELOCITY                            | Velocity on email - many requests on same email over short period of time.                                       |
+  | ISSUER\_ID\_NUMBER\_COUNTRY\_MISMATCH      | Riskiness of the country mismatch between IP, billing, shipping and IIN country.                                 |
+  | ISSUER\_ID\_NUMBER\_ON\_SHOP\_ID           | Risk of Issuer ID Number for the shop ID.                                                                        |
+  | ISSUER\_ID\_NUMBER\_LAST\_DIGITS\_ACTIVITY | Riskiness of many recent requests and previous high-risk requests on the IIN and last digits of the credit card. |
+  | ISSUER\_ID\_NUMBER\_SHOP\_ID\_VELOCITY     | Risk of recent Issuer ID Number activity for the shop ID.                                                        |
+  | INTRACOUNTRY\_DISTANCE                     | Risk of distance between IP, billing, and shipping location.                                                     |
+  | ANONYMOUS\_IP                              | Risk due to IP being an Anonymous IP.                                                                            |
+  | IP\_BILLING\_POSTAL\_VELOCITY              | Velocity of distinct billing postal code on IP address.                                                          |
+  | IP\_EMAIL\_VELOCITY                        | Velocity of distinct email address on IP address.                                                                |
+  | IP\_HIGH\_RISK\_DEVICE                     | High-risk device sighted on IP address.                                                                          |
+  | IP\_ISSUER\_ID\_NUMBER\_VELOCITY           | Velocity of distinct IIN on IP address.                                                                          |
+  | IP\_ACTIVITY                               | Riskiness of IP based on minFraud network activity.                                                              |
+  | LANGUAGE                                   | Riskiness of browser language.                                                                                   |
+  | MAX\_RECENT\_EMAIL                         | Riskiness of email address based on past minFraud risk scores on email.                                          |
+  | MAX\_RECENT\_PHONE                         | Riskiness of phone number based on past minFraud risk scores on phone.                                           |
+  | MAX\_RECENT\_SHIP                          | Riskiness of email address based on past minFraud risk scores on ship address.                                   |
+  | MULTIPLE\_CUSTOMER\_ID\_ON\_EMAIL          | Riskiness of email address having many customer IDs.                                                             |
+  | ORDER\_AMOUNT                              | Riskiness of the order amount.                                                                                   |
+  | ORG\_DISTANCE\_RISK                        | Risk of ISP and distance between billing address and IP location.                                                |
+  | PHONE                                      | Riskiness of the phone number or related numbers.                                                                |
+  | CART                                       | Riskiness of shopping cart contents.                                                                             |
+  | TIME\_OF\_DAY                              | Risk due to local time of day.                                                                                   |
+  | TRANSACTION\_REPORT\_EMAIL                 | Risk due to transaction reports on the email address.                                                            |
+  | TRANSACTION\_REPORT\_IP                    | Risk due to transaction reports on the IP address.                                                               |
+  | TRANSACTION\_REPORT\_PHONE                 | Risk due to transaction reports on the phone number.                                                             |
+  | TRANSACTION\_REPORT\_SHIP                  | Risk due to transaction reports on the shipping address.                                                         |
+  | EMAIL\_ACTIVITY                            | Riskiness of the email address based on minFraud network activity.                                               |
+  | PHONE\_ACTIVITY                            | Riskiness of the phone number based on minFraud network activity.                                                |
+  | SHIP\_ACTIVITY                             | Riskiness of ship address based on minFraud network activity.                                                    |
+  {{</minfraud-schema-row>}}
+
+  {{< minfraud-schema-row key="reason" type="response" valueType="string" factors="true" >}}
+  The human-readable description of the risk reason.
+  {{</minfraud-schema-row>}}
+{{</ schema-table >}}
+
+
 ### Subscores
 {{< anchor-target schema--response--subscores >}}
 
@@ -1595,6 +1712,44 @@ Factors services, and a full example of the JSON body document for an error.
     "network_operator": "Telus Mobility-SVR/2",
     "number_type": "mobile"
   },
+  "risk_score_reasons": [
+    {
+      "multiplier": 45,
+      "reasons": [
+        {
+          "code": "ANONYMOUS_IP",
+          "reason": "Risk due to IP being an Anonymous IP"
+        }
+      ]
+    },
+    {
+      "multiplier": 1.8,
+      "reasons": [
+        {
+          "code": "TIME_OF_DAY",
+          "reason": "Risk due to local time of day"
+        }
+      ]
+    },
+    {
+      "multiplier": 1.6,
+      "reasons": [
+        {
+          "reason": "Riskiness of newly-sighted email domain",
+          "code": "EMAIL_DOMAIN_NEW"
+        }
+      ]
+    },
+    {
+      "multiplier": 0.34,
+      "reasons": [
+        {
+          "code": "EMAIL_ADDRESS_NEW",
+          "reason": "Riskiness of newly-sighted email address"
+        }
+      ]
+    }
+  ],
   "subscores": {
     "avs_result": 0.01,
     "billing_address": 0.02,
