@@ -55,12 +55,8 @@ typings/
 # hugo files
 .sass-cache
 .hugo_build.lock
-<<<<<<< HEAD
 public/
 resources/
-=======
-public
->>>>>>> b73cd20 (Init hugo and delete gatsby related files)
 
 # Mac files
 .DS_Store
