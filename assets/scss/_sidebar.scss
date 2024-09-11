@@ -68,6 +68,12 @@
   overflow-y: auto;
   padding-bottom: 20px;
   padding-left: 20px;
+
+  @media only screen and (min-width: 992px) {
+    height: calc(100vh - var(--page-header-height) - 60px);
+    position: sticky;
+    top: 130px;
+  }
 }
 
 .sidebar ul {
@@ -83,7 +89,7 @@
   margin-top: 20px;
 
   @media only screen and (min-width: 992px) {
-    margin-top: 50px;
+    margin-top: 0;
   }
 }
 
@@ -144,6 +150,10 @@
   .caret.rotate {
     transform: rotate(-90deg);
   }
+}
+
+.sidebar__child + ul {
+  margin-top: 5px;
 }
 
 .sidebar__child-group {
