@@ -118,10 +118,6 @@ li {
   margin-bottom: calc(var(--mm-spacing) / 4);
 }
 
-li::marker {
-  color: #ccc;
-}
-
 blockquote {
   color: var(--mm-color-primary-text);
   padding: var(--mm-spacing);
