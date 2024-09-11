@@ -920,7 +920,6 @@ This object contains information about how a request was handled by the custom r
 
 {{</ schema-table >}}
 
-<<<<<<< HEAD
 ### Risk Score Reasons
 {{< anchor-target schema--response--risk-score-reasons >}}
 
