@@ -21,7 +21,6 @@
                 <a
                 class="sidebar__child {{ if $currentPage.IsMenuCurrent "minfraud" . }}is-active{{ end }}"
                 href="{{ .URL }}"
-                role="treeitem"
                 >
                   {{ .Name }}
                 </a>
@@ -32,7 +31,6 @@
                       <a
                       class="{{ if $currentPage.IsMenuCurrent "minfraud" . }}is-active{{ end }}"
                       href="{{ .URL }}"
-                      role="treeitem"
                       >
                         {{ .Name }}
                       </a>
