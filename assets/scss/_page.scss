@@ -7,6 +7,10 @@
   max-width: 800px;
   padding: var(--mm-spacing);
   width: 100%;
+
+  @media only screen and (min-width: 992px) {
+    min-height: 100vh;
+  }
 }
 
 .page__sidebar {
