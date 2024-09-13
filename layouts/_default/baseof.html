@@ -31,6 +31,7 @@
   {{ $codeset := resources.Get "js/codeset.ts" | js.Build }}
   {{ $geoipCrontab := resources.Get "js/geoip-crontab.ts" | js.Build }}
   {{ $search := resources.Get "js/search.ts" | js.Build }}
-  {{ $js := slice $codeset $geoipCrontab $search | resources.Concat "js/bundle.js" }}
+  {{ $sidebar := resources.Get "js/sidebar.ts" | js.Build }}
+  {{ $js := slice $codeset $geoipCrontab $search $sidebar | resources.Concat "js/bundle.js" }}
   <script type="module" src="{{ $js.RelPermalink }}"></script>
 </html>

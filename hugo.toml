@@ -122,16 +122,6 @@ title = 'MaxMind'
         parent = 'Importing Databases'
         weight = 20
     [[menus.geoip]]
-      name = 'GeoLite2 Free Geolocation Data'
-      pageRef = '/geoip/geolite2-free-geolocation-data'
-      parent = 'GeoIP'
-      weight = 40
-    [[menus.geoip]]
-      name = 'Privacy Exclusions API'
-      pageRef = '/geoip/privacy-exclusions-api'
-      parent = 'GeoIP'
-      weight = 50
-    [[menus.geoip]]
       name = 'Web Services Documentation'
       pageRef = '/geoip/docs/web-services'
       parent = 'GeoIP'
@@ -186,6 +176,16 @@ title = 'MaxMind'
         pageRef = '/geoip/docs/databases/asn'
         parent = 'Database Documentation'
         weight = 70
+    [[menus.geoip]]
+      name = 'GeoLite2 Free Geolocation Data'
+      pageRef = '/geoip/geolite2-free-geolocation-data'
+      parent = 'GeoIP'
+      weight = 80
+    [[menus.geoip]]
+      name = 'Privacy Exclusions API'
+      pageRef = '/geoip/privacy-exclusions-api'
+      parent = 'GeoIP'
+      weight = 90
 
   [[menus.general]]
     name = 'MaxMind Server IP Addresses'
@@ -196,9 +196,13 @@ title = 'MaxMind'
     pageRef = '/license-key-validation-api'
     weight = 20
   [[menus.general]]
+    name = 'MMDB Format Spec'
+    pageRef = 'https://maxmind.github.io/MaxMind-DB/'
+    weight = 30
+  [[menus.general]]
     name = 'Contribute'
     pageRef = '/contribute'
-    weight = 30
+    weight = 40
 
 [module]
   [[module.mounts]]
