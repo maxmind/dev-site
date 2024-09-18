@@ -141,6 +141,16 @@ title = 'MaxMind'
         pageRef = '/geoip/docs/web-services/responses'
         parent = 'Web Services Documentation'
         weight = 20
+      [[menus.geoip]]
+        name = 'Sandbox Environment'
+        pageRef = '/geoip/docs/web-services/sandbox-environment'
+        parent = 'Web Services Documentation'
+        weight = 30
+      [[menus.geoip]]
+        name = 'Legacy Web Services'
+        pageRef = '/geoip/docs/web-services/legacy'
+        parent = 'Web Services Documentation'
+        weight = 40
     [[menus.geoip]]
       name = 'Database Documentation'
       pageRef = '/geoip/docs/databases'

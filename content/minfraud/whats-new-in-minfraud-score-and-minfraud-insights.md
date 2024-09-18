@@ -207,8 +207,8 @@ The following outputs have been added.
   - `number_type`
   - `is_voip`
 
-<small>\* Latitude and longitude are not precise and should not be used to identify a
-particular street address or household.</small>
+\* Latitude and longitude are not precise and should not be used to identify a
+particular street address or household.
 
 ### Deprecated Outputs
 

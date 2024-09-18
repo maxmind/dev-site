@@ -3,20 +3,19 @@ draft: false
 title: GeoIP Legacy Web Services
 ---
 
-import { FaCheck } from 'react-icons/fa';
 
-<Alert type="error">
+{{< alert info >}}
 We have implemented recent changes to our GeoIP Legacy web services in line with
 the retirement of GeoIP Legacy Databases. Please see our [blog
 post](https://blog.maxmind.com/2020/06/data-changes-to-geoip-legacy-and-minfraud-legacy-web-services-in-may-2022/)
 for more information.
-</Alert>
+{{</ alert >}}
 
-<Alert type="warning">
+{{< alert warning >}}
 **Note:** This documentation is for the GeoIP legacy services. New customers do
 not have access to these services. Please use the [GeoIP2 web
 services](/geoip/docs/web-services).
-</Alert>
+{{</ alert >}}
 
 The GeoIP web services allow you to look up information about a given IP address
 using an HTTP-based API.
@@ -87,413 +86,417 @@ All strings are returned in the
 [ISO-8859-1 encoding](https://en.wikipedia.org/wiki/ISO/IEC_8859-1). This
 encoding is also referred to as latin1.
 
-<table>
-  <thead>
-    <tr>
-      <th colspan="3"></th>
-      <th colspan="4">Included in …</th>
-    </tr>
-    <tr>
-      <th>Name</th>
-      <th>Type&nbsp;(length)</th>
-      <th>Description</th>
-      <th>Country?</th>
-      <th>City?</th>
-      <th>City/ISP/Org?</th>
-      <th>Insights (formerly Omni)?</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Accuracy radius</td>
-      <td>integer</td>
-      <td>
-        The radius in kilometers around the specified location where the IP address is
-likely to be.
-      </td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td><FaCheck /></td>
-    </tr>
-    <tr>
-      <td>City name</td>
-      <td>string</td>
-      <td>
-        The city or town name as defined by <a href="https://www.geonames.org/">GeoNames</a> associated with the IP address.
-      </td>
-      <td></td>
-      <td><FaCheck /></td>
-      <td><FaCheck /></td>
-      <td><FaCheck /></td>
-    </tr>
-    <tr>
-      <td>Region code</td>
-      <td>string</td>
-      <td>
-        <p>
-  The <a href="https://en.wikipedia.org/wiki/ISO_3166-2">ISO-3166-2</a> code for
-  the state/region associated with the IP address.
-</p>
+{{< rawhtml >}}
+<div class="table">
+  <table>
+    <thead>
+      <tr>
+        <th colspan="3"></th>
+        <th colspan="4">Included in …</th>
+      </tr>
+      <tr>
+        <th>Name</th>
+        <th>Type&nbsp;(length)</th>
+        <th>Description</th>
+        <th>Country?</th>
+        <th>City?</th>
+        <th>City/ISP/Org?</th>
+        <th>Insights (formerly Omni)?</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Accuracy radius</td>
+        <td>integer</td>
+        <td>
+          The radius in kilometers around the specified location where the IP address is
+  likely to be.
+        </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>YES</td>
+      </tr>
+      <tr>
+        <td>City name</td>
+        <td>string</td>
+        <td>
+          The city or town name as defined by <a href="https://www.geonames.org/">GeoNames</a> associated with the IP address.
+        </td>
+        <td></td>
+        <td>YES</td>
+        <td>YES</td>
+        <td>YES</td>
+      </tr>
+      <tr>
+        <td>Region code</td>
+        <td>string</td>
+        <td>
+          <p>
+    The <a href="https://en.wikipedia.org/wiki/ISO_3166-2">ISO-3166-2</a> code for
+    the state/region associated with the IP address.
+  </p>
 
-<p>
-  We previously returned a <a href="https://en.wikipedia.org/wiki/FIPS_10-4">FIPS 10-4</a> code for all countries other than the United States and Canada. See our <a href="https://blog.maxmind.com/2020/06/data-changes-to-geoip-legacy-and-minfraud-legacy-web-services-in-may-2022/">blog post detailing changes to our legacy web services</a>.
-</p>
-      </td>
-      <td></td>
-      <td><FaCheck /></td>
-      <td><FaCheck /></td>
-      <td><FaCheck /></td>
-    </tr>
-    <tr>
-      <td>Region name</td>
-      <td>string</td>
-      <td>
-        The region name as defined by <a href="https://www.geonames.org/">GeoNames</a> associated with the IP address.
-      </td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td><FaCheck /></td>
-    </tr>
-    <tr>
-      <td>Postal code</td>
-      <td>string</td>
-      <td>
-        The postal code associated with the IP address. These are available for some IP
-addresses in Australia, Canada, France, Germany, Italy, Spain, Switzerland,
-United Kingdom, and the US.  We return the first 3 characters for Canadian
-postal codes.  We return the first 2-4 characters (outward code) for
-postal codes in the United Kingdom.
-      </td>
-      <td></td>
-      <td></td>
-      <td><FaCheck /></td>
-      <td><FaCheck /></td>
-    </tr>
-    <tr>
-      <td>Metro code</td>
-      <td>integer</td>
-      <td>
-        The metro code associated with the IP address. These are only
-        available for IP addresses in the US.
-      </td>
-      <td></td>
-      <td></td>
-      <td><FaCheck /></td>
-      <td><FaCheck /></td>
-    </tr>
-    <tr>
-      <td>Area code</td>
-      <td>string</td>
-      <td>
-        <p><strong>Deprecated. This field will be empty in the updated legacy web service. See our <a href="https://blog.maxmind.com/2020/06/data-changes-to-geoip-legacy-and-minfraud-legacy-web-services-in-may-2022/">blog post detailing changes to our legacy web services</a>.</strong></p></td>
-      <td></td>
-      <td></td>
-      <td><FaCheck /></td>
-      <td><FaCheck /></td>
-    </tr>
-    <tr>
-      <td>Country code</td>
-      <td>string (2)</td>
-      <td>
-        <p>
-  A <a href="https://en.wikipedia.org/wiki/ISO_3166-1">ISO
-  3166-1</a> country code for the country associated with the IP address. In
-  addition to the standard codes, we may also return one of the following:
-</p>
+  <p>
+    We previously returned a <a href="https://en.wikipedia.org/wiki/FIPS_10-4">FIPS 10-4</a> code for all countries other than the United States and Canada. See our <a href="https://blog.maxmind.com/2020/06/data-changes-to-geoip-legacy-and-minfraud-legacy-web-services-in-may-2022/">blog post detailing changes to our legacy web services</a>.
+  </p>
+        </td>
+        <td></td>
+        <td>YES</td>
+        <td>YES</td>
+        <td>YES</td>
+      </tr>
+      <tr>
+        <td>Region name</td>
+        <td>string</td>
+        <td>
+          The region name as defined by <a href="https://www.geonames.org/">GeoNames</a> associated with the IP address.
+        </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>YES</td>
+      </tr>
+      <tr>
+        <td>Postal code</td>
+        <td>string</td>
+        <td>
+          The postal code associated with the IP address. These are available for some IP
+  addresses in Australia, Canada, France, Germany, Italy, Spain, Switzerland,
+  United Kingdom, and the US.  We return the first 3 characters for Canadian
+  postal codes.  We return the first 2-4 characters (outward code) for
+  postal codes in the United Kingdom.
+        </td>
+        <td></td>
+        <td></td>
+        <td>YES</td>
+        <td>YES</td>
+      </tr>
+      <tr>
+        <td>Metro code</td>
+        <td>integer</td>
+        <td>
+          The metro code associated with the IP address. These are only
+          available for IP addresses in the US.
+        </td>
+        <td></td>
+        <td></td>
+        <td>YES</td>
+        <td>YES</td>
+      </tr>
+      <tr>
+        <td>Area code</td>
+        <td>string</td>
+        <td>
+          <p><strong>Deprecated. This field will be empty in the updated legacy web service. See our <a href="https://blog.maxmind.com/2020/06/data-changes-to-geoip-legacy-and-minfraud-legacy-web-services-in-may-2022/">blog post detailing changes to our legacy web services</a>.</strong></p></td>
+        <td></td>
+        <td></td>
+        <td>YES</td>
+        <td>YES</td>
+      </tr>
+      <tr>
+        <td>Country code</td>
+        <td>string (2)</td>
+        <td>
+          <p>
+    A <a href="https://en.wikipedia.org/wiki/ISO_3166-1">ISO
+    3166-1</a> country code for the country associated with the IP address. In
+    addition to the standard codes, we may also return one of the following:
+  </p>
 
-<ul>
-  <li>
-    <strong>A1</strong> – an anonymous proxy.
-  </li>
-  <li>
-    <strong>A2</strong> – a satellite provider.
-  </li>
-  <li>
-    <strong>EU</strong> – an IP in a block used by
-    multiple European countries.
-  </li>
-  <li>
-    <strong>AP</strong> – an IP in a block used by
-    multiple Asia/Pacific region countries.
-  </li>
-</ul>
+  <ul>
+    <li>
+      <strong>A1</strong> – an anonymous proxy.
+    </li>
+    <li>
+      <strong>A2</strong> – a satellite provider.
+    </li>
+    <li>
+      <strong>EU</strong> – an IP in a block used by
+      multiple European countries.
+    </li>
+    <li>
+      <strong>AP</strong> – an IP in a block used by
+      multiple Asia/Pacific region countries.
+    </li>
+  </ul>
 
-<p>
-  The <strong>US</strong> country code is returned for IP addresses associated
-  with overseas US military bases.
-</p>
+  <p>
+    The <strong>US</strong> country code is returned for IP addresses associated
+    with overseas US military bases.
+  </p>
 
-      </td>
-      <td><FaCheck /></td>
-      <td><FaCheck /></td>
-      <td><FaCheck /></td>
-      <td><FaCheck /></td>
-    </tr>
-    <tr>
-      <td>Country name</td>
-      <td>string</td>
-      <td>
-        The country name as defined by <a href="https://www.geonames.org/">GeoNames</a> associated with the IP address.
+        </td>
+        <td>YES</td>
+        <td>YES</td>
+        <td>YES</td>
+        <td>YES</td>
+      </tr>
+      <tr>
+        <td>Country name</td>
+        <td>string</td>
+        <td>
+          The country name as defined by <a href="https://www.geonames.org/">GeoNames</a> associated with the IP address.
 
-      </td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td><FaCheck /></td>
-    </tr>
-    <tr>
-      <td>Continent code</td>
-      <td>string (2)</td>
-      <td>
-        <p>
-          A two-character code for the continent associated with the IP
-          address. The possible codes are:
-        </p>
+        </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>YES</td>
+      </tr>
+      <tr>
+        <td>Continent code</td>
+        <td>string (2)</td>
+        <td>
+          <p>
+            A two-character code for the continent associated with the IP
+            address. The possible codes are:
+          </p>
 
-<ul>
-	<li><strong>AF</strong> – Africa</li>
-        <li><strong>AN</strong> – Antarctica</li>
-	<li><strong>AS</strong> – Asia</li>
-	<li><strong>EU</strong> – Europe</li>
-	<li><strong>NA</strong> – North America</li>
-	<li><strong>OC</strong> – Oceania</li>
-	<li><strong>SA</strong> – South America</li>
-</ul>
-      </td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td><FaCheck /></td>
-    </tr>
-    <tr>
-      <td>Latitude</td>
-      <td>decimal</td>
-      <td>
-        The approximate latitude of the location associated with the network. This value is not precise and should not be used to identify a particular address or household
-      </td>
-      <td></td>
-      <td><FaCheck /></td>
-      <td><FaCheck /></td>
-      <td><FaCheck /></td>
-    </tr>
-    <tr>
-      <td>Longitude</td>
-      <td>decimal</td>
-      <td>
-        The approximate longitude of the location associated with the network. Latitude and Longitude are often near the center of population. These values are not precise and should not be used to identify a particular address or household.
-      </td>
-      <td></td>
-      <td><FaCheck /></td>
-      <td><FaCheck /></td>
-      <td><FaCheck /></td>
-    </tr>
-    <tr>
-      <td>Time zone</td>
-      <td>string</td>
-      <td>
-        The time zone associated with the IP address. Time zone names are taken from
-the <a href="https://www.iana.org/time-zones/">IANA time zone database</a>. See
-the <a href="/static/csv/codes/time_zone.csv">list of possible values</a>.
+  <ul>
+    <li><strong>AF</strong> – Africa</li>
+          <li><strong>AN</strong> – Antarctica</li>
+    <li><strong>AS</strong> – Asia</li>
+    <li><strong>EU</strong> – Europe</li>
+    <li><strong>NA</strong> – North America</li>
+    <li><strong>OC</strong> – Oceania</li>
+    <li><strong>SA</strong> – South America</li>
+  </ul>
+        </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>YES</td>
+      </tr>
+      <tr>
+        <td>Latitude</td>
+        <td>decimal</td>
+        <td>
+          The approximate latitude of the location associated with the network. This value is not precise and should not be used to identify a particular address or household
+        </td>
+        <td></td>
+        <td>YES</td>
+        <td>YES</td>
+        <td>YES</td>
+      </tr>
+      <tr>
+        <td>Longitude</td>
+        <td>decimal</td>
+        <td>
+          The approximate longitude of the location associated with the network. Latitude and Longitude are often near the center of population. These values are not precise and should not be used to identify a particular address or household.
+        </td>
+        <td></td>
+        <td>YES</td>
+        <td>YES</td>
+        <td>YES</td>
+      </tr>
+      <tr>
+        <td>Time zone</td>
+        <td>string</td>
+        <td>
+          The time zone associated with the IP address. Time zone names are taken from
+  the <a href="https://www.iana.org/time-zones/">IANA time zone database</a>. See
+  the <a href="/static/csv/codes/time_zone.csv">list of possible values</a>.
 
-      </td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td><FaCheck /></td>
-    </tr>
-    <tr>
-      <td>AS number</td>
-      <td>string</td>
-      <td>
-        The <a href="https://en.wikipedia.org/wiki/Autonomous_system_(Internet)">autonomous system number</a> associated with the IP address.
-      </td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td><FaCheck /></td>
-    </tr>
-    <tr>
-      <td>User type</td>
-      <td>enum</td>
-      <td>
-        <p>
+        </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>YES</td>
+      </tr>
+      <tr>
+        <td>AS number</td>
+        <td>string</td>
+        <td>
+          The <a href="https://en.wikipedia.org/wiki/Autonomous_system_(Internet)">autonomous system number</a> associated with the IP address.
+        </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>YES</td>
+      </tr>
+      <tr>
+        <td>User type</td>
+        <td>enum</td>
+        <td>
+          <p>
 
-The user type associated with the IP address. This will be one of the following
-values.
+  The user type associated with the IP address. This will be one of the following
+  values.
 
-</p>
+  </p>
 
-<ul>
-  <li><strong>business</strong></li>
-  <li><strong>cafe</strong></li>
-  <li><strong>cellular</strong></li>
-  <li><strong>college</strong></li>
-  <li><strong>contentDeliveryNetwork</strong></li>
-  <li><strong>government</strong></li>
-  <li><strong>hosting</strong></li>
-  <li><strong>library</strong></li>
-  <li><strong>military</strong></li>
-  <li><strong>residential</strong></li>
-  <li><strong>router</strong></li>
-  <li><strong>school</strong></li>
-  <li><strong>searchEngineSpider</strong></li>
-  <li><strong>traveler</strong></li>
-</ul>
+  <ul>
+    <li><strong>business</strong></li>
+    <li><strong>cafe</strong></li>
+    <li><strong>cellular</strong></li>
+    <li><strong>college</strong></li>
+    <li><strong>contentDeliveryNetwork</strong></li>
+    <li><strong>government</strong></li>
+    <li><strong>hosting</strong></li>
+    <li><strong>library</strong></li>
+    <li><strong>military</strong></li>
+    <li><strong>residential</strong></li>
+    <li><strong>router</strong></li>
+    <li><strong>school</strong></li>
+    <li><strong>searchEngineSpider</strong></li>
+    <li><strong>traveler</strong></li>
+  </ul>
 
-      </td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td><FaCheck /></td>
-    </tr>
-    <tr>
-      <td>Netspeed</td>
-      <td>enum</td>
-      <td>
-        <p>
+        </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>YES</td>
+      </tr>
+      <tr>
+        <td>Netspeed</td>
+        <td>enum</td>
+        <td>
+          <p>
 
-The network speed associated with the IP address. This can be one of the
-following values:
+  The network speed associated with the IP address. This can be one of the
+  following values:
 
-</p>
+  </p>
 
-<ul>
-  <li><strong>Dialup</strong></li>
-  <li><strong>Cable/DSL</strong></li>
-  <li><strong>Corporate</strong></li>
-  <li><strong>Cellular</strong></li>
-</ul>
+  <ul>
+    <li><strong>Dialup</strong></li>
+    <li><strong>Cable/DSL</strong></li>
+    <li><strong>Corporate</strong></li>
+    <li><strong>Cellular</strong></li>
+  </ul>
 
-      </td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td><FaCheck /></td>
-    </tr>
-    <tr>
-      <td>Domain</td>
-      <td>string</td>
-      <td>
-        The second level domain associated with the IP address. This will be
+        </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>YES</td>
+      </tr>
+      <tr>
+        <td>Domain</td>
+        <td>string</td>
+        <td>
+          The second level domain associated with the IP address. This will be
 
-something like "example.com" or "example.co.uk", not "foo.example.com".
+  something like "example.com" or "example.co.uk", not "foo.example.com".
 
-      </td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td><FaCheck /></td>
-    </tr>
-    <tr>
-      <td>ISP name</td>
-      <td>string</td>
-      <td>
-        The name of the ISP associated with the IP address.
+        </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>YES</td>
+      </tr>
+      <tr>
+        <td>ISP name</td>
+        <td>string</td>
+        <td>
+          The name of the ISP associated with the IP address.
 
-      </td>
-      <td></td>
-      <td></td>
-      <td><FaCheck /></td>
-      <td><FaCheck /></td>
-    </tr>
-    <tr>
-      <td>Organization name</td>
-      <td>string</td>
-      <td>
-        The name of the organization associated with the IP address.
+        </td>
+        <td></td>
+        <td></td>
+        <td>YES</td>
+        <td>YES</td>
+      </tr>
+      <tr>
+        <td>Organization name</td>
+        <td>string</td>
+        <td>
+          The name of the organization associated with the IP address.
 
-      </td>
-      <td></td>
-      <td></td>
-      <td><FaCheck /></td>
-      <td><FaCheck /></td>
-    </tr>
-    <tr>
-      <td>City confidence factor</td>
-      <td>string</td>
-      <td>
-        A value from 0-100 representing our confidence that the city is correct.
+        </td>
+        <td></td>
+        <td></td>
+        <td>YES</td>
+        <td>YES</td>
+      </tr>
+      <tr>
+        <td>City confidence factor</td>
+        <td>string</td>
+        <td>
+          A value from 0-100 representing our confidence that the city is correct.
 
-      </td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td><FaCheck /></td>
-    </tr>
-    <tr>
-      <td>Region confidence factor</td>
-      <td>string</td>
-      <td>
-        A value from 0-100 representing our confidence that the region is correct.
+        </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>YES</td>
+      </tr>
+      <tr>
+        <td>Region confidence factor</td>
+        <td>string</td>
+        <td>
+          A value from 0-100 representing our confidence that the region is correct.
 
-      </td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td><FaCheck /></td>
-    </tr>
-    <tr>
-      <td>Postal confidence factor</td>
-      <td>string</td>
-      <td>
-        A value from 0-100 representing our confidence that the postal code is correct.
+        </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>YES</td>
+      </tr>
+      <tr>
+        <td>Postal confidence factor</td>
+        <td>string</td>
+        <td>
+          A value from 0-100 representing our confidence that the postal code is correct.
 
-      </td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td><FaCheck /></td>
-    </tr>
-    <tr>
-      <td>Country confidence factor</td>
-      <td>string</td>
-      <td>
-        A value from 0-100 representing our confidence that the country is correct.
+        </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>YES</td>
+      </tr>
+      <tr>
+        <td>Country confidence factor</td>
+        <td>string</td>
+        <td>
+          A value from 0-100 representing our confidence that the country is correct.
 
-      </td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td><FaCheck /></td>
-    </tr>
-    <tr>
-      <td>Error code</td>
-      <td>string</td>
-      <td>
-        <p>
-          If there was an error or warning with this request, this field
-          contains an error code string.
-        </p>
+        </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>YES</td>
+      </tr>
+      <tr>
+        <td>Error code</td>
+        <td>string</td>
+        <td>
+          <p>
+            If there was an error or warning with this request, this field
+            contains an error code string.
+          </p>
 
-        <p>
-          The possible error codes are:
-        </p>
+          <p>
+            The possible error codes are:
+          </p>
 
-        <ul>
-          <li><strong>PERMISSION_REQUIRED</strong> – This is returned if you do not have permission to use the service. Please contact <a href="mailto:support@maxmind.com">support@maxmind.com</a> for more information.</li>
-          <li>
-            <strong>INVALID_LICENSE_KEY</strong> – This error will be returned
-            when the license key you pass is not a valid license key or when your account has run out of queries.
-          </li>
-          <li><strong>LICENSE_REQUIRED</strong> – The Insight service returns this instead of INVALID_LICENSE_KEY.</li>
-          <li>
-            <strong>IP_NOT_FOUND</strong> – This error will be returned if the
-            IP address it not valid, if it is not public, or if it is not in
-            our GeoIP database. It will also be returned if you do not pass an
-            IP address at all.
-          </li>
-        </ul>
-      </td>
-      <td><FaCheck /></td>
-      <td><FaCheck /></td>
-      <td><FaCheck /></td>
-      <td><FaCheck /></td>
-    </tr>
+          <ul>
+            <li><strong>PERMISSION_REQUIRED</strong> – This is returned if you do not have permission to use the service. Please contact <a href="mailto:support@maxmind.com">support@maxmind.com</a> for more information.</li>
+            <li>
+              <strong>INVALID_LICENSE_KEY</strong> – This error will be returned
+              when the license key you pass is not a valid license key or when your account has run out of queries.
+            </li>
+            <li><strong>LICENSE_REQUIRED</strong> – The Insight service returns this instead of INVALID_LICENSE_KEY.</li>
+            <li>
+              <strong>IP_NOT_FOUND</strong> – This error will be returned if the
+              IP address it not valid, if it is not public, or if it is not in
+              our GeoIP database. It will also be returned if you do not pass an
+              IP address at all.
+            </li>
+          </ul>
+        </td>
+        <td>YES</td>
+        <td>YES</td>
+        <td>YES</td>
+        <td>YES</td>
+      </tr>
 
-  </tbody>
-</table>
+    </tbody>
+  </table>
+</div>
+{{</ rawhtml >}}
 
 ### Output field order
 
@@ -502,87 +505,91 @@ fields are returned must be known in order to parse the result. If the request
 is successful, the error field may be omitted entirely, since it always comes
 last.
 
-<table>
-  <thead>
-    <tr>
-      <th>Service</th>
-      <th>Field Order</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Country</td>
-      <td>
-        <ul>
-          <li>Country code</li>
-          <li>Error</li>
-        </ul>
-      </td>
-    </tr>
-    <tr>
-      <td>City</td>
-      <td>
-        <ul>
-          <li>Country code</li>
-          <li>Region code</li>
-          <li>City name</li>
-          <li>Latitude</li>
-          <li>Longitude</li>
-          <li>Error</li>
-        </ul>
-      </td>
-    </tr>
-    <tr>
-      <td>City/ISP/Org</td>
-      <td>
-        <ul>
-          <li>Country code</li>
-          <li>Region code</li>
-          <li>City name</li>
-          <li>Postal code</li>
-          <li>Latitude</li>
-          <li>Longitude</li>
-          <li>Metro code</li>
-          <li>Area code</li>
-          <li>ISP name</li>
-          <li>Organization name</li>
-          <li>Error</li>
-        </ul>
-      </td>
-    </tr>
-    <tr>
-      <td>Insights</td>
-      <td>
-        <ul>
-          <li>Country code</li>
-          <li>Country name</li>
-          <li>Region code</li>
-          <li>Region name</li>
-          <li>City name</li>
-          <li>Latitude</li>
-          <li>Longitude</li>
-          <li>Metro code</li>
-          <li>Area code</li>
-          <li>Time zone</li>
-          <li>Continent code</li>
-          <li>Postal code</li>
-          <li>ISP name</li>
-          <li>Organization name</li>
-          <li>Domain</li>
-          <li>AS number</li>
-          <li>Netspeed</li>
-          <li>User type</li>
-          <li>Accuracy radius</li>
-          <li>Country confidence factor</li>
-          <li>City confidence factor</li>
-          <li>Region confidence factor</li>
-          <li>Postal confidence factor</li>
-          <li>Error</li>
-        </ul>
-      </td>
-    </tr>
-  </tbody>
-</table>
+{{< rawhtml >}}
+<div class="table">
+  <table>
+    <thead>
+      <tr>
+        <th>Service</th>
+        <th>Field Order</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Country</td>
+        <td>
+          <ul>
+            <li>Country code</li>
+            <li>Error</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td>City</td>
+        <td>
+          <ul>
+            <li>Country code</li>
+            <li>Region code</li>
+            <li>City name</li>
+            <li>Latitude</li>
+            <li>Longitude</li>
+            <li>Error</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td>City/ISP/Org</td>
+        <td>
+          <ul>
+            <li>Country code</li>
+            <li>Region code</li>
+            <li>City name</li>
+            <li>Postal code</li>
+            <li>Latitude</li>
+            <li>Longitude</li>
+            <li>Metro code</li>
+            <li>Area code</li>
+            <li>ISP name</li>
+            <li>Organization name</li>
+            <li>Error</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td>Insights</td>
+        <td>
+          <ul>
+            <li>Country code</li>
+            <li>Country name</li>
+            <li>Region code</li>
+            <li>Region name</li>
+            <li>City name</li>
+            <li>Latitude</li>
+            <li>Longitude</li>
+            <li>Metro code</li>
+            <li>Area code</li>
+            <li>Time zone</li>
+            <li>Continent code</li>
+            <li>Postal code</li>
+            <li>ISP name</li>
+            <li>Organization name</li>
+            <li>Domain</li>
+            <li>AS number</li>
+            <li>Netspeed</li>
+            <li>User type</li>
+            <li>Accuracy radius</li>
+            <li>Country confidence factor</li>
+            <li>City confidence factor</li>
+            <li>Region confidence factor</li>
+            <li>Postal confidence factor</li>
+            <li>Error</li>
+          </ul>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+{{</ rawhtml >}}
 
 ### Client Code Examples
 
@@ -1059,7 +1066,7 @@ private string GetMaxMindInsightsData(string IP) {
 
 This is an example for the City/ISP/Org web service.
 
-```
+```vbnet
 ' Contributed by Rubens A. Lucca
 Private Function ReturnData(ByVal IP As String) As String
         Dim objUrl As New System.Uri("https://geoip.maxmind.com/v.10/city-isp-org?l=YOUR_LICENSE_KEY&i=" & IP)
@@ -1094,7 +1101,7 @@ Private Function ReturnData(ByVal IP As String) As String
 
 This is an example for the City/ISP/Org web service.
 
-```
+```xml
 <!--- contributed by reinhard jung --->
 <cfhttp method="get" url="https://geoip.maxmind.com/v1.0/city-isp-org?l=LicenceKey&i=#CGI.REMOTE_ADDR#"></cfhttp>
 <cfset resultMaxMind = cfhttp.FileContent>
@@ -1138,7 +1145,7 @@ This is an example for the City/ISP/Org web service.
 
 This is an example for the City/ISP/Org web service.
 
-```
+```vbnet
 Dim objHttp, strQuery
 strQuery = "https://geoip.maxmind.com/v1.0/city-isp-org?l=" & license_key & "&i=" & ipaddress
 set objHttp = Server.CreateObject("Msxml2.ServerXMLHTTP")
@@ -1152,7 +1159,7 @@ Set objHttp = Nothing
 
 This is an example for the City/ISP/Org web service.
 
-```
+```basic
 Set request = Server.CreateObject("AspHTTP.Conn")
 request.Url = "https://geoip.maxmind.com/v1.0/city-isp-org?l=" & license_key & "&i=" & ip_address
 request.RequestMethod = "GET"
