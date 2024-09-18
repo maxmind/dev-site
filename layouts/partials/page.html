@@ -5,5 +5,19 @@
   <div class="page__content">
     <h1 class="page__title">{{ .Title }}</h1>
     {{ .Content }}
+
+    {{ if eq .Type "release-note" }}
+    <div class="page__release-note-archive">
+      <h3>Archive</h3>
+      <ul>
+      {{ range .CurrentSection.RegularPages.ByDate.Reverse }}
+        {{ $year := path.Base .Path }}
+        {{ if strings.Contains .Title $year }}
+          <li><a href="{{ .RelPermalink }}">{{ $year }}</a></li>
+        {{ end }}
+      {{ end }}
+      </ul>
+    </div>
+    {{ end }}
   </div>
 </div>

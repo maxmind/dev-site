@@ -4,7 +4,6 @@ in a database or map/dict/hash data structure.**
 These names may change between releases. Instead we recommend using one of the
 following:
 
-{{< table >}}
 | Data object  | Recommended key              |
 | ------------ | ---------------------------- |
 | city         | `geoname_id`                 |
@@ -12,4 +11,3 @@ following:
 | country      | `country_iso_code`           |
 | postal       | `postal_code`                |
 | subdivisions | `subdivision_{1,2}_iso_code` |
-{{</ table >}}
