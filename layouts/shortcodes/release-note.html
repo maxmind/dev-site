@@ -4,7 +4,7 @@
 
 <div class="release-note" data-title="{{ $title }}" data-date="{{ $date }}" data-anchor="{{ $anchor }}">
   <h2 class="release-note__title" id="{{ $anchor }}">
-    {{ $title }}
+    <a href="#{{ $anchor }}">{{ $title }}</a>
   </h2>
   <em class="release-note__date">
     {{ $date | time.Format ":date_long" }}
