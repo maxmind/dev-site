@@ -48,25 +48,21 @@ system making the query is behind a NAT.
 
 ### GeoIP Endpoints
 
-{{< table >}}
 | Service   | HTTP Method | Endpoint                                                     |
 | --------- | ----------- | ------------------------------------------------------------ |
 | Country   | `GET`       | `https://geoip.maxmind.com/geoip/v2.1/country/{ip_address}`  |
 | City Plus | `GET`       | `https://geoip.maxmind.com/geoip/v2.1/city/{ip_address}`     |
 | Insights  | `GET`       | `https://geoip.maxmind.com/geoip/v2.1/insights/{ip_address}` |
-{{</ table >}}
 
 The `geoip.maxmind.com` hostname automatically picks the data center
 geographically closest to you.
 
 ### GeoLite2 Endpoints
 
-{{< table >}}
 | Service | HTTP Method | Endpoint                                               |
 | ------- | ----------- | ------------------------------------------------------ |
 | Country | `GET`       | `https://geolite.info/geoip/v2.1/country/{ip_address}` |
 | City    | `GET`       | `https://geolite.info/geoip/v2.1/city/{ip_address}`    |
-{{</ table >}}
 
 The `geolite.info` hostname automatically picks the data center geographically
 closest to you.

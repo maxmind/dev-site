@@ -44,7 +44,6 @@ title: GeoIP2 and GeoLite2 Database Documentation
 
 ### Official Client APIs
 
-{{< table >}}
 | Language or Framework | Package Repository                                                                                                            | Documentation                                              | Version Control                                    |
 | --------------------- | ----------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------- | -------------------------------------------------- |
 | .NET (C#)             | [NuGet](https://www.nuget.org/packages/MaxMind.GeoIP2/)                                                                       | [GitHub Pages](https://maxmind.github.io/GeoIP2-dotnet/)   | [GitHub](https://github.com/maxmind/GeoIP2-dotnet) |
@@ -56,7 +55,6 @@ title: GeoIP2 and GeoLite2 Database Documentation
 | PHP                   | [Packagist](https://packagist.org/packages/geoip2/geoip2)                                                                     | [GitHub Pages](https://maxmind.github.io/GeoIP2-php/)      | [GitHub](https://github.com/maxmind/GeoIP2-php)    |
 | Python                | [PyPI](https://pypi.python.org/pypi/geoip2)                                                                                   | [Read the Docs](https://geoip2.readthedocs.org/en/latest/) | [GitHub](https://github.com/maxmind/GeoIP2-python) |
 | Ruby                  | [RubyGems](https://rubygems.org/gems/maxmind-geoip2)                                                                          | [RubyDoc](https://www.rubydoc.info/gems/maxmind-geoip2)    | [GitHub](https://github.com/maxmind/GeoIP2-ruby)   |
-{{</ table >}}
 
 ### Unofficial Client APIs
 
@@ -68,7 +66,6 @@ integrator for assistance.
 {{</ alert >}}
 
 
-{{< table >}}
 | Language or Software | API Name                        | Package Repository                                                          | Documentation                                                                      | Version Control                                              |
 | -------------------- | ------------------------------- | --------------------------------------------------------------------------- | ---------------------------------------------------------------------------------- | ------------------------------------------------------------ |
 | C++                  | GeoLite2++                      |                                                                             | [Usage](https://www.ccoderun.ca/GeoLite2++/api/usage.html)                         |                                                              |
@@ -99,7 +96,6 @@ integrator for assistance.
 | Rust                 | maxminddb                       | [Cargo](https://crates.io/crates/maxminddb)                                 | [API docs](https://oschwald.github.io/maxminddb-rust/maxminddb/struct.Reader.html) | [GitHub](https://github.com/oschwald/maxminddb-rust)         |
 | Scala                | maxmind-geoip2-scala            |                                                                             | [README](https://github.com/Sanoma-CDA/maxmind-geoip2-scala/blob/master/README.md) | [GitHub](https://github.com/Sanoma-CDA/maxmind-geoip2-scala) |
 | Swift (C extension)  | MMDB-Swift                      | [MMDB-Swift](https://cocoapods.org/pods/MMDB-Swift)                         | [CocoaPods](https://cocoapods.org/pods/MMDB-Swift)                                 | [GitHub](https://github.com/lexrus/MMDB-Swift)               |
-{{</ table >}}
 
 ### Integrations
 
@@ -111,7 +107,6 @@ MaxMind does **_not_** offer support for these integrations. Please contact the
 integrator for assistance.
 {{</ alert >}}
 
-{{< table >}}
 | Application                    | Platform                | Link                                                                                                                    |
 | ------------------------------ | ----------------------- | ----------------------------------------------------------------------------------------------------------------------- |
 | Ad-serving                     | Revive Adserver         | [Geotargeting with Revive Adserver](https://www.revive-adserver.com/faq/geotargeting-with-revive-adserver/)             |
@@ -123,7 +118,6 @@ integrator for assistance.
 | Log Analyzer / Data Processing | Logstash                | [Geoip filter plugin](https://www.elastic.co/guide/en/logstash/current/plugins-filters-geoip.html)                      |
 | Network Protocol Analyzer      | Wireshark               | [How To Use GeoIP With Wireshark](https://gitlab.com/wireshark/wireshark/-/wikis/HowToUseGeoIP)                         |
 | Search                         | Elasticsearch           | [GeoIP processor](https://www.elastic.co/guide/en/elasticsearch/reference/current/geoip-processor.html#geoip-processor) |
-{{</ table >}}
 
 ## Command Line (mmdbinspect)
 

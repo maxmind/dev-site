@@ -8,7 +8,6 @@ title: GeoIP and GeoLite API Responses
 The `Content-Type` for a successful response varies based on the service as
 outlined below:
 
-{{< table >}}
 | Service          | Content-Type                                                            |
 | ---------------- | ----------------------------------------------------------------------- |
 | GeoIP Country   | `application/vnd.maxmind.com-country+json; charset=UTF-8; version=2.1`  |
@@ -16,7 +15,6 @@ outlined below:
 | GeoIP Insights  | `application/vnd.maxmind.com-insights+json; charset=UTF-8; version=2.1` |
 | GeoLite2 Country | `application/vnd.maxmind.com-country+json; charset=UTF-8; version=2.1`  |
 | GeoLite2 City    | `application/vnd.maxmind.com-city+json; charset=UTF-8; version=2.1`     |
-{{</ table >}}
 
 Errors may be returned with the `Content-Type` set to
 `application/vnd.maxmind.com-error+json; charset=UTF-8; version=2.0`. If this is
@@ -150,7 +148,7 @@ to handle any valid HTTP `4xx` or `5xx` status code.
     </tbody>
   </table>
 </div>
-{{</ table >}}
+{{</ rawhtml >}}
 
 ## Response
 
@@ -882,7 +880,6 @@ not have any name data at all for a given object.
 These names may change between releases. Instead we recommend using one of the
 following:
 
-{{< table >}}
 | Data object                                                | Recommended key            |
 | ---------------------------------------------------------- | -------------------------- |
 | `city`                                                     | `geoname_id`               |
@@ -890,7 +887,6 @@ following:
 | `country`, `registered_country`, and `represented_country` | `iso_code` or `geoname_id` |
 | `postal`                                                   | `code`                     |
 | `subdivisions`                                             | `iso_code` or `geoname_id` |
-{{</ table >}}
 
 ## Example Response Bodies
 
