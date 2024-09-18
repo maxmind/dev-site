@@ -226,6 +226,9 @@ title = 'MaxMind'
 
 [module]
   [[module.mounts]]
+    source = "static"
+    target = "static"
+  [[module.mounts]]
     source = "data/mm_ips.json"
     target = "static/maxmind-server-ip-addresses.json"
 
