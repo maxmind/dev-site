@@ -77,6 +77,11 @@ title = 'MaxMind'
       pageRef = '/minfraud/proxy-detection'
       parent = 'minFraud'
       weight = 90
+    [[menus.minfraud]]
+      name = 'Release Notes'
+      pageRef = '/minfraud/release-notes/2024'
+      parent = 'minFraud'
+      weight = 100
   [[menus.geoip]]
     name = 'GeoIP'
     pageRef = '/geoip'
@@ -186,6 +191,11 @@ title = 'MaxMind'
       pageRef = '/geoip/privacy-exclusions-api'
       parent = 'GeoIP'
       weight = 90
+    [[menus.geoip]]
+      name = 'Release Notes'
+      pageRef = '/geoip/release-notes/2024'
+      parent = 'GeoIP'
+      weight = 100
 
   [[menus.general]]
     name = 'MaxMind Server IP Addresses'
