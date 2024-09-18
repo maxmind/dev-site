@@ -28,23 +28,27 @@ h1 {
   font-weight: 700;
 }
 
-h2 {
+h2,
+h2 a {
   @include mixins.heading;
   font-size: 24px;
   font-weight: 700;
 }
 
-h3 {
+h3,
+h3 a {
   @include mixins.heading;
   font-size: 20px;
 }
 
-h4 {
+h4,
+h4 a {
   @include mixins.heading;
   font-size: 18px;
 }
 
-h5 {
+h5,
+h5 a {
   @include mixins.heading;
   font-size: 16px;
 }
