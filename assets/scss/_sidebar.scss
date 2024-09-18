@@ -27,7 +27,7 @@
 .sidebar-toggle__button span {
   backface-visibility: hidden;
   background-color: #000;
-  height: 1px;
+  height: 2px;
   transition: all .3s ease-out;
   width: 12px;
 
@@ -38,6 +38,7 @@
 }
 
 .sidebar-toggle__button.is-active span {
+  height: 1px;
   opacity: 0;
 
   &:first-child {
@@ -68,11 +69,12 @@
   overflow-y: auto;
   padding-bottom: 20px;
   padding-left: 20px;
+  scrollbar-width: thin;
 
   @media only screen and (min-width: 992px) {
     height: calc(100vh - var(--page-header-height) - 60px);
     position: sticky;
-    top: 130px;
+    top: 115px;
   }
 }
 
