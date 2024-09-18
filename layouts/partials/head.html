@@ -4,7 +4,7 @@
   <title>{{ .Title }}</title>
 
   {{ $style := resources.Get "scss/index.scss" }} {{ $options := dict
-  "transpiler" "dartsass" }} {{ $style := $style | resources.ToCSS $options}}
+  "transpiler" "dartsass" }} {{ $style := $style | toCSS $options}}
 
   <link rel="stylesheet" type="text/css" href="{{ $style.RelPermalink }}" />
 
