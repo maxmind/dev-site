@@ -1,7 +1,0 @@
-@use '../../styles/variables';
-
-.h2 {
-  @include variables.heading;
-  font-size: 24px;
-  font-weight: 700;
-}
