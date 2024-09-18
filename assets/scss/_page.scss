@@ -39,7 +39,7 @@
 
 .page__title {
   margin-top: 0;
-  padding: 0 0 var(--mm-spacing);
+  padding: 0 0 calc(var(--mm-spacing) / 2);
 }
 
 .page__meta {
@@ -48,4 +48,18 @@
   font-weight: 400;
   margin-top: calc(var(--mm-spacing) * 2);
   text-align: center;
+}
+
+.page__release-note-archive {
+  border-top: 1px solid var(--mm-color-border);
+
+  ul {
+    margin-left: 0;
+    padding-left: 0;
+  }
+
+  li {
+    display: inline;
+    margin-right: calc(var(--mm-spacing) / 3);
+  }
 }
