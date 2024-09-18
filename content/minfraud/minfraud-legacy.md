@@ -869,13 +869,11 @@ You should receive a minFraud response with risk scores and risk data.
 
 The `proxyScore` output will contain a response within the range defined below:
 
-{{< table >}}
 | Test IP Address Input | Test proxyScore Output Range |
 | --------------------- | ---------------------------- |
 | `128.101.101.101`     | 2 - 4                        |
 | `74.209.24.1`         | 0.5 - 1.99                   |
 | `65.116.3.80`         | 0 - 0.49                     |
-{{</ table >}}
 
 Here is an example request that should return a valid minFraud response without
 any warnings or errors, and with a proxyScore between 2 and 4:

@@ -117,7 +117,6 @@ These will be the earliest updated transactions after the provided
 
 Each transaction in the updates array will contain the following keys:
 
-{{< table >}}
 | Key                   | Value Type | Description                                                                                                                                                                                                                               |
 | --------------------- | ---------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `minfraud_id`         | UUID       | The transaction’s unique identifier.                                                                                                                                                                                                      |
@@ -125,7 +124,6 @@ Each transaction in the updates array will contain the following keys:
 | `action_last_updated` | Timestamp  | The date and time the disposition action was last updated, in RFC 3339 format with microsecond precision.                                                                                                                                 |
 | `note`                | String     | The most recent transaction note. Limited to 500 characters. Will be `null` if not currently set.                                                                                                                                         |
 | `note_last_updated`   | Timestamp  | The date and time the note was last updated, in RFC 3339 format with microsecond precision. If a note has never been set, this will be `null`                                                                                             |
-{{</ table >}}
 
 As a note to implementers, we are considering adding additional keys to this
 object in future versions of this API.
@@ -209,7 +207,6 @@ the error and may change at any time.
 In addition to the errors documented below, client code should also be prepared
 to handle any valid HTTP 4xx or 5xx status code.
 
-{{< table >}}
 | Code                   | HTTP Status                | Error                                                                                                                                                                                    |
 | ---------------------- | -------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | UPDATES_AFTER_REQUIRED | 400 Bad Request            | You have not supplied the `updates_after` URI parameter.                                                                                                                                 |
@@ -222,7 +219,6 @@ to handle any valid HTTP 4xx or 5xx status code.
 | (none)                 | 406 Not Acceptable         | Your request included an `Accept-Charset` header that is not supported. `UTF-8` is the only acceptable character set.                                                                    |
 | (none)                 | 415 Unsupported Media Type | Your request included an `Accept` header that is not supported. The web service cannot return content of that type.                                                                      |
 | (none)                 | 503 Service Not Available  | There is a problem with the web service server. You can try this request again later.                                                                                                    |
-{{</ table >}}
 
 ### Example response to an unsuccessful request
 

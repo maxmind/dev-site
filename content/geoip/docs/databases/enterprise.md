@@ -21,7 +21,6 @@ for assistance.
 
 {{< snippet "snippets/binary-databases.md" >}}
 
-{{< table >}}
 | Language or Framework | Documentation                                                                      | Example                                                                            |
 | --------------------- | ---------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------- |
 | .NET (C#)             | [GitHub - Database Usage](https://github.com/maxmind/GeoIP2-dotnet#database-usage) | [Enterprise Example](https://github.com/maxmind/GeoIP2-dotnet#enterprise-database) |
@@ -30,7 +29,6 @@ for assistance.
 | PHP                   | [GitHub - Database Reader](https://github.com/maxmind/GeoIP2-php#database-reader)  | [Enterprise Example](https://github.com/maxmind/GeoIP2-php#enterprise-example)     |
 | Python                | [GitHub - Database Usage](https://github.com/maxmind/GeoIP2-python#database-usage) | [Enterprise Example](https://github.com/maxmind/GeoIP2-python#enterprise-database) |
 | Ruby                  | [GitHub - Database Reader](https://github.com/maxmind/GeoIP2-ruby#database-reader) | [Enterprise Example](https://github.com/maxmind/GeoIP2-ruby#enterprise-example)    |
-{{</ table >}}
 
 ## CSV Database
 

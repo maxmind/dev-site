@@ -19,7 +19,6 @@ on our product pages:
 
 {{< snippet "snippets/binary-databases.md" >}}
 
-{{< table >}}
 | Language or Framework | Documentation                                                                      | Example                                                                |
 | --------------------- | ---------------------------------------------------------------------------------- | ---------------------------------------------------------------------- |
 | .NET (C#)             | [GitHub - Database Usage](https://github.com/maxmind/GeoIP2-dotnet#database-usage) | [City Example](https://github.com/maxmind/GeoIP2-dotnet#city-database) |
@@ -28,7 +27,6 @@ on our product pages:
 | PHP                   | [GitHub - Database Reader](https://github.com/maxmind/GeoIP2-php#database-reader)  | [City Example](https://github.com/maxmind/GeoIP2-php#city-example)     |
 | Python                | [GitHub - Database Usage](https://github.com/maxmind/GeoIP2-python#database-usage) | [City Example](https://github.com/maxmind/GeoIP2-python#city-database) |
 | Ruby                  | [GitHub - Database Reader](https://github.com/maxmind/GeoIP2-ruby#database-reader) | [City Example](https://github.com/maxmind/GeoIP2-ruby#city-example)    |
-{{</ table >}}
 
 ## CSV Databases
 
