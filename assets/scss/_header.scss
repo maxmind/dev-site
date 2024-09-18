@@ -36,7 +36,7 @@ $page-header-height: 80px;
   @include mixins.pattern-border;
   background: var(--mm-color-background);
   box-shadow: 0 1px 13px 0 rgba(0, 0, 0, 0.1), 0 1px 5px 0 rgba(0, 0, 0, 0.06);
-  height: calc(var(--page-header-height) - 10px);
+  height: var(--page-header-height);
   padding-top: 10px;
   position: sticky;
   top: 0;
