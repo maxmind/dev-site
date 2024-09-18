@@ -42,3 +42,24 @@
 :target {
   scroll-margin-top: 100px;
 }
+
+
+a.heading-anchor {
+  &:hover {
+    text-decoration: none;
+
+    &::before {
+      opacity: 1;
+    }
+  }
+
+  &::before {
+    content: '#';
+    color: var(--mm-color-logo-blue-light);
+    font-size: 17px;
+    left: -15px;
+    opacity: 0;
+    position: absolute;
+    transition: opacity 0.1s ease-in-out;
+  }
+}
