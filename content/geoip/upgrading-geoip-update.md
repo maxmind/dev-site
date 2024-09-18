@@ -3,8 +3,7 @@ draft: false
 title: Upgrading GeoIP Update from v3.x to v4.0 and higher
 ---
 
-<Alert type="info">
-
+{{< alert info >}}
 In 2019, we released a new major version of `geoipupdate`. This document
 describes how you can upgrade from versions 3.x to versions 4.x and higher.
 
@@ -12,8 +11,7 @@ If you are upgrading from version 4.x and higher to the latest version, please
 consult the
 [changelog of the latest release](https://github.com/maxmind/geoipupdate/releases)
 for information.
-
-</Alert>
+{{</ alert >}}
 
 ## What changed
 
@@ -43,7 +41,7 @@ If you’re coming from `geoipupdate` 2\.x:
 
 You can do this by running `geoipupdate -V`:
 
-```cli
+```shell
 geoipupdate -V
 > geoipupdate 3.1.1
 ```
@@ -61,7 +59,7 @@ Typically this will be `/etc/GeoIP.conf` or `/usr/local/etc/GeoIP.conf`.
 
 One way to do this is to run `geoipupdate` in verbose mode:
 
-```cli
+```shell
 geoipupdate -v
 > geoipupdate 3.1.1
 > Opened License file /etc/GeoIP.conf
@@ -83,7 +81,7 @@ If you previously installed it via `make install`, you should determine where
 it’s installed so you don’t end up with conflicting versions. You can run this
 command to check where it is:
 
-```cli
+```shell
 which geoipupdate
 > /usr/bin/geoipupdate
 ```
@@ -99,7 +97,7 @@ running 4.x.
 Run `geoipupdate` in verbose mode to verify it’s using the config file you
 expect and completes without error:
 
-```cli
+```shell
 geoipupdate -v
 > Using config file /etc/GeoIP.conf
 > ...
