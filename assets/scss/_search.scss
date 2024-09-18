@@ -34,6 +34,10 @@
 .search__button {
   @include mixins.menu-button;
   float: right;
+
+  svg {
+    margin-top: 3px;
+  }
 }
 
 .input {
