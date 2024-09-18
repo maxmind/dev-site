@@ -78,7 +78,7 @@ title = 'MaxMind'
       parent = 'minFraud'
       weight = 90
     [[menus.minfraud]]
-      name = 'Release Notes'
+      name = 'minFraud Release Notes'
       pageRef = '/minfraud/release-notes/2024'
       parent = 'minFraud'
       weight = 100
@@ -192,7 +192,7 @@ title = 'MaxMind'
       parent = 'GeoIP'
       weight = 90
     [[menus.geoip]]
-      name = 'Release Notes'
+      name = 'GeoIP Release Notes'
       pageRef = '/geoip/release-notes/2024'
       parent = 'GeoIP'
       weight = 100
