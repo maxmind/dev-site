@@ -22,6 +22,7 @@
 @import 'link-group';
 @import 'tag';
 @import 'schema';
+@import 'release-note';
 
 *:focus {
   outline-color: var(--mm-color-logo-blue-light);
@@ -40,4 +41,25 @@
 // Account for the fixed header
 :target {
   scroll-margin-top: 100px;
+}
+
+
+a.heading-anchor {
+  &:hover {
+    text-decoration: none;
+
+    &::before {
+      opacity: 1;
+    }
+  }
+
+  &::before {
+    content: '#';
+    color: var(--mm-color-logo-blue-light);
+    font-size: 17px;
+    left: -15px;
+    opacity: 0;
+    position: absolute;
+    transition: opacity 0.1s ease-in-out;
+  }
 }

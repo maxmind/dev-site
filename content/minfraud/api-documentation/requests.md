@@ -29,13 +29,11 @@ secure.
 
 The endpoint for each service is as specified below.
 
-{{< table >}}
 | Service  | HTTP Method | Endpoint                                              |
 | -------- | ----------- | ----------------------------------------------------- |
 | Score    | `POST`      | `https://minfraud.maxmind.com/minfraud/v2.0/score`    |
 | Insights | `POST`      | `https://minfraud.maxmind.com/minfraud/v2.0/insights` |
 | Factors  | `POST`      | `https://minfraud.maxmind.com/minfraud/v2.0/factors`  |
-{{</ table >}}
 
 The **minfraud.maxmind.com** hostname automatically picks the data center
 geographically closest to you.

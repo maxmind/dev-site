@@ -15,7 +15,6 @@ To learn more about the GeoIP2 ISP database, including terms and pricing, please
 
 {{< snippet "snippets/binary-databases.md" >}}
 
-{{< table >}}
 | Language or Framework | Documentation                                                                      | Example                                                              |
 | --------------------- | ---------------------------------------------------------------------------------- | -------------------------------------------------------------------- |
 | .NET (C#)             | [GitHub - Database Usage](https://github.com/maxmind/GeoIP2-dotnet#database-usage) | [ISP Example](https://github.com/maxmind/GeoIP2-dotnet#isp-database) |
@@ -24,7 +23,6 @@ To learn more about the GeoIP2 ISP database, including terms and pricing, please
 | PHP                   | [GitHub - Database Reader](https://github.com/maxmind/GeoIP2-php#database-reader)  | [ISP Example](https://github.com/maxmind/GeoIP2-php#isp-example)     |
 | Python                | [GitHub - Database Usage](https://github.com/maxmind/GeoIP2-python#database-usage) | [ISP Example](https://github.com/maxmind/GeoIP2-python#isp-database) |
 | Ruby                  | [GitHub - Database Reader](https://github.com/maxmind/GeoIP2-ruby#database-reader) | [ISP Example](https://github.com/maxmind/GeoIP2-ruby#isp-example)    |
-{{</ table >}}
 
 ## CSV Database
 

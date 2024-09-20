@@ -77,6 +77,11 @@ title = 'MaxMind'
       pageRef = '/minfraud/proxy-detection'
       parent = 'minFraud'
       weight = 90
+    [[menus.minfraud]]
+      name = 'minFraud Release Notes'
+      pageRef = '/minfraud/release-notes/2024'
+      parent = 'minFraud'
+      weight = 100
   [[menus.geoip]]
     name = 'GeoIP'
     pageRef = '/geoip'
@@ -136,6 +141,16 @@ title = 'MaxMind'
         pageRef = '/geoip/docs/web-services/responses'
         parent = 'Web Services Documentation'
         weight = 20
+      [[menus.geoip]]
+        name = 'Sandbox Environment'
+        pageRef = '/geoip/docs/web-services/sandbox-environment'
+        parent = 'Web Services Documentation'
+        weight = 30
+      [[menus.geoip]]
+        name = 'Legacy Web Services'
+        pageRef = '/geoip/docs/web-services/legacy'
+        parent = 'Web Services Documentation'
+        weight = 40
     [[menus.geoip]]
       name = 'Database Documentation'
       pageRef = '/geoip/docs/databases'
@@ -186,6 +201,11 @@ title = 'MaxMind'
       pageRef = '/geoip/privacy-exclusions-api'
       parent = 'GeoIP'
       weight = 90
+    [[menus.geoip]]
+      name = 'GeoIP Release Notes'
+      pageRef = '/geoip/release-notes/2024'
+      parent = 'GeoIP'
+      weight = 100
 
   [[menus.general]]
     name = 'MaxMind Server IP Addresses'
@@ -205,6 +225,9 @@ title = 'MaxMind'
     weight = 40
 
 [module]
+  [[module.mounts]]
+    source = "static"
+    target = "static"
   [[module.mounts]]
     source = "data/mm_ips.json"
     target = "static/maxmind-server-ip-addresses.json"

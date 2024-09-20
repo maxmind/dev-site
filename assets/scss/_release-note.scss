@@ -1,0 +1,9 @@
+.release-note {
+  margin-bottom: calc(var(--mm-spacing) * 1.5);
+}
+
+.release-note__date {
+  display: block;
+  font-style: italic;
+  margin-bottom: calc(var(--mm-spacing) / 2);
+}

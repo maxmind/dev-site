@@ -12,7 +12,6 @@ associated with IPv4 and IPv6 addresses.
 
 {{< snippet "snippets/binary-databases.md" >}}
 
-{{< table >}}
 | Language or Framework | Documentation                                                                      | Example                                                              |
 | --------------------- | ---------------------------------------------------------------------------------- | -------------------------------------------------------------------- |
 | .NET (C#)             | [GitHub - Database Usage](https://github.com/maxmind/GeoIP2-dotnet#database-usage) | [ASN Example](https://github.com/maxmind/GeoIP2-dotnet#asn)          |
@@ -21,7 +20,6 @@ associated with IPv4 and IPv6 addresses.
 | PHP                   | [GitHub - Database Reader](https://github.com/maxmind/GeoIP2-php#database-reader)  | &bull;                                                               |
 | Python                | [GitHub - Database Usage](https://github.com/maxmind/GeoIP2-python#database-usage) | [ASN Example](https://github.com/maxmind/GeoIP2-python#asn-database) |
 | Ruby                  | [GitHub - Database Reader](https://github.com/maxmind/GeoIP2-ruby#database-reader) | [ASN Example](https://github.com/maxmind/GeoIP2-ruby#asn-example)    |
-{{</ table >}}
 
 ## CSV Database
 

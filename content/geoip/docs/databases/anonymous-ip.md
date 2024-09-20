@@ -16,7 +16,6 @@ for assistance.
 
 {{< snippet "snippets/binary-databases.md" >}}
 
-{{< table >}}
 | Language or Framework | Documentation                                                                      | Example                                                                                      |
 | --------------------- | ---------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------- |
 | .NET (C#)             | [GitHub - Database Usage](https://github.com/maxmind/GeoIP2-dotnet#database-usage) | [Anonymous IP Example](https://github.com/maxmind/GeoIP2-dotnet#anonymous-ip-database)       |
@@ -25,7 +24,6 @@ for assistance.
 | PHP                   | [GitHub - Database Reader](https://github.com/maxmind/GeoIP2-php#database-reader)  | [Anonymous IP Example](https://github.com/maxmind/GeoIP2-php#anonymous-ip-example)           |
 | Python                | [GitHub - Database Usage](https://github.com/maxmind/GeoIP2-python#database-usage) | [Anonymous IP Example](https://github.com/maxmind/GeoIP2-python#anonymous-ip-database)       |
 | Ruby                  | [GitHub - Database Reader](https://github.com/maxmind/GeoIP2-ruby#database-reader) | [Anonymous IP Example](https://github.com/maxmind/GeoIP2-ruby#anonymous-ip-example)          |
-{{</ table >}}
 
 ## CSV Database
 
