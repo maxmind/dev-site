@@ -217,7 +217,7 @@ title = 'MaxMind'
     weight = 20
   [[menus.general]]
     name = 'MMDB Format Spec'
-    pageRef = 'https://maxmind.github.io/MaxMind-DB/'
+    url = 'https://maxmind.github.io/MaxMind-DB/'
     weight = 30
   [[menus.general]]
     name = 'Contribute'
