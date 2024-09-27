@@ -53,7 +53,7 @@ are returned in a simple text format documented below.
 
 The three parameters that this service takes are the IP address to look up, the
 shopID and
-[your MaxMind license key](https://www.maxmind.com/en/my_license_key).
+[your MaxMind license key](https://www.maxmind.com/en/accounts/current/license-key).
 
 The shopID is your internal ID for the shop, affiliate, or merchant this order
 is coming from, and is required for customers who are resellers, payment

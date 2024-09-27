@@ -110,7 +110,7 @@ gem 'minfraud'
 
 To interact with our API, you need to create a new client object. For this you
 will need
-[your MaxMind account ID and license key](https://www.maxmind.com/en/my_license_key):
+[your MaxMind account ID and license key](https://www.maxmind.com/en/accounts/current/license-key):
 
 {{< codeset >}}
 

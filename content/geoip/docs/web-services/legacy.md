@@ -37,7 +37,7 @@ information about the IP address.
 All of the services take the same parameters as inputs. The only difference
 between them is the URI they use and the data they return. The two parameters
 that each service takes are the IP address to look up and
-[your MaxMind license key](https://www.maxmind.com/en/my_license_key).
+[your MaxMind license key](https://www.maxmind.com/en/accounts/current/license-key).
 
 The parameters should be passed in a query string or as a form post
 (application/x-www-form-urlencoded). The IP address parameter should be named
