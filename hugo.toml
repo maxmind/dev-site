@@ -220,9 +220,13 @@ title = 'MaxMind'
     url = 'https://maxmind.github.io/MaxMind-DB/'
     weight = 30
   [[menus.general]]
+    name = 'Knowledge Base'
+    url = 'https://support.maxmind.com/hc/en-us)'
+    weight = 40
+  [[menus.general]]
     name = 'Contribute'
     pageRef = '/contribute'
-    weight = 40
+    weight = 50
 
 [module]
   [[module.mounts]]
