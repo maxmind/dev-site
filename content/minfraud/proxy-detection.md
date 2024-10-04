@@ -5,7 +5,7 @@ title: Proxy Detection Legacy Web Service
 
 {{< alert warning >}}
 To learn more about the risk associated with a particular IP address, use the
-[minFraud Score service](/minfraud). This service provides the IP Risk Score, a
+[minFraud Score service](/minfraud/evaluate-a-transaction/). This service provides the IP Risk Score, a
 replacement for the proxyScore. To identify anonymous IP addresses in support
 of geotargeting and ad serving environments, we recommend using the
 [GeoIP2 Anonymous IP database](https://www.maxmind.com/en/geoip2-anonymous-ip-database).
