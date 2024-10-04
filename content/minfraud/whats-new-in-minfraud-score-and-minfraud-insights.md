@@ -32,73 +32,10 @@ and error, are in the form of a JSON object.
 
 ### Inputs
 
-The following inputs have been added to help us provide you with the most
-accurate risk assessment possible. Please see the
-[Request API documentation](/minfraud/api-documentation/requests) for a complete
-description.
-
-- `credit_card`
-
-  - `token`
-  - `device`
-  - `session_age`
-  - `session_id`
-
-- `event`
-
-  - `time`
-  - `type`
-
-- `billing`
-
-  - `first_name`
-  - `last_name`
-  - `company`
-  - `address`
-  - `address_2`
-  - `phone_number`
-  - `phone_country_code`
-
-- `shipping`
-
-  - `first_name`
-  - `last_name`
-  - `company`
-  - `address_2`
-  - `phone_number`
-  - `phone_country_code`
-  - `delivery_speed`
-
-- `account`
-
-  - `user_id`
-
-- `email`
-
-  - `first_seen`
-
-- `payment`
-
-  - `processor`
-  - `was_authorized`
-  - `decline_code`
-
-- `credit_card`
-
-  - `last_digits`
-
-- `order`
-
-  - `affiliate_id`
-  - `discount_code`
-  - `subaffiliate_id`
-  - `referrer_uri`
-
-- `shopping_cart`
-  - `category`
-  - `item_id`
-  - `quantity`
-  - `price`
+[Download this PDF](https://get.maxmind.com/hubfs/Marketing/minFraud/minFraud%20services%20input_output%20comparison%20table.pdf)
+to get an overview and comparison of all minFraud products' inputs.
+You can also view our [Request API documentation](/minfraud/api-documentation/requests) for a complete
+description of each input.
 
 ### minFraud Score Outputs
 
@@ -124,91 +61,11 @@ similar to `risk_score`.
 `/shipping_address/is_in_ip_country`.
 
 ### New Outputs
+[Download this PDF](https://get.maxmind.com/hubfs/Marketing/minFraud/minFraud%20services%20input_output%20comparison%20table.pdf)
+to get an overview and comparison of all minFraud products' outputs.
+You can also view our [Request API documentation](/minfraud/api-documentation/responses) for a complete
+description of each input.
 
-The following outputs have been added.
-
-- `credit_card`
-
-  - `brand`
-  - `is_prepaid`
-  - `is_virtual`
-  - `type`
-
-- `device` (requires [Device Tracking Add-on](/minfraud/track-devices))
-
-  - `id`
-  - `confidence`
-  - `last_seen`
-  - `local_time`
-
-- `disposition`
-
-  - `action`
-  - `reason`
-
-- `email`
-
-  - `first_seen`
-
-- `ip_address`
-
-  - `risk`
-
-  - `location`
-
-    - `average_income`
-    - `local_time`
-    - `population_density`
-
-  - `registered_country`
-
-  - `represented_country`
-
-  - `traits`
-    - `autonomous_system_number`
-    - `autonomous_system_organization`
-    - `is_anonymous`
-    - `is_anonymous_vpn`
-    - `is_hosting_provider`
-    - `is_public_proxy`
-    - `is_satellite_provider`
-    - `is_tor_exit_node`
-    - `is_residential_proxy`
-    - `network`
-    - `static_ip_score`
-    - `user_count`
-
-- `shipping_address`
-
-  - `latitude`<sup>\*</sup>
-  - `longitude`<sup>\*</sup>
-  - `distance_to_ip_location`
-  - `distance_to_billing_address`
-  - `is_in_ip_country`
-
-- `shipping_phone`
-
-  - `country`
-  - `network_operator`
-  - `number_type`
-  - `is_voip`
-
-- `billing_address`
-
-  - `latitude`<sup>\*</sup>
-  - `longitude`<sup>\*</sup>
-  - `distance_to_ip_location`
-  - `is_in_ip_country`
-
-- `billing_phone`
-
-  - `country`
-  - `network_operator`
-  - `number_type`
-  - `is_voip`
-
-\* Latitude and longitude are not precise and should not be used to identify a
-particular street address or household.
 
 ### Deprecated Outputs
 
@@ -219,33 +76,6 @@ The following outputs have been removed without a direct replacement.
 - `highRiskUsername`
 - `highRiskPassword`
 - `custPhoneInBillingLoc`
-
-### minFraud Factors Outputs
-
-In addition to the changes in minFraud Insights, minFraud Factors also includes
-the following outputs:
-
-- `subscores`
-  - `avs_result`
-  - `billing_address`
-  - `billing_address_distance_to_ip_location`
-  - `browser`
-  - `chargeback`
-  - `country`
-  - `country_mismatch`
-  - `cvv_result`
-  - `device`
-  - `email_address`
-  - `email_domain`
-  - `email_local_part`
-  - `email_tenure`(deprecated)
-  - `ip_tenure` (deprecated)
-  - `issuer_id_number`
-  - `order_amount`
-  - `phone_number`
-  - `shipping_address`
-  - `shipping_address_distance_to_ip_location`
-  - `time_of_day`
 
 ## More Information
 
