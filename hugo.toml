@@ -221,7 +221,7 @@ title = 'MaxMind'
     weight = 30
   [[menus.general]]
     name = 'Knowledge Base'
-    url = 'https://support.maxmind.com/hc/en-us)'
+    url = 'https://support.maxmind.com/hc/en-us'
     weight = 40
   [[menus.general]]
     name = 'Contribute'
