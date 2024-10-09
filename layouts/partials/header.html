@@ -15,25 +15,8 @@
       <span aria-label="Developers" class="logo__siteName">Developers</span>
     </a>
     <div class="header__search">
-      <form
-        action="/search-results"
-        id="search__form"
-        class="searchbar"
-        role="search"
-      >
-        <div class="mag">{{ readFile "assets/FaSearch.svg" | safeHTML }}</div>
-        <input
-          type="search"
-          aria-label="Search"
-          class="input"
-          id="search"
-          placeholder="Search"
-          name="query"
-        />
-        <input aria-label="Submit" class="hidden" type="submit" />
-      </form>
       <div class="search">
-        <button aria-label="Show search bar" class="search__button">
+        <button aria-label="Show search bar" class="search__button" id="searchWidgetTrigger" type="button">
           {{ readFile "assets/FaSearch.svg" | safeHTML }}
         </button>
       </div>
