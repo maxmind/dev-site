@@ -38,6 +38,14 @@
   display: block !important;
 }
 
+.home__sidebar {
+  display: none;
+
+  @media only screen and (min-width: 992px) {
+    display: none !important;
+  }
+}
+
 // Account for the fixed header
 :target {
   scroll-margin-top: 100px;
