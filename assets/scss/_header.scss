@@ -50,8 +50,8 @@ $page-header-height: 80px;
   grid-template-columns: max-content 1fr;
   grid-template-rows: auto;
   height: calc(var(--page-header-height) - 10px);
-  margin: 0 auto;
-  max-width: 800px;
+  margin: auto;
+  max-width: var(--mm-max-content-width);
   padding: 0 var(--mm-spacing);
 }
 
@@ -147,12 +147,6 @@ $page-header-height: 80px;
 
 @include variables.breakpoint('md') {
   .nav {
-    margin: auto;
-  }
-}
-
-@include variables.breakpoint('xl') {
-  .nav {
-    padding: 0 var(--mm-spacing) 0;
+    padding: 0 calc(var(--mm-spacing) / 2);
   }
 }

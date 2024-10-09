@@ -1,6 +1,9 @@
 .page__wrapper {
   display: flex;
   height: 100%;
+  margin: auto;
+  max-width: var(--mm-max-content-width);
+  width: 100%;
 }
 
 .page__content {
