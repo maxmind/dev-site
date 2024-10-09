@@ -122,8 +122,7 @@ to handle any valid HTTP `4xx` or `5xx` status code.
         <td><code>PERMISSION_REQUIRED</code></td>
         <td>403 Forbidden</td>
         <td>
-          You do not have permission to use the service. Please contact
-          support@maxmind.com for more information.
+          You do not have permission to use the service. Please <a href="https://support.maxmind.com/hc/en-us/requests/new">contact our support team</a> for more information.
         </td>
       </tr>
       <tr>
