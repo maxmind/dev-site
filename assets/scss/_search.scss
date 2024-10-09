@@ -19,11 +19,11 @@
   display: inline-block;
   left: calc(50% - 20px);
   margin: 0 calc(var(--mm-spacing) / 2);
-  max-width: calc(var(--mm-max-width) - 80px);
+  max-width: calc(var(--mm-max-content-width) - var(--mm-spacing) );
   position: absolute;
   top: calc(50% + 5px);
   transform: translate(-50%, -50%);
-  width: calc(100% - (2 * var(--mm-spacing)));
+  width: calc(100% - (var(--mm-spacing)));
   z-index: 100;
 }
 
