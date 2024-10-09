@@ -21,6 +21,10 @@
     text-decoration: none;
     top: -2px;
   }
+
+  &:hover .link-group__card-title {
+    text-decoration: underline;
+  }
 }
 
 .link-group__card-title {

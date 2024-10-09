@@ -1,6 +1,7 @@
 ---
 draft: false
 title: minFraud API Responses
+type: "has-toc"
 ---
 
 ## Headers
@@ -98,12 +99,12 @@ to handle any valid HTTP `4xx` or `5xx` status code.
       <tr>
         <td><code>AUTHORIZATION_INVALID</code></td>
         <td>401 Unauthorized</td>
-        <td>You have supplied an invalid <a href="https://www.maxmind.com/en/my_license_key">MaxMind account ID and/or license key</a> in the <a href="/minfraud/api-documentation/requests#authorization-and-security">Authorization</a> header.</td>
+        <td>You have supplied an invalid <a href="https://www.maxmind.com/en/accounts/current/license-key">MaxMind account ID and/or license key</a> in the <a href="/minfraud/api-documentation/requests#authorization-and-security">Authorization</a> header.</td>
       </tr>
       <tr>
         <td><code>LICENSE_KEY_REQUIRED</code></td>
         <td>401 Unauthorized</td>
-        <td>You have not supplied a <a href="https://www.maxmind.com/en/my_license_key">MaxMind license key</a> in the <a href="/minfraud/api-documentation/requests#authorization-and-security">Authorization</a> header.</td>
+        <td>You have not supplied a <a href="https://www.maxmind.com/en/accounts/current/license-key">MaxMind license key</a> in the <a href="/minfraud/api-documentation/requests#authorization-and-security">Authorization</a> header.</td>
       </tr>
       <tr>
         <td><code>ACCOUNT_ID_REQUIRED</code></td>
@@ -121,8 +122,7 @@ to handle any valid HTTP `4xx` or `5xx` status code.
         <td><code>PERMISSION_REQUIRED</code></td>
         <td>403 Forbidden</td>
         <td>
-          You do not have permission to use the service. Please contact
-          support@maxmind.com for more information.
+          You do not have permission to use the service. Please <a href="https://support.maxmind.com/hc/en-us/requests/new">contact our support team</a> for more information.
         </td>
       </tr>
       <tr>

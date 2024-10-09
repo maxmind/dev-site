@@ -1,6 +1,7 @@
 ---
 draft: false
 title: minFraud API Requests
+type: "has-toc"
 ---
 
 ## Authorization and Security
@@ -657,7 +658,7 @@ where the event took place
   * `wirecard`
   * `worldpay`
 
-  If your payment processor is missing from this list, please contact [support@maxmind.com](mailto:support@maxmind.com).
+  If your payment processor is missing from this list, please [contact our support team](https://support.maxmind.com/hc/en-us/requests/new).
   {{</minfraud-schema-row>}}
 
   {{< minfraud-schema-row key="was_authorized" type="request" valueType="boolean"  >}}

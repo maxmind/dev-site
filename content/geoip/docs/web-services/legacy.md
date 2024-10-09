@@ -37,7 +37,7 @@ information about the IP address.
 All of the services take the same parameters as inputs. The only difference
 between them is the URI they use and the data they return. The two parameters
 that each service takes are the IP address to look up and
-[your MaxMind license key](https://www.maxmind.com/en/my_license_key).
+[your MaxMind license key](https://www.maxmind.com/en/accounts/current/license-key).
 
 The parameters should be passed in a query string or as a form post
 (application/x-www-form-urlencoded). The IP address parameter should be named
@@ -473,7 +473,7 @@ encoding is also referred to as latin1.
           </p>
 
           <ul>
-            <li><strong>PERMISSION_REQUIRED</strong> – This is returned if you do not have permission to use the service. Please contact <a href="mailto:support@maxmind.com">support@maxmind.com</a> for more information.</li>
+            <li><strong>PERMISSION_REQUIRED</strong> – This is returned if you do not have permission to use the service. Please <a href="https://support.maxmind.com/hc/en-us/requests/new">contact our support team</a> for more information.</li>
             <li>
               <strong>INVALID_LICENSE_KEY</strong> – This error will be returned
               when the license key you pass is not a valid license key or when your account has run out of queries.

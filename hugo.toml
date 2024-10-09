@@ -23,10 +23,15 @@ title = 'MaxMind'
     pageRef = '/minfraud'
     weight = 10
     [[menus.minfraud]]
+      name = 'Overview'
+      pageRef = '/minfraud'
+      parent = 'minFraud'
+      weight = 10
+    [[menus.minfraud]]
       name = 'Evaluate a Transaction'
       pageRef = '/minfraud/evaluate-a-transaction'
       parent = 'minFraud'
-      weight = 10
+      weight = 15
     [[menus.minfraud]]
       name = 'Report a transaction'
       pageRef = '/minfraud/report-a-transaction'
@@ -87,10 +92,15 @@ title = 'MaxMind'
     pageRef = '/geoip'
     weight = 10
     [[menus.geoip]]
+      name = 'Overview'
+      pageRef = '/geoip'
+      parent = 'GeoIP'
+      weight = 10
+    [[menus.geoip]]
       name = 'Geolocate an IP'
       pageRef = '/geoip/geolocate-an-ip'
       parent = 'GeoIP'
-      weight = 10
+      weight = 15
       [[menus.geoip]]
         name = 'Databases'
         pageRef = '/geoip/geolocate-an-ip/databases'
@@ -217,12 +227,16 @@ title = 'MaxMind'
     weight = 20
   [[menus.general]]
     name = 'MMDB Format Spec'
-    pageRef = 'https://maxmind.github.io/MaxMind-DB/'
+    url = 'https://maxmind.github.io/MaxMind-DB/'
     weight = 30
+  [[menus.general]]
+    name = 'Knowledge Base'
+    url = 'https://support.maxmind.com/hc/en-us'
+    weight = 40
   [[menus.general]]
     name = 'Contribute'
     pageRef = '/contribute'
-    weight = 40
+    weight = 50
 
 [module]
   [[module.mounts]]

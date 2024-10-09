@@ -5,7 +5,7 @@ title: Proxy Detection Legacy Web Service
 
 {{< alert warning >}}
 To learn more about the risk associated with a particular IP address, use the
-[minFraud Score service](/minfraud). This service provides the IP Risk Score, a
+[minFraud Score service](/minfraud/evaluate-a-transaction/). This service provides the IP Risk Score, a
 replacement for the proxyScore. To identify anonymous IP addresses in support
 of geotargeting and ad serving environments, we recommend using the
 [GeoIP2 Anonymous IP database](https://www.maxmind.com/en/geoip2-anonymous-ip-database).
@@ -53,7 +53,7 @@ are returned in a simple text format documented below.
 
 The three parameters that this service takes are the IP address to look up, the
 shopID and
-[your MaxMind license key](https://www.maxmind.com/en/my_license_key).
+[your MaxMind license key](https://www.maxmind.com/en/accounts/current/license-key).
 
 The shopID is your internal ID for the shop, affiliate, or merchant this order
 is coming from, and is required for customers who are resellers, payment
@@ -132,7 +132,7 @@ All strings are returned as ASCII.
                   The possible error codes are:
                </p>
                <ul>
-                  <li>`PERMISSION_REQUIRED` – You do not have permission to use the service. Please contact support@maxmind.com for more information.</li>
+                  <li>`PERMISSION_REQUIRED` – You do not have permission to use the service. Please <a href="https://support.maxmind.com/hc/en-us/requests/new">contact our support team</a> for more information.</li>
                   <li>
                      `LICENSE_REQUIRED` – You must provide a license key.
                   </li>

@@ -63,3 +63,26 @@
     margin-right: calc(var(--mm-spacing) / 3);
   }
 }
+
+.page__toc {
+  background-color: #F8FAFC;
+  border: 1px solid var(--mm-color-border);
+  border-radius: var(--mm-border-radius);
+  padding: calc(var(--mm-spacing) / 2);
+
+  ul {
+    margin: 0;
+  }
+
+  ul ul {
+    margin-top: calc(var(--mm-spacing) / 8);
+  }
+
+  li {
+    margin-bottom: calc(var(--mm-spacing) / 8);
+  }
+}
+
+.page__toc__title {
+  margin-top: 0;
+}

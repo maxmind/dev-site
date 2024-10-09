@@ -189,16 +189,16 @@ description of the error.
 
 | Code                         | HTTP Status          | Description                                                                                             |
 | ---------------------------- | -------------------- | ------------------------------------------------------------------------------------------------------- |
-| IP_ADDRESS_INVALID           | 400 Bad Request      | You have not supplied a valid IPv4 or IPv6 address.                                                     |
-| IP_ADDRESS_REQUIRED          | 400 Bad Request      | You have not supplied an IP address, which is a required field.                                         |
-| IP_ADDRESS_RESERVED          | 400 Bad Request      | You have supplied an IP address which belongs to a reserved or private range.                           |
-| IP_ADDRESS_NOT_FOUND         | 404 Not Found        | The supplied IP address is not in the database.                                                         |
-| DOMAIN_REGISTRATION_REQUIRED | 401 Unauthorized     | The domain of your site is not registered.                                                              |
-| QUERY_FORBIDDEN              | 401 Unauthorized     | You tried to access a service or feature that is not covered by your service plan.                      |
-| OUT_OF_QUERIES               | 402 Payment Required | The license key you have provided is out of queries. Please purchase more queries to use this service.  |
-| PERMISSION_REQUIRED          | 403 Forbidden        | You do not have permission to use the service. Please contact support@maxmind.com for more information. |
-| HTTP_TIMEOUT                 | (none)               | The request to the GeoIP2 web service timed out.                                                        |
-| HTTP_ERROR                   | (none)               | There was an error making the request to the GeoIP2 web service.                                        |
+| `IP_ADDRESS_INVALID`           | 400 Bad Request      | You have not supplied a valid IPv4 or IPv6 address.                                                     |
+| `IP_ADDRESS_REQUIRED`          | 400 Bad Request      | You have not supplied an IP address, which is a required field.                                         |
+| `IP_ADDRESS_RESERVED`          | 400 Bad Request      | You have supplied an IP address which belongs to a reserved or private range.                           |
+| `IP_ADDRESS_NOT_FOUND`         | 404 Not Found        | The supplied IP address is not in the database.                                                         |
+| `DOMAIN_REGISTRATION_REQUIRED` | 401 Unauthorized     | The domain of your site is not registered.                                                              |
+| `QUERY_FORBIDDEN`              | 401 Unauthorized     | You tried to access a service or feature that is not covered by your service plan.                      |
+| `OUT_OF_QUERIES`               | 402 Payment Required | The license key you have provided is out of queries. Please purchase more queries to use this service.  |
+| `PERMISSION_REQUIRED`          | 403 Forbidden        | You do not have permission to use the service. Please [contact our support team](https://support.maxmind.com/hc/en-us/requests/new) for more information. |
+| `HTTP_TIMEOUT`                 | (none)               | The request to the GeoIP2 web service timed out.                                                        |
+| `HTTP_ERROR`                   | (none)               | There was an error making the request to the GeoIP2 web service.                                        |
 
 ### Versioning
 

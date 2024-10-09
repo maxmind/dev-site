@@ -22,7 +22,7 @@ services and to purchase credits, please
 
 The minFraud web service is available using a simple URI-based API. To use this
 service, you must have a valid
-[MaxMind license key](https://www.maxmind.com/en/my_license_key).
+[MaxMind license key](https://www.maxmind.com/en/accounts/current/license-key).
 
 ## Report Transactions
 
@@ -103,7 +103,7 @@ longer than the longest valid representation of an IPv6 address.
          <tr>
             <td><strong>license_key</strong></td>
             <td>string</td>
-            <td>Your <a href="https://www.maxmind.com/en/my_license_key">MaxMind license key.</a></td>
+            <td>Your <a href="https://www.maxmind.com/en/accounts/current/license-key">MaxMind license key.</a></td>
          </tr>
          <tr>
             <td colspan="3">
@@ -794,7 +794,7 @@ current when they signed up for the service. The latest version is 1.3.
                   <li><strong>INVALID_LICENSE_KEY</strong></li>
                   <li><strong>MAX_REQUESTS_REACHED</strong> – This is returned when your account is out of queries.</li>
                   <li><strong>LICENSE_REQUIRED</strong> – This is returned if you do not provide a license key at all.</li>
-                  <li><strong>PERMISSION_REQUIRED</strong> – This is returned if you do not have permission to use the service. Please contact support@maxmind.com for more information.</li>
+                  <li><strong>PERMISSION_REQUIRED</strong> – This is returned if you do not have permission to use the service. Please <a href="https://support.maxmind.com/hc/en-us/requests/new">contact our support team</a> for more information.</li>
                </ul>
                The possible warning codes are:
                <ul>
