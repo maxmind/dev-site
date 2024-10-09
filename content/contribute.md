@@ -46,9 +46,7 @@ minor modifications.
 ## Sharing Your Tools
 
 If you would like us to feature an API or tool that you’ve developed for use
-with our products and services, please <a
-href="https://support.maxmind.com/hc/en-us/requests/new">contact our support
-team</a>
+with our products and services, please [contact our support team](https://support.maxmind.com/hc/en-us/requests/new)
 with a brief description of the tool and a link to the code and documentation.
 We do not guarantee that we will feature all contributions on our site, but
 we’re always interested to see what you come up with.
