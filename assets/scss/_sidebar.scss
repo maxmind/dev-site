@@ -129,9 +129,16 @@
   font-size: 16px;
   font-weight: 700;
   margin-bottom: calc(var(--mm-spacing) / 8);
+  outline: none;
+  width: 100%;
 
-  &:hover {
+  &:hover,
+  &:focus {
     text-decoration: none;
+  }
+
+  &:hover .caret {
+    fill: var(--mm-color-display-text);
   }
 }
 
