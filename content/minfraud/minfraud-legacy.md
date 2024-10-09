@@ -794,7 +794,7 @@ current when they signed up for the service. The latest version is 1.3.
                   <li><strong>INVALID_LICENSE_KEY</strong></li>
                   <li><strong>MAX_REQUESTS_REACHED</strong> – This is returned when your account is out of queries.</li>
                   <li><strong>LICENSE_REQUIRED</strong> – This is returned if you do not provide a license key at all.</li>
-                  <li><strong>PERMISSION_REQUIRED</strong> – This is returned if you do not have permission to use the service. Please contact support@maxmind.com for more information.</li>
+                  <li><strong>PERMISSION_REQUIRED</strong> – This is returned if you do not have permission to use the service. Please contact <a href="mailto:support@maxmind.com">support@maxmind.com</a> for more information.</li>
                </ul>
                The possible warning codes are:
                <ul>
