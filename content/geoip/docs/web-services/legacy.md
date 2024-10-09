@@ -473,7 +473,7 @@ encoding is also referred to as latin1.
           </p>
 
           <ul>
-            <li><strong>PERMISSION_REQUIRED</strong> – This is returned if you do not have permission to use the service. Please contact <a href="mailto:support@maxmind.com">support@maxmind.com</a> for more information.</li>
+            <li><strong>PERMISSION_REQUIRED</strong> – This is returned if you do not have permission to use the service. Please <a href="https://support.maxmind.com/hc/en-us/requests/new">contact our support team</a> for more information.</li>
             <li>
               <strong>INVALID_LICENSE_KEY</strong> – This error will be returned
               when the license key you pass is not a valid license key or when your account has run out of queries.
