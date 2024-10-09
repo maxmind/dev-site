@@ -132,7 +132,7 @@ All strings are returned as ASCII.
                   The possible error codes are:
                </p>
                <ul>
-                  <li>`PERMISSION_REQUIRED` – You do not have permission to use the service. Please contact support@maxmind.com for more information.</li>
+                  <li>`PERMISSION_REQUIRED` – You do not have permission to use the service. Please contact <a href="mailto:support@maxmind.com">support@maxmind.com</a> for more information.</li>
                   <li>
                      `LICENSE_REQUIRED` – You must provide a license key.
                   </li>
