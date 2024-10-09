@@ -27,11 +27,17 @@
       defer
       src="//js.hs-scripts.com/21266834.js"
     ></script>
+    <script src="https://cloud.google.com/ai/gen-app-builder/client?hl=en_US"></script>
+
+    <!-- Search widget element is not visible by default -->
+    <gen-search-widget
+      configId="3c7b0bea-0cb1-4fdf-894a-1992d4c916cc"
+      triggerId="searchWidgetTrigger">
+    </gen-search-widget>
   </body>
   {{ $codeset := resources.Get "js/codeset.ts" | js.Build }}
   {{ $geoipCrontab := resources.Get "js/geoip-crontab.ts" | js.Build }}
-  {{ $search := resources.Get "js/search.ts" | js.Build }}
   {{ $sidebar := resources.Get "js/sidebar.ts" | js.Build }}
-  {{ $js := slice $codeset $geoipCrontab $search $sidebar | resources.Concat "js/bundle.js" }}
+  {{ $js := slice $codeset $geoipCrontab $sidebar | resources.Concat "js/bundle.js" }}
   <script type="module" src="{{ $js.RelPermalink }}"></script>
 </html>
