@@ -5,7 +5,7 @@ document
     const child = sidebarParent.parentNode.querySelector(
       '.js-sidebar-child-group'
     );
-    const caret = sidebarParent.parentNode
+    const caret = sidebarParent
       .querySelector('.js-sidebar-toggle')
       .querySelector('.caret');
 
@@ -18,17 +18,16 @@ document
   });
 
 // Handle toggle click behaviour
-document.querySelectorAll('.js-sidebar-toggle').forEach((toggle) => {
+document.querySelectorAll('.js-sidebar-parent').forEach((toggle) => {
   toggle.addEventListener('click', (e) => {
     e.preventDefault();
-    const sidebarParent = toggle.parentNode.querySelector('.js-sidebar-parent');
     const child = toggle.parentNode.querySelector('.js-sidebar-child-group');
     const caret = toggle.querySelector('.caret');
 
     // We aren't using the class here because expanded parents are not always active
-    const isExpanded = sidebarParent?.getAttribute('aria-expanded') === 'true';
+    const isExpanded = toggle?.getAttribute('aria-expanded') === 'true';
 
-    sidebarParent?.setAttribute('aria-expanded', isExpanded ? 'false' : 'true');
+    toggle?.setAttribute('aria-expanded', isExpanded ? 'false' : 'true');
     child?.setAttribute('aria-hidden', isExpanded ? 'true' : 'false');
     child?.classList.toggle('hide', isExpanded);
     caret?.classList.toggle('rotate', isExpanded);
