@@ -7,6 +7,31 @@ title: GeoIP2 Release Notes
 Subscribe to the [GeoIP2 release notes RSS feed](/geoip/release-notes/rss.xml).
 </Alert>
 
+<ReleaseNote date="2024-10-09" title="Upcoming improvements to user count data">
+
+On Tuesday, October 22, 2024, we will release an improvement to our user count
+data to better detect IPs with multiple end users.
+
+Many IP addresses with multiple end users that previously had a user count value
+of 0 or 1 will now have a value of 2.
+
+If you have applications of the data that rely on user count values with a
+threshold of 0, 1, or 2, you may want to increase the thresholds by 1. For
+example, if you currently consider user count values of greater than 1 to be
+high volume, you may wish to consider user count values of greater than 2 to be
+high volume when this update goes live.
+
+The following services will be impacted:
+
+- GeoIP Insights web service
+
+[Learn more about user count data on our Knowledge Base.](https://support.maxmind.com/hc/en-us/articles/4408208479131-User-Context-Data#h_01FN9BT5PC591YRNBFZGHDYNS6)
+
+[Submit a support ticket request](https://support.maxmind.com/hc/en-us/requests/new)
+if you have questions or concerns.
+
+</ReleaseNote>
+
 <ReleaseNote date="2024-09-10" title="GeoNames Monthly Diff Report September 2024">
 [GeoNames Monthly Diff Report (September 2024)](/csv-files/GeoNames-Monthly-Diff-Report-September-2024.csv)
 
