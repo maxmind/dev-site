@@ -1,0 +1,92 @@
+diff_in,old_geoname_id,new_geoname_id,old_city_name,new_city_name,old_country_name,new_country_name,old_country_code,new_country_code,old_subdivision_codes,new_subdivision_codes
+city_name,2782067,2782067,Baden bei Wien,Baden,Austria,Austria,AT,AT,3,3
+city_name,2779549,2779549,Fischamend Dorf,Fischamend,Austria,Austria,AT,AT,3,3
+city_name,3454070,3454070,Pérola do Oeste,Pérola d'Oeste,Brazil,Brazil,BR,BR,PR,PR
+city_name,3446578,3446578,Terra Roxa d'Oeste,Terra Roxa,Brazil,Brazil,BR,BR,PR,PR
+city_name,3460744,3460744,Itapejara,Itapejara d'Oeste,Brazil,Brazil,BR,BR,PR,PR
+city_name,3652791,3652791,Puebloviejo,Pueblo Viejo,Ecuador,Ecuador,EC,EC,R,R
+city_name,3650273,3650273,Velasco Ibarra,El Empalme,Ecuador,Ecuador,EC,EC,G,G
+city_name,3650545,3650545,Totoras,El Recreo,Ecuador,Ecuador,EC,EC,T,T
+city_name,3652089,3652089,Salitre,El Salitre,Ecuador,Ecuador,EC,EC,G,G
+city_name,3651589,3651589,San Pablo de Atenas,San Pablo,Ecuador,Ecuador,EC,EC,B,B
+city_name,295212,295212,En HaMifraz,`EnHaMifrats,Israel,Israel,IL,IL,Z,Z
+city_name,294295,294295,Maẕẕuva,Matsuva,Israel,Israel,IL,IL,Z,Z
+city_name,294528,294528,Kefar Masaryk,Kfar Masaryk,Israel,Israel,IL,IL,Z,Z
+city_name,280425,280425,Aaley,Aley,Lebanon,Lebanon,LB,LB,JL,JL
+city_name,946229,946229,Umbogintwini,eZimbokodweni,South Africa,South Africa,ZA,ZA,KZN,KZN
+city_name,6575891,6575891,Yeongtongi-dong,Yeongtong2-dong,South Korea,South Korea,KR,KR,41,41
+city_name,2744744,2744744,Westergeest,Westergeast,The Netherlands,The Netherlands,NL,NL,FR,FR
+city_name,2748886,2748886,Oudwoude,Aldwâld,The Netherlands,The Netherlands,NL,NL,FR,FR
+geoname_id,8477582,3452682,Primavera,Primavera,Brazil,Brazil,BR,BR,SP,SP
+geoname_id,3408726,3404695,Buritirana,Buritirana,Brazil,Brazil,BR,BR,MA,MA
+geoname_id,6316618,3469365,Bom Sucesso do Sul,Bom Sucesso do Sul,Brazil,Brazil,BR,BR,PR,PR
+geoname_id,6316392,3452918,Angélica,Angélica,Brazil,Brazil,BR,BR,MS,MS
+geoname_id,3448525,7582886,São Martinho,São Martinho,Brazil,Brazil,BR,BR,RS,RS
+geoname_id,6318151,3451257,Rio Bonito do Iguaçu,Rio Bonito do Iguaçu,Brazil,Brazil,BR,BR,PR,PR
+geoname_id,3395239,3395238,Massapê,Massapê,Brazil,Brazil,BR,BR,CE,CE
+geoname_id,6318459,3448893,São João do Ivaí,São João do Ivaí,Brazil,Brazil,BR,BR,PR,PR
+geoname_id,6316926,3456299,Coronel Sapucaia,Coronel Sapucaia,Brazil,Brazil,BR,BR,MS,MS
+geoname_id,6318970,6319833,Zé Doca,Zé Doca,Brazil,Brazil,BR,BR,MA,MA
+geoname_id,6316577,3469856,Boa Ventura de São Roque,Boa Ventura de São Roque,Brazil,Brazil,BR,BR,PR,PR
+geoname_id,6317755,6324219,Nova Mutum,Nova Mutum,Brazil,Brazil,BR,BR,MT,MT
+geoname_id,6317165,3447879,Foz do Jordão,Foz do Jordão,Brazil,Brazil,BR,BR,PR,PR
+geoname_id,6317201,3445068,Glória de Dourados,Glória de Dourados,Brazil,Brazil,BR,BR,MS,MS
+geoname_id,6317721,3456186,Nova Canaã Paulista,Nova Canaã Paulista,Brazil,Brazil,BR,BR,SP,SP
+geoname_id,6318088,3467709,Quedas do Iguaçu,Quedas do Iguaçu,Brazil,Brazil,BR,BR,PR,PR
+geoname_id,6316880,6323947,Cocalzinho de Goiás,Cocalzinho de Goiás,Brazil,Brazil,BR,BR,GO,GO
+geoname_id,6317295,3461088,Iporã do Oeste,Iporã do Oeste,Brazil,Brazil,BR,BR,SC,SC
+geoname_id,3445651,3445650,Utinga,Utinga,Brazil,Brazil,BR,BR,BA,BA
+geoname_id,6316644,6323733,Brasilândia,Brasilândia,Brazil,Brazil,BR,BR,MS,MS
+geoname_id,6318291,3444842,Santa Rita do Pardo,Santa Rita do Pardo,Brazil,Brazil,BR,BR,MS,MS
+geoname_id,3461151,6323990,Ipameri,Ipameri,Brazil,Brazil,BR,BR,GO,GO
+geoname_id,6318309,3449777,Santa Tereza do Oeste,Santa Tereza do Oeste,Brazil,Brazil,BR,BR,PR,PR
+geoname_id,3445531,3445532,Vargem Bonita,Vargem Bonita,Brazil,Brazil,BR,BR,MG,MG
+geoname_id,6317240,3461788,Guarujá do Sul,Guarujá do Sul,Brazil,Brazil,BR,BR,SC,SC
+geoname_id,3468899,7583518,Brotas,Brotas,Brazil,Brazil,BR,BR,SP,SP
+geoname_id,6323034,13063951,Alto Paraíso,Alto Paraíso,Brazil,Brazil,BR,BR,PR,PR
+geoname_id,6319427,3394661,Moju,Moju,Brazil,Brazil,BR,BR,PA,PA
+geoname_id,6316723,3467892,Campina do Simão,Campina do Simão,Brazil,Brazil,BR,BR,PR,PR
+geoname_id,6317009,3464735,Diamante do Sul,Diamante do Sul,Brazil,Brazil,BR,BR,PR,PR
+geoname_id,6317611,3445054,Modelo,Modelo,Brazil,Brazil,BR,BR,SC,SC
+geoname_id,6318282,3450089,Santa Maria do Oeste,Santa Maria do Oeste,Brazil,Brazil,BR,BR,PR,PR
+geoname_id,11969287,12467168,Campo Grande,Campo Grande,Brazil,Brazil,BR,BR,SP,SP
+geoname_id,3455119,7593768,Paraíso,Paraíso,Brazil,Brazil,BR,BR,SP,SP
+geoname_id,6318113,3451662,Reserva do Iguaçu,Reserva do Iguaçu,Brazil,Brazil,BR,BR,PR,PR
+geoname_id,6316767,3465323,Candói,Candói,Brazil,Brazil,BR,BR,PR,PR
+geoname_id,6318791,3446173,Três Barras do Paraná,Três Barras do Paraná,Brazil,Brazil,BR,BR,PR,PR
+geoname_id,6317153,3463228,Flórida Paulista,Flórida Paulista,Brazil,Brazil,BR,BR,SP,SP
+geoname_id,3471910,3471909,Apucarana,Apucarana,Brazil,Brazil,BR,BR,PR,PR
+geoname_id,3470579,3470548,Barreiras,Barreiras,Brazil,Brazil,BR,BR,BA,BA
+geoname_id,3448817,13025846,São Jorge,São Jorge,Brazil,Brazil,BR,BR,RS,RS
+geoname_id,3461316,3461314,Indaial,Indaial,Brazil,Brazil,BR,BR,SC,SC
+geoname_id,6316750,12978169,Campos de Júlio,Campos de Júlio,Brazil,Brazil,BR,BR,MT,MT
+geoname_id,3385455,3385457,Várzea Comprida,Várzea Comprida,Brazil,Brazil,BR,BR,PB,PB
+geoname_id,3397154,12985858,Juazeiro,Juazeiro,Brazil,Brazil,BR,BR,BA,BA
+geoname_id,8508141,3662256,São Paulo,São Paulo,Brazil,Brazil,BR,BR,AM,AM
+geoname_id,8672808,13061054,Saint-Vallier,Saint-Vallier,Canada,Canada,CA,CA,QC,QC
+geoname_id,8672758,13061048,Saint-Gilles,Saint-Gilles,Canada,Canada,CA,CA,QC,QC
+geoname_id,6138773,13061050,Saint-Maurice,Saint-Maurice,Canada,Canada,CA,CA,QC,QC
+geoname_id,6138716,13061049,Saint-Marc-de-Figuery,Saint-Marc-de-Figuery,Canada,Canada,CA,CA,QC,QC
+geoname_id,8672693,13061016,Sainte-Rita,Sainte-Rita,Canada,Canada,CA,CA,QC,QC
+geoname_id,8672667,13100074,Auclair,Auclair,Canada,Canada,CA,CA,QC,QC
+geoname_id,8672631,13061021,Saint-Jules,Saint-Jules,Canada,Canada,CA,CA,QC,QC
+geoname_id,8672994,13060931,Packington,Packington,Canada,Canada,CA,CA,QC,QC
+geoname_id,8673539,13061026,Saints-Anges,Saints-Anges,Canada,Canada,CA,CA,QC,QC
+geoname_id,8672447,13061052,Saint-Paul-de-la-Croix,Saint-Paul-de-la-Croix,Canada,Canada,CA,CA,QC,QC
+geoname_id,8672614,13060957,Saint-Basile,Saint-Basile,Canada,Canada,CA,CA,QC,QC
+geoname_id,3666526,11901839,Ubalá,Ubalá,Colombia,Colombia,CO,CO,CUN,CUN
+geoname_id,3669998,3670000,San Carlos,San Carlos,Colombia,Colombia,CO,CO,ANT,ANT
+geoname_id,12946540,655363,Jurva,Jurva,Finland,Finland,FI,FI,3,3
+geoname_id,3047647,3047646,Nagykovácsi,Nagykovácsi,Hungary,Hungary,HU,HU,PE,PE
+geoname_id,6768425,1641200,Karangpucung,Karangpucung,Indonesia,Indonesia,ID,ID,JT,JT
+geoname_id,1735297,1735339,Mukah,Mukah,Malaysia,Malaysia,MY,MY,13,13
+geoname_id,3132852,3132855,Valle,Valle,Norway,Norway,NO,NO,42,42
+geoname_id,1727679,1727681,Bamban,Bamban,Philippines,Philippines,PH,PH,"03, TAR","03, TAR"
+geoname_id,3372964,3372965,Lagoa,Lagoa,Portugal,Portugal,PT,PT,20,20
+geoname_id,2741747,2741746,Caldas,Caldas,Portugal,Portugal,PT,PT,3,3
+geoname_id,1496780,1496770,Novosëlovo,Novosëlovo,Russia,Russia,RU,RU,KYA,KYA
+geoname_id,983038,11428151,Letaba,Letaba,South Africa,South Africa,ZA,ZA,LP,LP
+geoname_id,2676250,2676260,Söderby,Söderby,Sweden,Sweden,SE,SE,AB,AB
+geoname_id,11552745,3333236,South Lanarkshire,South Lanarkshire,United Kingdom,United Kingdom,GB,GB,"SCT, SLK","SCT, SLK"
+subdivision_codes,3658628,3658628,Cumandá,Cumandá,Ecuador,Ecuador,EC,EC,F,H
+subdivision_codes,10792300,10792300,Roatán,Roatán,Honduras,Honduras,HN,HN,,IB
