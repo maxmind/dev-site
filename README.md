@@ -13,13 +13,9 @@
 
 ## Overview
 
-- **Static Site Generator**: [GatsbyJS](https://www.gatsbyjs.org/) +
+- **Static Site Generator**: [Hugo](https://gohugo.io/) +
   [TypeScript](https://www.typescriptlang.org/) +
-  [CSS Modules](https://github.com/css-modules/css-modules) +
-  [MDX](https://mdxjs.com/)
-- **Linting**: [ESLint](https://eslint.org/) +
-  [StyleLint](https://stylelint.io/)
-- **Hosting**: [Firebase](https://firebase.google.com/docs/hosting)
+- **Hosting**: [Cloudflare Pages](https://pages.cloudflare.com/)
 
 ## Usage
 
@@ -41,13 +37,37 @@ If you need help installing and/or managing Node and NPM versions, check out [NV
 ### Installation
 
 ```sh
-npm install && npm run prepare
+npm install
 ```
 
-#### Explanation
+- `npm install` installs the necessary node modules for development.
 
-* `npm install` installs the neccessary node modules for development.
-* `npm run prepare` sets up the linting pre-commit hooks via husky.
+#### Install Hugo
+
+##### Homebrew (macOS)
+
+```sh
+brew install hugo
+```
+
+##### Debian / Ubuntu
+
+It is recommended that you install
+[the latest release of Hugo](https://github.com/gohugoio/hugo/releases/latest).
+For debian and ubuntu users, they offer a .deb file.
+
+##### Other OS
+
+See [Hugo Installation](https://gohugo.io/getting-started/installing/)
+
+#### Install Embedded Dart Sass
+
+Download
+[Embedded Dart Sass](https://github.com/sass/dart-sass-embedded/releases) and
+make sure it is in your `$PATH`. This is necessary for Hugo to process SASS and
+SCSS files. See the
+[Hugo documentation](https://gohugo.io/hugo-pipes/scss-sass/) for more
+information.
 
 ### Development
 
@@ -57,52 +77,8 @@ The development server watches files, rebuilds the site, and reloads the browser
 when files change.
 
 ```sh
-npm run develop
+hugo server
 ```
-
-#### Static Server
-
-The static server is useful for testing features that might only be relevant to
-the production build, such as CSP Policies, SRI hashes, Firebase routing
-rules (301/302 redirects or url rewrites), and Firebase functions.
-
-
-```sh
-npm run build && npm run serve
-```
-
-### Testing
-
-```sh
-npm run test             # runs all tests
-npm run test:unit        # runs unit tests
-npm run test:regressions # runs regression tests
-```
-
-### Deployments
-
-This project has two environments: staging environment and production. All
-preview links are deployed to the staging environment. The production
-environment can only be deploy to via a PR being merged into `main`.
-
-#### Preview Link Generation
-
-All PRs will be assigned a preview link during the CI/CD process. These links
-are good for 7 days. To regenerate a link, delete the comment and run the CI/CD
-action again.
-
-Users authenticated with the Firebase CLI can generate an ad-hoc preview link
-site by running the following from the root of the project.
-
-```sh
-npm run build && npm run preview
-```
-
-#### Firebase Functions
-
-**Firebase function resources are shared throughout environments.** If two PRs
-have changes to Firebase functions, the deployed functions will be those of the
-PR whose `Firebase - Staging` GitHub workflow has run most recently.
 
 ### Updating Release Notes for the New Year
 
