@@ -1,0 +1,367 @@
+{{ $isEnterprise := .Get "isEnterprise" }}
+<div class="table">
+  <table>
+    <tbody>
+      <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Description</th>
+        {{ if eq $isEnterprise "false" }}
+          <th>Included in...</th>
+        {{ end }}
+      </tr>
+      <tr>
+        <td>geoname_id</td>
+        <td>integer</td>
+        <td>
+          A unique identifier for the a location as specified
+          by
+                  <a
+            href="https://www.geonames.org/"
+            rel="nofollow noopener noreferrer"
+            target="_blank"
+          >
+            GeoNames
+          </a>
+          . This ID can be
+          used as a key for the Location file.
+          <br/>
+          <br/>
+          <a
+            href="https://support.maxmind.com/hc/en-us/articles/4414877149467-IP-Geolocation-Data#h_01FRRNFD5Z5EWNCAXM6SZZ5H2C"
+            rel="nofollow noopener noreferrer"
+            target="_blank"
+          >
+            Learn more about GeoNames IDs on our Knowledge Base.
+          </a>
+        </td>
+        {{ if eq $isEnterprise "false" }}
+          <td>
+            <span class="tag tag--checked">Country</span>
+            <span class="tag tag--checked">City</span>
+          </td>
+        {{ end }}
+      </tr>
+      <tr>
+        <td>locale_code</td>
+        <td>string</td>
+        <td>
+          The locale that the names in this row are in. This will always
+          correspond to the locale name of the file.
+        </td>
+        {{ if eq $isEnterprise "false" }}
+          <td>
+            <span class="tag tag--checked">Country</span>
+            <span class="tag tag--checked">City</span>
+          </td>
+        {{ end }}
+      </tr>
+      <tr>
+        <td>continent_code</td>
+        <td>string (2)</td>
+        <td>
+          <p>The continent code for this location. Possible codes are:</p>
+          <ul>
+            <li>
+              <strong>AF</strong>
+                          - Africa
+            </li>
+            <li>
+              <strong>AN</strong>
+                          - Antarctica
+            </li>
+            <li>
+              <strong>AS</strong>
+                          - Asia
+            </li>
+            <li>
+              <strong>EU</strong>
+                          - Europe
+            </li>
+            <li>
+              <strong>NA</strong>
+                          - North America
+            </li>
+            <li>
+              <strong>OC</strong>
+                          - Oceania
+            </li>
+            <li>
+              <strong>SA</strong>
+                          - South America
+            </li>
+          </ul>
+        </td>
+        {{ if eq $isEnterprise "false" }}
+          <td>
+            <span class="tag tag--checked">Country</span>
+            <span class="tag tag--checked">City</span>
+          </td>
+        {{ end }}
+      </tr>
+      <tr>
+        <td>continent_name</td>
+        <td>string</td>
+        <td>
+          The continent name for this location in the file&apos;s locale.
+          <br/>
+          <br/>
+          <a
+            href="https://support.maxmind.com/hc/en-us/articles/4414877149467-IP-Geolocation-Data#h_01FRRGRYTGZB29ERDBZCX3MR8Q"
+            rel="nofollow noopener noreferrer"
+            target="_blank"
+          >
+            Learn more about localized names on our Knowledge Base.
+          </a>
+        </td>
+        {{ if eq $isEnterprise "false" }}
+          <td>
+            <span class="tag tag--checked">Country</span>
+            <span class="tag tag--checked">City</span>
+          </td>
+        {{ end }}
+      </tr>
+      <tr>
+        <td>country_iso_code</td>
+        <td>string (2)</td>
+        <td>
+          A two-character
+                  <a
+            href="https://en.wikipedia.org/wiki/ISO_3166-1"
+            rel="nofollow noopener noreferrer"
+            target="_blank"
+          >
+            ISO
+            3166-1
+          </a>
+                  country code for the country associated with the location.
+        </td>
+        {{ if eq $isEnterprise "false" }}
+          <td>
+            <span class="tag tag--checked">Country</span>
+            <span class="tag tag--checked">City</span>
+          </td>
+        {{ end }}
+      </tr>
+      <tr>
+        <td>country_name</td>
+        <td>string</td>
+        <td>
+          The country name for this location in the file&apos;s locale.
+          <br/>
+          <br/>
+          <a
+            href="https://support.maxmind.com/hc/en-us/articles/4414877149467-IP-Geolocation-Data#h_01FRRGRYTGZB29ERDBZCX3MR8Q"
+            rel="nofollow noopener noreferrer"
+            target="_blank"
+          >
+            Learn more about localized names on our Knowledge Base.
+          </a>
+        </td>
+        {{ if eq $isEnterprise "false" }}
+          <td>
+            <span class="tag tag--checked">Country</span>
+            <span class="tag tag--checked">City</span>
+          </td>
+        {{ end }}
+      </tr>
+      <tr>
+        <td>subdivision_1_iso_code</td>
+        <td>string (1-3)</td>
+        <td>
+          A string of up to three characters containing the region-portion of
+          the
+                  <a
+            href="https://en.wikipedia.org/wiki/ISO_3166-2"
+            rel="nofollow noopener noreferrer"
+            target="_blank"
+          >
+            ISO 3166-2
+          </a>
+                  code for the first level region associated with the IP address.
+          Some countries have two levels of subdivisions, in which case this
+          is the least specific. For example, in the United Kingdom this will
+          be a country like &quot;England&quot;, not a county like
+          &quot;Devon&quot;.
+        </td>
+        {{ if eq $isEnterprise "false" }}
+          <td>
+            <ServiceTag
+              isDisabled
+              text="Country"
+            />
+            <span class="tag tag--checked">City</span>
+          </td>
+        {{ end }}
+      </tr>
+      <tr>
+        <td>subdivision_1_name</td>
+        <td>string</td>
+        <td>
+          The subdivision name for this location in the file&apos;s locale.
+          As with the subdivision code, this is the least specific
+          subdivision for the location.
+          <br/>
+          <br/>
+          <a
+            href="https://support.maxmind.com/hc/en-us/articles/4414877149467-IP-Geolocation-Data#h_01FRRGRYTGZB29ERDBZCX3MR8Q"
+            rel="nofollow noopener noreferrer"
+            target="_blank"
+          >
+            Learn more about localized names on our Knowledge Base.
+          </a>
+        </td>
+        {{ if eq $isEnterprise "false" }}
+          <td>
+            <ServiceTag
+              isDisabled
+              text="Country"
+            />
+            <span class="tag tag--checked">City</span>
+          </td>
+        {{ end }}
+      </tr>
+      <tr>
+        <td>subdivision_2_iso_code</td>
+        <td>string (1-3)</td>
+        <td>
+          A string of up to three characters containing the region-portion of
+          the
+                  <a
+            href="https://en.wikipedia.org/wiki/ISO_3166-2"
+            rel="nofollow noopener noreferrer"
+            target="_blank"
+          >
+            ISO 3166-2
+          </a>
+                  code for the second level region associated with the IP address.
+          Some countries have two levels of subdivisions, in which case this
+          is the most specific. For example, in the United Kingdom this will
+          be a a county like &quot;Devon&quot;, not a country like
+          &quot;England&quot;.
+        </td>
+        {{ if eq $isEnterprise "false" }}
+          <td>
+            <ServiceTag
+              isDisabled
+              text="Country"
+            />
+            <span class="tag tag--checked">City</span>
+          </td>
+        {{ end }}
+      </tr>
+      <tr>
+        <td>subdivision_2_name</td>
+        <td>string</td>
+        <td>
+          The subdivision name for this location in the file&apos;s locale.
+          As with the subdivision code, this is the most specific subdivision
+          for the location.
+          <br/>
+          <br/>
+          <a
+            href="https://support.maxmind.com/hc/en-us/articles/4414877149467-IP-Geolocation-Data#h_01FRRGRYTGZB29ERDBZCX3MR8Q"
+            rel="nofollow noopener noreferrer"
+            target="_blank"
+          >
+            Learn more about localized names on our Knowledge Base.
+          </a>
+        </td>
+        {{ if eq $isEnterprise "false" }}
+          <td>
+            <ServiceTag
+              isDisabled
+              text="Country"
+            />
+            <span class="tag tag--checked">City</span>
+          </td>
+        {{ end }}
+      </tr>
+      <tr>
+        <td>city_name</td>
+        <td>string</td>
+        <td>
+          The city name for this location in the file&apos;s locale.
+          <br/>
+          <br/>
+          <a
+            href="https://support.maxmind.com/hc/en-us/articles/4414877149467-IP-Geolocation-Data#h_01FRRGRYTGZB29ERDBZCX3MR8Q"
+            rel="nofollow noopener noreferrer"
+            target="_blank"
+          >
+            Learn more about localized names on our Knowledge Base.
+          </a>
+        </td>
+        {{ if eq $isEnterprise "false" }}
+          <td>
+            <ServiceTag
+              isDisabled
+              text="Country"
+            />
+            <span class="tag tag--checked">City</span>
+          </td>
+        {{ end }}
+      </tr>
+      <tr>
+        <td>metro_code</td>
+        <td>integer</td>
+        <td>
+          Metro code is a geolocation target code from Google.
+        </td>
+        {{ if eq $isEnterprise "false" }}
+          <td>
+            <ServiceTag
+              isDisabled
+              text="Country"
+            />
+            <span class="tag tag--checked">City</span>
+          </td>
+        {{ end }}
+      </tr>
+      <tr>
+        <td>time_zone</td>
+        <td>string</td>
+        <td>
+          The time zone associated with location, as specified by
+          the
+                  <a
+            href="https://www.iana.org/time-zones"
+            rel="nofollow noopener noreferrer"
+            target="_blank"
+          >
+            IANA Time Zone
+            Database
+          </a>
+          , e.g., “America/New_York”.
+        </td>
+        {{ if eq $isEnterprise "false" }}
+          <td>
+            <ServiceTag
+              isDisabled
+              text="Country"
+            />
+            <span class="tag tag--checked">City</span>
+          </td>
+        {{ end }}
+      </tr>
+      <tr>
+        <td>is_in_european_union</td>
+        <td>boolean</td>
+        <td>
+          This is
+                  <code>1</code>
+                  if the country associated with the location is a member
+          state of the European Union. It is
+                  <code>0</code>
+                  otherwise.
+        </td>
+        {{ if eq $isEnterprise "false" }}
+          <td>
+            <span class="tag tag--checked">Country</span>
+            <span class="tag tag--checked">City</span>
+          </td>
+        {{ end }}
+      </tr>
+    </tbody>
+  </table>
+</div>

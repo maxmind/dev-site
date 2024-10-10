@@ -1,0 +1,102 @@
+@use 'variables';
+
+.product-featured {
+  border: 1px solid var(--mm-color-border);
+  border-radius: var(--mm-border-radius);
+  box-shadow: rgba(0, 0, 0, 0.1) 0 10px 15px -3px, rgba(0, 0, 0, 0.05) 0 4px 6px -2px;
+  display: grid;
+  grid-template-areas:
+    'header'
+    'content'
+    'links'
+    'learnMore';
+  position: relative;
+}
+
+.product-featured__header {
+  grid-area: header;
+  padding: 0 var(--mm-spacing);
+  text-align: center;
+}
+
+.product-featured__heading {
+  font-family: var(--mm-font-stack-display);
+  font-size: 24px;
+  font-weight: 700;
+  grid-area: heading;
+  line-height: 1em;
+  margin-bottom: 0;
+  text-align: center;
+
+  &--minfraud {
+    color: var(--mm-color-minfraud);
+  }
+
+  &--geoip {
+    color: var(--mm-color-geoip);
+  }
+}
+
+.product-featured__subheading {
+  font-family: var(--mm-font-stack-display);
+  font-size: 16px;
+  grid-area: subheading;
+  line-height: 1em;
+  margin: 8px 0 0;
+  text-align: center;
+}
+
+.product-featured__content {
+  background-color: var(--mm-color-background);
+  font-size: 14px;
+  padding: calc(var(--mm-spacing) / 2);
+  text-align: center;
+
+  & > p {
+    margin: 0;
+  }
+
+  @include variables.breakpoint('lg') {
+    padding: calc(var(--mm-spacing) / 2) var(--mm-spacing);
+    text-align: left;
+  }
+}
+
+.content * {
+  font-size: 14px;
+}
+
+.product-featured__links {
+  background-color: var(--mm-color-sidebar);
+  border-top: 1px solid var(--mm-color-border);
+  display: grid;
+  gap: var(--mm-spacing);
+  grid-auto-flow: column;
+  grid-template-columns: repeat(2, max-content);
+  justify-content: center;
+  padding: calc(var(--mm-spacing) / 2);
+
+  @include variables.breakpoint('lg') {
+    gap: calc(var(--mm-spacing) / 2);
+  }
+}
+
+.product-featured__footer {
+  background-color: #f0f8ff;
+  border-top: 1px solid #cfdee8;
+  border-bottom-left-radius: var(--mm-border-radius);
+  border-bottom-right-radius: var(--mm-border-radius);
+  display: grid;
+  gap: calc(var(--mm-spacing) / 4);
+  grid-area: learnMore;
+  grid-auto-flow: column;
+  grid-template-columns: max-content max-content;
+  grid-template-rows: max-content;
+  justify-content: center;
+  padding: calc(var(--mm-spacing) / 2);
+  text-align: center;
+
+  > * {
+    margin: 0;
+  }
+}

@@ -1,0 +1,17 @@
+{{ $title := .Get "title" }}
+{{ $date := .Get "date" }}
+{{ $anchor := $title | anchorize }}
+
+<div class="release-note" data-title="{{ $title }}" data-date="{{ $date }}" data-anchor="{{ $anchor }}">
+  <h2 class="release-note__title" id="{{ $anchor }}">
+    <a class="heading-anchor" href="#{{ $anchor }}">{{ $title }}</a>
+  </h2>
+  <em class="release-note__date">
+    {{ $date | time.Format ":date_long" }}
+  </em>
+  <div class="release-note__content">
+    {{ .Inner | .Page.RenderString }}
+  {{ printf "<!-- end-content -->" | safeHTML }}
+  </div>
+</div>
+{{ printf "<!-- end-release-note -->" | safeHTML }}

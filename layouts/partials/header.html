@@ -1,0 +1,32 @@
+<div class="header-system-status-container header-system-status">
+  <div class="header-system-status-content">
+    <span class="header__status-icon">
+      {{ readFile "assets/icon-status-warning.svg" | safeHTML }}
+    </span>
+    <span class="header__status-message"> </span>
+    <a href="https://status.maxmind.com">More info »</a>
+  </div>
+</div>
+
+<header class="header">
+  <div class="nav">
+    <a aria-label="Home" class="logo" href="/">
+      {{ readFile "assets/maxmind-logo.svg" | safeHTML }}
+      <span aria-label="Developers" class="logo__siteName">Developers</span>
+    </a>
+    <div class="header__search">
+      <div class="search">
+        <button aria-label="Show search bar" class="search__button" id="searchWidgetTrigger" type="button">
+          {{ readFile "assets/FaSearch.svg" | safeHTML }}
+        </button>
+      </div>
+    </div>
+    <div class="sidebar-toggle">
+      <button aria-label="Toggle sidebar" class="sidebar-toggle__button" id="sidebar-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </div>
+</header>

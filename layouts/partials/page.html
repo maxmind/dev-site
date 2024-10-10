@@ -1,0 +1,30 @@
+<div class="page__wrapper">
+  <div class="page__sidebar">
+    {{ partial "sidebar.html" . }}
+  </div>
+  <div class="page__content">
+    <h1 class="page__title">{{ .Title }}</h1>
+    {{ if eq .Type "has-toc" }}
+    <div class="page__toc">
+      <h3 class="page__toc__title">On this page</h3>
+    {{ .TableOfContents }}
+    </div>
+    {{ end }}
+
+    {{ .Content }}
+
+    {{ if eq .Type "release-note" }}
+    <div class="page__release-note-archive">
+      <h3>Archive</h3>
+      <ul>
+      {{ range .CurrentSection.RegularPages.ByDate.Reverse }}
+        {{ $year := path.Base .Path }}
+        {{ if strings.Contains .Title $year }}
+          <li><a href="{{ .RelPermalink }}">{{ $year }}</a></li>
+        {{ end }}
+      {{ end }}
+      </ul>
+    </div>
+    {{ end }}
+  </div>
+</div>

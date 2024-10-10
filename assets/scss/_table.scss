@@ -1,0 +1,27 @@
+.table {
+  background-color: var(--mm-color-sidebar);
+  border: 1px solid #eee;
+  border-bottom: 1px solid var(--mm-color-border);
+  border-radius: var(--mm-border-radius);
+  box-shadow: 0 1px 3px #0000001a;
+  color: #ccc;
+  display: inline-block;
+  margin: 0 auto;
+  max-width: 100%;
+  overflow-x: scroll;
+  position: relative;
+  scrollbar-color: #0003 #0000;
+  scrollbar-width: thin;
+  width: 100%;
+
+  table {
+    border-collapse: collapse;
+    font-size: 1rem;
+    line-height: 1rem;
+    width: 100%;
+  }
+
+  thead {
+    border-bottom: 1px solid var(--mm-color-border);
+  }
+}

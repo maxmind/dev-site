@@ -1,0 +1,10 @@
+<div class="mm-ips">
+{{ range index $.Site.Data.mm_ips "IPv4"}}
+<span>{{ . }}</span>
+{{ end }}
+{{ range index $.Site.Data.mm_ips "IPv6"}}
+<span>{{ . }}</span>
+{{ end }}
+</div>
+
+<p class="mm-ips__last-updated">Last updated: {{ index $.Site.Data.mm_ips "lastUpdated" | time.Format "January 02, 2006 3:04 PM Z07:00" }}</p>

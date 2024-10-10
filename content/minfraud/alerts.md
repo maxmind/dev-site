@@ -1,0 +1,163 @@
+---
+draft: false
+title: minFraud Alerts
+---
+
+After initial scoring, we continue to monitor transactions with risk scores less
+than or equal to 10 for another 24 hours. If we receive new information related
+to these transactions that lead to a transaction having a re-calculated risk
+score greater than or equal to 75, we send out a minFraud Alert.
+
+You can receive minFraud Alerts via email or webhook.
+
+## Receive minFraud Alerts via email
+
+You can set an email where you would like to receive minFraud Alerts through the
+[minFraud Alert configuration screen in your account portal](https://www.maxmind.com/en/accounts/current/minfraud/alerts/settings)
+(login required).
+
+## Receive minFraud Alerts via webhook
+
+You can also receive minFraud Alerts by webhook, and integrate your own response
+to these alerts on your server. You can configure your minFraud Alert webhook
+settings through the
+[minFraud Alert configuration screen in your account portal](https://www.maxmind.com/en/accounts/current/minfraud/alerts/settings)
+(login required).
+
+### Configuration
+
+The alert webhook URL should be an HTTPS endpoint that accepts `GET` requests.
+The User-Agent of the minFraud Alert service is `MaxMind MinFraud Alert Robot`.
+
+#### Sample minFraud Alert webhook request
+
+```html
+http://yourdomain/yoururl?i=24.24.24.24&maxmindID=1234ABCD&domain=sample.com&city=Anytown&region=CA&country=US&date=Jan.+1,+1970&txnID=foo123&reason=IP+address+has+been+marked+as+a+high-risk+IP&reason_code=HIGH_RISK_IP&minfraud_id=2afb0d26-e3b4-4624-8e66-fd10e64b95df&shop_id=shop321
+```
+
+#### Parameters
+
+The following are the parameters that will be included in the query string of
+the request. Additional parameters may be added in the future.
+
+| Parameter        | Description                                                                                                                        |
+| ---------------- | ---------------------------------------------------------------------------------------------------------------------------------- |
+| `city`           | The billing city included in the original minFraud request.                                                                        |
+| `country`        | The billing country included in the original minFraud request.                                                                     |
+| `date`           | The date of the original minFraud request, e.g., `Nov. 1, 2019`.                                                                   |
+| `domain`         | The email domain included in the original minFraud request.                                                                        |
+| `i`              | The IP address included in the original minFraud request.                                                                          |
+| `maxmindID`      | The minFraud Legacy `maxmindID` of the original minFraud request.                                                                  |
+| `minfraud_id`    | The minFraud ID of the original minFraud request.                                                                                  |
+| `new_risk_score` | The updated risk score, calculated after your initial query with additional information.                                           |
+| `old_risk_score` | The risk score as originally calculated.                                                                                           |
+| `postal`         | The billing postal included in the original minFraud request.                                                                      |
+| `reason`         | A human-readable description of why the minFraud alert was sent. See below for the current list of possible reasons.               |
+| `reason_code`    | A fixed, machine-readable code for the reason why the minFraud alert was sent. See below for the current list of possible reasons. |
+| `region`         | The billing region included in the original minFraud request.                                                                      |
+| `shop_id`        | The shop ID included in the original minFraud request. This will only be set if the original request included a shop ID.           |
+| `txnID`          | The transaction ID included in the original minFraud request.                                                                      |
+| `updated_at`     | The date and time at which the new risk score was calculated, in RFC3339 format, e.g., `2019-11-01T12:34:56Z`                      |
+
+#### Possible alert reasons
+
+These are the possible `reason_code`s which might be returned with a minFraud
+Alert. These codes are subject to change.
+
+| `reason_code`      | `reason`                                                                                         |
+| ------------------ | ------------------------------------------------------------------------------------------------ |
+| `CARDER_EMAIL`     | Email on order was flagged as high-risk email, as it was associated with another high-risk order |
+| `HIGH_RISK_DEVICE` | Device ID has been marked as a high-risk device ID                                               |
+| `HIGH_RISK_IP`     | IP address has been marked as a high-risk IP                                                     |
+| `HOSTING_PROVIDER` | IP is from High Risk Hosting Provider                                                            |
+| `MANUAL_REVIEW`    | The transaction was flagged as risky after manual review                                         |
+| `POSTAL_VELOCITY`  | IP address had high velocity of orders (e.g. different zipcodes on same IP address)              |
+
+### Securing your webhook
+
+You can secure your webhook by verifying that alert requests come from MaxMind:
+
+- Check that requests come from one of the MaxMind IPs we
+  [list below](#alert-webhook-request-ips).
+- Check that requests are signed using a secret you configure in your minFraud
+  Alert configuration screen in your account portal.
+  [Learn more about setting up signed requests below.](#signed-requests)
+
+#### Alert webhook request IPs
+
+minFraud alert requests may come from one of the following IP addresses. This
+list is subject to change.
+
+- `35.186.179.139`
+
+#### Signed requests
+
+Alert requests can be signed by MaxMind. To enable signed requests, visit your
+[minFraud Alert configuration screen in your account portal](https://www.maxmind.com/en/accounts/current/minfraud/alerts/settings)
+(login required) and set an Alert Webhook Secret.
+
+Once you set a secret, each alert request will have an HTTP header with a
+signature of the request. You can calculate the signature of the request on your
+server and check it matches the signature in the header to verify the request is
+authentic.
+
+For example, if the secret is `supersekret-0123456789` and the alert request is:
+
+```html
+http://yourdomain/yoururl?i=24.24.24.24&maxmindID=1234ABCD&domain=sample.com&city=Anytown&region=CA&country=US&date=Jan.+1,+1970&txnID=foo123&reason=IP+address+has+been+marked+as+a+high-risk+IP&reason_code=HIGH_RISK_IP&minfraud_id=2afb0d26-e3b4-4624-8e66-fd10e64b95df&shop_id=shop321
+```
+
+Then the request will include this header:
+
+```
+X-MaxMind-Alert-HMAC-SHA256: c333974ffdddfa5d1ba866171847bacf1af06bbe6ff6b6ce73632116ed36f617
+```
+
+The signature is the hex encoded HMAC-SHA256 of the URL query parameters -
+everything after the `?`. In this case, the text to be signed is:
+
+```html
+i=24.24.24.24&maxmindID=1234ABCD&domain=sample.com&city=Anytown&region=CA&country=US&date=Jan.+1,+1970&txnID=foo123&reason=IP+address+has+been+marked+as+a+high-risk+IP&reason_code=HIGH_RISK_IP&minfraud_id=2afb0d26-e3b4-4624-8e66-fd10e64b95df&shop_id=shop321
+```
+
+You can check the signaturing using something like the following code:
+
+{{< codeset >}}
+
+```ruby
+require 'openssl'
+require 'openssl/hmac'
+require 'rack/utils'
+
+def verify_signature(secret, header, query)
+  expectedMAC = OpenSSL::HMAC.hexdigest('SHA256', secret, query)
+
+  raise 'invalid signature' if !Rack::Utils.secure_compare(header, expectedMAC)
+end
+```
+
+```go
+import (
+	"crypto/hmac"
+	"crypto/sha256"
+	"encoding/hex"
+)
+
+func verifySignature(secret, header, query string) (bool, error) {
+  gotMAC, err := hex.DecodeString(header)
+  if err != nil {
+    return false, err
+  }
+
+  mac := hmac.New(sha256.New, []byte(secret))
+  mac.Write([]byte(query))
+  expectedMAC := mac.Sum(nil)
+
+  return hmac.Equal(gotMAC, expectedMAC), nil
+}
+```
+
+{{</ codeset >}}
+
+To avoid [timing attacks](https://en.wikipedia.org/wiki/Timing_attack), please
+use a secure comparison function rather the equals operator of your language.

@@ -1,0 +1,15 @@
+@use 'mixins';
+
+.search {
+  position: relative;
+}
+
+.search__button {
+  @include mixins.menu-button;
+  float: right;
+}
+
+.search__button svg {
+  margin-top: 3px;
+  pointer-events: none;
+}

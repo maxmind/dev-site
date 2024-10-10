@@ -1,0 +1,250 @@
+# baseurl is updated on deploy
+baseurl = "/"
+languageCode = "en-us"
+title = 'MaxMind'
+
+[markup]
+  [markup.highlight]
+    codeFences = true
+    guessSyntax = false
+    hl_Lines = ''
+    lineAnchors = ''
+    lineNoStart = 1
+    lineNos = true
+    lineNumbersInTable = false
+    noClasses = true
+    noHl = false
+    style = 'doom-one2'
+    tabWidth = 4
+
+[menus]
+  [[menus.minfraud]]
+    name = 'minFraud'
+    pageRef = '/minfraud'
+    weight = 10
+    [[menus.minfraud]]
+      name = 'Overview'
+      pageRef = '/minfraud'
+      parent = 'minFraud'
+      weight = 10
+    [[menus.minfraud]]
+      name = 'Evaluate a Transaction'
+      pageRef = '/minfraud/evaluate-a-transaction'
+      parent = 'minFraud'
+      weight = 15
+    [[menus.minfraud]]
+      name = 'Report a transaction'
+      pageRef = '/minfraud/report-a-transaction'
+      parent = 'minFraud'
+      weight = 20
+    [[menus.minfraud]]
+      name = 'Track Devices'
+      pageRef = '/minfraud/track-devices'
+      parent = 'minFraud'
+      weight = 30
+    [[menus.minfraud]]
+      name = 'minFraud Alerts'
+      pageRef = '/minfraud/alerts'
+      parent = 'minFraud'
+      weight = 40
+    [[menus.minfraud]]
+      name = 'Working with Transaction Dispositions'
+      pageRef = '/minfraud/working-with-transaction-dispositions'
+      parent = 'minFraud'
+      weight = 50
+    [[menus.minfraud]]
+      name = 'Testing minFraud in the MaxMind Sandbox'
+      pageRef = '/minfraud/sandbox-environment'
+      parent = 'minFraud'
+      weight = 60
+    [[menus.minfraud]]
+      name = 'API Documentation'
+      pageRef = '/minfraud/api-documentation'
+      parent = 'minFraud'
+      weight = 70
+      [[menus.minfraud]]
+        name = 'Requests'
+        pageRef = '/minfraud/api-documentation/requests'
+        parent = 'API Documentation'
+        weight = 10
+      [[menus.minfraud]]
+        name = 'Responses'
+        pageRef = '/minfraud/api-documentation/responses'
+        parent = 'API Documentation'
+        weight = 20
+    [[menus.minfraud]]
+      name = 'minFraud Legacy'
+      pageRef = '/minfraud/minfraud-legacy'
+      parent = 'minFraud'
+      weight = 80
+    [[menus.minfraud]]
+      name = 'Proxy Detection Legacy Web Service'
+      pageRef = '/minfraud/proxy-detection'
+      parent = 'minFraud'
+      weight = 90
+    [[menus.minfraud]]
+      name = 'minFraud Release Notes'
+      pageRef = '/minfraud/release-notes/2024'
+      parent = 'minFraud'
+      weight = 100
+  [[menus.geoip]]
+    name = 'GeoIP'
+    pageRef = '/geoip'
+    weight = 10
+    [[menus.geoip]]
+      name = 'Overview'
+      pageRef = '/geoip'
+      parent = 'GeoIP'
+      weight = 10
+    [[menus.geoip]]
+      name = 'Geolocate an IP'
+      pageRef = '/geoip/geolocate-an-ip'
+      parent = 'GeoIP'
+      weight = 15
+      [[menus.geoip]]
+        name = 'Databases'
+        pageRef = '/geoip/geolocate-an-ip/databases'
+        parent = 'Geolocate an IP'
+        weight = 10
+      [[menus.geoip]]
+        name = 'Web Services'
+        pageRef = '/geoip/geolocate-an-ip/web-services'
+        parent = 'Geolocate an IP'
+        weight = 20
+      [[menus.geoip]]
+        name = 'Client-side Javascript'
+        pageRef = '/geoip/geolocate-an-ip/client-side-javascript'
+        parent = 'Geolocate an IP'
+        weight = 30
+    [[menus.geoip]]
+      name = 'Updating Databases'
+      pageRef = '/geoip/updating-databases'
+      parent = 'GeoIP'
+      weight = 20
+    [[menus.geoip]]
+      name = 'Importing Databases'
+      pageRef = '/geoip/importing-databases'
+      parent = 'GeoIP'
+      weight = 30
+      [[menus.geoip]]
+        name = 'Import to PostgreSQL'
+        pageRef = '/geoip/importing-databases/postgresql'
+        parent = 'Importing Databases'
+        weight = 10
+      [[menus.geoip]]
+        name = 'Import to MySQL'
+        pageRef = '/geoip/importing-databases/mysql'
+        parent = 'Importing Databases'
+        weight = 20
+    [[menus.geoip]]
+      name = 'Web Services Documentation'
+      pageRef = '/geoip/docs/web-services'
+      parent = 'GeoIP'
+      weight = 60
+      [[menus.geoip]]
+        name = 'Requests'
+        pageRef = '/geoip/docs/web-services/requests'
+        parent = 'Web Services Documentation'
+        weight = 10
+      [[menus.geoip]]
+        name = 'Responses'
+        pageRef = '/geoip/docs/web-services/responses'
+        parent = 'Web Services Documentation'
+        weight = 20
+      [[menus.geoip]]
+        name = 'Sandbox Environment'
+        pageRef = '/geoip/docs/web-services/sandbox-environment'
+        parent = 'Web Services Documentation'
+        weight = 30
+      [[menus.geoip]]
+        name = 'Legacy Web Services'
+        pageRef = '/geoip/docs/web-services/legacy'
+        parent = 'Web Services Documentation'
+        weight = 40
+    [[menus.geoip]]
+      name = 'Database Documentation'
+      pageRef = '/geoip/docs/databases'
+      parent = 'GeoIP'
+      weight = 70
+      [[menus.geoip]]
+        name = 'City and Country'
+        pageRef = '/geoip/docs/databases/city-and-country'
+        parent = 'Database Documentation'
+        weight = 10
+      [[menus.geoip]]
+        name = 'Enterprise'
+        pageRef = '/geoip/docs/databases/enterprise'
+        parent = 'Database Documentation'
+        weight = 20
+      [[menus.geoip]]
+        name = 'Anonymous IP'
+        pageRef = '/geoip/docs/databases/anonymous-ip'
+        parent = 'Database Documentation'
+        weight = 30
+      [[menus.geoip]]
+        name = 'ISP'
+        pageRef = '/geoip/docs/databases/isp'
+        parent = 'Database Documentation'
+        weight = 40
+      [[menus.geoip]]
+        name = 'Connection Type'
+        pageRef = '/geoip/docs/databases/connection-type'
+        parent = 'Database Documentation'
+        weight = 50
+      [[menus.geoip]]
+        name = 'Domain'
+        pageRef = '/geoip/docs/databases/domain'
+        parent = 'Database Documentation'
+        weight = 60
+      [[menus.geoip]]
+        name = 'ASN'
+        pageRef = '/geoip/docs/databases/asn'
+        parent = 'Database Documentation'
+        weight = 70
+    [[menus.geoip]]
+      name = 'GeoLite2 Free Geolocation Data'
+      pageRef = '/geoip/geolite2-free-geolocation-data'
+      parent = 'GeoIP'
+      weight = 80
+    [[menus.geoip]]
+      name = 'Privacy Exclusions API'
+      pageRef = '/geoip/privacy-exclusions-api'
+      parent = 'GeoIP'
+      weight = 90
+    [[menus.geoip]]
+      name = 'GeoIP Release Notes'
+      pageRef = '/geoip/release-notes/2024'
+      parent = 'GeoIP'
+      weight = 100
+
+  [[menus.general]]
+    name = 'MaxMind Server IP Addresses'
+    pageRef = '/maxmind-server-ip-addresses'
+    weight = 10
+  [[menus.general]]
+    name = 'License Key Validation API'
+    pageRef = '/license-key-validation-api'
+    weight = 20
+  [[menus.general]]
+    name = 'MMDB Format Spec'
+    url = 'https://maxmind.github.io/MaxMind-DB/'
+    weight = 30
+  [[menus.general]]
+    name = 'Knowledge Base'
+    url = 'https://support.maxmind.com/hc/en-us'
+    weight = 40
+  [[menus.general]]
+    name = 'Contribute'
+    pageRef = '/contribute'
+    weight = 50
+
+[module]
+  [[module.mounts]]
+    source = "static"
+    target = "static"
+  [[module.mounts]]
+    source = "data/mm_ips.json"
+    target = "static/maxmind-server-ip-addresses.json"
+
+[outputs]
+  home = ["HTML"]

@@ -1,0 +1,118 @@
+{{ $currentPage := . }}
+<nav aria-label="Main Navigation" class="sidebar">
+  <ul class="sidebar__group">
+    {{ range .Site.Menus.minfraud }}
+      <li>
+        <a
+        class="sidebar__parent {{ if or ($currentPage.IsMenuCurrent "minfraud" .) ($currentPage.HasMenuCurrent "minfraud" .) }}is-active{{ end }} js-sidebar-parent"
+        href="{{ .URL }}"
+        >
+        {{ .Name }}
+        <div aria-label="Toggle sub-menu" class="sidebar__toggle js-sidebar-toggle">
+          <svg aria-hidden="true" class="caret rotate" focusable="false" height="16" role="img" viewBox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg">
+            <path d="M8 10.5L3.5 6l1-1 3.5 3.5L11 5l1 1z"></path>
+          </svg>
+        </div>
+        </a>
+        {{ if .HasChildren }}
+          <ul class="sidebar__child-group js-sidebar-child-group">
+            {{ range .Children }}
+            <li {{ if or (eq .Name "API Documentation") (eq .Name "minFraud Legacy") }} class="sidebar__group-break" {{ end }}>
+                <a
+                class="sidebar__child {{ if $currentPage.IsMenuCurrent "minfraud" . }}is-active{{ end }}"
+                href="{{ .URL }}"
+                >
+                {{ .Name }}
+                </a>
+              {{ if .HasChildren }}
+                <ul>
+                  {{ range .Children }}
+                    <li>
+                      <a
+                      class="{{ if $currentPage.IsMenuCurrent "minfraud" . }}is-active{{ end }}"
+                      href="{{ .URL }}"
+                      >
+                        {{ .Name }}
+                      </a>
+                    </li>
+                  {{ end }}
+                </ul>
+              {{ end }}
+              </li>
+            {{ end }}
+          </ul>
+        {{ end }}
+      </li>
+    {{ end }}
+  </ul>
+
+  <ul class="sidebar__group">
+    {{ range .Site.Menus.geoip }}
+      <li>
+        <a
+        class="sidebar__parent {{ if or ($currentPage.IsMenuCurrent "geoip" .) ($currentPage.HasMenuCurrent "geoip" .) }}is-active{{ end }} js-sidebar-parent"
+        href="{{ .URL }}"
+        >
+        {{ .Name }}
+        <div aria-label="Toggle sub-menu" class="sidebar__toggle js-sidebar-toggle">
+          <svg aria-hidden="true" class="caret rotate" focusable="false" height="16" role="img" viewBox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg">
+            <path d="M8 10.5L3.5 6l1-1 3.5 3.5L11 5l1 1z"></path>
+          </svg>
+        </div>
+        </a>
+        {{ if .HasChildren }}
+          <ul class="sidebar__child-group js-sidebar-child-group">
+            {{ range .Children }}
+              <li {{ if or (eq .Name "Web Services Documentation") (eq .Name "GeoLite2 Free Geolocation Data") }} class="sidebar__group-break" {{ end }}>
+                <a
+                class="sidebar__child {{ if $currentPage.IsMenuCurrent "geoip" . }}is-active{{ end }}"
+                href="{{ .URL }}">
+                  {{ .Name }}
+                </a>
+              {{ if .HasChildren }}
+                <ul>
+                  {{ range .Children }}
+                    <li>
+                      <a
+                      class="{{ if $currentPage.IsMenuCurrent "geoip" . }}is-active{{ end }}"
+                      href="{{ .URL }}">
+                        {{ .Name }}
+                      </a>
+                    </li>
+                  {{ end }}
+                </ul>
+              {{ end }}
+              </li>
+            {{ end }}
+          </ul>
+        {{ end }}
+      </li>
+    {{ end }}
+  </ul>
+
+  <ul class="sidebar__group sidebar__general">
+    {{ range .Site.Menus.general }}
+      <li>
+        <a
+        class="{{ if or ($currentPage.IsMenuCurrent "general" .) ($currentPage.HasMenuCurrent "general" .) }}is-active{{ end }}"
+        href="{{ .URL }}"
+        >
+        {{ .Name }}
+        </a>
+        {{ if .HasChildren }}
+          <ul>
+            {{ range .Children }}
+              <li>
+                <a
+                class="{{ if $currentPage.IsMenuCurrent "general" . }}is-active{{ end }}"
+                href="{{ .URL }}">
+                  {{ .Name }}
+                </a>
+              </li>
+            {{ end }}
+          </ul>
+        {{ end }}
+      </li>
+    {{ end }}
+  </ul>
+</nav>

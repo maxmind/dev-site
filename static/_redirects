@@ -1,0 +1,26 @@
+# RSS feed
+# The year needs to be hardcoded.  A page for the new year's
+# release note won't exist until a new .md file is created in the
+# /content/<product>/release-notes folder for that new year
+/geoip/release-notes /geoip/release-notes/2024 302
+/geoip/release-notes/rss.xml /geoip/release-notes/2024/index.xml 302
+/minfraud/release-notes /minfraud/release-notes/2024 302
+/minfraud/release-notes/rss.xml /minfraud/release-notes/2024/index.xml 302
+
+# General - without splats or placeholders
+# Redirects are more performant when redirects without splats/placeholders are above those with splats/placeholders
+/checksum.txt /static/checksum.txt 301
+/fips-iso-map.csv /static/csv/fips-iso-map.csv 301
+/geoip-test-databases.tar.gz /static/geoip-test-databases.tar.gz 301
+/GeoIP2-Enterprise-CSV_Example.zip /static/GeoIP2-Enterprise-CSV_Example.zip 301
+/maxmind-server-ip-addresses.xml /maxmind-server-ip-addresses/index.xml 302
+/static/csv/codes/ap_country_list.csv /static/csv/codes/maxmind/ap_country_list.csv 301
+/static/csv/codes/eu_country_list.csv /static/csv/codes/maxmind/eu_country_list.csv 301
+/static/maxmind-region-codes.csv https://download.maxmind.com/download/geoip/misc/region_codes.csv 301
+
+
+# General - with splats and placeholders
+/csv/:files /static/csv/:file 301
+/csv-files/:file /static/csv/:file 301
+/minfraud-soap-*.wsdl /sattic/wsdl/minfraud-soap-:splat.wsdl 301
+/static/pdfs/:files /static/pdf/:file 301

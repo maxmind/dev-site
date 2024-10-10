@@ -1,0 +1,32 @@
+@use 'variables';
+
+.fourOhFour {
+  align-items: center;
+  color: var(--mm-color-primary-text);
+  display: grid;
+  font-family: var(--mm-font-stack-monospace);
+  font-size: 100px;
+  font-weight: 700;
+  grid-auto-flow: column;
+  justify-content: center;
+  padding: var(--mm-spacing);
+  white-space: nowrap;
+}
+
+.fourOhFour-message {
+  margin: 0;
+  padding: 0 var(--mm-spacing) var(--mm-spacing);
+  text-align: center;
+}
+
+
+@include variables.breakpoint('md') {
+  .fourOhFour {
+    font-size: 200px;
+    padding: calc(var(--mm-spacing) * 2);
+  }
+
+  .fourOhFour-message {
+    padding: 0 calc(var(--mm-spacing) * 2) calc(var(--mm-spacing) * 2);
+  }
+}
