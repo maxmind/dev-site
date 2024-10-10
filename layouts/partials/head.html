@@ -1,7 +1,10 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>{{ .Title }}</title>
+  <title>{{ .Title }} | MaxMind Developer Portal</title>
+  {{ if .Description }}
+  <meta name="description" content="{{ .Description }}">
+  {{ end }}
 
   {{ $style := resources.Get "scss/index.scss" }} {{ $options := dict
   "transpiler" "dartsass" }} {{ $style := $style | toCSS $options}}
@@ -12,13 +15,6 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=Source+Code+Pro:wght@700&display=swap"
     rel="stylesheet"
-  />
-
-  <link
-    rel="alternate"
-    type="application/rss+xml"
-    href="{{.Site.BaseURL }}feed.xml"
-    title="RSS Feed for dev.maxmind.com"
   />
 
   <!-- Google Tag Manager -->
@@ -42,4 +38,5 @@
     async
     src="https://www.maxmind.com/js/global-privacy-control.js"
   ></script>
+  {{ template "_internal/opengraph.html" . }}
 </head>
