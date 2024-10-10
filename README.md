@@ -1,7 +1,7 @@
 <h3 align="center">
   <img
     alt="MaxMind"
-    src="src/assets/svgs/maxmind-logo.svg"
+    src="assets/maxmind-logo.svg"
     width="300"
   >
   <br>
