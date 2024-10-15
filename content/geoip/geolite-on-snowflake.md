@@ -9,7 +9,7 @@ requesting access to the GeoLite datasets. Once approved, you will be able to
 query GeoLite data within Snowflake.
 
 The GeoLite Country and City datasets are updated twice weekly, every Tuesday
-and Friday. The GeoLite2 ASN dataset is updated daily.
+and Friday. The GeoLite ASN dataset is updated daily.
 
 ## IP Geolocation Accuracy
 
