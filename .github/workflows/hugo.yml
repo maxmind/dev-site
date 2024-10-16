@@ -26,4 +26,6 @@ jobs:
         run: sudo snap install dart-sass
 
       - name: Build site
-        run: hugo
+        run: ./build.sh
+        env:
+          CF_PAGES_URL: /
