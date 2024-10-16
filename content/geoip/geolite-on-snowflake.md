@@ -11,7 +11,7 @@ query GeoLite data within Snowflake.
 The GeoLite Country and City datasets are updated twice weekly, every Tuesday
 and Friday. The GeoLite ASN dataset is updated daily.
 
-## IP Geolocation Accuracy
+## IP geolocation accuracy
 
 {{< alert warning >}}
 **IP Geolocation Usage**
@@ -94,7 +94,7 @@ particular dataset you are querying:
 
 GeoLite data offered through the Snowflake Marketplace is subject to the
 [MaxMind Services Terms of Use for the Snowflake Platform](https://www.maxmind.com/en/snowflake-geolite-terms-of-use).
-Please note that this is different from the GeoLite2 end-user license agreement,
+Please note that this is different from the GeoLite2 End User License Agreement,
 which governs the use of GeoLite databases and web services served directly from
 MaxMind.
 
