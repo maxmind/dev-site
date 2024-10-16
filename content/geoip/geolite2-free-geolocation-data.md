@@ -16,7 +16,8 @@ service per day.
 ## Accessing GeoLite2 Free Geolocation Data
 
 You will need a free GeoLite2 account to download the GeoLite2 databases or to
-query the GeoLite2 web services.
+query the GeoLite2 web services. MaxMind also offers our
+[GeoLite data on Snowflake](/geoip/geolite-on-snowflake/).
 
 {{< link-group/container >}}
   {{< link-group/card heading="Sign Up for GeoLite2" href="https://www.maxmind.com/en/geolite2/signup" >}}
