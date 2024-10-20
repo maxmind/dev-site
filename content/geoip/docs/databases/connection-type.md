@@ -98,13 +98,13 @@ These are named `GeoIP2-Connection-Type-Blocks-IPv4.csv` and
 
 ## Database Sizes
 
-{{< db-sizes-table dateRange="March to June 2024">}}
+{{< db-sizes-table dateRange="August to October 2024">}}
   {{< db-sizes-row
     databaseName="GeoIP Connection Type"
-    csvSizeRange="30.56 MB - 47.44 MB"
-    mmdbSizeRange="9.02 MB - 12.7 MB"
-    ipv4Range="933,000 - 1,550,000"
-    ipv6Range="197,000 - 208,000"
+    csvSizeRange="31.96 MB - 34.37 MB"
+    mmdbSizeRange="9.31 MB - 9.84 MB"
+    ipv4Range="971,000 - 1,076,000"
+    ipv6Range="210,000 - 225,000"
   >}}
 {{</ db-sizes-table>}}
 
