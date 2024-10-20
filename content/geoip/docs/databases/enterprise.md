@@ -255,7 +255,7 @@ name would be "GeoIP2-City-Locations-en.csv".
 {{< db-sizes-table dateRange="August to October 2024">}}
   {{< db-sizes-row
     databaseName="GeoIP Enterprise"
-    csvSizeRange="9865 MB - 1.05 GB"
+    csvSizeRange="986 MB - 1.05 GB"
     mmdbSizeRange="344 MB - 358 MB"
     ipv4Range="7,874,000 - 8,984,000"
     ipv6Range="3,251,000 - 3,772,000"
