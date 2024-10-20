@@ -97,13 +97,13 @@ These are named `GeoIP2-Domain-Blocks-IPv4.csv` and
 
 ## Database Sizes
 
-{{< db-sizes-table dateRange="March to June 2024">}}
+{{< db-sizes-table dateRange="August to October 2024">}}
   {{< db-sizes-row
     databaseName="GeoIP Domain"
-    csvSizeRange="17.44 MB - 17.87 MB"
-    mmdbSizeRange="9.96 MB - 10.3 MB"
-    ipv4Range="502,000 - 508,000"
-    ipv6Range="97,000 - 107,000"
+    csvSizeRange="18.07 MB - 18.36 MB"
+    mmdbSizeRange="10.4 MB - 10.6 MB"
+    ipv4Range="509,000 - 516,000"
+    ipv6Range="109,000 - 112,000"
   >}}
 {{</ db-sizes-table>}}
 

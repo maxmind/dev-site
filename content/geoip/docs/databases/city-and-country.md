@@ -140,34 +140,34 @@ blocks files have the same columns as the City database.
 
 ## Database Sizes
 
-{{< db-sizes-table dateRange="March to June 2024">}}
+{{< db-sizes-table dateRange="August to October 2024">}}
   {{< db-sizes-row
     databaseName="GeoIP City"
-    csvSizeRange="577 MB - 606 MB"
-    mmdbSizeRange="108 MB - 110 MB"
-    ipv4Range="657,000 - 682,000"
-    ipv6Range="231,000 - 250,000"
+    csvSizeRange="583 MB - 637 MB"
+    mmdbSizeRange="108 MB - 113 MB"
+    ipv4Range="6,360,000 - 7,260,000"
+    ipv6Range="2,580,000 - 2,970,000"
   >}}
   {{< db-sizes-row
     databaseName="GeoIP Country"
-    csvSizeRange="29.2 MB - 30.8 MB"
-    mmdbSizeRange="6.29 MB - 6.53 MB"
-    ipv4Range="480,000 - 502,000"
-    ipv6Range="265,000 - 280,000"
+    csvSizeRange="30.2 MB - 35.6 MB"
+    mmdbSizeRange="6.57 MB - 7.16 MB"
+    ipv4Range="482,000 - 505,000"
+    ipv6Range="284,000 - 389,000"
   >}}
   {{< db-sizes-row
     databaseName="GeoLite City"
-    csvSizeRange="226.2 MB - 292.7 MB"
-    mmdbSizeRange="50 MB - 63.8 MB"
-    ipv4Range="236,000 - 334,000"
-    ipv6Range="114,000 - 123,000"
+    csvSizeRange="231.5 MB - 265.0 MB"
+    mmdbSizeRange="50.8 MB - 54.2 MB"
+    ipv4Range="2,370,000 - 3,400,000"
+    ipv6Range="1,200,000 - 1,670,000"
   >}}
   {{< db-sizes-row
     databaseName="GeoLite Country"
-    csvSizeRange="30 MB - 31.7 MB"
-    mmdbSizeRange="6.38 MB - 6.64 MB"
-    ipv4Range="480,000 - 490,000"
-    ipv6Range="280,000 - 308,000"
+    csvSizeRange="30.6 MB - 38.2 MB"
+    mmdbSizeRange="6.61 MB - 7.57 MB"
+    ipv4Range="478,000 - 496,000"
+    ipv6Range="297,000 - 476,000"
   >}}
 {{</ db-sizes-table>}}
 
