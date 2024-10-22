@@ -1040,6 +1040,13 @@ will not be present in the response.
 ### Subscores
 {{< anchor-target schema--response--subscores >}}
 
+{{< alert warning >}}
+Risk factor scores will be deprecated on November 4, 2024. Please 
+[review risk score reasons](/minfraud/api-documentation/responses/#risk-score-reasons) 
+for insight into why a risk score is high or low. 
+
+{{</ alert >}}
+
 This object contains risk factor scores for many of the individual components that are used in calculating the `risk_score`. [Learn more about risk factor scores on our Knowledge Base.](https://support.maxmind.com/hc/en-us/articles/4408382645915-Risk-Factor-Scores)
 
 This object is only included with minFraud Factors. [Learn more about the differences between the minFraud services on our Knowledge Base.](https://support.maxmind.com/hc/en-us/articles/4407833140123-Compare-the-minFraud-Services)
