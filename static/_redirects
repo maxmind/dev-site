@@ -2,9 +2,11 @@
 # The year needs to be hardcoded.  A page for the new year's
 # release note won't exist until a new .md file is created in the
 # /content/<product>/release-notes folder for that new year
-/geoip/release-notes /geoip/release-notes/2024 302
+/geoip/release-notes /geoip/release-notes/2024/ 302
+/geoip/release-notes/ /geoip/release-notes/2024/ 302
 /geoip/release-notes/rss.xml /geoip/release-notes/2024/index.xml 302
-/minfraud/release-notes /minfraud/release-notes/2024 302
+/minfraud/release-notes /minfraud/release-notes/2024/ 302
+/minfraud/release-notes/ /minfraud/release-notes/2024/ 302
 /minfraud/release-notes/rss.xml /minfraud/release-notes/2024/index.xml 302
 
 # General - without splats or placeholders
@@ -17,6 +19,8 @@
 /static/csv/codes/ap_country_list.csv /static/csv/codes/maxmind/ap_country_list.csv 301
 /static/csv/codes/eu_country_list.csv /static/csv/codes/maxmind/eu_country_list.csv 301
 /static/maxmind-region-codes.csv https://download.maxmind.com/download/geoip/misc/region_codes.csv 301
+/geoip/geoip2/release-notes /geoip/release-notes/ 302
+/geoip/geoip2/release-notes/ /geoip/release-notes/ 302
 
 
 # General - with splats and placeholders
