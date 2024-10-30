@@ -2,12 +2,12 @@
 document
   .querySelectorAll<HTMLAnchorElement>('.js-sidebar-parent')
   .forEach((sidebarParent) => {
-    const child = sidebarParent.parentNode.querySelector(
+    const child = sidebarParent.parentNode?.querySelector(
       '.js-sidebar-child-group'
     );
     const caret = sidebarParent
       .querySelector('.js-sidebar-toggle')
-      .querySelector('.caret');
+      ?.querySelector('.caret');
 
     const isExpanded = sidebarParent.classList.contains('is-active');
 
@@ -21,7 +21,7 @@ document
 document.querySelectorAll('.js-sidebar-parent').forEach((toggle) => {
   toggle.addEventListener('click', (e) => {
     e.preventDefault();
-    const child = toggle.parentNode.querySelector('.js-sidebar-child-group');
+    const child = toggle.parentNode?.querySelector('.js-sidebar-child-group');
     const caret = toggle.querySelector('.caret');
 
     // We aren't using the class here because expanded parents are not always active
@@ -38,7 +38,7 @@ document.querySelectorAll('.js-sidebar-parent').forEach((toggle) => {
 const sidebarContainer = document.querySelector('.page__sidebar');
 document
   .getElementById('sidebar-toggle')
-  .addEventListener('click', function (e) {
+  ?.addEventListener('click', function (e) {
     e.preventDefault();
     this.classList.toggle('is-active');
     sidebarContainer?.classList.toggle('show');

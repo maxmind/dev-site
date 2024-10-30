@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
     "baseUrl": ".",
-    "lib": ["DOM", "ESNext"],
+    "lib": ["DOM", "ESNext", "dom.iterable"],
     "module": "ESNext",
     "noEmit": true,
     "skipLibCheck": true,

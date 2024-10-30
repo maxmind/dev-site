@@ -10,8 +10,8 @@
   max-width: 100%;
   overflow-x: scroll;
   position: relative;
-  scrollbar-color: #0003 #0000;
-  scrollbar-width: thin;
+  scrollbar-color: #0003 #0000; /* stylelint-disable-line plugin/no-unsupported-browser-features */
+  scrollbar-width: thin; /* stylelint-disable-line plugin/no-unsupported-browser-features */
   width: 100%;
 
   table {

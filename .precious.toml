@@ -1,0 +1,36 @@
+[commands.lint-scripts]
+type = "lint"
+cmd = [
+  "npm",
+  "run",
+  "lint:scripts"
+]
+invoke = "once"
+include = ["assets/js/**/*.{ts}"]
+ok-exit-codes = 0
+
+[commands.stylelint-styles]
+type="both"
+cmd = [
+  "npx",
+  "stylelint"
+]
+lint-flags = []
+tidy-flags = ["--fix"]
+path-args = "absolute-file"
+include = ["assets/scss/**"]
+ok-exit-codes = 0
+
+[commands.prettier-scripts]
+type = "both"
+cmd = [
+  "npx",
+  "prettier",
+  "--write"
+]
+lint-flags = ["--check"]
+tidy-flags = ["--write"]
+path-args = "absolute-file"
+include = ["assets/js/**"]
+ok-exit-codes = 0
+
