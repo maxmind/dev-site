@@ -4,6 +4,12 @@
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
 }
 
+.link-group__card-title {
+  color: var(--mm-color-display-text);
+  font-size: 1.1rem;
+  margin: 0 0 1rem;
+}
+
 .link-group__card {
   border: 1px solid var(--mm-color-display-text);
   border-radius: var(--mm-border-radius);
@@ -25,10 +31,4 @@
   &:hover .link-group__card-title {
     text-decoration: underline;
   }
-}
-
-.link-group__card-title {
-  color: var(--mm-color-display-text);
-  font-size: 1.1rem;
-  margin: 0 0 1rem;
 }

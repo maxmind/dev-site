@@ -19,12 +19,14 @@
     outline: none;
   }
 
-  &:hover, &.active {
+  &:hover,
+  &.active {
     background-color: var(--mm-color-dark-blue);
     color: #fff;
   }
 
-  &:not(:last-child), &:not(:first-child) {
+  &:not(:last-child),
+  &:not(:first-child) {
     border-radius: 0;
   }
 

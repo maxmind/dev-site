@@ -1,3 +1,5 @@
+@use 'sass:map';
+
 $breakpoints: (
   xs: 360px,
   sm: 576px,
@@ -9,9 +11,9 @@ $breakpoints: (
 );
 
 @mixin breakpoint($size) {
-  $width: map-get($breakpoints, $size);
+  $width: map.get($breakpoints, $size);
 
-  @media only screen and (min-width: $width) {
+  @media only screen and (min-width: $width) { /* stylelint-disable-line */
     @content;
   }
 }
@@ -26,7 +28,7 @@ $containers: (
 );
 
 @mixin container($size) {
-  $width: map-get($containers, $size);
+  $width: map.get($containers, $size);
   max-width: $width;
   padding: 0;
 }

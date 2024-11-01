@@ -1,7 +1,7 @@
 setCrontab();
 
 function setCrontab() {
-  const wrapper = document.querySelector(".js-geoip-crontab");
+  const wrapper = document.querySelector('.js-geoip-crontab');
   if (wrapper === null) {
     return;
   }
@@ -15,7 +15,7 @@ function setCrontab() {
   const cronExpression = `${minute} ${hour} * * ${firstDay},${secondDay}`;
 
   replaceCrontab(wrapper, cronExpression);
-  wrapper.classList.remove("hide");
+  wrapper.classList.remove('hide');
 }
 
 function replaceCrontab(
@@ -26,14 +26,13 @@ function replaceCrontab(
     return;
   }
 
-  const placeholder = "___js-cron-placeholder___";
-
+  const placeholder = '___js-cron-placeholder___';
   for (const child of wrapper.childNodes) {
     if (
       child.nodeType === Node.TEXT_NODE &&
-      child.textContent.includes(placeholder)
+      child.textContent?.includes(placeholder)
     ) {
-      child.textContent = child.textContent.replace(
+      child.textContent = child.textContent?.replace(
         placeholder,
         cronExpression
       );

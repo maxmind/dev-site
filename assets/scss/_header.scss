@@ -51,7 +51,7 @@ $page-header-height: 80px;
   grid-template-rows: auto;
   height: calc(var(--page-header-height) - 10px);
   margin: auto;
-  max-width: var(--mm-max-content-width);
+  max-width: var(--mm-max-content-width); /* stylelint-disable-line plugin/no-unsupported-browser-features */
   padding: 0 var(--mm-spacing);
 }
 

@@ -52,7 +52,7 @@
   padding: calc(var(--mm-spacing) / 2);
   text-align: center;
 
-  & > p {
+  p {
     margin: 0;
   }
 
@@ -83,9 +83,9 @@
 
 .product-featured__footer {
   background-color: #f0f8ff;
-  border-top: 1px solid #cfdee8;
   border-bottom-left-radius: var(--mm-border-radius);
   border-bottom-right-radius: var(--mm-border-radius);
+  border-top: 1px solid #cfdee8;
   display: grid;
   gap: calc(var(--mm-spacing) / 4);
   grid-area: learnMore;

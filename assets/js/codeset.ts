@@ -1,17 +1,17 @@
-const langChangeEvent = "mm-langChange";
-const langStorageKey = "mm-lang";
+const langChangeEvent = 'mm-langChange';
+const langStorageKey = 'mm-lang';
 
-const codesets = document.querySelectorAll<HTMLElement>(".js-codeset");
+const codesets = document.querySelectorAll<HTMLElement>('.js-codeset');
 codesets.forEach((codeset) => {
-  const codeSnippets = codeset.querySelectorAll<HTMLElement>(".highlight");
-  const selector = codeset.querySelector(".js-selector");
+  const codeSnippets = codeset.querySelectorAll<HTMLElement>('.highlight');
+  const selector = codeset.querySelector('.js-selector');
   const tabFragment = new DocumentFragment();
   const langs = new Set<string>();
 
   codeSnippets.forEach((codeSnippet) => {
-    codeSnippet.classList.add("hide");
+    codeSnippet.classList.add('hide');
 
-    const code = codeSnippet.querySelector<HTMLElement>("code");
+    const code = codeSnippet.querySelector<HTMLElement>('code');
     if (code === null) {
       return;
     }
@@ -27,14 +27,14 @@ codesets.forEach((codeset) => {
     }
 
     if (lang === getLang()) {
-      codeSnippet.classList.remove("hide");
+      codeSnippet.classList.remove('hide');
     }
 
-    const button = document.createElement("button");
+    const button = document.createElement('button');
     button.textContent = lang;
     button.dataset.lang = lang;
-    button.classList.add("btn", "codeset__btn");
-    button.addEventListener("click", () => {
+    button.classList.add('btn', 'codeset__btn');
+    button.addEventListener('click', () => {
       setLang(lang);
     });
     tabFragment.appendChild(button);
@@ -42,12 +42,12 @@ codesets.forEach((codeset) => {
   selector?.appendChild(tabFragment);
   maybeShowFirstLang(langs, codeSnippets);
   setActiveButtons();
-  codeset.classList.remove("hide");
+  codeset.classList.remove('hide');
 });
 
 document.addEventListener(langChangeEvent, () => {
   codesets.forEach((codeset) => {
-    const codeSnippets = codeset.querySelectorAll<HTMLElement>(".highlight");
+    const codeSnippets = codeset.querySelectorAll<HTMLElement>('.highlight');
     const langs = new Set<string>();
     codeSnippets.forEach((codeSnippet) => {
       const lang = codeSnippet.dataset.lang;
@@ -56,9 +56,9 @@ document.addEventListener(langChangeEvent, () => {
       }
       langs.add(lang);
       if (lang === getLang()) {
-        codeSnippet.classList.remove("hide");
+        codeSnippet.classList.remove('hide');
       } else {
-        codeSnippet.classList.add("hide");
+        codeSnippet.classList.add('hide');
       }
     });
     maybeShowFirstLang(langs, codeSnippets);
@@ -85,27 +85,32 @@ function maybeShowFirstLang(
     return;
   }
   if (!langs.has(lang) && codeSnippets.length > 0) {
-    codeSnippets[0].classList.remove("hide");
+    codeSnippets[0].classList.remove('hide');
   }
 }
 
 function setActiveButtons() {
   const lang = getLang();
   codesets.forEach((codeset) => {
-    const buttons = codeset.querySelectorAll(".codeset__btn");
+    const buttons: NodeListOf<HTMLButtonElement> =
+      codeset.querySelectorAll('.codeset__btn');
     const langs = new Set<string>();
-    buttons.forEach((button: HTMLElement) => {
+    buttons.forEach((button: HTMLButtonElement) => {
       const lang = button.dataset.lang;
-      langs.add(lang);
-      if (lang === getLang()) {
-        button.classList.add("active");
-      } else {
-        button.classList.remove("active");
+      if (lang) {
+        langs.add(lang);
+        if (lang === getLang()) {
+          button.classList.add('active');
+        } else {
+          button.classList.remove('active');
+        }
       }
     });
 
-    if (!langs.has(lang) && buttons.length > 0) {
-      buttons[0].classList.add("active");
+    if (lang) {
+      if (!langs.has(lang) && buttons.length > 0) {
+        buttons[0].classList.add('active');
+      }
     }
   });
 }

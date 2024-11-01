@@ -4,7 +4,7 @@
 *,
 *::before,
 *::after {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
@@ -79,7 +79,7 @@ p {
   margin: calc(var(--mm-spacing) / 2) 0;
 }
 
-a {
+a { /* stylelint-disable-line no-descending-specificity */
   color: var(--mm-color-display-text);
   text-decoration: none;
 
