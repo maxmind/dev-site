@@ -1079,7 +1079,7 @@ This object is only included with minFraud Factors. [Learn more about the differ
   {{</minfraud-schema-row>}}
 
   {{< minfraud-schema-row key="billing_address" type="response" valueType="decimal" valueTypeNote="min: 0.01, max: 99" factors="true" >}}
-  The risk associated with the billing address. If present, this is a value in the range 0.01 to 99.
+  **This field has been deprecated.** The risk associated with the billing address. If present, this is a value in the range 0.01 to 99.
 
   [Learn how to use the billing address risk score for risk analysis on our Knowledge Base.](https://support.maxmind.com/hc/en-us/articles/4410973621019-Billing-and-Shipping-Risk-Scores#h%5F01FN6R69DEYJREHS1XEGGMZP1Z)
   {{</minfraud-schema-row>}}
