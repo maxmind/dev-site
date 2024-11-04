@@ -1186,9 +1186,12 @@ This object is only included with minFraud Factors. [Learn more about the differ
   {{</minfraud-schema-row>}}
 
   {{< minfraud-schema-row key="time_of_day" type="response" valueType="decimal" valueTypeNote="min: 0.01, max: 99" factors="true" >}}
-  **This field has been deprecated.** The risk associated with the local time of day of the transaction in the IP address location. If present, this is a value in the range 0.01 to 99.
+  **This field has been deprecated.**
+  
+  The risk associated with the local time of day of the transaction in the IP 
+  address location. If present, this is a value in the range 0.01 to 99.
 
-  [Learn how to use the time of day risk score for risk analysis on our Knowledge Base.](https://support.maxmind.com/hc/en-us/articles/4410973728667-Order-Detail-Risk-Scores#h%5F01FN6REK9CWDR9V8NQ4WQPTGAD)
+  [Learn how to use the time of day risk score for risk analysis on our Knowledge Base.](https://support.maxmind.com/hc/en-us/articles/4410973728667-Order-Detail-Risk-Scores#h%5F01FN6REK9CWDR9V8NQ4WQPTGAD) 
   {{</minfraud-schema-row>}}
 
 {{</ schema-table >}}
