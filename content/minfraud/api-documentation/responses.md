@@ -1041,7 +1041,7 @@ will not be present in the response.
 {{< anchor-target schema--response--subscores >}}
 
 {{< alert warning >}}
-Risk factor scores will be deprecated on November 4, 2024. Please 
+Risk factor scores are deprecated as of November 4, 2024. Please 
 [review risk score reasons](/minfraud/api-documentation/responses/#risk-score-reasons) 
 for insight into why a risk score is high or low. 
 
@@ -1075,53 +1075,53 @@ This object is only included with minFraud Factors. [Learn more about the differ
 {{< schema-table key="subscores" >}}
 
   {{< minfraud-schema-row key="avs_result" type="response" valueType="decimal" valueTypeNote="min: 0.01, max: 99" factors="true" >}}
-  The risk associated with the AVS result. If present, this is a value in the range 0.01 to 99.
+  **This field has been deprecated.** The risk associated with the AVS result. If present, this is a value in the range 0.01 to 99.
   {{</minfraud-schema-row>}}
 
   {{< minfraud-schema-row key="billing_address" type="response" valueType="decimal" valueTypeNote="min: 0.01, max: 99" factors="true" >}}
-  The risk associated with the billing address. If present, this is a value in the range 0.01 to 99.
+  **This field has been deprecated.** The risk associated with the billing address. If present, this is a value in the range 0.01 to 99.
 
   [Learn how to use the billing address risk score for risk analysis on our Knowledge Base.](https://support.maxmind.com/hc/en-us/articles/4410973621019-Billing-and-Shipping-Risk-Scores#h%5F01FN6R69DEYJREHS1XEGGMZP1Z)
   {{</minfraud-schema-row>}}
 
   {{< minfraud-schema-row key="billing_address_distance_to_ip_location" type="response" valueType="decimal" valueTypeNote="min: 0.01, max: 99" factors="true" >}}
-  The risk associated with the distance between the billing address and the location for the given IP address. If present, this is a value in the range 0.01 to 99.
+  **This field has been deprecated.** The risk associated with the distance between the billing address and the location for the given IP address. If present, this is a value in the range 0.01 to 99.
 
   [Learn how to use the billing address distance risk score for risk analysis on our Knowledge Base.](https://support.maxmind.com/hc/en-us/articles/4410973621019-Billing-and-Shipping-Risk-Scores#h%5F01FN6R6NKC6EV11YECN55R32FB)
   {{</minfraud-schema-row>}}
 
   {{< minfraud-schema-row key="browser" type="response" valueType="decimal" valueTypeNote="min: 0.01, max: 99" factors="true" >}}
-  The risk associated with the browser attributes such as the `User-Agent` and`Accept-Language`. If present, this is a value in the range 0.01 to 99.
+  **This field has been deprecated.** The risk associated with the browser attributes such as the `User-Agent` and`Accept-Language`. If present, this is a value in the range 0.01 to 99.
 
   [Learn how to use the browser risk score for risk analysis on our Knowledge Base.](https://support.maxmind.com/hc/en-us/articles/4408382525851-Device-Risk-Scores#h%5F01FN6HFD5KWFEWANTE1WYS1HBY)
   {{</minfraud-schema-row>}}
 
   {{< minfraud-schema-row key="chargeback" type="response" valueType="decimal" valueTypeNote="min: 0.01, max: 99" factors="true" >}}
-  Risk of IP address based on the number of chargebacks and high risk activity sighted on your account and shop ID from similar IP networks. This is only available to users [sending chargeback data to MaxMind](/minfraud/report-a-transaction). If present, this is a value in the range 0.01 to 99.
+  **This field has been deprecated.** Risk of IP address based on the number of chargebacks and high risk activity sighted on your account and shop ID from similar IP networks. This is only available to users [sending chargeback data to MaxMind](/minfraud/report-a-transaction). If present, this is a value in the range 0.01 to 99.
 
   [Learn how to use the chargeback risk score for risk analysis on our Knowledge Base.](https://support.maxmind.com/hc/en-us/articles/4408382525851-Device-Risk-Scores#h%5F01FN6HEPAK6034Z03NJCQ4F8EK)
   {{</minfraud-schema-row>}}
 
   {{< minfraud-schema-row key="country" type="response" valueType="decimal" valueTypeNote="min: 0.01, max: 99" factors="true" >}}
-  The risk associated with the country the transaction originated from. If present, this is a value in the range 0.01 to 99.
+  **This field has been deprecated.** The risk associated with the country the transaction originated from. If present, this is a value in the range 0.01 to 99.
 
   [Learn how to use the country risk score for risk analysis on our Knowledge Base.](https://support.maxmind.com/hc/en-us/articles/4408382525851#h%5F01G1EBAN6V6E3EFHC4SC3J9K9M)
   {{</minfraud-schema-row>}}
 
   {{< minfraud-schema-row key="country_mismatch" type="response" valueType="decimal" valueTypeNote="min: 0.01, max: 99" factors="true" >}}
-  The risk associated with the combination of IP country, card issuer country, billing country, and shipping country. If present, this is a value in the range 0.01 to 99.
+  **This field has been deprecated.** The risk associated with the combination of IP country, card issuer country, billing country, and shipping country. If present, this is a value in the range 0.01 to 99.
 
   [Learn how to use the country mismatch risk score for risk analysis on our Knowledge Base.](https://support.maxmind.com/hc/en-us/articles/4410973728667-Order-Detail-Risk-Scores#h%5F01FN6RDP31Y1ST71YB7W58RFRS)
   {{</minfraud-schema-row>}}
 
   {{< minfraud-schema-row key="cvv_result" type="response" valueType="decimal" valueTypeNote="min: 0.01, max: 99" factors="true" >}}
-  The risk associated with the CVV result. If present, this is a value in the range 0.01 to 99.
+  **This field has been deprecated.** The risk associated with the CVV result. If present, this is a value in the range 0.01 to 99.
 
   [Learn how to use the CVV result risk score for risk analysis on our Knowledge Base.](https://support.maxmind.com/hc/en-us/articles/4410743622043-Credit-Card-Risk-Scores#h%5F01FN6RANC2E9Z6179XGNSNDWYJ)
   {{</minfraud-schema-row>}}
 
   {{< minfraud-schema-row key="device" type="response" valueType="decimal" valueTypeNote="min: 0.01, max: 99" factors="true" >}}
-  The risk associated with the device. If present, this is a value in the range 0.01 to 99.
+  **This field has been deprecated.** The risk associated with the device. If present, this is a value in the range 0.01 to 99.
 
   You must have device tracking enabled on your site to receive this risk factor score. [Learn more about device tracking on our Knowledge Base.](https://support.maxmind.com/hc/en-us/articles/4407973175451)
 
@@ -1129,19 +1129,19 @@ This object is only included with minFraud Factors. [Learn more about the differ
   {{</minfraud-schema-row>}}
 
   {{< minfraud-schema-row key="email_address" type="response" valueType="decimal" valueTypeNote="min: 0.01, max: 99" factors="true" >}}
-  The risk associated with the particular email address. If present, this is a value in the range 0.01 to 99.
+  **This field has been deprecated.** The risk associated with the particular email address. If present, this is a value in the range 0.01 to 99.
 
   [Learn how to use the email risk score for risk analysis on our Knowledge Base.](https://support.maxmind.com/hc/en-us/articles/4410757081243-Email-Risk-Scores#h%5F01FN6RDP31Y1ST71YB7W58RFRS)
   {{</minfraud-schema-row>}}
 
   {{< minfraud-schema-row key="email_domain" type="response" valueType="decimal" valueTypeNote="min: 0.01, max: 99" factors="true" >}}
-  The general risk associated with the email domain. If present, this is a value in the range 0.01 to 99.
+  **This field has been deprecated.** The general risk associated with the email domain. If present, this is a value in the range 0.01 to 99.
 
   [Learn how to use the email domain risk score for risk analysis on our Knowledge Base.](https://support.maxmind.com/hc/en-us/articles/4410757081243-Email-Risk-Scores#h%5F01FN6RE4TQ10DXYDG6C1QF6X9Y)
   {{</minfraud-schema-row>}}
 
   {{< minfraud-schema-row key="email_local_part" type="response" valueType="decimal" valueTypeNote="min: 0.01, max: 99" factors="true" >}}
-  The risk associated with the email address local part (the part of the email address before the @ symbol). If present, this is a value in the range 0.01 to 99.
+  **This field has been deprecated.** The risk associated with the email address local part (the part of the email address before the @ symbol). If present, this is a value in the range 0.01 to 99.
 
   [Learn how to use the email local part risk score for risk analysis on our Knowledge Base.](https://support.maxmind.com/hc/en-us/articles/4410757081243-Email-Risk-Scores#h%5F01FN6REK9CWDR9V8NQ4WQPTGAD)
   {{</minfraud-schema-row>}}
@@ -1155,37 +1155,37 @@ This object is only included with minFraud Factors. [Learn more about the differ
   {{</minfraud-schema-row>}}
 
   {{< minfraud-schema-row key="issuer_id_number" type="response" valueType="decimal" valueTypeNote="min: 0.01, max: 99" factors="true" >}}
-  The risk associated with the particular issuer ID number (IIN) given the billing location and the history of usage of the IIN on your account and shop ID. If present, this is a value in the range 0.01 to 99.
+  **This field has been deprecated.** The risk associated with the particular issuer ID number (IIN) given the billing location and the history of usage of the IIN on your account and shop ID. If present, this is a value in the range 0.01 to 99.
 
   [Learn how to use the IIN risk score for risk analysis on our Knowledge Base.](https://support.maxmind.com/hc/en-us/articles/4410743622043-Credit-Card-Risk-Scores#h%5F01FN6RA2R69ZTGTS87VKVQ7F7G)
   {{</minfraud-schema-row>}}
 
   {{< minfraud-schema-row key="order_amount" type="response" valueType="decimal" valueTypeNote="min: 0.01, max: 99" factors="true" >}}
-  The risk associated with the particular order amount for your account and shop ID. If present, this is a value in the range 0.01 to 99.
+  **This field has been deprecated.** The risk associated with the particular order amount for your account and shop ID. If present, this is a value in the range 0.01 to 99.
 
   [Learn how to use the order amount risk score for risk analysis on our Knowledge Base.](https://support.maxmind.com/hc/en-us/articles/4410973728667-Order-Detail-Risk-Scores#h%5F01FN6RE4TQ10DXYDG6C1QF6X9Y)
   {{</minfraud-schema-row>}}
 
   {{< minfraud-schema-row key="phone_number" type="response" valueType="decimal" valueTypeNote="min: 0.01, max: 99" factors="true" >}}
-  The risk associated with the particular phone number. If present, this is a value in the range 0.01 to 99.
+  **This field has been deprecated.** The risk associated with the particular phone number. If present, this is a value in the range 0.01 to 99.
 
   [Learn how to use the phone number risk score for risk analysis on our Knowledge Base.](https://support.maxmind.com/hc/en-us/articles/4410973621019-Billing-and-Shipping-Risk-Scores#h%5F01FN6R7RDDBA09RJSRKDKSC1NJ)
   {{</minfraud-schema-row>}}
 
   {{< minfraud-schema-row key="shipping_address" type="response" valueType="decimal" valueTypeNote="min: 0.01, max: 99" factors="true" >}}
-  The risk associated with the shipping address. If present, this is a value in the range 0.01 to 99.
+  **This field has been deprecated.** The risk associated with the shipping address. If present, this is a value in the range 0.01 to 99.
 
   [Learn how to use the shipping address risk score for risk analysis on our Knowledge Base.](https://support.maxmind.com/hc/en-us/articles/4410973621019-Billing-and-Shipping-Risk-Scores#h%5F01FN6R70AZHQGPME189XTH2SZW)
   {{</minfraud-schema-row>}}
 
   {{< minfraud-schema-row key="shipping_address_distance_to_ip_location" type="response" valueType="decimal" valueTypeNote="min: 0.01, max: 99" factors="true" >}}
-  The risk associated with the distance between the shipping address and the location for the given IP address. If present, this is a value in the range 0.01 to 99.
+  **This field has been deprecated.** The risk associated with the distance between the shipping address and the location for the given IP address. If present, this is a value in the range 0.01 to 99.
 
   [Learn how to use the shipping address distance risk score for risk analysis on our Knowledge Base.](https://support.maxmind.com/hc/en-us/articles/4410973621019-Billing-and-Shipping-Risk-Scores#h%5F01FN6R7BQJAVT4KZZTK9Y3HBG6)
   {{</minfraud-schema-row>}}
 
   {{< minfraud-schema-row key="time_of_day" type="response" valueType="decimal" valueTypeNote="min: 0.01, max: 99" factors="true" >}}
-  The risk associated with the local time of day of the transaction in the IP address location. If present, this is a value in the range 0.01 to 99.
+  **This field has been deprecated.** The risk associated with the local time of day of the transaction in the IP address location. If present, this is a value in the range 0.01 to 99.
 
   [Learn how to use the time of day risk score for risk analysis on our Knowledge Base.](https://support.maxmind.com/hc/en-us/articles/4410973728667-Order-Detail-Risk-Scores#h%5F01FN6REK9CWDR9V8NQ4WQPTGAD)
   {{</minfraud-schema-row>}}
