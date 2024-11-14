@@ -1,0 +1,289 @@
+diff_in,old_geoname_id,new_geoname_id,old_city_name,new_city_name,old_country_name,new_country_name,old_country_code,new_country_code,old_subdivision_codes,new_subdivision_codes
+city_name,8441148,8441148,Muquém de São Francisco,Muquém do São Francisco,Brazil,Brazil,BR,BR,BA,BA
+city_name,3393253,3393253,Palmeira,Palmeira do Piauí,Brazil,Brazil,BR,BR,PI,PI
+city_name,3448220,3448220,São Sebastião do Paraju,Alto Paraju,Brazil,Brazil,BR,BR,ES,ES
+city_name,3023214,3023214,Coulounieix,Coulounieix-Chamiers,France,France,FR,FR,"NAQ, 24","NAQ, 24"
+city_name,294497,294497,Kefar Warburg,Kfar Warburg,Israel,Israel,IL,IL,D,D
+city_name,295729,295729,Aẖihud,Ahihud,Israel,Israel,IL,IL,Z,Z
+city_name,293620,293620,Sde Neẖemya,Sde Nehemia,Israel,Israel,IL,IL,Z,Z
+city_name,294546,294546,Kefar Glickson,Kfar Glickson,Israel,Israel,IL,IL,HA,HA
+city_name,294534,294534,Kefar Hayyim,KfarHayyim,Israel,Israel,IL,IL,M,M
+city_name,1736292,1736292,Kuala Perlis,Perlis Port,Malaysia,Malaysia,MY,MY,9,9
+city_name,11054399,11054399,Bukit Bintang,Starhill,Malaysia,Malaysia,MY,MY,14,14
+city_name,1734464,1734464,Kampung Jeli,Jeli,Malaysia,Malaysia,MY,MY,3,3
+city_name,1713857,1713857,Saravia,Enrique B. Magalona,Philippines,Philippines,PH,PH,"06, NEC","06, NEC"
+city_name,8201275,8201275,Hawr al `Anz,Hawr al 'Anz,United Arab Emirates,United Arab Emirates,AE,AE,DU,DU
+city_name,4889546,4889546,De Witt,DeWitt,United States,United States,US,US,IL,IL
+geoname_id,2771622,2771621,Micheldorf,Micheldorf,Austria,Austria,AT,AT,2,2
+geoname_id,6318641,3398039,Sebastião Leal,Sebastião Leal,Brazil,Brazil,BR,BR,PI,PI
+geoname_id,6317239,3398535,Guaribas,Guaribas,Brazil,Brazil,BR,BR,PI,PI
+geoname_id,6316361,3452323,Alto Jequitibá,Alto Jequitibá,Brazil,Brazil,BR,BR,MG,MG
+geoname_id,6319998,8437588,São Francisco de Assis do Piauí,São Francisco de Assis do Piauí,Brazil,Brazil,BR,BR,PI,PI
+geoname_id,6317642,3387485,Moreilândia,Moreilândia,Brazil,Brazil,BR,BR,PE,PE
+geoname_id,6318055,3459261,Presidente Dutra,Presidente Dutra,Brazil,Brazil,BR,BR,BA,BA
+geoname_id,7615723,3450613,Saltinho,Saltinho,Brazil,Brazil,BR,BR,SP,SP
+geoname_id,6316963,3468719,Cristópolis,Cristópolis,Brazil,Brazil,BR,BR,BA,BA
+geoname_id,6318112,13111728,Reserva do Cabaçal,Reserva do Cabaçal,Brazil,Brazil,BR,BR,MT,MT
+geoname_id,6324219,6317755,Nova Mutum,Nova Mutum,Brazil,Brazil,BR,BR,MT,MT
+geoname_id,6316318,3473009,Água Doce do Norte,Água Doce do Norte,Brazil,Brazil,BR,BR,ES,ES
+geoname_id,6316652,3468927,Brejolândia,Brejolândia,Brazil,Brazil,BR,BR,BA,BA
+geoname_id,6323793,6316343,Alta Floresta,Alta Floresta,Brazil,Brazil,BR,BR,MT,MT
+geoname_id,3452380,3452379,Pratápolis,Pratápolis,Brazil,Brazil,BR,BR,MG,MG
+geoname_id,6317806,3446027,Novo Triunfo,Novo Triunfo,Brazil,Brazil,BR,BR,BA,BA
+geoname_id,6317925,3392369,Penaforte,Penaforte,Brazil,Brazil,BR,BR,CE,CE
+geoname_id,6318761,3460692,Teofilândia,Teofilândia,Brazil,Brazil,BR,BR,BA,BA
+geoname_id,6316505,3405428,Barra de Santana,Barra de Santana,Brazil,Brazil,BR,BR,PB,PB
+geoname_id,6316979,3401235,Curral Novo do Piauí,Curral Novo do Piauí,Brazil,Brazil,BR,BR,PI,PI
+geoname_id,3445650,3445651,Utinga,Utinga,Brazil,Brazil,BR,BR,BA,BA
+geoname_id,6318594,3448305,São Roque do Canaã,São Roque do Canaã,Brazil,Brazil,BR,BR,ES,ES
+geoname_id,3390293,3390289,Rio Grande do Piauí,Rio Grande do Piauí,Brazil,Brazil,BR,BR,PI,PI
+geoname_id,6317848,3393316,Pajeú do Piauí,Pajeú do Piauí,Brazil,Brazil,BR,BR,PI,PI
+geoname_id,3394745,12958483,Mocajuba,Mocajuba,Brazil,Brazil,BR,BR,PA,PA
+geoname_id,6323990,3461151,Ipameri,Ipameri,Brazil,Brazil,BR,BR,GO,GO
+geoname_id,13032817,3451833,Rancho Queimado,Rancho Queimado,Brazil,Brazil,BR,BR,SC,SC
+geoname_id,6318874,3445344,Venda Nova do Imigrante,Venda Nova do Imigrante,Brazil,Brazil,BR,BR,ES,ES
+geoname_id,3394661,6319427,Moju,Moju,Brazil,Brazil,BR,BR,PA,PA
+geoname_id,6316354,3467322,Alto Caparaó,Alto Caparaó,Brazil,Brazil,BR,BR,MG,MG
+geoname_id,3405856,3405857,Belém,Belém,Brazil,Brazil,BR,BR,AL,AL
+geoname_id,6316466,3457953,Aurora do Tocantins,Aurora do Tocantins,Brazil,Brazil,BR,BR,TO,TO
+geoname_id,6319997,3388937,São Braz do Piauí,São Braz do Piauí,Brazil,Brazil,BR,BR,PI,PI
+geoname_id,6316521,3395003,Barreiras do Piauí,Barreiras do Piauí,Brazil,Brazil,BR,BR,PI,PI
+geoname_id,3446194,11962372,Tremembé,Tremembé,Brazil,Brazil,BR,BR,SP,SP
+geoname_id,6317349,3397734,Jacobina do Piauí,Jacobina do Piauí,Brazil,Brazil,BR,BR,PI,PI
+geoname_id,6317428,3396828,Lagoa de Dentro,Lagoa de Dentro,Brazil,Brazil,BR,BR,PB,PB
+geoname_id,3448438,13063096,São Paulo,São Paulo,Brazil,Brazil,BR,BR,SC,SC
+geoname_id,6317896,3392885,Patos do Piauí,Patos do Piauí,Brazil,Brazil,BR,BR,PI,PI
+geoname_id,6318204,13064736,Saltinho,Saltinho,Brazil,Brazil,BR,BR,SC,SC
+geoname_id,6319933,8437585,Lagoa do Barro do Piauí,Lagoa do Barro do Piauí,Brazil,Brazil,BR,BR,PI,PI
+geoname_id,3456277,6324162,Nobres,Nobres,Brazil,Brazil,BR,BR,MT,MT
+geoname_id,3667158,3667157,Tierralta,Tierralta,Colombia,Colombia,CO,CO,COR,COR
+geoname_id,2610912,2610909,Ulstrup,Ulstrup,Denmark,Denmark,DK,DK,85,85
+geoname_id,2988114,2988115,Penguily,Penguily,France,France,FR,FR,"BRE, 22","BRE, 22"
+geoname_id,2933063,2933062,Eggersdorf,Eggersdorf,Germany,Germany,DE,DE,BB,BB
+geoname_id,2866664,2866665,Negenborn,Negenborn,Germany,Germany,DE,DE,NI,NI
+geoname_id,2927456,13118109,Feldberg,Feldberg,Germany,Germany,DE,DE,BW,BW
+geoname_id,2914498,2914497,Grüna,Grüna,Germany,Germany,DE,DE,SN,SN
+geoname_id,2837100,2837101,Schöna,Schöna,Germany,Germany,DE,DE,SN,SN
+geoname_id,6605829,1645524,Depok,Depok,Indonesia,Indonesia,ID,ID,JB,JB
+geoname_id,6827913,1626272,Sukoharjo,Sukoharjo,Indonesia,Indonesia,ID,ID,JT,JT
+geoname_id,1735339,1735297,Mukah,Mukah,Malaysia,Malaysia,MY,MY,13,13
+geoname_id,9407628,1733885,Tenom,Tenom,Malaysia,Malaysia,MY,MY,12,12
+geoname_id,1736807,1736929,Dalat,Dalat,Malaysia,Malaysia,MY,MY,13,13
+geoname_id,3522526,3522525,Nuevo Progreso,Nuevo Progreso,Mexico,Mexico,MX,MX,TAM,TAM
+geoname_id,3822977,8583283,Othón P. Blanco,Othón P. Blanco,Mexico,Mexico,MX,MX,ROO,ROO
+geoname_id,1282634,1282635,Tulsipur,Tulsipur,Nepal,Nepal,NP,NP,P5,P5
+geoname_id,3926651,3926650,Uchumayo,Uchumayo,Peru,Peru,PE,PE,ARE,ARE
+geoname_id,1689251,1689249,San Juan,San Juan,Philippines,Philippines,PH,PH,"01, LUN","01, LUN"
+geoname_id,2019893,2019894,Mogoytuy,Mogoytuy,Russia,Russia,RU,RU,ZAB,ZAB
+geoname_id,3059357,3059356,Kostolné Kračany,Kostolné Kračany,Slovakia,Slovakia,SK,SK,TA,TA
+geoname_id,11428151,983038,Letaba,Letaba,South Africa,South Africa,ZA,ZA,LP,LP
+geoname_id,2516932,6544442,Guadiaro,Guadiaro,Spain,Spain,ES,ES,"AN, CA","AN, CA"
+geoname_id,1665148,12908892,New Taipei City,New Taipei City,Taiwan,Taiwan,TW,TW,NWT,NWT
+geoname_id,13060687,8200824,Mirdif,Mirdif,United Arab Emirates,United Arab Emirates,AE,AE,DU,DU
+geoname_id,2642773,10377104,Melmerby,Melmerby,United Kingdom,United Kingdom,GB,GB,"ENG, NYK","ENG, NYK"
+geoname_id,4594963,4594964,Sandy Springs,Sandy Springs,United States,United States,US,US,SC,SC
+geoname_id,5203354,5203361,Newtown,Newtown,United States,United States,US,US,PA,PA
+geoname_id,5189584,5189583,Finleyville,Finleyville,United States,United States,US,US,PA,PA
+geoname_id,4235683,4887284,Chatham,Chatham,United States,United States,US,US,IL,IL
+geoname_id,4164343,4164346,Midway,Midway,United States,United States,US,US,FL,FL
+geoname_id,5201996,4559761,Morrisville,Morrisville,United States,United States,US,US,PA,PA
+geoname_id,4560549,5207247,Prospect Park,Prospect Park,United States,United States,US,US,PA,PA
+geoname_id,5197868,5197866,Liberty,Liberty,United States,United States,US,US,PA,PA
+geoname_id,4577653,4577654,Elgin,Elgin,United States,United States,US,US,SC,SC
+geoname_id,5201027,5201031,Middletown,Middletown,United States,United States,US,US,PA,PA
+geoname_id,4257913,4920681,Georgetown,Georgetown,United States,United States,US,US,IN,IN
+geoname_id,5119401,5119405,Greenville,Greenville,United States,United States,US,US,NY,NY
+geoname_id,4465705,4465711,Fairview,Fairview,United States,United States,US,US,NC,NC
+geoname_id,5145733,4505240,Amsterdam,Amsterdam,United States,United States,US,US,OH,OH
+geoname_id,4527247,4527248,Vinton,Vinton,United States,United States,US,US,OH,OH
+geoname_id,5189019,5189018,Export,Export,United States,United States,US,US,PA,PA
+geoname_id,4185043,4185042,Buckhead,Buckhead,United States,United States,US,US,GA,GA
+geoname_id,4646637,4646639,Oakland,Oakland,United States,United States,US,US,TN,TN
+geoname_id,4265230,4265229,Springville,Springville,United States,United States,US,US,IN,IN
+geoname_id,5165069,5165067,Northwood,Northwood,United States,United States,US,US,OH,OH
+geoname_id,4466444,4466446,Flat Rock,Flat Rock,United States,United States,US,US,NC,NC
+geoname_id,5209621,5209619,Saint Clair,Saint Clair,United States,United States,US,US,PA,PA
+geoname_id,4678639,12523573,Campbellton,Campbellton,United States,United States,US,US,TX,TX
+geoname_id,4449144,4449145,Union,Union,United States,United States,US,US,MS,MS
+geoname_id,5201458,5201457,Millville,Millville,United States,United States,US,US,PA,PA
+geoname_id,4154356,7216947,Elkton,Elkton,United States,United States,US,US,FL,FL
+geoname_id,4187055,4187057,Centerville,Centerville,United States,United States,US,US,GA,GA
+geoname_id,4450150,4450149,Walnut,Walnut,United States,United States,US,US,MS,MS
+geoname_id,5177337,4528736,Woodville,Woodville,United States,United States,US,US,OH,OH
+geoname_id,4417666,4417642,Belmont,Belmont,United States,United States,US,US,MS,MS
+geoname_id,5163346,5163347,Monroeville,Monroeville,United States,United States,US,US,OH,OH
+geoname_id,4146537,4146536,Baker,Baker,United States,United States,US,US,FL,FL
+geoname_id,5098247,5098246,Franklin Park,Franklin Park,United States,United States,US,US,NJ,NJ
+geoname_id,5181624,4556761,Bridgeport,Bridgeport,United States,United States,US,US,PA,PA
+geoname_id,4773740,4773739,Montpelier,Montpelier,United States,United States,US,US,VA,VA
+geoname_id,5199634,5199633,Manchester,Manchester,United States,United States,US,US,PA,PA
+geoname_id,5195606,5195605,Jonestown,Jonestown,United States,United States,US,US,PA,PA
+geoname_id,5009587,5009586,Shelby,Shelby,United States,United States,US,US,MI,MI
+geoname_id,5220401,5220400,Youngsville,Youngsville,United States,United States,US,US,PA,PA
+geoname_id,5489915,5489914,San Ysidro,San Ysidro,United States,United States,US,US,NM,NM
+geoname_id,5145257,6332420,Yorkville,Yorkville,United States,United States,US,US,NY,NY
+geoname_id,5200123,5200122,Matamoras,Matamoras,United States,United States,US,US,PA,PA
+geoname_id,5102097,4503331,Oak Ridge,Oak Ridge,United States,United States,US,US,NJ,NJ
+geoname_id,4763701,4763702,Henry,Henry,United States,United States,US,US,VA,VA
+geoname_id,5205354,4560275,Penfield,Penfield,United States,United States,US,US,PA,PA
+geoname_id,5013947,5013946,Wallace,Wallace,United States,United States,US,US,MI,MI
+geoname_id,5168562,4522805,Rome,Rome,United States,United States,US,US,OH,OH
+geoname_id,4762025,4046728,Green Bay,Green Bay,United States,United States,US,US,VA,VA
+geoname_id,4527716,5175839,Waterford,Waterford,United States,United States,US,US,OH,OH
+geoname_id,4920380,4920375,Flora,Flora,United States,United States,US,US,IN,IN
+geoname_id,4373409,4373410,White Hall,White Hall,United States,United States,US,US,MD,MD
+geoname_id,5171968,4524642,Shiloh,Shiloh,United States,United States,US,US,OH,OH
+geoname_id,4560776,5208805,Rockwood,Rockwood,United States,United States,US,US,PA,PA
+geoname_id,5184748,5184754,Coaldale,Coaldale,United States,United States,US,US,PA,PA
+geoname_id,5145240,5145241,York,York,United States,United States,US,US,NY,NY
+geoname_id,4505667,5146368,Bainbridge,Bainbridge,United States,United States,US,US,OH,OH
+geoname_id,5175935,5175934,Waynesburg,Waynesburg,United States,United States,US,US,OH,OH
+geoname_id,5197023,5197022,Lakeville,Lakeville,United States,United States,US,US,PA,PA
+geoname_id,4517264,5161492,Lynchburg,Lynchburg,United States,United States,US,US,OH,OH
+geoname_id,5189124,5189126,Fairview,Fairview,United States,United States,US,US,PA,PA
+geoname_id,5219081,5219087,Wheatland,Wheatland,United States,United States,US,US,PA,PA
+geoname_id,4512940,5156019,Goshen,Goshen,United States,United States,US,US,OH,OH
+geoname_id,4371620,4371621,Trappe,Trappe,United States,United States,US,US,MD,MD
+geoname_id,4828635,4372762,Warwick,Warwick,United States,United States,US,US,MD,MD
+geoname_id,4346909,11979910,Abell,Abell,United States,United States,US,US,MD,MD
+geoname_id,5245967,5245966,Birchwood,Birchwood,United States,United States,US,US,WI,WI
+geoname_id,4077867,4077865,Mount Olive,Mount Olive,United States,United States,US,US,AL,AL
+geoname_id,5105867,4504603,Vernon,Vernon,United States,United States,US,US,NJ,NJ
+geoname_id,4495749,4495762,Tryon,Tryon,United States,United States,US,US,NC,NC
+geoname_id,4830120,4830116,Anderson,Anderson,United States,United States,US,US,AL,AL
+geoname_id,4825447,4825446,Union,Union,United States,United States,US,US,WV,WV
+geoname_id,5141934,5141935,Unionville,Unionville,United States,United States,US,US,NY,NY
+geoname_id,4995403,7259303,Harrison,Harrison,United States,United States,US,US,MI,MI
+geoname_id,5008863,5008861,Sand Lake,Sand Lake,United States,United States,US,US,MI,MI
+geoname_id,5183680,5183683,Centerville,Centerville,United States,United States,US,US,PA,PA
+geoname_id,4576925,4576959,Drayton,Drayton,United States,United States,US,US,SC,SC
+geoname_id,4481581,4481569,Nebo,Nebo,United States,United States,US,US,NC,NC
+geoname_id,5179605,5179603,Beavertown,Beavertown,United States,United States,US,US,PA,PA
+geoname_id,4225687,4225688,Talmo,Talmo,United States,United States,US,US,GA,GA
+geoname_id,4595491,4595490,Sharon,Sharon,United States,United States,US,US,SC,SC
+geoname_id,4998705,4998703,Lakeview,Lakeview,United States,United States,US,US,MI,MI
+geoname_id,4746456,4746457,Belle Haven,Belle Haven,United States,United States,US,US,VA,VA
+geoname_id,4258307,4258308,Greenville,Greenville,United States,United States,US,US,IN,IN
+geoname_id,5053875,4374557,Albany,Albany,United States,United States,US,US,MO,MO
+geoname_id,5197457,5197456,Lawrenceville,Lawrenceville,United States,United States,US,US,PA,PA
+geoname_id,4498635,4498627,White Oak,White Oak,United States,United States,US,US,NC,NC
+geoname_id,4406675,4406677,Russellville,Russellville,United States,United States,US,US,MO,MO
+geoname_id,5121548,5121549,Huguenot,Huguenot,United States,United States,US,US,NY,NY
+geoname_id,4833348,5155590,Genoa,Genoa,United States,United States,US,US,OH,OH
+geoname_id,5281234,5134575,Roxbury,Roxbury,United States,United States,US,US,NY,NY
+geoname_id,5484613,5550533,Placitas,Placitas,United States,United States,US,US,NM,NM
+geoname_id,4869614,4869613,Oakland,Oakland,United States,United States,US,US,IA,IA
+geoname_id,4706431,5525105,Lindsay,Lindsay,United States,United States,US,US,TX,TX
+geoname_id,4923570,4261368,Milford,Milford,United States,United States,US,US,IN,IN
+geoname_id,5528440,5528439,Plains,Plains,United States,United States,US,US,TX,TX
+geoname_id,4468215,4468214,Gold Hill,Gold Hill,United States,United States,US,US,NC,NC
+geoname_id,4560062,5203912,Nottingham,Nottingham,United States,United States,US,US,PA,PA
+geoname_id,4237680,4890710,Edgewood,Edgewood,United States,United States,US,US,IL,IL
+geoname_id,4261461,4261460,Milton,Milton,United States,United States,US,US,IN,IN
+geoname_id,4517471,5161693,Manchester,Manchester,United States,United States,US,US,OH,OH
+geoname_id,5367455,5367450,Llano,Llano,United States,United States,US,US,CA,CA
+geoname_id,4814702,4814699,Midway,Midway,United States,United States,US,US,WV,WV
+geoname_id,4808207,4808206,Harper,Harper,United States,United States,US,US,WV,WV
+geoname_id,4292022,4292020,Forest Hills,Forest Hills,United States,United States,US,US,KY,KY
+geoname_id,5149257,4507924,Carey,Carey,United States,United States,US,US,OH,OH
+geoname_id,5175562,4527504,Walhonding,Walhonding,United States,United States,US,US,OH,OH
+geoname_id,5190438,5190437,Fredericksburg,Fredericksburg,United States,United States,US,US,PA,PA
+geoname_id,4751312,4751318,Catawba,Catawba,United States,United States,US,US,VA,VA
+geoname_id,4388790,4388791,Greenfield,Greenfield,United States,United States,US,US,MO,MO
+geoname_id,4416602,4416604,Ashland,Ashland,United States,United States,US,US,MS,MS
+geoname_id,4927928,4266643,Waterloo,Waterloo,United States,United States,US,US,IN,IN
+geoname_id,4240130,4240129,Hamburg,Hamburg,United States,United States,US,US,IL,IL
+geoname_id,4260324,4922736,Lexington,Lexington,United States,United States,US,US,IN,IN
+geoname_id,4817778,4817780,Paw Paw,Paw Paw,United States,United States,US,US,WV,WV
+geoname_id,5166095,5166094,Paris,Paris,United States,United States,US,US,OH,OH
+geoname_id,4255063,4255062,Brownstown,Brownstown,United States,United States,US,US,IN,IN
+geoname_id,4829009,5201268,Mill Run,Mill Run,United States,United States,US,US,PA,PA
+geoname_id,5199677,5199683,Manor,Manor,United States,United States,US,US,PA,PA
+geoname_id,4556889,5182258,Buffalo Mills,Buffalo Mills,United States,United States,US,US,PA,PA
+geoname_id,4845277,4845278,Weatogue,Weatogue,United States,United States,US,US,CT,CT
+geoname_id,4758111,4758110,Fairfield,Fairfield,United States,United States,US,US,VA,VA
+geoname_id,4259636,4921995,Jamestown,Jamestown,United States,United States,US,US,IN,IN
+geoname_id,5186248,5186240,Daisytown,Daisytown,United States,United States,US,US,PA,PA
+geoname_id,4748440,4748439,Boston,Boston,United States,United States,US,US,VA,VA
+geoname_id,5194660,5194658,Hyde Park,Hyde Park,United States,United States,US,US,PA,PA
+geoname_id,4923638,4923639,Millersburg,Millersburg,United States,United States,US,US,IN,IN
+geoname_id,4831273,4831277,Banks,Banks,United States,United States,US,US,AL,AL
+geoname_id,4776015,4776014,Newport,Newport,United States,United States,US,US,VA,VA
+geoname_id,4919272,4919271,Converse,Converse,United States,United States,US,US,IN,IN
+geoname_id,5165312,4520163,Oakwood,Oakwood,United States,United States,US,US,OH,OH
+geoname_id,5177096,4528540,Windsor,Windsor,United States,United States,US,US,OH,OH
+geoname_id,4136692,4136693,Wilson,Wilson,United States,United States,US,US,AR,AR
+geoname_id,4465586,4465585,Evergreen,Evergreen,United States,United States,US,US,NC,NC
+geoname_id,5176304,5176303,West Liberty,West Liberty,United States,United States,US,US,OH,OH
+geoname_id,5832901,5832900,Mountain View,Mountain View,United States,United States,US,US,WY,WY
+geoname_id,4455171,4455172,Bethel,Bethel,United States,United States,US,US,NC,NC
+geoname_id,4337180,4337177,Pine Grove,Pine Grove,United States,United States,US,US,LA,LA
+geoname_id,4098389,4098387,Woodland,Woodland,United States,United States,US,US,AL,AL
+geoname_id,4923718,4923719,Monroe,Monroe,United States,United States,US,US,IN,IN
+geoname_id,5191006,5190988,Georgetown,Georgetown,United States,United States,US,US,PA,PA
+geoname_id,4793888,4793889,Willis,Willis,United States,United States,US,US,VA,VA
+geoname_id,4496209,4496208,Union Grove,Union Grove,United States,United States,US,US,NC,NC
+geoname_id,4285208,4285206,Boston,Boston,United States,United States,US,US,KY,KY
+geoname_id,4828366,4899249,Lakewood,Lakewood,United States,United States,US,US,IL,IL
+geoname_id,4129962,4129965,Salem,Salem,United States,United States,US,US,AR,AR
+geoname_id,5213502,5213501,Springville,Springville,United States,United States,US,US,PA,PA
+geoname_id,5152098,4510143,Dillonvale,Dillonvale,United States,United States,US,US,OH,OH
+geoname_id,4242896,4242897,Liberty,Liberty,United States,United States,US,US,IL,IL
+geoname_id,4898589,4242298,Kingston,Kingston,United States,United States,US,US,IL,IL
+geoname_id,4558843,5195299,Jefferson,Jefferson,United States,United States,US,US,PA,PA
+geoname_id,5203286,5203289,Newburg,Newburg,United States,United States,US,US,PA,PA
+geoname_id,4466972,4466971,Fountain,Fountain,United States,United States,US,US,NC,NC
+geoname_id,4258541,4258540,Hardinsburg,Hardinsburg,United States,United States,US,US,IN,IN
+geoname_id,4222433,4222435,Shiloh,Shiloh,United States,United States,US,US,GA,GA
+geoname_id,4682829,11951710,Como,Como,United States,United States,US,US,TX,TX
+geoname_id,5145962,4505414,Arlington,Arlington,United States,United States,US,US,OH,OH
+geoname_id,4920664,4257898,Geneva,Geneva,United States,United States,US,US,IN,IN
+geoname_id,4652307,4652308,Reagan,Reagan,United States,United States,US,US,TN,TN
+geoname_id,5793890,5793889,Ethel,Ethel,United States,United States,US,US,WA,WA
+geoname_id,4263856,4263848,Rockport,Rockport,United States,United States,US,US,IN,IN
+geoname_id,4680037,4680044,Center Point,Center Point,United States,United States,US,US,TX,TX
+geoname_id,4617839,4617838,Denmark,Denmark,United States,United States,US,US,TN,TN
+geoname_id,4314044,4314051,Worthington,Worthington,United States,United States,US,US,KY,KY
+geoname_id,4464037,4464036,Dover,Dover,United States,United States,US,US,NC,NC
+geoname_id,5197026,5197025,Lakewood,Lakewood,United States,United States,US,US,PA,PA
+geoname_id,4677991,4677986,Caddo,Caddo,United States,United States,US,US,TX,TX
+geoname_id,5194795,5194794,Indian Head,Indian Head,United States,United States,US,US,PA,PA
+geoname_id,5109702,5109703,Bolivar,Bolivar,United States,United States,US,US,NY,NY
+geoname_id,4921083,4921081,Hamilton,Hamilton,United States,United States,US,US,IN,IN
+geoname_id,4171821,4171820,San Mateo,San Mateo,United States,United States,US,US,FL,FL
+geoname_id,4641550,4641562,Midway,Midway,United States,United States,US,US,TN,TN
+geoname_id,4528434,5176905,Williamsport,Williamsport,United States,United States,US,US,OH,OH
+geoname_id,5048340,5048333,Spring Lake,Spring Lake,United States,United States,US,US,MN,MN
+geoname_id,5025381,5025374,Elbow Lake,Elbow Lake,United States,United States,US,US,MN,MN
+geoname_id,4612097,4612106,Cedar Grove,Cedar Grove,United States,United States,US,US,TN,TN
+geoname_id,4652701,4652700,Reliance,Reliance,United States,United States,US,US,TN,TN
+geoname_id,4825946,4825947,Victor,Victor,United States,United States,US,US,WV,WV
+geoname_id,5194892,5194914,Industry,Industry,United States,United States,US,US,PA,PA
+geoname_id,4921450,4258951,Hillsboro,Hillsboro,United States,United States,US,US,IN,IN
+geoname_id,5399556,5572247,Sugarloaf,Sugarloaf,United States,United States,US,US,CA,CA
+geoname_id,4751177,4751178,Cartersville,Cartersville,United States,United States,US,US,VA,VA
+geoname_id,4668781,4668778,Woodlawn,Woodlawn,United States,United States,US,US,TN,TN
+geoname_id,5177758,7315344,Aaronsburg,Aaronsburg,United States,United States,US,US,PA,PA
+geoname_id,5178252,4833434,Amity,Amity,United States,United States,US,US,PA,PA
+geoname_id,5209225,5209224,Roxbury,Roxbury,United States,United States,US,US,PA,PA
+geoname_id,4246587,4905245,Palmyra,Palmyra,United States,United States,US,US,IL,IL
+geoname_id,4221394,4221395,Sardis,Sardis,United States,United States,US,US,GA,GA
+geoname_id,4814375,4814376,Meadowbrook,Meadowbrook,United States,United States,US,US,WV,WV
+geoname_id,4924700,4262912,Pennville,Pennville,United States,United States,US,US,IN,IN
+geoname_id,4996691,4996690,Hubbard Lake,Hubbard Lake,United States,United States,US,US,MI,MI
+geoname_id,4918529,4255188,Bunker Hill,Bunker Hill,United States,United States,US,US,IN,IN
+geoname_id,4703519,5524609,Klondike,Klondike,United States,United States,US,US,TX,TX
+geoname_id,4132548,4132547,Strawberry,Strawberry,United States,United States,US,US,AR,AR
+geoname_id,4235646,4235645,Chapin,Chapin,United States,United States,US,US,IL,IL
+geoname_id,4807119,4807120,Glenwood,Glenwood,United States,United States,US,US,WV,WV
+geoname_id,5217039,4561909,Valley View,Valley View,United States,United States,US,US,PA,PA
+geoname_id,4926958,4265536,Sulphur Springs,Sulphur Springs,United States,United States,US,US,IN,IN
+geoname_id,4511149,4511148,Etna,Etna,United States,United States,US,US,OH,OH
+geoname_id,5163723,4519029,Mount Pleasant,Mount Pleasant,United States,United States,US,US,OH,OH
+geoname_id,4475386,4475385,Lawsonville,Lawsonville,United States,United States,US,US,NC,NC
+geoname_id,4485805,4485807,Pleasant Hill,Pleasant Hill,United States,United States,US,US,NC,NC
+geoname_id,4800044,4800045,Bretz,Bretz,United States,United States,US,US,WV,WV
+geoname_id,4154747,7216997,Fairfield,Fairfield,United States,United States,US,US,FL,FL
+geoname_id,5147523,5147524,Birmingham,Birmingham,United States,United States,US,US,OH,OH
+geoname_id,5203285,5203289,Newburg,Newburg,United States,United States,US,US,PA,PA
+geoname_id,5216728,5216726,Unionville,Unionville,United States,United States,US,US,PA,PA
