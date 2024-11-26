@@ -168,7 +168,9 @@ same type using MySQL's built-in `inet6_aton` function.
 select geoname_id, registered_country_geoname_id, represented_country_geoname_id,
        postal_code, latitude, longitude, accuracy_radius
 from geoip2_network
-where inet6_aton('214.0.0.0') between network_start and network_end
+where
+  length(inet6_aton('214.0.0.0')) = length(network_start)
+  and inet6_aton('214.0.0.0') between network_start and network_end
 limit 1;
 ```
 
@@ -193,7 +195,9 @@ so:
 select geoname_id, registered_country_geoname_id, represented_country_geoname_id,
        postal_code, latitude, longitude, accuracy_radius
 from geoip2_network
-where inet6_aton('214.0.0.0') between network_start and network_end
+where
+  length(inet6_aton('214.0.0.0')) = length(network_start)
+  and inet6_aton('214.0.0.0') between network_start and network_end
 order by network_end
 limit 1;
 ```
@@ -215,7 +219,9 @@ database:
 select geoname_id, registered_country_geoname_id, represented_country_geoname_id,
        postal_code, latitude, longitude, accuracy_radius
 from geoip2_network
-where inet6_aton('127.0.0.1') between network_start and network_end
+where
+  length(inet6_aton('127.0.0.1')) = length(network_start)
+  and inet6_aton('127.0.0.1') between network_start and network_end
 order by network_end
 limit 1;
 ```
@@ -235,7 +241,9 @@ select geoname_id, registered_country_geoname_id, represented_country_geoname_id
 from (
   select *
   from geoip2_network
-  where inet6_aton('214.0.0.0') >= network_start
+  where
+    length(inet6_aton('214.0.0.0')) = length(network_start)
+    and inet6_aton('214.0.0.0') >= network_start
   order by network_start desc
   limit 1
 ) net
@@ -257,7 +265,9 @@ select geoname_id, registered_country_geoname_id, represented_country_geoname_id
 from (
   select *
   from geoip2_network
-  where inet6_aton('127.0.0.1') >= network_start
+  where
+    length(inet6_aton('127.0.0.1')) = length(network_start)
+    and inet6_aton('127.0.0.1') >= network_start
   order by network_start desc
   limit 1
 ) net
@@ -360,7 +370,9 @@ select latitude, longitude, accuracy_radius, continent_name, country_name, subdi
 from (
   select *
   from geoip2_network
-  where inet6_aton('214.0.0.0') >= network_start
+  where
+    length(inet6_aton('214.0.0.0')) = length(network_start)
+    and inet6_aton('214.0.0.0') >= network_start
   order by network_start desc
   limit 1
 ) net
@@ -409,7 +421,9 @@ select latitude, longitude, accuracy_radius,
 from (
   select *
   from geoip2_network
-  where inet6_aton('214.0.0.0') >= network_start
+  where
+    length(inet6_aton('214.0.0.0')) = length(network_start)
+    and inet6_aton('214.0.0.0') >= network_start
   order by network_start desc
   limit 1
 ) net
