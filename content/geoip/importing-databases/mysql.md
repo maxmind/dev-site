@@ -3,6 +3,19 @@ draft: false
 title: Importing GeoIP2 and GeoLite2 databases to MySQL
 ---
 
+{{< alert warning >}}
+
+On Wednesday, November 27, 2024 we updated this tutorial to address an issue in
+which some IPv4 and IPv6 addresses could overlap. If you used a version of this
+tutorial prior to that date, please consult the updated instructions for
+querying the data in the following sections below:
+
+- [Test our table by querying it](#test-our-table-by-querying-it)
+- [Order the table for faster searching](#order-the-table-for-faster-searching)
+- [Break up our query for faster searching](#break-up-our-query-for-faster-searching)
+
+{{</ alert >}}
+
 This guide will show you how to import GeoIP2 or GeoLite2 databases into MySQL
 so that they can be easily queried and manipulated on your server.
 
