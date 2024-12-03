@@ -21,7 +21,8 @@
 /static/maxmind-region-codes.csv https://download.maxmind.com/download/geoip/misc/region_codes.csv 301
 /geoip/geoip2/release-notes /geoip/release-notes/ 302
 /geoip/geoip2/release-notes/ /geoip/release-notes/ 302
-/geoip/geoip2/geolite2 /geoip/geolite2-free-geolocation-data/ 301
+/geoip/geoip2/geolite2 /geoip/geolite2-free-geolocation-data/ 302
+/geoip/geoip2/geolite2/ /geoip/geolite2-free-geolocation-data/ 302
 
 
 # General - with splats and placeholders
