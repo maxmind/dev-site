@@ -222,18 +222,37 @@ export default tseslint.config(
   rules: {
     '@typescript-eslint/await-thenable': 'error',
 
-    '@typescript-eslint/naming-convention': [
-      'error',
+    '@typescript-eslint/naming-convention': ['error',
       {
-        custom: {
-          match: true,
-          regex: '^I[A-Z]',
-        },
-
-        format: [
-          'PascalCase',
-        ],
-        selector: 'interface',
+        selector: 'default', format: ['camelCase'],
+      },
+      {
+        selector: 'classProperty', format: ['camelCase'], leadingUnderscore: 'allow',
+      },
+      {
+        selector: 'enumMember', format: ['PascalCase', 'camelCase'],
+      },
+      {
+        selector: 'import', format: ['camelCase', 'PascalCase'],
+      },
+      {
+        selector: 'objectLiteralProperty', format: null,
+      },
+      {
+        selector: 'parameter', format: ['camelCase', 'snake_case'], leadingUnderscore: 'allow',
+      },
+      {
+        selector: 'typeLike', format: ['PascalCase'],
+      },
+      {
+        selector: 'typeProperty', format: ['camelCase', 'snake_case'], leadingUnderscore: 'allow',
+      },
+      // Allow dashes in variable names.  This is useful for things like country codes
+      {
+        selector: 'typeProperty', format: null, filter: { regex: '^[a-zA-Z-]+', match: true },
+      },
+      {
+        selector: 'variable', format: ['camelCase', 'PascalCase', 'snake_case', 'UPPER_CASE'], leadingUnderscore: 'allow',
       },
     ],
   },
