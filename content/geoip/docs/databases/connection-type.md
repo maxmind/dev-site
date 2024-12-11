@@ -16,15 +16,6 @@ pricing, please
 
 {{< snippet "snippets/binary-databases.md" >}}
 
-| Language or Framework | Documentation                                                                      | Example                                                                                      |
-| --------------------- | ---------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------- |
-| .NET (C#)             | [GitHub - Database Usage](https://github.com/maxmind/GeoIP2-dotnet#database-usage) | [Connection Type Example](https://github.com/maxmind/GeoIP2-dotnet#connection-type-database) |
-| Java                  | [GitHub - Database Usage](https://github.com/maxmind/GeoIP2-java#database-usage)   | [Connection Type Example](https://github.com/maxmind/GeoIP2-java#connection-type)            |
-| Node.js               | [GitHub - Database Usage](https://github.com/maxmind/GeoIP2-node#database-usage)   | [Connection Type Example](https://github.com/maxmind/GeoIP2-node#connection-type-example)    |
-| PHP                   | [GitHub - Database Reader](https://github.com/maxmind/GeoIP2-php#database-reader)  | [Connection Type Example](https://github.com/maxmind/GeoIP2-php#connection-type-example)     |
-| Python                | [GitHub - Database Usage](https://github.com/maxmind/GeoIP2-python#database-usage) | [Connection Type Example](https://github.com/maxmind/GeoIP2-python#connection-type-database) |
-| Ruby                  | [GitHub - Database Reader](https://github.com/maxmind/GeoIP2-ruby#database-reader) | [Connection Type Example](https://github.com/maxmind/GeoIP2-ruby#connection-type-example)    |
-
 ## CSV Database
 
 {{< snippet "snippets/csv-databases-intro.md" >}}
