@@ -1,9 +1,9 @@
 Binary databases make use of the
 [MaxMind DB file format](https://maxmind.github.io/MaxMind-DB/). MaxMind
-provides [official client APIs](https://dev.maxmind.com/geoip/docs/databases/#official-client-apis)
+provides [official client APIs](/geoip/docs/databases/#official-client-apis)
 that are open source and licensed under the Apache License, Version 2.0.  We also provide a list of
-[unsupported and unofficial client APIs](https://dev.maxmind.com/geoip/docs/databases/#unofficial-client-apis)
-and [unsupported and unofficial integrations](https://dev.maxmind.com/geoip/docs/databases/#integrations)
+[unsupported and unofficial client APIs](/geoip/docs/databases/#unofficial-client-apis)
+and [unsupported and unofficial integrations](/geoip/docs/databases/#integrations)
 with various applications.
 
 You can also use the [mmdbinspect tool](https://github.com/maxmind/mmdbinspect)
