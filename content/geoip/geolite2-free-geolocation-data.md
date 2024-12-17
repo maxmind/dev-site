@@ -17,12 +17,12 @@ Find what you need:
 * [Understanding IP geolocation](#understanding-ip-geolocation)
 * [Integration](#integrating-geolite-databases-and-web-services)
 * [Generating a license key to authenticate GeoLite](#generate-a-license-key-to-authenticate-geolite-database-downloads-and-web-service-requests)
-* [GeoLite database formats](decide-how-you-want-to-use-GeoLite-databases)
-* [Automate database downloads and updates](automate-database-downloads-and-updates)
-* [Look up IP addresses in the GeoLite databases and web services](look-up-ip-addresses-in-the-geo-lite-databases)
-* [Database fields](geolite-database-fields)
-* [Web service fields](geolite-web-service-fields)
-* [Resources for working with GeoLite](resources-for-working-with-geolite)
+* [GeoLite database formats](#decide-how-you-want-to-use-geolite-databases)
+* [Automate database downloads and updates](#automate-database-downloads-and-updates)
+* [Look up IP addresses in the GeoLite databases and web services](#look-up-ip-addresses-in-the-geolite-databases)
+* [Database fields](#geolite-database-fields)
+* [Web service fields](#geolite-web-service-fields)
+* [Resources for working with GeoLite](#resources-for-working-with-geolite)
 
 ## Understanding IP geolocation
 IP geolocation is inherently imprecise. Locations in MaxMind’s data are often near population centers. Any location provided by GeoLite or GeoIP® should not be used to identify a particular address or household.
@@ -75,13 +75,13 @@ Please note that GeoLite users are limited to 30 database downloads per day. If 
 
 The GeoLite End User License Agreement requires all GeoLite users to keep their data up- to-date. This means you must delete GeoLite databases within 30 days of a new release. The easiest way to keep your GeoLite data up-to-date is to automate downloads and updates.
 
-The method for updating the GeoLite databases depends on the database format you’re using. To help you decide which database format to use, [see the section above](decide-how-you-want-to-use-GeoLite-databases).
+The method for updating the GeoLite databases depends on the database format you’re using. To help you decide which database format to use, [see the section above](#decide-how-you-want-to-use-GeoLite-databases).
 
 * [Learn how to update the binary database format for fast lookups at scale.](https://dev.maxmind.com/geoip/updating-databases/#using-geoip-update)
 * [Learn how to update the csv database format to join the data or import into SQL.](https://dev.maxmind.com/geoip/updating-databases/#directly-downloading-databases)
 
 ### Look up IP addresses in the GeoLite databases
-The method you use to look up IP addresses in the GeoLite databases will depend on the database format you’re using and what you’re using it for. To help you decide which database format to use, [see this section above](decide-how-you-want-to-use-GeoLite-databases).
+The method you use to look up IP addresses in the GeoLite databases will depend on the database format you’re using and what you’re using it for. To help you decide which database format to use, [see this section above](#decide-how-you-want-to-use-GeoLite-databases).
 
 * [Use MaxMind’s client APIs to look up IP addresses in the binary databases for fast lookups at scale.](https://dev.maxmind.com/geoip/geolocate-an-ip/databases/)
 * [Learn how to import the csv format databases into MySQL or PostgreSQL.](https://dev.maxmind.com/geoip/importing-databases/)
@@ -114,19 +114,18 @@ Fields marked as available in Country will be available in the GeoLite Country d
         <th>Use case</th>
       </tr>
       <tr>
-        <td><p>[GeoLite Country database](https://dev.maxmind.com/geoip/docs/databases/city-and-country/)</p>
+        <td><p><a href="https://dev.maxmind.com/geoip/docs/databases/city-and-country/">GeoLite Country database</a></p>
         <p> *Some fields listed in this documentation are not present in GeoLite. Check the description of the fields.</p></td>
         <td>Geolocation at the country-level for analytics, content customization, or compliance use cases in territories that are not disputed.</td>
       </tr>
-
       <tr>
-        <td>[GeoLite City database](https://dev.maxmind.com/geoip/docs/databases/city-and-country/) <br> *Some fields listed in this documentation are not present in GeoLite. Check the description of the fields.</td>
+        <td><p><a href="https://dev.maxmind.com/geoip/docs/databases/city-and-country/">GeoLite City database</a></p>*Some fields listed in this documentation are not present in GeoLite. Check the description of the fields.</p></td>
         <td><p>Geolocation down to the city or postal code for analytics and content customization.</p>
-<p>**Please note**: The free GeoLite City is considerably less accurate than the paid GeoIP City data, and is not recommended for commercial use cases.</p></td>
+<p><strong>Please note</strong>: The free GeoLite City is considerably less accurate than the paid GeoIP City data, and is not recommended for commercial use cases.</p></td>
 </tr>
  <tr>
-<td>[GeoLite ASN database](https://dev.maxmind.com/geoip/docs/databases/asn/)</td>
-        <td>Information file</td>
+<td><a href="https://dev.maxmind.com/geoip/docs/databases/asn/">GeoLite ASN database</a></td>
+        <td>Provides the autonomous system number and organization for IP addresses for analytics.</td>
       </tr>
     </tbody>
   </table>
@@ -147,15 +146,15 @@ Fields marked as available in the GeoIP Country web service will be available in
         <th>Use case</th>
       </tr>
       <tr>
-        <td>[GeoLite Country web service](https://dev.maxmind.com/geoip/docs/databases/city-and-country/) <br> * Some fields listed in this documentation are not present in GeoLite. Check the description of the fields.</td>
+        <td><p><a href="https://c67362b6.dev-site-4ua.pages.dev/geoip/docs/web-services/#geolite2-country">GeoLite Country web service</a> </p> 
+        <p>* Some fields listed in this documentation are not present in GeoLite. Check the description of the fields.</p></td>
         <td>Geolocation at the country-level for analytics, content customization, or compliance use cases in territories that are not disputed.</td>
       </tr>
-
       <tr>
-        <td>[GeoLite City web service](https://dev.maxmind.com/geoip/docs/databases/city-and-country/) <br> * Some fields listed in this documentation are not present in GeoLite. Check the description of the fields.</td>
-        <td>Geolocation down to the city or postal code for analytics and content customization. Also includes the autonomous system number and autonomous system organization.<br>
-
-**Please note**: The free GeoLite City is considerably less accurate than the paid GeoIP City data, and is not recommended for commercial use cases.</td>
+        <td><p><a href="https://c67362b6.dev-site-4ua.pages.dev/geoip/docs/web-services/#geolite2-city">GeoLite City web service</a> </p>
+        <p>* Some fields listed in this documentation are not present in GeoLite. Check the description of the fields.</p></td>
+        <td><p>Geolocation down to the city or postal code for analytics and content customization. Also includes the autonomous system number and autonomous system organization.</p>
+<p> <strong>Please note</strong>: The free GeoLite City is considerably less accurate than the paid GeoIP City data, and is not recommended for commercial use cases.</p> </td>
 </tr>
     </tbody>
   </table>
@@ -177,9 +176,9 @@ Get resources for licensing and partnership around GeoLite data:
 
 Get resources for understanding the benefits and limitations of IP geolocation and how MaxMind keeps its data safe and in line with privacy-by-design principles:
 
-* [“How accurate is IP geolocation?” on the MaxMind blog] (https://blog.maxmind.com/2021/07/how-accurate-is-ip-geolocation/)
-* [“Using MaxMind’s accuracy radius” on the MaxMind blog] (https://blog.maxmind.com/2022/06/using-maxminds-accuracy-radius/)
-* [“Safer IP geolocation with MaxMind” on the MaxMind blog] (https://blog.maxmind.com/2023/08/safer-ip-geolocation/)
+* [“How accurate is IP geolocation?” on the MaxMind blog](https://blog.maxmind.com/2021/07/how-accurate-is-ip-geolocation/)
+* [“Using MaxMind’s accuracy radius” on the MaxMind blog](https://blog.maxmind.com/2022/06/using-maxminds-accuracy-radius/)
+* [“Safer IP geolocation with MaxMind” on the MaxMind blog](https://blog.maxmind.com/2023/08/safer-ip-geolocation/)
 
 ### What can I do with paid MaxMind data?
 
