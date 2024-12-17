@@ -1,149 +1,201 @@
 ---
 draft: false
-title: GeoLite2 Free Geolocation Data
+title: GeoLite databases and web services
 ---
-
-GeoLite2 databases are free IP geolocation databases comparable to, but less
-accurate than,
-[MaxMind’s GeoIP2 databases](https://www.maxmind.com/en/geoip2-databases). The
-[GeoLite2 Country and City databases](/static/pdf/GeoLite2-IP-MetaData-Databases-Comparison-Chart.pdf)
-are updated twice weekly, every Tuesday and Friday. The GeoLite2 ASN database is
-updated daily. GeoLite2 data is also available as a web service in the
-[GeoLite2 Country and GeoLite2 City web services](/static/pdf/GeoLite2-and-GeoIP2-Precision-Web-Services-Comparison.pdf).
-Users of the GeoLite2 web services are limited to 1000 IP address lookups per
-service per day.
-
-## Accessing GeoLite2 Free Geolocation Data
-
-You will need a free GeoLite2 account to download the GeoLite2 databases or to
-query the GeoLite2 web services. MaxMind also offers our
-[GeoLite data on Snowflake](/geoip/geolite-on-snowflake/).
+MaxMind offers a free geolocation and ASN data in downloadable database and web service formats. 
 
 {{< link-group/container >}}
-  {{< link-group/card heading="Sign Up for GeoLite2" href="https://www.maxmind.com/en/geolite2/signup" >}}
-    Receive download access to GeoLite2 databases or query access to GeoLite2 web services at no charge.
+  {{< link-group/card heading="Sign Up for GeoLite" href="http://maxmind.com/geolite-free-geolocation-data" >}}
+    Start building today with GeoLite databases and web services.
   {{</ link-group/card >}}
-  {{< link-group/card heading="Generate a License Key" href="https://www.maxmind.com/en/accounts/current/license-key" >}}
-    License keys are used to query the web services and authenticate the GeoIP Update program.
+  {{< link-group/card heading="Explore GeoLite" href="https://www.maxmind.com/en/geolite-free-ip-geolocation-data" >}}
+    Learn more about what you can do with GeoLite, and view redistribution options.
   {{</ link-group/card >}}
 {{</ link-group/container >}}
 
-From the side menu in your account portal, you can select
-[“Download Files”](https://www.maxmind.com/en/accounts/current/geoip/downloads)
-to download GeoLite2 databases in binary or CSV format. You can select
-[“Manage License Keys”](https://www.maxmind.com/en/accounts/current/license-key)
-to generate a license key, which can be used to automate GeoLite2 binary
-database downloads with the
-[GeoIP Update](/geoip/updating-databases/#using-geoip-update) program or query
-the web services.
+Find what you need: 
+* [Understanding IP geolocation](#understanding-ip-geolocation)
+* [Integration](#integrating-geolite-databases-and-web-services)
+* [Generating a license key to authenticate GeoLite](#generate-a-license-key-to-authenticate-geolite-database-downloads-and-web-service-requests)
+* [GeoLite database formats](decide-how-you-want-to-use-GeoLite-databases)
+* [Automate database downloads and updates](automate-database-downloads-and-updates)
+* [Look up IP addresses in the GeoLite databases and web services](look-up-ip-addresses-in-the-geo-lite-databases)
+* [Database fields](geolite-database-fields)
+* [Web service fields](geolite-web-service-fields)
+* [Resources for working with GeoLite](resources-for-working-with-geolite)
 
-For more information about using GeoLite2, see our
-[section on integration](#integration) below.
+## Understanding IP geolocation
+IP geolocation is inherently imprecise. Locations in MaxMind’s data are often near population centers. Any location provided by GeoLite or GeoIP® should not be used to identify a particular address or household.
 
-You may also be interested in our testing and integrations guides for our
-[geolocation databases](https://support.maxmind.com/hc/en-us/articles/4408216183835-Test-Databases-and-Lookup-IPs)
-and
-[web services](https://support.maxmind.com/hc/en-us/articles/4408248793627-Test-the-Web-Services)
-on our knowledge base.
+Some IP addresses cannot be geolocated as precisely as others. Almost all IP addresses will have at least a country associated with them, but some will not have a region or city, and many will not have a postal code.
 
-## IP Geolocation Accuracy
+GeoLite City and paid GeoIP City data return a geolocation area rather than a point on a map. A geolocation area is a circle defined by latitude, longitude, and an accuracy radius, which ranges from a few kilometers to 1000 kilometers.
+
+You should build your applications with this accuracy radius in mind to avoid confusing results. For example, an IP address which can only be geolocated to a country will return a latitude and longitude near the center of that country, with a very large accuracy radius. If you do not account for the accuracy radius, it may appear as if many IP addresses are geolocated to a specific place in the center of the country.
+
+[Learn more about MaxMind’s geolocation area data on our Knowledge Base.](https://support.maxmind.com/hc/en-us/articles/4414877149467-IP-Geolocation-Data#h_01FRRHZZP6RAYSNZTYE4MQ3MWY)
+
+## Integrating GeoLite databases and web services
+GeoLite databases and web services use the same integration methods as our GeoIP databases and web services. To quickly get started, follow these steps.
+
+Want to work with GeoLite on Snowflake? [Get GeoLite directly through the Snowflake marketplace](https://app.snowflake.com/marketplace/providers/GZ2FTZ5POF7/MaxMind) (Snowflake account required).
+
+### Sign up for a MaxMind account to get GeoLite
+Read more about GeoLite, its attribution requirements and applicable use cases, and how to sign up.
+
+[Get started on our GeoLite page.](http://maxmind.com/geolite-free-geolocation-data)
+
+### Generate a license key to authenticate GeoLite database downloads and web service requests
+
+A license key is like a password used to authenticate database downloads or web service requests. After you have a MaxMind account, you should generate one or more license keys. Some people use different license keys for different servers or use cases.
+
+[Learn how to generate license keys on our Knowledge Base](https://support.maxmind.com/hc/en-us/articles/4407111582235-Generate-a-License-Key), or [go directly to your account portal to generate a new license key](https://www.maxmind.com/en/accounts/current/license-key).
 
 {{< alert warning >}}
-**IP Geolocation Usage**
-
-IP geolocation is inherently imprecise. Locations are often near the center of
-the population. Any location provided by a GeoIP database should not be used to
-identify a particular address or household.
-
+Working with the web services instead of the databases? Skip to the [instructions on using the web services below.](look-up-ip-addresses-in-the-geolite-web-services)
 {{</ alert >}}
 
-Use the Accuracy Radius as an indication of geolocation accuracy for the
-latitude and longitude coordinates we return for an IP address. The actual
-location of the IP address is likely within the area defined by this radius and
-the latitude and longitude coordinates.
+### Decide how you want to use GeoLite databases
 
-You can compare accuracy of the GeoLite2 data and MaxMind's paid GeoIP2 products
-by selecting a country on our
-[GeoIP2 City Accuracy page](https://www.maxmind.com/en/geoip2-city-accuracy-comparison).
+MaxMind provides databases in two formats: 
+* a binary (.mmdb) format optimized for fast lookups at scale
+* a comma separated values (.csv) format that’s good for manipulating, joining, and transforming the data
 
-## Integration
+If you’re making a web application that needs to perform lookups quickly and at high volume, you should use the binary mmdb format.
 
-GeoLite2 databases and web services use nearly the same integration steps as our
-paid GeoIP2 databases and web services. In fact, our client API libraries can be
-used for both GeoIP2 and GeoLite2 products, making transitioning from the free
-GeoLite2 product line to the paid GeoIP2 product line extremely easy.
+If you’re bringing GeoLite data into an existing database structure or application, you should use the csv format.
 
-[Learn more about upgrading from GeoLite to GeoIP on our Knowledge Base.](https://support.maxmind.com/hc/en-us/articles/4407625342875-Upgrade-from-GeoLite2)
+If you’re working with an existing plugin or integration, check which format that plugin uses.
 
-### Databases
+### Automate database downloads and updates
 
-See our
-[Database Documentation page](/geoip/docs/databases#official-client-apis) for a
-list of available APIs. GeoIP2 APIs may be used with GeoLite2 binary databases
-(MMDB). You can also use the
-[GeoIP Update program](/geoip/updating-databases/#using-geoip-update) to
-automatically keep your GeoLite2 binary format databases up to date.
+{{< alert warning >}}
+Please note that GeoLite users are limited to 30 database downloads per day. If you need to download more, please [upgrade to GeoIP](https://www.maxmind.com/en/geoip-databases).
+{{</ alert >}}
 
-GeoLite2 CSV databases are released in the same basic format as our
-[GeoIP2 CSV databases](/geoip/docs/databases/city-and-country#csv-databases),
-but they may contain fewer data points. To support a seamless upgrade to GeoIP2,
-and to allow the GeoIP databases to continue to be drop-in replacements for
-GeoLite database, GeoLite 2 CSV databases include the Anycast field as a data
-point. This field is left intentionally blank and will not be populated in
-GeoLIte2 CSV databases.
+The GeoLite End User License Agreement requires all GeoLite users to keep their data up- to-date. This means you must delete GeoLite databases within 30 days of a new release. The easiest way to keep your GeoLite data up-to-date is to automate downloads and updates.
 
-### Web services
+The method for updating the GeoLite databases depends on the database format you’re using. To help you decide which database format to use, [see the section above](decide-how-you-want-to-use-GeoLite-databases).
 
-See our
-[Web Services Documentation page](/geoip/docs/web-services#official-client-apis)
-for a list of available web service APIs. GeoIP2 web service APIs may be used
-with the GeoLite2 web services by changing the hostname to the appropriate
-[GeoLite2 web service URI](/geoip/docs/web-services/requests#geolite2-endpoints).
-Using the wrong host will result in a permission error.
+* [Learn how to update the binary database format for fast lookups at scale.](https://dev.maxmind.com/geoip/updating-databases/#using-geoip-update)
+* [Learn how to update the csv database format to join the data or import into SQL.](https://dev.maxmind.com/geoip/updating-databases/#directly-downloading-databases)
 
-You can also review our brief tutorial on
-[how to integrate the GeoLite2 City web service using PHP on our blog](https://blog.maxmind.com/2021/01/integrating-maxminds-free-and-paid-ip-geolocation-web-services-in-php/).
+### Look up IP addresses in the GeoLite databases
+The method you use to look up IP addresses in the GeoLite databases will depend on the database format you’re using and what you’re using it for. To help you decide which database format to use, [see this section above](decide-how-you-want-to-use-GeoLite-databases).
 
-## License
+* [Use MaxMind’s client APIs to look up IP addresses in the binary databases for fast lookups at scale.](https://dev.maxmind.com/geoip/geolocate-an-ip/databases/)
+* [Learn how to import the csv format databases into MySQL or PostgreSQL.](https://dev.maxmind.com/geoip/importing-databases/)
+* If you’re using GeoLite in a plugin or application, check the installation instructions for your plugin.
 
-The
-[GeoLite2 end-user license agreement](https://www.maxmind.com/en/geolite2/eula)
-incorporates components of the
-[Creative Commons Attribution-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-sa/4.0/).
-The attribution requirement may be met by including the following in all
-advertising and documentation mentioning features of or use of GeoLite2 data:
+### Look up IP addresses in the GeoLite web services
 
-```html
-This product includes GeoLite2 data created by MaxMind, available from
-<a href="https://www.maxmind.com">https://www.maxmind.com</a>.
-```
+{{< alert warning >}}
+Please note that GeoLite web service users are limited to 1000 lookups per day per service. If you need to do more lookups, please [upgrade to GeoIP](https://www.maxmind.com/en/geoip-databases).
+{{</ alert >}}
 
-## Support
+MaxMind maintains client APIs in many popular languages to help you look up IP addresses in our web services quickly and easily.
 
-MaxMind does not provide official support for the free GeoLite2 web services or
-databases. If you have questions about the GeoLite2 web services or databases,
-or GeoIP2 APIs, please see
-[stackoverflow’s GeoIP questions and answers](https://stackoverflow.com/questions/tagged/geoip)
-or the
-[GeoIP and GeoLite section of our knowledge base](https://support.maxmind.com/hc/en-us/categories/1260801446650-GeoIP2-and-GeoLite2).
+[Learn how to look up IP addresses in our web services.](https://dev.maxmind.com/geoip/geolocate-an-ip/web-services/)
 
-## GeoLite2 Commercial Redistribution
+MaxMind web services do support a client-side JavaScript lookup, but only for the paid GeoIP web services. [Learn more about client-side JavaScript lookups using the GeoIP web services](https://dev.maxmind.com/geoip/geolocate-an-ip/client-side-javascript/), and [upgrade to GeoIP](https://www.maxmind.com/en/geoip-api-web-services).
 
-We also offer redistribution licenses for GeoLite2 databases that allow you to
-package the databases with your commercial products without the need for
-attribution. For more information, please
-[visit the GeoLite2 Commercial Redistribution page](https://www.maxmind.com/en/geolite2-commercial-redistribution).
+## GeoLite database fields
 
-## Earn a Commission with Your Integration
+MaxMind provides three different GeoLite databases. Click each link for documentation of all available database fields, client APIs, and sample files.
 
-If you’re using GeoLite2 data to develop an integration or application for IP
-geolocation, you may wish to become a MaxMind developer affiliate and add
-compatibility with our paid GeoIP2 databases or web services.
+Fields marked as available in Country will be available in the GeoLite Country database, except as noted in the field description. Fields marked as available in City will be available in the GeoLite City database, except as noted in the field description. 
 
-MaxMind developer affiliates can earn a 10% commission on all qualified
-purchases by new customers referred to MaxMind. You can build your plugin
-packaged with GeoLite2 data, and offer your users a way to sign up with MaxMind
-to get our more accurate, paid IP geolocation data.
+{{< rawhtml >}}
+<div class="table">
+  <table>
+    <tbody>
+      <tr>
+        <th>Database</th>
+        <th>Use case</th>
+      </tr>
+      <tr>
+        <td><code>[GeoLite Country database](https://dev.maxmind.com/geoip/docs/databases/city-and-country/) <br> * Some fields listed in this documentation are not present in GeoLite. Check the description of the fields.
+</code></td>
+        <td>Geolocation at the country-level for analytics, content customization, or compliance use cases in territories that are not disputed.</td>
+      </tr>
 
-You can
-[learn more about the MaxMind affiliate program for developers on our Knowledge Base](https://support.maxmind.com/hc/en-us/sections/5066199198619-Affiliate-Program).
+      <tr>
+        <td><code>[GeoLite City database](https://dev.maxmind.com/geoip/docs/databases/city-and-country/) <br> * Some fields listed in this documentation are not present in GeoLite. Check the description of the fields.
+</code></td>
+        <td>Geolocation down to the city or postal code for analytics and content customization.
+<br>
+*Please note*: The free GeoLite City is considerably less accurate than the paid GeoIP City data, and is not recommended for commercial use cases.</td>
+</tr>
+ <tr>
+<td><code>[GeoLite ASN database](https://dev.maxmind.com/geoip/docs/databases/asn/)</code></td>
+        <td>Information file</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+{{</ rawhtml >}}
+
+## GeoLite web service fields
+MaxMind provides two different GeoLite web services. Click each link for documentation of all available data that can be returned in each service.
+
+Fields marked as available in the GeoIP Country web service will be available in GeoLite Country web service, except as noted in the field description. Fields marked as available in the GeoIP City web service will be available in the GeoLite City web service, except as noted in the field description. 
+
+{{< rawhtml >}}
+<div class="table">
+  <table>
+    <tbody>
+      <tr>
+        <th>Web service</th>
+        <th>Use case</th>
+      </tr>
+      <tr>
+        <td><code>[GeoLite Country web service](https://dev.maxmind.com/geoip/docs/databases/city-and-country/) <br> * Some fields listed in this documentation are not present in GeoLite. Check the description of the fields.</code></td>
+        <td>Geolocation at the country-level for analytics, content customization, or compliance use cases in territories that are not disputed.</td>
+      </tr>
+
+      <tr>
+        <td><code>[GeoLite City web service](https://dev.maxmind.com/geoip/docs/databases/city-and-country/) <br> * Some fields listed in this documentation are not present in GeoLite. Check the description of the fields.
+</code></td>
+        <td>Geolocation down to the city or postal code for analytics and content customization. Also includes the autonomous system number and autonomous system organization.<br>
+
+*Please note*: The free GeoLite City is considerably less accurate than the paid GeoIP City data, and is not recommended for commercial use cases.</td>
+</tr>
+    </tbody>
+  </table>
+</div>
+{{</ rawhtml >}}
+
+## Resources for working with GeoLite
+
+Please note that MaxMind does not provide support for our GeoLite databases and web services. You can use the resources below to learn more about working with IP geolocation data in general and GeoLite in particular.
+
+### What are you permitted to do with GeoLite?
+
+Get resources for licensing and partnership around GeoLite data:
+* [Learn about the GeoLite End User License Agreement on our Knowledge Base.](https://support.maxmind.com/hc/en-us/articles/4408936666523-Who-is-Covered-by-the-GeoLite2-End-User-License-Agreement)
+* [Learn how you are permitted to use GeoLite data in products or services on our Knowledge Base.](https://support.maxmind.com/hc/en-us/articles/4408936690075-Sell-or-Display-Data-from-GeoLite2-Databases-and-Web-Services)
+* [Learn more about MaxMind’s Affiliate Program for developers.](https://www.maxmind.com/en/affiliate-program)
+
+### How does IP geolocation work?
+
+Get resources for understanding the benefits and limitations of IP geolocation and how MaxMind keeps its data safe and in line with privacy-by-design principles:
+
+* [“How accurate is IP geolocation?” on the MaxMind blog] (https://blog.maxmind.com/2021/07/how-accurate-is-ip-geolocation/)
+* [“Using MaxMind’s accuracy radius” on the MaxMind blog] (https://blog.maxmind.com/2022/06/using-maxminds-accuracy-radius/)
+* [“Safer IP geolocation with MaxMind” on the MaxMind blog] (https://blog.maxmind.com/2023/08/safer-ip-geolocation/)
+
+### What can I do with paid MaxMind data?
+
+In addition to IP more accurate geolocation data, MaxMind has paid products that identify various attributes of an IP address, including:
+
+* ISP name (e.g., AT&T Wireless, Amazon, etc.)
+* connection type (e.g., Cellular, Satellite, etc.)
+* domain name (e.g., google.com, microsoft.com, etc.)
+* user type (e.g., business, residential, etc.)
+* proxy identification (e.g., VPNs, Tor exit nodes, etc.)
+
+[Learn more about MaxMind’s paid IP intelligence data.](https://www.maxmind.com/en/solutions/ip-geolocation-databases-api-services)
+
+MaxMind also has a risk scoring web service for fraud prevention and security. [Learn more about minFraud.](https://www.maxmind.com/en/solutions/fraud-prevention/overview)
+
+
