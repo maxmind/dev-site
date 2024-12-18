@@ -43,7 +43,7 @@ Want to work with GeoLite on Snowflake? [Get GeoLite directly through the Snowfl
 ### Sign up for a MaxMind account to get GeoLite
 Read more about GeoLite, its attribution requirements and applicable use cases, and how to sign up.
 
-[Get started on our GeoLite page.](http://maxmind.com/geolite-free-geolocation-data)
+[Get started on our GeoLite page.](https://www.maxmind.com/en/geolite-free-ip-geolocation-data)
 
 ### Generate a license key to authenticate GeoLite database downloads and web service requests
 
@@ -52,7 +52,7 @@ A license key is like a password used to authenticate database downloads or web 
 [Learn how to generate license keys on our Knowledge Base](https://support.maxmind.com/hc/en-us/articles/4407111582235-Generate-a-License-Key), or [go directly to your account portal to generate a new license key](https://www.maxmind.com/en/accounts/current/license-key).
 
 {{< alert warning >}}
-Working with the web services instead of the databases? Skip to the [instructions on using the web services below.](look-up-ip-addresses-in-the-geolite-web-services)
+Working with the web services instead of the databases? Skip to the [instructions on using the web services below.](#look-up-ip-addresses-in-the-geolite-web-services)
 {{</ alert >}}
 
 ### Decide how you want to use GeoLite databases
@@ -75,13 +75,13 @@ Please note that GeoLite users are limited to 30 database downloads per day. If 
 
 The GeoLite End User License Agreement requires all GeoLite users to keep their data up- to-date. This means you must delete GeoLite databases within 30 days of a new release. The easiest way to keep your GeoLite data up-to-date is to automate downloads and updates.
 
-The method for updating the GeoLite databases depends on the database format you’re using. To help you decide which database format to use, [see the section above](#decide-how-you-want-to-use-GeoLite-databases).
+The method for updating the GeoLite databases depends on the database format you’re using. To help you decide which database format to use, [see the section above](#decide-how-you-want-to-use-geolite-databases).
 
 * [Learn how to update the binary database format for fast lookups at scale.](https://dev.maxmind.com/geoip/updating-databases/#using-geoip-update)
 * [Learn how to update the csv database format to join the data or import into SQL.](https://dev.maxmind.com/geoip/updating-databases/#directly-downloading-databases)
 
 ### Look up IP addresses in the GeoLite databases
-The method you use to look up IP addresses in the GeoLite databases will depend on the database format you’re using and what you’re using it for. To help you decide which database format to use, [see this section above](#decide-how-you-want-to-use-GeoLite-databases).
+The method you use to look up IP addresses in the GeoLite databases will depend on the database format you’re using and what you’re using it for. To help you decide which database format to use, [see this section above](#decide-how-you-want-to-use-geolite-databases).
 
 * [Use MaxMind’s client APIs to look up IP addresses in the binary databases for fast lookups at scale.](https://dev.maxmind.com/geoip/geolocate-an-ip/databases/)
 * [Learn how to import the csv format databases into MySQL or PostgreSQL.](https://dev.maxmind.com/geoip/importing-databases/)
@@ -115,11 +115,11 @@ Fields marked as available in Country will be available in the GeoLite Country d
       </tr>
       <tr>
         <td><p><a href="https://dev.maxmind.com/geoip/docs/databases/city-and-country/">GeoLite Country database</a></p>
-        <p> *Some fields listed in this documentation are not present in GeoLite. Check the description of the fields.</p></td>
+        <p> * Some fields listed in this documentation are not present in GeoLite. Check the description of the fields.</p></td>
         <td>Geolocation at the country-level for analytics, content customization, or compliance use cases in territories that are not disputed.</td>
       </tr>
       <tr>
-        <td><p><a href="https://dev.maxmind.com/geoip/docs/databases/city-and-country/">GeoLite City database</a></p>*Some fields listed in this documentation are not present in GeoLite. Check the description of the fields.</p></td>
+        <td><p><a href="https://dev.maxmind.com/geoip/docs/databases/city-and-country/">GeoLite City database</a></p>* Some fields listed in this documentation are not present in GeoLite. Check the description of the fields.</p></td>
         <td><p>Geolocation down to the city or postal code for analytics and content customization.</p>
 <p><strong>Please note</strong>: The free GeoLite City is considerably less accurate than the paid GeoIP City data, and is not recommended for commercial use cases.</p></td>
 </tr>
