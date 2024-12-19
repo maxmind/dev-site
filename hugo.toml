@@ -202,7 +202,7 @@ title = 'MaxMind'
         parent = 'Database Documentation'
         weight = 70
     [[menus.geoip]]
-      name = 'GeoLite2 Free Geolocation Data'
+      name = 'GeoLite Databases and Web Services'
       pageRef = '/geoip/geolite2-free-geolocation-data'
       parent = 'GeoIP'
       weight = 80
