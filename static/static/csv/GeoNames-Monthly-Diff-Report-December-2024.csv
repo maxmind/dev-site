@@ -1,0 +1,63 @@
+diff_in,old_geoname_id,new_geoname_id,old_city_name,new_city_name,old_country_name,new_country_name,old_country_code,new_country_code,old_subdivision_codes,new_subdivision_codes
+city_name,3085565,3085565,Śliwice,Sliwice,Poland,Poland,PL,PL,4,4
+city_name,946053,946053,eMthenteni,Umtentweni,South Africa,South Africa,ZA,ZA,KZN,KZN
+city_name,2466688,2466688,Sidi Bou Saïd,Sidi Bou Said,Tunisia,Tunisia,TN,TN,11,11
+geoname_id,3858962,3858959,El Algarrobal,El Algarrobal,Argentina,Argentina,AR,AR,M,M
+geoname_id,3434509,3434508,El Palomar,El Palomar,Argentina,Argentina,AR,AR,B,B
+geoname_id,3458885,12991708,Lamarão,Lamarão,Brazil,Brazil,BR,BR,BA,BA
+geoname_id,3390581,12959301,Riachão,Riachão,Brazil,Brazil,BR,BR,MA,MA
+geoname_id,3393253,6319964,Palmeira do Piauí,Palmeira do Piauí,Brazil,Brazil,BR,BR,PI,PI
+geoname_id,6318609,3472122,São Sebastião do Anta,São Sebastião do Anta,Brazil,Brazil,BR,BR,MG,MG
+geoname_id,3470581,12995450,Barreiras,Barreiras,Brazil,Brazil,BR,BR,MG,MG
+geoname_id,12966165,3459406,Juruena,Juruena,Brazil,Brazil,BR,BR,MT,MT
+geoname_id,3471915,6323907,Aporé,Aporé,Brazil,Brazil,BR,BR,GO,GO
+geoname_id,6317946,3453931,Piedade de Caratinga,Piedade de Caratinga,Brazil,Brazil,BR,BR,MG,MG
+geoname_id,6319005,6316298,Açailândia,Açailândia,Brazil,Brazil,BR,BR,MA,MA
+geoname_id,3385736,3385737,Upanema,Upanema,Brazil,Brazil,BR,BR,RN,RN
+geoname_id,6317548,12962874,Marituba,Marituba,Brazil,Brazil,BR,BR,PA,PA
+geoname_id,3458729,11959657,Laurentino,Laurentino,Brazil,Brazil,BR,BR,SC,SC
+geoname_id,6318096,3401564,Quiterianópolis,Quiterianópolis,Brazil,Brazil,BR,BR,CE,CE
+geoname_id,6318636,12959180,Satubinha,Satubinha,Brazil,Brazil,BR,BR,MA,MA
+geoname_id,3451362,13003915,Ribeirão Branco,Ribeirão Branco,Brazil,Brazil,BR,BR,SP,SP
+geoname_id,6316343,6323793,Alta Floresta,Alta Floresta,Brazil,Brazil,BR,BR,MT,MT
+geoname_id,6323947,6316880,Cocalzinho de Goiás,Cocalzinho de Goiás,Brazil,Brazil,BR,BR,GO,GO
+geoname_id,6316453,3407003,Assunção do Piauí,Assunção do Piauí,Brazil,Brazil,BR,BR,PI,PI
+geoname_id,6318288,3449893,Santa Rita de Minas,Santa Rita de Minas,Brazil,Brazil,BR,BR,MG,MG
+geoname_id,6318218,3450439,Santa Bárbara do Leste,Santa Bárbara do Leste,Brazil,Brazil,BR,BR,MG,MG
+geoname_id,12958483,3394745,Mocajuba,Mocajuba,Brazil,Brazil,BR,BR,PA,PA
+geoname_id,3453549,13025792,Pirapó,Pirapó,Brazil,Brazil,BR,BR,RS,RS
+geoname_id,3457363,3457362,Medeiros,Medeiros,Brazil,Brazil,BR,BR,MG,MG
+geoname_id,3473955,6316954,Cristal,Cristal,Brazil,Brazil,BR,BR,RS,RS
+geoname_id,3406627,12551049,Baixio,Baixio,Brazil,Brazil,BR,BR,CE,CE
+geoname_id,3402163,6324322,Chorrochó,Chorrochó,Brazil,Brazil,BR,BR,BA,BA
+geoname_id,11962372,3446194,Tremembé,Tremembé,Brazil,Brazil,BR,BR,SP,SP
+geoname_id,3453782,13064523,Pinhalzinho,Pinhalzinho,Brazil,Brazil,BR,BR,SC,SC
+geoname_id,6324162,3456277,Nobres,Nobres,Brazil,Brazil,BR,BR,MT,MT
+geoname_id,2988115,2988114,Penguily,Penguily,France,France,FR,FR,"BRE, 22","BRE, 22"
+geoname_id,2881276,6557435,Langen,Langen,Germany,Germany,DE,DE,NI,NI
+geoname_id,2833990,2959244,Ahlbeck,Ahlbeck,Germany,Germany,DE,DE,MV,MV
+geoname_id,2878912,6553004,Lemwerder,Lemwerder,Germany,Germany,DE,DE,NI,NI
+geoname_id,2810120,2810123,Westheim,Westheim,Germany,Germany,DE,DE,BY,BY
+geoname_id,2856217,2856216,Ostrau,Ostrau,Germany,Germany,DE,DE,SN,SN
+geoname_id,2814790,2814789,Waldsiedlung,Waldsiedlung,Germany,Germany,DE,DE,HE,HE
+geoname_id,2923697,2923698,Fürholzen,Fürholzen,Germany,Germany,DE,DE,BY,BY
+geoname_id,719110,719111,Kétpó,Kétpó,Hungary,Hungary,HU,HU,JN,JN
+geoname_id,10550479,1274770,Chandauli,Chandauli,India,India,IN,IN,UP,UP
+geoname_id,10967897,1260547,Pāndharkawada,Pāndharkawada,India,India,IN,IN,MH,MH
+geoname_id,8980123,3180511,Carignano,Carignano,Italy,Italy,IT,IT,"21, TO","21, TO"
+geoname_id,2110683,2110681,Tsukuba,Tsukuba,Japan,Japan,JP,JP,8,8
+geoname_id,1736929,1736807,Dalat,Dalat,Malaysia,Malaysia,MY,MY,13,13
+geoname_id,4009461,4009465,El Limón,El Limón,Mexico,Mexico,MX,MX,JAL,JAL
+geoname_id,3822977,8583283,Othón P. Blanco,Othón P. Blanco,Mexico,Mexico,MX,MX,ROO,ROO
+geoname_id,11136987,4026082,Lázaro Cárdenas,Lázaro Cárdenas,Mexico,Mexico,MX,MX,MIC,MIC
+geoname_id,2206808,6247603,Wairoa,Wairoa,New Zealand,New Zealand,NZ,NZ,HKB,HKB
+geoname_id,1691487,1691490,Rosario,Rosario,Philippines,Philippines,PH,PH,"40, BTG","40, BTG"
+geoname_id,1708523,1708522,Koronadal,Koronadal,Philippines,Philippines,PH,PH,"12, SCO","12, SCO"
+geoname_id,1719684,1719683,Camiling,Camiling,Philippines,Philippines,PH,PH,"03, TAR","03, TAR"
+geoname_id,945142,945141,Vaalwater,Vaalwater,South Africa,South Africa,ZA,ZA,LP,LP
+geoname_id,969618,969619,Nottingham Road,Nottingham Road,South Africa,South Africa,ZA,ZA,KZN,KZN
+geoname_id,2714736,2714737,Fjällbacka,Fjällbacka,Sweden,Sweden,SE,SE,O,O
+geoname_id,10377104,2642773,Melmerby,Melmerby,United Kingdom,United Kingdom,GB,GB,"ENG, NYK","ENG, NYK"
+geoname_id,5335274,5335256,Cedar Ridge,Cedar Ridge,United States,United States,US,US,CA,CA
+geoname_id,4102065,4102067,Black Oak,Black Oak,United States,United States,US,US,AR,AR
+subdivision_codes,3199145,3199145,Ilidža,Ilidža,Bosnia and Herzegovina,Bosnia and Herzegovina,BA,BA,BIH,"BIH, 09"
