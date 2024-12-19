@@ -3,7 +3,7 @@ draft: false
 title: GeoLite on Snowflake
 ---
 
-MaxMind offers our GeoLite data through the Snowflake Marketplace. If you do not
+MaxMind offers our GeoLite data through the [Snowflake Marketplace](https://app.snowflake.com/marketplace/providers/GZ2FTZ5POF7/MaxMind). If you do not
 have an existing Snowflake account, you will need to create one before
 requesting access to the GeoLite datasets. Once approved, you will be able to
 query GeoLite data within Snowflake.

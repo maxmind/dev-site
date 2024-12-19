@@ -63,7 +63,7 @@
         {{ if .HasChildren }}
           <ul class="sidebar__child-group js-sidebar-child-group">
             {{ range .Children }}
-              <li {{ if or (eq .Name "Web Services Documentation") (eq .Name "GeoLite2 Free Geolocation Data") }} class="sidebar__group-break" {{ end }}>
+              <li {{ if or (eq .Name "Web Services Documentation") (eq .Name "GeoLite Databases and Web Services") }} class="sidebar__group-break" {{ end }}>
                 <a
                 class="sidebar__child {{ if $currentPage.IsMenuCurrent "geoip" . }}is-active{{ end }}"
                 href="{{ .URL }}">
