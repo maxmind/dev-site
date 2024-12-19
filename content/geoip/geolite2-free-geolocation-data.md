@@ -5,7 +5,7 @@ title: GeoLite Databases and Web Services
 MaxMind offers a free geolocation and ASN data in downloadable database and web service formats. 
 
 {{< link-group/container >}}
-  {{< link-group/card heading="Sign Up for GeoLite" href="https://www.maxmind.com/en/geolite-free-ip-geolocation-data" >}}
+  {{< link-group/card heading="Sign Up for GeoLite" href="https://www.maxmind.com/en/geolite2/signup" >}}
     Start building today with GeoLite databases and web services.
   {{</ link-group/card >}}
   {{< link-group/card heading="Explore GeoLite" href="https://www.maxmind.com/en/geolite-free-ip-geolocation-data" >}}
