@@ -16,15 +16,6 @@ for assistance.
 
 {{< snippet "snippets/binary-databases.md" >}}
 
-| Language or Framework | Documentation                                                                      | Example                                                                                      |
-| --------------------- | ---------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------- |
-| .NET (C#)             | [GitHub - Database Usage](https://github.com/maxmind/GeoIP2-dotnet#database-usage) | [Anonymous IP Example](https://github.com/maxmind/GeoIP2-dotnet#anonymous-ip-database)       |
-| Java                  | [GitHub - Database Usage](https://github.com/maxmind/GeoIP2-java#database-usage)   | [Anonymous IP Example](https://github.com/maxmind/GeoIP2-java#anonymous-ip)                  |
-| Node.js               | [GitHub - Database Usage](https://github.com/maxmind/GeoIP2-node#database-usage)   | [Anonymous IP Example](https://github.com/maxmind/GeoIP2-node#anonymous-ip-database-example) |
-| PHP                   | [GitHub - Database Reader](https://github.com/maxmind/GeoIP2-php#database-reader)  | [Anonymous IP Example](https://github.com/maxmind/GeoIP2-php#anonymous-ip-example)           |
-| Python                | [GitHub - Database Usage](https://github.com/maxmind/GeoIP2-python#database-usage) | [Anonymous IP Example](https://github.com/maxmind/GeoIP2-python#anonymous-ip-database)       |
-| Ruby                  | [GitHub - Database Reader](https://github.com/maxmind/GeoIP2-ruby#database-reader) | [Anonymous IP Example](https://github.com/maxmind/GeoIP2-ruby#anonymous-ip-example)          |
-
 ## CSV Database
 
 {{< snippet "snippets/csv-databases-intro.md" >}}
