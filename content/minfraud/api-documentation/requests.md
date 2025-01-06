@@ -552,6 +552,7 @@ where the event took place
   * `elavon`
   * `emerchantpay`
   * `epay`
+  * `epayco`
   * `eprocessing_network`
   * `epx`
   * `eway`
