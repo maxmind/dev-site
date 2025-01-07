@@ -59,6 +59,10 @@
   ul {
     margin-left: 0;
     padding-left: 0;
+
+    @media only screen and (max-width: 600px) {
+      display: grid;
+    }
   }
 
   li {
