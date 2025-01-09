@@ -1,0 +1,41 @@
+diff_in,old_geoname_id,new_geoname_id,old_city_name,new_city_name,old_country_name,new_country_name,old_country_code,new_country_code,old_subdivision_codes,new_subdivision_codes
+city_name,1252797,1252797,Yamunanagar,Yamuna Nagar,India,India,IN,IN,HR,HR
+city_name,1269976,1269976,Honavar,Honnavar,India,India,IN,IN,KA,KA
+city_name,1255482,1255482,Sullia,Sullya,India,India,IN,IN,KA,KA
+city_name,1282733,1282733,Syāngjā,Syāṅjā,Nepal,Nepal,NP,NP,P4,P4
+city_name,812998,812998,Zaprudki,Zaprudnya,Russia,Russia,RU,RU,SMO,SMO
+geoname_id,2168087,8614218,Dunmore,Dunmore,Australia,Australia,AU,AU,NSW,NSW
+geoname_id,3459406,12966165,Juruena,Juruena,Brazil,Brazil,BR,BR,MT,MT
+geoname_id,3400918,6319901,Eliseu Martins,Eliseu Martins,Brazil,Brazil,BR,BR,PI,PI
+geoname_id,12962874,6317548,Marituba,Marituba,Brazil,Brazil,BR,BR,PA,PA
+geoname_id,6323876,11669527,Sapezal,Sapezal,Brazil,Brazil,BR,BR,MT,MT
+geoname_id,3451203,3451202,Rio das Pedras,Rio das Pedras,Brazil,Brazil,BR,BR,SP,SP
+geoname_id,6317420,12959105,Lago do Junco,Lago do Junco,Brazil,Brazil,BR,BR,MA,MA
+geoname_id,12959180,6318636,Satubinha,Satubinha,Brazil,Brazil,BR,BR,MA,MA
+geoname_id,6317755,6324219,Nova Mutum,Nova Mutum,Brazil,Brazil,BR,BR,MT,MT
+geoname_id,6316880,6323947,Cocalzinho de Goiás,Cocalzinho de Goiás,Brazil,Brazil,BR,BR,GO,GO
+geoname_id,6319406,8508106,Garrafão do Norte,Garrafão do Norte,Brazil,Brazil,BR,BR,PA,PA
+geoname_id,12954562,6323847,Nova Ubiratã,Nova Ubiratã,Brazil,Brazil,BR,BR,MT,MT
+geoname_id,3471674,13121509,Areado,Areado,Brazil,Brazil,BR,BR,MG,MG
+geoname_id,3449502,6323875,Santo Antônio do Leverger,Santo Antônio do Leverger,Brazil,Brazil,BR,BR,MT,MT
+geoname_id,3457362,3457363,Medeiros,Medeiros,Brazil,Brazil,BR,BR,MG,MG
+geoname_id,7583518,3468899,Brotas,Brotas,Brazil,Brazil,BR,BR,SP,SP
+geoname_id,3467524,13032616,Canelinha,Canelinha,Brazil,Brazil,BR,BR,SC,SC
+geoname_id,11969001,3447651,Sertãozinho,Sertãozinho,Brazil,Brazil,BR,BR,SP,SP
+geoname_id,3480595,13004421,Maceió,Maceió,Brazil,Brazil,BR,BR,RJ,RJ
+geoname_id,12031951,6075292,Mission,Mission,Canada,Canada,CA,CA,BC,BC
+geoname_id,6824255,13131810,Xiaohekou,Xiaohekou,China,China,CN,CN,YN,YN
+geoname_id,3667902,3667901,Soatá,Soatá,Colombia,Colombia,CO,CO,BOY,BOY
+geoname_id,3665933,3665934,Villanueva,Villanueva,Colombia,Colombia,CO,CO,LAG,LAG
+geoname_id,719111,719110,Kétpó,Kétpó,Hungary,Hungary,HU,HU,JN,JN
+geoname_id,1632330,1632331,Parigi,Parigi,Indonesia,Indonesia,ID,ID,ST,ST
+geoname_id,8079891,6782069,Banjaranyar,Banjaranyar,Indonesia,Indonesia,ID,ID,JI,JI
+geoname_id,3180511,8980123,Carignano,Carignano,Italy,Italy,IT,IT,"21, TO","21, TO"
+geoname_id,3761092,3514906,Úrsulo Galván,Úrsulo Galván,Mexico,Mexico,MX,MX,VER,VER
+geoname_id,3158214,780225,Engenes,Engenes,Norway,Norway,NO,NO,19,19
+geoname_id,3695552,3695551,Las Lomas,Las Lomas,Peru,Peru,PE,PE,PIU,PIU
+geoname_id,1683861,1683860,Talisay,Talisay,Philippines,Philippines,PH,PH,"40, BTG","40, BTG"
+geoname_id,2739357,2739358,Fornos,Fornos,Portugal,Portugal,PT,PT,1,1
+geoname_id,2642470,6946887,Milton Bryan,Milton Bryan,United Kingdom,United Kingdom,GB,GB,"ENG, CBF","ENG, CBF"
+geoname_id,5197680,4559153,Lehman,Lehman,United States,United States,US,US,PA,PA
+subdivision_codes,3119231,3119231,La Pineda,La Pineda,Spain,Spain,ES,ES,"CT, B","CT, T"
