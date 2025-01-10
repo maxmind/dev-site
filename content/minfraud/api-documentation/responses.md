@@ -991,9 +991,9 @@ will not be present in the response.
   The machine-readable code for the risk reason. We have listed a few examples in the table below. A complete list of current codes may be provided on request.
 | Code                                       | 
   | ------------------------------------------ | ---------------------------------------------------------------------------------------------------------------- |
-  | ANONYMOUS\_IP                              | Risk due to IP being an Anonymous IP.                                                                            |
-  | COUNTRY                                    | The country associated with the request lowered the overall risk score.                                                            |
-  | ORG\_DISTANCE\_RISK                        | The risk of the ISP combined with the distance between the billing address and IP address location raised the overall risk score.                                                |
+  | ANONYMOUS\_IP                              | 
+  | COUNTRY                                    | 
+  | ORG\_DISTANCE\_RISK                        | 
   
   {{</minfraud-schema-row>}}
 
@@ -1001,9 +1001,9 @@ will not be present in the response.
   The human-readable description of the risk reason. A code may have more than one distinct reason depending on the effect of the overall risk score. 
   | Code                                       | Reason                                                                                                           |
   | ------------------------------------------ | ---------------------------------------------------------------------------------------------------------------- |
-  | ANONYMOUS\_IP                              | The Anonymous IP address raised the overall risk score.                                                                   |
-  | COUNTRY                                    | Riskiness of the country associated with the request.                                                            |
-  | ORG\_DISTANCE\_RISK                        | Risk of ISP and distance between billing address and IP location.                                                |
+  | ANONYMOUS\_IP                              | The Anonymous IP address raised the overall risk score                                                                    |
+  | COUNTRY                                    | The country associated with the request lowered the overall risk score.                                                            |
+  | ORG\_DISTANCE\_RISK                        | The risk of the ISP combined with the distance between the billing address and IP address location raised the overall risk score.                                                |
   {{</minfraud-schema-row>}}
 {{</ schema-table >}}
 
