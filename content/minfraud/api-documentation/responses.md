@@ -953,7 +953,8 @@ will not be present in the response.
     "reasons": [
       {
         "code": "TIME_OF_DAY",
-        "reason": "The local time of day of the request raised the overall risk score"
+        "reason": "The local time of day of the request raised the 
+        overall risk score"
       }
     ]
   },
@@ -962,7 +963,8 @@ will not be present in the response.
     "reasons": [
       {
         "code": "EMAIL_DOMAIN_NEW",
-        "reason": "The email domain being recently seen for the first time in the minFraud network raised the overall risk score"
+        "reason": "The email domain being recently seen for the first time 
+        in the minFraud network raised the overall risk score"
       }
     ]
   },
@@ -971,7 +973,8 @@ will not be present in the response.
     "reasons": [
       {
         "code": "PHONE_ACTIVITY",
-        "reason": "minFraud network activity of the phone number lowered the overall risk score"
+        "reason": "minFraud network activity of the phone number lowered 
+        the overall risk score"
       }
     ]
   }
@@ -989,12 +992,11 @@ will not be present in the response.
 
   {{< minfraud-schema-row key="code" type="response" valueType="string" valueTypeNote="format: enum, max length: 255" factors="true" >}}
   The machine-readable code for the risk reason. We have listed a few examples in the table below. A complete list of current codes may be provided on request.
-| Code                                       | 
-  | ------------------------------------------ | 
-  | ANONYMOUS\_IP                              | 
-  | COUNTRY                                    | 
-  | ORG\_DISTANCE\_RISK                        | 
-  
+ | Code                                       |                                                                                                            |
+  | ------------------------------------------ | ---------------------------------------------------------------------------------------------------------------- |
+  | ANONYMOUS\_IP                              |                                                                     |
+  | COUNTRY                                    |                                                             |
+  | ORG\_DISTANCE\_RISK                        |                                                 |
   {{</minfraud-schema-row>}}
 
   {{< minfraud-schema-row key="reason" type="response" valueType="string" factors="true" >}}
