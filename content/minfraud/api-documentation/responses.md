@@ -944,7 +944,12 @@ will not be present in the response.
     "reasons": [
       {
         "code": "ANONYMOUS_IP",
-        "reason": "Risk due to IP being an Anonymous IP"
+        "reason": "The Anonymous IP address raised the overall risk score"
+      },
+      {
+        "code": "IP_ISSUER_ID_NUMBER_VELOCITY",
+        "reason": "The number of distinct Issuer ID Numbers found in the 
+        velocity check on IP address raised the overall risk score"
       }
     ]
   },
@@ -953,7 +958,8 @@ will not be present in the response.
     "reasons": [
       {
         "code": "TIME_OF_DAY",
-        "reason": "Risk due to local time of day"
+        "reason": "The local time of day of the request raised the overall 
+        risk score"
       }
     ]
   },
@@ -961,8 +967,9 @@ will not be present in the response.
     "multiplier": 1.6,
     "reasons": [
       {
-        "reason": "Riskiness of newly-sighted email domain",
-        "code": "EMAIL_DOMAIN_NEW"
+        "code": "EMAIL_DOMAIN_NEW",
+        "reason": "The email domain being recently seen for the first time 
+        in the minFraud network raised the overall risk score"
       }
     ]
   },
@@ -970,8 +977,9 @@ will not be present in the response.
     "multiplier": 0.34,
     "reasons": [
       {
-        "code": "EMAIL_ADDRESS_NEW",
-        "reason": "Riskiness of newly-sighted email address"
+        "code": "PHONE_ACTIVITY",
+        "reason": "minFraud network activity of the phone number lowered 
+        the overall risk score"
       }
     ]
   }
@@ -988,51 +996,21 @@ will not be present in the response.
   {{</minfraud-schema-row>}}
 
   {{< minfraud-schema-row key="code" type="response" valueType="string" valueTypeNote="format: enum, max length: 255" factors="true" >}}
-  The machine-readable code for the risk reason. Although more codes may be added in the future, the current codes are:
-
-  | Code                                       | Reason                                                                                                           |
-  | ------------------------------------------ | ---------------------------------------------------------------------------------------------------------------- |
-  | BROWSER\_LANGUAGE                          | Riskiness of the browser user-agent and language associated with the request.                                    |
-  | BUSINESS\_ACTIVITY                         | Riskiness of business activity associated with the request.                                                      |
-  | COUNTRY                                    | Riskiness of the country associated with the request.                                                            |
-  | CUSTOMER\_ID                               | Riskiness of a customer's activity.                                                                              |
-  | EMAIL\_DOMAIN                              | Riskiness of email domain.                                                                                       |
-  | EMAIL\_DOMAIN\_NEW                         | Riskiness of newly-sighted email domain.                                                                         |
-  | EMAIL\_ADDRESS\_NEW                        | Riskiness of newly-sighted email address.                                                                        |
-  | EMAIL\_LOCAL\_PART                         | Riskiness of the local part of the email address.                                                                |
-  | EMAIL\_VELOCITY                            | Velocity on email - many requests on same email over short period of time.                                       |
-  | ISSUER\_ID\_NUMBER\_COUNTRY\_MISMATCH      | Riskiness of the country mismatch between IP, billing, shipping and IIN country.                                 |
-  | ISSUER\_ID\_NUMBER\_ON\_SHOP\_ID           | Risk of Issuer ID Number for the shop ID.                                                                        |
-  | ISSUER\_ID\_NUMBER\_LAST\_DIGITS\_ACTIVITY | Riskiness of many recent requests and previous high-risk requests on the IIN and last digits of the credit card. |
-  | ISSUER\_ID\_NUMBER\_SHOP\_ID\_VELOCITY     | Risk of recent Issuer ID Number activity for the shop ID.                                                        |
-  | INTRACOUNTRY\_DISTANCE                     | Risk of distance between IP, billing, and shipping location.                                                     |
-  | ANONYMOUS\_IP                              | Risk due to IP being an Anonymous IP.                                                                            |
-  | IP\_BILLING\_POSTAL\_VELOCITY              | Velocity of distinct billing postal code on IP address.                                                          |
-  | IP\_EMAIL\_VELOCITY                        | Velocity of distinct email address on IP address.                                                                |
-  | IP\_HIGH\_RISK\_DEVICE                     | High-risk device sighted on IP address.                                                                          |
-  | IP\_ISSUER\_ID\_NUMBER\_VELOCITY           | Velocity of distinct IIN on IP address.                                                                          |
-  | IP\_ACTIVITY                               | Riskiness of IP based on minFraud network activity.                                                              |
-  | LANGUAGE                                   | Riskiness of browser language.                                                                                   |
-  | MAX\_RECENT\_EMAIL                         | Riskiness of email address based on past minFraud risk scores on email.                                          |
-  | MAX\_RECENT\_PHONE                         | Riskiness of phone number based on past minFraud risk scores on phone.                                           |
-  | MAX\_RECENT\_SHIP                          | Riskiness of email address based on past minFraud risk scores on ship address.                                   |
-  | MULTIPLE\_CUSTOMER\_ID\_ON\_EMAIL          | Riskiness of email address having many customer IDs.                                                             |
-  | ORDER\_AMOUNT                              | Riskiness of the order amount.                                                                                   |
-  | ORG\_DISTANCE\_RISK                        | Risk of ISP and distance between billing address and IP location.                                                |
-  | PHONE                                      | Riskiness of the phone number or related numbers.                                                                |
-  | CART                                       | Riskiness of shopping cart contents.                                                                             |
-  | TIME\_OF\_DAY                              | Risk due to local time of day.                                                                                   |
-  | TRANSACTION\_REPORT\_EMAIL                 | Risk due to transaction reports on the email address.                                                            |
-  | TRANSACTION\_REPORT\_IP                    | Risk due to transaction reports on the IP address.                                                               |
-  | TRANSACTION\_REPORT\_PHONE                 | Risk due to transaction reports on the phone number.                                                             |
-  | TRANSACTION\_REPORT\_SHIP                  | Risk due to transaction reports on the shipping address.                                                         |
-  | EMAIL\_ACTIVITY                            | Riskiness of the email address based on minFraud network activity.                                               |
-  | PHONE\_ACTIVITY                            | Riskiness of the phone number based on minFraud network activity.                                                |
-  | SHIP\_ACTIVITY                             | Riskiness of ship address based on minFraud network activity.                                                    |
+  The machine-readable code for the risk reason. We have listed a few examples in the table below. A complete list of current codes may be provided on request.
+ | Code            |
+ | --------------- |
+ | ANONYMOUS\_IP           |                                                           
+ |  COUNTRY                |                   
+ | ORG\_DISTANCE\_RISK     | 
   {{</minfraud-schema-row>}}
 
   {{< minfraud-schema-row key="reason" type="response" valueType="string" factors="true" >}}
-  The human-readable description of the risk reason.
+  The human-readable description of the risk reason and its effect on the overall risk score.
+  | Code                                       | Reason                                                                                                           |
+  | ------------------------------------------ | ---------------------------------------------------------------------------------------------------------------- |
+  | ANONYMOUS\_IP                              | The Anonymous IP address raised the overall risk score                                                                    |
+  | COUNTRY                                    | The country associated with the request lowered the overall risk score                                                            |
+  | ORG\_DISTANCE\_RISK                        | The risk of the ISP combined with the distance between the billing address and IP address location raised the overall risk score                                                |
   {{</minfraud-schema-row>}}
 {{</ schema-table >}}
 
