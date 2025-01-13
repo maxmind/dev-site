@@ -945,6 +945,11 @@ will not be present in the response.
       {
         "code": "ANONYMOUS_IP",
         "reason": "The Anonymous IP address raised the overall risk score"
+      },
+      {
+        "code": "IP_ISSUER_ID_NUMBER_VELOCITY",
+        "reason": "The number of distinct Issuer ID Numbers found in the 
+        velocity check on IP address raised the overall risk score"
       }
     ]
   },
@@ -953,8 +958,8 @@ will not be present in the response.
     "reasons": [
       {
         "code": "TIME_OF_DAY",
-        "reason": "The local time of day of the request raised the 
-        overall risk score"
+        "reason": "The local time of day of the request raised the overall 
+        risk score"
       }
     ]
   },
@@ -1000,12 +1005,12 @@ will not be present in the response.
   {{</minfraud-schema-row>}}
 
   {{< minfraud-schema-row key="reason" type="response" valueType="string" factors="true" >}}
-  The human-readable description of the risk reason. A code may have more than one distinct reason depending on the effect of the overall risk score. 
+  The human-readable description of the risk reason and its effect on the overall risk score.
   | Code                                       | Reason                                                                                                           |
   | ------------------------------------------ | ---------------------------------------------------------------------------------------------------------------- |
   | ANONYMOUS\_IP                              | The Anonymous IP address raised the overall risk score                                                                    |
-  | COUNTRY                                    | The country associated with the request lowered the overall risk score.                                                            |
-  | ORG\_DISTANCE\_RISK                        | The risk of the ISP combined with the distance between the billing address and IP address location raised the overall risk score.                                                |
+  | COUNTRY                                    | The country associated with the request lowered the overall risk score                                                            |
+  | ORG\_DISTANCE\_RISK                        | The risk of the ISP combined with the distance between the billing address and IP address location raised the overall risk score                                                |
   {{</minfraud-schema-row>}}
 {{</ schema-table >}}
 
