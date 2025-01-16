@@ -388,7 +388,7 @@ address.
   {{</ geoip-schema-row >}}
 
   {{< geoip-schema-row key="metro_code" valueType="integer" city="true" insights="true">}}
-  Metro code is a geolocation target code from Google.
+  **Deprecated**. This is a no-longer-maintained code for targeting advertisements in Google.
   {{</ geoip-schema-row >}}
 
   {{< geoip-schema-row key="population_density" valueType="integer" insights="true">}}
