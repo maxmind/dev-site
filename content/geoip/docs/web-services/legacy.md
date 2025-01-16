@@ -176,7 +176,7 @@ encoding is also referred to as latin1.
         <td>Metro code</td>
         <td>integer</td>
         <td>
-          **Deprecated**. This is a no-longer-maintained code for targeting 
+          <strong>Deprecated</strong>. This is a no-longer-maintained code for targeting 
           advertisements in Google.
         </td>
         <td></td>
