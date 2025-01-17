@@ -176,8 +176,8 @@ encoding is also referred to as latin1.
         <td>Metro code</td>
         <td>integer</td>
         <td>
-          The metro code associated with the IP address. These are only
-          available for IP addresses in the US.
+          <strong>Deprecated</strong>. This is a no-longer-maintained code for targeting 
+          advertisements in Google.
         </td>
         <td></td>
         <td></td>
