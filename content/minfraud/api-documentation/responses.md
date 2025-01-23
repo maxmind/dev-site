@@ -996,7 +996,7 @@ will not be present in the response.
   {{</minfraud-schema-row>}}
 
   {{< minfraud-schema-row key="code" type="response" valueType="string" valueTypeNote="format: enum, max length: 255" factors="true" >}}
-  The machine-readable code for the risk reason. We have listed a few examples in the table below. A complete list of current codes may be provided on request.
+  A machine-readable code identifying the risk reason. Examples listed below. Although more codes may be added in the future, a list of current codes may be provided on request.
  | Code            |
  | --------------- |
  | ANONYMOUS\_IP           |                                                           
