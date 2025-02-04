@@ -987,15 +987,15 @@ will not be present in the response.
 ```
 
 {{< schema-table key="risk_score_reason" >}}
-  {{< minfraud-schema-row key="multiplier" type="response" valueType="Decimal" valueTypeNote="min: 0.01, max: 100" factors="true" >}}
+  {{< minfraud-schema-row key="multiplier" type="response" valueType="Decimal" valueTypeNote="min: 0.01, max: 100" score="true" insights="true" factors="true" >}}
   The factor by which the risk score is increased (if the value is greater than 1) or decreased (if the value is less than 1) for given risk reason(s). Multipliers greater than 1.5 and less than 0.66 are considered significant and lead to risk reason(s) being present.
   {{</minfraud-schema-row>}}
 
-  {{< minfraud-schema-row key="reasons" type="response" valueType="array" factors="true" >}}
+  {{< minfraud-schema-row key="reasons" type="response" valueType="array" score="true" insights="true" factors="true" >}}
   This array contains objects that describe one of the reasons for the multiplier.
   {{</minfraud-schema-row>}}
 
-  {{< minfraud-schema-row key="code" type="response" valueType="string" valueTypeNote="format: enum, max length: 255" factors="true" >}}
+  {{< minfraud-schema-row key="code" type="response" valueType="string" valueTypeNote="format: enum, max length: 255" score="true" insights="true" factors="true" >}}
   A machine-readable code identifying the risk reason. Examples listed below. Although more codes may be added in the future, a list of current codes may be provided on request.
  | Code            |
  | --------------- |
@@ -1004,7 +1004,7 @@ will not be present in the response.
  | ORG\_DISTANCE\_RISK     | 
   {{</minfraud-schema-row>}}
 
-  {{< minfraud-schema-row key="reason" type="response" valueType="string" factors="true" >}}
+  {{< minfraud-schema-row key="reason" type="response" valueType="string" score="true" insights="true" factors="true">}}
   The human-readable description of the risk reason and its effect on the overall risk score.
   | Code                                       | Reason                                                                                                           |
   | ------------------------------------------ | ---------------------------------------------------------------------------------------------------------------- |
