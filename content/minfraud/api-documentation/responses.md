@@ -1624,7 +1624,7 @@ Factors services, and a full example of the JSON body document for an error.
       }
     ]
   }
-    ] ,
+    ],
     "subdivisions": [
       {
         "confidence": 50,
