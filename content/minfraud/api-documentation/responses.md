@@ -948,8 +948,7 @@ will not be present in the response.
       },
       {
         "code": "IP_ISSUER_ID_NUMBER_VELOCITY",
-        "reason": "The number of distinct Issuer ID Numbers found in the 
-        velocity check on IP address raised the overall risk score"
+        "reason": "The number of distinct Issuer ID Numbers found in the velocity check on IP address raised the overall risk score"
       }
     ]
   },
@@ -958,8 +957,7 @@ will not be present in the response.
     "reasons": [
       {
         "code": "TIME_OF_DAY",
-        "reason": "The local time of day of the request raised the overall 
-        risk score"
+        "reason": "The local time of day of the request raised the overall risk score"
       }
     ]
   },
@@ -968,8 +966,7 @@ will not be present in the response.
     "reasons": [
       {
         "code": "EMAIL_DOMAIN_NEW",
-        "reason": "The email domain being recently seen for the first time 
-        in the minFraud network raised the overall risk score"
+        "reason": "The email domain being recently seen for the first time in the minFraud network raised the overall risk score"
       }
     ]
   },
@@ -978,8 +975,7 @@ will not be present in the response.
     "reasons": [
       {
         "code": "PHONE_ACTIVITY",
-        "reason": "minFraud network activity of the phone number lowered 
-        the overall risk score"
+        "reason": "minFraud network activity of the phone number lowered the overall risk score"
       }
     ]
   }
@@ -1580,14 +1576,46 @@ Factors services, and a full example of the JSON body document for an error.
       "type": "military"
     },
     "risk_reasons": [
+  {
+    "multiplier": 45,
+    "reasons": [
       {
         "code": "ANONYMOUS_IP",
-        "reason": "The IP address belongs to an anonymous network. See /ip_address/traits for more details."
+        "reason": "The Anonymous IP address raised the overall risk score"
       },
       {
-        "code": "MINFRAUD_NETWORK_ACTIVITY",
-        "reason": "Suspicious activity has been seen on this IP address across minFraud customers."
+        "code": "IP_ISSUER_ID_NUMBER_VELOCITY",
+        "reason": "The number of distinct Issuer ID Numbers found in the velocity check on IP address raised the overall risk score"
       }
+    ]
+  },
+  {
+    "multiplier": 1.8,
+    "reasons": [
+      {
+        "code": "TIME_OF_DAY",
+        "reason": "The local time of day of the request raised the overall risk score"
+      }
+    ]
+  },
+  {
+    "multiplier": 1.6,
+    "reasons": [
+      {
+        "code": "EMAIL_DOMAIN_NEW",
+        "reason": "The email domain being recently seen for the first time in the minFraud network raised the overall risk score"
+      }
+    ]
+  },
+  {
+    "multiplier": 0.34,
+    "reasons": [
+      {
+        "code": "PHONE_ACTIVITY",
+        "reason": "minFraud network activity of the phone number lowered the overall risk score"
+      }
+    ]
+  }
     ],
     "subdivisions": [
       {
