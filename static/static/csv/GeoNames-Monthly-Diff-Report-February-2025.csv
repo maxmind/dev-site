@@ -1,0 +1,145 @@
+diff_in,old_geoname_id,new_geoname_id,old_city_name,new_city_name,old_country_name,new_country_name,old_country_code,new_country_code,old_subdivision_codes,new_subdivision_codes
+city_name,1529435,1529435,Yili,Ghulja,China,China,CN,CN,XJ,XJ
+city_name,1807683,1807683,Yanshi Chengguanzhen,Yanshi,China,China,CN,CN,HA,HA
+city_name,2989646,2989646,Oissel,Oissel-sur-Seine,France,France,FR,FR,"NOR, 76","NOR, 76"
+city_name,3014647,3014647,Grigny,Grigny-sur-Rhône,France,France,FR,FR,"ARA, 69","ARA, 69"
+city_name,2992799,2992799,Montcourt-Fromonville,Moncourt-Fromonville,France,France,FR,FR,"IDF, 77","IDF, 77"
+city_name,2998810,2998810,Le Vigan,Le Vigan-en-Quercy,France,France,FR,FR,"OCC, 46","OCC, 46"
+city_name,1269723,1269723,English Bazar,Malda,India,India,IN,IN,WB,WB
+city_name,293982,293982,Omer,Omer,Israel,Israel,IL,IL,D,D
+city_name,8310136,8310136,Tel Sheva',Tel Sheva,Israel,Israel,IL,IL,D,D
+city_name,1563926,1563926,Trà Vinh,Thành phố Trà Vinh,Vietnam,Vietnam,VN,VN,51,51
+geoname_id,3432302,12675239,La Luisa,La Luisa,Argentina,Argentina,AR,AR,B,B
+geoname_id,3434508,3434509,El Palomar,El Palomar,Argentina,Argentina,AR,AR,B,B
+geoname_id,8614218,2168087,Dunmore,Dunmore,Australia,Australia,AU,AU,NSW,NSW
+geoname_id,3465674,13015480,Congonhal,Congonhal,Brazil,Brazil,BR,BR,MG,MG
+geoname_id,8477582,3452682,Primavera,Primavera,Brazil,Brazil,BR,BR,SP,SP
+geoname_id,7624282,3448980,São João,São João,Brazil,Brazil,BR,BR,PR,PR
+geoname_id,12991708,3458889,Lamarão,Lamarão,Brazil,Brazil,BR,BR,BA,BA
+geoname_id,7582886,3448525,São Martinho,São Martinho,Brazil,Brazil,BR,BR,RS,RS
+geoname_id,12959105,6317420,Lago do Junco,Lago do Junco,Brazil,Brazil,BR,BR,MA,MA
+geoname_id,3665315,6319297,Anori,Anori,Brazil,Brazil,BR,BR,AM,AM
+geoname_id,3452379,3452380,Pratápolis,Pratápolis,Brazil,Brazil,BR,BR,MG,MG
+geoname_id,6317910,6323852,Pedra Preta,Pedra Preta,Brazil,Brazil,BR,BR,MT,MT
+geoname_id,13121509,3471674,Areado,Areado,Brazil,Brazil,BR,BR,MG,MG
+geoname_id,7593768,3455119,Paraíso,Paraíso,Brazil,Brazil,BR,BR,SP,SP
+geoname_id,3388809,3388812,São Francisco,São Francisco,Brazil,Brazil,BR,BR,PB,PB
+geoname_id,3456916,3456917,Monjolos,Monjolos,Brazil,Brazil,BR,BR,MG,MG
+geoname_id,6138337,6138336,Saint-Henri-de-Taillon,Saint-Henri-de-Taillon,Canada,Canada,CA,CA,QC,QC
+geoname_id,1989888,1808316,Heshan,Heshan,China,China,CN,CN,HN,HN
+geoname_id,2617555,2617554,Lindved,Lindved,Denmark,Denmark,DK,DK,82,82
+geoname_id,2617176,2617175,Lystrup,Lystrup,Denmark,Denmark,DK,DK,82,82
+geoname_id,13116640,13152505,Santa Cruz,Santa Cruz,Ecuador,Ecuador,EC,EC,L,L
+geoname_id,6553004,13192010,Lemwerder,Lemwerder,Germany,Germany,DE,DE,NI,NI
+geoname_id,1818677,1818676,Tai Peng,Tai Peng,Hong Kong,Hong Kong,HK,HK,,
+geoname_id,6792451,1621395,Wonosobo,Wonosobo,Indonesia,Indonesia,ID,ID,JT,JT
+geoname_id,11010364,8572885,Hikawadai,Hikawadai,Japan,Japan,JP,JP,13,13
+geoname_id,8583353,4012176,Culiacán,Culiacán,Mexico,Mexico,MX,MX,SIN,SIN
+geoname_id,2208239,6212213,Saint Kilda,Saint Kilda,New Zealand,New Zealand,NZ,NZ,OTA,OTA
+geoname_id,3132855,3132852,Valle,Valle,Norway,Norway,NO,NO,42,42
+geoname_id,1691490,1691487,Rosario,Rosario,Philippines,Philippines,PH,PH,"40, BTG","40, BTG"
+geoname_id,1719683,1719684,Camiling,Camiling,Philippines,Philippines,PH,PH,"03, TAR","03, TAR"
+geoname_id,2262625,2262626,Torrão,Torrão,Portugal,Portugal,PT,PT,15,15
+geoname_id,2714736,2714737,Fjällbacka,Fjällbacka,Sweden,Sweden,SE,SE,O,O
+geoname_id,2681305,2681304,Ruda,Ruda,Sweden,Sweden,SE,SE,H,H
+geoname_id,2726517,2726519,Alnö,Alnö,Sweden,Sweden,SE,SE,Y,Y
+geoname_id,1607530,1607532,Phra Nakhon Si Ayutthaya,Phra Nakhon Si Ayutthaya,Thailand,Thailand,TH,TH,14,14
+geoname_id,1605451,7510712,Thep Sathit,Thep Sathit,Thailand,Thailand,TH,TH,36,36
+geoname_id,5105860,4504635,Voorhees Township,Voorhees Township,United States,United States,US,US,NJ,NJ
+geoname_id,5392527,5392528,San Pedro,San Pedro,United States,United States,US,US,CA,CA
+subdivision_codes,2783081,2783081,Zwijndrecht,Zwijndrecht,Belgium,Belgium,BE,BE,"VLG, VAN","VLG, VOV"
+subdivision_codes,2800765,2800765,Burcht,Burcht,Belgium,Belgium,BE,BE,"VLG, VAN","VLG, VOV"
+subdivision_codes,2654702,2654702,Brigstock,Brigstock,United Kingdom,United Kingdom,GB,GB,"ENG, NTH","ENG, NNH"
+subdivision_codes,2633630,2633630,Woodnewton,Woodnewton,United Kingdom,United Kingdom,GB,GB,"ENG, NTH","ENG, NNH"
+subdivision_codes,2633981,2633981,Wicken,Wicken,United Kingdom,United Kingdom,GB,GB,"ENG, NTH","ENG, WNH"
+subdivision_codes,2648048,2648048,Great Oakley,Great Oakley,United Kingdom,United Kingdom,GB,GB,"ENG, NTH","ENG, NNH"
+subdivision_codes,2636255,2636255,Tansor,Tansor,United Kingdom,United Kingdom,GB,GB,"ENG, NTH","ENG, NNH"
+subdivision_codes,2641430,2641430,Northampton,Northampton,United Kingdom,United Kingdom,GB,GB,"ENG, NTH","ENG, WNH"
+subdivision_codes,2634578,2634578,Wellingborough,Wellingborough,United Kingdom,United Kingdom,GB,GB,"ENG, NTH","ENG, NNH"
+subdivision_codes,2638946,2638946,Rushden,Rushden,United Kingdom,United Kingdom,GB,GB,"ENG, NTH","ENG, NNH"
+subdivision_codes,2651485,2651485,Daventry,Daventry,United Kingdom,United Kingdom,GB,GB,"ENG, NTH","ENG, WNH"
+subdivision_codes,2635597,2635597,Towcester,Towcester,United Kingdom,United Kingdom,GB,GB,"ENG, NTH","ENG, WNH"
+subdivision_codes,2641429,2641429,Northamptonshire,Northamptonshire,United Kingdom,United Kingdom,GB,GB,"ENG, NTH",ENG
+subdivision_codes,2655012,2655012,Brackley,Brackley,United Kingdom,United Kingdom,GB,GB,"ENG, NTH","ENG, WNH"
+subdivision_codes,2646022,2646022,Isham,Isham,United Kingdom,United Kingdom,GB,GB,"ENG, NTH","ENG, NNH"
+subdivision_codes,2637827,2637827,Silverstone,Silverstone,United Kingdom,United Kingdom,GB,GB,"ENG, NTH","ENG, WNH"
+subdivision_codes,2646055,2646055,Irchester,Irchester,United Kingdom,United Kingdom,GB,GB,"ENG, NTH","ENG, NNH"
+subdivision_codes,2639074,2639074,Rothwell,Rothwell,United Kingdom,United Kingdom,GB,GB,"ENG, NTH","ENG, NNH"
+subdivision_codes,12265237,12265237,Woodford Halse,Woodford Halse,United Kingdom,United Kingdom,GB,GB,"ENG, NTH","ENG, WNH"
+subdivision_codes,2649428,2649428,Finedon,Finedon,United Kingdom,United Kingdom,GB,GB,"ENG, NTH","ENG, NNH"
+subdivision_codes,2635937,2635937,Thrapston,Thrapston,United Kingdom,United Kingdom,GB,GB,"ENG, NTH","ENG, NNH"
+subdivision_codes,2639600,2639600,Raunds,Raunds,United Kingdom,United Kingdom,GB,GB,"ENG, NTH","ENG, NNH"
+subdivision_codes,11593354,11593354,Old Stratford,Old Stratford,United Kingdom,United Kingdom,GB,GB,"ENG, NTH","ENG, WNH"
+subdivision_codes,2647698,2647698,Hackleton,Hackleton,United Kingdom,United Kingdom,GB,GB,"ENG, NTH","ENG, WNH"
+subdivision_codes,2654660,2654660,Brixworth,Brixworth,United Kingdom,United Kingdom,GB,GB,"ENG, NTH","ENG, WNH"
+subdivision_codes,2646546,2646546,Horton,Horton,United Kingdom,United Kingdom,GB,GB,"ENG, NTH","ENG, WNH"
+subdivision_codes,2646034,2646034,Irthlingborough,Irthlingborough,United Kingdom,United Kingdom,GB,GB,"ENG, NTH","ENG, NNH"
+subdivision_codes,2634407,2634407,West Haddon,West Haddon,United Kingdom,United Kingdom,GB,GB,"ENG, NTH","ENG, WNH"
+subdivision_codes,11593182,11593182,Evenley,Evenley,United Kingdom,United Kingdom,GB,GB,"ENG, NTH","ENG, WNH"
+subdivision_codes,2646985,2646985,Higham Ferrers,Higham Ferrers,United Kingdom,United Kingdom,GB,GB,"ENG, NTH","ENG, NNH"
+subdivision_codes,2648160,2648160,Great Billing,Great Billing,United Kingdom,United Kingdom,GB,GB,"ENG, NTH","ENG, WNH"
+subdivision_codes,2654208,2654208,Burton Latimer,Burton Latimer,United Kingdom,United Kingdom,GB,GB,"ENG, NTH","ENG, NNH"
+subdivision_codes,2643714,2643714,Long Buckby,Long Buckby,United Kingdom,United Kingdom,GB,GB,"ENG, NTH","ENG, WNH"
+subdivision_codes,2651311,2651311,Desborough,Desborough,United Kingdom,United Kingdom,GB,GB,"ENG, NTH","ENG, NNH"
+subdivision_codes,2641869,2641869,Nassington,Nassington,United Kingdom,United Kingdom,GB,GB,"ENG, NTH","ENG, NNH"
+subdivision_codes,2642124,2642124,Moulton,Moulton,United Kingdom,United Kingdom,GB,GB,"ENG, NTH","ENG, WNH"
+subdivision_codes,6619946,6619946,Mawsley,Mawsley,United Kingdom,United Kingdom,GB,GB,"ENG, NTH","ENG, WNH"
+subdivision_codes,2636000,2636000,Thornby,Thornby,United Kingdom,United Kingdom,GB,GB,"ENG, NTH","ENG, WNH"
+subdivision_codes,2635770,2635770,Titchmarsh,Titchmarsh,United Kingdom,United Kingdom,GB,GB,"ENG, NTH","ENG, NNH"
+subdivision_codes,2640825,2640825,Oundle,Oundle,United Kingdom,United Kingdom,GB,GB,"ENG, NTH","ENG, NNH"
+subdivision_codes,2650552,2650552,Earls Barton,Earls Barton,United Kingdom,United Kingdom,GB,GB,"ENG, NTH","ENG, NNH"
+subdivision_codes,2654372,2654372,Bugbrooke,Bugbrooke,United Kingdom,United Kingdom,GB,GB,"ENG, NTH","ENG, WNH"
+subdivision_codes,12265705,12265705,Scaldwell,Scaldwell,United Kingdom,United Kingdom,GB,GB,"ENG, NTH","ENG, WNH"
+subdivision_codes,2649280,2649280,Flore,Flore,United Kingdom,United Kingdom,GB,GB,"ENG, NTH","ENG, WNH"
+subdivision_codes,2636342,2636342,Syresham,Syresham,United Kingdom,United Kingdom,GB,GB,"ENG, NTH","ENG, WNH"
+subdivision_codes,2637034,2637034,Stanwick,Stanwick,United Kingdom,United Kingdom,GB,GB,"ENG, NTH","ENG, NNH"
+subdivision_codes,2655026,2655026,Bozeat,Bozeat,United Kingdom,United Kingdom,GB,GB,"ENG, NTH","ENG, NNH"
+subdivision_codes,2656711,2656711,Aynho,Aynho,United Kingdom,United Kingdom,GB,GB,"ENG, NTH","ENG, WNH"
+subdivision_codes,11592587,11592587,Greens Norton,Greens Norton,United Kingdom,United Kingdom,GB,GB,"ENG, NTH","ENG, WNH"
+subdivision_codes,2634589,2634589,Welford,Welford,United Kingdom,United Kingdom,GB,GB,"ENG, NTH","ENG, WNH"
+subdivision_codes,2655118,2655118,Boughton,Boughton,United Kingdom,United Kingdom,GB,GB,"ENG, NTH","ENG, WNH"
+subdivision_codes,2655341,2655341,Blisworth,Blisworth,United Kingdom,United Kingdom,GB,GB,"ENG, NTH","ENG, WNH"
+subdivision_codes,2633697,2633697,Wollaston,Wollaston,United Kingdom,United Kingdom,GB,GB,"ENG, NTH","ENG, NNH"
+subdivision_codes,2641874,2641874,Naseby,Naseby,United Kingdom,United Kingdom,GB,GB,"ENG, NTH","ENG, WNH"
+subdivision_codes,6951836,6951836,Stoke Bruerne,Stoke Bruerne,United Kingdom,United Kingdom,GB,GB,"ENG, NTH","ENG, WNH"
+subdivision_codes,11592637,11592637,Yardley Gobion,Yardley Gobion,United Kingdom,United Kingdom,GB,GB,"ENG, NTH","ENG, WNH"
+subdivision_codes,2653416,2653416,Chacombe,Chacombe,United Kingdom,United Kingdom,GB,GB,"ENG, NTH","ENG, WNH"
+subdivision_codes,2634011,2634011,Whittlebury,Whittlebury,United Kingdom,United Kingdom,GB,GB,"ENG, NTH","ENG, WNH"
+subdivision_codes,2648122,2648122,Great Doddington,Great Doddington,United Kingdom,United Kingdom,GB,GB,"ENG, NTH","ENG, NNH"
+subdivision_codes,2651989,2651989,Crick,Crick,United Kingdom,United Kingdom,GB,GB,"ENG, NTH","ENG, WNH"
+subdivision_codes,2654509,2654509,Broughton,Broughton,United Kingdom,United Kingdom,GB,GB,"ENG, NTH","ENG, NNH"
+subdivision_codes,12265586,12265586,Upper Benefield,Upper Benefield,United Kingdom,United Kingdom,GB,GB,"ENG, NTH","ENG, NNH"
+subdivision_codes,2645176,2645176,Kislingbury,Kislingbury,United Kingdom,United Kingdom,GB,GB,"ENG, NTH","ENG, WNH"
+subdivision_codes,2645753,2645753,Kettering,Kettering,United Kingdom,United Kingdom,GB,GB,"ENG, NTH","ENG, NNH"
+subdivision_codes,2633924,2633924,Wilby,Wilby,United Kingdom,United Kingdom,GB,GB,"ENG, NTH","ENG, NNH"
+subdivision_codes,2645477,2645477,Kings Cliffe,Kings Cliffe,United Kingdom,United Kingdom,GB,GB,"ENG, NTH","ENG, NNH"
+subdivision_codes,2645551,2645551,Kilsby,Kilsby,United Kingdom,United Kingdom,GB,GB,"ENG, NTH","ENG, WNH"
+subdivision_codes,2634888,2634888,Walgrave,Walgrave,United Kingdom,United Kingdom,GB,GB,"ENG, NTH","ENG, WNH"
+subdivision_codes,2647907,2647907,Gretton,Gretton,United Kingdom,United Kingdom,GB,GB,"ENG, NTH","ENG, NNH"
+subdivision_codes,2647388,2647388,Hartwell,Hartwell,United Kingdom,United Kingdom,GB,GB,"ENG, NTH","ENG, WNH"
+subdivision_codes,2640562,2640562,Paulerspury,Paulerspury,United Kingdom,United Kingdom,GB,GB,"ENG, NTH","ENG, WNH"
+subdivision_codes,2651461,2651461,Deanshanger,Deanshanger,United Kingdom,United Kingdom,GB,GB,"ENG, NTH","ENG, WNH"
+subdivision_codes,2648739,2648739,Geddington,Geddington,United Kingdom,United Kingdom,GB,GB,"ENG, NTH","ENG, NNH"
+subdivision_codes,2647478,2647478,Hargrave,Hargrave,United Kingdom,United Kingdom,GB,GB,"ENG, NTH","ENG, NNH"
+subdivision_codes,2643178,2643178,Maidwell,Maidwell,United Kingdom,United Kingdom,GB,GB,"ENG, NTH","ENG, WNH"
+subdivision_codes,11593337,11593337,Middleton Cheney,Middleton Cheney,United Kingdom,United Kingdom,GB,GB,"ENG, NTH","ENG, WNH"
+subdivision_codes,2651359,2651359,Denton,Denton,United Kingdom,United Kingdom,GB,GB,"ENG, NTH","ENG, WNH"
+subdivision_codes,2645443,2645443,Kings Sutton,Kings Sutton,United Kingdom,United Kingdom,GB,GB,"ENG, NTH","ENG, WNH"
+subdivision_codes,2647436,2647436,Harrington,Harrington,United Kingdom,United Kingdom,GB,GB,"ENG, NTH","ENG, NNH"
+subdivision_codes,2642198,2642198,Moreton Pinkney,Moreton Pinkney,United Kingdom,United Kingdom,GB,GB,"ENG, NTH","ENG, WNH"
+subdivision_codes,2647153,2647153,Helmdon,Helmdon,United Kingdom,United Kingdom,GB,GB,"ENG, NTH","ENG, WNH"
+subdivision_codes,2633657,2633657,Woodford,Woodford,United Kingdom,United Kingdom,GB,GB,"ENG, NTH","ENG, NNH"
+subdivision_codes,2633927,2633927,Wilbarston,Wilbarston,United Kingdom,United Kingdom,GB,GB,"ENG, NTH","ENG, NNH"
+subdivision_codes,2640767,2640767,Overstone,Overstone,United Kingdom,United Kingdom,GB,GB,"ENG, NTH","ENG, WNH"
+subdivision_codes,2634613,2634613,Weedon Bec,Weedon Bec,United Kingdom,United Kingdom,GB,GB,"ENG, NTH","ENG, WNH"
+subdivision_codes,12265868,12265868,Apethorpe,Apethorpe,United Kingdom,United Kingdom,GB,GB,"ENG, NTH","ENG, NNH"
+subdivision_codes,2637074,2637074,Stanion,Stanion,United Kingdom,United Kingdom,GB,GB,"ENG, NTH","ENG, NNH"
+subdivision_codes,2651719,2651719,Culworth,Culworth,United Kingdom,United Kingdom,GB,GB,"ENG, NTH","ENG, WNH"
+subdivision_codes,2652381,2652381,Corby,Corby,United Kingdom,United Kingdom,GB,GB,"ENG, NTH","ENG, NNH"
+subdivision_codes,2646771,2646771,Holcot,Holcot,United Kingdom,United Kingdom,GB,GB,"ENG, NTH","ENG, WNH"
+subdivision_codes,12261655,12261655,Hanging Houghton,Hanging Houghton,United Kingdom,United Kingdom,GB,GB,"ENG, NTH","ENG, WNH"
+subdivision_codes,2634676,2634676,Watford,Watford,United Kingdom,United Kingdom,GB,GB,"ENG, NTH","ENG, WNH"
+subdivision_codes,2635887,2635887,Thurning,Thurning,United Kingdom,United Kingdom,GB,GB,"ENG, NTH","ENG, NNH"
+subdivision_codes,6951837,6951837,Shutlanger,Shutlanger,United Kingdom,United Kingdom,GB,GB,"ENG, NTH","ENG, WNH"
+subdivision_codes,11592591,11592591,Quinton,Quinton,United Kingdom,United Kingdom,GB,GB,"ENG, NTH","ENG, WNH"
+subdivision_codes,12265704,12265704,Hannington,Hannington,United Kingdom,United Kingdom,GB,GB,"ENG, NTH","ENG, WNH"
