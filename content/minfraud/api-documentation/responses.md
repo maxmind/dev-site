@@ -183,12 +183,22 @@ For full examples of response bodies, select one of the following:
 
 ```json
 {
-  ...
   "id": "5bc5d6c2-b2c8-40af-87f4-6d61af86b6ae",
   "risk_score": 0.01,
   "funds_remaining": 25,
-  "queries_remaining": 5000
-  ...
+  "queries_remaining": 5000,
+  "ip_address": {...},
+  "credit_card": {...},
+  "device": {...},
+  "email": {...},
+  "shipping_address": {...},
+  "shipping_phone": {...},
+  "billing_address": {...},
+  "billing_phone": {...},
+  "disposition": {...},
+  "risk_score_reasons": [...],
+  "subscores": {...},
+  "warnings": [...]
 }
 ```
 
@@ -210,6 +220,70 @@ For full examples of response bodies, select one of the following:
 
   {{< minfraud-schema-row key="queries_remaining" type="response" valueType="integer" valueTypeNote="min: 0" score="true" insights="true" factors="true" >}}
   The approximate number of queries remaining for the service before your account runs out of funds.
+  {{</minfraud-schema-row>}}
+
+  {{< minfraud-schema-row key="queries_remaining" type="response" valueType="integer" valueTypeNote="min: 0" score="true" insights="true" factors="true" >}}
+  The approximate number of queries remaining for the service before your account runs out of funds.
+  {{</minfraud-schema-row>}}
+
+  {{< minfraud-schema-row key="ip_address" fragmentOverride="ip-address" type="response" valueType="object" score="true" insights="true" factors="true" >}}
+  This object contains IP intelligence data.
+  [See more](#ip-address).
+  {{</minfraud-schema-row>}}
+
+  {{< minfraud-schema-row key="credit_card" fragmentOverride="credit-card" type="response" valueType="object" insights="true" factors="true" >}}
+  This object contains information related to the credit card.
+  [See more](#credit-card).
+  {{</minfraud-schema-row>}}
+
+  {{< minfraud-schema-row key="device" fragmentOverride="device" type="response" valueType="object" insights="true" factors="true" >}}
+  This object contains information about the device that MaxMind believes is associated with the IP address passed in the request.
+  [See more](#device).
+  {{</minfraud-schema-row>}}
+
+  {{< minfraud-schema-row key="email" fragmentOverride="email" type="response" valueType="object" insights="true" factors="true" >}}
+  This object contains email intelligence data.
+  [See more](#email).
+  {{</minfraud-schema-row>}}
+
+  {{< minfraud-schema-row key="shipping_address" fragmentOverride="shipping-address" type="response" valueType="object" insights="true" factors="true" >}}
+  This object contains information related to the shipping address
+  [See more](#shipping-address).
+  {{</minfraud-schema-row>}}
+
+  {{< minfraud-schema-row key="shipping_phone" fragmentOverride="shipping-phone" type="response" valueType="object" insights="true" factors="true" >}}
+  This object contains information related to the shipping phone number
+  [See more](#shipping-phone).
+  {{</minfraud-schema-row>}}
+
+  {{< minfraud-schema-row key="billing_address" fragmentOverride="billing-address" type="response" valueType="object" insights="true" factors="true" >}}
+  This object contains information related to the billing address
+  [See more](#billing-address).
+  {{</minfraud-schema-row>}}
+
+  {{< minfraud-schema-row key="billing_phone" fragmentOverride="billing-phone" type="response" valueType="object" insights="true" factors="true" >}}
+  This object contains information related to the billing phone number
+  [See more](#billing-phone).
+  {{</minfraud-schema-row>}}
+
+  {{< minfraud-schema-row key="disposition" fragmentOverride="disposition" type="response" valueType="object" score="true" insights="true" factors="true" >}}
+  This object contains information about how a request was handled by the custom rules you have defined.
+  [See more](#disposition).
+  {{</minfraud-schema-row>}}
+
+  {{< minfraud-schema-row key="risk_score_reasons" fragmentOverride="risk-score-reasons" type="response" valueType="array" factors="true" >}}
+  This array contains risk score reason objects.
+  [See more](#risk-score-reasons).
+  {{</minfraud-schema-row>}}
+
+  {{< minfraud-schema-row key="subscores" fragmentOverride="subscores" type="response" valueType="object" factors="true" >}}
+  **Deprecated.** This object contains risk factor scores for many of the individual components that are used in calculating the risk_score.
+  [See more](#subscores).
+  {{</minfraud-schema-row>}}
+
+  {{< minfraud-schema-row key="warnings" fragmentOverride="warnings" type="response" valueType="array" score="true" insights="true" factors="true" >}}
+  This array contains warning objects detailing issues with the request that was sent such as invalid or unknown inputs.
+  [See more](#warnings).
   {{</minfraud-schema-row>}}
 
 {{</ schema-table >}}
@@ -995,9 +1069,9 @@ will not be present in the response.
   A machine-readable code identifying the risk reason. Examples listed below. Although more codes may be added in the future, a list of current codes may be provided on request.
  | Code            |
  | --------------- |
- | ANONYMOUS\_IP           |                                                           
- |  COUNTRY                |                   
- | ORG\_DISTANCE\_RISK     | 
+ | ANONYMOUS\_IP           |
+ |  COUNTRY                |
+ | ORG\_DISTANCE\_RISK     |
   {{</minfraud-schema-row>}}
 
   {{< minfraud-schema-row key="reason" type="response" valueType="string" factors="true" >}}
@@ -1015,9 +1089,9 @@ will not be present in the response.
 {{< anchor-target schema--response--subscores >}}
 
 {{< alert warning >}}
-Risk factor scores are deprecated as of November 4, 2024. Please 
-[review risk score reasons](/minfraud/api-documentation/responses/#risk-score-reasons) 
-for insight into why a risk score is high or low. 
+Risk factor scores are deprecated as of November 4, 2024. Please
+[review risk score reasons](/minfraud/api-documentation/responses/#risk-score-reasons)
+for insight into why a risk score is high or low.
 
 {{</ alert >}}
 
