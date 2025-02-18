@@ -3,6 +3,9 @@
 {{ $key := .Get "key" }}
 {{ $type := .Get "type" }}
 {{ $fragment := printf "schema--%s--%s__%s" $type $parentKey $key }}
+{{ $fragmentOverride := .Get "fragmentOverride" }}
+{{ $href := $fragment }}
+{{ if $fragmentOverride }}{{ $href = $fragmentOverride }}{{ end }}
 
 {{ $score := .Get "score" }}
 {{ $insights := .Get "insights" }}
@@ -14,7 +17,7 @@
 
 <tr>
   <td class="schema__key-cell">
-    <a href="#{{ $fragment }}"><code class="schema__row-key">{{ $key }}</code></a>
+    <a href="#{{ $href }}"><code class="schema__row-key">{{ $key }}</code></a>
   </td>
   <td class="schema__type-cell">
     {{ .Get "valueType" }}
