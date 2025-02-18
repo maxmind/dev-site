@@ -267,7 +267,7 @@ For full examples of response bodies, select one of the following:
   {{</minfraud-schema-row>}}
 
   {{< minfraud-schema-row key="disposition" fragmentOverride="disposition" type="response" valueType="object" score="true" insights="true" factors="true" >}}
-  This object contains information about how a request was handled by the custom rules you have defined.
+  This object contains information about how a request was handled by the custom rules that you have defined.
   [See more](#disposition).
   {{</minfraud-schema-row>}}
 
@@ -282,7 +282,7 @@ For full examples of response bodies, select one of the following:
   {{</minfraud-schema-row>}}
 
   {{< minfraud-schema-row key="warnings" fragmentOverride="warnings" type="response" valueType="array" score="true" insights="true" factors="true" >}}
-  This array contains warning objects detailing issues with the request that was sent such as invalid or unknown inputs.
+  This array contains warning objects detailing issues with the request that was sent, such as invalid or unknown inputs.
   [See more](#warnings).
   {{</minfraud-schema-row>}}
 
