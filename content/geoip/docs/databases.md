@@ -86,6 +86,9 @@ integrator for assistance.
 | Lua                  | mmdblua                         |                                                                             | [README](https://github.com/daurnimator/mmdblua/blob/master/README.md)             | [GitHub](https://github.com/daurnimator/mmdblua)             |
 | Lua (C extension)    | lua-maxminddb                   |                                                                             |                                                                                    | [GitHub](https://github.com/fabled/lua-maxminddb)            |
 | Lua (C extension)    | lua-resty-maxminddb             |                                                                             | [README](https://github.com/anjia0532/lua-resty-maxminddb/blob/master/README.md)   | [GitHub](https://github.com/anjia0532/lua-resty-maxminddb)   |
+| Node.js | jgeoip | [npm](https://www.npmjs.com/package/jgeoip) | [npm](https://www.npmjs.com/package/jgeoip) | [GitHub](https://github.com/jclo/jgeoip) |
+| Node.js | maxmind | [npm](https://www.npmjs.com/package/maxmind) | [npm](https://www.npmjs.com/package/maxmind) | [GitHub](https://github.com/runk/node-maxmind) |
+| Node.js / Deno / Bun | maxminddb-wasm | [npm](https://www.npmjs.com/package/maxminddb-wasm) / [Deno](https://deno.land/x/maxminddb) | [JSR](https://jsr.io/@josh-hemphill/maxminddb-wasm) | [GitHub](https://github.com/josh-hemphill/maxminddb-wasm) |
 | OCaml                | ocaml-maxminddb                 | [OPAM](https://opam.ocaml.org/packages/maxminddb/)                          | [README](https://github.com/fxfactorial/ocaml-maxminddb/blob/master/README.md)     | [GitHub](https://github.com/fxfactorial/ocaml-maxminddb)     |
 | Perl                 | IP::Geolocation::MMDB           | [CPAN](https://metacpan.org/pod/IP::Geolocation::MMDB)                      | [MetaCPAN](https://metacpan.org/pod/IP::Geolocation::MMDB)                         | [GitHub](https://github.com/voegelas/IP-Geolocation-MMDB)    |
 | PHP                  | librarymarket/maxmind-db-reader | [Packagist](https://packagist.org/packages/librarymarket/maxmind-db-reader) | [README](https://github.com/librarymarket/maxmind-db-reader/blob/1.0.x/README.md)  | [GitHub](https://github.com/librarymarket/maxmind-db-reader) |
@@ -95,7 +98,9 @@ integrator for assistance.
 | Raku                 | GeoIP2                          |                                                                             | [README](https://github.com/bbkr/GeoIP2/blob/master/README.md)                     | [GitHub](https://github.com/bbkr/GeoIP2)                     |
 | Rust                 | maxminddb                       | [Cargo](https://crates.io/crates/maxminddb)                                 | [API docs](https://oschwald.github.io/maxminddb-rust/maxminddb/struct.Reader.html) | [GitHub](https://github.com/oschwald/maxminddb-rust)         |
 | Scala                | maxmind-geoip2-scala            |                                                                             | [README](https://github.com/Sanoma-CDA/maxmind-geoip2-scala/blob/master/README.md) | [GitHub](https://github.com/Sanoma-CDA/maxmind-geoip2-scala) |
+| Swift (C extension)  | MaxMindDBSwift |  | [README](https://github.com/SunboyGo/MaxMindDBSwift/blob/main/README.md) | [GitHub](https://github.com/SunboyGo/MaxMindDBSwift) |
 | Swift (C extension)  | MMDB-Swift                      | [MMDB-Swift](https://cocoapods.org/pods/MMDB-Swift)                         | [CocoaPods](https://cocoapods.org/pods/MMDB-Swift)                                 | [GitHub](https://github.com/lexrus/MMDB-Swift)               |
+| Zig | maxminddb | | [README](https://github.com/marselester/maxminddb.zig/blob/master/README.md) | [GitHub](https://github.com/marselester/maxminddb.zig) |
 
 ### Integrations
 
