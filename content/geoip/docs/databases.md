@@ -66,7 +66,7 @@ integrator for assistance.
 {{</ alert >}}
 
 
-| Language or Software | API Name                        | Package Repository                                                          | Documentation                                                                      | Version Control                                              |
+| Language | API Name                        | Package Repository                                                          | Documentation                                                                      | Version Control                                              |
 | -------------------- | ------------------------------- | --------------------------------------------------------------------------- | ---------------------------------------------------------------------------------- | ------------------------------------------------------------ |
 | C++                  | GeoLite2++                      |                                                                             | [Usage](https://www.ccoderun.ca/GeoLite2++/api/usage.html)                         |                                                              |
 | Clojure              | maximator                       | [Clojars](https://clojars.org/com.oscaro/maximator)                         | [README](https://github.com/oscaro/maximator/blob/master/README.md)                | [GitHub](https://github.com/oscaro/maximator)                |
