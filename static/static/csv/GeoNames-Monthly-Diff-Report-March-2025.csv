@@ -1,0 +1,48 @@
+diff_in,old_geoname_id,new_geoname_id,old_city_name,new_city_name,old_country_name,new_country_name,old_country_code,new_country_code,old_subdivision_codes,new_subdivision_codes
+city_name,3025466,3025466,Cherbourg-Octeville,Cherbourg,France,France,FR,FR,"NOR, 50","NOR, 50"
+city_name,1260206,1260206,Pāsighāt,Pasighat,India,India,IN,IN,AR,AR
+city_name,1854665,1854665,Ogawa,Ogawamachi,Japan,Japan,JP,JP,11,11
+city_name,675810,675810,Iasi,Iași,Romania,Romania,RO,RO,IS,IS
+city_name,683123,683123,Buzau,Buzău,Romania,Romania,RO,RO,BZ,BZ
+city_name,683902,683902,Braila,Brăila,Romania,Romania,RO,RO,BR,BR
+city_name,684039,684039,Botosani,Botoșani,Romania,Romania,RO,RO,BT,BT
+city_name,1834328,1834328,Dongdaemun-gu,Dongdaemun,South Korea,South Korea,KR,KR,11,11
+city_name,699445,699445,Novomoskovsk,Samar,Ukraine,Ukraine,UA,UA,12,12
+city_name,697616,697616,Perschotravensk,Shakhtarske,Ukraine,Ukraine,UA,UA,12,12
+city_name,7525990,7525990,Yuzhnoukrainsk,Pivdennoukrainsk,Ukraine,Ukraine,UA,UA,48,48
+city_name,697576,697576,Pervomaiskyi,Zlatopil,Ukraine,Ukraine,UA,UA,63,63
+city_name,687997,687997,Yuzhne,Pivdenne,Ukraine,Ukraine,UA,UA,51,51
+city_name,707775,707775,Hvardiyske,Zarichne,Ukraine,Ukraine,UA,UA,12,12
+city_name,704388,704388,Krasnohrad,Berestyn,Ukraine,Ukraine,UA,UA,63,63
+city_name,707689,707689,Ilarionove,Yavornytske,Ukraine,Ukraine,UA,UA,12,12
+city_name,709584,709584,Druzhba,Khutir-Mykhailivskyi,Ukraine,Ukraine,UA,UA,59,59
+city_name,691820,691820,Tarutyne,Bessarabske,Ukraine,Ukraine,UA,UA,51,51
+geoname_id,2775562,2599272,Holzleiten,Holzleiten,Austria,Austria,AT,AT,3,3
+geoname_id,2802225,2802223,Berg,Berg,Belgium,Belgium,BE,BE,"VLG, VBR","VLG, VBR"
+geoname_id,3445491,3445488,Varginha,Varginha,Brazil,Brazil,BR,BR,SP,SP
+geoname_id,3405554,3411117,Boa Vista,Boa Vista,Brazil,Brazil,BR,BR,PE,PE
+geoname_id,3395238,3395239,Massapê,Massapê,Brazil,Brazil,BR,BR,CE,CE
+geoname_id,3385737,3385736,Upanema,Upanema,Brazil,Brazil,BR,BR,RN,RN
+geoname_id,3451202,3451203,Rio das Pedras,Rio das Pedras,Brazil,Brazil,BR,BR,SP,SP
+geoname_id,3445532,3445531,Vargem Bonita,Vargem Bonita,Brazil,Brazil,BR,BR,MG,MG
+geoname_id,3468899,7583518,Brotas,Brotas,Brazil,Brazil,BR,BR,SP,SP
+geoname_id,3459084,3459088,Laje,Laje,Brazil,Brazil,BR,BR,BA,BA
+geoname_id,13032616,3467524,Canelinha,Canelinha,Brazil,Brazil,BR,BR,SC,SC
+geoname_id,6075292,12031951,Mission,Mission,Canada,Canada,CA,CA,BC,BC
+geoname_id,7302868,6113931,Pubnico,Pubnico,Canada,Canada,CA,CA,NS,NS
+geoname_id,3667157,3667158,Tierralta,Tierralta,Colombia,Colombia,CO,CO,COR,COR
+geoname_id,3655731,13099669,Huamboya,Huamboya,Ecuador,Ecuador,EC,EC,S,S
+geoname_id,13116713,13189303,Naranjito,Naranjito,Ecuador,Ecuador,EC,EC,L,L
+geoname_id,2970912,2970915,Vallière,Vallière,France,France,FR,FR,"NAQ, 23","NAQ, 23"
+geoname_id,2909442,2909443,Hassel,Hassel,Germany,Germany,DE,DE,NI,NI
+geoname_id,1271947,10179623,Farīdpur,Farīdpur,India,India,IN,IN,UP,UP
+geoname_id,3132852,3132855,Valle,Valle,Norway,Norway,NO,NO,42,42
+geoname_id,1691487,1691490,Rosario,Rosario,Philippines,Philippines,PH,PH,"40, BTG","40, BTG"
+geoname_id,7870457,12718763,Randvaal,Randvaal,South Africa,South Africa,ZA,ZA,GP,GP
+geoname_id,1951567,1840898,Paju,Paju,South Korea,South Korea,KR,KR,41,41
+geoname_id,2720002,2720004,Bräcke,Bräcke,Sweden,Sweden,SE,SE,Z,Z
+geoname_id,2681305,2681304,Ruda,Ruda,Sweden,Sweden,SE,SE,H,H
+geoname_id,2726517,2726519,Alnö,Alnö,Sweden,Sweden,SE,SE,Y,Y
+geoname_id,1676480,1676478,Fuxing,Fuxing,Taiwan,Taiwan,TW,TW,MIA,MIA
+geoname_id,4504635,5105860,Voorhees Township,Voorhees Township,United States,United States,US,US,NJ,NJ
+subdivision_codes,3420635,3420635,Qeqertarsuaq,Qeqertarsuaq,Greenland,Greenland,GL,GL,AV,QT
