@@ -134,6 +134,61 @@ servers can make HTTPS connections to the following hostname:
 This is only recommended for systems unable to use GeoIP Update or for clients
 using the CSV-format databases.
 
+### Download best practices
+
+At a high-level, the best practice is to write an automated script that
+periodically checks the `last-modified` header for the database's build date,
+and downloads the database when the `last-modified` time is later than the
+`last-modified` time of the latest local copy of the database.
+
+It is good to check periodically throughout the day for a release so that you do
+not rely on an update schedule, and so that you catch off-schedule releases.
+
+### Checking for the Latest Release Date
+
+You can check the date of a given database’s latest release by issuing a HEAD
+request for that database’s download permalink URL. The download permalink can
+be found in the
+[Download Databases](https://www.maxmind.com/en/accounts/current/geoip/downloads)
+section of your account portal.
+
+For example, using the permalink for the GeoIP2 City CSV database, you can issue
+a `curl` command like the following:
+
+```bash
+curl -I -L -u YOUR_ACCOUNT_ID:YOUR_LICENSE_KEY \
+'https://download.maxmind.com/geoip/databases/GeoIP2-City-CSV/download?suffix=zip'
+```
+
+Or a `wget` command like the following:
+
+```bash
+wget -S \
+--method HEAD \
+--user=YOUR_ACCOUNT_ID \
+--password=YOUR_LICENSE_KEY \
+'https://download.maxmind.com/geoip/databases/GeoIP2-City-CSV/download?suffix=zip'
+```
+
+Where `YOUR_ACCOUNT_ID` is a placeholder for your account ID and
+`YOUR_LICENSE_KEY` is a placeholder for your license key.
+[Learn more about license keys on our knowledge base](https://support.maxmind.com/hc/en-us/articles/4407116112539-Using-License-Keys).
+
+In the response, you can check the `last-modified` header for the file’s build
+date, or you can check the `content-disposition` header for the date that would
+appear in the file name. These checks can be incorporated into your own script
+or program, according to your needs.
+
+This method only issues a HEAD request, rather than a download request, so
+running this check won’t count against your
+[daily database download limit](https://support.maxmind.com/hc/en-us/articles/4408216129947).
+
+### Automating downloads
+
+The steps for automating downloads of the databases are similar to the steps for
+checking the latest release date. Instead of checking the file HEAD, you will
+download the file.
+
 In order to download the databases from a script or program, please use the
 permalinks found on the
 [GeoIP download page](https://www.maxmind.com/en/accounts/current/geoip/downloads).
@@ -189,45 +244,6 @@ documentation pages (see
 [the GeoIP City example file](/geoip/docs/databases/city-and-country/#example-files)),
 and
 [tutorials for importing CSV databases into SQL](/geoip/importing-databases).
-
-### Checking for the Latest Release Date
-
-You can check the date of a given database’s latest release by issuing a HEAD
-request for that database’s download permalink URL. The download permalink can
-be found in the
-[Download Databases](https://www.maxmind.com/en/accounts/current/geoip/downloads)
-section of your account portal.
-
-For example, using the permalink for the GeoIP2 City CSV database, you can issue
-a `curl` command like the following:
-
-```bash
-curl -I -L -u YOUR_ACCOUNT_ID:YOUR_LICENSE_KEY \
-'https://download.maxmind.com/geoip/databases/GeoIP2-City-CSV/download?suffix=zip'
-```
-
-Or a `wget` command like the following:
-
-```bash
-wget -S \
---method HEAD \
---user=YOUR_ACCOUNT_ID \
---password=YOUR_LICENSE_KEY \
-'https://download.maxmind.com/geoip/databases/GeoIP2-City-CSV/download?suffix=zip'
-```
-
-Where `YOUR_ACCOUNT_ID` is a placeholder for your account ID and
-`YOUR_LICENSE_KEY` is a placeholder for your license key.
-[Learn more about license keys on our knowledge base](https://support.maxmind.com/hc/en-us/articles/4407116112539-Using-License-Keys).
-
-In the response, you can check the `last-modified` header for the file’s build
-date, or you can check the `content-disposition` header for the date that would
-appear in the file name. These checks can be incorporated into your own script
-or program, according to your needs.
-
-This method only issues a HEAD request, rather than a download request, so
-running this check won’t count against your
-[daily database download limit](https://support.maxmind.com/hc/en-us/articles/4408216129947).
 
 ## Changes to file size between updates
 
