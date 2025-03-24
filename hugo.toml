@@ -207,6 +207,11 @@ title = 'MaxMind'
       parent = 'GeoIP'
       weight = 80
     [[menus.geoip]]
+      name = 'GeoIP Exchange'
+      pageRef = '/geoip/geoip-exchange'
+      parent = 'GeoIP'
+      weight = 80
+    [[menus.geoip]]
       name = 'Privacy Exclusions API'
       pageRef = '/geoip/privacy-exclusions-api'
       parent = 'GeoIP'
