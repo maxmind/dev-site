@@ -54,7 +54,7 @@ For example, you can issue a `curl` command like the following:
 
 ```bash
 curl -I -L -u YOUR_ACCOUNT_ID:YOUR_LICENSE_KEY \
-'https://download.maxmind.com/geofeed/reports/v1.0/3/free'
+'https://download.maxmind.com/geofeed/reports/v1.0/YOUR_GEOFEED_ID/YOUR_REPORT_ID'
 ```
 
 Or a `wget` command like the following:
@@ -64,12 +64,15 @@ wget -S \
 --method HEAD \
 --user=YOUR_ACCOUNT_ID \
 --password=YOUR_LICENSE_KEY \
-'https://download.maxmind.com/geofeed/reports/v1.0/3/free'
+'https://download.maxmind.com/geofeed/reports/v1.0/YOUR_GEOFEED_ID/YOUR_REPORT_ID'
 ```
 
 Where `YOUR_ACCOUNT_ID` is a placeholder for your account ID and
 `YOUR_LICENSE_KEY` is a placeholder for your license key.
 [Learn more about license keys on our knowledge base](https://support.maxmind.com/hc/en-us/articles/4407116112539-Using-License-Keys).
+Please note that the permalink copied from your account portal will replace
+`YOUR_GEOFEED_ID` with a unique ID for your geofeed and `YOUR_REPORT_ID` with an
+identifier for the kind of report you're downloading.
 
 In the response, you can check the `last-modified` header for the file’s build
 date. These checks can be incorporated into your own script or program,
@@ -96,20 +99,22 @@ download the file.
 For example, you can issue a `curl` command like the following:
 
 ```shell
-curl -O -J -L -u YOUR_ACCOUNT_ID:YOUR_LICENSE_KEY 'https://download.maxmind.com/geofeed/reports/v1.0/3/free'
+curl -O -J -L -u YOUR_ACCOUNT_ID:YOUR_LICENSE_KEY 'https://download.maxmind.com/geofeed/reports/v1.0/YOUR_GEOFEED_ID/YOUR_REPORT_ID'
 ```
 
 Or a `wget` command like the following:
 
 ```shell
-wget --user=YOUR_ACCOUNT_ID --password=YOUR_LICENSE_KEY 'https://download.maxmind.com/geofeed/reports/v1.0/3/free'
+wget --user=YOUR_ACCOUNT_ID --password=YOUR_LICENSE_KEY 'https://download.maxmind.com/geofeed/reports/v1.0/YOUR_GEOFEED_ID/YOUR_REPORT_ID'
 ```
 
 Where `YOUR_ACCOUNT_ID` is a placeholder for your account ID and
 `YOUR_LICENSE_KEY` is a placeholder for your license key.
 [Learn more about license keys on our knowledge base](https://support.maxmind.com/hc/en-us/articles/4407116112539-Using-License-Keys).
+Please note that the permalink copied from your account portal will replace
+`YOUR_GEOFEED_ID` with a unique ID for your geofeed and `YOUR_REPORT_ID` with an
+identifier for the kind of report you're downloading.
 
-This example will save the database to a file called `free.csv`. Depending on
-the path of your permalink, you may recieve a file called `free.csv`,
-`geolocation.csv`, or `intelligence.csv` matching the final part of the path of
-your permalink.
+This will save the database to a file called `YOUR_REPORT_ID.csv`. For example,
+`https://download.maxmind.com/geofeed/reports/v1.0/YOUR_GEOFEED_ID/geolocation`
+would download a file called `geolocation.csv`.
