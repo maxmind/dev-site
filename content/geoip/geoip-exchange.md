@@ -5,7 +5,7 @@ title: GeoIP Exchange documentation
 
 ## Overview
 
-GeoIP Exchange is a platform for network operators to recieve automated feedback
+GeoIP Exchange is a platform for network operators to receive automated feedback
 about how MaxMind codes their networks. To learn more and join, please
 [sign up on our website](https://www.maxmind.com/en/geoip-exchange).
 
