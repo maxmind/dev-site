@@ -14,8 +14,7 @@ about how MaxMind codes their networks. To learn more and join, please
 If you are a current GeoIP Exchange user, you can automate downloads of the
 GeoIP Exchange geofeed report. In order to download the report from a script or
 program, please use the permalinks found on the GeoIP Exchange page on your
-account portal. Please note that you will be redirected from these permalinks.
-We will redirect requests using HTTPS on the following hostname 
+account portal.
 
 Please note that you will be redirected from these permalinks to the hostname
 `storage.googleapis.com`.
