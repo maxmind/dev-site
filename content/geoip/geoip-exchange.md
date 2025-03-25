@@ -21,7 +21,7 @@ Please note that you will be redirected from these permalinks to the hostname
 
 ### Download best practices
 
-At a high-level, the best practice is to write an automated script that
+At a high level, the best practice is to write an automated script that
 periodically checks the `last-modified` header for the report's build date, and
 downloads the resulting report when the `last-modified` time is later than the
 `last-modified` time of the latest local copy of the report.
@@ -114,6 +114,6 @@ Please note that the permalink copied from your account portal will replace
 `YOUR_GEOFEED_ID` with a unique ID for your geofeed and `YOUR_REPORT_ID` with an
 identifier for the kind of report you're downloading.
 
-This will save the database to a file called `YOUR_REPORT_ID.csv`. For example,
+This will save the report to a file called `YOUR_REPORT_ID.csv`. For example,
 `https://download.maxmind.com/geofeed/reports/v1.0/YOUR_GEOFEED_ID/geolocation`
 would download a file called `geolocation.csv`.

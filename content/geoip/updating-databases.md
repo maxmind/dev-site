@@ -136,7 +136,7 @@ using the CSV-format databases.
 
 ### Download best practices
 
-At a high-level, the best practice is to write an automated script that
+At a high level, the best practice is to write an automated script that
 periodically checks the `last-modified` header for the database's build date,
 and downloads the database when the `last-modified` time is later than the
 `last-modified` time of the latest local copy of the database.
