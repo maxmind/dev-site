@@ -718,7 +718,7 @@ current when they signed up for the service. The latest version is 1.3.
          <tr>
             <td colspan="4">
                <strong>Address and Phone Number Checks</strong>
-               These fields provide information the user’s phone and address.
+               These fields provide information about the user’s phone and address.
             </td>
          </tr>
          <tr>
