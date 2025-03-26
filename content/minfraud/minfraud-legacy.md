@@ -365,7 +365,7 @@ current when they signed up for the service. The latest version is 1.3.
          <tr>
             <td colspan="4">
                <strong>GeoIP Location Checks</strong>
-               These fields are based on the correspondance between the user’s IP address and the location information they provided.
+               These fields are based on the correspondence between the user’s IP address and the location information they provided.
             </td>
          </tr>
          <tr>
@@ -403,7 +403,7 @@ current when they signed up for the service. The latest version is 1.3.
             <td>string</td>
             <td>
                The <a href="https://en.wikipedia.org/wiki/ISO_3166-2">ISO-3166-2</a> code for the state/region associated with the IP address.
-               We previously returned a <a href="https://en.wikipedia.org/wiki/FIPS_10-4">FIPS 10-4</a> code for all countries other than the United States and Canada. See our <a href="https://blog.maxmind.com/2020/06/data-changes-to-geoip-legacy-and-minfraud-legacy-web-services-in-may-2022/">blog post</a> for mor information.
+               We previously returned a <a href="https://en.wikipedia.org/wiki/FIPS_10-4">FIPS 10-4</a> code for all countries other than the United States and Canada. See our <a href="https://blog.maxmind.com/2020/06/data-changes-to-geoip-legacy-and-minfraud-legacy-web-services-in-may-2022/">blog post</a> for more information.
             </td>
             <td>1.0</td>
          </tr>
