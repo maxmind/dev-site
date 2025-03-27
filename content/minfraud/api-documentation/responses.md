@@ -197,7 +197,6 @@ For full examples of response bodies, select one of the following:
   "billing_phone": {...},
   "disposition": {...},
   "risk_score_reasons": [...],
-  "subscores": {...},
   "warnings": [...]
 }
 ```
@@ -274,11 +273,6 @@ For full examples of response bodies, select one of the following:
   {{< minfraud-schema-row key="risk_score_reasons" fragmentOverride="risk-score-reasons" type="response" valueType="array" factors="true" >}}
   This array contains risk score reason objects.
   [See more](#risk-score-reasons).
-  {{</minfraud-schema-row>}}
-
-  {{< minfraud-schema-row key="subscores" fragmentOverride="subscores" type="response" valueType="object" factors="true" >}}
-  **Deprecated.** This object contains risk factor scores for many of the individual components that are used in calculating the risk_score.
-  [See more](#subscores).
   {{</minfraud-schema-row>}}
 
   {{< minfraud-schema-row key="warnings" fragmentOverride="warnings" type="response" valueType="array" score="true" insights="true" factors="true" >}}
@@ -1075,44 +1069,6 @@ will not be present in the response.
   {{</minfraud-schema-row>}}
 {{</ schema-table >}}
 
-
-### Subscores
-{{< anchor-target schema--response--subscores >}}
-
-{{< alert warning >}}
-Risk factor scores are deprecated as of November 4, 2024. Please
-[review risk score reasons](/minfraud/api-documentation/responses/#risk-score-reasons)
-for insight into why a risk score is high or low.
-
-{{</ alert >}}
-
-This object contains risk factor scores for many of the individual components that are used in calculating the `risk_score`. [Learn more about risk factor scores on our Knowledge Base.](https://support.maxmind.com/hc/en-us/articles/4408382645915-Risk-Factor-Scores)
-
-This object is only included with minFraud Factors. [Learn more about the differences between the minFraud services on our Knowledge Base.](https://support.maxmind.com/hc/en-us/articles/4407833140123-Compare-the-minFraud-Services)
-```json
-{
-  "avs_result": 0.01,
-  "billing_address": 0.02,
-  "billing_address_distance_to_ip_location": 0.03,
-  "browser": 0.04,
-  "chargeback": 0.05,
-  "country": 0.06,
-  "country_mismatch": 0.07,
-  "cvv_result": 0.08,
-  "device": 0.09,
-  "email_address": 0.1,
-  "email_domain": 0.11,
-  "email_local_part": 0.12,
-  "issuer_id_number": 0.13,
-  "order_amount": 0.14,
-  "phone_number": 0.15,
-  "shipping_address": 0.16,
-  "shipping_address_distance_to_ip_location": 0.17,
-  "time_of_day": 0.18
-}
-```
-{{< schema-table key="subscores" >}}
-
   {{< minfraud-schema-row key="avs_result" type="response" valueType="decimal" valueTypeNote="min: 0.01, max: 99" factors="true" >}}
   **This field has been deprecated.** The risk associated with the AVS result. If present, this is a value in the range 0.01 to 99.
   {{</minfraud-schema-row>}}
@@ -1828,26 +1784,6 @@ Factors services, and a full example of the JSON body document for an error.
       ]
     }
   ],
-  "subscores": {
-    "avs_result": 0.01,
-    "billing_address": 0.02,
-    "billing_address_distance_to_ip_location": 0.03,
-    "browser": 0.04,
-    "chargeback": 0.05,
-    "country": 0.06,
-    "country_mismatch": 0.07,
-    "cvv_result": 0.08,
-    "device": 0.09,
-    "email_address": 0.1,
-    "email_domain": 0.11,
-    "email_local_part": 0.12,
-    "issuer_id_number": 0.13,
-    "order_amount": 0.14,
-    "phone_number": 0.15,
-    "shipping_address": 0.16,
-    "shipping_address_distance_to_ip_location": 0.17,
-    "time_of_day": 0.18
-  }
 }
 ```
 
