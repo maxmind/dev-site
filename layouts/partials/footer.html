@@ -5,32 +5,27 @@
           {{ readFile "assets/maxmind-footer-logo.svg" | safeHTML }}
         </a>
         <div class="footer__social">
-          <a aria-label="Twitter" class="footer__socialIcon" href="https://twitter.com/maxmind">
+          <a aria-label="x" class="footer__socialIcon" margin-top: -.15em href="https://x.com/maxmind">
             {{ readFile "assets/FaTwitterSquare.svg" | safeHTML }}
           </a>
           <a aria-label="LinkedIn" class="footer__socialIcon" href="https://www.linkedin.com/company/maxmind">
             {{ readFile "assets/FaLinkedin.svg" | safeHTML }}
           </a>
-          <a aria-label="RSSFeed" class="footer__socialIcon" href="{{.Site.BaseURL }}feed.xml">
-            {{ readFile "assets/FaRssSquare.svg" | safeHTML }}
-          </a>
         </div>
       </div>
       <div class="footer__group footer__group__products">
         <h3 class="footer__heading">Products</h3>
-        <a class="footer__link" href="https://www.maxmind.com/en/solutions/minfraud-services">minFraud Services</a>
-        <a class="footer__link" href="https://www.maxmind.com/en/solutions/geoip2-enterprise-product-suite/anonymous-ip-database">GeoIP2 Anonymous IP Database</a>
-        <a class="footer__link" href="https://www.maxmind.com/en/solutions/geoip2-enterprise-product-suite/enterprise-database">GeoIP2 Enterprise Database</a>
-        <a class="footer__link" href="https://www.maxmind.com/en/geoip2-precision-services">GeoIP2 Precision Services</a>
-        <a class="footer__link" href="https://www.maxmind.com/en/geoip2-databases">GeoIP2 Databases</a>
-        <a class="footer__link" href="https://www.maxmind.com/en/geolite-free-ip-geolocation-data">GeoLite Free Geolocation Data</a>
-        <a class="footer__link" href="https://www.maxmind.com/en/affiliate-program">Affiliate Program</a>
+        <a class="footer__link" href="https://www.maxmind.com/en/solutions/fraud-prevention/overview">minFraud Services</a>
+        <a class="footer__link" href="https://www.maxmind.com/en/geoip-api-web-services">GeoIP web services</a>
+        <a class="footer__link" href="https://www.maxmind.com/en/geoip-databases">GeoIP databases</a>
+        <a class="footer__link" href="https://www.maxmind.com/en/solutions/geoip2-enterprise-product-suite/anonymous-ip-database">GeoIP Anonymous IP database</a>
+        <a class="footer__link" href="https://www.maxmind.com/en/solutions/geoip2-enterprise-product-suite/enterprise-database">GeoIP Enterprise database</a>
+        <a class="footer__link" href="https://www.maxmind.com/en/geolite-free-ip-geolocation-data">GeoLite free geolocation data</a>
       </div>
       <div class="footer__group footer__group__support">
-        <h3 class="footer__heading">Support</h3>
-        <a class="footer__link" href="https://support.maxmind.com/">Knowledge Base</a>
-        <a class="footer__link" href="https://support.maxmind.com/hc/en-us/categories/1260801482329-minFraud-Web-Services">minFraud</a>
-        <a class="footer__link" href="https://support.maxmind.com/hc/en-us/categories/1260801446650-GeoIP2-and-GeoLite2">GeoIP</a>
+        <h3 class="footer__heading">Resources</h3>
+        <a class="footer__link" href="https://support.maxmind.com/">Knowledge base</a>
+        <a class="footer__link" href="https://www.maxmind.com/en/geoip-web-services-demo">GeoIP demo</a>
         <a class="footer__link footer__status" href="https://status.maxmind.com/">
           <span class="footer__status-icon">
             {{ readFile "assets/icon-status-operational.svg" | safeHTML }}
@@ -38,29 +33,26 @@
           </span>
           <span class="footer__link">System Status</span>
         </a>
-        <a class="footer__link" href="https://www.maxmind.com/en/geoip-data-correction-request">GeoIP Data Correction Request</a>
+        <a class="footer__link" href="https://www.maxmind.com/en/geoip-data-correction-request">Submit a data correction</a>
         <a class="footer__link footer__ccpa" href="https://www.maxmind.com/en/opt-out">
           <span class="footer__ccpa-icon">
             {{ readFile "assets/icon-ccpa-opt-out.svg" | safeHTML }}
           </span>
-          <span class="footer__link">Your Privacy Choices</span>
+          <span class="footer__link">Your privacy choices</span>
         </a>
-        <a class="footer__link" href="https://www.maxmind.com/en/privacy-policy#california-notice-of-collection">Notice of Collection</a>
+        <a class="footer__link" href="https://www.maxmind.com/en/privacy-policy#california-notice-of-collection">Notice of collection</a>
       </div>
       <div class="footer__group footer__group__developers">
         <h3 class="footer__heading">Developers</h3>
-        <a class="footer__link" href="https://dev.maxmind.com/">Developer Portal</a>
-        <a class="footer__link" href="https://dev.maxmind.com/minfraud/">minFraud</a>
-        <a class="footer__link" href="https://dev.maxmind.com/geoip/">GeoIP</a>
-        <a class="footer__link" href="https://www.maxmind.com/en/affiliate-program">Affiliate Program</a>
+        <a class="footer__link" href="https://dev.maxmind.com/">Developer portal</a>
+        <a class="footer__link" href="https://www.maxmind.com/en/affiliate-program">Affiliate program</a>
       </div>
       <div class="footer__group footer__group__company">
         <h3 class="footer__heading">Company</h3>
         <a class="footer__link" href="https://www.maxmind.com/en/company">About MaxMind</a>
         <a class="footer__link" href="https://www.maxmind.com/en/company/working-at-maxmind">Working at MaxMind</a>
-        <a class="footer__link" href="https://www.maxmind.com/en/company/commitment-to-security">Commitment to Security</a>
-        <a class="footer__link" href="https://www.maxmind.com/en/company/charitable-giving">Charitable Giving</a>
-        <a class="footer__link" href="https://www.maxmind.com/en/company/contact-us">Contact Us</a>
+        <a class="footer__link" href="https://www.maxmind.com/en/company/commitment-to-security">Commitment to security</a>
+        <a class="footer__link" href="https://www.maxmind.com/en/company/contact-us">Contact us</a>
       </div>
       <section class="footer__copyright">
         <span>© {{ dateFormat "2006" now }} MaxMind, Inc. MaxMind, GeoIP, minFraud, and related trademarks belong to MaxMind, Inc.</span>
