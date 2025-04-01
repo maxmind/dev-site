@@ -534,6 +534,7 @@ where the event took place
   * `coregateway`
   * `creditguard`
   * `credorax`
+  * `cryptomus`
   * `ct_payments`
   * `cuentadigital`
   * `curopayments`
