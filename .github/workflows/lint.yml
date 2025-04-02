@@ -23,10 +23,10 @@ jobs:
           persist-credentials: false
 
       - id: build
-        run: echo "::set-output name=hash::${{ hashFiles('assets/**', 'content/**', 'layouts/**', 'static/**', '**/package.json', '**/package-lock.json') }}"
+        run: echo "hash=${{ hashFiles('assets/**', 'content/**', 'layouts/**', 'static/**', '**/package.json', '**/package-lock.json') }}" >> "GITHUB_OUTPUT"
 
       - id: node-modules
-        run: echo "::set-output name=hash::${{ hashFiles('**/package-lock.json') }}"
+        run: echo "hash=${{ hashFiles('**/package-lock.json') }}" >> "GITHUB_OUTPUT"
 
   test-lint:
     name: Test – Lint
