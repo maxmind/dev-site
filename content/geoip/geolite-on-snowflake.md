@@ -34,7 +34,7 @@ particular dataset you are querying:
 
 ### Geolocation data
 
-{{< csv-block-table isEnterprise="false" >}}
+{{< csv-block-table isEnterprise="false" includeUtility="false">}}
 
 {{< snippet "snippets/coordinates-warning.md" >}}
 

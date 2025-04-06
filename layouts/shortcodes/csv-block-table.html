@@ -1,4 +1,5 @@
 {{ $isEnterprise := .Get "isEnterprise" }}
+{{ $includeUtility := .Get "includeUtility" }}
 <div class="table">
   <table>
     <tbody>
@@ -13,6 +14,7 @@
       <tr>
         <td>network</td>
         <td>IP network as a string</td>
+        {{ if eq $includeUtility "true" }}
         <td>
           This is the IPv4 or IPv6 network in CIDR format such as
           &quot;2.21.92.0/29&quot; or &quot;2001:4b0::/80&quot;. We offer a
@@ -26,6 +28,13 @@
           </a>
           for details.
         </td>
+        {{ end }}
+        {{ if eq $includeUtility "false" }}
+        <td>
+          This is the IPv4 or IPv6 network in CIDR format such as
+          &quot;2.21.92.0/29&quot; or &quot;2001:4b0::/80&quot;.
+        </td>
+        {{ end }}
         {{ if eq $isEnterprise "false" }}
           <td>
             <span class="tag tag--checked">Country</span>
