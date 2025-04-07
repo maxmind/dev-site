@@ -1,4 +1,5 @@
 {{ $isEnterprise := .Get "isEnterprise" }}
+{{ $includeUtility := .Get "includeUtility" }}
 <div class="table">
   <table>
     <tbody>
@@ -15,16 +16,21 @@
         <td>IP network as a string</td>
         <td>
           This is the IPv4 or IPv6 network in CIDR format such as
-          &quot;2.21.92.0/29&quot; or &quot;2001:4b0::/80&quot;. We offer a
-          utility to convert this column to start/end IPs or start/end
-          integers. See
-          <a
-            href="#conversion-utility"
-          >
-            the conversion utility
-            section
-          </a>
-          for details.
+          &quot;2.21.92.0/29&quot; or &quot;2001:4b0::/80&quot;.
+          {{ if eq $includeUtility "true" }}
+            <span>
+              We offer a
+              utility to convert this column to start/end IPs or start/end
+              integers. See
+              <a
+                href="#conversion-utility"
+              >
+                the conversion utility
+                section
+              </a>
+              for details.
+            </span>
+          {{ end }}
         </td>
         {{ if eq $isEnterprise "false" }}
           <td>

@@ -80,7 +80,7 @@ There are two CSV files for network blocks, one each for IPv4 and IPv6 blocks.
 These files are named `GeoIP2-Enterprise-Blocks-IPv4.csv` and
 `GeoIP2-Enterprise-Blocks-IPv6.csv` respectively.
 
-{{< csv-block-table isEnterprise="true" >}}
+{{< csv-block-table isEnterprise="true" includeUtility="true">}}
 
 {{< snippet "snippets/coordinates-warning.md" >}}
 

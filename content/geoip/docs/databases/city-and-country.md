@@ -83,7 +83,7 @@ would be `GeoIP2-City-Blocks-IPv4.csv`.
 [City subset by continent databases](https://www.maxmind.com/en/geoip2-city-database-by-continent)
 blocks files have the same columns as the City database.
 
-{{< csv-block-table isEnterprise="false" >}}
+{{< csv-block-table isEnterprise="false" includeUtility="true">}}
 
 {{< snippet "snippets/coordinates-warning.md" >}}
 
