@@ -1,0 +1,55 @@
+diff_in,old_geoname_id,new_geoname_id,old_city_name,new_city_name,old_country_name,new_country_name,old_country_code,new_country_code,old_subdivision_codes,new_subdivision_codes
+city_name,1268820,1268820,Jorhāt,Jorhat,India,India,IN,IN,AS,AS
+city_name,618572,618572,Beşalma,Beșalma,Moldova,Moldova,MD,MD,GA,GA
+city_name,3058498,3058498,Nová Baňa,Königsberg,Slovakia,Slovakia,SK,SK,BC,BC
+city_name,980595,980595,Mafikeng,Mahikeng,South Africa,South Africa,ZA,ZA,NW,NW
+city_name,690312,690312,Vatutine,Bahacheve,Ukraine,Ukraine,UA,UA,71,71
+city_name,2634467,2634467,West Cornforth,Cornforth,United Kingdom,United Kingdom,GB,GB,"ENG, DUR","ENG, DUR"
+city_name,6941080,6941080,Fort Bragg,Fort Liberty,United States,United States,US,US,NC,NC
+geoname_id,3847490,3847482,La Toma,La Toma,Argentina,Argentina,AR,AR,D,D
+geoname_id,3843843,3843844,Monte Hermoso,Monte Hermoso,Argentina,Argentina,AR,AR,B,B
+geoname_id,3858749,12035955,El Bordo,El Bordo,Argentina,Argentina,AR,AR,A,A
+geoname_id,3664852,12967527,Caapiranga,Caapiranga,Brazil,Brazil,BR,BR,AM,AM
+geoname_id,3385736,3385737,Upanema,Upanema,Brazil,Brazil,BR,BR,RN,RN
+geoname_id,11959657,3458729,Laurentino,Laurentino,Brazil,Brazil,BR,BR,SC,SC
+geoname_id,6321913,3445418,Vazante,Vazante,Brazil,Brazil,BR,BR,MG,MG
+geoname_id,3451203,3451202,Rio das Pedras,Rio das Pedras,Brazil,Brazil,BR,BR,SP,SP
+geoname_id,6317420,12959105,Lago do Junco,Lago do Junco,Brazil,Brazil,BR,BR,MA,MA
+geoname_id,6324219,6317755,Nova Mutum,Nova Mutum,Brazil,Brazil,BR,BR,MT,MT
+geoname_id,3472234,13003966,Angatuba,Angatuba,Brazil,Brazil,BR,BR,SP,SP
+geoname_id,6317336,6324166,Itaúba,Itaúba,Brazil,Brazil,BR,BR,MT,MT
+geoname_id,6323847,12954562,Nova Ubiratã,Nova Ubiratã,Brazil,Brazil,BR,BR,MT,MT
+geoname_id,12958948,6316649,Brejo de Areia,Brejo de Areia,Brazil,Brazil,BR,BR,MA,MA
+geoname_id,6091354,6091351,Notre-Dame-de-la-Salette,Notre-Dame-de-la-Salette,Canada,Canada,CA,CA,QC,QC
+geoname_id,1920535,1789273,Sanshui,Sanshui,China,China,CN,CN,GD,GD
+geoname_id,2968997,2968962,Villard,Villard,France,France,FR,FR,"ARA, 74","ARA, 74"
+geoname_id,6547924,2945566,Brahlstorf,Brahlstorf,Germany,Germany,DE,DE,MV,MV
+geoname_id,2943198,2943199,Brunnadern,Brunnadern,Germany,Germany,DE,DE,BW,BW
+geoname_id,6557435,2881276,Langen,Langen,Germany,Germany,DE,DE,NI,NI
+geoname_id,2959244,2833990,Ahlbeck,Ahlbeck,Germany,Germany,DE,DE,MV,MV
+geoname_id,2881499,2881497,Landscheide,Landscheide,Germany,Germany,DE,DE,SH,SH
+geoname_id,2933062,2933063,Eggersdorf,Eggersdorf,Germany,Germany,DE,DE,BB,BB
+geoname_id,3208132,2814790,Waldsiedlung,Waldsiedlung,Germany,Germany,DE,DE,HE,HE
+geoname_id,2836874,2836873,Schönbrunn,Schönbrunn,Germany,Germany,DE,DE,BY,BY
+geoname_id,11636828,1272223,Dumri,Dumri,India,India,IN,IN,JH,JH
+geoname_id,12523241,9782274,Mushalpur,Mushalpur,India,India,IN,IN,AS,AS
+geoname_id,1621953,1971399,Waru,Waru,Indonesia,Indonesia,ID,ID,JI,JI
+geoname_id,1646883,1646885,Cidahu,Cidahu,Indonesia,Indonesia,ID,ID,JB,JB
+geoname_id,6591034,1646448,Cimahi,Cimahi,Indonesia,Indonesia,ID,ID,JB,JB
+geoname_id,9631838,9633085,Hirao,Hirao,Japan,Japan,JP,JP,29,29
+geoname_id,4017155,13262712,Benito Juárez,Benito Juárez,Mexico,Mexico,MX,MX,SON,SON
+geoname_id,3132855,3132852,Valle,Valle,Norway,Norway,NO,NO,42,42
+geoname_id,1719684,1719683,Camiling,Camiling,Philippines,Philippines,PH,PH,"03, TAR","03, TAR"
+geoname_id,672803,672802,Moșteni,Moșteni,Romania,Romania,RO,RO,TR,TR
+geoname_id,11789759,2659401,Oberdorf,Oberdorf,Switzerland,Switzerland,CH,CH,NW,NW
+geoname_id,1667794,1675337,Dabu,Dabu,Taiwan,Taiwan,TW,TW,ILA,ILA
+geoname_id,687993,687997,Pivdenne,Pivdenne,Ukraine,Ukraine,UA,UA,51,51
+geoname_id,5129313,5129314,Northville,Northville,United States,United States,US,US,NY,NY
+subdivision_codes,3061753,3061753,Zbraslav,Zbraslav,Czechia,Czechia,CZ,CZ,"10, 116",10
+subdivision_codes,3072137,3072137,Letňany,Letňany,Czechia,Czechia,CZ,CZ,"10, 118",10
+subdivision_codes,3065328,3065328,Old Town,Old Town,Czechia,Czechia,CZ,CZ,"10, 101",10
+subdivision_codes,3069467,3069467,New Town,New Town,Czechia,Czechia,CZ,CZ,"10, 102",10
+subdivision_codes,8378781,8378781,Praha 13,Praha 13,Czechia,Czechia,CZ,CZ,"10, 113",10
+subdivision_codes,8378779,8378779,Praha 11,Praha 11,Czechia,Czechia,CZ,CZ,"10, 111",10
+subdivision_codes,8378778,8378778,Praha 10,Praha 10,Czechia,Czechia,CZ,CZ,"10, 110",10
+subdivision_codes,3077216,3077216,Dejvice,Dejvice,Czechia,Czechia,CZ,CZ,"10, 106",10
