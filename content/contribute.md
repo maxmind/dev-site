@@ -14,17 +14,17 @@ Before you begin developing tools for use across the community, you should fully
 familiarize yourself with the relevant official APIs and specifications:
 
 - [minFraud service REST API](/minfraud/api-documentation/#request-and-response-api-references)
-- [GeoIP2 and GeoLite2 service REST API](/geoip/docs/web-services#request-and-response-api-references)
-- [GeoIP2 and GeoLite2 MMDB format specification](https://github.com/maxmind/MaxMind-DB/blob/main/MaxMind-DB-spec.md)
+- [GeoIP and GeoLite service REST API](/geoip/docs/web-services#request-and-response-api-references)
+- [GeoIP and GeoLite MMDB format specification](https://github.com/maxmind/MaxMind-DB/blob/main/MaxMind-DB-spec.md)
 
 You may also want to look at some of the unofficial APIs that we’ve featured.
 While MaxMind does not support or maintain unofficial APIs, you can get a
 feeling for the quality of contributions that we feature:
 
 - [minFraud service Magento 2 Plugin](https://www.weltpixel.com/magento2-maxmind-fraud-prevention-minfraud.html)
-- [GeoIP2 and GeoLite2 web services Unofficial APIs](/geoip/docs/web-services/#third-party-client-apis)
-- [GeoIP2 and GeoLite2 database Unofficial APIs](/geoip/docs/databases/#unofficial-client-apis)
-- [GeoIP2 and GeoLite2 database Integrations (for MMDB format)](/geoip/docs/databases/#integrations)
+- [GeoIP and GeoLite web services Unofficial APIs](/geoip/docs/web-services/#third-party-client-apis)
+- [GeoIP and GeoLite database Unofficial APIs](/geoip/docs/databases/#unofficial-client-apis)
+- [GeoIP and GeoLite database Integrations (for MMDB format)](/geoip/docs/databases/#integrations)
 
 You can also peruse our organization and projects on GitHub to get a sense of
 how we develop for MaxMind’s products and services. Some good examples to look
@@ -39,8 +39,8 @@ Well-developed client APIs in languages we don’t already support are especiall
 useful. We also appreciate efforts to develop plugins for popular content
 management systems, as well as analytics and shopping cart software. In order
 for your tools to be featured on our developer portal, they must work with one
-of our paid products or services (GeoIP2 or minFraud). GeoLite2 databases and
-service integrations should be compatible with GeoIP2 products and services with
+of our paid products or services (GeoIP or minFraud). GeoLite databases and
+service integrations should be compatible with GeoIP products and services with
 minor modifications.
 
 ## Sharing Your Tools

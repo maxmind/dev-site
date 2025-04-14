@@ -1,9 +1,9 @@
 ---
 draft: false
-title: GeoIP and GeoLite2
+title: GeoIP and GeoLite
 ---
 
-MaxMind’s GeoIP and GeoLite2 IP intelligence products and services are used to
+MaxMind’s GeoIP and GeoLite IP intelligence products and services are used to
 discover information about a specific IP address. We provide free and paid web
 services, subscription-based downloadable databases, and free downloadable
 databases.
@@ -132,14 +132,14 @@ in GeoIP products and services on our knowledge base.
 
 ## GeoLite Databases and Services
 
-GeoLite2 databases and web services provide free geolocation and limited network
+GeoLite databases and web services provide free geolocation and limited network
 data for IP addresses. This data is less accurate than the data in our paid,
 GeoIP products and services. You must
-[sign up for a free GeoLite2 account](https://www.maxmind.com/en/geolite2/signup)
-in order to download GeoLite2 databases or query the GeoLite2 web services.
-GeoLite2 uses the same integration methods and documentation as GeoIP (linked
+[sign up for a free GeoLite account](https://www.maxmind.com/en/geolite2/signup)
+in order to download GeoLite databases or query the GeoLite web services.
+GeoLite uses the same integration methods and documentation as GeoIP (linked
 below), with a few minor modifications. It is recommended that you get started
-by [reading about GeoLite2](/geoip/geolite2-free-geolocation-data).
+by [reading about GeoLite](/geoip/geolite2-free-geolocation-data).
 
 {{< rawhtml >}}
 <div class="table">
@@ -174,7 +174,7 @@ by [reading about GeoLite2](/geoip/geolite2-free-geolocation-data).
           <a href="/geoip/docs/databases/asn/#csv-databases">Docs</a>
         </td>
         <td>
-          Included in the GeoLite2 City Web Service.
+          Included in the GeoLite City Web Service.
         </td>
       </tr>
     </tbody>

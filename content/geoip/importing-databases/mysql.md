@@ -1,6 +1,6 @@
 ---
 draft: false
-title: Importing GeoIP2 and GeoLite2 databases to MySQL
+title: Importing GeoIP and GeoLite databases to MySQL
 ---
 
 {{< alert warning >}}
@@ -16,7 +16,7 @@ querying the data in the following sections below:
 
 {{</ alert >}}
 
-This guide will show you how to import GeoIP2 or GeoLite2 databases into MySQL
+This guide will show you how to import GeoIP or GeoLite databases into MySQL
 so that they can be easily queried and manipulated on your server.
 
 Importing a CSV database consists of downloading the database, extracting it,
@@ -24,13 +24,13 @@ creating tables to hold the data, and indexing those tables for faster querying.
 
 ## Download and extract the database
 
-Begin by making sure you have downloaded the latest version of the GeoIP2 or
-GeoLite2 database that you want to import. You can
+Begin by making sure you have downloaded the latest version of the GeoIP or
+GeoLite database that you want to import. You can
 [download databases through your account portal](https://www.maxmind.com/en/accounts/current/geoip/downloads).
 CSV format databases are shipped as a single zip file. See our CSV database
 documentation for details about the zip structure and contents of the archive.
 For the purposes of this tutorial, we will be using the
-[GeoIP2 City CSV file](/geoip/docs/databases/city-and-country/#csv-databases),
+[GeoIP City CSV file](/geoip/docs/databases/city-and-country/#csv-databases),
 but you can get information about
 [any of our CSV format databases](/geoip/docs/databases) and adapt the following
 instructions accordingly.
@@ -44,7 +44,7 @@ so that you can be sure that your database is always up to date.
 ### Extract the CSV files
 
 Once you have downloaded the database, unpack the zip file in your desired
-directory. If you are importing the GeoIP2 City database, you will have a number
+directory. If you are importing the GeoIP City database, you will have a number
 of files. In this tutorial we will be working with the following files:
 
 - `GeoIP2-City-Blocks-IPv4.csv`
@@ -56,7 +56,7 @@ appropriate `Locations` file from the zip archive. For example, if you want to
 load Chinese location names into MySQL, you can use
 `GeoIP2-City-Locations-zh-CN.csv` instead of `GeoIP2-City-Locations-en.csv`. Our
 documentation on CSV format databases includes a
-[list of all location files currently included in GeoIP2 and GeoLite2 databases](/geoip/docs/databases/city-and-country/#locations-files).
+[list of all location files currently included in GeoIP and GeoLite databases](/geoip/docs/databases/city-and-country/#locations-files).
 
 ## Create a table for network data
 
@@ -66,7 +66,7 @@ First we create a table to hold the network information contained in
 ## Converting the network field
 
 You can find the full description of the schema for these files in
-[the section on `Blocks` files for GeoIP2 and GeoLite2 CSV databases](/geoip/docs/databases/city-and-country/#blocks-files).
+[the section on `Blocks` files for GeoIP and GeoLite CSV databases](/geoip/docs/databases/city-and-country/#blocks-files).
 If you are working with a different database, you can find the `Blocks` file
 schema [for the appropriate database](/geoip/docs/databases), and adapt the
 table to meet that structure.
@@ -225,7 +225,7 @@ limit 1;
 ```
 
 While that addresses the performance concern we've had with the previous query,
-this query will still perform poorly for addresses not contained in our GeoIP2
+this query will still perform poorly for addresses not contained in our GeoIP
 database:
 
 ```sql
@@ -292,7 +292,7 @@ Empty set (0.00 sec)
 ```
 
 Using that construct gives us good query performance for all addresses,
-regardless of whether or not the GeoIP2 database contains any information about
+regardless of whether or not the GeoIP database contains any information about
 them. Depending on your application, you might want to consider encapsulating
 this complexity/verbosity in a function. Alternatively, MySQL also offers
 spatial data types that can be used to achieve similar performance while
@@ -302,7 +302,7 @@ allowing for queries to be expressed more naturally.
 
 If `postal_code`, `latitude`, `longitude`, and `accuracy_radius` are everything
 we're interested in we'd be done at this point and our application would be
-easily able to query what it needs. However, GeoIP2 databases provide additional
+easily able to query what it needs. However, GeoIP databases provide additional
 location information. Note the `geoname_id` field in our network table. This
 field can be used to look up additional information about the geolocation from
 the `Locations` files we downloaded before. We'll load this data into MySQL
@@ -311,7 +311,7 @@ next.
 ### Locations table schema
 
 We start by creating a table as before. As with the `Blocks` files, the schema
-for GeoIP2 and GeoLite2 City locations files can be found in the
+for GeoIP and GeoLite City locations files can be found in the
 [CSV section of the database documentation](/geoip/docs/databases/city-and-country/#locations-files).
 
 We'll name this table `geoip2_location`:

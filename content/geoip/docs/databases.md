@@ -1,6 +1,6 @@
 ---
 draft: false
-title: GeoIP2 and GeoLite2 Database Documentation
+title: GeoIP and GeoLite Database Documentation
 ---
 
 ## Databases
@@ -16,7 +16,7 @@ title: GeoIP2 and GeoLite2 Database Documentation
     factors, ISP, domain, and connection type.
   {{</ link-group/card >}}
   {{< link-group/card heading="Anonymous IP Databases" href="/geoip/docs/databases/anonymous-ip" >}}
-    MaxMind's GeoIP2 Anonymous IP CSV database helps protect your
+    MaxMind's GeoIP Anonymous IP CSV database helps protect your
     business by identifying proxy, VPN, hosting, and other anonymous IP
     addresses.
   {{</ link-group/card >}}

@@ -1,14 +1,14 @@
 ---
 draft: false
-title: GeoIP2 Enterprise Databases
+title: GeoIP Enterprise Databases
 ---
 
 Determine geolocation data such as country, region, state, city, ZIP/postal
 code, and additional intelligence such as confidence factors, ISP, domain, and
 connection type.
 
-To learn more about the GeoIP2 Enterprise database, please visit the
-[GeoIP2 Enterprise Database page](https://www.maxmind.com/en/solutions/geoip2-enterprise-product-suite/enterprise-database).
+To learn more about the GeoIP Enterprise database, please visit the
+[GeoIP Enterprise Database page](https://www.maxmind.com/en/solutions/geoip2-enterprise-product-suite/enterprise-database).
 
 If you are interested in purchasing the database, please
 [contact our Enterprise Business team](https://www.maxmind.com/en/solutions/geoip2-enterprise-product-suite#signUp)

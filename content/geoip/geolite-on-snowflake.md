@@ -91,7 +91,7 @@ particular dataset you are querying:
 
 GeoLite data offered through the Snowflake Marketplace is subject to the
 [MaxMind Services Terms of Use for the Snowflake Platform](https://www.maxmind.com/en/snowflake-geolite-terms-of-use).
-Please note that this is different from the GeoLite2 End User License Agreement,
+Please note that this is different from the GeoLite End User License Agreement,
 which governs the use of GeoLite databases and web services served directly from
 MaxMind.
 

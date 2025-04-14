@@ -1,13 +1,13 @@
 ---
 draft: false
-title: GeoIP2 ISP Databases
+title: GeoIP ISP Databases
 ---
 
 Determine the Internet Service Provider, organization name, and autonomous
 system organization and number associated with an IP address.
 
-To learn more about the GeoIP2 ISP database, including terms and pricing, please
-[visit the GeoIP2 ISP Database page](https://www.maxmind.com/en/geoip2-isp-database).
+To learn more about the GeoIP ISP database, including terms and pricing, please
+[visit the GeoIP ISP Database page](https://www.maxmind.com/en/geoip2-isp-database).
 
 {{< snippet "snippets/data-privacy-warning.md" >}}
 

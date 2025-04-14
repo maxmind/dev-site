@@ -16,7 +16,7 @@ The password is your
   You must be approved for a [GeoIP web service
   trial](https://www.maxmind.com/en/request-service-trial?service_geoip=1),
   [purchase service credit](https://www.maxmind.com/en/geoip2-precision-insights)
-  for use with our web services, or have a [GeoLite2
+  for use with our web services, or have a [GeoLite
   account](https://www.maxmind.com/en/geolite2/signup), in order to receive an
   account ID and license key.
 {{</ alert >}}
@@ -58,7 +58,7 @@ system making the query is behind a NAT.
 The `geoip.maxmind.com` hostname automatically picks the data center
 geographically closest to you.
 
-### GeoLite2 Endpoints
+### GeoLite Endpoints
 
 | Service | HTTP Method | Endpoint                                               |
 | ------- | ----------- | ------------------------------------------------------ |

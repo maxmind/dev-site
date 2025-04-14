@@ -1,6 +1,6 @@
 ---
 draft: false
-title: GeoLite2 ASN Database
+title: GeoLite ASN Database
 ---
 
 Look up the autonomous system number and autonomous system organization

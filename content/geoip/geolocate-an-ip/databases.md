@@ -3,7 +3,7 @@ draft: false
 title: Geolocate an IP address using Databases
 ---
 
-Geolocating an IP address using GeoIP2 and GeoLite2 databases consists of
+Geolocating an IP address using GeoIP and GeoLite databases consists of
 configuring a database reader and querying the database.
 
 ## Implementation
@@ -12,10 +12,10 @@ MaxMind offers and highly recommends using
 [official client libraries](/geoip/docs/databases#official-client-apis) to query
 our databases.
 
-### 1. Install the GeoIP2 client library
+### 1. Install the GeoIP client library
 
 We have a collection of officially supported libraries for you to query with the
-GeoIP2 and GeoLite2 databases:
+GeoIP and GeoLite databases:
 
 {{< codeset >}}
 
@@ -69,7 +69,7 @@ gem 'maxmind-geoip2'
 
 {{< /codeset >}}
 
-### 2. Configure a GeoIP2 database reader to query the database
+### 2. Configure a GeoIP database reader to query the database
 
 Configuring the database reader requires the database file to be accessible on
 the filesystem. After configuring the database reader, you can then query the

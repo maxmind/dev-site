@@ -1,16 +1,16 @@
 ---
 draft: false
-title: GeoIP2 and GeoLite City and Country Databases
+title: GeoIP and GeoLite City and Country Databases
 ---
 
 Determine the country, subdivisions (regions), city, and postal code associated
 with IPv4 and IPv6 addresses worldwide.
 
-Terms and pricing for the GeoIP2 City and GeoIP2 Country databases may be found
+Terms and pricing for the GeoIP City and GeoIP Country databases may be found
 on our product pages:
 
-- [GeoIP2 City](https://www.maxmind.com/en/geoip2-city)
-- [GeoIP2 Country](https://www.maxmind.com/en/geoip2-country)
+- [GeoIP City](https://www.maxmind.com/en/geoip2-city)
+- [GeoIP Country](https://www.maxmind.com/en/geoip2-country)
 
 {{< snippet "snippets/ip-geolocation-usage-warning.md" >}}
 {{< snippet "snippets/data-privacy-warning.md" >}}

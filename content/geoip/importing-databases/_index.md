@@ -4,7 +4,7 @@ title: Importing Databases
 icon: DatabaseIcon
 ---
 
-Learn how to import GeoIP2 and GeoLite2 CSV format databases into popular SQL
+Learn how to import GeoIP and GeoLite CSV format databases into popular SQL
 database platforms.
 
 {{< link-group/container heading="Guides" >}}

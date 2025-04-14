@@ -1,14 +1,14 @@
 ---
 draft: false
-title: GeoIP2 Connection Type Databases
+title: GeoIP Connection Type Databases
 ---
 
 Determine the connection type of your visitors based on their IP address. The
 database identifies cellular, cable/DSL, and corporate connection speeds.
 
-To learn more about the GeoIP2 Connection Type database, including terms and
+To learn more about the GeoIP Connection Type database, including terms and
 pricing, please
-[visit the GeoIP2 Connection Type Database page](https://www.maxmind.com/en/geoip2-connection-type-database).
+[visit the GeoIP Connection Type Database page](https://www.maxmind.com/en/geoip2-connection-type-database).
 
 {{< snippet "snippets/data-privacy-warning.md" >}}
 

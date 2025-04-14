@@ -13,7 +13,7 @@ for more information.
 
 {{< alert warning >}}
 **Note:** This documentation is for the GeoIP legacy services. New customers do
-not have access to these services. Please use the [GeoIP2 web
+not have access to these services. Please use the [GeoIP web
 services](/geoip/docs/web-services).
 {{</ alert >}}
 
