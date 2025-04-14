@@ -16,7 +16,7 @@ associated with IPv4 and IPv6 addresses.
 
 {{< snippet "snippets/csv-databases-intro.md" >}}
 
-{{< zip-file-content product-name="GeoLite2 ASN" >}}
+{{< zip-file-content product-name="GeoLite2-ASN" >}}
 
 {{< snippet "snippets/file-format.md" >}}
 
