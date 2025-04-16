@@ -41,7 +41,7 @@ curl -u "{account_id}:{license_key}" \
   "https://geoip.maxmind.com/geoip/v2.1/insights/{ip_address}?pretty"
 ```
 
-#### GeoLite2 Country
+#### GeoLite Country
 ```bash
 # Retrieve data for your IP address.
 curl -u "{account_id}:{license_key}" \
@@ -52,7 +52,7 @@ curl -u "{account_id}:{license_key}" \
   "https://geolite.info/geoip/v2.1/country/{ip_address}?pretty"
 ```
 
-#### GeoLite2 City
+#### GeoLite City
 ```bash
 # Retrieve data for your IP address.
 curl -u "{account_id}:{license_key}" \

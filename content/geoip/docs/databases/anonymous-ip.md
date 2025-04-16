@@ -1,13 +1,13 @@
 ---
 draft: false
-title: GeoIP2 Anonymous IP Databases
+title: GeoIP Anonymous IP Databases
 ---
 
-MaxMind's GeoIP2 Anonymous IP CSV database helps protect your business by
+MaxMind's GeoIP Anonymous IP CSV database helps protect your business by
 identifying proxy, VPN, hosting, and other anonymous IP addresses.
 
-To learn more about the GeoIP2 Anonymous IP database, please visit the
-[GeoIP2 Anonymous IP Database page](https://www.maxmind.com/en/solutions/geoip2-enterprise-product-suite/anonymous-ip-database).
+To learn more about the GeoIP Anonymous IP database, please visit the
+[GeoIP Anonymous IP Database page](https://www.maxmind.com/en/solutions/geoip2-enterprise-product-suite/anonymous-ip-database).
 If you are interested in purchasing the database, please
 [contact our Enterprise Business team](https://www.maxmind.com/en/solutions/geoip2-enterprise-product-suite#signUp)
 for assistance.

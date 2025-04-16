@@ -14,8 +14,8 @@ outlined below:
 | GeoIP Country   | `application/vnd.maxmind.com-country+json; charset=UTF-8; version=2.1`  |
 | GeoIP City      | `application/vnd.maxmind.com-city+json; charset=UTF-8; version=2.1`     |
 | GeoIP Insights  | `application/vnd.maxmind.com-insights+json; charset=UTF-8; version=2.1` |
-| GeoLite2 Country | `application/vnd.maxmind.com-country+json; charset=UTF-8; version=2.1`  |
-| GeoLite2 City    | `application/vnd.maxmind.com-city+json; charset=UTF-8; version=2.1`     |
+| GeoLite Country | `application/vnd.maxmind.com-country+json; charset=UTF-8; version=2.1`  |
+| GeoLite City    | `application/vnd.maxmind.com-city+json; charset=UTF-8; version=2.1`     |
 
 Errors may be returned with the `Content-Type` set to
 `application/vnd.maxmind.com-error+json; charset=UTF-8; version=2.0`. If this is
@@ -645,7 +645,7 @@ address.
   {{< geoip-schema-row key="connection_type" valueType="string" city="true" insights="true">}}
   One of the following values: `Cable/DSL`, `Cellular`, `Corporate`, or `Satellite`. Additional values may be added in the future.
 
-  **This field is not present in the GeoLite2 City web service.**
+  **This field is not present in the GeoLite City web service.**
 
   [Learn more about connection type data on our Knowledge Base.](https://support.maxmind.com/hc/en-us/articles/4408200231067-IP-Network-Data#h_01FN988THBX8RVERNTZ12BY2EC)
   {{</ geoip-schema-row >}}
@@ -653,7 +653,7 @@ address.
   {{< geoip-schema-row key="domain" valueType="string" city="true" insights="true">}}
   The second level domain associated with the IP address. This will be something like “example.com” or “example.co.uk”, not “foo.example.com”.
 
-  **This field is not present in the GeoLite2 City web service.**
+  **This field is not present in the GeoLite City web service.**
 
   [Learn more about domain name data on our Knowledge Base.](https://support.maxmind.com/hc/en-us/articles/4408200231067-IP-Network-Data#h_01FN98A5BNTS0GGWTD2QA4AHXN)
   {{</ geoip-schema-row >}}
@@ -707,7 +707,7 @@ address.
   {{< geoip-schema-row key="isp" valueType="boolean" city="true" insights="true">}}
   The name of the ISP associated with the IP address.
 
-  **This field is not present in the GeoLite2 City web service.**
+  **This field is not present in the GeoLite City web service.**
 
   [Learn more about ISP data on our Knowledge Base.](https://support.maxmind.com/hc/en-us/articles/4408200231067-IP-Network-Data#h_01FN989KHXR7TGXPB5T2DK0Q77)
   {{</ geoip-schema-row >}}
@@ -715,7 +715,7 @@ address.
   {{< geoip-schema-row key="mobile_country_code" valueType="string" city="true" insights="true">}}
   The [mobile country code (MCC)](https://en.wikipedia.org/wiki/Mobile_country_code) associated with the IP address and ISP.
 
-  This field is not present in the GeoLite2 City web service.
+  This field is not present in the GeoLite City web service.
 
   [Learn more about mobile country code data on our Knowledge Base.](https://support.maxmind.com/hc/en-us/articles/4408200231067-IP-Network-Data#h_01FT6Y6ANRH9GWYXE78B4RXAEX)
   {{</ geoip-schema-row >}}
@@ -723,7 +723,7 @@ address.
   {{< geoip-schema-row key="mobile_network_code" valueType="string" city="true" insights="true">}}
   The [mobile network code (MNC)](https://en.wikipedia.org/wiki/Mobile_country_code) associated with the IP address and ISP.
 
-  This field is not present in the GeoLite2 City web service.
+  This field is not present in the GeoLite City web service.
 
   [Learn more about mobile network code data on our Knowledge Base.](https://support.maxmind.com/hc/en-us/articles/4408200231067-IP-Network-Data#h_01FT6Y6ANRH9GWYXE78B4RXAEX)
   {{</ geoip-schema-row >}}
@@ -735,7 +735,7 @@ address.
   {{< geoip-schema-row key="organization" valueType="string" city="true" insights="true">}}
   The name of the organization associated with the IP address.
 
-  **This field is not present in the GeoLite2 City web service.**
+  **This field is not present in the GeoLite City web service.**
 
   [Learn more about organization data on our Knowledge Base.](https://support.maxmind.com/hc/en-us/articles/4408200231067-IP-Network-Data#h_01FN989KHXR7TGXPB5T2DK0Q77)
   {{</ geoip-schema-row >}}
@@ -792,7 +792,7 @@ address.
   {{< geoip-schema-row key="queries_remaining" valueType="integer" country="true" city="true" insights="true">}}
   The approximate number of remaining queries available for the end point which is being called.
 
-  **This field is not present in the GeoLite2 City web service.**
+  **This field is not present in the GeoLite City web service.**
   {{</ geoip-schema-row >}}
 {{</ schema-table >}}
 
@@ -899,7 +899,7 @@ that describe each service's response body.
 The following is an example of a full response to a GeoIP Country web service
 request.
 
-A GeoLite2 Country request follow the same structure, but the data returned will
+A GeoLite Country request follow the same structure, but the data returned will
 be less accurate. In addition, GeoLite Country requests will not return the
 `maxmind` object.
 
@@ -981,8 +981,8 @@ be less accurate. In addition, GeoLite Country requests will not return the
 The following is an example of a full response to a GeoIP City Plus web service
 request.
 
-A GeoLite2 City request follow the same structure, but the data returned will be
-less accurate. In addition, GeoLite2 City requests will not return the `domain`,
+A GeoLite City request follow the same structure, but the data returned will be
+less accurate. In addition, GeoLite City requests will not return the `domain`,
 `isp`, or `organization` values in the `traits` object, and it will not return
 the `maxmind` object.
 

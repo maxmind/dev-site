@@ -3,10 +3,10 @@ draft: false
 title: Geolocate an IP address using Web Services with the client-side JavaScript
 ---
 
-Our GeoIP2 JavaScript client allows you to use GeoIP2 web services client-side
+Our GeoIP JavaScript client allows you to use GeoIP web services client-side
 without doing any server-side integration on your end. While it is convenient,
 there are some caveats with its usage. Some browser settings and add-ons (such
-as ad blockers) may prevent the GeoIP2 JavaScript API from successfully calling
+as ad blockers) may prevent the GeoIP JavaScript API from successfully calling
 the web services. Additionally, there may be unexpected usage spikes which you
 may want to monitor, due to moments of high traffic to your website(s).
 
@@ -16,7 +16,7 @@ secure and more robust than a client-side integration.
 
 ## Implementation
 
-Implementing the GeoIP2 JavaScript client involves registering your domain(s),
+Implementing the GeoIP JavaScript client involves registering your domain(s),
 adding a JavaScript snippet to your web page, calling the desired API
 method/service, and providing callbacks for all scenarios.
 
@@ -38,7 +38,7 @@ page.
 {{< alert warning >}}
   **Do not download this JavaScript file and serve it from your server(s)!**
 
-The JavaScript file must be served from MaxMind servers, otherwise GeoIP2
+The JavaScript file must be served from MaxMind servers, otherwise GeoIP
 requests will fail.
 
 {{</ alert >}}
@@ -53,16 +53,16 @@ The JavaScript client provides 3 public methods:
 
 | Option                                         | Description                                                                                                             |
 | ---------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------- |
-| `geoip2.country(onSuccess, onError, options)`  | Calls the "GeoIP2 Country" endpoint using the routable IP address associated with the machine on which it is running.   |
-| `geoip2.city(onSuccess, onError, options)`     | Calls the "GeoIP2 City Plus" endpoint using the routable IP address associated with the machine on which it is running. |
-| `geoip2.insights(onSuccess, onError, options)` | Calls the "GeoIP2 Insights" endpoint using the routable IP address associated with the machine on which it is running.  |
+| `geoip2.country(onSuccess, onError, options)`  | Calls the "GeoIP Country" endpoint using the routable IP address associated with the machine on which it is running.   |
+| `geoip2.city(onSuccess, onError, options)`     | Calls the "GeoIP City Plus" endpoint using the routable IP address associated with the machine on which it is running. |
+| `geoip2.insights(onSuccess, onError, options)` | Calls the "GeoIP Insights" endpoint using the routable IP address associated with the machine on which it is running.  |
 
 All of the functions take the same 3 arguments:
 
 - If successful, this function calls the `onSuccess` callback. The first
   parameter passed to the callback contains an object matching the output of one
   of MaxMind’s
-  [GeoIP2 web service API responses](/geoip/docs/web-services/responses).
+  [GeoIP web service API responses](/geoip/docs/web-services/responses).
 
   In addition to the attributes listed in the web services API docs, the object
   also has a `most_specific_subdivision` property that provides access to the
@@ -133,7 +133,7 @@ var fillInPage = (function() {
     if (typeof geoip2 !== 'undefined') {
       geoip2.city(onSuccess, onError);
     } else {
-      document.getElementById('city').innerHTML = 'a browser that blocks GeoIP2 requests'
+      document.getElementById('city').innerHTML = 'a browser that blocks GeoIP requests'
     }
   };
 }());
@@ -197,12 +197,12 @@ description of the error.
 | `QUERY_FORBIDDEN`              | 401 Unauthorized     | You tried to access a service or feature that is not covered by your service plan.                      |
 | `OUT_OF_QUERIES`               | 402 Payment Required | The license key you have provided is out of queries. Please purchase more queries to use this service.  |
 | `PERMISSION_REQUIRED`          | 403 Forbidden        | You do not have permission to use the service. Please [contact our support team](https://support.maxmind.com/hc/en-us/requests/new) for more information. |
-| `HTTP_TIMEOUT`                 | (none)               | The request to the GeoIP2 web service timed out.                                                        |
-| `HTTP_ERROR`                   | (none)               | There was an error making the request to the GeoIP2 web service.                                        |
+| `HTTP_TIMEOUT`                 | (none)               | The request to the GeoIP web service timed out.                                                        |
+| `HTTP_ERROR`                   | (none)               | There was an error making the request to the GeoIP web service.                                        |
 
 ### Versioning
 
-This document covers **version 2.1** of the GeoIP2 JavaScript API. Whenever
+This document covers **version 2.1** of the GeoIP JavaScript API. Whenever
 MaxMind releases a new version of the JavaScript API, we will use a new path, so
 the old JavaScript files will always be accessible. For example, if we released
 version 42.6 of the JavaScript API, its path would be
@@ -217,7 +217,7 @@ need to break backwards compatibility with previous versions of the JavaScript
 API.
 
 Version 2.1 of the JavaScript API uses version 2.1 of the
-[GeoIP2 web services REST API](/geoip/geoip2/web-services/).
+[GeoIP web services REST API](/geoip/geoip2/web-services/).
 
 ### Browser support
 

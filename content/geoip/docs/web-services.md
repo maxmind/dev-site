@@ -1,16 +1,16 @@
 ---
 draft: false
-title: GeoIP2 and GeoLite2 Web Services Documentation
+title: GeoIP and GeoLite Web Services Documentation
 ---
 
 ## Overview
 
-To learn more about the GeoIP2 web services and to purchase credits, please view
+To learn more about the GeoIP web services and to purchase credits, please view
 our
-[GeoIP2 web services page](https://www.maxmind.com/en/geoip2-precision-services).
+[GeoIP web services page](https://www.maxmind.com/en/geoip2-precision-services).
 
 If you are interested in minFraud Insights or minFraud Factors web services,
-which also contain GeoIP2 Insights data, please
+which also contain GeoIP Insights data, please
 [contact our Enterprise Business team](https://www.maxmind.com/en/sales-contact?comments=I+am+interested+in+minFraud+Factors.&interested_in=minfraud)
 for assistance. To better understand the differences between each minFraud
 service, review our
@@ -165,7 +165,7 @@ the latitude and longitude coordinates.
 
 ## Versioning
 
-The GeoIP2 web services use two part versions. Our current release is version
+The GeoIP web services use two part versions. Our current release is version
 2.1. The major version number will remain at 2 for the foreseeable future and
 will not change unless we are releasing an entirely new product ("GeoIP3").
 
@@ -175,7 +175,7 @@ documentation on this page. Breaking changes include changing the type of an
 existing field, deleting a field entirely, or changing URIs.
 
 All changes to the web services will be documented in the
-[GeoIP2 release notes](/geoip/release-notes), whether or not the version number
+[GeoIP release notes](/geoip/release-notes), whether or not the version number
 is changed.
 
 The following changes are not considered to be breaking changes and will not be
@@ -193,6 +193,6 @@ accompanied by a version number change:
   Client code should always check the `Content-Type` header for any error
   response. Client code should also be prepared to handle any valid HTTP 4xx or
   5xx status code.
-- Adding a new service. If we add a GeoIP2 Inter-Galactic service, we will use a
+- Adding a new service. If we add a GeoIP Inter-Galactic service, we will use a
   new path such as `/geoip/v2.1/inter-galactic`. This should not break any
   existing client code.

@@ -3,7 +3,7 @@ draft: false
 title: Geolocate an IP address using Web Services
 ---
 
-Geolocating an IP address using GeoIP2 or GeoLite2 web services consists of
+Geolocating an IP address using GeoIP or GeoLite web services consists of
 configuring a web service client, creating a request, and handling the response.
 
 ## Implementation
@@ -12,13 +12,13 @@ MaxMind offers and highly recommends using
 [official client libraries](/geoip/docs/web-services#client-apis) to access our
 geolocation services. If you cannot or do not wish to use our client libraries,
 please review our
-[GeoIP2 API Documentation page](/geoip/docs/web-services/#request-and-response-api-references)
+[GeoIP API Documentation page](/geoip/docs/web-services/#request-and-response-api-references)
 for details on our REST API.
 
-### 1. Install the GeoIP2 client library
+### 1. Install the GeoIP client library
 
 We have a collection of officially supported libraries for you to interact with
-the GeoIP2 and GeoLite2 APIs:
+the GeoIP and GeoLite APIs:
 
 {{< codeset >}}
 
@@ -72,12 +72,12 @@ gem 'maxmind-geoip2'
 
 {{< /codeset >}}
 
-### 2. Create and configure a GeoIP2 client object
+### 2. Create and configure a GeoIP client object
 
 To interact with our API, you need to create a new client object. For this you
 will need your MaxMind
 [account ID and license key](https://www.maxmind.com/en/accounts/current/license-key).
-Our clients also allow you to interact with our GeoLite2 API, but this requires
+Our clients also allow you to interact with our GeoLite API, but this requires
 additional configuration as demonstrated below:
 
 {{< codeset >}}
@@ -85,7 +85,7 @@ additional configuration as demonstrated below:
 ```csharp
 var client = new WebServiceClient(10, "LICENSEKEY");
 
-// To query the GeoLite2 web service, you must set the optional `host` parameter
+// To query the GeoLite web service, you must set the optional `host` parameter
 to `geolite.info`
 var client = new WebServiceClient(10, "LICENSEKEY", host: "geolite.info");
 
@@ -94,7 +94,7 @@ var client = new WebServiceClient(10, "LICENSEKEY", host: "geolite.info");
 ```java
 WebServiceClient client = new WebServiceClient.Builder(10, "LICENSEKEY").build();
 
-// To query the GeoLite2 web service, you must call the `host` method on the
+// To query the GeoLite web service, you must call the `host` method on the
 // builder with "geolite.info"
 WebServiceClient client = new WebServiceClient.Builder(10, "LICENSEKEY").host("geolite.info").build();
 ```
@@ -102,14 +102,14 @@ WebServiceClient client = new WebServiceClient.Builder(10, "LICENSEKEY").host("g
 ```javascript
 const client = new WebServiceClient('10', 'LICENSEKEY');
 
-// To query the GeoLite2 web service, you must set the optional `host` parameter
+// To query the GeoLite web service, you must set the optional `host` parameter
 const client = new WebServiceClient('10', 'LICENSEKEY', {host: 'geolite.info'});
 ```
 
 ```php
 $client = new Client(10, 'LICENSEKEY');
 
-// To query the GeoLite2 web service, you must set the optional `host` argument.
+// To query the GeoLite web service, you must set the optional `host` argument.
 // The third argument specifies the language preferences when using the `->name`
 // method on the model classes that this client creates.
 $client = new Client(10, 'LICENSEKEY', ['en'], ['host' => 'geolite.info']);
@@ -118,14 +118,14 @@ $client = new Client(10, 'LICENSEKEY', ['en'], ['host' => 'geolite.info']);
 ```python
 # If you want to use synchronous requests
 client = Client(10, 'LICENSEKEY');
-# To query the GeoLite2 web service, you must set the "host" keyword argument
+# To query the GeoLite web service, you must set the "host" keyword argument
 # to "geolite.info"
 client = Client(10, 'LICENSEKEY', host='geolite.info');
 
 # Or if you want to use asynchronous requests
 async_client = AsyncClient(10, 'LICENSEKEY');
 
-# To query the GeoLite2 web service, you must set the "host" keyword argument
+# To query the GeoLite web service, you must set the "host" keyword argument
 # to "geolite.info"
 async_client = AsyncClient(10, 'LICENSEKEY', host='geolite.info');
 ```
@@ -135,7 +135,7 @@ Minfraud.configure do |c|
   c.account_id = 10
   c.license_key = 'LICENSEKEY'
 
-  # To use the GeoLite2 web service instead of GeoIP2, set the host
+  # To use the GeoLite web service instead of GeoIP, set the host
   # parameter to "geolite.info", eg:
   # host: 'geolite.info'
 end
@@ -145,7 +145,7 @@ end
 
 ### 3. Query the desired geolocation service
 
-GeoIP2 offers 3 services: Insights, City Plus, and Country. GeoLite2 offers 2
+GeoIP offers 3 services: Insights, City Plus, and Country. GeoLite offers 2
 services: City and Country. Each client library has an appropriately named
 method for accessing the desired geolocation service.
 
@@ -160,7 +160,7 @@ method for accessing the desired geolocation service.
 using (var client = new WebServiceClient(10, "license_key"))
 {
     // You can also use `client.City` or `client.Insights`
-    // `client.Insights` is not available to GeoLite2 users
+    // `client.Insights` is not available to GeoLite users
     var response = client.Country("128.101.101.101");
 
     Console.WriteLine(response.Country.IsoCode);        // 'US'
@@ -172,7 +172,7 @@ using (var client = new WebServiceClient(10, "license_key"))
 using (var client = new WebServiceClient(10, "license_key"))
 {
     // You can also use `client.CityAsync` or `client.InsightsAsync`
-    // `client.InsightsAsync` is not available to GeoLite2 users
+    // `client.InsightsAsync` is not available to GeoLite users
     var response = await client.CountryAsync("128.101.101.101");
 
     Console.WriteLine(response.Country.IsoCode);        // 'US'
@@ -188,7 +188,7 @@ try (WebServiceClient client = new WebServiceClient.Builder(42, "license_key")
     InetAddress ipAddress = InetAddress.getByName("128.101.101.101");
 
     // You can also use `client.city` or `client.insights`
-    // `client.insights` is not available to GeoLite2 users
+    // `client.insights` is not available to GeoLite users
     CountryResponse response = client.country(ipAddress);
 
     Country country = response.getCountry();
@@ -204,7 +204,7 @@ const WebServiceClient = require('@maxmind/geoip2-node').WebServiceClient;
 // import { WebServiceClient } from '@maxmind/geoip2-node';
 
 // You can also use `client.city` or `client.insights`
-// `client.insights` is not available to GeoLite2 users
+// `client.insights` is not available to GeoLite users
 client.country('142.1.1.1').then(response => {
   console.log(response.country.isoCode); // 'CA'
 });
@@ -217,7 +217,7 @@ use GeoIp2\WebService\Client;
 $client = new Client(10, 'LICENSEKEY');
 
 // You can also use `$client->city` or `$client->insights`
-// `$client->insights` is not available to GeoLite2 users
+// `$client->insights` is not available to GeoLite users
 $record = $client->country('128.101.101.101');
 
 print($record->country->isoCode . "\n");
@@ -229,7 +229,7 @@ import geoip2.webservice
 
 with geoip2.webservice.Client(10, 'license_key') as client:
   # You can also use `client.city` or `client.insights`
-  # `client.insights` is not available to GeoLite2 users
+  # `client.insights` is not available to GeoLite users
   response = client.country('128.101.101.101)
 
   print(response.country.iso_code)
@@ -241,7 +241,7 @@ import geoip2.webservice
 async def main():
   async with geoip2.webservice.AsyncClient(10, 'license_key') as client:
     # You can also use `client.city` or `client.insights`
-    # `client.insights` is not available to GeoLite2 users
+    # `client.insights` is not available to GeoLite users
     response = await client.country('128.101.101.101)
 
     print(response.country.iso_code)
@@ -258,7 +258,7 @@ Minfraud.configure do |c|
 end
 
 # You can also use `client.city` or `client.insights`
-# `client.insights` is not available to GeoLite2 users
+# `client.insights` is not available to GeoLite users
 record = client.country('128.101.101.101')
 
 puts record.country.iso_code

@@ -285,7 +285,7 @@ For full examples of response bodies, select one of the following:
 ### IP Address
 {{< anchor-target schema--response--ip-address >}}
 
-For minFraud Score, this object only contains the `risk` for the IP address. For minFraud Insights and Factors, the object is the [GeoIP2 Insights response body](/geoip/docs/web-services/responses/#geoip2-insights-body-example) with four modifications:
+For minFraud Score, this object only contains the `risk` for the IP address. For minFraud Insights and Factors, the object is the [GeoIP Insights response body](/geoip/docs/web-services/responses/#geoip2-insights-body-example) with four modifications:
 
 1. `risk` has been added directly to the `ip_address` object
 2. `local_time` has been added to the `location` sub-object
@@ -298,7 +298,7 @@ For minFraud Score, this object only contains the `risk` for the IP address. For
    * `is_residential_proxy`
    * `is_tor_exit_node`
 
-See the [GeoIP2 Insights response body](/geoip/docs/web-services/responses/#geoip2-insights-body-example) for more information.
+See the [GeoIP Insights response body](/geoip/docs/web-services/responses/#geoip2-insights-body-example) for more information.
 ```json
 {
   "risk": 0.01,
@@ -473,7 +473,7 @@ See the [GeoIP2 Insights response body](/geoip/docs/web-services/responses/#geoi
 
 This object contains country-level geolocation data associated with the IP address associated with the event
 
-[See the GeoIP2 Insights response body](/geoip/docs/web-services/responses/#country) for more information.
+[See the GeoIP Insights response body](/geoip/docs/web-services/responses/#country) for more information.
 
 ```json
 {
@@ -499,7 +499,7 @@ This object contains country-level geolocation data associated with the IP addre
 
 This object contains city-level geolocation data associated with the IP address associated with the event.
 
-[See the GeoIP2 Insights response body](/geoip/docs/web-services/responses/#location) for more information.
+[See the GeoIP Insights response body](/geoip/docs/web-services/responses/#location) for more information.
 
 ```json
 {

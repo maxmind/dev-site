@@ -19,7 +19,7 @@ redirected.
 
 {{</ alert >}}
 
-There are two methods for automatically updating GeoIP2 and GeoLite binary
+There are two methods for automatically updating GeoIP and GeoLite binary
 databases:
 
 1. Using MaxMind's
@@ -33,7 +33,7 @@ the CSV-format databases must use the direct download method.
 ## Using GeoIP Update
 
 MaxMind provides the GeoIP Update program, which performs automatic updates for
-both GeoIP2 and GeoLite2 binary databases.
+both GeoIP and GeoLite binary databases.
 
 MaxMind uses R2 presigned URLs for database downloads. Make sure that your
 servers can make HTTPS connections to the following hostname:
@@ -152,7 +152,7 @@ be found in the
 [Download Databases](https://www.maxmind.com/en/accounts/current/geoip/downloads)
 section of your account portal.
 
-For example, using the permalink for the GeoIP2 City CSV database, you can issue
+For example, using the permalink for the GeoIP City CSV database, you can issue
 a `curl` command like the following:
 
 ```bash
@@ -219,7 +219,7 @@ This download will return a compressed file in gzip (for binary) or zip (for
 CSV) format, which can be uncompressed using a program like
 [7-Zip](https://www.7-zip.org/) or [gzip](https://www.gzip.org/).
 
-For example, using the permalink for the GeoIP2 City CSV database, you can issue
+For example, using the permalink for the GeoIP City CSV database, you can issue
 a `curl` command like the following:
 
 ```shell

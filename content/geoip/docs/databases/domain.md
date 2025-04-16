@@ -1,13 +1,13 @@
 ---
 draft: false
-title: GeoIP2 Domain Databases
+title: GeoIP Domain Databases
 ---
 
 Look up the second level domain names associated with IPv4 and IPv6 addresses.
 
-To learn more about the GeoIP2 Domain database, including terms and pricing,
+To learn more about the GeoIP Domain database, including terms and pricing,
 please
-[visit the GeoIP2 Domain Database page](https://www.maxmind.com/en/geoip2-domain-name-database).
+[visit the GeoIP Domain Database page](https://www.maxmind.com/en/geoip2-domain-name-database).
 
 {{< snippet "snippets/data-privacy-warning.md" >}}
 

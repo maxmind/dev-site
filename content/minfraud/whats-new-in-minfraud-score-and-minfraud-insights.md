@@ -50,7 +50,7 @@ minFraud Insights response data builds on our previous web service outputs,
 improving organization and consistency while adding several new data points.
 
 Beyond the new outputs listed below, the service provides
-[GeoIP2 Insights data](/geoip/docs/web-services/responses/#geoip2-insights-body-example)
+[GeoIP Insights data](/geoip/docs/web-services/responses/#geoip2-insights-body-example)
 for the IP address in the `ip_address` object.
 
 `proxyScore` has been replaced with the IP address risk, `/ip_address/risk`.
