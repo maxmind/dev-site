@@ -27,7 +27,7 @@ for assistance.
 
 {{< zip-file-content product-name="GeoIP2-Enterprise" exclude-table="true" >}}
 
-The files in thie zip archive are:
+The files in the zip archive are:
 
 {{< rawhtml >}}
 <div class="table">

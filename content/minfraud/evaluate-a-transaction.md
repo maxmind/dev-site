@@ -477,7 +477,7 @@ insights_response = await async_client.insights(request)
 # minFraud Factors - Synchronous
 factors_response = client.factors(request)
 
-# minFraud Factors - Aynchronous
+# minFraud Factors - Asynchronous
 factors_response = await async_client.factors(request)
 ```
 
@@ -496,12 +496,12 @@ factors_model = assessment.factors.body
 
 ## Validation and error handling
 
-By default, our client libaries will throw an exception if any of the
+By default, our client libraries will throw an exception if any of the
 transaction object's values are invalid. The exception is thrown when the object
 is constructed; the python library will raise an error when the minFraud service
 method is called.
 
-If the minFraud request fails, our client libraires will throw an exception,
+If the minFraud request fails, our client libraries will throw an exception,
 raise an error (python), or reject the promise (node).
 
 For more information on errors and exceptions, including their types and
