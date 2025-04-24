@@ -84,7 +84,7 @@ The HTTP status will be `401 Unauthorized`.
 
 ### Response Body (for unsuccessful requests)
 
-In the event of an error occuring such as a bad request that has a license key
+In the event of an error occurring such as a bad request that has a license key
 with a bad format, the server will return a JSON object with the following
 structure:
 

@@ -33,7 +33,7 @@ secure.
 ## Service Endpoints
 
 The endpoint for each service is as specified below. Each endpoint expects an IP
-adddress to be defined as a path parameter (`{ip_address}`).
+address to be defined as a path parameter (`{ip_address}`).
 
 The IP address can be either an IPv4 or an IPv6 address. IPv4 addresses should
 be passed in the standard dotted quad form, for example `1.2.3.4`. IPv6

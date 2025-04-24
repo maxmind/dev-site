@@ -20,6 +20,11 @@ title: GeoIP and GeoLite Database Documentation
     business by identifying proxy, VPN, hosting, and other anonymous IP
     addresses.
   {{</ link-group/card >}}
+  {{< link-group/card heading="Anonymous Plus Databases" href="/geoip/docs/databases/anonymous-plus" >}}
+    MaxMind's GeoIP Anonymous Plus database helps protect your business by
+    identifying anonymized proxy traffic and reduce false positives based on
+    confidence scores, timestamps, and VPN provider names.
+  {{</ link-group/card >}}
   {{< link-group/card heading="ISP Databases" href="/geoip/docs/databases/isp" >}}
     Determine the Internet Service Provider, organization name,
     and autonomous system organization and number associated with an IP

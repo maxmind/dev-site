@@ -91,7 +91,7 @@ in GeoIP products and services on our knowledge base.
         </td>
       </tr>
       <tr>
-        <td>Anonymous</td>
+        <td>Anonymous IP</td>
         <td>
           <a href="/geoip/docs/databases/anonymous-ip/#binary-database">Docs</a>
         </td>
@@ -100,6 +100,18 @@ in GeoIP products and services on our knowledge base.
         </td>
         <td>
           Included in the GeoIP Insights web service.
+        </td>
+      </tr>
+      <tr>
+        <td>Anonymous Plus</td>
+        <td>
+          <a href="/geoip/docs/databases/anonymous-plus/#binary-database">Docs</a>
+        </td>
+        <td>
+          <a href="/geoip/docs/databases/anonymous-plus/#csv-databases">Docs</a>
+        </td>
+        <td>
+          &bull;
         </td>
       </tr>
       <tr>
