@@ -3,6 +3,15 @@ draft: false
 title: GeoIP Anonymous Plus Databases
 ---
 
+{{< alert warning >}}
+  The GeoIP Anonymous Plus database is under active development. New fields
+  are expected to be added. Please design your integrations to expect new
+  fields, and ensure you monitor updates to our
+  [GeoIP release notes](/geoip/release-notes) to get notifications about new
+  fields and changes to existing ones.
+{{</ alert>}}
+
+
 MaxMind's GeoIP Anonymous Plus database helps protect your business by
 identifying anonymized proxy traffic and reduce false positives based on
 confidence scores, timestamps, and VPN provider names.
@@ -138,6 +147,9 @@ These are named `GeoIP-Anonymous-Plus-Blocks-Plusv4.csv` and
         <td>
           A score ranging from 1 to 99 that is our percent confidence that the
           network is currently part of an actively used VPN service.
+          <br>
+          Currently we will only provide values of 30 and 99, but the number of
+          values will increase as we improve our confidence ratings
         </td>
       </tr>
 
