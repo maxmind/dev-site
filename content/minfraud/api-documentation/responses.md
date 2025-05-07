@@ -842,6 +842,7 @@ This is a sub-object of `email` that contains information related to the domain.
 {
   "country": "CA",
   "is_voip": true,
+  "matches_postal": true,
   "network_operator": "Telus Mobility-SVR/2",
   "number_type": "mobile"
 }
@@ -862,6 +863,10 @@ This is a sub-object of `email` that contains information related to the domain.
 
   {{< minfraud-schema-row key="is_voip" type="response" valueType="boolean"  insights="true" factors="true" >}}
   This is `true` if the shipping phone number is a Voice over Internet Protocol (VoIP) number allocated by a regulator. It is `false` if the shipping phone number is not a VoIP number allocated by a regulator. The key is only present when a valid shipping phone number has been provided and we have data for it.
+  {{</minfraud-schema-row>}}
+
+  {{< minfraud-schema-row key="matches_postal" type="response" valueType="boolean"  insights="true" factors="true" >}}
+  This field is `true` if the phone number's area code is commonly associated with the shipping postal code. It is `false` if the area code is not associated with the postal code. This key is only present for US phone numbers when the shipping phone number, postal code, and country are provided in the request.
   {{</minfraud-schema-row>}}
 
 {{</ schema-table >}}
@@ -921,6 +926,7 @@ This is a sub-object of `email` that contains information related to the domain.
 {
   "country": "US",
   "is_voip": true,
+  "matches_postal": true,
   "network_operator": "Verizon/1",
   "number_type": "fixed"
 }
@@ -942,6 +948,10 @@ This is a sub-object of `email` that contains information related to the domain.
 
   {{< minfraud-schema-row key="is_voip" type="response" valueType="boolean"  insights="true" factors="true" >}}
   This is `true` if the billing phone number is a Voice over Internet Protocol (VoIP) number allocated by a regulator. It is `false` if the billing phone number is not a VoIP number allocated by a regulator. The key is only present when a valid billing phone number has been provided and we have data for it.
+  {{</minfraud-schema-row>}}
+
+  {{< minfraud-schema-row key="matches_postal" type="response" valueType="boolean"  insights="true" factors="true" >}}
+  This field is `true` if the phone number's area code is commonly associated with the billing postal code. It is `false` if the area code is not associated with the postal code. This key is only present for US phone numbers when the billing phone number, postal code, and country are provided in the request.
   {{</minfraud-schema-row>}}
 
 {{</ schema-table >}}
@@ -1326,6 +1336,7 @@ Factors services, and a full example of the JSON body document for an error.
   "billing_phone": {
     "country": "US",
     "is_voip": true,
+    "matches_postal": true,
     "network_operator": "Verizon/1",
     "number_type": "fixed"
   },
@@ -1371,6 +1382,7 @@ Factors services, and a full example of the JSON body document for an error.
   "shipping_phone": {
     "country": "CA",
     "is_voip": true,
+    "matches_postal": true,
     "network_operator": "Telus Mobility-SVR/2",
     "number_type": "mobile"
   }
@@ -1580,6 +1592,7 @@ Factors services, and a full example of the JSON body document for an error.
   "billing_phone": {
     "country": "US",
     "is_voip": true,
+    "matches_postal": true,
     "network_operator": "Verizon/1",
     "number_type": "fixed"
   },
@@ -1625,6 +1638,7 @@ Factors services, and a full example of the JSON body document for an error.
   "shipping_phone": {
     "country": "CA",
     "is_voip": true,
+    "matches_postal": true,
     "network_operator": "Telus Mobility-SVR/2",
     "number_type": "mobile"
   },
