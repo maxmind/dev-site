@@ -17,9 +17,6 @@
     rel="stylesheet"
   />
 
-  {{ $systemStatus := resources.Get "js/system-status.ts" | js.Build }}
-  {{ $js := slice $systemStatus | resources.Concat "js/bundle.js" }}
-
   <!-- Google Tag Manager -->
   <script>
     (function (w, d, s, l, i) {
