@@ -38,6 +38,7 @@
   {{ $codeset := resources.Get "js/codeset.ts" | js.Build }}
   {{ $geoipCrontab := resources.Get "js/geoip-crontab.ts" | js.Build }}
   {{ $sidebar := resources.Get "js/sidebar.ts" | js.Build }}
-  {{ $js := slice $codeset $geoipCrontab $sidebar | resources.Concat "js/bundle.js" }}
+  {{ $systemStatus := resources.Get "js/system-status.ts" | js.Build }}
+  {{ $js := slice $codeset $geoipCrontab $sidebar $systemStatus | resources.Concat "js/bundle.js" }}
   <script type="module" src="{{ $js.RelPermalink }}"></script>
 </html>
