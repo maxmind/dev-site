@@ -866,7 +866,7 @@ This is a sub-object of `email` that contains information related to the domain.
   {{</minfraud-schema-row>}}
 
   {{< minfraud-schema-row key="matches_postal" type="response" valueType="boolean"  insights="true" factors="true" >}}
-  This field is `true` if the phone number's area code is commonly associated with the shipping postal code. It is `false` if the area code is not associated with the postal code. This key is only present for US phone numbers when the shipping phone number, postal code, and country are provided in the request.
+  This field is `true` if the phone number's prefix is commonly associated with the shipping postal code. It is `false` if the prefix is not associated with the postal code. This key is only present when the phone number is in the US, the number prefix is in our database, and the postal code and country are provided in the request.
   {{</minfraud-schema-row>}}
 
 {{</ schema-table >}}
@@ -951,7 +951,7 @@ This is a sub-object of `email` that contains information related to the domain.
   {{</minfraud-schema-row>}}
 
   {{< minfraud-schema-row key="matches_postal" type="response" valueType="boolean"  insights="true" factors="true" >}}
-  This field is `true` if the phone number's area code is commonly associated with the billing postal code. It is `false` if the area code is not associated with the postal code. This key is only present for US phone numbers when the billing phone number, postal code, and country are provided in the request.
+  This field is `true` if the phone number's prefix is commonly associated with the billing postal code. It is `false` if the prefix is not associated with the postal code. This key is only present when the phone number is in the US, the number prefix is in our database, and the postal code and country are provided in the request.
   {{</minfraud-schema-row>}}
 
 {{</ schema-table >}}
