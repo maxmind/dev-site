@@ -71,7 +71,7 @@ Alert. These codes are subject to change.
 | `HIGH_RISK_IP`     | IP address has been marked as a high-risk IP                                                     |
 | `HOSTING_PROVIDER` | IP is from High Risk Hosting Provider                                                            |
 | `MANUAL_REVIEW`    | The transaction was flagged as risky after manual review                                         |
-| `POSTAL_VELOCITY`  | IP address had high velocity of orders (e.g. different zipcodes on same IP address)              |
+| `POSTAL_VELOCITY`  | IP address had high velocity of orders (e.g. different zip codes on same IP address)              |
 
 ### Securing your webhook
 
@@ -101,7 +101,7 @@ signature of the request. You can calculate the signature of the request on your
 server and check it matches the signature in the header to verify the request is
 authentic.
 
-For example, if the secret is `supersekret-0123456789` and the alert request is:
+For example, if the secret is `supersecret-0123456789` and the alert request is:
 
 ```html
 http://yourdomain/yoururl?i=24.24.24.24&maxmindID=1234ABCD&domain=sample.com&city=Anytown&region=CA&country=US&date=Jan.+1,+1970&txnID=foo123&reason=IP+address+has+been+marked+as+a+high-risk+IP&reason_code=HIGH_RISK_IP&minfraud_id=2afb0d26-e3b4-4624-8e66-fd10e64b95df&shop_id=shop321
@@ -120,7 +120,7 @@ everything after the `?`. In this case, the text to be signed is:
 i=24.24.24.24&maxmindID=1234ABCD&domain=sample.com&city=Anytown&region=CA&country=US&date=Jan.+1,+1970&txnID=foo123&reason=IP+address+has+been+marked+as+a+high-risk+IP&reason_code=HIGH_RISK_IP&minfraud_id=2afb0d26-e3b4-4624-8e66-fd10e64b95df&shop_id=shop321
 ```
 
-You can check the signaturing using something like the following code:
+You can check the signature using something like the following code:
 
 {{< codeset >}}
 
