@@ -175,6 +175,7 @@ longer than the longest valid representation of an IPv6 address.
             <td>The domain for the user’s email address. This field should not be hashed.</td>
          </tr>
          <tr>
+            <!-- cspell:ignore cust -->
             <td>custPhone</td>
             <td>string (255)</td>
             <td>The customer’s phone number. Most formats are acceptable. We strip out all non-numeric characters from the input.</td>

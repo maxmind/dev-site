@@ -34,3 +34,12 @@ path-args = "absolute-file"
 include = ["assets/js/**"]
 ok-exit-codes = 0
 
+[commands.cspell-content]
+type="lint"
+include = ["*.md"]
+cmd = [
+  "npm",
+  "run",
+  "lint:cspell",
+]
+ok-exit-codes = 0

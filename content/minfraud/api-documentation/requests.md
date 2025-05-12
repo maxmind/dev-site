@@ -500,6 +500,8 @@ where the event took place
   {{< minfraud-schema-row key="processor" type="request" valueType="string" valueTypeNote="format: enum" >}}
   The payment processor used for the transaction. The valid values are:
 
+  <!-- cspell: disable -->
+
   * `adyen`
   * `affirm`
   * `afterpay`
@@ -659,6 +661,8 @@ where the event took place
   * `windcave`
   * `wirecard`
   * `worldpay`
+
+  <!-- cspell: enable -->
 
   If your payment processor is missing from this list, please [contact our support team](https://support.maxmind.com/hc/en-us/requests/new).
   {{</minfraud-schema-row>}}
