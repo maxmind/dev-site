@@ -120,7 +120,7 @@ the top of the file:
 ---
 draft: false
 title: GeoIP is the best
-description: GeoIP is the bestest IP Intelligence product suite ever made
+description: GeoIP is the best IP Intelligence product suite ever made
 ---
 ```
 
@@ -137,7 +137,7 @@ description: GeoIP is the bestest IP Intelligence product suite ever made
 ---
 draft: false
 title: GeoIP is the best
-description: GeoIP is the bestest IP Intelligence product suite ever made
+description: GeoIP is the best IP Intelligence product suite ever made
 image: /images/geoip2-so-cool.gif
 ---
 ```

@@ -1,0 +1,14 @@
+{
+    "$schema": "https://raw.githubusercontent.com/streetsidesoftware/cspell/main/cspell.schema.json",
+    "version": "0.1",
+    "allowCompoundWords": true,
+    "dictionaryDefinitions": [
+        {
+            "name": "stopwords",
+            "path": "./stopwords.txt",
+            "addWords": true
+        }
+    ],
+    "dictionaries": ["stopwords"],
+    "ignorePaths": ["node_modules", "/stopwords.txt"]
+}

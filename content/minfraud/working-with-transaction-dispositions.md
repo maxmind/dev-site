@@ -159,14 +159,14 @@ object in future versions of this API.
       "minfraud_id": "deadbeef-0000-0000-0000-00000020",
       "action": "manual_review",
       "action_last_updated": "2017-03-15T22:04:11.044250Z",
-      "note": "Ndapanda, can you check this out?",
+      "note": "Panda, can you check this out?",
       "note_last_updated": "2017-03-15T22:04:25.828250Z"
     },
     {
       "minfraud_id": "deadbeef-0000-0000-0000-00000030",
       "action": "accept",
       "action_last_updated": "2017-03-15T22:05:42.954231Z",
-      "note": "Customer was travelling abroad.",
+      "note": "Customer was traveling abroad.",
       "note_last_updated": "2017-03-15T22:05:58.132423Z"
     },
     {
