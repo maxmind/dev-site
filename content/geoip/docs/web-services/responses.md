@@ -704,7 +704,7 @@ address.
   [Learn more about Tor exit nodes on our Knowledge Base.](https://support.maxmind.com/hc/en-us/articles/4408208507163#h_01G1EDWR1VQR8A0NB3R8WXT8QF)
   {{</ geoip-schema-row >}}
 
-  {{< geoip-schema-row key="isp" valueType="boolean" city="true" insights="true">}}
+  {{< geoip-schema-row key="isp" valueType="string" city="true" insights="true">}}
   The name of the ISP associated with the IP address.
 
   **This field is not present in the GeoLite City web service.**
