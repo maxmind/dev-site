@@ -715,7 +715,7 @@ address.
   {{< geoip-schema-row key="mobile_country_code" valueType="string" city="true" insights="true">}}
   The [mobile country code (MCC)](https://en.wikipedia.org/wiki/Mobile_country_code) associated with the IP address and ISP.
 
-  This field is not present in the GeoLite City web service.
+  **This field is not present in the GeoLite City web service.**
 
   [Learn more about mobile country code data on our Knowledge Base.](https://support.maxmind.com/hc/en-us/articles/4408200231067-IP-Network-Data#h_01FT6Y6ANRH9GWYXE78B4RXAEX)
   {{</ geoip-schema-row >}}
@@ -723,7 +723,7 @@ address.
   {{< geoip-schema-row key="mobile_network_code" valueType="string" city="true" insights="true">}}
   The [mobile network code (MNC)](https://en.wikipedia.org/wiki/Mobile_country_code) associated with the IP address and ISP.
 
-  This field is not present in the GeoLite City web service.
+  **This field is not present in the GeoLite City web service.**
 
   [Learn more about mobile network code data on our Knowledge Base.](https://support.maxmind.com/hc/en-us/articles/4408200231067-IP-Network-Data#h_01FT6Y6ANRH9GWYXE78B4RXAEX)
   {{</ geoip-schema-row >}}
