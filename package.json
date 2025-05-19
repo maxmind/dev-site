@@ -11,7 +11,7 @@
     "@types/node": "^22.15.18",
     "cspell": "^9.0.1",
     "eslint": "^9.13.0",
-    "eslint-config-prettier": "^9.1.0",
+    "eslint-config-prettier": "^10.1.5",
     "eslint-plugin-security": "^3.0.1",
     "eslint-plugin-simple-import-sort": "^12.1.1",
     "globals": "^15.11.0",
