@@ -20,7 +20,7 @@
     "stylelint": "^16.10.0",
     "stylelint-config-recommended": "^14.0.1",
     "stylelint-config-sass-guidelines": "^12.1.0",
-    "stylelint-no-unsupported-browser-features": "^8.0.1",
+    "stylelint-no-unsupported-browser-features": "^8.0.4",
     "stylelint-order": "^6.0.4",
     "typescript": "^5.4.5",
     "typescript-eslint": "^8.11.0"
