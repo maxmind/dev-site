@@ -1,0 +1,391 @@
+diff_in,old_geoname_id,new_geoname_id,old_city_name,new_city_name,old_country_name,new_country_name,old_country_code,new_country_code,old_subdivision_codes,new_subdivision_codes
+city_name,3203651,3203651,Bosanski Brod,Brod,Bosnia and Herzegovina,Bosnia and Herzegovina,BA,BA,SRP,SRP
+city_name,1803327,1803327,Kaiyuan,Linzhou,China,China,CN,CN,HA,HA
+city_name,1529506,1529506,Fukang,Bofeng,China,China,CN,CN,XJ,XJ
+city_name,3493383,3493383,Sabaneta,San Ignacio de Sabaneta,Dominican Republic,Dominican Republic,DO,DO,26,26
+city_name,2954803,2954803,Au,Au (Schwarzwald),Germany,Germany,DE,DE,BW,BW
+city_name,1279228,1279228,Ahmednagar,Ahilyanagar,India,India,IN,IN,MH,MH
+city_name,3171728,3171728,Padova,Padua,Italy,Italy,IT,IT,"34, PD","34, PD"
+city_name,4016722,4016722,San Buenaventura,Buenaventura,Mexico,Mexico,MX,MX,CHH,CHH
+city_name,3980627,3980627,Valle de Allende,Allende,Mexico,Mexico,MX,MX,CHH,CHH
+city_name,4018365,4018365,Santa Eulalia,Aquiles Serdán,Mexico,Mexico,MX,MX,CHH,CHH
+city_name,11423197,11423197,La Alianza,Alianza,Mexico,Mexico,MX,MX,NLE,NLE
+city_name,1686933,1686933,Sexmoan,Sasmuan,Philippines,Philippines,PH,PH,"03, PAM","03, PAM"
+city_name,11789679,11789679,Ronceboz-Sombeval,Sonceboz-Sombeval,Switzerland,Switzerland,CH,CH,BE,BE
+city_name,2655394,2655394,Blairgowrie,Blairgowrie and Rattray,United Kingdom,United Kingdom,GB,GB,"SCT, PKN","SCT, PKN"
+city_name,4908737,4908737,Saint Charles,St. Charles,United States,United States,US,US,IL,IL
+geoname_id,8219768,2164990,Goombungee,Goombungee,Australia,Australia,AU,AU,QLD,QLD
+geoname_id,2070176,7839513,Halls Creek,Halls Creek,Australia,Australia,AU,AU,WA,WA
+geoname_id,8614659,8614545,Rosedale,Rosedale,Australia,Australia,AU,AU,NSW,NSW
+geoname_id,7839635,2061927,Sandstone,Sandstone,Australia,Australia,AU,AU,WA,WA
+geoname_id,3466970,7615124,Cardoso,Cardoso,Brazil,Brazil,BR,BR,SP,SP
+geoname_id,3455665,13063264,Ouro Verde,Ouro Verde,Brazil,Brazil,BR,BR,SC,SC
+geoname_id,3472208,13105359,Angical,Angical,Brazil,Brazil,BR,BR,BA,BA
+geoname_id,6323770,6317707,Nova Andradina,Nova Andradina,Brazil,Brazil,BR,BR,MS,MS
+geoname_id,3385737,3385736,Upanema,Upanema,Brazil,Brazil,BR,BR,RN,RN
+geoname_id,3451202,3451203,Rio das Pedras,Rio das Pedras,Brazil,Brazil,BR,BR,SP,SP
+geoname_id,12959105,6317420,Lago do Junco,Lago do Junco,Brazil,Brazil,BR,BR,MA,MA
+geoname_id,6317755,6324219,Nova Mutum,Nova Mutum,Brazil,Brazil,BR,BR,MT,MT
+geoname_id,12954562,6323847,Nova Ubiratã,Nova Ubiratã,Brazil,Brazil,BR,BR,MT,MT
+geoname_id,3451363,13020449,Ribeirão Bonito,Ribeirão Bonito,Brazil,Brazil,BR,BR,SP,SP
+geoname_id,3408094,3396571,Alagoinha,Alagoinha,Brazil,Brazil,BR,BR,PB,PB
+geoname_id,7583518,3468899,Brotas,Brotas,Brazil,Brazil,BR,BR,SP,SP
+geoname_id,3470428,3470427,Barrinha,Barrinha,Brazil,Brazil,BR,BR,SP,SP
+geoname_id,12955327,6319497,Vitória do Jari,Vitória do Jari,Brazil,Brazil,BR,BR,AP,AP
+geoname_id,3392885,6317896,Patos do Piauí,Patos do Piauí,Brazil,Brazil,BR,BR,PI,PI
+geoname_id,6316649,12958948,Brejo de Areia,Brejo de Areia,Brazil,Brazil,BR,BR,MA,MA
+geoname_id,3456277,6324162,Nobres,Nobres,Brazil,Brazil,BR,BR,MT,MT
+geoname_id,3688451,3688452,Buenaventura,Buenaventura,Colombia,Colombia,CO,CO,VAC,VAC
+geoname_id,2928650,2928649,Ettensberg,Ettensberg,Germany,Germany,DE,DE,BY,BY
+geoname_id,2865637,2865642,Neuenkirchen,Neuenkirchen,Germany,Germany,DE,DE,NI,NI
+geoname_id,2906334,2906333,Hennickendorf,Hennickendorf,Germany,Germany,DE,DE,BB,BB
+geoname_id,3207172,13286471,Edertal,Edertal,Germany,Germany,DE,DE,HE,HE
+geoname_id,719110,719111,Kétpó,Kétpó,Hungary,Hungary,HU,HU,JN,JN
+geoname_id,6605829,1645524,Depok,Depok,Indonesia,Indonesia,ID,ID,JB,JB
+geoname_id,6591034,1646448,Cimahi,Cimahi,Indonesia,Indonesia,ID,ID,JB,JB
+geoname_id,6827913,1626272,Sukoharjo,Sukoharjo,Indonesia,Indonesia,ID,ID,JT,JT
+geoname_id,1645749,1965328,Dampit,Dampit,Indonesia,Indonesia,ID,ID,JI,JI
+geoname_id,8980123,3180511,Carignano,Carignano,Italy,Italy,IT,IT,"21, TO","21, TO"
+geoname_id,11325334,11360039,Suya,Suya,Japan,Japan,JP,JP,43,43
+geoname_id,1860658,1860659,Kamata,Kamata,Japan,Japan,JP,JP,13,13
+geoname_id,9633085,9631838,Hirao,Hirao,Japan,Japan,JP,JP,29,29
+geoname_id,3985070,3985035,San Pedro,San Pedro,Mexico,Mexico,MX,MX,COA,COA
+geoname_id,9797076,11621272,El Olvido,El Olvido,Mexico,Mexico,MX,MX,DUR,DUR
+geoname_id,7289298,8582123,Zapotlán el Grande,Zapotlán el Grande,Mexico,Mexico,MX,MX,JAL,JAL
+geoname_id,3132852,3132855,Valle,Valle,Norway,Norway,NO,NO,42,42
+geoname_id,3372707,3372709,Ribeira Grande,Ribeira Grande,Portugal,Portugal,PT,PT,20,20
+geoname_id,512220,512219,Pavlodar,Pavlodar,Russia,Russia,RU,RU,TAM,TAM
+geoname_id,475699,475701,Vereya,Vereya,Russia,Russia,RU,RU,MOS,MOS
+geoname_id,6293643,6291503,Riet,Riet,Switzerland,Switzerland,CH,CH,ZH,ZH
+geoname_id,1152221,1152222,Mae Hong Son,Mae Hong Son,Thailand,Thailand,TH,TH,58,58
+geoname_id,3574754,3574514,Golconda,Golconda,Trinidad and Tobago,Trinidad and Tobago,TT,TT,PED,PED
+geoname_id,5129314,5129313,Northville,Northville,United States,United States,US,US,NY,NY
+subdivision_codes,3191281,3191281,Sarajevo,Sarajevo,Bosnia and Herzegovina,Bosnia and Herzegovina,BA,BA,"BIH, 09",BIH
+subdivision_codes,3194199,3194199,Odžak,Odžak,Bosnia and Herzegovina,Bosnia and Herzegovina,BA,BA,"BIH, 02",BIH
+subdivision_codes,3204520,3204520,Banovići,Banovići,Bosnia and Herzegovina,Bosnia and Herzegovina,BA,BA,"BIH, 03",BIH
+subdivision_codes,3204222,3204222,Bihać,Bihać,Bosnia and Herzegovina,Bosnia and Herzegovina,BA,BA,"BIH, 01",BIH
+subdivision_codes,3194828,3194828,Mostar,Mostar,Bosnia and Herzegovina,Bosnia and Herzegovina,BA,BA,"BIH, 10",BIH
+subdivision_codes,3203099,3203099,Bugojno,Bugojno,Bosnia and Herzegovina,Bosnia and Herzegovina,BA,BA,"BIH, 06",BIH
+subdivision_codes,3194035,3194035,Orašje,Orašje,Bosnia and Herzegovina,Bosnia and Herzegovina,BA,BA,"BIH, 02",BIH
+subdivision_codes,3196079,3196079,Lukavac,Lukavac,Bosnia and Herzegovina,Bosnia and Herzegovina,BA,BA,"BIH, 03",BIH
+subdivision_codes,3199145,3199145,Ilidža,Ilidža,Bosnia and Herzegovina,Bosnia and Herzegovina,BA,BA,"BIH, 09",BIH
+subdivision_codes,3194514,3194514,Neum,Neum,Bosnia and Herzegovina,Bosnia and Herzegovina,BA,BA,"BIH, 10",BIH
+subdivision_codes,6950982,6950982,Firostefani,Firostefani,Greece,Greece,GR,GR,"L, 82",L
+subdivision_codes,8989471,8989471,Nea Vrasna,Nea Vrasna,Greece,Greece,GR,GR,"B, 54",B
+subdivision_codes,265245,265245,Amarynthos,Amarynthos,Greece,Greece,GR,GR,"H, 04",H
+subdivision_codes,735948,735948,Kassandreia,Kassandreia,Greece,Greece,GR,GR,"B, 64",B
+subdivision_codes,259777,259777,Kyparíssi,Kyparíssi,Greece,Greece,GR,GR,"J, 16",J
+subdivision_codes,252062,252062,Velo,Velo,Greece,Greece,GR,GR,"J, 15",J
+subdivision_codes,253829,253829,Kato Synoikia Trikalon,Kato Synoikia Trikalon,Greece,Greece,GR,GR,"J, 15",J
+subdivision_codes,256627,256627,Néa Anchiálos,Néa Anchiálos,Greece,Greece,GR,GR,"E, 43",E
+subdivision_codes,264445,264445,Aspropyrgos,Aspropyrgos,Greece,Greece,GR,GR,"I, A1",I
+subdivision_codes,253673,253673,Schimatari,Schimatari,Greece,Greece,GR,GR,"H, 03",H
+subdivision_codes,251283,251283,Zacháro,Zacháro,Greece,Greece,GR,GR,"G, 14",G
+subdivision_codes,736754,736754,Argos Orestiko,Argos Orestiko,Greece,Greece,GR,GR,"C, 56",C
+subdivision_codes,736882,736882,Amyntaio,Amyntaio,Greece,Greece,GR,GR,"C, 63",C
+subdivision_codes,735540,735540,Krinides,Krinides,Greece,Greece,GR,GR,"A, 55",A
+subdivision_codes,259993,259993,Chiliomodi,Chiliomodi,Greece,Greece,GR,GR,"J, 15",J
+subdivision_codes,252946,252946,Thérmo,Thérmo,Greece,Greece,GR,GR,"G, 01",G
+subdivision_codes,7290409,7290409,Kefalonia,Kefalonia,Greece,Greece,GR,GR,"F, 23",F
+subdivision_codes,256339,256339,Oinofyta,Oinofyta,Greece,Greece,GR,GR,"H, 03",H
+subdivision_codes,252074,252074,Velestino,Velestino,Greece,Greece,GR,GR,"E, 43",E
+subdivision_codes,736108,736108,Irakleia,Irakleia,Greece,Greece,GR,GR,"B, 62",B
+subdivision_codes,254546,254546,Psachná,Psachná,Greece,Greece,GR,GR,"H, 04",H
+subdivision_codes,736291,736291,Evosmos,Evosmos,Greece,Greece,GR,GR,"B, 54",B
+subdivision_codes,734916,734916,Nikiti,Nikiti,Greece,Greece,GR,GR,"B, 64",B
+subdivision_codes,253499,253499,Sofádes,Sofádes,Greece,Greece,GR,GR,"E, 41",E
+subdivision_codes,9035858,9035858,Zefyri,Zefyri,Greece,Greece,GR,GR,"I, A1",I
+subdivision_codes,253806,253806,Platamónas,Platamónas,Greece,Greece,GR,GR,"B, 61",B
+subdivision_codes,259038,259038,Kounoupidianá,Kounoupidianá,Greece,Greece,GR,GR,"M, 94",M
+subdivision_codes,735804,735804,Chalkidikí,Chalkidikí,Greece,Greece,GR,GR,"B, 64",B
+subdivision_codes,735764,735764,Chortiatis,Chortiatis,Greece,Greece,GR,GR,"B, 54",B
+subdivision_codes,9535200,9535200,Lagonisi,Lagonisi,Greece,Greece,GR,GR,"H, 06",H
+subdivision_codes,255274,255274,Piraeus,Piraeus,Greece,Greece,GR,GR,"I, A1",I
+subdivision_codes,8358616,8358616,Ampelokipoi,Ampelokipoi,Greece,Greece,GR,GR,"B, 54",B
+subdivision_codes,253360,253360,Spercheiáda,Spercheiáda,Greece,Greece,GR,GR,"H, 06",H
+subdivision_codes,735016,735016,Nea Kallikrateia,Nea Kallikrateia,Greece,Greece,GR,GR,"B, 64",B
+subdivision_codes,734630,734630,Pirgadikia,Pirgadikia,Greece,Greece,GR,GR,"B, 64",B
+subdivision_codes,255764,255764,Paralio Astros,Paralio Astros,Greece,Greece,GR,GR,"J, 12",J
+subdivision_codes,260114,260114,Chania,Chania,Greece,Greece,GR,GR,"M, 94",M
+subdivision_codes,258463,258463,Livadeia,Livadeia,Greece,Greece,GR,GR,"H, 03",H
+subdivision_codes,259973,259973,Chios,Chios,Greece,Greece,GR,GR,"K, 85",K
+subdivision_codes,264670,264670,Argos,Argos,Greece,Greece,GR,GR,"J, 11",J
+subdivision_codes,259245,259245,Kos,Kos,Greece,Greece,GR,GR,"L, 81",L
+subdivision_codes,400666,400666,Rhodes,Rhodes,Greece,Greece,GR,GR,"L, 81",L
+subdivision_codes,252601,252601,Tripoli,Tripoli,Greece,Greece,GR,GR,"J, 12",J
+subdivision_codes,256866,256866,Mytilene,Mytilene,Greece,Greece,GR,GR,"K, 83",K
+subdivision_codes,260989,260989,Karditsa,Karditsa,Greece,Greece,GR,GR,"E, 41",E
+subdivision_codes,265500,265500,Aigio,Aigio,Greece,Greece,GR,GR,"G, 13",G
+subdivision_codes,262037,262037,Glyfáda,Glyfáda,Greece,Greece,GR,GR,"J, 17",J
+subdivision_codes,734692,734692,Peristerion,Peristerion,Greece,Greece,GR,GR,"B, 57",B
+subdivision_codes,254698,254698,Preveza,Preveza,Greece,Greece,GR,GR,"D, 34",D
+subdivision_codes,251823,251823,Vonitsa,Vonitsa,Greece,Greece,GR,GR,"G, 01",G
+subdivision_codes,2463679,2463679,Corfu,Corfu,Greece,Greece,GR,GR,"F, 22",F
+subdivision_codes,734999,734999,Nea Moudania,Nea Moudania,Greece,Greece,GR,GR,"B, 64",B
+subdivision_codes,736364,736364,Drama,Drama,Greece,Greece,GR,GR,"A, 52",A
+subdivision_codes,733776,733776,Giannitsá,Giannitsá,Greece,Greece,GR,GR,"B, 59",B
+subdivision_codes,736357,736357,Edessa,Edessa,Greece,Greece,GR,GR,"B, 59",B
+subdivision_codes,734077,734077,Thessaloniki,Thessaloniki,Greece,Greece,GR,GR,"B, 54",B
+subdivision_codes,735914,735914,Katerini,Katerini,Greece,Greece,GR,GR,"B, 61",B
+subdivision_codes,261779,261779,Ioannina,Ioannina,Greece,Greece,GR,GR,"D, 33",D
+subdivision_codes,735640,735640,Komotini,Komotini,Greece,Greece,GR,GR,"A, 73",A
+subdivision_codes,251833,251833,Volos,Volos,Greece,Greece,GR,GR,"E, 43",E
+subdivision_codes,733840,733840,Xánthi,Xánthi,Greece,Greece,GR,GR,"A, 72",A
+subdivision_codes,734880,734880,Orestiáda,Orestiáda,Greece,Greece,GR,GR,"A, 71",A
+subdivision_codes,734517,734517,Polygyros,Polygyros,Greece,Greece,GR,GR,"B, 64",B
+subdivision_codes,255721,255721,Paros,Paros,Greece,Greece,GR,GR,"L, 82",L
+subdivision_codes,252664,252664,Trikala,Trikala,Greece,Greece,GR,GR,"E, 44",E
+subdivision_codes,262784,262784,Elassóna,Elassóna,Greece,Greece,GR,GR,"E, 42",E
+subdivision_codes,735927,735927,Kastoria,Kastoria,Greece,Greece,GR,GR,"C, 56",C
+subdivision_codes,736733,736733,Arnaia,Arnaia,Greece,Greece,GR,GR,"B, 64",B
+subdivision_codes,736229,736229,Florina,Florina,Greece,Greece,GR,GR,"C, 63",C
+subdivision_codes,735736,735736,Kilkis,Kilkis,Greece,Greece,GR,GR,"B, 57",B
+subdivision_codes,735563,735563,Kozani,Kozani,Greece,Greece,GR,GR,"C, 58",C
+subdivision_codes,736151,736151,Grevená,Grevená,Greece,Greece,GR,GR,"C, 51",C
+subdivision_codes,261807,261807,Igoumenitsa,Igoumenitsa,Greece,Greece,GR,GR,"D, 32",D
+subdivision_codes,735861,735861,Kavala,Kavala,Greece,Greece,GR,GR,"A, 55",A
+subdivision_codes,734359,734359,Samothráki,Samothráki,Greece,Greece,GR,GR,"A, 71",A
+subdivision_codes,736130,736130,Ierissos,Ierissos,Greece,Greece,GR,GR,"B, 64",B
+subdivision_codes,261814,261814,Ierapetra,Ierapetra,Greece,Greece,GR,GR,"M, 92",M
+subdivision_codes,263824,263824,Agios Nikolaos,Agios Nikolaos,Greece,Greece,GR,GR,"M, 92",M
+subdivision_codes,253759,253759,Sitia,Sitia,Greece,Greece,GR,GR,"M, 92",M
+subdivision_codes,734426,734426,Ptolemaida,Ptolemaida,Greece,Greece,GR,GR,"C, 58",C
+subdivision_codes,261604,261604,Kalamata,Kalamata,Greece,Greece,GR,GR,"J, 17",J
+subdivision_codes,254352,254352,Rethymno,Rethymno,Greece,Greece,GR,GR,"M, 93",M
+subdivision_codes,258842,258842,Krestena,Krestena,Greece,Greece,GR,GR,"G, 14",G
+subdivision_codes,736650,736650,Agía Paraskeví,Agía Paraskeví,Greece,Greece,GR,GR,"B, 54",B
+subdivision_codes,257859,257859,Malia,Malia,Greece,Greece,GR,GR,"M, 91",M
+subdivision_codes,255361,255361,Péfki,Péfki,Greece,Greece,GR,GR,"E, 44",E
+subdivision_codes,265040,265040,Chóra,Chóra,Greece,Greece,GR,GR,"L, 82",L
+subdivision_codes,260348,260348,Kéa,Kéa,Greece,Greece,GR,GR,"L, 82",L
+subdivision_codes,258500,258500,Leonídio,Leonídio,Greece,Greece,GR,GR,"J, 12",J
+subdivision_codes,264396,264396,Ástros,Ástros,Greece,Greece,GR,GR,"J, 12",J
+subdivision_codes,262067,262067,Gazi,Gazi,Greece,Greece,GR,GR,"M, 91",M
+subdivision_codes,258438,258438,Lefkada,Lefkada,Greece,Greece,GR,GR,"F, 24",F
+subdivision_codes,255229,255229,Pýrgos,Pýrgos,Greece,Greece,GR,GR,"G, 14",G
+subdivision_codes,255219,255219,Pýrgos,Pýrgos,Greece,Greece,GR,GR,"E, 41",E
+subdivision_codes,258620,258620,Lamia,Lamia,Greece,Greece,GR,GR,"H, 06",H
+subdivision_codes,735162,735162,Metamorfosi,Metamorfosi,Greece,Greece,GR,GR,"C, 56",C
+subdivision_codes,736259,736259,Néa Filadélfeia,Néa Filadélfeia,Greece,Greece,GR,GR,"B, 54",B
+subdivision_codes,257056,257056,Mykonos,Mykonos,Greece,Greece,GR,GR,"L, 82",L
+subdivision_codes,255293,255293,Pylos,Pylos,Greece,Greece,GR,GR,"J, 17",J
+subdivision_codes,256632,256632,Naxos,Naxos,Greece,Greece,GR,GR,"L, 82",L
+subdivision_codes,256592,256592,Néa Péramos,Néa Péramos,Greece,Greece,GR,GR,"I, A1",I
+subdivision_codes,264888,264888,Áno Liósia,Áno Liósia,Greece,Greece,GR,GR,"I, A1",I
+subdivision_codes,264559,264559,Arta,Arta,Greece,Greece,GR,GR,"D, 31",D
+subdivision_codes,255777,255777,Paralia,Paralia,Greece,Greece,GR,GR,"G, 13",G
+subdivision_codes,253394,253394,Sparti,Sparti,Greece,Greece,GR,GR,"J, 16",J
+subdivision_codes,256637,256637,Nafplion,Nafplion,Greece,Greece,GR,GR,"J, 11",J
+subdivision_codes,735615,735615,Korinós,Korinós,Greece,Greece,GR,GR,"B, 61",B
+subdivision_codes,258576,258576,Larissa,Larissa,Greece,Greece,GR,GR,"E, 42",E
+subdivision_codes,262462,262462,Farsala,Farsala,Greece,Greece,GR,GR,"E, 42",E
+subdivision_codes,265342,265342,Aliartos,Aliartos,Greece,Greece,GR,GR,"H, 03",H
+subdivision_codes,257365,257365,Megara,Megara,Greece,Greece,GR,GR,"I, A1",I
+subdivision_codes,265187,265187,Amfissa,Amfissa,Greece,Greece,GR,GR,"H, 07",H
+subdivision_codes,259830,259830,Kiato,Kiato,Greece,Greece,GR,GR,"J, 15",J
+subdivision_codes,256626,256626,Nea Artaki,Nea Artaki,Greece,Greece,GR,GR,"H, 04",H
+subdivision_codes,735001,735001,Néa Michanióna,Néa Michanióna,Greece,Greece,GR,GR,"B, 54",B
+subdivision_codes,734080,734080,Thermi,Thermi,Greece,Greece,GR,GR,"B, 54",B
+subdivision_codes,734770,734770,Panórama,Panórama,Greece,Greece,GR,GR,"A, 52",A
+subdivision_codes,736083,736083,Kalamaria,Kalamaria,Greece,Greece,GR,GR,"B, 54",B
+subdivision_codes,733905,733905,Véroia,Véroia,Greece,Greece,GR,GR,"B, 53",B
+subdivision_codes,734711,734711,Peraía,Peraía,Greece,Greece,GR,GR,"B, 59",B
+subdivision_codes,734235,734235,Skýdra,Skýdra,Greece,Greece,GR,GR,"B, 59",B
+subdivision_codes,734643,734643,Pylaia,Pylaia,Greece,Greece,GR,GR,"B, 54",B
+subdivision_codes,735630,735630,Kopanós,Kopanós,Greece,Greece,GR,GR,"B, 53",B
+subdivision_codes,735481,735481,Lagkadás,Lagkadás,Greece,Greece,GR,GR,"B, 54",B
+subdivision_codes,736929,736929,Alexándreia,Alexándreia,Greece,Greece,GR,GR,"B, 53",B
+subdivision_codes,735588,735588,Koufalia,Koufalia,Greece,Greece,GR,GR,"B, 54",B
+subdivision_codes,734540,734540,Polykastro,Polykastro,Greece,Greece,GR,GR,"B, 57",B
+subdivision_codes,734994,734994,Nea Peramos,Nea Peramos,Greece,Greece,GR,GR,"A, 55",A
+subdivision_codes,733901,733901,Vergina,Vergina,Greece,Greece,GR,GR,"B, 53",B
+subdivision_codes,736107,736107,Irakleio,Irakleio,Greece,Greece,GR,GR,"B, 54",B
+subdivision_codes,251280,251280,Zakynthos,Zakynthos,Greece,Greece,GR,GR,"F, 21",F
+subdivision_codes,265252,265252,Amaliáda,Amaliáda,Greece,Greece,GR,GR,"G, 14",G
+subdivision_codes,261073,261073,Karaíika,Karaíika,Greece,Greece,GR,GR,"G, 13",G
+subdivision_codes,257186,257186,Messolonghi,Messolonghi,Greece,Greece,GR,GR,"G, 01",G
+subdivision_codes,261601,261601,Kalambaka,Kalambaka,Greece,Greece,GR,GR,"E, 44",E
+subdivision_codes,734447,734447,Prosotsáni,Prosotsáni,Greece,Greece,GR,GR,"A, 52",A
+subdivision_codes,736207,736207,Galatista,Galatista,Greece,Greece,GR,GR,"B, 64",B
+subdivision_codes,735803,735803,Chalkidóna,Chalkidóna,Greece,Greece,GR,GR,"B, 54",B
+subdivision_codes,734315,734315,Siátista,Siátista,Greece,Greece,GR,GR,"C, 58",C
+subdivision_codes,736753,736753,Aridaea,Aridaea,Greece,Greece,GR,GR,"B, 59",B
+subdivision_codes,736450,736450,Diavatá,Diavatá,Greece,Greece,GR,GR,"B, 54",B
+subdivision_codes,256639,256639,Nafpaktos,Nafpaktos,Greece,Greece,GR,GR,"G, 01",G
+subdivision_codes,260891,260891,Karpenisi,Karpenisi,Greece,Greece,GR,GR,"H, 05",H
+subdivision_codes,734330,734330,Serres,Serres,Greece,Greece,GR,GR,"B, 62",B
+subdivision_codes,264390,264390,Atalanti,Atalanti,Greece,Greece,GR,GR,"H, 06",H
+subdivision_codes,264668,264668,Argostoli,Argostoli,Greece,Greece,GR,GR,"F, 23",F
+subdivision_codes,259289,259289,Corinth,Corinth,Greece,Greece,GR,GR,"J, 15",J
+subdivision_codes,11747175,11747175,Neapoli,Neapoli,Greece,Greece,GR,GR,"B, 54",B
+subdivision_codes,251525,251525,Xylokastro,Xylokastro,Greece,Greece,GR,GR,"J, 15",J
+subdivision_codes,264068,264068,Agioi Theodoroi,Agioi Theodoroi,Greece,Greece,GR,GR,"J, 15",J
+subdivision_codes,735030,735030,Náousa,Náousa,Greece,Greece,GR,GR,"B, 53",B
+subdivision_codes,252848,252848,Týrnavos,Týrnavos,Greece,Greece,GR,GR,"E, 42",E
+subdivision_codes,258066,258066,Loutraki,Loutraki,Greece,Greece,GR,GR,"J, 15",J
+subdivision_codes,265560,265560,Agrinio,Agrinio,Greece,Greece,GR,GR,"G, 01",G
+subdivision_codes,259302,259302,Korydallós,Korydallós,Greece,Greece,GR,GR,"E, 44",E
+subdivision_codes,256558,256558,Nemea,Nemea,Greece,Greece,GR,GR,"J, 15",J
+subdivision_codes,735886,735886,Loutraki,Loutraki,Greece,Greece,GR,GR,"B, 59",B
+subdivision_codes,264839,264839,Áno Sýros,Áno Sýros,Greece,Greece,GR,GR,"L, 82",L
+subdivision_codes,251876,251876,Moschato,Moschato,Greece,Greece,GR,GR,"E, 41",E
+subdivision_codes,734284,734284,Sindos,Sindos,Greece,Greece,GR,GR,"B, 54",B
+subdivision_codes,9034728,9034728,Nea Ionia,Nea Ionia,Greece,Greece,GR,GR,"E, 43",E
+subdivision_codes,262133,262133,Galaxidi,Galaxidi,Greece,Greece,GR,GR,"H, 07",H
+subdivision_codes,256842,256842,Moires,Moires,Greece,Greece,GR,GR,"M, 91",M
+subdivision_codes,256047,256047,Palamás,Palamás,Greece,Greece,GR,GR,"E, 41",E
+subdivision_codes,265417,265417,Akrata,Akrata,Greece,Greece,GR,GR,"G, 13",G
+subdivision_codes,262411,262411,Filippiada,Filippiada,Greece,Greece,GR,GR,"D, 34",D
+subdivision_codes,734883,734883,Oraiokastro,Oraiokastro,Greece,Greece,GR,GR,"B, 54",B
+subdivision_codes,735399,735399,Litochoro,Litochoro,Greece,Greece,GR,GR,"B, 61",B
+subdivision_codes,256919,256919,Mýrina,Mýrina,Greece,Greece,GR,GR,"E, 41",E
+subdivision_codes,258182,258182,Livanates,Livanates,Greece,Greece,GR,GR,"H, 06",H
+subdivision_codes,262701,262701,Elounda,Elounda,Greece,Greece,GR,GR,"M, 92",M
+subdivision_codes,262607,262607,Ermioni,Ermioni,Greece,Greece,GR,GR,"J, 11",J
+subdivision_codes,256795,256795,Monemvasía,Monemvasía,Greece,Greece,GR,GR,"J, 16",J
+subdivision_codes,734622,734622,Chalástra,Chalástra,Greece,Greece,GR,GR,"B, 54",B
+subdivision_codes,736646,736646,Agia Paraskevi,Agia Paraskevi,Greece,Greece,GR,GR,"B, 57",B
+subdivision_codes,736447,736447,Didymóteicho,Didymóteicho,Greece,Greece,GR,GR,"A, 71",A
+subdivision_codes,734339,734339,Sarti,Sarti,Greece,Greece,GR,GR,"B, 64",B
+subdivision_codes,255760,255760,Paramythiá,Paramythiá,Greece,Greece,GR,GR,"D, 32",D
+subdivision_codes,262603,262603,Ermoupoli,Ermoupoli,Greece,Greece,GR,GR,"L, 82",L
+subdivision_codes,734150,734150,Stavroupoli,Stavroupoli,Greece,Greece,GR,GR,"B, 54",B
+subdivision_codes,252910,252910,Thebes,Thebes,Greece,Greece,GR,GR,"H, 03",H
+subdivision_codes,261537,261537,Kalávryta,Kalávryta,Greece,Greece,GR,GR,"G, 13",G
+subdivision_codes,252920,252920,Fira,Fira,Greece,Greece,GR,GR,"L, 82",L
+subdivision_codes,7733361,7733361,Archaia Nemea,Archaia Nemea,Greece,Greece,GR,GR,"J, 15",J
+subdivision_codes,261745,261745,Heraklion,Heraklion,Greece,Greece,GR,GR,"M, 91",M
+subdivision_codes,264714,264714,Arachova,Arachova,Greece,Greece,GR,GR,"H, 03",H
+subdivision_codes,735636,735636,Konitsa,Konitsa,Greece,Greece,GR,GR,"D, 33",D
+subdivision_codes,252854,252854,Tinos,Tinos,Greece,Greece,GR,GR,"L, 82",L
+subdivision_codes,256492,256492,Karlovasi,Karlovasi,Greece,Greece,GR,GR,"K, 84",K
+subdivision_codes,253581,253581,Skopelos Town,Skopelos Town,Greece,Greece,GR,GR,"E, 43",E
+subdivision_codes,253896,253896,Sykiés,Sykiés,Greece,Greece,GR,GR,"E, 41",E
+subdivision_codes,734868,734868,Ormylia,Ormylia,Greece,Greece,GR,GR,"B, 64",B
+subdivision_codes,256653,256653,Náousa,Náousa,Greece,Greece,GR,GR,"L, 82",L
+subdivision_codes,264637,264637,Olympia,Olympia,Greece,Greece,GR,GR,"G, 14",G
+subdivision_codes,734328,734328,Sérvia,Sérvia,Greece,Greece,GR,GR,"C, 58",C
+subdivision_codes,259718,259718,Kissamos,Kissamos,Greece,Greece,GR,GR,"M, 94",M
+subdivision_codes,735215,735215,Menemeni,Menemeni,Greece,Greece,GR,GR,"B, 54",B
+subdivision_codes,251297,251297,Gytheion,Gytheion,Greece,Greece,GR,GR,"J, 16",J
+subdivision_codes,734094,734094,Thassos,Thassos,Greece,Greece,GR,GR,"A, 55",A
+subdivision_codes,261507,261507,Kalymnos,Kalymnos,Greece,Greece,GR,GR,"L, 81",L
+subdivision_codes,260895,260895,Karpathos,Karpathos,Greece,Greece,GR,GR,"L, 81",L
+subdivision_codes,260112,260112,Chánia,Chánia,Greece,Greece,GR,GR,"J, 17",J
+subdivision_codes,734944,734944,Kalochóri,Kalochóri,Greece,Greece,GR,GR,"B, 53",B
+subdivision_codes,736928,736928,Alexandroupoli,Alexandroupoli,Greece,Greece,GR,GR,"A, 71",A
+subdivision_codes,257322,257322,Meligalás,Meligalás,Greece,Greece,GR,GR,"J, 17",J
+subdivision_codes,734256,734256,Leptokaryá,Leptokaryá,Greece,Greece,GR,GR,"B, 61",B
+subdivision_codes,262503,262503,Magoúla,Magoúla,Greece,Greece,GR,GR,"E, 41",E
+subdivision_codes,258175,258175,Lixouri,Lixouri,Greece,Greece,GR,GR,"F, 23",F
+subdivision_codes,253643,253643,Skiathos,Skiathos,Greece,Greece,GR,GR,"E, 43",E
+subdivision_codes,262715,262715,Elliniko,Elliniko,Greece,Greece,GR,GR,"D, 33",D
+subdivision_codes,445156,445156,Agios Nikolaos,Agios Nikolaos,Greece,Greece,GR,GR,"E, 41",E
+subdivision_codes,255688,255688,Patmos,Patmos,Greece,Greece,GR,GR,"L, 81",L
+subdivision_codes,734939,734939,Neos Marmaras,Neos Marmaras,Greece,Greece,GR,GR,"B, 64",B
+subdivision_codes,736661,736661,Axioupolis,Axioupolis,Greece,Greece,GR,GR,"B, 57",B
+subdivision_codes,734979,734979,Néa Tríglia,Néa Tríglia,Greece,Greece,GR,GR,"B, 64",B
+subdivision_codes,257395,257395,Megalopolis,Megalopolis,Greece,Greece,GR,GR,"J, 12",J
+subdivision_codes,260133,260133,Chalcis,Chalcis,Greece,Greece,GR,GR,"H, 04",H
+subdivision_codes,262869,262869,Drosia,Drosia,Greece,Greece,GR,GR,"H, 04",H
+subdivision_codes,255233,255233,Pírgos,Pírgos,Greece,Greece,GR,GR,"J, 17",J
+subdivision_codes,254949,254949,Plomari,Plomari,Greece,Greece,GR,GR,"K, 83",K
+subdivision_codes,260473,260473,Káto Tithoréa,Káto Tithoréa,Greece,Greece,GR,GR,"H, 06",H
+subdivision_codes,255071,255071,Plataniás,Plataniás,Greece,Greece,GR,GR,"E, 43",E
+subdivision_codes,262752,262752,Elefsina,Elefsina,Greece,Greece,GR,GR,"I, A1",I
+subdivision_codes,255736,255736,Parga,Parga,Greece,Greece,GR,GR,"D, 34",D
+subdivision_codes,736964,736964,Aigínio,Aigínio,Greece,Greece,GR,GR,"B, 61",B
+subdivision_codes,253996,253996,Serifos,Serifos,Greece,Greece,GR,GR,"L, 82",L
+subdivision_codes,254115,254115,Samos,Samos,Greece,Greece,GR,GR,"K, 84",K
+subdivision_codes,736296,736296,Efkarpia,Efkarpia,Greece,Greece,GR,GR,"B, 54",B
+subdivision_codes,735747,735747,Chrysoupoli,Chrysoupoli,Greece,Greece,GR,GR,"A, 55",A
+subdivision_codes,256574,256574,Néa Smírni,Néa Smírni,Greece,Greece,GR,GR,"E, 42",E
+subdivision_codes,258330,258330,Lilaía,Lilaía,Greece,Greece,GR,GR,"H, 07",H
+subdivision_codes,260951,260951,Karyes,Karyes,Greece,Greece,GR,GR,"D, 33",D
+subdivision_codes,255683,255683,Pátrai,Pátrai,Greece,Greece,GR,GR,"G, 13",G
+subdivision_codes,256629,256629,Néa Alikarnassós,Néa Alikarnassós,Greece,Greece,GR,GR,"M, 91",M
+subdivision_codes,255063,255063,Plataniás,Plataniás,Greece,Greece,GR,GR,"M, 94",M
+subdivision_codes,735975,735975,Kardía,Kardía,Greece,Greece,GR,GR,"B, 54",B
+subdivision_codes,734149,734149,Stavroúpoli,Stavroúpoli,Greece,Greece,GR,GR,"A, 72",A
+subdivision_codes,265263,265263,Alonnisos,Alonnisos,Greece,Greece,GR,GR,"E, 43",E
+subdivision_codes,254842,254842,Porto Cheli,Porto Cheli,Greece,Greece,GR,GR,"J, 11",J
+subdivision_codes,264022,264022,Ágios Andréas,Ágios Andréas,Greece,Greece,GR,GR,"J, 12",J
+subdivision_codes,264114,264114,Agía Varvára,Agía Varvára,Greece,Greece,GR,GR,"M, 91",M
+subdivision_codes,263321,263321,Dafnés,Dafnés,Greece,Greece,GR,GR,"M, 91",M
+subdivision_codes,256944,256944,Mintilogli,Mintilogli,Greece,Greece,GR,GR,"G, 13",G
+subdivision_codes,265075,265075,Antíparos,Antíparos,Greece,Greece,GR,GR,"L, 82",L
+subdivision_codes,265298,265298,Almyrida,Almyrida,Greece,Greece,GR,GR,"M, 94",M
+subdivision_codes,734014,734014,Trilofos,Trilofos,Greece,Greece,GR,GR,"B, 54",B
+subdivision_codes,259720,259720,Kírra,Kírra,Greece,Greece,GR,GR,"H, 07",H
+subdivision_codes,736040,736040,Kallithea,Kallithea,Greece,Greece,GR,GR,"B, 64",B
+subdivision_codes,735821,735821,Keramoti,Keramoti,Greece,Greece,GR,GR,"A, 55",A
+subdivision_codes,734757,734757,Paralia Katerinis,Paralia Katerinis,Greece,Greece,GR,GR,"B, 61",B
+subdivision_codes,444224,444224,Tigkáki,Tigkáki,Greece,Greece,GR,GR,"L, 81",L
+subdivision_codes,408685,408685,Afántou,Afántou,Greece,Greece,GR,GR,"L, 81",L
+subdivision_codes,261475,261475,Kalyvia Livadiou,Kalyvia Livadiou,Greece,Greece,GR,GR,"H, 03",H
+subdivision_codes,265650,265650,Afrati,Afrati,Greece,Greece,GR,GR,"H, 04",H
+subdivision_codes,735731,735731,Kimméria,Kimméria,Greece,Greece,GR,GR,"A, 72",A
+subdivision_codes,736692,736692,Ássiros,Ássiros,Greece,Greece,GR,GR,"B, 54",B
+subdivision_codes,251220,251220,Zevgolatio,Zevgolatio,Greece,Greece,GR,GR,"J, 15",J
+subdivision_codes,261257,261257,Kamari,Kamari,Greece,Greece,GR,GR,"H, 04",H
+subdivision_codes,253045,253045,Tanágra,Tanágra,Greece,Greece,GR,GR,"H, 03",H
+subdivision_codes,735679,735679,Koíla,Koíla,Greece,Greece,GR,GR,"C, 58",C
+subdivision_codes,735472,735472,Lagyná,Lagyná,Greece,Greece,GR,GR,"B, 54",B
+subdivision_codes,736396,736396,Draviskos,Draviskos,Greece,Greece,GR,GR,"B, 62",B
+subdivision_codes,260465,260465,Metamórfosi,Metamórfosi,Greece,Greece,GR,GR,"E, 41",E
+subdivision_codes,263751,263751,Agios Serafeim,Agios Serafeim,Greece,Greece,GR,GR,"H, 06",H
+subdivision_codes,258507,258507,Leontári,Leontári,Greece,Greece,GR,GR,"H, 03",H
+subdivision_codes,258672,258672,Lakkí,Lakkí,Greece,Greece,GR,GR,"L, 81",L
+subdivision_codes,734154,734154,Stavrós,Stavrós,Greece,Greece,GR,GR,"B, 54",B
+subdivision_codes,735020,735020,Nea Gonia,Nea Gonia,Greece,Greece,GR,GR,"B, 64",B
+subdivision_codes,254309,254309,Ritsona,Ritsona,Greece,Greece,GR,GR,"H, 04",H
+subdivision_codes,735135,735135,Mikrokampos,Mikrokampos,Greece,Greece,GR,GR,"B, 57",B
+subdivision_codes,254599,254599,Profítis Ilías,Profítis Ilías,Greece,Greece,GR,GR,"M, 91",M
+subdivision_codes,263257,263257,Daratsos,Daratsos,Greece,Greece,GR,GR,"M, 94",M
+subdivision_codes,259723,259723,Kírinthos,Kírinthos,Greece,Greece,GR,GR,"H, 04",H
+subdivision_codes,9383241,9383241,Charavgi,Charavgi,Greece,Greece,GR,GR,"K, 84",K
+subdivision_codes,735024,735024,Nea Mpafra,Nea Mpafra,Greece,Greece,GR,GR,"B, 62",B
+subdivision_codes,251960,251960,Vilia,Vilia,Greece,Greece,GR,GR,"J, 15",J
+subdivision_codes,736124,736124,Iliokomi,Iliokomi,Greece,Greece,GR,GR,"B, 62",B
+subdivision_codes,263482,263482,Batsi,Batsi,Greece,Greece,GR,GR,"L, 82",L
+subdivision_codes,10175090,10175090,Penteli,Penteli,Greece,Greece,GR,GR,"D, 33",D
+subdivision_codes,252860,252860,Kato Vervena,Kato Vervena,Greece,Greece,GR,GR,"J, 12",J
+subdivision_codes,264132,264132,Agía Tríada,Agía Tríada,Greece,Greece,GR,GR,"J, 17",J
+subdivision_codes,408686,408686,Archangelos,Archangelos,Greece,Greece,GR,GR,"L, 81",L
+subdivision_codes,3177403,3177403,Emarèse,Emarèse,Italy,Italy,IT,IT,"23, AO",23
+subdivision_codes,3182997,3182997,Aosta,Aosta,Italy,Italy,IT,IT,"23, AO",23
+subdivision_codes,3178483,3178483,Cogne,Cogne,Italy,Italy,IT,IT,"23, AO",23
+subdivision_codes,3178908,3178908,Charvensod,Charvensod,Italy,Italy,IT,IT,"23, AO",23
+subdivision_codes,3178921,3178921,Chambave,Chambave,Italy,Italy,IT,IT,"23, AO",23
+subdivision_codes,3177872,3177872,Courmayeur,Courmayeur,Italy,Italy,IT,IT,"23, AO",23
+subdivision_codes,3178905,3178905,Châtillon,Châtillon,Italy,Italy,IT,IT,"23, AO",23
+subdivision_codes,6535075,6535075,Nus,Nus,Italy,Italy,IT,IT,"23, AO",23
+subdivision_codes,6535073,6535073,Gignod,Gignod,Italy,Italy,IT,IT,"23, AO",23
+subdivision_codes,6534708,6534708,Pontey,Pontey,Italy,Italy,IT,IT,"23, AO",23
+subdivision_codes,6535071,6535071,Donnas,Donnas,Italy,Italy,IT,IT,"23, AO",23
+subdivision_codes,3169712,3169712,Quart,Quart,Italy,Italy,IT,IT,"23, AO",23
+subdivision_codes,3182616,3182616,Aymavilles,Aymavilles,Italy,Italy,IT,IT,"23, AO",23
+subdivision_codes,6534761,6534761,Saint-Christophe,Saint-Christophe,Italy,Italy,IT,IT,"23, AO",23
+subdivision_codes,6542789,6542789,Sarre,Sarre,Italy,Italy,IT,IT,"23, AO",23
+subdivision_codes,3175093,3175093,La Salle,La Salle,Italy,Italy,IT,IT,"23, AO",23
+subdivision_codes,3164519,3164519,Verrès,Verrès,Italy,Italy,IT,IT,"23, AO",23
+subdivision_codes,3168712,3168712,Saint-Vincent,Saint-Vincent,Italy,Italy,IT,IT,"23, AO",23
+subdivision_codes,3175837,3175837,Gressoney-Saint-Jean,Gressoney-Saint-Jean,Italy,Italy,IT,IT,"23, AO",23
+subdivision_codes,3175062,3175062,La Thuile,La Thuile,Italy,Italy,IT,IT,"23, AO",23
+subdivision_codes,3168714,3168714,Saint-Pierre,Saint-Pierre,Italy,Italy,IT,IT,"23, AO",23
+subdivision_codes,6534423,6534423,Champorcher,Champorcher,Italy,Italy,IT,IT,"23, AO",23
+subdivision_codes,6534766,6534766,Valtournenche,Valtournenche,Italy,Italy,IT,IT,"23, AO",23
+subdivision_codes,3172658,3172658,Montjovet,Montjovet,Italy,Italy,IT,IT,"23, AO",23
+subdivision_codes,8949085,8949085,Fénis,Fénis,Italy,Italy,IT,IT,"23, AO",23
+subdivision_codes,6534904,6534904,Arnad,Arnad,Italy,Italy,IT,IT,"23, AO",23
+subdivision_codes,3169851,3169851,Prè-Saint-Didier,Prè-Saint-Didier,Italy,Italy,IT,IT,"23, AO",23
+subdivision_codes,6534419,6534419,Ayas,Ayas,Italy,Italy,IT,IT,"23, AO",23
+subdivision_codes,3181467,3181467,Brusson,Brusson,Italy,Italy,IT,IT,"23, AO",23
+subdivision_codes,6534762,6534762,Saint Marcel,Saint Marcel,Italy,Italy,IT,IT,"23, AO",23
+subdivision_codes,3170190,3170190,Pont-Saint-Martin,Pont-Saint-Martin,Italy,Italy,IT,IT,"23, AO",23
+subdivision_codes,6534357,6534357,Verrayes,Verrayes,Italy,Italy,IT,IT,"23, AO",23
+subdivision_codes,3169075,3169075,Roisan,Roisan,Italy,Italy,IT,IT,"23, AO",23
+subdivision_codes,8504423,8504423,Subang Jaya,Subang Jaya,Malaysia,Malaysia,MY,MY,14,10
+subdivision_codes,1685378,1685378,Sultan Kudarat,Sultan Kudarat,Philippines,Philippines,PH,PH,"14, MAG",14
+subdivision_codes,1704897,1704897,Lutayan,Lutayan,Philippines,Philippines,PH,PH,"14, MAG",14
+subdivision_codes,1709081,1709081,Katibpuan,Katibpuan,Philippines,Philippines,PH,PH,"14, MAG",14
