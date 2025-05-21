@@ -2,7 +2,7 @@
 draft: false
 title: GeoLite Databases and Web Services
 ---
-MaxMind offers a free geolocation and ASN data in downloadable database and web service formats. 
+MaxMind offers a free geolocation and ASN data in downloadable database and web service formats.
 
 {{< link-group/container >}}
   {{< link-group/card heading="Sign Up for GeoLite" href="https://www.maxmind.com/en/geolite2/signup" >}}
@@ -13,7 +13,7 @@ MaxMind offers a free geolocation and ASN data in downloadable database and web 
   {{</ link-group/card >}}
 {{</ link-group/container >}}
 
-Find what you need: 
+Find what you need:
 * [Understanding IP geolocation](#understanding-ip-geolocation)
 * [Integration](#integrating-geolite-databases-and-web-services)
 * [Generating a license key to authenticate GeoLite](#generate-a-license-key-to-authenticate-geolite-database-downloads-and-web-service-requests)
@@ -57,7 +57,7 @@ Working with the web services instead of the databases? Skip to the [instruction
 
 ### Decide how you want to use GeoLite databases
 
-MaxMind provides databases in two formats: 
+MaxMind provides databases in two formats:
 * a binary (.mmdb) format optimized for fast lookups at scale
 * a comma separated values (.csv) format that’s good for manipulating, joining, and transforming the data
 
@@ -103,7 +103,7 @@ MaxMind web services do support a client-side JavaScript lookup, but only for th
 
 MaxMind provides three different GeoLite databases. Click each link for documentation of all available database fields, client APIs, and sample files.
 
-Fields marked as available in Country will be available in the GeoLite Country database, except as noted in the field description. Fields marked as available in City will be available in the GeoLite City database, except as noted in the field description. 
+Fields marked as available in Country will be available in the GeoLite Country database, except as noted in the field description. Fields marked as available in City will be available in the GeoLite City database, except as noted in the field description.
 
 {{< rawhtml >}}
 <div class="table">
@@ -135,7 +135,7 @@ Fields marked as available in Country will be available in the GeoLite Country d
 ## GeoLite web service fields
 MaxMind provides two different GeoLite web services. Click each link for documentation of all available data that can be returned in each service.
 
-Fields marked as available in the GeoIP Country web service will be available in GeoLite Country web service, except as noted in the field description. Fields marked as available in the GeoIP City web service will be available in the GeoLite City web service, except as noted in the field description. 
+Fields marked as available in the GeoIP Country web service will be available in GeoLite Country web service, except as noted in the field description. Fields marked as available in the GeoIP City web service will be available in the GeoLite City web service, except as noted in the field description.
 
 {{< rawhtml >}}
 <div class="table">
@@ -146,12 +146,12 @@ Fields marked as available in the GeoIP Country web service will be available in
         <th>Use case</th>
       </tr>
       <tr>
-        <td><p><a href="https://c67362b6.dev-site-4ua.pages.dev/geoip/docs/web-services/#geolite2-country">GeoLite Country web service</a> </p> 
+        <td><p><a href="https://dev.maxmind.com/geoip/docs/web-services/#geolite-country">GeoLite Country web service</a> </p>
         <p>* Some fields listed in this documentation are not present in GeoLite. Check the description of the fields.</p></td>
         <td>Geolocation at the country-level for analytics, content customization, or compliance use cases in territories that are not disputed.</td>
       </tr>
       <tr>
-        <td><p><a href="https://c67362b6.dev-site-4ua.pages.dev/geoip/docs/web-services/#geolite2-city">GeoLite City web service</a> </p>
+        <td><p><a href="https://dev.maxmind.com/geoip/docs/web-services/#geolite-city">GeoLite City web service</a> </p>
         <p>* Some fields listed in this documentation are not present in GeoLite. Check the description of the fields.</p></td>
         <td><p>Geolocation down to the city or postal code for analytics and content customization. Also includes the autonomous system number and autonomous system organization.</p>
 <p> <strong>Please note</strong>: The free GeoLite City is considerably less accurate than the paid GeoIP City data, and is not recommended for commercial use cases.</p> </td>
