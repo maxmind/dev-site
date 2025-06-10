@@ -3,8 +3,8 @@ pages_build_output_dir = "public"
 compatibility_date = "2025-04-02"
 
 [vars]
-HUGO_VERSION = "0.145.0"
+HUGO_VERSION = "0.147.8"
 
 [env.production.vars]
 CF_PAGES_URL = "https://dev.maxmind.com/"
-HUGO_VERSION = "0.145.0"
+HUGO_VERSION = "0.147.8"
