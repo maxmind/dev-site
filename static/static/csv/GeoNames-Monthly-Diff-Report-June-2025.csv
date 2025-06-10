@@ -1,0 +1,154 @@
+diff_in,old_geoname_id,new_geoname_id,old_city_name,new_city_name,old_country_name,new_country_name,old_country_code,new_country_code,old_subdivision_codes,new_subdivision_codes
+city_name,3398350,3398350,Igarapé Açu,Igarapé-Açu,Brazil,Brazil,BR,BR,PA,PA
+city_name,3392088,3392088,Pindaré Mirim,Pindaré-Mirim,Brazil,Brazil,BR,BR,MA,MA
+city_name,3398871,3398871,Governador Dix Sept Rosado,Governador Dix-Sept Rosado,Brazil,Brazil,BR,BR,RN,RN
+city_name,3388059,3388059,São Vicente Ferrer,São Vicente Férrer,Brazil,Brazil,BR,BR,PE,PE
+city_name,3402360,3402360,Ceará Mirim,Ceará-Mirim,Brazil,Brazil,BR,BR,RN,RN
+city_name,3400810,3400810,Ererê,Ereré,Brazil,Brazil,BR,BR,CE,CE
+city_name,2613915,2613915,Skáli,Skála,Faroe Islands,Faroe Islands,FO,FO,,
+city_name,2866087,2866087,Neubukow,Schliemannstadt Neubukow,Germany,Germany,DE,DE,MV,MV
+city_name,1273874,1273874,Kochi,Ernakulam,India,India,IN,IN,KL,KL
+city_name,1262321,1262321,Mysore,Mysuru,India,India,IN,IN,KA,KA
+city_name,1263780,1263780,Mangalore,Mangaluru,India,India,IN,IN,KA,KA
+city_name,1256515,1256515,Shimoga,Shivamogga,India,India,IN,IN,KA,KA
+city_name,1269920,1269920,Hubli,Hubballi,India,India,IN,IN,KA,KA
+city_name,1275701,1275701,Bijapur,Vijayapura,India,India,IN,IN,KA,KA
+city_name,1269935,1269935,Hospet,Hosapete,India,India,IN,IN,KA,KA
+city_name,8715035,8715035,Nakano,Nakano City,Japan,Japan,JP,JP,13,13
+city_name,11790394,11790394,Nerima,Nerima City,Japan,Japan,JP,JP,13,13
+city_name,4006622,4006622,Escuinapa,Escuinapa de Hidalgo,Mexico,Mexico,MX,MX,SIN,SIN
+city_name,1169027,1169027,New Mirpur,New Mirpur City,Pakistan,Pakistan,PK,PK,JK,JK
+city_name,1161983,1161983,Rawlakot,Rawalakot,Pakistan,Pakistan,PK,PK,JK,JK
+city_name,3058498,3058498,Königsberg,Nová Baňa,Slovakia,Slovakia,SK,SK,BC,BC
+city_name,11703857,11703857,Providenciales,Provo,Turks and Caicos Islands,Turks and Caicos Islands,TC,TC,,
+geoname_id,3573095,8533871,Pembroke Parish,Pembroke Parish,Bermuda,Bermuda,BM,BM,PB,PB
+geoname_id,3573050,13353871,Sandys Parish,Sandys Parish,Bermuda,Bermuda,BM,BM,SA,SA
+geoname_id,3573026,13353870,Southampton Parish,Southampton Parish,Bermuda,Bermuda,BM,BM,SH,SH
+geoname_id,3573251,13353864,Devonshire Parish,Devonshire Parish,Bermuda,Bermuda,BM,BM,DS,DS
+geoname_id,7615124,3466970,Cardoso,Cardoso,Brazil,Brazil,BR,BR,SP,SP
+geoname_id,12966147,6316885,Colniza,Colniza,Brazil,Brazil,BR,BR,MT,MT
+geoname_id,12978151,6316935,Corumbiara,Corumbiara,Brazil,Brazil,BR,BR,RO,RO
+geoname_id,12954560,6318182,Rolim de Moura,Rolim de Moura,Brazil,Brazil,BR,BR,RO,RO
+geoname_id,6319402,6317029,Dom Eliseu,Dom Eliseu,Brazil,Brazil,BR,BR,PA,PA
+geoname_id,8430485,6317837,Paço do Lumiar,Paço do Lumiar,Brazil,Brazil,BR,BR,MA,MA
+geoname_id,6324217,3462986,Lucas do Rio Verde,Lucas do Rio Verde,Brazil,Brazil,BR,BR,MT,MT
+geoname_id,6319447,6317986,Placas,Placas,Brazil,Brazil,BR,BR,PA,PA
+geoname_id,6319456,6318194,Rurópolis,Rurópolis,Brazil,Brazil,BR,BR,PA,PA
+geoname_id,6319448,3391523,Ponta de Pedras,Ponta de Pedras,Brazil,Brazil,BR,BR,PA,PA
+geoname_id,6317342,3460493,Ivinhema,Ivinhema,Brazil,Brazil,BR,BR,MS,MS
+geoname_id,6319223,6316314,Água Boa,Água Boa,Brazil,Brazil,BR,BR,MT,MT
+geoname_id,6323863,6318091,Querência,Querência,Brazil,Brazil,BR,BR,MT,MT
+geoname_id,8505869,6317595,Ministro Andreazza,Ministro Andreazza,Brazil,Brazil,BR,BR,RO,RO
+geoname_id,8543460,3406923,Babaçulândia,Babaçulândia,Brazil,Brazil,BR,BR,TO,TO
+geoname_id,3397091,6317586,Messias Targino,Messias Targino,Brazil,Brazil,BR,BR,RN,RN
+geoname_id,6319002,3392811,Pau d'Arco,Pau d'Arco,Brazil,Brazil,BR,BR,TO,TO
+geoname_id,6319509,3407674,Ananás,Ananás,Brazil,Brazil,BR,BR,TO,TO
+geoname_id,6319463,6318324,Santana do Araguaia,Santana do Araguaia,Brazil,Brazil,BR,BR,PA,PA
+geoname_id,6323887,6318931,Vila Rica,Vila Rica,Brazil,Brazil,BR,BR,MT,MT
+geoname_id,3393468,13353824,Orocó,Orocó,Brazil,Brazil,BR,BR,PE,PE
+geoname_id,6316662,12959044,Buriticupu,Buriticupu,Brazil,Brazil,BR,BR,MA,MA
+geoname_id,6316648,12978005,Brasnorte,Brasnorte,Brazil,Brazil,BR,BR,MT,MT
+geoname_id,6323719,3472391,Amambai,Amambai,Brazil,Brazil,BR,BR,MS,MS
+geoname_id,3405305,6319528,Bom Jesus do Tocantins,Bom Jesus do Tocantins,Brazil,Brazil,BR,BR,TO,TO
+geoname_id,6319591,3392438,Pedro Afonso,Pedro Afonso,Brazil,Brazil,BR,BR,TO,TO
+geoname_id,12532158,6317277,Imbé,Imbé,Brazil,Brazil,BR,BR,RS,RS
+geoname_id,6319146,3457743,Nova Marilândia,Nova Marilândia,Brazil,Brazil,BR,BR,MT,MT
+geoname_id,3458729,11959657,Laurentino,Laurentino,Brazil,Brazil,BR,BR,SC,SC
+geoname_id,6319833,6318970,Zé Doca,Zé Doca,Brazil,Brazil,BR,BR,MA,MA
+geoname_id,6323777,3451399,Ribas do Rio Pardo,Ribas do Rio Pardo,Brazil,Brazil,BR,BR,MS,MS
+geoname_id,6323769,6317704,Nova Alvorada do Sul,Nova Alvorada do Sul,Brazil,Brazil,BR,BR,MS,MS
+geoname_id,6319712,3398381,Icatu,Icatu,Brazil,Brazil,BR,BR,MA,MA
+geoname_id,6319006,6316350,Alto Alegre do Pindaré,Alto Alegre do Pindaré,Brazil,Brazil,BR,BR,MA,MA
+geoname_id,3447087,3447088,Tacuru,Tacuru,Brazil,Brazil,BR,BR,MS,MS
+geoname_id,6324174,6317600,Mirante da Serra,Mirante da Serra,Brazil,Brazil,BR,BR,RO,RO
+geoname_id,6323801,6316428,Araputanga,Araputanga,Brazil,Brazil,BR,BR,MT,MT
+geoname_id,13111728,6318112,Reserva do Cabaçal,Reserva do Cabaçal,Brazil,Brazil,BR,BR,MT,MT
+geoname_id,6319721,3397292,João Lisboa,João Lisboa,Brazil,Brazil,BR,BR,MA,MA
+geoname_id,6324219,6317755,Nova Mutum,Nova Mutum,Brazil,Brazil,BR,BR,MT,MT
+geoname_id,6319296,3665348,Anamã,Anamã,Brazil,Brazil,BR,BR,AM,AM
+geoname_id,6323844,6317715,Nova Brasilândia,Nova Brasilândia,Brazil,Brazil,BR,BR,MT,MT
+geoname_id,3473009,6316318,Água Doce do Norte,Água Doce do Norte,Brazil,Brazil,BR,BR,ES,ES
+geoname_id,6323626,3448652,São José do Norte,São José do Norte,Brazil,Brazil,BR,BR,RS,RS
+geoname_id,6323861,3452490,Poxoréu,Poxoréu,Brazil,Brazil,BR,BR,MT,MT
+geoname_id,6319819,6318752,Tasso Fragoso,Tasso Fragoso,Brazil,Brazil,BR,BR,MA,MA
+geoname_id,6324164,6317537,Marcelândia,Marcelândia,Brazil,Brazil,BR,BR,MT,MT
+geoname_id,13003966,3472234,Angatuba,Angatuba,Brazil,Brazil,BR,BR,SP,SP
+geoname_id,6319187,6318126,Ribeirão Cascalheira,Ribeirão Cascalheira,Brazil,Brazil,BR,BR,MT,MT
+geoname_id,8431635,6318712,Sooretama,Sooretama,Brazil,Brazil,BR,BR,ES,ES
+geoname_id,3405314,3405313,Bom Jesus,Bom Jesus,Brazil,Brazil,BR,BR,RN,RN
+geoname_id,12229351,3461300,Independência,Independência,Brazil,Brazil,BR,BR,RS,RS
+geoname_id,6319345,3662075,Tabatinga,Tabatinga,Brazil,Brazil,BR,BR,AM,AM
+geoname_id,6319364,3408386,Acará,Acará,Brazil,Brazil,BR,BR,PA,PA
+geoname_id,6319003,3411905,Santa Fé do Araguaia,Santa Fé do Araguaia,Brazil,Brazil,BR,BR,TO,TO
+geoname_id,6319451,3391287,Prainha,Prainha,Brazil,Brazil,BR,BR,PA,PA
+geoname_id,3450402,6316325,Águas de Santa Bárbara,Águas de Santa Bárbara,Brazil,Brazil,BR,BR,SP,SP
+geoname_id,12971907,6316653,Breu Branco,Breu Branco,Brazil,Brazil,BR,BR,PA,PA
+geoname_id,6319370,6316389,Anapu,Anapu,Brazil,Brazil,BR,BR,PA,PA
+geoname_id,3460542,12108334,Itororó,Itororó,Brazil,Brazil,BR,BR,BA,BA
+geoname_id,3464943,3453599,Pirambu,Pirambu,Brazil,Brazil,BR,BR,SE,SE
+geoname_id,6319372,6316465,Aurora do Pará,Aurora do Pará,Brazil,Brazil,BR,BR,PA,PA
+geoname_id,6324280,3479302,Lagoa da Confusão,Lagoa da Confusão,Brazil,Brazil,BR,BR,TO,TO
+geoname_id,6319737,6317531,Maranhãozinho,Maranhãozinho,Brazil,Brazil,BR,BR,MA,MA
+geoname_id,12968438,6317631,Monte Negro,Monte Negro,Brazil,Brazil,BR,BR,RO,RO
+geoname_id,6319406,6317188,Garrafão do Norte,Garrafão do Norte,Brazil,Brazil,BR,BR,PA,PA
+geoname_id,6319524,6316492,Bandeirantes do Tocantins,Bandeirantes do Tocantins,Brazil,Brazil,BR,BR,TO,TO
+geoname_id,6323794,3472473,Alto Araguaia,Alto Araguaia,Brazil,Brazil,BR,BR,MT,MT
+geoname_id,3386513,3386512,Tenente Ananias,Tenente Ananias,Brazil,Brazil,BR,BR,RN,RN
+geoname_id,6320540,3396675,Lagoa Grande,Lagoa Grande,Brazil,Brazil,BR,BR,PE,PE
+geoname_id,6319366,6316312,Água Azul do Norte,Água Azul do Norte,Brazil,Brazil,BR,BR,PA,PA
+geoname_id,6319250,6316378,Alvorada d'Oeste,Alvorada d'Oeste,Brazil,Brazil,BR,BR,RO,RO
+geoname_id,3386029,6318803,Triunfo Potiguar,Triunfo Potiguar,Brazil,Brazil,BR,BR,RN,RN
+geoname_id,6319424,6317580,Medicilândia,Medicilândia,Brazil,Brazil,BR,BR,PA,PA
+geoname_id,6323878,12969540,Tabaporã,Tabaporã,Brazil,Brazil,BR,BR,MT,MT
+geoname_id,6317280,13032223,Imbuia,Imbuia,Brazil,Brazil,BR,BR,SC,SC
+geoname_id,6323733,6316644,Brasilândia,Brasilândia,Brazil,Brazil,BR,BR,MS,MS
+geoname_id,6319327,3754199,Manaquiri,Manaquiri,Brazil,Brazil,BR,BR,AM,AM
+geoname_id,6324149,6317803,Novo São Joaquim,Novo São Joaquim,Brazil,Brazil,BR,BR,MT,MT
+geoname_id,6319788,6318327,Santana do Maranhão,Santana do Maranhão,Brazil,Brazil,BR,BR,MA,MA
+geoname_id,6323785,6318649,Selvíria,Selvíria,Brazil,Brazil,BR,BR,MS,MS
+geoname_id,3406940,6316470,Axixá do Tocantins,Axixá do Tocantins,Brazil,Brazil,BR,BR,TO,TO
+geoname_id,6323807,12972572,Campinápolis,Campinápolis,Brazil,Brazil,BR,BR,MT,MT
+geoname_id,6319695,3393051,Estreito,Estreito,Brazil,Brazil,BR,BR,MA,MA
+geoname_id,3454769,6317970,Pinheiros,Pinheiros,Brazil,Brazil,BR,BR,ES,ES
+geoname_id,3396571,3408094,Alagoinha,Alagoinha,Brazil,Brazil,BR,BR,PB,PB
+geoname_id,3468899,7583518,Brotas,Brotas,Brazil,Brazil,BR,BR,SP,SP
+geoname_id,6319483,3386279,Tomé-Açu,Tomé-Açu,Brazil,Brazil,BR,BR,PA,PA
+geoname_id,3405456,3405457,Boca da Mata,Boca da Mata,Brazil,Brazil,BR,BR,AL,AL
+geoname_id,6320949,3457943,Mansidão,Mansidão,Brazil,Brazil,BR,BR,BA,BA
+geoname_id,6319375,6316495,Bannach,Bannach,Brazil,Brazil,BR,BR,PA,PA
+geoname_id,6319504,3411870,Abreulândia,Abreulândia,Brazil,Brazil,BR,BR,TO,TO
+geoname_id,6319497,12955327,Vitória do Jari,Vitória do Jari,Brazil,Brazil,BR,BR,AP,AP
+geoname_id,6319441,6317853,Palestina do Pará,Palestina do Pará,Brazil,Brazil,BR,BR,PA,PA
+geoname_id,6319390,6316757,Canaã dos Carajás,Canaã dos Carajás,Brazil,Brazil,BR,BR,PA,PA
+geoname_id,6323783,6318433,São Gabriel do Oeste,São Gabriel do Oeste,Brazil,Brazil,BR,BR,MS,MS
+geoname_id,6323845,6317720,Nova Canaã do Norte,Nova Canaã do Norte,Brazil,Brazil,BR,BR,MT,MT
+geoname_id,6319407,6317207,Goianésia do Pará,Goianésia do Pará,Brazil,Brazil,BR,BR,PA,PA
+geoname_id,6323816,6316881,Colíder,Colíder,Brazil,Brazil,BR,BR,MT,MT
+geoname_id,6323739,6316864,Chapadão do Sul,Chapadão do Sul,Brazil,Brazil,BR,BR,MS,MS
+geoname_id,6319282,6317075,Epitaciolândia,Epitaciolândia,Brazil,Brazil,BR,BR,AC,AC
+geoname_id,6319579,3411916,Muricilândia,Muricilândia,Brazil,Brazil,BR,BR,TO,TO
+geoname_id,6319555,3399603,Filadélfia,Filadélfia,Brazil,Brazil,BR,BR,TO,TO
+geoname_id,8542933,6316344,Alta Floresta d'Oeste,Alta Floresta d'Oeste,Brazil,Brazil,BR,BR,RO,RO
+geoname_id,3686141,3686142,Coello,Coello,Colombia,Colombia,CO,CO,TOL,TOL
+geoname_id,3828795,3687908,Calima,Calima,Colombia,Colombia,CO,CO,VAC,VAC
+geoname_id,3658332,3658330,El Carmen,El Carmen,Ecuador,Ecuador,EC,EC,G,G
+geoname_id,2865642,2865637,Neuenkirchen,Neuenkirchen,Germany,Germany,DE,DE,NI,NI
+geoname_id,6605829,1645524,Depok,Depok,Indonesia,Indonesia,ID,ID,JB,JB
+geoname_id,3180511,8980123,Carignano,Carignano,Italy,Italy,IT,IT,"21, TO","21, TO"
+geoname_id,1859779,8469284,Katsushika,Katsushika,Japan,Japan,JP,JP,13,13
+geoname_id,1857100,13353696,Minato,Minato,Japan,Japan,JP,JP,13,13
+geoname_id,1735297,1735339,Mukah,Mukah,Malaysia,Malaysia,MY,MY,13,13
+geoname_id,4012176,8583353,Culiacán,Culiacán,Mexico,Mexico,MX,MX,SIN,SIN
+geoname_id,3818786,3521078,Guadalupe Victoria,Guadalupe Victoria,Mexico,Mexico,MX,MX,PUE,PUE
+geoname_id,3132855,3132852,Valle,Valle,Norway,Norway,NO,NO,42,42
+geoname_id,1691490,1691487,Rosario,Rosario,Philippines,Philippines,PH,PH,"40, BTG","40, BTG"
+geoname_id,7575600,1690321,San Antonio,San Antonio,Philippines,Philippines,PH,PH,"03, ZMB","03, ZMB"
+geoname_id,1492637,580610,Severka,Severka,Russia,Russia,RU,RU,SVE,SVE
+geoname_id,510879,510874,Pervomayskiy,Pervomayskiy,Russia,Russia,RU,RU,UD,UD
+geoname_id,7584912,484607,Tan,Tan,Russia,Russia,RU,RU,BA,BA
+geoname_id,572144,6283160,Borovikovo,Borovikovo,Russia,Russia,RU,RU,KOS,KOS
+geoname_id,1838343,1838341,Pyeongtaek-si,Pyeongtaek-si,South Korea,South Korea,KR,KR,41,41
+geoname_id,6544442,2516932,Guadiaro,Guadiaro,Spain,Spain,ES,ES,"AN, CA","AN, CA"
+geoname_id,305268,305267,Kütahya,Kütahya,Türkiye,Türkiye,TR,TR,43,43
+geoname_id,5201164,4559655,Mill Creek,Mill Creek,United States,United States,US,US,PA,PA
+geoname_id,4451074,4451073,Whitfield,Whitfield,United States,United States,US,US,MS,MS
