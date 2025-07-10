@@ -30,6 +30,7 @@ for assistance.
 The files in the zip archive are:
 
 {{< rawhtml >}}
+
 <div class="table">
   <table>
     <tbody>
@@ -68,6 +69,7 @@ The files in the zip archive are:
       </tr>
 
     </tbody>
+
   </table>
 </div>
 {{</ rawhtml >}}
@@ -90,6 +92,7 @@ A single CSV file, called `GeoIP2-Enterprise-ISP.csv`, contains information on
 ISPs.
 
 {{< rawhtml >}}
+
 <div class="table">
   <table>
     <thead>
@@ -195,6 +198,7 @@ ISPs.
         </td>
       </tr>
     </tbody>
+
   </table>
 </div>
 {{</ rawhtml >}}
@@ -227,15 +231,16 @@ name would be "GeoIP2-City-Locations-en.csv".
 ### CSV Example Files
 
 {{< csv-example-files >}}
-* [GeoIP2-Enterprise-CSV\_Example.zip](/static/GeoIP2-Enterprise-CSV_Example.zip)
-{{</ csv-example-files >}}
+
+- [GeoIP2-Enterprise-CSV_Example.zip](/static/GeoIP2-Enterprise-CSV_Example.zip)
+  {{</ csv-example-files >}}
 
 ### MMDB Example Files
 
 {{< mmdb-example-files >}}
-* [GeoIP2-Enterprise-Test.mmdb](https://github.com/maxmind/MaxMind-DB/blob/main/test-data/GeoIP2-Enterprise-Test.mmdb)
-{{</ mmdb-example-files >}}
 
+- [GeoIP2-Enterprise-Test.mmdb](https://github.com/maxmind/MaxMind-DB/blob/main/test-data/GeoIP2-Enterprise-Test.mmdb)
+  {{</ mmdb-example-files >}}
 
 ## Database Changes
 
@@ -243,15 +248,19 @@ name would be "GeoIP2-City-Locations-en.csv".
 
 ## Database Sizes
 
+<!-- prettier-ignore-start -->
+
 {{< db-sizes-table dateRange="August to October 2024">}}
+
   {{< db-sizes-row
-    databaseName="GeoIP Enterprise"
-    csvSizeRange="986 MB - 1.05 GB"
-    mmdbSizeRange="344 MB - 358 MB"
-    ipv4Range="7,874,000 - 8,984,000"
-    ipv6Range="3,251,000 - 3,772,000"
-  >}}
-{{</ db-sizes-table>}}
+  databaseName="GeoIP Enterprise"
+  csvSizeRange="986 MB - 1.05 GB"
+  mmdbSizeRange="344 MB - 358 MB"
+  ipv4Range="7,874,000 - 8,984,000"
+  ipv6Range="3,251,000 - 3,772,000" >}}
+
+{{</ db-sizes-table >}}
+<!-- prettier-ignore-end -->
 
 ## APIs and Third-Party Integrations
 

@@ -30,6 +30,7 @@ These are named `GeoIP2-ISP-Blocks-IPv4.csv` and `GeoIP2-ISP-Blocks-IPv6.csv`
 respectively.
 
 {{< rawhtml >}}
+
 <div class="table">
 <table>
   <tbody>
@@ -131,26 +132,32 @@ respectively.
 ### CSV Example Files
 
 {{< csv-example-files >}}
-* [GeoIP2-ISP-CSV\_Example.zip](/static/GeoIP2-ISP-CSV_Example.zip)
-{{</ csv-example-files >}}
+
+- [GeoIP2-ISP-CSV_Example.zip](/static/GeoIP2-ISP-CSV_Example.zip)
+  {{</ csv-example-files >}}
 
 ### MMDB Example Files
 
 {{< mmdb-example-files >}}
-* [GeoIP2-ISP-Test.mmdb](https://github.com/maxmind/MaxMind-DB/blob/main/test-data/GeoIP2-ISP-Test.mmdb)
-{{</ mmdb-example-files >}}
+
+- [GeoIP2-ISP-Test.mmdb](https://github.com/maxmind/MaxMind-DB/blob/main/test-data/GeoIP2-ISP-Test.mmdb)
+  {{</ mmdb-example-files >}}
 
 ## Database Sizes
 
+<!-- prettier-ignore-start -->
+
 {{< db-sizes-table dateRange="August to October 2024">}}
+
   {{< db-sizes-row
-    databaseName="GeoIP ISP"
-    csvSizeRange="78.7 MB - 83.9 MB"
-    mmdbSizeRange="14.5 MB - 15 MB"
-    ipv4Range="713,000 - 744,000"
-    ipv6Range="241,000 - 269,000"
-  >}}
-{{</ db-sizes-table>}}
+  databaseName="GeoIP ISP"
+  csvSizeRange="78.7 MB - 83.9 MB"
+  mmdbSizeRange="14.5 MB - 15 MB"
+  ipv4Range="713,000 - 744,000"
+  ipv6Range="241,000 - 269,000" >}}
+
+{{</ db-sizes-table >}}
+<!-- prettier-ignore-end -->
 
 ## Database Changes
 

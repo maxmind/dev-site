@@ -3,7 +3,6 @@ draft: false
 title: GeoIP Legacy Web Services
 ---
 
-
 {{< alert info >}}
 We have implemented recent changes to our GeoIP Legacy web services in line with
 the retirement of GeoIP Legacy Databases. Please see our [blog
@@ -87,6 +86,7 @@ All strings are returned in the
 encoding is also referred to as latin1.
 
 {{< rawhtml >}}
+
 <div class="table">
   <table>
     <thead>
@@ -321,8 +321,8 @@ encoding is also referred to as latin1.
         <td>
           <p>
 
-  The user type associated with the IP address. This will be one of the following
-  values.
+The user type associated with the IP address. This will be one of the following
+values.
 
   </p>
 
@@ -355,8 +355,8 @@ encoding is also referred to as latin1.
         <td>
           <p>
 
-  The network speed associated with the IP address. This can be one of the
-  following values:
+The network speed associated with the IP address. This can be one of the
+following values:
 
   </p>
 
@@ -379,7 +379,7 @@ encoding is also referred to as latin1.
         <td>
           The second level domain associated with the IP address. This will be
 
-  something like "example.com" or "example.co.uk", not "foo.example.com".
+something like "example.com" or "example.co.uk", not "foo.example.com".
 
         </td>
         <td></td>
@@ -494,6 +494,7 @@ encoding is also referred to as latin1.
       </tr>
 
     </tbody>
+
   </table>
 </div>
 {{</ rawhtml >}}
@@ -506,6 +507,7 @@ is successful, the error field may be omitted entirely, since it always comes
 last.
 
 {{< rawhtml >}}
+
 <div class="table">
   <table>
     <thead>

@@ -21,8 +21,8 @@ and the Response Body section below.
 
 ### Official Client APIs
 
-
 {{< rawhtml >}}
+
 <div class="table">
   <table>
     <thead>
@@ -90,11 +90,12 @@ and the Response Body section below.
 ### Third-Party Client APIs
 
 {{< alert warning >}}
-  **_Use at your own risk._** MaxMind does not offer support for these APIs and
-  has not reviewed the code.
+**_Use at your own risk._** MaxMind does not offer support for these APIs and
+has not reviewed the code.
 {{</ alert >}}
 
 {{< rawhtml >}}
+
 <div class="table">
   <table>
     <thead>
@@ -151,7 +152,7 @@ help us investigate an issue:
 ## IP Geolocation Accuracy
 
 {{< alert warning >}}
-  **IP Geolocation Usage**
+**IP Geolocation Usage**
 
 IP geolocation is inherently imprecise. Locations are often near the center of
 the population. Any location provided by a GeoIP database should not be used to

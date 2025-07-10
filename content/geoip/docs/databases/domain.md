@@ -30,6 +30,7 @@ These are named `GeoIP2-Domain-Blocks-IPv4.csv` and
 `GeoIP2-Domain-Blocks-IPv6.csv` respectively.
 
 {{< rawhtml >}}
+
 <div class="table">
 <table>
   <tbody>
@@ -77,26 +78,31 @@ These are named `GeoIP2-Domain-Blocks-IPv4.csv` and
 ### CSV Example Files
 
 {{< csv-example-files >}}
-* [GeoIP2-Domain-CSV\_Example.zip](/static/GeoIP2-Domain-Example.zip)
-{{</ csv-example-files >}}
+
+- [GeoIP2-Domain-CSV_Example.zip](/static/GeoIP2-Domain-Example.zip)
+  {{</ csv-example-files >}}
 
 ### MMDB Example Files
 
 {{< mmdb-example-files >}}
-* [GeoIP2-Domain-Test.mmdb](https://github.com/maxmind/MaxMind-DB/blob/main/test-data/GeoIP2-Domain-Test.mmdb)
-{{</ mmdb-example-files >}}
+
+- [GeoIP2-Domain-Test.mmdb](https://github.com/maxmind/MaxMind-DB/blob/main/test-data/GeoIP2-Domain-Test.mmdb)
+  {{</ mmdb-example-files >}}
 
 ## Database Sizes
 
+<!-- prettier-ignore-start -->
 {{< db-sizes-table dateRange="August to October 2024">}}
+
   {{< db-sizes-row
-    databaseName="GeoIP Domain"
-    csvSizeRange="18.07 MB - 18.36 MB"
-    mmdbSizeRange="10.4 MB - 10.6 MB"
-    ipv4Range="509,000 - 516,000"
-    ipv6Range="109,000 - 112,000"
-  >}}
-{{</ db-sizes-table>}}
+  databaseName="GeoIP Domain"
+  csvSizeRange="18.07 MB - 18.36 MB"
+  mmdbSizeRange="10.4 MB - 10.6 MB"
+  ipv4Range="509,000 - 516,000"
+  ipv6Range="109,000 - 112,000" >}}
+
+{{</ db-sizes-table >}}
+<!-- prettier-ignore-end -->
 
 ## Database Changes
 

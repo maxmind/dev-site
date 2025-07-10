@@ -79,6 +79,7 @@ constraints that limit the length. For example, the `ip_address` field cannot be
 longer than the longest valid representation of an IPv6 address.
 
 {{< rawhtml >}}
+
 <div class="table">
    <table>
       <thead>
@@ -329,6 +330,7 @@ By default, all new users will receive responses for the version that was
 current when they signed up for the service. The latest version is 1.3.
 
 {{< rawhtml >}}
+
 <div class="table">
    <table>
       <thead>

@@ -31,6 +31,7 @@ These are named `GeoIP2-Connection-Type-Blocks-IPv4.csv` and
 `GeoIP2-Connection-Type-Blocks-IPv6.csv` respectively.
 
 {{< rawhtml >}}
+
 <div class="table">
 <table>
   <tbody>
@@ -62,6 +63,7 @@ These are named `GeoIP2-Connection-Type-Blocks-IPv4.csv` and
           <a href="https://support.maxmind.com/hc/en-us/articles/4408200231067-IP-Network-Data#h_01FN988THBX8RVERNTZ12BY2EC">Learn more about connection type data on our Knowledge Base.</a>
         </td>
     </tr>
+
   </tbody>
 </table>
 </div>
@@ -78,26 +80,31 @@ These are named `GeoIP2-Connection-Type-Blocks-IPv4.csv` and
 ### CSV Example Files
 
 {{< csv-example-files >}}
-* [GeoIP2-Connection-Type-CSV\_Example.zip](/static/GeoIP2-Connection-Type-CSV_Example.zip)
-{{</ csv-example-files >}}
+
+- [GeoIP2-Connection-Type-CSV_Example.zip](/static/GeoIP2-Connection-Type-CSV_Example.zip)
+  {{</ csv-example-files >}}
 
 ### MMDB Example Files
 
 {{< mmdb-example-files >}}
-* [GeoIP2-Connection-Type-Test.mmdb](https://github.com/maxmind/MaxMind-DB/blob/main/test-data/GeoIP2-Connection-Type-Test.mmdb)
-{{</ mmdb-example-files >}}
+
+- [GeoIP2-Connection-Type-Test.mmdb](https://github.com/maxmind/MaxMind-DB/blob/main/test-data/GeoIP2-Connection-Type-Test.mmdb)
+  {{</ mmdb-example-files >}}
 
 ## Database Sizes
 
+<!-- prettier-ignore-start -->
 {{< db-sizes-table dateRange="August to October 2024">}}
+
   {{< db-sizes-row
-    databaseName="GeoIP Connection Type"
-    csvSizeRange="31.96 MB - 34.37 MB"
-    mmdbSizeRange="9.31 MB - 9.84 MB"
-    ipv4Range="971,000 - 1,076,000"
-    ipv6Range="210,000 - 225,000"
-  >}}
-{{</ db-sizes-table>}}
+  databaseName="GeoIP Connection Type"
+  csvSizeRange="31.96 MB - 34.37 MB"
+  mmdbSizeRange="9.31 MB - 9.84 MB"
+  ipv4Range="971,000 - 1,076,000"
+  ipv6Range="210,000 - 225,000" >}}
+
+{{</ db-sizes-table >}}
+<!-- prettier-ignore-end -->
 
 ## Database Changes
 

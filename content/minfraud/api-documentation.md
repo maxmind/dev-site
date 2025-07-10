@@ -4,10 +4,10 @@ title: minFraud API Documentation
 ---
 
 {{< alert info >}}
-  If you are a [minFraud Legacy](/minfraud/minfraud-legacy/)
-  customer, please see our
-  [What's New in minFraud Score, minFraud Insights, and minFraud Factors](/minfraud/whats-new-in-minfraud-score-and-minfraud-insights/)
-  document for a summary of the changes.
+If you are a [minFraud Legacy](/minfraud/minfraud-legacy/)
+customer, please see our
+[What's New in minFraud Score, minFraud Insights, and minFraud Factors](/minfraud/whats-new-in-minfraud-score-and-minfraud-insights/)
+document for a summary of the changes.
 {{</ alert >}}
 
 ## Overview
