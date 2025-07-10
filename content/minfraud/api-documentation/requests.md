@@ -633,6 +633,7 @@ where the event took place
   * `rewardspay`
   * `safecharge`
   * `sagepay`
+  * `securepay`
   * `securetrading`
   * `shopify_payments`
   * `simplify_commerce`
