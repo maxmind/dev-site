@@ -12,9 +12,8 @@ your
 The password is your
 [MaxMind license key](https://www.maxmind.com/en/accounts/current/license-key).
 
-{{< alert warning >}}
-You must be approved for a trial or purchase credit for use with our web
-services in order to receive an account ID and license key.
+{{< alert warning >}} You must be approved for a trial or purchase credit for
+use with our web services in order to receive an account ID and license key.
 {{</ alert >}}
 
 We use
@@ -63,16 +62,16 @@ response.
 
 Currently minFraud Score, minFraud Insights, and minFraud Factors use the same
 request document format. The request consists of a JSON object with one or more
-of the fields shown below. Each key in the top-level object maps to an object
-or array as described below. New fields that apply to one or both may be added
-in the future.
+of the fields shown below. Each key in the top-level object maps to an object or
+array as described below. New fields that apply to one or both may be added in
+the future.
 
 String fields are limited to no more than 255 valid Unicode characters unless a
 shorter length is specified; the null and newline characters are forbidden. Of
 course, many fields also have additional constraints that limit the length. For
 example, the `ip_address` field cannot be longer than the longest valid
-representation of an IPv6 address. Unless it must match a specific format, it
-is valid for a string field to be empty.
+representation of an IPv6 address. Unless it must match a specific format, it is
+valid for a string field to be empty.
 
 Boolean fields must be provided as JSON `true` or `false`.
 
@@ -188,7 +187,8 @@ size will be rejected.
 
 {{< anchor-target schema--request--device >}}
 
-`device` is a JSON object that contains information about the device used in the transaction.
+`device` is a JSON object that contains information about the device used in the
+transaction.
 
 ```json
 {
@@ -202,7 +202,9 @@ size will be rejected.
 
 {{< schema-table key="device" >}}
 {{< minfraud-schema-row key="ip_address" type="request" valueType="string" valueTypeNote="format: IPv4 or IPv6" >}}
-The IP address associated with the device used by the customer in the transaction. The IP address must be in IPv4 or IPv6 presentation format, i.e., dotted-quad notation or the IPv6 hexadecimal-colon notation.
+The IP address associated with the device used by the customer in the
+transaction. The IP address must be in IPv4 or IPv6 presentation format, i.e.,
+dotted-quad notation or the IPv6 hexadecimal-colon notation.
 
 [Get tips for how to pass the /device/ip_address input on our Knowledge Base.](https://support.maxmind.com/hc/en-us/articles/5444495353883-Device-Inputs#h%5F01G0YJ5QHRCS6JBJXJGWPB7DZB)
 {{</minfraud-schema-row>}}
@@ -220,7 +222,9 @@ The HTTP `Accept-Language` header of the device used in the transaction.
 {{</minfraud-schema-row>}}
 
 {{< minfraud-schema-row key="session_age" type="request" valueType="decimal" valueTypeNote="min: 0, max: 10e13-1" >}}
-The number of seconds between the creation of the user's session and the time of the transaction. Note that `session_age` is not the duration of the current visit, but the time since the start of the first visit.
+The number of seconds between the creation of the user's session and the time of
+the transaction. Note that `session_age` is not the duration of the current
+visit, but the time since the start of the first visit.
 
 [Learn more about the /device/session_age input on our Knowledge Base.](https://support.maxmind.com/hc/en-us/articles/5444495353883-Device-Inputs#h%5F01G0YJ77MFVS4XW63W9G2Y1Y65)
 {{</minfraud-schema-row>}}
@@ -229,14 +233,14 @@ The number of seconds between the creation of the user's session and the time of
 An ID that uniquely identifies a visitor's session on the site.
 
 [Learn more about the /device/session_id input on our Knowledge Base.](https://support.maxmind.com/hc/en-us/articles/5444495353883-Device-Inputs#h%5F01G0YJ77MFVS4XW63W9G2Y1Y65)
-{{</minfraud-schema-row>}}
-{{</ schema-table >}}
+{{</minfraud-schema-row>}} {{</ schema-table >}}
 
 ### Event
 
 {{< anchor-target schema--request--event >}}
 
-`event` is a JSON object that contains general information related to the event being scored
+`event` is a JSON object that contains general information related to the event
+being scored
 
 ```json
 {
@@ -249,23 +253,34 @@ An ID that uniquely identifies a visitor's session on the site.
 
 {{< schema-table key="event" >}}
 {{< minfraud-schema-row key="transaction_id" type="request" valueType="string" valueTypeNote="max length: 255" >}}
-Your internal ID for the transaction. We can use this to locate a specific transaction in our logs, and it will also show up in email alerts and notifications from us to you. No specific format is required.
+Your internal ID for the transaction. We can use this to locate a specific
+transaction in our logs, and it will also show up in email alerts and
+notifications from us to you. No specific format is required.
 
 [Learn more about the /event/transaction_id input on our Knowledge Base.](https://support.maxmind.com/hc/en-us/articles/5452006111003-Event-and-Account-Inputs#h%5F01G1E0X7TPRN41NZHH9TRFWHVN)
 {{</minfraud-schema-row>}}
 
 {{< minfraud-schema-row key="shop_id" type="request" valueType="string" valueTypeNote="max length: 255" >}}
-Your internal ID for the shop, affiliate, or merchant this order is coming from. Required for minFraud users who are resellers, payment providers, gateways and affiliate networks. No specific format is required.
+Your internal ID for the shop, affiliate, or merchant this order is coming from.
+Required for minFraud users who are resellers, payment providers, gateways and
+affiliate networks. No specific format is required.
 
 [Learn more about the /event/shop_id input on our Knowledge Base.](https://support.maxmind.com/hc/en-us/articles/5452006111003-Event-and-Account-Inputs#h%5F01G1E0WZ6PPV7VVKCKQM5N9960)
 {{</minfraud-schema-row>}}
 
-{{< minfraud-schema-row key="time" type="request" valueType="string"  >}}
-The date and time the event occurred. The string must be in the [RFC 3339](https://tools.ietf.org/html/rfc3339) date-time format. The time must be within the past year. If this field is not in the request, the current time will be used.
+{{< minfraud-schema-row key="time" type="request" valueType="string"  >}} The
+date and time the event occurred. The string must be in the
+[RFC 3339](https://tools.ietf.org/html/rfc3339) date-time format. The time must
+be within the past year. If this field is not in the request, the current time
+will be used.
 
-**It is not recommended to use this input when scoring live transactions as they occur.** However, it can be useful if you store transactions to be submitted to the service for scoring later.
+**It is not recommended to use this input when scoring live transactions as they
+occur.** However, it can be useful if you store transactions to be submitted to
+the service for scoring later.
 
-Please note that you cannot submit times more than one year in the past. If you submit an event time more than one year in the past, the current time will be used to score the transaction, and a warning will be returned.
+Please note that you cannot submit times more than one year in the past. If you
+submit an event time more than one year in the past, the current time will be
+used to score the transaction, and a warning will be returned.
 
 [Learn more about the /event/time input on our Knowledge Base.](https://support.maxmind.com/hc/en-us/articles/5452006111003-Event-and-Account-Inputs#h%5F01G0Z3WBNAP5Y8WNRR156EJBBF)
 {{</minfraud-schema-row>}}
@@ -284,15 +299,14 @@ The type of event being scored. The valid types are:
 - `survey`
 
 [Learn more about the /event/type input on our Knowledge Base.](https://support.maxmind.com/hc/en-us/articles/5452006111003-Event-and-Account-Inputs#h%5F01G0Z3WMWJW3QMHN8AGWK054E6)
-{{</minfraud-schema-row>}}
-{{</ schema-table >}}
+{{</minfraud-schema-row>}} {{</ schema-table >}}
 
 ### Account
 
 {{< anchor-target schema--request--account >}}
 
-`account` is a JSON object that contains account information for the end-user on the site
-where the event took place
+`account` is a JSON object that contains account information for the end-user on
+the site where the event took place
 
 ```json
 {
@@ -303,19 +317,22 @@ where the event took place
 
 {{< schema-table key="account" >}}
 {{< minfraud-schema-row key="user_id" type="request" valueType="string" valueTypeNote="max length: 255" >}}
-A unique user ID associated with the end-user in your system. If your system allows the login name for the account to be changed, this should not be the login name for the account, but rather should be an internal ID that does not change. This is not your MaxMind account ID. No specific format is required.
+A unique user ID associated with the end-user in your system. If your system
+allows the login name for the account to be changed, this should not be the
+login name for the account, but rather should be an internal ID that does not
+change. This is not your MaxMind account ID. No specific format is required.
 
 [Learn more about the /account/user_id input on our Knowledge Base.](https://support.maxmind.com/hc/en-us/articles/5452006111003#h%5F01G1E0XKAEF0BBC336545SY2AA)
 {{</minfraud-schema-row>}}
 
 {{< minfraud-schema-row key="username_md5" type="request" valueType="string" valueTypeNote="max length: 32" >}}
-An MD5 hash as a hexadecimal string of the username or login name associated with the account.
-{{</minfraud-schema-row>}}
-{{</ schema-table >}}
+An MD5 hash as a hexadecimal string of the username or login name associated
+with the account. {{</minfraud-schema-row>}} {{</ schema-table >}}
 
 ### Email
 
-`email` is a JSON object that contains information about the email address of the end-user who initiated the event.
+`email` is a JSON object that contains information about the email address of
+the end-user who initiated the event.
 
 ```json
 {
@@ -326,23 +343,27 @@ An MD5 hash as a hexadecimal string of the username or login name associated wit
 
 {{< schema-table key="email" >}}
 {{< minfraud-schema-row key="address" type="request" valueType="string" valueTypeNote="max length: 255, type: Email or MD5 of Email" >}}
-This field must be either be a valid email address or an MD5 of the email used in the transaction.
+This field must be either be a valid email address or an MD5 of the email used
+in the transaction.
 
 [Learn more about the /email/address input on our Knowledge Base.](https://support.maxmind.com/hc/en-us/articles/5451485951387)
 {{</minfraud-schema-row>}}
 
 {{< minfraud-schema-row key="domain" type="request" valueType="string" valueTypeNote="max length: 255" >}}
-The domain of the email address used in the transaction. Do not include the`@` in this field.
+The domain of the email address used in the transaction. Do not include the`@`
+in this field.
 
-You do not need to pass the email domain input unless you are passing the email address as an MD5 hash. [Learn more about hashed email inputs on our Knowledge Base.](https://support.maxmind.com/hc/en-us/articles/5451485951387#h%5F01G0Z373C3H1QA68TTHVYMXGTT)
-{{</minfraud-schema-row>}}
-{{</ schema-table >}}
+You do not need to pass the email domain input unless you are passing the email
+address as an MD5 hash.
+[Learn more about hashed email inputs on our Knowledge Base.](https://support.maxmind.com/hc/en-us/articles/5451485951387#h%5F01G0Z373C3H1QA68TTHVYMXGTT)
+{{</minfraud-schema-row>}} {{</ schema-table >}}
 
 ### Billing
 
 {{< anchor-target schema--request--billing >}}
 
-`billing` is a JSON object that contains the billing address and contact information provided by the end-user who initiated the event.
+`billing` is a JSON object that contains the billing address and contact
+information provided by the end-user who initiated the event.
 
 [Learn more about the billing address inputs on our Knowledge Base.](https://support.maxmind.com/hc/en-us/articles/5447224594075-Billing-and-Shipping-Inputs#h_01G0YN48RWENDYCKN2J3RQK2S3)
 
@@ -376,43 +397,42 @@ The company of the end user as provided in their billing information.
 {{</minfraud-schema-row>}}
 
 {{< minfraud-schema-row key="address" type="request" valueType="string" valueTypeNote="max length: 255" >}}
-The first line of the user's billing address.
-{{</minfraud-schema-row>}}
+The first line of the user's billing address. {{</minfraud-schema-row>}}
 
 {{< minfraud-schema-row key="address_2" type="request" valueType="string" valueTypeNote="max length: 255" >}}
-The second line of the user's billing address.
-{{</minfraud-schema-row>}}
+The second line of the user's billing address. {{</minfraud-schema-row>}}
 
 {{< minfraud-schema-row key="city" type="request" valueType="string" valueTypeNote="max length: 255" >}}
-The city of the user's billing address.
-{{</minfraud-schema-row>}}
+The city of the user's billing address. {{</minfraud-schema-row>}}
 
 {{< minfraud-schema-row key="region" type="request" valueType="string" valueTypeNote="max length: 4" >}}
-The [ISO 3166-2 subdivision code](https://en.wikipedia.org/wiki/ISO%5F3166-2) for the user's billing address.
-{{</minfraud-schema-row>}}
+The [ISO 3166-2 subdivision code](https://en.wikipedia.org/wiki/ISO%5F3166-2)
+for the user's billing address. {{</minfraud-schema-row>}}
 
 {{< minfraud-schema-row key="country" type="request" valueType="string" valueTypeNote="max length: 2" >}}
-The two character [ISO 3166-1 alpha-2 country code](https://en.wikipedia.org/wiki/ISO%5F3166-1%5Falpha-2) of the user's billing address.
-{{</minfraud-schema-row>}}
+The two character
+[ISO 3166-1 alpha-2 country code](https://en.wikipedia.org/wiki/ISO%5F3166-1%5Falpha-2)
+of the user's billing address. {{</minfraud-schema-row>}}
 
 {{< minfraud-schema-row key="postal" type="request" valueType="string" valueTypeNote="max length: 255" >}}
-The postal code of the user's billing address.
-{{</minfraud-schema-row>}}
+The postal code of the user's billing address. {{</minfraud-schema-row>}}
 
 {{< minfraud-schema-row key="phone_number" type="request" valueType="string" valueTypeNote="max length: 255" >}}
-The phone number without the country code for the user's billing address. Punctuation characters will be stripped. After stripping punctuation characters, the number must contain only digits.
-{{</minfraud-schema-row>}}
+The phone number without the country code for the user's billing address.
+Punctuation characters will be stripped. After stripping punctuation characters,
+the number must contain only digits. {{</minfraud-schema-row>}}
 
 {{< minfraud-schema-row key="phone_country_code" type="request" valueType="string" valueTypeNote="max length: 4" >}}
-The country code for phone number associated with the user's billing address. If you provide this information then you must provide at least one digit.
-{{</minfraud-schema-row>}}
-{{</ schema-table >}}
+The country code for phone number associated with the user's billing address. If
+you provide this information then you must provide at least one digit.
+{{</minfraud-schema-row>}} {{</ schema-table >}}
 
 ### Shipping
 
 {{< anchor-target schema--request--shipping >}}
 
-`shipping` is a JSON object that contains the shipping address and contact information provided by the end-user who initiated the event.
+`shipping` is a JSON object that contains the shipping address and contact
+information provided by the end-user who initiated the event.
 
 [Learn more about the shipping address inputs on our Knowledge Base.](https://support.maxmind.com/hc/en-us/articles/5447224594075-Billing-and-Shipping-Inputs#h_01G0YN4GGRCC99P2HH0X54RFVA)
 
@@ -447,35 +467,34 @@ The company of the end user as provided in their shipping information.
 {{</minfraud-schema-row>}}
 
 {{< minfraud-schema-row key="address" type="request" valueType="string" valueTypeNote="max length: 255" >}}
-The first line of the user's shipping address.
-{{</minfraud-schema-row>}}
+The first line of the user's shipping address. {{</minfraud-schema-row>}}
 
 {{< minfraud-schema-row key="address_2" type="request" valueType="string" valueTypeNote="max length: 255" >}}
-The second line of the user's shipping address.
-{{</minfraud-schema-row>}}
+The second line of the user's shipping address. {{</minfraud-schema-row>}}
 
 {{< minfraud-schema-row key="city" type="request" valueType="string" valueTypeNote="max length: 255" >}}
-The city of the user's shipping address.
-{{</minfraud-schema-row>}}
+The city of the user's shipping address. {{</minfraud-schema-row>}}
 
 {{< minfraud-schema-row key="region" type="request" valueType="string" valueTypeNote="max length: 4" >}}
-The [ISO 3166-2 subdivision code](https://en.wikipedia.org/wiki/ISO%5F3166-2) for the user's shipping address.
-{{</minfraud-schema-row>}}
+The [ISO 3166-2 subdivision code](https://en.wikipedia.org/wiki/ISO%5F3166-2)
+for the user's shipping address. {{</minfraud-schema-row>}}
 
 {{< minfraud-schema-row key="country" type="request" valueType="string" valueTypeNote="max length: 2" >}}
-The two character [ISO 3166-1 alpha-2 country code](https://en.wikipedia.org/wiki/ISO%5F3166-1%5Falpha-2) of the user's shipping address.
-{{</minfraud-schema-row>}}
+The two character
+[ISO 3166-1 alpha-2 country code](https://en.wikipedia.org/wiki/ISO%5F3166-1%5Falpha-2)
+of the user's shipping address. {{</minfraud-schema-row>}}
 
 {{< minfraud-schema-row key="postal" type="request" valueType="string" valueTypeNote="max length: 255" >}}
-The postal code of the user's shipping address.
-{{</minfraud-schema-row>}}
+The postal code of the user's shipping address. {{</minfraud-schema-row>}}
 
 {{< minfraud-schema-row key="phone_number" type="request" valueType="string" valueTypeNote="max length: 255" >}}
-The phone number without the country code for the user's shipping address. Punctuation characters will be stripped. After stripping punctuation characters, the number must contain only digits.
-{{</minfraud-schema-row>}}
+The phone number without the country code for the user's shipping address.
+Punctuation characters will be stripped. After stripping punctuation characters,
+the number must contain only digits. {{</minfraud-schema-row>}}
 
 {{< minfraud-schema-row key="phone_country_code" type="request" valueType="string" valueTypeNote="max length: 4" >}}
-The country code for phone number associated with the user's shipping address. If you provide this information then you must provide at least one digit.
+The country code for phone number associated with the user's shipping address.
+If you provide this information then you must provide at least one digit.
 {{</minfraud-schema-row>}}
 
 {{< minfraud-schema-row key="delivery_speed" type="request" valueType="string" valueTypeNote="format: enum" >}}
@@ -484,15 +503,14 @@ The shipping delivery speed for the order. The valid values are:
 - `same_day`
 - `overnight`
 - `expedited`
-- `standard`
-  {{</minfraud-schema-row>}}
-  {{</ schema-table >}}
+- `standard` {{</minfraud-schema-row>}} {{</ schema-table >}}
 
 ### Payment
 
 {{< anchor-target schema--request--payment >}}
 
-`payment` is a JSON object that contains information from and about the payment process that was used for the event.
+`payment` is a JSON object that contains information from and about the payment
+process that was used for the event.
 
 ```json
 {
@@ -670,23 +688,27 @@ The payment processor used for the transaction. The valid values are:
 
   <!-- cspell: enable -->
 
-If your payment processor is missing from this list, please [contact our support team](https://support.maxmind.com/hc/en-us/requests/new).
+If your payment processor is missing from this list, please
+[contact our support team](https://support.maxmind.com/hc/en-us/requests/new).
 {{</minfraud-schema-row>}}
 
 {{< minfraud-schema-row key="was_authorized" type="request" valueType="boolean"  >}}
-The authorization outcome from the payment processor. If the transaction has not yet been approved or denied, do not include this field.
+The authorization outcome from the payment processor. If the transaction has not
+yet been approved or denied, do not include this field.
 {{</minfraud-schema-row>}}
 
 {{< minfraud-schema-row key="decline_code" type="request" valueType="string" valueTypeNote="max length: 255" >}}
-The decline code as provided by your payment processor. If the transaction was not declined, do not include this field.
-{{</minfraud-schema-row>}}
+The decline code as provided by your payment processor. If the transaction was
+not declined, do not include this field. {{</minfraud-schema-row>}}
 {{</ schema-table >}}
 
 ### Credit Card
 
 {{< anchor-target schema--request--credit-card >}}
 
-`credit_card` is a JSON object that contains information provided by the end-user and the payment processor about the credit card used for the for the event.
+`credit_card` is a JSON object that contains information provided by the
+end-user and the payment processor about the credit card used for the for the
+event.
 
 ```json
 {
@@ -706,19 +728,30 @@ The decline code as provided by your payment processor. If the transaction was n
 {{< schema-table key="credit_card" >}}
 
 {{< minfraud-schema-row key="issuer_id_number" type="request" valueType="string" valueTypeNote="max length: 8" >}}
-The issuer ID number for the credit card. This is the first six or eight digits of the credit card number. It identifies the issuing bank. If you do not know whether the IIN is six or eight digits long, send us six digits.
+The issuer ID number for the credit card. This is the first six or eight digits
+of the credit card number. It identifies the issuing bank. If you do not know
+whether the IIN is six or eight digits long, send us six digits.
 
 [Learn more about the /credit_card/issuer_id_number input on our Knowledge Base.](https://support.maxmind.com/hc/en-us/articles/5450338695963-Credit-Card-and-Payments-Inputs#h%5F01G0YWJK0M3R4Y4N0AD2S6X9G4)
 {{</minfraud-schema-row>}}
 
 {{< minfraud-schema-row key="last_digits" type="request" valueType="string" valueTypeNote="max length: 4" >}}
-The last digits of the credit card number. In most cases, you should send the last four digits for `last_digits`. If you send an[issuer_id_number](#schema--request--credit-card%5F%5Fissuer%5Fid%5Fnumber)that contains an eight digit IIN, and if the credit card brand is not one of the following, you should send the last two digits for `last_digits`:`Discover`, `JCB`, `Mastercard`, `UnionPay`, `Visa`.
+The last digits of the credit card number. In most cases, you should send the
+last four digits for `last_digits`. If you send
+an[issuer_id_number](#schema--request--credit-card%5F%5Fissuer%5Fid%5Fnumber)that
+contains an eight digit IIN, and if the credit card brand is not one of the
+following, you should send the last two digits for `last_digits`:`Discover`,
+`JCB`, `Mastercard`, `UnionPay`, `Visa`.
 
 [Learn more about the /credit_card/last_digits input on our Knowledge Base.](https://support.maxmind.com/hc/en-us/articles/5450338695963-Credit-Card-and-Payments-Inputs#h%5F01G0YWJW1KV6H4FEBWCMYA5HMW)
 {{</minfraud-schema-row>}}
 
 {{< minfraud-schema-row key="token" type="request" valueType="string" valueTypeNote="max length: 255" >}}
-A token uniquely identifying the card. The token should consist of non-space printable ASCII characters. If the token is all digits, it must be more than 19 characters long. The token must not be a primary account number (PAN) or a simple transformation of it. If you have a valid token that looks like a PAN but is not one, you may prefix that token with a fixed string, e.g.,`token-`.
+A token uniquely identifying the card. The token should consist of non-space
+printable ASCII characters. If the token is all digits, it must be more than 19
+characters long. The token must not be a primary account number (PAN) or a
+simple transformation of it. If you have a valid token that looks like a PAN but
+is not one, you may prefix that token with a fixed string, e.g.,`token-`.
 
 [Learn more about the /credit_card/token input on our Knowledge Base.](https://support.maxmind.com/hc/en-us/articles/5450338695963-Credit-Card-and-Payments-Inputs#h%5F01G0YWHZK8D3N172REBAPXMQYY)
 {{</minfraud-schema-row>}}
@@ -728,21 +761,30 @@ The name of the issuing bank as provided by the end user.
 {{</minfraud-schema-row>}}
 
 {{< minfraud-schema-row key="bank_phone_country_code" type="request" valueType="string" valueTypeNote="max length: 4" >}}
-The phone country code for the issuing bank as provided by the end user. If you provide this information then you must provide at least one digit.
+The phone country code for the issuing bank as provided by the end user. If you
+provide this information then you must provide at least one digit.
 {{</minfraud-schema-row>}}
 
 {{< minfraud-schema-row key="bank_phone_number" type="request" valueType="string" valueTypeNote="max length: 255" >}}
-The phone number, without the country code, for the issuing bank as provided by the end user. Punctuation characters will be stripped. After stripping punctuation characters, the number must contain only digits.
+The phone number, without the country code, for the issuing bank as provided by
+the end user. Punctuation characters will be stripped. After stripping
+punctuation characters, the number must contain only digits.
 {{</minfraud-schema-row>}}
 
 {{< minfraud-schema-row key="country" type="request" valueType="string" valueTypeNote="max length: 2" >}}
-The two character [ISO 3166-1 alpha-2 country code](https://en.wikipedia.org/wiki/ISO%5F3166-1%5Falpha-2) where the issuer of the card is located. This may be passed instead of the [issuer_id_number](#schema--request--credit-card%5F%5Fissuer%5Fid%5Fnumber) if you do not wish to pass partial account numbers, or if your payment processor does not provide them.
+The two character
+[ISO 3166-1 alpha-2 country code](https://en.wikipedia.org/wiki/ISO%5F3166-1%5Falpha-2)
+where the issuer of the card is located. This may be passed instead of the
+[issuer_id_number](#schema--request--credit-card%5F%5Fissuer%5Fid%5Fnumber) if
+you do not wish to pass partial account numbers, or if your payment processor
+does not provide them.
 
 [Learn more about the /credit_card/country input on our Knowledge Base.](https://support.maxmind.com/hc/en-us/articles/5450338695963-Credit-Card-and-Payments-Inputs#h%5F01G0Z6QZAYZ74FCVPN2PHZ4ZA8)
 {{</minfraud-schema-row>}}
 
 {{< minfraud-schema-row key="avs_result" type="request" valueType="string" valueTypeNote="max length: 1" >}}
-The address verification system (AVS) check result, as returned to you by the credit card processor. The minFraud service supports the standard AVS codes.
+The address verification system (AVS) check result, as returned to you by the
+credit card processor. The minFraud service supports the standard AVS codes.
 
 [Learn more about the /credit_card/avs_result input on our Knowledge Base.](https://support.maxmind.com/hc/en-us/articles/5450338695963-Credit-Card-and-Payments-Inputs#h%5F01G0YWK5CMEVG2YMTPQ11346QV)
 {{</minfraud-schema-row>}}
@@ -754,7 +796,11 @@ The card verification value (CVV) code as provided by the payment processor.
 {{</minfraud-schema-row>}}
 
 {{< minfraud-schema-row key="was_3d_secure_successful" type="request" valueType="boolean"  >}}
-Whether the outcome of 3-D Secure verification (e.g. Safekey, SecureCode, Verified by Visa) was successful. `true` if customer verification was successful, or `false` if the customer failed verification. If 3-D Secure verification was not used, was unavailable, or resulted in another outcome other than success or failure, do not include this field.
+Whether the outcome of 3-D Secure verification (e.g. Safekey, SecureCode,
+Verified by Visa) was successful. `true` if customer verification was
+successful, or `false` if the customer failed verification. If 3-D Secure
+verification was not used, was unavailable, or resulted in another outcome other
+than success or failure, do not include this field.
 
 [Learn more about the /credit_card/was_3d_secure_successful input on our Knowledge Base.](https://support.maxmind.com/hc/en-us/articles/5450338695963-Credit-Card-and-Payments-Inputs#h%5F01G0YWK5CMEVG2YMTPQ11346QV)
 {{</minfraud-schema-row>}}
@@ -765,7 +811,8 @@ Whether the outcome of 3-D Secure verification (e.g. Safekey, SecureCode, Verifi
 
 {{< anchor-target schema--request--order >}}
 
-`order` is a JSON object that contains information about the order associated with the event.
+`order` is a JSON object that contains information about the order associated
+with the event.
 
 ```json
 {
@@ -789,31 +836,36 @@ The total order amount for the transaction before taxes and discounts.
 {{</minfraud-schema-row>}}
 
 {{< minfraud-schema-row key="currency" type="request" valueType="string" valueTypeNote="max length: 3" >}}
-The [ISO 4217 currency code](https://en.wikipedia.org/wiki/ISO%5F4217) for the currency used in the transaction.
+The [ISO 4217 currency code](https://en.wikipedia.org/wiki/ISO%5F4217) for the
+currency used in the transaction.
 
 [Learn more about the /order/currency input on our Knowledge Base.](https://support.maxmind.com/hc/en-us/articles/5452293435675-Order-and-Shopping-Cart-Inputs#h%5F01G0Z50FDAR22FR731C0CD2AE4)
 {{</minfraud-schema-row>}}
 
 {{< minfraud-schema-row key="discount_code" type="request" valueType="string" valueTypeNote="max length: 255" >}}
-The discount code applied to the transaction. If multiple discount codes were used, please separate them with a comma.
+The discount code applied to the transaction. If multiple discount codes were
+used, please separate them with a comma.
 
 [Learn more about the /order/discount_code input on our Knowledge Base.](https://support.maxmind.com/hc/en-us/articles/5452293435675-Order-and-Shopping-Cart-Inputs#h%5F01G0Z50ZVZ2GMAF4DG4N0FA73W)
 {{</minfraud-schema-row>}}
 
 {{< minfraud-schema-row key="affiliate_id" type="request" valueType="string" valueTypeNote="max length: 255" >}}
-The ID of the affiliate where the order is coming from. No specific format is required.
+The ID of the affiliate where the order is coming from. No specific format is
+required.
 
 [Learn more about the /order/affiliate_id input on our Knowledge Base.](https://support.maxmind.com/hc/en-us/articles/5452293435675-Order-and-Shopping-Cart-Inputs#h%5F01G0Z50Q0MRXQ5R52EF34E6G7J)
 {{</minfraud-schema-row>}}
 
 {{< minfraud-schema-row key="subaffiliate_id" type="request" valueType="string" valueTypeNote="max length: 255" >}}
-The ID of the sub-affiliate where the order is coming from. No specific format is required.
+The ID of the sub-affiliate where the order is coming from. No specific format
+is required.
 
 [Learn more about the /order/subaffiliate_id input on our Knowledge Base.](https://support.maxmind.com/hc/en-us/articles/5452293435675-Order-and-Shopping-Cart-Inputs#h%5F01G0Z50Q0MRXQ5R52EF34E6G7J)
 {{</minfraud-schema-row>}}
 
 {{< minfraud-schema-row key="referrer_uri" type="request" valueType="string" valueTypeNote="max length: 1024" >}}
-The URI of the referring site for this order. Needs to be absolute and have a URI scheme such as `https://`.
+The URI of the referring site for this order. Needs to be absolute and have a
+URI scheme such as `https://`.
 
 [Learn more about the /order/referrer_uri input on our Knowledge Base.](https://support.maxmind.com/hc/en-us/articles/5452293435675-Order-and-Shopping-Cart-Inputs#h%5F01G0Z50Q0MRXQ5R52EF34E6G7J)
 {{</minfraud-schema-row>}}
@@ -840,11 +892,10 @@ Whether the purchaser included a gift message.
 
 Passing hashed values for shopping cart items can increase the privacy of your
 customers' information while continuing to fulfill the needs for fraud
-detection. A suitable hashed value can be produced by using a cryptographic
-hash function and a fixed salt. Using a random salt is not recommended as that
-will result in different hashed values for the same plain value, which would
-make them ineffective for our fraud detection service. For more information,
-see:
+detection. A suitable hashed value can be produced by using a cryptographic hash
+function and a fixed salt. Using a random salt is not recommended as that will
+result in different hashed values for the same plain value, which would make
+them ineffective for our fraud detection service. For more information, see:
 
 - [OWASP Cryptographic Storage Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/Cryptographic_Storage_Cheat_Sheet.html)
 - [NIST FIPS Secure Hash Standard (SHS)](https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.180-4.pdf)
@@ -874,16 +925,16 @@ The category of the item. This can also be a hashed value; see below.
 {{</minfraud-schema-row>}}
 
 {{< minfraud-schema-row key="item_id" type="request" valueType="string" valueTypeNote="max length: 255" >}}
-Your internal ID for the item. No specific format is required. This can also be a hashed value; see below.
-{{</minfraud-schema-row>}}
+Your internal ID for the item. No specific format is required. This can also be
+a hashed value; see below. {{</minfraud-schema-row>}}
 
 {{< minfraud-schema-row key="quantity" type="request" valueType="integer" valueTypeNote="min: 0, max: 10e13-1" >}}
 The quantity of the item in the shopping cart. The value must be a whole number.
 {{</minfraud-schema-row>}}
 
 {{< minfraud-schema-row key="price" type="request" valueType="Decimal" valueTypeNote="format: Decimal, min: 0, max: 1e14-1" >}}
-The per-unit price of this item in the shopping cart. This should use the same currency as the order currency.
-{{</minfraud-schema-row>}}
+The per-unit price of this item in the shopping cart. This should use the same
+currency as the order currency. {{</minfraud-schema-row>}}
 
 {{</ schema-table >}}
 
@@ -891,9 +942,15 @@ The per-unit price of this item in the shopping cart. This should use the same c
 
 {{< anchor-target schema--request--custom-inputs >}}
 
-`custom_inputs` are optional inputs to the minFraud service that must first be defined for your account. Select Custom Inputs from the Account Portal in order to do so. See our [Custom Inputs documentation](https://support.maxmind.com/hc/en-us/articles/4408216546203-Use-Custom-Inputs) for more information.
+`custom_inputs` are optional inputs to the minFraud service that must first be
+defined for your account. Select Custom Inputs from the Account Portal in order
+to do so. See our
+[Custom Inputs documentation](https://support.maxmind.com/hc/en-us/articles/4408216546203-Use-Custom-Inputs)
+for more information.
 
-**You should never send a full credit card number as an input.** If you attempt to send a full credit card number as an input, the minFraud service will reject the input and issue a warning.
+**You should never send a full credit card number as an input.** If you attempt
+to send a full credit card number as an input, the minFraud service will reject
+the input and issue a warning.
 
 [Learn more about valid payment number inputs above.](#schema--request--credit-card)
 
@@ -907,19 +964,21 @@ The per-unit price of this item in the shopping cart. This should use the same c
 {{< schema-table key="custom_inputs" >}}
 
 {{< minfraud-schema-row key="your_custom_BOOLEAN_key" type="request" valueType="boolean"  >}}
-A custom key of your choice, with a boolean value.
-{{</minfraud-schema-row>}}
+A custom key of your choice, with a boolean value. {{</minfraud-schema-row>}}
 
 {{< minfraud-schema-row key="your_custom_FLOAT_NUMBER_key" type="request" valueType="float" valueTypeNote="min: -1e14, max: 1e14" >}}
 A custom key of your choice, with a floating number value.
 {{</minfraud-schema-row>}}
 
 {{< minfraud-schema-row key="your_custom_PHONE_NUMBER_key" type="request" valueType="string" valueTypeNote="format: Phone number, max length: 255" >}}
-A custom key of your choice with a string value, formatted as a phone number. Numbers, spaces and punctuation accepted, although spaces and punctuation will be stripped. The following ASCII characters constitute the accepted punctuation: \` \~ ! @ # $ % ^ & \* ( ) – \_ = + ‘ ” ; : , < . > / ? \\ | \[ \] { and }.
+A custom key of your choice with a string value, formatted as a phone number.
+Numbers, spaces and punctuation accepted, although spaces and punctuation will
+be stripped. The following ASCII characters constitute the accepted punctuation:
+\` \~ ! @ # $ % ^ & \* ( ) – \_ = + ‘ ” ; : , < . > / ? \\ | \[ \] { and }.
 {{</minfraud-schema-row>}}
 
 {{< minfraud-schema-row key="your_custom_STRING_key" type="request" valueType="string" valueTypeNote="max length: 255" >}}
-A custom key of your choice with a string value. The null character is not allowed.
-{{</minfraud-schema-row>}}
+A custom key of your choice with a string value. The null character is not
+allowed. {{</minfraud-schema-row>}}
 
 {{</ schema-table >}}

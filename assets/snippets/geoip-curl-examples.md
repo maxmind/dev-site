@@ -5,8 +5,8 @@ that provides the web service with your credentials.
 
 For the following examples, replace `{account_id}` and `{license_key}`
 (including the brackets) with your
-[account ID and license key](https://www.maxmind.com/en/accounts/current/license-key), and
-replace `{ip_address}` with the IP address you wish to look up.
+[account ID and license key](https://www.maxmind.com/en/accounts/current/license-key),
+and replace `{ip_address}` with the IP address you wish to look up.
 
 #### GeoIP Country
 

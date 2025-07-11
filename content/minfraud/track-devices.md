@@ -31,9 +31,8 @@ Note that, in order to be effective, the Device Tracking Add-on must, at a
 minimum, be included on the page where the IP address is captured for a minFraud
 query.
 
-{{< alert warning >}}
-If you anticipate volume greater than 100 page views per second, please
-[contact us](https://support.maxmind.com/hc/en-us/requests/new).
+{{< alert warning >}} If you anticipate volume greater than 100 page views per
+second, please [contact us](https://support.maxmind.com/hc/en-us/requests/new).
 {{</ alert >}}
 
 ## Implementation

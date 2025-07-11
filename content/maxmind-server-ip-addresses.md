@@ -8,9 +8,9 @@ outputs:
 _comment: json feed is handled by module mounts.  see hugo.toml
 ---
 
-{{< alert warning >}}
-In January 2024, we began using R2 presigned URLs for all database downloads.
-Database downloads will no longer use the IP addresses specified below.
+{{< alert warning >}} In January 2024, we began using R2 presigned URLs for all
+database downloads. Database downloads will no longer use the IP addresses
+specified below.
 
 For information about IP addresses used to serve database downloads see
 [the appropriate section below](#database-download-ip-addresses).
@@ -29,8 +29,9 @@ hostname, which could use any IP and changes frequently.
 
 ## Monitoring Changes
 
-MaxMind provides [**RSS**](/maxmind-server-ip-addresses/index.xml) and [**JSON**](/maxmind-server-ip-addresses.json) feeds, allowing you to monitor changes to our
-minFraud, GeoIP, and GeoLite web service server IP addresses.
+MaxMind provides [**RSS**](/maxmind-server-ip-addresses/index.xml) and
+[**JSON**](/maxmind-server-ip-addresses.json) feeds, allowing you to monitor
+changes to our minFraud, GeoIP, and GeoLite web service server IP addresses.
 
 ## Database download IP addresses
 

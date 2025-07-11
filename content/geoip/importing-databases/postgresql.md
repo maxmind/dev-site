@@ -135,18 +135,10 @@ select * from geoip2_network where network >>= '214.0.0.0';
 Which gives a result of:
 
 ```markdown
--[ RECORD 1 ]------------------+-------------
-network | 214.0.0.0/16
-geoname_id | 6252001
-registered_country_geoname_id | 6252001
-represented_country_geoname_id |
-is_anonymous_proxy | f
-is_satellite_provider | f
-postal_code |
-latitude | 37.7510
-longitude | -97.8220
-accuracy_radius | 1000
-is_anycast | f
+-[ RECORD 1 ]------------------+------------- network | 214.0.0.0/16 geoname_id
+| 6252001 registered_country_geoname_id | 6252001 represented_country_geoname_id
+| is_anonymous_proxy | f is_satellite_provider | f postal_code | latitude |
+37.7510 longitude | -97.8220 accuracy_radius | 1000 is_anycast | f
 
 Time: 227.970 ms
 ```
@@ -174,18 +166,10 @@ select * from geoip2_network net where network >>= '214.0.0.0';
 Which gives a result of:
 
 ```markdown
--[ RECORD 1 ]------------------+-------------
-network | 214.0.0.0/16
-geoname_id | 6252001
-registered_country_geoname_id | 6252001
-represented_country_geoname_id |
-is_anonymous_proxy | f
-is_satellite_provider | f
-postal_code |
-latitude | 37.7510
-longitude | -97.8220
-accuracy_radius | 1000
-is_anycast | f
+-[ RECORD 1 ]------------------+------------- network | 214.0.0.0/16 geoname_id
+| 6252001 registered_country_geoname_id | 6252001 represented_country_geoname_id
+| is_anonymous_proxy | f is_satellite_provider | f postal_code | latitude |
+37.7510 longitude | -97.8220 accuracy_radius | 1000 is_anycast | f
 
 Time: 9.869 ms
 ```
@@ -272,14 +256,9 @@ where network >>= '214.0.0.0';
 Which gives a result of:
 
 ```markdown
--[ RECORD 1 ]------+--------------
-latitude | 37.7510
-longitude | -97.8220
-accuracy_radius | 1000
-continent_name | North America
-country_name | United States
-subdivision_1_name |
-city_name |
+-[ RECORD 1 ]------+-------------- latitude | 37.7510 longitude | -97.8220
+accuracy_radius | 1000 continent_name | North America country_name | United
+States subdivision_1_name | city_name |
 ```
 
 Here we were only interested in English results, but we can adjust our join
@@ -328,16 +307,10 @@ where network >>= '214.0.0.0';
 Which gives a result of:
 
 ```markdown
--[ RECORD 1 ]----------------------+--------------
-latitude | 37.7510
-longitude | -97.8220
-accuracy_radius | 1000
-location_continent_name | North America
-location_country_name | United States
-location_subdivision_1_name |
-location_city_name |
-registered_country_continent_name | North America
+-[ RECORD 1 ]----------------------+-------------- latitude | 37.7510 longitude
+| -97.8220 accuracy_radius | 1000 location_continent_name | North America
+location_country_name | United States location_subdivision_1_name |
+location_city_name | registered_country_continent_name | North America
 registered_country_country_name | United States
-represented_country_continent_name |
-represented_country_country_name |
+represented_country_continent_name | represented_country_country_name |
 ```

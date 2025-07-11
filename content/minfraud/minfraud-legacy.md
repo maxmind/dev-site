@@ -3,18 +3,16 @@ draft: false
 title: minFraud Legacy Web Service API
 ---
 
-{{< alert danger >}}
-We have made a number of data changes to the minFraud Legacy Standard and
-Premium, and GeoIP Legacy City and Insights (formerly Omni) web services. Please
-see our [blog
-post](https://blog.maxmind.com/2020/06/data-changes-to-geoip-legacy-and-minfraud-legacy-web-services-in-may-2022/)
-for more information, and how to prepare.
-{{</ alert >}}
+{{< alert danger >}} We have made a number of data changes to the minFraud
+Legacy Standard and Premium, and GeoIP Legacy City and Insights (formerly Omni)
+web services. Please see our
+[blog post](https://blog.maxmind.com/2020/06/data-changes-to-geoip-legacy-and-minfraud-legacy-web-services-in-may-2022/)
+for more information, and how to prepare. {{</ alert >}}
 
-{{< alert >}}
-**New minFraud APIs are available:** Please see
+{{< alert >}} **New minFraud APIs are available:** Please see
 [What’s New in minFraud Score, minFraud Insights, and minFraud Factors](/minfraud/whats-new-in-minfraud-score-and-minfraud-insights)
-and our [minFraud Insights, minFraud Score, and minFraud Factors API documentation](/minfraud).
+and our
+[minFraud Insights, minFraud Score, and minFraud Factors API documentation](/minfraud).
 To learn more about the minFraud Insights, minFraud Score, and minFraud Factors
 services and to purchase credits, please
 [visit the minFraud Overview page](https://www.maxmind.com/en/solutions/minfraud-services).
@@ -823,10 +821,9 @@ current when they signed up for the service. The latest version is 1.3.
 
 ### Select the proper Legacy version for testing
 
-{{< alert >}}
-Please note that if you would like to test the current version of
-the minFraud service, you should follow the [instructions for testing the
-current minFraud service on the Sandbox](/minfraud/sandbox-environment).
+{{< alert >}} Please note that if you would like to test the current version of
+the minFraud service, you should follow the
+[instructions for testing the current minFraud service on the Sandbox](/minfraud/sandbox-environment).
 {{</ alert >}}
 
 You can control which version of the Legacy minFraud service your Sandbox

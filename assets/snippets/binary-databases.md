@@ -3,7 +3,8 @@ Binary databases make use of the
 provides [official client APIs](/geoip/docs/databases/#official-client-apis)
 that are open source. We also provide a list of
 [unsupported and unofficial client APIs](/geoip/docs/databases/#unofficial-client-apis)
-and [unsupported and unofficial integrations](/geoip/docs/databases/#integrations)
+and
+[unsupported and unofficial integrations](/geoip/docs/databases/#integrations)
 with various applications.
 
 You can also use the [mmdbinspect tool](https://github.com/maxmind/mmdbinspect)

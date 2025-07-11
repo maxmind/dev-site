@@ -16,8 +16,8 @@ querying the data in the following sections below:
 
 {{</ alert >}}
 
-This guide will show you how to import GeoIP or GeoLite databases into MySQL
-so that they can be easily queried and manipulated on your server.
+This guide will show you how to import GeoIP or GeoLite databases into MySQL so
+that they can be easily queried and manipulated on your server.
 
 Importing a CSV database consists of downloading the database, extracting it,
 creating tables to hold the data, and indexing those tables for faster querying.
@@ -189,7 +189,8 @@ limit 1;
 
 ```markdown
 +------------+-------------------------------+--------------------------------+-------------+----------+-----------+-----------------+
-| geoname_id | registered_country_geoname_id | represented_country_geoname_id | postal_code | latitude | longitude | accuracy_radius |
+| geoname_id | registered_country_geoname_id | represented_country_geoname_id |
+postal_code | latitude | longitude | accuracy_radius |
 +------------+-------------------------------+--------------------------------+-------------+----------+-----------+-----------------+
 | 6252001 | 6252001 | NULL | NULL | 37.751 | -97.822 | 1000 |
 +------------+-------------------------------+--------------------------------+-------------+----------+-----------+-----------------+
@@ -217,7 +218,8 @@ limit 1;
 
 ```markdown
 +------------+-------------------------------+--------------------------------+-------------+----------+-----------+-----------------+
-| geoname_id | registered_country_geoname_id | represented_country_geoname_id | postal_code | latitude | longitude | accuracy_radius |
+| geoname_id | registered_country_geoname_id | represented_country_geoname_id |
+postal_code | latitude | longitude | accuracy_radius |
 +------------+-------------------------------+--------------------------------+-------------+----------+-----------+-----------------+
 | 6252001 | 6252001 | NULL | NULL | 37.751 | -97.822 | 1000 |
 +------------+-------------------------------+--------------------------------+-------------+----------+-----------+-----------------+
@@ -265,7 +267,8 @@ where inet6_aton('214.0.0.0') <= network_end;
 
 ```markdown
 +------------+-------------------------------+--------------------------------+-------------+----------+-----------+-----------------+
-| geoname_id | registered_country_geoname_id | represented_country_geoname_id | postal_code | latitude | longitude | accuracy_radius |
+| geoname_id | registered_country_geoname_id | represented_country_geoname_id |
+postal_code | latitude | longitude | accuracy_radius |
 +------------+-------------------------------+--------------------------------+-------------+----------+-----------+-----------------+
 | 6252001 | 6252001 | NULL | NULL | 37.751 | -97.822 | 1000 |
 +------------+-------------------------------+--------------------------------+-------------+----------+-----------+-----------------+
@@ -397,7 +400,8 @@ where inet6_aton('214.0.0.0') <= network_end;
 
 ```markdown
 +----------+-----------+-----------------+----------------+---------------+--------------------+-----------+
-| latitude | longitude | accuracy_radius | continent_name | country_name | subdivision_1_name | city_name |
+| latitude | longitude | accuracy_radius | continent_name | country_name |
+subdivision_1_name | city_name |
 +----------+-----------+-----------------+----------------+---------------+--------------------+-----------+
 | 37.751 | -97.822 | 1000 | North America | United States | NULL | NULL |
 +----------+-----------+-----------------+----------------+---------------+--------------------+-----------+
@@ -456,9 +460,13 @@ where inet6_aton('214.0.0.0') <= network_end;
 
 ```markdown
 +----------+-----------+-----------------+-------------------------+-----------------------+-----------------------------+--------------------+-----------------------------------+---------------------------------+------------------------------------+----------------------------------+
-| latitude | longitude | accuracy_radius | location_continent_name | location_country_name | location_subdivision_1_name | location_city_name | registered_country_continent_name | registered_country_country_name | represented_country_continent_name | represented_country_country_name |
+| latitude | longitude | accuracy_radius | location_continent_name |
+location_country_name | location_subdivision_1_name | location_city_name |
+registered_country_continent_name | registered_country_country_name |
+represented_country_continent_name | represented_country_country_name |
 +----------+-----------+-----------------+-------------------------+-----------------------+-----------------------------+--------------------+-----------------------------------+---------------------------------+------------------------------------+----------------------------------+
-| 37.751 | -97.822 | 1000 | North America | United States | NULL | NULL | North America | United States | NULL | NULL |
+| 37.751 | -97.822 | 1000 | North America | United States | NULL | NULL | North
+America | United States | NULL | NULL |
 +----------+-----------+-----------------+-------------------------+-----------------------+-----------------------------+--------------------+-----------------------------------+---------------------------------+------------------------------------+----------------------------------+
 1 row in set (0.00 sec)
 ```

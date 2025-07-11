@@ -50,9 +50,8 @@ The password is your
 [MaxMind license key](https://www.maxmind.com/en/accounts/current/license-key).
 The authorization realm is `minfraud`.
 
-{{< alert warning >}}
-You must be approved for a trial or purchase credit for use with our web
-services in order to receive an account ID and license key.
+{{< alert warning >}} You must be approved for a trial or purchase credit for
+use with our web services in order to receive an account ID and license key.
 {{</ alert >}}
 
 We use basic HTTP authentication. The APIs which require authentication are only

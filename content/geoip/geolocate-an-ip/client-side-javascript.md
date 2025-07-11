@@ -1,6 +1,7 @@
 ---
 draft: false
-title: Geolocate an IP address using Web Services with the client-side JavaScript
+title:
+  Geolocate an IP address using Web Services with the client-side JavaScript
 ---
 
 Our GeoIP JavaScript client allows you to use GeoIP web services client-side
@@ -35,8 +36,8 @@ able to
 In order to use this service, the following JavaScript must be included in your
 page.
 
-{{< alert warning >}}
-**Do not download this JavaScript file and serve it from your server(s)!**
+{{< alert warning >}} **Do not download this JavaScript file and serve it from
+your server(s)!**
 
 The JavaScript file must be served from MaxMind servers, otherwise GeoIP
 requests will fail.
@@ -99,7 +100,11 @@ files: page.html and demo.js.
   <body>
     <p>Where am I?</p>
 
-    <p>You are in <span id="city"></span>.</p>
+    <p>
+      You are in
+      <span id="city"></span>
+      .
+    </p>
   </body>
 </html>
 ```

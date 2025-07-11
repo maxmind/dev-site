@@ -3,13 +3,11 @@ draft: false
 title: GeoIP Anonymous Plus Databases
 ---
 
-{{< alert warning >}}
-The GeoIP Anonymous Plus database is under active development. New fields
-are expected to be added. Please design your integrations to expect new
-fields, and ensure you monitor updates to our
+{{< alert warning >}} The GeoIP Anonymous Plus database is under active
+development. New fields are expected to be added. Please design your
+integrations to expect new fields, and ensure you monitor updates to our
 [GeoIP release notes](/geoip/release-notes) to get notifications about new
-fields and changes to existing ones.
-{{</ alert>}}
+fields and changes to existing ones. {{</ alert>}}
 
 MaxMind's GeoIP Anonymous Plus database helps protect your business by
 identifying anonymized proxy traffic and reduce false positives based on

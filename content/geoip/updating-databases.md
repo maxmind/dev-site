@@ -3,12 +3,11 @@ draft: false
 title: Updating GeoIP and GeoLite Databases
 ---
 
-{{< alert warning >}}
-In January 2024, we began using R2 presigned URLs for all database downloads.
-You should make sure that your HTTP client follows redirects and there are no
-proxy or firewall settings that would block requests to the host we are
-redirecting to. We will redirect requests using HTTPS on the following
-hostname:
+{{< alert warning >}} In January 2024, we began using R2 presigned URLs for all
+database downloads. You should make sure that your HTTP client follows redirects
+and there are no proxy or firewall settings that would block requests to the
+host we are redirecting to. We will redirect requests using HTTPS on the
+following hostname:
 
 - `mm-prod-geoip-databases.a2649acb697e2c09b632799562c076f2.r2.cloudflarestorage.com`
 
@@ -66,9 +65,8 @@ with an active license key associated with your MaxMind account. You can see
 your license key information on
 [your account License Keys page](https://www.maxmind.com/en/accounts/current/license-key).
 
-{{< alert warning >}}
-You may also write this file by hand using the template below
-(**not recommended**).
+{{< alert warning >}} You may also write this file by hand using the template
+below (**not recommended**).
 
 Note that for `geoipupdate` versions less than 2.5.0, use `UserId` instead of
 `AccountID` and `ProductIds` instead of `EditionIDs`.

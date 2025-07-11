@@ -43,8 +43,8 @@ npm install
 
 #### Install Precious
 
-You should install our pre-commit hook. You can do this from your checkout
-by running `git/setup.sh`. These hooks do things like ensure that the code you
+You should install our pre-commit hook. You can do this from your checkout by
+running `git/setup.sh`. These hooks do things like ensure that the code you
 commit is tidy and passes various linter checks.
 
 #### Install Hugo

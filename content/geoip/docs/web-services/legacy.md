@@ -3,18 +3,14 @@ draft: false
 title: GeoIP Legacy Web Services
 ---
 
-{{< alert info >}}
-We have implemented recent changes to our GeoIP Legacy web services in line with
-the retirement of GeoIP Legacy Databases. Please see our [blog
-post](https://blog.maxmind.com/2020/06/data-changes-to-geoip-legacy-and-minfraud-legacy-web-services-in-may-2022/)
-for more information.
-{{</ alert >}}
+{{< alert info >}} We have implemented recent changes to our GeoIP Legacy web
+services in line with the retirement of GeoIP Legacy Databases. Please see our
+[blog post](https://blog.maxmind.com/2020/06/data-changes-to-geoip-legacy-and-minfraud-legacy-web-services-in-may-2022/)
+for more information. {{</ alert >}}
 
-{{< alert warning >}}
-**Note:** This documentation is for the GeoIP legacy services. New customers do
-not have access to these services. Please use the [GeoIP web
-services](/geoip/docs/web-services).
-{{</ alert >}}
+{{< alert warning >}} **Note:** This documentation is for the GeoIP legacy
+services. New customers do not have access to these services. Please use the
+[GeoIP web services](/geoip/docs/web-services). {{</ alert >}}
 
 The GeoIP web services allow you to look up information about a given IP address
 using an HTTP-based API.
