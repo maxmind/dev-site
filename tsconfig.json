@@ -2,16 +2,17 @@
   "compilerOptions": {
     "baseUrl": ".",
     "lib": ["DOM", "ESNext", "dom.iterable"],
-    "module": "ESNext",
+    "module": "NodeNext",
+    "moduleResolution": "nodenext",
     "noEmit": true,
     "skipLibCheck": true,
     "strict": true,
-    "target": "ESNext"
+    "target": "esnext"
   },
   "exclude": [
     "node_modules",
     "public",
     ".cache"
   ],
-  "include": ["./assets/js/**/*"]
+  "include": ["./assets/js/**/*", "format-rawhtml.ts"]
 }

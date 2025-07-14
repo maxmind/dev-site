@@ -34,6 +34,19 @@ path-args = "absolute-file"
 include = ["assets/js/**"]
 ok-exit-codes = 0
 
+[commands.prettier-content]
+type = "both"
+cmd = [
+  "npx",
+  "prettier",
+  "--write"
+]
+lint-flags = ["--check"]
+tidy-flags = ["--write"]
+path-args = "absolute-file"
+include = ["content/**/**/*.md"]
+ok-exit-codes = 0
+
 [commands.cspell-content]
 type="lint"
 include = ["*.md"]
@@ -42,4 +55,13 @@ cmd = [
   "run",
   "lint:cspell",
 ]
+ok-exit-codes = 0
+
+[commands.format-content]
+type = "both"
+cmd = ["npx", "ts-node", "format-rawhtml.ts"]
+lint-flags = []
+tidy-flags = ["--write"]
+path-args = "absolute-file"
+include = ["content/**/**/*.md"]
 ok-exit-codes = 0
