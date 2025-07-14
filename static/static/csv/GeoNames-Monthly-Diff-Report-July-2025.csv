@@ -1,0 +1,145 @@
+diff_in,old_geoname_id,new_geoname_id,old_city_name,new_city_name,old_country_name,new_country_name,old_country_code,new_country_code,old_subdivision_codes,new_subdivision_codes
+city_name,3462101,3462101,Grão Pará,Grão-Pará,Brazil,Brazil,BR,BR,SC,SC
+city_name,6318866,6318866,Varjão de MInas,Varjão de Minas,Brazil,Brazil,BR,BR,MG,MG
+city_name,3451632,3451632,Restinga Seca,Restinga Sêca,Brazil,Brazil,BR,BR,RS,RS
+city_name,3464304,3464304,Embu Guaçu,Embu-Guaçu,Brazil,Brazil,BR,BR,SP,SP
+city_name,3463227,3463227,Florínia,Florínea,Brazil,Brazil,BR,BR,SP,SP
+city_name,3397175,3397175,Juàzeirinho,Juazeirinho,Brazil,Brazil,BR,BR,PB,PB
+city_name,3456397,3456397,Não Me Toque,Não-Me-Toque,Brazil,Brazil,BR,BR,RS,RS
+city_name,3464104,3464104,Entre Ijuís,Entre-Ijuís,Brazil,Brazil,BR,BR,RS,RS
+city_name,3463746,3463746,Estrela dOeste,Estrela d'Oeste,Brazil,Brazil,BR,BR,SP,SP
+city_name,3466241,3466241,Chiapeta,Chiapetta,Brazil,Brazil,BR,BR,RS,RS
+city_name,3458721,3458721,Lauro Muller,Lauro Müller,Brazil,Brazil,BR,BR,SC,SC
+city_name,3460777,3460777,Itaóca,Itaoca,Brazil,Brazil,BR,BR,SP,SP
+city_name,3468902,3468902,Brodósqui,Brodowski,Brazil,Brazil,BR,BR,SP,SP
+city_name,3467371,3467371,Capâo Bonito,Capão Bonito,Brazil,Brazil,BR,BR,SP,SP
+city_name,3471312,3471312,áurea,Áurea,Brazil,Brazil,BR,BR,RS,RS
+city_name,5915327,5915327,Cap-aux-Meules,Les Îles-de-la-Madeleine,Canada,Canada,CA,CA,QC,QC
+city_name,6137952,6137952,Saint-Élie,Saint-Élie-de-Caxton,Canada,Canada,CA,CA,QC,QC
+city_name,2925181,2925181,Freiburg/Elbe,Freiburg (Elbe) Flecken,Germany,Germany,DE,DE,NI,NI
+city_name,2833989,2833989,Seebad Bansin,Bansin,Germany,Germany,DE,DE,MV,MV
+city_name,2804787,2804787,Zempin,Seebad Zempin,Germany,Germany,DE,DE,MV,MV
+city_name,1273874,1273874,Ernakulam,Kochi,India,India,IN,IN,KL,KL
+city_name,6724577,6724577,Karanganunggi,Kampar,Indonesia,Indonesia,ID,ID,RI,RI
+city_name,3165842,3165842,Telese,Telese Terme,Italy,Italy,IT,IT,"72, BN","72, BN"
+city_name,1537162,1537162,Almaty Oblysy,Almaty,Kazakhstan,Kazakhstan,KZ,KZ,19,19
+city_name,3971857,3971857,Trinidad García de la Cadena,La Estanzuela,Mexico,Mexico,MX,MX,ZAC,ZAC
+city_name,4005392,4005392,Guadalupe Trujillo,Guadalupe de Trujillo,Mexico,Mexico,MX,MX,ZAC,ZAC
+city_name,3802132,3802132,Frontera,Fronterita,Mexico,Mexico,MX,MX,TAB,TAB
+city_name,3802196,3802196,Villa la Venta,La Venta,Mexico,Mexico,MX,MX,TAB,TAB
+city_name,3802205,3802205,Villa Benito Juárez,Benito Juárez,Mexico,Mexico,MX,MX,TAB,TAB
+city_name,3979822,3979822,Zacoalco,Zacoalco de Torres,Mexico,Mexico,MX,MX,JAL,JAL
+city_name,708738,708738,Glubokaya,Hlyboka,Ukraine,Ukraine,UA,UA,26,26
+city_name,702698,702698,Luchkovtsy,Lychkivtsi,Ukraine,Ukraine,UA,UA,61,61
+city_name,689970,689970,Verbovka,Verbivka,Ukraine,Ukraine,UA,UA,5,5
+city_name,290595,290595,Imārat Umm al Qaywayn,Umm al Qaywayn,United Arab Emirates,United Arab Emirates,AE,AE,UQ,UQ
+city_name,5097402,5097402,East Brunswick,E Brunswick,United States,United States,US,US,NJ,NJ
+city_name,4908052,4908052,Rolling Meadows,Rolling Mdws,United States,United States,US,US,IL,IL
+city_name,5443948,5443948,Wheat Ridge,Wheatridge,United States,United States,US,US,CO,CO
+city_name,4166195,4166195,North Fort Myers,N Ft Myers,United States,United States,US,US,FL,FL
+city_name,5010978,5010978,Saint Clair Shores,Saint Clr Shores,United States,United States,US,US,MI,MI
+city_name,5002714,5002714,Mount Pleasant,Mt Pleasant,United States,United States,US,US,MI,MI
+city_name,4904365,4904365,Oak Lawn,Oaklawn,United States,United States,US,US,IL,IL
+city_name,5249224,5249224,Combined Locks,Combined Lcks,United States,United States,US,US,WI,WI
+city_name,4657633,4657633,Signal Mountain,Signal Mtn,United States,United States,US,US,TN,TN
+city_name,5101459,5101459,Mount Arlington,Mt Arlington,United States,United States,US,US,NJ,NJ
+city_name,5102831,5102831,Pompton Plains,Pompton Plns,United States,United States,US,US,NJ,NJ
+city_name,4984549,4984549,Au Train,Autrain,United States,United States,US,US,MI,MI
+city_name,5191695,5191695,Granville Summit,Granville Smt,United States,United States,US,US,PA,PA
+city_name,4494228,4494228,Swanquarter,Swan Quarter,United States,United States,US,US,NC,NC
+city_name,4300266,4300266,McDaniels,Mc Daniels,United States,United States,US,US,KY,KY
+city_name,4962775,4962775,Dover-Foxcroft,Dovr Foxcroft,United States,United States,US,US,ME,ME
+city_name,4490695,4490695,Sealevel,Sea Level,United States,United States,US,US,NC,NC
+city_name,4998431,4998431,L'Anse,L Anse,United States,United States,US,US,MI,MI
+city_name,1583475,1583475,Diễn Châu,Diễn Thành,Vietnam,Vietnam,VN,VN,22,22
+geoname_id,2508741,2508744,Afir,Afir,Algeria,Algeria,DZ,DZ,35,35
+geoname_id,12984720,13353985,Buenos Aires,Buenos Aires,Brazil,Brazil,BR,BR,PE,PE
+geoname_id,6323070,3470160,Bela Vista do Toldo,Bela Vista do Toldo,Brazil,Brazil,BR,BR,SC,SC
+geoname_id,6319964,3393253,Palmeira do Piauí,Palmeira do Piauí,Brazil,Brazil,BR,BR,PI,PI
+geoname_id,6323907,3471915,Aporé,Aporé,Brazil,Brazil,BR,BR,GO,GO
+geoname_id,13029251,3460741,Itapoá,Itapoá,Brazil,Brazil,BR,BR,SC,SC
+geoname_id,6316391,12995358,Angelândia,Angelândia,Brazil,Brazil,BR,BR,MG,MG
+geoname_id,6319899,3401234,Dom Inocêncio,Dom Inocêncio,Brazil,Brazil,BR,BR,PI,PI
+geoname_id,6319816,6318703,Sítio Novo,Sítio Novo,Brazil,Brazil,BR,BR,MA,MA
+geoname_id,6319893,3401522,Cristino Castro,Cristino Castro,Brazil,Brazil,BR,BR,PI,PI
+geoname_id,8437588,6318421,São Francisco de Assis do Piauí,São Francisco de Assis do Piauí,Brazil,Brazil,BR,BR,PI,PI
+geoname_id,11959657,3458729,Laurentino,Laurentino,Brazil,Brazil,BR,BR,SC,SC
+geoname_id,6323218,6317885,Passo de Torres,Passo de Torres,Brazil,Brazil,BR,BR,SC,SC
+geoname_id,3445418,6321913,Vazante,Vazante,Brazil,Brazil,BR,BR,MG,MG
+geoname_id,6319159,3447712,Serranópolis,Serranópolis,Brazil,Brazil,BR,BR,GO,GO
+geoname_id,3461951,12390808,Guapiara,Guapiara,Brazil,Brazil,BR,BR,SP,SP
+geoname_id,6317420,12959105,Lago do Junco,Lago do Junco,Brazil,Brazil,BR,BR,MA,MA
+geoname_id,6321795,3449062,São Gonçalo do Abaeté,São Gonçalo do Abaeté,Brazil,Brazil,BR,BR,MG,MG
+geoname_id,13021811,6318166,Rio Quente,Rio Quente,Brazil,Brazil,BR,BR,GO,GO
+geoname_id,6324156,3460849,Itajá,Itajá,Brazil,Brazil,BR,BR,GO,GO
+geoname_id,3448226,6318617,São Sebastião do Oeste,São Sebastião do Oeste,Brazil,Brazil,BR,BR,MG,MG
+geoname_id,3662075,6319345,Tabatinga,Tabatinga,Brazil,Brazil,BR,BR,AM,AM
+geoname_id,6319704,6317214,Governador Eugênio Barros,Governador Eugênio Barros,Brazil,Brazil,BR,BR,MA,MA
+geoname_id,3471277,6318352,Santo Antônio do Aventureiro,Santo Antônio do Aventureiro,Brazil,Brazil,BR,BR,MG,MG
+geoname_id,6323224,3453943,Balneário Piçarras,Balneário Piçarras,Brazil,Brazil,BR,BR,SC,SC
+geoname_id,6323947,6316880,Cocalzinho de Goiás,Cocalzinho de Goiás,Brazil,Brazil,BR,BR,GO,GO
+geoname_id,6323961,6317051,Doverlândia,Doverlândia,Brazil,Brazil,BR,BR,GO,GO
+geoname_id,3451583,6318821,Turvolândia,Turvolândia,Brazil,Brazil,BR,BR,MG,MG
+geoname_id,12108334,3460542,Itororó,Itororó,Brazil,Brazil,BR,BR,BA,BA
+geoname_id,6324037,6317728,Nova Crixás,Nova Crixás,Brazil,Brazil,BR,BR,GO,GO
+geoname_id,8463113,3448200,São Simão,São Simão,Brazil,Brazil,BR,BR,GO,GO
+geoname_id,3401235,6316979,Curral Novo do Piauí,Curral Novo do Piauí,Brazil,Brazil,BR,BR,PI,PI
+geoname_id,3457072,6318453,São João das Missões,São João das Missões,Brazil,Brazil,BR,BR,MG,MG
+geoname_id,6321556,3457476,Matias Cardoso,Matias Cardoso,Brazil,Brazil,BR,BR,MG,MG
+geoname_id,3453096,6318058,Presidente Juscelino,Presidente Juscelino,Brazil,Brazil,BR,BR,MG,MG
+geoname_id,3449893,6318288,Santa Rita de Minas,Santa Rita de Minas,Brazil,Brazil,BR,BR,MG,MG
+geoname_id,6324014,6317524,Mara Rosa,Mara Rosa,Brazil,Brazil,BR,BR,GO,GO
+geoname_id,12542538,6316989,Damião,Damião,Brazil,Brazil,BR,BR,PB,PB
+geoname_id,3461788,6317240,Guarujá do Sul,Guarujá do Sul,Brazil,Brazil,BR,BR,SC,SC
+geoname_id,3388207,3388210,São Pedro,São Pedro,Brazil,Brazil,BR,BR,RN,RN
+geoname_id,3403488,6318448,São João da Canabrava,São João da Canabrava,Brazil,Brazil,BR,BR,PI,PI
+geoname_id,6321828,3448320,São Romão,São Romão,Brazil,Brazil,BR,BR,MG,MG
+geoname_id,3470427,3470428,Barrinha,Barrinha,Brazil,Brazil,BR,BR,SP,SP
+geoname_id,6321566,3457152,Minas Novas,Minas Novas,Brazil,Brazil,BR,BR,MG,MG
+geoname_id,3445054,6317611,Modelo,Modelo,Brazil,Brazil,BR,BR,SC,SC
+geoname_id,3457943,6320949,Mansidão,Mansidão,Brazil,Brazil,BR,BR,BA,BA
+geoname_id,12544713,6316704,Caldas Brandão,Caldas Brandão,Brazil,Brazil,BR,BR,PB,PB
+geoname_id,8543806,6318654,Senador La Rocque,Senador La Rocque,Brazil,Brazil,BR,BR,MA,MA
+geoname_id,3408071,3408070,Alcantil,Alcantil,Brazil,Brazil,BR,BR,PB,PB
+geoname_id,6324087,3448904,São João d'Aliança,São João d'Aliança,Brazil,Brazil,BR,BR,GO,GO
+geoname_id,6319986,3400694,Ribeira do Piauí,Ribeira do Piauí,Brazil,Brazil,BR,BR,PI,PI
+geoname_id,6319747,3394380,Morros,Morros,Brazil,Brazil,BR,BR,MA,MA
+geoname_id,3466671,6318605,São Sebastião da Vargem Alegre,São Sebastião da Vargem Alegre,Brazil,Brazil,BR,BR,MG,MG
+geoname_id,3401434,13354016,Cubati,Cubati,Brazil,Brazil,BR,BR,PB,PB
+geoname_id,3410022,6317587,Milagres do Maranhão,Milagres do Maranhão,Brazil,Brazil,BR,BR,MA,MA
+geoname_id,6321626,6317844,Pai Pedro,Pai Pedro,Brazil,Brazil,BR,BR,MG,MG
+geoname_id,12957515,6316563,Bernardo do Mearim,Bernardo do Mearim,Brazil,Brazil,BR,BR,MA,MA
+geoname_id,3398885,6317209,Gonçalves Dias,Gonçalves Dias,Brazil,Brazil,BR,BR,MA,MA
+geoname_id,6324162,3456277,Nobres,Nobres,Brazil,Brazil,BR,BR,MT,MT
+geoname_id,3406895,6316904,Conceição do Lago-Açu,Conceição do Lago-Açu,Brazil,Brazil,BR,BR,MA,MA
+geoname_id,3472122,6318609,São Sebastião do Anta,São Sebastião do Anta,Brazil,Brazil,BR,BR,MG,MG
+geoname_id,6091351,6091354,Notre-Dame-de-la-Salette,Notre-Dame-de-la-Salette,Canada,Canada,CA,CA,QC,QC
+geoname_id,3667902,3667901,Soatá,Soatá,Colombia,Colombia,CO,CO,BOY,BOY
+geoname_id,3679095,3682560,Espriella,Espriella,Colombia,Colombia,CO,CO,NAR,NAR
+geoname_id,2968962,2968997,Villard,Villard,France,France,FR,FR,"ARA, 74","ARA, 74"
+geoname_id,10318542,1268982,Jhārli,Jhārli,India,India,IN,IN,HR,HR
+geoname_id,11344239,1261705,Natham,Natham,India,India,IN,IN,TN,TN
+geoname_id,11360039,11325334,Suya,Suya,Japan,Japan,JP,JP,43,43
+geoname_id,9631838,9633085,Hirao,Hirao,Japan,Japan,JP,JP,29,29
+geoname_id,1735339,1735297,Mukah,Mukah,Malaysia,Malaysia,MY,MY,13,13
+geoname_id,3521078,3818786,Guadalupe Victoria,Guadalupe Victoria,Mexico,Mexico,MX,MX,PUE,PUE
+geoname_id,780225,3158214,Engenes,Engenes,Norway,Norway,NO,NO,19,19
+geoname_id,1177660,1177662,Gujranwala,Gujranwala,Pakistan,Pakistan,PK,PK,PB,PB
+geoname_id,7100656,1173055,Kotli,Kotli,Pakistan,Pakistan,PK,PK,JK,JK
+geoname_id,3372707,3372709,Ribeira Grande,Ribeira Grande,Portugal,Portugal,PT,PT,20,20
+geoname_id,2270121,2270119,Carrascal,Carrascal,Portugal,Portugal,PT,PT,11,11
+geoname_id,2732772,2732773,Viana do Castelo,Viana do Castelo,Portugal,Portugal,PT,PT,16,16
+geoname_id,583341,8145135,Aleksandrovka,Aleksandrovka,Russia,Russia,RU,RU,ROS,ROS
+geoname_id,519763,519757,Novaya Derevnya,Novaya Derevnya,Russia,Russia,RU,RU,LIP,LIP
+geoname_id,7094334,7093788,Rubilovo,Rubilovo,Russia,Russia,RU,RU,PSK,PSK
+geoname_id,2020009,2020008,Mikhaylovka,Mikhaylovka,Russia,Russia,RU,RU,AMU,AMU
+geoname_id,2018021,7502873,Pervomayskiy,Pervomayskiy,Russia,Russia,RU,RU,ZAB,ZAB
+geoname_id,100768,101732,Unaizah,Unaizah,Saudi Arabia,Saudi Arabia,SA,SA,5,5
+geoname_id,1838341,1838343,Pyeongtaek-si,Pyeongtaek-si,South Korea,South Korea,KR,KR,41,41
+geoname_id,2516932,6544442,Guadiaro,Guadiaro,Spain,Spain,ES,ES,"AN, CA","AN, CA"
+geoname_id,2688428,604004,Norrfors,Norrfors,Sweden,Sweden,SE,SE,AC,AC
+geoname_id,2708528,2708529,Hällnäs,Hällnäs,Sweden,Sweden,SE,SE,AC,AC
+geoname_id,12263524,13276853,Lutton,Lutton,United Kingdom,United Kingdom,GB,GB,"ENG, DEV","ENG, DEV"
+geoname_id,4524527,5171808,Sharpsburg,Sharpsburg,United States,United States,US,US,OH,OH
+subdivision_codes,294482,294482,Kerem Maharal,Kerem Maharal,Israel,Israel,IL,IL,Z,HA
+subdivision_codes,723575,723575,Slovenské Nové Mesto,Slovenské Nové Mesto,Slovakia,Slovakia,SK,SK,,KI
