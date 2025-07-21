@@ -4,6 +4,7 @@ updates:
     directory: "/"
     schedule:
       interval: daily
+      time: "14:00"
     groups:
       minor-and-patch:
         patterns:
@@ -11,8 +12,8 @@ updates:
         update-types:
           - "minor"
           - "patch"
-
   - package-ecosystem: "github-actions"
     directory: "/"
     schedule:
       interval: daily
+      time: "14:00"
