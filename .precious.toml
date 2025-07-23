@@ -58,10 +58,13 @@ cmd = [
 ok-exit-codes = 0
 
 [commands.format-content]
-type = "both"
-cmd = ["npx", "ts-node", "format-rawhtml.ts"]
+type = "lint"
+cmd = [
+  "npm",
+  "run",
+  "format:rawhtml"
+]
 lint-flags = []
-tidy-flags = ["--write"]
 path-args = "absolute-file"
-include = ["content/**/**/*.md"]
+include = ["content/**/*.md"]
 ok-exit-codes = 0

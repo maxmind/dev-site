@@ -32,92 +32,117 @@ respectively.
 {{< rawhtml >}}
 
 <div class="table">
-<table>
-  <tbody>
-    <tr>
+  <table>
+    <tbody>
+      <tr>
         <th>Name</th>
         <th>Type</th>
         <th>Description</th>
-    </tr>
+      </tr>
 
-    <tr>
+      <tr>
         <td>network</td>
         <td>IP network as a string</td>
         <td>
-          This is the IPv4 or IPv6 network in CIDR format such as
-          “2.21.92.0/29” or “2001:4b0::/80”. We offer a utility to convert
-          this column to start/end IPs or start/end integers. See <a
-          href="#conversion-utility">the conversion utility section</a> for
+          This is the IPv4 or IPv6 network in CIDR format such as “2.21.92.0/29”
+          or “2001:4b0::/80”. We offer a utility to convert this column to
+          start/end IPs or start/end integers. See
+          <a href="#conversion-utility">the conversion utility section</a> for
           details.
         </td>
-    </tr>
+      </tr>
 
-    <tr>
+      <tr>
         <td>isp</td>
         <td>string</td>
         <td>
           The name of the ISP associated with the IP address.
           <br />
-          <a href="https://support.maxmind.com/hc/en-us/articles/4408200231067-IP-Network-Data#h_01FN989KHXR7TGXPB5T2DK0Q77">Learn more about ISP data on our Knowledge Base.</a>
+          <a
+            href="https://support.maxmind.com/hc/en-us/articles/4408200231067-IP-Network-Data#h_01FN989KHXR7TGXPB5T2DK0Q77"
+            >Learn more about ISP data on our Knowledge Base.</a
+          >
         </td>
-    </tr>
+      </tr>
 
-    <tr>
+      <tr>
         <td>organization</td>
         <td>string</td>
         <td>
           The name of the organization associated with the IP address.
           <br />
-          <a href="https://support.maxmind.com/hc/en-us/articles/4408200231067-IP-Network-Data#h_01FN989KHXR7TGXPB5T2DK0Q77">Learn more about organization data on our Knowledge Base.</a>
+          <a
+            href="https://support.maxmind.com/hc/en-us/articles/4408200231067-IP-Network-Data#h_01FN989KHXR7TGXPB5T2DK0Q77"
+            >Learn more about organization data on our Knowledge Base.</a
+          >
         </td>
-    </tr>
+      </tr>
 
-    <tr>
+      <tr>
         <td>autonomous_system_number</td>
         <td>integer</td>
         <td>
-          The <a href="https://en.wikipedia.org/wiki/Autonomous_system_(Internet)">autonomous system</a> number associated with the IP address.
+          The
+          <a href="https://en.wikipedia.org/wiki/Autonomous_system_(Internet)"
+            >autonomous system</a
+          >
+          number associated with the IP address.
           <br />
-          <a href="https://support.maxmind.com/hc/en-us/articles/4408200231067-IP-Network-Data#h_01FN989WWSE56YD6AV4QSPSWDW">Learn more about autonomous system data on our Knowledge Base.</a>
+          <a
+            href="https://support.maxmind.com/hc/en-us/articles/4408200231067-IP-Network-Data#h_01FN989WWSE56YD6AV4QSPSWDW"
+            >Learn more about autonomous system data on our Knowledge Base.</a
+          >
         </td>
-    </tr>
+      </tr>
 
-    <tr>
+      <tr>
         <td>autonomous_system_organization</td>
         <td>string</td>
         <td>
           The organization associated with the registered autonomous system
           number for the IP address.
           <br />
-          <a href="https://support.maxmind.com/hc/en-us/articles/4408200231067-IP-Network-Data#h_01FN989WWSE56YD6AV4QSPSWDW">Learn more about autonomous system data on our Knowledge Base.</a>
+          <a
+            href="https://support.maxmind.com/hc/en-us/articles/4408200231067-IP-Network-Data#h_01FN989WWSE56YD6AV4QSPSWDW"
+            >Learn more about autonomous system data on our Knowledge Base.</a
+          >
         </td>
-    </tr>
-    <tr>
-      <td>mobile_country_code</td>
-      <td>string</td>
-      <td>
-        The <a href="https://en.wikipedia.org/wiki/Mobile_country_code">mobile country code
-        (MCC)</a> associated
-        with the IP address and ISP.
-        <br />
-        <a href="https://support.maxmind.com/hc/en-us/articles/4408200231067-IP-Network-Data#h_01FT6Y6ANRH9GWYXE78B4RXAEX">Learn more about mobile country codes on our Knowledge Base.</a>
-      </td>
-    </tr>
-    <tr>
-      <td>mobile_network_code</td>
-      <td>string</td>
-      <td>
-        The <a href="https://en.wikipedia.org/wiki/Mobile_country_code">mobile network code
-        (MNC)</a> associated
-        with the IP address and ISP.
+      </tr>
+      <tr>
+        <td>mobile_country_code</td>
+        <td>string</td>
+        <td>
+          The
+          <a href="https://en.wikipedia.org/wiki/Mobile_country_code"
+            >mobile country code (MCC)</a
+          >
+          associated with the IP address and ISP.
+          <br />
+          <a
+            href="https://support.maxmind.com/hc/en-us/articles/4408200231067-IP-Network-Data#h_01FT6Y6ANRH9GWYXE78B4RXAEX"
+            >Learn more about mobile country codes on our Knowledge Base.</a
+          >
+        </td>
+      </tr>
+      <tr>
+        <td>mobile_network_code</td>
+        <td>string</td>
+        <td>
+          The
+          <a href="https://en.wikipedia.org/wiki/Mobile_country_code"
+            >mobile network code (MNC)</a
+          >
+          associated with the IP address and ISP.
 
-        <br />
-        <a href="https://support.maxmind.com/hc/en-us/articles/4408200231067-IP-Network-Data#h_01FT6Y6ANRH9GWYXE78B4RXAEX">Learn more about mobile network codes on our Knowledge Base.</a>
-      </td>
-    </tr>
-
-  </tbody>
-</table>
+          <br />
+          <a
+            href="https://support.maxmind.com/hc/en-us/articles/4408200231067-IP-Network-Data#h_01FT6Y6ANRH9GWYXE78B4RXAEX"
+            >Learn more about mobile network codes on our Knowledge Base.</a
+          >
+        </td>
+      </tr>
+    </tbody>
+  </table>
 </div>
 {{</ rawhtml >}}
 

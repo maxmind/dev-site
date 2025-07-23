@@ -73,3 +73,5 @@ firebase.json
 
 # Misc
 .tmp
+
+dist/
