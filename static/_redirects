@@ -7,7 +7,7 @@
 /geoip/release-notes/rss.xml /geoip/release-notes/2025/index.xml 302
 /minfraud/release-notes /minfraud/release-notes/2025/ 302
 /minfraud/release-notes/ /minfraud/release-notes/2025/ 302
-/minfraud/release-notes/rss.xml /minfraud/release-notes/2024/index.xml 302
+/minfraud/release-notes/rss.xml /minfraud/release-notes/2025/index.xml 302
 
 # General - without splats or placeholders
 # Redirects are more performant when redirects without splats/placeholders are above those with splats/placeholders
