@@ -63,11 +63,20 @@ Replace `INSERT_MAXMIND_ACCOUNT_ID_HERE` with your
 
 ## Cookie and web storage usage
 
-The device tracking add-on uses both a cookie and local storage as one method of
-distinguishing unique devices. The add-on sets a cookie with a two-year
-expiration for the effective second-level domain of your site; for instance, on
-`www.maxmind.com`, the cookie would be set for `maxmind.com`. Both the cookie
-and the local storage key are named `__mmapiwsid`.
+The device tracking add-on uses cookies and local storage as methods of
+distinguishing unique devices across visits and domains.
+
+The add-on sets two types of cookies, both named `__mmapiwsid` with two-year expiration:
+
+1. **First-party cookie**: Set for the effective second-level domain of your site;
+   for instance, on `www.maxmind.com`, the cookie would be set for `maxmind.com`.
+
+2. **Third-party cookie**: Set by MaxMind's servers to enable cross-domain device
+   tracking. This allows the same device to be identified when it visits different
+   customer websites using our device tracking.
+
+The local storage key is also named `__mmapiwsid` and provides an additional method of
+device identification.
 
 MaxMind may use other browser storage techniques in the future to enhance the
 performance of the device tracking add-on.
