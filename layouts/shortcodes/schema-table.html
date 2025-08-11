@@ -1,3 +1,15 @@
+{{/* Parse the YAML data from the shortcode's inner content */}}
+{{ $rows := .Inner | unmarshal }}
+
+{{/* Determine if this is minFraud or GeoIP based on the first row's type field */}}
+{{ $isMinFraud := false }}
+{{ range first 1 $rows }}
+  {{ if .type }}
+    {{ $isMinFraud = true }}
+  {{ end }}
+{{ end }}
+
+{{/* Build the HTML table with proper styling to match existing design */}}
 <div class="table">
   <table class="schema">
     <thead>
@@ -8,7 +20,84 @@
       </tr>
     </thead>
     <tbody>
-      {{.Inner}}
+      {{/* Loop through each item (row) from the parsed YAML data */}}
+      {{ range $rows }}
+        {{ $parentKey := $.Get "key" }}
+        {{ $parentKey = replace $parentKey "_" "-" }}
+        {{ $key := .key }}
+        
+        {{/* Generate fragment based on service type */}}
+        {{ $fragment := "" }}
+        {{ if $isMinFraud }}
+          {{ $type := .type | default "request" }}
+          {{ $fragment = printf "schema--%s--%s__%s" $type $parentKey $key }}
+        {{ else }}
+          {{ $fragment = printf "schema--response--%s__%s" $parentKey $key }}
+        {{ end }}
+        
+        {{/* Handle fragmentOverride for minFraud */}}
+        {{ $href := $fragment }}
+        {{ if .fragmentOverride }}
+          {{ $href = .fragmentOverride }}
+        {{ end }}
+        
+        <tr>
+          <td class="schema__key-cell">
+            <a href="#{{ $href }}"><code class="schema__row-key">{{ .key }}</code></a>
+          </td>
+          <td class="schema__type-cell">
+            {{ .valueType }}
+          </td>
+          <td>
+            <div id="{{ $fragment }}">
+              {{ .description | markdownify }}
+              {{ with .valueTypeNote }}
+                <p>
+                  <em>{{ . }}</em>
+                </p>
+              {{ end }}
+              
+              {{/* Show service tags based on service type */}}
+              {{ if $isMinFraud }}
+                {{/* MinFraud: only show tags for response type */}}
+                {{ $type := .type | default "request" }}
+                {{ if eq $type "response" }}
+                  {{ $hasScore := eq (.score | default "false") "true" }}
+                  {{ $hasInsights := eq (.insights | default "false") "true" }}
+                  {{ $hasFactors := eq (.factors | default "false") "true" }}
+                  <div>
+                    <span class="tag {{ if $hasScore }}tag--checked{{ else }}tag--disabled{{ end }}">
+                      minFraud Score
+                    </span>
+                    <span class="tag {{ if $hasInsights }}tag--checked{{ else }}tag--disabled{{ end }}">
+                      minFraud Insights
+                    </span>
+                    <span class="tag {{ if $hasFactors }}tag--checked{{ else }}tag--disabled{{ end }}">
+                      minFraud Factors
+                    </span>
+                  </div>
+                {{ end }}
+              {{ else }}
+                {{/* GeoIP: always show tags */}}
+                {{ $hasCountry := eq (.country | default "false") "true" }}
+                {{ $hasCity := eq (.city | default "false") "true" }}
+                {{ $hasInsights := eq (.insights | default "false") "true" }}
+                <div>
+                  <span class="tag {{ if $hasCountry }}tag--checked{{ else }}tag--disabled{{ end }}">
+                    GeoIP Country
+                  </span>
+                  <span class="tag {{ if $hasCity }}tag--checked{{ else }}tag--disabled{{ end }}">
+                    GeoIP City
+                  </span>
+                  <span class="tag {{ if $hasInsights }}tag--checked{{ else }}tag--disabled{{ end }}">
+                    GeoIP Insights
+                  </span>
+                </div>
+              {{ end }}
+            </div>
+          </td>
+        </tr>
+      {{ end }}
     </tbody>
   </table>
 </div>
