@@ -44,7 +44,8 @@
     "lint:cspell": "cspell '**/*.md' --no-summary --no-progress --color",
     "lint:scripts": "tsc && npx eslint .  --max-warnings=0",
     "lint:styles": "stylelint ./assets/scss/*.{css,scss,sass}",
-    "prettier:ts": "prettier --write './assets/js/**'"
+    "prettier:ts": "prettier --write './assets/js/**'",
+    "format:rawhtml": "npx tsc format-rawhtml.ts --outDir dist && node dist/format-rawhtml.js"
   },
   "version": "1.0.0"
 }
