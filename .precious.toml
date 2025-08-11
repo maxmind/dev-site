@@ -43,3 +43,40 @@ cmd = [
   "lint:cspell",
 ]
 ok-exit-codes = 0
+
+[commands.prettier-markdown]
+type = "both"
+include = [
+    "assets/**/*.md",
+    "content/**/*.md"
+]
+cmd = [
+    "./node_modules/.bin/prettier",
+    "--parser",
+    "markdown",
+    "--print-width",
+    "80",
+    "--prose-wrap",
+    "always",
+    "--embedded-language-formatting",
+    "off",
+    "--html-whitespace-sensitivity",
+    "ignore",
+]
+lint-flags = "--check"
+tidy-flags = "--write"
+ok-exit-codes = 0
+lint-failure-exit-codes = 1
+ignore-stderr = ["Code style issues"]
+
+[commands.format-content]
+type = "tidy"
+cmd = [
+  "npm",
+  "run",
+  "format:rawhtml"
+]
+lint-flags = []
+path-args = "absolute-file"
+include = ["content/**/*.md"]
+ok-exit-codes = 0
