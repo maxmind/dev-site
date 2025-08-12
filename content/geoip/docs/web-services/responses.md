@@ -209,6 +209,8 @@ address.
 }
 ```
 
+<!-- prettier-ignore-start -->
+
 {{< schema-table key="city" >}}
 - key: confidence
   valueType: integer
@@ -967,6 +969,8 @@ address.
 
     **This field is not present in the GeoLite City web service.**
 {{</ schema-table >}}
+
+<!-- prettier-ignore-end -->
 
 ## Miscellaneous Notes
 
