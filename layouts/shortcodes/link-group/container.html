@@ -1,6 +1,14 @@
+{{/* Parse the YAML data from the shortcode's inner content */}}
+{{ $links := .Inner | unmarshal }}
+
 <div class="link-group">
   {{ if .Get "heading" }}<h3>{{ with .Get "heading" }}{{ . }}{{ end }}</h3>{{ end }}
   <div class="link-group__cards">
-    {{ .Inner }}
+    {{ range $links }}
+      <a href="{{ .url }}" class="link-group__card">
+        {{ if .heading }}<h4 class="link-group__card-title">{{ .heading }}</h4>{{ end }}
+        {{ .text | markdownify }}
+      </a>
+    {{ end }}
   </div>
 </div>
