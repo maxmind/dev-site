@@ -6,35 +6,30 @@ title: GeoIP and GeoLite Database Documentation
 ## Databases
 
 {{< link-group/container >}}
-{{< link-group/card heading="City and Country Databases" href="/geoip/docs/databases/city-and-country" >}}
-Determine the country, subdivisions (regions), city, and postal code associated
-with IPv4 and IPv6 addresses worldwide. {{</ link-group/card >}}
-{{< link-group/card heading="Enterprise Databases" href="/geoip/docs/databases/enterprise" >}}
-Determine geolocation data such as country, region, state, city, ZIP/postal
-code, and additional intelligence such as confidence factors, ISP, domain, and
-connection type. {{</ link-group/card >}}
-{{< link-group/card heading="Anonymous IP Databases" href="/geoip/docs/databases/anonymous-ip" >}}
-MaxMind's GeoIP Anonymous IP CSV database helps protect your business by
-identifying proxy, VPN, hosting, and other anonymous IP addresses.
-{{</ link-group/card >}}
-{{< link-group/card heading="Anonymous Plus Databases" href="/geoip/docs/databases/anonymous-plus" >}}
-MaxMind's GeoIP Anonymous Plus database helps protect your business by
-identifying anonymized proxy traffic and reduce false positives based on
-confidence scores, timestamps, and VPN provider names. {{</ link-group/card >}}
-{{< link-group/card heading="ISP Databases" href="/geoip/docs/databases/isp" >}}
-Determine the Internet Service Provider, organization name, and autonomous
-system organization and number associated with an IP address.
-{{</ link-group/card >}}
-{{< link-group/card heading="Connection Type Databases" href="/geoip/docs/databases/connection-type" >}}
-Determine the connection type of your visitors based on their IP address. The
-database identifies dial-up, cellular, cable/DSL, and corporate connection
-speeds. {{</ link-group/card >}}
-{{< link-group/card heading="Domain Databases" href="/geoip/docs/databases/domain" >}}
-Look up the second level domain names associated with IPv4 and IPv6 addresses.
-{{</ link-group/card >}}
-{{< link-group/card heading="ASN Databases" href="/geoip/docs/databases/asn" >}}
-Look up the autonomous system number and autonomous system organization
-associated with IPv4 and IPv6 addresses. {{</ link-group/card >}}
+- heading: "City and Country Databases"
+  url: "/geoip/docs/databases/city-and-country"
+  text: "Determine the country, subdivisions (regions), city, and postal code associated with IPv4 and IPv6 addresses worldwide."
+- heading: "Enterprise Databases"
+  url: "/geoip/docs/databases/enterprise"
+  text: "Determine geolocation data such as country, region, state, city, ZIP/postal code, and additional intelligence such as confidence factors, ISP, domain, and connection type."
+- heading: "Anonymous IP Databases"
+  url: "/geoip/docs/databases/anonymous-ip"
+  text: "MaxMind's GeoIP Anonymous IP CSV database helps protect your business by identifying proxy, VPN, hosting, and other anonymous IP addresses."
+- heading: "Anonymous Plus Databases"
+  url: "/geoip/docs/databases/anonymous-plus"
+  text: "MaxMind's GeoIP Anonymous Plus database helps protect your business by identifying anonymized proxy traffic and reduce false positives based on confidence scores, timestamps, and VPN provider names."
+- heading: "ISP Databases"
+  url: "/geoip/docs/databases/isp"
+  text: "Determine the Internet Service Provider, organization name, and autonomous system organization and number associated with an IP address."
+- heading: "Connection Type Databases"
+  url: "/geoip/docs/databases/connection-type"
+  text: "Determine the connection type of your visitors based on their IP address. The database identifies dial-up, cellular, cable/DSL, and corporate connection speeds."
+- heading: "Domain Databases"
+  url: "/geoip/docs/databases/domain"
+  text: "Look up the second level domain names associated with IPv4 and IPv6 addresses."
+- heading: "ASN Databases"
+  url: "/geoip/docs/databases/asn"
+  text: "Look up the autonomous system number and autonomous system organization associated with IPv4 and IPv6 addresses."
 {{</ link-group/container >}}
 
 ## Client APIs
