@@ -10,6 +10,7 @@ The `Content-Type` for a successful response varies based on the service as
 outlined below:
 
 {{< rawhtml >}}
+
 <div class="table">
   <table>
     <thead>
@@ -74,6 +75,7 @@ In addition to the errors documented below, client code should also be prepared
 to handle any valid HTTP `4xx` or `5xx` status code.
 
 {{< rawhtml >}}
+
 <div class="table">
   <table>
     <thead>
@@ -167,18 +169,19 @@ document.
 The data returned in the document will be in UTF-8 encoding.
 
 Note that a given key and value may be omitted from the response entirely if
-there is no relevant information to include. For example, if you do not pass
-any information about the credit card in your request, then the response will
-not contain a `credit_card` key or value.
+there is no relevant information to include. For example, if you do not pass any
+information about the credit card in your request, then the response will not
+contain a `credit_card` key or value.
 
 For full examples of response bodies, select one of the following:
 
-* [minFraud Score Body Example](#minfraud-score-body-example)
-* [minFraud Insights Body Example](#minfraud-insights-body-example)
-* [minFraud Factors Body Example](#minfraud-factors-body-example)
-* [Error Body Example](#error-body-example)
+- [minFraud Score Body Example](#minfraud-score-body-example)
+- [minFraud Insights Body Example](#minfraud-insights-body-example)
+- [minFraud Factors Body Example](#minfraud-factors-body-example)
+- [Error Body Example](#error-body-example)
 
 ### Top-Level Fields
+
 {{< anchor-target schema--response >}}
 
 ```json
@@ -287,22 +290,29 @@ For full examples of response bodies, select one of the following:
 <!-- prettier-ignore-end -->
 
 ### IP Address
+
 {{< anchor-target schema--response--ip-address >}}
 
-For minFraud Score, this object only contains the `risk` for the IP address. For minFraud Insights and Factors, the object is the [GeoIP Insights response body](/geoip/docs/web-services/responses/#geoip2-insights-body-example) with four modifications:
+For minFraud Score, this object only contains the `risk` for the IP address. For
+minFraud Insights and Factors, the object is the
+[GeoIP Insights response body](/geoip/docs/web-services/responses/#geoip2-insights-body-example)
+with four modifications:
 
 1. `risk` has been added directly to the `ip_address` object
 2. `local_time` has been added to the `location` sub-object
 3. The `maxmind` object is not present. See below for descriptions.
 4. minFraud Insights and Factors return the following anonymous IP outputs:
-   * `is_anonymous`
-   * `is_anonymous_vpn`
-   * `is_hosting_provider`
-   * `is_public_proxy`
-   * `is_residential_proxy`
-   * `is_tor_exit_node`
+   - `is_anonymous`
+   - `is_anonymous_vpn`
+   - `is_hosting_provider`
+   - `is_public_proxy`
+   - `is_residential_proxy`
+   - `is_tor_exit_node`
 
-See the [GeoIP Insights response body](/geoip/docs/web-services/responses/#geoip2-insights-body-example) for more information.
+See the
+[GeoIP Insights response body](/geoip/docs/web-services/responses/#geoip2-insights-body-example)
+for more information.
+
 ```json
 {
   "risk": 0.01,
@@ -477,11 +487,14 @@ See the [GeoIP Insights response body](/geoip/docs/web-services/responses/#geoip
 <!-- prettier-ignore-end -->
 
 ### IP Address > Country
+
 {{< anchor-target schema--response--ip-address--country >}}
 
-This object contains country-level geolocation data associated with the IP address associated with the event
+This object contains country-level geolocation data associated with the IP
+address associated with the event
 
-[See the GeoIP Insights response body](/geoip/docs/web-services/responses/#country) for more information.
+[See the GeoIP Insights response body](/geoip/docs/web-services/responses/#country)
+for more information.
 
 ```json
 {
@@ -503,11 +516,14 @@ This object contains country-level geolocation data associated with the IP addre
 ```
 
 ### IP Address > Location
+
 {{< anchor-target schema--response--ip-address--location >}}
 
-This object contains city-level geolocation data associated with the IP address associated with the event.
+This object contains city-level geolocation data associated with the IP address
+associated with the event.
 
-[See the GeoIP Insights response body](/geoip/docs/web-services/responses/#location) for more information.
+[See the GeoIP Insights response body](/geoip/docs/web-services/responses/#location)
+for more information.
 
 ```json
 {
@@ -535,9 +551,11 @@ This object contains city-level geolocation data associated with the IP address 
 <!-- prettier-ignore-end -->
 
 ### IP Address > Risk Reasons
+
 {{< anchor-target schema--response--ip-address--risk-reasons >}}
 
-This array contains IP Address Risk Reason objects identifying the reasons why the IP address received the associated risk.
+This array contains IP Address Risk Reason objects identifying the reasons why
+the IP address received the associated risk.
 
 ```json
 [
@@ -583,9 +601,13 @@ This array contains IP Address Risk Reason objects identifying the reasons why t
 <!-- prettier-ignore-end -->
 
 ### Credit Card
+
 {{< anchor-target schema--response--credit-card >}}
 
-This object contains minFraud information related to the credit card. If an issuer ID number (IIN) was not provided in the request, this object will not be present in the response.
+This object contains minFraud information related to the credit card. If an
+issuer ID number (IIN) was not provided in the request, this object will not be
+present in the response.
+
 ```json
 {
   "brand": "Visa",
@@ -659,9 +681,12 @@ This object contains minFraud information related to the credit card. If an issu
 <!-- prettier-ignore-end -->
 
 ### Credit Card > Issuer
+
 {{< anchor-target schema--response--credit-card--issuer >}}
 
-This is a sub-object of `credit_card` that contains information related to the issuer of the card.
+This is a sub-object of `credit_card` that contains information related to the
+issuer of the card.
+
 ```json
 {
   "matches_provided_name": true,
@@ -698,9 +723,12 @@ This is a sub-object of `credit_card` that contains information related to the i
 <!-- prettier-ignore-end -->
 
 ### Device
+
 {{< anchor-target schema--response--device >}}
 
-This object contains information about the device that MaxMind believes is associated with the IP address passed in the request.
+This object contains information about the device that MaxMind believes is
+associated with the IP address passed in the request.
+
 ```json
 {
   "confidence": 99,
@@ -741,6 +769,7 @@ This object contains information about the device that MaxMind believes is assoc
 <!-- prettier-ignore-end -->
 
 ### Email
+
 {{< anchor-target schema--response--email >}}
 
 ```json
@@ -811,6 +840,7 @@ This is a sub-object of `email` that contains information related to the domain.
 <!-- prettier-ignore-end -->
 
 ### Shipping Address
+
 {{< anchor-target schema--response--shipping-address >}}
 
 ```json
@@ -878,6 +908,7 @@ This is a sub-object of `email` that contains information related to the domain.
 <!-- prettier-ignore-end -->
 
 ### Shipping Phone
+
 {{< anchor-target schema--response--shipping-phone >}}
 
 ```json
@@ -919,6 +950,7 @@ This is a sub-object of `email` that contains information related to the domain.
 <!-- prettier-ignore-end -->
 
 ### Billing Address
+
 {{< anchor-target schema--response--billing-address >}}
 
 ```json
@@ -972,6 +1004,7 @@ This is a sub-object of `email` that contains information related to the domain.
 <!-- prettier-ignore-end -->
 
 ### Billing Phone
+
 {{< anchor-target schema--response--billing-phone >}}
 
 ```json
@@ -1013,9 +1046,12 @@ This is a sub-object of `email` that contains information related to the domain.
 <!-- prettier-ignore-end -->
 
 ### Disposition
+
 {{< anchor-target schema--response--disposition >}}
 
-This object contains information about how a request was handled by the custom rules you have defined. If your account does not have any custom rules defined, then this object will not be present in the response.
+This object contains information about how a request was handled by the custom
+rules you have defined. If your account does not have any custom rules defined,
+then this object will not be present in the response.
 
 [Learn about custom rules and dispositions on our Knowledge Base.](https://support.maxmind.com/hc/en-us/articles/4408801942811-Use-Custom-Rules-and-Dispositions)
 
@@ -1060,12 +1096,13 @@ This object contains information about how a request was handled by the custom r
 <!-- prettier-ignore-end -->
 
 ### Risk Score Reasons
+
 {{< anchor-target schema--response--risk-score-reasons >}}
 
 This array contains risk score reason objects. Risk score reasons are usually
-only returned for medium to high risk transactions. If there were no
-significant changes to the risk score due to these reasons, then this array
-will not be present in the response.
+only returned for medium to high risk transactions. If there were no significant
+changes to the risk score due to these reasons, then this array will not be
+present in the response.
 
 ```json
 [
@@ -1145,9 +1182,12 @@ will not be present in the response.
 <!-- prettier-ignore-end -->
 
 ### Warnings
+
 {{< anchor-target schema--response--warnings >}}
 
-This array contains warning objects detailing issues with the request that was sent such as invalid or unknown inputs. It is highly recommended that you check this array for issues when integrating the web service.
+This array contains warning objects detailing issues with the request that was
+sent such as invalid or unknown inputs. It is highly recommended that you check
+this array for issues when integrating the web service.
 
 ```json
 [
@@ -1457,6 +1497,7 @@ Factors services, and a full example of the JSON body document for an error.
   }
 }
 ```
+
 ### minFraud Factors Body Example
 
 ```json

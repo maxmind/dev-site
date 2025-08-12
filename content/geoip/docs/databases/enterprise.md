@@ -30,6 +30,7 @@ for assistance.
 The files in the zip archive are:
 
 {{< rawhtml >}}
+
 <div class="table">
   <table>
     <tbody>
@@ -68,6 +69,7 @@ The files in the zip archive are:
       </tr>
 
     </tbody>
+
   </table>
 </div>
 {{</ rawhtml >}}
@@ -90,6 +92,7 @@ A single CSV file, called `GeoIP2-Enterprise-ISP.csv`, contains information on
 ISPs.
 
 {{< rawhtml >}}
+
 <div class="table">
   <table>
     <thead>
@@ -195,6 +198,7 @@ ISPs.
         </td>
       </tr>
     </tbody>
+
   </table>
 </div>
 {{</ rawhtml >}}
@@ -227,15 +231,16 @@ name would be "GeoIP2-City-Locations-en.csv".
 ### CSV Example Files
 
 {{< csv-example-files >}}
-* [GeoIP2-Enterprise-CSV\_Example.zip](/static/GeoIP2-Enterprise-CSV_Example.zip)
-{{</ csv-example-files >}}
+
+- [GeoIP2-Enterprise-CSV_Example.zip](/static/GeoIP2-Enterprise-CSV_Example.zip)
+  {{</ csv-example-files >}}
 
 ### MMDB Example Files
 
 {{< mmdb-example-files >}}
-* [GeoIP2-Enterprise-Test.mmdb](https://github.com/maxmind/MaxMind-DB/blob/main/test-data/GeoIP2-Enterprise-Test.mmdb)
-{{</ mmdb-example-files >}}
 
+- [GeoIP2-Enterprise-Test.mmdb](https://github.com/maxmind/MaxMind-DB/blob/main/test-data/GeoIP2-Enterprise-Test.mmdb)
+  {{</ mmdb-example-files >}}
 
 ## Database Changes
 

@@ -86,7 +86,7 @@ exclusion request.
 
 Each exclusion object in the `exclusions` array includes the following keys:
 
-| Key              | Value Type         | Description                                                                                                   |
+| Key              | Value Type         | Description                                                                                                                                                                                                                                                                                                                                                                                       |
 | ---------------- | ------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `exclusion_type` | enum               | The governing law or rule that the exclusion was made under. Currently, the only valid type is `ccpa_do_not_sell` for the California Consumer Privacy Act’s “Do Not Sell My Personal Information” provision.                                                                                                                                                                                      |
 | `data_type`      | enum               | The data type of the value being excluded. Currently, the only valid data type is `network`, which is an IP network in [CIDR notation](https://en.wikipedia.org/wiki/Classless_Inter-Domain_Routing#CIDR_notation); all IP addresses in the specified network should be excluded. You should always check this before using the associated `value`. In the future, additional types may be added. |
@@ -113,14 +113,14 @@ and may change at any time.
 In addition to the errors documented below, client code should also be prepared
 to handle any valid HTTP 4xx or 5xx status code.
 
-| Code Error            | HTTP Status               | Error Mode                                                                                                                                               |
-| --------------------- | ------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| TIMESTAMP_INVALID     | 400 Bad Request           | The `updates_after` field must be in [RFC 3339 format](https://tools.ietf.org/html/rfc3339).                                                             |
-| AUTHORIZATION_INVALID | 401 Unauthorized          | Your [account ID or license key](https://www.maxmind.com/en/accounts/current/license-key) could not be authenticated.                                    |
-| ACCOUNT_ID_REQUIRED   | 401 Unauthorized          | An [account ID and license key](https://www.maxmind.com/en/accounts/current/license-key) are required to use this service.                               |
-| LICENSE_KEY_REQUIRED  | 401 Unauthorized          | An [account ID and license key](https://www.maxmind.com/en/accounts/current/license-key) are required to use this service.                               |
-| PERMISSION_REQUIRED   | 403 Forbidden             | You do not have permission to use the service. Please [contact our support team](https://support.maxmind.com/hc/en-us/requests/new) for more information.                                                  |
-| _(none)_              | 503 Service Not Available | There is a problem with the web service server. You can [check the status of our services](https://status.maxmind.com), or try this request again later. |
+| Code Error            | HTTP Status               | Error Mode                                                                                                                                                |
+| --------------------- | ------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| TIMESTAMP_INVALID     | 400 Bad Request           | The `updates_after` field must be in [RFC 3339 format](https://tools.ietf.org/html/rfc3339).                                                              |
+| AUTHORIZATION_INVALID | 401 Unauthorized          | Your [account ID or license key](https://www.maxmind.com/en/accounts/current/license-key) could not be authenticated.                                     |
+| ACCOUNT_ID_REQUIRED   | 401 Unauthorized          | An [account ID and license key](https://www.maxmind.com/en/accounts/current/license-key) are required to use this service.                                |
+| LICENSE_KEY_REQUIRED  | 401 Unauthorized          | An [account ID and license key](https://www.maxmind.com/en/accounts/current/license-key) are required to use this service.                                |
+| PERMISSION_REQUIRED   | 403 Forbidden             | You do not have permission to use the service. Please [contact our support team](https://support.maxmind.com/hc/en-us/requests/new) for more information. |
+| _(none)_              | 503 Service Not Available | There is a problem with the web service server. You can [check the status of our services](https://status.maxmind.com), or try this request again later.  |
 
 #### Example Response (for an unsuccessful request)
 

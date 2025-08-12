@@ -33,9 +33,9 @@ and error, are in the form of a JSON object.
 ### Inputs
 
 [Download this PDF](https://get.maxmind.com/hubfs/Marketing/minFraud/minFraud%20services%20input_output%20comparison%20table.pdf)
-to get an overview and comparison of all minFraud products' inputs.
-You can also view our [Request API documentation](/minfraud/api-documentation/requests) for a complete
-description of each input.
+to get an overview and comparison of all minFraud products' inputs. You can also
+view our [Request API documentation](/minfraud/api-documentation/requests) for a
+complete description of each input.
 
 ### minFraud Score Outputs
 
@@ -61,11 +61,11 @@ similar to `risk_score`.
 `/shipping_address/is_in_ip_country`.
 
 ### New Outputs
-[Download this PDF](https://get.maxmind.com/hubfs/Marketing/minFraud/minFraud%20services%20input_output%20comparison%20table.pdf)
-to get an overview and comparison of all minFraud products' outputs.
-You can also view our [Request API documentation](/minfraud/api-documentation/responses) for a complete
-description of each input.
 
+[Download this PDF](https://get.maxmind.com/hubfs/Marketing/minFraud/minFraud%20services%20input_output%20comparison%20table.pdf)
+to get an overview and comparison of all minFraud products' outputs. You can
+also view our [Request API documentation](/minfraud/api-documentation/responses)
+for a complete description of each input.
 
 ### Deprecated Outputs
 

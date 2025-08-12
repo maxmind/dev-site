@@ -71,7 +71,7 @@ Alert. These codes are subject to change.
 | `HIGH_RISK_IP`     | IP address has been marked as a high-risk IP                                                     |
 | `HOSTING_PROVIDER` | IP is from High Risk Hosting Provider                                                            |
 | `MANUAL_REVIEW`    | The transaction was flagged as risky after manual review                                         |
-| `POSTAL_VELOCITY`  | IP address had high velocity of orders (e.g. different zip codes on same IP address)              |
+| `POSTAL_VELOCITY`  | IP address had high velocity of orders (e.g. different zip codes on same IP address)             |
 
 ### Securing your webhook
 

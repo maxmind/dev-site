@@ -30,6 +30,7 @@ These are named `GeoIP2-Domain-Blocks-IPv4.csv` and
 `GeoIP2-Domain-Blocks-IPv6.csv` respectively.
 
 {{< rawhtml >}}
+
 <div class="table">
 <table>
   <tbody>
@@ -83,8 +84,9 @@ These are named `GeoIP2-Domain-Blocks-IPv4.csv` and
 ### MMDB Example Files
 
 {{< mmdb-example-files >}}
-* [GeoIP2-Domain-Test.mmdb](https://github.com/maxmind/MaxMind-DB/blob/main/test-data/GeoIP2-Domain-Test.mmdb)
-{{</ mmdb-example-files >}}
+
+- [GeoIP2-Domain-Test.mmdb](https://github.com/maxmind/MaxMind-DB/blob/main/test-data/GeoIP2-Domain-Test.mmdb)
+  {{</ mmdb-example-files >}}
 
 ## Database Sizes
 

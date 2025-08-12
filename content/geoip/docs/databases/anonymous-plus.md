@@ -3,14 +3,11 @@ draft: false
 title: GeoIP Anonymous Plus Databases
 ---
 
-{{< alert warning >}}
-  The GeoIP Anonymous Plus database is under active development. New fields
-  are expected to be added. Please design your integrations to expect new
-  fields, and ensure you monitor updates to our
-  [GeoIP release notes](/geoip/release-notes) to get notifications about new
-  fields and changes to existing ones.
-{{</ alert>}}
-
+{{< alert warning >}} The GeoIP Anonymous Plus database is under active
+development. New fields are expected to be added. Please design your
+integrations to expect new fields, and ensure you monitor updates to our
+[GeoIP release notes](/geoip/release-notes) to get notifications about new
+fields and changes to existing ones. {{</ alert>}}
 
 MaxMind's GeoIP Anonymous Plus database helps protect your business by
 identifying anonymized proxy traffic and reduce false positives based on
@@ -41,6 +38,7 @@ These are named `GeoIP-Anonymous-Plus-Blocks-Plusv4.csv` and
 `GeoIP-Anonymous-Plus-Blocks-Plusv6.csv` respectively.
 
 {{< rawhtml >}}
+
 <div class="table">
   <table>
     <tbody>
@@ -162,6 +160,7 @@ These are named `GeoIP-Anonymous-Plus-Blocks-Plusv4.csv` and
         </td>
       </tr>
     </tbody>
+
   </table>
 </div>
 {{</ rawhtml >}}
@@ -177,14 +176,16 @@ These are named `GeoIP-Anonymous-Plus-Blocks-Plusv4.csv` and
 ### CSV Example Files
 
 {{< csv-example-files >}}
-* [GeoIP-Anonymous-Plus-CSV\_Example.zip](/static/GeoIP-Anonymous-Plus-CSV_Example.zip)
-{{</ csv-example-files >}}
+
+- [GeoIP-Anonymous-Plus-CSV_Example.zip](/static/GeoIP-Anonymous-Plus-CSV_Example.zip)
+  {{</ csv-example-files >}}
 
 ### MMDB Example Files
 
 {{< mmdb-example-files >}}
-* [GeoIP-Anonymous-Plus-Test.mmdb](https://github.com/maxmind/MaxMind-DB/blob/main/test-data/GeoIP-Anonymous-Plus-Test.mmdb)
-{{</ mmdb-example-files >}}
+
+- [GeoIP-Anonymous-Plus-Test.mmdb](https://github.com/maxmind/MaxMind-DB/blob/main/test-data/GeoIP-Anonymous-Plus-Test.mmdb)
+  {{</ mmdb-example-files >}}
 
 ## Database Sizes
 
