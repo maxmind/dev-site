@@ -96,15 +96,13 @@ These are named `GeoLite2-ASN-Blocks-IPv4.csv` and
 
 ## Database Sizes
 
-{{< db-sizes-table dateRange="August to October 2024" >}}
-  {{< db-sizes-row
-    databaseName="GeoLite ASN"
-    csvSizeRange="28.05 MB - 28.38 MB"
-    mmdbSizeRange="8.52 MB - 8.64 MB"
-    ipv4Range="508,000 - 516,000"
-    ipv6Range="137,000 - 140,000"
-  >}}
-{{</ db-sizes-table >}}
+{{< db-sizes-table dateRange="August to October 2024" rows=`
+- databaseName: "GeoLite ASN"
+  csvSizeRange: "28.05 MB - 28.38 MB"
+  mmdbSizeRange: "8.52 MB - 8.64 MB"
+  ipv4Range: "508,000 - 516,000"
+  ipv6Range: "137,000 - 140,000"
+`>}}
 
 ## Database Changes
 

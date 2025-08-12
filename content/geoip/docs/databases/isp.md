@@ -142,15 +142,13 @@ respectively.
 
 ## Database Sizes
 
-{{< db-sizes-table dateRange="August to October 2024">}}
-  {{< db-sizes-row
-    databaseName="GeoIP ISP"
-    csvSizeRange="78.7 MB - 83.9 MB"
-    mmdbSizeRange="14.5 MB - 15 MB"
-    ipv4Range="713,000 - 744,000"
-    ipv6Range="241,000 - 269,000"
-  >}}
-{{</ db-sizes-table>}}
+{{< db-sizes-table dateRange="August to October 2024" rows=`
+- databaseName: "GeoIP ISP"
+  csvSizeRange: "78.7 MB - 83.9 MB"
+  mmdbSizeRange: "14.5 MB - 15 MB"
+  ipv4Range: "713,000 - 744,000"
+  ipv6Range: "241,000 - 269,000"
+`>}}
 
 ## Database Changes
 
