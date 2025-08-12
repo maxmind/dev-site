@@ -89,13 +89,17 @@ These are named `GeoIP2-Connection-Type-Blocks-IPv4.csv` and
 
 ## Database Sizes
 
-{{< db-sizes-table dateRange="August to October 2024" rows=`
-- databaseName: "GeoIP Connection Type"
-  csvSizeRange: "31.96 MB - 34.37 MB"
-  mmdbSizeRange: "9.31 MB - 9.84 MB"
-  ipv4Range: "971,000 - 1,076,000"
-  ipv6Range: "210,000 - 225,000"
-`>}}
+<!-- prettier-ignore-start -->
+
+{{< db-sizes-table dateRange="August to October 2024" >}}
+- databaseName: "GeoIP ISP"
+  csvSizeRange: "1.2 GB - 1.3 GB"
+  mmdbSizeRange: "400 MB - 420 MB"
+  ipv4Range: "10,000,000 - 10,500,000"
+  ipv6Range: "1,200,000 - 1,300,000"
+{{< /db-sizes-table >}}
+
+<!-- prettier-ignore-end -->
 
 ## Database Changes
 

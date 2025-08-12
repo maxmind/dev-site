@@ -131,7 +131,9 @@ blocks files have the same columns as the City database.
 
 ## Database Sizes
 
-{{< db-sizes-table dateRange="August to October 2024" rows=`
+<!-- prettier-ignore-start -->
+
+{{< db-sizes-table dateRange="August to October 2024" >}}
 - databaseName: "GeoIP City"
   csvSizeRange: "583 MB - 637 MB"
   mmdbSizeRange: "108 MB - 113 MB"
@@ -155,7 +157,9 @@ blocks files have the same columns as the City database.
   mmdbSizeRange: "6.61 MB - 7.57 MB"
   ipv4Range: "478,000 - 496,000"
   ipv6Range: "297,000 - 476,000"
-`>}}
+{{< /db-sizes-table >}}
+
+<!-- prettier-ignore-end -->
 
 ## Database Changes
 
