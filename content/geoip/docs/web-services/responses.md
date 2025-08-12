@@ -209,6 +209,8 @@ address.
 }
 ```
 
+<!-- prettier-ignore-start -->
+
 {{< schema-table key="city" >}}
   {{< geoip-schema-row key="confidence" valueType="integer" valueTypeNote="min: 0, max: 100" insights="true">}}
   A value from 0-100 representing our confidence that the city is correct.
@@ -795,6 +797,8 @@ address.
   **This field is not present in the GeoLite City web service.**
   {{</ geoip-schema-row >}}
 {{</ schema-table >}}
+
+<!-- prettier-ignore-end -->
 
 ## Miscellaneous Notes
 
