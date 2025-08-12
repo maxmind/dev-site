@@ -3,18 +3,18 @@ draft: false
 title: GeoLite on Snowflake
 ---
 
-MaxMind offers our GeoLite data through the [Snowflake Marketplace](https://app.snowflake.com/marketplace/providers/GZ2FTZ5POF7/MaxMind). If you do not
-have an existing Snowflake account, you will need to create one before
-requesting access to the GeoLite datasets. Once approved, you will be able to
-query GeoLite data within Snowflake.
+MaxMind offers our GeoLite data through the
+[Snowflake Marketplace](https://app.snowflake.com/marketplace/providers/GZ2FTZ5POF7/MaxMind).
+If you do not have an existing Snowflake account, you will need to create one
+before requesting access to the GeoLite datasets. Once approved, you will be
+able to query GeoLite data within Snowflake.
 
 The GeoLite Country and City datasets are updated twice weekly, every Tuesday
 and Friday. The GeoLite ASN dataset is updated daily.
 
 ## IP geolocation accuracy
 
-{{< alert warning >}}
-**IP Geolocation Usage**
+{{< alert warning >}} **IP Geolocation Usage**
 
 IP geolocation is inherently imprecise. Locations are often near the center of
 the population. Any location provided by a GeoIP database should not be used to
@@ -43,6 +43,7 @@ particular dataset you are querying:
 ### ASN data
 
 {{< rawhtml >}}
+
 <div class="table">
 <table>
   <tbody>

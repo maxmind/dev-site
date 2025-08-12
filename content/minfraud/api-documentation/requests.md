@@ -12,9 +12,8 @@ your
 The password is your
 [MaxMind license key](https://www.maxmind.com/en/accounts/current/license-key).
 
-{{< alert warning >}}
-  You must be approved for a trial or purchase credit for use with our web
-  services in order to receive an account ID and license key.
+{{< alert warning >}} You must be approved for a trial or purchase credit for
+use with our web services in order to receive an account ID and license key.
 {{</ alert >}}
 
 We use
@@ -63,16 +62,16 @@ response.
 
 Currently minFraud Score, minFraud Insights, and minFraud Factors use the same
 request document format. The request consists of a JSON object with one or more
-of the fields shown below. Each key in the top-level object maps to an object
-or array as described below. New fields that apply to one or both may be added
-in the future.
+of the fields shown below. Each key in the top-level object maps to an object or
+array as described below. New fields that apply to one or both may be added in
+the future.
 
 String fields are limited to no more than 255 valid Unicode characters unless a
 shorter length is specified; the null and newline characters are forbidden. Of
 course, many fields also have additional constraints that limit the length. For
 example, the `ip_address` field cannot be longer than the longest valid
-representation of an IPv6 address. Unless it must match a specific format, it
-is valid for a string field to be empty.
+representation of an IPv6 address. Unless it must match a specific format, it is
+valid for a string field to be empty.
 
 Boolean fields must be provided as JSON `true` or `false`.
 
@@ -185,9 +184,11 @@ size will be rejected.
 ```
 
 ### Device
+
 {{< anchor-target schema--request--device >}}
 
-`device` is a JSON object that contains information about the device used in the transaction.
+`device` is a JSON object that contains information about the device used in the
+transaction.
 
 ```json
 {

@@ -6,8 +6,8 @@ title: GeoIP and GeoLite City and Country Databases
 Determine the country, subdivisions (regions), city, and postal code associated
 with IPv4 and IPv6 addresses worldwide.
 
-Terms and pricing for the GeoIP City and GeoIP Country databases may be found
-on our product pages:
+Terms and pricing for the GeoIP City and GeoIP Country databases may be found on
+our product pages:
 
 - [GeoIP City](https://www.maxmind.com/en/geoip2-city)
 - [GeoIP Country](https://www.maxmind.com/en/geoip2-country)
@@ -29,6 +29,7 @@ The downloaded .zip file contains a single directory which in turn contains 13
 files:
 
 {{< rawhtml >}}
+
 <div class="table">
   <table>
     <tbody>
@@ -67,6 +68,7 @@ files:
       </tr>
 
     </tbody>
+
   </table>
 </div>
 {{</ rawhtml >}}
@@ -118,16 +120,18 @@ blocks files have the same columns as the City database.
 ### CSV Example Files
 
 {{< csv-example-files >}}
-* [GeoIP2-City-CSV\_Example.zip](/static/GeoIP2-City-CSV_Example.zip)
-* [GeoIP2-Country-CSV\_Example.zip](/static/GeoIP2-Country-CSV_Example.zip)
-{{</ csv-example-files >}}
+
+- [GeoIP2-City-CSV_Example.zip](/static/GeoIP2-City-CSV_Example.zip)
+- [GeoIP2-Country-CSV_Example.zip](/static/GeoIP2-Country-CSV_Example.zip)
+  {{</ csv-example-files >}}
 
 ### MMDB Example Files
 
 {{< mmdb-example-files >}}
-* [GeoIP2-City-Test.mmdb](https://github.com/maxmind/MaxMind-DB/blob/main/test-data/GeoIP2-City-Test.mmdb)
-* [GeoIP2-Country-Test.mmdb](https://github.com/maxmind/MaxMind-DB/blob/main/test-data/GeoIP2-Country-Test.mmdb)
-{{</ mmdb-example-files >}}
+
+- [GeoIP2-City-Test.mmdb](https://github.com/maxmind/MaxMind-DB/blob/main/test-data/GeoIP2-City-Test.mmdb)
+- [GeoIP2-Country-Test.mmdb](https://github.com/maxmind/MaxMind-DB/blob/main/test-data/GeoIP2-Country-Test.mmdb)
+  {{</ mmdb-example-files >}}
 
 ## Database Sizes
 
