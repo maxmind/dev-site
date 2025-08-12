@@ -199,6 +199,8 @@ size will be rejected.
 }
 ```
 
+<!-- prettier-ignore-start -->
+
 {{< schema-table key="device" >}}
   {{< minfraud-schema-row key="ip_address" type="request" valueType="string" valueTypeNote="format: IPv4 or IPv6" >}}
   The IP address associated with the device used by the customer in the transaction. The IP address must be in IPv4 or IPv6 presentation format, i.e., dotted-quad notation or the IPv6 hexadecimal-colon notation.
@@ -915,3 +917,5 @@ see:
   {{</minfraud-schema-row>}}
 
 {{</ schema-table >}}
+
+<!-- prettier-ignore-end -->
