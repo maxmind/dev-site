@@ -19,6 +19,7 @@ and
 in GeoIP products and services on our knowledge base.
 
 {{< rawhtml >}}
+
 <div class="table">
   <table>
     <thead>
@@ -154,6 +155,7 @@ below), with a few minor modifications. It is recommended that you get started
 by [reading about GeoLite](/geoip/geolite2-free-geolocation-data).
 
 {{< rawhtml >}}
+
 <div class="table">
   <table>
     <thead>

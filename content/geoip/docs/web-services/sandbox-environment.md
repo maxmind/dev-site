@@ -31,12 +31,10 @@ authenticate your requests.
 
 ## Test Data for the GeoIP Sandbox
 
-{{< alert info >}}
-The Sandbox will return geolocation and IP intelligence data, but this data is
-not accurate and should not be used to evaluate the efficacy of the minFraud
-scoring engine, or for geolocation or IP intelligence. It is designed for
-testing purposes only.
-{{</ alert >}}
+{{< alert info >}} The Sandbox will return geolocation and IP intelligence data,
+but this data is not accurate and should not be used to evaluate the efficacy of
+the minFraud scoring engine, or for geolocation or IP intelligence. It is
+designed for testing purposes only. {{</ alert >}}
 
 There are a limited number of IP addresses in the test database for the GeoIP
 web services on the Sandbox. The Sandbox versions of the GeoIP web services use

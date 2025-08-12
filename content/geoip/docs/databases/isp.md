@@ -30,6 +30,7 @@ These are named `GeoIP2-ISP-Blocks-IPv4.csv` and `GeoIP2-ISP-Blocks-IPv6.csv`
 respectively.
 
 {{< rawhtml >}}
+
 <div class="table">
 <table>
   <tbody>
@@ -131,14 +132,16 @@ respectively.
 ### CSV Example Files
 
 {{< csv-example-files >}}
-* [GeoIP2-ISP-CSV\_Example.zip](/static/GeoIP2-ISP-CSV_Example.zip)
-{{</ csv-example-files >}}
+
+- [GeoIP2-ISP-CSV_Example.zip](/static/GeoIP2-ISP-CSV_Example.zip)
+  {{</ csv-example-files >}}
 
 ### MMDB Example Files
 
 {{< mmdb-example-files >}}
-* [GeoIP2-ISP-Test.mmdb](https://github.com/maxmind/MaxMind-DB/blob/main/test-data/GeoIP2-ISP-Test.mmdb)
-{{</ mmdb-example-files >}}
+
+- [GeoIP2-ISP-Test.mmdb](https://github.com/maxmind/MaxMind-DB/blob/main/test-data/GeoIP2-ISP-Test.mmdb)
+  {{</ mmdb-example-files >}}
 
 ## Database Sizes
 

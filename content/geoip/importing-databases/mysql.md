@@ -16,8 +16,8 @@ querying the data in the following sections below:
 
 {{</ alert >}}
 
-This guide will show you how to import GeoIP or GeoLite databases into MySQL
-so that they can be easily queried and manipulated on your server.
+This guide will show you how to import GeoIP or GeoLite databases into MySQL so
+that they can be easily queried and manipulated on your server.
 
 Importing a CSV database consists of downloading the database, extracting it,
 creating tables to hold the data, and indexing those tables for faster querying.

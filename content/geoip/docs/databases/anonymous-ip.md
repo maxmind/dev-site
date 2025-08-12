@@ -31,6 +31,7 @@ These are named `GeoIP2-Anonymous-IP-Blocks-IPv4.csv` and
 `GeoIP2-Anonymous-IP-Blocks-IPv6.csv` respectively.
 
 {{< rawhtml >}}
+
 <div class="table">
   <table>
     <tbody>
@@ -119,6 +120,7 @@ These are named `GeoIP2-Anonymous-IP-Blocks-IPv4.csv` and
       </tr>
 
     </tbody>
+
   </table>
 </div>
 {{</ rawhtml >}}
@@ -134,14 +136,16 @@ These are named `GeoIP2-Anonymous-IP-Blocks-IPv4.csv` and
 ### CSV Example Files
 
 {{< csv-example-files >}}
-* [GeoIP2-Anonymous-IP-CSV\_Example.zip](/static/GeoIP2-Anonymous-IP-CSV_Example.zip)
-{{</ csv-example-files >}}
+
+- [GeoIP2-Anonymous-IP-CSV_Example.zip](/static/GeoIP2-Anonymous-IP-CSV_Example.zip)
+  {{</ csv-example-files >}}
 
 ### MMDB Example Files
 
 {{< mmdb-example-files >}}
-* [GeoIP2-Anonymous-IP-Test.mmdb](https://github.com/maxmind/MaxMind-DB/blob/main/test-data/GeoIP2-Anonymous-IP-Test.mmdb)
-{{</ mmdb-example-files >}}
+
+- [GeoIP2-Anonymous-IP-Test.mmdb](https://github.com/maxmind/MaxMind-DB/blob/main/test-data/GeoIP2-Anonymous-IP-Test.mmdb)
+  {{</ mmdb-example-files >}}
 
 ## Database Sizes
 
