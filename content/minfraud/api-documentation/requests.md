@@ -199,6 +199,8 @@ size will be rejected.
 }
 ```
 
+<!-- prettier-ignore-start -->
+
 {{< schema-table key="device" >}}
 - key: ip_address
   type: request
@@ -1040,3 +1042,5 @@ see:
   description: |
     A custom key of your choice with a string value. The null character is not allowed.
 {{</ schema-table >}}
+
+<!-- prettier-ignore-end -->
