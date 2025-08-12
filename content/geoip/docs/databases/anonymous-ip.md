@@ -145,13 +145,17 @@ These are named `GeoIP2-Anonymous-IP-Blocks-IPv4.csv` and
 
 ## Database Sizes
 
-{{< db-sizes-table dateRange="August to October 2024" rows=`
+<!-- prettier-ignore-start -->
+
+{{< db-sizes-table dateRange="August to October 2024" >}}
 - databaseName: "GeoIP Anonymous IP"
   csvSizeRange: "4.31 MB - 4.75 MB"
   mmdbSizeRange: "2.69 MB - 2.87 MB"
   ipv4Range: "149,000 - 161,000"
   ipv6Range: "23,000 - 28,000"
-`>}}
+{{< /db-sizes-table >}}
+
+<!-- prettier-ignore-end -->
 
 ## Database Changes
 
