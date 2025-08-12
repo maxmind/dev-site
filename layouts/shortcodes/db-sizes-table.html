@@ -22,7 +22,7 @@
       </tr>
     </thead>
     <tbody>
-      {{ $rows := .Get "rows" | transform.Unmarshal }}
+      {{ $rows := .Inner | unmarshal }}
       {{ range $rows }}
         <tr>
           <td>{{ .databaseName }}</td>
