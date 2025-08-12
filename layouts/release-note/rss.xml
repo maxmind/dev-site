@@ -49,7 +49,7 @@
       <link>{{ .link }}</link>
       <pubDate>{{ .date | time.Format "Mon, 02 Jan 2006 15:04:05 -0700" | safeHTML }}</pubDate>
       <guid>{{ .link }}</guid>
-      <content:encoded>{{ .content | transform.XMLEscape | safeHTML }}</content:encoded>
+      <description>{{ printf "<![CDATA[%s]]>" (.content | safeHTML) | safeHTML }}</description>
     </item>
     {{- end }}
   </channel>
