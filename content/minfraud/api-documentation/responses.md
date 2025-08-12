@@ -201,6 +201,8 @@ For full examples of response bodies, select one of the following:
 }
 ```
 
+<!-- prettier-ignore-start -->
+
 {{< schema-table key="" >}}
 
   {{< minfraud-schema-row key="id" type="response" valueType="string" valueTypeNote="format: UUID" score="true" insights="true" factors="true" >}}
@@ -281,6 +283,8 @@ For full examples of response bodies, select one of the following:
   {{</minfraud-schema-row>}}
 
 {{</ schema-table >}}
+
+<!-- prettier-ignore-end -->
 
 ### IP Address
 {{< anchor-target schema--response--ip-address >}}
@@ -444,6 +448,8 @@ See the [GeoIP Insights response body](/geoip/docs/web-services/responses/#geoip
 }
 ```
 
+<!-- prettier-ignore-start -->
+
 {{< schema-table key="ip_address" >}}
 
   {{< minfraud-schema-row key="risk" type="response" valueType="decimal" valueTypeNote="min: 0.01, max: 99" score="true" insights="true" factors="true" >}}
@@ -467,6 +473,8 @@ See the [GeoIP Insights response body](/geoip/docs/web-services/responses/#geoip
   {{</minfraud-schema-row>}}
 
 {{</ schema-table >}}
+
+<!-- prettier-ignore-end -->
 
 ### IP Address > Country
 {{< anchor-target schema--response--ip-address--country >}}
@@ -513,6 +521,9 @@ This object contains city-level geolocation data associated with the IP address 
   "time_zone": "America/Los_Angeles"
 }
 ```
+
+<!-- prettier-ignore-start -->
+
 {{< schema-table key="ip_address--location" >}}
 
   {{< minfraud-schema-row key="local_time" type="response" valueType="string" valueTypeNote="max length: 255" insights="true" factors="true" >}}
@@ -520,6 +531,8 @@ This object contains city-level geolocation data associated with the IP address 
   {{</minfraud-schema-row>}}
 
 {{</ schema-table >}}
+
+<!-- prettier-ignore-end -->
 
 ### IP Address > Risk Reasons
 {{< anchor-target schema--response--ip-address--risk-reasons >}}
@@ -538,6 +551,8 @@ This array contains IP Address Risk Reason objects identifying the reasons why t
   }
 ]
 ```
+
+<!-- prettier-ignore-start -->
 
 {{< schema-table key="ip_address--risk_reasons" >}}
 
@@ -565,6 +580,8 @@ This array contains IP Address Risk Reason objects identifying the reasons why t
 
 {{</ schema-table >}}
 
+<!-- prettier-ignore-end -->
+
 ### Credit Card
 {{< anchor-target schema--response--credit-card >}}
 
@@ -586,6 +603,9 @@ This object contains minFraud information related to the credit card. If an issu
   "type": "credit"
 }
 ```
+
+<!-- prettier-ignore-start -->
+
 {{< schema-table key="credit_card" >}}
 
   {{< minfraud-schema-row key="issuer" type="response" valueType="object"  insights="true" factors="true" >}}
@@ -636,6 +656,8 @@ This object contains minFraud information related to the credit card. If an issu
 
 {{</ schema-table >}}
 
+<!-- prettier-ignore-end -->
+
 ### Credit Card > Issuer
 {{< anchor-target schema--response--credit-card--issuer >}}
 
@@ -648,6 +670,9 @@ This is a sub-object of `credit_card` that contains information related to the i
   "phone_number": "800-732-9194"
 }
 ```
+
+<!-- prettier-ignore-start -->
+
 {{< schema-table key="credit_card--issuer" >}}
 
   {{< minfraud-schema-row key="name" type="response" valueType="string" valueTypeNote="max length: 255" insights="true" factors="true" >}}
@@ -670,6 +695,8 @@ This is a sub-object of `credit_card` that contains information related to the i
 
 {{</ schema-table >}}
 
+<!-- prettier-ignore-end -->
+
 ### Device
 {{< anchor-target schema--response--device >}}
 
@@ -682,6 +709,9 @@ This object contains information about the device that MaxMind believes is assoc
   "local_time": "2018-01-02T10:40:11-08:00"
 }
 ```
+
+<!-- prettier-ignore-start -->
+
 {{< schema-table key="device" >}}
 
   {{< minfraud-schema-row key="confidence" type="response" valueType="decimal" valueTypeNote="min: 0.01, max: 99" insights="true" factors="true" >}}
@@ -708,6 +738,8 @@ This object contains information about the device that MaxMind believes is assoc
 
 {{</ schema-table >}}
 
+<!-- prettier-ignore-end -->
+
 ### Email
 {{< anchor-target schema--response--email >}}
 
@@ -722,6 +754,9 @@ This object contains information about the device that MaxMind believes is assoc
   "is_high_risk": true
 }
 ```
+
+<!-- prettier-ignore-start -->
+
 {{< schema-table key="email" >}}
 
   {{< minfraud-schema-row key="domain" type="response" valueType="object"  insights="true" factors="true" >}}
@@ -773,6 +808,8 @@ This is a sub-object of `email` that contains information related to the domain.
 
 {{</ schema-table >}}
 
+<!-- prettier-ignore-end -->
+
 ### Shipping Address
 {{< anchor-target schema--response--shipping-address >}}
 
@@ -787,6 +824,9 @@ This is a sub-object of `email` that contains information related to the domain.
   "longitude": -122.313
 }
 ```
+
+<!-- prettier-ignore-start -->
+
 {{< schema-table key="shipping_address" >}}
 
   {{< minfraud-schema-row key="is_high_risk" type="response" valueType="boolean"  insights="true" factors="true" >}}
@@ -835,6 +875,8 @@ This is a sub-object of `email` that contains information related to the domain.
 
 {{</ schema-table >}}
 
+<!-- prettier-ignore-end -->
+
 ### Shipping Phone
 {{< anchor-target schema--response--shipping-phone >}}
 
@@ -847,6 +889,9 @@ This is a sub-object of `email` that contains information related to the domain.
   "number_type": "mobile"
 }
 ```
+
+<!-- prettier-ignore-start -->
+
 {{< schema-table key="shipping_phone" >}}
 
   {{< minfraud-schema-row key="country" type="response" valueType="string"  insights="true" factors="true" >}}
@@ -871,6 +916,8 @@ This is a sub-object of `email` that contains information related to the domain.
 
 {{</ schema-table >}}
 
+<!-- prettier-ignore-end -->
+
 ### Billing Address
 {{< anchor-target schema--response--billing-address >}}
 
@@ -883,6 +930,9 @@ This is a sub-object of `email` that contains information related to the domain.
   "longitude": -122.421
 }
 ```
+
+<!-- prettier-ignore-start -->
+
 {{< schema-table key="billing_address" >}}
 
   {{< minfraud-schema-row key="is_postal_in_city" type="response" valueType="boolean"  insights="true" factors="true" >}}
@@ -919,6 +969,8 @@ This is a sub-object of `email` that contains information related to the domain.
 
 {{</ schema-table >}}
 
+<!-- prettier-ignore-end -->
+
 ### Billing Phone
 {{< anchor-target schema--response--billing-phone >}}
 
@@ -931,6 +983,8 @@ This is a sub-object of `email` that contains information related to the domain.
   "number_type": "fixed"
 }
 ```
+
+<!-- prettier-ignore-start -->
 
 {{< schema-table key="billing_phone" >}}
 
@@ -956,6 +1010,8 @@ This is a sub-object of `email` that contains information related to the domain.
 
 {{</ schema-table >}}
 
+<!-- prettier-ignore-end -->
+
 ### Disposition
 {{< anchor-target schema--response--disposition >}}
 
@@ -970,6 +1026,9 @@ This object contains information about how a request was handled by the custom r
   "rule_label": "my_custom_rule"
 }
 ```
+
+<!-- prettier-ignore-start -->
+
 {{< schema-table key="disposition" >}}
 
   {{< minfraud-schema-row key="action" type="response" valueType="string" valueTypeNote="format: enum" score="true" insights="true" factors="true" >}}
@@ -997,6 +1056,8 @@ This object contains information about how a request was handled by the custom r
   {{</minfraud-schema-row>}}
 
 {{</ schema-table >}}
+
+<!-- prettier-ignore-end -->
 
 ### Risk Score Reasons
 {{< anchor-target schema--response--risk-score-reasons >}}
@@ -1051,6 +1112,8 @@ will not be present in the response.
 ]
 ```
 
+<!-- prettier-ignore-start -->
+
 {{< schema-table key="risk_score_reason" >}}
   {{< minfraud-schema-row key="multiplier" type="response" valueType="Decimal" valueTypeNote="min: 0.01, max: 100" factors="true" >}}
   The factor by which the risk score is increased (if the value is greater than 1) or decreased (if the value is less than 1) for given risk reason(s). Multipliers greater than 1.5 and less than 0.66 are considered significant and lead to risk reason(s) being present.
@@ -1079,6 +1142,8 @@ will not be present in the response.
   {{</minfraud-schema-row>}}
 {{</ schema-table >}}
 
+<!-- prettier-ignore-end -->
+
 ### Warnings
 {{< anchor-target schema--response--warnings >}}
 
@@ -1093,6 +1158,8 @@ This array contains warning objects detailing issues with the request that was s
   }
 ]
 ```
+
+<!-- prettier-ignore-start -->
 
 {{< schema-table key="warnings" >}}
 
@@ -1130,6 +1197,8 @@ This array contains warning objects detailing issues with the request that was s
   {{</minfraud-schema-row>}}
 
 {{</ schema-table >}}
+
+<!-- prettier-ignore-end -->
 
 ## Example Response Bodies
 
