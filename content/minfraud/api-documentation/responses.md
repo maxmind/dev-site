@@ -201,6 +201,8 @@ For full examples of response bodies, select one of the following:
 }
 ```
 
+<!-- prettier-ignore-start -->
+
 {{< schema-table key="" >}}
 - key: id
   type: response
@@ -342,6 +344,8 @@ For full examples of response bodies, select one of the following:
     This array contains warning objects detailing issues with the request that was sent, such as invalid or unknown inputs.
     [See more](#warnings).
 {{</ schema-table >}}
+
+<!-- prettier-ignore-end -->
 
 ### IP Address
 {{< anchor-target schema--response--ip-address >}}
@@ -505,6 +509,8 @@ See the [GeoIP Insights response body](/geoip/docs/web-services/responses/#geoip
 }
 ```
 
+<!-- prettier-ignore-start -->
+
 {{< schema-table key="ip_address" >}}
 - key: risk
   type: response
@@ -541,6 +547,8 @@ See the [GeoIP Insights response body](/geoip/docs/web-services/responses/#geoip
 
     [Learn how to use IP risk reasons for risk analysis on our Knowledge Base.](https://support.maxmind.com/hc/en-us/articles/4408418812827-IP-Risk-Reasons)
 {{</ schema-table >}}
+
+<!-- prettier-ignore-end -->
 
 ### IP Address > Country
 {{< anchor-target schema--response--ip-address--country >}}
@@ -587,6 +595,9 @@ This object contains city-level geolocation data associated with the IP address 
   "time_zone": "America/Los_Angeles"
 }
 ```
+
+<!-- prettier-ignore-start -->
+
 {{< schema-table key="ip_address--location" >}}
 - key: local_time
   type: response
@@ -597,6 +608,8 @@ This object contains city-level geolocation data associated with the IP address 
   description: |
     The date and time of the transaction in the time zone associated with the IP address. The value is formatted according to [RFC 3339](https://tools.ietf.org/html/rfc3339). For instance, the local time in Boston might be returned as`2015-04-27T19:17:24-04:00`.
 {{</ schema-table >}}
+
+<!-- prettier-ignore-end -->
 
 ### IP Address > Risk Reasons
 {{< anchor-target schema--response--ip-address--risk-reasons >}}
@@ -615,6 +628,8 @@ This array contains IP Address Risk Reason objects identifying the reasons why t
   }
 ]
 ```
+
+<!-- prettier-ignore-start -->
 
 {{< schema-table key="ip_address--risk_reasons" >}}
 - key: code
@@ -648,6 +663,8 @@ This array contains IP Address Risk Reason objects identifying the reasons why t
     [Learn how to use IP risk reasons for risk analysis on our Knowledge Base.](https://support.maxmind.com/hc/en-us/articles/4408418812827-IP-Risk-Reasons)
 {{</ schema-table >}}
 
+<!-- prettier-ignore-end -->
+
 ### Credit Card
 {{< anchor-target schema--response--credit-card >}}
 
@@ -669,6 +686,9 @@ This object contains minFraud information related to the credit card. If an issu
   "type": "credit"
 }
 ```
+
+<!-- prettier-ignore-start -->
+
 {{< schema-table key="credit_card" >}}
 - key: issuer
   type: response
@@ -745,6 +765,8 @@ This object contains minFraud information related to the credit card. If an issu
     * `debit`
 {{</ schema-table >}}
 
+<!-- prettier-ignore-end -->
+
 ### Credit Card > Issuer
 {{< anchor-target schema--response--credit-card--issuer >}}
 
@@ -757,6 +779,9 @@ This is a sub-object of `credit_card` that contains information related to the i
   "phone_number": "800-732-9194"
 }
 ```
+
+<!-- prettier-ignore-start -->
+
 {{< schema-table key="credit_card--issuer" >}}
 - key: name
   type: response
@@ -792,6 +817,8 @@ This is a sub-object of `credit_card` that contains information related to the i
     This field is `true` if the phone number matches the number provided in the request for the card issuer. It is `false` if the number does not match. The field is not included if either no phone number or issuer ID number (IIN) is provided in the request or if MaxMind does not have a phone number associated with the IIN.
 {{</ schema-table >}}
 
+<!-- prettier-ignore-end -->
+
 ### Device
 {{< anchor-target schema--response--device >}}
 
@@ -804,6 +831,9 @@ This object contains information about the device that MaxMind believes is assoc
   "local_time": "2018-01-02T10:40:11-08:00"
 }
 ```
+
+<!-- prettier-ignore-start -->
+
 {{< schema-table key="device" >}}
 - key: confidence
   type: response
@@ -845,6 +875,8 @@ This object contains information about the device that MaxMind believes is assoc
     [Learn how to use local time data for risk analysis on our Knowledge Base.](https://support.maxmind.com/hc/en-us/articles/4408634894107-Device-Risk-Data#h%5F01FN6V22JSGD7JP7Y3C9YBERHE)
 {{</ schema-table >}}
 
+<!-- prettier-ignore-end -->
+
 ### Email
 {{< anchor-target schema--response--email >}}
 
@@ -859,6 +891,9 @@ This object contains information about the device that MaxMind believes is assoc
   "is_high_risk": true
 }
 ```
+
+<!-- prettier-ignore-start -->
+
 {{< schema-table key="email" >}}
 - key: domain
   type: response
@@ -928,6 +963,8 @@ This is a sub-object of `email` that contains information related to the domain.
     [Learn how to use email first seen data for risk analysis on our Knowledge Base.](https://support.maxmind.com/hc/en-us/articles/4408562891803-Email-Risk-Data#h%5F01FN6V59SHH0J0MRH041K46NE0)
 {{</ schema-table >}}
 
+<!-- prettier-ignore-end -->
+
 ### Shipping Address
 {{< anchor-target schema--response--shipping-address >}}
 
@@ -942,6 +979,9 @@ This is a sub-object of `email` that contains information related to the domain.
   "longitude": -122.313
 }
 ```
+
+<!-- prettier-ignore-start -->
+
 {{< schema-table key="shipping_address" >}}
 - key: is_high_risk
   type: response
@@ -1010,6 +1050,8 @@ This is a sub-object of `email` that contains information related to the domain.
     [Learn how to use the IP location to country check for risk analysis on our Knowledge Base.](https://support.maxmind.com/hc/en-us/articles/4408737039515-Billing-and-Shipping-Address-Risk-Data#h%5F01FN6TVDXWSBQR55FJ0K2KWGJQ)
 {{</ schema-table >}}
 
+<!-- prettier-ignore-end -->
+
 ### Shipping Phone
 {{< anchor-target schema--response--shipping-phone >}}
 
@@ -1022,6 +1064,9 @@ This is a sub-object of `email` that contains information related to the domain.
   "number_type": "mobile"
 }
 ```
+
+<!-- prettier-ignore-start -->
+
 {{< schema-table key="shipping_phone" >}}
 - key: country
   type: response
@@ -1060,6 +1105,8 @@ This is a sub-object of `email` that contains information related to the domain.
     This field is `true` if the phone number's prefix is commonly associated with the shipping postal code. It is `false` if the prefix is not associated with the postal code. This key is only present when the phone number is in the US, the number prefix is in our database, and the postal code and country are provided in the request.
 {{</ schema-table >}}
 
+<!-- prettier-ignore-end -->
+
 ### Billing Address
 {{< anchor-target schema--response--billing-address >}}
 
@@ -1072,6 +1119,9 @@ This is a sub-object of `email` that contains information related to the domain.
   "longitude": -122.421
 }
 ```
+
+<!-- prettier-ignore-start -->
+
 {{< schema-table key="billing_address" >}}
 - key: is_postal_in_city
   type: response
@@ -1122,6 +1172,8 @@ This is a sub-object of `email` that contains information related to the domain.
     [Learn how to use the IP location to country check for risk analysis on our Knowledge Base.](https://support.maxmind.com/hc/en-us/articles/4408737039515-Billing-and-Shipping-Address-Risk-Data#h%5F01FN6TVDXWSBQR55FJ0K2KWGJQ)
 {{</ schema-table >}}
 
+<!-- prettier-ignore-end -->
+
 ### Billing Phone
 {{< anchor-target schema--response--billing-phone >}}
 
@@ -1134,6 +1186,8 @@ This is a sub-object of `email` that contains information related to the domain.
   "number_type": "fixed"
 }
 ```
+
+<!-- prettier-ignore-start -->
 
 {{< schema-table key="billing_phone" >}}
 - key: country
@@ -1173,6 +1227,8 @@ This is a sub-object of `email` that contains information related to the domain.
     This field is `true` if the phone number's prefix is commonly associated with the billing postal code. It is `false` if the prefix is not associated with the postal code. This key is only present when the phone number is in the US, the number prefix is in our database, and the postal code and country are provided in the request.
 {{</ schema-table >}}
 
+<!-- prettier-ignore-end -->
+
 ### Disposition
 {{< anchor-target schema--response--disposition >}}
 
@@ -1187,6 +1243,9 @@ This object contains information about how a request was handled by the custom r
   "rule_label": "my_custom_rule"
 }
 ```
+
+<!-- prettier-ignore-start -->
+
 {{< schema-table key="disposition" >}}
 - key: action
   type: response
@@ -1227,6 +1286,8 @@ This object contains information about how a request was handled by the custom r
   description: |
     The custom rule that was triggered. If you do not have custom rules set up, the triggered custom rule does not have a label, or no custom rule was triggered, the field will not be included in the response.
 {{</ schema-table >}}
+
+<!-- prettier-ignore-end -->
 
 ### Risk Score Reasons
 {{< anchor-target schema--response--risk-score-reasons >}}
@@ -1281,6 +1342,8 @@ will not be present in the response.
 ]
 ```
 
+<!-- prettier-ignore-start -->
+
 {{< schema-table key="risk_score_reason" >}}
 - key: multiplier
   type: response
@@ -1320,6 +1383,8 @@ will not be present in the response.
     | ORG\_DISTANCE\_RISK                        | The risk of the ISP combined with the distance between the billing address and IP address location raised the overall risk score                                                |
 {{</ schema-table >}}
 
+<!-- prettier-ignore-end -->
+
 ### Warnings
 {{< anchor-target schema--response--warnings >}}
 
@@ -1334,6 +1399,8 @@ This array contains warning objects detailing issues with the request that was s
   }
 ]
 ```
+
+<!-- prettier-ignore-start -->
 
 {{< schema-table key="warnings" >}}
 - key: code
@@ -1383,6 +1450,8 @@ This array contains warning objects detailing issues with the request that was s
   description: |
     A [JSON Pointer](https://tools.ietf.org/html/rfc6901) to the input field that the warning is associated with. For instance, if the warning was about the billing city, this would be `/billing/city`. If it was for the price in the second shopping cart item, it would be `/shopping_cart/1/price`
 {{</ schema-table >}}
+
+<!-- prettier-ignore-end -->
 
 ## Example Response Bodies
 
