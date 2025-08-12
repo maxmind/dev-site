@@ -9,8 +9,8 @@ type: "has-toc"
 The `Content-Type` for a successful response varies based on the service as
 outlined below:
 
-| Service          | Content-Type                                                            |
-| ---------------- | ----------------------------------------------------------------------- |
+| Service         | Content-Type                                                            |
+| --------------- | ----------------------------------------------------------------------- |
 | GeoIP Country   | `application/vnd.maxmind.com-country+json; charset=UTF-8; version=2.1`  |
 | GeoIP City      | `application/vnd.maxmind.com-city+json; charset=UTF-8; version=2.1`     |
 | GeoIP Insights  | `application/vnd.maxmind.com-insights+json; charset=UTF-8; version=2.1` |
@@ -42,6 +42,7 @@ In addition to the errors documented below, client code should also be prepared
 to handle any valid HTTP `4xx` or `5xx` status code.
 
 {{< rawhtml >}}
+
 <div class="table">
   <table>
     <thead>
@@ -156,7 +157,6 @@ All services return data as a JSON document. The document that is returned
 always consists of an object (aka map or hash). Each key in the object in turn
 maps to an object or an array of objects.
 
-
 ```json
 {
   "city":                 { ... },
@@ -172,25 +172,25 @@ maps to an object or an array of objects.
 }
 ```
 
-The exact set of top-level keys varies based on the particular GeoIP web
-service you are using. If a key maps to an undefined or empty value, it is not
-included in the JSON object. This applies both to top-level keys and the objects
-they map to.
+The exact set of top-level keys varies based on the particular GeoIP web service
+you are using. If a key maps to an undefined or empty value, it is not included
+in the JSON object. This applies both to top-level keys and the objects they map
+to.
 
 The data returned in the document will be in UTF-8 encoding.
 
 For full examples of response bodies, select one of the following:
 
-* [GeoIP Country Body Example](#geoip-country-body-example)
-* [GeoIP City Body Example](#geoip-city-body-example)
-* [GeoIP Insights Body Example](#geoip-insights-body-example)
-
+- [GeoIP Country Body Example](#geoip-country-body-example)
+- [GeoIP City Body Example](#geoip-city-body-example)
+- [GeoIP Insights Body Example](#geoip-insights-body-example)
 
 ### City
+
 {{< anchor-target schema--response--city >}}
 
-`city` is a JSON object that contains details about the city associated with the IP
-address.
+`city` is a JSON object that contains details about the city associated with the
+IP address.
 
 ```json
 {
@@ -983,6 +983,7 @@ and script.
 Currently, this web service may return the following locale codes:
 
 {{< rawhtml >}}
+
 <div class="table">
   <table>
     <thead>
@@ -1048,9 +1049,8 @@ not have any name data at all for a given object.
 
 ### Returned Values as Database, Map, Dict, or Hash Keys
 
-{{< alert warning >}}
-  We strongly discourage you from using a value from any `names` field as a key
-  in a database or map/dict/hash data structure.
+{{< alert warning >}} We strongly discourage you from using a value from any
+`names` field as a key in a database or map/dict/hash data structure.
 {{</ alert >}}
 
 These names may change between releases. Instead we recommend using one of the

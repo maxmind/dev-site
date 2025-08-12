@@ -31,9 +31,8 @@ Note that, in order to be effective, the Device Tracking Add-on must, at a
 minimum, be included on the page where the IP address is captured for a minFraud
 query.
 
-{{< alert warning >}}
-If you anticipate volume greater than 100 page views per second, please
-[contact us](https://support.maxmind.com/hc/en-us/requests/new).
+{{< alert warning >}} If you anticipate volume greater than 100 page views per
+second, please [contact us](https://support.maxmind.com/hc/en-us/requests/new).
 {{</ alert >}}
 
 ## Implementation
@@ -66,17 +65,19 @@ Replace `INSERT_MAXMIND_ACCOUNT_ID_HERE` with your
 The device tracking add-on uses cookies and local storage as methods of
 distinguishing unique devices across visits and domains.
 
-The add-on sets two types of cookies, both named `__mmapiwsid` with two-year expiration:
+The add-on sets two types of cookies, both named `__mmapiwsid` with two-year
+expiration:
 
-1. **First-party cookie**: Set for the effective second-level domain of your site;
-   for instance, on `www.maxmind.com`, the cookie would be set for `maxmind.com`.
+1. **First-party cookie**: Set for the effective second-level domain of your
+   site; for instance, on `www.maxmind.com`, the cookie would be set for
+   `maxmind.com`.
 
-2. **Third-party cookie**: Set by MaxMind's servers to enable cross-domain device
-   tracking. This allows the same device to be identified when it visits different
-   customer websites using our device tracking.
+2. **Third-party cookie**: Set by MaxMind's servers to enable cross-domain
+   device tracking. This allows the same device to be identified when it visits
+   different customer websites using our device tracking.
 
-The local storage key is also named `__mmapiwsid` and provides an additional method of
-device identification.
+The local storage key is also named `__mmapiwsid` and provides an additional
+method of device identification.
 
 MaxMind may use other browser storage techniques in the future to enhance the
 performance of the device tracking add-on.

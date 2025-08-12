@@ -35,8 +35,8 @@ able to
 In order to use this service, the following JavaScript must be included in your
 page.
 
-{{< alert warning >}}
-  **Do not download this JavaScript file and serve it from your server(s)!**
+{{< alert warning >}} **Do not download this JavaScript file and serve it from
+your server(s)!**
 
 The JavaScript file must be served from MaxMind servers, otherwise GeoIP
 requests will fail.
@@ -51,8 +51,8 @@ requests will fail.
 
 The JavaScript client provides 3 public methods:
 
-| Option                                         | Description                                                                                                             |
-| ---------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------- |
+| Option                                         | Description                                                                                                            |
+| ---------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------- |
 | `geoip2.country(onSuccess, onError, options)`  | Calls the "GeoIP Country" endpoint using the routable IP address associated with the machine on which it is running.   |
 | `geoip2.city(onSuccess, onError, options)`     | Calls the "GeoIP City Plus" endpoint using the routable IP address associated with the machine on which it is running. |
 | `geoip2.insights(onSuccess, onError, options)` | Calls the "GeoIP Insights" endpoint using the routable IP address associated with the machine on which it is running.  |
@@ -187,18 +187,18 @@ All errors are passed in a JavaScript object as the first parameter to the
 a machine-readable error code that will not change. `error` is a human-readable
 description of the error.
 
-| Code                         | HTTP Status          | Description                                                                                             |
-| ---------------------------- | -------------------- | ------------------------------------------------------------------------------------------------------- |
-| `IP_ADDRESS_INVALID`           | 400 Bad Request      | You have not supplied a valid IPv4 or IPv6 address.                                                     |
-| `IP_ADDRESS_REQUIRED`          | 400 Bad Request      | You have not supplied an IP address, which is a required field.                                         |
-| `IP_ADDRESS_RESERVED`          | 400 Bad Request      | You have supplied an IP address which belongs to a reserved or private range.                           |
-| `IP_ADDRESS_NOT_FOUND`         | 404 Not Found        | The supplied IP address is not in the database.                                                         |
-| `DOMAIN_REGISTRATION_REQUIRED` | 401 Unauthorized     | The domain of your site is not registered.                                                              |
-| `QUERY_FORBIDDEN`              | 401 Unauthorized     | You tried to access a service or feature that is not covered by your service plan.                      |
-| `OUT_OF_QUERIES`               | 402 Payment Required | The license key you have provided is out of queries. Please purchase more queries to use this service.  |
+| Code                           | HTTP Status          | Description                                                                                                                                               |
+| ------------------------------ | -------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `IP_ADDRESS_INVALID`           | 400 Bad Request      | You have not supplied a valid IPv4 or IPv6 address.                                                                                                       |
+| `IP_ADDRESS_REQUIRED`          | 400 Bad Request      | You have not supplied an IP address, which is a required field.                                                                                           |
+| `IP_ADDRESS_RESERVED`          | 400 Bad Request      | You have supplied an IP address which belongs to a reserved or private range.                                                                             |
+| `IP_ADDRESS_NOT_FOUND`         | 404 Not Found        | The supplied IP address is not in the database.                                                                                                           |
+| `DOMAIN_REGISTRATION_REQUIRED` | 401 Unauthorized     | The domain of your site is not registered.                                                                                                                |
+| `QUERY_FORBIDDEN`              | 401 Unauthorized     | You tried to access a service or feature that is not covered by your service plan.                                                                        |
+| `OUT_OF_QUERIES`               | 402 Payment Required | The license key you have provided is out of queries. Please purchase more queries to use this service.                                                    |
 | `PERMISSION_REQUIRED`          | 403 Forbidden        | You do not have permission to use the service. Please [contact our support team](https://support.maxmind.com/hc/en-us/requests/new) for more information. |
-| `HTTP_TIMEOUT`                 | (none)               | The request to the GeoIP web service timed out.                                                        |
-| `HTTP_ERROR`                   | (none)               | There was an error making the request to the GeoIP web service.                                        |
+| `HTTP_TIMEOUT`                 | (none)               | The request to the GeoIP web service timed out.                                                                                                           |
+| `HTTP_ERROR`                   | (none)               | There was an error making the request to the GeoIP web service.                                                                                           |
 
 ### Versioning
 
