@@ -1,6 +1,7 @@
 ---
 draft: false
-title: Geolocate an IP address using Web Services with the client-side JavaScript
+title:
+  Geolocate an IP address using Web Services with the client-side JavaScript
 ---
 
 Our GeoIP JavaScript client allows you to use GeoIP web services client-side
@@ -44,7 +45,10 @@ requests will fail.
 {{</ alert >}}
 
 ```html
-<script src="https://geoip-js.com/js/apis/geoip2/v2.1/geoip2.js" type="text/javascript"></script>
+<script
+  src="https://geoip-js.com/js/apis/geoip2/v2.1/geoip2.js"
+  type="text/javascript"
+></script>
 ```
 
 ### 3. Call an API method and provide callbacks
@@ -94,12 +98,12 @@ files: page.html and demo.js.
   </head>
 
   <body>
-    <p>
-       Where am I?
-    </p>
+    <p>Where am I?</p>
 
     <p>
-      You are in <span id="city"></span>.
+      You are in
+      <span id="city"></span>
+      .
     </p>
   </body>
 </html>
@@ -107,36 +111,36 @@ files: page.html and demo.js.
 
 ```js
 // demo.js
-var fillInPage = (function() {
-  var updateCityText = function(geoipResponse) {
-
+var fillInPage = (function () {
+  var updateCityText = function (geoipResponse) {
     /*
      * It's possible that we won't have any names for this city.
      * For language codes with a special character such as pt-BR,
      * replace names.en with names['pt-BR'].
-    */
+     */
     var cityName = geoipResponse.city.names.en || 'your city';
 
-    document.getElementById('city').innerHTML = cityName
+    document.getElementById('city').innerHTML = cityName;
   };
 
-  var onSuccess = function(geoipResponse) {
+  var onSuccess = function (geoipResponse) {
     updateCityText(geoipResponse);
   };
 
   // If we get an error, we will display an error message
-  var onError = function(error) {
-    document.getElementById('city').innerHTML = 'an error!  Please try again..'
+  var onError = function (error) {
+    document.getElementById('city').innerHTML = 'an error!  Please try again..';
   };
 
-  return function() {
+  return function () {
     if (typeof geoip2 !== 'undefined') {
       geoip2.city(onSuccess, onError);
     } else {
-      document.getElementById('city').innerHTML = 'a browser that blocks GeoIP requests'
+      document.getElementById('city').innerHTML =
+        'a browser that blocks GeoIP requests';
     }
   };
-}());
+})();
 
 fillInPage();
 ```

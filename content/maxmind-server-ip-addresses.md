@@ -3,8 +3,8 @@ draft: false
 layout: mm-ips
 title: MaxMind Server IP Addresses
 outputs:
-- rss
-- html
+  - rss
+  - html
 _comment: json feed is handled by module mounts.  see hugo.toml
 ---
 

@@ -126,7 +126,7 @@ to handle any valid HTTP 4xx or 5xx status code.
 
 ```json
 {
-    "code": "ACCOUNT_ID_REQUIRED",
-    "error": "You have not supplied a MaxMind account ID in the Authorization header"
+  "code": "ACCOUNT_ID_REQUIRED",
+  "error": "You have not supplied a MaxMind account ID in the Authorization header"
 }
 ```
