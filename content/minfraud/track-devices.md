@@ -42,10 +42,10 @@ Replace `INSERT_MAXMIND_ACCOUNT_ID_HERE` with your
 
 ```html
 <script>
-  (function() {
-    var mmapiws = window.__mmapiws = window.__mmapiws || {};
-    mmapiws.accountId = "INSERT_MAXMIND_ACCOUNT_ID_HERE";
-    var loadDeviceJs = function() {
+  (function () {
+    var mmapiws = (window.__mmapiws = window.__mmapiws || {});
+    mmapiws.accountId = 'INSERT_MAXMIND_ACCOUNT_ID_HERE';
+    var loadDeviceJs = function () {
       var element = document.createElement('script');
       element.async = true;
       element.src = 'https://device.maxmind.com/js/device.js';
