@@ -259,6 +259,8 @@ transaction.
 }
 ```
 
+<!-- prettier-ignore-start -->
+
 {{< schema-table key="event" >}}
 - key: transaction_id
   type: request
@@ -307,6 +309,8 @@ transaction.
     [Learn more about the /event/type input on our Knowledge Base.](https://support.maxmind.com/hc/en-us/articles/5452006111003-Event-and-Account-Inputs#h%5F01G0Z3WMWJW3QMHN8AGWK054E6)
 {{</ schema-table >}}
 
+<!-- prettier-ignore-end -->
+
 ### Account
 {{< anchor-target schema--request--account >}}
 
@@ -319,6 +323,8 @@ where the event took place
   "username_md5": "570a90bfbf8c7eab5dc5d4e26832d5b1"
 }
 ```
+
+<!-- prettier-ignore-start -->
 
 {{< schema-table key="account" >}}
 - key: user_id
@@ -337,6 +343,8 @@ where the event took place
     An MD5 hash as a hexadecimal string of the username or login name associated with the account.
 {{</ schema-table >}}
 
+<!-- prettier-ignore-end -->
+
 ### Email
 
 `email` is a JSON object that contains information about the email address of the end-user who initiated the event.
@@ -347,6 +355,8 @@ where the event took place
   "domain": "maxmind.com"
 }
 ```
+
+<!-- prettier-ignore-start -->
 
 {{< schema-table key="email" >}}
 - key: address
@@ -366,6 +376,8 @@ where the event took place
 
     You do not need to pass the email domain input unless you are passing the email address as an MD5 hash. [Learn more about hashed email inputs on our Knowledge Base.](https://support.maxmind.com/hc/en-us/articles/5451485951387#h%5F01G0Z373C3H1QA68TTHVYMXGTT)
 {{</ schema-table >}}
+
+<!-- prettier-ignore-end -->
 
 ### Billing
 {{< anchor-target schema--request--billing >}}
@@ -389,6 +401,8 @@ where the event took place
   "region": "CT"
 }
 ```
+
+<!-- prettier-ignore-start -->
 
 {{< schema-table key="billing" >}}
 - key: first_name
@@ -459,6 +473,8 @@ where the event took place
     The country code for phone number associated with the user's billing address. If you provide this information then you must provide at least one digit.
 {{</ schema-table >}}
 
+<!-- prettier-ignore-end -->
+
 ### Shipping
 {{< anchor-target schema--request--shipping >}}
 
@@ -482,6 +498,8 @@ where the event took place
   "region": "CT"
 }
 ```
+
+<!-- prettier-ignore-start -->
 
 {{< schema-table key="shipping" >}}
 - key: first_name
@@ -563,6 +581,8 @@ where the event took place
     * `standard`
 {{</ schema-table >}}
 
+<!-- prettier-ignore-end -->
+
 ### Payment
 {{< anchor-target schema--request--payment >}}
 
@@ -575,6 +595,8 @@ where the event took place
   "was_authorized": false
 }
 ```
+
+<!-- prettier-ignore-start -->
 
 {{< schema-table key="payment" >}}
 - key: processor
@@ -763,6 +785,8 @@ where the event took place
     The decline code as provided by your payment processor. If the transaction was not declined, do not include this field.
 {{</ schema-table >}}
 
+<!-- prettier-ignore-end -->
+
 ### Credit Card
 {{< anchor-target schema--request--credit-card >}}
 
@@ -781,6 +805,9 @@ where the event took place
   "was_3d_secure_successful": true
 }
 ```
+
+<!-- prettier-ignore-start -->
+
 {{< schema-table key="credit_card" >}}
 - key: issuer_id_number
   type: request
@@ -857,6 +884,8 @@ where the event took place
     [Learn more about the /credit\_card/was\_3d\_secure\_successful input on our Knowledge Base.](https://support.maxmind.com/hc/en-us/articles/5450338695963-Credit-Card-and-Payments-Inputs#h%5F01G0YWK5CMEVG2YMTPQ11346QV)
 {{</ schema-table >}}
 
+<!-- prettier-ignore-end -->
+
 ### Order
 {{< anchor-target schema--request--order >}}
 
@@ -874,6 +903,8 @@ where the event took place
   "subaffiliate_id": "saf42"
 }
 ```
+
+<!-- prettier-ignore-start -->
 
 {{< schema-table key="order" >}}
 - key: amount
@@ -940,6 +971,8 @@ where the event took place
     [Learn more about the /order/has\_gift\_message input on our Knowledge Base.](https://support.maxmind.com/hc/en-us/articles/5452293435675-Order-and-Shopping-Cart-Inputs#h%5F01G0Z517AZEMSN8V3GWTV131S6)
 {{</ schema-table >}}
 
+<!-- prettier-ignore-end -->
+
 ### Shopping Cart
 {{< anchor-target schema--request--shopping-cart >}}
 
@@ -975,6 +1008,8 @@ see:
 ]
 ```
 
+<!-- prettier-ignore-start -->
+
 {{< schema-table key="shopping_cart" >}}
 - key: category
   type: request
@@ -1002,6 +1037,8 @@ see:
     The per-unit price of this item in the shopping cart. This should use the same currency as the order currency.
 {{</ schema-table >}}
 
+<!-- prettier-ignore-end -->
+
 ### Custom Inputs
 {{< anchor-target schema--request--custom-inputs >}}
 
@@ -1017,6 +1054,8 @@ see:
   "another_custom_input_key": false
 }
 ```
+
+<!-- prettier-ignore-start -->
 
 {{< schema-table key="custom_inputs" >}}
 - key: your_custom_BOOLEAN_key
