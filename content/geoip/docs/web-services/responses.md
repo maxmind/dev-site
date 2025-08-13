@@ -240,6 +240,7 @@ IP address.
     [Learn more about localized geolocation names on our Knowledge Base.](https://support.maxmind.com/hc/en-us/articles/4414877149467-IP-Geolocation-Data#h_01FRRGRYTGZB29ERDBZCX3MR8Q)
 {{</ schema-table >}}
 
+<!-- prettier-ignore-end -->
 
 ### Continent
 {{< anchor-target schema--response--continent >}}
@@ -262,6 +263,8 @@ IP address.
   }
 }
 ```
+
+<!-- prettier-ignore-start -->
 
 {{< schema-table key="continent" >}}
 - key: code
@@ -303,6 +306,8 @@ IP address.
     [Learn more about localized geolocation names on our Knowledge Base.](https://support.maxmind.com/hc/en-us/articles/4414877149467-IP-Geolocation-Data#h_01FRRGRYTGZB29ERDBZCX3MR8Q)
 {{</ schema-table >}}
 
+<!-- prettier-ignore-end -->
+
 ### Country
 {{< anchor-target schema--response--country >}}
 
@@ -326,6 +331,8 @@ IP address.
   }
 }
 ```
+
+<!-- prettier-ignore-start -->
 
 {{< schema-table key="country" >}}
 - key: confidence
@@ -378,6 +385,8 @@ IP address.
     [Learn more about localized geolocation names on our Knowledge Base.](https://support.maxmind.com/hc/en-us/articles/4414877149467-IP-Geolocation-Data#h_01FRRGRYTGZB29ERDBZCX3MR8Q)
 {{</ schema-table >}}
 
+<!-- prettier-ignore-end -->
+
 ### Location
 {{< anchor-target schema--response--location >}}
 
@@ -393,6 +402,8 @@ IP address.
   "time_zone": "America/Los_Angeles"
 }
 ```
+
+<!-- prettier-ignore-start -->
 
 {{< schema-table key="location" >}}
 - key: accuracy_radius
@@ -465,6 +476,8 @@ IP address.
     [Learn more about time zone data on our Knowledge Base.](https://support.maxmind.com/hc/en-us/articles/4414877149467-IP-Geolocation-Data#h_01FRRKYHGB5C5Y1G4Y3AW18PYC)
 {{</ schema-table >}}
 
+<!-- prettier-ignore-end -->
+
 ### Postal
 {{< anchor-target schema--response--postal >}}
 
@@ -476,6 +489,8 @@ IP address.
   "confidence": 10
 }
 ```
+
+<!-- prettier-ignore-start -->
 
 {{< schema-table key="postal" >}}
 - key: code
@@ -507,6 +522,8 @@ IP address.
     [Learn more about confidence factors on our Knowledge Base.](https://support.maxmind.com/hc/en-us/articles/4414877149467-IP-Geolocation-Data#h_01FRRHZ767N9MJJ21K9CW04WWQ)
 {{</ schema-table >}}
 
+<!-- prettier-ignore-end -->
+
 ### Registered Country
 {{< anchor-target schema--response--registered-country >}}
 
@@ -531,6 +548,8 @@ IP address.
   }
 }
 ```
+
+<!-- prettier-ignore-start -->
 
 {{< schema-table key="registered_country" >}}
 - key: geoname_id
@@ -574,6 +593,8 @@ IP address.
     [Learn more about localized geolocation names on our Knowledge Base.](https://support.maxmind.com/hc/en-us/articles/4414877149467-IP-Geolocation-Data#h_01FRRGRYTGZB29ERDBZCX3MR8Q)
 {{</ schema-table >}}
 
+<!-- prettier-ignore-end -->
+
 ### Represented Country
 {{< anchor-target schema--response--represented-country >}}
 
@@ -599,6 +620,8 @@ IP address.
   "type": "military"
 }
 ```
+
+<!-- prettier-ignore-start -->
 
 {{< schema-table key="represented_country" >}}
 - key: geoname_id
@@ -652,6 +675,8 @@ IP address.
     [Learn more about localized geolocation names on our Knowledge Base.](https://support.maxmind.com/hc/en-us/articles/4414877149467-IP-Geolocation-Data#h_01FRRGRYTGZB29ERDBZCX3MR8Q)
 {{</ schema-table >}}
 
+<!-- prettier-ignore-end -->
+
 ### Subdivisions
 {{< anchor-target schema--response--subdivisions >}}
 
@@ -675,6 +700,8 @@ IP address.
   }
 ]
 ```
+
+<!-- prettier-ignore-start -->
 
 {{< schema-table key="subdivision" >}}
 - key: confidence
@@ -714,6 +741,8 @@ IP address.
     [Learn more about localized geolocation names on our Knowledge Base.](https://support.maxmind.com/hc/en-us/articles/4414877149467-IP-Geolocation-Data#h_01FRRGRYTGZB29ERDBZCX3MR8Q)
 {{</ schema-table >}}
 
+<!-- prettier-ignore-end -->
+
 ### Traits
 {{< anchor-target schema--response--traits >}}
 
@@ -743,6 +772,8 @@ IP address.
   "user_type": "traveler"
 }
 ```
+
+<!-- prettier-ignore-start -->
 
 {{< schema-table key="traits" >}}
 - key: autonomous_system_number
@@ -947,6 +978,8 @@ IP address.
       [Learn more about the user type on our Knowledge Base.](https://support.maxmind.com/hc/en-us/articles/4408208479131-User-Context-Data#h_01FN9BTGFQVP41YNPDGM454T2T)
 {{</ schema-table >}}
 
+<!-- prettier-ignore-end -->
+
 ### MaxMind
 {{< anchor-target schema--response--maxmind >}}
 
@@ -957,6 +990,8 @@ IP address.
   "queries_remaining": 54321
 }
 ```
+
+<!-- prettier-ignore-start -->
 
 {{< schema-table key="maxmind" >}}
 - key: queries_remaining

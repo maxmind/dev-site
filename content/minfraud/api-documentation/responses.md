@@ -979,6 +979,9 @@ This is a sub-object of `email` that contains information related to the domain.
   "first_seen": "2015-01-20"
 }
 ```
+
+<!-- prettier-ignore-start -->
+
 {{< schema-table key="email--domain" >}}
 - key: first_seen
   type: response

@@ -6,6 +6,8 @@ title: GeoLite Databases and Web Services
 MaxMind offers a free geolocation and ASN data in downloadable database and web
 service formats.
 
+<!-- prettier-ignore-start -->
+
 {{< link-group/container >}}
 - heading: "Sign Up for GeoLite"
   url: "https://www.maxmind.com/en/geolite2/signup"
@@ -14,6 +16,8 @@ service formats.
   url: "https://www.maxmind.com/en/geolite-free-ip-geolocation-data"
   text: "Learn more about what you can do with GeoLite, and view redistribution options."
 {{</ link-group/container >}}
+
+<!-- prettier-ignore-end -->
 
 Find what you need:
 
