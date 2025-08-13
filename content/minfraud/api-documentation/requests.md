@@ -1,7 +1,7 @@
 ---
 draft: false
 title: minFraud API Requests
-type: "has-toc"
+type: 'has-toc'
 ---
 
 ## Authorization and Security
@@ -293,10 +293,11 @@ transaction.
 <!-- prettier-ignore-end -->
 
 ### Account
+
 {{< anchor-target schema--request--account >}}
 
-`account` is a JSON object that contains account information for the end-user on the site
-where the event took place
+`account` is a JSON object that contains account information for the end-user on
+the site where the event took place
 
 ```json
 {
@@ -323,7 +324,8 @@ where the event took place
 
 ### Email
 
-`email` is a JSON object that contains information about the email address of the end-user who initiated the event.
+`email` is a JSON object that contains information about the email address of
+the end-user who initiated the event.
 
 ```json
 {
@@ -351,9 +353,11 @@ where the event took place
 <!-- prettier-ignore-end -->
 
 ### Billing
+
 {{< anchor-target schema--request--billing >}}
 
-`billing` is a JSON object that contains the billing address and contact information provided by the end-user who initiated the event.
+`billing` is a JSON object that contains the billing address and contact
+information provided by the end-user who initiated the event.
 
 [Learn more about the billing address inputs on our Knowledge Base.](https://support.maxmind.com/hc/en-us/articles/5447224594075-Billing-and-Shipping-Inputs#h_01G0YN48RWENDYCKN2J3RQK2S3)
 
@@ -424,9 +428,11 @@ where the event took place
 <!-- prettier-ignore-end -->
 
 ### Shipping
+
 {{< anchor-target schema--request--shipping >}}
 
-`shipping` is a JSON object that contains the shipping address and contact information provided by the end-user who initiated the event.
+`shipping` is a JSON object that contains the shipping address and contact
+information provided by the end-user who initiated the event.
 
 [Learn more about the shipping address inputs on our Knowledge Base.](https://support.maxmind.com/hc/en-us/articles/5447224594075-Billing-and-Shipping-Inputs#h_01G0YN4GGRCC99P2HH0X54RFVA)
 
@@ -507,9 +513,11 @@ where the event took place
 <!-- prettier-ignore-end -->
 
 ### Payment
+
 {{< anchor-target schema--request--payment >}}
 
-`payment` is a JSON object that contains information from and about the payment process that was used for the event.
+`payment` is a JSON object that contains information from and about the payment
+process that was used for the event.
 
 ```json
 {
@@ -705,9 +713,13 @@ where the event took place
 <!-- prettier-ignore-end -->
 
 ### Credit Card
+
 {{< anchor-target schema--request--credit-card >}}
 
-`credit_card` is a JSON object that contains information provided by the end-user and the payment processor about the credit card used for the for the event.
+`credit_card` is a JSON object that contains information provided by the
+end-user and the payment processor about the credit card used for the for the
+event.
+
 ```json
 {
   "avs_result": "Y",
@@ -786,9 +798,11 @@ where the event took place
 <!-- prettier-ignore-end -->
 
 ### Order
+
 {{< anchor-target schema--request--order >}}
 
-`order` is a JSON object that contains information about the order associated with the event.
+`order` is a JSON object that contains information about the order associated
+with the event.
 
 ```json
 {
@@ -860,20 +874,20 @@ where the event took place
 <!-- prettier-ignore-end -->
 
 ### Shopping Cart
+
 {{< anchor-target schema--request--shopping-cart >}}
 
 `shopping_cart` is an array of shopping cart item objects.
 
 Passing hashed values for shopping cart items can increase the privacy of your
 customers' information while continuing to fulfill the needs for fraud
-detection. A suitable hashed value can be produced by using a cryptographic
-hash function and a fixed salt. Using a random salt is not recommended as that
-will result in different hashed values for the same plain value, which would
-make them ineffective for our fraud detection service. For more information,
-see:
+detection. A suitable hashed value can be produced by using a cryptographic hash
+function and a fixed salt. Using a random salt is not recommended as that will
+result in different hashed values for the same plain value, which would make
+them ineffective for our fraud detection service. For more information, see:
 
-* [OWASP Cryptographic Storage Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/Cryptographic_Storage_Cheat_Sheet.html)
-* [NIST FIPS Secure Hash Standard (SHS)](https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.180-4.pdf)
+- [OWASP Cryptographic Storage Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/Cryptographic_Storage_Cheat_Sheet.html)
+- [NIST FIPS Secure Hash Standard (SHS)](https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.180-4.pdf)
 
 [Learn more about the shopping cart inputs on our Knowledge Base.](https://support.maxmind.com/hc/en-us/articles/5452293435675-Order-and-Shopping-Cart-Inputs#h_01G0Z51P845R5DG7TCRNSKAD44)
 
@@ -918,11 +932,18 @@ see:
 <!-- prettier-ignore-end -->
 
 ### Custom Inputs
+
 {{< anchor-target schema--request--custom-inputs >}}
 
-`custom_inputs` are optional inputs to the minFraud service that must first be defined for your account. Select Custom Inputs from the Account Portal in order to do so. See our [Custom Inputs documentation](https://support.maxmind.com/hc/en-us/articles/4408216546203-Use-Custom-Inputs) for more information.
+`custom_inputs` are optional inputs to the minFraud service that must first be
+defined for your account. Select Custom Inputs from the Account Portal in order
+to do so. See our
+[Custom Inputs documentation](https://support.maxmind.com/hc/en-us/articles/4408216546203-Use-Custom-Inputs)
+for more information.
 
-**You should never send a full credit card number as an input.** If you attempt to send a full credit card number as an input, the minFraud service will reject the input and issue a warning.
+**You should never send a full credit card number as an input.** If you attempt
+to send a full credit card number as an input, the minFraud service will reject
+the input and issue a warning.
 
 [Learn more about valid payment number inputs above.](#schema--request--credit-card)
 

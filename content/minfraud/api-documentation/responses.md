@@ -1,7 +1,7 @@
 ---
 draft: false
 title: minFraud API Responses
-type: "has-toc"
+type: 'has-toc'
 ---
 
 ## Headers
@@ -1604,46 +1604,46 @@ Factors services, and a full example of the JSON body document for an error.
       "type": "military"
     },
     "risk_reasons": [
-  {
-    "multiplier": 45,
-    "reasons": [
       {
-        "code": "ANONYMOUS_IP",
-        "reason": "The Anonymous IP address raised the overall risk score"
+        "multiplier": 45,
+        "reasons": [
+          {
+            "code": "ANONYMOUS_IP",
+            "reason": "The Anonymous IP address raised the overall risk score"
+          },
+          {
+            "code": "IP_ISSUER_ID_NUMBER_VELOCITY",
+            "reason": "The number of distinct Issuer ID Numbers found in the velocity check on IP address raised the overall risk score"
+          }
+        ]
       },
       {
-        "code": "IP_ISSUER_ID_NUMBER_VELOCITY",
-        "reason": "The number of distinct Issuer ID Numbers found in the velocity check on IP address raised the overall risk score"
-      }
-    ]
-  },
-  {
-    "multiplier": 1.8,
-    "reasons": [
+        "multiplier": 1.8,
+        "reasons": [
+          {
+            "code": "TIME_OF_DAY",
+            "reason": "The local time of day of the request raised the overall risk score"
+          }
+        ]
+      },
       {
-        "code": "TIME_OF_DAY",
-        "reason": "The local time of day of the request raised the overall risk score"
-      }
-    ]
-  },
-  {
-    "multiplier": 1.6,
-    "reasons": [
+        "multiplier": 1.6,
+        "reasons": [
+          {
+            "code": "EMAIL_DOMAIN_NEW",
+            "reason": "The email domain being recently seen for the first time in the minFraud network raised the overall risk score"
+          }
+        ]
+      },
       {
-        "code": "EMAIL_DOMAIN_NEW",
-        "reason": "The email domain being recently seen for the first time in the minFraud network raised the overall risk score"
+        "multiplier": 0.34,
+        "reasons": [
+          {
+            "code": "PHONE_ACTIVITY",
+            "reason": "minFraud network activity of the phone number lowered the overall risk score"
+          }
+        ]
       }
-    ]
-  },
-  {
-    "multiplier": 0.34,
-    "reasons": [
-      {
-        "code": "PHONE_ACTIVITY",
-        "reason": "minFraud network activity of the phone number lowered the overall risk score"
-      }
-    ]
-  }
     ],
     "subdivisions": [
       {

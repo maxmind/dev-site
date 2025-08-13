@@ -19,4 +19,3 @@ database platforms.
 {{</ link-group/container >}}
 
 <!-- prettier-ignore-end -->
-

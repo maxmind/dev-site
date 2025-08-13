@@ -1,7 +1,7 @@
 ---
 draft: false
 title: GeoIP and GeoLite API Responses
-type: "has-toc"
+type: 'has-toc'
 ---
 
 ## Headers
@@ -234,9 +234,11 @@ IP address.
 <!-- prettier-ignore-end -->
 
 ### Continent
+
 {{< anchor-target schema--response--continent >}}
 
-`continent` is a JSON object that contains information about the continent associated with the IP address.
+`continent` is a JSON object that contains information about the continent
+associated with the IP address.
 
 ```json
 {
@@ -288,9 +290,11 @@ IP address.
 <!-- prettier-ignore-end -->
 
 ### Country
+
 {{< anchor-target schema--response--country >}}
 
-`country` is a JSON object that contains details about the country where MaxMind believes the end user is located.
+`country` is a JSON object that contains details about the country where MaxMind
+believes the end user is located.
 
 ```json
 {
@@ -348,9 +352,11 @@ IP address.
 <!-- prettier-ignore-end -->
 
 ### Location
+
 {{< anchor-target schema--response--location >}}
 
-`location` is a JSON object that contains specific details about the location associated with the IP address.
+`location` is a JSON object that contains specific details about the location
+associated with the IP address.
 
 ```json
 {
@@ -420,9 +426,11 @@ IP address.
 <!-- prettier-ignore-end -->
 
 ### Postal
+
 {{< anchor-target schema--response--postal >}}
 
-`postal` is a JSON object that contains details about the postal code associated with the IP address.
+`postal` is a JSON object that contains details about the postal code associated
+with the IP address.
 
 ```json
 {
@@ -460,9 +468,11 @@ IP address.
 <!-- prettier-ignore-end -->
 
 ### Registered Country
+
 {{< anchor-target schema--response--registered-country >}}
 
-`registered_country` is a JSON object that contains details about the country in which the ISP has registered the IP address.
+`registered_country` is a JSON object that contains details about the country in
+which the ISP has registered the IP address.
 
 [Learn about registered countries on our Knowledge Base.](https://support.maxmind.com/hc/en-us/articles/4414762983195-Country-level-and-City-level-Geolocation)
 
@@ -515,9 +525,12 @@ IP address.
 <!-- prettier-ignore-end -->
 
 ### Represented Country
+
 {{< anchor-target schema--response--represented-country >}}
 
-`represented_country` is a JSON object that contains details about the country which is represented by users of the IP address. For instance, the country represented by an overseas military base.
+`represented_country` is a JSON object that contains details about the country
+which is represented by users of the IP address. For instance, the country
+represented by an overseas military base.
 
 [Learn about represented countries on our Knowledge Base.](https://support.maxmind.com/hc/en-us/articles/4414762983195-Country-level-and-City-level-Geolocation)
 
@@ -577,9 +590,12 @@ IP address.
 <!-- prettier-ignore-end -->
 
 ### Subdivisions
+
 {{< anchor-target schema--response--subdivisions >}}
 
-`subdivisions` is an array of JSON objects. Each of these objects contains details about a subdivision of the country in which the IP address resides. Subdivisions are arranged from largest to smallest.
+`subdivisions` is an array of JSON objects. Each of these objects contains
+details about a subdivision of the country in which the IP address resides.
+Subdivisions are arranged from largest to smallest.
 
 ```json
 [
@@ -631,9 +647,11 @@ IP address.
 <!-- prettier-ignore-end -->
 
 ### Traits
+
 {{< anchor-target schema--response--traits >}}
 
-`traits` is a JSON object that contains general traits associated with the IP address.
+`traits` is a JSON object that contains general traits associated with the IP
+address.
 
 ```json
 {
@@ -813,9 +831,11 @@ IP address.
 <!-- prettier-ignore-end -->
 
 ### MaxMind
+
 {{< anchor-target schema--response--maxmind >}}
 
-`maxmind` is a JSON object that contains information related to your MaxMind account.
+`maxmind` is a JSON object that contains information related to your MaxMind
+account.
 
 ```json
 {
