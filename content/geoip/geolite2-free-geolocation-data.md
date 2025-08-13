@@ -169,18 +169,59 @@ field description.
         <th>Use case</th>
       </tr>
       <tr>
-        <td><p><a href="https://dev.maxmind.com/geoip/docs/databases/city-and-country/">GeoLite Country database</a></p>
-        <p> * Some fields listed in this documentation are not present in GeoLite. Check the description of the fields.</p></td>
-        <td>Geolocation at the country-level for analytics, content customization, or compliance use cases in territories that are not disputed.</td>
+        <td>
+          <p>
+            <a
+              href="https://dev.maxmind.com/geoip/docs/databases/city-and-country/"
+              >GeoLite Country database</a
+            >
+          </p>
+          <p>
+            * Some fields listed in this documentation are not present in
+            GeoLite. Check the description of the fields.
+          </p>
+        </td>
+        <td>
+          Geolocation at the country-level for analytics, content customization,
+          or compliance use cases in territories that are not disputed.
+        </td>
       </tr>
       <tr>
-        <td><p><a href="https://dev.maxmind.com/geoip/docs/databases/city-and-country/">GeoLite City database</a></p>* <p>Some fields listed in this documentation are not present in GeoLite. Check the description of the fields.</p></td>
-        <td><p>Geolocation down to the city or postal code for analytics and content customization.</p>
-<p><strong>Please note</strong>: The free GeoLite City is considerably less accurate than the paid GeoIP City data, and is not recommended for commercial use cases.</p></td>
-</tr>
- <tr>
-<td><a href="https://dev.maxmind.com/geoip/docs/databases/asn/">GeoLite ASN database</a></td>
-        <td>Provides the autonomous system number and organization for IP addresses for analytics.</td>
+        <td>
+          <p>
+            <a
+              href="https://dev.maxmind.com/geoip/docs/databases/city-and-country/"
+              >GeoLite City database</a
+            >
+          </p>
+          *
+          <p>
+            Some fields listed in this documentation are not present in GeoLite.
+            Check the description of the fields.
+          </p>
+        </td>
+        <td>
+          <p>
+            Geolocation down to the city or postal code for analytics and
+            content customization.
+          </p>
+          <p>
+            <strong>Please note</strong>: The free GeoLite City is considerably
+            less accurate than the paid GeoIP City data, and is not recommended
+            for commercial use cases.
+          </p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="https://dev.maxmind.com/geoip/docs/databases/asn/"
+            >GeoLite ASN database</a
+          >
+        </td>
+        <td>
+          Provides the autonomous system number and organization for IP
+          addresses for analytics.
+        </td>
       </tr>
     </tbody>
   </table>
@@ -207,16 +248,49 @@ GeoLite City web service, except as noted in the field description.
         <th>Use case</th>
       </tr>
       <tr>
-        <td><p><a href="https://dev.maxmind.com/geoip/docs/web-services/#geolite-country">GeoLite Country web service</a> </p>
-        <p>* Some fields listed in this documentation are not present in GeoLite. Check the description of the fields.</p></td>
-        <td>Geolocation at the country-level for analytics, content customization, or compliance use cases in territories that are not disputed.</td>
+        <td>
+          <p>
+            <a
+              href="https://dev.maxmind.com/geoip/docs/web-services/#geolite-country"
+              >GeoLite Country web service</a
+            >
+          </p>
+          <p>
+            * Some fields listed in this documentation are not present in
+            GeoLite. Check the description of the fields.
+          </p>
+        </td>
+        <td>
+          Geolocation at the country-level for analytics, content customization,
+          or compliance use cases in territories that are not disputed.
+        </td>
       </tr>
       <tr>
-        <td><p><a href="https://dev.maxmind.com/geoip/docs/web-services/#geolite-city">GeoLite City web service</a> </p>
-        <p>* Some fields listed in this documentation are not present in GeoLite. Check the description of the fields.</p></td>
-        <td><p>Geolocation down to the city or postal code for analytics and content customization. Also includes the autonomous system number and autonomous system organization.</p>
-<p> <strong>Please note</strong>: The free GeoLite City is considerably less accurate than the paid GeoIP City data, and is not recommended for commercial use cases.</p> </td>
-</tr>
+        <td>
+          <p>
+            <a
+              href="https://dev.maxmind.com/geoip/docs/web-services/#geolite-city"
+              >GeoLite City web service</a
+            >
+          </p>
+          <p>
+            * Some fields listed in this documentation are not present in
+            GeoLite. Check the description of the fields.
+          </p>
+        </td>
+        <td>
+          <p>
+            Geolocation down to the city or postal code for analytics and
+            content customization. Also includes the autonomous system number
+            and autonomous system organization.
+          </p>
+          <p>
+            <strong>Please note</strong>: The free GeoLite City is considerably
+            less accurate than the paid GeoIP City data, and is not recommended
+            for commercial use cases.
+          </p>
+        </td>
+      </tr>
     </tbody>
   </table>
 </div>

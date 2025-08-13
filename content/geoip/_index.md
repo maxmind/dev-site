@@ -34,10 +34,14 @@ in GeoIP products and services on our knowledge base.
       <tr>
         <td>City and Country</td>
         <td>
-          <a href="/geoip/docs/databases/city-and-country/#binary-databases">Docs</a>
+          <a href="/geoip/docs/databases/city-and-country/#binary-databases"
+            >Docs</a
+          >
         </td>
         <td>
-          <a href="/geoip/docs/databases/city-and-country/#csv-databases">Docs</a>
+          <a href="/geoip/docs/databases/city-and-country/#csv-databases"
+            >Docs</a
+          >
         </td>
         <td>
           <a href="/geoip/docs/web-services">Docs</a>
@@ -51,9 +55,7 @@ in GeoIP products and services on our knowledge base.
         <td>
           <a href="/geoip/docs/databases/isp/#csv-databases">Docs</a>
         </td>
-        <td>
-          Included in GeoIP City Plus and Insights web services.
-        </td>
+        <td>Included in GeoIP City Plus and Insights web services.</td>
       </tr>
       <tr>
         <td>Domain</td>
@@ -63,21 +65,21 @@ in GeoIP products and services on our knowledge base.
         <td>
           <a href="/geoip/docs/databases/domain/#csv-databases">Docs</a>
         </td>
-        <td>
-          Included in GeoIP City Plus and Insights web services.
-        </td>
+        <td>Included in GeoIP City Plus and Insights web services.</td>
       </tr>
       <tr>
         <td>Connection Type</td>
         <td>
-          <a href="/geoip/docs/databases/connection-type/#binary-databases">Docs</a>
+          <a href="/geoip/docs/databases/connection-type/#binary-databases"
+            >Docs</a
+          >
         </td>
         <td>
-          <a href="/geoip/docs/databases/connection-type/#csv-databases">Docs</a>
+          <a href="/geoip/docs/databases/connection-type/#csv-databases"
+            >Docs</a
+          >
         </td>
-        <td>
-          Comparable data included in the GeoIP Insights web service.
-        </td>
+        <td>Comparable data included in the GeoIP Insights web service.</td>
       </tr>
       <tr>
         <td>Enterprise</td>
@@ -87,9 +89,7 @@ in GeoIP products and services on our knowledge base.
         <td>
           <a href="/geoip/docs/databases/enterprise/#csv-databases">Docs</a>
         </td>
-        <td>
-          Comparable data included in the GeoIP Insights web service.
-        </td>
+        <td>Comparable data included in the GeoIP Insights web service.</td>
       </tr>
       <tr>
         <td>Anonymous IP</td>
@@ -99,30 +99,24 @@ in GeoIP products and services on our knowledge base.
         <td>
           <a href="/geoip/docs/databases/anonymous-ip/#csv-databases">Docs</a>
         </td>
-        <td>
-          Included in the GeoIP Insights web service.
-        </td>
+        <td>Included in the GeoIP Insights web service.</td>
       </tr>
       <tr>
         <td>Anonymous Plus</td>
         <td>
-          <a href="/geoip/docs/databases/anonymous-plus/#binary-database">Docs</a>
+          <a href="/geoip/docs/databases/anonymous-plus/#binary-database"
+            >Docs</a
+          >
         </td>
         <td>
           <a href="/geoip/docs/databases/anonymous-plus/#csv-databases">Docs</a>
         </td>
-        <td>
-          &bull;
-        </td>
+        <td>&bull;</td>
       </tr>
       <tr>
         <td>Insights&#42;&#42;</td>
-        <td>
-          &bull;
-        </td>
-        <td>
-          &bull;
-        </td>
+        <td>&bull;</td>
+        <td>&bull;</td>
         <td>
           <a href="/geoip/docs/web-services">Docs</a>
         </td>
@@ -130,12 +124,15 @@ in GeoIP products and services on our knowledge base.
       <tr>
         <td colspan="4">
           * GeoIP web services provide more accurate geolocation than our
-          equivalent databases. <a href="https://support.maxmind.com/hc/en-us/articles/4407630528795-Choose-the-Right-Geolocation-Product#h_01FJMQXVWPSDRGPC1TG8NYQZ6E">Learn more about the differences between GeoIP
-          web services and databases on our knowledge
-          base</a>.
-          <br/>
-          ** The GeoIP Insights web service contains comparable
-          data to all of the databases and web services listed above.
+          equivalent databases.
+          <a
+            href="https://support.maxmind.com/hc/en-us/articles/4407630528795-Choose-the-Right-Geolocation-Product#h_01FJMQXVWPSDRGPC1TG8NYQZ6E"
+            >Learn more about the differences between GeoIP web services and
+            databases on our knowledge base</a
+          >.
+          <br />
+          ** The GeoIP Insights web service contains comparable data to all of
+          the databases and web services listed above.
         </td>
       </tr>
     </tbody>
@@ -170,10 +167,14 @@ by [reading about GeoLite](/geoip/geolite2-free-geolocation-data).
       <tr>
         <td>City and Country</td>
         <td>
-          <a href="/geoip/docs/databases/city-and-country/#binary-databases">Docs</a>
+          <a href="/geoip/docs/databases/city-and-country/#binary-databases"
+            >Docs</a
+          >
         </td>
         <td>
-          <a href="/geoip/docs/databases/city-and-country/#csv-databases">Docs</a>
+          <a href="/geoip/docs/databases/city-and-country/#csv-databases"
+            >Docs</a
+          >
         </td>
         <td>
           <a href="/geoip/docs/web-services">Docs</a>
@@ -187,9 +188,7 @@ by [reading about GeoLite](/geoip/geolite2-free-geolocation-data).
         <td>
           <a href="/geoip/docs/databases/asn/#csv-databases">Docs</a>
         </td>
-        <td>
-          Included in the GeoLite City Web Service.
-        </td>
+        <td>Included in the GeoLite City Web Service.</td>
       </tr>
     </tbody>
   </table>

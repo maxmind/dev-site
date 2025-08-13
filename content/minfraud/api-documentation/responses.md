@@ -21,27 +21,24 @@ outlined below:
     </thead>
     <tbody>
       <tr>
+        <td>Score</td>
         <td>
-          Score
-        </td>
-        <td>
-          `application/vnd.maxmind.com-minfraud-score+json; charset=UTF-8; version=2.0`
-        </td>
-      </tr>
-      <tr>
-        <td>
-          Insights
-        </td>
-        <td>
-          `application/vnd.maxmind.com-minfraud-insights+json; charset=UTF-8; version=2.0`
+          `application/vnd.maxmind.com-minfraud-score+json; charset=UTF-8;
+          version=2.0`
         </td>
       </tr>
       <tr>
+        <td>Insights</td>
         <td>
-          Factors
+          `application/vnd.maxmind.com-minfraud-insights+json; charset=UTF-8;
+          version=2.0`
         </td>
+      </tr>
+      <tr>
+        <td>Factors</td>
         <td>
-          `application/vnd.maxmind.com-minfraud-factors+json; charset=UTF-8; version=2.0`
+          `application/vnd.maxmind.com-minfraud-factors+json; charset=UTF-8;
+          version=2.0`
         </td>
       </tr>
     </tbody>
@@ -101,30 +98,73 @@ to handle any valid HTTP `4xx` or `5xx` status code.
       <tr>
         <td><code>AUTHORIZATION_INVALID</code></td>
         <td>401 Unauthorized</td>
-        <td>You have supplied an invalid <a href="https://www.maxmind.com/en/accounts/current/license-key">MaxMind account ID and/or license key</a> in the <a href="/minfraud/api-documentation/requests#authorization-and-security">Authorization</a> header.</td>
+        <td>
+          You have supplied an invalid
+          <a href="https://www.maxmind.com/en/accounts/current/license-key"
+            >MaxMind account ID and/or license key</a
+          >
+          in the
+          <a
+            href="/minfraud/api-documentation/requests#authorization-and-security"
+            >Authorization</a
+          >
+          header.
+        </td>
       </tr>
       <tr>
         <td><code>LICENSE_KEY_REQUIRED</code></td>
         <td>401 Unauthorized</td>
-        <td>You have not supplied a <a href="https://www.maxmind.com/en/accounts/current/license-key">MaxMind license key</a> in the <a href="/minfraud/api-documentation/requests#authorization-and-security">Authorization</a> header.</td>
+        <td>
+          You have not supplied a
+          <a href="https://www.maxmind.com/en/accounts/current/license-key"
+            >MaxMind license key</a
+          >
+          in the
+          <a
+            href="/minfraud/api-documentation/requests#authorization-and-security"
+            >Authorization</a
+          >
+          header.
+        </td>
       </tr>
       <tr>
         <td><code>ACCOUNT_ID_REQUIRED</code></td>
         <td>401 Unauthorized</td>
-        <td>You have not supplied a <a href="https://support.maxmind.com/hc/en-us/articles/4412951066779-Find-my-Account-ID">MaxMind account ID</a> in the <a href="/minfraud/api-documentation/requests#authorization-and-security">Authorization</a> header.
-</td>
+        <td>
+          You have not supplied a
+          <a
+            href="https://support.maxmind.com/hc/en-us/articles/4412951066779-Find-my-Account-ID"
+            >MaxMind account ID</a
+          >
+          in the
+          <a
+            href="/minfraud/api-documentation/requests#authorization-and-security"
+            >Authorization</a
+          >
+          header.
+        </td>
       </tr>
       <tr>
         <td><code>INSUFFICIENT_FUNDS</code></td>
         <td>402 Payment Required</td>
-        <td>The license key you have provided does not have sufficient funds to use this service. Please <a href="https://www.maxmind.com/en/solutions/minfraud-services#buy-now">purchase more service credits</a>.
-</td>
+        <td>
+          The license key you have provided does not have sufficient funds to
+          use this service. Please
+          <a
+            href="https://www.maxmind.com/en/solutions/minfraud-services#buy-now"
+            >purchase more service credits</a
+          >.
+        </td>
       </tr>
       <tr>
         <td><code>PERMISSION_REQUIRED</code></td>
         <td>403 Forbidden</td>
         <td>
-          You do not have permission to use the service. Please <a href="https://support.maxmind.com/hc/en-us/requests/new">contact our support team</a> for more information.
+          You do not have permission to use the service. Please
+          <a href="https://support.maxmind.com/hc/en-us/requests/new"
+            >contact our support team</a
+          >
+          for more information.
         </td>
       </tr>
       <tr>
@@ -139,18 +179,19 @@ to handle any valid HTTP `4xx` or `5xx` status code.
         <td>(none)</td>
         <td>415 Unsupported Media Type</td>
         <td>
-          Your request included a <code>Content-Type</code> header that is not supported. For
-          <code>GET</code> requests, this means the web service cannot return content of that
-          type. For <code>PUT</code> and <code>POST</code> queries, this means the web service cannot
-          parse a request body of that type.
+          Your request included a <code>Content-Type</code> header that is not
+          supported. For <code>GET</code> requests, this means the web service
+          cannot return content of that type. For <code>PUT</code> and
+          <code>POST</code> queries, this means the web service cannot parse a
+          request body of that type.
         </td>
       </tr>
       <tr>
         <td>(none)</td>
         <td>503 Service Not Available</td>
         <td>
-          There is a problem with the web service server. You can try this request
-          again later.
+          There is a problem with the web service server. You can try this
+          request again later.
         </td>
       </tr>
     </tbody>
