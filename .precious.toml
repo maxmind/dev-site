@@ -58,10 +58,6 @@ cmd = [
     "80",
     "--prose-wrap",
     "always",
-    "--embedded-language-formatting",
-    "off",
-    "--html-whitespace-sensitivity",
-    "ignore",
 ]
 lint-flags = "--check"
 tidy-flags = "--write"
