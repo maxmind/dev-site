@@ -19,6 +19,7 @@
     "prettier": "^3.6.2",
     "stylelint": "^16.24.0",
     "stylelint-config-recommended": "^17.0.0",
+    "prettier-plugin-go-template": "^0.0.15",
     "stylelint-config-sass-guidelines": "^12.1.0",
     "stylelint-no-unsupported-browser-features": "^8.0.4",
     "stylelint-order": "^7.0.0",
