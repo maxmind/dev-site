@@ -198,6 +198,7 @@ These are named `GeoIP-Anonymous-Plus-Blocks-Plusv4.csv` and
   ipv4Range: "9,400,000 - 9,500,000"
   ipv6Range: "114,000 - 118,000"
 {{< /db-sizes-table >}}
+
 <!-- prettier-ignore-end -->
 
 ## Database Changes
