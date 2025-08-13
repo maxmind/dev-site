@@ -1,4 +1,14 @@
 {
   "singleQuote": true,
-  "trailingComma": "es5"
+  "trailingComma": "es5",
+  "overrides": [
+    {
+      "files": "*.md",
+      "options": {
+        "embeddedLanguageFormatting": "auto",
+        "proseWrap": "always",
+        "htmlWhitespaceSensitivity": "css"
+      }
+    }
+  ]
 }
