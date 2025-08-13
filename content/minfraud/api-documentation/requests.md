@@ -248,6 +248,8 @@ transaction.
 }
 ```
 
+<!-- prettier-ignore-start -->
+
 {{< schema-table key="event" >}}
   {{< minfraud-schema-row key="transaction_id" type="request" valueType="string" valueTypeNote="max length: 255" >}}
   Your internal ID for the transaction. We can use this to locate a specific transaction in our logs, and it will also show up in email alerts and notifications from us to you. No specific format is required.
@@ -288,6 +290,8 @@ transaction.
   {{</minfraud-schema-row>}}
 {{</ schema-table >}}
 
+<!-- prettier-ignore-end -->
+
 ### Account
 {{< anchor-target schema--request--account >}}
 
@@ -301,6 +305,8 @@ where the event took place
 }
 ```
 
+<!-- prettier-ignore-start -->
+
 {{< schema-table key="account" >}}
   {{< minfraud-schema-row key="user_id" type="request" valueType="string" valueTypeNote="max length: 255" >}}
   A unique user ID associated with the end-user in your system. If your system allows the login name for the account to be changed, this should not be the login name for the account, but rather should be an internal ID that does not change. This is not your MaxMind account ID. No specific format is required.
@@ -313,6 +319,8 @@ where the event took place
   {{</minfraud-schema-row>}}
 {{</ schema-table >}}
 
+<!-- prettier-ignore-end -->
+
 ### Email
 
 `email` is a JSON object that contains information about the email address of the end-user who initiated the event.
@@ -323,6 +331,8 @@ where the event took place
   "domain": "maxmind.com"
 }
 ```
+
+<!-- prettier-ignore-start -->
 
 {{< schema-table key="email" >}}
   {{< minfraud-schema-row key="address" type="request" valueType="string" valueTypeNote="max length: 255, type: Email or MD5 of Email" >}}
@@ -337,6 +347,8 @@ where the event took place
   You do not need to pass the email domain input unless you are passing the email address as an MD5 hash. [Learn more about hashed email inputs on our Knowledge Base.](https://support.maxmind.com/hc/en-us/articles/5451485951387#h%5F01G0Z373C3H1QA68TTHVYMXGTT)
   {{</minfraud-schema-row>}}
 {{</ schema-table >}}
+
+<!-- prettier-ignore-end -->
 
 ### Billing
 {{< anchor-target schema--request--billing >}}
@@ -360,6 +372,8 @@ where the event took place
   "region": "CT"
 }
 ```
+
+<!-- prettier-ignore-start -->
 
 {{< schema-table key="billing" >}}
   {{< minfraud-schema-row key="first_name" type="request" valueType="string" valueTypeNote="max length: 255" >}}
@@ -407,6 +421,8 @@ where the event took place
   {{</minfraud-schema-row>}}
 {{</ schema-table >}}
 
+<!-- prettier-ignore-end -->
+
 ### Shipping
 {{< anchor-target schema--request--shipping >}}
 
@@ -430,6 +446,8 @@ where the event took place
   "region": "CT"
 }
 ```
+
+<!-- prettier-ignore-start -->
 
 {{< schema-table key="shipping" >}}
   {{< minfraud-schema-row key="first_name" type="request" valueType="string" valueTypeNote="max length: 255" >}}
@@ -486,6 +504,8 @@ where the event took place
   {{</minfraud-schema-row>}}
 {{</ schema-table >}}
 
+<!-- prettier-ignore-end -->
+
 ### Payment
 {{< anchor-target schema--request--payment >}}
 
@@ -498,6 +518,8 @@ where the event took place
   "was_authorized": false
 }
 ```
+
+<!-- prettier-ignore-start -->
 
 {{< schema-table key="payment" >}}
   {{< minfraud-schema-row key="processor" type="request" valueType="string" valueTypeNote="format: enum" >}}
@@ -680,6 +702,8 @@ where the event took place
   {{</minfraud-schema-row>}}
 {{</ schema-table >}}
 
+<!-- prettier-ignore-end -->
+
 ### Credit Card
 {{< anchor-target schema--request--credit-card >}}
 
@@ -698,6 +722,9 @@ where the event took place
   "was_3d_secure_successful": true
 }
 ```
+
+<!-- prettier-ignore-start -->
+
 {{< schema-table key="credit_card" >}}
 
   {{< minfraud-schema-row key="issuer_id_number" type="request" valueType="string" valueTypeNote="max length: 8" >}}
@@ -756,6 +783,8 @@ where the event took place
 
 {{</ schema-table >}}
 
+<!-- prettier-ignore-end -->
+
 ### Order
 {{< anchor-target schema--request--order >}}
 
@@ -773,6 +802,8 @@ where the event took place
   "subaffiliate_id": "saf42"
 }
 ```
+
+<!-- prettier-ignore-start -->
 
 {{< schema-table key="order" >}}
 
@@ -826,6 +857,8 @@ where the event took place
 
 {{</ schema-table >}}
 
+<!-- prettier-ignore-end -->
+
 ### Shopping Cart
 {{< anchor-target schema--request--shopping-cart >}}
 
@@ -861,6 +894,8 @@ see:
 ]
 ```
 
+<!-- prettier-ignore-start -->
+
 {{< schema-table key="shopping_cart" >}}
   {{< minfraud-schema-row key="category" type="request" valueType="string" valueTypeNote="max length: 255" >}}
   The category of the item. This can also be a hashed value; see below.
@@ -880,6 +915,8 @@ see:
 
 {{</ schema-table >}}
 
+<!-- prettier-ignore-end -->
+
 ### Custom Inputs
 {{< anchor-target schema--request--custom-inputs >}}
 
@@ -895,6 +932,8 @@ see:
   "another_custom_input_key": false
 }
 ```
+
+<!-- prettier-ignore-start -->
 
 {{< schema-table key="custom_inputs" >}}
 

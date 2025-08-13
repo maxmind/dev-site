@@ -5,6 +5,8 @@ title: GeoIP and GeoLite Database Documentation
 
 ## Databases
 
+<!-- prettier-ignore-start -->
+
 {{< link-group/container >}}
 - heading: "City and Country Databases"
   url: "/geoip/docs/databases/city-and-country"
@@ -31,6 +33,8 @@ title: GeoIP and GeoLite Database Documentation
   url: "/geoip/docs/databases/asn"
   text: "Look up the autonomous system number and autonomous system organization associated with IPv4 and IPv6 addresses."
 {{</ link-group/container >}}
+
+<!-- prettier-ignore-end -->
 
 ## Client APIs
 
