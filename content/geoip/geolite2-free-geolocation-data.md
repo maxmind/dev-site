@@ -174,7 +174,7 @@ field description.
         <td>Geolocation at the country-level for analytics, content customization, or compliance use cases in territories that are not disputed.</td>
       </tr>
       <tr>
-        <td><p><a href="https://dev.maxmind.com/geoip/docs/databases/city-and-country/">GeoLite City database</a></p>* Some fields listed in this documentation are not present in GeoLite. Check the description of the fields.</p></td>
+        <td><p><a href="https://dev.maxmind.com/geoip/docs/databases/city-and-country/">GeoLite City database</a></p>* <p>Some fields listed in this documentation are not present in GeoLite. Check the description of the fields.</p></td>
         <td><p>Geolocation down to the city or postal code for analytics and content customization.</p>
 <p><strong>Please note</strong>: The free GeoLite City is considerably less accurate than the paid GeoIP City data, and is not recommended for commercial use cases.</p></td>
 </tr>
