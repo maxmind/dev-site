@@ -31,10 +31,10 @@ Place the following code in the footer of the HTML webpage and replace
 
 ```html
 <script>
-  (function() {
-    var mmapiws = window.__mmapiws = window.__mmapiws || {};
-    mmapiws.accountId = "INSERT_MAXMIND_ACCOUNT_ID_HERE";
-    var loadDeviceJs = function() {
+  (function () {
+    var mmapiws = (window.__mmapiws = window.__mmapiws || {});
+    mmapiws.accountId = 'INSERT_MAXMIND_ACCOUNT_ID_HERE';
+    var loadDeviceJs = function () {
       var element = document.createElement('script');
       element.async = true;
       element.src = 'https://device.maxmind.com/js/device.js';
@@ -249,7 +249,7 @@ let transaction;
 try {
   transaction = new minFraud.Transaction({
     device: new minFraud.Device({
-      ipAddress: "1.1.1.1",
+      ipAddress: '1.1.1.1',
     }),
     billing: new minFraud.Billing({
       address: '1 Billing Address St.',
@@ -284,8 +284,8 @@ try {
       postal: '02451',
       region: 'MA',
     }),
-  })
-} catch(error) {
+  });
+} catch (error) {
   // handle the error
 }
 ```
@@ -760,7 +760,7 @@ import * as minFraud from '@maxmind/minfraud-api-node';
 // const minFraud = require('@maxmind/minfraud-api-node');
 
 // client is reusable
-const client = new minFraud.Client("1234", "LICENSEKEY");
+const client = new minFraud.Client('1234', 'LICENSEKEY');
 
 let transaction;
 
@@ -768,7 +768,7 @@ try {
   transaction = new minFraud.Transaction({
     // device is required
     device: new minFraud.Device({
-      ipAddress: "1.1.1.1",
+      ipAddress: '1.1.1.1',
       acceptLanguage: 'en-US,en;q=0.8',
       sessionAge: 3600,
       sessionId: 'a333a4e127f880d8820e56a66f40717c',
@@ -857,16 +857,16 @@ try {
       new minFraud.CustomInput('key', 'value'),
       new minFraud.CustomInput('key_2', true),
       new minFraud.CustomInput('key_3', 100),
-    ]
-  })
-} catch(error) {
+    ],
+  });
+} catch (error) {
   // handle the error
 }
 
 // Use `client.insights` or `client.factors` for Insights and Factors respectively
-client.score(transaction).then(response => {
-  console.log(response.riskScore) // 50
-  console.log(response.ipAddress.risk) // 50
+client.score(transaction).then((response) => {
+  console.log(response.riskScore); // 50
+  console.log(response.ipAddress.risk); // 50
 });
 ```
 
