@@ -61,9 +61,7 @@ to handle any valid HTTP `4xx` or `5xx` status code.
       <tr>
         <td><code>IP_ADDRESS_REQUIRED</code></td>
         <td>400 Bad Request</td>
-        <td>
-          You have not supplied an IP address, which is a required field.
-        </td>
+        <td>You have not supplied an IP address, which is a required field.</td>
       </tr>
       <tr>
         <td><code>IP_ADDRESS_RESERVED</code></td>
@@ -77,8 +75,15 @@ to handle any valid HTTP `4xx` or `5xx` status code.
         <td><code>AUTHORIZATION_INVALID</code></td>
         <td>401 Unauthorized</td>
         <td>
-          You have supplied an invalid <a href="https://www.maxmind.com/en/accounts/current/license-key">MaxMind account ID and/or license key</a>
-          in the <a href="/minfraud/api-documentation/requests#authorization-and-security">Authorization</a>
+          You have supplied an invalid
+          <a href="https://www.maxmind.com/en/accounts/current/license-key"
+            >MaxMind account ID and/or license key</a
+          >
+          in the
+          <a
+            href="/minfraud/api-documentation/requests#authorization-and-security"
+            >Authorization</a
+          >
           header.
         </td>
       </tr>
@@ -86,8 +91,15 @@ to handle any valid HTTP `4xx` or `5xx` status code.
         <td><code>LICENSE_KEY_REQUIRED</code></td>
         <td>401 Unauthorized</td>
         <td>
-          You have not supplied a <a href="https://www.maxmind.com/en/accounts/current/license-key">MaxMind license key</a>
-          in the <a href="/minfraud/api-documentation/requests#authorization-and-security">Authorization</a>
+          You have not supplied a
+          <a href="https://www.maxmind.com/en/accounts/current/license-key"
+            >MaxMind license key</a
+          >
+          in the
+          <a
+            href="/minfraud/api-documentation/requests#authorization-and-security"
+            >Authorization</a
+          >
           header.
         </td>
       </tr>
@@ -95,8 +107,16 @@ to handle any valid HTTP `4xx` or `5xx` status code.
         <td><code>ACCOUNT_ID_REQUIRED</code></td>
         <td>401 Unauthorized</td>
         <td>
-          You have not supplied a <a href="https://support.maxmind.com/hc/en-us/articles/4412951066779-Find-my-Account-ID">MaxMind account ID</a>
-          in the <a href="/minfraud/api-documentation/requests#authorization-and-security">Authorization</a>
+          You have not supplied a
+          <a
+            href="https://support.maxmind.com/hc/en-us/articles/4412951066779-Find-my-Account-ID"
+            >MaxMind account ID</a
+          >
+          in the
+          <a
+            href="/minfraud/api-documentation/requests#authorization-and-security"
+            >Authorization</a
+          >
           header.
         </td>
       </tr>
@@ -104,15 +124,22 @@ to handle any valid HTTP `4xx` or `5xx` status code.
         <td><code>INSUFFICIENT_FUNDS</code></td>
         <td>402 Payment Required</td>
         <td>
-          The license key you have provided does not have sufficient funds to use
-          this service. Please <a href="https://www.maxmind.com/en/purchase-minfraud-services">purchase more service credits</a>.
+          The license key you have provided does not have sufficient funds to
+          use this service. Please
+          <a href="https://www.maxmind.com/en/purchase-minfraud-services"
+            >purchase more service credits</a
+          >.
         </td>
       </tr>
       <tr>
         <td><code>PERMISSION_REQUIRED</code></td>
         <td>402 Payment Required</td>
         <td>
-          You do not have permission to use the service. Please <a href="https://support.maxmind.com/hc/en-us/requests/new">contact our support team</a> for more information.
+          You do not have permission to use the service. Please
+          <a href="https://support.maxmind.com/hc/en-us/requests/new"
+            >contact our support team</a
+          >
+          for more information.
         </td>
       </tr>
       <tr>
@@ -132,18 +159,19 @@ to handle any valid HTTP `4xx` or `5xx` status code.
         <td>(none)</td>
         <td>415 Unsupported Media Type</td>
         <td>
-          Your request included a <code>Content-Type</code> header that is not supported. For
-          <code>GET</code> requests, this means the web service cannot return content of that
-          type. For <code>PUT</code> and <code>POST</code> queries, this means the web service cannot
-          parse a request body of that type.
+          Your request included a <code>Content-Type</code> header that is not
+          supported. For <code>GET</code> requests, this means the web service
+          cannot return content of that type. For <code>PUT</code> and
+          <code>POST</code> queries, this means the web service cannot parse a
+          request body of that type.
         </td>
       </tr>
       <tr>
         <td>(none)</td>
         <td>503 Service Not Available</td>
         <td>
-          There is a problem with the web service server. You can try this request
-          again later.
+          There is a problem with the web service server. You can try this
+          request again later.
         </td>
       </tr>
     </tbody>

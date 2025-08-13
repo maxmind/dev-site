@@ -101,10 +101,10 @@ files: page.html and demo.js.
     <p>Where am I?</p>
 
     <p>
-      You are in
-      <span id="city"></span>
-      .
-    </p>
+  You are in
+  <span id="city"></span>
+  .
+</p>
   </body>
 </html>
 ```

@@ -105,8 +105,8 @@ encoding is also referred to as latin1.
         <td>Accuracy radius</td>
         <td>integer</td>
         <td>
-          The radius in kilometers around the specified location where the IP address is
-  likely to be.
+          The radius in kilometers around the specified location where the IP
+          address is likely to be.
         </td>
         <td></td>
         <td></td>
@@ -117,7 +117,9 @@ encoding is also referred to as latin1.
         <td>City name</td>
         <td>string</td>
         <td>
-          The city or town name as defined by <a href="https://www.geonames.org/">GeoNames</a> associated with the IP address.
+          The city or town name as defined by
+          <a href="https://www.geonames.org/">GeoNames</a> associated with the
+          IP address.
         </td>
         <td></td>
         <td>YES</td>
@@ -129,13 +131,20 @@ encoding is also referred to as latin1.
         <td>string</td>
         <td>
           <p>
-    The <a href="https://en.wikipedia.org/wiki/ISO_3166-2">ISO-3166-2</a> code for
-    the state/region associated with the IP address.
-  </p>
+            The
+            <a href="https://en.wikipedia.org/wiki/ISO_3166-2">ISO-3166-2</a>
+            code for the state/region associated with the IP address.
+          </p>
 
-  <p>
-    We previously returned a <a href="https://en.wikipedia.org/wiki/FIPS_10-4">FIPS 10-4</a> code for all countries other than the United States and Canada. See our <a href="https://blog.maxmind.com/2020/06/data-changes-to-geoip-legacy-and-minfraud-legacy-web-services-in-may-2022/">blog post detailing changes to our legacy web services</a>.
-  </p>
+          <p>
+            We previously returned a
+            <a href="https://en.wikipedia.org/wiki/FIPS_10-4">FIPS 10-4</a> code
+            for all countries other than the United States and Canada. See our
+            <a
+              href="https://blog.maxmind.com/2020/06/data-changes-to-geoip-legacy-and-minfraud-legacy-web-services-in-may-2022/"
+              >blog post detailing changes to our legacy web services</a
+            >.
+          </p>
         </td>
         <td></td>
         <td>YES</td>
@@ -146,7 +155,9 @@ encoding is also referred to as latin1.
         <td>Region name</td>
         <td>string</td>
         <td>
-          The region name as defined by <a href="https://www.geonames.org/">GeoNames</a> associated with the IP address.
+          The region name as defined by
+          <a href="https://www.geonames.org/">GeoNames</a> associated with the
+          IP address.
         </td>
         <td></td>
         <td></td>
@@ -157,11 +168,11 @@ encoding is also referred to as latin1.
         <td>Postal code</td>
         <td>string</td>
         <td>
-          The postal code associated with the IP address. These are available for some IP
-  addresses in Australia, Canada, France, Germany, Italy, Spain, Switzerland,
-  United Kingdom, and the US.  We return the first 3 characters for Canadian
-  postal codes.  We return the first 2-4 characters (outward code) for
-  postal codes in the United Kingdom.
+          The postal code associated with the IP address. These are available
+          for some IP addresses in Australia, Canada, France, Germany, Italy,
+          Spain, Switzerland, United Kingdom, and the US. We return the first 3
+          characters for Canadian postal codes. We return the first 2-4
+          characters (outward code) for postal codes in the United Kingdom.
         </td>
         <td></td>
         <td></td>
@@ -172,8 +183,8 @@ encoding is also referred to as latin1.
         <td>Metro code</td>
         <td>integer</td>
         <td>
-          <strong>Deprecated</strong>. This is a no-longer-maintained code for targeting 
-          advertisements in Google.
+          <strong>Deprecated</strong>. This is a no-longer-maintained code for
+          targeting advertisements in Google.
         </td>
         <td></td>
         <td></td>
@@ -184,7 +195,17 @@ encoding is also referred to as latin1.
         <td>Area code</td>
         <td>string</td>
         <td>
-          <p><strong>Deprecated. This field will be empty in the updated legacy web service. See our <a href="https://blog.maxmind.com/2020/06/data-changes-to-geoip-legacy-and-minfraud-legacy-web-services-in-may-2022/">blog post detailing changes to our legacy web services</a>.</strong></p></td>
+          <p>
+            <strong
+              >Deprecated. This field will be empty in the updated legacy web
+              service. See our
+              <a
+                href="https://blog.maxmind.com/2020/06/data-changes-to-geoip-legacy-and-minfraud-legacy-web-services-in-may-2022/"
+                >blog post detailing changes to our legacy web services</a
+              >.</strong
+            >
+          </p>
+        </td>
         <td></td>
         <td></td>
         <td>YES</td>
@@ -195,33 +216,30 @@ encoding is also referred to as latin1.
         <td>string (2)</td>
         <td>
           <p>
-    A <a href="https://en.wikipedia.org/wiki/ISO_3166-1">ISO
-    3166-1</a> country code for the country associated with the IP address. In
-    addition to the standard codes, we may also return one of the following:
-  </p>
+            A
+            <a href="https://en.wikipedia.org/wiki/ISO_3166-1">ISO 3166-1</a>
+            country code for the country associated with the IP address. In
+            addition to the standard codes, we may also return one of the
+            following:
+          </p>
 
-  <ul>
-    <li>
-      <strong>A1</strong> – an anonymous proxy.
-    </li>
-    <li>
-      <strong>A2</strong> – a satellite provider.
-    </li>
-    <li>
-      <strong>EU</strong> – an IP in a block used by
-      multiple European countries.
-    </li>
-    <li>
-      <strong>AP</strong> – an IP in a block used by
-      multiple Asia/Pacific region countries.
-    </li>
-  </ul>
+          <ul>
+            <li><strong>A1</strong> – an anonymous proxy.</li>
+            <li><strong>A2</strong> – a satellite provider.</li>
+            <li>
+              <strong>EU</strong> – an IP in a block used by multiple European
+              countries.
+            </li>
+            <li>
+              <strong>AP</strong> – an IP in a block used by multiple
+              Asia/Pacific region countries.
+            </li>
+          </ul>
 
-  <p>
-    The <strong>US</strong> country code is returned for IP addresses associated
-    with overseas US military bases.
-  </p>
-
+          <p>
+            The <strong>US</strong> country code is returned for IP addresses
+            associated with overseas US military bases.
+          </p>
         </td>
         <td>YES</td>
         <td>YES</td>
@@ -232,8 +250,9 @@ encoding is also referred to as latin1.
         <td>Country name</td>
         <td>string</td>
         <td>
-          The country name as defined by <a href="https://www.geonames.org/">GeoNames</a> associated with the IP address.
-
+          The country name as defined by
+          <a href="https://www.geonames.org/">GeoNames</a> associated with the
+          IP address.
         </td>
         <td></td>
         <td></td>
@@ -249,15 +268,15 @@ encoding is also referred to as latin1.
             address. The possible codes are:
           </p>
 
-  <ul>
-    <li><strong>AF</strong> – Africa</li>
-          <li><strong>AN</strong> – Antarctica</li>
-    <li><strong>AS</strong> – Asia</li>
-    <li><strong>EU</strong> – Europe</li>
-    <li><strong>NA</strong> – North America</li>
-    <li><strong>OC</strong> – Oceania</li>
-    <li><strong>SA</strong> – South America</li>
-  </ul>
+          <ul>
+            <li><strong>AF</strong> – Africa</li>
+            <li><strong>AN</strong> – Antarctica</li>
+            <li><strong>AS</strong> – Asia</li>
+            <li><strong>EU</strong> – Europe</li>
+            <li><strong>NA</strong> – North America</li>
+            <li><strong>OC</strong> – Oceania</li>
+            <li><strong>SA</strong> – South America</li>
+          </ul>
         </td>
         <td></td>
         <td></td>
@@ -268,7 +287,9 @@ encoding is also referred to as latin1.
         <td>Latitude</td>
         <td>decimal</td>
         <td>
-          The approximate latitude of the location associated with the network. This value is not precise and should not be used to identify a particular address or household
+          The approximate latitude of the location associated with the network.
+          This value is not precise and should not be used to identify a
+          particular address or household
         </td>
         <td></td>
         <td>YES</td>
@@ -279,7 +300,10 @@ encoding is also referred to as latin1.
         <td>Longitude</td>
         <td>decimal</td>
         <td>
-          The approximate longitude of the location associated with the network. Latitude and Longitude are often near the center of population. These values are not precise and should not be used to identify a particular address or household.
+          The approximate longitude of the location associated with the network.
+          Latitude and Longitude are often near the center of population. These
+          values are not precise and should not be used to identify a particular
+          address or household.
         </td>
         <td></td>
         <td>YES</td>
@@ -290,10 +314,11 @@ encoding is also referred to as latin1.
         <td>Time zone</td>
         <td>string</td>
         <td>
-          The time zone associated with the IP address. Time zone names are taken from
-  the <a href="https://www.iana.org/time-zones/">IANA time zone database</a>. See
-  the <a href="/static/csv/codes/time_zone.csv">list of possible values</a>.
-
+          The time zone associated with the IP address. Time zone names are
+          taken from the
+          <a href="https://www.iana.org/time-zones/">IANA time zone database</a
+          >. See the
+          <a href="/static/csv/codes/time_zone.csv">list of possible values</a>.
         </td>
         <td></td>
         <td></td>
@@ -304,7 +329,11 @@ encoding is also referred to as latin1.
         <td>AS number</td>
         <td>string</td>
         <td>
-          The <a href="https://en.wikipedia.org/wiki/Autonomous_system_(Internet)">autonomous system number</a> associated with the IP address.
+          The
+          <a href="https://en.wikipedia.org/wiki/Autonomous_system_(Internet)"
+            >autonomous system number</a
+          >
+          associated with the IP address.
         </td>
         <td></td>
         <td></td>
@@ -316,29 +345,26 @@ encoding is also referred to as latin1.
         <td>enum</td>
         <td>
           <p>
+            The user type associated with the IP address. This will be one of
+            the following values.
+          </p>
 
-The user type associated with the IP address. This will be one of the following
-values.
-
-  </p>
-
-  <ul>
-    <li><strong>business</strong></li>
-    <li><strong>cafe</strong></li>
-    <li><strong>cellular</strong></li>
-    <li><strong>college</strong></li>
-    <li><strong>contentDeliveryNetwork</strong></li>
-    <li><strong>government</strong></li>
-    <li><strong>hosting</strong></li>
-    <li><strong>library</strong></li>
-    <li><strong>military</strong></li>
-    <li><strong>residential</strong></li>
-    <li><strong>router</strong></li>
-    <li><strong>school</strong></li>
-    <li><strong>searchEngineSpider</strong></li>
-    <li><strong>traveler</strong></li>
-  </ul>
-
+          <ul>
+            <li><strong>business</strong></li>
+            <li><strong>cafe</strong></li>
+            <li><strong>cellular</strong></li>
+            <li><strong>college</strong></li>
+            <li><strong>contentDeliveryNetwork</strong></li>
+            <li><strong>government</strong></li>
+            <li><strong>hosting</strong></li>
+            <li><strong>library</strong></li>
+            <li><strong>military</strong></li>
+            <li><strong>residential</strong></li>
+            <li><strong>router</strong></li>
+            <li><strong>school</strong></li>
+            <li><strong>searchEngineSpider</strong></li>
+            <li><strong>traveler</strong></li>
+          </ul>
         </td>
         <td></td>
         <td></td>
@@ -350,19 +376,16 @@ values.
         <td>enum</td>
         <td>
           <p>
+            The network speed associated with the IP address. This can be one of
+            the following values:
+          </p>
 
-The network speed associated with the IP address. This can be one of the
-following values:
-
-  </p>
-
-  <ul>
-    <li><strong>Dialup</strong></li>
-    <li><strong>Cable/DSL</strong></li>
-    <li><strong>Corporate</strong></li>
-    <li><strong>Cellular</strong></li>
-  </ul>
-
+          <ul>
+            <li><strong>Dialup</strong></li>
+            <li><strong>Cable/DSL</strong></li>
+            <li><strong>Corporate</strong></li>
+            <li><strong>Cellular</strong></li>
+          </ul>
         </td>
         <td></td>
         <td></td>
@@ -374,9 +397,8 @@ following values:
         <td>string</td>
         <td>
           The second level domain associated with the IP address. This will be
-
-something like "example.com" or "example.co.uk", not "foo.example.com".
-
+          something like "example.com" or "example.co.uk", not
+          "foo.example.com".
         </td>
         <td></td>
         <td></td>
@@ -386,10 +408,7 @@ something like "example.com" or "example.co.uk", not "foo.example.com".
       <tr>
         <td>ISP name</td>
         <td>string</td>
-        <td>
-          The name of the ISP associated with the IP address.
-
-        </td>
+        <td>The name of the ISP associated with the IP address.</td>
         <td></td>
         <td></td>
         <td>YES</td>
@@ -398,10 +417,7 @@ something like "example.com" or "example.co.uk", not "foo.example.com".
       <tr>
         <td>Organization name</td>
         <td>string</td>
-        <td>
-          The name of the organization associated with the IP address.
-
-        </td>
+        <td>The name of the organization associated with the IP address.</td>
         <td></td>
         <td></td>
         <td>YES</td>
@@ -411,8 +427,8 @@ something like "example.com" or "example.co.uk", not "foo.example.com".
         <td>City confidence factor</td>
         <td>string</td>
         <td>
-          A value from 0-100 representing our confidence that the city is correct.
-
+          A value from 0-100 representing our confidence that the city is
+          correct.
         </td>
         <td></td>
         <td></td>
@@ -423,8 +439,8 @@ something like "example.com" or "example.co.uk", not "foo.example.com".
         <td>Region confidence factor</td>
         <td>string</td>
         <td>
-          A value from 0-100 representing our confidence that the region is correct.
-
+          A value from 0-100 representing our confidence that the region is
+          correct.
         </td>
         <td></td>
         <td></td>
@@ -435,8 +451,8 @@ something like "example.com" or "example.co.uk", not "foo.example.com".
         <td>Postal confidence factor</td>
         <td>string</td>
         <td>
-          A value from 0-100 representing our confidence that the postal code is correct.
-
+          A value from 0-100 representing our confidence that the postal code is
+          correct.
         </td>
         <td></td>
         <td></td>
@@ -447,8 +463,8 @@ something like "example.com" or "example.co.uk", not "foo.example.com".
         <td>Country confidence factor</td>
         <td>string</td>
         <td>
-          A value from 0-100 representing our confidence that the country is correct.
-
+          A value from 0-100 representing our confidence that the country is
+          correct.
         </td>
         <td></td>
         <td></td>
@@ -464,17 +480,26 @@ something like "example.com" or "example.co.uk", not "foo.example.com".
             contains an error code string.
           </p>
 
-          <p>
-            The possible error codes are:
-          </p>
+          <p>The possible error codes are:</p>
 
           <ul>
-            <li><strong>PERMISSION_REQUIRED</strong> – This is returned if you do not have permission to use the service. Please <a href="https://support.maxmind.com/hc/en-us/requests/new">contact our support team</a> for more information.</li>
+            <li>
+              <strong>PERMISSION_REQUIRED</strong> – This is returned if you do
+              not have permission to use the service. Please
+              <a href="https://support.maxmind.com/hc/en-us/requests/new"
+                >contact our support team</a
+              >
+              for more information.
+            </li>
             <li>
               <strong>INVALID_LICENSE_KEY</strong> – This error will be returned
-              when the license key you pass is not a valid license key or when your account has run out of queries.
+              when the license key you pass is not a valid license key or when
+              your account has run out of queries.
             </li>
-            <li><strong>LICENSE_REQUIRED</strong> – The Insight service returns this instead of INVALID_LICENSE_KEY.</li>
+            <li>
+              <strong>LICENSE_REQUIRED</strong> – The Insight service returns
+              this instead of INVALID_LICENSE_KEY.
+            </li>
             <li>
               <strong>IP_NOT_FOUND</strong> – This error will be returned if the
               IP address it not valid, if it is not public, or if it is not in
@@ -488,9 +513,7 @@ something like "example.com" or "example.co.uk", not "foo.example.com".
         <td>YES</td>
         <td>YES</td>
       </tr>
-
     </tbody>
-
   </table>
 </div>
 {{</ rawhtml >}}
