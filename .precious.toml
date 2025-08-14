@@ -51,7 +51,8 @@ include = [
     "content/**/*.md"
 ]
 cmd = [
-    "./node_modules/.bin/prettier",
+    "npx",
+    "prettier",
     "--parser",
     "markdown",
     "--print-width",
