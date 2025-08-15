@@ -55,8 +55,6 @@ cmd = [
     "prettier",
     "--parser",
     "markdown",
-    "--print-width",
-    "80",
     "--prose-wrap",
     "always",
 ]
