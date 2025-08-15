@@ -134,6 +134,8 @@ select * from geoip2_network where network >>= '214.0.0.0';
 
 Which gives a result of:
 
+<!-- prettier-ignore-start -->
+
 ```markdown
 -[ RECORD 1 ]------------------+-------------
 network                        | 214.0.0.0/16
@@ -150,6 +152,8 @@ is_anycast                     | f
 
 Time: 227.970 ms
 ```
+
+<!-- prettier-ignore-end -->
 
 ### Index our table for faster searching
 
@@ -173,6 +177,8 @@ select * from geoip2_network net where network >>= '214.0.0.0';
 
 Which gives a result of:
 
+<!-- prettier-ignore-start -->
+
 ```markdown
 -[ RECORD 1 ]------------------+-------------
 network                        | 214.0.0.0/16
@@ -189,6 +195,8 @@ is_anycast                     | f
 
 Time: 9.869 ms
 ```
+
+<!-- prettier-ignore-end -->
 
 You can now geolocate IP addresses using `latitude`, `longitude`, and
 `accuracy_radius`. For more information about how to understand the
@@ -271,6 +279,8 @@ where network >>= '214.0.0.0';
 
 Which gives a result of:
 
+<!-- prettier-ignore-start -->
+
 ```markdown
 -[ RECORD 1 ]------+--------------
 latitude           | 37.7510
@@ -281,6 +291,8 @@ country_name       | United States
 subdivision_1_name |
 city_name          |
 ```
+
+<!-- prettier-ignore-end -->
 
 Here we were only interested in English results, but we can adjust our join
 condition if we were interested in different or additional languages.
@@ -327,6 +339,8 @@ where network >>= '214.0.0.0';
 
 Which gives a result of:
 
+<!-- prettier-ignore-start -->
+
 ```markdown
 -[ RECORD 1 ]----------------------+--------------
 latitude                           | 37.7510
@@ -341,3 +355,5 @@ registered_country_country_name    | United States
 represented_country_continent_name |
 represented_country_country_name   |
 ```
+
+<!-- prettier-ignore-end -->

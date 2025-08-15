@@ -31,12 +31,10 @@ authenticate your requests.
 
 ## Test data for the Sandbox minFraud service
 
-{{< alert >}}
-The Sandbox will return risk scores and risk data, but this data is not
-accurate and should not be used to evaluate the efficacy of the minFraud
-scoring engine, or for geolocation or IP intelligence. It is designed
-for testing purposes only.
-{{</ alert >}}
+{{< alert >}} The Sandbox will return risk scores and risk data, but this data
+is not accurate and should not be used to evaluate the efficacy of the minFraud
+scoring engine, or for geolocation or IP intelligence. It is designed for
+testing purposes only. {{</ alert >}}
 
 You may only submit approved test data to the Sandbox version of the minFraud
 services. At this time, the only approved test transaction data are the three IP

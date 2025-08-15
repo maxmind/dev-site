@@ -3,18 +3,18 @@ draft: false
 title: GeoLite on Snowflake
 ---
 
-MaxMind offers our GeoLite data through the [Snowflake Marketplace](https://app.snowflake.com/marketplace/providers/GZ2FTZ5POF7/MaxMind). If you do not
-have an existing Snowflake account, you will need to create one before
-requesting access to the GeoLite datasets. Once approved, you will be able to
-query GeoLite data within Snowflake.
+MaxMind offers our GeoLite data through the
+[Snowflake Marketplace](https://app.snowflake.com/marketplace/providers/GZ2FTZ5POF7/MaxMind).
+If you do not have an existing Snowflake account, you will need to create one
+before requesting access to the GeoLite datasets. Once approved, you will be
+able to query GeoLite data within Snowflake.
 
 The GeoLite Country and City datasets are updated twice weekly, every Tuesday
 and Friday. The GeoLite ASN dataset is updated daily.
 
 ## IP geolocation accuracy
 
-{{< alert warning >}}
-**IP Geolocation Usage**
+{{< alert warning >}} **IP Geolocation Usage**
 
 IP geolocation is inherently imprecise. Locations are often near the center of
 the population. Any location provided by a GeoIP database should not be used to
@@ -43,47 +43,57 @@ particular dataset you are querying:
 ### ASN data
 
 {{< rawhtml >}}
+
 <div class="table">
-<table>
-  <tbody>
-    <tr>
+  <table>
+    <tbody>
+      <tr>
         <th>Name</th>
         <th>Type</th>
         <th>Description</th>
-    </tr>
+      </tr>
 
-    <tr>
+      <tr>
         <td>network</td>
         <td>IP network as a string</td>
         <td>
-          This is the IPv4 or IPv6 network in CIDR format such as
-          “2.21.92.0/29” or “2001:4b0::/80”.
+          This is the IPv4 or IPv6 network in CIDR format such as “2.21.92.0/29”
+          or “2001:4b0::/80”.
         </td>
-    </tr>
+      </tr>
 
-    <tr>
+      <tr>
         <td>autonomous_system_number</td>
         <td>integer</td>
         <td>
-          The <a href="https://en.wikipedia.org/wiki/Autonomous_system_(Internet)">autonomous system</a> number associated with the IP address.
+          The
+          <a href="https://en.wikipedia.org/wiki/Autonomous_system_(Internet)"
+            >autonomous system</a
+          >
+          number associated with the IP address.
           <br />
-          <a href="https://support.maxmind.com/hc/en-us/articles/4408200231067-IP-Network-Data#h_01FN989WWSE56YD6AV4QSPSWDW">Learn more about autonomous system data on our Knowledge Base.</a>
+          <a
+            href="https://support.maxmind.com/hc/en-us/articles/4408200231067-IP-Network-Data#h_01FN989WWSE56YD6AV4QSPSWDW"
+            >Learn more about autonomous system data on our Knowledge Base.</a
+          >
         </td>
-    </tr>
+      </tr>
 
-    <tr>
+      <tr>
         <td>autonomous_system_organization</td>
         <td>string</td>
         <td>
           The organization associated with the registered autonomous system
           number for the IP address.
           <br />
-          <a href="https://support.maxmind.com/hc/en-us/articles/4408200231067-IP-Network-Data#h_01FN989WWSE56YD6AV4QSPSWDW">Learn more about autonomous system data on our Knowledge Base.</a>
+          <a
+            href="https://support.maxmind.com/hc/en-us/articles/4408200231067-IP-Network-Data#h_01FN989WWSE56YD6AV4QSPSWDW"
+            >Learn more about autonomous system data on our Knowledge Base.</a
+          >
         </td>
-    </tr>
-
-  </tbody>
-</table>
+      </tr>
+    </tbody>
+  </table>
 </div>
 {{</ rawhtml >}}
 

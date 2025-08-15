@@ -21,8 +21,8 @@ and the Response Body section below.
 
 ### Official Client APIs
 
-
 {{< rawhtml >}}
+
 <div class="table">
   <table>
     <thead>
@@ -34,28 +34,45 @@ and the Response Body section below.
       </tr>
     </thead>
     <tbody>
-     <tr>
+      <tr>
         <td>.NET (C#)</td>
-        <td><a href="https://www.nuget.org/packages/MaxMind.GeoIP2/">NuGet</a></td>
-        <td><a href="https://maxmind.github.io/GeoIP2-dotnet/">GitHub Pages</a></td>
-        <td><a href="https://github.com/maxmind/GeoIP2-dotnet">GitHub</a> </td>
+        <td>
+          <a href="https://www.nuget.org/packages/MaxMind.GeoIP2/">NuGet</a>
+        </td>
+        <td>
+          <a href="https://maxmind.github.io/GeoIP2-dotnet/">GitHub Pages</a>
+        </td>
+        <td><a href="https://github.com/maxmind/GeoIP2-dotnet">GitHub</a></td>
       </tr>
       <tr>
         <td>Java</td>
-        <td><a href="https://search.maven.org/#search%7Cga%7C1%7Cg%3A%22com.maxmind.geoip2%22%20AND%20a%3A%22geoip2%22">Maven Central</a></td>
-        <td><a href="https://maxmind.github.io/GeoIP2-java/">GitHub Pages</a></td>
+        <td>
+          <a
+            href="https://search.maven.org/#search%7Cga%7C1%7Cg%3A%22com.maxmind.geoip2%22%20AND%20a%3A%22geoip2%22"
+            >Maven Central</a
+          >
+        </td>
+        <td>
+          <a href="https://maxmind.github.io/GeoIP2-java/">GitHub Pages</a>
+        </td>
         <td><a href="https://github.com/maxmind/GeoIP2-java">GitHub</a></td>
       </tr>
       <tr>
         <td>JavaScript (browser)</td>
         <td></td>
-        <td><a href="/geoip/geolocate-an-ip/client-side-javascript">API Docs</a></td>
+        <td>
+          <a href="/geoip/geolocate-an-ip/client-side-javascript">API Docs</a>
+        </td>
         <td></td>
       </tr>
       <tr>
-        <td>Node.js </td>
-        <td><a href="https://npmjs.com/package/@maxmind/geoip2-node">NPM</a> </td>
-        <td><a href="https://maxmind.github.io/GeoIP2-node/">GitHub Pages</a></td>
+        <td>Node.js</td>
+        <td>
+          <a href="https://npmjs.com/package/@maxmind/geoip2-node">NPM</a>
+        </td>
+        <td>
+          <a href="https://maxmind.github.io/GeoIP2-node/">GitHub Pages</a>
+        </td>
         <td><a href="https://github.com/maxmind/GeoIP2-node">GitHub</a></td>
       </tr>
       <tr>
@@ -66,20 +83,28 @@ and the Response Body section below.
       </tr>
       <tr>
         <td>PHP</td>
-        <td><a href="https://packagist.org/packages/geoip2/geoip2">Packagist</a></td>
-        <td><a href="https://maxmind.github.io/GeoIP2-php/">GitHub Pages</a></td>
+        <td>
+          <a href="https://packagist.org/packages/geoip2/geoip2">Packagist</a>
+        </td>
+        <td>
+          <a href="https://maxmind.github.io/GeoIP2-php/">GitHub Pages</a>
+        </td>
         <td><a href="https://github.com/maxmind/GeoIP2-php">GitHub</a></td>
       </tr>
       <tr>
         <td>Python</td>
         <td><a href="https://pypi.python.org/pypi/geoip2">PyPI</a></td>
-        <td><a href="https://geoip2.readthedocs.org/en/latest/">Read the Docs</a></td>
+        <td>
+          <a href="https://geoip2.readthedocs.org/en/latest/">Read the Docs</a>
+        </td>
         <td><a href="https://github.com/maxmind/GeoIP2-python">GitHub</a></td>
       </tr>
       <tr>
         <td>Ruby</td>
         <td><a href="https://rubygems.org/gems/maxmind-geoip2">RubyGems</a></td>
-        <td><a href="https://www.rubydoc.info/gems/maxmind-geoip2">RubyDoc</a></td>
+        <td>
+          <a href="https://www.rubydoc.info/gems/maxmind-geoip2">RubyDoc</a>
+        </td>
         <td><a href="https://github.com/maxmind/GeoIP2-ruby">GitHub</a></td>
       </tr>
     </tbody>
@@ -89,12 +114,11 @@ and the Response Body section below.
 
 ### Third-Party Client APIs
 
-{{< alert warning >}}
-  **_Use at your own risk._** MaxMind does not offer support for these APIs and
-  has not reviewed the code.
-{{</ alert >}}
+{{< alert warning >}} **_Use at your own risk._** MaxMind does not offer support
+for these APIs and has not reviewed the code. {{</ alert >}}
 
 {{< rawhtml >}}
+
 <div class="table">
   <table>
     <thead>
@@ -150,13 +174,11 @@ help us investigate an issue:
 
 ## IP Geolocation Accuracy
 
-{{< alert warning >}}
-  **IP Geolocation Usage**
+{{< alert warning >}} **IP Geolocation Usage**
 
 IP geolocation is inherently imprecise. Locations are often near the center of
 the population. Any location provided by a GeoIP database should not be used to
-identify a particular address or household.
-{{</ alert >}}
+identify a particular address or household. {{</ alert >}}
 
 Use the Accuracy Radius as an indication of geolocation accuracy for the
 latitude and longitude coordinates we return for an IP address. The actual

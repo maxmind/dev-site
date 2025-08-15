@@ -30,6 +30,7 @@ for assistance.
 The files in the zip archive are:
 
 {{< rawhtml >}}
+
 <div class="table">
   <table>
     <tbody>
@@ -59,14 +60,19 @@ The files in the zip archive are:
 
       <tr>
         <td><code>GeoIP2-Enterprise-ISP.CSV</code></td>
-        <td>CSV file containing data on ISPs. This may be cross referenced with the various blocks files using the shared `isp_id` key.</td>
+        <td>
+          CSV file containing data on ISPs. This may be cross referenced with
+          the various blocks files using the shared `isp_id` key.
+        </td>
       </tr>
 
       <tr>
         <td><code>GeoIP2-Enterprise-Locations-XX.CSV</code></td>
-        <td>CSV files containing data on locations. This may be cross referenced with the various blocks files using the shared `geoname_id` key.</td>
+        <td>
+          CSV files containing data on locations. This may be cross referenced
+          with the various blocks files using the shared `geoname_id` key.
+        </td>
       </tr>
-
     </tbody>
   </table>
 </div>
@@ -90,6 +96,7 @@ A single CSV file, called `GeoIP2-Enterprise-ISP.csv`, contains information on
 ISPs.
 
 {{< rawhtml >}}
+
 <div class="table">
   <table>
     <thead>
@@ -104,37 +111,29 @@ ISPs.
         <td>isp_id</td>
         <td>integer</td>
         <td>
-          The identifier for the ISP.  This key can be cross referenced
-          with the `isp_id` in the Blocks files.
+          The identifier for the ISP. This key can be cross referenced with the
+          `isp_id` in the Blocks files.
         </td>
       </tr>
       <tr>
         <td>isp</td>
         <td>string</td>
-        <td>
-            The name of the ISP associated with the IP address.
-        </td>
+        <td>The name of the ISP associated with the IP address.</td>
       </tr>
       <tr>
         <td>organization</td>
         <td>string</td>
-        <td>
-            The name of the organization associated with the IP address.
-        </td>
+        <td>The name of the organization associated with the IP address.</td>
       </tr>
       <tr>
         <td>autonomous_system_number</td>
         <td>integer</td>
-        <td>
-          The ASN assigned to the ISP for routing.
-        </td>
+        <td>The ASN assigned to the ISP for routing.</td>
       </tr>
       <tr>
         <td>autonomous_system_organization</td>
         <td>string</td>
-        <td>
-          The name of the autonomous system organization.
-        </td>
+        <td>The name of the autonomous system organization.</td>
       </tr>
       <tr>
         <td>connection_type</td>
@@ -142,37 +141,37 @@ ISPs.
         <td>
           The type of connection. This will be one of the following values:
           <ul>
-            <li> <code>Cable/DSL</code></li>
-            <li> <code>Cellular</code></li>
-            <li> <code>Corporate</code></li>
-            <li> <code>Satellite</code></li>
+            <li><code>Cable/DSL</code></li>
+            <li><code>Cellular</code></li>
+            <li><code>Corporate</code></li>
+            <li><code>Satellite</code></li>
           </ul>
         </td>
       </tr>
 
-     <tr>
+      <tr>
         <td>user_type</td>
         <td>string</td>
         <td>
-          The user type associated with the IP address. This
-          will be one of the following values.
+          The user type associated with the IP address. This will be one of the
+          following values.
 
           <ul>
-            <li> <code>business</code></li>
-            <li> <code>cafe</code></li>
-            <li> <code>cellular</code></li>
-            <li> <code>college</code></li>
-            <li> <code>consumer_privacy_network</code></li>
-            <li> <code>content_delivery_network</code></li>
-            <li> <code>government</code></li>
-            <li> <code>hosting</code></li>
-            <li> <code>library</code></li>
-            <li> <code>military</code></li>
-            <li> <code>residential</code></li>
-            <li> <code>router</code></li>
-            <li> <code>school</code></li>
-            <li> <code>search_engine_spider</code></li>
-            <li> <code>traveler</code></li>
+            <li><code>business</code></li>
+            <li><code>cafe</code></li>
+            <li><code>cellular</code></li>
+            <li><code>college</code></li>
+            <li><code>consumer_privacy_network</code></li>
+            <li><code>content_delivery_network</code></li>
+            <li><code>government</code></li>
+            <li><code>hosting</code></li>
+            <li><code>library</code></li>
+            <li><code>military</code></li>
+            <li><code>residential</code></li>
+            <li><code>router</code></li>
+            <li><code>school</code></li>
+            <li><code>search_engine_spider</code></li>
+            <li><code>traveler</code></li>
           </ul>
         </td>
       </tr>
@@ -180,18 +179,22 @@ ISPs.
         <td>mobile_country_code</td>
         <td>string</td>
         <td>
-          The <a href="https://en.wikipedia.org/wiki/Mobile_country_code">mobile country code
-          (MCC)</a> associated
-          with the IP address and ISP.
+          The
+          <a href="https://en.wikipedia.org/wiki/Mobile_country_code"
+            >mobile country code (MCC)</a
+          >
+          associated with the IP address and ISP.
         </td>
       </tr>
       <tr>
         <td>mobile_network_code</td>
         <td>string</td>
         <td>
-          The <a href="https://en.wikipedia.org/wiki/Mobile_country_code">mobile network code
-          (MNC)</a> associated
-          with the IP address and ISP.
+          The
+          <a href="https://en.wikipedia.org/wiki/Mobile_country_code"
+            >mobile network code (MNC)</a
+          >
+          associated with the IP address and ISP.
         </td>
       </tr>
     </tbody>
@@ -227,15 +230,16 @@ name would be "GeoIP2-City-Locations-en.csv".
 ### CSV Example Files
 
 {{< csv-example-files >}}
-* [GeoIP2-Enterprise-CSV\_Example.zip](/static/GeoIP2-Enterprise-CSV_Example.zip)
-{{</ csv-example-files >}}
+
+- [GeoIP2-Enterprise-CSV_Example.zip](/static/GeoIP2-Enterprise-CSV_Example.zip)
+  {{</ csv-example-files >}}
 
 ### MMDB Example Files
 
 {{< mmdb-example-files >}}
-* [GeoIP2-Enterprise-Test.mmdb](https://github.com/maxmind/MaxMind-DB/blob/main/test-data/GeoIP2-Enterprise-Test.mmdb)
-{{</ mmdb-example-files >}}
 
+- [GeoIP2-Enterprise-Test.mmdb](https://github.com/maxmind/MaxMind-DB/blob/main/test-data/GeoIP2-Enterprise-Test.mmdb)
+  {{</ mmdb-example-files >}}
 
 ## Database Changes
 
@@ -243,15 +247,17 @@ name would be "GeoIP2-City-Locations-en.csv".
 
 ## Database Sizes
 
-{{< db-sizes-table dateRange="August to October 2024">}}
-  {{< db-sizes-row
-    databaseName="GeoIP Enterprise"
-    csvSizeRange="986 MB - 1.05 GB"
-    mmdbSizeRange="344 MB - 358 MB"
-    ipv4Range="7,874,000 - 8,984,000"
-    ipv6Range="3,251,000 - 3,772,000"
-  >}}
-{{</ db-sizes-table>}}
+<!-- prettier-ignore-start -->
+
+{{< db-sizes-table dateRange="August to October 2024" >}}
+- databaseName: "GeoIP Enterprise"
+  csvSizeRange: "986 MB - 1.05 GB"
+  mmdbSizeRange: "344 MB - 358 MB"
+  ipv4Range: "7,874,000 - 8,984,000"
+  ipv6Range: "3,251,000 - 3,772,000"
+{{< /db-sizes-table >}}
+
+<!-- prettier-ignore-end -->
 
 ## APIs and Third-Party Integrations
 
