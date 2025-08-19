@@ -40,24 +40,71 @@ http://yourdomain/yoururl?i=24.24.24.24&maxmindID=1234ABCD&domain=sample.com&cit
 The following are the parameters that will be included in the query string of
 the request. Additional parameters may be added in the future.
 
-| Parameter        | Description                                                                                                                        |
-| ---------------- | ---------------------------------------------------------------------------------------------------------------------------------- |
-| `city`           | The billing city included in the original minFraud request.                                                                        |
-| `country`        | The billing country included in the original minFraud request.                                                                     |
-| `date`           | The date of the original minFraud request, e.g., `Nov. 1, 2019`.                                                                   |
-| `domain`         | The email domain included in the original minFraud request.                                                                        |
-| `i`              | The IP address included in the original minFraud request.                                                                          |
-| `maxmindID`      | The minFraud Legacy `maxmindID` of the original minFraud request.                                                                  |
-| `minfraud_id`    | The minFraud ID of the original minFraud request.                                                                                  |
-| `new_risk_score` | The updated risk score, calculated after your initial query with additional information.                                           |
-| `old_risk_score` | The risk score as originally calculated.                                                                                           |
-| `postal`         | The billing postal included in the original minFraud request.                                                                      |
-| `reason`         | A human-readable description of why the minFraud alert was sent. See below for the current list of possible reasons.               |
-| `reason_code`    | A fixed, machine-readable code for the reason why the minFraud alert was sent. See below for the current list of possible reasons. |
-| `region`         | The billing region included in the original minFraud request.                                                                      |
-| `shop_id`        | The shop ID included in the original minFraud request. This will only be set if the original request included a shop ID.           |
-| `txnID`          | The transaction ID included in the original minFraud request.                                                                      |
-| `updated_at`     | The date and time at which the new risk score was calculated, in RFC3339 format, e.g., `2019-11-01T12:34:56Z`                      |
+{{< schema-table key="alert" >}}
+  {{< minfraud-schema-row key="city" type="webhook" valueType="string" valueTypeNote="max length: 255" >}}
+  The billing city included in the original minFraud request.
+  {{</minfraud-schema-row>}}
+
+  {{< minfraud-schema-row key="country" type="webhook" valueType="string" valueTypeNote="max length: 2" >}}
+  The billing country included in the original minFraud request.
+  {{</minfraud-schema-row>}}
+
+  {{< minfraud-schema-row key="date" type="webhook" valueType="string" valueTypeNote="max length: 255" >}}
+  The date of the original minFraud request, e.g., `Nov. 1, 2019`.
+  {{</minfraud-schema-row>}}
+
+  {{< minfraud-schema-row key="domain" type="webhook" valueType="string" valueTypeNote="max length: 255" >}}
+  The email domain included in the original minFraud request.
+  {{</minfraud-schema-row>}}
+
+  {{< minfraud-schema-row key="i" type="webhook" valueType="string" valueTypeNote="format: IPv4 or IPv6" >}}
+  The IP address included in the original minFraud request.
+  {{</minfraud-schema-row>}}
+
+  {{< minfraud-schema-row key="maxmindID" type="webhook" valueType="string" valueTypeNote="max length: 8" >}}
+  The minFraud Legacy `maxmindID` of the original minFraud request.
+  {{</minfraud-schema-row>}}
+
+  {{< minfraud-schema-row key="minfraud_id" type="webhook" valueType="string" valueTypeNote="format: UUID" >}}
+  The minFraud ID of the original minFraud request.
+  {{</minfraud-schema-row>}}
+
+  {{< minfraud-schema-row key="new_risk_score" type="webhook" valueType="decimal" valueTypeNote="min: 0.01, max: 99" >}}
+  The updated risk score, calculated after your initial query with additional information.
+  {{</minfraud-schema-row>}}
+
+  {{< minfraud-schema-row key="old_risk_score" type="webhook" valueType="decimal" valueTypeNote="min: 0.01, max: 99" >}}
+  The risk score as originally calculated.
+  {{</minfraud-schema-row>}}
+
+  {{< minfraud-schema-row key="postal" type="webhook" valueType="string" valueTypeNote="max length: 255" >}}
+  The billing postal included in the original minFraud request.
+  {{</minfraud-schema-row>}}
+
+  {{< minfraud-schema-row key="reason" type="webhook" valueType="string" >}}
+  A human-readable description of why the minFraud alert was sent. See below for the current list of possible reasons.
+  {{</minfraud-schema-row>}}
+
+  {{< minfraud-schema-row key="reason_code" type="webhook" valueType="string" valueTypeNote="format: enum" >}}
+  A fixed, machine-readable code for the reason why the minFraud alert was sent. See below for the current list of possible reasons.
+  {{</minfraud-schema-row>}}
+
+  {{< minfraud-schema-row key="region" type="webhook" valueType="string" valueTypeNote="max length: 4" >}}
+  The billing region included in the original minFraud request.
+  {{</minfraud-schema-row>}}
+
+  {{< minfraud-schema-row key="shop_id" type="webhook" valueType="string" valueTypeNote="max length: 255" >}}
+  The shop ID included in the original minFraud request. This will only be set if the original request included a shop ID.
+  {{</minfraud-schema-row>}}
+
+  {{< minfraud-schema-row key="txnID" type="webhook" valueType="string" valueTypeNote="max length: 255" >}}
+  The transaction ID included in the original minFraud request.
+  {{</minfraud-schema-row>}}
+
+  {{< minfraud-schema-row key="updated_at" type="webhook" valueType="string" valueTypeNote="max length: 255" >}}
+  The date and time at which the new risk score was calculated, in RFC3339 format, e.g., `2019-11-01T12:34:56Z`
+  {{</minfraud-schema-row>}}
+{{</ schema-table >}}
 
 #### Possible alert reasons
 
