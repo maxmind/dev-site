@@ -5,8 +5,6 @@
 .footer__container {
   column-gap: 0;
   display: grid;
-  grid-column-gap: 0;
-  grid-row-gap: 0;
   grid-template-areas: 'a b' 'c d' 'branding branding' 'copyright copyright';
   position: relative;
   row-gap: 0;
@@ -72,10 +70,10 @@
   }
 
   @include variables.breakpoint('xl') {
+    column-gap: var(--mm-spacing);
     display: grid;
     font-weight: 400;
     grid-area: copyright;
-    grid-column-gap: var(--mm-spacing);
     grid-template-areas: 'p terms';
     grid-template-columns: '3fr 1fr';
     text-align: left;
@@ -83,8 +81,8 @@
 }
 
 .footer__terms {
+  column-gap: var(--mm-spacing);
   grid-area: terms;
-  grid-column-gap: var(--mm-spacing);
   margin-top: calc(var(--mm-spacing) / 2);
   text-align: center;
 

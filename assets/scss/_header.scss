@@ -22,7 +22,6 @@ $page-header-height: 80px;
   font-size: 14px;
   gap: 10px;
   grid-auto-flow: column;
-  grid-gap: 10px;
   justify-content: center;
   position: relative;
   z-index: 1;
@@ -115,14 +114,12 @@ $page-header-height: 80px;
 @media only screen and (min-width: 320px) {
   .logo {
     gap: 8px;
-    grid-gap: 8px;
   }
 }
 
 @media only screen and (min-width: 576px) {
   .logo {
     gap: 10px;
-    grid-gap: 10px;
     grid-template-columns: auto;
   }
 

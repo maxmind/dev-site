@@ -14,6 +14,8 @@ module.exports = {
   ],
   rules: {
     'max-nesting-depth': 4,
+    'nesting-selector-no-missing-scoping-root': null,
+    'no-invalid-position-declaration': null,
     'order/order': [
       'custom-properties',
       'declarations',
