@@ -4,7 +4,6 @@
 .blog-post__container-featured {
   display: grid;
   gap: var(--mm-spacing);
-  grid-gap: var(--mm-spacing);
   grid-template-areas:
     'graphic'
     'content';

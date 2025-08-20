@@ -14,11 +14,11 @@
     font-family: var(--mm-font-stack-monospace);
     font-size: 14px;
     line-height: 1.5em;
+    overflow-wrap: normal;
     text-align: left;
     white-space: pre;
     word-break: normal;
     word-spacing: normal;
-    word-wrap: normal;
   }
 
   pre {
