@@ -1,7 +1,7 @@
 ---
 draft: false
 title: minFraud API Requests
-type: "has-toc"
+type: 'has-toc'
 ---
 
 ## Authorization and Security
@@ -12,9 +12,8 @@ your
 The password is your
 [MaxMind license key](https://www.maxmind.com/en/accounts/current/license-key).
 
-{{< alert warning >}}
-  You must be approved for a trial or purchase credit for use with our web
-  services in order to receive an account ID and license key.
+{{< alert warning >}} You must be approved for a trial or purchase credit for
+use with our web services in order to receive an account ID and license key.
 {{</ alert >}}
 
 We use
@@ -63,16 +62,16 @@ response.
 
 Currently minFraud Score, minFraud Insights, and minFraud Factors use the same
 request document format. The request consists of a JSON object with one or more
-of the fields shown below. Each key in the top-level object maps to an object
-or array as described below. New fields that apply to one or both may be added
-in the future.
+of the fields shown below. Each key in the top-level object maps to an object or
+array as described below. New fields that apply to one or both may be added in
+the future.
 
 String fields are limited to no more than 255 valid Unicode characters unless a
 shorter length is specified; the null and newline characters are forbidden. Of
 course, many fields also have additional constraints that limit the length. For
 example, the `ip_address` field cannot be longer than the longest valid
-representation of an IPv6 address. Unless it must match a specific format, it
-is valid for a string field to be empty.
+representation of an IPv6 address. Unless it must match a specific format, it is
+valid for a string field to be empty.
 
 Boolean fields must be provided as JSON `true` or `false`.
 
@@ -185,9 +184,11 @@ size will be rejected.
 ```
 
 ### Device
+
 {{< anchor-target schema--request--device >}}
 
-`device` is a JSON object that contains information about the device used in the transaction.
+`device` is a JSON object that contains information about the device used in the
+transaction.
 
 ```json
 {
@@ -198,6 +199,8 @@ size will be rejected.
   "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.89 Safari/537.36"
 }
 ```
+
+<!-- prettier-ignore-start -->
 
 {{< schema-table key="device" >}}
 - key: ip_address
@@ -256,6 +259,8 @@ size will be rejected.
 }
 ```
 
+<!-- prettier-ignore-start -->
+
 {{< schema-table key="event" >}}
 - key: transaction_id
   type: request
@@ -304,11 +309,14 @@ size will be rejected.
     [Learn more about the /event/type input on our Knowledge Base.](https://support.maxmind.com/hc/en-us/articles/5452006111003-Event-and-Account-Inputs#h%5F01G0Z3WMWJW3QMHN8AGWK054E6)
 {{</ schema-table >}}
 
+<!-- prettier-ignore-end -->
+
 ### Account
+
 {{< anchor-target schema--request--account >}}
 
-`account` is a JSON object that contains account information for the end-user on the site
-where the event took place
+`account` is a JSON object that contains account information for the end-user on
+the site where the event took place
 
 ```json
 {
@@ -316,6 +324,8 @@ where the event took place
   "username_md5": "570a90bfbf8c7eab5dc5d4e26832d5b1"
 }
 ```
+
+<!-- prettier-ignore-start -->
 
 {{< schema-table key="account" >}}
 - key: user_id
@@ -334,9 +344,12 @@ where the event took place
     An MD5 hash as a hexadecimal string of the username or login name associated with the account.
 {{</ schema-table >}}
 
+<!-- prettier-ignore-end -->
+
 ### Email
 
-`email` is a JSON object that contains information about the email address of the end-user who initiated the event.
+`email` is a JSON object that contains information about the email address of
+the end-user who initiated the event.
 
 ```json
 {
@@ -344,6 +357,8 @@ where the event took place
   "domain": "maxmind.com"
 }
 ```
+
+<!-- prettier-ignore-start -->
 
 {{< schema-table key="email" >}}
 - key: address
@@ -364,10 +379,14 @@ where the event took place
     You do not need to pass the email domain input unless you are passing the email address as an MD5 hash. [Learn more about hashed email inputs on our Knowledge Base.](https://support.maxmind.com/hc/en-us/articles/5451485951387#h%5F01G0Z373C3H1QA68TTHVYMXGTT)
 {{</ schema-table >}}
 
+<!-- prettier-ignore-end -->
+
 ### Billing
+
 {{< anchor-target schema--request--billing >}}
 
-`billing` is a JSON object that contains the billing address and contact information provided by the end-user who initiated the event.
+`billing` is a JSON object that contains the billing address and contact
+information provided by the end-user who initiated the event.
 
 [Learn more about the billing address inputs on our Knowledge Base.](https://support.maxmind.com/hc/en-us/articles/5447224594075-Billing-and-Shipping-Inputs#h_01G0YN48RWENDYCKN2J3RQK2S3)
 
@@ -386,6 +405,8 @@ where the event took place
   "region": "CT"
 }
 ```
+
+<!-- prettier-ignore-start -->
 
 {{< schema-table key="billing" >}}
 - key: first_name
@@ -456,10 +477,14 @@ where the event took place
     The country code for phone number associated with the user's billing address. If you provide this information then you must provide at least one digit.
 {{</ schema-table >}}
 
+<!-- prettier-ignore-end -->
+
 ### Shipping
+
 {{< anchor-target schema--request--shipping >}}
 
-`shipping` is a JSON object that contains the shipping address and contact information provided by the end-user who initiated the event.
+`shipping` is a JSON object that contains the shipping address and contact
+information provided by the end-user who initiated the event.
 
 [Learn more about the shipping address inputs on our Knowledge Base.](https://support.maxmind.com/hc/en-us/articles/5447224594075-Billing-and-Shipping-Inputs#h_01G0YN4GGRCC99P2HH0X54RFVA)
 
@@ -479,6 +504,8 @@ where the event took place
   "region": "CT"
 }
 ```
+
+<!-- prettier-ignore-start -->
 
 {{< schema-table key="shipping" >}}
 - key: first_name
@@ -560,10 +587,14 @@ where the event took place
     * `standard`
 {{</ schema-table >}}
 
+<!-- prettier-ignore-end -->
+
 ### Payment
+
 {{< anchor-target schema--request--payment >}}
 
-`payment` is a JSON object that contains information from and about the payment process that was used for the event.
+`payment` is a JSON object that contains information from and about the payment
+process that was used for the event.
 
 ```json
 {
@@ -572,6 +603,8 @@ where the event took place
   "was_authorized": false
 }
 ```
+
+<!-- prettier-ignore-start -->
 
 {{< schema-table key="payment" >}}
 - key: processor
@@ -760,10 +793,16 @@ where the event took place
     The decline code as provided by your payment processor. If the transaction was not declined, do not include this field.
 {{</ schema-table >}}
 
+<!-- prettier-ignore-end -->
+
 ### Credit Card
+
 {{< anchor-target schema--request--credit-card >}}
 
-`credit_card` is a JSON object that contains information provided by the end-user and the payment processor about the credit card used for the for the event.
+`credit_card` is a JSON object that contains information provided by the
+end-user and the payment processor about the credit card used for the for the
+event.
+
 ```json
 {
   "avs_result": "Y",
@@ -778,6 +817,9 @@ where the event took place
   "was_3d_secure_successful": true
 }
 ```
+
+<!-- prettier-ignore-start -->
+
 {{< schema-table key="credit_card" >}}
 - key: issuer_id_number
   type: request
@@ -854,10 +896,14 @@ where the event took place
     [Learn more about the /credit\_card/was\_3d\_secure\_successful input on our Knowledge Base.](https://support.maxmind.com/hc/en-us/articles/5450338695963-Credit-Card-and-Payments-Inputs#h%5F01G0YWK5CMEVG2YMTPQ11346QV)
 {{</ schema-table >}}
 
+<!-- prettier-ignore-end -->
+
 ### Order
+
 {{< anchor-target schema--request--order >}}
 
-`order` is a JSON object that contains information about the order associated with the event.
+`order` is a JSON object that contains information about the order associated
+with the event.
 
 ```json
 {
@@ -871,6 +917,8 @@ where the event took place
   "subaffiliate_id": "saf42"
 }
 ```
+
+<!-- prettier-ignore-start -->
 
 {{< schema-table key="order" >}}
 - key: amount
@@ -937,21 +985,23 @@ where the event took place
     [Learn more about the /order/has\_gift\_message input on our Knowledge Base.](https://support.maxmind.com/hc/en-us/articles/5452293435675-Order-and-Shopping-Cart-Inputs#h%5F01G0Z517AZEMSN8V3GWTV131S6)
 {{</ schema-table >}}
 
+<!-- prettier-ignore-end -->
+
 ### Shopping Cart
+
 {{< anchor-target schema--request--shopping-cart >}}
 
 `shopping_cart` is an array of shopping cart item objects.
 
 Passing hashed values for shopping cart items can increase the privacy of your
 customers' information while continuing to fulfill the needs for fraud
-detection. A suitable hashed value can be produced by using a cryptographic
-hash function and a fixed salt. Using a random salt is not recommended as that
-will result in different hashed values for the same plain value, which would
-make them ineffective for our fraud detection service. For more information,
-see:
+detection. A suitable hashed value can be produced by using a cryptographic hash
+function and a fixed salt. Using a random salt is not recommended as that will
+result in different hashed values for the same plain value, which would make
+them ineffective for our fraud detection service. For more information, see:
 
-* [OWASP Cryptographic Storage Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/Cryptographic_Storage_Cheat_Sheet.html)
-* [NIST FIPS Secure Hash Standard (SHS)](https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.180-4.pdf)
+- [OWASP Cryptographic Storage Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/Cryptographic_Storage_Cheat_Sheet.html)
+- [NIST FIPS Secure Hash Standard (SHS)](https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.180-4.pdf)
 
 [Learn more about the shopping cart inputs on our Knowledge Base.](https://support.maxmind.com/hc/en-us/articles/5452293435675-Order-and-Shopping-Cart-Inputs#h_01G0Z51P845R5DG7TCRNSKAD44)
 
@@ -971,6 +1021,8 @@ see:
   }
 ]
 ```
+
+<!-- prettier-ignore-start -->
 
 {{< schema-table key="shopping_cart" >}}
 - key: category
@@ -999,12 +1051,21 @@ see:
     The per-unit price of this item in the shopping cart. This should use the same currency as the order currency.
 {{</ schema-table >}}
 
+<!-- prettier-ignore-end -->
+
 ### Custom Inputs
+
 {{< anchor-target schema--request--custom-inputs >}}
 
-`custom_inputs` are optional inputs to the minFraud service that must first be defined for your account. Select Custom Inputs from the Account Portal in order to do so. See our [Custom Inputs documentation](https://support.maxmind.com/hc/en-us/articles/4408216546203-Use-Custom-Inputs) for more information.
+`custom_inputs` are optional inputs to the minFraud service that must first be
+defined for your account. Select Custom Inputs from the Account Portal in order
+to do so. See our
+[Custom Inputs documentation](https://support.maxmind.com/hc/en-us/articles/4408216546203-Use-Custom-Inputs)
+for more information.
 
-**You should never send a full credit card number as an input.** If you attempt to send a full credit card number as an input, the minFraud service will reject the input and issue a warning.
+**You should never send a full credit card number as an input.** If you attempt
+to send a full credit card number as an input, the minFraud service will reject
+the input and issue a warning.
 
 [Learn more about valid payment number inputs above.](#schema--request--credit-card)
 
@@ -1014,6 +1075,8 @@ see:
   "another_custom_input_key": false
 }
 ```
+
+<!-- prettier-ignore-start -->
 
 {{< schema-table key="custom_inputs" >}}
 - key: your_custom_BOOLEAN_key
@@ -1040,3 +1103,5 @@ see:
   description: |
     A custom key of your choice with a string value. The null character is not allowed.
 {{</ schema-table >}}
+
+<!-- prettier-ignore-end -->

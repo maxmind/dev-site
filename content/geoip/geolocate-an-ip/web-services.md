@@ -103,7 +103,9 @@ WebServiceClient client = new WebServiceClient.Builder(10, "LICENSEKEY").host("g
 const client = new WebServiceClient('10', 'LICENSEKEY');
 
 // To query the GeoLite web service, you must set the optional `host` parameter
-const client = new WebServiceClient('10', 'LICENSEKEY', {host: 'geolite.info'});
+const client = new WebServiceClient('10', 'LICENSEKEY', {
+  host: 'geolite.info',
+});
 ```
 
 ```php
@@ -205,7 +207,7 @@ const WebServiceClient = require('@maxmind/geoip2-node').WebServiceClient;
 
 // You can also use `client.city` or `client.insights`
 // `client.insights` is not available to GeoLite users
-client.country('142.1.1.1').then(response => {
+client.country('142.1.1.1').then((response) => {
   console.log(response.country.isoCode); // 'CA'
 });
 ```

@@ -16,8 +16,8 @@ querying the data in the following sections below:
 
 {{</ alert >}}
 
-This guide will show you how to import GeoIP or GeoLite databases into MySQL
-so that they can be easily queried and manipulated on your server.
+This guide will show you how to import GeoIP or GeoLite databases into MySQL so
+that they can be easily queried and manipulated on your server.
 
 Importing a CSV database consists of downloading the database, extracting it,
 creating tables to hold the data, and indexing those tables for faster querying.
@@ -187,6 +187,8 @@ where
 limit 1;
 ```
 
+<!-- prettier-ignore-start -->
+
 ```markdown
 +------------+-------------------------------+--------------------------------+-------------+----------+-----------+-----------------+
 | geoname_id | registered_country_geoname_id | represented_country_geoname_id | postal_code | latitude | longitude | accuracy_radius |
@@ -195,6 +197,8 @@ limit 1;
 +------------+-------------------------------+--------------------------------+-------------+----------+-----------+-----------------+
 1 row in set (0.03 sec)
 ```
+
+<!-- prettier-ignore-end -->
 
 While that yields the correct results, we notice that the query performance
 could be better. Let's improve it.
@@ -215,6 +219,8 @@ order by network_end
 limit 1;
 ```
 
+<!-- prettier-ignore-start -->
+
 ```markdown
 +------------+-------------------------------+--------------------------------+-------------+----------+-----------+-----------------+
 | geoname_id | registered_country_geoname_id | represented_country_geoname_id | postal_code | latitude | longitude | accuracy_radius |
@@ -223,6 +229,8 @@ limit 1;
 +------------+-------------------------------+--------------------------------+-------------+----------+-----------+-----------------+
 1 row in set (0.00 sec)
 ```
+
+<!-- prettier-ignore-end -->
 
 While that addresses the performance concern we've had with the previous query,
 this query will still perform poorly for addresses not contained in our GeoIP
@@ -263,6 +271,8 @@ from (
 where inet6_aton('214.0.0.0') <= network_end;
 ```
 
+<!-- prettier-ignore-start -->
+
 ```markdown
 +------------+-------------------------------+--------------------------------+-------------+----------+-----------+-----------------+
 | geoname_id | registered_country_geoname_id | represented_country_geoname_id | postal_code | latitude | longitude | accuracy_radius |
@@ -271,6 +281,8 @@ where inet6_aton('214.0.0.0') <= network_end;
 +------------+-------------------------------+--------------------------------+-------------+----------+-----------+-----------------+
 1 row in set (0.00 sec)
 ```
+
+<!-- prettier-ignore-end -->
 
 ```sql
 select geoname_id, registered_country_geoname_id, represented_country_geoname_id,
@@ -395,6 +407,8 @@ left join geoip2_location location on (
 where inet6_aton('214.0.0.0') <= network_end;
 ```
 
+<!-- prettier-ignore-start -->
+
 ```markdown
 +----------+-----------+-----------------+----------------+---------------+--------------------+-----------+
 | latitude | longitude | accuracy_radius | continent_name | country_name  | subdivision_1_name | city_name |
@@ -403,6 +417,8 @@ where inet6_aton('214.0.0.0') <= network_end;
 +----------+-----------+-----------------+----------------+---------------+--------------------+-----------+
 1 row in set (0.00 sec)
 ```
+
+<!-- prettier-ignore-end -->
 
 Here we were only interested in English results, but we can adjust our join
 condition if we were interested in different or additional languages.
@@ -454,6 +470,8 @@ left join geoip2_location represented_country on (
 where inet6_aton('214.0.0.0') <= network_end;
 ```
 
+<!-- prettier-ignore-start -->
+
 ```markdown
 +----------+-----------+-----------------+-------------------------+-----------------------+-----------------------------+--------------------+-----------------------------------+---------------------------------+------------------------------------+----------------------------------+
 | latitude | longitude | accuracy_radius | location_continent_name | location_country_name | location_subdivision_1_name | location_city_name | registered_country_continent_name | registered_country_country_name | represented_country_continent_name | represented_country_country_name |
@@ -462,3 +480,5 @@ where inet6_aton('214.0.0.0') <= network_end;
 +----------+-----------+-----------------+-------------------------+-----------------------+-----------------------------+--------------------+-----------------------------------+---------------------------------+------------------------------------+----------------------------------+
 1 row in set (0.00 sec)
 ```
+
+<!-- prettier-ignore-end -->

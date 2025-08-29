@@ -1,7 +1,7 @@
 ---
 draft: false
 title: minFraud API Responses
-type: "has-toc"
+type: 'has-toc'
 ---
 
 ## Headers
@@ -10,6 +10,7 @@ The `Content-Type` for a successful response varies based on the service as
 outlined below:
 
 {{< rawhtml >}}
+
 <div class="table">
   <table>
     <thead>
@@ -20,27 +21,24 @@ outlined below:
     </thead>
     <tbody>
       <tr>
+        <td>Score</td>
         <td>
-          Score
-        </td>
-        <td>
-          `application/vnd.maxmind.com-minfraud-score+json; charset=UTF-8; version=2.0`
-        </td>
-      </tr>
-      <tr>
-        <td>
-          Insights
-        </td>
-        <td>
-          `application/vnd.maxmind.com-minfraud-insights+json; charset=UTF-8; version=2.0`
+          `application/vnd.maxmind.com-minfraud-score+json; charset=UTF-8;
+          version=2.0`
         </td>
       </tr>
       <tr>
+        <td>Insights</td>
         <td>
-          Factors
+          `application/vnd.maxmind.com-minfraud-insights+json; charset=UTF-8;
+          version=2.0`
         </td>
+      </tr>
+      <tr>
+        <td>Factors</td>
         <td>
-          `application/vnd.maxmind.com-minfraud-factors+json; charset=UTF-8; version=2.0`
+          `application/vnd.maxmind.com-minfraud-factors+json; charset=UTF-8;
+          version=2.0`
         </td>
       </tr>
     </tbody>
@@ -74,6 +72,7 @@ In addition to the errors documented below, client code should also be prepared
 to handle any valid HTTP `4xx` or `5xx` status code.
 
 {{< rawhtml >}}
+
 <div class="table">
   <table>
     <thead>
@@ -99,30 +98,73 @@ to handle any valid HTTP `4xx` or `5xx` status code.
       <tr>
         <td><code>AUTHORIZATION_INVALID</code></td>
         <td>401 Unauthorized</td>
-        <td>You have supplied an invalid <a href="https://www.maxmind.com/en/accounts/current/license-key">MaxMind account ID and/or license key</a> in the <a href="/minfraud/api-documentation/requests#authorization-and-security">Authorization</a> header.</td>
+        <td>
+          You have supplied an invalid
+          <a href="https://www.maxmind.com/en/accounts/current/license-key"
+            >MaxMind account ID and/or license key</a
+          >
+          in the
+          <a
+            href="/minfraud/api-documentation/requests#authorization-and-security"
+            >Authorization</a
+          >
+          header.
+        </td>
       </tr>
       <tr>
         <td><code>LICENSE_KEY_REQUIRED</code></td>
         <td>401 Unauthorized</td>
-        <td>You have not supplied a <a href="https://www.maxmind.com/en/accounts/current/license-key">MaxMind license key</a> in the <a href="/minfraud/api-documentation/requests#authorization-and-security">Authorization</a> header.</td>
+        <td>
+          You have not supplied a
+          <a href="https://www.maxmind.com/en/accounts/current/license-key"
+            >MaxMind license key</a
+          >
+          in the
+          <a
+            href="/minfraud/api-documentation/requests#authorization-and-security"
+            >Authorization</a
+          >
+          header.
+        </td>
       </tr>
       <tr>
         <td><code>ACCOUNT_ID_REQUIRED</code></td>
         <td>401 Unauthorized</td>
-        <td>You have not supplied a <a href="https://support.maxmind.com/hc/en-us/articles/4412951066779-Find-my-Account-ID">MaxMind account ID</a> in the <a href="/minfraud/api-documentation/requests#authorization-and-security">Authorization</a> header.
-</td>
+        <td>
+          You have not supplied a
+          <a
+            href="https://support.maxmind.com/hc/en-us/articles/4412951066779-Find-my-Account-ID"
+            >MaxMind account ID</a
+          >
+          in the
+          <a
+            href="/minfraud/api-documentation/requests#authorization-and-security"
+            >Authorization</a
+          >
+          header.
+        </td>
       </tr>
       <tr>
         <td><code>INSUFFICIENT_FUNDS</code></td>
         <td>402 Payment Required</td>
-        <td>The license key you have provided does not have sufficient funds to use this service. Please <a href="https://www.maxmind.com/en/solutions/minfraud-services#buy-now">purchase more service credits</a>.
-</td>
+        <td>
+          The license key you have provided does not have sufficient funds to
+          use this service. Please
+          <a
+            href="https://www.maxmind.com/en/solutions/minfraud-services#buy-now"
+            >purchase more service credits</a
+          >.
+        </td>
       </tr>
       <tr>
         <td><code>PERMISSION_REQUIRED</code></td>
         <td>403 Forbidden</td>
         <td>
-          You do not have permission to use the service. Please <a href="https://support.maxmind.com/hc/en-us/requests/new">contact our support team</a> for more information.
+          You do not have permission to use the service. Please
+          <a href="https://support.maxmind.com/hc/en-us/requests/new"
+            >contact our support team</a
+          >
+          for more information.
         </td>
       </tr>
       <tr>
@@ -137,18 +179,19 @@ to handle any valid HTTP `4xx` or `5xx` status code.
         <td>(none)</td>
         <td>415 Unsupported Media Type</td>
         <td>
-          Your request included a <code>Content-Type</code> header that is not supported. For
-          <code>GET</code> requests, this means the web service cannot return content of that
-          type. For <code>PUT</code> and <code>POST</code> queries, this means the web service cannot
-          parse a request body of that type.
+          Your request included a <code>Content-Type</code> header that is not
+          supported. For <code>GET</code> requests, this means the web service
+          cannot return content of that type. For <code>PUT</code> and
+          <code>POST</code> queries, this means the web service cannot parse a
+          request body of that type.
         </td>
       </tr>
       <tr>
         <td>(none)</td>
         <td>503 Service Not Available</td>
         <td>
-          There is a problem with the web service server. You can try this request
-          again later.
+          There is a problem with the web service server. You can try this
+          request again later.
         </td>
       </tr>
     </tbody>
@@ -167,18 +210,19 @@ document.
 The data returned in the document will be in UTF-8 encoding.
 
 Note that a given key and value may be omitted from the response entirely if
-there is no relevant information to include. For example, if you do not pass
-any information about the credit card in your request, then the response will
-not contain a `credit_card` key or value.
+there is no relevant information to include. For example, if you do not pass any
+information about the credit card in your request, then the response will not
+contain a `credit_card` key or value.
 
 For full examples of response bodies, select one of the following:
 
-* [minFraud Score Body Example](#minfraud-score-body-example)
-* [minFraud Insights Body Example](#minfraud-insights-body-example)
-* [minFraud Factors Body Example](#minfraud-factors-body-example)
-* [Error Body Example](#error-body-example)
+- [minFraud Score Body Example](#minfraud-score-body-example)
+- [minFraud Insights Body Example](#minfraud-insights-body-example)
+- [minFraud Factors Body Example](#minfraud-factors-body-example)
+- [Error Body Example](#error-body-example)
 
 ### Top-Level Fields
+
 {{< anchor-target schema--response >}}
 
 ```json
@@ -200,6 +244,8 @@ For full examples of response bodies, select one of the following:
   "warnings": [...]
 }
 ```
+
+<!-- prettier-ignore-start -->
 
 {{< schema-table key="" >}}
 - key: id
@@ -343,23 +389,32 @@ For full examples of response bodies, select one of the following:
     [See more](#warnings).
 {{</ schema-table >}}
 
+<!-- prettier-ignore-end -->
+
 ### IP Address
+
 {{< anchor-target schema--response--ip-address >}}
 
-For minFraud Score, this object only contains the `risk` for the IP address. For minFraud Insights and Factors, the object is the [GeoIP Insights response body](/geoip/docs/web-services/responses/#geoip2-insights-body-example) with four modifications:
+For minFraud Score, this object only contains the `risk` for the IP address. For
+minFraud Insights and Factors, the object is the
+[GeoIP Insights response body](/geoip/docs/web-services/responses/#geoip2-insights-body-example)
+with four modifications:
 
 1. `risk` has been added directly to the `ip_address` object
 2. `local_time` has been added to the `location` sub-object
 3. The `maxmind` object is not present. See below for descriptions.
 4. minFraud Insights and Factors return the following anonymous IP outputs:
-   * `is_anonymous`
-   * `is_anonymous_vpn`
-   * `is_hosting_provider`
-   * `is_public_proxy`
-   * `is_residential_proxy`
-   * `is_tor_exit_node`
+   - `is_anonymous`
+   - `is_anonymous_vpn`
+   - `is_hosting_provider`
+   - `is_public_proxy`
+   - `is_residential_proxy`
+   - `is_tor_exit_node`
 
-See the [GeoIP Insights response body](/geoip/docs/web-services/responses/#geoip2-insights-body-example) for more information.
+See the
+[GeoIP Insights response body](/geoip/docs/web-services/responses/#geoip2-insights-body-example)
+for more information.
+
 ```json
 {
   "risk": 0.01,
@@ -505,6 +560,8 @@ See the [GeoIP Insights response body](/geoip/docs/web-services/responses/#geoip
 }
 ```
 
+<!-- prettier-ignore-start -->
+
 {{< schema-table key="ip_address" >}}
 - key: risk
   type: response
@@ -542,12 +599,17 @@ See the [GeoIP Insights response body](/geoip/docs/web-services/responses/#geoip
     [Learn how to use IP risk reasons for risk analysis on our Knowledge Base.](https://support.maxmind.com/hc/en-us/articles/4408418812827-IP-Risk-Reasons)
 {{</ schema-table >}}
 
+<!-- prettier-ignore-end -->
+
 ### IP Address > Country
+
 {{< anchor-target schema--response--ip-address--country >}}
 
-This object contains country-level geolocation data associated with the IP address associated with the event
+This object contains country-level geolocation data associated with the IP
+address associated with the event
 
-[See the GeoIP Insights response body](/geoip/docs/web-services/responses/#country) for more information.
+[See the GeoIP Insights response body](/geoip/docs/web-services/responses/#country)
+for more information.
 
 ```json
 {
@@ -569,11 +631,14 @@ This object contains country-level geolocation data associated with the IP addre
 ```
 
 ### IP Address > Location
+
 {{< anchor-target schema--response--ip-address--location >}}
 
-This object contains city-level geolocation data associated with the IP address associated with the event.
+This object contains city-level geolocation data associated with the IP address
+associated with the event.
 
-[See the GeoIP Insights response body](/geoip/docs/web-services/responses/#location) for more information.
+[See the GeoIP Insights response body](/geoip/docs/web-services/responses/#location)
+for more information.
 
 ```json
 {
@@ -587,6 +652,9 @@ This object contains city-level geolocation data associated with the IP address 
   "time_zone": "America/Los_Angeles"
 }
 ```
+
+<!-- prettier-ignore-start -->
+
 {{< schema-table key="ip_address--location" >}}
 - key: local_time
   type: response
@@ -598,10 +666,14 @@ This object contains city-level geolocation data associated with the IP address 
     The date and time of the transaction in the time zone associated with the IP address. The value is formatted according to [RFC 3339](https://tools.ietf.org/html/rfc3339). For instance, the local time in Boston might be returned as`2015-04-27T19:17:24-04:00`.
 {{</ schema-table >}}
 
+<!-- prettier-ignore-end -->
+
 ### IP Address > Risk Reasons
+
 {{< anchor-target schema--response--ip-address--risk-reasons >}}
 
-This array contains IP Address Risk Reason objects identifying the reasons why the IP address received the associated risk.
+This array contains IP Address Risk Reason objects identifying the reasons why
+the IP address received the associated risk.
 
 ```json
 [
@@ -615,6 +687,8 @@ This array contains IP Address Risk Reason objects identifying the reasons why t
   }
 ]
 ```
+
+<!-- prettier-ignore-start -->
 
 {{< schema-table key="ip_address--risk_reasons" >}}
 - key: code
@@ -648,10 +722,16 @@ This array contains IP Address Risk Reason objects identifying the reasons why t
     [Learn how to use IP risk reasons for risk analysis on our Knowledge Base.](https://support.maxmind.com/hc/en-us/articles/4408418812827-IP-Risk-Reasons)
 {{</ schema-table >}}
 
+<!-- prettier-ignore-end -->
+
 ### Credit Card
+
 {{< anchor-target schema--response--credit-card >}}
 
-This object contains minFraud information related to the credit card. If an issuer ID number (IIN) was not provided in the request, this object will not be present in the response.
+This object contains minFraud information related to the credit card. If an
+issuer ID number (IIN) was not provided in the request, this object will not be
+present in the response.
+
 ```json
 {
   "brand": "Visa",
@@ -669,6 +749,9 @@ This object contains minFraud information related to the credit card. If an issu
   "type": "credit"
 }
 ```
+
+<!-- prettier-ignore-start -->
+
 {{< schema-table key="credit_card" >}}
 - key: issuer
   type: response
@@ -745,10 +828,15 @@ This object contains minFraud information related to the credit card. If an issu
     * `debit`
 {{</ schema-table >}}
 
+<!-- prettier-ignore-end -->
+
 ### Credit Card > Issuer
+
 {{< anchor-target schema--response--credit-card--issuer >}}
 
-This is a sub-object of `credit_card` that contains information related to the issuer of the card.
+This is a sub-object of `credit_card` that contains information related to the
+issuer of the card.
+
 ```json
 {
   "matches_provided_name": true,
@@ -757,6 +845,9 @@ This is a sub-object of `credit_card` that contains information related to the i
   "phone_number": "800-732-9194"
 }
 ```
+
+<!-- prettier-ignore-start -->
+
 {{< schema-table key="credit_card--issuer" >}}
 - key: name
   type: response
@@ -792,10 +883,15 @@ This is a sub-object of `credit_card` that contains information related to the i
     This field is `true` if the phone number matches the number provided in the request for the card issuer. It is `false` if the number does not match. The field is not included if either no phone number or issuer ID number (IIN) is provided in the request or if MaxMind does not have a phone number associated with the IIN.
 {{</ schema-table >}}
 
+<!-- prettier-ignore-end -->
+
 ### Device
+
 {{< anchor-target schema--response--device >}}
 
-This object contains information about the device that MaxMind believes is associated with the IP address passed in the request.
+This object contains information about the device that MaxMind believes is
+associated with the IP address passed in the request.
+
 ```json
 {
   "confidence": 99,
@@ -804,6 +900,9 @@ This object contains information about the device that MaxMind believes is assoc
   "local_time": "2018-01-02T10:40:11-08:00"
 }
 ```
+
+<!-- prettier-ignore-start -->
+
 {{< schema-table key="device" >}}
 - key: confidence
   type: response
@@ -845,7 +944,10 @@ This object contains information about the device that MaxMind believes is assoc
     [Learn how to use local time data for risk analysis on our Knowledge Base.](https://support.maxmind.com/hc/en-us/articles/4408634894107-Device-Risk-Data#h%5F01FN6V22JSGD7JP7Y3C9YBERHE)
 {{</ schema-table >}}
 
+<!-- prettier-ignore-end -->
+
 ### Email
+
 {{< anchor-target schema--response--email >}}
 
 ```json
@@ -859,6 +961,9 @@ This object contains information about the device that MaxMind believes is assoc
   "is_high_risk": true
 }
 ```
+
+<!-- prettier-ignore-start -->
+
 {{< schema-table key="email" >}}
 - key: domain
   type: response
@@ -915,6 +1020,9 @@ This is a sub-object of `email` that contains information related to the domain.
   "first_seen": "2015-01-20"
 }
 ```
+
+<!-- prettier-ignore-start -->
+
 {{< schema-table key="email--domain" >}}
 - key: first_seen
   type: response
@@ -928,7 +1036,10 @@ This is a sub-object of `email` that contains information related to the domain.
     [Learn how to use email first seen data for risk analysis on our Knowledge Base.](https://support.maxmind.com/hc/en-us/articles/4408562891803-Email-Risk-Data#h%5F01FN6V59SHH0J0MRH041K46NE0)
 {{</ schema-table >}}
 
+<!-- prettier-ignore-end -->
+
 ### Shipping Address
+
 {{< anchor-target schema--response--shipping-address >}}
 
 ```json
@@ -942,6 +1053,9 @@ This is a sub-object of `email` that contains information related to the domain.
   "longitude": -122.313
 }
 ```
+
+<!-- prettier-ignore-start -->
+
 {{< schema-table key="shipping_address" >}}
 - key: is_high_risk
   type: response
@@ -1010,7 +1124,10 @@ This is a sub-object of `email` that contains information related to the domain.
     [Learn how to use the IP location to country check for risk analysis on our Knowledge Base.](https://support.maxmind.com/hc/en-us/articles/4408737039515-Billing-and-Shipping-Address-Risk-Data#h%5F01FN6TVDXWSBQR55FJ0K2KWGJQ)
 {{</ schema-table >}}
 
+<!-- prettier-ignore-end -->
+
 ### Shipping Phone
+
 {{< anchor-target schema--response--shipping-phone >}}
 
 ```json
@@ -1022,6 +1139,9 @@ This is a sub-object of `email` that contains information related to the domain.
   "number_type": "mobile"
 }
 ```
+
+<!-- prettier-ignore-start -->
+
 {{< schema-table key="shipping_phone" >}}
 - key: country
   type: response
@@ -1060,7 +1180,10 @@ This is a sub-object of `email` that contains information related to the domain.
     This field is `true` if the phone number's prefix is commonly associated with the shipping postal code. It is `false` if the prefix is not associated with the postal code. This key is only present when the phone number is in the US, the number prefix is in our database, and the postal code and country are provided in the request.
 {{</ schema-table >}}
 
+<!-- prettier-ignore-end -->
+
 ### Billing Address
+
 {{< anchor-target schema--response--billing-address >}}
 
 ```json
@@ -1072,6 +1195,9 @@ This is a sub-object of `email` that contains information related to the domain.
   "longitude": -122.421
 }
 ```
+
+<!-- prettier-ignore-start -->
+
 {{< schema-table key="billing_address" >}}
 - key: is_postal_in_city
   type: response
@@ -1122,7 +1248,10 @@ This is a sub-object of `email` that contains information related to the domain.
     [Learn how to use the IP location to country check for risk analysis on our Knowledge Base.](https://support.maxmind.com/hc/en-us/articles/4408737039515-Billing-and-Shipping-Address-Risk-Data#h%5F01FN6TVDXWSBQR55FJ0K2KWGJQ)
 {{</ schema-table >}}
 
+<!-- prettier-ignore-end -->
+
 ### Billing Phone
+
 {{< anchor-target schema--response--billing-phone >}}
 
 ```json
@@ -1134,6 +1263,8 @@ This is a sub-object of `email` that contains information related to the domain.
   "number_type": "fixed"
 }
 ```
+
+<!-- prettier-ignore-start -->
 
 {{< schema-table key="billing_phone" >}}
 - key: country
@@ -1173,10 +1304,15 @@ This is a sub-object of `email` that contains information related to the domain.
     This field is `true` if the phone number's prefix is commonly associated with the billing postal code. It is `false` if the prefix is not associated with the postal code. This key is only present when the phone number is in the US, the number prefix is in our database, and the postal code and country are provided in the request.
 {{</ schema-table >}}
 
+<!-- prettier-ignore-end -->
+
 ### Disposition
+
 {{< anchor-target schema--response--disposition >}}
 
-This object contains information about how a request was handled by the custom rules you have defined. If your account does not have any custom rules defined, then this object will not be present in the response.
+This object contains information about how a request was handled by the custom
+rules you have defined. If your account does not have any custom rules defined,
+then this object will not be present in the response.
 
 [Learn about custom rules and dispositions on our Knowledge Base.](https://support.maxmind.com/hc/en-us/articles/4408801942811-Use-Custom-Rules-and-Dispositions)
 
@@ -1187,6 +1323,9 @@ This object contains information about how a request was handled by the custom r
   "rule_label": "my_custom_rule"
 }
 ```
+
+<!-- prettier-ignore-start -->
+
 {{< schema-table key="disposition" >}}
 - key: action
   type: response
@@ -1228,13 +1367,16 @@ This object contains information about how a request was handled by the custom r
     The custom rule that was triggered. If you do not have custom rules set up, the triggered custom rule does not have a label, or no custom rule was triggered, the field will not be included in the response.
 {{</ schema-table >}}
 
+<!-- prettier-ignore-end -->
+
 ### Risk Score Reasons
+
 {{< anchor-target schema--response--risk-score-reasons >}}
 
 This array contains risk score reason objects. Risk score reasons are usually
-only returned for medium to high risk transactions. If there were no
-significant changes to the risk score due to these reasons, then this array
-will not be present in the response.
+only returned for medium to high risk transactions. If there were no significant
+changes to the risk score due to these reasons, then this array will not be
+present in the response.
 
 ```json
 [
@@ -1281,6 +1423,8 @@ will not be present in the response.
 ]
 ```
 
+<!-- prettier-ignore-start -->
+
 {{< schema-table key="risk_score_reason" >}}
 - key: multiplier
   type: response
@@ -1320,10 +1464,15 @@ will not be present in the response.
     | ORG\_DISTANCE\_RISK                        | The risk of the ISP combined with the distance between the billing address and IP address location raised the overall risk score                                                |
 {{</ schema-table >}}
 
+<!-- prettier-ignore-end -->
+
 ### Warnings
+
 {{< anchor-target schema--response--warnings >}}
 
-This array contains warning objects detailing issues with the request that was sent such as invalid or unknown inputs. It is highly recommended that you check this array for issues when integrating the web service.
+This array contains warning objects detailing issues with the request that was
+sent such as invalid or unknown inputs. It is highly recommended that you check
+this array for issues when integrating the web service.
 
 ```json
 [
@@ -1334,6 +1483,8 @@ This array contains warning objects detailing issues with the request that was s
   }
 ]
 ```
+
+<!-- prettier-ignore-start -->
 
 {{< schema-table key="warnings" >}}
 - key: code
@@ -1383,6 +1534,8 @@ This array contains warning objects detailing issues with the request that was s
   description: |
     A [JSON Pointer](https://tools.ietf.org/html/rfc6901) to the input field that the warning is associated with. For instance, if the warning was about the billing city, this would be `/billing/city`. If it was for the price in the second shopping cart item, it would be `/shopping_cart/1/price`
 {{</ schema-table >}}
+
+<!-- prettier-ignore-end -->
 
 ## Example Response Bodies
 
@@ -1641,6 +1794,7 @@ Factors services, and a full example of the JSON body document for an error.
   }
 }
 ```
+
 ### minFraud Factors Body Example
 
 ```json
@@ -1744,46 +1898,46 @@ Factors services, and a full example of the JSON body document for an error.
       "type": "military"
     },
     "risk_reasons": [
-  {
-    "multiplier": 45,
-    "reasons": [
       {
-        "code": "ANONYMOUS_IP",
-        "reason": "The Anonymous IP address raised the overall risk score"
+        "multiplier": 45,
+        "reasons": [
+          {
+            "code": "ANONYMOUS_IP",
+            "reason": "The Anonymous IP address raised the overall risk score"
+          },
+          {
+            "code": "IP_ISSUER_ID_NUMBER_VELOCITY",
+            "reason": "The number of distinct Issuer ID Numbers found in the velocity check on IP address raised the overall risk score"
+          }
+        ]
       },
       {
-        "code": "IP_ISSUER_ID_NUMBER_VELOCITY",
-        "reason": "The number of distinct Issuer ID Numbers found in the velocity check on IP address raised the overall risk score"
-      }
-    ]
-  },
-  {
-    "multiplier": 1.8,
-    "reasons": [
+        "multiplier": 1.8,
+        "reasons": [
+          {
+            "code": "TIME_OF_DAY",
+            "reason": "The local time of day of the request raised the overall risk score"
+          }
+        ]
+      },
       {
-        "code": "TIME_OF_DAY",
-        "reason": "The local time of day of the request raised the overall risk score"
-      }
-    ]
-  },
-  {
-    "multiplier": 1.6,
-    "reasons": [
+        "multiplier": 1.6,
+        "reasons": [
+          {
+            "code": "EMAIL_DOMAIN_NEW",
+            "reason": "The email domain being recently seen for the first time in the minFraud network raised the overall risk score"
+          }
+        ]
+      },
       {
-        "code": "EMAIL_DOMAIN_NEW",
-        "reason": "The email domain being recently seen for the first time in the minFraud network raised the overall risk score"
+        "multiplier": 0.34,
+        "reasons": [
+          {
+            "code": "PHONE_ACTIVITY",
+            "reason": "minFraud network activity of the phone number lowered the overall risk score"
+          }
+        ]
       }
-    ]
-  },
-  {
-    "multiplier": 0.34,
-    "reasons": [
-      {
-        "code": "PHONE_ACTIVITY",
-        "reason": "minFraud network activity of the phone number lowered the overall risk score"
-      }
-    ]
-  }
     ],
     "subdivisions": [
       {
