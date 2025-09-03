@@ -19,9 +19,9 @@
         {{ $key := .key }}
         {{ $fragment := printf "schema--response--%s__%s" $parentKey $key }}
         
-        {{ $hasCountry := .country | default false }}
-        {{ $hasCity := .city | default false }}
-        {{ $hasInsights := .insights | default false }}
+        {{ $hasCountry := eq (.country | default "false") "true" }}
+        {{ $hasCity := eq (.city | default "false") "true" }}
+        {{ $hasInsights := eq (.insights | default "false") "true" }}
         
         <tr>
           <td class="schema__key-cell">
