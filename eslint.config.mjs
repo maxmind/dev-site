@@ -179,6 +179,7 @@ export default tseslint.config(
   }, {
   files: [
     'content/**',
+    'bin/**/*.ts',
   ],
 
   rules: {
