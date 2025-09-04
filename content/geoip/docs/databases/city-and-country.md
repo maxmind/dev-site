@@ -6,8 +6,8 @@ title: GeoIP and GeoLite City and Country Databases
 Determine the country, subdivisions (regions), city, and postal code associated
 with IPv4 and IPv6 addresses worldwide.
 
-Terms and pricing for the GeoIP City and GeoIP Country databases may be found
-on our product pages:
+Terms and pricing for the GeoIP City and GeoIP Country databases may be found on
+our product pages:
 
 - [GeoIP City](https://www.maxmind.com/en/geoip2-city)
 - [GeoIP Country](https://www.maxmind.com/en/geoip2-country)
@@ -29,6 +29,7 @@ The downloaded .zip file contains a single directory which in turn contains 13
 files:
 
 {{< rawhtml >}}
+
 <div class="table">
   <table>
     <tbody>
@@ -62,10 +63,15 @@ files:
       </tr>
 
       <tr>
-        <td><code>{GeoIP2,GeoLite2}-{City,Country}-Locations-{locale}.csv</code></td>
-        <td>Eight CSV files containing data location for each locale code, where <code>{locale}</code> can be “de”, "en", “es”, “fr”, “ja”, “pt-BR”, “ru”, and “zh-CN” .</td>
+        <td>
+          <code>{GeoIP2,GeoLite2}-{City,Country}-Locations-{locale}.csv</code>
+        </td>
+        <td>
+          Eight CSV files containing data location for each locale code, where
+          <code>{locale}</code> can be “de”, "en", “es”, “fr”, “ja”, “pt-BR”,
+          “ru”, and “zh-CN” .
+        </td>
       </tr>
-
     </tbody>
   </table>
 </div>
@@ -118,49 +124,50 @@ blocks files have the same columns as the City database.
 ### CSV Example Files
 
 {{< csv-example-files >}}
-* [GeoIP2-City-CSV\_Example.zip](/static/GeoIP2-City-CSV_Example.zip)
-* [GeoIP2-Country-CSV\_Example.zip](/static/GeoIP2-Country-CSV_Example.zip)
-{{</ csv-example-files >}}
+
+- [GeoIP2-City-CSV_Example.zip](/static/GeoIP2-City-CSV_Example.zip)
+- [GeoIP2-Country-CSV_Example.zip](/static/GeoIP2-Country-CSV_Example.zip)
+  {{</ csv-example-files >}}
 
 ### MMDB Example Files
 
 {{< mmdb-example-files >}}
-* [GeoIP2-City-Test.mmdb](https://github.com/maxmind/MaxMind-DB/blob/main/test-data/GeoIP2-City-Test.mmdb)
-* [GeoIP2-Country-Test.mmdb](https://github.com/maxmind/MaxMind-DB/blob/main/test-data/GeoIP2-Country-Test.mmdb)
-{{</ mmdb-example-files >}}
+
+- [GeoIP2-City-Test.mmdb](https://github.com/maxmind/MaxMind-DB/blob/main/test-data/GeoIP2-City-Test.mmdb)
+- [GeoIP2-Country-Test.mmdb](https://github.com/maxmind/MaxMind-DB/blob/main/test-data/GeoIP2-Country-Test.mmdb)
+  {{</ mmdb-example-files >}}
 
 ## Database Sizes
 
-{{< db-sizes-table dateRange="August to October 2024">}}
-  {{< db-sizes-row
-    databaseName="GeoIP City"
-    csvSizeRange="583 MB - 637 MB"
-    mmdbSizeRange="108 MB - 113 MB"
-    ipv4Range="6,360,000 - 7,260,000"
-    ipv6Range="2,580,000 - 2,970,000"
-  >}}
-  {{< db-sizes-row
-    databaseName="GeoIP Country"
-    csvSizeRange="30.2 MB - 35.6 MB"
-    mmdbSizeRange="6.57 MB - 7.16 MB"
-    ipv4Range="482,000 - 505,000"
-    ipv6Range="284,000 - 389,000"
-  >}}
-  {{< db-sizes-row
-    databaseName="GeoLite City"
-    csvSizeRange="231.5 MB - 265.0 MB"
-    mmdbSizeRange="50.8 MB - 54.2 MB"
-    ipv4Range="2,370,000 - 3,400,000"
-    ipv6Range="1,200,000 - 1,670,000"
-  >}}
-  {{< db-sizes-row
-    databaseName="GeoLite Country"
-    csvSizeRange="30.6 MB - 38.2 MB"
-    mmdbSizeRange="6.61 MB - 7.57 MB"
-    ipv4Range="478,000 - 496,000"
-    ipv6Range="297,000 - 476,000"
-  >}}
-{{</ db-sizes-table>}}
+<!-- prettier-ignore-start -->
+
+{{< db-sizes-table dateRange="August to October 2024" >}}
+- databaseName: "GeoIP City"
+  csvSizeRange: "583 MB - 637 MB"
+  mmdbSizeRange: "108 MB - 113 MB"
+  ipv4Range: "6,360,000 - 7,260,000"
+  ipv6Range: "2,580,000 - 2,970,000"
+
+- databaseName: "GeoIP Country"
+  csvSizeRange: "30.2 MB - 35.6 MB"
+  mmdbSizeRange: "6.57 MB - 7.16 MB"
+  ipv4Range: "482,000 - 505,000"
+  ipv6Range: "284,000 - 389,000"
+
+- databaseName: "GeoLite City"
+  csvSizeRange: "231.5 MB - 265.0 MB"
+  mmdbSizeRange: "50.8 MB - 54.2 MB"
+  ipv4Range: "2,370,000 - 3,400,000"
+  ipv6Range: "1,200,000 - 1,670,000"
+
+- databaseName: "GeoLite Country"
+  csvSizeRange: "30.6 MB - 38.2 MB"
+  mmdbSizeRange: "6.61 MB - 7.57 MB"
+  ipv4Range: "478,000 - 496,000"
+  ipv6Range: "297,000 - 476,000"
+{{< /db-sizes-table >}}
+
+<!-- prettier-ignore-end -->
 
 ## Database Changes
 

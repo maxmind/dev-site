@@ -31,39 +31,44 @@ These are named `GeoIP2-Connection-Type-Blocks-IPv4.csv` and
 `GeoIP2-Connection-Type-Blocks-IPv6.csv` respectively.
 
 {{< rawhtml >}}
+
 <div class="table">
-<table>
-  <tbody>
-    <tr>
+  <table>
+    <tbody>
+      <tr>
         <th>Name</th>
         <th>Type</th>
         <th>Description</th>
-    </tr>
+      </tr>
 
-    <tr>
+      <tr>
         <td>network</td>
         <td>IP network as a string</td>
         <td>
-          This is the IPv4 or IPv6 network in CIDR format such as
-          “2.21.92.0/29” or “2001:4b0::/80”. We offer a utility to convert
-          this column to start/end IPs or start/end integers. See <a
-          href="#conversion-utility">the conversion utility section</a> for
+          This is the IPv4 or IPv6 network in CIDR format such as “2.21.92.0/29”
+          or “2001:4b0::/80”. We offer a utility to convert this column to
+          start/end IPs or start/end integers. See
+          <a href="#conversion-utility">the conversion utility section</a> for
           details.
         </td>
-    </tr>
+      </tr>
 
-    <tr>
+      <tr>
         <td>connection_type</td>
         <td>string</td>
         <td>
-          One of the following values: <code>Cable/DSL</code>, <code>Cellular</code>, <code>Corporate</code>, or
+          One of the following values: <code>Cable/DSL</code>,
+          <code>Cellular</code>, <code>Corporate</code>, or
           <code>Satellite</code>. Additional values may be added in the future.
           <br />
-          <a href="https://support.maxmind.com/hc/en-us/articles/4408200231067-IP-Network-Data#h_01FN988THBX8RVERNTZ12BY2EC">Learn more about connection type data on our Knowledge Base.</a>
+          <a
+            href="https://support.maxmind.com/hc/en-us/articles/4408200231067-IP-Network-Data#h_01FN988THBX8RVERNTZ12BY2EC"
+            >Learn more about connection type data on our Knowledge Base.</a
+          >
         </td>
-    </tr>
-  </tbody>
-</table>
+      </tr>
+    </tbody>
+  </table>
 </div>
 {{</ rawhtml >}}
 
@@ -78,26 +83,30 @@ These are named `GeoIP2-Connection-Type-Blocks-IPv4.csv` and
 ### CSV Example Files
 
 {{< csv-example-files >}}
-* [GeoIP2-Connection-Type-CSV\_Example.zip](/static/GeoIP2-Connection-Type-CSV_Example.zip)
-{{</ csv-example-files >}}
+
+- [GeoIP2-Connection-Type-CSV_Example.zip](/static/GeoIP2-Connection-Type-CSV_Example.zip)
+  {{</ csv-example-files >}}
 
 ### MMDB Example Files
 
 {{< mmdb-example-files >}}
-* [GeoIP2-Connection-Type-Test.mmdb](https://github.com/maxmind/MaxMind-DB/blob/main/test-data/GeoIP2-Connection-Type-Test.mmdb)
-{{</ mmdb-example-files >}}
+
+- [GeoIP2-Connection-Type-Test.mmdb](https://github.com/maxmind/MaxMind-DB/blob/main/test-data/GeoIP2-Connection-Type-Test.mmdb)
+  {{</ mmdb-example-files >}}
 
 ## Database Sizes
 
-{{< db-sizes-table dateRange="August to October 2024">}}
-  {{< db-sizes-row
-    databaseName="GeoIP Connection Type"
-    csvSizeRange="31.96 MB - 34.37 MB"
-    mmdbSizeRange="9.31 MB - 9.84 MB"
-    ipv4Range="971,000 - 1,076,000"
-    ipv6Range="210,000 - 225,000"
-  >}}
-{{</ db-sizes-table>}}
+<!-- prettier-ignore-start -->
+
+{{< db-sizes-table dateRange="August to October 2024" >}}
+- databaseName: "GeoIP Connection Type"
+  csvSizeRange: "31.96 MB - 34.37 MB"
+  mmdbSizeRange: "9.31 MB - 9.84 MB"
+  ipv4Range: "971,000 - 1,076,000"
+  ipv6Range: "210,000 - 225,000"
+{{< /db-sizes-table >}}
+
+<!-- prettier-ignore-end -->
 
 ## Database Changes
 

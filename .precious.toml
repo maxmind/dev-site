@@ -43,3 +43,35 @@ cmd = [
   "lint:cspell",
 ]
 ok-exit-codes = 0
+
+[commands.prettier-markdown]
+type = "both"
+include = [
+    "assets/**/*.md",
+    "content/**/*.md"
+]
+cmd = [
+    "npx",
+    "prettier",
+    "--parser",
+    "markdown",
+    "--prose-wrap",
+    "always",
+]
+lint-flags = "--check"
+tidy-flags = "--write"
+ok-exit-codes = 0
+lint-failure-exit-codes = 1
+ignore-stderr = ["Code style issues"]
+
+[commands.format-content]
+type = "tidy"
+cmd = [
+  "npm",
+  "run",
+  "format:rawhtml"
+]
+lint-flags = []
+path-args = "absolute-file"
+include = ["content/**/*.md"]
+ok-exit-codes = 0
