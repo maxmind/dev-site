@@ -3,6 +3,9 @@
     "baseUrl": ".",
     "lib": ["DOM", "ESNext", "dom.iterable"],
     "module": "ESNext",
+    "moduleResolution": "node",
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
     "noEmit": true,
     "skipLibCheck": true,
     "strict": true,
@@ -13,5 +16,5 @@
     "public",
     ".cache"
   ],
-  "include": ["./assets/js/**/*"]
+  "include": ["./assets/js/**/*", "./bin/**/*"]
 }
