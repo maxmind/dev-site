@@ -28,13 +28,19 @@ jobs:
       - name: Install Dart Sass
         run: sudo snap install dart-sass
 
-      - name: Install ubi, htmlq and html2markdown
-        uses: oalders/install-ubi-action@27bdce90e4b0e0a6c26023610ab03e375c6ed3e3 # 0.0.6
+      - uses: actions/setup-node@v5
         with:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          projects: |
-            JohannesKaufmann/html-to-markdown --exe html2markdown
-            mgdm/htmlq
+          node-version: '22'
+
+      - name: Get cached dependencies
+        uses: actions/cache@v4
+        with:
+          path: |
+            node_modules
+          key: node-modules-${{ hashFiles('**/package-lock.json') }}
+
+      - name: Install dependencies
+        run: npm ci
 
       - name: Build site
         run: ./build.sh
