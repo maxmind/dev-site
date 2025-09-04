@@ -14,6 +14,41 @@ const turndownService = new TurndownService({
 
 turndownService.use(tables);
 
+// Custom rule to handle code blocks with line numbers
+turndownService.addRule('codeWithLineNumbers', {
+  filter: function (node: Node) {
+    return (
+      node.nodeName === 'PRE' &&
+      (node as Element).querySelector('code') !== null
+    );
+  },
+  replacement: function (content: string, node: Node) {
+    const element = node as Element;
+    const codeElement = element.querySelector('code');
+    if (!codeElement) return content;
+
+    const language =
+      codeElement.getAttribute('data-lang') ||
+      codeElement.className.replace('language-', '') ||
+      '';
+
+    // Get the text content, removing line numbers
+    let cleanedCode = codeElement.textContent || '';
+
+    // Remove line numbers at the beginning of lines
+    cleanedCode = cleanedCode
+      .split('\n')
+      .map((line) => {
+        // Remove line numbers which may have leading spaces for alignment (e.g., " 1", " 2", "10")
+        // This regex matches optional spaces followed by digits at the start of the line
+        return line.replace(/^\s*\d+/, '');
+      })
+      .join('\n');
+
+    return '\n\n```' + language + '\n' + cleanedCode.trim() + '\n```\n\n';
+  },
+});
+
 async function convertHtmlToMarkdown(): Promise<void> {
   try {
     const htmlFiles = await glob('./public/**/*.html', {
