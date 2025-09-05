@@ -1,0 +1,1 @@
+| {{ .Get "databaseName" }} | {{ .Get "csvSizeRange" }} | {{ .Get "mmdbSizeRange" }} | {{ .Get "ipv4Range" }} | {{ .Get "ipv6Range" }} |
