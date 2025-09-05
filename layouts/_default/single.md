@@ -1,0 +1,1 @@
+{{- partial "clean-alerts.md" .Content -}}
