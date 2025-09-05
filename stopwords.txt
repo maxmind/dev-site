@@ -128,6 +128,7 @@ unhex
 vbnet
 Wana
 WDSL
+<<<<<<< HEAD
 boacompra
 boku
 bpoint
@@ -186,3 +187,4 @@ verepay
 vericheck
 vindicia
 vpos
+errorf
