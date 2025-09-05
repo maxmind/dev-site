@@ -3,158 +3,19 @@
 import * as fs from 'fs';
 import { glob } from 'glob';
 import { HTMLElement, parse } from 'node-html-parser';
-import { unified } from 'unified';
 import rehypeParse from 'rehype-parse';
 import rehypeRemark from 'rehype-remark';
 import remarkGfm from 'remark-gfm';
 import remarkStringify from 'remark-stringify';
-import { visit } from 'unist-util-visit';
-import type { Node } from 'unist';
-import type {
-  Root,
-  TableCell,
-  Code,
-  Text,
-  ListItem,
-  PhrasingContent,
-  RootContent,
-} from 'mdast';
+import { unified } from 'unified';
 
 // Create a unified processor for HTML to Markdown conversion
 const processor = unified()
-  .use(rehypeParse, { fragment: true })
+  .use(rehypeParse, {
+    fragment: true,
+  })
   .use(rehypeRemark)
   .use(remarkGfm)
-  .use(() => {
-    // Custom transformer to clean up table cells
-    return (tree: Root) => {
-      visit(tree, 'tableCell', (node: Node) => {
-        const tableCell = node as TableCell;
-        // Process each child of the table cell
-        if (tableCell.children) {
-          // Flatten nested paragraphs, lists, and clean up whitespace
-          const flattenedChildren: PhrasingContent[] = [];
-
-          // Note: Table cells can contain block content during processing,
-          // but we're flattening them to phrasing content
-          (tableCell.children as unknown as RootContent[]).forEach(
-            (child: RootContent) => {
-              if (child.type === 'paragraph') {
-                // Add paragraph children directly (without the paragraph wrapper)
-                flattenedChildren.push(...child.children);
-                // Add a space between paragraphs
-                if (flattenedChildren.length > 0) {
-                  flattenedChildren.push({ type: 'text', value: ' ' });
-                }
-              } else if (child.type === 'list') {
-                // Add a space before the list if there's content before it
-                if (flattenedChildren.length > 0) {
-                  flattenedChildren.push({ type: 'text', value: ' ' });
-                }
-
-                // Convert list items to inline format with commas
-                child.children.forEach((listItem: ListItem, index: number) => {
-                  if (index > 0) {
-                    // Add separator between list items
-                    flattenedChildren.push({ type: 'text', value: ', ' });
-                  }
-
-                  // Process list item children
-                  if (listItem.children) {
-                    listItem.children.forEach((listItemChild: RootContent) => {
-                      if (listItemChild.type === 'paragraph') {
-                        flattenedChildren.push(...listItemChild.children);
-                      } else if (
-                        listItemChild.type === 'text' ||
-                        listItemChild.type === 'emphasis' ||
-                        listItemChild.type === 'strong' ||
-                        listItemChild.type === 'link' ||
-                        listItemChild.type === 'inlineCode'
-                      ) {
-                        flattenedChildren.push(
-                          listItemChild as PhrasingContent
-                        );
-                      }
-                    });
-                  }
-                });
-              } else if (
-                child.type === 'text' ||
-                child.type === 'emphasis' ||
-                child.type === 'strong' ||
-                child.type === 'link' ||
-                child.type === 'inlineCode' ||
-                child.type === 'delete' ||
-                child.type === 'linkReference' ||
-                child.type === 'break' ||
-                child.type === 'image' ||
-                child.type === 'imageReference'
-              ) {
-                flattenedChildren.push(child as PhrasingContent);
-              }
-            }
-          );
-
-          // Clean up the flattened content
-          tableCell.children = flattenedChildren.filter(
-            (child: PhrasingContent, index: number) => {
-              // Remove duplicate spaces
-              if (
-                child.type === 'text' &&
-                child.value === ' ' &&
-                index > 0 &&
-                flattenedChildren[index - 1].type === 'text' &&
-                (flattenedChildren[index - 1] as Text).value === ' '
-              ) {
-                return false;
-              }
-              return true;
-            }
-          );
-
-          // Merge adjacent text nodes
-          const mergedChildren: PhrasingContent[] = [];
-          tableCell.children.forEach((child: PhrasingContent) => {
-            if (
-              child.type === 'text' &&
-              mergedChildren.length > 0 &&
-              mergedChildren[mergedChildren.length - 1].type === 'text'
-            ) {
-              (mergedChildren[mergedChildren.length - 1] as Text).value +=
-                child.value;
-            } else {
-              mergedChildren.push(child);
-            }
-          });
-
-          tableCell.children = mergedChildren;
-
-          // Clean up text content in the cell
-          tableCell.children.forEach((child: PhrasingContent) => {
-            if (child.type === 'text') {
-              // Replace multiple spaces and newlines with single space
-              child.value = child.value.replace(/\s+/g, ' ').trim();
-            }
-          });
-        }
-      });
-
-      // Also handle code blocks to remove line numbers
-      visit(tree, 'code', (node: Code) => {
-        if (node.value) {
-          // Remove line numbers at the beginning of lines
-          node.value = node.value
-            .split('\n')
-            .map((line: string) => {
-              // Remove line numbers which may have leading spaces for alignment
-              return line.replace(/^\s*\d+/, '');
-            })
-            .join('\n')
-            .trim();
-        }
-      });
-    };
-  })
   .use(remarkStringify, {
     bullet: '*',
     fences: true,
@@ -180,22 +41,110 @@ async function convertHtmlToMarkdown(): Promise<void> {
           root.querySelector('.page__content');
 
         if (pageContent) {
-          const file = await processor.process(pageContent.innerHTML);
+          let html = pageContent.innerHTML;
+
+          // Pre-process code blocks to remove line number spans
+          // Since node-html-parser might have issues with complex selectors,
+          // let's use a simple but effective approach
+
+          // First, remove all spans that contain just numbers and have user-select:none
+          // This regex is safe because it's very specific to the line number pattern
+          html = html.replace(
+            /<span[^>]*user-select:\s*none[^>]*>\s*\d+\s*<\/span>/gi,
+            ''
+          );
+
+          // Alternative: If the above doesn't work, parse and manipulate
+          if (
+            html.includes('user-select:none') ||
+            html.includes('user-select: none')
+          ) {
+            const doc = parse(html);
+            const spans = doc.getElementsByTagName('span');
+
+            // Work backwards to avoid index issues when removing elements
+            for (let i = spans.length - 1; i >= 0; i--) {
+              const span = spans[i];
+              const style = span.getAttribute('style') || '';
+              const content = span.innerHTML || '';
+
+              // Check if this looks like a line number span
+              if (
+                (style.includes('user-select:none') ||
+                  style.includes('user-select: none')) &&
+                /^\s*\d+\s*$/.test(content)
+              ) {
+                span.remove();
+              }
+            }
+
+            html = doc.toString();
+          }
+
+          // Extract and store tables with unique IDs
+          const tables = new Map<string, string>();
+          let tableCounter = 0;
+
+          html = html.replace(/<table[\s\S]*?<\/table>/gi, (match) => {
+            // Parse the table and strip attributes
+            const tableDoc = parse(match);
+
+            // Remove all attributes from table-related elements and code tags
+            tableDoc
+              .querySelectorAll('table, tr, td, th, thead, tbody, tfoot, code')
+              .forEach((el) => {
+                el.removeAttribute('class');
+                el.removeAttribute('style');
+                el.removeAttribute('id');
+                // Remove all attributes by setting to empty
+                el.rawAttrs = '';
+              });
+
+            const id = `PRESERVEDTABLE${tableCounter++}END`;
+            tables.set(id, tableDoc.toString());
+            // Return a simple text placeholder that won't be escaped
+            return `\n${id}\n`;
+          });
+
+          // Process the HTML without tables
+          const file = await processor.process(html);
           let markdown = String(file);
 
-          // Fix corrupted HTML entities that appear when italic text ends with numbers
+          // Restore the tables
+          tables.forEach((tableHtml, id) => {
+            // The placeholder might have been wrapped in a paragraph
+            markdown = markdown.replace(
+              new RegExp(`(?:^|\\n)${id}(?:\\n|$)`, 'gm'),
+              `\n\n${tableHtml}\n\n`
+            );
+            // Also try without line breaks in case it got inlined
+            markdown = markdown.replace(
+              new RegExp(id, 'g'),
+              `\n\n${tableHtml}\n\n`
+            );
+          });
+
+          // Fix corrupted HTML entities that appear when text contains certain characters
           // This is a known bug in rehype-remark/remark-stringify
-          // Pattern: &#x[hex]; corrupting text (not just at end of italic markers)
           markdown = markdown.replace(
             /&#x([0-9A-Fa-f]{1,4});/g,
             (_, hexCode) => {
-              // Convert hex to character
-              return String.fromCharCode(parseInt(hexCode, 16));
+              // Validate and convert hex to character
+              const codePoint = parseInt(hexCode, 16);
+              // Check for valid Unicode code points
+              if (!isNaN(codePoint) && codePoint >= 0 && codePoint <= 0x10FFFF) {
+                return String.fromCharCode(codePoint);
+              }
+              // Return the original string if invalid
+              return `&#x${hexCode};`;
             }
           );
 
           // Also fix &#xNAN; which appears to be related to the same bug
           markdown = markdown.replace(/&#xNAN;/g, '');
+
+          // Remove extra blank lines
+          markdown = markdown.replace(/\n{2,}/g, '\n\n');
 
           fs.writeFileSync(mdFile, markdown);
         } else {
