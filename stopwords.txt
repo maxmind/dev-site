@@ -128,3 +128,4 @@ unhex
 vbnet
 Wana
 WDSL
+errorf
