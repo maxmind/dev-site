@@ -28,6 +28,20 @@ jobs:
       - name: Install Dart Sass
         run: sudo snap install dart-sass
 
+      - uses: actions/setup-node@v5
+        with:
+          node-version: '22'
+
+      - name: Get cached dependencies
+        uses: actions/cache@v4
+        with:
+          path: |
+            node_modules
+          key: node-modules-${{ hashFiles('**/package-lock.json') }}
+
+      - name: Install dependencies
+        run: npm ci
+
       - name: Build site
         run: ./build.sh
         env:
