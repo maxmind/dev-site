@@ -53,7 +53,6 @@
     "fix": "run-p fix:*",
     "fix:scripts": "npm run lint:scripts --fix",
     "fix:styles": "npm run lint:styles --fix",
-    "html2md": "tsx bin/html2md.ts",
     "lint": "run-p lint:*",
     "lint:cspell": "cspell '**/*.md' --no-summary --no-progress --color",
     "lint:scripts": "tsc && npx eslint .  --max-warnings=0",
