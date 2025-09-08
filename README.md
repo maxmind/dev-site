@@ -93,11 +93,11 @@ year:
 1. Add a file called `<year>.md` to the `/content/<product>/release-notes`
    folder. (e.g., `/content/geoip/release-notes/2024.md`) - Add the header to
    your new release note file with the title: `<Product> Release Notes` (e.g.,
-   `GeoIP Release Notes`) and draft to `false`. - Add the RSS notification to
+   `GeoIP Release Notes`) and draft to `false`. - Add the email subscription notification to
    the top of the new file.
 2. Change the `title:` field in the previous year's `md` file to read:
    `<Product> Release Notes - <Year> Archive` (e.g.,
-   `GeoIP Release Notes - 2023 Archive`) - Remove the RSS notification from the
+   `GeoIP Release Notes - 2023 Archive`) - Remove the email subscription notification from the
    top of the archived file.
 3. Update link to the release notes in the navigation menu (`hugo.toml`) to
    point to the current year's path.
