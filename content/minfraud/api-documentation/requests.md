@@ -253,7 +253,7 @@ size will be rejected.
   {{</minfraud-schema-row>}}
 
   {{< minfraud-schema-row key="shop_id" type="request" valueType="string" valueTypeNote="max length: 255" >}}
-  Your internal ID for the shop, affiliate, or merchant this order is coming from. Required for minFraud users who are resellers, payment providers, gateways and affiliate networks. No specific format is required.
+  Your internal ID for the shop, affiliate, or merchant this order is coming from. Required for minFraud users who are resellers, payment providers, gateways and affiliate networks. No specific format is required. However, if you are testing the minFraud service, please append a `test` prefix to your shop ID (e.g. `testfoo23` or `test:foo23`). 
 
   [Learn more about the /event/shop\_id input on our Knowledge Base.](https://support.maxmind.com/hc/en-us/articles/5452006111003-Event-and-Account-Inputs#h%5F01G1E0WZ6PPV7VVKCKQM5N9960)
   {{</minfraud-schema-row>}}
