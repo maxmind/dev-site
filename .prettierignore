@@ -1,0 +1,13 @@
+# Add specific files here if they continue to have prettier formatting issues
+# Example:
+content/geoip/docs/databases/anonymous-ip.md
+content/geoip/docs/databases/anonymous-plus.md
+content/geoip/docs/databases/asn.md
+content/geoip/docs/databases/city-and-country.md
+content/geoip/docs/databases/connection-type.md
+content/geoip/docs/databases/domain.md
+content/geoip/docs/databases/enterprise.md
+content/geoip/docs/databases/isp.md
+content/geoip/docs/web-services/legacy.md
+content/geoip/geolite-on-snowflake.md
+content/geoip/geolocate-an-ip/client-side-javascript.md

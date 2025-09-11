@@ -22,7 +22,16 @@
       </tr>
     </thead>
     <tbody>
-      {{.Inner}}
+      {{ $rows := .Inner | unmarshal }}
+      {{ range $rows }}
+        <tr>
+          <td>{{ .databaseName }}</td>
+          <td>{{ .csvSizeRange }}</td>
+          <td>{{ .mmdbSizeRange }}</td>
+          <td>{{ .ipv4Range }}</td>
+          <td>{{ .ipv6Range }}</td>
+        </tr>
+      {{ end }}
     </tbody>
   </table>
 </div>

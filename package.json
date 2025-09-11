@@ -19,6 +19,7 @@
     "prettier": "^3.6.2",
     "stylelint": "^16.24.0",
     "stylelint-config-recommended": "^17.0.0",
+    "prettier-plugin-go-template": "^0.0.15",
     "stylelint-config-sass-guidelines": "^12.1.0",
     "stylelint-no-unsupported-browser-features": "^8.0.4",
     "stylelint-order": "^7.0.0",
@@ -44,7 +45,8 @@
     "lint:cspell": "cspell '**/*.md' --no-summary --no-progress --color",
     "lint:scripts": "tsc && npx eslint .  --max-warnings=0",
     "lint:styles": "stylelint ./assets/scss/*.{css,scss,sass}",
-    "prettier:ts": "prettier --write './assets/js/**'"
+    "prettier:ts": "prettier --write './assets/js/**'",
+    "format:rawhtml": "npx tsc format-rawhtml.ts --outDir dist && node dist/format-rawhtml.js"
   },
   "version": "1.0.0"
 }

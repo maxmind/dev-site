@@ -5,10 +5,11 @@ that provides the web service with your credentials.
 
 For the following examples, replace `{account_id}` and `{license_key}`
 (including the brackets) with your
-[account ID and license key](https://www.maxmind.com/en/accounts/current/license-key), and
-replace `{ip_address}` with the IP address you wish to look up.
+[account ID and license key](https://www.maxmind.com/en/accounts/current/license-key),
+and replace `{ip_address}` with the IP address you wish to look up.
 
 #### GeoIP Country
+
 ```bash
 # Retrieve data for your IP address.
 curl -u "{account_id}:{license_key}" \
@@ -20,6 +21,7 @@ curl -u "{account_id}:{license_key}" \
 ```
 
 #### GeoIP City Plus
+
 ```bash
 # Retrieve data for your IP address.
 curl -u "{account_id}:{license_key}" \
@@ -31,6 +33,7 @@ curl -u "{account_id}:{license_key}" \
 ```
 
 #### GeoIP Insights
+
 ```bash
 # Retrieve data for your IP address.
 curl -u "{account_id}:{license_key}" \
@@ -42,6 +45,7 @@ curl -u "{account_id}:{license_key}" \
 ```
 
 #### GeoLite Country
+
 ```bash
 # Retrieve data for your IP address.
 curl -u "{account_id}:{license_key}" \
@@ -53,6 +57,7 @@ curl -u "{account_id}:{license_key}" \
 ```
 
 #### GeoLite City
+
 ```bash
 # Retrieve data for your IP address.
 curl -u "{account_id}:{license_key}" \

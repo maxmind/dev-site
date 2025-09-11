@@ -3,11 +3,11 @@ draft: false
 title: Proxy Detection Legacy Web Service
 ---
 
-{{< alert warning >}}
-To learn more about the risk associated with a particular IP address, use the
-[minFraud Score service](/minfraud/evaluate-a-transaction/). This service provides the IP Risk Score, a
-replacement for the proxyScore. To identify anonymous IP addresses in support
-of geotargeting and ad serving environments, we recommend using the
+{{< alert warning >}} To learn more about the risk associated with a particular
+IP address, use the [minFraud Score service](/minfraud/evaluate-a-transaction/).
+This service provides the IP Risk Score, a replacement for the proxyScore. To
+identify anonymous IP addresses in support of geotargeting and ad serving
+environments, we recommend using the
 [GeoIP Anonymous IP database](https://www.maxmind.com/en/geoip2-anonymous-ip-database).
 {{</ alert >}}
 
@@ -74,81 +74,85 @@ fields are not escaped or quoted, but they will never contain a comma.
 All strings are returned as ASCII.
 
 {{< rawhtml >}}
+
 <div class="table">
-   <table>
-      <thead>
-         <tr>
-            <th>Name</th>
-            <th>Type (length)</th>
-            <th>Description</th>
-         </tr>
-      </thead>
-      <tbody>
-         <tr>
-            <td>proxyScore</td>
-            <td>decimal</td>
-            <td>
-               A score from 0.00-4.00 indicating the likelihood that the user's IP address is
-               an anonymous proxy, open proxy, or VPN.
-               <table>
-                  <thead>
-                     <tr>
-                        <th>proxyScore</th>
-                        <th>Likelihood of fraud</th>
-                     </tr>
-                  </thead>
-                  <tbody>
-                     <tr>
-                        <td>0.5</td>
-                        <td>15%</td>
-                     </tr>
-                     <tr>
-                        <td>1.0</td>
-                        <td>30%</td>
-                     </tr>
-                     <tr>
-                        <td>2.0</td>
-                        <td>60%</td>
-                     </tr>
-                     <tr>
-                        <td>3.0+</td>
-                        <td>90%</td>
-                     </tr>
-                  </tbody>
-               </table>
-               A proxyScore of 0.00 will be returned for a corporate proxy or private IP and an empty
-               string will be returned for an invalid IP.
-            </td>
-         </tr>
-         <tr>
-            <td>err</td>
-            <td>enum</td>
-            <td>
-               <p>
-                  If there was an error or warning with this request, this field
-                  contains an error code string.
-               </p>
-               <p>
-                  The possible error codes are:
-               </p>
-               <ul>
-                  <li>`PERMISSION_REQUIRED` – You do not have permission to use the service. Please <a href="https://support.maxmind.com/hc/en-us/requests/new">contact our support team</a> for more information.</li>
-                  <li>
-                     `LICENSE_REQUIRED` – You must provide a license key.
-                  </li>
-                  <li>
-                     `INVALID_LICENSE_KEY` – The license key provided is invalid.
-                  </li>
-                  <li>
-                     `MAX_REQUESTS_REACHED` – This error will be returned
-                     if your account is out of queries or if an invalid license key is
-                     provided.
-                  </li>
-               </ul>
-            </td>
-         </tr>
-      </tbody>
-   </table>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Type (length)</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>proxyScore</td>
+        <td>decimal</td>
+        <td>
+          A score from 0.00-4.00 indicating the likelihood that the user's IP
+          address is an anonymous proxy, open proxy, or VPN.
+          <table>
+            <thead>
+              <tr>
+                <th>proxyScore</th>
+                <th>Likelihood of fraud</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>0.5</td>
+                <td>15%</td>
+              </tr>
+              <tr>
+                <td>1.0</td>
+                <td>30%</td>
+              </tr>
+              <tr>
+                <td>2.0</td>
+                <td>60%</td>
+              </tr>
+              <tr>
+                <td>3.0+</td>
+                <td>90%</td>
+              </tr>
+            </tbody>
+          </table>
+          A proxyScore of 0.00 will be returned for a corporate proxy or private
+          IP and an empty string will be returned for an invalid IP.
+        </td>
+      </tr>
+      <tr>
+        <td>err</td>
+        <td>enum</td>
+        <td>
+          <p>
+            If there was an error or warning with this request, this field
+            contains an error code string.
+          </p>
+          <p>The possible error codes are:</p>
+          <ul>
+            <li>
+              `PERMISSION_REQUIRED` – You do not have permission to use the
+              service. Please
+              <a href="https://support.maxmind.com/hc/en-us/requests/new"
+                >contact our support team</a
+              >
+              for more information.
+            </li>
+            <li>`LICENSE_REQUIRED` – You must provide a license key.</li>
+            <li>
+              `INVALID_LICENSE_KEY` – The license key provided is invalid.
+            </li>
+            <li>
+              `MAX_REQUESTS_REACHED` – This error will be returned if your
+              account is out of queries or if an invalid license key is
+              provided.
+            </li>
+          </ul>
+        </td>
+      </tr>
+    </tbody>
+  </table>
 </div>
 {{</ rawhtml >}}
 

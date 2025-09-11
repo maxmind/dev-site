@@ -1,7 +1,7 @@
 ---
 draft: false
 title: minFraud API Requests
-type: "has-toc"
+type: 'has-toc'
 ---
 
 ## Authorization and Security
@@ -12,9 +12,8 @@ your
 The password is your
 [MaxMind license key](https://www.maxmind.com/en/accounts/current/license-key).
 
-{{< alert warning >}}
-  You must be approved for a trial or purchase credit for use with our web
-  services in order to receive an account ID and license key.
+{{< alert warning >}} You must be approved for a trial or purchase credit for
+use with our web services in order to receive an account ID and license key.
 {{</ alert >}}
 
 We use
@@ -63,16 +62,16 @@ response.
 
 Currently minFraud Score, minFraud Insights, and minFraud Factors use the same
 request document format. The request consists of a JSON object with one or more
-of the fields shown below. Each key in the top-level object maps to an object
-or array as described below. New fields that apply to one or both may be added
-in the future.
+of the fields shown below. Each key in the top-level object maps to an object or
+array as described below. New fields that apply to one or both may be added in
+the future.
 
 String fields are limited to no more than 255 valid Unicode characters unless a
 shorter length is specified; the null and newline characters are forbidden. Of
 course, many fields also have additional constraints that limit the length. For
 example, the `ip_address` field cannot be longer than the longest valid
-representation of an IPv6 address. Unless it must match a specific format, it
-is valid for a string field to be empty.
+representation of an IPv6 address. Unless it must match a specific format, it is
+valid for a string field to be empty.
 
 Boolean fields must be provided as JSON `true` or `false`.
 
@@ -185,9 +184,11 @@ size will be rejected.
 ```
 
 ### Device
+
 {{< anchor-target schema--request--device >}}
 
-`device` is a JSON object that contains information about the device used in the transaction.
+`device` is a JSON object that contains information about the device used in the
+transaction.
 
 ```json
 {
@@ -198,6 +199,8 @@ size will be rejected.
   "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.89 Safari/537.36"
 }
 ```
+
+<!-- prettier-ignore-start -->
 
 {{< schema-table key="device" >}}
   {{< minfraud-schema-row key="ip_address" type="request" valueType="string" valueTypeNote="format: IPv4 or IPv6" >}}
@@ -245,6 +248,8 @@ size will be rejected.
 }
 ```
 
+<!-- prettier-ignore-start -->
+
 {{< schema-table key="event" >}}
   {{< minfraud-schema-row key="transaction_id" type="request" valueType="string" valueTypeNote="max length: 255" >}}
   Your internal ID for the transaction. We can use this to locate a specific transaction in our logs, and it will also show up in email alerts and notifications from us to you. No specific format is required.
@@ -285,11 +290,14 @@ size will be rejected.
   {{</minfraud-schema-row>}}
 {{</ schema-table >}}
 
+<!-- prettier-ignore-end -->
+
 ### Account
+
 {{< anchor-target schema--request--account >}}
 
-`account` is a JSON object that contains account information for the end-user on the site
-where the event took place
+`account` is a JSON object that contains account information for the end-user on
+the site where the event took place
 
 ```json
 {
@@ -297,6 +305,8 @@ where the event took place
   "username_md5": "570a90bfbf8c7eab5dc5d4e26832d5b1"
 }
 ```
+
+<!-- prettier-ignore-start -->
 
 {{< schema-table key="account" >}}
   {{< minfraud-schema-row key="user_id" type="request" valueType="string" valueTypeNote="max length: 255" >}}
@@ -310,9 +320,12 @@ where the event took place
   {{</minfraud-schema-row>}}
 {{</ schema-table >}}
 
+<!-- prettier-ignore-end -->
+
 ### Email
 
-`email` is a JSON object that contains information about the email address of the end-user who initiated the event.
+`email` is a JSON object that contains information about the email address of
+the end-user who initiated the event.
 
 ```json
 {
@@ -320,6 +333,8 @@ where the event took place
   "domain": "maxmind.com"
 }
 ```
+
+<!-- prettier-ignore-start -->
 
 {{< schema-table key="email" >}}
   {{< minfraud-schema-row key="address" type="request" valueType="string" valueTypeNote="max length: 255, type: Email or MD5 of Email" >}}
@@ -335,10 +350,14 @@ where the event took place
   {{</minfraud-schema-row>}}
 {{</ schema-table >}}
 
+<!-- prettier-ignore-end -->
+
 ### Billing
+
 {{< anchor-target schema--request--billing >}}
 
-`billing` is a JSON object that contains the billing address and contact information provided by the end-user who initiated the event.
+`billing` is a JSON object that contains the billing address and contact
+information provided by the end-user who initiated the event.
 
 [Learn more about the billing address inputs on our Knowledge Base.](https://support.maxmind.com/hc/en-us/articles/5447224594075-Billing-and-Shipping-Inputs#h_01G0YN48RWENDYCKN2J3RQK2S3)
 
@@ -357,6 +376,8 @@ where the event took place
   "region": "CT"
 }
 ```
+
+<!-- prettier-ignore-start -->
 
 {{< schema-table key="billing" >}}
   {{< minfraud-schema-row key="first_name" type="request" valueType="string" valueTypeNote="max length: 255" >}}
@@ -404,10 +425,14 @@ where the event took place
   {{</minfraud-schema-row>}}
 {{</ schema-table >}}
 
+<!-- prettier-ignore-end -->
+
 ### Shipping
+
 {{< anchor-target schema--request--shipping >}}
 
-`shipping` is a JSON object that contains the shipping address and contact information provided by the end-user who initiated the event.
+`shipping` is a JSON object that contains the shipping address and contact
+information provided by the end-user who initiated the event.
 
 [Learn more about the shipping address inputs on our Knowledge Base.](https://support.maxmind.com/hc/en-us/articles/5447224594075-Billing-and-Shipping-Inputs#h_01G0YN4GGRCC99P2HH0X54RFVA)
 
@@ -427,6 +452,8 @@ where the event took place
   "region": "CT"
 }
 ```
+
+<!-- prettier-ignore-start -->
 
 {{< schema-table key="shipping" >}}
   {{< minfraud-schema-row key="first_name" type="request" valueType="string" valueTypeNote="max length: 255" >}}
@@ -483,10 +510,14 @@ where the event took place
   {{</minfraud-schema-row>}}
 {{</ schema-table >}}
 
+<!-- prettier-ignore-end -->
+
 ### Payment
+
 {{< anchor-target schema--request--payment >}}
 
-`payment` is a JSON object that contains information from and about the payment process that was used for the event.
+`payment` is a JSON object that contains information from and about the payment
+process that was used for the event.
 
 ```json
 {
@@ -495,6 +526,8 @@ where the event took place
   "was_authorized": false
 }
 ```
+
+<!-- prettier-ignore-start -->
 
 {{< schema-table key="payment" >}}
   {{< minfraud-schema-row key="processor" type="request" valueType="string" valueTypeNote="format: enum" >}}
@@ -677,10 +710,16 @@ where the event took place
   {{</minfraud-schema-row>}}
 {{</ schema-table >}}
 
+<!-- prettier-ignore-end -->
+
 ### Credit Card
+
 {{< anchor-target schema--request--credit-card >}}
 
-`credit_card` is a JSON object that contains information provided by the end-user and the payment processor about the credit card used for the for the event.
+`credit_card` is a JSON object that contains information provided by the
+end-user and the payment processor about the credit card used for the for the
+event.
+
 ```json
 {
   "avs_result": "Y",
@@ -695,6 +734,9 @@ where the event took place
   "was_3d_secure_successful": true
 }
 ```
+
+<!-- prettier-ignore-start -->
+
 {{< schema-table key="credit_card" >}}
 
   {{< minfraud-schema-row key="issuer_id_number" type="request" valueType="string" valueTypeNote="max length: 8" >}}
@@ -753,10 +795,14 @@ where the event took place
 
 {{</ schema-table >}}
 
+<!-- prettier-ignore-end -->
+
 ### Order
+
 {{< anchor-target schema--request--order >}}
 
-`order` is a JSON object that contains information about the order associated with the event.
+`order` is a JSON object that contains information about the order associated
+with the event.
 
 ```json
 {
@@ -770,6 +816,8 @@ where the event took place
   "subaffiliate_id": "saf42"
 }
 ```
+
+<!-- prettier-ignore-start -->
 
 {{< schema-table key="order" >}}
 
@@ -823,21 +871,23 @@ where the event took place
 
 {{</ schema-table >}}
 
+<!-- prettier-ignore-end -->
+
 ### Shopping Cart
+
 {{< anchor-target schema--request--shopping-cart >}}
 
 `shopping_cart` is an array of shopping cart item objects.
 
 Passing hashed values for shopping cart items can increase the privacy of your
 customers' information while continuing to fulfill the needs for fraud
-detection. A suitable hashed value can be produced by using a cryptographic
-hash function and a fixed salt. Using a random salt is not recommended as that
-will result in different hashed values for the same plain value, which would
-make them ineffective for our fraud detection service. For more information,
-see:
+detection. A suitable hashed value can be produced by using a cryptographic hash
+function and a fixed salt. Using a random salt is not recommended as that will
+result in different hashed values for the same plain value, which would make
+them ineffective for our fraud detection service. For more information, see:
 
-* [OWASP Cryptographic Storage Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/Cryptographic_Storage_Cheat_Sheet.html)
-* [NIST FIPS Secure Hash Standard (SHS)](https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.180-4.pdf)
+- [OWASP Cryptographic Storage Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/Cryptographic_Storage_Cheat_Sheet.html)
+- [NIST FIPS Secure Hash Standard (SHS)](https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.180-4.pdf)
 
 [Learn more about the shopping cart inputs on our Knowledge Base.](https://support.maxmind.com/hc/en-us/articles/5452293435675-Order-and-Shopping-Cart-Inputs#h_01G0Z51P845R5DG7TCRNSKAD44)
 
@@ -858,6 +908,8 @@ see:
 ]
 ```
 
+<!-- prettier-ignore-start -->
+
 {{< schema-table key="shopping_cart" >}}
   {{< minfraud-schema-row key="category" type="request" valueType="string" valueTypeNote="max length: 255" >}}
   The category of the item. This can also be a hashed value; see below.
@@ -877,12 +929,21 @@ see:
 
 {{</ schema-table >}}
 
+<!-- prettier-ignore-end -->
+
 ### Custom Inputs
+
 {{< anchor-target schema--request--custom-inputs >}}
 
-`custom_inputs` are optional inputs to the minFraud service that must first be defined for your account. Select Custom Inputs from the Account Portal in order to do so. See our [Custom Inputs documentation](https://support.maxmind.com/hc/en-us/articles/4408216546203-Use-Custom-Inputs) for more information.
+`custom_inputs` are optional inputs to the minFraud service that must first be
+defined for your account. Select Custom Inputs from the Account Portal in order
+to do so. See our
+[Custom Inputs documentation](https://support.maxmind.com/hc/en-us/articles/4408216546203-Use-Custom-Inputs)
+for more information.
 
-**You should never send a full credit card number as an input.** If you attempt to send a full credit card number as an input, the minFraud service will reject the input and issue a warning.
+**You should never send a full credit card number as an input.** If you attempt
+to send a full credit card number as an input, the minFraud service will reject
+the input and issue a warning.
 
 [Learn more about valid payment number inputs above.](#schema--request--credit-card)
 
@@ -892,6 +953,8 @@ see:
   "another_custom_input_key": false
 }
 ```
+
+<!-- prettier-ignore-start -->
 
 {{< schema-table key="custom_inputs" >}}
 
@@ -915,3 +978,5 @@ see:
   {{</minfraud-schema-row>}}
 
 {{</ schema-table >}}
+
+<!-- prettier-ignore-end -->

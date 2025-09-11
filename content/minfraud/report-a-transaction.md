@@ -270,9 +270,8 @@ your
 The password is your
 [MaxMind license key](https://www.maxmind.com/en/accounts/current/license-key).
 
-{{< alert warning >}}
-You must be approved for a trial or purchase credit for use with our web
-services in order to receive an account ID and license key.
+{{< alert warning >}} You must be approved for a trial or purchase credit for
+use with our web services in order to receive an account ID and license key.
 {{</ alert >}}
 
 We use
@@ -340,8 +339,8 @@ to handle any valid HTTP 4xx or 5xx status code.
 | TRANSACTION_ID_REQUIRED | 400 Bad Request            | Your request must include on of the following fields: `ip_address`, `maxmind_id`, `minfraud_id`, or `transaction_id`.                                                                                                                                                             |
 | IP_ADDRESS_INVALID      | 400 Bad Request            | You have not supplied a valid IPv4 or IPv6 address.                                                                                                                                                                                                                               |
 | IP_ADDRESS_RESERVED     | 400 Bad Request            | You have supplied an IP address which belongs to a reserved or private range.                                                                                                                                                                                                     |
-| AUTHORIZATION_INVALID   | 401 Unauthorized           | You have supplied an invalid [MaxMind account ID and/or license key](https://www.maxmind.com/en/accounts/current/license-key) in the [Authorization](#authorization-and-security) header.                                                                                                       |
-| LICENSE_KEY_REQUIRED    | 401 Unauthorized           | You have not supplied a [MaxMind license key](https://www.maxmind.com/en/accounts/current/license-key) in the [Authorization](#authorization-and-security) header.                                                                                                                              |
+| AUTHORIZATION_INVALID   | 401 Unauthorized           | You have supplied an invalid [MaxMind account ID and/or license key](https://www.maxmind.com/en/accounts/current/license-key) in the [Authorization](#authorization-and-security) header.                                                                                         |
+| LICENSE_KEY_REQUIRED    | 401 Unauthorized           | You have not supplied a [MaxMind license key](https://www.maxmind.com/en/accounts/current/license-key) in the [Authorization](#authorization-and-security) header.                                                                                                                |
 | ACCOUNT_ID_REQUIRED     | 401 Unauthorized           | You have not supplied a [MaxMind account ID](https://support.maxmind.com/hc/en-us/articles/4412951066779-Find-my-Account-ID) in the [Authorization](#authorization-and-security) header.                                                                                          |
 | (none)                  | 415 Unsupported Media Type | Your request included a `Content-Type` header that is not supported. For `GET` requests, this means the web service cannot return content of that type. For `PUT` and `POST` queries, this means the web service cannot parse a request body of that type.                        |
 | (none)                  | 503 Service Not Available  | There is a problem with the web service server. You can try this request again later.                                                                                                                                                                                             |

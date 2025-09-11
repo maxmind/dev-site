@@ -1,7 +1,7 @@
 ---
 draft: false
 title: GeoIP and GeoLite API Requests
-type: "has-toc"
+type: 'has-toc'
 ---
 
 ## Authorization and Security
@@ -12,14 +12,12 @@ your
 The password is your
 [MaxMind license key](https://www.maxmind.com/en/accounts/current/license-key).
 
-{{< alert warning >}}
-  You must be approved for a [GeoIP web service
-  trial](https://www.maxmind.com/en/request-service-trial?service_geoip=1),
-  [purchase service credit](https://www.maxmind.com/en/geoip2-precision-insights)
-  for use with our web services, or have a [GeoLite
-  account](https://www.maxmind.com/en/geolite2/signup), in order to receive an
-  account ID and license key.
-{{</ alert >}}
+{{< alert warning >}} You must be approved for a
+[GeoIP web service trial](https://www.maxmind.com/en/request-service-trial?service_geoip=1),
+[purchase service credit](https://www.maxmind.com/en/geoip2-precision-insights)
+for use with our web services, or have a
+[GeoLite account](https://www.maxmind.com/en/geolite2/signup), in order to
+receive an account ID and license key. {{</ alert >}}
 
 We use
 [basic HTTP authentication](https://en.wikipedia.org/wiki/Basic_access_authentication).

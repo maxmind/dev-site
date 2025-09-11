@@ -120,12 +120,11 @@ System.out.println(country.getIsoCode());
 // Asynchronous database opening
 const Reader = require('@maxmind/geoip2-node').Reader;
 
-Reader.open('/path/to/maxmind-database.mmdb').then(reader => {
+Reader.open('/path/to/maxmind-database.mmdb').then((reader) => {
   const response = reader.city('128.101.101.101');
 
   console.log(response.country.isoCode);
 });
-
 
 // Synchronous database opening
 const fs = require('fs');

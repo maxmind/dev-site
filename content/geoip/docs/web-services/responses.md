@@ -1,7 +1,7 @@
 ---
 draft: false
 title: GeoIP and GeoLite API Responses
-type: "has-toc"
+type: 'has-toc'
 ---
 
 ## Headers
@@ -9,8 +9,8 @@ type: "has-toc"
 The `Content-Type` for a successful response varies based on the service as
 outlined below:
 
-| Service          | Content-Type                                                            |
-| ---------------- | ----------------------------------------------------------------------- |
+| Service         | Content-Type                                                            |
+| --------------- | ----------------------------------------------------------------------- |
 | GeoIP Country   | `application/vnd.maxmind.com-country+json; charset=UTF-8; version=2.1`  |
 | GeoIP City      | `application/vnd.maxmind.com-city+json; charset=UTF-8; version=2.1`     |
 | GeoIP Insights  | `application/vnd.maxmind.com-insights+json; charset=UTF-8; version=2.1` |
@@ -42,6 +42,7 @@ In addition to the errors documented below, client code should also be prepared
 to handle any valid HTTP `4xx` or `5xx` status code.
 
 {{< rawhtml >}}
+
 <div class="table">
   <table>
     <thead>
@@ -60,9 +61,7 @@ to handle any valid HTTP `4xx` or `5xx` status code.
       <tr>
         <td><code>IP_ADDRESS_REQUIRED</code></td>
         <td>400 Bad Request</td>
-        <td>
-          You have not supplied an IP address, which is a required field.
-        </td>
+        <td>You have not supplied an IP address, which is a required field.</td>
       </tr>
       <tr>
         <td><code>IP_ADDRESS_RESERVED</code></td>
@@ -76,8 +75,15 @@ to handle any valid HTTP `4xx` or `5xx` status code.
         <td><code>AUTHORIZATION_INVALID</code></td>
         <td>401 Unauthorized</td>
         <td>
-          You have supplied an invalid <a href="https://www.maxmind.com/en/accounts/current/license-key">MaxMind account ID and/or license key</a>
-          in the <a href="/minfraud/api-documentation/requests#authorization-and-security">Authorization</a>
+          You have supplied an invalid
+          <a href="https://www.maxmind.com/en/accounts/current/license-key"
+            >MaxMind account ID and/or license key</a
+          >
+          in the
+          <a
+            href="/minfraud/api-documentation/requests#authorization-and-security"
+            >Authorization</a
+          >
           header.
         </td>
       </tr>
@@ -85,8 +91,15 @@ to handle any valid HTTP `4xx` or `5xx` status code.
         <td><code>LICENSE_KEY_REQUIRED</code></td>
         <td>401 Unauthorized</td>
         <td>
-          You have not supplied a <a href="https://www.maxmind.com/en/accounts/current/license-key">MaxMind license key</a>
-          in the <a href="/minfraud/api-documentation/requests#authorization-and-security">Authorization</a>
+          You have not supplied a
+          <a href="https://www.maxmind.com/en/accounts/current/license-key"
+            >MaxMind license key</a
+          >
+          in the
+          <a
+            href="/minfraud/api-documentation/requests#authorization-and-security"
+            >Authorization</a
+          >
           header.
         </td>
       </tr>
@@ -94,8 +107,16 @@ to handle any valid HTTP `4xx` or `5xx` status code.
         <td><code>ACCOUNT_ID_REQUIRED</code></td>
         <td>401 Unauthorized</td>
         <td>
-          You have not supplied a <a href="https://support.maxmind.com/hc/en-us/articles/4412951066779-Find-my-Account-ID">MaxMind account ID</a>
-          in the <a href="/minfraud/api-documentation/requests#authorization-and-security">Authorization</a>
+          You have not supplied a
+          <a
+            href="https://support.maxmind.com/hc/en-us/articles/4412951066779-Find-my-Account-ID"
+            >MaxMind account ID</a
+          >
+          in the
+          <a
+            href="/minfraud/api-documentation/requests#authorization-and-security"
+            >Authorization</a
+          >
           header.
         </td>
       </tr>
@@ -103,15 +124,22 @@ to handle any valid HTTP `4xx` or `5xx` status code.
         <td><code>INSUFFICIENT_FUNDS</code></td>
         <td>402 Payment Required</td>
         <td>
-          The license key you have provided does not have sufficient funds to use
-          this service. Please <a href="https://www.maxmind.com/en/purchase-minfraud-services">purchase more service credits</a>.
+          The license key you have provided does not have sufficient funds to
+          use this service. Please
+          <a href="https://www.maxmind.com/en/purchase-minfraud-services"
+            >purchase more service credits</a
+          >.
         </td>
       </tr>
       <tr>
         <td><code>PERMISSION_REQUIRED</code></td>
         <td>402 Payment Required</td>
         <td>
-          You do not have permission to use the service. Please <a href="https://support.maxmind.com/hc/en-us/requests/new">contact our support team</a> for more information.
+          You do not have permission to use the service. Please
+          <a href="https://support.maxmind.com/hc/en-us/requests/new"
+            >contact our support team</a
+          >
+          for more information.
         </td>
       </tr>
       <tr>
@@ -131,18 +159,19 @@ to handle any valid HTTP `4xx` or `5xx` status code.
         <td>(none)</td>
         <td>415 Unsupported Media Type</td>
         <td>
-          Your request included a <code>Content-Type</code> header that is not supported. For
-          <code>GET</code> requests, this means the web service cannot return content of that
-          type. For <code>PUT</code> and <code>POST</code> queries, this means the web service cannot
-          parse a request body of that type.
+          Your request included a <code>Content-Type</code> header that is not
+          supported. For <code>GET</code> requests, this means the web service
+          cannot return content of that type. For <code>PUT</code> and
+          <code>POST</code> queries, this means the web service cannot parse a
+          request body of that type.
         </td>
       </tr>
       <tr>
         <td>(none)</td>
         <td>503 Service Not Available</td>
         <td>
-          There is a problem with the web service server. You can try this request
-          again later.
+          There is a problem with the web service server. You can try this
+          request again later.
         </td>
       </tr>
     </tbody>
@@ -155,7 +184,6 @@ to handle any valid HTTP `4xx` or `5xx` status code.
 All services return data as a JSON document. The document that is returned
 always consists of an object (aka map or hash). Each key in the object in turn
 maps to an object or an array of objects.
-
 
 ```json
 {
@@ -172,25 +200,25 @@ maps to an object or an array of objects.
 }
 ```
 
-The exact set of top-level keys varies based on the particular GeoIP web
-service you are using. If a key maps to an undefined or empty value, it is not
-included in the JSON object. This applies both to top-level keys and the objects
-they map to.
+The exact set of top-level keys varies based on the particular GeoIP web service
+you are using. If a key maps to an undefined or empty value, it is not included
+in the JSON object. This applies both to top-level keys and the objects they map
+to.
 
 The data returned in the document will be in UTF-8 encoding.
 
 For full examples of response bodies, select one of the following:
 
-* [GeoIP Country Body Example](#geoip-country-body-example)
-* [GeoIP City Body Example](#geoip-city-body-example)
-* [GeoIP Insights Body Example](#geoip-insights-body-example)
-
+- [GeoIP Country Body Example](#geoip-country-body-example)
+- [GeoIP City Body Example](#geoip-city-body-example)
+- [GeoIP Insights Body Example](#geoip-insights-body-example)
 
 ### City
+
 {{< anchor-target schema--response--city >}}
 
-`city` is a JSON object that contains details about the city associated with the IP
-address.
+`city` is a JSON object that contains details about the city associated with the
+IP address.
 
 ```json
 {
@@ -208,6 +236,8 @@ address.
   }
 }
 ```
+
+<!-- prettier-ignore-start -->
 
 {{< schema-table key="city" >}}
   {{< geoip-schema-row key="confidence" valueType="integer" valueTypeNote="min: 0, max: 100" insights="true">}}
@@ -229,11 +259,14 @@ address.
   {{</ geoip-schema-row >}}
 {{</ schema-table >}}
 
+<!-- prettier-ignore-end -->
 
 ### Continent
+
 {{< anchor-target schema--response--continent >}}
 
-`continent` is a JSON object that contains information about the continent associated with the IP address.
+`continent` is a JSON object that contains information about the continent
+associated with the IP address.
 
 ```json
 {
@@ -251,6 +284,8 @@ address.
   }
 }
 ```
+
+<!-- prettier-ignore-start -->
 
 {{< schema-table key="continent" >}}
   {{< geoip-schema-row key="code" valueType="string" country="true" city="true" insights="true">}}
@@ -280,10 +315,14 @@ address.
   {{</ geoip-schema-row >}}
 {{</ schema-table >}}
 
+<!-- prettier-ignore-end -->
+
 ### Country
+
 {{< anchor-target schema--response--country >}}
 
-`country` is a JSON object that contains details about the country where MaxMind believes the end user is located.
+`country` is a JSON object that contains details about the country where MaxMind
+believes the end user is located.
 
 ```json
 {
@@ -303,6 +342,8 @@ address.
   }
 }
 ```
+
+<!-- prettier-ignore-start -->
 
 {{< schema-table key="country" >}}
   {{< geoip-schema-row key="confidence" valueType="integer" valueTypeNote="min: 0, max: 100" insights="true">}}
@@ -336,10 +377,14 @@ address.
   {{</ geoip-schema-row >}}
 {{</ schema-table >}}
 
+<!-- prettier-ignore-end -->
+
 ### Location
+
 {{< anchor-target schema--response--location >}}
 
-`location` is a JSON object that contains specific details about the location associated with the IP address.
+`location` is a JSON object that contains specific details about the location
+associated with the IP address.
 
 ```json
 {
@@ -351,6 +396,8 @@ address.
   "time_zone": "America/Los_Angeles"
 }
 ```
+
+<!-- prettier-ignore-start -->
 
 {{< schema-table key="location" >}}
   {{< geoip-schema-row key="accuracy_radius" valueType="integer" city="true" insights="true">}}
@@ -404,10 +451,14 @@ address.
   {{</ geoip-schema-row >}}
 {{</ schema-table >}}
 
+<!-- prettier-ignore-end -->
+
 ### Postal
+
 {{< anchor-target schema--response--postal >}}
 
-`postal` is a JSON object that contains details about the postal code associated with the IP address.
+`postal` is a JSON object that contains details about the postal code associated
+with the IP address.
 
 ```json
 {
@@ -415,6 +466,8 @@ address.
   "confidence": 10
 }
 ```
+
+<!-- prettier-ignore-start -->
 
 {{< schema-table key="postal" >}}
   {{< geoip-schema-row key="code" valueType="string" city="true" insights="true">}}
@@ -440,10 +493,14 @@ address.
   {{</ geoip-schema-row >}}
 {{</ schema-table >}}
 
+<!-- prettier-ignore-end -->
+
 ### Registered Country
+
 {{< anchor-target schema--response--registered-country >}}
 
-`registered_country` is a JSON object that contains details about the country in which the ISP has registered the IP address.
+`registered_country` is a JSON object that contains details about the country in
+which the ISP has registered the IP address.
 
 [Learn about registered countries on our Knowledge Base.](https://support.maxmind.com/hc/en-us/articles/4414762983195-Country-level-and-City-level-Geolocation)
 
@@ -464,6 +521,8 @@ address.
   }
 }
 ```
+
+<!-- prettier-ignore-start -->
 
 {{< schema-table key="registered_country" >}}
   {{< geoip-schema-row key="geoname_id" valueType="integer" country="true" city="true" insights="true">}}
@@ -491,10 +550,15 @@ address.
   {{</ geoip-schema-row >}}
 {{</ schema-table >}}
 
+<!-- prettier-ignore-end -->
+
 ### Represented Country
+
 {{< anchor-target schema--response--represented-country >}}
 
-`represented_country` is a JSON object that contains details about the country which is represented by users of the IP address. For instance, the country represented by an overseas military base.
+`represented_country` is a JSON object that contains details about the country
+which is represented by users of the IP address. For instance, the country
+represented by an overseas military base.
 
 [Learn about represented countries on our Knowledge Base.](https://support.maxmind.com/hc/en-us/articles/4414762983195-Country-level-and-City-level-Geolocation)
 
@@ -516,6 +580,8 @@ address.
   "type": "military"
 }
 ```
+
+<!-- prettier-ignore-start -->
 
 {{< schema-table key="represented_country" >}}
   {{< geoip-schema-row key="geoname_id" valueType="integer" country="true" city="true" insights="true">}}
@@ -549,10 +615,15 @@ address.
   {{</ geoip-schema-row >}}
 {{</ schema-table >}}
 
+<!-- prettier-ignore-end -->
+
 ### Subdivisions
+
 {{< anchor-target schema--response--subdivisions >}}
 
-`subdivisions` is an array of JSON objects. Each of these objects contains details about a subdivision of the country in which the IP address resides. Subdivisions are arranged from largest to smallest.
+`subdivisions` is an array of JSON objects. Each of these objects contains
+details about a subdivision of the country in which the IP address resides.
+Subdivisions are arranged from largest to smallest.
 
 ```json
 [
@@ -572,6 +643,8 @@ address.
   }
 ]
 ```
+
+<!-- prettier-ignore-start -->
 
 {{< schema-table key="subdivision" >}}
   {{< geoip-schema-row key="confidence" valueType="integer" valueTypeNote="min: 0, max: 100" insights="true">}}
@@ -599,10 +672,14 @@ address.
   {{</ geoip-schema-row >}}
 {{</ schema-table >}}
 
+<!-- prettier-ignore-end -->
+
 ### Traits
+
 {{< anchor-target schema--response--traits >}}
 
-`traits` is a JSON object that contains general traits associated with the IP address.
+`traits` is a JSON object that contains general traits associated with the IP
+address.
 
 ```json
 {
@@ -628,6 +705,8 @@ address.
   "user_type": "traveler"
 }
 ```
+
+<!-- prettier-ignore-start -->
 
 {{< schema-table key="traits" >}}
   {{< geoip-schema-row key="autonomous_system_number" valueType="integer" city="true" insights="true">}}
@@ -777,16 +856,22 @@ address.
   {{</ geoip-schema-row >}}
 {{</ schema-table >}}
 
+<!-- prettier-ignore-end -->
+
 ### MaxMind
+
 {{< anchor-target schema--response--maxmind >}}
 
-`maxmind` is a JSON object that contains information related to your MaxMind account.
+`maxmind` is a JSON object that contains information related to your MaxMind
+account.
 
 ```json
 {
   "queries_remaining": 54321
 }
 ```
+
+<!-- prettier-ignore-start -->
 
 {{< schema-table key="maxmind" >}}
   {{< geoip-schema-row key="queries_remaining" valueType="integer" country="true" city="true" insights="true">}}
@@ -795,6 +880,8 @@ address.
   **This field is not present in the GeoLite City web service.**
   {{</ geoip-schema-row >}}
 {{</ schema-table >}}
+
+<!-- prettier-ignore-end -->
 
 ## Miscellaneous Notes
 
@@ -807,6 +894,7 @@ and script.
 Currently, this web service may return the following locale codes:
 
 {{< rawhtml >}}
+
 <div class="table">
   <table>
     <thead>
@@ -872,9 +960,8 @@ not have any name data at all for a given object.
 
 ### Returned Values as Database, Map, Dict, or Hash Keys
 
-{{< alert warning >}}
-  We strongly discourage you from using a value from any `names` field as a key
-  in a database or map/dict/hash data structure.
+{{< alert warning >}} We strongly discourage you from using a value from any
+`names` field as a key in a database or map/dict/hash data structure.
 {{</ alert >}}
 
 These names may change between releases. Instead we recommend using one of the
