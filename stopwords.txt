@@ -186,3 +186,4 @@ verepay
 vericheck
 vindicia
 vpos
+errorf
