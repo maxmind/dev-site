@@ -4,6 +4,9 @@ languageCode = "en-us"
 title = 'MaxMind'
 
 [markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
   [markup.highlight]
     codeFences = true
     guessSyntax = false
@@ -257,4 +260,18 @@ title = 'MaxMind'
     target = "static/maxmind-server-ip-addresses.json"
 
 [outputs]
-  home = ["HTML"]
+  home = ["HTML", "MARKDOWN"]
+  page = ["HTML", "MARKDOWN"]
+  section = ["HTML", "MARKDOWN"]
+  taxonomy = ["HTML", "MARKDOWN"]
+  term = ["HTML", "MARKDOWN"]
+
+[outputFormats]
+  [outputFormats.MARKDOWN]
+    mediaType = "text/markdown"
+    baseName = "index"
+    notAlternative = true
+
+[mediaTypes]
+  [mediaTypes."text/markdown"]
+    suffixes = ["md"]

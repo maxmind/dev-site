@@ -1,0 +1,1 @@
+{{- /* Anchor targets are not needed in markdown output */ -}}

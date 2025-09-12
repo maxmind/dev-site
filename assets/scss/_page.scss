@@ -93,3 +93,96 @@
 .page__toc__title {
   margin-top: 0;
 }
+
+// Copy Markdown button styles
+.copy-markdown-btn {
+  align-items: center;
+  background-color: #f5f5f5;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+  color: #333;
+  cursor: pointer;
+  display: inline-flex;
+  font-size: 0.875rem;
+  gap: 0.5rem;
+  height: 36px;
+  line-height: 1;
+  margin: 0 0 1rem;
+  padding: 0.5rem 1rem;
+  transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+  width: 140px;
+
+  &:hover {
+    background-color: #e8e8e8;
+    border-color: #999;
+  }
+
+  &:active {
+    // Removed transform to prevent layout shifts
+  }
+
+  .icon-wrapper {
+    flex-shrink: 0;
+    height: 16px;
+    position: relative;
+    width: 16px;
+  }
+
+  svg {
+    height: 16px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    transition: opacity 0.2s ease;
+    width: 16px;
+  }
+
+  .icon-copy {
+    opacity: 1;
+  }
+
+  .icon-check {
+    opacity: 0;
+  }
+
+  span {
+    line-height: 1;
+    white-space: nowrap;
+  }
+
+  &.success {
+    background-color: #e8f5e9;
+    border-color: #4caf50;
+    color: #2e7d32;
+
+    .icon-copy {
+      opacity: 0;
+    }
+
+    .icon-check {
+      opacity: 1;
+    }
+  }
+
+  // Loading state
+  &.loading {
+    background-color: #e3f2fd;
+    border-color: #2196f3;
+    color: #1976d2;
+    pointer-events: none;
+  }
+
+  // Error state
+  &.error {
+    background-color: #ffebee;
+    border-color: #f44336;
+    color: #c62828;
+  }
+
+  // Responsive adjustments
+  @media (max-width: 768px) {
+    font-size: 0.813rem;
+    padding: 0.375rem 0.75rem;
+  }
+}

@@ -6,7 +6,7 @@ cmd = [
   "lint:scripts"
 ]
 invoke = "once"
-include = ["assets/js/**/*.{ts}"]
+include = ["./assets/js/**/*", "./bin/**/*.{ts}"]
 ok-exit-codes = 0
 
 [commands.stylelint-styles]
@@ -31,7 +31,7 @@ cmd = [
 lint-flags = ["--check"]
 tidy-flags = ["--write"]
 path-args = "absolute-file"
-include = ["assets/js/**"]
+include = ["assets/js/**", "bin/**/*.{ts}"]
 ok-exit-codes = 0
 
 [commands.cspell-content]
@@ -74,4 +74,15 @@ cmd = [
 lint-flags = []
 path-args = "absolute-file"
 include = ["content/**/*.md"]
+ok-exit-codes = 0
+
+[commands.check-shortcode-parity]
+type = "lint"
+cmd = [
+  "npm",
+  "run",
+  "lint:shortcode-parity"
+]
+invoke = "once"
+include = ["layouts/shortcodes/**/*.{html,md}"]
 ok-exit-codes = 0
