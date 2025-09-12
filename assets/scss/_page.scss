@@ -137,29 +137,29 @@
     transition: opacity 0.2s ease;
     width: 16px;
   }
-  
+
   .icon-copy {
     opacity: 1;
   }
-  
+
   .icon-check {
     opacity: 0;
   }
-  
+
   span {
     line-height: 1;
     white-space: nowrap;
   }
-  
+
   &.success {
     background-color: #e8f5e9;
     border-color: #4caf50;
     color: #2e7d32;
-    
+
     .icon-copy {
       opacity: 0;
     }
-    
+
     .icon-check {
       opacity: 1;
     }
