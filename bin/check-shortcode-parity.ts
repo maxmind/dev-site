@@ -20,7 +20,7 @@ function getShortcodeFiles(dir: string, extension: string): Set<string> {
         scanDir(fullPath, relativePath);
       } else if (path.extname(item) === extension) {
         // Store the path without extension for comparison
-        files.add(relativePath.slice(0, -extension.length));
+        files.add(path.join(basePath, path.basename(item, extension)));
       }
     }
   }
