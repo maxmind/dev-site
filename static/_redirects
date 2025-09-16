@@ -28,5 +28,4 @@
 # General - with splats and placeholders
 /csv/:files /static/csv/:file 301
 /csv-files/:file /static/csv/:file 301
-/minfraud-soap-*.wsdl /sattic/wsdl/minfraud-soap-:splat.wsdl 301
 /static/pdfs/:files /static/pdf/:file 301
