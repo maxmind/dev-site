@@ -132,6 +132,7 @@ size will be rejected.
     "domain": "maxmind.com"
   },
   "event": {
+    "party": "customer",
     "shop_id": "s2123",
     "time": "2012-04-12T23:20:50.52Z",
     "transaction_id": "txn3134133",
@@ -241,6 +242,7 @@ transaction.
 
 ```json
 {
+  "party": "customer",
   "shop_id": "s2123",
   "time": "2012-04-12T23:20:50.52Z",
   "transaction_id": "txn3134133",
@@ -289,6 +291,13 @@ transaction.
   * `survey`
 
   [Learn more about the /event/type input on our Knowledge Base.](https://support.maxmind.com/hc/en-us/articles/5452006111003-Event-and-Account-Inputs#h%5F01G0Z3WMWJW3QMHN8AGWK054E6)
+  {{</minfraud-schema-row>}}
+
+  {{< minfraud-schema-row key="party" type="request" valueType="string" valueTypeNote="format: enum" >}}
+  The party submitting this transaction. The valid values are:
+
+  * `agent`
+  * `customer`
   {{</minfraud-schema-row>}}
 {{</ schema-table >}}
 
