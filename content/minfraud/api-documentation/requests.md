@@ -150,6 +150,7 @@ size will be rejected.
   },
   "payment": {
     "decline_code": "card_declined",
+    "method": "card",
     "processor": "stripe",
     "was_authorized": false
   },
@@ -533,6 +534,7 @@ process that was used for the event.
 ```json
 {
   "decline_code": "card_declined",
+  "method": "card",
   "processor": "stripe",
   "was_authorized": false
 }
@@ -541,6 +543,21 @@ process that was used for the event.
 <!-- prettier-ignore-start -->
 
 {{< schema-table key="payment" >}}
+  {{< minfraud-schema-row key="method" type="request" valueType="string" valueTypeNote="format: enum" >}}
+  The payment method associated with the transaction. The valid values are:
+
+  * `bank_debit`
+  * `bank_redirect`
+  * `bank_transfer`
+  * `buy_now_pay_later`
+  * `card`
+  * `crypto`
+  * `digital_wallet`
+  * `gift_card`
+  * `real_time_payment`
+  * `rewards`
+  {{</minfraud-schema-row>}}
+
   {{< minfraud-schema-row key="processor" type="request" valueType="string" valueTypeNote="format: enum" >}}
   The payment processor used for the transaction. The valid values are:
 
