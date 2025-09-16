@@ -75,7 +75,7 @@ Note that for `geoipupdate` versions less than 2.5.0, use `UserId` instead of
 
 ```bash
 # GeoIP.conf file - used by geoipupdate program to update databases
-# from http://www.maxmind.com
+# from https://www.maxmind.com
 AccountID YOUR_ACCOUNT_ID_HERE
 LicenseKey YOUR_LICENSE_KEY_HERE
 EditionIDs YOUR_EDITION_IDS_HERE
