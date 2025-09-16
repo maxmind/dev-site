@@ -278,7 +278,9 @@ transaction.
 
   * `account_creation`
   * `account_login`
+  * `credit_application`
   * `email_change`
+  * `fund_transfer`
   * `password_reset`
   * `payout_change`
   * `purchase`
