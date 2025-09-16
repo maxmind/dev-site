@@ -132,6 +132,7 @@ size will be rejected.
     "domain": "maxmind.com"
   },
   "event": {
+    "party": "customer",
     "shop_id": "s2123",
     "time": "2012-04-12T23:20:50.52Z",
     "transaction_id": "txn3134133",
@@ -149,6 +150,7 @@ size will be rejected.
   },
   "payment": {
     "decline_code": "card_declined",
+    "method": "card",
     "processor": "stripe",
     "was_authorized": false
   },
@@ -241,6 +243,7 @@ transaction.
 
 ```json
 {
+  "party": "customer",
   "shop_id": "s2123",
   "time": "2012-04-12T23:20:50.52Z",
   "transaction_id": "txn3134133",
@@ -278,7 +281,9 @@ transaction.
 
   * `account_creation`
   * `account_login`
+  * `credit_application`
   * `email_change`
+  * `fund_transfer`
   * `password_reset`
   * `payout_change`
   * `purchase`
@@ -287,6 +292,13 @@ transaction.
   * `survey`
 
   [Learn more about the /event/type input on our Knowledge Base.](https://support.maxmind.com/hc/en-us/articles/5452006111003-Event-and-Account-Inputs#h%5F01G0Z3WMWJW3QMHN8AGWK054E6)
+  {{</minfraud-schema-row>}}
+
+  {{< minfraud-schema-row key="party" type="request" valueType="string" valueTypeNote="format: enum" >}}
+  The party submitting this transaction. The valid values are:
+
+  * `agent`
+  * `customer`
   {{</minfraud-schema-row>}}
 {{</ schema-table >}}
 
@@ -522,6 +534,7 @@ process that was used for the event.
 ```json
 {
   "decline_code": "card_declined",
+  "method": "card",
   "processor": "stripe",
   "was_authorized": false
 }
@@ -530,6 +543,21 @@ process that was used for the event.
 <!-- prettier-ignore-start -->
 
 {{< schema-table key="payment" >}}
+  {{< minfraud-schema-row key="method" type="request" valueType="string" valueTypeNote="format: enum" >}}
+  The payment method associated with the transaction. The valid values are:
+
+  * `bank_debit`
+  * `bank_redirect`
+  * `bank_transfer`
+  * `buy_now_pay_later`
+  * `card`
+  * `crypto`
+  * `digital_wallet`
+  * `gift_card`
+  * `real_time_payment`
+  * `rewards`
+  {{</minfraud-schema-row>}}
+
   {{< minfraud-schema-row key="processor" type="request" valueType="string" valueTypeNote="format: enum" >}}
   The payment processor used for the transaction. The valid values are:
 
