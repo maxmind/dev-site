@@ -50,6 +50,10 @@
   scroll-margin-top: 100px;
 }
 
+[id='hubspot-messages-iframe-container'] iframe {
+  color-scheme: auto !important;
+}
+
 .heading-anchor {
   &::before {
     color: var(--mm-color-logo-blue-light);
