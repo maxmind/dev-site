@@ -59,5 +59,5 @@ may be interested in referring your users to MaxMind through our Affiliate
 Program.
 
 You can
-[learn more about the MaxMind Affiliate Program for developers on our Knowledge Base](https://support.maxmind.com/hc/en-us/sections/5066199198619-Affiliate-Program),
+[learn more about the MaxMind Affiliate Program for developers on our Knowledge Base](https://support.maxmind.com/knowledge-base/account-and-purchasing#affiliate-program),
 including how to apply.

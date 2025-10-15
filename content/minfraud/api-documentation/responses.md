@@ -506,7 +506,7 @@ for more information.
   {{< minfraud-schema-row key="risk" type="response" valueType="decimal" valueTypeNote="min: 0.01, max: 99" score="true" insights="true" factors="true" >}}
   This field contains the risk associated with the IP address. The value ranges from 0.01 to 99\. A higher score indicates a higher risk.
 
-  [Learn more about the IP risk score on our Knowledge Base.](https://support.maxmind.com/hc/en-us/articles/4408382525851-Device-Risk-Scores#h%5F01FN6HE00G80Y22P4WSXJ81C6Y)
+  [Learn more about the IP risk score on our Knowledge Base.](https://support.maxmind.com/knowledge-base/articles/minfraud-ip-risk-score)
   {{</minfraud-schema-row>}}
 
   {{< minfraud-schema-row key="country" type="response" valueType="object" insights="true" factors="true" >}}
