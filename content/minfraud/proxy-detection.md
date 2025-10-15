@@ -134,7 +134,7 @@ All strings are returned as ASCII.
             <li>
               `PERMISSION_REQUIRED` – You do not have permission to use the
               service. Please
-              <a href="https://support.maxmind.com/hc/en-us/requests/new"
+              <a href="https://support.maxmind.com"
                 >contact our support team</a
               >
               for more information.

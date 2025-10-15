@@ -726,7 +726,7 @@ process that was used for the event.
 
   <!-- cspell: enable -->
 
-  If your payment processor is missing from this list, please [contact our support team](https://support.maxmind.com/hc/en-us/requests/new).
+  If your payment processor is missing from this list, please [contact our support team](https://support.maxmind.com).
   {{</minfraud-schema-row>}}
 
   {{< minfraud-schema-row key="was_authorized" type="request" valueType="boolean"  >}}

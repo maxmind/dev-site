@@ -1101,7 +1101,7 @@ current when they signed up for the service. The latest version is 1.3.
             <li>
               <strong>PERMISSION_REQUIRED</strong> – This is returned if you do
               not have permission to use the service. Please
-              <a href="https://support.maxmind.com/hc/en-us/requests/new"
+              <a href="https://support.maxmind.com"
                 >contact our support team</a
               >
               for more information.

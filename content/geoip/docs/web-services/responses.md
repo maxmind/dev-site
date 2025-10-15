@@ -136,7 +136,7 @@ to handle any valid HTTP `4xx` or `5xx` status code.
         <td>402 Payment Required</td>
         <td>
           You do not have permission to use the service. Please
-          <a href="https://support.maxmind.com/hc/en-us/requests/new"
+          <a href="https://support.maxmind.com"
             >contact our support team</a
           >
           for more information.
