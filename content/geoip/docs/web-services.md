@@ -166,7 +166,7 @@ help us investigate an issue:
 - Date and time frame (including time zone) that you experienced the issue
 - Your traceroute to `geoip.maxmind.com`
 
-[You can submit your support request on our knowledge base.](https://support.maxmind.com/hc/en-us/requests/new)
+[You can submit your support request on our knowledge base.](https://support.maxmind.com)
 
 ## Command Line (curl) Examples
 

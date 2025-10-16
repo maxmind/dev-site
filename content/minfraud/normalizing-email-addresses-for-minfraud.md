@@ -64,5 +64,5 @@ in various languages.
 - [Java](https://github.com/maxmind/minfraud-api-java/blob/main/src/main/java/com/maxmind/minfraud/request/Email.java#L414)
 - [JavaScript](https://github.com/maxmind/minfraud-api-node/blob/main/src/request/email.ts#L313)
 - [PHP](https://github.com/maxmind/minfraud-api-php/blob/main/src/MinFraud/Util.php#L284)
-- [Python](https://github.com/maxmind/minfraud-api-python/blob/main/minfraud/request.py#L357)
+- [Python](https://github.com/maxmind/minfraud-api-python/blob/main/src/minfraud/request.py#L375)
 - [Ruby](https://github.com/maxmind/minfraud-api-ruby/blob/main/lib/minfraud/components/email.rb#L84)

@@ -43,7 +43,7 @@ and Factors services.
   url: "/minfraud/release-notes"
   text: "Review minFraud release notes to understand changes to the minFraud API."
 - heading: "Knowledge Base"
-  url: "https://support.maxmind.com/hc/en-us/categories/1260801482329-minFraud-Web-Services"
+  url: "https://support.maxmind.com/knowledge-base/minfraud-web-services"
   text: "Consult our knowledge base for articles about using minFraud."
 {{</ link-group/container >}}
 

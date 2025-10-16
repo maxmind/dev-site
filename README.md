@@ -71,7 +71,7 @@ Download
 [Embedded Dart Sass](https://github.com/sass/dart-sass-embedded/releases) and
 make sure it is in your `$PATH`. This is necessary for Hugo to process SASS and
 SCSS files. See the
-[Hugo documentation](https://gohugo.io/hugo-pipes/scss-sass/) for more
+[Hugo documentation](https://gohugo.io/functions/css/sass/#dart-sass) for more
 information.
 
 ### Development

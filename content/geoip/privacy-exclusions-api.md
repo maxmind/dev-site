@@ -119,7 +119,7 @@ to handle any valid HTTP 4xx or 5xx status code.
 | AUTHORIZATION_INVALID | 401 Unauthorized          | Your [account ID or license key](https://www.maxmind.com/en/accounts/current/license-key) could not be authenticated.                                     |
 | ACCOUNT_ID_REQUIRED   | 401 Unauthorized          | An [account ID and license key](https://www.maxmind.com/en/accounts/current/license-key) are required to use this service.                                |
 | LICENSE_KEY_REQUIRED  | 401 Unauthorized          | An [account ID and license key](https://www.maxmind.com/en/accounts/current/license-key) are required to use this service.                                |
-| PERMISSION_REQUIRED   | 403 Forbidden             | You do not have permission to use the service. Please [contact our support team](https://support.maxmind.com/hc/en-us/requests/new) for more information. |
+| PERMISSION_REQUIRED   | 403 Forbidden             | You do not have permission to use the service. Please [contact our support team](https://support.maxmind.com) for more information. |
 | _(none)_              | 503 Service Not Available | There is a problem with the web service server. You can [check the status of our services](https://status.maxmind.com), or try this request again later.  |
 
 #### Example Response (for an unsuccessful request)

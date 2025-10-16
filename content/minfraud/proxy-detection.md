@@ -14,7 +14,7 @@ environments, we recommend using the
 The proxy detection web service provides a score measuring the risk associated
 with an IP address. It is called the IP risk score in our current minFraud
 services.
-[Learn more about the IP risk score on our knowledge base.](https://support.maxmind.com/hc/en-us/articles/4408382525851-IP-Risk-Score)
+[Learn more about the IP risk score on our knowledge base.](https://support.maxmind.com/knowledge-base/articles/minfraud-ip-risk-score)
 
 ## Release Notes
 
@@ -134,7 +134,7 @@ All strings are returned as ASCII.
             <li>
               `PERMISSION_REQUIRED` – You do not have permission to use the
               service. Please
-              <a href="https://support.maxmind.com/hc/en-us/requests/new"
+              <a href="https://support.maxmind.com"
                 >contact our support team</a
               >
               for more information.
