@@ -157,15 +157,20 @@ http://yourdomain/yoururl?i=24.24.24.24&maxmindID=1234ABCD&domain=sample.com&cit
 Then the request will include this header:
 
 ```
-X-MaxMind-Alert-HMAC-SHA256: c333974ffdddfa5d1ba866171847bacf1af06bbe6ff6b6ce73632116ed36f617
+X-MaxMind-Alert-HMAC-SHA256: dd11717fc5559effc9607d03f2ad534ac8f7c7f81acba8d2c14d0ed484974ff0
 ```
 
 The signature is the hex encoded HMAC-SHA256 of the URL query parameters -
-everything after the `?`. In this case, the text to be signed is:
+everything after the `?` in the request URL. In this case, the text to be
+signed is:
 
 ```html
 i=24.24.24.24&maxmindID=1234ABCD&domain=sample.com&city=Anytown&region=CA&country=US&date=Jan.+1,+1970&txnID=foo123&reason=IP+address+has+been+marked+as+a+high-risk+IP&reason_code=HIGH_RISK_IP&minfraud_id=2afb0d26-e3b4-4624-8e66-fd10e64b95df&shop_id=shop321
 ```
+
+Please note that the URL query parameters should be from the raw request
+string that our server sends. In particular, note that space characters are
+encoded as `+` characters.
 
 You can check the signature using something like the following code:
 
