@@ -157,7 +157,7 @@ http://yourdomain/yoururl?i=24.24.24.24&maxmindID=1234ABCD&domain=sample.com&cit
 Then the request will include this header:
 
 ```
-X-MaxMind-Alert-HMAC-SHA256: c333974ffdddfa5d1ba866171847bacf1af06bbe6ff6b6ce73632116ed36f617
+X-MaxMind-Alert-HMAC-SHA256: dd11717fc5559effc9607d03f2ad534ac8f7c7f81acba8d2c14d0ed484974ff0
 ```
 
 The signature is the hex encoded HMAC-SHA256 of the URL query parameters -
