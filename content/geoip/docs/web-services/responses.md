@@ -179,6 +179,11 @@ to handle any valid HTTP `4xx` or `5xx` status code.
 </div>
 {{</ rawhtml >}}
 
+### Rate-limiting
+
+If customer requests result in excessive errors, MaxMind impose rate limits for
+a period of time.
+
 ## Response
 
 All services return data as a JSON document. The document that is returned
