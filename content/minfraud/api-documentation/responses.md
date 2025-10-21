@@ -185,6 +185,15 @@ to handle any valid HTTP `4xx` or `5xx` status code.
           <code>POST</code> queries, this means the web service cannot parse a
           request body of that type.
         </td>
+      </tr>       
+      <tr>
+        <td>(none)</td>
+        <td>429 Too Many Requests</td>
+        <td>
+          Your request has been denied due to rate-limiting imposed by MaxMind.
+          This is likely due to excessive previous requests resulting in error
+          responses.
+        </td>
       </tr>
       <tr>
         <td>(none)</td>
