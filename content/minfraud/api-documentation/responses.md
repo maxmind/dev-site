@@ -201,8 +201,8 @@ to handle any valid HTTP `4xx` or `5xx` status code.
 
 ### Rate-limiting
 
-If customer requests result in excessive errors, MaxMind impose rate limits for
-a period of time.
+If customer requests result in excessive errors, MaxMind may impose rate limits
+for a period of time.
 
 ## Response Body
 
