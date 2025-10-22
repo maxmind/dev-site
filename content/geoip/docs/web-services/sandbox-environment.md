@@ -46,7 +46,7 @@ database.
 
 The test data is displayed in JSON format, and would be the expected response
 for a query using the listed IP address.
-[Learn more about working with our GeoIP test data on our Knowledge Base.](https://support.maxmind.com/hc/en-us/articles/8610782760731-Sandbox-for-the-GeoIP-Web-Services#test-expected)
+[Learn more about working with our GeoIP test data on our Knowledge Base.](https://support.maxmind.com/knowledge-base/articles/sandbox-for-the-geoip-web-services#test-expected)
 
 {{< snippet "snippets/sandbox-limits.md" >}}
 

@@ -38,7 +38,7 @@ second, please [contact us](https://support.maxmind.com).
 ## Implementation
 
 Replace `INSERT_MAXMIND_ACCOUNT_ID_HERE` with your
-[MaxMind account ID](https://support.maxmind.com/hc/en-us/articles/4412951066779-Find-my-Account-ID).
+[MaxMind account ID](https://support.maxmind.com/knowledge-base/articles/find-your-maxmind-account-id).
 
 ```html
 <script>

@@ -59,7 +59,7 @@ respectively.
           The name of the ISP associated with the IP address.
           <br />
           <a
-            href="https://support.maxmind.com/hc/en-us/articles/4408200231067-IP-Network-Data#isp-org-data"
+            href="https://support.maxmind.com/knowledge-base/articles/maxmind-ip-network-data#isp-org-data"
             >Learn more about ISP data on our Knowledge Base.</a
           >
         </td>
@@ -72,7 +72,7 @@ respectively.
           The name of the organization associated with the IP address.
           <br />
           <a
-            href="https://support.maxmind.com/hc/en-us/articles/4408200231067-IP-Network-Data#isp-org-data"
+            href="https://support.maxmind.com/knowledge-base/articles/maxmind-ip-network-data#isp-org-data"
             >Learn more about organization data on our Knowledge Base.</a
           >
         </td>
@@ -89,7 +89,7 @@ respectively.
           number associated with the IP address.
           <br />
           <a
-            href="https://support.maxmind.com/hc/en-us/articles/4408200231067-IP-Network-Data#autonomous-system-data"
+            href="https://support.maxmind.com/knowledge-base/articles/maxmind-ip-network-data#autonomous-system-data"
             >Learn more about autonomous system data on our Knowledge Base.</a
           >
         </td>
@@ -103,7 +103,7 @@ respectively.
           number for the IP address.
           <br />
           <a
-            href="https://support.maxmind.com/hc/en-us/articles/4408200231067-IP-Network-Data#autonomous-system-data"
+            href="https://support.maxmind.com/knowledge-base/articles/maxmind-ip-network-data#autonomous-system-data"
             >Learn more about autonomous system data on our Knowledge Base.</a
           >
         </td>
@@ -119,7 +119,7 @@ respectively.
           associated with the IP address and ISP.
           <br />
           <a
-            href="https://support.maxmind.com/hc/en-us/articles/4408200231067-IP-Network-Data#mobile-codes"
+            href="https://support.maxmind.com/knowledge-base/articles/maxmind-ip-network-data#mobile-codes"
             >Learn more about mobile country codes on our Knowledge Base.</a
           >
         </td>
@@ -136,7 +136,7 @@ respectively.
 
           <br />
           <a
-            href="https://support.maxmind.com/hc/en-us/articles/4408200231067-IP-Network-Data#mobile-codes"
+            href="https://support.maxmind.com/knowledge-base/articles/maxmind-ip-network-data#mobile-codes"
             >Learn more about mobile network codes on our Knowledge Base.</a
           >
         </td>

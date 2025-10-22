@@ -60,7 +60,7 @@ These are named `GeoLite2-ASN-Blocks-IPv4.csv` and
           number associated with the IP address.
           <br />
           <a
-            href="https://support.maxmind.com/hc/en-us/articles/4408200231067-IP-Network-Data#autonomous-system-data"
+            href="https://support.maxmind.com/knowledge-base/articles/maxmind-ip-network-data#autonomous-system-data"
             >Learn more about autonomous system data on our Knowledge Base.</a
           >
         </td>
@@ -74,7 +74,7 @@ These are named `GeoLite2-ASN-Blocks-IPv4.csv` and
           number for the IP address.
           <br />
           <a
-            href="https://support.maxmind.com/hc/en-us/articles/4408200231067-IP-Network-Data#autonomous-system-data"
+            href="https://support.maxmind.com/knowledge-base/articles/maxmind-ip-network-data#autonomous-system-data"
             >Learn more about autonomous system data on our Knowledge Base.</a
           >
         </td>

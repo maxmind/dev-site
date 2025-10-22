@@ -13,9 +13,9 @@ databases.
 GeoIP IP intelligence products and services can provide data on geolocation,
 network information, anonymizer status, and more. Learn about the different
 kinds of
-[geolocation data](https://support.maxmind.com/hc/en-us/articles/4407630528795-Choose-the-Right-Geolocation-Product)
+[geolocation data](https://support.maxmind.com/knowledge-base/articles/choose-the-right-maxmind-geolocation-product)
 and
-[IP intelligence data](https://support.maxmind.com/hc/en-us/articles/4408200217371-Choose-the-IP-Intelligence-Data-you-Need)
+[IP intelligence data](https://support.maxmind.com/knowledge-base/articles/choose-the-maxmind-ip-intelligence-data-you-need)
 in GeoIP products and services on our knowledge base.
 
 {{< rawhtml >}}
@@ -126,7 +126,7 @@ in GeoIP products and services on our knowledge base.
           * GeoIP web services provide more accurate geolocation than our
           equivalent databases.
           <a
-            href="https://support.maxmind.com/hc/en-us/articles/4407630528795-Choose-the-Right-Geolocation-Product#db-vs-web-services"
+            href="https://support.maxmind.com/knowledge-base/articles/choose-the-right-maxmind-geolocation-product#db-vs-web-services"
             >Learn more about the differences between GeoIP web services and
             databases on our knowledge base</a
           >.

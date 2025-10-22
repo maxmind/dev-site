@@ -52,7 +52,7 @@ with a very large accuracy radius. If you do not account for the accuracy
 radius, it may appear as if many IP addresses are geolocated to a specific place
 in the center of the country.
 
-[Learn more about MaxMind’s geolocation area data on our Knowledge Base.](https://support.maxmind.com/hc/en-us/articles/4414877149467-IP-Geolocation-Data#geolocation-area)
+[Learn more about MaxMind’s geolocation area data on our Knowledge Base.](https://support.maxmind.com/knowledge-base/articles/maxmind-ip-geolocation-data#geolocation-area)
 
 ## Integrating GeoLite databases and web services
 
@@ -77,7 +77,7 @@ service requests. After you have a MaxMind account, you should generate one or
 more license keys. Some people use different license keys for different servers
 or use cases.
 
-[Learn how to generate license keys on our Knowledge Base](https://support.maxmind.com/hc/en-us/articles/4407111582235-Generate-a-License-Key),
+[Learn how to generate license keys on our Knowledge Base](https://support.maxmind.com/knowledge-base/articles/generate-a-maxmind-license-key),
 or
 [go directly to your account portal to generate a new license key](https://www.maxmind.com/en/accounts/current/license-key).
 
@@ -306,8 +306,8 @@ IP geolocation data in general and GeoLite in particular.
 
 Get resources for licensing and partnership around GeoLite data:
 
-- [Learn about the GeoLite End User License Agreement on our Knowledge Base.](https://support.maxmind.com/hc/en-us/articles/4408936666523-Who-is-Covered-by-the-GeoLite2-End-User-License-Agreement)
-- [Learn how you are permitted to use GeoLite data in products or services on our Knowledge Base.](https://support.maxmind.com/hc/en-us/articles/4408936690075-Sell-or-Display-Data-from-GeoLite2-Databases-and-Web-Services)
+- [Learn about the GeoLite End User License Agreement on our Knowledge Base.](https://support.maxmind.com/knowledge-base/articles/who-is-covered-by-the-geolite-end-user-license-agreement)
+- [Learn how you are permitted to use GeoLite data in products or services on our Knowledge Base.](https://support.maxmind.com/knowledge-base/articles/sell-or-display-data-from-geolite-databases-and-web-services)
 - [Learn more about MaxMind’s Affiliate Program for developers.](https://www.maxmind.com/en/affiliate-program)
 
 ### How does IP geolocation work?

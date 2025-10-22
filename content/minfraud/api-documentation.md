@@ -32,7 +32,7 @@ to integrate with your order management system, payment processor, or other
 internal system so that manual review decisions made from the account portal are
 available within your own systems. For more information about setting
 dispositions from the account portal, please refer to the
-[article on reviewing transactions on our knowledge base](https://support.maxmind.com/hc/en-us/articles/4408762136603).
+[article on reviewing transactions on our knowledge base](https://support.maxmind.com/knowledge-base/articles/review-a-minfraud-transaction).
 
 ### Report Transactions
 
