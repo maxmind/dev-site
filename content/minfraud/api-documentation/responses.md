@@ -926,7 +926,7 @@ This is a sub-object of `email` that contains information related to the domain.
   {{< minfraud-schema-row key="is_postal_in_city" type="response" valueType="boolean"  insights="true" factors="true" >}}
   This field is `true` if the postal code provided with the address is in the city for the address. The field is `false` when the postal code is not in the city. The key will only be present when a billing postal code, city, and country have been provided.
 
-  We use [GeoNames data](https://www.geonames.org/postal-codes/postal-codes-us.html) for the postal-city match, which uses the [preferred place name](https://en.wikipedia.org/wiki/ZIP%5FCode#Preferred%5Fplace%5Fnames:%5FZIP%5FCodes%5Fand%5Fprevious%5Fzoning%5Flines) for a US ZIP code. [Alternative place names](https://en.wikipedia.org/wiki/ZIP%5FCode#Preferred%5Fplace%5Fnames:%5FZIP%5FCodes%5Fand%5Fprevious%5Fzoning%5Flines) for US ZIP codes may not trigger a match for this field.
+  We use [GeoNames data](https://www.geonames.org/postal-codes/postal-codes-us.html) for the postal-city match, which uses the [preferred place name](https://en.wikipedia.org/wiki/ZIP_Code) for a US ZIP code. [Alternative place names](https://en.wikipedia.org/wiki/ZIP_Code) for US ZIP codes may not trigger a match for this field.
 
   [Learn how to use the postal to city check for risk analysis on our Knowledge Base.](https://support.maxmind.com/knowledge-base/articles/billing-and-shipping-address-risk-data-minfraud#h%5F01FN6TV1Z2BRWCHVBK1ZE8276E)
   {{</minfraud-schema-row>}}
@@ -1028,7 +1028,7 @@ This is a sub-object of `email` that contains information related to the domain.
   {{< minfraud-schema-row key="is_postal_in_city" type="response" valueType="boolean"  insights="true" factors="true" >}}
   This field is `true` if the postal code provided with the address is in the city for the address. The field is `false` when the postal code is not in the city. The key will only be present when a billing postal code, city, and country have been provided.
 
-  We use [GeoNames data](https://www.geonames.org/postal-codes/postal-codes-us.html) for the postal-city match, which uses the [preferred place name](https://en.wikipedia.org/wiki/ZIP%5FCode#Preferred%5Fplace%5Fnames:%5FZIP%5FCodes%5Fand%5Fprevious%5Fzoning%5Flines) for a US ZIP code. [Alternative place names](https://en.wikipedia.org/wiki/ZIP%5FCode#Preferred%5Fplace%5Fnames:%5FZIP%5FCodes%5Fand%5Fprevious%5Fzoning%5Flines) for US ZIP codes may not trigger a match for this field.
+  We use [GeoNames data](https://www.geonames.org/postal-codes/postal-codes-us.html) for the postal-city match, which uses the [preferred place name](https://en.wikipedia.org/wiki/ZIP_Code) for a US ZIP code. [Alternative place names](https://en.wikipedia.org/wiki/ZIP_Code) for US ZIP codes may not trigger a match for this field.
 
   [Learn how to use the postal to city check for risk analysis on our Knowledge Base.](https://support.maxmind.com/knowledge-base/articles/billing-and-shipping-address-risk-data-minfraud#h%5F01FN6TV1Z2BRWCHVBK1ZE8276E)
   {{</minfraud-schema-row>}}

@@ -60,9 +60,9 @@ yourself. Below are the steps to take to do this.
 You can review the code in our client APIs see how to normalize an email address
 in various languages.
 
-- [.NET (C#)](https://github.com/maxmind/minfraud-api-dotnet/blob/main/MaxMind.MinFraud/Request/Email.cs#L395)
-- [Java](https://github.com/maxmind/minfraud-api-java/blob/main/src/main/java/com/maxmind/minfraud/request/Email.java#L414)
-- [JavaScript](https://github.com/maxmind/minfraud-api-node/blob/main/src/request/email.ts#L313)
-- [PHP](https://github.com/maxmind/minfraud-api-php/blob/main/src/MinFraud/Util.php#L284)
-- [Python](https://github.com/maxmind/minfraud-api-python/blob/main/src/minfraud/request.py#L375)
-- [Ruby](https://github.com/maxmind/minfraud-api-ruby/blob/main/lib/minfraud/components/email.rb#L84)
+- [.NET (C#)](https://github.com/maxmind/minfraud-api-dotnet/blob/bdc196438d4b1f35bf88431f3b0b1a62353950fb/MaxMind.MinFraud/Request/Email.cs#L395)
+- [Java](https://github.com/maxmind/minfraud-api-java/blob/98e3ad44651ee71b319cf42a21a57f2ed80925fc/src/main/java/com/maxmind/minfraud/request/Email.java#L414)
+- [JavaScript](https://github.com/maxmind/minfraud-api-node/blob/3c6591930377759fcba345ec6b737c65b4952284/src/request/email.ts#L313)
+- [PHP](https://github.com/maxmind/minfraud-api-php/blob/1e361918074957bf8013d744351fa9f1ae733227/src/MinFraud/Util.php#L284)
+- [Python](https://github.com/maxmind/minfraud-api-python/blob/fcb5b2a372d533d1c398ffc7f8554d730722234f/src/minfraud/request.py#L375)
+- [Ruby](https://github.com/maxmind/minfraud-api-ruby/blob/1a8a243060631cc55d203fac267bdb6ac64e8802/lib/minfraud/components/email.rb#L84)

@@ -45,7 +45,7 @@ title: GeoIP and GeoLite Database Documentation
 | .NET (C#)             | [NuGet](https://www.nuget.org/packages/MaxMind.GeoIP2/)                                                                       | [GitHub Pages](https://maxmind.github.io/GeoIP2-dotnet/)   | [GitHub](https://github.com/maxmind/GeoIP2-dotnet) |
 | Apache                | N/A                                                                                                                           | [GitHub Pages](https://maxmind.github.io/mod_maxminddb/)   | [GitHub](https://github.com/maxmind/mod_maxminddb) |
 | C                     | N/A                                                                                                                           | [GitHub Pages](https://maxmind.github.io/libmaxminddb/)    | [GitHub](https://github.com/maxmind/libmaxminddb)  |
-| Java                  | [Maven Central Repository](https://search.maven.org/#search%7Cga%7C1%7Cg%3A%22com.maxmind.geoip2%22%20AND%20a%3A%22geoip2%22) | [GitHub Pages](https://maxmind.github.io/GeoIP2-java/)     | [GitHub](https://github.com/maxmind/GeoIP2-java)   |
+| Java                  | [Maven Central Repository](https://search.maven.org/artifact/com.maxmind.geoip2/geoip2) | [GitHub Pages](https://maxmind.github.io/GeoIP2-java/)     | [GitHub](https://github.com/maxmind/GeoIP2-java)   |
 | Node.js               | [NPM](https://npmjs.com/package/@maxmind/geoip2-node)                                                                         | [GitHub Pages](https://maxmind.github.io/GeoIP2-node/)     | [GitHub](https://github.com/maxmind/GeoIP2-node)   |
 | PHP                   | [Packagist](https://packagist.org/packages/geoip2/geoip2)                                                                     | [GitHub Pages](https://maxmind.github.io/GeoIP2-php/)      | [GitHub](https://github.com/maxmind/GeoIP2-php)    |
 | Python                | [PyPI](https://pypi.python.org/pypi/geoip2)                                                                                   | [Read the Docs](https://geoip2.readthedocs.org/en/latest/) | [GitHub](https://github.com/maxmind/GeoIP2-python) |
@@ -113,7 +113,7 @@ integrator for assistance. {{</ alert >}}
 | Load balancer                  | NGINX                   | [ngx_http_geoip2_module](https://github.com/leev/ngx_http_geoip2_module)                                                |
 | Log Analyzer / Data Processing | Logstash                | [Geoip filter plugin](https://www.elastic.co/guide/en/logstash/current/plugins-filters-geoip.html)                      |
 | Network Protocol Analyzer      | Wireshark               | [How To Use GeoIP With Wireshark](https://gitlab.com/wireshark/wireshark/-/wikis/HowToUseGeoIP)                         |
-| Search                         | Elasticsearch           | [GeoIP processor](https://www.elastic.co/guide/en/elasticsearch/reference/current/geoip-processor.html#geoip-processor) |
+| Search                         | Elasticsearch           | [GeoIP processor](https://www.elastic.co/guide/en/elasticsearch/reference/current/geoip-processor.html) |
 
 ## Command Line (mmdbinspect)
 
