@@ -73,7 +73,7 @@ particular dataset you are querying:
           number associated with the IP address.
           <br />
           <a
-            href="https://support.maxmind.com/hc/en-us/articles/4408200231067-IP-Network-Data#h_01FN989WWSE56YD6AV4QSPSWDW"
+            href="https://support.maxmind.com/hc/en-us/articles/4408200231067-IP-Network-Data#autonomous-system-data"
             >Learn more about autonomous system data on our Knowledge Base.</a
           >
         </td>
@@ -87,7 +87,7 @@ particular dataset you are querying:
           number for the IP address.
           <br />
           <a
-            href="https://support.maxmind.com/hc/en-us/articles/4408200231067-IP-Network-Data#h_01FN989WWSE56YD6AV4QSPSWDW"
+            href="https://support.maxmind.com/hc/en-us/articles/4408200231067-IP-Network-Data#autonomous-system-data"
             >Learn more about autonomous system data on our Knowledge Base.</a
           >
         </td>

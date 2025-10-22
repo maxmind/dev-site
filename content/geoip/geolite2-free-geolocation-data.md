@@ -52,7 +52,7 @@ with a very large accuracy radius. If you do not account for the accuracy
 radius, it may appear as if many IP addresses are geolocated to a specific place
 in the center of the country.
 
-[Learn more about MaxMind’s geolocation area data on our Knowledge Base.](https://support.maxmind.com/hc/en-us/articles/4414877149467-IP-Geolocation-Data#h_01FRRHZZP6RAYSNZTYE4MQ3MWY)
+[Learn more about MaxMind’s geolocation area data on our Knowledge Base.](https://support.maxmind.com/hc/en-us/articles/4414877149467-IP-Geolocation-Data#geolocation-area)
 
 ## Integrating GeoLite databases and web services
 

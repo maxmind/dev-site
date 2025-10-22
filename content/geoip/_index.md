@@ -126,7 +126,7 @@ in GeoIP products and services on our knowledge base.
           * GeoIP web services provide more accurate geolocation than our
           equivalent databases.
           <a
-            href="https://support.maxmind.com/hc/en-us/articles/4407630528795-Choose-the-Right-Geolocation-Product#h_01FJMQXVWPSDRGPC1TG8NYQZ6E"
+            href="https://support.maxmind.com/hc/en-us/articles/4407630528795-Choose-the-Right-Geolocation-Product#db-vs-web-services"
             >Learn more about the differences between GeoIP web services and
             databases on our knowledge base</a
           >.
