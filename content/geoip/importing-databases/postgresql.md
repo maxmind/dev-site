@@ -201,7 +201,7 @@ Time: 9.869 ms
 You can now geolocate IP addresses using `latitude`, `longitude`, and
 `accuracy_radius`. For more information about how to understand the
 `accuracy_radius` field, see the
-[article on geolocation accuracy our knowledge base](https://support.maxmind.com/hc/en-us/articles/4407630607131-Geolocation-Accuracy).
+[article on geolocation accuracy our knowledge base](https://support.maxmind.com/knowledge-base/articles/maxmind-geolocation-accuracy).
 
 ## Optional: Create a table for locations data
 

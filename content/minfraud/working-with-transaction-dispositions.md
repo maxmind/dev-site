@@ -8,12 +8,12 @@ assign a disposition to every transaction received in a minFraud request. Custom
 Rules can set a transaction’s disposition to `accept`, `reject`, or
 `manual_review`. For more information on Custom Rules and Dispositions, see the
 documentation on our
-[knowledge base](https://support.maxmind.com/hc/en-us/articles/4408801942811-Use-Custom-Rules-and-Dispositions).
+[knowledge base](https://support.maxmind.com/knowledge-base/articles/use-custom-rules-and-dispositions-minfraud-maxmind).
 
 After transactions are received, customers can use the account portal to review
 all transactions dispositioned as `manual_review`. Transactions can then either
 be `accept`ed or `reject`ed, and/or have a note added.
-[Learn how to use the account portal to do manual review on our knowledge base.](https://support.maxmind.com/hc/en-us/articles/4408762136603-Review-a-minFraud-Transaction).
+[Learn how to use the account portal to do manual review on our knowledge base.](https://support.maxmind.com/knowledge-base/articles/review-a-minfraud-transaction).
 In order for these manual updates made in the account portal to be useful, they
 need to find their way back into customers’ systems. The Dispositions API allows
 customers to get a list of the manual updates and notes made to their
@@ -213,7 +213,7 @@ to handle any valid HTTP 4xx or 5xx status code.
 | PARAMETER_UNKNOWN      | 400 Bad Request            | You have supplied one or more parameters which are not used by this endpoint.                                                                                                             |
 | AUTHORIZATION_INVALID  | 401 Unauthorized           | You have supplied an invalid [MaxMind account ID and/or license key](https://www.maxmind.com/en/accounts/current/license-key) in the [Authorization](#authorization-and-security) header. |
 | LICENSE_KEY_REQUIRED   | 401 Unauthorized           | You have not supplied a [MaxMind license key](https://www.maxmind.com/en/accounts/current/license-key) in the [Authorization](#authorization-and-security) header.                        |
-| ACCOUNT_ID_REQUIRED    | 401 Unauthorized           | You have not supplied a [MaxMind account ID](https://support.maxmind.com/hc/en-us/articles/4412951066779-Find-my-Account-ID) in the [Authorization](#authorization-and-security) header.  |
+| ACCOUNT_ID_REQUIRED    | 401 Unauthorized           | You have not supplied a [MaxMind account ID](https://support.maxmind.com/knowledge-base/articles/find-your-maxmind-account-id) in the [Authorization](#authorization-and-security) header.  |
 | PERMISSION_REQUIRED    | 403 Forbidden              | You do not have permission to use the service. Please [contact our support team](https://support.maxmind.com) for more information.                                 |
 | (none)                 | 406 Not Acceptable         | Your request included an `Accept-Charset` header that is not supported. `UTF-8` is the only acceptable character set.                                                                     |
 | (none)                 | 415 Unsupported Media Type | Your request included an `Accept` header that is not supported. The web service cannot return content of that type.                                                                       |

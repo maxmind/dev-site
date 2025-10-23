@@ -1,6 +1,6 @@
 In order to test the web services in the Sandbox environment, you will need to
 generate a license key from your Sandbox account.
-[Learn how to generate a license key on our Knowledge Base.](https://support.maxmind.com/hc/en-us/articles/4407111582235-Generate-a-License-Key)
+[Learn how to generate a license key on our Knowledge Base.](https://support.maxmind.com/knowledge-base/articles/generate-a-maxmind-license-key)
 
 The process is the same for your Sandbox account, but you must login to your
 Sandbox account

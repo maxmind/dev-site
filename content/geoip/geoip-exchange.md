@@ -40,7 +40,7 @@ The basic steps are:
 1. In the “Report links” row for the geofeed, click “Get Permalinks”.
 2. Copy the permalink provided in the modal window.
 3. Provide your
-   [account ID](https://support.maxmind.com/hc/en-us/articles/4412951066779-Find-my-Account-ID)
+   [account ID](https://support.maxmind.com/knowledge-base/articles/find-your-maxmind-account-id)
    and
    [your license key](https://www.maxmind.com/en/accounts/current/license-key)
    using
@@ -68,7 +68,7 @@ wget -S \
 
 Where `YOUR_ACCOUNT_ID` is a placeholder for your account ID and
 `YOUR_LICENSE_KEY` is a placeholder for your license key.
-[Learn more about license keys on our knowledge base](https://support.maxmind.com/hc/en-us/articles/4407116112539-Using-License-Keys).
+[Learn more about license keys on our knowledge base](https://support.maxmind.com/knowledge-base/articles/using-maxmind-license-keys).
 Please note that the permalink copied from your account portal will replace
 `YOUR_GEOFEED_ID` with a unique ID for your geofeed and `YOUR_REPORT_ID` with an
 identifier for the kind of report you're downloading.
@@ -86,7 +86,7 @@ download the file.
 1. In the “Report links” row for the geofeed, click “Get Permalinks”.
 2. Copy the permalink provided in the modal window.
 3. Provide your
-   [account ID](https://support.maxmind.com/hc/en-us/articles/4412951066779-Find-my-Account-ID)
+   [account ID](https://support.maxmind.com/knowledge-base/articles/find-your-maxmind-account-id)
    and
    [your license key](https://www.maxmind.com/en/accounts/current/license-key)
    using
@@ -109,7 +109,7 @@ wget --user=YOUR_ACCOUNT_ID --password=YOUR_LICENSE_KEY 'https://download.maxmin
 
 Where `YOUR_ACCOUNT_ID` is a placeholder for your account ID and
 `YOUR_LICENSE_KEY` is a placeholder for your license key.
-[Learn more about license keys on our knowledge base](https://support.maxmind.com/hc/en-us/articles/4407116112539-Using-License-Keys).
+[Learn more about license keys on our knowledge base](https://support.maxmind.com/knowledge-base/articles/using-maxmind-license-keys).
 Please note that the permalink copied from your account portal will replace
 `YOUR_GEOFEED_ID` with a unique ID for your geofeed and `YOUR_REPORT_ID` with an
 identifier for the kind of report you're downloading.

@@ -62,7 +62,7 @@ These are named `GeoIP2-Connection-Type-Blocks-IPv4.csv` and
           <code>Satellite</code>. Additional values may be added in the future.
           <br />
           <a
-            href="https://support.maxmind.com/hc/en-us/articles/4408200231067-IP-Network-Data#h_01FN988THBX8RVERNTZ12BY2EC"
+            href="https://support.maxmind.com/knowledge-base/articles/maxmind-ip-network-data#connection-type-data"
             >Learn more about connection type data on our Knowledge Base.</a
           >
         </td>

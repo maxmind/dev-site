@@ -73,7 +73,7 @@ particular dataset you are querying:
           number associated with the IP address.
           <br />
           <a
-            href="https://support.maxmind.com/hc/en-us/articles/4408200231067-IP-Network-Data#h_01FN989WWSE56YD6AV4QSPSWDW"
+            href="https://support.maxmind.com/knowledge-base/articles/maxmind-ip-network-data#autonomous-system-data"
             >Learn more about autonomous system data on our Knowledge Base.</a
           >
         </td>
@@ -87,7 +87,7 @@ particular dataset you are querying:
           number for the IP address.
           <br />
           <a
-            href="https://support.maxmind.com/hc/en-us/articles/4408200231067-IP-Network-Data#h_01FN989WWSE56YD6AV4QSPSWDW"
+            href="https://support.maxmind.com/knowledge-base/articles/maxmind-ip-network-data#autonomous-system-data"
             >Learn more about autonomous system data on our Knowledge Base.</a
           >
         </td>
@@ -113,4 +113,4 @@ information about how to use GeoLite on Snowflake.
 
 For general questions about how to interpret specific GeoLite data points beyond
 what is documented in Snowflake, please consult
-[the appropriate section of the MaxMind Knowledge Base](https://support.maxmind.com/hc/en-us/articles/4414877149467-IP-Geolocation-Data).
+[the appropriate section of the MaxMind Knowledge Base](https://support.maxmind.com/knowledge-base/articles/maxmind-ip-geolocation-data).

@@ -172,7 +172,7 @@ wget -S \
 
 Where `YOUR_ACCOUNT_ID` is a placeholder for your account ID and
 `YOUR_LICENSE_KEY` is a placeholder for your license key.
-[Learn more about license keys on our knowledge base](https://support.maxmind.com/hc/en-us/articles/4407116112539-Using-License-Keys).
+[Learn more about license keys on our knowledge base](https://support.maxmind.com/knowledge-base/articles/using-maxmind-license-keys).
 
 In the response, you can check the `last-modified` header for the file’s build
 date, or you can check the `content-disposition` header for the date that would
@@ -181,7 +181,7 @@ or program, according to your needs.
 
 This method only issues a HEAD request, rather than a download request, so
 running this check won’t count against your
-[daily database download limit](https://support.maxmind.com/hc/en-us/articles/4408216129947).
+[daily database download limit](https://support.maxmind.com/knowledge-base/articles/download-and-update-maxmind-databases).
 
 ### Automating downloads
 
@@ -206,7 +206,7 @@ To directly download databases, follow these steps:
    database.
 2. Copy the permalink(s) provided in the modal window.
 3. Provide your
-   [account ID](https://support.maxmind.com/hc/en-us/articles/4412951066779-Find-my-Account-ID)
+   [account ID](https://support.maxmind.com/knowledge-base/articles/find-your-maxmind-account-id)
    and
    [your license key](https://www.maxmind.com/en/accounts/current/license-key)
    using
@@ -234,7 +234,7 @@ wget --content-disposition --user=YOUR_ACCOUNT_ID --password=YOUR_LICENSE_KEY 'h
 
 Where `YOUR_ACCOUNT_ID` is a placeholder for your account ID and
 `YOUR_LICENSE_KEY` is a placeholder for your license key.
-[Learn more about license keys on our knowledge base](https://support.maxmind.com/hc/en-us/articles/4407116112539-Using-License-Keys).
+[Learn more about license keys on our knowledge base](https://support.maxmind.com/knowledge-base/articles/using-maxmind-license-keys).
 
 These examples will save the database to a file called
 `GeoIP2-City-CSV_YYYYMMDD.zip` where YYYYMMDD is the date of the latest release.
@@ -259,7 +259,7 @@ notify customers by [posting a release note](/geoip/release-notes).
 ## Download limits
 
 _MaxMind reserves the right to
-[limit the number of downloads](https://support.maxmind.com/hc/en-us/articles/4408216129947)
+[limit the number of downloads](https://support.maxmind.com/knowledge-base/articles/download-and-update-maxmind-databases)
 made within a limited period of time._
 
 ## Rate-limiting

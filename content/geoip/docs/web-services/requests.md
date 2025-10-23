@@ -87,4 +87,4 @@ response.
 
 ## Troubleshooting IP Lookups
 
-[Learn about common troubleshooting steps to make sure that you're querying the correct IP addresses, and making efficient use of your queries, on our Knowledge Base.](https://support.maxmind.com/hc/en-us/articles/4408248823835-Optimize-my-Web-Service-Integration)
+[Learn about common troubleshooting steps to make sure that you're querying the correct IP addresses, and making efficient use of your queries, on our Knowledge Base.](https://support.maxmind.com/knowledge-base/articles/optimize-your-maxmind-web-service-integration)

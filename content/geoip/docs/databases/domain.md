@@ -59,7 +59,7 @@ These are named `GeoIP2-Domain-Blocks-IPv4.csv` and
           The domain associated with the IP address.
           <br />
           <a
-            href="https://support.maxmind.com/hc/en-us/articles/4408200231067-IP-Network-Data#h_01FN98A5BNTS0GGWTD2QA4AHXN"
+            href="https://support.maxmind.com/knowledge-base/articles/maxmind-ip-network-data#domain-name-data"
             >Learn more about domain name data on our Knowledge Base.</a
           >
         </td>

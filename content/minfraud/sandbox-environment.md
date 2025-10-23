@@ -58,7 +58,7 @@ return will not be accurate. The Sandbox environment should be used for basic
 integration testing, to confirm that you are passing inputs in a valid format
 and that you are able to process the basic format of minFraud responses.
 
-[Learn more on our Knowledge Base about the kinds of outputs you can expect to receive from real minFraud transactions.](https://support.maxmind.com/hc/en-us/articles/4407964824859-Pass-Inputs-to-minFraud#h_01GD1EDANJCXFHBD9TT8TXA615)
+[Learn more on our Knowledge Base about the kinds of outputs you can expect to receive from real minFraud transactions.](https://support.maxmind.com/knowledge-base/articles/pass-inputs-to-minfraud#recommended-minimum-inputs)
 
 You should not submit real transaction data to the Sandbox version of the
 minFraud services, but you can submit transactions with dummy data.
