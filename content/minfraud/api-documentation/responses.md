@@ -692,13 +692,13 @@ present in the response.
   {{< minfraud-schema-row key="brand" type="response" valueType="string" valueTypeNote="max length: 255" insights="true" factors="true" >}}
   The card brand, such as "Visa", "Discover", "American Express", etc.
 
-  [Learn how to use the credit card brand data for risk analysis on our Knowledge Base.](https://support.maxmind.com/knowledge-base/articles/credit-card-risk-data-minfraud#h%5F01FN6TY3X4AHK80QZ85KXX6BZZ)
+  [Learn how to use the credit card brand data for risk analysis on our Knowledge Base.](https://support.maxmind.com/knowledge-base/articles/credit-card-risk-data-minfraud#cc-brand-name)
   {{</minfraud-schema-row>}}
 
   {{< minfraud-schema-row key="country" type="response" valueType="string" valueTypeNote="max length: 2" insights="true" factors="true" >}}
   The two letter [ISO 3166-1 alpha-2 country code](https://en.wikipedia.org/wiki/ISO%5F3166-1%5Falpha-2) associated with the location of the majority of customers using this credit card as determined by their billing address. In cases where the location of customers is highly mixed, this defaults to the country of the bank issuing the card.
 
-  [Learn how to use the credit card country data for risk analysis on our Knowledge Base.](https://support.maxmind.com/knowledge-base/articles/credit-card-risk-data-minfraud#h%5F01FN6TYNBCSRH25VWPQ1CGNN27)
+  [Learn how to use the credit card country data for risk analysis on our Knowledge Base.](https://support.maxmind.com/knowledge-base/articles/credit-card-risk-data-minfraud#cc-country)
   {{</minfraud-schema-row>}}
 
   {{< minfraud-schema-row key="is_business" type="response" valueType="boolean"  insights="true" factors="true" >}}
@@ -708,19 +708,19 @@ present in the response.
   {{< minfraud-schema-row key="is_issued_in_billing_address_country" type="response" valueType="boolean"  insights="true" factors="true" >}}
   This field is `true` if the country of the billing address matches the country of the majority of customers using that IIN. It is `false` if both countries are available but do not match. If one or both of the countries are missing, the key will not be present. In cases where the location of customers is highly mixed, the match is to the country of the bank issuing the card.
 
-  [Learn how to use the billing address to credit card country matching for risk analysis on our Knowledge Base.](https://support.maxmind.com/knowledge-base/articles/billing-and-shipping-address-risk-data-minfraud#h%5F01FN6TVQNAXWEBB1T2JW4DNZAX)
+  [Learn how to use the billing address to credit card country matching for risk analysis on our Knowledge Base.](https://support.maxmind.com/knowledge-base/articles/billing-and-shipping-address-risk-data-minfraud#billing-cc-match)
   {{</minfraud-schema-row>}}
 
   {{< minfraud-schema-row key="is_prepaid" type="response" valueType="boolean"  insights="true" factors="true" >}}
   This field is `true` if the issuer ID number is for a prepaid card. It is`false` if the issuer ID number is for for a non-prepaid card. The key is only present when a valid issuer ID number has been provided.
 
-  [Learn how to use prepaid card detection for risk analysis on our Knowledge Base.](https://support.maxmind.com/knowledge-base/articles/credit-card-risk-data-minfraud#h%5F01FN6TXRB1E35Q7Z7BGENRV7MC)
+  [Learn how to use prepaid card detection for risk analysis on our Knowledge Base.](https://support.maxmind.com/knowledge-base/articles/credit-card-risk-data-minfraud#detection-prepaid-virtual)
   {{</minfraud-schema-row>}}
 
   {{< minfraud-schema-row key="is_virtual" type="response" valueType="boolean"  insights="true" factors="true" >}}
   This field is `true` if the issuer ID number is for a virtual card. It is`false` if the issuer ID number is for a non-virtual card. The key is only present when a valid issuer ID number has been provided.
 
-  [Learn how to use virtual card detection for risk analysis on our Knowledge Base.](https://support.maxmind.com/knowledge-base/articles/credit-card-risk-data-minfraud#h%5F01FN6TXRB1E35Q7Z7BGENRV7MC)
+  [Learn how to use virtual card detection for risk analysis on our Knowledge Base.](https://support.maxmind.com/knowledge-base/articles/credit-card-risk-data-minfraud#detection-prepaid-virtual)
   {{</minfraud-schema-row>}}
 
   {{< minfraud-schema-row key="type" type="response" valueType="string" valueTypeNote="format: enum" insights="true" factors="true" >}}
@@ -758,7 +758,7 @@ issuer of the card.
   {{< minfraud-schema-row key="name" type="response" valueType="string" valueTypeNote="max length: 255" insights="true" factors="true" >}}
   This field contains a JSON object with information relating to the credit card issuer.
 
-  [Learn how to use the credit card issuer name for risk analysis on our Knowledge Base.](https://support.maxmind.com/knowledge-base/articles/credit-card-risk-data-minfraud#h%5F01FN6TY3X4AHK80QZ85KXX6BZZ)
+  [Learn how to use the credit card issuer name for risk analysis on our Knowledge Base.](https://support.maxmind.com/knowledge-base/articles/credit-card-risk-data-minfraud#cc-brand-name)
   {{</minfraud-schema-row>}}
 
   {{< minfraud-schema-row key="matches_provided_name" type="response" valueType="boolean"  insights="true" factors="true" >}}
@@ -800,7 +800,7 @@ associated with the IP address passed in the request.
   {{< minfraud-schema-row key="confidence" type="response" valueType="decimal" valueTypeNote="min: 0.01, max: 99" insights="true" factors="true" >}}
   A number from 0.01 to 99 representing the confidence that the `/device/id`refers to a unique device as opposed to a cluster of similar devices. A confidence of 0.01 indicates very low confidence that the device is unique, whereas 99 indicates very high confidence.
 
-  [Learn how to use device confidence for risk analysis on our Knowledge Base.](https://support.maxmind.com/knowledge-base/articles/device-risk-data-minfraud#h%5F01FN6V1ANY9XA76Z69HG2DZ5TJ)
+  [Learn how to use device confidence for risk analysis on our Knowledge Base.](https://support.maxmind.com/knowledge-base/articles/device-risk-data-minfraud#device-confidence)
   {{</minfraud-schema-row>}}
 
   {{< minfraud-schema-row key="id" type="response" valueType="string" valueTypeNote="format: UUID" insights="true" factors="true" >}}
@@ -810,13 +810,13 @@ associated with the IP address passed in the request.
   {{< minfraud-schema-row key="last_seen" type="response" valueType="string" valueTypeNote="max length: 255" insights="true" factors="true" >}}
   The date and time of the last sighting of the device. The value is formatted according to [RFC 3339](https://tools.ietf.org/html/rfc3339).
 
-  [Learn how to use the last sighting data for risk analysis on our Knowledge Base.](https://support.maxmind.com/knowledge-base/articles/device-risk-data-minfraud#h%5F01FN6V29YM8FA1A48G0N2G7VRW)
+  [Learn how to use the last sighting data for risk analysis on our Knowledge Base.](https://support.maxmind.com/knowledge-base/articles/device-risk-data-minfraud#device-last-seen)
   {{</minfraud-schema-row>}}
 
   {{< minfraud-schema-row key="local_time" type="response" valueType="string" valueTypeNote="max length: 255" insights="true" factors="true" >}}
   The local date and time of the transaction in the time zone of the device. This is determined by using the UTC offset associated with the device. The value is formatted according to [RFC 3339](https://tools.ietf.org/html/rfc3339).
 
-  [Learn how to use local time data for risk analysis on our Knowledge Base.](https://support.maxmind.com/knowledge-base/articles/device-risk-data-minfraud#h%5F01FN6V22JSGD7JP7Y3C9YBERHE)
+  [Learn how to use local time data for risk analysis on our Knowledge Base.](https://support.maxmind.com/knowledge-base/articles/device-risk-data-minfraud#device-local-time)
   {{</minfraud-schema-row>}}
 
 {{</ schema-table >}}
@@ -850,25 +850,25 @@ associated with the IP address passed in the request.
   {{< minfraud-schema-row key="first_seen" type="response" valueType="string" valueTypeNote="format: YYYY-MM-DD, max length: 10" insights="true" factors="true" >}}
   A date string (e.g. 2017-04-24) to identify the date an email address was first seen by MaxMind. This is expressed using the ISO 8601 date format YYYY-MM-DD. The earliest date that may be returned is January 1, 2008.
 
-  [Learn how to use email first seen data for risk analysis on our Knowledge Base.](https://support.maxmind.com/knowledge-base/articles/minfraud-email-risk-data#h%5F01FN6V59SHH0J0MRH041K46NE0)
+  [Learn how to use email first seen data for risk analysis on our Knowledge Base.](https://support.maxmind.com/knowledge-base/articles/minfraud-email-risk-data#first-seen)
   {{</minfraud-schema-row>}}
 
   {{< minfraud-schema-row key="is_disposable" type="response" valueType="boolean"  insights="true" factors="true" >}}
   This field is `true` if MaxMind believes that the email address is from a disposable email provider. It is `false` if the address is not from a known disposable email provider. The key will only be present if a valid email address or email domain is provided.
 
-  [Learn how to use disposable email detection for risk analysis on our Knowledge Base.](https://support.maxmind.com/knowledge-base/articles/minfraud-email-risk-data#h%5F01FN6V5QYMX2DYRB4YSFM93F8D)
+  [Learn how to use disposable email detection for risk analysis on our Knowledge Base.](https://support.maxmind.com/knowledge-base/articles/minfraud-email-risk-data#free-disposible-flags)
   {{</minfraud-schema-row>}}
 
   {{< minfraud-schema-row key="is_free" type="response" valueType="boolean"  insights="true" factors="true" >}}
   This field is `true` if MaxMind believes that this email domain is for a free email provider such as Gmail or Yahoo! Mail. It is `false` if the domain is not for a known free email provider. The key will only be present if a valid email address or email domain is provided.
 
-  [Learn how to use free email detection for risk analysis on our Knowledge Base.](https://support.maxmind.com/knowledge-base/articles/minfraud-email-risk-data#h%5F01FN6V5QYMX2DYRB4YSFM93F8D)
+  [Learn how to use free email detection for risk analysis on our Knowledge Base.](https://support.maxmind.com/knowledge-base/articles/minfraud-email-risk-data#free-disposible-flags)
   {{</minfraud-schema-row>}}
 
   {{< minfraud-schema-row key="is_high_risk" type="response" valueType="boolean"  insights="true" factors="true" >}}
   This field is `true` if MaxMind believes that this email address is likely to be used for fraud. It is `false` if MaxMind does not believe the address is used for fraud. The key will only be present if a valid email address or email address hash is provided. Note that this is also factored into the overall `risk_score` in the response as well.
 
-  [Learn how to use our high risk email flag for risk analysis on our Knowledge Base.](https://support.maxmind.com/knowledge-base/articles/minfraud-email-risk-data#h%5F01FN6V50N3JM0YV92SJMJSRR37)
+  [Learn how to use our high risk email flag for risk analysis on our Knowledge Base.](https://support.maxmind.com/knowledge-base/articles/minfraud-email-risk-data#email-reputation-flagging)
   {{</minfraud-schema-row>}}
 
 {{</ schema-table >}}
@@ -890,7 +890,7 @@ This is a sub-object of `email` that contains information related to the domain.
   {{< minfraud-schema-row key="first_seen" type="response" valueType="string" valueTypeNote="format: YYYY-MM-DD, max length: 10" insights="true" factors="true" >}}
   A date string (e.g. 2019-01-01) to identify the date an email address domain was first seen by MaxMind. This is expressed using the ISO 8601 date format `YYYY-MM-DD`. The earliest date that may be returned is January 1, 2019.
 
-  [Learn how to use email first seen data for risk analysis on our Knowledge Base.](https://support.maxmind.com/knowledge-base/articles/minfraud-email-risk-data#h%5F01FN6V59SHH0J0MRH041K46NE0)
+  [Learn how to use email first seen data for risk analysis on our Knowledge Base.](https://support.maxmind.com/knowledge-base/articles/minfraud-email-risk-data#first-seen)
   {{</minfraud-schema-row>}}
 
 {{</ schema-table >}}
@@ -920,7 +920,7 @@ This is a sub-object of `email` that contains information related to the domain.
   {{< minfraud-schema-row key="is_high_risk" type="response" valueType="boolean"  insights="true" factors="true" >}}
   This field is `true` if the shipping address is an address associated with fraudulent transactions. The field is `false` when the address is not associated with increased risk. The key will only be present when a shipping address is provided.
 
-  [Learn more about the flag for high risk shipping addresses on our Knowledge Base.](https://support.maxmind.com/knowledge-base/articles/billing-and-shipping-address-risk-data-minfraud#h%5F01FN6TQP51E294G9ANGEHPC9ZY)
+  [Learn more about the flag for high risk shipping addresses on our Knowledge Base.](https://support.maxmind.com/knowledge-base/articles/billing-and-shipping-address-risk-data-minfraud#high-risk-flag)
   {{</minfraud-schema-row>}}
 
   {{< minfraud-schema-row key="is_postal_in_city" type="response" valueType="boolean"  insights="true" factors="true" >}}
@@ -928,7 +928,7 @@ This is a sub-object of `email` that contains information related to the domain.
 
   We use [GeoNames data](https://www.geonames.org/postal-codes/postal-codes-us.html) for the postal-city match, which uses the [preferred place name](https://en.wikipedia.org/wiki/ZIP_Code) for a US ZIP code. [Alternative place names](https://en.wikipedia.org/wiki/ZIP_Code) for US ZIP codes may not trigger a match for this field.
 
-  [Learn how to use the postal to city check for risk analysis on our Knowledge Base.](https://support.maxmind.com/knowledge-base/articles/billing-and-shipping-address-risk-data-minfraud#h%5F01FN6TV1Z2BRWCHVBK1ZE8276E)
+  [Learn how to use the postal to city check for risk analysis on our Knowledge Base.](https://support.maxmind.com/knowledge-base/articles/billing-and-shipping-address-risk-data-minfraud#postal-city-match)
   {{</minfraud-schema-row>}}
 
   {{< minfraud-schema-row key="latitude" type="response" valueType="decimal"  insights="true" factors="true" >}}
@@ -946,19 +946,19 @@ This is a sub-object of `email` that contains information related to the domain.
   {{< minfraud-schema-row key="distance_to_ip_location" type="response" valueType="integer"  insights="true" factors="true" >}}
   The distance in kilometers from the address to the IP location. We fall back to country or subdivision information if we do not have postal or city information for an IP address, which may lead to inaccurate distance calculations.
 
-  [Learn how to use the IP geolocation to address distance for risk analysis on our Knowledge Base.](https://support.maxmind.com/knowledge-base/articles/billing-and-shipping-address-risk-data-minfraud#h%5F01FN6TVDXWSBQR55FJ0K2KWGJQ)
+  [Learn how to use the IP geolocation to address distance for risk analysis on our Knowledge Base.](https://support.maxmind.com/knowledge-base/articles/billing-and-shipping-address-risk-data-minfraud#ip-geo-to-address-match)
   {{</minfraud-schema-row>}}
 
   {{< minfraud-schema-row key="distance_to_billing_address" type="response" valueType="integer"  insights="true" factors="true" >}}
   The distance in kilometers from the shipping address to billing address. We fall back to country or subdivision information if we do not have postal or city information for an IP address, which may lead to inaccurate distance calculations.
 
-  [Learn how to use the shipping to billing address distance for risk analysis on our Knowledge Base.](https://support.maxmind.com/knowledge-base/articles/billing-and-shipping-address-risk-data-minfraud#h%5F01FN6TREMWDMHSB6EW41XX1A0Y)
+  [Learn how to use the shipping to billing address distance for risk analysis on our Knowledge Base.](https://support.maxmind.com/knowledge-base/articles/billing-and-shipping-address-risk-data-minfraud#distance)
   {{</minfraud-schema-row>}}
 
   {{< minfraud-schema-row key="is_in_ip_country" type="response" valueType="boolean"  insights="true" factors="true" >}}
   This field is `true` if the address is in the IP country. The field is`false` when the address is not in the IP country. If the IP address could not be geolocated or no billing address was provided, the field will not be included in the response.
 
-  [Learn how to use the IP location to country check for risk analysis on our Knowledge Base.](https://support.maxmind.com/knowledge-base/articles/billing-and-shipping-address-risk-data-minfraud#h%5F01FN6TVDXWSBQR55FJ0K2KWGJQ)
+  [Learn how to use the IP location to country check for risk analysis on our Knowledge Base.](https://support.maxmind.com/knowledge-base/articles/billing-and-shipping-address-risk-data-minfraud#ip-geo-to-address-match)
   {{</minfraud-schema-row>}}
 
 {{</ schema-table >}}
@@ -1030,7 +1030,7 @@ This is a sub-object of `email` that contains information related to the domain.
 
   We use [GeoNames data](https://www.geonames.org/postal-codes/postal-codes-us.html) for the postal-city match, which uses the [preferred place name](https://en.wikipedia.org/wiki/ZIP_Code) for a US ZIP code. [Alternative place names](https://en.wikipedia.org/wiki/ZIP_Code) for US ZIP codes may not trigger a match for this field.
 
-  [Learn how to use the postal to city check for risk analysis on our Knowledge Base.](https://support.maxmind.com/knowledge-base/articles/billing-and-shipping-address-risk-data-minfraud#h%5F01FN6TV1Z2BRWCHVBK1ZE8276E)
+  [Learn how to use the postal to city check for risk analysis on our Knowledge Base.](https://support.maxmind.com/knowledge-base/articles/billing-and-shipping-address-risk-data-minfraud#postal-city-match)
   {{</minfraud-schema-row>}}
 
   {{< minfraud-schema-row key="latitude" type="response" valueType="decimal"  insights="true" factors="true" >}}
@@ -1048,13 +1048,13 @@ This is a sub-object of `email` that contains information related to the domain.
   {{< minfraud-schema-row key="distance_to_ip_location" type="response" valueType="integer"  insights="true" factors="true" >}}
   The distance in kilometers from the address to the IP location. We fall back to country or subdivision information if we do not have postal or city information for an IP address, which may lead to inaccurate distance calculations.
 
-  [Learn how to use the IP geolocation to address distance for risk analysis on our Knowledge Base.](https://support.maxmind.com/knowledge-base/articles/billing-and-shipping-address-risk-data-minfraud#h%5F01FN6TVDXWSBQR55FJ0K2KWGJQ)
+  [Learn how to use the IP geolocation to address distance for risk analysis on our Knowledge Base.](https://support.maxmind.com/knowledge-base/articles/billing-and-shipping-address-risk-data-minfraud#ip-geo-to-address-match)
   {{</minfraud-schema-row>}}
 
   {{< minfraud-schema-row key="is_in_ip_country" type="response" valueType="boolean"  insights="true" factors="true" >}}
   This field is `true` if the address is in the IP country. The field is`false` when the address is not in the IP country. If the IP address could not be geolocated or no billing address was provided, the field will not be included in the response.
 
-  [Learn how to use the IP location to country check for risk analysis on our Knowledge Base.](https://support.maxmind.com/knowledge-base/articles/billing-and-shipping-address-risk-data-minfraud#h%5F01FN6TVDXWSBQR55FJ0K2KWGJQ)
+  [Learn how to use the IP location to country check for risk analysis on our Knowledge Base.](https://support.maxmind.com/knowledge-base/articles/billing-and-shipping-address-risk-data-minfraud#ip-geo-to-address-match)
   {{</minfraud-schema-row>}}
 
 {{</ schema-table >}}

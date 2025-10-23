@@ -358,7 +358,7 @@ the end-user who initiated the event.
   {{< minfraud-schema-row key="domain" type="request" valueType="string" valueTypeNote="max length: 255" >}}
   The domain of the email address used in the transaction. Do not include the`@` in this field.
 
-  You do not need to pass the email domain input unless you are passing the email address as an MD5 hash. [Learn more about hashed email inputs on our Knowledge Base.](https://support.maxmind.com/knowledge-base/articles/passing-email-inputs-minfraud#h_01G0Z373C3H1QA68TTHVYMXGTT)
+  You do not need to pass the email domain input unless you are passing the email address as an MD5 hash. [Learn more about hashed email inputs on our Knowledge Base.](https://support.maxmind.com/knowledge-base/articles/passing-email-inputs-minfraud#email-hashing)
   {{</minfraud-schema-row>}}
 {{</ schema-table >}}
 

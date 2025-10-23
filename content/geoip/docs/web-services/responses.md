@@ -758,7 +758,7 @@ address.
   {{< geoip-schema-row key="is_anonymous" valueType="boolean" insights="true">}}
   This is `true` if the IP address belongs to any sort of anonymous network. Otherwise, the key is not included in the `traits` object.
 
-  [Learn more about anonymizer and proxy detection on our Knowledge Base.](https://support.maxmind.com/knowledge-base/articles/anonymizer-and-proxy-data-maxmind#h_01FN9BBGV3ZG3TC0357Q9Y07C6)
+  [Learn more about anonymizer and proxy detection on our Knowledge Base.](https://support.maxmind.com/knowledge-base/articles/anonymizer-and-proxy-data-maxmind#anonymizer-detection)
   {{</ geoip-schema-row >}}
 
   {{< geoip-schema-row key="is_anonymous_vpn" valueType="boolean" insights="true">}}
@@ -766,7 +766,7 @@ address.
 
   If a VPN provider does not register subnets under names associated with them, we will likely only flag their IP ranges using the `is_hosting_provider` flag.
 
-  [Learn more about VPNs on our Knowledge Base.](https://support.maxmind.com/knowledge-base/articles/anonymizer-and-proxy-data-maxmind#h_01G1EDVJKNQY02XXFRM31N7SS2)
+  [Learn more about VPNs on our Knowledge Base.](https://support.maxmind.com/knowledge-base/articles/anonymizer-and-proxy-data-maxmind#vpns)
   {{</ geoip-schema-row >}}
 
   {{< geoip-schema-row key="is_anycast" valueType="boolean" country="true" city="true" insights="true">}}
@@ -776,25 +776,25 @@ address.
   {{< geoip-schema-row key="is_hosting_provider" valueType="boolean" insights="true">}}
   This is `true` if the IP address belongs to a hosting or VPN provider (see description of `is_anonymous_vpn` flag). Otherwise, the key is not included in the `traits` object.
 
-  [Learn more about hosting providers used for anonymizing on our Knowledge Base.](https://support.maxmind.com/knowledge-base/articles/anonymizer-and-proxy-data-maxmind#h_01G1EDVXR9RQFMCY6SAWJM4YH0)
+  [Learn more about hosting providers used for anonymizing on our Knowledge Base.](https://support.maxmind.com/knowledge-base/articles/anonymizer-and-proxy-data-maxmind#hosting-providers)
   {{</ geoip-schema-row >}}
 
   {{< geoip-schema-row key="is_public_proxy" valueType="boolean" insights="true">}}
   This is `true` if the IP address belongs to a public proxy. Otherwise, the key is not included in the `traits` object.
 
-  [Learn more about public proxies on our Knowledge Base.](https://support.maxmind.com/knowledge-base/articles/anonymizer-and-proxy-data-maxmind#h_01G1EDW5RZQCD4X4A76908DJ6Z)
+  [Learn more about public proxies on our Knowledge Base.](https://support.maxmind.com/knowledge-base/articles/anonymizer-and-proxy-data-maxmind#public-proxies)
   {{</ geoip-schema-row >}}
 
   {{< geoip-schema-row key="is_residential_proxy" valueType="boolean" insights="true">}}
   This is `true` if the IP address is on a suspected anonymizing network and belongs to a residential ISP (does not include peer-to-peer proxy IPs). Otherwise, the key is not included in the `traits` object.
 
-  [Learn more about residential proxies on our Knowledge Base.](https://support.maxmind.com/knowledge-base/articles/anonymizer-and-proxy-data-maxmind#h_01G1EDWEW3HAJT97P8EAZFQZMZ)
+  [Learn more about residential proxies on our Knowledge Base.](https://support.maxmind.com/knowledge-base/articles/anonymizer-and-proxy-data-maxmind#residential-proxies)
   {{</ geoip-schema-row >}}
 
   {{< geoip-schema-row key="is_tor_exit_node" valueType="boolean" insights="true">}}
   This is `true` if the IP address is a Tor exit node. Otherwise, the key is not included in the `traits` object.
 
-  [Learn more about Tor exit nodes on our Knowledge Base.](https://support.maxmind.com/knowledge-base/articles/anonymizer-and-proxy-data-maxmind#h_01G1EDWR1VQR8A0NB3R8WXT8QF)
+  [Learn more about Tor exit nodes on our Knowledge Base.](https://support.maxmind.com/knowledge-base/articles/anonymizer-and-proxy-data-maxmind#tor-exit-nodes)
   {{</ geoip-schema-row >}}
 
   {{< geoip-schema-row key="isp" valueType="string" city="true" insights="true">}}

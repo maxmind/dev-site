@@ -61,7 +61,7 @@ These are named `GeoIP2-Anonymous-IP-Blocks-IPv4.csv` and
           not.
           <br />
           <a
-            href="https://support.maxmind.com/knowledge-base/articles/anonymizer-and-proxy-data-maxmind-Anonymizer-and-Proxy-Data#h_01FN9BBGV3ZG3TC0357Q9Y07C6"
+            href="https://support.maxmind.com/knowledge-base/articles/anonymizer-and-proxy-data-maxmind#anonymizer-detection"
             >Learn more about anonymizer and proxy detection on our Knowledge
             Base.</a
           >
@@ -79,7 +79,7 @@ These are named `GeoIP2-Anonymous-IP-Blocks-IPv4.csv` and
           <code>is_hosting_provider</code> flag.
           <br />
           <a
-            href="https://support.maxmind.com/knowledge-base/articles/anonymizer-and-proxy-data-maxmind#h_01G1EDVJKNQY02XXFRM31N7SS2"
+            href="https://support.maxmind.com/knowledge-base/articles/anonymizer-and-proxy-data-maxmind#vpns"
             >Learn more about VPNs on our Knowledge Base.</a
           >
         </td>
@@ -93,7 +93,7 @@ These are named `GeoIP2-Anonymous-IP-Blocks-IPv4.csv` and
           description of <code>is_anonymous_vpn</code> flag). Blank if not.
           <br />
           <a
-            href="https://support.maxmind.com/knowledge-base/articles/anonymizer-and-proxy-data-maxmind#h_01G1EDVXR9RQFMCY6SAWJM4YH0"
+            href="https://support.maxmind.com/knowledge-base/articles/anonymizer-and-proxy-data-maxmind#hosting-providers"
             >Learn more about hosting providers used for anonymizing on our
             Knowledge Base.</a
           >
@@ -107,7 +107,7 @@ These are named `GeoIP2-Anonymous-IP-Blocks-IPv4.csv` and
           1 if the IP address belongs to a public proxy. Blank if not.
           <br />
           <a
-            href="https://support.maxmind.com/knowledge-base/articles/anonymizer-and-proxy-data-maxmind#h_01G1EDW5RZQCD4X4A76908DJ6Z"
+            href="https://support.maxmind.com/knowledge-base/articles/anonymizer-and-proxy-data-maxmind#public-proxies"
             >Learn more about public proxies on our Knowledge Base.</a
           >
         </td>
@@ -120,7 +120,7 @@ These are named `GeoIP2-Anonymous-IP-Blocks-IPv4.csv` and
           1 if the IP address is a Tor exit node. Blank if not.
           <br />
           <a
-            href="https://support.maxmind.com/knowledge-base/articles/anonymizer-and-proxy-data-maxmind#h_01G1EDWR1VQR8A0NB3R8WXT8QF"
+            href="https://support.maxmind.com/knowledge-base/articles/anonymizer-and-proxy-data-maxmind#tor-exit-nodes"
             >Learn more about Tor exit nodes on our Knowledge Base.</a
           >
         </td>
@@ -134,7 +134,7 @@ These are named `GeoIP2-Anonymous-IP-Blocks-IPv4.csv` and
           to a residential ISP. Blank if not.
           <br />
           <a
-            href="https://support.maxmind.com/knowledge-base/articles/anonymizer-and-proxy-data-maxmind#h_01G1EDWEW3HAJT97P8EAZFQZMZ"
+            href="https://support.maxmind.com/knowledge-base/articles/anonymizer-and-proxy-data-maxmind#residential-proxies"
             >Learn more about residential proxies on our Knowledge Base.</a
           >
         </td>
