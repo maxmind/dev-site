@@ -354,9 +354,11 @@ minFraud Insights and Factors, the object is the
 with four modifications:
 
 1. `risk` has been added directly to the `ip_address` object
-2. `local_time` has been added to the `location` sub-object
-3. The `maxmind` object is not present. See below for descriptions.
-4. minFraud Insights and Factors return the following anonymous IP outputs:
+2. `is_high_risk` has been added to the `country` sub-object
+3. `local_time` has been added to the `location` sub-object
+4. The `maxmind` object is not present. See below for descriptions.
+
+minFraud Insights and Factors return the following anonymous IP outputs:
    - `is_anonymous`
    - `is_anonymous_vpn`
    - `is_hosting_provider`
