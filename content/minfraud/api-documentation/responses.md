@@ -151,7 +151,7 @@ to handle any valid HTTP `4xx` or `5xx` status code.
           The license key you have provided does not have sufficient funds to
           use this service. Please
           <a
-            href="https://www.maxmind.com/en/solutions/minfraud-services#buy-now"
+            href="https://www.maxmind.com/en/solutions/fraud-prevention/overview#buy-now"
             >purchase more service credits</a
           >.
         </td>
@@ -264,7 +264,7 @@ For full examples of response bodies, select one of the following:
 {{< schema-table key="" >}}
 
   {{< minfraud-schema-row key="id" type="response" valueType="string" valueTypeNote="format: UUID" score="true" insights="true" factors="true" >}}
-  This is the minFraud ID, a [UUID](https://en.wikipedia.org/wiki/Universally%5Funique%5Fidentifier) that identifies the minFraud response. Use this ID to [search your minFraud logs](https://www.maxmind.com/en/minfraud-log) or when making support requests to MaxMind.
+  This is the minFraud ID, a [UUID](https://en.wikipedia.org/wiki/Universally%5Funique%5Fidentifier) that identifies the minFraud response. Use this ID to [search your minFraud logs](https://www.maxmind.com/en/accounts/current/query-usage-report) or when making support requests to MaxMind.
   {{</minfraud-schema-row>}}
 
   {{< minfraud-schema-row key="risk_score" type="response" valueType="decimal" valueTypeNote="min: 0.01, max: 99" score="true" insights="true" factors="true" >}}
@@ -600,7 +600,7 @@ for more information.
 {{< schema-table key="ip_address--location" >}}
 
   {{< minfraud-schema-row key="local_time" type="response" valueType="string" valueTypeNote="max length: 255" insights="true" factors="true" >}}
-  The date and time of the transaction in the time zone associated with the IP address. The value is formatted according to [RFC 3339](https://tools.ietf.org/html/rfc3339). For instance, the local time in Boston might be returned as`2015-04-27T19:17:24-04:00`.
+  The date and time of the transaction in the time zone associated with the IP address. The value is formatted according to [RFC 3339](https://datatracker.ietf.org/doc/html/rfc3339). For instance, the local time in Boston might be returned as`2015-04-27T19:17:24-04:00`.
   {{</minfraud-schema-row>}}
 
 {{</ schema-table >}}
@@ -810,13 +810,13 @@ associated with the IP address passed in the request.
   {{</minfraud-schema-row>}}
 
   {{< minfraud-schema-row key="last_seen" type="response" valueType="string" valueTypeNote="max length: 255" insights="true" factors="true" >}}
-  The date and time of the last sighting of the device. The value is formatted according to [RFC 3339](https://tools.ietf.org/html/rfc3339).
+  The date and time of the last sighting of the device. The value is formatted according to [RFC 3339](https://datatracker.ietf.org/doc/html/rfc3339).
 
   [Learn how to use the last sighting data for risk analysis on our Knowledge Base.](https://support.maxmind.com/knowledge-base/articles/device-risk-data-minfraud#device-last-seen)
   {{</minfraud-schema-row>}}
 
   {{< minfraud-schema-row key="local_time" type="response" valueType="string" valueTypeNote="max length: 255" insights="true" factors="true" >}}
-  The local date and time of the transaction in the time zone of the device. This is determined by using the UTC offset associated with the device. The value is formatted according to [RFC 3339](https://tools.ietf.org/html/rfc3339).
+  The local date and time of the transaction in the time zone of the device. This is determined by using the UTC offset associated with the device. The value is formatted according to [RFC 3339](https://datatracker.ietf.org/doc/html/rfc3339).
 
   [Learn how to use local time data for risk analysis on our Knowledge Base.](https://support.maxmind.com/knowledge-base/articles/device-risk-data-minfraud#device-local-time)
   {{</minfraud-schema-row>}}
@@ -1293,7 +1293,7 @@ this array for issues when integrating the web service.
 
 
   {{< minfraud-schema-row key="input_pointer" type="response" valueType="string" valueTypeNote="format: json pointer" score="true" insights="true" factors="true" >}}
-  A [JSON Pointer](https://tools.ietf.org/html/rfc6901) to the input field that the warning is associated with. For instance, if the warning was about the billing city, this would be `/billing/city`. If it was for the price in the second shopping cart item, it would be `/shopping_cart/1/price`
+  A [JSON Pointer](https://datatracker.ietf.org/doc/html/rfc6901) to the input field that the warning is associated with. For instance, if the warning was about the billing city, this would be `/billing/city`. If it was for the price in the second shopping cart item, it would be `/shopping_cart/1/price`
   {{</minfraud-schema-row>}}
 
 {{</ schema-table >}}

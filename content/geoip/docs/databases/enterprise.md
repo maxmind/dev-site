@@ -8,10 +8,10 @@ code, and additional intelligence such as confidence factors, ISP, domain, and
 connection type.
 
 To learn more about the GeoIP Enterprise database, please visit the
-[GeoIP Enterprise Database page](https://www.maxmind.com/en/solutions/geoip2-enterprise-product-suite/enterprise-database).
+[GeoIP Enterprise Database page](https://www.maxmind.com/en/geoip-enterprise-database).
 
 If you are interested in purchasing the database, please
-[contact our Enterprise Business team](https://www.maxmind.com/en/solutions/geoip2-enterprise-product-suite#signUp)
+[contact our Enterprise Business team](https://www.maxmind.com/en/solutions/connect-with-a-geoip-expert)
 for assistance.
 
 {{< snippet "snippets/ip-geolocation-usage-warning.md" >}}

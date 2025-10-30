@@ -40,4 +40,4 @@ MaxMind uses Cloudflare to serve our GeoIP and GeoLite database downloads.
 [You can view a list of Cloudflare IP ranges that may be used to serve MaxMind database downloads on their website.](https://www.cloudflare.com/ips/)
 
 Cloudflare also maintains
-[an API that can be used to retrieve the list of Cloudflare IP ranges](https://developers.cloudflare.com/api/operations/cloudflare-i-ps-cloudflare-ip-details).
+[an API that can be used to retrieve the list of Cloudflare IP ranges](https://developers.cloudflare.com/api/resources/ips/methods/list/).

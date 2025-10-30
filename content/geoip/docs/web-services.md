@@ -7,7 +7,7 @@ title: GeoIP and GeoLite Web Services Documentation
 
 To learn more about the GeoIP web services and to purchase credits, please view
 our
-[GeoIP web services page](https://www.maxmind.com/en/geoip2-precision-services).
+[GeoIP web services page](https://www.maxmind.com/en/geoip-api-web-services).
 
 If you are interested in minFraud Insights or minFraud Factors web services,
 which also contain GeoIP Insights data, please
@@ -68,7 +68,7 @@ and the Response Body section below.
       <tr>
         <td>Node.js</td>
         <td>
-          <a href="https://npmjs.com/package/@maxmind/geoip2-node">NPM</a>
+          <a href="https://www.npmjs.com/package/@maxmind/geoip2-node">NPM</a>
         </td>
         <td>
           <a href="https://maxmind.github.io/GeoIP2-node/">GitHub Pages</a>
@@ -93,9 +93,9 @@ and the Response Body section below.
       </tr>
       <tr>
         <td>Python</td>
-        <td><a href="https://pypi.python.org/pypi/geoip2">PyPI</a></td>
+        <td><a href="https://pypi.org/project/geoip2/">PyPI</a></td>
         <td>
-          <a href="https://geoip2.readthedocs.org/en/latest/">Read the Docs</a>
+          <a href="https://geoip2.readthedocs.io/en/latest/">Read the Docs</a>
         </td>
         <td><a href="https://github.com/maxmind/GeoIP2-python">GitHub</a></td>
       </tr>
@@ -133,7 +133,7 @@ for these APIs and has not reviewed the code. {{</ alert >}}
       <tr>
         <td>Go</td>
         <td></td>
-        <td><a href="https://godoc.org/github.com/savaki/geoip2">GoDoc</a></td>
+        <td><a href="https://pkg.go.dev/github.com/savaki/geoip2?utm_source=godoc">GoDoc</a></td>
         <td><a href="https://github.com/savaki/geoip2">GitHub</a></td>
       </tr>
     </tbody>
@@ -166,7 +166,7 @@ help us investigate an issue:
 - Date and time frame (including time zone) that you experienced the issue
 - Your traceroute to `geoip.maxmind.com`
 
-[You can submit your support request on our knowledge base.](https://support.maxmind.com)
+[You can submit your support request on our knowledge base.](https://support.maxmind.com/knowledge-base)
 
 ## Command Line (curl) Examples
 

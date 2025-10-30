@@ -9,8 +9,8 @@ with IPv4 and IPv6 addresses worldwide.
 Terms and pricing for the GeoIP City and GeoIP Country databases may be found on
 our product pages:
 
-- [GeoIP City](https://www.maxmind.com/en/geoip2-city)
-- [GeoIP Country](https://www.maxmind.com/en/geoip2-country)
+- [GeoIP City](https://www.maxmind.com/en/geoip-databases)
+- [GeoIP Country](https://www.maxmind.com/en/geoip-databases)
 
 {{< snippet "snippets/ip-geolocation-usage-warning.md" >}}
 {{< snippet "snippets/data-privacy-warning.md" >}}
@@ -86,7 +86,7 @@ These files are named `{GeoIP2,GeoLite2}-{City,Country}-Blocks-IPv4.csv` and
 `{GeoIP2,GeoLite2}-{City,Country}-Blocks-IPv6.csv` respectively. An example name
 would be `GeoIP2-City-Blocks-IPv4.csv`.
 
-[City subset by continent databases](https://www.maxmind.com/en/geoip2-city-database-by-continent)
+[City subset by continent databases](https://www.maxmind.com/en/geoip-databases)
 blocks files have the same columns as the City database.
 
 {{< csv-block-table isEnterprise="false" includeUtility="true">}}
@@ -104,7 +104,7 @@ possible locales are "de", "es", "fr", "ja", "pt-BR", "ru", and "zh-CN".
 These files are named `{GeoIP2,GeoLite2}-{City,Country}-Locations-{locale}.csv`.
 An example name would be `GeoIP2-City-Locations-en.csv`.
 
-[City subset by continent databases](https://www.maxmind.com/en/geoip2-city-database-by-continent)
+[City subset by continent databases](https://www.maxmind.com/en/geoip-databases)
 blocks files have the same columns as the City database.
 
 {{< csv-location-table isEnterprise="false" >}}
