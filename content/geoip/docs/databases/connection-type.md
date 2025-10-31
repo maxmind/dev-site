@@ -8,7 +8,7 @@ database identifies cellular, cable/DSL, and corporate connection speeds.
 
 To learn more about the GeoIP Connection Type database, including terms and
 pricing, please
-[visit the GeoIP Connection Type Database page](https://www.maxmind.com/en/geoip2-connection-type-database).
+[visit the GeoIP Connection Type Database page](https://www.maxmind.com/en/geoip-databases).
 
 {{< snippet "snippets/data-privacy-warning.md" >}}
 

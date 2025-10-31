@@ -123,7 +123,7 @@ retrieve the location information of the user as a
 [JavaScript object](/geoip/docs/web-services).
 
 The API is written using the
-[JavaScript module pattern](https://www.adequatelygood.com/JavaScript-Module-Pattern-In-Depth.html).
+[JavaScript module pattern](https://adequatelygood.com/JavaScript-Module-Pattern-In-Depth.html).
 Rather than injecting many global functions into the top-level execution scope,
 it returns a single object containing multiple functions you can call.
 

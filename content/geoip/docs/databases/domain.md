@@ -7,7 +7,7 @@ Look up the second level domain names associated with IPv4 and IPv6 addresses.
 
 To learn more about the GeoIP Domain database, including terms and pricing,
 please
-[visit the GeoIP Domain Database page](https://www.maxmind.com/en/geoip2-domain-name-database).
+[visit the GeoIP Domain Database page](https://www.maxmind.com/en/geoip-databases).
 
 {{< snippet "snippets/data-privacy-warning.md" >}}
 

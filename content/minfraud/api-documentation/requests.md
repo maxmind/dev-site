@@ -267,7 +267,7 @@ transaction.
   {{</minfraud-schema-row>}}
 
   {{< minfraud-schema-row key="time" type="request" valueType="string"  >}}
-  The date and time the event occurred. The string must be in the [RFC 3339](https://tools.ietf.org/html/rfc3339) date-time format. The time must be within the past year. If this field is not in the request, the current time will be used.
+  The date and time the event occurred. The string must be in the [RFC 3339](https://datatracker.ietf.org/doc/html/rfc3339) date-time format. The time must be within the past year. If this field is not in the request, the current time will be used.
 
   **It is not recommended to use this input when scoring live transactions as they occur.** However, it can be useful if you store transactions to be submitted to the service for scoring later.
 
@@ -726,7 +726,7 @@ process that was used for the event.
 
   <!-- cspell: enable -->
 
-  If your payment processor is missing from this list, please [contact our support team](https://support.maxmind.com).
+  If your payment processor is missing from this list, please [contact our support team](https://support.maxmind.com/knowledge-base).
   {{</minfraud-schema-row>}}
 
   {{< minfraud-schema-row key="was_authorized" type="request" valueType="boolean"  >}}

@@ -15,7 +15,7 @@ and our
 [minFraud Insights, minFraud Score, and minFraud Factors API documentation](/minfraud).
 To learn more about the minFraud Insights, minFraud Score, and minFraud Factors
 services and to purchase credits, please
-[visit the minFraud Overview page](https://www.maxmind.com/en/solutions/minfraud-services).
+[visit the minFraud Overview page](https://www.maxmind.com/en/solutions/fraud-prevention/overview).
 {{</ alert >}}
 
 The minFraud web service is available using a simple URI-based API. To use this
@@ -392,7 +392,7 @@ Here is an example of the output with just a few fields:
 
 The API version column specifies the earliest API version in which a field is
 available. You can explicitly
-[ask for responses in older API formats](https://www.maxmind.com/en/minfraud_version).
+[ask for responses in older API formats](/minfraud/minfraud-legacy).
 By default, all new users will receive responses for the version that was
 current when they signed up for the service. The latest version is 1.3.
 
@@ -648,7 +648,7 @@ current when they signed up for the service. The latest version is 1.3.
         <td>
           The time zone associated with the IP address. Time zone names are
           taken from the
-          <a href="https://www.iana.org/time-zones/">IANA time zone database</a
+          <a href="https://www.iana.org/time-zones">IANA time zone database</a
           >.
         </td>
         <td>1.2</td>

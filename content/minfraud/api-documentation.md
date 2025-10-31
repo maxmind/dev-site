@@ -12,9 +12,9 @@ document for a summary of the changes. {{</ alert >}}
 
 To learn more about the minFraud services and to purchase credits, please visit
 the
-[minFraud Overview page](https://www.maxmind.com/en/solutions/minfraud-services).
+[minFraud Overview page](https://www.maxmind.com/en/solutions/fraud-prevention/overview).
 To better understand the differences between each minFraud service, review our
-[minFraud Service Comparison page](https://www.maxmind.com/en/solutions/minfraud-services/pricing)
+[minFraud Service Comparison page](https://www.maxmind.com/en/solutions/fraud-prevention/plans-pricing)
 and the
 [API response body documentation](/minfraud/api-documentation/responses#bodies).
 
@@ -78,7 +78,7 @@ help us investigate an issue:
 - Date and time frame (including time zone) that you experienced the issue
 - Your traceroute to `minfraud.maxmind.com`
 
-[You can submit your support request on our knowledge base.](https://support.maxmind.com)
+[You can submit your support request on our knowledge base.](https://support.maxmind.com/knowledge-base)
 
 ## Versioning
 

@@ -7,7 +7,7 @@ Determine the Internet Service Provider, organization name, and autonomous
 system organization and number associated with an IP address.
 
 To learn more about the GeoIP ISP database, including terms and pricing, please
-[visit the GeoIP ISP Database page](https://www.maxmind.com/en/geoip2-isp-database).
+[visit the GeoIP ISP Database page](https://www.maxmind.com/en/geoip-databases).
 
 {{< snippet "snippets/data-privacy-warning.md" >}}
 

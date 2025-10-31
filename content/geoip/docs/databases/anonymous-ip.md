@@ -7,9 +7,9 @@ MaxMind's GeoIP Anonymous IP CSV database helps protect your business by
 identifying proxy, VPN, hosting, and other anonymous IP addresses.
 
 To learn more about the GeoIP Anonymous IP database, please visit the
-[GeoIP Anonymous IP Database page](https://www.maxmind.com/en/solutions/geoip2-enterprise-product-suite/anonymous-ip-database).
+[GeoIP Anonymous IP Database page](https://www.maxmind.com/en/geoip-anonymous-ip-database).
 If you are interested in purchasing the database, please
-[contact our Enterprise Business team](https://www.maxmind.com/en/solutions/geoip2-enterprise-product-suite#signUp)
+[contact our Enterprise Business team](https://www.maxmind.com/en/solutions/connect-with-a-geoip-expert)
 for assistance.
 
 ## Binary Database

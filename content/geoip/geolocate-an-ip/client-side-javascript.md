@@ -26,7 +26,7 @@ method/service, and providing callbacks for all scenarios.
 All domains using the service must be registered. New users may
 [request a free trial](https://www.maxmind.com/en/request-service-trial?service_geoip=1)
 or
-[purchase web service credit](https://www.maxmind.com/en/geoip2-precision-services)
+[purchase web service credit](https://www.maxmind.com/en/geoip-api-web-services)
 in order to receive an account to register domains. Existing account holders are
 able to
 [register domains directly](https://www.maxmind.com/en/accounts/current/geoip/javascript/domains).
@@ -200,7 +200,7 @@ description of the error.
 | `DOMAIN_REGISTRATION_REQUIRED` | 401 Unauthorized     | The domain of your site is not registered.                                                                                                                |
 | `QUERY_FORBIDDEN`              | 401 Unauthorized     | You tried to access a service or feature that is not covered by your service plan.                                                                        |
 | `OUT_OF_QUERIES`               | 402 Payment Required | The license key you have provided is out of queries. Please purchase more queries to use this service.                                                    |
-| `PERMISSION_REQUIRED`          | 403 Forbidden        | You do not have permission to use the service. Please [contact our support team](https://support.maxmind.com) for more information. |
+| `PERMISSION_REQUIRED`          | 403 Forbidden        | You do not have permission to use the service. Please [contact our support team](https://support.maxmind.com/knowledge-base) for more information. |
 | `HTTP_TIMEOUT`                 | (none)               | The request to the GeoIP web service timed out.                                                                                                           |
 | `HTTP_ERROR`                   | (none)               | There was an error making the request to the GeoIP web service.                                                                                           |
 

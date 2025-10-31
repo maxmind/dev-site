@@ -1,8 +1,0 @@
-^file://
-^https://deno\.land
-^https://github\.com/[^/]+/[^/]+/blob/[0-9a-fA-F]+/.+#L\d+$
-^https://jsr\.io
-^https://sandbox\.maxmind\.com
-^https://minfraud\.maxmind\.com
-https://www\.iso\.org/obp/ui/#iso:code:3166:ZA
-^https://www\.maxmind\.com/en/accounts/
