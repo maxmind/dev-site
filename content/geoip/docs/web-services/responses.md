@@ -201,6 +201,7 @@ maps to an object or an array of objects.
 
 ```json
 {
+  "anonymizer":           { ... },
   "city":                 { ... },
   "continent":            { ... },
   "country":              { ... },
@@ -226,6 +227,104 @@ For full examples of response bodies, select one of the following:
 - [GeoIP Country Body Example](#geoip-country-body-example)
 - [GeoIP City Body Example](#geoip-city-body-example)
 - [GeoIP Insights Body Example](#geoip-insights-body-example)
+
+### Anonymizer
+
+{{< anchor-target schema--response--anonymizer >}}
+
+`anonymizer` is a JSON object that indicates whether the IP address is part of an anonymizing service or network. This data is available for GeoIP Insights only.
+
+```json
+{
+  "confidence": 99,
+  "is_anonymous": true,
+  "is_anonymous_vpn": true,
+  "is_hosting_provider": true,
+  "is_public_proxy": true,
+  "is_residential_proxy": true,
+  "is_tor_exit_node": true,
+  "network_last_seen": "2025-01-15",
+  "provider_name": "NordVPN"
+}
+```
+
+<!-- prettier-ignore-start -->
+
+{{< schema-table key="anonymizer" >}}
+  {{< geoip-schema-row key="confidence" valueType="integer" valueTypeNote="min: 1, max: 99" insights="true">}}
+  A score ranging from 1 to 99 that represents our percent confidence that the network is currently part of an actively used VPN service.
+
+  Currently we will only provide values of 30 and 99, but the number of values will increase as we improve our confidence ratings.
+
+  [Learn more about anonymizer confidence on our Knowledge Base.](https://support.maxmind.com/knowledge-base/articles/anonymizer-and-proxy-data-maxmind)
+  {{</ geoip-schema-row >}}
+
+  {{< geoip-schema-row key="is_anonymous" valueType="boolean" insights="true">}}
+  This is `true` if the IP address belongs to any sort of anonymous network. Otherwise, the key is not included in the `anonymizer` object.
+
+  **Note:** This field has been moved from the `traits` object to the `anonymizer` object. It is still returned in the `traits` object for backwards compatibility but is deprecated there.
+
+  [Learn more about anonymizer and proxy detection on our Knowledge Base.](https://support.maxmind.com/knowledge-base/articles/anonymizer-and-proxy-data-maxmind#anonymizer-detection)
+  {{</ geoip-schema-row >}}
+
+  {{< geoip-schema-row key="is_anonymous_vpn" valueType="boolean" insights="true">}}
+  This is `true` if the IP address is registered to an anonymous VPN provider. Otherwise, the key is not included in the `anonymizer` object.
+
+  If a VPN provider does not register subnets under names associated with them, we will likely only flag their IP ranges using the `is_hosting_provider` flag.
+
+  **Note:** This field has been moved from the `traits` object to the `anonymizer` object. It is still returned in the `traits` object for backwards compatibility but is deprecated there.
+
+  [Learn more about VPNs on our Knowledge Base.](https://support.maxmind.com/knowledge-base/articles/anonymizer-and-proxy-data-maxmind#vpns)
+  {{</ geoip-schema-row >}}
+
+  {{< geoip-schema-row key="is_hosting_provider" valueType="boolean" insights="true">}}
+  This is `true` if the IP address belongs to a hosting or VPN provider (see description of `is_anonymous_vpn` flag). Otherwise, the key is not included in the `anonymizer` object.
+
+  **Note:** This field has been moved from the `traits` object to the `anonymizer` object. It is still returned in the `traits` object for backwards compatibility but is deprecated there.
+
+  [Learn more about hosting providers used for anonymizing on our Knowledge Base.](https://support.maxmind.com/knowledge-base/articles/anonymizer-and-proxy-data-maxmind#hosting-providers)
+  {{</ geoip-schema-row >}}
+
+  {{< geoip-schema-row key="is_public_proxy" valueType="boolean" insights="true">}}
+  This is `true` if the IP address belongs to a public proxy. Otherwise, the key is not included in the `anonymizer` object.
+
+  **Note:** This field has been moved from the `traits` object to the `anonymizer` object. It is still returned in the `traits` object for backwards compatibility but is deprecated there.
+
+  [Learn more about public proxies on our Knowledge Base.](https://support.maxmind.com/knowledge-base/articles/anonymizer-and-proxy-data-maxmind#public-proxies)
+  {{</ geoip-schema-row >}}
+
+  {{< geoip-schema-row key="is_residential_proxy" valueType="boolean" insights="true">}}
+  This is `true` if the IP address is on a suspected anonymizing network and belongs to a residential ISP (does not include peer-to-peer proxy IPs). Otherwise, the key is not included in the `anonymizer` object.
+
+  **Note:** This field has been moved from the `traits` object to the `anonymizer` object. It is still returned in the `traits` object for backwards compatibility but is deprecated there.
+
+  [Learn more about residential proxies on our Knowledge Base.](https://support.maxmind.com/knowledge-base/articles/anonymizer-and-proxy-data-maxmind#residential-proxies)
+  {{</ geoip-schema-row >}}
+
+  {{< geoip-schema-row key="is_tor_exit_node" valueType="boolean" insights="true">}}
+  This is `true` if the IP address is a Tor exit node. Otherwise, the key is not included in the `anonymizer` object.
+
+  **Note:** This field has been moved from the `traits` object to the `anonymizer` object. It is still returned in the `traits` object for backwards compatibility but is deprecated there.
+
+  [Learn more about Tor exit nodes on our Knowledge Base.](https://support.maxmind.com/knowledge-base/articles/anonymizer-and-proxy-data-maxmind#tor-exit-nodes)
+  {{</ geoip-schema-row >}}
+
+  {{< geoip-schema-row key="network_last_seen" valueType="string" insights="true">}}
+  The last day that the network was sighted in our analysis of anonymized networks. This is in the ISO 8601 date format (YYYY-MM-DD).
+
+  [Learn more about anonymizer and proxy detection on our Knowledge Base.](https://support.maxmind.com/knowledge-base/articles/anonymizer-and-proxy-data-maxmind)
+  {{</ geoip-schema-row >}}
+
+  {{< geoip-schema-row key="provider_name" valueType="string" insights="true">}}
+  The name of the VPN provider (e.g., NordVPN, SurfShark, etc.) associated with the network.
+
+  Please note that MaxMind identifies a subset of VPN providers. A current list of VPN providers identified in the Anonymous Plus database is available on request.
+
+  [Learn more about VPN provider detection on our Knowledge Base.](https://support.maxmind.com/knowledge-base/articles/anonymizer-and-proxy-data-maxmind)
+  {{</ geoip-schema-row >}}
+{{</ schema-table >}}
+
+<!-- prettier-ignore-end -->
 
 ### City
 
@@ -702,6 +801,7 @@ address.
   "connection_type": "Cable/DSL",
   "domain": "example.com",
   "ip_address": "1.2.3.4",
+  "ip_risk_snapshot": 45.5,
   "is_anonymous": true,
   "is_anonymous_vpn": true,
   "is_anycast": true,
@@ -755,13 +855,23 @@ address.
   The requested IP address.
   {{</ geoip-schema-row >}}
 
+  {{< geoip-schema-row key="ip_risk_snapshot" valueType="decimal" valueTypeNote="min: 0.01, max: 99" insights="true">}}
+  This field contains the risk associated with the IP address. The value ranges from 0.01 to 99. A higher score indicates a higher risk.
+
+  Please note that the IP risk score provided in GeoIP products and services is more static than the IP risk score provided in minFraud and is not responsive to traffic on your network. If you need realtime IP risk scoring based on behavioral signals on your own network, please use minFraud.
+  {{</ geoip-schema-row >}}
+
   {{< geoip-schema-row key="is_anonymous" valueType="boolean" insights="true">}}
+  **Deprecated.** This field has been moved to the [`anonymizer`](#anonymizer) object. It is still returned here for backwards compatibility.
+
   This is `true` if the IP address belongs to any sort of anonymous network. Otherwise, the key is not included in the `traits` object.
 
   [Learn more about anonymizer and proxy detection on our Knowledge Base.](https://support.maxmind.com/knowledge-base/articles/anonymizer-and-proxy-data-maxmind#anonymizer-detection)
   {{</ geoip-schema-row >}}
 
   {{< geoip-schema-row key="is_anonymous_vpn" valueType="boolean" insights="true">}}
+  **Deprecated.** This field has been moved to the [`anonymizer`](#anonymizer) object. It is still returned here for backwards compatibility.
+
   This is `true` if the IP address is registered to an anonymous VPN provider. Otherwise, the key is not included in the `traits` object.
 
   If a VPN provider does not register subnets under names associated with them, we will likely only flag their IP ranges using the `is_hosting_provider` flag.
@@ -774,24 +884,32 @@ address.
   {{</ geoip-schema-row >}}
 
   {{< geoip-schema-row key="is_hosting_provider" valueType="boolean" insights="true">}}
+  **Deprecated.** This field has been moved to the [`anonymizer`](#anonymizer) object. It is still returned here for backwards compatibility.
+
   This is `true` if the IP address belongs to a hosting or VPN provider (see description of `is_anonymous_vpn` flag). Otherwise, the key is not included in the `traits` object.
 
   [Learn more about hosting providers used for anonymizing on our Knowledge Base.](https://support.maxmind.com/knowledge-base/articles/anonymizer-and-proxy-data-maxmind#hosting-providers)
   {{</ geoip-schema-row >}}
 
   {{< geoip-schema-row key="is_public_proxy" valueType="boolean" insights="true">}}
+  **Deprecated.** This field has been moved to the [`anonymizer`](#anonymizer) object. It is still returned here for backwards compatibility.
+
   This is `true` if the IP address belongs to a public proxy. Otherwise, the key is not included in the `traits` object.
 
   [Learn more about public proxies on our Knowledge Base.](https://support.maxmind.com/knowledge-base/articles/anonymizer-and-proxy-data-maxmind#public-proxies)
   {{</ geoip-schema-row >}}
 
   {{< geoip-schema-row key="is_residential_proxy" valueType="boolean" insights="true">}}
+  **Deprecated.** This field has been moved to the [`anonymizer`](#anonymizer) object. It is still returned here for backwards compatibility.
+
   This is `true` if the IP address is on a suspected anonymizing network and belongs to a residential ISP (does not include peer-to-peer proxy IPs). Otherwise, the key is not included in the `traits` object.
 
   [Learn more about residential proxies on our Knowledge Base.](https://support.maxmind.com/knowledge-base/articles/anonymizer-and-proxy-data-maxmind#residential-proxies)
   {{</ geoip-schema-row >}}
 
   {{< geoip-schema-row key="is_tor_exit_node" valueType="boolean" insights="true">}}
+  **Deprecated.** This field has been moved to the [`anonymizer`](#anonymizer) object. It is still returned here for backwards compatibility.
+
   This is `true` if the IP address is a Tor exit node. Otherwise, the key is not included in the `traits` object.
 
   [Learn more about Tor exit nodes on our Knowledge Base.](https://support.maxmind.com/knowledge-base/articles/anonymizer-and-proxy-data-maxmind#tor-exit-nodes)
@@ -1277,8 +1395,20 @@ request.
     },
     "type": "military"
   },
+  "anonymizer": {
+    "confidence": 99,
+    "is_anonymous": true,
+    "is_anonymous_vpn": true,
+    "is_hosting_provider": true,
+    "is_public_proxy": true,
+    "is_residential_proxy": true,
+    "is_tor_exit_node": true,
+    "network_last_seen": "2025-01-15",
+    "provider_name": "NordVPN"
+  },
   "traits": {
     "ip_address": "1.2.3.4",
+    "ip_risk_snapshot": 45.5,
     "is_anycast": true,
     "network": "1.2.3.0/24",
     "autonomous_system_number": 1239,
