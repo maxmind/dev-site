@@ -289,6 +289,7 @@ transaction.
   * `purchase`
   * `recurring_purchase`
   * `referral`
+  * `sim_swap`
   * `survey`
 
   [Learn more about the /event/type input on our Knowledge Base.](https://support.maxmind.com/knowledge-base/articles/event-and-account-inputs-minfraud#transaction-identifier)
