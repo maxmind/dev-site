@@ -1,0 +1,79 @@
+diff_in,old_geoname_id,new_geoname_id,old_city_name,new_city_name,old_country_name,new_country_name,old_country_code,new_country_code,old_subdivision_codes,new_subdivision_codes
+city_name,3687925,3687925,Santiago de Cali,Cali,Colombia,Colombia,CO,CO,VAC,VAC
+city_name,3690584,3690584,Ábrego,Abrego,Colombia,Colombia,CO,CO,NSA,NSA
+city_name,2525110,2525110,Cassano Allo Ionio,Cassano All'Ionio,Italy,Italy,IT,IT,"78, CS","78, CS"
+city_name,3180630,3180630,Capri,Capri city,Italy,Italy,IT,IT,"72, NA","72, NA"
+city_name,3167940,3167940,Sannicandro Garganico,San Nicandro Garganico,Italy,Italy,IT,IT,"75, FG","75, FG"
+city_name,3114691,3114691,Oza de los Ríos,Oza dos Ríos,Spain,Spain,ES,ES,"GA, C","GA, C"
+city_name,699311,699311,Novopskov,Aydar,Ukraine,Ukraine,UA,UA,9,9
+city_name,1581461,1581461,Gò Vấp,Go Vap,Vietnam,Vietnam,VN,VN,SG,SG
+geoname_id,2508741,2508744,Afir,Afir,Algeria,Algeria,DZ,DZ,35,35
+geoname_id,8614659,8614545,Rosedale,Rosedale,Australia,Australia,AU,AU,NSW,NSW
+geoname_id,3459787,13029096,João Pessoa,João Pessoa,Brazil,Brazil,BR,BR,SC,SC
+geoname_id,6319492,6318968,Xinguara,Xinguara,Brazil,Brazil,BR,BR,PA,PA
+geoname_id,11959657,3458729,Laurentino,Laurentino,Brazil,Brazil,BR,BR,SC,SC
+geoname_id,13103074,3446947,Tanque Novo,Tanque Novo,Brazil,Brazil,BR,BR,BA,BA
+geoname_id,7615723,3450613,Saltinho,Saltinho,Brazil,Brazil,BR,BR,SP,SP
+geoname_id,3451203,3451202,Rio das Pedras,Rio das Pedras,Brazil,Brazil,BR,BR,SP,SP
+geoname_id,3465616,13029168,Contenda,Contenda,Brazil,Brazil,BR,BR,PR,PR
+geoname_id,12959105,6317420,Lago do Junco,Lago do Junco,Brazil,Brazil,BR,BR,MA,MA
+geoname_id,3460542,12108334,Itororó,Itororó,Brazil,Brazil,BR,BR,BA,BA
+geoname_id,3473955,6316954,Cristal,Cristal,Brazil,Brazil,BR,BR,RS,RS
+geoname_id,3459084,3459088,Laje,Laje,Brazil,Brazil,BR,BR,BA,BA
+geoname_id,3411873,6319512,Aragominas,Aragominas,Brazil,Brazil,BR,BR,TO,TO
+geoname_id,3470579,3470583,Barreiras,Barreiras,Brazil,Brazil,BR,BR,BA,BA
+geoname_id,12985858,3397154,Juazeiro,Juazeiro,Brazil,Brazil,BR,BR,BA,BA
+geoname_id,2235320,2235319,Ayos,Ayos,Cameroon,Cameroon,CM,CM,CE,CE
+geoname_id,6139085,6139086,Saint-Stanislas,Saint-Stanislas,Canada,Canada,CA,CA,QC,QC
+geoname_id,5966067,5966068,Greenfield,Greenfield,Canada,Canada,CA,CA,NS,NS
+geoname_id,12031951,6075292,Mission,Mission,Canada,Canada,CA,CA,BC,BC
+geoname_id,7290167,5972214,Havre-aux-Maisons,Havre-aux-Maisons,Canada,Canada,CA,CA,QC,QC
+geoname_id,5919257,5919256,Centreville,Centreville,Canada,Canada,CA,CA,NS,NS
+geoname_id,6139614,6139605,Salmon River,Salmon River,Canada,Canada,CA,CA,NS,NS
+geoname_id,5909490,5909489,Brooklyn,Brooklyn,Canada,Canada,CA,CA,NS,NS
+geoname_id,5944335,5944337,Dupuy,Dupuy,Canada,Canada,CA,CA,QC,QC
+geoname_id,5991635,5991638,Kiamika,Kiamika,Canada,Canada,CA,CA,QC,QC
+geoname_id,5955497,5955498,Forest,Forest,Canada,Canada,CA,CA,ON,ON
+geoname_id,5887765,5887766,Asquith,Asquith,Canada,Canada,CA,CA,SK,SK
+geoname_id,6122708,6122709,Riversdale,Riversdale,Canada,Canada,CA,CA,NS,NS
+geoname_id,6180657,6180643,White Lake,White Lake,Canada,Canada,CA,CA,ON,ON
+geoname_id,6082315,6082317,Mount Pleasant,Mount Pleasant,Canada,Canada,CA,CA,ON,ON
+geoname_id,6137415,6137417,Saint-Anicet,Saint-Anicet,Canada,Canada,CA,CA,QC,QC
+geoname_id,6182379,6182381,Willow Beach,Willow Beach,Canada,Canada,CA,CA,ON,ON
+geoname_id,6112414,6112416,Pouch Cove,Pouch Cove,Canada,Canada,CA,CA,NL,NL
+geoname_id,6173007,6173006,Val-des-Bois,Val-des-Bois,Canada,Canada,CA,CA,QC,QC
+geoname_id,5959172,6940354,Galloway,Galloway,Canada,Canada,CA,CA,BC,BC
+geoname_id,5946961,12096567,Eel Ground,Eel Ground,Canada,Canada,CA,CA,NB,NB
+geoname_id,6001544,6001545,Lac-Bouchette,Lac-Bouchette,Canada,Canada,CA,CA,QC,QC
+geoname_id,5966116,5966117,Greenhill,Greenhill,Canada,Canada,CA,CA,NS,NS
+geoname_id,6138936,6138922,Saint-Pierre,Saint-Pierre,Canada,Canada,CA,CA,QC,QC
+geoname_id,6138621,6138619,Saint-Léon,Saint-Léon,Canada,Canada,CA,CA,QC,QC
+geoname_id,6177909,6177908,Wellington,Wellington,Canada,Canada,CA,CA,NS,NS
+geoname_id,6048676,6048677,Lakeside,Lakeside,Canada,Canada,CA,CA,NS,NS
+geoname_id,5971838,5971837,Hastings,Hastings,Canada,Canada,CA,CA,NS,NS
+geoname_id,6154180,6154179,Springfield,Springfield,Canada,Canada,CA,CA,NB,NB
+geoname_id,13061025,13512441,Saint-Rosaire,Saint-Rosaire,Canada,Canada,CA,CA,QC,QC
+geoname_id,7090095,1552971,Yushan,Yushan,China,China,CN,CN,AH,AH
+geoname_id,3667901,3667902,Soatá,Soatá,Colombia,Colombia,CO,CO,BOY,BOY
+geoname_id,3683148,3683149,El Rosario,El Rosario,Colombia,Colombia,CO,CO,NAR,NAR
+geoname_id,10543898,7004141,Balanpur,Balanpur,India,India,IN,IN,UP,UP
+geoname_id,9915407,1271907,Fatehpur,Fatehpur,India,India,IN,IN,HR,HR
+geoname_id,11875608,12522576,Bhupalpally,Bhupalpally,India,India,IN,IN,TS,TS
+geoname_id,1626443,1626444,Subang,Subang,Indonesia,Indonesia,ID,ID,JB,JB
+geoname_id,3178221,8959664,Comunanza,Comunanza,Italy,Italy,IT,IT,"57, AP","57, AP"
+geoname_id,8572457,13430623,Ōya,Ōya,Japan,Japan,JP,JP,11,11
+geoname_id,8571617,13430616,Nishihara,Nishihara,Japan,Japan,JP,JP,11,11
+geoname_id,11172623,13433273,Hanatate,Hanatate,Japan,Japan,JP,JP,43,43
+geoname_id,8572710,13430667,Chūō,Chūō,Japan,Japan,JP,JP,11,11
+geoname_id,11136987,4026082,Lázaro Cárdenas,Lázaro Cárdenas,Mexico,Mexico,MX,MX,MIC,MIC
+geoname_id,3710935,13449633,El Dorado,El Dorado,Panama,Panama,PA,PA,8,8
+geoname_id,3929395,3929410,San Miguel,San Miguel,Peru,Peru,PE,PE,LIM,LIM
+geoname_id,775506,775507,Borowa Góra,Borowa Góra,Poland,Poland,PL,PL,14,14
+geoname_id,3372964,3372965,Lagoa,Lagoa,Portugal,Portugal,PT,PT,20,20
+geoname_id,3372653,3372656,Santa Bárbara,Santa Bárbara,Portugal,Portugal,PT,PT,20,20
+geoname_id,524866,524865,Mosolovo,Mosolovo,Russia,Russia,RU,RU,RYA,RYA
+geoname_id,564489,564474,Dubrovka,Dubrovka,Russia,Russia,RU,RU,KLU,KLU
+geoname_id,582774,582768,Alekseyevskoye,Alekseyevskoye,Russia,Russia,RU,RU,ME,ME
+geoname_id,699174,699285,Novoselytsya,Novoselytsya,Ukraine,Ukraine,UA,UA,77,77
+geoname_id,4235645,4235646,Chapin,Chapin,United States,United States,US,US,IL,IL
+subdivision_codes,454537,454537,Vangaži,Vangaži,Latvia,Latvia,LV,LV,91,80
