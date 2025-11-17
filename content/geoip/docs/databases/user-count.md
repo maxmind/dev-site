@@ -17,7 +17,9 @@ for assistance.
 
 ## Binary Database
 
-{{< snippet "snippets/binary-databases.md" >}}
+You can also use the mmdbinspect tool (in beta), a command line interface built
+with Go, to look up one or more IPs from one or more MMDB databases and receive
+output in a parsable JSON format.
 
 ## CSV Database
 
@@ -59,12 +61,6 @@ in the IPv6 file will be `null`. {{</ alert >}}
           this column to start/end IPs or start/end integers. See
           <a href="#conversion-utility">the conversion utility section</a> for
           details.
-          <br />
-          <a
-            href="https://support.maxmind.com/hc/en-us/articles/4408200231067-IP-Network-Data#h_01FN989KWHZG902R63XSJ786RK"
-          >
-            Learn more about the network column on our Knowledge Base.
-          </a>
         </td>
       </tr>
 
@@ -77,7 +73,7 @@ in the IPv6 file will be `null`. {{</ alert >}}
           normalized value.
           <br />
           <a
-            href="https://support.maxmind.com/hc/en-us/articles/4408200231067-IP-Network-Data#h_01FRRHZZP68K7MXP0H3EJ273ED"
+            href="https://support.maxmind.com/knowledge-base/articles/maxmind-user-context-data#user-counts"
           >
             Learn more about the normalization and values of the user count on
             our Knowledge Base.
@@ -96,7 +92,7 @@ in the IPv6 file will be `null`. {{</ alert >}}
           users but rather a normalized value.
           <br />
           <a
-            href="https://support.maxmind.com/hc/en-us/articles/4408200231067-IP-Network-Data#h_01FRRHZZP68K7MXP0H3EJ273ED"
+            href="https://support.maxmind.com/knowledge-base/articles/maxmind-user-context-data#user-counts"
           >
             Learn more about the normalization and values of the user count on
             our Knowledge Base.
@@ -117,7 +113,7 @@ in the IPv6 file will be `null`. {{</ alert >}}
           number of IP addresses.
           <br />
           <a
-            href="https://support.maxmind.com/hc/en-us/articles/4408200231067-IP-Network-Data#h_01FRRHZZP68K7MXP0H3EJ273ED"
+            href="https://support.maxmind.com/knowledge-base/articles/maxmind-user-context-data#user-counts"
           >
             Learn more about the normalization and values of the user count on
             our Knowledge Base.
@@ -138,7 +134,7 @@ in the IPv6 file will be `null`. {{</ alert >}}
           number of IP addresses.
           <br />
           <a
-            href="https://support.maxmind.com/hc/en-us/articles/4408200231067-IP-Network-Data#h_01FRRHZZP68K7MXP0H3EJ273ED"
+            href="https://support.maxmind.com/knowledge-base/articles/maxmind-user-context-data#user-counts"
           >
             Learn more about the normalization and values of the user count on
             our Knowledge Base.
@@ -173,24 +169,6 @@ in the IPv6 file will be `null`. {{</ alert >}}
 - [GeoIP2-User-Count-Test.mmdb](https://github.com/maxmind/MaxMind-DB/blob/main/test-data/GeoIP2-User-Count-Test.mmdb)
   {{</ mmdb-example-files >}}
 
-<!-- ## Database Sizes -->
-
-<!-- prettier-ignore-start -->
-
-<!-- {{< db-sizes-table dateRange="August to October 2024" >}}
-- databaseName: "GeoIP User Count"
-  csvSizeRange: "TBD"
-  mmdbSizeRange: "TBD"
-  ipv4Range: "TBD"
-  ipv6Range: "TBD"
-{{< /db-sizes-table >}} -->
-
-<!-- prettier-ignore-end -->
-
 ## Database Changes
 
 {{< database-changes product="User Count" >}}
-
-## APIs and Third-Party Integrations
-
-{{< snippet "snippets/geoip-db-apis.md" >}}

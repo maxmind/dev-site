@@ -17,7 +17,9 @@ for assistance.
 
 ## Binary Database
 
-{{< snippet "snippets/binary-databases.md" >}}
+You can also use the mmdbinspect tool (in beta), a command line interface built
+with Go, to look up one or more IPs from one or more MMDB databases and receive
+output in a parsable JSON format.
 
 ## CSV Database
 
@@ -53,12 +55,6 @@ These are named `GeoIP2-IP-Risk-Blocks-IPv4.csv` and
           this column to start/end IPs or start/end integers. See
           <a href="#conversion-utility">the conversion utility section</a> for
           details.
-          <br />
-          <a
-            href="https://support.maxmind.com/hc/en-us/articles/4408200231067-IP-Network-Data#h_01FN989KWHZG902R63XSJ786RK"
-          >
-            Learn more about the network column on our Knowledge Base.
-          </a>
         </td>
       </tr>
 
@@ -70,7 +66,7 @@ These are named `GeoIP2-IP-Risk-Blocks-IPv4.csv` and
           ranges from 0.01 to 99. A higher score indicates a higher risk.
           <br />
           <a
-            href="https://support.maxmind.com/hc/en-us/articles/4408200231067-IP-Network-Data#h_01FRRHZZP6TB1P6C99JFT16HCR"
+          href="https://support.maxmind.com/knowledge-base/articles/minfraud-ip-risk-score"
           >
             Learn more about the IP risk score on our Knowledge Base.
           </a>
@@ -106,24 +102,6 @@ These are named `GeoIP2-IP-Risk-Blocks-IPv4.csv` and
 - [GeoIP2-IP-Risk-Test.mmdb](https://github.com/maxmind/MaxMind-DB/blob/main/test-data/GeoIP2-IP-Risk-Test.mmdb)
   {{</ mmdb-example-files >}}
 
-<!-- ## Database Sizes -->
-
-<!-- prettier-ignore-start -->
-
-<!-- {{< db-sizes-table dateRange="August to October 2024" >}}
-- databaseName: "GeoIP IP Risk"
-  csvSizeRange: "TBD"
-  mmdbSizeRange: "TBD"
-  ipv4Range: "TBD"
-  ipv6Range: "TBD"
-{{< /db-sizes-table >}} -->
-
-<!-- prettier-ignore-end -->
-
 ## Database Changes
 
 {{< database-changes product="IP Risk" >}}
-
-## APIs and Third-Party Integrations
-
-{{< snippet "snippets/geoip-db-apis.md" >}}
