@@ -133,7 +133,11 @@ for these APIs and has not reviewed the code. {{</ alert >}}
       <tr>
         <td>Go</td>
         <td></td>
-        <td><a href="https://pkg.go.dev/github.com/savaki/geoip2?utm_source=godoc">GoDoc</a></td>
+        <td>
+          <a href="https://pkg.go.dev/github.com/savaki/geoip2?utm_source=godoc"
+            >GoDoc</a
+          >
+        </td>
         <td><a href="https://github.com/savaki/geoip2">GitHub</a></td>
       </tr>
     </tbody>

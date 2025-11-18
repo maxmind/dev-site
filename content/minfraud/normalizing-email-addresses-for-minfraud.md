@@ -39,9 +39,9 @@ yourself. Below are the steps to take to do this.
    typos we correct, consult the
    [normalization code in one of our client APIs](#examples) below.
 1. If the domain is `fastmail.com` or any of the
-   [fastmail domains](https://www.fastmail.com/how-to/email-for-your-domain/), replace the
-   email local part with the subdomain (i.e., `alias@user.fastmail.com` is
-   replaced with `user@fastmail.com`).
+   [fastmail domains](https://www.fastmail.com/how-to/email-for-your-domain/),
+   replace the email local part with the subdomain (i.e.,
+   `alias@user.fastmail.com` is replaced with `user@fastmail.com`).
 1. If the domain has an equivalent, such as `googlemail.com` to `gmail.com`,
    replace it with the equivalent. For the list of equivalent domains we use,
    consult the [normalization code in one of our client APIs](#examples) below.

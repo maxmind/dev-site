@@ -264,7 +264,8 @@ made within a limited period of time._
 
 ## Rate-limiting
 
-Customer traffic may occasionally receive an error status from MaxMind web services.
-This can be due to, for example, using invalid credentials or attempting to download
-a database with a lapsed subscription.  If these unsuccessful requests are deemed
-excessive, MaxMind may choose to rate-limit these requests for a period of time.
+Customer traffic may occasionally receive an error status from MaxMind web
+services. This can be due to, for example, using invalid credentials or
+attempting to download a database with a lapsed subscription. If these
+unsuccessful requests are deemed excessive, MaxMind may choose to rate-limit
+these requests for a period of time.

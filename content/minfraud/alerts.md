@@ -41,70 +41,67 @@ The following are the parameters that will be included in the query string of
 the request. Additional parameters may be added in the future.
 
 {{< schema-table key="alert" >}}
-  {{< minfraud-schema-row key="city" type="webhook" valueType="string" valueTypeNote="max length: 255" >}}
-  The billing city included in the original minFraud request.
-  {{</minfraud-schema-row>}}
+{{< minfraud-schema-row key="city" type="webhook" valueType="string" valueTypeNote="max length: 255" >}}
+The billing city included in the original minFraud request.
+{{</minfraud-schema-row>}}
 
-  {{< minfraud-schema-row key="country" type="webhook" valueType="string" valueTypeNote="max length: 2" >}}
-  The billing country included in the original minFraud request.
-  {{</minfraud-schema-row>}}
+{{< minfraud-schema-row key="country" type="webhook" valueType="string" valueTypeNote="max length: 2" >}}
+The billing country included in the original minFraud request.
+{{</minfraud-schema-row>}}
 
-  {{< minfraud-schema-row key="date" type="webhook" valueType="string" valueTypeNote="max length: 255" >}}
-  The date of the original minFraud request, e.g., `Nov. 1, 2019`.
-  {{</minfraud-schema-row>}}
+{{< minfraud-schema-row key="date" type="webhook" valueType="string" valueTypeNote="max length: 255" >}}
+The date of the original minFraud request, e.g., `Nov. 1, 2019`.
+{{</minfraud-schema-row>}}
 
-  {{< minfraud-schema-row key="domain" type="webhook" valueType="string" valueTypeNote="max length: 255" >}}
-  The email domain included in the original minFraud request.
-  {{</minfraud-schema-row>}}
+{{< minfraud-schema-row key="domain" type="webhook" valueType="string" valueTypeNote="max length: 255" >}}
+The email domain included in the original minFraud request.
+{{</minfraud-schema-row>}}
 
-  {{< minfraud-schema-row key="i" type="webhook" valueType="string" valueTypeNote="format: IPv4 or IPv6" >}}
-  The IP address included in the original minFraud request.
-  {{</minfraud-schema-row>}}
+{{< minfraud-schema-row key="i" type="webhook" valueType="string" valueTypeNote="format: IPv4 or IPv6" >}}
+The IP address included in the original minFraud request.
+{{</minfraud-schema-row>}}
 
-  {{< minfraud-schema-row key="maxmindID" type="webhook" valueType="string" valueTypeNote="max length: 8" >}}
-  The minFraud Legacy `maxmindID` of the original minFraud request.
-  {{</minfraud-schema-row>}}
+{{< minfraud-schema-row key="maxmindID" type="webhook" valueType="string" valueTypeNote="max length: 8" >}}
+The minFraud Legacy `maxmindID` of the original minFraud request.
+{{</minfraud-schema-row>}}
 
-  {{< minfraud-schema-row key="minfraud_id" type="webhook" valueType="string" valueTypeNote="format: UUID" >}}
-  The minFraud ID of the original minFraud request.
-  {{</minfraud-schema-row>}}
+{{< minfraud-schema-row key="minfraud_id" type="webhook" valueType="string" valueTypeNote="format: UUID" >}}
+The minFraud ID of the original minFraud request. {{</minfraud-schema-row>}}
 
-  {{< minfraud-schema-row key="new_risk_score" type="webhook" valueType="decimal" valueTypeNote="min: 0.01, max: 99" >}}
-  The updated risk score, calculated after your initial query with additional information.
-  {{</minfraud-schema-row>}}
+{{< minfraud-schema-row key="new_risk_score" type="webhook" valueType="decimal" valueTypeNote="min: 0.01, max: 99" >}}
+The updated risk score, calculated after your initial query with additional
+information. {{</minfraud-schema-row>}}
 
-  {{< minfraud-schema-row key="old_risk_score" type="webhook" valueType="decimal" valueTypeNote="min: 0.01, max: 99" >}}
-  The risk score as originally calculated.
-  {{</minfraud-schema-row>}}
+{{< minfraud-schema-row key="old_risk_score" type="webhook" valueType="decimal" valueTypeNote="min: 0.01, max: 99" >}}
+The risk score as originally calculated. {{</minfraud-schema-row>}}
 
-  {{< minfraud-schema-row key="postal" type="webhook" valueType="string" valueTypeNote="max length: 255" >}}
-  The billing postal included in the original minFraud request.
-  {{</minfraud-schema-row>}}
+{{< minfraud-schema-row key="postal" type="webhook" valueType="string" valueTypeNote="max length: 255" >}}
+The billing postal included in the original minFraud request.
+{{</minfraud-schema-row>}}
 
-  {{< minfraud-schema-row key="reason" type="webhook" valueType="string" >}}
-  A human-readable description of why the minFraud alert was sent. See below for the current list of possible reasons.
-  {{</minfraud-schema-row>}}
+{{< minfraud-schema-row key="reason" type="webhook" valueType="string" >}} A
+human-readable description of why the minFraud alert was sent. See below for the
+current list of possible reasons. {{</minfraud-schema-row>}}
 
-  {{< minfraud-schema-row key="reason_code" type="webhook" valueType="string" valueTypeNote="format: enum" >}}
-  A fixed, machine-readable code for the reason why the minFraud alert was sent. See below for the current list of possible reasons.
-  {{</minfraud-schema-row>}}
+{{< minfraud-schema-row key="reason_code" type="webhook" valueType="string" valueTypeNote="format: enum" >}}
+A fixed, machine-readable code for the reason why the minFraud alert was sent.
+See below for the current list of possible reasons. {{</minfraud-schema-row>}}
 
-  {{< minfraud-schema-row key="region" type="webhook" valueType="string" valueTypeNote="max length: 4" >}}
-  The billing region included in the original minFraud request.
-  {{</minfraud-schema-row>}}
+{{< minfraud-schema-row key="region" type="webhook" valueType="string" valueTypeNote="max length: 4" >}}
+The billing region included in the original minFraud request.
+{{</minfraud-schema-row>}}
 
-  {{< minfraud-schema-row key="shop_id" type="webhook" valueType="string" valueTypeNote="max length: 255" >}}
-  The shop ID included in the original minFraud request. This will only be set if the original request included a shop ID.
-  {{</minfraud-schema-row>}}
+{{< minfraud-schema-row key="shop_id" type="webhook" valueType="string" valueTypeNote="max length: 255" >}}
+The shop ID included in the original minFraud request. This will only be set if
+the original request included a shop ID. {{</minfraud-schema-row>}}
 
-  {{< minfraud-schema-row key="txnID" type="webhook" valueType="string" valueTypeNote="max length: 255" >}}
-  The transaction ID included in the original minFraud request.
-  {{</minfraud-schema-row>}}
+{{< minfraud-schema-row key="txnID" type="webhook" valueType="string" valueTypeNote="max length: 255" >}}
+The transaction ID included in the original minFraud request.
+{{</minfraud-schema-row>}}
 
-  {{< minfraud-schema-row key="updated_at" type="webhook" valueType="string" valueTypeNote="max length: 255" >}}
-  The date and time at which the new risk score was calculated, in RFC3339 format, e.g., `2019-11-01T12:34:56Z`
-  {{</minfraud-schema-row>}}
-{{</ schema-table >}}
+{{< minfraud-schema-row key="updated_at" type="webhook" valueType="string" valueTypeNote="max length: 255" >}}
+The date and time at which the new risk score was calculated, in RFC3339 format,
+e.g., `2019-11-01T12:34:56Z` {{</minfraud-schema-row>}} {{</ schema-table >}}
 
 #### Possible alert reasons
 
@@ -161,16 +158,16 @@ X-MaxMind-Alert-HMAC-SHA256: dd11717fc5559effc9607d03f2ad534ac8f7c7f81acba8d2c14
 ```
 
 The signature is the hex encoded HMAC-SHA256 of the URL query parameters -
-everything after the `?` in the request URL. In this case, the text to be
-signed is:
+everything after the `?` in the request URL. In this case, the text to be signed
+is:
 
 ```html
 i=24.24.24.24&maxmindID=1234ABCD&domain=sample.com&city=Anytown&region=CA&country=US&date=Jan.+1,+1970&txnID=foo123&reason=IP+address+has+been+marked+as+a+high-risk+IP&reason_code=HIGH_RISK_IP&minfraud_id=2afb0d26-e3b4-4624-8e66-fd10e64b95df&shop_id=shop321
 ```
 
-Please note that the URL query parameters should be from the raw request
-string that our server sends. In particular, note that space characters are
-encoded as `+` characters.
+Please note that the URL query parameters should be from the raw request string
+that our server sends. In particular, note that space characters are encoded as
+`+` characters.
 
 You can check the signature using something like the following code:
 

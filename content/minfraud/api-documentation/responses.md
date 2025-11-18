@@ -161,9 +161,7 @@ to handle any valid HTTP `4xx` or `5xx` status code.
         <td>403 Forbidden</td>
         <td>
           You do not have permission to use the service. Please
-          <a href="https://support.maxmind.com"
-            >contact our support team</a
-          >
+          <a href="https://support.maxmind.com">contact our support team</a>
           for more information.
         </td>
       </tr>
@@ -185,7 +183,7 @@ to handle any valid HTTP `4xx` or `5xx` status code.
           <code>POST</code> queries, this means the web service cannot parse a
           request body of that type.
         </td>
-      </tr>       
+      </tr>
       <tr>
         <td>(none)</td>
         <td>429 Too Many Requests</td>
@@ -359,12 +357,13 @@ with four modifications:
 4. The `maxmind` object is not present. See below for descriptions.
 
 minFraud Insights and Factors return the following anonymous IP outputs:
-   - `is_anonymous`
-   - `is_anonymous_vpn`
-   - `is_hosting_provider`
-   - `is_public_proxy`
-   - `is_residential_proxy`
-   - `is_tor_exit_node`
+
+- `is_anonymous`
+- `is_anonymous_vpn`
+- `is_hosting_provider`
+- `is_public_proxy`
+- `is_residential_proxy`
+- `is_tor_exit_node`
 
 See the
 [GeoIP Insights response body](/geoip/docs/web-services/responses/#geoip2-insights-body-example)
