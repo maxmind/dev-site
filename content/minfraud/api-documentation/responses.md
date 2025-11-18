@@ -882,7 +882,15 @@ associated with the IP address passed in the request.
 This is a sub-object of `email` that contains information related to the domain.
 ```json
 {
-  "first_seen": "2015-01-20"
+  "classification": "business",
+  "first_seen": "2015-01-20",
+  "risk": 1.23,
+  "visit": {
+    "has_redirect": true,
+    "last_visited_on": "2025-11-15",
+    "status": "live"
+  },
+  "volume": 6.5
 }
 ```
 
@@ -890,10 +898,101 @@ This is a sub-object of `email` that contains information related to the domain.
 
 {{< schema-table key="email--domain" >}}
 
+  {{< minfraud-schema-row key="classification" type="response" valueType="string" insights="true" factors="true" >}}
+  A classification of the domain. One of the following values. Additional values may be added in the future.
+
+  * `business`
+  * `education`
+  * `government`
+  * `isp_email`
+
+  [Learn more about the domain classification on our Knowledge Base.](https://support.maxmind.com/knowledge-base/minfraud-domain-risk-data#domain-classification)
+  {{</minfraud-schema-row>}}
+
   {{< minfraud-schema-row key="first_seen" type="response" valueType="string" valueTypeNote="format: YYYY-MM-DD, max length: 10" insights="true" factors="true" >}}
   A date string (e.g. 2019-01-01) to identify the date an email address domain was first seen by MaxMind. This is expressed using the ISO 8601 date format `YYYY-MM-DD`. The earliest date that may be returned is January 1, 2019.
 
   [Learn how to use email first seen data for risk analysis on our Knowledge Base.](https://support.maxmind.com/knowledge-base/articles/minfraud-email-risk-data#first-seen)
+  {{</minfraud-schema-row>}}
+
+  {{< minfraud-schema-row key="risk" type="response" valueType="decimal" valueTypeNote="min: 0.01, max: 99" insights="true" factors="true" >}}
+  This field contains the risk associated with the domain. The value ranges from 0.01 to 99. A higher score indicates higher risk.
+
+  [Learn more about the email domain risk score on our Knowledge Base.](https://support.maxmind.com/knowledge-base/minfraud-domain-risk-data#domain-reputation-score)
+  {{</minfraud-schema-row>}}
+
+  {{< minfraud-schema-row key="visit" type="response" valueType="object" insights="true" factors="true" >}}
+  An object containing information about an automated visit to the email domain. See the [Email > Domain > Visit](#email--domain--visit) section for details about this object.
+  {{</minfraud-schema-row>}}
+
+  {{< minfraud-schema-row key="volume" type="response" valueType="decimal" valueTypeNote="min: 0.001, max: 1000000" insights="true" factors="true" >}}
+  This field indicates how much activity we see on an email domain across the minFraud network, expressed in sightings per million.
+
+  The value is rounded to 2 significant figures. Example domain sightings per million requests:
+
+  * Consumer email domains: gmail.com (630,000), icloud.com (37,000)
+  * Business domains: microsoft.com (6)
+
+  Note: These are point-in-time examples to provide a relative sense of the values. They will change based on email usage patterns.
+
+  [Learn more about email domain volume on our Knowledge Base.](https://support.maxmind.com/knowledge-base/minfraud-domain-risk-data#domain-volume)
+  {{</minfraud-schema-row>}}
+
+{{</ schema-table >}}
+
+<!-- prettier-ignore-end -->
+
+### Email > Domain > Visit
+
+{{< anchor-target schema--response--email--domain--visit >}}
+
+This is a sub-object of `email/domain` that contains information about an
+automated visit to the email domain.
+
+Domain visits are performed by an automated agent, so for newly-sighted domains
+on the minFraud network, it can take a few minutes for these outputs to be
+populated on later requests on the same domain. Domain visits are also limited
+to those with low volume on the network. High volume domains such as those for
+email providers and large businesses will not have domain visit outputs in the
+minFraud response.
+
+```json
+{
+  "has_redirect": true,
+  "last_visited_on": "2025-11-15",
+  "status": "live"
+}
+```
+
+<!-- prettier-ignore-start -->
+
+{{< schema-table key="email--domain--visit" >}}
+
+  {{< minfraud-schema-row key="has_redirect" type="response" valueType="boolean" insights="true" factors="true" >}}
+  This is `true` if the domain in the request has redirects (configured to automatically send visitors to another URL). Otherwise, the key is not included in the `/email/domain/visit` object.
+
+  If `true`, the `/email/domain/visit/status` field corresponds to the last domain visited after redirecting.
+
+  [Learn more about the email domain visit redirect flag on our Knowledge Base.](https://support.maxmind.com/knowledge-base/minfraud-domain-risk-data#domain-visit)
+  {{</minfraud-schema-row>}}
+
+  {{< minfraud-schema-row key="last_visited_on" type="response" valueType="string" valueTypeNote="format: YYYY-MM-DD" insights="true" factors="true" >}}
+  A date string that corresponds to when the automated visit was completed. This is expressed using the ISO 8601 date format `YYYY-MM-DD`.
+
+  Pair with the `/email/domain/visit/status` and `/email/domain/visit/has_redirect` fields to determine the recency of those values.
+  {{</minfraud-schema-row>}}
+
+  {{< minfraud-schema-row key="status" type="response" valueType="string" insights="true" factors="true" >}}
+  A classification of the status of the domain (or the last domain visited after following redirects, if these are present and can be followed) based on an automated visit at a previous point in time. This field may be initially unavailable for a newly sighted domain and populated at a future time after a visit is conducted. Pair with the `/email/domain/visit/last_visited_on` to determine the recency of the visit. One of the following values. Additional values may be added in the future.
+
+  * `live` - the domain is reachable and serving content normally
+  * `dns_error` - the domain is missing, expired, or DNS is misconfigured
+  * `network_error` - the domain is offline, blocked, or unreachable
+  * `http_error` - the domain is reachable but the web application had a problem or denied the request
+  * `parked` - the domain is reachable and is in a parked state
+  * `pre_development` - the domain is reachable and is in a pre-development state
+
+  [Learn more about the email domain visit status on our Knowledge Base.](https://support.maxmind.com/knowledge-base/minfraud-domain-risk-data#domain-visit)
   {{</minfraud-schema-row>}}
 
 {{</ schema-table >}}
@@ -1533,7 +1632,15 @@ Factors services, and a full example of the JSON body document for an error.
   },
   "email": {
     "domain": {
-      "first_seen": "2015-01-20"
+      "classification": "business",
+      "first_seen": "2015-01-20",
+      "risk": 1.23,
+      "visit": {
+        "has_redirect": true,
+        "last_visited_on": "2025-11-15",
+        "status": "live"
+      },
+      "volume": 6.5
     },
     "first_seen": "2016-02-03",
     "is_disposable": false,
@@ -1758,7 +1865,15 @@ Factors services, and a full example of the JSON body document for an error.
   },
   "email": {
     "domain": {
-      "first_seen": "2015-01-20"
+      "classification": "business",
+      "first_seen": "2015-01-20",
+      "risk": 1.23,
+      "visit": {
+        "has_redirect": true,
+        "last_visited_on": "2025-11-15",
+        "status": "live"
+      },
+      "volume": 6.5
     },
     "first_seen": "2016-02-03",
     "is_disposable": false,
