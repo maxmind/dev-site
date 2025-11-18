@@ -14,8 +14,8 @@ The password is your
 
 {{< alert warning >}} You must be approved for a
 [GeoIP web service trial](https://www.maxmind.com/en/request-service-trial?service_geoip=1),
-[purchase service credit](https://www.maxmind.com/en/geoip-api-web-services)
-for use with our web services, or have a
+[purchase service credit](https://www.maxmind.com/en/geoip-api-web-services) for
+use with our web services, or have a
 [GeoLite account](https://www.maxmind.com/en/geolite2/signup), in order to
 receive an account ID and license key. {{</ alert >}}
 
@@ -36,8 +36,8 @@ address to be defined as a path parameter (`{ip_address}`).
 The IP address can be either an IPv4 or an IPv6 address. IPv4 addresses should
 be passed in the standard dotted quad form, for example `1.2.3.4`. IPv6
 addresses should be passed as strings as well. We recommend using the canonical
-form as described in [RFC 5952](https://datatracker.ietf.org/doc/html/rfc5952), for
-example `2001:db8::1:0:0:1`, but we will handle any valid IPv6 string
+form as described in [RFC 5952](https://datatracker.ietf.org/doc/html/rfc5952),
+for example `2001:db8::1:0:0:1`, but we will handle any valid IPv6 string
 representation.
 
 You can also use the string `me` as the IP address. In this case, the record for

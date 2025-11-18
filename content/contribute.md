@@ -47,10 +47,10 @@ minor modifications.
 
 If you would like us to feature an API or tool that you’ve developed for use
 with our products and services, please
-[contact our support team](https://support.maxmind.com/knowledge-base)
-with a brief description of the tool and a link to the code and documentation.
-We do not guarantee that we will feature all contributions on our site, but
-we’re always interested to see what you come up with.
+[contact our support team](https://support.maxmind.com/knowledge-base) with a
+brief description of the tool and a link to the code and documentation. We do
+not guarantee that we will feature all contributions on our site, but we’re
+always interested to see what you come up with.
 
 ## Refer Users to MaxMind
 

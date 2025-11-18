@@ -316,8 +316,8 @@ encoding is also referred to as latin1.
         <td>
           The time zone associated with the IP address. Time zone names are
           taken from the
-          <a href="https://www.iana.org/time-zones">IANA time zone database</a
-          >. See the
+          <a href="https://www.iana.org/time-zones">IANA time zone database</a>.
+          See the
           <a href="/static/csv/codes/time_zone.csv">list of possible values</a>.
         </td>
         <td></td>
@@ -486,7 +486,7 @@ encoding is also referred to as latin1.
             <li>
               <strong>PERMISSION_REQUIRED</strong> – This is returned if you do
               not have permission to use the service. Please
-              <a href="https://support.maxmind.com"
+              <a href="https://support.maxmind.com/knowledge-base"
                 >contact our support team</a
               >
               for more information.

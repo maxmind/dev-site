@@ -136,7 +136,7 @@ to handle any valid HTTP `4xx` or `5xx` status code.
         <td>402 Payment Required</td>
         <td>
           You do not have permission to use the service. Please
-          <a href="https://support.maxmind.com"
+          <a href="https://support.maxmind.com/knowledge-base"
             >contact our support team</a
           >
           for more information.
@@ -165,7 +165,7 @@ to handle any valid HTTP `4xx` or `5xx` status code.
           <code>POST</code> queries, this means the web service cannot parse a
           request body of that type.
         </td>
-      </tr>      
+      </tr>
       <tr>
         <td>(none)</td>
         <td>429 Too Many Requests</td>
@@ -232,7 +232,9 @@ For full examples of response bodies, select one of the following:
 
 {{< anchor-target schema--response--anonymizer >}}
 
-`anonymizer` is a JSON object that indicates whether the IP address is part of an anonymizing service or network. This data is available for GeoIP Insights only.
+`anonymizer` is a JSON object that indicates whether the IP address is part of
+an anonymizing service or network. This data is available for GeoIP Insights
+only.
 
 ```json
 {

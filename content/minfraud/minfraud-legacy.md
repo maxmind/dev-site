@@ -392,9 +392,9 @@ Here is an example of the output with just a few fields:
 
 The API version column specifies the earliest API version in which a field is
 available. You can explicitly
-[ask for responses in older API formats](/minfraud/minfraud-legacy).
-By default, all new users will receive responses for the version that was
-current when they signed up for the service. The latest version is 1.3.
+[ask for responses in older API formats](/minfraud/minfraud-legacy). By default,
+all new users will receive responses for the version that was current when they
+signed up for the service. The latest version is 1.3.
 
 {{< rawhtml >}}
 
@@ -648,8 +648,7 @@ current when they signed up for the service. The latest version is 1.3.
         <td>
           The time zone associated with the IP address. Time zone names are
           taken from the
-          <a href="https://www.iana.org/time-zones">IANA time zone database</a
-          >.
+          <a href="https://www.iana.org/time-zones">IANA time zone database</a>.
         </td>
         <td>1.2</td>
       </tr>
@@ -1101,7 +1100,7 @@ current when they signed up for the service. The latest version is 1.3.
             <li>
               <strong>PERMISSION_REQUIRED</strong> – This is returned if you do
               not have permission to use the service. Please
-              <a href="https://support.maxmind.com"
+              <a href="https://support.maxmind.com/knowledge-base"
                 >contact our support team</a
               >
               for more information.

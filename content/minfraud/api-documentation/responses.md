@@ -161,7 +161,7 @@ to handle any valid HTTP `4xx` or `5xx` status code.
         <td>403 Forbidden</td>
         <td>
           You do not have permission to use the service. Please
-          <a href="https://support.maxmind.com"
+          <a href="https://support.maxmind.com/knowledge-base"
             >contact our support team</a
           >
           for more information.
@@ -185,7 +185,7 @@ to handle any valid HTTP `4xx` or `5xx` status code.
           <code>POST</code> queries, this means the web service cannot parse a
           request body of that type.
         </td>
-      </tr>       
+      </tr>
       <tr>
         <td>(none)</td>
         <td>429 Too Many Requests</td>
@@ -359,12 +359,13 @@ with four modifications:
 4. The `maxmind` object is not present. See below for descriptions.
 
 minFraud Insights and Factors return the following anonymous IP outputs:
-   - `is_anonymous`
-   - `is_anonymous_vpn`
-   - `is_hosting_provider`
-   - `is_public_proxy`
-   - `is_residential_proxy`
-   - `is_tor_exit_node`
+
+- `is_anonymous`
+- `is_anonymous_vpn`
+- `is_hosting_provider`
+- `is_public_proxy`
+- `is_residential_proxy`
+- `is_tor_exit_node`
 
 See the
 [GeoIP Insights response body](/geoip/docs/web-services/responses/#geoip2-insights-body-example)
@@ -1662,44 +1663,12 @@ Factors services, and a full example of the JSON body document for an error.
     },
     "risk_reasons": [
       {
-        "multiplier": 45,
-        "reasons": [
-          {
-            "code": "ANONYMOUS_IP",
-            "reason": "The Anonymous IP address raised the overall risk score"
-          },
-          {
-            "code": "IP_ISSUER_ID_NUMBER_VELOCITY",
-            "reason": "The number of distinct Issuer ID Numbers found in the velocity check on IP address raised the overall risk score"
-          }
-        ]
+        "code": "ANONYMOUS_IP",
+        "reason": "The IP address belongs to an anonymous network. See /ip_address/traits for more details."
       },
       {
-        "multiplier": 1.8,
-        "reasons": [
-          {
-            "code": "TIME_OF_DAY",
-            "reason": "The local time of day of the request raised the overall risk score"
-          }
-        ]
-      },
-      {
-        "multiplier": 1.6,
-        "reasons": [
-          {
-            "code": "EMAIL_DOMAIN_NEW",
-            "reason": "The email domain being recently seen for the first time in the minFraud network raised the overall risk score"
-          }
-        ]
-      },
-      {
-        "multiplier": 0.34,
-        "reasons": [
-          {
-            "code": "PHONE_ACTIVITY",
-            "reason": "minFraud network activity of the phone number lowered the overall risk score"
-          }
-        ]
+        "code": "MINFRAUD_NETWORK_ACTIVITY",
+        "reason": "Suspicious activity has been seen on this IP address across minFraud customers."
       }
     ],
     "subdivisions": [
