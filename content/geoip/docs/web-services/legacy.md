@@ -486,7 +486,9 @@ encoding is also referred to as latin1.
             <li>
               <strong>PERMISSION_REQUIRED</strong> – This is returned if you do
               not have permission to use the service. Please
-              <a href="https://support.maxmind.com">contact our support team</a>
+              <a href="https://support.maxmind.com/knowledge-base"
+                >contact our support team</a
+              >
               for more information.
             </li>
             <li>
