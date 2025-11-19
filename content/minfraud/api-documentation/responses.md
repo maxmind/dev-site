@@ -853,7 +853,7 @@ associated with the IP address passed in the request.
   {{< minfraud-schema-row key="first_seen" type="response" valueType="string" valueTypeNote="format: YYYY-MM-DD, max length: 10" insights="true" factors="true" >}}
   A date string (e.g. 2017-04-24) to identify the date an email address was first seen by MaxMind. This is expressed using the ISO 8601 date format YYYY-MM-DD. The earliest date that may be returned is January 1, 2008.
 
-  [Learn how to use email first seen data for risk analysis on our Knowledge Base.](https://support.maxmind.com/knowledge-base/articles/minfraud-email-risk-data#first-seen)
+  [Learn how to use email first seen data for risk analysis on our Knowledge Base.](https://support.maxmind.com/knowledge-base/articles/minfraud-email-risk-data#email-first-seen)
   {{</minfraud-schema-row>}}
 
   {{< minfraud-schema-row key="is_disposable" type="response" valueType="boolean"  insights="true" factors="true" >}}
@@ -912,7 +912,7 @@ This is a sub-object of `email` that contains information related to the domain.
   {{< minfraud-schema-row key="first_seen" type="response" valueType="string" valueTypeNote="format: YYYY-MM-DD, max length: 10" insights="true" factors="true" >}}
   A date string (e.g. 2019-01-01) to identify the date an email address domain was first seen by MaxMind. This is expressed using the ISO 8601 date format `YYYY-MM-DD`. The earliest date that may be returned is January 1, 2019.
 
-  [Learn how to use email first seen data for risk analysis on our Knowledge Base.](https://support.maxmind.com/knowledge-base/articles/minfraud-email-risk-data#first-seen)
+  [Learn how to use email first seen data for risk analysis on our Knowledge Base.](https://support.maxmind.com/knowledge-base/articles/minfraud-email-risk-data#email-first-seen)
   {{</minfraud-schema-row>}}
 
   {{< minfraud-schema-row key="risk" type="response" valueType="decimal" valueTypeNote="min: 0.01, max: 99" insights="true" factors="true" >}}
