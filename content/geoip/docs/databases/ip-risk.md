@@ -17,9 +17,12 @@ for assistance.
 
 ## Binary Database
 
-You can also use the mmdbinspect tool (in beta), a command line interface built
-with Go, to look up one or more IPs from one or more MMDB databases and receive
-output in a parsable JSON format.
+Binary databases make use of the
+[MaxMind DB file format](https://maxmind.github.io/MaxMind-DB/).
+
+You can use the [mmdbinspect tool](https://github.com/maxmind/mmdbinspect) (in
+beta), a command line interface built with Go, to look up one or more IPs from
+one or more MMDB databases and receive output in a parsable JSON format.
 
 ## CSV Database
 
@@ -66,7 +69,7 @@ These are named `GeoIP2-IP-Risk-Blocks-IPv4.csv` and
           ranges from 0.01 to 99. A higher score indicates a higher risk.
           <br />
           <a
-          href="https://support.maxmind.com/knowledge-base/articles/minfraud-ip-risk-score"
+            href="https://support.maxmind.com/knowledge-base/articles/minfraud-ip-risk-score"
           >
             Learn more about the IP risk score on our Knowledge Base.
           </a>

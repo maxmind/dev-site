@@ -17,9 +17,12 @@ for assistance.
 
 ## Binary Database
 
-You can also use the mmdbinspect tool (in beta), a command line interface built
-with Go, to look up one or more IPs from one or more MMDB databases and receive
-output in a parsable JSON format.
+Binary databases make use of the
+[MaxMind DB file format](https://maxmind.github.io/MaxMind-DB/).
+
+You can use the [mmdbinspect tool](https://github.com/maxmind/mmdbinspect) (in
+beta), a command line interface built with Go, to look up one or more IPs from
+one or more MMDB databases and receive output in a parsable JSON format.
 
 ## CSV Database
 
