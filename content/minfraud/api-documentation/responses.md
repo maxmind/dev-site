@@ -833,7 +833,15 @@ associated with the IP address passed in the request.
 ```json
 {
   "domain": {
-    "first_seen": "2015-01-20"
+    "classification": "business",
+    "first_seen": "2015-01-20",
+    "risk": 1.23,
+    "visit": {
+      "has_redirect": true,
+      "last_visited_on": "2025-11-15",
+      "status": "live"
+    },
+    "volume": 6.5
   },
   "first_seen": "2016-02-03",
   "is_disposable": false,
