@@ -23,6 +23,7 @@
     "stylelint-config-sass-guidelines": "^12.1.0",
     "stylelint-no-unsupported-browser-features": "^8.0.5",
     "stylelint-order": "^7.0.0",
+    "tsx": "^4.20.6",
     "typescript": "^5.9.3",
     "typescript-eslint": "^8.46.4"
   },
@@ -38,6 +39,7 @@
     "url": "https://github.com/maxmind/dev-site.git"
   },
   "scripts": {
+    "build:headers": "npx tsx scripts/generate-headers.ts",
     "fix": "run-p fix:*",
     "fix:scripts": "npm run lint:scripts --fix",
     "fix:styles": "npm run lint:styles --fix",

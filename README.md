@@ -85,6 +85,38 @@ when files change.
 hugo server
 ```
 
+#### HTTP Headers Configuration
+
+The `static/_headers` file is automatically generated from
+`scripts/_headers.config.ts`. **Do not edit `static/_headers` directly** - your
+changes will be overwritten.
+
+##### Making Changes to Headers
+
+1. Edit `scripts/_headers.config.ts` (the source of truth with readable format
+   and TypeScript type safety)
+2. Generate the headers file:
+   ```sh
+   npm run build:headers
+   ```
+3. Commit both files - a git pre-commit hook will automatically regenerate
+   `static/_headers` when you modify `scripts/_headers.config.ts`
+
+##### Automatic Synchronization
+
+The files stay in sync automatically through:
+
+- **Pre-commit hook** - Regenerates `_headers` when `_headers.config.ts` changes
+- **Build process** - `build.sh` regenerates before deployment
+- **Manual generation** - Run `npm run build:headers` anytime
+
+The TypeScript config format provides:
+
+- Readable multi-line arrays for CSP directives
+- Native TypeScript type safety and IDE support
+- Easy-to-review diffs in pull requests
+- Zero dependencies for parsing
+
 ### Updating Release Notes for the New Year
 
 Whenever you create your first release note for a product category for a new
