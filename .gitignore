@@ -75,5 +75,5 @@ firebase.json
 .tmp
 .lycheecache
 
-# This is now a build artifact
+# Cloudflare Pages headers
 static/_headers
