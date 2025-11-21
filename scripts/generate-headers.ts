@@ -10,7 +10,7 @@
 import * as fs from 'fs';
 import * as path from 'path';
 
-import config from './_headers.config.js';
+import config from './_headers.config.ts';
 
 interface PathConfig {
   pattern: string;

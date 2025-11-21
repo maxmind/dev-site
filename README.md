@@ -27,8 +27,11 @@
 
 ### Minimum Requirements
 
-The minimum Node and NPM versions can be found in the
-[package.json file](package.json) under `engines`.
+- **Node.js**: v22.6.0 or later (required for native TypeScript support)
+- **NPM**: v9 or later
+
+The minimum versions can be found in the [package.json file](package.json)
+under `engines`.
 
 If you need help installing and/or managing Node and NPM versions, check out
 [NVM](https://github.com/nvm-sh/nvm).
