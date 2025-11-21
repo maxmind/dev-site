@@ -88,27 +88,24 @@ hugo server
 #### HTTP Headers Configuration
 
 The `static/_headers` file is automatically generated from
-`scripts/_headers.config.ts`. **Do not edit `static/_headers` directly** - your
-changes will be overwritten.
+`scripts/_headers.config.ts` during the build process. **Do not edit `static/_headers`
+directly** or commit it to git - it is a build artifact that will be regenerated.
 
 ##### Making Changes to Headers
 
 1. Edit `scripts/_headers.config.ts` (the source of truth with readable format
    and TypeScript type safety)
-2. Generate the headers file:
+2. Test your changes locally by generating the headers file:
    ```sh
    npm run build:headers
    ```
-3. Commit both files - a git pre-commit hook will automatically regenerate
-   `static/_headers` when you modify `scripts/_headers.config.ts`
+3. Commit only `scripts/_headers.config.ts` - the `_headers` file will be
+   generated automatically during deployment
 
-##### Automatic Synchronization
+##### Build-Time Generation
 
-The files stay in sync automatically through:
-
-- **Pre-commit hook** - Regenerates `_headers` when `_headers.config.ts` changes
-- **Build process** - `build.sh` regenerates before deployment
-- **Manual generation** - Run `npm run build:headers` anytime
+The headers file is generated automatically during deployment via `build.sh`.
+You can also generate it manually for local testing with `npm run build:headers`.
 
 The TypeScript config format provides:
 

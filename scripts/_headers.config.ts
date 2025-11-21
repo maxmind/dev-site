@@ -2,9 +2,6 @@
  * HTTP Headers Configuration for Cloudflare Pages
  * This file is the source of truth for static/_headers generation
  * Run: npm run build:headers
- *
- * Note: This file lives in scripts/ (not static/) to avoid deploying
- * TypeScript source files to production.
  */
 
 interface HeadersConfig {

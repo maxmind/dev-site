@@ -24,20 +24,4 @@ function timed_run() {
     fi
 }
 
-# Regenerate static/_headers from _headers.config.ts if it changed
-if git diff --cached --name-only | grep -q "scripts/_headers.config.ts"; then
-  echo "Detected changes to scripts/_headers.config.ts, regenerating static/_headers..."
-  npx tsx scripts/generate-headers.ts
-  git add static/_headers
-  echo "✅ Updated static/_headers and added to commit"
-fi
-
-# Also regenerate if the generator script itself changed
-if git diff --cached --name-only | grep -q "scripts/generate-headers.ts"; then
-  echo "Detected changes to generator script, regenerating static/_headers..."
-  npx tsx scripts/generate-headers.ts
-  git add static/_headers
-  echo "✅ Updated static/_headers and added to commit"
-fi
-
 timed_run "precious lint" "precious lint --staged"

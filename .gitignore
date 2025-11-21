@@ -74,3 +74,6 @@ firebase.json
 # Misc
 .tmp
 .lycheecache
+
+# This is now a build artifact
+static/_headers
