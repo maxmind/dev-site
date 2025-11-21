@@ -17,64 +17,102 @@ const config: HeadersConfig = {
       pattern: '/*',
       headers: {
         'Content-Security-Policy': {
-          // Allow AJAX/fetch requests to status page, marketing site, HubSpot,
-          // and Google services for analytics and tag management
           'connect-src': [
             "'self'",
             'https://status.maxmind.com',
             'https://www.maxmind.com',
+
+            // eslint-disable-next-line max-len
+            // https://knowledge.hubspot.com/domains-and-urls/ssl-and-domain-security-in-hubspot#content-security-policy
+
+            // HubSpot API
             'https://api.hubspot.com',
+
+            // HubSpot static assets (conversations embed)
             'https://static.hsappstatic.net',
+
             'https://*.googleapis.com',
+
+            // eslint-disable-next-line max-len
+            // https://developers.google.com/tag-platform/security/guides/csp#google_analytics_4_google_analytics
             'https://*.google-analytics.com',
             'https://*.analytics.google.com',
             'https://*.googletagmanager.com',
+
+            // https://developers.google.com/tag-platform/security/guides/csp#google_ads
             'https://*.g.doubleclick.net',
+
+            // Google domains (various TLDs for international support)
             'https://*.google.com',
           ],
-          // Fallback for resources not covered by other directives
           'default-src': ["'self'"],
-          // Allow fonts from our site and Google Fonts
-          'font-src': ["'self'", 'https://fonts.gstatic.com'],
-          // Only allow form submissions to our own domain
+          'font-src': [
+            "'self'",
+
+            // Loaded indirectly by Google Vertex search
+            'https://fonts.gstatic.com',
+          ],
           'form-action': ["'self'"],
-          // Prevent this site from being embedded in iframes on other domains
           'frame-ancestors': ["'self'"],
-          // Allow embedding content from HubSpot and Google services
           'frame-src': [
             "'self'",
+
+            // eslint-disable-next-line max-len
+            // https://knowledge.hubspot.com/domains-and-urls/ssl-and-domain-security-in-hubspot#content-security-policy
+
+            // HubSpot calls-to-action (pop-ups) and chatflows
             'https://app.hubspot.com',
-            'https://www.google.com',
+
+            // https://developers.google.com/tag-platform/security/guides/csp#google_ads
             'https://www.googletagmanager.com',
+
+            // Google Vertex search
+            'https://www.google.com',
           ],
-          // Allow images from our site, data URIs, and any HTTPS source
           'img-src': ["'self'", 'data:', 'https:'],
-          // Block all plugins (Flash, Java, etc.)
           'object-src': ["'none'"],
-          // Allow scripts from our site, HubSpot, Google services, and inline scripts
-          // 'unsafe-inline' needed for HubSpot and Google Tag Manager
-          // 'report-sample' includes script sample in violation reports
           'script-src': [
             "'self'",
             "'report-sample'",
             "'unsafe-inline'",
+
+            // eslint-disable-next-line max-len
+            // https://knowledge.hubspot.com/domains-and-urls/ssl-and-domain-security-in-hubspot#content-security-policy
+
+            // HubSpot tracking code
             'https://js.hs-scripts.com',
+
+            // HubSpot Analytics
             'https://js.hs-analytics.net',
+
+            // HubSpot cookie banner
             'https://js.hs-banner.com',
+
+            // HubSpot Conversations and Chatflows
             'https://js.usemessages.com',
+
+            // MaxMind marketing site
             'https://www.maxmind.com',
+
+            // Google Vertex search
             'https://cloud.google.com',
             'https://www.gstatic.com',
+
+            // https://developers.google.com/tag-platform/security/guides/csp#google_ads_conversions
             'https://www.googleadservices.com',
             'https://www.google.com',
+
+            // Google Tag Manager
             'https://*.googletagmanager.com',
           ],
-          // Allow styles from our site, Google Fonts, and inline styles
-          // 'unsafe-inline' needed for dynamic styling
           'style-src': [
             "'self'",
             "'unsafe-inline'",
+
+            // Google Fonts API and Vertex search default styles
             'https://fonts.googleapis.com',
+
+            // Google static assets
             'https://www.gstatic.com',
           ],
         },
