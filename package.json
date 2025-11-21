@@ -27,17 +27,19 @@
     "typescript-eslint": "^8.46.4"
   },
   "engines": {
-    "node": ">=22",
+    "node": ">=22.6.0",
     "npm": ">=9"
   },
   "license": "MIT",
   "name": "dev-site",
   "private": true,
+  "type": "module",
   "repository": {
     "type": "git",
     "url": "https://github.com/maxmind/dev-site.git"
   },
   "scripts": {
+    "build:headers": "node --experimental-strip-types bin/generate-headers.ts",
     "fix": "run-p fix:*",
     "fix:scripts": "npm run lint:scripts --fix",
     "fix:styles": "npm run lint:styles --fix",
@@ -45,7 +47,7 @@
     "lint:cspell": "cspell '**/*.md' --no-summary --no-progress --color",
     "lint:scripts": "tsc && npx eslint .  --max-warnings=0",
     "lint:styles": "stylelint ./assets/scss/*.{css,scss,sass}",
-    "lint:shortcode-parity": "npx tsx ./bin/check-shortcode-parity.ts",
+    "lint:shortcode-parity": "node --experimental-strip-types ./bin/check-shortcode-parity.ts",
     "prettier:ts": "prettier --write './assets/js/**'",
     "format:rawhtml": "npx tsc format-rawhtml.ts --outDir dist && node dist/format-rawhtml.js"
   },

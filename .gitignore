@@ -74,3 +74,6 @@ firebase.json
 # Misc
 .tmp
 .lycheecache
+
+# Cloudflare Pages headers
+static/_headers

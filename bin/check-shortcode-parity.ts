@@ -1,7 +1,9 @@
 import * as fs from 'fs';
 import * as path from 'path';
+import { fileURLToPath } from 'url';
 
-const SHORTCODES_DIR = path.join(__dirname, '..', 'layouts', 'shortcodes');
+const currentDir = path.dirname(fileURLToPath(import.meta.url));
+const SHORTCODES_DIR = path.join(currentDir, '..', 'layouts', 'shortcodes');
 
 function getShortcodeFiles(dir: string, extension: string): Set<string> {
   const files = new Set<string>();

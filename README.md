@@ -27,8 +27,8 @@
 
 ### Minimum Requirements
 
-The minimum Node and NPM versions can be found in the
-[package.json file](package.json) under `engines`.
+The minimum versions can be found in the [package.json file](package.json)
+under `engines`.
 
 If you need help installing and/or managing Node and NPM versions, check out
 [NVM](https://github.com/nvm-sh/nvm).
@@ -84,6 +84,28 @@ when files change.
 ```sh
 hugo server
 ```
+
+#### Cloudflare Pages HTTP Headers Configuration
+
+The `static/_headers` file is automatically generated from
+`bin/_headers.config.ts` during the build process. **Do not edit `static/_headers`
+directly**.
+
+##### Making Changes to Headers
+
+1. Edit `bin/_headers.config.ts` (the source of truth with readable format
+   and TypeScript type safety)
+2. Test your changes locally by generating the headers file:
+   ```sh
+   npm run build:headers
+   ```
+3. Commit only `bin/_headers.config.ts` - the `_headers` file will be
+   generated automatically during deployment
+
+##### Build-Time Generation
+
+The headers file is generated automatically during deployment via `build.sh`.
+You can also generate it manually for local testing with `npm run build:headers`.
 
 ### Updating Release Notes for the New Year
 

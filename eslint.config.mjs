@@ -79,18 +79,6 @@ export default tseslint.config(
     },
 
     rules: {
-      'array-bracket-newline': [
-        'warn',
-        {
-          minItems: 1,
-          multiline: true,
-        },
-      ],
-
-      'array-element-newline': [
-        'warn',
-        'always',
-      ],
       'comma-dangle': [
         'warn',
         'always-multiline',
@@ -145,6 +133,9 @@ export default tseslint.config(
       quotes: [
         'warn',
         'single',
+        {
+          avoidEscape: true,
+        },
       ],
       semi: [
         1,

@@ -28,6 +28,14 @@ jobs:
       - name: Install Dart Sass
         run: sudo snap install dart-sass
 
+      - name: Setup Node.js
+        uses: actions/setup-node@v6
+        with:
+          node-version: '22.6'
+
+      - name: Install Node dependencies
+        run: npm ci
+
       - name: Build site
         run: ./build.sh
         env:
