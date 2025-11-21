@@ -39,7 +39,7 @@
     "url": "https://github.com/maxmind/dev-site.git"
   },
   "scripts": {
-    "build:headers": "node --experimental-strip-types scripts/generate-headers.ts",
+    "build:headers": "node --experimental-strip-types bin/generate-headers.ts",
     "fix": "run-p fix:*",
     "fix:scripts": "npm run lint:scripts --fix",
     "fix:styles": "npm run lint:styles --fix",

@@ -91,18 +91,18 @@ hugo server
 #### HTTP Headers Configuration
 
 The `static/_headers` file is automatically generated from
-`scripts/_headers.config.ts` during the build process. **Do not edit `static/_headers`
+`bin/_headers.config.ts` during the build process. **Do not edit `static/_headers`
 directly** or commit it to git - it is a build artifact that will be regenerated.
 
 ##### Making Changes to Headers
 
-1. Edit `scripts/_headers.config.ts` (the source of truth with readable format
+1. Edit `bin/_headers.config.ts` (the source of truth with readable format
    and TypeScript type safety)
 2. Test your changes locally by generating the headers file:
    ```sh
    npm run build:headers
    ```
-3. Commit only `scripts/_headers.config.ts` - the `_headers` file will be
+3. Commit only `bin/_headers.config.ts` - the `_headers` file will be
    generated automatically during deployment
 
 ##### Build-Time Generation
