@@ -266,7 +266,7 @@ only.
 
   **Note:** This field has been moved from the `traits` object to the `anonymizer` object. It is still returned in the `traits` object for backwards compatibility but is deprecated there.
 
-  [Learn more about anonymizer and proxy detection on our Knowledge Base.](https://support.maxmind.com/knowledge-base/articles/anonymizer-and-proxy-data-maxmind#anonymizer-detection)
+  [Learn more about anonymizer and proxy detection on our Knowledge Base.](https://support.maxmind.com/knowledge-base/articles/anonymizer-and-proxy-data-maxmind#anon-detection)
   {{</ geoip-schema-row >}}
 
   {{< geoip-schema-row key="is_anonymous_vpn" valueType="boolean" insights="true">}}
@@ -276,7 +276,7 @@ only.
 
   **Note:** This field has been moved from the `traits` object to the `anonymizer` object. It is still returned in the `traits` object for backwards compatibility but is deprecated there.
 
-  [Learn more about VPNs on our Knowledge Base.](https://support.maxmind.com/knowledge-base/articles/anonymizer-and-proxy-data-maxmind#vpns)
+  [Learn more about VPNs on our Knowledge Base.](https://support.maxmind.com/knowledge-base/articles/anonymizer-and-proxy-data-maxmind#VPN)
   {{</ geoip-schema-row >}}
 
   {{< geoip-schema-row key="is_hosting_provider" valueType="boolean" insights="true">}}
@@ -284,7 +284,7 @@ only.
 
   **Note:** This field has been moved from the `traits` object to the `anonymizer` object. It is still returned in the `traits` object for backwards compatibility but is deprecated there.
 
-  [Learn more about hosting providers used for anonymizing on our Knowledge Base.](https://support.maxmind.com/knowledge-base/articles/anonymizer-and-proxy-data-maxmind#hosting-providers)
+  [Learn more about hosting providers used for anonymizing on our Knowledge Base.](https://support.maxmind.com/knowledge-base/articles/anonymizer-and-proxy-data-maxmind#hosting-provider)
   {{</ geoip-schema-row >}}
 
   {{< geoip-schema-row key="is_public_proxy" valueType="boolean" insights="true">}}
@@ -868,7 +868,7 @@ address.
 
   This is `true` if the IP address belongs to any sort of anonymous network. Otherwise, the key is not included in the `traits` object.
 
-  [Learn more about anonymizer and proxy detection on our Knowledge Base.](https://support.maxmind.com/knowledge-base/articles/anonymizer-and-proxy-data-maxmind#anonymizer-detection)
+  [Learn more about anonymizer and proxy detection on our Knowledge Base.](https://support.maxmind.com/knowledge-base/articles/anonymizer-and-proxy-data-maxmind#anon-detection)
   {{</ geoip-schema-row >}}
 
   {{< geoip-schema-row key="is_anonymous_vpn" valueType="boolean" insights="true">}}
@@ -878,7 +878,7 @@ address.
 
   If a VPN provider does not register subnets under names associated with them, we will likely only flag their IP ranges using the `is_hosting_provider` flag.
 
-  [Learn more about VPNs on our Knowledge Base.](https://support.maxmind.com/knowledge-base/articles/anonymizer-and-proxy-data-maxmind#vpns)
+  [Learn more about VPNs on our Knowledge Base.](https://support.maxmind.com/knowledge-base/articles/anonymizer-and-proxy-data-maxmind#VPN)
   {{</ geoip-schema-row >}}
 
   {{< geoip-schema-row key="is_anycast" valueType="boolean" country="true" city="true" insights="true">}}
@@ -890,7 +890,7 @@ address.
 
   This is `true` if the IP address belongs to a hosting or VPN provider (see description of `is_anonymous_vpn` flag). Otherwise, the key is not included in the `traits` object.
 
-  [Learn more about hosting providers used for anonymizing on our Knowledge Base.](https://support.maxmind.com/knowledge-base/articles/anonymizer-and-proxy-data-maxmind#hosting-providers)
+  [Learn more about hosting providers used for anonymizing on our Knowledge Base.](https://support.maxmind.com/knowledge-base/articles/anonymizer-and-proxy-data-maxmind#hosting-provider)
   {{</ geoip-schema-row >}}
 
   {{< geoip-schema-row key="is_public_proxy" valueType="boolean" insights="true">}}
