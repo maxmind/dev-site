@@ -279,7 +279,6 @@ transaction.
   {{< minfraud-schema-row key="type" type="request" valueType="string" valueTypeNote="format: enum" >}}
   The type of event being scored. The valid types are:
 
-The payment method associated with the transaction. The valid values are:
   | Transaction type	                         | Description                                                                                          |
   | ---------------------------- | ------------------------------------------------------------------------------------------------------ |
   | `account_creation`         | The transactor is attempting to create an account in your system.    |
@@ -288,9 +287,7 @@ The payment method associated with the transaction. The valid values are:
   | `email_change`        | The transactor is attempting to change the email address associated with their account in your system. |
   | `fund_transfer`            | The transactor is attempting to transfer funds from one account to another. |
   | `password_reset` | The transactor is attempting to reset their password in your system.   |
-  | `payout_change`  | The transactor is attempting to change how they will be paid in your system.
-
-The transactor may be sending you referral traffic or complete surveys, but this transaction type can be used in any circumstance in which you pay your users, and they are attempting to change how they are paid. |
+  | `payout_change`  | The transactor is attempting to change how they will be paid in your system. The transactor may be sending you referral traffic or complete surveys, but this transaction type can be used in any circumstance in which you pay your users, and they are attempting to change how they are paid. |
   | `purchase`  | The transactor is attempting to make a purchase.  | 
   | `recurring_purchase`  | The transactor is attempting to set up a recurring purchase or subscription. | 
   | `referral`  | The transactor is sending you referral traffic, for example referring someone to an e-commerce site with an ad. |
