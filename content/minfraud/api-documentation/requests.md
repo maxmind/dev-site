@@ -277,8 +277,10 @@ transaction.
   {{</minfraud-schema-row>}}
 
   {{< minfraud-schema-row key="type" type="request" valueType="string" valueTypeNote="format: enum" >}}
+  
   The type of event being scored. The valid types are:
-  | Transaction type	                   | Description                                                                                          |
+  
+  | Transaction type	                   | Description                  |
   | ---------------------------- | ------------------------------------------------------------------- |
   | `account_creation`         | The transactor is attempting to create an account in your system.    |
   | `account_login`    | The transactor is attempting to log in to an account in your system.  |
@@ -292,9 +294,11 @@ transaction.
   | `referral`  | The transactor is sending you referral traffic, for example referring someone to an e-commerce site with an ad. |
   | `sim_swap`  | For mobile network operators. A new SIM card or eSIM is being issued to activate service on a customer's existing phone number. |
   | `survey`  | The transactor is attempting to begin or complete a survey. |
-  [Learn more about the /event/type input on our Knowledge Base.](https://support.maxmind.com/knowledge-base/articles/event-and-account-inputs-minfraud#transaction-identifier)
-  {{</minfraud-schema-row>}}
 
+
+  [Learn more about the /event/type input on our Knowledge Base.](https://support.maxmind.com/knowledge-base/articles/event-and-account-inputs-minfraud#transaction-identifier)
+
+  {{</minfraud-schema-row>}}
   {{< minfraud-schema-row key="party" type="request" valueType="string" valueTypeNote="format: enum" >}}
   The party submitting this transaction. The valid values are:
 
@@ -545,9 +549,11 @@ process that was used for the event.
 
 {{< schema-table key="payment" >}}
   {{< minfraud-schema-row key="method" type="request" valueType="string" valueTypeNote="format: enum" >}}
+ 
   The payment method associated with the transaction. The valid values are:
-  | Payment method	                         | Description                                                                                          |
-  | ---------------------------- | ---------------- -------------------------------------------------- |
+ 
+  | Payment method	                         | Description     |
+  | ---------------------------- | ------------------------------------------------------------------ |
   | `bank_debit`                | A direct debit of the customer's bank account.    |
   | `bank_redirect`    | The customer authorizes payment after authentication via their bank.  |
   | `bank_transfer`              | The customer pushes funds directly from their bank account.  |
@@ -558,7 +564,8 @@ process that was used for the event.
   | `gift_card`  | Payment via a merchant sponsored gift card.   | 
   | `real_time_payment`  | The customer pushes funds directly from their bank account or other funding source using an intermediary to authenticate, such as a phone number or other account (e.g. Pix, PayNow, Swish, etc.).  | 
   | `rewards`  | Payment via rewards or loyalty program incentives. |
-  
+
+
   [Learn more about event and account inputs on our Knowledge Base.](https://support.maxmind.com/knowledge-base/articles/event-and-account-inputs-minfraud)
   
   {{</minfraud-schema-row>}}
