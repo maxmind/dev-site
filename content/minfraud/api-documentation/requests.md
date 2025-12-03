@@ -558,10 +558,9 @@ process that was used for the event.
   | `gift_card`  | Payment via a merchant sponsored gift card.   | 
   | `real_time_payment`  | The customer pushes funds directly from their bank account or other funding source using an intermediary to authenticate, such as a phone number or other account (e.g. Pix, PayNow, Swish, etc.).  | 
   | `rewards`  | Payment via rewards or loyalty program incentives. |
+  
   [Learn more about event and account inputs on our Knowledge Base.](https://support.maxmind.com/knowledge-base/articles/event-and-account-inputs-minfraud)
   
-
-
   {{</minfraud-schema-row>}}
 
   {{< minfraud-schema-row key="processor" type="request" valueType="string" valueTypeNote="format: enum" >}}

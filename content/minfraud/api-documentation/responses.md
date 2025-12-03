@@ -1000,6 +1000,7 @@ minFraud response.
   | `http_error`        | The domain is reachable but the web application had a problem or denied the request. |
   | `parked`            | The domain is live and is in a parked state. |
   | `pre_development` | The domain is live and is in a pre-development state.  |
+  
   [Learn more about the email domain visit status on our Knowledge Base.](https://support.maxmind.com/knowledge-base/minfraud-domain-risk-data#domain-visit)
   {{</minfraud-schema-row>}}
 
@@ -1370,10 +1371,10 @@ this array for issues when integrating the web service.
   {{< minfraud-schema-row key="code" type="response" valueType="string" valueTypeNote="max length: 255" score="true" insights="true" factors="true" >}}
   This value is a machine-readable code identifying the warning. Although more codes may be added in the future, the current codes are:
 
-  | Code                          | Description                                                                                                                                                                                                                                               |
-  | ----------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-  | `BILLING_CITY_NOT_FOUND`     | The billing city could not be found in our database. This may impact our ability to provide accurate distance calculations.                                                                                                                               |
-  | `BILLING_COUNTRY_MISSING`     | Billing address information was provided without providing a billing country. This may impact our ability to provide accurate distance calculations.                                                                                                      |
+  | Code                          | Description    |
+  | ----------------------------- | --------------------------------------------------------------------------------------------------------------------- |
+  | `BILLING_CITY_NOT_FOUND`     | The billing city could not be found in our database. This may impact our ability to provide accurate distance calculations.     |
+  | `BILLING_COUNTRY_MISSING`     | Billing address information was provided without providing a billing country. This may impact our ability to provide accurate distance calculations.        |
   | `BILLING_COUNTRY_NOT_FOUND`  | The billing country could not be found in our database. This may impact our ability to provide accurate distance calculations.                                                                                                                            |
   | `BILLING_POSTAL_NOT_FOUND`   | The billing postal could not be found in our database. This may impact our ability to provide accurate distance calculations.                                                                                                                             |
   | `BILLING_REGION_NOT_FOUND`   | The billing region could not be found in our database. This may impact our ability to provide accurate distance calculations.                                                                                                                             |
@@ -1389,7 +1390,6 @@ this array for issues when integrating the web service.
   | `SHIPPING_POSTAL_NOT_FOUND`  | The shipping postal could not be found in our database. This may impact our ability to provide accurate distance calculations.                                                                                                                            |
   | `SHIPPING_REGION_NOT_FOUND`  | The shipping region could not be found in our database. This may impact our ability to provide accurate distance calculations.                                                                                                                            |
   {{</minfraud-schema-row>}}
-
 
   {{< minfraud-schema-row key="warning" type="response" valueType="string" valueTypeNote="max length: 255" score="true" insights="true" factors="true" >}}
   This field provides a human-readable explanation of the warning. The description may change at any time and should not be matched against.
