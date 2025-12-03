@@ -992,16 +992,14 @@ minFraud response.
 
   {{< minfraud-schema-row key="status" type="response" valueType="string" insights="true" factors="true" >}}
   A classification of the status of the domain (or the last domain visited after following redirects, if these are present and can be followed) based on an automated visit at a previous point in time. This field may be initially unavailable for a newly sighted domain and populated at a future time after a visit is conducted. Pair with the `/email/domain/visit/last_visited_on` to determine the recency of the visit. One of the following values. Additional values may be added in the future.
-
 | Status                        | Description                                                                                          |
-  | ---------------------------- | ------------------------------------------------------------------------------------------------------ |
+  | ---------------------------- | ----------------------------------------------------------------- |
   | `live`                | The domain is reachable and serving content normally.    |
   | `dns_error`    | The domain is missing, expired, or DNS is misconfigured.  |
   | `network_error`              | The domain is offline, blocked, or unreachable.  |
   | `http_error`        | The domain is reachable but the web application had a problem or denied the request. |
   | `parked`            | The domain is live and is in a parked state. |
   | `pre_development` | The domain is live and is in a pre-development state.  |
-
   [Learn more about the email domain visit status on our Knowledge Base.](https://support.maxmind.com/knowledge-base/minfraud-domain-risk-data#domain-visit)
   {{</minfraud-schema-row>}}
 
@@ -1239,7 +1237,6 @@ then this object will not be present in the response.
 
   {{< minfraud-schema-row key="action" type="response" valueType="string" valueTypeNote="format: enum" score="true" insights="true" factors="true" >}}
   This describes how the request was handled. The valid values are:
-
   | Action         | Explanation                                                                            |
   | -------------- | -------------------------------------------------------------------------------------- |
   | `accept`         | This is the default value that is used if none of your custom rules match the request. |
@@ -1247,16 +1244,13 @@ then this object will not be present in the response.
   | `manual_review` |                                                                                        |
   | `test`           | This value can be used to test custom rules.                                           |
   {{</minfraud-schema-row>}}
-
   {{< minfraud-schema-row key="reason" type="response" valueType="string" valueTypeNote="format: enum" score="true" insights="true" factors="true" >}}
   This describes why the `action` was set to a particular value. The valid values are:
-
   | Reason       | Explanation                                   |
   | ------------ | --------------------------------------------- |
   | `default`      | No custom rules matched the request.          |
   | `custom_rule` | A custom rule was applied and set the action. |
   {{</minfraud-schema-row>}}
-
   {{< minfraud-schema-row key="rule_label" type="response" valueType="string" score="true" insights="true" factors="true" >}}
   The custom rule that was triggered. If you do not have custom rules set up, the triggered custom rule does not have a label, or no custom rule was triggered, the field will not be included in the response.
   {{</minfraud-schema-row>}}
