@@ -61,7 +61,7 @@ These are named `GeoIP2-Anonymous-IP-Blocks-IPv4.csv` and
           not.
           <br />
           <a
-            href="https://support.maxmind.com/knowledge-base/articles/anonymizer-and-proxy-data-maxmind#anonymizer-detection"
+            href="https://support.maxmind.com/knowledge-base/articles/anonymizer-and-proxy-data-maxmind#anon-detection"
             >Learn more about anonymizer and proxy detection on our Knowledge
             Base.</a
           >
@@ -79,7 +79,7 @@ These are named `GeoIP2-Anonymous-IP-Blocks-IPv4.csv` and
           <code>is_hosting_provider</code> flag.
           <br />
           <a
-            href="https://support.maxmind.com/knowledge-base/articles/anonymizer-and-proxy-data-maxmind#vpns"
+            href="https://support.maxmind.com/knowledge-base/articles/anonymizer-and-proxy-data-maxmind#VPN"
             >Learn more about VPNs on our Knowledge Base.</a
           >
         </td>
@@ -93,7 +93,7 @@ These are named `GeoIP2-Anonymous-IP-Blocks-IPv4.csv` and
           description of <code>is_anonymous_vpn</code> flag). Blank if not.
           <br />
           <a
-            href="https://support.maxmind.com/knowledge-base/articles/anonymizer-and-proxy-data-maxmind#hosting-providers"
+            href="https://support.maxmind.com/knowledge-base/articles/anonymizer-and-proxy-data-maxmind#hosting-provider"
             >Learn more about hosting providers used for anonymizing on our
             Knowledge Base.</a
           >
