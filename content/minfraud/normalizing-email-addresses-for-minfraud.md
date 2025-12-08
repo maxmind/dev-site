@@ -60,6 +60,10 @@ yourself. Below are the steps to take to do this.
 You can review the code in our client APIs see how to normalize an email address
 in various languages.
 
+The links below point to specific commits for reference, but we recommend
+consulting the latest code in each repository to ensure you're following the
+current normalization logic.
+
 - [.NET (C#)](https://github.com/maxmind/minfraud-api-dotnet/blob/bdc196438d4b1f35bf88431f3b0b1a62353950fb/MaxMind.MinFraud/Request/Email.cs#L395)
 - [Java](https://github.com/maxmind/minfraud-api-java/blob/98e3ad44651ee71b319cf42a21a57f2ed80925fc/src/main/java/com/maxmind/minfraud/request/Email.java#L414)
 - [JavaScript](https://github.com/maxmind/minfraud-api-node/blob/3c6591930377759fcba345ec6b737c65b4952284/src/request/email.ts#L313)
