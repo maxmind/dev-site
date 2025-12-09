@@ -1,0 +1,96 @@
+diff_in,old_geoname_id,new_geoname_id,old_city_name,new_city_name,old_country_name,new_country_name,old_country_code,new_country_code,old_subdivision_codes,new_subdivision_codes
+city_name,3904906,3904906,Santa Cruz,Santa Cruz de la Sierra,Bolivia,Bolivia,BO,BO,S,S
+city_name,6323817,6323817,Comodoro Municipality,Comodoro,Brazil,Brazil,BR,BR,MT,MT
+city_name,5955960,5955960,Fort St. John,Fort St John,Canada,Canada,CA,CA,BC,BC
+city_name,1803300,1803300,Liuzhou,Liuchow,China,China,CN,CN,GX,GX
+city_name,295655,295655,Ar'ara,Ar'ara,Israel,Israel,IL,IL,HA,HA
+city_name,3980615,3980615,Jeráhuaro de Juárez,Valle de Juárez,Mexico,Mexico,MX,MX,MIC,MIC
+city_name,3517801,3517801,San Sebastian Teitipac,San Sebastián Teitipac,Mexico,Mexico,MX,MX,OAX,OAX
+city_name,3979665,3979665,Zinapécuaro,Zinapécuaro de Figueroa,Mexico,Mexico,MX,MX,MIC,MIC
+city_name,3529915,3529915,Cuilapan de Guerrero,Cuilápam de Guerrero,Mexico,Mexico,MX,MX,OAX,OAX
+city_name,3517978,3517978,San Pedro Mixtepec,San Pedro Mixtepec Distrito Veintiséis,Mexico,Mexico,MX,MX,OAX,OAX
+city_name,3801960,3801960,San Blas Atempa,Heroica Villa de San Blas Atempa,Mexico,Mexico,MX,MX,OAX,OAX
+city_name,3518732,3518732,Animas Trujano,Ánimas Trujano,Mexico,Mexico,MX,MX,OAX,OAX
+city_name,3982377,3982377,Taretán,Taretan,Mexico,Mexico,MX,MX,MIC,MIC
+city_name,4015471,4015471,Carácuaro,Carácuaro de Morelos,Mexico,Mexico,MX,MX,MIC,MIC
+city_name,3801419,3801419,La Natividad,Natividad,Mexico,Mexico,MX,MX,OAX,OAX
+city_name,3517859,3517859,San Raymundo Jalpam,San Raymundo Jalpan,Mexico,Mexico,MX,MX,OAX,OAX
+city_name,2514301,2514301,Mahon,Maó,Spain,Spain,ES,ES,"IB, PM","IB, PM"
+city_name,1668355,1668355,Tainan City,Tainan,Taiwan,Taiwan,TW,TW,TNN,TNN
+city_name,710523,710523,Chervonyy Donets,Donets,Ukraine,Ukraine,UA,UA,63,63
+city_name,292878,292878,Al Fujairah City,Fujairah,United Arab Emirates,United Arab Emirates,AE,AE,FU,FU
+city_name,5862664,5862664,Gambell,Chibukak,United States,United States,US,US,AK,AK
+geoname_id,12108277,3449765,Santa Terezinha,Santa Terezinha,Brazil,Brazil,BR,BR,BA,BA
+geoname_id,3466970,7615124,Cardoso,Cardoso,Brazil,Brazil,BR,BR,SP,SP
+geoname_id,3459406,12966165,Juruena,Juruena,Brazil,Brazil,BR,BR,MT,MT
+geoname_id,6318968,6319492,Xinguara,Xinguara,Brazil,Brazil,BR,BR,PA,PA
+geoname_id,3458729,11959657,Laurentino,Laurentino,Brazil,Brazil,BR,BR,SC,SC
+geoname_id,6321197,12997409,Buritizeiro,Buritizeiro,Brazil,Brazil,BR,BR,MG,MG
+geoname_id,3446947,13103074,Tanque Novo,Tanque Novo,Brazil,Brazil,BR,BR,BA,BA
+geoname_id,3451202,3451203,Rio das Pedras,Rio das Pedras,Brazil,Brazil,BR,BR,SP,SP
+geoname_id,13029168,3465616,Contenda,Contenda,Brazil,Brazil,BR,BR,PR,PR
+geoname_id,3472234,13003966,Angatuba,Angatuba,Brazil,Brazil,BR,BR,SP,SP
+geoname_id,12108334,3460542,Itororó,Itororó,Brazil,Brazil,BR,BR,BA,BA
+geoname_id,13020449,3451363,Ribeirão Bonito,Ribeirão Bonito,Brazil,Brazil,BR,BR,SP,SP
+geoname_id,3455251,12390918,Panorama,Panorama,Brazil,Brazil,BR,BR,SP,SP
+geoname_id,3473143,3473144,Adrianópolis,Adrianópolis,Brazil,Brazil,BR,BR,PR,PR
+geoname_id,3457943,6320949,Mansidão,Mansidão,Brazil,Brazil,BR,BR,BA,BA
+geoname_id,6324162,3456277,Nobres,Nobres,Brazil,Brazil,BR,BR,MT,MT
+geoname_id,3473813,13455233,Vendinha,Vendinha,Brazil,Brazil,BR,BR,RS,RS
+geoname_id,6139086,6139085,Saint-Stanislas,Saint-Stanislas,Canada,Canada,CA,CA,QC,QC
+geoname_id,5966068,5966069,Greenfield,Greenfield,Canada,Canada,CA,CA,NS,NS
+geoname_id,6122715,6122716,Riverside,Riverside,Canada,Canada,CA,CA,NS,NS
+geoname_id,6075292,12031951,Mission,Mission,Canada,Canada,CA,CA,BC,BC
+geoname_id,5972214,7290167,Havre-aux-Maisons,Havre-aux-Maisons,Canada,Canada,CA,CA,QC,QC
+geoname_id,5992135,5992136,Kinburn,Kinburn,Canada,Canada,CA,CA,ON,ON
+geoname_id,6154183,6154184,Springfield,Springfield,Canada,Canada,CA,CA,ON,ON
+geoname_id,5919256,5919257,Centreville,Centreville,Canada,Canada,CA,CA,NS,NS
+geoname_id,6930307,6090698,North Sydney,North Sydney,Canada,Canada,CA,CA,NS,NS
+geoname_id,6073863,6073872,Mill Creek,Mill Creek,Canada,Canada,CA,CA,NS,NS
+geoname_id,5909489,5909490,Brooklyn,Brooklyn,Canada,Canada,CA,CA,NS,NS
+geoname_id,6048765,6048767,Lakeview,Lakeview,Canada,Canada,CA,CA,NS,NS
+geoname_id,8673349,8672594,Saint-Cyprien,Saint-Cyprien,Canada,Canada,CA,CA,QC,QC
+geoname_id,5991638,5991635,Kiamika,Kiamika,Canada,Canada,CA,CA,QC,QC
+geoname_id,5955498,5955497,Forest,Forest,Canada,Canada,CA,CA,ON,ON
+geoname_id,5887766,5887765,Asquith,Asquith,Canada,Canada,CA,CA,SK,SK
+geoname_id,6180643,6180657,White Lake,White Lake,Canada,Canada,CA,CA,ON,ON
+geoname_id,6082317,6082314,Mount Pleasant,Mount Pleasant,Canada,Canada,CA,CA,ON,ON
+geoname_id,5982724,7910263,Indian Brook,Indian Brook,Canada,Canada,CA,CA,NS,NS
+geoname_id,6182381,6182379,Willow Beach,Willow Beach,Canada,Canada,CA,CA,ON,ON
+geoname_id,5910430,5910429,Bryson,Bryson,Canada,Canada,CA,CA,QC,QC
+geoname_id,6138337,6138336,Saint-Henri-de-Taillon,Saint-Henri-de-Taillon,Canada,Canada,CA,CA,QC,QC
+geoname_id,6101042,6101041,Pennfield,Pennfield,Canada,Canada,CA,CA,NB,NB
+geoname_id,12096567,5946961,Eel Ground,Eel Ground,Canada,Canada,CA,CA,NB,NB
+geoname_id,6151193,6151194,Somerset,Somerset,Canada,Canada,CA,CA,NS,NS
+geoname_id,6048464,6048463,Lakelands,Lakelands,Canada,Canada,CA,CA,NS,NS
+geoname_id,5886865,5886863,Argyle,Argyle,Canada,Canada,CA,CA,NS,NS
+geoname_id,6138922,6138936,Saint-Pierre,Saint-Pierre,Canada,Canada,CA,CA,QC,QC
+geoname_id,6064484,6064485,Maitland,Maitland,Canada,Canada,CA,CA,NS,NS
+geoname_id,5958107,5958108,French River,French River,Canada,Canada,CA,CA,ON,ON
+geoname_id,6048677,6048676,Lakeside,Lakeside,Canada,Canada,CA,CA,NS,NS
+geoname_id,3667902,3667901,Soatá,Soatá,Colombia,Colombia,CO,CO,BOY,BOY
+geoname_id,12369266,12395479,Santa Fé,Santa Fé,Costa Rica,Costa Rica,CR,CR,SJ,SJ
+geoname_id,1278906,10654828,Amaria,Amaria,India,India,IN,IN,UP,UP
+geoname_id,10856052,6618687,Basavanagudi,Basavanagudi,India,India,IN,IN,KA,KA
+geoname_id,6591034,1646448,Cimahi,Cimahi,Indonesia,Indonesia,ID,ID,JB,JB
+geoname_id,1648065,1934660,Brebes,Brebes,Indonesia,Indonesia,ID,ID,JT,JT
+geoname_id,1964415,1970573,Babakangarut,Babakangarut,Indonesia,Indonesia,ID,ID,JB,JB
+geoname_id,13406312,7055784,Banjar Badung,Banjar Badung,Indonesia,Indonesia,ID,ID,BA,BA
+geoname_id,1643770,6570224,Grobogan,Grobogan,Indonesia,Indonesia,ID,ID,JT,JT
+geoname_id,9633085,9631838,Hirao,Hirao,Japan,Japan,JP,JP,29,29
+geoname_id,3514783,3514780,Veracruz,Veracruz,Mexico,Mexico,MX,MX,VER,VER
+geoname_id,3998317,4006099,Gabriel Zamora,Gabriel Zamora,Mexico,Mexico,MX,MX,MIC,MIC
+geoname_id,11136987,4026082,Lázaro Cárdenas,Lázaro Cárdenas,Mexico,Mexico,MX,MX,MIC,MIC
+geoname_id,7417465,1687801,Santiago,Santiago,Philippines,Philippines,PH,PH,"02, ISA","02, ISA"
+geoname_id,11288014,13455225,Buffelspoort,Buffelspoort,South Africa,South Africa,ZA,ZA,NW,NW
+geoname_id,6544442,2516932,Guadiaro,Guadiaro,Spain,Spain,ES,ES,"AN, CA","AN, CA"
+geoname_id,1251542,1251541,Ambanpola,Ambanpola,Sri Lanka,Sri Lanka,LK,LK,"6, 61","6, 61"
+geoname_id,2687383,2687384,Ödsmål,Ödsmål,Sweden,Sweden,SE,SE,O,O
+geoname_id,2678725,2678727,Sjövik,Sjövik,Sweden,Sweden,SE,SE,O,O
+geoname_id,1612420,1612419,Ban Tha Sala,Ban Tha Sala,Thailand,Thailand,TH,TH,25,25
+geoname_id,2759775,2759774,Andijk,Andijk,The Netherlands,The Netherlands,NL,NL,NH,NH
+geoname_id,708946,8354606,Hatne,Hatne,Ukraine,Ukraine,UA,UA,32,32
+geoname_id,13274780,12262360,Iden Green,Iden Green,United Kingdom,United Kingdom,GB,GB,"ENG, KEN","ENG, KEN"
+geoname_id,3333147,2647937,Greenwich,Greenwich,United Kingdom,United Kingdom,GB,GB,"ENG, GRE","ENG, GRE"
+geoname_id,4972427,4972428,Moody,Moody,United States,United States,US,US,ME,ME
+subdivision_codes,3436230,3436230,Avellaneda,Avellaneda,Argentina,Argentina,AR,AR,S,B
