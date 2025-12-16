@@ -861,6 +861,8 @@ address.
   This field contains the risk associated with the IP address. The value ranges from 0.01 to 99. A higher score indicates a higher risk.
 
   Please note that the IP risk score provided in GeoIP products and services is more static than the IP risk score provided in minFraud and is not responsive to traffic on your network. If you need realtime IP risk scoring based on behavioral signals on your own network, please use minFraud.
+  
+  We do not provide an IP risk snapshot for low-risk networks. If this field is not populated, we either do not have signals for the network or the signals we have show that the network is low-risk. If you would like to get signals for low-risk networks, please use the minFraud web services.
   {{</ geoip-schema-row >}}
 
   {{< geoip-schema-row key="is_anonymous" valueType="boolean" insights="true">}}
