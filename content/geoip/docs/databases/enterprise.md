@@ -62,7 +62,7 @@ The files in the zip archive are:
         <td><code>GeoIP2-Enterprise-ISP.CSV</code></td>
         <td>
           CSV file containing data on ISPs. This may be cross referenced with
-          the various blocks files using the shared `isp_id` key.
+          the various blocks files using the shared <code>isp_id</code> key.
         </td>
       </tr>
 
@@ -112,7 +112,7 @@ ISPs.
         <td>integer</td>
         <td>
           The identifier for the ISP. This key can be cross referenced with the
-          `isp_id` in the Blocks files.
+          <code>isp_id</code> in the Blocks files.
         </td>
       </tr>
       <tr>
