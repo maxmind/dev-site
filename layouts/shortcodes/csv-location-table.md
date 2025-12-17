@@ -2,7 +2,7 @@
 
 | Name | Type | Description {{ if eq $isEnterprise "false" }}| Included in...{{ end }} |
 |------|------|-------------|{{ if eq $isEnterprise "false" }}-------------{{ end }}|
-| geoname_id | integer | A unique identifier for the a location as specified by [GeoNames](https://www.geonames.org/). This ID can be used as a key for the Location file. [Learn more about GeoNames IDs on our Knowledge Base.](https://support.maxmind.com/knowledge-base/articles/maxmind-ip-geolocation-data#geonames-ids) | {{ if eq $isEnterprise "false" }}Country, City{{ end }} |
+| geoname_id | integer | A unique identifier for the location as specified by [GeoNames](https://www.geonames.org/). This ID can be used as a key for the Location file. [Learn more about GeoNames IDs on our Knowledge Base.](https://support.maxmind.com/knowledge-base/articles/maxmind-ip-geolocation-data#geonames-ids) | {{ if eq $isEnterprise "false" }}Country, City{{ end }} |
 | locale_code | string | The locale that the names in this row are in. This will always correspond to the locale name of the file. | {{ if eq $isEnterprise "false" }}Country, City{{ end }} |
 | continent_code | string (2) | The continent code for this location. Possible codes are: **AF** - Africa, **AN** - Antarctica, **AS** - Asia, **EU** - Europe, **NA** - North America, **OC** - Oceania, **SA** - South America | {{ if eq $isEnterprise "false" }}Country, City{{ end }} |
 | continent_name | string | The continent name for this location in the file's locale. [Learn more about localized names on our Knowledge Base.](https://support.maxmind.com/knowledge-base/articles/maxmind-ip-geolocation-data#names) | {{ if eq $isEnterprise "false" }}Country, City{{ end }} |
