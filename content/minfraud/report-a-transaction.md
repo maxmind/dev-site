@@ -115,9 +115,9 @@ var report = new TransactionReport(
     // The following key/values are not mandatory but are encouraged
     maxmindId: "abcd1234",
     minfraudId: new Guid("01c25cb0-f067-4e02-8ed0-a094c580f5e4"),
-    transactionId: "txn123");
+    transactionId: "txn123",
     chargebackCode: "BL",
-    notes: "Suspicious account behavior",
+    notes: "Suspicious account behavior");
 
 await client.ReportAsync(report);
 ```
@@ -150,7 +150,7 @@ const transactionReport = new minFraud.TransactionReport({
     maxmindId: 'abcd1234',
     minfraudId: '01c25cb0-f067-4e02-8ed0-a094c580f5e4',
     transactionId: 'txn123',
-    chargebackCode: 'BL'
+    chargebackCode: 'BL',
     notes: 'Suspicious account behavior',
   });
 
@@ -178,13 +178,13 @@ $rt->report([
 ```python
 from minfraud import Client
 
-client = Client(10, 'LICENSEKEY');
+client = Client(10, 'LICENSEKEY')
 
 transaction_report = {
   'ip_address': '1.1.1.1',
   'tag': 'chargeback',
   # The following key/values are not mandatory but are encouraged
-  'maxmind_id': 'abcd1234'
+  'maxmind_id': 'abcd1234',
   'minfraud_id': '01c25cb0-f067-4e02-8ed0-a094c580f5e4',
   'transaction_id': 'txn123',
   'chargeback_code': 'BL',
@@ -195,16 +195,16 @@ client.report(transaction_report)
 
 # If you want to use asynchronous requests
 import asyncio
-from minfraud import Client
+from minfraud import AsyncClient
 
-async_client = AsyncClient(10, 'LICENSEKEY');
+async_client = AsyncClient(10, 'LICENSEKEY')
 
 async def report():
   transaction_report = {
     'ip_address': '1.1.1.1',
     'tag': 'chargeback',
     # The following key/values are not mandatory but are encouraged
-    'maxmind_id': 'abcd1234'
+    'maxmind_id': 'abcd1234',
     'minfraud_id': '01c25cb0-f067-4e02-8ed0-a094c580f5e4',
     'transaction_id': 'txn123',
     'chargeback_code': 'BL',
@@ -227,8 +227,8 @@ txn = Minfraud::Components::Report::Transaction.new(
   # The following key/values are not mandatory but are encouraged
   maxmind_id:      'abcd1234',
   minfraud_id:     '01c25cb0-f067-4e02-8ed0-a094c580f5e4',
-  transaction_id:  'txn123'
-  chargeback_code: 'BL'
+  transaction_id:  'txn123',
+  chargeback_code: 'BL',
   notes:           'Suspicious account behavior',
 )
 

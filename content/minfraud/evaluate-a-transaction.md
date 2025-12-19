@@ -123,6 +123,8 @@ WebServiceClient client = new WebServiceClient.Builder(10, "LICENSEKEY").build()
 ```
 
 ```javascript
+import * as minFraud from '@maxmind/minfraud-api-node';
+
 const client = new minFraud.Client('10', 'LICENSEKEY');
 ```
 
@@ -131,11 +133,13 @@ $client = new MinFraud(10, 'LICENSEKEY');
 ```
 
 ```python
+from minfraud import Client, AsyncClient
+
 # If you want to use synchronous requests
-client = Client(10, 'LICENSEKEY');
+client = Client(10, 'LICENSEKEY')
 
 # Or if you want to use asynchronous requests
-async_client = AsyncClient(10, 'LICENSEKEY');
+async_client = AsyncClient(10, 'LICENSEKEY')
 ```
 
 ```ruby
@@ -244,6 +248,8 @@ Transaction transaction = new Transaction.Builder(
 ```
 
 ```javascript
+import * as minFraud from '@maxmind/minfraud-api-node';
+
 let transaction;
 
 try {
@@ -418,24 +424,24 @@ Insights, or Factors service.
 {{< codeset >}}
 
 ```csharp
-# minFraud Score
+// minFraud Score
 var score = await client.ScoreAsync(transaction);
 
-# minFraud Insights
+// minFraud Insights
 var insights = await client.InsightsAsync(transaction);
 
-# minFraud Factors
+// minFraud Factors
 var factors = await client.FactorsAsync(transaction);
 ```
 
 ```java
-# minFraud Score
+// minFraud Score
 ScoreResponse score = client.score(transaction);
 
-# minFraud Insights
+// minFraud Insights
 InsightsResponse insights = client.insights(transaction);
 
-# minFraud Factors
+// minFraud Factors
 FactorsResponse factors = client.factors(transaction);
 ```
 
@@ -451,13 +457,13 @@ client.factors(transaction).then(factorsResponse => ...);
 ```
 
 ```php
-# minFraud Score
+// minFraud Score
 $scoreResponse = $request->score();
 
-# minFraud Insights
+// minFraud Insights
 $insightsResponse = $request->insights();
 
-# minFraud Factors
+// minFraud Factors
 $factorsResponse = $request->factors();
 ```
 
@@ -989,118 +995,118 @@ foreach ($scoreResponse->warnings as $warning) {
 ```
 
 ```python
- import asyncio # Only import asyncio if you are playing to do an asynchronous request
- from minfraud import AsyncClient, Client
+import asyncio  # Only needed for asynchronous requests
+from minfraud import AsyncClient, Client
 
- request = {
-     'device': {
-         'ip_address': '1.1.1.1',
-         'accept_language': 'en-US,en;q=0.8',
-         'session_age': 3600,
-         'session_id': 'a333a4e127f880d8820e56a66f40717c',
-         'user_agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.89 Safari/537.36'
-     },
-     'event': {
-         'shop_id': 's2123',
-         'type': 'purchase',
-         'transaction_id': 'txn3134133',
-         'time': '2014-04-12T23:20:50.052+00:00'
-     },
-     'account': {
-         'user_id': '3132',
-         'username_md5': '570a90bfbf8c7eab5dc5d4e26832d5b1'
-     },
-     'email': {
-         'address': '977577b140bfb7c516e4746204fbdb01',
-         'domain': 'maxmind.com'
-     },
-     'billing': {
-         'first_name': 'First',
-         'last_name': 'Last',
-         'company': 'Company, Inc.',
-         'address': '1 Billing Address St.',
-         'address_2': 'Unit 1',
-         'city': 'Waltham',
-         'region': 'MA',
-         'country': 'US',
-         'postal': '02451',
-         'phone_country_code': '1',
-         'phone_number': '555-555-5555',
-     },
-     'shipping': {
-         'first_name': 'First',
-         'last_name': 'Last',
-         'company': 'Company, Inc.',
-         'address': '1 Shipping Address St.',
-         'address_2': 'Unit 1',
-         'city': 'Waltham',
-         'region': 'MA',
-         'country': 'US',
-         'postal': '02451',
-         'phone_country_code': '1',
-         'phone_number': '555-555-5555',
-         'delivery_speed': 'same_day',
-     },
-     'credit_card': {
-         'bank_phone_country_code': '1',
-         'avs_result': 'Y',
-         'bank_phone_number': '555-555-5555',
-         'last_digits': '1234',
-         'cvv_result': 'N',
-         'bank_name': 'Test Bank',
-         'issuer_id_number': '411111'
-     },
-     'payment': {
-         'decline_code': 'invalid number',
-         'was_authorized': False,
-         'processor': 'stripe'
-     },
-     'shopping_cart': [{
-         'category': 'pets',
-         'quantity': 2,
-         'price': 20.43,
-         'item_id': 'lsh12'
-     }, {
-         'category': 'beauty',
-         'quantity': 1,
-         'price': 100.0,
-         'item_id': 'ms12'
-     }],
-     'order': {
-         'affiliate_id': 'af12',
-         'referrer_uri': 'http://www.amazon.com/',
-         'subaffiliate_id': 'saf42',
-         'discount_code': 'FIRST',
-         'currency': 'USD',
-         'amount': 323.21
-      },
-     'custom_inputs': {
-         'section': 'news',
-         'num_of_previous_purchases': 19,
-         'discount': 3.2,
-         'previous_user': True
-     }
- }
+request = {
+    'device': {
+        'ip_address': '1.1.1.1',
+        'accept_language': 'en-US,en;q=0.8',
+        'session_age': 3600,
+        'session_id': 'a333a4e127f880d8820e56a66f40717c',
+        'user_agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.89 Safari/537.36'
+    },
+    'event': {
+        'shop_id': 's2123',
+        'type': 'purchase',
+        'transaction_id': 'txn3134133',
+        'time': '2014-04-12T23:20:50.052+00:00'
+    },
+    'account': {
+        'user_id': '3132',
+        'username_md5': '570a90bfbf8c7eab5dc5d4e26832d5b1'
+    },
+    'email': {
+        'address': '977577b140bfb7c516e4746204fbdb01',
+        'domain': 'maxmind.com'
+    },
+    'billing': {
+        'first_name': 'First',
+        'last_name': 'Last',
+        'company': 'Company, Inc.',
+        'address': '1 Billing Address St.',
+        'address_2': 'Unit 1',
+        'city': 'Waltham',
+        'region': 'MA',
+        'country': 'US',
+        'postal': '02451',
+        'phone_country_code': '1',
+        'phone_number': '555-555-5555',
+    },
+    'shipping': {
+        'first_name': 'First',
+        'last_name': 'Last',
+        'company': 'Company, Inc.',
+        'address': '1 Shipping Address St.',
+        'address_2': 'Unit 1',
+        'city': 'Waltham',
+        'region': 'MA',
+        'country': 'US',
+        'postal': '02451',
+        'phone_country_code': '1',
+        'phone_number': '555-555-5555',
+        'delivery_speed': 'same_day',
+    },
+    'credit_card': {
+        'bank_phone_country_code': '1',
+        'avs_result': 'Y',
+        'bank_phone_number': '555-555-5555',
+        'last_digits': '1234',
+        'cvv_result': 'N',
+        'bank_name': 'Test Bank',
+        'issuer_id_number': '411111'
+    },
+    'payment': {
+        'decline_code': 'invalid number',
+        'was_authorized': False,
+        'processor': 'stripe'
+    },
+    'shopping_cart': [{
+        'category': 'pets',
+        'quantity': 2,
+        'price': 20.43,
+        'item_id': 'lsh12'
+    }, {
+        'category': 'beauty',
+        'quantity': 1,
+        'price': 100.0,
+        'item_id': 'ms12'
+    }],
+    'order': {
+        'affiliate_id': 'af12',
+        'referrer_uri': 'http://www.amazon.com/',
+        'subaffiliate_id': 'saf42',
+        'discount_code': 'FIRST',
+        'currency': 'USD',
+        'amount': 323.21
+    },
+    'custom_inputs': {
+        'section': 'news',
+        'num_of_previous_purchases': 19,
+        'discount': 3.2,
+        'previous_user': True
+    }
+}
 
- # This example function uses a synchronous Client object. The object
- # can be used across multiple requests.
- def client(account_id, license_key):
-     with Client(account_id, license_key) as client:
-         print(client.score(request))
-         print(client.insights(request))
-         print(client.factors(request))
+# This example function uses a synchronous Client object. The object
+# can be used across multiple requests.
+def sync_example(account_id, license_key):
+    with Client(account_id, license_key) as client:
+        print(client.score(request))
+        print(client.insights(request))
+        print(client.factors(request))
 
- client(42, 'license_key')
+sync_example(42, 'license_key')
 
- # This example function uses an asynchronous AsyncClient object. The
- # object can be used across multiple requests.
- async def async_client(account_id, license_key):
-     with Client(account_id, license_key) as client:
-         print(client.score(request))
-         print(client.insights(request))
-         print(client.factors(request))
+# This example function uses an asynchronous AsyncClient object. The
+# object can be used across multiple requests.
+async def async_example(account_id, license_key):
+    async with AsyncClient(account_id, license_key) as client:
+        print(await client.score(request))
+        print(await client.insights(request))
+        print(await client.factors(request))
 
- asyncio.run(async_client(42, 'license_key'))
+asyncio.run(async_example(42, 'license_key'))
 ```
 
 ```ruby

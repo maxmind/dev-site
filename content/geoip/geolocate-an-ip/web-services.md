@@ -122,23 +122,23 @@ const client = new WebServiceClient(accountId, licenseKey, {
 ```
 
 ```php
-<?php require_once 'vendor/autoload.php'
+<?php
+require_once 'vendor/autoload.php';
 use GeoIp2\WebService\Client;
 
-$account_id = 10;
-$license_key = 'LICENSEKEY';
+$accountId = 10;
+$licenseKey = 'LICENSEKEY';
 
-$client = new Client($account_id, $license_key);
+$client = new Client($accountId, $licenseKey);
 
 // To query the GeoLite web service, you must set the optional `host` argument.
 // The third argument specifies the language preferences when using the `->name`
 // method on the model classes that this client creates.
-$client = new Client($account_id, $license_key, ['en'], ['host' => 'geolite.info']);
+$client = new Client($accountId, $licenseKey, ['en'], ['host' => 'geolite.info']);
 ```
 
 ```python
-import asyncio # for async requests with AsyncClient
-import geoip2.webservice
+from geoip2.webservice import Client, AsyncClient
 
 account_id = 10
 license_key = 'LICENSEKEY'
@@ -150,7 +150,7 @@ client = Client(account_id, license_key)
 # to "geolite.info"
 client = Client(account_id, license_key, host='geolite.info')
 
-# Or if you want to use asynchronous requests
+# Or if you want to use asynchronous requests (requires `import asyncio`)
 async_client = AsyncClient(account_id, license_key)
 
 # To query the GeoLite web service, you must set the "host" keyword argument
@@ -247,13 +247,14 @@ client.country('142.1.1.1').then((response) => {
 ```
 
 ```php
-<?php require_once 'vendor/autoload.php'
+<?php
+require_once 'vendor/autoload.php';
 use GeoIp2\WebService\Client;
 
-$account_id = 10;
-$license_key = 'LICENSEKEY';
+$accountId = 10;
+$licenseKey = 'LICENSEKEY';
 
-$client = new Client($account_id, $license_key);
+$client = new Client($accountId, $licenseKey);
 
 // You can also use `$client->city` or `$client->insights`
 // `$client->insights` is not available to GeoLite users
@@ -264,27 +265,27 @@ print($record->country->isoCode . "\n");
 
 ```python
 # Sync
-import geoip2.webservice
+from geoip2.webservice import Client
 
 account_id = 10
 license_key = 'LICENSEKEY'
 
-with geoip2.webservice.Client(account_id, license_key) as client:
+with Client(account_id, license_key) as client:
   # You can also use `client.city` or `client.insights`
   # `client.insights` is not available to GeoLite users
-  response = client.country('128.101.101.101)
+  response = client.country('128.101.101.101')
 
   print(response.country.iso_code)
 
 # Async
 import asyncio
-import geoip2.webservice
+from geoip2.webservice import AsyncClient
 
 async def main():
-  async with geoip2.webservice.AsyncClient(account_id, license_key) as client:
+  async with AsyncClient(account_id, license_key) as client:
     # You can also use `client.city` or `client.insights`
     # `client.insights` is not available to GeoLite users
-    response = await client.country('128.101.101.101)
+    response = await client.country('128.101.101.101')
 
     print(response.country.iso_code)
 
