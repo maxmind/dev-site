@@ -51,7 +51,7 @@ yarn add @maxmind/geoip2-node
 
 ```php
 # Install via Composer
-composer require geoip2/geoip2:~2.0
+composer require geoip2/geoip2:~3.0
 ```
 
 ```python
