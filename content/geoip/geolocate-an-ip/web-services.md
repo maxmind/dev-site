@@ -155,14 +155,16 @@ async_client = AsyncClient(account_id, license_key, host='geolite.info')
 ```
 
 ```ruby
-Minfraud.configure do |c|
-  c.account_id = 10
-  c.license_key = 'LICENSEKEY'
+require 'maxmind/geoip2'
+
+client = MaxMind::GeoIP2::Client.new(
+  account_id: 10,
+  license_key: 'LICENSEKEY',
 
   # To use the GeoLite web service instead of GeoIP, set the host
   # parameter to "geolite.info", eg:
-  # host: 'geolite.info'
-end
+  # host: 'geolite.info',
+)
 ```
 
 {{< /codeset >}}
@@ -285,13 +287,13 @@ asyncio.run(main())
 ```ruby
 require 'maxmind/geoip2'
 
-Minfraud.configure do |c|
-  c.account_id = 10
-  c.license_key = 'LICENSEKEY'
-end
+client = MaxMind::GeoIP2::Client.new(
+  account_id: 10,
+  license_key: 'LICENSEKEY',
+)
 
-# You can also use `client.city` or `client.insights`
-# `client.insights` is not available to GeoLite users
+# You can also use `client.city` or `client.insights`.
+# Note that `client.insights` is not available to GeoLite users.
 record = client.country('128.101.101.101')
 
 puts record.country.iso_code
