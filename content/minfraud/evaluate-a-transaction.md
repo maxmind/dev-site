@@ -163,46 +163,50 @@ submit:
 {{< codeset >}}
 
 ```csharp
-var transaction = new Transaction(
-    device: new Device(System.Net.IPAddress.Parse("1.1.1.1")),
-    email:
-    new Email(
-        address: "test@maxmind.com",
-        domain: "maxmind.com"
-    ),
-    billing:
-    new Billing(
-        address: "1 Billing Address St.",
-        firstName: "First",
-        lastName: "Last",
-        company: "Company, Inc.",
-        address2: "Unit 1",
-        city: "Waltham",
-        region: "MA",
-        country: "US",
-        postal: "02451",
-        phoneNumber: "555-555-5555",
-        phoneCountryCode: "1"
-    ),
-    creditCard:
-    new CreditCard(
-        issuerIdNumber: "411111",
-    ),
-    shipping:
-    new Shipping(
-        firstName: "First",
-        lastName: "Last",
-        company: "Company Inc.",
-        address: "1 Shipping Address St.",
-        address2: "Unit 1",
-        city: "Waltham",
-        region: "MA",
-        country: "US",
-        postal: "02451",
-        phoneNumber: "555-555-5555",
-        phoneCountryCode: "1",
-    )
-);
+var transaction = new Transaction
+{
+    Device = new Device
+    {
+        IPAddress = System.Net.IPAddress.Parse("1.1.1.1")
+    },
+    Email = new Email
+    {
+        Address = "test@maxmind.com",
+        Domain = "maxmind.com"
+    },
+    Billing = new Billing
+    {
+        FirstName = "First",
+        LastName = "Last",
+        Company = "Company, Inc.",
+        Address = "1 Billing Address St.",
+        Address2 = "Unit 1",
+        City = "Waltham",
+        Region = "MA",
+        Country = "US",
+        Postal = "02451",
+        PhoneNumber = "555-555-5555",
+        PhoneCountryCode = "1"
+    },
+    CreditCard = new CreditCard
+    {
+        IssuerIdNumber = "411111"
+    },
+    Shipping = new Shipping
+    {
+        FirstName = "First",
+        LastName = "Last",
+        Company = "Company Inc.",
+        Address = "1 Shipping Address St.",
+        Address2 = "Unit 1",
+        City = "Waltham",
+        Region = "MA",
+        Country = "US",
+        Postal = "02451",
+        PhoneNumber = "555-555-5555",
+        PhoneCountryCode = "1"
+    }
+};
 ```
 
 ```java
@@ -523,6 +527,7 @@ using MaxMind.MinFraud;
 using MaxMind.MinFraud.Request;
 using System;
 using System.Collections.Generic;
+using System.Net;
 using System.Threading.Tasks;
 
 public class MinFraudExample
@@ -534,109 +539,112 @@ public class MinFraudExample
 
     static public async Task MinFraudAsync()
     {
-        var transaction = new Transaction(
-            device: new Device(System.Net.IPAddress.Parse("1.1.1.1"),
-                userAgent:
-                "Mozilla/5.0 (X11; Linux x86_64)",
-                acceptLanguage: "en-US,en;q=0.8",
-                sessionAge: 3600,
-                sessionId: "a333a4e127f880d8820e56a66f40717c"
-            ),
-            userEvent:
-            new Event
-            (
-                transactionId: "txn3134133",
-                shopId: "s2123",
-                time: new DateTimeOffset(2014, 4, 12, 23, 20, 50, 52, new TimeSpan(0)),
-                type: EventType.Purchase
-            ),
-            account:
-            new Account(
-                userId: "3132",
-                username: "fred"
-            ),
-            email:
-            new Email(
-                address: "test@maxmind.com",
-                domain: "maxmind.com"
-            ),
-            billing:
-            new Billing(
-                address: "1 Billing Address St.",
-                firstName: "First",
-                lastName: "Last",
-                company: "Company, Inc.",
-                address2: "Unit 1",
-                city: "Waltham",
-                region: "MA",
-                country: "US",
-                postal: "02451",
-                phoneNumber: "555-555-5555",
-                phoneCountryCode: "1"
-            ),
-            shipping:
-            new Shipping(
-                firstName: "First",
-                lastName: "Last",
-                company: "Company Inc.",
-                address: "1 Shipping Address St.",
-                address2: "Unit 1",
-                city: "Waltham",
-                region: "MA",
-                country: "US",
-                postal: "02451",
-                phoneNumber: "555-555-5555",
-                phoneCountryCode: "1",
-                deliverySpeed: ShippingDeliverySpeed.SameDay
-            ),
-            payment:
-            new Payment(
-                processor: PaymentProcessor.Stripe,
-                wasAuthorized: false,
-                declineCode: "invalid number"
-            ),
-            creditCard:
-            new CreditCard(
-                issuerIdNumber: "411111",
-                bankName: "Test Bank",
-                bankPhoneCountryCode: "1",
-                bankPhoneNumber: "555-555-5555",
-                avsResult: 'Y',
-                cvvResult: 'N',
-                last4Digits: "1234"
-            ),
-            order:
-            new Order(
-                amount: 323.21m,
-                currency: "USD",
-                discountCode: "FIRST",
-                affiliateId: "af12",
-                subaffiliateId: "saf42",
-                referrerUri: new Uri("http://www.amazon.com/")
-            ),
-            shoppingCart: new List<ShoppingCartItem>
+        var transaction = new Transaction
+        {
+            Device = new Device
             {
-                new ShoppingCartItem(
-                    category: "pets",
-                    itemId: "ad23232",
-                    quantity: 2,
-                    price: 20.43m
-                ),
-                new ShoppingCartItem(
-                    category: "beauty",
-                    itemId: "bst112",
-                    quantity: 1,
-                    price: 100.00m
-                )
+                IPAddress = IPAddress.Parse("1.1.1.1"),
+                UserAgent = "Mozilla/5.0 (X11; Linux x86_64)",
+                AcceptLanguage = "en-US,en;q=0.8",
+                SessionAge = 3600,
+                SessionId = "a333a4e127f880d8820e56a66f40717c"
             },
-            customInputs: new CustomInputs.Builder
+            Event = new Event
+            {
+                TransactionId = "txn3134133",
+                ShopId = "s2123",
+                Time = new DateTimeOffset(2014, 4, 12, 23, 20, 50, 52, new TimeSpan(0)),
+                Type = EventType.Purchase
+            },
+            Account = new Account
+            {
+                UserId = "3132",
+                Username = "fred"
+            },
+            Email = new Email
+            {
+                Address = "test@maxmind.com",
+                Domain = "maxmind.com"
+            },
+            Billing = new Billing
+            {
+                FirstName = "First",
+                LastName = "Last",
+                Company = "Company, Inc.",
+                Address = "1 Billing Address St.",
+                Address2 = "Unit 1",
+                City = "Waltham",
+                Region = "MA",
+                Country = "US",
+                Postal = "02451",
+                PhoneNumber = "555-555-5555",
+                PhoneCountryCode = "1"
+            },
+            Shipping = new Shipping
+            {
+                FirstName = "First",
+                LastName = "Last",
+                Company = "Company Inc.",
+                Address = "1 Shipping Address St.",
+                Address2 = "Unit 1",
+                City = "Waltham",
+                Region = "MA",
+                Country = "US",
+                Postal = "02451",
+                PhoneNumber = "555-555-5555",
+                PhoneCountryCode = "1",
+                DeliverySpeed = ShippingDeliverySpeed.SameDay
+            },
+            Payment = new Payment
+            {
+                Processor = PaymentProcessor.Stripe,
+                WasAuthorized = false,
+                DeclineCode = "invalid number"
+            },
+            CreditCard = new CreditCard
+            {
+                IssuerIdNumber = "411111",
+                BankName = "Test Bank",
+                BankPhoneCountryCode = "1",
+                BankPhoneNumber = "555-555-5555",
+                AvsResult = 'Y',
+                CvvResult = 'N',
+                Last4Digits = "1234"
+            },
+            Order = new Order
+            {
+                Amount = 323.21m,
+                Currency = "USD",
+                DiscountCode = "FIRST",
+                AffiliateId = "af12",
+                SubaffiliateId = "saf42",
+                ReferrerUri = new Uri("http://www.amazon.com/")
+            },
+            ShoppingCart = new List<ShoppingCartItem>
+            {
+                new ShoppingCartItem
+                {
+                    Category = "pets",
+                    ItemId = "ad23232",
+                    Quantity = 2,
+                    Price = 20.43m
+                },
+                new ShoppingCartItem
+                {
+                    Category = "beauty",
+                    ItemId = "bst112",
+                    Quantity = 1,
+                    Price = 100.00m
+                }
+            },
+            CustomInputs = new CustomInputs.Builder
             {
                 { "float_input", 12.1d},
                 { "integer_input", 3123},
                 { "string_input", "This is a string input."},
                 { "boolean_input", true},
             }.Build()
-        );
+        };
 
         // If you are making multiple requests, a single WebServiceClient
         // should be shared across requests to allow connection reuse. The

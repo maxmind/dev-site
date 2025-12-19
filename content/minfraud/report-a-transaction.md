@@ -108,16 +108,18 @@ help us understand context are extremely helpful.
 ```csharp
 var client = new WebServiceClient(10, "LICENSEKEY");
 
-var report = new TransactionReport(
-    ipAddress: IPAddress.Parse("1.1.1.1"),
-    tag: TransactionReportTag.Chargeback,
+var report = new TransactionReport
+{
+    IPAddress = IPAddress.Parse("1.1.1.1"),
+    Tag = TransactionReportTag.Chargeback,
 
     // The following key/values are not mandatory but are encouraged
-    maxmindId: "abcd1234",
-    minfraudId: new Guid("01c25cb0-f067-4e02-8ed0-a094c580f5e4"),
-    transactionId: "txn123",
-    chargebackCode: "BL",
-    notes: "Suspicious account behavior");
+    MaxMindId = "abcd1234",
+    MinFraudId = new Guid("01c25cb0-f067-4e02-8ed0-a094c580f5e4"),
+    TransactionId = "txn123",
+    ChargebackCode = "BL",
+    Notes = "Suspicious account behavior"
+};
 
 await client.ReportAsync(report);
 ```
