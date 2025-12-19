@@ -106,7 +106,10 @@ help us understand context are extremely helpful.
 {{< codeset >}}
 
 ```csharp
-var client = new WebServiceClient(10, "LICENSEKEY");
+int accountId = 10;
+string licenseKey = "LICENSEKEY";
+
+var client = new WebServiceClient(accountId, licenseKey);
 
 var report = new TransactionReport
 {
@@ -125,7 +128,10 @@ await client.ReportAsync(report);
 ```
 
 ```java
-WebServiceClient client = new WebServiceClient.Builder(10, "LICENSEKEY").build();
+int accountId = 10;
+String licenseKey = "LICENSEKEY";
+
+WebServiceClient client = new WebServiceClient.Builder(accountId, licenseKey).build();
 
 TransactionReport transaction = new TransactionReport.Builder(InetAddress.getByName("1.1.1.1"), Tag.Chargeback)
     // The following key/values are not mandatory but are encouraged
@@ -142,7 +148,10 @@ client.reportTransaction(transaction);
 ```javascript
 import * as minFraud from '@maxmind/minfraud-api-node';
 
-const client = new minFraud.Client('10', 'LICENSEKEY');
+const accountId = '10';
+const licenseKey = 'LICENSEKEY';
+
+const client = new minFraud.Client(accountId, licenseKey);
 
 const transactionReport = new minFraud.TransactionReport({
     ipAddress: '1.1.1.1',
@@ -163,7 +172,10 @@ client.reportTransaction(transactionReport).then(() => ...);
 require_once 'vendor/autoload.php';
 use MaxMind\MinFraud\ReportTransaction;
 
-$rt = new ReportTransaction(10, 'LICENSEKEY');
+$accountId = 10;
+$licenseKey = 'LICENSEKEY';
+
+$rt = new ReportTransaction($accountId, $licenseKey);
 
 $rt->report(
     ipAddress: '1.1.1.1',
@@ -180,7 +192,10 @@ $rt->report(
 ```python
 from minfraud import Client
 
-client = Client(10, 'LICENSEKEY')
+account_id = 10
+license_key = 'LICENSEKEY'
+
+client = Client(account_id, license_key)
 
 transaction_report = {
   'ip_address': '1.1.1.1',
@@ -199,7 +214,7 @@ client.report(transaction_report)
 import asyncio
 from minfraud import AsyncClient
 
-async_client = AsyncClient(10, 'LICENSEKEY')
+async_client = AsyncClient(account_id, license_key)
 
 async def report():
   transaction_report = {

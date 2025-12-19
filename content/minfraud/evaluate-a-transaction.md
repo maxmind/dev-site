@@ -115,31 +115,46 @@ will need
 {{< codeset >}}
 
 ```csharp
-var client = new WebServiceClient(10, "LICENSEKEY");
+int accountId = 10;
+string licenseKey = "LICENSEKEY";
+
+var client = new WebServiceClient(accountId, licenseKey);
 ```
 
 ```java
-WebServiceClient client = new WebServiceClient.Builder(10, "LICENSEKEY").build();
+int accountId = 10;
+String licenseKey = "LICENSEKEY";
+
+WebServiceClient client = new WebServiceClient.Builder(accountId, licenseKey).build();
 ```
 
 ```javascript
 import * as minFraud from '@maxmind/minfraud-api-node';
 
-const client = new minFraud.Client('10', 'LICENSEKEY');
+const accountId = '10';
+const licenseKey = 'LICENSEKEY';
+
+const client = new minFraud.Client(accountId, licenseKey);
 ```
 
 ```php
-$client = new MinFraud(10, 'LICENSEKEY');
+$accountId = 10;
+$licenseKey = 'LICENSEKEY';
+
+$client = new MinFraud($accountId, $licenseKey);
 ```
 
 ```python
 from minfraud import Client, AsyncClient
 
+account_id = 10
+license_key = 'LICENSEKEY'
+
 # If you want to use synchronous requests
-client = Client(10, 'LICENSEKEY')
+client = Client(account_id, license_key)
 
 # Or if you want to use asynchronous requests
-async_client = AsyncClient(10, 'LICENSEKEY')
+async_client = AsyncClient(account_id, license_key)
 ```
 
 ```ruby
