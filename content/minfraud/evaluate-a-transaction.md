@@ -994,7 +994,12 @@ $request = $mf->withDevice(
 # To get the minFraud Factors response model, use ->factors():
 $factorsResponse = $request->factors();
 
-print($factorsResponse->subscores->emailAddress . "\n");
+foreach ($factorsResponse->riskScoreReasons as $riskScoreReason) {
+    print($riskScoreReason->multiplier . "\n");
+    foreach ($riskScoreReason->reasons as $reason) {
+        print($reason->code . ': ' . $reason->reason . "\n");
+    }
+}
 
 # To get the minFraud Insights response model, use ->insights():
 $insightsResponse = $request->insights();
@@ -1234,7 +1239,12 @@ factors_model = assessment.factors.body
 
 factors_model.warnings.each { |w| puts w.warning }
 
-p factors_model.subscores.email_address
+factors_model.risk_score_reasons.each do |risk_score_reason|
+  p risk_score_reason.multiplier
+  risk_score_reason.reasons.each do |reason|
+    p "#{reason.code}: #{reason.reason}"
+  end
+end
 p factors_model.risk_score
 
 # To get the Insights response model, use #insights.
