@@ -83,64 +83,92 @@ additional configuration as demonstrated below:
 {{< codeset >}}
 
 ```csharp
-var client = new WebServiceClient(10, "LICENSEKEY");
+int accountId = 10;
+string licenseKey = "LICENSEKEY";
+
+var client = new WebServiceClient(accountId, licenseKey);
 
 // To query the GeoLite web service, you must set the optional `host` parameter
-to `geolite.info`
-var client = new WebServiceClient(10, "LICENSEKEY", host: "geolite.info");
-
+// to `geolite.info`
+var client = new WebServiceClient(accountId, licenseKey, host: "geolite.info");
 ```
 
 ```java
-WebServiceClient client = new WebServiceClient.Builder(10, "LICENSEKEY").build();
+int accountId = 10;
+String licenseKey = "LICENSEKEY";
+
+WebServiceClient client = new WebServiceClient.Builder(accountId, licenseKey).build();
 
 // To query the GeoLite web service, you must call the `host` method on the
 // builder with "geolite.info"
-WebServiceClient client = new WebServiceClient.Builder(10, "LICENSEKEY").host("geolite.info").build();
+WebServiceClient client = new WebServiceClient.Builder(accountId, licenseKey)
+    .host("geolite.info").build();
 ```
 
 ```javascript
-const client = new WebServiceClient('10', 'LICENSEKEY');
+const WebServiceClient = require('@maxmind/geoip2-node').WebServiceClient;
+// TypeScript:
+// import { WebServiceClient } from '@maxmind/geoip2-node';
+
+const accountId = '10';
+const licenseKey = 'LICENSEKEY';
+
+const client = new WebServiceClient(accountId, licenseKey);
 
 // To query the GeoLite web service, you must set the optional `host` parameter
-const client = new WebServiceClient('10', 'LICENSEKEY', {
+const client = new WebServiceClient(accountId, licenseKey, {
   host: 'geolite.info',
 });
 ```
 
 ```php
-$client = new Client(10, 'LICENSEKEY');
+<?php require_once 'vendor/autoload.php'
+use GeoIp2\WebService\Client;
+
+$account_id = 10;
+$license_key = 'LICENSEKEY';
+
+$client = new Client($account_id, $license_key);
 
 // To query the GeoLite web service, you must set the optional `host` argument.
 // The third argument specifies the language preferences when using the `->name`
 // method on the model classes that this client creates.
-$client = new Client(10, 'LICENSEKEY', ['en'], ['host' => 'geolite.info']);
+$client = new Client($account_id, $license_key, ['en'], ['host' => 'geolite.info']);
 ```
 
 ```python
+import asyncio # for async requests with AsyncClient
+import geoip2.webservice
+
+account_id = 10
+license_key = 'LICENSEKEY'
+
 # If you want to use synchronous requests
-client = Client(10, 'LICENSEKEY');
+client = Client(account_id, license_key)
+
 # To query the GeoLite web service, you must set the "host" keyword argument
 # to "geolite.info"
-client = Client(10, 'LICENSEKEY', host='geolite.info');
+client = Client(account_id, license_key, host='geolite.info')
 
 # Or if you want to use asynchronous requests
-async_client = AsyncClient(10, 'LICENSEKEY');
+async_client = AsyncClient(account_id, license_key)
 
 # To query the GeoLite web service, you must set the "host" keyword argument
 # to "geolite.info"
-async_client = AsyncClient(10, 'LICENSEKEY', host='geolite.info');
+async_client = AsyncClient(account_id, license_key, host='geolite.info')
 ```
 
 ```ruby
-Minfraud.configure do |c|
-  c.account_id = 10
-  c.license_key = 'LICENSEKEY'
+require 'maxmind/geoip2'
+
+client = MaxMind::GeoIP2::Client.new(
+  account_id: 10,
+  license_key: 'LICENSEKEY',
 
   # To use the GeoLite web service instead of GeoIP, set the host
   # parameter to "geolite.info", eg:
-  # host: 'geolite.info'
-end
+  # host: 'geolite.info',
+)
 ```
 
 {{< /codeset >}}
@@ -158,8 +186,11 @@ method for accessing the desired geolocation service.
 // should be shared across requests to allow connection reuse. The
 // class is thread safe.
 
+int accountId = 10;
+string licenseKey = "LICENSEKEY";
+
 // Sync
-using (var client = new WebServiceClient(10, "license_key"))
+using (var client = new WebServiceClient(accountId, licenseKey))
 {
     // You can also use `client.City` or `client.Insights`
     // `client.Insights` is not available to GeoLite users
@@ -171,7 +202,7 @@ using (var client = new WebServiceClient(10, "license_key"))
 }
 
 // Async
-using (var client = new WebServiceClient(10, "license_key"))
+using (var client = new WebServiceClient(accountId, licenseKey))
 {
     // You can also use `client.CityAsync` or `client.InsightsAsync`
     // `client.InsightsAsync` is not available to GeoLite users
@@ -184,7 +215,10 @@ using (var client = new WebServiceClient(10, "license_key"))
 ```
 
 ```java
-try (WebServiceClient client = new WebServiceClient.Builder(42, "license_key")
+int accountId = 10;
+String licenseKey = "LICENSEKEY";
+
+try (WebServiceClient client = new WebServiceClient.Builder(accountId, licenseKey)
         .build()) {
 
     InetAddress ipAddress = InetAddress.getByName("128.101.101.101");
@@ -216,7 +250,10 @@ client.country('142.1.1.1').then((response) => {
 <?php require_once 'vendor/autoload.php'
 use GeoIp2\WebService\Client;
 
-$client = new Client(10, 'LICENSEKEY');
+$account_id = 10;
+$license_key = 'LICENSEKEY';
+
+$client = new Client($account_id, $license_key);
 
 // You can also use `$client->city` or `$client->insights`
 // `$client->insights` is not available to GeoLite users
@@ -229,7 +266,10 @@ print($record->country->isoCode . "\n");
 # Sync
 import geoip2.webservice
 
-with geoip2.webservice.Client(10, 'license_key') as client:
+account_id = 10
+license_key = 'LICENSEKEY'
+
+with geoip2.webservice.Client(account_id, license_key) as client:
   # You can also use `client.city` or `client.insights`
   # `client.insights` is not available to GeoLite users
   response = client.country('128.101.101.101)
@@ -241,7 +281,7 @@ import asyncio
 import geoip2.webservice
 
 async def main():
-  async with geoip2.webservice.AsyncClient(10, 'license_key') as client:
+  async with geoip2.webservice.AsyncClient(account_id, license_key) as client:
     # You can also use `client.city` or `client.insights`
     # `client.insights` is not available to GeoLite users
     response = await client.country('128.101.101.101)
@@ -254,13 +294,13 @@ asyncio.run(main())
 ```ruby
 require 'maxmind/geoip2'
 
-Minfraud.configure do |c|
-  c.account_id = 10
-  c.license_key = 'LICENSEKEY'
-end
+client = MaxMind::GeoIP2::Client.new(
+  account_id: 10,
+  license_key: 'LICENSEKEY',
+)
 
-# You can also use `client.city` or `client.insights`
-# `client.insights` is not available to GeoLite users
+# You can also use `client.city` or `client.insights`.
+# Note that `client.insights` is not available to GeoLite users.
 record = client.country('128.101.101.101')
 
 puts record.country.iso_code
