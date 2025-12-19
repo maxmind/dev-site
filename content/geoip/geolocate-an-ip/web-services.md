@@ -32,7 +32,7 @@ Install-Package MaxMind.GeoIP2
 <dependency>
   <groupId>com.maxmind.geoip2</groupId>
   <artifactId>geoip2</artifactId>
-  <version>2.15.0</version>
+  <version>5.0.2</version>
 </dependency>
 
 // Or install via Gradle
@@ -40,7 +40,7 @@ repositories {
   mavenCentral()
 }
 dependencies {
-  compile 'com.maxmind.geoip2:geoip2:2.15.0'
+  implementation 'com.maxmind.geoip2:geoip2:5.0.2'
 }
 ```
 
@@ -238,6 +238,11 @@ try (WebServiceClient client = new WebServiceClient.Builder(accountId, licenseKe
 const WebServiceClient = require('@maxmind/geoip2-node').WebServiceClient;
 // Typescript:
 // import { WebServiceClient } from '@maxmind/geoip2-node';
+
+const accountId = '10';
+const licenseKey = 'LICENSEKEY';
+
+const client = new WebServiceClient(accountId, licenseKey);
 
 // You can also use `client.city` or `client.insights`
 // `client.insights` is not available to GeoLite users

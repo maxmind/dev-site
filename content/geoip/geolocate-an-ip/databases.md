@@ -29,7 +29,7 @@ Install-Package MaxMind.GeoIP2
 <dependency>
   <groupId>com.maxmind.geoip2</groupId>
   <artifactId>geoip2</artifactId>
-  <version>2.15.0</version>
+  <version>5.0.2</version>
 </dependency>
 
 // Or install via Gradle
@@ -37,7 +37,7 @@ repositories {
   mavenCentral()
 }
 dependencies {
-  compile 'com.maxmind.geoip2:geoip2:2.15.0'
+  implementation 'com.maxmind.geoip2:geoip2:5.0.2'
 }
 ```
 
