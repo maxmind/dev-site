@@ -133,18 +133,25 @@ $client = new Client($account_id, $license_key, ['en'], ['host' => 'geolite.info
 ```
 
 ```python
+import asyncio # for async requests with AsyncClient
+import geoip2.webservice
+
+account_id = 10
+license_key = 'LICENSEKEY'
+
 # If you want to use synchronous requests
-client = Client(10, 'LICENSEKEY');
+client = Client(account_id, license_key)
+
 # To query the GeoLite web service, you must set the "host" keyword argument
 # to "geolite.info"
-client = Client(10, 'LICENSEKEY', host='geolite.info');
+client = Client(account_id, license_key, host='geolite.info')
 
 # Or if you want to use asynchronous requests
-async_client = AsyncClient(10, 'LICENSEKEY');
+async_client = AsyncClient(account_id, license_key)
 
 # To query the GeoLite web service, you must set the "host" keyword argument
 # to "geolite.info"
-async_client = AsyncClient(10, 'LICENSEKEY', host='geolite.info');
+async_client = AsyncClient(account_id, license_key, host='geolite.info')
 ```
 
 ```ruby
@@ -250,7 +257,10 @@ print($record->country->isoCode . "\n");
 # Sync
 import geoip2.webservice
 
-with geoip2.webservice.Client(10, 'license_key') as client:
+account_id = 10
+license_key = 'LICENSEKEY'
+
+with geoip2.webservice.Client(account_id, license_key) as client:
   # You can also use `client.city` or `client.insights`
   # `client.insights` is not available to GeoLite users
   response = client.country('128.101.101.101)
@@ -262,7 +272,7 @@ import asyncio
 import geoip2.webservice
 
 async def main():
-  async with geoip2.webservice.AsyncClient(10, 'license_key') as client:
+  async with geoip2.webservice.AsyncClient(account_id, license_key) as client:
     # You can also use `client.city` or `client.insights`
     # `client.insights` is not available to GeoLite users
     response = await client.country('128.101.101.101)
