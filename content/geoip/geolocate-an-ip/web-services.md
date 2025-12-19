@@ -118,12 +118,18 @@ const client = new WebServiceClient(accountId, licenseKey, {
 ```
 
 ```php
-$client = new Client(10, 'LICENSEKEY');
+<?php require_once 'vendor/autoload.php'
+use GeoIp2\WebService\Client;
+
+$account_id = 10;
+$license_key = 'LICENSEKEY';
+
+$client = new Client($account_id, $license_key);
 
 // To query the GeoLite web service, you must set the optional `host` argument.
 // The third argument specifies the language preferences when using the `->name`
 // method on the model classes that this client creates.
-$client = new Client(10, 'LICENSEKEY', ['en'], ['host' => 'geolite.info']);
+$client = new Client($account_id, $license_key, ['en'], ['host' => 'geolite.info']);
 ```
 
 ```python
@@ -228,7 +234,10 @@ client.country('142.1.1.1').then((response) => {
 <?php require_once 'vendor/autoload.php'
 use GeoIp2\WebService\Client;
 
-$client = new Client(10, 'LICENSEKEY');
+$account_id = 10;
+$license_key = 'LICENSEKEY';
+
+$client = new Client($account_id, $license_key);
 
 // You can also use `$client->city` or `$client->insights`
 // `$client->insights` is not available to GeoLite users
