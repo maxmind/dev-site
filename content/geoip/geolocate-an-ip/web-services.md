@@ -83,12 +83,14 @@ additional configuration as demonstrated below:
 {{< codeset >}}
 
 ```csharp
-var client = new WebServiceClient(10, "LICENSEKEY");
+int accountId = 10;
+string licenseKey = "LICENSEKEY";
+
+var client = new WebServiceClient(accountId, licenseKey);
 
 // To query the GeoLite web service, you must set the optional `host` parameter
-to `geolite.info`
-var client = new WebServiceClient(10, "LICENSEKEY", host: "geolite.info");
-
+// to `geolite.info`
+var client = new WebServiceClient(accountId, licenseKey, host: "geolite.info");
 ```
 
 ```java
@@ -158,8 +160,11 @@ method for accessing the desired geolocation service.
 // should be shared across requests to allow connection reuse. The
 // class is thread safe.
 
+int accountId = 10;
+string licenseKey = "LICENSEKEY";
+
 // Sync
-using (var client = new WebServiceClient(10, "license_key"))
+using (var client = new WebServiceClient(accountId, licenseKey))
 {
     // You can also use `client.City` or `client.Insights`
     // `client.Insights` is not available to GeoLite users
@@ -171,7 +176,7 @@ using (var client = new WebServiceClient(10, "license_key"))
 }
 
 // Async
-using (var client = new WebServiceClient(10, "license_key"))
+using (var client = new WebServiceClient(accountId, licenseKey))
 {
     // You can also use `client.CityAsync` or `client.InsightsAsync`
     // `client.InsightsAsync` is not available to GeoLite users
