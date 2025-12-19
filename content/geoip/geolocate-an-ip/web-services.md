@@ -102,10 +102,17 @@ WebServiceClient client = new WebServiceClient.Builder(10, "LICENSEKEY").host("g
 ```
 
 ```javascript
-const client = new WebServiceClient('10', 'LICENSEKEY');
+const WebServiceClient = require('@maxmind/geoip2-node').WebServiceClient;
+// TypeScript:
+// import { WebServiceClient } from '@maxmind/geoip2-node';
+
+const accountId = '10';
+const licenseKey = 'LICENSEKEY';
+
+const client = new WebServiceClient(accountId, licenseKey);
 
 // To query the GeoLite web service, you must set the optional `host` parameter
-const client = new WebServiceClient('10', 'LICENSEKEY', {
+const client = new WebServiceClient(accountId, licenseKey, {
   host: 'geolite.info',
 });
 ```
