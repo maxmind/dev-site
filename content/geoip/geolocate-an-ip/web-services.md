@@ -94,11 +94,15 @@ var client = new WebServiceClient(accountId, licenseKey, host: "geolite.info");
 ```
 
 ```java
-WebServiceClient client = new WebServiceClient.Builder(10, "LICENSEKEY").build();
+int accountId = 10;
+String licenseKey = "LICENSEKEY";
+
+WebServiceClient client = new WebServiceClient.Builder(accountId, licenseKey).build();
 
 // To query the GeoLite web service, you must call the `host` method on the
 // builder with "geolite.info"
-WebServiceClient client = new WebServiceClient.Builder(10, "LICENSEKEY").host("geolite.info").build();
+WebServiceClient client = new WebServiceClient.Builder(accountId, licenseKey)
+    .host("geolite.info").build();
 ```
 
 ```javascript
@@ -211,7 +215,10 @@ using (var client = new WebServiceClient(accountId, licenseKey))
 ```
 
 ```java
-try (WebServiceClient client = new WebServiceClient.Builder(42, "license_key")
+int accountId = 10;
+String licenseKey = "LICENSEKEY";
+
+try (WebServiceClient client = new WebServiceClient.Builder(accountId, licenseKey)
         .build()) {
 
     InetAddress ipAddress = InetAddress.getByName("128.101.101.101");
