@@ -88,7 +88,7 @@ yarn add @maxmind/minfraud-api-node
 
 ```php
 # Install via Composer
-composer require maxmind/minfraud:~1.0
+composer require maxmind/minfraud:~3.0
 ```
 
 ```python
@@ -301,38 +301,38 @@ try {
 ```
 
 ```php
-$request = $client->withDevice([
-    'ip_address'  => '1.1.1.1',
-])->withBilling([
-    'first_name'         => 'First',
-    'last_name'          => 'Last',
-    'company'            => 'Company',
-    'address'            => '1 Billing Address St.',
-    'address_2'          => 'Unit 1',
-    'city'               => 'Waltham',
-    'region'             => 'MA',
-    'country'            => 'US',
-    'postal'             => '02451',
-    'phone_number'       => '555-555-5555',
-    'phone_country_code' => '1',
-])->withCreditCard([
-    'issuer_id_number'        => '411111',
-])->withEmail([
-    'address' => 'test@maxmind.com',
-    'domain'  => 'maxmind.com',
-])->withShipping([
-    'first_name'         => 'First',
-    'last_name'          => 'Last',
-    'company'            => 'Company',
-    'address'            => '1 Shipping Address St.',
-    'address_2'          => 'Unit 1',
-    'city'               => 'Waltham',
-    'region'             => 'MA',
-    'country'            => 'US',
-    'postal'             => '02451',
-    'phone_number'       => '555-555-5555',
-    'phone_country_code' => '1',
-]);
+$request = $client->withDevice(
+    ipAddress: '1.1.1.1'
+)->withBilling(
+    firstName: 'First',
+    lastName: 'Last',
+    company: 'Company',
+    address: '1 Billing Address St.',
+    address2: 'Unit 1',
+    city: 'Waltham',
+    region: 'MA',
+    country: 'US',
+    postal: '02451',
+    phoneNumber: '555-555-5555',
+    phoneCountryCode: '1'
+)->withCreditCard(
+    issuerIdNumber: '411111'
+)->withEmail(
+    address: 'test@maxmind.com',
+    domain: 'maxmind.com'
+)->withShipping(
+    firstName: 'First',
+    lastName: 'Last',
+    company: 'Company',
+    address: '1 Shipping Address St.',
+    address2: 'Unit 1',
+    city: 'Waltham',
+    region: 'MA',
+    country: 'US',
+    postal: '02451',
+    phoneNumber: '555-555-5555',
+    phoneCountryCode: '1'
+);
 ```
 
 ```python
@@ -896,81 +896,80 @@ $mf = new MinFraud(1, 'ABCD567890');
 # Note that each ->with*() call returns a new immutable object. This means
 # that if you separate the calls into separate statements without chaining,
 # you should assign the return value to a variable each time.
-$request = $mf->withDevice([
-    'ip_address'  => '1.1.1.1',
-    'session_age' => 3600.5,
-    'session_id'  => 'foobar',
-    'user_agent'  =>
-        'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.89 Safari/537.36',
-    'accept_language' => 'en-US,en;q=0.8',
-])->withEvent([
-    'transaction_id' => 'txn3134133',
-    'shop_id'        => 's2123',
-    'time'           => '2012-04-12T23:20:50+00:00',
-    'type'           => 'purchase',
-])->withAccount([
-    'user_id'      => 3132,
-    'username_md5' => '4f9726678c438914fa04bdb8c1a24088',
-])->withEmail([
-    'address' => 'test@maxmind.com',
-    'domain'  => 'maxmind.com',
-])->withBilling([
-    'first_name'         => 'First',
-    'last_name'          => 'Last',
-    'company'            => 'Company',
-    'address'            => '1 Billing Address St.',
-    'address_2'          => 'Unit 1',
-    'city'               => 'Waltham',
-    'region'             => 'MA',
-    'country'            => 'US',
-    'postal'             => '02451',
-    'phone_number'       => '555-555-5555',
-    'phone_country_code' => '1',
-])->withShipping([
-    'first_name'         => 'First',
-    'last_name'          => 'Last',
-    'company'            => 'Company',
-    'address'            => '1 Shipping Address St.',
-    'address_2'          => 'Unit 1',
-    'city'               => 'Waltham',
-    'region'             => 'MA',
-    'country'            => 'US',
-    'postal'             => '02451',
-    'phone_number'       => '555-555-5555',
-    'phone_country_code' => '1',
-    'delivery_speed'     => 'same_day',
-])->withPayment([
-    'processor'             => 'stripe',
-    'was_authorized'        => false,
-    'decline_code'          => 'invalid number',
-])->withCreditCard([
-    'issuer_id_number'        => '411111',
-    'last_digits'             => '1234',
-    'bank_name'               => 'Test Bank',
-    'bank_phone_country_code' => '1',
-    'bank_phone_number'       => '555-555-5555',
-    'avs_result'              => 'Y',
-    'cvv_result'              => 'N',
-])->withOrder([
-    'amount'           => 323.21,
-    'currency'         => 'USD',
-    'discount_code'    => 'FIRST',
-    'is_gift'          => true,
-    'has_gift_message' => false,
-    'affiliate_id'     => 'af12',
-    'subaffiliate_id'  => 'saf42',
-    'referrer_uri'     => 'http://www.amazon.com/',
-])->withShoppingCartItem([
-    'category' => 'pets',
-    'item_id'  => 'leash-0231',
-    'quantity' => 2,
-    'price'    => 20.43,
-])->withShoppingCartItem([
-    'category' => 'beauty',
-    'item_id'  => 'msc-1232',
-    'quantity' => 1,
-    'price'    => 100.00,
-])->withCustomInputs([
+$request = $mf->withDevice(
+    ipAddress: '1.1.1.1',
+    sessionAge: 3600.5,
+    sessionId: 'foobar',
+    userAgent: 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.89 Safari/537.36',
+    acceptLanguage: 'en-US,en;q=0.8'
+)->withEvent(
+    transactionId: 'txn3134133',
+    shopId: 's2123',
+    time: '2012-04-12T23:20:50+00:00',
+    type: 'purchase'
+)->withAccount(
+    userId: 3132,
+    usernameMd5: '4f9726678c438914fa04bdb8c1a24088'
+)->withEmail(
+    address: 'test@maxmind.com',
+    domain: 'maxmind.com'
+)->withBilling(
+    firstName: 'First',
+    lastName: 'Last',
+    company: 'Company',
+    address: '1 Billing Address St.',
+    address2: 'Unit 1',
+    city: 'Waltham',
+    region: 'MA',
+    country: 'US',
+    postal: '02451',
+    phoneNumber: '555-555-5555',
+    phoneCountryCode: '1'
+)->withShipping(
+    firstName: 'First',
+    lastName: 'Last',
+    company: 'Company',
+    address: '1 Shipping Address St.',
+    address2: 'Unit 1',
+    city: 'Waltham',
+    region: 'MA',
+    country: 'US',
+    postal: '02451',
+    phoneNumber: '555-555-5555',
+    phoneCountryCode: '1',
+    deliverySpeed: 'same_day'
+)->withPayment(
+    processor: 'stripe',
+    wasAuthorized: false,
+    declineCode: 'invalid number'
+)->withCreditCard(
+    issuerIdNumber: '411111',
+    lastDigits: '1234',
+    bankName: 'Test Bank',
+    bankPhoneCountryCode: '1',
+    bankPhoneNumber: '555-555-5555',
+    avsResult: 'Y',
+    cvvResult: 'N'
+)->withOrder(
+    amount: 323.21,
+    currency: 'USD',
+    discountCode: 'FIRST',
+    isGift: true,
+    hasGiftMessage: false,
+    affiliateId: 'af12',
+    subaffiliateId: 'saf42',
+    referrerUri: 'http://www.amazon.com/'
+)->withShoppingCartItem(
+    category: 'pets',
+    itemId: 'leash-0231',
+    quantity: 2,
+    price: 20.43
+)->withShoppingCartItem(
+    category: 'beauty',
+    itemId: 'msc-1232',
+    quantity: 1,
+    price: 100.00
+)->withCustomInputs([
     'section'            => 'news',
     'previous_purchases' => 19,
     'discount'           => 3.2,
@@ -980,7 +979,7 @@ $request = $mf->withDevice([
 # To get the minFraud Factors response model, use ->factors():
 $factorsResponse = $request->factors();
 
-print($factorsResponse->subscores->email . "\n");
+print($factorsResponse->subscores->emailAddress . "\n");
 
 # To get the minFraud Insights response model, use ->insights():
 $insightsResponse = $request->insights();

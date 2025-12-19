@@ -62,7 +62,7 @@ yarn add @maxmind/minfraud-api-node
 
 ```php
 # Install via Composer
-composer require maxmind/minfraud:~1.0
+composer require maxmind/minfraud:~3.0
 ```
 
 ```python
@@ -165,16 +165,16 @@ use MaxMind\MinFraud\ReportTransaction;
 
 $rt = new ReportTransaction(10, 'LICENSEKEY');
 
-$rt->report([
-    'ip_address'      => '1.1.1.1',
-    'tag'             => 'chargeback',
+$rt->report(
+    ipAddress: '1.1.1.1',
+    tag: 'chargeback',
     // The following key/values are not mandatory but are encouraged
-    'maxmind_id'      => 'abcd1234',
-    'minfraud_id'     => '01c25cb0-f067-4e02-8ed0-a094c580f5e4',
-    'transaction_id'  => 'txn123',
-    'chargeback_code' => 'BL',
-    'notes'           => 'Suspicious account behavior',
-]);
+    maxmindId: 'abcd1234',
+    minfraudId: '01c25cb0-f067-4e02-8ed0-a094c580f5e4',
+    transactionId: 'txn123',
+    chargebackCode: 'BL',
+    notes: 'Suspicious account behavior'
+);
 ```
 
 ```python
