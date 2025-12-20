@@ -624,7 +624,7 @@ public class MinFraudExample
                 BankPhoneNumber = "555-555-5555",
                 AvsResult = 'Y',
                 CvvResult = 'N',
-                Last4Digits = "1234"
+                LastDigits = "1234"
             },
             Order = new Order
             {
@@ -711,7 +711,7 @@ Transaction request = new Transaction.Builder(
             .bankPhoneNumber("555-555-5555")
             .cvvResult('Y')
             .issuerIdNumber("411111")
-            .last4Digits("1234")
+            .lastDigits("1234")
             .build()
     ).email(
         new Email.Builder()
@@ -855,7 +855,7 @@ try {
       bankPhoneNumber: '555-555-5555',
       cvvResult: 'B',
       issuerIdNumber: '411111',
-      last4digits: '1234',
+      lastDigits: '1234',
       token: 'a_token',
     }),
     order: new minFraud.Order({
