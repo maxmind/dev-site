@@ -111,8 +111,8 @@ InetAddress ipAddress = InetAddress.getByName("128.101.101.101");
 
 CityResponse response = reader.city(ipAddress);
 
-Country country = response.getCountry();
-System.out.println(country.getIsoCode());
+Country country = response.country();
+System.out.println(country.isoCode());
 
 ```
 

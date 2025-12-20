@@ -227,10 +227,10 @@ try (WebServiceClient client = new WebServiceClient.Builder(accountId, licenseKe
     // `client.insights` is not available to GeoLite users
     CountryResponse response = client.country(ipAddress);
 
-    Country country = response.getCountry();
-    System.out.println(country.getIsoCode());            // 'US'
-    System.out.println(country.getName());               // 'United States'
-    System.out.println(country.getNames().get("zh-CN")); // '美国'
+    Country country = response.country();
+    System.out.println(country.isoCode());            // 'US'
+    System.out.println(country.name());               // 'United States'
+    System.out.println(country.names().get("zh-CN")); // '美国'
 }
 ```
 
