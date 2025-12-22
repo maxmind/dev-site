@@ -29,7 +29,7 @@ Install-Package MaxMind.GeoIP2
 <dependency>
   <groupId>com.maxmind.geoip2</groupId>
   <artifactId>geoip2</artifactId>
-  <version>2.15.0</version>
+  <version>5.0.2</version>
 </dependency>
 
 // Or install via Gradle
@@ -37,7 +37,7 @@ repositories {
   mavenCentral()
 }
 dependencies {
-  compile 'com.maxmind.geoip2:geoip2:2.15.0'
+  implementation 'com.maxmind.geoip2:geoip2:5.0.2'
 }
 ```
 
@@ -51,7 +51,7 @@ yarn add @maxmind/geoip2-node
 
 ```php
 # Install via Composer
-composer require geoip2/geoip2:~2.0
+composer require geoip2/geoip2:~3.0
 ```
 
 ```python
@@ -111,8 +111,8 @@ InetAddress ipAddress = InetAddress.getByName("128.101.101.101");
 
 CityResponse response = reader.city(ipAddress);
 
-Country country = response.getCountry();
-System.out.println(country.getIsoCode());
+Country country = response.country();
+System.out.println(country.isoCode());
 
 ```
 
@@ -136,7 +136,7 @@ const dbBuffer = fs.readFileSync('/path/to/maxmind-database.mmdb');
 // expensive.
 const reader = Reader.openBuffer(dbBuffer);
 
-response = reader.city('128.101.101.101');
+const response = reader.city('128.101.101.101');
 
 console.log(response.country.isoCode);
 ```
@@ -161,7 +161,7 @@ import geoip2.database
 # This reader object should be reused across lookups as creation of it is
 # expensive.
 with geoip2.database.Reader('/path/to/maxmind-database.mmdb') as reader:
-    response = reader.city('128.101.101.101');
+    response = reader.city('128.101.101.101')
     print(response.country.iso_code)
 ```
 

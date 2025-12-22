@@ -40,7 +40,7 @@ Install-Package MaxMind.MinFraud
 <dependency>
   <groupId>com.maxmind.minfraud</groupId>
   <artifactId>minfraud</artifactId>
-  <version>1.15.0</version>
+  <version>4.0.0</version>
 </dependency>
 
 // Or install via Gradle
@@ -48,7 +48,7 @@ repositories {
   mavenCentral()
 }
 dependencies {
-  compile 'com.maxmind.minfraud:minfraud:1.15.0'
+  implementation 'com.maxmind.minfraud:minfraud:4.0.0'
 }
 ```
 
@@ -62,7 +62,7 @@ yarn add @maxmind/minfraud-api-node
 
 ```php
 # Install via Composer
-composer require maxmind/minfraud:~1.0
+composer require maxmind/minfraud:~3.0
 ```
 
 ```python
@@ -106,24 +106,32 @@ help us understand context are extremely helpful.
 {{< codeset >}}
 
 ```csharp
-var client = new WebServiceClient(10, "LICENSEKEY");
+int accountId = 10;
+string licenseKey = "LICENSEKEY";
 
-var report = new TransactionReport(
-    ipAddress: IPAddress.Parse("1.1.1.1"),
-    tag: TransactionReportTag.Chargeback,
+var client = new WebServiceClient(accountId, licenseKey);
+
+var report = new TransactionReport
+{
+    IPAddress = IPAddress.Parse("1.1.1.1"),
+    Tag = TransactionReportTag.Chargeback,
 
     // The following key/values are not mandatory but are encouraged
-    maxmindId: "abcd1234",
-    minfraudId: new Guid("01c25cb0-f067-4e02-8ed0-a094c580f5e4"),
-    transactionId: "txn123");
-    chargebackCode: "BL",
-    notes: "Suspicious account behavior",
+    MaxMindId = "abcd1234",
+    MinFraudId = new Guid("01c25cb0-f067-4e02-8ed0-a094c580f5e4"),
+    TransactionId = "txn123",
+    ChargebackCode = "BL",
+    Notes = "Suspicious account behavior"
+};
 
 await client.ReportAsync(report);
 ```
 
 ```java
-WebServiceClient client = new WebServiceClient.Builder(10, "LICENSEKEY").build();
+int accountId = 10;
+String licenseKey = "LICENSEKEY";
+
+WebServiceClient client = new WebServiceClient.Builder(accountId, licenseKey).build();
 
 TransactionReport transaction = new TransactionReport.Builder(InetAddress.getByName("1.1.1.1"), Tag.Chargeback)
     // The following key/values are not mandatory but are encouraged
@@ -140,7 +148,10 @@ client.reportTransaction(transaction);
 ```javascript
 import * as minFraud from '@maxmind/minfraud-api-node';
 
-const client = new minFraud.Client('10', 'LICENSEKEY');
+const accountId = '10';
+const licenseKey = 'LICENSEKEY';
+
+const client = new minFraud.Client(accountId, licenseKey);
 
 const transactionReport = new minFraud.TransactionReport({
     ipAddress: '1.1.1.1',
@@ -150,7 +161,7 @@ const transactionReport = new minFraud.TransactionReport({
     maxmindId: 'abcd1234',
     minfraudId: '01c25cb0-f067-4e02-8ed0-a094c580f5e4',
     transactionId: 'txn123',
-    chargebackCode: 'BL'
+    chargebackCode: 'BL',
     notes: 'Suspicious account behavior',
   });
 
@@ -161,30 +172,36 @@ client.reportTransaction(transactionReport).then(() => ...);
 require_once 'vendor/autoload.php';
 use MaxMind\MinFraud\ReportTransaction;
 
-$rt = new ReportTransaction(10, 'LICENSEKEY');
+$accountId = 10;
+$licenseKey = 'LICENSEKEY';
 
-$rt->report([
-    'ip_address'      => '1.1.1.1',
-    'tag'             => 'chargeback',
+$rt = new ReportTransaction($accountId, $licenseKey);
+
+$rt->report(
+    ipAddress: '1.1.1.1',
+    tag: 'chargeback',
     // The following key/values are not mandatory but are encouraged
-    'maxmind_id'      => 'abcd1234',
-    'minfraud_id'     => '01c25cb0-f067-4e02-8ed0-a094c580f5e4',
-    'transaction_id'  => 'txn123',
-    'chargeback_code' => 'BL',
-    'notes'           => 'Suspicious account behavior',
-]);
+    maxmindId: 'abcd1234',
+    minfraudId: '01c25cb0-f067-4e02-8ed0-a094c580f5e4',
+    transactionId: 'txn123',
+    chargebackCode: 'BL',
+    notes: 'Suspicious account behavior'
+);
 ```
 
 ```python
 from minfraud import Client
 
-client = Client(10, 'LICENSEKEY');
+account_id = 10
+license_key = 'LICENSEKEY'
+
+client = Client(account_id, license_key)
 
 transaction_report = {
   'ip_address': '1.1.1.1',
   'tag': 'chargeback',
   # The following key/values are not mandatory but are encouraged
-  'maxmind_id': 'abcd1234'
+  'maxmind_id': 'abcd1234',
   'minfraud_id': '01c25cb0-f067-4e02-8ed0-a094c580f5e4',
   'transaction_id': 'txn123',
   'chargeback_code': 'BL',
@@ -195,16 +212,16 @@ client.report(transaction_report)
 
 # If you want to use asynchronous requests
 import asyncio
-from minfraud import Client
+from minfraud import AsyncClient
 
-async_client = AsyncClient(10, 'LICENSEKEY');
+async_client = AsyncClient(account_id, license_key)
 
 async def report():
   transaction_report = {
     'ip_address': '1.1.1.1',
     'tag': 'chargeback',
     # The following key/values are not mandatory but are encouraged
-    'maxmind_id': 'abcd1234'
+    'maxmind_id': 'abcd1234',
     'minfraud_id': '01c25cb0-f067-4e02-8ed0-a094c580f5e4',
     'transaction_id': 'txn123',
     'chargeback_code': 'BL',
@@ -227,8 +244,8 @@ txn = Minfraud::Components::Report::Transaction.new(
   # The following key/values are not mandatory but are encouraged
   maxmind_id:      'abcd1234',
   minfraud_id:     '01c25cb0-f067-4e02-8ed0-a094c580f5e4',
-  transaction_id:  'txn123'
-  chargeback_code: 'BL'
+  transaction_id:  'txn123',
+  chargeback_code: 'BL',
   notes:           'Suspicious account behavior',
 )
 
