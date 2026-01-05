@@ -2,9 +2,9 @@
 # The year needs to be hardcoded.  A page for the new year's
 # release note won't exist until a new .md file is created in the
 # /content/<product>/release-notes folder for that new year
-/geoip/release-notes /geoip/release-notes/2025/ 302
-/geoip/release-notes/ /geoip/release-notes/2025/ 302
-/geoip/release-notes/rss.xml /geoip/release-notes/2025/index.xml 302
+/geoip/release-notes /geoip/release-notes/2026/ 302
+/geoip/release-notes/ /geoip/release-notes/2026/ 302
+/geoip/release-notes/rss.xml /geoip/release-notes/2026/index.xml 302
 /minfraud/release-notes /minfraud/release-notes/2025/ 302
 /minfraud/release-notes/ /minfraud/release-notes/2025/ 302
 /minfraud/release-notes/rss.xml /minfraud/release-notes/2025/index.xml 302
