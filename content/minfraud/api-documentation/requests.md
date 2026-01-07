@@ -585,6 +585,7 @@ process that was used for the event.
   * `aps_payments`
   * `authorizenet`
   * `balanced`
+  * `banquest`
   * `beanstream`
   * `bluepay`
   * `bluesnap`
@@ -716,6 +717,7 @@ process that was used for the event.
   * `solidtrust_pay`
   * `sps_decidir`
   * `stripe`
+  * `summit_payments`
   * `synapsefi`
   * `systempay`
   * `telerecargas`
@@ -735,6 +737,7 @@ process that was used for the event.
   * `windcave`
   * `wirecard`
   * `worldpay`
+  * `yaadpay`
 
   <!-- cspell: enable -->
 
