@@ -1,0 +1,60 @@
+name: Precious
+permissions:
+  contents: read
+
+on:
+  push:
+    branches:
+      - 'main'
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  code-formatting:
+    runs-on: ubuntu-latest
+    name: Code Formatting
+    steps:
+      - name: Checkout
+        uses: actions/checkout@8e8c483db84b4bee98b60c0593521ed34d9990e8 # v6.0.1
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+
+      - uses: actions/setup-node@395ad3262231945c25e8478fd5baf05154b1d79f # v6.1.0
+        with:
+          cache: 'npm'
+          node-version-file: '.nvmrc'
+
+      - name: Check that package-lock.json is valid JSON
+        run: jq empty package-lock.json
+
+      - run: npm ci
+
+      - name: Fetch base ref
+        if: ${{ github.event.pull_request }}
+        run: |
+          origin="${BASE_REF}:upstream"
+          git fetch origin $origin
+        env:
+          BASE_REF: ${{ github.base_ref }}
+
+      - name: Install precious
+        run: ./bin/install-precious /usr/local/bin
+
+      - run: git diff --name-only --diff-filter=ACM upstream...
+
+      - name: Select files
+        id: select-files
+        run: |
+          if [[ -n "${{ github.event.pull_request.number }}" ]]; then
+            echo 'precious-args=--git-diff-from upstream' >> "$GITHUB_OUTPUT"
+          else
+            echo 'precious-args=--all' >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Lint files
+        run: |
+          args="${PRECIOUS_ARGS}"
+          precious lint $args
+        env:
+          PRECIOUS_ARGS: ${{ steps.select-files.outputs.precious-args }}
