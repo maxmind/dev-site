@@ -281,10 +281,6 @@ For full examples of response bodies, select one of the following:
   The approximate number of queries remaining for the service before your account runs out of funds.
   {{</minfraud-schema-row>}}
 
-  {{< minfraud-schema-row key="queries_remaining" type="response" valueType="integer" valueTypeNote="min: 0" score="true" insights="true" factors="true" >}}
-  The approximate number of queries remaining for the service before your account runs out of funds.
-  {{</minfraud-schema-row>}}
-
   {{< minfraud-schema-row key="ip_address" fragmentOverride="ip-address" type="response" valueType="object" score="true" insights="true" factors="true" >}}
   This object contains IP intelligence data.
   [See more](#ip-address).
