@@ -74,7 +74,7 @@ handle additional data.
 In this tutorial we will be creating a table to hold our network data called
 `geoip2_network`. Note that we will be using PostgreSQL's
 [`cidr`](https://www.postgresql.org/docs/current/datatype-net-types.html) type
-for the `network` column. This will allow us to to query the database more
+for the `network` column. This will allow us to query the database more
 easily.
 
 ```sql
