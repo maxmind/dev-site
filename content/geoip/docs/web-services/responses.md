@@ -601,7 +601,7 @@ with the IP address.
   [Learn more about postal code data on our Knowledge Base.](https://support.maxmind.com/knowledge-base/articles/maxmind-ip-geolocation-data#codes)
   {{</ geoip-schema-row >}}
 
-  {{< geoip-schema-row key="confidence" valueType="integer" valueTypeNote="min: 0 max: 100" insights="true">}}
+  {{< geoip-schema-row key="confidence" valueType="integer" valueTypeNote="min: 0, max: 100" insights="true">}}
   A value from 0-100 representing our confidence that the postal code is correct.
 
   [Learn more about confidence factors on our Knowledge Base.](https://support.maxmind.com/knowledge-base/articles/maxmind-ip-geolocation-data#confidence-factors)
