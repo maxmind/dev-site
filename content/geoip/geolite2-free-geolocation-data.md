@@ -3,7 +3,7 @@ draft: false
 title: GeoLite Databases and Web Services
 ---
 
-MaxMind offers a free geolocation and ASN data in downloadable database and web
+MaxMind offers free geolocation and ASN data in downloadable database and web
 service formats.
 
 <!-- prettier-ignore-start -->
@@ -110,7 +110,7 @@ downloads per day. If you need to download more, please
 [upgrade to GeoIP](https://www.maxmind.com/en/geoip-databases). {{</ alert >}}
 
 The GeoLite End User License Agreement requires all GeoLite users to keep their
-data up- to-date. This means you must delete GeoLite databases within 30 days of
+data up-to-date. This means you must delete GeoLite databases within 30 days of
 a new release. The easiest way to keep your GeoLite data up-to-date is to
 automate downloads and updates.
 
@@ -322,7 +322,7 @@ principles:
 
 ### What can I do with paid MaxMind data?
 
-In addition to IP more accurate geolocation data, MaxMind has paid products that
+In addition to more accurate IP geolocation data, MaxMind has paid products that
 identify various attributes of an IP address, including:
 
 - ISP name (e.g., AT&T Wireless, Amazon, etc.)

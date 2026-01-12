@@ -64,8 +64,8 @@ similar to `risk_score`.
 
 [Download this PDF](https://get.maxmind.com/hubfs/Marketing/minFraud/minFraud%20services%20input_output%20comparison%20table.pdf)
 to get an overview and comparison of all minFraud products' outputs. You can
-also view our [Request API documentation](/minfraud/api-documentation/responses)
-for a complete description of each input.
+also view our [Response API documentation](/minfraud/api-documentation/responses)
+for a complete description of each output.
 
 ### Deprecated Outputs
 

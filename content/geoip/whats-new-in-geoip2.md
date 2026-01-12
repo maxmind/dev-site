@@ -53,7 +53,7 @@ province (Northern Ireland). The second level may be a county, a London borough,
 a unitary authority, council area, etc.
 
 We provide a
-[CSV file which maps FIPS 10-4 region codes to their corresponding ISO 3166-2 subdivision codes](/static/csv//fips-iso-map.csv).
+[CSV file which maps FIPS 10-4 region codes to their corresponding ISO 3166-2 subdivision codes](/static/csv/fips-iso-map.csv).
 Note that codes for the US and Canada are not present since we included ISO
 codes for these countries in GeoIP Legacy. Also note that the CSV file may
 contain outdated ISO 3166-2 subdivision codes in addition to any up-to-date

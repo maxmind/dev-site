@@ -281,10 +281,6 @@ For full examples of response bodies, select one of the following:
   The approximate number of queries remaining for the service before your account runs out of funds.
   {{</minfraud-schema-row>}}
 
-  {{< minfraud-schema-row key="queries_remaining" type="response" valueType="integer" valueTypeNote="min: 0" score="true" insights="true" factors="true" >}}
-  The approximate number of queries remaining for the service before your account runs out of funds.
-  {{</minfraud-schema-row>}}
-
   {{< minfraud-schema-row key="ip_address" fragmentOverride="ip-address" type="response" valueType="object" score="true" insights="true" factors="true" >}}
   This object contains IP intelligence data.
   [See more](#ip-address).
@@ -601,7 +597,7 @@ for more information.
 {{< schema-table key="ip_address--location" >}}
 
   {{< minfraud-schema-row key="local_time" type="response" valueType="string" valueTypeNote="max length: 255" insights="true" factors="true" >}}
-  The date and time of the transaction in the time zone associated with the IP address. The value is formatted according to [RFC 3339](https://datatracker.ietf.org/doc/html/rfc3339). For instance, the local time in Boston might be returned as`2015-04-27T19:17:24-04:00`.
+  The date and time of the transaction in the time zone associated with the IP address. The value is formatted according to [RFC 3339](https://datatracker.ietf.org/doc/html/rfc3339). For instance, the local time in Boston might be returned as `2015-04-27T19:17:24-04:00`.
   {{</minfraud-schema-row>}}
 
 {{</ schema-table >}}
@@ -705,7 +701,7 @@ present in the response.
   {{</minfraud-schema-row>}}
 
   {{< minfraud-schema-row key="is_business" type="response" valueType="boolean"  insights="true" factors="true" >}}
-  This field is `true` if the issuer ID number is for a business card. It is`false` if the issuer ID number is for for a non-business card. The key is only present when a valid issuer ID number has been provided.
+  This field is `true` if the issuer ID number is for a business card. It is `false` if the issuer ID number is for a non-business card. The key is only present when a valid issuer ID number has been provided.
   {{</minfraud-schema-row>}}
 
   {{< minfraud-schema-row key="is_issued_in_billing_address_country" type="response" valueType="boolean"  insights="true" factors="true" >}}
@@ -715,13 +711,13 @@ present in the response.
   {{</minfraud-schema-row>}}
 
   {{< minfraud-schema-row key="is_prepaid" type="response" valueType="boolean"  insights="true" factors="true" >}}
-  This field is `true` if the issuer ID number is for a prepaid card. It is`false` if the issuer ID number is for for a non-prepaid card. The key is only present when a valid issuer ID number has been provided.
+  This field is `true` if the issuer ID number is for a prepaid card. It is `false` if the issuer ID number is for a non-prepaid card. The key is only present when a valid issuer ID number has been provided.
 
   [Learn how to use prepaid card detection for risk analysis on our Knowledge Base.](https://support.maxmind.com/knowledge-base/articles/credit-card-risk-data-minfraud#detection-prepaid-virtual)
   {{</minfraud-schema-row>}}
 
   {{< minfraud-schema-row key="is_virtual" type="response" valueType="boolean"  insights="true" factors="true" >}}
-  This field is `true` if the issuer ID number is for a virtual card. It is`false` if the issuer ID number is for a non-virtual card. The key is only present when a valid issuer ID number has been provided.
+  This field is `true` if the issuer ID number is for a virtual card. It is `false` if the issuer ID number is for a non-virtual card. The key is only present when a valid issuer ID number has been provided.
 
   [Learn how to use virtual card detection for risk analysis on our Knowledge Base.](https://support.maxmind.com/knowledge-base/articles/credit-card-risk-data-minfraud#detection-prepaid-virtual)
   {{</minfraud-schema-row>}}

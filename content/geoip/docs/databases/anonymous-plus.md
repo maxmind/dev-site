@@ -34,8 +34,8 @@ for assistance.
 ### Blocks Files
 
 There are two CSV files for network blocks, one each for IPv4 and IPv6 blocks.
-These are named `GeoIP-Anonymous-Plus-Blocks-Plusv4.csv` and
-`GeoIP-Anonymous-Plus-Blocks-Plusv6.csv` respectively.
+These are named `GeoIP-Anonymous-Plus-Blocks-IPv4.csv` and
+`GeoIP-Anonymous-Plus-Blocks-IPv6.csv` respectively.
 
 {{< rawhtml >}}
 
@@ -168,7 +168,7 @@ These are named `GeoIP-Anonymous-Plus-Blocks-Plusv4.csv` and
           network is currently part of an actively used VPN service.
           <br />
           Currently we will only provide values of 30 and 99, but the number of
-          values will increase as we improve our confidence ratings
+          values will increase as we improve our confidence ratings.
         </td>
       </tr>
 

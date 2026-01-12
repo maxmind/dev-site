@@ -12,7 +12,7 @@ in an automated fashion.
 
 ### Request URI
 
-API calls should be made with HTTP GET request to:
+API calls should be made with an HTTP GET request to:
 `https://api.maxmind.com/privacy/exclusions`
 
 ### Authorization/Security

@@ -48,8 +48,8 @@ you must accept one of the following, substituting the `[SERVICE-TYPE]` with
 either `score`, `insights`, or `factors` as appropriate:
 
 - `application/json`
-- `application/vnd.maxmind.com-minfraud-[SERVICE TYPE]+json`
-- `application/vnd.maxmind.com-minfraud-[SERVICE TYPE]+json; charset=UTF-8; version=2.0`
+- `application/vnd.maxmind.com-minfraud-[SERVICE-TYPE]+json`
+- `application/vnd.maxmind.com-minfraud-[SERVICE-TYPE]+json; charset=UTF-8; version=2.0`
 
 A request for any other MIME type will result in a `415 Unsupported Media Type`
 error.
@@ -361,7 +361,7 @@ the end-user who initiated the event.
   {{</minfraud-schema-row>}}
 
   {{< minfraud-schema-row key="domain" type="request" valueType="string" valueTypeNote="max length: 255" >}}
-  The domain of the email address used in the transaction. Do not include the`@` in this field.
+  The domain of the email address used in the transaction. Do not include the `@` in this field.
 
   You do not need to pass the email domain input unless you are passing the email address as an MD5 hash. [Learn more about hashed email inputs on our Knowledge Base.](https://support.maxmind.com/knowledge-base/articles/passing-email-inputs-minfraud#email-hashing)
   {{</minfraud-schema-row>}}
@@ -376,7 +376,7 @@ the end-user who initiated the event.
 `billing` is a JSON object that contains the billing address and contact
 information provided by the end-user who initiated the event.
 
-[Learn more about the billing address inputs on our Knowledge Base.](https://support.maxmind.com/knowledge-base/articles/billing-and-shipping-inputs-minfraud#shipping-address)
+[Learn more about the billing address inputs on our Knowledge Base.](https://support.maxmind.com/knowledge-base/articles/billing-and-shipping-inputs-minfraud#billing-address)
 
 ```json
 {
@@ -451,7 +451,7 @@ information provided by the end-user who initiated the event.
 `shipping` is a JSON object that contains the shipping address and contact
 information provided by the end-user who initiated the event.
 
-[Learn more about the shipping address inputs on our Knowledge Base.](https://support.maxmind.com/knowledge-base/articles/billing-and-shipping-inputs-minfraud#billing-address)
+[Learn more about the shipping address inputs on our Knowledge Base.](https://support.maxmind.com/knowledge-base/articles/billing-and-shipping-inputs-minfraud#shipping-address)
 
 ```json
 {
@@ -760,8 +760,7 @@ process that was used for the event.
 {{< anchor-target schema--request--credit-card >}}
 
 `credit_card` is a JSON object that contains information provided by the
-end-user and the payment processor about the credit card used for the for the
-event.
+end-user and the payment processor about the credit card used for the event.
 
 ```json
 {

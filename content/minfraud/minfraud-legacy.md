@@ -902,7 +902,7 @@ signed up for the service. The latest version is 1.3.
           <a href="https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2"
             >ISO 3166-1 alpha-2</a
           >
-          country code country code associated with the location of the majority
+          country code associated with the location of the majority
           of customers using this credit card as determined by their billing
           address. In cases where the location of customers is highly mixed,
           this defaults to the country of the bank issuing the card.

@@ -98,7 +98,7 @@ integrator for assistance. {{</ alert >}}
 
 ### Integrations
 
-{{< alert warning >}} <Alert type="warning"> **Use at your own risk.**
+{{< alert warning >}} **Use at your own risk.**
 
 MaxMind does **_not_** offer support for these integrations. Please contact the
 integrator for assistance. {{</ alert >}}

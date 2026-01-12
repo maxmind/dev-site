@@ -81,7 +81,7 @@ to handle any valid HTTP `4xx` or `5xx` status code.
           >
           in the
           <a
-            href="/minfraud/api-documentation/requests#authorization-and-security"
+            href="/geoip/docs/web-services/requests#authorization-and-security"
             >Authorization</a
           >
           header.
@@ -97,7 +97,7 @@ to handle any valid HTTP `4xx` or `5xx` status code.
           >
           in the
           <a
-            href="/minfraud/api-documentation/requests#authorization-and-security"
+            href="/geoip/docs/web-services/requests#authorization-and-security"
             >Authorization</a
           >
           header.
@@ -114,7 +114,7 @@ to handle any valid HTTP `4xx` or `5xx` status code.
           >
           in the
           <a
-            href="/minfraud/api-documentation/requests#authorization-and-security"
+            href="/geoip/docs/web-services/requests#authorization-and-security"
             >Authorization</a
           >
           header.
@@ -601,7 +601,7 @@ with the IP address.
   [Learn more about postal code data on our Knowledge Base.](https://support.maxmind.com/knowledge-base/articles/maxmind-ip-geolocation-data#codes)
   {{</ geoip-schema-row >}}
 
-  {{< geoip-schema-row key="confidence" valueType="integer" valueTypeNote="min: 0 max: 100" insights="true">}}
+  {{< geoip-schema-row key="confidence" valueType="integer" valueTypeNote="min: 0, max: 100" insights="true">}}
   A value from 0-100 representing our confidence that the postal code is correct.
 
   [Learn more about confidence factors on our Knowledge Base.](https://support.maxmind.com/knowledge-base/articles/maxmind-ip-geolocation-data#confidence-factors)
@@ -1122,7 +1122,7 @@ that describe each service's response body.
 The following is an example of a full response to a GeoIP Country web service
 request.
 
-A GeoLite Country request follow the same structure, but the data returned will
+A GeoLite Country request follows the same structure, but the data returned will
 be less accurate. In addition, GeoLite Country requests will not return the
 `maxmind` object.
 
@@ -1204,7 +1204,7 @@ be less accurate. In addition, GeoLite Country requests will not return the
 The following is an example of a full response to a GeoIP City Plus web service
 request.
 
-A GeoLite City request follow the same structure, but the data returned will be
+A GeoLite City request follows the same structure, but the data returned will be
 less accurate. In addition, GeoLite City requests will not return the `domain`,
 `isp`, or `organization` values in the `traits` object, and it will not return
 the `maxmind` object.

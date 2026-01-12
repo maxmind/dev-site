@@ -289,7 +289,7 @@ encoding is also referred to as latin1.
         <td>
           The approximate latitude of the location associated with the network.
           This value is not precise and should not be used to identify a
-          particular address or household
+          particular address or household.
         </td>
         <td></td>
         <td>YES</td>
@@ -1090,7 +1090,7 @@ This is an example for the City/ISP/Org web service.
 ```vbnet
 ' Contributed by Rubens A. Lucca
 Private Function ReturnData(ByVal IP As String) As String
-        Dim objUrl As New System.Uri("https://geoip.maxmind.com/v.10/city-isp-org?l=YOUR_LICENSE_KEY&i=" & IP)
+        Dim objUrl As New System.Uri("https://geoip.maxmind.com/v1.0/city-isp-org?l=YOUR_LICENSE_KEY&i=" & IP)
         Dim objWebReq As System.Net.WebRequest
         Dim objResp As System.Net.WebResponse
         Dim sReader As System.IO.StreamReader

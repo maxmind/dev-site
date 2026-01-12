@@ -211,7 +211,7 @@ exist and have a record for a `geoname_id` only if data is available. The other
 possible locales are "de", "es", "fr", "ja", "pt-BR", "ru", and "zh-CN".
 
 These files are named `GeoIP2-Enterprise-Locations-{locale}.csv`. An example
-name would be "GeoIP2-City-Locations-en.csv".
+name would be "GeoIP2-Enterprise-Locations-en.csv".
 
 {{< csv-location-table isEnterprise="true" >}}
 
