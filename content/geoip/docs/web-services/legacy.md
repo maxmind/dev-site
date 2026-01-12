@@ -289,7 +289,7 @@ encoding is also referred to as latin1.
         <td>
           The approximate latitude of the location associated with the network.
           This value is not precise and should not be used to identify a
-          particular address or household
+          particular address or household.
         </td>
         <td></td>
         <td>YES</td>

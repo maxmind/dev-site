@@ -168,7 +168,7 @@ These are named `GeoIP-Anonymous-Plus-Blocks-Plusv4.csv` and
           network is currently part of an actively used VPN service.
           <br />
           Currently we will only provide values of 30 and 99, but the number of
-          values will increase as we improve our confidence ratings
+          values will increase as we improve our confidence ratings.
         </td>
       </tr>
 
