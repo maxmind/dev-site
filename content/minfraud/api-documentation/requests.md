@@ -760,8 +760,7 @@ process that was used for the event.
 {{< anchor-target schema--request--credit-card >}}
 
 `credit_card` is a JSON object that contains information provided by the
-end-user and the payment processor about the credit card used for the for the
-event.
+end-user and the payment processor about the credit card used for the event.
 
 ```json
 {
