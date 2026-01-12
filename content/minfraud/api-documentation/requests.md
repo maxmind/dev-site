@@ -48,8 +48,8 @@ you must accept one of the following, substituting the `[SERVICE-TYPE]` with
 either `score`, `insights`, or `factors` as appropriate:
 
 - `application/json`
-- `application/vnd.maxmind.com-minfraud-[SERVICE TYPE]+json`
-- `application/vnd.maxmind.com-minfraud-[SERVICE TYPE]+json; charset=UTF-8; version=2.0`
+- `application/vnd.maxmind.com-minfraud-[SERVICE-TYPE]+json`
+- `application/vnd.maxmind.com-minfraud-[SERVICE-TYPE]+json; charset=UTF-8; version=2.0`
 
 A request for any other MIME type will result in a `415 Unsupported Media Type`
 error.
