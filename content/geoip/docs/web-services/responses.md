@@ -81,7 +81,7 @@ to handle any valid HTTP `4xx` or `5xx` status code.
           >
           in the
           <a
-            href="/minfraud/api-documentation/requests#authorization-and-security"
+            href="/geoip/docs/web-services/requests#authorization-and-security"
             >Authorization</a
           >
           header.
@@ -97,7 +97,7 @@ to handle any valid HTTP `4xx` or `5xx` status code.
           >
           in the
           <a
-            href="/minfraud/api-documentation/requests#authorization-and-security"
+            href="/geoip/docs/web-services/requests#authorization-and-security"
             >Authorization</a
           >
           header.
@@ -114,7 +114,7 @@ to handle any valid HTTP `4xx` or `5xx` status code.
           >
           in the
           <a
-            href="/minfraud/api-documentation/requests#authorization-and-security"
+            href="/geoip/docs/web-services/requests#authorization-and-security"
             >Authorization</a
           >
           header.
