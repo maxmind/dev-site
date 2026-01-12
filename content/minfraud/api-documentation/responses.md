@@ -705,7 +705,7 @@ present in the response.
   {{</minfraud-schema-row>}}
 
   {{< minfraud-schema-row key="is_business" type="response" valueType="boolean"  insights="true" factors="true" >}}
-  This field is `true` if the issuer ID number is for a business card. It is`false` if the issuer ID number is for for a non-business card. The key is only present when a valid issuer ID number has been provided.
+  This field is `true` if the issuer ID number is for a business card. It is`false` if the issuer ID number is for a non-business card. The key is only present when a valid issuer ID number has been provided.
   {{</minfraud-schema-row>}}
 
   {{< minfraud-schema-row key="is_issued_in_billing_address_country" type="response" valueType="boolean"  insights="true" factors="true" >}}

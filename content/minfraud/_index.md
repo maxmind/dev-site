@@ -6,7 +6,7 @@ title: minFraud Web Services
 {{< alert info >}} If you are a minFraud Legacy customer, please refer to our
 [minFraud Legacy documentation](/minfraud/minfraud-legacy).
 
-If you are Proxy Detection Legacy customer, please refer to our
+If you are a Proxy Detection Legacy customer, please refer to our
 [Proxy Detection Legacy documentation](/minfraud/proxy-detection).
 {{</ alert >}}
 

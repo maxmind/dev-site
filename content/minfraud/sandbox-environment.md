@@ -66,7 +66,7 @@ minFraud services, but you can submit transactions with dummy data.
 ## Test Legacy versions of minFraud using the Sandbox
 
 If you are a minFraud Legacy user, you can test Legacy versions of the minFraud
-services your Sandbox account.
+services using your Sandbox account.
 
 [Learn how to test with different versions of the minFraud service.](/minfraud/minfraud-legacy#select-the-proper-legacy-version-for-testing)
 
