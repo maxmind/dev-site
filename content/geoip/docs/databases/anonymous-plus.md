@@ -34,8 +34,8 @@ for assistance.
 ### Blocks Files
 
 There are two CSV files for network blocks, one each for IPv4 and IPv6 blocks.
-These are named `GeoIP-Anonymous-Plus-Blocks-Plusv4.csv` and
-`GeoIP-Anonymous-Plus-Blocks-Plusv6.csv` respectively.
+These are named `GeoIP-Anonymous-Plus-Blocks-IPv4.csv` and
+`GeoIP-Anonymous-Plus-Blocks-IPv6.csv` respectively.
 
 {{< rawhtml >}}
 
