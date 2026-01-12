@@ -376,7 +376,7 @@ the end-user who initiated the event.
 `billing` is a JSON object that contains the billing address and contact
 information provided by the end-user who initiated the event.
 
-[Learn more about the billing address inputs on our Knowledge Base.](https://support.maxmind.com/knowledge-base/articles/billing-and-shipping-inputs-minfraud#shipping-address)
+[Learn more about the billing address inputs on our Knowledge Base.](https://support.maxmind.com/knowledge-base/articles/billing-and-shipping-inputs-minfraud#billing-address)
 
 ```json
 {
@@ -451,7 +451,7 @@ information provided by the end-user who initiated the event.
 `shipping` is a JSON object that contains the shipping address and contact
 information provided by the end-user who initiated the event.
 
-[Learn more about the shipping address inputs on our Knowledge Base.](https://support.maxmind.com/knowledge-base/articles/billing-and-shipping-inputs-minfraud#billing-address)
+[Learn more about the shipping address inputs on our Knowledge Base.](https://support.maxmind.com/knowledge-base/articles/billing-and-shipping-inputs-minfraud#shipping-address)
 
 ```json
 {
