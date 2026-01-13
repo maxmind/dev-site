@@ -4,7 +4,7 @@ title: GeoIP Connection Type Databases
 ---
 
 Determine the connection type of your visitors based on their IP address. The
-database identifies cellular, cable/DSL, and corporate connection speeds.
+database identifies cellular, cable/DSL, corporate, and satellite connection types.
 
 To learn more about the GeoIP Connection Type database, including terms and
 pricing, please
