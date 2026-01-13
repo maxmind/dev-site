@@ -27,7 +27,7 @@ and the
 ### Disposition API
 
 We provide a [Dispositions API](/minfraud/working-with-transaction-dispositions)
-for use with disposition setting from the Transaction Details page. Use this API
+for use with Disposition setting from the Transaction Details page. Use this API
 to integrate with your order management system, payment processor, or other
 internal system so that manual review decisions made from the account portal are
 available within your own systems. For more information about setting
