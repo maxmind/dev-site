@@ -49,17 +49,17 @@ The files in the zip archive are:
       </tr>
 
       <tr>
-        <td><code>GeoIP2-Enterprise-Blocks-IPv4.CSV</code></td>
+        <td><code>GeoIP2-Enterprise-Blocks-IPv4.csv</code></td>
         <td>CSV file containing data on IPv4 addresses</td>
       </tr>
 
       <tr>
-        <td><code>GeoIP2-Enterprise-Blocks-IPv6.CSV</code></td>
+        <td><code>GeoIP2-Enterprise-Blocks-IPv6.csv</code></td>
         <td>CSV file containing data on IPv6 addresses</td>
       </tr>
 
       <tr>
-        <td><code>GeoIP2-Enterprise-ISP.CSV</code></td>
+        <td><code>GeoIP2-Enterprise-ISP.csv</code></td>
         <td>
           CSV file containing data on ISPs. This may be cross referenced with
           the various blocks files using the shared <code>isp_id</code> key.
@@ -67,10 +67,10 @@ The files in the zip archive are:
       </tr>
 
       <tr>
-        <td><code>GeoIP2-Enterprise-Locations-XX.CSV</code></td>
+        <td><code>GeoIP2-Enterprise-Locations-{locale}.csv</code></td>
         <td>
           CSV files containing data on locations. This may be cross referenced
-          with the various blocks files using the shared `geoname_id` key.
+          with the various blocks files using the shared <code>geoname_id</code> key.
         </td>
       </tr>
     </tbody>
@@ -154,8 +154,7 @@ ISPs.
         <td>string</td>
         <td>
           The user type associated with the IP address. This will be one of the
-          following values.
-
+          following values:
           <ul>
             <li><code>business</code></li>
             <li><code>cafe</code></li>
@@ -211,7 +210,7 @@ exist and have a record for a `geoname_id` only if data is available. The other
 possible locales are "de", "es", "fr", "ja", "pt-BR", "ru", and "zh-CN".
 
 These files are named `GeoIP2-Enterprise-Locations-{locale}.csv`. An example
-name would be "GeoIP2-Enterprise-Locations-en.csv".
+name would be `GeoIP2-Enterprise-Locations-en.csv`.
 
 {{< csv-location-table isEnterprise="true" >}}
 
