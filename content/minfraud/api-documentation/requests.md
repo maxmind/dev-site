@@ -223,7 +223,7 @@ transaction.
   [Learn more about the /device/accept\_language input on our Knowledge Base.](https://support.maxmind.com/knowledge-base/articles/device-inputs-minfraud#browser-information)
   {{</minfraud-schema-row>}}
 
-  {{< minfraud-schema-row key="session_age" type="request" valueType="decimal" valueTypeNote="min: 0, max: 1e14-1" >}}
+  {{< minfraud-schema-row key="session_age" type="request" valueType="decimal" valueTypeNote="min: 0, max: 1e13-1" >}}
   The number of seconds between the creation of the user's session and the time of the transaction. Note that `session_age` is not the duration of the current visit, but the time since the start of the first visit.
 
   [Learn more about the /device/session\_age input on our Knowledge Base.](https://support.maxmind.com/knowledge-base/articles/device-inputs-minfraud#session-information)
@@ -866,7 +866,7 @@ with the event.
 
 {{< schema-table key="order" >}}
 
-  {{< minfraud-schema-row key="amount" type="request" valueType="decimal" valueTypeNote="min: 0, max: 1e14-1" >}}
+  {{< minfraud-schema-row key="amount" type="request" valueType="decimal" valueTypeNote="min: 0, max: 1e13-1" >}}
   The total order amount for the transaction before taxes and discounts.
 
   [Learn more about the /order/amount input on our Knowledge Base.](https://support.maxmind.com/knowledge-base/articles/order-and-shopping-cart-inputs-minfraud#order-amount)
@@ -964,11 +964,11 @@ them ineffective for our fraud detection service. For more information, see:
   Your internal ID for the item. No specific format is required. This can also be a hashed value; see above.
   {{</minfraud-schema-row>}}
 
-  {{< minfraud-schema-row key="quantity" type="request" valueType="integer" valueTypeNote="min: 0, max: 1e14-1" >}}
+  {{< minfraud-schema-row key="quantity" type="request" valueType="integer" valueTypeNote="min: 0, max: 1e13-1" >}}
   The quantity of the item in the shopping cart. The value must be a whole number.
   {{</minfraud-schema-row>}}
 
-  {{< minfraud-schema-row key="price" type="request" valueType="decimal" valueTypeNote="min: 0, max: 1e14-1" >}}
+  {{< minfraud-schema-row key="price" type="request" valueType="decimal" valueTypeNote="min: 0, max: 1e13-1" >}}
   The per-unit price of this item in the shopping cart. This should use the same currency as the order currency.
   {{</minfraud-schema-row>}}
 
@@ -1008,7 +1008,7 @@ the input and issue a warning.
   {{</minfraud-schema-row>}}
 
 
-  {{< minfraud-schema-row key="your_custom_FLOAT_NUMBER_key" type="request" valueType="float" valueTypeNote="min: -1e14, max: 1e14" >}}
+  {{< minfraud-schema-row key="your_custom_FLOAT_NUMBER_key" type="request" valueType="float" valueTypeNote="min: -1e13+1, max: 1e13-1" >}}
   A custom key of your choice with a floating-point number value.
   {{</minfraud-schema-row>}}
 
