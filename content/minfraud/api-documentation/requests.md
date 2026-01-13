@@ -264,7 +264,7 @@ transaction.
   {{</minfraud-schema-row>}}
 
   {{< minfraud-schema-row key="shop_id" type="request" valueType="string" valueTypeNote="max length: 255" >}}
-  Your internal ID for the shop, affiliate, or merchant this order is coming from. Required for minFraud users who are resellers, payment providers, gateways and affiliate networks. No specific format is required. However, if you are testing the minFraud service, please add a `test` prefix to your shop ID (e.g. `testfoo23` or `test:foo23`) or set your shop ID to `test` if you don’t have a shop ID.
+  Your internal ID for the shop, affiliate, or merchant this order is coming from. Required for minFraud users who are resellers, payment providers, gateways, and affiliate networks. No specific format is required. However, if you are testing the minFraud service, please add a `test` prefix to your shop ID (e.g. `testfoo23` or `test:foo23`) or set your shop ID to `test` if you don’t have a shop ID.
 
   [Learn more about the /event/shop\_id input on our Knowledge Base.](https://support.maxmind.com/knowledge-base/articles/event-and-account-inputs-minfraud#storefront-identifier)
   {{</minfraud-schema-row>}}
@@ -833,7 +833,7 @@ end-user and the payment processor about the credit card used for the event.
   {{</minfraud-schema-row>}}
 
   {{< minfraud-schema-row key="was_3d_secure_successful" type="request" valueType="boolean"  >}}
-  Whether the outcome of 3-D Secure verification (e.g. Safekey, SecureCode, Verified by Visa) was successful. `true` if customer verification was successful, or `false` if the customer failed verification. If 3-D Secure verification was not used, was unavailable, or resulted in another outcome other than success or failure, do not include this field.
+  Whether the outcome of 3-D Secure verification (e.g. SafeKey, SecureCode, Verified by Visa) was successful. `true` if customer verification was successful, or `false` if the customer failed verification. If 3-D Secure verification was not used, was unavailable, or resulted in another outcome other than success or failure, do not include this field.
 
   [Learn more about the /credit\_card/was\_3d\_secure\_successful input on our Knowledge Base.](https://support.maxmind.com/knowledge-base/articles/credit-card-and-payments-inputs-minfraud#payment-processor-information)
   {{</minfraud-schema-row>}}
@@ -1004,12 +1004,12 @@ the input and issue a warning.
 {{< schema-table key="custom_inputs" >}}
 
   {{< minfraud-schema-row key="your_custom_BOOLEAN_key" type="request" valueType="boolean"  >}}
-  A custom key of your choice, with a boolean value.
+  A custom key of your choice with a boolean value.
   {{</minfraud-schema-row>}}
 
 
   {{< minfraud-schema-row key="your_custom_FLOAT_NUMBER_key" type="request" valueType="float" valueTypeNote="min: -1e14, max: 1e14" >}}
-  A custom key of your choice, with a floating-point number value.
+  A custom key of your choice with a floating-point number value.
   {{</minfraud-schema-row>}}
 
 
