@@ -283,7 +283,7 @@ transaction.
 
   The type of event being scored. The valid types are:
 
-  | Transaction type	                   | Description                  |
+  | Transaction type | Description |
   | ---------------------------- | ------------------------------------------------------------------- |
   | `account_creation`         | The transactor is attempting to create an account in your system.    |
   | `account_login`    | The transactor is attempting to log in to an account in your system.  |
@@ -555,7 +555,7 @@ process that was used for the event.
 
   The payment method associated with the transaction. The valid values are:
 
-  | Payment method	                         | Description     |
+  | Payment method | Description |
   | ---------------------------- | ------------------------------------------------------------------ |
   | `bank_debit`                | A direct debit of the customer's bank account.    |
   | `bank_redirect`    | The customer authorizes payment after authentication via their bank.  |
