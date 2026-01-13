@@ -996,7 +996,7 @@ minFraud response.
   | `http_error`        | The domain is reachable but the web application had a problem or denied the request. |
   | `parked`            | The domain is live and is in a parked state. |
   | `pre_development` | The domain is live and is in a pre-development state.  |
-  
+
   [Learn more about the email domain visit status on our Knowledge Base.](https://support.maxmind.com/knowledge-base/minfraud-domain-risk-data#domain-visit)
   {{</minfraud-schema-row>}}
 
