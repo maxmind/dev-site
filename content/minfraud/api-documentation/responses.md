@@ -635,7 +635,7 @@ the IP address received the associated risk.
 
   | Code                         | Explanation                                                                                            |
   | ---------------------------- | ------------------------------------------------------------------------------------------------------ |
-  | `ANONYMOUS_IP`                | The IP address belongs to an anonymous network. See the object at /ip\_address/traits for more details. |
+  | `ANONYMOUS_IP`                | The IP address belongs to an anonymous network. See the object at `/ip_address/traits` for more details. |
   | `BILLING_POSTAL_VELOCITY`    | Many different billing postal codes have been seen on this IP address.                                 |
   | `EMAIL_VELOCITY`              | Many different email addresses have been seen on this IP address.                                      |
   | `HIGH_RISK_DEVICE`           | A high risk device was seen on this IP address.                                                        |
