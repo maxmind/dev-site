@@ -182,7 +182,7 @@ to handle any valid HTTP `4xx` or `5xx` status code.
           Your request included a <code>Content-Type</code> header that is not
           supported. For <code>GET</code> requests, this means the web service
           cannot return content of that type. For <code>PUT</code> and
-          <code>POST</code> queries, this means the web service cannot parse a
+          <code>POST</code> requests, this means the web service cannot parse a
           request body of that type.
         </td>
       </tr>
@@ -767,7 +767,7 @@ issuer of the card.
   {{</minfraud-schema-row>}}
 
   {{< minfraud-schema-row key="phone_number" type="response" valueType="string" valueTypeNote="max length: 255" insights="true" factors="true" >}}
-  The phone number of the bank which issued the credit card. In some cases the phone number we return may be out of date.
+  The phone number of the bank which issued the credit card. In some cases, the phone number we return may be out of date.
   {{</minfraud-schema-row>}}
 
   {{< minfraud-schema-row key="matches_provided_phone_number" type="response" valueType="boolean"  insights="true" factors="true" >}}
@@ -993,7 +993,7 @@ minFraud response.
   {{</minfraud-schema-row>}}
 
   {{< minfraud-schema-row key="status" type="response" valueType="string" insights="true" factors="true" >}}
-  A classification of the status of the domain (or the last domain visited after following redirects, if these are present and can be followed) based on an automated visit at a previous point in time. This field may be initially unavailable for a newly sighted domain and populated at a future time after a visit is conducted. Pair with the `/email/domain/visit/last_visited_on` to determine the recency of the visit. One of the following values. Additional values may be added in the future.
+  A classification of the status of the domain (or the last domain visited after following redirects, if these are present and can be followed) based on an automated visit at a previous point in time. This field may be initially unavailable for a newly-sighted domain and populated at a future time after a visit is conducted. Pair with the `/email/domain/visit/last_visited_on` to determine the recency of the visit. One of the following values. Additional values may be added in the future.
 
   | Status                        | Description                                                                                          |
   | ----------------------------- | ---------------------------------------------------------------------------------------------------- |
@@ -1354,7 +1354,7 @@ present in the response.
 {{< anchor-target schema--response--warnings >}}
 
 This array contains warning objects detailing issues with the request that was
-sent such as invalid or unknown inputs. It is highly recommended that you check
+sent, such as invalid or unknown inputs. It is highly recommended that you check
 this array for issues when integrating the web service.
 
 ```json
@@ -1379,7 +1379,7 @@ this array for issues when integrating the web service.
   | `BILLING_CITY_NOT_FOUND`     | The billing city could not be found in our database. This may impact our ability to provide accurate distance calculations.     |
   | `BILLING_COUNTRY_MISSING`     | Billing address information was provided without providing a billing country. This may impact our ability to provide accurate distance calculations.        |
   | `BILLING_COUNTRY_NOT_FOUND`  | The billing country could not be found in our database. This may impact our ability to provide accurate distance calculations.                                                                                                                            |
-  | `BILLING_POSTAL_NOT_FOUND`   | The billing postal could not be found in our database. This may impact our ability to provide accurate distance calculations.                                                                                                                             |
+  | `BILLING_POSTAL_NOT_FOUND`   | The billing postal code could not be found in our database. This may impact our ability to provide accurate distance calculations.                                                                                                                             |
   | `BILLING_REGION_NOT_FOUND`   | The billing region could not be found in our database. This may impact our ability to provide accurate distance calculations.                                                                                                                             |
   | `EMAIL_ADDRESS_UNUSABLE`      | The email address entered is likely incorrect due to an integration issue. To avoid false positives, it has not been used in scoring. Check how you are passing your [email address inputs](/minfraud/api-documentation/requests#schema--request--email). |
   | `INPUT_INVALID`                | The value associated with the key does not meet the required constraints, e.g., "United States" in a field that requires a two-letter country code.                                                                                                       |
@@ -1390,7 +1390,7 @@ this array for issues when integrating the web service.
   | `SHIPPING_CITY_NOT_FOUND`    | The shipping city could not be found in our database. This may impact our ability to provide accurate distance calculations.                                                                                                                              |
   | `SHIPPING_COUNTRY_MISSING`    | Shipping address information was provided without providing a shipping country. This may impact our ability to provide accurate distance calculations.                                                                                                    |
   | `SHIPPING_COUNTRY_NOT_FOUND` | The shipping country could not be found in our database. This may impact our ability to provide accurate distance calculations.                                                                                                                           |
-  | `SHIPPING_POSTAL_NOT_FOUND`  | The shipping postal could not be found in our database. This may impact our ability to provide accurate distance calculations.                                                                                                                            |
+  | `SHIPPING_POSTAL_NOT_FOUND`  | The shipping postal code could not be found in our database. This may impact our ability to provide accurate distance calculations.                                                                                                                            |
   | `SHIPPING_REGION_NOT_FOUND`  | The shipping region could not be found in our database. This may impact our ability to provide accurate distance calculations.                                                                                                                            |
   {{</minfraud-schema-row>}}
 
