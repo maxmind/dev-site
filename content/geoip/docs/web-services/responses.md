@@ -177,7 +177,7 @@ to handle any valid HTTP `4xx` or `5xx` status code.
       </tr>
       <tr>
         <td>(none)</td>
-        <td>503 Service Not Available</td>
+        <td>503 Service Unavailable</td>
         <td>
           There is a problem with the web service server. You can try this
           request again later.

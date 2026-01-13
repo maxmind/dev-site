@@ -24,7 +24,7 @@ JavaScript below on your product and landing pages as well as all the pages
 within your purchase flow. This will help detect fraudsters if they change or
 enable proxies while browsing your website.
 
-To speed page load time, JavaScript should be placed in footer of the HTML
+To speed page load time, JavaScript should be placed in the footer of the HTML
 webpage.
 
 Note that, in order to be effective, the Device Tracking Add-on must, at a

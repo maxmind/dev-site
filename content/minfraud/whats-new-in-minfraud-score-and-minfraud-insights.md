@@ -16,7 +16,7 @@ The minFraud web services now follow REST principles.
 
 Authentication is done using
 [basic authentication](https://en.wikipedia.org/wiki/Basic_access_authentication)
-over an TLS connection rather than passing the license key as a query parameter.
+over a TLS connection rather than passing the license key as a query parameter.
 
 All requests are made by a POST of a structured JSON document to the web
 service.
@@ -54,7 +54,7 @@ Beyond the new outputs listed below, the service provides
 for the IP address in the `ip_address` object.
 
 `proxyScore` has been replaced with the IP address risk, `/ip_address/risk`.
-Whereas proxyScore ranged from 0-4, the IP address ranges from 0.01 to 99,
+Whereas proxyScore ranged from 0-4, the IP address risk ranges from 0.01 to 99,
 similar to `risk_score`.
 
 `countryMatch` has been replaced with `/billing_address/is_in_ip_country` and

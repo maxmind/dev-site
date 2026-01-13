@@ -919,7 +919,7 @@ signed up for the service. The latest version is 1.3.
         <td>enum</td>
         <td>
           This field can be either <strong>Yes</strong>, <strong>No</strong>,
-          <strong>NotFound</strong>, or <strong>NA</strong> It indicates whether
+          <strong>NotFound</strong>, or <strong>NA</strong>. It indicates whether
           the credit card’s bank name matches the <em>binName</em> input field.
           The <strong>NotFound</strong> response means that we could not find a
           match for the provided <em>bin</em> input field. The
@@ -946,8 +946,8 @@ signed up for the service. The latest version is 1.3.
         <td>enum</td>
         <td>
           This field can be either <strong>Yes</strong>, <strong>No</strong>,
-          <strong>NotFound</strong>, or <strong>NA</strong> It indicates whether
-          the credit card’s bank name matches the <em>binPhone</em> input field.
+          <strong>NotFound</strong>, or <strong>NA</strong>. It indicates whether
+          the credit card’s bank phone number matches the <em>binPhone</em> input field.
           The <strong>NotFound</strong> response means that we could not find a
           match for the provided <em>bin</em> input field. The
           <strong>NA</strong> response means that you did not provide a
@@ -1191,7 +1191,7 @@ The `proxyScore` output will contain a response within the range defined below:
 Here is an example request that should return a valid minFraud response without
 any warnings or errors, and with a proxyScore between 2 and 4:
 
-- `https://sandbox.maxmind.com/minfraud/v1.0/legacy?i=146.243.121.22&license_key=<your_sandbox_license_key>&country=US`
+- `https://sandbox.maxmind.com/minfraud/v1.0/legacy?i=128.101.101.101&license_key=<your_sandbox_license_key>&country=US`
 
 You should not submit real transaction data to the Sandbox version of the
 minFraud Legacy services, but you can submit transactions with dummy data.

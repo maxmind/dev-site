@@ -30,7 +30,7 @@ To make a disposition request, you need the request URI and parameters, and
 
 ### Request URI and parameters
 
-API calls should be made with HTTP GET request to
+API calls should be made with an HTTP GET request to
 `https://minfraud.maxmind.com/minfraud/disposition/v1.0/updates`.
 
 We require a URL parameter called `updates_after` with an RFC 3339 timestamp
@@ -69,7 +69,7 @@ you must accept one of the following:
 - `application/vnd.maxmind.com-disposition-updates+json; charset=UTF-8; version=1.0`
 
 If you set the `Accept-Charset` header in your client code, you must accept the
-`UTF-8` character set. If you don't you will receive a `406 Not Acceptable`
+`UTF-8` character set. If you don't, you will receive a `406 Not Acceptable`
 response.
 
 ### Command Line Example Using curl
@@ -122,7 +122,7 @@ Each transaction in the updates array will contain the following keys:
 | `action`              | String     | The most recent transaction disposition action. In addition to `accept`, `reject`, and `manual_review`, you may also see `expired_review`, which indicates the manual review period (1 week) expired before the transaction was reviewed. |
 | `action_last_updated` | Timestamp  | The date and time the disposition action was last updated, in RFC 3339 format with microsecond precision.                                                                                                                                 |
 | `note`                | String     | The most recent transaction note. Limited to 500 characters. Will be `null` if not currently set.                                                                                                                                         |
-| `note_last_updated`   | Timestamp  | The date and time the note was last updated, in RFC 3339 format with microsecond precision. If a note has never been set, this will be `null`                                                                                             |
+| `note_last_updated`   | Timestamp  | The date and time the note was last updated, in RFC 3339 format with microsecond precision. If a note has never been set, this will be `null`.                                                                                            |
 
 As a note to implementers, we are considering adding additional keys to this
 object in future versions of this API.
@@ -217,7 +217,7 @@ to handle any valid HTTP 4xx or 5xx status code.
 | PERMISSION_REQUIRED    | 403 Forbidden              | You do not have permission to use the service. Please [contact our support team](https://support.maxmind.com/knowledge-base) for more information.                                         |
 | (none)                 | 406 Not Acceptable         | Your request included an `Accept-Charset` header that is not supported. `UTF-8` is the only acceptable character set.                                                                      |
 | (none)                 | 415 Unsupported Media Type | Your request included an `Accept` header that is not supported. The web service cannot return content of that type.                                                                        |
-| (none)                 | 503 Service Not Available  | There is a problem with the web service server. You can try this request again later.                                                                                                      |
+| (none)                 | 503 Service Unavailable    | There is a problem with the web service server. You can try this request again later.                                                                                                      |
 
 ### Example response to an unsuccessful request
 

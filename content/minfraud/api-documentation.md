@@ -101,7 +101,7 @@ accompanied by a version number change:
 - Increased validation of inputs that causes a warning to be returned when there
   previously was not one.
 - Adding a new request or response field, either at the top level of the
-  structure or in one particular object such as the billing or `credit_card`.
+  structure or in one particular object such as `billing` or `credit_card`.
   Client code should be written to allow for new fields to appear.
 - Adding new values to enum fields such as processor.
 - Adding or removing warning or error codes, and/or changing the body type for

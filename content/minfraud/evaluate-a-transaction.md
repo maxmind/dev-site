@@ -784,7 +784,7 @@ System.out.println(client.score(request));
 ```
 
 ```javascript
-import { URL } from 'url'; // Used for `order.referrerUri
+import { URL } from 'url'; // Used for order.referrerUri
 import * as minFraud from '@maxmind/minfraud-api-node';
 // const minFraud = require('@maxmind/minfraud-api-node');
 

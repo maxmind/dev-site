@@ -49,7 +49,7 @@ outlined below:
 Errors may be returned with the `Content-Type` set to
 `application/vnd.maxmind.com-error+json; charset=UTF-8; version=2.0`. If this is
 the case, then the body of the response contains a JSON document with two keys,
-code and error. See the [Errors](/minfraud/api-documentation/responses/#errors)
+`code` and `error`. See the [Errors](/minfraud/api-documentation/responses/#errors)
 section for more details.
 
 A `Content-Length` header will be provided.
@@ -65,7 +65,7 @@ time.
 
 Not all errors include a JSON body. An error in content negotiation will not
 include a body, nor will many `5xx` errors, which typically happen outside of
-our web service request handling code. You should check the `Content-Type` type
+our web service request handling code. You should check the `Content-Type` header
 of an error response before attempting to decode the body as JSON.
 
 In addition to the errors documented below, client code should also be prepared
@@ -182,7 +182,7 @@ to handle any valid HTTP `4xx` or `5xx` status code.
           Your request included a <code>Content-Type</code> header that is not
           supported. For <code>GET</code> requests, this means the web service
           cannot return content of that type. For <code>PUT</code> and
-          <code>POST</code> queries, this means the web service cannot parse a
+          <code>POST</code> requests, this means the web service cannot parse a
           request body of that type.
         </td>
       </tr>
@@ -197,7 +197,7 @@ to handle any valid HTTP `4xx` or `5xx` status code.
       </tr>
       <tr>
         <td>(none)</td>
-        <td>503 Service Not Available</td>
+        <td>503 Service Unavailable</td>
         <td>
           There is a problem with the web service server. You can try this
           request again later.
@@ -268,7 +268,7 @@ For full examples of response bodies, select one of the following:
   {{</minfraud-schema-row>}}
 
   {{< minfraud-schema-row key="risk_score" type="response" valueType="decimal" valueTypeNote="min: 0.01, max: 99" score="true" insights="true" factors="true" >}}
-  This field contains the overall risk score, from 0.01 to 99\. A higher score indicates a higher risk of fraud. For example, a score of 20 indicates a 20% chance that a transaction is fraudulent. We never return a risk score of 0, since all transactions have the possibility of being fraudulent. Likewise we never return a risk score of 100.
+  This field contains the overall risk score, from 0.01 to 99. A higher score indicates a higher risk of fraud. For example, a score of 20 indicates a 20% chance that a transaction is fraudulent. We never return a risk score of 0, since all transactions have the possibility of being fraudulent. Likewise, we never return a risk score of 100.
 
   [Learn more about the overall risk score on our Knowledge Base.](https://support.maxmind.com/knowledge-base/articles/overall-risk-score-minfraud-maxmind)
   {{</minfraud-schema-row>}}
@@ -302,22 +302,22 @@ For full examples of response bodies, select one of the following:
   {{</minfraud-schema-row>}}
 
   {{< minfraud-schema-row key="shipping_address" fragmentOverride="shipping-address" type="response" valueType="object" insights="true" factors="true" >}}
-  This object contains information related to the shipping address
+  This object contains information related to the shipping address.
   [See more](#shipping-address).
   {{</minfraud-schema-row>}}
 
   {{< minfraud-schema-row key="shipping_phone" fragmentOverride="shipping-phone" type="response" valueType="object" insights="true" factors="true" >}}
-  This object contains information related to the shipping phone number
+  This object contains information related to the shipping phone number.
   [See more](#shipping-phone).
   {{</minfraud-schema-row>}}
 
   {{< minfraud-schema-row key="billing_address" fragmentOverride="billing-address" type="response" valueType="object" insights="true" factors="true" >}}
-  This object contains information related to the billing address
+  This object contains information related to the billing address.
   [See more](#billing-address).
   {{</minfraud-schema-row>}}
 
   {{< minfraud-schema-row key="billing_phone" fragmentOverride="billing-phone" type="response" valueType="object" insights="true" factors="true" >}}
-  This object contains information related to the billing phone number
+  This object contains information related to the billing phone number.
   [See more](#billing-phone).
   {{</minfraud-schema-row>}}
 
@@ -352,7 +352,9 @@ with four modifications:
 1. `risk` has been added directly to the `ip_address` object
 2. `is_high_risk` has been added to the `country` sub-object
 3. `local_time` has been added to the `location` sub-object
-4. The `maxmind` object is not present. See below for descriptions.
+4. The `maxmind` object is not present.
+
+See below for descriptions of the added fields.
 
 minFraud Insights and Factors return the following anonymous IP outputs:
 
@@ -517,17 +519,17 @@ for more information.
 {{< schema-table key="ip_address" >}}
 
   {{< minfraud-schema-row key="risk" type="response" valueType="decimal" valueTypeNote="min: 0.01, max: 99" score="true" insights="true" factors="true" >}}
-  This field contains the risk associated with the IP address. The value ranges from 0.01 to 99\. A higher score indicates a higher risk.
+  This field contains the risk associated with the IP address. The value ranges from 0.01 to 99. A higher score indicates a higher risk.
 
   [Learn more about the IP risk score on our Knowledge Base.](https://support.maxmind.com/knowledge-base/articles/minfraud-ip-risk-score)
   {{</minfraud-schema-row>}}
 
   {{< minfraud-schema-row key="country" type="response" valueType="object" insights="true" factors="true" >}}
-  This object contains country-level geolocation data associated with the IP address associated with the event.
+  This object contains country-level geolocation data for the IP address associated with the event.
   {{</minfraud-schema-row>}}
 
   {{< minfraud-schema-row key="location" type="response" valueType="object"  insights="true" factors="true" >}}
-  This object contains city-level geolocation data associated with the IP address associated with the event.
+  This object contains city-level geolocation data for the IP address associated with the event.
   {{</minfraud-schema-row>}}
 
   {{< minfraud-schema-row key="risk_reasons" type="response" valueType="array"  insights="true" factors="true" >}}
@@ -544,8 +546,8 @@ for more information.
 
 {{< anchor-target schema--response--ip-address--country >}}
 
-This object contains country-level geolocation data associated with the IP
-address associated with the event
+This object contains country-level geolocation data for the IP address
+associated with the event.
 
 [See the GeoIP Insights response body](/geoip/docs/web-services/responses/#country)
 for more information.
@@ -573,8 +575,8 @@ for more information.
 
 {{< anchor-target schema--response--ip-address--location >}}
 
-This object contains city-level geolocation data associated with the IP address
-associated with the event.
+This object contains city-level geolocation data for the IP address associated
+with the event.
 
 [See the GeoIP Insights response body](/geoip/docs/web-services/responses/#location)
 for more information.
@@ -633,7 +635,7 @@ the IP address received the associated risk.
 
   | Code                         | Explanation                                                                                            |
   | ---------------------------- | ------------------------------------------------------------------------------------------------------ |
-  | `ANONYMOUS_IP`                | The IP address belongs to an anonymous network. See the object at/ip\_address/traits for more details. |
+  | `ANONYMOUS_IP`                | The IP address belongs to an anonymous network. See the object at `/ip_address/traits` for more details. |
   | `BILLING_POSTAL_VELOCITY`    | Many different billing postal codes have been seen on this IP address.                                 |
   | `EMAIL_VELOCITY`              | Many different email addresses have been seen on this IP address.                                      |
   | `HIGH_RISK_DEVICE`           | A high risk device was seen on this IP address.                                                        |
@@ -695,7 +697,7 @@ present in the response.
   {{</minfraud-schema-row>}}
 
   {{< minfraud-schema-row key="country" type="response" valueType="string" valueTypeNote="max length: 2" insights="true" factors="true" >}}
-  The two letter [ISO 3166-1 alpha-2 country code](https://en.wikipedia.org/wiki/ISO%5F3166-1%5Falpha-2) associated with the location of the majority of customers using this credit card as determined by their billing address. In cases where the location of customers is highly mixed, this defaults to the country of the bank issuing the card.
+  The two-letter [ISO 3166-1 alpha-2 country code](https://en.wikipedia.org/wiki/ISO%5F3166-1%5Falpha-2) associated with the location of the majority of customers using this credit card as determined by their billing address. In cases where the location of customers is highly mixed, this defaults to the country of the bank issuing the card.
 
   [Learn how to use the credit card country data for risk analysis on our Knowledge Base.](https://support.maxmind.com/knowledge-base/articles/credit-card-risk-data-minfraud#cc-country)
   {{</minfraud-schema-row>}}
@@ -755,7 +757,7 @@ issuer of the card.
 {{< schema-table key="credit_card--issuer" >}}
 
   {{< minfraud-schema-row key="name" type="response" valueType="string" valueTypeNote="max length: 255" insights="true" factors="true" >}}
-  This field contains a JSON object with information relating to the credit card issuer.
+  The name of the issuing bank.
 
   [Learn how to use the credit card issuer name for risk analysis on our Knowledge Base.](https://support.maxmind.com/knowledge-base/articles/credit-card-risk-data-minfraud#cc-brand-name)
   {{</minfraud-schema-row>}}
@@ -765,7 +767,7 @@ issuer of the card.
   {{</minfraud-schema-row>}}
 
   {{< minfraud-schema-row key="phone_number" type="response" valueType="string" valueTypeNote="max length: 255" insights="true" factors="true" >}}
-  The phone number of the bank which issued the credit card. In some cases the phone number we return may be out of date.
+  The phone number of the bank which issued the credit card. In some cases, the phone number we return may be out of date.
   {{</minfraud-schema-row>}}
 
   {{< minfraud-schema-row key="matches_provided_phone_number" type="response" valueType="boolean"  insights="true" factors="true" >}}
@@ -797,7 +799,7 @@ associated with the IP address passed in the request.
 {{< schema-table key="device" >}}
 
   {{< minfraud-schema-row key="confidence" type="response" valueType="decimal" valueTypeNote="min: 0.01, max: 99" insights="true" factors="true" >}}
-  A number from 0.01 to 99 representing the confidence that the `/device/id`refers to a unique device as opposed to a cluster of similar devices. A confidence of 0.01 indicates very low confidence that the device is unique, whereas 99 indicates very high confidence.
+  A number from 0.01 to 99 representing the confidence that the `/device/id` refers to a unique device as opposed to a cluster of similar devices. A confidence of 0.01 indicates very low confidence that the device is unique, whereas 99 indicates very high confidence.
 
   [Learn how to use device confidence for risk analysis on our Knowledge Base.](https://support.maxmind.com/knowledge-base/articles/device-risk-data-minfraud#device-confidence)
   {{</minfraud-schema-row>}}
@@ -855,7 +857,7 @@ associated with the IP address passed in the request.
   {{</minfraud-schema-row>}}
 
   {{< minfraud-schema-row key="first_seen" type="response" valueType="string" valueTypeNote="format: YYYY-MM-DD, max length: 10" insights="true" factors="true" >}}
-  A date string (e.g. 2017-04-24) to identify the date an email address was first seen by MaxMind. This is expressed using the ISO 8601 date format YYYY-MM-DD. The earliest date that may be returned is January 1, 2008.
+  A date string (e.g. 2017-04-24) to identify the date an email address was first seen by MaxMind. This is expressed using the ISO 8601 date format `YYYY-MM-DD`. The earliest date that may be returned is January 1, 2008.
 
   [Learn how to use email first seen data for risk analysis on our Knowledge Base.](https://support.maxmind.com/knowledge-base/articles/minfraud-email-risk-data#email-first-seen)
   {{</minfraud-schema-row>}}
@@ -880,10 +882,14 @@ associated with the IP address passed in the request.
 
 {{</ schema-table >}}
 
+<!-- prettier-ignore-end -->
+
 ### Email > Domain
+
 {{< anchor-target schema--response--email--domain >}}
 
 This is a sub-object of `email` that contains information related to the domain.
+
 ```json
 {
   "classification": "business",
@@ -987,16 +993,17 @@ minFraud response.
   {{</minfraud-schema-row>}}
 
   {{< minfraud-schema-row key="status" type="response" valueType="string" insights="true" factors="true" >}}
-  A classification of the status of the domain (or the last domain visited after following redirects, if these are present and can be followed) based on an automated visit at a previous point in time. This field may be initially unavailable for a newly sighted domain and populated at a future time after a visit is conducted. Pair with the `/email/domain/visit/last_visited_on` to determine the recency of the visit. One of the following values. Additional values may be added in the future.
-| Status                        | Description                                                                                          |
-  | ---------------------------- | ----------------------------------------------------------------- |
+  A classification of the status of the domain (or the last domain visited after following redirects, if these are present and can be followed) based on an automated visit at a previous point in time. This field may be initially unavailable for a newly-sighted domain and populated at a future time after a visit is conducted. Pair with the `/email/domain/visit/last_visited_on` to determine the recency of the visit. One of the following values. Additional values may be added in the future.
+
+  | Status                        | Description                                                                                          |
+  | ----------------------------- | ---------------------------------------------------------------------------------------------------- |
   | `live`                | The domain is reachable and serving content normally.    |
   | `dns_error`    | The domain is missing, expired, or DNS is misconfigured.  |
   | `network_error`              | The domain is offline, blocked, or unreachable.  |
   | `http_error`        | The domain is reachable but the web application had a problem or denied the request. |
   | `parked`            | The domain is live and is in a parked state. |
   | `pre_development` | The domain is live and is in a pre-development state.  |
-  
+
   [Learn more about the email domain visit status on our Knowledge Base.](https://support.maxmind.com/knowledge-base/minfraud-domain-risk-data#domain-visit)
   {{</minfraud-schema-row>}}
 
@@ -1031,7 +1038,7 @@ minFraud response.
   {{</minfraud-schema-row>}}
 
   {{< minfraud-schema-row key="is_postal_in_city" type="response" valueType="boolean"  insights="true" factors="true" >}}
-  This field is `true` if the postal code provided with the address is in the city for the address. The field is `false` when the postal code is not in the city. The key will only be present when a billing postal code, city, and country have been provided.
+  This field is `true` if the postal code provided with the address is in the city for the address. The field is `false` when the postal code is not in the city. The key will only be present when a shipping postal code, city, and country have been provided.
 
   We use [GeoNames data](https://www.geonames.org/postal-codes/postal-codes-us.html) for the postal-city match, which uses the [preferred place name](https://en.wikipedia.org/wiki/ZIP_Code) for a US ZIP code. [Alternative place names](https://en.wikipedia.org/wiki/ZIP_Code) for US ZIP codes may not trigger a match for this field.
 
@@ -1057,13 +1064,13 @@ minFraud response.
   {{</minfraud-schema-row>}}
 
   {{< minfraud-schema-row key="distance_to_billing_address" type="response" valueType="integer"  insights="true" factors="true" >}}
-  The distance in kilometers from the shipping address to billing address. We fall back to country or subdivision information if we do not have postal or city information for an IP address, which may lead to inaccurate distance calculations.
+  The distance in kilometers from the shipping address to the billing address. We fall back to country or subdivision information if we do not have postal or city information for an IP address, which may lead to inaccurate distance calculations.
 
   [Learn how to use the shipping to billing address distance for risk analysis on our Knowledge Base.](https://support.maxmind.com/knowledge-base/articles/billing-and-shipping-address-risk-data-minfraud#distance)
   {{</minfraud-schema-row>}}
 
   {{< minfraud-schema-row key="is_in_ip_country" type="response" valueType="boolean"  insights="true" factors="true" >}}
-  This field is `true` if the address is in the IP country. The field is`false` when the address is not in the IP country. If the IP address could not be geolocated or no billing address was provided, the field will not be included in the response.
+  This field is `true` if the address is in the IP country. The field is `false` when the address is not in the IP country. If the IP address could not be geolocated or no shipping address was provided, the field will not be included in the response.
 
   [Learn how to use the IP location to country check for risk analysis on our Knowledge Base.](https://support.maxmind.com/knowledge-base/articles/billing-and-shipping-address-risk-data-minfraud#ip-geo-to-address-match)
   {{</minfraud-schema-row>}}
@@ -1159,7 +1166,7 @@ minFraud response.
   {{</minfraud-schema-row>}}
 
   {{< minfraud-schema-row key="is_in_ip_country" type="response" valueType="boolean"  insights="true" factors="true" >}}
-  This field is `true` if the address is in the IP country. The field is`false` when the address is not in the IP country. If the IP address could not be geolocated or no billing address was provided, the field will not be included in the response.
+  This field is `true` if the address is in the IP country. The field is `false` when the address is not in the IP country. If the IP address could not be geolocated or no billing address was provided, the field will not be included in the response.
 
   [Learn how to use the IP location to country check for risk analysis on our Knowledge Base.](https://support.maxmind.com/knowledge-base/articles/billing-and-shipping-address-risk-data-minfraud#ip-geo-to-address-match)
   {{</minfraud-schema-row>}}
@@ -1186,15 +1193,15 @@ minFraud response.
 
 {{< schema-table key="billing_phone" >}}
 
-  {{< minfraud-schema-row key="country" type="response" valueType="undefined"  insights="true" factors="true" >}}
+  {{< minfraud-schema-row key="country" type="response" valueType="string"  insights="true" factors="true" >}}
   A two-character [ISO 3166-1](https://en.wikipedia.org/wiki/ISO%5F3166-1) country code for the country associated with the billing phone number.
   {{</minfraud-schema-row>}}
 
-  {{< minfraud-schema-row key="network_operator" type="response" valueType="undefined"  insights="true" factors="true" >}}
+  {{< minfraud-schema-row key="network_operator" type="response" valueType="string"  insights="true" factors="true" >}}
   The name of the original network operator associated with the billing phone number. This field does not reflect phone numbers that have been ported from the original operator to another, nor does it identify [mobile virtual network operators](https://en.wikipedia.org/wiki/Mobile%5Fvirtual%5Fnetwork%5Foperator).
   {{</minfraud-schema-row>}}
 
-  {{< minfraud-schema-row key="number_type" type="response" valueType="undefined"  insights="true" factors="true" >}}
+  {{< minfraud-schema-row key="number_type" type="response" valueType="string"  insights="true" factors="true" >}}
   One of the following values: `fixed` or `mobile`. Additional values may be added in the future.
   {{</minfraud-schema-row>}}
 
@@ -1313,7 +1320,7 @@ present in the response.
 <!-- prettier-ignore-start -->
 
 {{< schema-table key="risk_score_reason" >}}
-  {{< minfraud-schema-row key="multiplier" type="response" valueType="Decimal" valueTypeNote="min: 0.01, max: 100" factors="true" >}}
+  {{< minfraud-schema-row key="multiplier" type="response" valueType="decimal" valueTypeNote="min: 0.01, max: 100" factors="true" >}}
   The factor by which the risk score is increased (if the value is greater than 1) or decreased (if the value is less than 1) for given risk reason(s). Multipliers greater than 1.5 and less than 0.66 are considered significant and lead to risk reason(s) being present.
   {{</minfraud-schema-row>}}
 
@@ -1326,7 +1333,7 @@ present in the response.
  | Code            |
  | --------------- |
  | ANONYMOUS\_IP           |
- |  COUNTRY                |
+ | COUNTRY                |
  | ORG\_DISTANCE\_RISK     |
   {{</minfraud-schema-row>}}
 
@@ -1347,7 +1354,7 @@ present in the response.
 {{< anchor-target schema--response--warnings >}}
 
 This array contains warning objects detailing issues with the request that was
-sent such as invalid or unknown inputs. It is highly recommended that you check
+sent, such as invalid or unknown inputs. It is highly recommended that you check
 this array for issues when integrating the web service.
 
 ```json
@@ -1372,7 +1379,7 @@ this array for issues when integrating the web service.
   | `BILLING_CITY_NOT_FOUND`     | The billing city could not be found in our database. This may impact our ability to provide accurate distance calculations.     |
   | `BILLING_COUNTRY_MISSING`     | Billing address information was provided without providing a billing country. This may impact our ability to provide accurate distance calculations.        |
   | `BILLING_COUNTRY_NOT_FOUND`  | The billing country could not be found in our database. This may impact our ability to provide accurate distance calculations.                                                                                                                            |
-  | `BILLING_POSTAL_NOT_FOUND`   | The billing postal could not be found in our database. This may impact our ability to provide accurate distance calculations.                                                                                                                             |
+  | `BILLING_POSTAL_NOT_FOUND`   | The billing postal code could not be found in our database. This may impact our ability to provide accurate distance calculations.                                                                                                                             |
   | `BILLING_REGION_NOT_FOUND`   | The billing region could not be found in our database. This may impact our ability to provide accurate distance calculations.                                                                                                                             |
   | `EMAIL_ADDRESS_UNUSABLE`      | The email address entered is likely incorrect due to an integration issue. To avoid false positives, it has not been used in scoring. Check how you are passing your [email address inputs](/minfraud/api-documentation/requests#schema--request--email). |
   | `INPUT_INVALID`                | The value associated with the key does not meet the required constraints, e.g., "United States" in a field that requires a two-letter country code.                                                                                                       |
@@ -1383,7 +1390,7 @@ this array for issues when integrating the web service.
   | `SHIPPING_CITY_NOT_FOUND`    | The shipping city could not be found in our database. This may impact our ability to provide accurate distance calculations.                                                                                                                              |
   | `SHIPPING_COUNTRY_MISSING`    | Shipping address information was provided without providing a shipping country. This may impact our ability to provide accurate distance calculations.                                                                                                    |
   | `SHIPPING_COUNTRY_NOT_FOUND` | The shipping country could not be found in our database. This may impact our ability to provide accurate distance calculations.                                                                                                                           |
-  | `SHIPPING_POSTAL_NOT_FOUND`  | The shipping postal could not be found in our database. This may impact our ability to provide accurate distance calculations.                                                                                                                            |
+  | `SHIPPING_POSTAL_NOT_FOUND`  | The shipping postal code could not be found in our database. This may impact our ability to provide accurate distance calculations.                                                                                                                            |
   | `SHIPPING_REGION_NOT_FOUND`  | The shipping region could not be found in our database. This may impact our ability to provide accurate distance calculations.                                                                                                                            |
   {{</minfraud-schema-row>}}
 
@@ -1393,7 +1400,7 @@ this array for issues when integrating the web service.
 
 
   {{< minfraud-schema-row key="input_pointer" type="response" valueType="string" valueTypeNote="format: json pointer" score="true" insights="true" factors="true" >}}
-  A [JSON Pointer](https://datatracker.ietf.org/doc/html/rfc6901) to the input field that the warning is associated with. For instance, if the warning was about the billing city, this would be `/billing/city`. If it was for the price in the second shopping cart item, it would be `/shopping_cart/1/price`
+  A [JSON Pointer](https://datatracker.ietf.org/doc/html/rfc6901) to the input field that the warning is associated with. For instance, if the warning was about the billing city, this would be `/billing/city`. If it was for the price in the second shopping cart item, it would be `/shopping_cart/1/price`.
   {{</minfraud-schema-row>}}
 
 {{</ schema-table >}}

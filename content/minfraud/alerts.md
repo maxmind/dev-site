@@ -5,7 +5,7 @@ title: minFraud Alerts
 
 After initial scoring, we continue to monitor transactions with risk scores less
 than or equal to 10 for another 24 hours. If we receive new information related
-to these transactions that lead to a transaction having a re-calculated risk
+to these transactions that leads to a transaction having a re-calculated risk
 score greater than or equal to 75, we send out a minFraud Alert.
 
 You can receive minFraud Alerts via email or webhook.
@@ -76,7 +76,7 @@ information. {{</minfraud-schema-row>}}
 The risk score as originally calculated. {{</minfraud-schema-row>}}
 
 {{< minfraud-schema-row key="postal" type="webhook" valueType="string" valueTypeNote="max length: 255" >}}
-The billing postal included in the original minFraud request.
+The billing postal code included in the original minFraud request.
 {{</minfraud-schema-row>}}
 
 {{< minfraud-schema-row key="reason" type="webhook" valueType="string" >}} A
@@ -113,7 +113,7 @@ Alert. These codes are subject to change.
 | `CARDER_EMAIL`     | Email on order was flagged as high-risk email, as it was associated with another high-risk order |
 | `HIGH_RISK_DEVICE` | Device ID has been marked as a high-risk device ID                                               |
 | `HIGH_RISK_IP`     | IP address has been marked as a high-risk IP                                                     |
-| `HOSTING_PROVIDER` | IP is from High Risk Hosting Provider                                                            |
+| `HOSTING_PROVIDER` | IP is from a high-risk hosting provider                                                          |
 | `MANUAL_REVIEW`    | The transaction was flagged as risky after manual review                                         |
 | `POSTAL_VELOCITY`  | IP address had high velocity of orders (e.g. different zip codes on same IP address)             |
 
