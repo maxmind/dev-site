@@ -7,10 +7,10 @@ title: GeoIP Anonymous Plus Databases
 development. New fields are expected to be added. Please design your
 integrations to expect new fields, and ensure you monitor updates to our
 [GeoIP release notes](/geoip/release-notes) to get notifications about new
-fields and changes to existing ones. {{</ alert>}}
+fields and changes to existing ones. {{</ alert >}}
 
 MaxMind's GeoIP Anonymous Plus database helps protect your business by
-identifying anonymized proxy traffic and reduce false positives based on
+identifying anonymized proxy traffic and reducing false positives based on
 confidence scores, timestamps, and VPN provider names.
 
 To learn more about the GeoIP Anonymous Plus database, please visit the
@@ -151,7 +151,7 @@ These are named `GeoIP-Anonymous-Plus-Blocks-IPv4.csv` and
         <td>provider_name</td>
         <td>string</td>
         <td>
-          The name of the VPN provider (e.g., NordVPN, SurfShark, etc.)
+          The name of the VPN provider (e.g., NordVPN, Surfshark, etc.)
           associated with the network.
           <br />
           Please note that MaxMind identifies a subset of VPN providers. A
