@@ -16,19 +16,19 @@ title: GeoIP and GeoLite Database Documentation
   text: "Determine geolocation data such as country, region, state, city, ZIP/postal code, and additional intelligence such as confidence factors, ISP, domain, and connection type."
 - heading: "Anonymous IP Databases"
   url: "/geoip/docs/databases/anonymous-ip"
-  text: "MaxMind's GeoIP Anonymous IP CSV database helps protect your business by identifying proxy, VPN, hosting, and other anonymous IP addresses."
+  text: "MaxMind's GeoIP Anonymous IP database helps protect your business by identifying proxy, VPN, hosting, and other anonymous IP addresses."
 - heading: "Anonymous Plus Databases"
   url: "/geoip/docs/databases/anonymous-plus"
-  text: "MaxMind's GeoIP Anonymous Plus database helps protect your business by identifying anonymized proxy traffic and reduce false positives based on confidence scores, timestamps, and VPN provider names."
+  text: "MaxMind's GeoIP Anonymous Plus database helps protect your business by identifying anonymized proxy traffic and reducing false positives based on confidence scores, timestamps, and VPN provider names."
 - heading: "ISP Databases"
   url: "/geoip/docs/databases/isp"
-  text: "Determine the Internet Service Provider, organization name, and autonomous system organization and number associated with an IP address."
+  text: "Determine the Internet Service Provider, organization name, and autonomous system number and organization associated with an IP address."
 - heading: "Connection Type Databases"
   url: "/geoip/docs/databases/connection-type"
-  text: "Determine the connection type of your visitors based on their IP address. The database identifies dial-up, cellular, cable/DSL, and corporate connection speeds."
+  text: "Determine the connection type of your visitors based on their IP address. The database identifies cellular, cable/DSL, corporate, and satellite connection types."
 - heading: "Domain Databases"
   url: "/geoip/docs/databases/domain"
-  text: "Look up the second level domain names associated with IPv4 and IPv6 addresses."
+  text: "Look up the second-level domain names associated with IPv4 and IPv6 addresses."
 - heading: "ASN Databases"
   url: "/geoip/docs/databases/asn"
   text: "Look up the autonomous system number and autonomous system organization associated with IPv4 and IPv6 addresses."
@@ -46,7 +46,7 @@ title: GeoIP and GeoLite Database Documentation
 | Apache                | N/A                                                                                     | [GitHub Pages](https://maxmind.github.io/mod_maxminddb/)  | [GitHub](https://github.com/maxmind/mod_maxminddb) |
 | C                     | N/A                                                                                     | [GitHub Pages](https://maxmind.github.io/libmaxminddb/)   | [GitHub](https://github.com/maxmind/libmaxminddb)  |
 | Java                  | [Maven Central Repository](https://search.maven.org/artifact/com.maxmind.geoip2/geoip2) | [GitHub Pages](https://maxmind.github.io/GeoIP2-java/)    | [GitHub](https://github.com/maxmind/GeoIP2-java)   |
-| Node.js               | [NPM](https://www.npmjs.com/package/@maxmind/geoip2-node)                               | [GitHub Pages](https://maxmind.github.io/GeoIP2-node/)    | [GitHub](https://github.com/maxmind/GeoIP2-node)   |
+| Node.js               | [npm](https://www.npmjs.com/package/@maxmind/geoip2-node)                               | [GitHub Pages](https://maxmind.github.io/GeoIP2-node/)    | [GitHub](https://github.com/maxmind/GeoIP2-node)   |
 | PHP                   | [Packagist](https://packagist.org/packages/geoip2/geoip2)                               | [GitHub Pages](https://maxmind.github.io/GeoIP2-php/)     | [GitHub](https://github.com/maxmind/GeoIP2-php)    |
 | Python                | [PyPI](https://pypi.org/project/geoip2/)                                                | [Read the Docs](https://geoip2.readthedocs.io/en/latest/) | [GitHub](https://github.com/maxmind/GeoIP2-python) |
 | Ruby                  | [RubyGems](https://rubygems.org/gems/maxmind-geoip2)                                    | [RubyDoc](https://www.rubydoc.info/gems/maxmind-geoip2)   | [GitHub](https://github.com/maxmind/GeoIP2-ruby)   |
@@ -55,8 +55,8 @@ title: GeoIP and GeoLite Database Documentation
 
 {{< alert warning >}} **Use at your own risk.**
 
-MaxMind does **_not_** offer support for these integrations. Please contact the
-integrator for assistance. {{</ alert >}}
+MaxMind does **_not_** offer support for these APIs. Please contact the
+maintainer for assistance. {{</ alert >}}
 
 | Language             | API Name                        | Package Repository                                                                          | Documentation                                                                      | Version Control                                              |
 | -------------------- | ------------------------------- | ------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------- | ------------------------------------------------------------ |
@@ -67,7 +67,7 @@ integrator for assistance. {{</ alert >}}
 | Crystal              | MaxMindDB.cr                    |                                                                                             | [README](https://github.com/delef/maxminddb.cr/blob/main/README.md)                | [GitHub](https://github.com/delef/maxminddb.cr)              |
 | D                    | dmaxminddb                      | [DUB](https://code.dlang.org/packages/dmaxminddb)                                           | [DUB](https://code.dlang.org/packages/dmaxminddb)                                  | [GitHub](https://github.com/maxpoulin64/dmaxminddb)          |
 | Dart                 | maxminddb                       | [pub.dev](https://pub.dev/packages/maxminddb)                                               | [pub.dev](https://pub.dev/documentation/maxminddb/latest/)                         | [GitHub](https://github.com/fischerscode/dart-maxmindDB)     |
-| Delphi               | MMDB Reader                     |                                                                                             | [README.md](https://github.com/optinsoft/MMDBReader/blob/master/README.md)         | [GitHub](https://github.com/optinsoft/MMDBReader)            |
+| Delphi               | MMDB Reader                     |                                                                                             | [README](https://github.com/optinsoft/MMDBReader/blob/master/README.md)            | [GitHub](https://github.com/optinsoft/MMDBReader)            |
 | Elixir               | Geolix                          | [Hex](https://hex.pm/packages/geolix)                                                       | [README](https://github.com/elixir-geolix/geolix/blob/master/README.md)            | [GitHub](https://github.com/elixir-geolix/geolix)            |
 | Erlang               | ego                             |                                                                                             | [README](https://github.com/jflatow/ego/blob/master/README)                        | [GitHub](https://github.com/jflatow/ego/tree/master)         |
 | Erlang               | geodata2                        |                                                                                             | [README](https://github.com/brigadier/geodata2/blob/master/README.md)              | [GitHub](https://github.com/brigadier/geodata2)              |
