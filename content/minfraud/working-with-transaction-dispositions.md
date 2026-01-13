@@ -217,7 +217,7 @@ to handle any valid HTTP 4xx or 5xx status code.
 | PERMISSION_REQUIRED    | 403 Forbidden              | You do not have permission to use the service. Please [contact our support team](https://support.maxmind.com/knowledge-base) for more information.                                         |
 | (none)                 | 406 Not Acceptable         | Your request included an `Accept-Charset` header that is not supported. `UTF-8` is the only acceptable character set.                                                                      |
 | (none)                 | 415 Unsupported Media Type | Your request included an `Accept` header that is not supported. The web service cannot return content of that type.                                                                        |
-| (none)                 | 503 Service Not Available  | There is a problem with the web service server. You can try this request again later.                                                                                                      |
+| (none)                 | 503 Service Unavailable    | There is a problem with the web service server. You can try this request again later.                                                                                                      |
 
 ### Example response to an unsuccessful request
 

@@ -360,7 +360,7 @@ to handle any valid HTTP 4xx or 5xx status code.
 | LICENSE_KEY_REQUIRED    | 401 Unauthorized           | You have not supplied a [MaxMind license key](https://www.maxmind.com/en/accounts/current/license-key) in the [Authorization](#authorization-and-security) header.                                                                                                                |
 | ACCOUNT_ID_REQUIRED     | 401 Unauthorized           | You have not supplied a [MaxMind account ID](https://support.maxmind.com/knowledge-base/articles/find-your-maxmind-account-id) in the [Authorization](#authorization-and-security) header.                                                                                        |
 | (none)                  | 415 Unsupported Media Type | Your request included a `Content-Type` header that is not supported. For `GET` requests, this means the web service cannot return content of that type. For `PUT` and `POST` queries, this means the web service cannot parse a request body of that type.                        |
-| (none)                  | 503 Service Not Available  | There is a problem with the web service server. You can try this request again later.                                                                                                                                                                                             |
+| (none)                  | 503 Service Unavailable    | There is a problem with the web service server. You can try this request again later.                                                                                                                                                                                             |
 
 ### Example using curl
 
