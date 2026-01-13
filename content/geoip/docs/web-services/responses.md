@@ -126,7 +126,7 @@ to handle any valid HTTP `4xx` or `5xx` status code.
         <td>
           The license key you have provided does not have sufficient funds to
           use this service. Please
-          <a href="https://www.maxmind.com/en/purchase-minfraud-services"
+          <a href="https://www.maxmind.com/en/geoip-api-web-services"
             >purchase more service credits</a
           >.
         </td>
@@ -159,11 +159,13 @@ to handle any valid HTTP `4xx` or `5xx` status code.
         <td>(none)</td>
         <td>415 Unsupported Media Type</td>
         <td>
-          Your request included a <code>Content-Type</code> header that is not
-          supported. For <code>GET</code> requests, this means the web service
-          cannot return content of that type. For <code>PUT</code> and
-          <code>POST</code> queries, this means the web service cannot parse a
-          request body of that type.
+          Your request included an <code>Accept</code> or
+          <code>Content-Type</code> header that is not supported. For
+          <code>GET</code> requests, this means the web service cannot return
+          content of the type specified in the <code>Accept</code> header. For
+          <code>PUT</code> and <code>POST</code> requests, this means the web
+          service cannot parse a request body of the type specified in the
+          <code>Content-Type</code> header.
         </td>
       </tr>
       <tr>
