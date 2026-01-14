@@ -151,8 +151,8 @@ These are named `GeoIP-Anonymous-Plus-Blocks-IPv4.csv` and
         <td>provider_name</td>
         <td>string</td>
         <td>
-          The name of the VPN provider (e.g., NordVPN, Surfshark, etc.)
-          associated with the network.
+          The name of the VPN provider (e.g., <code>nordvpn</code>,
+          <code>surfshark</code>) associated with the network.
           <br />
           Please note that MaxMind identifies a subset of VPN providers. A
           current list of VPN providers identified in the Anonymous Plus

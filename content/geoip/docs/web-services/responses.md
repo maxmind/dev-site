@@ -248,7 +248,7 @@ only.
   "is_residential_proxy": true,
   "is_tor_exit_node": true,
   "network_last_seen": "2025-01-15",
-  "provider_name": "NordVPN"
+  "provider_name": "nordvpn"
 }
 ```
 
@@ -320,7 +320,7 @@ only.
   {{</ geoip-schema-row >}}
 
   {{< geoip-schema-row key="provider_name" valueType="string" insights="true">}}
-  The name of the VPN provider (e.g., NordVPN, Surfshark, etc.) associated with the network.
+  The name of the VPN provider (e.g., `nordvpn`, `surfshark`) associated with the network.
 
   Please note that MaxMind identifies a subset of VPN providers. A current list of VPN providers identified in the Anonymous Plus database is available on request.
 
@@ -1412,7 +1412,7 @@ request.
     "is_residential_proxy": true,
     "is_tor_exit_node": true,
     "network_last_seen": "2025-01-15",
-    "provider_name": "NordVPN"
+    "provider_name": "nordvpn"
   },
   "traits": {
     "ip_address": "1.2.3.4",
