@@ -67,9 +67,9 @@ files:
           <code>{GeoIP2,GeoLite2}-{City,Country}-Locations-{locale}.csv</code>
         </td>
         <td>
-          Eight CSV files containing data on locations for each locale
-          code, where <code>{locale}</code> can be “de”, "en", “es”, “fr”,
-          “ja”, “pt-BR”, “ru”, and “zh-CN”.
+          Eight CSV files containing data on locations for each locale code,
+          where <code>{locale}</code> can be “de”, "en", “es”, “fr”, “ja”,
+          “pt-BR”, “ru”, and “zh-CN”.
         </td>
       </tr>
     </tbody>

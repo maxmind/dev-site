@@ -70,7 +70,8 @@ The files in the zip archive are:
         <td><code>GeoIP2-Enterprise-Locations-{locale}.csv</code></td>
         <td>
           CSV files containing data on locations. This may be cross referenced
-          with the various blocks files using the shared <code>geoname_id</code> key.
+          with the various blocks files using the shared
+          <code>geoname_id</code> key.
         </td>
       </tr>
     </tbody>

@@ -132,20 +132,23 @@ All strings are returned as ASCII.
           <p>The possible error codes are:</p>
           <ul>
             <li>
-              <code>PERMISSION_REQUIRED</code> – You do not have permission to use the
-              service. Please
+              <code>PERMISSION_REQUIRED</code> – You do not have permission to
+              use the service. Please
               <a href="https://support.maxmind.com/knowledge-base"
                 >contact our support team</a
               >
               for more information.
             </li>
-            <li><code>LICENSE_REQUIRED</code> – You must provide a license key.</li>
             <li>
-              <code>INVALID_LICENSE_KEY</code> – The license key provided is invalid.
+              <code>LICENSE_REQUIRED</code> – You must provide a license key.
             </li>
             <li>
-              <code>MAX_REQUESTS_REACHED</code> – This error will be returned if your
-              account is out of queries or if an invalid license key is
+              <code>INVALID_LICENSE_KEY</code> – The license key provided is
+              invalid.
+            </li>
+            <li>
+              <code>MAX_REQUESTS_REACHED</code> – This error will be returned if
+              your account is out of queries or if an invalid license key is
               provided.
             </li>
           </ul>

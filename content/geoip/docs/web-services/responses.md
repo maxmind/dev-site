@@ -80,8 +80,7 @@ to handle any valid HTTP `4xx` or `5xx` status code.
             >MaxMind account ID and/or license key</a
           >
           in the
-          <a
-            href="/geoip/docs/web-services/requests#authorization-and-security"
+          <a href="/geoip/docs/web-services/requests#authorization-and-security"
             >Authorization</a
           >
           header.
@@ -96,8 +95,7 @@ to handle any valid HTTP `4xx` or `5xx` status code.
             >MaxMind license key</a
           >
           in the
-          <a
-            href="/geoip/docs/web-services/requests#authorization-and-security"
+          <a href="/geoip/docs/web-services/requests#authorization-and-security"
             >Authorization</a
           >
           header.
@@ -113,8 +111,7 @@ to handle any valid HTTP `4xx` or `5xx` status code.
             >MaxMind account ID</a
           >
           in the
-          <a
-            href="/geoip/docs/web-services/requests#authorization-and-security"
+          <a href="/geoip/docs/web-services/requests#authorization-and-security"
             >Authorization</a
           >
           header.

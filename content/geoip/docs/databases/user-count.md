@@ -111,7 +111,8 @@ in the IPv6 file will be `null`. {{</ alert >}}
           address is contained within during the past 24 hours. This is not an
           exact count of individual users but rather a normalized value.
           <br />
-          These values should be greater than the values provided in <code>ipv4_32</code>
+          These values should be greater than the values provided in
+          <code>ipv4_32</code>
           because they are representative of the number of users across a larger
           number of IP addresses.
           <br />
@@ -132,7 +133,8 @@ in the IPv6 file will be `null`. {{</ alert >}}
           address is contained within during the past 24 hours. This is not an
           exact count of individual users but rather a normalized value.
           <br />
-          These values should be greater than the values provided in <code>ipv6_64</code>
+          These values should be greater than the values provided in
+          <code>ipv6_64</code>
           because they are representative of the number of users across a larger
           number of IP addresses.
           <br />
@@ -145,7 +147,6 @@ in the IPv6 file will be `null`. {{</ alert >}}
         </td>
       </tr>
     </tbody>
-
   </table>
 </div>
 {{</ rawhtml >}}
