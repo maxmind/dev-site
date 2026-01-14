@@ -57,8 +57,8 @@ yourself. Below are the steps to take to do this.
 
 ## Examples
 
-You can review the code in our client APIs to see how to normalize an email address
-in various languages.
+You can review the code in our client APIs to see how to normalize an email
+address in various languages.
 
 The links below point to specific commits for reference, but we recommend
 consulting the latest code in each repository to ensure you're following the

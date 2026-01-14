@@ -35,8 +35,8 @@ time.
 
 Not all errors include a JSON body. An error in content negotiation will not
 include a body, nor will many `5xx` errors, which typically happen outside of
-our web service request handling code. You should check the `Content-Type` header
-of an error response before attempting to decode the body as JSON.
+our web service request handling code. You should check the `Content-Type`
+header of an error response before attempting to decode the body as JSON.
 
 In addition to the errors documented below, client code should also be prepared
 to handle any valid HTTP `4xx` or `5xx` status code.
@@ -1204,14 +1204,14 @@ be less accurate. In addition, GeoLite Country requests will not return the
 
 ### GeoIP City Plus Body Example
 
-The following is an example of a full response to a GeoIP City Plus web
-service request.
+The following is an example of a full response to a GeoIP City Plus web service
+request.
 
 A GeoLite City request follows the same structure, but the data returned will be
 less accurate. In addition, GeoLite City requests will not return the
-`connection_type`, `domain`, `isp`, `mobile_country_code`, `mobile_network_code`,
-or `organization` values in the `traits` object, and it will not return the
-`maxmind` object.
+`connection_type`, `domain`, `isp`, `mobile_country_code`,
+`mobile_network_code`, or `organization` values in the `traits` object, and it
+will not return the `maxmind` object.
 
 ```json
 {

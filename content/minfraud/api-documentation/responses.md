@@ -49,8 +49,9 @@ outlined below:
 Errors may be returned with the `Content-Type` set to
 `application/vnd.maxmind.com-error+json; charset=UTF-8; version=2.0`. If this is
 the case, then the body of the response contains a JSON document with two keys,
-`code` and `error`. See the [Errors](/minfraud/api-documentation/responses/#errors)
-section for more details.
+`code` and `error`. See the
+[Errors](/minfraud/api-documentation/responses/#errors) section for more
+details.
 
 A `Content-Length` header will be provided.
 
@@ -65,8 +66,8 @@ time.
 
 Not all errors include a JSON body. An error in content negotiation will not
 include a body, nor will many `5xx` errors, which typically happen outside of
-our web service request handling code. You should check the `Content-Type` header
-of an error response before attempting to decode the body as JSON.
+our web service request handling code. You should check the `Content-Type`
+header of an error response before attempting to decode the body as JSON.
 
 In addition to the errors documented below, client code should also be prepared
 to handle any valid HTTP `4xx` or `5xx` status code.
