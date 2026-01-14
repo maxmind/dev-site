@@ -1,0 +1,87 @@
+diff_in,old_geoname_id,new_geoname_id,old_city_name,new_city_name,old_country_name,new_country_name,old_country_code,new_country_code,old_subdivision_codes,new_subdivision_codes
+city_name,2870791,2870791,Mittelbreese,Breese,Germany,Germany,DE,DE,BB,BB
+city_name,2862591,2862591,Niendorf an der Stecknitz,Niendorf/Stecknitz,Germany,Germany,DE,DE,SH,SH
+city_name,1254661,1254661,Thāne,Thane,India,India,IN,IN,MH,MH
+city_name,96965,96965,Diyālá,Diyala Governorate,Iraq,Iraq,IQ,IQ,DI,DI
+city_name,93540,93540,Maysan,Maysan Governorate,Iraq,Iraq,IQ,IQ,MA,MA
+city_name,99762,99762,Ad Dīwānīyah,Al Diwaniyah,Iraq,Iraq,IQ,IQ,QA,QA
+city_name,99347,99347,Hillah,Al Hillah,Iraq,Iraq,IQ,IQ,BB,BB
+city_name,89341,89341,Basra,Basra Governorate,Iraq,Iraq,IQ,IQ,BA,BA
+city_name,98530,98530,As Samawah,Samawah,Iraq,Iraq,IQ,IQ,MU,MU
+city_name,1863160,1863160,Haramachi,Higashiagatsuma,Japan,Japan,JP,JP,10,10
+city_name,3993456,3993456,Paracuaro,Parácuaro,Mexico,Mexico,MX,MX,MIC,MIC
+city_name,3979846,3979846,Zacapú,Zacapu,Mexico,Mexico,MX,MX,MIC,MIC
+city_name,4003923,4003923,Jiquílpan de Juárez,Jiquilpan de Juárez,Mexico,Mexico,MX,MX,MIC,MIC
+city_name,4019757,4019757,Acuítzio del Canje,Acuitzio del Canje,Mexico,Mexico,MX,MX,MIC,MIC
+city_name,4023964,4023964,Pastor Ortíz,Pastor Ortiz,Mexico,Mexico,MX,MX,MIC,MIC
+city_name,4013120,4013120,Comanjá,Comanja,Mexico,Mexico,MX,MX,MIC,MIC
+city_name,170905,170905,Dar'a,Daraa,Syria,Syria,SY,SY,DR,DR
+city_name,163345,163345,Tartous,Tartus,Syria,Syria,SY,SY,TA,TA
+city_name,709932,709932,Kamianske,Kamyanske,Ukraine,Ukraine,UA,UA,12,12
+city_name,697488,697488,Pesochin,Pisochyn,Ukraine,Ukraine,UA,UA,63,63
+geoname_id,11959657,3458729,Laurentino,Laurentino,Brazil,Brazil,BR,BR,SC,SC
+geoname_id,13103074,3446947,Tanque Novo,Tanque Novo,Brazil,Brazil,BR,BR,BA,BA
+geoname_id,3451203,3451202,Rio das Pedras,Rio das Pedras,Brazil,Brazil,BR,BR,SP,SP
+geoname_id,6323801,6316428,Araputanga,Araputanga,Brazil,Brazil,BR,BR,MT,MT
+geoname_id,6319359,3408577,São João da Baliza,São João da Baliza,Brazil,Brazil,BR,BR,RR,RR
+geoname_id,13003966,3472234,Angatuba,Angatuba,Brazil,Brazil,BR,BR,SP,SP
+geoname_id,3472960,3472957,Água Limpa,Água Limpa,Brazil,Brazil,BR,BR,MS,MS
+geoname_id,3459111,13020844,Lagoinha,Lagoinha,Brazil,Brazil,BR,BR,SP,SP
+geoname_id,3456277,6324162,Nobres,Nobres,Brazil,Brazil,BR,BR,MT,MT
+geoname_id,5966069,5966068,Greenfield,Greenfield,Canada,Canada,CA,CA,NS,NS
+geoname_id,6122716,6122714,Riverside,Riverside,Canada,Canada,CA,CA,NS,NS
+geoname_id,12031951,6075292,Mission,Mission,Canada,Canada,CA,CA,BC,BC
+geoname_id,5992136,5992135,Kinburn,Kinburn,Canada,Canada,CA,CA,ON,ON
+geoname_id,6154184,6154183,Springfield,Springfield,Canada,Canada,CA,CA,ON,ON
+geoname_id,5913692,5913693,Cambridge,Cambridge,Canada,Canada,CA,CA,NS,NS
+geoname_id,6090508,13118287,North River,North River,Canada,Canada,CA,CA,NL,NL
+geoname_id,5909490,5909489,Brooklyn,Brooklyn,Canada,Canada,CA,CA,NS,NS
+geoname_id,6139828,6139829,Salt Springs,Salt Springs,Canada,Canada,CA,CA,NS,NS
+geoname_id,8672594,8673349,Saint-Cyprien,Saint-Cyprien,Canada,Canada,CA,CA,QC,QC
+geoname_id,5955497,5955498,Forest,Forest,Canada,Canada,CA,CA,ON,ON
+geoname_id,5926754,5926753,Connaught,Connaught,Canada,Canada,CA,CA,ON,ON
+geoname_id,6180657,6180643,White Lake,White Lake,Canada,Canada,CA,CA,ON,ON
+geoname_id,6082314,6082316,Mount Pleasant,Mount Pleasant,Canada,Canada,CA,CA,ON,ON
+geoname_id,6182379,6182381,Willow Beach,Willow Beach,Canada,Canada,CA,CA,ON,ON
+geoname_id,6090614,6090615,North Shore,North Shore,Canada,Canada,CA,CA,NS,NS
+geoname_id,6091354,6091351,Notre-Dame-de-la-Salette,Notre-Dame-de-la-Salette,Canada,Canada,CA,CA,QC,QC
+geoname_id,6151194,6151193,Somerset,Somerset,Canada,Canada,CA,CA,NS,NS
+geoname_id,6001545,6001544,Lac-Bouchette,Lac-Bouchette,Canada,Canada,CA,CA,QC,QC
+geoname_id,6138936,6138922,Saint-Pierre,Saint-Pierre,Canada,Canada,CA,CA,QC,QC
+geoname_id,6174037,6174036,Victoria,Victoria,Canada,Canada,CA,CA,ON,ON
+geoname_id,5958108,5958107,French River,French River,Canada,Canada,CA,CA,ON,ON
+geoname_id,6177908,6177909,Wellington,Wellington,Canada,Canada,CA,CA,NS,NS
+geoname_id,6048676,6048677,Lakeside,Lakeside,Canada,Canada,CA,CA,NS,NS
+geoname_id,6159261,6159262,Summerville,Summerville,Canada,Canada,CA,CA,NS,NS
+geoname_id,12004353,3868194,Villa Alegre,Villa Alegre,Chile,Chile,CL,CL,ML,ML
+geoname_id,11967688,3882460,Los Álamos,Los Álamos,Chile,Chile,CL,CL,BI,BI
+geoname_id,11965967,3871524,Santa Juana,Santa Juana,Chile,Chile,CL,CL,BI,BI
+geoname_id,1974600,6728350,Xi'an,Xi'an,China,China,CN,CN,FJ,FJ
+geoname_id,3667286,3667287,Teorama,Teorama,Colombia,Colombia,CO,CO,NSA,NSA
+geoname_id,3621743,3621742,San Miguel,San Miguel,Costa Rica,Costa Rica,CR,CR,G,G
+geoname_id,1261040,1465914,Oragadam,Oragadam,India,India,IN,IN,TN,TN
+geoname_id,10843708,10400285,Biraul,Biraul,India,India,IN,IN,BR,BR
+geoname_id,11563057,13439303,Ammāpatti,Ammāpatti,India,India,IN,IN,TN,TN
+geoname_id,6591034,1646448,Cimahi,Cimahi,Indonesia,Indonesia,ID,ID,JB,JB
+geoname_id,7055784,13406312,Banjar Badung,Banjar Badung,Indonesia,Indonesia,ID,ID,BA,BA
+geoname_id,13406312,7055784,Banjar Badung,Banjar Badung,Indonesia,Indonesia,ID,ID,BA,BA
+geoname_id,9631838,9633085,Hirao,Hirao,Japan,Japan,JP,JP,29,29
+geoname_id,11135057,13401076,Bugambilias,Bugambilias,Mexico,Mexico,MX,MX,JAL,JAL
+geoname_id,3521574,3521575,Pichucalco,Pichucalco,Mexico,Mexico,MX,MX,CHP,CHP
+geoname_id,3822977,8583283,Othón P. Blanco,Othón P. Blanco,Mexico,Mexico,MX,MX,ROO,ROO
+geoname_id,1177660,1177662,Gujranwala,Gujranwala,Pakistan,Pakistan,PK,PK,PB,PB
+geoname_id,12173481,13448521,San Francisco,San Francisco,Paraguay,Paraguay,PY,PY,11,11
+geoname_id,1687801,7417465,Santiago,Santiago,Philippines,Philippines,PH,PH,"02, ISA","02, ISA"
+geoname_id,1690321,7575600,San Antonio,San Antonio,Philippines,Philippines,PH,PH,"03, ZMB","03, ZMB"
+geoname_id,3082743,3082744,Uszczyn,Uszczyn,Poland,Poland,PL,PL,10,10
+geoname_id,1022066,1022065,Atlanta,Atlanta,South Africa,South Africa,ZA,ZA,NW,NW
+geoname_id,983038,11428151,Letaba,Letaba,South Africa,South Africa,ZA,ZA,LP,LP
+geoname_id,2516932,6544442,Guadiaro,Guadiaro,Spain,Spain,ES,ES,"AN, CA","AN, CA"
+geoname_id,2693368,2693369,Lycke,Lycke,Sweden,Sweden,SE,SE,O,O
+geoname_id,1612419,1612420,Ban Tha Sala,Ban Tha Sala,Thailand,Thailand,TH,TH,25,25
+geoname_id,1906691,1606807,Sa Kaeo,Sa Kaeo,Thailand,Thailand,TH,TH,27,27
+geoname_id,1601454,13409172,Ban Muang,Ban Muang,Thailand,Thailand,TH,TH,41,41
+geoname_id,1149698,1151416,Phetchaburi,Phetchaburi,Thailand,Thailand,TH,TH,76,76
+geoname_id,2638488,12262593,Saunderton,Saunderton,United Kingdom,United Kingdom,GB,GB,"ENG, BKM","ENG, BKM"
+geoname_id,13274969,13280479,Pentre,Pentre,United Kingdom,United Kingdom,GB,GB,"WLS, FLN","WLS, FLN"
+subdivision_codes,2659568,2659568,Moutier,Moutier,Switzerland,Switzerland,CH,CH,BE,JU
