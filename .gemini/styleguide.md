@@ -41,6 +41,13 @@ Documentation errors directly impact customers integrating with MaxMind APIs, so
 - "rather than" (not "rather the")
 - Check for incorrect verb forms in context: "completing surveys" vs "complete surveys" depending on context
 
+### Parallel Structure
+
+- Use parallel verb forms in lists and compound phrases:
+  - "identifying... and reducing" (not "identifying... and reduce")
+  - "helps protect your business by identifying proxy traffic and reducing false positives"
+- Ensure subject-verb agreement in parenthetical clarifications: "The last 3 often default to" (not "defaults to" when subject is plural)
+
 ## Punctuation
 
 ### Periods
@@ -54,8 +61,14 @@ Documentation errors directly impact customers integrating with MaxMind APIs, so
 
 - Use commas before the final item in a list of three or more (Oxford comma): "resellers, payment providers, gateways, and affiliate networks"
 - Use commas after introductory conditional phrases: "If you don't, you will receive..."
+- Use commas after introductory adverbs: "Currently, we will only provide..." (not "Currently we will...")
+- Use commas after introductory transitional words: "Instead, we recommend..." (not "Instead we recommend...")
 - Use commas between independent clauses joined by conjunctions: "Likewise, we never return a risk score of 100"
 - Ensure space after commas: "client APIs, and" (not "client APIs,and")
+
+### Colons
+
+- Use a colon (not a period) before introducing a list: "one of the following values:" (not "one of the following values.")
 
 ### Spacing Around Code Formatting
 
@@ -91,6 +104,9 @@ Watch for accidentally duplicated words or phrases:
 ### External Brand Names
 
 - "SafeKey" (not "Safekey")
+- "Surfshark" (not "SurfShark") - VPN provider
+- "npm" (not "NPM") - Node.js package manager
+- "Knowledge Base" (capitalized when referring to MaxMind's Knowledge Base)
 - Verify capitalization of third-party product and company names
 
 ### Acronyms
@@ -115,8 +131,10 @@ Watch for accidentally duplicated words or phrases:
 ### File Names and Paths
 
 - Verify file names match actual file naming conventions
+- Use lowercase file extensions: `.csv` (not `.CSV`)
 - Check for double slashes in paths: "/static/csv/file.csv" (not "/static/csv//file.csv")
 - Verify CSV file name patterns match documented conventions
+- Use consistent placeholder formats in file name patterns: `{locale}` (not `XX`)
 
 ## Cross-References and Links
 
@@ -125,6 +143,13 @@ Watch for accidentally duplicated words or phrases:
 - Verify links point to the correct documentation section
 - Check that anchor links reference the correct target (e.g., billing links to billing section, not shipping)
 - Ensure links to request documentation don't accidentally point to response documentation and vice versa
+- Prefer explicit links over vague references: "[Response Body section](/path#anchor)" (not "the Response Body section below")
+
+### Link Text
+
+- Link text should accurately describe the destination:
+  - "README" (not "README.md") for README link text
+- Ensure purchase links point to the correct product: GeoIP pages should link to GeoIP purchase pages, not minFraud
 
 ### Product References
 
@@ -137,8 +162,15 @@ Watch for accidentally duplicated words or phrases:
 
 - Use consistent terminology throughout:
   - "postal code" (not sometimes "postal" and sometimes "postal code")
-  - "two-character" with hyphen when used as an adjective
+  - "endpoint" (one word, not "end point")
+  - "end user" (two words as a noun, but "end-user" as an adjective)
+  - "real-time" (hyphenated, not "realtime")
+  - "second-level" (hyphenated when used as an adjective: "second-level domain")
+  - "two-part" (hyphenated when used as an adjective: "two-part versions")
+  - "two-character" (hyphenated when used as an adjective)
   - "floating-point number" (not "floating number")
+  - "connection types" (not "connection speeds" when describing connection type data)
+  - "requests" (not "queries" when referring to HTTP requests)
 
 ### Placeholder Formats
 
@@ -158,10 +190,20 @@ Watch for accidentally duplicated words or phrases:
 - Remove trailing whitespace from lines
 - Verify table alignment characters are consistent
 
+### Hugo Shortcodes
+
+- Include a space before the closing delimiter in shortcodes: `{{</ alert >}}` (not `{{</ alert>}}`)
+
 ### Code Blocks
 
 - Ensure code comments are properly closed (e.g., no unclosed backticks in comments)
 - Verify code examples use correct syntax for the language
+
+### Inline Code Formatting
+
+- Format field names as code when referenced in prose: `ipv4_32` (not plain text ipv4_32)
+- Format file names in examples as code: `GeoIP2-Enterprise-Locations-en.csv`
+- Format time zone identifiers as code: `America/New_York` (not quoted "America/New_York")
 
 ## Content Accuracy
 
@@ -176,3 +218,21 @@ Watch for accidentally duplicated words or phrases:
 - "Response API documentation" when linking to responses (not "Request API documentation")
 - "output" when describing response fields (not "input")
 - Verify that "above" and "below" references point in the correct direction relative to their position
+
+### Word Order
+
+- "location data" (not "data location")
+- "autonomous system number and organization" (number is the primary identifier, list it first)
+
+### Contextual Accuracy
+
+- Field descriptions should reference the correct parent object:
+  - In `registered_country` section: "not included in the `registered_country` object" (not `country` object)
+  - In `represented_country` section: "not included in the `represented_country` object" (not `country` object)
+- Knowledge Base links should match their descriptive text (link text should describe what user will see/do)
+
+## Page Titles
+
+### Database Documentation
+
+- Database page titles should be plural: "GeoLite ASN Databases" (not "GeoLite ASN Database")

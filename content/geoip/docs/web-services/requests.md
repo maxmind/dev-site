@@ -78,11 +78,11 @@ you must accept one of the following:
 - `application/vnd.maxmind.com-country+json`
 - `application/vnd.maxmind.com-country+json; charset=UTF-8; version=2.1`
 
-Substitute the appropriate service's type for "country". A request for any other
+Substitute the appropriate service type for "country". A request for any other
 MIME type will result in a `415 Unsupported Media Type` error.
 
 If you set the `Accept-Charset` header in your client code, you must accept the
-`UTF-8` character set. If you don't you will receive a `406 Not Acceptable`
+`UTF-8` character set. If you don't, you will receive a `406 Not Acceptable`
 response.
 
 ## Troubleshooting IP Lookups

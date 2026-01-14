@@ -12,7 +12,7 @@ outlined below:
 | Service         | Content-Type                                                            |
 | --------------- | ----------------------------------------------------------------------- |
 | GeoIP Country   | `application/vnd.maxmind.com-country+json; charset=UTF-8; version=2.1`  |
-| GeoIP City      | `application/vnd.maxmind.com-city+json; charset=UTF-8; version=2.1`     |
+| GeoIP City Plus | `application/vnd.maxmind.com-city+json; charset=UTF-8; version=2.1`     |
 | GeoIP Insights  | `application/vnd.maxmind.com-insights+json; charset=UTF-8; version=2.1` |
 | GeoLite Country | `application/vnd.maxmind.com-country+json; charset=UTF-8; version=2.1`  |
 | GeoLite City    | `application/vnd.maxmind.com-city+json; charset=UTF-8; version=2.1`     |
@@ -35,8 +35,8 @@ time.
 
 Not all errors include a JSON body. An error in content negotiation will not
 include a body, nor will many `5xx` errors, which typically happen outside of
-our web service request handling code. You should check the `Content-Type` type
-of an error response before attempting to decode the body as JSON.
+our web service request handling code. You should check the `Content-Type`
+header of an error response before attempting to decode the body as JSON.
 
 In addition to the errors documented below, client code should also be prepared
 to handle any valid HTTP `4xx` or `5xx` status code.
@@ -80,8 +80,7 @@ to handle any valid HTTP `4xx` or `5xx` status code.
             >MaxMind account ID and/or license key</a
           >
           in the
-          <a
-            href="/geoip/docs/web-services/requests#authorization-and-security"
+          <a href="/geoip/docs/web-services/requests#authorization-and-security"
             >Authorization</a
           >
           header.
@@ -96,8 +95,7 @@ to handle any valid HTTP `4xx` or `5xx` status code.
             >MaxMind license key</a
           >
           in the
-          <a
-            href="/geoip/docs/web-services/requests#authorization-and-security"
+          <a href="/geoip/docs/web-services/requests#authorization-and-security"
             >Authorization</a
           >
           header.
@@ -113,8 +111,7 @@ to handle any valid HTTP `4xx` or `5xx` status code.
             >MaxMind account ID</a
           >
           in the
-          <a
-            href="/geoip/docs/web-services/requests#authorization-and-security"
+          <a href="/geoip/docs/web-services/requests#authorization-and-security"
             >Authorization</a
           >
           header.
@@ -126,7 +123,7 @@ to handle any valid HTTP `4xx` or `5xx` status code.
         <td>
           The license key you have provided does not have sufficient funds to
           use this service. Please
-          <a href="https://www.maxmind.com/en/purchase-minfraud-services"
+          <a href="https://www.maxmind.com/en/geoip-api-web-services"
             >purchase more service credits</a
           >.
         </td>
@@ -159,11 +156,13 @@ to handle any valid HTTP `4xx` or `5xx` status code.
         <td>(none)</td>
         <td>415 Unsupported Media Type</td>
         <td>
-          Your request included a <code>Content-Type</code> header that is not
-          supported. For <code>GET</code> requests, this means the web service
-          cannot return content of that type. For <code>PUT</code> and
-          <code>POST</code> queries, this means the web service cannot parse a
-          request body of that type.
+          Your request included an <code>Accept</code> or
+          <code>Content-Type</code> header that is not supported. For
+          <code>GET</code> requests, this means the web service cannot return
+          content of the type specified in the <code>Accept</code> header. For
+          <code>PUT</code> and <code>POST</code> requests, this means the web
+          service cannot parse a request body of the type specified in the
+          <code>Content-Type</code> header.
         </td>
       </tr>
       <tr>
@@ -225,7 +224,7 @@ The data returned in the document will be in UTF-8 encoding.
 For full examples of response bodies, select one of the following:
 
 - [GeoIP Country Body Example](#geoip-country-body-example)
-- [GeoIP City Body Example](#geoip-city-body-example)
+- [GeoIP City Plus Body Example](#geoip-city-plus-body-example)
 - [GeoIP Insights Body Example](#geoip-insights-body-example)
 
 ### Anonymizer
@@ -246,7 +245,7 @@ only.
   "is_residential_proxy": true,
   "is_tor_exit_node": true,
   "network_last_seen": "2025-01-15",
-  "provider_name": "NordVPN"
+  "provider_name": "nordvpn"
 }
 ```
 
@@ -256,7 +255,7 @@ only.
   {{< geoip-schema-row key="confidence" valueType="integer" valueTypeNote="min: 1, max: 99" insights="true">}}
   A score ranging from 1 to 99 that represents our percent confidence that the network is currently part of an actively used VPN service.
 
-  Currently we will only provide values of 30 and 99, but the number of values will increase as we improve our confidence ratings.
+  Currently, we will only provide values of 30 and 99, but the number of values will increase as we improve our confidence ratings.
 
   [Learn more about anonymizer confidence on our Knowledge Base.](https://support.maxmind.com/knowledge-base/articles/anonymizer-and-proxy-data-maxmind)
   {{</ geoip-schema-row >}}
@@ -318,7 +317,7 @@ only.
   {{</ geoip-schema-row >}}
 
   {{< geoip-schema-row key="provider_name" valueType="string" insights="true">}}
-  The name of the VPN provider (e.g., NordVPN, SurfShark, etc.) associated with the network.
+  The name of the VPN provider (e.g., `nordvpn`, `surfshark`) associated with the network.
 
   Please note that MaxMind identifies a subset of VPN providers. A current list of VPN providers identified in the Anonymous Plus database is available on request.
 
@@ -508,6 +507,7 @@ associated with the IP address.
   "latitude": 37.6293,
   "longitude": -122.1163,
   "metro_code": 807,
+  "population_density": 1234,
   "time_zone": "America/Los_Angeles"
 }
 ```
@@ -560,7 +560,7 @@ associated with the IP address.
   {{</ geoip-schema-row >}}
 
   {{< geoip-schema-row key="time_zone" valueType="string" city="true" insights="true">}}
-  The time zone associated with location, as specified by the [IANA Time Zone Database](https://www.iana.org/time-zones), e.g., "America/New\_York".
+  The time zone associated with the location, as specified by the [IANA Time Zone Database](https://www.iana.org/time-zones), e.g., `America/New_York`.
 
   [Learn more about time zone data on our Knowledge Base.](https://support.maxmind.com/knowledge-base/articles/maxmind-ip-geolocation-data#time-zone)
   {{</ geoip-schema-row >}}
@@ -593,9 +593,9 @@ with the IP address.
   * United Kingdom: 2-4
   * Brazil: 5
   * Ireland: 3
-  * Japan: 7 (specified for the first 6. The last digit defaults to 1)
+  * Japan: 7 (accurate for the first 6 digits. The last digit defaults to 1)
   * Netherlands: 4
-  * Portugal: 7 (accurate for the first 4. The last 3 often defaults to `-001`)
+  * Portugal: 7 (accurate for the first 4 digits. The last 3 often default to `-001`)
   * Singapore: 2
 
   [Learn more about postal code data on our Knowledge Base.](https://support.maxmind.com/knowledge-base/articles/maxmind-ip-geolocation-data#codes)
@@ -647,7 +647,7 @@ which the ISP has registered the IP address.
   {{</ geoip-schema-row >}}
 
   {{< geoip-schema-row key="is_in_european_union" valueType="boolean" country="true" city="true" insights="true">}}
-  This is `true` if the country is a member state of the European Union. Otherwise, the key is not included in the `country` object.
+  This is `true` if the country is a member state of the European Union. Otherwise, the key is not included in the `registered_country` object.
 
   [Learn more about the European Union flag on our Knowledge Base.](https://support.maxmind.com/knowledge-base/articles/maxmind-ip-geolocation-data#eu-flag)
   {{</ geoip-schema-row >}}
@@ -706,7 +706,7 @@ represented by an overseas military base.
   {{</ geoip-schema-row >}}
 
   {{< geoip-schema-row key="is_in_european_union" valueType="boolean" country="true" city="true" insights="true">}}
-  This is `true` if the country is a member state of the European Union. Otherwise, the key is not included in the `country` object.
+  This is `true` if the country is a member state of the European Union. Otherwise, the key is not included in the `represented_country` object.
 
   [Learn more about the European Union flag on our Knowledge Base.](https://support.maxmind.com/knowledge-base/articles/maxmind-ip-geolocation-data#eu-flag)
   {{</ geoip-schema-row >}}
@@ -726,7 +726,7 @@ represented by an overseas military base.
   {{< geoip-schema-row key="type" valueType="string" country="true" city="true" insights="true">}}
   The type of represented country. Currently limited to `military`, but may include other types in the future.
 
-  [Learn more about localized geolocation names on our Knowledge Base.](https://support.maxmind.com/knowledge-base/articles/maxmind-ip-geolocation-data#names)
+  [Learn more about represented countries on our Knowledge Base.](https://support.maxmind.com/knowledge-base/articles/country-level-and-city-level-geolocation-maxmind)
   {{</ geoip-schema-row >}}
 {{</ schema-table >}}
 
@@ -846,7 +846,7 @@ address.
   {{</ geoip-schema-row >}}
 
   {{< geoip-schema-row key="domain" valueType="string" city="true" insights="true">}}
-  The second level domain associated with the IP address. This will be something like “example.com” or “example.co.uk”, not “foo.example.com”.
+  The second-level domain associated with the IP address. This will be something like “example.com” or “example.co.uk”, not “foo.example.com”.
 
   **This field is not present in the GeoLite City web service.**
 
@@ -860,7 +860,7 @@ address.
   {{< geoip-schema-row key="ip_risk_snapshot" valueType="decimal" valueTypeNote="min: 0.01, max: 99" insights="true">}}
   This field contains the risk associated with the IP address. The value ranges from 0.01 to 99. A higher score indicates a higher risk.
 
-  Please note that the IP risk score provided in GeoIP products and services is more static than the IP risk score provided in minFraud and is not responsive to traffic on your network. If you need realtime IP risk scoring based on behavioral signals on your own network, please use minFraud.
+  Please note that the IP risk score provided in GeoIP products and services is more static than the IP risk score provided in minFraud and is not responsive to traffic on your network. If you need real-time IP risk scoring based on behavioral signals on your own network, please use minFraud.
   
   We do not provide an IP risk snapshot for low-risk networks. If this field is not populated, we either do not have signals for the network or the signals we have show that the network is low-risk. If you would like to get signals for low-risk networks, please use the minFraud web services.
   {{</ geoip-schema-row >}}
@@ -988,7 +988,7 @@ address.
   * `search_engine_spider`
   * `traveler`
 
-    [Learn more about the user type on our Knowledge Base.](https://support.maxmind.com/knowledge-base/articles/maxmind-user-context-data#user-types)
+  [Learn more about the user type on our Knowledge Base.](https://support.maxmind.com/knowledge-base/articles/maxmind-user-context-data#user-types)
   {{</ geoip-schema-row >}}
 {{</ schema-table >}}
 
@@ -1011,7 +1011,7 @@ account.
 
 {{< schema-table key="maxmind" >}}
   {{< geoip-schema-row key="queries_remaining" valueType="integer" country="true" city="true" insights="true">}}
-  The approximate number of remaining queries available for the end point which is being called.
+  The approximate number of remaining queries available for the endpoint that is being called.
 
   **This field is not present in the GeoLite City web service.**
   {{</ geoip-schema-row >}}
@@ -1100,7 +1100,7 @@ not have any name data at all for a given object.
 `names` field as a key in a database or map/dict/hash data structure.
 {{</ alert >}}
 
-These names may change between releases. Instead we recommend using one of the
+These names may change between releases. Instead, we recommend using one of the
 following:
 
 | Data object                                                | Recommended key            |
@@ -1114,8 +1114,8 @@ following:
 ## Example Response Bodies
 
 Each service returns data as a JSON document. The document that is returned
-always consists of an object (aka map or hash). Below are the schema definitions
-that describe each service's response body.
+always consists of an object (aka map or hash). Below are full examples of each
+service's response body.
 
 ### GeoIP Country Body Example
 
@@ -1199,15 +1199,16 @@ be less accurate. In addition, GeoLite Country requests will not return the
 }
 ```
 
-### GeoIP City Body Example
+### GeoIP City Plus Body Example
 
 The following is an example of a full response to a GeoIP City Plus web service
 request.
 
 A GeoLite City request follows the same structure, but the data returned will be
-less accurate. In addition, GeoLite City requests will not return the `domain`,
-`isp`, or `organization` values in the `traits` object, and it will not return
-the `maxmind` object.
+less accurate. In addition, GeoLite City requests will not return the
+`connection_type`, `domain`, `isp`, `mobile_country_code`,
+`mobile_network_code`, or `organization` values in the `traits` object, and it
+will not return the `maxmind` object.
 
 ```json
 {
@@ -1408,7 +1409,7 @@ request.
     "is_residential_proxy": true,
     "is_tor_exit_node": true,
     "network_last_seen": "2025-01-15",
-    "provider_name": "NordVPN"
+    "provider_name": "nordvpn"
   },
   "traits": {
     "ip_address": "1.2.3.4",
@@ -1453,7 +1454,8 @@ request.
     "longitude": -122.1163,
     "metro_code": 807,
     "time_zone": "America/Los_Angeles",
-    "average_income": 128321
+    "average_income": 128321,
+    "population_density": 1234
   },
   "postal": {
     "code": "90001",

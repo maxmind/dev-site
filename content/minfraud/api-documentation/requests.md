@@ -63,8 +63,8 @@ response.
 Currently minFraud Score, minFraud Insights, and minFraud Factors use the same
 request document format. The request consists of a JSON object with one or more
 of the fields shown below. Each key in the top-level object maps to an object or
-array as described below. New fields that apply to one or more services may be added in
-the future.
+array as described below. New fields that apply to one or more services may be
+added in the future.
 
 String fields are limited to no more than 255 valid Unicode characters unless a
 shorter length is specified; the null and newline characters are forbidden. Of
@@ -242,7 +242,8 @@ transaction.
 
 {{< anchor-target schema--request--event >}}
 
-`event` is a JSON object that contains general information related to the event being scored.
+`event` is a JSON object that contains general information related to the event
+being scored.
 
 ```json
 {

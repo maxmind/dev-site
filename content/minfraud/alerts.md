@@ -209,4 +209,5 @@ func verifySignature(secret, header, query string) (bool, error) {
 {{</ codeset >}}
 
 To avoid [timing attacks](https://en.wikipedia.org/wiki/Timing_attack), please
-use a secure comparison function rather than the equals operator of your language.
+use a secure comparison function rather than the equals operator of your
+language.

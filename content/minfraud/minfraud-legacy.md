@@ -902,10 +902,10 @@ signed up for the service. The latest version is 1.3.
           <a href="https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2"
             >ISO 3166-1 alpha-2</a
           >
-          country code associated with the location of the majority
-          of customers using this credit card as determined by their billing
-          address. In cases where the location of customers is highly mixed,
-          this defaults to the country of the bank issuing the card.
+          country code associated with the location of the majority of customers
+          using this credit card as determined by their billing address. In
+          cases where the location of customers is highly mixed, this defaults
+          to the country of the bank issuing the card.
           <strong
             >This field is returned for premium service level queries. For
             standard service level queries the field is only returned if the
@@ -919,10 +919,10 @@ signed up for the service. The latest version is 1.3.
         <td>enum</td>
         <td>
           This field can be either <strong>Yes</strong>, <strong>No</strong>,
-          <strong>NotFound</strong>, or <strong>NA</strong>. It indicates whether
-          the credit card’s bank name matches the <em>binName</em> input field.
-          The <strong>NotFound</strong> response means that we could not find a
-          match for the provided <em>bin</em> input field. The
+          <strong>NotFound</strong>, or <strong>NA</strong>. It indicates
+          whether the credit card’s bank name matches the <em>binName</em> input
+          field. The <strong>NotFound</strong> response means that we could not
+          find a match for the provided <em>bin</em> input field. The
           <strong>NA</strong> response means that you did not provide a
           <em>binName</em> in the input.
         </td>
@@ -946,12 +946,12 @@ signed up for the service. The latest version is 1.3.
         <td>enum</td>
         <td>
           This field can be either <strong>Yes</strong>, <strong>No</strong>,
-          <strong>NotFound</strong>, or <strong>NA</strong>. It indicates whether
-          the credit card’s bank phone number matches the <em>binPhone</em> input field.
-          The <strong>NotFound</strong> response means that we could not find a
-          match for the provided <em>bin</em> input field. The
-          <strong>NA</strong> response means that you did not provide a
-          <em>binPhone</em> in the input.
+          <strong>NotFound</strong>, or <strong>NA</strong>. It indicates
+          whether the credit card’s bank phone number matches the
+          <em>binPhone</em> input field. The <strong>NotFound</strong> response
+          means that we could not find a match for the provided
+          <em>bin</em> input field. The <strong>NA</strong> response means that
+          you did not provide a <em>binPhone</em> in the input.
         </td>
         <td>1.0</td>
       </tr>

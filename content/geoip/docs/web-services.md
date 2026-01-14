@@ -15,7 +15,7 @@ which also contain GeoIP Insights data, please
 for assistance. To better understand the differences between each minFraud
 service, review our
 [minFraud Service Plans and Pricing page](https://www.maxmind.com/en/solutions/fraud-prevention/plans-pricing)
-and the Response Body section below.
+and the [Response Body section](/geoip/docs/web-services/responses#response).
 
 ## Client APIs
 
@@ -170,7 +170,7 @@ help us investigate an issue:
 - Date and time frame (including time zone) that you experienced the issue
 - Your traceroute to `geoip.maxmind.com`
 
-[You can submit your support request on our knowledge base.](https://support.maxmind.com/knowledge-base)
+[You can submit your support request on our Knowledge Base.](https://support.maxmind.com/knowledge-base)
 
 ## Command Line (curl) Examples
 
@@ -191,7 +191,7 @@ the latitude and longitude coordinates.
 
 ## Versioning
 
-The GeoIP web services use two part versions. Our current release is version
+The GeoIP web services use two-part versions. Our current release is version
 2.1. The major version number will remain at 2 for the foreseeable future and
 will not change unless we are releasing an entirely new product ("GeoIP3").
 

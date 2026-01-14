@@ -3,8 +3,8 @@ draft: false
 title: GeoIP IP Risk Databases
 ---
 
-MaxMind's GeoIP IP Risk database contains all IP networks associated with
-non-corporate proxies, VPNs, and other anonymous IP addresses, and other IP
+MaxMind's GeoIP IP Risk database contains IP networks associated with
+non-corporate proxies, VPNs, and other anonymous IP addresses, as well as IP
 addresses associated with risky activity.
 
 To learn more about the GeoIP IP Risk database, please see the
