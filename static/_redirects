@@ -10,8 +10,6 @@
 /minfraud/release-notes/rss.xml /minfraud/release-notes/2025/index.xml 302
 
 # Legacy redirects - without splats (higher performance)
-/static/csv/codes/ap_country_list.csv /csv/codes/maxmind/ap_country_list.csv 301
-/static/csv/codes/eu_country_list.csv /csv/codes/maxmind/eu_country_list.csv 301
 /static/maxmind-region-codes.csv https://download.maxmind.com/download/geoip/misc/region_codes.csv 301
 /geoip/geoip2/release-notes /geoip/release-notes/ 302
 /geoip/geoip2/release-notes/ /geoip/release-notes/ 302
