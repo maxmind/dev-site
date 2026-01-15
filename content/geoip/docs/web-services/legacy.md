@@ -318,7 +318,7 @@ encoding is also referred to as latin1.
           taken from the
           <a href="https://www.iana.org/time-zones">IANA time zone database</a>.
           See the
-          <a href="/static/csv/codes/time_zone.csv">list of possible values</a>.
+          <a href="/csv/codes/time_zone.csv">list of possible values</a>.
         </td>
         <td></td>
         <td></td>

@@ -231,7 +231,7 @@ name would be `GeoIP2-Enterprise-Locations-en.csv`.
 
 {{< csv-example-files >}}
 
-- [GeoIP2-Enterprise-CSV_Example.zip](/static/GeoIP2-Enterprise-CSV_Example.zip)
+- [GeoIP2-Enterprise-CSV_Example.zip](/examples/GeoIP2-Enterprise-CSV_Example.zip)
   {{</ csv-example-files >}}
 
 ### MMDB Example Files

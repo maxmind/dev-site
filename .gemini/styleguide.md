@@ -132,7 +132,7 @@ Watch for accidentally duplicated words or phrases:
 
 - Verify file names match actual file naming conventions
 - Use lowercase file extensions: `.csv` (not `.CSV`)
-- Check for double slashes in paths: "/static/csv/file.csv" (not "/static/csv//file.csv")
+- Check for double slashes in paths: "/csv/file.csv" (not "/csv//file.csv")
 - Verify CSV file name patterns match documented conventions
 - Use consistent placeholder formats in file name patterns: `{locale}` (not `XX`)
 

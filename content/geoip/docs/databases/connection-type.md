@@ -84,7 +84,7 @@ These are named `GeoIP2-Connection-Type-Blocks-IPv4.csv` and
 
 {{< csv-example-files >}}
 
-- [GeoIP2-Connection-Type-CSV_Example.zip](/static/GeoIP2-Connection-Type-CSV_Example.zip)
+- [GeoIP2-Connection-Type-CSV_Example.zip](/examples/GeoIP2-Connection-Type-CSV_Example.zip)
   {{</ csv-example-files >}}
 
 ### MMDB Example Files

@@ -164,7 +164,7 @@ in the IPv6 file will be `null`. {{</ alert >}}
 
 {{< csv-example-files >}}
 
-- [GeoIP2-User-Count-CSV_Example.zip](/static/GeoIP2-User-Count-CSV_Example.zip)
+- [GeoIP2-User-Count-CSV_Example.zip](/examples/GeoIP2-User-Count-CSV_Example.zip)
   {{</ csv-example-files >}}
 
 ### MMDB Example Files

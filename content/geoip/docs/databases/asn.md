@@ -96,7 +96,7 @@ These are named `GeoLite2-ASN-Blocks-IPv4.csv` and
 
 {{< csv-example-files >}}
 
-- [GeoLite2-ASN-CSV_Example.zip](/static/GeoLite2-ASN-CSV_Example.zip)
+- [GeoLite2-ASN-CSV_Example.zip](/examples/GeoLite2-ASN-CSV_Example.zip)
   {{</ csv-example-files >}}
 
 ### MMDB Example Files

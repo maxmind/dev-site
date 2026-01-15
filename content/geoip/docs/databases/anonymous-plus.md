@@ -197,7 +197,7 @@ These are named `GeoIP-Anonymous-Plus-Blocks-IPv4.csv` and
 
 {{< csv-example-files >}}
 
-- [GeoIP-Anonymous-Plus-CSV_Example.zip](/static/GeoIP-Anonymous-Plus-CSV_Example.zip)
+- [GeoIP-Anonymous-Plus-CSV_Example.zip](/examples/GeoIP-Anonymous-Plus-CSV_Example.zip)
   {{</ csv-example-files >}}
 
 ### MMDB Example Files

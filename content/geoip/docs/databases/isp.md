@@ -158,7 +158,7 @@ respectively.
 
 {{< csv-example-files >}}
 
-- [GeoIP2-ISP-CSV_Example.zip](/static/GeoIP2-ISP-CSV_Example.zip)
+- [GeoIP2-ISP-CSV_Example.zip](/examples/GeoIP2-ISP-CSV_Example.zip)
   {{</ csv-example-files >}}
 
 ### MMDB Example Files
