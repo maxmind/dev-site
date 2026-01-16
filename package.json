@@ -9,6 +9,7 @@
     "@eslint/eslintrc": "^3.3.3",
     "@eslint/js": "^9.39.2",
     "@types/node": "^24.10.1",
+    "baseline-browser-mapping": "^2.9.15",
     "cspell": "^9.4.0",
     "eslint": "^9.39.2",
     "eslint-config-prettier": "^10.1.8",
@@ -49,7 +50,7 @@
     "lint:styles": "stylelint ./assets/scss/*.{css,scss,sass}",
     "lint:shortcode-parity": "node --experimental-strip-types ./bin/check-shortcode-parity.ts",
     "prettier:ts": "prettier --write './assets/js/**'",
-    "format:rawhtml": "npx tsc format-rawhtml.ts --outDir dist && node dist/format-rawhtml.js"
+    "format:rawhtml": "npx tsc -p tsconfig.format-rawhtml.json && node dist/format-rawhtml.js"
   },
   "version": "1.0.0"
 }
