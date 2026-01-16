@@ -95,7 +95,7 @@ These are named `GeoIP2-IP-Risk-Blocks-IPv4.csv` and
 
 {{< csv-example-files >}}
 
-- [GeoIP2-IP-Risk-CSV_Example.zip](/static/GeoIP2-IP-Risk-CSV_Example.zip)
+- [GeoIP2-IP-Risk-CSV_Example.zip](/examples/GeoIP2-IP-Risk-CSV_Example.zip)
   {{</ csv-example-files >}}
 
 ### MMDB Example Files

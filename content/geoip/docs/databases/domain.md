@@ -81,7 +81,7 @@ These are named `GeoIP2-Domain-Blocks-IPv4.csv` and
 
 {{< csv-example-files >}}
 
-- [GeoIP2-Domain-CSV_Example.zip](/static/GeoIP2-Domain-CSV_Example.zip)
+- [GeoIP2-Domain-CSV_Example.zip](/examples/GeoIP2-Domain-CSV_Example.zip)
   {{</ csv-example-files >}}
 
 ### MMDB Example Files

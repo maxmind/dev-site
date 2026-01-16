@@ -156,7 +156,7 @@ These are named `GeoIP2-Anonymous-IP-Blocks-IPv4.csv` and
 
 {{< csv-example-files >}}
 
-- [GeoIP2-Anonymous-IP-CSV_Example.zip](/static/GeoIP2-Anonymous-IP-CSV_Example.zip)
+- [GeoIP2-Anonymous-IP-CSV_Example.zip](/examples/GeoIP2-Anonymous-IP-CSV_Example.zip)
   {{</ csv-example-files >}}
 
 ### MMDB Example Files

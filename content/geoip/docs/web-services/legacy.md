@@ -314,11 +314,9 @@ encoding is also referred to as latin1.
         <td>Time zone</td>
         <td>string</td>
         <td>
-          The time zone associated with the IP address. Time zone names are
-          taken from the
-          <a href="https://www.iana.org/time-zones">IANA time zone database</a>.
-          See the
-          <a href="/static/csv/codes/time_zone.csv">list of possible values</a>.
+          The time zone associated with the IP address, as specified by the
+          <a href="https://www.iana.org/time-zones">IANA time zone database</a>,
+          e.g., <code>America/New_York</code>.
         </td>
         <td></td>
         <td></td>

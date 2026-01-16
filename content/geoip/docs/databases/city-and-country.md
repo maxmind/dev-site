@@ -125,8 +125,8 @@ locations files have the same columns as the City database.
 
 {{< csv-example-files >}}
 
-- [GeoIP2-City-CSV_Example.zip](/static/GeoIP2-City-CSV_Example.zip)
-- [GeoIP2-Country-CSV_Example.zip](/static/GeoIP2-Country-CSV_Example.zip)
+- [GeoIP2-City-CSV_Example.zip](/examples/GeoIP2-City-CSV_Example.zip)
+- [GeoIP2-Country-CSV_Example.zip](/examples/GeoIP2-Country-CSV_Example.zip)
   {{</ csv-example-files >}}
 
 ### MMDB Example Files
