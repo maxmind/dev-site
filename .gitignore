@@ -77,3 +77,6 @@ firebase.json
 
 # Cloudflare Pages headers
 static/_headers
+
+# Build dir for format-rawhtml.ts (npm run format:rawhtml)
+dist/
