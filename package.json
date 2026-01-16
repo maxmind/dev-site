@@ -49,7 +49,7 @@
     "lint:styles": "stylelint ./assets/scss/*.{css,scss,sass}",
     "lint:shortcode-parity": "node --experimental-strip-types ./bin/check-shortcode-parity.ts",
     "prettier:ts": "prettier --write './assets/js/**'",
-    "format:rawhtml": "npx tsc format-rawhtml.ts --outDir dist && node dist/format-rawhtml.js"
+    "format:rawhtml": "npx tsc -p tsconfig.format-rawhtml.json && node dist/format-rawhtml.js"
   },
   "version": "1.0.0"
 }
