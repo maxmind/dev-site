@@ -6,7 +6,7 @@ title: minFraud Legacy Web Service API
 {{< alert danger >}} We have made a number of data changes to the minFraud
 Legacy Standard and Premium, and GeoIP Legacy City and Insights (formerly Omni)
 web services. Please see our
-[blog post](https://blog.maxmind.com/2020/06/data-changes-to-geoip-legacy-and-minfraud-legacy-web-services-in-may-2022/)
+[blog post](https://blog.maxmind.com/data-changes-to-geoip-legacy-and-minfraud-legacy-web-services-in-may-2022/)
 for more information, and how to prepare. {{</ alert >}}
 
 {{< alert >}} **New minFraud APIs are available:** Please see
@@ -513,7 +513,7 @@ signed up for the service. The latest version is 1.3.
           <a href="https://en.wikipedia.org/wiki/FIPS_10-4">FIPS 10-4</a> code
           for all countries other than the United States and Canada. See our
           <a
-            href="https://blog.maxmind.com/2020/06/data-changes-to-geoip-legacy-and-minfraud-legacy-web-services-in-may-2022/"
+            href="https://blog.maxmind.com/data-changes-to-geoip-legacy-and-minfraud-legacy-web-services-in-may-2022/"
             >blog post</a
           >
           for more information.
@@ -558,7 +558,7 @@ signed up for the service. The latest version is 1.3.
           <strong
             >Deprecated. This field is empty. See our
             <a
-              href="https://blog.maxmind.com/2020/06/data-changes-to-geoip-legacy-and-minfraud-legacy-web-services-in-may-2022/"
+              href="https://blog.maxmind.com/data-changes-to-geoip-legacy-and-minfraud-legacy-web-services-in-may-2022/"
               >blog post</a
             >
             for more information.</strong
