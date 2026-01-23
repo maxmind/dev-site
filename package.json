@@ -29,7 +29,7 @@
   },
   "engines": {
     "node": ">=22.21.1",
-    "npm": ">=9"
+    "pnpm": ">=10"
   },
   "license": "MIT",
   "name": "dev-site",
@@ -42,15 +42,15 @@
   "scripts": {
     "build:headers": "node --experimental-strip-types bin/generate-headers.ts",
     "fix": "run-p fix:*",
-    "fix:scripts": "npm run lint:scripts --fix",
-    "fix:styles": "npm run lint:styles --fix",
+    "fix:scripts": "pnpm run lint:scripts --fix",
+    "fix:styles": "pnpm run lint:styles --fix",
     "lint": "run-p lint:*",
     "lint:cspell": "cspell '**/*.md' --no-summary --no-progress --color",
-    "lint:scripts": "tsc && npx eslint .  --max-warnings=0",
+    "lint:scripts": "tsc && pnpm exec eslint .  --max-warnings=0",
     "lint:styles": "stylelint ./assets/scss/*.{css,scss,sass}",
     "lint:shortcode-parity": "node --experimental-strip-types ./bin/check-shortcode-parity.ts",
     "prettier:ts": "prettier --write './assets/js/**'",
-    "format:rawhtml": "npx tsc -p tsconfig.format-rawhtml.json && node dist/format-rawhtml.js"
+    "format:rawhtml": "pnpm exec tsc -p tsconfig.format-rawhtml.json && node dist/format-rawhtml.js"
   },
   "version": "1.0.0"
 }

@@ -1,7 +1,7 @@
 [commands.lint-scripts]
 type = "lint"
 cmd = [
-  "npm",
+  "pnpm",
   "run",
   "lint:scripts"
 ]
@@ -12,7 +12,8 @@ ok-exit-codes = 0
 [commands.stylelint-styles]
 type="both"
 cmd = [
-  "npx",
+  "pnpm",
+  "exec",
   "stylelint"
 ]
 lint-flags = []
@@ -24,7 +25,8 @@ ok-exit-codes = 0
 [commands.prettier-scripts]
 type = "both"
 cmd = [
-  "npx",
+  "pnpm",
+  "exec",
   "prettier",
   "--write"
 ]
@@ -38,7 +40,7 @@ ok-exit-codes = 0
 type="lint"
 include = ["*.md"]
 cmd = [
-  "npm",
+  "pnpm",
   "run",
   "lint:cspell",
 ]
@@ -51,7 +53,8 @@ include = [
     "content/**/*.md"
 ]
 cmd = [
-    "npx",
+    "pnpm",
+    "exec",
     "prettier",
     "--parser",
     "markdown",
@@ -67,7 +70,7 @@ ignore-stderr = ["Code style issues"]
 [commands.format-content]
 type = "tidy"
 cmd = [
-  "npm",
+  "pnpm",
   "run",
   "format:rawhtml"
 ]
@@ -79,7 +82,7 @@ ok-exit-codes = 0
 [commands.check-shortcode-parity]
 type = "lint"
 cmd = [
-  "npm",
+  "pnpm",
   "run",
   "lint:shortcode-parity"
 ]
