@@ -22,22 +22,15 @@ jobs:
           fetch-depth: 0
           persist-credentials: false
 
-      - uses: actions/setup-node@6044e13b5dc448c55e2357c09f80417699197238 # v6.2.0
-        with:
-          cache: 'npm'
-          node-version-file: '.nvmrc'
+      - name: Setup mise
+        uses: jdx/mise-action@6d1e696aa24c1aa1bcc1adea0212707c71ab78a8 # v3.6.1
 
-      - name: Check that package-lock.json is valid JSON
-        run: jq empty package-lock.json
-
-      - run: npm ci
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
 
       - name: Fetch base ref
         if: ${{ github.event.pull_request }}
         run: git fetch origin "${BASE_REF}"
-
-      - name: Install precious
-        run: ./bin/install-precious /usr/local/bin
 
       - name: Select files
         id: select-files
