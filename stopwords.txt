@@ -38,6 +38,7 @@ Comcel
 CPAN
 CRAN
 DACOM
+DOCOMO
 Deno
 dialup
 Digi
