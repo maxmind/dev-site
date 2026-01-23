@@ -25,54 +25,33 @@
   - [Development Server](#development-server)
 - [Updating Release Notes for the New Year](#updating-release-notes-for-the-new-year)
 
-### Minimum Requirements
+### Prerequisites
 
-The minimum versions can be found in the [package.json file](package.json)
-under `engines`.
+This project uses [mise](https://mise.jdx.dev/) to manage tool versions
+(Node.js, Hugo, pnpm, precious, Dart Sass).
 
-If you need help installing and/or managing Node and NPM versions, check out
-[NVM](https://github.com/nvm-sh/nvm).
+#### Install mise
+
+```sh
+curl https://mise.jdx.dev/install.sh | sh
+```
+
+See the [mise installation guide](https://mise.jdx.dev/getting-started.html)
+for other installation methods.
 
 ### Installation
 
 ```sh
-npm install
+mise trust    # Trust the mise.toml configuration
+mise install  # Install all required tools (Node, Hugo, pnpm, etc.)
+pnpm install  # Install Node.js dependencies
 ```
 
-- `npm install` installs the necessary node modules for development.
-
-#### Install Precious
+#### Pre-commit Hooks
 
 You should install our pre-commit hook. You can do this from your checkout
 by running `git/setup.sh`. These hooks do things like ensure that the code you
 commit is tidy and passes various linter checks.
-
-#### Install Hugo
-
-##### Homebrew (macOS)
-
-```sh
-brew install hugo
-```
-
-##### Debian / Ubuntu
-
-It is recommended that you install
-[the latest release of Hugo](https://github.com/gohugoio/hugo/releases).
-For debian and ubuntu users, they offer a .deb file.
-
-##### Other OS
-
-See [Hugo Installation](https://gohugo.io/installation/)
-
-#### Install Embedded Dart Sass
-
-Download
-[Embedded Dart Sass](https://github.com/sass/dart-sass-embedded/releases) and
-make sure it is in your `$PATH`. This is necessary for Hugo to process SASS and
-SCSS files. See the
-[Hugo documentation](https://gohugo.io/functions/css/sass/#dart-sass) for more
-information.
 
 ### Development
 
@@ -97,7 +76,7 @@ directly**.
    and TypeScript type safety)
 2. Test your changes locally by generating the headers file:
    ```sh
-   npm run build:headers
+   pnpm run build:headers
    ```
 3. Commit only `bin/_headers.config.ts` - the `_headers` file will be
    generated automatically during deployment
@@ -105,7 +84,7 @@ directly**.
 ##### Build-Time Generation
 
 The headers file is generated automatically during deployment via `build.sh`.
-You can also generate it manually for local testing with `npm run build:headers`.
+You can also generate it manually for local testing with `pnpm run build:headers`.
 
 ### Updating Release Notes for the New Year
 
