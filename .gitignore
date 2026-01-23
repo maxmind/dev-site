@@ -34,6 +34,9 @@ build/Release
 node_modules/
 jspm_packages/
 
+# pnpm
+.pnpm-store/
+
 # Typescript v1 declaration files
 typings/
 
