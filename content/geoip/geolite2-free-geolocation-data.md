@@ -316,9 +316,9 @@ Get resources for understanding the benefits and limitations of IP geolocation
 and how MaxMind keeps its data safe and in line with privacy-by-design
 principles:
 
-- [“How accurate is IP geolocation?” on the MaxMind blog](https://blog.maxmind.com/2021/07/how-accurate-is-ip-geolocation/)
-- [“Using MaxMind’s accuracy radius” on the MaxMind blog](https://blog.maxmind.com/2022/06/using-maxminds-accuracy-radius/)
-- [“Safer IP geolocation with MaxMind” on the MaxMind blog](https://blog.maxmind.com/2023/08/safer-ip-geolocation/)
+- [“How accurate is IP geolocation?” on the MaxMind blog](https://blog.maxmind.com/how-accurate-is-ip-geolocation/)
+- [“Using MaxMind’s accuracy radius” on the MaxMind blog](https://blog.maxmind.com/using-maxminds-accuracy-radius/)
+- [“Safer IP geolocation with MaxMind” on the MaxMind blog](https://blog.maxmind.com/safer-ip-geolocation/)
 
 ### What can I do with paid MaxMind data?
 

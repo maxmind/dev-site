@@ -5,7 +5,7 @@ title: GeoIP Legacy Web Services
 
 {{< alert info >}} We have implemented recent changes to our GeoIP Legacy web
 services in line with the retirement of GeoIP Legacy Databases. Please see our
-[blog post](https://blog.maxmind.com/2020/06/data-changes-to-geoip-legacy-and-minfraud-legacy-web-services-in-may-2022/)
+[blog post](https://blog.maxmind.com/data-changes-to-geoip-legacy-and-minfraud-legacy-web-services-in-may-2022/)
 for more information. {{</ alert >}}
 
 {{< alert warning >}} **Note:** This documentation is for the GeoIP legacy
@@ -141,7 +141,7 @@ encoding is also referred to as latin1.
             <a href="https://en.wikipedia.org/wiki/FIPS_10-4">FIPS 10-4</a> code
             for all countries other than the United States and Canada. See our
             <a
-              href="https://blog.maxmind.com/2020/06/data-changes-to-geoip-legacy-and-minfraud-legacy-web-services-in-may-2022/"
+              href="https://blog.maxmind.com/data-changes-to-geoip-legacy-and-minfraud-legacy-web-services-in-may-2022/"
               >blog post detailing changes to our legacy web services</a
             >.
           </p>
@@ -200,7 +200,7 @@ encoding is also referred to as latin1.
               >Deprecated. This field will be empty in the updated legacy web
               service. See our
               <a
-                href="https://blog.maxmind.com/2020/06/data-changes-to-geoip-legacy-and-minfraud-legacy-web-services-in-may-2022/"
+                href="https://blog.maxmind.com/data-changes-to-geoip-legacy-and-minfraud-legacy-web-services-in-may-2022/"
                 >blog post detailing changes to our legacy web services</a
               >.</strong
             >
