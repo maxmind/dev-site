@@ -19,22 +19,20 @@ jobs:
           fetch-depth: 0
           persist-credentials: false
 
-      - name: Setup Hugo
-        uses: peaceiris/actions-hugo@75d2e84710de30f6ff7268e08f310b60ef14033f # 3.0.0
-        with:
-          hugo-version: 'latest'
-          extended: true
+      - name: Setup mise
+        uses: jdx/mise-action@6d1e696aa24c1aa1bcc1adea0212707c71ab78a8 # v3.6.1
 
-      - name: Install Dart Sass
-        run: sudo snap install dart-sass
+      - name: Verify Hugo version matches wrangler.toml
+        run: |
+          MISE_VERSION=$(mise current hugo)
+          WRANGLER_VERSION=$(grep -oP 'HUGO_VERSION\s*=\s*"\K[^"]+' wrangler.toml | head -1)
+          if [ "$MISE_VERSION" != "$WRANGLER_VERSION" ]; then
+            echo "::error::Hugo version mismatch: mise has $MISE_VERSION, wrangler.toml has $WRANGLER_VERSION"
+            exit 1
+          fi
 
-      - name: Setup Node.js
-        uses: actions/setup-node@6044e13b5dc448c55e2357c09f80417699197238 # v6.2.0
-        with:
-          node-version-file: '.nvmrc'
-
-      - name: Install Node dependencies
-        run: npm ci
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
 
       - name: Build site
         run: ./build.sh
