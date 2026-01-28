@@ -5,9 +5,9 @@
 /geoip/release-notes /geoip/release-notes/2026/ 302
 /geoip/release-notes/ /geoip/release-notes/2026/ 302
 /geoip/release-notes/rss.xml /geoip/release-notes/2026/index.xml 302
-/minfraud/release-notes /minfraud/release-notes/2025/ 302
-/minfraud/release-notes/ /minfraud/release-notes/2025/ 302
-/minfraud/release-notes/rss.xml /minfraud/release-notes/2025/index.xml 302
+/minfraud/release-notes /minfraud/release-notes/2026/ 302
+/minfraud/release-notes/ /minfraud/release-notes/2026/ 302
+/minfraud/release-notes/rss.xml /minfraud/release-notes/2026/index.xml 302
 
 # Legacy redirects - without splats (higher performance)
 /geoip/geoip2/release-notes /geoip/release-notes/ 302
