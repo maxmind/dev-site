@@ -57,7 +57,7 @@ scores returned through the minFraud service.
 
 If you get timeout errors, first confirm if we experienced a service disruption
 on our [status page](https://status.maxmind.com/) or on
-[Pingdom](http://stats.pingdom.com/datuqzybqg5z).
+[Pingdom](https://stats.pingdom.com/datuqzybqg5z).
 
 If there has not been a service disruption, we may be able to help you diagnose
 your connection issues. Please use our
