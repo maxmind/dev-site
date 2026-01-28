@@ -87,7 +87,7 @@ title = 'MaxMind'
       weight = 90
     [[menus.minfraud]]
       name = 'minFraud Release Notes'
-      pageRef = '/minfraud/release-notes/2025'
+      pageRef = '/minfraud/release-notes/2026'
       parent = 'minFraud'
       weight = 100
   [[menus.geoip]]
