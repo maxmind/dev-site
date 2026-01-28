@@ -40,7 +40,7 @@ If you’re coming from `geoipupdate` 2\.x:
 
 You can do this by running `geoipupdate -V`:
 
-```shell
+```bash
 geoipupdate -V
 > geoipupdate 3.1.1
 ```
@@ -58,7 +58,7 @@ Typically this will be `/etc/GeoIP.conf` or `/usr/local/etc/GeoIP.conf`.
 
 One way to do this is to run `geoipupdate` in verbose mode:
 
-```shell
+```bash
 geoipupdate -v
 > geoipupdate 3.1.1
 > Opened License file /etc/GeoIP.conf
@@ -80,7 +80,7 @@ If you previously installed it via `make install`, you should determine where
 it’s installed so you don’t end up with conflicting versions. You can run this
 command to check where it is:
 
-```shell
+```bash
 which geoipupdate
 > /usr/bin/geoipupdate
 ```
@@ -96,7 +96,7 @@ running 4.x.
 Run `geoipupdate` in verbose mode to verify it’s using the config file you
 expect and completes without error:
 
-```shell
+```bash
 geoipupdate -v
 > Using config file /etc/GeoIP.conf
 > ...

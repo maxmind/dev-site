@@ -97,13 +97,13 @@ download the file.
 
 For example, you can issue a `curl` command like the following:
 
-```shell
+```bash
 curl -O -J -L -u YOUR_ACCOUNT_ID:YOUR_LICENSE_KEY 'https://download.maxmind.com/geofeed/reports/v1.0/YOUR_GEOFEED_ID/YOUR_REPORT_ID'
 ```
 
 Or a `wget` command like the following:
 
-```shell
+```bash
 wget --user=YOUR_ACCOUNT_ID --password=YOUR_LICENSE_KEY 'https://download.maxmind.com/geofeed/reports/v1.0/YOUR_GEOFEED_ID/YOUR_REPORT_ID'
 ```
 
