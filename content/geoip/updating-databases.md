@@ -222,13 +222,13 @@ CSV) format, which can be uncompressed using a program like
 For example, using the permalink for the GeoIP City CSV database, you can issue
 a `curl` command like the following:
 
-```shell
+```bash
 curl -O -J -L -u YOUR_ACCOUNT_ID:YOUR_LICENSE_KEY 'https://download.maxmind.com/geoip/databases/GeoIP2-City-CSV/download?suffix=zip'
 ```
 
 Or a `wget` command like the following:
 
-```shell
+```bash
 wget --content-disposition --user=YOUR_ACCOUNT_ID --password=YOUR_LICENSE_KEY 'https://download.maxmind.com/geoip/databases/GeoIP2-City-CSV/download?suffix=zip'
 ```
 
