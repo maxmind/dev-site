@@ -125,6 +125,11 @@ title = 'MaxMind'
       parent = 'GeoIP'
       weight = 20
     [[menus.geoip]]
+      name = 'Track Location Name Updates'
+      pageRef = '/geoip/track-location-name-updates'
+      parent = 'GeoIP'
+      weight = 25
+    [[menus.geoip]]
       name = 'Importing Databases'
       pageRef = '/geoip/importing-databases'
       parent = 'GeoIP'
