@@ -290,3 +290,7 @@ title = 'MaxMind'
 [mediaTypes]
   [mediaTypes."text/markdown"]
     suffixes = ["md"]
+
+[services]
+  [services.rss]
+    limit = 50
