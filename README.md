@@ -102,8 +102,8 @@ year:
    top of the archived file.
 3. Update link to the release notes in the navigation menu (`hugo.toml`) to
    point to the current year's path.
-4. Update the URLs in the redirects file (`static/_redirects`) to the current
-   year's path.
+4. Update the redirect in `static/_redirects` for the base release notes path
+   to point to the current year.
 
 ### Updating Example CSVs
 

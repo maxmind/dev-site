@@ -1,0 +1,66 @@
+{{- /*
+  Section-level RSS template for release notes.
+  Aggregates release notes from all year pages (2026.md, 2025.md, etc.)
+  into a single feed, sorted by date descending.
+*/ -}}
+
+{{- $allNotes := slice }}
+
+{{- /* Iterate over all child pages (year pages) sorted by date descending */ -}}
+{{- range .Pages.ByDate.Reverse }}
+  {{- $page := . }}
+  {{- /* Extract all release notes from this page's rendered content */ -}}
+  {{- range (findRE `(?s)<div class="release-note".+?(?:<!-- end-release-note -->|$)` .Content) }}
+    {{- $anchor := replaceRE `(?s).+data-anchor="(.+?)".+` "$1" . }}
+    {{- $title := replaceRE `(?s).+data-title="(.+?)".+` "$1" . }}
+    {{- $link := printf "%s#%s" $page.Permalink $anchor }}
+
+    {{- $date := replaceRE `(?s).+data-date="(.+?)".+` "$1" . }}
+    {{- $dateWithTime := printf "%s%s" $date "T16:00:00Z" }}
+
+    {{- $content := replaceRE `(?s).+<div class="release-note__content">(.+?)(?:<!-- end-content -->|$).+` "$1" . }}
+    {{- $content = trim $content "\n " }}
+
+    {{- $allNotes = $allNotes | append (dict
+        "link" $link
+        "content" $content
+        "date" $dateWithTime
+        "dateSort" $date
+        "title" $title
+      )
+    }}
+  {{- end }}
+{{- end }}
+
+{{- /* Sort all notes by date descending */ -}}
+{{- $allNotes = sort $allNotes "dateSort" "desc" }}
+
+{{- /* Apply RSS limit from site config */ -}}
+{{- $limit := .Site.Config.Services.RSS.Limit }}
+{{- if ge $limit 1 }}
+  {{- $allNotes = $allNotes | first $limit }}
+{{- end }}
+
+{{- /* Build the RSS feed URL for atom:link self-reference */ -}}
+{{- $rssURL := printf "%sindex.xml" .Permalink }}
+
+{{- printf "<?xml version=\"1.0\" encoding=\"utf-8\" standalone=\"yes\"?>" | safeHTML }}
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>{{ .Title }}</title>
+    <link>{{ .Permalink }}</link>
+    <description>{{ .Title }}</description>
+    <generator>Hugo</generator>
+    <lastBuildDate>{{ now | time.Format "Mon, 02 Jan 2006 15:04:05 -0700" | safeHTML }}</lastBuildDate>
+    {{ printf "<atom:link href=%q rel=\"self\" />" $rssURL | safeHTML }}
+    {{- range $allNotes }}
+    <item>
+      <title>{{ .title | safeHTML }}</title>
+      <link>{{ .link }}</link>
+      <pubDate>{{ .date | time.Format "Mon, 02 Jan 2006 15:04:05 -0700" | safeHTML }}</pubDate>
+      <guid>{{ .link }}</guid>
+      <content:encoded>{{ .content | transform.XMLEscape | safeHTML }}</content:encoded>
+    </item>
+    {{- end }}
+  </channel>
+</rss>

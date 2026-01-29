@@ -4,10 +4,17 @@
 # /content/<product>/release-notes folder for that new year
 /geoip/release-notes /geoip/release-notes/2026/ 302
 /geoip/release-notes/ /geoip/release-notes/2026/ 302
-/geoip/release-notes/rss.xml /geoip/release-notes/2026/index.xml 302
 /minfraud/release-notes /minfraud/release-notes/2026/ 302
 /minfraud/release-notes/ /minfraud/release-notes/2026/ 302
-/minfraud/release-notes/rss.xml /minfraud/release-notes/2026/index.xml 302
+
+# RSS feed URLs - redirect old rss.xml path to section-level index.xml
+# The section-level feed is now generated directly (no more year-specific redirects)
+/geoip/release-notes/rss.xml /geoip/release-notes/index.xml 301
+/minfraud/release-notes/rss.xml /minfraud/release-notes/index.xml 301
+
+# Redirect year-specific RSS feeds to the stable section-level feed
+/geoip/release-notes/:year/index.xml /geoip/release-notes/index.xml 301
+/minfraud/release-notes/:year/index.xml /minfraud/release-notes/index.xml 301
 
 # Legacy redirects - without splats (higher performance)
 /geoip/geoip2/release-notes /geoip/release-notes/ 302
