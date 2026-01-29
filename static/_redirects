@@ -12,6 +12,10 @@
 /geoip/release-notes/rss.xml /geoip/release-notes/index.xml 301
 /minfraud/release-notes/rss.xml /minfraud/release-notes/index.xml 301
 
+# Redirect year-specific RSS feeds to the stable section-level feed
+/geoip/release-notes/:year/index.xml /geoip/release-notes/index.xml 301
+/minfraud/release-notes/:year/index.xml /minfraud/release-notes/index.xml 301
+
 # Legacy redirects - without splats (higher performance)
 /geoip/geoip2/release-notes /geoip/release-notes/ 302
 /geoip/geoip2/release-notes/ /geoip/release-notes/ 302
