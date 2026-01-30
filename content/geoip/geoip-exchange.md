@@ -22,9 +22,9 @@ Please note that you will be redirected from these permalinks to the hostname
 ### Download best practices
 
 At a high level, the best practice is to write an automated script that
-periodically checks the `last-modified` header for the report's build date, and
-downloads the resulting report when the `last-modified` time is later than the
-`last-modified` time of the latest local copy of the report.
+periodically checks the `Last-Modified` header for the report's build date, and
+downloads the resulting report when the `Last-Modified` time is later than the
+`Last-Modified` time of the latest local copy of the report.
 
 It is good to check periodically throughout the day for a new report so that you
 do not rely on an update schedule, and so that you catch off-schedule reports.
@@ -73,7 +73,7 @@ Please note that the permalink copied from your account portal will replace
 `YOUR_GEOFEED_ID` with a unique ID for your geofeed and `YOUR_REPORT_ID` with an
 identifier for the kind of report you're downloading.
 
-In the response, you can check the `last-modified` header for the file’s build
+In the response, you can check the `Last-Modified` header for the file’s build
 date. These checks can be incorporated into your own script or program,
 according to your needs.
 

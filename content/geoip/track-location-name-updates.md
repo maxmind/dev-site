@@ -53,9 +53,9 @@ the "Download Locations Diff Report" link next to the database.
 ### Download best practices
 
 At a high level, the best practice is to write an automated script that
-periodically checks the `last-modified` header for the report's release date,
-and downloads the report when the `last-modified` time is later than the
-`last-modified` time of your latest local copy.
+periodically checks the `Last-Modified` header for the report's release date,
+and downloads the report when the `Last-Modified` time is later than the
+`Last-Modified` time of your latest local copy.
 
 ### Checking for the latest release date
 
@@ -99,7 +99,7 @@ Where `YOUR_ACCOUNT_ID` is a placeholder for your account ID and
 `YOUR_LICENSE_KEY` is a placeholder for your license key.
 [Learn more about license keys on our knowledge base](https://support.maxmind.com/knowledge-base/articles/using-maxmind-license-keys).
 
-In the response, you can check the `last-modified` header for the file's release
+In the response, you can check the `Last-Modified` header for the file's release
 date. These checks can be incorporated into your own script or program,
 according to your needs.
 
