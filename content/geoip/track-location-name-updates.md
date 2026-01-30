@@ -47,7 +47,8 @@ The report is a CSV file with the following fields:
 You can download the report from the
 [Download files](https://www.maxmind.com/en/accounts/current/geoip/downloads)
 section of your account portal. The report is available alongside your database
-downloads and can be downloaded automatically.
+downloads and can be downloaded automatically. To download it manually, click
+the "Download Locations Diff Report" link next to the database.
 
 ### Download best practices
 
