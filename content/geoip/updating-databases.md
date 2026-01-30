@@ -137,9 +137,9 @@ using the CSV-format databases.
 ### Download best practices
 
 At a high level, the best practice is to write an automated script that
-periodically checks the `last-modified` header for the database's build date,
-and downloads the database when the `last-modified` time is later than the
-`last-modified` time of the latest local copy of the database.
+periodically checks the `Last-Modified` header for the database's build date,
+and downloads the database when the `Last-Modified` time is later than the
+`Last-Modified` time of the latest local copy of the database.
 
 It is good to check periodically throughout the day for a release so that you do
 not rely on an update schedule, and so that you catch off-schedule releases.
@@ -174,8 +174,8 @@ Where `YOUR_ACCOUNT_ID` is a placeholder for your account ID and
 `YOUR_LICENSE_KEY` is a placeholder for your license key.
 [Learn more about license keys on our knowledge base](https://support.maxmind.com/knowledge-base/articles/using-maxmind-license-keys).
 
-In the response, you can check the `last-modified` header for the file’s build
-date, or you can check the `content-disposition` header for the date that would
+In the response, you can check the `Last-Modified` header for the file’s build
+date, or you can check the `Content-Disposition` header for the date that would
 appear in the file name. These checks can be incorporated into your own script
 or program, according to your needs.
 
@@ -222,13 +222,13 @@ CSV) format, which can be uncompressed using a program like
 For example, using the permalink for the GeoIP City CSV database, you can issue
 a `curl` command like the following:
 
-```shell
+```bash
 curl -O -J -L -u YOUR_ACCOUNT_ID:YOUR_LICENSE_KEY 'https://download.maxmind.com/geoip/databases/GeoIP2-City-CSV/download?suffix=zip'
 ```
 
 Or a `wget` command like the following:
 
-```shell
+```bash
 wget --content-disposition --user=YOUR_ACCOUNT_ID --password=YOUR_LICENSE_KEY 'https://download.maxmind.com/geoip/databases/GeoIP2-City-CSV/download?suffix=zip'
 ```
 
