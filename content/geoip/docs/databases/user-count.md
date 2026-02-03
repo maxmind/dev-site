@@ -147,7 +147,6 @@ in the IPv6 file will be `null`. {{</ alert >}}
         </td>
       </tr>
     </tbody>
-
   </table>
 </div>
 {{</ rawhtml >}}

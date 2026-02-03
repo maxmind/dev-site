@@ -74,7 +74,6 @@ cmd = [
   "run",
   "format:rawhtml"
 ]
-lint-flags = []
 path-args = "absolute-file"
 include = ["content/**/*.md"]
 ok-exit-codes = 0
@@ -88,4 +87,15 @@ cmd = [
 ]
 invoke = "once"
 include = ["layouts/shortcodes/**/*.{html,md}"]
+ok-exit-codes = 0
+
+[commands.check-prettierignore-rawhtml]
+type = "lint"
+cmd = [
+  "pnpm",
+  "run",
+  "lint:prettierignore-rawhtml"
+]
+invoke = "once"
+include = ["content/**/*.md", ".prettierignore"]
 ok-exit-codes = 0

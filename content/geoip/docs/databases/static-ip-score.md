@@ -82,7 +82,6 @@ These are named `GeoIP2-Static-IP-Score-Blocks-IPv4.csv` and
         </td>
       </tr>
     </tbody>
-
   </table>
 </div>
 {{</ rawhtml >}}

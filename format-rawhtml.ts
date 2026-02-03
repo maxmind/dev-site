@@ -26,7 +26,7 @@ const htmlBlockRegex = new RegExp(
 );
 
 // Format HTML blocks using Prettier
-const formatHtmlBlocks = async (content: string) => {
+const formatHtmlBlocks = async (content: string, filePath: string) => {
   const matches: { block: string; index: number }[] = [];
   let match: RegExpExecArray | null;
   const regex = new RegExp(htmlBlockRegex.source, htmlBlockRegex.flags);
@@ -35,13 +35,15 @@ const formatHtmlBlocks = async (content: string) => {
     matches.push({ block: match[0], index: match.index });
   }
 
+  const prettierConfig = await prettier.resolveConfig(filePath);
+
   let formattedContent = content;
   for (let i = matches.length - 1; i >= 0; i--) {
     const { block, index } = matches[i];
     let formattedBlock: string;
     try {
       formattedBlock = (
-        await prettier.format(block, { parser: 'html' })
+        await prettier.format(block, { parser: 'html', ...prettierConfig })
       ).trim();
     } catch (e: any) {
       console.warn(`⚠️ Failed to format block:\n${block}\nError: ${e.message}`);
@@ -60,7 +62,7 @@ const formatHtmlBlocks = async (content: string) => {
 // Format a single file
 const formatFile = async (filePath: string) => {
   const raw = fs.readFileSync(filePath, 'utf8');
-  const formatted = await formatHtmlBlocks(raw);
+  const formatted = await formatHtmlBlocks(raw, filePath);
 
   if (formatted !== raw) {
     fs.writeFileSync(filePath, formatted, 'utf8');
