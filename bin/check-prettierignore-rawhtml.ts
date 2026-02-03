@@ -10,7 +10,9 @@ const grepOutput = execSync('grep -rl "{{< rawhtml >}}" content/ || true', {
   cwd: rootDir,
   encoding: 'utf8',
 });
-const rawhtmlFiles = new Set(grepOutput.trim().split('\n').filter(Boolean));
+const rawhtmlFiles = new Set(
+  grepOutput.trim().split('\n').filter(Boolean).sort()
+);
 
 const ignoreFile = fs.readFileSync(
   path.join(rootDir, '.prettierignore'),
@@ -20,26 +22,27 @@ const ignoreEntries = new Set(
   ignoreFile
     .split('\n')
     .map((l) => l.trim())
-    .filter((l) => l && !l.startsWith('#') && l.startsWith('content/'))
+    .filter((l) => l.startsWith('content/'))
+    .sort()
 );
 
-const missing = [...rawhtmlFiles].filter((f) => !ignoreEntries.has(f)).sort();
-const stale = [...ignoreEntries].filter((f) => !rawhtmlFiles.has(f)).sort();
+const missing = rawhtmlFiles.difference(ignoreEntries);
+const stale = ignoreEntries.difference(rawhtmlFiles);
 
-if (missing.length) {
+if (missing.size) {
   console.log(
     '⚠️rawhtml detected in markdown file. Add file to .prettierignore:'
   );
   missing.forEach((f) => console.log(`   ${f}`));
 }
-if (stale.length) {
+if (stale.size) {
   console.log(
     '⚠️No rawhtml detected in file. Remove file from .prettierignore:'
   );
   stale.forEach((f) => console.log(`   ${f}`));
 }
 
-if (missing.length || stale.length) {
+if (missing.size || stale.size) {
   process.exit(1);
 }
 
