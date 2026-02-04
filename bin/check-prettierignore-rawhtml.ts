@@ -1,0 +1,49 @@
+import { execSync } from 'child_process';
+import * as fs from 'fs';
+import * as path from 'path';
+import { fileURLToPath } from 'url';
+
+const currentDir = path.dirname(fileURLToPath(import.meta.url));
+const rootDir = path.join(currentDir, '..');
+
+const grepOutput = execSync('grep -rl "{{< rawhtml >}}" content/ || true', {
+  cwd: rootDir,
+  encoding: 'utf8',
+});
+const rawhtmlFiles = new Set(
+  grepOutput.trim().split('\n').filter(Boolean).sort()
+);
+
+const ignoreFile = fs.readFileSync(
+  path.join(rootDir, '.prettierignore'),
+  'utf8'
+);
+const ignoreEntries = new Set(
+  ignoreFile
+    .split('\n')
+    .map((l) => l.trim())
+    .filter((l) => l.startsWith('content/'))
+    .sort()
+);
+
+const missing = rawhtmlFiles.difference(ignoreEntries);
+const stale = ignoreEntries.difference(rawhtmlFiles);
+
+if (missing.size) {
+  console.log(
+    '⚠️rawhtml detected in markdown file. Add file to .prettierignore:'
+  );
+  missing.forEach((f) => console.log(`   ${f}`));
+}
+if (stale.size) {
+  console.log(
+    '⚠️No rawhtml detected in file. Remove file from .prettierignore:'
+  );
+  stale.forEach((f) => console.log(`   ${f}`));
+}
+
+if (missing.size || stale.size) {
+  process.exit(1);
+}
+
+console.log(`✅ .prettierignore in sync (${rawhtmlFiles.size} files)`);
