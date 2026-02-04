@@ -4,6 +4,7 @@ import * as prettier from 'prettier';
 
 // HTML tags to match inside .md files
 const tags = [
+  'html',
   'table',
   'thead',
   'tbody',
