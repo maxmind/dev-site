@@ -1,5 +1,4 @@
 import * as fs from 'fs';
-import * as path from 'path';
 import * as prettier from 'prettier';
 
 // HTML tags to match inside .md files
@@ -33,7 +32,10 @@ const formatHtmlBlocks = async (content: string, filePath: string) => {
   const regex = new RegExp(htmlBlockRegex.source, htmlBlockRegex.flags);
 
   while ((match = regex.exec(content)) !== null) {
-    matches.push({ block: match[0], index: match.index });
+    matches.push({
+      block: match[0],
+      index: match.index,
+    });
   }
 
   const prettierConfig = await prettier.resolveConfig(filePath);
@@ -44,7 +46,10 @@ const formatHtmlBlocks = async (content: string, filePath: string) => {
     let formattedBlock: string;
     try {
       formattedBlock = (
-        await prettier.format(block, { parser: 'html', ...prettierConfig })
+        await prettier.format(block, {
+          parser: 'html',
+          ...prettierConfig,
+        })
       ).trim();
     } catch (e: any) {
       console.warn(`⚠️ Failed to format block:\n${block}\nError: ${e.message}`);
