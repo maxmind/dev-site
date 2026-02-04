@@ -9,6 +9,6 @@
     "target": "ES2022"
   },
   "include": [
-    "format-rawhtml.ts"
+    "bin/format-rawhtml.ts"
   ]
 }
