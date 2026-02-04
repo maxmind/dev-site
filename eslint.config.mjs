@@ -28,7 +28,7 @@ export default tseslint.config(
       '**/node_modules',
       '**/public',
       'eslint.config.mjs',
-      'format-rawhtml.ts'
+      'bin/format-rawhtml.ts'
     ],
   },
   {
