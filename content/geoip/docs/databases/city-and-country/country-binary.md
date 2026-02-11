@@ -23,7 +23,8 @@ included in the record.
         <td><a href="#continent">continent</a></td>
         <td>map</td>
         <td>
-          Information about the continent associated with the IP address.
+          A map containing details about the continent associated with the IP
+          address.
         </td>
       </tr>
 
@@ -31,8 +32,8 @@ included in the record.
         <td><a href="#country">country</a></td>
         <td>map</td>
         <td>
-          Details about the country where MaxMind believes the IP address is
-          located.
+          A map containing details about the country where MaxMind believes the
+          IP address is located.
         </td>
       </tr>
 
@@ -40,8 +41,9 @@ included in the record.
         <td><a href="#registered_country">registered_country</a></td>
         <td>map</td>
         <td>
-          Details about the country where the ISP has registered the IP block.
-          This may differ from the country where the IP is located.
+          A map containing details about the country where the ISP has
+          registered the IP block. This may differ from the country where the IP
+          is located.
         </td>
       </tr>
 
@@ -49,17 +51,15 @@ included in the record.
         <td><a href="#represented_country">represented_country</a></td>
         <td>map</td>
         <td>
-          Details about the country represented by users of the IP address,
-          such as a military base or embassy.
+          A map containing details about the country represented by users of the
+          IP address, such as a military base or embassy.
         </td>
       </tr>
 
       <tr>
         <td><a href="#traits">traits</a></td>
         <td>map</td>
-        <td>
-          General traits associated with the IP address.
-        </td>
+        <td>A map containing general traits associated with the IP address.</td>
       </tr>
     </tbody>
   </table>

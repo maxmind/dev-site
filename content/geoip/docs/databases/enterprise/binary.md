@@ -23,7 +23,8 @@ undefined or empty value, it is not included in the record.
         <td><a href="#city">city</a></td>
         <td>map</td>
         <td>
-          Details about the city associated with the IP address.
+          A map containing details about the city associated with the IP
+          address.
         </td>
       </tr>
 
@@ -31,7 +32,8 @@ undefined or empty value, it is not included in the record.
         <td><a href="#continent">continent</a></td>
         <td>map</td>
         <td>
-          Information about the continent associated with the IP address.
+          A map containing details about the continent associated with the IP
+          address.
         </td>
       </tr>
 
@@ -39,8 +41,8 @@ undefined or empty value, it is not included in the record.
         <td><a href="#country">country</a></td>
         <td>map</td>
         <td>
-          Details about the country where MaxMind believes the IP address is
-          located.
+          A map containing details about the country where MaxMind believes the
+          IP address is located.
         </td>
       </tr>
 
@@ -48,8 +50,8 @@ undefined or empty value, it is not included in the record.
         <td><a href="#location">location</a></td>
         <td>map</td>
         <td>
-          Details about the location associated with the IP address, including
-          coordinates and time zone.
+          A map containing details about the location associated with the IP
+          address, including coordinates and time zone.
         </td>
       </tr>
 
@@ -57,7 +59,8 @@ undefined or empty value, it is not included in the record.
         <td><a href="#postal">postal</a></td>
         <td>map</td>
         <td>
-          Details about the postal code associated with the IP address.
+          A map containing details about the postal code associated with the IP
+          address.
         </td>
       </tr>
 
@@ -65,8 +68,9 @@ undefined or empty value, it is not included in the record.
         <td><a href="#registered_country">registered_country</a></td>
         <td>map</td>
         <td>
-          Details about the country where the ISP has registered the IP block.
-          This may differ from the country where the IP is located.
+          A map containing details about the country where the ISP has
+          registered the IP block. This may differ from the country where the IP
+          is located.
         </td>
       </tr>
 
@@ -74,8 +78,8 @@ undefined or empty value, it is not included in the record.
         <td><a href="#represented_country">represented_country</a></td>
         <td>map</td>
         <td>
-          Details about the country represented by users of the IP address,
-          such as a military base or embassy.
+          A map containing details about the country represented by users of the
+          IP address, such as a military base or embassy.
         </td>
       </tr>
 
@@ -83,17 +87,15 @@ undefined or empty value, it is not included in the record.
         <td><a href="#subdivisions">subdivisions</a></td>
         <td>array of maps</td>
         <td>
-          Data for the subdivisions associated with the IP address, ordered
-          from largest to smallest.
+          An array of maps containing data for the subdivisions associated with
+          the IP address, ordered from largest to smallest.
         </td>
       </tr>
 
       <tr>
         <td><a href="#traits">traits</a></td>
         <td>map</td>
-        <td>
-          General traits associated with the IP address.
-        </td>
+        <td>A map containing general traits associated with the IP address.</td>
       </tr>
     </tbody>
   </table>
