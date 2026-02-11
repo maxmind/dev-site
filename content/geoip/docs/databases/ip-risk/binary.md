@@ -84,10 +84,9 @@ The GeoIP IP Risk binary database contains the following fields for each network
         <td>is_hosting_provider</td>
         <td>boolean</td>
         <td>
-          This is <code>true</code> if the IP address belongs to a hosting or
-          VPN provider (see description of the
-          <code>is_anonymous_vpn</code> flag). This key is only present when the
-          value is <code>true</code>.
+          This is <code>true</code> if the IP address belongs to a hosting
+          provider. This key is only present when the value is
+          <code>true</code>.
           <br />
           <a
             href="https://support.maxmind.com/knowledge-base/articles/anonymizer-and-proxy-data-maxmind#hosting-provider"

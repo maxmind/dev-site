@@ -279,7 +279,7 @@ only.
   {{</ geoip-schema-row >}}
 
   {{< geoip-schema-row key="is_hosting_provider" valueType="boolean" insights="true">}}
-  This is `true` if the IP address belongs to a hosting or VPN provider (see description of `is_anonymous_vpn` flag). Otherwise, the key is not included in the `anonymizer` object.
+  This is `true` if the IP address belongs to a hosting provider. Otherwise, the key is not included in the `anonymizer` object.
 
   **Note:** This field has been moved from the `traits` object to the `anonymizer` object. It is still returned in the `traits` object for backwards compatibility but is deprecated there.
 
@@ -890,7 +890,7 @@ address.
   {{< geoip-schema-row key="is_hosting_provider" valueType="boolean" insights="true">}}
   **Deprecated.** This field has been moved to the [`anonymizer`](#anonymizer) object. It is still returned here for backwards compatibility.
 
-  This is `true` if the IP address belongs to a hosting or VPN provider (see description of `is_anonymous_vpn` flag). Otherwise, the key is not included in the `traits` object.
+  This is `true` if the IP address belongs to a hosting provider. Otherwise, the key is not included in the `traits` object.
 
   [Learn more about hosting providers used for anonymizing on our Knowledge Base.](https://support.maxmind.com/knowledge-base/articles/anonymizer-and-proxy-data-maxmind#hosting-provider)
   {{</ geoip-schema-row >}}

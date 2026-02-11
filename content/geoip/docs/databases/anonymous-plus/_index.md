@@ -99,8 +99,7 @@ These are named `GeoIP-Anonymous-Plus-Blocks-IPv4.csv` and
         <td>is_hosting_provider</td>
         <td>boolean</td>
         <td>
-          1 if the IP address belongs to a hosting or VPN provider (see
-          description of <code>is_anonymous_vpn</code> flag). Blank if not.
+          1 if the IP address belongs to a hosting provider. Blank if not.
           <br />
           <a
             href="https://support.maxmind.com/knowledge-base/articles/anonymizer-and-proxy-data-maxmind#hosting-provider"
