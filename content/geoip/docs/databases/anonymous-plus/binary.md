@@ -38,8 +38,8 @@ network.
         <td>is_anonymous</td>
         <td>boolean</td>
         <td>
-          This is <code>true</code> if the IP address belongs to any sort of anonymous
-          network.
+          This is <code>true</code> if the IP address belongs to any sort of
+          anonymous network.
           <br />
           <a
             href="https://support.maxmind.com/knowledge-base/articles/anonymizer-and-proxy-data-maxmind#anon-detection"
@@ -53,10 +53,10 @@ network.
         <td>is_anonymous_vpn</td>
         <td>boolean</td>
         <td>
-          This is <code>true</code> if the IP address is registered to an anonymous VPN
-          provider. If a VPN provider does not register subnets under names
-          associated with them, we will likely only flag their IP ranges using
-          the <code>is_hosting_provider</code> flag.
+          This is <code>true</code> if the IP address is registered to an
+          anonymous VPN provider. If a VPN provider does not register subnets
+          under names associated with them, we will likely only flag their IP
+          ranges using the <code>is_hosting_provider</code> flag.
           <br />
           <a
             href="https://support.maxmind.com/knowledge-base/articles/anonymizer-and-proxy-data-maxmind#VPN"
@@ -69,8 +69,9 @@ network.
         <td>is_hosting_provider</td>
         <td>boolean</td>
         <td>
-          This is <code>true</code> if the IP address belongs to a hosting or VPN provider
-          (see description of the <code>is_anonymous_vpn</code> flag).
+          This is <code>true</code> if the IP address belongs to a hosting or
+          VPN provider (see description of the
+          <code>is_anonymous_vpn</code> flag).
           <br />
           <a
             href="https://support.maxmind.com/knowledge-base/articles/anonymizer-and-proxy-data-maxmind#hosting-provider"
@@ -97,9 +98,9 @@ network.
         <td>is_residential_proxy</td>
         <td>boolean</td>
         <td>
-          This is <code>true</code> if the IP address is on a suspected anonymizing network
-          and belongs to a residential ISP (does not include peer-to-peer proxy
-          IPs).
+          This is <code>true</code> if the IP address is on a suspected
+          anonymizing network and belongs to a residential ISP (does not include
+          peer-to-peer proxy IPs).
           <br />
           <a
             href="https://support.maxmind.com/knowledge-base/articles/anonymizer-and-proxy-data-maxmind#residential-proxies"

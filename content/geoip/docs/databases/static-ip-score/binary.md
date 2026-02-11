@@ -25,8 +25,8 @@ network.
           ranges from 0 to 99.99 with higher values meaning a greater static
           association. For example, many IP addresses with a
           <code>user_type</code> of <code>cellular</code> have a score under
-          one. Broadband IPs that don't change very
-          often typically have a score above thirty.
+          one. Broadband IPs that don't change very often typically have a score
+          above thirty.
           <br />
           This indicator can be useful for deciding whether an IP address
           represents the same user over time.

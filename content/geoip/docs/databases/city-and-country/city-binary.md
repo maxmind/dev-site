@@ -165,8 +165,8 @@ empty value, it is not included in the record.
         <td>code</td>
         <td>string</td>
         <td>
-          A two-character continent code like <code>NA</code> (North America)
-          or <code>OC</code> (Oceania).
+          A two-character continent code like <code>NA</code> (North America) or
+          <code>OC</code> (Oceania).
           <br />
           <a
             href="https://support.maxmind.com/knowledge-base/articles/maxmind-ip-geolocation-data#codes"
@@ -242,7 +242,8 @@ address is located.
         <td>is_in_european_union</td>
         <td>boolean</td>
         <td>
-          This is <code>true</code> if the country is a member state of the European Union.
+          This is <code>true</code> if the country is a member state of the
+          European Union.
           <br />
           <a
             href="https://support.maxmind.com/knowledge-base/articles/maxmind-ip-geolocation-data#eu-flag"
@@ -438,8 +439,8 @@ registered the IP block and may differ from the country where the IP is located.
         <td>is_in_european_union</td>
         <td>boolean</td>
         <td>
-          This is <code>true</code> if the registered country is a member state of the
-          European Union.
+          This is <code>true</code> if the registered country is a member state
+          of the European Union.
           <br />
           <a
             href="https://support.maxmind.com/knowledge-base/articles/maxmind-ip-geolocation-data#eu-flag"
@@ -511,8 +512,8 @@ something like a military base or embassy.
         <td>is_in_european_union</td>
         <td>boolean</td>
         <td>
-          This is <code>true</code> if the represented country is a member state of the
-          European Union.
+          This is <code>true</code> if the represented country is a member state
+          of the European Union.
           <br />
           <a
             href="https://support.maxmind.com/knowledge-base/articles/maxmind-ip-geolocation-data#eu-flag"
@@ -551,8 +552,8 @@ something like a military base or embassy.
         <td>string</td>
         <td>
           A string indicating the type of entity that is representing the
-          country. Currently this is only <code>military</code> but may
-          expand to include other types in the future.
+          country. Currently this is only <code>military</code> but may expand
+          to include other types in the future.
         </td>
       </tr>
     </tbody>
