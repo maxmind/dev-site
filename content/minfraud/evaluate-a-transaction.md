@@ -26,14 +26,14 @@ minimum, be included on the page where the IP address is captured for a minFraud
 query.
 
 Place the following code in the footer of the HTML webpage and replace
-`INSERT_MAXMIND_ACCOUNT_ID_HERE` with your
+`MAXMIND_ACCOUNT_ID` with your
 [MaxMind account ID](https://support.maxmind.com/knowledge-base/articles/find-your-maxmind-account-id):
 
 ```html
 <script>
   (function () {
     var mmapiws = (window.__mmapiws = window.__mmapiws || {});
-    mmapiws.accountId = 'INSERT_MAXMIND_ACCOUNT_ID_HERE';
+    mmapiws.accountId = MAXMIND_ACCOUNT_ID;
     var loadDeviceJs = function () {
       var element = document.createElement('script');
       element.async = true;

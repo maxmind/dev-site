@@ -37,7 +37,7 @@ second, please [contact us](https://support.maxmind.com/knowledge-base).
 
 ## Implementation
 
-Replace `INSERT_MAXMIND_ACCOUNT_ID_HERE` with your
+Replace `MAXMIND_ACCOUNT_ID` with your
 [MaxMind account ID](https://support.maxmind.com/knowledge-base/articles/find-your-maxmind-account-id).
 
 ### Standard snippet
@@ -46,7 +46,7 @@ Replace `INSERT_MAXMIND_ACCOUNT_ID_HERE` with your
 <script>
   (function () {
     var mmapiws = (window.__mmapiws = window.__mmapiws || {});
-    mmapiws.accountId = 'INSERT_MAXMIND_ACCOUNT_ID_HERE';
+    mmapiws.accountId = MAXMIND_ACCOUNT_ID;
     var loadDeviceJs = function () {
       var element = document.createElement('script');
       element.async = true;
@@ -74,7 +74,7 @@ and provides direct access to the tracking result.
   import { trackDevice } from 'https://device.maxmind.com/js/device-module.js';
 
   await trackDevice({
-    accountId: INSERT_MAXMIND_ACCOUNT_ID_HERE,
+    accountId: MAXMIND_ACCOUNT_ID,
   });
 </script>
 ```
