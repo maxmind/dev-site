@@ -21,14 +21,18 @@ network.
         <td>connection_type</td>
         <td>string</td>
         <td>
-          One of the following values: <code>Cable/DSL</code>,
-          <code>Cellular</code>, <code>Corporate</code>, or
-          <code>Satellite</code>. Additional values may be added in the future.
-          <br />
-          <a
-            href="https://support.maxmind.com/knowledge-base/articles/maxmind-ip-network-data#connection-type-data"
-            >Learn more about connection type data on our Knowledge Base.</a
-          >
+          <p>
+            One of the following values: <code>Cable/DSL</code>,
+            <code>Cellular</code>, <code>Corporate</code>, or
+            <code>Satellite</code>. Additional values may be added in the
+            future.
+          </p>
+          <p>
+            <a
+              href="https://support.maxmind.com/knowledge-base/articles/maxmind-ip-network-data#connection-type-data"
+              >Learn more about connection type data on our Knowledge Base.</a
+            >
+          </p>
         </td>
       </tr>
     </tbody>

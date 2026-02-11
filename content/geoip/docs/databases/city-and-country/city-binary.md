@@ -119,13 +119,16 @@ empty value, it is not included in the record.
         <td>geoname_id</td>
         <td>uint32</td>
         <td>
-          A unique identifier for the city as specified by
-          <a href="https://www.geonames.org/">GeoNames</a>.
-          <br />
-          <a
-            href="https://support.maxmind.com/knowledge-base/articles/maxmind-ip-geolocation-data#geonames-ids"
-            >Learn more about GeoNames IDs on our Knowledge Base.</a
-          >
+          <p>
+            A unique identifier for the city as specified by
+            <a href="https://www.geonames.org/">GeoNames</a>.
+          </p>
+          <p>
+            <a
+              href="https://support.maxmind.com/knowledge-base/articles/maxmind-ip-geolocation-data#geonames-ids"
+              >Learn more about GeoNames IDs on our Knowledge Base.</a
+            >
+          </p>
         </td>
       </tr>
 
@@ -133,14 +136,17 @@ empty value, it is not included in the record.
         <td>names</td>
         <td>map</td>
         <td>
-          A map from locale codes (e.g., <code>en</code>, <code>de</code>,
-          <code>ja</code>) to localized names.
-          <br />
-          <a
-            href="https://support.maxmind.com/knowledge-base/articles/maxmind-ip-geolocation-data#names"
-            >Learn more about localized geolocation names on our Knowledge
-            Base.</a
-          >
+          <p>
+            A map from locale codes (e.g., <code>en</code>, <code>de</code>,
+            <code>ja</code>) to localized names.
+          </p>
+          <p>
+            <a
+              href="https://support.maxmind.com/knowledge-base/articles/maxmind-ip-geolocation-data#names"
+              >Learn more about localized geolocation names on our Knowledge
+              Base.</a
+            >
+          </p>
         </td>
       </tr>
     </tbody>
@@ -165,13 +171,16 @@ empty value, it is not included in the record.
         <td>code</td>
         <td>string</td>
         <td>
-          A two-character continent code like <code>NA</code> (North America) or
-          <code>OC</code> (Oceania).
-          <br />
-          <a
-            href="https://support.maxmind.com/knowledge-base/articles/maxmind-ip-geolocation-data#codes"
-            >Learn more about continent codes on our Knowledge Base.</a
-          >
+          <p>
+            A two-character continent code like <code>NA</code> (North America)
+            or <code>OC</code> (Oceania).
+          </p>
+          <p>
+            <a
+              href="https://support.maxmind.com/knowledge-base/articles/maxmind-ip-geolocation-data#codes"
+              >Learn more about continent codes on our Knowledge Base.</a
+            >
+          </p>
         </td>
       </tr>
 
@@ -179,13 +188,16 @@ empty value, it is not included in the record.
         <td>geoname_id</td>
         <td>uint32</td>
         <td>
-          A unique identifier for the continent as specified by
-          <a href="https://www.geonames.org/">GeoNames</a>.
-          <br />
-          <a
-            href="https://support.maxmind.com/knowledge-base/articles/maxmind-ip-geolocation-data#geonames-ids"
-            >Learn more about GeoNames IDs on our Knowledge Base.</a
-          >
+          <p>
+            A unique identifier for the continent as specified by
+            <a href="https://www.geonames.org/">GeoNames</a>.
+          </p>
+          <p>
+            <a
+              href="https://support.maxmind.com/knowledge-base/articles/maxmind-ip-geolocation-data#geonames-ids"
+              >Learn more about GeoNames IDs on our Knowledge Base.</a
+            >
+          </p>
         </td>
       </tr>
 
@@ -193,14 +205,17 @@ empty value, it is not included in the record.
         <td>names</td>
         <td>map</td>
         <td>
-          A map from locale codes (e.g., <code>en</code>, <code>de</code>,
-          <code>ja</code>) to localized names.
-          <br />
-          <a
-            href="https://support.maxmind.com/knowledge-base/articles/maxmind-ip-geolocation-data#names"
-            >Learn more about localized geolocation names on our Knowledge
-            Base.</a
-          >
+          <p>
+            A map from locale codes (e.g., <code>en</code>, <code>de</code>,
+            <code>ja</code>) to localized names.
+          </p>
+          <p>
+            <a
+              href="https://support.maxmind.com/knowledge-base/articles/maxmind-ip-geolocation-data#names"
+              >Learn more about localized geolocation names on our Knowledge
+              Base.</a
+            >
+          </p>
         </td>
       </tr>
     </tbody>
@@ -225,13 +240,16 @@ empty value, it is not included in the record.
         <td>geoname_id</td>
         <td>uint32</td>
         <td>
-          A unique identifier for the country as specified by
-          <a href="https://www.geonames.org/">GeoNames</a>.
-          <br />
-          <a
-            href="https://support.maxmind.com/knowledge-base/articles/maxmind-ip-geolocation-data#geonames-ids"
-            >Learn more about GeoNames IDs on our Knowledge Base.</a
-          >
+          <p>
+            A unique identifier for the country as specified by
+            <a href="https://www.geonames.org/">GeoNames</a>.
+          </p>
+          <p>
+            <a
+              href="https://support.maxmind.com/knowledge-base/articles/maxmind-ip-geolocation-data#geonames-ids"
+              >Learn more about GeoNames IDs on our Knowledge Base.</a
+            >
+          </p>
         </td>
       </tr>
 
@@ -239,14 +257,17 @@ empty value, it is not included in the record.
         <td>is_in_european_union</td>
         <td>boolean</td>
         <td>
-          This is <code>true</code> if the country is a member state of the
-          European Union. This key is only present when the value is
-          <code>true</code>.
-          <br />
-          <a
-            href="https://support.maxmind.com/knowledge-base/articles/maxmind-ip-geolocation-data#eu-flag"
-            >Learn more about the EU flag on our Knowledge Base.</a
-          >
+          <p>
+            This is <code>true</code> if the country is a member state of the
+            European Union. This key is only present when the value is
+            <code>true</code>.
+          </p>
+          <p>
+            <a
+              href="https://support.maxmind.com/knowledge-base/articles/maxmind-ip-geolocation-data#eu-flag"
+              >Learn more about the EU flag on our Knowledge Base.</a
+            >
+          </p>
         </td>
       </tr>
 
@@ -254,14 +275,17 @@ empty value, it is not included in the record.
         <td>iso_code</td>
         <td>string</td>
         <td>
-          The two-character
-          <a href="https://en.wikipedia.org/wiki/ISO_3166-1">ISO 3166-1</a>
-          alpha code for the country.
-          <br />
-          <a
-            href="https://support.maxmind.com/knowledge-base/articles/maxmind-ip-geolocation-data#codes"
-            >Learn more about country codes on our Knowledge Base.</a
-          >
+          <p>
+            The two-character
+            <a href="https://en.wikipedia.org/wiki/ISO_3166-1">ISO 3166-1</a>
+            alpha code for the country.
+          </p>
+          <p>
+            <a
+              href="https://support.maxmind.com/knowledge-base/articles/maxmind-ip-geolocation-data#codes"
+              >Learn more about country codes on our Knowledge Base.</a
+            >
+          </p>
         </td>
       </tr>
 
@@ -269,14 +293,17 @@ empty value, it is not included in the record.
         <td>names</td>
         <td>map</td>
         <td>
-          A map from locale codes (e.g., <code>en</code>, <code>de</code>,
-          <code>ja</code>) to localized names.
-          <br />
-          <a
-            href="https://support.maxmind.com/knowledge-base/articles/maxmind-ip-geolocation-data#names"
-            >Learn more about localized geolocation names on our Knowledge
-            Base.</a
-          >
+          <p>
+            A map from locale codes (e.g., <code>en</code>, <code>de</code>,
+            <code>ja</code>) to localized names.
+          </p>
+          <p>
+            <a
+              href="https://support.maxmind.com/knowledge-base/articles/maxmind-ip-geolocation-data#names"
+              >Learn more about localized geolocation names on our Knowledge
+              Base.</a
+            >
+          </p>
         </td>
       </tr>
     </tbody>
@@ -301,16 +328,19 @@ empty value, it is not included in the record.
         <td>accuracy_radius</td>
         <td>uint16</td>
         <td>
-          The approximate accuracy radius in kilometers around the latitude and
-          longitude for the IP address. This is the radius where we have a 67%
-          confidence that the device using the IP address resides within the
-          circle centered at the latitude and longitude with the provided
-          radius.
-          <br />
-          <a
-            href="https://support.maxmind.com/knowledge-base/articles/maxmind-ip-geolocation-data#geolocation-area"
-            >Learn about the geolocation area on our Knowledge Base.</a
-          >
+          <p>
+            The approximate accuracy radius in kilometers around the latitude
+            and longitude for the IP address. This is the radius where we have a
+            67% confidence that the device using the IP address resides within
+            the circle centered at the latitude and longitude with the provided
+            radius.
+          </p>
+          <p>
+            <a
+              href="https://support.maxmind.com/knowledge-base/articles/maxmind-ip-geolocation-data#geolocation-area"
+              >Learn about the geolocation area on our Knowledge Base.</a
+            >
+          </p>
         </td>
       </tr>
 
@@ -318,14 +348,17 @@ empty value, it is not included in the record.
         <td>latitude</td>
         <td>double</td>
         <td>
-          The approximate latitude of the location associated with the IP
-          address. This value is not precise and should not be used to identify
-          a particular address or household.
-          <br />
-          <a
-            href="https://support.maxmind.com/knowledge-base/articles/maxmind-ip-geolocation-data#geolocation-area"
-            >Learn about the geolocation area on our Knowledge Base.</a
-          >
+          <p>
+            The approximate latitude of the location associated with the IP
+            address. This value is not precise and should not be used to
+            identify a particular address or household.
+          </p>
+          <p>
+            <a
+              href="https://support.maxmind.com/knowledge-base/articles/maxmind-ip-geolocation-data#geolocation-area"
+              >Learn about the geolocation area on our Knowledge Base.</a
+            >
+          </p>
         </td>
       </tr>
 
@@ -333,14 +366,17 @@ empty value, it is not included in the record.
         <td>longitude</td>
         <td>double</td>
         <td>
-          The approximate longitude of the location associated with the IP
-          address. This value is not precise and should not be used to identify
-          a particular address or household.
-          <br />
-          <a
-            href="https://support.maxmind.com/knowledge-base/articles/maxmind-ip-geolocation-data#geolocation-area"
-            >Learn about the geolocation area on our Knowledge Base.</a
-          >
+          <p>
+            The approximate longitude of the location associated with the IP
+            address. This value is not precise and should not be used to
+            identify a particular address or household.
+          </p>
+          <p>
+            <a
+              href="https://support.maxmind.com/knowledge-base/articles/maxmind-ip-geolocation-data#geolocation-area"
+              >Learn about the geolocation area on our Knowledge Base.</a
+            >
+          </p>
         </td>
       </tr>
 
@@ -356,14 +392,19 @@ empty value, it is not included in the record.
         <td>time_zone</td>
         <td>string</td>
         <td>
-          The time zone associated with the location, as specified by the
-          <a href="https://www.iana.org/time-zones">IANA Time Zone Database</a>
-          (e.g., <code>America/New_York</code>).
-          <br />
-          <a
-            href="https://support.maxmind.com/knowledge-base/articles/maxmind-ip-geolocation-data#time-zone"
-            >Learn more about time zone data on our Knowledge Base.</a
-          >
+          <p>
+            The time zone associated with the location, as specified by the
+            <a href="https://www.iana.org/time-zones"
+              >IANA Time Zone Database</a
+            >
+            (e.g., <code>America/New_York</code>).
+          </p>
+          <p>
+            <a
+              href="https://support.maxmind.com/knowledge-base/articles/maxmind-ip-geolocation-data#time-zone"
+              >Learn more about time zone data on our Knowledge Base.</a
+            >
+          </p>
         </td>
       </tr>
     </tbody>
@@ -388,14 +429,17 @@ empty value, it is not included in the record.
         <td>code</td>
         <td>string</td>
         <td>
-          The postal code of the location. Postal codes are not available for
-          all countries. In some countries, this will only contain part of the
-          postal code.
-          <br />
-          <a
-            href="https://support.maxmind.com/knowledge-base/articles/maxmind-ip-geolocation-data#codes"
-            >Learn more about postal code data on our Knowledge Base.</a
-          >
+          <p>
+            The postal code of the location. Postal codes are not available for
+            all countries. In some countries, this will only contain part of the
+            postal code.
+          </p>
+          <p>
+            <a
+              href="https://support.maxmind.com/knowledge-base/articles/maxmind-ip-geolocation-data#codes"
+              >Learn more about postal code data on our Knowledge Base.</a
+            >
+          </p>
         </td>
       </tr>
     </tbody>
@@ -420,13 +464,16 @@ empty value, it is not included in the record.
         <td>geoname_id</td>
         <td>uint32</td>
         <td>
-          A unique identifier for the registered country as specified by
-          <a href="https://www.geonames.org/">GeoNames</a>.
-          <br />
-          <a
-            href="https://support.maxmind.com/knowledge-base/articles/maxmind-ip-geolocation-data#geonames-ids"
-            >Learn more about GeoNames IDs on our Knowledge Base.</a
-          >
+          <p>
+            A unique identifier for the registered country as specified by
+            <a href="https://www.geonames.org/">GeoNames</a>.
+          </p>
+          <p>
+            <a
+              href="https://support.maxmind.com/knowledge-base/articles/maxmind-ip-geolocation-data#geonames-ids"
+              >Learn more about GeoNames IDs on our Knowledge Base.</a
+            >
+          </p>
         </td>
       </tr>
 
@@ -434,14 +481,17 @@ empty value, it is not included in the record.
         <td>is_in_european_union</td>
         <td>boolean</td>
         <td>
-          This is <code>true</code> if the registered country is a member state
-          of the European Union. This key is only present when the value is
-          <code>true</code>.
-          <br />
-          <a
-            href="https://support.maxmind.com/knowledge-base/articles/maxmind-ip-geolocation-data#eu-flag"
-            >Learn more about the EU flag on our Knowledge Base.</a
-          >
+          <p>
+            This is <code>true</code> if the registered country is a member
+            state of the European Union. This key is only present when the value
+            is <code>true</code>.
+          </p>
+          <p>
+            <a
+              href="https://support.maxmind.com/knowledge-base/articles/maxmind-ip-geolocation-data#eu-flag"
+              >Learn more about the EU flag on our Knowledge Base.</a
+            >
+          </p>
         </td>
       </tr>
 
@@ -459,14 +509,17 @@ empty value, it is not included in the record.
         <td>names</td>
         <td>map</td>
         <td>
-          A map from locale codes (e.g., <code>en</code>, <code>de</code>,
-          <code>ja</code>) to localized names.
-          <br />
-          <a
-            href="https://support.maxmind.com/knowledge-base/articles/maxmind-ip-geolocation-data#names"
-            >Learn more about localized geolocation names on our Knowledge
-            Base.</a
-          >
+          <p>
+            A map from locale codes (e.g., <code>en</code>, <code>de</code>,
+            <code>ja</code>) to localized names.
+          </p>
+          <p>
+            <a
+              href="https://support.maxmind.com/knowledge-base/articles/maxmind-ip-geolocation-data#names"
+              >Learn more about localized geolocation names on our Knowledge
+              Base.</a
+            >
+          </p>
         </td>
       </tr>
     </tbody>
@@ -491,13 +544,16 @@ empty value, it is not included in the record.
         <td>geoname_id</td>
         <td>uint32</td>
         <td>
-          A unique identifier for the represented country as specified by
-          <a href="https://www.geonames.org/">GeoNames</a>.
-          <br />
-          <a
-            href="https://support.maxmind.com/knowledge-base/articles/maxmind-ip-geolocation-data#geonames-ids"
-            >Learn more about GeoNames IDs on our Knowledge Base.</a
-          >
+          <p>
+            A unique identifier for the represented country as specified by
+            <a href="https://www.geonames.org/">GeoNames</a>.
+          </p>
+          <p>
+            <a
+              href="https://support.maxmind.com/knowledge-base/articles/maxmind-ip-geolocation-data#geonames-ids"
+              >Learn more about GeoNames IDs on our Knowledge Base.</a
+            >
+          </p>
         </td>
       </tr>
 
@@ -505,14 +561,17 @@ empty value, it is not included in the record.
         <td>is_in_european_union</td>
         <td>boolean</td>
         <td>
-          This is <code>true</code> if the represented country is a member state
-          of the European Union. This key is only present when the value is
-          <code>true</code>.
-          <br />
-          <a
-            href="https://support.maxmind.com/knowledge-base/articles/maxmind-ip-geolocation-data#eu-flag"
-            >Learn more about the EU flag on our Knowledge Base.</a
-          >
+          <p>
+            This is <code>true</code> if the represented country is a member
+            state of the European Union. This key is only present when the value
+            is <code>true</code>.
+          </p>
+          <p>
+            <a
+              href="https://support.maxmind.com/knowledge-base/articles/maxmind-ip-geolocation-data#eu-flag"
+              >Learn more about the EU flag on our Knowledge Base.</a
+            >
+          </p>
         </td>
       </tr>
 
@@ -530,14 +589,17 @@ empty value, it is not included in the record.
         <td>names</td>
         <td>map</td>
         <td>
-          A map from locale codes (e.g., <code>en</code>, <code>de</code>,
-          <code>ja</code>) to localized names.
-          <br />
-          <a
-            href="https://support.maxmind.com/knowledge-base/articles/maxmind-ip-geolocation-data#names"
-            >Learn more about localized geolocation names on our Knowledge
-            Base.</a
-          >
+          <p>
+            A map from locale codes (e.g., <code>en</code>, <code>de</code>,
+            <code>ja</code>) to localized names.
+          </p>
+          <p>
+            <a
+              href="https://support.maxmind.com/knowledge-base/articles/maxmind-ip-geolocation-data#names"
+              >Learn more about localized geolocation names on our Knowledge
+              Base.</a
+            >
+          </p>
         </td>
       </tr>
 
@@ -572,13 +634,16 @@ empty value, it is not included in the record.
         <td>geoname_id</td>
         <td>uint32</td>
         <td>
-          A unique identifier for the subdivision as specified by
-          <a href="https://www.geonames.org/">GeoNames</a>.
-          <br />
-          <a
-            href="https://support.maxmind.com/knowledge-base/articles/maxmind-ip-geolocation-data#geonames-ids"
-            >Learn more about GeoNames IDs on our Knowledge Base.</a
-          >
+          <p>
+            A unique identifier for the subdivision as specified by
+            <a href="https://www.geonames.org/">GeoNames</a>.
+          </p>
+          <p>
+            <a
+              href="https://support.maxmind.com/knowledge-base/articles/maxmind-ip-geolocation-data#geonames-ids"
+              >Learn more about GeoNames IDs on our Knowledge Base.</a
+            >
+          </p>
         </td>
       </tr>
 
@@ -586,15 +651,19 @@ empty value, it is not included in the record.
         <td>iso_code</td>
         <td>string</td>
         <td>
-          A string up to three characters long containing the subdivision
-          portion of the
-          <a href="https://en.wikipedia.org/wiki/ISO_3166-2">ISO 3166-2 code</a
-          >.
-          <br />
-          <a
-            href="https://support.maxmind.com/knowledge-base/articles/maxmind-ip-geolocation-data#codes"
-            >Learn more about ISO code data on our Knowledge Base.</a
-          >
+          <p>
+            A string up to three characters long containing the subdivision
+            portion of the
+            <a href="https://en.wikipedia.org/wiki/ISO_3166-2"
+              >ISO 3166-2 code</a
+            >.
+          </p>
+          <p>
+            <a
+              href="https://support.maxmind.com/knowledge-base/articles/maxmind-ip-geolocation-data#codes"
+              >Learn more about ISO code data on our Knowledge Base.</a
+            >
+          </p>
         </td>
       </tr>
 
@@ -602,14 +671,17 @@ empty value, it is not included in the record.
         <td>names</td>
         <td>map</td>
         <td>
-          A map from locale codes (e.g., <code>en</code>, <code>de</code>,
-          <code>ja</code>) to localized names.
-          <br />
-          <a
-            href="https://support.maxmind.com/knowledge-base/articles/maxmind-ip-geolocation-data#names"
-            >Learn more about localized geolocation names on our Knowledge
-            Base.</a
-          >
+          <p>
+            A map from locale codes (e.g., <code>en</code>, <code>de</code>,
+            <code>ja</code>) to localized names.
+          </p>
+          <p>
+            <a
+              href="https://support.maxmind.com/knowledge-base/articles/maxmind-ip-geolocation-data#names"
+              >Learn more about localized geolocation names on our Knowledge
+              Base.</a
+            >
+          </p>
         </td>
       </tr>
     </tbody>
@@ -634,14 +706,17 @@ empty value, it is not included in the record.
         <td>is_anycast</td>
         <td>boolean</td>
         <td>
-          This is <code>true</code> if the IP address belongs to an
-          <a href="https://en.wikipedia.org/wiki/Anycast">anycast network</a>.
-          This key is only present when the value is <code>true</code>.
-          <br />
-          <a
-            href="https://support.maxmind.com/knowledge-base/articles/maxmind-ip-network-data#anycast"
-            >Learn more about anycast data on our Knowledge Base.</a
-          >
+          <p>
+            This is <code>true</code> if the IP address belongs to an
+            <a href="https://en.wikipedia.org/wiki/Anycast">anycast network</a>.
+            This key is only present when the value is <code>true</code>.
+          </p>
+          <p>
+            <a
+              href="https://support.maxmind.com/knowledge-base/articles/maxmind-ip-network-data#anycast"
+              >Learn more about anycast data on our Knowledge Base.</a
+            >
+          </p>
         </td>
       </tr>
     </tbody>

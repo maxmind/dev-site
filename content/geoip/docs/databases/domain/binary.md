@@ -20,14 +20,17 @@ The GeoIP Domain binary database contains the following fields for each network.
         <td>domain</td>
         <td>string</td>
         <td>
-          The second-level domain associated with the IP address. This will be
-          something like "example.com" or "example.co.uk", not
-          "foo.example.com".
-          <br />
-          <a
-            href="https://support.maxmind.com/knowledge-base/articles/maxmind-ip-network-data#domain-name-data"
-            >Learn more about domain name data on our Knowledge Base.</a
-          >
+          <p>
+            The second-level domain associated with the IP address. This will be
+            something like "example.com" or "example.co.uk", not
+            "foo.example.com".
+          </p>
+          <p>
+            <a
+              href="https://support.maxmind.com/knowledge-base/articles/maxmind-ip-network-data#domain-name-data"
+              >Learn more about domain name data on our Knowledge Base.</a
+            >
+          </p>
         </td>
       </tr>
     </tbody>

@@ -59,12 +59,13 @@ These are named `GeoIP2-Domain-Blocks-IPv4.csv` and
         <td>domain</td>
         <td>string</td>
         <td>
-          The domain associated with the IP address.
-          <br />
-          <a
-            href="https://support.maxmind.com/knowledge-base/articles/maxmind-ip-network-data#domain-name-data"
-            >Learn more about domain name data on our Knowledge Base.</a
-          >
+          <p>The domain associated with the IP address.</p>
+          <p>
+            <a
+              href="https://support.maxmind.com/knowledge-base/articles/maxmind-ip-network-data#domain-name-data"
+              >Learn more about domain name data on our Knowledge Base.</a
+            >
+          </p>
         </td>
       </tr>
     </tbody>
