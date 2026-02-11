@@ -66,16 +66,19 @@ particular dataset you are querying:
         <td>autonomous_system_number</td>
         <td>integer</td>
         <td>
-          The
-          <a href="https://en.wikipedia.org/wiki/Autonomous_system_(Internet)"
-            >autonomous system</a
-          >
-          number associated with the IP address.
-          <br />
-          <a
-            href="https://support.maxmind.com/knowledge-base/articles/maxmind-ip-network-data#autonomous-system-data"
-            >Learn more about autonomous system data on our Knowledge Base.</a
-          >
+          <p>
+            The
+            <a href="https://en.wikipedia.org/wiki/Autonomous_system_(Internet)"
+              >autonomous system</a
+            >
+            number associated with the IP address.
+          </p>
+          <p>
+            <a
+              href="https://support.maxmind.com/knowledge-base/articles/maxmind-ip-network-data#autonomous-system-data"
+              >Learn more about autonomous system data on our Knowledge Base.</a
+            >
+          </p>
         </td>
       </tr>
 
@@ -83,13 +86,16 @@ particular dataset you are querying:
         <td>autonomous_system_organization</td>
         <td>string</td>
         <td>
-          The organization associated with the registered autonomous system
-          number for the IP address.
-          <br />
-          <a
-            href="https://support.maxmind.com/knowledge-base/articles/maxmind-ip-network-data#autonomous-system-data"
-            >Learn more about autonomous system data on our Knowledge Base.</a
-          >
+          <p>
+            The organization associated with the registered autonomous system
+            number for the IP address.
+          </p>
+          <p>
+            <a
+              href="https://support.maxmind.com/knowledge-base/articles/maxmind-ip-network-data#autonomous-system-data"
+              >Learn more about autonomous system data on our Knowledge Base.</a
+            >
+          </p>
         </td>
       </tr>
     </tbody>
