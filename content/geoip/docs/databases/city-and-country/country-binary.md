@@ -128,9 +128,6 @@ included in the record.
 
 ## country
 
-The country record contains data for the country where MaxMind believes the IP
-address is located.
-
 {{< rawhtml >}}
 
 <div class="table">
@@ -207,9 +204,6 @@ address is located.
 
 ## registered_country
 
-The registered country record contains data for the country where the ISP has
-registered the IP block and may differ from the country where the IP is located.
-
 {{< rawhtml >}}
 
 <div class="table">
@@ -280,9 +274,6 @@ registered the IP block and may differ from the country where the IP is located.
 {{</ rawhtml >}}
 
 ## represented_country
-
-The represented country record contains data for the country represented by
-something like a military base or embassy.
 
 {{< rawhtml >}}
 

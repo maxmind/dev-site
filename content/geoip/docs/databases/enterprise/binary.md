@@ -224,9 +224,6 @@ undefined or empty value, it is not included in the record.
 
 ## country
 
-The country record contains data for the country where MaxMind believes the IP
-address is located.
-
 {{< rawhtml >}}
 
 <div class="table">
@@ -450,9 +447,6 @@ address is located.
 
 ## registered_country
 
-The registered country record contains data for the country where the ISP has
-registered the IP block and may differ from the country where the IP is located.
-
 {{< rawhtml >}}
 
 <div class="table">
@@ -523,9 +517,6 @@ registered the IP block and may differ from the country where the IP is located.
 {{</ rawhtml >}}
 
 ## represented_country
-
-The represented country record contains data for the country represented by
-something like a military base or embassy.
 
 {{< rawhtml >}}
 
@@ -607,9 +598,6 @@ something like a military base or embassy.
 {{</ rawhtml >}}
 
 ## subdivisions
-
-The subdivisions array contains data for the subdivisions associated with the IP
-address. The subdivisions array is ordered from largest to smallest.
 
 {{< rawhtml >}}
 
