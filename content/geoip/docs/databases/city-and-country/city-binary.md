@@ -243,7 +243,8 @@ address is located.
         <td>boolean</td>
         <td>
           This is <code>true</code> if the country is a member state of the
-          European Union.
+          European Union. This key is only present when the value is
+          <code>true</code>.
           <br />
           <a
             href="https://support.maxmind.com/knowledge-base/articles/maxmind-ip-geolocation-data#eu-flag"
@@ -440,7 +441,8 @@ registered the IP block and may differ from the country where the IP is located.
         <td>boolean</td>
         <td>
           This is <code>true</code> if the registered country is a member state
-          of the European Union.
+          of the European Union. This key is only present when the value is
+          <code>true</code>.
           <br />
           <a
             href="https://support.maxmind.com/knowledge-base/articles/maxmind-ip-geolocation-data#eu-flag"
@@ -513,7 +515,8 @@ something like a military base or embassy.
         <td>boolean</td>
         <td>
           This is <code>true</code> if the represented country is a member state
-          of the European Union.
+          of the European Union. This key is only present when the value is
+          <code>true</code>.
           <br />
           <a
             href="https://support.maxmind.com/knowledge-base/articles/maxmind-ip-geolocation-data#eu-flag"
@@ -645,6 +648,7 @@ address. The subdivisions array is ordered from largest to smallest.
         <td>
           This is <code>true</code> if the IP address belongs to an
           <a href="https://en.wikipedia.org/wiki/Anycast">anycast network</a>.
+          This key is only present when the value is <code>true</code>.
           <br />
           <a
             href="https://support.maxmind.com/knowledge-base/articles/maxmind-ip-network-data#anycast"

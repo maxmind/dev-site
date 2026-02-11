@@ -52,7 +52,8 @@ The GeoIP IP Risk binary database contains the following fields for each network
         <td>boolean</td>
         <td>
           This is <code>true</code> if the IP address belongs to any sort of
-          anonymous network.
+          anonymous network. This key is only present when the value is
+          <code>true</code>.
           <br />
           <a
             href="https://support.maxmind.com/knowledge-base/articles/anonymizer-and-proxy-data-maxmind#anon-detection"
@@ -69,7 +70,8 @@ The GeoIP IP Risk binary database contains the following fields for each network
           This is <code>true</code> if the IP address is registered to an
           anonymous VPN provider. If a VPN provider does not register subnets
           under names associated with them, we will likely only flag their IP
-          ranges using the <code>is_hosting_provider</code> flag.
+          ranges using the <code>is_hosting_provider</code> flag. This key is
+          only present when the value is <code>true</code>.
           <br />
           <a
             href="https://support.maxmind.com/knowledge-base/articles/anonymizer-and-proxy-data-maxmind#VPN"
@@ -84,7 +86,8 @@ The GeoIP IP Risk binary database contains the following fields for each network
         <td>
           This is <code>true</code> if the IP address belongs to a hosting or
           VPN provider (see description of the
-          <code>is_anonymous_vpn</code> flag).
+          <code>is_anonymous_vpn</code> flag). This key is only present when the
+          value is <code>true</code>.
           <br />
           <a
             href="https://support.maxmind.com/knowledge-base/articles/anonymizer-and-proxy-data-maxmind#hosting-provider"
@@ -99,6 +102,7 @@ The GeoIP IP Risk binary database contains the following fields for each network
         <td>boolean</td>
         <td>
           This is <code>true</code> if the IP address belongs to a public proxy.
+          This key is only present when the value is <code>true</code>.
           <br />
           <a
             href="https://support.maxmind.com/knowledge-base/articles/anonymizer-and-proxy-data-maxmind#public-proxies"
@@ -113,7 +117,8 @@ The GeoIP IP Risk binary database contains the following fields for each network
         <td>
           This is <code>true</code> if the IP address is on a suspected
           anonymizing network and belongs to a residential ISP (does not include
-          peer-to-peer proxy IPs).
+          peer-to-peer proxy IPs). This key is only present when the value is
+          <code>true</code>.
           <br />
           <a
             href="https://support.maxmind.com/knowledge-base/articles/anonymizer-and-proxy-data-maxmind#residential-proxies"
@@ -126,7 +131,8 @@ The GeoIP IP Risk binary database contains the following fields for each network
         <td>is_tor_exit_node</td>
         <td>boolean</td>
         <td>
-          This is <code>true</code> if the IP address is a Tor exit node.
+          This is <code>true</code> if the IP address is a Tor exit node. This
+          key is only present when the value is <code>true</code>.
           <br />
           <a
             href="https://support.maxmind.com/knowledge-base/articles/anonymizer-and-proxy-data-maxmind#tor-exit-nodes"
