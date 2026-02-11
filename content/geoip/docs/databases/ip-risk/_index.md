@@ -173,7 +173,8 @@ These are named `GeoIP2-IP-Risk-Blocks-IPv4.csv` and
         <td>
           <p>
             1 if the IP address is on a suspected anonymizing network and
-            belongs to a residential ISP. Blank if not.
+            belongs to a residential ISP (does not include peer-to-peer proxy
+            IPs). Blank if not.
           </p>
           <p>
             <a
@@ -212,6 +213,12 @@ These are named `GeoIP2-IP-Risk-Blocks-IPv4.csv` and
             Currently we will only provide values of 30 and 99, but the number
             of values will increase as we improve our confidence ratings.
           </p>
+          <p>
+            <a
+              href="https://support.maxmind.com/knowledge-base/articles/anonymizer-and-proxy-data-maxmind"
+              >Learn more about anonymizer confidence on our Knowledge Base.</a
+            >
+          </p>
         </td>
       </tr>
 
@@ -219,8 +226,18 @@ These are named `GeoIP2-IP-Risk-Blocks-IPv4.csv` and
         <td>network_last_seen</td>
         <td>string</td>
         <td>
-          The last day that the network was sighted in our analysis of
-          anonymized networks. This is in the ISO 8601 date format.
+          <p>
+            The last day that the network was sighted in our analysis of
+            anonymized networks. This is in the ISO 8601 date format
+            (YYYY-MM-DD).
+          </p>
+          <p>
+            <a
+              href="https://support.maxmind.com/knowledge-base/articles/anonymizer-and-proxy-data-maxmind"
+              >Learn more about anonymizer and proxy detection on our Knowledge
+              Base.</a
+            >
+          </p>
         </td>
       </tr>
     </tbody>
