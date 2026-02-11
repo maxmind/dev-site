@@ -70,8 +70,8 @@ These are named `GeoIP2-Static-IP-Score-Blocks-IPv4.csv` and
             An indicator of how static or dynamic an IP address is. The value
             ranges from 0 to 99.99 with higher values meaning a greater static
             association. For example, many IP addresses with a user_type of
-            cellular have a score under one. Broadband IPs that don't change
-            very often typically have a score above thirty.
+            cellular have a score under 1. Broadband IPs that don't change very
+            often typically have a score above 30.
           </p>
           <p>
             This indicator can be useful for deciding whether an IP address
