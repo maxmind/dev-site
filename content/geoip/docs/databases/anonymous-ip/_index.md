@@ -16,6 +16,9 @@ for assistance.
 
 {{< snippet "snippets/binary-databases.md" >}}
 
+[Learn about the fields in the binary version of this database on our binary
+database field reference page.](binary/)
+
 ## CSV Database
 
 {{< snippet "snippets/csv-databases-intro.md" >}}

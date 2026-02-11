@@ -24,6 +24,9 @@ You can use the [mmdbinspect tool](https://github.com/maxmind/mmdbinspect) (in
 beta), a command line interface built with Go, to look up one or more IPs from
 one or more MMDB databases and receive output in a parsable JSON format.
 
+[Learn about the fields in the binary version of this database on our binary
+database field reference page.](binary/)
+
 ## CSV Database
 
 {{< snippet "snippets/csv-databases-intro.md" >}}
