@@ -22,8 +22,8 @@ The GeoIP Domain binary database contains the following fields for each network.
         <td>
           <p>
             The second-level domain associated with the IP address. This will be
-            something like "example.com" or "example.co.uk", not
-            "foo.example.com".
+            something like <code>example.com</code> or
+            <code>example.co.uk</code>, not <code>foo.example.com</code>.
           </p>
           <p>
             <a
