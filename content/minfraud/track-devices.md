@@ -71,11 +71,13 @@ and provides direct access to the tracking result.
 
 ```html
 <script type="module">
-  import { trackDevice } from 'https://device.maxmind.com/js/device-module.js';
-
-  await trackDevice({
-    accountId: MAXMIND_ACCOUNT_ID,
-  });
+  import('https://device.maxmind.com/js/device-module.js')
+    .then(({ trackDevice }) =>
+      trackDevice({
+        accountId: MAXMIND_ACCOUNT_ID,
+      })
+    )
+    .catch((e) => console.error(e));
 </script>
 ```
 
