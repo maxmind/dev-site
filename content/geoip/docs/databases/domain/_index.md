@@ -1,10 +1,13 @@
 ---
 draft: false
-title: GeoLite ASN Databases
+title: GeoIP Domain Databases
 ---
 
-Look up the autonomous system number and autonomous system organization
-associated with IPv4 and IPv6 addresses.
+Look up the second-level domain names associated with IPv4 and IPv6 addresses.
+
+To learn more about the GeoIP Domain database, including terms and pricing,
+please
+[visit the GeoIP Domain Database page](https://www.maxmind.com/en/geoip-databases).
 
 {{< snippet "snippets/data-privacy-warning.md" >}}
 
@@ -12,19 +15,22 @@ associated with IPv4 and IPv6 addresses.
 
 {{< snippet "snippets/binary-databases.md" >}}
 
+[Learn about the fields in the binary version of this database on our binary
+database field reference page.](binary/)
+
 ## CSV Database
 
 {{< snippet "snippets/csv-databases-intro.md" >}}
 
-{{< zip-file-content product-name="GeoLite2-ASN" >}}
+{{< zip-file-content product-name="GeoIP2-Domain" >}}
 
 {{< snippet "snippets/file-format.md" >}}
 
 ### Blocks Files
 
 There are two CSV files for network blocks, one each for IPv4 and IPv6 blocks.
-These are named `GeoLite2-ASN-Blocks-IPv4.csv` and
-`GeoLite2-ASN-Blocks-IPv6.csv` respectively.
+These are named `GeoIP2-Domain-Blocks-IPv4.csv` and
+`GeoIP2-Domain-Blocks-IPv6.csv` respectively.
 
 {{< rawhtml >}}
 
@@ -50,33 +56,16 @@ These are named `GeoLite2-ASN-Blocks-IPv4.csv` and
       </tr>
 
       <tr>
-        <td>autonomous_system_number</td>
-        <td>integer</td>
-        <td>
-          The
-          <a href="https://en.wikipedia.org/wiki/Autonomous_system_(Internet)"
-            >autonomous system</a
-          >
-          number associated with the IP address.
-          <br />
-          <a
-            href="https://support.maxmind.com/knowledge-base/articles/maxmind-ip-network-data#autonomous-system-data"
-            >Learn more about autonomous system data on our Knowledge Base.</a
-          >
-        </td>
-      </tr>
-
-      <tr>
-        <td>autonomous_system_organization</td>
+        <td>domain</td>
         <td>string</td>
         <td>
-          The organization associated with the registered autonomous system
-          number for the IP address.
-          <br />
-          <a
-            href="https://support.maxmind.com/knowledge-base/articles/maxmind-ip-network-data#autonomous-system-data"
-            >Learn more about autonomous system data on our Knowledge Base.</a
-          >
+          <p>The domain associated with the IP address.</p>
+          <p>
+            <a
+              href="https://support.maxmind.com/knowledge-base/articles/maxmind-ip-network-data#domain-name-data"
+              >Learn more about domain name data on our Knowledge Base.</a
+            >
+          </p>
         </td>
       </tr>
     </tbody>
@@ -96,14 +85,14 @@ These are named `GeoLite2-ASN-Blocks-IPv4.csv` and
 
 {{< csv-example-files >}}
 
-- [GeoLite2-ASN-CSV_Example.zip](/examples/GeoLite2-ASN-CSV_Example.zip)
+- [GeoIP2-Domain-CSV_Example.zip](/examples/GeoIP2-Domain-CSV_Example.zip)
   {{</ csv-example-files >}}
 
 ### MMDB Example Files
 
 {{< mmdb-example-files >}}
 
-- [GeoLite2-ASN-Test.mmdb](https://github.com/maxmind/MaxMind-DB/blob/main/test-data/GeoLite2-ASN-Test.mmdb)
+- [GeoIP2-Domain-Test.mmdb](https://github.com/maxmind/MaxMind-DB/blob/main/test-data/GeoIP2-Domain-Test.mmdb)
   {{</ mmdb-example-files >}}
 
 ## Database Sizes
@@ -111,18 +100,18 @@ These are named `GeoLite2-ASN-Blocks-IPv4.csv` and
 <!-- prettier-ignore-start -->
 
 {{< db-sizes-table dateRange="August to October 2024" >}}
-- databaseName: "GeoLite ASN"
-  csvSizeRange: "28.05 MB - 28.38 MB"
-  mmdbSizeRange: "8.52 MB - 8.64 MB"
-  ipv4Range: "508,000 - 516,000"
-  ipv6Range: "137,000 - 140,000"
+- databaseName: "GeoIP Domain"
+  csvSizeRange: "18.07 MB - 18.36 MB"
+  mmdbSizeRange: "10.4 MB - 10.6 MB"
+  ipv4Range: "509,000 - 516,000"
+  ipv6Range: "109,000 - 112,000"
 {{< /db-sizes-table >}}
 
 <!-- prettier-ignore-end -->
 
 ## Database Changes
 
-{{< database-changes product="ASN" >}}
+{{< database-changes product="Domain" >}}
 
 ## APIs and Third-Party Integrations
 
