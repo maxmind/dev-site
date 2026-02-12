@@ -37,14 +37,16 @@ second, please [contact us](https://support.maxmind.com/knowledge-base).
 
 ## Implementation
 
-Replace `INSERT_MAXMIND_ACCOUNT_ID_HERE` with your
+Replace `MAXMIND_ACCOUNT_ID` with your
 [MaxMind account ID](https://support.maxmind.com/knowledge-base/articles/find-your-maxmind-account-id).
+
+### Standard snippet
 
 ```html
 <script>
   (function () {
     var mmapiws = (window.__mmapiws = window.__mmapiws || {});
-    mmapiws.accountId = 'INSERT_MAXMIND_ACCOUNT_ID_HERE';
+    mmapiws.accountId = MAXMIND_ACCOUNT_ID;
     var loadDeviceJs = function () {
       var element = document.createElement('script');
       element.async = true;
@@ -57,6 +59,25 @@ Replace `INSERT_MAXMIND_ACCOUNT_ID_HERE` with your
       window.attachEvent('onload', loadDeviceJs);
     }
   })();
+</script>
+```
+
+### Module snippet
+
+If your site targets modern browsers (those supporting
+[JavaScript modules](https://caniuse.com/es6-module)), you can use the module
+version of the device tracking script. This avoids the use of global variables
+and provides direct access to the tracking result.
+
+```html
+<script type="module">
+  import('https://device.maxmind.com/js/device-module.js')
+    .then(({ trackDevice }) =>
+      trackDevice({
+        accountId: MAXMIND_ACCOUNT_ID,
+      })
+    )
+    .catch((e) => console.error(e));
 </script>
 ```
 
