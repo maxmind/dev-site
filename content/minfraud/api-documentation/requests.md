@@ -345,6 +345,8 @@ the site where the event took place.
 
 ### Email
 
+{{< anchor-target schema--request--email >}}
+
 `email` is a JSON object that contains information about the email address of
 the end-user who initiated the event.
 

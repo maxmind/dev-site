@@ -349,7 +349,7 @@ For full examples of response bodies, select one of the following:
 
 For minFraud Score, this object only contains the `risk` for the IP address. For
 minFraud Insights and Factors, the object is the
-[GeoIP Insights response body](/geoip/docs/web-services/responses/#geoip2-insights-body-example)
+[GeoIP Insights response body](/geoip/docs/web-services/responses/#geoip-insights-body-example)
 with four modifications:
 
 1. `risk` has been added directly to the `ip_address` object
@@ -369,7 +369,7 @@ minFraud Insights and Factors return the following anonymous IP outputs:
 - `is_tor_exit_node`
 
 See the
-[GeoIP Insights response body](/geoip/docs/web-services/responses/#geoip2-insights-body-example)
+[GeoIP Insights response body](/geoip/docs/web-services/responses/#geoip-insights-body-example)
 for more information.
 
 ```json

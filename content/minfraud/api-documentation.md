@@ -16,7 +16,7 @@ the
 To better understand the differences between each minFraud service, review our
 [minFraud Service Comparison page](https://www.maxmind.com/en/solutions/fraud-prevention/plans-pricing)
 and the
-[API response body documentation](/minfraud/api-documentation/responses#bodies).
+[API response body documentation](/minfraud/api-documentation/responses#response-body).
 
 ## Client APIs
 
