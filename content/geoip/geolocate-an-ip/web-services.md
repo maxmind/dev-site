@@ -11,9 +11,8 @@ configuring a web service client, creating a request, and handling the response.
 MaxMind offers and highly recommends using
 [official client libraries](/geoip/docs/web-services#client-apis) to access our
 geolocation services. If you cannot or do not wish to use our client libraries,
-please review our
-[GeoIP API Documentation page](/geoip/docs/web-services/#request-and-response-api-references)
-for details on our REST API.
+please review our [GeoIP API Documentation page](/geoip/docs/web-services/) for
+details on our REST API.
 
 ### 1. Install the GeoIP client library
 
