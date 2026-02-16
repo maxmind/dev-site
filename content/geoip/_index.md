@@ -109,7 +109,7 @@ in GeoIP products and services on our knowledge base.
         <td>
           <a href="/geoip/docs/databases/anonymous-plus/#csv-database">Docs</a>
         </td>
-        <td>&bull;</td>
+        <td>Included in the GeoIP Insights web service.</td>
       </tr>
       <tr>
         <td>Insights&#42;&#42;</td>
