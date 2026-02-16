@@ -11,14 +11,27 @@ jobs:
     steps:
       - uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
         with:
+          submodules: true
+          fetch-depth: 0
           persist-credentials: false
+
+      - name: Setup mise
+        uses: jdx/mise-action@6d1e696aa24c1aa1bcc1adea0212707c71ab78a8 # v3.6.1
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Build site
+        run: ./build.sh
+        env:
+          CF_PAGES_URL: /
 
       - name: Link Checker
         id: lychee
         uses: lycheeverse/lychee-action@a8c4c7cb88f0c7386610c35eb25108e448569cb0
         with:
           fail: true
-          args: "'./**/*.md' './**/*.html'"
+          args: "'./public/**/*.html' --root-dir '${{ github.workspace }}/public'"
 
       - name: Create Issue From File
         if: steps.lychee.outputs.exit_code != 0
