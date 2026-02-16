@@ -50,44 +50,42 @@ in GeoIP products and services on our knowledge base.
       <tr>
         <td>ISP</td>
         <td>
-          <a href="/geoip/docs/databases/isp/#binary-databases">Docs</a>
+          <a href="/geoip/docs/databases/isp/#binary-database">Docs</a>
         </td>
         <td>
-          <a href="/geoip/docs/databases/isp/#csv-databases">Docs</a>
+          <a href="/geoip/docs/databases/isp/#csv-database">Docs</a>
         </td>
         <td>Included in GeoIP City Plus and Insights web services.</td>
       </tr>
       <tr>
         <td>Domain</td>
         <td>
-          <a href="/geoip/docs/databases/domain/#binary-databases">Docs</a>
+          <a href="/geoip/docs/databases/domain/#binary-database">Docs</a>
         </td>
         <td>
-          <a href="/geoip/docs/databases/domain/#csv-databases">Docs</a>
+          <a href="/geoip/docs/databases/domain/#csv-database">Docs</a>
         </td>
         <td>Included in GeoIP City Plus and Insights web services.</td>
       </tr>
       <tr>
         <td>Connection Type</td>
         <td>
-          <a href="/geoip/docs/databases/connection-type/#binary-databases"
+          <a href="/geoip/docs/databases/connection-type/#binary-database"
             >Docs</a
           >
         </td>
         <td>
-          <a href="/geoip/docs/databases/connection-type/#csv-databases"
-            >Docs</a
-          >
+          <a href="/geoip/docs/databases/connection-type/#csv-database">Docs</a>
         </td>
         <td>Comparable data included in the GeoIP Insights web service.</td>
       </tr>
       <tr>
         <td>Enterprise</td>
         <td>
-          <a href="/geoip/docs/databases/enterprise/#binary-databases">Docs</a>
+          <a href="/geoip/docs/databases/enterprise/#binary-database">Docs</a>
         </td>
         <td>
-          <a href="/geoip/docs/databases/enterprise/#csv-databases">Docs</a>
+          <a href="/geoip/docs/databases/enterprise/#csv-database">Docs</a>
         </td>
         <td>Comparable data included in the GeoIP Insights web service.</td>
       </tr>
@@ -97,7 +95,7 @@ in GeoIP products and services on our knowledge base.
           <a href="/geoip/docs/databases/anonymous-ip/#binary-database">Docs</a>
         </td>
         <td>
-          <a href="/geoip/docs/databases/anonymous-ip/#csv-databases">Docs</a>
+          <a href="/geoip/docs/databases/anonymous-ip/#csv-database">Docs</a>
         </td>
         <td>Included in the GeoIP Insights web service.</td>
       </tr>
@@ -109,7 +107,7 @@ in GeoIP products and services on our knowledge base.
           >
         </td>
         <td>
-          <a href="/geoip/docs/databases/anonymous-plus/#csv-databases">Docs</a>
+          <a href="/geoip/docs/databases/anonymous-plus/#csv-database">Docs</a>
         </td>
         <td>&bull;</td>
       </tr>
@@ -183,10 +181,10 @@ by [reading about GeoLite](/geoip/geolite2-free-geolocation-data).
       <tr>
         <td>ASN</td>
         <td>
-          <a href="/geoip/docs/databases/asn/#binary-databases">Docs</a>
+          <a href="/geoip/docs/databases/asn/#binary-database">Docs</a>
         </td>
         <td>
-          <a href="/geoip/docs/databases/asn/#csv-databases">Docs</a>
+          <a href="/geoip/docs/databases/asn/#csv-database">Docs</a>
         </td>
         <td>Included in the GeoLite City Web Service.</td>
       </tr>
