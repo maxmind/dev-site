@@ -6,8 +6,6 @@ on:
 jobs:
   linkChecker:
     runs-on: ubuntu-latest
-    permissions:
-      issues: write # required for peter-evans/create-issue-from-file
     steps:
       - uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
         with:
@@ -21,22 +19,5 @@ jobs:
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
 
-      - name: Build site
-        run: ./build.sh
-        env:
-          CF_PAGES_URL: /
-
-      - name: Link Checker
-        id: lychee
-        uses: lycheeverse/lychee-action@a8c4c7cb88f0c7386610c35eb25108e448569cb0
-        with:
-          fail: true
-          args: "'./public/**/*.html' --root-dir '${{ github.workspace }}/public'"
-
-      - name: Create Issue From File
-        if: steps.lychee.outputs.exit_code != 0
-        uses: peter-evans/create-issue-from-file@fca9117c27cdc29c6c4db3b86c48e4115a786710
-        with:
-          title: Link Checker Report
-          content-filepath: ./lychee/out.md
-          labels: report, automated issue
+      - name: Check links
+        run: mise run check-links

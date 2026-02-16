@@ -4,6 +4,16 @@ idiomatic_version_file_enable_tools = ["node"]
 
 [tools]
 hugo = "0.153.1"
+lychee = "0.23.0"
 "aqua:pnpm/pnpm" = "10.28.1"
 "github:houseabsolute/precious" = "0.10.1"
 "github:sass/dart-sass" = "1.97.3"
+
+[tasks.check-links]
+description = "Build the site and check links with lychee"
+run = """
+#!/usr/bin/env bash
+set -euo pipefail
+CF_PAGES_URL=/ ./build.sh
+lychee './public/**/*.html' --root-dir "$(pwd)/public"
+"""
