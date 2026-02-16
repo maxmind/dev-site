@@ -34,7 +34,7 @@ in GeoIP products and services on our knowledge base.
       <tr>
         <td>City and Country</td>
         <td>
-          <a href="/geoip/docs/databases/city-and-country/#binary-databases"
+          <a href="/geoip/docs/databases/city-and-country/#binaryi-databases"
             >Docs</a
           >
         </td>
