@@ -49,8 +49,9 @@ Place the following code in the footer of the HTML webpage and replace
 </script>
 ```
 
-A [module snippet](/minfraud/track-devices#module-snippet) is also available for
-sites targeting modern browsers.
+A [module snippet](/minfraud/track-devices#module-snippet) and an
+[npm package](/minfraud/track-devices#npm-package) are also available for sites
+targeting modern browsers.
 
 ### 2. Install the minFraud client library
 

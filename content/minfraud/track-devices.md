@@ -81,6 +81,26 @@ and provides direct access to the tracking result.
 </script>
 ```
 
+### npm package
+
+If your site uses a JavaScript bundler or build system (e.g., Webpack, Vite,
+Next.js), you can install the device tracking module as an npm package.
+
+```sh
+npm install @maxmind/device-tracking
+```
+
+```javascript
+import { trackDevice } from '@maxmind/device-tracking';
+
+const result = await trackDevice({
+  accountId: MAXMIND_ACCOUNT_ID,
+});
+```
+
+See the [package README](https://github.com/maxmind/device-tracking#readme) for
+full API documentation.
+
 ## Cookie and web storage usage
 
 The device tracking add-on uses cookies and local storage as methods of
