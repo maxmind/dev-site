@@ -132,6 +132,7 @@ You can secure your webhook by verifying that alert requests come from MaxMind:
 minFraud alert requests may come from one of the following IP addresses. This
 list is subject to change.
 
+- `34.27.174.58`
 - `35.186.179.139`
 
 #### Signed requests
