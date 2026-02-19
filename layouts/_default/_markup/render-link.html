@@ -1,0 +1,27 @@
+{{- $dest := .Destination -}}
+
+{{- /* Validate internal links at build time */ -}}
+{{- if and (hasPrefix $dest "/") (not (hasPrefix $dest "//")) -}}
+  {{- $url := urls.Parse $dest -}}
+  {{- $path := strings.TrimRight "/" $url.Path -}}
+  {{- if $path -}}
+    {{- $found := or (site.GetPage $path) (fileExists (printf "static%s" $path)) -}}
+    {{- if and (not $found) (path.Ext $path) -}}
+      {{- /* Could be a Hugo-generated output (RSS, JSON) or module mount.
+             Try path without extension first; only fall back to parent
+             directory for index files (e.g. /section/index.xml). */ -}}
+      {{- $found = or
+        (site.GetPage (strings.TrimSuffix (path.Ext $path) $path))
+        (and (eq (path.BaseName $path) "index") (site.GetPage (path.Dir $path)))
+      -}}
+    {{- end -}}
+    {{- if not $found -}}
+      {{- errorf "broken internal link to %q on page %s" $dest .Page.File.Path -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+
+<a href="{{ .Destination | safeURL }}"
+  {{- with .Title }} title="{{ . }}"{{ end -}}
+>{{ .Text }}</a>
+{{- /* Strip trailing newline */ -}}

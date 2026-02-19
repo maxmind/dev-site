@@ -118,8 +118,8 @@ The method for updating the GeoLite databases depends on the database format
 you’re using. To help you decide which database format to use,
 [see the section above](#decide-how-you-want-to-use-geolite-databases).
 
-- [Learn how to update the binary database format for fast lookups at scale.](https://dev.maxmind.com/geoip/updating-databases/#using-geoip-update)
-- [Learn how to update the csv database format to join the data or import into SQL.](https://dev.maxmind.com/geoip/updating-databases/#directly-downloading-databases)
+- [Learn how to update the binary database format for fast lookups at scale.](/geoip/updating-databases/#using-geoip-update)
+- [Learn how to update the csv database format to join the data or import into SQL.](/geoip/updating-databases/#directly-downloading-databases)
 
 ### Look up IP addresses in the GeoLite databases
 
@@ -128,8 +128,8 @@ on the database format you’re using and what you’re using it for. To help yo
 decide which database format to use,
 [see this section above](#decide-how-you-want-to-use-geolite-databases).
 
-- [Use MaxMind’s client APIs to look up IP addresses in the binary databases for fast lookups at scale.](https://dev.maxmind.com/geoip/geolocate-an-ip/databases/)
-- [Learn how to import the csv format databases into MySQL or PostgreSQL.](https://dev.maxmind.com/geoip/importing-databases/)
+- [Use MaxMind’s client APIs to look up IP addresses in the binary databases for fast lookups at scale.](/geoip/geolocate-an-ip/databases/)
+- [Learn how to import the csv format databases into MySQL or PostgreSQL.](/geoip/importing-databases/)
 - If you’re using GeoLite in a plugin or application, check the installation
   instructions for your plugin.
 
@@ -142,11 +142,11 @@ decide which database format to use,
 MaxMind maintains client APIs in many popular languages to help you look up IP
 addresses in our web services quickly and easily.
 
-[Learn how to look up IP addresses in our web services.](https://dev.maxmind.com/geoip/geolocate-an-ip/web-services/)
+[Learn how to look up IP addresses in our web services.](/geoip/geolocate-an-ip/web-services/)
 
 MaxMind web services do support a client-side JavaScript lookup, but only for
 the paid GeoIP web services.
-[Learn more about client-side JavaScript lookups using the GeoIP web services](https://dev.maxmind.com/geoip/geolocate-an-ip/client-side-javascript/),
+[Learn more about client-side JavaScript lookups using the GeoIP web services](/geoip/geolocate-an-ip/client-side-javascript/),
 and [upgrade to GeoIP](https://www.maxmind.com/en/geoip-api-web-services).
 
 ## GeoLite database fields
@@ -171,8 +171,7 @@ field description.
       <tr>
         <td>
           <p>
-            <a
-              href="https://dev.maxmind.com/geoip/docs/databases/city-and-country/"
+            <a href="/geoip/docs/databases/city-and-country/"
               >GeoLite Country database</a
             >
           </p>
@@ -189,8 +188,7 @@ field description.
       <tr>
         <td>
           <p>
-            <a
-              href="https://dev.maxmind.com/geoip/docs/databases/city-and-country/"
+            <a href="/geoip/docs/databases/city-and-country/"
               >GeoLite City database</a
             >
           </p>
@@ -214,9 +212,7 @@ field description.
       </tr>
       <tr>
         <td>
-          <a href="https://dev.maxmind.com/geoip/docs/databases/asn/"
-            >GeoLite ASN database</a
-          >
+          <a href="/geoip/docs/databases/asn/">GeoLite ASN database</a>
         </td>
         <td>
           Provides the autonomous system number and organization for IP
@@ -250,8 +246,7 @@ GeoLite City web service, except as noted in the field description.
       <tr>
         <td>
           <p>
-            <a
-              href="https://dev.maxmind.com/geoip/docs/web-services/#geolite-country"
+            <a href="/geoip/docs/web-services/#geolite-country"
               >GeoLite Country web service</a
             >
           </p>
@@ -268,8 +263,7 @@ GeoLite City web service, except as noted in the field description.
       <tr>
         <td>
           <p>
-            <a
-              href="https://dev.maxmind.com/geoip/docs/web-services/#geolite-city"
+            <a href="/geoip/docs/web-services/#geolite-city"
               >GeoLite City web service</a
             >
           </p>

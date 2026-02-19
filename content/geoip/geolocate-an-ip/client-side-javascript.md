@@ -221,7 +221,7 @@ need to break backwards compatibility with previous versions of the JavaScript
 API.
 
 Version 2.1 of the JavaScript API uses version 2.1 of the
-[GeoIP web services REST API](/geoip/geoip2/web-services/).
+[GeoIP web services REST API](/geoip/docs/web-services/).
 
 ### Browser support
 
