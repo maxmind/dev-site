@@ -77,8 +77,8 @@ and the [Response Body section](/geoip/docs/web-services/responses#response).
       </tr>
       <tr>
         <td>Perl (deprecated)</td>
-        <td><a href="https://metacpan.org/release/GeoIP2">CPAN</a></td>
-        <td><a href="https://metacpan.org/release/GeoIP2">MetaCPAN</a></td>
+        <td><a href="https://metacpan.org/dist/GeoIP2">CPAN</a></td>
+        <td><a href="https://metacpan.org/dist/GeoIP2">MetaCPAN</a></td>
         <td><a href="https://github.com/maxmind/GeoIP2-perl">GitHub</a></td>
       </tr>
       <tr>
