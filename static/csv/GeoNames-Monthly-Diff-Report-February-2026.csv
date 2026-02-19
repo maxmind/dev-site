@@ -1,0 +1,2218 @@
+diff_in,old_geoname_id,new_geoname_id,old_city_name,new_city_name,old_country_name,new_country_name,old_country_code,new_country_code,old_subdivision_codes,new_subdivision_codes
+city_name,2775768,2775768,Hohenau,Hohenau an der March,Austria,Austria,AT,AT,3,3
+city_name,3073152,3073152,Kostelec nad Černými Lesy,Kostelec nad Černými lesy,Czechia,Czechia,CZ,CZ,"20, 209","20, 209"
+city_name,3066072,3066072,Skalice,Skalice u České Lípy,Czechia,Czechia,CZ,CZ,"51, 511","51, 511"
+city_name,3079124,3079124,Bohunice,Brno-Bohunice,Czechia,Czechia,CZ,CZ,"64, 642","64, 642"
+city_name,655958,655958,Järvenpää,Jarvenpaa,Finland,Finland,FI,FI,18,18
+city_name,3019871,3019871,Er,Err,France,France,FR,FR,"OCC, 66","OCC, 66"
+city_name,2915283,2915283,Groß Meckelsen,Gross Meckelsen,Germany,Germany,DE,DE,NI,NI
+city_name,92877,92877,Nineveh,Nineveh Governorate,Iraq,Iraq,IQ,IQ,NI,NI
+city_name,9194273,9194273,Nevve Ziv,Neve Ziv,Israel,Israel,IL,IL,Z,Z
+city_name,3218565,3218565,Rasùn di Sotto,Rasun di Sotto,Italy,Italy,IT,IT,"32, BZ","32, BZ"
+city_name,1849675,1849675,Tsukiyono,Minakami,Japan,Japan,JP,JP,10,10
+city_name,3980390,3980390,Venustiano Carranza,San Pedro Cahro,Mexico,Mexico,MX,MX,MIC,MIC
+city_name,8710288,8710288,Braulio Hernández Aguirre,Braulio Fernández Aguirre,Mexico,Mexico,MX,MX,COA,COA
+city_name,1720151,1720151,Caloocan City,Caloocan,Philippines,Philippines,PH,PH,0,0
+city_name,8168336,8168336,Mierzyn k. Szczecina,Mierzyn,Poland,Poland,PL,PL,32,32
+city_name,3057889,3057889,Rastice,Zlaté Klasy,Slovakia,Slovakia,SK,SK,TA,TA
+city_name,952200,952200,Still Bay,Stilbaai,South Africa,South Africa,ZA,ZA,WC,WC
+country_name,3513563,3513563,Kralendijk,Kralendijk,"Bonaire, Sint Eustatius, and Saba","Bonaire, Sint Eustatius and Saba",BQ,BQ,BO,BO
+country_name,3513173,3513173,The Bottom,The Bottom,"Bonaire, Sint Eustatius, and Saba","Bonaire, Sint Eustatius and Saba",BQ,BQ,SA,SA
+country_name,3513426,3513426,Oranjestad,Oranjestad,"Bonaire, Sint Eustatius, and Saba","Bonaire, Sint Eustatius and Saba",BQ,BQ,SE,SE
+country_name,3513768,3513768,Dorp Antriol,Dorp Antriol,"Bonaire, Sint Eustatius, and Saba","Bonaire, Sint Eustatius and Saba",BQ,BQ,BO,BO
+country_name,203312,203312,,,DR Congo,Congo (DRC),CD,CD,,
+country_name,2314302,2314302,Kinshasa,Kinshasa,DR Congo,Congo (DRC),CD,CD,KN,KN
+country_name,216281,216281,Goma,Goma,DR Congo,Congo (DRC),CD,CD,NK,NK
+country_name,217831,217831,Bukavu,Bukavu,DR Congo,Congo (DRC),CD,CD,SK,SK
+country_name,212902,212902,Kindu,Kindu,DR Congo,Congo (DRC),CD,CD,MA,MA
+country_name,922704,922704,Lubumbashi,Lubumbashi,DR Congo,Congo (DRC),CD,CD,HK,HK
+country_name,217695,217695,Bunia,Bunia,DR Congo,Congo (DRC),CD,CD,IT,IT
+country_name,922773,922773,Kolwezi,Kolwezi,DR Congo,Congo (DRC),CD,CD,LU,LU
+country_name,6697854,6697854,De Knipe,De Knipe,The Netherlands,Netherlands,NL,NL,FR,FR
+country_name,2747858,2747858,Rucphen,Rucphen,The Netherlands,Netherlands,NL,NL,NB,NB
+country_name,2748023,2748023,Rodenrijs,Rodenrijs,The Netherlands,Netherlands,NL,NL,ZH,ZH
+country_name,2745503,2745503,Vinkel,Vinkel,The Netherlands,Netherlands,NL,NL,NB,NB
+country_name,6692371,6692371,Jubbega,Jubbega,The Netherlands,Netherlands,NL,NL,FR,FR
+country_name,2747322,2747322,Silvolde,Silvolde,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,2747891,2747891,Rotterdam,Rotterdam,The Netherlands,Netherlands,NL,NL,ZH,ZH
+country_name,2747339,2747339,Siegerswoude,Siegerswoude,The Netherlands,Netherlands,NL,NL,FR,FR
+country_name,2755434,2755434,Gorinchem,Gorinchem,The Netherlands,Netherlands,NL,NL,ZH,ZH
+country_name,2745298,2745298,Voorst,Voorst,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,2747603,2747603,Schettens,Schettens,The Netherlands,Netherlands,NL,NL,FR,FR
+country_name,2759794,2759794,Amsterdam,Amsterdam,The Netherlands,Netherlands,NL,NL,NH,NH
+country_name,2749058,2749058,Oudemolen,Oudemolen,The Netherlands,Netherlands,NL,NL,NB,NB
+country_name,2746198,2746198,Toornwerd,Toornwerd,The Netherlands,Netherlands,NL,NL,GR,GR
+country_name,2759162,2759162,Berg,Berg,The Netherlands,Netherlands,NL,NL,NB,NB
+country_name,2758108,2758108,Bunne,Bunne,The Netherlands,Netherlands,NL,NL,DR,DR
+country_name,2747515,2747515,Schoonebeek,Schoonebeek,The Netherlands,Netherlands,NL,NL,DR,DR
+country_name,2748000,2748000,Roermond,Roermond,The Netherlands,Netherlands,NL,NL,LI,LI
+country_name,2750358,2750358,Nieuw-Dijk,Nieuw-Dijk,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,2752923,2752923,Kerkrade,Kerkrade,The Netherlands,Netherlands,NL,NL,LI,LI
+country_name,2744483,2744483,Wijk bij Duurstede,Wijk bij Duurstede,The Netherlands,Netherlands,NL,NL,UT,UT
+country_name,2746860,2746860,Stadskanaal,Stadskanaal,The Netherlands,Netherlands,NL,NL,GR,GR
+country_name,2749446,2749446,Oosterhuizen,Oosterhuizen,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,2754848,2754848,Harderwijk,Harderwijk,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,2753465,2753465,Huizerhoogt,Huizerhoogt,The Netherlands,Netherlands,NL,NL,NH,NH
+country_name,2752824,2752824,Kinnum,Kinnum,The Netherlands,Netherlands,NL,NL,FR,FR
+country_name,2749812,2749812,Noordwijk-Binnen,Noordwijk-Binnen,The Netherlands,Netherlands,NL,NL,ZH,ZH
+country_name,2757989,2757989,Castricum aan Zee,Castricum aan Zee,The Netherlands,Netherlands,NL,NL,NH,NH
+country_name,2751299,2751299,Maasdam,Maasdam,The Netherlands,Netherlands,NL,NL,ZH,ZH
+country_name,2759308,2759308,Bears,Bears,The Netherlands,Netherlands,NL,NL,FR,FR
+country_name,2747031,2747031,Soestduinen,Soestduinen,The Netherlands,Netherlands,NL,NL,UT,UT
+country_name,2752422,2752422,Kornwerderzand,Kornwerderzand,The Netherlands,Netherlands,NL,NL,FR,FR
+country_name,2750405,2750405,,,The Netherlands,Netherlands,NL,NL,,
+country_name,2756559,2756559,Dronten,Dronten,The Netherlands,Netherlands,NL,NL,FL,FL
+country_name,2756767,2756767,Doetinchem,Doetinchem,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,8436503,8436503,Beek en Donk,Beek en Donk,The Netherlands,Netherlands,NL,NL,NB,NB
+country_name,2755605,2755605,Gemert,Gemert,The Netherlands,Netherlands,NL,NL,NB,NB
+country_name,6698718,6698718,Aarle-Rixtel,Aarle-Rixtel,The Netherlands,Netherlands,NL,NL,NB,NB
+country_name,2753031,2753031,Kats,Kats,The Netherlands,Netherlands,NL,NL,ZE,ZE
+country_name,2758498,2758498,Bovenkarspel,Bovenkarspel,The Netherlands,Netherlands,NL,NL,NH,NH
+country_name,2747584,2747584,Schijndel,Schijndel,The Netherlands,Netherlands,NL,NL,NB,NB
+country_name,2755251,2755251,Groningen,Groningen,The Netherlands,Netherlands,NL,NL,GR,GR
+country_name,2746234,2746234,Tolbert,Tolbert,The Netherlands,Netherlands,NL,NL,GR,GR
+country_name,2753197,2753197,Joure,Joure,The Netherlands,Netherlands,NL,NL,FR,FR
+country_name,2756987,2756987,Deventer,Deventer,The Netherlands,Netherlands,NL,NL,OV,OV
+country_name,2745311,2745311,Voorhout,Voorhout,The Netherlands,Netherlands,NL,NL,ZH,ZH
+country_name,2758868,2758868,Blaricum,Blaricum,The Netherlands,Netherlands,NL,NL,NH,NH
+country_name,2758064,2758064,Bussum,Bussum,The Netherlands,Netherlands,NL,NL,NH,NH
+country_name,2750121,2750121,Nieuw-Vennep,Nieuw-Vennep,The Netherlands,Netherlands,NL,NL,NH,NH
+country_name,2754073,2754073,Hillegom,Hillegom,The Netherlands,Netherlands,NL,NL,ZH,ZH
+country_name,2745321,2745321,Voorburg,Voorburg,The Netherlands,Netherlands,NL,NL,ZH,ZH
+country_name,2750325,2750325,Nieuwegein,Nieuwegein,The Netherlands,Netherlands,NL,NL,UT,UT
+country_name,2759426,2759426,Barendrecht,Barendrecht,The Netherlands,Netherlands,NL,NL,ZH,ZH
+country_name,2750065,2750065,Nijkerk,Nijkerk,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,2745123,2745123,Waalwijk,Waalwijk,The Netherlands,Netherlands,NL,NL,NB,NB
+country_name,2746609,2746609,Strijen,Strijen,The Netherlands,Netherlands,NL,NL,ZH,ZH
+country_name,2759899,2759899,Alkmaar,Alkmaar,The Netherlands,Netherlands,NL,NL,NH,NH
+country_name,2743977,2743977,Zeist,Zeist,The Netherlands,Netherlands,NL,NL,UT,UT
+country_name,2750053,2750053,Nijmegen,Nijmegen,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,2755616,2755616,Geleen,Geleen,The Netherlands,Netherlands,NL,NL,LI,LI
+country_name,2758012,2758012,Capelle aan den IJssel,Capelle aan den IJssel,The Netherlands,Netherlands,NL,NL,ZH,ZH
+country_name,2751773,2751773,Leiden,Leiden,The Netherlands,Netherlands,NL,NL,ZH,ZH
+country_name,2745012,2745012,Warmond,Warmond,The Netherlands,Netherlands,NL,NL,ZH,ZH
+country_name,2750263,2750263,Nieuwerkerk aan den IJssel,Nieuwerkerk aan den IJssel,The Netherlands,Netherlands,NL,NL,ZH,ZH
+country_name,2743856,2743856,Zoetermeer,Zoetermeer,The Netherlands,Netherlands,NL,NL,ZH,ZH
+country_name,2748533,2748533,Poeldijk,Poeldijk,The Netherlands,Netherlands,NL,NL,ZH,ZH
+country_name,2750764,2750764,Moerkapelle,Moerkapelle,The Netherlands,Netherlands,NL,NL,ZH,ZH
+country_name,2758825,2758825,Bleskensgraaf,Bleskensgraaf,The Netherlands,Netherlands,NL,NL,ZH,ZH
+country_name,2747596,2747596,Schiedam,Schiedam,The Netherlands,Netherlands,NL,NL,ZH,ZH
+country_name,2745860,2745860,Valkenswaard,Valkenswaard,The Netherlands,Netherlands,NL,NL,NB,NB
+country_name,2758838,2758838,Bleiswijk,Bleiswijk,The Netherlands,Netherlands,NL,NL,ZH,ZH
+country_name,2752377,2752377,Koudekerk aan den Rijn,Koudekerk aan den Rijn,The Netherlands,Netherlands,NL,NL,ZH,ZH
+country_name,2743930,2743930,Zevenhuizen,Zevenhuizen,The Netherlands,Netherlands,NL,NL,ZH,ZH
+country_name,2754064,2754064,Hilversum,Hilversum,The Netherlands,Netherlands,NL,NL,NH,NH
+country_name,2759631,2759631,Assendelft,Assendelft,The Netherlands,Netherlands,NL,NL,NH,NH
+country_name,2746389,2746389,Teteringen,Teteringen,The Netherlands,Netherlands,NL,NL,NB,NB
+country_name,2758462,2758462,Boxmeer,Boxmeer,The Netherlands,Netherlands,NL,NL,NB,NB
+country_name,2751316,2751316,Maarssen,Maarssen,The Netherlands,Netherlands,NL,NL,UT,UT
+country_name,2758927,2758927,Bilthoven,Bilthoven,The Netherlands,Netherlands,NL,NL,UT,UT
+country_name,2748413,2748413,Purmerend,Purmerend,The Netherlands,Netherlands,NL,NL,NH,NH
+country_name,2754394,2754394,Hengelo,Hengelo,The Netherlands,Netherlands,NL,NL,OV,OV
+country_name,2759798,2759798,Amstelveen,Amstelveen,The Netherlands,Netherlands,NL,NL,NH,NH
+country_name,2754692,2754692,Heemstede,Heemstede,The Netherlands,Netherlands,NL,NL,NH,NH
+country_name,2750821,2750821,Mierlo,Mierlo,The Netherlands,Netherlands,NL,NL,NB,NB
+country_name,2759621,2759621,Asten,Asten,The Netherlands,Netherlands,NL,NL,NB,NB
+country_name,2757009,2757009,Deurne,Deurne,The Netherlands,Netherlands,NL,NL,NB,NB
+country_name,2754447,2754447,Helmond,Helmond,The Netherlands,Netherlands,NL,NL,NB,NB
+country_name,2745641,2745641,Venlo,Venlo,The Netherlands,Netherlands,NL,NL,LI,LI
+country_name,2751821,2751821,Leende,Leende,The Netherlands,Netherlands,NL,NL,NB,NB
+country_name,2746504,2746504,Tegelen,Tegelen,The Netherlands,Netherlands,NL,NL,LI,LI
+country_name,2751257,2751257,Makkinga,Makkinga,The Netherlands,Netherlands,NL,NL,FR,FR
+country_name,2759158,2759158,Bergambacht,Bergambacht,The Netherlands,Netherlands,NL,NL,ZH,ZH
+country_name,2754659,2754659,Heerhugowaard,Heerhugowaard,The Netherlands,Netherlands,NL,NL,NH,NH
+country_name,2749191,2749191,Oud Ade,Oud Ade,The Netherlands,Netherlands,NL,NL,ZH,ZH
+country_name,2749964,2749964,Noorden,Noorden,The Netherlands,Netherlands,NL,NL,ZH,ZH
+country_name,2750621,2750621,Mook,Mook,The Netherlands,Netherlands,NL,NL,LI,LI
+country_name,2744246,2744246,Woerdense Verlaat,Woerdense Verlaat,The Netherlands,Netherlands,NL,NL,ZH,ZH
+country_name,2746665,2746665,Stolwijk,Stolwijk,The Netherlands,Netherlands,NL,NL,ZH,ZH
+country_name,2745388,2745388,Vlist,Vlist,The Netherlands,Netherlands,NL,NL,ZH,ZH
+country_name,2749391,2749391,Oosterwolde,Oosterwolde,The Netherlands,Netherlands,NL,NL,FR,FR
+country_name,2745467,2745467,Vlaardingen,Vlaardingen,The Netherlands,Netherlands,NL,NL,ZH,ZH
+country_name,2751544,2751544,Lisserbroek,Lisserbroek,The Netherlands,Netherlands,NL,NL,NH,NH
+country_name,2760073,2760073,Abbenes,Abbenes,The Netherlands,Netherlands,NL,NL,NH,NH
+country_name,2754814,2754814,Harmelen,Harmelen,The Netherlands,Netherlands,NL,NL,UT,UT
+country_name,2750140,2750140,Nieuw-Roden,Nieuw-Roden,The Netherlands,Netherlands,NL,NL,DR,DR
+country_name,2743937,2743937,Zevenhoven,Zevenhoven,The Netherlands,Netherlands,NL,NL,ZH,ZH
+country_name,2743990,2743990,Zegveld,Zegveld,The Netherlands,Netherlands,NL,NL,UT,UT
+country_name,2754978,2754978,Haastrecht,Haastrecht,The Netherlands,Netherlands,NL,NL,ZH,ZH
+country_name,2751738,2751738,Lelystad,Lelystad,The Netherlands,Netherlands,NL,NL,FL,FL
+country_name,2745706,2745706,Veldhoven,Veldhoven,The Netherlands,Netherlands,NL,NL,NB,NB
+country_name,2751771,2751771,Leiderdorp,Leiderdorp,The Netherlands,Netherlands,NL,NL,ZH,ZH
+country_name,2756669,2756669,Dordrecht,Dordrecht,The Netherlands,Netherlands,NL,NL,ZH,ZH
+country_name,2748091,2748091,Rijsbergen,Rijsbergen,The Netherlands,Netherlands,NL,NL,NB,NB
+country_name,2747373,2747373,The Hague,The Hague,The Netherlands,Netherlands,NL,NL,ZH,ZH
+country_name,2756888,2756888,Diemen,Diemen,The Netherlands,Netherlands,NL,NL,NH,NH
+country_name,2745912,2745912,Utrecht,Utrecht,The Netherlands,Netherlands,NL,NL,UT,UT
+country_name,2747720,2747720,Schagen,Schagen,The Netherlands,Netherlands,NL,NL,NH,NH
+country_name,11776989,11776989,Son en Breugel,Son en Breugel,The Netherlands,Netherlands,NL,NL,NB,NB
+country_name,2744991,2744991,Wassenaar,Wassenaar,The Netherlands,Netherlands,NL,NL,ZH,ZH
+country_name,2759828,2759828,Amerongen,Amerongen,The Netherlands,Netherlands,NL,NL,UT,UT
+country_name,2751729,2751729,Lemmer,Lemmer,The Netherlands,Netherlands,NL,NL,FR,FR
+country_name,2747225,2747225,Sint Pancras,Sint Pancras,The Netherlands,Netherlands,NL,NL,NH,NH
+country_name,2745431,2745431,Vleuten,Vleuten,The Netherlands,Netherlands,NL,NL,UT,UT
+country_name,2745726,2745726,Veghel,Veghel,The Netherlands,Netherlands,NL,NL,NB,NB
+country_name,2755535,2755535,Giessen,Giessen,The Netherlands,Netherlands,NL,NL,NB,NB
+country_name,2743477,2743477,Zwolle,Zwolle,The Netherlands,Netherlands,NL,NL,OV,OV
+country_name,2748361,2748361,Raamsdonksveer,Raamsdonksveer,The Netherlands,Netherlands,NL,NL,NB,NB
+country_name,2749990,2749990,,,The Netherlands,Netherlands,NL,NL,NB,NB
+country_name,2759145,2759145,Bergen op Zoom,Bergen op Zoom,The Netherlands,Netherlands,NL,NL,NB,NB
+country_name,2757874,2757874,Cuijk,Cuijk,The Netherlands,Netherlands,NL,NL,NB,NB
+country_name,2747506,2747506,Schoonhoven,Schoonhoven,The Netherlands,Netherlands,NL,NL,ZH,ZH
+country_name,2746301,2746301,Tilburg,Tilburg,The Netherlands,Netherlands,NL,NL,NB,NB
+country_name,2758401,2758401,Breda,Breda,The Netherlands,Netherlands,NL,NL,NB,NB
+country_name,2753071,2753071,Kapel-Avezaath,Kapel-Avezaath,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,2747076,2747076,Smilde,Smilde,The Netherlands,Netherlands,NL,NL,DR,DR
+country_name,2745382,2745382,Vlodrop,Vlodrop,The Netherlands,Netherlands,NL,NL,LI,LI
+country_name,2745154,2745154,Vught,Vught,The Netherlands,Netherlands,NL,NL,NB,NB
+country_name,2744118,2744118,Zaandam,Zaandam,The Netherlands,Netherlands,NL,NL,NH,NH
+country_name,2748308,2748308,Ravenstein,Ravenstein,The Netherlands,Netherlands,NL,NL,NB,NB
+country_name,2749234,2749234,Oss,Oss,The Netherlands,Netherlands,NL,NL,NB,NB
+country_name,2743619,2743619,Zundert,Zundert,The Netherlands,Netherlands,NL,NL,NB,NB
+country_name,2745678,2745678,Velp,Velp,The Netherlands,Netherlands,NL,NL,NB,NB
+country_name,2754635,2754635,Heesch,Heesch,The Netherlands,Netherlands,NL,NL,NB,NB
+country_name,2748834,2748834,Overlangel,Overlangel,The Netherlands,Netherlands,NL,NL,NB,NB
+country_name,2756429,2756429,Ede,Ede,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,2747366,2747366,s-Gravenpolder,s-Gravenpolder,The Netherlands,Netherlands,NL,NL,ZE,ZE
+country_name,2751769,2751769,Leidschendam,Leidschendam,The Netherlands,Netherlands,NL,NL,ZH,ZH
+country_name,2754652,2754652,Heerlen,Heerlen,The Netherlands,Netherlands,NL,NL,LI,LI
+country_name,2750692,2750692,Molenhoek,Molenhoek,The Netherlands,Netherlands,NL,NL,LI,LI
+country_name,2750380,2750380,Nietap,Nietap,The Netherlands,Netherlands,NL,NL,DR,DR
+country_name,2747340,2747340,Siebengewald,Siebengewald,The Netherlands,Netherlands,NL,NL,LI,LI
+country_name,2756253,2756253,Eindhoven,Eindhoven,The Netherlands,Netherlands,NL,NL,NB,NB
+country_name,2755358,2755358,Grave,Grave,The Netherlands,Netherlands,NL,NL,NB,NB
+country_name,2759661,2759661,Arnhem,Arnhem,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,2750881,2750881,Middelie,Middelie,The Netherlands,Netherlands,NL,NL,NH,NH
+country_name,2747276,2747276,Sint Hubert,Sint Hubert,The Netherlands,Netherlands,NL,NL,NB,NB
+country_name,2744865,2744865,Well,Well,The Netherlands,Netherlands,NL,NL,LI,LI
+country_name,2755911,2755911,Fijnaart,Fijnaart,The Netherlands,Netherlands,NL,NL,NB,NB
+country_name,2752267,2752267,Krimpen aan de Lek,Krimpen aan de Lek,The Netherlands,Netherlands,NL,NL,ZH,ZH
+country_name,2752264,2752264,Krimpen aan den IJssel,Krimpen aan den IJssel,The Netherlands,Netherlands,NL,NL,ZH,ZH
+country_name,2746932,2746932,Spijkenisse,Spijkenisse,The Netherlands,Netherlands,NL,NL,ZH,ZH
+country_name,2758163,2758163,Budel-Schoot,Budel-Schoot,The Netherlands,Netherlands,NL,NL,NB,NB
+country_name,2749644,2749644,Oldenzaal,Oldenzaal,The Netherlands,Netherlands,NL,NL,OV,OV
+country_name,2757872,2757872,Culemborg,Culemborg,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,2748185,2748185,Rhenen,Rhenen,The Netherlands,Netherlands,NL,NL,UT,UT
+country_name,2745088,2745088,Wageningen,Wageningen,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,2759197,2759197,Bennekom,Bennekom,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,2753106,2753106,Kampen,Kampen,The Netherlands,Netherlands,NL,NL,OV,OV
+country_name,2755420,2755420,Gouda,Gouda,The Netherlands,Netherlands,NL,NL,ZH,ZH
+country_name,2755003,2755003,Haarlem,Haarlem,The Netherlands,Netherlands,NL,NL,NH,NH
+country_name,2759288,2759288,Beesd,Beesd,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,2758765,2758765,Bodegraven,Bodegraven,The Netherlands,Netherlands,NL,NL,ZH,ZH
+country_name,2749765,2749765,Numansdorp,Numansdorp,The Netherlands,Netherlands,NL,NL,ZH,ZH
+country_name,2756759,2756759,Dokkum,Dokkum,The Netherlands,Netherlands,NL,NL,FR,FR
+country_name,2749182,2749182,Oud-Beijerland,Oud-Beijerland,The Netherlands,Netherlands,NL,NL,ZH,ZH
+country_name,2758547,2758547,Boskoop,Boskoop,The Netherlands,Netherlands,NL,NL,ZH,ZH
+country_name,2759875,2759875,Alphen aan den Rijn,Alphen aan den Rijn,The Netherlands,Netherlands,NL,NL,ZH,ZH
+country_name,2750123,2750123,Nieuwveen,Nieuwveen,The Netherlands,Netherlands,NL,NL,ZH,ZH
+country_name,2744167,2744167,Woubrugge,Woubrugge,The Netherlands,Netherlands,NL,NL,ZH,ZH
+country_name,2746475,2746475,Ter Apel,Ter Apel,The Netherlands,Netherlands,NL,NL,GR,GR
+country_name,2750527,2750527,Musselkanaal,Musselkanaal,The Netherlands,Netherlands,NL,NL,GR,GR
+country_name,2746003,2746003,Udenhout,Udenhout,The Netherlands,Netherlands,NL,NL,NB,NB
+country_name,2750947,2750947,Meppel,Meppel,The Netherlands,Netherlands,NL,NL,DR,DR
+country_name,2751242,2751242,Malden,Malden,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,2754888,2754888,Hank,Hank,The Netherlands,Netherlands,NL,NL,NB,NB
+country_name,2743853,2743853,Zoeterwoude-Dorp,Zoeterwoude-Dorp,The Netherlands,Netherlands,NL,NL,ZH,ZH
+country_name,2753725,2753725,Hoogerheide,Hoogerheide,The Netherlands,Netherlands,NL,NL,NB,NB
+country_name,2746351,2746351,Tholen,Tholen,The Netherlands,Netherlands,NL,NL,ZE,ZE
+country_name,2748891,2748891,Oud-Vossemeer,Oud-Vossemeer,The Netherlands,Netherlands,NL,NL,ZE,ZE
+country_name,2746130,2746130,Tuil,Tuil,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,2758598,2758598,Borne,Borne,The Netherlands,Netherlands,NL,NL,OV,OV
+country_name,2744102,2744102,Zaltbommel,Zaltbommel,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,2750921,2750921,Meteren,Meteren,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,2759643,2759643,Asperen,Asperen,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,2754922,2754922,Halsteren,Halsteren,The Netherlands,Netherlands,NL,NL,NB,NB
+country_name,2744675,2744675,Westervoort,Westervoort,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,2752575,2752575,Koedijk,Koedijk,The Netherlands,Netherlands,NL,NL,NH,NH
+country_name,2759059,2759059,Berlicum,Berlicum,The Netherlands,Netherlands,NL,NL,NB,NB
+country_name,2751682,2751682,Leuth,Leuth,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,2757345,2757345,Delft,Delft,The Netherlands,Netherlands,NL,NL,ZH,ZH
+country_name,2755584,2755584,Gennep,Gennep,The Netherlands,Netherlands,NL,NL,LI,LI
+country_name,2758992,2758992,Biddinghuizen,Biddinghuizen,The Netherlands,Netherlands,NL,NL,FL,FL
+country_name,2745626,2745626,Ven-Zelderheide,Ven-Zelderheide,The Netherlands,Netherlands,NL,NL,LI,LI
+country_name,2754779,2754779,Hasselt,Hasselt,The Netherlands,Netherlands,NL,NL,OV,OV
+country_name,2751792,2751792,Leeuwarden,Leeuwarden,The Netherlands,Netherlands,NL,NL,FR,FR
+country_name,2753379,2753379,IJlst,IJlst,The Netherlands,Netherlands,NL,NL,FR,FR
+country_name,2745271,2745271,Voorthuizen,Voorthuizen,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,2755464,2755464,Goirle,Goirle,The Netherlands,Netherlands,NL,NL,NB,NB
+country_name,2756351,2756351,Eerbeek,Eerbeek,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,2749813,2749813,Noordwijk aan Zee,Noordwijk aan Zee,The Netherlands,Netherlands,NL,NL,ZH,ZH
+country_name,2750884,2750884,Middelharnis,Middelharnis,The Netherlands,Netherlands,NL,NL,ZH,ZH
+country_name,2747371,2747371,s Gravenmoer,s Gravenmoer,The Netherlands,Netherlands,NL,NL,NB,NB
+country_name,2756136,2756136,Emmen,Emmen,The Netherlands,Netherlands,NL,NL,DR,DR
+country_name,2757220,2757220,Den Helder,Den Helder,The Netherlands,Netherlands,NL,NL,NH,NH
+country_name,2759633,2759633,Assen,Assen,The Netherlands,Netherlands,NL,NL,DR,DR
+country_name,2744994,2744994,Waspik,Waspik,The Netherlands,Netherlands,NL,NL,NB,NB
+country_name,2751424,2751424,Losser,Losser,The Netherlands,Netherlands,NL,NL,OV,OV
+country_name,2756800,2756800,Dinteloord,Dinteloord,The Netherlands,Netherlands,NL,NL,NB,NB
+country_name,2758998,2758998,Beverwijk,Beverwijk,The Netherlands,Netherlands,NL,NL,NH,NH
+country_name,2748389,2748389,Puttershoek,Puttershoek,The Netherlands,Netherlands,NL,NL,ZH,ZH
+country_name,2755594,2755594,Genemuiden,Genemuiden,The Netherlands,Netherlands,NL,NL,OV,OV
+country_name,2745025,2745025,Warder,Warder,The Netherlands,Netherlands,NL,NL,NH,NH
+country_name,2759407,2759407,Barneveld,Barneveld,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,2747021,2747021,Someren,Someren,The Netherlands,Netherlands,NL,NL,NB,NB
+country_name,2753700,2753700,Hooge Zwaluwe,Hooge Zwaluwe,The Netherlands,Netherlands,NL,NL,NB,NB
+country_name,2759544,2759544,Baarn,Baarn,The Netherlands,Netherlands,NL,NL,UT,UT
+country_name,2759524,2759524,Badhoevedorp,Badhoevedorp,The Netherlands,Netherlands,NL,NL,NH,NH
+country_name,2759706,2759706,Apeldoorn,Apeldoorn,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,2752476,2752476,Koog aan de Zaan,Koog aan de Zaan,The Netherlands,Netherlands,NL,NL,NH,NH
+country_name,2748228,2748228,Renswoude,Renswoude,The Netherlands,Netherlands,NL,NL,UT,UT
+country_name,2756431,2756431,Edam,Edam,The Netherlands,Netherlands,NL,NL,NH,NH
+country_name,2743800,2743800,Zuidbroek,Zuidbroek,The Netherlands,Netherlands,NL,NL,GR,GR
+country_name,2750460,2750460,Neede,Neede,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,2759879,2759879,Almere Stad,Almere Stad,The Netherlands,Netherlands,NL,NL,FL,FL
+country_name,2754482,2754482,Helden,Helden,The Netherlands,Netherlands,NL,NL,LI,LI
+country_name,2755633,2755633,Geldermalsen,Geldermalsen,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,2744534,2744534,Wieringerwaard,Wieringerwaard,The Netherlands,Netherlands,NL,NL,NH,NH
+country_name,2748178,2748178,Rhoon,Rhoon,The Netherlands,Netherlands,NL,NL,ZH,ZH
+country_name,2744174,2744174,Wormer,Wormer,The Netherlands,Netherlands,NL,NL,NH,NH
+country_name,2745580,2745580,Vianen,Vianen,The Netherlands,Netherlands,NL,NL,UT,UT
+country_name,2748371,2748371,Raalte,Raalte,The Netherlands,Netherlands,NL,NL,OV,OV
+country_name,2756896,2756896,Didam,Didam,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,2748392,2748392,Putten,Putten,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,2749668,2749668,Oldebroek,Oldebroek,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,2754702,2754702,Heelweg,Heelweg,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,2759344,2759344,Beek gem Montferland,Beek gem Montferland,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,2745800,2745800,Varsseveld,Varsseveld,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,2749780,2749780,Nuenen,Nuenen,The Netherlands,Netherlands,NL,NL,NB,NB
+country_name,2757850,2757850,Dalfsen,Dalfsen,The Netherlands,Netherlands,NL,NL,OV,OV
+country_name,2756039,2756039,Ermelo,Ermelo,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,2759511,2759511,Bakel,Bakel,The Netherlands,Netherlands,NL,NL,NB,NB
+country_name,2744031,2744031,Zeddam,Zeddam,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,2746009,2746009,Uddel,Uddel,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,2760075,2760075,Abbenbroek,Abbenbroek,The Netherlands,Netherlands,NL,NL,ZH,ZH
+country_name,2745727,2745727,Vegelinsoord,Vegelinsoord,The Netherlands,Netherlands,NL,NL,FR,FR
+country_name,2753423,2753423,Hummelo,Hummelo,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,2751385,2751385,Lunteren,Lunteren,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,2746839,2746839,Staphorst,Staphorst,The Netherlands,Netherlands,NL,NL,OV,OV
+country_name,2754681,2754681,Heerde,Heerde,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,2747437,2747437,Schuinesloot,Schuinesloot,The Netherlands,Netherlands,NL,NL,OV,OV
+country_name,2744896,2744896,Wehl,Wehl,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,2749203,2749203,Otterlo,Otterlo,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,2745037,2745037,Wapenveld,Wapenveld,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,2749712,2749712,Oene,Oene,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,2755449,2755449,Goor,Goor,The Netherlands,Netherlands,NL,NL,OV,OV
+country_name,2756059,2756059,Epe,Epe,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,2748979,2748979,Oudewater,Oudewater,The Netherlands,Netherlands,NL,NL,UT,UT
+country_name,2747054,2747054,Snelrewaard,Snelrewaard,The Netherlands,Netherlands,NL,NL,UT,UT
+country_name,2759774,2759774,Andijk,Andijk,The Netherlands,Netherlands,NL,NL,NH,NH
+country_name,2746121,2746121,Tuitjenhorn,Tuitjenhorn,The Netherlands,Netherlands,NL,NL,NH,NH
+country_name,2743658,2743658,Zuid-Scharwoude,Zuid-Scharwoude,The Netherlands,Netherlands,NL,NL,NH,NH
+country_name,2751379,2751379,Lutjebroek,Lutjebroek,The Netherlands,Netherlands,NL,NL,NH,NH
+country_name,2745014,2745014,Warmenhuizen,Warmenhuizen,The Netherlands,Netherlands,NL,NL,NH,NH
+country_name,2751318,2751318,Maarsbergen,Maarsbergen,The Netherlands,Netherlands,NL,NL,UT,UT
+country_name,2756788,2756788,Dirkshorn,Dirkshorn,The Netherlands,Netherlands,NL,NL,NH,NH
+country_name,2746980,2746980,Spanbroek,Spanbroek,The Netherlands,Netherlands,NL,NL,NH,NH
+country_name,2743657,2743657,Zuidschermer,Zuidschermer,The Netherlands,Netherlands,NL,NL,NH,NH
+country_name,2759931,2759931,Akersloot,Akersloot,The Netherlands,Netherlands,NL,NL,NH,NH
+country_name,2749207,2749207,Oterleek,Oterleek,The Netherlands,Netherlands,NL,NL,NH,NH
+country_name,2756165,2756165,Elspeet,Elspeet,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,2756677,2756677,Doornspijk,Doornspijk,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,2748591,2748591,Pijnacker,Pijnacker,The Netherlands,Netherlands,NL,NL,ZH,ZH
+country_name,2759764,2759764,Angerlo,Angerlo,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,2757349,2757349,Delfgauw,Delfgauw,The Netherlands,Netherlands,NL,NL,ZH,ZH
+country_name,2747227,2747227,Sint-Oedenrode,Sint-Oedenrode,The Netherlands,Netherlands,NL,NL,NB,NB
+country_name,2759040,2759040,Best,Best,The Netherlands,Netherlands,NL,NL,NB,NB
+country_name,11395895,11395895,Ambt Delden,Ambt Delden,The Netherlands,Netherlands,NL,NL,OV,OV
+country_name,2755030,2755030,Haaksbergen,Haaksbergen,The Netherlands,Netherlands,NL,NL,OV,OV
+country_name,2747262,2747262,Sint Jansklooster,Sint Jansklooster,The Netherlands,Netherlands,NL,NL,OV,OV
+country_name,2756634,2756634,Drempt,Drempt,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,2759878,2759878,Almkerk,Almkerk,The Netherlands,Netherlands,NL,NL,NB,NB
+country_name,2756071,2756071,Enschede,Enschede,The Netherlands,Netherlands,NL,NL,OV,OV
+country_name,2751296,2751296,Maasdijk,Maasdijk,The Netherlands,Netherlands,NL,NL,ZH,ZH
+country_name,2751687,2751687,Leusden,Leusden,The Netherlands,Netherlands,NL,NL,UT,UT
+country_name,2759821,2759821,Amersfoort,Amersfoort,The Netherlands,Netherlands,NL,NL,UT,UT
+country_name,2756787,2756787,Dirksland,Dirksland,The Netherlands,Netherlands,NL,NL,ZH,ZH
+country_name,2743493,2743493,Zwijndrecht,Zwijndrecht,The Netherlands,Netherlands,NL,NL,ZH,ZH
+country_name,2750187,2750187,Nieuwkoop,Nieuwkoop,The Netherlands,Netherlands,NL,NL,ZH,ZH
+country_name,2748130,2748130,Rijen,Rijen,The Netherlands,Netherlands,NL,NL,NB,NB
+country_name,2755619,2755619,Geldrop,Geldrop,The Netherlands,Netherlands,NL,NL,NB,NB
+country_name,2746456,2746456,Terheijden,Terheijden,The Netherlands,Netherlands,NL,NL,NB,NB
+country_name,10173839,10173839,Schiphol,Schiphol,The Netherlands,Netherlands,NL,NL,NH,NH
+country_name,2751537,2751537,Lochem,Lochem,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,2753557,2753557,Houten,Houten,The Netherlands,Netherlands,NL,NL,UT,UT
+country_name,2750521,2750521,Naarden,Naarden,The Netherlands,Netherlands,NL,NL,NH,NH
+country_name,2744163,2744163,Woudenberg,Woudenberg,The Netherlands,Netherlands,NL,NL,UT,UT
+country_name,2744042,2744042,Zandvoort,Zandvoort,The Netherlands,Netherlands,NL,NL,NH,NH
+country_name,2745784,2745784,Veen,Veen,The Netherlands,Netherlands,NL,NL,NB,NB
+country_name,2755476,2755476,Goes,Goes,The Netherlands,Netherlands,NL,NL,ZE,ZE
+country_name,2745143,2745143,Vuren,Vuren,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,2754287,2754287,Heteren,Heteren,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,2743608,2743608,Zutphen,Zutphen,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,2746631,2746631,Stramproy,Stramproy,The Netherlands,Netherlands,NL,NL,LI,LI
+country_name,2756161,2756161,Elst,Elst,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,2758097,2758097,Buren,Buren,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,2751272,2751272,Made,Made,The Netherlands,Netherlands,NL,NL,NB,NB
+country_name,2748026,2748026,Roden,Roden,The Netherlands,Netherlands,NL,NL,DR,DR
+country_name,2756644,2756644,Drachten,Drachten,The Netherlands,Netherlands,NL,NL,FR,FR
+country_name,2753355,2753355,IJsselstein,IJsselstein,The Netherlands,Netherlands,NL,NL,UT,UT
+country_name,2753719,2753719,Hoogeveen,Hoogeveen,The Netherlands,Netherlands,NL,NL,DR,DR
+country_name,2748625,2748625,Philippine,Philippine,The Netherlands,Netherlands,NL,NL,ZE,ZE
+country_name,2747930,2747930,Roosendaal,Roosendaal,The Netherlands,Netherlands,NL,NL,NB,NB
+country_name,2743673,2743673,Zuidoostbeemster,Zuidoostbeemster,The Netherlands,Netherlands,NL,NL,NH,NH
+country_name,2749450,2749450,Oosterhout,Oosterhout,The Netherlands,Netherlands,NL,NL,NB,NB
+country_name,2753184,2753184,Julianadorp,Julianadorp,The Netherlands,Netherlands,NL,NL,NH,NH
+country_name,2743680,2743680,Zuidlaren,Zuidlaren,The Netherlands,Netherlands,NL,NL,DR,DR
+country_name,2749613,2749613,Ommen,Ommen,The Netherlands,Netherlands,NL,NL,OV,OV
+country_name,2756772,2756772,Doesburg,Doesburg,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,2750106,2750106,Nigtevecht,Nigtevecht,The Netherlands,Netherlands,NL,NL,UT,UT
+country_name,2749680,2749680,Oisterwijk,Oisterwijk,The Netherlands,Netherlands,NL,NL,NB,NB
+country_name,2748083,2748083,Rijssen,Rijssen,The Netherlands,Netherlands,NL,NL,OV,OV
+country_name,2748076,2748076,Rijswijk,Rijswijk,The Netherlands,Netherlands,NL,NL,ZH,ZH
+country_name,2745634,2745634,Venray,Venray,The Netherlands,Netherlands,NL,NL,LI,LI
+country_name,2750161,2750161,Nieuwleusen,Nieuwleusen,The Netherlands,Netherlands,NL,NL,OV,OV
+country_name,2749320,2749320,Oostzaan,Oostzaan,The Netherlands,Netherlands,NL,NL,NH,NH
+country_name,2751147,2751147,Marknesse,Marknesse,The Netherlands,Netherlands,NL,NL,FL,FL
+country_name,2753376,2753376,IJmuiden,IJmuiden,The Netherlands,Netherlands,NL,NL,NH,NH
+country_name,2753638,2753638,Hoorn,Hoorn,The Netherlands,Netherlands,NL,NL,NH,NH
+country_name,2754817,2754817,Harlingen,Harlingen,The Netherlands,Netherlands,NL,NL,FR,FR
+country_name,11746060,11746060,Hardinxveld-Giessendam,Hardinxveld-Giessendam,The Netherlands,Netherlands,NL,NL,ZH,ZH
+country_name,2754768,2754768,Hattem,Hattem,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,2746060,2746060,Twello,Twello,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,2758599,2758599,Borne,Borne,The Netherlands,Netherlands,NL,NL,NB,NB
+country_name,2756035,2756035,Erp,Erp,The Netherlands,Netherlands,NL,NL,NB,NB
+country_name,2751744,2751744,Lekkerkerk,Lekkerkerk,The Netherlands,Netherlands,NL,NL,ZH,ZH
+country_name,2744514,2744514,Wijchen,Wijchen,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,2744904,2744904,Weesp,Weesp,The Netherlands,Netherlands,NL,NL,NH,NH
+country_name,2749683,2749683,Oirschot,Oirschot,The Netherlands,Netherlands,NL,NL,NB,NB
+country_name,2743997,2743997,Zeewolde,Zeewolde,The Netherlands,Netherlands,NL,NL,FL,FL
+country_name,2746540,2746540,Swifterbant,Swifterbant,The Netherlands,Netherlands,NL,NL,FL,FL
+country_name,2743949,2743949,Zevenaar,Zevenaar,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,2760123,2760123,Aalten,Aalten,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,2753666,2753666,Hoogvliet,Hoogvliet,The Netherlands,Netherlands,NL,NL,ZH,ZH
+country_name,2754618,2754618,Heeze,Heeze,The Netherlands,Netherlands,NL,NL,NB,NB
+country_name,2754454,2754454,Hellevoetsluis,Hellevoetsluis,The Netherlands,Netherlands,NL,NL,ZH,ZH
+country_name,2745953,2745953,Ulft,Ulft,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,2743963,2743963,Zelhem,Zelhem,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,2749164,2749164,Ouddorp,Ouddorp,The Netherlands,Netherlands,NL,NL,ZH,ZH
+country_name,6929992,6929992,Berkel en Rodenrijs,Berkel en Rodenrijs,The Netherlands,Netherlands,NL,NL,ZH,ZH
+country_name,2743683,2743683,Zuidland,Zuidland,The Netherlands,Netherlands,NL,NL,ZH,ZH
+country_name,2754669,2754669,Heerenveen,Heerenveen,The Netherlands,Netherlands,NL,NL,FR,FR
+country_name,2753504,2753504,Huissen,Huissen,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,2759231,2759231,Bemmel,Bemmel,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,2746005,2746005,Uden,Uden,The Netherlands,Netherlands,NL,NL,NB,NB
+country_name,2754097,2754097,Hierden,Hierden,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,2753801,2753801,Hoofddorp,Hoofddorp,The Netherlands,Netherlands,NL,NL,NH,NH
+country_name,2760151,2760151,Aadorp,Aadorp,The Netherlands,Netherlands,NL,NL,OV,OV
+country_name,2759887,2759887,Almelo,Almelo,The Netherlands,Netherlands,NL,NL,OV,OV
+country_name,2756626,2756626,Dreumel,Dreumel,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,2745783,2745783,Veendam,Veendam,The Netherlands,Netherlands,NL,NL,GR,GR
+country_name,2753706,2753706,Hoogezand,Hoogezand,The Netherlands,Netherlands,NL,NL,GR,GR
+country_name,2747570,2747570,Schildwolde,Schildwolde,The Netherlands,Netherlands,NL,NL,GR,GR
+country_name,2744014,2744014,Zeeland,Zeeland,The Netherlands,Netherlands,NL,NL,NB,NB
+country_name,2759309,2759309,Beers,Beers,The Netherlands,Netherlands,NL,NL,NB,NB
+country_name,2747713,2747713,Schaijk,Schaijk,The Netherlands,Netherlands,NL,NL,NB,NB
+country_name,2747358,2747358,s-Heer Arendskerke,s-Heer Arendskerke,The Netherlands,Netherlands,NL,NL,ZE,ZE
+country_name,2749756,2749756,Nunspeet,Nunspeet,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,2753663,2753663,Hoogwoud,Hoogwoud,The Netherlands,Netherlands,NL,NL,NH,NH
+country_name,2758245,2758245,Broek op Langedijk,Broek op Langedijk,The Netherlands,Netherlands,NL,NL,NH,NH
+country_name,2749835,2749835,Noord-Scharwoude,Noord-Scharwoude,The Netherlands,Netherlands,NL,NL,NH,NH
+country_name,2748943,2748943,Oudkarspel,Oudkarspel,The Netherlands,Netherlands,NL,NL,NH,NH
+country_name,2744911,2744911,Weert,Weert,The Netherlands,Netherlands,NL,NL,LI,LI
+country_name,2750467,2750467,Nederweert,Nederweert,The Netherlands,Netherlands,NL,NL,LI,LI
+country_name,2747351,2747351,s-Hertogenbosch,s-Hertogenbosch,The Netherlands,Netherlands,NL,NL,NB,NB
+country_name,2745116,2745116,Waardenburg,Waardenburg,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,2747908,2747908,Rossum,Rossum,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,2754719,2754719,Hedel,Hedel,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,2746314,2746314,Tienray,Tienray,The Netherlands,Netherlands,NL,NL,LI,LI
+country_name,2751042,2751042,Meerlo,Meerlo,The Netherlands,Netherlands,NL,NL,LI,LI
+country_name,2755599,2755599,Gendringen,Gendringen,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,2746468,2746468,Terborg,Terborg,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,2756793,2756793,Dinxperlo,Dinxperlo,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,2757379,2757379,De Kwakel,De Kwakel,The Netherlands,Netherlands,NL,NL,NH,NH
+country_name,2751547,2751547,Lisse,Lisse,The Netherlands,Netherlands,NL,NL,ZH,ZH
+country_name,2749811,2749811,Noordwijkerhout,Noordwijkerhout,The Netherlands,Netherlands,NL,NL,ZH,ZH
+country_name,2756543,2756543,Drunen,Drunen,The Netherlands,Netherlands,NL,NL,NB,NB
+country_name,2747063,2747063,Sneek,Sneek,The Netherlands,Netherlands,NL,NL,FR,FR
+country_name,2747234,2747234,Sint-Michielsgestel,Sint-Michielsgestel,The Netherlands,Netherlands,NL,NL,NB,NB
+country_name,2754440,2754440,Helvoirt,Helvoirt,The Netherlands,Netherlands,NL,NL,NB,NB
+country_name,2745396,2745396,Vlijmen,Vlijmen,The Netherlands,Netherlands,NL,NL,NB,NB
+country_name,2758460,2758460,Boxtel,Boxtel,The Netherlands,Netherlands,NL,NL,NB,NB
+country_name,2757237,2757237,Den Dungen,Den Dungen,The Netherlands,Netherlands,NL,NL,NB,NB
+country_name,2745774,2745774,Veenendaal,Veenendaal,The Netherlands,Netherlands,NL,NL,UT,UT
+country_name,2754331,2754331,Herten,Herten,The Netherlands,Netherlands,NL,NL,LI,LI
+country_name,2756444,2756444,Echt,Echt,The Netherlands,Netherlands,NL,NL,LI,LI
+country_name,2759522,2759522,Baexem,Baexem,The Netherlands,Netherlands,NL,NL,LI,LI
+country_name,2754352,2754352,Herkenbosch,Herkenbosch,The Netherlands,Netherlands,NL,NL,LI,LI
+country_name,2753297,2753297,Ittervoort,Ittervoort,The Netherlands,Netherlands,NL,NL,LI,LI
+country_name,2744815,2744815,Wessem,Wessem,The Netherlands,Netherlands,NL,NL,LI,LI
+country_name,2750624,2750624,Montfort,Montfort,The Netherlands,Netherlands,NL,NL,LI,LI
+country_name,2751566,2751566,Linne,Linne,The Netherlands,Netherlands,NL,NL,LI,LI
+country_name,2751874,2751874,Laren,Laren,The Netherlands,Netherlands,NL,NL,NH,NH
+country_name,2759113,2759113,Bergschenhoek,Bergschenhoek,The Netherlands,Netherlands,NL,NL,ZH,ZH
+country_name,2750523,2750523,Naaldwijk,Naaldwijk,The Netherlands,Netherlands,NL,NL,ZH,ZH
+country_name,2747910,2747910,Rosmalen,Rosmalen,The Netherlands,Netherlands,NL,NL,NB,NB
+country_name,2751808,2751808,Leerdam,Leerdam,The Netherlands,Netherlands,NL,NL,UT,UT
+country_name,2748172,2748172,Ridderkerk,Ridderkerk,The Netherlands,Netherlands,NL,NL,ZH,ZH
+country_name,2752947,2752947,Kerkdriel,Kerkdriel,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,2744489,2744489,Wijhe,Wijhe,The Netherlands,Netherlands,NL,NL,OV,OV
+country_name,2755039,2755039,Haaften,Haaften,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,2755052,2755052,Grou,Grou,The Netherlands,Netherlands,NL,NL,FR,FR
+country_name,2751073,2751073,Medemblik,Medemblik,The Netherlands,Netherlands,NL,NL,NH,NH
+country_name,2757194,2757194,Den Oever,Den Oever,The Netherlands,Netherlands,NL,NL,NH,NH
+country_name,2750039,2750039,Nijverdal,Nijverdal,The Netherlands,Netherlands,NL,NL,OV,OV
+country_name,2756394,2756394,Eemnes,Eemnes,The Netherlands,Netherlands,NL,NL,UT,UT
+country_name,2747357,2747357,s-Heerenberg,s-Heerenberg,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,2747030,2747030,Soesterberg,Soesterberg,The Netherlands,Netherlands,NL,NL,UT,UT
+country_name,2753908,2753908,Hollandsche Rading,Hollandsche Rading,The Netherlands,Netherlands,NL,NL,UT,UT
+country_name,2745973,2745973,Uithoorn,Uithoorn,The Netherlands,Netherlands,NL,NL,NH,NH
+country_name,2755996,2755996,Etten-Leur,Etten-Leur,The Netherlands,Netherlands,NL,NL,NB,NB
+country_name,2747607,2747607,Scherpenzeel,Scherpenzeel,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,2749296,2749296,Opheusden,Opheusden,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,2743952,2743952,Zetten,Zetten,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,2752899,2752899,Kesteren,Kesteren,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,2753468,2753468,Huizen,Huizen,The Netherlands,Netherlands,NL,NL,NH,NH
+country_name,2745885,2745885,Valburg,Valburg,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,2756442,2756442,Echteld,Echteld,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,2747751,2747751,Sassenheim,Sassenheim,The Netherlands,Netherlands,NL,NL,ZH,ZH
+country_name,2756777,2756777,Dodewaard,Dodewaard,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,2751161,2751161,Markelo,Markelo,The Netherlands,Netherlands,NL,NL,OV,OV
+country_name,2752648,2752648,Klijndijk,Klijndijk,The Netherlands,Netherlands,NL,NL,DR,DR
+country_name,2758154,2758154,Buinerveen,Buinerveen,The Netherlands,Netherlands,NL,NL,DR,DR
+country_name,2756329,2756329,Ees,Ees,The Netherlands,Netherlands,NL,NL,DR,DR
+country_name,2750531,2750531,Mussel,Mussel,The Netherlands,Netherlands,NL,NL,GR,GR
+country_name,2759862,2759862,Alteveer,Alteveer,The Netherlands,Netherlands,NL,NL,GR,GR
+country_name,2754050,2754050,Hippolytushoef,Hippolytushoef,The Netherlands,Netherlands,NL,NL,NH,NH
+country_name,2746565,2746565,Sumar,Sumar,The Netherlands,Netherlands,NL,NL,FR,FR
+country_name,2746705,2746705,Stiens,Stiens,The Netherlands,Netherlands,NL,NL,FR,FR
+country_name,2759922,2759922,Akkrum,Akkrum,The Netherlands,Netherlands,NL,NL,FR,FR
+country_name,2750850,2750850,Middenmeer,Middenmeer,The Netherlands,Netherlands,NL,NL,NH,NH
+country_name,2750075,2750075,Nijeveen,Nijeveen,The Netherlands,Netherlands,NL,NL,DR,DR
+country_name,2755527,2755527,Gieten,Gieten,The Netherlands,Netherlands,NL,NL,DR,DR
+country_name,2750005,2750005,Nooitgedacht,Nooitgedacht,The Netherlands,Netherlands,NL,NL,DR,DR
+country_name,2745892,2745892,Vaassen,Vaassen,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,2756114,2756114,Emst,Emst,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,2756232,2756232,Elburg,Elburg,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,2757340,2757340,Delfzijl,Delfzijl,The Netherlands,Netherlands,NL,NL,GR,GR
+country_name,2748825,2748825,Overschild,Overschild,The Netherlands,Netherlands,NL,NL,GR,GR
+country_name,2754930,2754930,Hallum,Hallum,The Netherlands,Netherlands,NL,NL,FR,FR
+country_name,2759687,2759687,Appingedam,Appingedam,The Netherlands,Netherlands,NL,NL,GR,GR
+country_name,2756504,2756504,Duivendrecht,Duivendrecht,The Netherlands,Netherlands,NL,NL,NH,NH
+country_name,2756686,2756686,Doorn,Doorn,The Netherlands,Netherlands,NL,NL,UT,UT
+country_name,2756620,2756620,Driebergen,Driebergen,The Netherlands,Netherlands,NL,NL,UT,UT
+country_name,2751801,2751801,Leersum,Leersum,The Netherlands,Netherlands,NL,NL,UT,UT
+country_name,2757899,2757899,Cothen,Cothen,The Netherlands,Netherlands,NL,NL,UT,UT
+country_name,2756619,2756619,Driebergen-Rijsenburg,Driebergen-Rijsenburg,The Netherlands,Netherlands,NL,NL,UT,UT
+country_name,2750473,2750473,Langbroek,Langbroek,The Netherlands,Netherlands,NL,NL,UT,UT
+country_name,2751709,2751709,Lepelstraat,Lepelstraat,The Netherlands,Netherlands,NL,NL,NB,NB
+country_name,2744171,2744171,Wormerveer,Wormerveer,The Netherlands,Netherlands,NL,NL,NH,NH
+country_name,2755211,2755211,Grootebroek,Grootebroek,The Netherlands,Netherlands,NL,NL,NH,NH
+country_name,2756077,2756077,Enkhuizen,Enkhuizen,The Netherlands,Netherlands,NL,NL,NH,NH
+country_name,2753691,2753691,Hoogkarspel,Hoogkarspel,The Netherlands,Netherlands,NL,NL,NH,NH
+country_name,2754434,2754434,Hem,Hem,The Netherlands,Netherlands,NL,NL,NH,NH
+country_name,2756046,2756046,Erica,Erica,The Netherlands,Netherlands,NL,NL,DR,DR
+country_name,2750815,2750815,Mijdrecht,Mijdrecht,The Netherlands,Netherlands,NL,NL,UT,UT
+country_name,2756539,2756539,Druten,Druten,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,2756598,2756598,Driehuis,Driehuis,The Netherlands,Netherlands,NL,NL,NH,NH
+country_name,2745528,2745528,Vijfhuizen,Vijfhuizen,The Netherlands,Netherlands,NL,NL,NH,NH
+country_name,2745677,2745677,Velp,Velp,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,2748994,2748994,Oude-Tonge,Oude-Tonge,The Netherlands,Netherlands,NL,NL,ZH,ZH
+country_name,2750972,2750972,Melissant,Melissant,The Netherlands,Netherlands,NL,NL,ZH,ZH
+country_name,2746739,2746739,Stellendam,Stellendam,The Netherlands,Netherlands,NL,NL,ZH,ZH
+country_name,2754395,2754395,Hengelo,Hengelo,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,2747364,2747364,s-Gravenzande,s-Gravenzande,The Netherlands,Netherlands,NL,NL,ZH,ZH
+country_name,2743913,2743913,Zierikzee,Zierikzee,The Netherlands,Netherlands,NL,NL,ZE,ZE
+country_name,2746342,2746342,Thorn,Thorn,The Netherlands,Netherlands,NL,NL,LI,LI
+country_name,2747990,2747990,Roggel,Roggel,The Netherlands,Netherlands,NL,NL,LI,LI
+country_name,2743595,2743595,Zwaag,Zwaag,The Netherlands,Netherlands,NL,NL,NH,NH
+country_name,2753987,2753987,Hoevelaken,Hoevelaken,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,2744580,2744580,Wezep,Wezep,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,2747016,2747016,Sommelsdijk,Sommelsdijk,The Netherlands,Netherlands,NL,NL,ZH,ZH
+country_name,2759429,2759429,Barchem,Barchem,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,2751037,2751037,Meerssen,Meerssen,The Netherlands,Netherlands,NL,NL,LI,LI
+country_name,2754653,2754653,Heerle,Heerle,The Netherlands,Netherlands,NL,NL,NB,NB
+country_name,2747169,2747169,Sliedrecht,Sliedrecht,The Netherlands,Netherlands,NL,NL,ZH,ZH
+country_name,2751283,2751283,Maastricht,Maastricht,The Netherlands,Netherlands,NL,NL,LI,LI
+country_name,2759373,2759373,Bavel,Bavel,The Netherlands,Netherlands,NL,NL,NB,NB
+country_name,2750896,2750896,Middelburg,Middelburg,The Netherlands,Netherlands,NL,NL,ZE,ZE
+country_name,2748729,2748729,Papendrecht,Papendrecht,The Netherlands,Netherlands,NL,NL,ZH,ZH
+country_name,2758166,2758166,Budel,Budel,The Netherlands,Netherlands,NL,NL,NB,NB
+country_name,2744248,2744248,Woerden,Woerden,The Netherlands,Netherlands,NL,NL,UT,UT
+country_name,2754318,2754318,Herwijnen,Herwijnen,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,2745301,2745301,Voorschoten,Voorschoten,The Netherlands,Netherlands,NL,NL,ZH,ZH
+country_name,2759884,2759884,Almen,Almen,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,2758174,2758174,Brunssum,Brunssum,The Netherlands,Netherlands,NL,NL,LI,LI
+country_name,2756739,2756739,Dommelen,Dommelen,The Netherlands,Netherlands,NL,NL,NB,NB
+country_name,2758922,2758922,Bingelrade,Bingelrade,The Netherlands,Netherlands,NL,NL,LI,LI
+country_name,2755009,2755009,Haaren,Haaren,The Netherlands,Netherlands,NL,NL,NB,NB
+country_name,2746331,2746331,Tiel,Tiel,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,2755751,2755751,Gameren,Gameren,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,2745113,2745113,Waarder,Waarder,The Netherlands,Netherlands,NL,NL,ZH,ZH
+country_name,2755597,2755597,Gendt,Gendt,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,2757937,2757937,Coevorden,Coevorden,The Netherlands,Netherlands,NL,NL,DR,DR
+country_name,2758104,2758104,Bunschoten,Bunschoten,The Netherlands,Netherlands,NL,NL,UT,UT
+country_name,2751111,2751111,Marum,Marum,The Netherlands,Netherlands,NL,NL,GR,GR
+country_name,2747703,2747703,Schalkwijk,Schalkwijk,The Netherlands,Netherlands,NL,NL,UT,UT
+country_name,2744587,2744587,Weurt,Weurt,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,2759057,2759057,Berltsum,Berltsum,The Netherlands,Netherlands,NL,NL,FR,FR
+country_name,2758748,2758748,Boelenslaan,Boelenslaan,The Netherlands,Netherlands,NL,NL,FR,FR
+country_name,2746944,2746944,Spier,Spier,The Netherlands,Netherlands,NL,NL,DR,DR
+country_name,2755794,2755794,Gaanderen,Gaanderen,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,2759016,2759016,Beuningen,Beuningen,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,2749741,2749741,Ochten,Ochten,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,2751867,2751867,Lathum,Lathum,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,2749034,2749034,Oude Pekela,Oude Pekela,The Netherlands,Netherlands,NL,NL,GR,GR
+country_name,2757295,2757295,De Meern,De Meern,The Netherlands,Netherlands,NL,NL,UT,UT
+country_name,2744915,2744915,Weerselo,Weerselo,The Netherlands,Netherlands,NL,NL,OV,OV
+country_name,2744332,2744332,Winterswijk,Winterswijk,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,2760067,2760067,Abcoude,Abcoude,The Netherlands,Netherlands,NL,NL,UT,UT
+country_name,2750398,2750398,Nibbixwoud,Nibbixwoud,The Netherlands,Netherlands,NL,NL,NH,NH
+country_name,7118109,7118109,Velserbroek,Velserbroek,The Netherlands,Netherlands,NL,NL,NH,NH
+country_name,2749671,2749671,Oldeberkoop,Oldeberkoop,The Netherlands,Netherlands,NL,NL,FR,FR
+country_name,2754724,2754724,Hazerswoude-Dorp,Hazerswoude-Dorp,The Netherlands,Netherlands,NL,NL,ZH,ZH
+country_name,2757244,2757244,Den Burg,Den Burg,The Netherlands,Netherlands,NL,NL,NH,NH
+country_name,2745127,2745127,Waalre,Waalre,The Netherlands,Netherlands,NL,NL,NB,NB
+country_name,2756160,2756160,Elst,Elst,The Netherlands,Netherlands,NL,NL,UT,UT
+country_name,2756507,2756507,Duiven,Duiven,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,2750769,2750769,Moerdijk,Moerdijk,The Netherlands,Netherlands,NL,NL,NB,NB
+country_name,2755956,2755956,Ewijk,Ewijk,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,2750357,2750357,Nieuw-Dordrecht,Nieuw-Dordrecht,The Netherlands,Netherlands,NL,NL,DR,DR
+country_name,2758360,2758360,Breezand,Breezand,The Netherlands,Netherlands,NL,NL,NH,NH
+country_name,2751605,2751605,Lijnden,Lijnden,The Netherlands,Netherlands,NL,NL,NH,NH
+country_name,2754417,2754417,Hemrik,Hemrik,The Netherlands,Netherlands,NL,NL,FR,FR
+country_name,2745743,2745743,Feanwâlden,Feanwâlden,The Netherlands,Netherlands,NL,NL,FR,FR
+country_name,2745392,2745392,Flushing,Flushing,The Netherlands,Netherlands,NL,NL,ZE,ZE
+country_name,6621561,6621561,Landgraaf,Landgraaf,The Netherlands,Netherlands,NL,NL,LI,LI
+country_name,2745105,2745105,Waarland,Waarland,The Netherlands,Netherlands,NL,NL,NH,NH
+country_name,2747870,2747870,Rozenburg,Rozenburg,The Netherlands,Netherlands,NL,NL,ZH,ZH
+country_name,2749723,2749723,Oegstgeest,Oegstgeest,The Netherlands,Netherlands,NL,NL,ZH,ZH
+country_name,2751619,2751619,Lievelde,Lievelde,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,2753981,2753981,Hoeven,Hoeven,The Netherlands,Netherlands,NL,NL,NB,NB
+country_name,2750630,2750630,Monster,Monster,The Netherlands,Netherlands,NL,NL,ZH,ZH
+country_name,2754507,2754507,Heinenoord,Heinenoord,The Netherlands,Netherlands,NL,NL,ZH,ZH
+country_name,2745250,2745250,Vortum-Mullem,Vortum-Mullem,The Netherlands,Netherlands,NL,NL,NB,NB
+country_name,2756865,2756865,Dieren,Dieren,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,2746420,2746420,Terneuzen,Terneuzen,The Netherlands,Netherlands,NL,NL,ZE,ZE
+country_name,2745096,2745096,Waddinxveen,Waddinxveen,The Netherlands,Netherlands,NL,NL,ZH,ZH
+country_name,2749286,2749286,Opmeer,Opmeer,The Netherlands,Netherlands,NL,NL,NH,NH
+country_name,2745674,2745674,Velsen-Noord,Velsen-Noord,The Netherlands,Netherlands,NL,NL,NH,NH
+country_name,2759554,2759554,Baarle-Nassau,Baarle-Nassau,The Netherlands,Netherlands,NL,NL,NB,NB
+country_name,2754408,2754408,Hendrik-Ido-Ambacht,Hendrik-Ido-Ambacht,The Netherlands,Netherlands,NL,NL,ZH,ZH
+country_name,11524816,11524816,Maastricht-Airport,Maastricht-Airport,The Netherlands,Netherlands,NL,NL,LI,LI
+country_name,2745003,2745003,Warnsveld,Warnsveld,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,2745340,2745340,Volendam,Volendam,The Netherlands,Netherlands,NL,NL,NH,NH
+country_name,2753011,2753011,Katwijk,Katwijk,The Netherlands,Netherlands,NL,NL,ZH,ZH
+country_name,2758106,2758106,Bunnik,Bunnik,The Netherlands,Netherlands,NL,NL,UT,UT
+country_name,2759915,2759915,Alblasserdam,Alblasserdam,The Netherlands,Netherlands,NL,NL,ZH,ZH
+country_name,2752833,2752833,Kilder,Kilder,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,2749290,2749290,Opijnen,Opijnen,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,2759103,2759103,Burgum,Burgum,The Netherlands,Netherlands,NL,NL,FR,FR
+country_name,2743574,2743574,Zwanenburg,Zwanenburg,The Netherlands,Netherlands,NL,NL,NH,NH
+country_name,2750861,2750861,Middenbeemster,Middenbeemster,The Netherlands,Netherlands,NL,NL,NH,NH
+country_name,2756342,2756342,Eersel,Eersel,The Netherlands,Netherlands,NL,NL,NB,NB
+country_name,2758326,2758326,Brielle,Brielle,The Netherlands,Netherlands,NL,NL,ZH,ZH
+country_name,2754872,2754872,Hapert,Hapert,The Netherlands,Netherlands,NL,NL,NB,NB
+country_name,2758878,2758878,Bladel,Bladel,The Netherlands,Netherlands,NL,NL,NB,NB
+country_name,2751325,2751325,Maarheeze,Maarheeze,The Netherlands,Netherlands,NL,NL,NB,NB
+country_name,2752240,2752240,Krommenie,Krommenie,The Netherlands,Netherlands,NL,NL,NH,NH
+country_name,2751714,2751714,Lent,Lent,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,2752331,2752331,Krabbendijke,Krabbendijke,The Netherlands,Netherlands,NL,NL,ZE,ZE
+country_name,2755272,2755272,Groesbeek,Groesbeek,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,2754687,2754687,Heenvliet,Heenvliet,The Netherlands,Netherlands,NL,NL,ZH,ZH
+country_name,2743561,2743561,Zwartebroek,Zwartebroek,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,2756301,2756301,Egmond aan Zee,Egmond aan Zee,The Netherlands,Netherlands,NL,NL,NH,NH
+country_name,2746903,2746903,Sprang-Capelle,Sprang-Capelle,The Netherlands,Netherlands,NL,NL,NB,NB
+country_name,2749017,2749017,Ouderkerk aan de Amstel,Ouderkerk aan de Amstel,The Netherlands,Netherlands,NL,NL,NH,NH
+country_name,2756285,2756285,Eygelshoven,Eygelshoven,The Netherlands,Netherlands,NL,NL,LI,LI
+country_name,2750371,2750371,Nieuw-Beijerland,Nieuw-Beijerland,The Netherlands,Netherlands,NL,NL,ZH,ZH
+country_name,2759342,2759342,Beekbergen,Beekbergen,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,2754516,2754516,Heiloo,Heiloo,The Netherlands,Netherlands,NL,NL,NH,NH
+country_name,2759126,2759126,Berghem,Berghem,The Netherlands,Netherlands,NL,NL,NB,NB
+country_name,2752600,2752600,Klundert,Klundert,The Netherlands,Netherlands,NL,NL,NB,NB
+country_name,2751932,2751932,Langenboom,Langenboom,The Netherlands,Netherlands,NL,NL,NB,NB
+country_name,2758759,2758759,Boekel,Boekel,The Netherlands,Netherlands,NL,NL,NB,NB
+country_name,2751274,2751274,Macharen,Macharen,The Netherlands,Netherlands,NL,NL,NB,NB
+country_name,2747203,2747203,Sittard,Sittard,The Netherlands,Netherlands,NL,NL,LI,LI
+country_name,2749197,2749197,Ottersum,Ottersum,The Netherlands,Netherlands,NL,NL,LI,LI
+country_name,2748737,2748737,Panningen,Panningen,The Netherlands,Netherlands,NL,NL,LI,LI
+country_name,2755051,2755051,Grubbenvorst,Grubbenvorst,The Netherlands,Netherlands,NL,NL,LI,LI
+country_name,2749016,2749016,Ouderkerk aan den IJssel,Ouderkerk aan den IJssel,The Netherlands,Netherlands,NL,NL,ZH,ZH
+country_name,2748917,2748917,Oudorp,Oudorp,The Netherlands,Netherlands,NL,NL,NH,NH
+country_name,2749800,2749800,Nootdorp,Nootdorp,The Netherlands,Netherlands,NL,NL,ZH,ZH
+country_name,2756567,2756567,Drogeham,Drogeham,The Netherlands,Netherlands,NL,NL,FR,FR
+country_name,2760134,2760134,Aalsmeer,Aalsmeer,The Netherlands,Netherlands,NL,NL,NH,NH
+country_name,2759090,2759090,Berkel-Enschot,Berkel-Enschot,The Netherlands,Netherlands,NL,NL,NB,NB
+country_name,2759951,2759951,Aerdenhout,Aerdenhout,The Netherlands,Netherlands,NL,NL,NH,NH
+country_name,2758602,2758602,Born,Born,The Netherlands,Netherlands,NL,NL,LI,LI
+country_name,2750163,2750163,Nieuw-Lekkerland,Nieuw-Lekkerland,The Netherlands,Netherlands,NL,NL,ZH,ZH
+country_name,2754804,2754804,Harskamp,Harskamp,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,2753806,2753806,Honselersdijk,Honselersdijk,The Netherlands,Netherlands,NL,NL,ZH,ZH
+country_name,2751320,2751320,Maarn,Maarn,The Netherlands,Netherlands,NL,NL,UT,UT
+country_name,2756500,2756500,Duizel,Duizel,The Netherlands,Netherlands,NL,NL,NB,NB
+country_name,2744871,2744871,Wekerom,Wekerom,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,2759737,2759737,Anna Paulowna,Anna Paulowna,The Netherlands,Netherlands,NL,NL,NH,NH
+country_name,2747034,2747034,Soest,Soest,The Netherlands,Netherlands,NL,NL,UT,UT
+country_name,2759946,2759946,Afferden,Afferden,The Netherlands,Netherlands,NL,NL,LI,LI
+country_name,2756561,2756561,Dronryp,Dronryp,The Netherlands,Netherlands,NL,NL,FR,FR
+country_name,2746558,2746558,Surhuisterveen,Surhuisterveen,The Netherlands,Netherlands,NL,NL,FR,FR
+country_name,2757875,2757875,Cruquius,Cruquius,The Netherlands,Netherlands,NL,NL,NH,NH
+country_name,2754621,2754621,Heeten,Heeten,The Netherlands,Netherlands,NL,NL,OV,OV
+country_name,2744344,2744344,Winschoten,Winschoten,The Netherlands,Netherlands,NL,NL,GR,GR
+country_name,2758164,2758164,Budel-Dorplein,Budel-Dorplein,The Netherlands,Netherlands,NL,NL,NB,NB
+country_name,2753591,2753591,Horst,Horst,The Netherlands,Netherlands,NL,NL,LI,LI
+country_name,2755941,2755941,Eys,Eys,The Netherlands,Netherlands,NL,NL,LI,LI
+country_name,2746766,2746766,Steenwijk,Steenwijk,The Netherlands,Netherlands,NL,NL,OV,OV
+country_name,2756031,2756031,Esbeek,Esbeek,The Netherlands,Netherlands,NL,NL,NB,NB
+country_name,2746661,2746661,Stompetoren,Stompetoren,The Netherlands,Netherlands,NL,NL,NH,NH
+country_name,2757006,2757006,Deurningen,Deurningen,The Netherlands,Netherlands,NL,NL,OV,OV
+country_name,2745094,2745094,Wadenoijen,Wadenoijen,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,2756723,2756723,Dongen,Dongen,The Netherlands,Netherlands,NL,NL,NB,NB
+country_name,2750453,2750453,Andel,Andel,The Netherlands,Netherlands,NL,NL,NB,NB
+country_name,2751310,2751310,Maartensdijk,Maartensdijk,The Netherlands,Netherlands,NL,NL,UT,UT
+country_name,2754491,2754491,Hekelingen,Hekelingen,The Netherlands,Netherlands,NL,NL,ZH,ZH
+country_name,2748864,2748864,Overberg,Overberg,The Netherlands,Netherlands,NL,NL,UT,UT
+country_name,2756295,2756295,Eibergen,Eibergen,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,2745978,2745978,Uitgeest,Uitgeest,The Netherlands,Netherlands,NL,NL,NH,NH
+country_name,2744147,2744147,Wâlterswâld,Wâlterswâld,The Netherlands,Netherlands,NL,NL,FR,FR
+country_name,2756993,2756993,De Falom,De Falom,The Netherlands,Netherlands,NL,NL,FR,FR
+country_name,2758239,2758239,Broeksterwâld,Broeksterwâld,The Netherlands,Netherlands,NL,NL,FR,FR
+country_name,2743590,2743590,De Westereen,De Westereen,The Netherlands,Netherlands,NL,NL,FR,FR
+country_name,2756577,2756577,Driezum,Driezum,The Netherlands,Netherlands,NL,NL,FR,FR
+country_name,2752524,2752524,Kollum,Kollum,The Netherlands,Netherlands,NL,NL,FR,FR
+country_name,2758804,2758804,Bloemendaal,Bloemendaal,The Netherlands,Netherlands,NL,NL,NH,NH
+country_name,2752367,2752367,Koudum,Koudum,The Netherlands,Netherlands,NL,NL,FR,FR
+country_name,2745932,2745932,Urk,Urk,The Netherlands,Netherlands,NL,NL,FL,FL
+country_name,2751361,2751361,Luttelgeest,Luttelgeest,The Netherlands,Netherlands,NL,NL,FL,FL
+country_name,2749503,2749503,Oosterbeek,Oosterbeek,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,2756418,2756418,Eefde,Eefde,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,2746794,2746794,Steenderen,Steenderen,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,2755507,2755507,Gilze,Gilze,The Netherlands,Netherlands,NL,NL,NB,NB
+country_name,2753996,2753996,Hoensbroek,Hoensbroek,The Netherlands,Netherlands,NL,NL,LI,LI
+country_name,2756432,2756432,Eck en Wiel,Eck en Wiel,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,2749317,2749317,Ootmarsum,Ootmarsum,The Netherlands,Netherlands,NL,NL,OV,OV
+country_name,2755896,2755896,Fleringen,Fleringen,The Netherlands,Netherlands,NL,NL,OV,OV
+country_name,2757041,2757041,De Steeg,De Steeg,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,2756855,2756855,Diever,Diever,The Netherlands,Netherlands,NL,NL,DR,DR
+country_name,2754007,2754007,Hoek van Holland,Hoek van Holland,The Netherlands,Netherlands,NL,NL,ZH,ZH
+country_name,2746051,2746051,Twijzelerheide,Twijzelerheide,The Netherlands,Netherlands,NL,NL,FR,FR
+country_name,2745970,2745970,Uithuizen,Uithuizen,The Netherlands,Netherlands,NL,NL,GR,GR
+country_name,2750868,2750868,Middelstum,Middelstum,The Netherlands,Netherlands,NL,NL,GR,GR
+country_name,2745024,2745024,Warffum,Warffum,The Netherlands,Netherlands,NL,NL,GR,GR
+country_name,2754519,2754519,Heiligerlee,Heiligerlee,The Netherlands,Netherlands,NL,NL,GR,GR
+country_name,2758131,2758131,Buitenpost,Buitenpost,The Netherlands,Netherlands,NL,NL,FR,FR
+country_name,2754864,2754864,Hurdegaryp,Hurdegaryp,The Netherlands,Netherlands,NL,NL,FR,FR
+country_name,2753156,2753156,Kaatsheuvel,Kaatsheuvel,The Netherlands,Netherlands,NL,NL,NB,NB
+country_name,2760144,2760144,Wijk en Aalburg,Wijk en Aalburg,The Netherlands,Netherlands,NL,NL,NB,NB
+country_name,2754135,2754135,Heusden,Heusden,The Netherlands,Netherlands,NL,NL,NB,NB
+country_name,2755845,2755845,Franeker,Franeker,The Netherlands,Netherlands,NL,NL,FR,FR
+country_name,2756139,2756139,Emmeloord,Emmeloord,The Netherlands,Netherlands,NL,NL,FL,FL
+country_name,2750510,2750510,Nagele,Nagele,The Netherlands,Netherlands,NL,NL,FL,FL
+country_name,2744338,2744338,Winsum,Winsum,The Netherlands,Netherlands,NL,NL,FR,FR
+country_name,2746024,2746024,Tzum,Tzum,The Netherlands,Netherlands,NL,NL,FR,FR
+country_name,2748849,2748849,Overdinkel,Overdinkel,The Netherlands,Netherlands,NL,NL,OV,OV
+country_name,2756673,2756673,Doorwerth,Doorwerth,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,2748201,2748201,Rheden,Rheden,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,2744179,2744179,Workum,Workum,The Netherlands,Netherlands,NL,NL,FR,FR
+country_name,2745493,2745493,Vinkeveen,Vinkeveen,The Netherlands,Netherlands,NL,NL,UT,UT
+country_name,2748051,2748051,Rinsumageast,Rinsumageast,The Netherlands,Netherlands,NL,NL,FR,FR
+country_name,2747591,2747591,Schiermonnikoog,Schiermonnikoog,The Netherlands,Netherlands,NL,NL,FR,FR
+country_name,2758096,2758096,Buren,Buren,The Netherlands,Netherlands,NL,NL,FR,FR
+country_name,2750417,2750417,Nes,Nes,The Netherlands,Netherlands,NL,NL,FR,FR
+country_name,2744376,2744376,Wilnis,Wilnis,The Netherlands,Netherlands,NL,NL,UT,UT
+country_name,2756169,2756169,Elsloo,Elsloo,The Netherlands,Netherlands,NL,NL,LI,LI
+country_name,2750790,2750790,Minnertsga,Minnertsga,The Netherlands,Netherlands,NL,NL,FR,FR
+country_name,2754697,2754697,Heemskerk,Heemskerk,The Netherlands,Netherlands,NL,NL,NH,NH
+country_name,2753686,2753686,Hoogland,Hoogland,The Netherlands,Netherlands,NL,NL,UT,UT
+country_name,2749063,2749063,Oude Meer,Oude Meer,The Netherlands,Netherlands,NL,NL,NH,NH
+country_name,2759350,2759350,Beek,Beek,The Netherlands,Netherlands,NL,NL,LI,LI
+country_name,2746478,2746478,Ter Aar,Ter Aar,The Netherlands,Netherlands,NL,NL,ZH,ZH
+country_name,2747178,2747178,Sleeuwijk,Sleeuwijk,The Netherlands,Netherlands,NL,NL,NB,NB
+country_name,2756614,2756614,Driebruggen,Driebruggen,The Netherlands,Netherlands,NL,NL,ZH,ZH
+country_name,2755410,2755410,Gouderak,Gouderak,The Netherlands,Netherlands,NL,NL,ZH,ZH
+country_name,2748647,2748647,Pernis,Pernis,The Netherlands,Netherlands,NL,NL,ZH,ZH
+country_name,2748208,2748208,Reuver,Reuver,The Netherlands,Netherlands,NL,NL,LI,LI
+country_name,2757969,2757969,Chaam,Chaam,The Netherlands,Netherlands,NL,NL,NB,NB
+country_name,2749735,2749735,Odiliapeel,Odiliapeel,The Netherlands,Netherlands,NL,NL,NB,NB
+country_name,2751288,2751288,Maasland,Maasland,The Netherlands,Netherlands,NL,NL,ZH,ZH
+country_name,2758490,2758490,Boven-Leeuwen,Boven-Leeuwen,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,2750535,2750535,Muntendam,Muntendam,The Netherlands,Netherlands,NL,NL,GR,GR
+country_name,2750375,2750375,Nieuw-Amsterdam,Nieuw-Amsterdam,The Netherlands,Netherlands,NL,NL,DR,DR
+country_name,2754656,2754656,Heerjansdam,Heerjansdam,The Netherlands,Netherlands,NL,NL,ZH,ZH
+country_name,2747312,2747312,Simpelveld,Simpelveld,The Netherlands,Netherlands,NL,NL,LI,LI
+country_name,2745046,2745046,Wanroij,Wanroij,The Netherlands,Netherlands,NL,NL,NB,NB
+country_name,2755929,2755929,Farmsum,Farmsum,The Netherlands,Netherlands,NL,NL,GR,GR
+country_name,2745924,2745924,Ursem,Ursem,The Netherlands,Netherlands,NL,NL,NH,NH
+country_name,2755337,2755337,Grevenbicht,Grevenbicht,The Netherlands,Netherlands,NL,NL,LI,LI
+country_name,2754629,2754629,Heeswijk-Dinther,Heeswijk-Dinther,The Netherlands,Netherlands,NL,NL,NB,NB
+country_name,2757991,2757991,Castricum,Castricum,The Netherlands,Netherlands,NL,NL,NH,NH
+country_name,2749745,2749745,Obdam,Obdam,The Netherlands,Netherlands,NL,NL,NH,NH
+country_name,2750567,2750567,Muiderberg,Muiderberg,The Netherlands,Netherlands,NL,NL,NH,NH
+country_name,2751436,2751436,Lopik,Lopik,The Netherlands,Netherlands,NL,NL,UT,UT
+country_name,2746935,2746935,Spijk,Spijk,The Netherlands,Netherlands,NL,NL,GR,GR
+country_name,2749736,2749736,Odijk,Odijk,The Netherlands,Netherlands,NL,NL,UT,UT
+country_name,2744317,2744317,Wissenkerke,Wissenkerke,The Netherlands,Netherlands,NL,NL,ZE,ZE
+country_name,2759876,2759876,Alphen,Alphen,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,2759006,2759006,Beusichem,Beusichem,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,2759132,2759132,Bergeijk,Bergeijk,The Netherlands,Netherlands,NL,NL,NB,NB
+country_name,2751592,2751592,Limmen,Limmen,The Netherlands,Netherlands,NL,NL,NH,NH
+country_name,2754861,2754861,Hardenberg,Hardenberg,The Netherlands,Netherlands,NL,NL,OV,OV
+country_name,2756483,2756483,Dussen,Dussen,The Netherlands,Netherlands,NL,NL,NB,NB
+country_name,2750995,2750995,Meijel,Meijel,The Netherlands,Netherlands,NL,NL,LI,LI
+country_name,2754712,2754712,Heeg,Heeg,The Netherlands,Netherlands,NL,NL,FR,FR
+country_name,2743624,2743624,Zuilichem,Zuilichem,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,2749366,2749366,Oosthuizen,Oosthuizen,The Netherlands,Netherlands,NL,NL,NH,NH
+country_name,2748421,2748421,Puiflijk,Puiflijk,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,2747760,2747760,Santpoort-Noord,Santpoort-Noord,The Netherlands,Netherlands,NL,NL,NH,NH
+country_name,2754029,2754029,Hoek,Hoek,The Netherlands,Netherlands,NL,NL,ZE,ZE
+country_name,2747792,2747792,Ruurlo,Ruurlo,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,2759147,2759147,Berg en Dal,Berg en Dal,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,2746557,2746557,Surhuizum,Surhuizum,The Netherlands,Netherlands,NL,NL,FR,FR
+country_name,2754004,2754004,Hoenderloo,Hoenderloo,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,2753347,2753347,IJzendoorn,IJzendoorn,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,2754322,2754322,Herveld,Herveld,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,2748068,2748068,Rilland,Rilland,The Netherlands,Netherlands,NL,NL,ZE,ZE
+country_name,2755239,2755239,Groot-Ammers,Groot-Ammers,The Netherlands,Netherlands,NL,NL,ZH,ZH
+country_name,2746226,2746226,Tollebeek,Tollebeek,The Netherlands,Netherlands,NL,NL,FL,FL
+country_name,2747010,2747010,Son,Son,The Netherlands,Netherlands,NL,NL,NB,NB
+country_name,2758333,2758333,Breukelen,Breukelen,The Netherlands,Netherlands,NL,NL,UT,UT
+country_name,2744827,2744827,Werkendam,Werkendam,The Netherlands,Netherlands,NL,NL,NB,NB
+country_name,2758579,2758579,Bosch en Duin,Bosch en Duin,The Netherlands,Netherlands,NL,NL,UT,UT
+country_name,2748410,2748410,Purmerland,Purmerland,The Netherlands,Netherlands,NL,NL,NH,NH
+country_name,2748448,2748448,Prinsenbeek,Prinsenbeek,The Netherlands,Netherlands,NL,NL,NB,NB
+country_name,2744187,2744187,Woold,Woold,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,2751301,2751301,Maasbree,Maasbree,The Netherlands,Netherlands,NL,NL,LI,LI
+country_name,2744600,2744600,Westzaan,Westzaan,The Netherlands,Netherlands,NL,NL,NH,NH
+country_name,2745997,2745997,Ugchelen,Ugchelen,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,2750031,2750031,Nistelrode,Nistelrode,The Netherlands,Netherlands,NL,NL,NB,NB
+country_name,2747492,2747492,Schoorl,Schoorl,The Netherlands,Netherlands,NL,NL,NH,NH
+country_name,2757336,2757336,De Lier,De Lier,The Netherlands,Netherlands,NL,NL,ZH,ZH
+country_name,2751538,2751538,Lobith,Lobith,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,2745260,2745260,Vorchten,Vorchten,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,2756859,2756859,Diessen,Diessen,The Netherlands,Netherlands,NL,NL,NB,NB
+country_name,2754821,2754821,Harkema,Harkema,The Netherlands,Netherlands,NL,NL,FR,FR
+country_name,2745043,2745043,Wanssum,Wanssum,The Netherlands,Netherlands,NL,NL,LI,LI
+country_name,2753599,2753599,Hoornsterzwaag,Hoornsterzwaag,The Netherlands,Netherlands,NL,NL,FR,FR
+country_name,2750978,2750978,Melick,Melick,The Netherlands,Netherlands,NL,NL,LI,LI
+country_name,2746548,2746548,Swalmen,Swalmen,The Netherlands,Netherlands,NL,NL,LI,LI
+country_name,2757886,2757886,Creil,Creil,The Netherlands,Netherlands,NL,NL,FL,FL
+country_name,2750626,2750626,Montfoort,Montfoort,The Netherlands,Netherlands,NL,NL,UT,UT
+country_name,2743992,2743992,Zegge,Zegge,The Netherlands,Netherlands,NL,NL,NB,NB
+country_name,2748217,2748217,Reusel,Reusel,The Netherlands,Netherlands,NL,NL,NB,NB
+country_name,2756072,2756072,Ens,Ens,The Netherlands,Netherlands,NL,NL,FL,FL
+country_name,2746886,2746886,Sprundel,Sprundel,The Netherlands,Netherlands,NL,NL,NB,NB
+country_name,2747585,2747585,Schijf,Schijf,The Netherlands,Netherlands,NL,NL,NB,NB
+country_name,2754155,2754155,Heukelom,Heukelom,The Netherlands,Netherlands,NL,NL,NB,NB
+country_name,2758983,2758983,Bierum,Bierum,The Netherlands,Netherlands,NL,NL,GR,GR
+country_name,2747143,2747143,Slochteren,Slochteren,The Netherlands,Netherlands,NL,NL,GR,GR
+country_name,2748813,2748813,Overveen,Overveen,The Netherlands,Netherlands,NL,NL,NH,NH
+country_name,2759212,2759212,Beneden-Leeuwen,Beneden-Leeuwen,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,2750802,2750802,Mill,Mill,The Netherlands,Netherlands,NL,NL,NB,NB
+country_name,2753685,2753685,Hooglanderveen,Hooglanderveen,The Netherlands,Netherlands,NL,NL,UT,UT
+country_name,2756200,2756200,Ellecom,Ellecom,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,2748094,2748094,Rijpwetering,Rijpwetering,The Netherlands,Netherlands,NL,NL,ZH,ZH
+country_name,2743944,2743944,Zevenbergschen Hoek,Zevenbergschen Hoek,The Netherlands,Netherlands,NL,NL,NB,NB
+country_name,11746814,11746814,Deursen-Dennenburg,Deursen-Dennenburg,The Netherlands,Netherlands,NL,NL,NB,NB
+country_name,2750613,2750613,Moordrecht,Moordrecht,The Netherlands,Netherlands,NL,NL,ZH,ZH
+country_name,2744532,2744532,Wieringerwerf,Wieringerwerf,The Netherlands,Netherlands,NL,NL,NH,NH
+country_name,2750766,2750766,Moergestel,Moergestel,The Netherlands,Netherlands,NL,NL,NB,NB
+country_name,2753698,2753698,Hooghalen,Hooghalen,The Netherlands,Netherlands,NL,NL,DR,DR
+country_name,2759154,2759154,Bergen,Bergen,The Netherlands,Netherlands,NL,NL,NH,NH
+country_name,2747796,2747796,Rutten,Rutten,The Netherlands,Netherlands,NL,NL,FL,FL
+country_name,2743636,2743636,Zuidwolde,Zuidwolde,The Netherlands,Netherlands,NL,NL,GR,GR
+country_name,2743893,2743893,Zijldijk,Zijldijk,The Netherlands,Netherlands,NL,NL,GR,GR
+country_name,2747117,2747117,Sluis,Sluis,The Netherlands,Netherlands,NL,NL,ZE,ZE
+country_name,2759256,2759256,Belfeld,Belfeld,The Netherlands,Netherlands,NL,NL,LI,LI
+country_name,2744769,2744769,Westerbork,Westerbork,The Netherlands,Netherlands,NL,NL,DR,DR
+country_name,2759381,2759381,Bathmen,Bathmen,The Netherlands,Netherlands,NL,NL,OV,OV
+country_name,2754502,2754502,Heino,Heino,The Netherlands,Netherlands,NL,NL,OV,OV
+country_name,2743602,2743602,Zuurdijk,Zuurdijk,The Netherlands,Netherlands,NL,NL,GR,GR
+country_name,2748603,2748603,Pieterburen,Pieterburen,The Netherlands,Netherlands,NL,NL,GR,GR
+country_name,2745553,2745553,Vierhuizen,Vierhuizen,The Netherlands,Netherlands,NL,NL,GR,GR
+country_name,2745918,2745918,Usquert,Usquert,The Netherlands,Netherlands,NL,NL,GR,GR
+country_name,2751429,2751429,Loppersum,Loppersum,The Netherlands,Netherlands,NL,NL,GR,GR
+country_name,2759356,2759356,Bedum,Bedum,The Netherlands,Netherlands,NL,NL,GR,GR
+country_name,2755399,2755399,Goutum,Goutum,The Netherlands,Netherlands,NL,NL,FR,FR
+country_name,2753117,2753117,Kamerik,Kamerik,The Netherlands,Netherlands,NL,NL,UT,UT
+country_name,2754835,2754835,Harfsen,Harfsen,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,2745646,2745646,Venhorst,Venhorst,The Netherlands,Netherlands,NL,NL,NB,NB
+country_name,2756936,2756936,de Wijk,de Wijk,The Netherlands,Netherlands,NL,NL,DR,DR
+country_name,2751543,2751543,Lith,Lith,The Netherlands,Netherlands,NL,NL,NB,NB
+country_name,2748029,2748029,Rockanje,Rockanje,The Netherlands,Netherlands,NL,NL,ZH,ZH
+country_name,2748280,2748280,Reeuwijk,Reeuwijk,The Netherlands,Netherlands,NL,NL,ZH,ZH
+country_name,2754556,2754556,Heijen,Heijen,The Netherlands,Netherlands,NL,NL,LI,LI
+country_name,2746730,2746730,Sterksel,Sterksel,The Netherlands,Netherlands,NL,NL,NB,NB
+country_name,2750366,2750366,Nieuw-Bergen,Nieuw-Bergen,The Netherlands,Netherlands,NL,NL,LI,LI
+country_name,2750795,2750795,Milsbeek,Milsbeek,The Netherlands,Netherlands,NL,NL,LI,LI
+country_name,2748833,2748833,Overloon,Overloon,The Netherlands,Netherlands,NL,NL,NB,NB
+country_name,2743947,2743947,Zevenbergen,Zevenbergen,The Netherlands,Netherlands,NL,NL,NB,NB
+country_name,2752028,2752028,Lage Mierde,Lage Mierde,The Netherlands,Netherlands,NL,NL,NB,NB
+country_name,2759601,2759601,Avenhorn,Avenhorn,The Netherlands,Netherlands,NL,NL,NH,NH
+country_name,2754868,2754868,Haps,Haps,The Netherlands,Netherlands,NL,NL,NB,NB
+country_name,2757623,2757623,De Goorn,De Goorn,The Netherlands,Netherlands,NL,NL,NH,NH
+country_name,2753013,2753013,Katwijk,Katwijk,The Netherlands,Netherlands,NL,NL,NB,NB
+country_name,2744446,2744446,Wilbertoord,Wilbertoord,The Netherlands,Netherlands,NL,NL,NB,NB
+country_name,2751902,2751902,Langeweg,Langeweg,The Netherlands,Netherlands,NL,NL,NB,NB
+country_name,2751623,2751623,Liessel,Liessel,The Netherlands,Netherlands,NL,NL,NB,NB
+country_name,2751561,2751561,Linschoten,Linschoten,The Netherlands,Netherlands,NL,NL,UT,UT
+country_name,2757857,2757857,Dalen,Dalen,The Netherlands,Netherlands,NL,NL,DR,DR
+country_name,2747182,2747182,Sleen,Sleen,The Netherlands,Netherlands,NL,NL,DR,DR
+country_name,2749461,2749461,Oosterhesselen,Oosterhesselen,The Netherlands,Netherlands,NL,NL,DR,DR
+country_name,2755517,2755517,Giethoorn,Giethoorn,The Netherlands,Netherlands,NL,NL,OV,OV
+country_name,2759199,2759199,Bennebroek,Bennebroek,The Netherlands,Netherlands,NL,NL,NH,NH
+country_name,2757240,2757240,Den Dolder,Den Dolder,The Netherlands,Netherlands,NL,NL,UT,UT
+country_name,2744549,2744549,Wierden,Wierden,The Netherlands,Netherlands,NL,NL,OV,OV
+country_name,2752568,2752568,Koekange,Koekange,The Netherlands,Netherlands,NL,NL,DR,DR
+country_name,2751717,2751717,Lengel,Lengel,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,2750180,2750180,Nieuwkuijk,Nieuwkuijk,The Netherlands,Netherlands,NL,NL,NB,NB
+country_name,2748481,2748481,Posterholt,Posterholt,The Netherlands,Netherlands,NL,NL,LI,LI
+country_name,2748555,2748555,Plasmolen,Plasmolen,The Netherlands,Netherlands,NL,NL,LI,LI
+country_name,2755718,2755718,Gassel,Gassel,The Netherlands,Netherlands,NL,NL,NB,NB
+country_name,2746943,2746943,Spierdijk,Spierdijk,The Netherlands,Netherlands,NL,NL,NH,NH
+country_name,2753874,2753874,Holten,Holten,The Netherlands,Netherlands,NL,NL,OV,OV
+country_name,2745581,2745581,Vianen,Vianen,The Netherlands,Netherlands,NL,NL,NB,NB
+country_name,2756065,2756065,Enter,Enter,The Netherlands,Netherlands,NL,NL,OV,OV
+country_name,2745252,2745252,Vorstenbosch,Vorstenbosch,The Netherlands,Netherlands,NL,NL,NB,NB
+country_name,2759027,2759027,Beugen,Beugen,The Netherlands,Netherlands,NL,NL,NB,NB
+country_name,2750905,2750905,Middelaar,Middelaar,The Netherlands,Netherlands,NL,NL,LI,LI
+country_name,2743746,2743746,Zuidermeer,Zuidermeer,The Netherlands,Netherlands,NL,NL,NH,NH
+country_name,2760142,2760142,Aalden,Aalden,The Netherlands,Netherlands,NL,NL,DR,DR
+country_name,2750829,2750829,Midwoud,Midwoud,The Netherlands,Netherlands,NL,NL,NH,NH
+country_name,2744820,2744820,Wervershoof,Wervershoof,The Netherlands,Netherlands,NL,NL,NH,NH
+country_name,2754339,2754339,Herpen,Herpen,The Netherlands,Netherlands,NL,NL,NB,NB
+country_name,2748513,2748513,Polsbroek,Polsbroek,The Netherlands,Netherlands,NL,NL,UT,UT
+country_name,2747610,2747610,Scherpenisse,Scherpenisse,The Netherlands,Netherlands,NL,NL,ZE,ZE
+country_name,2745955,2745955,Ulestraten,Ulestraten,The Netherlands,Netherlands,NL,NL,LI,LI
+country_name,2759781,2759781,Andelst,Andelst,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,2747759,2747759,Santpoort-Zuid,Santpoort-Zuid,The Netherlands,Netherlands,NL,NL,NH,NH
+country_name,2749440,2749440,Oosterland,Oosterland,The Netherlands,Netherlands,NL,NL,ZE,ZE
+country_name,2757253,2757253,Den Bommel,Den Bommel,The Netherlands,Netherlands,NL,NL,ZH,ZH
+country_name,2751980,2751980,Landsmeer,Landsmeer,The Netherlands,Netherlands,NL,NL,NH,NH
+country_name,2746804,2746804,Steenbergen,Steenbergen,The Netherlands,Netherlands,NL,NL,NB,NB
+country_name,2752162,2752162,Kuinre,Kuinre,The Netherlands,Netherlands,NL,NL,OV,OV
+country_name,2745872,2745872,Valkenburg,Valkenburg,The Netherlands,Netherlands,NL,NL,ZH,ZH
+country_name,2750803,2750803,Milheeze,Milheeze,The Netherlands,Netherlands,NL,NL,NB,NB
+country_name,2746964,2746964,Spaubeek,Spaubeek,The Netherlands,Netherlands,NL,NL,LI,LI
+country_name,2755669,2755669,Geertruidenberg,Geertruidenberg,The Netherlands,Netherlands,NL,NL,NB,NB
+country_name,2751834,2751834,Leek,Leek,The Netherlands,Netherlands,NL,NL,GR,GR
+country_name,2750115,2750115,Nieuw-Weerdinge,Nieuw-Weerdinge,The Netherlands,Netherlands,NL,NL,DR,DR
+country_name,2745757,2745757,Veeningen,Veeningen,The Netherlands,Netherlands,NL,NL,DR,DR
+country_name,2743694,2743694,Zuidhorn,Zuidhorn,The Netherlands,Netherlands,NL,NL,GR,GR
+country_name,2755204,2755204,Grootegast,Grootegast,The Netherlands,Netherlands,NL,NL,GR,GR
+country_name,2748104,2748104,Rijnsburg,Rijnsburg,The Netherlands,Netherlands,NL,NL,ZH,ZH
+country_name,2743518,2743518,Zwartsluis,Zwartsluis,The Netherlands,Netherlands,NL,NL,OV,OV
+country_name,2747886,2747886,Rottevalle,Rottevalle,The Netherlands,Netherlands,NL,NL,FR,FR
+country_name,2748006,2748006,Roelofarendsveen,Roelofarendsveen,The Netherlands,Netherlands,NL,NL,ZH,ZH
+country_name,2759995,2759995,Achterveld,Achterveld,The Netherlands,Netherlands,NL,NL,UT,UT
+country_name,2751641,2751641,Lienden,Lienden,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,11395901,11395901,Meerstad,Meerstad,The Netherlands,Netherlands,NL,NL,GR,GR
+country_name,2760131,2760131,Aalst,Aalst,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,2759472,2759472,Balk,Balk,The Netherlands,Netherlands,NL,NL,FR,FR
+country_name,2750476,2750476,Nederhorst den Berg,Nederhorst den Berg,The Netherlands,Netherlands,NL,NL,NH,NH
+country_name,2759129,2759129,Bergharen,Bergharen,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,2745090,2745090,Wagenborgen,Wagenborgen,The Netherlands,Netherlands,NL,NL,GR,GR
+country_name,2747671,2747671,Scharnegoutum,Scharnegoutum,The Netherlands,Netherlands,NL,NL,FR,FR
+country_name,2744237,2744237,Wognum,Wognum,The Netherlands,Netherlands,NL,NL,NH,NH
+country_name,2757215,2757215,Den Hoorn,Den Hoorn,The Netherlands,Netherlands,NL,NL,ZH,ZH
+country_name,2751456,2751456,Loon op Zand,Loon op Zand,The Netherlands,Netherlands,NL,NL,NB,NB
+country_name,2747241,2747241,Sint-Maartensdijk,Sint-Maartensdijk,The Netherlands,Netherlands,NL,NL,ZE,ZE
+country_name,2752906,2752906,Kessel,Kessel,The Netherlands,Netherlands,NL,NL,LI,LI
+country_name,2751651,2751651,Lichtenvoorde,Lichtenvoorde,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,2759652,2759652,Arum,Arum,The Netherlands,Netherlands,NL,NL,FR,FR
+country_name,2754723,2754723,Hazerswoude-Rijndijk,Hazerswoude-Rijndijk,The Netherlands,Netherlands,NL,NL,ZH,ZH
+country_name,2755243,2755243,Gronsveld,Gronsveld,The Netherlands,Netherlands,NL,NL,LI,LI
+country_name,2748498,2748498,Poortvliet,Poortvliet,The Netherlands,Netherlands,NL,NL,ZE,ZE
+country_name,2752140,2752140,Kwadijk,Kwadijk,The Netherlands,Netherlands,NL,NL,NH,NH
+country_name,2752638,2752638,Kloetinge,Kloetinge,The Netherlands,Netherlands,NL,NL,ZE,ZE
+country_name,2743910,2743910,Zieuwent,Zieuwent,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,2751285,2751285,Maassluis,Maassluis,The Netherlands,Netherlands,NL,NL,ZH,ZH
+country_name,2757698,2757698,Dedemsvaart,Dedemsvaart,The Netherlands,Netherlands,NL,NL,OV,OV
+country_name,2755601,2755601,Genderen,Genderen,The Netherlands,Netherlands,NL,NL,NB,NB
+country_name,2755652,2755652,Geesteren,Geesteren,The Netherlands,Netherlands,NL,NL,OV,OV
+country_name,2757232,2757232,Denekamp,Denekamp,The Netherlands,Netherlands,NL,NL,OV,OV
+country_name,2759549,2759549,Baarlo,Baarlo,The Netherlands,Netherlands,NL,NL,LI,LI
+country_name,2759585,2759585,Azewijn,Azewijn,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,2758626,2758626,Borculo,Borculo,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,2751702,2751702,Lettele,Lettele,The Netherlands,Netherlands,NL,NL,OV,OV
+country_name,2750100,2750100,Nijeberkoop,Nijeberkoop,The Netherlands,Netherlands,NL,NL,FR,FR
+country_name,2753758,2753758,Hoge Hexel,Hoge Hexel,The Netherlands,Netherlands,NL,NL,OV,OV
+country_name,2744156,2744156,Woudrichem,Woudrichem,The Netherlands,Netherlands,NL,NL,NB,NB
+country_name,2743959,2743959,Zenderen,Zenderen,The Netherlands,Netherlands,NL,NL,OV,OV
+country_name,2759919,2759919,Albergen,Albergen,The Netherlands,Netherlands,NL,NL,OV,OV
+country_name,2757396,2757396,De Krim,De Krim,The Netherlands,Netherlands,NL,NL,OV,OV
+country_name,2755429,2755429,Gorredijk,Gorredijk,The Netherlands,Netherlands,NL,NL,FR,FR
+country_name,2751681,2751681,Leutingewolde,Leutingewolde,The Netherlands,Netherlands,NL,NL,DR,DR
+country_name,2748018,2748018,Roderwolde,Roderwolde,The Netherlands,Netherlands,NL,NL,DR,DR
+country_name,2751668,2751668,Lewedorp,Lewedorp,The Netherlands,Netherlands,NL,NL,ZE,ZE
+country_name,2751085,2751085,Maurik,Maurik,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,2748868,2748868,Overasselt,Overasselt,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,2752484,2752484,Koningslust,Koningslust,The Netherlands,Netherlands,NL,NL,LI,LI
+country_name,2744636,2744636,West-Knollendam,West-Knollendam,The Netherlands,Netherlands,NL,NL,NH,NH
+country_name,2750444,2750444,Neerijnen,Neerijnen,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,2751627,2751627,Lieshout,Lieshout,The Netherlands,Netherlands,NL,NL,NB,NB
+country_name,2751346,2751346,Luyksgestel,Luyksgestel,The Netherlands,Netherlands,NL,NL,NB,NB
+country_name,2744973,2744973,Wateringen,Wateringen,The Netherlands,Netherlands,NL,NL,ZH,ZH
+country_name,2752130,2752130,Kwintsheul,Kwintsheul,The Netherlands,Netherlands,NL,NL,ZH,ZH
+country_name,2753441,2753441,Hulshorst,Hulshorst,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,2754962,2754962,Hagestein,Hagestein,The Netherlands,Netherlands,NL,NL,UT,UT
+country_name,2751888,2751888,Langweer,Langweer,The Netherlands,Netherlands,NL,NL,FR,FR
+country_name,2757651,2757651,Deest,Deest,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,2747499,2747499,Schoonrewoerd,Schoonrewoerd,The Netherlands,Netherlands,NL,NL,UT,UT
+country_name,2751524,2751524,Loenen,Loenen,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,2746395,2746395,Terwolde,Terwolde,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,2753092,2753092,Kamperveen,Kamperveen,The Netherlands,Netherlands,NL,NL,OV,OV
+country_name,2749385,2749385,Oosterzee,Oosterzee,The Netherlands,Netherlands,NL,NL,FR,FR
+country_name,2754935,2754935,Halle,Halle,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,2744818,2744818,Wesepe,Wesepe,The Netherlands,Netherlands,NL,NL,OV,OV
+country_name,2759581,2759581,Baak,Baak,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,2746133,2746133,Tubbergen,Tubbergen,The Netherlands,Netherlands,NL,NL,OV,OV
+country_name,2754866,2754866,Harbrinkhoek,Harbrinkhoek,The Netherlands,Netherlands,NL,NL,OV,OV
+country_name,2745258,2745258,Vorden,Vorden,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,2752178,2752178,Kudelstaart,Kudelstaart,The Netherlands,Netherlands,NL,NL,NH,NH
+country_name,2748500,2748500,Poortugaal,Poortugaal,The Netherlands,Netherlands,NL,NL,ZH,ZH
+country_name,2754147,2754147,Heumen,Heumen,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,2751304,2751304,Maasbommel,Maasbommel,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,2759693,2759693,Appeltern,Appeltern,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,2749053,2749053,Oudenbosch,Oudenbosch,The Netherlands,Netherlands,NL,NL,NB,NB
+country_name,2755371,2755371,Gramsbergen,Gramsbergen,The Netherlands,Netherlands,NL,NL,OV,OV
+country_name,2745182,2745182,Vriezenveen,Vriezenveen,The Netherlands,Netherlands,NL,NL,OV,OV
+country_name,2757224,2757224,Den Ham,Den Ham,The Netherlands,Netherlands,NL,NL,OV,OV
+country_name,2745169,2745169,Vroomshoop,Vroomshoop,The Netherlands,Netherlands,NL,NL,OV,OV
+country_name,2757370,2757370,Delden,Delden,The Netherlands,Netherlands,NL,NL,OV,OV
+country_name,2754066,2754066,Hilvarenbeek,Hilvarenbeek,The Netherlands,Netherlands,NL,NL,NB,NB
+country_name,2756591,2756591,Driel,Driel,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,2747903,2747903,Roswinkel,Roswinkel,The Netherlands,Netherlands,NL,NL,DR,DR
+country_name,2751303,2751303,Maasbracht,Maasbracht,The Netherlands,Netherlands,NL,NL,LI,LI
+country_name,2751199,2751199,Margraten,Margraten,The Netherlands,Netherlands,NL,NL,LI,LI
+country_name,2753907,2753907,Hollandscheveld,Hollandscheveld,The Netherlands,Netherlands,NL,NL,DR,DR
+country_name,2749223,2749223,Ossendrecht,Ossendrecht,The Netherlands,Netherlands,NL,NL,NB,NB
+country_name,2751813,2751813,Leens,Leens,The Netherlands,Netherlands,NL,NL,GR,GR
+country_name,2744770,2744770,Blokker,Blokker,The Netherlands,Netherlands,NL,NL,NH,NH
+country_name,2759664,2759664,Arnemuiden,Arnemuiden,The Netherlands,Netherlands,NL,NL,ZE,ZE
+country_name,2753452,2753452,Hulsberg,Hulsberg,The Netherlands,Netherlands,NL,NL,LI,LI
+country_name,2749235,2749235,Ospel,Ospel,The Netherlands,Netherlands,NL,NL,LI,LI
+country_name,2756683,2756683,Doornenburg,Doornenburg,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,2744145,2744145,Wouw,Wouw,The Netherlands,Netherlands,NL,NL,NB,NB
+country_name,2746748,2746748,Stein,Stein,The Netherlands,Netherlands,NL,NL,LI,LI
+country_name,2753610,2753610,Horn,Horn,The Netherlands,Netherlands,NL,NL,LI,LI
+country_name,2755367,2755367,Grashoek,Grashoek,The Netherlands,Netherlands,NL,NL,LI,LI
+country_name,2754975,2754975,Haelen,Haelen,The Netherlands,Netherlands,NL,NL,LI,LI
+country_name,2746751,2746751,Steyl,Steyl,The Netherlands,Netherlands,NL,NL,LI,LI
+country_name,2756358,2756358,Eenrum,Eenrum,The Netherlands,Netherlands,NL,NL,GR,GR
+country_name,2755770,2755770,Galder,Galder,The Netherlands,Netherlands,NL,NL,NB,NB
+country_name,2755281,2755281,Groenlo,Groenlo,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,2750805,2750805,Mildam,Mildam,The Netherlands,Netherlands,NL,NL,FR,FR
+country_name,2749807,2749807,Noordwolde,Noordwolde,The Netherlands,Netherlands,NL,NL,FR,FR
+country_name,2749007,2749007,Oudeschoot,Oudeschoot,The Netherlands,Netherlands,NL,NL,FR,FR
+country_name,2744194,2744194,Wolvega,Wolvega,The Netherlands,Netherlands,NL,NL,FR,FR
+country_name,2758682,2758682,Bolsward,Bolsward,The Netherlands,Netherlands,NL,NL,FR,FR
+country_name,2750213,2750213,Nieuwe Wetering,Nieuwe Wetering,The Netherlands,Netherlands,NL,NL,ZH,ZH
+country_name,2756188,2756188,Elp,Elp,The Netherlands,Netherlands,NL,NL,DR,DR
+country_name,2759529,2759529,Babberich,Babberich,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,2758177,2758177,Brummen,Brummen,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,2755824,2755824,Frederiksoord,Frederiksoord,The Netherlands,Netherlands,NL,NL,DR,DR
+country_name,2749330,2749330,Oostvoorne,Oostvoorne,The Netherlands,Netherlands,NL,NL,ZH,ZH
+country_name,2760092,2760092,Aarlanderveen,Aarlanderveen,The Netherlands,Netherlands,NL,NL,ZH,ZH
+country_name,2749753,2749753,Nuth,Nuth,The Netherlands,Netherlands,NL,NL,LI,LI
+country_name,2753724,2753724,Hoogersmilde,Hoogersmilde,The Netherlands,Netherlands,NL,NL,DR,DR
+country_name,2749796,2749796,Norg,Norg,The Netherlands,Netherlands,NL,NL,DR,DR
+country_name,2751911,2751911,Langeveen,Langeveen,The Netherlands,Netherlands,NL,NL,OV,OV
+country_name,2759849,2759849,Ameide,Ameide,The Netherlands,Netherlands,NL,NL,UT,UT
+country_name,2749430,2749430,Eastermar,Eastermar,The Netherlands,Netherlands,NL,NL,FR,FR
+country_name,2759863,2759863,Alteveer,Alteveer,The Netherlands,Netherlands,NL,NL,DR,DR
+country_name,2747749,2747749,Sas van Gent,Sas van Gent,The Netherlands,Netherlands,NL,NL,ZE,ZE
+country_name,2747553,2747553,Schinnen,Schinnen,The Netherlands,Netherlands,NL,NL,LI,LI
+country_name,2755542,2755542,Gytsjerk,Gytsjerk,The Netherlands,Netherlands,NL,NL,FR,FR
+country_name,2743861,2743861,Zoelen,Zoelen,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,2754150,2754150,Heukelum,Heukelum,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,2756050,2756050,Epse,Epse,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,2750797,2750797,Millingen aan de Rijn,Millingen aan de Rijn,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,2746228,2746228,Tolkamer,Tolkamer,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,2748968,2748968,Oude Wetering,Oude Wetering,The Netherlands,Netherlands,NL,NL,ZH,ZH
+country_name,2759698,2759698,Appelscha,Appelscha,The Netherlands,Netherlands,NL,NL,FR,FR
+country_name,2747242,2747242,Sint Maartensbrug,Sint Maartensbrug,The Netherlands,Netherlands,NL,NL,NH,NH
+country_name,2756283,2756283,Eijsden,Eijsden,The Netherlands,Netherlands,NL,NL,LI,LI
+country_name,2756118,2756118,Empe,Empe,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,2755664,2755664,Gees,Gees,The Netherlands,Netherlands,NL,NL,DR,DR
+country_name,2759594,2759594,Axel,Axel,The Netherlands,Netherlands,NL,NL,ZE,ZE
+country_name,2753439,2753439,Hulst,Hulst,The Netherlands,Netherlands,NL,NL,ZE,ZE
+country_name,2747260,2747260,Sint Jansteen,Sint Jansteen,The Netherlands,Netherlands,NL,NL,ZE,ZE
+country_name,2758341,2758341,Breskens,Breskens,The Netherlands,Netherlands,NL,NL,ZE,ZE
+country_name,2749541,2749541,Oostburg,Oostburg,The Netherlands,Netherlands,NL,NL,ZE,ZE
+country_name,2760096,2760096,Aardenburg,Aardenburg,The Netherlands,Netherlands,NL,NL,ZE,ZE
+country_name,2753799,2753799,Hoofdplaat,Hoofdplaat,The Netherlands,Netherlands,NL,NL,ZE,ZE
+country_name,2755305,2755305,Groede,Groede,The Netherlands,Netherlands,NL,NL,ZE,ZE
+country_name,2753348,2753348,IJzendijke,IJzendijke,The Netherlands,Netherlands,NL,NL,ZE,ZE
+country_name,2747517,2747517,Schoondijke,Schoondijke,The Netherlands,Netherlands,NL,NL,ZE,ZE
+country_name,2748803,2748803,Ovezande,Ovezande,The Netherlands,Netherlands,NL,NL,ZE,ZE
+country_name,2747355,2747355,s-Heerenhoek,s-Heerenhoek,The Netherlands,Netherlands,NL,NL,ZE,ZE
+country_name,2749086,2749086,Oudelande,Oudelande,The Netherlands,Netherlands,NL,NL,ZE,ZE
+country_name,2749362,2749362,Oostkapelle,Oostkapelle,The Netherlands,Netherlands,NL,NL,ZE,ZE
+country_name,2760147,2760147,Aagtekerke,Aagtekerke,The Netherlands,Netherlands,NL,NL,ZE,ZE
+country_name,2743822,2743822,Zoutelande,Zoutelande,The Netherlands,Netherlands,NL,NL,ZE,ZE
+country_name,2752374,2752374,Koudekerke,Koudekerke,The Netherlands,Netherlands,NL,NL,ZE,ZE
+country_name,8335037,8335037,Burgh-Haamstede,Burgh-Haamstede,The Netherlands,Netherlands,NL,NL,ZE,ZE
+country_name,2747680,2747680,Scharendijke,Scharendijke,The Netherlands,Netherlands,NL,NL,ZE,ZE
+country_name,2758186,2758186,Bruinisse,Bruinisse,The Netherlands,Netherlands,NL,NL,ZE,ZE
+country_name,2744129,2744129,Yerseke,Yerseke,The Netherlands,Netherlands,NL,NL,ZE,ZE
+country_name,2752213,2752213,Kruiningen,Kruiningen,The Netherlands,Netherlands,NL,NL,ZE,ZE
+country_name,2754503,2754503,Heinkenszand,Heinkenszand,The Netherlands,Netherlands,NL,NL,ZE,ZE
+country_name,2748240,2748240,Renesse,Renesse,The Netherlands,Netherlands,NL,NL,ZE,ZE
+country_name,2757931,2757931,Colijnsplaat,Colijnsplaat,The Netherlands,Netherlands,NL,NL,ZE,ZE
+country_name,2753097,2753097,Kamperland,Kamperland,The Netherlands,Netherlands,NL,NL,ZE,ZE
+country_name,2752399,2752399,Kortgene,Kortgene,The Netherlands,Netherlands,NL,NL,ZE,ZE
+country_name,2745352,2745352,Vogelwaarde,Vogelwaarde,The Netherlands,Netherlands,NL,NL,ZE,ZE
+country_name,2752547,2752547,Koewacht,Koewacht,The Netherlands,Netherlands,NL,NL,ZE,ZE
+country_name,2752611,2752611,Kloosterzande,Kloosterzande,The Netherlands,Netherlands,NL,NL,ZE,ZE
+country_name,2749341,2749341,Oost-Souburg,Oost-Souburg,The Netherlands,Netherlands,NL,NL,ZE,ZE
+country_name,2748042,2748042,Ritthem,Ritthem,The Netherlands,Netherlands,NL,NL,ZE,ZE
+country_name,2756746,2756746,Domburg,Domburg,The Netherlands,Netherlands,NL,NL,ZE,ZE
+country_name,2755315,2755315,Grijpskerke,Grijpskerke,The Netherlands,Netherlands,NL,NL,ZE,ZE
+country_name,2744642,2744642,Westkapelle,Westkapelle,The Netherlands,Netherlands,NL,NL,ZE,ZE
+country_name,2758213,2758213,Brouwershaven,Brouwershaven,The Netherlands,Netherlands,NL,NL,ZE,ZE
+country_name,2748220,2748220,Retranchement,Retranchement,The Netherlands,Netherlands,NL,NL,ZE,ZE
+country_name,2758980,2758980,Biervliet,Biervliet,The Netherlands,Netherlands,NL,NL,ZE,ZE
+country_name,2743634,2743634,Zuidzande,Zuidzande,The Netherlands,Netherlands,NL,NL,ZE,ZE
+country_name,2750146,2750146,Nieuwpoort,Nieuwpoort,The Netherlands,Netherlands,NL,NL,ZH,ZH
+country_name,2753018,2753018,Kattendijke,Kattendijke,The Netherlands,Netherlands,NL,NL,ZE,ZE
+country_name,2758033,2758033,Cadzand,Cadzand,The Netherlands,Netherlands,NL,NL,ZE,ZE
+country_name,2744839,2744839,Wemeldinge,Wemeldinge,The Netherlands,Netherlands,NL,NL,ZE,ZE
+country_name,2754880,2754880,Hansweert,Hansweert,The Netherlands,Netherlands,NL,NL,ZE,ZE
+country_name,2747483,2747483,Schore,Schore,The Netherlands,Netherlands,NL,NL,ZE,ZE
+country_name,2749218,2749218,Ossenisse,Ossenisse,The Netherlands,Netherlands,NL,NL,ZE,ZE
+country_name,2752918,2752918,Kerkwerve,Kerkwerve,The Netherlands,Netherlands,NL,NL,ZE,ZE
+country_name,2747109,2747109,Sluiskil,Sluiskil,The Netherlands,Netherlands,NL,NL,ZE,ZE
+country_name,2749189,2749189,Oud-Alblas,Oud-Alblas,The Netherlands,Netherlands,NL,NL,ZH,ZH
+country_name,2748673,2748673,Peize,Peize,The Netherlands,Netherlands,NL,NL,DR,DR
+country_name,2748702,2748702,Paterswolde,Paterswolde,The Netherlands,Netherlands,NL,NL,DR,DR
+country_name,2752623,2752623,Kloosterhaar,Kloosterhaar,The Netherlands,Netherlands,NL,NL,OV,OV
+country_name,2754111,2754111,Heythuysen,Heythuysen,The Netherlands,Netherlands,NL,NL,LI,LI
+country_name,2744631,2744631,Westmaas,Westmaas,The Netherlands,Netherlands,NL,NL,ZH,ZH
+country_name,2754841,2754841,Haren,Haren,The Netherlands,Netherlands,NL,NL,GR,GR
+country_name,2757320,2757320,De Lutte,De Lutte,The Netherlands,Netherlands,NL,NL,OV,OV
+country_name,2752646,2752646,Klimmen,Klimmen,The Netherlands,Netherlands,NL,NL,LI,LI
+country_name,2756875,2756875,Diepenveen,Diepenveen,The Netherlands,Netherlands,NL,NL,OV,OV
+country_name,2747704,2747704,Schalkhaar,Schalkhaar,The Netherlands,Netherlands,NL,NL,OV,OV
+country_name,2757783,2757783,De Bilt,De Bilt,The Netherlands,Netherlands,NL,NL,UT,UT
+country_name,2746714,2746714,Stevensweert,Stevensweert,The Netherlands,Netherlands,NL,NL,LI,LI
+country_name,2747561,2747561,Schimmert,Schimmert,The Netherlands,Netherlands,NL,NL,LI,LI
+country_name,2751875,2751875,Laren,Laren,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,2748150,2748150,Riethoven,Riethoven,The Netherlands,Netherlands,NL,NL,NB,NB
+country_name,2756408,2756408,Eelde,Eelde,The Netherlands,Netherlands,NL,NL,DR,DR
+country_name,2746773,2746773,Steensel,Steensel,The Netherlands,Netherlands,NL,NL,NB,NB
+country_name,2750569,2750569,Muiden,Muiden,The Netherlands,Netherlands,NL,NL,NH,NH
+country_name,2743588,2743588,Zwaanshoek,Zwaanshoek,The Netherlands,Netherlands,NL,NL,NH,NH
+country_name,2746162,2746162,Tricht,Tricht,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,2751189,2751189,Mariahout,Mariahout,The Netherlands,Netherlands,NL,NL,NB,NB
+country_name,2749685,2749685,Oirsbeek,Oirsbeek,The Netherlands,Netherlands,NL,NL,LI,LI
+country_name,2745968,2745968,Uithuizermeeden,Uithuizermeeden,The Netherlands,Netherlands,NL,NL,GR,GR
+country_name,2750456,2750456,Neer,Neer,The Netherlands,Netherlands,NL,NL,LI,LI
+country_name,2745547,2745547,Vierpolders,Vierpolders,The Netherlands,Netherlands,NL,NL,ZH,ZH
+country_name,2753593,2753593,Horssen,Horssen,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,2758426,2758426,Brakel,Brakel,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,2745333,2745333,Vollenhove,Vollenhove,The Netherlands,Netherlands,NL,NL,OV,OV
+country_name,2750285,2750285,Nieuwendijk,Nieuwendijk,The Netherlands,Netherlands,NL,NL,NB,NB
+country_name,2746387,2746387,Teuge,Teuge,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,2758958,2758958,Biezenmortel,Biezenmortel,The Netherlands,Netherlands,NL,NL,NB,NB
+country_name,2758052,2758052,Buurmalsen,Buurmalsen,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,2757095,2757095,De Rijp,De Rijp,The Netherlands,Netherlands,NL,NL,NH,NH
+country_name,2745874,2745874,Valkenburg,Valkenburg,The Netherlands,Netherlands,NL,NL,LI,LI
+country_name,2754553,2754553,Heijningen,Heijningen,The Netherlands,Netherlands,NL,NL,NB,NB
+country_name,2756211,2756211,Elim,Elim,The Netherlands,Netherlands,NL,NL,DR,DR
+country_name,2747636,2747636,Schelluinen,Schelluinen,The Netherlands,Netherlands,NL,NL,ZH,ZH
+country_name,2754693,2754693,Heemstede,Heemstede,The Netherlands,Netherlands,NL,NL,UT,UT
+country_name,2747879,2747879,Rouveen,Rouveen,The Netherlands,Netherlands,NL,NL,OV,OV
+country_name,2745906,2745906,Vaals,Vaals,The Netherlands,Netherlands,NL,NL,LI,LI
+country_name,2749772,2749772,Nuland,Nuland,The Netherlands,Netherlands,NL,NL,NB,NB
+country_name,2752192,2752192,Kruisland,Kruisland,The Netherlands,Netherlands,NL,NL,NB,NB
+country_name,2748236,2748236,Renkum,Renkum,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,2751433,2751433,Lopikerkapel,Lopikerkapel,The Netherlands,Netherlands,NL,NL,UT,UT
+country_name,2759751,2759751,Ankeveen,Ankeveen,The Netherlands,Netherlands,NL,NL,NH,NH
+country_name,2756426,2756426,Ederveen,Ederveen,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,2754943,2754943,Halfweg,Halfweg,The Netherlands,Netherlands,NL,NL,NH,NH
+country_name,2745297,2745297,Voorst,Voorst,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,2758479,2758479,Bovensmilde,Bovensmilde,The Netherlands,Netherlands,NL,NL,DR,DR
+country_name,2752581,2752581,Kockengen,Kockengen,The Netherlands,Netherlands,NL,NL,UT,UT
+country_name,2756398,2756398,Eemdijk,Eemdijk,The Netherlands,Netherlands,NL,NL,UT,UT
+country_name,2754389,2754389,Hengevelde,Hengevelde,The Netherlands,Netherlands,NL,NL,OV,OV
+country_name,2749061,2749061,Oudemirdum,Oudemirdum,The Netherlands,Netherlands,NL,NL,FR,FR
+country_name,2753932,2753932,Hogeveen,Hogeveen,The Netherlands,Netherlands,NL,NL,ZH,ZH
+country_name,2748125,2748125,Rijkevoort,Rijkevoort,The Netherlands,Netherlands,NL,NL,NB,NB
+country_name,2747715,2747715,Schagerbrug,Schagerbrug,The Netherlands,Netherlands,NL,NL,NH,NH
+country_name,2747828,2747828,Ruinerwold,Ruinerwold,The Netherlands,Netherlands,NL,NL,DR,DR
+country_name,2754490,2754490,Hekendorp,Hekendorp,The Netherlands,Netherlands,NL,NL,UT,UT
+country_name,2755634,2755634,,,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,2748086,2748086,Rijsenhout,Rijsenhout,The Netherlands,Netherlands,NL,NL,NH,NH
+country_name,2758205,2758205,Bruchterveld,Bruchterveld,The Netherlands,Netherlands,NL,NL,OV,OV
+country_name,2756172,2756172,Elshout,Elshout,The Netherlands,Netherlands,NL,NL,NB,NB
+country_name,2748950,2748950,Oudheusden,Oudheusden,The Netherlands,Netherlands,NL,NL,NB,NB
+country_name,2743544,2743544,Zwartemeer,Zwartemeer,The Netherlands,Netherlands,NL,NL,DR,DR
+country_name,2753010,2753010,Katwijk aan Zee,Katwijk aan Zee,The Netherlands,Netherlands,NL,NL,ZH,ZH
+country_name,2746120,2746120,Tuk,Tuk,The Netherlands,Netherlands,NL,NL,OV,OV
+country_name,2748106,2748106,Rijnsaterwoude,Rijnsaterwoude,The Netherlands,Netherlands,NL,NL,ZH,ZH
+country_name,2753369,2753369,Ysbrechtum,Ysbrechtum,The Netherlands,Netherlands,NL,NL,FR,FR
+country_name,2758621,2758621,Borger,Borger,The Netherlands,Netherlands,NL,NL,DR,DR
+country_name,2750362,2750362,Nieuw-Buinen,Nieuw-Buinen,The Netherlands,Netherlands,NL,NL,DR,DR
+country_name,2759470,2759470,Balkbrug,Balkbrug,The Netherlands,Netherlands,NL,NL,OV,OV
+country_name,2745369,2745369,Voerendaal,Voerendaal,The Netherlands,Netherlands,NL,NL,LI,LI
+country_name,2743795,2743795,Zuiddorpe,Zuiddorpe,The Netherlands,Netherlands,NL,NL,ZE,ZE
+country_name,2749449,2749449,Oosterhout,Oosterhout,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,2746321,2746321,Tienhoven,Tienhoven,The Netherlands,Netherlands,NL,NL,UT,UT
+country_name,2744720,2744720,Westerland,Westerland,The Netherlands,Netherlands,NL,NL,NH,NH
+country_name,2745054,2745054,Wamel,Wamel,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,2750539,2750539,Munstergeleen,Munstergeleen,The Netherlands,Netherlands,NL,NL,LI,LI
+country_name,2749281,2749281,Opperdoes,Opperdoes,The Netherlands,Netherlands,NL,NL,NH,NH
+country_name,2745189,2745189,Vries,Vries,The Netherlands,Netherlands,NL,NL,DR,DR
+country_name,2744337,2744337,Winsum,Winsum,The Netherlands,Netherlands,NL,NL,GR,GR
+country_name,2747382,2747382,Sevenum,Sevenum,The Netherlands,Netherlands,NL,NL,LI,LI
+country_name,2754758,2754758,Haulerwijk,Haulerwijk,The Netherlands,Netherlands,NL,NL,FR,FR
+country_name,2744333,2744333,Wintelre,Wintelre,The Netherlands,Netherlands,NL,NL,NB,NB
+country_name,2752591,2752591,Knegsel,Knegsel,The Netherlands,Netherlands,NL,NL,NB,NB
+country_name,8299268,8299268,Blauwestad,Blauwestad,The Netherlands,Netherlands,NL,NL,GR,GR
+country_name,2750195,2750195,Nieuw-Heeten,Nieuw-Heeten,The Netherlands,Netherlands,NL,NL,OV,OV
+country_name,2750810,2750810,Mijnsheerenland,Mijnsheerenland,The Netherlands,Netherlands,NL,NL,ZH,ZH
+country_name,2748078,2748078,Rijswijk,Rijswijk,The Netherlands,Netherlands,NL,NL,NB,NB
+country_name,2756133,2756133,Emmer-Compascuum,Emmer-Compascuum,The Netherlands,Netherlands,NL,NL,DR,DR
+country_name,2755536,2755536,Giesbeek,Giesbeek,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,2754819,2754819,Harkstede,Harkstede,The Netherlands,Netherlands,NL,NL,GR,GR
+country_name,2760132,2760132,Aalsmeerderbrug,Aalsmeerderbrug,The Netherlands,Netherlands,NL,NL,NH,NH
+country_name,2752094,2752094,Laag Zuthem,Laag Zuthem,The Netherlands,Netherlands,NL,NL,OV,OV
+country_name,2759353,2759353,Beegden,Beegden,The Netherlands,Netherlands,NL,NL,LI,LI
+country_name,2759434,2759434,Bant,Bant,The Netherlands,Netherlands,NL,NL,FL,FL
+country_name,2750600,2750600,De Mortel,De Mortel,The Netherlands,Netherlands,NL,NL,NB,NB
+country_name,2746023,2746023,Tzummarum,Tzummarum,The Netherlands,Netherlands,NL,NL,FR,FR
+country_name,2746555,2746555,Susteren,Susteren,The Netherlands,Netherlands,NL,NL,LI,LI
+country_name,2744859,2744859,Wellerlooi,Wellerlooi,The Netherlands,Netherlands,NL,NL,LI,LI
+country_name,2759673,2759673,Arkel,Arkel,The Netherlands,Netherlands,NL,NL,ZH,ZH
+country_name,2755533,2755533,Giessenburg,Giessenburg,The Netherlands,Netherlands,NL,NL,ZH,ZH
+country_name,2748363,2748363,Raamsdonk,Raamsdonk,The Netherlands,Netherlands,NL,NL,NB,NB
+country_name,2753488,2753488,Huis ter Heide,Huis ter Heide,The Netherlands,Netherlands,NL,NL,UT,UT
+country_name,2754342,2754342,Hernen,Hernen,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,2746052,2746052,Twijzel,Twijzel,The Netherlands,Netherlands,NL,NL,FR,FR
+country_name,2745842,2745842,Valthermond,Valthermond,The Netherlands,Netherlands,NL,NL,DR,DR
+country_name,2759180,2759180,Bentelo,Bentelo,The Netherlands,Netherlands,NL,NL,OV,OV
+country_name,2753521,2753521,Huijbergen,Huijbergen,The Netherlands,Netherlands,NL,NL,NB,NB
+country_name,2758111,2758111,Bunde,Bunde,The Netherlands,Netherlands,NL,NL,LI,LI
+country_name,2752798,2752798,Klazienaveen,Klazienaveen,The Netherlands,Netherlands,NL,NL,DR,DR
+country_name,2759813,2759813,Ammerzoden,Ammerzoden,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,2746038,2746038,Tynaarlo,Tynaarlo,The Netherlands,Netherlands,NL,NL,DR,DR
+country_name,2749302,2749302,Opende,Opende,The Netherlands,Netherlands,NL,NL,GR,GR
+country_name,2746623,2746623,Streefkerk,Streefkerk,The Netherlands,Netherlands,NL,NL,ZH,ZH
+country_name,2758633,2758633,Boornbergum,Boornbergum,The Netherlands,Netherlands,NL,NL,FR,FR
+country_name,2759271,2759271,Beilen,Beilen,The Netherlands,Netherlands,NL,NL,DR,DR
+country_name,2747270,2747270,Sint Jacobiparochie,Sint Jacobiparochie,The Netherlands,Netherlands,NL,NL,FR,FR
+country_name,2749609,2749609,Ommeren,Ommeren,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,2743958,2743958,Zennewijnen,Zennewijnen,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,2754706,2754706,Heel,Heel,The Netherlands,Netherlands,NL,NL,LI,LI
+country_name,2755666,2755666,Geervliet,Geervliet,The Netherlands,Netherlands,NL,NL,ZH,ZH
+country_name,2744800,2744800,Westdorpe,Westdorpe,The Netherlands,Netherlands,NL,NL,ZE,ZE
+country_name,2748726,2748726,Papenhoven,Papenhoven,The Netherlands,Netherlands,NL,NL,LI,LI
+country_name,2759097,2759097,Beringe,Beringe,The Netherlands,Netherlands,NL,NL,LI,LI
+country_name,2759266,2759266,Beinsdorp,Beinsdorp,The Netherlands,Netherlands,NL,NL,NH,NH
+country_name,2755938,2755938,Ezinge,Ezinge,The Netherlands,Netherlands,NL,NL,GR,GR
+country_name,2753587,2753587,Horst,Horst,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,2743807,2743807,Zuid-Beijerland,Zuid-Beijerland,The Netherlands,Netherlands,NL,NL,ZH,ZH
+country_name,2745589,2745589,Vessem,Vessem,The Netherlands,Netherlands,NL,NL,NB,NB
+country_name,2749626,2749626,Olst,Olst,The Netherlands,Netherlands,NL,NL,OV,OV
+country_name,2749009,2749009,Oudeschild,Oudeschild,The Netherlands,Netherlands,NL,NL,NH,NH
+country_name,2747808,2747808,Rumpt,Rumpt,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,2747661,2747661,Scheemda,Scheemda,The Netherlands,Netherlands,NL,NL,GR,GR
+country_name,2749617,2749617,Ommel,Ommel,The Netherlands,Netherlands,NL,NL,NB,NB
+country_name,2756318,2756318,Eethen,Eethen,The Netherlands,Netherlands,NL,NL,NB,NB
+country_name,2760078,2760078,Abbekerk,Abbekerk,The Netherlands,Netherlands,NL,NL,NH,NH
+country_name,2744825,2744825,Werkhoven,Werkhoven,The Netherlands,Netherlands,NL,NL,UT,UT
+country_name,2749136,2749136,Oudega,Oudega,The Netherlands,Netherlands,NL,NL,FR,FR
+country_name,2754457,2754457,Hellendoorn,Hellendoorn,The Netherlands,Netherlands,NL,NL,OV,OV
+country_name,2751254,2751254,Makkum,Makkum,The Netherlands,Netherlands,NL,NL,FR,FR
+country_name,2758035,2758035,Cadier en Keer,Cadier en Keer,The Netherlands,Netherlands,NL,NL,LI,LI
+country_name,2749669,2749669,Aldeboarn,Aldeboarn,The Netherlands,Netherlands,NL,NL,FR,FR
+country_name,2755947,2755947,Exloo,Exloo,The Netherlands,Netherlands,NL,NL,DR,DR
+country_name,2745645,2745645,Venhuizen,Venhuizen,The Netherlands,Netherlands,NL,NL,NH,NH
+country_name,2756657,2756657,Dorst,Dorst,The Netherlands,Netherlands,NL,NL,NB,NB
+country_name,2758815,2758815,Blijham,Blijham,The Netherlands,Netherlands,NL,NL,GR,GR
+country_name,2755266,2755266,Groet,Groet,The Netherlands,Netherlands,NL,NL,NH,NH
+country_name,2755045,2755045,Gulpen,Gulpen,The Netherlands,Netherlands,NL,NL,LI,LI
+country_name,2753545,2753545,Houtigehage,Houtigehage,The Netherlands,Netherlands,NL,NL,FR,FR
+country_name,2759757,2759757,Anjum,Anjum,The Netherlands,Netherlands,NL,NL,FR,FR
+country_name,2756636,2756636,Dreischor,Dreischor,The Netherlands,Netherlands,NL,NL,ZE,ZE
+country_name,2744471,2744471,Wijnandsrade,Wijnandsrade,The Netherlands,Netherlands,NL,NL,LI,LI
+country_name,2749392,2749392,Oosterwolde,Oosterwolde,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,2754662,2754662,Heerewaarden,Heerewaarden,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,2744303,2744303,Witmarsum,Witmarsum,The Netherlands,Netherlands,NL,NL,FR,FR
+country_name,2758770,2758770,Bocholtz,Bocholtz,The Netherlands,Netherlands,NL,NL,LI,LI
+country_name,2751048,2751048,Meerkerk,Meerkerk,The Netherlands,Netherlands,NL,NL,UT,UT
+country_name,2744731,2744731,Westerhoven,Westerhoven,The Netherlands,Netherlands,NL,NL,NB,NB
+country_name,2748209,2748209,Reutum,Reutum,The Netherlands,Netherlands,NL,NL,OV,OV
+country_name,2756202,2756202,Ell,Ell,The Netherlands,Netherlands,NL,NL,LI,LI
+country_name,2747037,2747037,Soerendonk,Soerendonk,The Netherlands,Netherlands,NL,NL,NB,NB
+country_name,2750102,2750102,Nijbroek,Nijbroek,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,2749708,2749708,Oentsjerk,Oentsjerk,The Netherlands,Netherlands,NL,NL,FR,FR
+country_name,2751599,2751599,Limbricht,Limbricht,The Netherlands,Netherlands,NL,NL,LI,LI
+country_name,2756028,2756028,Escharen,Escharen,The Netherlands,Netherlands,NL,NL,NB,NB
+country_name,2751645,2751645,Liempde,Liempde,The Netherlands,Netherlands,NL,NL,NB,NB
+country_name,2744741,2744741,Westerhaar-Vriezenveensewijk,Westerhaar-Vriezenveensewijk,The Netherlands,Netherlands,NL,NL,OV,OV
+country_name,7284469,7284469,Kapelle,Kapelle,The Netherlands,Netherlands,NL,NL,ZE,ZE
+country_name,2753334,2753334,Ilpendam,Ilpendam,The Netherlands,Netherlands,NL,NL,NH,NH
+country_name,2744875,2744875,Weiteveen,Weiteveen,The Netherlands,Netherlands,NL,NL,DR,DR
+country_name,2750736,2750736,Molenaarsgraaf,Molenaarsgraaf,The Netherlands,Netherlands,NL,NL,ZH,ZH
+country_name,2749344,2749344,Oostrum,Oostrum,The Netherlands,Netherlands,NL,NL,LI,LI
+country_name,2759155,2759155,Bergen,Bergen,The Netherlands,Netherlands,NL,NL,LI,LI
+country_name,2744431,2744431,Wildervank,Wildervank,The Netherlands,Netherlands,NL,NL,GR,GR
+country_name,2753302,2753302,Itens,Itens,The Netherlands,Netherlands,NL,NL,FR,FR
+country_name,2759796,2759796,Amstenrade,Amstenrade,The Netherlands,Netherlands,NL,NL,LI,LI
+country_name,2757318,2757318,Delwijnen,Delwijnen,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,2759684,2759684,Arcen,Arcen,The Netherlands,Netherlands,NL,NL,LI,LI
+country_name,2744199,2744199,Wolphaartsdijk,Wolphaartsdijk,The Netherlands,Netherlands,NL,NL,ZE,ZE
+country_name,2751523,2751523,Loenen,Loenen,The Netherlands,Netherlands,NL,NL,UT,UT
+country_name,2754320,2754320,Herwen,Herwen,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,2750134,2750134,Nieuw-Schoonebeek,Nieuw-Schoonebeek,The Netherlands,Netherlands,NL,NL,DR,DR
+country_name,2744269,2744269,Witteveen,Witteveen,The Netherlands,Netherlands,NL,NL,DR,DR
+country_name,2748168,2748168,Ried,Ried,The Netherlands,Netherlands,NL,NL,FR,FR
+country_name,2750272,2750272,Nieuwe Pekela,Nieuwe Pekela,The Netherlands,Netherlands,NL,NL,GR,GR
+country_name,2746304,2746304,Tijnje,Tijnje,The Netherlands,Netherlands,NL,NL,FR,FR
+country_name,2756405,2756405,Eelderwolde,Eelderwolde,The Netherlands,Netherlands,NL,NL,DR,DR
+country_name,2751665,2751665,Lexmond,Lexmond,The Netherlands,Netherlands,NL,NL,UT,UT
+country_name,2751422,2751422,Lottum,Lottum,The Netherlands,Netherlands,NL,NL,LI,LI
+country_name,2756096,2756096,Engelen,Engelen,The Netherlands,Netherlands,NL,NL,NB,NB
+country_name,2755428,2755428,Gorssel,Gorssel,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,2755485,2755485,Goedereede,Goedereede,The Netherlands,Netherlands,NL,NL,ZH,ZH
+country_name,2743637,2743637,Zuidwolde,Zuidwolde,The Netherlands,Netherlands,NL,NL,DR,DR
+country_name,2747758,2747758,Sappemeer,Sappemeer,The Netherlands,Netherlands,NL,NL,GR,GR
+country_name,2749967,2749967,Noordeloos,Noordeloos,The Netherlands,Netherlands,NL,NL,ZH,ZH
+country_name,2753358,2753358,IJsselmuiden,IJsselmuiden,The Netherlands,Netherlands,NL,NL,OV,OV
+country_name,2745940,2745940,Ulvenhout,Ulvenhout,The Netherlands,Netherlands,NL,NL,NB,NB
+country_name,2752409,2752409,Kortenhoef,Kortenhoef,The Netherlands,Netherlands,NL,NL,NH,NH
+country_name,2749500,2749500,Oosterbierum,Oosterbierum,The Netherlands,Netherlands,NL,NL,FR,FR
+country_name,2750033,2750033,Nisse,Nisse,The Netherlands,Netherlands,NL,NL,ZE,ZE
+country_name,2756044,2756044,Erichem,Erichem,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,2759881,2759881,Almere Buiten,Almere Buiten,The Netherlands,Netherlands,NL,NL,FL,FL
+country_name,2759141,2759141,Bergentheim,Bergentheim,The Netherlands,Netherlands,NL,NL,OV,OV
+country_name,2745338,2745338,Volkel,Volkel,The Netherlands,Netherlands,NL,NL,NB,NB
+country_name,2746283,2746283,Tirns,Tirns,The Netherlands,Netherlands,NL,NL,FR,FR
+country_name,2743905,2743905,Zijderveld,Zijderveld,The Netherlands,Netherlands,NL,NL,UT,UT
+country_name,2745944,2745944,Ulrum,Ulrum,The Netherlands,Netherlands,NL,NL,GR,GR
+country_name,2758167,2758167,Buchten,Buchten,The Netherlands,Netherlands,NL,NL,LI,LI
+country_name,2754897,2754897,Handel,Handel,The Netherlands,Netherlands,NL,NL,NB,NB
+country_name,2755603,2755603,Gemonde,Gemonde,The Netherlands,Netherlands,NL,NL,NB,NB
+country_name,2756321,2756321,Jistrum,Jistrum,The Netherlands,Netherlands,NL,NL,FR,FR
+country_name,2746537,2746537,Swolgen,Swolgen,The Netherlands,Netherlands,NL,NL,LI,LI
+country_name,2750641,2750641,Monnickendam,Monnickendam,The Netherlands,Netherlands,NL,NL,NH,NH
+country_name,2748535,2748535,Poederoijen,Poederoijen,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,2749875,2749875,Noordhorn,Noordhorn,The Netherlands,Netherlands,NL,NL,GR,GR
+country_name,2754764,2754764,Hattemerbroek,Hattemerbroek,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,2751357,2751357,Luttenberg,Luttenberg,The Netherlands,Netherlands,NL,NL,OV,OV
+country_name,2759945,2759945,Afferden,Afferden,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,2748306,2748306,Ravenswaaij,Ravenswaaij,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,2759486,2759486,Bakkeveen,Bakkeveen,The Netherlands,Netherlands,NL,NL,FR,FR
+country_name,2751203,2751203,Maren-Kessel,Maren-Kessel,The Netherlands,Netherlands,NL,NL,NB,NB
+country_name,2743478,2743478,Zwolle,Zwolle,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,2750933,2750933,Merselo,Merselo,The Netherlands,Netherlands,NL,NL,LI,LI
+country_name,2744116,2744116,Zaandijk,Zaandijk,The Netherlands,Netherlands,NL,NL,NH,NH
+country_name,2755995,2755995,Etten,Etten,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,2755363,2755363,Grathem,Grathem,The Netherlands,Netherlands,NL,NL,LI,LI
+country_name,2756168,2756168,Elsloo,Elsloo,The Netherlands,Netherlands,NL,NL,FR,FR
+country_name,2744388,2744388,Willemstad,Willemstad,The Netherlands,Netherlands,NL,NL,NB,NB
+country_name,2743858,2743858,Zoelmond,Zoelmond,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,2753681,2753681,Hoogmade,Hoogmade,The Netherlands,Netherlands,NL,NL,ZH,ZH
+country_name,2755006,2755006,Haarle,Haarle,The Netherlands,Netherlands,NL,NL,OV,OV
+country_name,2750442,2750442,Neerkant,Neerkant,The Netherlands,Netherlands,NL,NL,NB,NB
+country_name,2749759,2749759,Nunhem,Nunhem,The Netherlands,Netherlands,NL,NL,LI,LI
+country_name,2752814,2752814,Klaaswaal,Klaaswaal,The Netherlands,Netherlands,NL,NL,ZH,ZH
+country_name,2750126,2750126,Nieuwstadt,Nieuwstadt,The Netherlands,Netherlands,NL,NL,LI,LI
+country_name,2745461,2745461,Vlagtwedde,Vlagtwedde,The Netherlands,Netherlands,NL,NL,GR,GR
+country_name,2744339,2744339,Winssen,Winssen,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,2746596,2746596,Stroe,Stroe,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,2746986,2746986,Spaarndam,Spaarndam,The Netherlands,Netherlands,NL,NL,NH,NH
+country_name,2750837,2750837,Midlum,Midlum,The Netherlands,Netherlands,NL,NL,FR,FR
+country_name,2751732,2751732,Lemelerveld,Lemelerveld,The Netherlands,Netherlands,NL,NL,OV,OV
+country_name,2746407,2746407,Terschuur,Terschuur,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,2753316,2753316,Ingen,Ingen,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,2746937,2746937,Spijk,Spijk,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,2750233,2750233,Nieuwe-Tonge,Nieuwe-Tonge,The Netherlands,Netherlands,NL,NL,ZH,ZH
+country_name,2755868,2755868,Folsgare,Folsgare,The Netherlands,Netherlands,NL,NL,FR,FR
+country_name,2750269,2750269,Nieuwerbrug aan den Rijn,Nieuwerbrug aan den Rijn,The Netherlands,Netherlands,NL,NL,ZH,ZH
+country_name,2756878,2756878,Diepenheim,Diepenheim,The Netherlands,Netherlands,NL,NL,OV,OV
+country_name,2758138,2758138,Buitenkaag,Buitenkaag,The Netherlands,Netherlands,NL,NL,NH,NH
+country_name,2749289,2749289,Oploo,Oploo,The Netherlands,Netherlands,NL,NL,NB,NB
+country_name,2758434,2758434,Braamt,Braamt,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,2759572,2759572,Baambrugge,Baambrugge,The Netherlands,Netherlands,NL,NL,UT,UT
+country_name,2750117,2750117,Nieuw-Vossemeer,Nieuw-Vossemeer,The Netherlands,Netherlands,NL,NL,NB,NB
+country_name,2749834,2749834,Noordscheschut,Noordscheschut,The Netherlands,Netherlands,NL,NL,DR,DR
+country_name,2749734,2749734,Odoorn,Odoorn,The Netherlands,Netherlands,NL,NL,DR,DR
+country_name,2755376,2755376,Grafhorst,Grafhorst,The Netherlands,Netherlands,NL,NL,OV,OV
+country_name,2758266,2758266,Broekhuizen,Broekhuizen,The Netherlands,Netherlands,NL,NL,LI,LI
+country_name,2747377,2747377,s-Graveland,s-Graveland,The Netherlands,Netherlands,NL,NL,NH,NH
+country_name,2759421,2759421,Barger-Compascuum,Barger-Compascuum,The Netherlands,Netherlands,NL,NL,DR,DR
+country_name,2747786,2747786,Saasveld,Saasveld,The Netherlands,Netherlands,NL,NL,OV,OV
+country_name,2745739,2745739,Veere,Veere,The Netherlands,Netherlands,NL,NL,ZE,ZE
+country_name,2758258,2758258,Broek in Waterland,Broek in Waterland,The Netherlands,Netherlands,NL,NL,NH,NH
+country_name,2744122,2744122,Zaamslag,Zaamslag,The Netherlands,Netherlands,NL,NL,ZE,ZE
+country_name,2750979,2750979,Melderslo,Melderslo,The Netherlands,Netherlands,NL,NL,LI,LI
+country_name,2750250,2750250,Bad Nieuweschans,Bad Nieuweschans,The Netherlands,Netherlands,NL,NL,GR,GR
+country_name,2750059,2750059,Nijland,Nijland,The Netherlands,Netherlands,NL,NL,FR,FR
+country_name,2749748,2749748,Obbicht,Obbicht,The Netherlands,Netherlands,NL,NL,LI,LI
+country_name,2756248,2756248,Einighausen,Einighausen,The Netherlands,Netherlands,NL,NL,LI,LI
+country_name,2757879,2757879,Cromvoirt,Cromvoirt,The Netherlands,Netherlands,NL,NL,NB,NB
+country_name,2759475,2759475,Balinge,Balinge,The Netherlands,Netherlands,NL,NL,DR,DR
+country_name,2745799,2745799,Vasse,Vasse,The Netherlands,Netherlands,NL,NL,OV,OV
+country_name,2754450,2754450,Hellouw,Hellouw,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,2745673,2745673,Velsen,Velsen,The Netherlands,Netherlands,NL,NL,NH,NH
+country_name,2759186,2759186,Benschop,Benschop,The Netherlands,Netherlands,NL,NL,UT,UT
+country_name,2755317,2755317,Grijpskerk,Grijpskerk,The Netherlands,Netherlands,NL,NL,GR,GR
+country_name,2751122,2751122,Marsum,Marsum,The Netherlands,Netherlands,NL,NL,FR,FR
+country_name,2756550,2756550,Drouwen,Drouwen,The Netherlands,Netherlands,NL,NL,DR,DR
+country_name,2749577,2749577,Onstwedde,Onstwedde,The Netherlands,Netherlands,NL,NL,GR,GR
+country_name,2753856,2753856,Holtum,Holtum,The Netherlands,Netherlands,NL,NL,LI,LI
+country_name,2753067,2753067,Kapellebrug,Kapellebrug,The Netherlands,Netherlands,NL,NL,ZE,ZE
+country_name,2759520,2759520,Baflo,Baflo,The Netherlands,Netherlands,NL,NL,GR,GR
+country_name,2750278,2750278,Nieuwe-Niedorp,Nieuwe-Niedorp,The Netherlands,Netherlands,NL,NL,NH,NH
+country_name,2755401,2755401,Goudswaard,Goudswaard,The Netherlands,Netherlands,NL,NL,ZH,ZH
+country_name,2756731,2756731,Donderen,Donderen,The Netherlands,Netherlands,NL,NL,DR,DR
+country_name,2744978,2744978,Wateren,Wateren,The Netherlands,Netherlands,NL,NL,DR,DR
+country_name,2755040,2755040,Guttecoven,Guttecoven,The Netherlands,Netherlands,NL,NL,LI,LI
+country_name,2749528,2749528,Oosteind,Oosteind,The Netherlands,Netherlands,NL,NL,NB,NB
+country_name,2754752,2754752,Havelte,Havelte,The Netherlands,Netherlands,NL,NL,DR,DR
+country_name,2746871,2746871,Stad aan 't Haringvliet,Stad aan 't Haringvliet,The Netherlands,Netherlands,NL,NL,ZH,ZH
+country_name,2746564,2746564,Suwâld,Suwâld,The Netherlands,Netherlands,NL,NL,FR,FR
+country_name,2751961,2751961,Langedijke,Langedijke,The Netherlands,Netherlands,NL,NL,FR,FR
+country_name,2749155,2749155,Oude Bildtzijl,Oude Bildtzijl,The Netherlands,Netherlands,NL,NL,FR,FR
+country_name,2745936,2745936,Ureterp,Ureterp,The Netherlands,Netherlands,NL,NL,FR,FR
+country_name,2752807,2752807,Klarenbeek,Klarenbeek,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,2746075,2746075,Tweede Exloërmond,Tweede Exloërmond,The Netherlands,Netherlands,NL,NL,DR,DR
+country_name,2748329,2748329,Randwijk,Randwijk,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,2749321,2749321,Oostwoud,Oostwoud,The Netherlands,Netherlands,NL,NL,NH,NH
+country_name,2749726,2749726,Oeffelt,Oeffelt,The Netherlands,Netherlands,NL,NL,NB,NB
+country_name,2747229,2747229,Sint Odiliënberg,Sint Odiliënberg,The Netherlands,Netherlands,NL,NL,LI,LI
+country_name,2759858,2759858,Altforst,Altforst,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,2758073,2758073,Burum,Burum,The Netherlands,Netherlands,NL,NL,FR,FR
+country_name,2747221,2747221,Sint Philipsland,Sint Philipsland,The Netherlands,Netherlands,NL,NL,ZE,ZE
+country_name,2753034,2753034,Katlijk,Katlijk,The Netherlands,Netherlands,NL,NL,FR,FR
+country_name,2757574,2757574,De Heen,De Heen,The Netherlands,Netherlands,NL,NL,NB,NB
+country_name,2744495,2744495,Wijdewormer,Wijdewormer,The Netherlands,Netherlands,NL,NL,NH,NH
+country_name,2745787,2745787,Veelerveen,Veelerveen,The Netherlands,Netherlands,NL,NL,GR,GR
+country_name,2746845,2746845,Standdaarbuiten,Standdaarbuiten,The Netherlands,Netherlands,NL,NL,NB,NB
+country_name,2747551,2747551,Schin op Geul,Schin op Geul,The Netherlands,Netherlands,NL,NL,LI,LI
+country_name,2757211,2757211,Den Hout,Den Hout,The Netherlands,Netherlands,NL,NL,NB,NB
+country_name,2747835,2747835,Ruinen,Ruinen,The Netherlands,Netherlands,NL,NL,DR,DR
+country_name,2746311,2746311,Tytsjerk,Tytsjerk,The Netherlands,Netherlands,NL,NL,FR,FR
+country_name,2744287,2744287,Wittem,Wittem,The Netherlands,Netherlands,NL,NL,LI,LI
+country_name,2750903,2750903,Middelbeers,Middelbeers,The Netherlands,Netherlands,NL,NL,NB,NB
+country_name,2753868,2753868,Holthees,Holthees,The Netherlands,Netherlands,NL,NL,NB,NB
+country_name,2756922,2756922,De Woude,De Woude,The Netherlands,Netherlands,NL,NL,NH,NH
+country_name,2756912,2756912,De Zilk,De Zilk,The Netherlands,Netherlands,NL,NL,ZH,ZH
+country_name,2743816,2743816,Zoutkamp,Zoutkamp,The Netherlands,Netherlands,NL,NL,GR,GR
+country_name,2748740,2748740,Pannerden,Pannerden,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,2759765,2759765,Angeren,Angeren,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,2755905,2755905,Finsterwolde,Finsterwolde,The Netherlands,Netherlands,NL,NL,GR,GR
+country_name,2745449,2745449,Vledder,Vledder,The Netherlands,Netherlands,NL,NL,DR,DR
+country_name,2745926,2745926,Urmond,Urmond,The Netherlands,Netherlands,NL,NL,LI,LI
+country_name,2757478,2757478,Deil,Deil,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,2756030,2756030,Esch,Esch,The Netherlands,Netherlands,NL,NL,NB,NB
+country_name,2751730,2751730,Lemiers,Lemiers,The Netherlands,Netherlands,NL,NL,LI,LI
+country_name,2758777,2758777,Blokzijl,Blokzijl,The Netherlands,Netherlands,NL,NL,OV,OV
+country_name,2757417,2757417,De Koog,De Koog,The Netherlands,Netherlands,NL,NL,NH,NH
+country_name,2757475,2757475,Deinum,Deinum,The Netherlands,Netherlands,NL,NL,FR,FR
+country_name,2752009,2752009,Lage Zwaluwe,Lage Zwaluwe,The Netherlands,Netherlands,NL,NL,NB,NB
+country_name,2752510,2752510,Kommerzijl,Kommerzijl,The Netherlands,Netherlands,NL,NL,GR,GR
+country_name,2753307,2753307,Jirnsum,Jirnsum,The Netherlands,Netherlands,NL,NL,FR,FR
+country_name,2744780,2744780,Westendorp,Westendorp,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,2752444,2752444,Kootstertille,Kootstertille,The Netherlands,Netherlands,NL,NL,FR,FR
+country_name,2749010,2749010,Oudeschans,Oudeschans,The Netherlands,Netherlands,NL,NL,GR,GR
+country_name,2759275,2759275,Beetsterzwaag,Beetsterzwaag,The Netherlands,Netherlands,NL,NL,FR,FR
+country_name,2744603,2744603,Westwoud,Westwoud,The Netherlands,Netherlands,NL,NL,NH,NH
+country_name,2755729,2755729,Garyp,Garyp,The Netherlands,Netherlands,NL,NL,FR,FR
+country_name,2754085,2754085,Hijum,Hijum,The Netherlands,Netherlands,NL,NL,FR,FR
+country_name,2744498,2744498,Wijdenes,Wijdenes,The Netherlands,Netherlands,NL,NL,NH,NH
+country_name,2749496,2749496,Oosterblokker,Oosterblokker,The Netherlands,Netherlands,NL,NL,NH,NH
+country_name,2750091,2750091,Nijeholtwolde,Nijeholtwolde,The Netherlands,Netherlands,NL,NL,FR,FR
+country_name,2754981,2754981,Haarzuilens,Haarzuilens,The Netherlands,Netherlands,NL,NL,UT,UT
+country_name,2758453,2758453,Boijl,Boijl,The Netherlands,Netherlands,NL,NL,FR,FR
+country_name,2746031,2746031,t Zand,t Zand,The Netherlands,Netherlands,NL,NL,NH,NH
+country_name,2757346,2757346,Delfstrahuizen,Delfstrahuizen,The Netherlands,Netherlands,NL,NL,FR,FR
+country_name,2756178,2756178,Elsendorp,Elsendorp,The Netherlands,Netherlands,NL,NL,NB,NB
+country_name,2744373,2744373,Wilp,Wilp,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,2745717,2745717,Velden,Velden,The Netherlands,Netherlands,NL,NL,LI,LI
+country_name,2750390,2750390,Niekerk,Niekerk,The Netherlands,Netherlands,NL,NL,GR,GR
+country_name,2746483,2746483,Ten Post,Ten Post,The Netherlands,Netherlands,NL,NL,GR,GR
+country_name,2748415,2748415,Purmer,Purmer,The Netherlands,Netherlands,NL,NL,NH,NH
+country_name,2758027,2758027,Callantsoog,Callantsoog,The Netherlands,Netherlands,NL,NL,NH,NH
+country_name,2749663,2749663,Oldeholtpade,Oldeholtpade,The Netherlands,Netherlands,NL,NL,FR,FR
+country_name,2751842,2751842,Ledeacker,Ledeacker,The Netherlands,Netherlands,NL,NL,NB,NB
+country_name,2744423,2744423,Wilhelminadorp,Wilhelminadorp,The Netherlands,Netherlands,NL,NL,ZE,ZE
+country_name,2752141,2752141,Kwadendamme,Kwadendamme,The Netherlands,Netherlands,NL,NL,ZE,ZE
+country_name,2744219,2744219,Wolfheze,Wolfheze,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,2758722,2758722,Boesingheliede,Boesingheliede,The Netherlands,Netherlands,NL,NL,NH,NH
+country_name,11395748,11395748,Starnmeer,Starnmeer,The Netherlands,Netherlands,NL,NL,NH,NH
+country_name,2749660,2749660,Oldehove,Oldehove,The Netherlands,Netherlands,NL,NL,GR,GR
+country_name,2759234,2759234,Bemelen,Bemelen,The Netherlands,Netherlands,NL,NL,LI,LI
+country_name,2745558,2745558,Vierhouten,Vierhouten,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,2753534,2753534,Houwerzijl,Houwerzijl,The Netherlands,Netherlands,NL,NL,GR,GR
+country_name,2757204,2757204,Den Ilp,Den Ilp,The Netherlands,Netherlands,NL,NL,NH,NH
+country_name,2749412,2749412,Oosterstreek,Oosterstreek,The Netherlands,Netherlands,NL,NL,FR,FR
+country_name,2746424,2746424,Ternaard,Ternaard,The Netherlands,Netherlands,NL,NL,FR,FR
+country_name,2755302,2755302,Groenekan,Groenekan,The Netherlands,Netherlands,NL,NL,UT,UT
+country_name,2749434,2749434,Easterlittens,Easterlittens,The Netherlands,Netherlands,NL,NL,FR,FR
+country_name,2749989,2749989,Noordbroek,Noordbroek,The Netherlands,Netherlands,NL,NL,GR,GR
+country_name,2748956,2748956,Oud Gastel,Oud Gastel,The Netherlands,Netherlands,NL,NL,NB,NB
+country_name,2755976,2755976,Everdingen,Everdingen,The Netherlands,Netherlands,NL,NL,UT,UT
+country_name,2750255,2750255,Nieuwersluis,Nieuwersluis,The Netherlands,Netherlands,NL,NL,UT,UT
+country_name,2756019,2756019,Espel,Espel,The Netherlands,Netherlands,NL,NL,FL,FL
+country_name,2750974,2750974,Meliskerke,Meliskerke,The Netherlands,Netherlands,NL,NL,ZE,ZE
+country_name,2744998,2744998,Warten,Warten,The Netherlands,Netherlands,NL,NL,FR,FR
+country_name,2747256,2747256,Sint Joost,Sint Joost,The Netherlands,Netherlands,NL,NL,LI,LI
+country_name,2746974,2746974,Spankeren,Spankeren,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,2758746,2758746,Boerakker,Boerakker,The Netherlands,Netherlands,NL,NL,GR,GR
+country_name,2751810,2751810,Leerbroek,Leerbroek,The Netherlands,Netherlands,NL,NL,UT,UT
+country_name,2743528,2743528,Zwartewaal,Zwartewaal,The Netherlands,Netherlands,NL,NL,ZH,ZH
+country_name,2751554,2751554,Lioessens,Lioessens,The Netherlands,Netherlands,NL,NL,FR,FR
+country_name,2754550,2754550,Heikant,Heikant,The Netherlands,Netherlands,NL,NL,ZE,ZE
+country_name,2746048,2746048,Twisk,Twisk,The Netherlands,Netherlands,NL,NL,NH,NH
+country_name,2749560,2749560,Ooltgensplaat,Ooltgensplaat,The Netherlands,Netherlands,NL,NL,ZH,ZH
+country_name,2756763,2756763,Doezum,Doezum,The Netherlands,Netherlands,NL,NL,GR,GR
+country_name,2756451,2756451,Dwingeloo,Dwingeloo,The Netherlands,Netherlands,NL,NL,DR,DR
+country_name,2746085,2746085,Tull en 't Waal,Tull en 't Waal,The Netherlands,Netherlands,NL,NL,UT,UT
+country_name,2744459,2744459,Wijnjewoude,Wijnjewoude,The Netherlands,Netherlands,NL,NL,FR,FR
+country_name,2756003,2756003,Est,Est,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,2748249,2748249,Rekken,Rekken,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,2753006,2753006,Katwoude,Katwoude,The Netherlands,Netherlands,NL,NL,NH,NH
+country_name,2747191,2747191,Slagharen,Slagharen,The Netherlands,Netherlands,NL,NL,OV,OV
+country_name,2755557,2755557,Geulle,Geulle,The Netherlands,Netherlands,NL,NL,LI,LI
+country_name,2750257,2750257,Nieuweroord,Nieuweroord,The Netherlands,Netherlands,NL,NL,DR,DR
+country_name,2745753,2745753,Veenoord,Veenoord,The Netherlands,Netherlands,NL,NL,DR,DR
+country_name,2759526,2759526,Babyloniënbroek,Babyloniënbroek,The Netherlands,Netherlands,NL,NL,NB,NB
+country_name,2750379,2750379,Nieuwaal,Nieuwaal,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,2751634,2751634,Lierop,Lierop,The Netherlands,Netherlands,NL,NL,NB,NB
+country_name,2744846,2744846,Welsum,Welsum,The Netherlands,Netherlands,NL,NL,OV,OV
+country_name,2744191,2744191,Wommels,Wommels,The Netherlands,Netherlands,NL,NL,FR,FR
+country_name,2754375,2754375,Hensbroek,Hensbroek,The Netherlands,Netherlands,NL,NL,NH,NH
+country_name,2744354,2744354,Winkel,Winkel,The Netherlands,Netherlands,NL,NL,NH,NH
+country_name,2754797,2754797,Haskerdijken,Haskerdijken,The Netherlands,Netherlands,NL,NL,FR,FR
+country_name,2745728,2745728,Veessen,Veessen,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,2753741,2753741,Hoogeloon,Hoogeloon,The Netherlands,Netherlands,NL,NL,NB,NB
+country_name,2756562,2756562,Drongelen,Drongelen,The Netherlands,Netherlands,NL,NL,NB,NB
+country_name,2753846,2753846,Holwierde,Holwierde,The Netherlands,Netherlands,NL,NL,GR,GR
+country_name,2749475,2749475,Oosterend,Oosterend,The Netherlands,Netherlands,NL,NL,NH,NH
+country_name,2756572,2756572,Driewegen,Driewegen,The Netherlands,Netherlands,NL,NL,ZE,ZE
+country_name,2755405,2755405,Goudriaan,Goudriaan,The Netherlands,Netherlands,NL,NL,ZH,ZH
+country_name,2744864,2744864,Well,Well,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,2750553,2750553,Munnekezijl,Munnekezijl,The Netherlands,Netherlands,NL,NL,FR,FR
+country_name,2744977,2744977,Watergang,Watergang,The Netherlands,Netherlands,NL,NL,NH,NH
+country_name,2759950,2759950,Aerdt,Aerdt,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,2750061,2750061,Nijkerkerveen,Nijkerkerveen,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,2744944,2744944,Wedde,Wedde,The Netherlands,Netherlands,NL,NL,GR,GR
+country_name,2747303,2747303,Sint Agatha,Sint Agatha,The Netherlands,Netherlands,NL,NL,NB,NB
+country_name,2755732,2755732,Garderen,Garderen,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,2747897,2747897,Rotsterhaule,Rotsterhaule,The Netherlands,Netherlands,NL,NL,FR,FR
+country_name,2752531,2752531,Kolhorn,Kolhorn,The Netherlands,Netherlands,NL,NL,NH,NH
+country_name,2747352,2747352,s-Heer Hendrikskinderen,s-Heer Hendrikskinderen,The Netherlands,Netherlands,NL,NL,ZE,ZE
+country_name,2756302,2756302,Egmond aan den Hoef,Egmond aan den Hoef,The Netherlands,Netherlands,NL,NL,NH,NH
+country_name,2754474,2754474,Helenaveen,Helenaveen,The Netherlands,Netherlands,NL,NL,NB,NB
+country_name,2756056,2756056,Epen,Epen,The Netherlands,Netherlands,NL,NL,LI,LI
+country_name,2751077,2751077,Mechelen,Mechelen,The Netherlands,Netherlands,NL,NL,LI,LI
+country_name,2755907,2755907,Finkum,Finkum,The Netherlands,Netherlands,NL,NL,FR,FR
+country_name,2752915,2752915,Kerkwijk,Kerkwijk,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,2747244,2747244,Sint Maarten,Sint Maarten,The Netherlands,Netherlands,NL,NL,NH,NH
+country_name,2747136,2747136,Slootdorp,Slootdorp,The Netherlands,Netherlands,NL,NL,NH,NH
+country_name,2750356,2750356,Nieuwdorp,Nieuwdorp,The Netherlands,Netherlands,NL,NL,ZE,ZE
+country_name,2754878,2754878,Hantum,Hantum,The Netherlands,Netherlands,NL,NL,FR,FR
+country_name,2749325,2749325,Oostwold,Oostwold,The Netherlands,Netherlands,NL,NL,GR,GR
+country_name,2749689,2749689,Oijen,Oijen,The Netherlands,Netherlands,NL,NL,NB,NB
+country_name,2756434,2756434,Eckelrade,Eckelrade,The Netherlands,Netherlands,NL,NL,LI,LI
+country_name,2759562,2759562,Baarland,Baarland,The Netherlands,Netherlands,NL,NL,ZE,ZE
+country_name,2755725,2755725,Garrelsweer,Garrelsweer,The Netherlands,Netherlands,NL,NL,GR,GR
+country_name,2747994,2747994,Rogat,Rogat,The Netherlands,Netherlands,NL,NL,DR,DR
+country_name,2748608,2748608,Piershil,Piershil,The Netherlands,Netherlands,NL,NL,ZH,ZH
+country_name,2758309,2758309,Britsum,Britsum,The Netherlands,Netherlands,NL,NL,FR,FR
+country_name,2743833,2743833,Zonnemaire,Zonnemaire,The Netherlands,Netherlands,NL,NL,ZE,ZE
+country_name,2746320,2746320,Tienhoven,Tienhoven,The Netherlands,Netherlands,NL,NL,UT,UT
+country_name,2756190,2756190,Ellewoutsdijk,Ellewoutsdijk,The Netherlands,Netherlands,NL,NL,ZE,ZE
+country_name,2745118,2745118,Waarde,Waarde,The Netherlands,Netherlands,NL,NL,ZE,ZE
+country_name,2747162,2747162,Slijk-Ewijk,Slijk-Ewijk,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,2744764,2744764,Westerbroek,Westerbroek,The Netherlands,Netherlands,NL,NL,GR,GR
+country_name,2756569,2756569,Drimmelen,Drimmelen,The Netherlands,Netherlands,NL,NL,NB,NB
+country_name,2750254,2750254,Nieuwer Ter Aa,Nieuwer Ter Aa,The Netherlands,Netherlands,NL,NL,UT,UT
+country_name,2758587,2758587,Borssele,Borssele,The Netherlands,Netherlands,NL,NL,ZE,ZE
+country_name,2753381,2753381,IJhorst,IJhorst,The Netherlands,Netherlands,NL,NL,OV,OV
+country_name,2756962,2756962,De Waal,De Waal,The Netherlands,Netherlands,NL,NL,NH,NH
+country_name,2747082,2747082,Klazienaveen-Noord,Klazienaveen-Noord,The Netherlands,Netherlands,NL,NL,DR,DR
+country_name,2744771,2744771,Westerbeek,Westerbeek,The Netherlands,Netherlands,NL,NL,NB,NB
+country_name,2751369,2751369,Lutjewinkel,Lutjewinkel,The Netherlands,Netherlands,NL,NL,NH,NH
+country_name,2749883,2749883,Noordhoek,Noordhoek,The Netherlands,Netherlands,NL,NL,NB,NB
+country_name,2756066,2756066,Enspijk,Enspijk,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,2753736,2753736,Hooge Mierde,Hooge Mierde,The Netherlands,Netherlands,NL,NL,NB,NB
+country_name,2747343,2747343,Siddeburen,Siddeburen,The Netherlands,Netherlands,NL,NL,GR,GR
+country_name,2758089,2758089,Burgerbrug,Burgerbrug,The Netherlands,Netherlands,NL,NL,NH,NH
+country_name,2757867,2757867,Daarle,Daarle,The Netherlands,Netherlands,NL,NL,OV,OV
+country_name,2751669,2751669,Leveroy,Leveroy,The Netherlands,Netherlands,NL,NL,LI,LI
+country_name,2747347,2747347,Sibculo,Sibculo,The Netherlands,Netherlands,NL,NL,OV,OV
+country_name,2751734,2751734,Lemele,Lemele,The Netherlands,Netherlands,NL,NL,OV,OV
+country_name,2750666,2750666,Molenschot,Molenschot,The Netherlands,Netherlands,NL,NL,NB,NB
+country_name,2755106,2755106,Grootschermer,Grootschermer,The Netherlands,Netherlands,NL,NL,NH,NH
+country_name,2759397,2759397,Barsingerhorn,Barsingerhorn,The Netherlands,Netherlands,NL,NL,NH,NH
+country_name,2759610,2759610,Austerlitz,Austerlitz,The Netherlands,Netherlands,NL,NL,UT,UT
+country_name,2751551,2751551,Lippenhuizen,Lippenhuizen,The Netherlands,Netherlands,NL,NL,FR,FR
+country_name,2748286,2748286,Reek,Reek,The Netherlands,Netherlands,NL,NL,NB,NB
+country_name,2750407,2750407,Netersel,Netersel,The Netherlands,Netherlands,NL,NL,NB,NB
+country_name,2744467,2744467,Wijngaarden,Wijngaarden,The Netherlands,Netherlands,NL,NL,ZH,ZH
+country_name,2757539,2757539,De Hoef,De Hoef,The Netherlands,Netherlands,NL,NL,UT,UT
+country_name,2747979,2747979,Rolde,Rolde,The Netherlands,Netherlands,NL,NL,DR,DR
+country_name,2747210,2747210,Sint Willebrord,Sint Willebrord,The Netherlands,Netherlands,NL,NL,NB,NB
+country_name,2756116,2756116,Empel,Empel,The Netherlands,Netherlands,NL,NL,NB,NB
+country_name,2755495,2755495,Glimmen,Glimmen,The Netherlands,Netherlands,NL,NL,GR,GR
+country_name,2758336,2758336,Breugel,Breugel,The Netherlands,Netherlands,NL,NL,NB,NB
+country_name,2754703,2754703,Heelsum,Heelsum,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,2745719,2745719,Velddriel,Velddriel,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,2758540,2758540,Bosschenhoofd,Bosschenhoofd,The Netherlands,Netherlands,NL,NL,NB,NB
+country_name,2745550,2745550,Vierlingsbeek,Vierlingsbeek,The Netherlands,Netherlands,NL,NL,NB,NB
+country_name,2759286,2759286,Beesel,Beesel,The Netherlands,Netherlands,NL,NL,LI,LI
+country_name,2746000,2746000,Uffelte,Uffelte,The Netherlands,Netherlands,NL,NL,DR,DR
+country_name,2757433,2757433,De Klomp,De Klomp,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,2759480,2759480,Balgoy,Balgoy,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,2750835,2750835,Midsland,Midsland,The Netherlands,Netherlands,NL,NL,FR,FR
+country_name,2757213,2757213,Den Hoorn,Den Hoorn,The Netherlands,Netherlands,NL,NL,NH,NH
+country_name,2753789,2753789,Hoogblokland,Hoogblokland,The Netherlands,Netherlands,NL,NL,ZH,ZH
+country_name,2744833,2744833,Wenum,Wenum,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,2749569,2749569,Ooij,Ooij,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,2744228,2744228,Woldendorp,Woldendorp,The Netherlands,Netherlands,NL,NL,GR,GR
+country_name,2758260,2758260,Broekhuizenvorst,Broekhuizenvorst,The Netherlands,Netherlands,NL,NL,LI,LI
+country_name,2745033,2745033,Wapserveen,Wapserveen,The Netherlands,Netherlands,NL,NL,DR,DR
+country_name,2747654,2747654,Scheerwolde,Scheerwolde,The Netherlands,Netherlands,NL,NL,OV,OV
+country_name,2759547,2759547,Baarlo,Baarlo,The Netherlands,Netherlands,NL,NL,OV,OV
+country_name,2746470,2746470,Terband,Terband,The Netherlands,Netherlands,NL,NL,FR,FR
+country_name,2754986,2754986,Haarsteeg,Haarsteeg,The Netherlands,Netherlands,NL,NL,NB,NB
+country_name,2748403,2748403,Puth,Puth,The Netherlands,Netherlands,NL,NL,LI,LI
+country_name,2744806,2744806,Westbroek,Westbroek,The Netherlands,Netherlands,NL,NL,UT,UT
+country_name,2752441,2752441,Kootwijkerbroek,Kootwijkerbroek,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,2750920,2750920,Meterik,Meterik,The Netherlands,Netherlands,NL,NL,LI,LI
+country_name,2749658,2749658,Oldekerk,Oldekerk,The Netherlands,Netherlands,NL,NL,GR,GR
+country_name,2759961,2759961,Aduard,Aduard,The Netherlands,Netherlands,NL,NL,GR,GR
+country_name,2746491,2746491,Ten Boer,Ten Boer,The Netherlands,Netherlands,NL,NL,GR,GR
+country_name,2747747,2747747,Sauwerd,Sauwerd,The Netherlands,Netherlands,NL,NL,GR,GR
+country_name,2743698,2743698,,,The Netherlands,Netherlands,NL,NL,ZH,ZH
+country_name,2751541,2751541,Lithoijen,Lithoijen,The Netherlands,Netherlands,NL,NL,NB,NB
+country_name,2749992,2749992,Noardburgum,Noardburgum,The Netherlands,Netherlands,NL,NL,FR,FR
+country_name,2750965,2750965,Menaam,Menaam,The Netherlands,Netherlands,NL,NL,FR,FR
+country_name,2758820,2758820,Blije,Blije,The Netherlands,Netherlands,NL,NL,FR,FR
+country_name,2751637,2751637,Lierderholthuis,Lierderholthuis,The Netherlands,Netherlands,NL,NL,OV,OV
+country_name,2747900,2747900,Rothem,Rothem,The Netherlands,Netherlands,NL,NL,LI,LI
+country_name,2756308,2756308,Egchel,Egchel,The Netherlands,Netherlands,NL,NL,LI,LI
+country_name,2754116,2754116,Heveadorp,Heveadorp,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,2753852,2753852,Holwerd,Holwerd,The Netherlands,Netherlands,NL,NL,FR,FR
+country_name,2749653,2749653,Oldemarkt,Oldemarkt,The Netherlands,Netherlands,NL,NL,OV,OV
+country_name,2750832,2750832,Midwolda,Midwolda,The Netherlands,Netherlands,NL,NL,GR,GR
+country_name,2759729,2759729,Annen,Annen,The Netherlands,Netherlands,NL,NL,DR,DR
+country_name,8592090,8592090,Berg en Terblijt,Berg en Terblijt,The Netherlands,Netherlands,NL,NL,LI,LI
+country_name,2752492,2752492,Koningsbosch,Koningsbosch,The Netherlands,Netherlands,NL,NL,LI,LI
+country_name,2754808,2754808,Harreveld,Harreveld,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,2744608,2744608,West-Terschelling,West-Terschelling,The Netherlands,Netherlands,NL,NL,FR,FR
+country_name,2752217,2752217,Kropswolde,Kropswolde,The Netherlands,Netherlands,NL,NL,GR,GR
+country_name,2757530,2757530,De Hoeve,De Hoeve,The Netherlands,Netherlands,NL,NL,FR,FR
+country_name,2749109,2749109,Oudehorne,Oudehorne,The Netherlands,Netherlands,NL,NL,FR,FR
+country_name,2749751,2749751,Nutter,Nutter,The Netherlands,Netherlands,NL,NL,OV,OV
+country_name,2757866,2757866,Daarlerveen,Daarlerveen,The Netherlands,Netherlands,NL,NL,OV,OV
+country_name,2748838,2748838,,,The Netherlands,Netherlands,NL,NL,OV,OV
+country_name,2758156,2758156,Buinen,Buinen,The Netherlands,Netherlands,NL,NL,DR,DR
+country_name,2755492,2755492,De Glind,De Glind,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,2745360,2745360,Vogelenzang,Vogelenzang,The Netherlands,Netherlands,NL,NL,NH,NH
+country_name,2745440,2745440,Vledderveen,Vledderveen,The Netherlands,Netherlands,NL,NL,DR,DR
+country_name,2746797,2746797,Steendam,Steendam,The Netherlands,Netherlands,NL,NL,GR,GR
+country_name,2752627,2752627,Kloosterburen,Kloosterburen,The Netherlands,Netherlands,NL,NL,GR,GR
+country_name,6929953,6929953,Kelpen-Oler,Kelpen-Oler,The Netherlands,Netherlands,NL,NL,LI,LI
+country_name,2751376,2751376,Lutjegast,Lutjegast,The Netherlands,Netherlands,NL,NL,GR,GR
+country_name,2755645,2755645,Geffen,Geffen,The Netherlands,Netherlands,NL,NL,NB,NB
+country_name,2755375,2755375,Graft,Graft,The Netherlands,Netherlands,NL,NL,NH,NH
+country_name,2755712,2755712,Gasselternijveen,Gasselternijveen,The Netherlands,Netherlands,NL,NL,DR,DR
+country_name,2756299,2756299,Egmond-Binnen,Egmond-Binnen,The Netherlands,Netherlands,NL,NL,NH,NH
+country_name,2747668,2747668,Scharwoude,Scharwoude,The Netherlands,Netherlands,NL,NL,NH,NH
+country_name,2751076,2751076,Meddo,Meddo,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,2751221,2751221,Manderveen,Manderveen,The Netherlands,Netherlands,NL,NL,OV,OV
+country_name,2753634,2753634,Hoornaar,Hoornaar,The Netherlands,Netherlands,NL,NL,ZH,ZH
+country_name,2757710,2757710,De Cocksdorp,De Cocksdorp,The Netherlands,Netherlands,NL,NL,NH,NH
+country_name,2748643,2748643,Pesse,Pesse,The Netherlands,Netherlands,NL,NL,DR,DR
+country_name,2745949,2745949,Ulicoten,Ulicoten,The Netherlands,Netherlands,NL,NL,NB,NB
+country_name,2744679,2744679,Westervelde,Westervelde,The Netherlands,Netherlands,NL,NL,DR,DR
+country_name,2759877,2759877,Alphen,Alphen,The Netherlands,Netherlands,NL,NL,NB,NB
+country_name,2746614,2746614,Strijbeek,Strijbeek,The Netherlands,Netherlands,NL,NL,NB,NB
+country_name,2752934,2752934,Kerkenveld,Kerkenveld,The Netherlands,Netherlands,NL,NL,DR,DR
+country_name,2756081,2756081,Engwierum,Engwierum,The Netherlands,Netherlands,NL,NL,FR,FR
+country_name,2756422,2756422,Ee,Ee,The Netherlands,Netherlands,NL,NL,FR,FR
+country_name,2747231,2747231,Sint Nicolaasga,Sint Nicolaasga,The Netherlands,Netherlands,NL,NL,FR,FR
+country_name,2758402,2758402,Brantgum,Brantgum,The Netherlands,Netherlands,NL,NL,FR,FR
+country_name,2751291,2751291,Maashees,Maashees,The Netherlands,Netherlands,NL,NL,NB,NB
+country_name,2749513,2749513,Oostelbeers,Oostelbeers,The Netherlands,Netherlands,NL,NL,NB,NB
+country_name,2758405,2758405,Brandwijk,Brandwijk,The Netherlands,Netherlands,NL,NL,ZH,ZH
+country_name,2757951,2757951,Clinge,Clinge,The Netherlands,Netherlands,NL,NL,ZE,ZE
+country_name,2750035,2750035,Nispen,Nispen,The Netherlands,Netherlands,NL,NL,NB,NB
+country_name,2752950,2752950,Marken,Marken,The Netherlands,Netherlands,NL,NL,NH,NH
+country_name,2750443,2750443,Neeritter,Neeritter,The Netherlands,Netherlands,NL,NL,LI,LI
+country_name,2752660,2752660,Klein-Zundert,Klein-Zundert,The Netherlands,Netherlands,NL,NL,NB,NB
+country_name,2747884,2747884,Rottum,Rottum,The Netherlands,Netherlands,NL,NL,FR,FR
+country_name,2750170,2750170,Nieuwlande,Nieuwlande,The Netherlands,Netherlands,NL,NL,DR,DR
+country_name,2755662,2755662,Geesbrug,Geesbrug,The Netherlands,Netherlands,NL,NL,DR,DR
+country_name,2753887,2753887,Hollum,Hollum,The Netherlands,Netherlands,NL,NL,FR,FR
+country_name,2755801,2755801,Froombosch,Froombosch,The Netherlands,Netherlands,NL,NL,GR,GR
+country_name,2747773,2747773,Sambeek,Sambeek,The Netherlands,Netherlands,NL,NL,NB,NB
+country_name,2753982,2753982,Hoeven,Hoeven,The Netherlands,Netherlands,NL,NL,NB,NB
+country_name,2752986,2752986,Keijenborg,Keijenborg,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,2745048,2745048,Wanneperveen,Wanneperveen,The Netherlands,Netherlands,NL,NL,OV,OV
+country_name,2758809,2758809,Blitterswijck,Blitterswijck,The Netherlands,Netherlands,NL,NL,LI,LI
+country_name,2759831,2759831,America,America,The Netherlands,Netherlands,NL,NL,LI,LI
+country_name,2758161,2758161,Buggenum,Buggenum,The Netherlands,Netherlands,NL,NL,LI,LI
+country_name,2756320,2756320,Eesveen,Eesveen,The Netherlands,Netherlands,NL,NL,OV,OV
+country_name,2744418,2744418,Wilhelminaoord,Wilhelminaoord,The Netherlands,Netherlands,NL,NL,DR,DR
+country_name,2744995,2744995,Waskemeer,Waskemeer,The Netherlands,Netherlands,NL,NL,FR,FR
+country_name,2750343,2750343,Nieuwebrug,Nieuwebrug,The Netherlands,Netherlands,NL,NL,FR,FR
+country_name,2750418,2750418,Nes,Nes,The Netherlands,Netherlands,NL,NL,FR,FR
+country_name,2749284,2749284,Oppenhuizen,Oppenhuizen,The Netherlands,Netherlands,NL,NL,FR,FR
+country_name,2749251,2749251,Oranjewoud,Oranjewoud,The Netherlands,Netherlands,NL,NL,FR,FR
+country_name,2757831,2757831,Darp,Darp,The Netherlands,Netherlands,NL,NL,DR,DR
+country_name,2745846,2745846,Valthe,Valthe,The Netherlands,Netherlands,NL,NL,DR,DR
+country_name,2758514,2758514,Bourtange,Bourtange,The Netherlands,Netherlands,NL,NL,GR,GR
+country_name,2744472,2744472,Wijnaldum,Wijnaldum,The Netherlands,Netherlands,NL,NL,FR,FR
+country_name,2751212,2751212,Mantgum,Mantgum,The Netherlands,Netherlands,NL,NL,FR,FR
+country_name,2752320,2752320,Kraggenburg,Kraggenburg,The Netherlands,Netherlands,NL,NL,FL,FL
+country_name,2758207,2758207,Bruchem,Bruchem,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,2752830,2752830,Kimswerd,Kimswerd,The Netherlands,Netherlands,NL,NL,FR,FR
+country_name,2756703,2756703,Donkerbroek,Donkerbroek,The Netherlands,Netherlands,NL,NL,FR,FR
+country_name,2744592,2744592,Weteringbrug,Weteringbrug,The Netherlands,Netherlands,NL,NL,NH,NH
+country_name,2755026,2755026,Haalderen,Haalderen,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,2751172,2751172,Mariënheem,Mariënheem,The Netherlands,Netherlands,NL,NL,OV,OV
+country_name,2756853,2756853,Dieverbrug,Dieverbrug,The Netherlands,Netherlands,NL,NL,DR,DR
+country_name,2751002,2751002,Megen,Megen,The Netherlands,Netherlands,NL,NL,NB,NB
+country_name,2750913,2750913,Mheer,Mheer,The Netherlands,Netherlands,NL,NL,LI,LI
+country_name,2747257,2747257,Sintjohannesga,Sintjohannesga,The Netherlands,Netherlands,NL,NL,FR,FR
+country_name,2752952,2752952,Kerk-Avezaath,Kerk-Avezaath,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,2744707,2744707,Westernieland,Westernieland,The Netherlands,Netherlands,NL,NL,GR,GR
+country_name,2756616,2756616,Drieborg,Drieborg,The Netherlands,Netherlands,NL,NL,GR,GR
+country_name,2755717,2755717,Gasselte,Gasselte,The Netherlands,Netherlands,NL,NL,DR,DR
+country_name,2744477,2744477,Wijlre,Wijlre,The Netherlands,Netherlands,NL,NL,LI,LI
+country_name,2755711,2755711,Gasselternijveenschemond,Gasselternijveenschemond,The Netherlands,Netherlands,NL,NL,DR,DR
+country_name,2753404,2753404,Hurwenen,Hurwenen,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,2751517,2751517,Loenersloot,Loenersloot,The Netherlands,Netherlands,NL,NL,UT,UT
+country_name,2760053,2760053,Achlum,Achlum,The Netherlands,Netherlands,NL,NL,FR,FR
+country_name,2744484,2744484,Wijk aan Zee,Wijk aan Zee,The Netherlands,Netherlands,NL,NL,NH,NH
+country_name,2744824,2744824,Wernhout,Wernhout,The Netherlands,Netherlands,NL,NL,NB,NB
+country_name,2759281,2759281,Bitgummole,Bitgummole,The Netherlands,Netherlands,NL,NL,FR,FR
+country_name,2759298,2759298,Beerta,Beerta,The Netherlands,Netherlands,NL,NL,GR,GR
+country_name,2751068,2751068,Meeden,Meeden,The Netherlands,Netherlands,NL,NL,GR,GR
+country_name,2753078,2753078,Kantens,Kantens,The Netherlands,Netherlands,NL,NL,GR,GR
+country_name,2749601,2749601,Onderdendam,Onderdendam,The Netherlands,Netherlands,NL,NL,GR,GR
+country_name,2758316,2758316,Briltil,Briltil,The Netherlands,Netherlands,NL,NL,GR,GR
+country_name,2756317,2756317,Eext,Eext,The Netherlands,Netherlands,NL,NL,DR,DR
+country_name,2744130,2744130,Yde,Yde,The Netherlands,Netherlands,NL,NL,DR,DR
+country_name,2757773,2757773,De Blesse,De Blesse,The Netherlands,Netherlands,NL,NL,FR,FR
+country_name,2749120,2749120,Oudehaske,Oudehaske,The Netherlands,Netherlands,NL,NL,FR,FR
+country_name,2755820,2755820,Friens,Friens,The Netherlands,Netherlands,NL,NL,FR,FR
+country_name,2748305,2748305,Ravenswoud,Ravenswoud,The Netherlands,Netherlands,NL,NL,FR,FR
+country_name,2749662,2749662,Oldeholtwolde,Oldeholtwolde,The Netherlands,Netherlands,NL,NL,FR,FR
+country_name,2758500,2758500,Boven-Hardinxveld,Boven-Hardinxveld,The Netherlands,Netherlands,NL,NL,ZH,ZH
+country_name,2744573,2744573,Wichmond,Wichmond,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,2756314,2756314,Eexterveen,Eexterveen,The Netherlands,Netherlands,NL,NL,DR,DR
+country_name,2751493,2751493,Lomm,Lomm,The Netherlands,Netherlands,NL,NL,LI,LI
+country_name,2753416,2753416,Hunsel,Hunsel,The Netherlands,Netherlands,NL,NL,LI,LI
+country_name,2758651,2758651,Bontebok,Bontebok,The Netherlands,Netherlands,NL,NL,FR,FR
+country_name,2754847,2754847,Harderwijk,Harderwijk,The Netherlands,Netherlands,NL,NL,NH,NH
+country_name,2750480,2750480,Nederhemert,Nederhemert,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,2756933,2756933,De Wilgen,De Wilgen,The Netherlands,Netherlands,NL,NL,FR,FR
+country_name,2746752,2746752,Steggerda,Steggerda,The Netherlands,Netherlands,NL,NL,FR,FR
+country_name,2758250,2758250,Broekland,Broekland,The Netherlands,Netherlands,NL,NL,OV,OV
+country_name,2747250,2747250,Sint Kruis,Sint Kruis,The Netherlands,Netherlands,NL,NL,ZE,ZE
+country_name,2754385,2754385,Hengstdijk,Hengstdijk,The Netherlands,Netherlands,NL,NL,ZE,ZE
+country_name,2750177,2750177,Nieuw- en Sint Joosland,Nieuw- en Sint Joosland,The Netherlands,Netherlands,NL,NL,ZE,ZE
+country_name,2757451,2757451,De Kiel,De Kiel,The Netherlands,Netherlands,NL,NL,DR,DR
+country_name,2757292,2757292,Demen,Demen,The Netherlands,Netherlands,NL,NL,NB,NB
+country_name,2756440,2756440,Echten,Echten,The Netherlands,Netherlands,NL,NL,DR,DR
+country_name,2747290,2747290,Sint Anthonis,Sint Anthonis,The Netherlands,Netherlands,NL,NL,NB,NB
+country_name,2759070,2759070,Berkhout,Berkhout,The Netherlands,Netherlands,NL,NL,NH,NH
+country_name,2748631,2748631,Petten,Petten,The Netherlands,Netherlands,NL,NL,NH,NH
+country_name,2751314,2751314,Maarssenbroek,Maarssenbroek,The Netherlands,Netherlands,NL,NL,UT,UT
+country_name,2745111,2745111,Waardhuizen,Waardhuizen,The Netherlands,Netherlands,NL,NL,NB,NB
+country_name,2753353,2753353,Ysselsteyn,Ysselsteyn,The Netherlands,Netherlands,NL,NL,LI,LI
+country_name,2745957,2745957,Uitwijk,Uitwijk,The Netherlands,Netherlands,NL,NL,NB,NB
+country_name,2747310,2747310,Sinderen,Sinderen,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,2746981,2746981,Spakenburg,Spakenburg,The Netherlands,Netherlands,NL,NL,UT,UT
+country_name,2759611,2759611,Augustinusga,Augustinusga,The Netherlands,Netherlands,NL,NL,FR,FR
+country_name,2747869,2747869,Rozenburg,Rozenburg,The Netherlands,Netherlands,NL,NL,NH,NH
+country_name,2758595,2758595,Bornerbroek,Bornerbroek,The Netherlands,Netherlands,NL,NL,OV,OV
+country_name,2755726,2755726,Garnwerd,Garnwerd,The Netherlands,Netherlands,NL,NL,GR,GR
+country_name,2752828,2752828,Kinderdijk,Kinderdijk,The Netherlands,Netherlands,NL,NL,ZH,ZH
+country_name,2755518,2755518,Giethmen,Giethmen,The Netherlands,Netherlands,NL,NL,OV,OV
+country_name,2759247,2759247,Bellingwolde,Bellingwolde,The Netherlands,Netherlands,NL,NL,GR,GR
+country_name,2749879,2749879,,,The Netherlands,Netherlands,NL,NL,NH,NH
+country_name,2745213,2745213,Vragender,Vragender,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,2754842,2754842,Haren,Haren,The Netherlands,Netherlands,NL,NL,NB,NB
+country_name,2753171,2753171,Kaag,Kaag,The Netherlands,Netherlands,NL,NL,ZH,ZH
+country_name,2749537,2749537,Oostdijk,Oostdijk,The Netherlands,Netherlands,NL,NL,ZE,ZE
+country_name,2748146,2748146,Rietmolen,Rietmolen,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,2749195,2749195,Ottoland,Ottoland,The Netherlands,Netherlands,NL,NL,ZH,ZH
+country_name,2745091,2745091,Wagenberg,Wagenberg,The Netherlands,Netherlands,NL,NL,NB,NB
+country_name,2751750,2751750,Leimuiden,Leimuiden,The Netherlands,Netherlands,NL,NL,ZH,ZH
+country_name,6621557,6621557,Middelburg,Middelburg,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,2748099,2748099,Ryptsjerk,Ryptsjerk,The Netherlands,Netherlands,NL,NL,FR,FR
+country_name,2745808,2745808,Varik,Varik,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,2748049,2748049,De Rips,De Rips,The Netherlands,Netherlands,NL,NL,NB,NB
+country_name,2756549,2756549,Drouwenermond,Drouwenermond,The Netherlands,Netherlands,NL,NL,DR,DR
+country_name,2758393,2758393,Bredevoort,Bredevoort,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,2754350,2754350,Herkingen,Herkingen,The Netherlands,Netherlands,NL,NL,ZH,ZH
+country_name,2749990,2749990,North Brabant,North Brabant,The Netherlands,Netherlands,NL,NL,NB,NB
+country_name,2746816,2746816,Stavoren,Stavoren,The Netherlands,Netherlands,NL,NL,FR,FR
+country_name,2757994,2757994,Castenray,Castenray,The Netherlands,Netherlands,NL,NL,LI,LI
+country_name,2754611,2754611,Hegelsom,Hegelsom,The Netherlands,Netherlands,NL,NL,LI,LI
+country_name,2746328,2746328,Tiendeveen,Tiendeveen,The Netherlands,Netherlands,NL,NL,DR,DR
+country_name,2759645,2759645,Asch,Asch,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,2751065,2751065,Meedhuizen,Meedhuizen,The Netherlands,Netherlands,NL,NL,GR,GR
+country_name,2750830,2750830,Midwolde,Midwolde,The Netherlands,Netherlands,NL,NL,GR,GR
+country_name,2755653,2755653,Geesteren,Geesteren,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,2759175,2759175,Bentveld,Bentveld,The Netherlands,Netherlands,NL,NL,NH,NH
+country_name,2757281,2757281,De Moer,De Moer,The Netherlands,Netherlands,NL,NL,NB,NB
+country_name,2752534,2752534,Kolham,Kolham,The Netherlands,Netherlands,NL,NL,GR,GR
+country_name,2744715,2744715,Westerlee,Westerlee,The Netherlands,Netherlands,NL,NL,GR,GR
+country_name,2747883,2747883,Rottum,Rottum,The Netherlands,Netherlands,NL,NL,GR,GR
+country_name,2746297,2746297,Tilligte,Tilligte,The Netherlands,Netherlands,NL,NL,OV,OV
+country_name,2751449,2751449,Loosbroek,Loosbroek,The Netherlands,Netherlands,NL,NL,NB,NB
+country_name,2743578,2743578,Zwammerdam,Zwammerdam,The Netherlands,Netherlands,NL,NL,ZH,ZH
+country_name,2749692,2749692,Ohé en Laak,Ohé en Laak,The Netherlands,Netherlands,NL,NL,LI,LI
+country_name,2750154,2750154,Nieuwolda,Nieuwolda,The Netherlands,Netherlands,NL,NL,GR,GR
+country_name,2744140,2744140,Wouwse Plantage,Wouwse Plantage,The Netherlands,Netherlands,NL,NL,NB,NB
+country_name,2749730,2749730,Odoornerveen,Odoornerveen,The Netherlands,Netherlands,NL,NL,DR,DR
+country_name,2746012,2746012,Ubbergen,Ubbergen,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,2744327,2744327,Wirdum,Wirdum,The Netherlands,Netherlands,NL,NL,FR,FR
+country_name,2749641,2749641,Oldenzijl,Oldenzijl,The Netherlands,Netherlands,NL,NL,GR,GR
+country_name,2747014,2747014,Sondel,Sondel,The Netherlands,Netherlands,NL,NL,FR,FR
+country_name,2750609,2750609,Moorveld,Moorveld,The Netherlands,Netherlands,NL,NL,LI,LI
+country_name,2754604,2754604,Heibloem,Heibloem,The Netherlands,Netherlands,NL,NL,LI,LI
+country_name,2759178,2759178,Benthuizen,Benthuizen,The Netherlands,Netherlands,NL,NL,ZH,ZH
+country_name,2751359,2751359,Lutten,Lutten,The Netherlands,Netherlands,NL,NL,OV,OV
+country_name,2747375,2747375,s-Gravendeel,s-Gravendeel,The Netherlands,Netherlands,NL,NL,ZH,ZH
+country_name,2751695,2751695,Leunen,Leunen,The Netherlands,Netherlands,NL,NL,LI,LI
+country_name,2759240,2759240,Beltrum,Beltrum,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,2748183,2748183,Rhenoy,Rhenoy,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,2749687,2749687,Oirlo,Oirlo,The Netherlands,Netherlands,NL,NL,LI,LI
+country_name,2749334,2749334,Oost-Vlieland,Oost-Vlieland,The Netherlands,Netherlands,NL,NL,FR,FR
+country_name,2759191,2759191,Benningbroek,Benningbroek,The Netherlands,Netherlands,NL,NL,NH,NH
+country_name,2745801,2745801,Varsselder,Varsselder,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,2744510,2744510,Wijckel,Wijckel,The Netherlands,Netherlands,NL,NL,FR,FR
+country_name,2751993,2751993,Lamswaarde,Lamswaarde,The Netherlands,Netherlands,NL,NL,ZE,ZE
+country_name,2747550,2747550,Schinveld,Schinveld,The Netherlands,Netherlands,NL,NL,LI,LI
+country_name,2757547,2757547,De Heurne,De Heurne,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,2745018,2745018,Wergea,Wergea,The Netherlands,Netherlands,NL,NL,FR,FR
+country_name,2759983,2759983,Achthuizen,Achthuizen,The Netherlands,Netherlands,NL,NL,ZH,ZH
+country_name,2759804,2759804,Amstelhoek,Amstelhoek,The Netherlands,Netherlands,NL,NL,UT,UT
+country_name,2746449,2746449,Terherne,Terherne,The Netherlands,Netherlands,NL,NL,FR,FR
+country_name,2754632,2754632,Heesselt,Heesselt,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,2746846,2746846,Stampersgat,Stampersgat,The Netherlands,Netherlands,NL,NL,NB,NB
+country_name,2753709,2753709,Hoogenweg,Hoogenweg,The Netherlands,Netherlands,NL,NL,OV,OV
+country_name,2747599,2747599,Scheveningen,Scheveningen,The Netherlands,Netherlands,NL,NL,ZH,ZH
+country_name,2747669,2747669,Scharsterbrug,Scharsterbrug,The Netherlands,Netherlands,NL,NL,FR,FR
+country_name,2757928,2757928,Collendoorn,Collendoorn,The Netherlands,Netherlands,NL,NL,OV,OV
+country_name,2747907,2747907,Rossum,Rossum,The Netherlands,Netherlands,NL,NL,OV,OV
+country_name,2755520,2755520,Gieterveen,Gieterveen,The Netherlands,Netherlands,NL,NL,DR,DR
+country_name,2755819,2755819,Frieschepalen,Frieschepalen,The Netherlands,Netherlands,NL,NL,FR,FR
+country_name,2749655,2749655,Oldelamer,Oldelamer,The Netherlands,Netherlands,NL,NL,FR,FR
+country_name,2754337,2754337,Herpt,Herpt,The Netherlands,Netherlands,NL,NL,NB,NB
+country_name,2746643,2746643,Stoutenburg,Stoutenburg,The Netherlands,Netherlands,NL,NL,UT,UT
+country_name,2759981,2759981,Achtmaal,Achtmaal,The Netherlands,Netherlands,NL,NL,NB,NB
+country_name,2750938,2750938,Merkelbeek,Merkelbeek,The Netherlands,Netherlands,NL,NL,LI,LI
+country_name,2748314,2748314,Raerd,Raerd,The Netherlands,Netherlands,NL,NL,FR,FR
+country_name,2749474,2749474,Oosterend,Oosterend,The Netherlands,Netherlands,NL,NL,FR,FR
+country_name,2746761,2746761,Steenwijkerwold,Steenwijkerwold,The Netherlands,Netherlands,NL,NL,OV,OV
+country_name,2752228,2752228,Kronenberg,Kronenberg,The Netherlands,Netherlands,NL,NL,LI,LI
+country_name,2756335,2756335,Eerste Exloërmond,Eerste Exloërmond,The Netherlands,Netherlands,NL,NL,DR,DR
+country_name,2748582,2748582,Pingjum,Pingjum,The Netherlands,Netherlands,NL,NL,FR,FR
+country_name,2750310,2750310,Nieuwehorne,Nieuwehorne,The Netherlands,Netherlands,NL,NL,FR,FR
+country_name,2744257,2744257,Woensdrecht,Woensdrecht,The Netherlands,Netherlands,NL,NL,NB,NB
+country_name,2747380,2747380,Sexbierum,Sexbierum,The Netherlands,Netherlands,NL,NL,FR,FR
+country_name,2744454,2744454,Wijster,Wijster,The Netherlands,Netherlands,NL,NL,DR,DR
+country_name,2756753,2756753,Doldersum,Doldersum,The Netherlands,Netherlands,NL,NL,DR,DR
+country_name,2748674,2748674,Peins,Peins,The Netherlands,Netherlands,NL,NL,FR,FR
+country_name,2754518,2754518,Heilig Landstichting,Heilig Landstichting,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,2747540,2747540,Schipluiden,Schipluiden,The Netherlands,Netherlands,NL,NL,ZH,ZH
+country_name,2749304,2749304,Opeinde,Opeinde,The Netherlands,Netherlands,NL,NL,FR,FR
+country_name,2752034,2752034,Lageland,Lageland,The Netherlands,Netherlands,NL,NL,GR,GR
+country_name,2756719,2756719,Dongjum,Dongjum,The Netherlands,Netherlands,NL,NL,FR,FR
+country_name,2747606,2747606,Scherpenzeel,Scherpenzeel,The Netherlands,Netherlands,NL,NL,FR,FR
+country_name,2759078,2759078,Berkenwoude,Berkenwoude,The Netherlands,Netherlands,NL,NL,ZH,ZH
+country_name,2759015,2759015,Beuningen,Beuningen,The Netherlands,Netherlands,NL,NL,OV,OV
+country_name,2756438,2756438,Echtenerbrug,Echtenerbrug,The Netherlands,Netherlands,NL,NL,FR,FR
+country_name,2745163,2745163,Vrouwenparochie,Vrouwenparochie,The Netherlands,Netherlands,NL,NL,FR,FR
+country_name,2746217,2746217,Tonden,Tonden,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,2745990,2745990,Uitdam,Uitdam,The Netherlands,Netherlands,NL,NL,NH,NH
+country_name,2751849,2751849,Lauwersoog,Lauwersoog,The Netherlands,Netherlands,NL,NL,GR,GR
+country_name,2749298,2749298,Ophemert,Ophemert,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,2752281,2752281,Kreileroord,Kreileroord,The Netherlands,Netherlands,NL,NL,NH,NH
+country_name,2749374,2749374,Oost-Graftdijk,Oost-Graftdijk,The Netherlands,Netherlands,NL,NL,NH,NH
+country_name,2746938,2746938,Spijk,Spijk,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,2749271,2749271,Oranje,Oranje,The Netherlands,Netherlands,NL,NL,DR,DR
+country_name,2754991,2754991,Haarlo,Haarlo,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,2745414,2745414,Vlierden,Vlierden,The Netherlands,Netherlands,NL,NL,NB,NB
+country_name,2754026,2754026,Hoek,Hoek,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,2754136,2754136,Heusden,Heusden,The Netherlands,Netherlands,NL,NL,NB,NB
+country_name,2744947,2744947,Waverveen,Waverveen,The Netherlands,Netherlands,NL,NL,UT,UT
+country_name,2747400,2747400,Sellingen,Sellingen,The Netherlands,Netherlands,NL,NL,GR,GR
+country_name,2750103,2750103,Nij Beets,Nij Beets,The Netherlands,Netherlands,NL,NL,FR,FR
+country_name,2751596,2751596,,,The Netherlands,Netherlands,NL,NL,LI,LI
+country_name,2743510,2743510,Zweeloo,Zweeloo,The Netherlands,Netherlands,NL,NL,DR,DR
+country_name,2753447,2753447,Hulsel,Hulsel,The Netherlands,Netherlands,NL,NL,NB,NB
+country_name,2746716,2746716,Stevensbeek,Stevensbeek,The Netherlands,Netherlands,NL,NL,NB,NB
+country_name,2753240,2753240,Jisp,Jisp,The Netherlands,Netherlands,NL,NL,NH,NH
+country_name,2758085,2758085,Burgerveen,Burgerveen,The Netherlands,Netherlands,NL,NL,NH,NH
+country_name,2743593,2743593,Zwaagdijk-Oost,Zwaagdijk-Oost,The Netherlands,Netherlands,NL,NL,NH,NH
+country_name,2750076,2750076,Nijetrijne,Nijetrijne,The Netherlands,Netherlands,NL,NL,FR,FR
+country_name,2750895,2750895,Middelburg,Middelburg,The Netherlands,Netherlands,NL,NL,ZH,ZH
+country_name,2746441,2746441,Ter Idzard,Ter Idzard,The Netherlands,Netherlands,NL,NL,FR,FR
+country_name,2748397,2748397,Putte,Putte,The Netherlands,Netherlands,NL,NL,NB,NB
+country_name,2749675,2749675,Okkenbroek,Okkenbroek,The Netherlands,Netherlands,NL,NL,OV,OV
+country_name,2751636,2751636,Lieren,Lieren,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,2758805,2758805,Bloemendaal,Bloemendaal,The Netherlands,Netherlands,NL,NL,ZH,ZH
+country_name,11525000,11525000,Rotterdam-Albrandswaard,Rotterdam-Albrandswaard,The Netherlands,Netherlands,NL,NL,ZH,ZH
+country_name,2755879,2755879,Fochteloo,Fochteloo,The Netherlands,Netherlands,NL,NL,FR,FR
+country_name,2751171,2751171,Mariënvelde,Mariënvelde,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,2755328,2755328,Griendtsveen,Griendtsveen,The Netherlands,Netherlands,NL,NL,LI,LI
+country_name,2752443,2752443,Kootwijk,Kootwijk,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,2746284,2746284,Tinte,Tinte,The Netherlands,Netherlands,NL,NL,ZH,ZH
+country_name,2746398,2746398,Terwispel,Terwispel,The Netherlands,Netherlands,NL,NL,FR,FR
+country_name,2747280,2747280,Sint Geertruid,Sint Geertruid,The Netherlands,Netherlands,NL,NL,LI,LI
+country_name,2749773,2749773,Nuis,Nuis,The Netherlands,Netherlands,NL,NL,GR,GR
+country_name,2755961,2755961,Evertsoord,Evertsoord,The Netherlands,Netherlands,NL,NL,LI,LI
+country_name,2746269,2746269,Tjerkgaast,Tjerkgaast,The Netherlands,Netherlands,NL,NL,FR,FR
+country_name,2747677,2747677,Scharmer,Scharmer,The Netherlands,Netherlands,NL,NL,GR,GR
+country_name,2755709,2755709,Gastel,Gastel,The Netherlands,Netherlands,NL,NL,NB,NB
+country_name,2746545,2746545,Sweikhuizen,Sweikhuizen,The Netherlands,Netherlands,NL,NL,LI,LI
+country_name,2744593,2744593,Wetering,Wetering,The Netherlands,Netherlands,NL,NL,OV,OV
+country_name,2755257,2755257,Grolloo,Grolloo,The Netherlands,Netherlands,NL,NL,DR,DR
+country_name,2747131,2747131,Sloten,Sloten,The Netherlands,Netherlands,NL,NL,FR,FR
+country_name,2744392,2744392,Willemsoord,Willemsoord,The Netherlands,Netherlands,NL,NL,OV,OV
+country_name,2753689,2753689,Hoog-Keppel,Hoog-Keppel,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,2750089,2750089,Nijemirdum,Nijemirdum,The Netherlands,Netherlands,NL,NL,FR,FR
+country_name,2746789,2746789,Steenenkamer,Steenenkamer,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,2749044,2749044,Oudenhoorn,Oudenhoorn,The Netherlands,Netherlands,NL,NL,ZH,ZH
+country_name,2755285,2755285,Groeningen,Groeningen,The Netherlands,Netherlands,NL,NL,NB,NB
+country_name,2744808,2744808,Westbeemster,Westbeemster,The Netherlands,Netherlands,NL,NL,NH,NH
+country_name,2754092,2754092,Hijken,Hijken,The Netherlands,Netherlands,NL,NL,DR,DR
+country_name,2754638,2754638,Heesbeen,Heesbeen,The Netherlands,Netherlands,NL,NL,NB,NB
+country_name,2755267,2755267,Groessen,Groessen,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,11281930,11281930,Hei- en Boeicop,Hei- en Boeicop,The Netherlands,Netherlands,NL,NL,UT,UT
+country_name,2757667,2757667,Deelen,Deelen,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,2749138,2749138,Oudega,Oudega,The Netherlands,Netherlands,NL,NL,FR,FR
+country_name,2759496,2759496,Bakhuizen,Bakhuizen,The Netherlands,Netherlands,NL,NL,FR,FR
+country_name,2747409,2747409,Sebaldeburen,Sebaldeburen,The Netherlands,Netherlands,NL,NL,GR,GR
+country_name,2748723,2748723,Papenvoort,Papenvoort,The Netherlands,Netherlands,NL,NL,DR,DR
+country_name,2749359,2749359,Oostknollendam,Oostknollendam,The Netherlands,Netherlands,NL,NL,NH,NH
+country_name,2747984,2747984,Rohel,Rohel,The Netherlands,Netherlands,NL,NL,FR,FR
+country_name,2752905,2752905,Kessel,Kessel,The Netherlands,Netherlands,NL,NL,NB,NB
+country_name,2752381,2752381,Kotten,Kotten,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,2758828,2758828,Blesdijke,Blesdijke,The Netherlands,Netherlands,NL,NL,FR,FR
+country_name,2751506,2751506,Loil,Loil,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,2757726,2757726,De Bult,De Bult,The Netherlands,Netherlands,NL,NL,OV,OV
+country_name,2748190,2748190,Rheeze,Rheeze,The Netherlands,Netherlands,NL,NL,OV,OV
+country_name,2746380,2746380,t Goy,t Goy,The Netherlands,Netherlands,NL,NL,UT,UT
+country_name,2756040,2756040,Erm,Erm,The Netherlands,Netherlands,NL,NL,DR,DR
+country_name,2754044,2754044,Hitzum,Hitzum,The Netherlands,Netherlands,NL,NL,FR,FR
+country_name,2748187,2748187,Rheezerveen,Rheezerveen,The Netherlands,Netherlands,NL,NL,OV,OV
+country_name,2755609,2755609,Gelselaar,Gelselaar,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,2753516,2753516,Húns,Húns,The Netherlands,Netherlands,NL,NL,FR,FR
+country_name,2756439,2756439,Echten,Echten,The Netherlands,Netherlands,NL,NL,FR,FR
+country_name,2744650,2744650,West-Graftdijk,West-Graftdijk,The Netherlands,Netherlands,NL,NL,NH,NH
+country_name,2745020,2745020,Warfhuizen,Warfhuizen,The Netherlands,Netherlands,NL,NL,GR,GR
+country_name,2745499,2745499,Vinkenbuurt,Vinkenbuurt,The Netherlands,Netherlands,NL,NL,OV,OV
+country_name,2754714,2754714,Hee,Hee,The Netherlands,Netherlands,NL,NL,FR,FR
+country_name,2746361,2746361,Thesinge,Thesinge,The Netherlands,Netherlands,NL,NL,GR,GR
+country_name,2751782,2751782,Legemeer,Legemeer,The Netherlands,Netherlands,NL,NL,FR,FR
+country_name,2744891,2744891,Weidum,Weidum,The Netherlands,Netherlands,NL,NL,FR,FR
+country_name,2747332,2747332,Sijbekarspel,Sijbekarspel,The Netherlands,Netherlands,NL,NL,NH,NH
+country_name,2747617,2747617,Schermerhorn,Schermerhorn,The Netherlands,Netherlands,NL,NL,NH,NH
+country_name,2755944,2755944,Exmorra,Exmorra,The Netherlands,Netherlands,NL,NL,FR,FR
+country_name,2748164,2748164,Riel,Riel,The Netherlands,Netherlands,NL,NL,NB,NB
+country_name,2746264,2746264,Tjuchem,Tjuchem,The Netherlands,Netherlands,NL,NL,GR,GR
+country_name,2748328,2748328,Ransdaal,Ransdaal,The Netherlands,Netherlands,NL,NL,LI,LI
+country_name,2744308,2744308,Witharen,Witharen,The Netherlands,Netherlands,NL,NL,OV,OV
+country_name,2748351,2748351,Radewijk,Radewijk,The Netherlands,Netherlands,NL,NL,OV,OV
+country_name,2745653,2745653,Venebrugge,Venebrugge,The Netherlands,Netherlands,NL,NL,OV,OV
+country_name,2750784,2750784,Miste,Miste,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,2760085,2760085,Aartswoud,Aartswoud,The Netherlands,Netherlands,NL,NL,NH,NH
+country_name,2753936,2753936,Zoeterwoude-Rijndijk,Zoeterwoude-Rijndijk,The Netherlands,Netherlands,NL,NL,ZH,ZH
+country_name,2757924,2757924,Colmschate,Colmschate,The Netherlands,Netherlands,NL,NL,OV,OV
+country_name,2743985,2743985,Zeyen,Zeyen,The Netherlands,Netherlands,NL,NL,DR,DR
+country_name,2750402,2750402,Netterden,Netterden,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,2754717,2754717,Hedikhuizen,Hedikhuizen,The Netherlands,Netherlands,NL,NL,NB,NB
+country_name,2756355,2756355,Eenum,Eenum,The Netherlands,Netherlands,NL,NL,GR,GR
+country_name,2744898,2744898,Wehe-Den Hoorn,Wehe-Den Hoorn,The Netherlands,Netherlands,NL,NL,GR,GR
+country_name,2746605,2746605,Strijensas,Strijensas,The Netherlands,Netherlands,NL,NL,ZH,ZH
+country_name,2750452,2750452,Neerbeek,Neerbeek,The Netherlands,Netherlands,NL,NL,LI,LI
+country_name,2759880,2759880,Almere Haven,Almere Haven,The Netherlands,Netherlands,NL,NL,FL,FL
+country_name,2744458,2744458,Wyns,Wyns,The Netherlands,Netherlands,NL,NL,FR,FR
+country_name,2755489,2755489,Godlinze,Godlinze,The Netherlands,Netherlands,NL,NL,GR,GR
+country_name,2747458,2747458,Schraard,Schraard,The Netherlands,Netherlands,NL,NL,FR,FR
+country_name,2758831,2758831,Blerick,Blerick,The Netherlands,Netherlands,NL,NL,LI,LI
+country_name,2746589,2746589,Stroobos,Stroobos,The Netherlands,Netherlands,NL,NL,FR,FR
+country_name,2750108,2750108,Niftrik,Niftrik,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,2751395,2751395,Luinjeberd,Luinjeberd,The Netherlands,Netherlands,NL,NL,FR,FR
+country_name,2759838,2759838,Amen,Amen,The Netherlands,Netherlands,NL,NL,DR,DR
+country_name,11281970,11281970,Lattrop-Breklenkamp,Lattrop-Breklenkamp,The Netherlands,Netherlands,NL,NL,OV,OV
+country_name,2750474,2750474,Nederland,Nederland,The Netherlands,Netherlands,NL,NL,OV,OV
+country_name,2756892,2756892,Dieden,Dieden,The Netherlands,Netherlands,NL,NL,NB,NB
+country_name,2751514,2751514,Loerbeek,Loerbeek,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,2757915,2757915,Winterswijk Corle,Winterswijk Corle,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,2750176,2750176,Nieuwland,Nieuwland,The Netherlands,Netherlands,NL,NL,UT,UT
+country_name,2755720,2755720,Garsthuizen,Garsthuizen,The Netherlands,Netherlands,NL,NL,GR,GR
+country_name,2750617,2750617,Mookhoek,Mookhoek,The Netherlands,Netherlands,NL,NL,ZH,ZH
+country_name,2759906,2759906,Alem,Alem,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,2750420,2750420,Nes,Nes,The Netherlands,Netherlands,NL,NL,FR,FR
+country_name,2744080,2744080,Zandeweer,Zandeweer,The Netherlands,Netherlands,NL,NL,GR,GR
+country_name,2746471,2746471,Ter Apelkanaal,Ter Apelkanaal,The Netherlands,Netherlands,NL,NL,GR,GR
+country_name,2751705,2751705,Lettelbert,Lettelbert,The Netherlands,Netherlands,NL,NL,GR,GR
+country_name,2758452,2758452,Bozum,Bozum,The Netherlands,Netherlands,NL,NL,FR,FR
+country_name,2744369,2744369,Wilsum,Wilsum,The Netherlands,Netherlands,NL,NL,OV,OV
+country_name,2754368,2754368,Winterswijk Henxel,Winterswijk Henxel,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,2756349,2756349,Eerde,Eerde,The Netherlands,Netherlands,NL,NL,NB,NB
+country_name,2756932,2756932,De Wilp,De Wilp,The Netherlands,Netherlands,NL,NL,GR,GR
+country_name,2749994,2749994,Noordbeemster,Noordbeemster,The Netherlands,Netherlands,NL,NL,NH,NH
+country_name,2744576,2744576,Wezuperbrug,Wezuperbrug,The Netherlands,Netherlands,NL,NL,DR,DR
+country_name,2753505,2753505,Huisseling,Huisseling,The Netherlands,Netherlands,NL,NL,NB,NB
+country_name,2750706,2750706,Mûnein,Mûnein,The Netherlands,Netherlands,NL,NL,FR,FR
+country_name,2758075,2758075,Burgwerd,Burgwerd,The Netherlands,Netherlands,NL,NL,FR,FR
+country_name,2744753,2744753,Westeremden,Westeremden,The Netherlands,Netherlands,NL,NL,GR,GR
+country_name,2757257,2757257,Den Andel,Den Andel,The Netherlands,Netherlands,NL,NL,GR,GR
+country_name,2757993,2757993,Casteren,Casteren,The Netherlands,Netherlands,NL,NL,NB,NB
+country_name,2749857,2749857,Noordlaren,Noordlaren,The Netherlands,Netherlands,NL,NL,GR,GR
+country_name,2747938,2747938,Reduzum,Reduzum,The Netherlands,Netherlands,NL,NL,FR,FR
+country_name,2758458,2758458,Boksum,Boksum,The Netherlands,Netherlands,NL,NL,FR,FR
+country_name,2747372,2747372,Gemeente Den Haag,Gemeente Den Haag,The Netherlands,Netherlands,NL,NL,ZH,ZH
+country_name,2747298,2747298,Sint Annaland,Sint Annaland,The Netherlands,Netherlands,NL,NL,ZE,ZE
+country_name,2755249,2755249,,,The Netherlands,Netherlands,NL,NL,GR,GR
+country_name,2749879,2749879,North Holland,North Holland,The Netherlands,Netherlands,NL,NL,NH,NH
+country_name,2751596,2751596,Limburg,Limburg,The Netherlands,Netherlands,NL,NL,LI,LI
+country_name,2755812,2755812,,,The Netherlands,Netherlands,NL,NL,FR,FR
+country_name,2756631,2756631,,,The Netherlands,Netherlands,NL,NL,DR,DR
+country_name,2747386,2747386,Serooskerke,Serooskerke,The Netherlands,Netherlands,NL,NL,ZE,ZE
+country_name,2747865,2747865,Rozendaal,Rozendaal,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,2744011,2744011,,,The Netherlands,Netherlands,NL,NL,ZE,ZE
+country_name,2745060,2745060,Walsoorden,Walsoorden,The Netherlands,Netherlands,NL,NL,ZE,ZE
+country_name,2755634,2755634,Gelderland,Gelderland,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,2747297,2747297,Sint Annaparochie,Sint Annaparochie,The Netherlands,Netherlands,NL,NL,FR,FR
+country_name,2757838,2757838,Damwâld,Damwâld,The Netherlands,Netherlands,NL,NL,FR,FR
+country_name,2753920,2753920,Holland,Holland,The Netherlands,Netherlands,NL,NL,NB,NB
+country_name,2751004,2751004,Megchelen,Megchelen,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,2744189,2744189,Wons,Wons,The Netherlands,Netherlands,NL,NL,FR,FR
+country_name,2759089,2759089,Berkel,Berkel,The Netherlands,Netherlands,NL,NL,ZH,ZH
+country_name,2747545,2747545,Schipborg,Schipborg,The Netherlands,Netherlands,NL,NL,DR,DR
+country_name,2749819,2749819,Noordwelle,Noordwelle,The Netherlands,Netherlands,NL,NL,ZE,ZE
+country_name,2755948,2755948,Exloërveen,Exloërveen,The Netherlands,Netherlands,NL,NL,DR,DR
+country_name,2753438,2753438,Hulst,Hulst,The Netherlands,Netherlands,NL,NL,NB,NB
+country_name,2744360,2744360,Kiel-Windeweer,Kiel-Windeweer,The Netherlands,Netherlands,NL,NL,GR,GR
+country_name,2754755,2754755,Hauwert,Hauwert,The Netherlands,Netherlands,NL,NL,NH,NH
+country_name,2752998,2752998,Kedichem,Kedichem,The Netherlands,Netherlands,NL,NL,UT,UT
+country_name,2757852,2757852,Dalerveen,Dalerveen,The Netherlands,Netherlands,NL,NL,DR,DR
+country_name,2743622,2743622,Zuna,Zuna,The Netherlands,Netherlands,NL,NL,OV,OV
+country_name,2756774,2756774,Doenrade,Doenrade,The Netherlands,Netherlands,NL,NL,LI,LI
+country_name,2751894,2751894,Langezwaag,Langezwaag,The Netherlands,Netherlands,NL,NL,FR,FR
+country_name,2756313,2756313,Eexterveenschekanaal,Eexterveenschekanaal,The Netherlands,Netherlands,NL,NL,DR,DR
+country_name,2751209,2751209,Mantinge,Mantinge,The Netherlands,Netherlands,NL,NL,DR,DR
+country_name,2754578,2754578,It Heidenskip,It Heidenskip,The Netherlands,Netherlands,NL,NL,FR,FR
+country_name,2759280,2759280,Beets,Beets,The Netherlands,Netherlands,NL,NL,NH,NH
+country_name,2749401,2749401,Easterwierrum,Easterwierrum,The Netherlands,Netherlands,NL,NL,FR,FR
+country_name,2747702,2747702,Schalkwijk,Schalkwijk,The Netherlands,Netherlands,NL,NL,NH,NH
+country_name,2755496,2755496,Glanerbrug,Glanerbrug,The Netherlands,Netherlands,NL,NL,OV,OV
+country_name,6544696,6544696,Oude Willem,Oude Willem,The Netherlands,Netherlands,NL,NL,DR,DR
+country_name,2751364,2751364,Lytsewierrum,Lytsewierrum,The Netherlands,Netherlands,NL,NL,FR,FR
+country_name,2746929,2746929,Spijkerboor,Spijkerboor,The Netherlands,Netherlands,NL,NL,DR,DR
+country_name,2753994,2753994,Hoenzadriel,Hoenzadriel,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,2757853,2757853,Dalerpeel,Dalerpeel,The Netherlands,Netherlands,NL,NL,DR,DR
+country_name,2756594,2756594,Driehuizen,Driehuizen,The Netherlands,Netherlands,NL,NL,NH,NH
+country_name,2756427,2756427,Iens,Iens,The Netherlands,Netherlands,NL,NL,FR,FR
+country_name,2745100,2745100,Wachtum,Wachtum,The Netherlands,Netherlands,NL,NL,DR,DR
+country_name,2751108,2751108,Marwijksoord,Marwijksoord,The Netherlands,Netherlands,NL,NL,DR,DR
+country_name,2755728,2755728,Garmerwolde,Garmerwolde,The Netherlands,Netherlands,NL,NL,GR,GR
+country_name,2753203,2753203,Joppe,Joppe,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,2744279,2744279,Witte Paarden,Witte Paarden,The Netherlands,Netherlands,NL,NL,OV,OV
+country_name,2746289,2746289,Tinallinge,Tinallinge,The Netherlands,Netherlands,NL,NL,GR,GR
+country_name,2753865,2753865,Holthone,Holthone,The Netherlands,Netherlands,NL,NL,OV,OV
+country_name,2743684,2743684,Zuidlaarderveen,Zuidlaarderveen,The Netherlands,Netherlands,NL,NL,DR,DR
+country_name,2756041,2756041,Erlecom,Erlecom,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,2751459,2751459,Loon,Loon,The Netherlands,Netherlands,NL,NL,DR,DR
+country_name,2751846,2751846,Lauwerzijl,Lauwerzijl,The Netherlands,Netherlands,NL,NL,GR,GR
+country_name,2744974,2744974,Waterhuizen,Waterhuizen,The Netherlands,Netherlands,NL,NL,GR,GR
+country_name,2743926,2743926,Zevenhuizen,Zevenhuizen,The Netherlands,Netherlands,NL,NL,GR,GR
+country_name,2744290,2744290,Wittelte,Wittelte,The Netherlands,Netherlands,NL,NL,DR,DR
+country_name,2749694,2749694,Offingawier,Offingawier,The Netherlands,Netherlands,NL,NL,FR,FR
+country_name,2753954,2753954,Hegebeintum,Hegebeintum,The Netherlands,Netherlands,NL,NL,FR,FR
+country_name,2746972,2746972,Spannum,Spannum,The Netherlands,Netherlands,NL,NL,FR,FR
+country_name,2753407,2753407,Huppel,Huppel,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,2744469,2744469,Wijnbergen,Wijnbergen,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,2753105,2753105,Kampen,Kampen,The Netherlands,Netherlands,NL,NL,FR,FR
+country_name,2746907,2746907,Spoordonk,Spoordonk,The Netherlands,Netherlands,NL,NL,NB,NB
+country_name,2753207,2753207,Jonkersvaart,Jonkersvaart,The Netherlands,Netherlands,NL,NL,GR,GR
+country_name,2744453,2744453,Wijtgaard,Wijtgaard,The Netherlands,Netherlands,NL,NL,FR,FR
+country_name,2751187,2751187,Mariaparochie,Mariaparochie,The Netherlands,Netherlands,NL,NL,OV,OV
+country_name,2752992,2752992,Keent,Keent,The Netherlands,Netherlands,NL,NL,NB,NB
+country_name,2758755,2758755,Boekelo,Boekelo,The Netherlands,Netherlands,NL,NL,OV,OV
+country_name,2743904,2743904,Zijdewind,Zijdewind,The Netherlands,Netherlands,NL,NL,NH,NH
+country_name,2750104,2750104,Nij Altoenae,Nij Altoenae,The Netherlands,Netherlands,NL,NL,FR,FR
+country_name,2746083,2746083,t Waar,t Waar,The Netherlands,Netherlands,NL,NL,GR,GR
+country_name,2759541,2759541,Baars,Baars,The Netherlands,Netherlands,NL,NL,OV,OV
+country_name,2748093,2748093,Rijs,Rijs,The Netherlands,Netherlands,NL,NL,FR,FR
+country_name,2748596,2748596,Pieterzijl,Pieterzijl,The Netherlands,Netherlands,NL,NL,GR,GR
+country_name,2745074,2745074,Walem,Walem,The Netherlands,Netherlands,NL,NL,LI,LI
+country_name,2758221,2758221,Bronnegerveen,Bronnegerveen,The Netherlands,Netherlands,NL,NL,DR,DR
+country_name,2748598,2748598,Pietersbierum,Pietersbierum,The Netherlands,Netherlands,NL,NL,FR,FR
+country_name,2760129,2760129,Aalst,Aalst,The Netherlands,Netherlands,NL,NL,NB,NB
+country_name,2743923,2743923,Zevenhuizen,Zevenhuizen,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,2753834,2753834,Hommerts,Hommerts,The Netherlands,Netherlands,NL,NL,FR,FR
+country_name,2754555,2754555,Heijenrath,Heijenrath,The Netherlands,Netherlands,NL,NL,LI,LI
+country_name,2756310,2756310,Effen,Effen,The Netherlands,Netherlands,NL,NL,NB,NB
+country_name,2746457,2746457,Ter Heijde,Ter Heijde,The Netherlands,Netherlands,NL,NL,ZH,ZH
+country_name,2753173,2753173,Jutrijp,Jutrijp,The Netherlands,Netherlands,NL,NL,FR,FR
+country_name,2755871,2755871,Follega,Follega,The Netherlands,Netherlands,NL,NL,FR,FR
+country_name,2751657,2751657,Lichtaard,Lichtaard,The Netherlands,Netherlands,NL,NL,FR,FR
+country_name,2746883,2746883,Spui,Spui,The Netherlands,Netherlands,NL,NL,ZE,ZE
+country_name,2749429,2749429,Oosternieland,Oosternieland,The Netherlands,Netherlands,NL,NL,GR,GR
+country_name,2756325,2756325,Eeserveen,Eeserveen,The Netherlands,Netherlands,NL,NL,DR,DR
+country_name,2746956,2746956,Spekholzerheide,Spekholzerheide,The Netherlands,Netherlands,NL,NL,LI,LI
+country_name,2745555,2745555,Vierhuis,Vierhuis,The Netherlands,Netherlands,NL,NL,FR,FR
+country_name,6544732,6544732,Elst,Elst,The Netherlands,Netherlands,NL,NL,NB,NB
+country_name,2756137,2756137,Emmen,Emmen,The Netherlands,Netherlands,NL,NL,OV,OV
+country_name,2746371,2746371,t Harde,t Harde,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,9072713,9072713,Almere Poort,Almere Poort,The Netherlands,Netherlands,NL,NL,FL,FL
+country_name,2745529,2745529,Vijfhuizen,Vijfhuizen,The Netherlands,Netherlands,NL,NL,NB,NB
+country_name,2748886,2748886,Aldwâld,Aldwâld,The Netherlands,Netherlands,NL,NL,FR,FR
+country_name,2750399,2750399,Nijewier,Nijewier,The Netherlands,Netherlands,NL,NL,FR,FR
+country_name,2749427,2749427,Easternijtsjerk,Easternijtsjerk,The Netherlands,Netherlands,NL,NL,FR,FR
+country_name,2750919,2750919,Mitselwier,Mitselwier,The Netherlands,Netherlands,NL,NL,FR,FR
+country_name,2743585,2743585,Sweagerbosk,Sweagerbosk,The Netherlands,Netherlands,NL,NL,FR,FR
+country_name,2752520,2752520,Kollumersweach,Kollumersweach,The Netherlands,Netherlands,NL,NL,FR,FR
+country_name,2744809,2744809,West aan Zee,West aan Zee,The Netherlands,Netherlands,NL,NL,FR,FR
+country_name,2746093,2746093,t Veld,t Veld,The Netherlands,Netherlands,NL,NL,NH,NH
+country_name,2746247,2746247,t Loo,t Loo,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,2748451,2748451,Prins Alexanderpolder,Prins Alexanderpolder,The Netherlands,Netherlands,NL,NL,ZH,ZH
+country_name,2748915,2748915,Oudover,Oudover,The Netherlands,Netherlands,NL,NL,NH,NH
+country_name,2754241,2754241,Het Loo,Het Loo,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,2751482,2751482,Loo,Loo,The Netherlands,Netherlands,NL,NL,GE,GE
+country_name,3575551,3575551,Basseterre,Basseterre,St Kitts and Nevis,Saint Kitts and Nevis,KN,KN,3,3
+country_name,3575479,3575479,Charlestown,Charlestown,St Kitts and Nevis,Saint Kitts and Nevis,KN,KN,10,10
+country_name,3577887,3577887,Kingstown,Kingstown,St Vincent and Grenadines,Saint Vincent and the Grenadines,VC,VC,4,4
+country_name,3577900,3577900,Georgetown,Georgetown,St Vincent and Grenadines,Saint Vincent and the Grenadines,VC,VC,1,1
+country_name,11281529,11281529,Overland,Overland,St Vincent and Grenadines,Saint Vincent and the Grenadines,VC,VC,,
+geoname_id,8614545,8614659,Rosedale,Rosedale,Australia,Australia,AU,AU,NSW,NSW
+geoname_id,9973370,2145478,Upper Barron,Upper Barron,Australia,Australia,AU,AU,QLD,QLD
+geoname_id,2766728,2771867,Sankt Florian,Sankt Florian,Austria,Austria,AT,AT,4,4
+geoname_id,2777522,2777521,Grub,Grub,Austria,Austria,AT,AT,3,3
+geoname_id,2778023,11593010,Greith,Greith,Austria,Austria,AT,AT,6,6
+geoname_id,3292446,3199509,Grude,Grude,Bosnia and Herzegovina,Bosnia and Herzegovina,BA,BA,BIH,BIH
+geoname_id,3193856,3193855,Oštra Luka,Oštra Luka,Bosnia and Herzegovina,Bosnia and Herzegovina,BA,BA,SRP,SRP
+geoname_id,13016513,6317637,Monte Verde,Monte Verde,Brazil,Brazil,BR,BR,MG,MG
+geoname_id,7615124,3466970,Cardoso,Cardoso,Brazil,Brazil,BR,BR,SP,SP
+geoname_id,12967527,3664852,Caapiranga,Caapiranga,Brazil,Brazil,BR,BR,AM,AM
+geoname_id,12997409,3468720,Buritizeiro,Buritizeiro,Brazil,Brazil,BR,BR,MG,MG
+geoname_id,3475644,3460723,Itapeva,Itapeva,Brazil,Brazil,BR,BR,SP,SP
+geoname_id,3449672,3449681,Santo Antônio,Santo Antônio,Brazil,Brazil,BR,BR,BA,BA
+geoname_id,6316428,6323801,Araputanga,Araputanga,Brazil,Brazil,BR,BR,MT,MT
+geoname_id,13003915,3451362,Ribeirão Branco,Ribeirão Branco,Brazil,Brazil,BR,BR,SP,SP
+geoname_id,12390918,3455251,Panorama,Panorama,Brazil,Brazil,BR,BR,SP,SP
+geoname_id,3473144,3473143,Adrianópolis,Adrianópolis,Brazil,Brazil,BR,BR,PR,PR
+geoname_id,7583518,3468899,Brotas,Brotas,Brazil,Brazil,BR,BR,SP,SP
+geoname_id,3470427,3470428,Barrinha,Barrinha,Brazil,Brazil,BR,BR,SP,SP
+geoname_id,12377009,3466430,Cerqueira César,Cerqueira César,Brazil,Brazil,BR,BR,SP,SP
+geoname_id,11968844,3460516,Itupeva,Itupeva,Brazil,Brazil,BR,BR,SP,SP
+geoname_id,3471909,3471910,Apucarana,Apucarana,Brazil,Brazil,BR,BR,PR,PR
+geoname_id,13020844,3459111,Lagoinha,Lagoinha,Brazil,Brazil,BR,BR,SP,SP
+geoname_id,3461314,3461316,Indaial,Indaial,Brazil,Brazil,BR,BR,SC,SC
+geoname_id,3445688,3445689,Urucuia,Urucuia,Brazil,Brazil,BR,BR,MG,MG
+geoname_id,12978169,6316750,Campos de Júlio,Campos de Júlio,Brazil,Brazil,BR,BR,MT,MT
+geoname_id,12968345,6317215,Governador Jorge Teixeira,Governador Jorge Teixeira,Brazil,Brazil,BR,BR,RO,RO
+geoname_id,6139085,6139086,Saint-Stanislas,Saint-Stanislas,Canada,Canada,CA,CA,QC,QC
+geoname_id,5966068,5966070,Greenfield,Greenfield,Canada,Canada,CA,CA,NS,NS
+geoname_id,6122714,6122716,Riverside,Riverside,Canada,Canada,CA,CA,NS,NS
+geoname_id,6184374,6184373,Woodville,Woodville,Canada,Canada,CA,CA,NS,NS
+geoname_id,13118287,6090508,North River,North River,Canada,Canada,CA,CA,NL,NL
+geoname_id,6073872,6073863,Mill Creek,Mill Creek,Canada,Canada,CA,CA,NS,NS
+geoname_id,5944337,5944335,Dupuy,Dupuy,Canada,Canada,CA,CA,QC,QC
+geoname_id,7302868,6113931,Pubnico,Pubnico,Canada,Canada,CA,CA,NS,NS
+geoname_id,5991635,5991638,Kiamika,Kiamika,Canada,Canada,CA,CA,QC,QC
+geoname_id,5887765,5887766,Asquith,Asquith,Canada,Canada,CA,CA,SK,SK
+geoname_id,8556183,5918924,Cedar Valley,Cedar Valley,Canada,Canada,CA,CA,ON,ON
+geoname_id,5926753,5926754,Connaught,Connaught,Canada,Canada,CA,CA,ON,ON
+geoname_id,6180643,6180657,White Lake,White Lake,Canada,Canada,CA,CA,ON,ON
+geoname_id,6082316,6082317,Mount Pleasant,Mount Pleasant,Canada,Canada,CA,CA,ON,ON
+geoname_id,6137417,6137415,Saint-Anicet,Saint-Anicet,Canada,Canada,CA,CA,QC,QC
+geoname_id,5898120,5898121,Belmont,Belmont,Canada,Canada,CA,CA,NS,NS
+geoname_id,6091351,6091354,Notre-Dame-de-la-Salette,Notre-Dame-de-la-Salette,Canada,Canada,CA,CA,QC,QC
+geoname_id,5887535,5887536,Ashdale,Ashdale,Canada,Canada,CA,CA,NS,NS
+geoname_id,6174036,6174037,Victoria,Victoria,Canada,Canada,CA,CA,ON,ON
+geoname_id,6138619,6138621,Saint-Léon,Saint-Léon,Canada,Canada,CA,CA,QC,QC
+geoname_id,5971068,5971067,Harmony,Harmony,Canada,Canada,CA,CA,NS,NS
+geoname_id,5958107,5958111,French River,French River,Canada,Canada,CA,CA,ON,ON
+geoname_id,6048677,6048676,Lakeside,Lakeside,Canada,Canada,CA,CA,NS,NS
+geoname_id,6159262,6159261,Summerville,Summerville,Canada,Canada,CA,CA,NS,NS
+geoname_id,8261137,3896951,Canela,Canela,Chile,Chile,CL,CL,CO,CO
+geoname_id,1816820,11838258,Bayan Nur,Bayan Nur,China,China,CN,CN,NM,NM
+geoname_id,1921085,1909836,Hongshan,Hongshan,China,China,CN,CN,FJ,FJ
+geoname_id,1801982,1801983,Luocheng,Luocheng,China,China,CN,CN,SC,SC
+geoname_id,9180913,10405007,Luzhaicun,Luzhaicun,China,China,CN,CN,HA,HA
+geoname_id,3076227,3076228,Džbánov,Džbánov,Czechia,Czechia,CZ,CZ,"53, 534","53, 534"
+geoname_id,3024812,6617691,Clairefontaine-en-Yvelines,Clairefontaine-en-Yvelines,France,France,FR,FR,"IDF, 78","IDF, 78"
+geoname_id,2905422,2905423,Hesedorf,Hesedorf,Germany,Germany,DE,DE,NI,NI
+geoname_id,734711,734712,Peraía,Peraía,Greece,Greece,GR,GR,B,B
+geoname_id,255233,255231,Pírgos,Pírgos,Greece,Greece,GR,GR,J,J
+geoname_id,10497598,1258599,Rāmpur,Rāmpur,India,India,IN,IN,UP,UP
+geoname_id,12158811,1264644,Māchhīwāra,Māchhīwāra,India,India,IN,IN,PB,PB
+geoname_id,10584407,1270251,Hasanpur,Hasanpur,India,India,IN,IN,UP,UP
+geoname_id,10824670,1265242,Lakhīmpur,Lakhīmpur,India,India,IN,IN,UP,UP
+geoname_id,10210927,1256826,Seoni,Seoni,India,India,IN,IN,MP,MP
+geoname_id,10168642,1271910,Fatehpur,Fatehpur,India,India,IN,IN,RJ,RJ
+geoname_id,1261040,1465914,Oragadam,Oragadam,India,India,IN,IN,TN,TN
+geoname_id,11444806,1465903,Pennalūr,Pennalūr,India,India,IN,IN,TN,TN
+geoname_id,12158808,1258599,Rāmpur,Rāmpur,India,India,IN,IN,UP,UP
+geoname_id,10519656,1255102,Talodhi,Talodhi,India,India,IN,IN,MH,MH
+geoname_id,1254639,1254638,Tharād,Tharād,India,India,IN,IN,GJ,GJ
+geoname_id,10615065,1269435,Jalālpur,Jalālpur,India,India,IN,IN,UP,UP
+geoname_id,10587242,1255491,Sultānpur,Sultānpur,India,India,IN,IN,UP,UP
+geoname_id,11857993,1270914,Goregaon,Goregaon,India,India,IN,IN,MH,MH
+geoname_id,1934660,1971984,Brebes,Brebes,Indonesia,Indonesia,ID,ID,JT,JT
+geoname_id,13406312,7055784,Banjar Badung,Banjar Badung,Indonesia,Indonesia,ID,ID,BA,BA
+geoname_id,7055784,13406312,Banjar Badung,Banjar Badung,Indonesia,Indonesia,ID,ID,BA,BA
+geoname_id,1643770,6408310,Grobogan,Grobogan,Indonesia,Indonesia,ID,ID,JT,JT
+geoname_id,6409535,1650354,Bandung,Bandung,Indonesia,Indonesia,ID,ID,JT,JT
+geoname_id,140888,140889,Bonāb,Bonāb,Iran,Iran,IR,IR,3,3
+geoname_id,11838395,10936804,Miyazaki,Miyazaki,Japan,Japan,JP,JP,12,12
+geoname_id,11446395,11823494,Midorigaoka,Midorigaoka,Japan,Japan,JP,JP,1,1
+geoname_id,9633085,9631838,Hirao,Hirao,Japan,Japan,JP,JP,29,29
+geoname_id,1856808,1856755,Miyahara,Miyahara,Japan,Japan,JP,JP,43,43
+geoname_id,11811995,11811982,Asahicho,Asahicho,Japan,Japan,JP,JP,15,15
+geoname_id,285857,387952,Ad Da`iyah,Ad Da`iyah,Kuwait,Kuwait,KW,KW,,
+geoname_id,1736807,1736929,Dalat,Dalat,Malaysia,Malaysia,MY,MY,13,13
+geoname_id,3981675,3981676,Tierra Blanca,Tierra Blanca,Mexico,Mexico,MX,MX,GUA,GUA
+geoname_id,4004898,13417256,Hermosillo,Hermosillo,Mexico,Mexico,MX,MX,SON,SON
+geoname_id,3521575,3521574,Pichucalco,Pichucalco,Mexico,Mexico,MX,MX,CHP,CHP
+geoname_id,3521078,3818786,Guadalupe Victoria,Guadalupe Victoria,Mexico,Mexico,MX,MX,PUE,PUE
+geoname_id,1411258,1177384,Hafizabad,Hafizabad,Pakistan,Pakistan,PK,PK,PB,PB
+geoname_id,1181638,1181636,Chakwal,Chakwal,Pakistan,Pakistan,PK,PK,PB,PB
+geoname_id,1162004,1174357,Khairpur,Khairpur,Pakistan,Pakistan,PK,PK,SD,SD
+geoname_id,1381969,1171965,Lodhran,Lodhran,Pakistan,Pakistan,PK,PK,PB,PB
+geoname_id,7505177,1418102,Samundri,Samundri,Pakistan,Pakistan,PK,PK,PB,PB
+geoname_id,1179451,1179450,Dunyapur,Dunyapur,Pakistan,Pakistan,PK,PK,PB,PB
+geoname_id,1366254,1184370,Arifwala,Arifwala,Pakistan,Pakistan,PK,PK,PB,PB
+geoname_id,1412962,1392804,Islamabad,Islamabad,Pakistan,Pakistan,PK,PK,PB,PB
+geoname_id,1359895,1180453,Darya Khan Marri,Darya Khan Marri,Pakistan,Pakistan,PK,PK,SD,SD
+geoname_id,3439039,3438106,Fram,Fram,Paraguay,Paraguay,PY,PY,7,7
+geoname_id,3691549,3691530,Tambo Grande,Tambo Grande,Peru,Peru,PE,PE,PIU,PIU
+geoname_id,3941377,3941375,El Carmen,El Carmen,Peru,Peru,PE,PE,ICA,ICA
+geoname_id,3762404,3695887,La Esperanza,La Esperanza,Peru,Peru,PE,PE,CAJ,CAJ
+geoname_id,3929635,3929631,San Isidro,San Isidro,Peru,Peru,PE,PE,LIM,LIM
+geoname_id,3931542,3931543,Pueblo Libre,Pueblo Libre,Peru,Peru,PE,PE,LIM,LIM
+geoname_id,3936590,3936595,La Victoria,La Victoria,Peru,Peru,PE,PE,LIM,LIM
+geoname_id,3929531,3929532,San Juan,San Juan,Peru,Peru,PE,PE,LIM,LIM
+geoname_id,1694499,1694498,Passi,Passi,Philippines,Philippines,PH,PH,"06, ILI","06, ILI"
+geoname_id,7417465,1687801,Santiago,Santiago,Philippines,Philippines,PH,PH,"02, ISA","02, ISA"
+geoname_id,1704557,1704560,Mabini,Mabini,Philippines,Philippines,PH,PH,"40, BTG","40, BTG"
+geoname_id,7575600,1690321,San Antonio,San Antonio,Philippines,Philippines,PH,PH,"03, ZMB","03, ZMB"
+geoname_id,3372707,3372709,Ribeira Grande,Ribeira Grande,Portugal,Portugal,PT,PT,20,20
+geoname_id,672802,672803,Moșteni,Moșteni,Romania,Romania,RO,RO,TR,TR
+geoname_id,831165,464625,Zarechnyy,Zarechnyy,Russia,Russia,RU,RU,PNZ,PNZ
+geoname_id,563721,563719,Dyurtyuli,Dyurtyuli,Russia,Russia,RU,RU,BA,BA
+geoname_id,6268273,824070,Bugry,Bugry,Russia,Russia,RU,RU,LEN,LEN
+geoname_id,2019894,2019892,Mogoytuy,Mogoytuy,Russia,Russia,RU,RU,ZAB,ZAB
+geoname_id,486185,486186,Suoyarvi,Suoyarvi,Russia,Russia,RU,RU,KR,KR
+geoname_id,488501,488881,Starobaltachevo,Starobaltachevo,Russia,Russia,RU,RU,BA,BA
+geoname_id,203035,203112,Butare,Butare,Rwanda,Rwanda,RW,RW,5,5
+geoname_id,1003762,1003763,Frankfort,Frankfort,South Africa,South Africa,ZA,ZA,FS,FS
+geoname_id,11428151,983038,Letaba,Letaba,South Africa,South Africa,ZA,ZA,LP,LP
+geoname_id,1014744,1014747,Bultfontein,Bultfontein,South Africa,South Africa,ZA,ZA,FS,FS
+geoname_id,2726517,2726519,Alnö,Alnö,Sweden,Sweden,SE,SE,Y,Y
+geoname_id,2697307,604779,Långsele,Långsele,Sweden,Sweden,SE,SE,AC,AC
+geoname_id,2599335,2723655,Bälinge,Bälinge,Sweden,Sweden,SE,SE,C,C
+geoname_id,317324,317241,Demirci,Demirci,Türkiye,Türkiye,TR,TR,45,45
+geoname_id,697398,697396,Petrovka,Petrovka,Ukraine,Ukraine,UA,UA,43,43
+geoname_id,704382,704381,Krasnogvardeyskoye,Krasnogvardeyskoye,Ukraine,Ukraine,UA,UA,43,43
+geoname_id,709950,709943,Dniprovske,Dniprovske,Ukraine,Ukraine,UA,UA,12,12
+geoname_id,709547,709546,Dubliany,Dubliany,Ukraine,Ukraine,UA,UA,46,46
+geoname_id,4926725,4265230,Springville,Springville,United States,United States,US,US,IN,IN
