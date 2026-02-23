@@ -198,6 +198,7 @@ transaction.
   "ip_address": "2001:db8::ff00:42:8329",
   "session_age": 3600.5,
   "session_id": "c2ffa1b7-f5c5-4702-beb2-4254794fe391",
+  "tracking_token": "abc123...",
   "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.89 Safari/537.36"
 }
 ```
@@ -233,6 +234,12 @@ transaction.
   An ID that uniquely identifies a visitor's session on the site.
 
   [Learn more about the /device/session\_id input on our Knowledge Base.](https://support.maxmind.com/knowledge-base/articles/device-inputs-minfraud#session-information)
+  {{</minfraud-schema-row>}}
+
+  {{< minfraud-schema-row key="tracking_token" type="request" valueType="string" >}}
+  The token returned by the [Device Tracking Add-On](/minfraud/track-devices) `trackDevice()` function, used for explicit device linking. When provided, this token enables high-confidence device matching that does not rely on IP address alone.
+
+  [Learn more about explicit device linking on our device tracking page.](/minfraud/track-devices#explicit-device-linking)
   {{</minfraud-schema-row>}}
 {{</ schema-table >}}
 
