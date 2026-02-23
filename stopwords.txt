@@ -42,6 +42,7 @@ DOCOMO
 Deno
 dialup
 Digi
+DuckDB
 dmaxminddb
 Đồng
 Economico
