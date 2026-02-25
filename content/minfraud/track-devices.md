@@ -204,12 +204,6 @@ MaxMind's servers:
 - `script-src`: `device.maxmind.com`
 - `connect-src`: `d-ipv4.mmapiws.com`, `d-ipv6.mmapiws.com`
 
-## Custom hostname
-
-You can configure a custom `hostname` option when calling `trackDevice()` to
-serve the device tracking script from your own domain. This can help bypass
-ad-blockers that may block requests to third-party domains.
-
 ## Cookie and web storage usage
 
 The device tracking add-on uses cookies and local storage as methods of
