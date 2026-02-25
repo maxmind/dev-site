@@ -237,7 +237,7 @@ transaction.
   {{</minfraud-schema-row>}}
 
   {{< minfraud-schema-row key="tracking_token" type="request" valueType="string" >}}
-  The token returned by the [Device Tracking Add-On](/minfraud/track-devices) `trackDevice()` function, used for explicit device linking. When provided, this token enables high-confidence device matching that does not rely on IP address alone.
+  The token returned by the [Device Tracking Add-On](/minfraud/track-devices) `trackDevice()` function, used for explicit device linking. When provided, this token enables high-confidence device matching that does not rely on the IP address alone.
 
   [Learn more about explicit device linking on our device tracking page.](/minfraud/track-devices#explicit-device-linking)
   {{</minfraud-schema-row>}}
