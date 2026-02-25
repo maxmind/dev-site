@@ -1395,6 +1395,8 @@ this array for issues when integrating the web service.
   | `SHIPPING_COUNTRY_NOT_FOUND` | The shipping country could not be found in our database. This may impact our ability to provide accurate distance calculations.                                                                                                                           |
   | `SHIPPING_POSTAL_NOT_FOUND`  | The shipping postal code could not be found in our database. This may impact our ability to provide accurate distance calculations.                                                                                                                            |
   | `SHIPPING_REGION_NOT_FOUND`  | The shipping region could not be found in our database. This may impact our ability to provide accurate distance calculations.                                                                                                                            |
+  | `TRACKING_TOKEN_INVALID`     | The tracking token provided was invalid or malformed.                                                                                                                                                                                                     |
+  | `TRACKING_TOKEN_NOT_FOUND`   | The tracking token provided was not found in our system.                                                                                                                                                                                                  |
   {{</minfraud-schema-row>}}
 
   {{< minfraud-schema-row key="warning" type="response" valueType="string" valueTypeNote="max length: 255" score="true" insights="true" factors="true" >}}
