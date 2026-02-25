@@ -195,7 +195,7 @@ await fetch('/your-api/transaction', {
 - Tokens should be treated as **transient**. Generate a fresh token for each
   session or transaction rather than storing tokens long-term.
 
-### Content Security Policy (CSP) requirements
+## Content Security Policy (CSP) requirements
 
 If your site uses a Content Security Policy, you will need to add the following
 directives to allow the device tracking script to load and communicate with
@@ -204,7 +204,7 @@ MaxMind's servers:
 - `script-src`: `device.maxmind.com`
 - `connect-src`: `d-ipv4.mmapiws.com`, `d-ipv6.mmapiws.com`
 
-### Custom hostname
+## Custom hostname
 
 You can configure a custom `hostname` option when calling `trackDevice()` to
 serve the device tracking script from your own domain. This can help bypass
