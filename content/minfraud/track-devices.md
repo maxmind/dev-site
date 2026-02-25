@@ -78,7 +78,7 @@ and provides direct access to the tracking result.
       })
     )
     .then(({ trackingToken }) => {
-      // Store the tracking token to include in your minFraud API request
+      // Optionally capture the tracking token for explicit device linking
       console.log('Tracking token:', trackingToken);
     })
     .catch((e) => console.error(e));
@@ -101,7 +101,7 @@ const { trackingToken } = await trackDevice({
   accountId: MAXMIND_ACCOUNT_ID,
 });
 
-// Store the tracking token to include in your minFraud API request
+// Optionally capture the tracking token for explicit device linking
 console.log('Tracking token:', trackingToken);
 ```
 
@@ -110,7 +110,7 @@ full API documentation.
 
 ## Explicit device linking
 
-By default, the minFraud service matches devices using IP address. This works
+By default, the minFraud service matches devices using IP addresses. This works
 well in most cases, but IP-based matching can be less reliable when multiple
 users share the same IP address. Common scenarios include:
 
@@ -121,7 +121,7 @@ users share the same IP address. Common scenarios include:
 - **VPNs** where multiple users route traffic through the same VPN endpoint.
 
 Explicit device linking solves this by using a `tracking_token` to match devices
-with high confidence, independent of IP address.
+with high confidence, independent of the IP address.
 
 ### How it works
 
