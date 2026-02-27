@@ -18,6 +18,7 @@ ARTERIA
 asnum
 asyncio
 Axiata
+Bahnhof
 Bassée
 Berhad
 Bezek
@@ -47,6 +48,7 @@ DuckDB
 dmaxminddb
 Đồng
 Economico
+eood
 errno
 États
 Etisalat
