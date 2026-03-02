@@ -63,10 +63,6 @@ and provides direct access to the tracking result.
         accountId: MAXMIND_ACCOUNT_ID,
       })
     )
-    .then(({ trackingToken }) => {
-      // Optionally capture the tracking token for explicit device linking
-      console.log('Tracking token:', trackingToken);
-    })
     .catch((e) => console.error(e));
 </script>
 ```
@@ -83,18 +79,20 @@ npm install @maxmind/device-tracking
 ```javascript
 import { trackDevice } from '@maxmind/device-tracking';
 
-const { trackingToken } = await trackDevice({
+await trackDevice({
   accountId: MAXMIND_ACCOUNT_ID,
 });
-
-// Optionally capture the tracking token for explicit device linking
-console.log('Tracking token:', trackingToken);
 ```
 
 See the [package README](https://github.com/maxmind/device-tracking#readme) for
 full API documentation.
 
 ## Explicit device linking examples
+
+The following examples show how to capture the tracking token on the client and
+send it to your backend for inclusion in a minFraud API request. For more
+background on explicit device linking, see [Track
+Devices]({{< relref "/minfraud/track-devices" >}}).
 
 ### Module snippet
 
@@ -114,17 +112,6 @@ full API documentation.
 </script>
 ```
 
-On your backend, include the token in the minFraud API request:
-
-```json
-{
-  "device": {
-    "ip_address": "2001:db8::ff00:42:8329",
-    "tracking_token": "token-value-from-client"
-  }
-}
-```
-
 ### npm package
 
 ```javascript
@@ -140,6 +127,19 @@ await fetch('/your-api/transaction', {
   headers: { 'Content-Type': 'application/json' },
   body: JSON.stringify({ trackingToken }),
 });
+```
+
+### Backend API request
+
+On your backend, include the token in the minFraud API request:
+
+```json
+{
+  "device": {
+    "ip_address": "2001:db8::ff00:42:8329",
+    "tracking_token": "token-value-from-client"
+  }
+}
 ```
 
 ## Content Security Policy (CSP) requirements
