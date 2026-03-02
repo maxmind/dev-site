@@ -36,12 +36,14 @@ cfset
 CGNAT
 Chūō
 Clojars
+collectAndSend
 Comcel
 CPAN
 CRAN
 DACOM
 DOCOMO
 Deno
+DeviceTracker
 dialup
 Digi
 DuckDB
@@ -77,6 +79,7 @@ Kalifornien
 KHTML
 libmaxminddb
 libvmod
+lifecycleScope
 Linkem
 Ltda
 Luhansk
@@ -98,7 +101,9 @@ Norte
 Nubilum
 Odido
 omni
+onFailure
 Onfiber
+onSuccess
 OPAM
 OQRST
 oschwald
@@ -116,6 +121,7 @@ Réunion
 rgeolocate
 Rica
 Saltik
+SdkConfig
 Soluciones
 sprintf
 Srbija
@@ -166,6 +172,7 @@ ingenico
 interac
 iugu
 klarna
+Kotlin
 komoju
 mercadopago
 mirjeh
@@ -185,6 +192,7 @@ redpagos
 skrill
 synapsefi
 towah
+trackingToken
 trustly
 tsys
 verepay

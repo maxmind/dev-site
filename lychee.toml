@@ -39,6 +39,7 @@ exclude = [
     'https://www\.iso\.org/obp/ui/#iso:code:3166:ZA',          # ISO country code reference
     '^https://www\.maxmind\.com/en/accounts/',                  # MaxMind account pages (require login)
     '^https://search\.maven\.org/#',                            # Hash-based JS routing, not HTML fragments
+    '^https://github\.com/maxmind/device-android',              # README fragment not parseable
     '^https://github\.com/maxmind/device-tracking',             # README fragment not parseable
     'maxmind-ip-network-data#anycast',                          # Fragment not parseable on support site
     'fraud-prevention/overview#buy-now',                        # Fragment not parseable on maxmind.com

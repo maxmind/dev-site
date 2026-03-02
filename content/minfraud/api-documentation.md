@@ -45,13 +45,13 @@ on reported transactions. We also manually review many reported transactions to
 identify customizations and algorithmic improvements for each customer reporting
 feedback.
 
-### Device Tracking Add-on
+### Device Tracking Add-On
 
-You may optionally include the
-[Device Tracking JavaScript](/minfraud/track-devices) on your site that helps us
-identify the device your customer is using to determine whether it has been used
-in previous fraudulent transactions. The device information is factored into the
-scores returned through the minFraud service.
+You may optionally include the [Device Tracking Add-On](/minfraud/track-devices)
+on your site that helps us identify the device your customer is using to
+determine whether it has been used in previous fraudulent transactions. The
+device information is factored into the scores returned through the minFraud
+service.
 
 ## Timeout Errors
 

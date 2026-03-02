@@ -45,6 +45,16 @@ title = 'MaxMind'
       pageRef = '/minfraud/track-devices'
       parent = 'minFraud'
       weight = 30
+      [[menus.minfraud]]
+        name = 'Web'
+        pageRef = '/minfraud/track-devices/web'
+        parent = 'Track Devices'
+        weight = 10
+      [[menus.minfraud]]
+        name = 'Android'
+        pageRef = '/minfraud/track-devices/android'
+        parent = 'Track Devices'
+        weight = 20
     [[menus.minfraud]]
       name = 'minFraud Alerts'
       pageRef = '/minfraud/alerts'

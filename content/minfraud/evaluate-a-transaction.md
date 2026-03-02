@@ -21,7 +21,7 @@ so that the minFraud service can assign a device ID and begin collecting
 fingerprint information. This helps detect fraudsters if they change or enable
 proxies while browsing your website.
 
-Note that, in order to be effective, the Device Tracking Add-on must, at a
+Note that, in order to be effective, the Device Tracking Add-On must, at a
 minimum, be included on the page where the IP address is captured for a minFraud
 query.
 
@@ -49,9 +49,9 @@ Place the following code in the footer of the HTML webpage and replace
 </script>
 ```
 
-A [module snippet](/minfraud/track-devices#module-snippet) and an
-[npm package](/minfraud/track-devices#npm-package) are also available for sites
-targeting modern browsers.
+A [module snippet](/minfraud/track-devices/web#module-snippet) and an
+[npm package](/minfraud/track-devices/web#npm-package) are also available for
+sites targeting modern browsers.
 
 ### 2. Install the minFraud client library
 

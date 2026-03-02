@@ -1,21 +1,7 @@
 ---
 draft: false
-title: Track Devices
+title: Web
 ---
-
-The Device Tracking Add-On for the minFraud services identifies devices as they
-move across networks and enhances the ability of the minFraud services to detect
-fraud. If a fraudster changes proxies while they are browsing your website or
-between visits to your website, you may observe an increased risk score in the
-minFraud output associated with their transactions.
-
-We may increase the risk score if we detect order velocity on the device. We
-also return a
-[device ID](/minfraud/api-documentation/responses#schema--response--device__id)
-in minFraud Insights and Factors so that you can do your own modeling around
-device ID.
-
-## Recommended use
 
 The Device Tracking Add-On is JavaScript code for you to add to your website. It
 runs on a visiting device so that the minFraud service can assign a Device ID
@@ -27,7 +13,7 @@ enable proxies while browsing your website.
 To speed page load time, JavaScript should be placed in the footer of the HTML
 webpage.
 
-Note that, in order to be effective, the Device Tracking Add-on must, at a
+Note that, in order to be effective, the Device Tracking Add-On must, at a
 minimum, be included on the page where the IP address is captured for a minFraud
 query.
 
@@ -108,41 +94,9 @@ console.log('Tracking token:', trackingToken);
 See the [package README](https://github.com/maxmind/device-tracking#readme) for
 full API documentation.
 
-## Explicit device linking
+## Explicit device linking examples
 
-By default, the minFraud service matches devices using IP addresses. This works
-well in most cases, but IP-based matching can be less reliable when multiple
-users share the same IP address. Common scenarios include:
-
-- **Shared or corporate IPs** where many employees or users share a single
-  public IP address.
-- **Carrier-Grade NAT (CGNAT)** where an ISP assigns the same public IP to many
-  subscribers.
-- **VPNs** where multiple users route traffic through the same VPN endpoint.
-
-Explicit device linking solves this by using a `tracking_token` to match devices
-with high confidence, independent of the IP address.
-
-### How it works
-
-The `trackDevice()` function returns a Promise that resolves to an object
-containing a `trackingToken` string. When you pass this token to the minFraud
-API in the
-[`/device/tracking_token`](/minfraud/api-documentation/requests#schema--request--device)
-field, the service uses it to match the device directly. When a valid token is
-found, the device is matched with high confidence regardless of IP address
-changes.
-
-### Implementation steps
-
-1. Call `trackDevice()` on the client side and capture the returned
-   `trackingToken`.
-2. Pass the token to your backend (e.g., via a hidden form field, session
-   storage, or API call).
-3. Include the token in your minFraud API request's `device` object as
-   `tracking_token`.
-
-#### Web (module snippet)
+### Module snippet
 
 ```html
 <script type="module">
@@ -171,7 +125,7 @@ On your backend, include the token in the minFraud API request:
 }
 ```
 
-#### Web (npm package)
+### npm package
 
 ```javascript
 import { trackDevice } from '@maxmind/device-tracking';
@@ -187,13 +141,6 @@ await fetch('/your-api/transaction', {
   body: JSON.stringify({ trackingToken }),
 });
 ```
-
-### Token handling
-
-- The tracking token is an **opaque string**. Do not parse it or make
-  assumptions about its format, as the format may change without notice.
-- Tokens should be treated as **transient**. Generate a fresh token for each
-  session or transaction rather than storing tokens long-term.
 
 ## Content Security Policy (CSP) requirements
 
