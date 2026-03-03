@@ -94,7 +94,7 @@ send it to your backend for inclusion in a minFraud API request. For more
 background on explicit device linking, see [Track
 Devices]({{< relref "/minfraud/track-devices" >}}).
 
-### Module snippet
+### Module snippet with token capture
 
 ```html
 <script type="module">
@@ -112,7 +112,7 @@ Devices]({{< relref "/minfraud/track-devices" >}}).
 </script>
 ```
 
-### npm package
+### npm package with token capture
 
 ```javascript
 import { trackDevice } from '@maxmind/device-tracking';
