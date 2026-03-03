@@ -11,9 +11,9 @@ associated with their transactions.
 
 We may increase the risk score if we detect order velocity on the device. We
 also return a
-[device ID](/minfraud/api-documentation/responses#schema--response--device__id)
+[Device ID](/minfraud/api-documentation/responses#schema--response--device__id)
 in minFraud Insights and Factors so that you can do your own modeling around
-device ID.
+Device ID.
 
 <!-- prettier-ignore-start -->
 
@@ -23,7 +23,7 @@ device ID.
   text: "Track devices on your website using JavaScript."
 - heading: "Android"
   url: "/minfraud/track-devices/android"
-  text: "Track devices in your Android app using the MaxMind Device SDK."
+  text: "Track devices in your Android app using Kotlin."
 {{</ link-group/container >}}
 
 <!-- prettier-ignore-end -->
