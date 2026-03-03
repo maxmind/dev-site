@@ -5,9 +5,9 @@ title: Track Devices
 
 The Device Tracking Add-On for the minFraud services identifies devices as they
 move across networks and enhances the ability of the minFraud services to detect
-fraud. If a fraudster changes proxies while they are browsing your website or
-between visits to your website, you may observe an increased risk score in the
-minFraud output associated with their transactions.
+fraud. If a fraudster changes proxies while they are using your site or app, or
+between sessions, you may observe an increased risk score in the minFraud output
+associated with their transactions.
 
 We may increase the risk score if we detect order velocity on the device. We
 also return a

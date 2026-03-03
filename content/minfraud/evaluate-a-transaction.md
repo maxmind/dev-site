@@ -3,9 +3,9 @@ draft: false
 title: Evaluate a Transaction
 ---
 
-Evaluating a transaction consists of setting up device tracking on your website,
-creating an object that contains the details of the transaction, and then
-submitting the transaction to the minFraud service for evaluation.
+Evaluating a transaction consists of setting up device tracking, creating an
+object that contains the details of the transaction, and then submitting the
+transaction to the minFraud service for evaluation.
 
 ## Implementation
 
@@ -14,19 +14,18 @@ our minFraud services. If you cannot or do not wish to use our client libraries,
 please review our [minFraud API Documentation page](/minfraud/api-documentation)
 for details on our JSON API.
 
-### 1. Add device tracking to your website
+### 1. Add device tracking to your site or app
 
 The [Device Tracking Add-On](/minfraud/track-devices) runs on a visiting device
 so that the minFraud service can assign a device ID and begin collecting
 fingerprint information. This helps detect fraudsters if they change or enable
-proxies while browsing your website.
+proxies while using your site or app.
 
-Note that, in order to be effective, the Device Tracking Add-On must, at a
-minimum, be included on the page where the IP address is captured for a minFraud
-query.
+Note that, in order to be effective, device tracking must be active when the IP
+address is captured for a minFraud query.
 
-Place the following code in the footer of the HTML webpage and replace
-`MAXMIND_ACCOUNT_ID` with your
+For web integration, place the following code in the footer of the HTML webpage
+and replace `MAXMIND_ACCOUNT_ID` with your
 [MaxMind account ID](https://support.maxmind.com/knowledge-base/articles/find-your-maxmind-account-id):
 
 ```html
@@ -51,7 +50,8 @@ Place the following code in the footer of the HTML webpage and replace
 
 A [module snippet](/minfraud/track-devices/web#module-snippet) and an
 [npm package](/minfraud/track-devices/web#npm-package) are also available for
-sites targeting modern browsers.
+sites targeting modern browsers. For Android apps, see the
+[Android SDK guide](/minfraud/track-devices/android).
 
 ### 2. Install the minFraud client library
 
