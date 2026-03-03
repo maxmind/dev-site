@@ -43,6 +43,7 @@ with your
 [MaxMind account ID](https://support.maxmind.com/knowledge-base/articles/find-your-maxmind-account-id).
 
 ```kotlin
+import android.app.Application
 import com.maxmind.device.DeviceTracker
 import com.maxmind.device.SdkConfig
 
@@ -62,11 +63,12 @@ Call `collectAndSend()` to collect device data and send it to MaxMind. This is a
 suspend function designed for use with Kotlin coroutines.
 
 ```kotlin
+import android.util.Log
 import com.maxmind.device.DeviceTracker
 
 lifecycleScope.launch {
     DeviceTracker.getInstance().collectAndSend()
-        .onSuccess { result ->
+        .onSuccess { _ ->
             Log.d("MaxMind", "Device data sent successfully")
         }
         .onFailure { error ->
@@ -85,6 +87,9 @@ Capture the `trackingToken` from the `collectAndSend()` result and pass it to
 your backend for inclusion in the minFraud API request.
 
 ```kotlin
+import android.util.Log
+import com.maxmind.device.DeviceTracker
+
 lifecycleScope.launch {
     DeviceTracker.getInstance().collectAndSend()
         .onSuccess { trackingResult ->
