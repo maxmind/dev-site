@@ -808,7 +808,7 @@ associated with the IP address passed in the request.
   {{</minfraud-schema-row>}}
 
   {{< minfraud-schema-row key="id" type="response" valueType="string" valueTypeNote="format: UUID" insights="true" factors="true" >}}
-  A UUID that MaxMind uses for the device associated with this IP address. This is only available if you are using the [Device Tracking Add-on](/minfraud/api-documentation#device-tracking-add-on).
+  A UUID that MaxMind uses for the device associated with this IP address. This is only available if you are using the [Device Tracking Add-On](/minfraud/api-documentation#device-tracking-add-on).
   {{</minfraud-schema-row>}}
 
   {{< minfraud-schema-row key="last_seen" type="response" valueType="string" valueTypeNote="max length: 255" insights="true" factors="true" >}}

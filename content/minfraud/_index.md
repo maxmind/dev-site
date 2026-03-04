@@ -26,7 +26,7 @@ and Factors services.
   text: "Use the Report Transaction API to report chargebacks, false positives, suspected fraud, or spam/abuse."
 - heading: "Integrate Device Tracking"
   url: "/minfraud/track-devices"
-  text: "Capture more data and catch more fraud using our JavaScript device tracking library."
+  text: "Capture more data and catch more fraud using our device tracking libraries."
 {{</ link-group/container >}}
 
 <!-- prettier-ignore-end -->

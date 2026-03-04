@@ -21,13 +21,13 @@ services.
 Changes to the proxy detection web service are documented in our
 [release notes](/minfraud/release-notes).
 
-## Device Tracking Add-on
+## Device Tracking Add-On
 
-You may optionally include in your site
-[some JavaScript](/minfraud/track-devices) that helps us identify the device
+You may optionally include the
+[Device Tracking Add-On](/minfraud/track-devices) to help us identify the device
 your customer is using to determine whether it has been used in previous
 fraudulent transactions. The device information passed to MaxMind via the Device
-Tracking Add-on is factored into the proxyScore returned when you query the HTTP
+Tracking Add-On is factored into the proxyScore returned when you query the HTTP
 API.
 
 ## HTTP-based API
