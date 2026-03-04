@@ -50,6 +50,7 @@
     "lint:styles": "stylelint ./assets/scss/*.{css,scss,sass}",
     "lint:shortcode-parity": "node --experimental-strip-types ./bin/check-shortcode-parity.ts",
     "lint:prettierignore-rawhtml": "node --experimental-strip-types ./bin/check-prettierignore-rawhtml.ts",
+    "lint:internal-links": "node --experimental-strip-types ./bin/check-internal-links.ts",
     "prettier:ts": "prettier --write './assets/js/**'",
     "format:rawhtml": "pnpm exec tsc -p tsconfig.format-rawhtml.json && node dist/format-rawhtml.js"
   },

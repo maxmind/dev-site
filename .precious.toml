@@ -99,3 +99,14 @@ cmd = [
 invoke = "once"
 include = ["content/**/*.md", ".prettierignore"]
 ok-exit-codes = 0
+
+[commands.check-internal-links]
+type = "lint"
+cmd = [
+  "pnpm",
+  "run",
+  "lint:internal-links"
+]
+path-args = "absolute-file"
+include = ["content/**/*.md", "layouts/**/*.html"]
+ok-exit-codes = 0
