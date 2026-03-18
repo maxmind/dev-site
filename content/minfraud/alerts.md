@@ -134,6 +134,7 @@ list is subject to change.
 
 - `34.27.174.58`
 - `35.186.179.139`
+- `2600:1900:4090:26a2::/64`
 
 #### Signed requests
 
@@ -188,9 +189,9 @@ end
 
 ```go
 import (
-	"crypto/hmac"
-	"crypto/sha256"
-	"encoding/hex"
+    "crypto/hmac"
+    "crypto/sha256"
+    "encoding/hex"
 )
 
 func verifySignature(secret, header, query string) (bool, error) {
