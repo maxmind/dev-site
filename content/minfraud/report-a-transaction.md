@@ -310,7 +310,7 @@ The minFraud API accepts input as JSON in the body of an HTTP POST. The JSON
 document should consist of a single object. That object may contain the
 following keys (key names are case-sensitive):
 
-| Name                | Type        | Description                                                                                                                                                                                                                |
+| Data field name     | Type        | Data field description                                                                                                                                                                                                     |
 | ------------------- | ----------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **ip_address**      | string      | _Conditionally required.[^1]_ The IP address of the customer placing the order. This should be passed as a string like “44.55.66.77” or “2001:db8::2:1”.                                                                   |
 | **tag**             | string      | **Required.** A string indicating the likelihood that a transaction may be fraudulent. Possible values: `not_fraud`, `suspected_fraud`, `spam_or_abuse`, or `chargeback`.                                                  |
