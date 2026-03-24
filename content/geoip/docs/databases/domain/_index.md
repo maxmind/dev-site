@@ -38,9 +38,9 @@ These are named `GeoIP2-Domain-Blocks-IPv4.csv` and
   <table>
     <tbody>
       <tr>
-        <th>Name</th>
+        <th>Data field name</th>
         <th>Type</th>
-        <th>Description</th>
+        <th>Data field description</th>
       </tr>
 
       <tr>

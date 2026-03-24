@@ -11,9 +11,9 @@ The GeoIP ISP binary database contains the following fields for each network.
   <table>
     <tbody>
       <tr>
-        <th>Name</th>
+        <th>Data field name</th>
         <th>Type</th>
-        <th>Description</th>
+        <th>Data field description</th>
       </tr>
 
       <tr>
