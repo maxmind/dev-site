@@ -5,7 +5,6 @@
   },
   "description": "Developer website for MaxMind",
   "devDependencies": {
-    "@eslint/compat": "^2.0.2",
     "@eslint/eslintrc": "^3.3.4",
     "@eslint/js": "^9.39.3",
     "@types/node": "^25.3.3",
