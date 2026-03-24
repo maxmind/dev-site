@@ -1,21 +1,9 @@
-import { fixupPluginRules } from '@eslint/compat';
-import { FlatCompat } from '@eslint/eslintrc';
 import js from '@eslint/js';
 import prettier from 'eslint-config-prettier';
 import security from 'eslint-plugin-security';
 import simpleImportSort from 'eslint-plugin-simple-import-sort';
 import globals from 'globals';
-import path from 'node:path';
-import { fileURLToPath } from 'node:url';
 import tseslint from 'typescript-eslint';
-
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
-const compat = new FlatCompat({
-  baseDirectory: __dirname,
-  recommendedConfig: js.configs.recommended,
-  allConfig: js.configs.all,
-});
 
 export default tseslint.config(
   js.configs.recommended,
@@ -33,8 +21,7 @@ export default tseslint.config(
   },
   {
     plugins: {
-      '@typescript-eslint': tseslint.plugin,
-      security: fixupPluginRules(security),
+      security,
       'simple-import-sort': simpleImportSort,
     },
 
@@ -168,7 +155,8 @@ export default tseslint.config(
         allowTernary: true
     }],
     },
-  }, {
+  },
+  {
   files: [
     'content/**',
   ],
@@ -178,15 +166,8 @@ export default tseslint.config(
       0,
     ],
   },
-}, ...compat.extends(
-  'plugin:@typescript-eslint/eslint-recommended',
-  'plugin:@typescript-eslint/recommended',
-).map(config => ({
-  ...config,
-  files: [
-    '**/*.ts',
-  ],
-})), {
+  },
+  {
   files: [
     '**/*.ts',
   ],

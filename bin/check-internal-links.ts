@@ -18,8 +18,11 @@ for (const filePath of files) {
   for (let i = 0; i < lines.length; i++) {
     if (PATTERN.test(lines[i])) {
       hasErrors = true;
+      const location = `${filePath}:${i + 1}`;
       console.error(
-        `⚠️ ${filePath}:${i + 1}: Found hardcoded internal link. Use a root-relative path (e.g., /geoip/...) instead of https://dev.maxmind.com/...`
+        `⚠️ ${location}: Found hardcoded internal link. ` +
+          'Use a root-relative path (e.g., /geoip/...) instead of ' +
+          'https://dev.maxmind.com/...'
       );
     }
   }
