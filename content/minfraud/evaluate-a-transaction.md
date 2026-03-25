@@ -1142,6 +1142,15 @@ asyncio.run(async_example(42, 'license_key'))
 ```
 
 ```ruby
+require 'minfraud'
+
+# Configure the client.
+Minfraud.configure do |c|
+  c.account_id = 10
+  c.license_key = 'LICENSEKEY'
+  c.enable_validation = true
+end
+
 # Prepare the request.
 assessment = Minfraud::Assessments.new(
   device: {
