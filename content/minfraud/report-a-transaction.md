@@ -204,32 +204,9 @@ from minfraud import Client
 account_id = 10
 license_key = 'LICENSEKEY'
 
-client = Client(account_id, license_key)
-
-# A valid tag and at least one of the following are required parameters:
-# ip_address, maxmind_id, minfraud_id, transaction_id.
-transaction_report = {
-  'tag': 'chargeback',
-  # The following key/values are not mandatory but are encouraged
-  'ip_address': '1.1.1.1',
-  'maxmind_id': 'abcd1234',
-  'minfraud_id': '01c25cb0-f067-4e02-8ed0-a094c580f5e4',
-  'transaction_id': 'txn123',
-  'chargeback_code': 'BL',
-  'notes': 'Suspicious account behavior',
-}
-
-client.report(transaction_report)
-
-# If you want to use asynchronous requests
-import asyncio
-from minfraud import AsyncClient
-
-async_client = AsyncClient(account_id, license_key)
-
-# A valid tag and at least one of the following are required parameters:
-# ip_address, maxmind_id, minfraud_id, transaction_id.
-async def report():
+with Client(account_id, license_key) as client:
+  # A valid tag and at least one of the following are required parameters:
+  # ip_address, maxmind_id, minfraud_id, transaction_id.
   transaction_report = {
     'tag': 'chargeback',
     # The following key/values are not mandatory but are encouraged
@@ -240,7 +217,28 @@ async def report():
     'chargeback_code': 'BL',
     'notes': 'Suspicious account behavior',
   }
-  await async_client.report(transaction_report)
+
+  client.report(transaction_report)
+
+# If you want to use asynchronous requests
+import asyncio
+from minfraud import AsyncClient
+
+async def report():
+  async with AsyncClient(account_id, license_key) as client:
+    # A valid tag and at least one of the following are required parameters:
+    # ip_address, maxmind_id, minfraud_id, transaction_id.
+    transaction_report = {
+      'tag': 'chargeback',
+      # The following key/values are not mandatory but are encouraged
+      'ip_address': '1.1.1.1',
+      'maxmind_id': 'abcd1234',
+      'minfraud_id': '01c25cb0-f067-4e02-8ed0-a094c580f5e4',
+      'transaction_id': 'txn123',
+      'chargeback_code': 'BL',
+      'notes': 'Suspicious account behavior',
+    }
+    await client.report(transaction_report)
 
 asyncio.run(report())
 ```
