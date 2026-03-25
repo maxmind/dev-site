@@ -806,7 +806,6 @@ let transaction;
 
 try {
   transaction = new minFraud.Transaction({
-    // device is required
     device: new minFraud.Device({
       ipAddress: '1.1.1.1',
       acceptLanguage: 'en-US,en;q=0.8',
