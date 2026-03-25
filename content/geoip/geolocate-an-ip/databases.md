@@ -169,7 +169,9 @@ require 'maxmind/geoip2'
 
 # This reader object should be reused across lookups as creation of it is
 # expensive.
-reader = MaxMind::GeoIP2::Reader.new('/path/to/maxmind-database.mmdb')
+reader = MaxMind::GeoIP2::Reader.new(
+    database: '/path/to/maxmind-database.mmdb',
+)
 
 record = reader.city('128.101.101.101')
 
