@@ -639,7 +639,9 @@ public class MinFraudExample
                 DiscountCode = "FIRST",
                 AffiliateId = "af12",
                 SubaffiliateId = "saf42",
-                ReferrerUri = new Uri("http://www.amazon.com/")
+                ReferrerUri = new Uri("http://www.amazon.com/"),
+                IsGift = true,
+                HasGiftMessage = true
             },
             ShoppingCart = new List<ShoppingCartItem>
             {
@@ -740,6 +742,8 @@ Transaction request = new Transaction.Builder(
             .discountCode("10OFF")
             .referrerUri(new URI("https://www.google.com/"))
             .subaffiliateId("saf9")
+            .isGift(true)
+            .hasGiftMessage(true)
             .build()
     ).payment(
         new Payment.Builder()
@@ -978,7 +982,7 @@ $request = $mf->withDevice(
     currency: 'USD',
     discountCode: 'FIRST',
     isGift: true,
-    hasGiftMessage: false,
+    hasGiftMessage: true,
     affiliateId: 'af12',
     subaffiliateId: 'saf42',
     referrerUri: 'http://www.amazon.com/'
@@ -1114,7 +1118,9 @@ request = {
         'subaffiliate_id': 'saf42',
         'discount_code': 'FIRST',
         'currency': 'USD',
-        'amount': 323.21
+        'amount': 323.21,
+        'is_gift': True,
+        'has_gift_message': True
     },
     'custom_inputs': {
         'section': 'news',
@@ -1225,7 +1231,7 @@ assessment = Minfraud::Assessments.new(
     currency:         'USD',
     discount_code:    'FIRST',
     is_gift:          true,
-    has_gift_message: false,
+    has_gift_message: true,
     affiliate_id:     'af12',
     subaffiliate_id:  'saf42',
     referrer_uri:     'http://www.amazon.com/',
