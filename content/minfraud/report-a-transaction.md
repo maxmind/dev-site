@@ -40,7 +40,7 @@ Install-Package MaxMind.MinFraud
 <dependency>
   <groupId>com.maxmind.minfraud</groupId>
   <artifactId>minfraud</artifactId>
-  <version>4.0.0</version>
+  <version>4.2.0</version>
 </dependency>
 
 // Or install via Gradle
@@ -48,7 +48,7 @@ repositories {
   mavenCentral()
 }
 dependencies {
-  implementation 'com.maxmind.minfraud:minfraud:4.0.0'
+  implementation 'com.maxmind.minfraud:minfraud:4.2.0'
 }
 ```
 
