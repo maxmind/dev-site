@@ -111,12 +111,14 @@ string licenseKey = "LICENSEKEY";
 
 var client = new WebServiceClient(accountId, licenseKey);
 
+// A valid Tag and at least one of the following are required parameters:
+// IPAddress, MaxMindId, MinFraudId, TransactionId.
 var report = new TransactionReport
 {
-    IPAddress = IPAddress.Parse("1.1.1.1"),
     Tag = TransactionReportTag.Chargeback,
 
     // The following key/values are not mandatory but are encouraged
+    IPAddress = IPAddress.Parse("1.1.1.1"),
     MaxMindId = "abcd1234",
     MinFraudId = new Guid("01c25cb0-f067-4e02-8ed0-a094c580f5e4"),
     TransactionId = "txn123",
@@ -133,8 +135,11 @@ String licenseKey = "LICENSEKEY";
 
 WebServiceClient client = new WebServiceClient.Builder(accountId, licenseKey).build();
 
-TransactionReport transaction = new TransactionReport.Builder(InetAddress.getByName("1.1.1.1"), Tag.Chargeback)
+// A valid tag and at least one of the following are required parameters:
+// ipAddress, maxmindId, minfraudId, transactionId.
+TransactionReport transaction = new TransactionReport.Builder(Tag.CHARGEBACK)
     // The following key/values are not mandatory but are encouraged
+    .ipAddress(InetAddress.getByName("1.1.1.1"))
     .maxmindId("abcd1234")
     .minfraudId(UUID.fromString("01c25cb0-f067-4e02-8ed0-a094c580f5e4"))
     .transactionId("txn123")
@@ -153,11 +158,13 @@ const licenseKey = 'LICENSEKEY';
 
 const client = new minFraud.Client(accountId, licenseKey);
 
+// A valid tag and at least one of the following are required parameters:
+// ipAddress, maxmindId, minfraudId, transactionId.
 const transactionReport = new minFraud.TransactionReport({
-    ipAddress: '1.1.1.1',
     tag: minFraud.Constants.Tag.CHARGEBACK,
 
     // The following key/values are not mandatory but are encouraged
+    ipAddress: '1.1.1.1',
     maxmindId: 'abcd1234',
     minfraudId: '01c25cb0-f067-4e02-8ed0-a094c580f5e4',
     transactionId: 'txn123',
@@ -177,10 +184,12 @@ $licenseKey = 'LICENSEKEY';
 
 $rt = new ReportTransaction($accountId, $licenseKey);
 
+// A valid tag and at least one of the following are required parameters:
+// ipAddress, maxmindId, minfraudId, transactionId.
 $rt->report(
-    ipAddress: '1.1.1.1',
     tag: 'chargeback',
     // The following key/values are not mandatory but are encouraged
+    ipAddress: '1.1.1.1',
     maxmindId: 'abcd1234',
     minfraudId: '01c25cb0-f067-4e02-8ed0-a094c580f5e4',
     transactionId: 'txn123',
@@ -197,10 +206,12 @@ license_key = 'LICENSEKEY'
 
 client = Client(account_id, license_key)
 
+# A valid tag and at least one of the following are required parameters:
+# ip_address, maxmind_id, minfraud_id, transaction_id.
 transaction_report = {
-  'ip_address': '1.1.1.1',
   'tag': 'chargeback',
   # The following key/values are not mandatory but are encouraged
+  'ip_address': '1.1.1.1',
   'maxmind_id': 'abcd1234',
   'minfraud_id': '01c25cb0-f067-4e02-8ed0-a094c580f5e4',
   'transaction_id': 'txn123',
@@ -216,11 +227,13 @@ from minfraud import AsyncClient
 
 async_client = AsyncClient(account_id, license_key)
 
+# A valid tag and at least one of the following are required parameters:
+# ip_address, maxmind_id, minfraud_id, transaction_id.
 async def report():
   transaction_report = {
-    'ip_address': '1.1.1.1',
     'tag': 'chargeback',
     # The following key/values are not mandatory but are encouraged
+    'ip_address': '1.1.1.1',
     'maxmind_id': 'abcd1234',
     'minfraud_id': '01c25cb0-f067-4e02-8ed0-a094c580f5e4',
     'transaction_id': 'txn123',
@@ -236,12 +249,15 @@ asyncio.run(report())
 Minfraud.configure do |c|
   c.account_id = 10
   c.license_key = 'LICENSEKEY'
+  c.enable_validation = true
 end
 
+# A valid tag and at least one of the following are required parameters:
+# ip_address, maxmind_id, minfraud_id, transaction_id.
 txn = Minfraud::Components::Report::Transaction.new(
-  ip_address:      '1.1.1.1',
   tag:             :chargeback,
   # The following key/values are not mandatory but are encouraged
+  ip_address:      '1.1.1.1',
   maxmind_id:      'abcd1234',
   minfraud_id:     '01c25cb0-f067-4e02-8ed0-a094c580f5e4',
   transaction_id:  'txn123',
