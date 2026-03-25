@@ -165,6 +165,7 @@ async_client = AsyncClient(account_id, license_key)
 Minfraud.configure do |c|
   c.account_id = 10
   c.license_key = 'LICENSEKEY'
+  c.enable_validation = true
 end
 ```
 
