@@ -629,7 +629,8 @@ public class MinFraudExample
                 BankPhoneNumber = "555-555-5555",
                 AvsResult = 'Y',
                 CvvResult = 'N',
-                LastDigits = "1234"
+                LastDigits = "1234",
+                Token = "123456abc1234"
             },
             Order = new Order
             {
@@ -717,6 +718,7 @@ Transaction request = new Transaction.Builder(
             .cvvResult('Y')
             .issuerIdNumber("411111")
             .lastDigits("1234")
+            .token("123456abc1234")
             .build()
     ).email(
         new Email.Builder()
@@ -969,7 +971,8 @@ $request = $mf->withDevice(
     bankPhoneCountryCode: '1',
     bankPhoneNumber: '555-555-5555',
     avsResult: 'Y',
-    cvvResult: 'N'
+    cvvResult: 'N',
+    token: '123456abc1234'
 )->withOrder(
     amount: 323.21,
     currency: 'USD',
@@ -1086,7 +1089,8 @@ request = {
         'last_digits': '1234',
         'cvv_result': 'N',
         'bank_name': 'Test Bank',
-        'issuer_id_number': '411111'
+        'issuer_id_number': '411111',
+        'token': '123456abc1234'
     },
     'payment': {
         'decline_code': 'invalid number',
