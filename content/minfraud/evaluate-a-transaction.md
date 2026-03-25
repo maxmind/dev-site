@@ -847,6 +847,7 @@ try {
       city: 'Waltham',
       company: 'Company, Inc.',
       country: 'US',
+      deliverySpeed: minFraud.Constants.DeliverySpeed.Expedited,
       firstName: 'First',
       lastName: 'Last',
       phoneCountryCode: '1',
