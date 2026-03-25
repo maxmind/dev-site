@@ -70,7 +70,7 @@ Install-Package MaxMind.MinFraud
 <dependency>
   <groupId>com.maxmind.minfraud</groupId>
   <artifactId>minfraud</artifactId>
-  <version>4.0.0</version>
+  <version>4.2.0</version>
 </dependency>
 
 // Or install via Gradle
@@ -78,7 +78,7 @@ repositories {
   mavenCentral()
 }
 dependencies {
-  implementation 'com.maxmind.minfraud:minfraud:4.0.0'
+  implementation 'com.maxmind.minfraud:minfraud:4.2.0'
 }
 ```
 
@@ -165,6 +165,7 @@ async_client = AsyncClient(account_id, license_key)
 Minfraud.configure do |c|
   c.account_id = 10
   c.license_key = 'LICENSEKEY'
+  c.enable_validation = true
 end
 ```
 
@@ -628,7 +629,8 @@ public class MinFraudExample
                 BankPhoneNumber = "555-555-5555",
                 AvsResult = 'Y',
                 CvvResult = 'N',
-                LastDigits = "1234"
+                LastDigits = "1234",
+                Token = "123456abc1234"
             },
             Order = new Order
             {
@@ -637,7 +639,9 @@ public class MinFraudExample
                 DiscountCode = "FIRST",
                 AffiliateId = "af12",
                 SubaffiliateId = "saf42",
-                ReferrerUri = new Uri("http://www.amazon.com/")
+                ReferrerUri = new Uri("http://www.amazon.com/"),
+                IsGift = true,
+                HasGiftMessage = true
             },
             ShoppingCart = new List<ShoppingCartItem>
             {
@@ -716,6 +720,7 @@ Transaction request = new Transaction.Builder(
             .cvvResult('Y')
             .issuerIdNumber("411111")
             .lastDigits("1234")
+            .token("123456abc1234")
             .build()
     ).email(
         new Email.Builder()
@@ -737,6 +742,8 @@ Transaction request = new Transaction.Builder(
             .discountCode("10OFF")
             .referrerUri(new URI("https://www.google.com/"))
             .subaffiliateId("saf9")
+            .isGift(true)
+            .hasGiftMessage(true)
             .build()
     ).payment(
         new Payment.Builder()
@@ -799,7 +806,6 @@ let transaction;
 
 try {
   transaction = new minFraud.Transaction({
-    // device is required
     device: new minFraud.Device({
       ipAddress: '1.1.1.1',
       acceptLanguage: 'en-US,en;q=0.8',
@@ -840,6 +846,7 @@ try {
       city: 'Waltham',
       company: 'Company, Inc.',
       country: 'US',
+      deliverySpeed: minFraud.Constants.DeliverySpeed.Expedited,
       firstName: 'First',
       lastName: 'Last',
       phoneCountryCode: '1',
@@ -968,13 +975,14 @@ $request = $mf->withDevice(
     bankPhoneCountryCode: '1',
     bankPhoneNumber: '555-555-5555',
     avsResult: 'Y',
-    cvvResult: 'N'
+    cvvResult: 'N',
+    token: '123456abc1234'
 )->withOrder(
     amount: 323.21,
     currency: 'USD',
     discountCode: 'FIRST',
     isGift: true,
-    hasGiftMessage: false,
+    hasGiftMessage: true,
     affiliateId: 'af12',
     subaffiliateId: 'saf42',
     referrerUri: 'http://www.amazon.com/'
@@ -1085,7 +1093,8 @@ request = {
         'last_digits': '1234',
         'cvv_result': 'N',
         'bank_name': 'Test Bank',
-        'issuer_id_number': '411111'
+        'issuer_id_number': '411111',
+        'token': '123456abc1234'
     },
     'payment': {
         'decline_code': 'invalid number',
@@ -1109,7 +1118,9 @@ request = {
         'subaffiliate_id': 'saf42',
         'discount_code': 'FIRST',
         'currency': 'USD',
-        'amount': 323.21
+        'amount': 323.21,
+        'is_gift': True,
+        'has_gift_message': True
     },
     'custom_inputs': {
         'section': 'news',
@@ -1141,6 +1152,15 @@ asyncio.run(async_example(42, 'license_key'))
 ```
 
 ```ruby
+require 'minfraud'
+
+# Configure the client.
+Minfraud.configure do |c|
+  c.account_id = 10
+  c.license_key = 'LICENSEKEY'
+  c.enable_validation = true
+end
+
 # Prepare the request.
 assessment = Minfraud::Assessments.new(
   device: {
@@ -1211,7 +1231,7 @@ assessment = Minfraud::Assessments.new(
     currency:         'USD',
     discount_code:    'FIRST',
     is_gift:          true,
-    has_gift_message: false,
+    has_gift_message: true,
     affiliate_id:     'af12',
     subaffiliate_id:  'saf42',
     referrer_uri:     'http://www.amazon.com/',

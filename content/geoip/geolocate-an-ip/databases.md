@@ -98,14 +98,14 @@ using (var reader = new DatabaseReader("path/to/maxmind-database.mmdb"))
 ```
 
 ```java
-File database = new File("/path/to/maxmind-database.mmdb")
+File database = new File("/path/to/maxmind-database.mmdb");
 
 // This reader object should be reused across lookups as creation of it is
 // expensive.
 DatabaseReader reader = new DatabaseReader.Builder(database).build();
 
 // If you want to use caching at the cost of a small (~2MB) memory overhead:
-// new DatabaseReader.Builder(file).withCache(new CHMCache()).build();
+// new DatabaseReader.Builder(database).withCache(new CHMCache()).build();
 
 InetAddress ipAddress = InetAddress.getByName("128.101.101.101");
 
@@ -113,7 +113,6 @@ CityResponse response = reader.city(ipAddress);
 
 Country country = response.country();
 System.out.println(country.isoCode());
-
 ```
 
 ```javascript
@@ -170,7 +169,9 @@ require 'maxmind/geoip2'
 
 # This reader object should be reused across lookups as creation of it is
 # expensive.
-reader = MaxMind::GeoIP2::Reader.new('/path/to/maxmind-database.mmdb')
+reader = MaxMind::GeoIP2::Reader.new(
+    database: '/path/to/maxmind-database.mmdb',
+)
 
 record = reader.city('128.101.101.101')
 
