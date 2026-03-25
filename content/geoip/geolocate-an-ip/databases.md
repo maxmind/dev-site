@@ -113,7 +113,6 @@ CityResponse response = reader.city(ipAddress);
 
 Country country = response.country();
 System.out.println(country.isoCode());
-
 ```
 
 ```javascript
