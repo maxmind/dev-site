@@ -1,7 +1,7 @@
 {{ $isEnterprise := .Get "isEnterprise" }}
 {{ $includeUtility := .Get "includeUtility" }}
 
-| Name | Type | Description {{ if eq $isEnterprise "false" }}| Included in...{{ end }} |
+| Data field name | Type | Data field description {{ if eq $isEnterprise "false" }}| Included in...{{ end }} |
 |------|------|-------------|{{ if eq $isEnterprise "false" }}-------------{{ end }}|
 | network | IP network as a string | This is the IPv4 or IPv6 network in CIDR format such as "2.21.92.0/29" or "2001:4b0::/80". {{ if eq $includeUtility "true" }}We offer a utility to convert this column to start/end IPs or start/end integers. See the conversion utility section for details.{{ end }} | {{ if eq $isEnterprise "false" }}Country, City{{ end }} |
 | geoname_id | integer | A unique identifier for the network's location as specified by [GeoNames](https://www.geonames.org/). This ID can be used to look up the location information in the Location file. [Learn more about GeoNames IDs on our Knowledge Base.](https://support.maxmind.com/knowledge-base/articles/maxmind-ip-geolocation-data#geonames-ids) | {{ if eq $isEnterprise "false" }}Country, City{{ end }} |
