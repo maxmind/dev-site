@@ -132,15 +132,8 @@ You can secure your webhook by verifying that alert requests come from MaxMind:
 minFraud alert requests may come from one of the following IP addresses. This
 list is subject to change.
 
-The following IP addresses are permanent and will remain in use:
-
 - `34.27.174.58`
 - `2600:1900:4000:947::/64`
-
-The following legacy IP addresses will be needed only until March 31, 2026:
-
-- `35.186.179.139`
-- `2600:1900:4090:26a2::/64`
 
 #### Signed requests
 
