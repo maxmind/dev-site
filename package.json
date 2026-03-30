@@ -21,7 +21,7 @@
     "stylelint-no-unsupported-browser-features": "^8.1.1",
     "stylelint-order": "^7.0.1",
     "typescript": "^5.9.3",
-    "typescript-eslint": "^8.56.1"
+    "typescript-eslint": "^8.58.0"
   },
   "engines": {
     "node": ">=22.21.1",
