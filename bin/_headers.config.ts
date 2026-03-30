@@ -22,7 +22,6 @@ const config: HeadersConfig = {
             'https://status.maxmind.com',
             'https://www.maxmind.com',
 
-            // eslint-disable-next-line max-len
             // https://knowledge.hubspot.com/domains-and-urls/ssl-and-domain-security-in-hubspot#content-security-policy
 
             // HubSpot API
@@ -33,7 +32,6 @@ const config: HeadersConfig = {
 
             'https://*.googleapis.com',
 
-            // eslint-disable-next-line max-len
             // https://developers.google.com/tag-platform/security/guides/csp#google_analytics_4_google_analytics
             'https://*.google-analytics.com',
             'https://*.analytics.google.com',
@@ -57,7 +55,6 @@ const config: HeadersConfig = {
           'frame-src': [
             "'self'",
 
-            // eslint-disable-next-line max-len
             // https://knowledge.hubspot.com/domains-and-urls/ssl-and-domain-security-in-hubspot#content-security-policy
 
             // HubSpot calls-to-action (pop-ups) and chatflows
@@ -76,7 +73,6 @@ const config: HeadersConfig = {
             "'report-sample'",
             "'unsafe-inline'",
 
-            // eslint-disable-next-line max-len
             // https://knowledge.hubspot.com/domains-and-urls/ssl-and-domain-security-in-hubspot#content-security-policy
 
             // HubSpot tracking code
