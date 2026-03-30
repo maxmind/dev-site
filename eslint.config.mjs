@@ -46,12 +46,22 @@ export default tseslint.config(
     },
   }, {
   files: [
-    '**/*.{js,cjs,mjs}',
+    '**/*.{js,cjs}',
   ],
 
   languageOptions: {
     globals: {
       ...globals.node,
+    },
+  },
+}, {
+  files: [
+    '**/*.mjs',
+  ],
+
+  languageOptions: {
+    globals: {
+      ...globals.nodeBuiltin,
     },
   },
 }, {
