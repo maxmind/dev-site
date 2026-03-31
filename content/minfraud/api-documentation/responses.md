@@ -1342,6 +1342,7 @@ present in the response.
 
   {{< minfraud-schema-row key="reason" type="response" valueType="string" factors="true" >}}
   The human-readable description of the risk reason and its effect on the overall risk score.
+  The explanation text may change at any time and should not be matched against.
   | Code                                       | Reason                                                                                                           |
   | ------------------------------------------ | ---------------------------------------------------------------------------------------------------------------- |
   | ANONYMOUS\_IP                              | The Anonymous IP address raised the overall risk score                                                                    |
