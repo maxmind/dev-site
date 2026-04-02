@@ -21,7 +21,7 @@ You may also want to look at some of the unofficial APIs that we’ve featured.
 While MaxMind does not support or maintain unofficial APIs, you can get a
 feeling for the quality of contributions that we feature:
 
-- [minFraud service Magento 2 Plugin](https://www.weltpixel.com/magento2-maxmind-fraud-prevention-minfraud.html)
+- [minFraud service Magento 2 Plugin](https://weltpixel.com/products/magento2-maxmind-fraud-prevention-minfraud)
 - [GeoIP and GeoLite web services Unofficial APIs](/geoip/docs/web-services/#third-party-client-apis)
 - [GeoIP and GeoLite database Unofficial APIs](/geoip/docs/databases/#unofficial-client-apis)
 - [GeoIP and GeoLite database Integrations (for MMDB format)](/geoip/docs/databases/#integrations)
