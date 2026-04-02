@@ -647,6 +647,7 @@ process that was used for the event.
   * `epx`
   * `eway`
   * `exact`
+  * `fat_zebra`
   * `first_atlantic_commerce`
   * `first_data`
   * `fiserv`
