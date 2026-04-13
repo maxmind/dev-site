@@ -7,10 +7,10 @@
   "devDependencies": {
     "@eslint/eslintrc": "^3.3.5",
     "@eslint/js": "^9.39.4",
-    "@types/node": "^25.5.0",
-    "baseline-browser-mapping": "^2.10.12",
+    "@types/node": "^25.5.2",
+    "baseline-browser-mapping": "^2.10.16",
     "cspell": "^9.7.0",
-    "eslint": "^10.1.0",
+    "eslint": "^10.2.0",
     "eslint-plugin-simple-import-sort": "^12.1.1",
     "globals": "^17.4.0",
     "npm-run-all": "^4.1.5",
