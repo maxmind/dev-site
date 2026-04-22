@@ -86,12 +86,13 @@ A transaction report only needs two fields, a transaction identifier, which can
 be the `ip_address`, the `maxmind_id`, the `minfraud_id`, or the
 `transaction_id`, and a `tag`. A `tag` can be one of the following values:
 
-| Tag             | Description                                                                   |
-| --------------- | ----------------------------------------------------------------------------- |
-| Chargeback      | Used to associate a chargeback with a transaction                             |
-| Not fraud       | Used to report a transaction that was later identified as a false positive    |
-| Spam or Abuse   | Used to report a transaction that was linked to spam or abuse                 |
-| Suspected fraud | Used to report a high risk transaction where fraud has not yet been confirmed |
+| Tag             | Description                                                                                                           |
+| --------------- | --------------------------------------------------------------------------------------------------------------------- |
+| Chargeback      | Used to associate a chargeback with a transaction                                                                     |
+| Clear           | Used to clear a previous transaction report tag if new information indicates the initial classification was incorrect |
+| Not fraud       | Used to report a transaction that was later identified as a false positive                                            |
+| Spam or Abuse   | Used to report a transaction that was linked to spam or abuse                                                         |
+| Suspected fraud | Used to report a high risk transaction where fraud has not yet been confirmed                                         |
 
 We highly encourage you to include the MaxMind ID or minFraud ID that identifies
 the minFraud Standard/Premium request or minFraud Score/Insights/Factors request
@@ -324,15 +325,15 @@ The minFraud API accepts input as JSON in the body of an HTTP POST. The JSON
 document should consist of a single object. That object may contain the
 following keys (key names are case-sensitive):
 
-| Data field name     | Type        | Data field description                                                                                                                                                                                                     |
-| ------------------- | ----------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **ip_address**      | string      | _Conditionally required.[^1]_ The IP address of the customer placing the order. This should be passed as a string like “44.55.66.77” or “2001:db8::2:1”.                                                                   |
-| **tag**             | string      | **Required.** A string indicating the likelihood that a transaction may be fraudulent. Possible values: `not_fraud`, `suspected_fraud`, `spam_or_abuse`, or `chargeback`.                                                  |
-| **chargeback_code** | string      | _Optional._ A string which is provided by your payment processor indicating the [reason for the chargeback](https://en.wikipedia.org/wiki/Chargeback#Reason_codes).                                                        |
-| **maxmind_id**      | string (8)  | _Conditionally required.[^1]_ A unique eight character string identifying a minFraud Standard or Premium request. These IDs are returned in the `maxmindID` field of a response for a successful minFraud request.         |
-| **minfraud_id**     | string (36) | _Conditionally required.[^1]_ A UUID that identifies a minFraud Score, minFraud Insights, or minFraud Factors request. This ID is returned at `/id` in the response.                                                       |
-| **notes**           | string      | _Optional._ Your notes on the fraud tag associated with the transaction. We manually review many reported transactions to improve our scoring for you so any additional details to help us understand context are helpful. |
-| **transaction_id**  | string      | _Conditionally required.[^1]_ The transaction ID you originally passed to minFraud.                                                                                                                                        |
+| Data field name     | Type        | Data field description                                                                                                                                                                                                      |
+| ------------------- | ----------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **ip_address**      | string      | _Conditionally required.[^1]_ The IP address of the customer placing the order. This should be passed as a string like “44.55.66.77” or “2001:db8::2:1”.                                                                    |
+| **tag**             | string      | **Required.** A string indicating the likelihood that a transaction may be fraudulent, or `clear` to retract a previous report. Possible values: `not_fraud`, `suspected_fraud`, `spam_or_abuse`, `chargeback`, or `clear`. |
+| **chargeback_code** | string      | _Optional._ A string which is provided by your payment processor indicating the [reason for the chargeback](https://en.wikipedia.org/wiki/Chargeback#Reason_codes).                                                         |
+| **maxmind_id**      | string (8)  | _Conditionally required.[^1]_ A unique eight character string identifying a minFraud Standard or Premium request. These IDs are returned in the `maxmindID` field of a response for a successful minFraud request.          |
+| **minfraud_id**     | string (36) | _Conditionally required.[^1]_ A UUID that identifies a minFraud Score, minFraud Insights, or minFraud Factors request. This ID is returned at `/id` in the response.                                                        |
+| **notes**           | string      | _Optional._ Your notes on the fraud tag associated with the transaction. We manually review many reported transactions to improve our scoring for you so any additional details to help us understand context are helpful.  |
+| **transaction_id**  | string      | _Conditionally required.[^1]_ The transaction ID you originally passed to minFraud.                                                                                                                                         |
 
 [^1]:
     You must provide at least one of `ip_address`, `maxmind_id`, `minfraud_id`,
