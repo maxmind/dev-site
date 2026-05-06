@@ -23,7 +23,7 @@ Device ID.
   text: "Track devices on your website using JavaScript."
 - heading: "Android"
   url: "/minfraud/track-devices/android"
-  text: "Track devices in your Android app using Kotlin."
+  text: "Track devices in your Android app using Kotlin or Java."
 {{</ link-group/container >}}
 
 <!-- prettier-ignore-end -->
