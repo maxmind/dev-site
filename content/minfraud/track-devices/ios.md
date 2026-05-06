@@ -27,6 +27,7 @@ Or add it to your `Package.swift`:
 
 ```swift
 dependencies: [
+    // Check https://github.com/maxmind/device-ios/releases for the latest version.
     .package(url: "https://github.com/maxmind/device-ios.git", from: "0.1.0")
 ]
 ```
