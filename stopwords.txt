@@ -94,11 +94,13 @@ mmapiwsid
 mmdb
 mmdbinspect
 mmdblua
+MMSDK
 Movistar
 Msxml
 Nord
 Norte
 Nubilum
+objc
 Odido
 omni
 onFailure

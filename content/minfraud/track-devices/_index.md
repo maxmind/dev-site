@@ -23,7 +23,10 @@ Device ID.
   text: "Track devices on your website using JavaScript."
 - heading: "Android"
   url: "/minfraud/track-devices/android"
-  text: "Track devices in your Android app using Kotlin."
+  text: "Track devices in your Android app using Kotlin or Java."
+- heading: "iOS"
+  url: "/minfraud/track-devices/ios"
+  text: "Track devices in your iOS app using Swift or Objective-C."
 {{</ link-group/container >}}
 
 <!-- prettier-ignore-end -->
@@ -61,9 +64,10 @@ changes.
 3. Include the token in your minFraud API request's `device` object as
    `tracking_token`.
 
-See the [Web](/minfraud/track-devices/web#explicit-device-linking-examples) and
-[Android](/minfraud/track-devices/android#explicit-device-linking-examples)
-guides for platform-specific examples.
+See the [Web](/minfraud/track-devices/web#explicit-device-linking-examples),
+[Android](/minfraud/track-devices/android#explicit-device-linking-examples), and
+[iOS](/minfraud/track-devices/ios#explicit-device-linking-examples) guides for
+platform-specific examples.
 
 ### Token handling
 
