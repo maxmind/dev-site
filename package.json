@@ -8,7 +8,7 @@
     "@eslint/eslintrc": "^3.3.5",
     "@eslint/js": "^10.0.1",
     "@types/node": "^25.6.0",
-    "baseline-browser-mapping": "^2.10.23",
+    "baseline-browser-mapping": "^2.10.24",
     "cspell": "^10.0.0",
     "eslint": "^10.2.1",
     "eslint-plugin-simple-import-sort": "^13.0.0",
