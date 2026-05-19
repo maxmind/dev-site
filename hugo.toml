@@ -207,6 +207,11 @@ title = 'MaxMind'
         parent = 'Database Documentation'
         weight = 35
       [[menus.geoip]]
+        name = 'Residential Proxy'
+        pageRef = '/geoip/docs/databases/residential-proxy'
+        parent = 'Database Documentation'
+        weight = 36
+      [[menus.geoip]]
         name = 'ISP'
         pageRef = '/geoip/docs/databases/isp'
         parent = 'Database Documentation'

@@ -13,6 +13,9 @@ MaxMind's GeoIP Anonymous Plus database helps protect your business by
 identifying anonymized proxy traffic and reducing false positives based on
 confidence scores, timestamps, and VPN provider names.
 
+A license for the GeoIP Anonymous Plus database also provides access to the
+[GeoIP Residential Proxy database](/geoip/docs/databases/residential-proxy).
+
 To learn more about the GeoIP Anonymous Plus database, please visit the
 [GeoIP Anonymous Plus Database page](https://www.maxmind.com/en/geoip-anonymous-plus-database).
 If you are interested in purchasing the database, please
