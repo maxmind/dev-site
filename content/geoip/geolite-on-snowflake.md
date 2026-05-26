@@ -58,7 +58,7 @@ particular dataset you are querying:
         <td>IP network as a string</td>
         <td>
           This is the IPv4 or IPv6 network in CIDR format such as “2.21.92.0/29”
-          or “2001:4b0::/80”.
+          or “2001:4b0::/64”.
         </td>
       </tr>
 

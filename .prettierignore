@@ -21,6 +21,8 @@ content/geoip/docs/databases/ip-risk/_index.md
 content/geoip/docs/databases/ip-risk/binary.md
 content/geoip/docs/databases/isp/_index.md
 content/geoip/docs/databases/isp/binary.md
+content/geoip/docs/databases/residential-proxy/_index.md
+content/geoip/docs/databases/residential-proxy/binary.md
 content/geoip/docs/databases/static-ip-score/_index.md
 content/geoip/docs/databases/static-ip-score/binary.md
 content/geoip/docs/databases/user-count/_index.md

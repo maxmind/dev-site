@@ -13,6 +13,9 @@ MaxMind's GeoIP Anonymous Plus database helps protect your business by
 identifying anonymized proxy traffic and reducing false positives based on
 confidence scores, timestamps, and VPN provider names.
 
+A license for the GeoIP Anonymous Plus database also provides access to the
+[GeoIP Residential Proxy database](/geoip/docs/databases/residential-proxy).
+
 To learn more about the GeoIP Anonymous Plus database, please visit the
 [GeoIP Anonymous Plus Database page](https://www.maxmind.com/en/geoip-anonymous-plus-database).
 If you are interested in purchasing the database, please
@@ -56,7 +59,7 @@ These are named `GeoIP-Anonymous-Plus-Blocks-IPv4.csv` and
         <td>IP network as a string</td>
         <td>
           This is the IPv4 or IPv6 network in CIDR format such as “2.21.92.0/29”
-          or “2001:4b0::/80”. We offer a utility to convert this column to
+          or “2001:4b0::/64”. We offer a utility to convert this column to
           start/end IPs or start/end integers. See
           <a href="#conversion-utility">the conversion utility section</a> for
           details.

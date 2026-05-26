@@ -45,7 +45,7 @@ These are named `GeoLite2-ASN-Blocks-IPv4.csv` and
         <td>IP network as a string</td>
         <td>
           This is the IPv4 or IPv6 network in CIDR format such as “2.21.92.0/29”
-          or “2001:4b0::/80”. We offer a utility to convert this column to
+          or “2001:4b0::/64”. We offer a utility to convert this column to
           start/end IPs or start/end integers. See
           <a href="#conversion-utility">the conversion utility section</a> for
           details.
