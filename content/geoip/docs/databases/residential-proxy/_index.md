@@ -99,6 +99,13 @@ These are named `GeoIP-Residential-Proxy-Blocks-IPv4.csv` and
             providers. A current list of providers identified in the Residential
             Proxy database is available on request.
           </p>
+          <p>
+            <a
+              href="https://support.maxmind.com/knowledge-base/articles/anonymizer-and-proxy-data-maxmind"
+              >Learn more about residential proxy provider detection on our
+              Knowledge Base.</a
+            >
+          </p>
         </td>
       </tr>
 
