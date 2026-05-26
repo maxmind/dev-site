@@ -90,7 +90,8 @@ These are named `GeoIP-Residential-Proxy-Blocks-IPv4.csv` and
         <td>string</td>
         <td>
           <p>
-            The name of the residential proxy provider associated with the
+            The name of the residential proxy provider (e.g.,
+            <code>oxylabs</code>, <code>smartproxy</code>) associated with the
             network.
           </p>
           <p>
