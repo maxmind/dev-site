@@ -21,7 +21,7 @@
     {{ end }}
     <div>
       <span>{{ if $hasCountry }}✓{{ else }}✗{{ end }} GeoIP Country</span>
-      <span>{{ if $hasCity }}✓{{ else }}✗{{ end }} GeoIP City</span>
+      <span>{{ if $hasCity }}✓{{ else }}✗{{ end }} GeoIP City Plus</span>
       <span>{{ if $hasInsights }}✓{{ else }}✗{{ end }} GeoIP Insights</span>
     </div>
   </td>
