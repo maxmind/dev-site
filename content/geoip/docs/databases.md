@@ -109,7 +109,7 @@ integrator for assistance. {{</ alert >}}
 | Application                    | Platform                | Link                                                                                                        |
 | ------------------------------ | ----------------------- | ----------------------------------------------------------------------------------------------------------- |
 | Ad-serving                     | Revive Adserver         | [Geotargeting with Revive Adserver](https://www.revive-adserver.com/faq/geotargeting-with-revive-adserver/) |
-| Analytics                      | Piwik/Matomo            | [GEO LOCATE YOUR VISITORS](https://matomo.org/faq/setting-up-accurate-visitors-geolocation/)                |
+| Analytics                      | Piwik/Matomo            | [GEO LOCATE YOUR VISITORS](https://matomo.org/faq/how-to/setting-up-accurate-visitors-geolocation/)         |
 | Analytics                      | Snowplow Analytics      | [IP lookups enrichment](https://github.com/snowplow/snowplow/wiki/IP-lookups-enrichment)                    |
 | Content Delivery               | Varnish Software        | [libvmod-geoip2](https://github.com/varnishcache-friends/libvmod-geoip2)                                    |
 | Database                       | DuckDB                  | [duckdb-maxmind](https://github.com/marselester/duckdb-maxmind)                                             |
