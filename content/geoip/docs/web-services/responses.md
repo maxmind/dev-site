@@ -442,7 +442,6 @@ believes the end user is located.
 {
   "confidence": 75,
   "geoname_id": 6252001,
-  "is_in_european_union": false,
   "iso_code": "US",
   "names": {
     "de": "USA",
@@ -1144,7 +1143,6 @@ be less accurate. In addition, GeoLite Country requests will not return the
   },
   "country": {
     "geoname_id": 6252001,
-    "is_in_european_union": false,
     "iso_code": "US",
     "names": {
       "de": "USA",
@@ -1228,7 +1226,6 @@ will not return the `maxmind` object.
   },
   "country": {
     "geoname_id": 6252001,
-    "is_in_european_union": false,
     "iso_code": "US",
     "names": {
       "de": "USA",
@@ -1352,7 +1349,6 @@ request.
   },
   "country": {
     "geoname_id": 6252001,
-    "is_in_european_union": false,
     "iso_code": "US",
     "names": {
       "de": "USA",
