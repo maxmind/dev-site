@@ -1,4 +1,6 @@
 name: Links
+permissions:
+  contents: read
 
 on:
   push:
