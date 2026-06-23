@@ -192,8 +192,9 @@ These are named `GeoIP-Anonymous-Plus-Blocks-IPv4.csv` and
             network is currently part of an actively used VPN service.
           </p>
           <p>
-            Currently we will only provide values of 30 and 99, but the number
-            of values will increase as we improve our confidence ratings.
+            Currently, we will only provide values of 30, 50, and 99, but the
+            number of values will increase as we improve our confidence
+            ratings.
           </p>
           <p>
             <a
