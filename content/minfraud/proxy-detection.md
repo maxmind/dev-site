@@ -46,6 +46,25 @@ HTTP, you will receive a `403 Forbidden` HTTP response.
 We require TLS 1.2 or greater for all requests to our servers to keep your data
 secure.
 
+## HTTP status codes
+
+In addition to the error code returned in the `err` field of the response body,
+this service uses the HTTP status code to indicate certain error conditions.
+This lets you act on these conditions from the HTTP status code, for example in
+your monitoring or an internal proxy, without parsing the response body.
+
+| HTTP status            | Condition                                                                            |
+| ---------------------- | ------------------------------------------------------------------------------------ |
+| `200 OK`               | The request was processed.                                                           |
+| `400 Bad Request`      | The request was malformed.                                                           |
+| `401 Unauthorized`     | The license key is missing or invalid (`LICENSE_REQUIRED` or `INVALID_LICENSE_KEY`). |
+| `402 Payment Required` | Your account is out of queries (`MAX_REQUESTS_REACHED`).                             |
+| `403 Forbidden`        | Your account does not have permission to use this service (`PERMISSION_REQUIRED`).   |
+| `5xx`                  | A server error occurred.                                                             |
+
+Where applicable, the response body returns an `err` value with the relevant
+error code.
+
 ## Input
 
 The API requires you to pass a set of parameters as an HTTP GET or POST. Results
