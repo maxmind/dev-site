@@ -167,8 +167,7 @@ All strings are returned as ASCII.
             </li>
             <li>
               <code>MAX_REQUESTS_REACHED</code> – This error will be returned if
-              your account is out of queries or if an invalid license key is
-              provided.
+              your account is out of queries.
             </li>
           </ul>
         </td>
