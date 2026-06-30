@@ -70,6 +70,27 @@ geographically closest to you.
 You must access this service via HTTPS. We require TLS 1.2 or greater for HTTPS
 requests to our servers to keep your data secure.
 
+### HTTP status codes
+
+In addition to the error code returned in the response body, this service uses
+the HTTP status code to indicate certain error conditions. This lets you act on
+these conditions from the HTTP status code, for example in your monitoring or an
+internal proxy, without parsing the response body.
+
+| HTTP status            | Condition                                                                                |
+| ---------------------- | ---------------------------------------------------------------------------------------- |
+| `200 OK`               | The request was processed. This includes successful lookups and the `IP_NOT_FOUND` case. |
+| `400 Bad Request`      | The request was malformed.                                                               |
+| `401 Unauthorized`     | The license key is missing or invalid (`LICENSE_REQUIRED` or `INVALID_LICENSE_KEY`).     |
+| `402 Payment Required` | Your account has run out of queries.                                                     |
+| `403 Forbidden`        | Your account does not have permission to use this service (`PERMISSION_REQUIRED`).       |
+| `5xx`                  | A server error occurred.                                                                 |
+
+The error code returned in the response body does not always match the HTTP
+status code. When your account has run out of queries, the response body returns
+the `INVALID_LICENSE_KEY` error code even though the HTTP status is `402 Payment
+Required`. The `IP_NOT_FOUND` case returns a `200 OK` status.
+
 ### Output
 
 All services return data as a set of comma-separated fields. The ISP name,

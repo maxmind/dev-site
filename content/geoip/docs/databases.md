@@ -117,7 +117,7 @@ integrator for assistance. {{</ alert >}}
 | Load balancer                  | NGINX                   | [ngx_http_geoip2_module](https://github.com/leev/ngx_http_geoip2_module)                                    |
 | Log Analyzer / Data Processing | Logstash                | [Geoip filter plugin](https://www.elastic.co/docs/reference/logstash/plugins/plugins-filters-geoip)         |
 | Network Protocol Analyzer      | Wireshark               | [How To Use GeoIP With Wireshark](https://gitlab.com/wireshark/wireshark/-/wikis/HowToUseGeoIP)             |
-| Search                         | Elasticsearch           | [GeoIP processor](https://www.elastic.co/docs/reference/enrich-processor/geoip-processor)                   |
+| Search                         | Elasticsearch           | [GeoIP processor](https://www.elastic.co/guide/en/elasticsearch/reference/8.19/geoip-processor.html)        |
 | Web server                     | Caddy                   | [caddy-geoip2](https://github.com/zhangjiayin/caddy-geoip2)                                                 |
 
 ## Command Line (mmdbinspect)
