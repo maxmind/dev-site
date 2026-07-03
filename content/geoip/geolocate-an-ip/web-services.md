@@ -105,9 +105,7 @@ WebServiceClient client = new WebServiceClient.Builder(accountId, licenseKey)
 ```
 
 ```javascript
-const WebServiceClient = require('@maxmind/geoip2-node').WebServiceClient;
-// TypeScript:
-// import { WebServiceClient } from '@maxmind/geoip2-node';
+import { WebServiceClient } from '@maxmind/geoip2-node';
 
 const accountId = '10';
 const licenseKey = 'LICENSEKEY';
@@ -234,9 +232,7 @@ try (WebServiceClient client = new WebServiceClient.Builder(accountId, licenseKe
 ```
 
 ```javascript
-const WebServiceClient = require('@maxmind/geoip2-node').WebServiceClient;
-// Typescript:
-// import { WebServiceClient } from '@maxmind/geoip2-node';
+import { WebServiceClient } from '@maxmind/geoip2-node';
 
 const accountId = '10';
 const licenseKey = 'LICENSEKEY';
