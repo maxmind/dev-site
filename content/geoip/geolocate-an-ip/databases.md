@@ -29,7 +29,7 @@ Install-Package MaxMind.GeoIP2
 <dependency>
   <groupId>com.maxmind.geoip2</groupId>
   <artifactId>geoip2</artifactId>
-  <version>5.0.2</version>
+  <version>5.1.0</version>
 </dependency>
 
 // Or install via Gradle
@@ -37,7 +37,7 @@ repositories {
   mavenCentral()
 }
 dependencies {
-  implementation 'com.maxmind.geoip2:geoip2:5.0.2'
+  implementation 'com.maxmind.geoip2:geoip2:5.1.0'
 }
 ```
 
@@ -117,7 +117,7 @@ System.out.println(country.isoCode());
 
 ```javascript
 // Asynchronous database opening
-const Reader = require('@maxmind/geoip2-node').Reader;
+import { Reader } from '@maxmind/geoip2-node';
 
 Reader.open('/path/to/maxmind-database.mmdb').then((reader) => {
   const response = reader.city('128.101.101.101');
@@ -126,10 +126,10 @@ Reader.open('/path/to/maxmind-database.mmdb').then((reader) => {
 });
 
 // Synchronous database opening
-const fs = require('fs');
-const Reader = require('@maxmind/geoip2-node').Reader;
+import { readFileSync } from 'node:fs';
+import { Reader } from '@maxmind/geoip2-node';
 
-const dbBuffer = fs.readFileSync('/path/to/maxmind-database.mmdb');
+const dbBuffer = readFileSync('/path/to/maxmind-database.mmdb');
 
 // This reader object should be reused across lookups as creation of it is
 // expensive.

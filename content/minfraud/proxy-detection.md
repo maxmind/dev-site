@@ -228,7 +228,7 @@ else {
 ```
 
 ```python
-#!/usr/bin/env python
+#!/usr/bin/env python3
 
 import argparse
 import requests
@@ -253,10 +253,10 @@ if 'err' in proxy and len(proxy['err']):
     sys.stderr.write("MaxMind returned an error code for the request: %s\n" % proxy['err'])
     sys.exit(1)
 else:
-    print "\nMaxMind Proxy data for %s\n\n" % args.ip
+    print("\nMaxMind Proxy data for %s\n" % args.ip)
     for (key, val) in proxy.items():
-        print "  %-20s  %s" % (key, val)
-    print "\n"
+        print("  %-20s  %s" % (key, val))
+    print("")
 ```
 
 ```php

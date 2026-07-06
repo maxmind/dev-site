@@ -70,7 +70,7 @@ Install-Package MaxMind.MinFraud
 <dependency>
   <groupId>com.maxmind.minfraud</groupId>
   <artifactId>minfraud</artifactId>
-  <version>4.2.0</version>
+  <version>4.3.0</version>
 </dependency>
 
 // Or install via Gradle
@@ -78,7 +78,7 @@ repositories {
   mavenCentral()
 }
 dependencies {
-  implementation 'com.maxmind.minfraud:minfraud:4.2.0'
+  implementation 'com.maxmind.minfraud:minfraud:4.3.0'
 }
 ```
 
@@ -797,7 +797,6 @@ System.out.println(client.score(request));
 ```javascript
 import { URL } from 'url'; // Used for order.referrerUri
 import * as minFraud from '@maxmind/minfraud-api-node';
-// const minFraud = require('@maxmind/minfraud-api-node');
 
 // client is reusable
 const client = new minFraud.Client('1234', 'LICENSEKEY');
