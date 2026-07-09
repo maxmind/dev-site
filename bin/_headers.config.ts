@@ -39,8 +39,14 @@ const config: HeadersConfig = {
 
             // https://developers.google.com/tag-platform/security/guides/csp#google_ads
             'https://*.g.doubleclick.net',
+            'https://ad.doubleclick.net',
+            'https://www.googleadservices.com',
+
+            // GA4 Google Signals and Google Ads remarketing/conversions
+            'https://pagead2.googlesyndication.com',
 
             // Google domains (various TLDs for international support)
+            'https://google.com',
             'https://*.google.com',
           ],
           'default-src': ["'self'"],
@@ -97,6 +103,8 @@ const config: HeadersConfig = {
             // https://developers.google.com/tag-platform/security/guides/csp#google_ads_conversions
             'https://www.googleadservices.com',
             'https://www.google.com',
+            'https://pagead2.googlesyndication.com',
+            'https://googleads.g.doubleclick.net',
 
             // Google Tag Manager
             'https://*.googletagmanager.com',
