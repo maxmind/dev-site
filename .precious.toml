@@ -3,6 +3,7 @@ type = "lint"
 cmd = [
   "pnpm",
   "run",
+  "--silent",
   "lint:scripts"
 ]
 invoke = "once"
@@ -42,6 +43,7 @@ include = ["*.md"]
 cmd = [
   "pnpm",
   "run",
+  "--silent",
   "lint:cspell",
 ]
 ok-exit-codes = 0
@@ -72,6 +74,7 @@ type = "tidy"
 cmd = [
   "pnpm",
   "run",
+  "--silent",
   "format:rawhtml"
 ]
 path-args = "absolute-file"
@@ -83,6 +86,7 @@ type = "lint"
 cmd = [
   "pnpm",
   "run",
+  "--silent",
   "lint:shortcode-parity"
 ]
 invoke = "once"
@@ -94,6 +98,7 @@ type = "lint"
 cmd = [
   "pnpm",
   "run",
+  "--silent",
   "lint:prettierignore-rawhtml"
 ]
 invoke = "once"
@@ -105,6 +110,7 @@ type = "lint"
 cmd = [
   "pnpm",
   "run",
+  "--silent",
   "lint:internal-links"
 ]
 path-args = "absolute-file"
