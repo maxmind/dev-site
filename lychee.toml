@@ -4,8 +4,9 @@
 # CI runs against built HTML with --root-dir:
 #   hugo && lychee './public/**/*.html' --root-dir "$(pwd)/public"
 
-# Include URL fragments in checks
-include_fragments = true
+# Include URL fragments in checks: "full" checks both anchor fragments
+# (#section) and text fragments (#:~:text=example)
+include_fragments = "full"
 
 # Resolve directory URLs to index.html for fragment checking (Hugo pretty URLs)
 index_files = ["index.html"]

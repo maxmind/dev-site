@@ -3,10 +3,10 @@ lockfile = true
 idiomatic_version_file_enable_tools = ["node"]
 
 [tools]
-hugo = "0.153.1"
-lychee = "0.23.0"
-"aqua:pnpm/pnpm" = "10.28.1"
-"github:houseabsolute/precious" = "0.10.1"
+hugo = "0.164.0"
+lychee = "0.24.2"
+"aqua:pnpm/pnpm" = "11.13.0"
+"github:houseabsolute/precious" = "0.11.0"
 "github:sass/dart-sass" = "1.97.3"
 
 [tasks.check-links]

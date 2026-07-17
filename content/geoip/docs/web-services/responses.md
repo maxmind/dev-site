@@ -235,6 +235,9 @@ For full examples of response bodies, select one of the following:
 an anonymizing service or network. This data is available for GeoIP Insights
 only.
 
+The `residential` sub-object may be present even when none of the other
+`anonymizer` fields are populated.
+
 ```json
 {
   "confidence": 99,
@@ -245,7 +248,12 @@ only.
   "is_residential_proxy": true,
   "is_tor_exit_node": true,
   "network_last_seen": "2025-01-15",
-  "provider_name": "nordvpn"
+  "provider_name": "nordvpn",
+  "residential": {
+    "confidence": 82,
+    "network_last_seen": "2026-05-11",
+    "provider_name": "quickshift"
+  }
 }
 ```
 
@@ -322,6 +330,59 @@ only.
   Please note that MaxMind identifies a subset of VPN providers. A current list of VPN providers identified in the Anonymous Plus database is available on request.
 
   [Learn more about VPN provider detection on our Knowledge Base.](https://support.maxmind.com/knowledge-base/articles/anonymizer-and-proxy-data-maxmind)
+  {{</ geoip-schema-row >}}
+
+  {{< geoip-schema-row key="residential" valueType="object" insights="true">}}
+  This object contains data about the residential proxy network associated
+  with the IP address.
+
+  See the [Anonymizer > Residential](#schema--response--anonymizer--residential)
+  section below for details.
+  {{</ geoip-schema-row >}}
+{{</ schema-table >}}
+
+<!-- prettier-ignore-end -->
+
+### Anonymizer > Residential
+
+{{< anchor-target schema--response--anonymizer--residential >}}
+
+`residential` is a JSON object that contains data about the residential proxy
+network associated with the IP address. This data is available for GeoIP
+Insights only.
+
+The `residential` object may be present even when none of the other
+`anonymizer` fields are populated.
+
+```json
+{
+  "confidence": 82,
+  "network_last_seen": "2026-05-11",
+  "provider_name": "quickshift"
+}
+```
+
+<!-- prettier-ignore-start -->
+
+{{< schema-table key="anonymizer--residential" >}}
+  {{< geoip-schema-row key="confidence" valueType="integer" valueTypeNote="min: 1, max: 99" insights="true">}}
+  A score ranging from 1 to 99 that represents our percent confidence that the network is an actively used residential proxy.
+
+  [Learn more about anonymizer confidence on our Knowledge Base.](https://support.maxmind.com/knowledge-base/articles/anonymizer-and-proxy-data-maxmind)
+  {{</ geoip-schema-row >}}
+
+  {{< geoip-schema-row key="network_last_seen" valueType="string" insights="true">}}
+  The last day that the network was sighted in our analysis of residential proxies. This is in the ISO 8601 date format (YYYY-MM-DD).
+
+  [Learn more about anonymizer and proxy detection on our Knowledge Base.](https://support.maxmind.com/knowledge-base/articles/anonymizer-and-proxy-data-maxmind)
+  {{</ geoip-schema-row >}}
+
+  {{< geoip-schema-row key="provider_name" valueType="string" insights="true">}}
+  The name of the residential proxy provider (e.g., `oxylabs`, `smartproxy`) associated with the network.
+
+  Please note that MaxMind identifies a subset of residential proxy providers. A current list of identified providers is available on request.
+
+  [Learn more about residential proxy provider detection on our Knowledge Base.](https://support.maxmind.com/knowledge-base/articles/anonymizer-and-proxy-data-maxmind)
   {{</ geoip-schema-row >}}
 {{</ schema-table >}}
 
@@ -1405,7 +1466,12 @@ request.
     "is_residential_proxy": true,
     "is_tor_exit_node": true,
     "network_last_seen": "2025-01-15",
-    "provider_name": "nordvpn"
+    "provider_name": "nordvpn",
+    "residential": {
+      "confidence": 82,
+      "network_last_seen": "2026-05-11",
+      "provider_name": "quickshift"
+    }
   },
   "traits": {
     "ip_address": "1.2.3.4",
