@@ -145,6 +145,7 @@ const config: HeadersConfig = {
           'publickey-credentials-get=()',
           'screen-wake-lock=()',
           'serial=()',
+          'sync-xhr=()',
           'usb=()',
           'web-share=()',
           'xr-spatial-tracking=()',
