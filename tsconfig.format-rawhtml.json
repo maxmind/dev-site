@@ -4,6 +4,7 @@
     "allowImportingTsExtensions": false,
     "noEmit": false,
     "outDir": "dist",
+    "rootDir": "bin",
     "module": "NodeNext",
     "moduleResolution": "NodeNext",
     "target": "ES2022"
