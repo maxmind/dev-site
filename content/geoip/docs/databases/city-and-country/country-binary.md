@@ -74,7 +74,7 @@ included in the record.
   <table>
     <tbody>
       <tr>
-         <th>Data field name</th>
+        <th>Data field name</th>
         <th>Type</th>
         <th>Data field description</th>
       </tr>
@@ -143,7 +143,7 @@ included in the record.
   <table>
     <tbody>
       <tr>
-       <th>Data field name</th>
+        <th>Data field name</th>
         <th>Type</th>
         <th>Data field description</th>
       </tr>
@@ -311,7 +311,7 @@ included in the record.
   <table>
     <tbody>
       <tr>
-    <th>Data field name</th>
+        <th>Data field name</th>
         <th>Type</th>
         <th>Data field description</th>
       </tr>
@@ -401,7 +401,7 @@ included in the record.
   <table>
     <tbody>
       <tr>
-           <th>Data field name</th>
+        <th>Data field name</th>
         <th>Type</th>
         <th>Data field description</th>
       </tr>

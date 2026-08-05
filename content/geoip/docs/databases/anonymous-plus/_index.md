@@ -193,8 +193,7 @@ These are named `GeoIP-Anonymous-Plus-Blocks-IPv4.csv` and
           </p>
           <p>
             Currently, we will only provide values of 30, 50, and 99, but the
-            number of values will increase as we improve our confidence
-            ratings.
+            number of values will increase as we improve our confidence ratings.
           </p>
           <p>
             <a
