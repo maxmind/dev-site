@@ -1,14 +1,27 @@
 {
   "compilerOptions": {
     "allowImportingTsExtensions": true,
-    "baseUrl": ".",
     "lib": ["DOM", "ESNext", "dom.iterable"],
     "module": "ESNext",
     "moduleResolution": "bundler",
     "noEmit": true,
     "skipLibCheck": true,
     "strict": true,
-    "target": "ESNext"
+    "target": "ESNext",
+    // bin/ needs this. TypeScript 6 no longer loads @types/node on its own,
+    // and without it tsc reports 25 TS2591 errors there.
+    //
+    // It is deliberately over-broad. `types` applies to the whole project, so
+    // the Node globals also reach the browser code in assets/js/, where
+    // `process.env` type checks clean but throws a ReferenceError in a
+    // browser, and setTimeout gets Node's return type instead of number.
+    // `lib` leaks the same way in reverse: bin/ can reference `document`.
+    //
+    // Closing either hole means splitting this into a browser config
+    // (assets/js, DOM lib, no node types) and a Node config (bin, node types,
+    // no DOM), and pointing tsconfig.format-rawhtml.json and `lint:scripts`
+    // at the right one.
+    "types": ["node"]
   },
   "exclude": [
     "node_modules",
