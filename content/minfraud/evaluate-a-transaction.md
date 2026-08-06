@@ -24,34 +24,14 @@ proxies while using your site or app.
 Note that, in order to be effective, device tracking must be active when the IP
 address is captured for a minFraud query.
 
-For web integration, place the following code in the footer of the HTML webpage
-and replace `MAXMIND_ACCOUNT_ID` with your
-[MaxMind account ID](https://support.maxmind.com/knowledge-base/articles/find-your-maxmind-account-id):
-
-```html
-<script>
-  (function () {
-    var mmapiws = (window.__mmapiws = window.__mmapiws || {});
-    mmapiws.accountId = MAXMIND_ACCOUNT_ID;
-    var loadDeviceJs = function () {
-      var element = document.createElement('script');
-      element.async = true;
-      element.src = 'https://device.maxmind.com/js/device.js';
-      document.body.appendChild(element);
-    };
-    if (window.addEventListener) {
-      window.addEventListener('load', loadDeviceJs, false);
-    } else if (window.attachEvent) {
-      window.attachEvent('onload', loadDeviceJs);
-    }
-  })();
-</script>
-```
-
-A [module snippet](/minfraud/track-devices/web#module-snippet) and an
-[npm package](/minfraud/track-devices/web#npm-package) are also available for
-sites targeting modern browsers. For Android apps, see the
+For web integration, add the device tracking script to the footer of your HTML
+pages. See [Web device tracking](/minfraud/track-devices/web#implementation) for
+the snippets to choose from. For Android apps, see the
 [Android SDK guide](/minfraud/track-devices/android).
+
+Higher-volume and enterprise accounts can also serve the script from a hostname
+on their own domain to
+[protect device tracking from ad blockers](/minfraud/track-devices/web#protecting-device-tracking-from-ad-blockers).
 
 ### 2. Install the minFraud client library
 
