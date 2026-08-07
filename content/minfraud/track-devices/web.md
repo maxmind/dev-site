@@ -171,12 +171,7 @@ or reach out to your customer success manager.
 
 We recommend implementing the
 [explicit device linking](#explicit-device-linking-examples) described above
-before or at the same time as moving to your own hostname. By default the
-tracking script makes both an IPv6 and an IPv4 request; from your own hostname
-it makes only one, so matching by IP address can fail when we see the device on
-one address family and your minFraud query carries an address from the other.
-Explicit device linking matches by tracking token instead, independent of the IP
-address. The examples in this section show the two together.
+before or at the same time as moving to your own hostname.
 
 ### Choosing a hostname
 
@@ -184,11 +179,8 @@ We recommend a hostname that does not reference MaxMind or device tracking. For
 example, use `mm.your-company.com` rather than `maxmind.your-company.com` or
 `device.your-company.com`.
 
-Use this hostname only for requests to MaxMind servers. Because the tracking
-request sends credentials, any of your cookies scoped to the parent domain (set
-with a `Domain` attribute, such as `Domain=your-company.com`) are sent with it.
-Setting cookies without a `Domain` attribute keeps them host-only, so they are
-not sent to the device tracking hostname.
+Use this hostname only for MaxMind device tracking, not for anything else on
+your site.
 
 ### How setup works
 
@@ -208,16 +200,12 @@ not sent to the device tracking hostname.
 
 Replace `TRACKING_HOSTNAME` with the hostname you set up with us.
 
-Your existing code may hardcode the old hostname in more than one place, and
-there have been several versions of our snippet over the years. Search your
-integration for the old hostname and replace every occurrence.
+Your existing code may hardcode the old hostname in more than one place, so
+search your integration for it and replace every occurrence.
 
-The module and npm examples below also capture the tracking token, so that a
-single snippet covers both the custom hostname and explicit device linking. The
-token capture is optional. The module example fills in a `tracking-token` form
-field only if the page has one, so it is safe to use as-is before you have set
-up explicit device linking; in the npm example, point the `fetch` at your own
-endpoint or remove it. Device tracking works either way.
+The module and npm examples below also capture the tracking token. The token
+capture is optional; in the npm example, point the `fetch` at your own endpoint
+or remove it.
 
 For the module snippet, use the hostname in the `import()` URL and pass it as
 the `host` option:
@@ -262,10 +250,6 @@ await fetch('/your-api/transaction', {
 });
 ```
 
-{{< alert warning >}} As noted under [Classic snippet](#classic-snippet), the
-classic snippet cannot read the tracking token, so it does not support explicit
-device linking. {{</ alert >}}
-
 For the classic snippet, set `apiHost` and use it in the script `src`:
 
 ```html
@@ -289,11 +273,7 @@ For the classic snippet, set `apiHost` and use it in the script `src`:
 </script>
 ```
 
-In all three cases, the hostname you set must be bare, without a scheme or path:
-a scheme produces an invalid URL, and a path is silently dropped rather than
-reported as an error. The device tracking script then sends its tracking request
-only to your hostname; it does not make the additional IPv4 request that the
-default configuration may make.
+In all three cases, the hostname you set must be bare, without a scheme or path.
 
 ## Content Security Policy (CSP) requirements
 
@@ -308,7 +288,7 @@ If you serve device tracking from
 [a hostname on your own domain](#protecting-device-tracking-from-ad-blockers),
 use that hostname in both directives instead: it replaces `device.maxmind.com`
 in `script-src` and both `d-ipv4.mmapiws.com` and `d-ipv6.mmapiws.com` in
-`connect-src`, which the script then reaches with a single request.
+`connect-src`.
 
 ## Cookie and web storage usage
 
