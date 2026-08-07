@@ -1324,7 +1324,7 @@ present in the response.
 
 {{< schema-table key="risk_score_reason" >}}
   {{< minfraud-schema-row key="multiplier" type="response" valueType="decimal" valueTypeNote="min: 0.01, max: 100" factors="true" >}}
-  The factor by which the risk score is increased (if the value is greater than 1) or decreased (if the value is less than 1) for given risk reason(s). Multipliers greater than 1.5 and less than 0.66 are considered significant and lead to risk reason(s) being present.
+  The factor by which the risk score is increased (if the value is greater than 1) or decreased (if the value is less than 1) for given risk reason(s). Multipliers representing a significant percentage increase or decrease in the risk score lead to risk reason(s) being present.
   {{</minfraud-schema-row>}}
 
   {{< minfraud-schema-row key="reasons" type="response" valueType="array" factors="true" >}}
