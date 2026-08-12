@@ -359,22 +359,43 @@ with four modifications:
 
 See below for descriptions of the added fields.
 
-minFraud Insights and Factors return the following anonymous IP outputs:
+minFraud Insights and Factors return anonymous IP outputs in the
+[`anonymizer` object](/geoip/docs/web-services/responses/#anonymizer):
 
+- `confidence`
 - `is_anonymous`
 - `is_anonymous_vpn`
 - `is_hosting_provider`
 - `is_public_proxy`
 - `is_residential_proxy`
 - `is_tor_exit_node`
+- `network_last_seen`
+- `provider_name`
+- `residential`
 
-See the
-[GeoIP Insights response body](/geoip/docs/web-services/responses/#geoip-insights-body-example)
-for more information.
+The six `is_*` outputs above are also returned in the `traits` object for
+backwards compatibility, but they are deprecated there. Use the `anonymizer`
+object instead.
 
 ```json
 {
   "risk": 0.01,
+  "anonymizer": {
+    "confidence": 99,
+    "is_anonymous": true,
+    "is_anonymous_vpn": true,
+    "is_hosting_provider": true,
+    "is_public_proxy": true,
+    "is_residential_proxy": true,
+    "is_tor_exit_node": true,
+    "network_last_seen": "2025-01-15",
+    "provider_name": "nordvpn",
+    "residential": {
+      "confidence": 82,
+      "network_last_seen": "2026-05-11",
+      "provider_name": "quickshift"
+    }
+  },
   "city": {
     "confidence": 25,
     "geoname_id": 54321,
@@ -1459,6 +1480,22 @@ Factors services, and a full example of the JSON body document for an error.
   "id": "5bc5d6c2-b2c8-40af-87f4-6d61af86b6ae",
   "ip_address": {
     "risk": 0.01,
+    "anonymizer": {
+      "confidence": 99,
+      "is_anonymous": true,
+      "is_anonymous_vpn": true,
+      "is_hosting_provider": true,
+      "is_public_proxy": true,
+      "is_residential_proxy": true,
+      "is_tor_exit_node": true,
+      "network_last_seen": "2025-01-15",
+      "provider_name": "nordvpn",
+      "residential": {
+        "confidence": 82,
+        "network_last_seen": "2026-05-11",
+        "provider_name": "quickshift"
+      }
+    },
     "city": {
       "confidence": 25,
       "geoname_id": 54321,
@@ -1692,6 +1729,22 @@ Factors services, and a full example of the JSON body document for an error.
   "id": "5bc5d6c2-b2c8-40af-87f4-6d61af86b6ae",
   "ip_address": {
     "risk": 0.01,
+    "anonymizer": {
+      "confidence": 99,
+      "is_anonymous": true,
+      "is_anonymous_vpn": true,
+      "is_hosting_provider": true,
+      "is_public_proxy": true,
+      "is_residential_proxy": true,
+      "is_tor_exit_node": true,
+      "network_last_seen": "2025-01-15",
+      "provider_name": "nordvpn",
+      "residential": {
+        "confidence": 82,
+        "network_last_seen": "2026-05-11",
+        "provider_name": "quickshift"
+      }
+    },
     "city": {
       "confidence": 25,
       "geoname_id": 54321,
