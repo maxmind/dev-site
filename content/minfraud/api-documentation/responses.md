@@ -352,11 +352,11 @@ minFraud Insights and Factors, the object is the
 [GeoIP Insights response body](/geoip/docs/web-services/responses/#geoip-insights-body-example)
 with five modifications:
 
-1. `risk` has been added directly to the `ip_address` object
-2. `risk_reasons` has been added directly to the `ip_address` object
+1. `risk` has been added directly to the `ip_address` object.
+2. `risk_reasons` has been added directly to the `ip_address` object.
 3. `is_high_risk` has been added to the `country` sub-object. This field is
    deprecated.
-4. `local_time` has been added to the `location` sub-object
+4. `local_time` has been added to the `location` sub-object.
 5. The `maxmind` object is not present.
 
 See below for descriptions of the added fields.
