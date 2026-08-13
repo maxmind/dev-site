@@ -490,7 +490,7 @@ object instead.
   "risk_reasons": [
     {
       "code": "ANONYMOUS_IP",
-      "reason": "The IP address belongs to an anonymous network. See /ip_address/anonymizer for more details."
+      "reason": "The IP address belongs to an anonymous network."
     },
     {
       "code": "MINFRAUD_NETWORK_ACTIVITY",
@@ -642,7 +642,7 @@ the IP address received the associated risk.
 [
   {
     "code": "ANONYMOUS_IP",
-    "reason": "The IP address belongs to an anonymous network. See /ip_address/anonymizer for more details."
+    "reason": "The IP address belongs to an anonymous network."
   },
   {
     "code": "MINFRAUD_NETWORK_ACTIVITY",
@@ -660,7 +660,7 @@ the IP address received the associated risk.
 
   | Code                         | Explanation                                                                                            |
   | ---------------------------- | ------------------------------------------------------------------------------------------------------ |
-  | `ANONYMOUS_IP`                | The IP address belongs to an anonymous network. See the object at `/ip_address/anonymizer` for more details. |
+  | `ANONYMOUS_IP`                | The IP address belongs to an anonymous network. |
   | `BILLING_POSTAL_VELOCITY`    | Many different billing postal codes have been seen on this IP address.                                 |
   | `EMAIL_VELOCITY`              | Many different email addresses have been seen on this IP address.                                      |
   | `HIGH_RISK_DEVICE`           | A high risk device was seen on this IP address.                                                        |
@@ -1589,7 +1589,7 @@ Factors services, and a full example of the JSON body document for an error.
     "risk_reasons": [
       {
         "code": "ANONYMOUS_IP",
-        "reason": "The IP address belongs to an anonymous network. See /ip_address/anonymizer for more details."
+        "reason": "The IP address belongs to an anonymous network."
       },
       {
         "code": "MINFRAUD_NETWORK_ACTIVITY",
@@ -1837,7 +1837,7 @@ Factors services, and a full example of the JSON body document for an error.
     "risk_reasons": [
       {
         "code": "ANONYMOUS_IP",
-        "reason": "The IP address belongs to an anonymous network. See /ip_address/anonymizer for more details."
+        "reason": "The IP address belongs to an anonymous network."
       },
       {
         "code": "MINFRAUD_NETWORK_ACTIVITY",
