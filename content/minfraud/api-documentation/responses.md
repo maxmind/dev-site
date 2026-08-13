@@ -350,31 +350,54 @@ For full examples of response bodies, select one of the following:
 For minFraud Score, this object only contains the `risk` for the IP address. For
 minFraud Insights and Factors, the object is the
 [GeoIP Insights response body](/geoip/docs/web-services/responses/#geoip-insights-body-example)
-with four modifications:
+with five modifications:
 
-1. `risk` has been added directly to the `ip_address` object
-2. `is_high_risk` has been added to the `country` sub-object
-3. `local_time` has been added to the `location` sub-object
-4. The `maxmind` object is not present.
+1. `risk` has been added directly to the `ip_address` object.
+2. `risk_reasons` has been added directly to the `ip_address` object.
+3. `is_high_risk` has been added to the `country` sub-object. This field is
+   deprecated.
+4. `local_time` has been added to the `location` sub-object.
+5. The `maxmind` object is not present.
 
 See below for descriptions of the added fields.
 
-minFraud Insights and Factors return the following anonymous IP outputs:
+minFraud Insights and Factors return anonymous IP outputs in the
+[`anonymizer` object](/geoip/docs/web-services/responses/#anonymizer):
 
+- `confidence`
 - `is_anonymous`
 - `is_anonymous_vpn`
 - `is_hosting_provider`
 - `is_public_proxy`
 - `is_residential_proxy`
 - `is_tor_exit_node`
+- `network_last_seen`
+- `provider_name`
+- `residential`
 
-See the
-[GeoIP Insights response body](/geoip/docs/web-services/responses/#geoip-insights-body-example)
-for more information.
+The six `is_*` outputs above are also returned in the `traits` object for
+backwards compatibility, but they are deprecated there. Use the `anonymizer`
+object instead.
 
 ```json
 {
   "risk": 0.01,
+  "anonymizer": {
+    "confidence": 99,
+    "is_anonymous": true,
+    "is_anonymous_vpn": true,
+    "is_hosting_provider": true,
+    "is_public_proxy": true,
+    "is_residential_proxy": true,
+    "is_tor_exit_node": true,
+    "network_last_seen": "2025-01-15",
+    "provider_name": "nordvpn",
+    "residential": {
+      "confidence": 82,
+      "network_last_seen": "2026-05-11",
+      "provider_name": "quickshift"
+    }
+  },
   "city": {
     "confidence": 25,
     "geoname_id": 54321,
@@ -467,7 +490,7 @@ for more information.
   "risk_reasons": [
     {
       "code": "ANONYMOUS_IP",
-      "reason": "The IP address belongs to an anonymous network. See /ip_address/traits for more details."
+      "reason": "The IP address belongs to an anonymous network."
     },
     {
       "code": "MINFRAUD_NETWORK_ACTIVITY",
@@ -496,14 +519,13 @@ for more information.
     "connection_type": "Cable/DSL",
     "domain": "example.com",
     "ip_address": "1.2.3.4",
+    "ip_risk_snapshot": 45.5,
     "is_anonymous": true,
-    "is_anonymous_proxy": true,
     "is_anonymous_vpn": true,
     "is_anycast": true,
     "is_hosting_provider": true,
     "is_public_proxy": true,
     "is_residential_proxy": true,
-    "is_satellite_provider": true,
     "is_tor_exit_node": true,
     "isp": "Linkem spa",
     "mobile_country_code": "310",
@@ -620,7 +642,7 @@ the IP address received the associated risk.
 [
   {
     "code": "ANONYMOUS_IP",
-    "reason": "The IP address belongs to an anonymous network. See /ip_address/traits for more details."
+    "reason": "The IP address belongs to an anonymous network."
   },
   {
     "code": "MINFRAUD_NETWORK_ACTIVITY",
@@ -638,7 +660,7 @@ the IP address received the associated risk.
 
   | Code                         | Explanation                                                                                            |
   | ---------------------------- | ------------------------------------------------------------------------------------------------------ |
-  | `ANONYMOUS_IP`                | The IP address belongs to an anonymous network. See the object at `/ip_address/traits` for more details. |
+  | `ANONYMOUS_IP`                | The IP address belongs to an anonymous network. |
   | `BILLING_POSTAL_VELOCITY`    | Many different billing postal codes have been seen on this IP address.                                 |
   | `EMAIL_VELOCITY`              | Many different email addresses have been seen on this IP address.                                      |
   | `HIGH_RISK_DEVICE`           | A high risk device was seen on this IP address.                                                        |
@@ -1459,6 +1481,22 @@ Factors services, and a full example of the JSON body document for an error.
   "id": "5bc5d6c2-b2c8-40af-87f4-6d61af86b6ae",
   "ip_address": {
     "risk": 0.01,
+    "anonymizer": {
+      "confidence": 99,
+      "is_anonymous": true,
+      "is_anonymous_vpn": true,
+      "is_hosting_provider": true,
+      "is_public_proxy": true,
+      "is_residential_proxy": true,
+      "is_tor_exit_node": true,
+      "network_last_seen": "2025-01-15",
+      "provider_name": "nordvpn",
+      "residential": {
+        "confidence": 82,
+        "network_last_seen": "2026-05-11",
+        "provider_name": "quickshift"
+      }
+    },
     "city": {
       "confidence": 25,
       "geoname_id": 54321,
@@ -1551,7 +1589,7 @@ Factors services, and a full example of the JSON body document for an error.
     "risk_reasons": [
       {
         "code": "ANONYMOUS_IP",
-        "reason": "The IP address belongs to an anonymous network. See /ip_address/traits for more details."
+        "reason": "The IP address belongs to an anonymous network."
       },
       {
         "code": "MINFRAUD_NETWORK_ACTIVITY",
@@ -1580,14 +1618,13 @@ Factors services, and a full example of the JSON body document for an error.
       "connection_type": "Cable/DSL",
       "domain": "example.com",
       "ip_address": "1.2.3.4",
+      "ip_risk_snapshot": 45.5,
       "is_anonymous": true,
-      "is_anonymous_proxy": true,
       "is_anonymous_vpn": true,
       "is_anycast": true,
       "is_hosting_provider": true,
       "is_public_proxy": true,
       "is_residential_proxy": true,
-      "is_satellite_provider": true,
       "is_tor_exit_node": true,
       "isp": "Linkem spa",
       "mobile_country_code": "310",
@@ -1692,6 +1729,22 @@ Factors services, and a full example of the JSON body document for an error.
   "id": "5bc5d6c2-b2c8-40af-87f4-6d61af86b6ae",
   "ip_address": {
     "risk": 0.01,
+    "anonymizer": {
+      "confidence": 99,
+      "is_anonymous": true,
+      "is_anonymous_vpn": true,
+      "is_hosting_provider": true,
+      "is_public_proxy": true,
+      "is_residential_proxy": true,
+      "is_tor_exit_node": true,
+      "network_last_seen": "2025-01-15",
+      "provider_name": "nordvpn",
+      "residential": {
+        "confidence": 82,
+        "network_last_seen": "2026-05-11",
+        "provider_name": "quickshift"
+      }
+    },
     "city": {
       "confidence": 25,
       "geoname_id": 54321,
@@ -1784,7 +1837,7 @@ Factors services, and a full example of the JSON body document for an error.
     "risk_reasons": [
       {
         "code": "ANONYMOUS_IP",
-        "reason": "The IP address belongs to an anonymous network. See /ip_address/traits for more details."
+        "reason": "The IP address belongs to an anonymous network."
       },
       {
         "code": "MINFRAUD_NETWORK_ACTIVITY",
@@ -1813,14 +1866,13 @@ Factors services, and a full example of the JSON body document for an error.
       "connection_type": "Cable/DSL",
       "domain": "example.com",
       "ip_address": "1.2.3.4",
+      "ip_risk_snapshot": 45.5,
       "is_anonymous": true,
-      "is_anonymous_proxy": true,
       "is_anonymous_vpn": true,
       "is_anycast": true,
       "is_hosting_provider": true,
       "is_public_proxy": true,
       "is_residential_proxy": true,
-      "is_satellite_provider": true,
       "is_tor_exit_node": true,
       "isp": "Linkem spa",
       "mobile_country_code": "310",
