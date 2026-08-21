@@ -173,6 +173,20 @@ These are named `GeoIP-Residential-Proxy-Blocks-IPv4.csv` and
 - [GeoIP-Residential-Proxy-Test.mmdb](https://github.com/maxmind/MaxMind-DB/blob/main/test-data/GeoIP-Residential-Proxy-Test.mmdb)
   {{</ mmdb-example-files >}}
 
+## Database Sizes
+
+<!-- prettier-ignore-start -->
+
+{{< db-sizes-table dateRange="May to August 2026" >}}
+- databaseName: "GeoIP Residential Proxy"
+  csvSizeRange: "3.71 GB - 3.91 GB"
+  mmdbSizeRange: "3.15 GB - 3.41 GB"
+  ipv4Range: "61,942,000 - 67,626,000"
+  ipv6Range: "24,877,000 - 29,297,000"
+{{< /db-sizes-table >}}
+
+<!-- prettier-ignore-end -->
+
 ## Database Changes
 
 {{< database-changes product="Residential Proxy" >}}

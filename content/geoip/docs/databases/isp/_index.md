@@ -188,12 +188,12 @@ respectively.
 
 <!-- prettier-ignore-start -->
 
-{{< db-sizes-table dateRange="August to October 2024" >}}
+{{< db-sizes-table dateRange="May to August 2026" >}}
 - databaseName: "GeoIP ISP"
-  csvSizeRange: "78.7 MB - 83.9 MB"
-  mmdbSizeRange: "14.5 MB - 15 MB"
-  ipv4Range: "713,000 - 744,000"
-  ipv6Range: "241,000 - 269,000"
+  csvSizeRange: "135 MB - 142 MB"
+  mmdbSizeRange: "19.8 MB - 20.3 MB"
+  ipv4Range: "944,000 - 969,000"
+  ipv6Range: "593,000 - 656,000"
 {{< /db-sizes-table >}}
 
 <!-- prettier-ignore-end -->

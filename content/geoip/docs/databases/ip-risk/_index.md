@@ -267,6 +267,20 @@ These are named `GeoIP2-IP-Risk-Blocks-IPv4.csv` and
 - [GeoIP2-IP-Risk-Test.mmdb](https://github.com/maxmind/MaxMind-DB/blob/main/test-data/GeoIP2-IP-Risk-Test.mmdb)
   {{</ mmdb-example-files >}}
 
+## Database Sizes
+
+<!-- prettier-ignore-start -->
+
+{{< db-sizes-table dateRange="May to August 2026" >}}
+- databaseName: "GeoIP IP Risk"
+  csvSizeRange: "748 MB - 976 MB"
+  mmdbSizeRange: "584 MB - 645 MB"
+  ipv4Range: "19,530,000 - 24,682,000"
+  ipv6Range: "796,000 - 7,370,000"
+{{< /db-sizes-table >}}
+
+<!-- prettier-ignore-end -->
+
 ## Database Changes
 
 {{< database-changes product="IP Risk" >}}

@@ -119,12 +119,12 @@ These are named `GeoLite2-ASN-Blocks-IPv4.csv` and
 
 <!-- prettier-ignore-start -->
 
-{{< db-sizes-table dateRange="August to October 2024" >}}
+{{< db-sizes-table dateRange="May to August 2026" >}}
 - databaseName: "GeoLite ASN"
-  csvSizeRange: "28.05 MB - 28.38 MB"
-  mmdbSizeRange: "8.52 MB - 8.64 MB"
-  ipv4Range: "508,000 - 516,000"
-  ipv6Range: "137,000 - 140,000"
+  csvSizeRange: "55.7 MB - 58.8 MB"
+  mmdbSizeRange: "12.0 MB - 12.4 MB"
+  ipv4Range: "660,000 - 676,000"
+  ipv6Range: "425,000 - 468,000"
 {{< /db-sizes-table >}}
 
 <!-- prettier-ignore-end -->

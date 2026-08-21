@@ -114,6 +114,20 @@ These are named `GeoIP2-Static-IP-Score-Blocks-IPv4.csv` and
 - [GeoIP2-Static-IP-Score-Test.mmdb](https://github.com/maxmind/MaxMind-DB/blob/main/test-data/GeoIP2-Static-IP-Score-Test.mmdb)
   {{</ mmdb-example-files >}}
 
+## Database Sizes
+
+<!-- prettier-ignore-start -->
+
+{{< db-sizes-table dateRange="May to August 2026" >}}
+- databaseName: "GeoIP Static IP Score"
+  csvSizeRange: "47.5 MB - 53.8 MB"
+  mmdbSizeRange: "14.2 MB - 16.0 MB"
+  ipv4Range: "1,425,000 - 1,719,000"
+  ipv6Range: "545,000 - 563,000"
+{{< /db-sizes-table >}}
+
+<!-- prettier-ignore-end -->
+
 ## Database Changes
 
 {{< database-changes product="Static IP Score" >}}
