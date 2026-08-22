@@ -187,12 +187,12 @@ These are named `GeoIP2-Anonymous-IP-Blocks-IPv4.csv` and
 
 <!-- prettier-ignore-start -->
 
-{{< db-sizes-table dateRange="August to October 2024" >}}
+{{< db-sizes-table dateRange="May to August 2026" >}}
 - databaseName: "GeoIP Anonymous IP"
-  csvSizeRange: "4.31 MB - 4.75 MB"
-  mmdbSizeRange: "2.69 MB - 2.87 MB"
-  ipv4Range: "149,000 - 161,000"
-  ipv6Range: "23,000 - 28,000"
+  csvSizeRange: "4.05 MB - 5.09 MB"
+  mmdbSizeRange: "2.42 MB - 2.77 MB"
+  ipv4Range: "133,000 - 166,000"
+  ipv6Range: "30,000 - 38,000"
 {{< /db-sizes-table >}}
 
 <!-- prettier-ignore-end -->

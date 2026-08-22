@@ -190,6 +190,20 @@ in the IPv6 file will be `null`. {{</ alert >}}
 - [GeoIP2-User-Count-Test.mmdb](https://github.com/maxmind/MaxMind-DB/blob/main/test-data/GeoIP2-User-Count-Test.mmdb)
   {{</ mmdb-example-files >}}
 
+## Database Sizes
+
+<!-- prettier-ignore-start -->
+
+{{< db-sizes-table dateRange="May to August 2026" >}}
+- databaseName: "GeoIP User Count"
+  csvSizeRange: "5.60 GB - 6.91 GB"
+  mmdbSizeRange: "1.65 GB - 1.99 GB"
+  ipv4Range: "146,984,000 - 166,267,000"
+  ipv6Range: "57,738,000 - 86,092,000"
+{{< /db-sizes-table >}}
+
+<!-- prettier-ignore-end -->
+
 ## Database Changes
 
 {{< database-changes product="User Count" >}}

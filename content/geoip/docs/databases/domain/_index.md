@@ -99,12 +99,12 @@ These are named `GeoIP2-Domain-Blocks-IPv4.csv` and
 
 <!-- prettier-ignore-start -->
 
-{{< db-sizes-table dateRange="August to October 2024" >}}
+{{< db-sizes-table dateRange="May to August 2026" >}}
 - databaseName: "GeoIP Domain"
-  csvSizeRange: "18.07 MB - 18.36 MB"
-  mmdbSizeRange: "10.4 MB - 10.6 MB"
-  ipv4Range: "509,000 - 516,000"
-  ipv6Range: "109,000 - 112,000"
+  csvSizeRange: "21.1 MB - 22.6 MB"
+  mmdbSizeRange: "11.7 MB - 13.0 MB"
+  ipv4Range: "554,000 - 598,000"
+  ipv6Range: "156,000 - 170,000"
 {{< /db-sizes-table >}}
 
 <!-- prettier-ignore-end -->

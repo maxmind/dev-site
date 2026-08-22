@@ -252,12 +252,12 @@ name would be `GeoIP2-Enterprise-Locations-en.csv`.
 
 <!-- prettier-ignore-start -->
 
-{{< db-sizes-table dateRange="August to October 2024" >}}
+{{< db-sizes-table dateRange="May to August 2026" >}}
 - databaseName: "GeoIP Enterprise"
-  csvSizeRange: "986 MB - 1.05 GB"
-  mmdbSizeRange: "344 MB - 358 MB"
-  ipv4Range: "7,874,000 - 8,984,000"
-  ipv6Range: "3,251,000 - 3,772,000"
+  csvSizeRange: "1.12 GB - 1.27 GB"
+  mmdbSizeRange: "339 MB - 401 MB"
+  ipv4Range: "7,877,000 - 9,470,000"
+  ipv6Range: "4,699,000 - 4,888,000"
 {{< /db-sizes-table >}}
 
 <!-- prettier-ignore-end -->
