@@ -106,20 +106,26 @@ maintainer for assistance. {{</ alert >}}
 MaxMind does **_not_** offer support for these integrations. Please contact the
 integrator for assistance. {{</ alert >}}
 
-| Application                    | Platform                | Link                                                                                                        |
-| ------------------------------ | ----------------------- | ----------------------------------------------------------------------------------------------------------- |
-| Ad-serving                     | Revive Adserver         | [Geotargeting with Revive Adserver](https://www.revive-adserver.com/faq/geotargeting-with-revive-adserver/) |
-| Analytics                      | Piwik/Matomo            | [GEO LOCATE YOUR VISITORS](https://matomo.org/faq/how-to/setting-up-accurate-visitors-geolocation/)         |
-| Analytics                      | Snowplow Analytics      | [IP lookups enrichment](https://github.com/snowplow/snowplow/wiki/IP-lookups-enrichment)                    |
-| Content Delivery               | Varnish Software        | [libvmod-geoip2](https://github.com/varnishcache-friends/libvmod-geoip2)                                    |
-| Data Processing                | Polars                  | [maxminddb-polars](https://pypi.org/project/maxminddb-polars/)                                              |
-| Database                       | DuckDB                  | [duckdb-maxmind](https://github.com/marselester/duckdb-maxmind)                                             |
-| E-commerce                     | WooCommerce / WordPress | [MaxMind Geolocation Integration](https://woocommerce.com/document/maxmind-geolocation-integration/)        |
-| Load balancer                  | NGINX                   | [ngx_http_geoip2_module](https://github.com/leev/ngx_http_geoip2_module)                                    |
-| Log Analyzer / Data Processing | Logstash                | [Geoip filter plugin](https://www.elastic.co/docs/reference/logstash/plugins/plugins-filters-geoip)         |
-| Network Protocol Analyzer      | Wireshark               | [How To Use GeoIP With Wireshark](https://gitlab.com/wireshark/wireshark/-/wikis/HowToUseGeoIP)             |
-| Search                         | Elasticsearch           | [GeoIP processor](https://www.elastic.co/guide/en/elasticsearch/reference/8.19/geoip-processor.html)        |
-| Web server                     | Caddy                   | [caddy-geoip2](https://github.com/zhangjiayin/caddy-geoip2)                                                 |
+| Application                    | Platform                | Link                                                                                                                      |
+| ------------------------------ | ----------------------- | ------------------------------------------------------------------------------------------------------------------------- |
+| Ad-serving                     | Revive Adserver         | [Geotargeting with Revive Adserver](https://www.revive-adserver.com/faq/geotargeting-with-revive-adserver/)               |
+| Analytics                      | Piwik/Matomo            | [GEO LOCATE YOUR VISITORS](https://matomo.org/faq/how-to/setting-up-accurate-visitors-geolocation/)                       |
+| Analytics                      | Snowplow Analytics      | [IP lookups enrichment](https://github.com/snowplow/snowplow/wiki/IP-lookups-enrichment)                                  |
+| Content Delivery               | Varnish Software        | [libvmod-geoip2](https://github.com/varnishcache-friends/libvmod-geoip2)                                                  |
+| Data Processing                | Apache NiFi             | [GeoEnrichIP](https://nifi.apache.org/components/org.apache.nifi.processors.GeoEnrichIP/)                                 |
+| Data Processing                | Polars                  | [maxminddb-polars](https://pypi.org/project/maxminddb-polars/)                                                            |
+| Database                       | DuckDB                  | [duckdb-maxmind](https://github.com/marselester/duckdb-maxmind)                                                           |
+| E-commerce                     | WooCommerce / WordPress | [MaxMind Geolocation Integration](https://woocommerce.com/document/maxmind-geolocation-integration/)                      |
+| Load balancer                  | Envoy                   | [IP geolocation filter](https://www.envoyproxy.io/docs/envoy/latest/configuration/listeners/network_filters/geoip_filter) |
+| Load balancer                  | NGINX                   | [ngx_http_geoip2_module](https://github.com/leev/ngx_http_geoip2_module)                                                  |
+| Log Analyzer / Data Processing | Fluent Bit              | [GeoIP2 filter](https://docs.fluentbit.io/manual/data-pipeline/filters/geoip2-filter)                                     |
+| Log Analyzer / Data Processing | Graylog                 | [GeoIP Data Adapter](https://go2docs.graylog.org/current/making_sense_of_your_log_data/geoip_data_adapter.htm)            |
+| Log Analyzer / Data Processing | Logstash                | [Geoip filter plugin](https://www.elastic.co/docs/reference/logstash/plugins/plugins-filters-geoip)                       |
+| Log Analyzer / Data Processing | Splunk                  | [MaxMind GeoIP App](https://github.com/maxmind/geoip-splunk)                                                              |
+| Log Analyzer / Data Processing | Vector                  | [GeoIP and MMDB enrichment tables](https://vector.dev/docs/reference/configuration/pipeline-components/)                  |
+| Network Protocol Analyzer      | Wireshark               | [How To Use GeoIP With Wireshark](https://gitlab.com/wireshark/wireshark/-/wikis/HowToUseGeoIP)                           |
+| Search                         | Elasticsearch           | [GeoIP processor](https://www.elastic.co/guide/en/elasticsearch/reference/8.19/geoip-processor.html)                      |
+| Web server                     | Caddy                   | [caddy-geoip2](https://github.com/zhangjiayin/caddy-geoip2)                                                               |
 
 ## Command Line (mmdbinspect)
 
