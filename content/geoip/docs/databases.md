@@ -43,7 +43,6 @@ title: GeoIP and GeoLite Database Documentation
 | Language or Framework | Package Repository                                                                      | Documentation                                             | Version Control                                    |
 | --------------------- | --------------------------------------------------------------------------------------- | --------------------------------------------------------- | -------------------------------------------------- |
 | .NET (C#)             | [NuGet](https://www.nuget.org/packages/MaxMind.GeoIP2/)                                 | [GitHub Pages](https://maxmind.github.io/GeoIP2-dotnet/)  | [GitHub](https://github.com/maxmind/GeoIP2-dotnet) |
-| Apache                | N/A                                                                                     | [GitHub Pages](https://maxmind.github.io/mod_maxminddb/)  | [GitHub](https://github.com/maxmind/mod_maxminddb) |
 | C                     | N/A                                                                                     | [GitHub Pages](https://maxmind.github.io/libmaxminddb/)   | [GitHub](https://github.com/maxmind/libmaxminddb)  |
 | Java                  | [Maven Central Repository](https://search.maven.org/artifact/com.maxmind.geoip2/geoip2) | [GitHub Pages](https://maxmind.github.io/GeoIP2-java/)    | [GitHub](https://github.com/maxmind/GeoIP2-java)   |
 | Node.js               | [npm](https://www.npmjs.com/package/@maxmind/geoip2-node)                               | [GitHub Pages](https://maxmind.github.io/GeoIP2-node/)    | [GitHub](https://github.com/maxmind/GeoIP2-node)   |
@@ -99,7 +98,19 @@ maintainer for assistance. {{</ alert >}}
 | Swift (C extension)     | MMDB-Swift                      | [MMDB-Swift](https://cocoapods.org/pods/MMDB-Swift)                                         | [CocoaPods](https://cocoapods.org/pods/MMDB-Swift)                                 | [GitHub](https://github.com/lexrus/MMDB-Swift)               |
 | Zig                     | maxminddb                       |                                                                                             | [README](https://github.com/marselester/maxminddb.zig/blob/master/README.md)       | [GitHub](https://github.com/marselester/maxminddb.zig)       |
 
-### Integrations
+## Integrations
+
+### Official Integrations
+
+These integrations are developed or provided by MaxMind.
+
+| Application                    | Platform           | Documentation or Listing                                    | Version Control                                    |
+| ------------------------------ | ------------------ | ----------------------------------------------------------- | -------------------------------------------------- |
+| Database                       | Snowflake          | [GeoLite on Snowflake](/geoip/geolite-on-snowflake/)        | N/A                                                |
+| Log Analyzer / Data Processing | Splunk             | [MaxMind GeoIP App](https://splunkbase.splunk.com/app/8554) | [GitHub](https://github.com/maxmind/geoip-splunk)  |
+| Web server                     | Apache HTTP Server | [mod_maxminddb](https://maxmind.github.io/mod_maxminddb/)   | [GitHub](https://github.com/maxmind/mod_maxminddb) |
+
+### Unofficial Integrations
 
 {{< alert warning >}} **Use at your own risk.**
 
@@ -115,14 +126,12 @@ integrator for assistance. {{</ alert >}}
 | Data Processing                | Apache NiFi             | [GeoEnrichIP](https://nifi.apache.org/components/org.apache.nifi.processors.GeoEnrichIP/)                                 |
 | Data Processing                | Polars                  | [maxminddb-polars](https://pypi.org/project/maxminddb-polars/)                                                            |
 | Database                       | DuckDB                  | [duckdb-maxmind](https://github.com/marselester/duckdb-maxmind)                                                           |
-| Database                       | Snowflake               | [GeoLite on Snowflake](/geoip/geolite-on-snowflake/)                                                                      |
 | E-commerce                     | WooCommerce / WordPress | [MaxMind Geolocation Integration](https://woocommerce.com/document/maxmind-geolocation-integration/)                      |
 | Load balancer                  | Envoy                   | [IP geolocation filter](https://www.envoyproxy.io/docs/envoy/latest/configuration/listeners/network_filters/geoip_filter) |
 | Load balancer                  | NGINX                   | [ngx_http_geoip2_module](https://github.com/leev/ngx_http_geoip2_module)                                                  |
 | Log Analyzer / Data Processing | Fluent Bit              | [GeoIP2 filter](https://docs.fluentbit.io/manual/data-pipeline/filters/geoip2-filter)                                     |
 | Log Analyzer / Data Processing | Graylog                 | [GeoIP Data Adapter](https://go2docs.graylog.org/current/making_sense_of_your_log_data/geoip_data_adapter.htm)            |
-| Log Analyzer / Data Processing | Logstash                | [Geoip filter plugin](https://www.elastic.co/docs/reference/logstash/plugins/plugins-filters-geoip)                       |
-| Log Analyzer / Data Processing | Splunk                  | [MaxMind GeoIP App](https://splunkbase.splunk.com/app/8554)                                                               |
+| Log Analyzer / Data Processing | Logstash                | [GeoIP filter plugin](https://www.elastic.co/docs/reference/logstash/plugins/plugins-filters-geoip)                       |
 | Log Analyzer / Data Processing | Vector                  | [GeoIP and MMDB enrichment tables](https://vector.dev/docs/reference/configuration/pipeline-components/)                  |
 | Network Protocol Analyzer      | Wireshark               | [How To Use GeoIP With Wireshark](https://gitlab.com/wireshark/wireshark/-/wikis/HowToUseGeoIP)                           |
 | Search                         | Elasticsearch           | [GeoIP processor](https://www.elastic.co/guide/en/elasticsearch/reference/8.19/geoip-processor.html)                      |
