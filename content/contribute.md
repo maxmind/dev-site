@@ -24,7 +24,7 @@ feeling for the quality of contributions that we feature:
 - [minFraud service Magento 2 Plugin](https://weltpixel.com/products/magento2-maxmind-fraud-prevention-minfraud)
 - [GeoIP and GeoLite web services Unofficial APIs](/geoip/docs/web-services/#third-party-client-apis)
 - [GeoIP and GeoLite database Unofficial APIs](/geoip/docs/databases/#unofficial-client-apis)
-- [GeoIP and GeoLite database Integrations (for MMDB format)](/geoip/docs/databases/#integrations)
+- [GeoIP and GeoLite database Unofficial Integrations (for MMDB format)](/geoip/docs/databases/#unofficial-integrations)
 
 You can also peruse our organization and projects on GitHub to get a sense of
 how we develop for MaxMind’s products and services. Some good examples to look
