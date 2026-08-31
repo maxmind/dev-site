@@ -10,7 +10,7 @@ service formats.
 
 {{< link-group/container >}}
 - heading: "Sign Up for GeoLite"
-  url: "https://www.maxmind.com/en/geolite2/signup"
+  url: "https://www.maxmind.com/en/create-account"
   text: "Start building today with GeoLite databases and web services."
 - heading: "Explore GeoLite"
   url: "https://www.maxmind.com/en/geolite-free-ip-geolocation-data"

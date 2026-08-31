@@ -24,7 +24,7 @@ method/service, and providing callbacks for all scenarios.
 ### 1. Register your domain(s)
 
 All domains using the service must be registered. New users may
-[request a free trial](https://www.maxmind.com/en/request-service-trial?service_geoip=1)
+[request a free trial](https://www.maxmind.com/en/create-account?service_geoip=1)
 or
 [purchase web service credit](https://www.maxmind.com/en/geoip-api-web-services)
 in order to receive an account to register domains. Existing account holders are

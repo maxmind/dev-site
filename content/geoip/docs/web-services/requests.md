@@ -13,10 +13,10 @@ The password is your
 [MaxMind license key](https://www.maxmind.com/en/accounts/current/license-key).
 
 {{< alert warning >}} You must be approved for a
-[GeoIP web service trial](https://www.maxmind.com/en/request-service-trial?service_geoip=1),
+[GeoIP web service trial](https://www.maxmind.com/en/create-account?service_geoip=1),
 [purchase service credit](https://www.maxmind.com/en/geoip-api-web-services) for
 use with our web services, or have a
-[GeoLite account](https://www.maxmind.com/en/geolite2/signup), in order to
+[GeoLite account](https://www.maxmind.com/en/create-account), in order to
 receive an account ID and license key. {{</ alert >}}
 
 We use

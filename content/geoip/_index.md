@@ -143,7 +143,7 @@ in GeoIP products and services on our knowledge base.
 GeoLite databases and web services provide free geolocation and limited network
 data for IP addresses. This data is less accurate than the data in our paid,
 GeoIP products and services. You must
-[sign up for a free GeoLite account](https://www.maxmind.com/en/geolite2/signup)
+[sign up for a free GeoLite account](https://www.maxmind.com/en/create-account)
 in order to download GeoLite databases or query the GeoLite web services.
 GeoLite uses the same integration methods and documentation as GeoIP (linked
 below), with a few minor modifications. It is recommended that you get started
