@@ -7,13 +7,13 @@
   "devDependencies": {
     "@eslint/eslintrc": "^3.3.6",
     "@eslint/js": "^10.0.1",
-    "@types/node": "^26.1.2",
-    "baseline-browser-mapping": "^2.10.43",
-    "caniuse-lite": "^1.0.30001806",
-    "cspell": "^10.0.1",
-    "eslint": "^10.8.0",
+    "@types/node": "^26.4.0",
+    "baseline-browser-mapping": "^2.11.19",
+    "caniuse-lite": "^1.0.30001810",
+    "cspell": "^10.1.1",
+    "eslint": "^10.9.1",
     "eslint-plugin-simple-import-sort": "^14.0.0",
-    "globals": "^17.9.0",
+    "globals": "^17.11.0",
     "npm-run-all": "^4.1.5",
     "prettier": "^3.9.6",
     "prettier-plugin-go-template": "^0.0.15",
@@ -23,7 +23,7 @@
     "stylelint-no-unsupported-browser-features": "^8.1.1",
     "stylelint-order": "^8.1.1",
     "typescript": "^6.0.3",
-    "typescript-eslint": "^8.65.0"
+    "typescript-eslint": "^8.68.0"
   },
   "engines": {
     "node": ">=22.21.1",
