@@ -52,6 +52,9 @@ will contain a response within the range defined below:
 | `74.209.24.1`         | 5 - 39.99                       |
 | `65.116.3.80`         | 0.01 - 4.99                     |
 
+Also, if you include the `/event/time` input, it must be within 12 hours of the
+request time to ensure the expected IP risk score ranges are returned.
+
 Please note that the Sandbox environment may not return all the risk data that
 the minFraud service would return, and the risk scores and risk data it does
 return will not be accurate. The Sandbox environment should be used for basic
