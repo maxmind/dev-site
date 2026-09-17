@@ -1,59 +1,29 @@
 {{- /*
   Section-level RSS template for release notes.
 
-  Both branches below produce the same thing: a list of items carrying title,
-  link, pubDate and content. Only the source differs. minFraud reads individual
-  note pages; GeoIP still scrapes its year pages and loses that branch when it
-  migrates.
+  A note with a legacy_anchor predates the split into one page per note. Its
+  item keeps the link, guid and 16:00Z pubDate the year-page feed gave it,
+  because a mailing system matches on them and would mail it again. Its body
+  can differ. Newer notes use their own URL and date.
 */ -}}
 
 {{- $items := slice }}
 {{- $section := .Permalink }}
 
-{{- if .Params.individual_notes }}
-  {{- /*
-    A note carrying a legacy anchor was published before the notes were split
-    into individual pages, so its item is rendered exactly as the year-page feed
-    rendered it: the year URL with the anchor, and the 16:00Z stamp that feed
-    applied to every note regardless of front matter hour. That hour orders
-    notes sharing a date; it is not a publication time. Reproducing the old item
-    byte for byte keeps subscribers from being mailed announcements they have
-    already read. Notes written after the split have no anchor and use their own
-    URL and timestamp.
-  */ -}}
-  {{- range .Pages.ByDate.Reverse }}
-    {{- $url := .Permalink }}
-    {{- $published := .Date }}
-    {{- with .Params.legacy_anchor }}
-      {{- $url = printf "%s%s/#%s" $section ($published.Format "2006") . }}
-      {{- $published = time.AsTime (printf "%sT16:00:00Z" ($published.Format "2006-01-02")) }}
-    {{- end }}
-    {{- $items = $items | append (dict
-        "title" .Title
-        "link" $url
-        "date" $published
-        "content" .Content
-      )
-    }}
+{{- range .Pages.ByDate.Reverse }}
+  {{- $url := .Permalink }}
+  {{- $published := .Date }}
+  {{- with .Params.legacy_anchor }}
+    {{- $url = printf "%s%s/#%s" $section ($published.Format "2006") . }}
+    {{- $published = time.AsTime (printf "%sT16:00:00Z" ($published.Format "2006-01-02")) }}
   {{- end }}
-{{- else }}
-  {{- range .Pages.ByDate.Reverse }}
-    {{- $page := . }}
-    {{- range (findRE `(?s)<div class="release-note".+?(?:<!-- end-release-note -->|$)` .Content) }}
-      {{- $anchor := replaceRE `(?s).+data-anchor="(.+?)".+` "$1" . }}
-      {{- $title := replaceRE `(?s).+data-title="(.+?)".+` "$1" . }}
-      {{- $date := replaceRE `(?s).+data-date="(.+?)".+` "$1" . }}
-      {{- $content := replaceRE `(?s).+<div class="release-note__content">(.+?)(?:<!-- end-content -->|$).+` "$1" . }}
-      {{- $items = $items | append (dict
-          "title" $title
-          "link" (printf "%s#%s" $page.Permalink $anchor)
-          "date" (time.AsTime (printf "%sT16:00:00Z" $date))
-          "content" (trim $content "\n ")
-        )
-      }}
-    {{- end }}
-  {{- end }}
-  {{- $items = sort $items "date" "desc" }}
+  {{- $items = $items | append (dict
+      "title" .Title
+      "link" $url
+      "date" $published
+      "content" .Content
+    )
+  }}
 {{- end }}
 
 {{- $limit := .Site.Config.Services.RSS.Limit }}

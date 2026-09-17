@@ -1,39 +1,35 @@
 {{ define "main" }}
-  {{ if .Params.individual_notes }}
-    <div class="page__wrapper">
-      <div class="page__sidebar">
-        {{ partial "sidebar.html" . }}
-      </div>
-      <div class="page__content" data-release-note-listing>
-        <h1 class="page__title">{{ .Title }}</h1>
-
-        {{ .Content }}
-
-        {{ $notes := .Paginate .Pages.ByDate.Reverse }}
-        {{ range $notes.Pages }}
-          {{ $anchor := .Params.legacy_anchor | default (.Title | anchorize) }}
-          <div
-            class="release-note"
-            data-title="{{ .Title }}"
-            data-date="{{ .Date.Format "2006-01-02" }}"
-            data-anchor="{{ $anchor }}"
-          >
-            <h2 class="release-note__title" id="{{ $anchor }}">
-              <a class="heading-anchor" href="{{ .RelPermalink }}">{{ .Title }}</a>
-            </h2>
-            <em class="release-note__date">{{ .Date | time.Format ":date_long" }}</em>
-            <div class="release-note__content">
-              {{ .Content }}
-              {{ printf "<!-- end-content -->" | safeHTML }}
-            </div>
-          </div>
-          {{ printf "<!-- end-release-note -->" | safeHTML }}
-        {{ end }}
-
-        {{ partial "release-note-pager.html" $notes }}
-      </div>
+  <div class="page__wrapper">
+    <div class="page__sidebar">
+      {{ partial "sidebar.html" . }}
     </div>
-  {{ else }}
-    {{ partial "page" . }}
-  {{ end }}
+    <div class="page__content" data-release-note-listing>
+      <h1 class="page__title">{{ .Title }}</h1>
+
+      {{ .Content }}
+
+      {{ $notes := .Paginate .Pages.ByDate.Reverse }}
+      {{ range $notes.Pages }}
+        {{ $anchor := .Params.legacy_anchor | default (.Title | anchorize) }}
+        <div
+          class="release-note"
+          data-title="{{ .Title }}"
+          data-date="{{ .Date.Format "2006-01-02" }}"
+          data-anchor="{{ $anchor }}"
+        >
+          <h2 class="release-note__title" id="{{ $anchor }}">
+            <a class="heading-anchor" href="{{ .RelPermalink }}">{{ .Title }}</a>
+          </h2>
+          <em class="release-note__date">{{ .Date | time.Format ":date_long" }}</em>
+          <div class="release-note__content">
+            {{ .Content }}
+            {{ printf "<!-- end-content -->" | safeHTML }}
+          </div>
+        </div>
+        {{ printf "<!-- end-release-note -->" | safeHTML }}
+      {{ end }}
+
+      {{ partial "release-note-pager.html" $notes }}
+    </div>
+  </div>
 {{ end }}
