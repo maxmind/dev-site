@@ -2,9 +2,9 @@
  * Checks that every retired release note year URL still leads somewhere useful.
  *
  * The year pages are gone, so their URLs have to reach the listing page and
- * carry the year forward for the anchor resolver. A year placeholder would also
- * swallow the listing's own pager URLs and the note pages themselves, so the
- * years are written out one by one.
+ * carry the year forward for the anchor resolver. A placeholder matches one
+ * path segment, which a note page also is, so the years are written out one by
+ * one.
  *
  * Usage:
  *   node --experimental-strip-types bin/check-release-note-redirects.ts <product>
@@ -17,8 +17,26 @@ import { fileURLToPath } from 'node:url';
 const currentDir = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.join(currentDir, '..');
 
-/** Years that had a release note page before the notes were split up. */
+/** Years that had a page. A note published later never had a year URL, so
+ *  deriving this from note dates would demand a redirect for a URL that never
+ *  existed. */
 const RETIRED_YEARS: Record<string, string[]> = {
+  geoip: [
+    '2013',
+    '2014',
+    '2015',
+    '2016',
+    '2017',
+    '2018',
+    '2019',
+    '2020',
+    '2021',
+    '2022',
+    '2023',
+    '2024',
+    '2025',
+    '2026',
+  ],
   minfraud: [
     '2013',
     '2014',
@@ -70,9 +88,6 @@ function check(product: string): void {
   const rules = readRules();
   const failures: string[] = [];
 
-  // The years that had a page, written out because the pages themselves are
-  // gone. A note published in a later year never had a year URL, so deriving
-  // this from note dates would demand a redirect for a URL that never existed.
   const years = RETIRED_YEARS[product];
   if (years === undefined) {
     console.error(`FAIL no retired year pages recorded for ${product}`);
@@ -107,7 +122,7 @@ function check(product: string): void {
     }
   }
 
-  // A placeholder rule would capture these; explicit years do not.
+  // A placeholder or splat rule would capture these; explicit years do not.
   const mustNotRedirect = [
     `${listing}page/2/`,
     `${listing}2026-09-11-some-note/`,

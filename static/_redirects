@@ -1,12 +1,39 @@
-# GeoIP still keeps its notes on year pages, so its section root needs a year.
-# The year has to be hardcoded until GeoIP moves to individual note pages.
-/geoip/release-notes /geoip/release-notes/2026/ 302
-/geoip/release-notes/ /geoip/release-notes/2026/ 302
-
-# The minFraud year pages are gone. Their URLs reach the listing page and
-# carry the year, which the listing uses to resolve an old fragment to the
+# The year pages of both products are gone. Their URLs reach the listing page
+# and carry the year, which the listing uses to resolve an old fragment to the
 # note it named. The years are written out because a placeholder would also
 # catch the note pages.
+#
+# The redirects are temporary. A browser caches a permanent redirect
+# indefinitely, so a wrong target cannot be taken back.
+
+/geoip/release-notes/2013 /geoip/release-notes/?year=2013 302
+/geoip/release-notes/2013/ /geoip/release-notes/?year=2013 302
+/geoip/release-notes/2014 /geoip/release-notes/?year=2014 302
+/geoip/release-notes/2014/ /geoip/release-notes/?year=2014 302
+/geoip/release-notes/2015 /geoip/release-notes/?year=2015 302
+/geoip/release-notes/2015/ /geoip/release-notes/?year=2015 302
+/geoip/release-notes/2016 /geoip/release-notes/?year=2016 302
+/geoip/release-notes/2016/ /geoip/release-notes/?year=2016 302
+/geoip/release-notes/2017 /geoip/release-notes/?year=2017 302
+/geoip/release-notes/2017/ /geoip/release-notes/?year=2017 302
+/geoip/release-notes/2018 /geoip/release-notes/?year=2018 302
+/geoip/release-notes/2018/ /geoip/release-notes/?year=2018 302
+/geoip/release-notes/2019 /geoip/release-notes/?year=2019 302
+/geoip/release-notes/2019/ /geoip/release-notes/?year=2019 302
+/geoip/release-notes/2020 /geoip/release-notes/?year=2020 302
+/geoip/release-notes/2020/ /geoip/release-notes/?year=2020 302
+/geoip/release-notes/2021 /geoip/release-notes/?year=2021 302
+/geoip/release-notes/2021/ /geoip/release-notes/?year=2021 302
+/geoip/release-notes/2022 /geoip/release-notes/?year=2022 302
+/geoip/release-notes/2022/ /geoip/release-notes/?year=2022 302
+/geoip/release-notes/2023 /geoip/release-notes/?year=2023 302
+/geoip/release-notes/2023/ /geoip/release-notes/?year=2023 302
+/geoip/release-notes/2024 /geoip/release-notes/?year=2024 302
+/geoip/release-notes/2024/ /geoip/release-notes/?year=2024 302
+/geoip/release-notes/2025 /geoip/release-notes/?year=2025 302
+/geoip/release-notes/2025/ /geoip/release-notes/?year=2025 302
+/geoip/release-notes/2026 /geoip/release-notes/?year=2026 302
+/geoip/release-notes/2026/ /geoip/release-notes/?year=2026 302
 
 /minfraud/release-notes/2013 /minfraud/release-notes/?year=2013 302
 /minfraud/release-notes/2013/ /minfraud/release-notes/?year=2013 302

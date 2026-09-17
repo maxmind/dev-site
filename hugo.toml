@@ -263,7 +263,7 @@ title = 'MaxMind'
       weight = 90
     [[menus.geoip]]
       name = 'GeoIP Release Notes'
-      pageRef = '/geoip/release-notes/2026'
+      pageRef = '/geoip/release-notes'
       parent = 'GeoIP'
       weight = 100
 
