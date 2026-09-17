@@ -1,0 +1,20 @@
+{{- /*
+  One entry for each note with a legacy_anchor, newest first, so a shared
+  anchor gets one entry per note. The server never sees a URL fragment, so
+  release-note-anchors.ts uses this map to resolve an old year-page fragment
+  in the browser.
+*/ -}}
+{{- $entries := slice }}
+{{- range .Pages.ByDate.Reverse }}
+  {{- $note := . }}
+  {{- with .Params.legacy_anchor }}
+    {{- $entries = $entries | append (dict
+        "anchor" .
+        "year" ($note.Date.Format "2006")
+        "date" ($note.Date.Format "2006-01-02")
+        "url" $note.RelPermalink
+      )
+    }}
+  {{- end }}
+{{- end }}
+{{- $entries | jsonify }}

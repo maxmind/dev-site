@@ -1,11 +1,41 @@
-# RSS feed
-# The year needs to be hardcoded.  A page for the new year's
-# release note won't exist until a new .md file is created in the
-# /content/<product>/release-notes folder for that new year
+# GeoIP still keeps its notes on year pages, so its section root needs a year.
+# The year has to be hardcoded until GeoIP moves to individual note pages.
 /geoip/release-notes /geoip/release-notes/2026/ 302
 /geoip/release-notes/ /geoip/release-notes/2026/ 302
-/minfraud/release-notes /minfraud/release-notes/2026/ 302
-/minfraud/release-notes/ /minfraud/release-notes/2026/ 302
+
+# The minFraud year pages are gone. Their URLs reach the listing page and
+# carry the year, which the listing uses to resolve an old fragment to the
+# note it named. The years are written out because a placeholder would also
+# catch the note pages.
+
+/minfraud/release-notes/2013 /minfraud/release-notes/?year=2013 302
+/minfraud/release-notes/2013/ /minfraud/release-notes/?year=2013 302
+/minfraud/release-notes/2014 /minfraud/release-notes/?year=2014 302
+/minfraud/release-notes/2014/ /minfraud/release-notes/?year=2014 302
+/minfraud/release-notes/2015 /minfraud/release-notes/?year=2015 302
+/minfraud/release-notes/2015/ /minfraud/release-notes/?year=2015 302
+/minfraud/release-notes/2016 /minfraud/release-notes/?year=2016 302
+/minfraud/release-notes/2016/ /minfraud/release-notes/?year=2016 302
+/minfraud/release-notes/2017 /minfraud/release-notes/?year=2017 302
+/minfraud/release-notes/2017/ /minfraud/release-notes/?year=2017 302
+/minfraud/release-notes/2018 /minfraud/release-notes/?year=2018 302
+/minfraud/release-notes/2018/ /minfraud/release-notes/?year=2018 302
+/minfraud/release-notes/2019 /minfraud/release-notes/?year=2019 302
+/minfraud/release-notes/2019/ /minfraud/release-notes/?year=2019 302
+/minfraud/release-notes/2020 /minfraud/release-notes/?year=2020 302
+/minfraud/release-notes/2020/ /minfraud/release-notes/?year=2020 302
+/minfraud/release-notes/2021 /minfraud/release-notes/?year=2021 302
+/minfraud/release-notes/2021/ /minfraud/release-notes/?year=2021 302
+/minfraud/release-notes/2022 /minfraud/release-notes/?year=2022 302
+/minfraud/release-notes/2022/ /minfraud/release-notes/?year=2022 302
+/minfraud/release-notes/2023 /minfraud/release-notes/?year=2023 302
+/minfraud/release-notes/2023/ /minfraud/release-notes/?year=2023 302
+/minfraud/release-notes/2024 /minfraud/release-notes/?year=2024 302
+/minfraud/release-notes/2024/ /minfraud/release-notes/?year=2024 302
+/minfraud/release-notes/2025 /minfraud/release-notes/?year=2025 302
+/minfraud/release-notes/2025/ /minfraud/release-notes/?year=2025 302
+/minfraud/release-notes/2026 /minfraud/release-notes/?year=2026 302
+/minfraud/release-notes/2026/ /minfraud/release-notes/?year=2026 302
 
 # RSS feed URLs - redirect old rss.xml path to section-level index.xml
 # The section-level feed is now generated directly (no more year-specific redirects)

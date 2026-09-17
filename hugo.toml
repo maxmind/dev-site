@@ -99,7 +99,7 @@ title = 'MaxMind'
       weight = 90
     [[menus.minfraud]]
       name = 'minFraud Release Notes'
-      pageRef = '/minfraud/release-notes/2026'
+      pageRef = '/minfraud/release-notes'
       parent = 'minFraud'
       weight = 100
   [[menus.geoip]]
@@ -307,6 +307,13 @@ title = 'MaxMind'
   [outputFormats.MARKDOWN]
     mediaType = "text/markdown"
     baseName = "index"
+    notAlternative = true
+
+  # Legacy anchor map for the release note listing; see release-note-anchors.ts.
+  [outputFormats.ANCHORS]
+    mediaType = "application/json"
+    baseName = "anchors"
+    isPlainText = true
     notAlternative = true
 
 [mediaTypes]
