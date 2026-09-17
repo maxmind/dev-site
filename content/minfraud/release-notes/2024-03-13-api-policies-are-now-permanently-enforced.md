@@ -32,4 +32,4 @@ using the links below:
 
 **Please note:** This enforcement will also affect GeoIP web service and
 database download requests. If you are also a GeoIP user,
-[see our GeoIP release note on this issue](/geoip/release-notes/2024#api-policies-are-now-permanently-enforced).
+[see our GeoIP release note on this issue](/geoip/release-notes/2024-03-13-api-policies-are-now-permanently-enforced/).

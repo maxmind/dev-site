@@ -38,4 +38,4 @@ using the links below:
 
 **Please note:** This enforcement also affects GeoIP API requests. If you are
 also a GeoIP user,
-[see our GeoIP release note on this issue](/geoip/release-notes/2024#api-policies---temporary-enforcement-on-february-7-2024).
+[see our GeoIP release note on this issue](/geoip/release-notes/2024-01-25-api-policies-temporary-enforcement-on-february-7-2024/).

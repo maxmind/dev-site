@@ -14,7 +14,7 @@ following hostname:
 Existing database download links will continue to work, they will simply be
 redirected.
 
-[Read our release note for more information.](/geoip/release-notes/2024#presigned-urls-for-database-downloads)
+[Read our release note for more information.](/geoip/release-notes/2024-01-17-presigned-urls-for-database-downloads/)
 
 {{</ alert >}}
 

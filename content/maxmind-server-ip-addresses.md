@@ -15,7 +15,7 @@ specified below.
 For information about IP addresses used to serve database downloads see
 [the appropriate section below](#database-download-ip-addresses).
 
-[Read our release note for more information.](/geoip/release-notes/2024#presigned-urls-for-database-downloads)
+[Read our release note for more information.](/geoip/release-notes/2024-01-17-presigned-urls-for-database-downloads/)
 {{</ alert >}}
 
 This page lists the IP addresses that may be used for minFraud, GeoIP, and
