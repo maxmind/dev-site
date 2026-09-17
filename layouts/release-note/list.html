@@ -13,7 +13,6 @@
         {{ $anchor := .Params.legacy_anchor | default (.Title | anchorize) }}
         <div
           class="release-note"
-          data-date="{{ .Date.Format "2006-01-02" }}"
           data-anchor="{{ $anchor }}"
         >
           <h2 class="release-note__title" id="{{ $anchor }}">
@@ -22,10 +21,8 @@
           <em class="release-note__date">{{ .Date | time.Format ":date_long" }}</em>
           <div class="release-note__content">
             {{ .Content }}
-            {{ printf "<!-- end-content -->" | safeHTML }}
           </div>
         </div>
-        {{ printf "<!-- end-release-note -->" | safeHTML }}
       {{ end }}
 
       {{ partial "release-note-pager.html" $notes }}

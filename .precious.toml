@@ -132,3 +132,37 @@ invoke = "once"
 path-args = "absolute-file"
 include = ["content/**/*.md", "layouts/**/*.html"]
 ok-exit-codes = 0
+
+[commands.check-release-note-sources]
+type = "lint"
+cmd = [
+  "pnpm",
+  "run",
+  "--silent",
+  "lint:release-note-sources"
+]
+invoke = "once"
+# Reads the notes through hugo list, then checks content links, the
+# redirects, and the menu in hugo.toml; ignores argv.
+path-args = "none"
+include = ["content/**/*.md", "static/_redirects", "hugo.toml"]
+ok-exit-codes = 0
+
+[commands.check-release-note-site]
+type = "lint"
+cmd = [
+  "pnpm",
+  "run",
+  "--silent",
+  "lint:release-note-site"
+]
+invoke = "once"
+# Builds the site to check the anchor map; ignores argv.
+path-args = "none"
+include = [
+  "content/*/release-notes/*.md",
+  "layouts/release-note/**",
+  "assets/js/release-note-anchors.ts",
+  "hugo.toml"
+]
+ok-exit-codes = 0
