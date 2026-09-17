@@ -76,24 +76,6 @@ function yearFragmentLinks(): string[] {
   return failures;
 }
 
-/**
- * Anchors that already appear twice on one listing page, from notes published
- * before the notes were split up. Their ids come from the titles they were
- * given, which cannot be changed now without breaking the links those titles
- * generated. The list may shrink; nothing should be added to it.
- */
-const KNOWN_REPEATED_IDS: Record<string, string[]> = {
-  geoip: [
-    'a-number-of-geoip-databases-not-released-as-scheduled-yesterday',
-    'subdivision-city-and-postal-fields-blanked-in-additional-countries',
-    'upcoming-changes-to-isp-names',
-  ],
-  minfraud: [
-    'ip-address-optional-in-minfraud-score-insights-and-factors-services',
-    'subdivision-city-and-postal-fields-blanked-in-additional-countries',
-  ],
-};
-
 const HEADING_ID = /<h2 class="release-note__title" id="([^"]*)"/g;
 
 function listingPages(buildDir: string, product: string): string[] {
@@ -108,12 +90,10 @@ function listingPages(buildDir: string, product: string): string[] {
 }
 
 /**
- * Two headings sharing an id is invalid HTML, and it sends a browser following
- * a fragment to whichever comes first rather than to the note meant. A new note
- * takes its id from its filename, so any new collision here is a mistake.
+ * A repeated id sends a fragment link to the first heading that has it. Ids
+ * come from the filename, as set in layouts/release-note/list.html.
  */
 function repeatedHeadingIds(buildDir: string, product: string): string[] {
-  const grandfathered = new Set(KNOWN_REPEATED_IDS[product] ?? []);
   const failures: string[] = [];
 
   listingPages(buildDir, product).forEach((page, index) => {
@@ -122,7 +102,7 @@ function repeatedHeadingIds(buildDir: string, product: string): string[] {
       counts.set(match[1], (counts.get(match[1]) ?? 0) + 1);
     }
     for (const [id, count] of counts) {
-      if (count > 1 && !grandfathered.has(id)) {
+      if (count > 1) {
         failures.push(
           `${product} listing page ${index + 1}: ${count} notes share the ` +
             `heading id "${id}"`

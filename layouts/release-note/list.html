@@ -10,14 +10,14 @@
 
       {{ $notes := .Paginate .Pages.ByDate.Reverse }}
       {{ range $notes.Pages }}
-        {{ $anchor := .Params.legacy_anchor | default (.Title | anchorize) }}
+        {{/* Filename, not legacy_anchor: several notes share an anchor, so it
+             cannot be a unique id. anchors.json carries the old links. */}}
         <div
           class="release-note"
           data-title="{{ .Title }}"
           data-date="{{ .Date.Format "2006-01-02" }}"
-          data-anchor="{{ $anchor }}"
         >
-          <h2 class="release-note__title" id="{{ $anchor }}">
+          <h2 class="release-note__title" id="{{ .File.ContentBaseName }}">
             <a class="heading-anchor" href="{{ .RelPermalink }}">{{ .Title }}</a>
           </h2>
           <em class="release-note__date">{{ .Date | time.Format ":date_long" }}</em>
