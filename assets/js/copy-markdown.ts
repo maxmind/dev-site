@@ -94,10 +94,14 @@ function initCopyMarkdown() {
   // Find the page content container and add the button
   const pageContent = document.querySelector('.page__content');
   if (pageContent) {
-    // Insert the button after the title or at the beginning of content
+    // Insert the button after the title or at the beginning of content.
+    // A release note carries its date under the title, so the button goes below
+    // the date rather than between the two.
     const pageTitle = pageContent.querySelector('.page__title');
-    if (pageTitle) {
-      pageTitle.insertAdjacentElement('afterend', copyButton);
+    const noteDate = pageContent.querySelector('.release-note__date');
+    const precedingElement = noteDate ?? pageTitle;
+    if (precedingElement) {
+      precedingElement.insertAdjacentElement('afterend', copyButton);
     } else {
       pageContent.insertBefore(copyButton, pageContent.firstChild);
     }

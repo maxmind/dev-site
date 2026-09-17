@@ -9,6 +9,14 @@
             "addWords": true
         }
     ],
-    "dictionaries": ["stopwords"],
-    "ignorePaths": ["node_modules", "/stopwords.txt"]
+    "dictionaries": [
+        "stopwords"
+    ],
+    "ignorePaths": [
+        "node_modules",
+        "/stopwords.txt"
+    ],
+    "ignoreRegExpList": [
+        "/^legacy_anchor = .*$/gm"
+    ]
 }
