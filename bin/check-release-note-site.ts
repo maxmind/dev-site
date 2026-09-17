@@ -1,6 +1,11 @@
 /**
  * Checks what the built site shows: the anchor map that sends an old fragment
- * link to its note.
+ * link to its note, and the age notice on old notes.
+ *
+ * It builds at two clocks five months apart, so a notice that ignores the
+ * build month fails. Both clocks fall after the newest note, because Hugo does
+ * not build a note dated after the clock. The anchor map does not depend on
+ * the clock, so only the first build checks it.
  *
  * Usage:
  *   node --experimental-strip-types bin/check-release-note-site.ts
@@ -41,10 +46,20 @@ const KNOWN_AMBIGUOUS: Record<string, string[]> = {
   ],
 };
 
-function build(): string | null {
+const NOTICE = /<div[^>]*\bdata-age-notice\b[^>]*>([\s\S]*?)<\/div>/;
+
+/** Two clocks five months apart, the first in the month after `newest`. */
+function clocks(newest: string): string[] {
+  const [year, month] = newest.split('-').map(Number);
+  return [1, 6].map((ahead) =>
+    new Date(Date.UTC(year, month - 1 + ahead, 15, 12)).toISOString()
+  );
+}
+
+function build(clock: string): string | null {
   const dir = fs.mkdtempSync(path.join(os.tmpdir(), 'release-note-site-'));
   try {
-    execFileSync('hugo', ['--quiet', '--destination', dir], {
+    execFileSync('hugo', ['--quiet', '--clock', clock, '--destination', dir], {
       cwd: ROOT,
       stdio: ['ignore', 'ignore', 'inherit'],
     });
@@ -53,6 +68,17 @@ function build(): string | null {
     fs.rmSync(dir, { recursive: true, force: true });
     return null;
   }
+}
+
+function listingPages(buildDir: string, product: string): string[] {
+  const root = path.join(buildDir, product, 'release-notes');
+  const pages = [path.join(root, 'index.html')];
+  for (let n = 2; ; n += 1) {
+    const pager = path.join(root, 'page', String(n), 'index.html');
+    if (!fs.existsSync(pager)) break;
+    pages.push(pager);
+  }
+  return pages;
 }
 
 function pageFile(buildDir: string, url: string): string {
@@ -145,6 +171,62 @@ function anchorFailures(
   return failures;
 }
 
+/** Mirrors `$monthStart.AddDate 0 -24 0` in the age notice partial. */
+function thresholdFor(clock: string): string {
+  const [year, month] = clock.split('-');
+  return `${Number(year) - 2}-${month}-01`;
+}
+
+function ageNoticeFailures(
+  buildDir: string,
+  clock: string,
+  product: string,
+  notes: Note[]
+): string[] {
+  const failures: string[] = [];
+  const threshold = thresholdFor(clock);
+  // The partial compares the note's exact time, not its calendar date, so a
+  // late evening with a negative offset counts as the next UTC day.
+  const cutoff = Date.parse(`${threshold}T00:00:00Z`);
+  const listing = `/${product}/release-notes/`;
+
+  for (const note of notes) {
+    const file = pageFile(buildDir, note.permalink);
+    if (!fs.existsSync(file)) {
+      failures.push(`${note.permalink}: no built page`);
+      continue;
+    }
+    const notice = NOTICE.exec(fs.readFileSync(file, 'utf8'));
+    const wanted = Date.parse(note.date) < cutoff;
+    if (wanted && notice === null) {
+      failures.push(
+        `${note.permalink}: predates ${threshold} but has no age notice`
+      );
+    } else if (!wanted && notice !== null) {
+      failures.push(
+        `${note.permalink}: not older than ${threshold} but has one`
+      );
+    } else if (notice !== null) {
+      if (!/no longer reflect/i.test(notice[1].replace(/\s+/g, ' '))) {
+        failures.push(
+          `${note.permalink}: notice does not say it may be out of date`
+        );
+      }
+      if (!notice[1].includes(`href="${listing}"`)) {
+        failures.push(`${note.permalink}: notice does not link to ${listing}`);
+      }
+    }
+  }
+
+  listingPages(buildDir, product).forEach((page, index) => {
+    if (NOTICE.test(fs.readFileSync(page, 'utf8'))) {
+      failures.push(`listing page ${index + 1} has an age notice`);
+    }
+  });
+
+  return failures.map((failure) => `built at ${clock}: ${failure}`);
+}
+
 function check(): void {
   let all: Note[] = [];
   try {
@@ -152,29 +234,38 @@ function check(): void {
   } catch (error) {
     finish([`the notes cannot be read: ${(error as Error).message}`], '');
   }
-  if (all.length === 0) {
+  const newest = all
+    .map((note) => note.fileDate)
+    .sort()
+    .at(-1);
+  if (newest === undefined) {
     finish(['no release notes were read'], '');
     return;
   }
   const notes = Map.groupBy(all, (note) => note.product);
 
-  const buildDir = build();
-  if (buildDir === null) {
-    finish(['the site does not build'], '');
-    return;
-  }
   const failures: string[] = [];
-  try {
-    for (const product of PRODUCTS) {
-      const own = notes.get(product) ?? [];
-      const found = anchorFailures(buildDir, product, own);
-      failures.push(...found.map((failure) => `${product}: ${failure}`));
+  clocks(newest).forEach((clock, index) => {
+    const buildDir = build(clock);
+    if (buildDir === null) {
+      failures.push(`the site does not build at ${clock}`);
+      return;
     }
-  } finally {
-    fs.rmSync(buildDir, { recursive: true, force: true });
-  }
+    try {
+      for (const product of PRODUCTS) {
+        const own = notes.get(product) ?? [];
+        const found = [
+          ...(index === 0 ? anchorFailures(buildDir, product, own) : []),
+          ...ageNoticeFailures(buildDir, clock, product, own),
+        ];
+        failures.push(...found.map((failure) => `${product}: ${failure}`));
+      }
+    } finally {
+      fs.rmSync(buildDir, { recursive: true, force: true });
+    }
+  });
 
-  finish(failures, 'OK anchor map holds for both products');
+  finish(failures, 'OK anchor map and age notices hold for both products');
 }
 
 check();

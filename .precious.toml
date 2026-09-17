@@ -157,11 +157,13 @@ cmd = [
   "lint:release-note-site"
 ]
 invoke = "once"
-# Builds the site to check the anchor map; ignores argv.
+# Builds the site at two clocks set from the newest note; ignores argv.
 path-args = "none"
 include = [
   "content/*/release-notes/*.md",
   "layouts/release-note/**",
+  "layouts/partials/page.html",
+  "layouts/partials/release-note-age-notice.html",
   "assets/js/release-note-anchors.ts",
   "hugo.toml"
 ]
