@@ -20,10 +20,8 @@ import {
   resolveAnchor,
 } from '../assets/js/release-note-anchors.ts';
 
-/**
- * The published notes contain no anchor reused across years, so the real map
- * cannot exercise the case the year parameter exists for. These entries do.
- */
+/** Covers what the published map cannot reach: an unknown year, and an anchor
+ *  that matches no note. */
 function checkContract(): string[] {
   const failures: string[] = [];
   const entries: AnchorEntry[] = [
@@ -112,6 +110,47 @@ function checkContract(): string[] {
   return failures;
 }
 
+/**
+ * Anchor-and-year pairs that more than one note already shares. A legacy link
+ * carries the product, the year and the anchor and nothing else, so the notes
+ * in one of these groups cannot be told apart and the resolver sends the reader
+ * to the most recent of them. The information needed to do better is gone, so
+ * these cannot be fixed. The list may shrink; nothing should be added to it.
+ */
+const KNOWN_AMBIGUOUS: Record<string, string[]> = {
+  geoip: [
+    'subdivision-city-and-postal-fields-blanked-in-additional-countries 2025',
+    'upcoming-changes-to-isp-names 2024',
+  ],
+  minfraud: [
+    'ip-address-optional-in-minfraud-score-insights-and-factors-services 2020',
+    'subdivision-city-and-postal-fields-blanked-in-additional-countries 2025',
+  ],
+};
+
+/** Distinct URLs are not enough. A new pair sharing an anchor and a year is
+ *  the one part of this that can still be prevented. */
+function ambiguousGroups(entries: AnchorEntry[], product: string): string[] {
+  const known = new Set(KNOWN_AMBIGUOUS[product] ?? []);
+  const byAnchorYear = new Map<string, AnchorEntry[]>();
+  for (const entry of entries) {
+    const key = `${entry.anchor} ${entry.year}`;
+    byAnchorYear.set(key, [...(byAnchorYear.get(key) ?? []), entry]);
+  }
+
+  const failures: string[] = [];
+  for (const [key, group] of byAnchorYear) {
+    if (group.length > 1 && !known.has(key)) {
+      failures.push(
+        `${key}: ${group.length} notes share this anchor and year ` +
+          `(${group.map((entry) => entry.date).join(', ')}), so a link naming ` +
+          'it cannot reach any but the most recent'
+      );
+    }
+  }
+  return failures;
+}
+
 function check(buildDir: string, product: string): void {
   const mapPath = path.join(buildDir, product, 'release-notes', 'anchors.json');
   if (!fs.existsSync(mapPath)) {
@@ -140,28 +179,36 @@ function check(buildDir: string, product: string): void {
   }
 
   for (const [anchor, matching] of byAnchor) {
-    const year = matching[0].year;
-    const resolved = resolveAnchor(entries, anchor, year);
+    const resolved = resolveAnchor(entries, anchor, null);
     if (resolved === null) {
       failures.push(`${anchor}: does not resolve`);
       continue;
     }
-    // A repeated anchor goes to the most recent note sharing it, which is what
-    // the browser did when both ids sat on one year page.
     if (resolved !== matching[0].url) {
       failures.push(
         `${anchor}: resolved to ${resolved}, expected ${matching[0].url}`
       );
     }
-    // The year is carried by the redirect but must not be required.
-    if (resolveAnchor(entries, anchor, null) !== resolved) {
-      failures.push(`${anchor}: resolves differently without the year`);
+
+    // An old link carried the year of the page it sat on, which is the only
+    // thing separating notes that share an anchor across years.
+    for (const year of new Set(matching.map((entry) => entry.year))) {
+      const wanted = matching.find((entry) => entry.year === year);
+      if (wanted === undefined) continue;
+      const inYear = resolveAnchor(entries, anchor, year);
+      if (inYear !== wanted.url) {
+        failures.push(
+          `${anchor} (${year}): resolved to ${inYear}, expected ${wanted.url}`
+        );
+      }
     }
   }
 
   if (resolveAnchor(entries, 'no-such-anchor-anywhere', null) !== null) {
     failures.push('an unknown anchor resolved to something');
   }
+
+  failures.push(...ambiguousGroups(entries, product));
 
   const repeated = [...byAnchor.values()].filter(
     (matching) => matching.length > 1
