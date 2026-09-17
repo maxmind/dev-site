@@ -27,4 +27,4 @@ For more information, read the
 [full announcement on our blog from 2020](https://blog.maxmind.com/data-changes-to-geoip-legacy-and-minfraud-legacy-web-services-in-may-2022/).
 
 Please note that
-[associated changes to the GeoIP Legacy web services are also being made](/geoip/release-notes/2022/#data-changes-to-geoip-legacy-web-services).
+[associated changes to the GeoIP Legacy web services are also being made](/geoip/release-notes/2022-05-31-data-changes-to-geoip-legacy-web-services/).

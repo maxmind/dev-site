@@ -6,7 +6,7 @@ legacy_anchor = 'update-upcoming-change-to-identify-verizon-5g-home-as-a-separat
 +++
 
 As
-[previously announced](/geoip/release-notes/2025/#upcoming-change-to-identify-verizon-5g-home-as-a-separate-isp),
+[previously announced](/geoip/release-notes/2025-11-03-upcoming-change-to-identify-verizon-5g-home-as-a-separate-isp/),
 tomorrow, November 11, 2025, some networks previously labeled `Verizon Wireless`
 will have their ISP name updated to `Verizon 5G Home` to improve coverage and
 accuracy.

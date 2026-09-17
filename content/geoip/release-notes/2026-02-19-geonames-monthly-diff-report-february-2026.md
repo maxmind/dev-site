@@ -31,4 +31,4 @@ differ for the field defined in the `diff_in` column.
 updated to `Netherlands`.
 
 \* \* As previously noted, we have
-[updated our GeoNames monthly diff report delivery method](/geoip/release-notes/2026/#changes-to-the-geonames-monthly-diff-report-delivery-method).
+[updated our GeoNames monthly diff report delivery method](/geoip/release-notes/2026-02-18-changes-to-the-geonames-monthly-diff-report-delivery-method/).

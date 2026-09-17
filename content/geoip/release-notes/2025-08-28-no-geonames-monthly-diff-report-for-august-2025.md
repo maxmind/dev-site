@@ -7,4 +7,4 @@ legacy_anchor = 'no-geonames-monthly-diff-report-for-august-2025'
 
 Due to irregularities in the latest GeoNames data, we will be maintaining the
 location names and codes from July.
-[See the monthly diff report for July 2025.](/geoip/release-notes/2025/#geonames-monthly-diff-report-july-2025)
+[See the monthly diff report for July 2025.](/geoip/release-notes/2025-07-14-geonames-monthly-diff-report-july-2025/)

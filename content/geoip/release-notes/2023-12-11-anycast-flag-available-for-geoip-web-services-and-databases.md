@@ -20,4 +20,4 @@ recommend checking your integration to confirm.
 
 For more details, including what information the Anycast field will contain,
 please
-[read our previous release note on the Anycast flag](/geoip/release-notes/2023#anycast-flag-releasing-soon-for-geoip-web-services-and-databases).
+[read our previous release note on the Anycast flag](/geoip/release-notes/2023-12-07-anycast-flag-releasing-soon-for-geoip-web-services-and-databases/).

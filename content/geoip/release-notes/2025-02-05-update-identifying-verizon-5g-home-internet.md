@@ -6,7 +6,7 @@ legacy_anchor = 'updateidentifying-verizon-5g-home-internet'
 +++
 
 As announced in our
-[previous release note](/geoip/release-notes/2025/#identifying-verizon-5g-home-internet),
+[previous release note](/geoip/release-notes/2025-01-27-identifying-verizon-5g-home-internet/),
 we are reclassifying a portion of Verizon Wireless networks in the United
 States.
 

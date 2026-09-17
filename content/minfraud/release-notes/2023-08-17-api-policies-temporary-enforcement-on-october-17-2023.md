@@ -33,4 +33,4 @@ links below:
 
 **Please note:** This enforcement will also affect GeoIP API requests. If you
 are also a GeoIP user, see
-[our GeoIP release note on this issue](/geoip/release-notes/2023#api-policies---temporary-enforcement-on-october-17-2023).
+[our GeoIP release note on this issue](/geoip/release-notes/2023-08-17-api-policies-temporary-enforcement-on-october-17-2023/).

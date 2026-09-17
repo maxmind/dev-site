@@ -10,4 +10,4 @@ code.
 
 This change is due to the removal of long-deprecated fields in our GeoIP
 databases.
-[See our GeoIP release note for more information](/geoip/release-notes/2025/#removal-of-deprecated-fields).
+[See our GeoIP release note for more information](/geoip/release-notes/2025-02-10-removal-of-deprecated-fields/).

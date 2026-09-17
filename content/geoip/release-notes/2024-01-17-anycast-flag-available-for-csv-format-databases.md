@@ -6,7 +6,7 @@ legacy_anchor = 'anycast-flag-available-for-csv-format-databases'
 +++
 
 The Anycast data point is now available in all CVS format databases—and, as
-[announced in a prior release note](/geoip/release-notes/2023#anycast-flag-available-for-geoip-web-services-and-databases),
+[announced in a prior release note](/geoip/release-notes/2023-12-11-anycast-flag-available-for-geoip-web-services-and-databases/),
 it’s also available in all GeoIP web services and all MMDB format databases.
 
 In most cases, the addition of a new field to CSV databases should be a
