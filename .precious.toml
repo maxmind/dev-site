@@ -184,3 +184,22 @@ include = [
   "assets/js/release-note-anchors.ts"
 ]
 ok-exit-codes = 0
+
+[commands.check-release-note-age-notice]
+type = "lint"
+cmd = [
+  "pnpm",
+  "run",
+  "--silent",
+  "lint:release-note-age-notice"
+]
+invoke = "once"
+# Builds the site at two clocks set from the newest note; ignores argv.
+path-args = "none"
+include = [
+  "content/*/release-notes/*.md",
+  "layouts/partials/release-note-age-notice.html",
+  "layouts/partials/page.html",
+  "layouts/release-note/list.html"
+]
+ok-exit-codes = 0

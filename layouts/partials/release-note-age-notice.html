@@ -1,0 +1,13 @@
+{{- /* Snap the build time to the UTC month start, so one commit renders the
+       same notices all month whatever day or time zone it is built on. */ -}}
+{{- $now := now }}
+{{- $monthStart := time.AsTime (printf "%s-01T00:00:00Z" ($now.UTC.Format "2006-01")) }}
+{{- $threshold := $monthStart.AddDate 0 -24 0 }}
+{{- if and .IsPage (eq .CurrentSection.Type "release-note") (.Date.Before $threshold) }}
+  <div class="alert alert--warning" data-age-notice>
+    This release note is more than two years old and may no longer reflect
+    current behavior. See the
+    <a href="{{ .CurrentSection.RelPermalink }}">{{ .CurrentSection.Title }}</a>
+    for the latest release notes.
+  </div>
+{{- end }}

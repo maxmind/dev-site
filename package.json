@@ -50,6 +50,7 @@
     "lint:prettierignore-rawhtml": "node --experimental-strip-types ./bin/check-prettierignore-rawhtml.ts",
     "lint:internal-links": "node --experimental-strip-types ./bin/check-internal-links.ts",
     "lint:release-note-front-matter": "node --experimental-strip-types ./bin/check-release-note-front-matter.ts",
+    "lint:release-note-age-notice": "node --experimental-strip-types ./bin/check-release-note-age-notice.ts",
     "lint:release-note-links": "node --experimental-strip-types ./bin/check-release-note-links.ts",
     "lint:release-note-build": "node --experimental-strip-types ./bin/check-release-note-build.ts",
     "prettier:ts": "prettier --write './assets/js/**'",
