@@ -17,9 +17,30 @@ import { fileURLToPath } from 'node:url';
 const currentDir = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.join(currentDir, '..');
 
+/** Years that had a release note page before the notes were split up. */
+const RETIRED_YEARS: Record<string, string[]> = {
+  minfraud: [
+    '2013',
+    '2014',
+    '2015',
+    '2016',
+    '2017',
+    '2018',
+    '2019',
+    '2020',
+    '2021',
+    '2022',
+    '2023',
+    '2024',
+    '2025',
+    '2026',
+  ],
+};
+
 interface Rule {
   from: string;
   to: string;
+  status: string;
   line: number;
 }
 
@@ -30,16 +51,18 @@ function readRules(): Rule[] {
     .map((text, index) => ({ text: text.trim(), line: index + 1 }))
     .filter(({ text }) => text !== '' && !text.startsWith('#'))
     .map(({ text, line }) => {
-      const [from, to] = text.split(/\s+/);
-      return { from, to, line };
-    });
+      const [from, to, status] = text.split(/\s+/);
+      return { from: from ?? '', to: to ?? '', status: status ?? '', line };
+    })
+    .filter((rule) => rule.from !== '' && rule.to !== '');
 }
 
 /** Mirrors how a _redirects placeholder matches a path segment. */
 function matches(rule: Rule, url: string): boolean {
   const pattern = rule.from
-    .replace(/[.*+?^${}()|[\]\\]/g, '\\$&')
-    .replace(/:[a-z]+/gi, '[^/]+');
+    .replace(/[.+?^${}()|[\]\\]/g, '\\$&')
+    .replace(/:[a-z]+/gi, '[^/]+')
+    .replace(/\*/g, '.*');
   return new RegExp(`^${pattern}$`).test(url);
 }
 
@@ -47,18 +70,12 @@ function check(product: string): void {
   const rules = readRules();
   const failures: string[] = [];
 
-  // Taken from the notes rather than the year files, which this work deletes.
-  const years = [
-    ...new Set(
-      fs
-        .readdirSync(path.join(ROOT, 'content', product, 'release-notes'))
-        .map((name) => name.match(/^(\d{4})-\d{2}-\d{2}-/))
-        .filter((matched) => matched !== null)
-        .map((matched) => matched[1])
-    ),
-  ].sort();
-  if (years.length === 0) {
-    console.error(`FAIL no notes found for ${product}`);
+  // The years that had a page, written out because the pages themselves are
+  // gone. A note published in a later year never had a year URL, so deriving
+  // this from note dates would demand a redirect for a URL that never existed.
+  const years = RETIRED_YEARS[product];
+  if (years === undefined) {
+    console.error(`FAIL no retired year pages recorded for ${product}`);
     process.exit(1);
   }
 
@@ -74,6 +91,13 @@ function check(product: string): void {
     if (!rule.to.startsWith(listing)) {
       failures.push(
         `${yearURL}: redirects to ${rule.to}, not the listing page`
+      );
+    }
+    // A 302 rather than a 301: browsers cache a permanent redirect
+    // indefinitely, so a wrong target could not be taken back.
+    if (rule.status !== '302') {
+      failures.push(
+        `${yearURL}: status ${rule.status || '(none)'}, expected a 302 redirect`
       );
     }
     if (!rule.to.includes(`year=${year}`)) {
