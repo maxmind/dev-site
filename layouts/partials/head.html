@@ -39,4 +39,8 @@
     src="https://www.maxmind.com/js/global-privacy-control.js"
   ></script>
   {{ template "_internal/opengraph.html" . }}
+  {{/* copy-markdown.ts shows its control only when this link is present. */}}
+  {{ with .OutputFormats.Get "markdown" }}
+    <link rel="alternate" type="text/markdown" href="{{ .RelPermalink }}" />
+  {{ end }}
 </head>

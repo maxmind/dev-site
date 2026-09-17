@@ -1,0 +1,37 @@
+{{/*
+  Pager for the release note listing.
+
+  Hugo's internal pagination template renders up to nine controls, and its five
+  page numbers slide with the current page instead of pinning the ends. This
+  pins the first and last page and shows the neighbors of the current one. At
+  most five page links and two gaps show, so the pager fits on a phone screen.
+
+  Context: a paginator.
+*/}}
+
+{{ $current := .PageNumber }}
+{{ $total := .TotalPages }}
+
+{{ if gt $total 1 }}
+  <nav class="pagination" aria-label="Release note pages">
+    <ul class="pagination__list">
+      {{ $previous := 0 }}
+      {{ range .Pagers }}
+        {{ $number := .PageNumber }}
+        {{ if or (eq $number 1) (eq $number $total) (le (math.Abs (sub $number $current)) 1) }}
+          {{ if and $previous (gt (sub $number $previous) 1) }}
+            <li class="pagination__gap" aria-hidden="true">&hellip;</li>
+          {{ end }}
+          <li>
+            {{ if eq $number $current }}
+              <a class="pagination__page pagination__page--current" aria-current="page" aria-label="Page {{ $number }}">{{ $number }}</a>
+            {{ else }}
+              <a class="pagination__page" href="{{ .URL }}" aria-label="Page {{ $number }}">{{ $number }}</a>
+            {{ end }}
+          </li>
+          {{ $previous = $number }}
+        {{ end }}
+      {{ end }}
+    </ul>
+  </nav>
+{{ end }}

@@ -301,7 +301,7 @@ title = 'MaxMind'
     target = "static/maxmind-server-ip-addresses.json"
 
 [outputs]
-  home = ["HTML", "MARKDOWN"]
+  home = ["HTML"]
   page = ["HTML", "MARKDOWN"]
   section = ["HTML", "MARKDOWN"]
   taxonomy = ["HTML", "MARKDOWN"]
@@ -316,6 +316,10 @@ title = 'MaxMind'
 [mediaTypes]
   [mediaTypes."text/markdown"]
     suffixes = ["md"]
+
+[pagination]
+  # Only layouts/release-note/list.html calls .Paginate, so only it uses this.
+  pagerSize = 40
 
 [services]
   [services.rss]
