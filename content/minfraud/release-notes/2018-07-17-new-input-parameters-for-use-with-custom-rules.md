@@ -3,8 +3,6 @@ title = 'New input parameters for use with custom rules'
 date = 2018-07-17T16:00:00Z
 draft = false
 legacy_anchor = 'new-input-parameters-for-use-with-custom-rules'
-[build]
-  list = 'never'
 +++
 
 We have released additional input parameters for use with custom rules.

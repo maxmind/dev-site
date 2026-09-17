@@ -3,8 +3,6 @@ title = 'minFraud Legacy and Proxy Detection web services now return HTTP status
 date = 2026-06-30T16:00:00Z
 draft = false
 legacy_anchor = 'minfraud-legacy-and-proxy-detection-web-services-now-return-http-status-codes-for-errors'
-[build]
-  list = 'never'
 +++
 
 The minFraud Legacy and Proxy Detection web services now return meaningful HTTP

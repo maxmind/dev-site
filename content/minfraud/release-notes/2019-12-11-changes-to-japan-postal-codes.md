@@ -3,8 +3,6 @@ title = 'Changes to Japan Postal Codes'
 date = 2019-12-11T15:00:00Z
 draft = false
 legacy_anchor = 'changes-to-japan-postal-codes'
-[build]
-  list = 'never'
 +++
 
 Effective December 16, 2019, we will return `1` as the last digit for all 7

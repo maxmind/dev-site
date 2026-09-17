@@ -3,8 +3,6 @@ title = 'New static_ip_score output in web services'
 date = 2019-10-15T16:00:00Z
 draft = false
 legacy_anchor = 'new-static_ip_score-output-in-web-services'
-[build]
-  list = 'never'
 +++
 
 The following output has been added to the

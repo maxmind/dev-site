@@ -3,8 +3,6 @@ title = 'Mapping more mobile networks to regional level'
 date = 2017-07-24T15:00:00Z
 draft = false
 legacy_anchor = 'mapping-more-mobile-networks-to-regional-level'
-[build]
-  list = 'never'
 +++
 
 We will be mapping additional mobile (cellular) networks to a region

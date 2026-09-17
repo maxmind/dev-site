@@ -3,8 +3,6 @@ title = 'Transaction classification can now be untagged using the `clear` report
 date = 2026-05-13T14:00:00Z
 draft = false
 legacy_anchor = 'transaction-classification-can-now-be-untagged-using-the-clear-report-tag'
-[build]
-  list = 'never'
 +++
 
 You can now clear a transaction report tag if the initial classification was or

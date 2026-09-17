@@ -3,8 +3,6 @@ title = 'New network and user_count outputs in web services'
 date = 2019-09-19T16:00:00Z
 draft = false
 legacy_anchor = 'new-network-and-user_count-outputs-in-web-services'
-[build]
-  list = 'never'
 +++
 
 The following outputs have been added to the

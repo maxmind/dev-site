@@ -3,8 +3,6 @@ title = 'minFraud services now handle 8 digit IINs'
 date = 2022-01-31T16:00:00Z
 draft = false
 legacy_anchor = 'minfraud-services-now-handle-8-digit-iins'
-[build]
-  list = 'never'
 +++
 
 We have updated the minFraud service to handle 8 digit credit card issuer ID

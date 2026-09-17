@@ -3,8 +3,6 @@ title = 'Discontinuing /app/ws_ipaddr'
 date = 2015-03-27T16:00:00Z
 draft = false
 legacy_anchor = 'discontinuing-appws_ipaddr'
-[build]
-  list = 'never'
 +++
 
 On April 28, we will deactivate the `/app/ws_ipaddr` endpoint. This endpoint

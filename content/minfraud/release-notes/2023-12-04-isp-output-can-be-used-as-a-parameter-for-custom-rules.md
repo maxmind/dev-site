@@ -3,8 +3,6 @@ title = 'ISP output can be used as a parameter for custom rules'
 date = 2023-12-04T16:00:00Z
 draft = false
 legacy_anchor = 'isp-output-can-be-used-as-a-parameter-for-custom-rules'
-[build]
-  list = 'never'
 +++
 
 You can now use the `/ip_address/traits/isp` output in minFraud custom rules,

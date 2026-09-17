@@ -3,8 +3,6 @@ title = 'New European Union locations added to minFraud Insights and Factors'
 date = 2018-05-25T16:00:00Z
 draft = false
 legacy_anchor = 'new-european-union-locations-added-to-minfraud-insights-and-factors'
-[build]
-  list = 'never'
 +++
 
 Effective May 29, 2018, we will be adding Åland Islands, Martinique, Mayotte,

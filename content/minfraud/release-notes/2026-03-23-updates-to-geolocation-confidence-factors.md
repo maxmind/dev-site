@@ -3,8 +3,6 @@ title = 'Updates to geolocation confidence factors'
 date = 2026-03-23T16:00:00Z
 draft = false
 legacy_anchor = 'updates-to-geolocation-confidence-factors'
-[build]
-  list = 'never'
 +++
 
 Starting tomorrow, Tuesday, March 24 2026, we're deploying updates to our

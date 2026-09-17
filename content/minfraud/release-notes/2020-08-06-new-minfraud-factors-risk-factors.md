@@ -3,8 +3,6 @@ title = 'New minFraud Factors risk factors'
 date = 2020-08-06T16:00:00Z
 draft = false
 legacy_anchor = 'new-minfraud-factors-risk-factors'
-[build]
-  list = 'never'
 +++
 
 We have released three additional risk-factor outputs. Customers of

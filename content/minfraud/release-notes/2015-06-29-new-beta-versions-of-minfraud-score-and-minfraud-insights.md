@@ -3,8 +3,6 @@ title = 'New beta versions of minFraud Score and minFraud Insights'
 date = 2015-06-29T16:00:00Z
 draft = false
 legacy_anchor = 'new-beta-versions-of-minfraud-score-and-minfraud-insights'
-[build]
-  list = 'never'
 +++
 
 We've released the beta versions of two new minFraud services, minFraud Score

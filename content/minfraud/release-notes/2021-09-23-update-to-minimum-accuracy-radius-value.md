@@ -3,8 +3,6 @@ title = 'Update to minimum accuracy_radius value'
 date = 2021-09-23T16:00:00Z
 draft = false
 legacy_anchor = 'update-to-minimum-accuracy_radius-value'
-[build]
-  list = 'never'
 +++
 
 Effective October 4, 2021, the minimum accuracy radius value will be 5km across

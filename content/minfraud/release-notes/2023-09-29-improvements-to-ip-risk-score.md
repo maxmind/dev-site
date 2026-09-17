@@ -3,8 +3,6 @@ title = 'Improvements to IP risk score'
 date = 2023-09-29T16:00:00Z
 draft = false
 legacy_anchor = 'improvements-to-ip-risk-score'
-[build]
-  list = 'never'
 +++
 
 We have made some improvements to the IP risk score, and minFraud customers may

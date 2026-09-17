@@ -3,8 +3,6 @@ title = 'Retirement of TLS 1.0/1.1 and unencrypted http minFraud requests'
 date = 2019-10-16T16:00:00Z
 draft = false
 legacy_anchor = 'retirement-of-tls-1011-and-unencrypted-http-minfraud-requests'
-[build]
-  list = 'never'
 +++
 
 We retired support for TLS v1.0/v1.1 and unencrypted HTTP requests to minFraud

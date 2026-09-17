@@ -3,8 +3,6 @@ title = 'Group and join up to 20 conditions in minFraud custom rules'
 date = 2023-09-26T16:00:00Z
 draft = false
 legacy_anchor = 'group-and-join-up-to-20-conditions-in-minfraud-custom-rules'
-[build]
-  list = 'never'
 +++
 
 When using minFraud's custom rules, you can now group and join up to 20

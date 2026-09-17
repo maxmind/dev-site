@@ -3,8 +3,6 @@ title = 'Correction regarding London boroughs in our geolocation data'
 date = 2023-06-12T16:00:00Z
 draft = false
 legacy_anchor = 'correction-regarding-london-boroughs-in-our-geolocation-data'
-[build]
-  list = 'never'
 +++
 
 On June 6,

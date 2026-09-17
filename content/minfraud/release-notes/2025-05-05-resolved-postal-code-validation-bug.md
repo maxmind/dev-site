@@ -3,8 +3,6 @@ title = 'Resolved - Postal code validation bug'
 date = 2025-05-05T16:00:00Z
 draft = false
 legacy_anchor = 'resolved---postal-code-validation-bug'
-[build]
-  list = 'never'
 +++
 
 We have

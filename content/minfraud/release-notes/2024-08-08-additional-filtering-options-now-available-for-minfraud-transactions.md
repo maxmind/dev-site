@@ -3,8 +3,6 @@ title = 'Additional filtering options now available for minFraud transactions'
 date = 2024-08-08T16:00:00Z
 draft = false
 legacy_anchor = 'additional-filtering-options-now-available-for-minfraud-transactions'
-[build]
-  list = 'never'
 +++
 
 The transactions screen in your MaxMind account portal now has expanded

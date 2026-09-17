@@ -3,8 +3,6 @@ title = 'Geolocation Coordinate Bug Fix'
 date = 2022-09-07T16:00:00Z
 draft = false
 legacy_anchor = 'geolocation-coordinate-bug-fix'
-[build]
-  list = 'never'
 +++
 
 We are aware of a bug in which databases and web services have been returning

@@ -3,8 +3,6 @@ title = 'Create stored lists of email addresses to use in minFraud custom rules'
 date = 2023-11-15T16:00:00Z
 draft = false
 legacy_anchor = 'create-stored-lists-of-email-addresses-to-use-in-minfraud-custom-rules'
-[build]
-  list = 'never'
 +++
 
 You can now add up to 2000 emails to a stored list and use it within minFraud

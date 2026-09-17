@@ -3,8 +3,6 @@ title = 'Planned warning interruption (September 2019)'
 date = 2019-09-16T16:00:00Z
 draft = false
 legacy_anchor = 'planned-warning-interruption-september-2019'
-[build]
-  list = 'never'
 +++
 
 **8-hour interruption of old TLS and unencrypted minFraud requests on September

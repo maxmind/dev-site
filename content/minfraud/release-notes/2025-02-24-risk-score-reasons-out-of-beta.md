@@ -3,8 +3,6 @@ title = 'Risk score reasons out of beta'
 date = 2025-02-24T16:00:00Z
 draft = false
 legacy_anchor = 'risk-score-reasons-out-of-beta'
-[build]
-  list = 'never'
 +++
 
 Risk score reasons have been officially introduced and out of beta as of

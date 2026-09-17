@@ -3,8 +3,6 @@ title = 'Introducing Risk Score Reasons beta for minFraud Factors customers'
 date = 2024-08-27T16:00:00Z
 draft = false
 legacy_anchor = 'introducing-risk-score-reasons-beta-for-minfraud-factors-customers'
-[build]
-  list = 'never'
 +++
 
 Today, we have released a new beta feature that will help minFraud Factors

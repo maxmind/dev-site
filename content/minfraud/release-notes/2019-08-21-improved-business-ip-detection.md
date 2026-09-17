@@ -3,8 +3,6 @@ title = 'Improved business IP detection'
 date = 2019-08-21T16:00:00Z
 draft = false
 legacy_anchor = 'improved-business-ip-detection'
-[build]
-  list = 'never'
 +++
 
 We have made improvements in how we detect business IPs for the user type field

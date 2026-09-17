@@ -3,8 +3,6 @@ title = 'Retirement of legacy IIN (BIN) API service'
 date = 2019-08-05T16:00:00Z
 draft = false
 legacy_anchor = 'retirement-of-legacy-iin-bin-api-service'
-[build]
-  list = 'never'
 +++
 
 We are discontinuing the legacy IIN (BIN) API on **January 31, 2020** in order

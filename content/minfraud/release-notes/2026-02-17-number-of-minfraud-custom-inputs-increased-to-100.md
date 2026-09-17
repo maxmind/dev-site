@@ -3,8 +3,6 @@ title = 'Number of minFraud custom inputs increased to 100'
 date = 2026-02-17T16:00:00Z
 draft = false
 legacy_anchor = 'number-of-minfraud-custom-inputs-increased-to-100'
-[build]
-  list = 'never'
 +++
 
 You are now able to add up to 100 custom inputs in minFraud.

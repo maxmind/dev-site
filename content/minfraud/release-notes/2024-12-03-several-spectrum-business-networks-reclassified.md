@@ -3,8 +3,6 @@ title = 'Several Spectrum Business networks reclassified'
 date = 2024-12-03T16:00:00Z
 draft = false
 legacy_anchor = 'several-spectrum-business-networks-reclassified'
-[build]
-  list = 'never'
 +++
 
 In data released today, Tuesday, December 3, 2024, we are updating a large

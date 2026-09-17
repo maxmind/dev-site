@@ -3,8 +3,6 @@ title = 'More Virtual Payment Cards Flagged in minFraud'
 date = 2023-08-30T16:00:00Z
 draft = false
 legacy_anchor = 'more-virtual-payment-cards-flagged-in-minfraud'
-[build]
-  list = 'never'
 +++
 
 Effective September 1, 2023 we will be flagging more virtual payment cards from

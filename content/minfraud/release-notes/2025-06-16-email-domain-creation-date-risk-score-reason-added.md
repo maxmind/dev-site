@@ -3,8 +3,6 @@ title = 'EMAIL_DOMAIN_CREATION_DATE risk score reason added'
 date = 2025-06-16T16:00:00Z
 draft = false
 legacy_anchor = 'email_domain_creation_date-risk-score-reason-added'
-[build]
-  list = 'never'
 +++
 
 We have added `EMAIL_DOMAIN_CREATION_DATE` as a new

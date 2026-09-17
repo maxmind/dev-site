@@ -3,8 +3,6 @@ title = 'EU Country outputs added to minFraud Insights and minFraud Factors serv
 date = 2018-02-13T16:00:00Z
 draft = false
 legacy_anchor = 'eu-country-outputs-added-to-minfraud-insights-and-minfraud-factors-services'
-[build]
-  list = 'never'
 +++
 
 We have added additional outputs to the minFraud Insights and minFraud Factors

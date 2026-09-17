@@ -3,8 +3,6 @@ title = 'Changes to Registered Country data'
 date = 2022-09-26T16:00:00Z
 draft = false
 legacy_anchor = 'changes-to-registered-country-data'
-[build]
-  list = 'never'
 +++
 
 We have made some changes to how we determine the registered country associated

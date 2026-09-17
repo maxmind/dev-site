@@ -3,8 +3,6 @@ title = 'Postal code validation bug'
 date = 2025-05-01T16:00:00Z
 draft = false
 legacy_anchor = 'postal-code-validation-bug'
-[build]
-  list = 'never'
 +++
 
 We have identified a bug with postal code validation in our database build

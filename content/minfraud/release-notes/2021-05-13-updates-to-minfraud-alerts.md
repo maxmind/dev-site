@@ -3,8 +3,6 @@ title = 'Updates to minFraud Alerts'
 date = 2021-05-13T16:00:00Z
 draft = false
 legacy_anchor = 'updates-to-minfraud-alerts'
-[build]
-  list = 'never'
 +++
 
 We recently made some updates to minFraud alerts, which notifies minFraud users

@@ -3,8 +3,6 @@ title = 'Changes to Portugal Postal Codes'
 date = 2019-11-08T16:00:00Z
 draft = false
 legacy_anchor = 'changes-to-portugal-postal-codes'
-[build]
-  list = 'never'
 +++
 
 Effective November 12, 2019, we will return `-001` as the last 3 digits for all

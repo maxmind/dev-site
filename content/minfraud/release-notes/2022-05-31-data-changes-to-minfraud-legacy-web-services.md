@@ -3,8 +3,6 @@ title = 'Data changes to minFraud Legacy web services'
 date = 2022-05-31T16:00:00Z
 draft = false
 legacy_anchor = 'data-changes-to-minfraud-legacy-web-services'
-[build]
-  list = 'never'
 +++
 
 In line with the

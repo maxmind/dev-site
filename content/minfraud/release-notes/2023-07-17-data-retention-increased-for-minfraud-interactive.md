@@ -3,8 +3,6 @@ title = 'Data retention increased for minFraud Interactive'
 date = 2023-07-17T16:00:00Z
 draft = false
 legacy_anchor = 'data-retention-increased-for-minfraud-interactive'
-[build]
-  list = 'never'
 +++
 
 Effective immediately, we will begin to retain data in minFraud Interactive for

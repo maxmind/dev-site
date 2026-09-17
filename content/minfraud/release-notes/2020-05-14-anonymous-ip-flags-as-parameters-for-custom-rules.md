@@ -3,8 +3,6 @@ title = 'Anonymous IP flags as parameters for custom rules'
 date = 2020-05-14T16:00:00Z
 draft = false
 legacy_anchor = 'anonymous-ip-flags-as-parameters-for-custom-rules'
-[build]
-  list = 'never'
 +++
 
 Customers of [minFraud Insights and minFraud Factors](/minfraud) can now use the

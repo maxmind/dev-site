@@ -3,8 +3,6 @@ title = 'Updated warning codes in minFraud Score, Insights, and Factors'
 date = 2021-05-19T16:00:00Z
 draft = false
 legacy_anchor = 'updated-warning-codes-in-minfraud-score-insights-and-factors'
-[build]
-  list = 'never'
 +++
 
 We updated warning codes for [minFraud Score, Insights and Factors](/minfraud)

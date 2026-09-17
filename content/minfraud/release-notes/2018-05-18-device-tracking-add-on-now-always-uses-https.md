@@ -3,8 +3,6 @@ title = 'Device Tracking Add-On now always uses HTTPS'
 date = 2018-05-18T16:00:00Z
 draft = false
 legacy_anchor = 'device-tracking-add-on-now-always-uses-https'
-[build]
-  list = 'never'
 +++
 
 The HTTP request made by the Device Tracking Add-On now always uses HTTPS.

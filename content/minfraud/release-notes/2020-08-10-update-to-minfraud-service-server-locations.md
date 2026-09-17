@@ -3,8 +3,6 @@ title = 'Update to minFraud service server locations'
 date = 2020-08-10T16:00:00Z
 draft = false
 legacy_anchor = 'update-to-minfraud-service-server-locations'
-[build]
-  list = 'never'
 +++
 
 Effective August 17, 2020, we will no longer serve minFraud service queries from

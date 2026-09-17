@@ -3,8 +3,6 @@ title = 'Report transaction support in minFraud client APIs'
 date = 2020-06-24T16:00:00Z
 draft = false
 legacy_anchor = 'report-transaction-support-in-minfraud-client-apis'
-[build]
-  list = 'never'
 +++
 
 The [minFraud Score, Insights, and Factors](/minfraud) client APIs now support

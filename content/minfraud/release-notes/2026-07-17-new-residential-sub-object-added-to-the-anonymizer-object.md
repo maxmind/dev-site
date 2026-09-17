@@ -3,8 +3,6 @@ title = 'New residential sub-object added to the anonymizer object'
 date = 2026-07-17T16:00:00Z
 draft = false
 legacy_anchor = 'new-residential-sub-object-added-to-the-anonymizer-object'
-[build]
-  list = 'never'
 +++
 
 We have added a `residential` sub-object to the

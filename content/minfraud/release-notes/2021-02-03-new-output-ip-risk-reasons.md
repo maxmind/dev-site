@@ -3,8 +3,6 @@ title = 'New output IP risk reasons'
 date = 2021-02-03T16:00:00Z
 draft = false
 legacy_anchor = 'new-output-ip-risk-reasons'
-[build]
-  list = 'never'
 +++
 
 The `ip_address/risk_reasons` output is now available.

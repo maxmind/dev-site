@@ -3,8 +3,6 @@ title = 'IP risk snapshot output added to traits object in the Insights web serv
 date = 2025-11-20T16:00:00Z
 draft = false
 legacy_anchor = 'ip-risk-snapshot-output-added-to-traits-object-in-the-insights-web-services'
-[build]
-  list = 'never'
 +++
 
 We have added the

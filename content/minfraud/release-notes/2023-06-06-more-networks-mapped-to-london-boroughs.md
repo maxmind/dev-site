@@ -3,8 +3,6 @@ title = 'More networks mapped to London boroughs'
 date = 2023-06-06T16:00:00Z
 draft = false
 legacy_anchor = 'more-networks-mapped-to-london-boroughs'
-[build]
-  list = 'never'
 +++
 
 When a network geolocates to London, we will often return the borough for the

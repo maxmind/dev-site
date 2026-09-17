@@ -3,8 +3,6 @@ title = 'Anonymizer types added to minFraud Insights and Factors'
 date = 2017-11-24T16:00:00Z
 draft = false
 legacy_anchor = 'anonymizer-types-added-to-minfraud-insights-and-factors'
-[build]
-  list = 'never'
 +++
 
 minFraud Insights and Factors services now include anonymizer-type outputs.

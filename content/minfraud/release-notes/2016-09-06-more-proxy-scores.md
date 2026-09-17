@@ -3,8 +3,6 @@ title = 'More proxy scores'
 date = 2016-09-06T16:00:00Z
 draft = false
 legacy_anchor = 'more-proxy-scores'
-[build]
-  list = 'never'
 +++
 
 We will be returning more proxyScores between 0 and 1.8 and 1.8 and 3. Such

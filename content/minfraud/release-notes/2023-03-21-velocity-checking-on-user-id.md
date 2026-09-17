@@ -3,8 +3,6 @@ title = 'Velocity Checking on User ID'
 date = 2023-03-21T16:00:00Z
 draft = false
 legacy_anchor = 'velocity-checking-on-user-id'
-[build]
-  list = 'never'
 +++
 
 We have enabled velocity tracking on the `account/user_id` input for all

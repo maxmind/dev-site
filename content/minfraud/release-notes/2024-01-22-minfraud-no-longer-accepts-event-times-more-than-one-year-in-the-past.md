@@ -3,8 +3,6 @@ title = 'minFraud no longer accepts event times more than one year in the past'
 date = 2024-01-22T16:00:00Z
 draft = false
 legacy_anchor = 'minfraud-no-longer-accepts-event-times-more-than-one-year-in-the-past'
-[build]
-  list = 'never'
 +++
 
 Starting tomorrow, January 23, 2024, minFraud will no longer accept

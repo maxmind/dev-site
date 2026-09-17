@@ -3,8 +3,6 @@ title = 'minFraud Query Form'
 date = 2020-03-02T16:00:00Z
 draft = false
 legacy_anchor = 'minfraud-query-form'
-[build]
-  list = 'never'
 +++
 
 Users of the minFraud Score, Insights, and Factors services can now manually

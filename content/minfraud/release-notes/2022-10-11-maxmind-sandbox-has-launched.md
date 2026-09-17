@@ -3,8 +3,6 @@ title = 'MaxMind Sandbox has Launched'
 date = 2022-10-11T16:00:00Z
 draft = false
 legacy_anchor = 'maxmind-sandbox-has-launched'
-[build]
-  list = 'never'
 +++
 
 We've launched a new Sandbox Environment for technical validation and testing of
