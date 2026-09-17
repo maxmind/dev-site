@@ -42,14 +42,17 @@ async function redirectToNote(): Promise<void> {
   const listing = window.location.pathname.replace(/(?:page\/\d+\/)?$/, '');
   const year = new URLSearchParams(window.location.search).get('year');
 
-  const response = await fetch(`${listing}anchors.json`);
-  if (!response.ok) return;
+  let entries: AnchorEntry[];
+  try {
+    const response = await fetch(`${listing}anchors.json`);
+    if (!response.ok) return;
+    entries = (await response.json()) as AnchorEntry[];
+  } catch {
+    // The listing page is a reasonable place to stop if the map cannot load.
+    return;
+  }
 
-  const target = resolveAnchor(
-    (await response.json()) as AnchorEntry[],
-    anchor,
-    year
-  );
+  const target = resolveAnchor(entries, anchor, year);
   // No match: the fragment may name a heading on this page.
   if (target !== null && target !== window.location.pathname) {
     window.location.replace(target);
