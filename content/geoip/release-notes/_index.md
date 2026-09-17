@@ -2,7 +2,7 @@
 title: GeoIP Release Notes
 type: release-note
 individual_notes: true
-outputs: ['html', 'rss']
+outputs: ['html', 'rss', 'anchors']
 ---
 
 {{< alert info >}}
