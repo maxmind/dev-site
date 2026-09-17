@@ -1,6 +1,13 @@
 // Copy page content as markdown for LLM consumption
 
 function initCopyMarkdown() {
+  // A page without a Markdown rendering gets no copy control.
+  const alternate = document.querySelector<HTMLLinkElement>(
+    'link[rel="alternate"][type="text/markdown"]'
+  );
+  if (alternate === null) return;
+  const markdownPath = alternate.href;
+
   // Create the copy button
   const copyButton = document.createElement('button');
   copyButton.className = 'copy-markdown-btn';
@@ -21,20 +28,6 @@ function initCopyMarkdown() {
   // Handle button click
   copyButton.addEventListener('click', async (e) => {
     e.preventDefault();
-
-    // Get the current path and convert to markdown path
-    const currentPath = window.location.pathname;
-    let markdownPath = currentPath;
-
-    // If the path ends with / or /index.html, append index.md
-    if (markdownPath.endsWith('/')) {
-      markdownPath += 'index.md';
-    } else if (markdownPath.endsWith('/index.html')) {
-      markdownPath = markdownPath.replace('/index.html', '/index.md');
-    } else if (!markdownPath.endsWith('.md')) {
-      // For other HTML files, replace .html with .md
-      markdownPath = markdownPath.replace('.html', '.md');
-    }
 
     try {
       // Show loading state

@@ -313,6 +313,10 @@ title = 'MaxMind'
   [mediaTypes."text/markdown"]
     suffixes = ["md"]
 
+[pagination]
+  # Only layouts/release-note/list.html calls .Paginate, so only it uses this.
+  pagerSize = 40
+
 [services]
   [services.rss]
     limit = 50
