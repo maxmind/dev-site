@@ -132,3 +132,55 @@ invoke = "once"
 path-args = "absolute-file"
 include = ["content/**/*.md", "layouts/**/*.html"]
 ok-exit-codes = 0
+
+[commands.check-release-note-front-matter]
+type = "lint"
+cmd = [
+  "pnpm",
+  "run",
+  "--silent",
+  "lint:release-note-front-matter"
+]
+invoke = "once"
+# Reads every note under content/*/release-notes; ignores argv.
+path-args = "none"
+include = ["content/*/release-notes/*.md"]
+ok-exit-codes = 0
+
+[commands.check-release-note-build]
+type = "lint"
+cmd = [
+  "pnpm",
+  "run",
+  "--silent",
+  "lint:release-note-build"
+]
+invoke = "once"
+# Shares one build across the anchor, listing and redirect checks; ignores argv.
+path-args = "none"
+include = [
+  "content/*/release-notes/*.md",
+  "layouts/release-note/**",
+  "static/_redirects",
+  "assets/js/release-note-anchors.ts"
+]
+ok-exit-codes = 0
+
+[commands.check-release-note-links]
+type = "lint"
+cmd = [
+  "pnpm",
+  "run",
+  "--silent",
+  "lint:release-note-links"
+]
+invoke = "once"
+# Scans content for year-page links, then builds the site to check the anchor
+# map and the listing heading ids; ignores argv.
+path-args = "none"
+include = [
+  "content/**/*.md",
+  "layouts/release-note/**",
+  "assets/js/release-note-anchors.ts"
+]
+ok-exit-codes = 0
