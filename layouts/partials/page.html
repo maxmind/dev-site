@@ -4,6 +4,9 @@
   </div>
   <div class="page__content">
     <h1 class="page__title">{{ .Title }}</h1>
+    {{- if and .IsPage (not .Date.IsZero) }}
+    <em class="release-note__date">{{ .Date | time.Format ":date_long" }}</em>
+    {{- end }}
     {{ if eq .Type "has-toc" }}
     <div class="page__toc">
       <h3 class="page__toc__title">On this page</h3>
