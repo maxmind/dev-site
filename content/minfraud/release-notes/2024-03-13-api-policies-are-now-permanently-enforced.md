@@ -3,8 +3,6 @@ title = 'API policies are now permanently enforced'
 date = 2024-03-13T16:00:00Z
 draft = false
 legacy_anchor = 'api-policies-are-now-permanently-enforced'
-[build]
-  list = 'never'
 +++
 
 To improve our server infrastructure and allow for better performance and

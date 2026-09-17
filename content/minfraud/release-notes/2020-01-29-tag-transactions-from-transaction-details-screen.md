@@ -3,8 +3,6 @@ title = 'Tag transactions from transaction details screen'
 date = 2020-01-29T16:00:00Z
 draft = false
 legacy_anchor = 'tag-transactions-from-transaction-details-screen'
-[build]
-  list = 'never'
 +++
 
 minFraud service users can now tag transactions (e.g. chargeback, not fraud,

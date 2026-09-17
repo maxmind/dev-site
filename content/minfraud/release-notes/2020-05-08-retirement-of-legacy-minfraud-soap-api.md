@@ -3,8 +3,6 @@ title = 'Retirement of legacy minFraud SOAP API'
 date = 2020-05-08T16:00:00Z
 draft = false
 legacy_anchor = 'retirement-of-legacy-minfraud-soap-api'
-[build]
-  list = 'never'
 +++
 
 On May 8, 2020, we discontinued our legacy minFraud SOAP API in order to focus

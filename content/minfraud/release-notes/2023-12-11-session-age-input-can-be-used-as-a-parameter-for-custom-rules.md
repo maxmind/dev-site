@@ -3,8 +3,6 @@ title = 'Session age input can be used as a parameter for custom rules'
 date = 2023-12-11T16:00:00Z
 draft = false
 legacy_anchor = 'session-age-input-can-be-used-as-a-parameter-for-custom-rules'
-[build]
-  list = 'never'
 +++
 
 You can now use the `/device/session_age` input in minFraud custom rules.

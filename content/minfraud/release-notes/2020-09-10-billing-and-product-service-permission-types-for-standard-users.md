@@ -3,8 +3,6 @@ title = 'Billing and Product/Service Permission Types for Standard Users'
 date = 2020-09-10T16:00:00Z
 draft = false
 legacy_anchor = 'billing-and-productservice-permission-types-for-standard-users'
-[build]
-  list = 'never'
 +++
 
 We have added a new permission category for the Standard User type. The

@@ -3,8 +3,6 @@ title = 'New Device Field'
 date = 2016-06-09T16:00:00Z
 draft = false
 legacy_anchor = 'new-device-field'
-[build]
-  list = 'never'
 +++
 
 `/device/confidence` and `/device/last_seen` have been added to the minFraud

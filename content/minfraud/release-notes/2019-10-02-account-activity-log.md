@@ -3,8 +3,6 @@ title = 'Account activity log'
 date = 2019-10-02T16:00:00Z
 draft = false
 legacy_anchor = 'account-activity-log'
-[build]
-  list = 'never'
 +++
 
 You can now view a log of your MaxMind account activity, which includes a time

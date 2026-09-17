@@ -3,8 +3,6 @@ title = 'Updates to autonomous_system_organization, ISP, and organization data'
 date = 2026-01-28T16:00:00Z
 draft = false
 legacy_anchor = 'updates-to-autonomous_system_organization-isp-and-organization-data'
-[build]
-  list = 'never'
 +++
 
 On January 21, 2026, we released data with significant changes to

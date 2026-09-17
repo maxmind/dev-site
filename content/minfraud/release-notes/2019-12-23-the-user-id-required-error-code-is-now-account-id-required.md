@@ -3,8 +3,6 @@ title = 'The USER_ID_REQUIRED error code is now ACCOUNT_ID_REQUIRED'
 date = 2019-12-23T16:00:00Z
 draft = false
 legacy_anchor = 'the-user_id_required-error-code-is-now-account_id_required'
-[build]
-  list = 'never'
 +++
 
 Our web services, including

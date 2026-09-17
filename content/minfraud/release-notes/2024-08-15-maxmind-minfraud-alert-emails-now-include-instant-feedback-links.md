@@ -3,8 +3,6 @@ title = 'MaxMind minFraud alert emails now include instant feedback links'
 date = 2024-08-15T16:00:00Z
 draft = false
 legacy_anchor = 'maxmind-minfraud-alert-emails-now-include-instant-feedback-links'
-[build]
-  list = 'never'
 +++
 
 MaxMind minFraud alert emails now include links that allow you to provide

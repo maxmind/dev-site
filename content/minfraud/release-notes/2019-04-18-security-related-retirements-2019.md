@@ -3,8 +3,6 @@ title = 'Security-related retirements 2019'
 date = 2019-04-18T16:00:00Z
 draft = false
 legacy_anchor = 'security-related-retirements-2019'
-[build]
-  list = 'never'
 +++
 
 In order to ensure your data is as safe and secure as possible, we will be

@@ -3,8 +3,6 @@ title = 'New Output is_residential_proxy Released for GeoIP Insights Web Service
 date = 2020-10-20T16:00:00Z
 draft = false
 legacy_anchor = 'new-output-is_residential_proxy-released-for-geoip-insights-web-service-minfraud-insights-and-minfraud-factors'
-[build]
-  list = 'never'
 +++
 
 We have released an additional output for our web services.

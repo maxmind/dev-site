@@ -3,8 +3,6 @@ title = 'Upcoming IP address changes for MaxMind services'
 date = 2013-07-03T16:00:00Z
 draft = false
 legacy_anchor = 'upcoming-ip-address-changes-for-maxmind-services'
-[build]
-  list = 'never'
 +++
 
 In the coming weeks, we will be changing the IP addresses of our web service

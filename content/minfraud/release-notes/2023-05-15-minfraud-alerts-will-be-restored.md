@@ -3,8 +3,6 @@ title = 'minFraud Alerts will be restored'
 date = 2023-05-15T16:00:00Z
 draft = false
 legacy_anchor = 'minfraud-alerts-will-be-restored'
-[build]
-  list = 'never'
 +++
 
 We are aware of an issue in which some minFraud Alerts were not being sent or

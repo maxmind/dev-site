@@ -3,8 +3,6 @@ title = 'Expanded filtering options in minFraud Interactive'
 date = 2023-07-20T16:00:00Z
 draft = false
 legacy_anchor = 'expanded-filtering-options-in-minfraud-interactive'
-[build]
-  list = 'never'
 +++
 
 Within minFraud Interactive, the interface provided in your account portal for

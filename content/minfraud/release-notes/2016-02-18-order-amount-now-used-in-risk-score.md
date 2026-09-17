@@ -3,8 +3,6 @@ title = 'Order Amount Now Used in Risk Score'
 date = 2016-02-18T16:00:00Z
 draft = false
 legacy_anchor = 'order-amount-now-used-in-risk-score'
-[build]
-  list = 'never'
 +++
 
 All minFraud services now include an updated machine learning algorithm that

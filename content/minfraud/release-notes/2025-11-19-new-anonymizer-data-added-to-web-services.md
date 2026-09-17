@@ -3,8 +3,6 @@ title = 'New anonymizer data added to web services'
 date = 2025-11-19T16:00:00Z
 draft = false
 legacy_anchor = 'new-anonymizer-data-added-to-web-services'
-[build]
-  list = 'never'
 +++
 
 We have added an

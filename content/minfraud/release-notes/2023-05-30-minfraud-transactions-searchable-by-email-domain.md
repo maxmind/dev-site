@@ -3,8 +3,6 @@ title = 'minFraud Transactions searchable by email domain'
 date = 2023-05-30T16:00:00Z
 draft = false
 legacy_anchor = 'minfraud-transactions-searchable-by-email-domain'
-[build]
-  list = 'never'
 +++
 
 We have updated the minFraud Transactions interface in the account portal to

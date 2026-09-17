@@ -3,8 +3,6 @@ title = 'Expanded event type inputs, and new payment method and event party inpu
 date = 2025-12-18T15:00:00Z
 draft = false
 legacy_anchor = 'expanded-event-type-inputs-and-new-payment-method-and-event-party-inputs'
-[build]
-  list = 'never'
 +++
 
 We have released additional inputs and possible input values for all minFraud

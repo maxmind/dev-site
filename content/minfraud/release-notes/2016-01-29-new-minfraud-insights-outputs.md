@@ -3,8 +3,6 @@ title = 'New minFraud Insights Outputs'
 date = 2016-01-29T16:00:00Z
 draft = false
 legacy_anchor = 'new-minfraud-insights-outputs'
-[build]
-  list = 'never'
 +++
 
 The following outputs have been added to minFraud Insights:

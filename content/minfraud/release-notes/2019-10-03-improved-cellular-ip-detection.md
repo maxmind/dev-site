@@ -3,8 +3,6 @@ title = 'Improved cellular IP detection'
 date = 2019-10-03T16:00:00Z
 draft = false
 legacy_anchor = 'improved-cellular-ip-detection'
-[build]
-  list = 'never'
 +++
 
 We have made improvements to how we identify cellular IPs for the

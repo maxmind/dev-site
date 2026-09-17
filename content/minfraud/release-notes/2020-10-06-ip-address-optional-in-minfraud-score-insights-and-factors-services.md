@@ -3,8 +3,6 @@ title = 'IP Address Optional in minFraud Score, Insights, and Factors Services'
 date = 2020-10-06T16:00:00Z
 draft = false
 legacy_anchor = 'ip-address-optional-in-minfraud-score-insights-and-factors-services'
-[build]
-  list = 'never'
 +++
 
 Effective October 12, 2020 we are making the IP address input optional for all

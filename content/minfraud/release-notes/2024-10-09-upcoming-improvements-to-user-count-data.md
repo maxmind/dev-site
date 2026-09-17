@@ -3,8 +3,6 @@ title = 'Upcoming improvements to user count data'
 date = 2024-10-09T16:00:00Z
 draft = false
 legacy_anchor = 'upcoming-improvements-to-user-count-data'
-[build]
-  list = 'never'
 +++
 
 On Tuesday, October 22, 2024, we will release an improvement to our user count

@@ -3,8 +3,6 @@ title = 'Final reminder of security-related retirements'
 date = 2019-10-14T16:00:00Z
 draft = false
 legacy_anchor = 'final-reminder-of-security-related-retirements'
-[build]
-  list = 'never'
 +++
 
 This is a reminder that we are retiring support for requests using TLS 1.0/1.1,

@@ -3,8 +3,6 @@ title = 'Change to Time Zone Name for Ukraine'
 date = 2022-09-14T16:00:00Z
 draft = false
 legacy_anchor = 'change-to-time-zone-name-for-ukraine'
-[build]
-  list = 'never'
 +++
 
 The time zone name for Kyiv, Ukraine, which covers most of the country, has been

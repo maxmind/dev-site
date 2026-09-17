@@ -3,8 +3,6 @@ title = 'New License Key Format'
 date = 2023-03-16T16:00:00Z
 draft = false
 legacy_anchor = 'new-license-key-format'
-[build]
-  list = 'never'
 +++
 
 We have updated the format of our license keys. New license keys will be longer,

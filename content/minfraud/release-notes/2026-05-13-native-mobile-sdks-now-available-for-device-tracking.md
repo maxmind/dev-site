@@ -3,8 +3,6 @@ title = 'Native mobile SDKs now available for device tracking'
 date = 2026-05-13T13:00:00Z
 draft = false
 legacy_anchor = 'native-mobile-sdks-now-available-for-device-tracking'
-[build]
-  list = 'never'
 +++
 
 minFraud device tracking is now available for native Android and iOS apps.

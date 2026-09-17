@@ -3,8 +3,6 @@ title = 'Adding IPv6 access for web endpoints'
 date = 2013-09-17T16:00:00Z
 draft = false
 legacy_anchor = 'adding-ipv6-access-for-web-endpoints'
-[build]
-  list = 'never'
 +++
 
 We're excited to roll out IPv6 access for our web endpoints over the next few

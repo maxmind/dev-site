@@ -3,8 +3,6 @@ title = 'Dispositions API released'
 date = 2017-07-24T16:00:00Z
 draft = false
 legacy_anchor = 'dispositions-api-released'
-[build]
-  list = 'never'
 +++
 
 We have added a Dispositions API for use with Disposition setting from the

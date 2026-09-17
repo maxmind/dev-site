@@ -3,8 +3,6 @@ title = 'Deprecation of risk factor scores/subscores'
 date = 2024-10-22T16:00:00Z
 draft = false
 legacy_anchor = 'deprecation-of-risk-factor-scoressubscores'
-[build]
-  list = 'never'
 +++
 
 On Monday, November 4, 2024, we will be deprecating the risk factor scores/

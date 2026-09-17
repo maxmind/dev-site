@@ -3,8 +3,6 @@ title = 'Elevated response times for web service requests experienced by some cu
 date = 2026-09-11T16:00:00Z
 draft = false
 legacy_anchor = 'elevated-response-times-for-web-service-requests-experienced-by-some-customersresolved'
-[build]
-  list = 'never'
 +++
 
 Today, on September 11, 2026, between approximately 03:57 and 07:00 UTC, some

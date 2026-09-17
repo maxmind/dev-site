@@ -3,8 +3,6 @@ title = 'Subdivision, city, and postal fields blanked in selected cities and cou
 date = 2025-11-18T16:00:00Z
 draft = false
 legacy_anchor = 'subdivision-city-and-postal-fields-blanked-in-selected-cities-and-countries'
-[build]
-  list = 'never'
 +++
 
 Effective tomorrow, Wednesday, November 19, 2025, we will be blanking out the

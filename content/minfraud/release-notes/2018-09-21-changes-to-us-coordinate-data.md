@@ -3,8 +3,6 @@ title = 'Changes to US coordinate data'
 date = 2018-09-21T16:00:00Z
 draft = false
 legacy_anchor = 'changes-to-us-coordinate-data'
-[build]
-  list = 'never'
 +++
 
 On Monday, October 1st, we will be changing a large amount of our U.S.

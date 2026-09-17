@@ -3,8 +3,6 @@ title = 'Subset of risk score reasons can now be used in custom rules'
 date = 2026-05-13T15:00:00Z
 draft = false
 legacy_anchor = 'subset-of-risk-score-reasons-can-now-be-used-in-custom-rules'
-[build]
-  list = 'never'
 +++
 
 You can now integrate a selection of risk score reasons into your custom rules.

@@ -3,8 +3,6 @@ title = 'Email first seen can be used as a parameter for custom rules'
 date = 2024-04-08T16:00:00Z
 draft = false
 legacy_anchor = 'email-first-seen-can-be-used-as-a-parameter-for-custom-rules'
-[build]
-  list = 'never'
 +++
 
 minFraud Insights and Factors customers can now use the

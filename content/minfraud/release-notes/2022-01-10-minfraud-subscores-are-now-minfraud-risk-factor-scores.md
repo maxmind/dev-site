@@ -3,8 +3,6 @@ title = 'minFraud subscores are now minFraud risk factor scores'
 date = 2022-01-10T16:00:00Z
 draft = false
 legacy_anchor = 'minfraud-subscores-are-now-minfraud-risk-factor-scores'
-[build]
-  list = 'never'
 +++
 
 We have renamed minFraud subscores to be "risk factor scores" to make it clearer

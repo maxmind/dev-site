@@ -3,8 +3,6 @@ title = 'Updates to user count data'
 date = 2026-03-04T16:00:00Z
 draft = false
 legacy_anchor = 'updates-to-user-count-data'
-[build]
-  list = 'never'
 +++
 
 Between Tuesday March 3 and Friday, March 6, 2026 (and possibly longer), we are

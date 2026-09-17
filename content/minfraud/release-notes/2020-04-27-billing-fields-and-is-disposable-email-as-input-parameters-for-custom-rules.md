@@ -3,8 +3,6 @@ title = 'Billing fields and is disposable email as input parameters for custom r
 date = 2020-04-27T16:00:00Z
 draft = false
 legacy_anchor = 'billing-fields-and-is-disposable-email-as-input-parameters-for-custom-rules'
-[build]
-  list = 'never'
 +++
 
 We have released additional input parameters for use with custom rules.

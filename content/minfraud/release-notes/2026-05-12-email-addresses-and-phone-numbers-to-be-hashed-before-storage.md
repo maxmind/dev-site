@@ -3,8 +3,6 @@ title = 'Email addresses and phone numbers to be hashed before storage'
 date = 2026-05-12T16:00:00Z
 draft = false
 legacy_anchor = 'email-addresses-and-phone-numbers-to-be-hashed-before-storage'
-[build]
-  list = 'never'
 +++
 
 As a security improvement, MaxMind will begin hashing all email addresses and

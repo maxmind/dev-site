@@ -3,8 +3,6 @@ title = 'Planned warning interruption'
 date = 2019-07-24T16:00:00Z
 draft = false
 legacy_anchor = 'planned-warning-interruption'
-[build]
-  list = 'never'
 +++
 
 There will be a planned service interruption for all requests to MaxMind

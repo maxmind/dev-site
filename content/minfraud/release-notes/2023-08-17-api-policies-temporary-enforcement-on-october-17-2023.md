@@ -3,8 +3,6 @@ title = 'API policies - temporary enforcement on October 17, 2023'
 date = 2023-08-17T16:00:00Z
 draft = false
 legacy_anchor = 'api-policies---temporary-enforcement-on-october-17-2023'
-[build]
-  list = 'never'
 +++
 
 To improve our server infrastructure and allow for better performance and

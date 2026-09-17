@@ -3,8 +3,6 @@ title = 'WSDL and Port Change Required for Some minFraud SOAP Users'
 date = 2014-08-04T16:00:00Z
 draft = false
 legacy_anchor = 'wsdl-and-port-change-required-for-some-minfraud-soap-users'
-[build]
-  list = 'never'
 +++
 
 On August 11, we will discontinue serving requests to port 8005. Users of WSDL

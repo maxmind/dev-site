@@ -3,8 +3,6 @@ title = 'Data Updates for Apple iCloud Private Relay'
 date = 2021-09-08T16:00:00Z
 draft = false
 legacy_anchor = 'data-updates-for-apple-icloud-private-relay'
-[build]
-  list = 'never'
 +++
 
 We have updated our data in a number of ways in preparation for the rollout of

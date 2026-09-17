@@ -3,8 +3,6 @@ title = 'Toggle minFraud Transactions Access'
 date = 2019-12-11T16:00:00Z
 draft = false
 legacy_anchor = 'toggle-minfraud-transactions-access'
-[build]
-  list = 'never'
 +++
 
 Account administrators can now enable or disable access to the

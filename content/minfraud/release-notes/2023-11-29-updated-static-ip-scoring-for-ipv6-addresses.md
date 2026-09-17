@@ -3,8 +3,6 @@ title = 'Updated static IP scoring for IPv6 addresses'
 date = 2023-11-29T16:00:00Z
 draft = false
 legacy_anchor = 'updated-static-ip-scoring-for-ipv6-addresses'
-[build]
-  list = 'never'
 +++
 
 We are releasing a bug fix to our static IP scoring system today.

@@ -3,8 +3,6 @@ title = 'Subdivision, city, and postal fields blanked in Tokyo metro area in som
 date = 2025-11-06T15:00:00Z
 draft = false
 legacy_anchor = 'subdivision-city-and-postal-fields-blanked-in-tokyo-metro-area-in-some-cases'
-[build]
-  list = 'never'
 +++
 
 As of Tuesday, November 4, 2025, we are blanking out the subdivision, city, and

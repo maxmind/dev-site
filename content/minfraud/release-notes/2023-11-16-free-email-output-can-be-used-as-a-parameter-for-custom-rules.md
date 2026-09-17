@@ -3,8 +3,6 @@ title = 'Free email output can be used as a parameter for custom rules'
 date = 2023-11-16T16:00:00Z
 draft = false
 legacy_anchor = 'free-email-output-can-be-used-as-a-parameter-for-custom-rules'
-[build]
-  list = 'never'
 +++
 
 You can now use the `/email/is_free` output in minFraud custom rules. This

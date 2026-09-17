@@ -3,8 +3,6 @@ title = 'Upcoming changes to our TLS certificates may impact customers with unus
 date = 2024-04-08T15:00:00Z
 draft = false
 legacy_anchor = 'upcoming-changes-to-our-tls-certificates-may-impact-customers-with-unusual-server-configuration'
-[build]
-  list = 'never'
 +++
 
 Starting in May, Let's Encrypt will no longer use a cross-signed root

@@ -3,8 +3,6 @@ title = 'New /email/domain/first_seen output'
 date = 2020-03-24T16:00:00Z
 draft = false
 legacy_anchor = 'new-emaildomainfirst_seen-output'
-[build]
-  list = 'never'
 +++
 
 The `/email/domain/first_seen` output is now available in minFraud Insights and

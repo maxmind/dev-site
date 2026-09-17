@@ -3,8 +3,6 @@ title = 'FIDO2 Support for Two-Factor Authentication'
 date = 2020-06-22T16:00:00Z
 draft = false
 legacy_anchor = 'fido2-support-for-two-factor-authentication'
-[build]
-  list = 'never'
 +++
 
 We've updated our Two-Factor Authentication (2FA) implementation to the

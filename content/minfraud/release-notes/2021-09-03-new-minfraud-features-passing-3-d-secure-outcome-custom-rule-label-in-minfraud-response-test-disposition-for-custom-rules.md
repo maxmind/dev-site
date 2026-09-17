@@ -3,8 +3,6 @@ title = 'New minFraud features: passing 3-D Secure outcome, custom rule label in
 date = 2021-09-03T16:00:00Z
 draft = false
 legacy_anchor = 'new-minfraud-features-passing-3-d-secure-outcome-custom-rule-label-in-minfraud-response-test-disposition-for-custom-rules'
-[build]
-  list = 'never'
 +++
 
 We have released a couple of new features for the

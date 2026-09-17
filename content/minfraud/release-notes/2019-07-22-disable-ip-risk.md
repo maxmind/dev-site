@@ -3,8 +3,6 @@ title = 'Disable IP Risk'
 date = 2019-07-22T16:00:00Z
 draft = false
 legacy_anchor = 'disable-ip-risk'
-[build]
-  list = 'never'
 +++
 
 You can now manage a list of IP addresses and networks that you want to exempt

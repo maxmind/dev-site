@@ -3,8 +3,6 @@ title = 'Email Now Available as Custom Rules Parameter'
 date = 2020-09-14T16:00:00Z
 draft = false
 legacy_anchor = 'email-now-available-as-custom-rules-parameter'
-[build]
-  list = 'never'
 +++
 
 We have released an additional input parameter for use with custom rules.

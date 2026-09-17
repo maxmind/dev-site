@@ -3,8 +3,6 @@ title = 'Improved readability of the risk reasons module within Transactions Det
 date = 2026-05-13T16:00:00Z
 draft = false
 legacy_anchor = 'improved-readability-of-the-risk-reasons-module-within-transactions-details-screen'
-[build]
-  list = 'never'
 +++
 
 Based on user feedback, we have updated the risk reasons module within the

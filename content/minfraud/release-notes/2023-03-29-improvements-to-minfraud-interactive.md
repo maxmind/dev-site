@@ -3,8 +3,6 @@ title = 'Improvements to minFraud Interactive'
 date = 2023-03-29T16:00:00Z
 draft = false
 legacy_anchor = 'improvements-to-minfraud-interactive'
-[build]
-  list = 'never'
 +++
 
 We have made a number of improvements to the user interface for minFraud

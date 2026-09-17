@@ -3,8 +3,6 @@ title = 'New email domain outputs in the Insights and Factors web services'
 date = 2025-12-18T16:00:00Z
 draft = false
 legacy_anchor = 'new-email-domain-outputs-in-the-insights-and-factors-web-services'
-[build]
-  list = 'never'
 +++
 
 We have added new fields to the

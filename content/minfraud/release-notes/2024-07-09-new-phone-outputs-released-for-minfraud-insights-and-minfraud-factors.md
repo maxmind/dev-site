@@ -3,8 +3,6 @@ title = 'New phone outputs released for minFraud® Insights and minFraud Factors
 date = 2024-07-09T16:00:00Z
 draft = false
 legacy_anchor = 'new-phone-outputs-released-for-minfraud-insights-and-minfraud-factors'
-[build]
-  list = 'never'
 +++
 
 We have released additional outputs for our

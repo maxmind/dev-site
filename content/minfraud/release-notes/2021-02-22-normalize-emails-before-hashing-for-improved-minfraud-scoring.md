@@ -3,8 +3,6 @@ title = 'Normalize Emails Before Hashing for Improved minFraud Scoring'
 date = 2021-02-22T16:00:00Z
 draft = false
 legacy_anchor = 'normalize-emails-before-hashing-for-improved-minfraud-scoring'
-[build]
-  list = 'never'
 +++
 
 The client APIs for minFraud Score, Insights, and Factors now normalize emails

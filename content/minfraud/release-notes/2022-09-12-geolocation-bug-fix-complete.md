@@ -3,8 +3,6 @@ title = 'Geolocation Bug Fix Complete'
 date = 2022-09-12T16:00:00Z
 draft = false
 legacy_anchor = 'geolocation-bug-fix-complete'
-[build]
-  list = 'never'
 +++
 
 We have completed work to fix a geolocation bug affecting some IPv6 addresses.
