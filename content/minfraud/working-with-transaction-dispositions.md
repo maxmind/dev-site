@@ -126,42 +126,42 @@ object in future versions of this API.
   "last_update_timestamp": "2017-03-15T22:06:56.848123Z",
   "updates": [
     {
-      "minfraud_id": "deadbeef-0000-0000-0000-00000000",
+      "minfraud_id": "deadbeef-0000-0000-0000-000000000000",
       "action": "accept",
       "action_last_updated": "2017-03-14T22:04:01.04425Z",
       "note": null,
       "note_last_updated": null
     },
     {
-      "minfraud_id": "deadbeef-0000-0000-0000-00000002",
+      "minfraud_id": "deadbeef-0000-0000-0000-000000000002",
       "action": "reject",
       "action_last_updated": "2017-03-14T21:39:57.854300Z",
       "note": null,
       "note_last_updated": "2017-03-15T11:37:42.83235Z"
     },
     {
-      "minfraud_id": "deadbeef-0000-0000-0000-00000003",
+      "minfraud_id": "deadbeef-0000-0000-0000-000000000003",
       "action": "manual_review",
       "action_last_updated": "2017-03-04T20:14:42.757200Z",
       "note": null,
       "note_last_updated": "2017-03-05T16:52:31.995250Z"
     },
     {
-      "minfraud_id": "deadbeef-0000-0000-0000-00000020",
+      "minfraud_id": "deadbeef-0000-0000-0000-000000000020",
       "action": "manual_review",
       "action_last_updated": "2017-03-15T22:04:11.044250Z",
       "note": "Panda, can you check this out?",
       "note_last_updated": "2017-03-15T22:04:25.828250Z"
     },
     {
-      "minfraud_id": "deadbeef-0000-0000-0000-00000030",
+      "minfraud_id": "deadbeef-0000-0000-0000-000000000030",
       "action": "accept",
       "action_last_updated": "2017-03-15T22:05:42.954231Z",
       "note": "Customer was traveling abroad.",
       "note_last_updated": "2017-03-15T22:05:58.132423Z"
     },
     {
-      "minfraud_id": "deadbeef-0000-0000-0000-00000050",
+      "minfraud_id": "deadbeef-0000-0000-0000-000000000050",
       "action": "expired_review",
       "action_last_updated": "2017-03-15T22:06:22.492945Z",
       "note": "Customer didn't answer several phone calls.",
