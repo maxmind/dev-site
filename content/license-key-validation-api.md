@@ -91,7 +91,7 @@ structure:
 ```json
 {
   "code": "LICENSE_KEY_INVALID",
-  "error": "'foo-bad-license-key' is not a valid license_key when calling /secrets/validate-license-key"
+  "error": "'foo-bad-license-key' is not a valid license_key when calling /secrets/validate-license-key."
 }
 ```
 
