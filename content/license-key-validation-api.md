@@ -35,11 +35,14 @@ the license key itself.
 The Content Type of the request must be `application/x-www-form-urlencoded`. No
 other content types are accepted at the moment.
 
-The request body may include the following field:
+The request body must include the following field:
 
-| Key           | Value Type | Description                                                                       |
-| ------------- | ---------- | --------------------------------------------------------------------------------- |
-| `license_key` | string     | The `license_key` field should contain the license key that you want to validate. |
+| Key           | Value Type | Description                                                                     |
+| ------------- | ---------- | ------------------------------------------------------------------------------- |
+| `license_key` | string     | The `license_key` field must contain the license key that you want to validate. |
+
+If the body has no `license_key` field, the server returns `400 Bad Request`
+with the code `LICENSE_KEY_INVALID`.
 
 Here is an example of how to make the request using curl:
 
