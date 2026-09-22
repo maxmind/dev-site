@@ -97,6 +97,14 @@ to handle any valid HTTP `4xx` or `5xx` status code.
         </td>
       </tr>
       <tr>
+        <td><code>REQUEST_TOO_BIG</code></td>
+        <td>400 Bad Request</td>
+        <td>
+          The request body is larger than 50,000 bytes. Our proxy rejects most
+          larger bodies first with a <code>413</code>.
+        </td>
+      </tr>
+      <tr>
         <td><code>AUTHORIZATION_INVALID</code></td>
         <td>401 Unauthorized</td>
         <td>
