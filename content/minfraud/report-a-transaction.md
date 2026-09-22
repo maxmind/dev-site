@@ -120,7 +120,7 @@ var report = new TransactionReport
 
     // The following key/values are not mandatory but are encouraged
     IPAddress = IPAddress.Parse("1.1.1.1"),
-    MaxMindId = "abcd1234",
+    MaxMindId = "ABCD1234",
     MinFraudId = new Guid("01c25cb0-f067-4e02-8ed0-a094c580f5e4"),
     TransactionId = "txn123",
     ChargebackCode = "BL",
@@ -141,7 +141,7 @@ WebServiceClient client = new WebServiceClient.Builder(accountId, licenseKey).bu
 TransactionReport transaction = new TransactionReport.Builder(Tag.CHARGEBACK)
     // The following key/values are not mandatory but are encouraged
     .ipAddress(InetAddress.getByName("1.1.1.1"))
-    .maxmindId("abcd1234")
+    .maxmindId("ABCD1234")
     .minfraudId(UUID.fromString("01c25cb0-f067-4e02-8ed0-a094c580f5e4"))
     .transactionId("txn123")
     .chargebackCode("BL")
@@ -166,7 +166,7 @@ const transactionReport = new minFraud.TransactionReport({
 
     // The following key/values are not mandatory but are encouraged
     ipAddress: '1.1.1.1',
-    maxmindId: 'abcd1234',
+    maxmindId: 'ABCD1234',
     minfraudId: '01c25cb0-f067-4e02-8ed0-a094c580f5e4',
     transactionId: 'txn123',
     chargebackCode: 'BL',
@@ -191,7 +191,7 @@ $rt->report(
     tag: 'chargeback',
     // The following key/values are not mandatory but are encouraged
     ipAddress: '1.1.1.1',
-    maxmindId: 'abcd1234',
+    maxmindId: 'ABCD1234',
     minfraudId: '01c25cb0-f067-4e02-8ed0-a094c580f5e4',
     transactionId: 'txn123',
     chargebackCode: 'BL',
@@ -212,7 +212,7 @@ with Client(account_id, license_key) as client:
     'tag': 'chargeback',
     # The following key/values are not mandatory but are encouraged
     'ip_address': '1.1.1.1',
-    'maxmind_id': 'abcd1234',
+    'maxmind_id': 'ABCD1234',
     'minfraud_id': '01c25cb0-f067-4e02-8ed0-a094c580f5e4',
     'transaction_id': 'txn123',
     'chargeback_code': 'BL',
@@ -233,7 +233,7 @@ async def report():
       'tag': 'chargeback',
       # The following key/values are not mandatory but are encouraged
       'ip_address': '1.1.1.1',
-      'maxmind_id': 'abcd1234',
+      'maxmind_id': 'ABCD1234',
       'minfraud_id': '01c25cb0-f067-4e02-8ed0-a094c580f5e4',
       'transaction_id': 'txn123',
       'chargeback_code': 'BL',
@@ -257,7 +257,7 @@ txn = Minfraud::Components::Report::Transaction.new(
   tag:             :chargeback,
   # The following key/values are not mandatory but are encouraged
   ip_address:      '1.1.1.1',
-  maxmind_id:      'abcd1234',
+  maxmind_id:      'ABCD1234',
   minfraud_id:     '01c25cb0-f067-4e02-8ed0-a094c580f5e4',
   transaction_id:  'txn123',
   chargeback_code: 'BL',
