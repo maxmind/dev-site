@@ -73,8 +73,9 @@ Where `YOUR_ACCOUNT_ID` is a placeholder for your account ID and
 `YOUR_LICENSE_KEY` is a placeholder for your license key.
 [Learn more about license keys on our knowledge base](https://support.maxmind.com/knowledge-base/articles/using-maxmind-license-keys).
 Please note that the permalink copied from your account portal will replace
-`YOUR_GEOFEED_ID` with a unique ID for your geofeed and `YOUR_REPORT_ID` with an
-identifier for the kind of report you're downloading.
+`YOUR_GEOFEED_ID` with a numeric ID for your geofeed and `YOUR_REPORT_ID` with
+one of `free`, `geolocation`, or `intelligence`, identifying the kind of report
+you're downloading.
 
 In the response, you can check the `Last-Modified` header for the file’s build
 date. These checks can be incorporated into your own script or program,
@@ -114,8 +115,9 @@ Where `YOUR_ACCOUNT_ID` is a placeholder for your account ID and
 `YOUR_LICENSE_KEY` is a placeholder for your license key.
 [Learn more about license keys on our knowledge base](https://support.maxmind.com/knowledge-base/articles/using-maxmind-license-keys).
 Please note that the permalink copied from your account portal will replace
-`YOUR_GEOFEED_ID` with a unique ID for your geofeed and `YOUR_REPORT_ID` with an
-identifier for the kind of report you're downloading.
+`YOUR_GEOFEED_ID` with a numeric ID for your geofeed and `YOUR_REPORT_ID` with
+one of `free`, `geolocation`, or `intelligence`, identifying the kind of report
+you're downloading.
 
 This will save the report to a file called `YOUR_REPORT_ID.csv`. For example,
 `https://download.maxmind.com/geofeed/reports/v1.0/YOUR_GEOFEED_ID/geolocation`
