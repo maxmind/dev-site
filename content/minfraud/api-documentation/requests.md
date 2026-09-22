@@ -69,7 +69,12 @@ then it will not be modified. Beyond field-specific exceptions, an exception to
 this is if the value is provided as a type different from what we require. In
 such cases we convert it to the required type if possible. For example, if you
 provide a string field as a number, then it will be converted to a string, and
-vice versa. This conversion happens only between numbers and strings.
+vice versa. This conversion happens only between numbers and strings. Another
+exception applies to free-text fields, such as `first_name`, `last_name`,
+`company`, `address`, `city`, `postal`, `user_agent`, and `accept_language`:
+leading and trailing whitespace is trimmed, and repeated whitespace is collapsed
+to a single space. ID fields, such as `transaction_id` and `session_id`, are
+used unchanged.
 
 The entire request body is limited to 20,000 bytes. Requests larger than this
 size will be rejected.
