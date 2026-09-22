@@ -23,7 +23,8 @@ We use
 [basic HTTP authentication](https://en.wikipedia.org/wiki/Basic_access_authentication).
 The APIs which require authentication are only available via HTTPS. The
 credentials are never transmitted unencrypted. If you attempt to access this
-service via HTTP, you will receive a `403 Forbidden` HTTP response.
+service via HTTP, you will receive a `403 Forbidden` HTTP response, except at
+`geolite.info`, which redirects HTTP requests to HTTPS.
 
 We require TLS 1.2 or greater for all requests to our servers to keep your data
 secure.
