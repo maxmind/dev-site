@@ -272,11 +272,16 @@ being scored.
   {{</minfraud-schema-row>}}
 
   {{< minfraud-schema-row key="time" type="request" valueType="string"  >}}
-  The date and time the event occurred. The string must be in the [RFC 3339](https://datatracker.ietf.org/doc/html/rfc3339) date-time format. The time must be within the past year. If this field is not in the request, the current time will be used.
+  The date and time the event occurred. The string must be in the [RFC
+  3339](https://datatracker.ietf.org/doc/html/rfc3339) date-time format. The
+  time must be within the past year and no more than two days in the future.
+  If this field is not in the request, the current time will be used.
 
   **It is not recommended to use this input when scoring live transactions as they occur.** However, it can be useful if you store transactions to be submitted to the service for scoring later.
 
-  Please note that you cannot submit times more than one year in the past. If you submit an event time more than one year in the past, the current time will be used to score the transaction, and a warning will be returned.
+  Please note that you cannot submit a time more than one year in the past or
+  more than two days in the future. If you do, the current time will be used
+  to score the transaction, and a warning will be returned.
 
   [Learn more about the /event/time input on our Knowledge Base.](https://support.maxmind.com/knowledge-base/articles/event-and-account-inputs-minfraud#transaction-time)
   {{</minfraud-schema-row>}}
