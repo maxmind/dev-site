@@ -433,7 +433,7 @@ information provided by the end-user who initiated the event.
   The city of the user's billing address.
   {{</minfraud-schema-row>}}
 
-  {{< minfraud-schema-row key="region" type="request" valueType="string" valueTypeNote="max length: 4" >}}
+  {{< minfraud-schema-row key="region" type="request" valueType="string" valueTypeNote="1-4 uppercase letters or digits" >}}
   The [ISO 3166-2 subdivision code](https://en.wikipedia.org/wiki/ISO%5F3166-2) for the user's billing address.
   {{</minfraud-schema-row>}}
 
@@ -509,7 +509,7 @@ information provided by the end-user who initiated the event.
   The city of the user's shipping address.
   {{</minfraud-schema-row>}}
 
-  {{< minfraud-schema-row key="region" type="request" valueType="string" valueTypeNote="max length: 4" >}}
+  {{< minfraud-schema-row key="region" type="request" valueType="string" valueTypeNote="1-4 uppercase letters or digits" >}}
   The [ISO 3166-2 subdivision code](https://en.wikipedia.org/wiki/ISO%5F3166-2) for the user's shipping address.
   {{</minfraud-schema-row>}}
 
