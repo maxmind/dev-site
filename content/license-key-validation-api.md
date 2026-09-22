@@ -99,3 +99,10 @@ structure:
 ```
 
 The HTTP status will be a `400 Bad Request`.
+
+### Response Body (for server errors)
+
+If MaxMind cannot process the request, the server returns a JSON object with the
+code `SERVER_ERROR` and a `500 Internal Server Error` status. You may also
+receive a `503 Service Unavailable` status, which does not have a JSON body. In
+both cases, you can try the request again later.
