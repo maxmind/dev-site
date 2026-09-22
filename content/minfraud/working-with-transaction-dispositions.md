@@ -37,6 +37,9 @@ We require a URL parameter called `updates_after` with an RFC 3339 timestamp
 value. This value is an exclusive lower bound for the updates; only updates made
 after this time will be returned.
 
+URL-encode the value. If it has a `+` offset, send it as `%2B`, or the service
+reads the `+` as a space and rejects the timestamp.
+
 For example, to get updates after March 15, 2021 at 9 AM UTC, your request would
 look like:
 `https://minfraud.maxmind.com/minfraud/disposition/v1.0/updates?updates_after=2021-03-15T09:00:00.00000Z`
