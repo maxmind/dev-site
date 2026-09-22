@@ -183,7 +183,9 @@ or program, according to your needs.
 
 This method only issues a HEAD request, rather than a download request, so
 running this check won’t count against your
-[daily database download limit](https://support.maxmind.com/knowledge-base/articles/download-and-update-maxmind-databases).
+[download limit](https://support.maxmind.com/knowledge-base/articles/download-and-update-maxmind-databases),
+which applies over a rolling 24-hour period rather than a calendar day. If your
+account is already over the limit, the HEAD request itself will fail.
 
 ### Automating downloads
 
