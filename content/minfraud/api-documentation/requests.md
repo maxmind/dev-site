@@ -331,7 +331,7 @@ the site where the event took place.
   [Learn more about the /account/user\_id input on our Knowledge Base.](https://support.maxmind.com/knowledge-base/articles/event-and-account-inputs-minfraud#transactor-identifier)
   {{</minfraud-schema-row>}}
 
-  {{< minfraud-schema-row key="username_md5" type="request" valueType="string" valueTypeNote="max length: 32" >}}
+  {{< minfraud-schema-row key="username_md5" type="request" valueType="string" valueTypeNote="exactly 32 hexadecimal characters" >}}
   An MD5 hash as a hexadecimal string of the username or login name associated with the account.
   {{</minfraud-schema-row>}}
 {{</ schema-table >}}
