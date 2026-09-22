@@ -323,7 +323,7 @@ The `Content-Type` header should always be `application/json`.
 
 The minFraud API accepts input as JSON in the body of an HTTP POST. The JSON
 document should consist of a single object. That object may contain the
-following keys (key names are case-sensitive):
+following keys:
 
 | Data field name     | Type        | Data field description                                                                                                                                                                                                                                                |
 | ------------------- | ----------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
