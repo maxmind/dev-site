@@ -199,6 +199,11 @@ to handle any valid HTTP `4xx` or `5xx` status code.
         </td>
       </tr>
       <tr>
+        <td><code>SERVER_ERROR</code></td>
+        <td>500 Internal Server Error</td>
+        <td>There was an error when processing this request.</td>
+      </tr>
+      <tr>
         <td>(none)</td>
         <td>503 Service Unavailable</td>
         <td>
