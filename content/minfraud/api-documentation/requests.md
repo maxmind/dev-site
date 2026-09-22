@@ -422,11 +422,13 @@ information provided by the end-user who initiated the event.
   {{</minfraud-schema-row>}}
 
   {{< minfraud-schema-row key="address" type="request" valueType="string" valueTypeNote="max length: 255" >}}
-  The first line of the user's billing address.
+  The first line of the user's billing address. Only the first 100 characters
+  are used; the rest is dropped without a warning.
   {{</minfraud-schema-row>}}
 
   {{< minfraud-schema-row key="address_2" type="request" valueType="string" valueTypeNote="max length: 255" >}}
-  The second line of the user's billing address.
+  The second line of the user's billing address. Only the first 100 characters
+  are used; the rest is dropped without a warning.
   {{</minfraud-schema-row>}}
 
   {{< minfraud-schema-row key="city" type="request" valueType="string" valueTypeNote="max length: 255" >}}
@@ -442,7 +444,9 @@ information provided by the end-user who initiated the event.
   {{</minfraud-schema-row>}}
 
   {{< minfraud-schema-row key="postal" type="request" valueType="string" valueTypeNote="max length: 255" >}}
-  The postal code of the user's billing address.
+  The postal code of the user's billing address. The service truncates the
+  value to 50 characters, removes non-ASCII characters, and reformats it for
+  some countries.
   {{</minfraud-schema-row>}}
 
   {{< minfraud-schema-row key="phone_number" type="request" valueType="string" valueTypeNote="max length: 255" >}}
@@ -499,11 +503,13 @@ information provided by the end-user who initiated the event.
   {{</minfraud-schema-row>}}
 
   {{< minfraud-schema-row key="address" type="request" valueType="string" valueTypeNote="max length: 255" >}}
-  The first line of the user's shipping address.
+  The first line of the user's shipping address. Only the first 100 characters
+  are used; the rest is dropped without a warning.
   {{</minfraud-schema-row>}}
 
   {{< minfraud-schema-row key="address_2" type="request" valueType="string" valueTypeNote="max length: 255" >}}
-  The second line of the user's shipping address.
+  The second line of the user's shipping address. Only the first 100
+  characters are used; the rest is dropped without a warning.
   {{</minfraud-schema-row>}}
 
   {{< minfraud-schema-row key="city" type="request" valueType="string" valueTypeNote="max length: 255" >}}
@@ -519,7 +525,9 @@ information provided by the end-user who initiated the event.
   {{</minfraud-schema-row>}}
 
   {{< minfraud-schema-row key="postal" type="request" valueType="string" valueTypeNote="max length: 255" >}}
-  The postal code of the user's shipping address.
+  The postal code of the user's shipping address. The service truncates the
+  value to 50 characters, removes non-ASCII characters, and reformats it for
+  some countries.
   {{</minfraud-schema-row>}}
 
   {{< minfraud-schema-row key="phone_number" type="request" valueType="string" valueTypeNote="max length: 255" >}}
