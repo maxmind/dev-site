@@ -55,11 +55,12 @@ array as described below. New fields that apply to one or more services may be
 added in the future.
 
 String fields are limited to no more than 255 valid Unicode characters unless a
-shorter length is specified; the null and newline characters are forbidden. Of
-course, many fields also have additional constraints that limit the length. For
-example, the `ip_address` field cannot be longer than the longest valid
-representation of an IPv6 address. Unless it must match a specific format, it is
-valid for a string field to be empty.
+shorter length is specified; the null and newline characters are forbidden. The
+replacement character U+FFFD is also forbidden, even though it is otherwise a
+valid Unicode character. Of course, many fields also have additional constraints
+that limit the length. For example, the `ip_address` field cannot be longer than
+the longest valid representation of an IPv6 address. An empty string is treated
+as if the field were absent, even for a field that must match a specific format.
 
 Boolean fields must be provided as JSON `true` or `false`.
 
