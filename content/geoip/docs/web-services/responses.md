@@ -125,7 +125,8 @@ to handle any valid HTTP `4xx` or `5xx` status code.
           use this service. Please
           <a href="https://www.maxmind.com/en/geoip-api-web-services"
             >purchase more service credits</a
-          >.
+          >. For GeoLite, this also occurs when the account has used its daily
+          limit of 1,000 queries.
         </td>
       </tr>
       <tr>
