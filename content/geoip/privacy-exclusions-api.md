@@ -41,6 +41,9 @@ The query string may include the following parameter:
 | --------------- | ------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `updates_after` | RFC 3339 timestamp | If set, only updates made after this time will be returned. The value should be a valid [RFC 3339 timestamp](https://datatracker.ietf.org/doc/html/rfc3339), e.g., `2020-04-12T23:20:50.52Z`. |
 
+URL-encode the `updates_after` value. If it has a `+` offset, send it as `%2B`,
+or the service reads the `+` as a space and rejects the timestamp.
+
 #### Example Request URL
 
 `https://api.maxmind.com/privacy/exclusions?updates_after=2020-04-12T23:20:50.52Z`
