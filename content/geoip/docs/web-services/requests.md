@@ -71,19 +71,8 @@ closest to you.
 The `Authorization` header is always required. See
 [Authorization and Security](#authorization-and-security) for more details.
 
-The `Accept` header for a request is entirely optional. If you do include one,
-you must accept one of the following:
-
-- `application/json`
-- `application/vnd.maxmind.com-country+json`
-- `application/vnd.maxmind.com-country+json; charset=UTF-8; version=2.1`
-
-Substitute the appropriate service type for "country". A request for any other
-MIME type will result in a `415 Unsupported Media Type` error.
-
-If you set the `Accept-Charset` header in your client code, you must accept the
-`UTF-8` character set. If you don't, you will receive a `406 Not Acceptable`
-response.
+The `Accept` and `Accept-Charset` headers are optional. The service ignores them
+and always returns JSON encoded as UTF-8.
 
 ## Troubleshooting IP Lookups
 

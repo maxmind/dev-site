@@ -61,16 +61,8 @@ response.
 
 ### Request headers
 
-The `Accept` header for a request is entirely optional. If you do include one,
-you must accept one of the following:
-
-- `application/json`
-- `application/vnd.maxmind.com-disposition-updates+json`
-- `application/vnd.maxmind.com-disposition-updates+json; charset=UTF-8; version=1.0`
-
-If you set the `Accept-Charset` header in your client code, you must accept the
-`UTF-8` character set. If you don't, you will receive a `406 Not Acceptable`
-response.
+The `Accept` and `Accept-Charset` headers are optional. The service ignores them
+and always returns JSON encoded as UTF-8.
 
 ### Command Line Example Using curl
 
@@ -191,10 +183,10 @@ A `Content-Length` header will be provided.
 ### Body (unsuccessful)
 
 In the event an error occurs (the response indicates a 4xx or 5xx HTTP status),
-the response may include a JSON document in the body. An error in content
-negotiation will not include a body, nor will many 5xx errors, which typically
-happen outside of our web service handling code. Before attempting to decode the
-body as JSON, you should verify that the `Content-Type` of the error response is
+the response may include a JSON document in the body. Many 5xx errors, which
+typically happen outside of our web service handling code, do not include one.
+Before attempting to decode the body as JSON, you should verify that the
+`Content-Type` of the error response is
 `application/vnd.maxmind.com-error+json; charset=UTF-8; version=1.0`.
 
 If the JSON document is included in the response body, it will be a single
@@ -206,18 +198,16 @@ the error and may change at any time.
 In addition to the errors documented below, client code should also be prepared
 to handle any valid HTTP 4xx or 5xx status code.
 
-| Code                   | HTTP Status                | Error                                                                                                                                                                                      |
-| ---------------------- | -------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| UPDATES_AFTER_REQUIRED | 400 Bad Request            | You have not supplied the `updates_after` URI parameter.                                                                                                                                   |
-| TIMESTAMP_INVALID      | 400 Bad Request            | The `updates_after` field must be in RFC 3339 format.                                                                                                                                      |
-| PARAMETER_UNKNOWN      | 400 Bad Request            | You have supplied one or more parameters which are not used by this endpoint.                                                                                                              |
-| AUTHORIZATION_INVALID  | 401 Unauthorized           | You have supplied an invalid [MaxMind account ID and/or license key](https://www.maxmind.com/en/accounts/current/license-key) in the [Authorization](#authorization-and-security) header.  |
-| LICENSE_KEY_REQUIRED   | 401 Unauthorized           | You have not supplied a [MaxMind license key](https://www.maxmind.com/en/accounts/current/license-key) in the [Authorization](#authorization-and-security) header.                         |
-| ACCOUNT_ID_REQUIRED    | 401 Unauthorized           | You have not supplied a [MaxMind account ID](https://support.maxmind.com/knowledge-base/articles/find-your-maxmind-account-id) in the [Authorization](#authorization-and-security) header. |
-| PERMISSION_REQUIRED    | 403 Forbidden              | You do not have permission to use the service. Please [contact our support team](https://support.maxmind.com/knowledge-base) for more information.                                         |
-| (none)                 | 406 Not Acceptable         | Your request included an `Accept-Charset` header that is not supported. `UTF-8` is the only acceptable character set.                                                                      |
-| (none)                 | 415 Unsupported Media Type | Your request included an `Accept` header that is not supported. The web service cannot return content of that type.                                                                        |
-| (none)                 | 503 Service Unavailable    | There is a problem with the web service server. You can try this request again later.                                                                                                      |
+| Code                   | HTTP Status             | Error                                                                                                                                                                                      |
+| ---------------------- | ----------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| UPDATES_AFTER_REQUIRED | 400 Bad Request         | You have not supplied the `updates_after` URI parameter.                                                                                                                                   |
+| TIMESTAMP_INVALID      | 400 Bad Request         | The `updates_after` field must be in RFC 3339 format.                                                                                                                                      |
+| PARAMETER_UNKNOWN      | 400 Bad Request         | You have supplied one or more parameters which are not used by this endpoint.                                                                                                              |
+| AUTHORIZATION_INVALID  | 401 Unauthorized        | You have supplied an invalid [MaxMind account ID and/or license key](https://www.maxmind.com/en/accounts/current/license-key) in the [Authorization](#authorization-and-security) header.  |
+| LICENSE_KEY_REQUIRED   | 401 Unauthorized        | You have not supplied a [MaxMind license key](https://www.maxmind.com/en/accounts/current/license-key) in the [Authorization](#authorization-and-security) header.                         |
+| ACCOUNT_ID_REQUIRED    | 401 Unauthorized        | You have not supplied a [MaxMind account ID](https://support.maxmind.com/knowledge-base/articles/find-your-maxmind-account-id) in the [Authorization](#authorization-and-security) header. |
+| PERMISSION_REQUIRED    | 403 Forbidden           | You do not have permission to use the service. Please [contact our support team](https://support.maxmind.com/knowledge-base) for more information.                                         |
+| (none)                 | 503 Service Unavailable | There is a problem with the web service server. You can try this request again later.                                                                                                      |
 
 ### Example response to an unsuccessful request
 

@@ -43,20 +43,8 @@ geographically closest to you.
 The `Authorization` header is always required. See
 [Authorization and Security](#authorization-and-security) for more details.
 
-The `Accept` header for a request is entirely optional. If you do include one,
-you must accept one of the following, substituting the `[SERVICE-TYPE]` with
-either `score`, `insights`, or `factors` as appropriate:
-
-- `application/json`
-- `application/vnd.maxmind.com-minfraud-[SERVICE-TYPE]+json`
-- `application/vnd.maxmind.com-minfraud-[SERVICE-TYPE]+json; charset=UTF-8; version=2.0`
-
-A request for any other MIME type will result in a `415 Unsupported Media Type`
-error.
-
-If you set the `Accept-Charset` header in your client code, you must accept the
-`UTF-8` character set. If you don't, you will receive a `406 Not Acceptable`
-response.
+The `Accept` and `Accept-Charset` headers are optional. The service ignores them
+and always returns JSON encoded as UTF-8.
 
 ## Request Body
 
