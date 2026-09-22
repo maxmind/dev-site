@@ -97,6 +97,11 @@ to handle any valid HTTP `4xx` or `5xx` status code.
         </td>
       </tr>
       <tr>
+        <td><code>BAD_REQUEST</code></td>
+        <td>400 Bad Request</td>
+        <td>There was a problem reading or decoding the request.</td>
+      </tr>
+      <tr>
         <td><code>REQUEST_TOO_BIG</code></td>
         <td>400 Bad Request</td>
         <td>
