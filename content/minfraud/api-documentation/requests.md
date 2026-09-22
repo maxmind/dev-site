@@ -438,8 +438,9 @@ information provided by the end-user who initiated the event.
   The phone number without the country code for the user's billing address. Punctuation characters will be stripped. After stripping punctuation characters, the number must contain only digits.
   {{</minfraud-schema-row>}}
 
-  {{< minfraud-schema-row key="phone_country_code" type="request" valueType="string" valueTypeNote="max length: 4" >}}
-  The country code for the phone number associated with the user's billing address. If you provide this information then you must provide at least one digit.
+  {{< minfraud-schema-row key="phone_country_code" type="request" valueType="string" valueTypeNote="1-4 digits" >}}
+  The country code for the phone number associated with the user's billing
+  address. Use digits only; do not include a leading `+`.
   {{</minfraud-schema-row>}}
 {{</ schema-table >}}
 
@@ -514,8 +515,9 @@ information provided by the end-user who initiated the event.
   The phone number without the country code for the user's shipping address. Punctuation characters will be stripped. After stripping punctuation characters, the number must contain only digits.
   {{</minfraud-schema-row>}}
 
-  {{< minfraud-schema-row key="phone_country_code" type="request" valueType="string" valueTypeNote="max length: 4" >}}
-  The country code for the phone number associated with the user's shipping address. If you provide this information then you must provide at least one digit.
+  {{< minfraud-schema-row key="phone_country_code" type="request" valueType="string" valueTypeNote="1-4 digits" >}}
+  The country code for the phone number associated with the user's shipping
+  address. Use digits only; do not include a leading `+`.
   {{</minfraud-schema-row>}}
 
   {{< minfraud-schema-row key="delivery_speed" type="request" valueType="string" valueTypeNote="format: enum" >}}
@@ -805,8 +807,9 @@ end-user and the payment processor about the credit card used for the event.
   The name of the issuing bank as provided by the end user.
   {{</minfraud-schema-row>}}
 
-  {{< minfraud-schema-row key="bank_phone_country_code" type="request" valueType="string" valueTypeNote="max length: 4" >}}
-  The phone country code for the issuing bank as provided by the end user. If you provide this information then you must provide at least one digit.
+  {{< minfraud-schema-row key="bank_phone_country_code" type="request" valueType="string" valueTypeNote="1-4 digits" >}}
+  The phone country code for the issuing bank as provided by the end user. Use
+  digits only; do not include a leading `+`.
   {{</minfraud-schema-row>}}
 
   {{< minfraud-schema-row key="bank_phone_number" type="request" valueType="string" valueTypeNote="max length: 255" >}}
