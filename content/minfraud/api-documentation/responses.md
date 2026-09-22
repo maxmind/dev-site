@@ -1308,20 +1308,11 @@ present in the response.
     ]
   },
   {
-    "multiplier": 1.8,
-    "reasons": [
-      {
-        "code": "TIME_OF_DAY",
-        "reason": "The local time of day of the request raised the overall risk score"
-      }
-    ]
-  },
-  {
     "multiplier": 1.6,
     "reasons": [
       {
-        "code": "EMAIL_DOMAIN_NEW",
-        "reason": "The email domain being recently seen for the first time in the minFraud network raised the overall risk score"
+        "code": "ORG_DISTANCE_RISK",
+        "reason": "The risk of the ISP combined with the distance between the billing address and IP address location raised the overall risk score"
       }
     ]
   },
@@ -1962,16 +1953,7 @@ Factors services, and a full example of the JSON body document for an error.
       "reasons": [
         {
           "code": "ANONYMOUS_IP",
-          "reason": "Risk due to IP being an Anonymous IP"
-        }
-      ]
-    },
-    {
-      "multiplier": 1.8,
-      "reasons": [
-        {
-          "code": "TIME_OF_DAY",
-          "reason": "Risk due to local time of day"
+          "reason": "The Anonymous IP address raised the overall risk score"
         }
       ]
     },
@@ -1979,8 +1961,8 @@ Factors services, and a full example of the JSON body document for an error.
       "multiplier": 1.6,
       "reasons": [
         {
-          "reason": "Riskiness of newly-sighted email domain",
-          "code": "EMAIL_DOMAIN_NEW"
+          "code": "ORG_DISTANCE_RISK",
+          "reason": "The risk of the ISP combined with the distance between the billing address and IP address location raised the overall risk score"
         }
       ]
     },
@@ -1988,8 +1970,8 @@ Factors services, and a full example of the JSON body document for an error.
       "multiplier": 0.34,
       "reasons": [
         {
-          "code": "EMAIL_ADDRESS_NEW",
-          "reason": "Riskiness of newly-sighted email address"
+          "code": "PHONE_ACTIVITY",
+          "reason": "minFraud network activity of the phone number lowered the overall risk score"
         }
       ]
     }
