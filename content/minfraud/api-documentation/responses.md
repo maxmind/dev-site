@@ -97,6 +97,14 @@ to handle any valid HTTP `4xx` or `5xx` status code.
         </td>
       </tr>
       <tr>
+        <td><code>REQUEST_TOO_BIG</code></td>
+        <td>400 Bad Request</td>
+        <td>
+          The request body is too large. Keep the request body at 20,000 bytes
+          or less to avoid both this error and the <code>413</code> response.
+        </td>
+      </tr>
+      <tr>
         <td><code>AUTHORIZATION_INVALID</code></td>
         <td>401 Unauthorized</td>
         <td>
