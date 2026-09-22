@@ -84,6 +84,12 @@ the future.
 The value for the `exclusions` key is an array of objects, each representing one
 exclusion request.
 
+Each IPv4 network appears three times in the array: as the IPv4 network, as the
+IPv4-mapped IPv6 network (in `::ffff:0:0/96`), and as the 6to4 IPv6 network (in
+`2002::/16`). For example, `96.69.127.3/32` also appears as
+`::ffff:96.69.127.3/128` and `2002:6045:7f03::/48`. You should exclude all three
+forms.
+
 Each exclusion object in the `exclusions` array includes the following keys:
 
 | Key              | Value Type         | Description                                                                                                                                                                                                                                                                                                                                                                                       |
