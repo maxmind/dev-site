@@ -115,6 +115,8 @@ Please note that GeoIP Update requires current access to database updates to run
 properly. If your subscription needs to be renewed, updates can be purchased
 while logged into
 [your Account Summary page](https://www.maxmind.com/en/accounts/current/people/current).
+If a payment fails, you can still download releases built during your paid
+period for 14 days after the period ends.
 
 Updating to the
 [latest release of GeoIP Update](https://github.com/maxmind/geoipupdate/releases)
