@@ -32,10 +32,11 @@ the license key itself.
 
 ### Request Body
 
-The Content Type of the request must be `application/x-www-form-urlencoded`. No
-other content types are accepted at the moment.
+The Content Type of the request must be `application/x-www-form-urlencoded`. Any
+other content type, or none, is treated as an empty body and returns
+`LICENSE_KEY_INVALID`.
 
-The request body may include the following field:
+The request body must include the following field:
 
 | Key           | Value Type | Description                                                                       |
 | ------------- | ---------- | --------------------------------------------------------------------------------- |
