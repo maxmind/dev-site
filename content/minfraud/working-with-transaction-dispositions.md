@@ -213,6 +213,6 @@ to handle any valid HTTP 4xx or 5xx status code.
 ```json
 {
   "code": "ACCOUNT_ID_REQUIRED",
-  "error": "You have not supplied a MaxMind account ID in the Authorization header"
+  "error": "An account ID and license key are required to use this service."
 }
 ```
