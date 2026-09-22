@@ -223,6 +223,10 @@ This download will return a compressed file in gzip (for binary) or zip (for
 CSV) format, which can be uncompressed using a program like
 [7-Zip](https://www.7-zip.org/) or [gzip](https://www.gzip.org/).
 
+To verify a download, use `suffix=tar.gz.md5` or `suffix=tar.gz.sha256` for a
+binary edition, or `suffix=zip.md5` or `suffix=zip.sha256` for a CSV edition, to
+get a checksum file instead of the database.
+
 For example, using the permalink for the GeoIP City CSV database, you can issue
 a `curl` command like the following:
 
