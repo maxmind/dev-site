@@ -22,7 +22,8 @@ Errors may be returned with the `Content-Type` set to
 the case, then the body of the response contains a JSON document with two keys,
 `code` and `error`. See the [Errors](#errors) section for more details.
 
-The response will always include a `Content-Length` header as well.
+The response will always include a `Content-Length` header, unless the request
+uses the `pretty` query parameter. Then the header may be missing.
 
 ## Errors
 

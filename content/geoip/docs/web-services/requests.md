@@ -75,6 +75,11 @@ The `Authorization` header is always required. See
 The `Accept` and `Accept-Charset` headers are optional. The service ignores them
 and always returns JSON encoded as UTF-8.
 
+## Query Parameters
+
+Add `pretty` to the query string, with any value, to indent the response body. A
+response indented this way may not have a `Content-Length` header.
+
 ## Troubleshooting IP Lookups
 
 [Learn about common troubleshooting steps to make sure that you're querying the correct IP addresses, and making efficient use of your queries, on our Knowledge Base.](https://support.maxmind.com/knowledge-base/articles/optimize-your-maxmind-web-service-integration)
