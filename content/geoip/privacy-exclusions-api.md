@@ -98,10 +98,9 @@ Please note that additional keys may be added in the future.
 ### Response Body (for unsuccessful requests)
 
 In the event an error occurs (the response indicates a 4xx or 5xx HTTP status),
-the response may include a JSON document in the body. An error in content
-negotiation will not include a body nor will many 5xx errors. Before attempting
-to decode the body as JSON, you should verify that the `Content-Type` of the
-error response is
+the response may include a JSON document in the body. Many `5xx` errors do not
+include one. Before attempting to decode the body as JSON, you should verify
+that the `Content-Type` of the error response is
 `application/vnd.maxmind.com-error+json; charset=UTF-8; version=2.0`.
 
 If the JSON document _is_ included in the response body, it will be an object
