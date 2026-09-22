@@ -130,7 +130,7 @@ to handle any valid HTTP `4xx` or `5xx` status code.
       </tr>
       <tr>
         <td><code>PERMISSION_REQUIRED</code></td>
-        <td>402 Payment Required</td>
+        <td>403 Forbidden</td>
         <td>
           You do not have permission to use the service. Please
           <a href="https://support.maxmind.com/knowledge-base"
