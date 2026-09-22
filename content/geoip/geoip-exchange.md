@@ -19,6 +19,9 @@ account portal.
 Please note that you will be redirected from these permalinks to the hostname
 `storage.googleapis.com`.
 
+The download service is only available via HTTPS. If you attempt to access it
+via HTTP, you will receive a `403 Forbidden` HTTP response.
+
 ### Download best practices
 
 At a high level, the best practice is to write an automated script that
