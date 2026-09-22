@@ -38,8 +38,8 @@ The IP address can be either an IPv4 or an IPv6 address. IPv4 addresses should
 be passed in the standard dotted quad form, for example `1.2.3.4`. IPv6
 addresses should be passed as strings as well. We recommend using the canonical
 form as described in [RFC 5952](https://datatracker.ietf.org/doc/html/rfc5952),
-for example `2001:db8::1:0:0:1`, but we will handle any valid IPv6 string
-representation.
+for example `2001:db8::1:0:0:1`. We do not accept an IPv6 address with a zone
+ID, for example `fe80::1%eth0`.
 
 You can also use the string `me` as the IP address. In this case, the record for
 the IP address you are querying from will be returned. This is useful when your
