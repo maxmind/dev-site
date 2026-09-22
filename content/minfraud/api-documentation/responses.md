@@ -1311,8 +1311,8 @@ present in the response.
     "multiplier": 1.8,
     "reasons": [
       {
-        "code": "TIME_OF_DAY",
-        "reason": "The local time of day of the request raised the overall risk score"
+        "code": "EMAIL_DOMAIN_CREATION_DATE",
+        "reason": "The email domain's age raised the overall risk score"
       }
     ]
   },
@@ -1320,8 +1320,8 @@ present in the response.
     "multiplier": 1.6,
     "reasons": [
       {
-        "code": "EMAIL_DOMAIN_NEW",
-        "reason": "The email domain being recently seen for the first time in the minFraud network raised the overall risk score"
+        "code": "EMAIL_LOCAL_PART",
+        "reason": "The local part of the email address raised the overall risk score"
       }
     ]
   },
@@ -1962,7 +1962,7 @@ Factors services, and a full example of the JSON body document for an error.
       "reasons": [
         {
           "code": "ANONYMOUS_IP",
-          "reason": "Risk due to IP being an Anonymous IP"
+          "reason": "The Anonymous IP address raised the overall risk score"
         }
       ]
     },
@@ -1970,8 +1970,8 @@ Factors services, and a full example of the JSON body document for an error.
       "multiplier": 1.8,
       "reasons": [
         {
-          "code": "TIME_OF_DAY",
-          "reason": "Risk due to local time of day"
+          "code": "EMAIL_DOMAIN_CREATION_DATE",
+          "reason": "The email domain's age raised the overall risk score"
         }
       ]
     },
@@ -1979,8 +1979,8 @@ Factors services, and a full example of the JSON body document for an error.
       "multiplier": 1.6,
       "reasons": [
         {
-          "reason": "Riskiness of newly-sighted email domain",
-          "code": "EMAIL_DOMAIN_NEW"
+          "code": "EMAIL_LOCAL_PART",
+          "reason": "The local part of the email address raised the overall risk score"
         }
       ]
     },
@@ -1988,8 +1988,8 @@ Factors services, and a full example of the JSON body document for an error.
       "multiplier": 0.34,
       "reasons": [
         {
-          "code": "EMAIL_ADDRESS_NEW",
-          "reason": "Riskiness of newly-sighted email address"
+          "code": "PHONE_ACTIVITY",
+          "reason": "minFraud network activity of the phone number lowered the overall risk score"
         }
       ]
     }
