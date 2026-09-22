@@ -98,6 +98,25 @@ structure:
 
 The HTTP status will be a `400 Bad Request`.
 
+### Response Body (for accounts without permission)
+
+If the account does not have permission to use this service, the server returns
+a JSON object with the following structure:
+
+```json
+{
+  "code": "PERMISSION_REQUIRED",
+  "error": "You do not have permission to use this service interface."
+}
+```
+
+The HTTP status will be `403 Forbidden`.
+
+### Response Body (for large requests)
+
+If the request body is larger than 65,536 bytes, the server returns a
+`413 Content Too Large` status. The response does not have a JSON body.
+
 ### Response Body (for server errors)
 
 If MaxMind cannot process the request, the server returns a JSON object with the
