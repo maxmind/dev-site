@@ -140,14 +140,6 @@ to handle any valid HTTP `4xx` or `5xx` status code.
         </td>
       </tr>
       <tr>
-        <td>(none)</td>
-        <td>403 Forbidden</td>
-        <td>
-          This status is returned when the request body is larger than 20,000
-          bytes.
-        </td>
-      </tr>
-      <tr>
         <td><code>IP_ADDRESS_NOT_FOUND</code></td>
         <td>404 Not Found</td>
         <td>The supplied IP address is not in the database.</td>
