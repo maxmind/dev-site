@@ -102,7 +102,7 @@ the response may include a JSON document in the body. An error in content
 negotiation will not include a body nor will many 5xx errors. Before attempting
 to decode the body as JSON, you should verify that the `Content-Type` of the
 error response is
-`application/vnd.maxmind.com-error+json; charset=UTF-8; version=1.0`.
+`application/vnd.maxmind.com-error+json; charset=UTF-8; version=2.0`.
 
 If the JSON document _is_ included in the response body, it will be an object
 with the keys `code` and `error`. The `code` field is a static error code for
