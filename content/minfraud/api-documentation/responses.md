@@ -170,7 +170,7 @@ to handle any valid HTTP `4xx` or `5xx` status code.
       </tr>
       <tr>
         <td>(none)</td>
-        <td>403 Forbidden</td>
+        <td>413 Content Too Large</td>
         <td>
           This status is returned when the request body is larger than 20,000
           bytes.
