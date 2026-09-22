@@ -230,7 +230,7 @@ transaction.
   [Learn more about the /device/session\_id input on our Knowledge Base.](https://support.maxmind.com/knowledge-base/articles/device-inputs-minfraud#session-information)
   {{</minfraud-schema-row>}}
 
-  {{< minfraud-schema-row key="tracking_token" type="request" valueType="string" >}}
+  {{< minfraud-schema-row key="tracking_token" type="request" valueType="string" valueTypeNote="max length: 255" >}}
   The token returned by the [Device Tracking Add-On](/minfraud/track-devices) client-side code, used for explicit device linking. When provided, this token enables high-confidence device matching that does not rely on the IP address alone.
 
   [Learn more about explicit device linking on our device tracking page.](/minfraud/track-devices#explicit-device-linking)
