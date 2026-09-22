@@ -120,7 +120,7 @@ var report = new TransactionReport
 
     // The following key/values are not mandatory but are encouraged
     IPAddress = IPAddress.Parse("1.1.1.1"),
-    MaxMindId = "abcd1234",
+    MaxMindId = "ABCD1234",
     MinFraudId = new Guid("01c25cb0-f067-4e02-8ed0-a094c580f5e4"),
     TransactionId = "txn123",
     ChargebackCode = "BL",
@@ -141,7 +141,7 @@ WebServiceClient client = new WebServiceClient.Builder(accountId, licenseKey).bu
 TransactionReport transaction = new TransactionReport.Builder(Tag.CHARGEBACK)
     // The following key/values are not mandatory but are encouraged
     .ipAddress(InetAddress.getByName("1.1.1.1"))
-    .maxmindId("abcd1234")
+    .maxmindId("ABCD1234")
     .minfraudId(UUID.fromString("01c25cb0-f067-4e02-8ed0-a094c580f5e4"))
     .transactionId("txn123")
     .chargebackCode("BL")
@@ -166,7 +166,7 @@ const transactionReport = new minFraud.TransactionReport({
 
     // The following key/values are not mandatory but are encouraged
     ipAddress: '1.1.1.1',
-    maxmindId: 'abcd1234',
+    maxmindId: 'ABCD1234',
     minfraudId: '01c25cb0-f067-4e02-8ed0-a094c580f5e4',
     transactionId: 'txn123',
     chargebackCode: 'BL',
@@ -191,7 +191,7 @@ $rt->report(
     tag: 'chargeback',
     // The following key/values are not mandatory but are encouraged
     ipAddress: '1.1.1.1',
-    maxmindId: 'abcd1234',
+    maxmindId: 'ABCD1234',
     minfraudId: '01c25cb0-f067-4e02-8ed0-a094c580f5e4',
     transactionId: 'txn123',
     chargebackCode: 'BL',
@@ -212,7 +212,7 @@ with Client(account_id, license_key) as client:
     'tag': 'chargeback',
     # The following key/values are not mandatory but are encouraged
     'ip_address': '1.1.1.1',
-    'maxmind_id': 'abcd1234',
+    'maxmind_id': 'ABCD1234',
     'minfraud_id': '01c25cb0-f067-4e02-8ed0-a094c580f5e4',
     'transaction_id': 'txn123',
     'chargeback_code': 'BL',
@@ -233,7 +233,7 @@ async def report():
       'tag': 'chargeback',
       # The following key/values are not mandatory but are encouraged
       'ip_address': '1.1.1.1',
-      'maxmind_id': 'abcd1234',
+      'maxmind_id': 'ABCD1234',
       'minfraud_id': '01c25cb0-f067-4e02-8ed0-a094c580f5e4',
       'transaction_id': 'txn123',
       'chargeback_code': 'BL',
@@ -257,7 +257,7 @@ txn = Minfraud::Components::Report::Transaction.new(
   tag:             :chargeback,
   # The following key/values are not mandatory but are encouraged
   ip_address:      '1.1.1.1',
-  maxmind_id:      'abcd1234',
+  maxmind_id:      'ABCD1234',
   minfraud_id:     '01c25cb0-f067-4e02-8ed0-a094c580f5e4',
   transaction_id:  'txn123',
   chargeback_code: 'BL',
@@ -360,24 +360,24 @@ body as JSON.
 In addition to the errors documented below, client code should also be prepared
 to handle any valid HTTP 4xx or 5xx status code.
 
-| Error Code              | HTTP Status             | Description                                                                                                                                                                                                                                                                       |
-| ----------------------- | ----------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| JSON_INVALID            | 400 Bad Request         | Your JSON could not be parsed.                                                                                                                                                                                                                                                    |
-| MAXMIND_ID_INVALID      | 400 Bad Request         | You have supplied an invalid `maxmind_id`. This field is case sensitive. Check your `maxmind_id` to ensure that it is 8 characters in length and made up only of digits and upper case letters. This value must come from the successful response to a previous minFraud request. |
-| MINFRAUD_ID_INVALID     | 400 Bad Request         | You have supplied an invalid `minfraud_id`. Check your `minfraud_id` to ensure that it is a valid UUID as returned in the minFraud Score, minFraud Insights, or minFraud Factors response.                                                                                        |
-| PARAMETER_UNKNOWN       | 400 Bad Request         | You have supplied an unknown parameter. Check the keys in your JSON data to ensure that you have not misspelled any of the field names or passed a field name which is not listed in [the available input fields](#request-body).                                                 |
-| NOTES_INVALID           | 400 Bad Request         | Your request includes a `notes` field that exceeds 1000 Unicode characters.                                                                                                                                                                                                       |
-| TAG_REQUIRED            | 400 Bad Request         | Your request does not include a `tag` field.                                                                                                                                                                                                                                      |
-| TAG_INVALID             | 400 Bad Request         | Your request includes an invalid `tag` field.                                                                                                                                                                                                                                     |
-| TRANSACTION_ID_REQUIRED | 400 Bad Request         | Your request must include one of the following fields: `ip_address`, `maxmind_id`, `minfraud_id`, or `transaction_id`.                                                                                                                                                            |
-| IP_ADDRESS_INVALID      | 400 Bad Request         | You have not supplied a valid IPv4 or IPv6 address.                                                                                                                                                                                                                               |
-| IP_ADDRESS_RESERVED     | 400 Bad Request         | You have supplied an IP address which belongs to a reserved or private range.                                                                                                                                                                                                     |
-| `<FIELD>`\_INVALID      | 400 Bad Request         | A field has the wrong JSON type, for example `TRANSACTION_ID_INVALID`. `<FIELD>` is the field name in upper case.                                                                                                                                                                 |
-| AUTHORIZATION_INVALID   | 401 Unauthorized        | You have supplied an invalid [MaxMind account ID and/or license key](https://www.maxmind.com/en/accounts/current/license-key) in the [Authorization](#authorization-and-security) header.                                                                                         |
-| LICENSE_KEY_REQUIRED    | 401 Unauthorized        | You have not supplied a [MaxMind license key](https://www.maxmind.com/en/accounts/current/license-key) in the [Authorization](#authorization-and-security) header.                                                                                                                |
-| ACCOUNT_ID_REQUIRED     | 401 Unauthorized        | You have not supplied a [MaxMind account ID](https://support.maxmind.com/knowledge-base/articles/find-your-maxmind-account-id) in the [Authorization](#authorization-and-security) header.                                                                                        |
-| (none)                  | 413 Content Too Large   | This status is returned when the request body is larger than 65,536 bytes. The response does not have a JSON body.                                                                                                                                                                |
-| (none)                  | 503 Service Unavailable | There is a problem with the web service server. You can try this request again later.                                                                                                                                                                                             |
+| Error Code              | HTTP Status             | Description                                                                                                                                                                                                                           |
+| ----------------------- | ----------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| JSON_INVALID            | 400 Bad Request         | Your JSON could not be parsed.                                                                                                                                                                                                        |
+| MAXMIND_ID_INVALID      | 400 Bad Request         | You have supplied an invalid `maxmind_id`. Check your `maxmind_id` to ensure that it is 8 characters in length and made up only of digits and letters. The value is case sensitive. MaxMind issues `maxmind_id` values in upper case. |
+| MINFRAUD_ID_INVALID     | 400 Bad Request         | You have supplied an invalid `minfraud_id`. Check your `minfraud_id` to ensure that it is a valid UUID as returned in the minFraud Score, minFraud Insights, or minFraud Factors response.                                            |
+| PARAMETER_UNKNOWN       | 400 Bad Request         | You have supplied an unknown parameter. Check the keys in your JSON data to ensure that you have not misspelled any of the field names or passed a field name which is not listed in [the available input fields](#request-body).     |
+| NOTES_INVALID           | 400 Bad Request         | Your request includes a `notes` field that exceeds 1000 Unicode characters.                                                                                                                                                           |
+| TAG_REQUIRED            | 400 Bad Request         | Your request does not include a `tag` field.                                                                                                                                                                                          |
+| TAG_INVALID             | 400 Bad Request         | Your request includes an invalid `tag` field.                                                                                                                                                                                         |
+| TRANSACTION_ID_REQUIRED | 400 Bad Request         | Your request must include one of the following fields: `ip_address`, `maxmind_id`, `minfraud_id`, or `transaction_id`.                                                                                                                |
+| IP_ADDRESS_INVALID      | 400 Bad Request         | You have not supplied a valid IPv4 or IPv6 address.                                                                                                                                                                                   |
+| IP_ADDRESS_RESERVED     | 400 Bad Request         | You have supplied an IP address which belongs to a reserved or private range.                                                                                                                                                         |
+| `<FIELD>`\_INVALID      | 400 Bad Request         | A field has the wrong JSON type, for example `TRANSACTION_ID_INVALID`. `<FIELD>` is the field name in upper case.                                                                                                                     |
+| AUTHORIZATION_INVALID   | 401 Unauthorized        | You have supplied an invalid [MaxMind account ID and/or license key](https://www.maxmind.com/en/accounts/current/license-key) in the [Authorization](#authorization-and-security) header.                                             |
+| LICENSE_KEY_REQUIRED    | 401 Unauthorized        | You have not supplied a [MaxMind license key](https://www.maxmind.com/en/accounts/current/license-key) in the [Authorization](#authorization-and-security) header.                                                                    |
+| ACCOUNT_ID_REQUIRED     | 401 Unauthorized        | You have not supplied a [MaxMind account ID](https://support.maxmind.com/knowledge-base/articles/find-your-maxmind-account-id) in the [Authorization](#authorization-and-security) header.                                            |
+| (none)                  | 413 Content Too Large   | This status is returned when the request body is larger than 65,536 bytes. The response does not have a JSON body.                                                                                                                    |
+| (none)                  | 503 Service Unavailable | There is a problem with the web service server. You can try this request again later.                                                                                                                                                 |
 
 ### Example using curl
 
