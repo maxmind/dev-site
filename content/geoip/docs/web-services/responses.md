@@ -18,7 +18,7 @@ outlined below:
 | GeoLite City    | `application/vnd.maxmind.com-city+json; charset=UTF-8; version=2.1`     |
 
 Errors may be returned with the `Content-Type` set to
-`application/vnd.maxmind.com-error+json; charset=UTF-8; version=2.0`. If this is
+`application/vnd.maxmind.com-error+json; charset=UTF-8; version=2.1`. If this is
 the case, then the body of the response contains a JSON document with two keys,
 `code` and `error`. See the [Errors](#errors) section for more details.
 
