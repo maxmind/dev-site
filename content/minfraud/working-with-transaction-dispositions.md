@@ -103,11 +103,12 @@ period has expired. The transactions will be sorted from least recently updated
 to most recently updated, using the earliest updated timestamp (either the
 disposition or note) after the `updates_after` time for each transaction.
 
-At most, 1000 updated transactions will be returned for any single request.
-These will be the earliest updated transactions after the provided
-`updates_after` timestamp, not the most recent. For each repeated request, the
-`updates_after` request value should be replaced with the
-`last_update_timestamp` value returned from the previous request.
+A single request returns up to 1000 updated transactions. It can return more
+when several transactions share the sort timestamp of the last one. These will
+be the earliest updated transactions after the provided `updates_after`
+timestamp, not the most recent. For each repeated request, the `updates_after`
+request value should be replaced with the `last_update_timestamp` value returned
+from the previous request.
 
 Each transaction in the updates array will contain the following keys:
 
