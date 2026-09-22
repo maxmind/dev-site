@@ -126,14 +126,14 @@ object in future versions of this API.
 
 ```json
 {
-  "last_update_timestamp": "2017-03-15T22:06:56.848123Z",
+  "last_update_timestamp": "2017-03-15T22:06:22.492945Z",
   "updates": [
     {
-      "minfraud_id": "deadbeef-0000-0000-0000-000000000000",
-      "action": "accept",
-      "action_last_updated": "2017-03-14T22:04:01.04425Z",
+      "minfraud_id": "deadbeef-0000-0000-0000-000000000003",
+      "action": "manual_review",
+      "action_last_updated": "2017-03-04T20:14:42.757200Z",
       "note": null,
-      "note_last_updated": null
+      "note_last_updated": "2017-03-05T16:52:31.995250Z"
     },
     {
       "minfraud_id": "deadbeef-0000-0000-0000-000000000002",
@@ -143,11 +143,11 @@ object in future versions of this API.
       "note_last_updated": "2017-03-15T11:37:42.83235Z"
     },
     {
-      "minfraud_id": "deadbeef-0000-0000-0000-000000000003",
-      "action": "manual_review",
-      "action_last_updated": "2017-03-04T20:14:42.757200Z",
+      "minfraud_id": "deadbeef-0000-0000-0000-000000000000",
+      "action": "accept",
+      "action_last_updated": "2017-03-14T22:04:01.04425Z",
       "note": null,
-      "note_last_updated": "2017-03-05T16:52:31.995250Z"
+      "note_last_updated": null
     },
     {
       "minfraud_id": "deadbeef-0000-0000-0000-000000000020",
