@@ -19,7 +19,7 @@ const config: HeadersConfig = {
         'Content-Security-Policy': {
           'connect-src': [
             "'self'",
-            'https://status.maxmind.com',
+            'https://0353655954175547.hostedstatus.com',
             'https://www.maxmind.com',
 
             // https://knowledge.hubspot.com/domains-and-urls/ssl-and-domain-security-in-hubspot#content-security-policy
