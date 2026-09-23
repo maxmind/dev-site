@@ -1088,13 +1088,13 @@ minFraud response.
   {{</minfraud-schema-row>}}
 
   {{< minfraud-schema-row key="distance_to_ip_location" type="response" valueType="integer"  insights="true" factors="true" >}}
-  The distance in kilometers from the address to the IP location. We fall back to country or subdivision information if we do not have postal or city information for an IP address, which may lead to inaccurate distance calculations.
+  The distance in kilometers from the address to the IP location. When we cannot locate the address or the IP address more precisely, we use country or subdivision coordinates, which may lead to inaccurate distance calculations.
 
   [Learn how to use the IP geolocation to address distance for risk analysis on our Knowledge Base.](https://support.maxmind.com/knowledge-base/articles/billing-and-shipping-address-risk-data-minfraud#ip-geo-to-address-match)
   {{</minfraud-schema-row>}}
 
   {{< minfraud-schema-row key="distance_to_billing_address" type="response" valueType="integer"  insights="true" factors="true" >}}
-  The distance in kilometers from the shipping address to the billing address. We fall back to country or subdivision information if we do not have postal or city information for an IP address, which may lead to inaccurate distance calculations.
+  The distance in kilometers from the shipping address to the billing address. When we cannot locate an address more precisely, we use country or subdivision coordinates, which may lead to inaccurate distance calculations.
 
   [Learn how to use the shipping to billing address distance for risk analysis on our Knowledge Base.](https://support.maxmind.com/knowledge-base/articles/billing-and-shipping-address-risk-data-minfraud#distance)
   {{</minfraud-schema-row>}}
@@ -1190,7 +1190,7 @@ minFraud response.
   {{</minfraud-schema-row>}}
 
   {{< minfraud-schema-row key="distance_to_ip_location" type="response" valueType="integer"  insights="true" factors="true" >}}
-  The distance in kilometers from the address to the IP location. We fall back to country or subdivision information if we do not have postal or city information for an IP address, which may lead to inaccurate distance calculations.
+  The distance in kilometers from the address to the IP location. When we cannot locate the address or the IP address more precisely, we use country or subdivision coordinates, which may lead to inaccurate distance calculations.
 
   [Learn how to use the IP geolocation to address distance for risk analysis on our Knowledge Base.](https://support.maxmind.com/knowledge-base/articles/billing-and-shipping-address-risk-data-minfraud#ip-geo-to-address-match)
   {{</minfraud-schema-row>}}
