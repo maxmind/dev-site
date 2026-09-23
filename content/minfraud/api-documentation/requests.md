@@ -122,7 +122,6 @@ size will be rejected.
   "event": {
     "party": "customer",
     "shop_id": "s2123",
-    "time": "2012-04-12T23:20:50.52Z",
     "transaction_id": "txn3134133",
     "type": "purchase"
   },
@@ -244,7 +243,6 @@ being scored.
 {
   "party": "customer",
   "shop_id": "s2123",
-  "time": "2012-04-12T23:20:50.52Z",
   "transaction_id": "txn3134133",
   "type": "purchase"
 }
