@@ -1427,7 +1427,7 @@ this array for issues when integrating the web service.
   | `TRACKING_TOKEN_NOT_FOUND`   | The tracking token provided was not found in our system.                                                                                                                                                                                                  |
   {{</minfraud-schema-row>}}
 
-  {{< minfraud-schema-row key="warning" type="response" valueType="string" valueTypeNote="max length: 255" score="true" insights="true" factors="true" >}}
+  {{< minfraud-schema-row key="warning" type="response" valueType="string" score="true" insights="true" factors="true" >}}
   This field provides a human-readable explanation of the warning. The description may change at any time and should not be matched against.
   {{</minfraud-schema-row>}}
 
