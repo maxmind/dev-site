@@ -1261,7 +1261,7 @@ then this object will not be present in the response.
 ```json
 {
   "action": "accept",
-  "reason": "default",
+  "reason": "custom_rule",
   "rule_label": "my_custom_rule"
 }
 ```
@@ -1445,7 +1445,7 @@ Factors services, and a full example of the JSON body document for an error.
 {
   "disposition": {
     "action": "accept",
-    "reason": "default",
+    "reason": "custom_rule",
     "rule_label": "my_custom_rule"
   },
   "funds_remaining": 25,
@@ -1471,7 +1471,7 @@ Factors services, and a full example of the JSON body document for an error.
 {
   "disposition": {
     "action": "accept",
-    "reason": "default",
+    "reason": "custom_rule",
     "rule_label": "my_custom_rule"
   },
   "funds_remaining": 25,
@@ -1719,7 +1719,7 @@ Factors services, and a full example of the JSON body document for an error.
 {
   "disposition": {
     "action": "accept",
-    "reason": "default",
+    "reason": "custom_rule",
     "rule_label": "my_custom_rule"
   },
   "funds_remaining": 25,
