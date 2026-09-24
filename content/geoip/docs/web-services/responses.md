@@ -206,6 +206,9 @@ to.
 
 The data returned in the document will be in UTF-8 encoding.
 
+The examples show available fields using illustrative values. They do not
+describe a single real lookup.
+
 For full examples of response bodies, select one of the following:
 
 - [GeoIP Country Body Example](#geoip-country-body-example)

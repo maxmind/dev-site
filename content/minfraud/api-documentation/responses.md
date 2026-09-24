@@ -1434,6 +1434,9 @@ this array for issues when integrating the web service.
 
 ## Example Response Bodies
 
+The examples show available fields using illustrative values. They do not
+describe a single real transaction.
+
 Each service returns data as a JSON document. The document that is returned
 always consists of an object (aka map or hash). Below are full examples of the
 JSON body document for the minFraud Score, minFraud Insights, and minFraud
