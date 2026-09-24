@@ -102,8 +102,8 @@ The HTTP status will be a `400 Bad Request`.
 
 ### Response Body (for accounts without permission)
 
-If the account does not have permission to use this service, the server returns
-a JSON object with the following structure:
+If the account that owns the license key does not have permission to use this
+service, the server returns a JSON object with the following structure:
 
 ```json
 {
@@ -112,7 +112,9 @@ a JSON object with the following structure:
 }
 ```
 
-The HTTP status will be `403 Forbidden`.
+The HTTP status will be `403 Forbidden`. This response means that MaxMind
+recognizes the license key. An unknown key gets a `401 Unauthorized` response
+instead.
 
 ### Response Body (for large requests)
 
