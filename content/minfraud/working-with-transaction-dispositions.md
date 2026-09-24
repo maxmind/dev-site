@@ -113,6 +113,11 @@ with the same `updates_after` value to check for more. In that case,
 `last_update_timestamp` is not the time of an update, so do not use it as
 `updates_after`.
 
+A transaction can appear in more than one response. For example, if its note
+changes after its disposition, it appears once for the disposition update and
+again for the note update. Process updates so that handling one again has no
+further effect.
+
 Each transaction in the updates array will contain the following keys:
 
 | Key                   | Value Type | Description                                                                                                                                                                                                                                                                                                       |
