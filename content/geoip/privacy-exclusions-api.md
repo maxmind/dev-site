@@ -85,7 +85,8 @@ a JSON object including the `exclusions` key. Additional keys may be added in
 the future.
 
 The value for the `exclusions` key is an array of objects, each representing one
-exclusion request.
+excluded network. One exclusion request for an IPv4 network appears as three
+objects, as described below, so do not count the objects as separate requests.
 
 Each IPv4 network appears three times in the array: as the IPv4 network, as the
 IPv4-mapped IPv6 network (in `::ffff:0:0/96`), and as the 6to4 IPv6 network (in
