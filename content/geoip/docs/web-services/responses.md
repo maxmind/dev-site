@@ -204,6 +204,9 @@ you are using. If a key maps to an undefined or empty value, it is not included
 in the JSON object. This applies both to top-level keys and the objects they map
 to.
 
+Successful GeoIP and GeoLite responses always include the `traits` object with
+`ip_address` and `network`. Other fields may be omitted as described above.
+
 The data returned in the document will be in UTF-8 encoding.
 
 The examples show available fields using illustrative values. They do not
