@@ -109,7 +109,9 @@ updated transactions, but do not rely on this limit. For each repeated request,
 the `updates_after` request value should be replaced with the
 `last_update_timestamp` value returned from the previous request. When `updates`
 is empty, you have received all of the updates so far. Send a new request later
-to check for more.
+with the same `updates_after` value to check for more. In that case,
+`last_update_timestamp` is not the time of an update, so do not use it as
+`updates_after`.
 
 Each transaction in the updates array will contain the following keys:
 
