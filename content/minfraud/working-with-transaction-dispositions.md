@@ -218,6 +218,7 @@ to handle any valid HTTP 4xx or 5xx status code.
 | LICENSE_KEY_REQUIRED   | 401 Unauthorized          | You have not supplied a [MaxMind license key](https://www.maxmind.com/en/accounts/current/license-key) in the [Authorization](#authorization-and-security) header.                         |
 | ACCOUNT_ID_REQUIRED    | 401 Unauthorized          | You have not supplied a [MaxMind account ID](https://support.maxmind.com/knowledge-base/articles/find-your-maxmind-account-id) in the [Authorization](#authorization-and-security) header. |
 | PERMISSION_REQUIRED    | 403 Forbidden             | You do not have permission to use the service. Please [contact our support team](https://support.maxmind.com/knowledge-base) for more information.                                         |
+| (none)                 | 429 Too Many Requests     | MaxMind rate-limited the request, usually because of excessive earlier error responses. The response may not include a JSON body.                                                          |
 | SERVER_ERROR           | 500 Internal Server Error | There was an error when processing this request.                                                                                                                                           |
 | (none)                 | 503 Service Unavailable   | There is a problem with the web service server. You can try this request again later.                                                                                                      |
 
