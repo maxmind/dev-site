@@ -353,10 +353,11 @@ any given code will never change, though codes can be added or removed. The
 `error` field is a human-readable description of the error and may change at any
 time.
 
-Not all errors include a JSON body. Many `5xx` errors, which typically happen
-outside of our web service request handling code, do not include one. You should
-check the `Content-Type` of an error response before attempting to decode the
-body as JSON.
+Not all errors include a JSON body. Some `4xx` errors, such as a `403` for a
+plain HTTP request, and many `5xx` errors, which typically happen outside of our
+web service request handling code, do not include one. You should check the
+`Content-Type` of an error response before attempting to decode the body as
+JSON.
 
 In addition to the errors documented below, client code should also be prepared
 to handle any valid HTTP 4xx or 5xx status code.
