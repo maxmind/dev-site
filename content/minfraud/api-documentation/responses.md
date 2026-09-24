@@ -863,7 +863,7 @@ associated with the IP address passed in the request.
 {
   "domain": {
     "classification": "business",
-    "first_seen": "2015-01-20",
+    "first_seen": "2019-01-20",
     "risk": 1.23,
     "visit": {
       "has_redirect": true,
@@ -924,7 +924,7 @@ This is a sub-object of `email` that contains information related to the domain.
 ```json
 {
   "classification": "business",
-  "first_seen": "2015-01-20",
+  "first_seen": "2019-01-20",
   "risk": 1.23,
   "visit": {
     "has_redirect": true,
@@ -1680,7 +1680,7 @@ Factors services, and a full example of the JSON body document for an error.
   "email": {
     "domain": {
       "classification": "business",
-      "first_seen": "2015-01-20",
+      "first_seen": "2019-01-20",
       "risk": 1.23,
       "visit": {
         "has_redirect": true,
@@ -1928,7 +1928,7 @@ Factors services, and a full example of the JSON body document for an error.
   "email": {
     "domain": {
       "classification": "business",
-      "first_seen": "2015-01-20",
+      "first_seen": "2019-01-20",
       "risk": 1.23,
       "visit": {
         "has_redirect": true,
