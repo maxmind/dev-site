@@ -553,7 +553,6 @@ public class MinFraudExample
             {
                 TransactionId = "txn3134133",
                 ShopId = "s2123",
-                Time = new DateTimeOffset(2014, 4, 12, 23, 20, 50, 52, new TimeSpan(0)),
                 Type = EventType.Purchase
             },
             Account = new Account
@@ -910,7 +909,6 @@ $request = $mf->withDevice(
 )->withEvent(
     transactionId: 'txn3134133',
     shopId: 's2123',
-    time: '2012-04-12T23:20:50+00:00',
     type: 'purchase'
 )->withAccount(
     userId: 3132,
@@ -1028,7 +1026,6 @@ request = {
         'shop_id': 's2123',
         'type': 'purchase',
         'transaction_id': 'txn3134133',
-        'time': '2014-04-12T23:20:50.052+00:00'
     },
     'account': {
         'user_id': '3132',
@@ -1152,7 +1149,6 @@ assessment = Minfraud::Assessments.new(
   event: {
     transaction_id: 'txn3134133',
     shop_id:        's2123',
-    time:           '2012-04-12T23:20:50+00:00',
     type:           :purchase,
   },
   account: {
