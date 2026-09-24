@@ -172,6 +172,9 @@ to handle any valid HTTP `4xx` or `5xx` status code.
 </div>
 {{</ rawhtml >}}
 
+For GeoLite Country and GeoLite City, `INSUFFICIENT_FUNDS` (HTTP 402) means
+that the account has reached its daily query limit.
+
 ### Rate-limiting
 
 If customer requests result in excessive errors, MaxMind may impose rate limits
