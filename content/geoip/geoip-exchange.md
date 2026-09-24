@@ -23,6 +23,12 @@ The download service is only available via HTTPS. Always use HTTPS, so that your
 credentials are never transmitted unencrypted. If you attempt to access it via
 HTTP, you will receive a `403 Forbidden` HTTP response.
 
+### Rate-limiting
+
+A `GET` or `HEAD` request may receive a `429 Too Many Requests` response if
+MaxMind rate-limits requests, usually because of excessive earlier error
+responses. The response may not include a JSON body.
+
 ### Download best practices
 
 At a high level, the best practice is to write an automated script that
