@@ -90,8 +90,8 @@ objects, as described below, so do not count the objects as separate requests.
 
 Each IPv4 network appears three times in the array: as the IPv4 network, as the
 IPv4-mapped IPv6 network (in `::ffff:0:0/96`), and as the 6to4 IPv6 network (in
-`2002::/16`). For example, `96.69.127.3/32` also appears as
-`::ffff:96.69.127.3/128` and `2002:6045:7f03::/48`. You should exclude all three
+`2002::/16`). For example, `203.0.113.3/32` also appears as
+`::ffff:203.0.113.3/128` and `2002:cb00:7103::/48`. You should exclude all three
 forms.
 
 Each exclusion object in the `exclusions` array includes the following keys:
