@@ -79,7 +79,9 @@ window.addEventListener('DOMContentLoaded', () => {
   };
 
   const getSystemStatus = () =>
-    fetch('https://status.maxmind.com/1.0/status/53fcfbb2ac0c957972000235')
+    fetch(
+      'https://0353655954175547.hostedstatus.com/1.0/status/53fcfbb2ac0c957972000235'
+    )
       .then((res) => {
         if (res.ok) {
           return res.json();
