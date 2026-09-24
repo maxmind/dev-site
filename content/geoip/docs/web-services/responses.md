@@ -73,6 +73,14 @@ to handle any valid HTTP `4xx` or `5xx` status code.
         </td>
       </tr>
       <tr>
+        <td><code>SERVICE_INVALID</code></td>
+        <td>400 Bad Request</td>
+        <td>
+          The requested service is not available on this host. Only Country and
+          City are available on <code>geolite.info</code>.
+        </td>
+      </tr>
+      <tr>
         <td><code>AUTHORIZATION_INVALID</code></td>
         <td>401 Unauthorized</td>
         <td>
