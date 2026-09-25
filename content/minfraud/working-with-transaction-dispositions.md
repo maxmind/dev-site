@@ -28,6 +28,11 @@ propagate to your own system.**
 To make a disposition request, you need the request URI and parameters, and
 [your MaxMind account ID and license key](https://www.maxmind.com/en/accounts/current/license-key).
 
+For a machine-readable description of the Dispositions API's request parameters
+and responses, see the
+[minFraud OpenAPI specification](https://github.com/maxmind/openapi/blob/main/bundled/minfraud.yaml)
+([raw file](https://raw.githubusercontent.com/maxmind/openapi/main/bundled/minfraud.yaml)).
+
 ### Request URI and parameters
 
 API calls should be made with an HTTP GET request to

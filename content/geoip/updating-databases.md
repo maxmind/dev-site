@@ -134,6 +134,11 @@ servers can make HTTPS connections to the following hostname:
 This is only recommended for systems unable to use GeoIP Update or for clients
 using the CSV-format databases.
 
+The
+[Downloads OpenAPI specification](https://github.com/maxmind/openapi/blob/main/bundled/downloads.yaml)
+([raw file](https://raw.githubusercontent.com/maxmind/openapi/main/bundled/downloads.yaml))
+describes the database download endpoints and their parameters.
+
 ### Download best practices
 
 At a high level, the best practice is to write an automated script that

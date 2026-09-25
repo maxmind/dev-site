@@ -8,6 +8,11 @@ API provides a simple way to retrieve
 [privacy exclusion requests](https://www.maxmind.com/en/accounts/current/do-not-sell-requests)
 in an automated fashion.
 
+You can use the
+[Privacy Exclusions OpenAPI specification](https://github.com/maxmind/openapi/blob/main/bundled/privacy-exclusions.yaml)
+([raw file](https://raw.githubusercontent.com/maxmind/openapi/main/bundled/privacy-exclusions.yaml))
+with API tools and code generators.
+
 ## Request
 
 ### Request URI

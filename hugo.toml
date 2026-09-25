@@ -280,6 +280,10 @@ title = 'MaxMind'
     url = 'https://maxmind.github.io/MaxMind-DB/'
     weight = 30
   [[menus.general]]
+    name = 'OpenAPI Specs'
+    url = 'https://github.com/maxmind/openapi'
+    weight = 35
+  [[menus.general]]
     name = 'Knowledge Base'
     url = 'https://support.maxmind.com/knowledge-base'
     weight = 40

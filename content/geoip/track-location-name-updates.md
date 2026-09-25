@@ -50,6 +50,12 @@ section of your account portal. The report is available alongside your database
 downloads and can be downloaded automatically. To download it manually, click
 the "Download Locations Diff Report" link next to the database.
 
+The
+[Downloads OpenAPI specification](https://github.com/maxmind/openapi/blob/main/bundled/downloads.yaml)
+([raw file](https://raw.githubusercontent.com/maxmind/openapi/main/bundled/downloads.yaml))
+describes the download endpoint, including the parameters for location name diff
+reports.
+
 ### Download best practices
 
 At a high level, the best practice is to write an automated script that
