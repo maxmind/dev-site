@@ -17,6 +17,11 @@ is [trufflehog](https://github.com/trufflesecurity/trufflehog). Using such a
 tool, you can prevent license keys accidentally ending up in unexpected places
 and enhance the security of your applications.
 
+You can use the
+[License Key Validation OpenAPI specification](https://github.com/maxmind/openapi/blob/main/bundled/license-key-validation.yaml)
+([raw file](https://raw.githubusercontent.com/maxmind/openapi/main/bundled/license-key-validation.yaml))
+with API tools and code generators.
+
 ## Request
 
 ### Request URI

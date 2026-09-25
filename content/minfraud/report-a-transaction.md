@@ -294,6 +294,11 @@ The URI for this service is
 The `minfraud.maxmind.com` hostname automatically picks the data center
 geographically closest to you.
 
+For a machine-readable description of the Report Transaction request fields and
+responses, see the
+[minFraud OpenAPI specification](https://github.com/maxmind/openapi/blob/main/bundled/minfraud.yaml)
+([raw file](https://raw.githubusercontent.com/maxmind/openapi/main/bundled/minfraud.yaml)).
+
 ### Authorization and Security
 
 The HTTP Authorization header is required for authorization. The username is

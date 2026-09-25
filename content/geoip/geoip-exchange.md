@@ -23,6 +23,11 @@ The download service is only available via HTTPS. Always use HTTPS, so that your
 credentials are never transmitted unencrypted. If you attempt to access it via
 HTTP, you will receive a `403 Forbidden` HTTP response.
 
+The
+[Downloads OpenAPI specification](https://github.com/maxmind/openapi/blob/main/bundled/downloads.yaml)
+([raw file](https://raw.githubusercontent.com/maxmind/openapi/main/bundled/downloads.yaml))
+describes the geofeed report download endpoints and their parameters.
+
 ### Rate-limiting
 
 A `GET` or `HEAD` request may receive a `429 Too Many Requests` response if

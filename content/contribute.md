@@ -15,6 +15,7 @@ familiarize yourself with the relevant official APIs and specifications:
 
 - [minFraud service REST API](/minfraud/api-documentation/)
 - [GeoIP and GeoLite service REST API](/geoip/docs/web-services)
+- [OpenAPI specifications for MaxMind web services](https://github.com/maxmind/openapi)
 - [GeoIP and GeoLite MMDB format specification](https://github.com/maxmind/MaxMind-DB/blob/main/MaxMind-DB-spec.md)
 
 You may also want to look at some of the unofficial APIs that we’ve featured.

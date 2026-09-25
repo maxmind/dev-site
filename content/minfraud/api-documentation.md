@@ -18,6 +18,15 @@ To better understand the differences between each minFraud service, review our
 and the
 [API response body documentation](/minfraud/api-documentation/responses#response-body).
 
+## OpenAPI Specification
+
+The
+[minFraud OpenAPI specification](https://github.com/maxmind/openapi/blob/main/bundled/minfraud.yaml)
+([raw file](https://raw.githubusercontent.com/maxmind/openapi/main/bundled/minfraud.yaml))
+describes the minFraud web services, including transaction reporting,
+dispositions, and alert webhooks. Use the raw file with API tools and code
+generators.
+
 ## Client APIs
 
 {{< snippet "snippets/minfraud-client-apis.md" >}}

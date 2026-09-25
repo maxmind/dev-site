@@ -17,6 +17,13 @@ service, review our
 [minFraud Service Plans and Pricing page](https://www.maxmind.com/en/solutions/fraud-prevention/plans-pricing)
 and the [Response Body section](/geoip/docs/web-services/responses#response).
 
+## OpenAPI Specification
+
+The
+[GeoIP and GeoLite OpenAPI specification](https://github.com/maxmind/openapi/blob/main/bundled/geoip.yaml)
+([raw file](https://raw.githubusercontent.com/maxmind/openapi/main/bundled/geoip.yaml))
+describes the web services. Use the raw file with API tools and code generators.
+
 ## Client APIs
 
 ### Official Client APIs

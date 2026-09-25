@@ -29,6 +29,11 @@ settings through the
 The alert webhook URL should be an HTTPS endpoint that accepts `GET` requests.
 The User-Agent of the minFraud Alert service is `MaxMind MinFraud Alert Robot`.
 
+For a machine-readable description of the webhook's headers and parameters, see
+the
+[minFraud OpenAPI specification](https://github.com/maxmind/openapi/blob/main/bundled/minfraud.yaml)
+([raw file](https://raw.githubusercontent.com/maxmind/openapi/main/bundled/minfraud.yaml)).
+
 #### Sample minFraud Alert webhook request
 
 ```html
