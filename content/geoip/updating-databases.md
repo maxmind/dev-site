@@ -260,7 +260,8 @@ notify customers by [posting a release note](/geoip/release-notes).
 
 _MaxMind reserves the right to
 [limit the number of downloads](https://support.maxmind.com/knowledge-base/articles/download-and-update-maxmind-databases)
-made within a limited period of time._
+made within a limited period of time._ A request that exceeds the account's
+download limit receives a `429 Too Many Requests` response.
 
 ## Rate-limiting
 
@@ -268,4 +269,6 @@ Customer traffic may occasionally receive an error status from MaxMind web
 services. This can be due to, for example, using invalid credentials or
 attempting to download a database with a lapsed subscription. If these
 unsuccessful requests are deemed excessive, MaxMind may choose to rate-limit
-these requests for a period of time.
+these requests for a period of time. Rate-limited requests receive a
+`429 Too Many Requests` response. This applies to both `GET` and `HEAD`
+requests. The response may not include a JSON body.

@@ -64,10 +64,11 @@ of any given code will never change, though codes can be added or removed. The
 `error` field is a human-readable description of the error and may change at any
 time.
 
-Not all errors include a JSON body. An error in content negotiation will not
-include a body, nor will many `5xx` errors, which typically happen outside of
-our web service request handling code. You should check the `Content-Type`
-header of an error response before attempting to decode the body as JSON.
+Not all errors include a JSON body. Some `4xx` errors, such as a `403` for a
+plain HTTP request, and many `5xx` errors, which typically happen outside of our
+web service request handling code, do not include one. You
+should check the `Content-Type` header of an error response before attempting
+to decode the body as JSON.
 
 In addition to the errors documented below, client code should also be prepared
 to handle any valid HTTP `4xx` or `5xx` status code.
@@ -94,6 +95,19 @@ to handle any valid HTTP `4xx` or `5xx` status code.
         <td>400 Bad Request</td>
         <td>
           The request body is valid JSON but contains no valid input values.
+        </td>
+      </tr>
+      <tr>
+        <td><code>BAD_REQUEST</code></td>
+        <td>400 Bad Request</td>
+        <td>There was a problem reading or decoding the request.</td>
+      </tr>
+      <tr>
+        <td><code>REQUEST_TOO_BIG</code></td>
+        <td>400 Bad Request</td>
+        <td>
+          The request body is too large. Keep the request body at 20,000 bytes
+          or less to avoid both this error and the <code>413</code> response.
         </td>
       </tr>
       <tr>
@@ -170,23 +184,10 @@ to handle any valid HTTP `4xx` or `5xx` status code.
       </tr>
       <tr>
         <td>(none)</td>
-        <td>403 Forbidden</td>
+        <td>413 Content Too Large</td>
         <td>
           This status is returned when the request body is larger than 20,000
-          bytes.
-        </td>
-      </tr>
-      <tr>
-        <td>(none)</td>
-        <td>415 Unsupported Media Type</td>
-        <td>
-          Your request included an <code>Accept</code> or
-          <code>Content-Type</code> header that is not supported. For
-          <code>GET</code> requests, this means the web service cannot return
-          content of the type specified in the <code>Accept</code> header. For
-          <code>PUT</code> and <code>POST</code> requests, this means the web
-          service cannot parse a request body of the type specified in the
-          <code>Content-Type</code> header.
+          bytes. The response does not have a JSON body.
         </td>
       </tr>
       <tr>
@@ -197,6 +198,11 @@ to handle any valid HTTP `4xx` or `5xx` status code.
           This is likely due to excessive previous requests resulting in error
           responses.
         </td>
+      </tr>
+      <tr>
+        <td><code>SERVER_ERROR</code></td>
+        <td>500 Internal Server Error</td>
+        <td>There was an error when processing this request.</td>
       </tr>
       <tr>
         <td>(none)</td>
@@ -857,7 +863,7 @@ associated with the IP address passed in the request.
 {
   "domain": {
     "classification": "business",
-    "first_seen": "2015-01-20",
+    "first_seen": "2019-01-20",
     "risk": 1.23,
     "visit": {
       "has_redirect": true,
@@ -918,7 +924,7 @@ This is a sub-object of `email` that contains information related to the domain.
 ```json
 {
   "classification": "business",
-  "first_seen": "2015-01-20",
+  "first_seen": "2019-01-20",
   "risk": 1.23,
   "visit": {
     "has_redirect": true,
@@ -1083,13 +1089,13 @@ minFraud response.
   {{</minfraud-schema-row>}}
 
   {{< minfraud-schema-row key="distance_to_ip_location" type="response" valueType="integer"  insights="true" factors="true" >}}
-  The distance in kilometers from the address to the IP location. We fall back to country or subdivision information if we do not have postal or city information for an IP address, which may lead to inaccurate distance calculations.
+  The distance in kilometers from the address to the IP location. When we cannot locate the address or the IP address more precisely, we use country or subdivision coordinates, which may lead to inaccurate distance calculations.
 
   [Learn how to use the IP geolocation to address distance for risk analysis on our Knowledge Base.](https://support.maxmind.com/knowledge-base/articles/billing-and-shipping-address-risk-data-minfraud#ip-geo-to-address-match)
   {{</minfraud-schema-row>}}
 
   {{< minfraud-schema-row key="distance_to_billing_address" type="response" valueType="integer"  insights="true" factors="true" >}}
-  The distance in kilometers from the shipping address to the billing address. We fall back to country or subdivision information if we do not have postal or city information for an IP address, which may lead to inaccurate distance calculations.
+  The distance in kilometers from the shipping address to the billing address. When we cannot locate an address more precisely, we use country or subdivision coordinates, which may lead to inaccurate distance calculations.
 
   [Learn how to use the shipping to billing address distance for risk analysis on our Knowledge Base.](https://support.maxmind.com/knowledge-base/articles/billing-and-shipping-address-risk-data-minfraud#distance)
   {{</minfraud-schema-row>}}
@@ -1185,7 +1191,7 @@ minFraud response.
   {{</minfraud-schema-row>}}
 
   {{< minfraud-schema-row key="distance_to_ip_location" type="response" valueType="integer"  insights="true" factors="true" >}}
-  The distance in kilometers from the address to the IP location. We fall back to country or subdivision information if we do not have postal or city information for an IP address, which may lead to inaccurate distance calculations.
+  The distance in kilometers from the address to the IP location. When we cannot locate the address or the IP address more precisely, we use country or subdivision coordinates, which may lead to inaccurate distance calculations.
 
   [Learn how to use the IP geolocation to address distance for risk analysis on our Knowledge Base.](https://support.maxmind.com/knowledge-base/articles/billing-and-shipping-address-risk-data-minfraud#ip-geo-to-address-match)
   {{</minfraud-schema-row>}}
@@ -1255,7 +1261,7 @@ then this object will not be present in the response.
 ```json
 {
   "action": "accept",
-  "reason": "default",
+  "reason": "custom_rule",
   "rule_label": "my_custom_rule"
 }
 ```
@@ -1313,20 +1319,11 @@ present in the response.
     ]
   },
   {
-    "multiplier": 1.8,
-    "reasons": [
-      {
-        "code": "TIME_OF_DAY",
-        "reason": "The local time of day of the request raised the overall risk score"
-      }
-    ]
-  },
-  {
     "multiplier": 1.6,
     "reasons": [
       {
-        "code": "EMAIL_DOMAIN_NEW",
-        "reason": "The email domain being recently seen for the first time in the minFraud network raised the overall risk score"
+        "code": "ORG_DISTANCE_RISK",
+        "reason": "The risk of the ISP combined with the distance between the billing address and IP address location raised the overall risk score"
       }
     ]
   },
@@ -1422,7 +1419,7 @@ this array for issues when integrating the web service.
   | `TRACKING_TOKEN_NOT_FOUND`   | The tracking token provided was not found in our system.                                                                                                                                                                                                  |
   {{</minfraud-schema-row>}}
 
-  {{< minfraud-schema-row key="warning" type="response" valueType="string" valueTypeNote="max length: 255" score="true" insights="true" factors="true" >}}
+  {{< minfraud-schema-row key="warning" type="response" valueType="string" score="true" insights="true" factors="true" >}}
   This field provides a human-readable explanation of the warning. The description may change at any time and should not be matched against.
   {{</minfraud-schema-row>}}
 
@@ -1437,6 +1434,9 @@ this array for issues when integrating the web service.
 
 ## Example Response Bodies
 
+The examples show available fields using illustrative values. They do not
+describe a single real transaction.
+
 Each service returns data as a JSON document. The document that is returned
 always consists of an object (aka map or hash). Below are full examples of the
 JSON body document for the minFraud Score, minFraud Insights, and minFraud
@@ -1448,7 +1448,7 @@ Factors services, and a full example of the JSON body document for an error.
 {
   "disposition": {
     "action": "accept",
-    "reason": "default",
+    "reason": "custom_rule",
     "rule_label": "my_custom_rule"
   },
   "funds_remaining": 25,
@@ -1474,7 +1474,7 @@ Factors services, and a full example of the JSON body document for an error.
 {
   "disposition": {
     "action": "accept",
-    "reason": "default",
+    "reason": "custom_rule",
     "rule_label": "my_custom_rule"
   },
   "funds_remaining": 25,
@@ -1683,7 +1683,7 @@ Factors services, and a full example of the JSON body document for an error.
   "email": {
     "domain": {
       "classification": "business",
-      "first_seen": "2015-01-20",
+      "first_seen": "2019-01-20",
       "risk": 1.23,
       "visit": {
         "has_redirect": true,
@@ -1722,7 +1722,7 @@ Factors services, and a full example of the JSON body document for an error.
 {
   "disposition": {
     "action": "accept",
-    "reason": "default",
+    "reason": "custom_rule",
     "rule_label": "my_custom_rule"
   },
   "funds_remaining": 25,
@@ -1931,7 +1931,7 @@ Factors services, and a full example of the JSON body document for an error.
   "email": {
     "domain": {
       "classification": "business",
-      "first_seen": "2015-01-20",
+      "first_seen": "2019-01-20",
       "risk": 1.23,
       "visit": {
         "has_redirect": true,
@@ -1967,16 +1967,7 @@ Factors services, and a full example of the JSON body document for an error.
       "reasons": [
         {
           "code": "ANONYMOUS_IP",
-          "reason": "Risk due to IP being an Anonymous IP"
-        }
-      ]
-    },
-    {
-      "multiplier": 1.8,
-      "reasons": [
-        {
-          "code": "TIME_OF_DAY",
-          "reason": "Risk due to local time of day"
+          "reason": "The Anonymous IP address raised the overall risk score"
         }
       ]
     },
@@ -1984,8 +1975,8 @@ Factors services, and a full example of the JSON body document for an error.
       "multiplier": 1.6,
       "reasons": [
         {
-          "reason": "Riskiness of newly-sighted email domain",
-          "code": "EMAIL_DOMAIN_NEW"
+          "code": "ORG_DISTANCE_RISK",
+          "reason": "The risk of the ISP combined with the distance between the billing address and IP address location raised the overall risk score"
         }
       ]
     },
@@ -1993,8 +1984,8 @@ Factors services, and a full example of the JSON body document for an error.
       "multiplier": 0.34,
       "reasons": [
         {
-          "code": "EMAIL_ADDRESS_NEW",
-          "reason": "Riskiness of newly-sighted email address"
+          "code": "PHONE_ACTIVITY",
+          "reason": "minFraud network activity of the phone number lowered the overall risk score"
         }
       ]
     }

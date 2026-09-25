@@ -37,6 +37,9 @@ We require a URL parameter called `updates_after` with an RFC 3339 timestamp
 value. This value is an exclusive lower bound for the updates; only updates made
 after this time will be returned.
 
+URL-encode the value. If it has a `+` offset, send it as `%2B`, or the service
+reads the `+` as a space and rejects the timestamp.
+
 For example, to get updates after March 15, 2021 at 9 AM UTC, your request would
 look like:
 `https://minfraud.maxmind.com/minfraud/disposition/v1.0/updates?updates_after=2021-03-15T09:00:00.00000Z`
@@ -48,29 +51,21 @@ your
 [MaxMind account ID](https://www.maxmind.com/en/accounts/current/license-key).
 The password is your
 [MaxMind license key](https://www.maxmind.com/en/accounts/current/license-key).
-The authorization realm is `minfraud`.
+The authorization realm is `minfraud-disposition`.
 
 {{< alert warning >}} You must be approved for a trial or purchase credit for
 use with our web services in order to receive an account ID and license key.
 {{</ alert >}}
 
 We use basic HTTP authentication. The APIs which require authentication are only
-available via HTTPS. The credentials are never transmitted unencrypted. If you
-attempt to access this service via HTTP, you will receive a `403 Forbidden` HTTP
-response.
+available via HTTPS. Always use HTTPS, so that your credentials are never
+transmitted unencrypted. If you attempt to access this service via HTTP, you
+will receive a `403 Forbidden` HTTP response.
 
 ### Request headers
 
-The `Accept` header for a request is entirely optional. If you do include one,
-you must accept one of the following:
-
-- `application/json`
-- `application/vnd.maxmind.com-disposition-updates+json`
-- `application/vnd.maxmind.com-disposition-updates+json; charset=UTF-8; version=1.0`
-
-If you set the `Accept-Charset` header in your client code, you must accept the
-`UTF-8` character set. If you don't, you will receive a `406 Not Acceptable`
-response.
+The `Accept` and `Accept-Charset` headers are optional. The service ignores them
+and always returns JSON encoded as UTF-8.
 
 ### Command Line Example Using curl
 
@@ -108,21 +103,30 @@ period has expired. The transactions will be sorted from least recently updated
 to most recently updated, using the earliest updated timestamp (either the
 disposition or note) after the `updates_after` time for each transaction.
 
-At most, 1000 updated transactions will be returned for any single request.
-These will be the earliest updated transactions after the provided
-`updates_after` timestamp, not the most recent. For each repeated request, the
-`updates_after` request value should be replaced with the
-`last_update_timestamp` value returned from the previous request.
+A response holds the earliest updated transactions after the provided
+`updates_after` timestamp, not the most recent. It usually holds at most 1000
+updated transactions, but do not rely on this limit. For each repeated request,
+the `updates_after` request value should be replaced with the
+`last_update_timestamp` value returned from the previous request. When `updates`
+is empty, you have received all of the updates so far. Send a new request later
+with the same `updates_after` value to check for more. In that case,
+`last_update_timestamp` is not the time of an update, so do not use it as
+`updates_after`.
+
+A transaction can appear in more than one response. For example, if its note
+changes after its disposition, it appears once for the disposition update and
+again for the note update. Process updates so that handling one again has no
+further effect.
 
 Each transaction in the updates array will contain the following keys:
 
-| Key                   | Value Type | Description                                                                                                                                                                                                                               |
-| --------------------- | ---------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `minfraud_id`         | UUID       | The transaction’s unique identifier.                                                                                                                                                                                                      |
-| `action`              | String     | The most recent transaction disposition action. In addition to `accept`, `reject`, and `manual_review`, you may also see `expired_review`, which indicates the manual review period (1 week) expired before the transaction was reviewed. |
-| `action_last_updated` | Timestamp  | The date and time the disposition action was last updated, in RFC 3339 format with microsecond precision.                                                                                                                                 |
-| `note`                | String     | The most recent transaction note. Limited to 500 characters. Will be `null` if not currently set.                                                                                                                                         |
-| `note_last_updated`   | Timestamp  | The date and time the note was last updated, in RFC 3339 format with microsecond precision. If a note has never been set, this will be `null`.                                                                                            |
+| Key                   | Value Type | Description                                                                                                                                                                                                                                                                                                       |
+| --------------------- | ---------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `minfraud_id`         | UUID       | The transaction’s unique identifier.                                                                                                                                                                                                                                                                              |
+| `action`              | String     | The most recent transaction disposition action. In addition to `accept`, `reject`, and `manual_review`, you may also see `expired_review`, which indicates the manual review period (1 week) expired before the transaction was reviewed. Will be `null` if the transaction has a note update but no disposition. |
+| `action_last_updated` | Timestamp  | The date and time the disposition action was last updated, in RFC 3339 format with microsecond precision. Will be `null` if the transaction has no disposition.                                                                                                                                                   |
+| `note`                | String     | The most recent transaction note. Limited to 500 characters. Will be `null` if not currently set.                                                                                                                                                                                                                 |
+| `note_last_updated`   | Timestamp  | The date and time the note was last updated, in RFC 3339 format with microsecond precision. If a note has never been set, this will be `null`.                                                                                                                                                                    |
 
 As a note to implementers, we are considering adding additional keys to this
 object in future versions of this API.
@@ -131,45 +135,45 @@ object in future versions of this API.
 
 ```json
 {
-  "last_update_timestamp": "2017-03-15T22:06:56.848123Z",
+  "last_update_timestamp": "2017-03-15T22:06:22.492945Z",
   "updates": [
     {
-      "minfraud_id": "deadbeef-0000-0000-0000-00000000",
-      "action": "accept",
-      "action_last_updated": "2017-03-14T22:04:01.04425Z",
-      "note": null,
-      "note_last_updated": null
-    },
-    {
-      "minfraud_id": "deadbeef-0000-0000-0000-00000002",
-      "action": "reject",
-      "action_last_updated": "2017-03-14T21:39:57.854300Z",
-      "note": null,
-      "note_last_updated": "2017-03-15T11:37:42.83235Z"
-    },
-    {
-      "minfraud_id": "deadbeef-0000-0000-0000-00000003",
+      "minfraud_id": "deadbeef-0000-0000-0000-000000000003",
       "action": "manual_review",
       "action_last_updated": "2017-03-04T20:14:42.757200Z",
       "note": null,
       "note_last_updated": "2017-03-05T16:52:31.995250Z"
     },
     {
-      "minfraud_id": "deadbeef-0000-0000-0000-00000020",
+      "minfraud_id": "deadbeef-0000-0000-0000-000000000002",
+      "action": "reject",
+      "action_last_updated": "2017-03-14T21:39:57.854300Z",
+      "note": null,
+      "note_last_updated": "2017-03-15T11:37:42.83235Z"
+    },
+    {
+      "minfraud_id": "deadbeef-0000-0000-0000-000000000000",
+      "action": "accept",
+      "action_last_updated": "2017-03-14T22:04:01.04425Z",
+      "note": null,
+      "note_last_updated": null
+    },
+    {
+      "minfraud_id": "deadbeef-0000-0000-0000-000000000020",
       "action": "manual_review",
       "action_last_updated": "2017-03-15T22:04:11.044250Z",
       "note": "Panda, can you check this out?",
       "note_last_updated": "2017-03-15T22:04:25.828250Z"
     },
     {
-      "minfraud_id": "deadbeef-0000-0000-0000-00000030",
+      "minfraud_id": "deadbeef-0000-0000-0000-000000000030",
       "action": "accept",
       "action_last_updated": "2017-03-15T22:05:42.954231Z",
       "note": "Customer was traveling abroad.",
       "note_last_updated": "2017-03-15T22:05:58.132423Z"
     },
     {
-      "minfraud_id": "deadbeef-0000-0000-0000-00000050",
+      "minfraud_id": "deadbeef-0000-0000-0000-000000000050",
       "action": "expired_review",
       "action_last_updated": "2017-03-15T22:06:22.492945Z",
       "note": "Customer didn't answer several phone calls.",
@@ -191,10 +195,10 @@ A `Content-Length` header will be provided.
 ### Body (unsuccessful)
 
 In the event an error occurs (the response indicates a 4xx or 5xx HTTP status),
-the response may include a JSON document in the body. An error in content
-negotiation will not include a body, nor will many 5xx errors, which typically
-happen outside of our web service handling code. Before attempting to decode the
-body as JSON, you should verify that the `Content-Type` of the error response is
+the response may include a JSON document in the body. Many 5xx errors, which
+typically happen outside of our web service handling code, do not include one.
+Before attempting to decode the body as JSON, you should verify that the
+`Content-Type` of the error response is
 `application/vnd.maxmind.com-error+json; charset=UTF-8; version=1.0`.
 
 If the JSON document is included in the response body, it will be a single
@@ -206,24 +210,23 @@ the error and may change at any time.
 In addition to the errors documented below, client code should also be prepared
 to handle any valid HTTP 4xx or 5xx status code.
 
-| Code                   | HTTP Status                | Error                                                                                                                                                                                      |
-| ---------------------- | -------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| UPDATES_AFTER_REQUIRED | 400 Bad Request            | You have not supplied the `updates_after` URI parameter.                                                                                                                                   |
-| TIMESTAMP_INVALID      | 400 Bad Request            | The `updates_after` field must be in RFC 3339 format.                                                                                                                                      |
-| PARAMETER_UNKNOWN      | 400 Bad Request            | You have supplied one or more parameters which are not used by this endpoint.                                                                                                              |
-| AUTHORIZATION_INVALID  | 401 Unauthorized           | You have supplied an invalid [MaxMind account ID and/or license key](https://www.maxmind.com/en/accounts/current/license-key) in the [Authorization](#authorization-and-security) header.  |
-| LICENSE_KEY_REQUIRED   | 401 Unauthorized           | You have not supplied a [MaxMind license key](https://www.maxmind.com/en/accounts/current/license-key) in the [Authorization](#authorization-and-security) header.                         |
-| ACCOUNT_ID_REQUIRED    | 401 Unauthorized           | You have not supplied a [MaxMind account ID](https://support.maxmind.com/knowledge-base/articles/find-your-maxmind-account-id) in the [Authorization](#authorization-and-security) header. |
-| PERMISSION_REQUIRED    | 403 Forbidden              | You do not have permission to use the service. Please [contact our support team](https://support.maxmind.com/knowledge-base) for more information.                                         |
-| (none)                 | 406 Not Acceptable         | Your request included an `Accept-Charset` header that is not supported. `UTF-8` is the only acceptable character set.                                                                      |
-| (none)                 | 415 Unsupported Media Type | Your request included an `Accept` header that is not supported. The web service cannot return content of that type.                                                                        |
-| (none)                 | 503 Service Unavailable    | There is a problem with the web service server. You can try this request again later.                                                                                                      |
+| Code                   | HTTP Status               | Error                                                                                                                                                                                      |
+| ---------------------- | ------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| UPDATES_AFTER_REQUIRED | 400 Bad Request           | You have not supplied the `updates_after` URI parameter.                                                                                                                                   |
+| TIMESTAMP_INVALID      | 400 Bad Request           | The `updates_after` field must be in RFC 3339 format.                                                                                                                                      |
+| AUTHORIZATION_INVALID  | 401 Unauthorized          | You have supplied an invalid [MaxMind account ID and/or license key](https://www.maxmind.com/en/accounts/current/license-key) in the [Authorization](#authorization-and-security) header.  |
+| LICENSE_KEY_REQUIRED   | 401 Unauthorized          | You have not supplied a [MaxMind license key](https://www.maxmind.com/en/accounts/current/license-key) in the [Authorization](#authorization-and-security) header.                         |
+| ACCOUNT_ID_REQUIRED    | 401 Unauthorized          | You have not supplied a [MaxMind account ID](https://support.maxmind.com/knowledge-base/articles/find-your-maxmind-account-id) in the [Authorization](#authorization-and-security) header. |
+| PERMISSION_REQUIRED    | 403 Forbidden             | You do not have permission to use the service. Please [contact our support team](https://support.maxmind.com/knowledge-base) for more information.                                         |
+| (none)                 | 429 Too Many Requests     | MaxMind rate-limited the request, usually because of excessive earlier error responses. The response may not include a JSON body.                                                          |
+| SERVER_ERROR           | 500 Internal Server Error | There was an error when processing this request.                                                                                                                                           |
+| (none)                 | 503 Service Unavailable   | There is a problem with the web service server. You can try this request again later.                                                                                                      |
 
 ### Example response to an unsuccessful request
 
 ```json
 {
   "code": "ACCOUNT_ID_REQUIRED",
-  "error": "You have not supplied a MaxMind account ID in the Authorization header"
+  "error": "An account ID and license key are required to use this service."
 }
 ```

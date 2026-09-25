@@ -18,9 +18,10 @@ use with our web services in order to receive an account ID and license key.
 
 We use
 [basic HTTP authentication](https://en.wikipedia.org/wiki/Basic_access_authentication).
-The APIs which require authentication are only available via HTTPS. The
-credentials are never transmitted unencrypted. If you attempt to access this
-service via HTTP, you will receive a `403 Forbidden` HTTP response.
+The APIs which require authentication are only available via HTTPS. Always use
+HTTPS, so that your credentials are never transmitted unencrypted. If you
+attempt to access this service via HTTP, you will receive a `403 Forbidden` HTTP
+response.
 
 We require TLS 1.2 or greater for all requests to our servers to keep your data
 secure.
@@ -43,20 +44,8 @@ geographically closest to you.
 The `Authorization` header is always required. See
 [Authorization and Security](#authorization-and-security) for more details.
 
-The `Accept` header for a request is entirely optional. If you do include one,
-you must accept one of the following, substituting the `[SERVICE-TYPE]` with
-either `score`, `insights`, or `factors` as appropriate:
-
-- `application/json`
-- `application/vnd.maxmind.com-minfraud-[SERVICE-TYPE]+json`
-- `application/vnd.maxmind.com-minfraud-[SERVICE-TYPE]+json; charset=UTF-8; version=2.0`
-
-A request for any other MIME type will result in a `415 Unsupported Media Type`
-error.
-
-If you set the `Accept-Charset` header in your client code, you must accept the
-`UTF-8` character set. If you don't, you will receive a `406 Not Acceptable`
-response.
+The `Accept` and `Accept-Charset` headers are optional. The service ignores them
+and always returns JSON encoded as UTF-8.
 
 ## Request Body
 
@@ -67,7 +56,7 @@ array as described below. New fields that apply to one or more services may be
 added in the future.
 
 String fields are limited to no more than 255 valid Unicode characters unless a
-shorter length is specified; the null and newline characters are forbidden. Of
+different length is specified; the null and newline characters are forbidden. Of
 course, many fields also have additional constraints that limit the length. For
 example, the `ip_address` field cannot be longer than the longest valid
 representation of an IPv6 address. Unless it must match a specific format, it is
@@ -134,7 +123,6 @@ size will be rejected.
   "event": {
     "party": "customer",
     "shop_id": "s2123",
-    "time": "2012-04-12T23:20:50.52Z",
     "transaction_id": "txn3134133",
     "type": "purchase"
   },
@@ -256,7 +244,6 @@ being scored.
 {
   "party": "customer",
   "shop_id": "s2123",
-  "time": "2012-04-12T23:20:50.52Z",
   "transaction_id": "txn3134133",
   "type": "purchase"
 }
@@ -343,7 +330,7 @@ the site where the event took place.
   [Learn more about the /account/user\_id input on our Knowledge Base.](https://support.maxmind.com/knowledge-base/articles/event-and-account-inputs-minfraud#transactor-identifier)
   {{</minfraud-schema-row>}}
 
-  {{< minfraud-schema-row key="username_md5" type="request" valueType="string" valueTypeNote="max length: 32" >}}
+  {{< minfraud-schema-row key="username_md5" type="request" valueType="string" valueTypeNote="exactly 32 hexadecimal characters" >}}
   An MD5 hash as a hexadecimal string of the username or login name associated with the account.
   {{</minfraud-schema-row>}}
 {{</ schema-table >}}
@@ -434,7 +421,7 @@ information provided by the end-user who initiated the event.
   The city of the user's billing address.
   {{</minfraud-schema-row>}}
 
-  {{< minfraud-schema-row key="region" type="request" valueType="string" valueTypeNote="max length: 4" >}}
+  {{< minfraud-schema-row key="region" type="request" valueType="string" valueTypeNote="1-4 uppercase letters or digits" >}}
   The [ISO 3166-2 subdivision code](https://en.wikipedia.org/wiki/ISO%5F3166-2) for the user's billing address.
   {{</minfraud-schema-row>}}
 
@@ -450,8 +437,9 @@ information provided by the end-user who initiated the event.
   The phone number without the country code for the user's billing address. Punctuation characters will be stripped. After stripping punctuation characters, the number must contain only digits.
   {{</minfraud-schema-row>}}
 
-  {{< minfraud-schema-row key="phone_country_code" type="request" valueType="string" valueTypeNote="max length: 4" >}}
-  The country code for the phone number associated with the user's billing address. If you provide this information then you must provide at least one digit.
+  {{< minfraud-schema-row key="phone_country_code" type="request" valueType="string" valueTypeNote="1-4 digits" >}}
+  The country code for the phone number associated with the user's billing
+  address. Use digits only; do not include a leading `+`.
   {{</minfraud-schema-row>}}
 {{</ schema-table >}}
 
@@ -510,7 +498,7 @@ information provided by the end-user who initiated the event.
   The city of the user's shipping address.
   {{</minfraud-schema-row>}}
 
-  {{< minfraud-schema-row key="region" type="request" valueType="string" valueTypeNote="max length: 4" >}}
+  {{< minfraud-schema-row key="region" type="request" valueType="string" valueTypeNote="1-4 uppercase letters or digits" >}}
   The [ISO 3166-2 subdivision code](https://en.wikipedia.org/wiki/ISO%5F3166-2) for the user's shipping address.
   {{</minfraud-schema-row>}}
 
@@ -526,8 +514,9 @@ information provided by the end-user who initiated the event.
   The phone number without the country code for the user's shipping address. Punctuation characters will be stripped. After stripping punctuation characters, the number must contain only digits.
   {{</minfraud-schema-row>}}
 
-  {{< minfraud-schema-row key="phone_country_code" type="request" valueType="string" valueTypeNote="max length: 4" >}}
-  The country code for the phone number associated with the user's shipping address. If you provide this information then you must provide at least one digit.
+  {{< minfraud-schema-row key="phone_country_code" type="request" valueType="string" valueTypeNote="1-4 digits" >}}
+  The country code for the phone number associated with the user's shipping
+  address. Use digits only; do not include a leading `+`.
   {{</minfraud-schema-row>}}
 
   {{< minfraud-schema-row key="delivery_speed" type="request" valueType="string" valueTypeNote="format: enum" >}}
@@ -817,8 +806,9 @@ end-user and the payment processor about the credit card used for the event.
   The name of the issuing bank as provided by the end user.
   {{</minfraud-schema-row>}}
 
-  {{< minfraud-schema-row key="bank_phone_country_code" type="request" valueType="string" valueTypeNote="max length: 4" >}}
-  The phone country code for the issuing bank as provided by the end user. If you provide this information then you must provide at least one digit.
+  {{< minfraud-schema-row key="bank_phone_country_code" type="request" valueType="string" valueTypeNote="1-4 digits" >}}
+  The phone country code for the issuing bank as provided by the end user. Use
+  digits only; do not include a leading `+`.
   {{</minfraud-schema-row>}}
 
   {{< minfraud-schema-row key="bank_phone_number" type="request" valueType="string" valueTypeNote="max length: 255" >}}

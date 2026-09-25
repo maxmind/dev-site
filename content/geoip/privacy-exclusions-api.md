@@ -26,9 +26,9 @@ The password is your
 [MaxMind license key](https://www.maxmind.com/en/accounts/current/license-key).
 The authorization realm is `privacy-exclusion`.
 
-The API is only available via HTTPS. The credentials are never transmitted
-unencrypted. If you attempt to access this service via HTTP, you will receive a
-`403 Forbidden` HTTP response.
+The API is only available via HTTPS. Always use HTTPS, so that your credentials
+are never transmitted unencrypted. If you attempt to access this service via
+HTTP, you will receive a `403 Forbidden` HTTP response.
 
 We require TLS 1.2 or greater for all requests to our servers to keep your data
 secure.
@@ -40,6 +40,9 @@ The query string may include the following parameter:
 | Key             | Value Type         | Description                                                                                                                                                                                   |
 | --------------- | ------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `updates_after` | RFC 3339 timestamp | If set, only updates made after this time will be returned. The value should be a valid [RFC 3339 timestamp](https://datatracker.ietf.org/doc/html/rfc3339), e.g., `2020-04-12T23:20:50.52Z`. |
+
+URL-encode the `updates_after` value. If it has a `+` offset, send it as `%2B`,
+or the service reads the `+` as a space and rejects the timestamp.
 
 #### Example Request URL
 
@@ -82,7 +85,14 @@ a JSON object including the `exclusions` key. Additional keys may be added in
 the future.
 
 The value for the `exclusions` key is an array of objects, each representing one
-exclusion request.
+excluded network. One exclusion request for an IPv4 network appears as three
+objects, as described below, so do not count the objects as separate requests.
+
+Each IPv4 network appears three times in the array: as the IPv4 network, as the
+IPv4-mapped IPv6 network (in `::ffff:0:0/96`), and as the 6to4 IPv6 network (in
+`2002::/16`). For example, `203.0.113.3/32` also appears as
+`::ffff:203.0.113.3/128` and `2002:cb00:7103::/48`. You should exclude all three
+forms.
 
 Each exclusion object in the `exclusions` array includes the following keys:
 
@@ -98,11 +108,10 @@ Please note that additional keys may be added in the future.
 ### Response Body (for unsuccessful requests)
 
 In the event an error occurs (the response indicates a 4xx or 5xx HTTP status),
-the response may include a JSON document in the body. An error in content
-negotiation will not include a body nor will many 5xx errors. Before attempting
-to decode the body as JSON, you should verify that the `Content-Type` of the
-error response is
-`application/vnd.maxmind.com-error+json; charset=UTF-8; version=1.0`.
+the response may include a JSON document in the body. Some `4xx` errors and many
+`5xx` errors do not include one. Before attempting to decode the body as JSON,
+you should verify that the `Content-Type` of the error response is
+`application/vnd.maxmind.com-error+json; charset=UTF-8; version=2.0`.
 
 If the JSON document _is_ included in the response body, it will be an object
 with the keys `code` and `error`. The `code` field is a static error code for
@@ -113,20 +122,22 @@ and may change at any time.
 In addition to the errors documented below, client code should also be prepared
 to handle any valid HTTP 4xx or 5xx status code.
 
-| Code Error            | HTTP Status             | Error Mode                                                                                                                                               |
-| --------------------- | ----------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| TIMESTAMP_INVALID     | 400 Bad Request         | The `updates_after` field must be in [RFC 3339 format](https://datatracker.ietf.org/doc/html/rfc3339).                                                   |
-| AUTHORIZATION_INVALID | 401 Unauthorized        | Your [account ID or license key](https://www.maxmind.com/en/accounts/current/license-key) could not be authenticated.                                    |
-| ACCOUNT_ID_REQUIRED   | 401 Unauthorized        | An [account ID and license key](https://www.maxmind.com/en/accounts/current/license-key) are required to use this service.                               |
-| LICENSE_KEY_REQUIRED  | 401 Unauthorized        | An [account ID and license key](https://www.maxmind.com/en/accounts/current/license-key) are required to use this service.                               |
-| PERMISSION_REQUIRED   | 403 Forbidden           | You do not have permission to use the service. Please [contact our support team](https://support.maxmind.com/knowledge-base) for more information.       |
-| _(none)_              | 503 Service Unavailable | There is a problem with the web service server. You can [check the status of our services](https://status.maxmind.com), or try this request again later. |
+| Code Error            | HTTP Status               | Error Mode                                                                                                                                               |
+| --------------------- | ------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| TIMESTAMP_INVALID     | 400 Bad Request           | The `updates_after` field must be in [RFC 3339 format](https://datatracker.ietf.org/doc/html/rfc3339).                                                   |
+| AUTHORIZATION_INVALID | 401 Unauthorized          | Your [account ID or license key](https://www.maxmind.com/en/accounts/current/license-key) could not be authenticated.                                    |
+| ACCOUNT_ID_REQUIRED   | 401 Unauthorized          | An [account ID and license key](https://www.maxmind.com/en/accounts/current/license-key) are required to use this service.                               |
+| LICENSE_KEY_REQUIRED  | 401 Unauthorized          | An [account ID and license key](https://www.maxmind.com/en/accounts/current/license-key) are required to use this service.                               |
+| PERMISSION_REQUIRED   | 403 Forbidden             | You do not have permission to use the service. Please [contact our support team](https://support.maxmind.com/knowledge-base) for more information.       |
+| (none)                | 429 Too Many Requests     | MaxMind rate-limited the request, usually because of excessive earlier error responses. The response may not include a JSON body.                        |
+| SERVER_ERROR          | 500 Internal Server Error | There was an error when processing this request.                                                                                                         |
+| _(none)_              | 503 Service Unavailable   | There is a problem with the web service server. You can [check the status of our services](https://status.maxmind.com), or try this request again later. |
 
 #### Example Response (for an unsuccessful request)
 
 ```json
 {
   "code": "ACCOUNT_ID_REQUIRED",
-  "error": "You have not supplied a MaxMind account ID in the Authorization header"
+  "error": "An account ID and license key are required to use this service."
 }
 ```

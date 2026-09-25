@@ -35,11 +35,14 @@ the license key itself.
 The Content Type of the request must be `application/x-www-form-urlencoded`. No
 other content types are accepted at the moment.
 
-The request body may include the following field:
+The request body must include the following field:
 
-| Key           | Value Type | Description                                                                       |
-| ------------- | ---------- | --------------------------------------------------------------------------------- |
-| `license_key` | string     | The `license_key` field should contain the license key that you want to validate. |
+| Key           | Value Type | Description                                                                     |
+| ------------- | ---------- | ------------------------------------------------------------------------------- |
+| `license_key` | string     | The `license_key` field must contain the license key that you want to validate. |
+
+If the body has no `license_key` field, the server returns `400 Bad Request`
+with the code `LICENSE_KEY_INVALID`.
 
 Here is an example of how to make the request using curl:
 
@@ -91,8 +94,36 @@ structure:
 ```json
 {
   "code": "LICENSE_KEY_INVALID",
-  "error": "'foo-bad-license-key' is not a valid license_key when calling /secrets/validate-license-key"
+  "error": "'foo-bad-license-key' is not a valid license_key when calling /secrets/validate-license-key."
 }
 ```
 
 The HTTP status will be a `400 Bad Request`.
+
+### Response Body (for accounts without permission)
+
+If the account that owns the license key does not have permission to use this
+service, the server returns a JSON object with the following structure:
+
+```json
+{
+  "code": "PERMISSION_REQUIRED",
+  "error": "You do not have permission to use this service interface."
+}
+```
+
+The HTTP status will be `403 Forbidden`. This response means that MaxMind
+recognizes the license key. An unknown key gets a `401 Unauthorized` response
+instead.
+
+### Response Body (for large requests)
+
+If the request body is larger than 65,536 bytes, the server returns a
+`413 Content Too Large` status. The response does not have a JSON body.
+
+### Response Body (for server errors)
+
+If MaxMind cannot process the request, the server returns a JSON object with the
+code `SERVER_ERROR` and a `500 Internal Server Error` status. You may also
+receive a `503 Service Unavailable` status, which does not have a JSON body. In
+both cases, you can try the request again later.

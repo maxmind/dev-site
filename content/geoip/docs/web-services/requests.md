@@ -21,9 +21,10 @@ receive an account ID and license key. {{</ alert >}}
 
 We use
 [basic HTTP authentication](https://en.wikipedia.org/wiki/Basic_access_authentication).
-The APIs which require authentication are only available via HTTPS. The
-credentials are never transmitted unencrypted. If you attempt to access this
-service via HTTP, you will receive a `403 Forbidden` HTTP response.
+The APIs which require authentication are only available via HTTPS. Always use
+HTTPS, so that your credentials are never transmitted unencrypted. If you
+attempt to access this service via HTTP, you will receive a `403 Forbidden` HTTP
+response.
 
 We require TLS 1.2 or greater for all requests to our servers to keep your data
 secure.
@@ -38,7 +39,9 @@ be passed in the standard dotted quad form, for example `1.2.3.4`. IPv6
 addresses should be passed as strings as well. We recommend using the canonical
 form as described in [RFC 5952](https://datatracker.ietf.org/doc/html/rfc5952),
 for example `2001:db8::1:0:0:1`, but we will handle any valid IPv6 string
-representation.
+representation. We do not accept an IPv6 address with a zone ID, for example
+`fe80::1%eth0`. If you send one, percent-encoded in the URL path as
+`fe80::1%25eth0`, we return `IP_ADDRESS_INVALID`.
 
 You can also use the string `me` as the IP address. In this case, the record for
 the IP address you are querying from will be returned. This is useful when your
@@ -71,19 +74,8 @@ closest to you.
 The `Authorization` header is always required. See
 [Authorization and Security](#authorization-and-security) for more details.
 
-The `Accept` header for a request is entirely optional. If you do include one,
-you must accept one of the following:
-
-- `application/json`
-- `application/vnd.maxmind.com-country+json`
-- `application/vnd.maxmind.com-country+json; charset=UTF-8; version=2.1`
-
-Substitute the appropriate service type for "country". A request for any other
-MIME type will result in a `415 Unsupported Media Type` error.
-
-If you set the `Accept-Charset` header in your client code, you must accept the
-`UTF-8` character set. If you don't, you will receive a `406 Not Acceptable`
-response.
+The `Accept` and `Accept-Charset` headers are optional. The service ignores them
+and always returns JSON encoded as UTF-8.
 
 ## Troubleshooting IP Lookups
 

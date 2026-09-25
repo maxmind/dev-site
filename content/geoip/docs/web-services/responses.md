@@ -18,7 +18,7 @@ outlined below:
 | GeoLite City    | `application/vnd.maxmind.com-city+json; charset=UTF-8; version=2.1`     |
 
 Errors may be returned with the `Content-Type` set to
-`application/vnd.maxmind.com-error+json; charset=UTF-8; version=2.0`. If this is
+`application/vnd.maxmind.com-error+json; charset=UTF-8; version=2.1`. If this is
 the case, then the body of the response contains a JSON document with two keys,
 `code` and `error`. See the [Errors](#errors) section for more details.
 
@@ -33,10 +33,11 @@ of any given code will never change, though codes can be added or removed. The
 `error` field is a human-readable description of the error and may change at any
 time.
 
-Not all errors include a JSON body. An error in content negotiation will not
-include a body, nor will many `5xx` errors, which typically happen outside of
-our web service request handling code. You should check the `Content-Type`
-header of an error response before attempting to decode the body as JSON.
+Not all errors include a JSON body. Some `4xx` errors, such as a `403` for a
+plain HTTP request, and many `5xx` errors, which typically happen outside of our
+web service request handling code, do not include one. You
+should check the `Content-Type` header of an error response before attempting
+to decode the body as JSON.
 
 In addition to the errors documented below, client code should also be prepared
 to handle any valid HTTP `4xx` or `5xx` status code.
@@ -69,6 +70,14 @@ to handle any valid HTTP `4xx` or `5xx` status code.
         <td>
           You have supplied an IP address which belongs to a reserved or private
           range.
+        </td>
+      </tr>
+      <tr>
+        <td><code>SERVICE_INVALID</code></td>
+        <td>400 Bad Request</td>
+        <td>
+          The requested service is not available on this host. Only Country and
+          City are available on <code>geolite.info</code>.
         </td>
       </tr>
       <tr>
@@ -130,7 +139,7 @@ to handle any valid HTTP `4xx` or `5xx` status code.
       </tr>
       <tr>
         <td><code>PERMISSION_REQUIRED</code></td>
-        <td>402 Payment Required</td>
+        <td>403 Forbidden</td>
         <td>
           You do not have permission to use the service. Please
           <a href="https://support.maxmind.com/knowledge-base"
@@ -140,30 +149,9 @@ to handle any valid HTTP `4xx` or `5xx` status code.
         </td>
       </tr>
       <tr>
-        <td>(none)</td>
-        <td>403 Forbidden</td>
-        <td>
-          This status is returned when the request body is larger than 20,000
-          bytes.
-        </td>
-      </tr>
-      <tr>
         <td><code>IP_ADDRESS_NOT_FOUND</code></td>
         <td>404 Not Found</td>
         <td>The supplied IP address is not in the database.</td>
-      </tr>
-      <tr>
-        <td>(none)</td>
-        <td>415 Unsupported Media Type</td>
-        <td>
-          Your request included an <code>Accept</code> or
-          <code>Content-Type</code> header that is not supported. For
-          <code>GET</code> requests, this means the web service cannot return
-          content of the type specified in the <code>Accept</code> header. For
-          <code>PUT</code> and <code>POST</code> requests, this means the web
-          service cannot parse a request body of the type specified in the
-          <code>Content-Type</code> header.
-        </td>
       </tr>
       <tr>
         <td>(none)</td>
@@ -173,6 +161,11 @@ to handle any valid HTTP `4xx` or `5xx` status code.
           This is likely due to excessive previous requests resulting in error
           responses.
         </td>
+      </tr>
+      <tr>
+        <td><code>SERVER_ERROR</code></td>
+        <td>500 Internal Server Error</td>
+        <td>There was an error when processing this request.</td>
       </tr>
       <tr>
         <td>(none)</td>
@@ -186,6 +179,9 @@ to handle any valid HTTP `4xx` or `5xx` status code.
   </table>
 </div>
 {{</ rawhtml >}}
+
+For GeoLite Country and GeoLite City, `INSUFFICIENT_FUNDS` (HTTP 402) means
+that the account has reached its daily query limit.
 
 ### Rate-limiting
 
@@ -219,7 +215,13 @@ you are using. If a key maps to an undefined or empty value, it is not included
 in the JSON object. This applies both to top-level keys and the objects they map
 to.
 
+Successful GeoIP and GeoLite responses always include the `traits` object with
+`ip_address` and `network`. Other fields may be omitted as described above.
+
 The data returned in the document will be in UTF-8 encoding.
+
+The examples show available fields using illustrative values. They do not
+describe a single real lookup.
 
 For full examples of response bodies, select one of the following:
 

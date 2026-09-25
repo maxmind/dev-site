@@ -19,6 +19,16 @@ account portal.
 Please note that you will be redirected from these permalinks to the hostname
 `storage.googleapis.com`.
 
+The download service is only available via HTTPS. Always use HTTPS, so that your
+credentials are never transmitted unencrypted. If you attempt to access it via
+HTTP, you will receive a `403 Forbidden` HTTP response.
+
+### Rate-limiting
+
+A `GET` or `HEAD` request may receive a `429 Too Many Requests` response if
+MaxMind rate-limits requests, usually because of excessive earlier error
+responses. The response may not include a JSON body.
+
 ### Download best practices
 
 At a high level, the best practice is to write an automated script that
@@ -70,8 +80,9 @@ Where `YOUR_ACCOUNT_ID` is a placeholder for your account ID and
 `YOUR_LICENSE_KEY` is a placeholder for your license key.
 [Learn more about license keys on our knowledge base](https://support.maxmind.com/knowledge-base/articles/using-maxmind-license-keys).
 Please note that the permalink copied from your account portal will replace
-`YOUR_GEOFEED_ID` with a unique ID for your geofeed and `YOUR_REPORT_ID` with an
-identifier for the kind of report you're downloading.
+`YOUR_GEOFEED_ID` with a numeric ID for your geofeed and `YOUR_REPORT_ID` with
+one of `free`, `geolocation`, or `intelligence`, identifying the kind of report
+you're downloading.
 
 In the response, you can check the `Last-Modified` header for the file’s build
 date. These checks can be incorporated into your own script or program,
@@ -111,8 +122,9 @@ Where `YOUR_ACCOUNT_ID` is a placeholder for your account ID and
 `YOUR_LICENSE_KEY` is a placeholder for your license key.
 [Learn more about license keys on our knowledge base](https://support.maxmind.com/knowledge-base/articles/using-maxmind-license-keys).
 Please note that the permalink copied from your account portal will replace
-`YOUR_GEOFEED_ID` with a unique ID for your geofeed and `YOUR_REPORT_ID` with an
-identifier for the kind of report you're downloading.
+`YOUR_GEOFEED_ID` with a numeric ID for your geofeed and `YOUR_REPORT_ID` with
+one of `free`, `geolocation`, or `intelligence`, identifying the kind of report
+you're downloading.
 
 This will save the report to a file called `YOUR_REPORT_ID.csv`. For example,
 `https://download.maxmind.com/geofeed/reports/v1.0/YOUR_GEOFEED_ID/geolocation`
