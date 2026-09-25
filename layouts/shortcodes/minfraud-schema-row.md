@@ -1,31 +1,15 @@
-{{- $key := .Get "key" -}}
-{{- $type := .Get "type" -}}
-{{- $score := .Get "score" -}}
-{{- $insights := .Get "insights" -}}
-{{- $factors := .Get "factors" -}}
-{{- $hasScore := eq $score "true" -}}
-{{- $hasInsights := eq $insights "true" -}}
-{{- $hasFactors := eq $factors "true" -}}
-<tr>
-  <td>
-    <code>{{ $key }}</code>
-  </td>
-  <td>
-    {{ .Get "valueType" }}
-  </td>
-  <td>
-    {{ .Inner | .Page.RenderString }}
-    {{ with .Get "valueTypeNote" }}
-      <p>
-        <em>{{ . }}</em>
-      </p>
-    {{ end }}
-    {{ if eq $type "response" }}
-      <div>
-        <span>{{ if $hasScore }}✓{{ else }}✗{{ end }} minFraud Score</span>
-        <span>{{ if $hasInsights }}✓{{ else }}✗{{ end }} minFraud Insights</span>
-        <span>{{ if $hasFactors }}✓{{ else }}✗{{ end }} minFraud Factors</span>
-      </div>
-    {{ end }}
-  </td>
-</tr>
+{{- $type := .Get "valueType" -}}
+{{- with .Get "valueTypeNote" }}{{ $type = printf "%s (%s)" $type . }}{{ end -}}
+{{- $row := dict "key" (.Get "key") "type" $type "inner" .Inner -}}
+{{- if eq (.Get "type") "response" -}}
+  {{- $services := slice -}}
+  {{- if eq (.Get "score") "true" }}{{ $services = $services | append "minFraud Score" }}{{ end -}}
+  {{- if eq (.Get "insights") "true" }}{{ $services = $services | append "minFraud Insights" }}{{ end -}}
+  {{- if eq (.Get "factors") "true" }}{{ $services = $services | append "minFraud Factors" }}{{ end -}}
+  {{- $row = merge $row (dict "services" $services) -}}
+{{- end -}}
+{{- /* This comment ends without a trim marker on purpose. The content
+       indents each shortcode call by two spaces. The newline after the
+       comment moves those spaces onto a blank line, so the heading starts at
+       column one. */}}
+{{ partial "markdown/schema-row.md" $row }}

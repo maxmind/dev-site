@@ -1,28 +1,11 @@
-{{- $key := .Get "key" -}}
-{{- $country := .Get "country" -}}
-{{- $city := .Get "city" -}}
-{{- $insights := .Get "insights" -}}
-{{- $hasCountry := eq $country "true" -}}
-{{- $hasCity := eq $city "true" -}}
-{{- $hasInsights := eq $insights "true" -}}
-<tr>
-  <td>
-    <code>{{ $key }}</code>
-  </td>
-  <td>
-    {{ .Get "valueType" }}
-  </td>
-  <td>
-    {{ .Inner | .Page.RenderString }}
-    {{ with .Get "valueTypeNote" }}
-      <p>
-        <em>{{ . }}</em>
-      </p>
-    {{ end }}
-    <div>
-      <span>{{ if $hasCountry }}✓{{ else }}✗{{ end }} GeoIP Country</span>
-      <span>{{ if $hasCity }}✓{{ else }}✗{{ end }} GeoIP City Plus</span>
-      <span>{{ if $hasInsights }}✓{{ else }}✗{{ end }} GeoIP Insights</span>
-    </div>
-  </td>
-</tr>
+{{- $type := .Get "valueType" -}}
+{{- with .Get "valueTypeNote" }}{{ $type = printf "%s (%s)" $type . }}{{ end -}}
+{{- $services := slice -}}
+{{- if eq (.Get "country") "true" }}{{ $services = $services | append "GeoIP Country" }}{{ end -}}
+{{- if eq (.Get "city") "true" }}{{ $services = $services | append "GeoIP City Plus" }}{{ end -}}
+{{- if eq (.Get "insights") "true" }}{{ $services = $services | append "GeoIP Insights" }}{{ end -}}
+{{- /* This comment ends without a trim marker on purpose. The content
+       indents each shortcode call by two spaces. The newline after the
+       comment moves those spaces onto a blank line, so the heading starts at
+       column one. */}}
+{{ partial "markdown/schema-row.md" (dict "key" (.Get "key") "type" $type "services" $services "inner" .Inner) }}
