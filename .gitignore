@@ -83,3 +83,6 @@ static/_headers
 
 # Build dir for format-rawhtml.ts (npm run format:rawhtml)
 dist/
+
+# Claude Code personal instructions
+CLAUDE.local.md
