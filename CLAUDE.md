@@ -64,7 +64,7 @@ Each release note is its own file, `content/<product>/release-notes/YYYY-MM-DD-<
 
 `hugo.toml` defines the sidebar navigation menus (`menus.geoip`, `menus.minfraud`, `menus.general`). Menu structure lives here, not in frontmatter.
 
-Hugo generates both HTML and Markdown output formats for every page (configured via `[outputs]` and `[outputFormats]`). Markdown templates live in `layouts/_default/*.md`, `layouts/index.md`, and `layouts/partials/markdown/`.
+Hugo generates both HTML and Markdown output formats for every page (configured via `[outputs]` and `[outputFormats]`). Markdown templates live in `layouts/_default/*.md`, `layouts/index.md`, and `layouts/partials/markdown/`. Hugo also builds `llms.txt` from the home page (`layouts/index.llms.txt`), and `build.sh` concatenates every page's Markdown into `llms-full.txt`.
 
 ### Shortcodes
 
