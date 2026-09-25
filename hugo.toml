@@ -296,11 +296,11 @@ title = 'MaxMind'
     target = "static/maxmind-server-ip-addresses.json"
 
 [outputs]
-  home = ["HTML"]
+  home = ["HTML", "MARKDOWN"]
   page = ["HTML", "MARKDOWN"]
   section = ["HTML", "MARKDOWN"]
-  taxonomy = ["HTML", "MARKDOWN"]
-  term = ["HTML", "MARKDOWN"]
+  taxonomy = ["HTML"]
+  term = ["HTML"]
 
 [outputFormats]
   [outputFormats.MARKDOWN]

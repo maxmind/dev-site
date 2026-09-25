@@ -1,6 +1,8 @@
-{{- partial "clean-alerts.md" .RenderShortcodes -}}
+{{ partial "markdown/front-matter.md" . }}
+{{ with partial "markdown/body.md" . }}{{ . }}
 
-{{ range .Pages }}
-## [{{ .Title }}]({{ .RelPermalink }})
-{{ .Summary }}
-{{ end }}
+{{ end }}## Pages in this section
+
+{{ range .Pages -}}
+- [{{ .Title }}]({{ (.OutputFormats.Get "MARKDOWN").Permalink }})
+{{ end -}}
