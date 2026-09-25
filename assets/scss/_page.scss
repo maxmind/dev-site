@@ -76,6 +76,15 @@
   margin-top: 0;
 }
 
+// Matches the 36px height of the copy button beside it
+.page__markdown-link {
+  display: inline-block;
+  font-size: 0.875rem;
+  line-height: 36px;
+  margin: 0 0 1rem 0.5rem;
+  vertical-align: top;
+}
+
 // Copy Markdown button styles
 .copy-markdown-btn {
   align-items: center;
