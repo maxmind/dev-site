@@ -1,7 +1,7 @@
----
-draft: false
-title: What's New in GeoIP2
----
++++
+draft = false
+title = "What's New in GeoIP2"
++++
 
 MaxMind's GeoIP2 web services and GeoIP2 databases are an evolution of our
 original GeoIP web services and databases, which we now refer to as GeoIP

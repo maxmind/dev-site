@@ -1,8 +1,8 @@
----
-draft: false
-title: GeoIP and GeoLite API Requests
-type: 'has-toc'
----
++++
+draft = false
+title = 'GeoIP and GeoLite API Requests'
+type = 'has-toc'
++++
 
 ## Authorization and Security
 

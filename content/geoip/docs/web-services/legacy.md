@@ -1,7 +1,7 @@
----
-draft: false
-title: GeoIP Legacy Web Services
----
++++
+draft = false
+title = 'GeoIP Legacy Web Services'
++++
 
 {{< alert info >}} We have implemented recent changes to our GeoIP Legacy web
 services in line with the retirement of GeoIP Legacy Databases. Please see our

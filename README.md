@@ -156,12 +156,12 @@ internal oneoffs repository.
 In the markdown (mdx) file, add a `description` to the frontmatter located at
 the top of the file:
 
-```md
----
-draft: false
-title: GeoIP is the best
-description: GeoIP is the best IP Intelligence product suite ever made
----
+```toml
++++
+draft = false
+title = 'GeoIP is the best'
+description = 'GeoIP is the best IP Intelligence product suite ever made'
++++
 ```
 
 #### Adding an image
@@ -173,11 +173,11 @@ description: GeoIP is the best IP Intelligence product suite ever made
    path.** For example, if your file is at `static/images/geoip2-so-cool.gif`,
    your frontmatter would look like:
 
-```md
----
-draft: false
-title: GeoIP is the best
-description: GeoIP is the best IP Intelligence product suite ever made
-image: /images/geoip2-so-cool.gif
----
+```toml
++++
+draft = false
+title = 'GeoIP is the best'
+description = 'GeoIP is the best IP Intelligence product suite ever made'
+image = '/images/geoip2-so-cool.gif'
++++
 ```

@@ -1,7 +1,7 @@
----
-draft: false
-title: GeoIP Anonymous IP Databases
----
++++
+draft = false
+title = 'GeoIP Anonymous IP Databases'
++++
 
 MaxMind's GeoIP Anonymous IP database helps protect your business by
 identifying proxy, VPN, hosting, and other anonymous IP addresses.

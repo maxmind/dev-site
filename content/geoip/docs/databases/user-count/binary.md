@@ -1,7 +1,7 @@
----
-draft: false
-title: GeoIP User Count binary database fields
----
++++
+draft = false
+title = 'GeoIP User Count binary database fields'
++++
 
 The GeoIP User Count binary database contains the following fields for each
 network.

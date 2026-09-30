@@ -1,8 +1,8 @@
----
-draft: false
-title: Geolocate an IP
-icon: WebServiceIcon
----
++++
+draft = false
+title = 'Geolocate an IP'
+icon = 'WebServiceIcon'
++++
 
 Learn how to geolocate an IP address using GeoIP and GeoLite databases, or GeoIP
 and GeoLite web services with server or client side API calls.

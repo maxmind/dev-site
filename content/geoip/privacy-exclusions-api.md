@@ -1,7 +1,7 @@
----
-draft: false
-title: Privacy Exclusions API
----
++++
+draft = false
+title = 'Privacy Exclusions API'
++++
 
 MaxMind maintains a list of Do Not Sell My Personal Information requests. This
 API provides a simple way to retrieve

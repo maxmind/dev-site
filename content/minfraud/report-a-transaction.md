@@ -1,7 +1,7 @@
----
-draft: false
-title: Report a transaction
----
++++
+draft = false
+title = 'Report a transaction'
++++
 
 Reporting transactions as chargebacks, suspected fraud, spam/abuse, and/or false
 positive (not fraud) to MaxMind helps us detect about 10-50% more fraud and

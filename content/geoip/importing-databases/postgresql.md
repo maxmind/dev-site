@@ -1,7 +1,7 @@
----
-draft: false
-title: Importing GeoIP and GeoLite databases to PostgreSQL
----
++++
+draft = false
+title = 'Importing GeoIP and GeoLite databases to PostgreSQL'
++++
 
 This guide will show you how to import GeoIP or GeoLite databases into
 PostgreSQL so that they can be easily queried and manipulated on your server.

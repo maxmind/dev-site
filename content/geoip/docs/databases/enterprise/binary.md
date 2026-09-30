@@ -1,7 +1,7 @@
----
-draft: false
-title: GeoIP Enterprise binary database fields
----
++++
+draft = false
+title = 'GeoIP Enterprise binary database fields'
++++
 
 The GeoIP Enterprise binary database contains the following fields for each
 network. The top-level record for each network is a map containing the keys

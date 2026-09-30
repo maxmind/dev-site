@@ -1,7 +1,7 @@
----
-draft: false
-title: minFraud Web Services
----
++++
+draft = false
+title = 'minFraud Web Services'
++++
 
 {{< alert info >}} If you are a minFraud Legacy customer, please refer to our
 [minFraud Legacy documentation](/minfraud/minfraud-legacy).

@@ -1,8 +1,8 @@
----
-draft: false
-title: minFraud API Requests
-type: 'has-toc'
----
++++
+draft = false
+title = 'minFraud API Requests'
+type = 'has-toc'
++++
 
 ## Authorization and Security
 

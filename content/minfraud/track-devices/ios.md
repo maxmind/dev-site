@@ -1,7 +1,7 @@
----
-draft: false
-title: iOS
----
++++
+draft = false
+title = 'iOS'
++++
 
 {{< alert warning >}} The MaxMind Device SDK for iOS is currently in beta.
 {{</ alert >}}

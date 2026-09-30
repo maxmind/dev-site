@@ -1,8 +1,8 @@
----
-draft: false
-title: minFraud API Responses
-type: 'has-toc'
----
++++
+draft = false
+title = 'minFraud API Responses'
+type = 'has-toc'
++++
 
 ## Headers
 

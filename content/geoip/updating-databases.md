@@ -1,7 +1,7 @@
----
-draft: false
-title: Updating GeoIP and GeoLite Databases
----
++++
+draft = false
+title = 'Updating GeoIP and GeoLite Databases'
++++
 
 {{< alert warning >}} In January 2024, we began using R2 presigned URLs for all
 database downloads. You should make sure that your HTTP client follows redirects

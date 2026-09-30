@@ -1,7 +1,7 @@
----
-draft: false
-title: Geolocate an IP address using Databases
----
++++
+draft = false
+title = 'Geolocate an IP address using Databases'
++++
 
 Geolocating an IP address using GeoIP and GeoLite databases consists of
 configuring a database reader and querying the database.

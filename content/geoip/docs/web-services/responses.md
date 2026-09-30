@@ -1,8 +1,8 @@
----
-draft: false
-title: GeoIP and GeoLite API Responses
-type: 'has-toc'
----
++++
+draft = false
+title = 'GeoIP and GeoLite API Responses'
+type = 'has-toc'
++++
 
 ## Headers
 

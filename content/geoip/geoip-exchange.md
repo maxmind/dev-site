@@ -1,7 +1,7 @@
----
-draft: false
-title: GeoIP Exchange documentation
----
++++
+draft = false
+title = 'GeoIP Exchange documentation'
++++
 
 ## Overview
 

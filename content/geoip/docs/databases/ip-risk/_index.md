@@ -1,7 +1,7 @@
----
-draft: false
-title: GeoIP IP Risk Databases
----
++++
+draft = false
+title = 'GeoIP IP Risk Databases'
++++
 
 MaxMind's GeoIP IP Risk database contains IP networks associated with
 non-corporate proxies, VPNs, and other anonymous IP addresses, as well as IP

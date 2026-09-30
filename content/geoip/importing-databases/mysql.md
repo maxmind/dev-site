@@ -1,7 +1,7 @@
----
-draft: false
-title: Importing GeoIP and GeoLite databases to MySQL
----
++++
+draft = false
+title = 'Importing GeoIP and GeoLite databases to MySQL'
++++
 
 {{< alert warning >}}
 

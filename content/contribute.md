@@ -1,7 +1,7 @@
----
-draft: false
-title: Contribute to the MaxMind Community
----
++++
+draft = false
+title = 'Contribute to the MaxMind Community'
++++
 
 We welcome the efforts of our community of users to develop robust, unofficial
 tools for use with our products and services. One of the reasons that we keep

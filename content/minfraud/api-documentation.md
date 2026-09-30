@@ -1,7 +1,7 @@
----
-draft: false
-title: minFraud API Documentation
----
++++
+draft = false
+title = 'minFraud API Documentation'
++++
 
 {{< alert info >}} If you are a [minFraud Legacy](/minfraud/minfraud-legacy/)
 customer, please see our

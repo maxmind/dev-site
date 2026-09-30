@@ -1,7 +1,7 @@
----
-draft: false
-title: GeoIP Domain binary database fields
----
++++
+draft = false
+title = 'GeoIP Domain binary database fields'
++++
 
 The GeoIP Domain binary database contains the following fields for each network.
 

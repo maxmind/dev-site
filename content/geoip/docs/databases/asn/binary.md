@@ -1,7 +1,7 @@
----
-draft: false
-title: GeoLite ASN binary database fields
----
++++
+draft = false
+title = 'GeoLite ASN binary database fields'
++++
 
 The GeoLite ASN binary database contains the following fields for each network.
 

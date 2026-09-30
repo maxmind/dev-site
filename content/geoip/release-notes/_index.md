@@ -1,8 +1,8 @@
----
-title: GeoIP Release Notes
-type: release-note
-outputs: ['html', 'rss', 'anchors']
----
++++
+title = 'GeoIP Release Notes'
+type = 'release-note'
+outputs = ['html', 'rss', 'anchors']
++++
 
 {{< alert info >}}
 [Sign up to be notified](https://comms.maxmind.com/geoip-rss-release-notes)

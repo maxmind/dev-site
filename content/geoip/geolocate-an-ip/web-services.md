@@ -1,7 +1,7 @@
----
-draft: false
-title: Geolocate an IP address using Web Services
----
++++
+draft = false
+title = 'Geolocate an IP address using Web Services'
++++
 
 Geolocating an IP address using GeoIP or GeoLite web services consists of
 configuring a web service client, creating a request, and handling the response.

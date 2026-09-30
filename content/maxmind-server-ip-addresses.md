@@ -1,12 +1,10 @@
----
-draft: false
-layout: mm-ips
-title: MaxMind Server IP Addresses
-outputs:
-  - rss
-  - html
-_comment: json feed is handled by module mounts.  see hugo.toml
----
++++
+draft = false
+layout = 'mm-ips'
+title = 'MaxMind Server IP Addresses'
+outputs = ['rss', 'html']
+_comment = 'json feed is handled by module mounts.  see hugo.toml'
++++
 
 {{< alert warning >}} In January 2024, we began using R2 presigned URLs for all
 database downloads. Database downloads will no longer use the IP addresses
