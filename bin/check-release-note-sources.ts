@@ -208,7 +208,11 @@ function redirectFailures(
   const listing = `${section}/`;
 
   for (const year of RETIRED_YEARS) {
-    for (const yearURL of [`${listing}${year}`, `${listing}${year}/`]) {
+    for (const yearURL of [
+      `${listing}${year}`,
+      `${listing}${year}/`,
+      `${listing}${year}/index.md`,
+    ]) {
       const rule = rules.find((candidate) => matches(candidate, yearURL));
       if (rule === undefined) {
         failures.push(`${yearURL}: no redirect`);
@@ -243,6 +247,7 @@ function redirectFailures(
     `${listing}page/2/`,
     `${listing}2026-09-11-some-note`,
     `${listing}2026-09-11-some-note/`,
+    `${listing}2026-09-11-some-note/index.md`,
     `${listing}anchors.json`,
   ]) {
     const rule = rules.find((candidate) => matches(candidate, url));
