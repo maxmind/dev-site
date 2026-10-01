@@ -1,6 +1,6 @@
 /**
  * Checks what the built site shows: the anchor map that sends an old fragment
- * link to its note, the RSS feed, and the age notice on old notes.
+ * link to its note and its wiring, the RSS feed, and the age notice on old notes.
  *
  * It builds at two clocks five months apart, so a notice that ignores the
  * build month fails. Both clocks fall after the newest note, because Hugo does
@@ -180,6 +180,32 @@ function pageFile(buildDir: string, url: string): string {
   return path.join(buildDir, url, 'index.html');
 }
 
+/**
+ * The anchor script runs only on a page marked as a listing, and only if the
+ * page loads it. Without both, an old link stops on the listing page.
+ */
+function wiringFailures(buildDir: string, product: string): string[] {
+  return listingPages(buildDir, product).flatMap((page, index) => {
+    const where = `listing page ${index + 1}`;
+    const html = fs.readFileSync(page, 'utf8');
+    if (!html.includes('data-release-note-listing')) {
+      return [`${where}: no data-release-note-listing attribute`];
+    }
+    const loadsScript = [...html.matchAll(/<script[^>]*\bsrc="([^"]+)"/g)].some(
+      ([, src]) => {
+        const file = path.join(buildDir, src);
+        if (!fs.existsSync(file)) return false;
+        const js = fs.readFileSync(file, 'utf8');
+        return (
+          js.includes('data-release-note-listing') &&
+          js.includes('anchors.json')
+        );
+      }
+    );
+    return loadsScript ? [] : [`${where}: does not load the anchor script`];
+  });
+}
+
 function anchorFailures(
   buildDir: string,
   product: string,
@@ -188,7 +214,7 @@ function anchorFailures(
   const mapPath = path.join(buildDir, product, 'release-notes', 'anchors.json');
   if (!fs.existsSync(mapPath)) return ['anchor map missing'];
   const entries = JSON.parse(fs.readFileSync(mapPath, 'utf8')) as AnchorEntry[];
-  const failures: string[] = [];
+  const failures: string[] = wiringFailures(buildDir, product);
 
   // One entry per note with a legacy anchor, naming that note's own page.
   const anchored = notes.filter((note) => note.legacyAnchor !== null);
