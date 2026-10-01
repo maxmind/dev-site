@@ -232,11 +232,6 @@ title = 'MaxMind'
         parent = 'Database Documentation'
         weight = 70
       [[menus.geoip]]
-        name = 'IP Risk'
-        pageRef = '/geoip/docs/databases/ip-risk'
-        parent = 'Database Documentation'
-        weight = 80
-      [[menus.geoip]]
         name = 'Static IP Score'
         pageRef = '/geoip/docs/databases/static-ip-score'
         parent = 'Database Documentation'
