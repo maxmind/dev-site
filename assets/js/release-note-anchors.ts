@@ -42,17 +42,25 @@ async function redirectToNote(): Promise<void> {
   const listing = window.location.pathname.replace(/(?:page\/\d+\/)?$/, '');
   const year = new URLSearchParams(window.location.search).get('year');
 
-  let entries: AnchorEntry[];
+  let entries: unknown;
   try {
     const response = await fetch(`${listing}anchors.json`);
-    if (!response.ok) return;
-    entries = (await response.json()) as AnchorEntry[];
-  } catch {
+    if (!response.ok) {
+      console.warn(`release note anchor map: HTTP ${response.status}`);
+      return;
+    }
+    entries = await response.json();
+  } catch (error) {
     // The listing page is a reasonable place to stop if the map cannot load.
+    console.warn('release note anchor map did not load', error);
+    return;
+  }
+  if (!Array.isArray(entries)) {
+    console.warn('release note anchor map is not an array');
     return;
   }
 
-  const target = resolveAnchor(entries, anchor, year);
+  const target = resolveAnchor(entries as AnchorEntry[], anchor, year);
   // No match: the fragment may name a heading on this page.
   if (target !== null && target !== window.location.pathname) {
     window.location.replace(target);
