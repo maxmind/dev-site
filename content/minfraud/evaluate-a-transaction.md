@@ -50,7 +50,7 @@ Install-Package MaxMind.MinFraud
 <dependency>
   <groupId>com.maxmind.minfraud</groupId>
   <artifactId>minfraud</artifactId>
-  <version>4.3.0</version>
+  <version>4.4.0</version>
 </dependency>
 
 // Or install via Gradle
@@ -58,7 +58,7 @@ repositories {
   mavenCentral()
 }
 dependencies {
-  implementation 'com.maxmind.minfraud:minfraud:4.3.0'
+  implementation 'com.maxmind.minfraud:minfraud:4.4.0'
 }
 ```
 
@@ -911,7 +911,7 @@ $request = $mf->withDevice(
     shopId: 's2123',
     type: 'purchase'
 )->withAccount(
-    userId: 3132,
+    userId: '3132',
     usernameMd5: '4f9726678c438914fa04bdb8c1a24088'
 )->withEmail(
     address: 'test@maxmind.com',

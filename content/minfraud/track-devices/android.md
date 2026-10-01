@@ -20,7 +20,7 @@ Add the MaxMind Device SDK dependency to your app-level `build.gradle` file.
 // build.gradle.kts (Kotlin DSL)
 dependencies {
     // Check https://search.maven.org/artifact/com.maxmind.device/device-sdk for the latest version.
-    implementation("com.maxmind.device:device-sdk:0.2.0")
+    implementation("com.maxmind.device:device-sdk:0.3.1")
 }
 ```
 
@@ -28,7 +28,7 @@ dependencies {
 // build.gradle (Groovy DSL)
 dependencies {
     // Check https://search.maven.org/artifact/com.maxmind.device/device-sdk for the latest version.
-    implementation 'com.maxmind.device:device-sdk:0.2.0'
+    implementation 'com.maxmind.device:device-sdk:0.3.1'
 }
 ```
 
@@ -47,7 +47,7 @@ with your
 ```kotlin
 import android.app.Application
 import com.maxmind.device.DeviceTracker
-import com.maxmind.device.SdkConfig
+import com.maxmind.device.config.SdkConfig
 
 class MyApplication : Application() {
     override fun onCreate() {
