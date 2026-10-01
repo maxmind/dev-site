@@ -16,6 +16,13 @@ export const PRODUCTS = ['geoip', 'minfraud'];
 export const NOTE_PATH =
   /^content\/(geoip|minfraud)\/release-notes\/(\d{4}-\d{2}-\d{2})-.+\.md$/;
 
+/**
+ * TOML allows indentation, any spacing around `=`, and a trailing comment. A
+ * note written that way must not read as having no legacy anchor.
+ */
+const LEGACY_ANCHOR =
+  /^[ \t]*legacy_anchor[ \t]*=[ \t]*(['"])(.*?)\1[ \t]*(?:#.*)?$/m;
+
 export interface Note {
   path: string;
   product: string;
@@ -85,8 +92,7 @@ export function readNotes(): Note[] {
         draft: page.draft !== 'false',
         permalink: page.permalink ?? '',
         fileDate: match[2],
-        legacyAnchor:
-          /^legacy_anchor = ['"](.*)['"]$/m.exec(frontMatter)?.[1] ?? null,
+        legacyAnchor: LEGACY_ANCHOR.exec(frontMatter)?.[2] ?? null,
       },
     ];
   });

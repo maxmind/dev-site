@@ -1,8 +1,8 @@
 /**
  * Checks the release note sources, without building the site:
  *
- * - each note's front matter as Hugo reads it, note files that Hugo drops,
- *   and note files with no date in their name
+ * - each note's front matter and URL as Hugo reads them, note files that Hugo
+ *   drops, and note files with no date in their name
  * - links in content to an anchor on a retired year page
  * - the year redirects in static/_redirects and the menu in hugo.toml
  *
@@ -56,6 +56,15 @@ function frontMatterFailures(notes: Note[]): string[] {
       failures.push(
         `${note.path}: filename says ${note.fileDate}, ` +
           `front matter says ${note.date.slice(0, 10)}`
+      );
+    }
+    // A slug or url in front matter moves the note away from its filename.
+    const slug = path.basename(note.path, '.md').toLowerCase();
+    const wanted = `/${note.product}/release-notes/${slug}/`;
+    if (note.permalink !== wanted) {
+      failures.push(
+        `${note.path}: builds to ${note.permalink}, expected ${wanted}. ` +
+          'Remove slug or url from its front matter.'
       );
     }
     if (note.legacyAnchor !== null && note.fileDate > LAST_MIGRATED) {
