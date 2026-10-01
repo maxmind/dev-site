@@ -56,17 +56,19 @@ Two main product sections under `content/`:
 
 Each has subsections for docs (databases, web-services), release notes, and guides.
 
+Each release note is its own file, `content/<product>/release-notes/YYYY-MM-DD-<slug>.md`. Create it from the `release-note` archetype (see README.md).
+
 ## Hugo Specifics
 
 ### Configuration
 
 `hugo.toml` defines the sidebar navigation menus (`menus.geoip`, `menus.minfraud`, `menus.general`). Menu structure lives here, not in frontmatter.
 
-Hugo generates both HTML and Markdown output formats for every page (configured via `[outputs]` and `[outputFormats]`).
+Hugo generates both HTML and Markdown output formats for most pages (configured via `[outputs]` and `[outputFormats]`). The home page and the release note listings have no Markdown output.
 
 ### Shortcodes
 
-Located in `layouts/shortcodes/`. Every shortcode must have both an `.html` implementation and a `.md` counterpart (enforced by linter). Key shortcodes: `alert`, `codeset`, `schema-table`, `geoip-schema-row`, `minfraud-schema-row`, `rawhtml`, `release-note`, `snippet`.
+Located in `layouts/shortcodes/`. Every shortcode must have both an `.html` implementation and a `.md` counterpart (enforced by linter). Key shortcodes: `alert`, `codeset`, `schema-table`, `geoip-schema-row`, `minfraud-schema-row`, `rawhtml`, `snippet`.
 
 ### Templates
 

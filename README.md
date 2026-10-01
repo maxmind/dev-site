@@ -132,8 +132,8 @@ independently, for example to list the services that each product affects.
 #### Setting a Description
 
 The `description` field is optional. It controls the preview card that Slack,
-email clients, and search engines show for the release note. Without it, the preview
-falls back to the opening of the release note body.
+email clients, and search engines show for the release note. Without it, these
+services usually show the opening of the release note body.
 
 ```toml
 +++
