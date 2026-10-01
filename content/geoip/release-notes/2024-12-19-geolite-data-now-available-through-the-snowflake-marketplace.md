@@ -17,7 +17,7 @@ If you don't have an existing Snowflake account, you will need to create one
 before requesting access to the GeoLite datasets. Once approved, you’ll be able
 to query GeoLite data within Snowflake.
 
-[Learn more about Geolite on Snowflake on our developer portal.](/geoip/geolite-on-snowflake/)
+[Learn more about GeoLite on Snowflake on our developer portal.](/geoip/geolite-on-snowflake/)
 
 We intend to make GeoIP databases available on Snowflake at a later date.
 
