@@ -48,6 +48,18 @@ const KNOWN_AMBIGUOUS: Record<string, string[]> = {
 
 const NOTICE = /<div[^>]*\bdata-age-notice\b[^>]*>([\s\S]*?)<\/div>/;
 
+/** The text of the blockquote in a Markdown page that holds the age notice. */
+function markdownNotice(text: string): string | null {
+  const quote = text
+    .split(/\n\s*\n/)
+    .find(
+      (block) =>
+        block.split('\n').every((line) => line.startsWith('>')) &&
+        block.includes('two years old')
+    );
+  return quote === undefined ? null : quote.replace(/^>\s?/gm, '');
+}
+
 /** Two clocks five months apart, the first in the month after `newest`. */
 function clocks(newest: string): string[] {
   const [year, month] = newest.split('-').map(Number);
@@ -171,7 +183,35 @@ function anchorFailures(
   return failures;
 }
 
-/** Mirrors `$monthStart.AddDate 0 -24 0` in the age notice partial. */
+/**
+ * Checks one rendering of a note: the notice is there only when the note is
+ * old, says the note may be out of date, and links to the listing.
+ */
+function noticeFailures(
+  page: string,
+  threshold: string,
+  wanted: boolean,
+  notice: string | null,
+  listingLink: string
+): string[] {
+  if (wanted && notice === null) {
+    return [`${page}: predates ${threshold} but has no age notice`];
+  }
+  if (!wanted && notice !== null) {
+    return [`${page}: not older than ${threshold} but has one`];
+  }
+  if (notice === null) return [];
+  const failures: string[] = [];
+  if (!/no longer reflect/i.test(notice.replace(/\s+/g, ' '))) {
+    failures.push(`${page}: notice does not say it may be out of date`);
+  }
+  if (!notice.includes(listingLink)) {
+    failures.push(`${page}: notice does not link to the listing`);
+  }
+  return failures;
+}
+
+/** Mirrors `$monthStart.AddDate 0 -24 0` in release-note-is-old.html. */
 function thresholdFor(clock: string): string {
   const [year, month] = clock.split('-');
   return `${Number(year) - 2}-${month}-01`;
@@ -196,26 +236,33 @@ function ageNoticeFailures(
       failures.push(`${note.permalink}: no built page`);
       continue;
     }
-    const notice = NOTICE.exec(fs.readFileSync(file, 'utf8'));
     const wanted = Date.parse(note.date) < cutoff;
-    if (wanted && notice === null) {
-      failures.push(
-        `${note.permalink}: predates ${threshold} but has no age notice`
-      );
-    } else if (!wanted && notice !== null) {
-      failures.push(
-        `${note.permalink}: not older than ${threshold} but has one`
-      );
-    } else if (notice !== null) {
-      if (!/no longer reflect/i.test(notice[1].replace(/\s+/g, ' '))) {
-        failures.push(
-          `${note.permalink}: notice does not say it may be out of date`
-        );
-      }
-      if (!notice[1].includes(`href="${listing}"`)) {
-        failures.push(`${note.permalink}: notice does not link to ${listing}`);
-      }
+    const html = NOTICE.exec(fs.readFileSync(file, 'utf8'))?.[1] ?? null;
+    failures.push(
+      ...noticeFailures(
+        note.permalink,
+        threshold,
+        wanted,
+        html,
+        `href="${listing}"`
+      )
+    );
+
+    // LLM tools and readers who copy the Markdown need the notice too.
+    const markdown = path.join(buildDir, note.permalink, 'index.md');
+    if (!fs.existsSync(markdown)) {
+      failures.push(`${note.permalink}: no built Markdown page`);
+      continue;
     }
+    failures.push(
+      ...noticeFailures(
+        `${note.permalink}index.md`,
+        threshold,
+        wanted,
+        markdownNotice(fs.readFileSync(markdown, 'utf8')),
+        `](${listing})`
+      )
+    );
   }
 
   listingPages(buildDir, product).forEach((page, index) => {

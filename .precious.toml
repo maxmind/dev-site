@@ -163,7 +163,8 @@ include = [
   "content/*/release-notes/*.md",
   "layouts/release-note/**",
   "layouts/partials/page.html",
-  "layouts/partials/release-note-age-notice.html",
+  "layouts/partials/release-note-*",
+  "layouts/_default/single.md",
   "assets/js/release-note-anchors.ts",
   "hugo.toml"
 ]

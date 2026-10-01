@@ -2,5 +2,6 @@
 # {{ .Title }}
 
 _{{ .Date | time.Format ":date_long" }}_
-{{ end -}}
+{{ partial "release-note-age-notice.md" . }}
+{{- end -}}
 {{- partial "clean-alerts.md" .RenderShortcodes -}}
