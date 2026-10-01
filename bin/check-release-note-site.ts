@@ -1,11 +1,14 @@
 /**
  * Checks what the built site shows: the anchor map that sends an old fragment
- * link to its note, and the age notice on old notes.
+ * link to its note, the RSS feed, and the age notice on old notes.
  *
  * It builds at two clocks five months apart, so a notice that ignores the
  * build month fails. Both clocks fall after the newest note, because Hugo does
- * not build a note dated after the clock. The anchor map does not depend on
- * the clock, so only the first build checks it.
+ * not build a note dated after the clock. The anchor map and the feed do not
+ * depend on the clock, so only the first build checks them.
+ *
+ * The builds use an absolute base URL, as production does, and add one test
+ * note per product from a temporary folder. The repository does not change.
  *
  * Usage:
  *   node --experimental-strip-types bin/check-release-note-site.ts
@@ -46,6 +49,22 @@ const KNOWN_AMBIGUOUS: Record<string, string[]> = {
   ],
 };
 
+/**
+ * services.rss.limit in hugo.toml. A larger limit lets HubSpot mail more old
+ * notes if their guids ever change, so a change here must be deliberate.
+ */
+const FEED_LIMIT = 50;
+
+/**
+ * Production builds with an absolute base URL, so the feed guids are absolute
+ * there. With a relative base, a switch to relative guids would pass.
+ */
+const BASE_URL = 'https://example.test/';
+
+/** The RFC 822 form that the feed template writes for pubDate. */
+const RSS_DATE =
+  /^[A-Z][a-z]{2}, \d{2} [A-Z][a-z]{2} \d{4} \d{2}:\d{2}:\d{2} [+-]\d{4}$/;
+
 const NOTICE = /<div[^>]*\bdata-age-notice\b[^>]*>([\s\S]*?)<\/div>/;
 
 /** The text of the blockquote in a Markdown page that holds the age notice. */
@@ -68,13 +87,77 @@ function clocks(newest: string): string[] {
   );
 }
 
-function build(clock: string): string | null {
+/**
+ * Every real note was migrated from a year page, so the feed has no newer note
+ * to check. This one is dated the day after the newest note, with a negative
+ * UTC offset, which still falls before the first clock.
+ */
+function testNote(product: string, newest: string): Note {
+  const [year, month, day] = newest.split('-').map(Number);
+  const fileDate = new Date(Date.UTC(year, month - 1, day + 1))
+    .toISOString()
+    .slice(0, 10);
+  const name = `${fileDate}-feed-check-note`;
+  return {
+    path: `(test note) ${product}/${name}.md`,
+    product,
+    title: 'Feed check note',
+    date: `${fileDate}T09:30:00-04:00`,
+    draft: false,
+    permalink: `/${product}/release-notes/${name}/`,
+    fileDate,
+    legacyAnchor: null,
+  };
+}
+
+/**
+ * Writes the test notes and a config that mounts them into the release note
+ * folders. The config is hugo.toml plus the mounts, because a second config
+ * file would replace the mounts that hugo.toml defines.
+ */
+function writeFixtures(dir: string, notes: Note[]): string {
+  const mounts = [
+    '[[module.mounts]]\n  source = "content"\n  target = "content"',
+  ];
+  for (const note of notes) {
+    const folder = path.join(dir, note.product);
+    fs.mkdirSync(folder, { recursive: true });
+    fs.writeFileSync(
+      path.join(folder, `${path.basename(note.permalink)}.md`),
+      `+++\ntitle = '${note.title}'\ndate = ${note.date}\ndraft = false\n+++\n\n` +
+        'This note exists only in the release note site check.\n'
+    );
+    mounts.push(
+      `[[module.mounts]]\n  source = ${JSON.stringify(folder)}\n` +
+        `  target = "content/${note.product}/release-notes"`
+    );
+  }
+  const config = path.join(dir, 'hugo.toml');
+  fs.writeFileSync(
+    config,
+    `${fs.readFileSync(path.join(ROOT, 'hugo.toml'), 'utf8')}\n${mounts.join('\n')}\n`
+  );
+  return config;
+}
+
+function build(clock: string, config: string): string | null {
   const dir = fs.mkdtempSync(path.join(os.tmpdir(), 'release-note-site-'));
   try {
-    execFileSync('hugo', ['--quiet', '--clock', clock, '--destination', dir], {
-      cwd: ROOT,
-      stdio: ['ignore', 'ignore', 'inherit'],
-    });
+    execFileSync(
+      'hugo',
+      [
+        '--quiet',
+        '--clock',
+        clock,
+        '--baseURL',
+        BASE_URL,
+        '--config',
+        config,
+        '--destination',
+        dir,
+      ],
+      { cwd: ROOT, stdio: ['ignore', 'ignore', 'inherit'] }
+    );
     return dir;
   } catch {
     fs.rmSync(dir, { recursive: true, force: true });
@@ -211,6 +294,83 @@ function noticeFailures(
   return failures;
 }
 
+interface FeedItem {
+  link: string;
+  guid: string;
+  pubDate: string;
+}
+
+function readFeed(file: string): FeedItem[] {
+  const xml = fs.readFileSync(file, 'utf8');
+  return [...xml.matchAll(/<item>([\s\S]*?)<\/item>/g)].map(([, item]) => {
+    const field = (tag: string): string =>
+      new RegExp(`<${tag}>([\\s\\S]*?)</${tag}>`).exec(item)?.[1].trim() ?? '';
+    return {
+      link: field('link'),
+      guid: field('guid'),
+      pubDate: field('pubDate'),
+    };
+  });
+}
+
+/**
+ * HubSpot mails a feed item again when its guid or pubDate changes. A migrated
+ * note must keep the guid and 16:00Z pubDate that the year-page feed gave it.
+ */
+function feedFailures(
+  buildDir: string,
+  product: string,
+  notes: Note[]
+): string[] {
+  const file = path.join(buildDir, product, 'release-notes', 'index.xml');
+  if (!fs.existsSync(file)) return ['feed missing'];
+  const items = readFeed(file);
+  const failures: string[] = [];
+
+  const expected = notes
+    .toSorted((a, b) => Date.parse(b.date) - Date.parse(a.date))
+    .slice(0, FEED_LIMIT);
+  if (items.length !== expected.length) {
+    failures.push(
+      `feed has ${items.length} items, expected ${expected.length}`
+    );
+  }
+
+  expected.forEach((note, index) => {
+    const item = items.at(index);
+    if (item === undefined) return;
+    const where = `feed item ${index + 1}`;
+    const link = new URL(note.permalink, BASE_URL).href;
+    if (item.link !== link) {
+      failures.push(`${where}: link is ${item.link}, expected ${link}`);
+      return;
+    }
+    const legacy = note.legacyAnchor !== null;
+    const guid = legacy
+      ? new URL(
+          `/${product}/release-notes/${note.fileDate.slice(0, 4)}/#${note.legacyAnchor}`,
+          BASE_URL
+        ).href
+      : link;
+    const published = legacy
+      ? Date.parse(`${note.fileDate}T16:00:00Z`)
+      : Date.parse(note.date);
+    if (item.guid !== guid) {
+      failures.push(`${where}: guid is ${item.guid}, expected ${guid}`);
+    }
+    if (!RSS_DATE.test(item.pubDate)) {
+      failures.push(`${where}: pubDate "${item.pubDate}" is not RFC 822`);
+    } else if (Date.parse(item.pubDate) !== published) {
+      failures.push(
+        `${where}: pubDate is ${item.pubDate}, expected ` +
+          new Date(published).toUTCString()
+      );
+    }
+  });
+
+  return failures;
+}
+
 /** Mirrors `$monthStart.AddDate 0 -24 0` in release-note-is-old.html. */
 function thresholdFor(clock: string): string {
   const [year, month] = clock.split('-');
@@ -290,29 +450,49 @@ function check(): void {
     return;
   }
   const notes = Map.groupBy(all, (note) => note.product);
+  const tests = PRODUCTS.map((product) => testNote(product, newest));
+  const fixtures = fs.mkdtempSync(
+    path.join(os.tmpdir(), 'release-note-fixtures-')
+  );
+  const config = writeFixtures(fixtures, tests);
 
   const failures: string[] = [];
-  clocks(newest).forEach((clock, index) => {
-    const buildDir = build(clock);
-    if (buildDir === null) {
-      failures.push(`the site does not build at ${clock}`);
-      return;
-    }
-    try {
-      for (const product of PRODUCTS) {
-        const own = notes.get(product) ?? [];
-        const found = [
-          ...(index === 0 ? anchorFailures(buildDir, product, own) : []),
-          ...ageNoticeFailures(buildDir, clock, product, own),
-        ];
-        failures.push(...found.map((failure) => `${product}: ${failure}`));
+  try {
+    clocks(newest).forEach((clock, index) => {
+      const buildDir = build(clock, config);
+      if (buildDir === null) {
+        failures.push(`the site does not build at ${clock}`);
+        return;
       }
-    } finally {
-      fs.rmSync(buildDir, { recursive: true, force: true });
-    }
-  });
+      try {
+        for (const product of PRODUCTS) {
+          const own = notes.get(product) ?? [];
+          const found = [
+            ...(index === 0
+              ? [
+                  ...anchorFailures(buildDir, product, own),
+                  ...feedFailures(buildDir, product, [
+                    ...own,
+                    ...tests.filter((note) => note.product === product),
+                  ]),
+                ]
+              : []),
+            ...ageNoticeFailures(buildDir, clock, product, own),
+          ];
+          failures.push(...found.map((failure) => `${product}: ${failure}`));
+        }
+      } finally {
+        fs.rmSync(buildDir, { recursive: true, force: true });
+      }
+    });
+  } finally {
+    fs.rmSync(fixtures, { recursive: true, force: true });
+  }
 
-  finish(failures, 'OK anchor map and age notices hold for both products');
+  finish(
+    failures,
+    'OK anchor map, feed, and age notices hold for both products'
+  );
 }
 
 check();
