@@ -1,7 +1,7 @@
----
-draft: false
-title: GeoIP Connection Type Databases
----
++++
+draft = false
+title = 'GeoIP Connection Type Databases'
++++
 
 Determine the connection type of your visitors based on their IP address. The
 database identifies cellular, cable/DSL, corporate, and satellite connection types.

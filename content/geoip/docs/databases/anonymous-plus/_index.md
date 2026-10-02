@@ -1,7 +1,7 @@
----
-draft: false
-title: GeoIP Anonymous Plus Databases
----
++++
+draft = false
+title = 'GeoIP Anonymous Plus Databases'
++++
 
 {{< alert warning >}} The GeoIP Anonymous Plus database is under active
 development. New fields are expected to be added. Please design your

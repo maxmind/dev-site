@@ -1,8 +1,7 @@
----
-draft: false
-title:
-  Geolocate an IP address using Web Services with the client-side JavaScript
----
++++
+draft = false
+title = 'Geolocate an IP address using Web Services with the client-side JavaScript'
++++
 
 Our GeoIP JavaScript client allows you to use GeoIP web services client-side
 without doing any server-side integration on your end. While it is convenient,

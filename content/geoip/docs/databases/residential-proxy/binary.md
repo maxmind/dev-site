@@ -1,7 +1,7 @@
----
-draft: false
-title: GeoIP Residential Proxy binary database fields
----
++++
+draft = false
+title = 'GeoIP Residential Proxy binary database fields'
++++
 
 The GeoIP Residential Proxy binary database contains the following fields for each
 network.

@@ -1,7 +1,7 @@
----
-draft: false
-title: minFraud Legacy Web Service API
----
++++
+draft = false
+title = 'minFraud Legacy Web Service API'
++++
 
 {{< alert danger >}} We have made a number of data changes to the minFraud
 Legacy Standard and Premium, and GeoIP Legacy City and Insights (formerly Omni)

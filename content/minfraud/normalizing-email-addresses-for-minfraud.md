@@ -1,7 +1,7 @@
----
-draft: false
-title: Normalizing Email Addresses for minFraud
----
++++
+draft = false
+title = 'Normalizing Email Addresses for minFraud'
++++
 
 When providing an email address as an input to the minFraud services, you can
 provide it either as plain text or as an MD5 hash.

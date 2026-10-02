@@ -1,7 +1,7 @@
----
-draft: false
-title: Working with Transaction Dispositions
----
++++
+draft = false
+title = 'Working with Transaction Dispositions'
++++
 
 With minFraud Interactive, customers can create Custom Rules that are used to
 assign a disposition to every transaction received in a minFraud request. Custom

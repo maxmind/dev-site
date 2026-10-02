@@ -1,0 +1,7 @@
+{{- if partial "release-note-is-old.html" . }}
+  <div class="alert alert--warning" data-age-notice>
+    This release note is more than two years old and may no longer reflect
+    current behavior. View the
+    <a href="{{ .CurrentSection.RelPermalink }}">latest release notes</a>.
+  </div>
+{{- end }}

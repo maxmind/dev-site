@@ -49,6 +49,8 @@
     "lint:shortcode-parity": "node --experimental-strip-types ./bin/check-shortcode-parity.ts",
     "lint:prettierignore-rawhtml": "node --experimental-strip-types ./bin/check-prettierignore-rawhtml.ts",
     "lint:internal-links": "node --experimental-strip-types ./bin/check-internal-links.ts",
+    "lint:release-note-sources": "node --experimental-strip-types ./bin/check-release-note-sources.ts",
+    "lint:release-note-site": "node --experimental-strip-types ./bin/check-release-note-site.ts",
     "prettier:ts": "prettier --write './assets/js/**'",
     "format:rawhtml": "pnpm exec tsc -p tsconfig.format-rawhtml.json && node dist/format-rawhtml.js"
   },

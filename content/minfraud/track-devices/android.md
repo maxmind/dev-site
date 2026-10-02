@@ -1,7 +1,7 @@
----
-draft: false
-title: Android
----
++++
+draft = false
+title = 'Android'
++++
 
 {{< alert warning >}} The MaxMind Device SDK for Android is currently in beta.
 {{</ alert >}}

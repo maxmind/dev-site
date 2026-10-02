@@ -1,7 +1,7 @@
----
-draft: false
-title: GeoIP and GeoLite
----
++++
+draft = false
+title = 'GeoIP and GeoLite'
++++
 
 MaxMind’s GeoIP and GeoLite IP intelligence products and services are used to
 discover information about a specific IP address. We provide free and paid web

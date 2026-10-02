@@ -1,7 +1,7 @@
----
-draft: false
-title: Web
----
++++
+draft = false
+title = 'Web'
++++
 
 The Device Tracking Add-On is JavaScript code for you to add to your website. It
 runs on a visiting device so that the minFraud service can assign a Device ID

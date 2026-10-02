@@ -1,7 +1,7 @@
----
-draft: false
-title: License Key Validation API
----
++++
+draft = false
+title = 'License Key Validation API'
++++
 
 MaxMind provides a License Key Validation API, a tool for developers and
 organizations seeking to verify the validity of MaxMind license keys within

@@ -1,0 +1,29 @@
+{{ define "main" }}
+  <div class="page__wrapper">
+    <div class="page__sidebar">
+      {{ partial "sidebar.html" . }}
+    </div>
+    <div class="page__content" data-release-note-listing>
+      <h1 class="page__title">{{ .Title }}</h1>
+
+      {{ .Content }}
+
+      {{ $notes := .Paginate .Pages.ByDate.Reverse }}
+      {{ range $notes.Pages }}
+        {{/* Filename, not legacy_anchor: several notes share an anchor, so it
+             cannot be a unique id. anchors.json carries the old links. */}}
+        <div class="release-note">
+          <h2 class="release-note__title" id="{{ .File.ContentBaseName }}">
+            <a class="heading-anchor" href="{{ .RelPermalink }}">{{ .Title }}</a>
+          </h2>
+          <em class="release-note__date">{{ .Date | time.Format ":date_long" }}</em>
+          <div class="release-note__content">
+            {{ .Content }}
+          </div>
+        </div>
+      {{ end }}
+
+      {{ partial "release-note-pager.html" $notes }}
+    </div>
+  </div>
+{{ end }}

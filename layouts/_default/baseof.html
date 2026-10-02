@@ -40,6 +40,7 @@
   {{ $sidebar := resources.Get "js/sidebar.ts" | js.Build }}
   {{ $systemStatus := resources.Get "js/system-status.ts" | js.Build }}
   {{ $copyMarkdown := resources.Get "js/copy-markdown.ts" | js.Build }}
-  {{ $js := slice $codeset $geoipCrontab $sidebar $systemStatus $copyMarkdown | resources.Concat "js/bundle.js" }}
+  {{ $releaseNoteAnchors := resources.Get "js/release-note-anchors.ts" | js.Build }}
+  {{ $js := slice $codeset $geoipCrontab $sidebar $systemStatus $copyMarkdown $releaseNoteAnchors | resources.Concat "js/bundle.js" }}
   <script type="module" src="{{ $js.RelPermalink }}"></script>
 </html>

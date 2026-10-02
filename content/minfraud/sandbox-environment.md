@@ -1,7 +1,7 @@
----
-draft: false
-title: Testing minFraud in the MaxMind Sandbox
----
++++
+draft = false
+title = 'Testing minFraud in the MaxMind Sandbox'
++++
 
 {{< snippet "snippets/sandbox-intro.md" >}}
 

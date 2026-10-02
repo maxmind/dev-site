@@ -1,7 +1,7 @@
----
-draft: false
-title: GeoIP Residential Proxy Databases
----
++++
+draft = false
+title = 'GeoIP Residential Proxy Databases'
++++
 
 {{< alert warning >}} The GeoIP Residential Proxy database is under active
 development. New fields are expected to be added. Please design your

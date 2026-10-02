@@ -1,7 +1,7 @@
----
-draft: false
-title: Track Location Name Updates
----
++++
+draft = false
+title = 'Track Location Name Updates'
++++
 
 MaxMind sources most of our place names (country, subdivision, and city names)
 from [GeoNames](https://www.geonames.org/). We update place names based on

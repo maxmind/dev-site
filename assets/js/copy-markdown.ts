@@ -1,6 +1,13 @@
 // Copy page content as markdown for LLM consumption
 
 function initCopyMarkdown() {
+  // A page without a Markdown rendering gets no copy control.
+  const alternate = document.querySelector<HTMLLinkElement>(
+    'link[rel="alternate"][type="text/markdown"]'
+  );
+  if (alternate === null) return;
+  const markdownPath = alternate.href;
+
   // Create the copy button
   const copyButton = document.createElement('button');
   copyButton.className = 'copy-markdown-btn';
@@ -21,20 +28,6 @@ function initCopyMarkdown() {
   // Handle button click
   copyButton.addEventListener('click', async (e) => {
     e.preventDefault();
-
-    // Get the current path and convert to markdown path
-    const currentPath = window.location.pathname;
-    let markdownPath = currentPath;
-
-    // If the path ends with / or /index.html, append index.md
-    if (markdownPath.endsWith('/')) {
-      markdownPath += 'index.md';
-    } else if (markdownPath.endsWith('/index.html')) {
-      markdownPath = markdownPath.replace('/index.html', '/index.md');
-    } else if (!markdownPath.endsWith('.md')) {
-      // For other HTML files, replace .html with .md
-      markdownPath = markdownPath.replace('.html', '.md');
-    }
 
     try {
       // Show loading state
@@ -94,10 +87,13 @@ function initCopyMarkdown() {
   // Find the page content container and add the button
   const pageContent = document.querySelector('.page__content');
   if (pageContent) {
-    // Insert the button after the title or at the beginning of content
+    // A release note shows its date under the title. Put the button below the
+    // date, not between the two.
     const pageTitle = pageContent.querySelector('.page__title');
-    if (pageTitle) {
-      pageTitle.insertAdjacentElement('afterend', copyButton);
+    const noteDate = pageContent.querySelector('.release-note__date');
+    const precedingElement = noteDate ?? pageTitle;
+    if (precedingElement) {
+      precedingElement.insertAdjacentElement('afterend', copyButton);
     } else {
       pageContent.insertBefore(copyButton, pageContent.firstChild);
     }

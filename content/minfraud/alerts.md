@@ -1,7 +1,7 @@
----
-draft: false
-title: minFraud Alerts
----
++++
+draft = false
+title = 'minFraud Alerts'
++++
 
 After initial scoring, we continue to monitor transactions with risk scores less
 than or equal to 10 for another 24 hours. If we receive new information related

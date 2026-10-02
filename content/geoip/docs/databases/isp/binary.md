@@ -1,7 +1,7 @@
----
-draft: false
-title: GeoIP ISP binary database fields
----
++++
+draft = false
+title = 'GeoIP ISP binary database fields'
++++
 
 The GeoIP ISP binary database contains the following fields for each network.
 

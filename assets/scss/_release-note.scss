@@ -2,6 +2,19 @@
   margin-bottom: calc(var(--mm-spacing) * 1.5);
 }
 
+// A title in the listing links to the note's own page, not to a fragment on
+// this one, so the '#' marker a heading anchor shows on hover would promise the
+// wrong thing. The title takes the marker's hover color instead.
+.release-note__title .heading-anchor {
+  &::before {
+    content: none;
+  }
+
+  &:hover {
+    color: var(--mm-color-logo-blue-light);
+  }
+}
+
 .release-note__date {
   display: block;
   font-style: italic;

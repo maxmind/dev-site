@@ -1,7 +1,7 @@
----
-draft: false
-title: GeoLite Databases and Web Services
----
++++
+draft = false
+title = 'GeoLite Databases and Web Services'
++++
 
 MaxMind offers free geolocation and ASN data in downloadable database and web
 service formats.

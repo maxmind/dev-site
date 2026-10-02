@@ -1,7 +1,7 @@
----
-draft: false
-title: Proxy Detection Legacy Web Service
----
++++
+draft = false
+title = 'Proxy Detection Legacy Web Service'
++++
 
 {{< alert warning >}} To learn more about the risk associated with a particular
 IP address, use the [minFraud Score service](/minfraud/evaluate-a-transaction/).

@@ -1,7 +1,7 @@
----
-draft: false
-title: Upgrading GeoIP Update from v3.x to v4.0 and higher
----
++++
+draft = false
+title = 'Upgrading GeoIP Update from v3.x to v4.0 and higher'
++++
 
 {{< alert info >}} In 2019, we released a new major version of `geoipupdate`.
 This document describes how you can upgrade from versions 3.x to versions 4.x

@@ -99,7 +99,7 @@ title = 'MaxMind'
       weight = 90
     [[menus.minfraud]]
       name = 'minFraud Release Notes'
-      pageRef = '/minfraud/release-notes/2026'
+      pageRef = '/minfraud/release-notes'
       parent = 'minFraud'
       weight = 100
   [[menus.geoip]]
@@ -263,7 +263,7 @@ title = 'MaxMind'
       weight = 90
     [[menus.geoip]]
       name = 'GeoIP Release Notes'
-      pageRef = '/geoip/release-notes/2026'
+      pageRef = '/geoip/release-notes'
       parent = 'GeoIP'
       weight = 100
 
@@ -301,7 +301,7 @@ title = 'MaxMind'
     target = "static/maxmind-server-ip-addresses.json"
 
 [outputs]
-  home = ["HTML", "MARKDOWN"]
+  home = ["HTML"]
   page = ["HTML", "MARKDOWN"]
   section = ["HTML", "MARKDOWN"]
   taxonomy = ["HTML", "MARKDOWN"]
@@ -313,9 +313,20 @@ title = 'MaxMind'
     baseName = "index"
     notAlternative = true
 
+  # Legacy anchor map for the release note listing; see release-note-anchors.ts.
+  [outputFormats.ANCHORS]
+    mediaType = "application/json"
+    baseName = "anchors"
+    isPlainText = true
+    notAlternative = true
+
 [mediaTypes]
   [mediaTypes."text/markdown"]
     suffixes = ["md"]
+
+[pagination]
+  # Only layouts/release-note/list.html calls .Paginate, so only it uses this.
+  pagerSize = 40
 
 [services]
   [services.rss]

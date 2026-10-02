@@ -1,7 +1,7 @@
----
-draft: false
-title: GeoIP Static IP Score Databases
----
++++
+draft = false
+title = 'GeoIP Static IP Score Databases'
++++
 
 This database indicates how static or dynamic an IP address is, which can be
 useful for deciding whether an IP address represents the same user over time.

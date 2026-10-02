@@ -1,7 +1,7 @@
----
-draft: false
-title: GeoIP and GeoLite Database Documentation
----
++++
+draft = false
+title = 'GeoIP and GeoLite Database Documentation'
++++
 
 ## Databases
 

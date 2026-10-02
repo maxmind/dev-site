@@ -1,7 +1,7 @@
----
-draft: false
-title: Track Devices
----
++++
+draft = false
+title = 'Track Devices'
++++
 
 The Device Tracking Add-On for the minFraud services identifies devices as they
 move across networks and enhances the ability of the minFraud services to detect

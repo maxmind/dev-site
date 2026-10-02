@@ -1,7 +1,7 @@
----
-draft: false
-title: GeoIP Domain Databases
----
++++
+draft = false
+title = 'GeoIP Domain Databases'
++++
 
 Look up the second-level domain names associated with IPv4 and IPv6 addresses.
 

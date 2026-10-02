@@ -1,7 +1,7 @@
----
-draft: false
-title: GeoIP Connection Type binary database fields
----
++++
+draft = false
+title = 'GeoIP Connection Type binary database fields'
++++
 
 The GeoIP Connection Type binary database contains the following fields for each
 network.

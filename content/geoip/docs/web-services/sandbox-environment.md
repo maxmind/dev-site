@@ -1,7 +1,7 @@
----
-draft: false
-title: Testing GeoIP Web Services in the MaxMind Sandbox
----
++++
+draft = false
+title = 'Testing GeoIP Web Services in the MaxMind Sandbox'
++++
 
 {{< snippet "snippets/sandbox-intro.md" >}}
 

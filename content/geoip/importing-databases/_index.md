@@ -1,8 +1,8 @@
----
-draft: false
-title: Importing Databases
-icon: DatabaseIcon
----
++++
+draft = false
+title = 'Importing Databases'
+icon = 'DatabaseIcon'
++++
 
 Learn how to import GeoIP and GeoLite CSV format databases into popular SQL
 database platforms.

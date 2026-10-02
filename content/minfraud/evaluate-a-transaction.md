@@ -1,7 +1,7 @@
----
-draft: false
-title: Evaluate a Transaction
----
++++
+draft = false
+title = 'Evaluate a Transaction'
++++
 
 Evaluating a transaction consists of setting up device tracking, creating an
 object that contains the details of the transaction, and then submitting the

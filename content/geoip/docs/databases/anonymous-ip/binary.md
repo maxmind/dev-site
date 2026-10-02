@@ -1,7 +1,7 @@
----
-draft: false
-title: GeoIP Anonymous IP binary database fields
----
++++
+draft = false
+title = 'GeoIP Anonymous IP binary database fields'
++++
 
 The GeoIP Anonymous IP binary database contains the following fields for each
 network.

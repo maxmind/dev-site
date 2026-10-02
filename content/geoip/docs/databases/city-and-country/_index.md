@@ -1,7 +1,7 @@
----
-draft: false
-title: GeoIP and GeoLite City and Country Databases
----
++++
+draft = false
+title = 'GeoIP and GeoLite City and Country Databases'
++++
 
 Determine the country, subdivisions (regions), city, and postal code associated
 with IPv4 and IPv6 addresses worldwide.

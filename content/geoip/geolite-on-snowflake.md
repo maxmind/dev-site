@@ -1,7 +1,7 @@
----
-draft: false
-title: GeoLite on Snowflake
----
++++
+draft = false
+title = 'GeoLite on Snowflake'
++++
 
 MaxMind offers our GeoLite data through the
 [Snowflake Marketplace](https://app.snowflake.com/marketplace/providers/GZ2FTZ5POF7/MaxMind).

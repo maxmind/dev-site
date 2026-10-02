@@ -1,7 +1,7 @@
----
-draft: false
-title: GeoIP Static IP Score binary database fields
----
++++
+draft = false
+title = 'GeoIP Static IP Score binary database fields'
++++
 
 The GeoIP Static IP Score binary database contains the following fields for each
 network.

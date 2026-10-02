@@ -1,7 +1,7 @@
----
-draft: false
-title: GeoIP IP Risk binary database fields
----
++++
+draft = false
+title = 'GeoIP IP Risk binary database fields'
++++
 
 The GeoIP IP Risk binary database contains the following fields for each network.
 
