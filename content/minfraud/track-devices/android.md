@@ -10,9 +10,19 @@ The MaxMind Device SDK for Android collects device data and sends it to MaxMind
 so that the minFraud service can assign a Device ID and begin collecting
 fingerprint information.
 
+## Requirements
+
+- Android API 27+ (Android 8.1+)
+- A recent stable version of Kotlin
+- AndroidX libraries
+
 ## Installation
 
-Add the MaxMind Device SDK dependency to your app-level `build.gradle` file.
+Add the MaxMind Device SDK dependency to your app-level `build.gradle.kts` or
+`build.gradle` file. The coroutine examples below also require
+`androidx.lifecycle:lifecycle-runtime-ktx` and
+`org.jetbrains.kotlinx:kotlinx-coroutines-android`. Your app must declare these
+dependencies because the SDK does not include them.
 
 {{< codeset >}}
 
@@ -21,6 +31,8 @@ Add the MaxMind Device SDK dependency to your app-level `build.gradle` file.
 dependencies {
     // Check https://search.maven.org/artifact/com.maxmind.device/device-sdk for the latest version.
     implementation("com.maxmind.device:device-sdk:0.3.1")
+    implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.11.0")
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.11.0")
 }
 ```
 
@@ -29,6 +41,8 @@ dependencies {
 dependencies {
     // Check https://search.maven.org/artifact/com.maxmind.device/device-sdk for the latest version.
     implementation 'com.maxmind.device:device-sdk:0.3.1'
+    implementation 'androidx.lifecycle:lifecycle-runtime-ktx:2.11.0'
+    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.11.0'
 }
 ```
 
@@ -64,9 +78,14 @@ class MyApplication : Application() {
 Call `collectAndSend()` to collect device data and send it to MaxMind. This is a
 suspend function designed for use with Kotlin coroutines.
 
+Run the following examples from an AndroidX activity or fragment with a
+`lifecycleScope`.
+
 ```kotlin
 import android.util.Log
+import androidx.lifecycle.lifecycleScope
 import com.maxmind.device.DeviceTracker
+import kotlinx.coroutines.launch
 
 lifecycleScope.launch {
     DeviceTracker.getInstance().collectAndSend()
@@ -79,9 +98,11 @@ lifecycleScope.launch {
 }
 ```
 
-A callback-based API is also available for Java compatibility. See the
-[SDK documentation](https://github.com/maxmind/device-android#readme) for
-details.
+A callback-based API is also available. Java callers need a Kotlin bridge to
+read the tracking token because Kotlin's `Result<T>` has limited Java
+interoperability. See the
+[Java bridge example](https://github.com/maxmind/device-android/tree/v0.3.1#java-example)
+in the SDK documentation.
 
 ## Explicit device linking examples
 
@@ -90,7 +111,9 @@ your backend for inclusion in the minFraud API request.
 
 ```kotlin
 import android.util.Log
+import androidx.lifecycle.lifecycleScope
 import com.maxmind.device.DeviceTracker
+import kotlinx.coroutines.launch
 
 lifecycleScope.launch {
     DeviceTracker.getInstance().collectAndSend()
