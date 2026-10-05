@@ -115,7 +115,6 @@
 /static/GeoIP2-Country-CSV_Example.zip /examples/GeoIP2-Country-CSV_Example.zip 301
 /static/GeoIP2-Domain-CSV_Example.zip /examples/GeoIP2-Domain-CSV_Example.zip 301
 /static/GeoIP2-Enterprise-CSV_Example.zip /examples/GeoIP2-Enterprise-CSV_Example.zip 301
-/static/GeoIP2-IP-Risk-CSV_Example.zip /examples/GeoIP2-IP-Risk-CSV_Example.zip 301
 /static/GeoIP2-ISP-CSV_Example.zip /examples/GeoIP2-ISP-CSV_Example.zip 301
 /static/GeoIP2-Static-IP-Score-CSV_Example.zip /examples/GeoIP2-Static-IP-Score-CSV_Example.zip 301
 /static/GeoIP2-User-Count-CSV_Example.zip /examples/GeoIP2-User-Count-CSV_Example.zip 301
