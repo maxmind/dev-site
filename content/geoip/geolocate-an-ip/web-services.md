@@ -79,6 +79,9 @@ will need your MaxMind
 Our clients also allow you to interact with our GeoLite API, but this requires
 additional configuration as demonstrated below:
 
+In the C#, Java, and JavaScript examples, replace the GeoIP client declaration
+with the commented GeoLite alternative to query GeoLite.
+
 {{< codeset >}}
 
 ```csharp
@@ -89,7 +92,7 @@ var client = new WebServiceClient(accountId, licenseKey);
 
 // To query the GeoLite web service, you must set the optional `host` parameter
 // to `geolite.info`
-var client = new WebServiceClient(accountId, licenseKey, host: "geolite.info");
+// var client = new WebServiceClient(accountId, licenseKey, host: "geolite.info");
 ```
 
 ```java
@@ -100,8 +103,8 @@ WebServiceClient client = new WebServiceClient.Builder(accountId, licenseKey).bu
 
 // To query the GeoLite web service, you must call the `host` method on the
 // builder with "geolite.info"
-WebServiceClient client = new WebServiceClient.Builder(accountId, licenseKey)
-    .host("geolite.info").build();
+// WebServiceClient client = new WebServiceClient.Builder(accountId, licenseKey)
+//     .host("geolite.info").build();
 ```
 
 ```javascript
@@ -113,9 +116,9 @@ const licenseKey = 'LICENSEKEY';
 const client = new WebServiceClient(accountId, licenseKey);
 
 // To query the GeoLite web service, you must set the optional `host` parameter
-const client = new WebServiceClient(accountId, licenseKey, {
-  host: 'geolite.info',
-});
+// const client = new WebServiceClient(accountId, licenseKey, {
+//   host: 'geolite.info',
+// });
 ```
 
 ```php
@@ -215,20 +218,19 @@ using (var client = new WebServiceClient(accountId, licenseKey))
 int accountId = 10;
 String licenseKey = "LICENSEKEY";
 
-try (WebServiceClient client = new WebServiceClient.Builder(accountId, licenseKey)
-        .build()) {
+WebServiceClient client = new WebServiceClient.Builder(accountId, licenseKey)
+    .build();
 
-    InetAddress ipAddress = InetAddress.getByName("128.101.101.101");
+InetAddress ipAddress = InetAddress.getByName("128.101.101.101");
 
-    // You can also use `client.city` or `client.insights`
-    // `client.insights` is not available to GeoLite users
-    CountryResponse response = client.country(ipAddress);
+// You can also use `client.city` or `client.insights`
+// `client.insights` is not available to GeoLite users
+CountryResponse response = client.country(ipAddress);
 
-    Country country = response.country();
-    System.out.println(country.isoCode());            // 'US'
-    System.out.println(country.name());               // 'United States'
-    System.out.println(country.names().get("zh-CN")); // '美国'
-}
+Country country = response.country();
+System.out.println(country.isoCode());            // 'US'
+System.out.println(country.name());               // 'United States'
+System.out.println(country.names().get("zh-CN")); // '美国'
 ```
 
 ```javascript
