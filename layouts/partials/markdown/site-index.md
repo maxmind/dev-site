@@ -6,11 +6,11 @@
 
 {{ range sort (where site.Pages "Section" .Section) "Path" -}}
 {{- if and .IsPage (eq .CurrentSection.Type "release-note") }}{{ continue }}{{ end -}}
-- [{{ .Title }}]({{ (.OutputFormats.Get "MARKDOWN").Permalink }})
+- [{{ .LinkTitle }}]({{ (.OutputFormats.Get "MARKDOWN").Permalink }})
 {{ end }}
 {{- end }}
 ## General
 
 {{ range site.Home.RegularPages -}}
-- [{{ .Title }}]({{ (.OutputFormats.Get "MARKDOWN").Permalink }})
+- [{{ .LinkTitle }}]({{ (.OutputFormats.Get "MARKDOWN").Permalink }})
 {{ end -}}

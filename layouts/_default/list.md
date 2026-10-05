@@ -4,5 +4,5 @@
 {{ end }}## Pages in this section
 
 {{ range .Pages -}}
-- [{{ .Title }}]({{ (.OutputFormats.Get "MARKDOWN").Permalink }})
+- [{{ .LinkTitle }}]({{ (.OutputFormats.Get "MARKDOWN").Permalink }})
 {{ end -}}
