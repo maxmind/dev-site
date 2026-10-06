@@ -19,57 +19,7 @@ details on our REST API.
 We have a collection of officially supported libraries for you to interact with
 the GeoIP and GeoLite APIs:
 
-{{< codeset >}}
-
-```csharp
-// Install via NuGet
-Install-Package MaxMind.GeoIP2
-```
-
-```java
-// Install via Maven, recommended
-<dependency>
-  <groupId>com.maxmind.geoip2</groupId>
-  <artifactId>geoip2</artifactId>
-  <version>5.1.0</version>
-</dependency>
-
-// Or install via Gradle
-repositories {
-  mavenCentral()
-}
-dependencies {
-  implementation 'com.maxmind.geoip2:geoip2:5.1.0'
-}
-```
-
-```javascript
-// Install via npm
-npm install @maxmind/geoip2-node
-
-// Or install via yarn
-yarn add @maxmind/geoip2-node
-```
-
-```php
-# Install via Composer
-composer require geoip2/geoip2:~3.0
-```
-
-```python
-# Install via pip
-pip install geoip2
-```
-
-```ruby
-# Install as a gem
-gem install maxmind-geoip2
-
-# Or add this to your Gemfile
-gem 'maxmind-geoip2'
-```
-
-{{< /codeset >}}
+{{< snippet "snippets/geoip-client-install.md" >}}
 
 ### 2. Create and configure a GeoIP client object
 
@@ -78,6 +28,9 @@ will need your MaxMind
 [account ID and license key](https://www.maxmind.com/en/accounts/current/license-key).
 Our clients also allow you to interact with our GeoLite API, but this requires
 additional configuration as demonstrated below:
+
+In the C#, Java, and JavaScript examples, replace the GeoIP client declaration
+with the commented GeoLite alternative to query GeoLite.
 
 {{< codeset >}}
 
@@ -89,7 +42,7 @@ var client = new WebServiceClient(accountId, licenseKey);
 
 // To query the GeoLite web service, you must set the optional `host` parameter
 // to `geolite.info`
-var client = new WebServiceClient(accountId, licenseKey, host: "geolite.info");
+// var client = new WebServiceClient(accountId, licenseKey, host: "geolite.info");
 ```
 
 ```java
@@ -100,8 +53,8 @@ WebServiceClient client = new WebServiceClient.Builder(accountId, licenseKey).bu
 
 // To query the GeoLite web service, you must call the `host` method on the
 // builder with "geolite.info"
-WebServiceClient client = new WebServiceClient.Builder(accountId, licenseKey)
-    .host("geolite.info").build();
+// WebServiceClient client = new WebServiceClient.Builder(accountId, licenseKey)
+//     .host("geolite.info").build();
 ```
 
 ```javascript
@@ -113,9 +66,9 @@ const licenseKey = 'LICENSEKEY';
 const client = new WebServiceClient(accountId, licenseKey);
 
 // To query the GeoLite web service, you must set the optional `host` parameter
-const client = new WebServiceClient(accountId, licenseKey, {
-  host: 'geolite.info',
-});
+// const client = new WebServiceClient(accountId, licenseKey, {
+//   host: 'geolite.info',
+// });
 ```
 
 ```php
@@ -215,20 +168,19 @@ using (var client = new WebServiceClient(accountId, licenseKey))
 int accountId = 10;
 String licenseKey = "LICENSEKEY";
 
-try (WebServiceClient client = new WebServiceClient.Builder(accountId, licenseKey)
-        .build()) {
+WebServiceClient client = new WebServiceClient.Builder(accountId, licenseKey)
+    .build();
 
-    InetAddress ipAddress = InetAddress.getByName("128.101.101.101");
+InetAddress ipAddress = InetAddress.getByName("128.101.101.101");
 
-    // You can also use `client.city` or `client.insights`
-    // `client.insights` is not available to GeoLite users
-    CountryResponse response = client.country(ipAddress);
+// You can also use `client.city` or `client.insights`
+// `client.insights` is not available to GeoLite users
+CountryResponse response = client.country(ipAddress);
 
-    Country country = response.country();
-    System.out.println(country.isoCode());            // 'US'
-    System.out.println(country.name());               // 'United States'
-    System.out.println(country.names().get("zh-CN")); // '美国'
-}
+Country country = response.country();
+System.out.println(country.isoCode());            // 'US'
+System.out.println(country.name());               // 'United States'
+System.out.println(country.names().get("zh-CN")); // '美国'
 ```
 
 ```javascript

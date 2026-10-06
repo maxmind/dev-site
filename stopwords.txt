@@ -3,6 +3,7 @@
 Калифорния
 Северная
 adserver
+androidx
 ADYEN
 Åland
 Altibox
@@ -175,6 +176,7 @@ interac
 iugu
 klarna
 Kotlin
+kotlinx
 komoju
 mercadopago
 mirjeh
