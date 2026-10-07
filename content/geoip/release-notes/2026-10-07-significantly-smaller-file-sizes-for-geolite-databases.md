@@ -20,4 +20,4 @@ file size:
 | ------------------------ | ------------------ | ----------------- | :--------------------------: |
 | GeoLite ASN database     | 12 MB              | 8.5 MB            |             25 %             |
 | GeoLite City database    | 62 MB              | 50 MB             |             20 %             |
-| GeoLite.Country database | 8 MB               | 3 MB              |             60 %             |
+| GeoLite Country database | 8 MB               | 3 MB              |             60 %             |
