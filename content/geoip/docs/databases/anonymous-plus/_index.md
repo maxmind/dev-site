@@ -155,8 +155,7 @@ These are named `GeoIP-Anonymous-Plus-Blocks-IPv4.csv` and
         <td>
           <p>
             1 if the IP address is on a suspected anonymizing network and
-            belongs to a residential ISP (does not include peer-to-peer proxy
-            IPs). Blank if not.
+            belongs to a residential ISP. Blank if not.
           </p>
           <p>
             <a

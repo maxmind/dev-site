@@ -305,7 +305,7 @@ The `residential` sub-object may be present even when none of the other
   {{</ geoip-schema-row >}}
 
   {{< geoip-schema-row key="is_residential_proxy" valueType="boolean" insights="true">}}
-  This is `true` if the IP address is on a suspected anonymizing network and belongs to a residential ISP (does not include peer-to-peer proxy IPs). Otherwise, the key is not included in the `anonymizer` object.
+  This is `true` if the IP address is on a suspected anonymizing network and belongs to a residential ISP. Otherwise, the key is not included in the `anonymizer` object.
 
   **Note:** This field has been moved from the `traits` object to the `anonymizer` object. It is still returned in the `traits` object for backwards compatibility but is deprecated there.
 
@@ -968,7 +968,7 @@ address.
   {{< geoip-schema-row key="is_residential_proxy" valueType="boolean" insights="true">}}
   **Deprecated.** This field has been moved to the [`anonymizer`](#anonymizer) object. It is still returned here for backwards compatibility.
 
-  This is `true` if the IP address is on a suspected anonymizing network and belongs to a residential ISP (does not include peer-to-peer proxy IPs). Otherwise, the key is not included in the `traits` object.
+  This is `true` if the IP address is on a suspected anonymizing network and belongs to a residential ISP. Otherwise, the key is not included in the `traits` object.
 
   [Learn more about residential proxies on our Knowledge Base.](https://support.maxmind.com/knowledge-base/articles/anonymizer-and-proxy-data-maxmind#residential-proxies)
   {{</ geoip-schema-row >}}
