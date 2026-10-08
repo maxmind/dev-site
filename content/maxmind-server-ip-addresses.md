@@ -2,7 +2,7 @@
 draft = false
 layout = 'mm-ips'
 title = 'MaxMind Server IP Addresses'
-outputs = ['rss', 'html']
+outputs = ['rss', 'html', 'markdown']
 _comment = 'json feed is handled by module mounts.  see hugo.toml'
 +++
 

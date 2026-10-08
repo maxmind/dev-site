@@ -1,6 +1,7 @@
 +++
 draft = false
 title = 'iOS'
+linkTitle = 'iOS Device Tracking'
 +++
 
 {{< alert warning >}} The MaxMind Device SDK for iOS is currently in beta.

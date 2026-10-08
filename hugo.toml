@@ -2,6 +2,7 @@
 baseurl = "/"
 locale = "en-us"
 title = 'MaxMind'
+enableRobotsTXT = true
 
 [markup]
   [markup.goldmark]
@@ -296,16 +297,22 @@ title = 'MaxMind'
     target = "static/maxmind-server-ip-addresses.json"
 
 [outputs]
-  home = ["HTML"]
+  home = ["HTML", "MARKDOWN", "LLMS"]
   page = ["HTML", "MARKDOWN"]
   section = ["HTML", "MARKDOWN"]
-  taxonomy = ["HTML", "MARKDOWN"]
-  term = ["HTML", "MARKDOWN"]
+  taxonomy = ["HTML"]
+  term = ["HTML"]
 
 [outputFormats]
   [outputFormats.MARKDOWN]
     mediaType = "text/markdown"
     baseName = "index"
+    notAlternative = true
+  # llms.txt: a Markdown index of the site for AI agents. See
+  # https://llmstxt.org/.
+  [outputFormats.LLMS]
+    mediaType = "text/plain"
+    baseName = "llms"
     notAlternative = true
 
   # Legacy anchor map for the release note listing; see release-note-anchors.ts.

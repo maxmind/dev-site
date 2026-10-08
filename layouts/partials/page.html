@@ -7,6 +7,9 @@
     {{- if and .IsPage (eq .CurrentSection.Type "release-note") (not .Date.IsZero) }}
     <em class="release-note__date">{{ .Date | time.Format ":date_long" }}</em>
     {{- end }}
+    {{ with .OutputFormats.Get "MARKDOWN" }}
+    <a class="page__markdown-link" href="{{ .RelPermalink }}">View as Markdown</a>
+    {{ end }}
     {{ partial "release-note-age-notice.html" . }}
     {{ if eq .Type "has-toc" }}
     <div class="page__toc">

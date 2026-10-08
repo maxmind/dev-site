@@ -1,6 +1,7 @@
 +++
 draft = false
 title = 'Android'
+linkTitle = 'Android Device Tracking'
 +++
 
 {{< alert warning >}} The MaxMind Device SDK for Android is currently in beta.
