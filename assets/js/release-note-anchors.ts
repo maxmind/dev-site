@@ -1,9 +1,14 @@
 /**
- * Sends a reader who followed an old year-page link to the note it named.
+ * Moves a reader who followed an old link to the right note:
  *
- * The server never sees the fragment, so the year-page redirect lands on the
- * listing page and the browser reattaches the fragment. This script resolves it
- * against anchors.json and moves the reader to the note's page.
+ * - A year-page anchor goes to its note, through anchors.json.
+ * - A year link with no known anchor goes to the newest note of that year,
+ *   through the year map on the listing.
+ * - A saved listing link whose note moved to a later page goes to the note's
+ *   own page.
+ *
+ * The server never sees the fragment, so a year-page redirect lands on the
+ * listing with ?year= and the browser keeps the fragment.
  */
 
 export interface AnchorEntry {
@@ -12,6 +17,12 @@ export interface AnchorEntry {
   date: string;
   url: string;
 }
+
+/** Year to the listing URL of that year's newest note. */
+export type YearMap = Record<string, string>;
+
+/** A note heading id is its filename, which no legacy anchor matches. */
+const NOTE_ID = /^\d{4}-\d{2}-\d{2}-[\w-]+$/;
 
 /**
  * The map is newest first, so the first match for an anchor used by more than
@@ -35,39 +46,141 @@ export function resolveAnchor(
   return matching[0].url;
 }
 
-async function redirectToNote(): Promise<void> {
-  const anchor = window.location.hash.replace(/^#/, '');
-  if (anchor === '') return;
+/** An old link, as the listing page received it. */
+export interface OldLink {
+  anchor: string;
+  year: string | null;
+  /** The anchor names an element on this page that the link can mean. */
+  onPage: boolean;
+}
 
-  const listing = window.location.pathname.replace(/(?:page\/\d+\/)?$/, '');
-  const year = new URLSearchParams(window.location.search).get('year');
+/**
+ * A known anchor goes to its note. An anchor on this page stays. Otherwise a
+ * year link goes to the newest note of that year.
+ */
+export function resolveTarget(
+  entries: AnchorEntry[],
+  years: YearMap,
+  link: OldLink
+): string | null {
+  const note = resolveAnchor(entries, link.anchor, link.year);
+  if (note !== null) return note;
+  if (link.onPage || link.year === null) return null;
+  return Object.hasOwn(years, link.year) ? years[link.year] : null;
+}
 
-  let entries: unknown;
+function decodeHash(hash: string): string {
+  const raw = hash.replace(/^#/, '');
+  try {
+    return decodeURIComponent(raw);
+  } catch {
+    return raw;
+  }
+}
+
+/**
+ * An old year page held only that year's notes, so a heading in a note from
+ * another year is a different section.
+ */
+function isOnPage(anchor: string, year: string | null): boolean {
+  const element = anchor === '' ? null : document.getElementById(anchor);
+  if (element === null) return false;
+  if (year === null) return true;
+  const title = element
+    .closest('.release-note')
+    ?.querySelector('.release-note__title');
+  return title == null || title.id.startsWith(`${year}-`);
+}
+
+function readYears(listing: HTMLElement): YearMap {
+  let years: unknown;
+  try {
+    years = JSON.parse(listing.dataset.releaseNoteYears ?? '');
+  } catch (error) {
+    console.warn('release note year map is not JSON', error);
+    return {};
+  }
+  if (typeof years === 'object' && years !== null) return years as YearMap;
+  console.warn('release note year map is not an object');
+  return {};
+}
+
+async function readAnchors(listing: string): Promise<AnchorEntry[] | null> {
   try {
     const response = await fetch(`${listing}anchors.json`);
     if (!response.ok) {
       console.warn(`release note anchor map: HTTP ${response.status}`);
-      return;
+      return null;
     }
-    entries = await response.json();
-  } catch (error) {
-    // The listing page is a reasonable place to stop if the map cannot load.
-    console.warn('release note anchor map did not load', error);
-    return;
-  }
-  if (!Array.isArray(entries)) {
+    const entries: unknown = await response.json();
+    if (Array.isArray(entries)) return entries as AnchorEntry[];
     console.warn('release note anchor map is not an array');
-    return;
+  } catch (error) {
+    console.warn('release note anchor map did not load', error);
   }
+  return null;
+}
 
-  const target = resolveAnchor(entries as AnchorEntry[], anchor, year);
-  // No match: the fragment may name a heading on this page.
-  if (target !== null && target !== window.location.pathname) {
-    window.location.replace(target);
+/**
+ * A saved link to a listing page goes stale when newer notes push its note to a
+ * later page. The note's own page does not move.
+ */
+async function movedNote(listing: string, id: string): Promise<string | null> {
+  const url = `${listing}${id.toLowerCase()}/`;
+  try {
+    const response = await fetch(url, { method: 'HEAD' });
+    return response.ok ? url : null;
+  } catch {
+    return null;
   }
 }
 
+async function findTarget(
+  listingElement: HTMLElement,
+  anchor: string,
+  year: string | null
+): Promise<string | null> {
+  const listing = window.location.pathname.replace(/(?:page\/\d+\/)?$/, '');
+  const onPage = isOnPage(anchor, year);
+  let entries: AnchorEntry[] = [];
+  if (NOTE_ID.test(anchor)) {
+    if (onPage) return null;
+    const moved = await movedNote(listing, anchor);
+    if (moved !== null) return moved;
+  } else if (anchor !== '') {
+    const loaded = await readAnchors(listing);
+    // Stop with the fragment intact, so a reload can try again.
+    if (loaded === null) return null;
+    entries = loaded;
+  }
+  return resolveTarget(entries, readYears(listingElement), {
+    anchor,
+    year,
+    onPage,
+  });
+}
+
+async function redirect(listingElement: HTMLElement): Promise<void> {
+  const anchor = decodeHash(window.location.hash);
+  const year = new URLSearchParams(window.location.search).get('year');
+  if (anchor === '' && year === null) return;
+
+  const target = await findTarget(listingElement, anchor, year);
+  if (target === null) return;
+  const url = new URL(target, window.location.href);
+  if (url.pathname !== window.location.pathname) {
+    window.location.replace(url);
+    return;
+  }
+  // Same page: drop ?year= and scroll, with no reload.
+  history.replaceState(null, '', url);
+  const id = decodeHash(url.hash);
+  if (id !== '') document.getElementById(id)?.scrollIntoView();
+}
+
 if (typeof window !== 'undefined') {
-  const listing = document.querySelector('[data-release-note-listing]');
-  if (listing !== null) void redirectToNote();
+  const listing = document.querySelector<HTMLElement>(
+    '[data-release-note-listing]'
+  );
+  if (listing !== null) void redirect(listing);
 }
