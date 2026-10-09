@@ -90,6 +90,9 @@ size will be rejected.
     "last_name": "Doe",
     "phone_country_code": "1",
     "phone_number": "203-000-0000",
+    "phone_verification_method": "delivered_code",
+    "phone_verification_time": "2026-10-01T14:30:00Z",
+    "phone_was_verification_successful": true,
     "postal": "06511",
     "region": "CT"
   },
@@ -153,6 +156,9 @@ size will be rejected.
     "last_name": "Doe",
     "phone_country_code": "1",
     "phone_number": "203-000-0000",
+    "phone_verification_method": "delivered_code",
+    "phone_verification_time": "2026-10-01T14:30:00Z",
+    "phone_was_verification_successful": true,
     "postal": "06515",
     "region": "CT"
   },
@@ -389,6 +395,9 @@ information provided by the end-user who initiated the event.
   "last_name": "Doe",
   "phone_country_code": "1",
   "phone_number": "203-000-0000",
+  "phone_verification_method": "delivered_code",
+  "phone_verification_time": "2026-10-01T14:30:00Z",
+  "phone_was_verification_successful": true,
   "postal": "06511",
   "region": "CT"
 }
@@ -441,6 +450,34 @@ information provided by the end-user who initiated the event.
   The country code for the phone number associated with the user's billing
   address. Use digits only; do not include a leading `+`.
   {{</minfraud-schema-row>}}
+
+  {{< minfraud-schema-row key="phone_verification_method" type="request" valueType="string" valueTypeNote="format: enum" >}}
+
+  The method used for the most recent verification attempt of the billing phone number. The valid values are:
+
+  | Method | Description |
+  | ---------------- | --------------------------------------------------------------------------- |
+  | `network` | Carrier or SIM-based silent network authentication. No code is sent to the device. |
+  | `delivered_code` | A one-time code delivered to the phone number by SMS, an automated voice call, or an over-the-top messaging channel such as WhatsApp or RCS, and entered by the user. |
+  | `other` | A method not listed above, such as flash or missed call verification, or a method you do not know because a third party performed the check. |
+
+  If you send a value that is not in this list, the service returns an `INPUT_INVALID` warning. Do not include this field if no verification was attempted.
+
+  [Learn more about the /billing/phone\_verification\_method input on our Knowledge Base.](https://support.maxmind.com/knowledge-base/articles/billing-and-shipping-inputs-minfraud#billing-address)
+
+  {{</minfraud-schema-row>}}
+
+  {{< minfraud-schema-row key="phone_was_verification_successful" type="request" valueType="boolean" >}}
+  Whether the most recent verification that the end user controls this billing phone number was successful, using the method named in `phone_verification_method`. `true` if the phone verification was successful, or `false` if the user failed phone verification. Do not include this field if you have not performed this check.
+
+  [Learn more about the /billing/phone\_was\_verification\_successful input on our Knowledge Base.](https://support.maxmind.com/knowledge-base/articles/billing-and-shipping-inputs-minfraud#billing-address)
+  {{</minfraud-schema-row>}}
+
+  {{< minfraud-schema-row key="phone_verification_time" type="request" valueType="string" >}}
+  The most recent date and time a verification of the billing phone number was attempted, if known. The string must be in the [RFC 3339](https://datatracker.ietf.org/doc/html/rfc3339) date-time format. The time must not be before 1970-01-01T00:00:00Z or more than two days in the future. For a time outside this range, MaxMind ignores the input and returns a warning.
+
+  [Learn more about the /billing/phone\_verification\_time input on our Knowledge Base.](https://support.maxmind.com/knowledge-base/articles/billing-and-shipping-inputs-minfraud#billing-address)
+  {{</minfraud-schema-row>}}
 {{</ schema-table >}}
 
 <!-- prettier-ignore-end -->
@@ -466,6 +503,9 @@ information provided by the end-user who initiated the event.
   "last_name": "Doe",
   "phone_country_code": "1",
   "phone_number": "203-000-0000",
+  "phone_verification_method": "delivered_code",
+  "phone_verification_time": "2026-10-01T14:30:00Z",
+  "phone_was_verification_successful": true,
   "postal": "06515",
   "region": "CT"
 }
@@ -517,6 +557,34 @@ information provided by the end-user who initiated the event.
   {{< minfraud-schema-row key="phone_country_code" type="request" valueType="string" valueTypeNote="1-4 digits" >}}
   The country code for the phone number associated with the user's shipping
   address. Use digits only; do not include a leading `+`.
+  {{</minfraud-schema-row>}}
+
+  {{< minfraud-schema-row key="phone_verification_method" type="request" valueType="string" valueTypeNote="format: enum" >}}
+
+  The method used for the most recent verification attempt of the shipping phone number. The valid values are:
+
+  | Method | Description |
+  | ---------------- | --------------------------------------------------------------------------- |
+  | `network` | Carrier or SIM-based silent network authentication. No code is sent to the device. |
+  | `delivered_code` | A one-time code delivered to the phone number by SMS, an automated voice call, or an over-the-top messaging channel such as WhatsApp or RCS, and entered by the user. |
+  | `other` | A method not listed above, such as flash or missed call verification, or a method you do not know because a third party performed the check. |
+
+  If you send a value that is not in this list, the service returns an `INPUT_INVALID` warning. Do not include this field if no verification was attempted.
+
+  [Learn more about the /shipping/phone\_verification\_method input on our Knowledge Base.](https://support.maxmind.com/knowledge-base/articles/billing-and-shipping-inputs-minfraud#shipping-address)
+
+  {{</minfraud-schema-row>}}
+
+  {{< minfraud-schema-row key="phone_was_verification_successful" type="request" valueType="boolean" >}}
+  Whether the most recent verification that the end user controls this shipping phone number was successful, using the method named in `phone_verification_method`. `true` if the phone verification was successful, or `false` if the user failed phone verification. Do not include this field if you have not performed this check.
+
+  [Learn more about the /shipping/phone\_was\_verification\_successful input on our Knowledge Base.](https://support.maxmind.com/knowledge-base/articles/billing-and-shipping-inputs-minfraud#shipping-address)
+  {{</minfraud-schema-row>}}
+
+  {{< minfraud-schema-row key="phone_verification_time" type="request" valueType="string" >}}
+  The most recent date and time a verification of the shipping phone number was attempted, if known. The string must be in the [RFC 3339](https://datatracker.ietf.org/doc/html/rfc3339) date-time format. The time must not be before 1970-01-01T00:00:00Z or more than two days in the future. For a time outside this range, MaxMind ignores the input and returns a warning.
+
+  [Learn more about the /shipping/phone\_verification\_time input on our Knowledge Base.](https://support.maxmind.com/knowledge-base/articles/billing-and-shipping-inputs-minfraud#shipping-address)
   {{</minfraud-schema-row>}}
 
   {{< minfraud-schema-row key="delivery_speed" type="request" valueType="string" valueTypeNote="format: enum" >}}
