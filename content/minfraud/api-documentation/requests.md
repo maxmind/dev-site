@@ -90,6 +90,9 @@ size will be rejected.
     "last_name": "Doe",
     "phone_country_code": "1",
     "phone_number": "203-000-0000",
+    "phone_verification_method": "delivered_code",
+    "phone_verification_time": "2026-10-01T14:30:00Z",
+    "phone_was_verification_successful": true,
     "postal": "06511",
     "region": "CT"
   },
@@ -389,6 +392,9 @@ information provided by the end-user who initiated the event.
   "last_name": "Doe",
   "phone_country_code": "1",
   "phone_number": "203-000-0000",
+  "phone_verification_method": "delivered_code",
+  "phone_verification_time": "2026-10-01T14:30:00Z",
+  "phone_was_verification_successful": true,
   "postal": "06511",
   "region": "CT"
 }
@@ -440,6 +446,28 @@ information provided by the end-user who initiated the event.
   {{< minfraud-schema-row key="phone_country_code" type="request" valueType="string" valueTypeNote="1-4 digits" >}}
   The country code for the phone number associated with the user's billing
   address. Use digits only; do not include a leading `+`.
+  {{</minfraud-schema-row>}}
+
+  {{< minfraud-schema-row key="phone_verification_method" type="request" valueType="string" valueTypeNote="format: enum" >}}
+
+  The most recent method used to verify the billing phone number. The valid values are:
+
+  | Method | Description |
+  | ---------------- | --------------------------------------------------------------------------- |
+  | `delivered_code` | A code delivered to the phone, such as by SMS, voice call, or messaging app. |
+  | `network` | Verification through the mobile network operator, such as silent network authentication. |
+  | `other` | Another verification method. |
+
+  If you send a value that is not in this list, the service returns an `INPUT_INVALID` warning.
+
+  {{</minfraud-schema-row>}}
+
+  {{< minfraud-schema-row key="phone_was_verification_successful" type="request" valueType="boolean" >}}
+  Whether the most recent verification of the billing phone number succeeded. `true` if the verification succeeded, or `false` if it failed. If no verification was attempted, do not include this field.
+  {{</minfraud-schema-row>}}
+
+  {{< minfraud-schema-row key="phone_verification_time" type="request" valueType="string" >}}
+  The date and time of the most recent verification of the billing phone number. The string must be in the [RFC 3339](https://datatracker.ietf.org/doc/html/rfc3339) date-time format.
   {{</minfraud-schema-row>}}
 {{</ schema-table >}}
 
