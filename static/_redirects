@@ -1,8 +1,9 @@
 # The year pages of both products are gone. Their URLs reach the listing page
-# and carry the year, which the listing uses to resolve an old fragment to the
-# note it named. The URLs of their Markdown output reach the Markdown listing.
-# The check script requires the year on every target. The years are written
-# out because a placeholder would also catch the note pages.
+# and carry the year. The listing uses the year to send an old link to the note
+# its fragment named, or to the newest note of that year. The URLs of their
+# Markdown output reach the Markdown listing. The check script requires the
+# year on every target. The years are written out because a placeholder would
+# also catch the note pages.
 #
 # The redirects are temporary. A browser can cache a permanent redirect with
 # no expiry, so a wrong target stays in use for readers who followed it.
