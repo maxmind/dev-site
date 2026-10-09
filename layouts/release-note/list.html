@@ -3,15 +3,31 @@
     <div class="page__sidebar">
       {{ partial "sidebar.html" . }}
     </div>
-    <div class="page__content" data-release-note-listing>
+    {{ $notes := .Paginate .Pages.ByDate.Reverse }}
+    {{/* The newest note of each year, for year links. The newest note of all
+         gets the bare listing, so the intro stays in view. */}}
+    {{ $years := dict }}
+    {{ range $pager := $notes.Pagers }}
+      {{ range $index, $note := .Pages }}
+        {{ $year := $note.Date.Format "2006" }}
+        {{ if not (isset $years $year) }}
+          {{ $target := printf "%s#%s" $pager.URL $note.File.ContentBaseName }}
+          {{ if and (eq $pager.PageNumber 1) (eq $index 0) }}
+            {{ $target = $pager.URL }}
+          {{ end }}
+          {{ $years = merge $years (dict $year $target) }}
+        {{ end }}
+      {{ end }}
+    {{ end }}
+    <div class="page__content" data-release-note-listing data-release-note-years="{{ $years | jsonify }}">
       <h1 class="page__title">{{ .Title }}</h1>
 
       {{ .Content }}
 
-      {{ $notes := .Paginate .Pages.ByDate.Reverse }}
       {{ range $notes.Pages }}
         {{/* Filename, not legacy_anchor: several notes share an anchor, so it
-             cannot be a unique id. anchors.json carries the old links. */}}
+             cannot be a unique id. anchors.json carries the old links. The
+             year map above and release-note-anchors.ts rely on this id. */}}
         <div class="release-note">
           <h2 class="release-note__title" id="{{ .File.ContentBaseName }}">
             <a class="heading-anchor" href="{{ .RelPermalink }}">{{ .Title }}</a>
