@@ -121,7 +121,9 @@ size will be rejected.
   },
   "email": {
     "address": "977577b140bfb7c516e4746204fbdb01",
-    "domain": "maxmind.com"
+    "domain": "maxmind.com",
+    "verification_time": "2026-10-01T14:25:00Z",
+    "was_verification_successful": true
   },
   "event": {
     "party": "customer",
@@ -350,7 +352,9 @@ the end-user who initiated the event.
 ```json
 {
   "address": "977577b140bfb7c516e4746204fbdb01",
-  "domain": "maxmind.com"
+  "domain": "maxmind.com",
+  "verification_time": "2026-10-01T14:25:00Z",
+  "was_verification_successful": true
 }
 ```
 
@@ -367,6 +371,14 @@ the end-user who initiated the event.
   The domain of the email address used in the transaction. Do not include the `@` in this field.
 
   You do not need to pass the email domain input unless you are passing the email address as an MD5 hash. [Learn more about hashed email inputs on our Knowledge Base.](https://support.maxmind.com/knowledge-base/articles/passing-email-inputs-minfraud#email-hashing)
+  {{</minfraud-schema-row>}}
+
+  {{< minfraud-schema-row key="was_verification_successful" type="request" valueType="boolean" >}}
+  Whether the most recent verification of the email address succeeded. `true` if the verification succeeded, or `false` if it failed. If no verification was attempted, do not include this field.
+  {{</minfraud-schema-row>}}
+
+  {{< minfraud-schema-row key="verification_time" type="request" valueType="string" >}}
+  The date and time of the most recent verification of the email address. The string must be in the [RFC 3339](https://datatracker.ietf.org/doc/html/rfc3339) date-time format.
   {{</minfraud-schema-row>}}
 {{</ schema-table >}}
 
