@@ -14,4 +14,4 @@ As a reminder, database builds can be delayed or released at any time. While we
 will generally build these databases at the times detailed above, we recommend
 setting up your integration to check for new databases periodically, and
 recommend downloading and integrating whenever there's a new database available.
-[See details about database update recommendations.](https://dev.maxmind.com/geoip/updating-databases/)
+[See details about database update recommendations.](/geoip/updating-databases/)
