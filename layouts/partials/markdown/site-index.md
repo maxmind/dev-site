@@ -8,7 +8,7 @@
 {{- if and .IsPage (eq .CurrentSection.Type "release-note") }}{{ continue }}{{ end -}}
 - [{{ .LinkTitle }}]({{ (.OutputFormats.Get "MARKDOWN").Permalink }})
 {{ end }}
-{{- end }}
+{{ end -}}
 ## General
 
 {{ range site.Home.RegularPages -}}

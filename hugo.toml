@@ -313,6 +313,7 @@ enableRobotsTXT = true
   [outputFormats.LLMS]
     mediaType = "text/plain"
     baseName = "llms"
+    isPlainText = true
     notAlternative = true
 
   # Legacy anchor map for the release note listing; see release-note-anchors.ts.

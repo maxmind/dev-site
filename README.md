@@ -66,12 +66,14 @@ hugo server
 
 #### Markdown for AI Agents
 
-Every page is also built as Markdown at `<page URL>index.md`. Each HTML page
-points to it with `<link rel="alternate" type="text/markdown">` and a "View as
-Markdown" link. Three site-wide files help an agent start:
+Every documentation page is also built as Markdown at `<page URL>index.md`.
+Each HTML page points to it with `<link rel="alternate" type="text/markdown">`.
+Pages built from `layouts/partials/page.html` also show a "View as Markdown"
+link. The home page and the release note listings do not. Three site-wide files
+help an agent start:
 
-- `/llms.txt`: an index of the site, built by Hugo from the sidebar menus
-  (`layouts/index.llms.txt`).
+- `/llms.txt`: an index of the site, built by Hugo from the top-level sections
+  and their pages (`layouts/index.llms.txt`).
 - `/llms-full.txt`: every page's Markdown in one file, built after Hugo by
   `bin/build-llms-full.ts`. `hugo server` does not serve it. The script fails
   the build when a page's Markdown holds a link inside an HTML block,
