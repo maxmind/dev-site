@@ -1272,6 +1272,7 @@ then this object will not be present in the response.
 
   {{< minfraud-schema-row key="action" type="response" valueType="string" valueTypeNote="format: enum" score="true" insights="true" factors="true" >}}
   This describes how the request was handled. The valid values are:
+
   | Action         | Explanation                                                                            |
   | -------------- | -------------------------------------------------------------------------------------- |
   | `accept`         | This is the default value that is used if none of your custom rules match the request. |
@@ -1281,6 +1282,7 @@ then this object will not be present in the response.
   {{</minfraud-schema-row>}}
   {{< minfraud-schema-row key="reason" type="response" valueType="string" valueTypeNote="format: enum" score="true" insights="true" factors="true" >}}
   This describes why the `action` was set to a particular value. The valid values are:
+
   | Reason       | Explanation                                   |
   | ------------ | --------------------------------------------- |
   | `default`      | No custom rules matched the request.          |
@@ -1352,16 +1354,18 @@ present in the response.
 
   {{< minfraud-schema-row key="code" type="response" valueType="string" valueTypeNote="format: enum, max length: 255" factors="true" >}}
   A machine-readable code identifying the risk reason. Examples listed below. Although more codes may be added in the future, a list of current codes may be provided on request.
- | Code            |
- | --------------- |
- | ANONYMOUS\_IP           |
- | COUNTRY                |
- | ORG\_DISTANCE\_RISK     |
+
+  | Code            |
+  | --------------- |
+  | ANONYMOUS\_IP           |
+  | COUNTRY                |
+  | ORG\_DISTANCE\_RISK     |
   {{</minfraud-schema-row>}}
 
   {{< minfraud-schema-row key="reason" type="response" valueType="string" factors="true" >}}
   The human-readable description of the risk reason and its effect on the overall risk score.
   The explanation text may change at any time and should not be matched against.
+
   | Code                                       | Reason                                                                                                           |
   | ------------------------------------------ | ---------------------------------------------------------------------------------------------------------------- |
   | ANONYMOUS\_IP                              | The Anonymous IP address raised the overall risk score                                                                    |

@@ -9,5 +9,5 @@
 Type: {{ .type }}.{{ with .services }} Available in: {{ delimit . ", " }}.{{ end }}
 
 {{/* The content indents the description by two spaces under the shortcode
-       call. Strip the indent so block syntax inside it renders. */}}
+       call. Strip the indent so block syntax inside it renders. */ -}}
 {{ replaceRE `(?m)^  ` "" .inner | strings.TrimSpace }}
