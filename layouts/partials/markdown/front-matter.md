@@ -8,7 +8,7 @@ title: {{ $title | jsonify (dict "noHTMLEscape" true) }}
 {{- with .Description }}
 description: {{ . | jsonify (dict "noHTMLEscape" true) }}
 {{- end }}
-url: {{ (.OutputFormats.Get "HTML").Permalink | jsonify (dict "noHTMLEscape" true) }}
+source: {{ (.OutputFormats.Get "HTML").Permalink | jsonify (dict "noHTMLEscape" true) }}
 ---
 
 # {{ $title }}

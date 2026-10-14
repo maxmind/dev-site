@@ -74,10 +74,12 @@ help an agent start:
 
 - `/llms.txt`: an index of the site, built by Hugo from the top-level sections
   and their pages (`layouts/index.llms.txt`).
-- `/llms-full.txt`: every page's Markdown in one file, built after Hugo by
-  `bin/build-llms-full.ts`. `hugo server` does not serve it. The script fails
-  the build when a page's Markdown holds a link inside an HTML block,
-  which never renders, or an unrendered shortcode or Prettier marker.
+- `/llms-full.txt`: the Markdown of the home page and of every page in
+  `llms.txt`, in the same order, as one file. Single release notes are left
+  out. Built after Hugo by `bin/build-llms-full.ts`. `hugo server` does not
+  serve it. The script fails the build when any page's Markdown holds a link
+  inside an HTML block, which never renders, or an unrendered shortcode or
+  Prettier marker.
 - `/robots.txt`: built by Hugo from `layouts/robots.txt`.
 
 The Markdown files and the two `llms` files carry `X-Robots-Tag: noindex`, so
