@@ -1,3 +1,3 @@
-{{ if .Get "heading" }}### {{ .Get "heading" }}{{ end }}
+{{ if .Get "heading" }}## {{ .Get "heading" }}{{ end }}
 
 {{ .Inner }}
