@@ -88,9 +88,10 @@ function initCopyMarkdown() {
   const pageContent = document.querySelector('.page__content');
   if (pageContent) {
     // A release note shows its date under the title. Put the button below the
-    // date, not between the two.
+    // date, not between the two. A release note listing has a date inside
+    // each note, so look only at direct children.
     const pageTitle = pageContent.querySelector('.page__title');
-    const noteDate = pageContent.querySelector('.release-note__date');
+    const noteDate = pageContent.querySelector(':scope > .release-note__date');
     const precedingElement = noteDate ?? pageTitle;
     if (precedingElement) {
       precedingElement.insertAdjacentElement('afterend', copyButton);
