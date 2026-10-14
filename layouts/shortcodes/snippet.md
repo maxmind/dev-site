@@ -18,8 +18,8 @@
        HTML, so the snippet is used as is and its alert shortcodes stay
        literal. Render them the way the alert shortcode does. */ -}}
 {{- $md := $r.Content -}}
-{{- range findRE `(?s)\{\{<\s*alert\s*\w*\s*>\}\}.*?\{\{</\s*alert\s*>\}\}` $md -}}
-  {{- $kind := replaceRE `(?s)^\{\{<\s*alert\s*(\w*)\s*>\}\}.*` "$1" . -}}
+{{- range findRE `(?s)\{\{<\s*alert\s*"?\w*"?\s*>\}\}.*?\{\{</\s*alert\s*>\}\}` $md -}}
+  {{- $kind := replaceRE `(?s)^\{\{<\s*alert\s*"?(\w*)"?\s*>\}\}.*` "$1" . -}}
   {{- $inner := replaceRE `(?s)^\{\{<[^>]*>\}\}(.*)\{\{</\s*alert\s*>\}\}$` "$1" . -}}
   {{- $md = replace $md . (partial "markdown/alert.md" (dict "kind" $kind "inner" $inner)) -}}
 {{- end -}}

@@ -4,5 +4,5 @@
 {{ end }}## Pages in this section
 
 {{ range .Pages -}}
-- [{{ .LinkTitle }}]({{ (.OutputFormats.Get "MARKDOWN").Permalink }})
+{{ partial "markdown/page-link.md" . }}
 {{ end -}}

@@ -6,11 +6,11 @@
 
 {{ range sort (where site.Pages "Section" .Section) "Path" -}}
 {{- if and .IsPage (eq .CurrentSection.Type "release-note") }}{{ continue }}{{ end -}}
-- [{{ .LinkTitle }}]({{ (.OutputFormats.Get "MARKDOWN").Permalink }})
+{{ partial "markdown/page-link.md" . }}
 {{ end }}
 {{ end -}}
 ## General
 
 {{ range site.Home.RegularPages -}}
-- [{{ .LinkTitle }}]({{ (.OutputFormats.Get "MARKDOWN").Permalink }})
+{{ partial "markdown/page-link.md" . }}
 {{ end -}}
