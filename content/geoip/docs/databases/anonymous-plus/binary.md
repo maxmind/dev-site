@@ -119,9 +119,8 @@ network.
         <td>
           <p>
             This is <code>true</code> if the IP address is on a suspected
-            anonymizing network and belongs to a residential ISP (does not
-            include peer-to-peer proxy IPs). This key is only present when the
-            value is <code>true</code>.
+            anonymizing network and belongs to a residential ISP. This key is
+            only present when the value is <code>true</code>.
           </p>
           <p>
             <a
