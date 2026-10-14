@@ -1,0 +1,13 @@
+{{- /* The site summary that llms.txt and the home page Markdown share. */ -}}
+> Documentation for MaxMind's GeoIP and GeoLite IP intelligence databases and
+> web services, and for the minFraud fraud detection web services.
+
+Every documentation page has a Markdown version at the page URL followed by
+`index.md`, for example
+{{ "geoip/docs/web-services/responses/index.md" | absURL }}. Every page listed
+below, as one Markdown file, is at
+[llms-full.txt]({{ "llms-full.txt" | absURL }}).
+
+The GeoIP web services are GeoIP Country, GeoIP City Plus, and GeoIP Insights.
+The minFraud web services are minFraud Score, minFraud Insights, and minFraud
+Factors. Each field in the API reference names the services that return it.

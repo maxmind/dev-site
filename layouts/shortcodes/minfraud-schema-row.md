@@ -1,6 +1,4 @@
-{{- $type := .Get "valueType" -}}
-{{- with .Get "valueTypeNote" }}{{ $type = printf "%s (%s)" $type . }}{{ end -}}
-{{- $row := dict "key" (.Get "key") "type" $type "inner" .Inner -}}
+{{- $row := dict "key" (.Get "key") "valueType" (.Get "valueType") "valueTypeNote" (.Get "valueTypeNote") "inner" .Inner -}}
 {{- if eq (.Get "type") "response" -}}
   {{- $services := slice -}}
   {{- if eq (.Get "score") "true" }}{{ $services = $services | append "minFraud Score" }}{{ end -}}

@@ -4,9 +4,11 @@
 {{- if and (isset . "services") (not .services) -}}
   {{- errorf "Field %q is available in no service" .key -}}
 {{- end -}}
+{{- $type := .valueType -}}
+{{- with .valueTypeNote }}{{ $type = printf "%s (%s)" $type . }}{{ end -}}
 #### `{{ .key }}`
 
-Type: {{ .type }}.{{ with .services }} Available in: {{ delimit . ", " }}.{{ end }}
+Type: {{ $type }}.{{ with .services }} Available in: {{ delimit . ", " }}.{{ end }}
 
 {{/* The content indents the description by two spaces under the shortcode
        call. Strip the indent so block syntax inside it renders. */ -}}

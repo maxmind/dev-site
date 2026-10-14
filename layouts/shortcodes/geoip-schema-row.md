@@ -1,5 +1,3 @@
-{{- $type := .Get "valueType" -}}
-{{- with .Get "valueTypeNote" }}{{ $type = printf "%s (%s)" $type . }}{{ end -}}
 {{- $services := slice -}}
 {{- if eq (.Get "country") "true" }}{{ $services = $services | append "GeoIP Country" }}{{ end -}}
 {{- if eq (.Get "city") "true" }}{{ $services = $services | append "GeoIP City Plus" }}{{ end -}}
@@ -8,4 +6,4 @@
        indents each shortcode call by two spaces. The newline after the
        comment moves those spaces onto a blank line, so the heading starts at
        column one. */}}
-{{ partial "markdown/schema-row.md" (dict "key" (.Get "key") "type" $type "services" $services "inner" .Inner) }}
+{{ partial "markdown/schema-row.md" (dict "key" (.Get "key") "valueType" (.Get "valueType") "valueTypeNote" (.Get "valueTypeNote") "services" $services "inner" .Inner) }}
