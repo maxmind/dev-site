@@ -23,22 +23,28 @@ outlined below:
       <tr>
         <td>Score</td>
         <td>
-          `application/vnd.maxmind.com-minfraud-score+json; charset=UTF-8;
-          version=2.0`
+          <code
+            >application/vnd.maxmind.com-minfraud-score+json; charset=UTF-8;
+            version=2.0</code
+          >
         </td>
       </tr>
       <tr>
         <td>Insights</td>
         <td>
-          `application/vnd.maxmind.com-minfraud-insights+json; charset=UTF-8;
-          version=2.0`
+          <code
+            >application/vnd.maxmind.com-minfraud-insights+json; charset=UTF-8;
+            version=2.0</code
+          >
         </td>
       </tr>
       <tr>
         <td>Factors</td>
         <td>
-          `application/vnd.maxmind.com-minfraud-factors+json; charset=UTF-8;
-          version=2.0`
+          <code
+            >application/vnd.maxmind.com-minfraud-factors+json; charset=UTF-8;
+            version=2.0</code
+          >
         </td>
       </tr>
     </tbody>
