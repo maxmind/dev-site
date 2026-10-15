@@ -446,7 +446,7 @@ function ageNoticeFailures(
         threshold,
         wanted,
         markdownNotice(fs.readFileSync(markdown, 'utf8')),
-        `](${listing})`
+        `](${listing}index.md)`
       )
     );
   }

@@ -23,7 +23,7 @@ beta), a command line interface built with Go, to look up one or more IPs from
 one or more MMDB databases and receive output in a parsable JSON format.
 
 [Learn about the fields in the binary version of this database on our binary
-database field reference page.](binary/)
+database field reference page.](/geoip/docs/databases/static-ip-score/binary/)
 
 ## CSV Database
 

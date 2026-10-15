@@ -68,6 +68,7 @@ hugo server
 
 Every documentation page is also built as Markdown at `<page URL>index.md`.
 Each HTML page points to it with `<link rel="alternate" type="text/markdown">`.
+Internal links in the Markdown point to the Markdown of the linked page.
 Every page except the home page also shows a "View as Markdown" link
 (`layouts/partials/markdown-link.html`). Three site-wide files help an agent
 start:

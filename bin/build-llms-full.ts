@@ -83,10 +83,14 @@ for (const page of ['index.md', ...linked]) {
     console.error(`❌ ${file}: no front matter with a source, then an H1`);
     process.exit(1);
   }
-  const body = markdown.slice(frontMatter[0].length);
-  parts.push(
-    `${frontMatter[2]}\nSource: ${JSON.parse(source)}\n\n${body.trim()}`
-  );
+  // A fragment-only link would resolve against llms-full.txt, which holds
+  // the headings of every page. Point it at the Markdown of its own page,
+  // as the other internal links are.
+  const url = JSON.parse(source);
+  const body = markdown
+    .slice(frontMatter[0].length)
+    .replaceAll('](#', `](/${page}#`);
+  parts.push(`${frontMatter[2]}\nSource: ${url}\n\n${body.trim()}`);
 }
 
 fs.writeFileSync(OUTPUT, parts.join('\n\n') + '\n');

@@ -7,8 +7,7 @@
        link group, so the page does not list them twice. */ -}}
 {{- $unlinked := slice -}}
 {{- range .Pages -}}
-  {{- $url := strings.TrimSuffix "/" .RelPermalink -}}
-  {{- if not (or (strings.Contains $body (printf "](%s)" $url)) (strings.Contains $body (printf "](%s/)" $url))) -}}
+  {{- if not (strings.Contains $body (printf "](%s)" (.OutputFormats.Get "MARKDOWN").RelPermalink)) -}}
     {{- $unlinked = $unlinked | append . -}}
   {{- end -}}
 {{- end -}}
