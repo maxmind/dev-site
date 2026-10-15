@@ -8,6 +8,9 @@ title: {{ $title | jsonify (dict "noHTMLEscape" true) }}
 {{- with .Description }}
 description: {{ . | jsonify (dict "noHTMLEscape" true) }}
 {{- end }}
+{{- if and .IsPage (eq .CurrentSection.Type "release-note") (not .Date.IsZero) }}
+date: {{ .Date | time.Format "2006-01-02" | jsonify }}
+{{- end }}
 source: {{ (.OutputFormats.Get "HTML").Permalink | jsonify (dict "noHTMLEscape" true) }}
 ---
 
