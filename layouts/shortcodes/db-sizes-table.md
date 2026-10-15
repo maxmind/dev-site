@@ -8,7 +8,9 @@ follows:
 
 | Database | CSV File Size | MMDB File Size | IPv4 Networks | IPv6 Networks |
 |----------|---------------|----------------|---------------|---------------|
-{{ .Inner | strings.TrimSpace }}
+{{- range .Inner | unmarshal }}
+| {{ .databaseName }} | {{ .csvSizeRange }} | {{ .mmdbSizeRange }} | {{ .ipv4Range }} | {{ .ipv6Range }} |
+{{- end }}
 
 The listed file sizes are for unpacked databases. Databases are
 downloaded in a compressed format.

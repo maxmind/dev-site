@@ -1,1 +1,1 @@
-{{ .Inner }}
+{{ replaceRE "\n[ \t]*\n" "\n" (strings.TrimSpace .Inner) }}

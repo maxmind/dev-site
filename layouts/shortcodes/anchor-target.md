@@ -1,1 +1,1 @@
-{{- /* Anchor targets are not needed in markdown output */ -}}
+<a id="{{ index .Params 0 }}"></a>
