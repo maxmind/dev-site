@@ -18,5 +18,6 @@
     ],
     "ignoreRegExpList": [
         "/^legacy_anchor = .*$/gm"
-    ]
+    ],
+    "useGitignore": true
 }

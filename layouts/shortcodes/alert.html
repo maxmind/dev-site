@@ -1,3 +1,10 @@
+{{- /* Keep these kinds in step with the labels in markdown/alert.md, which
+       fails on any other kind. */ -}}
+{{- with .Get 0 }}
+  {{- if not (in (slice "warning" "info" "danger") .) }}
+    {{- errorf "Unknown alert kind %q. See %s" . $.Position }}
+  {{- end }}
+{{- end -}}
 <div class="alert {{ if len .Params | eq 1 }}alert--{{ index .Params 0 }}{{ end }}">
   {{ .Inner | .Page.RenderString }}
 </div>

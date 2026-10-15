@@ -64,6 +64,28 @@ when files change.
 hugo server
 ```
 
+#### Markdown for AI Agents
+
+Every documentation page is also built as Markdown at `<page URL>index.md`.
+Each HTML page points to it with `<link rel="alternate" type="text/markdown">`.
+Internal links in the Markdown point to the Markdown of the linked page.
+Every page except the home page also shows a "View as Markdown" link
+(`layouts/partials/markdown-link.html`). Three site-wide files help an agent
+start:
+
+- `/llms.txt`: an index of the site, built by Hugo from the top-level sections
+  and their pages (`layouts/index.llms.txt`).
+- `/llms-full.txt`: the Markdown of the home page and of every page in
+  `llms.txt`, in the same order, as one file. Single release notes are left
+  out. Built after Hugo by `bin/build-llms-full.ts`. `hugo server` does not
+  serve it. The script fails the build when any page's Markdown holds a link
+  inside an HTML block, which never renders, or an unrendered shortcode or
+  Prettier marker.
+- `/robots.txt`: built by Hugo from `layouts/robots.txt`.
+
+The Markdown files and the two `llms` files carry `X-Robots-Tag: noindex`, so
+search engines index only the HTML pages.
+
 #### Cloudflare Pages HTTP Headers Configuration
 
 The `static/_headers` file is automatically generated from

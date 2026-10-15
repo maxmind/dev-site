@@ -1015,7 +1015,7 @@ the input and issue a warning.
 
 
   {{< minfraud-schema-row key="your_custom_PHONE_NUMBER_key" type="request" valueType="string" valueTypeNote="format: Phone number, max length: 255" >}}
-  A custom key of your choice with a string value, formatted as a phone number. Numbers, spaces and punctuation accepted, although spaces and punctuation will be stripped. The following ASCII characters constitute the accepted punctuation: \` \~ ! @ # $ % ^ & \* ( ) - \_ = + ' " ; : , < . > / ? \\ | \[ \] { and }.
+  A custom key of your choice with a string value, formatted as a phone number. Numbers, spaces and punctuation accepted, although spaces and punctuation will be stripped. The following ASCII characters constitute the accepted punctuation: \` \~ ! @ # $ % ^ & \* ( ) - \_ = + &#39; " ; : , < . > / ? \\ | \[ \] { and }.
   {{</minfraud-schema-row>}}
 
 

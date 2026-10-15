@@ -1,7 +1,7 @@
 +++
 title = 'minFraud Release Notes'
 type = 'release-note'
-outputs = ['html', 'rss', 'anchors']
+outputs = ['html', 'rss', 'anchors', 'markdown']
 +++
 
 {{< alert info >}}

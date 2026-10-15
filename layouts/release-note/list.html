@@ -5,6 +5,7 @@
     </div>
     <div class="page__content" data-release-note-listing>
       <h1 class="page__title">{{ .Title }}</h1>
+      {{ partial "markdown-link.html" . }}
 
       {{ .Content }}
 

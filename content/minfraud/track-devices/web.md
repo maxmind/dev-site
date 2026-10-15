@@ -1,6 +1,7 @@
 +++
 draft = false
 title = 'Web'
+linkTitle = 'Web Device Tracking'
 +++
 
 The Device Tracking Add-On is JavaScript code for you to add to your website. It

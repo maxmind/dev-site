@@ -13,7 +13,7 @@ associated with IPv4 and IPv6 addresses.
 {{< snippet "snippets/binary-databases.md" >}}
 
 [Learn about the fields in the binary version of this database on our binary
-database field reference page.](binary/)
+database field reference page.](/geoip/docs/databases/asn/binary/)
 
 ## CSV Database
 

@@ -19,8 +19,8 @@ our product pages:
 
 {{< snippet "snippets/binary-databases.md" >}}
 
-- [GeoIP City binary database fields](city-binary/)
-- [GeoIP Country binary database fields](country-binary/)
+- [GeoIP City binary database fields](/geoip/docs/databases/city-and-country/city-binary/)
+- [GeoIP Country binary database fields](/geoip/docs/databases/city-and-country/country-binary/)
 
 ## CSV Databases
 

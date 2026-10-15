@@ -39,6 +39,7 @@
   },
   "scripts": {
     "build:headers": "node --experimental-strip-types bin/generate-headers.ts",
+    "build:llms-full": "node --experimental-strip-types bin/build-llms-full.ts",
     "fix": "run-p fix:*",
     "fix:scripts": "pnpm run lint:scripts --fix",
     "fix:styles": "pnpm run lint:styles --fix",

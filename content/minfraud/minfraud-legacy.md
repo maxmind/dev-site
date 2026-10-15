@@ -10,7 +10,7 @@ web services. Please see our
 for more information, and how to prepare. {{</ alert >}}
 
 {{< alert >}} **New minFraud APIs are available:** Please see
-[What’s New in minFraud Score, minFraud Insights, and minFraud Factors](/minfraud/whats-new-in-minfraud-score-and-minfraud-insights)
+[What's New in minFraud Score, minFraud Insights, and minFraud Factors](/minfraud/whats-new-in-minfraud-score-and-minfraud-insights)
 and our
 [minFraud Insights, minFraud Score, and minFraud Factors API documentation](/minfraud).
 To learn more about the minFraud Insights, minFraud Score, and minFraud Factors

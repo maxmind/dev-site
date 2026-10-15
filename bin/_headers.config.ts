@@ -13,6 +13,20 @@ interface HeadersConfig {
 
 const config: HeadersConfig = {
   paths: [
+    // The Markdown outputs are for AI agents. Keep them out of search
+    // results, where they would duplicate the HTML pages.
+    {
+      pattern: '/*.md',
+      headers: { 'X-Robots-Tag': ['noindex'] },
+    },
+    {
+      pattern: '/llms.txt',
+      headers: { 'X-Robots-Tag': ['noindex'] },
+    },
+    {
+      pattern: '/llms-full.txt',
+      headers: { 'X-Robots-Tag': ['noindex'] },
+    },
     {
       pattern: '/*',
       headers: {
