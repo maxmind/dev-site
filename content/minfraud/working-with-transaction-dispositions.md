@@ -38,16 +38,26 @@ and responses, see the
 API calls should be made with an HTTP GET request to
 `https://minfraud.maxmind.com/minfraud/disposition/v1.0/updates`.
 
-We require a URL parameter called `updates_after` with an RFC 3339 timestamp
-value. This value is an exclusive lower bound for the updates; only updates made
-after this time will be returned.
+Each request needs one of these URL parameters:
 
-URL-encode the value. If it has a `+` offset, send it as `%2B`, or the service
-reads the `+` as a space and rejects the timestamp.
+- `updates_after`: an RFC 3339 timestamp. It is an exclusive lower bound for the
+  updates. MaxMind returns only updates made after this time. Send it on your
+  first request.
+- `cursor`: the `next_cursor` value from the previous response. MaxMind returns
+  the updates after the position that `next_cursor` marks. Send it on every
+  later request.
+
+Send `updates_after` or `cursor`, not both.
+
+URL-encode the `updates_after` value. If it has a `+` offset, send it as `%2B`,
+or the service reads the `+` as a space and rejects the timestamp.
 
 For example, to get updates after March 15, 2021 at 9 AM UTC, your request would
 look like:
 `https://minfraud.maxmind.com/minfraud/disposition/v1.0/updates?updates_after=2021-03-15T09:00:00.00000Z`
+
+To get the next page, send the `next_cursor` value from the previous response:
+`https://minfraud.maxmind.com/minfraud/disposition/v1.0/updates?cursor=00054acc27a57911deadbeef000000000000000000000050`
 
 ### Authorization and Security
 
@@ -95,28 +105,50 @@ A `Content-Length` header will be provided.
 ### Body (successful)
 
 Data will be returned as a JSON document in UTF-8 encoding. The document will
-include two keys: `last_update_timestamp` and `updates`.
+include three keys: `last_update_timestamp`, `next_cursor`, and `updates`.
 
 The `last_update_timestamp` value provides the relevant timestamp the last
 returned transaction was sorted by, in RFC 3339 format (NB: this value is not
 necessarily the earlier of the `*_last_updated` keys of the last included
-transaction; this is why it’s being provided explicitly).
+transaction; this is why it’s being provided explicitly). If `updates` is empty,
+this is the time of your `updates_after` value, or the `last_update_timestamp`
+of the response that gave you the `cursor`.
+
+The `next_cursor` value is an opaque string that marks the position of the last
+transaction in `updates`. If `updates` is empty, it is the position of your
+request. Send it as `cursor` in your next request. Do not parse or build this
+value.
 
 The `updates` value provides an array of transactions for which the disposition
 and/or note have been manually updated, or, the transaction’s manual review
 period has expired. The transactions will be sorted from least recently updated
 to most recently updated, using the earliest updated timestamp (either the
-disposition or note) after the `updates_after` time for each transaction.
+disposition or note) after the request's position (the `updates_after` time, or
+the point that `cursor` marks) for each transaction.
 
-A response holds the earliest updated transactions after the provided
-`updates_after` timestamp, not the most recent. It usually holds at most 1000
-updated transactions, but do not rely on this limit. For each repeated request,
-the `updates_after` request value should be replaced with the
-`last_update_timestamp` value returned from the previous request. When `updates`
-is empty, you have received all of the updates so far. Send a new request later
-with the same `updates_after` value to check for more. In that case,
-`last_update_timestamp` is not the time of an update, so do not use it as
-`updates_after`.
+A response holds the earliest updated transactions after the request's position,
+not the most recent. To get all of the updates:
+
+1. Send `updates_after` with the time from which you want updates.
+2. Send the `next_cursor` value from each response as `cursor` in your next
+   request.
+3. When `updates` is empty, you have received all of the updates available now.
+   An update becomes available one minute or more after it happens. Send the
+   response's `next_cursor` value later to check for more.
+
+A response to a `cursor` request holds at most 1000 updated transactions.
+MaxMind can change this number. A response to an `updates_after` request can
+hold more, because it holds every update that shares its last timestamp.
+
+If you page by sending `last_update_timestamp` as `updates_after`, your requests
+keep working. To change to `cursor`, send your stored `last_update_timestamp` as
+`updates_after` once, then follow the steps above.
+
+Once you use `cursor`, store `next_cursor` as your position, not
+`last_update_timestamp`. Several updates can have the same timestamp, and a
+`cursor` response can hold only some of them. For example, if three updates
+share the response's `last_update_timestamp` and the response holds one, a
+request with that value as `updates_after` never returns the other two.
 
 A transaction can appear in more than one response. For example, if its note
 changes after its disposition, it appears once for the disposition update and
@@ -141,6 +173,7 @@ object in future versions of this API.
 ```json
 {
   "last_update_timestamp": "2017-03-15T22:06:22.492945Z",
+  "next_cursor": "00054acc27a57911deadbeef000000000000000000000050",
   "updates": [
     {
       "minfraud_id": "deadbeef-0000-0000-0000-000000000003",
@@ -215,17 +248,19 @@ the error and may change at any time.
 In addition to the errors documented below, client code should also be prepared
 to handle any valid HTTP 4xx or 5xx status code.
 
-| Code                   | HTTP Status               | Error                                                                                                                                                                                      |
-| ---------------------- | ------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| UPDATES_AFTER_REQUIRED | 400 Bad Request           | You have not supplied the `updates_after` URI parameter.                                                                                                                                   |
-| TIMESTAMP_INVALID      | 400 Bad Request           | The `updates_after` field must be in RFC 3339 format.                                                                                                                                      |
-| AUTHORIZATION_INVALID  | 401 Unauthorized          | You have supplied an invalid [MaxMind account ID and/or license key](https://www.maxmind.com/en/accounts/current/license-key) in the [Authorization](#authorization-and-security) header.  |
-| LICENSE_KEY_REQUIRED   | 401 Unauthorized          | You have not supplied a [MaxMind license key](https://www.maxmind.com/en/accounts/current/license-key) in the [Authorization](#authorization-and-security) header.                         |
-| ACCOUNT_ID_REQUIRED    | 401 Unauthorized          | You have not supplied a [MaxMind account ID](https://support.maxmind.com/knowledge-base/articles/find-your-maxmind-account-id) in the [Authorization](#authorization-and-security) header. |
-| PERMISSION_REQUIRED    | 403 Forbidden             | You do not have permission to use the service. Please [contact our support team](https://support.maxmind.com/knowledge-base) for more information.                                         |
-| (none)                 | 429 Too Many Requests     | MaxMind rate-limited the request, usually because of excessive earlier error responses. The response may not include a JSON body.                                                          |
-| SERVER_ERROR           | 500 Internal Server Error | There was an error when processing this request.                                                                                                                                           |
-| (none)                 | 503 Service Unavailable   | There is a problem with the web service server. You can try this request again later.                                                                                                      |
+| Code                              | HTTP Status               | Error                                                                                                                                                                                      |
+| --------------------------------- | ------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| UPDATES_AFTER_REQUIRED            | 400 Bad Request           | You have not supplied the `updates_after` or `cursor` URI parameter.                                                                                                                       |
+| TIMESTAMP_INVALID                 | 400 Bad Request           | The `updates_after` field must be in RFC 3339 format.                                                                                                                                      |
+| CURSOR_INVALID                    | 400 Bad Request           | The `cursor` value is not valid. Send a `next_cursor` value from a previous response.                                                                                                      |
+| CURSOR_AND_UPDATES_AFTER_PROVIDED | 400 Bad Request           | You have supplied both the `updates_after` and `cursor` URI parameters. Send only one.                                                                                                     |
+| AUTHORIZATION_INVALID             | 401 Unauthorized          | You have supplied an invalid [MaxMind account ID and/or license key](https://www.maxmind.com/en/accounts/current/license-key) in the [Authorization](#authorization-and-security) header.  |
+| LICENSE_KEY_REQUIRED              | 401 Unauthorized          | You have not supplied a [MaxMind license key](https://www.maxmind.com/en/accounts/current/license-key) in the [Authorization](#authorization-and-security) header.                         |
+| ACCOUNT_ID_REQUIRED               | 401 Unauthorized          | You have not supplied a [MaxMind account ID](https://support.maxmind.com/knowledge-base/articles/find-your-maxmind-account-id) in the [Authorization](#authorization-and-security) header. |
+| PERMISSION_REQUIRED               | 403 Forbidden             | You do not have permission to use the service. Please [contact our support team](https://support.maxmind.com/knowledge-base) for more information.                                         |
+| (none)                            | 429 Too Many Requests     | MaxMind rate-limited the request, usually because of excessive earlier error responses. The response may not include a JSON body.                                                          |
+| SERVER_ERROR                      | 500 Internal Server Error | There was an error when processing this request.                                                                                                                                           |
+| (none)                            | 503 Service Unavailable   | There is a problem with the web service server. You can try this request again later.                                                                                                      |
 
 ### Example response to an unsuccessful request
 
