@@ -7,8 +7,9 @@
  * - A saved listing link whose note moved to a later page goes to the note's
  *   own page.
  *
- * The server never sees the fragment, so a year-page redirect lands on the
- * listing with ?year= and the browser keeps the fragment.
+ * The server never sees the fragment, so this script runs in the browser. A
+ * year-page redirect lands on the listing with ?year=, and the browser keeps
+ * the fragment.
  */
 
 export interface AnchorEntry {
@@ -22,7 +23,7 @@ export interface AnchorEntry {
 export type YearMap = Record<string, string>;
 
 /** A note heading id is its filename, which no legacy anchor matches. */
-const NOTE_ID = /^\d{4}-\d{2}-\d{2}-[\w-]+$/;
+export const NOTE_ID = /^\d{4}-\d{2}-\d{2}-[\w-]+$/;
 
 /**
  * The map is newest first, so the first match for an anchor used by more than
@@ -55,8 +56,9 @@ export interface OldLink {
 }
 
 /**
- * A known anchor goes to its note. An anchor on this page stays. Otherwise a
- * year link goes to the newest note of that year.
+ * Returns the URL to go to, or null to stay. A known anchor goes to its note.
+ * An anchor on this page stays. Otherwise a year link goes to the newest note
+ * of that year, if the year map has that year.
  */
 export function resolveTarget(
   entries: AnchorEntry[],
@@ -160,7 +162,7 @@ async function findTarget(
   });
 }
 
-async function redirect(listingElement: HTMLElement): Promise<void> {
+export async function redirect(listingElement: HTMLElement): Promise<void> {
   const anchor = decodeHash(window.location.hash);
   const year = new URLSearchParams(window.location.search).get('year');
   if (anchor === '' && year === null) return;
@@ -172,7 +174,8 @@ async function redirect(listingElement: HTMLElement): Promise<void> {
     window.location.replace(url);
     return;
   }
-  // Same page: drop ?year= and scroll, with no reload.
+  // Same page: set the URL to the target, which drops ?year=, then scroll
+  // with no reload.
   history.replaceState(null, '', url);
   const id = decodeHash(url.hash);
   if (id !== '') document.getElementById(id)?.scrollIntoView();

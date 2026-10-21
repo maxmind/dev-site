@@ -3,14 +3,15 @@
  *
  * - the anchor map, which sends an old year-page anchor to its note
  * - the year map, which sends a year link to the newest note of that year
+ * - where the anchor script sends a reader, with the browser stubbed
  * - the wiring that loads the script on each listing page
  * - the RSS feed
  * - the age notice on old notes
  *
  * It builds at two clocks five months apart, so a notice that ignores the
  * build month fails. Both clocks fall after the newest note, because Hugo does
- * not build a note dated after the clock. Only the age notice depends on the
- * clock, so only the first build checks the rest.
+ * not build a note dated after the clock. The other checks read nothing that
+ * depends on the clock, so only the first build runs them.
  *
  * The builds use an absolute base URL, as production does, and add one test
  * note per product from a temporary folder. The repository does not change.
@@ -26,6 +27,8 @@ import path from 'node:path';
 
 import {
   type AnchorEntry,
+  NOTE_ID,
+  redirect,
   resolveAnchor,
   resolveTarget,
   type YearMap,
@@ -224,41 +227,185 @@ function decodeAttribute(value: string): string {
     .replace(/&amp;/g, '&');
 }
 
+/** Where the anchor script sent the reader. */
+interface Visit {
+  replaced: string | null;
+  replacedState: string | null;
+  fetches: string[];
+}
+
+/**
+ * Runs the anchor script's redirect for one URL, with the browser globals it
+ * uses stubbed. `respond` gives the fetch response, or null for a network
+ * error.
+ */
+async function visit(
+  href: string,
+  years: YearMap,
+  respond: (url: string) => Response | null
+): Promise<Visit> {
+  const seen: Visit = { replaced: null, replacedState: null, fetches: [] };
+  const url = new URL(href);
+  const stubs: Record<string, unknown> = {
+    window: {
+      location: {
+        hash: url.hash,
+        search: url.search,
+        pathname: url.pathname,
+        href: url.href,
+        replace: (to: URL) => {
+          seen.replaced = String(to);
+        },
+      },
+    },
+    document: { getElementById: () => null },
+    history: {
+      replaceState: (_state: unknown, _unused: string, to: URL) => {
+        seen.replacedState = String(to);
+      },
+    },
+    fetch: (to: string) => {
+      seen.fetches.push(to);
+      const response = respond(to);
+      return response === null
+        ? Promise.reject(new Error('network error'))
+        : Promise.resolve(response);
+    },
+  };
+  const saved = Object.keys(stubs).map(
+    (key) => [key, Object.getOwnPropertyDescriptor(globalThis, key)] as const
+  );
+  const { warn } = console;
+  for (const [key, value] of Object.entries(stubs)) {
+    Object.defineProperty(globalThis, key, {
+      configurable: true,
+      value,
+      writable: true,
+    });
+  }
+  // The script warns when anchors.json does not load, which one case expects.
+  console.warn = () => undefined;
+  try {
+    const listing = {
+      dataset: { releaseNoteYears: JSON.stringify(years) },
+    } as unknown as HTMLElement;
+    await redirect(listing);
+  } finally {
+    console.warn = warn;
+    for (const [key, descriptor] of saved) {
+      if (descriptor === undefined) Reflect.deleteProperty(globalThis, key);
+      else Object.defineProperty(globalThis, key, descriptor);
+    }
+  }
+  return seen;
+}
+
+/**
+ * resolveTarget is checked on its own above. These cases check the code around
+ * it: the early return, the fetches, and the choice of reload.
+ */
+async function redirectFailures(
+  listing: string,
+  years: YearMap
+): Promise<string[]> {
+  const sorted = Object.keys(years).sort();
+  if (sorted.length < 2) return ['the year map needs two years to check'];
+  const oldest = sorted[0];
+  const newest = sorted[sorted.length - 1];
+  const base = new URL(listing, BASE_URL);
+  const at = (target: string) => new URL(target, base).href;
+  const failures: string[] = [];
+  const expect = (link: string, ok: boolean, wanted: string) => {
+    if (!ok) failures.push(`redirect from ${link}: expected ${wanted}`);
+  };
+
+  let link = `?year=${oldest}`;
+  let seen = await visit(at(link), years, () => null);
+  expect(
+    link,
+    seen.replaced === at(years[oldest]) && seen.fetches.length === 0,
+    `a reload to ${years[oldest]} with no fetch`
+  );
+
+  link = `?year=${newest}`;
+  seen = await visit(at(link), years, () => null);
+  expect(
+    link,
+    seen.replaced === null && seen.replacedState === at(years[newest]),
+    `a URL change to ${years[newest]} with no reload`
+  );
+
+  // A note id that is not on this page goes to the note's own page.
+  const id = '2000-01-01-moved-note';
+  link = `#${id}`;
+  seen = await visit(
+    at(link),
+    years,
+    () => new Response(null, { status: 200 })
+  );
+  expect(link, seen.replaced === at(`${id}/`), `a reload to ${id}/`);
+
+  // With no anchor map, the fragment stays so that a reload can try again.
+  link = `?year=${oldest}#a-legacy-anchor`;
+  seen = await visit(at(link), years, () => null);
+  expect(
+    link,
+    seen.replaced === null &&
+      seen.replacedState === null &&
+      seen.fetches.some((url) => url.endsWith('anchors.json')),
+    'a fetch of anchors.json and no navigation'
+  );
+  return failures;
+}
+
 /**
  * A year link with no fragment must reach the newest note of that year on the
  * listing. The newest note of all is the top of the listing, so it gets no
  * fragment.
  */
-function yearFailures(buildDir: string, product: string): string[] {
+async function yearFailures(
+  buildDir: string,
+  product: string
+): Promise<string[]> {
   const listing = `/${product}/release-notes/`;
   const wanted = new Map<string, string>();
   const maps = new Set<string>();
+  const badIds: string[] = [];
   listingPages(buildDir, product).forEach((page, index) => {
     const url = index === 0 ? listing : `${listing}page/${index + 1}/`;
     const html = fs.readFileSync(page, 'utf8');
-    const attribute = /data-release-note-years="([^"]*)"/.exec(html);
+    // The script reads the map only from the listing element.
+    const tag =
+      /<[^>]*\bdata-release-note-listing\b[^>]*>/.exec(html)?.[0] ?? '';
+    const attribute = /\bdata-release-note-years="([^"]*)"/.exec(tag);
     maps.add(attribute === null ? '' : decodeAttribute(attribute[1]));
     for (const [, id] of html.matchAll(
-      /class="release-note__title" id="(\d{4}-[^"]+)"/g
+      /class="release-note__title" id="([^"]*)"/g
     )) {
+      // The script skips anchors.json only for an id like this.
+      if (!NOTE_ID.test(id)) {
+        badIds.push(`${id}: note heading id must be the date and a slug`);
+        continue;
+      }
       const year = id.slice(0, 4);
       if (!wanted.has(year)) {
         wanted.set(year, wanted.size === 0 ? listing : `${url}#${id}`);
       }
     }
   });
-  if (wanted.size === 0) return ['no note headings found on the listing'];
+  if (wanted.size === 0)
+    return [...badIds, 'no note headings found on the listing'];
   if (maps.size !== 1 || maps.has('')) {
-    return ['every listing page must carry the same year map'];
+    return [...badIds, 'every listing page must carry the same year map'];
   }
   let years: YearMap;
   try {
     years = JSON.parse([...maps][0]) as YearMap;
   } catch {
-    return ['the year map is not JSON'];
+    return [...badIds, 'the year map is not JSON'];
   }
 
-  const failures: string[] = [];
+  const failures: string[] = [...badIds];
   const expect = (year: string | null, url: string | null) => {
     const actual = resolveTarget([], years, {
       anchor: '',
@@ -286,6 +433,7 @@ function yearFailures(buildDir: string, product: string): string[] {
   if (resolveTarget([], years, link) !== null) {
     failures.push(`a heading on the page in ${year} resolved to something`);
   }
+  failures.push(...(await redirectFailures(listing, years)));
   return failures;
 }
 
@@ -324,6 +472,12 @@ function anchorFailures(
   for (const entry of entries) {
     if (!fs.existsSync(pageFile(buildDir, entry.url))) {
       failures.push(`anchor map names ${entry.url}, which was not built`);
+    }
+    // The script never reads the map for an anchor like a note id.
+    if (NOTE_ID.test(entry.anchor)) {
+      failures.push(
+        `${entry.url}: legacy anchor "${entry.anchor}" looks like a note id`
+      );
     }
   }
 
@@ -553,7 +707,7 @@ function ageNoticeFailures(
   return failures.map((failure) => `built at ${clock}: ${failure}`);
 }
 
-function check(): void {
+async function check(): Promise<void> {
   let all: Note[] = [];
   try {
     all = readNotes();
@@ -577,11 +731,11 @@ function check(): void {
 
   const failures: string[] = [];
   try {
-    clocks(newest).forEach((clock, index) => {
+    for (const [index, clock] of clocks(newest).entries()) {
       const buildDir = build(clock, config);
       if (buildDir === null) {
         failures.push(`the site does not build at ${clock}`);
-        return;
+        continue;
       }
       try {
         for (const product of PRODUCTS) {
@@ -590,7 +744,7 @@ function check(): void {
             ...(index === 0
               ? [
                   ...wiringFailures(buildDir, product),
-                  ...yearFailures(buildDir, product),
+                  ...(await yearFailures(buildDir, product)),
                   ...anchorFailures(buildDir, product, own),
                   ...feedFailures(buildDir, product, [
                     ...own,
@@ -605,7 +759,7 @@ function check(): void {
       } finally {
         fs.rmSync(buildDir, { recursive: true, force: true });
       }
-    });
+    }
   } finally {
     fs.rmSync(fixtures, { recursive: true, force: true });
   }
@@ -616,4 +770,4 @@ function check(): void {
   );
 }
 
-check();
+await check();

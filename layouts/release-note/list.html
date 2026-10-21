@@ -28,7 +28,8 @@
       {{ range $notes.Pages }}
         {{/* Filename, not legacy_anchor: several notes share an anchor, so it
              cannot be a unique id. anchors.json carries the old links. The
-             year map above and release-note-anchors.ts rely on this id. */}}
+             year map above, release-note-anchors.ts, and
+             check-release-note-site.ts rely on this id. */}}
         <div class="release-note">
           <h2 class="release-note__title" id="{{ .File.ContentBaseName }}">
             <a class="heading-anchor" href="{{ .RelPermalink }}">{{ .Title }}</a>
