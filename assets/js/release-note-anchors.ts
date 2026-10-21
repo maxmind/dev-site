@@ -51,7 +51,7 @@ export function resolveAnchor(
 export interface OldLink {
   anchor: string;
   year: string | null;
-  /** The anchor names an element on this page that the link can mean. */
+  /** The anchor names an element on this page. */
   onPage: boolean;
 }
 
@@ -80,18 +80,8 @@ function decodeHash(hash: string): string {
   }
 }
 
-/**
- * An old year page held only that year's notes, so a heading in a note from
- * another year is a different section.
- */
-function isOnPage(anchor: string, year: string | null): boolean {
-  const element = anchor === '' ? null : document.getElementById(anchor);
-  if (element === null) return false;
-  if (year === null) return true;
-  const title = element
-    .closest('.release-note')
-    ?.querySelector('.release-note__title');
-  return title == null || title.id.startsWith(`${year}-`);
+function isOnPage(anchor: string): boolean {
+  return anchor !== '' && document.getElementById(anchor) !== null;
 }
 
 function readYears(listing: HTMLElement): YearMap {
@@ -143,7 +133,7 @@ async function findTarget(
   year: string | null
 ): Promise<string | null> {
   const listing = window.location.pathname.replace(/(?:page\/\d+\/)?$/, '');
-  const onPage = isOnPage(anchor, year);
+  const onPage = isOnPage(anchor);
   let entries: AnchorEntry[] = [];
   if (NOTE_ID.test(anchor)) {
     if (onPage) return null;
