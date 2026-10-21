@@ -451,10 +451,11 @@ function anchorFailures(
 
   // One entry per note with a legacy anchor, naming that note's own page.
   const anchored = notes.filter((note) => note.legacyAnchor !== null);
-  if (entries.length !== anchored.length) {
+  const noteEntries = entries.filter((entry) => !entry.url.includes('#'));
+  if (noteEntries.length !== anchored.length) {
     failures.push(
-      `anchor map has ${entries.length} entries, but ${anchored.length} ` +
-        'notes have a legacy anchor'
+      `anchor map has ${noteEntries.length} note entries, but ` +
+        `${anchored.length} notes have a legacy anchor`
     );
   }
   for (const note of anchored) {
@@ -469,9 +470,23 @@ function anchorFailures(
       );
     }
   }
+  // The other entries name a heading inside a migrated note.
+  const permalinks = new Set(anchored.map((note) => note.permalink));
   for (const entry of entries) {
-    if (!fs.existsSync(pageFile(buildDir, entry.url))) {
+    const [page, fragment] = entry.url.split('#');
+    const file = pageFile(buildDir, page);
+    if (!fs.existsSync(file)) {
       failures.push(`anchor map names ${entry.url}, which was not built`);
+    } else if (
+      fragment !== undefined &&
+      (fragment !== entry.anchor ||
+        !permalinks.has(page) ||
+        !fs.readFileSync(file, 'utf8').includes(` id="${fragment}"`))
+    ) {
+      failures.push(
+        `${entry.url}: must name a heading "${entry.anchor}" on the page ` +
+          'of a note with a legacy anchor'
+      );
     }
     // The script never reads the map for an anchor like a note id.
     if (NOTE_ID.test(entry.anchor)) {
