@@ -3,6 +3,9 @@
   notes share gets one entry per note. The order is newest first, because
   release-note-anchors.ts takes the first match. The server never sees a URL
   fragment, so the script resolves an old year-page fragment in the browser.
+
+  The headings inside a migrated note were on its year page too, so each gets
+  an entry that names the heading on the note's own page.
 */ -}}
 {{- $entries := slice }}
 {{- range .Pages.ByDate.Reverse }}
@@ -15,6 +18,15 @@
         "url" $note.RelPermalink
       )
     }}
+    {{- range $note.Fragments.Identifiers }}
+      {{- $entries = $entries | append (dict
+          "anchor" .
+          "year" ($note.Date.Format "2006")
+          "date" ($note.Date.Format "2006-01-02")
+          "url" (printf "%s#%s" $note.RelPermalink .)
+        )
+      }}
+    {{- end }}
   {{- end }}
 {{- end }}
 {{- $entries | jsonify }}
