@@ -8,7 +8,7 @@ legacy_anchor = 'new-data-point-is_residential_proxy-released-for-geoip2-anonymo
 We have released an additional data point for the
 [GeoIP2 Anonymous IP Database](https://www.maxmind.com/en/geoip-anonymous-ip-database).
 Subscribers can now identify whether an IP address is likely a
-[residential proxy](https://en.wikipedia.org/wiki/Proxy_server#Residential_proxy):
+[residential proxy](https://blog.maxmind.com/residential-proxy-detection-a-practical-guide-for-businesses/):
 
 - is_residential_proxy – 1 if the IP address is on a suspected anonymizing
   network and belongs to a residential ISP. Blank if not.
