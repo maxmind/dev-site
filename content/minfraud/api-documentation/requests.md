@@ -121,7 +121,9 @@ size will be rejected.
   },
   "email": {
     "address": "977577b140bfb7c516e4746204fbdb01",
-    "domain": "maxmind.com"
+    "domain": "maxmind.com",
+    "verification_time": "2026-10-01T14:25:00Z",
+    "was_verification_successful": true
   },
   "event": {
     "party": "customer",
@@ -353,7 +355,9 @@ the end-user who initiated the event.
 ```json
 {
   "address": "977577b140bfb7c516e4746204fbdb01",
-  "domain": "maxmind.com"
+  "domain": "maxmind.com",
+  "verification_time": "2026-10-01T14:25:00Z",
+  "was_verification_successful": true
 }
 ```
 
@@ -370,6 +374,18 @@ the end-user who initiated the event.
   The domain of the email address used in the transaction. Do not include the `@` in this field.
 
   You do not need to pass the email domain input unless you are passing the email address as an MD5 hash. [Learn more about hashed email inputs on our Knowledge Base.](https://support.maxmind.com/knowledge-base/articles/passing-email-inputs-minfraud#email-hashing)
+  {{</minfraud-schema-row>}}
+
+  {{< minfraud-schema-row key="verification_time" type="request" valueType="string" >}}
+  The most recent date and time a verification of the email address was attempted, if known. The string must be in the [RFC 3339](https://datatracker.ietf.org/doc/html/rfc3339) date-time format. The time must not be before 1970-01-01T00:00:00Z or more than two days in the future. For a time outside this range, MaxMind ignores the input and returns a warning.
+
+  [Learn more about the /email/verification\_time input on our Knowledge Base.](https://support.maxmind.com/knowledge-base/articles/passing-email-inputs-minfraud)
+  {{</minfraud-schema-row>}}
+
+  {{< minfraud-schema-row key="was_verification_successful" type="request" valueType="boolean" >}}
+  Whether the most recent verification that the end user controls this email address was successful (e.g. by confirming a link sent to the email address). `true` if the email verification was successful, or `false` if the user failed email verification. Do not include this field if you have not performed this check.
+
+  [Learn more about the /email/was\_verification\_successful input on our Knowledge Base.](https://support.maxmind.com/knowledge-base/articles/passing-email-inputs-minfraud)
   {{</minfraud-schema-row>}}
 {{</ schema-table >}}
 
