@@ -129,9 +129,6 @@ const config: HeadersConfig = {
 
             // Google Fonts API and Vertex search default styles
             'https://fonts.googleapis.com',
-
-            // Google static assets
-            'https://www.gstatic.com',
           ],
         },
         // While many of these features do not seem to have any security
