@@ -23,4 +23,16 @@
     {{- end -}}
   {{- end -}}
 {{- end -}}
+{{- /* Shortcodes and their source leave runs of blank lines. One blank line
+       separates blocks just as well and costs fewer tokens. Keep the runs
+       inside fenced code, where they are part of the sample: swap each
+       fence for a placeholder, collapse the runs, and swap the fences back. */ -}}
+{{- $fences := findRE "(?ms)^[ \t]*```.*?^[ \t]*```[ \t]*$" $body -}}
+{{- range $i, $fence := $fences -}}
+  {{- $body = replace $body $fence (printf "\x00%d\x00" $i) -}}
+{{- end -}}
+{{- $body = replaceRE `\n([ \t]*\n){2,}` "\n\n" $body -}}
+{{- range $i, $fence := $fences -}}
+  {{- $body = replace $body (printf "\x00%d\x00" $i) $fence -}}
+{{- end -}}
 {{- $body | strings.TrimSpace -}}
