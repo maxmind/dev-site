@@ -9,10 +9,12 @@
     {{- $unlinked = $unlinked | append . -}}
   {{- end -}}
 {{- end -}}
-{{- /* One blank line between the body and the list, and no blank lines at
-       the end when every child is already linked. */ -}}
+{{- /* End the body with a newline, and add a blank line before the list.
+       A page with no body needs neither. */ -}}
+{{- if $body }}
+{{ end -}}
 {{- with $unlinked }}
-{{ with $body }}
+{{- if $body }}
 {{ end -}}
 ## Pages in this section
 
