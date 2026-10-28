@@ -1,2 +1,5 @@
 engineStrict: true
 ignoreScripts: true
+
+# pnpm security: 4 days = 5760 minutes
+minimumReleaseAge: 5760
