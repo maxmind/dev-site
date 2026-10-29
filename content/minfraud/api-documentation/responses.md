@@ -1,6 +1,7 @@
 +++
 draft = false
 title = 'minFraud API Responses'
+description = 'Reference for minFraud API responses: headers, errors, rate limits, and each field of the Score, Insights, and Factors response body.'
 type = 'has-toc'
 +++
 

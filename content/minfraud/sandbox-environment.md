@@ -1,6 +1,7 @@
 +++
 draft = false
 title = 'Testing minFraud in the MaxMind Sandbox'
+description = 'How to test a minFraud integration in the MaxMind Sandbox: license keys, Sandbox endpoints, and test data.'
 +++
 
 {{< snippet "snippets/sandbox-intro.md" >}}

@@ -1,6 +1,7 @@
 +++
 draft = false
 title = 'GeoIP and GeoLite City and Country Databases'
+description = 'Formats, example files, and sizes of the GeoIP and GeoLite City and Country databases, which give the country, subdivision, city, and postal code.'
 +++
 
 Determine the country, subdivisions (regions), city, and postal code associated

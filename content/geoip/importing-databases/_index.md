@@ -1,6 +1,7 @@
 +++
 draft = false
 title = 'Importing Databases'
+description = 'Guides to import GeoIP and GeoLite CSV databases into PostgreSQL or MySQL.'
 icon = 'DatabaseIcon'
 +++
 

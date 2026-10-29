@@ -1,6 +1,7 @@
 +++
 draft = false
 title = 'GeoIP Enterprise Databases'
+description = 'Formats, example files, and sizes of the GeoIP Enterprise database, which adds confidence factors, ISP, domain, and connection type to geolocation data.'
 +++
 
 Determine geolocation data such as country, region, state, city, ZIP/postal

@@ -1,6 +1,7 @@
 +++
 draft = false
 title = 'GeoIP User Count Databases'
+description = 'Formats, example files, and sizes of the GeoIP User Count database, which estimates the number of users on an IP address and its subnet.'
 +++
 
 The GeoIP User Count database provides insight into the number of expected users

@@ -1,6 +1,7 @@
 +++
 draft = false
 title = 'GeoIP Anonymous Plus Databases'
+description = 'Formats, example files, and sizes of the GeoIP Anonymous Plus database, which identifies anonymizer traffic with confidence scores and VPN provider names.'
 +++
 
 {{< alert warning >}} The GeoIP Anonymous Plus database is under active

@@ -1,6 +1,7 @@
 +++
 draft = false
 title = 'GeoIP Domain binary database fields'
+description = 'Reference for each field in the GeoIP Domain binary (MMDB) database.'
 +++
 
 The GeoIP Domain binary database contains the following fields for each network.

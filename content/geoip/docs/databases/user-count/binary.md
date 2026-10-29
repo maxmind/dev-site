@@ -1,6 +1,7 @@
 +++
 draft = false
 title = 'GeoIP User Count binary database fields'
+description = 'Reference for each field in the GeoIP User Count binary (MMDB) database.'
 +++
 
 The GeoIP User Count binary database contains the following fields for each

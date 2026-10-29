@@ -1,6 +1,7 @@
 +++
 draft = false
 title = 'GeoIP Exchange documentation'
+description = 'How GeoIP Exchange members can automate downloads of the GeoIP Exchange geofeed report.'
 +++
 
 ## Overview

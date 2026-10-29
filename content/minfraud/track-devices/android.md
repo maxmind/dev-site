@@ -1,6 +1,7 @@
 +++
 draft = false
 title = 'Android'
+description = 'How to install and use the MaxMind Device SDK for Android to send device data to the minFraud service.'
 linkTitle = 'Android Device Tracking'
 +++
 

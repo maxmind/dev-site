@@ -1,6 +1,7 @@
 +++
 draft = false
 title = 'iOS'
+description = 'How to install and use the MaxMind Device SDK for iOS, with Swift and Objective-C examples, to send device data to the minFraud service.'
 linkTitle = 'iOS Device Tracking'
 +++
 
