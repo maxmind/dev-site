@@ -1,6 +1,7 @@
 +++
 draft = false
 title = 'minFraud Legacy Web Service API'
+description = 'Reference for the minFraud Legacy Standard and Premium web service API, including its inputs, outputs, and Sandbox testing.'
 +++
 
 {{< alert danger >}} We have made a number of data changes to the minFraud

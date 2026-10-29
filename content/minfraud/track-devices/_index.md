@@ -1,6 +1,7 @@
 +++
 draft = false
 title = 'Track Devices'
+description = 'How the Device Tracking Add-On identifies devices across networks to improve minFraud risk scores, and how to link devices to transactions explicitly.'
 +++
 
 The Device Tracking Add-On for the minFraud services identifies devices as they

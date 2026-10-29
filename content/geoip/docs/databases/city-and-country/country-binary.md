@@ -1,6 +1,7 @@
 +++
 draft = false
 title = 'GeoIP Country binary database fields'
+description = 'Reference for each field in the GeoIP Country binary (MMDB) database, grouped by top-level key.'
 +++
 
 The GeoIP Country binary database contains the following fields for each network.

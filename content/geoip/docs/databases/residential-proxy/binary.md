@@ -1,6 +1,7 @@
 +++
 draft = false
 title = 'GeoIP Residential Proxy binary database fields'
+description = 'Reference for each field in the GeoIP Residential Proxy binary (MMDB) database.'
 +++
 
 The GeoIP Residential Proxy binary database contains the following fields for each

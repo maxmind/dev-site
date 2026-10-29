@@ -1,6 +1,7 @@
 +++
 draft = false
 title = 'GeoIP Static IP Score binary database fields'
+description = 'Reference for each field in the GeoIP Static IP Score binary (MMDB) database.'
 +++
 
 The GeoIP Static IP Score binary database contains the following fields for each

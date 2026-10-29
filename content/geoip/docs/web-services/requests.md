@@ -1,6 +1,7 @@
 +++
 draft = false
 title = 'GeoIP and GeoLite API Requests'
+description = 'Reference for GeoIP and GeoLite web service requests: authorization, service endpoints, headers, and how to troubleshoot IP lookups.'
 type = 'has-toc'
 +++
 

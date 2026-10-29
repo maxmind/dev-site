@@ -55,12 +55,13 @@ for (const page of all) {
   }
 }
 
-// llms.txt links each page as "- [Title](<URL>index.md)". The URL is
-// absolute in production and root-relative in a local build.
+// llms.txt links each page as "- [Title](<URL>index.md)", followed by
+// ": <description>" when the page has one. The URL is absolute in
+// production and root-relative in a local build.
 const linked = fs
   .readFileSync(INDEX, 'utf8')
   .split('\n')
-  .flatMap((line) => line.match(/^- \[.*\]\((\S+)\)$/)?.[1] ?? [])
+  .flatMap((line) => line.match(/^- \[.*\]\((\S+)\)(?:: .*)?$/)?.[1] ?? [])
   .map((url) => new URL(url, 'http://localhost/').pathname.slice(1));
 if (linked.length === 0) {
   console.error(`❌ No page links in ${INDEX}.`);

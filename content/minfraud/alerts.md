@@ -1,6 +1,7 @@
 +++
 draft = false
 title = 'minFraud Alerts'
+description = 'How minFraud Alerts tell you by email or webhook when the risk score of a transaction increases after scoring, and how to secure the webhook.'
 +++
 
 After initial scoring, we continue to monitor transactions with risk scores less

@@ -1,6 +1,7 @@
 +++
 draft = false
 title = 'GeoIP and GeoLite Database Documentation'
+description = 'Overview of the GeoIP and GeoLite databases, with official and third-party client APIs, integrations, and the mmdbinspect command-line tool.'
 +++
 
 ## Databases

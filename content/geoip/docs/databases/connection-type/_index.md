@@ -1,6 +1,7 @@
 +++
 draft = false
 title = 'GeoIP Connection Type Databases'
+description = 'Formats, example files, and sizes of the GeoIP Connection Type database, which identifies cellular, cable/DSL, corporate, and satellite connections.'
 +++
 
 Determine the connection type of your visitors based on their IP address. The

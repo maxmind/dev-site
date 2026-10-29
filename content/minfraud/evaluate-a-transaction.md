@@ -1,6 +1,7 @@
 +++
 draft = false
 title = 'Evaluate a Transaction'
+description = 'Step-by-step guide to send a transaction to minFraud Score, Insights, or Factors for risk evaluation with an official client library.'
 +++
 
 Evaluating a transaction consists of setting up device tracking, creating an

@@ -3,7 +3,7 @@
        writing an empty link. */ -}}
 {{- with .OutputFormats.Get "MARKDOWN" -}}
 - {{ if and $.IsPage (eq $.CurrentSection.Type "release-note") }}{{ $.Date | time.Format "2006-01-02" }}: {{ end -}}
-[{{ $.LinkTitle }}]({{ .Permalink }})
+[{{ $.LinkTitle }}]({{ .Permalink }}){{ with $.Description }}: {{ . }}{{ end }}
 {{- else -}}
 {{- errorf "%s has no Markdown output to link to" $.Path -}}
 {{- end -}}

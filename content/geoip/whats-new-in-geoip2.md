@@ -1,6 +1,7 @@
 +++
 draft = false
 title = "What's New in GeoIP2"
+description = 'Changes for developers who move from GeoIP Legacy to the GeoIP2 databases and web services.'
 +++
 
 MaxMind's GeoIP2 web services and GeoIP2 databases are an evolution of our

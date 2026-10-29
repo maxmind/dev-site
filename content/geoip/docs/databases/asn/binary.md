@@ -1,6 +1,7 @@
 +++
 draft = false
 title = 'GeoLite ASN binary database fields'
+description = 'Reference for each field in the GeoLite ASN binary (MMDB) database.'
 +++
 
 The GeoLite ASN binary database contains the following fields for each network.

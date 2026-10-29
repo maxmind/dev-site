@@ -1,6 +1,7 @@
 +++
 draft = false
 title = 'Web'
+description = 'How to add the Device Tracking Add-On JavaScript to your website, and how to protect it from ad blockers.'
 linkTitle = 'Web Device Tracking'
 +++
 

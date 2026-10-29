@@ -1,6 +1,7 @@
 +++
 draft = false
 title = 'GeoIP Anonymous IP binary database fields'
+description = 'Reference for each field in the GeoIP Anonymous IP binary (MMDB) database.'
 +++
 
 The GeoIP Anonymous IP binary database contains the following fields for each

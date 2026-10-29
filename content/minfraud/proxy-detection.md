@@ -1,6 +1,7 @@
 +++
 draft = false
 title = 'Proxy Detection Legacy Web Service'
+description = 'Reference for the Proxy Detection Legacy web service, which returns a risk score for an IP address.'
 +++
 
 {{< alert warning >}} To learn more about the risk associated with a particular

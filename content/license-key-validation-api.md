@@ -1,6 +1,7 @@
 +++
 draft = false
 title = 'License Key Validation API'
+description = 'Reference for the License Key Validation API, which checks that a MaxMind license key exists and has a valid format.'
 +++
 
 MaxMind provides a License Key Validation API, a tool for developers and

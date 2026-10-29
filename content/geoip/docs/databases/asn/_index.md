@@ -1,6 +1,7 @@
 +++
 draft = false
 title = 'GeoLite ASN Databases'
+description = 'Formats, example files, and sizes of the GeoLite ASN database, which gives the autonomous system number and organization for an IP address.'
 +++
 
 Look up the autonomous system number and autonomous system organization

@@ -1,6 +1,7 @@
 +++
 draft = false
 title = 'GeoIP Residential Proxy Databases'
+description = 'Formats, example files, and sizes of the GeoIP Residential Proxy database, which identifies IP addresses seen in residential proxy networks.'
 +++
 
 {{< alert warning >}} The GeoIP Residential Proxy database is under active
