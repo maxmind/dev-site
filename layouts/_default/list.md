@@ -1,8 +1,6 @@
 {{ partial "markdown/front-matter.md" . }}
 {{- $body := partial "markdown/body.md" . }}
-{{ with $body }}{{ . }}
-
-{{ end -}}
+{{ $body }}
 {{- /* Leave out the children that the body already links, for example in a
        link group, so the page does not list them twice. */ -}}
 {{- $unlinked := slice -}}
@@ -11,7 +9,13 @@
     {{- $unlinked = $unlinked | append . -}}
   {{- end -}}
 {{- end -}}
-{{- with $unlinked -}}
+{{- /* End the body with a newline, and add a blank line before the list.
+       A page with no body needs neither. */ -}}
+{{- if $body }}
+{{ end -}}
+{{- with $unlinked }}
+{{- if $body }}
+{{ end -}}
 ## Pages in this section
 
 {{ range . -}}
