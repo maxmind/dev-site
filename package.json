@@ -8,8 +8,8 @@
     "@eslint/eslintrc": "^3.3.7",
     "@eslint/js": "^10.0.1",
     "@types/node": "^26.6.5",
-    "baseline-browser-mapping": "^2.11.29",
-    "caniuse-lite": "^1.0.30001816",
+    "baseline-browser-mapping": "^2.11.33",
+    "caniuse-lite": "^1.0.30001819",
     "cspell": "^10.4.0",
     "eslint": "^10.13.0",
     "eslint-plugin-simple-import-sort": "^14.0.0",
@@ -23,7 +23,7 @@
     "stylelint-no-unsupported-browser-features": "^8.1.2",
     "stylelint-order": "^8.1.2",
     "typescript": "^6.0.3",
-    "typescript-eslint": "^8.71.2"
+    "typescript-eslint": "^8.72.0"
   },
   "engines": {
     "node": ">=22.21.1",
