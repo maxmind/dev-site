@@ -14,7 +14,11 @@ Type: {{ $type }}.{{ with .services }} Available in: {{ delimit . ", " }}.{{ end
        the smallest space indent of the lines with text, so block syntax
        inside the description renders and nested lists keep their nesting.
        Text on the opening-tag line has no indent, so that line is not
-       measured or stripped. */ -}}
+       measured or stripped. Only spaces are counted, so a tab in an indent
+       stops the build. */ -}}
+{{- if findRE `(?m)^ *\t` .inner 1 -}}
+  {{- errorf "%s: field %q: tabs are not allowed in schema-row indents" .page.File.Path .key -}}
+{{- end -}}
 {{- $head := replaceRE `(?s)\n.*` "" .inner -}}
 {{- $body := strings.TrimPrefix $head .inner -}}
 {{- $indent := -1 -}}
