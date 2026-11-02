@@ -1,6 +1,7 @@
 +++
 draft = false
 title = 'Importing GeoIP and GeoLite databases to MySQL'
+description = 'How to import GeoIP or GeoLite CSV databases into MySQL and query them quickly.'
 +++
 
 {{< alert warning >}}

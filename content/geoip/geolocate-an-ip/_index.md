@@ -1,6 +1,7 @@
 +++
 draft = false
 title = 'Geolocate an IP'
+description = 'Guides to geolocate an IP address with GeoIP and GeoLite databases, server-side web service calls, or client-side JavaScript.'
 icon = 'WebServiceIcon'
 +++
 

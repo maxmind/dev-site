@@ -1,6 +1,7 @@
 +++
 draft = false
 title = 'minFraud API Requests'
+description = 'Reference for minFraud API requests: authorization, service endpoints, headers, and each field of the request body.'
 type = 'has-toc'
 +++
 

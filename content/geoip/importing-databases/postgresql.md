@@ -1,6 +1,7 @@
 +++
 draft = false
 title = 'Importing GeoIP and GeoLite databases to PostgreSQL'
+description = 'How to import GeoIP or GeoLite CSV databases into PostgreSQL and index them for fast queries.'
 +++
 
 This guide will show you how to import GeoIP or GeoLite databases into

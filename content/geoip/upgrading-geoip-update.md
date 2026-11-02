@@ -1,6 +1,7 @@
 +++
 draft = false
 title = 'Upgrading GeoIP Update from v3.x to v4.0 and higher'
+description = 'How to upgrade GeoIP Update from version 3.x to version 4.0 or higher.'
 +++
 
 {{< alert info >}} In 2019, we released a new major version of `geoipupdate`.

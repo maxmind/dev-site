@@ -1,6 +1,7 @@
 +++
 draft = false
 title = 'Report a transaction'
+description = 'How to report chargebacks, suspected fraud, spam, and false positives to MaxMind with the Report Transactions API.'
 +++
 
 Reporting transactions as chargebacks, suspected fraud, spam/abuse, and/or false

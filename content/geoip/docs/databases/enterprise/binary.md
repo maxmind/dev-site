@@ -1,6 +1,7 @@
 +++
 draft = false
 title = 'GeoIP Enterprise binary database fields'
+description = 'Reference for each field in the GeoIP Enterprise binary (MMDB) database, grouped by top-level key.'
 +++
 
 The GeoIP Enterprise binary database contains the following fields for each

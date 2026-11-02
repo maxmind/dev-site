@@ -1,6 +1,7 @@
 +++
 draft = false
 title = 'Geolocate an IP address using Web Services with the client-side JavaScript'
+description = 'How to use the GeoIP JavaScript client to call GeoIP web services from the browser, and the limits of this approach.'
 +++
 
 Our GeoIP JavaScript client allows you to use GeoIP web services client-side

@@ -1,6 +1,7 @@
 +++
 draft = false
 title = 'GeoIP and GeoLite'
+description = 'Overview of the GeoIP and GeoLite IP intelligence databases and web services, with links to guides and resources.'
 +++
 
 MaxMind’s GeoIP and GeoLite IP intelligence products and services are used to

@@ -1,6 +1,7 @@
 +++
 draft = false
 title = 'Track Location Name Updates'
+description = 'How to download the report of changes to the location names in GeoIP databases.'
 +++
 
 MaxMind sources most of our place names (country, subdivision, and city names)

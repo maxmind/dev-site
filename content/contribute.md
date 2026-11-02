@@ -1,6 +1,7 @@
 +++
 draft = false
 title = 'Contribute to the MaxMind Community'
+description = 'How to build and share community tools that use MaxMind APIs and data.'
 +++
 
 We welcome the efforts of our community of users to develop robust, unofficial

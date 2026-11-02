@@ -1,6 +1,7 @@
 +++
 draft = false
 title = 'Geolocate an IP address using Databases'
+description = 'Step-by-step guide to geolocate an IP address with a GeoIP or GeoLite database and an official client library.'
 +++
 
 Geolocating an IP address using GeoIP and GeoLite databases consists of

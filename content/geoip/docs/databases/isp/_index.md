@@ -1,6 +1,7 @@
 +++
 draft = false
 title = 'GeoIP ISP Databases'
+description = 'Formats, example files, and sizes of the GeoIP ISP database, which gives the ISP, organization, and autonomous system for an IP address.'
 +++
 
 Determine the Internet Service Provider, organization name, and autonomous

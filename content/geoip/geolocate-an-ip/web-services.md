@@ -1,6 +1,7 @@
 +++
 draft = false
 title = 'Geolocate an IP address using Web Services'
+description = 'Step-by-step guide to geolocate an IP address with a GeoIP or GeoLite web service and an official client library.'
 +++
 
 Geolocating an IP address using GeoIP or GeoLite web services consists of

@@ -1,6 +1,7 @@
 +++
 draft = false
 title = 'GeoIP Static IP Score Databases'
+description = 'Formats, example files, and sizes of the GeoIP Static IP Score database, which shows how static or dynamic an IP address is.'
 +++
 
 This database indicates how static or dynamic an IP address is, which can be

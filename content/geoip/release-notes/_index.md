@@ -1,5 +1,6 @@
 +++
 title = 'GeoIP Release Notes'
+description = 'List of GeoIP and GeoLite release notes that announce new features, data changes, and deprecations.'
 type = 'release-note'
 outputs = ['html', 'rss', 'anchors', 'markdown']
 +++

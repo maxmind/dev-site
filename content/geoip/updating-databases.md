@@ -1,6 +1,7 @@
 +++
 draft = false
 title = 'Updating GeoIP and GeoLite Databases'
+description = 'How to keep GeoIP and GeoLite databases current with GeoIP Update or with direct downloads.'
 +++
 
 {{< alert warning >}} In January 2024, we began using R2 presigned URLs for all

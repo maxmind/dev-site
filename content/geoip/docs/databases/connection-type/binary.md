@@ -1,6 +1,7 @@
 +++
 draft = false
 title = 'GeoIP Connection Type binary database fields'
+description = 'Reference for each field in the GeoIP Connection Type binary (MMDB) database.'
 +++
 
 The GeoIP Connection Type binary database contains the following fields for each

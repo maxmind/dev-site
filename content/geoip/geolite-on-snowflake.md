@@ -1,6 +1,7 @@
 +++
 draft = false
 title = 'GeoLite on Snowflake'
+description = 'How to get and query the GeoLite Country, City, and ASN datasets on the Snowflake Marketplace.'
 +++
 
 MaxMind offers our GeoLite data through the

@@ -1,6 +1,7 @@
 +++
 draft = false
 title = 'GeoIP Domain Databases'
+description = 'Formats, example files, and sizes of the GeoIP Domain database, which gives the second-level domain name for an IP address.'
 +++
 
 Look up the second-level domain names associated with IPv4 and IPv6 addresses.

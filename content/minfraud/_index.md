@@ -1,6 +1,7 @@
 +++
 draft = false
 title = 'minFraud Web Services'
+description = 'Overview of the minFraud Score, minFraud Insights, and minFraud Factors transaction risk services, with links to guides and resources.'
 +++
 
 {{< alert info >}} If you are a minFraud Legacy customer, please refer to our

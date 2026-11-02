@@ -1,6 +1,7 @@
 +++
 draft = false
 title = 'Privacy Exclusions API'
+description = 'Reference for the Privacy Exclusions API, which returns the Do Not Sell My Personal Information requests that MaxMind receives.'
 +++
 
 MaxMind maintains a list of Do Not Sell My Personal Information requests. This

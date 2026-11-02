@@ -1,6 +1,7 @@
 +++
 draft = false
 title = 'Normalizing Email Addresses for minFraud'
+description = 'How to normalize an email address before you send its MD5 hash to the minFraud services, with examples.'
 +++
 
 When providing an email address as an input to the minFraud services, you can

@@ -1,6 +1,7 @@
 +++
 draft = false
 title = 'GeoIP ISP binary database fields'
+description = 'Reference for each field in the GeoIP ISP binary (MMDB) database.'
 +++
 
 The GeoIP ISP binary database contains the following fields for each network.

@@ -1,6 +1,7 @@
 +++
 draft = false
 title = 'GeoIP and GeoLite Web Services Documentation'
+description = 'Overview of the GeoIP and GeoLite web services: the OpenAPI specification, client APIs, timeouts, curl examples, accuracy, and versioning.'
 +++
 
 ## Overview

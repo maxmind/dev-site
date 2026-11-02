@@ -1,6 +1,7 @@
 +++
 draft = false
 title = 'GeoIP Legacy Web Services'
+description = 'Reference for the GeoIP Legacy web services HTTP API, which is not available to new customers.'
 +++
 
 {{< alert info >}} We have implemented recent changes to our GeoIP Legacy web

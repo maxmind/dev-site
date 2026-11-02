@@ -1,6 +1,7 @@
 +++
 draft = false
 title = 'GeoIP City binary database fields'
+description = 'Reference for each field in the GeoIP City binary (MMDB) database, grouped by top-level key.'
 +++
 
 The GeoIP City binary database contains the following fields for each network.

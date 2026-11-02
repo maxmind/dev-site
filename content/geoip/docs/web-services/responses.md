@@ -1,6 +1,7 @@
 +++
 draft = false
 title = 'GeoIP and GeoLite API Responses'
+description = 'Reference for GeoIP and GeoLite web service responses: headers, errors, rate limits, and each field of the response body.'
 type = 'has-toc'
 +++
 

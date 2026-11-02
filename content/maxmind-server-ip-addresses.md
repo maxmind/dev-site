@@ -2,6 +2,7 @@
 draft = false
 layout = 'mm-ips'
 title = 'MaxMind Server IP Addresses'
+description = 'List of IP addresses that MaxMind web services and database downloads use, and how to monitor changes to them.'
 outputs = ['rss', 'html', 'markdown']
 _comment = 'json feed is handled by module mounts.  see hugo.toml'
 +++

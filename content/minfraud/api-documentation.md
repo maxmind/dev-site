@@ -1,6 +1,7 @@
 +++
 draft = false
 title = 'minFraud API Documentation'
+description = 'Overview of the minFraud API: the OpenAPI specification, client APIs, the disposition, report, and device tracking features, timeouts, and versioning.'
 +++
 
 {{< alert info >}} If you are a [minFraud Legacy](/minfraud/minfraud-legacy/)

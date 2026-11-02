@@ -1,6 +1,7 @@
 +++
 draft = false
 title = 'GeoIP Anonymous IP Databases'
+description = 'Formats, example files, and sizes of the GeoIP Anonymous IP database, which identifies proxy, VPN, hosting, and other anonymous IP addresses.'
 +++
 
 MaxMind's GeoIP Anonymous IP database helps protect your business by

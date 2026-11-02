@@ -1,6 +1,7 @@
 +++
 draft = false
 title = 'Working with Transaction Dispositions'
+description = 'How to use the disposition API to accept or reject a minFraud transaction after manual review.'
 +++
 
 With minFraud Interactive, customers can create Custom Rules that are used to

@@ -1,6 +1,7 @@
 +++
 draft = false
 title = "What's New in minFraud Score, minFraud Insights, and minFraud Factors"
+description = 'Changes for developers who move from minFraud Legacy to minFraud Score, minFraud Insights, and minFraud Factors.'
 +++
 
 MaxMind minFraud Score, minFraud Insights, and minFraud Factors provide a modern

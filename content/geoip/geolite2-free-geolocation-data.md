@@ -1,6 +1,7 @@
 +++
 draft = false
 title = 'GeoLite Databases and Web Services'
+description = 'How to sign up for GeoLite and use the free GeoLite geolocation and ASN databases and web services.'
 +++
 
 MaxMind offers free geolocation and ASN data in downloadable database and web
