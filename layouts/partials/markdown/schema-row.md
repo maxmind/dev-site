@@ -10,6 +10,17 @@
 
 Type: {{ $type }}.{{ with .services }} Available in: {{ delimit . ", " }}.{{ end }}
 
-{{/* The content indents the description by two spaces under the shortcode
-       call. Strip the indent so block syntax inside it renders. */ -}}
-{{ replaceRE `(?m)^  ` "" .inner | strings.TrimSpace }}
+{{/* The content indents the description under the shortcode call. Strip
+       the smallest space indent of the lines with text, so block syntax
+       inside the description renders and nested lists keep their nesting.
+       Text on the opening-tag line has no indent, so that line is not
+       measured or stripped. */ -}}
+{{- $head := replaceRE `(?s)\n.*` "" .inner -}}
+{{- $body := strings.TrimPrefix $head .inner -}}
+{{- $indent := -1 -}}
+{{- range findRE `(?m)^ *\S` $body -}}
+  {{- $n := sub (len .) (len (strings.TrimLeft " " .)) -}}
+  {{- if or (lt $indent 0) (lt $n $indent) }}{{ $indent = $n }}{{ end -}}
+{{- end -}}
+{{- if gt $indent 0 }}{{ $body = replaceRE (printf `(?m)^ {%d}` $indent) "" $body }}{{ end -}}
+{{ add $head $body | strings.TrimSpace }}
