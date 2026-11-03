@@ -378,7 +378,7 @@ the end-user who initiated the event.
   {{</minfraud-schema-row>}}
 
   {{< minfraud-schema-row key="verification_time" type="request" valueType="string" >}}
-  The date and time of the most recent completed verification of the email address, if known. The value must reflect the verification state as of the time of the event. Use the time the verification succeeded or failed, for example the time the user clicked the link, not the time you sent the link. The string must be in the [RFC 3339](https://datatracker.ietf.org/doc/html/rfc3339) date-time format. The time must not be before 1970-01-01T00:00:00Z or more than two days in the future. For a time outside this range, MaxMind ignores the input and returns a warning.
+  The date and time of the most recent completed verification of the email address, if known. The value must reflect the verification state as of the time of the event. Use the time the verification succeeded or failed, for example the time the user clicked the link, not the time you sent the link. Do not include this field if no verification was attempted or no verification is complete. The string must be in the [RFC 3339](https://datatracker.ietf.org/doc/html/rfc3339) date-time format. The time must not be before 1970-01-01T00:00:00Z or more than two days in the future. For a time outside this range, MaxMind ignores the input and returns a warning.
 
   [Learn more about the /email/verification\_time input on our Knowledge Base.](https://support.maxmind.com/knowledge-base/articles/passing-email-inputs-minfraud)
   {{</minfraud-schema-row>}}
@@ -491,7 +491,7 @@ information provided by the end-user who initiated the event.
   {{</minfraud-schema-row>}}
 
   {{< minfraud-schema-row key="phone_verification_time" type="request" valueType="string" >}}
-  The date and time of the most recent completed verification of the billing phone number, if known. The value must reflect the verification state as of the time of the event. Use the time the verification succeeded or failed, for example the time the user entered the code, not the time you sent the code. The string must be in the [RFC 3339](https://datatracker.ietf.org/doc/html/rfc3339) date-time format. The time must not be before 1970-01-01T00:00:00Z or more than two days in the future. For a time outside this range, MaxMind ignores the input and returns a warning.
+  The date and time of the most recent completed verification of the billing phone number, if known. The value must reflect the verification state as of the time of the event. Use the time the verification succeeded or failed, for example the time the user entered the code, not the time you sent the code. Do not include this field if no verification was attempted or no verification is complete. The string must be in the [RFC 3339](https://datatracker.ietf.org/doc/html/rfc3339) date-time format. The time must not be before 1970-01-01T00:00:00Z or more than two days in the future. For a time outside this range, MaxMind ignores the input and returns a warning.
 
   [Learn more about the /billing/phone\_verification\_time input on our Knowledge Base.](https://support.maxmind.com/knowledge-base/articles/billing-and-shipping-inputs-minfraud#billing-address)
   {{</minfraud-schema-row>}}
@@ -599,7 +599,7 @@ information provided by the end-user who initiated the event.
   {{</minfraud-schema-row>}}
 
   {{< minfraud-schema-row key="phone_verification_time" type="request" valueType="string" >}}
-  The date and time of the most recent completed verification of the shipping phone number, if known. The value must reflect the verification state as of the time of the event. Use the time the verification succeeded or failed, for example the time the user entered the code, not the time you sent the code. The string must be in the [RFC 3339](https://datatracker.ietf.org/doc/html/rfc3339) date-time format. The time must not be before 1970-01-01T00:00:00Z or more than two days in the future. For a time outside this range, MaxMind ignores the input and returns a warning.
+  The date and time of the most recent completed verification of the shipping phone number, if known. The value must reflect the verification state as of the time of the event. Use the time the verification succeeded or failed, for example the time the user entered the code, not the time you sent the code. Do not include this field if no verification was attempted or no verification is complete. The string must be in the [RFC 3339](https://datatracker.ietf.org/doc/html/rfc3339) date-time format. The time must not be before 1970-01-01T00:00:00Z or more than two days in the future. For a time outside this range, MaxMind ignores the input and returns a warning.
 
   [Learn more about the /shipping/phone\_verification\_time input on our Knowledge Base.](https://support.maxmind.com/knowledge-base/articles/billing-and-shipping-inputs-minfraud#shipping-address)
   {{</minfraud-schema-row>}}
