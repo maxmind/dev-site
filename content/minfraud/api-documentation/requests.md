@@ -384,7 +384,7 @@ the end-user who initiated the event.
   {{</minfraud-schema-row>}}
 
   {{< minfraud-schema-row key="was_verification_successful" type="request" valueType="boolean" >}}
-  Whether the most recent verification that the end user controls this email address was successful (e.g. by confirming a link sent to the email address). `true` if the email verification was successful, or `false` if the user failed email verification. Do not include this field if you have not performed this check.
+  Whether the most recent completed verification that the end user controls this email address was successful (e.g. by confirming a link sent to the email address). `true` if the email verification was successful, or `false` if the user failed email verification. A pending, abandoned, or expired verification is not complete and is not a failure. If no verification is complete, for example because the user has not clicked the link yet, do not include this field. Do not include this field if you have not performed this check.
 
   [Learn more about the /email/was\_verification\_successful input on our Knowledge Base.](https://support.maxmind.com/knowledge-base/articles/passing-email-inputs-minfraud)
   {{</minfraud-schema-row>}}
@@ -470,7 +470,7 @@ information provided by the end-user who initiated the event.
 
   {{< minfraud-schema-row key="phone_verification_method" type="request" valueType="string" valueTypeNote="format: enum" >}}
 
-  The method used for the most recent verification attempt of the billing phone number. The valid values are:
+  The method used for the most recent completed verification of the billing phone number. The valid values are:
 
   | Method | Description |
   | ---------------- | --------------------------------------------------------------------------- |
@@ -478,14 +478,14 @@ information provided by the end-user who initiated the event.
   | `delivered_code` | A one-time code delivered to the phone number by SMS, an automated voice call, or an over-the-top messaging channel such as WhatsApp or RCS, and entered by the user. |
   | `other` | A method not listed above, such as flash or missed call verification, or a method you do not know because a third party performed the check. |
 
-  If you send a value that is not in this list, the service returns an `INPUT_INVALID` warning. Do not include this field if no verification was attempted.
+  If you send a value that is not in this list, the service returns an `INPUT_INVALID` warning. Do not include this field if no verification was attempted or no verification is complete.
 
   [Learn more about the /billing/phone\_verification\_method input on our Knowledge Base.](https://support.maxmind.com/knowledge-base/articles/billing-and-shipping-inputs-minfraud#billing-address)
 
   {{</minfraud-schema-row>}}
 
   {{< minfraud-schema-row key="phone_was_verification_successful" type="request" valueType="boolean" >}}
-  Whether the most recent verification that the end user controls this billing phone number was successful, using the method named in `phone_verification_method`. `true` if the phone verification was successful, or `false` if the user failed phone verification. Do not include this field if you have not performed this check.
+  Whether the most recent completed verification that the end user controls this billing phone number was successful, using the method named in `phone_verification_method`. `true` if the phone verification was successful, or `false` if the user failed phone verification. A pending, abandoned, or expired verification is not complete and is not a failure. If no verification is complete, for example because the user has not entered the code yet, do not include this field. Do not include this field if you have not performed this check.
 
   [Learn more about the /billing/phone\_was\_verification\_successful input on our Knowledge Base.](https://support.maxmind.com/knowledge-base/articles/billing-and-shipping-inputs-minfraud#billing-address)
   {{</minfraud-schema-row>}}
@@ -578,7 +578,7 @@ information provided by the end-user who initiated the event.
 
   {{< minfraud-schema-row key="phone_verification_method" type="request" valueType="string" valueTypeNote="format: enum" >}}
 
-  The method used for the most recent verification attempt of the shipping phone number. The valid values are:
+  The method used for the most recent completed verification of the shipping phone number. The valid values are:
 
   | Method | Description |
   | ---------------- | --------------------------------------------------------------------------- |
@@ -586,14 +586,14 @@ information provided by the end-user who initiated the event.
   | `delivered_code` | A one-time code delivered to the phone number by SMS, an automated voice call, or an over-the-top messaging channel such as WhatsApp or RCS, and entered by the user. |
   | `other` | A method not listed above, such as flash or missed call verification, or a method you do not know because a third party performed the check. |
 
-  If you send a value that is not in this list, the service returns an `INPUT_INVALID` warning. Do not include this field if no verification was attempted.
+  If you send a value that is not in this list, the service returns an `INPUT_INVALID` warning. Do not include this field if no verification was attempted or no verification is complete.
 
   [Learn more about the /shipping/phone\_verification\_method input on our Knowledge Base.](https://support.maxmind.com/knowledge-base/articles/billing-and-shipping-inputs-minfraud#shipping-address)
 
   {{</minfraud-schema-row>}}
 
   {{< minfraud-schema-row key="phone_was_verification_successful" type="request" valueType="boolean" >}}
-  Whether the most recent verification that the end user controls this shipping phone number was successful, using the method named in `phone_verification_method`. `true` if the phone verification was successful, or `false` if the user failed phone verification. Do not include this field if you have not performed this check.
+  Whether the most recent completed verification that the end user controls this shipping phone number was successful, using the method named in `phone_verification_method`. `true` if the phone verification was successful, or `false` if the user failed phone verification. A pending, abandoned, or expired verification is not complete and is not a failure. If no verification is complete, for example because the user has not entered the code yet, do not include this field. Do not include this field if you have not performed this check.
 
   [Learn more about the /shipping/phone\_was\_verification\_successful input on our Knowledge Base.](https://support.maxmind.com/knowledge-base/articles/billing-and-shipping-inputs-minfraud#shipping-address)
   {{</minfraud-schema-row>}}
