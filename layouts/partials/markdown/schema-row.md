@@ -14,17 +14,19 @@ Type: {{ $type }}.{{ with .services }} Available in: {{ delimit . ", " }}.{{ end
        the smallest space indent of the lines with text, so block syntax
        inside the description renders and nested lists keep their nesting.
        Text on the opening-tag line has no indent, so that line is not
-       measured or stripped. Only spaces are counted, so a tab in an indent
-       stops the build. */ -}}
-{{- if findRE `(?m)^ *\t` .inner 1 -}}
-  {{- errorf "%s: field %q: tabs are not allowed in schema-row indents" .page.File.Path .key -}}
-{{- end -}}
+       measured or stripped. Only spaces are counted, so a tab in the
+       stripped part of an indent stops the build. A tab after that part,
+       for example in a code block, stays. */ -}}
 {{- $head := replaceRE `(?s)\n.*` "" .inner -}}
 {{- $body := strings.TrimPrefix $head .inner -}}
 {{- $indent := -1 -}}
 {{- range findRE `(?m)^ *\S` $body -}}
   {{- $n := sub (len .) (len (strings.TrimLeft " " .)) -}}
   {{- if or (lt $indent 0) (lt $n $indent) }}{{ $indent = $n }}{{ end -}}
+{{- end -}}
+{{- $tab := cond (lt $indent 0) `(?m)^ *\t` (printf `(?m)^ {0,%d}\t` (sub $indent 1)) -}}
+{{- if and (ne $indent 0) (findRE $tab $body 1) -}}
+  {{- errorf "%s: field %q: tabs are not allowed in schema-row indents" .page.File.Path .key -}}
 {{- end -}}
 {{- if gt $indent 0 }}{{ $body = replaceRE (printf `(?m)^ {%d}` $indent) "" $body }}{{ end -}}
 {{ add $head $body | strings.TrimSpace }}
