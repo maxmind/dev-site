@@ -1,4 +1,4 @@
-{{- $row := dict "key" (.Get "key") "valueType" (.Get "valueType") "valueTypeNote" (.Get "valueTypeNote") "inner" .Inner -}}
+{{- $row := dict "key" (.Get "key") "valueType" (.Get "valueType") "valueTypeNote" (.Get "valueTypeNote") "inner" .Inner "page" .Page -}}
 {{- if eq (.Get "type") "response" -}}
   {{- $services := slice -}}
   {{- if eq (.Get "score") "true" }}{{ $services = $services | append "minFraud Score" }}{{ end -}}
