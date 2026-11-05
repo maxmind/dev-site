@@ -6,7 +6,7 @@
 {{- end -}}
 {{- $type := .valueType -}}
 {{- with .valueTypeNote }}{{ $type = printf "%s (%s)" $type . }}{{ end -}}
-#### `{{ .key }}`
+{{ strings.Repeat (int (.level | default 4)) "#" }} `{{ .key }}`
 
 Type: {{ $type }}.{{ with .services }} Available in: {{ delimit . ", " }}.{{ end }}
 
