@@ -6,4 +6,4 @@
        indents each shortcode call by two spaces. The newline after the
        comment moves those spaces onto a blank line, so the heading starts at
        column one. */}}
-{{ partial "markdown/schema-row.md" (dict "key" (.Get "key") "valueType" (.Get "valueType") "valueTypeNote" (.Get "valueTypeNote") "services" $services "inner" .Inner "page" .Page) }}
+{{ partial "markdown/schema-row.md" (dict "key" (.Get "key") "valueType" (.Get "valueType") "valueTypeNote" (.Get "valueTypeNote") "services" $services "inner" .Inner "page" .Page "level" (.Parent.Get "headingLevel")) }}
