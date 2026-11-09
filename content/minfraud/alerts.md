@@ -72,26 +72,31 @@ The minFraud Legacy `maxmindID` of the original minFraud request.
 {{</minfraud-schema-row>}}
 
 {{< minfraud-schema-row key="minfraud_id" type="webhook" valueType="string" valueTypeNote="format: UUID" >}}
-The minFraud ID of the original minFraud request. {{</minfraud-schema-row>}}
+The minFraud ID of the original minFraud request.
+{{</minfraud-schema-row>}}
 
 {{< minfraud-schema-row key="new_risk_score" type="webhook" valueType="decimal" valueTypeNote="min: 0.01, max: 99" >}}
 The updated risk score, calculated after your initial query with additional
-information. {{</minfraud-schema-row>}}
+information.
+{{</minfraud-schema-row>}}
 
 {{< minfraud-schema-row key="old_risk_score" type="webhook" valueType="decimal" valueTypeNote="min: 0.01, max: 99" >}}
-The risk score as originally calculated. {{</minfraud-schema-row>}}
+The risk score as originally calculated.
+{{</minfraud-schema-row>}}
 
 {{< minfraud-schema-row key="postal" type="webhook" valueType="string" valueTypeNote="max length: 255" >}}
 The billing postal code included in the original minFraud request.
 {{</minfraud-schema-row>}}
 
-{{< minfraud-schema-row key="reason" type="webhook" valueType="string" >}} A
-human-readable description of why the minFraud alert was sent. See below for the
-current list of possible reasons. {{</minfraud-schema-row>}}
+{{< minfraud-schema-row key="reason" type="webhook" valueType="string" >}}
+A human-readable description of why the minFraud alert was sent. See below for
+the current list of possible reasons.
+{{</minfraud-schema-row>}}
 
 {{< minfraud-schema-row key="reason_code" type="webhook" valueType="string" valueTypeNote="format: enum" >}}
 A fixed, machine-readable code for the reason why the minFraud alert was sent.
-See below for the current list of possible reasons. {{</minfraud-schema-row>}}
+See below for the current list of possible reasons.
+{{</minfraud-schema-row>}}
 
 {{< minfraud-schema-row key="region" type="webhook" valueType="string" valueTypeNote="max length: 4" >}}
 The billing region included in the original minFraud request.
@@ -99,7 +104,8 @@ The billing region included in the original minFraud request.
 
 {{< minfraud-schema-row key="shop_id" type="webhook" valueType="string" valueTypeNote="max length: 255" >}}
 The shop ID included in the original minFraud request. This will only be set if
-the original request included a shop ID. {{</minfraud-schema-row>}}
+the original request included a shop ID.
+{{</minfraud-schema-row>}}
 
 {{< minfraud-schema-row key="txnID" type="webhook" valueType="string" valueTypeNote="max length: 255" >}}
 The transaction ID included in the original minFraud request.
@@ -107,7 +113,9 @@ The transaction ID included in the original minFraud request.
 
 {{< minfraud-schema-row key="updated_at" type="webhook" valueType="string" valueTypeNote="max length: 255" >}}
 The date and time at which the new risk score was calculated, in RFC3339 format,
-e.g., `2019-11-01T12:34:56Z` {{</minfraud-schema-row>}} {{</ schema-table >}}
+e.g., `2019-11-01T12:34:56Z`.
+{{</minfraud-schema-row>}}
+{{</ schema-table >}}
 
 #### Possible alert reasons
 
