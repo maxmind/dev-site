@@ -6,7 +6,13 @@
 {{- end -}}
 {{- $type := .valueType -}}
 {{- with .valueTypeNote }}{{ $type = printf "%s (%s)" $type . }}{{ end -}}
-{{ strings.Repeat (int (.level | default 4)) "#" }} `{{ .key }}`
+{{- /* path is the parent object path. Set it where the table key does not give it. */ -}}
+{{- $path := replace (.row.Parent.Get "key") "--" "." -}}
+{{- range slice .row.Parent .row -}}
+  {{- if isset .Params "path" }}{{ $path = .Get "path" }}{{ end -}}
+{{- end -}}
+{{- $key := cond (eq $path "") .key (printf "%s.%s" $path .key) -}}
+{{ strings.Repeat (int (.level | default 4)) "#" }} `{{ $key }}`
 
 Type: {{ $type }}.{{ with .services }} Available in: {{ delimit . ", " }}.{{ end }}
 
