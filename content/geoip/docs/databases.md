@@ -135,7 +135,7 @@ integrator for assistance. {{</ alert >}}
 | Log Analyzer / Data Processing | Logstash                | [GeoIP filter plugin](https://www.elastic.co/docs/reference/logstash/plugins/plugins-filters-geoip)                       |
 | Log Analyzer / Data Processing | Vector                  | [GeoIP and MMDB enrichment tables](https://vector.dev/docs/reference/configuration/pipeline-components/)                  |
 | Network Protocol Analyzer      | Wireshark               | [How To Use GeoIP With Wireshark](https://gitlab.com/wireshark/wireshark/-/wikis/HowToUseGeoIP)                           |
-| Search                         | Elasticsearch           | [GeoIP processor](https://www.elastic.co/guide/en/elasticsearch/reference/8.19/geoip-processor.html)                      |
+| Search                         | Elasticsearch           | [GeoIP processor](https://www.elastic.co/docs/reference/ingest-processor/geoip-processor)                                 |
 | Web server                     | Caddy                   | [caddy-geoip2](https://github.com/zhangjiayin/caddy-geoip2)                                                               |
 
 ## Command Line (mmdbinspect)
