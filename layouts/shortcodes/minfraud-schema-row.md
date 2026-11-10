@@ -6,6 +6,14 @@
   {{- if eq (.Get "factors") "true" }}{{ $services = $services | append "minFraud Factors" }}{{ end -}}
   {{- $row = merge $row (dict "services" $services) -}}
 {{- end -}}
+{{- /* A field can take its section's slug. Link to the anchor-target. */ -}}
+{{- with .Get "fragmentOverride" -}}
+  {{- $link := printf "](#%s)" . -}}
+  {{- if not (strings.Contains $.Inner $link) -}}
+    {{- errorf "%s: field %q: no %q link to its section" $.Page.File.Path ($.Get "key") $link -}}
+  {{- end -}}
+  {{- $row = merge $row (dict "inner" (replace $.Inner $link (printf "](#schema--%s--%s)" ($.Get "type") .))) -}}
+{{- end -}}
 {{- /* This comment ends without a trim marker on purpose. The content
        indents each shortcode call by two spaces. The newline after the
        comment moves those spaces onto a blank line, so the heading starts at
