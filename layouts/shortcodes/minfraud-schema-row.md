@@ -12,7 +12,11 @@
   {{- if not (strings.Contains $.Inner $link) -}}
     {{- errorf "%s: field %q: no %q link to its section" $.Page.File.Path ($.Get "key") $link -}}
   {{- end -}}
-  {{- $row = merge $row (dict "inner" (replace $.Inner $link (printf "](#schema--%s--%s)" ($.Get "type") .))) -}}
+  {{- $anchor := printf "schema--%s--%s" ($.Get "type") . -}}
+  {{- if not (findRE (printf `\{\{<\s*anchor-target\s+"?%s"?\s*>\}\}` $anchor) $.Page.RawContent 1) -}}
+    {{- errorf "%s: field %q: no anchor-target %q" $.Page.File.Path ($.Get "key") $anchor -}}
+  {{- end -}}
+  {{- $row = merge $row (dict "inner" (replace $.Inner $link (printf "](#%s)" $anchor))) -}}
 {{- end -}}
 {{- /* This comment ends without a trim marker on purpose. The content
        indents each shortcode call by two spaces. The newline after the
