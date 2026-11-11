@@ -6,7 +6,7 @@ legacy_anchor = 'new-phone-outputs-released-for-minfraud-insights-and-minfraud-f
 +++
 
 We have released additional outputs for our
-[minFraud Insights and minFraud Factors](https://www.maxmind.com/en/solutions/fraud-prevention/overview)
+[minFraud Insights and minFraud Factors](https://www.maxmind.com/en/solutions/fraud-and-risk)
 web services. Insights and Factors customers that pass phone numbers can now
 make use of the following additional outputs:
 

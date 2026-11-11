@@ -8,7 +8,7 @@ legacy_anchor = 'new-network-and-user_count-outputs-in-web-services'
 The following outputs have been added to the
 [GeoIP Insights web service](https://www.maxmind.com/en/geoip-api-web-services),
 and
-[minFraud Insights and Factors web services](https://www.maxmind.com/en/solutions/fraud-prevention/overview):
+[minFraud Insights and Factors web services](https://www.maxmind.com/en/solutions/fraud-and-risk):
 
 - `network` – The network in
   [CIDR notation](https://en.wikipedia.org/wiki/Classless_Inter-Domain_Routing#CIDR_notation)

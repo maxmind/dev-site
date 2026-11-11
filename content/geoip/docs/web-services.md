@@ -15,7 +15,7 @@ which also contain GeoIP Insights data, please
 [contact our Enterprise Business team](https://www.maxmind.com/en/sales-contact?comments=I+am+interested+in+minFraud+Factors.&interested_in=minfraud)
 for assistance. To better understand the differences between each minFraud
 service, review our
-[minFraud Service Plans and Pricing page](https://www.maxmind.com/en/solutions/fraud-prevention/plans-pricing)
+[minFraud Service Plans and Pricing page](https://www.maxmind.com/en/solutions/fraud-and-risk/plans-pricing)
 and the [Response Body section](/geoip/docs/web-services/responses#response).
 
 ## OpenAPI Specification

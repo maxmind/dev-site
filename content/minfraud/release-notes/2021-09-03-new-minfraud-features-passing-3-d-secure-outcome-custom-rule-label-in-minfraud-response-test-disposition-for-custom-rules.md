@@ -6,7 +6,7 @@ legacy_anchor = 'new-minfraud-features-passing-3-d-secure-outcome-custom-rule-la
 +++
 
 We have released a couple of new features for the
-[minFraud Score, Insights, and Factors service](https://www.maxmind.com/en/solutions/fraud-prevention/overview).
+[minFraud Score, Insights, and Factors service](https://www.maxmind.com/en/solutions/fraud-and-risk).
 
 - A new input,
   [`/credit_card/was_3d_secure_successful`](/minfraud/api-documentation/requests#schema--request--credit-card__was_3d_secure_successful),

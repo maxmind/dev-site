@@ -8,5 +8,5 @@ legacy_anchor = 'disposition-outputs-for-minfraud-score-insights-and-factors'
 The responses for minFraud Score, Insights, and Factors may now include a
 [`disposition` object](/minfraud/api-documentation). This object contains
 information about
-[custom rules](https://www.maxmind.com/en/solutions/fraud-prevention/overview)
-that were applied to the request.
+[custom rules](https://www.maxmind.com/en/solutions/fraud-and-risk) that were
+applied to the request.

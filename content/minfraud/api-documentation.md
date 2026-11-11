@@ -13,9 +13,9 @@ document for a summary of the changes. {{</ alert >}}
 
 To learn more about the minFraud services and to purchase credits, please visit
 the
-[minFraud Overview page](https://www.maxmind.com/en/solutions/fraud-prevention/overview).
+[minFraud Overview page](https://www.maxmind.com/en/solutions/fraud-and-risk).
 To better understand the differences between each minFraud service, review our
-[minFraud Service Comparison page](https://www.maxmind.com/en/solutions/fraud-prevention/plans-pricing)
+[minFraud Service Comparison page](https://www.maxmind.com/en/solutions/fraud-and-risk/plans-pricing)
 and the
 [API response body documentation](/minfraud/api-documentation/responses#response-body).
 
