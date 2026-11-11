@@ -329,4 +329,4 @@ identify various attributes of an IP address, including:
 [Learn more about MaxMind’s paid IP intelligence data.](https://www.maxmind.com/en/solutions/ip-geolocation-databases-api-services)
 
 MaxMind also has a risk scoring web service for fraud prevention and security.
-[Learn more about minFraud.](https://www.maxmind.com/en/solutions/fraud-prevention/overview)
+[Learn more about minFraud.](https://www.maxmind.com/en/solutions/fraud-and-risk)

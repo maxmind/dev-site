@@ -10,6 +10,5 @@ We have made improvements to how we identify cellular IPs for the
 [GeoIP Connection Type database](https://www.maxmind.com/en/geoip-databases),
 and the `user_type` field provided in the
 [GeoIP Insights web service](https://www.maxmind.com/en/geoip-api-web-services)
-and
-[minFraud services](https://www.maxmind.com/en/solutions/fraud-prevention/overview).
+and [minFraud services](https://www.maxmind.com/en/solutions/fraud-and-risk).
 Accuracy for cellular identification should now be about 95% accurate globally.

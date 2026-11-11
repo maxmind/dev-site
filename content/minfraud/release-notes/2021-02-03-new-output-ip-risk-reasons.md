@@ -6,9 +6,8 @@ legacy_anchor = 'new-output-ip-risk-reasons'
 +++
 
 The `ip_address/risk_reasons` output is now available.
-[minFraud Insights](https://www.maxmind.com/en/solutions/fraud-prevention/overview)
-and
-[minFraud Factors](https://www.maxmind.com/en/solutions/fraud-prevention/overview)
+[minFraud Insights](https://www.maxmind.com/en/solutions/fraud-and-risk) and
+[minFraud Factors](https://www.maxmind.com/en/solutions/fraud-and-risk)
 customers can now see reason codes associated with the IP risk score for high
 risk IP addresses. When the IP risk score is high, the field may be populated
 with one or more of the following reason codes:

@@ -173,7 +173,7 @@ to handle any valid HTTP `4xx` or `5xx` status code.
           The license key you have provided does not have sufficient funds to
           use this service. Please
           <a
-            href="https://www.maxmind.com/en/solutions/fraud-prevention/overview#buy-now"
+            href="https://www.maxmind.com/en/solutions/fraud-and-risk/plans-pricing#buy-now"
             >purchase more service credits</a
           >.
         </td>

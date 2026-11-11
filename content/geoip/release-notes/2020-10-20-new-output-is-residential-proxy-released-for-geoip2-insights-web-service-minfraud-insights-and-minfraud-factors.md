@@ -7,7 +7,7 @@ legacy_anchor = 'new-output-is_residential_proxy-released-for-geoip2-insights-we
 
 We have released an additional output for our web services.
 [GeoIP2 Insights](https://www.maxmind.com/en/geoip-api-web-services),
-[minFraud Insights, and minFraud Factors](https://www.maxmind.com/en/solutions/fraud-prevention/overview)
+[minFraud Insights, and minFraud Factors](https://www.maxmind.com/en/solutions/fraud-and-risk)
 customers can now see whether an IP address is likely a
 [residential proxy](https://blog.maxmind.com/residential-proxy-detection-a-practical-guide-for-businesses/):
 

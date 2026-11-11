@@ -16,7 +16,7 @@ and our
 [minFraud Insights, minFraud Score, and minFraud Factors API documentation](/minfraud).
 To learn more about the minFraud Insights, minFraud Score, and minFraud Factors
 services and to purchase credits, please
-[visit the minFraud Overview page](https://www.maxmind.com/en/solutions/fraud-prevention/overview).
+[visit the minFraud Overview page](https://www.maxmind.com/en/solutions/fraud-and-risk).
 {{</ alert >}}
 
 The minFraud web service is available using a simple URI-based API. To use this

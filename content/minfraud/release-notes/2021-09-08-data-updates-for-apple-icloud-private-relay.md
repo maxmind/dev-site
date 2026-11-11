@@ -15,7 +15,7 @@ users.
   geolocation feeds published by Apple, which provides coarse city or region
   geolocation mappings for iCloud Private Relay IPs.
 - We identify iCloud Private Relay IPs in our ISP dataset (present in our
-  [minFraud Insights and Factors](https://www.maxmind.com/en/solutions/fraud-prevention/overview)
+  [minFraud Insights and Factors](https://www.maxmind.com/en/solutions/fraud-and-risk)
   web services) by tagging ranges as `iCloud Private Relay`.
 
 Apple has shared the following assurances built into Private Relay:

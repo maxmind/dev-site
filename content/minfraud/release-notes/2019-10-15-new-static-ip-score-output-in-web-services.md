@@ -8,7 +8,7 @@ legacy_anchor = 'new-static_ip_score-output-in-web-services'
 The following output has been added to the
 [GeoIP Insights web service](https://www.maxmind.com/en/geoip-api-web-services),
 and
-[minFraud Insights and Factors web services](https://www.maxmind.com/en/solutions/fraud-prevention/overview):
+[minFraud Insights and Factors web services](https://www.maxmind.com/en/solutions/fraud-and-risk):
 
 - `static_ip_score` – An indicator of how static or dynamic an IP address is.
   The value ranges from 0 to 99.99 with higher values meaning a greater static
