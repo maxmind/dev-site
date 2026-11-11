@@ -1350,7 +1350,7 @@ present in the response.
 
 <!-- prettier-ignore-start -->
 
-{{< schema-table key="risk_score_reason" >}}
+{{< schema-table key="risk_score_reason" path="risk_score_reasons" >}}
   {{< minfraud-schema-row key="multiplier" type="response" valueType="decimal" valueTypeNote="min: 0.01, max: 100" factors="true" >}}
   The factor by which the risk score is increased (if the value is greater than 1) or decreased (if the value is less than 1) for given risk reason(s). Multipliers representing a significant percentage increase or decrease in the risk score lead to risk reason(s) being present.
   {{</minfraud-schema-row>}}
@@ -1359,7 +1359,7 @@ present in the response.
   This array contains objects that describe one of the reasons for the multiplier.
   {{</minfraud-schema-row>}}
 
-  {{< minfraud-schema-row key="code" type="response" valueType="string" valueTypeNote="format: enum, max length: 255" factors="true" >}}
+  {{< minfraud-schema-row key="code" path="risk_score_reasons.reasons" type="response" valueType="string" valueTypeNote="format: enum, max length: 255" factors="true" >}}
   A machine-readable code identifying the risk reason. Examples listed below. Although more codes may be added in the future, a list of current codes may be provided on request.
 
   | Code            |
@@ -1369,7 +1369,7 @@ present in the response.
   | ORG\_DISTANCE\_RISK     |
   {{</minfraud-schema-row>}}
 
-  {{< minfraud-schema-row key="reason" type="response" valueType="string" factors="true" >}}
+  {{< minfraud-schema-row key="reason" path="risk_score_reasons.reasons" type="response" valueType="string" factors="true" >}}
   The human-readable description of the risk reason and its effect on the overall risk score.
   The explanation text may change at any time and should not be matched against.
 

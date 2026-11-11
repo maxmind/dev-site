@@ -824,7 +824,7 @@ Subdivisions are arranged from largest to smallest.
 
 <!-- prettier-ignore-start -->
 
-{{< schema-table key="subdivision" >}}
+{{< schema-table key="subdivision" path="subdivisions" >}}
   {{< geoip-schema-row key="confidence" valueType="integer" valueTypeNote="min: 0, max: 100" insights="true">}}
   A value from 0-100 representing our confidence that the region is correct.
 

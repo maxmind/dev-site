@@ -46,7 +46,7 @@ http://yourdomain/yoururl?i=24.24.24.24&maxmindID=1234ABCD&domain=sample.com&cit
 The following are the parameters that will be included in the query string of
 the request. Additional parameters may be added in the future.
 
-{{< schema-table key="alert" headingLevel="5" >}}
+{{< schema-table key="alert" path="" headingLevel="5" >}}
 {{< minfraud-schema-row key="city" type="webhook" valueType="string" valueTypeNote="max length: 255" >}}
 The billing city included in the original minFraud request.
 {{</minfraud-schema-row>}}
