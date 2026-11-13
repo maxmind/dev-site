@@ -793,6 +793,7 @@ process that was used for the event.
   * `rede`
   * `redpagos`
   * `rewardspay`
+  * `ryft`
   * `safecharge`
   * `sagepay`
   * `securepay`
