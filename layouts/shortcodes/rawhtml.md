@@ -13,6 +13,10 @@
     {{- $rule := "|" -}}
     {{- range findRESubmatch `(?s)<t[hd]>(.*?)</t[hd]>` $row -}}
       {{- $cell := index . 1 | transform.HTMLToMarkdown | strings.TrimSpace -}}
+      {{- /* The converter escapes each underscore. One that follows a letter or
+             a digit cannot start emphasis, so it needs no escape, and a search
+             for a field name such as is_anonymous finds the row. */ -}}
+      {{- $cell = replaceRE `([\pL\pN])\\_` "${1}_" $cell -}}
       {{- $cell = replaceRE `\n` " " (replaceRE `\n{2,}` "<br><br>" $cell) -}}
       {{- $line = printf "%s %s |" $line (replace $cell "|" `\|`) -}}
       {{- $rule = add $rule " --- |" -}}
