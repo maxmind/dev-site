@@ -1,10 +1,10 @@
 {{- /* A Markdown table costs fewer tokens than HTML. A cell is one line of
        inline content, so a table stays HTML if it has a tag that is not in
-       the list below, an attribute other than a link href, an empty row, or
-       rows of different lengths. Paragraphs in a cell join with <br><br>.
-       The first row becomes the header. */ -}}
+       the list below, an attribute other than a link href, an empty row,
+       rows of different lengths, or a table in a cell. Paragraphs in a cell
+       join with <br><br>. The first row becomes the header. */ -}}
 {{- $html := replaceRE "\n[ \t]*\n" "\n" (strings.TrimSpace .Inner) -}}
-{{- range findRE `(?s)<table>.*?</table>` $html -}}
+{{- range findRE `(?s)<table\b[^>]*>.*?</table>` $html -}}
   {{- $other := replaceRE `</?(table|thead|tbody|tr|th|td|p|a|code|strong|em|b|i)\s*>|<a\s+href="[^"]*"\s*>` "" . -}}
   {{- $rows := slice -}}
   {{- $rules := slice -}}
@@ -25,7 +25,7 @@
     {{- if eq $i 0 }}{{ $rows = $rows | append $rule }}{{ end -}}
     {{- $rules = $rules | append $rule -}}
   {{- end -}}
-  {{- if and (not (strings.Contains $other "<")) (eq (len (uniq $rules)) 1) (not (in $rules "|")) -}}
+  {{- if and (not (strings.Contains $other "<")) (eq (len (uniq $rules)) 1) (not (in $rules "|")) (eq (len (findRE `<table\b` .)) 1) -}}
     {{- $html = replace $html . (printf "\n\n%s\n\n" (delimit $rows "\n")) -}}
   {{- end -}}
 {{- end -}}
