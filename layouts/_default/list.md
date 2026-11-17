@@ -2,10 +2,12 @@
 {{- $body := partial "markdown/body.md" . }}
 {{ $body }}
 {{- /* Leave out the children that the body already links, for example in a
-       link group, so the page does not list them twice. */ -}}
+       link group, so the page does not list them twice. A link in a table
+       row does not count: its text is often not the name of the page. */ -}}
+{{- $prose := replaceRE `(?m)^\|.*$` "" $body -}}
 {{- $unlinked := slice -}}
 {{- range .Pages -}}
-  {{- if not (strings.Contains $body (printf "](%s)" (.OutputFormats.Get "MARKDOWN").RelPermalink)) -}}
+  {{- if not (strings.Contains $prose (printf "](%s)" (.OutputFormats.Get "MARKDOWN").RelPermalink)) -}}
     {{- $unlinked = $unlinked | append . -}}
   {{- end -}}
 {{- end -}}
